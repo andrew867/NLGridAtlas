@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An unofficial, source-cited engineering atlas of Newfoundland and Labrador electrical infrastructure."
+    />
+    <meta name="theme-color" content="#eee8dc" />
+    <title>NL Grid Atlas | Evidence before ornament</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to the atlas</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="NL Grid Atlas home">
+        <span class="wordmark-mark" aria-hidden="true">NL</span>
+        <span>GRID ATLAS</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#network">One-line</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#loads">Loads</a>
+        <a href="#evidence">Evidence</a>
+      </nav>
+      <span class="edition">FIELD EDITION 0.1</span>
+    </header>
+
+    <main id="main">
+      <section class="cover" id="top" aria-labelledby="cover-title">
+        <div class="cover-kicker">
+          <span>UNOFFICIAL ENGINEERING RECORD</span>
+          <span>ISLAND INTERCONNECTED SYSTEM</span>
+        </div>
+        <div class="cover-grid">
+          <div class="cover-copy">
+            <p class="eyebrow">Evidence before ornament</p>
+            <h1 id="cover-title">The Island grid,<br />drawn from the record.</h1>
+            <p class="lede">
+              Public filings contain the system history. This atlas connects the drawings,
+              transformer records, load events, capital work, and radio infrastructure without
+              hiding the page that supports each claim.
+            </p>
+            <a class="datum-link" href="#network">Open the first verified one-line <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="cover-datum" aria-label="2023 Hydro transmission inventory">
+            <span class="datum-label">HYDRO TRANSMISSION INVENTORY / 2023</span>
+            <strong>4,432</strong>
+            <span class="datum-unit">km of transmission line</span>
+            <div class="voltage-rule" aria-hidden="true">
+              <i class="v230" style="--share: 50.7%"></i>
+              <i class="v138" style="--share: 34.7%"></i>
+              <i class="v69" style="--share: 14.6%"></i>
+            </div>
+            <dl class="voltage-key">
+              <div><dt>230 kV</dt><dd>2,246 km</dd></div>
+              <div><dt>138 kV</dt><dd>1,538 km</dd></div>
+              <div><dt>69 kV</dt><dd>648 km</dd></div>
+            </dl>
+            <a class="source-tag" href="http://www.pub.nf.ca/indexreports/transmission/From%20NLH%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202023-04-25.PDF" target="_blank" rel="noreferrer">2023 report / PDF pp. 5, 7</a>
+          </div>
+        </div>
+        <div class="phase-ruler" aria-hidden="true">
+          <svg viewBox="0 0 1200 54" preserveAspectRatio="none">
+            <path class="phase-a" d="M0 27 C25 3 50 3 75 27 S125 51 150 27 S200 3 225 27 S275 51 300 27 S350 3 375 27 S425 51 450 27 S500 3 525 27 S575 51 600 27 S650 3 675 27 S725 51 750 27 S800 3 825 27 S875 51 900 27 S950 3 975 27 S1025 51 1050 27 S1100 3 1125 27 S1175 51 1200 27" />
+            <path class="phase-b" d="M0 41 C25 17 50 17 75 41 S125 65 150 41 S200 17 225 41 S275 65 300 41 S350 17 375 41 S425 65 450 41 S500 17 525 41 S575 65 600 41 S650 17 675 41 S725 65 750 41 S800 17 825 41 S875 65 900 41 S950 17 975 41 S1025 65 1050 41 S1100 17 1125 41 S1175 65 1200 41" />
+            <path class="phase-c" d="M0 13 C25 -11 50 -11 75 13 S125 37 150 13 S200 -11 225 13 S275 37 300 13 S350 -11 375 13 S425 37 450 13 S500 -11 525 13 S575 37 600 13 S650 -11 675 13 S725 37 750 13 S800 -11 825 13 S875 37 900 13 S950 -11 975 13 S1025 37 1050 13 S1100 -11 1125 13 S1175 37 1200 13" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="section network-section" id="network" aria-labelledby="network-title">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">01 / ONE-LINE</span>
+            <h2 id="network-title">Oxen Pond terminal station</h2>
+          </div>
+          <p>
+            A simplified 2013 arrangement. Select a component to read its rating and evidence.
+            Protection, disconnect, grounding, and distribution detail are omitted.
+          </p>
+        </header>
+
+        <div class="network-layout">
+          <div class="phase-frame schematic-panel">
+            <div class="panel-toolbar" role="group" aria-label="One-line visibility controls">
+              <button class="toggle active" type="button" data-layer="v230" aria-pressed="true">230 kV</button>
+              <button class="toggle active" type="button" data-layer="transformer" aria-pressed="true">Transformation</button>
+              <button class="toggle active" type="button" data-layer="v66" aria-pressed="true">66 kV</button>
+            </div>
+            <svg class="one-line" viewBox="0 0 960 590" role="img" aria-labelledby="one-line-title one-line-desc">
+              <title id="one-line-title">Simplified Oxen Pond one-line diagram</title>
+              <desc id="one-line-desc">Two 230 kilovolt transmission lines connect to a 230 kilovolt bus and three transformers feeding a 66 kilovolt bus.</desc>
+              <g class="layer v230">
+                <path class="line v230-line" d="M150 74 V188 H810 V74" />
+                <text x="110" y="52">TL236</text>
+                <text x="785" y="52">TL218</text>
+                <text class="bus-label" x="436" y="169">230 kV BUS B1</text>
+                <circle class="junction" cx="150" cy="188" r="5" />
+                <circle class="junction" cx="810" cy="188" r="5" />
+              </g>
+              <g class="layer transformer">
+                <g class="component" tabindex="0" role="button" data-component="opd-t2" aria-label="Oxen Pond transformer T2">
+                  <path class="tap" d="M300 188 V260" />
+                  <circle class="winding v230-winding" cx="300" cy="282" r="22" />
+                  <circle class="winding v66-winding" cx="300" cy="314" r="22" />
+                  <path class="tap" d="M300 336 V422" />
+                  <text x="265" y="365">T2</text>
+                  <text class="rating" x="236" y="389">75/100/125 MVA</text>
+                </g>
+                <g class="component" tabindex="0" role="button" data-component="opd-t1" aria-label="Oxen Pond transformer T1">
+                  <path class="tap" d="M480 188 V260" />
+                  <circle class="winding v230-winding" cx="480" cy="282" r="22" />
+                  <circle class="winding v66-winding" cx="480" cy="314" r="22" />
+                  <path class="tap" d="M480 336 V422" />
+                  <text x="445" y="365">T1</text>
+                  <text class="rating" x="416" y="389">40/53.3/66.6 MVA</text>
+                </g>
+                <g class="component" tabindex="0" role="button" data-component="opd-t3" aria-label="Oxen Pond transformer T3">
+                  <path class="tap" d="M660 188 V260" />
+                  <circle class="winding v230-winding" cx="660" cy="282" r="22" />
+                  <circle class="winding v66-winding" cx="660" cy="314" r="22" />
+                  <path class="tap" d="M660 336 V422" />
+                  <text x="625" y="365">T3</text>
+                  <text class="rating" x="596" y="389">75/100/125 MVA</text>
+                </g>
+              </g>
+              <g class="layer v66">
+                <path class="line v66-line" d="M150 422 H810" />
+                <text class="bus-label" x="440" y="454">66 kV BUS</text>
+                <path class="outgoing" d="M235 422 V510 M395 422 V510 M565 422 V510 M725 422 V510" />
+                <text class="small-label" x="355" y="548">NEWFOUNDLAND POWER 66 kV NETWORK</text>
+              </g>
+            </svg>
+            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2013 EXISTING ARRANGEMENT</p>
+          </div>
+
+          <aside class="component-evidence" aria-live="polite">
+            <span class="evidence-state verified">VERIFIED</span>
+            <p class="component-code" id="component-code">OPD / SYSTEM</p>
+            <h3 id="component-title">Oxen Pond transformation</h3>
+            <p id="component-summary">
+              The station had two 75/100/125 MVA units and one 40/53.3/66.6 MVA unit. The installed capacity was 316.6 MVA.
+            </p>
+            <dl id="component-data" class="component-data">
+              <div><dt>Voltage</dt><dd>230/66 kV</dd></div>
+              <div><dt>Installed</dt><dd>316.6 MVA</dd></div>
+              <div><dt>Context</dt><dd>2013 filing</dd></div>
+            </dl>
+            <a id="component-source" class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF" target="_blank" rel="noreferrer">Oxen Pond application / PDF pp. 15 to 17</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">02 / CHANGE RECORD</span>
+            <h2 id="timeline-title">Events that changed the system</h2>
+          </div>
+          <div class="filter-set" role="group" aria-label="Filter timeline">
+            <button class="filter active" data-filter="all" type="button">All</button>
+            <button class="filter" data-filter="station" type="button">Stations</button>
+            <button class="filter" data-filter="load" type="button">Loads</button>
+            <button class="filter" data-filter="telecom" type="button">Telecom</button>
+          </div>
+        </header>
+        <div id="timeline-list" class="timeline" aria-live="polite"></div>
+      </section>
+
+      <section class="section load-section" id="loads" aria-labelledby="loads-title">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">03 / ACTUAL AGAINST FORECAST</span>
+            <h2 id="loads-title">Planning met the weather</h2>
+          </div>
+          <p>Forecasts are not measurements. These comparisons retain the category stated in the filing.</p>
+        </header>
+        <div class="load-grid">
+          <article class="phase-frame load-case">
+            <span class="case-date">2014-01-02 / BROAD COVE T1</span>
+            <h3>Nameplate exceeded</h3>
+            <div class="load-bars" aria-label="Broad Cove transformer rating 25 MVA and observed peak 28.5 MVA">
+              <div><span style="--bar:87.7%">25.0 MVA</span><b>NAMEPLATE</b></div>
+              <div><span class="actual" style="--bar:100%">28.5 MVA</span><b>OBSERVED PEAK</b></div>
+            </div>
+            <p>Relay settings were adjusted for temporary peak loading. Newfoundland Power proposed conductor work to transfer load.</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf" target="_blank" rel="noreferrer">Electrical System Improvements / PDF p. 14</a>
+          </article>
+          <article class="load-case ruled-case">
+            <span class="case-date">2024 / MONTHLY UTILITY PEAK AVERAGE</span>
+            <h3>Forecast was 7 MW low</h3>
+            <div class="paired-number"><strong>902</strong><span>MW actual</span></div>
+            <div class="paired-number forecast"><strong>895</strong><span>MW forecast</span></div>
+            <p>The report's total-average row gives an average absolute error of 20 MW. This is not an annual peak comparison.</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/indexreports/nostradamus/From%20NLH%20-%20Short-Term%20Load%20Forecasting%20Accuracy%20-%202024%20Annual%20Report%20-%202025-01-31.PDF" target="_blank" rel="noreferrer">2024 accuracy report / PDF p. 119</a>
+          </article>
+          <article class="load-case discrepancy-case">
+            <span class="case-date">2012-09-11 / HURRICANE LESLIE</span>
+            <h3>One page, two energy totals</h3>
+            <dl>
+              <div><dt>Table total</dt><dd>10,919.87 MW-min</dd></div>
+              <div><dt>Narrative total</dt><dd>10,541 MW-min</dd></div>
+            </dl>
+            <p>The filing does not reconcile the difference. The atlas preserves both values.</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf" target="_blank" rel="noreferrer">2013 GRA Volume II / PDF p. 68</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">04 / SOURCE LEDGER</span>
+            <h2 id="evidence-title">Read the page, not our confidence</h2>
+          </div>
+          <label class="source-search">
+            <span>Filter records</span>
+            <input id="source-search" type="search" placeholder="Oxen Pond, VHF, load..." autocomplete="off" />
+          </label>
+        </header>
+        <div id="source-list" class="source-list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>NL GRID ATLAS</strong>
+        <p>Unofficial. Source-cited. Built for inspection.</p>
+      </div>
+      <p>Not affiliated with the PUB, Newfoundland and Labrador Hydro, or Newfoundland Power.</p>
+      <a href="https://github.com/" aria-label="GitHub repository placeholder">Repository pending</a>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
