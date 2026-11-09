@@ -4,6 +4,14 @@
   "notes": "Files are unmodified research copies. Run npm run verify:sources for current digests.",
   "documents": [
     {
+      "id": "np-2006-electrical-system-handbook",
+      "local_path": "sources/np-2006/NP2006ApplicationHandbook.pdf",
+      "source_url": "http://www.pub.nf.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationHandbook.pdf",
+      "sha256": "54cfa1347e25bdf937dd09acbe5d84da7c0ac8b08c87e1284a8a84d23085a5ff",
+      "physical_pages": 18,
+      "notes": "Primary source for the June 2005 generation, circuit, substation, feeder, and Island map registers."
+    },
+    {
       "id": "hydro-2004-capital",
       "local_path": "sources/Hydro-2004-Capital-Budget-Complete.pdf",
       "source_url": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf"

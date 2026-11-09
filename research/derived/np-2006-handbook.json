@@ -1,0 +1,2260 @@
+{
+  "source": {
+    "title": "2006 Capital Budget Application, Electrical System Handbook",
+    "organization": "Newfoundland Power",
+    "cover_date": "2005-06",
+    "retrieved_on": "2026-11-09",
+    "source_url": "http://www.pub.nf.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationHandbook.pdf",
+    "local_path": "research/sources/np-2006/NP2006ApplicationHandbook.pdf",
+    "sha256": "54cfa1347e25bdf937dd09acbe5d84da7c0ac8b08c87e1284a8a84d23085a5ff",
+    "bytes": 238773,
+    "physical_pages": 18
+  },
+  "reported_totals": {
+    "transmission_lines": 104,
+    "substations": 136,
+    "distribution_feeders": 302
+  },
+  "generation_plants": [
+    {
+      "category": "hydro",
+      "name": "Cape Broyle",
+      "code": "CAB",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Fall Pond",
+      "code": "FPD",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Heart's Content",
+      "code": "HCT",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Horsechops",
+      "code": "HCP",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Lawn",
+      "code": "LWN",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Lockston",
+      "code": "LOK",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Lookout Brook",
+      "code": "LBK",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Mobile",
+      "code": "MOB",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Morris",
+      "code": "MRP",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "New Chelsea",
+      "code": "NCH",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Petty Harbour",
+      "code": "PHR",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Pierre's Brook",
+      "code": "PBK",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Pitman's Pond",
+      "code": "PIT",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Port Union",
+      "code": "PUN",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Rattling Brook",
+      "code": "RBK",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Rocky Pond",
+      "code": "ROP",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Rose Blanche Brook",
+      "code": "RBH",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Sandy Brook",
+      "code": "SBK",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Seal Cove",
+      "code": "SCV",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Topsail",
+      "code": "TOP",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Tors Cove",
+      "code": "TCV",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "Victoria",
+      "code": "VIC",
+      "source_page": 4
+    },
+    {
+      "category": "hydro",
+      "name": "West Brook",
+      "code": "WBK",
+      "source_page": 4
+    },
+    {
+      "category": "gas_turbine",
+      "name": "Greenhill",
+      "code": "GRT",
+      "source_page": 4
+    },
+    {
+      "category": "gas_turbine",
+      "name": "Portable",
+      "code": "GBS",
+      "source_page": 4
+    },
+    {
+      "category": "gas_turbine",
+      "name": "Wesleyville",
+      "code": "WES",
+      "source_page": 4
+    },
+    {
+      "category": "diesel",
+      "name": "New Portable",
+      "code": "GBS",
+      "source_page": 4
+    },
+    {
+      "category": "diesel",
+      "name": "Port aux Basques",
+      "code": "PAB",
+      "source_page": 4
+    },
+    {
+      "category": "diesel",
+      "name": "Port Union",
+      "code": "PUN",
+      "source_page": 4
+    }
+  ],
+  "transmission_lines": [
+    {
+      "circuit": "3L",
+      "from": "Goulds",
+      "from_code": "GOU",
+      "to": "Petty Harbour",
+      "to_code": "PHR",
+      "source_page": 6
+    },
+    {
+      "circuit": "4L",
+      "from": "Goulds",
+      "from_code": "GOU",
+      "to": "St. John\u2019s Main",
+      "to_code": "SJM",
+      "source_page": 6
+    },
+    {
+      "circuit": "5L",
+      "from": "Hardwoods",
+      "from_code": "HWD",
+      "to": "Broad Cove",
+      "to_code": "BCV",
+      "source_page": 6
+    },
+    {
+      "circuit": "11L",
+      "from": "Mobile",
+      "from_code": "MOB",
+      "to": "Tors Cove Plant",
+      "to_code": "TCV",
+      "source_page": 6
+    },
+    {
+      "circuit": "12L",
+      "from": "King\u2019s Bridge",
+      "from_code": "KBR",
+      "to": "Memorial",
+      "to_code": "MUN",
+      "source_page": 6
+    },
+    {
+      "circuit": "13L",
+      "from": "St. John\u2019s Main",
+      "from_code": "SJM",
+      "to": "Stamp\u2019s Lane",
+      "to_code": "SLA",
+      "source_page": 6
+    },
+    {
+      "circuit": "14L",
+      "from": "Memorial",
+      "from_code": "MUN",
+      "to": "Stamp\u2019s Lane",
+      "to_code": "SLA",
+      "source_page": 6
+    },
+    {
+      "circuit": "15L",
+      "from": "Stamp\u2019s Lane",
+      "from_code": "SLA",
+      "to": "Molloy\u2019s Lane",
+      "to_code": "MOL",
+      "source_page": 6
+    },
+    {
+      "circuit": "16L",
+      "from": "King\u2019s Bridge",
+      "from_code": "KBR",
+      "to": "Pepperell",
+      "to_code": "PEP",
+      "source_page": 6
+    },
+    {
+      "circuit": "17L",
+      "from": "Goulds",
+      "from_code": "GOU",
+      "to": "Big Pond",
+      "to_code": "BIG",
+      "source_page": 6
+    },
+    {
+      "circuit": "18L",
+      "from": "Goulds",
+      "from_code": "GOU",
+      "to": "Glendale",
+      "to_code": "GDL",
+      "source_page": 6
+    },
+    {
+      "circuit": "19L",
+      "from": "Hardwoods",
+      "from_code": "HWD",
+      "to": "Molloy\u2019s Lane",
+      "to_code": "MOL",
+      "source_page": 6
+    },
+    {
+      "circuit": "20L",
+      "from": "Mobile",
+      "from_code": "MOB",
+      "to": "Cape Broyle",
+      "to_code": "CAB",
+      "source_page": 6
+    },
+    {
+      "circuit": "21L",
+      "from": "Horsechops Tap",
+      "from_code": null,
+      "to": "Horsechops Plant",
+      "to_code": "HCP",
+      "source_page": 6
+    },
+    {
+      "circuit": "22L",
+      "from": "Morris Plant Tap",
+      "from_code": null,
+      "to": "Morris Plant",
+      "to_code": "MRP",
+      "source_page": 6
+    },
+    {
+      "circuit": "23L",
+      "from": "Mobile",
+      "from_code": "MOB",
+      "to": "Pierre\u2019s Brook Plant",
+      "to_code": "PBK",
+      "source_page": 6
+    },
+    {
+      "circuit": "24L",
+      "from": "Big Pond",
+      "from_code": "BIG",
+      "to": "Mobile",
+      "to_code": "MOB",
+      "source_page": 6
+    },
+    {
+      "circuit": "25L",
+      "from": "Goulds",
+      "from_code": "GOU",
+      "to": "St. John\u2019s Main",
+      "to_code": "SJM",
+      "source_page": 6
+    },
+    {
+      "circuit": "30L",
+      "from": "Ridge Road",
+      "from_code": "RRD",
+      "to": "King\u2019s Bridge",
+      "to_code": "KBR",
+      "source_page": 6
+    },
+    {
+      "circuit": "31L",
+      "from": "Oxen Pond",
+      "from_code": "OXP",
+      "to": "Stamp\u2019s Lane",
+      "to_code": "SLA",
+      "source_page": 6
+    },
+    {
+      "circuit": "32L",
+      "from": "Oxen Pond",
+      "from_code": "OXP",
+      "to": "Ridge Road",
+      "to_code": "RRD",
+      "source_page": 6
+    },
+    {
+      "circuit": "34L",
+      "from": "Oxen Pond",
+      "from_code": "OXP",
+      "to": "Virginia Waters",
+      "to_code": "VIR",
+      "source_page": 6
+    },
+    {
+      "circuit": "35L",
+      "from": "Oxen Pond",
+      "from_code": "OXP",
+      "to": "Kenmount",
+      "to_code": "KEN",
+      "source_page": 6
+    },
+    {
+      "circuit": "38L",
+      "from": "Duff\u2019s",
+      "from_code": "DUF",
+      "to": "Seal Cove",
+      "to_code": "SCV",
+      "source_page": 6
+    },
+    {
+      "circuit": "39L",
+      "from": "Duff\u2019s",
+      "from_code": "DUF",
+      "to": "Bay Roberts",
+      "to_code": "BRB",
+      "source_page": 6
+    },
+    {
+      "circuit": "40L",
+      "from": "Carbonear",
+      "from_code": "CAR",
+      "to": "Victoria",
+      "to_code": "VIC",
+      "source_page": 6
+    },
+    {
+      "circuit": "41L",
+      "from": "Carbonear",
+      "from_code": "CAR",
+      "to": "Heart\u2019s Content",
+      "to_code": "HCT",
+      "source_page": 6
+    },
+    {
+      "circuit": "43L",
+      "from": "Heart\u2019s Content",
+      "from_code": "HCT",
+      "to": "New Chelsea",
+      "to_code": "NCH",
+      "source_page": 7
+    },
+    {
+      "circuit": "48L",
+      "from": "Bay Roberts",
+      "from_code": "BRB",
+      "to": "Blaketown",
+      "to_code": "BLK",
+      "source_page": 7
+    },
+    {
+      "circuit": "49L",
+      "from": "Hardwoods",
+      "from_code": "HWD",
+      "to": "Chamberlains",
+      "to_code": "CHA",
+      "source_page": 7
+    },
+    {
+      "circuit": "51L",
+      "from": "Chamberlains",
+      "from_code": "CHA",
+      "to": "Kelligrews",
+      "to_code": "KEL",
+      "source_page": 7
+    },
+    {
+      "circuit": "52L",
+      "from": "Kelligrews",
+      "from_code": "KEL",
+      "to": "Seal Cove",
+      "to_code": "SCV",
+      "source_page": 7
+    },
+    {
+      "circuit": "53L",
+      "from": "Golden Eagle Tap",
+      "from_code": null,
+      "to": "Golden Eagle",
+      "to_code": null,
+      "source_page": 7
+    },
+    {
+      "circuit": "54L",
+      "from": "Kenmount",
+      "from_code": "KEN",
+      "to": "Hardwoods",
+      "to_code": "HWD",
+      "source_page": 7
+    },
+    {
+      "circuit": "55L",
+      "from": "Blaketown",
+      "from_code": "BLK",
+      "to": "Clarke\u2019s Pond",
+      "to_code": "CLK",
+      "source_page": 7
+    },
+    {
+      "circuit": "56L",
+      "from": "Bay Roberts",
+      "from_code": "BRB",
+      "to": "Carbonear",
+      "to_code": "CAR",
+      "source_page": 7
+    },
+    {
+      "circuit": "57L",
+      "from": "Bay Roberts",
+      "from_code": "BRB",
+      "to": "Harbour Grace",
+      "to_code": "HGR",
+      "source_page": 7
+    },
+    {
+      "circuit": "58L",
+      "from": "Oxen Pond",
+      "from_code": "OXP",
+      "to": "Virginia Waters",
+      "to_code": "VIR",
+      "source_page": 7
+    },
+    {
+      "circuit": "59L",
+      "from": "Virginia Waters",
+      "from_code": "VIR",
+      "to": "Pulpit Rock",
+      "to_code": "PUL",
+      "source_page": 7
+    },
+    {
+      "circuit": "64L",
+      "from": "Blaketown",
+      "from_code": "BLK",
+      "to": "Western Avalon",
+      "to_code": "WAV",
+      "source_page": 7
+    },
+    {
+      "circuit": "65L",
+      "from": "New Chelsea",
+      "from_code": "NCH",
+      "to": "Old Perlican",
+      "to_code": "OPL",
+      "source_page": 7
+    },
+    {
+      "circuit": "66L",
+      "from": "Cape Broyle",
+      "from_code": "CAB",
+      "to": "Fermeuse",
+      "to_code": "FER",
+      "source_page": 7
+    },
+    {
+      "circuit": "67L",
+      "from": "Oxen Pond",
+      "from_code": "OXP",
+      "to": "Ridge Road",
+      "to_code": "RRD",
+      "source_page": 7
+    },
+    {
+      "circuit": "68L",
+      "from": "Harbour Grace",
+      "from_code": "HGR",
+      "to": "Carbonear",
+      "to_code": "CAR",
+      "source_page": 7
+    },
+    {
+      "circuit": "69L",
+      "from": "Kenmount",
+      "from_code": "KEN",
+      "to": "Stamp\u2019s Lane",
+      "to_code": "SLA",
+      "source_page": 7
+    },
+    {
+      "circuit": "70L",
+      "from": "Oxen Pond",
+      "from_code": "OXP",
+      "to": "Stamp\u2019s Lane",
+      "to_code": "SLA",
+      "source_page": 7
+    },
+    {
+      "circuit": "72L",
+      "from": "Hardwoods",
+      "from_code": "HWD",
+      "to": "Goulds",
+      "to_code": "GOU",
+      "source_page": 7
+    },
+    {
+      "circuit": "73L",
+      "from": "Hardwoods",
+      "from_code": "HWD",
+      "to": "Glendale",
+      "to_code": "GDL",
+      "source_page": 7
+    },
+    {
+      "circuit": "74L",
+      "from": "Virginia Waters",
+      "from_code": "VIR",
+      "to": "Pepperell",
+      "to_code": "PEP",
+      "source_page": 7
+    },
+    {
+      "circuit": "79L",
+      "from": "Hardwoods",
+      "from_code": "HWD",
+      "to": "Chamberlains",
+      "to_code": "CHA",
+      "source_page": 7
+    },
+    {
+      "circuit": "80L",
+      "from": "Blaketown",
+      "from_code": "BLK",
+      "to": "Heart\u2019s Content",
+      "to_code": "HCT",
+      "source_page": 7
+    },
+    {
+      "circuit": "86L",
+      "from": "Western Avalon",
+      "from_code": "WAV",
+      "to": "Blaketown",
+      "to_code": "BLK",
+      "source_page": 7
+    },
+    {
+      "circuit": "94L",
+      "from": "Blaketown",
+      "from_code": "BLK",
+      "to": "Riverhead",
+      "to_code": "RVH",
+      "source_page": 7
+    },
+    {
+      "circuit": "95L",
+      "from": "Riverhead",
+      "from_code": "RVH",
+      "to": "Trepassey",
+      "to_code": "TRP",
+      "source_page": 7
+    },
+    {
+      "circuit": "100L",
+      "from": "Sunnyside",
+      "from_code": "SUN",
+      "to": "Clarenville",
+      "to_code": "CLV",
+      "source_page": 8
+    },
+    {
+      "circuit": "101L",
+      "from": "Grand Falls",
+      "from_code": "GFS",
+      "to": "Rattling Brook",
+      "to_code": "RBK",
+      "source_page": 8
+    },
+    {
+      "circuit": "102L",
+      "from": "Gander",
+      "from_code": "GAN",
+      "to": "Rattling Brook",
+      "to_code": "RBK",
+      "source_page": 8
+    },
+    {
+      "circuit": "103L",
+      "from": "Notre Dame Junction",
+      "from_code": "NDJ",
+      "to": "Lewisporte",
+      "to_code": "LEW",
+      "source_page": 8
+    },
+    {
+      "circuit": "104L",
+      "from": "Roycefield Tap",
+      "from_code": null,
+      "to": "Roycefield Mine",
+      "to_code": "RFD",
+      "source_page": 8
+    },
+    {
+      "circuit": "105L",
+      "from": "Grand Falls",
+      "from_code": "GFS",
+      "to": "Sandy Brook Plant",
+      "to_code": "SBK",
+      "source_page": 8
+    },
+    {
+      "circuit": "108L",
+      "from": "Gander",
+      "from_code": "GAN",
+      "to": "Gander Bay",
+      "to_code": "GBY",
+      "source_page": 8
+    },
+    {
+      "circuit": "109L",
+      "from": "Sunnyside",
+      "from_code": "SUN",
+      "to": "Clarenville",
+      "to_code": "CLV",
+      "source_page": 8
+    },
+    {
+      "circuit": "110L",
+      "from": "Clarenville",
+      "from_code": "CLV",
+      "to": "Lockston",
+      "to_code": "LOK",
+      "source_page": 8
+    },
+    {
+      "circuit": "111L",
+      "from": "Lockston",
+      "from_code": "LOK",
+      "to": "Catalina",
+      "to_code": "CAT",
+      "source_page": 8
+    },
+    {
+      "circuit": "114L",
+      "from": "Gander Bay",
+      "from_code": "GBY",
+      "to": "Summerford",
+      "to_code": "SUM",
+      "source_page": 8
+    },
+    {
+      "circuit": "115L",
+      "from": "Gambo",
+      "from_code": "GAM",
+      "to": "Hare Bay",
+      "to_code": "HBS",
+      "source_page": 8
+    },
+    {
+      "circuit": "116L",
+      "from": "Hare Bay",
+      "from_code": "HBS",
+      "to": "Wesleyville",
+      "to_code": "WES",
+      "source_page": 8
+    },
+    {
+      "circuit": "117L",
+      "from": "Catalina",
+      "from_code": "CAT",
+      "to": "Bonavista",
+      "to_code": "BVA",
+      "source_page": 8
+    },
+    {
+      "circuit": "121L",
+      "from": "Alexander Bay",
+      "from_code": "ALX",
+      "to": "Glovertown",
+      "to_code": "GLV",
+      "source_page": 8
+    },
+    {
+      "circuit": "123L",
+      "from": "Clarenville",
+      "from_code": "CLV",
+      "to": "Catalina",
+      "to_code": "CAT",
+      "source_page": 8
+    },
+    {
+      "circuit": "124L",
+      "from": "Clarenville",
+      "from_code": "CLV",
+      "to": "Gambo",
+      "to_code": "GAM",
+      "source_page": 8
+    },
+    {
+      "circuit": "130L",
+      "from": "Grand Falls",
+      "from_code": "GFS",
+      "to": "Stony Brook",
+      "to_code": "STY",
+      "source_page": 8
+    },
+    {
+      "circuit": "132L",
+      "from": "Grand Falls",
+      "from_code": "GFS",
+      "to": "Bishop\u2019s Falls",
+      "to_code": "BFS",
+      "source_page": 8
+    },
+    {
+      "circuit": "133L",
+      "from": "Stony Brook",
+      "from_code": "STY",
+      "to": "Bishop\u2019s Falls",
+      "to_code": "BFS",
+      "source_page": 8
+    },
+    {
+      "circuit": "134L",
+      "from": "Bishop\u2019s Falls",
+      "from_code": "BFS",
+      "to": "Botwood",
+      "to_code": "BOT",
+      "source_page": 8
+    },
+    {
+      "circuit": "136L",
+      "from": "Cobb\u2019s Pond",
+      "from_code": "COB",
+      "to": "Bishop\u2019s Falls",
+      "to_code": "BFS",
+      "source_page": 8
+    },
+    {
+      "circuit": "140L",
+      "from": "Summerford",
+      "from_code": "SUM",
+      "to": "Twillingate",
+      "to_code": "TWG",
+      "source_page": 8
+    },
+    {
+      "circuit": "142L",
+      "from": "Cobb's Pond",
+      "from_code": "COB",
+      "to": "Clarke's Head Tap",
+      "to_code": null,
+      "source_page": 8
+    },
+    {
+      "circuit": "144L",
+      "from": "Cobb\u2019s Pond",
+      "from_code": "COB",
+      "to": "Gander",
+      "to_code": "GAN",
+      "source_page": 8
+    },
+    {
+      "circuit": "146L",
+      "from": "Gander",
+      "from_code": "GAN",
+      "to": "Gambo",
+      "to_code": "GAM",
+      "source_page": 8
+    },
+    {
+      "circuit": "300L",
+      "from": "Linton Lake",
+      "from_code": "LLK",
+      "to": "Marystown",
+      "to_code": "MSY",
+      "source_page": 8
+    },
+    {
+      "circuit": "301L",
+      "from": "Greenhill",
+      "from_code": "GRH",
+      "to": "Salt Pond",
+      "to_code": "SPO",
+      "source_page": 9
+    },
+    {
+      "circuit": "302L",
+      "from": "Salt Pond",
+      "from_code": "SPO",
+      "to": "Laurentian",
+      "to_code": "LAU",
+      "source_page": 9
+    },
+    {
+      "circuit": "305L",
+      "from": "Laurentian",
+      "from_code": "LAU",
+      "to": "Greenhill",
+      "to_code": "GRH",
+      "source_page": 9
+    },
+    {
+      "circuit": "308L",
+      "from": "Marystown",
+      "from_code": "MSY",
+      "to": "Salt Pond",
+      "to_code": "SPO",
+      "source_page": 9
+    },
+    {
+      "circuit": "351L",
+      "from": "Massey Drive",
+      "from_code": "MAS",
+      "to": "Walbournes",
+      "to_code": "WAL",
+      "source_page": 9
+    },
+    {
+      "circuit": "352L",
+      "from": "Massey Drive",
+      "from_code": "MAS",
+      "to": "Walbournes",
+      "to_code": "WAL",
+      "source_page": 9
+    },
+    {
+      "circuit": "353L",
+      "from": "Walbournes",
+      "from_code": "WAL",
+      "to": "Frenchman\u2019s Cove",
+      "to_code": "FRN",
+      "source_page": 9
+    },
+    {
+      "circuit": "356L",
+      "from": "Massey Drive",
+      "from_code": "MAS",
+      "to": "Humber",
+      "to_code": "HUM",
+      "source_page": 9
+    },
+    {
+      "circuit": "357L",
+      "from": "Massey Drive",
+      "from_code": "MAS",
+      "to": "Bayview",
+      "to_code": "BVS",
+      "source_page": 9
+    },
+    {
+      "circuit": "358L",
+      "from": "Bayview",
+      "from_code": "BVS",
+      "to": "Gillams",
+      "to_code": "GIL",
+      "source_page": 9
+    },
+    {
+      "circuit": "359L",
+      "from": "Humber",
+      "from_code": "HUM",
+      "to": "Bayview",
+      "to_code": "BVS",
+      "source_page": 9
+    },
+    {
+      "circuit": "363L",
+      "from": "Baie Verte Junction",
+      "from_code": "BVJ",
+      "to": "Seal Cove Road",
+      "to_code": "SCR",
+      "source_page": 9
+    },
+    {
+      "circuit": "400L",
+      "from": "Bottom Brook Plant",
+      "from_code": "BBK",
+      "to": "Wheelers",
+      "to_code": "WHE",
+      "source_page": 9
+    },
+    {
+      "circuit": "401L",
+      "from": "Stephenville",
+      "from_code": "STV",
+      "to": "Gallants",
+      "to_code": "GAL",
+      "source_page": 9
+    },
+    {
+      "circuit": "402L",
+      "from": "Gallants",
+      "from_code": "GAL",
+      "to": "Berry Head",
+      "to_code": "BHD",
+      "source_page": 9
+    },
+    {
+      "circuit": "403L",
+      "from": "St. George\u2019s",
+      "from_code": "STG",
+      "to": "Lookout Brook Plant",
+      "to_code": "LBK",
+      "source_page": 9
+    },
+    {
+      "circuit": "404L",
+      "from": "Wheelers",
+      "from_code": "WHE",
+      "to": "Bottom Brook",
+      "to_code": "BBK",
+      "source_page": 9
+    },
+    {
+      "circuit": "405L",
+      "from": "Harmon",
+      "from_code": "HAR",
+      "to": "Stephenville",
+      "to_code": "STV",
+      "source_page": 9
+    },
+    {
+      "circuit": "406L",
+      "from": "Harmon",
+      "from_code": "HAR",
+      "to": "Gallants",
+      "to_code": "GAL",
+      "source_page": 9
+    },
+    {
+      "circuit": "407L",
+      "from": "Stephenville",
+      "from_code": "STV",
+      "to": "St. George\u2019s",
+      "to_code": "STG",
+      "source_page": 9
+    },
+    {
+      "circuit": "410L",
+      "from": "Berry Head",
+      "from_code": "BHD",
+      "to": "Lower Cove Mine",
+      "to_code": "LCV",
+      "source_page": 9
+    },
+    {
+      "circuit": "416L",
+      "from": "Grand Bay",
+      "from_code": "GBS",
+      "to": "Long Lake",
+      "to_code": "LGL",
+      "source_page": 9
+    },
+    {
+      "circuit": "417L",
+      "from": "Grand Bay",
+      "from_code": "GBS",
+      "to": "Port aux Basques",
+      "to_code": "PAB",
+      "source_page": 9
+    }
+  ],
+  "substations": [
+    {
+      "code": "ABC",
+      "name": "Abrahams Cove",
+      "feeders": [
+        "ABC-01",
+        "ABC-02"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "ALX",
+      "name": "Alexander Bay",
+      "feeders": [],
+      "source_page": 11
+    },
+    {
+      "code": "AUS",
+      "name": "Argentia - USN",
+      "feeders": [],
+      "source_page": 11
+    },
+    {
+      "code": "BRB",
+      "name": "Bay Roberts",
+      "feeders": [
+        "BRB-01",
+        "BRB-02",
+        "BRB-03",
+        "BRB-04",
+        "BRB-05"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BLA",
+      "name": "Bay L'Argent",
+      "feeders": [
+        "BLA-01"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BVJ",
+      "name": "Baie Verte Junction",
+      "feeders": [
+        "BVJ-01"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BVM",
+      "name": "Baie Verte Mines",
+      "feeders": [],
+      "source_page": 11
+    },
+    {
+      "code": "BVS",
+      "name": "Bayview",
+      "feeders": [
+        "BVS-01",
+        "BVS-02",
+        "BVS-03",
+        "BVS-04"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BHD",
+      "name": "Berry Head",
+      "feeders": [
+        "BHD-01"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BIG",
+      "name": "Big Pond",
+      "feeders": [
+        "BIG-01",
+        "BIG-02"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BFS",
+      "name": "Bishop\u2019s Falls",
+      "feeders": [
+        "BFS-01",
+        "BFS-02"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BLK",
+      "name": "Blaketown",
+      "feeders": [
+        "BLK-01",
+        "BLK-02"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BVA",
+      "name": "Bonavista",
+      "feeders": [
+        "BVA-01",
+        "BVA-02",
+        "BVA-03"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BBK",
+      "name": "Bottom Brook Plant",
+      "feeders": [],
+      "source_page": 11
+    },
+    {
+      "code": "BOT",
+      "name": "Botwood",
+      "feeders": [
+        "BOT-01",
+        "BOT-02",
+        "BOT-03"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BOY",
+      "name": "Boyd's Cove",
+      "feeders": [],
+      "source_page": 11
+    },
+    {
+      "code": "BCV",
+      "name": "Broad Cove",
+      "feeders": [
+        "BCV-01",
+        "BCV-02",
+        "BCV-03",
+        "BCV-04"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "BUC",
+      "name": "Buchans",
+      "feeders": [
+        "BUC-01",
+        "BUC-02"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "CAB",
+      "name": "Cape Broyle",
+      "feeders": [
+        "CAB-01"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "CAR",
+      "name": "Carbonear",
+      "feeders": [
+        "CAR-01",
+        "CAR-02",
+        "CAR-03",
+        "CAR-04"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "CAT",
+      "name": "Catalina",
+      "feeders": [
+        "CAT-01",
+        "CAT-02",
+        "CAT-03"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "CHA",
+      "name": "Chamberlains",
+      "feeders": [
+        "CHA-01",
+        "CHA-02",
+        "CHA-03"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "CLV",
+      "name": "Clarenville",
+      "feeders": [
+        "CLV-01",
+        "CLV-02",
+        "CLV-03"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "CLK",
+      "name": "Clarke's Pond",
+      "feeders": [
+        "CLK-02",
+        "CLK-03",
+        "CLK-04"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "COB",
+      "name": "Cobb's Pond",
+      "feeders": [
+        "COB-01",
+        "COB-02",
+        "COB-03"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "COL",
+      "name": "Colliers",
+      "feeders": [
+        "COL-01",
+        "COL-02"
+      ],
+      "source_page": 11
+    },
+    {
+      "code": "DLK",
+      "name": "Deer Lake",
+      "feeders": [
+        "DLK-01",
+        "DLK-03",
+        "DLK-04"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "DOY",
+      "name": "Doyle's",
+      "feeders": [
+        "DOY-01"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "DUN",
+      "name": "Dunville",
+      "feeders": [
+        "DUN-01",
+        "DUN-02"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "FPD",
+      "name": "Fall Pond Plant",
+      "feeders": [],
+      "source_page": 12
+    },
+    {
+      "code": "FER",
+      "name": "Fermeuse",
+      "feeders": [
+        "FER-01"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "FRN",
+      "name": "Frenchman's Cove",
+      "feeders": [
+        "FRN-01",
+        "FRN-02"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GAL",
+      "name": "Gallants",
+      "feeders": [
+        "GAL-01",
+        "GAL-03",
+        "GAL-04",
+        "GAL-05"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GAM",
+      "name": "Gambo",
+      "feeders": [
+        "GAM-01",
+        "GAM-02"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GAN",
+      "name": "Gander",
+      "feeders": [
+        "GAN-01",
+        "GAN-02",
+        "GAN-03",
+        "GAN-04"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GBY",
+      "name": "Gander Bay",
+      "feeders": [
+        "GBY-01",
+        "GBY-02",
+        "GBY-03"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GAR",
+      "name": "Garnish",
+      "feeders": [
+        "GAR-01"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GIL",
+      "name": "Gilliams",
+      "feeders": [
+        "GIL-01",
+        "GIL-02"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GDL",
+      "name": "Glendale",
+      "feeders": [
+        "GDL-01",
+        "GDL-02",
+        "GDL-03",
+        "GDL-04",
+        "GDL-05",
+        "GDL-06"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GLN",
+      "name": "Glenwood",
+      "feeders": [
+        "GLN-01"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GLV",
+      "name": "Glovertown",
+      "feeders": [
+        "GLV-01",
+        "GLV-02"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GOU",
+      "name": "Goulds",
+      "feeders": [
+        "GOU-01",
+        "GOU-02",
+        "GOU-03"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GBS",
+      "name": "Grand Bay",
+      "feeders": [
+        "GBS-01",
+        "GBS-02"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GBE",
+      "name": "Grand Beach",
+      "feeders": [
+        "GBE-01"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GFS",
+      "name": "Grand Falls",
+      "feeders": [
+        "GFS-01",
+        "GFS-03",
+        "GFS-04",
+        "GFS-05",
+        "GFS-06",
+        "GFS-07",
+        "GFS-08",
+        "GFS-09",
+        "GFS-10"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GRH",
+      "name": "Greenhill",
+      "feeders": [
+        "GRH-01",
+        "GRH-02",
+        "GRH-03"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "GPD",
+      "name": "Greenspond",
+      "feeders": [
+        "GPD-01"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "HGR",
+      "name": "Harbour Grace",
+      "feeders": [
+        "HGR-01",
+        "HGR-02",
+        "HGR-03"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "HWD",
+      "name": "Hardwoods",
+      "feeders": [
+        "HWD-01",
+        "HWD-02",
+        "HWD-03",
+        "HWD-04",
+        "HWD-06",
+        "HWD-07",
+        "HWD-08"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "HBS",
+      "name": "Hare Bay",
+      "feeders": [
+        "HBS-01",
+        "HBS-02"
+      ],
+      "source_page": 12
+    },
+    {
+      "code": "HAR",
+      "name": "Harmon",
+      "feeders": [
+        "HAR-01",
+        "HAR-02"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "HCT",
+      "name": "Heart's Content",
+      "feeders": [
+        "HCT-01"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "HOL",
+      "name": "Holyrood",
+      "feeders": [
+        "HOL-01",
+        "HOL-02"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "HCP",
+      "name": "Horsechops Plant",
+      "feeders": [],
+      "source_page": 13
+    },
+    {
+      "code": "HOW",
+      "name": "Howley",
+      "feeders": [
+        "HOW-01"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "HUM",
+      "name": "Humber",
+      "feeders": [
+        "HUM-01",
+        "HUM-04",
+        "HUM-07",
+        "HUM-08",
+        "HUM-09"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "IND",
+      "name": "Indian Cove",
+      "feeders": [],
+      "source_page": 13
+    },
+    {
+      "code": "ILC",
+      "name": "Upper Island Cove",
+      "feeders": [
+        "ILC-01",
+        "ILC-02"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "ISL",
+      "name": "Islington",
+      "feeders": [
+        "ISL-01"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "JON",
+      "name": "Jonathan's Pond",
+      "feeders": [
+        "JON-T1"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "KEL",
+      "name": "Kelligrews",
+      "feeders": [
+        "KEL-01",
+        "KEL-02"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "KEN",
+      "name": "Kenmount",
+      "feeders": [
+        "KEN-02",
+        "KEN-03",
+        "KEN-04"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "KBR",
+      "name": "King's Bridge",
+      "feeders": [
+        "KBR-01",
+        "KBR-02",
+        "KBR-03",
+        "KBR-04",
+        "KBR-05",
+        "KBR-06",
+        "KBR-07",
+        "KBR-08",
+        "KBR-09",
+        "KBR-10",
+        "KBR-11",
+        "KBR-12"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "LAU",
+      "name": "Laurentian",
+      "feeders": [
+        "LAU-01",
+        "LAU-02"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "LWN",
+      "name": "Lawn",
+      "feeders": [],
+      "source_page": 13
+    },
+    {
+      "code": "LET",
+      "name": "Lethbridge",
+      "feeders": [
+        "LET-01"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "LEW",
+      "name": "Lewisporte",
+      "feeders": [
+        "LEW-01",
+        "LEW-02",
+        "LEW-03",
+        "LEW-04"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "LLK",
+      "name": "Linton Lake",
+      "feeders": [
+        "LLK-01",
+        "LLK-02",
+        "LLK-03"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "LOK",
+      "name": "Lockston",
+      "feeders": [
+        "LOK-01"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "LGL",
+      "name": "Long Lake",
+      "feeders": [
+        "LGL-01",
+        "LGL-02"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "LBK",
+      "name": "Lookout Brook Plant",
+      "feeders": [],
+      "source_page": 13
+    },
+    {
+      "code": "MMT",
+      "name": "Marble Mountain",
+      "feeders": [
+        "MMT-01"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "MSY",
+      "name": "Marystown",
+      "feeders": [
+        "MSY-01",
+        "MSY-02",
+        "MSY-03",
+        "MSY-04"
+      ],
+      "source_page": 13
+    },
+    {
+      "code": "MAS",
+      "name": "Massey Drive",
+      "feeders": [],
+      "source_page": 13
+    },
+    {
+      "code": "MUN",
+      "name": "Memorial",
+      "feeders": [],
+      "source_page": 14
+    },
+    {
+      "code": "MIL",
+      "name": "Milton",
+      "feeders": [
+        "MIL-01",
+        "MIL-02"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "MOB",
+      "name": "Mobile",
+      "feeders": [
+        "MOB-01",
+        "MOB-02"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "MOL",
+      "name": "Molloy's Lane",
+      "feeders": [
+        "MOL-01",
+        "MOL-02",
+        "MOL-03",
+        "MOL-04",
+        "MOL-05",
+        "MOL-06",
+        "MOL-08",
+        "MOL-09"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "MKS",
+      "name": "Monkstown",
+      "feeders": [
+        "MKS-01",
+        "MKS-02"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "MRP",
+      "name": "Morris Plant",
+      "feeders": [],
+      "source_page": 14
+    },
+    {
+      "code": "MUS",
+      "name": "Musgrave Harbour",
+      "feeders": [],
+      "source_page": 14
+    },
+    {
+      "code": "NCH",
+      "name": "New Chelsea",
+      "feeders": [
+        "NCH-01",
+        "NCH-02",
+        "NCH-03"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "NHR",
+      "name": "New Harbour",
+      "feeders": [
+        "NHR-01",
+        "NHR-02"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "QTZ",
+      "name": "Newlite Enterprises",
+      "feeders": [
+        "QTZ-01"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "NWB",
+      "name": "Northwest Brook",
+      "feeders": [
+        "NWB-01",
+        "NWB-02"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "NDJ",
+      "name": "Notre Dame Junction",
+      "feeders": [],
+      "source_page": 14
+    },
+    {
+      "code": "OPL",
+      "name": "Old Perlican",
+      "feeders": [
+        "OPL-01",
+        "OPL-02",
+        "OPL-03"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "OXP",
+      "name": "Oxen Pond",
+      "feeders": [
+        "OXP-01"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "PAS",
+      "name": "Pasadena",
+      "feeders": [
+        "PAS-01",
+        "PAS-02"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "PEP",
+      "name": "Pepperell",
+      "feeders": [
+        "PEP-01",
+        "PEP-02",
+        "PEP-03",
+        "PEP-04"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "PHR",
+      "name": "Petty Harbour",
+      "feeders": [
+        "PHR-01"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "PBK",
+      "name": "Pierre's Brook Plant",
+      "feeders": [],
+      "source_page": 14
+    },
+    {
+      "code": "PIT",
+      "name": "Pitman's Pond Plant",
+      "feeders": [],
+      "source_page": 14
+    },
+    {
+      "code": "PJN",
+      "name": "Placentia Junction",
+      "feeders": [
+        "PJN-01"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "PBD",
+      "name": "Port Blandford",
+      "feeders": [
+        "PBD-01"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "PUN",
+      "name": "Port Union",
+      "feeders": [],
+      "source_page": 14
+    },
+    {
+      "code": "PAB",
+      "name": "Port aux Basques",
+      "feeders": [
+        "PAB-03",
+        "PAB-05"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "PRC",
+      "name": "Princeton Pond",
+      "feeders": [],
+      "source_page": 14
+    },
+    {
+      "code": "PUL",
+      "name": "Pulpit Rock",
+      "feeders": [
+        "PUL-01",
+        "PUL-02",
+        "PUL-03"
+      ],
+      "source_page": 14
+    },
+    {
+      "code": "RBK",
+      "name": "Rattling Brook",
+      "feeders": [
+        "RBK-01"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "RRD",
+      "name": "Ridge Road",
+      "feeders": [
+        "RRD-02",
+        "RRD-03",
+        "RRD-04",
+        "RRD-05",
+        "RRD-06",
+        "RRD-07",
+        "RRD-08",
+        "RRD-09",
+        "RRD-10"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "RVH",
+      "name": "Riverhead",
+      "feeders": [
+        "RVH-01",
+        "RVH-02"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "ROB",
+      "name": "Robinsons",
+      "feeders": [
+        "ROB-01",
+        "ROB-02"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "ROP",
+      "name": "Rocky Pond Plant",
+      "feeders": [],
+      "source_page": 15
+    },
+    {
+      "code": "RBH",
+      "name": "Rose Blanche Plant",
+      "feeders": [],
+      "source_page": 15
+    },
+    {
+      "code": "RFD",
+      "name": "Roycefield Mine",
+      "feeders": [],
+      "source_page": 15
+    },
+    {
+      "code": "SPO",
+      "name": "Salt Pond",
+      "feeders": [
+        "SPO-01",
+        "SPO-02",
+        "SPO-03"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "SBK",
+      "name": "Sandy Brook Plant",
+      "feeders": [],
+      "source_page": 15
+    },
+    {
+      "code": "SCV",
+      "name": "Seal Cove",
+      "feeders": [
+        "SCV-01",
+        "SCV-02"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "SCR",
+      "name": "Seal Cove Road",
+      "feeders": [
+        "SCR-01",
+        "SCR-02"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "SPR",
+      "name": "Springdale",
+      "feeders": [
+        "SPR-01",
+        "SPR-02",
+        "SPR-03",
+        "SPR-04"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "SPF",
+      "name": "Springfield",
+      "feeders": [
+        "SPF-01",
+        "SPF-02",
+        "SPF-03"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "SCT",
+      "name": "St. Catherine's",
+      "feeders": [
+        "SCT-01",
+        "SCT-02"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "STG",
+      "name": "St. George's",
+      "feeders": [
+        "STG-01",
+        "STG-02"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "SJD",
+      "name": "St. John's Diesel",
+      "feeders": [],
+      "source_page": 15
+    },
+    {
+      "code": "SJM",
+      "name": "St. John's Main",
+      "feeders": [
+        "SJM-01",
+        "SJM-02",
+        "SJM-03",
+        "SJM-04",
+        "SJM-05",
+        "SJM-06",
+        "SJM-07",
+        "SJM-08",
+        "SJM-09",
+        "SJM-10",
+        "SJM-11",
+        "SJM-12",
+        "SJM-13",
+        "SJM-14"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "SLA",
+      "name": "Stamp's Lane",
+      "feeders": [
+        "SLA-01",
+        "SLA-02",
+        "SLA-03",
+        "SLA-05",
+        "SLA-06",
+        "SLA-07",
+        "SLA-08",
+        "SLA-09",
+        "SLA-10",
+        "SLA-11",
+        "SLA-12",
+        "SLA-13"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "STX",
+      "name": "Stephenville Crossing",
+      "feeders": [
+        "STX-01"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "STV",
+      "name": "Stephenville",
+      "feeders": [],
+      "source_page": 15
+    },
+    {
+      "code": "SUM",
+      "name": "Summerford",
+      "feeders": [
+        "SUM-01",
+        "SUM-02"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "SMV",
+      "name": "Summerville",
+      "feeders": [
+        "SMV-01"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "SUN",
+      "name": "Sunnyside",
+      "feeders": [
+        "SUN-01",
+        "SUN-03"
+      ],
+      "source_page": 15
+    },
+    {
+      "code": "TNS",
+      "name": "Terra Nova",
+      "feeders": [
+        "TNS-01"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "TOP",
+      "name": "Topsail Plant",
+      "feeders": [],
+      "source_page": 16
+    },
+    {
+      "code": "TCV",
+      "name": "Tors Cove Plant",
+      "feeders": [],
+      "source_page": 16
+    },
+    {
+      "code": "TRP",
+      "name": "Trepassey",
+      "feeders": [
+        "TRP-01",
+        "TRP-02"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "TRN",
+      "name": "Trinity",
+      "feeders": [
+        "TRN-01",
+        "TRN-02"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "TWG",
+      "name": "Twillingate",
+      "feeders": [
+        "TWG-01",
+        "TWG-02",
+        "TWG-03"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "VIC",
+      "name": "Victoria",
+      "feeders": [
+        "VIC-01",
+        "VIC-02"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "VIR",
+      "name": "Virginia Waters",
+      "feeders": [
+        "VIR-01",
+        "VIR-02",
+        "VIR-03",
+        "VIR-04",
+        "VIR-05",
+        "VIR-06",
+        "VIR-07"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "WAL",
+      "name": "Walbournes",
+      "feeders": [
+        "WAL-01",
+        "WAL-02",
+        "WAL-04",
+        "WAL-05",
+        "WAL-06",
+        "WAL-07"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "WBC",
+      "name": "Webbers Cove",
+      "feeders": [
+        "WBC-01"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "WES",
+      "name": "Wesleyville",
+      "feeders": [
+        "WES-01",
+        "WES-02",
+        "WES-03"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "WBK",
+      "name": "West Brook Plant",
+      "feeders": [],
+      "source_page": 16
+    },
+    {
+      "code": "WAV",
+      "name": "Western Avalon",
+      "feeders": [
+        "WAV-01",
+        "WAV-02"
+      ],
+      "source_page": 16
+    },
+    {
+      "code": "WHE",
+      "name": "Wheelers",
+      "feeders": [],
+      "source_page": 16
+    }
+  ],
+  "notes": [
+    "The generation list prints Greenhill as GRT on PDF p. 4. The transmission and station registers use GRH on PDF pp. 9 and 12.",
+    "The transmission register does not state a voltage for each circuit. The derived schematic does not assign one.",
+    "Tap names without a three-letter code are retained as printed."
+  ]
+}

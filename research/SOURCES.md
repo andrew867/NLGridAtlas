@@ -8,6 +8,7 @@ Run `npm run verify:sources` to calculate SHA-256 digests and file sizes.
 
 The initial collection includes:
 
+- Newfoundland Power 2006 Capital Budget Electrical System Handbook
 - NL Hydro 2004 Capital Budget Application
 - NL Hydro 2013 General Rate Application, Volume II
 - Oxen Pond 2013 application and RFIs
@@ -17,4 +18,8 @@ The initial collection includes:
 - Newfoundland Power 2025 38L and 39L relocation application
 - NL Hydro 2023 transmission and terminal-station asset report
 - NL Hydro 2024 short-term load forecast accuracy report
+
+Derived data from the handbook is stored in `research/derived/np-2006-handbook.json`. Run
+`python scripts/extract_np2006_handbook.py` to rebuild it from the archived PDF. The extractor
+checks the source-reported totals of 104 transmission lines, 136 substations, and 302 feeders.
 

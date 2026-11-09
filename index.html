@@ -18,6 +18,7 @@
         <span>GRID ATLAS</span>
       </a>
       <nav aria-label="Main navigation">
+        <a href="#handbook">2005 register</a>
         <a href="#network">One-line</a>
         <a href="#timeline">Timeline</a>
         <a href="#loads">Loads</a>
@@ -67,10 +68,77 @@
         </div>
       </section>
 
+      <section class="section handbook-section" id="handbook" aria-labelledby="handbook-title">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">01 / 2005 NETWORK REGISTER</span>
+            <h2 id="handbook-title">Newfoundland Power system handbook</h2>
+          </div>
+          <p>
+            The June 2005 handbook lists Newfoundland Power generation plants, transmission
+            circuits, substations, and distribution feeders. The diagram below uses the listed
+            circuit endpoints. It does not assign voltage where the circuit register does not state it.
+          </p>
+        </header>
+
+        <div class="handbook-totals" aria-label="Handbook reported totals">
+          <div><strong>104</strong><span>transmission lines</span></div>
+          <div><strong>136</strong><span>substations</span></div>
+          <div><strong>302</strong><span>distribution feeders</span></div>
+          <a href="http://www.pub.nf.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationHandbook.pdf" target="_blank" rel="noreferrer">
+            Electrical System Handbook / PDF pp. 2, 4, 6 to 18
+          </a>
+        </div>
+
+        <div class="handbook-layout">
+          <div class="phase-frame atlas-map-panel">
+            <div class="map-key" aria-label="Diagram key">
+              <span><i class="key-line"></i> Circuit listed in handbook</span>
+              <span><i class="key-node"></i> Station or plant designation</span>
+            </div>
+            <svg id="avalon-network" class="avalon-network" viewBox="0 0 1080 920" role="img" aria-labelledby="avalon-title avalon-desc">
+              <title id="avalon-title">Avalon network schematic from the 2005 Newfoundland Power circuit register</title>
+              <desc id="avalon-desc">A selectable schematic of handbook circuits whose listed endpoints are in the Avalon region.</desc>
+            </svg>
+            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / JUNE 2005 REGISTER / VOLTAGE NOT ASSIGNED</p>
+          </div>
+
+          <aside class="handbook-detail" aria-live="polite">
+            <span class="evidence-state reported">REPORTED</span>
+            <p class="component-code" id="handbook-detail-code">OXP / STATION</p>
+            <h3 id="handbook-detail-title">Oxen Pond</h3>
+            <p id="handbook-detail-summary">Select a station to list its 2005 feeders and connected transmission circuits.</p>
+            <dl id="handbook-detail-data" class="component-data"></dl>
+            <a id="handbook-detail-source" class="evidence-link" href="http://www.pub.nf.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationHandbook.pdf" target="_blank" rel="noreferrer">Electrical System Handbook / PDF pp. 6 to 16</a>
+          </aside>
+        </div>
+
+        <div class="source-conflict" role="note">
+          <span>SOURCE CONFLICT</span>
+          <p>The generation list prints Greenhill as GRT on PDF p. 4. The line and station registers use GRH on PDF pp. 9 and 12. Both codes are retained.</p>
+        </div>
+
+        <div class="register-browser">
+          <header>
+            <div class="register-tabs" role="group" aria-label="Select handbook register">
+              <button class="register-tab active" type="button" data-register="lines" aria-pressed="true">Lines</button>
+              <button class="register-tab" type="button" data-register="stations" aria-pressed="false">Stations</button>
+              <button class="register-tab" type="button" data-register="plants" aria-pressed="false">Generation</button>
+            </div>
+            <label class="source-search handbook-search">
+              <span>Filter register</span>
+              <input id="handbook-search" type="search" placeholder="31L, Oxen Pond, OXP..." autocomplete="off" />
+            </label>
+          </header>
+          <p id="register-count" class="register-count"></p>
+          <div id="handbook-register" class="handbook-register" aria-live="polite"></div>
+        </div>
+      </section>
+
       <section class="section network-section" id="network" aria-labelledby="network-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">01 / ONE-LINE</span>
+            <span class="section-number">02 / ONE-LINE</span>
             <h2 id="network-title">Oxen Pond terminal station</h2>
           </div>
           <p>
@@ -153,7 +221,7 @@
       <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">02 / CHANGE RECORD</span>
+            <span class="section-number">03 / CHANGE RECORD</span>
             <h2 id="timeline-title">System changes and events</h2>
           </div>
           <div class="filter-set" role="group" aria-label="Filter timeline">
@@ -169,7 +237,7 @@
       <section class="section load-section" id="loads" aria-labelledby="loads-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">03 / ACTUAL AGAINST FORECAST</span>
+            <span class="section-number">04 / ACTUAL AGAINST FORECAST</span>
             <h2 id="loads-title">Actual load and forecast load</h2>
           </div>
           <p>Forecasts are not measurements. These comparisons retain the category stated in the filing.</p>
@@ -209,7 +277,7 @@
       <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">04 / SOURCE LEDGER</span>
+            <span class="section-number">05 / SOURCE LEDGER</span>
             <h2 id="evidence-title">Source ledger</h2>
           </div>
           <label class="source-search">

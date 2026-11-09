@@ -2,7 +2,7 @@
 
 NL Grid Atlas is an unofficial, source-cited engineering atlas of Newfoundland and Labrador electrical infrastructure. It converts public regulatory filings into diagrams, timelines, station records, and load comparisons that retain exact evidence links.
 
-The first release focuses on the Island Interconnected System, the Northeast Avalon delivery network, major transmission and terminal-station work, and Hydro's historical VHF system.
+The first release focuses on the Island Interconnected System, a June 2005 Newfoundland Power network register, the Northeast Avalon delivery network, major transmission and terminal-station work, and Hydro's historical VHF system.
 
 ## Project status
 
@@ -27,6 +27,7 @@ npm run build
 - `src/`: site code and curated evidence data
 - `docs/`: design, writing, and research rules
 - `research/sources/`: unmodified copies of public filings
+- `research/derived/`: structured records extracted from cited source pages
 - `research/catalog.json`: source URLs, local paths, and page-level notes
 - `scripts/`: research integrity tools
 - `tests/`: data and citation validation

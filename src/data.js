@@ -1,5 +1,15 @@
 export const sources = [
   {
+    id: "np-2006-handbook",
+    year: 2006,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Electrical System Handbook",
+    topics: ["generation", "transmission lines", "substations", "feeders", "station codes", "Island map"],
+    pages: "PDF pp. 2, 4, 6 to 18",
+    status: "verified",
+    url: "http://www.pub.nf.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationHandbook.pdf"
+  },
+  {
     id: "asset-2023",
     year: 2023,
     organization: "NL Hydro",

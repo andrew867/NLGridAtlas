@@ -2,7 +2,8 @@ node_modules/
 dist/
 .vite/
 *.log
-research/derived/
+research/derived/*
+!research/derived/np-2006-handbook.json
 research/renders/
 research/tmp/
 .DS_Store
