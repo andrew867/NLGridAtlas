@@ -40,6 +40,12 @@ python scripts\sync_nlhydro_uploads.py mirror --out C:\src\misc\NLHydroUploads
 
 The output directory contains `inventory.json`, `downloads.jsonl`, and the mirrored files. Keep the mirror outside this repository.
 
+Search one or more PDF trees and retain physical page references:
+
+```powershell
+python scripts\search_pdf_pages.py C:\src\misc\PUB\mirror\applications\NP2027Capital --term "Pulpit Rock" --term "PUL-T2"
+```
+
 ## Repository layout
 
 - `src/`: site code and curated evidence data
