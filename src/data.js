@@ -60,6 +60,36 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf"
   },
   {
+    id: "np-2014-capital",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application",
+    topics: ["12L", "Memorial", "Health Sciences Centre", "conductor"],
+    pages: "PDF p. 309",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2027-loop-study",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "138 kV and 66 kV Loop Assessments, 2027 to 2036",
+    topics: ["Western Avalon", "Holyrood", "transformer ratings", "contingencies"],
+    pages: "PDF pp. 194 to 195",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
+    id: "nlh-2011-western-avalon",
+    year: 2011,
+    organization: "NL Hydro",
+    title: "Upgrade Transmission Line Corridor, Bay d'Espoir to Western Avalon",
+    topics: ["Western Avalon", "single-line", "transformer ratings", "ring bus"],
+    pages: "PDF p. 7",
+    status: "verified",
+    url: "https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf"
+  },
+  {
     id: "labrador-2017",
     year: 2017,
     organization: "NL Hydro",
@@ -172,6 +202,15 @@ export const timeline = [
     body: "The 25 MVA transformer reached 28.5 MVA during the January system event.",
     sourceId: "np-2014-improvements",
     pages: "PDF p. 14",
+    status: "verified"
+  },
+  {
+    date: "2013 to 2014",
+    category: "station",
+    title: "12L rebuilt between Memorial and King's Bridge",
+    body: "The project rebuilt the remaining aerial section of 12L, one of two circuits serving Memorial University, Health Sciences Centre, and Janeway. The filing cites load growth and recent infrastructure additions; it does not name the cyclotron.",
+    sourceId: "np-2014-capital",
+    pages: "PDF p. 309",
     status: "verified"
   },
   {

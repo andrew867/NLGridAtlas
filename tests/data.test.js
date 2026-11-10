@@ -74,3 +74,16 @@ test("Avalon schematic only uses handbook station codes and line endpoints", () 
   }
 });
 
+test("station additions preserve source limits", async () => {
+  const healthEvent = timeline.find((event) => event.sourceId === "np-2014-capital");
+  assert.ok(healthEvent);
+  assert.match(healthEvent.body, /Health Sciences Centre/);
+  assert.match(healthEvent.body, /does not name the cyclotron/);
+  assert.equal(healthEvent.pages, "PDF p. 309");
+
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(html, />OXP-01</);
+  assert.match(html, /T3 entered service at Oxen Pond in 1968 and was relocated to Hardwoods in 1986/);
+  assert.match(html, /Unit in-service years were not located/);
+});
+

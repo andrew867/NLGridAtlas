@@ -37,6 +37,30 @@
       "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf"
     },
     {
+      "id": "np-2014-capital",
+      "local_path": "sources/np-2014-capital/NP2014ApplicationComplete.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf",
+      "sha256": "da133a107fc706c45e36d4e0f30b2156855a7b247f468aec02a23d1fad19566c",
+      "physical_pages": 422,
+      "notes": "Primary source for the 12L rebuild serving Memorial University, Health Sciences Centre, and Janeway, physical PDF page 309."
+    },
+    {
+      "id": "np-2027-loop-study",
+      "local_path": "sources/np-2027-thermal/application.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF",
+      "sha256": "f712a7a14a2834d7d9dedb32d4396104f80fc5f14062cd81a5be74efae208633",
+      "physical_pages": 467,
+      "notes": "Contains the May 25, 2026 138 kV and 66 kV loop assessment. Transformer maximum ratings are on physical PDF pages 194 and 195."
+    },
+    {
+      "id": "nlh-2011-western-avalon",
+      "local_path": "sources/western-avalon/Exhibit114.pdf",
+      "source_url": "https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf",
+      "sha256": "f934d8974182f567f518870c6df09625eac5faa51e095c636ad2c18c2b7942a2",
+      "physical_pages": 47,
+      "notes": "Hydro's Western Avalon single-line is Figure 3 on physical PDF page 7. It gives transformer voltage ratios and staged MVA ratings."
+    },
+    {
       "id": "np-2023-memorial",
       "local_path": "sources/np-2023-memorial/2023-03-03-application.pdf",
       "source_url": "http://www.pub.nl.ca/applications/2023/NP2023Capital_SUPP_MemorialStation/app/From%20NP%20-%20Approval%20for%20the%20Purchase%20and%20Installation%20of%20a%20Replacement%20Power%20Transformer%20for%20Memorial%20Substation%20-%202023-03-03.PDF"
