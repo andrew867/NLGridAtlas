@@ -77,6 +77,24 @@
       "notes": "Primary source for the 12L rebuild serving Memorial University, Health Sciences Centre, and Janeway, physical PDF page 309."
     },
     {
+      "id": "np-2025-capital-pulpit-rock",
+      "local_path": "sources/np-2025-capital/pulpit-rock-pages.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF",
+      "sha256": "161a28b520ea1229483a89e37ac44bc715bdae94f49e22eb035800f8bdd319ec",
+      "physical_pages": 12,
+      "source_original_physical_pages": 650,
+      "notes": "Research excerpt of physical PDF pages 88 to 90, 458, and 463 to 470. It records the Pulpit Rock topology, transformer ratings, PUL-T2 history, and replacement scope."
+    },
+    {
+      "id": "np-2026-capital-pulpit-rock",
+      "local_path": "sources/np-2026-capital/pulpit-rock-pages.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF",
+      "sha256": "cefc411b2f049396b828a2769a24fc882588cf6206921292f7e8ee60d2de0c89",
+      "physical_pages": 3,
+      "source_original_physical_pages": 540,
+      "notes": "Research excerpt of physical PDF pages 39, 197, and 370. It records PUL-05, the approved PUL-T2 project schedule, transformer capacities, and forecast loads."
+    },
+    {
       "id": "np-2027-loop-study",
       "local_path": "sources/np-2027-thermal/application.pdf",
       "source_url": "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF",

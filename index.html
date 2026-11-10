@@ -305,6 +305,110 @@
           </aside>
           </div>
 
+          <div class="station-layout" id="terminal-wav" data-terminal-layout>
+            <article class="phase-frame station-sheet compact-sheet">
+              <div class="panel-toolbar station-toolbar" aria-label="Western Avalon voltage levels">
+                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66 kV</span>
+              </div>
+              <svg class="station-line western-line" viewBox="0 0 1000 430" role="img" aria-labelledby="wav-title wav-desc">
+              <title id="wav-title">Western Avalon Terminal Station simplified one-line</title>
+                <desc id="wav-desc">A simplified version of Hydro's 2011 Figure 3 showing 230 kilovolt buses B1 and B3, 138 kilovolt bus B4, 66 kilovolt bus B2, transformers T1 through T5, existing line terminals, and the proposed GIS ring.</desc>
+                <path class="line v230-line" d="M500 120 H860" /><text class="bus-label" x="675" y="100">B1 / 230 kV BUS</text>
+                <path class="line v230-line" d="M120 120 H460" /><text class="bus-label" x="280" y="100">B3 / 230 kV BUS</text>
+                <path class="line v138-line" d="M120 330 H460" /><text class="bus-label" x="280" y="365">B4 / 138 kV BUS</text>
+                <path class="line v66-line" d="M540 330 H780" /><text class="bus-label" x="630" y="365">B2 / 66 kV BUS</text>
+                <path class="line proposed-line" d="M65 80 H120 V160 H65 V80 M65 120 H25" />
+                <text class="small-label" x="20" y="190">PROPOSED GIS RING</text><text class="small-label" x="5" y="215">NEW BAY D'ESPOIR LINE</text>
+                <g class="register-transformer component" transform="translate(205)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t3" aria-label="Western Avalon transformer T3">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T3</text>
+                </g>
+                <g class="register-transformer component" transform="translate(315)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t4" aria-label="Western Avalon transformer T4">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T4</text>
+                </g>
+                <g class="register-transformer component" transform="translate(425)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t5" aria-label="Western Avalon transformer T5">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T5</text>
+                </g>
+                <g class="register-transformer component" transform="translate(610)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t1" aria-label="Western Avalon transformer T1">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v66-winding" cy="252" r="20"/><text x="-13" y="292">T1</text>
+                </g>
+                <g class="register-transformer component" transform="translate(715)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t2" aria-label="Western Avalon transformer T2">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v66-winding" cy="252" r="20"/><text x="-13" y="292">T2</text>
+                </g>
+                <a class="diagram-link" href="#terminal-overview-lhb" aria-label="TL208 to Long Harbour"><path class="outgoing" d="M535 120V42"/><text class="small-label transformer-rating" x="535" y="16">TL208</text><text class="small-label transformer-rating" x="535" y="31">LONG HARBOUR</text></a>
+                <a class="diagram-link" href="#terminal-overview-cbc" aria-label="TL237 to Come By Chance"><path class="outgoing" d="M620 120V78"/><text class="small-label transformer-rating" x="620" y="52">TL237</text><text class="small-label transformer-rating" x="620" y="67">COME BY CHANCE</text></a>
+                <a class="diagram-link" href="#terminal-hwd" aria-label="TL201 to Hardwoods Terminal Station"><path class="outgoing" d="M710 120V42"/><text class="small-label transformer-rating" x="710" y="16">TL201</text><text class="small-label transformer-rating" x="710" y="31">HARDWOODS</text></a>
+                <a class="diagram-link" href="#terminal-overview-sun" aria-label="TL203 to Sunnyside"><path class="outgoing" d="M800 120V78"/><text class="small-label transformer-rating" x="800" y="52">TL203</text><text class="small-label transformer-rating" x="800" y="67">SUNNYSIDE</text></a>
+                <a class="diagram-link" href="#terminal-hrd" aria-label="TL217 to Holyrood Generating Station"><path class="outgoing" d="M860 120V380"/><text class="small-label transformer-rating" x="860" y="405">TL217 / HOLYROOD</text></a>
+              </svg>
+              <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2011 FIGURE 3 / PROPOSED EQUIPMENT DASHED</p>
+            </article>
+            <aside class="component-evidence station-evidence" data-diagram-panel="wav" data-default-component="wav-summary" aria-live="polite">
+              <span class="evidence-state verified" data-field="state">VERIFIED</span>
+              <p class="component-code" data-field="code"></p>
+              <h3 data-field="title"></h3>
+              <p data-field="summary"></p>
+              <dl class="component-data" data-field="data"></dl>
+              <div data-field="sources"></div>
+            </aside>
+          </div>
+
+          <div class="station-layout holyrood-layout" id="terminal-hrd" data-terminal-layout>
+            <article class="phase-frame station-sheet compact-sheet">
+              <div class="panel-toolbar station-toolbar" aria-label="Holyrood voltage levels">
+                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66 kV</span><span class="voltage-tag">Generation</span>
+              </div>
+              <svg class="station-line holyrood-line" viewBox="0 0 1100 690" role="img" aria-labelledby="hrd-title hrd-desc">
+                <title id="hrd-title">Holyrood internal transformer and bus arrangement</title>
+                <desc id="hrd-desc">A simplified historical arrangement from physical PDF page 663. T6, T7, and T8 connect the 138 and 230 kilovolt buses. Their three ratings are identified as ONAN, ONAF, and ONAF cooling stages. Generator transformers T1, T2, and T3 feed the 230 kilovolt system. T5 and T10 feed the 66 kilovolt bus. The 15 megawatt gas turbine is shown separately on the 13.8 kilovolt station-service branch through T9.</desc>
+                <path class="line v138-line" d="M70 90 H390"/><text class="bus-label" x="185" y="70">B8 / 138 kV BUS</text>
+                <path class="line v230-line" d="M70 310 H1030"/><text class="bus-label" x="470" y="292">230 kV BUS SECTIONS</text>
+                <path class="line v69-line" d="M900 455 H1030"/><text class="bus-label" x="915" y="488">B6 / B7 / 66 kV BUS</text>
+                <g class="register-transformer component" transform="translate(130)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t8" aria-label="Holyrood transformer T8">
+                  <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T8</text><text class="small-label transformer-rating" x="0" y="260">75/100/125</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
+                </g>
+                <g class="register-transformer component" transform="translate(230)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t7" aria-label="Holyrood transformer T7">
+                  <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T7</text><text class="small-label transformer-rating" x="0" y="260">25/33.3/41.7</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
+                </g>
+                <g class="register-transformer component" transform="translate(330)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t6" aria-label="Holyrood transformer T6">
+                  <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T6</text><text class="small-label transformer-rating" x="0" y="260">25/33.3/41.7</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
+                </g>
+                <g class="generator-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t3" aria-label="Holyrood generator transformer T3">
+                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G3</text><text class="small-label" x="-42" y="340">T3 / 170 MVA</text>
+                </g>
+                <g class="generator-transformer component" transform="translate(650)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t2" aria-label="Holyrood generator transformer T2">
+                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G2</text><text class="small-label" x="-56" y="340">T2 / 115/152/190 MVA</text>
+                </g>
+                <g class="generator-transformer component" transform="translate(800)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t1" aria-label="Holyrood generator transformer T1">
+                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G1</text><text class="small-label" x="-56" y="340">T1 / 105/140/180 MVA</text>
+                </g>
+                <g class="register-transformer component" transform="translate(930)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t10" aria-label="Holyrood transformer T10">
+                  <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-13" y="435">T10</text>
+                </g>
+                <g class="register-transformer component" transform="translate(1000)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t5" aria-label="Holyrood transformer T5">
+                  <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-9" y="435">T5</text>
+                </g>
+                <text class="small-label" x="900" y="335">15/20/25 MVA EACH</text>
+                <a class="diagram-link" href="#terminal-opd" aria-label="TL218 to Oxen Pond Terminal Station"><path class="outgoing" d="M460 310V42"/><text class="small-label transformer-rating" x="460" y="16">TL218</text><text class="small-label transformer-rating" x="460" y="31">OXEN POND</text></a>
+                <a class="diagram-link" href="#terminal-hwd" aria-label="TL242 to Hardwoods Terminal Station"><path class="outgoing" d="M610 310V78"/><text class="small-label transformer-rating" x="610" y="52">TL242</text><text class="small-label transformer-rating" x="610" y="67">HARDWOODS</text></a>
+                <a class="diagram-link" href="#terminal-wav" aria-label="TL217 to Western Avalon Terminal Station"><path class="outgoing" d="M760 310V42"/><text class="small-label transformer-rating" x="760" y="16">TL217</text><text class="small-label transformer-rating" x="760" y="31">WESTERN AVALON</text></a>
+                <g class="station-service component" transform="translate(230)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-gt" aria-label="Holyrood gas turbine and transformer T9">
+                  <circle class="generator-symbol" cy="535" r="26"/><text x="-14" y="543">GT</text><text class="small-label transformer-rating" x="0" y="500">15 MW</text><text class="small-label transformer-rating" x="0" y="516">13.8 kV</text>
+                  <path class="tap" d="M0 561 V575 M0 633 V655"/><circle class="winding generator-winding" cy="594" r="20"/><circle class="winding station-winding" cy="622" r="20"/>
+                  <path class="station-bus" d="M-75 655 H75"/><text class="small-label transformer-rating" x="0" y="672">T9 / 10.5/14 MVA</text><text class="small-label transformer-rating" x="0" y="688">STATION SERVICE</text>
+                </g>
+              </svg>
+              <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / DECEMBER 2012 DEMOLITION DRAWING</p>
+            </article>
+            <aside class="component-evidence station-evidence holyrood-evidence" data-diagram-panel="hrd" data-default-component="hrd-summary" aria-live="polite">
+              <span class="evidence-state verified" data-field="state">VERIFIED</span>
+              <p class="component-code" data-field="code"></p>
+              <h3 data-field="title"></h3>
+              <p data-field="summary"></p>
+              <dl class="component-data" data-field="data"></dl>
+              <div data-field="sources"></div>
+            </aside>
+          </div>
+
         </div>
       </section>
 
@@ -402,101 +506,35 @@
             </aside>
           </div>
 
-          <div class="station-layout" id="terminal-wav" data-terminal-layout>
+          <div class="station-layout" id="substation-pul">
             <article class="phase-frame station-sheet compact-sheet">
-              <div class="panel-toolbar station-toolbar" aria-label="Western Avalon voltage levels">
-                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66 kV</span>
+              <div class="panel-toolbar station-toolbar" aria-label="Pulpit Rock substation voltage levels">
+                <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">Distribution</span>
               </div>
-              <svg class="station-line western-line" viewBox="0 0 1000 430" role="img" aria-labelledby="wav-title wav-desc">
-              <title id="wav-title">Western Avalon Terminal Station simplified one-line</title>
-                <desc id="wav-desc">A simplified version of Hydro's 2011 Figure 3 showing 230 kilovolt buses B1 and B3, 138 kilovolt bus B4, 66 kilovolt bus B2, transformers T1 through T5, existing line terminals, and the proposed GIS ring.</desc>
-                <path class="line v230-line" d="M500 120 H860" /><text class="bus-label" x="675" y="100">B1 / 230 kV BUS</text>
-                <path class="line v230-line" d="M120 120 H460" /><text class="bus-label" x="280" y="100">B3 / 230 kV BUS</text>
-                <path class="line v138-line" d="M120 330 H460" /><text class="bus-label" x="280" y="365">B4 / 138 kV BUS</text>
-                <path class="line v66-line" d="M540 330 H780" /><text class="bus-label" x="630" y="365">B2 / 66 kV BUS</text>
-                <path class="line proposed-line" d="M65 80 H120 V160 H65 V80 M65 120 H25" />
-                <text class="small-label" x="20" y="190">PROPOSED GIS RING</text><text class="small-label" x="5" y="215">NEW BAY D'ESPOIR LINE</text>
-                <g class="register-transformer component" transform="translate(205)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t3" aria-label="Western Avalon transformer T3">
-                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T3</text>
+              <svg class="station-line pul-np-line" viewBox="0 0 1000 500" role="img" aria-labelledby="pul-np-title pul-np-desc">
+                <title id="pul-np-title">Newfoundland Power Pulpit Rock Substation simplified one-line</title>
+                <desc id="pul-np-desc">Transmission line 59L supplies a 66 kilovolt bus. PUL-T1 and PUL-T2 supply five 12.5 kilovolt distribution feeders.</desc>
+                <path class="line v66-line" d="M120 100 H880"/><text class="bus-label" x="455" y="78">66 kV BUS</text>
+                <a class="circuit-link" href="#station-VIR" aria-label="59L to Virginia Waters Substation">
+                  <path class="outgoing" d="M500 35V100"/><text x="500" y="16">59L / VIRGINIA WATERS</text>
+                </a>
+                <g class="register-transformer component" transform="translate(365)" tabindex="0" role="button" aria-pressed="false" data-diagram="pul-np" data-component="pul-np-t1" aria-label="Pulpit Rock transformer PUL-T1">
+                  <path class="tap" d="M0 100V165 M0 223V300"/><circle class="winding v66-winding" cy="184" r="21"/><circle class="winding feeder-winding" cy="212" r="21"/>
+                  <text x="-30" y="258">PUL-T1</text><text class="small-label transformer-rating" x="0" y="280">25 MVA</text>
                 </g>
-                <g class="register-transformer component" transform="translate(315)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t4" aria-label="Western Avalon transformer T4">
-                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T4</text>
+                <g class="register-transformer component" transform="translate(635)" tabindex="0" role="button" aria-pressed="false" data-diagram="pul-np" data-component="pul-np-t2" aria-label="Pulpit Rock transformer PUL-T2">
+                  <path class="tap" d="M0 100V165 M0 223V300"/><circle class="winding v66-winding" cy="184" r="21"/><circle class="winding feeder-winding" cy="212" r="21"/>
+                  <text x="-30" y="258">PUL-T2</text><text class="small-label transformer-rating" x="0" y="280">25 MVA</text>
                 </g>
-                <g class="register-transformer component" transform="translate(425)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t5" aria-label="Western Avalon transformer T5">
-                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T5</text>
-                </g>
-                <g class="register-transformer component" transform="translate(610)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t1" aria-label="Western Avalon transformer T1">
-                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v66-winding" cy="252" r="20"/><text x="-13" y="292">T1</text>
-                </g>
-                <g class="register-transformer component" transform="translate(715)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t2" aria-label="Western Avalon transformer T2">
-                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v66-winding" cy="252" r="20"/><text x="-13" y="292">T2</text>
-                </g>
-                <a class="diagram-link" href="#terminal-overview-lhb" aria-label="TL208 to Long Harbour"><path class="outgoing" d="M535 120V42"/><text class="small-label transformer-rating" x="535" y="16">TL208</text><text class="small-label transformer-rating" x="535" y="31">LONG HARBOUR</text></a>
-                <a class="diagram-link" href="#terminal-overview-cbc" aria-label="TL237 to Come By Chance"><path class="outgoing" d="M620 120V78"/><text class="small-label transformer-rating" x="620" y="52">TL237</text><text class="small-label transformer-rating" x="620" y="67">COME BY CHANCE</text></a>
-                <a class="diagram-link" href="#terminal-hwd" aria-label="TL201 to Hardwoods Terminal Station"><path class="outgoing" d="M710 120V42"/><text class="small-label transformer-rating" x="710" y="16">TL201</text><text class="small-label transformer-rating" x="710" y="31">HARDWOODS</text></a>
-                <a class="diagram-link" href="#terminal-overview-sun" aria-label="TL203 to Sunnyside"><path class="outgoing" d="M800 120V78"/><text class="small-label transformer-rating" x="800" y="52">TL203</text><text class="small-label transformer-rating" x="800" y="67">SUNNYSIDE</text></a>
-                <a class="diagram-link" href="#terminal-hrd" aria-label="TL217 to Holyrood Generating Station"><path class="outgoing" d="M860 120V380"/><text class="small-label transformer-rating" x="860" y="405">TL217 / HOLYROOD</text></a>
-              </svg>
-              <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2011 FIGURE 3 / PROPOSED EQUIPMENT DASHED</p>
-            </article>
-            <aside class="component-evidence station-evidence" data-diagram-panel="wav" data-default-component="wav-summary" aria-live="polite">
-              <span class="evidence-state verified" data-field="state">VERIFIED</span>
-              <p class="component-code" data-field="code"></p>
-              <h3 data-field="title"></h3>
-              <p data-field="summary"></p>
-              <dl class="component-data" data-field="data"></dl>
-              <div data-field="sources"></div>
-            </aside>
-          </div>
-
-          <div class="station-layout holyrood-layout" id="terminal-hrd" data-terminal-layout>
-            <article class="phase-frame station-sheet compact-sheet">
-              <div class="panel-toolbar station-toolbar" aria-label="Holyrood voltage levels">
-                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66 kV</span><span class="voltage-tag">Generation</span>
-              </div>
-              <svg class="station-line holyrood-line" viewBox="0 0 1100 690" role="img" aria-labelledby="hrd-title hrd-desc">
-                <title id="hrd-title">Holyrood internal transformer and bus arrangement</title>
-                <desc id="hrd-desc">A simplified historical arrangement from physical PDF page 663. T6, T7, and T8 connect the 138 and 230 kilovolt buses. Their three ratings are identified as ONAN, ONAF, and ONAF cooling stages. Generator transformers T1, T2, and T3 feed the 230 kilovolt system. T5 and T10 feed the 66 kilovolt bus. The 15 megawatt gas turbine is shown separately on the 13.8 kilovolt station-service branch through T9.</desc>
-                <path class="line v138-line" d="M70 90 H390"/><text class="bus-label" x="185" y="70">B8 / 138 kV BUS</text>
-                <path class="line v230-line" d="M70 310 H1030"/><text class="bus-label" x="470" y="292">230 kV BUS SECTIONS</text>
-                <path class="line v69-line" d="M900 455 H1030"/><text class="bus-label" x="915" y="488">B6 / B7 / 66 kV BUS</text>
-                <g class="register-transformer component" transform="translate(130)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t8" aria-label="Holyrood transformer T8">
-                  <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T8</text><text class="small-label transformer-rating" x="0" y="260">75/100/125</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
-                </g>
-                <g class="register-transformer component" transform="translate(230)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t7" aria-label="Holyrood transformer T7">
-                  <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T7</text><text class="small-label transformer-rating" x="0" y="260">25/33.3/41.7</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
-                </g>
-                <g class="register-transformer component" transform="translate(330)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t6" aria-label="Holyrood transformer T6">
-                  <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T6</text><text class="small-label transformer-rating" x="0" y="260">25/33.3/41.7</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
-                </g>
-                <g class="generator-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t3" aria-label="Holyrood generator transformer T3">
-                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G3</text><text class="small-label" x="-42" y="340">T3 / 170 MVA</text>
-                </g>
-                <g class="generator-transformer component" transform="translate(650)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t2" aria-label="Holyrood generator transformer T2">
-                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G2</text><text class="small-label" x="-56" y="340">T2 / 115/152/190 MVA</text>
-                </g>
-                <g class="generator-transformer component" transform="translate(800)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t1" aria-label="Holyrood generator transformer T1">
-                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G1</text><text class="small-label" x="-56" y="340">T1 / 105/140/180 MVA</text>
-                </g>
-                <g class="register-transformer component" transform="translate(930)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t10" aria-label="Holyrood transformer T10">
-                  <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-13" y="435">T10</text>
-                </g>
-                <g class="register-transformer component" transform="translate(1000)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t5" aria-label="Holyrood transformer T5">
-                  <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-9" y="435">T5</text>
-                </g>
-                <text class="small-label" x="900" y="335">15/20/25 MVA EACH</text>
-                <a class="diagram-link" href="#terminal-opd" aria-label="TL218 to Oxen Pond Terminal Station"><path class="outgoing" d="M460 310V42"/><text class="small-label transformer-rating" x="460" y="16">TL218</text><text class="small-label transformer-rating" x="460" y="31">OXEN POND</text></a>
-                <a class="diagram-link" href="#terminal-hwd" aria-label="TL242 to Hardwoods Terminal Station"><path class="outgoing" d="M610 310V78"/><text class="small-label transformer-rating" x="610" y="52">TL242</text><text class="small-label transformer-rating" x="610" y="67">HARDWOODS</text></a>
-                <a class="diagram-link" href="#terminal-wav" aria-label="TL217 to Western Avalon Terminal Station"><path class="outgoing" d="M760 310V42"/><text class="small-label transformer-rating" x="760" y="16">TL217</text><text class="small-label transformer-rating" x="760" y="31">WESTERN AVALON</text></a>
-                <g class="station-service component" transform="translate(230)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-gt" aria-label="Holyrood gas turbine and transformer T9">
-                  <circle class="generator-symbol" cy="535" r="26"/><text x="-14" y="543">GT</text><text class="small-label transformer-rating" x="0" y="500">15 MW</text><text class="small-label transformer-rating" x="0" y="516">13.8 kV</text>
-                  <path class="tap" d="M0 561 V575 M0 633 V655"/><circle class="winding generator-winding" cy="594" r="20"/><circle class="winding station-winding" cy="622" r="20"/>
-                  <path class="station-bus" d="M-75 655 H75"/><text class="small-label transformer-rating" x="0" y="672">T9 / 10.5/14 MVA</text><text class="small-label transformer-rating" x="0" y="688">STATION SERVICE</text>
+                <path class="station-bus" d="M120 300 H880"/><text class="bus-label" x="440" y="335">12.5 kV BUS</text>
+                <g class="distribution-feeders">
+                  <path class="outgoing" d="M220 300V410 M360 300V410 M500 300V410 M640 300V410 M780 300V410"/>
+                  <text class="small-label vertical-label" x="220" y="440">PUL-01</text><text class="small-label vertical-label" x="360" y="440">PUL-02</text><text class="small-label vertical-label" x="500" y="440">PUL-03</text><text class="small-label vertical-label" x="640" y="440">PUL-04</text><text class="small-label vertical-label" x="780" y="440">PUL-05</text>
                 </g>
               </svg>
-              <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / DECEMBER 2012 DEMOLITION DRAWING</p>
+              <p class="diagram-note">SCHEMATIC / 2024 EQUIPMENT RECORD / 2025 FEEDER RECORD</p>
             </article>
-            <aside class="component-evidence station-evidence holyrood-evidence" data-diagram-panel="hrd" data-default-component="hrd-summary" aria-live="polite">
+            <aside class="component-evidence station-evidence" data-diagram-panel="pul-np" data-default-component="pul-np-summary" aria-live="polite">
               <span class="evidence-state verified" data-field="state">VERIFIED</span>
               <p class="component-code" data-field="code"></p>
               <h3 data-field="title"></h3>

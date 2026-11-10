@@ -23,6 +23,7 @@ const stationSectionAnchors = {
   HWD: "#terminal-hwd",
   MUN: "#substation-mun",
   OXP: "#terminal-opd",
+  PUL: "#substation-pul",
   WAV: "#terminal-wav"
 };
 

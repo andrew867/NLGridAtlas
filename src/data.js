@@ -190,6 +190,26 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
   },
   {
+    id: "np-2025-capital",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application",
+    topics: ["Pulpit Rock", "59L", "PUL-T1", "PUL-T2", "transformer replacement"],
+    pages: "PDF pp. 88 to 90, 458, 463 to 470",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
+    id: "np-2026-capital",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application",
+    topics: ["Pulpit Rock", "PUL-05", "PUL-T2", "transformer fleet"],
+    pages: "PDF pp. 39, 197, 370",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
     id: "np-2023-long-pond",
     year: 2022,
     organization: "Newfoundland Power",
@@ -638,6 +658,24 @@ export const components = {
     summary: "OXP-01 runs east from the station toward St. John's. CA-NP-020 records 9 MW interrupted on January 5, 2014.",
     data: [["Register", "OXP-01"], ["Map", "Attachment B, physical PDF p. 115"], ["Recorded interruption load", "9 MW"]],
     sources: [sourceRef("np-island-ca-020", "physical PDF pp. 14 and 115")]
+  },
+  "pul-np-summary": {
+    diagram: "pul-np", status: "verified", code: "PUL / NEWFOUNDLAND POWER", title: "Pulpit Rock Substation",
+    summary: "Transmission line 59L supplies two 25 MVA transformers. The 12.5 kV bus supplies PUL-01 through PUL-05.",
+    data: [["Supply", "59L from Virginia Waters"], ["Transformers", "PUL-T1 and PUL-T2, 25 MVA each"], ["Distribution", "Five 12.5 kV feeders"], ["Built", "1974"]],
+    sources: [sourceRef("np-2025-capital", "PDF pp. 458 and 463"), sourceRef("np-2026-capital", "PDF p. 39")]
+  },
+  "pul-np-t1": {
+    diagram: "pul-np", status: "verified", code: "PUL / T1", title: "Pulpit Rock transformer PUL-T1",
+    summary: "PUL-T1 is one of the station's two 25 MVA distribution transformers.",
+    data: [["Primary", "66 kV"], ["Secondary", "12.5 kV"], ["Rating", "25 MVA"], ["Recorded 2026 peak", "21.42 MVA"]],
+    sources: [sourceRef("np-2025-capital", "PDF p. 463"), sourceRef("np-2026-capital", "PDF p. 370")]
+  },
+  "pul-np-t2": {
+    diagram: "pul-np", status: "verified", code: "PUL / T2", title: "Pulpit Rock transformer PUL-T2",
+    summary: "The present asset entered service at Pulpit Rock in 2019 after the previous PUL-T2 failed. Newfoundland Power scheduled a replacement transformer to arrive in the third quarter of 2026.",
+    data: [["Asset", "200331, Ferranti Packard"], ["Manufactured", "1985"], ["Rating", "15/20/25 MVA"], ["Voltage", "66/12.5/25 kV"], ["Recorded 2026 peak", "21.94 MVA"], ["Replacement", "Scheduled delivery, Q3 2026"]],
+    sources: [sourceRef("np-2025-capital", "PDF pp. 463 to 470"), sourceRef("np-2026-capital", "PDF pp. 197 and 370")]
   },
   "mun-summary": {
     diagram: "mun", status: "verified", code: "MUN / SUBSTATION", title: "Memorial Substation",

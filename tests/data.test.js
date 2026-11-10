@@ -114,7 +114,7 @@ test("network links use registered circuit endpoints and page anchors", async ()
 
   for (const anchor of [
     "terminal-opd", "terminal-hwd", "terminal-wav", "terminal-hrd",
-    "substation-hwd", "substation-oxp", "substation-mun", "substation-lpd"
+    "substation-hwd", "substation-oxp", "substation-pul", "substation-mun", "substation-lpd"
   ]) {
     assert.match(html, new RegExp(`id="${anchor}"`), `missing page anchor: ${anchor}`);
   }
@@ -127,6 +127,9 @@ test("network links use registered circuit endpoints and page anchors", async ()
   assert.match(html, /TL203[\s\S]*SUNNYSIDE/);
   assert.match(html, /TL237[\s\S]*COME BY CHANCE/);
   assert.match(html, /TL208[\s\S]*LONG HARBOUR/);
+  assert.ok(html.indexOf('id="terminal-hrd"') < html.indexOf('id="substations"'));
+  assert.match(html, /59L \/ VIRGINIA WATERS/);
+  assert.match(html, /PUL-T1[\s\S]*PUL-T2[\s\S]*PUL-05/);
 });
 
 test("station additions preserve sourced details", async () => {
