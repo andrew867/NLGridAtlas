@@ -33,16 +33,44 @@ test("timeline events resolve to a source and evidence state", () => {
   }
 });
 
-test("diagram components include voltage, rating, and source page", () => {
+test("diagram components resolve to a diagram and primary sources", () => {
+  const sourceIds = new Set(sources.map((source) => source.id));
   for (const [id, component] of Object.entries(components)) {
-    assert.match(id, /^opd-t[1-3]$/);
-    assert.match(component.pages, /PDF p\. 17/);
-    const terms = new Set(component.data.map(([term]) => term));
-    assert.ok(terms.has("Voltage"));
-    assert.ok(terms.has("Rating"));
-    assert.ok(terms.has("In service"));
-    const rating = component.data.find(([term]) => term === "Rating")[1];
-    assert.match(rating, /MVA/);
+    assert.match(id, /^[a-z0-9-]+$/);
+    assert.ok(component.diagram);
+    assert.ok(allowedStates.has(component.status));
+    assert.ok(component.code);
+    assert.ok(component.title);
+    assert.ok(component.summary.endsWith("."));
+    assert.ok(component.data.length > 0);
+    assert.ok(component.sources.length > 0);
+    for (const reference of component.sources) {
+      assert.ok(sourceIds.has(reference.sourceId), `unknown component source: ${reference.sourceId}`);
+      assert.match(reference.pages, /PDF p/);
+    }
+  }
+});
+
+test("every clickable diagram item has an evidence record", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const expected = [
+    "opd-t1", "opd-t2", "opd-t3",
+    "hwd-t1", "hwd-t2", "hwd-t3", "hwd-t4",
+    "wav-t1", "wav-t2", "wav-t3", "wav-t4", "wav-t5",
+    "hrd-t1", "hrd-t2", "hrd-t3", "hrd-t5", "hrd-t6", "hrd-t7", "hrd-t8", "hrd-t10", "hrd-gt",
+    "hwd-np-t1", "hwd-np-hwd08", "hwd-np-hwd09",
+    "oxp-np-transformer", "oxp-np-feeder",
+    "mun-t1", "mun-t2", "mun-bus",
+    "lpd-t1", "lpd-t2"
+  ];
+  for (const id of expected) {
+    assert.ok(components[id], `missing component data: ${id}`);
+    assert.match(html, new RegExp(`data-component="${id}"`));
+  }
+  for (const diagram of ["opd", "hwd", "wav", "hrd", "hwd-np", "oxp-np", "mun", "lpd"]) {
+    assert.ok(components[`${diagram}-summary`], `missing summary: ${diagram}`);
+    assert.match(html, new RegExp(`data-diagram-panel="${diagram}"`));
+    assert.match(html, new RegExp(`data-default-component="${diagram}-summary"`));
   }
 });
 
@@ -83,31 +111,21 @@ test("station additions preserve sourced details", async () => {
 
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, />OXP-01</);
-  assert.match(html, /T3 entered service at Oxen Pond in 1968 and moved to Hardwoods in 1986/);
-  assert.match(html, /December 2012 electrical demolition drawing/);
+  assert.match(html, /December 2012 demolition drawing/i);
   assert.match(html, /T2 \/ 115\/152\/190 MVA/);
-  assert.match(html, /Z0 11\.75%/);
-  assert.match(html, /25\/33\.3\/41\.7 MVA, ONAN\/ONAF\/ONAF; 230\/138\/6\.9 kV; Z1 5\.5%/);
-  assert.match(html, /T9 \/ 10\.5\/14 MVA \/ STATION SERVICE/);
+  assert.match(html, /T9 \/ 10\.5\/14 MVA/);
   assert.match(html, /ATI mobile network/);
   assert.match(html, /29[\s\S]*Repeater sites/);
   assert.match(html, /Bay d'Espoir Hill[\s\S]*164\.22 MHz[\s\S]*170\.28 MHz/);
   assert.match(html, /P25 system and Starlink with Cradlepoint routers/);
-  assert.match(html, /5L \/ BCV/);
-  assert.match(html, /T5 and T10: 15\/20\/25 MVA each/);
-  assert.match(html, /Hardwoods Terminal Station/);
-  assert.match(html, /Oxen Pond Terminal Station/);
-  assert.match(html, /Western Avalon Terminal Station/);
-  assert.match(html, /Holyrood Generating Station/);
-  assert.match(html, /Memorial Substation/);
-  assert.match(html, /Long Pond Substation/);
+  assert.match(html, /Hardwoods Terminal Station simplified one-line/);
+  assert.match(html, /Simplified Oxen Pond one-line diagram/);
+  assert.match(html, /Western Avalon Terminal Station simplified one-line/);
+  assert.match(html, /Newfoundland Power substations/);
+  assert.match(html, /Hardwoods Substation simplified one-line/);
+  assert.match(html, /Oxen Pond Substation simplified one-line/);
   assert.match(html, /12L \/ KING'S BRIDGE/);
   assert.match(html, /14L \/ STAMPS LANE/);
-  assert.match(html, /Ferranti-Packard, 1966, 11\.125\/14\.83 MVA/);
-  assert.match(html, /Federal Pioneer, 1976, 15\/20 MVA/);
-  assert.match(html, /2021 peak<\/dt><dd>18 MVA/);
-  assert.match(html, /2024 forecast<\/dt><dd>43 MVA/);
-  assert.match(html, /Type H mechanism was replaced with a Type VV mechanism/);
   assert.match(html, /1192\.5 kcmil 54\/19 Grackle/);
   assert.match(html, /969 A \/ 386 MVA/);
   assert.match(html, /1610 A \/ 641 MVA/);
@@ -123,7 +141,15 @@ test("station additions preserve sourced details", async () => {
   assert.doesNotMatch(html, /loop name in the 2026 planning study/);
   assert.doesNotMatch(html, /66\/69 kV/);
   assert.doesNotMatch(html, /<h2 id="network-title">Oxen Pond terminal station<\/h2>/i);
+  assert.doesNotMatch(html, /class="station-event"/);
+  assert.doesNotMatch(html, /Type H mechanism was replaced with a Type VV mechanism/);
   assert.match(html, /Terminal station <span class="no-break">one-lines<\/span>/);
+  assert.match(html, /03 \/ SUBSTATION DIAGRAMS/);
+  assert.match(html, /04 \/ TRANSMISSION PROJECT/);
+
+  assert.match(components["wav-t5"].summary, /Type H mechanism was replaced with a Type VV mechanism/);
+  assert.match(components["hrd-t2"].summary, /failed internally in November 2021/);
+  assert.match(components["hwd-t3"].summary, /moved to Hardwoods in 1986/);
 });
 
 test("new station and corridor records retain primary source locators", () => {
@@ -131,7 +157,8 @@ test("new station and corridor records retain primary source locators", () => {
     ["np-2024-capital", "PDF pp. 378 to 389"],
     ["np-2023-long-pond", "PDF pp. 109 to 111"],
     ["nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20"],
-    ["nlh-2026-wav-sop", "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146"]
+    ["nlh-2026-wav-sop", "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146"],
+    ["np-2027-loop-study", "PDF pp. 188, 194 to 195"]
   ]);
   for (const [id, pages] of expected) {
     const source = sources.find((item) => item.id === id);

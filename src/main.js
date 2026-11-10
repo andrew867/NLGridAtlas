@@ -20,6 +20,11 @@ for (const line of handbook.transmission_lines) {
 let activeRegister = "lines";
 let activeStationProfile = "HWD";
 
+function placeTerminalLayouts() {
+  const terminalSheets = document.querySelector("#network .station-sheets");
+  document.querySelectorAll("[data-terminal-layout]").forEach((layout) => terminalSheets.append(layout));
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -73,18 +78,35 @@ function renderSources(query = "") {
   }
 }
 
-function showComponent(componentId) {
+function showComponent(requestedId, allowReset = true) {
+  const requested = components[requestedId];
+  if (!requested) return;
+  const panel = document.querySelector(`[data-diagram-panel="${requested.diagram}"]`);
+  if (!panel) return;
+  const defaultId = panel.dataset.defaultComponent;
+  const componentId = allowReset && panel.dataset.selectedComponent === requestedId
+    ? defaultId
+    : requestedId;
   const component = components[componentId];
-  if (!component) return;
-  document.querySelector("#component-code").textContent = component.code;
-  document.querySelector("#component-title").textContent = component.title;
-  document.querySelector("#component-summary").textContent = component.summary;
-  document.querySelector("#component-data").innerHTML = component.data
+  const state = panel.querySelector('[data-field="state"]');
+  state.textContent = component.status.toUpperCase();
+  state.className = `evidence-state ${component.status}`;
+  panel.querySelector('[data-field="code"]').textContent = component.code;
+  panel.querySelector('[data-field="title"]').textContent = component.title;
+  panel.querySelector('[data-field="summary"]').textContent = component.summary;
+  panel.querySelector('[data-field="data"]').innerHTML = component.data
     .map(([term, value]) => `<div><dt>${escapeHtml(term)}</dt><dd>${escapeHtml(value)}</dd></div>`)
     .join("");
-  document.querySelector("#component-source").textContent = component.pages;
-  document.querySelectorAll(".component").forEach((element) => {
-    element.classList.toggle("selected", element.dataset.component === componentId);
+  panel.querySelector('[data-field="sources"]').innerHTML = component.sources.map((reference) => {
+    const source = sourceById.get(reference.sourceId);
+    const label = reference.label || source.title;
+    return `<a class="evidence-link stacked-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(label)} / ${escapeHtml(reference.pages)}</a>`;
+  }).join("");
+  panel.dataset.selectedComponent = componentId === defaultId ? "" : componentId;
+  document.querySelectorAll(`.component[data-diagram="${requested.diagram}"]`).forEach((element) => {
+    const selected = element.dataset.component === componentId && componentId !== defaultId;
+    element.classList.toggle("selected", selected);
+    element.setAttribute("aria-pressed", String(selected));
   });
 }
 
@@ -269,6 +291,8 @@ function renderHandbookRegister(query = "") {
     </article>`).join("");
 }
 
+placeTerminalLayouts();
+
 document.querySelectorAll(".filter").forEach((button) => {
   button.addEventListener("click", () => {
     document.querySelectorAll(".filter").forEach((item) => item.classList.remove("active"));
@@ -282,7 +306,7 @@ document.querySelectorAll(".toggle").forEach((button) => {
     const pressed = button.getAttribute("aria-pressed") === "true";
     button.setAttribute("aria-pressed", String(!pressed));
     button.classList.toggle("active", !pressed);
-    document.querySelector(`.one-line .layer.${button.dataset.layer}`).classList.toggle("hidden", pressed);
+    button.closest(".station-sheet").querySelector(`.layer.${button.dataset.layer}`).classList.toggle("hidden", pressed);
   });
 });
 
@@ -294,6 +318,10 @@ document.querySelectorAll(".component").forEach((component) => {
       showComponent(component.dataset.component);
     }
   });
+});
+
+document.querySelectorAll("[data-diagram-panel]").forEach((panel) => {
+  showComponent(panel.dataset.defaultComponent, false);
 });
 
 document.querySelector("#source-search").addEventListener("input", (event) => renderSources(event.target.value));

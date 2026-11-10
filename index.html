@@ -19,7 +19,8 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#handbook">2005 register</a>
-        <a href="#network">One-line</a>
+        <a href="#network">Terminal stations</a>
+        <a href="#substations">Substations</a>
         <a href="#timeline">Timeline</a>
         <a href="#loads">Loads</a>
         <a href="#telecom">Telecom</a>
@@ -138,7 +139,7 @@
       <section class="section network-section" id="network" aria-labelledby="network-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">02 / ONE-LINES</span>
+            <span class="section-number">02 / TERMINAL STATIONS</span>
             <h2 id="network-title">Terminal station <span class="no-break">one-lines</span></h2>
           </div>
           <p>Existing and historical arrangements, with proposed equipment identified on the drawing.</p>
@@ -154,7 +155,7 @@
             </div>
             <svg class="one-line" viewBox="0 0 960 590" role="img" aria-labelledby="one-line-title one-line-desc">
               <title id="one-line-title">Simplified Oxen Pond one-line diagram</title>
-              <desc id="one-line-desc">Two 230 kilovolt transmission lines connect to a 230 kilovolt bus and three Hydro transformers feeding a Newfoundland Power 66 kilovolt bus and the OXP-01 feeder.</desc>
+              <desc id="one-line-desc">Two 230 kilovolt transmission lines connect to a 230 kilovolt bus and three Hydro transformers feeding the 66 kilovolt bus.</desc>
               <g class="layer v230">
                 <path class="line v230-line" d="M150 74 V188 H810 V74" />
                 <text x="110" y="52">TL236</text>
@@ -164,7 +165,7 @@
                 <circle class="junction" cx="810" cy="188" r="5" />
               </g>
               <g class="layer transformer">
-                <g class="component" tabindex="0" role="button" data-component="opd-t2" aria-label="Oxen Pond transformer T2">
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-t2" aria-label="Oxen Pond transformer T2">
                   <path class="tap" d="M300 188 V260" />
                   <circle class="winding v230-winding" cx="300" cy="282" r="22" />
                   <circle class="winding v66-winding" cx="300" cy="314" r="22" />
@@ -172,50 +173,38 @@
                   <text x="265" y="365">T2</text>
                   <text class="rating" x="236" y="389">75/100/125 MVA</text>
                 </g>
-                <g class="component" tabindex="0" role="button" data-component="opd-t1" aria-label="Oxen Pond transformer T1">
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-t1" aria-label="Oxen Pond transformer T1">
                   <path class="tap" d="M480 188 V260" />
                   <circle class="winding v230-winding" cx="480" cy="282" r="22" />
                   <circle class="winding v66-winding" cx="480" cy="314" r="22" />
                   <path class="tap" d="M480 336 V422" />
                   <text x="445" y="365">T1</text>
-                  <text class="rating" x="416" y="389">40/53.3/66.6 MVA</text>
+                  <text class="rating" x="446" y="389">250 MVA</text>
                 </g>
-                <g class="component" tabindex="0" role="button" data-component="opd-t3" aria-label="Oxen Pond transformer T3">
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-t3" aria-label="Oxen Pond transformer T3">
                   <path class="tap" d="M660 188 V260" />
                   <circle class="winding v230-winding" cx="660" cy="282" r="22" />
                   <circle class="winding v66-winding" cx="660" cy="314" r="22" />
                   <path class="tap" d="M660 336 V422" />
                   <text x="625" y="365">T3</text>
-                  <text class="rating" x="596" y="389">75/100/125 MVA</text>
+                  <text class="rating" x="626" y="389">250 MVA</text>
                 </g>
               </g>
               <g class="layer v66">
                 <path class="line v66-line" d="M150 422 H810" />
                 <text class="bus-label" x="440" y="454">66 kV BUS</text>
-                <path class="outgoing" d="M235 422 V510 M395 422 V510 M565 422 V510 M725 422 V462 M725 504 V530" />
-                <circle class="winding feeder-winding" cx="725" cy="474" r="13" />
-                <circle class="winding feeder-winding" cx="725" cy="492" r="13" />
-                <text class="small-label feeder-label" x="746" y="488">OXP-01</text>
-                <text class="small-label" x="320" y="556">NEWFOUNDLAND POWER 66 kV LOOP</text>
               </g>
             </svg>
-            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2013 EXISTING ARRANGEMENT</p>
+            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2026 STUDY RATINGS ON 2013 BUS ARRANGEMENT</p>
           </article>
 
-          <aside class="component-evidence station-evidence" aria-live="polite">
-            <span class="evidence-state verified">VERIFIED</span>
-            <p class="component-code" id="component-code">OPD / SYSTEM</p>
-            <h3 id="component-title">Oxen Pond Terminal Station</h3>
-            <p id="component-summary">
-              The station had two 75/100/125 MVA units and one 40/53.3/66.6 MVA unit. The installed capacity was 316.6 MVA.
-            </p>
-            <dl id="component-data" class="component-data">
-              <div><dt>Voltage</dt><dd>230/66 kV</dd></div>
-              <div><dt>Installed</dt><dd>316.6 MVA</dd></div>
-              <div><dt>Context</dt><dd>2013 filing</dd></div>
-            </dl>
-            <a id="component-source" class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF" target="_blank" rel="noreferrer">Oxen Pond application / PDF pp. 15 to 17</a>
-            <p class="source-note">OXP-01 is the feeder listed for OXP in the Newfoundland Power handbook, PDF p. 14.</p>
+          <aside class="component-evidence station-evidence" data-diagram-panel="opd" data-default-component="opd-summary" aria-live="polite">
+            <span class="evidence-state verified" data-field="state">VERIFIED</span>
+            <p class="component-code" data-field="code"></p>
+            <h3 data-field="title"></h3>
+            <p data-field="summary"></p>
+            <dl class="component-data" data-field="data"></dl>
+            <div data-field="sources"></div>
           </aside>
         </div>
 
@@ -226,57 +215,122 @@
             </div>
             <svg class="station-line hwd-line" viewBox="0 0 1000 520" role="img" aria-labelledby="hwd-title hwd-desc">
               <title id="hwd-title">Hardwoods Terminal Station simplified one-line</title>
-              <desc id="hwd-desc">Four 230 over 66 kilovolt transformers, T1 through T4, with their ratings and in-service years. Seven circuits in the 2005 register connect Hardwoods to Broad Cove, Molloy's Lane, Chamberlains, Kenmount, Goulds, and Glendale.</desc>
+              <desc id="hwd-desc">Four 230 over 66 kilovolt transformers, T1 through T4, connect the 230 kilovolt and 66 kilovolt buses.</desc>
               <path class="line v230-line" d="M80 75 H920" />
               <text class="bus-label" x="455" y="55">230 kV</text>
               <path class="line v66-line" d="M80 325 H920" />
-              <text class="bus-label" x="460" y="360">66 kV</text>
-              <g class="register-transformer" transform="translate(170)">
+              <text class="bus-label" x="445" y="360">66 kV BUS</text>
+              <g class="register-transformer component" transform="translate(170)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-t1" aria-label="Hardwoods transformer T1">
                 <path class="tap" d="M0 75 V155 M0 213 V325" /><circle class="winding v230-winding" cy="174" r="21"/><circle class="winding v66-winding" cy="202" r="21"/>
-                <text x="-13" y="250">T1</text><text class="rating" x="-70" y="275">40/53.3/66.6 MVA</text><text class="small-label" x="-32" y="298">IN SERVICE 1972</text>
+                <text x="-13" y="250">T1</text><text class="rating" x="-25" y="275">125 MVA</text>
               </g>
-              <g class="register-transformer" transform="translate(390)">
+              <g class="register-transformer component" transform="translate(390)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-t2" aria-label="Hardwoods transformer T2">
                 <path class="tap" d="M0 75 V155 M0 213 V325" /><circle class="winding v230-winding" cy="174" r="21"/><circle class="winding v66-winding" cy="202" r="21"/>
-                <text x="-13" y="250">T2</text><text class="rating" x="-70" y="275">40/53.3/66.6 MVA</text><text class="small-label" x="-32" y="298">IN SERVICE 1976</text>
+                <text x="-13" y="250">T2</text><text class="rating" x="-25" y="275">66.6 MVA</text>
               </g>
-              <g class="register-transformer" transform="translate(610)">
+              <g class="register-transformer component" transform="translate(610)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-t3" aria-label="Hardwoods transformer T3">
                 <path class="tap" d="M0 75 V155 M0 213 V325" /><circle class="winding v230-winding" cy="174" r="21"/><circle class="winding v66-winding" cy="202" r="21"/>
-                <text x="-13" y="250">T3</text><text class="rating" x="-70" y="275">40/53.3/66.6 MVA</text><text class="small-label" x="-47" y="298">IN SERVICE 1968*</text>
+                <text x="-13" y="250">T3</text><text class="rating" x="-25" y="275">66.6 MVA</text>
               </g>
-              <g class="register-transformer" transform="translate(830)">
+              <g class="register-transformer component" transform="translate(830)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-t4" aria-label="Hardwoods transformer T4">
                 <path class="tap" d="M0 75 V155 M0 213 V325" /><circle class="winding v230-winding" cy="174" r="21"/><circle class="winding v66-winding" cy="202" r="21"/>
-                <text x="-13" y="250">T4</text><text class="rating" x="-60" y="275">75/100/125 MVA</text><text class="small-label" x="-32" y="298">IN SERVICE 1992</text>
-              </g>
-              <g class="hwd-circuits">
-                <path class="outgoing" d="M90 325V405 M225 325V405 M360 325V405 M495 325V405 M630 325V405 M765 325V405 M900 325V405" />
-                <text class="small-label" x="90" y="432">5L / BCV</text>
-                <text class="small-label" x="225" y="432">19L / MOL</text>
-                <text class="small-label" x="360" y="432">49L / CHA</text>
-                <text class="small-label" x="495" y="432">54L / KEN</text>
-                <text class="small-label" x="630" y="432">72L / GOU</text>
-                <text class="small-label" x="765" y="432">73L / GDL</text>
-                <text class="small-label" x="900" y="432">79L / CHA</text>
-                <text class="register-caption" x="500" y="485">2005 CIRCUIT REGISTER / 2026 STUDY CALLS THE INTERCONNECTED SYSTEM THE 66 kV LOOP</text>
+                <text x="-13" y="250">T4</text><text class="rating" x="-25" y="275">125 MVA</text>
               </g>
             </svg>
-            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2013 TRANSFORMER RECORD / 2005 CIRCUIT REGISTER</p>
+            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2026 STUDY RATINGS</p>
           </article>
-          <aside class="component-evidence station-evidence">
-            <span class="evidence-state verified">VERIFIED</span>
-            <p class="component-code">HWD / SYSTEM</p>
-            <h3>Hardwoods Terminal Station</h3>
-            <dl class="component-data">
-              <div><dt>T1, T2</dt><dd>40/53.3/66.6 MVA</dd></div>
-              <div><dt>T3</dt><dd>40/53.3/66.6 MVA</dd></div>
-              <div><dt>T4</dt><dd>75/100/125 MVA</dd></div>
-              <div><dt>Voltage</dt><dd>230/66 kV in the 2013 filing</dd></div>
-            </dl>
-            <p class="station-footnote">T3 entered service at Oxen Pond in 1968 and moved to Hardwoods in 1986.</p>
-            <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF" target="_blank" rel="noreferrer">Oxen Pond application / PDF pp. 15 and 17</a>
+          <aside class="component-evidence station-evidence" data-diagram-panel="hwd" data-default-component="hwd-summary" aria-live="polite">
+            <span class="evidence-state verified" data-field="state">VERIFIED</span>
+            <p class="component-code" data-field="code"></p>
+            <h3 data-field="title"></h3>
+            <p data-field="summary"></p>
+            <dl class="component-data" data-field="data"></dl>
+            <div data-field="sources"></div>
           </aside>
           </div>
 
+        </div>
+      </section>
+
+      <section class="section substation-section" id="substations" aria-labelledby="substations-title">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">03 / SUBSTATION DIAGRAMS</span>
+            <h2 id="substations-title">Newfoundland Power substations</h2>
+          </div>
+          <p>Local transformation, station buses, and distribution feeders.</p>
+        </header>
+
+        <div class="station-sheets" aria-labelledby="substations-title">
           <div class="station-layout">
+            <article class="phase-frame station-sheet compact-sheet">
+              <div class="panel-toolbar station-toolbar" aria-label="Hardwoods substation voltage levels">
+                <span class="voltage-tag">66 kV</span><span class="voltage-tag">25 kV</span><span class="voltage-tag">Distribution</span>
+              </div>
+              <svg class="station-line hwd-np-line" viewBox="0 0 1000 510" role="img" aria-labelledby="hwd-np-title hwd-np-desc">
+                <title id="hwd-np-title">Newfoundland Power Hardwoods Substation simplified one-line</title>
+                <desc id="hwd-np-desc">The 66 kilovolt bus supplies a 66 over 25 kilovolt transformer and a 25 kilovolt distribution bus with Hardwoods feeders.</desc>
+                <path class="line v66-line" d="M100 85 H900"/><text class="bus-label" x="450" y="62">66 kV BUS</text>
+                <path class="outgoing" d="M100 85 H40 M900 85 H960"/><text class="small-label" x="32" y="58">66 kV LOOP</text><text class="small-label" x="872" y="58">66 kV LOOP</text>
+                <g class="register-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-t1" aria-label="Hardwoods local transformer">
+                  <path class="tap" d="M0 85 V155 M0 213 V290"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
+                  <text x="-36" y="246">LOCAL T</text><text class="small-label transformer-rating" x="0" y="268">66/25 kV / 50 MVA</text>
+                </g>
+                <path class="station-bus" d="M80 290 H920"/><text class="bus-label" x="450" y="325">25 kV BUS</text>
+                <g class="distribution-feeders">
+                  <path class="outgoing" d="M120 290V410 M215 290V410 M310 290V410 M405 290V410 M500 290V410 M595 290V410 M690 290V410"/>
+                  <text class="small-label vertical-label" x="120" y="438">HWD-01</text><text class="small-label vertical-label" x="215" y="438">HWD-02</text><text class="small-label vertical-label" x="310" y="438">HWD-03</text><text class="small-label vertical-label" x="405" y="438">HWD-04</text><text class="small-label vertical-label" x="500" y="438">HWD-06</text><text class="small-label vertical-label" x="595" y="438">HWD-07</text>
+                </g>
+                <g class="component feeder-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-hwd08" aria-label="Hardwoods feeder HWD-08">
+                  <path class="outgoing" d="M690 290V410"/><text class="small-label vertical-label" x="690" y="438">HWD-08</text>
+                </g>
+                <g class="component feeder-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-hwd09" aria-label="Hardwoods feeder HWD-09">
+                  <path class="outgoing project-line" d="M820 290V410"/><text class="small-label vertical-label" x="820" y="438">HWD-09</text><text class="small-label vertical-label" x="820" y="458">2014 ADDITION</text>
+                </g>
+              </svg>
+              <p class="diagram-note">SCHEMATIC / 2005 FEEDER REGISTER / 2014 CAPACITY WORK</p>
+            </article>
+            <aside class="component-evidence station-evidence" data-diagram-panel="hwd-np" data-default-component="hwd-np-summary" aria-live="polite">
+              <span class="evidence-state verified" data-field="state">VERIFIED</span>
+              <p class="component-code" data-field="code"></p>
+              <h3 data-field="title"></h3>
+              <p data-field="summary"></p>
+              <dl class="component-data" data-field="data"></dl>
+              <div data-field="sources"></div>
+            </aside>
+          </div>
+
+          <div class="station-layout">
+            <article class="phase-frame station-sheet compact-sheet">
+              <div class="panel-toolbar station-toolbar" aria-label="Oxen Pond substation voltage levels">
+                <span class="voltage-tag">66 kV</span><span class="voltage-tag">Local transformation</span><span class="voltage-tag">OXP-01</span>
+              </div>
+              <svg class="station-line oxp-np-line" viewBox="0 0 1000 470" role="img" aria-labelledby="oxp-np-title oxp-np-desc">
+                <title id="oxp-np-title">Newfoundland Power Oxen Pond Substation simplified one-line</title>
+                <desc id="oxp-np-desc">The 66 kilovolt bus supplies a local transformer and feeder OXP-01.</desc>
+                <path class="line v66-line" d="M120 90 H880"/><text class="bus-label" x="450" y="65">66 kV BUS</text>
+                <path class="outgoing" d="M120 90 H45 M880 90 H955"/><text class="small-label" x="40" y="64">66 kV LOOP</text><text class="small-label" x="860" y="64">66 kV LOOP</text>
+                <g class="register-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="oxp-np" data-component="oxp-np-transformer" aria-label="Oxen Pond local transformer">
+                  <path class="tap" d="M0 90 V165 M0 223 V295"/><circle class="winding v66-winding" cy="184" r="21"/><circle class="winding feeder-winding" cy="212" r="21"/>
+                  <text x="-36" y="258">LOCAL T</text>
+                </g>
+                <g class="component feeder-component" tabindex="0" role="button" aria-pressed="false" data-diagram="oxp-np" data-component="oxp-np-feeder" aria-label="Oxen Pond feeder OXP-01">
+                  <path class="station-bus" d="M360 295 H640"/><path class="outgoing" d="M500 295 V405"/><text class="bus-label" x="458" y="330">LOCAL BUS</text><text class="small-label transformer-rating" x="500" y="435">OXP-01</text>
+                </g>
+              </svg>
+              <p class="diagram-note">SCHEMATIC / 2005 FEEDER REGISTER / 2014 FEEDER MAP</p>
+            </article>
+            <aside class="component-evidence station-evidence" data-diagram-panel="oxp-np" data-default-component="oxp-np-summary" aria-live="polite">
+              <span class="evidence-state verified" data-field="state">VERIFIED</span>
+              <p class="component-code" data-field="code"></p>
+              <h3 data-field="title"></h3>
+              <p data-field="summary"></p>
+              <dl class="component-data" data-field="data"></dl>
+              <div data-field="sources"></div>
+            </aside>
+          </div>
+
+          <div class="station-layout" data-terminal-layout>
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Western Avalon voltage levels">
                 <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66 kV</span>
@@ -284,25 +338,25 @@
               <svg class="station-line western-line" viewBox="0 0 1000 430" role="img" aria-labelledby="wav-title wav-desc">
               <title id="wav-title">Western Avalon Terminal Station simplified one-line</title>
                 <desc id="wav-desc">A simplified version of Hydro's 2011 Figure 3 showing 230 kilovolt buses B1 and B3, 138 kilovolt bus B4, 66 kilovolt bus B2, transformers T1 through T5, existing line terminals, and the proposed GIS ring.</desc>
-                <path class="line v230-line" d="M500 120 H860" /><text class="bus-label" x="675" y="100">B1 / 230 kV</text>
-                <path class="line v230-line" d="M120 120 H460" /><text class="bus-label" x="280" y="100">B3 / 230 kV</text>
-                <path class="line v138-line" d="M120 330 H460" /><text class="bus-label" x="280" y="365">B4 / 138 kV</text>
-                <path class="line v66-line" d="M540 330 H780" /><text class="bus-label" x="630" y="365">B2 / 66 kV</text>
+                <path class="line v230-line" d="M500 120 H860" /><text class="bus-label" x="675" y="100">B1 / 230 kV BUS</text>
+                <path class="line v230-line" d="M120 120 H460" /><text class="bus-label" x="280" y="100">B3 / 230 kV BUS</text>
+                <path class="line v138-line" d="M120 330 H460" /><text class="bus-label" x="280" y="365">B4 / 138 kV BUS</text>
+                <path class="line v66-line" d="M540 330 H780" /><text class="bus-label" x="630" y="365">B2 / 66 kV BUS</text>
                 <path class="line proposed-line" d="M65 80 H120 V160 H65 V80 M65 120 H25" />
                 <text class="small-label" x="20" y="190">PROPOSED GIS RING</text><text class="small-label" x="5" y="215">NEW BAY D'ESPOIR LINE</text>
-                <g class="register-transformer" transform="translate(205)">
+                <g class="register-transformer component" transform="translate(205)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t3" aria-label="Western Avalon transformer T3">
                   <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T3</text>
                 </g>
-                <g class="register-transformer" transform="translate(315)">
+                <g class="register-transformer component" transform="translate(315)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t4" aria-label="Western Avalon transformer T4">
                   <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T4</text>
                 </g>
-                <g class="register-transformer" transform="translate(425)">
+                <g class="register-transformer component" transform="translate(425)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t5" aria-label="Western Avalon transformer T5">
                   <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T5</text>
                 </g>
-                <g class="register-transformer" transform="translate(610)">
+                <g class="register-transformer component" transform="translate(610)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t1" aria-label="Western Avalon transformer T1">
                   <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v66-winding" cy="252" r="20"/><text x="-13" y="292">T1</text>
                 </g>
-                <g class="register-transformer" transform="translate(715)">
+                <g class="register-transformer component" transform="translate(715)" tabindex="0" role="button" aria-pressed="false" data-diagram="wav" data-component="wav-t2" aria-label="Western Avalon transformer T2">
                   <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v66-winding" cy="252" r="20"/><text x="-13" y="292">T2</text>
                 </g>
                 <path class="outgoing" d="M535 120 V45 M620 120 V45 M710 120 V45 M800 120 V45 M860 120 V380"/>
@@ -312,116 +366,69 @@
               </svg>
               <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2011 FIGURE 3 / PROPOSED EQUIPMENT DASHED</p>
             </article>
-            <aside class="component-evidence station-evidence">
-              <span class="evidence-state verified">VERIFIED</span>
-              <p class="component-code">WAV / SYSTEM</p>
-              <h3>Western Avalon Terminal Station</h3>
-              <dl class="component-data transformer-register">
-                <div><dt>T1, T2</dt><dd>15/20/25 MVA, 230/66 kV</dd></div>
-                <div><dt>T3, T4</dt><dd>25/33.3/41.7 MVA, 230/138 kV</dd></div>
-                <div><dt>T5</dt><dd>75/100/125 MVA, 230/138 kV</dd></div>
-              </dl>
-              <p class="station-footnote">Hydro's 2011 Figure 3 marks the dashed ring and Bay d'Espoir line as proposed. The 2026 loop study retains the same maximum transformer ratings.</p>
-              <a class="evidence-link stacked-link" href="https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf" target="_blank" rel="noreferrer">Western Avalon single-line / PDF p. 7</a>
-              <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF" target="_blank" rel="noreferrer">138 kV and 66 kV Loop Assessments / PDF pp. 194 to 195</a>
-              <div class="station-event">
-                <span>JANUARY 2014 / T5 OLTC FAILURE</span>
-                <h4>Tap changer replaced</h4>
-                <p>A phase-to-phase fault damaged the T5 on-load tap changer. The obsolete Type H mechanism was replaced with a Type VV mechanism.</p>
-                <dl>
-                  <div><dt>T5</dt><dd>75/100/125 MVA</dd></div>
-                  <div><dt>Voltage</dt><dd>230/138 kV</dd></div>
-                  <div><dt>T5 and T4 out</dt><dd>T3 at 113% in the 2018 peak case</dd></div>
-                </dl>
-                <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/NLH2014Capital/NLHCBSUPP2014/T5TapChangeReplacement/Application/Application-T5TapChangerReplacement-2014-06-19.pdf" target="_blank" rel="noreferrer">T5 Tap Changer Replacement / PDF pp. 12, 17, 19 to 20</a>
-              </div>
+            <aside class="component-evidence station-evidence" data-diagram-panel="wav" data-default-component="wav-summary" aria-live="polite">
+              <span class="evidence-state verified" data-field="state">VERIFIED</span>
+              <p class="component-code" data-field="code"></p>
+              <h3 data-field="title"></h3>
+              <p data-field="summary"></p>
+              <dl class="component-data" data-field="data"></dl>
+              <div data-field="sources"></div>
             </aside>
           </div>
 
-          <div class="station-layout holyrood-layout">
+          <div class="station-layout holyrood-layout" data-terminal-layout>
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Holyrood voltage levels">
-                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138/69 kV</span><span class="voltage-tag">Generation</span>
+                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66 kV</span><span class="voltage-tag">Generation</span>
               </div>
               <svg class="station-line holyrood-line" viewBox="0 0 1100 690" role="img" aria-labelledby="hrd-title hrd-desc">
                 <title id="hrd-title">Holyrood internal transformer and bus arrangement</title>
-                <desc id="hrd-desc">A simplified historical arrangement from physical PDF page 663. T6, T7, and T8 connect the 138 and 230 kilovolt buses. Their three ratings are identified as ONAN, ONAF, and ONAF cooling stages. Generator transformers T1, T2, and T3 feed the 230 kilovolt system. T5 and T10 connect the 230 and 69 kilovolt buses. The 15 megawatt gas turbine is shown separately on the 13.8 kilovolt station-service branch through T9.</desc>
-                <path class="line v138-line" d="M70 90 H390"/><text class="bus-label" x="185" y="70">B8 / 138 kV</text>
+                <desc id="hrd-desc">A simplified historical arrangement from physical PDF page 663. T6, T7, and T8 connect the 138 and 230 kilovolt buses. Their three ratings are identified as ONAN, ONAF, and ONAF cooling stages. Generator transformers T1, T2, and T3 feed the 230 kilovolt system. T5 and T10 feed the 66 kilovolt bus. The 15 megawatt gas turbine is shown separately on the 13.8 kilovolt station-service branch through T9.</desc>
+                <path class="line v138-line" d="M70 90 H390"/><text class="bus-label" x="185" y="70">B8 / 138 kV BUS</text>
                 <path class="line v230-line" d="M70 310 H1030"/><text class="bus-label" x="470" y="292">230 kV BUS SECTIONS</text>
-                <path class="line v69-line" d="M900 455 H1030"/><text class="bus-label" x="920" y="488">B6 / B7 / 69 kV</text>
-                <g class="register-transformer" transform="translate(130)">
+                <path class="line v69-line" d="M900 455 H1030"/><text class="bus-label" x="915" y="488">B6 / B7 / 66 kV BUS</text>
+                <g class="register-transformer component" transform="translate(130)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t8" aria-label="Holyrood transformer T8">
                   <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T8</text><text class="small-label transformer-rating" x="0" y="260">75/100/125</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
                 </g>
-                <g class="register-transformer" transform="translate(230)">
+                <g class="register-transformer component" transform="translate(230)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t7" aria-label="Holyrood transformer T7">
                   <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T7</text><text class="small-label transformer-rating" x="0" y="260">25/33.3/41.7</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
                 </g>
-                <g class="register-transformer" transform="translate(330)">
+                <g class="register-transformer component" transform="translate(330)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t6" aria-label="Holyrood transformer T6">
                   <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T6</text><text class="small-label transformer-rating" x="0" y="260">25/33.3/41.7</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
                 </g>
-                <g class="generator-transformer" transform="translate(500)">
+                <g class="generator-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t3" aria-label="Holyrood generator transformer T3">
                   <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G3</text><text class="small-label" x="-42" y="340">T3 / 170 MVA</text>
                 </g>
-                <g class="generator-transformer" transform="translate(650)">
+                <g class="generator-transformer component" transform="translate(650)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t2" aria-label="Holyrood generator transformer T2">
                   <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G2</text><text class="small-label" x="-56" y="340">T2 / 115/152/190 MVA</text>
                 </g>
-                <g class="generator-transformer" transform="translate(800)">
+                <g class="generator-transformer component" transform="translate(800)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t1" aria-label="Holyrood generator transformer T1">
                   <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G1</text><text class="small-label" x="-56" y="340">T1 / 105/140/180 MVA</text>
                 </g>
-                <g class="register-transformer" transform="translate(930)">
+                <g class="register-transformer component" transform="translate(930)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t10" aria-label="Holyrood transformer T10">
                   <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-13" y="435">T10</text>
                 </g>
-                <g class="register-transformer" transform="translate(1000)">
+                <g class="register-transformer component" transform="translate(1000)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t5" aria-label="Holyrood transformer T5">
                   <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-9" y="435">T5</text>
                 </g>
                 <text class="small-label" x="900" y="335">15/20/25 MVA EACH</text>
                 <path class="outgoing" d="M460 310 V35 M610 310 V35 M760 310 V35"/>
                 <text class="small-label" x="425" y="24">TL218 / OXEN POND</text><text class="small-label" x="575" y="50">TL242 / HARDWOODS</text><text class="small-label" x="725" y="24">TL217 / WESTERN AVALON</text>
-                <g class="station-service" transform="translate(950)">
-                  <circle class="generator-symbol" cy="535" r="26"/><text x="-14" y="543">GT</text><text class="small-label" x="-56" y="505">15 MW / 13.8 kV</text>
+                <g class="station-service component" transform="translate(230)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-gt" aria-label="Holyrood gas turbine and transformer T9">
+                  <circle class="generator-symbol" cy="535" r="26"/><text x="-14" y="543">GT</text><text class="small-label transformer-rating" x="0" y="500">15 MW</text><text class="small-label transformer-rating" x="0" y="516">13.8 kV</text>
                   <path class="tap" d="M0 561 V575 M0 633 V655"/><circle class="winding generator-winding" cy="594" r="20"/><circle class="winding station-winding" cy="622" r="20"/>
-                  <path class="station-bus" d="M-75 655 H75"/><text class="small-label" x="-65" y="680">T9 / 10.5/14 MVA / STATION SERVICE</text>
+                  <path class="station-bus" d="M-75 655 H75"/><text class="small-label transformer-rating" x="0" y="672">T9 / 10.5/14 MVA</text><text class="small-label transformer-rating" x="0" y="688">STATION SERVICE</text>
                 </g>
               </svg>
               <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / DECEMBER 2012 DEMOLITION DRAWING</p>
             </article>
-            <aside class="component-evidence station-evidence holyrood-evidence">
-              <span class="evidence-state verified">VERIFIED</span>
-              <p class="component-code">HRD / INTERNAL SYSTEM</p>
-              <h3>Holyrood Generating Station</h3>
-              <dl class="component-data transformer-register">
-                <div><dt>T1</dt><dd>105/140/180 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.6%; Z0 11.7%</dd></div>
-                <div><dt>T2, 2012 drawing</dt><dd>115/152/190 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.7%; Z0 11.75%</dd></div>
-                <div><dt>T3</dt><dd>170 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.5%</dd></div>
-                <div><dt>GSU HV tap text</dt><dd>230,000 ±2 @ 4.35%</dd></div>
-                <div><dt>T6, T7</dt><dd>25/33.3/41.7 MVA, ONAN/ONAF/ONAF; 230/138/6.9 kV; Z1 5.5%</dd></div>
-                <div><dt>T6, T7 tap text</dt><dd>230 kV +4/-12 @ 1.25%</dd></div>
-                <div><dt>T8</dt><dd>75/100/125 MVA, ONAN/ONAF/ONAF</dd></div>
-                <div><dt>2026 study</dt><dd>T6: 41.7 MVA max; T7 and T8: 125 MVA max</dd></div>
-                <div><dt>230/69 kV</dt><dd>T5 and T10: 15/20/25 MVA each</dd></div>
-              </dl>
-              <p class="station-footnote">The December 2012 electrical demolition drawing uses red for demolition and black for retained work. The 2012 drawing and 2026 study give different maximum ratings for T7.</p>
-              <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf" target="_blank" rel="noreferrer">2013 GRA Volume II / physical PDF p. 663</a>
-              <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF" target="_blank" rel="noreferrer">138 kV and 66 kV Loop Assessments / PDF pp. 194 to 195</a>
-              <div class="station-event">
-                <span>NOVEMBER 2021 / T2 FAILURE</span>
-                <h4>The 1989 T2 was replaced</h4>
-                <p>An internal high-voltage winding fault removed the Federal Pioneer 115/152/190 MVA unit. Its 1970 Canadian General Electric predecessor returned to service on January 13, 2022.</p>
-                <dl>
-                  <div><dt>Replacement nameplate</dt><dd>170 MVA, 230/16 kV, wye/delta</dd></div>
-                  <div><dt>Available cooling</dt><dd>Four of five cooler motors, approximately 150 MVA</dd></div>
-                </dl>
-                <a class="evidence-link" href="http://www.pub.nl.ca/indexreports/UseOfAllowance/From%20NLH%20-%20Notification%20-%20Holyrood%20Thermal%20Generating%20Station%20Unit%202%20Transformer%20Failure%20-%20Final%20Report%20-%202022-02-08.PDF" target="_blank" rel="noreferrer">T2 failure final report / PDF pp. 5 to 8 and 13</a>
-              </div>
-              <div class="station-event">
-                <span>2023 / COMMON SPARE APPLICATION</span>
-                <h4>One spare for four generating stations</h4>
-                <p>Hydro proposed a 172 MVA, 230/16-13.8 kV transformer for Holyrood, Bay d'Espoir, Upper Salmon, and Granite Canal.</p>
-                <dl>
-                  <div><dt>Holyrood T1</dt><dd>Manufactured 1978</dd></div>
-                  <div><dt>Holyrood T2 and T3</dt><dd>Manufactured 1969</dd></div>
-                </dl>
-                <a class="evidence-link" href="http://www.pub.nl.ca/applications/2023/NLH2023Capital_SUPP_SpareGenerator/app/From%20NLH%20-%20Approval%20of%20the%20Purchase%20of%20a%20Spare%20Generator%20Step-Up%20Transformer%20-%202023-09-21.PDF" target="_blank" rel="noreferrer">Spare GSU application / PDF pp. 12 and 14</a>
-              </div>
+            <aside class="component-evidence station-evidence holyrood-evidence" data-diagram-panel="hrd" data-default-component="hrd-summary" aria-live="polite">
+              <span class="evidence-state verified" data-field="state">VERIFIED</span>
+              <p class="component-code" data-field="code"></p>
+              <h3 data-field="title"></h3>
+              <p data-field="summary"></p>
+              <dl class="component-data" data-field="data"></dl>
+              <div data-field="sources"></div>
             </aside>
           </div>
 
@@ -433,14 +440,16 @@
               <svg class="station-line memorial-line" viewBox="0 0 1000 520" role="img" aria-labelledby="mun-title mun-desc">
                 <title id="mun-title">Memorial Substation simplified one-line</title>
                 <desc id="mun-desc">Circuits 12L from King's Bridge and 14L from Stamps Lane supply a 66 kilovolt bus. Memorial transformers MUN-T2 and MUN-T1 feed two sections of Memorial University owned 12.5 kilovolt switchgear through a normally open bus tie.</desc>
-                <path class="line v66-line" d="M110 95 H890"/><text class="bus-label" x="465" y="72">66 kV BUS</text>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="mun" data-component="mun-bus" aria-label="Memorial 66 kilovolt bus rebuild">
+                  <path class="line v66-line" d="M110 95 H890"/><text class="bus-label" x="465" y="72">66 kV BUS</text>
+                </g>
                 <path class="outgoing" d="M110 95 H35 M890 95 H965"/>
                 <text class="small-label" x="28" y="70">12L / KING'S BRIDGE</text><text class="small-label" x="805" y="70">14L / STAMPS LANE</text>
-                <g class="register-transformer" transform="translate(330)">
+                <g class="register-transformer component" transform="translate(330)" tabindex="0" role="button" aria-pressed="false" data-diagram="mun" data-component="mun-t2" aria-label="Memorial transformer T2">
                   <path class="tap" d="M0 95 V175 M0 233 V310"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/>
                   <text x="-32" y="270">MUN-T2</text><text class="small-label transformer-rating" x="0" y="292">15/20 MVA</text>
                 </g>
-                <g class="register-transformer" transform="translate(670)">
+                <g class="register-transformer component" transform="translate(670)" tabindex="0" role="button" aria-pressed="false" data-diagram="mun" data-component="mun-t1" aria-label="Memorial transformer T1">
                   <path class="tap" d="M0 95 V175 M0 233 V310"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/>
                   <text x="-32" y="270">MUN-T1</text><text class="small-label transformer-rating" x="0" y="292">11.125/14.83 MVA</text>
                 </g>
@@ -455,23 +464,13 @@
               </svg>
               <p class="diagram-note">SIMPLIFIED FROM 2023 SINGLE-LINE / 2023 FILING ARRANGEMENT</p>
             </article>
-            <aside class="component-evidence station-evidence">
-              <span class="evidence-state verified">VERIFIED</span>
-              <p class="component-code">MUN / SUBSTATION</p>
-              <h3>Memorial Substation</h3>
-              <dl class="component-data transformer-register">
-                <div><dt>Supply</dt><dd>12L and 14L, 66 kV</dd></div>
-                <div><dt>T1</dt><dd>Ferranti-Packard, 1966, 11.125/14.83 MVA, 66/12.5 kV</dd></div>
-                <div><dt>T2</dt><dd>Federal Pioneer, 1976, 15/20 MVA, 66/12.5 kV</dd></div>
-                <div><dt>Switchgear</dt><dd>Memorial owns the 12.5 kV bus and ten feeder breakers</dd></div>
-              </dl>
-              <a class="evidence-link stacked-link" href="http://www.pub.nl.ca/applications/2023/NP2023Capital_SUPP_MemorialStation/app/From%20NP%20-%20Approval%20for%20the%20Purchase%20and%20Installation%20of%20a%20Replacement%20Power%20Transformer%20for%20Memorial%20Substation%20-%202023-03-03.PDF" target="_blank" rel="noreferrer">Memorial transformer application / PDF pp. 14, 15, 25, 29 to 33</a>
-              <div class="station-event">
-                <span>2024 CAPITAL SCOPE</span>
-                <h4>Station rebuild</h4>
-                <p>The work includes a split 66 kV bus with a tie switch, SF6 breakers, digital protection, a control building, and ground-grid work.</p>
-                <a class="evidence-link" href="http://www.pub.nf.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF" target="_blank" rel="noreferrer">2024 Capital Budget Application / PDF pp. 378 to 389</a>
-              </div>
+            <aside class="component-evidence station-evidence" data-diagram-panel="mun" data-default-component="mun-summary" aria-live="polite">
+              <span class="evidence-state verified" data-field="state">VERIFIED</span>
+              <p class="component-code" data-field="code"></p>
+              <h3 data-field="title"></h3>
+              <p data-field="summary"></p>
+              <dl class="component-data" data-field="data"></dl>
+              <div data-field="sources"></div>
             </aside>
           </div>
 
@@ -484,11 +483,11 @@
                 <title id="lpd-title">Long Pond Substation capacity expansion one-line</title>
                 <desc id="lpd-desc">The 2019 station had one 25 MVA, 66 over 12.5 kilovolt transformer. The 2023 project scope called for a second 25 MVA transformer and extensions to both bus voltage levels.</desc>
                 <path class="line v66-line" d="M120 90 H880"/><text class="bus-label" x="465" y="68">66 kV BUS</text>
-                <g class="register-transformer" transform="translate(340)">
+                <g class="register-transformer component" transform="translate(340)" tabindex="0" role="button" aria-pressed="false" data-diagram="lpd" data-component="lpd-t1" aria-label="Long Pond transformer T1">
                   <path class="tap" d="M0 90 V160 M0 218 V300"/><circle class="winding v66-winding" cy="179" r="21"/><circle class="winding feeder-winding" cy="207" r="21"/>
                   <text x="-28" y="252">LPD-T1</text><text class="small-label transformer-rating" x="0" y="276">25 MVA</text>
                 </g>
-                <g class="register-transformer project-transformer" transform="translate(660)">
+                <g class="register-transformer project-transformer component" transform="translate(660)" tabindex="0" role="button" aria-pressed="false" data-diagram="lpd" data-component="lpd-t2" aria-label="Long Pond transformer T2 project">
                   <path class="tap proposed-line" d="M0 90 V160 M0 218 V300"/><circle class="winding v66-winding" cy="179" r="21"/><circle class="winding feeder-winding" cy="207" r="21"/>
                   <text x="-28" y="252">LPD-T2</text><text class="small-label transformer-rating" x="0" y="276">25 MVA / PROJECT</text>
                 </g>
@@ -498,22 +497,43 @@
               </svg>
               <p class="diagram-note">SCHEMATIC FROM 2023 CAPITAL PROJECT SCOPE</p>
             </article>
-            <aside class="component-evidence station-evidence">
-              <span class="evidence-state verified">VERIFIED</span>
-              <p class="component-code">LPD / SUBSTATION</p>
-              <h3>Long Pond Substation</h3>
-              <dl class="component-data transformer-register">
-                <div><dt>Built</dt><dd>2019</dd></div>
-                <div><dt>Existing T1</dt><dd>25 MVA, 66/12.5 kV</dd></div>
-                <div><dt>2021 peak</dt><dd>18 MVA</dd></div>
-                <div><dt>2024 forecast</dt><dd>43 MVA</dd></div>
-                <div><dt>New load</dt><dd>25 MW from two electric boilers</dd></div>
-                <div><dt>Project capacity</dt><dd>50 MVA with a second 25 MVA transformer</dd></div>
-              </dl>
-              <a class="evidence-link" href="http://www.pub.nf.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF" target="_blank" rel="noreferrer">2023 Capital Budget Application / PDF pp. 109 to 111</a>
+            <aside class="component-evidence station-evidence" data-diagram-panel="lpd" data-default-component="lpd-summary" aria-live="polite">
+              <span class="evidence-state verified" data-field="state">VERIFIED</span>
+              <p class="component-code" data-field="code"></p>
+              <h3 data-field="title"></h3>
+              <p data-field="summary"></p>
+              <dl class="component-data" data-field="data"></dl>
+              <div data-field="sources"></div>
             </aside>
           </div>
 
+          <section class="station-browser" aria-labelledby="station-browser-title">
+            <header class="subsection-heading">
+              <span>NEWFOUNDLAND POWER STATION RECORDS</span>
+              <h3 id="station-browser-title">Circuits, feeders, and event loads</h3>
+            </header>
+            <div class="station-tabs" role="tablist" aria-label="Select a Newfoundland Power station">
+              <button class="station-tab active" type="button" role="tab" aria-selected="true" data-station-profile="HWD">Hardwoods</button>
+              <button class="station-tab" type="button" role="tab" aria-selected="false" data-station-profile="OXP">Oxen Pond</button>
+              <button class="station-tab" type="button" role="tab" aria-selected="false" data-station-profile="KEN">Kenmount</button>
+            </div>
+            <article id="station-profile" class="phase-frame station-profile" role="tabpanel" aria-live="polite"></article>
+            <div class="voltage-sources">
+              <a class="evidence-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF#page=188" target="_blank" rel="noreferrer">66 kV loop / physical PDF p. 188</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section transmission-section" id="transmission" aria-labelledby="transmission-title">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">04 / TRANSMISSION PROJECT</span>
+            <h2 id="transmission-title">Western Avalon to Soldiers Pond</h2>
+          </div>
+          <p>Preliminary 230 kV line and terminal work from the 2026 feasibility study.</p>
+        </header>
+        <div class="station-sheets">
           <section class="corridor-record" aria-labelledby="corridor-title">
             <header class="subsection-heading">
               <span>2026 TRANSMISSION FEASIBILITY STUDY</span>
@@ -558,29 +578,13 @@
               <div class="rating-row" role="row"><strong role="cell">Winter</strong><span role="cell">1201 A / 478 MVA</span><span role="cell">1610 A / 641 MVA</span><span role="cell">0 C</span></div>
             </div>
           </section>
-
-          <section class="station-browser" aria-labelledby="station-browser-title">
-            <header class="subsection-heading">
-              <span>NEWFOUNDLAND POWER STATION RECORDS</span>
-              <h3 id="station-browser-title">Circuits, feeders, and event loads</h3>
-            </header>
-            <div class="station-tabs" role="tablist" aria-label="Select a Newfoundland Power station">
-              <button class="station-tab active" type="button" role="tab" aria-selected="true" data-station-profile="HWD">Hardwoods</button>
-              <button class="station-tab" type="button" role="tab" aria-selected="false" data-station-profile="OXP">Oxen Pond</button>
-              <button class="station-tab" type="button" role="tab" aria-selected="false" data-station-profile="KEN">Kenmount</button>
-            </div>
-            <article id="station-profile" class="phase-frame station-profile" role="tabpanel" aria-live="polite"></article>
-            <div class="voltage-sources">
-              <a class="evidence-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF#page=188" target="_blank" rel="noreferrer">66 kV loop / physical PDF p. 188</a>
-            </div>
-          </section>
         </div>
       </section>
 
       <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">03 / CHANGE RECORD</span>
+            <span class="section-number">05 / CHANGE RECORD</span>
             <h2 id="timeline-title">System changes and events</h2>
           </div>
           <div class="filter-set" role="group" aria-label="Filter timeline">
@@ -596,7 +600,7 @@
       <section class="section load-section" id="loads" aria-labelledby="loads-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">04 / ACTUAL AGAINST FORECAST</span>
+            <span class="section-number">06 / ACTUAL AGAINST FORECAST</span>
             <h2 id="loads-title">Measured load and forecast load</h2>
           </div>
         </header>
@@ -646,7 +650,7 @@
       <section class="section telecom-section" id="telecom" aria-labelledby="telecom-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">05 / OPERATIONS RADIO</span>
+            <span class="section-number">07 / OPERATIONS RADIO</span>
             <h2 id="telecom-title">The VHF system changed twice</h2>
           </div>
           <p>The 2004 filing records the 1989 conventional network. The 2027 capital filing records a later move to the provincial P25 system and satellite data links.</p>
@@ -774,7 +778,7 @@
       <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">06 / SOURCE LEDGER</span>
+            <span class="section-number">08 / SOURCE LEDGER</span>
             <h2 id="evidence-title">Source ledger</h2>
           </div>
           <label class="source-search">

@@ -125,7 +125,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "138 kV and 66 kV Loop Assessments, 2027 to 2036",
     topics: ["Western Avalon", "Holyrood", "transformer ratings", "contingencies"],
-    pages: "PDF pp. 194 to 195",
+    pages: "PDF pp. 188, 194 to 195",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
@@ -433,27 +433,253 @@ export const timeline = [
   }
 ];
 
+const sourceRef = (sourceId, pages, label) => ({ sourceId, pages, label });
+
 export const components = {
+  "opd-summary": {
+    diagram: "opd",
+    status: "verified",
+    code: "OPD / TERMINAL STATION",
+    title: "Oxen Pond Terminal Station",
+    summary: "The 2026 loop study models three 230/66 kV transformers: T1 and T3 at 250 MVA, and T2 at 125 MVA.",
+    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["Bus", "66 kV"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188")]
+  },
   "opd-t1": {
+    diagram: "opd",
+    status: "verified",
     code: "OPD / T1",
     title: "Oxen Pond transformer T1",
-    summary: "A 230/66 kV transformer that entered service in 1967. Hydro listed its rating as 40/53.3/66.6 MVA.",
-    data: [["Voltage", "230/66 kV"], ["Rating", "40/53.3/66.6 MVA"], ["In service", "1967"]],
-    pages: "Oxen Pond application / PDF p. 17"
+    summary: "The 2026 loop study models T1 at 250 MVA. The 2013 filing recorded the earlier T1 as a 40/53.3/66.6 MVA unit placed in service in 1967.",
+    data: [["Voltage", "230/66 kV"], ["2026 model", "250 MVA"], ["2013 record", "40/53.3/66.6 MVA, in service 1967"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 17")]
   },
   "opd-t2": {
+    diagram: "opd",
+    status: "verified",
     code: "OPD / T2",
     title: "Oxen Pond transformer T2",
-    summary: "A 230/66 kV transformer that entered service in 1986. The original T2 was moved to Hardwoods.",
+    summary: "The 2026 loop study models T2 at 125 MVA. The 2013 filing records a 75/100/125 MVA unit placed in service in 1986.",
     data: [["Voltage", "230/66 kV"], ["Rating", "75/100/125 MVA"], ["In service", "1986"]],
-    pages: "Oxen Pond application / PDF p. 17"
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 17")]
   },
   "opd-t3": {
+    diagram: "opd",
+    status: "verified",
     code: "OPD / T3",
     title: "Oxen Pond transformer T3",
-    summary: "A 230/66 kV transformer that entered service in 1977. The 2013 filing listed a 75/100/125 MVA rating.",
-    data: [["Voltage", "230/66 kV"], ["Rating", "75/100/125 MVA"], ["In service", "1977"]],
-    pages: "Oxen Pond application / PDF p. 17"
+    summary: "The 2026 loop study models T3 at 250 MVA. The 2013 filing recorded the earlier T3 as a 75/100/125 MVA unit placed in service in 1977.",
+    data: [["Voltage", "230/66 kV"], ["2026 model", "250 MVA"], ["2013 record", "75/100/125 MVA, in service 1977"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 17")]
+  },
+  "hwd-summary": {
+    diagram: "hwd",
+    status: "verified",
+    code: "HWD / TERMINAL STATION",
+    title: "Hardwoods Terminal Station",
+    summary: "The 2026 loop study models four 230/66 kV transformers: T1 and T4 at 125 MVA, and T2 and T3 at 66.6 MVA.",
+    data: [["T1", "125 MVA"], ["T2", "66.6 MVA"], ["T3", "66.6 MVA"], ["T4", "125 MVA"], ["Bus", "66 kV"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188")]
+  },
+  "hwd-t1": {
+    diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
+    summary: "The 2026 loop study models T1 at 125 MVA. The 2013 filing listed T1 at 40/53.3/66.6 MVA and in service since 1972.",
+    data: [["Voltage", "230/66 kV"], ["2026 model", "125 MVA"], ["2013 record", "40/53.3/66.6 MVA, in service 1972"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15")]
+  },
+  "hwd-t2": {
+    diagram: "hwd", status: "verified", code: "HWD / T2", title: "Hardwoods transformer T2",
+    summary: "The 2026 loop study models T2 at 66.6 MVA. The 2013 filing records the 40/53.3/66.6 MVA unit as in service since 1976.",
+    data: [["Voltage", "230/66 kV"], ["Rating", "40/53.3/66.6 MVA"], ["In service", "1976"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15")]
+  },
+  "hwd-t3": {
+    diagram: "hwd", status: "verified", code: "HWD / T3", title: "Hardwoods transformer T3",
+    summary: "The 2026 loop study models T3 at 66.6 MVA. The unit entered service at Oxen Pond in 1968 and moved to Hardwoods in 1986.",
+    data: [["Voltage", "230/66 kV"], ["Rating", "40/53.3/66.6 MVA"], ["Moved to Hardwoods", "1986"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF pp. 15 and 17")]
+  },
+  "hwd-t4": {
+    diagram: "hwd", status: "verified", code: "HWD / T4", title: "Hardwoods transformer T4",
+    summary: "The 2026 loop study models T4 at 125 MVA. The 2013 filing records the 75/100/125 MVA unit as in service since 1992.",
+    data: [["Voltage", "230/66 kV"], ["Rating", "75/100/125 MVA"], ["In service", "1992"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15")]
+  },
+  "wav-summary": {
+    diagram: "wav", status: "verified", code: "WAV / TERMINAL STATION", title: "Western Avalon Terminal Station",
+    summary: "T1 and T2 connect the 230 kV and 66 kV buses. T3, T4, and T5 connect the 230 kV and 138 kV buses.",
+    data: [["T1, T2", "15/20/25 MVA"], ["T3, T4", "25/33.3/41.7 MVA"], ["T5", "75/100/125 MVA"], ["Low-voltage bus", "66 kV"]],
+    sources: [sourceRef("nlh-2011-western-avalon", "PDF p. 7"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195")]
+  },
+  "wav-t1": {
+    diagram: "wav", status: "verified", code: "WAV / T1", title: "Western Avalon transformer T1",
+    summary: "T1 connects the 230 kV and 66 kV buses.", data: [["Voltage", "230/66 kV"], ["Rating", "15/20/25 MVA"]],
+    sources: [sourceRef("nlh-2011-western-avalon", "PDF p. 7"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195")]
+  },
+  "wav-t2": {
+    diagram: "wav", status: "verified", code: "WAV / T2", title: "Western Avalon transformer T2",
+    summary: "T2 connects the 230 kV and 66 kV buses.", data: [["Voltage", "230/66 kV"], ["Rating", "15/20/25 MVA"]],
+    sources: [sourceRef("nlh-2011-western-avalon", "PDF p. 7"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195")]
+  },
+  "wav-t3": {
+    diagram: "wav", status: "verified", code: "WAV / T3", title: "Western Avalon transformer T3",
+    summary: "T3 connects the 230 kV and 138 kV buses.", data: [["Voltage", "230/138 kV"], ["Rating", "25/33.3/41.7 MVA"]],
+    sources: [sourceRef("nlh-2011-western-avalon", "PDF p. 7"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195")]
+  },
+  "wav-t4": {
+    diagram: "wav", status: "verified", code: "WAV / T4", title: "Western Avalon transformer T4",
+    summary: "T4 connects the 230 kV and 138 kV buses.", data: [["Voltage", "230/138 kV"], ["Rating", "25/33.3/41.7 MVA"]],
+    sources: [sourceRef("nlh-2011-western-avalon", "PDF p. 7"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195")]
+  },
+  "wav-t5": {
+    diagram: "wav", status: "verified", code: "JANUARY 2014 / T5 OLTC FAILURE", title: "Tap changer replaced",
+    summary: "A phase-to-phase fault damaged the T5 on-load tap changer. The obsolete Type H mechanism was replaced with a Type VV mechanism.",
+    data: [["Voltage", "230/138 kV"], ["Rating", "75/100/125 MVA"], ["T5 and T4 out", "T3 at 113% in the 2018 peak case"], ["Tap changer", "Type H replaced by Type VV"]],
+    sources: [sourceRef("nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20")]
+  },
+  "hrd-summary": {
+    diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
+    summary: "The drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. The gas turbine connects through T9 to station service.",
+    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Gas turbine", "15 MW through T9"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+  },
+  "hrd-t1": {
+    diagram: "hrd", status: "verified", code: "HRD / T1", title: "Holyrood generator transformer T1",
+    summary: "The 2012 drawing gives a 105/140/180 MVA, 230/16 kV generator transformer. The spare-transformer filing records a 1978 manufacture date.",
+    data: [["Rating", "105/140/180 MVA, OFAF"], ["Voltage", "230,000/16,000 V"], ["Vector", "Yd1"], ["Impedance", "Z1 13.6%, Z0 11.7%"], ["Manufactured", "1978"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14")]
+  },
+  "hrd-t2": {
+    diagram: "hrd", status: "verified", code: "HRD / T2", title: "Holyrood generator transformer T2",
+    summary: "The 1989 Federal Pioneer T2 failed internally in November 2021. Its 1970 Canadian General Electric predecessor returned to service on January 13, 2022.",
+    data: [["Failed unit", "115/152/190 MVA, 230/16 kV"], ["Replacement nameplate", "170 MVA, 230/16 kV, wye/delta"], ["Available cooling", "Four of five cooler motors, approximately 150 MVA"], ["Returned", "January 13, 2022"]],
+    sources: [sourceRef("nlh-2022-holyrood-t2", "PDF pp. 5 to 8 and 13"), sourceRef("gra-2013-v2", "physical PDF p. 663")]
+  },
+  "hrd-t3": {
+    diagram: "hrd", status: "verified", code: "HRD / T3", title: "Holyrood generator transformer T3",
+    summary: "The drawing gives a 170 MVA, 230/16 kV generator transformer. The spare-transformer filing records a 1969 manufacture date.",
+    data: [["Rating", "170 MVA, OFAF"], ["Voltage", "230,000/16,000 V"], ["Vector", "Yd1"], ["Impedance", "Z1 13.5%"], ["Manufactured", "1969"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14")]
+  },
+  "hrd-t6": {
+    diagram: "hrd", status: "verified", code: "HRD / T6", title: "Holyrood transformer T6",
+    summary: "The 2012 drawing gives three cooling-stage ratings for T6.",
+    data: [["Rating", "25/33.3/41.7 MVA, ONAN/ONAF/ONAF"], ["Voltage", "230/138/6.9 kV"], ["Impedance", "Z1 5.5%"], ["Tap text", "230 kV +4/-12 at 1.25%"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2027-loop-study", "PDF p. 194")]
+  },
+  "hrd-t7": {
+    diagram: "hrd", status: "verified", code: "HRD / T7", title: "Holyrood transformer T7",
+    summary: "The 2012 drawing gives 25/33.3/41.7 MVA. The 2026 loop study uses a 125 MVA maximum rating for T7.",
+    data: [["2012 drawing", "25/33.3/41.7 MVA, ONAN/ONAF/ONAF"], ["2026 study", "125 MVA maximum"], ["Voltage", "230/138/6.9 kV"], ["Impedance", "Z1 5.5%"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2027-loop-study", "PDF p. 194")]
+  },
+  "hrd-t8": {
+    diagram: "hrd", status: "verified", code: "HRD / T8", title: "Holyrood transformer T8",
+    summary: "T8 connects the 138 kV and 230 kV buses.",
+    data: [["Rating", "75/100/125 MVA"], ["Cooling", "ONAN/ONAF/ONAF"], ["2026 model", "125 MVA maximum"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2027-loop-study", "PDF p. 194")]
+  },
+  "hrd-t5": {
+    diagram: "hrd", status: "verified", code: "HRD / T5", title: "Holyrood transformer T5",
+    summary: "T5 connects the 230 kV and 66 kV buses.",
+    data: [["Voltage", "230/69 kV equipment record"], ["Rating", "15/20/25 MVA"], ["2026 model", "25 MVA maximum"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+  },
+  "hrd-t10": {
+    diagram: "hrd", status: "verified", code: "HRD / T10", title: "Holyrood transformer T10",
+    summary: "T10 connects the 230 kV and 66 kV buses.",
+    data: [["Voltage", "230/69 kV equipment record"], ["Rating", "15/20/25 MVA"], ["2026 model", "25 MVA maximum"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+  },
+  "hrd-gt": {
+    diagram: "hrd", status: "verified", code: "HRD / GT AND T9", title: "Holyrood gas turbine branch",
+    summary: "The 15 MW, 13.8 kV gas turbine connects through T9 to the station-service bus.",
+    data: [["Gas turbine", "15 MW, 13.8 kV"], ["T9", "10.5/14 MVA"], ["Service", "Station-service bus"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+  },
+  "hwd-np-summary": {
+    diagram: "hwd-np", status: "verified", code: "HWD / NEWFOUNDLAND POWER", title: "Hardwoods Substation",
+    summary: "A local 66/25 kV transformer supplies the 25 kV bus. The 2014 project replaced the 25 MVA unit with a 50 MVA unit and added HWD-09.",
+    data: [["Transformer", "66/25 kV, 50 MVA replacement"], ["Registered feeders", "HWD-01, 02, 03, 04, 06, 07, 08"], ["2014 addition", "HWD-09"]],
+    sources: [sourceRef("np-2014-capital", "physical PDF pp. 37, 42, 256 to 257, 348 and 351"), sourceRef("np-2006-handbook", "PDF p. 14")]
+  },
+  "hwd-np-t1": {
+    diagram: "hwd-np", status: "verified", code: "HWD / LOCAL TRANSFORMER", title: "Hardwoods local transformer",
+    summary: "Newfoundland Power replaced the 25 MVA, 66/25 kV transformer with a 50 MVA unit.",
+    data: [["Voltage", "66/25 kV"], ["Previous rating", "25 MVA"], ["Replacement", "50 MVA"], ["2014 forecast", "27.5 MVA"]],
+    sources: [sourceRef("np-2014-capital", "physical PDF pp. 37, 42 and 256 to 257")]
+  },
+  "hwd-np-hwd08": {
+    diagram: "hwd-np", status: "verified", code: "HWD / HWD-08", title: "Hardwoods feeder HWD-08",
+    summary: "The 2014 project transferred approximately 9 MVA onto HWD-08.",
+    data: [["Conductor", "477 ASC"], ["Planning rating", "590 A"], ["Forecast", "595 A per phase"], ["Load transfer", "Approximately 9 MVA"]],
+    sources: [sourceRef("np-2014-capital", "physical PDF pp. 348 and 351")]
+  },
+  "hwd-np-hwd09": {
+    diagram: "hwd-np", status: "verified", code: "HWD / HWD-09", title: "Hardwoods feeder HWD-09",
+    summary: "The 2014 project added HWD-09 as a new 25 kV feeder toward Kenmount Road.",
+    data: [["Voltage", "25 kV"], ["Route", "Kenmount Road"], ["Project", "2014 capital work"]],
+    sources: [sourceRef("np-2014-capital", "physical PDF pp. 37, 42 and 256 to 257")]
+  },
+  "oxp-np-summary": {
+    diagram: "oxp-np", status: "verified", code: "OXP / NEWFOUNDLAND POWER", title: "Oxen Pond Substation",
+    summary: "The local substation connects to the 66 kV bus and supplies OXP-01. The cited feeder records do not give a transformer rating.",
+    data: [["Supply", "66 kV bus"], ["Feeder", "OXP-01"], ["Recorded interruption load", "9 MW"], ["Transformer rating", "Not stated in cited records"]],
+    sources: [sourceRef("np-2006-handbook", "PDF p. 14"), sourceRef("np-island-ca-020", "physical PDF pp. 14 and 115")]
+  },
+  "oxp-np-transformer": {
+    diagram: "oxp-np", status: "verified", code: "OXP / LOCAL TRANSFORMER", title: "Oxen Pond local transformer",
+    summary: "The diagram shows the local transformation between the 66 kV bus and OXP-01. The cited register and feeder map do not state its nameplate rating.",
+    data: [["Primary", "66 kV bus"], ["Secondary", "OXP-01 feeder supply"], ["Rating", "Not stated in cited records"]],
+    sources: [sourceRef("np-2006-handbook", "PDF p. 14"), sourceRef("np-island-ca-020", "physical PDF p. 115")]
+  },
+  "oxp-np-feeder": {
+    diagram: "oxp-np", status: "verified", code: "OXP / OXP-01", title: "Oxen Pond feeder OXP-01",
+    summary: "OXP-01 runs east from the station toward St. John's. CA-NP-020 records 9 MW interrupted on January 5, 2014.",
+    data: [["Register", "OXP-01"], ["Map", "Attachment B, physical PDF p. 115"], ["Recorded interruption load", "9 MW"]],
+    sources: [sourceRef("np-island-ca-020", "physical PDF pp. 14 and 115")]
+  },
+  "mun-summary": {
+    diagram: "mun", status: "verified", code: "MUN / SUBSTATION", title: "Memorial Substation",
+    summary: "Circuits 12L and 14L supply two 66/12.5 kV transformers and Memorial-owned switchgear.",
+    data: [["T1", "11.125/14.83 MVA"], ["T2", "15/20 MVA"], ["Supply", "12L and 14L, 66 kV"], ["Secondary bus", "12.5 kV"]],
+    sources: [sourceRef("memorial-2023", "PDF pp. 14, 15, 25 and 29 to 33")]
+  },
+  "mun-t1": {
+    diagram: "mun", status: "verified", code: "MUN / T1", title: "Memorial transformer T1",
+    summary: "A Ferranti-Packard 66/12.5 kV transformer manufactured in 1966.",
+    data: [["Manufacturer", "Ferranti-Packard"], ["Manufactured", "1966"], ["Rating", "11.125/14.83 MVA"], ["Voltage", "66/12.5 kV"]],
+    sources: [sourceRef("memorial-2023", "PDF pp. 14, 15 and 25")]
+  },
+  "mun-t2": {
+    diagram: "mun", status: "verified", code: "MUN / T2", title: "Memorial transformer T2",
+    summary: "A 1976 Federal Pioneer transformer. Core deterioration led Newfoundland Power to recommend replacement in 2023.",
+    data: [["Manufacturer", "Federal Pioneer"], ["Manufactured", "1976"], ["Rating", "15/20 MVA"], ["Voltage", "66/12.5 kV"], ["Condition", "Core deterioration, replacement recommended"]],
+    sources: [sourceRef("memorial-2023", "PDF pp. 14, 15, 25 and 29 to 33")]
+  },
+  "mun-bus": {
+    diagram: "mun", status: "proposed", code: "MUN / 66 kV BUS", title: "Memorial station rebuild",
+    summary: "The 2024 capital scope includes a split 66 kV bus, tie switch, SF6 breakers, digital protection, a control building, and ground-grid work.",
+    data: [["Bus", "Split 66 kV bus with tie switch"], ["Breakers", "SF6"], ["Protection", "Digital"], ["Civil", "Control building and ground-grid work"]],
+    sources: [sourceRef("np-2024-capital", "PDF pp. 378 to 389")]
+  },
+  "lpd-summary": {
+    diagram: "lpd", status: "verified", code: "LPD / SUBSTATION", title: "Long Pond Substation",
+    summary: "The 2019 station has one 25 MVA transformer. The 2023 project adds a second 25 MVA transformer for a 50 MVA station capacity.",
+    data: [["Existing", "LPD-T1, 25 MVA"], ["Project", "LPD-T2, 25 MVA"], ["2021 peak", "18 MVA"], ["2024 forecast", "43 MVA"]],
+    sources: [sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
+  },
+  "lpd-t1": {
+    diagram: "lpd", status: "verified", code: "LPD / T1", title: "Long Pond transformer T1",
+    summary: "The station entered service in 2019 with one 25 MVA transformer.",
+    data: [["Voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["Station built", "2019"], ["2021 peak", "18 MVA"]],
+    sources: [sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
+  },
+  "lpd-t2": {
+    diagram: "lpd", status: "proposed", code: "LPD / T2", title: "Long Pond transformer T2",
+    summary: "The 2023 project adds a second 25 MVA transformer and extends both bus voltage levels.",
+    data: [["Voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["Project capacity", "50 MVA"], ["2024 forecast", "43 MVA"], ["New boiler load", "25 MW"]],
+    sources: [sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
   }
 };
 
