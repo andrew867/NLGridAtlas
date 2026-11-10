@@ -156,9 +156,18 @@ def safe_destination(root: Path, relative_path: str) -> Path:
 def mirror(out: Path, files: list[FileRecord], timeout: float, delay: float) -> None:
     content_root = out / "files"
     log_path = out / "downloads.jsonl"
+    completed: dict[str, int] = {}
+    if log_path.exists():
+        for line in log_path.read_text(encoding="utf-8", errors="replace").splitlines():
+            try:
+                event = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if event.get("status") == "downloaded" and isinstance(event.get("size_bytes"), int):
+                completed[event["relative_path"]] = event["size_bytes"]
     for index, record in enumerate(files, start=1):
         destination = safe_destination(content_root, record.relative_path)
-        if destination.exists() and record.listed_size_bytes in (None, destination.stat().st_size):
+        if destination.exists() and completed.get(record.relative_path) == destination.stat().st_size:
             print(f"[{index}/{len(files)}] exists {record.relative_path}")
             continue
         destination.parent.mkdir(parents=True, exist_ok=True)
