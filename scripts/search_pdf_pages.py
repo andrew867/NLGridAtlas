@@ -8,6 +8,11 @@ import re
 import sys
 from pathlib import Path
 
+try:
+    import pymupdf
+except ImportError:  # pragma: no cover - exercised only on minimal installations
+    pymupdf = None
+
 from pypdf import PdfReader
 
 
@@ -33,7 +38,23 @@ def matching_lines(text: str, pattern: re.Pattern[str], context: int) -> list[st
     return [lines[index] for index in sorted(selected) if lines[index]]
 
 
+def page_texts(path: Path):
+    """Yield physical page numbers and extracted text, using MuPDF when available."""
+    if pymupdf is not None:
+        with pymupdf.open(path) as document:
+            for page_number, page in enumerate(document, start=1):
+                yield page_number, page.get_text()
+        return
+
+    reader = PdfReader(path)
+    for page_number, page in enumerate(reader.pages, start=1):
+        yield page_number, page.extract_text() or ""
+
+
 def main() -> int:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("inputs", nargs="+", type=Path, help="PDF files or directories")
     parser.add_argument("--term", action="append", required=True, help="literal search term, repeat as needed")
@@ -48,9 +69,7 @@ def main() -> int:
 
     for path in files:
         try:
-            reader = PdfReader(path)
-            for page_number, page in enumerate(reader.pages, start=1):
-                text = page.extract_text() or ""
+            for page_number, text in page_texts(path):
                 lines = matching_lines(text, pattern, args.context)
                 if not lines:
                     continue
