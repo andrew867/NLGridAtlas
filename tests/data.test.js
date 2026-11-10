@@ -104,6 +104,12 @@ test("Avalon schematic only uses handbook station codes and line endpoints", () 
   }
 });
 
+test("Avalon station placement follows the geographic source maps", () => {
+  assert.ok(avalonNodePositions.CHA[0] < avalonNodePositions.HWD[0]);
+  assert.ok(avalonNodePositions.KEL[0] < avalonNodePositions.HWD[0]);
+  assert.ok(avalonNodePositions.OXP[0] > avalonNodePositions.HWD[0]);
+});
+
 test("network links use registered circuit endpoints and page anchors", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const connectedCircuits = (code) => handbook.transmission_lines
@@ -404,5 +410,13 @@ test("Oxen Pond and Hardwoods capacitor banks are clickable and sourced", async 
     assert.match(components[id].data.flat().join(" "), /MVAR/);
     assert.equal(components[id].sources[0].sourceId, "oxen-2013");
   }
+});
+
+test("Greenhill code conflict is contextual and the latest code is preferred", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(html, /id="source-conflict" role="note" hidden/);
+  assert.match(html, /<strong>GRH<\/strong> is used in the 2027 Greenhill filing/);
+  assert.match(main, /greenhill \? "GRH" : plant\.code/);
 });
 

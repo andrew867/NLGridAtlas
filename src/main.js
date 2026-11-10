@@ -393,13 +393,17 @@ function registerRows() {
     }));
   }
   if (activeRegister === "plants") {
-    return handbook.generation_plants.map((plant) => ({
-      key: plant.code,
-      title: plant.name,
-      detail: plant.category.replaceAll("_", " "),
-      page: plant.source_page,
-      search: [plant.code, plant.name, plant.category].join(" ")
-    }));
+    return handbook.generation_plants.map((plant) => {
+      const greenhill = plant.name === "Greenhill";
+      return {
+        key: greenhill ? "GRH" : plant.code,
+        title: plant.name,
+        detail: plant.category.replaceAll("_", " "),
+        page: plant.source_page,
+        conflict: greenhill,
+        search: [plant.code, greenhill ? "GRH" : "", plant.name, plant.category].join(" ")
+      };
+    });
   }
   return handbook.transmission_lines.map((line) => ({
     key: line.circuit,
@@ -413,9 +417,10 @@ function registerRows() {
 function renderHandbookRegister(query = "") {
   const normalized = query.trim().toLowerCase();
   const rows = registerRows().filter((row) => row.search.toLowerCase().includes(normalized));
+  document.querySelector("#source-conflict").hidden = !["grh", "grt"].includes(normalized);
   document.querySelector("#register-count").textContent = `${rows.length} record${rows.length === 1 ? "" : "s"}`;
   document.querySelector("#handbook-register").innerHTML = rows.map((row) => `
-    <article class="register-row">
+    <article class="register-row${row.conflict ? " conflict-record" : ""}"${row.conflict ? ` data-conflict-code="${escapeHtml(row.key)}" tabindex="0" role="button" aria-controls="source-conflict"` : ""}>
       <strong>${escapeHtml(row.key)}</strong>
       <div><span>${escapeHtml(row.title)}</span><small>${escapeHtml(row.detail)}</small></div>
       <a href="${escapeHtml(handbook.source.source_url)}" target="_blank" rel="noreferrer">PDF p. ${row.page}</a>
@@ -457,6 +462,17 @@ document.querySelectorAll("[data-diagram-panel]").forEach((panel) => {
 
 document.querySelector("#source-search").addEventListener("input", (event) => renderSources(event.target.value));
 document.querySelector("#handbook-search").addEventListener("input", (event) => renderHandbookRegister(event.target.value));
+document.querySelector("#handbook-register").addEventListener("click", (event) => {
+  const row = event.target.closest("[data-conflict-code]");
+  if (row) document.querySelector("#source-conflict").hidden = false;
+});
+document.querySelector("#handbook-register").addEventListener("keydown", (event) => {
+  const row = event.target.closest("[data-conflict-code]");
+  if (row && (event.key === "Enter" || event.key === " ")) {
+    event.preventDefault();
+    document.querySelector("#source-conflict").hidden = false;
+  }
+});
 document.querySelectorAll(".register-tab").forEach((button) => {
   button.addEventListener("click", () => {
     activeRegister = button.dataset.register;

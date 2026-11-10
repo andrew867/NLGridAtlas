@@ -238,6 +238,7 @@ button, input { font: inherit; }
 .handbook-detail-heading a[hidden] { display: none; }
 .evidence-state.reported { background: var(--copper); }
 .source-conflict { margin: 2.5rem 0 0; padding: 1.25rem; border-left: 8px solid var(--phase-a); background: var(--paper-bright); }
+.source-conflict[hidden] { display: none; }
 .register-browser { margin-top: 3rem; border-top: 1px solid var(--ink); }
 .register-browser > header { display: grid; grid-template-columns: 1fr minmax(300px, .7fr); gap: 2rem; align-items: end; padding: 1.25rem 0; border-bottom: 1px solid var(--ink); }
 .register-tabs { display: flex; flex-wrap: wrap; gap: .5rem; }
@@ -252,6 +253,8 @@ button, input { font: inherit; }
 .register-row small, .register-row a { font: 400 .7rem/1.45 "IBM Plex Mono", monospace; }
 .register-row small { color: var(--muted); overflow-wrap: anywhere; }
 .register-row a { padding-right: .5rem; white-space: nowrap; }
+.conflict-record { cursor: pointer; }
+.conflict-record:hover, .conflict-record:focus-visible { background: var(--paper-bright); outline: 2px solid var(--phase-a); outline-offset: -2px; }
 
 .network-section { background: var(--paper-bright); }
 .substation-section { background: #e5dfd2; }
@@ -292,6 +295,8 @@ button, input { font: inherit; }
 .one-line .rating { font: 400 13px "IBM Plex Mono", monospace; }
 .one-line .bus-label { font: 400 14px "IBM Plex Mono", monospace; }
 .one-line .small-label { font: 400 12px "IBM Plex Mono", monospace; }
+.center-label { text-anchor: middle; }
+.symbol-label { text-anchor: middle; dominant-baseline: central; }
 .one-line .component text, .station-line .register-transformer text, .station-line .generator-transformer text, .station-line .station-service text {
   paint-order: stroke fill;
   stroke: var(--paper);
