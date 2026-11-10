@@ -19,7 +19,10 @@
     {
       "id": "hydro-2013-gra-v2",
       "local_path": "sources/NLH2013GRA-Application-VolumeII.pdf",
-      "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf"
+      "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf",
+      "sha256": "2d4124655c2cefacb0b53e45de4a23ba64ce5b24daac5dae28b1b57781f91e29",
+      "physical_pages": 720,
+      "notes": "Physical PDF page 663 is a December 2012 Holyrood electrical demolition drawing. It is used as historical topology evidence; red denotes demolition and black denotes retained electrical work."
     },
     {
       "id": "hydro-2013-oxen-pond",

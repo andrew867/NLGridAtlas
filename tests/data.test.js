@@ -85,5 +85,10 @@ test("station additions preserve source limits", async () => {
   assert.match(html, />OXP-01</);
   assert.match(html, /T3 entered service at Oxen Pond in 1968 and was relocated to Hardwoods in 1986/);
   assert.match(html, /Unit in-service years were not located/);
+  assert.match(html, /December 2012 electrical demolition drawing/);
+  assert.match(html, /T2 \/ 115\/152\/190 MVA/);
+  assert.match(html, /Z0 11\.75%/);
+  assert.match(html, /25\/33\.3\/41\.7 MVA, ONAN\/ONAF\/ONAF; 230\/138\/6\.9 kV; Z1 5\.5%/);
+  assert.match(html, /T9 \/ 10\.5\/14 MVA \/ STATION SERVICE/);
 });
 

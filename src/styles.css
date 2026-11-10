@@ -244,7 +244,7 @@ button, input { font: inherit; }
 .one-line .rating { font: 400 13px "IBM Plex Mono", monospace; }
 .one-line .bus-label { font: 400 14px "IBM Plex Mono", monospace; }
 .one-line .small-label { font: 400 12px "IBM Plex Mono", monospace; }
-.one-line .component text, .station-line .register-transformer text {
+.one-line .component text, .station-line .register-transformer text, .station-line .generator-transformer text, .station-line .station-service text {
   paint-order: stroke fill;
   stroke: var(--paper);
   stroke-linejoin: round;
@@ -254,6 +254,11 @@ button, input { font: inherit; }
 .v230-line, .v230-winding { stroke: var(--phase-a); }
 .v66-line, .v66-winding { stroke: var(--water); }
 .v138-line, .v138-winding { stroke: var(--copper); }
+.v69-line, .v69-winding { stroke: var(--phase-b); }
+.generator-winding { stroke: var(--phase-c); }
+.station-winding { stroke: var(--phase-b); }
+.generator-symbol { fill: var(--paper); stroke: var(--ink); stroke-width: 3; vector-effect: non-scaling-stroke; }
+.station-bus { fill: none; stroke: var(--ink); stroke-width: 5; vector-effect: non-scaling-stroke; }
 .proposed-line { fill: none; stroke: var(--phase-a); stroke-width: 4; stroke-dasharray: 12 8; vector-effect: non-scaling-stroke; }
 .winding { fill: none; stroke-width: 4; vector-effect: non-scaling-stroke; }
 .feeder-winding { stroke: var(--ink); stroke-width: 3; }
@@ -290,7 +295,9 @@ button, input { font: inherit; }
 .station-line .rating, .station-line .bus-label, .station-line .small-label { font-family: "IBM Plex Mono", monospace; font-weight: 400; }
 .station-line .rating { font-size: 12px; }
 .station-line .small-label { font-size: 10px; }
+.station-line .cooling-label { font: 400 8px "IBM Plex Mono", monospace; }
 .station-line .bus-label { font-size: 14px; }
+.station-line .transformer-rating { text-anchor: middle; }
 .station-footnote { margin: 0 0 .6rem; color: var(--muted); font: 400 .72rem/1.5 "IBM Plex Mono", monospace; }
 .station-sheet-pair { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
 .compact-sheet { min-height: 370px; }

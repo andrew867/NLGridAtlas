@@ -34,8 +34,8 @@ export const sources = [
     year: 2013,
     organization: "NL Hydro",
     title: "2013 General Rate Application, Volume II",
-    topics: ["one-line", "Hurricane Leslie", "topology", "Labrador"],
-    pages: "PDF pp. 68, 75 to 80",
+    topics: ["one-line", "Hurricane Leslie", "topology", "Holyrood", "Labrador"],
+    pages: "PDF pp. 68, 75 to 80, 663",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf"
   },

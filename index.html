@@ -300,14 +300,59 @@
             </article>
 
             <article class="phase-frame station-sheet compact-sheet">
-              <div class="station-sheet-heading"><div><span>HRD / TWO RECORD DATES</span><h4>Holyrood</h4></div><strong>230/138/69 kV</strong></div>
+              <div class="station-sheet-heading"><div><span>HRD / 2012 DRAWING IN 2013 GRA</span><h4>Holyrood internal system</h4></div><strong>230/138/69/16/13.8 kV</strong></div>
+              <svg class="station-line holyrood-line" viewBox="0 0 1100 690" role="img" aria-labelledby="hrd-title hrd-desc">
+                <title id="hrd-title">Holyrood internal transformer and bus arrangement</title>
+                <desc id="hrd-desc">A simplified historical arrangement from physical PDF page 663. T6, T7, and T8 connect the 138 and 230 kilovolt buses. Their three ratings are identified as ONAN, ONAF, and ONAF cooling stages. Generator transformers T1, T2, and T3 feed the 230 kilovolt system. T5 and T10 connect the 230 and 69 kilovolt buses. The 15 megawatt gas turbine is shown separately on the 13.8 kilovolt station-service branch through T9.</desc>
+                <path class="line v138-line" d="M70 90 H390"/><text class="bus-label" x="185" y="70">B8 / 138 kV</text>
+                <path class="line v230-line" d="M70 310 H1030"/><text class="bus-label" x="470" y="292">230 kV BUS SECTIONS</text>
+                <path class="line v69-line" d="M900 455 H1030"/><text class="bus-label" x="920" y="488">B6 / B7 / 69 kV</text>
+                <g class="register-transformer" transform="translate(130)">
+                  <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T8</text><text class="small-label transformer-rating" x="0" y="260">75/100/125</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
+                </g>
+                <g class="register-transformer" transform="translate(230)">
+                  <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T7</text><text class="small-label transformer-rating" x="0" y="260">25/33.3/41.7</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
+                </g>
+                <g class="register-transformer" transform="translate(330)">
+                  <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T6</text><text class="small-label transformer-rating" x="0" y="260">25/33.3/41.7</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
+                </g>
+                <g class="generator-transformer" transform="translate(500)">
+                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G3</text><text class="small-label" x="-42" y="340">T3 / 170 MVA</text>
+                </g>
+                <g class="generator-transformer" transform="translate(650)">
+                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G2</text><text class="small-label" x="-56" y="340">T2 / 115/152/190 MVA</text>
+                </g>
+                <g class="generator-transformer" transform="translate(800)">
+                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G1</text><text class="small-label" x="-56" y="340">T1 / 105/140/180 MVA</text>
+                </g>
+                <g class="register-transformer" transform="translate(930)">
+                  <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-13" y="435">T10</text>
+                </g>
+                <g class="register-transformer" transform="translate(1000)">
+                  <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-9" y="435">T5</text>
+                </g>
+                <text class="small-label" x="900" y="335">15/20/25 MVA EACH</text>
+                <path class="outgoing" d="M460 310 V35 M610 310 V35 M760 310 V35"/>
+                <text class="small-label" x="425" y="24">TL218 / OXEN POND</text><text class="small-label" x="575" y="50">TL242 / HARDWOODS</text><text class="small-label" x="725" y="24">TL217 / WESTERN AVALON</text>
+                <g class="station-service" transform="translate(950)">
+                  <circle class="generator-symbol" cy="535" r="26"/><text x="-14" y="543">GT</text><text class="small-label" x="-56" y="505">15 MW / 13.8 kV</text>
+                  <path class="tap" d="M0 561 V575 M0 633 V655"/><circle class="winding generator-winding" cy="594" r="20"/><circle class="winding station-winding" cy="622" r="20"/>
+                  <path class="station-bus" d="M-75 655 H75"/><text class="small-label" x="-65" y="680">T9 / 10.5/14 MVA / STATION SERVICE</text>
+                </g>
+              </svg>
               <dl class="transformer-register">
-                <div><dt>T1, T2</dt><dd>15/20/25 MVA, 230/69 kV, 2013 record</dd></div>
-                <div><dt>T6</dt><dd>41.7 MVA max, 230/138 kV, 2026 study</dd></div>
-                <div><dt>T7, T8</dt><dd>125 MVA max, 230/138 kV, 2026 study</dd></div>
+                <div><dt>T1</dt><dd>105/140/180 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.6%; Z0 11.7%</dd></div>
+                <div><dt>T2</dt><dd>115/152/190 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.7%; Z0 11.75%</dd></div>
+                <div><dt>T3</dt><dd>170 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.5%</dd></div>
+                <div><dt>GSU HV tap text</dt><dd>230,000 ±2 @ 4.35%, reproduced as printed without further interpretation</dd></div>
+                <div><dt>T6, T7</dt><dd>25/33.3/41.7 MVA, ONAN/ONAF/ONAF; 230/138/6.9 kV; Z1 5.5%</dd></div>
+                <div><dt>T6, T7 tap text</dt><dd>230 kV +4/-12 @ 1.25%, reproduced as printed without further interpretation</dd></div>
+                <div><dt>T8</dt><dd>75/100/125 MVA, ONAN/ONAF/ONAF</dd></div>
+                <div><dt>2026 study</dt><dd>T6: 41.7 MVA max; T7 and T8: 125 MVA max</dd></div>
+                <div><dt>230/69 kV</dt><dd>T5 and T10: 15/20/25 MVA each</dd></div>
               </dl>
-              <p class="station-footnote">T1 and T2 supplied station service and Newfoundland Power line 38L in the 2013 filing. Unit in-service years were not located.</p>
-              <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF" target="_blank" rel="noreferrer">Oxen Pond application / PDF p. 16</a>
+              <p class="station-footnote">The source is a December 2012 electrical demolition drawing reproduced in the 2013 GRA. Red and black in the original distinguish demolition and retained work. This atlas redraws the high-voltage relationships, generator step-up transformers, and gas-turbine station-service branch. The change in T7 maximum rating between the two records is retained; its replacement date is not assigned here.</p>
+              <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf" target="_blank" rel="noreferrer">2013 GRA Volume II / physical PDF p. 663</a>
               <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF" target="_blank" rel="noreferrer">138 kV and 66 kV Loop Assessments / PDF pp. 194 to 195</a>
             </article>
           </div>
