@@ -11,6 +11,7 @@ Last scan: 2026-11-10
 - [x] 2027 transformer register transcribed, 187 unique transformer designations at 123 station codes, including distribution, generation, and transmission units.
 - [x] 2006 station and feeder register transcribed, 136 stations and 302 feeders.
 - [x] NL Hydro public upload index inventoried, 2,539 files and 9,402,399,683 listed bytes across the 2014 to 2026 year folders.
+- [x] 2027 application and responses searched page by page for the remaining Avalon station names and transformer designations.
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
@@ -27,11 +28,17 @@ The station browser now covers 139 station codes, the 136 stations in the 2006 h
 | [ ] | Goulds, GOU | 2005 feeders GOU-01 to GOU-03; 2027 GOU-T1, T2, and T3 ratings | Transformer connections, 33 kV section, feeder bus assignments | Capital applications and one-lines containing `GOU-T1`, `GOU-T2`, or `GOU-T3` |
 | [ ] | Glendale, GDL | 2005 feeders GDL-01 to GDL-06; 2027 GDL-T1, T2, and T3 ratings | Bus arrangement and feeder assignments | Substation renewal filings and drawings |
 | [ ] | Virginia Waters, VIR | 2005 feeders VIR-01 to VIR-07; 2027 VIR-T1, T2, and T3 ratings; 59L connection to Pulpit Rock | Bus arrangement and feeder assignments | Station renewal and protection filings |
-| [ ] | Ridge Road, RRD | 30L, 32L, and 67L supply; RRD-T2 and RRD-T3 ratings; eight current 12.5 kV feeders; nine designations in the 2005 register; 34.7 MVA five-year maximum peak; RRD-T3 replacement planned for 2027 to 2029 | Bus arrangement and feeder assignments | Refurbishment one-line or protection drawing |
+| [x] | Ridge Road, RRD | 30L, 32L, and 67L supply; RRD-T2 and RRD-T3 ratings; eight current 12.5 kV feeders; nine designations in the 2005 register; 34.7 MVA five-year maximum peak; RRD-T3 replacement planned for 2027 to 2029 | Bus arrangement and feeder assignments | Refurbishment one-line or protection drawing |
 | [ ] | Stamp's Lane, SLA | 2005 feeders SLA-01 to SLA-13; 2027 SLA-T1 to T4 ratings | 4.2 kV and 12.5 kV bus arrangement, feeder assignments | Refurbishment filings and station one-lines |
 | [ ] | St. John's Main, SJM | 2005 feeders SJM-01 to SJM-14; 2027 SJM-T1 to T3 ratings | 25 kV and 12.5 kV bus arrangement, feeder assignments | Refurbishment filings and station one-lines |
 | [ ] | Pepperell, PEP | 2005 feeders PEP-01 to PEP-04; 2027 PEP-T1 and T2 ratings | Bus arrangement and feeder assignments | Station one-line or protection filing |
-| [ ] | King's Bridge, KBR | 12L, 16L, and 30L supply; KBR-T3 and KBR-T4 ratings; six current 12.5 kV feeders; twelve designations in the 2005 register; 43.7 MVA five-year maximum peak; KBR-T3 replacement planned for summer 2028 | Bus arrangement and feeder assignments | Post-2028 commissioning drawing or expenditure report |
+| [x] | King's Bridge, KBR | 12L, 16L, and 30L supply; KBR-T3 and KBR-T4 ratings; six current 12.5 kV feeders; twelve designations in the 2005 register; 43.7 MVA five-year maximum peak; KBR-T3 replacement planned for summer 2028 | Bus arrangement and feeder assignments | Post-2028 commissioning drawing or expenditure report |
+
+## Archive priority
+
+1. Mirror Newfoundland Power regulatory PDFs. Its Regulation page currently exposes the 2024 to 2027 capital applications and the 2025 to 2026 general rate application. These are the best direct source for the remaining distribution-station records.
+2. Mirror the NL Hydro uploads index. The inventory contains 2,521 PDFs and 9,402,399,683 listed bytes. Use it for Hydro transmission, generating-station, HVDC, telecommunications, and Muskrat Falls integration records.
+3. Search Fortis annual reports selectively. They record corporate-level asset additions and transfers, but the current Fortis report library does not expose Newfoundland Power station drawings or capital-application appendices.
 
 ## Pulpit Rock voltage record
 
