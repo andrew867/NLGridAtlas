@@ -138,16 +138,15 @@
       <section class="section network-section" id="network" aria-labelledby="network-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">02 / ONE-LINE</span>
-            <h2 id="network-title">Oxen Pond terminal station</h2>
+            <span class="section-number">02 / ONE-LINES</span>
+            <h2 id="network-title">Terminal station <span class="no-break">one-lines</span></h2>
           </div>
-          <p>
-            A simplified 2013 arrangement. Select a component to read its rating and evidence.
-          </p>
+          <p>Existing and historical arrangements, with proposed equipment identified on the drawing.</p>
         </header>
 
-        <div class="network-layout">
-          <div class="phase-frame schematic-panel">
+        <div class="station-sheets" aria-labelledby="network-title">
+        <div class="station-layout">
+          <article class="phase-frame station-sheet oxen-sheet">
             <div class="panel-toolbar" role="group" aria-label="One-line visibility controls">
               <button class="toggle active" type="button" data-layer="v230" aria-pressed="true">230 kV</button>
               <button class="toggle active" type="button" data-layer="transformer" aria-pressed="true">Transformation</button>
@@ -201,12 +200,12 @@
               </g>
             </svg>
             <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2013 EXISTING ARRANGEMENT</p>
-          </div>
+          </article>
 
-          <aside class="component-evidence" aria-live="polite">
+          <aside class="component-evidence station-evidence" aria-live="polite">
             <span class="evidence-state verified">VERIFIED</span>
             <p class="component-code" id="component-code">OPD / SYSTEM</p>
-            <h3 id="component-title">Oxen Pond transformation</h3>
+            <h3 id="component-title">Oxen Pond Terminal Station</h3>
             <p id="component-summary">
               The station had two 75/100/125 MVA units and one 40/53.3/66.6 MVA unit. The installed capacity was 316.6 MVA.
             </p>
@@ -220,16 +219,10 @@
           </aside>
         </div>
 
-        <div class="station-sheets" aria-labelledby="station-sheets-title">
-          <header class="subsection-heading">
-            <span>TERMINAL STATION ONE-LINES</span>
-            <h3 id="station-sheets-title">Station bus and transformer arrangements</h3>
-          </header>
-
           <div class="station-layout">
           <article class="phase-frame station-sheet">
             <div class="panel-toolbar station-toolbar" aria-label="Hardwoods voltage levels">
-              <span class="voltage-tag">230 kV</span><span class="voltage-tag">Transformation</span><span class="voltage-tag">66/69 kV</span>
+              <span class="voltage-tag">230 kV</span><span class="voltage-tag">Transformation</span><span class="voltage-tag">66 kV</span>
             </div>
             <svg class="station-line hwd-line" viewBox="0 0 1000 520" role="img" aria-labelledby="hwd-title hwd-desc">
               <title id="hwd-title">Hardwoods Terminal Station simplified one-line</title>
@@ -286,7 +279,7 @@
           <div class="station-layout">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Western Avalon voltage levels">
-                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66/69 kV</span>
+                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66 kV</span>
               </div>
               <svg class="station-line western-line" viewBox="0 0 1000 430" role="img" aria-labelledby="wav-title wav-desc">
               <title id="wav-title">Western Avalon Terminal Station simplified one-line</title>
@@ -397,7 +390,7 @@
               <h3>Holyrood Generating Station</h3>
               <dl class="component-data transformer-register">
                 <div><dt>T1</dt><dd>105/140/180 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.6%; Z0 11.7%</dd></div>
-                <div><dt>T2</dt><dd>115/152/190 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.7%; Z0 11.75%</dd></div>
+                <div><dt>T2, 2012 drawing</dt><dd>115/152/190 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.7%; Z0 11.75%</dd></div>
                 <div><dt>T3</dt><dd>170 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.5%</dd></div>
                 <div><dt>GSU HV tap text</dt><dd>230,000 ±2 @ 4.35%</dd></div>
                 <div><dt>T6, T7</dt><dd>25/33.3/41.7 MVA, ONAN/ONAF/ONAF; 230/138/6.9 kV; Z1 5.5%</dd></div>
@@ -406,9 +399,29 @@
                 <div><dt>2026 study</dt><dd>T6: 41.7 MVA max; T7 and T8: 125 MVA max</dd></div>
                 <div><dt>230/69 kV</dt><dd>T5 and T10: 15/20/25 MVA each</dd></div>
               </dl>
-              <p class="station-footnote">The source is a December 2012 electrical demolition drawing reproduced in the 2013 GRA. Red and black distinguish demolition and retained work. The 2012 drawing and 2026 study give different maximum ratings for T7.</p>
+              <p class="station-footnote">The December 2012 electrical demolition drawing uses red for demolition and black for retained work. The 2012 drawing and 2026 study give different maximum ratings for T7.</p>
               <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf" target="_blank" rel="noreferrer">2013 GRA Volume II / physical PDF p. 663</a>
               <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF" target="_blank" rel="noreferrer">138 kV and 66 kV Loop Assessments / PDF pp. 194 to 195</a>
+              <div class="station-event">
+                <span>NOVEMBER 2021 / T2 FAILURE</span>
+                <h4>The 1989 T2 was replaced</h4>
+                <p>An internal high-voltage winding fault removed the Federal Pioneer 115/152/190 MVA unit. Its 1970 Canadian General Electric predecessor returned to service on January 13, 2022.</p>
+                <dl>
+                  <div><dt>Replacement nameplate</dt><dd>170 MVA, 230/16 kV, wye/delta</dd></div>
+                  <div><dt>Available cooling</dt><dd>Four of five cooler motors, approximately 150 MVA</dd></div>
+                </dl>
+                <a class="evidence-link" href="http://www.pub.nl.ca/indexreports/UseOfAllowance/From%20NLH%20-%20Notification%20-%20Holyrood%20Thermal%20Generating%20Station%20Unit%202%20Transformer%20Failure%20-%20Final%20Report%20-%202022-02-08.PDF" target="_blank" rel="noreferrer">T2 failure final report / PDF pp. 5 to 8 and 13</a>
+              </div>
+              <div class="station-event">
+                <span>2023 / COMMON SPARE APPLICATION</span>
+                <h4>One spare for four generating stations</h4>
+                <p>Hydro proposed a 172 MVA, 230/16-13.8 kV transformer for Holyrood, Bay d'Espoir, Upper Salmon, and Granite Canal.</p>
+                <dl>
+                  <div><dt>Holyrood T1</dt><dd>Manufactured 1978</dd></div>
+                  <div><dt>Holyrood T2 and T3</dt><dd>Manufactured 1969</dd></div>
+                </dl>
+                <a class="evidence-link" href="http://www.pub.nl.ca/applications/2023/NLH2023Capital_SUPP_SpareGenerator/app/From%20NLH%20-%20Approval%20of%20the%20Purchase%20of%20a%20Spare%20Generator%20Step-Up%20Transformer%20-%202023-09-21.PDF" target="_blank" rel="noreferrer">Spare GSU application / PDF pp. 12 and 14</a>
+              </div>
             </aside>
           </div>
 
@@ -550,7 +563,6 @@
             <header class="subsection-heading">
               <span>NEWFOUNDLAND POWER STATION RECORDS</span>
               <h3 id="station-browser-title">Circuits, feeders, and event loads</h3>
-              <p><strong>66 kV</strong> is the loop name in the 2026 planning study. <strong>69 kV</strong> appears on individual equipment records.</p>
             </header>
             <div class="station-tabs" role="tablist" aria-label="Select a Newfoundland Power station">
               <button class="station-tab active" type="button" role="tab" aria-selected="true" data-station-profile="HWD">Hardwoods</button>
@@ -560,7 +572,6 @@
             <article id="station-profile" class="phase-frame station-profile" role="tabpanel" aria-live="polite"></article>
             <div class="voltage-sources">
               <a class="evidence-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF#page=188" target="_blank" rel="noreferrer">66 kV loop / physical PDF p. 188</a>
-              <a class="evidence-link" href="http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF#page=542" target="_blank" rel="noreferrer">69 kV equipment labels / physical PDF p. 542</a>
             </div>
           </section>
         </div>
@@ -715,10 +726,16 @@
 
         <div class="telecom-history" aria-label="VHF system replacement record">
           <article>
-            <span class="case-date">2004 PROPOSAL</span>
+            <span class="case-date">FILED IN 2004</span>
             <h3>Keep the 170 MHz band</h3>
             <p>Hydro proposed a standards-based trunked VHF system. The budget included six additional repeaters. The filing said 170 MHz gave the required coverage with the fewest sites.</p>
             <a class="evidence-link" href="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" target="_blank" rel="noreferrer">Physical PDF pp. 200 to 203</a>
+          </article>
+          <article>
+            <span class="case-date">REVISION / SEPTEMBER 24, 2004</span>
+            <h3>Ten additional sites</h3>
+            <p>The revised summary specified 39 repeater sites, ten more than the existing 29. The added coverage included Granite Canal, the Bay d'Espoir Highway, southern Labrador, Happy Valley-Goose Bay, and the Burin Peninsula.</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/ARCHIVE/hydro2005cap/files/applic/SecGTab4VHFsummaryReportPage11-Rev1.pdf" target="_blank" rel="noreferrer">Revised summary / PDF p. 1, report p. 11</a>
           </article>
           <article>
             <span class="case-date">2024 TO 2026 PROJECT</span>

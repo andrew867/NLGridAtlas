@@ -50,22 +50,42 @@ export const sources = [
     url: "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf"
   },
   {
+    id: "vhf-2004-revision",
+    year: 2004,
+    organization: "NL Hydro",
+    title: "Mobile Radio System Replacement Summary of Findings, first revision",
+    topics: ["VHF", "repeaters", "coverage", "Granite Canal", "Burin Peninsula", "Labrador"],
+    pages: "PDF p. 1, report p. 11",
+    status: "verified",
+    url: "http://www.pub.nf.ca/ARCHIVE/hydro2005cap/files/applic/SecGTab4VHFsummaryReportPage11-Rev1.pdf"
+  },
+  {
+    id: "nlh-2022-holyrood-t2",
+    year: 2022,
+    organization: "NL Hydro",
+    title: "Holyrood Thermal Generating Station Transformer T2 Failure, Final Report",
+    topics: ["Holyrood", "T2", "generator step-up transformer", "failure", "nameplate"],
+    pages: "PDF pp. 5 to 13, report pp. 1 to 9",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/UseOfAllowance/From%20NLH%20-%20Notification%20-%20Holyrood%20Thermal%20Generating%20Station%20Unit%202%20Transformer%20Failure%20-%20Final%20Report%20-%202022-02-08.PDF"
+  },
+  {
+    id: "nlh-2023-spare-gsu",
+    year: 2023,
+    organization: "NL Hydro",
+    title: "Purchase of a Spare Generator Step-Up Transformer",
+    topics: ["generator step-up transformer", "Holyrood", "Bay d'Espoir", "Upper Salmon", "Granite Canal"],
+    pages: "PDF pp. 12 to 17, schedule pp. 2 to 7",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2023/NLH2023Capital_SUPP_SpareGenerator/app/From%20NLH%20-%20Approval%20of%20the%20Purchase%20of%20a%20Spare%20Generator%20Step-Up%20Transformer%20-%202023-09-21.PDF"
+  },
+  {
     id: "vhf-2027-status",
     year: 2026,
     organization: "NL Hydro",
     title: "2027 Capital Budget Application, Volume I",
     topics: ["VHF replacement", "P25", "Provincial Wide Radio System", "Starlink", "Cradlepoint"],
     pages: "PDF p. 248",
-    status: "reported",
-    url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
-  },
-  {
-    id: "nlh-2027-equipment-voltage",
-    year: 2026,
-    organization: "NL Hydro",
-    title: "2027 Capital Budget Application, Volume I",
-    topics: ["Hardwoods", "Oxen Pond", "69 kV equipment", "circuit breakers"],
-    pages: "PDF p. 542",
     status: "reported",
     url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
   },
@@ -106,6 +126,16 @@ export const sources = [
     title: "138 kV and 66 kV Loop Assessments, 2027 to 2036",
     topics: ["Western Avalon", "Holyrood", "transformer ratings", "contingencies"],
     pages: "PDF pp. 194 to 195",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
+    id: "np-2021-burin-reactive",
+    year: 2021,
+    organization: "Newfoundland Power / Hatch",
+    title: "Burin Peninsula Reactive Power Support Analysis",
+    topics: ["Burin Peninsula", "66 kV loop", "Salt Pond", "reactive power", "one-line", "wind generation"],
+    pages: "PDF pp. 236, 240, 250 to 251",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
@@ -258,6 +288,15 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "2004-09-24",
+    category: "telecom",
+    title: "Revised radio study specified 39 repeater sites",
+    body: "The first-revision summary increased the planned system from 29 existing sites to 39, with added coverage for Granite Canal, the Bay d'Espoir Highway, southern Labrador, Happy Valley-Goose Bay, and the Burin Peninsula.",
+    sourceId: "vhf-2004-revision",
+    pages: "PDF p. 1, report p. 11",
+    status: "verified"
+  },
+  {
     date: "2010",
     category: "load",
     title: "Transformer backup criterion was violated",
@@ -312,6 +351,24 @@ export const timeline = [
     status: "verified"
   },
   {
+    date: "2021-01-11",
+    category: "load",
+    title: "Burin Peninsula loop model documented",
+    body: "The study modelled a 66 kV loop from Salt Pond with a 40 MVA forecast load, 28.418 MW of wind generation, and a 21.25 MW gas turbine planned for retirement.",
+    sourceId: "np-2021-burin-reactive",
+    pages: "PDF pp. 240 and 251",
+    status: "verified"
+  },
+  {
+    date: "2021-11-12",
+    category: "station",
+    title: "Holyrood T2 generator transformer failed",
+    body: "An internal high-voltage winding fault removed the 1989 Federal Pioneer 115/152/190 MVA unit. Hydro installed its 1970 Canadian General Electric predecessor, rated 170 MVA by nameplate and approximately 150 MVA with four cooler motors operating.",
+    sourceId: "nlh-2022-holyrood-t2",
+    pages: "PDF pp. 5 to 8, report pp. 1 to 4",
+    status: "verified"
+  },
+  {
     date: "2023",
     category: "station",
     title: "Long Pond capacity expansion was filed",
@@ -337,6 +394,15 @@ export const timeline = [
     sourceId: "asset-2023",
     pages: "PDF pp. 33 to 36",
     status: "verified"
+  },
+  {
+    date: "2023",
+    category: "station",
+    title: "Hydro proposed a common spare generator transformer",
+    body: "The proposed 172 MVA, 230/16-13.8 kV unit was sized for Holyrood, Bay d'Espoir, Upper Salmon, and Granite Canal. The filing records Holyrood T1 as manufactured in 1978 and T2 and T3 in 1969.",
+    sourceId: "nlh-2023-spare-gsu",
+    pages: "PDF pp. 12 and 14, schedule pp. 2 and 4",
+    status: "proposed"
   },
   {
     date: "2024",
@@ -395,7 +461,7 @@ export const stationProfiles = [
   {
     code: "HWD",
     name: "Hardwoods",
-    voltage: "66 kV loop / 69 kV equipment labels",
+    voltage: "66 kV",
     feederRegister: ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07", "HWD-08"],
     mapPages: [["HWD-01", 80], ["HWD-02", 81], ["HWD-03", 82], ["HWD-04", 83], ["HWD-06", 84], ["HWD-07", 85]],
     mapNote: "HWD-08 is in the 2005 register. A matching sheet was not located in the 2014 map attachment.",
@@ -418,7 +484,7 @@ export const stationProfiles = [
   {
     code: "OXP",
     name: "Oxen Pond",
-    voltage: "66 kV loop / 69 kV equipment labels",
+    voltage: "66 kV",
     feederRegister: ["OXP-01"],
     mapPages: [["OXP-01", 115]],
     eventLoads: [["OXP-01", "9 MW"]]

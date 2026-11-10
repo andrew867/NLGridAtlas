@@ -18,7 +18,7 @@ References:
 | paper bright | `#f8f4eb` | reading field |
 | ink | `#171914` | text and rules |
 | graphite | `#2b2e28` | dark technical sections |
-| water | `#17647a` | 66/69 kV and water reference |
+| water | `#17647a` | 66 kV and water reference |
 | copper | `#9a6037` | machinery and evidence accents |
 | phase A | `#bd3a2e` | 230 kV and phase trace |
 | phase B | `#b17b20` | phase trace and warnings |

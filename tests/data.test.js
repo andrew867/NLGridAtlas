@@ -94,8 +94,9 @@ test("station additions preserve sourced details", async () => {
   assert.match(html, /Bay d'Espoir Hill[\s\S]*164\.22 MHz[\s\S]*170\.28 MHz/);
   assert.match(html, /P25 system and Starlink with Cradlepoint routers/);
   assert.match(html, /5L \/ BCV/);
-  assert.match(html, /66 kV[\s\S]*69 kV/);
+  assert.match(html, /T5 and T10: 15\/20\/25 MVA each/);
   assert.match(html, /Hardwoods Terminal Station/);
+  assert.match(html, /Oxen Pond Terminal Station/);
   assert.match(html, /Western Avalon Terminal Station/);
   assert.match(html, /Holyrood Generating Station/);
   assert.match(html, /Memorial Substation/);
@@ -119,6 +120,10 @@ test("station additions preserve sourced details", async () => {
   assert.doesNotMatch(html, /this atlas preserves/i);
   assert.doesNotMatch(html, /TRANSFORMER REGISTER SHEETS/);
   assert.doesNotMatch(html, /cyclotron/i);
+  assert.doesNotMatch(html, /loop name in the 2026 planning study/);
+  assert.doesNotMatch(html, /66\/69 kV/);
+  assert.doesNotMatch(html, /<h2 id="network-title">Oxen Pond terminal station<\/h2>/i);
+  assert.match(html, /Terminal station <span class="no-break">one-lines<\/span>/);
 });
 
 test("new station and corridor records retain primary source locators", () => {
@@ -138,6 +143,18 @@ test("new station and corridor records retain primary source locators", () => {
   assert.match(t5Event.body, /Type VV/);
   const corridorEvent = timeline.find((event) => event.sourceId === "nlh-2026-wav-sop");
   assert.equal(corridorEvent.status, "proposed");
+
+  const holyroodFailure = timeline.find((event) => event.sourceId === "nlh-2022-holyrood-t2");
+  assert.match(holyroodFailure.body, /115\/152\/190 MVA/);
+  assert.match(holyroodFailure.body, /approximately 150 MVA/);
+
+  const radioRevision = timeline.find((event) => event.sourceId === "vhf-2004-revision");
+  assert.match(radioRevision.body, /29 existing sites to 39/);
+  assert.match(radioRevision.body, /Burin Peninsula/);
+
+  const burinStudy = timeline.find((event) => event.sourceId === "np-2021-burin-reactive");
+  assert.match(burinStudy.body, /40 MVA/);
+  assert.match(burinStudy.body, /28\.418 MW/);
 });
 
 test("time-of-day study record retains the source discrepancy", () => {
