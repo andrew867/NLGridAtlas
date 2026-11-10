@@ -28,6 +28,24 @@
       "notes": "Derived one-page research excerpt of physical page 248 from the 132,043,578-byte original. The page reports the revised P25 and Starlink scope and 2025 installation status."
     },
     {
+      "id": "hydro-2027-capital-equipment-voltage-extract",
+      "local_path": "sources/nlh-2027-capital/equipment-voltage-physical-page-542.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From NLH - 2027 Capital Budget Application - Volume I - 2026-07-14.PDF",
+      "sha256": "5eff22b98770fd6b96b3df4f89f6e73392ac952e394b404114822477e6661580",
+      "physical_pages": 1,
+      "source_original_sha256": "1ecf95dfb7f0e16a04df8ecc5c8a348b2e8a54b93b10f975e5b0f2915f10a3a9",
+      "source_original_physical_pages": 1316,
+      "notes": "Derived one-page research excerpt of physical page 542. The asset schedule labels Oxen Pond B2T2 and Hardwoods B7C1 as 69 kV equipment."
+    },
+    {
+      "id": "np-island-ca-020",
+      "local_path": "sources/np-island-system/CA-NP-020.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/CA-NP-020.pdf",
+      "sha256": "8c329a31b72d3471e9acc6fe7b368618a5262e2ef82c4ac4ad0927563c55bb3f",
+      "physical_pages": 169,
+      "notes": "Physical page 14 records January 5, 2014 feeder outage loads. Physical pages 80 to 85, 101 to 104, and 115 contain Hardwoods, Kenmount, and Oxen Pond feeder index maps."
+    },
+    {
       "id": "hydro-2013-gra-v2",
       "local_path": "sources/NLH2013GRA-Application-VolumeII.pdf",
       "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf",

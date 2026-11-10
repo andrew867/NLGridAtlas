@@ -6,7 +6,7 @@ import "@fontsource/source-serif-4/400.css";
 import "@fontsource/source-serif-4/600.css";
 import "@fontsource/ibm-plex-mono/400.css";
 import "./styles.css";
-import { components, sources, timeline } from "./data.js";
+import { components, sources, stationProfiles, timeline } from "./data.js";
 import handbook from "../research/derived/np-2006-handbook.json";
 import { avalonLabelOffsets, avalonNodePositions } from "./avalon-layout.js";
 
@@ -18,6 +18,7 @@ for (const line of handbook.transmission_lines) {
   if (line.to_code) handbookEndpoints.set(line.to_code, { name: line.to, source_page: line.source_page });
 }
 let activeRegister = "lines";
+let activeStationProfile = "HWD";
 
 function escapeHtml(value) {
   return String(value)
@@ -84,6 +85,49 @@ function showComponent(componentId) {
   document.querySelector("#component-source").textContent = component.pages;
   document.querySelectorAll(".component").forEach((element) => {
     element.classList.toggle("selected", element.dataset.component === componentId);
+  });
+}
+
+function renderStationProfile(code) {
+  const profile = stationProfiles.find((station) => station.code === code);
+  if (!profile) return;
+  activeStationProfile = code;
+  const connected = handbook.transmission_lines.filter((line) => line.from_code === code || line.to_code === code);
+  const circuitRows = connected.map((line) => {
+    const destination = line.from_code === code ? line.to : line.from;
+    const destinationCode = line.from_code === code ? line.to_code : line.from_code;
+    return `<li><strong>${escapeHtml(line.circuit)}</strong><span>${escapeHtml(destination)}${destinationCode ? ` / ${escapeHtml(destinationCode)}` : ""}</span></li>`;
+  }).join("");
+  const mapBase = sourceById.get("np-island-ca-020").url;
+  document.querySelector("#station-profile").innerHTML = `
+    <header class="profile-heading">
+      <div><span>${escapeHtml(profile.code)} / STATION RECORD</span><h4>${escapeHtml(profile.name)}</h4></div>
+      <strong>${escapeHtml(profile.voltage)}</strong>
+    </header>
+    <div class="profile-grid">
+      <section>
+        <span class="profile-label">2005 CIRCUIT REGISTER</span>
+        <ul class="circuit-list">${circuitRows}</ul>
+        <a class="evidence-link" href="${escapeHtml(handbook.source.source_url)}" target="_blank" rel="noreferrer">Electrical System Handbook / PDF pp. 6 to 7</a>
+      </section>
+      <section>
+        <span class="profile-label">2005 FEEDER REGISTER</span>
+        <div class="feeder-tags">${profile.feederRegister.map((feeder) => `<span>${escapeHtml(feeder)}</span>`).join("")}</div>
+        <span class="profile-label map-label">2014 FEEDER MAP SHEETS</span>
+        <div class="feeder-map-links">${profile.mapPages.map(([feeder, page]) => `<a href="${escapeHtml(mapBase)}#page=${page}" target="_blank" rel="noreferrer">${escapeHtml(feeder)}</a>`).join("")}</div>
+        ${profile.mapNote ? `<p class="profile-note">${escapeHtml(profile.mapNote)}</p>` : ""}
+      </section>
+      <section class="event-loads">
+        <span class="profile-label">2014-01-05 RECORDED OUTAGE LOAD</span>
+        <dl>${profile.eventLoads.map(([feeder, load]) => `<div><dt>${escapeHtml(feeder)}</dt><dd>${escapeHtml(load)}</dd></div>`).join("")}</dl>
+        <p>Recorded feeder load when interrupted, not a station peak.</p>
+        <a class="evidence-link" href="${escapeHtml(mapBase)}#page=14" target="_blank" rel="noreferrer">CA-NP-020 / physical PDF p. 14</a>
+      </section>
+    </div>`;
+  document.querySelectorAll(".station-tab").forEach((button) => {
+    const selected = button.dataset.stationProfile === code;
+    button.classList.toggle("active", selected);
+    button.setAttribute("aria-selected", String(selected));
   });
 }
 
@@ -257,9 +301,13 @@ document.querySelectorAll(".register-tab").forEach((button) => {
     renderHandbookRegister(document.querySelector("#handbook-search").value);
   });
 });
+document.querySelectorAll(".station-tab").forEach((button) => {
+  button.addEventListener("click", () => renderStationProfile(button.dataset.stationProfile));
+});
 
 renderAvalonNetwork();
 showHandbookStation("OXP");
+renderStationProfile(activeStationProfile);
 renderHandbookRegister();
 renderTimeline();
 renderSources();

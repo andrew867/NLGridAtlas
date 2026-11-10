@@ -60,6 +60,26 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
   },
   {
+    id: "nlh-2027-equipment-voltage",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "2027 Capital Budget Application, Volume I",
+    topics: ["Hardwoods", "Oxen Pond", "69 kV equipment", "circuit breakers"],
+    pages: "PDF p. 542",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
+  },
+  {
+    id: "np-island-ca-020",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "CA-NP-020, Supply Issues and Power Outages",
+    topics: ["distribution feeders", "feeder maps", "outage loads", "Hardwoods", "Oxen Pond", "Kenmount"],
+    pages: "PDF pp. 14, 80 to 85, 101 to 104, 115",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/CA-NP-020.pdf"
+  },
+  {
     id: "np-2014-improvements",
     year: 2014,
     organization: "Newfoundland Power",
@@ -275,4 +295,33 @@ export const components = {
     pages: "Oxen Pond application / PDF p. 17"
   }
 };
+
+export const stationProfiles = [
+  {
+    code: "HWD",
+    name: "Hardwoods",
+    voltage: "66 kV loop / 69 kV equipment labels",
+    feederRegister: ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07", "HWD-08"],
+    mapPages: [["HWD-01", 80], ["HWD-02", 81], ["HWD-03", 82], ["HWD-04", 83], ["HWD-06", 84], ["HWD-07", 85]],
+    mapNote: "HWD-08 is in the 2005 register. A matching sheet was not located in the 2014 map attachment.",
+    eventLoads: [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]]
+  },
+  {
+    code: "OXP",
+    name: "Oxen Pond",
+    voltage: "66 kV loop / 69 kV equipment labels",
+    feederRegister: ["OXP-01"],
+    mapPages: [["OXP-01", 115]],
+    eventLoads: [["OXP-01", "9 MW"]]
+  },
+  {
+    code: "KEN",
+    name: "Kenmount",
+    voltage: "66 kV loop",
+    feederRegister: ["KEN-02", "KEN-03", "KEN-04"],
+    mapPages: [["KEN-01", 101], ["KEN-02", 102], ["KEN-03", 103], ["KEN-04", 104]],
+    mapNote: "KEN-01 is in the 2014 map attachment but not in the 2005 station register.",
+    eventLoads: [["KEN-01", "10.3 MW"], ["KEN-04", "13 MW"], ["KEN-02", "12 MW"]]
+  }
+];
 

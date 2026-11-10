@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { components, sources, timeline } from "../src/data.js";
+import { components, sources, stationProfiles, timeline } from "../src/data.js";
 import { avalonNodePositions } from "../src/avalon-layout.js";
 
 const handbook = JSON.parse(await readFile(new URL("../research/derived/np-2006-handbook.json", import.meta.url), "utf8"));
@@ -94,5 +94,21 @@ test("station additions preserve source limits", async () => {
   assert.match(html, /29[\s\S]*Repeater sites/);
   assert.match(html, /Bay d'Espoir Hill[\s\S]*164\.22 MHz[\s\S]*170\.28 MHz/);
   assert.match(html, /P25 system and Starlink with Cradlepoint routers/);
+  assert.match(html, /5L \/ BCV/);
+  assert.match(html, /66 kV[\s\S]*69 kV/);
+});
+
+test("station profiles separate registers, maps, and recorded event loads", () => {
+  const hardwoods = stationProfiles.find((station) => station.code === "HWD");
+  assert.deepEqual(hardwoods.feederRegister, ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07", "HWD-08"]);
+  assert.deepEqual(hardwoods.mapPages.map(([feeder]) => feeder), ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07"]);
+  assert.deepEqual(hardwoods.eventLoads, [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]]);
+
+  const oxenPond = stationProfiles.find((station) => station.code === "OXP");
+  assert.deepEqual(oxenPond.eventLoads, [["OXP-01", "9 MW"]]);
+
+  const kenmount = stationProfiles.find((station) => station.code === "KEN");
+  assert.deepEqual(kenmount.feederRegister, ["KEN-02", "KEN-03", "KEN-04"]);
+  assert.deepEqual(kenmount.mapPages.map(([feeder]) => feeder), ["KEN-01", "KEN-02", "KEN-03", "KEN-04"]);
 });
 

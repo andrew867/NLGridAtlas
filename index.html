@@ -198,7 +198,7 @@
                 <circle class="winding feeder-winding" cx="725" cy="474" r="13" />
                 <circle class="winding feeder-winding" cx="725" cy="492" r="13" />
                 <text class="small-label feeder-label" x="746" y="488">OXP-01</text>
-                <text class="small-label" x="320" y="556">NEWFOUNDLAND POWER 66 kV NETWORK</text>
+                <text class="small-label" x="320" y="556">NEWFOUNDLAND POWER 66 kV LOOP</text>
               </g>
             </svg>
             <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2013 EXISTING ARRANGEMENT</p>
@@ -230,9 +230,9 @@
 
           <article class="phase-frame station-sheet">
             <div class="station-sheet-heading"><div><span>HWD / 2013 RECORD</span><h4>Hardwoods</h4></div><strong>230/66 kV</strong></div>
-            <svg class="station-line" viewBox="0 0 1000 430" role="img" aria-labelledby="hwd-title hwd-desc">
+            <svg class="station-line hwd-line" viewBox="0 0 1000 520" role="img" aria-labelledby="hwd-title hwd-desc">
               <title id="hwd-title">Hardwoods transformer register diagram</title>
-              <desc id="hwd-desc">Four 230 over 66 kilovolt transformers, T1 through T4, with their ratings and in-service years.</desc>
+              <desc id="hwd-desc">Four 230 over 66 kilovolt transformers, T1 through T4, with their ratings and in-service years. Seven circuits in the 2005 register connect Hardwoods to Broad Cove, Molloy's Lane, Chamberlains, Kenmount, Goulds, and Glendale.</desc>
               <path class="line v230-line" d="M80 75 H920" />
               <text class="bus-label" x="455" y="55">230 kV</text>
               <path class="line v66-line" d="M80 325 H920" />
@@ -252,6 +252,17 @@
               <g class="register-transformer" transform="translate(830)">
                 <path class="tap" d="M0 75 V155 M0 213 V325" /><circle class="winding v230-winding" cy="174" r="21"/><circle class="winding v66-winding" cy="202" r="21"/>
                 <text x="-13" y="250">T4</text><text class="rating" x="-60" y="275">75/100/125 MVA</text><text class="small-label" x="-32" y="298">IN SERVICE 1992</text>
+              </g>
+              <g class="hwd-circuits">
+                <path class="outgoing" d="M90 325V405 M225 325V405 M360 325V405 M495 325V405 M630 325V405 M765 325V405 M900 325V405" />
+                <text class="small-label" x="90" y="432">5L / BCV</text>
+                <text class="small-label" x="225" y="432">19L / MOL</text>
+                <text class="small-label" x="360" y="432">49L / CHA</text>
+                <text class="small-label" x="495" y="432">54L / KEN</text>
+                <text class="small-label" x="630" y="432">72L / GOU</text>
+                <text class="small-label" x="765" y="432">73L / GDL</text>
+                <text class="small-label" x="900" y="432">79L / CHA</text>
+                <text class="register-caption" x="500" y="485">2005 CIRCUIT REGISTER / 2026 STUDY CALLS THE INTERCONNECTED SYSTEM THE 66 kV LOOP</text>
               </g>
             </svg>
             <p class="station-footnote">* T3 entered service at Oxen Pond in 1968 and was relocated to Hardwoods in 1986.</p>
@@ -357,6 +368,24 @@
               <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF" target="_blank" rel="noreferrer">138 kV and 66 kV Loop Assessments / PDF pp. 194 to 195</a>
             </article>
           </div>
+
+          <section class="station-browser" aria-labelledby="station-browser-title">
+            <header class="subsection-heading">
+              <span>NEWFOUNDLAND POWER STATION RECORDS</span>
+              <h3 id="station-browser-title">Circuits, feeders, and event loads</h3>
+              <p><strong>66 kV</strong> is the loop name in the 2026 planning study. <strong>69 kV</strong> appears on individual equipment records.</p>
+            </header>
+            <div class="station-tabs" role="tablist" aria-label="Select a Newfoundland Power station">
+              <button class="station-tab active" type="button" role="tab" aria-selected="true" data-station-profile="HWD">Hardwoods</button>
+              <button class="station-tab" type="button" role="tab" aria-selected="false" data-station-profile="OXP">Oxen Pond</button>
+              <button class="station-tab" type="button" role="tab" aria-selected="false" data-station-profile="KEN">Kenmount</button>
+            </div>
+            <article id="station-profile" class="phase-frame station-profile" role="tabpanel" aria-live="polite"></article>
+            <div class="voltage-sources">
+              <a class="evidence-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF#page=188" target="_blank" rel="noreferrer">66 kV loop / physical PDF p. 188</a>
+              <a class="evidence-link" href="http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF#page=542" target="_blank" rel="noreferrer">69 kV equipment labels / physical PDF p. 542</a>
+            </div>
+          </section>
         </div>
       </section>
 
