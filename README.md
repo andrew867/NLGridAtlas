@@ -22,6 +22,24 @@ npm test
 npm run build
 ```
 
+## Hydro upload mirror
+
+The mirror tool crawls only the dated public directories under `nlhydro.com/wp-content/uploads/`. It excludes WordPress plugin, form-upload, import, and temporary directories.
+
+Inventory without downloading:
+
+```powershell
+python scripts\sync_nlhydro_uploads.py inventory --out C:\src\misc\NLHydroUploads
+```
+
+Download or resume the document mirror:
+
+```powershell
+python scripts\sync_nlhydro_uploads.py mirror --out C:\src\misc\NLHydroUploads
+```
+
+The output directory contains `inventory.json`, `downloads.jsonl`, and the mirrored files. Keep the mirror outside this repository.
+
 ## Repository layout
 
 - `src/`: site code and curated evidence data
