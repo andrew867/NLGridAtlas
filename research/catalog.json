@@ -131,6 +131,24 @@
       "notes": "Research excerpt of physical PDF pages 105 to 108 and 511 to 518. It records the Ridge Road supply circuits, transformer bank, feeder count, load forecast, and proposed RRD-T3 replacement."
     },
     {
+      "id": "np-2024-goulds",
+      "local_path": "sources/np-2024-goulds/station-record-excerpt.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/PUB-NP-033.PDF",
+      "sha256": "2367cbb669e2738dedbe7bfe9f69b5e1f6376b0717a8c798015a109a0bf413ad",
+      "physical_pages": 2,
+      "source_original_physical_pages": 32,
+      "notes": "Research excerpt of physical PDF pages 29 to 30. The 2007 strategic-plan attachment records the Goulds line terminations, transformer arrangement, feeder service, and bypassed 66 kV bus-tie switch."
+    },
+    {
+      "id": "np-2024-general-service",
+      "local_path": "sources/np-2024-general-service/feeder-table-3.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-030.PDF",
+      "sha256": "78b471e1222854aa1b5df79cd1279a4baa354f72143cdf2474d53c7261b05c43",
+      "physical_pages": 1,
+      "source_original_physical_pages": 3,
+      "notes": "Research excerpt of physical PDF page 3. The table gives feeder voltage, planning capacity, transformer capacity, and customer count for listed substations."
+    },
+    {
       "id": "nlh-2011-western-avalon",
       "local_path": "sources/western-avalon/Exhibit114.pdf",
       "source_url": "https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf",

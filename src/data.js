@@ -210,6 +210,26 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-158.PDF"
   },
   {
+    id: "np-2024-pub-np-033",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-033, 2007 Substation Strategic Plan attachment",
+    topics: ["Goulds", "GOU-T1", "GOU-T2", "GOU-T3", "3L", "4L", "17L", "18L", "25L", "72L"],
+    pages: "physical PDF pp. 29 to 30",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/PUB-NP-033.PDF"
+  },
+  {
+    id: "np-2024-ca-np-030",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-030, General Service Rate 2.4 supply table",
+    topics: ["Goulds", "GOU-02", "feeder planning capacity", "transformer capacity", "customers"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-030.PDF"
+  },
+  {
     id: "np-2025-capital",
     year: 2024,
     organization: "Newfoundland Power",
@@ -856,6 +876,37 @@ export const stationProfiles = [
       facts: [
         ["KEN-T1", "66/25 kV, 25 MVA, 20.04 MVA 2026 forecast"],
         ["KEN-T2", "66/25 kV, 50 MVA, 41.93 MVA 2026 forecast"]
+      ]
+    }
+  },
+  {
+    code: "GOU",
+    name: "Goulds",
+    voltage: "66 kV / 33 kV / 12.5 kV",
+    mapPages: [["GOU-01", 67], ["GOU-02", 68], ["GOU-03", 69]],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2007 SUBSTATION STRATEGIC PLAN",
+      title: "Goulds switching and distribution arrangement",
+      sourceId: "np-2024-pub-np-033",
+      pages: "physical PDF pp. 29 to 30",
+      facts: [
+        ["Station built", "1954"],
+        ["66 kV lines", "4L and 25L to St. John's Main; 17L to Big Pond; 18L to Glendale; 72L to Hardwoods"],
+        ["GOU-T1", "66/33 kV supply to 3L and Petty Harbour"],
+        ["2007 distribution bank", "GOU-T2 and GOU-T3, 33 MVA combined at 12.5 kV"],
+        ["2007 feeder service", "three 12.5 kV feeders; approximately 3,400 customers"],
+        ["2007 bus condition", "one 66 kV bus-tie switch was inoperable and bypassed"]
+      ]
+    },
+    planningRecord: {
+      label: "2023 RATE 2.4 SERVICE TABLE",
+      sourceId: "np-2024-ca-np-030",
+      pages: "physical PDF p. 3",
+      facts: [
+        ["GOU-02", "12.5 kV; 12.7 MVA feeder planning capacity"],
+        ["GOU-T2 and GOU-T3", "20 MVA and 13.3 MVA"],
+        ["Customers served by station", "4,471"]
       ]
     }
   },

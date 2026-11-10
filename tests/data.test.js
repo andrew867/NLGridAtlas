@@ -334,6 +334,20 @@ test("King's Bridge and Ridge Road records preserve current and historical feede
   assert.match(ridgeRoadFacts, /3\.1 MVA exposed/);
 });
 
+test("Goulds record connects the switching station, distribution bank, and feeder maps", () => {
+  const goulds = stationProfiles.find((station) => station.code === "GOU");
+  const facts = goulds.engineeringRecord.facts.flat().join(" ");
+  assert.deepEqual(goulds.mapPages, [["GOU-01", 67], ["GOU-02", 68], ["GOU-03", 69]]);
+  assert.match(facts, /4L and 25L to St\. John's Main/);
+  assert.match(facts, /66\/33 kV supply to 3L and Petty Harbour/);
+  assert.match(facts, /GOU-T2 and GOU-T3, 33 MVA combined at 12\.5 kV/);
+  assert.deepEqual(goulds.planningRecord.facts, [
+    ["GOU-02", "12.5 kV; 12.7 MVA feeder planning capacity"],
+    ["GOU-T2 and GOU-T3", "20 MVA and 13.3 MVA"],
+    ["Customers served by station", "4,471"]
+  ]);
+});
+
 test("map selection stays in place and feeder maps are expandable", async () => {
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");

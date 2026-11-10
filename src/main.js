@@ -197,6 +197,8 @@ function renderStationProfile(code) {
   const stationVoltage = detailed.voltage || (operatingVoltages.length ? operatingVoltages.join("; ") : "Station register");
   const record = profile.engineeringRecord;
   const recordSource = record ? sourceById.get(record.sourceId) : null;
+  const planningRecord = profile.planningRecord;
+  const planningSource = planningRecord ? sourceById.get(planningRecord.sourceId) : null;
   const circuitSource = profile.circuitSource ? sourceById.get(profile.circuitSource.sourceId) : null;
   document.querySelector("#station-profile").innerHTML = `
     <header class="profile-heading">
@@ -229,6 +231,12 @@ function renderStationProfile(code) {
             <span class="profile-label">2014-01-05 RECORDED OUTAGE LOAD</span>
             <dl>${profile.eventLoads.map(([feeder, load]) => `<div><dt>${escapeHtml(feeder)}</dt><dd>${escapeHtml(load)}</dd></div>`).join("")}</dl>
             <a class="evidence-link" href="${escapeHtml(mapBase)}#page=14" target="_blank" rel="noreferrer">CA-NP-020 / physical PDF p. 14</a>
+          </div>` : ""}
+        ${planningRecord ? `
+          <div class="event-loads">
+            <span class="profile-label">${escapeHtml(planningRecord.label)}</span>
+            <dl>${planningRecord.facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>
+            <a class="evidence-link" href="${escapeHtml(planningSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(planningSource.title)} / ${escapeHtml(planningRecord.pages)}</a>
           </div>` : ""}
       </section>
     </div>
