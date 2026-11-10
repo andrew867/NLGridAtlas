@@ -103,6 +103,32 @@ test("Avalon schematic only uses handbook station codes and line endpoints", () 
   }
 });
 
+test("network links use registered circuit endpoints and page anchors", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const connectedCircuits = (code) => handbook.transmission_lines
+    .filter((line) => line.from_code === code || line.to_code === code)
+    .map((line) => line.circuit);
+
+  assert.deepEqual(connectedCircuits("HWD"), ["5L", "19L", "49L", "54L", "72L", "73L", "79L"]);
+  assert.deepEqual(connectedCircuits("OXP"), ["31L", "32L", "34L", "35L", "58L", "67L", "70L"]);
+
+  for (const anchor of [
+    "terminal-opd", "terminal-hwd", "terminal-wav", "terminal-hrd",
+    "substation-hwd", "substation-oxp", "substation-mun", "substation-lpd"
+  ]) {
+    assert.match(html, new RegExp(`id="${anchor}"`), `missing page anchor: ${anchor}`);
+  }
+  for (const href of [
+    "#terminal-opd", "#terminal-hwd", "#terminal-wav", "#terminal-hrd",
+    "#substation-hwd", "#substation-oxp", "#station-BCV", "#station-SLA"
+  ]) {
+    assert.match(html, new RegExp(`href="${href}"`), `missing network link: ${href}`);
+  }
+  assert.match(html, /TL203[\s\S]*SUNNYSIDE/);
+  assert.match(html, /TL237[\s\S]*COME BY CHANCE/);
+  assert.match(html, /TL208[\s\S]*LONG HARBOUR/);
+});
+
 test("station additions preserve sourced details", async () => {
   const healthEvent = timeline.find((event) => event.sourceId === "np-2014-capital");
   assert.ok(healthEvent);
@@ -125,7 +151,7 @@ test("station additions preserve sourced details", async () => {
   assert.match(html, /Hardwoods Substation simplified one-line/);
   assert.match(html, /Oxen Pond Substation simplified one-line/);
   assert.match(html, /12L \/ KING'S BRIDGE/);
-  assert.match(html, /14L \/ STAMPS LANE/);
+  assert.match(html, /14L \/ STAMP'S LANE/);
   assert.match(html, /1192\.5 kcmil 54\/19 Grackle/);
   assert.match(html, /969 A \/ 386 MVA/);
   assert.match(html, /1610 A \/ 641 MVA/);

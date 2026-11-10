@@ -19,6 +19,12 @@ for (const line of handbook.transmission_lines) {
 }
 let activeRegister = "lines";
 let activeStationProfile = "HWD";
+const stationSectionAnchors = {
+  HWD: "#terminal-hwd",
+  MUN: "#substation-mun",
+  OXP: "#terminal-opd",
+  WAV: "#terminal-wav"
+};
 
 function placeTerminalLayouts() {
   const terminalSheets = document.querySelector("#network .station-sheets");
@@ -195,20 +201,22 @@ function renderAvalonNetwork() {
   const edgeMarkup = edgeGeometry(lines).map(({ line, x1, y1, x2, y2 }) => {
     const midX = (x1 + x2) / 2;
     const midY = (y1 + y2) / 2;
+    const target = stationSectionAnchors[line.to_code] || `#station-${line.to_code}`;
     return `
-      <g class="map-edge" data-from="${line.from_code}" data-to="${line.to_code}">
+      <a class="map-edge" href="${escapeHtml(target)}" data-from="${line.from_code}" data-to="${line.to_code}" aria-label="${escapeHtml(line.circuit)} from ${escapeHtml(line.from)} to ${escapeHtml(line.to)}">
         <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"></line>
         <text x="${midX}" y="${midY - 5}">${escapeHtml(line.circuit)}</text>
-      </g>`;
+      </a>`;
   }).join("");
   const nodeMarkup = Object.entries(avalonNodePositions).map(([code, [x, y]]) => {
     const station = handbookStations.get(code) || handbookEndpoints.get(code);
     const [dx, dy] = avalonLabelOffsets[code] || [10, -10];
+    const target = stationSectionAnchors[code] || `#station-${code}`;
     return `
-      <g class="map-node" tabindex="0" role="button" data-station="${code}" aria-label="${escapeHtml(station.name)} station, ${code}">
+      <a id="station-${code}" class="map-node" href="${escapeHtml(target)}" data-station="${code}" aria-label="${escapeHtml(station.name)} station, ${code}">
         <circle cx="${x}" cy="${y}" r="8"></circle>
         <text x="${x + dx}" y="${y + dy}">${code}</text>
-      </g>`;
+      </a>`;
   }).join("");
   svg.innerHTML = `
     <g class="map-grid" aria-hidden="true">
@@ -219,13 +227,25 @@ function renderAvalonNetwork() {
     <g class="map-nodes">${nodeMarkup}</g>`;
 
   document.querySelectorAll(".map-node").forEach((node) => {
-    const select = () => showHandbookStation(node.dataset.station);
-    node.addEventListener("click", select);
-    node.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        select();
-      }
+    node.addEventListener("click", () => showHandbookStation(node.dataset.station));
+  });
+}
+
+function showHashStation() {
+  const match = window.location.hash.match(/^#station-([A-Z0-9]+)$/);
+  if (match) showHandbookStation(match[1]);
+}
+
+function bindInternalDiagramLinks() {
+  document.querySelectorAll('svg a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const href = link.getAttribute("href");
+      const target = document.getElementById(href.slice(1));
+      if (!target) return;
+      event.preventDefault();
+      window.location.hash = href;
+      target.scrollIntoView({ block: "start" });
+      showHashStation();
     });
   });
 }
@@ -342,7 +362,10 @@ document.querySelectorAll(".station-tab").forEach((button) => {
 });
 
 renderAvalonNetwork();
+bindInternalDiagramLinks();
 showHandbookStation("OXP");
+showHashStation();
+window.addEventListener("hashchange", showHashStation);
 renderStationProfile(activeStationProfile);
 renderHandbookRegister();
 renderTimeline();
