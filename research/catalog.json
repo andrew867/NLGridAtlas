@@ -157,6 +157,33 @@
       "notes": "Hydro's Western Avalon single-line is Figure 3 on physical PDF page 7. It gives transformer voltage ratios and staged MVA ratings."
     },
     {
+      "id": "nlh-2024-rra",
+      "local_path": "sources/nlh-2024-rra/selected-pages.pdf",
+      "source_url": "https://nlhydro.com/wp-content/uploads/2024/08/2024-08-26_NLH_RRA-Study_2024-RAP_Rev-2.pdf",
+      "sha256": "26b3a0221970941c8ac23f86fcd57b2a23c1d66c86fc8c9e94bc889197654e71",
+      "physical_pages": 7,
+      "source_original_physical_pages": 673,
+      "notes": "Research excerpt of physical PDF pages 100, 182, 303 to 305, 309, and 339. It records the Holyrood spring 2030 planning case, Avalon transmission options, and the March 2024 TL201 dynamic line rating installation."
+    },
+    {
+      "id": "nlh-2025-capital",
+      "local_path": "sources/nlh-2025-capital/selected-pages.pdf",
+      "source_url": "https://nlhydro.com/wp-content/uploads/2024/08/2024-07-16_NLH_2025-CBA.pdf",
+      "sha256": "db6d60c129d58510acd30b35bb52e08e19335fa46a0178f3d39cd94dd4a119d0",
+      "physical_pages": 2,
+      "source_original_physical_pages": 1253,
+      "notes": "Research excerpt of physical PDF pages 99 and 117. It identifies a 75 MVA, 230/66 kV Hardwoods transformer and the 2019 start of Western Avalon tap-changer paralleling-control replacement."
+    },
+    {
+      "id": "nlh-2025-avalon-ct",
+      "local_path": "sources/nlh-2025-avalon-ct/selected-pages.pdf",
+      "source_url": "https://nlhydro.com/wp-content/uploads/2025/09/From-NLH-Application-for-Capital-Expenditures-for-the-Purchase-and-Installation-of-Bay-dEspoir-Unit-8-and-Avalon-Combustion-Turbine-Redacted-2025-03-21-UPDATED-2025-05-09-compressed.pdf",
+      "sha256": "4c6880158d01dbe12c19626e44bdee3c21b2d05420840bee87dfff3326a89b24",
+      "physical_pages": 3,
+      "source_original_physical_pages": 762,
+      "notes": "Research excerpt of physical PDF pages 41, 65, and 573. It records synchronous-condenser capability, new GSU transformers, isolated-phase bus, a new terminal, and the TL218 interconnection between Holyrood and Oxen Pond."
+    },
+    {
       "id": "np-2023-memorial",
       "local_path": "sources/np-2023-memorial/2023-03-03-application.pdf",
       "source_url": "http://www.pub.nl.ca/applications/2023/NP2023Capital_SUPP_MemorialStation/app/From%20NP%20-%20Approval%20for%20the%20Purchase%20and%20Installation%20of%20a%20Replacement%20Power%20Transformer%20for%20Memorial%20Substation%20-%202023-03-03.PDF"

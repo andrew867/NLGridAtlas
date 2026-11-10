@@ -40,6 +40,36 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf"
   },
   {
+    id: "nlh-2024-rra",
+    year: 2024,
+    organization: "NL Hydro",
+    title: "2024 Reliability and Resource Adequacy Study",
+    topics: ["Holyrood", "synchronous condenser", "TL201", "dynamic line rating", "Western Avalon", "Soldiers Pond"],
+    pages: "physical PDF pp. 100, 182, 303 to 305, 309, 339",
+    status: "reported",
+    url: "https://nlhydro.com/wp-content/uploads/2024/08/2024-08-26_NLH_RRA-Study_2024-RAP_Rev-2.pdf"
+  },
+  {
+    id: "nlh-2025-capital",
+    year: 2024,
+    organization: "NL Hydro",
+    title: "2025 Capital Budget Application",
+    topics: ["Hardwoods", "Western Avalon", "transformer", "tap changer controls"],
+    pages: "physical PDF pp. 99 and 117",
+    status: "verified",
+    url: "https://nlhydro.com/wp-content/uploads/2024/08/2024-07-16_NLH_2025-CBA.pdf"
+  },
+  {
+    id: "nlh-2025-avalon-ct",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "Bay d'Espoir Unit 8 and Avalon Combustion Turbine Application",
+    topics: ["Avalon combustion turbine", "synchronous condenser", "TL218", "terminal station", "generator step-up transformer"],
+    pages: "physical PDF pp. 41, 65 and 573",
+    status: "proposed",
+    url: "https://nlhydro.com/wp-content/uploads/2025/09/From-NLH-Application-for-Capital-Expenditures-for-the-Purchase-and-Installation-of-Bay-dEspoir-Unit-8-and-Avalon-Combustion-Turbine-Redacted-2025-03-21-UPDATED-2025-05-09-compressed.pdf"
+  },
+  {
     id: "vhf-2004",
     year: 2004,
     organization: "NL Hydro",
@@ -431,6 +461,15 @@ export const timeline = [
     status: "verified"
   },
   {
+    date: "2019",
+    category: "station",
+    title: "Western Avalon tap-changer control replacement began",
+    body: "Hydro began replacing the transformer tap-changer paralleling controls at Western Avalon Terminal Station.",
+    sourceId: "nlh-2025-capital",
+    pages: "physical PDF p. 117",
+    status: "verified"
+  },
+  {
     date: "2021-01-11",
     category: "load",
     title: "Burin Peninsula loop model documented",
@@ -494,6 +533,15 @@ export const timeline = [
     status: "verified"
   },
   {
+    date: "2024-03",
+    category: "station",
+    title: "Dynamic line rating entered service on TL201",
+    body: "Hydro installed the dynamic line rating system on TL201 between Western Avalon and Hardwoods.",
+    sourceId: "nlh-2024-rra",
+    pages: "physical PDF p. 339",
+    status: "verified"
+  },
+  {
     date: "2024 to 2026",
     category: "telecom",
     title: "VHF replacement moved to P25 and satellite data",
@@ -503,12 +551,30 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "2025",
+    category: "station",
+    title: "Avalon combustion turbine connection was proposed",
+    body: "The application connects a new terminal station to TL218 between Holyrood and Oxen Pond. The scope includes generator step-up transformers, isolated-phase bus, synchronous-condenser capability, and rerouted Newfoundland Power lines.",
+    sourceId: "nlh-2025-avalon-ct",
+    pages: "physical PDF pp. 41, 65 and 573",
+    status: "proposed"
+  },
+  {
     date: "2026",
     category: "station",
     title: "Western Avalon to Soldiers Pond line was studied",
     body: "The preliminary design selected 1192.5 kcmil Grackle ACSR for a new 230 kV connection between the two terminal stations.",
     sourceId: "nlh-2026-wav-sop",
     pages: "PDF pp. 9, 30 to 33, 41 and 60",
+    status: "proposed"
+  },
+  {
+    date: "2030",
+    category: "station",
+    title: "Holyrood Unit 3 conversion is in the planning case",
+    body: "The 2024 reliability study retires Units 1 and 2 in spring 2030 and permanently converts Unit 3 to synchronous-condensing mode.",
+    sourceId: "nlh-2024-rra",
+    pages: "physical PDF pp. 100 and 182",
     status: "proposed"
   }
 ];
@@ -570,8 +636,8 @@ export const components = {
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
     summary: "The 2026 loop study models four 230/66 kV transformers: T1 and T4 at 125 MVA, and T2 and T3 at 66.6 MVA. The 2013 alternative one-line shows 26.4 MVAR capacitor banks C1 and C2.",
-    data: [["T1", "125 MVA"], ["T2", "66.6 MVA"], ["T3", "66.6 MVA"], ["T4", "125 MVA"], ["Bus", "66 kV"], ["C1, C2", "26.4 MVAR each"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61")]
+    data: [["T1", "125 MVA"], ["T2", "66.6 MVA"], ["T3", "66.6 MVA"], ["T4", "125 MVA"], ["2025 capital record", "75 MVA, 230/66 kV transformer"], ["Bus", "66 kV"], ["C1, C2", "26.4 MVAR each"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-2025-capital", "physical PDF p. 99")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -612,8 +678,8 @@ export const components = {
   "wav-summary": {
     diagram: "wav", status: "verified", code: "WAV / TERMINAL STATION", title: "Western Avalon Terminal Station",
     summary: "T1 and T2 connect the 230 kV and 66 kV buses. T3, T4, and T5 connect the 230 kV and 138 kV buses.",
-    data: [["T1, T2", "15/20/25 MVA"], ["T3, T4", "25/33.3/41.7 MVA"], ["T5", "75/100/125 MVA"], ["Low-voltage bus", "66 kV"]],
-    sources: [sourceRef("nlh-2011-western-avalon", "PDF p. 7"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195")]
+    data: [["T1, T2", "15/20/25 MVA"], ["T3, T4", "25/33.3/41.7 MVA"], ["T5", "75/100/125 MVA"], ["Low-voltage bus", "66 kV"], ["Tap-changer controls", "Replacement began in 2019"]],
+    sources: [sourceRef("nlh-2011-western-avalon", "PDF p. 7"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195"), sourceRef("nlh-2025-capital", "physical PDF p. 117")]
   },
   "wav-t1": {
     diagram: "wav", status: "verified", code: "WAV / T1", title: "Western Avalon transformer T1",
@@ -644,8 +710,8 @@ export const components = {
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
     summary: "The drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. The gas turbine connects through T9 to station service.",
-    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Gas turbine", "15 MW through T9"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Gas turbine", "15 MW through T9"], ["2030 planning case", "Units 1 and 2 retired; Unit 3 converted to synchronous-condensing mode"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182")]
   },
   "hrd-t1": {
     diagram: "hrd", status: "verified", code: "HRD / T1", title: "Holyrood generator transformer T1",
@@ -664,6 +730,12 @@ export const components = {
     summary: "The drawing gives a 170 MVA, 230/16 kV generator transformer. The spare-transformer filing records a 1969 manufacture date.",
     data: [["Rating", "170 MVA, OFAF"], ["Voltage", "230,000/16,000 V"], ["Vector", "Yd1"], ["Impedance", "Z1 13.5%"], ["Manufactured", "1969"]],
     sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14")]
+  },
+  "hrd-g3": {
+    diagram: "hrd", status: "proposed", code: "HRD / UNIT 3", title: "Holyrood Unit 3 planning case",
+    summary: "The 2024 reliability study permanently converts Unit 3 to synchronous-condensing mode in spring 2030.",
+    data: [["Planning date", "Spring 2030"], ["Unit 1", "Retired in planning case"], ["Unit 2", "Retired in planning case"], ["Unit 3", "Permanent synchronous-condensing conversion"]],
+    sources: [sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182")]
   },
   "hrd-t6": {
     diagram: "hrd", status: "verified", code: "HRD / T6", title: "Holyrood transformer T6",

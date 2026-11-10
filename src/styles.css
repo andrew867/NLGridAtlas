@@ -192,6 +192,18 @@ button, input { font: inherit; }
 .map-node:hover circle, .map-node:focus-visible circle, .map-node.selected circle { fill: var(--phase-a); stroke-width: 5; }
 .map-node:focus-visible text, .map-node.selected text { fill: var(--phase-a); }
 .network-subheading { margin-top: 2rem; }
+.island-overview-layout { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, .55fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
+.island-map-panel { min-width: 0; margin: 0; padding: 1rem; overflow: hidden; background: var(--paper-bright); }
+.island-map-panel img { display: block; width: 100%; max-height: 900px; object-fit: contain; }
+.island-map-index { min-width: 0; padding-top: 1.5rem; border-top: 8px solid var(--water); }
+.island-map-index nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: .75rem 0 1.5rem; border-top: 1px solid var(--ink); }
+.island-map-index nav a { display: grid; grid-template-columns: 42px 1fr; gap: .55rem; min-width: 0; padding: .75rem .4rem; border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+.island-map-index nav a:nth-child(odd) { border-right: 1px solid var(--rule); }
+.island-map-index nav a:hover, .island-map-index nav a:focus-visible { color: var(--water); background: var(--paper-bright); }
+.island-map-index nav strong, .island-map-index nav span { min-width: 0; font: 500 .7rem/1.3 "IBM Plex Mono", monospace; }
+.island-map-index nav span { overflow-wrap: anywhere; }
+.island-map-index .generation-label { display: block; margin-top: 1.75rem; }
+.island-map-index > p { font: 400 1rem/1.55 "Source Serif 4", serif; }
 .terminal-network-panel { margin-top: 1rem; padding: 1.5rem; }
 .terminal-network { display: block; width: 100%; height: auto; }
 .terminal-network text { paint-order: stroke fill; stroke: var(--paper); stroke-width: 10px; stroke-linejoin: round; }
@@ -381,6 +393,10 @@ button, input { font: inherit; }
 .project-transformer .winding { stroke-dasharray: 7 6; }
 .corridor-record { display: grid; gap: 1.5rem; margin-top: 3rem; }
 .corridor-layout { margin-top: 0; }
+.transmission-update-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.transmission-update { min-width: 0; padding: 1.5rem; }
+.transmission-update h3 { margin: .6rem 0; font: 600 2.2rem/.95 "Barlow Condensed", sans-serif; text-transform: uppercase; }
+.transmission-update > p:not(.component-code) { font: 400 1rem/1.55 "Source Serif 4", serif; }
 .terminal-box { fill: none; stroke: var(--ink); stroke-width: 4; vector-effect: non-scaling-stroke; }
 .cable-line { fill: none; stroke: var(--copper); stroke-width: 8; vector-effect: non-scaling-stroke; }
 .shield-line { fill: none; stroke: var(--water); stroke-width: 2; stroke-dasharray: 8 7; vector-effect: non-scaling-stroke; }
@@ -541,7 +557,7 @@ button, input { font: inherit; }
 @media (max-width: 980px) {
   .site-header { grid-template-columns: 1fr auto; }
   .site-header nav { display: none; }
-  .cover-grid, .handbook-layout, .load-grid, .telecom-layout { grid-template-columns: 1fr; }
+  .cover-grid, .handbook-layout, .island-overview-layout, .load-grid, .telecom-layout { grid-template-columns: 1fr; }
   .telecom-history { grid-template-columns: 1fr; }
   .telecom-history article { border-right: 0; border-bottom: 1px solid var(--ink); }
   .telecom-history article:last-child { border-bottom: 0; }
@@ -551,6 +567,7 @@ button, input { font: inherit; }
   .profile-grid { grid-template-columns: 1fr; }
   .profile-grid > section, .profile-grid > section:first-child { padding: 1.5rem 0; border-left: 0; border-top: 1px solid var(--rule); }
   .profile-record dl { grid-template-columns: 1fr 1fr; }
+  .transmission-update-grid { grid-template-columns: 1fr; }
   .cover-copy { border-right: 0; border-bottom: 1px solid var(--ink); }
   .cover-datum { min-height: 520px; }
   .section-heading { grid-template-columns: 1fr; align-items: start; }
@@ -573,6 +590,9 @@ button, input { font: inherit; }
   .station-sheet { padding: .75rem; overflow: hidden; }
   .diagram-note { display: none; }
   .geographic-reference-grid { grid-template-columns: 1fr; }
+  .island-map-panel { padding: .5rem; }
+  .island-map-index nav { grid-template-columns: 1fr; }
+  .island-map-index nav a:nth-child(odd) { border-right: 0; }
   .geographic-reference.primary-reference { grid-column: auto; }
   .station-sheet-heading { padding: .25rem 2.75rem .75rem .25rem; }
   .station-sheet-heading h4 { font-size: 2rem; }

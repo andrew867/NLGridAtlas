@@ -8,6 +8,7 @@
       content="An unofficial, source-cited engineering atlas of Newfoundland and Labrador electrical infrastructure."
     />
     <meta name="theme-color" content="#eee8dc" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <title>NL Grid Atlas | Island Interconnected System</title>
   </head>
   <body>
@@ -74,49 +75,75 @@
         <header class="section-heading">
           <div>
             <span class="section-number">01 / SYSTEM NETWORK ONE-LINES</span>
-            <h2 id="handbook-title">230 kV and Newfoundland Power networks</h2>
+            <h2 id="handbook-title">Island and Avalon networks</h2>
           </div>
-          <p>
-            Terminal links use Hydro one-lines. Newfoundland Power circuits use the June 2005
-            Electrical System Handbook endpoints.
-          </p>
         </header>
 
         <header class="subsection-heading network-subheading">
-          <span>HYDRO TERMINAL LINKS</span>
-          <h3>Avalon 230 kV network</h3>
+          <span>ISLAND OVERVIEW / NOVEMBER 2012</span>
+          <h3>Generation and transmission</h3>
+        </header>
+
+        <div class="island-overview-layout">
+          <figure class="phase-frame island-map-panel">
+            <img src="./reference-maps/nlh-2012-provincial-grid.svg" loading="lazy" alt="NL Hydro provincial generation and transmission grid updated November 26, 2012" />
+            <figcaption class="diagram-note">HISTORICAL SOURCE MAP / UPDATED NOVEMBER 26, 2012</figcaption>
+          </figure>
+          <aside class="island-map-index" aria-label="Island overview station links">
+            <span class="profile-label">TERMINAL STATIONS</span>
+            <nav>
+              <a href="#terminal-wav"><strong>WAV</strong><span>Western Avalon</span></a>
+              <a href="#terminal-hrd"><strong>HRD</strong><span>Holyrood</span></a>
+              <a href="#terminal-hwd"><strong>HWD</strong><span>Hardwoods</span></a>
+              <a href="#terminal-opd"><strong>OPD</strong><span>Oxen Pond</span></a>
+              <a href="#station-browser" data-station-record="SUN"><strong>SUN</strong><span>Sunnyside</span></a>
+              <a href="#station-browser" data-station-record="BUC"><strong>BUC</strong><span>Buchans</span></a>
+              <a href="#station-browser" data-station-record="GFS"><strong>GFS</strong><span>Grand Falls</span></a>
+              <a href="#station-browser" data-station-record="DLK"><strong>DLK</strong><span>Deer Lake</span></a>
+              <a href="#station-browser" data-station-record="BBK"><strong>BBK</strong><span>Bottom Brook</span></a>
+            </nav>
+            <span class="profile-label generation-label">MAIN GENERATION SHOWN</span>
+            <p>Bay d'Espoir, Upper Salmon, Granite Canal, Cat Arm, Hinds Lake, Holyrood, Deer Lake, Grand Falls, and Buchans.</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf#page=79" target="_blank" rel="noreferrer">2013 General Rate Application, Volume II / physical PDF p. 79</a>
+          </aside>
+        </div>
+
+        <header class="subsection-heading network-subheading">
+          <span>AVALON / HYDRO TERMINAL LINKS</span>
+          <h3>230 kV semi-geographic view</h3>
           <p>Select a terminal to open its one-line. Circuit links in each terminal drawing return to the station at the other end.</p>
         </header>
 
         <div class="phase-frame terminal-network-panel">
           <svg class="terminal-network" viewBox="0 0 1000 560" role="img" aria-labelledby="terminal-network-title terminal-network-desc">
             <title id="terminal-network-title">Avalon 230 kilovolt terminal interconnection</title>
-            <desc id="terminal-network-desc">Western Avalon connects to Long Harbour, Come By Chance, Sunnyside, Hardwoods, and Holyrood. Hardwoods connects to Oxen Pond and Holyrood. Oxen Pond connects to Holyrood.</desc>
+            <desc id="terminal-network-desc">Stations are ordered west to east as Western Avalon, Holyrood, Hardwoods, and Oxen Pond. Western Avalon also connects to Long Harbour, Come By Chance, and Sunnyside.</desc>
             <g class="terminal-network-lines">
-              <a class="network-circuit" href="#terminal-overview-lhb" aria-label="TL208 to Long Harbour"><path d="M300 315 L115 420"/><text x="190" y="355">TL208</text></a>
-              <a class="network-circuit" href="#terminal-overview-cbc" aria-label="TL237 to Come By Chance"><path d="M300 315 L110 120"/><text x="188" y="205">TL237</text></a>
-              <a class="network-circuit" href="#terminal-overview-sun" aria-label="TL203 to Sunnyside"><path d="M300 315 L330 105"/><text x="292" y="205">TL203</text></a>
-              <a class="network-circuit" href="#terminal-hwd" aria-label="TL201 to Hardwoods Terminal Station"><path d="M300 315 H570"/><text x="435" y="294">TL201</text></a>
-              <a class="network-circuit" href="#terminal-hrd" aria-label="TL217 to Holyrood Generating Station"><path d="M300 315 L665 455"/><text x="475" y="410">TL217</text></a>
-              <a class="network-circuit" href="#terminal-opd" aria-label="TL236 to Oxen Pond Terminal Station"><path d="M570 315 L835 165"/><text x="705" y="220">TL236</text></a>
-              <a class="network-circuit" href="#terminal-hrd" aria-label="TL242 to Holyrood Generating Station"><path d="M570 315 L665 455"/><text x="640" y="375">TL242</text></a>
-              <a class="network-circuit" href="#terminal-hrd" aria-label="TL218 to Holyrood Generating Station"><path d="M835 165 L665 455"/><text x="790" y="330">TL218</text></a>
+              <a class="network-circuit" href="#terminal-overview-lhb" aria-label="TL208 to Long Harbour"><path d="M360 300 L130 450"/><text x="225" y="360">TL208</text></a>
+              <a class="network-circuit" href="#terminal-overview-cbc" aria-label="TL237 to Come By Chance"><path d="M360 300 L120 115"/><text x="225" y="190">TL237</text></a>
+              <a class="network-circuit" href="#terminal-overview-sun" aria-label="TL203 to Sunnyside"><path d="M360 300 L310 80"/><text x="320" y="185">TL203</text></a>
+              <a class="network-circuit" href="#terminal-hwd" aria-label="TL201 to Hardwoods Terminal Station"><path d="M360 300 H650"/><text x="505" y="278">TL201</text></a>
+              <a class="network-circuit" href="#terminal-hrd" aria-label="TL217 to Holyrood Generating Station"><path d="M360 300 L520 440"/><text x="410" y="390">TL217</text></a>
+              <a class="network-circuit" href="#terminal-opd" aria-label="TL236 to Oxen Pond Terminal Station"><path d="M650 300 L840 155"/><text x="745" y="210">TL236</text></a>
+              <a class="network-circuit" href="#terminal-hrd" aria-label="TL242 to Holyrood Generating Station"><path d="M650 300 L520 440"/><text x="610" y="390">TL242</text></a>
+              <a class="network-circuit" href="#terminal-hrd" aria-label="TL218 to Holyrood Generating Station"><path d="M840 155 C825 390 730 470 520 440"/><text x="760" y="405">TL218</text></a>
             </g>
             <g class="terminal-network-nodes">
-              <g id="terminal-overview-cbc" class="network-node auxiliary-node"><circle cx="110" cy="120" r="11"/><text x="110" y="88">COME BY CHANCE</text></g>
-              <g id="terminal-overview-sun" class="network-node auxiliary-node"><circle cx="330" cy="105" r="11"/><text x="330" y="73">SUNNYSIDE</text></g>
-              <g id="terminal-overview-lhb" class="network-node auxiliary-node"><circle cx="115" cy="420" r="11"/><text x="115" y="458">LONG HARBOUR</text></g>
-              <a class="network-node" href="#terminal-wav" aria-label="Open Western Avalon Terminal Station"><circle cx="300" cy="315" r="14"/><text x="300" y="350">WESTERN AVALON</text></a>
-              <a class="network-node" href="#terminal-hwd" aria-label="Open Hardwoods Terminal Station"><circle cx="570" cy="315" r="14"/><text x="570" y="350">HARDWOODS</text></a>
-              <a class="network-node" href="#terminal-opd" aria-label="Open Oxen Pond Terminal Station"><circle cx="835" cy="165" r="14"/><text x="835" y="133">OXEN POND</text></a>
-              <a class="network-node" href="#terminal-hrd" aria-label="Open Holyrood Generating Station"><circle cx="665" cy="455" r="14"/><text x="665" y="493">HOLYROOD</text></a>
+              <g id="terminal-overview-cbc" class="network-node auxiliary-node"><circle cx="120" cy="115" r="11"/><text x="120" y="83">COME BY CHANCE</text></g>
+              <g id="terminal-overview-sun" class="network-node auxiliary-node"><circle cx="310" cy="80" r="11"/><text x="310" y="48">SUNNYSIDE</text></g>
+              <g id="terminal-overview-lhb" class="network-node auxiliary-node"><circle cx="130" cy="450" r="11"/><text x="130" y="488">LONG HARBOUR</text></g>
+              <a class="network-node" href="#terminal-wav" aria-label="Open Western Avalon Terminal Station"><circle cx="360" cy="300" r="14"/><text x="360" y="335">WESTERN AVALON</text></a>
+              <a class="network-node" href="#terminal-hrd" aria-label="Open Holyrood Generating Station"><circle cx="520" cy="440" r="14"/><text x="520" y="478">HOLYROOD</text></a>
+              <a class="network-node" href="#terminal-hwd" aria-label="Open Hardwoods Terminal Station"><circle cx="650" cy="300" r="14"/><text x="650" y="335">HARDWOODS</text></a>
+              <a class="network-node" href="#terminal-opd" aria-label="Open Oxen Pond Terminal Station"><circle cx="840" cy="155" r="14"/><text x="840" y="123">OXEN POND</text></a>
             </g>
           </svg>
-          <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / CIRCUITS SHOWN IN 2011 AND 2013 HYDRO ONE-LINES</p>
+          <p class="diagram-note">SEMI-GEOGRAPHIC / STATION ORDER FROM 2012 AND 2013 MAPS</p>
         </div>
         <div class="network-source-links">
           <a href="https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf#page=7" target="_blank" rel="noreferrer">Western Avalon Figure 3 / PDF p. 7</a>
           <a href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf#page=663" target="_blank" rel="noreferrer">Island Interconnected System assignment / physical PDF p. 663</a>
+          <a href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF#page=15" target="_blank" rel="noreferrer">St. John's region system / physical PDF p. 15</a>
         </div>
 
         <section class="geographic-references" aria-labelledby="geographic-references-title">
@@ -139,19 +166,12 @@
               </a>
               <a class="geographic-reference-source" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF#page=183" target="_blank" rel="noreferrer">Supplemental application / physical PDF p. 183</a>
             </details>
-            <details class="geographic-reference">
-              <summary>November 2012 provincial grid</summary>
-              <a href="./reference-maps/nlh-2012-provincial-grid.svg" target="_blank" rel="noreferrer" aria-label="Open the November 2012 provincial grid map at full size">
-                <img src="./reference-maps/nlh-2012-provincial-grid.svg" loading="lazy" alt="NL Hydro provincial generation and transmission grid updated November 26, 2012" />
-              </a>
-              <a class="geographic-reference-source" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf#page=79" target="_blank" rel="noreferrer">2013 General Rate Application, Volume II / physical PDF p. 79</a>
-            </details>
           </div>
         </section>
 
         <header class="subsection-heading network-subheading">
           <span>NEWFOUNDLAND POWER CIRCUIT REGISTER</span>
-          <h3>66 kV transmission network</h3>
+          <h3>Newfoundland Power 66 kV network</h3>
           <p>Select a station for its connected circuits. Terminal stations open their one-lines below.</p>
         </header>
 
@@ -174,7 +194,7 @@
               <title id="avalon-title">Avalon network schematic from the 2005 Newfoundland Power circuit register</title>
               <desc id="avalon-desc">A selectable schematic of handbook circuits whose listed endpoints are in the Avalon region.</desc>
             </svg>
-            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / JUNE 2005 REGISTER</p>
+            <p class="diagram-note">SEMI-GEOGRAPHIC / STATION POSITIONS FROM 2013 AND 2026 SOURCE MAPS / JUNE 2005 CIRCUITS</p>
           </div>
 
           <aside class="handbook-detail" aria-live="polite">
@@ -421,8 +441,13 @@
                 <g class="register-transformer component" transform="translate(330)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t6" aria-label="Holyrood transformer T6">
                   <path class="tap" d="M0 90 V145 M0 203 V310"/><circle class="winding v138-winding" cy="164" r="20"/><circle class="winding v230-winding" cy="192" r="20"/><text x="-13" y="238">T6</text><text class="small-label transformer-rating" x="0" y="260">25/33.3/41.7</text><text class="small-label transformer-rating" x="0" y="276">MVA</text><text class="cooling-label transformer-rating" x="0" y="292">ONAN/ONAF/ONAF</text>
                 </g>
-                <g class="generator-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t3" aria-label="Holyrood generator transformer T3">
-                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G3</text><text class="small-label" x="-42" y="340">T3 / 170 MVA</text>
+                <g class="generator-transformer" transform="translate(500)">
+                  <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t3" aria-label="Holyrood generator transformer T3">
+                    <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><text class="small-label" x="-42" y="340">T3 / 170 MVA</text>
+                  </g>
+                  <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-g3" aria-label="Holyrood Unit 3 planning case">
+                    <circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G3</text>
+                  </g>
                 </g>
                 <g class="generator-transformer component" transform="translate(650)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t2" aria-label="Holyrood generator transformer T2">
                   <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G2</text><text class="small-label" x="-64" y="340">T2 / 115/152/190 MVA</text>
@@ -700,10 +725,10 @@
       <section class="section transmission-section" id="transmission" aria-labelledby="transmission-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">04 / TRANSMISSION PROJECT</span>
-            <h2 id="transmission-title">Western Avalon to Soldiers Pond</h2>
+            <span class="section-number">04 / TRANSMISSION RECORD</span>
+            <h2 id="transmission-title">Avalon transmission work</h2>
           </div>
-          <p>Preliminary 230 kV line and terminal work from the 2026 feasibility study.</p>
+          <p>Installed line-rating work and proposed 230 kV additions are shown separately.</p>
         </header>
         <div class="station-sheets">
           <section class="corridor-record" aria-labelledby="corridor-title">
@@ -748,6 +773,59 @@
               <div class="rating-row" role="row"><strong role="cell">Summer</strong><span role="cell">969 A / 386 MVA</span><span role="cell">1259 A / 502 MVA</span><span role="cell">30 C</span></div>
               <div class="rating-row" role="row"><strong role="cell">Spring</strong><span role="cell">1092 A / 435 MVA</span><span role="cell">1419 A / 565 MVA</span><span role="cell">15 C</span></div>
               <div class="rating-row" role="row"><strong role="cell">Winter</strong><span role="cell">1201 A / 478 MVA</span><span role="cell">1610 A / 641 MVA</span><span role="cell">0 C</span></div>
+            </div>
+          </section>
+
+          <section class="transmission-update-grid" aria-label="2024 Avalon transmission study findings">
+            <article class="phase-frame transmission-update">
+              <span class="evidence-state verified">VERIFIED</span>
+              <p class="component-code">TL201 / MARCH 2024</p>
+              <h3>Dynamic line rating installed</h3>
+              <p>Hydro installed the dynamic line rating system on TL201 between Western Avalon and Hardwoods.</p>
+              <a class="evidence-link" href="https://nlhydro.com/wp-content/uploads/2024/08/2024-08-26_NLH_RRA-Study_2024-RAP_Rev-2.pdf#page=339" target="_blank" rel="noreferrer">2024 Reliability and Resource Adequacy Study / physical PDF p. 339</a>
+            </article>
+            <article class="phase-frame transmission-update">
+              <span class="evidence-state proposed">PROPOSED</span>
+              <p class="component-code">OPTION 4 / 2024 STUDY</p>
+              <h3>Third line and four DLR systems</h3>
+              <p>The study combines a third Western Avalon to Soldiers Pond line with dynamic line rating on TL201, TL202, TL203, and TL206. The study estimate is approximately $150 million.</p>
+              <a class="evidence-link" href="https://nlhydro.com/wp-content/uploads/2024/08/2024-08-26_NLH_RRA-Study_2024-RAP_Rev-2.pdf#page=305" target="_blank" rel="noreferrer">2024 Reliability and Resource Adequacy Study / physical PDF pp. 305 and 309</a>
+            </article>
+          </section>
+
+          <section class="corridor-record" aria-labelledby="avalon-ct-title">
+            <header class="subsection-heading">
+              <span>2025 CAPITAL APPLICATION</span>
+              <h3 id="avalon-ct-title">Avalon combustion turbine connection</h3>
+            </header>
+            <div class="station-layout corridor-layout">
+              <article class="phase-frame station-sheet compact-sheet">
+                <div class="panel-toolbar station-toolbar" aria-label="Avalon combustion turbine connection">
+                  <span class="voltage-tag">230 kV</span><span class="voltage-tag">TL218</span><span class="voltage-tag">Proposed</span>
+                </div>
+                <svg class="station-line corridor-line" viewBox="0 0 1000 330" role="img" aria-labelledby="avalon-ct-svg-title avalon-ct-svg-desc">
+                  <title id="avalon-ct-svg-title">Proposed Avalon combustion turbine connection to TL218</title>
+                  <desc id="avalon-ct-svg-desc">The proposed Avalon terminal station connects to TL218 between Holyrood and Oxen Pond. Generator step-up transformers connect the combustion turbine and synchronous-condenser equipment to the new terminal.</desc>
+                  <a class="diagram-link" href="#terminal-hrd"><rect class="terminal-box" x="55" y="80" width="185" height="115"/><text class="bus-label" x="92" y="125">HOLYROOD</text><text class="small-label" x="105" y="153">TL218 END</text></a>
+                  <path class="line v230-line" d="M240 138 H760"/><text class="bus-label" x="463" y="117">TL218 / 230 kV</text>
+                  <a class="diagram-link" href="#terminal-opd"><rect class="terminal-box" x="760" y="80" width="185" height="115"/><text class="bus-label" x="796" y="125">OXEN POND</text><text class="small-label" x="810" y="153">TL218 END</text></a>
+                  <path class="proposed-line" d="M500 138 V220"/>
+                  <rect class="terminal-box" x="375" y="220" width="250" height="72"/><text class="bus-label" x="414" y="250">AVALON TERMINAL</text><text class="small-label" x="430" y="273">NEW GSU TRANSFORMERS</text>
+                  <circle class="junction" cx="500" cy="138" r="7"/>
+                </svg>
+              </article>
+              <aside class="component-evidence station-evidence corridor-evidence">
+                <span class="evidence-state proposed">PROPOSED</span>
+                <p class="component-code">AVALON CT / TL218</p>
+                <h3>New terminal and generation connection</h3>
+                <dl class="component-data transformer-register">
+                  <div><dt>Line</dt><dd>TL218 between Holyrood and Oxen Pond</dd></div>
+                  <div><dt>Plant connection</dt><dd>New generator step-up transformers and isolated-phase bus</dd></div>
+                  <div><dt>Operating capability</dt><dd>Generation and synchronous condenser</dd></div>
+                  <div><dt>Newfoundland Power</dt><dd>Existing transmission lines rerouted into the new terminal</dd></div>
+                </dl>
+                <a class="evidence-link" href="https://nlhydro.com/wp-content/uploads/2025/09/From-NLH-Application-for-Capital-Expenditures-for-the-Purchase-and-Installation-of-Bay-dEspoir-Unit-8-and-Avalon-Combustion-Turbine-Redacted-2025-03-21-UPDATED-2025-05-09-compressed.pdf#page=65" target="_blank" rel="noreferrer">Application / physical PDF pp. 41, 65 and 573</a>
+              </aside>
             </div>
           </section>
         </div>

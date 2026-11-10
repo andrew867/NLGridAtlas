@@ -21,6 +21,9 @@ The initial collection includes:
 - Newfoundland Power 2027 Capital Budget Application, Ridge Road station record excerpt
 - Newfoundland Power 2024 PUB-NP-033, Goulds station record excerpt
 - Newfoundland Power 2024 CA-NP-030, feeder planning and customer table excerpt
+- NL Hydro 2024 Reliability and Resource Adequacy Study, selected Holyrood and Avalon transmission pages
+- NL Hydro 2025 Capital Budget Application, selected Hardwoods and Western Avalon pages
+- NL Hydro Bay d'Espoir Unit 8 and Avalon Combustion Turbine Application, selected Avalon connection pages
 - NL Hydro 2011 Western Avalon transmission corridor report and station single-line
 - Newfoundland Power 2023 Memorial transformer application
 - Newfoundland Power 2025 38L and 39L relocation application

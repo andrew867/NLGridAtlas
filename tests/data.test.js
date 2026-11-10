@@ -58,7 +58,7 @@ test("every clickable diagram item has an evidence record", async () => {
     "opd-t1", "opd-t2", "opd-t3",
     "hwd-t1", "hwd-t2", "hwd-t3", "hwd-t4",
     "wav-t1", "wav-t2", "wav-t3", "wav-t4", "wav-t5",
-    "hrd-t1", "hrd-t2", "hrd-t3", "hrd-t5", "hrd-t6", "hrd-t7", "hrd-t8", "hrd-t10", "hrd-gt",
+    "hrd-t1", "hrd-t2", "hrd-t3", "hrd-g3", "hrd-t5", "hrd-t6", "hrd-t7", "hrd-t8", "hrd-t10", "hrd-gt",
     "hwd-np-t1", "hwd-np-t2", "hwd-np-t3", "hwd-np-hwd08", "hwd-np-hwd09",
     "oxp-np-transformer", "oxp-np-feeder",
     "mun-t1", "mun-t2", "mun-bus",
@@ -175,7 +175,7 @@ test("station additions preserve sourced details", async () => {
   assert.doesNotMatch(html, /Type H mechanism was replaced with a Type VV mechanism/);
   assert.match(html, /Terminal station <span class="no-break">one-lines<\/span>/);
   assert.match(html, /03 \/ SUBSTATION DIAGRAMS/);
-  assert.match(html, /04 \/ TRANSMISSION PROJECT/);
+  assert.match(html, /04 \/ TRANSMISSION RECORD/);
 
   assert.match(components["wav-t5"].summary, /Type H mechanism was replaced with a Type VV mechanism/);
   assert.match(components["hrd-t2"].summary, /failed internally in November 2021/);
@@ -368,6 +368,32 @@ test("geographic reference maps retain their source pages", async () => {
   assert.match(html, /Supplemental application \/ physical PDF p\. 183/);
   assert.match(html, /reference-maps\/nlh-2012-provincial-grid\.svg/);
   assert.match(html, /2013 General Rate Application, Volume II \/ physical PDF p\. 79/);
+});
+
+test("island overview and Avalon map use cited geographic references", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(html, /ISLAND OVERVIEW \/ NOVEMBER 2012/);
+  assert.match(html, /href="#terminal-wav"[\s\S]*href="#terminal-hrd"[\s\S]*href="#terminal-hwd"[\s\S]*href="#terminal-opd"/);
+  assert.match(html, /SEMI-GEOGRAPHIC \/ STATION ORDER FROM 2012 AND 2013 MAPS/);
+  assert.match(html, /M360 300 H650/);
+  assert.match(html, /M650 300 L520 440/);
+  assert.match(html, /M840 155 C825 390 730 470 520 440/);
+});
+
+test("Hydro upload findings distinguish installed and proposed work", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const sourceIds = new Set(sources.map((source) => source.id));
+  assert.ok(sourceIds.has("nlh-2024-rra"));
+  assert.ok(sourceIds.has("nlh-2025-capital"));
+  assert.ok(sourceIds.has("nlh-2025-avalon-ct"));
+  assert.equal(components["hrd-g3"].status, "proposed");
+  assert.match(components["hrd-g3"].data.flat().join(" "), /Spring 2030/);
+  assert.match(components["wav-summary"].data.flat().join(" "), /Replacement began in 2019/);
+  assert.match(components["hwd-summary"].data.flat().join(" "), /75 MVA, 230\/66 kV/);
+  assert.ok(timeline.some((event) => event.title === "Dynamic line rating entered service on TL201" && event.status === "verified"));
+  assert.ok(timeline.some((event) => event.title === "Avalon combustion turbine connection was proposed" && event.status === "proposed"));
+  assert.match(html, /Avalon combustion turbine connection/);
+  assert.match(html, /TL201 \/ MARCH 2024/);
 });
 
 test("Oxen Pond and Hardwoods capacitor banks are clickable and sourced", async () => {
