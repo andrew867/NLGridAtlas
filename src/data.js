@@ -889,6 +889,79 @@ export const components = {
   }
 };
 
+export const islandTerminalRecords = [
+  {
+    code: "SUN",
+    name: "Sunnyside Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "230/138 kV"], ["2013 assignment", "Common plant assignment"], ["2023 record", "Control-building concrete cracking documented"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF p. 69")]
+  },
+  {
+    code: "STB",
+    name: "Stony Brook Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "230/138 kV"], ["2023 work", "230 kV station fire protection completed"], ["2023 work", "Station lighting upgrade completed"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+  },
+  {
+    code: "BDE",
+    name: "Bay d'Espoir Generating Station",
+    status: "verified",
+    facts: [["Transformation", "230/69 kV"], ["Plant assignment", "592 MW"], ["Network", "230 kV connections shown to Stony Brook and the western island"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+  },
+  {
+    code: "BUC",
+    name: "Buchans Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "230/66 kV and 66/12.5 kV"], ["2023 work", "Station lighting upgrade recorded"], ["2023 program", "Fire-protection work identified"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF p. 34")]
+  },
+  {
+    code: "DLK",
+    name: "Deer Lake Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "230/138 kV and 138/66 kV"], ["2023 work", "Breaker-failure protection upgrade completed"], ["Adjacent generation", "Deer Lake Power shown at 81 MW"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF p. 34")]
+  },
+  {
+    code: "BBK",
+    name: "Bottom Brook Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "230/138 kV and 138/66 kV"], ["2022 scope", "Protection upgrade and relocation of one power transformer"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF p. 36")]
+  },
+  {
+    code: "GFS",
+    name: "Grand Falls and Bishop's Falls generation",
+    status: "verified",
+    facts: [["System", "Shown on the 138 kV network"], ["Grand Falls G9", "26.9 MW"], ["Grand Falls G4", "25.7 MW"], ["Bishop's Falls", "18.4 MW"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+  },
+  {
+    code: "MAS",
+    name: "Massey Drive Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "230/66 kV"], ["2023 work", "Data-alarm system upgrade completed"], ["2023 program", "230 kV station fire protection identified"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+  },
+  {
+    code: "STV",
+    name: "Stephenville Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "230/66 kV"], ["Plant assignment", "50 MW"], ["2023 work", "Terminal upgrades associated with the gas-turbine retirement plan"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF pp. 33 and 36")]
+  },
+  {
+    code: "CBC",
+    name: "Come By Chance Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "230/13.8 kV"], ["Reactive equipment", "Two 38.35 MVAR banks"], ["Network", "230 kV connection shown to Western Avalon"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+  }
+];
+
 export const stationProfiles = [
   {
     code: "HWD",

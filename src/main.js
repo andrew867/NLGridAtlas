@@ -6,7 +6,7 @@ import "@fontsource/source-serif-4/400.css";
 import "@fontsource/source-serif-4/600.css";
 import "@fontsource/ibm-plex-mono/400.css";
 import "./styles.css";
-import { components, sources, stationProfiles, timeline } from "./data.js";
+import { components, islandTerminalRecords, sources, stationProfiles, timeline } from "./data.js";
 import handbook from "../research/derived/np-2006-handbook.json";
 import transformerRegister from "../research/derived/np-2027-transformer-register.json";
 import { avalonLabelOffsets, avalonNodePositions } from "./avalon-layout.js";
@@ -40,6 +40,7 @@ for (const line of handbook.transmission_lines) {
 }
 let activeRegister = "lines";
 let activeStationProfile = "HWD";
+let activeHydroTerminal = "SUN";
 let stationTabQuery = "";
 const stationSectionAnchors = {
   HWD: "#terminal-hwd",
@@ -267,6 +268,40 @@ function openStationRecord(code, scroll = true) {
   if (scroll) document.querySelector("#station-browser").scrollIntoView({ block: "start" });
 }
 
+function renderHydroTerminalTabs() {
+  document.querySelector("#hydro-terminal-tabs").innerHTML = islandTerminalRecords.map((record) => {
+    const selected = record.code === activeHydroTerminal;
+    return `<button class="station-tab${selected ? " active" : ""}" type="button" role="tab" aria-selected="${selected}" data-hydro-terminal-profile="${escapeHtml(record.code)}"><strong>${escapeHtml(record.code)}</strong><span>${escapeHtml(record.name)}</span></button>`;
+  }).join("");
+}
+
+function renderHydroTerminalRecord(code) {
+  const record = islandTerminalRecords.find((item) => item.code === code);
+  if (!record) return;
+  activeHydroTerminal = record.code;
+  const factRows = record.facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("");
+  const sourceLinks = record.sources.map((reference) => {
+    const source = sourceById.get(reference.sourceId);
+    return `<a class="evidence-link stacked-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.title)} / ${escapeHtml(reference.pages)}</a>`;
+  }).join("");
+  document.querySelector("#hydro-terminal-record").innerHTML = `
+    <header class="profile-heading">
+      <div><span>${escapeHtml(record.code)} / ISLAND SYSTEM</span><h4>${escapeHtml(record.name)}</h4></div>
+      <span class="evidence-state ${escapeHtml(record.status)}">${escapeHtml(record.status.toUpperCase())}</span>
+    </header>
+    <div class="hydro-terminal-record-grid">
+      <dl>${factRows}</dl>
+      <div class="hydro-terminal-sources"><span class="profile-label">SOURCE RECORDS</span>${sourceLinks}</div>
+    </div>`;
+  renderHydroTerminalTabs();
+}
+
+function openHydroTerminalRecord(code, scroll = true) {
+  if (!islandTerminalRecords.some((record) => record.code === code)) return;
+  renderHydroTerminalRecord(code);
+  if (scroll) document.querySelector("#hydro-terminal-browser").scrollIntoView({ block: "start" });
+}
+
 function avalonLines() {
   return handbook.transmission_lines.filter((line) => (
     line.from_code in avalonNodePositions && line.to_code in avalonNodePositions
@@ -489,11 +524,21 @@ document.querySelector("#station-tabs").addEventListener("click", (event) => {
   const button = event.target.closest("[data-station-profile]");
   if (button) renderStationProfile(button.dataset.stationProfile);
 });
+document.querySelector("#hydro-terminal-tabs").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-hydro-terminal-profile]");
+  if (button) renderHydroTerminalRecord(button.dataset.hydroTerminalProfile);
+});
 document.addEventListener("click", (event) => {
   const link = event.target.closest("[data-station-record]");
   if (!link) return;
   event.preventDefault();
   openStationRecord(link.dataset.stationRecord);
+});
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("[data-hydro-terminal-record]");
+  if (!link) return;
+  event.preventDefault();
+  openHydroTerminalRecord(link.dataset.hydroTerminalRecord);
 });
 
 renderAvalonNetwork();
@@ -503,6 +548,8 @@ showHashStation();
 window.addEventListener("hashchange", showHashStation);
 renderStationTabs();
 renderStationProfile(activeStationProfile);
+renderHydroTerminalTabs();
+renderHydroTerminalRecord(activeHydroTerminal);
 renderHandbookRegister();
 renderTimeline();
 renderSources();

@@ -15,6 +15,8 @@ Last scan: 2026-11-10
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Massey Drive, Stephenville, and Come By Chance. These are station-level records, not reconstructed current one-lines.
+
 ## Avalon stations
 
 | State | Station or system | Data now in the atlas | Missing evidence | Next archive target |
@@ -61,7 +63,7 @@ The station browser now covers 139 station codes, the 136 stations in the 2006 h
 
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.
 - [ ] Current feeder register. Later capital filings prove additions such as PUL-04, PUL-05, KEN-01, and HWD-09 that are absent from the 2005 list.
-- [ ] Feeder map sheets for stations other than Hardwoods, Kenmount, and Oxen Pond.
+- [ ] Feeder map sheets beyond the 15 extracted Hardwoods, Kenmount, Oxen Pond, and Goulds sheets. HWD-08 is listed in the feeder register, but no corresponding extracted sheet is present.
 - [ ] Station one-lines that assign feeders to transformer banks and bus sections.
 - [ ] Commissioning and as-built records for replacement transformers.
 - [ ] Protection drawings that identify normally open bus ties and alternate supply paths.

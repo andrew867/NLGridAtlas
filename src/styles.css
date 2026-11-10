@@ -412,7 +412,7 @@ button, input { font: inherit; }
 .rating-row strong { color: var(--phase-a); font-weight: 600; }
 .rating-head { background: var(--ink); color: var(--paper-bright); }
 .rating-head span { border-color: #4d4d47; font-weight: 600; text-transform: uppercase; }
-.station-browser { margin-top: 3rem; }
+.station-browser { margin-top: 3rem; scroll-margin-top: 76px; }
 .station-search { display: grid; grid-template-columns: auto minmax(220px, 1fr) auto; gap: 1rem; align-items: center; margin-top: 1.5rem; font: 500 .7rem/1.2 "IBM Plex Mono", monospace; text-transform: uppercase; }
 .station-search input { min-width: 0; border: 0; border-bottom: 2px solid var(--ink); border-radius: 0; padding: .7rem .2rem; background: transparent; color: var(--ink); font: 400 1rem/1.2 "Source Serif 4", serif; }
 .station-search input:focus { outline: 2px solid var(--phase-b); outline-offset: 3px; }
@@ -424,7 +424,15 @@ button, input { font: inherit; }
 .station-tab.active, .station-tab:hover, .station-tab:focus-visible { background: var(--ink); color: var(--paper-bright); }
 .station-tab:focus-visible { outline: 3px solid var(--phase-b); outline-offset: 2px; }
 .station-profile { padding: clamp(1.25rem, 3vw, 2.5rem); }
-.profile-heading { display: flex; justify-content: space-between; gap: 1.5rem; padding: 0 3.5rem 1.25rem 0; border-bottom: 1px solid var(--ink); }
+.hydro-terminal-browser { margin-top: 4rem; }
+.hydro-terminal-tabs { max-height: none; }
+.hydro-terminal-record-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr); gap: 2rem; padding-top: 1.5rem; }
+.hydro-terminal-record-grid dl { margin: 0; border-top: 1px solid var(--ink); }
+.hydro-terminal-record-grid dl div { display: grid; grid-template-columns: minmax(130px, .55fr) 1.45fr; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid var(--rule); }
+.hydro-terminal-record-grid dt, .hydro-terminal-record-grid dd { min-width: 0; margin: 0; overflow-wrap: anywhere; font: 400 .76rem/1.45 "IBM Plex Mono", monospace; }
+.hydro-terminal-record-grid dt { font-weight: 600; }
+.hydro-terminal-sources { display: flex; flex-direction: column; gap: .6rem; padding-top: .25rem; }
+.profile-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem; padding: 0 3.5rem 1.25rem 0; border-bottom: 1px solid var(--ink); }
 .profile-heading span, .profile-heading > strong, .profile-label { font: 500 .7rem/1.35 "IBM Plex Mono", monospace; letter-spacing: .06em; }
 .profile-heading h4 { margin: .3rem 0 0; font: 600 clamp(2.5rem, 5vw, 5rem)/.9 "Barlow Condensed", sans-serif; text-transform: uppercase; }
 .profile-heading > strong { max-width: 270px; text-align: right; text-transform: uppercase; }
@@ -570,6 +578,7 @@ button, input { font: inherit; }
   .station-layout, .holyrood-layout, .subsection-heading { grid-template-columns: 1fr; }
   .subsection-heading p { grid-column: 1; grid-row: auto; }
   .profile-grid { grid-template-columns: 1fr; }
+  .hydro-terminal-record-grid { grid-template-columns: 1fr; }
   .profile-grid > section, .profile-grid > section:first-child { padding: 1.5rem 0; border-left: 0; border-top: 1px solid var(--rule); }
   .profile-record dl { grid-template-columns: 1fr 1fr; }
   .transmission-update-grid { grid-template-columns: 1fr; }

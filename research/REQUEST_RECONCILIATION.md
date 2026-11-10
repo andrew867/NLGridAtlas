@@ -22,13 +22,15 @@ Updated: 2026-11-10
 - [x] Avalon 230 kV station order corrected to Western Avalon, Holyrood, Hardwoods, and Oxen Pond.
 - [x] 66 kV network identified as semi-geographic, using the 2013 and 2026 source maps for station placement.
 - [x] Hydro upload findings added to the site: TL201 dynamic line rating, Western Avalon controls, Avalon combustion-turbine connection, and the Holyrood 2030 planning case.
+- [x] Island station register added for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Massey Drive, Stephenville, and Come By Chance.
+- [x] All 15 feeder-map images currently extracted from the archive are linked from their station records.
 
 ## Evidence gaps
 
 - [ ] Current one-lines for Glendale, Virginia Waters, Stamp's Lane, St. John's Main, and Pepperell.
 - [ ] Current feeder-to-transformer and bus-section assignments for stations that have only register data.
 - [ ] Current circuit and feeder registers. The complete available register is dated June 2005.
-- [ ] Feeder map sheets beyond the 15 extracted Hardwoods, Kenmount, Oxen Pond, and Goulds sheets.
+- [ ] Feeder map sheets beyond the 15 extracted Hardwoods, Kenmount, Oxen Pond, and Goulds sheets, including HWD-08, which is listed in the register but has no extracted map sheet.
 - [ ] Geographic coordinates or route data suitable for a measured line map. The available utility maps are semi-geographic.
 - [ ] Holyrood Unit 3 post-conversion as-built drawing. The 2024 reliability study places permanent conversion in spring 2030.
 - [ ] Pulpit Rock post-commissioning one-line that resolves the recorded 12.5 kV feeder statement and 25.0 kV transformer operating record.
@@ -38,4 +40,4 @@ Updated: 2026-11-10
 1. Search Newfoundland Power capital applications and RFIs for station-specific protection drawings and one-lines.
 2. Search Hydro uploads for issued-for-construction and commissioning records for the Avalon combustion turbine and Holyrood Unit 3.
 3. Extract additional feeder map sheets when a filing identifies their physical PDF pages.
-4. Extend the island overview west from Sunnyside through Stony Brook, Grand Falls, Buchans, Deer Lake, Massey Drive, Bottom Brook, and Stephenville.
+4. Replace the new western island station records with current detailed one-lines when source drawings are found.

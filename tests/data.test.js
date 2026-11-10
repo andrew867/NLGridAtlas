@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
-import { components, sources, stationProfiles, timeline } from "../src/data.js";
+import { readFile, readdir } from "node:fs/promises";
+import { components, islandTerminalRecords, sources, stationProfiles, timeline } from "../src/data.js";
 import { avalonNodePositions } from "../src/avalon-layout.js";
 
 const handbook = JSON.parse(await readFile(new URL("../research/derived/np-2006-handbook.json", import.meta.url), "utf8"));
@@ -265,6 +265,32 @@ test("station profiles separate registers, maps, and recorded event loads", () =
     ["KEN-T1", "66/25 kV, 25 MVA, 20.04 MVA 2026 forecast"],
     ["KEN-T2", "66/25 kV, 50 MVA, 41.93 MVA 2026 forecast"]
   ]);
+});
+
+test("every extracted feeder image is exposed by a station record", async () => {
+  const imageFiles = (await readdir(new URL("../public/feeder-maps/", import.meta.url)))
+    .filter((file) => file.endsWith(".jpg"))
+    .sort();
+  const mappedFiles = stationProfiles
+    .flatMap((station) => station.mapPages.map(([feeder]) => `${feeder.toLowerCase()}.jpg`))
+    .sort();
+  assert.deepEqual(mappedFiles, imageFiles);
+});
+
+test("island terminal records retain page-level sources", async () => {
+  const sourceIds = new Set(sources.map((source) => source.id));
+  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BBK", "GFS", "MAS", "STV", "CBC"]);
+  for (const record of islandTerminalRecords) {
+    assert.ok(allowedStates.has(record.status));
+    assert.ok(record.facts.length > 0);
+    for (const reference of record.sources) {
+      assert.ok(sourceIds.has(reference.sourceId));
+      assert.match(reference.pages, /PDF p/);
+    }
+  }
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(html, /id="hydro-terminal-browser"/);
+  assert.match(html, /data-hydro-terminal-record="BDE"/);
 });
 
 test("2027 transformer register updates Avalon station records", async () => {
