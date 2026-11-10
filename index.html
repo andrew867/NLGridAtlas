@@ -150,7 +150,10 @@
           <aside class="handbook-detail" aria-live="polite">
             <span class="evidence-state reported">REPORTED</span>
             <p class="component-code" id="handbook-detail-code">OXP / STATION</p>
-            <h3 id="handbook-detail-title">Oxen Pond</h3>
+            <div class="handbook-detail-heading">
+              <h3 id="handbook-detail-title">Oxen Pond</h3>
+              <a id="handbook-detail-station-link" href="#terminal-opd">Open Oxen Pond diagram</a>
+            </div>
             <dl id="handbook-detail-data" class="component-data"></dl>
             <a id="handbook-detail-source" class="evidence-link" href="http://www.pub.nf.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationHandbook.pdf" target="_blank" rel="noreferrer">Electrical System Handbook / PDF pp. 6 to 16</a>
           </aside>
@@ -431,15 +434,15 @@
                 <title id="hwd-np-title">Newfoundland Power Hardwoods Substation simplified one-line</title>
                 <desc id="hwd-np-desc">The 66 kilovolt bus supplies a 66 over 25 kilovolt transformer and a 25 kilovolt distribution bus with Hardwoods feeders.</desc>
                 <a class="diagram-link" href="#terminal-hwd" aria-label="Open Hardwoods Terminal Station">
-                  <path class="line v66-line" d="M70 85 H930"/><text class="bus-label" x="412" y="68">66 kV BUS / HWD TERMINAL</text>
+                  <path class="line v66-line" d="M70 85 H930"/><text class="bus-label" x="75" y="118">66 kV BUS</text>
                 </a>
-                <a class="circuit-link" href="#station-BCV" aria-label="5L to Broad Cove"><path class="outgoing" d="M110 42V85"/><text x="110" y="17">5L</text><text x="110" y="34">BCV</text></a>
-                <a class="circuit-link" href="#station-MOL" aria-label="19L to Molloy's Lane"><path class="outgoing" d="M230 42V85"/><text x="230" y="17">19L</text><text x="230" y="34">MOL</text></a>
-                <a class="circuit-link" href="#station-CHA" aria-label="49L to Chamberlains"><path class="outgoing" d="M350 42V85"/><text x="350" y="17">49L</text><text x="350" y="34">CHA</text></a>
-                <a class="circuit-link" href="#station-KEN" aria-label="54L to Kenmount"><path class="outgoing" d="M620 42V85"/><text x="620" y="17">54L</text><text x="620" y="34">KEN</text></a>
-                <a class="circuit-link" href="#station-GOU" aria-label="72L to Goulds"><path class="outgoing" d="M720 42V85"/><text x="720" y="17">72L</text><text x="720" y="34">GOU</text></a>
-                <a class="circuit-link" href="#station-GDL" aria-label="73L to Glendale"><path class="outgoing" d="M820 42V85"/><text x="820" y="17">73L</text><text x="820" y="34">GDL</text></a>
-                <a class="circuit-link" href="#station-CHA" aria-label="79L to Chamberlains"><path class="outgoing" d="M920 42V85"/><text x="920" y="17">79L</text><text x="920" y="34">CHA</text></a>
+                <a class="circuit-link" href="#station-BCV" aria-label="5L to Broad Cove"><path class="outgoing" d="M110 56V85"/><text x="110" y="17">5L</text><text x="110" y="36">BCV</text></a>
+                <a class="circuit-link" href="#station-MOL" aria-label="19L to Molloy's Lane"><path class="outgoing" d="M230 56V85"/><text x="230" y="17">19L</text><text x="230" y="36">MOL</text></a>
+                <a class="circuit-link" href="#station-CHA" aria-label="49L to Chamberlains"><path class="outgoing" d="M350 56V85"/><text x="350" y="17">49L</text><text x="350" y="36">CHA</text></a>
+                <a class="circuit-link" href="#station-KEN" aria-label="54L to Kenmount"><path class="outgoing" d="M620 56V85"/><text x="620" y="17">54L</text><text x="620" y="36">KEN</text></a>
+                <a class="circuit-link" href="#station-GOU" aria-label="72L to Goulds"><path class="outgoing" d="M720 56V85"/><text x="720" y="17">72L</text><text x="720" y="36">GOU</text></a>
+                <a class="circuit-link" href="#station-GDL" aria-label="73L to Glendale"><path class="outgoing" d="M820 56V85"/><text x="820" y="17">73L</text><text x="820" y="36">GDL</text></a>
+                <a class="circuit-link" href="#station-CHA" aria-label="79L to Chamberlains"><path class="outgoing" d="M920 56V85"/><text x="920" y="17">79L</text><text x="920" y="36">CHA</text></a>
                 <g class="register-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-t1" aria-label="Hardwoods local transformer">
                   <path class="tap" d="M0 85 V155 M0 213 V290"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
                   <text x="-36" y="246">LOCAL T</text><text class="small-label transformer-rating" x="0" y="268">66/25 kV / 50 MVA</text>
@@ -794,21 +797,21 @@
               <text class="radio-link-label" x="650" y="391">TEL INTERCONNECT</text>
               <g class="radio-repeaters">
                 <g transform="translate(760 84)">
-                  <rect width="180" height="100" /><path d="M90 0 V-35 M66 -35 H114 M76 -50 L90 -35 L104 -50" />
+                  <rect width="180" height="100" /><path d="M90 0 V-16 M75 -16 H105 M80 -28 L90 -16 L100 -28" />
                   <text x="90" y="45">REPEATER</text><text class="radio-small" x="90" y="72">CONTROLLER</text>
                 </g>
                 <g transform="translate(760 220)">
-                  <rect width="180" height="100" /><path d="M90 0 V-35 M66 -35 H114 M76 -50 L90 -35 L104 -50" />
+                  <rect width="180" height="100" /><path d="M90 0 V-16 M75 -16 H105 M80 -28 L90 -16 L100 -28" />
                   <text x="90" y="45">REPEATER</text><text class="radio-small" x="90" y="72">CONTROLLER</text>
                 </g>
                 <g transform="translate(760 356)">
-                  <rect width="180" height="100" /><path d="M90 0 V-35 M66 -35 H114 M76 -50 L90 -35 L104 -50" />
+                  <rect width="180" height="100" /><path d="M90 0 V-16 M75 -16 H105 M80 -28 L90 -16 L100 -28" />
                   <text x="90" y="45">REPEATER</text><text class="radio-small" x="90" y="72">CONTROLLER</text>
                 </g>
               </g>
-              <path class="site-link" d="M850 184 V220 M850 320 V356" />
-              <text class="radio-link-label" x="875" y="205">4W SITE LINK</text>
-              <text class="radio-link-label" x="875" y="341">4W SITE LINK</text>
+              <path class="site-link" d="M940 168 H968 V236 H940 M940 304 H968 V372 H940" />
+              <text class="radio-link-label" x="908" y="205">4W SITE LINK</text>
+              <text class="radio-link-label" x="908" y="341">4W SITE LINK</text>
               <g class="radio-count">
                 <text x="355" y="455">29</text><text class="radio-small" x="430" y="440">REPEATER SITES</text>
                 <text class="radio-small" x="430" y="462">CENTRAL SWITCH AT GANDER</text>

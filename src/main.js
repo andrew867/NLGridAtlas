@@ -26,6 +26,13 @@ const stationSectionAnchors = {
   PUL: "#substation-pul",
   WAV: "#terminal-wav"
 };
+const stationDetailAnchors = {
+  HWD: "#substation-hwd",
+  MUN: "#substation-mun",
+  OXP: "#substation-oxp",
+  PUL: "#substation-pul",
+  WAV: "#terminal-wav"
+};
 
 function placeTerminalLayouts() {
   const terminalSheets = document.querySelector("#network .station-sheets");
@@ -128,6 +135,17 @@ function renderStationProfile(code) {
     return `<li><strong>${escapeHtml(line.circuit)}</strong><span>${escapeHtml(destination)}${destinationCode ? ` / ${escapeHtml(destinationCode)}` : ""}</span></li>`;
   }).join("");
   const mapBase = sourceById.get("np-island-ca-020").url;
+  const feederMaps = profile.mapPages.map(([feeder, page]) => {
+    const imagePath = `./feeder-maps/${feeder.toLowerCase()}.jpg`;
+    return `
+      <details class="feeder-map">
+        <summary>${escapeHtml(feeder)}</summary>
+        <a class="feeder-map-image" href="${escapeHtml(imagePath)}" target="_blank" rel="noreferrer" aria-label="Open full-size ${escapeHtml(feeder)} feeder map">
+          <img src="${escapeHtml(imagePath)}" loading="lazy" alt="${escapeHtml(feeder)} feeder map extracted from CA-NP-020 physical PDF page ${page}" />
+        </a>
+        <a class="feeder-map-source" href="${escapeHtml(mapBase)}#page=${page}" target="_blank" rel="noreferrer">CA-NP-020 / physical PDF p. ${page}</a>
+      </details>`;
+  }).join("");
   const record = profile.engineeringRecord;
   const recordSource = record ? sourceById.get(record.sourceId) : null;
   document.querySelector("#station-profile").innerHTML = `
@@ -145,7 +163,7 @@ function renderStationProfile(code) {
         <span class="profile-label">2005 FEEDER REGISTER</span>
         <div class="feeder-tags">${profile.feederRegister.map((feeder) => `<span>${escapeHtml(feeder)}</span>`).join("")}</div>
         <span class="profile-label map-label">2014 FEEDER MAP SHEETS</span>
-        <div class="feeder-map-links">${profile.mapPages.map(([feeder, page]) => `<a href="${escapeHtml(mapBase)}#page=${page}" target="_blank" rel="noreferrer">${escapeHtml(feeder)}</a>`).join("")}</div>
+        <div class="feeder-maps">${feederMaps}</div>
         ${profile.mapNote ? `<p class="profile-note">${escapeHtml(profile.mapNote)}</p>` : ""}
       </section>
       <section class="event-loads">
@@ -228,7 +246,11 @@ function renderAvalonNetwork() {
     <g class="map-nodes">${nodeMarkup}</g>`;
 
   document.querySelectorAll(".map-node").forEach((node) => {
-    node.addEventListener("click", () => showHandbookStation(node.dataset.station));
+    node.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      showHandbookStation(node.dataset.station);
+    });
   });
 }
 
@@ -258,6 +280,13 @@ function showHandbookStation(code) {
   const connected = handbook.transmission_lines.filter((line) => line.from_code === code || line.to_code === code);
   document.querySelector("#handbook-detail-code").textContent = `${code} / ${stationRecord ? "STATION" : "LINE ENDPOINT"}`;
   document.querySelector("#handbook-detail-title").textContent = station.name;
+  const stationLink = document.querySelector("#handbook-detail-station-link");
+  const stationTarget = stationDetailAnchors[code];
+  stationLink.hidden = !stationTarget;
+  if (stationTarget) {
+    stationLink.href = stationTarget;
+    stationLink.textContent = `Open ${station.name} diagram`;
+  }
   document.querySelector("#handbook-detail-data").innerHTML = [
     ["Feeders", stationRecord ? (stationRecord.feeders.length ? stationRecord.feeders.join(", ") : "None listed") : "Not in station register"],
     ["Circuits", connected.length ? connected.map((line) => line.circuit).join(", ") : "None listed"],

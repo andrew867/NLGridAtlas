@@ -250,3 +250,15 @@ test("station profiles separate registers, maps, and recorded event loads", () =
   assert.deepEqual(kenmount.mapPages.map(([feeder]) => feeder), ["KEN-01", "KEN-02", "KEN-03", "KEN-04"]);
 });
 
+test("map selection stays in place and feeder maps are expandable", async () => {
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(main, /event\.preventDefault\(\);[\s\S]*event\.stopImmediatePropagation\(\);[\s\S]*showHandbookStation/);
+  assert.match(main, /handbook-detail-station-link/);
+  assert.match(main, /stationDetailAnchors = \{[\s\S]*HWD: "#substation-hwd"/);
+  assert.match(main, /<details class="feeder-map">/);
+  assert.match(main, /\.\/feeder-maps\/\$\{feeder\.toLowerCase\(\)\}\.jpg/);
+  assert.match(html, /id="handbook-detail-station-link"/);
+  assert.match(html, /M940 168 H968 V236 H940 M940 304 H968 V372 H940/);
+});
+
