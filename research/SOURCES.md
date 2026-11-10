@@ -16,6 +16,7 @@ The initial collection includes:
 - Newfoundland Power 2025 Capital Budget Application, Pulpit Rock excerpts
 - Newfoundland Power 2026 Capital Budget Application, Pulpit Rock excerpts
 - Newfoundland Power 2027 supplemental application, including the May 2026 138 kV and 66 kV loop assessment
+- Newfoundland Power 2027 Capital Budget Application, power-transformer listing excerpt
 - NL Hydro 2011 Western Avalon transmission corridor report and station single-line
 - Newfoundland Power 2023 Memorial transformer application
 - Newfoundland Power 2025 38L and 39L relocation application

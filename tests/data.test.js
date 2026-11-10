@@ -58,7 +58,7 @@ test("every clickable diagram item has an evidence record", async () => {
     "hwd-t1", "hwd-t2", "hwd-t3", "hwd-t4",
     "wav-t1", "wav-t2", "wav-t3", "wav-t4", "wav-t5",
     "hrd-t1", "hrd-t2", "hrd-t3", "hrd-t5", "hrd-t6", "hrd-t7", "hrd-t8", "hrd-t10", "hrd-gt",
-    "hwd-np-t1", "hwd-np-hwd08", "hwd-np-hwd09",
+    "hwd-np-t1", "hwd-np-t2", "hwd-np-t3", "hwd-np-hwd08", "hwd-np-hwd09",
     "oxp-np-transformer", "oxp-np-feeder",
     "mun-t1", "mun-t2", "mun-bus",
     "lpd-t1", "lpd-t2"
@@ -187,7 +187,8 @@ test("new station and corridor records retain primary source locators", () => {
     ["np-2023-long-pond", "PDF pp. 109 to 111"],
     ["nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20"],
     ["nlh-2026-wav-sop", "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146"],
-    ["np-2027-loop-study", "PDF pp. 188, 194 to 195"]
+    ["np-2027-loop-study", "PDF pp. 183, 188 to 195"],
+    ["np-2027-transformers", "physical PDF pp. 545 to 551"]
   ]);
   for (const [id, pages] of expected) {
     const source = sources.find((item) => item.id === id);
@@ -234,20 +235,49 @@ test("station profiles separate registers, maps, and recorded event loads", () =
   assert.deepEqual(hardwoods.mapPages.map(([feeder]) => feeder), ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07"]);
   assert.deepEqual(hardwoods.eventLoads, [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]]);
   assert.deepEqual(hardwoods.engineeringRecord.facts, [
-    ["Transformer", "66/25 kV, 25 MVA replaced by 50 MVA"],
-    ["HWD transformer forecast", "27.5 MVA for 2014"],
+    ["HWD-T1", "66/12.5 kV, 20 MVA, 16.62 MVA 2026 forecast"],
+    ["HWD-T2", "66/12.5 kV, 20 MVA, 16.52 MVA 2026 forecast"],
+    ["HWD-T3", "66/25 kV, 50 MVA, 44.16 MVA 2026 forecast"],
     ["HWD-08", "477 ASC, 590 A planning rating, 595 A forecast per phase"],
     ["HWD-09", "new 25 kV feeder to Kenmount Road"],
-    ["HWD, CHA and KEN", "125.6 MVA aggregate forecast, 125 MVA aggregate capacity"],
     ["Load transfer", "approximately 9 MVA transferred onto HWD-08"]
   ]);
 
   const oxenPond = stationProfiles.find((station) => station.code === "OXP");
   assert.deepEqual(oxenPond.eventLoads, [["OXP-01", "9 MW"]]);
+  assert.deepEqual(oxenPond.engineeringRecord.facts, [
+    ["Operating voltage", "66/12.5 kV"],
+    ["Rating", "13.33 MVA"],
+    ["2026 forecast", "9.87 MVA"]
+  ]);
 
   const kenmount = stationProfiles.find((station) => station.code === "KEN");
   assert.deepEqual(kenmount.feederRegister, ["KEN-02", "KEN-03", "KEN-04"]);
   assert.deepEqual(kenmount.mapPages.map(([feeder]) => feeder), ["KEN-01", "KEN-02", "KEN-03", "KEN-04"]);
+  assert.deepEqual(kenmount.engineeringRecord.facts, [
+    ["KEN-T1", "66/25 kV, 25 MVA, 20.04 MVA 2026 forecast"],
+    ["KEN-T2", "66/25 kV, 50 MVA, 41.93 MVA 2026 forecast"]
+  ]);
+});
+
+test("2027 transformer register updates Avalon station records", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.deepEqual(components["oxp-np-transformer"].data, [
+    ["Operating voltage", "66/12.5 kV"],
+    ["Rating", "13.33 MVA"],
+    ["2026 forecast", "9.87 MVA"]
+  ]);
+  assert.equal(components["hwd-np-t1"].data[1][1], "20 MVA");
+  assert.equal(components["hwd-np-t2"].data[1][1], "20 MVA");
+  assert.equal(components["hwd-np-t3"].data[1][1], "50 MVA");
+  assert.equal(components["mun-t1"].data[3][1], "14.96 MVA");
+  assert.equal(components["mun-t2"].data[0][1], "25 MVA");
+  assert.equal(components["lpd-t2"].status, "verified");
+  assert.match(components["pul-np-summary"].summary, /12\.5 kV feeders/);
+  assert.match(components["pul-np-summary"].summary, /25\.0 kV/);
+  assert.match(html, /OXP-T1[\s\S]*66\/12\.5 kV \/ 13\.33 MVA/);
+  assert.match(html, /HWD-T1[\s\S]*HWD-T2[\s\S]*HWD-T3/);
+  assert.doesNotMatch(html, /Not stated in cited records/);
 });
 
 test("map selection stays in place and feeder maps are expandable", async () => {
@@ -260,5 +290,25 @@ test("map selection stays in place and feeder maps are expandable", async () => 
   assert.match(main, /\.\/feeder-maps\/\$\{feeder\.toLowerCase\(\)\}\.jpg/);
   assert.match(html, /id="handbook-detail-station-link"/);
   assert.match(html, /M940 168 H968 V236 H940 M940 304 H968 V372 H940/);
+});
+
+test("geographic reference maps retain their source pages", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(html, /reference-maps\/oxen-2013-st-johns-system\.jpg/);
+  assert.match(html, /Oxen Pond transformer application \/ physical PDF p\. 15/);
+  assert.match(html, /reference-maps\/np-2026-iis-study-area\.png/);
+  assert.match(html, /Supplemental application \/ physical PDF p\. 183/);
+  assert.match(html, /reference-maps\/nlh-2012-provincial-grid\.svg/);
+  assert.match(html, /2013 General Rate Application, Volume II \/ physical PDF p\. 79/);
+});
+
+test("Oxen Pond and Hardwoods capacitor banks are clickable and sourced", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  for (const id of ["opd-c1", "opd-c2", "hwd-c1", "hwd-c2"]) {
+    assert.match(html, new RegExp(`data-component="${id}"`));
+    assert.ok(components[id]);
+    assert.match(components[id].data.flat().join(" "), /MVAR/);
+    assert.equal(components[id].sources[0].sourceId, "oxen-2013");
+  }
 });
 

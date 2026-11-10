@@ -119,6 +119,36 @@
           <a href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf#page=663" target="_blank" rel="noreferrer">Island Interconnected System assignment / physical PDF p. 663</a>
         </div>
 
+        <section class="geographic-references" aria-labelledby="geographic-references-title">
+          <header>
+            <span>GEOGRAPHIC REFERENCES</span>
+            <h3 id="geographic-references-title">Source maps</h3>
+          </header>
+          <div class="geographic-reference-grid">
+            <details class="geographic-reference primary-reference">
+              <summary>2013 St. John's region power system</summary>
+              <a href="./reference-maps/oxen-2013-st-johns-system.jpg" target="_blank" rel="noreferrer" aria-label="Open the 2013 St. John's region power system map at full size">
+                <img src="./reference-maps/oxen-2013-st-johns-system.jpg" loading="lazy" alt="Semi-geographic 230 kV and 66 kV power system map for the St. John's region" />
+              </a>
+              <a class="geographic-reference-source" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF#page=15" target="_blank" rel="noreferrer">Oxen Pond transformer application / physical PDF p. 15</a>
+            </details>
+            <details class="geographic-reference">
+              <summary>May 2026 IIS study area map</summary>
+              <a href="./reference-maps/np-2026-iis-study-area.png" target="_blank" rel="noreferrer" aria-label="Open the May 2026 IIS study area map at full size">
+                <img src="./reference-maps/np-2026-iis-study-area.png" loading="lazy" alt="Newfoundland Power IIS transmission map covering the Avalon Peninsula and eastern island" />
+              </a>
+              <a class="geographic-reference-source" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF#page=183" target="_blank" rel="noreferrer">Supplemental application / physical PDF p. 183</a>
+            </details>
+            <details class="geographic-reference">
+              <summary>November 2012 provincial grid</summary>
+              <a href="./reference-maps/nlh-2012-provincial-grid.svg" target="_blank" rel="noreferrer" aria-label="Open the November 2012 provincial grid map at full size">
+                <img src="./reference-maps/nlh-2012-provincial-grid.svg" loading="lazy" alt="NL Hydro provincial generation and transmission grid updated November 26, 2012" />
+              </a>
+              <a class="geographic-reference-source" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf#page=79" target="_blank" rel="noreferrer">2013 General Rate Application, Volume II / physical PDF p. 79</a>
+            </details>
+          </div>
+        </section>
+
         <header class="subsection-heading network-subheading">
           <span>NEWFOUNDLAND POWER CIRCUIT REGISTER</span>
           <h3>66 kV transmission network</h3>
@@ -200,7 +230,7 @@
             </div>
             <svg class="one-line" viewBox="0 0 960 590" role="img" aria-labelledby="one-line-title one-line-desc">
               <title id="one-line-title">Simplified Oxen Pond one-line diagram</title>
-              <desc id="one-line-desc">Two 230 kilovolt transmission lines connect to a 230 kilovolt bus and three Hydro transformers feeding the 66 kilovolt bus.</desc>
+              <desc id="one-line-desc">Two 230 kilovolt transmission lines connect to a 230 kilovolt bus. Three Hydro transformers and two capacitor banks connect to the 66 kilovolt bus.</desc>
               <g class="layer v230">
                 <path class="line v230-line" d="M150 188 H810" />
                 <a class="diagram-link" href="#terminal-hwd" aria-label="TL236 to Hardwoods Terminal Station">
@@ -242,8 +272,16 @@
               <g class="layer v66">
                 <a class="diagram-link" href="#substation-oxp" aria-label="Open Newfoundland Power Oxen Pond Substation">
                   <path class="line v66-line" d="M150 422 H810" />
-                  <text class="bus-label" x="440" y="454">66 kV BUS / OXP SUBSTATION</text>
+                  <text class="bus-label" x="432" y="454">66 kV BUS B2 / B5</text>
                 </a>
+                <g class="component capacitor-component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-c2" aria-label="Oxen Pond capacitor bank C2">
+                  <path class="tap" d="M190 422V388 M170 388H210 M170 373H210 M190 373V350 M174 350H206 M180 342H200 M185 334H195" />
+                  <text x="102" y="356">C2</text><text class="rating" x="72" y="378">26.4 MVAR</text>
+                </g>
+                <g class="component capacitor-component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-c1" aria-label="Oxen Pond capacitor bank C1">
+                  <path class="tap" d="M770 422V388 M750 388H790 M750 373H790 M770 373V350 M754 350H786 M760 342H780 M765 334H775" />
+                  <text x="810" y="356">C1</text><text class="rating" x="810" y="378">25.2 MVAR</text>
+                </g>
               </g>
             </svg>
             <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2026 STUDY RATINGS ON 2013 BUS ARRANGEMENT</p>
@@ -279,6 +317,14 @@
                 <path class="line v66-line" d="M80 325 H920" />
                 <text class="bus-label" x="405" y="360">66 kV BUS / HWD SUBSTATION</text>
               </a>
+              <g class="component capacitor-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-c1" aria-label="Hardwoods capacitor bank C1">
+                <path class="tap" d="M95 325V375 M75 375H115 M75 391H115 M95 391V412 M79 412H111 M85 420H105 M90 428H100" />
+                <text class="small-label" x="135" y="382">C1</text><text class="small-label" x="135" y="402">26.4 MVAR</text>
+              </g>
+              <g class="component capacitor-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-c2" aria-label="Hardwoods capacitor bank C2">
+                <path class="tap" d="M905 325V375 M885 375H925 M885 391H925 M905 391V412 M889 412H921 M895 420H915 M900 428H910" />
+                <text class="small-label" x="795" y="382">C2</text><text class="small-label" x="795" y="402">26.4 MVAR</text>
+              </g>
               <g class="register-transformer component" transform="translate(170)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-t1" aria-label="Hardwoods transformer T1">
                 <path class="tap" d="M0 75 V155 M0 213 V325" /><circle class="winding v230-winding" cy="174" r="21"/><circle class="winding v66-winding" cy="202" r="21"/>
                 <text x="-13" y="250">T1</text><text class="rating" x="-25" y="275">125 MVA</text>
@@ -379,10 +425,10 @@
                   <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G3</text><text class="small-label" x="-42" y="340">T3 / 170 MVA</text>
                 </g>
                 <g class="generator-transformer component" transform="translate(650)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t2" aria-label="Holyrood generator transformer T2">
-                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G2</text><text class="small-label" x="-56" y="340">T2 / 115/152/190 MVA</text>
+                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G2</text><text class="small-label" x="-64" y="340">T2 / 115/152/190 MVA</text>
                 </g>
                 <g class="generator-transformer component" transform="translate(800)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t1" aria-label="Holyrood generator transformer T1">
-                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G1</text><text class="small-label" x="-56" y="340">T1 / 105/140/180 MVA</text>
+                  <path class="tap" d="M0 310 V350 M0 408 V435"/><circle class="winding v230-winding" cy="369" r="20"/><circle class="winding generator-winding" cy="397" r="20"/><circle class="generator-symbol" cy="470" r="26"/><text x="-14" y="478">G1</text><text class="small-label" x="-48" y="340">T1 / 105/140/180 MVA</text>
                 </g>
                 <g class="register-transformer component" transform="translate(930)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t10" aria-label="Holyrood transformer T10">
                   <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-13" y="435">T10</text>
@@ -390,7 +436,7 @@
                 <g class="register-transformer component" transform="translate(1000)" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-t5" aria-label="Holyrood transformer T5">
                   <path class="tap" d="M0 310 V345 M0 403 V455"/><circle class="winding v230-winding" cy="364" r="20"/><circle class="winding v69-winding" cy="392" r="20"/><text x="-9" y="435">T5</text>
                 </g>
-                <text class="small-label" x="900" y="335">15/20/25 MVA EACH</text>
+                <text class="small-label" x="940" y="335">15/20/25 MVA EACH</text>
                 <a class="diagram-link" href="#terminal-opd" aria-label="TL218 to Oxen Pond Terminal Station"><path class="outgoing" d="M460 310V42"/><text class="small-label transformer-rating" x="460" y="16">TL218</text><text class="small-label transformer-rating" x="460" y="31">OXEN POND</text></a>
                 <a class="diagram-link" href="#terminal-hwd" aria-label="TL242 to Hardwoods Terminal Station"><path class="outgoing" d="M610 310V78"/><text class="small-label transformer-rating" x="610" y="52">TL242</text><text class="small-label transformer-rating" x="610" y="67">HARDWOODS</text></a>
                 <a class="diagram-link" href="#terminal-wav" aria-label="TL217 to Western Avalon Terminal Station"><path class="outgoing" d="M760 310V42"/><text class="small-label transformer-rating" x="760" y="16">TL217</text><text class="small-label transformer-rating" x="760" y="31">WESTERN AVALON</text></a>
@@ -428,35 +474,44 @@
           <div class="station-layout" id="substation-hwd">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Hardwoods substation voltage levels">
-                <span class="voltage-tag">66 kV</span><span class="voltage-tag">25 kV</span><span class="voltage-tag">Distribution</span>
+                <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">25 kV</span><span class="voltage-tag">Distribution</span>
               </div>
-              <svg class="station-line hwd-np-line" viewBox="0 0 1000 510" role="img" aria-labelledby="hwd-np-title hwd-np-desc">
+              <svg class="station-line hwd-np-line" viewBox="0 0 1000 590" role="img" aria-labelledby="hwd-np-title hwd-np-desc">
                 <title id="hwd-np-title">Newfoundland Power Hardwoods Substation simplified one-line</title>
-                <desc id="hwd-np-desc">The 66 kilovolt bus supplies a 66 over 25 kilovolt transformer and a 25 kilovolt distribution bus with Hardwoods feeders.</desc>
+                <desc id="hwd-np-desc">The 66 kilovolt bus supplies two 66 over 12.5 kilovolt transformers and one 66 over 25 kilovolt transformer. Hardwoods distribution feeders are shown on the 25 kilovolt bus.</desc>
                 <a class="diagram-link" href="#terminal-hwd" aria-label="Open Hardwoods Terminal Station">
                   <path class="line v66-line" d="M70 85 H930"/><text class="bus-label" x="75" y="118">66 kV BUS</text>
                 </a>
-                <a class="circuit-link" href="#station-BCV" aria-label="5L to Broad Cove"><path class="outgoing" d="M110 56V85"/><text x="110" y="17">5L</text><text x="110" y="36">BCV</text></a>
-                <a class="circuit-link" href="#station-MOL" aria-label="19L to Molloy's Lane"><path class="outgoing" d="M230 56V85"/><text x="230" y="17">19L</text><text x="230" y="36">MOL</text></a>
-                <a class="circuit-link" href="#station-CHA" aria-label="49L to Chamberlains"><path class="outgoing" d="M350 56V85"/><text x="350" y="17">49L</text><text x="350" y="36">CHA</text></a>
-                <a class="circuit-link" href="#station-KEN" aria-label="54L to Kenmount"><path class="outgoing" d="M620 56V85"/><text x="620" y="17">54L</text><text x="620" y="36">KEN</text></a>
-                <a class="circuit-link" href="#station-GOU" aria-label="72L to Goulds"><path class="outgoing" d="M720 56V85"/><text x="720" y="17">72L</text><text x="720" y="36">GOU</text></a>
-                <a class="circuit-link" href="#station-GDL" aria-label="73L to Glendale"><path class="outgoing" d="M820 56V85"/><text x="820" y="17">73L</text><text x="820" y="36">GDL</text></a>
-                <a class="circuit-link" href="#station-CHA" aria-label="79L to Chamberlains"><path class="outgoing" d="M920 56V85"/><text x="920" y="17">79L</text><text x="920" y="36">CHA</text></a>
-                <g class="register-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-t1" aria-label="Hardwoods local transformer">
-                  <path class="tap" d="M0 85 V155 M0 213 V290"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
-                  <text x="-36" y="246">LOCAL T</text><text class="small-label transformer-rating" x="0" y="268">66/25 kV / 50 MVA</text>
+                <a class="circuit-link" href="#station-BCV" aria-label="5L to Broad Cove"><path class="outgoing" d="M110 58V85"/><text x="110" y="14">5L</text><text x="110" y="43">BCV</text></a>
+                <a class="circuit-link" href="#station-MOL" aria-label="19L to Molloy's Lane"><path class="outgoing" d="M230 58V85"/><text x="230" y="14">19L</text><text x="230" y="43">MOL</text></a>
+                <a class="circuit-link" href="#station-CHA" aria-label="49L to Chamberlains"><path class="outgoing" d="M350 58V85"/><text x="350" y="14">49L</text><text x="350" y="43">CHA</text></a>
+                <a class="circuit-link" href="#station-KEN" aria-label="54L to Kenmount"><path class="outgoing" d="M620 58V85"/><text x="620" y="14">54L</text><text x="620" y="43">KEN</text></a>
+                <a class="circuit-link" href="#station-GOU" aria-label="72L to Goulds"><path class="outgoing" d="M720 58V85"/><text x="720" y="14">72L</text><text x="720" y="43">GOU</text></a>
+                <a class="circuit-link" href="#station-GDL" aria-label="73L to Glendale"><path class="outgoing" d="M820 58V85"/><text x="820" y="14">73L</text><text x="820" y="43">GDL</text></a>
+                <a class="circuit-link" href="#station-CHA" aria-label="79L to Chamberlains"><path class="outgoing" d="M920 58V85"/><text x="920" y="14">79L</text><text x="920" y="43">CHA</text></a>
+                <g class="register-transformer component" transform="translate(250)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-t1" aria-label="Hardwoods transformer HWD-T1">
+                  <path class="tap" d="M0 85 V155 M0 213 V300"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
+                  <text x="-34" y="246">HWD-T1</text><text class="small-label transformer-rating" x="0" y="268">66/12.5 kV / 20 MVA</text>
                 </g>
-                <path class="station-bus" d="M80 290 H920"/><text class="bus-label" x="450" y="325">25 kV BUS</text>
+                <g class="register-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-t2" aria-label="Hardwoods transformer HWD-T2">
+                  <path class="tap" d="M0 85 V155 M0 213 V300"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
+                  <text x="-34" y="246">HWD-T2</text><text class="small-label transformer-rating" x="0" y="268">66/12.5 kV / 20 MVA</text>
+                </g>
+                <g class="register-transformer component" transform="translate(760)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-t3" aria-label="Hardwoods transformer HWD-T3">
+                  <path class="tap" d="M0 85 V155 M0 213 V390"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
+                  <text x="-34" y="246">HWD-T3</text><text class="small-label transformer-rating" x="0" y="268">66/25 kV / 50 MVA</text>
+                </g>
+                <path class="station-bus" d="M120 300 H600"/><text class="bus-label" x="320" y="335">12.5 kV BUS</text>
+                <path class="station-bus" d="M80 390 H920"/><text class="bus-label" x="450" y="425">25 kV BUS</text>
                 <g class="distribution-feeders">
-                  <path class="outgoing" d="M120 290V410 M215 290V410 M310 290V410 M405 290V410 M500 290V410 M595 290V410 M690 290V410"/>
-                  <text class="small-label vertical-label" x="120" y="438">HWD-01</text><text class="small-label vertical-label" x="215" y="438">HWD-02</text><text class="small-label vertical-label" x="310" y="438">HWD-03</text><text class="small-label vertical-label" x="405" y="438">HWD-04</text><text class="small-label vertical-label" x="500" y="438">HWD-06</text><text class="small-label vertical-label" x="595" y="438">HWD-07</text>
+                  <path class="outgoing" d="M120 390V510 M215 390V510 M310 390V510 M405 390V510 M500 390V510 M595 390V510"/>
+                  <text class="small-label vertical-label" x="120" y="538">HWD-01</text><text class="small-label vertical-label" x="215" y="538">HWD-02</text><text class="small-label vertical-label" x="310" y="538">HWD-03</text><text class="small-label vertical-label" x="405" y="538">HWD-04</text><text class="small-label vertical-label" x="500" y="538">HWD-06</text><text class="small-label vertical-label" x="595" y="538">HWD-07</text>
                 </g>
                 <g class="component feeder-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-hwd08" aria-label="Hardwoods feeder HWD-08">
-                  <path class="outgoing" d="M690 290V410"/><text class="small-label vertical-label" x="690" y="438">HWD-08</text>
+                  <path class="outgoing" d="M690 390V510"/><text class="small-label vertical-label" x="690" y="538">HWD-08</text>
                 </g>
                 <g class="component feeder-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-hwd09" aria-label="Hardwoods feeder HWD-09">
-                  <path class="outgoing project-line" d="M820 290V410"/><text class="small-label vertical-label" x="820" y="438">HWD-09</text><text class="small-label vertical-label" x="820" y="458">2014 ADDITION</text>
+                  <path class="outgoing project-line" d="M820 390V510"/><text class="small-label vertical-label" x="820" y="538">HWD-09</text><text class="small-label vertical-label" x="820" y="558">2014 ADDITION</text>
                 </g>
               </svg>
               <p class="diagram-note">SCHEMATIC / 2005 FEEDER REGISTER / 2014 CAPACITY WORK</p>
@@ -474,27 +529,27 @@
           <div class="station-layout" id="substation-oxp">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Oxen Pond substation voltage levels">
-                <span class="voltage-tag">66 kV</span><span class="voltage-tag">Local transformation</span><span class="voltage-tag">OXP-01</span>
+                <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">OXP-01</span>
               </div>
               <svg class="station-line oxp-np-line" viewBox="0 0 1000 470" role="img" aria-labelledby="oxp-np-title oxp-np-desc">
                 <title id="oxp-np-title">Newfoundland Power Oxen Pond Substation simplified one-line</title>
-                <desc id="oxp-np-desc">The 66 kilovolt bus supplies a local transformer and feeder OXP-01.</desc>
+                <desc id="oxp-np-desc">The 66 kilovolt bus supplies OXP-T1, a 13.33 MVA transformer operating at 66 over 12.5 kilovolts, and feeder OXP-01.</desc>
                 <a class="diagram-link" href="#terminal-opd" aria-label="Open Oxen Pond Terminal Station">
                   <path class="line v66-line" d="M70 90 H930"/><text class="bus-label" x="412" y="73">66 kV BUS / OXP TERMINAL</text>
                 </a>
-                <a class="circuit-link" href="#station-SLA" aria-label="31L to Stamp's Lane"><path class="outgoing" d="M110 47V90"/><text x="110" y="20">31L</text><text x="110" y="38">SLA</text></a>
-                <a class="circuit-link" href="#station-RRD" aria-label="32L to Ridge Road"><path class="outgoing" d="M230 47V90"/><text x="230" y="20">32L</text><text x="230" y="38">RRD</text></a>
-                <a class="circuit-link" href="#station-VIR" aria-label="34L to Virginia Waters"><path class="outgoing" d="M350 47V90"/><text x="350" y="20">34L</text><text x="350" y="38">VIR</text></a>
-                <a class="circuit-link" href="#station-KEN" aria-label="35L to Kenmount"><path class="outgoing" d="M620 47V90"/><text x="620" y="20">35L</text><text x="620" y="38">KEN</text></a>
-                <a class="circuit-link" href="#station-VIR" aria-label="58L to Virginia Waters"><path class="outgoing" d="M720 47V90"/><text x="720" y="20">58L</text><text x="720" y="38">VIR</text></a>
-                <a class="circuit-link" href="#station-RRD" aria-label="67L to Ridge Road"><path class="outgoing" d="M820 47V90"/><text x="820" y="20">67L</text><text x="820" y="38">RRD</text></a>
-                <a class="circuit-link" href="#station-SLA" aria-label="70L to Stamp's Lane"><path class="outgoing" d="M920 47V90"/><text x="920" y="20">70L</text><text x="920" y="38">SLA</text></a>
-                <g class="register-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="oxp-np" data-component="oxp-np-transformer" aria-label="Oxen Pond local transformer">
+                <a class="circuit-link" href="#station-SLA" aria-label="31L to Stamp's Lane"><path class="outgoing" d="M110 58V90"/><text x="110" y="14">31L</text><text x="110" y="43">SLA</text></a>
+                <a class="circuit-link" href="#station-RRD" aria-label="32L to Ridge Road"><path class="outgoing" d="M230 58V90"/><text x="230" y="14">32L</text><text x="230" y="43">RRD</text></a>
+                <a class="circuit-link" href="#station-VIR" aria-label="34L to Virginia Waters"><path class="outgoing" d="M350 58V90"/><text x="350" y="14">34L</text><text x="350" y="43">VIR</text></a>
+                <a class="circuit-link" href="#station-KEN" aria-label="35L to Kenmount"><path class="outgoing" d="M620 58V90"/><text x="620" y="14">35L</text><text x="620" y="43">KEN</text></a>
+                <a class="circuit-link" href="#station-VIR" aria-label="58L to Virginia Waters"><path class="outgoing" d="M720 58V90"/><text x="720" y="14">58L</text><text x="720" y="43">VIR</text></a>
+                <a class="circuit-link" href="#station-RRD" aria-label="67L to Ridge Road"><path class="outgoing" d="M820 58V90"/><text x="820" y="14">67L</text><text x="820" y="43">RRD</text></a>
+                <a class="circuit-link" href="#station-SLA" aria-label="70L to Stamp's Lane"><path class="outgoing" d="M920 58V90"/><text x="920" y="14">70L</text><text x="920" y="43">SLA</text></a>
+                <g class="register-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="oxp-np" data-component="oxp-np-transformer" aria-label="Oxen Pond transformer OXP-T1">
                   <path class="tap" d="M0 90 V165 M0 223 V295"/><circle class="winding v66-winding" cy="184" r="21"/><circle class="winding feeder-winding" cy="212" r="21"/>
-                  <text x="-36" y="258">LOCAL T</text>
+                  <text x="-30" y="258">OXP-T1</text><text class="small-label transformer-rating" x="0" y="280">66/12.5 kV / 13.33 MVA</text>
                 </g>
                 <g class="component feeder-component" tabindex="0" role="button" aria-pressed="false" data-diagram="oxp-np" data-component="oxp-np-feeder" aria-label="Oxen Pond feeder OXP-01">
-                  <path class="station-bus" d="M360 295 H640"/><path class="outgoing" d="M500 295 V405"/><text class="bus-label" x="458" y="330">LOCAL BUS</text><text class="small-label transformer-rating" x="500" y="435">OXP-01</text>
+                  <path class="station-bus" d="M360 295 H640"/><path class="outgoing" d="M500 295 V405"/><text class="bus-label" x="450" y="330">12.5 kV BUS</text><text class="small-label transformer-rating" x="500" y="435">OXP-01</text>
                 </g>
               </svg>
               <p class="diagram-note">SCHEMATIC / 2005 FEEDER REGISTER / 2014 FEEDER MAP</p>
@@ -562,11 +617,11 @@
                 <a class="diagram-link" href="#station-SLA" aria-label="14L to Stamp's Lane Substation"><path class="outgoing" d="M890 95H965"/><text class="small-label" x="805" y="70">14L / STAMP'S LANE</text></a>
                 <g class="register-transformer component" transform="translate(330)" tabindex="0" role="button" aria-pressed="false" data-diagram="mun" data-component="mun-t2" aria-label="Memorial transformer T2">
                   <path class="tap" d="M0 95 V175 M0 233 V310"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/>
-                  <text x="-32" y="270">MUN-T2</text><text class="small-label transformer-rating" x="0" y="292">15/20 MVA</text>
+                  <text x="-32" y="270">MUN-T2</text><text class="small-label transformer-rating" x="0" y="292">25 MVA</text>
                 </g>
                 <g class="register-transformer component" transform="translate(670)" tabindex="0" role="button" aria-pressed="false" data-diagram="mun" data-component="mun-t1" aria-label="Memorial transformer T1">
                   <path class="tap" d="M0 95 V175 M0 233 V310"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/>
-                  <text x="-32" y="270">MUN-T1</text><text class="small-label transformer-rating" x="0" y="292">11.125/14.83 MVA</text>
+                  <text x="-32" y="270">MUN-T1</text><text class="small-label transformer-rating" x="0" y="292">14.96 MVA</text>
                 </g>
                 <path class="station-bus" d="M120 310 H470 M530 310 H880"/><path class="tap bus-tie" d="M470 310 H530"/>
                 <text class="bus-label" x="390" y="345">12.5 kV</text><text class="small-label" x="458" y="292">MUN-TB-1-2</text>
@@ -592,25 +647,25 @@
           <div class="station-layout" id="substation-lpd">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Long Pond voltage levels">
-                <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">2023 project scope dashed</span>
+                <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">Two 25 MVA units</span>
               </div>
               <svg class="station-line long-pond-line" viewBox="0 0 1000 430" role="img" aria-labelledby="lpd-title lpd-desc">
                 <title id="lpd-title">Long Pond Substation capacity expansion one-line</title>
-                <desc id="lpd-desc">The 2019 station had one 25 MVA, 66 over 12.5 kilovolt transformer. The 2023 project scope called for a second 25 MVA transformer and extensions to both bus voltage levels.</desc>
+                <desc id="lpd-desc">The 2027 transformer register lists two 25 MVA, 66 over 12.5 kilovolt transformers at Long Pond.</desc>
                 <path class="line v66-line" d="M120 90 H880"/><text class="bus-label" x="465" y="68">66 kV BUS</text>
                 <g class="register-transformer component" transform="translate(340)" tabindex="0" role="button" aria-pressed="false" data-diagram="lpd" data-component="lpd-t1" aria-label="Long Pond transformer T1">
                   <path class="tap" d="M0 90 V160 M0 218 V300"/><circle class="winding v66-winding" cy="179" r="21"/><circle class="winding feeder-winding" cy="207" r="21"/>
                   <text x="-28" y="252">LPD-T1</text><text class="small-label transformer-rating" x="0" y="276">25 MVA</text>
                 </g>
-                <g class="register-transformer project-transformer component" transform="translate(660)" tabindex="0" role="button" aria-pressed="false" data-diagram="lpd" data-component="lpd-t2" aria-label="Long Pond transformer T2 project">
-                  <path class="tap proposed-line" d="M0 90 V160 M0 218 V300"/><circle class="winding v66-winding" cy="179" r="21"/><circle class="winding feeder-winding" cy="207" r="21"/>
-                  <text x="-28" y="252">LPD-T2</text><text class="small-label transformer-rating" x="0" y="276">25 MVA / PROJECT</text>
+                <g class="register-transformer component" transform="translate(660)" tabindex="0" role="button" aria-pressed="false" data-diagram="lpd" data-component="lpd-t2" aria-label="Long Pond transformer T2">
+                  <path class="tap" d="M0 90 V160 M0 218 V300"/><circle class="winding v66-winding" cy="179" r="21"/><circle class="winding feeder-winding" cy="207" r="21"/>
+                  <text x="-28" y="252">LPD-T2</text><text class="small-label transformer-rating" x="0" y="276">25 MVA</text>
                 </g>
-                <path class="station-bus" d="M120 300 H500"/><path class="station-bus proposed-line" d="M500 300 H880"/><text class="bus-label" x="460" y="335">12.5 kV BUS</text>
-                <path class="outgoing" d="M200 300V385 M300 300V385 M400 300V385"/><path class="outgoing proposed-line" d="M600 300V385 M700 300V385 M800 300V385"/>
-                <text class="register-caption" x="500" y="415">SOLID: 2019 STATION / DASHED: 2023 CAPACITY EXPANSION SCOPE</text>
+                <path class="station-bus" d="M120 300 H880"/><text class="bus-label" x="460" y="335">12.5 kV BUS</text>
+                <path class="outgoing" d="M200 300V385 M300 300V385 M400 300V385 M600 300V385 M700 300V385 M800 300V385"/>
+                <text class="register-caption" x="500" y="415">2027 TRANSFORMER REGISTER / TWO 25 MVA UNITS</text>
               </svg>
-              <p class="diagram-note">SCHEMATIC FROM 2023 CAPITAL PROJECT SCOPE</p>
+              <p class="diagram-note">2023 PROJECT ARRANGEMENT / 2027 TRANSFORMER REGISTER</p>
             </article>
             <aside class="component-evidence station-evidence" data-diagram-panel="lpd" data-default-component="lpd-summary" aria-live="polite">
               <span class="evidence-state verified" data-field="state">VERIFIED</span>

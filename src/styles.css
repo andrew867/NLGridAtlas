@@ -206,6 +206,18 @@ button, input { font: inherit; }
 .auxiliary-node circle { fill: var(--paper-bright); }
 .network-source-links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; padding: .8rem 0 1.5rem; }
 .network-source-links a { font: 400 .72rem/1.45 "IBM Plex Mono", monospace; text-underline-offset: .2rem; }
+.geographic-references { margin: 1.5rem 0 3rem; border-top: 1px solid var(--ink); }
+.geographic-references > header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; align-items: baseline; padding: 1rem 0; }
+.geographic-references > header span { font: 500 .7rem/1 "IBM Plex Mono", monospace; }
+.geographic-references > header h3 { margin: 0; font: 600 2.3rem/.95 "Barlow Condensed", sans-serif; text-transform: uppercase; }
+.geographic-reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.geographic-reference { min-width: 0; border: 1px solid var(--ink); background: var(--paper); }
+.geographic-reference.primary-reference { grid-column: 1 / -1; }
+.geographic-reference summary { padding: .85rem 1rem; font: 500 .72rem/1.2 "IBM Plex Mono", monospace; text-transform: uppercase; cursor: pointer; }
+.geographic-reference[open] summary { border-bottom: 1px solid var(--ink); color: var(--water); }
+.geographic-reference > a:first-of-type { display: block; background: var(--paper-bright); }
+.geographic-reference img { display: block; width: 100%; max-height: 720px; object-fit: contain; }
+.geographic-reference-source { display: inline-block; margin: .75rem 1rem 1rem; font: 400 .66rem/1.4 "IBM Plex Mono", monospace; text-underline-offset: .2rem; }
 .handbook-detail { padding: 2rem 0 0; border-top: 8px solid var(--water); }
 .handbook-detail h3 { margin: 0 0 1rem; font: 600 2.8rem/.95 "Barlow Condensed", sans-serif; text-transform: uppercase; }
 .handbook-detail-heading { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: baseline; justify-content: space-between; }
@@ -548,6 +560,8 @@ button, input { font: inherit; }
   .panel-toolbar { flex-wrap: wrap; }
   .station-sheet { padding: .75rem; overflow: hidden; }
   .diagram-note { display: none; }
+  .geographic-reference-grid { grid-template-columns: 1fr; }
+  .geographic-reference.primary-reference { grid-column: auto; }
   .station-sheet-heading { padding: .25rem 2.75rem .75rem .25rem; }
   .station-sheet-heading h4 { font-size: 2rem; }
   .terminal-network-panel { padding: .75rem; }

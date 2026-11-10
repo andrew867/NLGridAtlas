@@ -56,7 +56,8 @@
     {
       "id": "hydro-2013-oxen-pond",
       "local_path": "sources/oxenpond/2013-03-20AppOxenPond.PDF",
-      "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF"
+      "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF",
+      "notes": "Physical PDF page 15 contains Figure 1, a semi-geographic 230 kV and 66 kV power-system map for the St. John's region."
     },
     {
       "id": "hydro-2017-labrador-230kv",
@@ -100,7 +101,16 @@
       "source_url": "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF",
       "sha256": "f712a7a14a2834d7d9dedb32d4396104f80fc5f14062cd81a5be74efae208633",
       "physical_pages": 467,
-      "notes": "Contains the May 25, 2026 138 kV and 66 kV loop assessment. Transformer maximum ratings are on physical PDF pages 194 and 195."
+      "notes": "Contains the May 25, 2026 138 kV and 66 kV loop assessment. The study-area transmission map is on physical PDF page 183. Transformer maximum ratings are on physical PDF pages 188, 194, and 195."
+    },
+    {
+      "id": "np-2027-transformers",
+      "local_path": "sources/np-2027-capital/power-transformer-listing-physical-pages-545-551.pdf",
+      "source_url": "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf",
+      "sha256": "baa7329016744c8ef36b8dbda9831b345fc4245c777cbc64fd7b69a23a3cf9e8",
+      "physical_pages": 7,
+      "source_original_physical_pages": 607,
+      "notes": "Research excerpt of physical PDF pages 545 to 551. Table A-1 lists operating voltages, MVA ratings, 2026 forecast loads, and portable or spare compatibility for Newfoundland Power transformers."
     },
     {
       "id": "nlh-2011-western-avalon",

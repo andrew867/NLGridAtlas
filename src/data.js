@@ -25,7 +25,7 @@ export const sources = [
     organization: "NL Hydro",
     title: "Install Additional 230 kV Transformer Capacity, Oxen Pond Terminal Station",
     topics: ["Oxen Pond", "Hardwoods", "transformers", "load forecast"],
-    pages: "PDF pp. 15 to 17, 26 to 43",
+    pages: "PDF pp. 15 to 17, 26 to 43, 61",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF"
   },
@@ -125,9 +125,19 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "138 kV and 66 kV Loop Assessments, 2027 to 2036",
     topics: ["Western Avalon", "Holyrood", "transformer ratings", "contingencies"],
-    pages: "PDF pp. 188, 194 to 195",
+    pages: "PDF pp. 183, 188 to 195",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
+    id: "np-2027-transformers",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Power Transformer Listing",
+    topics: ["power transformers", "operating voltage", "MVA ratings", "2026 forecast", "portable compatibility"],
+    pages: "physical PDF pp. 545 to 551",
+    status: "verified",
+    url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
   },
   {
     id: "np-2021-burin-reactive",
@@ -461,9 +471,9 @@ export const components = {
     status: "verified",
     code: "OPD / TERMINAL STATION",
     title: "Oxen Pond Terminal Station",
-    summary: "The 2026 loop study models three 230/66 kV transformers: T1 and T3 at 250 MVA, and T2 at 125 MVA.",
-    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["Bus", "66 kV"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188")]
+    summary: "The 2026 loop study models three 230/66 kV transformers: T1 and T3 at 250 MVA, and T2 at 125 MVA. The 2013 one-line identifies capacitor banks C1 and C2.",
+    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["Bus", "66 kV"], ["C1", "25.2 MVAR"], ["C2", "26.4 MVAR"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 43")]
   },
   "opd-t1": {
     diagram: "opd",
@@ -492,14 +502,26 @@ export const components = {
     data: [["Voltage", "230/66 kV"], ["2026 model", "250 MVA"], ["2013 record", "75/100/125 MVA, in service 1977"]],
     sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 17")]
   },
+  "opd-c1": {
+    diagram: "opd", status: "verified", code: "OPD / C1", title: "Oxen Pond capacitor bank C1",
+    summary: "The 2013 existing-station one-line labels C1 at 25.2 MVAR.",
+    data: [["Bus", "66 kV B5"], ["Rating", "25.2 MVAR"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 43")]
+  },
+  "opd-c2": {
+    diagram: "opd", status: "verified", code: "OPD / C2", title: "Oxen Pond capacitor bank C2",
+    summary: "The 2013 existing-station one-line labels C2 at 26.4 MVAR.",
+    data: [["Bus", "66 kV B2"], ["Rating", "26.4 MVAR"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 43")]
+  },
   "hwd-summary": {
     diagram: "hwd",
     status: "verified",
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
-    summary: "The 2026 loop study models four 230/66 kV transformers: T1 and T4 at 125 MVA, and T2 and T3 at 66.6 MVA.",
-    data: [["T1", "125 MVA"], ["T2", "66.6 MVA"], ["T3", "66.6 MVA"], ["T4", "125 MVA"], ["Bus", "66 kV"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188")]
+    summary: "The 2026 loop study models four 230/66 kV transformers: T1 and T4 at 125 MVA, and T2 and T3 at 66.6 MVA. The 2013 alternative one-line shows 26.4 MVAR capacitor banks C1 and C2.",
+    data: [["T1", "125 MVA"], ["T2", "66.6 MVA"], ["T3", "66.6 MVA"], ["T4", "125 MVA"], ["Bus", "66 kV"], ["C1, C2", "26.4 MVAR each"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -524,6 +546,18 @@ export const components = {
     summary: "The 2026 loop study models T4 at 125 MVA. The 2013 filing records the 75/100/125 MVA unit as in service since 1992.",
     data: [["Voltage", "230/66 kV"], ["Rating", "75/100/125 MVA"], ["In service", "1992"]],
     sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15")]
+  },
+  "hwd-c1": {
+    diagram: "hwd", status: "verified", code: "HWD / C1", title: "Hardwoods capacitor bank C1",
+    summary: "The 2013 Alternative 4 one-line labels C1 at 26.4 MVAR.",
+    data: [["Bus", "66 kV B6"], ["Rating", "26.4 MVAR"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 61")]
+  },
+  "hwd-c2": {
+    diagram: "hwd", status: "verified", code: "HWD / C2", title: "Hardwoods capacitor bank C2",
+    summary: "The 2013 Alternative 4 one-line labels C2 at 26.4 MVAR.",
+    data: [["Bus", "66 kV B8"], ["Rating", "26.4 MVAR"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 61")]
   },
   "wav-summary": {
     diagram: "wav", status: "verified", code: "WAV / TERMINAL STATION", title: "Western Avalon Terminal Station",
@@ -619,15 +653,27 @@ export const components = {
   },
   "hwd-np-summary": {
     diagram: "hwd-np", status: "verified", code: "HWD / NEWFOUNDLAND POWER", title: "Hardwoods Substation",
-    summary: "A local 66/25 kV transformer supplies the 25 kV bus. The 2014 project replaced the 25 MVA unit with a 50 MVA unit and added HWD-09.",
-    data: [["Transformer", "66/25 kV, 50 MVA replacement"], ["Registered feeders", "HWD-01, 02, 03, 04, 06, 07, 08"], ["2014 addition", "HWD-09"]],
-    sources: [sourceRef("np-2014-capital", "physical PDF pp. 37, 42, 256 to 257, 348 and 351"), sourceRef("np-2006-handbook", "PDF p. 14")]
+    summary: "The 2027 register lists two 66/12.5 kV transformers and one 66/25 kV transformer. HWD-T3 is the 50 MVA unit installed through the 2014 load-growth project.",
+    data: [["HWD-T1", "66/12.5 kV, 20 MVA"], ["HWD-T2", "66/12.5 kV, 20 MVA"], ["HWD-T3", "66/25 kV, 50 MVA"], ["Registered feeders", "HWD-01, 02, 03, 04, 06, 07, 08"], ["2014 addition", "HWD-09"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 548"), sourceRef("np-2014-capital", "physical PDF pp. 37, 42, 256 to 257, 348 and 351"), sourceRef("np-2006-handbook", "PDF p. 14")]
   },
   "hwd-np-t1": {
-    diagram: "hwd-np", status: "verified", code: "HWD / LOCAL TRANSFORMER", title: "Hardwoods local transformer",
-    summary: "Newfoundland Power replaced the 25 MVA, 66/25 kV transformer with a 50 MVA unit.",
-    data: [["Voltage", "66/25 kV"], ["Previous rating", "25 MVA"], ["Replacement", "50 MVA"], ["2014 forecast", "27.5 MVA"]],
-    sources: [sourceRef("np-2014-capital", "physical PDF pp. 37, 42 and 256 to 257")]
+    diagram: "hwd-np", status: "verified", code: "HWD / T1", title: "Hardwoods transformer HWD-T1",
+    summary: "The 2027 transformer register lists HWD-T1 at 20 MVA with a 66/12.5 kV operating voltage.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "20 MVA"], ["2026 forecast", "16.62 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 548")]
+  },
+  "hwd-np-t2": {
+    diagram: "hwd-np", status: "verified", code: "HWD / T2", title: "Hardwoods transformer HWD-T2",
+    summary: "The 2027 transformer register lists HWD-T2 at 20 MVA with a 66/12.5 kV operating voltage.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "20 MVA"], ["2026 forecast", "16.52 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 548")]
+  },
+  "hwd-np-t3": {
+    diagram: "hwd-np", status: "verified", code: "HWD / T3", title: "Hardwoods transformer HWD-T3",
+    summary: "The 2027 transformer register lists HWD-T3 at 50 MVA. The 2014 project replaced a 25 MVA, 66/25 kV transformer with this 50 MVA unit.",
+    data: [["Operating voltage", "66/25 kV"], ["Rating", "50 MVA"], ["2026 forecast", "44.16 MVA"], ["Previous unit", "25 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 548"), sourceRef("np-2014-capital", "physical PDF pp. 37, 42 and 256 to 257")]
   },
   "hwd-np-hwd08": {
     diagram: "hwd-np", status: "verified", code: "HWD / HWD-08", title: "Hardwoods feeder HWD-08",
@@ -643,15 +689,15 @@ export const components = {
   },
   "oxp-np-summary": {
     diagram: "oxp-np", status: "verified", code: "OXP / NEWFOUNDLAND POWER", title: "Oxen Pond Substation",
-    summary: "The local substation connects to the 66 kV bus and supplies OXP-01. The cited feeder records do not give a transformer rating.",
-    data: [["Supply", "66 kV bus"], ["Feeder", "OXP-01"], ["Recorded interruption load", "9 MW"], ["Transformer rating", "Not stated in cited records"]],
-    sources: [sourceRef("np-2006-handbook", "PDF p. 14"), sourceRef("np-island-ca-020", "physical PDF pp. 14 and 115")]
+    summary: "OXP-T1 is a 13.33 MVA, 66/12.5 kV transformer supplying the OXP-01 distribution feeder.",
+    data: [["OXP-T1", "66/12.5 kV, 13.33 MVA"], ["2026 forecast", "9.87 MVA"], ["Feeder", "OXP-01"], ["Recorded interruption load", "9 MW"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("np-2006-handbook", "PDF p. 14"), sourceRef("np-island-ca-020", "physical PDF pp. 14 and 115")]
   },
   "oxp-np-transformer": {
-    diagram: "oxp-np", status: "verified", code: "OXP / LOCAL TRANSFORMER", title: "Oxen Pond local transformer",
-    summary: "The diagram shows the local transformation between the 66 kV bus and OXP-01. The cited register and feeder map do not state its nameplate rating.",
-    data: [["Primary", "66 kV bus"], ["Secondary", "OXP-01 feeder supply"], ["Rating", "Not stated in cited records"]],
-    sources: [sourceRef("np-2006-handbook", "PDF p. 14"), sourceRef("np-island-ca-020", "physical PDF p. 115")]
+    diagram: "oxp-np", status: "verified", code: "OXP / T1", title: "Oxen Pond transformer OXP-T1",
+    summary: "The 2027 transformer register lists OXP-T1 at 13.33 MVA with a 66/12.5 kV operating voltage.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "13.33 MVA"], ["2026 forecast", "9.87 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 549")]
   },
   "oxp-np-feeder": {
     diagram: "oxp-np", status: "verified", code: "OXP / OXP-01", title: "Oxen Pond feeder OXP-01",
@@ -661,39 +707,39 @@ export const components = {
   },
   "pul-np-summary": {
     diagram: "pul-np", status: "verified", code: "PUL / NEWFOUNDLAND POWER", title: "Pulpit Rock Substation",
-    summary: "Transmission line 59L supplies two 25 MVA transformers. The 12.5 kV bus supplies PUL-01 through PUL-05.",
-    data: [["Supply", "59L from Virginia Waters"], ["Transformers", "PUL-T1 and PUL-T2, 25 MVA each"], ["Distribution", "Five 12.5 kV feeders"], ["Built", "1974"]],
-    sources: [sourceRef("np-2025-capital", "PDF pp. 458 and 463"), sourceRef("np-2026-capital", "PDF p. 39")]
+    summary: "Transmission line 59L supplies two 25 MVA transformers and five 12.5 kV feeders. The 2027 transformer table lists 25.0 kV as the operating low voltage for both units.",
+    data: [["Supply", "59L from Virginia Waters"], ["Transformers", "PUL-T1 and PUL-T2, 25 MVA each"], ["Station filing", "Five 12.5 kV feeders"], ["2027 transformer table", "25.0 kV operating low voltage"], ["Built", "1974"]],
+    sources: [sourceRef("np-2025-capital", "PDF pp. 458 and 463"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
   },
   "pul-np-t1": {
     diagram: "pul-np", status: "verified", code: "PUL / T1", title: "Pulpit Rock transformer PUL-T1",
-    summary: "PUL-T1 is one of the station's two 25 MVA distribution transformers.",
-    data: [["Primary", "66 kV"], ["Secondary", "12.5 kV"], ["Rating", "25 MVA"], ["Recorded 2026 peak", "21.42 MVA"]],
-    sources: [sourceRef("np-2025-capital", "PDF p. 463"), sourceRef("np-2026-capital", "PDF p. 370")]
+    summary: "PUL-T1 is one of the station's two 25 MVA distribution transformers. The station filing describes 12.5 kV feeders, while the 2027 table lists a 25.0 kV operating low voltage.",
+    data: [["Primary", "66 kV"], ["2027 operating low voltage", "25.0 kV"], ["Rating", "25 MVA"], ["2026 forecast", "18.79 MVA"]],
+    sources: [sourceRef("np-2025-capital", "PDF p. 463"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
   },
   "pul-np-t2": {
     diagram: "pul-np", status: "verified", code: "PUL / T2", title: "Pulpit Rock transformer PUL-T2",
     summary: "The present asset entered service at Pulpit Rock in 2019 after the previous PUL-T2 failed. Newfoundland Power scheduled a replacement transformer to arrive in the third quarter of 2026.",
-    data: [["Asset", "200331, Ferranti Packard"], ["Manufactured", "1985"], ["Rating", "15/20/25 MVA"], ["Voltage", "66/12.5/25 kV"], ["Recorded 2026 peak", "21.94 MVA"], ["Replacement", "Scheduled delivery, Q3 2026"]],
-    sources: [sourceRef("np-2025-capital", "PDF pp. 463 to 470"), sourceRef("np-2026-capital", "PDF pp. 197 and 370")]
+    data: [["Asset", "200331, Ferranti Packard"], ["Manufactured", "1985"], ["Asset rating", "15/20/25 MVA"], ["Asset windings", "66/12.5/25 kV"], ["2027 table rating", "25 MVA"], ["2027 operating low voltage", "25.0 kV"], ["2026 forecast", "19.09 MVA"], ["Replacement", "Scheduled delivery, Q3 2026"]],
+    sources: [sourceRef("np-2025-capital", "PDF pp. 463 to 470"), sourceRef("np-2026-capital", "PDF p. 197"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
   },
   "mun-summary": {
     diagram: "mun", status: "verified", code: "MUN / SUBSTATION", title: "Memorial Substation",
     summary: "Circuits 12L and 14L supply two 66/12.5 kV transformers and Memorial-owned switchgear.",
-    data: [["T1", "11.125/14.83 MVA"], ["T2", "15/20 MVA"], ["Supply", "12L and 14L, 66 kV"], ["Secondary bus", "12.5 kV"]],
-    sources: [sourceRef("memorial-2023", "PDF pp. 14, 15, 25 and 29 to 33")]
+    data: [["MUN-T1", "14.96 MVA"], ["MUN-T2", "25 MVA"], ["Supply", "12L and 14L, 66 kV"], ["Secondary bus", "12.5 kV"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("memorial-2023", "PDF pp. 14, 15, 25 and 29 to 33")]
   },
   "mun-t1": {
     diagram: "mun", status: "verified", code: "MUN / T1", title: "Memorial transformer T1",
-    summary: "A Ferranti-Packard 66/12.5 kV transformer manufactured in 1966.",
-    data: [["Manufacturer", "Ferranti-Packard"], ["Manufactured", "1966"], ["Rating", "11.125/14.83 MVA"], ["Voltage", "66/12.5 kV"]],
-    sources: [sourceRef("memorial-2023", "PDF pp. 14, 15 and 25")]
+    summary: "The 2027 transformer register lists MUN-T1 at 14.96 MVA. The 2023 filing identifies the Ferranti-Packard unit manufactured in 1966.",
+    data: [["Manufacturer", "Ferranti-Packard"], ["Manufactured", "1966"], ["2023 asset rating", "11.125/14.83 MVA"], ["2027 listing", "14.96 MVA"], ["Operating voltage", "66/12.5 kV"], ["2026 forecast", "3.87 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("memorial-2023", "PDF pp. 14, 15 and 25")]
   },
   "mun-t2": {
     diagram: "mun", status: "verified", code: "MUN / T2", title: "Memorial transformer T2",
-    summary: "A 1976 Federal Pioneer transformer. Core deterioration led Newfoundland Power to recommend replacement in 2023.",
-    data: [["Manufacturer", "Federal Pioneer"], ["Manufactured", "1976"], ["Rating", "15/20 MVA"], ["Voltage", "66/12.5 kV"], ["Condition", "Core deterioration, replacement recommended"]],
-    sources: [sourceRef("memorial-2023", "PDF pp. 14, 15, 25 and 29 to 33")]
+    summary: "The 2027 transformer register lists MUN-T2 at 25 MVA. The 2023 filing documents the deteriorated 1976 Federal Pioneer unit and its replacement project.",
+    data: [["2027 listing", "25 MVA"], ["Operating voltage", "66/12.5 kV"], ["2026 forecast", "6.18 MVA"], ["Former unit", "Federal Pioneer, 1976, 15/20 MVA"], ["2023 project", "Replacement recommended"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("memorial-2023", "PDF pp. 14, 15, 25 and 29 to 33")]
   },
   "mun-bus": {
     diagram: "mun", status: "proposed", code: "MUN / 66 kV BUS", title: "Memorial station rebuild",
@@ -703,21 +749,21 @@ export const components = {
   },
   "lpd-summary": {
     diagram: "lpd", status: "verified", code: "LPD / SUBSTATION", title: "Long Pond Substation",
-    summary: "The 2019 station has one 25 MVA transformer. The 2023 project adds a second 25 MVA transformer for a 50 MVA station capacity.",
-    data: [["Existing", "LPD-T1, 25 MVA"], ["Project", "LPD-T2, 25 MVA"], ["2021 peak", "18 MVA"], ["2024 forecast", "43 MVA"]],
-    sources: [sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
+    summary: "The 2027 transformer register lists LPD-T1 and LPD-T2 at 25 MVA each. The second unit was proposed in the 2023 capacity project.",
+    data: [["LPD-T1", "66/12.5 kV, 25 MVA"], ["LPD-T2", "66/12.5 kV, 25 MVA"], ["2026 forecast", "20.00 MVA on each unit"], ["2021 station peak", "18 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF pp. 548 to 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
   },
   "lpd-t1": {
     diagram: "lpd", status: "verified", code: "LPD / T1", title: "Long Pond transformer T1",
-    summary: "The station entered service in 2019 with one 25 MVA transformer.",
-    data: [["Voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["Station built", "2019"], ["2021 peak", "18 MVA"]],
-    sources: [sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
+    summary: "The station entered service in 2019 with LPD-T1. The 2027 register lists the unit at 25 MVA.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["2026 forecast", "20.00 MVA"], ["Station built", "2019"], ["2021 station peak", "18 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 548"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
   },
   "lpd-t2": {
-    diagram: "lpd", status: "proposed", code: "LPD / T2", title: "Long Pond transformer T2",
-    summary: "The 2023 project adds a second 25 MVA transformer and extends both bus voltage levels.",
-    data: [["Voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["Project capacity", "50 MVA"], ["2024 forecast", "43 MVA"], ["New boiler load", "25 MW"]],
-    sources: [sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
+    diagram: "lpd", status: "verified", code: "LPD / T2", title: "Long Pond transformer T2",
+    summary: "LPD-T2 was proposed in the 2023 capacity project. The 2027 register lists it at 25 MVA with a 66/12.5 kV operating voltage.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["2026 forecast", "20.00 MVA"], ["Project station capacity", "50 MVA"], ["Project boiler load", "25 MW"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
   }
 };
 
@@ -731,16 +777,16 @@ export const stationProfiles = [
     mapNote: "HWD-08 is in the 2005 register. A matching sheet was not located in the 2014 map attachment.",
     eventLoads: [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]],
     engineeringRecord: {
-      date: "2014 LOAD-GROWTH WORK",
-      title: "25 kV capacity and HWD-09",
-      sourceId: "np-2014-capital",
-      pages: "physical PDF pp. 37, 42, 256 to 257, 348 and 351",
+      date: "2027 TRANSFORMER REGISTER",
+      title: "Hardwoods transformer bank",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
       facts: [
-        ["Transformer", "66/25 kV, 25 MVA replaced by 50 MVA"],
-        ["HWD transformer forecast", "27.5 MVA for 2014"],
+        ["HWD-T1", "66/12.5 kV, 20 MVA, 16.62 MVA 2026 forecast"],
+        ["HWD-T2", "66/12.5 kV, 20 MVA, 16.52 MVA 2026 forecast"],
+        ["HWD-T3", "66/25 kV, 50 MVA, 44.16 MVA 2026 forecast"],
         ["HWD-08", "477 ASC, 590 A planning rating, 595 A forecast per phase"],
         ["HWD-09", "new 25 kV feeder to Kenmount Road"],
-        ["HWD, CHA and KEN", "125.6 MVA aggregate forecast, 125 MVA aggregate capacity"],
         ["Load transfer", "approximately 9 MVA transferred onto HWD-08"]
       ]
     }
@@ -751,7 +797,18 @@ export const stationProfiles = [
     voltage: "66 kV",
     feederRegister: ["OXP-01"],
     mapPages: [["OXP-01", 115]],
-    eventLoads: [["OXP-01", "9 MW"]]
+    eventLoads: [["OXP-01", "9 MW"]],
+    engineeringRecord: {
+      date: "2027 TRANSFORMER REGISTER",
+      title: "OXP-T1",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["Operating voltage", "66/12.5 kV"],
+        ["Rating", "13.33 MVA"],
+        ["2026 forecast", "9.87 MVA"]
+      ]
+    }
   },
   {
     code: "KEN",
@@ -760,7 +817,17 @@ export const stationProfiles = [
     feederRegister: ["KEN-02", "KEN-03", "KEN-04"],
     mapPages: [["KEN-01", 101], ["KEN-02", 102], ["KEN-03", 103], ["KEN-04", 104]],
     mapNote: "KEN-01 is in the 2014 map attachment but not in the 2005 station register.",
-    eventLoads: [["KEN-01", "10.3 MW"], ["KEN-04", "13 MW"], ["KEN-02", "12 MW"]]
+    eventLoads: [["KEN-01", "10.3 MW"], ["KEN-04", "13 MW"], ["KEN-02", "12 MW"]],
+    engineeringRecord: {
+      date: "2027 TRANSFORMER REGISTER",
+      title: "Kenmount transformer bank",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["KEN-T1", "66/25 kV, 25 MVA, 20.04 MVA 2026 forecast"],
+        ["KEN-T2", "66/25 kV, 50 MVA, 41.93 MVA 2026 forecast"]
+      ]
+    }
   }
 ];
 
