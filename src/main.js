@@ -99,6 +99,8 @@ function renderStationProfile(code) {
     return `<li><strong>${escapeHtml(line.circuit)}</strong><span>${escapeHtml(destination)}${destinationCode ? ` / ${escapeHtml(destinationCode)}` : ""}</span></li>`;
   }).join("");
   const mapBase = sourceById.get("np-island-ca-020").url;
+  const record = profile.engineeringRecord;
+  const recordSource = record ? sourceById.get(record.sourceId) : null;
   document.querySelector("#station-profile").innerHTML = `
     <header class="profile-heading">
       <div><span>${escapeHtml(profile.code)} / STATION RECORD</span><h4>${escapeHtml(profile.name)}</h4></div>
@@ -123,7 +125,13 @@ function renderStationProfile(code) {
         <p>Recorded feeder load when interrupted, not a station peak.</p>
         <a class="evidence-link" href="${escapeHtml(mapBase)}#page=14" target="_blank" rel="noreferrer">CA-NP-020 / physical PDF p. 14</a>
       </section>
-    </div>`;
+    </div>
+    ${record ? `
+      <section class="profile-record">
+        <header><span>${escapeHtml(record.date)}</span><strong>${escapeHtml(record.title)}</strong></header>
+        <dl>${record.facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>
+        <a class="evidence-link" href="${escapeHtml(recordSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(recordSource.title)} / ${escapeHtml(record.pages)}</a>
+      </section>` : ""}`;
   document.querySelectorAll(".station-tab").forEach((button) => {
     const selected = button.dataset.stationProfile === code;
     button.classList.toggle("active", selected);

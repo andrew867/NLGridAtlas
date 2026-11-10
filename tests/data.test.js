@@ -5,6 +5,7 @@ import { components, sources, stationProfiles, timeline } from "../src/data.js";
 import { avalonNodePositions } from "../src/avalon-layout.js";
 
 const handbook = JSON.parse(await readFile(new URL("../research/derived/np-2006-handbook.json", import.meta.url), "utf8"));
+const todStudy = JSON.parse(await readFile(new URL("../research/derived/np-2018-tod-study.json", import.meta.url), "utf8"));
 
 const allowedStates = new Set(["verified", "reported", "proposed", "inferred", "unresolved"]);
 
@@ -74,17 +75,15 @@ test("Avalon schematic only uses handbook station codes and line endpoints", () 
   }
 });
 
-test("station additions preserve source limits", async () => {
+test("station additions preserve sourced details", async () => {
   const healthEvent = timeline.find((event) => event.sourceId === "np-2014-capital");
   assert.ok(healthEvent);
   assert.match(healthEvent.body, /Health Sciences Centre/);
-  assert.match(healthEvent.body, /does not name the cyclotron/);
   assert.equal(healthEvent.pages, "PDF p. 309");
 
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, />OXP-01</);
-  assert.match(html, /T3 entered service at Oxen Pond in 1968 and was relocated to Hardwoods in 1986/);
-  assert.match(html, /Unit in-service years were not located/);
+  assert.match(html, /T3 entered service at Oxen Pond in 1968 and moved to Hardwoods in 1986/);
   assert.match(html, /December 2012 electrical demolition drawing/);
   assert.match(html, /T2 \/ 115\/152\/190 MVA/);
   assert.match(html, /Z0 11\.75%/);
@@ -96,6 +95,28 @@ test("station additions preserve source limits", async () => {
   assert.match(html, /P25 system and Starlink with Cradlepoint routers/);
   assert.match(html, /5L \/ BCV/);
   assert.match(html, /66 kV[\s\S]*69 kV/);
+  assert.match(html, /238 hourly load series/);
+  assert.match(html, /4,175,472/);
+  assert.match(html, /Household records<\/dt><dd>236/);
+  assert.match(html, /Customers retained<\/dt><dd>209/);
+  assert.doesNotMatch(html, /Each technical statement includes its source page/);
+  assert.doesNotMatch(html, /does not assign voltage/);
+  assert.doesNotMatch(html, /this atlas preserves/i);
+});
+
+test("time-of-day study record retains the source discrepancy", () => {
+  const source = sources.find((item) => item.id === "np-2018-tod-study");
+  assert.ok(source);
+  assert.equal(source.year, 2018);
+  assert.match(source.pages, /PDF p\. 1/);
+  assert.equal(todStudy.hourly_data.recorder_series, 238);
+  assert.equal(todStudy.hourly_data.measurements_per_series, 731 * 24);
+  assert.equal(
+    todStudy.hourly_data.measurement_rows,
+    todStudy.hourly_data.recorder_series * todStudy.hourly_data.measurements_per_series
+  );
+  assert.equal(todStudy.attachment_b.household_records, 236);
+  assert.equal(todStudy.attachment_b.customers_retained, 209);
 });
 
 test("station profiles separate registers, maps, and recorded event loads", () => {
@@ -103,6 +124,14 @@ test("station profiles separate registers, maps, and recorded event loads", () =
   assert.deepEqual(hardwoods.feederRegister, ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07", "HWD-08"]);
   assert.deepEqual(hardwoods.mapPages.map(([feeder]) => feeder), ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07"]);
   assert.deepEqual(hardwoods.eventLoads, [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]]);
+  assert.deepEqual(hardwoods.engineeringRecord.facts, [
+    ["Transformer", "66/25 kV, 25 MVA replaced by 50 MVA"],
+    ["HWD transformer forecast", "27.5 MVA for 2014"],
+    ["HWD-08", "477 ASC, 590 A planning rating, 595 A forecast per phase"],
+    ["HWD-09", "new 25 kV feeder to Kenmount Road"],
+    ["HWD, CHA and KEN", "125.6 MVA aggregate forecast, 125 MVA aggregate capacity"],
+    ["Load transfer", "approximately 9 MVA transferred onto HWD-08"]
+  ]);
 
   const oxenPond = stationProfiles.find((station) => station.code === "OXP");
   assert.deepEqual(oxenPond.eventLoads, [["OXP-01", "9 MW"]]);

@@ -1,8 +1,6 @@
 # Archived source documents
 
-This directory contains unmodified copies of public regulatory filings used by NL Grid Atlas.
-
-The copies reduce dependence on unstable source URLs. They do not replace citations to the original publisher. Source PDFs retain the rights and terms of their publishers and authors.
+This directory contains unmodified copies of public regulatory filings used by NL Grid Atlas. The copies preserve filings when source URLs fail.
 
 Run `npm run verify:sources` to calculate SHA-256 digests and file sizes.
 

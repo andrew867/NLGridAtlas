@@ -1,0 +1,31 @@
+{
+  "source": {
+    "response_url": "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078.PDF",
+    "attachment_a_url": "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078%20-%20Attachment%20A,%20TOD%20Rate%20Study%20Load%20Data.ACCDB",
+    "attachment_b_url": "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078,%20Attachment%20B.XLSX",
+    "csv_export_sha256": "4f1e865baa2259d74dffccebc3ede06605584569478b6faf378c2b99ecc8ba10",
+    "csv_export_bytes": 149372151,
+    "attachment_b_sha256": "b2ae69a0138dd8519e68905530712334265867f2d0dd0437ed72d56cf1e8bde1",
+    "response_sha256": "23263ae4277838b1e274fc7c02d95e65dd6c792b4a8e80cc6f5b4bbea6811ae3"
+  },
+  "hourly_data": {
+    "recorder_series": 238,
+    "days_per_series": 731,
+    "hours_per_day": 24,
+    "measurements_per_series": 17544,
+    "measurement_rows": 4175472,
+    "separator_rows": 237,
+    "first_date": "2011-12-01",
+    "last_date": "2013-11-30",
+    "minimum_watts": 0.0,
+    "maximum_watts": 30966.6,
+    "zero_watt_rows": 304371
+  },
+  "attachment_b": {
+    "household_records": 236,
+    "customers_retained": 209,
+    "compiled_daily_rows": 152779,
+    "daily_rows_per_retained_customer": 731
+  },
+  "record_count_difference": "PUB-NP-078 states that load and demographic data were available for 236 installed load recorders. Attachment A contains 238 recorder IDs. Attachment B contains 236 household records and 209 retained-customer records."
+}

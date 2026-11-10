@@ -40,7 +40,7 @@
             <h1 id="cover-title">The Island power system</h1>
             <p class="lede">
               This atlas uses public filings to document the system's equipment, loads, capital
-              work, and communications infrastructure. Each technical statement includes its source page.
+              work, and communications infrastructure.
             </p>
           </div>
           <div class="cover-datum" aria-label="2023 Hydro transmission inventory">
@@ -78,7 +78,7 @@
           <p>
             The June 2005 handbook lists Newfoundland Power generation plants, transmission
             circuits, substations, and distribution feeders. The diagram below uses the listed
-            circuit endpoints. It does not assign voltage where the circuit register does not state it.
+            circuit endpoints.
           </p>
         </header>
 
@@ -101,7 +101,7 @@
               <title id="avalon-title">Avalon network schematic from the 2005 Newfoundland Power circuit register</title>
               <desc id="avalon-desc">A selectable schematic of handbook circuits whose listed endpoints are in the Avalon region.</desc>
             </svg>
-            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / JUNE 2005 REGISTER / VOLTAGE NOT ASSIGNED</p>
+            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / JUNE 2005 REGISTER</p>
           </div>
 
           <aside class="handbook-detail" aria-live="polite">
@@ -143,7 +143,6 @@
           </div>
           <p>
             A simplified 2013 arrangement. Select a component to read its rating and evidence.
-            Protection, disconnect, grounding, and distribution detail are omitted.
           </p>
         </header>
 
@@ -156,7 +155,7 @@
             </div>
             <svg class="one-line" viewBox="0 0 960 590" role="img" aria-labelledby="one-line-title one-line-desc">
               <title id="one-line-title">Simplified Oxen Pond one-line diagram</title>
-              <desc id="one-line-desc">Two 230 kilovolt transmission lines connect to a 230 kilovolt bus and three Hydro transformers feeding a Newfoundland Power 66 kilovolt bus. The OXP-01 feeder is shown without an unverified secondary voltage or transformer rating.</desc>
+              <desc id="one-line-desc">Two 230 kilovolt transmission lines connect to a 230 kilovolt bus and three Hydro transformers feeding a Newfoundland Power 66 kilovolt bus and the OXP-01 feeder.</desc>
               <g class="layer v230">
                 <path class="line v230-line" d="M150 74 V188 H810 V74" />
                 <text x="110" y="52">TL236</text>
@@ -217,7 +216,7 @@
               <div><dt>Context</dt><dd>2013 filing</dd></div>
             </dl>
             <a id="component-source" class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF" target="_blank" rel="noreferrer">Oxen Pond application / PDF pp. 15 to 17</a>
-            <p class="source-note">OXP-01 is the one feeder listed for OXP in the Newfoundland Power handbook, PDF p. 14. Its transformer rating and secondary voltage are not stated there.</p>
+            <p class="source-note">OXP-01 is the feeder listed for OXP in the Newfoundland Power handbook, PDF p. 14.</p>
           </aside>
         </div>
 
@@ -225,11 +224,13 @@
           <header class="subsection-heading">
             <span>TRANSFORMER REGISTER SHEETS</span>
             <h3 id="station-sheets-title">Hardwoods, Western Avalon, and Holyrood</h3>
-            <p>These sheets show documented transformer groups. Bus sections, breakers, protection, and station-service connections are omitted unless the cited filing establishes them.</p>
           </header>
 
+          <div class="station-layout">
           <article class="phase-frame station-sheet">
-            <div class="station-sheet-heading"><div><span>HWD / 2013 RECORD</span><h4>Hardwoods</h4></div><strong>230/66 kV</strong></div>
+            <div class="panel-toolbar station-toolbar" aria-label="Hardwoods voltage levels">
+              <span class="voltage-tag">230 kV</span><span class="voltage-tag">Transformation</span><span class="voltage-tag">66/69 kV</span>
+            </div>
             <svg class="station-line hwd-line" viewBox="0 0 1000 520" role="img" aria-labelledby="hwd-title hwd-desc">
               <title id="hwd-title">Hardwoods transformer register diagram</title>
               <desc id="hwd-desc">Four 230 over 66 kilovolt transformers, T1 through T4, with their ratings and in-service years. Seven circuits in the 2005 register connect Hardwoods to Broad Cove, Molloy's Lane, Chamberlains, Kenmount, Goulds, and Glendale.</desc>
@@ -265,13 +266,28 @@
                 <text class="register-caption" x="500" y="485">2005 CIRCUIT REGISTER / 2026 STUDY CALLS THE INTERCONNECTED SYSTEM THE 66 kV LOOP</text>
               </g>
             </svg>
-            <p class="station-footnote">* T3 entered service at Oxen Pond in 1968 and was relocated to Hardwoods in 1986.</p>
-            <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF" target="_blank" rel="noreferrer">Oxen Pond application / PDF pp. 15 and 17</a>
+            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2013 TRANSFORMER RECORD / 2005 CIRCUIT REGISTER</p>
           </article>
+          <aside class="component-evidence station-evidence">
+            <span class="evidence-state verified">VERIFIED</span>
+            <p class="component-code">HWD / SYSTEM</p>
+            <h3>Hardwoods transformation</h3>
+            <dl class="component-data">
+              <div><dt>T1, T2</dt><dd>40/53.3/66.6 MVA</dd></div>
+              <div><dt>T3</dt><dd>40/53.3/66.6 MVA</dd></div>
+              <div><dt>T4</dt><dd>75/100/125 MVA</dd></div>
+              <div><dt>Voltage</dt><dd>230/66 kV in the 2013 filing</dd></div>
+            </dl>
+            <p class="station-footnote">T3 entered service at Oxen Pond in 1968 and moved to Hardwoods in 1986.</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF" target="_blank" rel="noreferrer">Oxen Pond application / PDF pp. 15 and 17</a>
+          </aside>
+          </div>
 
-          <div class="station-sheet-pair">
+          <div class="station-layout">
             <article class="phase-frame station-sheet compact-sheet">
-              <div class="station-sheet-heading"><div><span>WAV / 2011 AND 2026 RECORDS</span><h4>Western Avalon</h4></div><strong>230/138/66 kV</strong></div>
+              <div class="panel-toolbar station-toolbar" aria-label="Western Avalon voltage levels">
+                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66/69 kV</span>
+              </div>
               <svg class="station-line western-line" viewBox="0 0 1000 430" role="img" aria-labelledby="wav-title wav-desc">
                 <title id="wav-title">Western Avalon simplified single-line</title>
                 <desc id="wav-desc">A simplified version of Hydro's 2011 Figure 3 showing 230 kilovolt buses B1 and B3, 138 kilovolt bus B4, 66 kilovolt bus B2, transformers T1 through T5, existing line terminals, and the proposed GIS ring.</desc>
@@ -301,18 +317,28 @@
                 <text class="small-label" x="685" y="28">TL201 / HARDWOODS</text><text class="small-label" x="775" y="55">TL203</text>
                 <text class="small-label" x="810" y="405">TL217 / HOLYROOD</text>
               </svg>
-              <dl class="transformer-register">
+              <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2011 FIGURE 3 / PROPOSED EQUIPMENT DASHED</p>
+            </article>
+            <aside class="component-evidence station-evidence">
+              <span class="evidence-state verified">VERIFIED</span>
+              <p class="component-code">WAV / SYSTEM</p>
+              <h3>Western Avalon transformation</h3>
+              <dl class="component-data transformer-register">
                 <div><dt>T1, T2</dt><dd>15/20/25 MVA, 230/66 kV</dd></div>
                 <div><dt>T3, T4</dt><dd>25/33.3/41.7 MVA, 230/138 kV</dd></div>
                 <div><dt>T5</dt><dd>75/100/125 MVA, 230/138 kV</dd></div>
               </dl>
-              <p class="station-footnote">Simplified from Hydro's 2011 Figure 3. The dashed ring and Bay d'Espoir line were proposed in that filing; this sheet does not assert their present status. The 2026 loop study retains the same maximum transformer ratings. Unit in-service years were not located.</p>
+              <p class="station-footnote">Hydro's 2011 Figure 3 marks the dashed ring and Bay d'Espoir line as proposed. The 2026 loop study retains the same maximum transformer ratings.</p>
               <a class="evidence-link stacked-link" href="https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf" target="_blank" rel="noreferrer">Western Avalon single-line / PDF p. 7</a>
               <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF" target="_blank" rel="noreferrer">138 kV and 66 kV Loop Assessments / PDF pp. 194 to 195</a>
-            </article>
+            </aside>
+          </div>
 
+          <div class="station-layout holyrood-layout">
             <article class="phase-frame station-sheet compact-sheet">
-              <div class="station-sheet-heading"><div><span>HRD / 2012 DRAWING IN 2013 GRA</span><h4>Holyrood internal system</h4></div><strong>230/138/69/16/13.8 kV</strong></div>
+              <div class="panel-toolbar station-toolbar" aria-label="Holyrood voltage levels">
+                <span class="voltage-tag">230 kV</span><span class="voltage-tag">138/69 kV</span><span class="voltage-tag">Generation</span>
+              </div>
               <svg class="station-line holyrood-line" viewBox="0 0 1100 690" role="img" aria-labelledby="hrd-title hrd-desc">
                 <title id="hrd-title">Holyrood internal transformer and bus arrangement</title>
                 <desc id="hrd-desc">A simplified historical arrangement from physical PDF page 663. T6, T7, and T8 connect the 138 and 230 kilovolt buses. Their three ratings are identified as ONAN, ONAF, and ONAF cooling stages. Generator transformers T1, T2, and T3 feed the 230 kilovolt system. T5 and T10 connect the 230 and 69 kilovolt buses. The 15 megawatt gas turbine is shown separately on the 13.8 kilovolt station-service branch through T9.</desc>
@@ -352,21 +378,27 @@
                   <path class="station-bus" d="M-75 655 H75"/><text class="small-label" x="-65" y="680">T9 / 10.5/14 MVA / STATION SERVICE</text>
                 </g>
               </svg>
-              <dl class="transformer-register">
+              <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / DECEMBER 2012 DEMOLITION DRAWING</p>
+            </article>
+            <aside class="component-evidence station-evidence holyrood-evidence">
+              <span class="evidence-state verified">VERIFIED</span>
+              <p class="component-code">HRD / INTERNAL SYSTEM</p>
+              <h3>Holyrood transformation</h3>
+              <dl class="component-data transformer-register">
                 <div><dt>T1</dt><dd>105/140/180 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.6%; Z0 11.7%</dd></div>
                 <div><dt>T2</dt><dd>115/152/190 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.7%; Z0 11.75%</dd></div>
                 <div><dt>T3</dt><dd>170 MVA, OFAF; 230,000/16,000 V; Yd1; Z1 13.5%</dd></div>
-                <div><dt>GSU HV tap text</dt><dd>230,000 ±2 @ 4.35%, reproduced as printed without further interpretation</dd></div>
+                <div><dt>GSU HV tap text</dt><dd>230,000 ±2 @ 4.35%</dd></div>
                 <div><dt>T6, T7</dt><dd>25/33.3/41.7 MVA, ONAN/ONAF/ONAF; 230/138/6.9 kV; Z1 5.5%</dd></div>
-                <div><dt>T6, T7 tap text</dt><dd>230 kV +4/-12 @ 1.25%, reproduced as printed without further interpretation</dd></div>
+                <div><dt>T6, T7 tap text</dt><dd>230 kV +4/-12 @ 1.25%</dd></div>
                 <div><dt>T8</dt><dd>75/100/125 MVA, ONAN/ONAF/ONAF</dd></div>
                 <div><dt>2026 study</dt><dd>T6: 41.7 MVA max; T7 and T8: 125 MVA max</dd></div>
                 <div><dt>230/69 kV</dt><dd>T5 and T10: 15/20/25 MVA each</dd></div>
               </dl>
-              <p class="station-footnote">The source is a December 2012 electrical demolition drawing reproduced in the 2013 GRA. Red and black in the original distinguish demolition and retained work. This atlas redraws the high-voltage relationships, generator step-up transformers, and gas-turbine station-service branch. The change in T7 maximum rating between the two records is retained; its replacement date is not assigned here.</p>
+              <p class="station-footnote">The source is a December 2012 electrical demolition drawing reproduced in the 2013 GRA. Red and black distinguish demolition and retained work. The 2012 drawing and 2026 study give different maximum ratings for T7.</p>
               <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf" target="_blank" rel="noreferrer">2013 GRA Volume II / physical PDF p. 663</a>
               <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF" target="_blank" rel="noreferrer">138 kV and 66 kV Loop Assessments / PDF pp. 194 to 195</a>
-            </article>
+            </aside>
           </div>
 
           <section class="station-browser" aria-labelledby="station-browser-title">
@@ -409,9 +441,8 @@
         <header class="section-heading">
           <div>
             <span class="section-number">04 / ACTUAL AGAINST FORECAST</span>
-            <h2 id="loads-title">Actual load and forecast load</h2>
+            <h2 id="loads-title">Measured load and forecast load</h2>
           </div>
-          <p>Forecasts are not measurements. These comparisons retain the category stated in the filing.</p>
         </header>
         <div class="load-grid">
           <article class="phase-frame load-case">
@@ -429,7 +460,7 @@
             <h3>Forecast was 7 MW low</h3>
             <div class="paired-number"><strong>902</strong><span>MW actual</span></div>
             <div class="paired-number forecast"><strong>895</strong><span>MW forecast</span></div>
-            <p>The report's total-average row gives an average absolute error of 20 MW. This is not an annual peak comparison.</p>
+            <p>The report's total-average row gives a 20 MW average absolute error for monthly utility peak averages.</p>
             <a class="evidence-link" href="http://www.pub.nf.ca/indexreports/nostradamus/From%20NLH%20-%20Short-Term%20Load%20Forecasting%20Accuracy%20-%202024%20Annual%20Report%20-%202025-01-31.PDF" target="_blank" rel="noreferrer">2024 accuracy report / PDF p. 119</a>
           </article>
           <article class="load-case discrepancy-case">
@@ -439,8 +470,19 @@
               <div><dt>Table total</dt><dd>10,919.87 MW-min</dd></div>
               <div><dt>Narrative total</dt><dd>10,541 MW-min</dd></div>
             </dl>
-            <p>The filing does not reconcile the difference. The atlas preserves both values.</p>
             <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf" target="_blank" rel="noreferrer">2013 GRA Volume II / PDF p. 68</a>
+          </article>
+          <article class="load-case discrepancy-case tod-case">
+            <span class="case-date">2011-12-01 TO 2013-11-30 / TOD RATE STUDY</span>
+            <h3>238 hourly load series</h3>
+            <dl>
+              <div><dt>Hourly measurements</dt><dd>4,175,472</dd></div>
+              <div><dt>Household records</dt><dd>236</dd></div>
+              <div><dt>Customers retained</dt><dd>209</dd></div>
+            </dl>
+            <p>Each recorder series contains 17,544 hourly values. The response states that data were available for 236 installed recorders; Attachment A contains 238 recorder IDs.</p>
+            <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078.PDF" target="_blank" rel="noreferrer">PUB-NP-078 / response p. 1 and Attachment C</a>
+            <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078,%20Attachment%20B.XLSX" target="_blank" rel="noreferrer">PUB-NP-078 / Attachment B</a>
           </article>
         </div>
       </section>
@@ -550,7 +592,7 @@
         <article class="repeater-register">
           <header>
             <div><span class="case-date">EXISTING REPEATER REGISTER / 2001 STUDY</span><h3>Rows marked as Hydro-owned</h3></div>
-            <p>The source lists 29 existing sites. Four rows identify NLH as owner. This table does not assert present ownership or operating status.</p>
+            <p>The source lists 29 existing sites. Four rows identify NLH as owner.</p>
           </header>
           <div class="repeater-table-wrap">
             <table>

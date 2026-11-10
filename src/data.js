@@ -94,8 +94,8 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "2014 Capital Budget Application",
-    topics: ["12L", "Memorial", "Health Sciences Centre", "conductor"],
-    pages: "PDF p. 309",
+    topics: ["Hardwoods", "HWD-08", "HWD-09", "12L", "Memorial", "Health Sciences Centre", "conductor"],
+    pages: "PDF pp. 37, 42, 256 to 257, 309, 348, 351",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
   },
@@ -158,6 +158,16 @@ export const sources = [
     pages: "PDF pp. 119 to 121",
     status: "verified",
     url: "http://www.pub.nf.ca/indexreports/nostradamus/From%20NLH%20-%20Short-Term%20Load%20Forecasting%20Accuracy%20-%202024%20Annual%20Report%20-%202025-01-31.PDF"
+  },
+  {
+    id: "np-2018-tod-study",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-078, Time-of-Day Rate Study Load Data",
+    topics: ["hourly load", "time-of-day rates", "load research", "customer demand"],
+    pages: "PDF p. 1 and Attachment C pp. 1 to 4",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078.PDF"
   }
 ];
 
@@ -238,7 +248,7 @@ export const timeline = [
     date: "2013 to 2014",
     category: "station",
     title: "12L rebuilt between Memorial and King's Bridge",
-    body: "The project rebuilt the remaining aerial section of 12L, one of two circuits serving Memorial University, Health Sciences Centre, and Janeway. The filing cites load growth and recent infrastructure additions; it does not name the cyclotron.",
+    body: "The project rebuilt the remaining aerial section of 12L, one of two circuits serving Memorial University, Health Sciences Centre, and Janeway. The filing cites load growth and recent infrastructure additions.",
     sourceId: "np-2014-capital",
     pages: "PDF p. 309",
     status: "verified"
@@ -304,7 +314,21 @@ export const stationProfiles = [
     feederRegister: ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07", "HWD-08"],
     mapPages: [["HWD-01", 80], ["HWD-02", 81], ["HWD-03", 82], ["HWD-04", 83], ["HWD-06", 84], ["HWD-07", 85]],
     mapNote: "HWD-08 is in the 2005 register. A matching sheet was not located in the 2014 map attachment.",
-    eventLoads: [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]]
+    eventLoads: [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]],
+    engineeringRecord: {
+      date: "2014 LOAD-GROWTH WORK",
+      title: "25 kV capacity and HWD-09",
+      sourceId: "np-2014-capital",
+      pages: "physical PDF pp. 37, 42, 256 to 257, 348 and 351",
+      facts: [
+        ["Transformer", "66/25 kV, 25 MVA replaced by 50 MVA"],
+        ["HWD transformer forecast", "27.5 MVA for 2014"],
+        ["HWD-08", "477 ASC, 590 A planning rating, 595 A forecast per phase"],
+        ["HWD-09", "new 25 kV feeder to Kenmount Road"],
+        ["HWD, CHA and KEN", "125.6 MVA aggregate forecast, 125 MVA aggregate capacity"],
+        ["Load transfer", "approximately 9 MVA transferred onto HWD-08"]
+      ]
+    }
   },
   {
     code: "OXP",
