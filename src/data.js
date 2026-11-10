@@ -150,6 +150,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2023/NP2023Capital_SUPP_MemorialStation/app/From%20NP%20-%20Approval%20for%20the%20Purchase%20and%20Installation%20of%20a%20Replacement%20Power%20Transformer%20for%20Memorial%20Substation%20-%202023-03-03.PDF"
   },
   {
+    id: "np-2024-capital",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application",
+    topics: ["Memorial", "station rebuild", "66 kV bus", "protection", "control building"],
+    pages: "PDF pp. 378 to 389",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-2023-long-pond",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Long Pond Substation Capacity Expansion",
+    topics: ["Long Pond", "Memorial University", "electric boilers", "25 MVA transformer", "load forecast"],
+    pages: "PDF pp. 109 to 111",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "nlh-2014-wav-t5",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "Western Avalon Terminal Station T5 Tap Changer Replacement",
+    topics: ["Western Avalon", "T5", "on-load tap changer", "230/138 kV", "contingency"],
+    pages: "PDF pp. 12, 17, 19 to 20",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/ARCHIVE/NLH2014Capital/NLHCBSUPP2014/T5TapChangeReplacement/Application/Application-T5TapChangerReplacement-2014-06-19.pdf"
+  },
+  {
+    id: "nlh-2026-wav-sop",
+    year: 2026,
+    organization: "NL Hydro / Hatch",
+    title: "Western Avalon to Soldiers Pond Transmission Feasibility Study",
+    topics: ["Western Avalon", "Soldiers Pond", "230 kV", "Grackle ACSR", "ampacity", "OPGW"],
+    pages: "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Transmission%20Feasibility%20Study%20-%202026-04-17.PDF"
+  },
+  {
     id: "forecast-2024",
     year: 2024,
     organization: "NL Hydro",
@@ -236,6 +276,15 @@ export const timeline = [
     status: "unresolved"
   },
   {
+    date: "2013 to 2014",
+    category: "station",
+    title: "12L rebuilt between Memorial and King's Bridge",
+    body: "The project rebuilt the remaining aerial section of 12L, one of two circuits serving Memorial University, Health Sciences Centre, and Janeway. The filing cites load growth and recent infrastructure additions.",
+    sourceId: "np-2014-capital",
+    pages: "PDF p. 309",
+    status: "verified"
+  },
+  {
     date: "2014-01-02",
     category: "load",
     title: "Broad Cove T1 exceeded nameplate",
@@ -245,12 +294,39 @@ export const timeline = [
     status: "verified"
   },
   {
-    date: "2013 to 2014",
+    date: "2014-01",
     category: "station",
-    title: "12L rebuilt between Memorial and King's Bridge",
-    body: "The project rebuilt the remaining aerial section of 12L, one of two circuits serving Memorial University, Health Sciences Centre, and Janeway. The filing cites load growth and recent infrastructure additions.",
-    sourceId: "np-2014-capital",
-    pages: "PDF p. 309",
+    title: "Western Avalon T5 tap changer failed",
+    body: "A phase-to-phase fault damaged the T5 on-load tap changer; the replacement project changed the obsolete Type H mechanism to Type VV.",
+    sourceId: "nlh-2014-wav-t5",
+    pages: "PDF pp. 12, 17, 19 to 20",
+    status: "verified"
+  },
+  {
+    date: "2019",
+    category: "station",
+    title: "Long Pond Substation was built",
+    body: "The station entered service with one 25 MVA, 66/12.5 kV transformer supplying Memorial University's St. John's campus.",
+    sourceId: "np-2023-long-pond",
+    pages: "PDF p. 110",
+    status: "verified"
+  },
+  {
+    date: "2023",
+    category: "station",
+    title: "Long Pond capacity expansion was filed",
+    body: "The project scope added a second 25 MVA transformer for a 50 MVA station capacity; the 2024 peak forecast was 43 MVA.",
+    sourceId: "np-2023-long-pond",
+    pages: "PDF pp. 109 to 111",
+    status: "proposed"
+  },
+  {
+    date: "2023",
+    category: "station",
+    title: "Memorial T2 replacement was recommended",
+    body: "Testing found core deterioration in the 1976 transformer; the engineering assessment recommended replacement rather than rewinding.",
+    sourceId: "memorial-2023",
+    pages: "PDF pp. 29 to 33",
     status: "verified"
   },
   {
@@ -279,6 +355,15 @@ export const timeline = [
     sourceId: "vhf-2027-status",
     pages: "PDF p. 248",
     status: "reported"
+  },
+  {
+    date: "2026",
+    category: "station",
+    title: "Western Avalon to Soldiers Pond line was studied",
+    body: "The preliminary design selected 1192.5 kcmil Grackle ACSR for a new 230 kV connection between the two terminal stations.",
+    sourceId: "nlh-2026-wav-sop",
+    pages: "PDF pp. 9, 30 to 33, 41 and 60",
+    status: "proposed"
   }
 ];
 

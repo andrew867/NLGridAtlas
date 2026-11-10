@@ -95,6 +95,21 @@ test("station additions preserve sourced details", async () => {
   assert.match(html, /P25 system and Starlink with Cradlepoint routers/);
   assert.match(html, /5L \/ BCV/);
   assert.match(html, /66 kV[\s\S]*69 kV/);
+  assert.match(html, /Hardwoods Terminal Station/);
+  assert.match(html, /Western Avalon Terminal Station/);
+  assert.match(html, /Holyrood Generating Station/);
+  assert.match(html, /Memorial Substation/);
+  assert.match(html, /Long Pond Substation/);
+  assert.match(html, /12L \/ KING'S BRIDGE/);
+  assert.match(html, /14L \/ STAMPS LANE/);
+  assert.match(html, /Ferranti-Packard, 1966, 11\.125\/14\.83 MVA/);
+  assert.match(html, /Federal Pioneer, 1976, 15\/20 MVA/);
+  assert.match(html, /2021 peak<\/dt><dd>18 MVA/);
+  assert.match(html, /2024 forecast<\/dt><dd>43 MVA/);
+  assert.match(html, /Type H mechanism was replaced with a Type VV mechanism/);
+  assert.match(html, /1192\.5 kcmil 54\/19 Grackle/);
+  assert.match(html, /969 A \/ 386 MVA/);
+  assert.match(html, /1610 A \/ 641 MVA/);
   assert.match(html, /238 hourly load series/);
   assert.match(html, /4,175,472/);
   assert.match(html, /Household records<\/dt><dd>236/);
@@ -102,6 +117,27 @@ test("station additions preserve sourced details", async () => {
   assert.doesNotMatch(html, /Each technical statement includes its source page/);
   assert.doesNotMatch(html, /does not assign voltage/);
   assert.doesNotMatch(html, /this atlas preserves/i);
+  assert.doesNotMatch(html, /TRANSFORMER REGISTER SHEETS/);
+  assert.doesNotMatch(html, /cyclotron/i);
+});
+
+test("new station and corridor records retain primary source locators", () => {
+  const expected = new Map([
+    ["np-2024-capital", "PDF pp. 378 to 389"],
+    ["np-2023-long-pond", "PDF pp. 109 to 111"],
+    ["nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20"],
+    ["nlh-2026-wav-sop", "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146"]
+  ]);
+  for (const [id, pages] of expected) {
+    const source = sources.find((item) => item.id === id);
+    assert.ok(source, `missing source: ${id}`);
+    assert.equal(source.pages, pages);
+  }
+
+  const t5Event = timeline.find((event) => event.sourceId === "nlh-2014-wav-t5");
+  assert.match(t5Event.body, /Type VV/);
+  const corridorEvent = timeline.find((event) => event.sourceId === "nlh-2026-wav-sop");
+  assert.equal(corridorEvent.status, "proposed");
 });
 
 test("time-of-day study record retains the source discrepancy", () => {
