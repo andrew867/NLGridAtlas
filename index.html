@@ -260,12 +260,41 @@
           <div class="station-sheet-pair">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="station-sheet-heading"><div><span>WAV / 2011 AND 2026 RECORDS</span><h4>Western Avalon</h4></div><strong>230/138/66 kV</strong></div>
+              <svg class="station-line western-line" viewBox="0 0 1000 430" role="img" aria-labelledby="wav-title wav-desc">
+                <title id="wav-title">Western Avalon simplified single-line</title>
+                <desc id="wav-desc">A simplified version of Hydro's 2011 Figure 3 showing 230 kilovolt buses B1 and B3, 138 kilovolt bus B4, 66 kilovolt bus B2, transformers T1 through T5, existing line terminals, and the proposed GIS ring.</desc>
+                <path class="line v230-line" d="M500 120 H860" /><text class="bus-label" x="675" y="100">B1 / 230 kV</text>
+                <path class="line v230-line" d="M120 120 H460" /><text class="bus-label" x="280" y="100">B3 / 230 kV</text>
+                <path class="line v138-line" d="M120 330 H460" /><text class="bus-label" x="280" y="365">B4 / 138 kV</text>
+                <path class="line v66-line" d="M540 330 H780" /><text class="bus-label" x="630" y="365">B2 / 66 kV</text>
+                <path class="line proposed-line" d="M65 80 H120 V160 H65 V80 M65 120 H25" />
+                <text class="small-label" x="20" y="190">PROPOSED GIS RING</text><text class="small-label" x="5" y="215">NEW BAY D'ESPOIR LINE</text>
+                <g class="register-transformer" transform="translate(205)">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T3</text>
+                </g>
+                <g class="register-transformer" transform="translate(315)">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T4</text>
+                </g>
+                <g class="register-transformer" transform="translate(425)">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v138-winding" cy="252" r="20"/><text x="-13" y="292">T5</text>
+                </g>
+                <g class="register-transformer" transform="translate(610)">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v66-winding" cy="252" r="20"/><text x="-13" y="292">T1</text>
+                </g>
+                <g class="register-transformer" transform="translate(715)">
+                  <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v66-winding" cy="252" r="20"/><text x="-13" y="292">T2</text>
+                </g>
+                <path class="outgoing" d="M535 120 V45 M620 120 V45 M710 120 V45 M800 120 V45 M860 120 V380"/>
+                <text class="small-label" x="500" y="28">TL208 / LONG HARBOUR</text><text class="small-label" x="595" y="55">TL237</text>
+                <text class="small-label" x="685" y="28">TL201 / HARDWOODS</text><text class="small-label" x="775" y="55">TL203</text>
+                <text class="small-label" x="810" y="405">TL217 / HOLYROOD</text>
+              </svg>
               <dl class="transformer-register">
                 <div><dt>T1, T2</dt><dd>15/20/25 MVA, 230/66 kV</dd></div>
                 <div><dt>T3, T4</dt><dd>25/33.3/41.7 MVA, 230/138 kV</dd></div>
                 <div><dt>T5</dt><dd>75/100/125 MVA, 230/138 kV</dd></div>
               </dl>
-              <p class="station-footnote">Hydro's 2011 single-line gives the voltage and nameplate stages. The 2026 loop study retains the same maximum ratings. Unit in-service years were not located.</p>
+              <p class="station-footnote">Simplified from Hydro's 2011 Figure 3. The dashed ring and Bay d'Espoir line were proposed in that filing; this sheet does not assert their present status. The 2026 loop study retains the same maximum transformer ratings. Unit in-service years were not located.</p>
               <a class="evidence-link stacked-link" href="https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf" target="_blank" rel="noreferrer">Western Avalon single-line / PDF p. 7</a>
               <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF" target="_blank" rel="noreferrer">138 kV and 66 kV Loop Assessments / PDF pp. 194 to 195</a>
             </article>

@@ -253,6 +253,8 @@ button, input { font: inherit; }
 .line, .tap, .outgoing { fill: none; stroke: var(--ink); stroke-width: 5; vector-effect: non-scaling-stroke; }
 .v230-line, .v230-winding { stroke: var(--phase-a); }
 .v66-line, .v66-winding { stroke: var(--water); }
+.v138-line, .v138-winding { stroke: var(--copper); }
+.proposed-line { fill: none; stroke: var(--phase-a); stroke-width: 4; stroke-dasharray: 12 8; vector-effect: non-scaling-stroke; }
 .winding { fill: none; stroke-width: 4; vector-effect: non-scaling-stroke; }
 .feeder-winding { stroke: var(--ink); stroke-width: 3; }
 .feeder-label { paint-order: stroke fill; stroke: var(--paper); stroke-width: 8px; }
@@ -290,7 +292,7 @@ button, input { font: inherit; }
 .station-line .small-label { font-size: 10px; }
 .station-line .bus-label { font-size: 14px; }
 .station-footnote { margin: 0 0 .6rem; color: var(--muted); font: 400 .72rem/1.5 "IBM Plex Mono", monospace; }
-.station-sheet-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.station-sheet-pair { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
 .compact-sheet { min-height: 370px; }
 .transformer-register { margin: 1.5rem 0; border-top: 1px solid var(--ink); }
 .transformer-register div { display: grid; grid-template-columns: 110px 1fr; gap: 1rem; padding: .85rem 0; border-bottom: 1px solid var(--rule); }
