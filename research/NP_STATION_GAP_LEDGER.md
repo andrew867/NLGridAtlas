@@ -10,6 +10,7 @@ Last scan: 2026-11-10
 - [x] 2024 and 2023 Capital Budget Applications, 683 PDFs, 3,475 physical pages read.
 - [x] 2027 transformer register transcribed, 187 unique transformer designations at 123 station codes, including distribution, generation, and transmission units.
 - [x] 2006 station and feeder register transcribed, 136 stations and 302 feeders.
+- [x] NL Hydro public upload index inventoried, 2,539 files and 9,402,399,683 listed bytes across the 2014 to 2026 year folders.
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
@@ -26,11 +27,11 @@ The station browser now covers 139 station codes, the 136 stations in the 2006 h
 | [ ] | Goulds, GOU | 2005 feeders GOU-01 to GOU-03; 2027 GOU-T1, T2, and T3 ratings | Transformer connections, 33 kV section, feeder bus assignments | Capital applications and one-lines containing `GOU-T1`, `GOU-T2`, or `GOU-T3` |
 | [ ] | Glendale, GDL | 2005 feeders GDL-01 to GDL-06; 2027 GDL-T1, T2, and T3 ratings | Bus arrangement and feeder assignments | Substation renewal filings and drawings |
 | [ ] | Virginia Waters, VIR | 2005 feeders VIR-01 to VIR-07; 2027 VIR-T1, T2, and T3 ratings; 59L connection to Pulpit Rock | Bus arrangement and feeder assignments | Station renewal and protection filings |
-| [ ] | Ridge Road, RRD | 2005 feeders RRD-02 to RRD-10; 2027 RRD-T2 and T3 ratings | Bus arrangement, feeder assignments, replacement status | 2027 and later RRD-T3 replacement filings |
+| [ ] | Ridge Road, RRD | 30L, 32L, and 67L supply; RRD-T2 and RRD-T3 ratings; eight current 12.5 kV feeders; nine designations in the 2005 register; 34.7 MVA five-year maximum peak; RRD-T3 replacement planned for 2027 to 2029 | Bus arrangement and feeder assignments | Refurbishment one-line or protection drawing |
 | [ ] | Stamp's Lane, SLA | 2005 feeders SLA-01 to SLA-13; 2027 SLA-T1 to T4 ratings | 4.2 kV and 12.5 kV bus arrangement, feeder assignments | Refurbishment filings and station one-lines |
 | [ ] | St. John's Main, SJM | 2005 feeders SJM-01 to SJM-14; 2027 SJM-T1 to T3 ratings | 25 kV and 12.5 kV bus arrangement, feeder assignments | Refurbishment filings and station one-lines |
 | [ ] | Pepperell, PEP | 2005 feeders PEP-01 to PEP-04; 2027 PEP-T1 and T2 ratings | Bus arrangement and feeder assignments | Station one-line or protection filing |
-| [ ] | King's Bridge, KBR | 2005 feeders KBR-01 to KBR-12; 2027 KBR-T3 and T4 ratings | Earlier transformer disposition, bus arrangement, feeder assignments | KBR-T3 replacement and refurbishment filings |
+| [ ] | King's Bridge, KBR | 12L, 16L, and 30L supply; KBR-T3 and KBR-T4 ratings; six current 12.5 kV feeders; twelve designations in the 2005 register; 43.7 MVA five-year maximum peak; KBR-T3 replacement planned for summer 2028 | Bus arrangement and feeder assignments | Post-2028 commissioning drawing or expenditure report |
 
 ## Pulpit Rock voltage record
 
@@ -38,6 +39,7 @@ The station browser now covers 139 station codes, the 136 stations in the 2006 h
 - [x] The then-installed PUL-T2 was a 15/20/25 MVA, 66/12.5/25 kV dual-secondary unit. The main project summary describes its service as 66/12.5 kV, physical PDF pp. 458 and 463.
 - [x] The replacement specification was 15/20/25 MVA, 66/12.5/25 kV, with installation, testing, and commissioning planned for 2026, physical PDF pp. 88 and 470.
 - [x] The 2026 and 2027 transformer listings show PUL-T1 and PUL-T2 at 66/25 kV, 25 MVA, physical PDF pp. 370 and 549.
+- [x] The 2026 application scheduled the new PUL-T2 to arrive in the third quarter of 2026, physical PDF p. 197.
 - [ ] The available record does not show the completed secondary connection or a feeder conversion from 12.5 kV to 25 kV. A commissioning report or as-built one-line is required before the atlas labels the Pulpit Rock feeder bus as 25 kV.
 
 ## Health Sciences Centre supply

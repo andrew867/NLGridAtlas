@@ -230,6 +230,26 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
   {
+    id: "np-2026-kings-bridge",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, King's Bridge transformer replacement",
+    topics: ["King's Bridge", "KBR-T3", "KBR-T4", "12L", "16L", "30L", "transformer replacement"],
+    pages: "physical PDF pp. 72 to 75 and 427 to 434",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
+    id: "np-2027-ridge-road",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Ridge Road transformer replacement",
+    topics: ["Ridge Road", "RRD-T2", "RRD-T3", "30L", "32L", "67L", "transformer replacement"],
+    pages: "physical PDF pp. 105 to 108 and 511 to 518",
+    status: "proposed",
+    url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
+  },
+  {
     id: "np-2023-long-pond",
     year: 2022,
     organization: "Newfoundland Power",
@@ -836,6 +856,53 @@ export const stationProfiles = [
       facts: [
         ["KEN-T1", "66/25 kV, 25 MVA, 20.04 MVA 2026 forecast"],
         ["KEN-T2", "66/25 kV, 50 MVA, 41.93 MVA 2026 forecast"]
+      ]
+    }
+  },
+  {
+    code: "KBR",
+    name: "King's Bridge",
+    voltage: "66 kV / 12.5 kV feeders",
+    circuitRegisterLabel: "2026 STATION RECORD",
+    circuitSource: { sourceId: "np-2026-kings-bridge", pages: "physical PDF p. 72" },
+    mapPages: [],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2026 CAPITAL APPLICATION",
+      title: "King's Bridge transformer bank",
+      sourceId: "np-2026-kings-bridge",
+      pages: "physical PDF pp. 72 to 75 and 427 to 434",
+      facts: [
+        ["66 kV supply", "12L from Memorial; 16L from Pepperell; 30L from Ridge Road"],
+        ["Transformer bank", "KBR-T3 and KBR-T4, 25 MVA each"],
+        ["Current station statement", "six 12.5 kV distribution feeders"],
+        ["2005 feeder register", "12 feeder designations"],
+        ["Five-year maximum peak", "43.7 MVA"],
+        ["KBR-T3 project", "replacement planned for summer 2028"]
+      ]
+    }
+  },
+  {
+    code: "RRD",
+    name: "Ridge Road",
+    voltage: "66 kV / 12.5 kV feeders",
+    circuitRegisterLabel: "2027 STATION RECORD",
+    circuitSource: { sourceId: "np-2027-ridge-road", pages: "physical PDF p. 105" },
+    mapPages: [],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2027 CAPITAL APPLICATION",
+      title: "Ridge Road transformer bank",
+      sourceId: "np-2027-ridge-road",
+      pages: "physical PDF pp. 105 to 108 and 511 to 518",
+      facts: [
+        ["66 kV supply", "30L from King's Bridge; 32L and 67L from Oxen Pond"],
+        ["Transformer bank", "RRD-T2 and RRD-T3, 20 MVA each, 66/12.5 kV"],
+        ["Current station statement", "eight 12.5 kV distribution feeders"],
+        ["2005 feeder register", "nine feeder designations"],
+        ["Five-year maximum peak", "34.7 MVA"],
+        ["RRD-T3 failure study", "15.26 MVA transferable; 3.1 MVA exposed"],
+        ["RRD-T3 project", "replacement planned from 2027 to 2029"]
       ]
     }
   },

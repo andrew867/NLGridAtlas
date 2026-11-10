@@ -113,6 +113,24 @@
       "notes": "Research excerpt of physical PDF pages 545 to 551. Table A-1 lists operating voltages, MVA ratings, 2026 forecast loads, and portable or spare compatibility for Newfoundland Power transformers."
     },
     {
+      "id": "np-2026-kings-bridge",
+      "local_path": "sources/np-2026-kings-bridge/station-record-excerpt.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF",
+      "sha256": "3e797fd23b4a38d1fe5776d4445a2d4a1a9322ed70ffdff0416504ca03c1e731",
+      "physical_pages": 12,
+      "source_original_physical_pages": 540,
+      "notes": "Research excerpt of physical PDF pages 72 to 75 and 427 to 434. It records the King's Bridge supply circuits, transformer bank, feeder count, load forecast, and proposed KBR-T3 replacement."
+    },
+    {
+      "id": "np-2027-ridge-road",
+      "local_path": "sources/np-2027-ridge-road/station-record-excerpt.pdf",
+      "source_url": "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf",
+      "sha256": "03fcd2e80d74a7c5dd4af377e1e984b4ddfbd33133d18f3aadb60ad5a1ad7e4b",
+      "physical_pages": 12,
+      "source_original_physical_pages": 607,
+      "notes": "Research excerpt of physical PDF pages 105 to 108 and 511 to 518. It records the Ridge Road supply circuits, transformer bank, feeder count, load forecast, and proposed RRD-T3 replacement."
+    },
+    {
       "id": "nlh-2011-western-avalon",
       "local_path": "sources/western-avalon/Exhibit114.pdf",
       "source_url": "https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf",

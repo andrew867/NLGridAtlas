@@ -320,6 +320,20 @@ test("Memorial and Long Pond records preserve the filed Health Sciences supply p
   assert.match(longPondFacts, /HSC #2 and HSC #5/);
 });
 
+test("King's Bridge and Ridge Road records preserve current and historical feeder counts", () => {
+  const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
+  const ridgeRoad = stationProfiles.find((station) => station.code === "RRD");
+  const kingsBridgeFacts = kingsBridge.engineeringRecord.facts.flat().join(" ");
+  const ridgeRoadFacts = ridgeRoad.engineeringRecord.facts.flat().join(" ");
+  assert.match(kingsBridgeFacts, /12L from Memorial; 16L from Pepperell; 30L from Ridge Road/);
+  assert.match(kingsBridgeFacts, /six 12\.5 kV distribution feeders/);
+  assert.match(kingsBridgeFacts, /43\.7 MVA/);
+  assert.match(ridgeRoadFacts, /30L from King's Bridge; 32L and 67L from Oxen Pond/);
+  assert.match(ridgeRoadFacts, /eight 12\.5 kV distribution feeders/);
+  assert.match(ridgeRoadFacts, /34\.7 MVA/);
+  assert.match(ridgeRoadFacts, /3\.1 MVA exposed/);
+});
+
 test("map selection stays in place and feeder maps are expandable", async () => {
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
