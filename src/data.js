@@ -200,6 +200,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
   },
   {
+    id: "np-2024-ca-np-158",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-158, Memorial and Long Pond Single Line Diagrams",
+    topics: ["Memorial", "Long Pond", "single-line", "Health Sciences Complex", "feeders"],
+    pages: "physical PDF pp. 1 to 5",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-158.PDF"
+  },
+  {
     id: "np-2025-capital",
     year: 2024,
     organization: "Newfoundland Power",
@@ -826,6 +836,74 @@ export const stationProfiles = [
       facts: [
         ["KEN-T1", "66/25 kV, 25 MVA, 20.04 MVA 2026 forecast"],
         ["KEN-T2", "66/25 kV, 50 MVA, 41.93 MVA 2026 forecast"]
+      ]
+    }
+  },
+  {
+    code: "PUL",
+    name: "Pulpit Rock",
+    voltage: "66 kV supply / 12.5 kV feeders",
+    feederRegisterLabel: "2025 FEEDER SET",
+    feederRegister: ["PUL-01", "PUL-02", "PUL-03", "PUL-04", "PUL-05"],
+    mapPages: [],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2025 TO 2027 RECORD",
+      title: "Pulpit Rock transformer and feeder voltage",
+      sourceId: "np-2025-capital",
+      pages: "physical PDF pp. 88 and 458 to 470",
+      facts: [
+        ["Supply", "59L from Virginia Waters, 66 kV"],
+        ["2025 station record", "two 25 MVA transformers supply five 12.5 kV feeders"],
+        ["PUL-T2 installed in 2019", "15/20/25 MVA, dual 66/12.5/25 kV nameplate"],
+        ["Replacement specification", "15/20/25 MVA, 66/12.5/25 kV"],
+        ["2026 and 2027 listings", "PUL-T1 and PUL-T2 listed at 66/25 kV, 25 MVA"],
+        ["Completion record", "not found in the archive through the 2027 filing set"]
+      ]
+    }
+  },
+  {
+    code: "MUN",
+    name: "Memorial",
+    voltage: "66/12.5 kV",
+    feederRegisterLabel: "2024 CUSTOMER SWITCHGEAR",
+    feederRegister: ["MUN-01", "MUN-02", "MUN-03", "MUN-04", "MUN-05", "MUN-06", "MUN-07", "MUN-08", "MUN-09", "MUN-10"],
+    mapPages: [],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2024 SINGLE LINE",
+      title: "Memorial supply and feeder arrangement",
+      sourceId: "np-2024-ca-np-158",
+      pages: "physical PDF pp. 2 to 3",
+      facts: [
+        ["66 kV supply", "12L from King's Bridge and 14L from Stamp's Lane"],
+        ["12.5 kV buses", "two sections with MUN-TB-1-2 tie"],
+        ["Health Sciences Complex", "MUN-01 and MUN-08"],
+        ["Customer equipment", "12.5 kV switchgear owned by Memorial University"]
+      ]
+    }
+  },
+  {
+    code: "LPD",
+    name: "Long Pond",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2024 SINGLE LINE",
+    circuitSource: { sourceId: "np-2024-ca-np-158", pages: "physical PDF pp. 4 to 5" },
+    connectedCircuits: [{ circuit: "36L", from: "Oxen Pond", from_code: "OXP", to: "Long Pond", to_code: "LPD" }],
+    feederRegisterLabel: "2024 CUSTOMER SWITCHGEAR",
+    feederRegister: ["MUN-20", "MUN-21", "MUN-22", "MUN-23", "MUN-24", "MUN-25", "MUN-26", "MUN-27", "MUN-28", "MUN-29"],
+    mapPages: [],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2024 SINGLE LINE",
+      title: "Long Pond supply and customer switchgear",
+      sourceId: "np-2024-ca-np-158",
+      pages: "physical PDF pp. 4 to 5",
+      facts: [
+        ["66 kV supply", "36L from Oxen Pond"],
+        ["2024 drawing", "LPD-T1, 15/20(25) MVA, 66/12.5 kV"],
+        ["12.5 kV buses", "B1 and B2 with bus tie"],
+        ["Medical circuits", "HSC #2 and HSC #5 shown on Memorial-owned switchgear"]
       ]
     }
   }

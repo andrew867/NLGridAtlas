@@ -8,10 +8,31 @@ import "@fontsource/ibm-plex-mono/400.css";
 import "./styles.css";
 import { components, sources, stationProfiles, timeline } from "./data.js";
 import handbook from "../research/derived/np-2006-handbook.json";
+import transformerRegister from "../research/derived/np-2027-transformer-register.json";
 import { avalonLabelOffsets, avalonNodePositions } from "./avalon-layout.js";
 
 const sourceById = new Map(sources.map((source) => [source.id, source]));
 const handbookStations = new Map(handbook.substations.map((station) => [station.code, station]));
+const detailedStationProfiles = new Map(stationProfiles.map((station) => [station.code, station]));
+const stationNameOverrides = { APT: "Airport", LPD: "Long Pond", MOP: "Mobile Hydro Plant" };
+const stationDirectory = new Map(handbookStations);
+const transformersByStation = new Map();
+for (const transformer of transformerRegister.transformers) {
+  const stationTransformers = transformersByStation.get(transformer.station_code) || [];
+  stationTransformers.push(transformer);
+  transformersByStation.set(transformer.station_code, stationTransformers);
+  if (!stationDirectory.has(transformer.station_code)) {
+    stationDirectory.set(transformer.station_code, {
+      code: transformer.station_code,
+      name: stationNameOverrides[transformer.station_code] || transformer.station_code,
+      feeders: [],
+      source_page: null
+    });
+  }
+}
+for (const profile of stationProfiles) {
+  if (!stationDirectory.has(profile.code)) stationDirectory.set(profile.code, { code: profile.code, name: profile.name, feeders: [], source_page: null });
+}
 const handbookEndpoints = new Map();
 for (const line of handbook.transmission_lines) {
   if (line.from_code) handbookEndpoints.set(line.from_code, { name: line.from, source_page: line.source_page });
@@ -19,6 +40,7 @@ for (const line of handbook.transmission_lines) {
 }
 let activeRegister = "lines";
 let activeStationProfile = "HWD";
+let stationTabQuery = "";
 const stationSectionAnchors = {
   HWD: "#terminal-hwd",
   MUN: "#substation-mun",
@@ -125,14 +147,26 @@ function showComponent(requestedId, allowReset = true) {
 }
 
 function renderStationProfile(code) {
-  const profile = stationProfiles.find((station) => station.code === code);
-  if (!profile) return;
+  const station = stationDirectory.get(code);
+  if (!station) return;
+  const detailed = detailedStationProfiles.get(code) || {};
+  const profile = {
+    code,
+    name: station.name,
+    feederRegister: station.feeders,
+    mapPages: [],
+    eventLoads: [],
+    ...detailed
+  };
   activeStationProfile = code;
-  const connected = handbook.transmission_lines.filter((line) => line.from_code === code || line.to_code === code);
+  const connected = profile.connectedCircuits || handbook.transmission_lines.filter((line) => line.from_code === code || line.to_code === code);
   const circuitRows = connected.map((line) => {
     const destination = line.from_code === code ? line.to : line.from;
     const destinationCode = line.from_code === code ? line.to_code : line.from_code;
-    return `<li><strong>${escapeHtml(line.circuit)}</strong><span>${escapeHtml(destination)}${destinationCode ? ` / ${escapeHtml(destinationCode)}` : ""}</span></li>`;
+    const destinationLabel = `${destination}${destinationCode ? ` / ${destinationCode}` : ""}`;
+    return `<li><strong>${escapeHtml(line.circuit)}</strong>${destinationCode && stationDirectory.has(destinationCode)
+      ? `<a href="#station-browser" data-station-record="${escapeHtml(destinationCode)}">${escapeHtml(destinationLabel)}</a>`
+      : `<span>${escapeHtml(destinationLabel)}</span>`}</li>`;
   }).join("");
   const mapBase = sourceById.get("np-island-ca-020").url;
   const feederMaps = profile.mapPages.map(([feeder, page]) => {
@@ -146,31 +180,56 @@ function renderStationProfile(code) {
         <a class="feeder-map-source" href="${escapeHtml(mapBase)}#page=${page}" target="_blank" rel="noreferrer">CA-NP-020 / physical PDF p. ${page}</a>
       </details>`;
   }).join("");
+  const transformers = transformersByStation.get(code) || [];
+  const transformerPages = [...new Set(transformers.map((transformer) => transformer.physical_page))];
+  const transformerRows = transformers.map((transformer) => {
+    const voltage = transformer.low_kv === null ? `${transformer.high_kv} kV` : `${transformer.high_kv}/${transformer.low_kv} kV`;
+    const forecast = transformer.forecast_2026_mva === null ? "" : `, ${transformer.forecast_2026_mva} MVA forecast`;
+    return `
+    <div>
+      <dt>${escapeHtml(transformer.designation)}</dt>
+      <dd>${escapeHtml(`${voltage}, ${transformer.size_mva} MVA, ${transformer.type}${forecast}`)}</dd>
+    </div>`;
+  }).join("");
+  const operatingVoltages = [...new Set(transformers.map((transformer) => transformer.low_kv === null
+    ? `${transformer.high_kv} kV`
+    : `${transformer.high_kv}/${transformer.low_kv} kV`))];
+  const stationVoltage = detailed.voltage || (operatingVoltages.length ? operatingVoltages.join("; ") : "Station register");
   const record = profile.engineeringRecord;
   const recordSource = record ? sourceById.get(record.sourceId) : null;
+  const circuitSource = profile.circuitSource ? sourceById.get(profile.circuitSource.sourceId) : null;
   document.querySelector("#station-profile").innerHTML = `
     <header class="profile-heading">
       <div><span>${escapeHtml(profile.code)} / STATION RECORD</span><h4>${escapeHtml(profile.name)}</h4></div>
-      <strong>${escapeHtml(profile.voltage)}</strong>
+      <strong>${escapeHtml(stationVoltage)}</strong>
     </header>
     <div class="profile-grid">
       <section>
-        <span class="profile-label">2005 CIRCUIT REGISTER</span>
-        <ul class="circuit-list">${circuitRows}</ul>
-        <a class="evidence-link" href="${escapeHtml(handbook.source.source_url)}" target="_blank" rel="noreferrer">Electrical System Handbook / PDF pp. 6 to 7</a>
+        <span class="profile-label">${escapeHtml(profile.circuitRegisterLabel || "2005 CIRCUIT REGISTER")}</span>
+        <ul class="circuit-list">${circuitRows || "<li><span>No connected transmission circuit in the register</span></li>"}</ul>
+        ${circuitSource
+          ? `<a class="evidence-link" href="${escapeHtml(circuitSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(circuitSource.title)} / ${escapeHtml(profile.circuitSource.pages)}</a>`
+          : `<a class="evidence-link" href="${escapeHtml(handbook.source.source_url)}#page=6" target="_blank" rel="noreferrer">Electrical System Handbook / PDF pp. 6 to 7</a>`}
       </section>
       <section>
-        <span class="profile-label">2005 FEEDER REGISTER</span>
-        <div class="feeder-tags">${profile.feederRegister.map((feeder) => `<span>${escapeHtml(feeder)}</span>`).join("")}</div>
-        <span class="profile-label map-label">2014 FEEDER MAP SHEETS</span>
-        <div class="feeder-maps">${feederMaps}</div>
+        <span class="profile-label">${escapeHtml(profile.feederRegisterLabel || "2005 FEEDER REGISTER")}</span>
+        <div class="feeder-tags">${profile.feederRegister.length
+          ? profile.feederRegister.map((feeder) => `<span>${escapeHtml(feeder)}</span>`).join("")
+          : "<span>No feeder designation</span>"}</div>
+        ${feederMaps ? `<span class="profile-label map-label">2014 FEEDER MAP SHEETS</span><div class="feeder-maps">${feederMaps}</div>` : ""}
         ${profile.mapNote ? `<p class="profile-note">${escapeHtml(profile.mapNote)}</p>` : ""}
       </section>
-      <section class="event-loads">
-        <span class="profile-label">2014-01-05 RECORDED OUTAGE LOAD</span>
-        <dl>${profile.eventLoads.map(([feeder, load]) => `<div><dt>${escapeHtml(feeder)}</dt><dd>${escapeHtml(load)}</dd></div>`).join("")}</dl>
-        <p>Recorded feeder load when interrupted, not a station peak.</p>
-        <a class="evidence-link" href="${escapeHtml(mapBase)}#page=14" target="_blank" rel="noreferrer">CA-NP-020 / physical PDF p. 14</a>
+      <section class="station-equipment">
+        ${transformers.length ? `
+          <span class="profile-label">2027 TRANSFORMER REGISTER</span>
+          <dl>${transformerRows}</dl>
+          <a class="evidence-link" href="${escapeHtml(transformerRegister.source.source_url)}#page=${transformerPages[0]}" target="_blank" rel="noreferrer">Power Transformer Listing / physical PDF ${transformerPages.length === 1 ? `p. ${transformerPages[0]}` : `pp. ${transformerPages.join(", ")}`}</a>` : ""}
+        ${profile.eventLoads.length ? `
+          <div class="event-loads">
+            <span class="profile-label">2014-01-05 RECORDED OUTAGE LOAD</span>
+            <dl>${profile.eventLoads.map(([feeder, load]) => `<div><dt>${escapeHtml(feeder)}</dt><dd>${escapeHtml(load)}</dd></div>`).join("")}</dl>
+            <a class="evidence-link" href="${escapeHtml(mapBase)}#page=14" target="_blank" rel="noreferrer">CA-NP-020 / physical PDF p. 14</a>
+          </div>` : ""}
       </section>
     </div>
     ${record ? `
@@ -179,11 +238,25 @@ function renderStationProfile(code) {
         <dl>${record.facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>
         <a class="evidence-link" href="${escapeHtml(recordSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(recordSource.title)} / ${escapeHtml(record.pages)}</a>
       </section>` : ""}`;
-  document.querySelectorAll(".station-tab").forEach((button) => {
-    const selected = button.dataset.stationProfile === code;
-    button.classList.toggle("active", selected);
-    button.setAttribute("aria-selected", String(selected));
-  });
+  renderStationTabs(stationTabQuery);
+}
+
+function renderStationTabs(query = "") {
+  stationTabQuery = query.trim().toLowerCase();
+  const stations = [...stationDirectory.values()]
+    .filter((station) => `${station.code} ${station.name} ${station.feeders.join(" ")}`.toLowerCase().includes(stationTabQuery))
+    .sort((left, right) => left.name.localeCompare(right.name));
+  document.querySelector("#station-record-count").textContent = `${stations.length} station${stations.length === 1 ? "" : "s"}`;
+  document.querySelector("#station-tabs").innerHTML = stations.map((station) => {
+    const selected = station.code === activeStationProfile;
+    return `<button class="station-tab${selected ? " active" : ""}" type="button" role="tab" aria-selected="${selected}" data-station-profile="${escapeHtml(station.code)}"><strong>${escapeHtml(station.code)}</strong><span>${escapeHtml(station.name)}</span></button>`;
+  }).join("");
+}
+
+function openStationRecord(code, scroll = true) {
+  if (!stationDirectory.has(code)) return;
+  renderStationProfile(code);
+  if (scroll) document.querySelector("#station-browser").scrollIntoView({ block: "start" });
 }
 
 function avalonLines() {
@@ -281,11 +354,11 @@ function showHandbookStation(code) {
   document.querySelector("#handbook-detail-code").textContent = `${code} / ${stationRecord ? "STATION" : "LINE ENDPOINT"}`;
   document.querySelector("#handbook-detail-title").textContent = station.name;
   const stationLink = document.querySelector("#handbook-detail-station-link");
-  const stationTarget = stationDetailAnchors[code];
-  stationLink.hidden = !stationTarget;
-  if (stationTarget) {
-    stationLink.href = stationTarget;
-    stationLink.textContent = `Open ${station.name} diagram`;
+  stationLink.hidden = !stationRecord;
+  if (stationRecord) {
+    stationLink.href = "#station-browser";
+    stationLink.dataset.stationRecord = code;
+    stationLink.textContent = `Open ${station.name} station record`;
   }
   document.querySelector("#handbook-detail-data").innerHTML = [
     ["Feeders", stationRecord ? (stationRecord.feeders.length ? stationRecord.feeders.join(", ") : "None listed") : "Not in station register"],
@@ -387,8 +460,16 @@ document.querySelectorAll(".register-tab").forEach((button) => {
     renderHandbookRegister(document.querySelector("#handbook-search").value);
   });
 });
-document.querySelectorAll(".station-tab").forEach((button) => {
-  button.addEventListener("click", () => renderStationProfile(button.dataset.stationProfile));
+document.querySelector("#station-search").addEventListener("input", (event) => renderStationTabs(event.target.value));
+document.querySelector("#station-tabs").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-station-profile]");
+  if (button) renderStationProfile(button.dataset.stationProfile);
+});
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("[data-station-record]");
+  if (!link) return;
+  event.preventDefault();
+  openStationRecord(link.dataset.stationRecord);
 });
 
 renderAvalonNetwork();
@@ -396,6 +477,7 @@ bindInternalDiagramLinks();
 showHandbookStation("OXP");
 showHashStation();
 window.addEventListener("hashchange", showHashStation);
+renderStationTabs();
 renderStationProfile(activeStationProfile);
 renderHandbookRegister();
 renderTimeline();

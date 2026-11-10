@@ -677,15 +677,17 @@
             </aside>
           </div>
 
-          <section class="station-browser" aria-labelledby="station-browser-title">
+          <section class="station-browser" id="station-browser" aria-labelledby="station-browser-title">
             <header class="subsection-heading">
               <span>NEWFOUNDLAND POWER STATION RECORDS</span>
-              <h3 id="station-browser-title">Circuits, feeders, and event loads</h3>
+              <h3 id="station-browser-title">Circuits, feeders, and equipment</h3>
             </header>
-            <div class="station-tabs" role="tablist" aria-label="Select a Newfoundland Power station">
-              <button class="station-tab active" type="button" role="tab" aria-selected="true" data-station-profile="HWD">Hardwoods</button>
-              <button class="station-tab" type="button" role="tab" aria-selected="false" data-station-profile="OXP">Oxen Pond</button>
-              <button class="station-tab" type="button" role="tab" aria-selected="false" data-station-profile="KEN">Kenmount</button>
+            <label class="station-search" for="station-search">
+              <span>Find station or feeder</span>
+              <input id="station-search" type="search" autocomplete="off" placeholder="Goulds, GOU, GOU-01" />
+              <strong id="station-record-count">136 stations</strong>
+            </label>
+            <div id="station-tabs" class="station-tabs" role="tablist" aria-label="Select a Newfoundland Power station">
             </div>
             <article id="station-profile" class="phase-frame station-profile" role="tabpanel" aria-live="polite"></article>
             <div class="voltage-sources">

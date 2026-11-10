@@ -5,6 +5,7 @@ import { components, sources, stationProfiles, timeline } from "../src/data.js";
 import { avalonNodePositions } from "../src/avalon-layout.js";
 
 const handbook = JSON.parse(await readFile(new URL("../research/derived/np-2006-handbook.json", import.meta.url), "utf8"));
+const transformerRegister = JSON.parse(await readFile(new URL("../research/derived/np-2027-transformer-register.json", import.meta.url), "utf8"));
 const todStudy = JSON.parse(await readFile(new URL("../research/derived/np-2018-tod-study.json", import.meta.url), "utf8"));
 
 const allowedStates = new Set(["verified", "reported", "proposed", "inferred", "unresolved"]);
@@ -278,6 +279,45 @@ test("2027 transformer register updates Avalon station records", async () => {
   assert.match(html, /OXP-T1[\s\S]*66\/12\.5 kV \/ 13\.33 MVA/);
   assert.match(html, /HWD-T1[\s\S]*HWD-T2[\s\S]*HWD-T3/);
   assert.doesNotMatch(html, /Not stated in cited records/);
+});
+
+test("station browser covers the handbook and merges the 2027 transformer register", async () => {
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.equal(transformerRegister.transformers.length, 187);
+  assert.equal(new Set(transformerRegister.transformers.map((row) => row.designation)).size, 187);
+  assert.equal(new Set(transformerRegister.transformers.map((row) => row.station_code)).size, 123);
+  assert.deepEqual(
+    transformerRegister.transformers
+      .filter((row) => row.station_code === "GOU")
+      .map((row) => [row.designation, row.type, row.high_kv, row.low_kv, row.size_mva]),
+    [["GOU-T2", "distribution", 66, 12.5, 20], ["GOU-T3", "distribution", 66, 12.5, 13.33], ["GOU-T1", "transmission", 66, 33, 10]]
+  );
+  assert.match(main, /handbook\.substations[\s\S]*data-station-profile/);
+  assert.match(main, /transformersByStation/);
+  assert.match(main, /data-station-record/);
+  assert.match(html, /id="station-search"/);
+  assert.match(html, /id="station-tabs"/);
+});
+
+test("Pulpit Rock record preserves the unresolved secondary-voltage evidence", () => {
+  const pulpit = stationProfiles.find((station) => station.code === "PUL");
+  assert.deepEqual(pulpit.feederRegister, ["PUL-01", "PUL-02", "PUL-03", "PUL-04", "PUL-05"]);
+  const facts = pulpit.engineeringRecord.facts.flat().join(" ");
+  assert.match(facts, /five 12\.5 kV feeders/);
+  assert.match(facts, /66\/12\.5\/25 kV/);
+  assert.match(facts, /not found/);
+});
+
+test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", () => {
+  const memorial = stationProfiles.find((station) => station.code === "MUN");
+  const longPond = stationProfiles.find((station) => station.code === "LPD");
+  const memorialFacts = memorial.engineeringRecord.facts.flat().join(" ");
+  const longPondFacts = longPond.engineeringRecord.facts.flat().join(" ");
+  assert.deepEqual(memorial.feederRegister, ["MUN-01", "MUN-02", "MUN-03", "MUN-04", "MUN-05", "MUN-06", "MUN-07", "MUN-08", "MUN-09", "MUN-10"]);
+  assert.match(memorialFacts, /MUN-01 and MUN-08/);
+  assert.deepEqual(longPond.connectedCircuits, [{ circuit: "36L", from: "Oxen Pond", from_code: "OXP", to: "Long Pond", to_code: "LPD" }]);
+  assert.match(longPondFacts, /HSC #2 and HSC #5/);
 });
 
 test("map selection stays in place and feeder maps are expandable", async () => {

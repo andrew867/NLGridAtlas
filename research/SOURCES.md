@@ -22,8 +22,13 @@ The initial collection includes:
 - Newfoundland Power 2025 38L and 39L relocation application
 - NL Hydro 2023 transmission and terminal-station asset report
 - NL Hydro 2024 short-term load forecast accuracy report
+- Newfoundland Power 2024 CA-NP-158, Memorial and Long Pond single-line diagrams
 
 Derived data from the handbook is stored in `research/derived/np-2006-handbook.json`. Run
 `python scripts/extract_np2006_handbook.py` to rebuild it from the archived PDF. The extractor
 checks the source-reported totals of 104 transmission lines, 136 substations, and 302 feeders.
+
+The 2027 transformer register is stored in `research/derived/np-2027-transformer-register.json`.
+It contains 187 unique designations at 123 station codes from physical PDF pp. 546 to 553 of
+the Newfoundland Power 2027 Capital Budget Application.
 
