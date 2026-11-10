@@ -163,9 +163,6 @@ function showHandbookStation(code) {
   const connected = handbook.transmission_lines.filter((line) => line.from_code === code || line.to_code === code);
   document.querySelector("#handbook-detail-code").textContent = `${code} / ${stationRecord ? "STATION" : "LINE ENDPOINT"}`;
   document.querySelector("#handbook-detail-title").textContent = station.name;
-  document.querySelector("#handbook-detail-summary").textContent = connected.length
-    ? `The 2005 register lists ${connected.length} connected transmission circuit${connected.length === 1 ? "" : "s"}.`
-    : "The 2005 register does not list a connected transmission circuit for this designation.";
   document.querySelector("#handbook-detail-data").innerHTML = [
     ["Feeders", stationRecord ? (stationRecord.feeders.length ? stationRecord.feeders.join(", ") : "None listed") : "Not in station register"],
     ["Circuits", connected.length ? connected.map((line) => line.circuit).join(", ") : "None listed"],

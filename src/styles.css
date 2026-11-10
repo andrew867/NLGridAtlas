@@ -189,7 +189,6 @@ button, input { font: inherit; }
 .map-node:focus-visible text, .map-node.selected text { fill: var(--phase-a); }
 .handbook-detail { padding: 2rem 0 0; border-top: 8px solid var(--water); }
 .handbook-detail h3 { margin: 0 0 1rem; font: 600 2.8rem/.95 "Barlow Condensed", sans-serif; text-transform: uppercase; }
-.handbook-detail > p:not(.component-code) { line-height: 1.55; }
 .evidence-state.reported { background: var(--copper); }
 .source-conflict { margin: 2.5rem 0 0; padding: 1.25rem; border-left: 8px solid var(--phase-a); background: var(--paper-bright); }
 .register-browser { margin-top: 3rem; border-top: 1px solid var(--ink); }
