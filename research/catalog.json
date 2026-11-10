@@ -14,7 +14,18 @@
     {
       "id": "hydro-2004-capital",
       "local_path": "sources/Hydro-2004-Capital-Budget-Complete.pdf",
-      "source_url": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf"
+      "source_url": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf",
+      "notes": "Physical pages 193 to 205 contain the VHF replacement business case. Physical page 258 contains the existing ATI network block diagram. Physical pages 265 and 266 contain existing and potential repeater-site registers."
+    },
+    {
+      "id": "hydro-2027-capital-vhf-extract",
+      "local_path": "sources/nlh-2027-capital/VHF-replacement-physical-page-248.pdf",
+      "source_url": "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From NLH - 2027 Capital Budget Application - Volume I - 2026-07-14.PDF",
+      "sha256": "01469a29124b8c5d6b83ac23a1e174d595103e116f2c18b3b8ba22526aaf0194",
+      "physical_pages": 1,
+      "source_original_sha256": "1ecf95dfb7f0e16a04df8ecc5c8a348b2e8a54b93b10f975e5b0f2915f10a3a9",
+      "source_original_physical_pages": 1316,
+      "notes": "Derived one-page research excerpt of physical page 248 from the 132,043,578-byte original. The page reports the revised P25 and Starlink scope and 2025 installation status."
     },
     {
       "id": "hydro-2013-gra-v2",

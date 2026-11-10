@@ -90,5 +90,9 @@ test("station additions preserve source limits", async () => {
   assert.match(html, /Z0 11\.75%/);
   assert.match(html, /25\/33\.3\/41\.7 MVA, ONAN\/ONAF\/ONAF; 230\/138\/6\.9 kV; Z1 5\.5%/);
   assert.match(html, /T9 \/ 10\.5\/14 MVA \/ STATION SERVICE/);
+  assert.match(html, /ATI mobile network/);
+  assert.match(html, /29[\s\S]*Repeater sites/);
+  assert.match(html, /Bay d'Espoir Hill[\s\S]*164\.22 MHz[\s\S]*170\.28 MHz/);
+  assert.match(html, /P25 system and Starlink with Cradlepoint routers/);
 });
 

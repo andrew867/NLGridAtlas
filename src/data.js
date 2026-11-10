@@ -50,6 +50,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf"
   },
   {
+    id: "vhf-2027-status",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "2027 Capital Budget Application, Volume I",
+    topics: ["VHF replacement", "P25", "Provincial Wide Radio System", "Starlink", "Cradlepoint"],
+    pages: "PDF p. 248",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
+  },
+  {
     id: "np-2014-improvements",
     year: 2014,
     organization: "Newfoundland Power",
@@ -230,6 +240,15 @@ export const timeline = [
     sourceId: "forecast-2024",
     pages: "PDF pp. 119 to 121",
     status: "verified"
+  },
+  {
+    date: "2024 to 2026",
+    category: "telecom",
+    title: "VHF replacement moved to P25 and satellite data",
+    body: "Hydro cancelled the satellite-phone and cellular scope. It selected provincial P25 radios and Starlink with Cradlepoint routers for selected fleet vehicles. The filing reports that approximately half of the equipment was installed in 2025, with the remainder carried into 2026.",
+    sourceId: "vhf-2027-status",
+    pages: "PDF p. 248",
+    status: "reported"
   }
 ];
 

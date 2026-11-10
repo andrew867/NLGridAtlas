@@ -22,6 +22,7 @@
         <a href="#network">One-line</a>
         <a href="#timeline">Timeline</a>
         <a href="#loads">Loads</a>
+        <a href="#telecom">Telecom</a>
         <a href="#evidence">Evidence</a>
       </nav>
       <span class="edition">FIELD EDITION 0.1</span>
@@ -415,10 +416,132 @@
         </div>
       </section>
 
+      <section class="section telecom-section" id="telecom" aria-labelledby="telecom-title">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">05 / OPERATIONS RADIO</span>
+            <h2 id="telecom-title">The VHF system changed twice</h2>
+          </div>
+          <p>The 2004 filing records the 1989 conventional network. The 2027 capital filing records a later move to the provincial P25 system and satellite data links.</p>
+        </header>
+
+        <div class="telecom-layout">
+          <article class="phase-frame telecom-schematic">
+            <div class="telecom-sheet-heading">
+              <div><span>HISTORICAL / 2001 STUDY</span><h3>ATI mobile network</h3></div>
+              <strong>VHF / CONVENTIONAL</strong>
+            </div>
+            <svg class="radio-line" viewBox="0 0 1000 560" role="img" aria-labelledby="radio-title radio-desc">
+              <title id="radio-title">Simplified historical Hydro VHF radio network</title>
+              <desc id="radio-desc">St. John's Dispatch connects to a single ATI switch at Gander. Telephone interconnects and four-wire site links connect the switch and repeater controllers. The system had 29 repeater sites.</desc>
+              <g class="radio-dispatch">
+                <rect x="45" y="218" width="185" height="104" />
+                <path d="M82 218 V184 H193 V218" />
+                <text x="137" y="263">ST. JOHN'S</text><text x="137" y="291">DISPATCH</text>
+              </g>
+              <path class="radio-link" d="M230 270 H355" />
+              <text class="radio-link-label" x="290" y="255">DISPATCH LINK</text>
+              <g class="radio-switch">
+                <rect x="355" y="184" width="240" height="174" />
+                <text x="475" y="252">ATI SWITCH</text><text class="radio-place" x="475" y="286">GANDER</text>
+                <text class="radio-small" x="475" y="325">NON-REDUNDANT</text>
+              </g>
+              <path class="radio-link" d="M595 224 H682 V135 H760 M595 270 H760 M595 316 H682 V405 H760" />
+              <text class="radio-link-label" x="646" y="207">TEL INTERCONNECT</text>
+              <text class="radio-link-label" x="650" y="391">TEL INTERCONNECT</text>
+              <g class="radio-repeaters">
+                <g transform="translate(760 84)">
+                  <rect width="180" height="100" /><path d="M90 0 V-35 M66 -35 H114 M76 -50 L90 -35 L104 -50" />
+                  <text x="90" y="45">REPEATER</text><text class="radio-small" x="90" y="72">CONTROLLER</text>
+                </g>
+                <g transform="translate(760 220)">
+                  <rect width="180" height="100" /><path d="M90 0 V-35 M66 -35 H114 M76 -50 L90 -35 L104 -50" />
+                  <text x="90" y="45">REPEATER</text><text class="radio-small" x="90" y="72">CONTROLLER</text>
+                </g>
+                <g transform="translate(760 356)">
+                  <rect width="180" height="100" /><path d="M90 0 V-35 M66 -35 H114 M76 -50 L90 -35 L104 -50" />
+                  <text x="90" y="45">REPEATER</text><text class="radio-small" x="90" y="72">CONTROLLER</text>
+                </g>
+              </g>
+              <path class="site-link" d="M850 184 V220 M850 320 V356" />
+              <text class="radio-link-label" x="875" y="205">4W SITE LINK</text>
+              <text class="radio-link-label" x="875" y="341">4W SITE LINK</text>
+              <g class="radio-count">
+                <text x="355" y="455">29</text><text class="radio-small" x="430" y="440">REPEATER SITES</text>
+                <text class="radio-small" x="430" y="462">CENTRAL SWITCH AT GANDER</text>
+                <text class="radio-small" x="430" y="484">DISPATCH AT ST. JOHN'S</text>
+              </g>
+            </svg>
+            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / EXISTING NETWORK IN 2001 STUDY</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" target="_blank" rel="noreferrer">2004 Capital Budget / physical PDF pp. 194 and 258</a>
+          </article>
+
+          <div class="telecom-ledger">
+            <article>
+              <span class="case-date">1989 SYSTEM</span>
+              <strong>29</strong>
+              <h3>Repeater sites</h3>
+              <p>Each site had one controller, one mobile transceiver, and one paging transmitter. The central Gander switch had no redundancy.</p>
+              <a class="evidence-link" href="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" target="_blank" rel="noreferrer">Physical PDF p. 194</a>
+            </article>
+            <article>
+              <span class="case-date">2001 RADIO DISTRIBUTION LIST</span>
+              <dl class="radio-inventory">
+                <div><dt>Pagers</dt><dd>47</dd></div>
+                <div><dt>Mobiles</dt><dd>249</dd></div>
+                <div><dt>Portables</dt><dd>85</dd></div>
+                <div><dt>Base stations</dt><dd>33</dd></div>
+              </dl>
+              <a class="evidence-link" href="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" target="_blank" rel="noreferrer">Physical PDF p. 251</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="telecom-history" aria-label="VHF system replacement record">
+          <article>
+            <span class="case-date">2004 PROPOSAL</span>
+            <h3>Keep the 170 MHz band</h3>
+            <p>Hydro proposed a standards-based trunked VHF system. The budget included six additional repeaters. The filing said 170 MHz gave the required coverage with the fewest sites.</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" target="_blank" rel="noreferrer">Physical PDF pp. 200 to 203</a>
+          </article>
+          <article>
+            <span class="case-date">2024 TO 2026 PROJECT</span>
+            <h3>The replacement plan changed</h3>
+            <p>Hydro cancelled the proposed satellite-phone and cellular scope. It selected radios on the provincial P25 system and Starlink with Cradlepoint routers for selected fleet vehicles.</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF" target="_blank" rel="noreferrer">2027 Capital Budget Volume I / physical PDF p. 248</a>
+          </article>
+          <article>
+            <span class="case-date">STATUS REPORTED IN 2026</span>
+            <h3>Half installed in 2025</h3>
+            <p>The filing reports that approximately half of the communications equipment was installed in 2025. It carries the remaining work into 2026.</p>
+            <a class="evidence-link" href="http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF" target="_blank" rel="noreferrer">Physical PDF p. 248</a>
+          </article>
+        </div>
+
+        <article class="repeater-register">
+          <header>
+            <div><span class="case-date">EXISTING REPEATER REGISTER / 2001 STUDY</span><h3>Rows marked as Hydro-owned</h3></div>
+            <p>The source lists 29 existing sites. Four rows identify NLH as owner. This table does not assert present ownership or operating status.</p>
+          </header>
+          <div class="repeater-table-wrap">
+            <table>
+              <thead><tr><th>Site</th><th>Elevation</th><th>Tower</th><th>ERP</th><th>TX</th><th>RX</th></tr></thead>
+              <tbody>
+                <tr><td>Bay d'Espoir Hill</td><td>262 m AMSL</td><td>54 m</td><td>77.6 W</td><td>164.22 MHz</td><td>170.28 MHz</td></tr>
+                <tr><td>Blue Grass Hill</td><td>434 m AMSL</td><td>48 m</td><td>95.5 W</td><td>163.08 MHz</td><td>172.29 MHz</td></tr>
+                <tr><td>Blue Mountain</td><td>Not stated</td><td>15 m</td><td>126 W</td><td>164.79 MHz</td><td>170.52 MHz</td></tr>
+                <tr><td>Godaleich Hill</td><td>350 m AMSL</td><td>48 m</td><td>15 W</td><td>163.23 MHz</td><td>170.49 MHz</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <a class="evidence-link" href="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" target="_blank" rel="noreferrer">Existing repeater-site register / physical PDF p. 265</a>
+        </article>
+      </section>
+
       <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
         <header class="section-heading">
           <div>
-            <span class="section-number">05 / SOURCE LEDGER</span>
+            <span class="section-number">06 / SOURCE LEDGER</span>
             <h2 id="evidence-title">Source ledger</h2>
           </div>
           <label class="source-search">
