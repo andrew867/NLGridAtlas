@@ -135,6 +135,120 @@
           </div>
         </section>
 
+        <section class="hvdc-records" id="hvdc-links" aria-labelledby="hvdc-links-title">
+          <header class="subsection-heading network-subheading">
+            <span>INTERCONNECTED SYSTEM / HVDC</span>
+            <h3 id="hvdc-links-title">Labrador-Island and Maritime links</h3>
+          </header>
+          <div class="hvdc-link-grid">
+            <article class="phase-frame hvdc-link-record" data-claim-id="labrador-island-link-system-record">
+              <header class="hvdc-record-heading">
+                <div><span>LIL / COMMISSIONED 2023-04-14</span><h4>Labrador-Island Link</h4></div>
+                <strong>LCC / +/-350 kV</strong>
+              </header>
+              <div class="hvdc-diagram-scroll">
+                <svg class="hvdc-diagram" viewBox="0 0 1000 320" role="img" aria-labelledby="lil-system-title lil-system-desc">
+                  <title id="lil-system-title">Labrador-Island Link system diagram</title>
+                  <desc id="lil-system-desc">Muskrat Falls converter station connects to Soldiers Pond converter station through the two-pole Labrador-Island Link. The filed design uses line-commutated converters at plus and minus 350 kilovolts direct current.</desc>
+                  <g class="hvdc-terminal">
+                    <rect x="35" y="82" width="220" height="140" />
+                    <text class="hvdc-terminal-name" x="145" y="116">MUSKRAT FALLS</text>
+                    <text x="145" y="143">315 kV AC</text>
+                    <rect class="hvdc-converter" x="90" y="163" width="110" height="40" />
+                    <text class="hvdc-converter-label" x="145" y="189">LCC</text>
+                  </g>
+                  <g class="hvdc-poles">
+                    <path d="M255 158 H745" />
+                    <path d="M255 184 H745" />
+                    <text x="500" y="141">L3501 / POLE 1 / +350 kV</text>
+                    <text x="500" y="211">L3502 / POLE 2 / -350 kV</text>
+                  </g>
+                  <g class="hvdc-terminal">
+                    <rect x="745" y="82" width="220" height="140" />
+                    <text class="hvdc-terminal-name" x="855" y="116">SOLDIERS POND</text>
+                    <text x="855" y="143">230 kV AC</text>
+                    <rect class="hvdc-converter" x="800" y="163" width="110" height="40" />
+                    <text class="hvdc-converter-label" x="855" y="189">LCC</text>
+                  </g>
+                  <text class="hvdc-caption" x="500" y="270">900 MW AT MUSKRAT FALLS / 830 MW AT SOLDIERS POND / BIPOLAR DESIGN BASIS</text>
+                </svg>
+              </div>
+              <dl class="hvdc-facts">
+                <div><dt>Commissioned</dt><dd>2023-04-14</dd></div>
+                <div><dt>Converter design</dt><dd>Line-commutated, bipolar, +/-350 kV DC</dd></div>
+                <div><dt>Transfer design basis</dt><dd>900 MW at Muskrat Falls; 830 MW at Soldiers Pond</dd></div>
+                <div><dt>2017 filed filters</dt><dd>Five 72 MVAr at Muskrat Falls; six 75 MVAr at Soldiers Pond</dd></div>
+              </dl>
+              <div class="hvdc-source-links">
+                <a href="http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/correspondence/From%20NLH%20-%20Labrador-Island%20Link%20Monthly%20Update%20-%20Commissioned%20-%202023-04-18.PDF#page=1" target="_blank" rel="noreferrer">Commissioning update / physical PDF p. 1</a>
+                <a href="http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/NLHCBSUPP2014/TransmissionLine/Application/Application-2014-04-30.pdf#page=37" target="_blank" rel="noreferrer">Converter design basis / physical PDF pp. 37 to 38</a>
+                <a href="http://www.pub.nl.ca/applications/2017/NLH2017GRA/applications/NLH%202017%20General%20Rate%20Application%20-%20Volume%202%20-%202017-07-28.PDF#page=14" target="_blank" rel="noreferrer">Filed AC interfaces and filters / physical PDF pp. 14 to 17</a>
+              </div>
+            </article>
+
+            <article class="phase-frame hvdc-link-record" data-claim-id="maritime-link-system-record">
+              <header class="hvdc-record-heading">
+                <div><span>ML / OPERATIONAL SERVICE EARLY 2018</span><h4>Maritime Link</h4></div>
+                <strong>VSC / +/-200 kV</strong>
+              </header>
+              <div class="hvdc-diagram-scroll">
+                <svg class="hvdc-diagram maritime-diagram" viewBox="0 0 1000 320" role="img" aria-labelledby="ml-system-title ml-system-desc">
+                  <title id="ml-system-title">Maritime Link system diagram</title>
+                  <desc id="ml-system-desc">The 230 kilovolt Granite Canal connection feeds the Bottom Brook voltage-source converter. Two direct-current poles run through Cape Ray, cross Cabot Strait as separate submarine cables, and terminate at the Woodbine converter in Nova Scotia.</desc>
+                  <a class="hvdc-ac-node" href="#hydro-terminal-browser" data-hydro-terminal-record="GRC" aria-label="Open Granite Canal station record">
+                    <rect x="25" y="91" width="145" height="88" />
+                    <text class="hvdc-terminal-name" x="97" y="122">GRANITE CANAL</text>
+                    <text x="97" y="150">230 kV</text>
+                  </a>
+                  <path class="hvdc-ac-line" d="M170 135 H260" />
+                  <text class="hvdc-line-label" x="215" y="119">TL269</text>
+                  <g class="hvdc-terminal compact">
+                    <rect x="260" y="63" width="190" height="176" />
+                    <text class="hvdc-terminal-name" x="355" y="96">BOTTOM BROOK</text>
+                    <text x="355" y="123">230 kV AC</text>
+                    <rect class="hvdc-converter" x="300" y="153" width="110" height="40" />
+                    <text class="hvdc-converter-label" x="355" y="179">VSC</text>
+                    <text x="355" y="218">301NL</text>
+                  </g>
+                  <g class="hvdc-poles maritime-poles">
+                    <path d="M450 158 H785" />
+                    <path d="M450 184 H785" />
+                    <text x="617" y="141">X20005 / X20001 / POLE 1 / +200 kV</text>
+                    <text x="617" y="211">X20006 / X20002 / POLE 2 / -200 kV</text>
+                  </g>
+                  <g class="hvdc-transition">
+                    <line x1="545" y1="147" x2="545" y2="195" />
+                    <text x="545" y="252">CAPE RAY</text>
+                    <text x="665" y="252">2 x 170 km SUBSEA</text>
+                  </g>
+                  <g class="hvdc-terminal compact">
+                    <rect x="785" y="63" width="190" height="176" />
+                    <text class="hvdc-terminal-name" x="880" y="96">WOODBINE</text>
+                    <text x="880" y="123">345 kV AC</text>
+                    <rect class="hvdc-converter" x="825" y="153" width="110" height="40" />
+                    <text class="hvdc-converter-label" x="880" y="179">VSC</text>
+                    <text x="880" y="218">301NS</text>
+                  </g>
+                  <text class="hvdc-caption" x="500" y="292">500 MW BIPOLAR / 250 MW CONTINUOUS MONOPOLE IN EITHER DIRECTION</text>
+                </svg>
+              </div>
+              <dl class="hvdc-facts">
+                <div><dt>Converter design</dt><dd>Voltage-source, asymmetrical bipolar, +/-200 kV DC</dd></div>
+                <div><dt>Transfer rating</dt><dd>500 MW bipolar; 250 MW continuous monopole</dd></div>
+                <div><dt>Subsea section</dt><dd>Two approximately 170 km mass-impregnated cables</dd></div>
+                <div><dt>Newfoundland ground return</dt><dd>E00502, 35 km to Indian Head; 1,250 A continuous design</dd></div>
+                <div><dt>Bottom Brook AC circuits</dt><dd>TL209, TL211, TL233, and TL269</dd></div>
+              </dl>
+              <div class="hvdc-source-links">
+                <a href="http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-Nalcor-017.pdf#page=107" target="_blank" rel="noreferrer">Land asset design basis / physical PDF pp. 107 to 120</a>
+                <a href="http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-Nalcor-017.pdf#page=141" target="_blank" rel="noreferrer">Filed single-lines / physical PDF pp. 141 to 144</a>
+                <a href="http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-Nalcor-017.pdf#page=148" target="_blank" rel="noreferrer">Marine cable design / physical PDF pp. 148 to 150</a>
+                <a href="http://www.pub.nl.ca/applications/2018/2018ratemitigation/report/Synapse%20Energy%20Economics%20-%20Phase%20One%20Report%20-%202018-12-31.pdf#page=7" target="_blank" rel="noreferrer">Operational service record / physical PDF p. 7</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
         <header class="subsection-heading network-subheading">
           <span>AVALON / HYDRO TERMINAL LINKS</span>
           <h3>230 kV semi-geographic view</h3>

@@ -284,10 +284,30 @@ export const sources = [
     year: 2017,
     organization: "NL Hydro",
     title: "2017 General Rate Application, Volume 2, Provincial Electrical System",
-    topics: ["Holyrood T8", "Sunnyside T1", "transformer relocation", "system additions"],
-    pages: "physical PDF p. 14",
+    topics: ["Holyrood T8", "Sunnyside T1", "Labrador-Island Link", "Maritime Link", "Bottom Brook", "Granite Canal", "system additions"],
+    pages: "physical PDF pp. 14 to 17",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/applications/NLH%202017%20General%20Rate%20Application%20-%20Volume%202%20-%202017-07-28.PDF"
+  },
+  {
+    id: "nalcor-maritime-basis-2019",
+    year: 2019,
+    organization: "Nalcor Energy / Emera",
+    title: "PUB-Nalcor-017, Maritime Link Basis of Design",
+    topics: ["Maritime Link", "Bottom Brook", "Granite Canal", "Cape Ray", "Woodbine", "HVDC", "VSC", "subsea cable", "grounding electrode"],
+    pages: "physical PDF pp. 107 to 120, 141 to 144, and 148 to 150",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-Nalcor-017.pdf"
+  },
+  {
+    id: "synapse-maritime-service-2018",
+    year: 2018,
+    organization: "Synapse Energy Economics",
+    title: "Phase 1 Findings on Muskrat Falls Project Rate Mitigation",
+    topics: ["Maritime Link", "Bottom Brook", "Woodbine", "operational service", "HVDC"],
+    pages: "physical PDF p. 7",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/report/Synapse%20Energy%20Economics%20-%20Phase%20One%20Report%20-%202018-12-31.pdf"
   },
   {
     id: "nlh-holyrood-t7-2020",
@@ -1073,6 +1093,27 @@ export const staticClaims = [
     status: "verified",
     sources: [
       { sourceId: "np-2018-pub-np-084", pages: "physical PDF pp. 24 to 26" }
+    ]
+  },
+  {
+    id: "labrador-island-link-system-record",
+    scope: "Labrador-Island Link terminals, poles, filed ratings, AC interfaces and commissioning date",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-lil-commissioning-2023", pages: "physical PDF p. 1" },
+      { sourceId: "nlh-sop-integration-2014", pages: "physical PDF pp. 37 to 38" },
+      { sourceId: "nlh-gra-2017-v2", pages: "physical PDF pp. 14 and 17" },
+      { sourceId: "nlh-lil-near-term-2020", pages: "physical PDF pp. 38 to 39" }
+    ]
+  },
+  {
+    id: "maritime-link-system-record",
+    scope: "Maritime Link terminals, poles, ratings, submarine cables, AC interfaces and ground-return facility",
+    status: "reported",
+    sources: [
+      { sourceId: "nalcor-maritime-basis-2019", pages: "physical PDF pp. 107 to 120, 141 to 144, and 148 to 150" },
+      { sourceId: "nlh-gra-2017-v2", pages: "physical PDF p. 15" },
+      { sourceId: "synapse-maritime-service-2018", pages: "physical PDF p. 7" }
     ]
   },
   {

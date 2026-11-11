@@ -25,6 +25,31 @@ test("source records have stable identifiers and primary locators", () => {
   }
 });
 
+test("HVDC link system records retain the filed ratings and source pages", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const sourceById = new Map(sources.map((source) => [source.id, source]));
+
+  assert.equal(sourceById.get("nlh-gra-2017-v2").pages, "physical PDF pp. 14 to 17");
+  assert.equal(sourceById.get("nalcor-maritime-basis-2019").pages, "physical PDF pp. 107 to 120, 141 to 144, and 148 to 150");
+  assert.equal(sourceById.get("synapse-maritime-service-2018").pages, "physical PDF p. 7");
+
+  assert.match(html, /id="hvdc-links"/);
+  assert.match(html, /Labrador-Island Link/);
+  assert.match(html, /L3501 \/ POLE 1 \/ \+350 kV/);
+  assert.match(html, /L3502 \/ POLE 2 \/ -350 kV/);
+  assert.match(html, /900 MW AT MUSKRAT FALLS \/ 830 MW AT SOLDIERS POND/);
+  assert.match(html, /Five 72 MVAr at Muskrat Falls; six 75 MVAr at Soldiers Pond/);
+
+  assert.match(html, /Maritime Link/);
+  assert.match(html, /TL269/);
+  assert.match(html, /X20005 \/ X20001 \/ POLE 1 \/ \+200 kV/);
+  assert.match(html, /X20006 \/ X20002 \/ POLE 2 \/ -200 kV/);
+  assert.match(html, /500 MW BIPOLAR \/ 250 MW CONTINUOUS MONOPOLE/);
+  assert.match(html, /2 x 170 km SUBSEA/);
+  assert.match(html, /301NL/);
+  assert.match(html, /301NS/);
+});
+
 test("timeline events resolve to a source and evidence state", () => {
   const sourceIds = new Set(sources.map((source) => source.id));
   for (const event of timeline) {

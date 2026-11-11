@@ -7,12 +7,12 @@ Work item: `SRC-001`
 
 | Record class | Count | Source control |
 | --- | ---: | --- |
-| Static technical regions | 34 | `staticClaims` in `src/data.js`; attached to the rendered region by `data-claim-id` |
+| Static technical regions | 36 | `staticClaims` in `src/data.js`; attached to the rendered region by `data-claim-id` |
 | Selectable diagram components | 141 | `components` in `src/data.js` |
 | Timeline events | 27 | `timeline` in `src/data.js` |
 | Island terminal records and connection diagrams | 26 | `islandTerminalRecords` in `src/data.js`; `src/terminal-diagram.js` |
 | Detailed Newfoundland Power profiles | 20 | `stationProfiles` in `src/data.js` |
-| Source records | 105 | `sources` in `src/data.js` |
+| Source records | 107 | `sources` in `src/data.js` |
 
 The static ledger covers the system-length panel, island and Avalon network views, terminal-station and Newfoundland Power one-lines, Avalon transmission work, load records, and the VHF records.
 
@@ -57,6 +57,8 @@ Existing data tests perform the same source-resolution checks for timeline event
 | `stamps-lane-substation-one-line` | 2006 handbook, PDF pp. 6 to 7 and 16; 2011 Capital Budget Application, physical PDF pp. 297 to 298; PUB-NP-276, physical PDF p. 6 and attachment p. 4; CA-NP-255, physical PDF p. 4; CA-NP-065, physical PDF p. 1; 2027 power-transformer listing, physical PDF p. 550 | The logical one-line separates the SLA-T1 and SLA-T2 4.16 kV bank from the SLA-T3 and SLA-T4 12.5 kV bank. It shows the six documented 66 kV circuits and the nine feeders with filed 2014 voltage assignments. SLA-08 and SLA-11 retain their documented transformer assignments. Breaker positions are not reconstructed. |
 | `molloys-lane-station-record` | 2023 Capital Budget Application, physical PDF pp. 403 to 411; 2006 handbook, PDF pp. 6 to 7 and 14; 2027 power-transformer listing, physical PDF p. 549; CA-NP-020, physical PDF pp. 108 to 113 | The logical one-line shows 15L and 19L, two 25 MVA transformers, and eight 12.5 kV feeders. It omits bus sectionalizing. The record includes the 1960 station date, transformer manufacture years, approximately 8,900 customers, the proposed 2023 modernization scope, and six filed feeder route sheets. |
 | `soldiers-pond-converter-station` | 2014 corridor study, physical PDF pp. 30 and 37 to 38; PUB-NLH-022, physical PDF p. 1; Near-Term Reliability Report, physical PDF pp. 38 to 39; 2023 commissioning update, physical PDF p. 1; April 2023 monthly update, physical PDF pp. 2 to 3; 2024 Annual Planning Assessment, physical PDF pp. 8 and 13 to 14 | The record separates the six-circuit 230 kV yard, two LCC poles, three 175 MVAr synchronous condensers, converter-transformer spare, and EL3/4 electrode line. Breaker positions, converter-transformer ratings, filter-bank ratings, and station-service detail are not reconstructed. |
+| `labrador-island-link-system-record` | 2023 commissioning update, physical PDF p. 1; 2014 converter design basis, physical PDF pp. 37 to 38; 2017 GRA Volume 2, physical PDF pp. 14 and 17; Near-Term Reliability Report, physical PDF pp. 38 to 39 | The diagram separates the 2023 commissioned date from the earlier bipolar LCC design basis. It shows L3501 and L3502, the supported +/-350 kV and transfer ratings, the Muskrat Falls and Soldiers Pond AC interfaces, and filed filter-bank counts. |
+| `maritime-link-system-record` | Maritime Link Basis of Design, physical PDF pp. 107 to 120, 141 to 144, and 148 to 150; 2017 GRA Volume 2, physical PDF p. 15; Synapse Phase One Report, physical PDF p. 7 | The diagram shows the Bottom Brook and Woodbine VSC terminals, X20005, X20006, X20001 and X20002, the two approximately 170 km submarine cables, the Indian Head ground-return facility, TL269, and the documented 500 MW bipolar and 250 MW monopole ratings. The filed single-lines remain identified as preliminary rather than current as-built drawings. |
 
 The May 18, 2010 construction register pages and the 2013 loading tables were also inspected during `SRC-002`. Their extracted data is controlled separately in `research/derived/np-register-layers-2008-2013.json`.
 

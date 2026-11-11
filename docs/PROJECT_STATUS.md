@@ -49,14 +49,15 @@ Updated: 2026-11-11
 - Added the 2014 Come By Chance facility arrangement: two 30/40/50 MVA, 230/13.8 kV transformers manufactured in 1972, the split B1/B2 bus, the documented 13.8 kV equipment, and the later Braya-specific cost assignment.
 - Deferred unsupported lower-voltage rural records and current rural breaker drawings so the transformer ledger and main island network can proceed.
 - Added a Soldiers Pond record that separates the six-circuit 230 kV yard, two LCC poles, three 175 MVAr synchronous condensers, converter-transformer spare, and EL3/4 electrode line. The island map now opens the station record.
+- Added dated system diagrams for the Labrador-Island Link and Maritime Link, including converter technology, pole designations, transfer ratings, AC interfaces, submarine cables, and ground-return facilities.
+- Separated the commissioned LIL date and Maritime Link operating record from earlier design-basis and preliminary one-line evidence.
 
 ## Active work
 
-1. Document the Labrador-Island Link and Maritime Link, `HVDC-002`.
-2. Document the Corner Brook frequency converter and Deer Lake connection, `CONV-001`.
-3. Complete island transformer nameplate and age records, `ISL-006`.
-4. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
-5. Find the latest supported Holyrood station arrangement, `GEN-001`.
+1. Document the Corner Brook frequency converter and Deer Lake connection, `CONV-001`.
+2. Complete island transformer nameplate and age records, `ISL-006`.
+3. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
+4. Find the latest supported Holyrood station arrangement, `GEN-001`.
 
 ## Island backbone progress
 

@@ -398,12 +398,12 @@
       "title": "Document the Labrador-Island Link and Maritime Link",
       "phase": 3,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Add dated system diagrams, ratings, terminals, electrodes, interfaces, and documented operating changes for both HVDC links.",
       "dependencies": ["HVDC-001"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/HVDC_LINKS_RECORD.md", "index.html", "src/data.js", "src/styles.css", "tests/data.test.js", "tests/claim-ledger.test.js"],
       "blocker": null,
-      "notes": "Do not mix planned and commissioned configurations."
+      "notes": "The system diagrams separate commissioned operation from earlier filed design material. Current as-built breaker arrangements and converter-transformer nameplate ratings remain open evidence targets rather than reconstructed data."
     },
     {
       "id": "CONV-001",
