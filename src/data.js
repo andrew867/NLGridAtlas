@@ -1,5 +1,15 @@
 export const sources = [
   {
+    id: "np-2004-gdl01",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, GDL-01 Feeder Reconductor",
+    topics: ["Glendale", "GDL-01", "Hardwoods", "HWD-04", "Donovan's Industrial Park", "conductor", "feeder tie"],
+    pages: "physical PDF pp. 658 to 659; appendix pp. 1 to 2",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
+  },
+  {
     id: "np-2006-handbook",
     year: 2006,
     organization: "Newfoundland Power",
@@ -58,6 +68,16 @@ export const sources = [
     pages: "PDF pp. 3 to 11; attachment pp. 1 to 9",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-275.pdf"
+  },
+  {
+    id: "np-2013-q4-report",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-163, Q4 2013 Quarterly Regulatory Report",
+    topics: ["Glendale", "GDL-T3", "transformer addition", "capital completion", "quarterly report"],
+    pages: "physical PDF p. 787; attachment p. 76",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-163.pdf"
   },
   {
     id: "np-2022-line-age",
@@ -1414,7 +1434,19 @@ export const stationProfiles = [
       sourceId: "np-2025-ca-np-255",
       pages: "physical PDF p. 4",
       facts: [["HWD-02", "12.5 kV; HWD-T1/T2; 12.7 MVA feeder planning capacity"]]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2004 GDL-01 / HWD-04 TIE PROJECT",
+        sourceId: "np-2004-gdl01",
+        pages: "physical PDF pp. 658 to 659",
+        facts: [
+          ["Tie point", "normally open switch between GDL-01 and HWD-04 in Donovan's Industrial Park"],
+          ["Proposed work", "replace 1/0 AASC with 477 ASC on GDL-01 from Ruth Avenue to Royal Garage"],
+          ["Operating purpose", "permit either feeder to carry part of the other feeder's load"]
+        ]
+      }
+    ]
   },
   {
     code: "OXP",
@@ -1599,7 +1631,27 @@ export const stationProfiles = [
         ["Tie breakers", "GDL-T1/T2-B and GDL-T2/T3-B"],
         ["Feeder breakers listed", "GDL-01, GDL-02 and GDL-04 to GDL-08"]
       ]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2004 GDL-01 / HWD-04 TIE PROJECT",
+        sourceId: "np-2004-gdl01",
+        pages: "physical PDF pp. 658 to 659",
+        facts: [
+          ["Tie point", "normally open switch between GDL-01 and HWD-04 in Donovan's Industrial Park"],
+          ["Proposed work", "replace 1/0 AASC with 477 ASC on GDL-01 from Ruth Avenue to Royal Garage"]
+        ]
+      },
+      {
+        label: "2013 TRANSFORMER COMPLETION",
+        sourceId: "np-2013-q4-report",
+        pages: "physical PDF p. 787; attachment p. 76",
+        facts: [
+          ["Completed work", "installed one new 25 MVA power transformer at Glendale Substation"],
+          ["System area", "increased transformer capacity for Mount Pearl and Southlands"]
+        ]
+      }
+    ]
   },
   {
     code: "SJM",

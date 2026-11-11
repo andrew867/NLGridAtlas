@@ -402,6 +402,7 @@ test("Goulds record connects the switching station, distribution bank, and feede
 });
 
 test("Glendale, St. John's Main, and Stamp's Lane retain their filed station records", () => {
+  const hardwoods = stationProfiles.find((station) => station.code === "HWD");
   const glendale = stationProfiles.find((station) => station.code === "GDL");
   const stJohnsMain = stationProfiles.find((station) => station.code === "SJM");
   const stampsLane = stationProfiles.find((station) => station.code === "SLA");
@@ -411,6 +412,9 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
 
   assert.deepEqual(glendale.feederRegister, ["GDL-01", "GDL-02", "GDL-03", "GDL-04", "GDL-05", "GDL-06", "GDL-07", "GDL-08", "GDL-09"]);
   assert.deepEqual(glendale.mapPages, [["GDL-01", 58], ["GDL-02", 59], ["GDL-03", 60], ["GDL-04", 61], ["GDL-05", 62], ["GDL-06", 63]]);
+  assert.match(glendale.historyRecords[0].facts.flat().join(" "), /normally open switch between GDL-01 and HWD-04/);
+  assert.match(glendale.historyRecords[1].facts.flat().join(" "), /new 25 MVA power transformer/);
+  assert.match(hardwoods.historyRecords[0].facts.flat().join(" "), /1\/0 AASC with 477 ASC/);
   assert.match(glendaleFacts, /GDL-T3; 25 MVA each; described as 66\/12\.5 kV/);
   assert.match(glendaleFacts, /installed in 2013/);
   assert.match(glendale.planningRecord.facts.flat().join(" "), /construction completed in 2021/);
