@@ -8,6 +8,13 @@ The first release focuses on the Island Interconnected System, a June 2005 Newfo
 
 This repository is at the first working-site stage. The initial evidence set is real, but it is not a complete network model. Each page identifies omissions and unresolved facts.
 
+Project control:
+
+- [Atlas specification](docs/ATLAS_SPECIFICATION.md)
+- [Phased development plan](docs/DEVELOPMENT_PLAN.md)
+- [Verification plan](docs/VERIFICATION_PLAN.md)
+- [Authoritative work-item register](docs/work-items.json)
+
 ## Run locally
 
 ```powershell
