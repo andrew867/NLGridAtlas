@@ -307,6 +307,7 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   const deerLake = islandTerminalRecords.find((record) => record.code === "DLK");
   const howley = islandTerminalRecords.find((record) => record.code === "HOW");
   const masseyDrive = islandTerminalRecords.find((record) => record.code === "MAS");
+  const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
 
   assert.match(stonyBrook.facts.flat().join(" "), /75\/100\/125 MVA each in the 2003 system report/);
   assert.match(deerLake.facts.flat().join(" "), /45\/60\/75 MVA/);
@@ -316,11 +317,18 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   assert.match(masseyDrive.facts.flat().join(" "), /66\.7 MVA.*125 MVA/);
   assert.match(sunnyside.facts.flat().join(" "), /Former Holyrood T8.*Sunnyside T1 position/);
   assert.match(buchans.facts.flat().join(" "), /Massey Drive in 1970.*Buchans in 1998/);
+  assert.match(bayDEspoir.facts.flat().join(" "), /T10 and T12, 230\/69 kV, 15\/20\/25 MVA each/);
+  assert.match(bayDEspoir.facts.flat().join(" "), /T7, 230\/13\.8 kV, 129\/172 MVA/);
+  assert.deepEqual(bayDEspoir.diagram.transformers, [
+    { label: "T10", rating: "15/20/25 MVA", from: "b1", to: "b2" },
+    { label: "T12", rating: "15/20/25 MVA", from: "b1", to: "b2" }
+  ]);
   assert.match(components["hrd-t8"].summary, /new 75\/100\/125 MVA transformer was installed as Holyrood T8 in 2014/);
   assert.match(components["hrd-t7"].summary, /Churchill Falls T31/);
   assert.match(components["hrd-t7"].summary, /finished in 2024/);
   assert.ok(howley.sources.some((reference) => reference.sourceId === "nlh-howley-system-2003"));
   assert.ok(masseyDrive.sources.some((reference) => reference.sourceId === "nlh-system-additions-2001"));
+  assert.ok(bayDEspoir.sources.some((reference) => reference.sourceId === "nlh-bde-one-lines-2016"));
 });
 
 test("2027 transformer register updates Avalon station records", async () => {

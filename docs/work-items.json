@@ -343,7 +343,7 @@
       "dependencies": ["ISL-003", "ISL-005"],
       "completion_evidence": ["research/ISLAND_TRANSFORMER_LEDGER.md", "src/data.js", "tests/data.test.js"],
       "blocker": null,
-      "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, and Buchans transformer records. Holyrood T7 and T8 replacement histories now extend through the 2024 T7 commissioning completion. Nameplate, filed equipment, study-model, and emergency ratings remain separate."
+      "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, Buchans, and Bay d'Espoir transformer records. Holyrood T7 and T8 replacement histories extend through the 2024 T7 commissioning completion. Bay d'Espoir now has separate 1998 station 1 and 2013 station 2 equipment records. Nameplate, filed equipment, study-model, and emergency ratings remain separate."
     },
     {
       "id": "GEN-001",
@@ -355,7 +355,7 @@
       "dependencies": ["ARC-001", "ARC-002"],
       "completion_evidence": ["src/data.js", "research/ISLAND_TRANSFORMER_LEDGER.md"],
       "blocker": null,
-      "notes": "The current site diagram remains explicitly dated as December 2012. Later records establish the 2014 T8 replacement and the 2024 completion of the T7 replacement, but a current full station one-line has not been located."
+      "notes": "The current site diagram remains explicitly dated as December 2012. A 2016 capital appendix contains Holyrood sheet B, revision 17, dated 2014-12-18, but not the full station drawing set. Later records establish the 2014 T8 replacement and the 2024 completion of the T7 replacement. A current full station one-line has not been located."
     },
     {
       "id": "GEN-002",

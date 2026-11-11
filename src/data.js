@@ -240,6 +240,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/July9/Hydro/preTest/May%202001%20Prefiled%20Testimony%20-%20Entire%20Document.pdf"
   },
   {
+    id: "nlh-bde-one-lines-2016",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "2016 Capital Budget Application, Bay d'Espoir Station 1 and Station 2 One-Lines",
+    topics: ["Bay d'Espoir", "generator step-up transformers", "230/69 kV transformation", "generation"],
+    pages: "physical PDF pp. 248 to 249",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/files/application/NLH-2016-Capital-Budget-Application-Volume-III-2015-07-31.pdf"
+  },
+  {
     id: "liberty-supply-review-2014",
     year: 2014,
     organization: "Liberty Consulting Group",
@@ -2206,15 +2216,15 @@ export const islandTerminalRecords = [
     code: "BDE",
     name: "Bay d'Espoir Generating Station",
     status: "verified",
-    facts: [["Transformation", "230/69 kV system interface"], ["2013 plant assignment", "592 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"], ["66 kV circuit", "TL220 to English Harbour West and Barachoix"]],
+    facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA"], ["2013 plant assignment", "592 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"], ["66 kV circuit", "TL220 to English Harbour West and Barachoix"]],
     diagram: {
-      label: "2013 plant interface / 2018 routes",
+      label: "2013 station 2 interface / 2018 routes",
       buses: [{ id: "b1", label: "230 kV station bus", voltage: "230 kV" }, { id: "b2", label: "69 kV station bus", voltage: "69 kV" }],
-      transformers: [{ label: "Station transformation", rating: "Rating not stated on overview", from: "b1", to: "b2" }],
+      transformers: [{ label: "T10", rating: "15/20/25 MVA", from: "b1", to: "b2" }, { label: "T12", rating: "15/20/25 MVA", from: "b1", to: "b2" }],
       circuits: [{ label: "TL202", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL206", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL204", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL231", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL234", destination: "Upper Salmon", bus: "b1" }, { label: "TL267", destination: "Western Avalon", bus: "b1" }, { label: "TL220", destination: "English Harbour West", bus: "b2" }],
       generators: [{ label: "Bay d'Espoir plant", rating: "592 MW assignment", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "BUC",
