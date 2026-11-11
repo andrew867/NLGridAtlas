@@ -18,20 +18,21 @@ Updated: 2026-11-11
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 66 automated tests and the production build.
+- Passed 67 automated tests, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.
+- Added a clickable Stamp's Lane logical one-line that separates the documented 4.16 kV and 12.5 kV banks.
+- Verified the Stamp's Lane diagram at 1440 by 1000 px and 390 by 844 px with no page overflow, out-of-bounds SVG text, browser warnings, or browser errors.
 - Linked documented circuit ends to the available detailed diagram, station record, or island terminal record.
 
 ## Active work
 
 1. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
-2. Add dated logical one-lines where the public record supports them, `AVL-006`.
 
-## Next station target
+## Remaining Avalon evidence target
 
-Stamp's Lane has a four-transformer record, six 66 kV line terminations, ten feeder maps, and later feeder-voltage and transformer-replacement records. A detailed drawing remains blocked on the current 4.16 kV bus arrangement and the remaining feeder-to-transformer assignments.
+The detailed-station pass is complete for the public evidence located to date. Remaining work is not another register-based drawing. It requires protection or operating one-lines that assign feeders to transformer banks and bus sections, especially at Hardwoods, Glendale, Ridge Road, and Stamp's Lane.
 
 Direct circuit navigation is complete where the opposite endpoint has a detailed diagram or station record. TL208 remains labelled to Long Harbour without a destination record.
 

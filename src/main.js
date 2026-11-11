@@ -59,6 +59,7 @@ const stationSectionAnchors = {
   PEP: "#substation-pep",
   PUL: "#substation-pul",
   RRD: "#substation-rrd",
+  SLA: "#substation-sla",
   SJM: "#substation-sjm",
   VIR: "#substation-vir",
   WAV: "#terminal-wav"
@@ -74,6 +75,7 @@ const stationDetailAnchors = {
   PEP: "#substation-pep",
   PUL: "#substation-pul",
   RRD: "#substation-rrd",
+  SLA: "#substation-sla",
   SJM: "#substation-sjm",
   VIR: "#substation-vir",
   WAV: "#terminal-wav"

@@ -1007,6 +1007,19 @@ export const staticClaims = [
     ]
   },
   {
+    id: "stamps-lane-substation-one-line",
+    scope: "Stamp's Lane 66 kV circuits, transformer voltage banks and documented feeder-voltage assignments",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2006-handbook", pages: "PDF pp. 6 to 7 and 16" },
+      { sourceId: "np-2011-capital-stations", pages: "physical PDF pp. 297 to 298" },
+      { sourceId: "np-2014-pub-np-276", pages: "physical PDF p. 6; attachment p. 4" },
+      { sourceId: "np-2025-ca-np-255", pages: "physical PDF p. 4" },
+      { sourceId: "np-2026-ca-np-065", pages: "physical PDF p. 1" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 550" }
+    ]
+  },
+  {
     id: "western-avalon-soldiers-pond-design",
     scope: "Preliminary Western Avalon to Soldiers Pond line design and seasonal ratings",
     status: "proposed",
@@ -1904,6 +1917,48 @@ export const components = {
     data: [["Voltage", "4.16 kV"], ["Supplying transformer", "SJM-T4"]],
     sources: [sourceRef("np-2011-capital-stations", "physical PDF pp. 413 to 416")]
   },
+  "sla-summary": {
+    diagram: "sla", status: "verified", code: "SLA / DOCUMENTED ARRANGEMENT", title: "Stamp's Lane Substation",
+    summary: "Six 66 kV circuits connect to four distribution transformers. The 2011 station record separates the 4.16 kV and 12.5 kV feeder systems; the 2027 register lists SLA-T1 and SLA-T2 at 66/4.2 kV and SLA-T3 and SLA-T4 at 66/12.5 kV.",
+    data: [["66 kV circuits", "13L, 14L, 15L, 31L, 69L and 70L"], ["4.16 kV feeder system", "SLA-T1, 13.3 MVA; SLA-T2, 10.4 MVA"], ["12.5 kV feeder system", "SLA-T3 and SLA-T4; 25 MVA each"], ["2011 distribution record", "Five 4.16 kV feeders and six 12.5 kV feeders"]],
+    sources: [sourceRef("np-2006-handbook", "PDF pp. 6 to 7 and 16"), sourceRef("np-2011-capital-stations", "physical PDF pp. 297 to 298"), sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  "sla-t1": {
+    diagram: "sla", status: "verified", code: "SLA / T1", title: "Stamp's Lane transformer SLA-T1",
+    summary: "The 2027 transformer register identifies SLA-T1 as a 13.3 MVA, 66/4.2 kV transformer.",
+    data: [["Operating voltage", "66/4.2 kV"], ["Rating", "13.3 MVA"], ["2026 forecast", "3.75 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  "sla-t2": {
+    diagram: "sla", status: "verified", code: "SLA / T2", title: "Stamp's Lane transformer SLA-T2",
+    summary: "The 2027 transformer register identifies SLA-T2 as a 10.4 MVA, 66/4.2 kV transformer.",
+    data: [["Operating voltage", "66/4.2 kV"], ["Rating", "10.4 MVA"], ["2026 forecast", "3.30 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  "sla-t3": {
+    diagram: "sla", status: "verified", code: "SLA / T3", title: "Stamp's Lane transformer SLA-T3",
+    summary: "SLA-T3 is a 25 MVA, 66/12.5 kV transformer. The 2024 supply table assigns SLA-08 to it.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["2026 forecast", "19.86 MVA"], ["Documented feeder", "SLA-08"]],
+    sources: [sourceRef("np-2025-ca-np-255", "physical PDF p. 4"), sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  "sla-t4": {
+    diagram: "sla", status: "verified", code: "SLA / T4", title: "Stamp's Lane transformer SLA-T4",
+    summary: "SLA-T4 is a 25 MVA, 66/12.5 kV transformer. Newfoundland Power replaced it in 2021 with the repaired former PUL-T2 unit; the 2024 supply table assigns SLA-11 to it.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["2026 forecast", "20.49 MVA"], ["Replacement", "Repaired PUL-T2 installed in 2021"], ["Documented feeder", "SLA-11"]],
+    sources: [sourceRef("np-2026-ca-np-065", "physical PDF p. 1"), sourceRef("np-2025-ca-np-255", "physical PDF p. 4"), sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  ...Object.fromEntries(["02", "03", "05", "06", "07", "08", "09", "10", "11"].map((feeder) => {
+    const lowVoltage = ["02", "03", "05", "06", "07"].includes(feeder);
+    const transformer = feeder === "08" ? "SLA-T3" : feeder === "11" ? "SLA-T4" : null;
+    return [`sla-${feeder}`, {
+      diagram: "sla", status: "verified", code: `SLA / SLA-${feeder}`, title: `Stamp's Lane feeder SLA-${feeder}`,
+      summary: transformer
+        ? `The 2014 feeder record identifies SLA-${feeder} at ${lowVoltage ? "4.16" : "12.47"} kV; the 2024 supply table assigns it to ${transformer}.`
+        : `The 2014 feeder record identifies SLA-${feeder} at ${lowVoltage ? "4.16" : "12.47"} kV.`,
+      data: [["Voltage", lowVoltage ? "4.16 kV" : "12.47 kV"], ...(transformer ? [["Supplying transformer", transformer]] : [])],
+      sources: [sourceRef("np-2014-pub-np-276", "physical PDF p. 6; attachment p. 4"), ...(transformer ? [sourceRef("np-2025-ca-np-255", "physical PDF p. 4")] : [])]
+    }];
+  })),
   "gdl-summary": {
     diagram: "gdl", status: "verified", code: "GDL / SUBSTATION", title: "Glendale Substation",
     summary: "Circuits 18L and 73L connect Glendale to Goulds and Hardwoods. Three 25 MVA transformers supply the distribution bus and the GDL-01 through GDL-09 feeder record.",

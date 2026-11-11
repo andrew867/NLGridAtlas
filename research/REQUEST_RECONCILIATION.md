@@ -1,6 +1,6 @@
 # Request reconciliation
 
-Updated: 2026-11-10
+Updated: 2026-11-11
 
 ## Implemented
 
@@ -26,10 +26,11 @@ Updated: 2026-11-10
 - [x] All feeder-map images currently extracted from the archive are linked from their station records.
 - [x] The 2016 PUL-02, RRD-10, and PUL-05 route drawings are extracted and linked from Pulpit Rock, Ridge Road, and Virginia Waters.
 - [x] The 2022 PUL-03 and VIR-01 route drawings are linked to their measured project bases and completion records.
+- [x] Dated logical one-lines added for Glendale, Virginia Waters, Stamp's Lane, St. John's Main, and Pepperell, limited to the topology supported by public filings.
 
 ## Evidence gaps
 
-- [ ] Current one-lines for Glendale, Virginia Waters, Stamp's Lane, St. John's Main, and Pepperell.
+- [ ] Current operating one-lines for Glendale, Virginia Waters, Stamp's Lane, St. John's Main, and Pepperell. Dated logical diagrams are published, but current breaker and bus-section arrangements were not located.
 - [ ] Current feeder-to-transformer and bus-section assignments for stations that have only register data.
 - [ ] Current circuit and feeder registers. The complete available register is dated June 2005.
 - [ ] Feeder map sheets beyond those preserved for Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, Stamp's Lane, King's Bridge, Pepperell, and Virginia Waters. The HWD-08 route and recloser drawing is preserved; the CA-NP-020 attachment has no HWD-08 feeder sheet.

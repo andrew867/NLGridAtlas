@@ -133,7 +133,7 @@ test("network links use registered circuit endpoints and page anchors", async ()
     assert.match(html, new RegExp(`href="${href}"`), `missing network link: ${href}`);
   }
   assert.match(html, /data-station-record="BCV"/);
-  assert.match(html, /data-station-record="SLA"/);
+  assert.match(html, /href="#substation-sla"/);
   assert.match(html, /data-hydro-terminal-record="SUN"/);
   assert.match(html, /data-hydro-terminal-record="CBC"/);
   assert.match(html, /TL203[\s\S]*SUNNYSIDE/);
@@ -844,6 +844,27 @@ test("St. John's Main retains the dated 2015 parallel-bank arrangement", async (
   assert.match(components["sjm-t4"].data.flat().join(" "), /2027 transformer table Not listed/);
 });
 
+test("Stamp's Lane separates the documented 4.16 and 12.5 kV banks", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(html, /data-claim-id="stamps-lane-substation-one-line"/);
+  assert.match(main, /SLA: "#substation-sla"/);
+  for (const transformer of ["t1", "t2", "t3", "t4"]) {
+    assert.match(html, new RegExp(`data-component="sla-${transformer}"`));
+    assert.ok(components[`sla-${transformer}`]);
+  }
+  for (const feeder of ["02", "03", "05", "06", "07", "08", "09", "10", "11"]) {
+    assert.match(html, new RegExp(`data-component="sla-${feeder}"`));
+    assert.ok(components[`sla-${feeder}`]);
+  }
+  assert.match(components["sla-summary"].data.flat().join(" "), /SLA-T1, 13.3 MVA; SLA-T2, 10.4 MVA/);
+  assert.match(components["sla-t3"].data.flat().join(" "), /19.86 MVA/);
+  assert.match(components["sla-t4"].data.flat().join(" "), /Repaired PUL-T2 installed in 2021/);
+  assert.match(components["sla-05"].data.flat().join(" "), /4.16 kV/);
+  assert.match(components["sla-08"].data.flat().join(" "), /SLA-T3/);
+  assert.match(components["sla-11"].data.flat().join(" "), /SLA-T4/);
+});
+
 test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);
@@ -866,9 +887,9 @@ test("documented circuit links open the available other-end record", async () =>
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(html, /data-hydro-terminal-record="CBC" aria-label="TL237 to Come By Chance"/);
   assert.match(html, /data-hydro-terminal-record="SUN" aria-label="TL203 to Sunnyside"/);
-  assert.match(html, /data-station-record="SLA" aria-label="31L to Stamp's Lane"/);
-  assert.match(html, /data-station-record="SLA" aria-label="70L to Stamp's Lane"/);
-  assert.match(html, /data-station-record="SLA" aria-label="14L to Stamp's Lane Substation"/);
+  assert.match(html, /href="#substation-sla" aria-label="31L to Stamp's Lane"/);
+  assert.match(html, /href="#substation-sla" aria-label="70L to Stamp's Lane"/);
+  assert.match(html, /href="#substation-sla" aria-label="14L to Stamp's Lane Substation"/);
   assert.match(main, /link\.matches\("\[data-station-record\], \[data-hydro-terminal-record\]"\)/);
 });
 
