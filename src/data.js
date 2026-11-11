@@ -210,6 +210,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2023/NLH2023Capital_SUPP_SpareGenerator/app/From%20NLH%20-%20Approval%20of%20the%20Purchase%20of%20a%20Spare%20Generator%20Step-Up%20Transformer%20-%202023-09-21.PDF"
   },
   {
+    id: "nlh-2020-holyrood-unit3",
+    year: 2019,
+    organization: "NL Hydro",
+    title: "2020 Capital Budget Application, Rewind Unit 3 Stator",
+    topics: ["Holyrood", "Unit 3", "synchronous condenser", "pony motor", "SSS clutch", "generator stator"],
+    pages: "physical PDF pp. 135 to 138; project pp. 1 to 4",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2020/NLH2020Capital/applications/From%20NLH%20-%202020%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202019-08-01.PDF"
+  },
+  {
+    id: "nlh-2021-capex",
+    year: 2022,
+    organization: "NL Hydro",
+    title: "2021 Capital Expenditures and Carryover Report",
+    topics: ["Holyrood", "Unit 3", "generator stator", "capital expenditure"],
+    pages: "physical PDF p. 71; Appendix A p. 3",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NLH%20-%202021%20Capital%20Expenditures%20and%20Carryover%20Report%20-%20Revision%201%20-%202022-03-08.pdf"
+  },
+  {
+    id: "nlh-2022-april-energy",
+    year: 2022,
+    organization: "NL Hydro",
+    title: "Monthly Energy Supply Report for April 2022",
+    topics: ["Holyrood", "Unit 3", "synchronous condenser", "Labrador-Island Link", "operating hours"],
+    pages: "physical PDF pp. 7 to 8; report pp. 4 to 5",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/20152019energysupply/From%20NLH%20-%20Energy%20Supply%20Monthly%20Report%20-%20April%202022%20-%202022-05-17.PDF"
+  },
+  {
     id: "vhf-2027-status",
     year: 2026,
     organization: "NL Hydro",
@@ -686,6 +716,17 @@ export const staticClaims = [
     ]
   },
   {
+    id: "holyrood-unit3-reversible-sc",
+    scope: "Holyrood Unit 3 reversible generator and synchronous-condenser arrangement",
+    status: "verified",
+    sources: [
+      { sourceId: "nlh-2020-holyrood-unit3", pages: "physical PDF pp. 135 to 138" },
+      { sourceId: "nlh-2021-capex", pages: "physical PDF p. 71" },
+      { sourceId: "nlh-2022-april-energy", pages: "physical PDF pp. 7 to 8" },
+      { sourceId: "nlh-2024-rra", pages: "physical PDF pp. 100 and 182" }
+    ]
+  },
+  {
     id: "hardwoods-substation-one-line",
     scope: "Hardwoods Newfoundland Power transformers, 12.5 kV and 25 kV buses, circuits and feeders",
     status: "verified",
@@ -823,6 +864,15 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "1986",
+    category: "station",
+    title: "Holyrood Unit 3 gained synchronous-condenser capability",
+    body: "The retrofit added a pony motor, a synchro-self-shifting clutch, controls, and auxiliaries. The generator rotor is decoupled from the steam turbine before synchronous-condenser operation.",
+    sourceId: "nlh-2020-holyrood-unit3",
+    pages: "physical PDF p. 136; project p. 2",
+    status: "verified"
+  },
+  {
     date: "1989",
     category: "telecom",
     title: "Hydro purchased the VHF system",
@@ -937,6 +987,15 @@ export const timeline = [
     body: "An internal high-voltage winding fault removed the 1989 Federal Pioneer 115/152/190 MVA unit. Hydro installed its 1970 Canadian General Electric predecessor, rated 170 MVA by nameplate and approximately 150 MVA with four cooler motors operating.",
     sourceId: "nlh-2022-holyrood-t2",
     pages: "PDF pp. 5 to 8, report pp. 1 to 4",
+    status: "verified"
+  },
+  {
+    date: "2022-04-15",
+    category: "station",
+    title: "Holyrood Unit 3 returned in synchronous-condenser mode",
+    body: "The conversion ran from April 4 to April 15. Unit 3 then operated for 373 hours in synchronous-condenser mode during April.",
+    sourceId: "nlh-2022-april-energy",
+    pages: "physical PDF pp. 7 to 8; report pp. 4 to 5",
     status: "verified"
   },
   {
@@ -1167,9 +1226,9 @@ export const components = {
   },
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
-    summary: "The drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. The gas turbine connects through T9 to station service.",
-    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Gas turbine", "15 MW through T9"], ["2030 planning case", "Units 1 and 2 retired; Unit 3 converted to synchronous-condensing mode"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182")]
+    summary: "The drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. Unit 3 can operate as a generator or synchronous condenser.",
+    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Gas turbine", "15 MW through T9"], ["Unit 3", "Reversible generator and synchronous condenser"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138")]
   },
   "hrd-t1": {
     diagram: "hrd", status: "verified", code: "HRD / T1", title: "Holyrood generator transformer T1",
@@ -1190,10 +1249,10 @@ export const components = {
     sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14")]
   },
   "hrd-g3": {
-    diagram: "hrd", status: "proposed", code: "HRD / UNIT 3", title: "Holyrood Unit 3 planning case",
-    summary: "The 2024 reliability study permanently converts Unit 3 to synchronous-condensing mode in spring 2030.",
-    data: [["Planning date", "Spring 2030"], ["Unit 1", "Retired in planning case"], ["Unit 2", "Retired in planning case"], ["Unit 3", "Permanent synchronous-condensing conversion"]],
-    sources: [sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182")]
+    diagram: "hrd", status: "verified", code: "HRD / UNIT 3", title: "Holyrood Unit 3 generator",
+    summary: "Unit 3 has had reversible synchronous-condenser capability since 1986. The generator is decoupled from the steam turbine and started by a pony motor through an SSS clutch. Permanent synchronous-condensing operation remains a spring 2030 planning case.",
+    data: [["Generator", "185 MVA, 0.85 power factor"], ["Stator", "16 kV, hydrogen cooled"], ["Rotor", "3,600 rpm"], ["Synchronous condenser", "Approximately 70 MVAR in the 2020 filing"], ["Starting system", "Pony motor and SSS clutch"], ["2016 work", "Rotor rewind"], ["2021 actual expenditure", "$7.2857 million for the stator-rewind project"], ["April 2022 operation", "373 hours as a synchronous condenser"], ["Spring 2030 planning case", "Permanent synchronous-condensing operation"]],
+    sources: [sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2021-capex", "physical PDF p. 71"), sourceRef("nlh-2022-april-energy", "physical PDF pp. 7 to 8"), sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182")]
   },
   "hrd-t6": {
     diagram: "hrd", status: "verified", code: "HRD / T6", title: "Holyrood transformer T6",

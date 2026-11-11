@@ -32,12 +32,12 @@ Updated: 2026-11-10
 - [ ] Current circuit and feeder registers. The complete available register is dated June 2005.
 - [ ] Feeder map sheets beyond those preserved for Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, Stamp's Lane, King's Bridge, Pepperell, and Virginia Waters. The HWD-08 route and recloser drawing is preserved; the CA-NP-020 attachment has no HWD-08 feeder sheet.
 - [ ] Geographic coordinates or route data suitable for a measured line map. The available utility maps are semi-geographic.
-- [ ] Holyrood Unit 3 post-conversion as-built drawing. The 2024 reliability study places permanent conversion in spring 2030.
+- [ ] Holyrood Unit 3 permanent post-steam as-built drawing. The reversible synchronous-condenser arrangement dates to 1986; the 2024 reliability study places permanent post-steam operation in spring 2030.
 - [ ] Pulpit Rock replacement-transformer commissioning record or post-work one-line. The 12.5 kV feeder-bus record is established; the replacement installation status remains open.
 
 ## Next archive searches
 
 1. Search Newfoundland Power capital applications and RFIs for station-specific protection drawings and one-lines.
-2. Search Hydro uploads for issued-for-construction and commissioning records for the Avalon combustion turbine and Holyrood Unit 3.
+2. Search Hydro uploads for issued-for-construction and commissioning records for the Avalon combustion turbine and Holyrood Unit 3 permanent post-steam arrangement.
 3. Extract additional feeder map sheets when a filing identifies their physical PDF pages.
 4. Replace the new western island station records with current detailed one-lines when source drawings are found.

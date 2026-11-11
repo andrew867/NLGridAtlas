@@ -633,7 +633,9 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.ok(sourceIds.has("nlh-2024-rra"));
   assert.ok(sourceIds.has("nlh-2025-capital"));
   assert.ok(sourceIds.has("nlh-2025-avalon-ct"));
-  assert.equal(components["hrd-g3"].status, "proposed");
+  assert.equal(components["hrd-g3"].status, "verified");
+  assert.match(components["hrd-g3"].data.flat().join(" "), /Pony motor and SSS clutch/);
+  assert.match(components["hrd-g3"].data.flat().join(" "), /April 2022 operation 373 hours/);
   assert.match(components["hrd-g3"].data.flat().join(" "), /Spring 2030/);
   assert.match(components["wav-summary"].data.flat().join(" "), /Replacement began in 2019/);
   assert.match(components["hwd-summary"].data.flat().join(" "), /T5 45\/60\/75 MVA, 66\/13.8 kV/);
