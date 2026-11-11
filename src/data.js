@@ -13,7 +13,7 @@ export const sources = [
     id: "np-2009-feeder-list",
     year: 2008,
     organization: "Newfoundland Power",
-    title: "PUB-NP-5, Substation and Feeder Listing",
+    title: "PUB-NP-5, Republished Substation and Feeder Listing",
     topics: ["substations", "station codes", "distribution feeders"],
     pages: "PDF pp. 3 to 8; attachment pp. 1 to 6",
     status: "verified",

@@ -73,6 +73,12 @@ python scripts\search_pub_index.py C:\src\misc\PUB\metadata\pub.sqlite '"Transmi
 The register-successor search and its exact page references are recorded in
 [research/NP_REGISTER_SUCCESSORS.md](research/NP_REGISTER_SUCCESSORS.md).
 
+Regenerate the text-native feeder and transmission-loading layers:
+
+```powershell
+python scripts\extract_np_register_layers.py --feeder-pdf C:\path\to\PUB-NP-5.pdf --loading-pdf C:\path\to\PUB-NP-275.pdf --out research\derived\np-register-layers-2008-2013.json
+```
+
 ## Repository layout
 
 - `src/`: site code and curated evidence data

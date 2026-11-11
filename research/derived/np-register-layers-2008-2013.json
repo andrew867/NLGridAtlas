@@ -1,0 +1,3541 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "feeder_register": {
+      "title": "PUB-NP-5, Substation/Feeder Listing",
+      "url": "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/rfi/PUB-NP-5.pdf",
+      "physical_pages": "3 to 8",
+      "sha256": "69a79ae0541fdf0f98e03400f20fdc2d8f47245d178c6e9a98e7ada3a4a45344"
+    },
+    "line_loading": {
+      "title": "PUB-NP-275, 2013 Transmission Line Loading",
+      "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-275.pdf",
+      "physical_pages": "3 to 11",
+      "sha256": "a101b47efca9b9b4bf77f07bd942f519404bf89b98a2c291b726f1323d2ef3f7"
+    }
+  },
+  "feeder_stations": [
+    {
+      "code": "ABC",
+      "name": "Abrahams Cove",
+      "feeders": [
+        "ABC-01",
+        "ABC-02"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "ALX",
+      "name": "Alexander Bay",
+      "feeders": [],
+      "source_page": 3
+    },
+    {
+      "code": "AUS",
+      "name": "Argentia - USN",
+      "feeders": [],
+      "source_page": 3
+    },
+    {
+      "code": "BRB",
+      "name": "Bay Roberts",
+      "feeders": [
+        "BRB-01",
+        "BRB-02",
+        "BRB-03",
+        "BRB-04",
+        "BRB-05"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BLA",
+      "name": "Bay L'Argent",
+      "feeders": [
+        "BLA-01"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BVJ",
+      "name": "Baie Verte Junction",
+      "feeders": [
+        "BVJ-01"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BVM",
+      "name": "Baie Verte Mines",
+      "feeders": [],
+      "source_page": 3
+    },
+    {
+      "code": "BVS",
+      "name": "Bayview",
+      "feeders": [
+        "BVS-01",
+        "BVS-02",
+        "BVS-03",
+        "BVS-04"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BHD",
+      "name": "Berry Head",
+      "feeders": [
+        "BHD-01"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BIG",
+      "name": "Big Pond",
+      "feeders": [
+        "BIG-01",
+        "BIG-02"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BFS",
+      "name": "Bishop’s Falls",
+      "feeders": [
+        "BFS-01",
+        "BFS-02"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BLK",
+      "name": "Blaketown",
+      "feeders": [
+        "BLK-01",
+        "BLK-02"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BVA",
+      "name": "Bonavista",
+      "feeders": [
+        "BVA-01",
+        "BVA-02",
+        "BVA-03"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BBK",
+      "name": "Bottom Brook Plant",
+      "feeders": [],
+      "source_page": 3
+    },
+    {
+      "code": "BOT",
+      "name": "Botwood",
+      "feeders": [
+        "BOT-01",
+        "BOT-02",
+        "BOT-03"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BOY",
+      "name": "Boyd's Cove",
+      "feeders": [],
+      "source_page": 3
+    },
+    {
+      "code": "BCV",
+      "name": "Broad Cove",
+      "feeders": [
+        "BCV-01",
+        "BCV-02",
+        "BCV-03",
+        "BCV-04"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "BUC",
+      "name": "Buchans",
+      "feeders": [
+        "BUC-01",
+        "BUC-02"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "CAB",
+      "name": "Cape Broyle",
+      "feeders": [
+        "CAB-01"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "CAR",
+      "name": "Carbonear",
+      "feeders": [
+        "CAR-01",
+        "CAR-02",
+        "CAR-03",
+        "CAR-04"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "CAT",
+      "name": "Catalina",
+      "feeders": [
+        "CAT-01",
+        "CAT-02",
+        "CAT-03"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "CHA",
+      "name": "Chamberlains",
+      "feeders": [
+        "CHA-01",
+        "CHA-02",
+        "CHA-03"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "CLV",
+      "name": "Clarenville",
+      "feeders": [
+        "CLV-01",
+        "CLV-02",
+        "CLV-03"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "CLK",
+      "name": "Clarke's Pond",
+      "feeders": [
+        "CLK-02",
+        "CLK-03",
+        "CLK-04"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "COB",
+      "name": "Cobb's Pond",
+      "feeders": [
+        "COB-01",
+        "COB-02",
+        "COB-03"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "COL",
+      "name": "Colliers",
+      "feeders": [
+        "COL-01",
+        "COL-02"
+      ],
+      "source_page": 3
+    },
+    {
+      "code": "DLK",
+      "name": "Deer Lake",
+      "feeders": [
+        "DLK-01",
+        "DLK-03",
+        "DLK-04"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "DOY",
+      "name": "Doyle's",
+      "feeders": [
+        "DOY-01"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "DUN",
+      "name": "Dunville",
+      "feeders": [
+        "DUN-01",
+        "DUN-02"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "FPD",
+      "name": "Fall Pond Plant",
+      "feeders": [],
+      "source_page": 4
+    },
+    {
+      "code": "FER",
+      "name": "Fermeuse",
+      "feeders": [
+        "FER-01"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "FRN",
+      "name": "Frenchman's Cove",
+      "feeders": [
+        "FRN-01",
+        "FRN-02"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GAL",
+      "name": "Gallants",
+      "feeders": [
+        "GAL-01",
+        "GAL-03",
+        "GAL-04",
+        "GAL-05"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GAM",
+      "name": "Gambo",
+      "feeders": [
+        "GAM-01",
+        "GAM-02"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GAN",
+      "name": "Gander",
+      "feeders": [
+        "GAN-01",
+        "GAN-02",
+        "GAN-03",
+        "GAN-04"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GBY",
+      "name": "Gander Bay",
+      "feeders": [
+        "GBY-01",
+        "GBY-02",
+        "GBY-03"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GAR",
+      "name": "Garnish",
+      "feeders": [
+        "GAR-01"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GIL",
+      "name": "Gilliams",
+      "feeders": [
+        "GIL-01",
+        "GIL-02"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GDL",
+      "name": "Glendale",
+      "feeders": [
+        "GDL-01",
+        "GDL-02",
+        "GDL-03",
+        "GDL-04",
+        "GDL-05",
+        "GDL-06"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GLN",
+      "name": "Glenwood",
+      "feeders": [
+        "GLN-01"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GLV",
+      "name": "Glovertown",
+      "feeders": [
+        "GLV-01",
+        "GLV-02"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GOU",
+      "name": "Goulds",
+      "feeders": [
+        "GOU-01",
+        "GOU-02",
+        "GOU-03"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GBS",
+      "name": "Grand Bay",
+      "feeders": [
+        "GBS-01",
+        "GBS-02"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GBE",
+      "name": "Grand Beach",
+      "feeders": [
+        "GBE-01"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GFS",
+      "name": "Grand Falls",
+      "feeders": [
+        "GFS-01",
+        "GFS-03",
+        "GFS-04",
+        "GFS-05",
+        "GFS-06",
+        "GFS-07",
+        "GFS-08",
+        "GFS-09",
+        "GFS-10"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GRH",
+      "name": "Greenhill",
+      "feeders": [
+        "GRH-01",
+        "GRH-02",
+        "GRH-03"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "GPD",
+      "name": "Greenspond",
+      "feeders": [
+        "GPD-01"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "HGR",
+      "name": "Harbour Grace",
+      "feeders": [
+        "HGR-01",
+        "HGR-02",
+        "HGR-03"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "HWD",
+      "name": "Hardwoods",
+      "feeders": [
+        "HWD-01",
+        "HWD-02",
+        "HWD-03",
+        "HWD-04",
+        "HWD-06",
+        "HWD-07",
+        "HWD-08"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "HBS",
+      "name": "Hare Bay",
+      "feeders": [
+        "HBS-01",
+        "HBS-02"
+      ],
+      "source_page": 4
+    },
+    {
+      "code": "HAR",
+      "name": "Harmon",
+      "feeders": [
+        "HAR-01",
+        "HAR-02"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "HCT",
+      "name": "Heart's Content",
+      "feeders": [
+        "HCT-01"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "HOL",
+      "name": "Holyrood",
+      "feeders": [
+        "HOL-01",
+        "HOL-02"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "HCP",
+      "name": "Horsechops Plant",
+      "feeders": [],
+      "source_page": 5
+    },
+    {
+      "code": "HOW",
+      "name": "Howley",
+      "feeders": [
+        "HOW-01"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "HUM",
+      "name": "Humber",
+      "feeders": [
+        "HUM-01",
+        "HUM-04",
+        "HUM-07",
+        "HUM-08",
+        "HUM-09"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "IND",
+      "name": "Indian Cove",
+      "feeders": [],
+      "source_page": 5
+    },
+    {
+      "code": "ILC",
+      "name": "Upper Island Cove",
+      "feeders": [
+        "ILC-01",
+        "ILC-02"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "ISL",
+      "name": "Islington",
+      "feeders": [
+        "ISL-01"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "JON",
+      "name": "Jonathan's Pond",
+      "feeders": [
+        "JON-T1"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "KEL",
+      "name": "Kelligrews",
+      "feeders": [
+        "KEL-01",
+        "KEL-02"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "KEN",
+      "name": "Kenmount",
+      "feeders": [
+        "KEN-02",
+        "KEN-03",
+        "KEN-04"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "KBR",
+      "name": "King's Bridge",
+      "feeders": [
+        "KBR-01",
+        "KBR-02",
+        "KBR-03",
+        "KBR-04",
+        "KBR-05",
+        "KBR-06",
+        "KBR-07",
+        "KBR-08",
+        "KBR-09",
+        "KBR-10",
+        "KBR-11",
+        "KBR-12"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "LAU",
+      "name": "Laurentian",
+      "feeders": [
+        "LAU-01",
+        "LAU-02"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "LWN",
+      "name": "Lawn",
+      "feeders": [],
+      "source_page": 5
+    },
+    {
+      "code": "LET",
+      "name": "Lethbridge",
+      "feeders": [
+        "LET-01"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "LEW",
+      "name": "Lewisporte",
+      "feeders": [
+        "LEW-01",
+        "LEW-02",
+        "LEW-03",
+        "LEW-04"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "LLK",
+      "name": "Linton Lake",
+      "feeders": [
+        "LLK-01",
+        "LLK-02",
+        "LLK-03"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "LOK",
+      "name": "Lockston",
+      "feeders": [
+        "LOK-01"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "LGL",
+      "name": "Long Lake",
+      "feeders": [
+        "LGL-01",
+        "LGL-02"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "LBK",
+      "name": "Lookout Brook Plant",
+      "feeders": [],
+      "source_page": 5
+    },
+    {
+      "code": "MMT",
+      "name": "Marble Mountain",
+      "feeders": [
+        "MMT-01"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "MSY",
+      "name": "Marystown",
+      "feeders": [
+        "MSY-01",
+        "MSY-02",
+        "MSY-03",
+        "MSY-04"
+      ],
+      "source_page": 5
+    },
+    {
+      "code": "MAS",
+      "name": "Massey Drive",
+      "feeders": [],
+      "source_page": 5
+    },
+    {
+      "code": "MUN",
+      "name": "Memorial",
+      "feeders": [],
+      "source_page": 6
+    },
+    {
+      "code": "MIL",
+      "name": "Milton",
+      "feeders": [
+        "MIL-01",
+        "MIL-02"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "MOB",
+      "name": "Mobile",
+      "feeders": [
+        "MOB-01",
+        "MOB-02"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "MOL",
+      "name": "Molloy's Lane",
+      "feeders": [
+        "MOL-01",
+        "MOL-02",
+        "MOL-03",
+        "MOL-04",
+        "MOL-05",
+        "MOL-06",
+        "MOL-08",
+        "MOL-09"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "MKS",
+      "name": "Monkstown",
+      "feeders": [
+        "MKS-01",
+        "MKS-02"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "MRP",
+      "name": "Morris Plant",
+      "feeders": [],
+      "source_page": 6
+    },
+    {
+      "code": "MUS",
+      "name": "Musgrave Harbour",
+      "feeders": [],
+      "source_page": 6
+    },
+    {
+      "code": "NCH",
+      "name": "New Chelsea",
+      "feeders": [
+        "NCH-01",
+        "NCH-02",
+        "NCH-03"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "NHR",
+      "name": "New Harbour",
+      "feeders": [
+        "NHR-01",
+        "NHR-02"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "QTZ",
+      "name": "Newlite Enterprises",
+      "feeders": [
+        "QTZ-01"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "NWB",
+      "name": "Northwest Brook",
+      "feeders": [
+        "NWB-01",
+        "NWB-02"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "NDJ",
+      "name": "Notre Dame Junction",
+      "feeders": [],
+      "source_page": 6
+    },
+    {
+      "code": "OPL",
+      "name": "Old Perlican",
+      "feeders": [
+        "OPL-01",
+        "OPL-02",
+        "OPL-03"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "OXP",
+      "name": "Oxen Pond",
+      "feeders": [
+        "OXP-01"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "PAS",
+      "name": "Pasadena",
+      "feeders": [
+        "PAS-01",
+        "PAS-02"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "PEP",
+      "name": "Pepperell",
+      "feeders": [
+        "PEP-01",
+        "PEP-02",
+        "PEP-03",
+        "PEP-04"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "PHR",
+      "name": "Petty Harbour",
+      "feeders": [
+        "PHR-01"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "PBK",
+      "name": "Pierre's Brook Plant",
+      "feeders": [],
+      "source_page": 6
+    },
+    {
+      "code": "PIT",
+      "name": "Pitman's Pond Plant",
+      "feeders": [],
+      "source_page": 6
+    },
+    {
+      "code": "PJN",
+      "name": "Placentia Junction",
+      "feeders": [
+        "PJN-01"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "PBD",
+      "name": "Port Blandford",
+      "feeders": [
+        "PBD-01"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "PUN",
+      "name": "Port Union",
+      "feeders": [],
+      "source_page": 6
+    },
+    {
+      "code": "PAB",
+      "name": "Port aux Basques",
+      "feeders": [
+        "PAB-03",
+        "PAB-05"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "PRC",
+      "name": "Princeton Pond",
+      "feeders": [],
+      "source_page": 6
+    },
+    {
+      "code": "PUL",
+      "name": "Pulpit Rock",
+      "feeders": [
+        "PUL-01",
+        "PUL-02",
+        "PUL-03"
+      ],
+      "source_page": 6
+    },
+    {
+      "code": "RBK",
+      "name": "Rattling Brook",
+      "feeders": [
+        "RBK-01"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "RRD",
+      "name": "Ridge Road",
+      "feeders": [
+        "RRD-02",
+        "RRD-03",
+        "RRD-04",
+        "RRD-05",
+        "RRD-06",
+        "RRD-07",
+        "RRD-08",
+        "RRD-09",
+        "RRD-10"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "RVH",
+      "name": "Riverhead",
+      "feeders": [
+        "RVH-01",
+        "RVH-02"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "ROB",
+      "name": "Robinsons",
+      "feeders": [
+        "ROB-01",
+        "ROB-02"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "ROP",
+      "name": "Rocky Pond Plant",
+      "feeders": [],
+      "source_page": 7
+    },
+    {
+      "code": "RBH",
+      "name": "Rose Blanche Plant",
+      "feeders": [],
+      "source_page": 7
+    },
+    {
+      "code": "RFD",
+      "name": "Roycefield Mine",
+      "feeders": [],
+      "source_page": 7
+    },
+    {
+      "code": "SPO",
+      "name": "Salt Pond",
+      "feeders": [
+        "SPO-01",
+        "SPO-02",
+        "SPO-03"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "SBK",
+      "name": "Sandy Brook Plant",
+      "feeders": [],
+      "source_page": 7
+    },
+    {
+      "code": "SCV",
+      "name": "Seal Cove",
+      "feeders": [
+        "SCV-01",
+        "SCV-02"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "SCR",
+      "name": "Seal Cove Road",
+      "feeders": [
+        "SCR-01",
+        "SCR-02"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "SPR",
+      "name": "Springdale",
+      "feeders": [
+        "SPR-01",
+        "SPR-02",
+        "SPR-03",
+        "SPR-04"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "SPF",
+      "name": "Springfield",
+      "feeders": [
+        "SPF-01",
+        "SPF-02",
+        "SPF-03"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "SCT",
+      "name": "St. Catherine's",
+      "feeders": [
+        "SCT-01",
+        "SCT-02"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "STG",
+      "name": "St. George's",
+      "feeders": [
+        "STG-01",
+        "STG-02"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "SJD",
+      "name": "St. John's Diesel",
+      "feeders": [],
+      "source_page": 7
+    },
+    {
+      "code": "SJM",
+      "name": "St. John's Main",
+      "feeders": [
+        "SJM-01",
+        "SJM-02",
+        "SJM-03",
+        "SJM-04",
+        "SJM-05",
+        "SJM-06",
+        "SJM-07",
+        "SJM-08",
+        "SJM-09",
+        "SJM-10",
+        "SJM-11",
+        "SJM-12",
+        "SJM-13",
+        "SJM-14"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "SLA",
+      "name": "Stamp's Lane",
+      "feeders": [
+        "SLA-01",
+        "SLA-02",
+        "SLA-03",
+        "SLA-05",
+        "SLA-06",
+        "SLA-07",
+        "SLA-08",
+        "SLA-09",
+        "SLA-10",
+        "SLA-11",
+        "SLA-12",
+        "SLA-13"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "STX",
+      "name": "Stephenville Crossing",
+      "feeders": [
+        "STX-01"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "STV",
+      "name": "Stephenville",
+      "feeders": [],
+      "source_page": 7
+    },
+    {
+      "code": "SUM",
+      "name": "Summerford",
+      "feeders": [
+        "SUM-01",
+        "SUM-02"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "SMV",
+      "name": "Summerville",
+      "feeders": [
+        "SMV-01"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "SUN",
+      "name": "Sunnyside",
+      "feeders": [
+        "SUN-01",
+        "SUN-03"
+      ],
+      "source_page": 7
+    },
+    {
+      "code": "TNS",
+      "name": "Terra Nova",
+      "feeders": [
+        "TNS-01"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "TOP",
+      "name": "Topsail Plant",
+      "feeders": [],
+      "source_page": 8
+    },
+    {
+      "code": "TCV",
+      "name": "Tors Cove Plant",
+      "feeders": [],
+      "source_page": 8
+    },
+    {
+      "code": "TRP",
+      "name": "Trepassey",
+      "feeders": [
+        "TRP-01",
+        "TRP-02"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "TRN",
+      "name": "Trinity",
+      "feeders": [
+        "TRN-01",
+        "TRN-02"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "TWG",
+      "name": "Twillingate",
+      "feeders": [
+        "TWG-01",
+        "TWG-02",
+        "TWG-03"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "VIC",
+      "name": "Victoria",
+      "feeders": [
+        "VIC-01",
+        "VIC-02"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "VIR",
+      "name": "Virginia Waters",
+      "feeders": [
+        "VIR-01",
+        "VIR-02",
+        "VIR-03",
+        "VIR-04",
+        "VIR-05",
+        "VIR-06",
+        "VIR-07"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "WAL",
+      "name": "Walbournes",
+      "feeders": [
+        "WAL-01",
+        "WAL-02",
+        "WAL-04",
+        "WAL-05",
+        "WAL-06",
+        "WAL-07"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "WBC",
+      "name": "Webbers Cove",
+      "feeders": [
+        "WBC-01"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "WES",
+      "name": "Wesleyville",
+      "feeders": [
+        "WES-01",
+        "WES-02",
+        "WES-03"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "WBK",
+      "name": "West Brook Plant",
+      "feeders": [],
+      "source_page": 8
+    },
+    {
+      "code": "WAV",
+      "name": "Western Avalon",
+      "feeders": [
+        "WAV-01",
+        "WAV-02"
+      ],
+      "source_page": 8
+    },
+    {
+      "code": "WHE",
+      "name": "Wheelers",
+      "feeders": [],
+      "source_page": 8
+    }
+  ],
+  "transmission_line_loading": [
+    {
+      "circuit": "3L",
+      "source_circuit": "003L",
+      "footnote_marker": null,
+      "from": "PHR",
+      "to": "GOU",
+      "voltage_kv": 33,
+      "winter_continuous_rating_mva": 27.1,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 2.59,
+      "forecast_2012_peak_amps": 44.9,
+      "forecast_percent_rating": 10,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "4L",
+      "source_circuit": "004L",
+      "footnote_marker": 1,
+      "from": "GOU",
+      "to": "SJM",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 18.8,
+      "forecast_2012_peak_amps": 162.7,
+      "forecast_percent_rating": 20,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "5L",
+      "source_circuit": "005L",
+      "footnote_marker": null,
+      "from": "HWD",
+      "to": "BCV",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 28.74,
+      "forecast_2012_peak_amps": 243.5,
+      "forecast_percent_rating": 31,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "11L",
+      "source_circuit": "011L",
+      "footnote_marker": null,
+      "from": "TCV",
+      "to": "MOB",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 6.56,
+      "forecast_2012_peak_amps": 57.0,
+      "forecast_percent_rating": 12,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "12L",
+      "source_circuit": "012L",
+      "footnote_marker": null,
+      "from": "MUN",
+      "to": "KBR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 43.4,
+      "winter_continuous_rating_amps": 379.3,
+      "forecast_2012_peak_mva": 22.91,
+      "forecast_2012_peak_amps": 197.2,
+      "forecast_percent_rating": 52,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "13L",
+      "source_circuit": "013L",
+      "footnote_marker": null,
+      "from": "SLA",
+      "to": "SJM",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 30.29,
+      "forecast_2012_peak_amps": 258.5,
+      "forecast_percent_rating": 33,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "14L",
+      "source_circuit": "014L",
+      "footnote_marker": null,
+      "from": "SLA",
+      "to": "MUN",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 69.5,
+      "winter_continuous_rating_amps": 608.0,
+      "forecast_2012_peak_mva": 39.53,
+      "forecast_2012_peak_amps": 339.3,
+      "forecast_percent_rating": 56,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "15L",
+      "source_circuit": "015L",
+      "footnote_marker": null,
+      "from": "SLA",
+      "to": "MOL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 51.6,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 9.92,
+      "forecast_2012_peak_amps": 85.0,
+      "forecast_percent_rating": 15,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "16L",
+      "source_circuit": "016L",
+      "footnote_marker": null,
+      "from": "KBR",
+      "to": "PEP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 43.4,
+      "winter_continuous_rating_amps": 379.3,
+      "forecast_2012_peak_mva": 27.57,
+      "forecast_2012_peak_amps": 238.9,
+      "forecast_percent_rating": 63,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "17L",
+      "source_circuit": "017L",
+      "footnote_marker": 1,
+      "from": "BIG",
+      "to": "GOU",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 40.1,
+      "forecast_2012_peak_amps": 347.0,
+      "forecast_percent_rating": 49,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "18L",
+      "source_circuit": "018L",
+      "footnote_marker": null,
+      "from": "GDL",
+      "to": "GOU",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 7.99,
+      "forecast_2012_peak_amps": 68.8,
+      "forecast_percent_rating": 13,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "19L",
+      "source_circuit": "019L",
+      "footnote_marker": null,
+      "from": "HWD",
+      "to": "MOL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 73.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 45.41,
+      "forecast_2012_peak_amps": 384.8,
+      "forecast_percent_rating": 49,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "20L(A)",
+      "source_circuit": "020L(A)",
+      "footnote_marker": 1,
+      "from": "ROP",
+      "to": "MOB",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 100.1,
+      "winter_continuous_rating_amps": 875.6,
+      "forecast_2012_peak_mva": 36.96,
+      "forecast_2012_peak_amps": 324.2,
+      "forecast_percent_rating": 37,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "20L(B)",
+      "source_circuit": "020L(B)",
+      "footnote_marker": 1,
+      "from": "HCP TAP",
+      "to": "ROP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 100.1,
+      "winter_continuous_rating_amps": 875.6,
+      "forecast_2012_peak_mva": 32.35,
+      "forecast_2012_peak_amps": 284.2,
+      "forecast_percent_rating": 33,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "20L(C)",
+      "source_circuit": "020L(C)",
+      "footnote_marker": 1,
+      "from": "HCP TAP",
+      "to": "CAB",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 100.1,
+      "winter_continuous_rating_amps": 875.6,
+      "forecast_2012_peak_mva": 24.59,
+      "forecast_2012_peak_amps": 216.1,
+      "forecast_percent_rating": 25,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "21L",
+      "source_circuit": "021L",
+      "footnote_marker": null,
+      "from": "HCP",
+      "to": "HCP TAP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 8.08,
+      "forecast_2012_peak_amps": 70.1,
+      "forecast_percent_rating": 13,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "22L",
+      "source_circuit": "022L",
+      "footnote_marker": null,
+      "from": "MRP",
+      "to": "ROP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 1.54,
+      "forecast_2012_peak_amps": 13.4,
+      "forecast_percent_rating": 3,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "23L",
+      "source_circuit": "023L",
+      "footnote_marker": null,
+      "from": "PBK",
+      "to": "MOB",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 29.6,
+      "winter_continuous_rating_amps": 518.4,
+      "forecast_2012_peak_mva": 3.98,
+      "forecast_2012_peak_amps": 34.6,
+      "forecast_percent_rating": 7,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "24L",
+      "source_circuit": "024L",
+      "footnote_marker": 1,
+      "from": "MOB",
+      "to": "BIG",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 47.39,
+      "forecast_2012_peak_amps": 414.0,
+      "forecast_percent_rating": 58,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "25L",
+      "source_circuit": "025L",
+      "footnote_marker": 1,
+      "from": "GOU",
+      "to": "SJM",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 91.5,
+      "winter_continuous_rating_amps": 800.5,
+      "forecast_2012_peak_mva": 16.32,
+      "forecast_2012_peak_amps": 141.2,
+      "forecast_percent_rating": 18,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "30L",
+      "source_circuit": "030L",
+      "footnote_marker": null,
+      "from": "RRD",
+      "to": "KBR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 46.79,
+      "forecast_2012_peak_amps": 401.4,
+      "forecast_percent_rating": 51,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "31L",
+      "source_circuit": "031L",
+      "footnote_marker": null,
+      "from": "OXP",
+      "to": "SLA",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 114.4,
+      "winter_continuous_rating_amps": 1003.9,
+      "forecast_2012_peak_mva": 57.38,
+      "forecast_2012_peak_amps": 488.4,
+      "forecast_percent_rating": 49,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "32L",
+      "source_circuit": "032L",
+      "footnote_marker": null,
+      "from": "OXP",
+      "to": "RRD",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 49.42,
+      "forecast_2012_peak_amps": 420.6,
+      "forecast_percent_rating": 54,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "34L",
+      "source_circuit": "034L",
+      "footnote_marker": null,
+      "from": "OXP",
+      "to": "VIR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 114.4,
+      "winter_continuous_rating_amps": 1003.9,
+      "forecast_2012_peak_mva": 39.3,
+      "forecast_2012_peak_amps": 334.5,
+      "forecast_percent_rating": 33,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "35L",
+      "source_circuit": "035L",
+      "footnote_marker": null,
+      "from": "OXP",
+      "to": "KEN",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 53.9,
+      "winter_continuous_rating_amps": 471.5,
+      "forecast_2012_peak_mva": 14.27,
+      "forecast_2012_peak_amps": 120.69,
+      "forecast_percent_rating": 26,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "38L(A)",
+      "source_circuit": "038L(A)",
+      "footnote_marker": null,
+      "from": "DUF",
+      "to": "GES",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 39.2,
+      "forecast_2012_peak_amps": 334.7,
+      "forecast_percent_rating": 47,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "38L(B)",
+      "source_circuit": "038L(B)",
+      "footnote_marker": null,
+      "from": "GES",
+      "to": "SCV",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 114.8,
+      "winter_continuous_rating_amps": 1003.9,
+      "forecast_2012_peak_mva": 39.16,
+      "forecast_2012_peak_amps": 334.7,
+      "forecast_percent_rating": 33,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "49L",
+      "source_circuit": "049L",
+      "footnote_marker": null,
+      "from": "HWD",
+      "to": "CHA",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 73.2,
+      "winter_continuous_rating_amps": 639.9,
+      "forecast_2012_peak_mva": 20.68,
+      "forecast_2012_peak_amps": 177.5,
+      "forecast_percent_rating": 28,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "51L",
+      "source_circuit": "051L",
+      "footnote_marker": null,
+      "from": "KEL",
+      "to": "CHA",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 12.6,
+      "forecast_2012_peak_amps": 108.2,
+      "forecast_percent_rating": 14,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "52L",
+      "source_circuit": "052L",
+      "footnote_marker": null,
+      "from": "SCV",
+      "to": "KEL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 31.78,
+      "forecast_2012_peak_amps": 272.4,
+      "forecast_percent_rating": 35,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "54L",
+      "source_circuit": "054L",
+      "footnote_marker": null,
+      "from": "HWD",
+      "to": "KEN",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 114.8,
+      "winter_continuous_rating_amps": 1003.9,
+      "forecast_2012_peak_mva": 49.18,
+      "forecast_2012_peak_amps": 416.7,
+      "forecast_percent_rating": 42,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "58L",
+      "source_circuit": "058L",
+      "footnote_marker": null,
+      "from": "OXP",
+      "to": "VIR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 114.8,
+      "winter_continuous_rating_amps": 1003.9,
+      "forecast_2012_peak_mva": 53.97,
+      "forecast_2012_peak_amps": 459.4,
+      "forecast_percent_rating": 46,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "59L",
+      "source_circuit": "059L",
+      "footnote_marker": null,
+      "from": "VIR",
+      "to": "PUL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 27.89,
+      "forecast_2012_peak_amps": 241.6,
+      "forecast_percent_rating": 31,
+      "region": "St. John's",
+      "source_page": 3
+    },
+    {
+      "circuit": "66L",
+      "source_circuit": "066L",
+      "footnote_marker": 1,
+      "from": "FER",
+      "to": "CAB",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 24.15,
+      "forecast_2012_peak_amps": 212.3,
+      "forecast_percent_rating": 45,
+      "region": "St. John's",
+      "source_page": 4
+    },
+    {
+      "circuit": "67L",
+      "source_circuit": "067L",
+      "footnote_marker": null,
+      "from": "OXP",
+      "to": "RRD",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 34.03,
+      "forecast_2012_peak_amps": 289.6,
+      "forecast_percent_rating": 37,
+      "region": "St. John's",
+      "source_page": 4
+    },
+    {
+      "circuit": "69L",
+      "source_circuit": "069L",
+      "footnote_marker": null,
+      "from": "KEN",
+      "to": "SLA",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 52.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 11.68,
+      "forecast_2012_peak_amps": 100.2,
+      "forecast_percent_rating": 18,
+      "region": "St. John's",
+      "source_page": 4
+    },
+    {
+      "circuit": "70L",
+      "source_circuit": "070L",
+      "footnote_marker": null,
+      "from": "OXP",
+      "to": "SLA",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 114.8,
+      "winter_continuous_rating_amps": 1003.9,
+      "forecast_2012_peak_mva": 57.64,
+      "forecast_2012_peak_amps": 490.5,
+      "forecast_percent_rating": 49,
+      "region": "St. John's",
+      "source_page": 4
+    },
+    {
+      "circuit": "72L",
+      "source_circuit": "072L",
+      "footnote_marker": null,
+      "from": "HWD",
+      "to": "GOU",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 114.8,
+      "winter_continuous_rating_amps": 1003.9,
+      "forecast_2012_peak_mva": 35.64,
+      "forecast_2012_peak_amps": 302.0,
+      "forecast_percent_rating": 30,
+      "region": "St. John's",
+      "source_page": 4
+    },
+    {
+      "circuit": "73L",
+      "source_circuit": "073L",
+      "footnote_marker": null,
+      "from": "HWD",
+      "to": "GDL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 114.8,
+      "winter_continuous_rating_amps": 1003.9,
+      "forecast_2012_peak_mva": 52.75,
+      "forecast_2012_peak_amps": 446.9,
+      "forecast_percent_rating": 45,
+      "region": "St. John's",
+      "source_page": 4
+    },
+    {
+      "circuit": "74L",
+      "source_circuit": "074L",
+      "footnote_marker": null,
+      "from": "PEP",
+      "to": "VIR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 114.8,
+      "winter_continuous_rating_amps": 1003.9,
+      "forecast_2012_peak_mva": 5.26,
+      "forecast_2012_peak_amps": 45.5,
+      "forecast_percent_rating": 5,
+      "region": "St. John's",
+      "source_page": 4
+    },
+    {
+      "circuit": "79L",
+      "source_circuit": "079L",
+      "footnote_marker": null,
+      "from": "HWD",
+      "to": "CHA",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 20.18,
+      "forecast_2012_peak_amps": 171.0,
+      "forecast_percent_rating": 22,
+      "region": "St. John's",
+      "source_page": 4
+    },
+    {
+      "circuit": "39L(A)",
+      "source_circuit": "039L(A)",
+      "footnote_marker": null,
+      "from": "DUF",
+      "to": "HOL",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 67.48,
+      "forecast_2012_peak_amps": 269.6,
+      "forecast_percent_rating": 38,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "39L(B)",
+      "source_circuit": "039L(B)",
+      "footnote_marker": null,
+      "from": "HOL",
+      "to": "COL",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 56.15,
+      "forecast_2012_peak_amps": 227.7,
+      "forecast_percent_rating": 32,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "39L(C)",
+      "source_circuit": "039L(C)",
+      "footnote_marker": null,
+      "from": "COL",
+      "to": "SPF",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 50.62,
+      "forecast_2012_peak_amps": 208.5,
+      "forecast_percent_rating": 29,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "39L(D)",
+      "source_circuit": "039L(D)",
+      "footnote_marker": null,
+      "from": "SPF",
+      "to": "BRB",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 39.01,
+      "forecast_2012_peak_amps": 161.8,
+      "forecast_percent_rating": 23,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "40L",
+      "source_circuit": "040L",
+      "footnote_marker": null,
+      "from": "CAR",
+      "to": "VIC",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 8.3,
+      "forecast_2012_peak_amps": 72.5,
+      "forecast_percent_rating": 10,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "41L",
+      "source_circuit": "041L",
+      "footnote_marker": null,
+      "from": "HCT",
+      "to": "CAR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 53.9,
+      "winter_continuous_rating_amps": 471.5,
+      "forecast_2012_peak_mva": 1.1,
+      "forecast_2012_peak_amps": 9.6,
+      "forecast_percent_rating": 2,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "43L",
+      "source_circuit": "043L",
+      "footnote_marker": null,
+      "from": "HCT",
+      "to": "NCH",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 8.45,
+      "forecast_2012_peak_amps": 73.8,
+      "forecast_percent_rating": 10,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "48L",
+      "source_circuit": "048L",
+      "footnote_marker": null,
+      "from": "BLK",
+      "to": "BRB",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 36.24,
+      "forecast_2012_peak_amps": 150.7,
+      "forecast_percent_rating": 21,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "55L(A)",
+      "source_circuit": "055L(A)",
+      "footnote_marker": null,
+      "from": "BLK",
+      "to": "PJN",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 17.4,
+      "forecast_2012_peak_amps": 147.3,
+      "forecast_percent_rating": 31,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "55L(B)",
+      "source_circuit": "055L(B)",
+      "footnote_marker": null,
+      "from": "PJN",
+      "to": "QTZ TAP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 16.83,
+      "forecast_2012_peak_amps": 145.1,
+      "forecast_percent_rating": 31,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "55L(C)",
+      "source_circuit": "055L(C)",
+      "footnote_marker": null,
+      "from": "QTZ TAP",
+      "to": "DUN",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 16.5,
+      "forecast_2012_peak_amps": 144.6,
+      "forecast_percent_rating": 30,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "55L(D)",
+      "source_circuit": "055L(D)",
+      "footnote_marker": null,
+      "from": "DUN",
+      "to": "CLK",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 8.76,
+      "forecast_2012_peak_amps": 78.0,
+      "forecast_percent_rating": 16,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "55L(E)",
+      "source_circuit": "055L(E)",
+      "footnote_marker": null,
+      "from": "QTZ TAP",
+      "to": "QTZ",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 574.3,
+      "forecast_2012_peak_mva": 0.1,
+      "forecast_2012_peak_amps": 0.9,
+      "forecast_percent_rating": 0,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "56L",
+      "source_circuit": "056L",
+      "footnote_marker": null,
+      "from": "BRB",
+      "to": "CAR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 24.9,
+      "forecast_2012_peak_amps": 211.3,
+      "forecast_percent_rating": 30,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "57L(A)",
+      "source_circuit": "057L(A)",
+      "footnote_marker": null,
+      "from": "BRB",
+      "to": "ILC",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 53.9,
+      "winter_continuous_rating_amps": 471.5,
+      "forecast_2012_peak_mva": 21.4,
+      "forecast_2012_peak_amps": 181.6,
+      "forecast_percent_rating": 39,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "57L(B)",
+      "source_circuit": "057L(B)",
+      "footnote_marker": null,
+      "from": "ILC",
+      "to": "HGR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 53.9,
+      "winter_continuous_rating_amps": 471.5,
+      "forecast_2012_peak_mva": 9.68,
+      "forecast_2012_peak_amps": 84.1,
+      "forecast_percent_rating": 18,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "64L",
+      "source_circuit": "064L",
+      "footnote_marker": null,
+      "from": "WAV",
+      "to": "BLK",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 68.97,
+      "forecast_2012_peak_amps": 283.5,
+      "forecast_percent_rating": 40,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "65L",
+      "source_circuit": "065L",
+      "footnote_marker": null,
+      "from": "NCH",
+      "to": "OPL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 9.83,
+      "forecast_2012_peak_amps": 86.9,
+      "forecast_percent_rating": 18,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "68L",
+      "source_circuit": "068L",
+      "footnote_marker": null,
+      "from": "HGR",
+      "to": "CAR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 53.9,
+      "winter_continuous_rating_amps": 471.5,
+      "forecast_2012_peak_mva": 1.26,
+      "forecast_2012_peak_amps": 11.0,
+      "forecast_percent_rating": 2,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "80L(A)",
+      "source_circuit": "080L(A)",
+      "footnote_marker": null,
+      "from": "BLK",
+      "to": "NHR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 18.55,
+      "forecast_2012_peak_amps": 157.0,
+      "forecast_percent_rating": 22,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "80L(B)",
+      "source_circuit": "080L(B)",
+      "footnote_marker": null,
+      "from": "NHR",
+      "to": "ISL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 11.81,
+      "forecast_2012_peak_amps": 101.5,
+      "forecast_percent_rating": 14,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "80L(C)",
+      "source_circuit": "080L(C)",
+      "footnote_marker": null,
+      "from": "ISL",
+      "to": "HCT",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 8.21,
+      "forecast_2012_peak_amps": 71.3,
+      "forecast_percent_rating": 15,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "86L",
+      "source_circuit": "086L",
+      "footnote_marker": null,
+      "from": "WAV",
+      "to": "BLK",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 24.26,
+      "forecast_2012_peak_amps": 202.4,
+      "forecast_percent_rating": 37,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "94L(A)",
+      "source_circuit": "094L(A)",
+      "footnote_marker": null,
+      "from": "BLK",
+      "to": "SCT",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 10.05,
+      "forecast_2012_peak_amps": 85.1,
+      "forecast_percent_rating": 15,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "94L(B)",
+      "source_circuit": "094L(B)",
+      "footnote_marker": null,
+      "from": "SCT",
+      "to": "RVH",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 6.35,
+      "forecast_2012_peak_amps": 55.0,
+      "forecast_percent_rating": 10,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "95L",
+      "source_circuit": "095L",
+      "footnote_marker": null,
+      "from": "RVH",
+      "to": "TRP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 2.79,
+      "forecast_2012_peak_amps": 24.4,
+      "forecast_percent_rating": 4,
+      "region": "Avalon",
+      "source_page": 5
+    },
+    {
+      "circuit": "300L",
+      "source_circuit": "300L",
+      "footnote_marker": null,
+      "from": "LLK",
+      "to": "MSY",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 9.14,
+      "forecast_2012_peak_amps": 37.9,
+      "forecast_percent_rating": 5,
+      "region": "Burin",
+      "source_page": 6
+    },
+    {
+      "circuit": "301L(A)",
+      "source_circuit": "301L(A)",
+      "footnote_marker": 1,
+      "from": "GAR TAP",
+      "to": "SPO",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 7.81,
+      "forecast_2012_peak_amps": 66.8,
+      "forecast_percent_rating": 14,
+      "region": "Burin",
+      "source_page": 6
+    },
+    {
+      "circuit": "301L(B)",
+      "source_circuit": "301L(B)",
+      "footnote_marker": 1,
+      "from": "GBE",
+      "to": "GAR TAP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 574.3,
+      "forecast_2012_peak_mva": 9.55,
+      "forecast_2012_peak_amps": 81.2,
+      "forecast_percent_rating": 14,
+      "region": "Burin",
+      "source_page": 6
+    },
+    {
+      "circuit": "301L(C)",
+      "source_circuit": "301L(C)",
+      "footnote_marker": 1,
+      "from": "GRH",
+      "to": "GBE",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 9.93,
+      "forecast_2012_peak_amps": 83.9,
+      "forecast_percent_rating": 18,
+      "region": "Burin",
+      "source_page": 6
+    },
+    {
+      "circuit": "302L",
+      "source_circuit": "302L",
+      "footnote_marker": 1,
+      "from": "LAU",
+      "to": "SPO",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.2,
+      "winter_continuous_rating_amps": 352.1,
+      "forecast_2012_peak_mva": 18.6,
+      "forecast_2012_peak_amps": 159.0,
+      "forecast_percent_rating": 45,
+      "region": "Burin",
+      "source_page": 6
+    },
+    {
+      "circuit": "305L(A)",
+      "source_circuit": "305L(A)",
+      "footnote_marker": null,
+      "from": "GRH",
+      "to": "WBC",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 6.23,
+      "forecast_2012_peak_amps": 52.9,
+      "forecast_percent_rating": 7,
+      "region": "Burin",
+      "source_page": 6
+    },
+    {
+      "circuit": "305L(B)",
+      "source_circuit": "305L(B)",
+      "footnote_marker": 1,
+      "from": "LAU",
+      "to": "WBC",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 4.62,
+      "forecast_2012_peak_amps": 38.9,
+      "forecast_percent_rating": 5,
+      "region": "Burin",
+      "source_page": 6
+    },
+    {
+      "circuit": "308L",
+      "source_circuit": "308L",
+      "footnote_marker": 1,
+      "from": "SPO",
+      "to": "MSY",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 18.52,
+      "forecast_2012_peak_amps": 76.8,
+      "forecast_percent_rating": 11,
+      "region": "Burin",
+      "source_page": 6
+    },
+    {
+      "circuit": "100L",
+      "source_circuit": "100L",
+      "footnote_marker": null,
+      "from": "SUN",
+      "to": "CLV",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 28.59,
+      "forecast_2012_peak_amps": 116.1,
+      "forecast_percent_rating": 16,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "109L(A)",
+      "source_circuit": "109L(A)",
+      "footnote_marker": null,
+      "from": "SUN",
+      "to": "NWB",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 31.79,
+      "forecast_2012_peak_amps": 129.1,
+      "forecast_percent_rating": 18,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "109L(B)",
+      "source_circuit": "109L(B)",
+      "footnote_marker": null,
+      "from": "NWB",
+      "to": "CLV",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 26.57,
+      "forecast_2012_peak_amps": 108.9,
+      "forecast_percent_rating": 15,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "110L(A)",
+      "source_circuit": "110L(A)",
+      "footnote_marker": null,
+      "from": "CLV",
+      "to": "MIL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.4,
+      "forecast_2012_peak_mva": 16.78,
+      "forecast_2012_peak_amps": 147.3,
+      "forecast_percent_rating": 42,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "110L(B)",
+      "source_circuit": "110L(B)",
+      "footnote_marker": null,
+      "from": "MIL",
+      "to": "LET",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 34.6,
+      "winter_continuous_rating_amps": 302.3,
+      "forecast_2012_peak_mva": 7.11,
+      "forecast_2012_peak_amps": 63.1,
+      "forecast_percent_rating": 21,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "110L(C)",
+      "source_circuit": "110L(C)",
+      "footnote_marker": 1,
+      "from": "SMV",
+      "to": "LET",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 34.6,
+      "winter_continuous_rating_amps": 302.3,
+      "forecast_2012_peak_mva": 0.0,
+      "forecast_2012_peak_amps": 0.0,
+      "forecast_percent_rating": 0,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "110L(D)",
+      "source_circuit": "110L(D)",
+      "footnote_marker": null,
+      "from": "PRC",
+      "to": "SMV",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 2.81,
+      "forecast_2012_peak_amps": 24.1,
+      "forecast_percent_rating": 3,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "110L(E)",
+      "source_circuit": "110L(E)",
+      "footnote_marker": null,
+      "from": "LOK",
+      "to": "PRC",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 2.79,
+      "forecast_2012_peak_amps": 23.9,
+      "forecast_percent_rating": 3,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "111L(A)",
+      "source_circuit": "111L(A)",
+      "footnote_marker": null,
+      "from": "PUN",
+      "to": "LOK",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 4.04,
+      "forecast_2012_peak_amps": 34.4,
+      "forecast_percent_rating": 4,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "111L(B)",
+      "source_circuit": "111L(B)",
+      "footnote_marker": null,
+      "from": "CAT",
+      "to": "PUN",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 3.55,
+      "forecast_2012_peak_amps": 30.2,
+      "forecast_percent_rating": 4,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "117L",
+      "source_circuit": "117L",
+      "footnote_marker": null,
+      "from": "CAT",
+      "to": "BVA",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 12.34,
+      "forecast_2012_peak_amps": 52.2,
+      "forecast_percent_rating": 7,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "123L(A)",
+      "source_circuit": "123L(A)",
+      "footnote_marker": null,
+      "from": "CLV",
+      "to": "PRC",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 20.89,
+      "forecast_2012_peak_amps": 86.4,
+      "forecast_percent_rating": 12,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "123L(B)",
+      "source_circuit": "123L(B)",
+      "footnote_marker": null,
+      "from": "PRC",
+      "to": "CAT",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 20.96,
+      "forecast_2012_peak_amps": 87.6,
+      "forecast_percent_rating": 12,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "124L(A)",
+      "source_circuit": "124L(A)",
+      "footnote_marker": null,
+      "from": "PBD",
+      "to": "CLV",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 17.92,
+      "forecast_2012_peak_amps": 74.1,
+      "forecast_percent_rating": 10,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "124L(B)",
+      "source_circuit": "124L(B)",
+      "footnote_marker": null,
+      "from": "TNS",
+      "to": "PBD",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 20.17,
+      "forecast_2012_peak_amps": 84.4,
+      "forecast_percent_rating": 12,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "124L(C)",
+      "source_circuit": "124L(C)",
+      "footnote_marker": null,
+      "from": "ALX",
+      "to": "TNS",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 21.06,
+      "forecast_2012_peak_amps": 88.8,
+      "forecast_percent_rating": 13,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "124L(D)",
+      "source_circuit": "124L(D)",
+      "footnote_marker": null,
+      "from": "GAM",
+      "to": "ALX",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 26.83,
+      "forecast_2012_peak_amps": 114.7,
+      "forecast_percent_rating": 16,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "124L(E)",
+      "source_circuit": "124L(E)",
+      "footnote_marker": null,
+      "from": "PBD TAP",
+      "to": "PBD",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 1.66,
+      "forecast_2012_peak_amps": 7.0,
+      "forecast_percent_rating": 1,
+      "region": "Bonavista",
+      "source_page": 7
+    },
+    {
+      "circuit": "102L(A)",
+      "source_circuit": "102L(A)",
+      "footnote_marker": null,
+      "from": "RBK",
+      "to": "NDJ",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.4,
+      "forecast_2012_peak_mva": 20.24,
+      "forecast_2012_peak_amps": 175.5,
+      "forecast_percent_rating": 50,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "102L(B)",
+      "source_circuit": "102L(B)",
+      "footnote_marker": null,
+      "from": "GAN",
+      "to": "RFD",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.4,
+      "forecast_2012_peak_mva": 9.32,
+      "forecast_2012_peak_amps": 79.2,
+      "forecast_percent_rating": 23,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "102L(C)",
+      "source_circuit": "102L(C)",
+      "footnote_marker": null,
+      "from": "NDJ",
+      "to": "RFD",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.1,
+      "forecast_2012_peak_mva": 9.92,
+      "forecast_2012_peak_amps": 87.9,
+      "forecast_percent_rating": 25,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "104L",
+      "source_circuit": "104L",
+      "footnote_marker": null,
+      "from": "RFD TAP",
+      "to": "RFD",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 34.7,
+      "winter_continuous_rating_amps": 303.3,
+      "forecast_2012_peak_mva": 2.1,
+      "forecast_2012_peak_amps": 18.3,
+      "forecast_percent_rating": 6,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "108L(A)",
+      "source_circuit": "108L(A)",
+      "footnote_marker": null,
+      "from": "GAN",
+      "to": "JON",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.4,
+      "forecast_2012_peak_mva": 10.31,
+      "forecast_2012_peak_amps": 87.6,
+      "forecast_percent_rating": 25,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "108L(B)",
+      "source_circuit": "108L(B)",
+      "footnote_marker": null,
+      "from": "JON",
+      "to": "GBY",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.1,
+      "forecast_2012_peak_mva": 10.08,
+      "forecast_2012_peak_amps": 87.3,
+      "forecast_percent_rating": 25,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "114L(A)",
+      "source_circuit": "114L(A)",
+      "footnote_marker": 1,
+      "from": "CKH",
+      "to": "GBY",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 0.0,
+      "forecast_2012_peak_amps": 0.0,
+      "forecast_percent_rating": 0,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "114L(B)",
+      "source_circuit": "114L(B)",
+      "footnote_marker": null,
+      "from": "CKH",
+      "to": "BOY",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 21.8,
+      "forecast_2012_peak_amps": 187.4,
+      "forecast_percent_rating": 40,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "114L(C)",
+      "source_circuit": "114L(C)",
+      "footnote_marker": null,
+      "from": "BOY",
+      "to": "SUM",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 15.25,
+      "forecast_2012_peak_amps": 135.4,
+      "forecast_percent_rating": 29,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "115L",
+      "source_circuit": "115L",
+      "footnote_marker": null,
+      "from": "GAM",
+      "to": "HBS",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 6.41,
+      "forecast_2012_peak_amps": 54.3,
+      "forecast_percent_rating": 12,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "116L(A)",
+      "source_circuit": "116L(A)",
+      "footnote_marker": null,
+      "from": "HBS",
+      "to": "TRN",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 3.14,
+      "forecast_2012_peak_amps": 26.9,
+      "forecast_percent_rating": 6,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "116L(B)",
+      "source_circuit": "116L(B)",
+      "footnote_marker": null,
+      "from": "GPD TAP",
+      "to": "TRN",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 0.79,
+      "forecast_2012_peak_amps": 6.9,
+      "forecast_percent_rating": 2,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "116L(C)",
+      "source_circuit": "116L(C)",
+      "footnote_marker": null,
+      "from": "WES",
+      "to": "GPD TAP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 1.57,
+      "forecast_2012_peak_amps": 13.6,
+      "forecast_percent_rating": 3,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "116L(D)",
+      "source_circuit": "116L(D)",
+      "footnote_marker": null,
+      "from": "GPD TAP",
+      "to": "GPD",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.3,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 1.03,
+      "forecast_2012_peak_amps": 8.9,
+      "forecast_percent_rating": 2,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "121L",
+      "source_circuit": "121L",
+      "footnote_marker": null,
+      "from": "GLV TAP",
+      "to": "GLV",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 131.6,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 10.55,
+      "forecast_2012_peak_amps": 44.9,
+      "forecast_percent_rating": 8,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "124L(A)",
+      "source_circuit": "124L(A)",
+      "footnote_marker": null,
+      "from": "PBD",
+      "to": "CLV",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 17.23,
+      "forecast_2012_peak_amps": 71.0,
+      "forecast_percent_rating": 10,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "124L(B)",
+      "source_circuit": "124L(B)",
+      "footnote_marker": null,
+      "from": "TNS",
+      "to": "PBD",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 19.16,
+      "forecast_2012_peak_amps": 80.1,
+      "forecast_percent_rating": 11,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "124L(C)",
+      "source_circuit": "124L(C)",
+      "footnote_marker": null,
+      "from": "ALX",
+      "to": "TNS",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 19.97,
+      "forecast_2012_peak_amps": 84.1,
+      "forecast_percent_rating": 12,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "124L(D)",
+      "source_circuit": "124L(D)",
+      "footnote_marker": null,
+      "from": "GAM",
+      "to": "ALX",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 24.19,
+      "forecast_2012_peak_amps": 103.6,
+      "forecast_percent_rating": 15,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "124L(E)",
+      "source_circuit": "124L(E)",
+      "footnote_marker": null,
+      "from": "PBD TAP",
+      "to": "PBD",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 1.49,
+      "forecast_2012_peak_amps": 6.2,
+      "forecast_percent_rating": 1,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "136L",
+      "source_circuit": "136L",
+      "footnote_marker": null,
+      "from": "BFS",
+      "to": "COB",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 48.71,
+      "forecast_2012_peak_amps": 202.1,
+      "forecast_percent_rating": 28,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "140L",
+      "source_circuit": "140L",
+      "footnote_marker": null,
+      "from": "SUM",
+      "to": "TWG",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.6,
+      "forecast_2012_peak_mva": 8.17,
+      "forecast_2012_peak_amps": 73.2,
+      "forecast_percent_rating": 15,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "142L",
+      "source_circuit": "142L",
+      "footnote_marker": null,
+      "from": "COB",
+      "to": "CKH",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 22.44,
+      "forecast_2012_peak_amps": 187.3,
+      "forecast_percent_rating": 26,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "144L",
+      "source_circuit": "144L",
+      "footnote_marker": null,
+      "from": "COB",
+      "to": "GAN",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 55.93,
+      "forecast_2012_peak_amps": 241.5,
+      "forecast_percent_rating": 34,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "146L",
+      "source_circuit": "146L",
+      "footnote_marker": null,
+      "from": "GAN",
+      "to": "GAM",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 134.8,
+      "winter_continuous_rating_amps": 563.8,
+      "forecast_2012_peak_mva": 31.59,
+      "forecast_2012_peak_amps": 136.8,
+      "forecast_percent_rating": 24,
+      "region": "Gander",
+      "source_page": 8
+    },
+    {
+      "circuit": "101L",
+      "source_circuit": "101L",
+      "footnote_marker": null,
+      "from": "GFS",
+      "to": "RBK",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 8.52,
+      "forecast_2012_peak_amps": 72.5,
+      "forecast_percent_rating": 15,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "102L(A)",
+      "source_circuit": "102L(A)",
+      "footnote_marker": null,
+      "from": "RBK",
+      "to": "NDJ",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.4,
+      "forecast_2012_peak_mva": 19.87,
+      "forecast_2012_peak_amps": 171.8,
+      "forecast_percent_rating": 49,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "102L(B)",
+      "source_circuit": "102L(B)",
+      "footnote_marker": null,
+      "from": "GAN",
+      "to": "RFD",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.4,
+      "forecast_2012_peak_mva": 8.74,
+      "forecast_2012_peak_amps": 74.0,
+      "forecast_percent_rating": 21,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "102L(C)",
+      "source_circuit": "102L(C)",
+      "footnote_marker": null,
+      "from": "NDJ",
+      "to": "RFD",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.4,
+      "forecast_2012_peak_mva": 9.02,
+      "forecast_2012_peak_amps": 79.9,
+      "forecast_percent_rating": 23,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "103L",
+      "source_circuit": "103L",
+      "footnote_marker": null,
+      "from": "NDJ",
+      "to": "LEW",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 19.12,
+      "forecast_2012_peak_amps": 169.4,
+      "forecast_percent_rating": 36,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "105L",
+      "source_circuit": "105L",
+      "footnote_marker": null,
+      "from": "SBK",
+      "to": "GFS",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 40.1,
+      "winter_continuous_rating_amps": 350.4,
+      "forecast_2012_peak_mva": 5.75,
+      "forecast_2012_peak_amps": 48.9,
+      "forecast_percent_rating": 14,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "130L",
+      "source_circuit": "130L",
+      "footnote_marker": null,
+      "from": "STY",
+      "to": "GFS",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 68.92,
+      "forecast_2012_peak_amps": 282.9,
+      "forecast_percent_rating": 40,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "132L",
+      "source_circuit": "132L",
+      "footnote_marker": null,
+      "from": "GFS",
+      "to": "BFS",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 19.23,
+      "forecast_2012_peak_amps": 79.8,
+      "forecast_percent_rating": 11,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "133L",
+      "source_circuit": "133L",
+      "footnote_marker": null,
+      "from": "STY",
+      "to": "BFS",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 49.19,
+      "forecast_2012_peak_amps": 201.9,
+      "forecast_percent_rating": 28,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "134L",
+      "source_circuit": "134L",
+      "footnote_marker": null,
+      "from": "BFS",
+      "to": "BOT",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 131.6,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 13.9,
+      "forecast_2012_peak_amps": 57.7,
+      "forecast_percent_rating": 10,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "136L",
+      "source_circuit": "136L",
+      "footnote_marker": null,
+      "from": "BFS",
+      "to": "COB",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 170.4,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 44.82,
+      "forecast_2012_peak_amps": 186.0,
+      "forecast_percent_rating": 26,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "363L",
+      "source_circuit": "363L",
+      "footnote_marker": null,
+      "from": "BVJ",
+      "to": "SCR",
+      "voltage_kv": 138,
+      "winter_continuous_rating_mva": 131.6,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 16.32,
+      "forecast_2012_peak_amps": 67.8,
+      "forecast_percent_rating": 12,
+      "region": "Grand Falls",
+      "source_page": 9
+    },
+    {
+      "circuit": "351L",
+      "source_circuit": "351L",
+      "footnote_marker": null,
+      "from": "MAS",
+      "to": "WAL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 20.52,
+      "forecast_2012_peak_amps": 174.0,
+      "forecast_percent_rating": 32,
+      "region": "Corner Brook",
+      "source_page": 10
+    },
+    {
+      "circuit": "352L",
+      "source_circuit": "352L",
+      "footnote_marker": null,
+      "from": "MAS",
+      "to": "WAL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 19.63,
+      "forecast_2012_peak_amps": 166.4,
+      "forecast_percent_rating": 30,
+      "region": "Corner Brook",
+      "source_page": 10
+    },
+    {
+      "circuit": "353L",
+      "source_circuit": "353L",
+      "footnote_marker": null,
+      "from": "WAL",
+      "to": "FRN",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 3.61,
+      "forecast_2012_peak_amps": 30.8,
+      "forecast_percent_rating": 6,
+      "region": "Corner Brook",
+      "source_page": 10
+    },
+    {
+      "circuit": "356L",
+      "source_circuit": "356L",
+      "footnote_marker": null,
+      "from": "MAS",
+      "to": "HUM",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 93.3,
+      "winter_continuous_rating_amps": 816.4,
+      "forecast_2012_peak_mva": 17.6,
+      "forecast_2012_peak_amps": 149.0,
+      "forecast_percent_rating": 18,
+      "region": "Corner Brook",
+      "source_page": 10
+    },
+    {
+      "circuit": "357L",
+      "source_circuit": "357L",
+      "footnote_marker": null,
+      "from": "MAS",
+      "to": "BVS",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 28.2,
+      "forecast_2012_peak_amps": 239.2,
+      "forecast_percent_rating": 31,
+      "region": "Corner Brook",
+      "source_page": 10
+    },
+    {
+      "circuit": "358L",
+      "source_circuit": "358L",
+      "footnote_marker": null,
+      "from": "BVS",
+      "to": "GIL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 3.88,
+      "forecast_2012_peak_amps": 33.0,
+      "forecast_percent_rating": 6,
+      "region": "Corner Brook",
+      "source_page": 10
+    },
+    {
+      "circuit": "359L",
+      "source_circuit": "359L",
+      "footnote_marker": 1,
+      "from": "BVS",
+      "to": "HUM",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 0.0,
+      "forecast_2012_peak_amps": 0.0,
+      "forecast_percent_rating": 0,
+      "region": "Corner Brook",
+      "source_page": 10
+    },
+    {
+      "circuit": "400L",
+      "source_circuit": "400L",
+      "footnote_marker": 1,
+      "from": "BBK",
+      "to": "WHE",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 0.0,
+      "forecast_2012_peak_amps": 0.0,
+      "forecast_percent_rating": 0,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "401L(A)",
+      "source_circuit": "401L(A)",
+      "footnote_marker": null,
+      "from": "STV",
+      "to": "WHE TAP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 22.12,
+      "forecast_2012_peak_amps": 189.6,
+      "forecast_percent_rating": 24,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "401L(B)",
+      "source_circuit": "401L(B)",
+      "footnote_marker": null,
+      "from": "WHE TAP",
+      "to": "GAL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 89.2,
+      "winter_continuous_rating_amps": 779.9,
+      "forecast_2012_peak_mva": 22.03,
+      "forecast_2012_peak_amps": 189.9,
+      "forecast_percent_rating": 24,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "402L",
+      "source_circuit": "402L",
+      "footnote_marker": null,
+      "from": "GAL",
+      "to": "BHD",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 16.67,
+      "forecast_2012_peak_amps": 144.5,
+      "forecast_percent_rating": 20,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "403L(A)",
+      "source_circuit": "403L(A)",
+      "footnote_marker": null,
+      "from": "ROB",
+      "to": "STV",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 2.65,
+      "forecast_2012_peak_amps": 22.9,
+      "forecast_percent_rating": 5,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "403L(B)",
+      "source_circuit": "403L(B)",
+      "footnote_marker": null,
+      "from": "LBK",
+      "to": "ROB TAP",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 5.87,
+      "forecast_2012_peak_amps": 50.7,
+      "forecast_percent_rating": 11,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "403L(C)",
+      "source_circuit": "403L(C)",
+      "footnote_marker": null,
+      "from": "ROB TAP",
+      "to": "ROB",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 34.6,
+      "winter_continuous_rating_amps": 302.3,
+      "forecast_2012_peak_mva": 3.94,
+      "forecast_2012_peak_amps": 34.0,
+      "forecast_percent_rating": 11,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "404L",
+      "source_circuit": "404L",
+      "footnote_marker": 1,
+      "from": "WHE TAP",
+      "to": "WHE",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 0.0,
+      "forecast_2012_peak_amps": 0.0,
+      "forecast_percent_rating": 0,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "405L",
+      "source_circuit": "405L",
+      "footnote_marker": null,
+      "from": "STV",
+      "to": "HAR",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 81.5,
+      "winter_continuous_rating_amps": 712.7,
+      "forecast_2012_peak_mva": 25.29,
+      "forecast_2012_peak_amps": 216.8,
+      "forecast_percent_rating": 30,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "406L",
+      "source_circuit": "406L",
+      "footnote_marker": null,
+      "from": "HAR",
+      "to": "GAL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 14.61,
+      "forecast_2012_peak_amps": 126.2,
+      "forecast_percent_rating": 23,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "407L(A)",
+      "source_circuit": "407L(A)",
+      "footnote_marker": null,
+      "from": "STV",
+      "to": "STX",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 7.2,
+      "forecast_2012_peak_amps": 61.8,
+      "forecast_percent_rating": 13,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "407L(B)",
+      "source_circuit": "407L(B)",
+      "footnote_marker": null,
+      "from": "STX",
+      "to": "STG",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 3.02,
+      "forecast_2012_peak_amps": 26.0,
+      "forecast_percent_rating": 6,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "410L(A)",
+      "source_circuit": "410L(A)",
+      "footnote_marker": null,
+      "from": "BHD",
+      "to": "ABC",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 13.27,
+      "forecast_2012_peak_amps": 115.9,
+      "forecast_percent_rating": 21,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "410L(C)",
+      "source_circuit": "410L(C)",
+      "footnote_marker": null,
+      "from": "ABC",
+      "to": "LCV",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 54.2,
+      "winter_continuous_rating_amps": 474.3,
+      "forecast_2012_peak_mva": 7.03,
+      "forecast_2012_peak_amps": 62.5,
+      "forecast_percent_rating": 13,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "416L",
+      "source_circuit": "416L",
+      "footnote_marker": null,
+      "from": "GBS",
+      "to": "LGL",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 62.9,
+      "winter_continuous_rating_amps": 550.4,
+      "forecast_2012_peak_mva": 7.22,
+      "forecast_2012_peak_amps": 63.4,
+      "forecast_percent_rating": 12,
+      "region": "Stephenville",
+      "source_page": 11
+    },
+    {
+      "circuit": "417L",
+      "source_circuit": "417L",
+      "footnote_marker": null,
+      "from": "GBS",
+      "to": "PAB",
+      "voltage_kv": 66,
+      "winter_continuous_rating_mva": 53.9,
+      "winter_continuous_rating_amps": 471.5,
+      "forecast_2012_peak_mva": 5.68,
+      "forecast_2012_peak_amps": 49.9,
+      "forecast_percent_rating": 11,
+      "region": "Stephenville",
+      "source_page": 11
+    }
+  ]
+}

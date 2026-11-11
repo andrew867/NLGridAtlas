@@ -80,7 +80,7 @@
       "dependencies": ["ARC-001", "ARC-003"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "A 2009 CBA response contains a six-page substation and feeder listing. A 2013 system response contains a nine-page transmission-line loading table, while a 2010 depreciation appendix contains line construction details. Later complete replacements are still being checked."
+      "notes": "A 2009 CBA response republishes the June 2005 station and feeder register without changes. A 2013 system response contains a nine-page transmission-line loading table, while a 2010 depreciation appendix contains line construction details. Later complete replacements are still being checked."
     },
     {
       "id": "DB-001",
