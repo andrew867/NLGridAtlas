@@ -420,6 +420,26 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-030.PDF"
   },
   {
+    id: "np-2025-ca-np-255",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "CA-NP-255, General Service Rate 2.4 supply table",
+    topics: ["feeder assignments", "transformer banks", "feeder planning capacity", "station customer count"],
+    pages: "physical PDF p. 4",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-255.PDF"
+  },
+  {
+    id: "np-2016-pub-np-064-g",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-064 Attachment G, Glendale inspection form",
+    topics: ["Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers"],
+    pages: "physical PDF pp. 148 to 152",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
+  },
+  {
     id: "np-2025-capital",
     year: 2024,
     organization: "Newfoundland Power",
@@ -1348,6 +1368,12 @@ export const stationProfiles = [
         ["HWD-09", "new 25 kV feeder to Kenmount Road"],
         ["Load transfer", "approximately 9 MVA transferred onto HWD-08"]
       ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENT",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [["HWD-02", "12.5 kV; HWD-T1/T2; 12.7 MVA feeder planning capacity"]]
     }
   },
   {
@@ -1367,6 +1393,12 @@ export const stationProfiles = [
         ["Rating", "13.33 MVA"],
         ["2026 forecast", "9.87 MVA"]
       ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENT",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [["OXP-01", "12.5 kV; OXP-T1; 12.7 MVA feeder planning capacity"]]
     }
   },
   {
@@ -1386,6 +1418,12 @@ export const stationProfiles = [
         ["KEN-T1", "66/25 kV, 25 MVA, 20.04 MVA 2026 forecast"],
         ["KEN-T2", "66/25 kV, 50 MVA, 41.93 MVA 2026 forecast"]
       ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENT",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [["KEN-05", "25 kV; KEN-T1/T2; 25.5 MVA feeder planning capacity"]]
     }
   },
   {
@@ -1417,6 +1455,12 @@ export const stationProfiles = [
         ["GOU-T2 and GOU-T3", "20 MVA and 13.3 MVA"],
         ["Customers served by station", "4,471"]
       ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENT",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [["GOU-02", "12.5 kV; GOU-T2/T3; 12.7 MVA feeder planning capacity"]]
     }
   },
   {
@@ -1440,6 +1484,12 @@ export const stationProfiles = [
         ["Five-year maximum peak", "43.7 MVA"],
         ["KBR-T3 project", "replacement planned for summer 2028"]
       ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENTS",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [["KBR-T3/T4", "KBR-09, KBR-11, KBR-12 and KBR-13; 12.5 kV"]]
     }
   },
   {
@@ -1464,6 +1514,12 @@ export const stationProfiles = [
         ["RRD-T3 failure study", "15.26 MVA transferable; 3.1 MVA exposed"],
         ["RRD-T3 project", "replacement planned from 2027 to 2029"]
       ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENTS",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
     }
   },
   {
@@ -1492,6 +1548,16 @@ export const stationProfiles = [
       pages: "physical PDF pp. 6 to 7",
       facts: [
         ["GDL-09", "construction completed in 2021"]
+      ]
+    },
+    assignmentRecord: {
+      label: "2014 BUS BREAKER INVENTORY",
+      sourceId: "np-2016-pub-np-064-g",
+      pages: "physical PDF pp. 148 to 152",
+      facts: [
+        ["Transformer breakers", "GDL-T1-B, GDL-T2-B and GDL-T3-B"],
+        ["Tie breakers", "GDL-T1/T2-B and GDL-T2/T3-B"],
+        ["Feeder breakers listed", "GDL-01, GDL-02 and GDL-04 to GDL-08"]
       ]
     }
   },
@@ -1522,6 +1588,15 @@ export const stationProfiles = [
         ["Waterford River duct bank", "nine feeders"],
         ["SJM-T4 feeder", "SJM-12 at 4.16 kV"]
       ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENTS",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [
+        ["SJM-T1/T2", "SJM-03, SJM-06 and SJM-09; 12.5 kV"],
+        ["SJM-T3", "SJM-10 and SJM-14; 12.5 kV"]
+      ]
     }
   },
   {
@@ -1548,6 +1623,15 @@ export const stationProfiles = [
       pages: "physical PDF p. 1",
       facts: [
         ["SLA-T4", "replaced in 2021 with repaired PUL-T2"]
+      ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENTS",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [
+        ["SLA-T3", "SLA-08; 12.5 kV"],
+        ["SLA-T4", "SLA-11; 12.5 kV"]
       ]
     }
   },
@@ -1578,6 +1662,12 @@ export const stationProfiles = [
         ["PEP-05", "collapsed underground ductwork required replacement of the complete duct bank"],
         ["PEP-05 variance", "$261,000 of additional work"]
       ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENT",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [["PEP-05", "12.5 kV; PEP-T1/T2; 12.7 MVA feeder planning capacity"]]
     }
   },
   {
@@ -1598,6 +1688,12 @@ export const stationProfiles = [
         ["Selected expansion", "new Airport Substation and two 66 kV line sections from 35L"],
         ["VIR-T4", "evaluated as an alternative; not part of the selected expansion"]
       ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENTS",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [["VIR-T1/T2", "VIR-01 and VIR-06; 12.5 kV"]]
     }
   },
   {

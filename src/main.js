@@ -206,6 +206,8 @@ function renderStationProfile(code) {
   const recordSource = record ? sourceById.get(record.sourceId) : null;
   const planningRecord = profile.planningRecord;
   const planningSource = planningRecord ? sourceById.get(planningRecord.sourceId) : null;
+  const assignmentRecord = profile.assignmentRecord;
+  const assignmentSource = assignmentRecord ? sourceById.get(assignmentRecord.sourceId) : null;
   const circuitSource = profile.circuitSource ? sourceById.get(profile.circuitSource.sourceId) : null;
   document.querySelector("#station-profile").innerHTML = `
     <header class="profile-heading">
@@ -244,6 +246,12 @@ function renderStationProfile(code) {
             <span class="profile-label">${escapeHtml(planningRecord.label)}</span>
             <dl>${planningRecord.facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>
             <a class="evidence-link" href="${escapeHtml(planningSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(planningSource.title)} / ${escapeHtml(planningRecord.pages)}</a>
+          </div>` : ""}
+        ${assignmentRecord ? `
+          <div class="event-loads">
+            <span class="profile-label">${escapeHtml(assignmentRecord.label)}</span>
+            <dl>${assignmentRecord.facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>
+            <a class="evidence-link" href="${escapeHtml(assignmentSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(assignmentSource.title)} / ${escapeHtml(assignmentRecord.pages)}</a>
           </div>` : ""}
       </section>
     </div>

@@ -425,6 +425,31 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.match(stampsLane.planningRecord.facts.flat().join(" "), /replaced in 2021 with repaired PUL-T2/);
 });
 
+test("documented feeder assignments and bus breakers retain their filed scope", async () => {
+  const sourceIds = new Set(sources.map((source) => source.id));
+  const assignedProfiles = stationProfiles.filter((station) => station.assignmentRecord);
+  const assignments = Object.fromEntries(assignedProfiles.map((station) => [
+    station.code,
+    station.assignmentRecord.facts.flat().join(" ")
+  ]));
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+
+  assert.ok(assignedProfiles.length >= 10);
+  for (const profile of assignedProfiles) {
+    assert.ok(sourceIds.has(profile.assignmentRecord.sourceId));
+  }
+  assert.match(assignments.GDL, /GDL-T1\/T2-B and GDL-T2\/T3-B/);
+  assert.match(assignments.SJM, /SJM-T1\/T2 SJM-03, SJM-06 and SJM-09/);
+  assert.match(assignments.SLA, /SLA-T3 SLA-08; 12.5 kV SLA-T4 SLA-11/);
+  assert.match(assignments.VIR, /VIR-T1\/T2 VIR-01 and VIR-06/);
+  assert.match(assignments.SJM, /SJM-T3 SJM-10 and SJM-14/);
+  assert.match(assignments.SLA, /SLA-T3 SLA-08/);
+  assert.match(assignments.SLA, /SLA-T4 SLA-11/);
+  assert.match(assignments.VIR, /VIR-T1\/T2 VIR-01 and VIR-06/);
+  assert.match(main, /assignmentRecord\.facts/);
+  assert.match(main, /assignmentSource\.url/);
+});
+
 test("map selection stays in place and feeder maps are expandable", async () => {
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");

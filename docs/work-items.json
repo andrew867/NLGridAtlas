@@ -120,9 +120,12 @@
       "status": "in_progress",
       "scope": "Find protection, operating, or one-line drawings that assign feeders to transformer banks and bus sections for detailed Avalon stations.",
       "dependencies": ["AVL-001"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "src/data.js",
+        "research/NP_STATION_GAP_LEDGER.md"
+      ],
       "blocker": null,
-      "notes": "Search in progress for protection, operating, and one-line drawings. Current station descriptions and feeder maps are not sufficient to infer bus-section assignments."
+      "notes": "CA-NP-255 now establishes selected feeder-to-transformer assignments at HWD, OXP, KEN, GOU, KBR, RRD, SJM, SLA, PEP, and VIR. PUB-NP-064 Attachment G identifies Glendale T1/T2 and T2/T3 tie breakers. The remaining feeders and bus sections still require one-lines or protection drawings."
     },
     {
       "id": "AVL-003",
