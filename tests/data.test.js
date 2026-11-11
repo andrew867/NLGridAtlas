@@ -421,6 +421,14 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.match(glendaleFacts, /GDL-T3; 25 MVA each; described as 66\/12\.5 kV/);
   assert.match(glendaleFacts, /installed in 2013/);
   assert.match(glendale.planningRecord.facts.flat().join(" "), /construction completed in 2021/);
+  assert.deepEqual(glendale.referenceSheets.map((sheet) => sheet.image), [
+    "./reference-maps/gdl-01.png",
+    "./reference-maps/gdl-02.png",
+    "./reference-maps/gdl-03.png",
+    "./reference-maps/gdl-04.png",
+    "./reference-maps/gdl-05.png",
+    "./reference-maps/gdl-06.png"
+  ]);
 
   assert.deepEqual(stJohnsMain.mapPages, [["SJM-06", 135], ["SJM-08", 136], ["SJM-11", 137], ["SJM-13", 138]]);
   assert.match(stJohnsMainFacts, /SJM-T1 and SJM-T2, 25 MVA each at 66\/12\.5 kV/);
@@ -428,6 +436,12 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.match(stJohnsMain.planningRecord.facts.flat().join(" "), /SJM-03, SJM-07 and SJM-08 interconnected/);
   assert.equal(stJohnsMain.referenceSheets[0].image, "./reference-maps/sjm-2011-water-street-existing.png");
   assert.equal(stJohnsMain.referenceSheets[0].pages, "physical PDF p. 425");
+  assert.deepEqual(stJohnsMain.referenceSheets.slice(1).map((sheet) => sheet.image), [
+    "./reference-maps/sjm-06.png",
+    "./reference-maps/sjm-08.png",
+    "./reference-maps/sjm-11.png",
+    "./reference-maps/sjm-13.png"
+  ]);
 
   assert.deepEqual(stampsLane.mapPages, [["SLA-02", 139], ["SLA-03", 140], ["SLA-05", 141], ["SLA-06", 142], ["SLA-07", 143], ["SLA-08", 144], ["SLA-10", 145], ["SLA-11", 146], ["SLA-12", 147], ["SLA-13", 148]]);
   assert.match(stampsLaneFacts, /50 MVA combined at 12\.5 kV and 21 MVA combined at 4\.16 kV/);
@@ -437,6 +451,9 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.match(stampsLane.historyRecords[1].facts.flat().join(" "), /approximately 1\.26 MVA to SLA-08/);
   assert.match(stampsLane.historyRecords[3].facts.flat().join(" "), /approximately 135 A before conversion/);
   assert.match(stampsLane.historyRecords[5].facts.flat().join(" "), /deteriorated transformer radiators/);
+  assert.equal(stampsLane.referenceSheets.length, 10);
+  assert.equal(stampsLane.referenceSheets[0].image, "./reference-maps/sla-02.png");
+  assert.equal(stampsLane.referenceSheets.at(-1).image, "./reference-maps/sla-13.png");
 });
 
 test("2016 feeder growth records retain proposed currents, transfers, and route drawings", () => {
@@ -513,7 +530,7 @@ test("station reference schematics remain expandable and locally preserved", asy
   const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
   const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
-  assert.deepEqual(stJohnsMain.referenceSheets.map((sheet) => [sheet.title, sheet.pages]), [
+  assert.deepEqual(stJohnsMain.referenceSheets.slice(0, 1).map((sheet) => [sheet.title, sheet.pages]), [
     ["2011 Water Street existing feeder schematic", "physical PDF p. 425"]
   ]);
   assert.equal(kingsBridge.referenceSheets[0].image, "./reference-maps/kbr-2019-service-area.png");
