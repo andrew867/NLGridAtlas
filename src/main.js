@@ -187,6 +187,17 @@ function renderStationProfile(code) {
         <a class="feeder-map-source" href="${escapeHtml(mapBase)}#page=${page}" target="_blank" rel="noreferrer">CA-NP-020 / physical PDF p. ${page}</a>
       </details>`;
   }).join("");
+  const referenceSheets = (profile.referenceSheets || []).map((sheet) => {
+    const sheetSource = sourceById.get(sheet.sourceId);
+    return `
+      <details class="feeder-map reference-sheet">
+        <summary>${escapeHtml(sheet.title)}</summary>
+        <a class="feeder-map-image" href="${escapeHtml(sheet.image)}" target="_blank" rel="noreferrer" aria-label="Open full-size ${escapeHtml(sheet.title)}">
+          <img src="${escapeHtml(sheet.image)}" loading="lazy" alt="${escapeHtml(sheet.alt)}" />
+        </a>
+        <a class="feeder-map-source" href="${escapeHtml(sheetSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(sheetSource.title)} / ${escapeHtml(sheet.pages)}</a>
+      </details>`;
+  }).join("");
   const transformers = transformersByStation.get(code) || [];
   const transformerPages = [...new Set(transformers.map((transformer) => transformer.physical_page))];
   const transformerRows = transformers.map((transformer) => {
@@ -229,6 +240,7 @@ function renderStationProfile(code) {
           ? profile.feederRegister.map((feeder) => `<span>${escapeHtml(feeder)}</span>`).join("")
           : "<span>No feeder designation</span>"}</div>
         ${feederMaps ? `<span class="profile-label map-label">2014 FEEDER MAP SHEETS</span><div class="feeder-maps">${feederMaps}</div>` : ""}
+        ${referenceSheets ? `<span class="profile-label map-label">SYSTEM SCHEMATICS</span><div class="feeder-maps reference-sheets">${referenceSheets}</div>` : ""}
         ${profile.mapNote ? `<p class="profile-note">${escapeHtml(profile.mapNote)}</p>` : ""}
       </section>
       <section class="station-equipment">

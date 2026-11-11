@@ -345,7 +345,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "2011 Capital Budget Application, St. John's Main and Stamp's Lane records",
     topics: ["St. John's Main", "Stamp's Lane", "SJM-T1", "SJM-T2", "SJM-T4", "SLA-T1", "SLA-T2", "SLA-T3", "SLA-T4"],
-    pages: "physical PDF pp. 297 to 298 and 413 to 416",
+    pages: "physical PDF pp. 297 to 298, 413 to 416 and 425",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
   },
@@ -1610,7 +1610,7 @@ export const stationProfiles = [
     engineeringRecord: {
       date: "2015 TRANSFORMER ADDITION",
       title: "St. John's Main transformer expansion",
-      sourceId: "np-2015-capital-stations",
+      sourceId: "np-2015-capital-sjm",
       pages: "physical PDF pp. 502 to 507",
       facts: [
         ["2014 transformer bank", "SJM-T1 and SJM-T2, 25 MVA each at 66/12.5 kV; SJM-T4, 7.5 MVA at 66/4.16 kV"],
@@ -1637,7 +1637,16 @@ export const stationProfiles = [
         ["SJM-T1/T2", "SJM-03, SJM-06 and SJM-09; 12.5 kV"],
         ["SJM-T3", "SJM-10 and SJM-14; 12.5 kV"]
       ]
-    }
+    },
+    referenceSheets: [
+      {
+        title: "2011 Water Street existing feeder schematic",
+        image: "./reference-maps/sjm-2011-water-street-existing.png",
+        alt: "Existing 2011 Water Street underground distribution schematic showing SJM-03, SJM-07, SJM-08, SJM-14 and KBR-10",
+        sourceId: "np-2011-capital-stations",
+        pages: "physical PDF p. 425"
+      }
+    ]
   },
   {
     code: "SLA",

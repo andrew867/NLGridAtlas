@@ -418,6 +418,8 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.match(stJohnsMainFacts, /SJM-T1 and SJM-T2, 25 MVA each at 66\/12\.5 kV/);
   assert.match(stJohnsMainFacts, /install 25 MVA SJM-T3/);
   assert.match(stJohnsMain.planningRecord.facts.flat().join(" "), /SJM-03, SJM-07 and SJM-08 interconnected/);
+  assert.equal(stJohnsMain.referenceSheets[0].image, "./reference-maps/sjm-2011-water-street-existing.png");
+  assert.equal(stJohnsMain.referenceSheets[0].pages, "physical PDF p. 425");
 
   assert.deepEqual(stampsLane.mapPages, [["SLA-02", 139], ["SLA-03", 140], ["SLA-05", 141], ["SLA-06", 142], ["SLA-07", 143], ["SLA-08", 144], ["SLA-10", 145], ["SLA-11", 146], ["SLA-12", 147], ["SLA-13", 148]]);
   assert.match(stampsLaneFacts, /50 MVA combined at 12\.5 kV and 21 MVA combined at 4\.16 kV/);
@@ -439,6 +441,33 @@ test("station history records retain source and page references", async () => {
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(main, /historyRecords\.map/);
   assert.match(main, /historySource\.url/);
+});
+
+test("every station record resolves to a source", () => {
+  const sourceIds = new Set(sources.map((source) => source.id));
+  for (const profile of stationProfiles) {
+    for (const key of ["engineeringRecord", "planningRecord", "assignmentRecord", "circuitSource"]) {
+      if (profile[key]) assert.ok(sourceIds.has(profile[key].sourceId), `${profile.code} ${key}: ${profile[key].sourceId}`);
+    }
+    for (const record of profile.historyRecords || []) {
+      assert.ok(sourceIds.has(record.sourceId), `${profile.code} history record: ${record.sourceId}`);
+    }
+    for (const sheet of profile.referenceSheets || []) {
+      assert.ok(sourceIds.has(sheet.sourceId), `${profile.code} reference sheet: ${sheet.sourceId}`);
+    }
+  }
+});
+
+test("station reference schematics remain expandable and locally preserved", async () => {
+  const stJohnsMain = stationProfiles.find((station) => station.code === "SJM");
+  assert.deepEqual(stJohnsMain.referenceSheets.map((sheet) => [sheet.title, sheet.pages]), [
+    ["2011 Water Street existing feeder schematic", "physical PDF p. 425"]
+  ]);
+  const schematic = await readFile(new URL("../public/reference-maps/sjm-2011-water-street-existing.png", import.meta.url));
+  assert.ok(schematic.length > 300_000);
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(main, /referenceSheets/);
+  assert.match(main, /SYSTEM SCHEMATICS/);
 });
 
 test("documented feeder assignments and bus breakers retain their filed scope", async () => {
