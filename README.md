@@ -64,6 +64,15 @@ Search one or more PDF trees and retain physical page references:
 python scripts\search_pdf_pages.py C:\src\misc\PUB\mirror\applications\NP2027Capital --term "Pulpit Rock" --term "PUL-T2"
 ```
 
+Search the PUB full-text index without changing the archive:
+
+```powershell
+python scripts\search_pub_index.py C:\src\misc\PUB\metadata\pub.sqlite '"Transmission Line Listing"' --limit 20
+```
+
+The register-successor search and its exact page references are recorded in
+[research/NP_REGISTER_SUCCESSORS.md](research/NP_REGISTER_SUCCESSORS.md).
+
 ## Repository layout
 
 - `src/`: site code and curated evidence data

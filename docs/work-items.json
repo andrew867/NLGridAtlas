@@ -22,16 +22,12 @@
       "title": "Complete and report the PUB mirror and index",
       "phase": 0,
       "priority": "P0",
-      "status": "done",
+      "status": "in_progress",
       "scope": "Confirm crawler completion, unresolved URLs, document counts, extraction counts, page index counts, and final archive health.",
       "dependencies": [],
-      "completion_evidence": [
-        "research/NEWFOUNDLAND_POWER_DIRECT_MIRROR.md",
-        "C:/src/misc/NewfoundlandPowerRegulatory/inventory.json",
-        "C:/src/misc/NewfoundlandPowerRegulatory/downloads.jsonl"
-      ],
+      "completion_evidence": [],
       "blocker": null,
-      "notes": "The mirror and multi-gigabyte index exist under C:/src/misc/PUB, but a final completion report has not been reconciled into the atlas."
+      "notes": "The resumed crawler downloaded 21 files without a reported transfer failure. Extraction, export, and the final audit were still running on 2026-11-10, so archive completion is not yet established."
     },
     {
       "id": "ARC-002",
@@ -50,10 +46,15 @@
       "title": "Create a direct Newfoundland Power regulatory inventory and mirror",
       "phase": 0,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory and preserve regulatory PDFs hosted directly by Newfoundland Power, including pages not mirrored by PUB.",
       "dependencies": ["ARC-001"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "research/NEWFOUNDLAND_POWER_DIRECT_MIRROR.md",
+        "scripts/sync_newfoundland_power_regulatory.py",
+        "C:/src/misc/NewfoundlandPowerRegulatory/inventory.json",
+        "C:/src/misc/NewfoundlandPowerRegulatory/downloads.jsonl"
+      ],
       "blocker": null,
       "notes": "The 2026-11-11 inventory preserves all 13 PDFs linked from the official Regulation page. Ten have no byte-identical PUB hash."
     },
@@ -74,12 +75,12 @@
       "title": "Search the direct and mirrored archives for current circuit and feeder registers",
       "phase": 0,
       "priority": "P0",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Find a current replacement for the June 2005 circuit and feeder registers, or document that no public replacement was located.",
       "dependencies": ["ARC-001", "ARC-003"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Later filings prove changes that are absent from the 2005 register."
+      "notes": "A 2009 CBA response contains a six-page substation and feeder listing. A 2013 system response contains a nine-page transmission-line loading table, while a 2010 depreciation appendix contains line construction details. Later complete replacements are still being checked."
     },
     {
       "id": "DB-001",

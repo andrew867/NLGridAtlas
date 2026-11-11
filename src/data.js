@@ -10,6 +10,66 @@ export const sources = [
     url: "http://www.pub.nf.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationHandbook.pdf"
   },
   {
+    id: "np-2009-feeder-list",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-5, Substation and Feeder Listing",
+    topics: ["substations", "station codes", "distribution feeders"],
+    pages: "PDF pp. 3 to 8; attachment pp. 1 to 6",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/rfi/PUB-NP-5.pdf"
+  },
+  {
+    id: "np-2010-transmission-list",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2010 Depreciation Study, Transmission Line Listing",
+    topics: ["transmission lines", "line sections", "length", "year built", "conductor"],
+    pages: "PDF pp. 280 to 286; appendix pp. A1 to A6",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-2013-line-loading",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-275, Transmission Line Loading",
+    topics: ["transmission lines", "endpoints", "voltage", "winter rating", "forecast peak load"],
+    pages: "PDF pp. 3 to 11; attachment pp. 1 to 9",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-275.pdf"
+  },
+  {
+    id: "np-2022-line-age",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "CA-NP-156, Transmission Lines 40 Years of Age or Older",
+    topics: ["transmission lines", "age", "inspection", "rebuild criteria"],
+    pages: "PDF pp. 1 to 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/rfis/CA-NP-156.PDF"
+  },
+  {
+    id: "np-2025-line-standards",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "CA-NP-124, Transmission Line Construction Standards",
+    topics: ["transmission lines", "construction standards", "rebuild strategy"],
+    pages: "PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/CA-NP-124.PDF"
+  },
+  {
+    id: "np-2026-line-rebuilds",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "CA-NP-069, Transmission Line Rebuild Projects Since 2006",
+    topics: ["transmission lines", "rebuilds", "capital cost"],
+    pages: "PDF pp. 1 to 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/responses/CA-NP-069.PDF"
+  },
+  {
     id: "asset-2023",
     year: 2023,
     organization: "NL Hydro",
