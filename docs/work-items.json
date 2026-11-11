@@ -22,10 +22,14 @@
       "title": "Complete and report the PUB mirror and index",
       "phase": 0,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Confirm crawler completion, unresolved URLs, document counts, extraction counts, page index counts, and final archive health.",
       "dependencies": [],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "research/NEWFOUNDLAND_POWER_DIRECT_MIRROR.md",
+        "C:/src/misc/NewfoundlandPowerRegulatory/inventory.json",
+        "C:/src/misc/NewfoundlandPowerRegulatory/downloads.jsonl"
+      ],
       "blocker": null,
       "notes": "The mirror and multi-gigabyte index exist under C:/src/misc/PUB, but a final completion report has not been reconciled into the atlas."
     },
@@ -46,12 +50,12 @@
       "title": "Create a direct Newfoundland Power regulatory inventory and mirror",
       "phase": 0,
       "priority": "P0",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Inventory and preserve regulatory PDFs hosted directly by Newfoundland Power, including pages not mirrored by PUB.",
       "dependencies": ["ARC-001"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "The current corpus relies on PUB copies and selected direct PDFs."
+      "notes": "The 2026-11-11 inventory preserves all 13 PDFs linked from the official Regulation page. Ten have no byte-identical PUB hash."
     },
     {
       "id": "SRC-001",
@@ -87,7 +91,7 @@
       "dependencies": ["ARC-001"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "The exported text and derived JSON exist, but the ACCDB file is not preserved locally."
+      "notes": "The original ACCDB is preserved in the PUB mirror. Hash and exported-row reconciliation remain to be documented."
     },
     {
       "id": "AVL-001",

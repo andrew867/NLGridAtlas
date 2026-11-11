@@ -14,6 +14,7 @@ Project control:
 - [Phased development plan](docs/DEVELOPMENT_PLAN.md)
 - [Verification plan](docs/VERIFICATION_PLAN.md)
 - [Authoritative work-item register](docs/work-items.json)
+- [Newfoundland Power direct regulatory mirror](research/NEWFOUNDLAND_POWER_DIRECT_MIRROR.md)
 
 ## Run locally
 
@@ -46,6 +47,16 @@ python scripts\sync_nlhydro_uploads.py mirror --out C:\src\misc\NLHydroUploads
 ```
 
 The output directory contains `inventory.json`, `downloads.jsonl`, and the mirrored files. Keep the mirror outside this repository.
+
+## Newfoundland Power regulatory mirror
+
+Inventory or resume the PDFs linked from Newfoundland Power's Regulation page:
+
+```powershell
+python scripts\sync_newfoundland_power_regulatory.py mirror --out C:\src\misc\NewfoundlandPowerRegulatory
+```
+
+The output directory contains `inventory.json`, `downloads.jsonl`, and the verified PDF files. Keep the mirror outside this repository.
 
 Search one or more PDF trees and retain physical page references:
 
