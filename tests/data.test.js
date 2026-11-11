@@ -456,6 +456,27 @@ test("2016 feeder growth records retain proposed currents, transfers, and route 
   assert.equal(pulpitRock.referenceSheets[0].image, "./reference-maps/pul-02-2016-upgrade.jpg");
 });
 
+test("2022 PUL-03 and VIR-01 records separate measured project bases from completion", () => {
+  const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
+  const pulpitRock = stationProfiles.find((station) => station.code === "PUL");
+  const filedSource = sources.find((item) => item.id === "np-2022-feeder-growth");
+  const completionSource = sources.find((item) => item.id === "np-2022-q4-report");
+  const virBasis = virginiaWaters.historyRecords.find((record) => record.label === "2022 VIR-01 PROJECT BASIS");
+  const virCompletion = virginiaWaters.historyRecords.find((record) => record.label === "2022 VIR-01 COMPLETION");
+  const pulBasis = pulpitRock.historyRecords.find((record) => record.label === "2022 PUL-03 PROJECT BASIS");
+  const pulCompletion = pulpitRock.historyRecords.find((record) => record.label === "2022 PUL-03 COMPLETION");
+
+  assert.equal(filedSource.status, "proposed");
+  assert.equal(completionSource.status, "verified");
+  assert.match(virBasis.facts.flat().join(" "), /113 A.*85 A maximum/);
+  assert.match(virBasis.facts.flat().join(" "), /1\.8 km.*#4 copper.*1\/0 AASC/);
+  assert.match(virCompletion.facts.flat().join(" "), /project completed/);
+  assert.equal(virginiaWaters.referenceSheets.at(-1).image, "./reference-maps/vir-01-2022-upgrade.jpg");
+  assert.match(pulBasis.facts.flat().join(" "), /198 A per phase.*168 A/);
+  assert.match(pulCompletion.facts.flat().join(" "), /project completed/);
+  assert.equal(pulpitRock.referenceSheets.at(-1).image, "./reference-maps/pul-03-2022-upgrade.jpg");
+});
+
 test("station history records retain source and page references", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
   for (const profile of stationProfiles.filter((station) => station.historyRecords)) {

@@ -23,8 +23,9 @@ Updated: 2026-11-10
 - [x] 66 kV network identified as semi-geographic, using the 2013 and 2026 source maps for station placement.
 - [x] Hydro upload findings added to the site: TL201 dynamic line rating, Western Avalon controls, Avalon combustion-turbine connection, and the Holyrood 2030 planning case.
 - [x] Island station register added for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Massey Drive, Stephenville, and Come By Chance.
-- [x] All 15 feeder-map images currently extracted from the archive are linked from their station records.
+- [x] All feeder-map images currently extracted from the archive are linked from their station records.
 - [x] The 2016 PUL-02, RRD-10, and PUL-05 route drawings are extracted and linked from Pulpit Rock, Ridge Road, and Virginia Waters.
+- [x] The 2022 PUL-03 and VIR-01 route drawings are linked to their measured project bases and completion records.
 
 ## Evidence gaps
 

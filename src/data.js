@@ -410,6 +410,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
   },
   {
+    id: "np-2022-feeder-growth",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Feeder Additions for Load Growth",
+    topics: ["Pulpit Rock", "Virginia Waters", "PUL-03", "VIR-01", "measured current", "conductor rating", "route drawing"],
+    pages: "physical PDF pp. 399 to 409",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
+    id: "np-2022-q4-report",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "Quarterly Regulatory Report, Q4 2022",
+    topics: ["Pulpit Rock", "Virginia Waters", "PUL-03", "VIR-01", "completion", "load growth"],
+    pages: "physical PDF p. 13",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202022_Redacted.pdf"
+  },
+  {
     id: "np-2023-ca-np-176",
     year: 2022,
     organization: "Newfoundland Power",
@@ -2084,6 +2104,13 @@ export const stationProfiles = [
         alt: "Filed route drawing for the proposed PUL-05 feeder from Pulpit Rock to the VIR-06 interconnection at Torbay Road",
         sourceId: "np-2016-feeder-growth",
         pages: "physical PDF p. 419"
+      },
+      {
+        title: "2022 VIR-01 route and completed upgrade section",
+        image: "./reference-maps/vir-01-2022-upgrade.jpg",
+        alt: "Filed VIR-01 route drawing showing the 1.8 kilometre Marine Drive section selected for conversion from single phase to three phase",
+        sourceId: "np-2022-feeder-growth",
+        pages: "physical PDF p. 406"
       }
     ],
     feederRegister: ["VIR-01", "VIR-02", "VIR-03", "VIR-04", "VIR-05", "VIR-06", "VIR-07", "VIR-08"],
@@ -2130,6 +2157,23 @@ export const stationProfiles = [
           ["VIR-06 forecast", "601 A per phase on 477 ASC with a 590 A per-phase planning rating"],
           ["VIR-06 transfer", "3.2 MVA to proposed PUL-05 through a 3.9 km feeder"]
         ]
+      },
+      {
+        label: "2022 VIR-01 PROJECT BASIS",
+        sourceId: "np-2022-feeder-growth",
+        pages: "physical PDF pp. 405 to 406",
+        facts: [
+          ["Feeder", "VIR-01; approximately 880 residential and commercial customers"],
+          ["Measured current", "approximately 113 A on the single-phase Marine Drive section"],
+          ["Planning criterion", "85 A maximum on a single-phase distribution line"],
+          ["Filed scope", "convert 1.8 km from single phase to three phase and replace #4 copper with 1/0 AASC"]
+        ]
+      },
+      {
+        label: "2022 VIR-01 COMPLETION",
+        sourceId: "np-2022-q4-report",
+        pages: "physical PDF p. 13",
+        facts: [["Status", "load-growth project completed"]]
       }
     ]
   },
@@ -2180,6 +2224,23 @@ export const stationProfiles = [
           ["PUL-05 scope", "construct approximately 3.9 km to VIR-06 at Torbay Road"],
           ["2015 transformer load", "35.8 MVA, 72% of the 50 MVA combined rating"]
         ]
+      },
+      {
+        label: "2022 PUL-03 PROJECT BASIS",
+        sourceId: "np-2022-feeder-growth",
+        pages: "physical PDF pp. 400 to 401",
+        facts: [
+          ["Feeder", "PUL-03; approximately 1,100 residential and commercial customers"],
+          ["Measured current", "approximately 198 A per phase on the two-phase Bauline Line section"],
+          ["Planning rating", "168 A for #2 aluminum conductor"],
+          ["Filed scope", "convert 2.5 km from two phase to three phase and replace #2 aluminum with 1/0 AASC"]
+        ]
+      },
+      {
+        label: "2022 PUL-03 COMPLETION",
+        sourceId: "np-2022-q4-report",
+        pages: "physical PDF p. 13",
+        facts: [["Status", "load-growth project completed"]]
       }
     ],
     referenceSheets: [
@@ -2196,6 +2257,13 @@ export const stationProfiles = [
         alt: "Filed route drawing for the proposed 3.9 kilometre PUL-05 feeder to the VIR-06 interconnection at Torbay Road",
         sourceId: "np-2016-feeder-growth",
         pages: "physical PDF p. 419"
+      },
+      {
+        title: "2022 PUL-03 route and completed upgrade section",
+        image: "./reference-maps/pul-03-2022-upgrade.jpg",
+        alt: "Filed PUL-03 route drawing showing the 2.5 kilometre Bauline Line section selected for conversion from two phase to three phase",
+        sourceId: "np-2022-feeder-growth",
+        pages: "physical PDF p. 401"
       }
     ]
   },
