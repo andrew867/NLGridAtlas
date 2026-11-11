@@ -18,7 +18,7 @@ Updated: 2026-11-11
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 82 automated tests, source-hash verification, and the production build.
+- Passed 85 automated tests, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.
@@ -29,18 +29,19 @@ Updated: 2026-11-11
 - Added the interactive 2018 island AC backbone with all 58 filed Hydro circuit designations and 68 filed route segments.
 - Added voltage filters, circuit records, station connection records, and links to the existing terminal records.
 - Verified one detail panel, circuit and station selection, filtering, zero browser warnings or errors, and a 390 px layout with no page overflow.
-- Added Molloy's Lane as `AVL-007`; its handbook circuits, feeder register, and 2027 transformer data were already available, but it does not yet have a dedicated station diagram.
 - Replaced the ten island terminal summary cards with dated connection diagrams and equipment records.
 - Added the filed Sunnyside T1 breaker arrangement, Stony Brook transformer ratings, Buchans T1 replacement rating, Deer Lake transformation ratings, Bottom Brook and Stephenville post-retirement planning arrangement, Massey Drive transformer assignments, and all four Come By Chance capacitor banks.
 - Added individual records for Upper Salmon, Granite Canal, Cat Arm, and Hinds Lake with filed plant ratings, energy capability, and documented transmission connections.
 - Corrected the 2013 island plant-assignment source reference from physical PDF p. 663 to physical PDF p. 80. Physical PDF p. 663 remains the Holyrood demolition drawing.
 - Verified Upper Salmon and Cat Arm record rendering at 1440 by 1000 px and 390 by 844 px. The mobile page has no horizontal page overflow; the one-line remains horizontally scrollable inside its own frame.
+- Added a dedicated Molloy's Lane record with 15L and 19L supplies, both transformer records, eight 12.5 kV feeders, the 2023 proposed modernization scope, and six filed feeder route sheets.
+- Verified the Molloy's Lane diagram and MOL-01 route sheet at 1440 by 1000 px and 390 by 844 px. The mobile page has no horizontal page overflow; the one-line remains horizontally scrollable inside its frame.
 
 ## Active work
 
 1. Add western and rural terminal-station coverage, `ISL-005`.
-2. Create a dedicated Molloy's Lane record from the existing register data and any later station filings, `AVL-007`.
-3. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
+2. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
+3. Complete island transformer nameplate and age records, `ISL-006`.
 
 ## Island backbone progress
 

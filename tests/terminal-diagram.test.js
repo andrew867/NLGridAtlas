@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import { islandTerminalRecords } from "../src/data.js";
 import { renderTerminalDiagram } from "../src/terminal-diagram.js";
 
@@ -75,4 +76,22 @@ test("plant-assignment records cite physical PDF page 80", () => {
     const systemSource = record.sources.find((source) => source.sourceId === "gra-2013-v2");
     assert.equal(systemSource.pages, "physical PDF p. 80");
   }
+});
+
+test("Newfoundland Power circuit links open the station browser", () => {
+  const diagram = {
+    label: "Station link test",
+    buses: [{ id: "b1", label: "bus", voltage: "66 kV" }],
+    transformers: [],
+    circuits: [{ label: "15L", destination: "Stamp's Lane", bus: "b1", stationCode: "SLA" }]
+  };
+  const html = renderTerminalDiagram(diagram, escapeHtml);
+  assert.match(html, /href="#station-browser"/);
+  assert.match(html, /data-station-record="SLA"/);
+});
+
+test("diagram text masks conductor strokes", async () => {
+  const css = await readFile(new URL("../src/styles.css", import.meta.url), "utf8");
+  assert.match(css, /\.terminal-diagram text\s*\{[^}]*paint-order:\s*stroke fill/s);
+  assert.match(css, /\.terminal-diagram text\s*\{[^}]*stroke-width:\s*8px/s);
 });

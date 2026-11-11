@@ -520,6 +520,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
   },
   {
+    id: "np-2023-capital-molloys",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Molloy's Lane Substation Refurbishment and Modernization",
+    topics: ["Molloy's Lane", "15L", "19L", "MOL-T1", "MOL-T2", "66 kV bus", "12.5 kV feeders"],
+    pages: "physical PDF pp. 403 to 411",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
     id: "np-2023-capex-report",
     year: 2024,
     organization: "Newfoundland Power",
@@ -2298,6 +2308,46 @@ export const islandTerminalRecords = [
 ];
 
 export const stationProfiles = [
+  {
+    code: "MOL",
+    name: "Molloy's Lane",
+    voltage: "66 kV / 12.5 kV",
+    feederRegister: ["MOL-01", "MOL-02", "MOL-03", "MOL-04", "MOL-05", "MOL-06", "MOL-08", "MOL-09"],
+    mapPages: [["MOL-01", 108], ["MOL-02", 109], ["MOL-04", 110], ["MOL-05", 111], ["MOL-06", 112], ["MOL-09", 113]],
+    mapNote: "The 2014 outage attachment includes route sheets for six of the eight registered feeders.",
+    eventLoads: [],
+    diagram: {
+      label: "2023 filed station equipment / bus sectionalizing omitted",
+      buses: [{ id: "b1", label: "transmission supply", voltage: "66 kV" }, { id: "b2", label: "distribution feeder level", voltage: "12.5 kV" }],
+      transformers: [{ label: "MOL-T1", rating: "25 MVA", from: "b1", to: "b2" }, { label: "MOL-T2", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "15L", destination: "Stamp's Lane", bus: "b1", stationCode: "SLA" },
+        { label: "19L", destination: "Hardwoods", bus: "b1", stationCode: "HWD" },
+        { label: "MOL-01", destination: "distribution", bus: "b2", link: false },
+        { label: "MOL-02", destination: "distribution", bus: "b2", link: false },
+        { label: "MOL-03", destination: "distribution", bus: "b2", link: false },
+        { label: "MOL-04", destination: "distribution", bus: "b2", link: false },
+        { label: "MOL-05", destination: "distribution", bus: "b2", link: false },
+        { label: "MOL-06", destination: "distribution", bus: "b2", link: false },
+        { label: "MOL-08", destination: "distribution", bus: "b2", link: false },
+        { label: "MOL-09", destination: "distribution", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2023 CAPITAL APPLICATION",
+      title: "Molloy's Lane station record",
+      sourceId: "np-2023-capital-molloys",
+      pages: "physical PDF pp. 403 to 411",
+      facts: [
+        ["Station", "Built in 1960 on Topsail Road as a transmission and distribution substation"],
+        ["66 kV supply", "15L from Stamp's Lane; 19L from Hardwoods"],
+        ["Distribution", "Two 25 MVA transformers; eight 12.5 kV feeders; approximately 8,900 customers"],
+        ["MOL-T1", "Maloney Electric, manufactured 1980, 66/12.5 kV, 25 MVA"],
+        ["MOL-T2", "Federal Pioneer, manufactured 1976, 66/12.5/25 kV, 25 MVA"],
+        ["2023 proposed work", "New 66 kV steel bus structure, bus tie breaker, two 66 kV breakers, one 12.5 kV breaker, new switches, digital relays, control building, transformer spill containment, and ground-grid extension"]
+      ]
+    }
+  },
   {
     code: "HWD",
     name: "Hardwoods",

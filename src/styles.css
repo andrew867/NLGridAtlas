@@ -478,7 +478,14 @@ button, input { font: inherit; }
 .terminal-diagram-block { margin-top: 1.25rem; border: 1px solid var(--rule); background: color-mix(in srgb, var(--paper) 93%, white); }
 .terminal-diagram-scroll { overflow-x: auto; overscroll-behavior-inline: contain; }
 .terminal-diagram { display: block; width: 100%; min-width: 760px; height: auto; }
-.terminal-diagram text { fill: var(--ink); font-family: "IBM Plex Mono", monospace; }
+.terminal-diagram text {
+  fill: var(--ink);
+  paint-order: stroke fill;
+  stroke: var(--paper);
+  stroke-width: 8px;
+  stroke-linejoin: round;
+  font-family: "IBM Plex Mono", monospace;
+}
 .terminal-bus line { stroke: var(--ink); stroke-width: 7; }
 .terminal-bus.voltage-230 line { stroke: var(--phase-a); }
 .terminal-bus.voltage-138 line { stroke: var(--copper); }

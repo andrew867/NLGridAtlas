@@ -214,15 +214,24 @@
       "title": "Create a dedicated Molloy's Lane substation record",
       "phase": 1,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Search the archive for Molloy's Lane station one-lines, transformer history, circuits, feeder voltages, and capital work, then replace the generic register-only view with a sourced station record.",
       "dependencies": ["AVL-001", "SRC-002"],
       "completion_evidence": [
         "src/data.js",
-        "research/NP_STATION_GAP_LEDGER.md"
+        "src/main.js",
+        "src/terminal-diagram.js",
+        "public/feeder-maps/mol-01.jpg",
+        "public/feeder-maps/mol-02.jpg",
+        "public/feeder-maps/mol-04.jpg",
+        "public/feeder-maps/mol-05.jpg",
+        "public/feeder-maps/mol-06.jpg",
+        "public/feeder-maps/mol-09.jpg",
+        "research/NP_STATION_GAP_LEDGER.md",
+        "tests/data.test.js"
       ],
       "blocker": null,
-      "notes": "The atlas already contains the 2005 feeder register, the 2006 handbook circuit links, and the 2027 transformer-register rows for MOL-T1 and MOL-T2. A dedicated station profile and supported one-line are still absent. The wider St. John's station list will be checked for similar omissions."
+      "notes": "The dedicated record now uses the 2023 capital application for the station age, 15L and 19L supplies, transformer nameplates, customer count, 12.5 kV feeder count, and proposed refurbishment. The one-line is explicitly logical and omits bus sectionalizing. Six filed 2014 feeder route sheets are included."
     },
     {
       "id": "NAV-001",

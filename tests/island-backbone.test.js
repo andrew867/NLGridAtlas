@@ -37,10 +37,11 @@ test("Avalon layouts place Holyrood north of Soldiers Pond and TL201", () => {
   assert.match(html, /M360 330 H650/);
 });
 
-test("Molloy's Lane dedicated record remains tracked after its generic register entry was identified", () => {
+test("Molloy's Lane dedicated record is complete", () => {
   const item = workItems.work_items.find((entry) => entry.id === "AVL-007");
-  assert.equal(item.status, "in_progress");
+  assert.equal(item.status, "done");
   assert.match(item.scope, /Molloy's Lane/);
+  assert.ok(item.completion_evidence.includes("src/data.js"));
 });
 
 test("island map generation nodes open their individual records", () => {

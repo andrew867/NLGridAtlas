@@ -339,6 +339,19 @@ test("station browser covers the handbook and merges the 2027 transformer regist
   assert.match(html, /id="station-tabs"/);
 });
 
+test("Molloy's Lane has a filed station record and feeder route sheets", () => {
+  const molloys = stationProfiles.find((station) => station.code === "MOL");
+  assert.ok(molloys);
+  assert.deepEqual(molloys.feederRegister, ["MOL-01", "MOL-02", "MOL-03", "MOL-04", "MOL-05", "MOL-06", "MOL-08", "MOL-09"]);
+  assert.deepEqual(molloys.mapPages, [["MOL-01", 108], ["MOL-02", 109], ["MOL-04", 110], ["MOL-05", 111], ["MOL-06", 112], ["MOL-09", 113]]);
+  assert.equal(molloys.diagram.transformers.length, 2);
+  assert.deepEqual(molloys.diagram.circuits.slice(0, 2).map(({ label, stationCode }) => [label, stationCode]), [["15L", "SLA"], ["19L", "HWD"]]);
+  const facts = molloys.engineeringRecord.facts.flat().join(" ");
+  assert.match(facts, /Built in 1960/);
+  assert.match(facts, /approximately 8,900 customers/);
+  assert.match(facts, /2023 proposed work/);
+});
+
 test("Pepperell and Virginia Waters records separate completed work from rejected alternatives", () => {
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
   const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");

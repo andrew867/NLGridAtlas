@@ -256,6 +256,7 @@ function renderStationProfile(code) {
       <div><span>${escapeHtml(profile.code)} / STATION RECORD</span><h4>${escapeHtml(profile.name)}</h4></div>
       <strong>${escapeHtml(stationVoltage)}</strong>
     </header>
+    ${profile.diagram ? renderTerminalDiagram(profile.diagram, escapeHtml) : ""}
     <div class="profile-grid">
       <section>
         <span class="profile-label">${escapeHtml(profile.circuitRegisterLabel || "2005 CIRCUIT REGISTER")}</span>

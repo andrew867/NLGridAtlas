@@ -11,8 +11,8 @@ Work item: `SRC-001`
 | Selectable diagram components | 141 | `components` in `src/data.js` |
 | Timeline events | 27 | `timeline` in `src/data.js` |
 | Island terminal records and connection diagrams | 14 | `islandTerminalRecords` in `src/data.js`; `src/terminal-diagram.js` |
-| Detailed Newfoundland Power profiles | 19 | `stationProfiles` in `src/data.js` |
-| Source records | 89 | `sources` in `src/data.js` |
+| Detailed Newfoundland Power profiles | 20 | `stationProfiles` in `src/data.js` |
+| Source records | 90 | `sources` in `src/data.js` |
 
 The static ledger covers the system-length panel, island and Avalon network views, terminal-station and Newfoundland Power one-lines, Avalon transmission work, load records, and the VHF records.
 
@@ -55,6 +55,7 @@ Existing data tests perform the same source-resolution checks for timeline event
 | `glendale-substation-one-line` | 2006 handbook, PDF pp. 6 to 7 and 12; 2020 Capital Budget Application, physical PDF pp. 447 to 453; PUB-NP-064 Attachment G, physical PDF pp. 148 to 152; CA-NP-176, physical PDF pp. 6 to 7; 2027 power-transformer listing, physical PDF p. 547 | The logical one-line shows 18L to Goulds, 73L to Hardwoods, three 25 MVA transformers, and GDL-01 through GDL-09. It does not assign feeders to bus sections because no public source located in this pass provides those assignments. The transformer evidence preserves the 12.5 kV station record and the later 25 kV equipment-table entries. |
 | `st-johns-main-2015-one-line` | 2006 handbook, PDF pp. 6 and 15; 2011 Capital Budget Application, physical PDF pp. 413 to 416; 2015 Capital Budget Application, physical PDF pp. 502 to 507; CA-NP-255, physical PDF p. 4; 2027 power-transformer listing, physical PDF p. 550 | The dated logical one-line shows 4L, 13L and 25L; the selected 2015 SJM-T3 addition in parallel with SJM-T1 and SJM-T2; the historical SJM-T4 and SJM-12 4.16 kV branch; and the five later feeder assignments. The transformer panels preserve the conflict between the 2015 12.5 kV station record and the 2027 equipment table's 25 kV entries for SJM-T1 and SJM-T3. Breaker positions are not reconstructed. |
 | `stamps-lane-substation-one-line` | 2006 handbook, PDF pp. 6 to 7 and 16; 2011 Capital Budget Application, physical PDF pp. 297 to 298; PUB-NP-276, physical PDF p. 6 and attachment p. 4; CA-NP-255, physical PDF p. 4; CA-NP-065, physical PDF p. 1; 2027 power-transformer listing, physical PDF p. 550 | The logical one-line separates the SLA-T1 and SLA-T2 4.16 kV bank from the SLA-T3 and SLA-T4 12.5 kV bank. It shows the six documented 66 kV circuits and the nine feeders with filed 2014 voltage assignments. SLA-08 and SLA-11 retain their documented transformer assignments. Breaker positions are not reconstructed. |
+| `molloys-lane-station-record` | 2023 Capital Budget Application, physical PDF pp. 403 to 411; 2006 handbook, PDF pp. 6 to 7 and 14; 2027 power-transformer listing, physical PDF p. 549; CA-NP-020, physical PDF pp. 108 to 113 | The logical one-line shows 15L and 19L, two 25 MVA transformers, and eight 12.5 kV feeders. It omits bus sectionalizing. The record includes the 1960 station date, transformer manufacture years, approximately 8,900 customers, the proposed 2023 modernization scope, and six filed feeder route sheets. |
 
 The May 18, 2010 construction register pages and the 2013 loading tables were also inspected during `SRC-002`. Their extracted data is controlled separately in `research/derived/np-register-layers-2008-2013.json`.
 

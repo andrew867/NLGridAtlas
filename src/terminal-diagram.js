@@ -6,6 +6,9 @@ function spread(index, count, left = 170, right = 950) {
 function circuitLink(circuit, body, escapeHtml) {
   if (circuit.link === false) return body;
   const label = escapeHtml(`${circuit.label} to ${circuit.destination}`);
+  if (circuit.stationCode) {
+    return `<a href="#station-browser" data-station-record="${escapeHtml(circuit.stationCode)}" aria-label="Open ${label}">${body}</a>`;
+  }
   if (circuit.destinationCode) {
     return `<a href="#hydro-terminal-browser" data-hydro-terminal-record="${escapeHtml(circuit.destinationCode)}" aria-label="Open ${label}">${body}</a>`;
   }
