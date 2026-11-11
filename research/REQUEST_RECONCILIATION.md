@@ -26,7 +26,6 @@ Updated: 2026-11-10
 - [x] All feeder-map images currently extracted from the archive are linked from their station records.
 - [x] The 2016 PUL-02, RRD-10, and PUL-05 route drawings are extracted and linked from Pulpit Rock, Ridge Road, and Virginia Waters.
 - [x] The 2022 PUL-03 and VIR-01 route drawings are linked to their measured project bases and completion records.
-- [x] The 2014 feeder index grids for Glendale, St. John's Main, and Stamp's Lane are rendered and linked from their station records.
 
 ## Evidence gaps
 

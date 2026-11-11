@@ -1863,15 +1863,6 @@ export const stationProfiles = [
           ["System area", "increased transformer capacity for Mount Pearl and Southlands"]
         ]
       }
-    ],
-    referenceSheetLabel: "2014 FEEDER INDEX GRIDS",
-    referenceSheets: [
-      { title: "GDL-01 feeder index grid", image: "./reference-maps/gdl-01.png", alt: "Filed 2014 feeder index grid for GDL-01", sourceId: "np-island-ca-020", pages: "physical PDF p. 58" },
-      { title: "GDL-02 feeder index grid", image: "./reference-maps/gdl-02.png", alt: "Filed 2014 feeder index grid for GDL-02", sourceId: "np-island-ca-020", pages: "physical PDF p. 59" },
-      { title: "GDL-03 feeder index grid", image: "./reference-maps/gdl-03.png", alt: "Filed 2014 feeder index grid for GDL-03", sourceId: "np-island-ca-020", pages: "physical PDF p. 60" },
-      { title: "GDL-04 feeder index grid", image: "./reference-maps/gdl-04.png", alt: "Filed 2014 feeder index grid for GDL-04", sourceId: "np-island-ca-020", pages: "physical PDF p. 61" },
-      { title: "GDL-05 feeder index grid", image: "./reference-maps/gdl-05.png", alt: "Filed 2014 feeder index grid for GDL-05", sourceId: "np-island-ca-020", pages: "physical PDF p. 62" },
-      { title: "GDL-06 feeder index grid", image: "./reference-maps/gdl-06.png", alt: "Filed 2014 feeder index grid for GDL-06", sourceId: "np-island-ca-020", pages: "physical PDF p. 63" }
     ]
   },
   {
@@ -1918,11 +1909,7 @@ export const stationProfiles = [
         alt: "Existing 2011 Water Street underground distribution schematic showing SJM-03, SJM-07, SJM-08, SJM-14 and KBR-10",
         sourceId: "np-2011-capital-stations",
         pages: "physical PDF p. 425"
-      },
-      { title: "SJM-06 feeder index grid", image: "./reference-maps/sjm-06.png", alt: "Filed 2014 feeder index grid for SJM-06", sourceId: "np-island-ca-020", pages: "physical PDF p. 135" },
-      { title: "SJM-08 feeder index grid", image: "./reference-maps/sjm-08.png", alt: "Filed 2014 feeder index grid for SJM-08", sourceId: "np-island-ca-020", pages: "physical PDF p. 136" },
-      { title: "SJM-11 feeder index grid", image: "./reference-maps/sjm-11.png", alt: "Filed 2014 feeder index grid for SJM-11", sourceId: "np-island-ca-020", pages: "physical PDF p. 137" },
-      { title: "SJM-13 feeder index grid", image: "./reference-maps/sjm-13.png", alt: "Filed 2014 feeder index grid for SJM-13", sourceId: "np-island-ca-020", pages: "physical PDF p. 138" }
+      }
     ]
   },
   {
@@ -2017,19 +2004,6 @@ export const stationProfiles = [
           ["2011", "replaced transmission-line relays and deteriorated transformer radiators"]
         ]
       }
-    ],
-    referenceSheetLabel: "2014 FEEDER INDEX GRIDS",
-    referenceSheets: [
-      { title: "SLA-02 feeder index grid", image: "./reference-maps/sla-02.png", alt: "Filed 2014 feeder index grid for SLA-02", sourceId: "np-island-ca-020", pages: "physical PDF p. 139" },
-      { title: "SLA-03 feeder index grid", image: "./reference-maps/sla-03.png", alt: "Filed 2014 feeder index grid for SLA-03", sourceId: "np-island-ca-020", pages: "physical PDF p. 140" },
-      { title: "SLA-05 feeder index grid", image: "./reference-maps/sla-05.png", alt: "Filed 2014 feeder index grid for SLA-05", sourceId: "np-island-ca-020", pages: "physical PDF p. 141" },
-      { title: "SLA-06 feeder index grid", image: "./reference-maps/sla-06.png", alt: "Filed 2014 feeder index grid for SLA-06", sourceId: "np-island-ca-020", pages: "physical PDF p. 142" },
-      { title: "SLA-07 feeder index grid", image: "./reference-maps/sla-07.png", alt: "Filed 2014 feeder index grid for SLA-07", sourceId: "np-island-ca-020", pages: "physical PDF p. 143" },
-      { title: "SLA-08 feeder index grid", image: "./reference-maps/sla-08.png", alt: "Filed 2014 feeder index grid for SLA-08", sourceId: "np-island-ca-020", pages: "physical PDF p. 144" },
-      { title: "SLA-10 feeder index grid", image: "./reference-maps/sla-10.png", alt: "Filed 2014 feeder index grid for SLA-10", sourceId: "np-island-ca-020", pages: "physical PDF p. 145" },
-      { title: "SLA-11 feeder index grid", image: "./reference-maps/sla-11.png", alt: "Filed 2014 feeder index grid for SLA-11", sourceId: "np-island-ca-020", pages: "physical PDF p. 146" },
-      { title: "SLA-12 feeder index grid", image: "./reference-maps/sla-12.png", alt: "Filed 2014 feeder index grid for SLA-12", sourceId: "np-island-ca-020", pages: "physical PDF p. 147" },
-      { title: "SLA-13 feeder index grid", image: "./reference-maps/sla-13.png", alt: "Filed 2014 feeder index grid for SLA-13", sourceId: "np-island-ca-020", pages: "physical PDF p. 148" }
     ]
   },
   {
