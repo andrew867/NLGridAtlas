@@ -536,6 +536,24 @@ test("2014 rural recloser and Holyrood breaker records remain proposed", () => {
   }
 });
 
+test("Colliers, Springfield, and Holyrood records separate filed scopes from completion evidence", () => {
+  const colliers = stationProfiles.find((station) => station.code === "COL");
+  const springfield = stationProfiles.find((station) => station.code === "SPF");
+  const holyrood = stationProfiles.find((station) => station.code === "HOL");
+
+  assert.equal(colliers.engineeringRecord.sourceId, "np-2015-substation-modernization");
+  assert.match(colliers.engineeringRecord.facts.flat().join(" "), /COL-T1; 138\/12\.5 kV; 16\.7 MVA/);
+  assert.match(colliers.engineeringRecord.facts.flat().join(" "), /42L to Holyrood and 46L to Springfield/);
+  assert.equal(springfield.engineeringRecord.sourceId, "np-2015-substation-modernization");
+  assert.match(springfield.engineeringRecord.facts.flat().join(" "), /47L to Bay Roberts and 46L to Colliers/);
+  assert.equal(springfield.planningRecord.sourceId, "np-2027-pub-np-005");
+  assert.match(springfield.planningRecord.label, /COMPLETION/);
+  assert.match(springfield.planningRecord.facts.flat().join(" "), /communications and SCADA equipment/);
+  assert.equal(holyrood.engineeringRecord.sourceId, "np-2014-capital");
+  assert.match(holyrood.engineeringRecord.facts.flat().join(" "), /HOL-T1; 138\/12\.5 kV; 20 MVA/);
+  assert.match(holyrood.engineeringRecord.facts.flat().join(" "), /split HOL-01 into two feeders/);
+});
+
 test("2019 feeder tie records link King's Bridge, Pepperell, and Virginia Waters", async () => {
   const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
   const pepperell = stationProfiles.find((station) => station.code === "PEP");

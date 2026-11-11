@@ -244,10 +244,30 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "2014 Capital Budget Application",
-    topics: ["Hardwoods", "HWD-08", "HWD-09", "12L", "Memorial", "Health Sciences Centre", "conductor"],
+    topics: ["Hardwoods", "HWD-08", "HWD-09", "12L", "Memorial", "Health Sciences Centre", "Holyrood", "HOL-01", "HOL-02", "HOL-T1", "conductor"],
     pages: "PDF pp. 37, 42, 256 to 257, 309, 348, 351",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2015-substation-modernization",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Substation Refurbishment and Modernization",
+    topics: ["Colliers", "Springfield", "COL-T1", "SPF-T1", "42L", "46L", "47L", "protection", "SCADA", "circuit breakers"],
+    pages: "physical PDF pp. 435 to 439",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2027-pub-np-005",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-005, Substation Refurbishment and Modernization Project History",
+    topics: ["Springfield", "substation modernization", "completion", "protection", "SCADA", "circuit breaker"],
+    pages: "physical PDF p. 5",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/PUB-NP-005.PDF"
   },
   {
     id: "np-2027-loop-study",
@@ -2070,6 +2090,20 @@ export const stationProfiles = [
     name: "Colliers",
     mapPages: [],
     eventLoads: [],
+    engineeringRecord: {
+      date: "2015 CAPITAL APPLICATION",
+      title: "Colliers transformer, lines, and modernization scope",
+      sourceId: "np-2015-substation-modernization",
+      pages: "physical PDF pp. 435 to 437",
+      facts: [
+        ["Station built", "1992"],
+        ["Transformer", "COL-T1; 138/12.5 kV; 16.7 MVA"],
+        ["2014 distribution", "COL-01 and COL-02; approximately 1,377 customers"],
+        ["Planned line designations", "42L to Holyrood and 46L to Springfield after the transmission-breaker work"],
+        ["Proposed 138 kV work", "two line breakers with associated protective relaying"],
+        ["Proposed station work", "tap changer controller, digital bus, line and transformer relays, SCADA gateway, incoming 12.5 kV breaker, control building, and ground-grid extension"]
+      ]
+    },
     historyRecords: [
       {
         label: "2014 PROPOSED RECLOSER AND SCADA WORK",
@@ -2089,6 +2123,28 @@ export const stationProfiles = [
     name: "Springfield",
     mapPages: [],
     eventLoads: [],
+    engineeringRecord: {
+      date: "2015 CAPITAL APPLICATION",
+      title: "Springfield transformer, lines, and modernization scope",
+      sourceId: "np-2015-substation-modernization",
+      pages: "physical PDF pp. 437 to 439",
+      facts: [
+        ["Station built", "1976"],
+        ["Transformer", "SPF-T1; 138/12.5 kV; 20 MVA"],
+        ["2014 distribution", "SPF-01, SPF-02, and SPF-03; approximately 3,141 customers from Brigus to North River"],
+        ["Planned line designations", "47L to Bay Roberts and 46L to Colliers after the transmission-breaker work"],
+        ["Proposed 138 kV work", "two line breakers with associated protective relaying"],
+        ["Proposed station work", "SPF-T1 refurbishment, digital bus, line and transformer relays, SCADA gateway, incoming 12.5 kV breaker, control building, and ground-grid extension"]
+      ]
+    },
+    planningRecord: {
+      label: "2015 COMPLETION RECORD",
+      sourceId: "np-2027-pub-np-005",
+      pages: "physical PDF p. 5",
+      facts: [
+        ["Completed work", "power-transformer protection refurbishment; transmission-line and bus-protection upgrades; communications and SCADA equipment; control building; circuit breaker; ground-grid extension"]
+      ]
+    },
     historyRecords: [
       {
         label: "2014 PROPOSED RECLOSER AND SCADA WORK",
@@ -2108,6 +2164,20 @@ export const stationProfiles = [
     name: "Holyrood",
     mapPages: [],
     eventLoads: [],
+    engineeringRecord: {
+      date: "2014 CAPITAL APPLICATION",
+      title: "Holyrood transformer and feeder modernization scope",
+      sourceId: "np-2014-capital",
+      pages: "physical PDF pp. 241 to 243",
+      facts: [
+        ["Station built", "1976"],
+        ["Transformer", "HOL-T1; 138/12.5 kV; 20 MVA"],
+        ["2013 feeder record", "HOL-01 and HOL-02; approximately 2,700 customers combined"],
+        ["HOL-01", "approximately 800 customers south along Salmonier Line and approximately 1,300 north through Harbour Main, Chapel Cove, and Avondale"],
+        ["Proposed feeder work", "split HOL-01 into two feeders, add an intelligent recloser, and replace the HOL-01 hydraulic recloser"],
+        ["Proposed station work", "HOL-T1 refurbishment, digital transformer protection, tap changer controls, SCADA integration, control building, varmint protection, and ground-grid extension"]
+      ]
+    },
     historyRecords: [
       {
         label: "2014 PROPOSED 39L BREAKERS",
