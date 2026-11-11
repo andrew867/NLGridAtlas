@@ -133,15 +133,22 @@
       "phase": 1,
       "priority": "P1",
       "status": "in_progress",
-      "scope": "Locate HWD-08 and feeder maps beyond the current 15 Hardwoods, Kenmount, Oxen Pond, and Goulds sheets.",
+      "scope": "Locate feeder maps beyond the preserved Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, Stamp's Lane, King's Bridge, Pepperell, and Virginia Waters records.",
       "dependencies": ["ARC-001", "ARC-003"],
       "completion_evidence": [
         "public/reference-maps/hwd-08-2014-reclosers.png",
+        "public/reference-maps/ken-01.png",
+        "public/reference-maps/ken-02.png",
+        "public/reference-maps/ken-03.png",
+        "public/reference-maps/ken-04.png",
+        "public/reference-maps/vir-06.png",
+        "public/reference-maps/gou-01.png",
+        "public/reference-maps/gou-03.png",
         "src/data.js",
         "research/NP_STATION_GAP_LEDGER.md"
       ],
       "blocker": null,
-      "notes": "The 2014 Electrical System Improvements filing, physical PDF p. 44, provides an HWD-08 route and recloser drawing. It is preserved in the atlas. CA-NP-020 still has no HWD-08 feeder sheet. Service-area maps for King's Bridge, Pepperell, and Virginia Waters are also preserved. Broader feeder-sheet coverage remains open."
+      "notes": "The 2014 Electrical System Improvements filing provides route and proposed-recloser drawings for HWD-08, KEN-01 to KEN-04, VIR-06, GOU-01, and GOU-03 on physical PDF pp. 36 to 44. They are preserved in the atlas. CA-NP-020 still has no HWD-08 feeder sheet. Service-area maps for King's Bridge, Pepperell, and Virginia Waters are also preserved. Broader feeder-sheet coverage remains open."
     },
     {
       "id": "AVL-004",

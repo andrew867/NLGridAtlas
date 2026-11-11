@@ -235,7 +235,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "Electrical System Improvements",
     topics: ["Broad Cove", "cold load pickup", "conductor", "39L", "HWD-08", "KEN", "VIR-06", "PUL-04", "GOU-01", "reclosers", "feeder routes"],
-    pages: "physical PDF pp. 14 to 22 and 44, 46 to 50",
+    pages: "physical PDF pp. 14 to 22 and 35 to 50",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf"
   },
@@ -1517,7 +1517,28 @@ export const stationProfiles = [
       sourceId: "np-2025-ca-np-255",
       pages: "physical PDF p. 4",
       facts: [["KEN-05", "25 kV; KEN-T1/T2; 25.5 MVA feeder planning capacity"]]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2014 SERVICE AREAS AND PROPOSED RECLOSERS",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF pp. 18 to 19",
+        facts: [
+          ["Transformer bank", "KEN-T1 and KEN-T2 operated in parallel at 66/25 kV; 25 MVA each"],
+          ["KEN-01", "west along Kenmount Road toward Wyatt Boulevard and Mount Carson Avenue; approximately 1,800 residential customers"],
+          ["KEN-02", "east along Kenmount Road into Pippy Place and O'Leary Avenue; approximately 700 primarily commercial customers"],
+          ["KEN-03", "south over Kenmount Hill toward Blackmarsh Road, Frecker Drive, and Canada Drive; approximately 2,400 residential customers"],
+          ["KEN-04", "Ladysmith Drive, Great Eastern Avenue, Kenmount Terrace, and part of Elizabeth Park; approximately 2,500 residential customers"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2014 FEEDER ROUTES AND PROPOSED RECLOSERS",
+    referenceSheets: [
+      { title: "KEN-01 route and sectionalizing recloser", image: "./reference-maps/ken-01.png", alt: "Kenmount KEN-01 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 36" },
+      { title: "KEN-02 route and sectionalizing recloser", image: "./reference-maps/ken-02.png", alt: "Kenmount KEN-02 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 37" },
+      { title: "KEN-03 route and sectionalizing recloser", image: "./reference-maps/ken-03.png", alt: "Kenmount KEN-03 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 38" },
+      { title: "KEN-04 route and sectionalizing recloser", image: "./reference-maps/ken-04.png", alt: "Kenmount KEN-04 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 39" }
+    ]
   },
   {
     code: "GOU",
@@ -1554,7 +1575,26 @@ export const stationProfiles = [
       sourceId: "np-2025-ca-np-255",
       pages: "physical PDF p. 4",
       facts: [["GOU-02", "12.5 kV; GOU-T2/T3; 12.7 MVA feeder planning capacity"]]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2014 PROPOSED SINGLE-PHASE RECLOSERS",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 20",
+        facts: [
+          ["GOU-01", "Bay Bulls Road; approximately 1,700 primarily residential customers in Kilbride"],
+          ["GOU-01 tap", "Lannon Street; approximately 100 customers"],
+          ["GOU-03", "Main Road in Goulds; approximately 1,900 primarily residential customers"],
+          ["GOU-03 tap", "Doyle's Road; approximately 100 customers"],
+          ["Project", "install one single-phase recloser on each tap"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2014 FEEDER ROUTES AND PROPOSED RECLOSERS",
+    referenceSheets: [
+      { title: "GOU-01 Lannon Street tap recloser", image: "./reference-maps/gou-01.png", alt: "Goulds GOU-01 feeder route and Lannon Street single-phase recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 42" },
+      { title: "GOU-03 Doyle's Road tap recloser", image: "./reference-maps/gou-03.png", alt: "Goulds GOU-03 feeder route and Doyle's Road single-phase recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 43" }
+    ]
   },
   {
     code: "KBR",
@@ -1896,7 +1936,7 @@ export const stationProfiles = [
       { feeder: "VIR-07", customers: 784, ties: ["RRD-09", "PUL-04", "VIR-02", "VIR-06"] },
       { feeder: "VIR-08", customers: 1030, ties: ["RRD-03", "RRD-07", "PEP-01", "VIR-05"] }
     ],
-    referenceSheetLabel: "2019 SERVICE AREA MAP",
+    referenceSheetLabel: "FEEDER SERVICE AND ROUTE MAPS",
     referenceSheets: [
       {
         title: "Virginia Waters feeder service area and tie table",
@@ -1904,6 +1944,13 @@ export const stationProfiles = [
         alt: "Virginia Waters feeder service area map and customer-count tie table filed in the 2019 Pepperell supplemental application",
         sourceId: "np-2019-pepperrell",
         pages: "physical PDF p. 39"
+      },
+      {
+        title: "VIR-06 route and sectionalizing recloser",
+        image: "./reference-maps/vir-06.png",
+        alt: "Virginia Waters VIR-06 feeder route and three-phase sectionalizing recloser location",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 40"
       }
     ],
     feederRegister: ["VIR-01", "VIR-02", "VIR-03", "VIR-04", "VIR-05", "VIR-06", "VIR-07", "VIR-08"],
@@ -1926,7 +1973,20 @@ export const stationProfiles = [
       sourceId: "np-2025-ca-np-255",
       pages: "physical PDF p. 4",
       facts: [["VIR-T1/T2", "VIR-01 and VIR-06; 12.5 kV"]]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2014 SERVICE AREA AND PROPOSED RECLOSER",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 19",
+        facts: [
+          ["Transformer bank", "VIR-T1, VIR-T2, and VIR-T3; 25 MVA each at 66/12.5 kV"],
+          ["VIR-06", "west along the Outer Ring Road, then north along Torbay Road"],
+          ["2014 customers", "approximately 1,150 residential and commercial customers"],
+          ["Project", "install one three-phase sectionalizing recloser"]
+        ]
+      }
+    ]
   },
   {
     code: "PUL",
@@ -1949,7 +2009,23 @@ export const stationProfiles = [
         ["Replacement schedule", "arrival scheduled for the third quarter of 2026"],
         ["2027 equipment table", "PUL-T1 and PUL-T2 listed at 66/25 kV, 25 MVA"]
       ]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2014 PROPOSED PUL-04 CONDUCTOR WORK",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 21",
+        facts: [
+          ["2014 station record", "PUL-T1 and PUL-T2; 25 MVA each; four 12.5 kV feeders"],
+          ["PUL-01", "approximately 1,700 customers in Torbay"],
+          ["PUL-02", "approximately 1,700 customers in Flatrock and Pouch Cove"],
+          ["PUL-03", "approximately 950 customers in Torbay and Bauline"],
+          ["PUL-04", "south along Torbay Bypass Road to Indian Meal Line; approximately 550 customers"],
+          ["Proposed work", "reconductor 4.3 km of pre-existing line with 477 ASC"],
+          ["Planned transfer", "approximately 4.5 MVA from Broad Cove to Pulpit Rock"]
+        ]
+      }
+    ]
   },
   {
     code: "MUN",

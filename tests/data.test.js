@@ -468,6 +468,8 @@ test("every station record resolves to a source", () => {
 
 test("station reference schematics remain expandable and locally preserved", async () => {
   const hardwoods = stationProfiles.find((station) => station.code === "HWD");
+  const kenmount = stationProfiles.find((station) => station.code === "KEN");
+  const goulds = stationProfiles.find((station) => station.code === "GOU");
   const stJohnsMain = stationProfiles.find((station) => station.code === "SJM");
   const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
@@ -479,15 +481,41 @@ test("station reference schematics remain expandable and locally preserved", asy
   assert.equal(pepperell.referenceSheets[0].pages, "physical PDF p. 37");
   assert.equal(virginiaWaters.referenceSheets[0].pages, "physical PDF p. 39");
   assert.equal(hardwoods.referenceSheets[0].image, "./reference-maps/hwd-08-2014-reclosers.png");
+  assert.deepEqual(kenmount.referenceSheets.map((sheet) => sheet.pages), [
+    "physical PDF p. 36",
+    "physical PDF p. 37",
+    "physical PDF p. 38",
+    "physical PDF p. 39"
+  ]);
+  assert.deepEqual(goulds.referenceSheets.map((sheet) => sheet.pages), ["physical PDF p. 42", "physical PDF p. 43"]);
+  assert.equal(virginiaWaters.referenceSheets[1].image, "./reference-maps/vir-06.png");
   const schematic = await readFile(new URL("../public/reference-maps/sjm-2011-water-street-existing.png", import.meta.url));
   const serviceArea = await readFile(new URL("../public/reference-maps/kbr-2019-service-area.png", import.meta.url));
   const hwd08Route = await readFile(new URL("../public/reference-maps/hwd-08-2014-reclosers.png", import.meta.url));
+  const ken01Route = await readFile(new URL("../public/reference-maps/ken-01.png", import.meta.url));
+  const gou01Route = await readFile(new URL("../public/reference-maps/gou-01.png", import.meta.url));
   assert.ok(schematic.length > 300_000);
   assert.ok(serviceArea.length > 1_000_000);
   assert.ok(hwd08Route.length > 700_000);
+  assert.ok(ken01Route.length > 1_000_000);
+  assert.ok(gou01Route.length > 500_000);
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(main, /referenceSheets/);
   assert.match(main, /SYSTEM SCHEMATICS/);
+});
+
+test("2014 feeder service records preserve routes, customers, and proposed work", () => {
+  const kenmount = stationProfiles.find((station) => station.code === "KEN");
+  const goulds = stationProfiles.find((station) => station.code === "GOU");
+  const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
+  const pulpitRock = stationProfiles.find((station) => station.code === "PUL");
+
+  assert.match(kenmount.historyRecords[0].facts.flat().join(" "), /approximately 1,800 residential customers/);
+  assert.match(kenmount.historyRecords[0].label, /PROPOSED RECLOSERS/);
+  assert.match(goulds.historyRecords[0].facts.flat().join(" "), /Lannon Street; approximately 100 customers/);
+  assert.match(virginiaWaters.historyRecords[0].facts.flat().join(" "), /Outer Ring Road, then north along Torbay Road/);
+  assert.match(pulpitRock.historyRecords[0].facts.flat().join(" "), /reconductor 4\.3 km.*477 ASC/);
+  assert.match(pulpitRock.historyRecords[0].facts.flat().join(" "), /approximately 4\.5 MVA/);
 });
 
 test("2019 feeder tie records link King's Bridge, Pepperell, and Virginia Waters", async () => {
