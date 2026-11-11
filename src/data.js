@@ -80,6 +80,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
   },
   {
+    id: "np-2015-rrd-modernization",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Ridge Road Substation Modernization",
+    topics: ["Ridge Road", "RRD-T2", "RRD-T3", "30L", "32L", "67L", "bus tie", "feeder automation"],
+    pages: "physical PDF p. 427",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
     id: "np-2013-line-loading",
     year: 2013,
     organization: "Newfoundland Power",
@@ -901,6 +911,17 @@ export const staticClaims = [
     ]
   },
   {
+    id: "ridge-road-substation-one-line",
+    scope: "Ridge Road circuits, transformer bank, split distribution buses and completed bus tie",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2015-rrd-modernization", pages: "physical PDF p. 427" },
+      { sourceId: "np-2027-ridge-road", pages: "physical PDF pp. 105 to 108 and 511 to 518" },
+      { sourceId: "np-2027-pub-np-005", pages: "physical PDF p. 5" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 550" }
+    ]
+  },
+  {
     id: "western-avalon-soldiers-pond-design",
     scope: "Preliminary Western Avalon to Soldiers Pond line design and seasonal ratings",
     status: "proposed",
@@ -1657,7 +1678,43 @@ export const components = {
     summary: `VIR-${feeder} is one of the eight 12.5 kV distribution feeders listed at Virginia Waters in the 2016 and 2021 station records.`,
     data: [["Voltage", "12.5 kV"], ["Station", "Virginia Waters"]],
     sources: [sourceRef("np-2016-vir-modernization", "physical PDF p. 261"), sourceRef("np-2021-north-study", "physical PDF pp. 6 to 14")]
-  }]))
+  }])),
+  "rrd-summary": {
+    diagram: "rrd", status: "verified", code: "RRD / SUBSTATION", title: "Ridge Road Substation",
+    summary: "Three 66 kV circuits supply two 20 MVA transformers. Four 12.5 kV feeders are connected to each low-voltage bus, with a bus-tie breaker between the sections.",
+    data: [["66 kV circuits", "32L and 67L to Oxen Pond; 30L to King's Bridge"], ["Transformers", "RRD-T2 and RRD-T3; 20 MVA each"], ["Distribution", "Two 12.5 kV bus sections; 4 feeders on each section"], ["Bus tie", "Installed in 2015"], ["Five-year maximum peak", "34.7 MVA"]],
+    sources: [sourceRef("np-2015-rrd-modernization", "physical PDF p. 427"), sourceRef("np-2027-ridge-road", "physical PDF pp. 105 to 108 and 511 to 518"), sourceRef("np-2027-pub-np-005", "physical PDF p. 5")]
+  },
+  "rrd-t2": {
+    diagram: "rrd", status: "verified", code: "RRD / T2", title: "Ridge Road transformer RRD-T2",
+    summary: "RRD-T2 supplies one of the two 12.5 kV bus sections and four distribution feeders.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "20 MVA"], ["2026 forecast", "15.57 MVA"], ["2015 arrangement", "4 distribution feeders"]],
+    sources: [sourceRef("np-2015-rrd-modernization", "physical PDF p. 427"), sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  "rrd-t3": {
+    diagram: "rrd", status: "verified", code: "RRD / T3", title: "Ridge Road transformer RRD-T3",
+    summary: "RRD-T3 supplies one of the two 12.5 kV bus sections and four distribution feeders. Its replacement is proposed across 2027 to 2029.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "20 MVA"], ["2026 forecast", "17.54 MVA"], ["2015 arrangement", "4 distribution feeders"], ["Replacement", "Proposed 2027 to 2029"]],
+    sources: [sourceRef("np-2015-rrd-modernization", "physical PDF p. 427"), sourceRef("np-2027-transformers", "physical PDF p. 550"), sourceRef("np-2027-ridge-road", "physical PDF pp. 105 to 108 and 511 to 518")]
+  },
+  "rrd-bus-tie": {
+    diagram: "rrd", status: "verified", code: "RRD / 12.5 kV BUS TIE", title: "Ridge Road low-voltage bus tie",
+    summary: "The breaker connects the two low-voltage bus sections so either transformer can supply all eight distribution feeders.",
+    data: [["Voltage", "12.5 kV"], ["Project", "Installed in 2015"], ["Operating purpose", "Parallel the two bus sections"]],
+    sources: [sourceRef("np-2015-rrd-modernization", "physical PDF p. 427"), sourceRef("np-2027-pub-np-005", "physical PDF p. 5")]
+  },
+  "rrd-t2-feeders": {
+    diagram: "rrd", status: "verified", code: "RRD / T2 BUS", title: "RRD-T2 distribution section",
+    summary: "The 2015 station record assigns four 12.5 kV distribution feeders to the RRD-T2 bus section.",
+    data: [["Transformer", "RRD-T2"], ["Voltage", "12.5 kV"], ["Feeders", "4"]],
+    sources: [sourceRef("np-2015-rrd-modernization", "physical PDF p. 427")]
+  },
+  "rrd-t3-feeders": {
+    diagram: "rrd", status: "verified", code: "RRD / T3 BUS", title: "RRD-T3 distribution section",
+    summary: "The 2015 station record assigns four 12.5 kV distribution feeders to the RRD-T3 bus section.",
+    data: [["Transformer", "RRD-T3"], ["Voltage", "12.5 kV"], ["Feeders", "4"]],
+    sources: [sourceRef("np-2015-rrd-modernization", "physical PDF p. 427")]
+  }
 };
 
 export const islandTerminalRecords = [

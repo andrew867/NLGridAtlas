@@ -736,6 +736,21 @@ test("Virginia Waters retains the documented 2016 logical arrangement", async ()
   assert.match(components["vir-t2"].data.flat().join(" "), /2026 forecast 22.53 MVA/);
 });
 
+test("Ridge Road retains the split 12.5 kV bus and completed tie", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const source = sources.find((item) => item.id === "np-2015-rrd-modernization");
+  assert.equal(source.pages, "physical PDF p. 427");
+  assert.match(html, /data-claim-id="ridge-road-substation-one-line"/);
+  assert.match(html, /data-component="rrd-bus-tie"/);
+  assert.match(html, /32L to Oxen Pond Substation/);
+  assert.match(html, /30L to King's Bridge Substation/);
+  assert.match(html, /67L to Oxen Pond Substation/);
+  assert.match(components["rrd-summary"].data.flat().join(" "), /Two 12.5 kV bus sections; 4 feeders on each section/);
+  assert.match(components["rrd-bus-tie"].data.flat().join(" "), /Installed in 2015/);
+  assert.match(components["rrd-t2"].data.flat().join(" "), /2026 forecast 15.57 MVA/);
+  assert.match(components["rrd-t3"].data.flat().join(" "), /2026 forecast 17.54 MVA/);
+});
+
 test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);
