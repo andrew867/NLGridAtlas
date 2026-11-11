@@ -45,6 +45,18 @@ test("Come By Chance renders four filed capacitor banks", () => {
   assert.match(html, /C4/);
 });
 
+test("Soldiers Pond separates converter poles from synchronous condensers", () => {
+  const soldiersPond = islandTerminalRecords.find((record) => record.code === "SDP");
+  const html = renderTerminalDiagram(soldiersPond.diagram, escapeHtml);
+  assert.match(html, /class="terminal-converter"/);
+  assert.match(html, />LCC</);
+  assert.match(html, />Pole 1</);
+  assert.match(html, />SC1</);
+  assert.match(html, />SC</);
+  assert.match(html, /175 MVAr/);
+  assert.doesNotMatch(html, /terminal-transformer/);
+});
+
 test("four hydro generating stations have individual sourced records", () => {
   const expected = {
     USL: { name: "Upper Salmon Generating Station", rating: "84 MW", circuits: ["TL234", "TL263"] },

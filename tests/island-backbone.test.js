@@ -50,6 +50,11 @@ test("island map generation nodes open their individual records", () => {
   assert.equal(islandStationTargets["Hinds Lake"].code, "HLA");
 });
 
+test("Soldiers Pond opens its converter-station record", () => {
+  assert.equal(islandStationTargets["Soldiers Pond"].code, "SDP");
+  assert.equal(islandStationTargets["Soldiers Pond"].href, "#hydro-terminal-browser");
+});
+
 test("western and northern station nodes open their individual records", () => {
   const expected = {
     "Berry Hill": "BRH",

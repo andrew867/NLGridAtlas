@@ -46,15 +46,15 @@ function circuitSymbol(circuit, index, count, bus, direction, escapeHtml) {
 
 function accessorySymbol(accessory, index, count, bus, type, escapeHtml) {
   const fourShuntPositions = [190, 390, 730, 930];
-  const x = type === "shunt" && count === 4
+  const x = accessory.x ?? (type === "shunt" && count === 4
     ? fourShuntPositions[index]
-    : spread(index, count, 190, 930);
+    : spread(index, count, 190, 930));
   const top = bus.y + 34;
   if (type === "generator") {
     return `<g class="terminal-accessory" role="img" aria-label="${escapeHtml(`${accessory.label}, ${accessory.rating}`)}">
       <line x1="${x}" y1="${bus.y}" x2="${x}" y2="${top + 13}" />
       <circle cx="${x}" cy="${top + 42}" r="28" />
-      <text class="terminal-accessory-symbol" x="${x}" y="${top + 49}">G</text>
+      <text class="terminal-accessory-symbol" x="${x}" y="${top + 49}">${escapeHtml(accessory.symbol || "G")}</text>
       <text class="terminal-device-name" x="${x}" y="${top + 87}">${escapeHtml(accessory.label)}</text>
       <text class="terminal-device-rating" x="${x}" y="${top + 106}">${escapeHtml(accessory.rating)}</text>
     </g>`;
@@ -72,13 +72,26 @@ function accessorySymbol(accessory, index, count, bus, type, escapeHtml) {
   </g>`;
 }
 
+function converterSymbol(converter, index, count, bus, escapeHtml) {
+  const x = converter.x ?? spread(index, count, 240, 470);
+  const top = bus.y + 34;
+  return `<g class="terminal-converter" role="img" aria-label="${escapeHtml(`${converter.label}, ${converter.technology}, ${converter.rating}`)}">
+    <line x1="${x}" y1="${bus.y}" x2="${x}" y2="${top + 13}" />
+    <rect x="${x - 55}" y="${top + 13}" width="110" height="58" />
+    <text class="terminal-converter-symbol" x="${x}" y="${top + 38}">LCC</text>
+    <text class="terminal-converter-type" x="${x}" y="${top + 58}">${escapeHtml(converter.technology)}</text>
+    <text class="terminal-device-name" x="${x}" y="${top + 94}">${escapeHtml(converter.label)}</text>
+    <text class="terminal-device-rating" x="${x}" y="${top + 113}">${escapeHtml(converter.rating)}</text>
+  </g>`;
+}
+
 export function renderTerminalDiagram(diagram, escapeHtml) {
   if (!diagram) return "";
   const busGap = 210;
   const buses = diagram.buses.map((bus, index) => ({ ...bus, y: 165 + index * busGap }));
   const lastBus = buses.at(-1);
   const circuitsByBus = new Map(buses.map((bus) => [bus.id, diagram.circuits.filter((circuit) => circuit.bus === bus.id)]));
-  const hasBottomDevices = (diagram.generators?.length || 0) + (diagram.shunts?.length || 0) > 0;
+  const hasBottomDevices = (diagram.generators?.length || 0) + (diagram.shunts?.length || 0) + (diagram.converters?.length || 0) > 0;
   const height = lastBus.y + (hasBottomDevices ? 180 : 135);
 
   const busMarkup = buses.map((bus) => `
@@ -96,13 +109,15 @@ export function renderTerminalDiagram(diagram, escapeHtml) {
   const transformerMarkup = diagram.transformers.map((transformer, index) => transformerSymbol(transformer, index, diagram.transformers.length, buses, escapeHtml)).join("");
   const generators = diagram.generators || [];
   const shunts = diagram.shunts || [];
+  const converters = diagram.converters || [];
   const generatorMarkup = generators.map((generator, index) => accessorySymbol(generator, index, generators.length, buses.find((bus) => bus.id === generator.bus) || lastBus, "generator", escapeHtml)).join("");
   const shuntMarkup = shunts.map((shunt, index) => accessorySymbol(shunt, index, shunts.length, buses.find((bus) => bus.id === shunt.bus) || lastBus, "shunt", escapeHtml)).join("");
+  const converterMarkup = converters.map((converter, index) => converterSymbol(converter, index, converters.length, buses.find((bus) => bus.id === converter.bus) || lastBus, escapeHtml)).join("");
 
   return `<section class="terminal-diagram-block" aria-label="${escapeHtml(diagram.label)}">
     <div class="terminal-diagram-scroll">
       <svg class="terminal-diagram" viewBox="0 0 1120 ${height}" role="img" aria-label="${escapeHtml(diagram.label)}">
-        ${busMarkup}${circuitMarkup}${transformerMarkup}${generatorMarkup}${shuntMarkup}
+        ${busMarkup}${circuitMarkup}${transformerMarkup}${converterMarkup}${generatorMarkup}${shuntMarkup}
       </svg>
     </div>
     <p class="terminal-diagram-caption">${escapeHtml(diagram.label.toUpperCase())}</p>

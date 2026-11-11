@@ -386,12 +386,12 @@
       "title": "Document Soldiers Pond converter station and AC yard",
       "phase": 3,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Create source-linked converter, electrode, transformer, filter, and AC-yard records at the level supported by public documents.",
       "dependencies": ["ISL-002"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/SOLDIERS_POND_RECORD.md", "src/data.js", "src/terminal-diagram.js", "src/island-backbone.js", "tests/data.test.js", "tests/terminal-diagram.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "Keep converter and AC-yard functions separate."
+      "notes": "The published record separates the AC yard, LCC poles, synchronous condensers, converter-transformer spare, and electrode line. Breaker detail, converter-transformer ratings, filter-bank ratings, and station-service detail remain documented research targets rather than reconstructed data."
     },
     {
       "id": "HVDC-002",

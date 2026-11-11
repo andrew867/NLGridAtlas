@@ -84,6 +84,7 @@ const stationTargets = {
   "Peter's Barron": { href: "#hydro-terminal-browser", code: "PBR" },
   "Plum Point": { href: "#hydro-terminal-browser", code: "PLP" },
   "South Brook": { href: "#hydro-terminal-browser", code: "SBR" },
+  "Soldiers Pond": { href: "#hydro-terminal-browser", code: "SDP" },
   "St. Anthony Airport": { href: "#hydro-terminal-browser", code: "SAA" },
   Stephenville: { href: "#hydro-terminal-browser", code: "STV" },
   "Stoney Brook": { href: "#hydro-terminal-browser", code: "STB" },

@@ -286,7 +286,7 @@ test("every extracted feeder image is exposed by a station record", async () => 
 
 test("island terminal records retain page-level sources", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
-  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "MAS", "STV", "CBC", "USL", "GRC", "CAT", "HLA"]);
+  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "MAS", "STV", "CBC", "SDP", "USL", "GRC", "CAT", "HLA"]);
   for (const record of islandTerminalRecords) {
     assert.ok(allowedStates.has(record.status));
     assert.ok(record.facts.length > 0);
@@ -309,6 +309,7 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   const masseyDrive = islandTerminalRecords.find((record) => record.code === "MAS");
   const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
   const comeByChance = islandTerminalRecords.find((record) => record.code === "CBC");
+  const soldiersPond = islandTerminalRecords.find((record) => record.code === "SDP");
 
   assert.match(stonyBrook.facts.flat().join(" "), /75\/100\/125 MVA each in the 2003 system report/);
   assert.match(deerLake.facts.flat().join(" "), /45\/60\/75 MVA/);
@@ -338,6 +339,11 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   assert.ok(bayDEspoir.sources.some((reference) => reference.sourceId === "nlh-bde-one-lines-2016"));
   assert.ok(comeByChance.sources.some((reference) => reference.sourceId === "nlh-cbc-facility-review-2014"));
   assert.ok(comeByChance.sources.some((reference) => reference.sourceId === "nlh-braya-ciac-2023"));
+  assert.match(soldiersPond.facts.flat().join(" "), /commissioned on 2023-04-14/);
+  assert.match(soldiersPond.facts.flat().join(" "), /SC1, SC2 and SC3; 175 MVAr each/);
+  assert.deepEqual(soldiersPond.diagram.circuits.map((circuit) => circuit.label), ["TL201", "TL217", "TL242", "TL266", "TL265", "TL268"]);
+  assert.equal(soldiersPond.diagram.converters.length, 2);
+  assert.ok(soldiersPond.sources.some((reference) => reference.sourceId === "nlh-lil-commissioning-2023"));
 });
 
 test("2027 transformer register updates Avalon station records", async () => {

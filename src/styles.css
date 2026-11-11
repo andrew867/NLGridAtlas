@@ -492,7 +492,7 @@ button, input { font: inherit; }
 .terminal-bus.voltage-66 line, .terminal-bus.voltage-69 line { stroke: var(--water); }
 .terminal-bus.voltage-138 text { fill: var(--copper); }
 .terminal-bus text { font-size: 19px; font-weight: 600; text-anchor: middle; transform: translateY(-13px); }
-.terminal-transformer line, .terminal-circuit line, .terminal-accessory line { stroke: var(--ink); stroke-width: 5; }
+.terminal-transformer line, .terminal-circuit line, .terminal-accessory line, .terminal-converter line { stroke: var(--ink); stroke-width: 5; }
 .terminal-transformer circle { fill: var(--paper); stroke-width: 5; }
 .terminal-transformer circle:first-of-type { stroke: var(--phase-a); }
 .terminal-transformer circle:last-of-type { stroke: var(--water); }
@@ -508,6 +508,10 @@ button, input { font: inherit; }
 .terminal-accessory circle { fill: var(--paper); stroke: var(--ink); stroke-width: 5; }
 .terminal-accessory-symbol { font: 600 21px/1 "Barlow Condensed", sans-serif; text-anchor: middle; }
 .terminal-accessory .terminal-device-name, .terminal-accessory .terminal-device-rating { text-anchor: middle; }
+.terminal-converter rect { fill: var(--paper); stroke: var(--ink); stroke-width: 5; }
+.terminal-converter-symbol { font: 600 19px/1 "Barlow Condensed", sans-serif; text-anchor: middle; }
+.terminal-converter-type { font-size: 10px; text-anchor: middle; }
+.terminal-converter .terminal-device-name, .terminal-converter .terminal-device-rating { text-anchor: middle; }
 .terminal-diagram-caption { margin: 0; padding: .7rem 1rem; border-top: 1px solid var(--rule); font: 400 .7rem/1.35 "IBM Plex Mono", monospace; color: var(--muted); }
 .profile-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem; padding: 0 3.5rem 1.25rem 0; border-bottom: 1px solid var(--ink); }
 .profile-heading span, .profile-heading > strong, .profile-label { font: 500 .7rem/1.35 "IBM Plex Mono", monospace; letter-spacing: .06em; }

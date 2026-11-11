@@ -16,6 +16,7 @@ The terminal browser uses dated connection diagrams. It does not present a break
 | Massey Drive | 2001 system-additions testimony, 2015 transformer loading response and 2018 route table | 1998 replacement of a 66.7 MVA unit by a 125 MVA unit, T1, T2 and T3 customer assignments, two 230 kV lines |
 | Stephenville | 2021 retirement study and 2023 planning assessment | T3 rating and TL209 connection |
 | Come By Chance | 2014 facility review, 2023 Braya contribution application, capacitor-bank response and 2018 route table | T1 and T2 ratings and 1972 manufacture date; split 230 kV bus; customer-specific cost assignment; four capacitor banks; two filed 230 kV routes |
+| Soldiers Pond | 2014 integration study, 2019 reliability response, 2020 emergency-response plan, 2023 commissioning reports and 2024 planning assessment | two LCC poles; three 175 MVAr synchronous condensers; six 230 kV routes; spare converter transformer; EL3/4 to Dowden's Point; commissioned 2023-04-14 |
 | Berry Hill | 2013 system one-line and 2018 route table | 138/66 kV transformation; TL239, TL259, and TL226 |
 | Peter's Barren | 2013 system one-line and 2018 route table | 138/66 kV transformation; TL259, TL241, and TL262; the 2018 table prints the name as Peter's Barron |
 | Plum Point | 2013 system one-line and 2018 route table | 138/12.5 kV transformation; two 5 MVAR capacitor banks; TL241 and TL244 |
@@ -35,3 +36,4 @@ The terminal browser uses dated connection diagrams. It does not present a break
 - A post-construction Bottom Brook and Stephenville drawing confirming the final arrangement after the 2021 project.
 - The present Grand Falls and Bishop's Falls bus and generator-step-up arrangement.
 - Transformer ratings, dates, and current breaker arrangements for the added rural station records, deferred after the 2026-11-11 pass.
+- Soldiers Pond converter-transformer nameplate data, filter-bank ratings, current breaker arrangement, and station-service one-line.

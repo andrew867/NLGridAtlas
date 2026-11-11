@@ -370,6 +370,66 @@ export const sources = [
     url: "https://nlhydro.com/wp-content/uploads/2024/08/2024-08-26_NLH_RRA-Study_2024-RAP_Rev-2.pdf"
   },
   {
+    id: "nlh-sop-integration-2014",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "Upgrade Transmission Line Corridor, Bay d'Espoir to Western Avalon",
+    topics: ["Soldiers Pond", "Labrador-Island Link", "HVDC", "synchronous condenser", "converter station"],
+    pages: "physical PDF pp. 30, 37 to 38",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/NLHCBSUPP2014/TransmissionLine/Application/Application-2014-04-30.pdf"
+  },
+  {
+    id: "nlh-lil-commissioning-2023",
+    year: 2023,
+    organization: "NL Hydro",
+    title: "Labrador-Island Link Commissioning Update",
+    topics: ["Labrador-Island Link", "commissioning", "Soldiers Pond", "HVDC"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/correspondence/From%20NLH%20-%20Labrador-Island%20Link%20Monthly%20Update%20-%20Commissioned%20-%202023-04-18.PDF"
+  },
+  {
+    id: "nlh-lil-april-2023",
+    year: 2023,
+    organization: "NL Hydro",
+    title: "Labrador-Island Link Monthly Update, April 2023",
+    topics: ["Labrador-Island Link", "Soldiers Pond", "synchronous condenser", "commissioning", "operating limit"],
+    pages: "physical PDF pp. 2 to 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/correspondence/From%20NLH%20-%20Hydros%20Monthly%20Status%20Report%20-%20Schedule%20for%20the%20LIL%20in%20response%20to%20the%20Boards%20November%2021,%202019%20correspondence%20-%202023-05-04.PDF"
+  },
+  {
+    id: "nlh-lil-spares-2019",
+    year: 2019,
+    organization: "NL Hydro",
+    title: "PUB-NLH-022, Labrador-Island Link Reliability",
+    topics: ["Labrador-Island Link", "Soldiers Pond", "converter transformer", "spare equipment"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-022.PDF"
+  },
+  {
+    id: "nlh-lil-near-term-2020",
+    year: 2020,
+    organization: "NL Hydro",
+    title: "Near-Term Reliability Report, L3501/2 Emergency Response Plan",
+    topics: ["Labrador-Island Link", "Soldiers Pond", "Dowden's Point", "electrode line", "L3501", "L3502"],
+    pages: "physical PDF pp. 38 to 39",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Near-Term%20Reliability%20Report%20-%20May%202020%20-%202020-05-15.pdf"
+  },
+  {
+    id: "nlh-planning-2024",
+    year: 2024,
+    organization: "NL Hydro",
+    title: "2024 Annual Planning Assessment",
+    topics: ["Soldiers Pond", "Labrador-Island Link", "Avalon", "230 kV", "synchronous condenser"],
+    pages: "physical PDF pp. 8 and 13 to 14",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/correspondence/From%20NLH%20-%20Newfoundland%20and%20Labrador%20System%20Operator%20(NLSO)%20-%202024%20Annual%20Planning%20Assessment%20-%202024-07-30.PDF"
+  },
+  {
     id: "nlh-2025-capital",
     year: 2024,
     organization: "NL Hydro",
@@ -2484,6 +2544,21 @@ export const islandTerminalRecords = [
       shunts: [{ label: "C1", rating: "38.35 MVAR", bus: "b1" }, { label: "C2", rating: "38.35 MVAR", bus: "b1" }, { label: "C3", rating: "38.35 MVAR", bus: "b1" }, { label: "C4", rating: "38.35 MVAR", bus: "b1" }]
     },
     sources: [sourceRef("nlh-cbc-facility-review-2014", "physical PDF pp. 54 to 56"), sourceRef("nlh-braya-ciac-2023", "physical PDF pp. 4 to 7"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-cbc-2013", "PDF p. 1"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+  },
+  {
+    code: "SDP",
+    name: "Soldiers Pond Converter Station",
+    status: "verified",
+    facts: [["Commissioned", "Labrador-Island Link commissioned on 2023-04-14"], ["HVDC design basis", "Line-commutated converter; +/-350 kV DC; 900 MW at Muskrat Falls and 830 MW at Soldiers Pond in bipolar operation"], ["Synchronous condensers", "SC1, SC2 and SC3; 175 MVAr each; all three reported in service after 2023-04-13 except for planned maintenance"], ["230 kV circuits", "TL201 and TL217 to Western Avalon; TL242 and TL266 to Hardwoods; TL265 and TL268 to Holyrood"], ["Converter-transformer spare", "2019 reliability response records one spare converter transformer at Soldiers Pond"], ["Electrode line", "EL3/4 between Soldiers Pond and Dowden's Point"], ["2033/34 study case", "All Soldiers Pond filter banks available; electrode lines and electrode sites in service"], ["Diagram scope", "Simplified AC interface and converter poles; converter-transformer, filter-bank and breaker detail remains open"]],
+    diagram: {
+      label: "2023 commissioned interface / 2024 filed AC routes / converter detail simplified",
+      buses: [{ id: "b1", label: "Soldiers Pond AC yard", voltage: "230 kV" }],
+      transformers: [],
+      circuits: [{ label: "TL201", destination: "Western Avalon", bus: "b1" }, { label: "TL217", destination: "Western Avalon", bus: "b1" }, { label: "TL242", destination: "Hardwoods", bus: "b1" }, { label: "TL266", destination: "Hardwoods", bus: "b1" }, { label: "TL265", destination: "Holyrood", bus: "b1" }, { label: "TL268", destination: "Holyrood", bus: "b1" }],
+      converters: [{ label: "Pole 1", rating: "+/-350 kV DC", technology: "LCC inverter", bus: "b1", x: 230 }, { label: "Pole 2", rating: "+/-350 kV DC", technology: "LCC inverter", bus: "b1", x: 410 }],
+      generators: [{ label: "SC1", rating: "175 MVAr", symbol: "SC", bus: "b1", x: 670 }, { label: "SC2", rating: "175 MVAr", symbol: "SC", bus: "b1", x: 815 }, { label: "SC3", rating: "175 MVAr", symbol: "SC", bus: "b1", x: 960 }]
+    },
+    sources: [sourceRef("nlh-lil-commissioning-2023", "physical PDF p. 1"), sourceRef("nlh-lil-april-2023", "physical PDF pp. 2 to 3"), sourceRef("nlh-sop-integration-2014", "physical PDF pp. 30 and 37 to 38"), sourceRef("nlh-lil-spares-2019", "physical PDF p. 1"), sourceRef("nlh-lil-near-term-2020", "physical PDF pp. 38 to 39"), sourceRef("nlh-planning-2024", "physical PDF pp. 8 and 13 to 14")]
   },
   {
     code: "USL",
