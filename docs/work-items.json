@@ -343,7 +343,7 @@
       "dependencies": ["ISL-003", "ISL-005"],
       "completion_evidence": ["research/ISLAND_TRANSFORMER_LEDGER.md", "src/data.js", "tests/data.test.js"],
       "blocker": null,
-      "notes": "The first evidence pass added dated Howley, Deer Lake, Stony Brook, and Massey Drive transformer records. Nameplate, filed equipment, study-model, and emergency ratings remain separate."
+      "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, and Buchans transformer records. The original Holyrood T8 is separated from the later HRD T8 study model. Nameplate, filed equipment, study-model, and emergency ratings remain separate."
     },
     {
       "id": "GEN-001",

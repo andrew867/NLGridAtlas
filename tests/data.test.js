@@ -301,6 +301,8 @@ test("island terminal records retain page-level sources", async () => {
 });
 
 test("island transformer evidence keeps dated ratings and replacements", () => {
+  const sunnyside = islandTerminalRecords.find((record) => record.code === "SUN");
+  const buchans = islandTerminalRecords.find((record) => record.code === "BUC");
   const stonyBrook = islandTerminalRecords.find((record) => record.code === "STB");
   const deerLake = islandTerminalRecords.find((record) => record.code === "DLK");
   const howley = islandTerminalRecords.find((record) => record.code === "HOW");
@@ -312,6 +314,10 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   assert.match(howley.facts.flat().join(" "), /138\/69\/4\.16 kV, 7\.5\/10\/12\.5 MVA/);
   assert.match(masseyDrive.facts.flat().join(" "), /1998 transformer replacement/);
   assert.match(masseyDrive.facts.flat().join(" "), /66\.7 MVA.*125 MVA/);
+  assert.match(sunnyside.facts.flat().join(" "), /Former Holyrood T8.*Sunnyside T1 position/);
+  assert.match(buchans.facts.flat().join(" "), /Massey Drive in 1970.*Buchans in 1998/);
+  assert.match(components["hrd-t8"].summary, /ordered for Sunnyside/);
+  assert.match(components["hrd-t8"].summary, /do not establish that unit's physical identity/);
   assert.ok(howley.sources.some((reference) => reference.sourceId === "nlh-howley-system-2003"));
   assert.ok(masseyDrive.sources.some((reference) => reference.sourceId === "nlh-system-additions-2001"));
 });

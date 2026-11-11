@@ -6,10 +6,10 @@ The terminal browser uses dated connection diagrams. It does not present a break
 
 | Record | Diagram basis | Equipment detail added |
 | --- | --- | --- |
-| Sunnyside | 2014 replacement filing, Figure 5, physical PDF p. 19 | T1 and T4 maximum ratings, four 230 kV lines, four 138 kV lines, dedicated T1 high-side breaker |
+| Sunnyside | 2014 replacement filing and Liberty's December 2014 status | T1 and T4 maximum ratings, former Holyrood T8 in the Sunnyside T1 position, four 230 kV lines, four 138 kV lines, dedicated T1 high-side breaker |
 | Stony Brook | 2003 system report, 2018 route table and 2023 planning assessment | T1 and T2 at 75/100/125 MVA, four 230 kV lines, two 138 kV lines |
 | Bay d'Espoir | 2013 system one-line and 2018 route table | 230/69 kV interface, 592 MW plant assignment, seven filed transmission routes |
-| Buchans | 2018 T1 replacement filing and 2018 route table | T1 rating, four 230 kV lines, two 66 kV lines |
+| Buchans | 2018 T1 replacement filing and 2018 route table | Former T1 installed at Massey Drive in 1970 and moved to Buchans in 1998; planned 2019 replacement with the Hardwoods spare; four 230 kV lines, two 66 kV lines |
 | Deer Lake | 2003 system report, 2010 capital filing and 2018 route table | 45/60/75 MVA 230/138 kV transformation, 25/33.3/41.7 MVA 138/66 kV transformation, later 41.6 MVA maximum-rating record, three filed routes |
 | Bottom Brook | 2021 Stephenville retirement study and 2018 route table | T4 addition, former T2 grounding role, three 230 kV lines, two 138 kV lines, Newfoundland Power 400L |
 | Grand Falls and Bishop's Falls | 2013 system one-line | Three generation ratings on the 138 kV network |

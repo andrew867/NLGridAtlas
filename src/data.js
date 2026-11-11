@@ -175,7 +175,7 @@ export const sources = [
     organization: "NL Hydro",
     title: "2018 Capital Budget Application, Buchans T1 Replacement",
     topics: ["Buchans", "T1", "230/66 kV", "transformer replacement"],
-    pages: "physical PDF pp. 453 and 459 to 460",
+    pages: "physical PDF pp. 453 and 458 to 460",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2018/NLH2018Capital/applications/Capital%20Budget%20Volume%20II.pdf"
   },
@@ -238,6 +238,16 @@ export const sources = [
     pages: "physical PDF p. 224",
     status: "reported",
     url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/July9/Hydro/preTest/May%202001%20Prefiled%20Testimony%20-%20Entire%20Document.pdf"
+  },
+  {
+    id: "liberty-supply-review-2014",
+    year: 2014,
+    organization: "Liberty Consulting Group",
+    title: "Review of Supply Issues and Power Outages, Island Interconnected System",
+    topics: ["Sunnyside T1", "Holyrood T8", "transformer relocation", "replacement transformer"],
+    pages: "physical PDF pp. 228 to 229",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-055.PDF"
   },
   {
     id: "oxen-2013",
@@ -1663,9 +1673,9 @@ export const components = {
   },
   "hrd-t8": {
     diagram: "hrd", status: "verified", code: "HRD / T8", title: "Holyrood transformer T8",
-    summary: "T8 connects the 138 kV and 230 kV buses.",
-    data: [["Rating", "75/100/125 MVA"], ["Cooling", "ONAN/ONAF/ONAF"], ["2026 model", "125 MVA maximum"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2027-loop-study", "PDF p. 194")]
+    summary: "The T8 shown on the December 2012 drawing was moved to the Sunnyside T1 position in 2014. A newly manufactured transformer ordered for Sunnyside was delivered to Holyrood. The 2026 study again models a Holyrood unit designated T8 at 125 MVA, but the filed records cited here do not establish that unit's physical identity.",
+    data: [["2012 T8", "75/100/125 MVA, ONAN/ONAF/ONAF"], ["2014 relocation", "Moved to Sunnyside T1 position"], ["2026 model", "HRD T8, 125 MVA maximum"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("np-2027-loop-study", "PDF p. 194")]
   },
   "hrd-t5": {
     diagram: "hrd", status: "verified", code: "HRD / T5", title: "Holyrood transformer T5",
@@ -2140,14 +2150,14 @@ export const islandTerminalRecords = [
     code: "SUN",
     name: "Sunnyside Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T1 and T4, 230/138 kV, 125 MVA maximum rating each"], ["230 kV circuits", "TL202 and TL206 to Bay d'Espoir; TL203 to Western Avalon; TL207 to Come By Chance"], ["138 kV circuits", "TL212, TL219, 100L and 109L"], ["2014 work", "T1 replaced after its January 4 failure; dedicated 230 kV breaker B1T1 added"]],
+    facts: [["Transformation", "T1 and T4, 230/138 kV, 125 MVA maximum rating each"], ["2014 T1 replacement", "Former Holyrood T8 moved to the Sunnyside T1 position and entered service by December 2014"], ["230 kV circuits", "TL202 and TL206 to Bay d'Espoir; TL203 to Western Avalon; TL207 to Come By Chance"], ["138 kV circuits", "TL212, TL219, 100L and 109L"], ["2014 breaker work", "Dedicated 230 kV breaker B1T1 added after the January 4 T1 failure"]],
     diagram: {
       label: "2015 breaker addition arrangement",
       buses: [{ id: "b1", label: "B1", voltage: "230 kV" }, { id: "b2", label: "B2 / B3", voltage: "138 kV" }],
       transformers: [{ label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" }, { label: "T4", rating: "125 MVA max", from: "b1", to: "b2" }],
       circuits: [{ label: "TL202", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL206", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL203", destination: "Western Avalon", bus: "b1" }, { label: "TL207", destination: "Come By Chance", bus: "b1", destinationCode: "CBC" }, { label: "TL212", destination: "Linton Lake", bus: "b2" }, { label: "TL219", destination: "Salt Pond", bus: "b2" }, { label: "100L", destination: "138 kV system", bus: "b2" }, { label: "109L", destination: "138 kV system", bus: "b2" }]
     },
-    sources: [sourceRef("nlh-sunnyside-2014", "physical PDF pp. 18 to 19 and 29 to 34"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-sunnyside-2014", "physical PDF pp. 18 to 19 and 29 to 34"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "STB",
@@ -2180,14 +2190,14 @@ export const islandTerminalRecords = [
     code: "BUC",
     name: "Buchans Terminal Station",
     status: "verified",
-    facts: [["T1", "230/66 kV, 40/53.3/66.6 MVA replacement specified in the 2018 capital filing"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
+    facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2018 replacement plan", "Retire the former T1 and install the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare in 2019"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
     diagram: {
       label: "2018 transformer replacement / 2018 routes",
       buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }],
       transformers: [{ label: "T1", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2" }],
       circuits: [{ label: "TL205", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL232", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL228", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL233", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }, { label: "TL264", destination: "Duck Pond", bus: "b2" }, { label: "TL280", destination: "Star Lake", bus: "b2" }]
     },
-    sources: [sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 459 to 460"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 458 to 460"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "DLK",
