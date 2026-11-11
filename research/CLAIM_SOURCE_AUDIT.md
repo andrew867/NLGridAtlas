@@ -7,14 +7,14 @@ Work item: `SRC-001`
 
 | Record class | Count | Source control |
 | --- | ---: | --- |
-| Static technical regions | 23 | `staticClaims` in `src/data.js`; attached to the rendered region by `data-claim-id` |
-| Selectable diagram components | 51 | `components` in `src/data.js` |
-| Timeline events | 25 | `timeline` in `src/data.js` |
+| Static technical regions | 32 | `staticClaims` in `src/data.js`; attached to the rendered region by `data-claim-id` |
+| Selectable diagram components | 127 | `components` in `src/data.js` |
+| Timeline events | 27 | `timeline` in `src/data.js` |
 | Island terminal records | 10 | `islandTerminalRecords` in `src/data.js` |
-| Detailed Newfoundland Power profiles | 9 | `stationProfiles` in `src/data.js` |
-| Source records | 41 | `sources` in `src/data.js` |
+| Detailed Newfoundland Power profiles | 19 | `stationProfiles` in `src/data.js` |
+| Source records | 78 | `sources` in `src/data.js` |
 
-The static ledger covers the system-length panel, island and Avalon network views, four terminal-station one-lines, five detailed Newfoundland Power one-lines, Avalon transmission work, four load records, and the VHF records.
+The static ledger covers the system-length panel, island and Avalon network views, terminal-station and Newfoundland Power one-lines, Avalon transmission work, load records, and the VHF records.
 
 ## Automated checks
 
@@ -52,6 +52,7 @@ Existing data tests perform the same source-resolution checks for timeline event
 | `kings-bridge-substation-one-line` | 2026 Capital Budget Application, physical PDF pp. 72 to 75 and 427 to 434; 2019 Pepperrell supplemental application, physical PDF p. 35; CA-NP-255, physical PDF p. 4 | The simplified one-line uses the current station description for 12L, 16L, 30L, KBR-T3, KBR-T4, and six 12.5 kV feeders. The 2019 feeder table supplies KBR-09, 10, 11, 12, 13, and 15. The T3 evidence panel keeps the proposed 2028 replacement separate from the existing transformer. |
 | `pepperrell-substation-one-line` | 2019 Capital Budget Application, physical PDF pp. 231 to 232; 2019 Pepperrell supplemental application, physical PDF pp. 8, 24, 33 and 37; 2019 Capital Expenditure Report, physical PDF pp. 8, 20 and 24; 2027 power-transformer listing, physical PDF p. 549 | The logical one-line shows 16L, 74L, the parallel 25 MVA transformer bank, the 12.5 kV bus, and PEP-01 through PEP-05. It does not reconstruct breaker positions. The transformer panels retain the conflict between the 2019 12.5 kV station records and the 2027 equipment table's 25 kV entries. |
 | `glendale-substation-one-line` | 2006 handbook, PDF pp. 6 to 7 and 12; 2020 Capital Budget Application, physical PDF pp. 447 to 453; PUB-NP-064 Attachment G, physical PDF pp. 148 to 152; CA-NP-176, physical PDF pp. 6 to 7; 2027 power-transformer listing, physical PDF p. 547 | The logical one-line shows 18L to Goulds, 73L to Hardwoods, three 25 MVA transformers, and GDL-01 through GDL-09. It does not assign feeders to bus sections because no public source located in this pass provides those assignments. The transformer evidence preserves the 12.5 kV station record and the later 25 kV equipment-table entries. |
+| `st-johns-main-2015-one-line` | 2006 handbook, PDF pp. 6 and 15; 2011 Capital Budget Application, physical PDF pp. 413 to 416; 2015 Capital Budget Application, physical PDF pp. 502 to 507; CA-NP-255, physical PDF p. 4; 2027 power-transformer listing, physical PDF p. 550 | The dated logical one-line shows 4L, 13L and 25L; the selected 2015 SJM-T3 addition in parallel with SJM-T1 and SJM-T2; the historical SJM-T4 and SJM-12 4.16 kV branch; and the five later feeder assignments. The transformer panels preserve the conflict between the 2015 12.5 kV station record and the 2027 equipment table's 25 kV entries for SJM-T1 and SJM-T3. Breaker positions are not reconstructed. |
 
 The May 18, 2010 construction register pages and the 2013 loading tables were also inspected during `SRC-002`. Their extracted data is controlled separately in `research/derived/np-register-layers-2008-2013.json`.
 

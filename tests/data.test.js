@@ -817,6 +817,29 @@ test("Glendale retains its circuits, three transformers and nine feeder records"
   assert.match(components["gdl-09"].data.flat().join(" "), /Completed 2021/);
 });
 
+test("St. John's Main retains the dated 2015 parallel-bank arrangement", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(html, /data-claim-id="st-johns-main-2015-one-line"/);
+  assert.match(html, /4L to Goulds Substation/);
+  assert.match(html, /13L to Stamp's Lane Substation/);
+  assert.match(html, /25L to Goulds Substation/);
+  assert.match(main, /SJM: "#substation-sjm"/);
+  for (const transformer of ["t1", "t2", "t3", "t4"]) {
+    assert.match(html, new RegExp(`data-component="sjm-${transformer}"`));
+    assert.ok(components[`sjm-${transformer}`]);
+  }
+  for (const feeder of ["03", "06", "09", "10", "14", "12"]) {
+    assert.match(html, new RegExp(`data-component="sjm-${feeder}"`));
+    assert.ok(components[`sjm-${feeder}`]);
+  }
+  assert.match(components["sjm-summary"].data.flat().join(" "), /70.8 MVA with three transformers in parallel/);
+  assert.match(components["sjm-t1"].data.flat().join(" "), /2027 equipment table 66\/25 kV, 25 MVA/);
+  assert.match(components["sjm-t2"].data.flat().join(" "), /2026 forecast 17.19 MVA/);
+  assert.match(components["sjm-t3"].data.flat().join(" "), /2015 project estimate \$1.479 million/);
+  assert.match(components["sjm-t4"].data.flat().join(" "), /2027 transformer table Not listed/);
+});
+
 test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);

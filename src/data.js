@@ -995,6 +995,18 @@ export const staticClaims = [
     ]
   },
   {
+    id: "st-johns-main-2015-one-line",
+    scope: "Dated St. John's Main 66 kV circuits, 2015 parallel transformer bank, historical 4.16 kV branch and later documented feeder assignments",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2006-handbook", pages: "PDF pp. 6 and 15" },
+      { sourceId: "np-2011-capital-stations", pages: "physical PDF pp. 413 to 416" },
+      { sourceId: "np-2015-capital-sjm", pages: "physical PDF pp. 502 to 507" },
+      { sourceId: "np-2025-ca-np-255", pages: "physical PDF p. 4" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 550" }
+    ]
+  },
+  {
     id: "western-avalon-soldiers-pond-design",
     scope: "Preliminary Western Avalon to Soldiers Pond line design and seasonal ratings",
     status: "proposed",
@@ -1848,6 +1860,50 @@ export const components = {
       ? [sourceRef("np-2019-pepperrell", "physical PDF pp. 8, 13 and 33"), sourceRef("np-2019-capex-report", "physical PDF pp. 8 and 24"), sourceRef("np-2025-ca-np-255", "physical PDF p. 4")]
       : [sourceRef("np-2019-pepperrell-modernization", "physical PDF p. 231"), sourceRef("np-2019-pepperrell", "physical PDF p. 37")]
   }])),
+  "sjm-summary": {
+    diagram: "sjm", status: "verified", code: "SJM / 2015 ARRANGEMENT", title: "St. John's Main Substation",
+    summary: "The 2015 project placed SJM-T3 in parallel with SJM-T1 and SJM-T2 on the 12.5 kV bank. The dated drawing retains the separate SJM-T4 and SJM-12 4.16 kV branch from the earlier station record.",
+    data: [["66 kV circuits", "4L and 25L to Goulds; 13L to Stamp's Lane"], ["12.5 kV bank", "SJM-T1, SJM-T2 and SJM-T3; 25 MVA each"], ["2015 bank capacity", "70.8 MVA with three transformers in parallel"], ["Historical branch", "SJM-T4, 7.5 MVA, 66/4.16 kV; SJM-12"], ["2014 distribution record", "12 feeders; 4 underground and 8 overhead"]],
+    sources: [sourceRef("np-2006-handbook", "PDF pp. 6 and 15"), sourceRef("np-2011-capital-stations", "physical PDF pp. 413 to 416"), sourceRef("np-2015-capital-sjm", "physical PDF pp. 502 to 507")]
+  },
+  "sjm-t1": {
+    diagram: "sjm", status: "verified", code: "SJM / T1", title: "St. John's Main transformer SJM-T1",
+    summary: "The 2015 station record identifies SJM-T1 as a 25 MVA, 66/12.5 kV transformer. The 2027 equipment table prints 25.0 kV as its low operating voltage.",
+    data: [["2015 station record", "66/12.5 kV, 25 MVA"], ["2027 equipment table", "66/25 kV, 25 MVA"], ["2026 forecast", "15.84 MVA"]],
+    sources: [sourceRef("np-2015-capital-sjm", "physical PDF pp. 502 to 503"), sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  "sjm-t2": {
+    diagram: "sjm", status: "verified", code: "SJM / T2", title: "St. John's Main transformer SJM-T2",
+    summary: "The 2015 and 2027 records identify SJM-T2 as a 25 MVA, 66/12.5 kV transformer.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["2026 forecast", "17.19 MVA"]],
+    sources: [sourceRef("np-2015-capital-sjm", "physical PDF pp. 502 to 503"), sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  "sjm-t3": {
+    diagram: "sjm", status: "verified", code: "SJM / T3", title: "St. John's Main transformer SJM-T3",
+    summary: "The 2015 project selected a spare 25 MVA, 66/12.5 kV SJM-T3 for parallel operation with SJM-T1 and SJM-T2. The later equipment table lists SJM-T3 but prints 25.0 kV as its low operating voltage.",
+    data: [["2015 selected work", "66/12.5 kV, 25 MVA"], ["2015 project estimate", "$1.479 million"], ["2027 equipment table", "66/25 kV, 25 MVA"], ["2026 forecast", "11.25 MVA"]],
+    sources: [sourceRef("np-2015-capital-sjm", "physical PDF pp. 503 to 507"), sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  "sjm-t4": {
+    diagram: "sjm", status: "verified", code: "SJM / T4 / 2014", title: "Historical St. John's Main transformer SJM-T4",
+    summary: "The 2015 filing records SJM-T4 as the separate 4.16 kV bank. SJM-T4 is absent from the 2027 transformer table.",
+    data: [["2014 station record", "66/4.16 kV, 7.5 MVA"], ["Distribution", "One feeder"], ["2010 feeder record", "SJM-12"], ["2027 transformer table", "Not listed"]],
+    sources: [sourceRef("np-2011-capital-stations", "physical PDF pp. 413 to 416"), sourceRef("np-2015-capital-sjm", "physical PDF p. 502"), sourceRef("np-2027-transformers", "physical PDF p. 550")]
+  },
+  ...Object.fromEntries(["03", "06", "09", "10", "14"].map((feeder) => [`sjm-${feeder}`, {
+    diagram: "sjm", status: "verified", code: `SJM / SJM-${feeder}`, title: `St. John's Main feeder SJM-${feeder}`,
+    summary: ["03", "06", "09"].includes(feeder)
+      ? `The 2024 supply table assigns SJM-${feeder} to the parallel SJM-T1 and SJM-T2 bank.`
+      : `The 2024 supply table assigns SJM-${feeder} to SJM-T3.`,
+    data: [["Voltage", "12.5 kV"], ["Supplying transformer", ["03", "06", "09"].includes(feeder) ? "SJM-T1/T2" : "SJM-T3"]],
+    sources: [sourceRef("np-2025-ca-np-255", "physical PDF p. 4")]
+  }])),
+  "sjm-12": {
+    diagram: "sjm", status: "verified", code: "SJM / SJM-12 / 2010", title: "Historical St. John's Main feeder SJM-12",
+    summary: "The 2010 station record assigns SJM-12 to the 4.16 kV SJM-T4 branch.",
+    data: [["Voltage", "4.16 kV"], ["Supplying transformer", "SJM-T4"]],
+    sources: [sourceRef("np-2011-capital-stations", "physical PDF pp. 413 to 416")]
+  },
   "gdl-summary": {
     diagram: "gdl", status: "verified", code: "GDL / SUBSTATION", title: "Glendale Substation",
     summary: "Circuits 18L and 73L connect Glendale to Goulds and Hardwoods. Three 25 MVA transformers supply the distribution bus and the GDL-01 through GDL-09 feeder record.",

@@ -320,6 +320,7 @@ button, input { font: inherit; }
 .breaker-symbol { fill: var(--paper); stroke: var(--ink); stroke-width: 3; vector-effect: non-scaling-stroke; }
 .station-bus { fill: none; stroke: var(--ink); stroke-width: 5; vector-effect: non-scaling-stroke; }
 .proposed-line { fill: none; stroke: var(--phase-a); stroke-width: 4; stroke-dasharray: 12 8; vector-effect: non-scaling-stroke; }
+.historical-component .tap, .historical-component .winding { stroke-dasharray: 7 5; }
 .winding { fill: none; stroke-width: 4; vector-effect: non-scaling-stroke; }
 .feeder-winding { stroke: var(--ink); stroke-width: 3; }
 .feeder-label { paint-order: stroke fill; stroke: var(--paper); stroke-width: 8px; }

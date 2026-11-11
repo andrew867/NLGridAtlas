@@ -21,6 +21,7 @@ Updated: 2026-11-11
 - Passed 64 automated tests and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
+- Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.
 
 ## Active work
 
@@ -31,7 +32,7 @@ Updated: 2026-11-11
 
 ## Next station target
 
-St. John's Main has direct 2015 evidence for SJM-T1, SJM-T2, SJM-T3, and the historical SJM-T4 branch. The 2027 transformer register omits SJM-T4 and prints 66/25 kV for SJM-T1 and SJM-T3 while other station records use a 12.5 kV distribution bus. The atlas will keep those records separate until a later operating or completion drawing resolves the current arrangement.
+Stamp's Lane has a four-transformer record, six 66 kV line terminations, ten feeder maps, and later feeder-voltage and transformer-replacement records. A detailed drawing remains blocked on the current 4.16 kV bus arrangement and the remaining feeder-to-transformer assignments.
 
 ## Open release gates
 
