@@ -7,12 +7,12 @@ Work item: `SRC-001`
 
 | Record class | Count | Source control |
 | --- | ---: | --- |
-| Static technical regions | 33 | `staticClaims` in `src/data.js`; attached to the rendered region by `data-claim-id` |
+| Static technical regions | 34 | `staticClaims` in `src/data.js`; attached to the rendered region by `data-claim-id` |
 | Selectable diagram components | 141 | `components` in `src/data.js` |
 | Timeline events | 27 | `timeline` in `src/data.js` |
 | Island terminal records | 10 | `islandTerminalRecords` in `src/data.js` |
 | Detailed Newfoundland Power profiles | 19 | `stationProfiles` in `src/data.js` |
-| Source records | 78 | `sources` in `src/data.js` |
+| Source records | 79 | `sources` in `src/data.js` |
 
 The static ledger covers the system-length panel, island and Avalon network views, terminal-station and Newfoundland Power one-lines, Avalon transmission work, load records, and the VHF records.
 
@@ -34,6 +34,7 @@ Existing data tests perform the same source-resolution checks for timeline event
 | --- | --- | --- |
 | `island-system-lengths` | 2023 asset report, physical PDF pp. 5 and 7 | Matched 4,432 km total, 2,246 km at 230 kV, 1,538 km at 138 kV, and 648 km at 69 kV. |
 | `island-generation-transmission-overview` | 2013 GRA Volume II, physical PDF p. 79; 2006 handbook, PDF pp. 2, 4 and 6 to 18 | The map is dated November 26, 2012. Extracted handbook totals match 104 transmission lines, 136 substations, and 302 feeders. |
+| `island-ac-backbone-2018` | PUB-NP-084 Attachment A, physical PDF pp. 24 to 26 | The rendered layer preserves all 58 filed circuit designations, their 68 route segments, filed voltages, endpoints, table numbers, and source pages. It is labelled as a 2018 schematic rather than a current geographic map. |
 | `avalon-230-semi-geographic` | Exhibit 114, PDF p. 7; 2013 GRA Volume II, physical PDF p. 663; Oxen Pond application, physical PDF p. 15 | The displayed TL208, TL237, TL203, TL201, TL217, TL236, TL242, and TL218 endpoints match the drawings. The Oxen Pond map supports the west-to-east station placement. |
 | `avalon-66-semi-geographic` | 2006 handbook, PDF pp. 6 to 16; Oxen Pond application, physical PDF p. 15 | Automated endpoint checks reproduce the June 2005 register. The station placement follows the filed semi-geographic map. |
 | `oxen-pond-terminal-one-line` | Oxen Pond application, physical PDF pp. 43 to 44; 2026 loop study, PDF p. 188 | The 2013 arrangement supports buses B2, B5, B3, and B4; breaker B2B5; TL236 and TL218; the seven Newfoundland Power circuit assignments; and capacitor-bank values. The 2026 study supports the displayed transformer ratings. |

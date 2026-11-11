@@ -210,6 +210,21 @@
       "notes": "Detailed sourced records now cover Cape Broyle, Fermeuse, Colliers, Springfield, Holyrood, Kenmount, Goulds, Glendale, Virginia Waters, Ridge Road, King's Bridge, Pepperrell, St. John's Main, and Stamp's Lane. The Stamp's Lane drawing separates the documented SLA-T1/T2 4.16 kV bank from the SLA-T3/T4 12.5 kV bank and shows only the nine feeders with filed voltage assignments. Breaker positions and unproved feeder assignments are omitted. The St. John's Main drawing is dated to the 2015 selected transformer addition and retains the historical 4.16 kV branch. The Virginia Waters drawing is dated to the 2016 station record. The Ridge Road drawing combines the documented 2015 split-bus arrangement with the later confirmation that its bus-tie breaker was installed. The King's Bridge drawing keeps the proposed 2028 T3 replacement separate from existing equipment. Pepperrell and Glendale show only documented logical topology. Springfield's 2015 modernization has a later completion record. Colliers and Holyrood remain labelled as application or proposed work pending direct completion evidence. Exact feeder-to-transformer and bus-section work continues under AVL-002."
     },
     {
+      "id": "AVL-007",
+      "title": "Create a dedicated Molloy's Lane substation record",
+      "phase": 1,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Search the archive for Molloy's Lane station one-lines, transformer history, circuits, feeder voltages, and capital work, then replace the generic register-only view with a sourced station record.",
+      "dependencies": ["AVL-001", "SRC-002"],
+      "completion_evidence": [
+        "src/data.js",
+        "research/NP_STATION_GAP_LEDGER.md"
+      ],
+      "blocker": null,
+      "notes": "The atlas already contains the 2005 feeder register, the 2006 handbook circuit links, and the 2027 transformer-register rows for MOL-T1 and MOL-T2. A dedicated station profile and supported one-line are still absent. The wider St. John's station list will be checked for similar omissions."
+    },
+    {
       "id": "NAV-001",
       "title": "Make every documented circuit link open the other-end record",
       "phase": 1,
@@ -245,7 +260,7 @@
       "title": "Create the structured island AC topology dataset",
       "phase": 2,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Record documented 230 kV, 138 kV, 69 kV, and 66 kV lines, endpoints, source years, ownership, and page references.",
       "dependencies": ["SRC-001", "SRC-002"],
       "completion_evidence": [
@@ -254,19 +269,24 @@
         "tests/island-topology.test.js"
       ],
       "blocker": null,
-      "notes": "PUB-NP-084 Attachment A now provides a tested 2018 layer with 58 Hydro circuit designations: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. Older filings explicitly call nine of the 2018 table's 66 kV circuits 69 kV; those records are retained separately rather than replacing the later filed values. Current circuit classifications and post-2018 topology changes remain open."
+      "notes": "The tested 2018 layer contains 58 Hydro circuit designations: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. It records Hydro ownership, endpoints, source year, filed table, and physical PDF page. Nine circuit-specific historical 69 kV records remain separate from the 2018 filed values. Post-2018 changes require a later dated layer, not an overwrite of this one."
     },
     {
       "id": "ISL-002",
       "title": "Build the interactive island AC backbone",
       "phase": 2,
       "priority": "P0",
-      "status": "not_started",
+      "status": "done",
       "scope": "Create a clickable dated island network from the structured topology dataset.",
       "dependencies": ["ISL-001"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "index.html",
+        "src/island-backbone.js",
+        "src/styles.css",
+        "tests/island-backbone.test.js"
+      ],
       "blocker": null,
-      "notes": "Keep source-map images as primary references."
+      "notes": "The atlas now renders every filed segment in the 58-circuit 2018 layer. Voltage filters, circuit selection, station selection, source-page links, keyboard operation, mobile horizontal scrolling, and links to existing station records are implemented. The 2012 source map remains above the interactive schematic."
     },
     {
       "id": "ISL-003",

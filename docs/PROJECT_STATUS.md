@@ -26,15 +26,20 @@ Updated: 2026-11-11
 - Verified the Stamp's Lane diagram at 1440 by 1000 px and 390 by 844 px with no page overflow, out-of-bounds SVG text, browser warnings, or browser errors.
 - Linked documented circuit ends to the available detailed diagram, station record, or island terminal record.
 - Qualified public commit `af61cb5` from a fresh clone: 71 tests, production build, 66 pinned PDF hashes, and a clean worktree passed.
+- Added the interactive 2018 island AC backbone with all 58 filed Hydro circuit designations and 68 filed route segments.
+- Added voltage filters, circuit records, station connection records, and links to the existing terminal records.
+- Verified one detail panel, circuit and station selection, filtering, zero browser warnings or errors, and a 390 px layout with no page overflow.
+- Added Molloy's Lane as `AVL-007`; its handbook circuits, feeder register, and 2027 transformer data were already available, but it does not yet have a dedicated station diagram.
 
 ## Active work
 
-1. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
-2. Reconcile the 2018 Hydro circuit tables with current 69 kV classification and post-2018 topology changes, `ISL-001`.
+1. Expand the major island terminal records and one-lines, `ISL-003`.
+2. Create a dedicated Molloy's Lane record from the existing register data and any later station filings, `AVL-007`.
+3. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
 
 ## Island backbone progress
 
-The first structured layer contains all 58 Hydro circuit designations in PUB-NP-084 Attachment A, physical PDF pp. 24 to 26: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. The filed endpoint and voltage records are machine-tested. Current 69 kV circuit assignments remain open because the 2023 asset report gives only the class total, not circuit designations.
+The structured and interactive 2018 layer contains all 58 Hydro circuit designations in PUB-NP-084 Attachment A, physical PDF pp. 24 to 26: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. Every filed segment is rendered with a stable endpoint identifier and source-page detail. Current 69 kV circuit assignments remain open because the 2023 asset report gives only the class total, not circuit designations.
 
 ## Remaining Avalon evidence target
 

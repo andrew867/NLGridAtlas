@@ -208,6 +208,51 @@ button, input { font: inherit; }
 .island-map-index nav span { overflow-wrap: anywhere; }
 .island-map-index .generation-label { display: block; margin-top: 1.75rem; }
 .island-map-index > p { font: 400 1rem/1.55 "Source Serif 4", serif; }
+.island-backbone { margin-top: 4rem; }
+.island-backbone-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; align-items: end; }
+.island-backbone-heading h3 { margin: .35rem 0 0; font: 600 clamp(2.4rem, 5vw, 4.8rem)/.9 "Barlow Condensed", sans-serif; text-transform: uppercase; }
+.island-voltage-controls { display: flex; flex-wrap: wrap; gap: .45rem; }
+.island-voltage-controls button { display: grid; grid-template-columns: auto auto; gap: .35rem .8rem; align-items: center; min-width: 94px; border: 1px solid var(--ink); border-radius: 0; padding: .65rem .75rem; background: var(--paper-bright); color: var(--ink); cursor: pointer; font: 500 .72rem/1 "IBM Plex Mono", monospace; text-transform: uppercase; }
+.island-voltage-controls button::before { content: ""; grid-row: 1; width: 28px; border-top: 4px solid var(--line-colour); }
+.island-voltage-controls button span { grid-column: 1 / -1; color: var(--muted); font-size: .64rem; }
+.island-voltage-controls button[aria-pressed="false"] { opacity: .42; }
+.island-voltage-controls button[data-island-voltage="230"] { --line-colour: var(--phase-a); }
+.island-voltage-controls button[data-island-voltage="138"] { --line-colour: var(--phase-b); }
+.island-voltage-controls button[data-island-voltage="66"] { --line-colour: var(--water); }
+.island-backbone-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: stretch; }
+.island-backbone-map-shell { min-width: 0; padding: 1rem; overflow: hidden; background: rgba(248, 244, 235, .58); }
+.island-backbone-scroll { min-width: 0; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-color: var(--water) var(--paper); }
+.island-backbone-map { display: block; width: 100%; min-width: 1040px; height: auto; }
+.island-grid path { fill: none; stroke: var(--rule); stroke-width: 1; opacity: .18; vector-effect: non-scaling-stroke; }
+.island-circuit { cursor: pointer; outline: none; transition: opacity .16s ease; }
+.island-circuit line { stroke: var(--line-colour); stroke-width: 4; vector-effect: non-scaling-stroke; }
+.island-circuit text { opacity: 0; fill: var(--ink); stroke: var(--paper-bright); stroke-width: 7px; paint-order: stroke fill; font: 600 15px/1 "IBM Plex Mono", monospace; text-anchor: middle; pointer-events: none; }
+.island-circuit.voltage-230 { --line-colour: var(--phase-a); }
+.island-circuit.voltage-138 { --line-colour: var(--phase-b); }
+.island-circuit.voltage-66 { --line-colour: var(--water); }
+.island-circuit:hover line, .island-circuit:focus-visible line, .island-circuit.selected line { stroke: var(--ink); stroke-width: 8; }
+.island-circuit:hover text, .island-circuit:focus-visible text, .island-circuit.selected text { opacity: 1; }
+.island-circuit.filtered-out { display: none; }
+.island-node { cursor: pointer; outline: none; }
+.island-node circle { fill: var(--paper-bright); stroke: var(--ink); stroke-width: 2; vector-effect: non-scaling-stroke; }
+.island-node text { fill: var(--ink); stroke: var(--paper-bright); stroke-width: 5px; paint-order: stroke fill; font: 500 12px/1 "Barlow Condensed", sans-serif; text-anchor: middle; letter-spacing: .025em; pointer-events: none; }
+.island-node.major circle { fill: var(--ink); stroke: var(--paper-bright); stroke-width: 3; }
+.island-node.major text { font-size: 15px; font-weight: 700; }
+.island-node:hover circle, .island-node:focus-visible circle, .island-node.selected circle { fill: var(--phase-a); stroke: var(--ink); stroke-width: 5; }
+.island-backbone-detail { min-width: 0; padding: 1.5rem 0 1.5rem 1.5rem; border-top: 8px solid var(--water); }
+.island-backbone-detail h4 { margin: .75rem 0 1rem; font: 600 clamp(2.4rem, 4vw, 4rem)/.9 "Barlow Condensed", sans-serif; text-transform: uppercase; overflow-wrap: anywhere; }
+.island-backbone-detail > p { font-size: 1rem; line-height: 1.5; }
+.island-backbone-detail > .evidence-link { display: block; margin-top: 1.25rem; }
+.island-detail-voltage { display: inline-block; padding: .35rem .55rem; border: 1px solid currentColor; font: 600 .78rem/1 "IBM Plex Mono", monospace; }
+.island-detail-voltage.voltage-230 { color: var(--phase-a); }
+.island-detail-voltage.voltage-138 { color: #835b0e; }
+.island-detail-voltage.voltage-66 { color: var(--water); }
+.island-connected-circuits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 1rem 0; border-top: 1px solid var(--rule); }
+.island-connected-circuits button { display: flex; justify-content: space-between; gap: .5rem; border: 0; border-bottom: 1px solid var(--rule); padding: .65rem .3rem; background: transparent; color: var(--ink); cursor: pointer; font: 400 .68rem/1.2 "IBM Plex Mono", monospace; }
+.island-connected-circuits button:nth-child(odd) { border-right: 1px solid var(--rule); padding-right: .65rem; }
+.island-connected-circuits button:nth-child(even) { padding-left: .65rem; }
+.island-connected-circuits button:hover, .island-connected-circuits button:focus-visible { background: var(--paper-bright); color: var(--water); }
+.island-detail-action { display: inline-block; margin-top: .75rem; padding: .65rem .8rem; background: var(--ink); color: var(--paper-bright); font: 500 .7rem/1 "IBM Plex Mono", monospace; text-transform: uppercase; }
 .terminal-network-panel { margin-top: 1rem; padding: 1.5rem; }
 .terminal-network { display: block; width: 100%; height: auto; }
 .terminal-network text { paint-order: stroke fill; stroke: var(--paper); stroke-width: 10px; stroke-linejoin: round; }
@@ -575,7 +620,7 @@ button, input { font: inherit; }
 @media (max-width: 980px) {
   .site-header { grid-template-columns: 1fr auto; }
   .site-header nav { display: none; }
-  .cover-grid, .handbook-layout, .island-overview-layout, .load-grid, .telecom-layout { grid-template-columns: 1fr; }
+  .cover-grid, .handbook-layout, .island-overview-layout, .island-backbone-layout, .load-grid, .telecom-layout { grid-template-columns: 1fr; }
   .telecom-history { grid-template-columns: 1fr; }
   .telecom-history article { border-right: 0; border-bottom: 1px solid var(--ink); }
   .telecom-history article:last-child { border-bottom: 0; }
@@ -618,6 +663,13 @@ button, input { font: inherit; }
   .station-sheet-heading h4 { font-size: 2rem; }
   .terminal-network-panel { padding: .75rem; }
   .terminal-network { min-width: 0; min-height: 0; }
+  .island-backbone { margin-top: 3rem; }
+  .island-backbone-heading { align-items: flex-start; }
+  .island-voltage-controls { width: 100%; }
+  .island-voltage-controls button { flex: 1 1 90px; }
+  .island-backbone-map-shell { padding: .5rem; }
+  .island-backbone-map { min-width: 980px; }
+  .island-backbone-detail { padding: 1.25rem 0 0; }
   .one-line, .station-line {
     width: 100%;
     min-width: 0;

@@ -778,6 +778,16 @@ export const sources = [
     pages: "PDF p. 1 and Attachment C pp. 1 to 4",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078.PDF"
+  },
+  {
+    id: "np-2018-pub-np-084",
+    year: 2018,
+    organization: "Newfoundland Power / Newfoundland and Labrador Hydro",
+    title: "PUB-NP-084, Attachment A, Island transmission line tables",
+    topics: ["Island transmission", "230 kV", "138 kV", "66 kV", "circuit endpoints"],
+    pages: "physical PDF pp. 24 to 26",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-084.PDF"
   }
 ];
 
@@ -795,6 +805,14 @@ export const staticClaims = [
     sources: [
       { sourceId: "gra-2013-v2", pages: "physical PDF p. 79" },
       { sourceId: "np-2006-handbook", pages: "PDF pp. 2, 4 and 6 to 9" }
+    ]
+  },
+  {
+    id: "island-ac-backbone-2018",
+    scope: "Dated 2018 Hydro AC transmission circuit designations, voltages, and endpoints",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2018-pub-np-084", pages: "physical PDF pp. 24 to 26" }
     ]
   },
   {

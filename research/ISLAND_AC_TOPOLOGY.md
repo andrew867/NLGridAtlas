@@ -16,11 +16,13 @@ The layer contains 58 circuit designations:
 
 Seven circuit designations contain more than one route segment in the table. Those segments remain grouped under the filed circuit designation.
 
+The interactive backbone in `src/island-backbone.js` uses the complete 58-circuit layer. Every endpoint has a stable slug identifier and an explicit schematic position. The positions organize the filed topology for inspection; they are not surveyed coordinates.
+
 ## Open reconciliation
 
 - The table is a 2018 record. Later additions, removals, taps, and endpoint changes require newer circuit-specific evidence.
 - The 2023 asset report gives 648 km for Hydro's 69 kV class but does not name individual circuits. The dataset does not relabel the 2018 table's 66 kV circuits as 69 kV.
-- Endpoint names retain the spelling in the filed table. Stable station identifiers will be added after the station register and ownership records are reconciled.
+- Endpoint names retain the spelling in the filed table.
 
 ## 66 kV and 69 kV terminology
 
