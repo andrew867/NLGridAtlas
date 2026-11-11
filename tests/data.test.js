@@ -307,7 +307,7 @@ test("2027 transformer register updates Avalon station records", async () => {
   assert.equal(components["mun-t2"].data[0][1], "25 MVA");
   assert.equal(components["lpd-t2"].status, "verified");
   assert.match(components["pul-np-summary"].summary, /12\.5 kV feeders/);
-  assert.match(components["pul-np-summary"].summary, /25\.0 kV/);
+  assert.doesNotMatch(components["pul-np-summary"].summary, /25\.0 kV/);
   assert.match(html, /OXP-T1[\s\S]*66\/12\.5 kV \/ 13\.33 MVA/);
   assert.match(html, /HWD-T1[\s\S]*HWD-T2[\s\S]*HWD-T3/);
   assert.doesNotMatch(html, /Not stated in cited records/);
@@ -348,13 +348,14 @@ test("Pepperell and Virginia Waters records separate completed work from rejecte
   assert.match(virginiaFacts, /VIR-T4.*not part of the selected expansion/);
 });
 
-test("Pulpit Rock record preserves the unresolved secondary-voltage evidence", () => {
+test("Pulpit Rock record separates the feeder bus from dual-secondary equipment", () => {
   const pulpit = stationProfiles.find((station) => station.code === "PUL");
   assert.deepEqual(pulpit.feederRegister, ["PUL-01", "PUL-02", "PUL-03", "PUL-04", "PUL-05"]);
   const facts = pulpit.engineeringRecord.facts.flat().join(" ");
   assert.match(facts, /five 12\.5 kV feeders/);
   assert.match(facts, /66\/12\.5\/25 kV/);
-  assert.match(facts, /not found/);
+  assert.match(facts, /third quarter of 2026/);
+  assert.doesNotMatch(facts, /not found/);
 });
 
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {

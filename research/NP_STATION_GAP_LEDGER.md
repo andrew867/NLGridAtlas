@@ -25,7 +25,7 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 | [x] | Hardwoods, HWD | 2005 circuits and feeders; 2014 feeder maps and load event; 2027 HWD-T1, T2, and T3 ratings; 2014 HWD-08 and HWD-09 work; HWD-02 assigned to HWD-T1/T2 | Remaining feeder-to-transformer and bus-section assignments | Current station one-line or protection drawing |
 | [x] | Oxen Pond, OXP | 2005 circuit and OXP-01 register; 2014 feeder map and load event; 2027 OXP-T1 rating; OXP-01 assigned to OXP-T1 | OXP-01 breaker and bus arrangement | Current Newfoundland Power station one-line |
 | [x] | Kenmount, KEN | 2005 feeder register; 2014 feeder maps and event loads; 2027 KEN-T1 and KEN-T2 ratings; KEN-05 assigned to KEN-T1/T2 | Remaining feeder-to-transformer and bus-section assignments | Current station one-line |
-| [x] | Pulpit Rock, PUL, equipment scope | 59L supply; two 25 MVA transformers; five feeder codes in the 2025 record; dual 66/12.5/25 kV replacement specification | See voltage conflict below | 2026 commissioning or 2027 expenditure report |
+| [x] | Pulpit Rock, PUL | 59L supply; two 25 MVA transformers; five 12.5 kV feeders; dual 66/12.5/25 kV PUL-T2 asset and replacement specification | Replacement commissioning and post-work one-line | 2027 or later expenditure report and asset history |
 | [x] | Memorial, MUN | 12L and 14L supply; MUN-T1 and MUN-T2 ratings; two 12.5 kV bus sections; MUN-01 to MUN-10; MUN-01 and MUN-08 Health Sciences assignment | Post-refurbishment as-built revision | 2024 or later completion drawing |
 | [x] | Long Pond, LPD | 36L supply from Oxen Pond; 2024 T1 one-line; two 12.5 kV bus sections; MUN-20 to MUN-29 customer circuits; 2027 LPD-T1 and LPD-T2 ratings | Post-expansion as-built revision | 2024 or later completion drawing |
 | [x] | Goulds, GOU | 3L, 4L, 17L, 18L, 25L, and 72L terminations; 66/33 kV GOU-T1; 12.5 kV GOU-T2 and T3; GOU-01 to GOU-03 maps; GOU-02 assigned to GOU-T2/T3 | Current bus arrangement and remaining feeder assignments | Current one-line or protection drawing |
@@ -43,14 +43,15 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 2. Mirror the NL Hydro uploads index. The inventory contains 2,521 PDFs and 9,402,399,683 listed bytes. Use it for Hydro transmission, generating-station, HVDC, telecommunications, and Muskrat Falls integration records.
 3. Search Fortis annual reports selectively. They record corporate-level asset additions and transfers, but the current Fortis report library does not expose Newfoundland Power station drawings or capital-application appendices.
 
-## Pulpit Rock voltage record
+## Pulpit Rock feeder-bus and transformer records
 
 - [x] The 2025 application says PUL-T1 and the then-installed PUL-T2 supplied five 12.5 kV feeders, physical PDF pp. 458 and 463.
 - [x] The then-installed PUL-T2 was a 15/20/25 MVA, 66/12.5/25 kV dual-secondary unit. The main project summary describes its service as 66/12.5 kV, physical PDF pp. 458 and 463.
 - [x] The replacement specification was 15/20/25 MVA, 66/12.5/25 kV, with installation, testing, and commissioning planned for 2026, physical PDF pp. 88 and 470.
-- [x] The 2026 and 2027 transformer listings show PUL-T1 and PUL-T2 at 66/25 kV, 25 MVA, physical PDF pp. 370 and 549.
+- [x] The 2026 and 2027 portable-equipment listings show PUL-T1 and PUL-T2 at 66/25 kV, 25 MVA, physical PDF pp. 370 and 549. These are transformer records, not feeder-bus one-lines.
 - [x] The 2026 application scheduled the new PUL-T2 to arrive in the third quarter of 2026, physical PDF p. 197.
-- [ ] The available record does not show the completed secondary connection or a feeder conversion from 12.5 kV to 25 kV. A commissioning report or as-built one-line is required before the atlas labels the Pulpit Rock feeder bus as 25 kV.
+- [x] The atlas labels the feeder bus at 12.5 kV from the direct 2025 station description. The dual-secondary transformer specification does not establish a feeder-bus conversion.
+- [ ] Find the replacement commissioning record or post-work one-line before recording the replacement as installed.
 
 ## Health Sciences Centre supply
 

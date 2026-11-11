@@ -144,12 +144,16 @@
       "title": "Resolve the Pulpit Rock secondary-voltage record",
       "phase": 1,
       "priority": "P0",
-      "status": "not_started",
+      "status": "done",
       "scope": "Find the commissioning or as-built record that resolves 12.5 kV feeder statements against 25.0 kV operating-voltage records.",
       "dependencies": ["ARC-003"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "src/data.js",
+        "research/NP_STATION_GAP_LEDGER.md",
+        "research/CLAIM_SOURCE_AUDIT.md"
+      ],
       "blocker": null,
-      "notes": "Keep the site state unresolved until evidence closes the conflict."
+      "notes": "The 2025 station narrative establishes five 12.5 kV feeders. The PUL-T2 asset and its replacement specification are dual-secondary 66/12.5/25 kV units. The 2027 portable-equipment table does not establish a feeder-bus conversion."
     },
     {
       "id": "AVL-005",

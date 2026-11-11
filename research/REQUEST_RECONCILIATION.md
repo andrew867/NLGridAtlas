@@ -33,7 +33,7 @@ Updated: 2026-11-10
 - [ ] Feeder map sheets beyond the 15 extracted Hardwoods, Kenmount, Oxen Pond, and Goulds sheets, including HWD-08, which is listed in the register but has no extracted map sheet.
 - [ ] Geographic coordinates or route data suitable for a measured line map. The available utility maps are semi-geographic.
 - [ ] Holyrood Unit 3 post-conversion as-built drawing. The 2024 reliability study places permanent conversion in spring 2030.
-- [ ] Pulpit Rock post-commissioning one-line that resolves the recorded 12.5 kV feeder statement and 25.0 kV transformer operating record.
+- [ ] Pulpit Rock replacement-transformer commissioning record or post-work one-line. The 12.5 kV feeder-bus record is established; the replacement installation status remains open.
 
 ## Next archive searches
 
