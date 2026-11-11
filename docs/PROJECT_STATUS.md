@@ -18,7 +18,7 @@ Updated: 2026-11-11
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 67 automated tests, source-hash verification, and the production build.
+- Passed 71 automated tests, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.
@@ -29,6 +29,11 @@ Updated: 2026-11-11
 ## Active work
 
 1. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
+2. Reconcile the 2018 Hydro circuit tables with current 69 kV classification and post-2018 topology changes, `ISL-001`.
+
+## Island backbone progress
+
+The first structured layer contains all 58 Hydro circuit designations in PUB-NP-084 Attachment A, physical PDF pp. 24 to 26: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. The filed endpoint and voltage records are machine-tested. Current 69 kV circuit assignments remain open because the 2023 asset report gives only the class total, not circuit designations.
 
 ## Remaining Avalon evidence target
 

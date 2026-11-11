@@ -245,12 +245,16 @@
       "title": "Create the structured island AC topology dataset",
       "phase": 2,
       "priority": "P0",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Record documented 230 kV, 138 kV, 69 kV, and 66 kV lines, endpoints, source years, ownership, and page references.",
       "dependencies": ["SRC-001", "SRC-002"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "research/derived/island-ac-topology-2018.json",
+        "research/ISLAND_AC_TOPOLOGY.md",
+        "tests/island-topology.test.js"
+      ],
       "blocker": null,
-      "notes": "The source images are not yet a normalized topology dataset."
+      "notes": "PUB-NP-084 Attachment A now provides a tested 2018 layer with 58 Hydro circuit designations: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. Current 69 kV circuit assignments and post-2018 topology changes remain open."
     },
     {
       "id": "ISL-002",
