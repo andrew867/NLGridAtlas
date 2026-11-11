@@ -9,7 +9,9 @@ Updated: 2026-11-11
 - Default branch: `main`.
 - The local `main` branch tracks `origin/main`.
 - A GitHub Pages workflow builds with Node.js 20, runs the complete test suite, builds the Vite site, and deploys the `dist` artifact.
-- GitHub Pages is enabled at `https://andrew867.github.io/NLGridAtlas/`. The site remains unverified until the deployment workflow succeeds and the live build passes browser checks.
+- GitHub Pages is live at `https://andrew867.github.io/NLGridAtlas/`.
+- GitHub Actions run `43044518353` passed the complete test and build workflow.
+- The published build passed desktop and 390 by 844 px browser checks. Its assets loaded under `/NLGridAtlas/`, the MUN-08 detail interaction worked, and the browser reported no warnings or errors.
 
 ## Verified in the current work session
 
@@ -18,6 +20,7 @@ Updated: 2026-11-11
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
 - Passed 64 automated tests and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
+- Published and verified the atlas on GitHub Pages.
 
 ## Active work
 
@@ -25,7 +28,6 @@ Updated: 2026-11-11
 2. Add dated logical one-lines where the public record supports them, `AVL-006`.
 3. Link documented circuits directly to their other-end records, `NAV-001`.
 4. Complete the 390, 768, 1440, and 1920 px visual matrix, `QA-001`.
-5. Verify the GitHub Pages workflow and deployed build, `REL-003`.
 
 ## Next station target
 
@@ -33,7 +35,6 @@ St. John's Main has direct 2015 evidence for SJM-T1, SJM-T2, SJM-T3, and the his
 
 ## Open release gates
 
-- `REL-003` remains in progress until the Pages workflow succeeds and the deployed URL passes the browser checks.
 - The clean-clone qualification is not complete.
 - The public evidence-package strategy is not complete.
 - The full responsive audit is not complete.

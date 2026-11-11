@@ -449,7 +449,7 @@
         "main at 385ca0f9335204f4e538727fbc28038b22b0fecf"
       ],
       "blocker": null,
-      "notes": "The private GitHub repository is connected as origin and the local main branch tracks origin/main."
+      "notes": "The public GitHub repository is connected as origin and the local main branch tracks origin/main."
     },
     {
       "id": "REL-002",
@@ -468,16 +468,17 @@
       "title": "Publish the static atlas",
       "phase": 5,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Publish the clean production build to GitHub Pages or the approved static host.",
       "dependencies": ["REL-001", "REL-002", "REL-004"],
       "completion_evidence": [
         ".github/workflows/deploy-pages.yml",
         "docs/PROJECT_STATUS.md",
-        "https://andrew867.github.io/NLGridAtlas/"
+        "https://andrew867.github.io/NLGridAtlas/",
+        "https://github.com/andrew867/NLGridAtlas/actions/runs/43044518353"
       ],
       "blocker": null,
-      "notes": "GitHub Pages is enabled for the public repository. The deployment remains in progress until the workflow succeeds and the live URL passes the browser checks."
+      "notes": "GitHub Pages is live. The workflow passed, assets loaded under the repository base path, the MUN-08 interaction worked, the 390 by 844 px layout had no page overflow, and the browser reported no warnings or errors."
     },
     {
       "id": "REL-004",
