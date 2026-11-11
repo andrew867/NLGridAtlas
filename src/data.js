@@ -953,6 +953,18 @@ export const staticClaims = [
     ]
   },
   {
+    id: "glendale-substation-one-line",
+    scope: "Glendale 66 kV circuits, three-transformer bank, distribution bus and nine feeder records",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2006-handbook", pages: "PDF pp. 6 to 7 and 12" },
+      { sourceId: "np-2020-capital-gdl", pages: "physical PDF pp. 447 to 453" },
+      { sourceId: "np-2016-pub-np-064-g", pages: "physical PDF pp. 148 to 152" },
+      { sourceId: "np-2023-ca-np-176", pages: "physical PDF pp. 6 to 7" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 547" }
+    ]
+  },
+  {
     id: "western-avalon-soldiers-pond-design",
     scope: "Preliminary Western Avalon to Soldiers Pond line design and seasonal ratings",
     status: "proposed",
@@ -1799,6 +1811,32 @@ export const components = {
     sources: feeder === "05"
       ? [sourceRef("np-2019-pepperrell", "physical PDF pp. 8, 13 and 33"), sourceRef("np-2019-capex-report", "physical PDF pp. 8 and 24"), sourceRef("np-2025-ca-np-255", "physical PDF p. 4")]
       : [sourceRef("np-2019-pepperrell-modernization", "physical PDF p. 231"), sourceRef("np-2019-pepperrell", "physical PDF p. 37")]
+  }])),
+  "gdl-summary": {
+    diagram: "gdl", status: "verified", code: "GDL / SUBSTATION", title: "Glendale Substation",
+    summary: "Circuits 18L and 73L connect Glendale to Goulds and Hardwoods. Three 25 MVA transformers supply the distribution bus and the GDL-01 through GDL-09 feeder record.",
+    data: [["66 kV circuits", "18L to Goulds; 73L to Hardwoods"], ["Transformers", "GDL-T1, GDL-T2 and GDL-T3; 25 MVA each"], ["2019 station record", "66/12.5 kV transformer bank"], ["Feeders", "GDL-01 through GDL-09"], ["2019 combined peak", "Approximately 55 MVA"], ["Bus ties", "GDL-T1/T2-B and GDL-T2/T3-B"]],
+    sources: [sourceRef("np-2006-handbook", "PDF pp. 6 to 7 and 12"), sourceRef("np-2020-capital-gdl", "physical PDF pp. 452 to 453"), sourceRef("np-2016-pub-np-064-g", "physical PDF pp. 148 to 152")]
+  },
+  ...Object.fromEntries(["1", "2", "3"].map((transformer) => [`gdl-t${transformer}`, {
+    diagram: "gdl", status: "verified", code: `GDL / T${transformer}`, title: `Glendale transformer GDL-T${transformer}`,
+    summary: transformer === "3"
+      ? "GDL-T3 was installed in 2013. The 2019 station record describes the three Glendale units as 25 MVA, 66/12.5 kV transformers."
+      : `The 2019 station record describes GDL-T${transformer} as one of three 25 MVA, 66/12.5 kV transformers at Glendale.`,
+    data: [["2019 station record", "66/12.5 kV, 25 MVA"], ["2027 equipment table", "66/25 kV, 25 MVA"], ["2026 forecast", transformer === "1" ? "17.48 MVA" : transformer === "2" ? "17.78 MVA" : "18.08 MVA"], ...(transformer === "3" ? [["Installed", "2013"]] : [])],
+    sources: [sourceRef("np-2020-capital-gdl", "physical PDF pp. 452 to 453"), sourceRef("np-2027-transformers", "physical PDF p. 547"), ...(transformer === "3" ? [sourceRef("np-2013-q4-report", "physical PDF p. 787; attachment p. 76")] : [])]
+  }])),
+  ...Object.fromEntries(["01", "02", "03", "04", "05", "06", "07", "08", "09"].map((feeder) => [`gdl-${feeder}`, {
+    diagram: "gdl", status: "verified", code: `GDL / GDL-${feeder}`, title: `Glendale feeder GDL-${feeder}`,
+    summary: feeder === "09"
+      ? "GDL-09 was completed in 2021 after being filed as a new 12.5 kV feeder from Glendale."
+      : `GDL-${feeder} is listed in the public Glendale feeder records.`,
+    data: feeder === "09" ? [["Voltage", "12.5 kV"], ["Completed", "2021"]] : [["Station", "Glendale"], ["Feeder", `GDL-${feeder}`]],
+    sources: feeder === "09"
+      ? [sourceRef("np-2020-capital-gdl", "physical PDF pp. 447 to 453"), sourceRef("np-2023-ca-np-176", "physical PDF pp. 6 to 7")]
+      : Number(feeder) <= 6
+        ? [sourceRef("np-2006-handbook", "PDF p. 12")]
+        : [sourceRef("np-2016-pub-np-064-g", "physical PDF pp. 148 to 152")]
   }]))
 };
 

@@ -783,6 +783,24 @@ test("Pepperrell retains the completed two-transformer and five-feeder arrangeme
   assert.match(components["pep-t2"].data.flat().join(" "), /2019 actual expenditure \$1.514 million/);
 });
 
+test("Glendale retains its circuits, three transformers and nine feeder records", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(html, /data-claim-id="glendale-substation-one-line"/);
+  assert.match(html, /18L to Goulds Substation/);
+  assert.match(html, /73L to Hardwoods Substation/);
+  assert.match(main, /GDL: "#substation-gdl"/);
+  for (const transformer of ["1", "2", "3"]) {
+    assert.match(html, new RegExp(`data-component="gdl-t${transformer}"`));
+    assert.match(components[`gdl-t${transformer}`].data.flat().join(" "), /2019 station record 66\/12.5 kV, 25 MVA/);
+  }
+  for (const feeder of ["01", "02", "03", "04", "05", "06", "07", "08", "09"]) {
+    assert.match(html, new RegExp(`data-component="gdl-${feeder}"`));
+  }
+  assert.match(components["gdl-summary"].data.flat().join(" "), /GDL-T1\/T2-B and GDL-T2\/T3-B/);
+  assert.match(components["gdl-09"].data.flat().join(" "), /Completed 2021/);
+});
+
 test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);

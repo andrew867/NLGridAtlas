@@ -543,7 +543,7 @@
                 <a class="circuit-link" href="#station-CHA" aria-label="49L to Chamberlains"><path class="outgoing" d="M350 58V85"/><text x="350" y="14">49L</text><text x="350" y="43">CHA</text></a>
                 <a class="circuit-link" href="#station-KEN" aria-label="54L to Kenmount"><path class="outgoing" d="M620 58V85"/><text x="620" y="14">54L</text><text x="620" y="43">KEN</text></a>
                 <a class="circuit-link" href="#station-GOU" aria-label="72L to Goulds"><path class="outgoing" d="M720 58V85"/><text x="720" y="14">72L</text><text x="720" y="43">GOU</text></a>
-                <a class="circuit-link" href="#station-GDL" aria-label="73L to Glendale"><path class="outgoing" d="M820 58V85"/><text x="820" y="14">73L</text><text x="820" y="43">GDL</text></a>
+                <a class="circuit-link" href="#substation-gdl" aria-label="73L to Glendale"><path class="outgoing" d="M820 58V85"/><text x="820" y="14">73L</text><text x="820" y="43">GDL</text></a>
                 <a class="circuit-link" href="#station-CHA" aria-label="79L to Chamberlains"><path class="outgoing" d="M920 58V85"/><text x="920" y="14">79L</text><text x="920" y="43">CHA</text></a>
                 <g class="register-transformer component" transform="translate(250)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-t1" aria-label="Hardwoods transformer HWD-T1">
                   <path class="tap" d="M0 85 V155 M0 213 V300"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
@@ -795,7 +795,7 @@
                 <a class="diagram-link" href="#station-browser" data-station-record="SJM" aria-label="4L to St. John's Main Substation"><path class="outgoing" d="M110 40V100"/><text class="small-label transformer-rating" x="110" y="5"><tspan x="110">4L</tspan><tspan x="110" dy="18">ST. JOHN'S MAIN</tspan></text></a>
                 <a class="diagram-link" href="#station-browser" data-station-record="SJM" aria-label="25L to St. John's Main Substation"><path class="outgoing" d="M300 40V100"/><text class="small-label transformer-rating" x="300" y="5"><tspan x="300">25L</tspan><tspan x="300" dy="18">ST. JOHN'S MAIN</tspan></text></a>
                 <a class="diagram-link" href="#station-browser" data-station-record="BIG" aria-label="17L to Big Pond"><path class="outgoing" d="M470 40V100"/><text class="small-label transformer-rating" x="470" y="5"><tspan x="470">17L</tspan><tspan x="470" dy="18">BIG POND</tspan></text></a>
-                <a class="diagram-link" href="#station-browser" data-station-record="GDL" aria-label="18L to Glendale Substation"><path class="outgoing" d="M650 40V100"/><text class="small-label transformer-rating" x="650" y="5"><tspan x="650">18L</tspan><tspan x="650" dy="18">GLENDALE</tspan></text></a>
+                <a class="diagram-link" href="#substation-gdl" aria-label="18L to Glendale Substation"><path class="outgoing" d="M650 40V100"/><text class="small-label transformer-rating" x="650" y="5"><tspan x="650">18L</tspan><tspan x="650" dy="18">GLENDALE</tspan></text></a>
                 <a class="diagram-link" href="#substation-hwd" aria-label="72L to Hardwoods Substation"><path class="outgoing" d="M850 40V100"/><text class="small-label transformer-rating" x="850" y="5"><tspan x="850">72L</tspan><tspan x="850" dy="18">HARDWOODS</tspan></text></a>
                 <g class="register-transformer component" transform="translate(220)" tabindex="0" role="button" aria-pressed="false" data-diagram="gou" data-component="gou-t1" aria-label="Goulds transformer T1">
                   <path class="tap" d="M0 100V175 M0 233V320"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/>
@@ -823,6 +823,36 @@
               <p class="component-code" data-field="code"></p><h3 data-field="title"></h3><p data-field="summary"></p>
               <dl class="component-data" data-field="data"></dl><div data-field="sources"></div>
             </aside>
+          </div>
+
+          <div class="station-layout" id="substation-gdl" data-claim-id="glendale-substation-one-line">
+            <article class="phase-frame station-sheet compact-sheet">
+              <div class="panel-toolbar station-toolbar" aria-label="Glendale voltage levels">
+                <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">9 feeders</span>
+              </div>
+              <svg class="station-line glendale-line" viewBox="0 -24 1000 590" role="img" aria-labelledby="gdl-title gdl-desc">
+                <title id="gdl-title">Glendale Substation simplified one-line</title>
+                <desc id="gdl-desc">Circuits 18L and 73L connect Glendale to Goulds and Hardwoods. Three 25 MVA transformers supply the distribution bus and feeders GDL-01 through GDL-09.</desc>
+                <path class="line v66-line" d="M120 100H880"/><text class="bus-label center-label" x="500" y="128">66 kV BUS</text>
+                <a class="diagram-link" href="#substation-gou" aria-label="18L to Goulds Substation"><path class="outgoing" d="M300 35V100"/><text class="small-label transformer-rating" x="300" y="2"><tspan x="300">18L</tspan><tspan x="300" dy="18">GOULDS</tspan></text></a>
+                <a class="diagram-link" href="#substation-hwd" aria-label="73L to Hardwoods Substation"><path class="outgoing" d="M700 35V100"/><text class="small-label transformer-rating" x="700" y="2"><tspan x="700">73L</tspan><tspan x="700" dy="18">HARDWOODS</tspan></text></a>
+                <g class="register-transformer component" transform="translate(280)" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-t1" aria-label="Glendale transformer GDL-T1"><path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/><text class="center-label" x="0" y="267">GDL-T1</text><text class="small-label transformer-rating" x="0" y="291">25 MVA</text></g>
+                <g class="register-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-t2" aria-label="Glendale transformer GDL-T2"><path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/><text class="center-label" x="0" y="267">GDL-T2</text><text class="small-label transformer-rating" x="0" y="291">25 MVA</text></g>
+                <g class="register-transformer component" transform="translate(720)" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-t3" aria-label="Glendale transformer GDL-T3"><path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/><text class="center-label" x="0" y="267">GDL-T3</text><text class="small-label transformer-rating" x="0" y="291">25 MVA</text></g>
+                <path class="station-bus" d="M70 330H930"/><text class="bus-label center-label" x="500" y="316">12.5 kV DISTRIBUTION BUS</text>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-01" aria-label="Glendale feeder GDL-01"><path class="outgoing" d="M100 330V475"/><text class="small-label vertical-label" x="100" y="507">GDL-01</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-02" aria-label="Glendale feeder GDL-02"><path class="outgoing" d="M200 330V475"/><text class="small-label vertical-label" x="200" y="507">GDL-02</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-03" aria-label="Glendale feeder GDL-03"><path class="outgoing" d="M300 330V475"/><text class="small-label vertical-label" x="300" y="507">GDL-03</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-04" aria-label="Glendale feeder GDL-04"><path class="outgoing" d="M400 330V475"/><text class="small-label vertical-label" x="400" y="507">GDL-04</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-05" aria-label="Glendale feeder GDL-05"><path class="outgoing" d="M500 330V475"/><text class="small-label vertical-label" x="500" y="507">GDL-05</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-06" aria-label="Glendale feeder GDL-06"><path class="outgoing" d="M600 330V475"/><text class="small-label vertical-label" x="600" y="507">GDL-06</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-07" aria-label="Glendale feeder GDL-07"><path class="outgoing" d="M700 330V475"/><text class="small-label vertical-label" x="700" y="507">GDL-07</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-08" aria-label="Glendale feeder GDL-08"><path class="outgoing" d="M800 330V475"/><text class="small-label vertical-label" x="800" y="507">GDL-08</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="gdl" data-component="gdl-09" aria-label="Glendale feeder GDL-09"><path class="outgoing" d="M900 330V475"/><text class="small-label vertical-label" x="900" y="507">GDL-09</text></g>
+              </svg>
+              <p class="diagram-note">SIMPLIFIED LOGICAL ARRANGEMENT / 2019 STATION RECORD / 2021 GDL-09 COMPLETION</p>
+            </article>
+            <aside class="component-evidence station-evidence" data-diagram-panel="gdl" data-default-component="gdl-summary" aria-live="polite"><span class="evidence-state verified" data-field="state">VERIFIED</span><p class="component-code" data-field="code"></p><h3 data-field="title"></h3><p data-field="summary"></p><dl class="component-data" data-field="data"></dl><div data-field="sources"></div></aside>
           </div>
 
           <div class="station-layout" id="substation-vir" data-claim-id="virginia-waters-substation-one-line">

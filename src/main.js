@@ -49,6 +49,7 @@ let activeStationProfile = "HWD";
 let activeHydroTerminal = "SUN";
 let stationTabQuery = "";
 const stationSectionAnchors = {
+  GDL: "#substation-gdl",
   GOU: "#substation-gou",
   HWD: "#terminal-hwd",
   KBR: "#substation-kbr",
@@ -62,6 +63,7 @@ const stationSectionAnchors = {
   WAV: "#terminal-wav"
 };
 const stationDetailAnchors = {
+  GDL: "#substation-gdl",
   GOU: "#substation-gou",
   HWD: "#substation-hwd",
   KBR: "#substation-kbr",
