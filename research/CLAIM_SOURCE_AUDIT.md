@@ -8,7 +8,7 @@ Work item: `SRC-001`
 | Record class | Count | Source control |
 | --- | ---: | --- |
 | Static technical regions | 23 | `staticClaims` in `src/data.js`; attached to the rendered region by `data-claim-id` |
-| Selectable diagram components | 50 | `components` in `src/data.js` |
+| Selectable diagram components | 51 | `components` in `src/data.js` |
 | Timeline events | 25 | `timeline` in `src/data.js` |
 | Island terminal records | 10 | `islandTerminalRecords` in `src/data.js` |
 | Detailed Newfoundland Power profiles | 9 | `stationProfiles` in `src/data.js` |
@@ -40,6 +40,7 @@ Existing data tests perform the same source-resolution checks for timeline event
 | `hardwoods-terminal-one-line` | Oxen Pond application, physical PDF p. 61; 2026 loop study, PDF p. 188 | The 2013 drawing supports the bus arrangement, capacitor banks, G1 and T5. The 2026 study supports the displayed T1 through T4 model ratings and the 25 MW HWD-G1 model. G1 and T5 were added to the site because the registered claim previously included a generator that the drawing omitted. |
 | `western-avalon-terminal-one-line` | Exhibit 114, PDF p. 7; 2014 T5 application, PDF pp. 12, 17 and 19 to 20; 2026 loop study, PDF pp. 194 to 195 | T1 through T5 voltages and staged ratings match. The T5 failure and Type H to Type VV tap-changer replacement match the 2014 application. The claim scope was corrected because the station drawing does not show a generator. |
 | `holyrood-historical-one-line` | 2013 GRA Volume II, physical PDF p. 663; 2022 T2 final report, PDF pp. 5 to 13; 2024 reliability study, physical PDF pp. 100 and 182 | The historical bus and transformer arrangement matches the December 2012 demolition drawing. The T2 failure, replacement-transformer nameplate, reduced cooling capability, and January 13, 2022 return to service match the final report. The Unit 3 2030 synchronous-condensing entry remains identified as a planning case. |
+| `hardwoods-substation-one-line` | 2027 power-transformer listing, physical PDF p. 548; 2011 Capital Budget Application, physical PDF pp. 310 and 334; 2016 HWD-07 reliability filing, physical PDF pp. 380 to 382; 2014 Capital Budget Application, physical PDF pp. 37, 42, 256 to 257, 348 and 351; 2006 handbook, PDF p. 14 | The prior drawing incorrectly placed every registered feeder on the 25 kV bus. The 2011 filing assigns five feeders to HWD-T1 and HWD-T2 at 12.5 kV and assigns HWD-07 and HWD-08 to HWD-T3 at 25 kV. The 2014 filing adds HWD-09 at 25 kV. The one-line now shows HWD-01, HWD-02, HWD-03, HWD-04, and HWD-06 on the 12.5 kV bus, with HWD-07, HWD-08, and HWD-09 on the 25 kV bus. |
 
 The May 18, 2010 construction register pages and the 2013 loading tables were also inspected during `SRC-002`. Their extracted data is controlled separately in `research/derived/np-register-layers-2008-2013.json`.
 

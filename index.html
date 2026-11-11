@@ -522,7 +522,7 @@
               </div>
               <svg class="station-line hwd-np-line" viewBox="0 0 1000 590" role="img" aria-labelledby="hwd-np-title hwd-np-desc">
                 <title id="hwd-np-title">Newfoundland Power Hardwoods Substation simplified one-line</title>
-                <desc id="hwd-np-desc">The 66 kilovolt bus supplies two 66 over 12.5 kilovolt transformers and one 66 over 25 kilovolt transformer. Hardwoods distribution feeders are shown on the 25 kilovolt bus.</desc>
+                <desc id="hwd-np-desc">The 66 kilovolt bus supplies two 66 over 12.5 kilovolt transformers and one 66 over 25 kilovolt transformer. HWD-01, HWD-02, HWD-03, HWD-04, and HWD-06 are on the 12.5 kilovolt bus. HWD-07, HWD-08, and HWD-09 are on the 25 kilovolt bus.</desc>
                 <a class="diagram-link" href="#terminal-hwd" aria-label="Open Hardwoods Terminal Station">
                   <path class="line v66-line" d="M70 85 H930"/><text class="bus-label" x="75" y="118">66 kV BUS</text>
                 </a>
@@ -542,20 +542,23 @@
                   <text class="center-label" x="0" y="246">HWD-T2</text><text class="small-label transformer-rating" x="0" y="268">66/12.5 kV / 20 MVA</text>
                 </g>
                 <g class="register-transformer component" transform="translate(760)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-t3" aria-label="Hardwoods transformer HWD-T3">
-                  <path class="tap" d="M0 85 V155 M0 213 V390"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
+                  <path class="tap" d="M0 85 V155 M0 213 V430"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
                   <text class="center-label" x="0" y="246">HWD-T3</text><text class="small-label transformer-rating" x="0" y="268">66/25 kV / 50 MVA</text>
                 </g>
                 <path class="station-bus" d="M120 300 H600"/><text class="bus-label" x="320" y="335">12.5 kV BUS</text>
-                <path class="station-bus" d="M80 390 H920"/><text class="bus-label" x="450" y="425">25 kV BUS</text>
-                <g class="distribution-feeders">
-                  <path class="outgoing" d="M120 390V510 M215 390V510 M310 390V510 M405 390V510 M500 390V510 M595 390V510"/>
-                  <text class="small-label vertical-label" x="120" y="538">HWD-01</text><text class="small-label vertical-label" x="215" y="538">HWD-02</text><text class="small-label vertical-label" x="310" y="538">HWD-03</text><text class="small-label vertical-label" x="405" y="538">HWD-04</text><text class="small-label vertical-label" x="500" y="538">HWD-06</text><text class="small-label vertical-label" x="595" y="538">HWD-07</text>
+                <g class="distribution-feeders" aria-label="12.5 kilovolt Hardwoods feeders">
+                  <path class="outgoing" d="M150 300V365 M240 300V365 M330 300V365 M420 300V365 M510 300V365"/>
+                  <text class="small-label vertical-label" x="150" y="395">HWD-01</text><text class="small-label vertical-label" x="240" y="395">HWD-02</text><text class="small-label vertical-label" x="330" y="395">HWD-03</text><text class="small-label vertical-label" x="420" y="395">HWD-04</text><text class="small-label vertical-label" x="510" y="395">HWD-06</text>
+                </g>
+                <path class="station-bus" d="M620 430 H920"/><text class="bus-label" x="725" y="465">25 kV BUS</text>
+                <g class="component feeder-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-hwd07" aria-label="Hardwoods feeder HWD-07">
+                  <path class="outgoing" d="M680 430V510"/><text class="small-label vertical-label" x="680" y="538">HWD-07</text>
                 </g>
                 <g class="component feeder-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-hwd08" aria-label="Hardwoods feeder HWD-08">
-                  <path class="outgoing" d="M690 390V510"/><text class="small-label vertical-label" x="690" y="538">HWD-08</text>
+                  <path class="outgoing" d="M770 430V510"/><text class="small-label vertical-label" x="770" y="538">HWD-08</text>
                 </g>
                 <g class="component feeder-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-hwd09" aria-label="Hardwoods feeder HWD-09">
-                  <path class="outgoing project-line" d="M820 390V510"/><text class="small-label vertical-label" x="820" y="538">HWD-09</text><text class="small-label vertical-label" x="820" y="558">2014 ADDITION</text>
+                  <path class="outgoing project-line" d="M860 430V510"/><text class="small-label vertical-label" x="860" y="538">HWD-09</text><text class="small-label vertical-label" x="860" y="558">2014 ADDITION</text>
                 </g>
               </svg>
               <p class="diagram-note">SCHEMATIC / 2005 FEEDER REGISTER / 2014 CAPACITY WORK</p>

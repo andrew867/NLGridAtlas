@@ -440,6 +440,15 @@ test("Oxen Pond and Hardwoods capacitor banks are clickable and sourced", async 
   }
 });
 
+test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);
+  assert.match(components["hwd-np-summary"].data.flat().join(" "), /25 kV feeders HWD-07, 08, 09/);
+  assert.match(components["hwd-np-hwd07"].data.flat().join(" "), /Voltage 25 kV/);
+  assert.match(html, /aria-label="12.5 kilovolt Hardwoods feeders"/);
+  assert.match(html, /data-component="hwd-np-hwd07"/);
+});
+
 test("Greenhill code conflict is contextual and the latest code is preferred", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");

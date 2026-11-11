@@ -30,6 +30,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-2011-hardwoods",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Hardwoods distribution-bank records",
+    topics: ["Hardwoods", "HWD-T1", "HWD-T2", "HWD-T3", "distribution feeders", "operating voltage"],
+    pages: "physical PDF pp. 310 and 334",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2016-hwd07",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, HWD-07 Distribution Reliability Initiative",
+    topics: ["Hardwoods", "HWD-07", "25 kV", "conductor", "feeder ties", "reliability"],
+    pages: "physical PDF pp. 380 to 382",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
     id: "np-2013-line-loading",
     year: 2013,
     organization: "Newfoundland Power",
@@ -487,10 +507,12 @@ export const staticClaims = [
   },
   {
     id: "hardwoods-substation-one-line",
-    scope: "Hardwoods Newfoundland Power transformers, buses, circuits and feeders",
+    scope: "Hardwoods Newfoundland Power transformers, 12.5 kV and 25 kV buses, circuits and feeders",
     status: "verified",
     sources: [
       { sourceId: "np-2027-transformers", pages: "physical PDF p. 548" },
+      { sourceId: "np-2011-hardwoods", pages: "physical PDF pp. 310 and 334" },
+      { sourceId: "np-2016-hwd07", pages: "physical PDF pp. 380 to 382" },
       { sourceId: "np-2014-capital", pages: "physical PDF pp. 37, 42, 256 to 257, 348 and 351" },
       { sourceId: "np-2006-handbook", pages: "PDF p. 14" }
     ]
@@ -1031,9 +1053,9 @@ export const components = {
   },
   "hwd-np-summary": {
     diagram: "hwd-np", status: "verified", code: "HWD / NEWFOUNDLAND POWER", title: "Hardwoods Substation",
-    summary: "The 2027 register lists two 66/12.5 kV transformers and one 66/25 kV transformer. HWD-T3 is the 50 MVA unit installed through the 2014 load-growth project.",
-    data: [["HWD-T1", "66/12.5 kV, 20 MVA"], ["HWD-T2", "66/12.5 kV, 20 MVA"], ["HWD-T3", "66/25 kV, 50 MVA"], ["Registered feeders", "HWD-01, 02, 03, 04, 06, 07, 08"], ["2014 addition", "HWD-09"]],
-    sources: [sourceRef("np-2027-transformers", "physical PDF p. 548"), sourceRef("np-2014-capital", "physical PDF pp. 37, 42, 256 to 257, 348 and 351"), sourceRef("np-2006-handbook", "PDF p. 14")]
+    summary: "HWD-T1 and HWD-T2 supply five 12.5 kV feeders. HWD-T3 supplies the 25 kV bank, including HWD-07, HWD-08, and the HWD-09 addition.",
+    data: [["HWD-T1", "66/12.5 kV, 20 MVA"], ["HWD-T2", "66/12.5 kV, 20 MVA"], ["HWD-T3", "66/25 kV, 50 MVA"], ["12.5 kV feeders", "HWD-01, 02, 03, 04, 06"], ["25 kV feeders", "HWD-07, 08, 09"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 548"), sourceRef("np-2011-hardwoods", "physical PDF pp. 310 and 334"), sourceRef("np-2014-capital", "physical PDF pp. 37, 42, 256 to 257, 348 and 351")]
   },
   "hwd-np-t1": {
     diagram: "hwd-np", status: "verified", code: "HWD / T1", title: "Hardwoods transformer HWD-T1",
@@ -1058,6 +1080,12 @@ export const components = {
     summary: "The 2014 project transferred approximately 9 MVA onto HWD-08.",
     data: [["Conductor", "477 ASC"], ["Planning rating", "590 A"], ["Forecast", "595 A per phase"], ["Load transfer", "Approximately 9 MVA"]],
     sources: [sourceRef("np-2014-capital", "physical PDF pp. 348 and 351")]
+  },
+  "hwd-np-hwd07": {
+    diagram: "hwd-np", status: "verified", code: "HWD / HWD-07", title: "Hardwoods feeder HWD-07",
+    summary: "The 2016 reliability filing identifies HWD-07 as a 25 kV feeder tied to HWD-09 and CHA-02.",
+    data: [["Voltage", "25 kV"], ["Built", "Early 1990s"], ["2015 customer count", "Approximately 2,580"], ["Feeder ties", "HWD-09 and CHA-02"], ["2016 work", "Rebuild 82 spans with 477 ASC"]],
+    sources: [sourceRef("np-2016-hwd07", "physical PDF pp. 380 to 382")]
   },
   "hwd-np-hwd09": {
     diagram: "hwd-np", status: "verified", code: "HWD / HWD-09", title: "Hardwoods feeder HWD-09",
