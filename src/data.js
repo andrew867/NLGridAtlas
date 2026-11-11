@@ -580,6 +580,36 @@ export const sources = [
     url: "https://www.gov.nl.ca/ppa/files/tenders-awarded-2018-april-2018.pdf"
   },
   {
+    id: "mun-hsc-1975-substation-3",
+    year: 1975,
+    organization: "Memorial University of Newfoundland, Faculty of Medicine Founders' Archive",
+    title: "HSC substation no. 3 transformer photograph",
+    topics: ["Health Sciences Centre", "substation no. 3", "1500 kVA", "12.8 kV", "347/600 V"],
+    pages: "archival record 13.01.208, dated 1975-01",
+    status: "verified",
+    url: "https://collections.mun.ca/digital/collection/ed_photos8/id/118/rec/205"
+  },
+  {
+    id: "mun-hsc-1975-deutz-diesels",
+    year: 1975,
+    organization: "Memorial University of Newfoundland, Faculty of Medicine Founders' Archive",
+    title: "Three Deutz emergency diesels in the Utilities Annex",
+    topics: ["Health Sciences Centre", "Utilities Annex", "Deutz", "emergency generation"],
+    pages: "archival record 13.01.215, dated 1975-02-28",
+    status: "verified",
+    url: "https://collections.mun.ca/digital/collection/ed_photos8/id/126/rec/212"
+  },
+  {
+    id: "mun-hsc-1975-auxiliary-diesel",
+    year: 1975,
+    organization: "Memorial University of Newfoundland, Faculty of Medicine Founders' Archive",
+    title: "Utilities Annex auxiliary emergency diesel",
+    topics: ["Health Sciences Centre", "Utilities Annex", "auxiliary diesel", "emergency generation"],
+    pages: "archival record 13.01.216, dated 1975-02-28",
+    status: "verified",
+    url: "https://collections.mun.ca/digital/collection/ed_photos8/id/127/rec/213"
+  },
+  {
     id: "pu-5-2019-long-pond",
     year: 2019,
     organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
@@ -1583,6 +1613,12 @@ export const components = {
     summary: "The 2024 capital scope includes a split 66 kV bus, tie switch, SF6 breakers, digital protection, a control building, and ground-grid work.",
     data: [["Bus", "Split 66 kV bus with tie switch"], ["Breakers", "SF6"], ["Protection", "Digital"], ["Civil", "Control building and ground-grid work"]],
     sources: [sourceRef("np-2024-capital", "PDF pp. 378 to 389")]
+  },
+  "mun-hsc-history": {
+    diagram: "mun", status: "verified", code: "MUN / HSC", title: "Health Sciences electrical plant",
+    summary: "The 2024 single-line identifies MUN-01 and MUN-08 as Health Sciences Complex feeders. MUN's archive records internal HSC transformation and emergency generation during construction in 1975.",
+    data: [["Utility feeders", "MUN-01 and MUN-08"], ["Substation no. 3", "1,500 kVA, 12.8 kV to 347/600 V"], ["Emergency plant", "Three Deutz diesels for critical complex equipment"], ["Utilities Annex", "Separate auxiliary emergency diesel"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF p. 3"), sourceRef("mun-hsc-1975-substation-3", "archival record 13.01.208"), sourceRef("mun-hsc-1975-deutz-diesels", "archival record 13.01.215"), sourceRef("mun-hsc-1975-auxiliary-diesel", "archival record 13.01.216")]
   },
   "lpd-summary": {
     diagram: "lpd", status: "verified", code: "LPD / SUBSTATION", title: "Long Pond Substation",

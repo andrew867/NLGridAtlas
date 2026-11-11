@@ -9,6 +9,7 @@ const transformerRegister = JSON.parse(await readFile(new URL("../research/deriv
 const todStudy = JSON.parse(await readFile(new URL("../research/derived/np-2018-tod-study.json", import.meta.url), "utf8"));
 
 const allowedStates = new Set(["verified", "reported", "proposed", "inferred", "unresolved"]);
+const primaryLocator = /(?:PDF p|archival record)/;
 
 test("source records have stable identifiers and primary locators", () => {
   const ids = new Set();
@@ -17,7 +18,7 @@ test("source records have stable identifiers and primary locators", () => {
     assert.ok(!ids.has(source.id), `duplicate source id: ${source.id}`);
     ids.add(source.id);
     assert.match(source.url, /^https?:\/\//);
-    assert.match(source.pages, /PDF p/);
+    assert.match(source.pages, primaryLocator);
     assert.ok(Number.isInteger(source.year));
     assert.ok(allowedStates.has(source.status));
     assert.ok(source.topics.length > 0);
@@ -47,7 +48,7 @@ test("diagram components resolve to a diagram and primary sources", () => {
     assert.ok(component.sources.length > 0);
     for (const reference of component.sources) {
       assert.ok(sourceIds.has(reference.sourceId), `unknown component source: ${reference.sourceId}`);
-      assert.match(reference.pages, /PDF p/);
+      assert.match(reference.pages, primaryLocator);
     }
   }
 });
@@ -383,6 +384,21 @@ test("Memorial and Long Pond records preserve the filed Health Sciences supply p
   assert.match(html, /aria-label="36L to Oxen Pond Terminal Station"/);
   assert.match(html, /LPD-B1\/B2-B/);
   assert.match(html, /MUN-29[\s\S]*MUN-20/);
+});
+
+test("MUN archive records retain the 1975 HSC equipment captions", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const note = await readFile(new URL("../research/MUN_HSC_ARCHIVAL_PHOTOGRAPHS.md", import.meta.url), "utf8");
+  const archiveIds = ["mun-hsc-1975-substation-3", "mun-hsc-1975-deutz-diesels", "mun-hsc-1975-auxiliary-diesel"];
+  for (const id of archiveIds) {
+    const source = sources.find((item) => item.id === id);
+    assert.ok(source);
+    assert.match(source.url, /^https:\/\/collections\.mun\.ca\/digital\/collection\/ed_photos8\/id\//);
+  }
+  assert.equal((html.match(/data-component="mun-hsc-history"/g) || []).length, 2);
+  assert.match(components["mun-hsc-history"].data.flat().join(" "), /1,500 kVA, 12.8 kV to 347\/600 V/);
+  assert.match(components["mun-hsc-history"].data.flat().join(" "), /Three Deutz diesels/);
+  assert.match(note, /reproduction requires written permission/);
 });
 
 test("King's Bridge and Ridge Road records preserve current and historical feeder counts", () => {
