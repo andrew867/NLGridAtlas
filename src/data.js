@@ -234,8 +234,8 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "Electrical System Improvements",
-    topics: ["Broad Cove", "cold load pickup", "conductor", "39L"],
-    pages: "PDF pp. 14 to 21, 46 to 50",
+    topics: ["Broad Cove", "cold load pickup", "conductor", "39L", "HWD-08", "KEN", "VIR-06", "PUL-04", "GOU-01", "reclosers", "feeder routes"],
+    pages: "physical PDF pp. 14 to 22 and 44, 46 to 50",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf"
   },
@@ -1237,9 +1237,9 @@ export const components = {
   },
   "hwd-np-hwd08": {
     diagram: "hwd-np", status: "verified", code: "HWD / HWD-08", title: "Hardwoods feeder HWD-08",
-    summary: "The 2014 project transferred approximately 9 MVA onto HWD-08.",
-    data: [["Conductor", "477 ASC"], ["Planning rating", "590 A"], ["Forecast", "595 A per phase"], ["Load transfer", "Approximately 9 MVA"]],
-    sources: [sourceRef("np-2014-capital", "physical PDF pp. 348 and 351")]
+    summary: "HWD-08 runs from Hardwoods along Karwood Drive and Topsail Road. The 2014 filing records approximately 2,550 primarily residential customers and two single-phase taps with approximately 200 customers on each tap.",
+    data: [["Route", "Karwood Drive to Topsail Road"], ["2014 customers", "Approximately 2,550, primarily residential"], ["Single-phase taps", "Two, approximately 200 customers each"], ["Conductor", "477 ASC"], ["Planning rating", "590 A"], ["Forecast", "595 A per phase"], ["Load transfer", "Approximately 9 MVA"]],
+    sources: [sourceRef("np-2014-improvements", "physical PDF pp. 18, 21 and 44"), sourceRef("np-2014-capital", "physical PDF pp. 348 and 351")]
   },
   "hwd-np-hwd07": {
     diagram: "hwd-np", status: "verified", code: "HWD / HWD-07", title: "Hardwoods feeder HWD-07",
@@ -1413,7 +1413,7 @@ export const stationProfiles = [
     voltage: "66 kV",
     feederRegister: ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07", "HWD-08"],
     mapPages: [["HWD-01", 80], ["HWD-02", 81], ["HWD-03", 82], ["HWD-04", 83], ["HWD-06", 84], ["HWD-07", 85]],
-    mapNote: "HWD-08 is in the 2005 register. A matching sheet was not located in the 2014 map attachment.",
+    mapNote: "The CA-NP-020 attachment has no HWD-08 feeder sheet. The 2014 Electrical System Improvements filing has an HWD-08 route and recloser drawing.",
     eventLoads: [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]],
     engineeringRecord: {
       date: "2027 TRANSFORMER REGISTER",
@@ -1437,6 +1437,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2014 HWD-08 RECLOSER PROJECT",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF pp. 18, 21 and 44",
+        facts: [
+          ["Route", "Karwood Drive to Topsail Road"],
+          ["Customers", "approximately 2,550, primarily residential"],
+          ["Single-phase taps", "Octagon Heights and Glenderek Drive; approximately 200 customers on each tap"],
+          ["Project", "install two single-phase reclosers"]
+        ]
+      },
+      {
         label: "2004 GDL-01 / HWD-04 TIE PROJECT",
         sourceId: "np-2004-gdl01",
         pages: "physical PDF pp. 658 to 659",
@@ -1445,6 +1456,16 @@ export const stationProfiles = [
           ["Proposed work", "replace 1/0 AASC with 477 ASC on GDL-01 from Ruth Avenue to Royal Garage"],
           ["Operating purpose", "permit either feeder to carry part of the other feeder's load"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FEEDER ROUTE AND RECLOSER MAP",
+    referenceSheets: [
+      {
+        title: "HWD-08 route and single-phase reclosers",
+        image: "./reference-maps/hwd-08-2014-reclosers.png",
+        alt: "Hardwoods HWD-08 route drawing showing the feeder from Hardwoods along Karwood Drive and Topsail Road and two single-phase recloser locations",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 44"
       }
     ]
   },

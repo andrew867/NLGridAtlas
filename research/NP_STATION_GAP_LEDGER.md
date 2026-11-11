@@ -22,7 +22,7 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 
 | State | Station or system | Data now in the atlas | Missing evidence | Next archive target |
 | --- | --- | --- | --- | --- |
-| [x] | Hardwoods, HWD | 2005 circuits and feeders; 2014 feeder maps and load event; 2027 HWD-T1, T2, and T3 ratings; 2014 HWD-08 and HWD-09 work; HWD-02 assigned to HWD-T1/T2; normally open HWD-04 to GDL-01 tie recorded in the 2004 filing | Remaining feeder-to-transformer and bus-section assignments | Current station one-line or protection drawing |
+| [x] | Hardwoods, HWD | 2005 circuits and feeders; 2014 feeder maps and load event; 2027 HWD-T1, T2, and T3 ratings; HWD-08 route, customer count, single-phase taps, and recloser drawing; 2014 HWD-09 work; HWD-02 assigned to HWD-T1/T2; normally open HWD-04 to GDL-01 tie recorded in the 2004 filing | Remaining feeder-to-transformer and bus-section assignments; CA-NP-020 has no HWD-08 feeder sheet | Current station one-line or protection drawing |
 | [x] | Oxen Pond, OXP | 2005 circuit and OXP-01 register; 2014 feeder map and load event; 2027 OXP-T1 rating; OXP-01 assigned to OXP-T1 | OXP-01 breaker and bus arrangement | Current Newfoundland Power station one-line |
 | [x] | Kenmount, KEN | 2005 feeder register; 2014 feeder maps and event loads; 2027 KEN-T1 and KEN-T2 ratings; KEN-05 assigned to KEN-T1/T2 | Remaining feeder-to-transformer and bus-section assignments | Current station one-line |
 | [x] | Pulpit Rock, PUL | 59L supply; two 25 MVA transformers; five 12.5 kV feeders; dual 66/12.5/25 kV PUL-T2 asset and replacement specification | Replacement commissioning and post-work one-line | 2027 or later expenditure report and asset history |
@@ -65,7 +65,7 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.
 - [ ] Current feeder register. Later capital filings prove additions such as PUL-04, PUL-05, KEN-01, and HWD-09 that are absent from the 2005 list.
-- [ ] Feeder map sheets beyond the 34 extracted Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, and Stamp's Lane sheets. HWD-08 is listed in the feeder register, but no corresponding extracted sheet is present.
+- [ ] Feeder map sheets beyond the 34 extracted Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, and Stamp's Lane sheets. The HWD-08 route and recloser drawing is preserved from the 2014 Electrical System Improvements filing, but CA-NP-020 has no HWD-08 feeder sheet.
 - [ ] Station one-lines that assign feeders to transformer banks and bus sections.
 - [ ] Commissioning and as-built records for replacement transformers.
 - [ ] Protection drawings that identify normally open bus ties and alternate supply paths.

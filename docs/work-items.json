@@ -132,12 +132,16 @@
       "title": "Locate missing feeder-map sheets",
       "phase": 1,
       "priority": "P1",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Locate HWD-08 and feeder maps beyond the current 15 Hardwoods, Kenmount, Oxen Pond, and Goulds sheets.",
       "dependencies": ["ARC-001", "ARC-003"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "public/reference-maps/hwd-08-2014-reclosers.png",
+        "src/data.js",
+        "research/NP_STATION_GAP_LEDGER.md"
+      ],
       "blocker": null,
-      "notes": "HWD-08 is in the register but has no extracted sheet."
+      "notes": "The 2014 Electrical System Improvements filing, physical PDF p. 44, provides an HWD-08 route and recloser drawing. It is preserved in the atlas. CA-NP-020 still has no HWD-08 feeder sheet. Service-area maps for King's Bridge, Pepperell, and Virginia Waters are also preserved. Broader feeder-sheet coverage remains open."
     },
     {
       "id": "AVL-004",

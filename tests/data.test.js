@@ -241,6 +241,8 @@ test("station profiles separate registers, maps, and recorded event loads", () =
   assert.deepEqual(hardwoods.feederRegister, ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07", "HWD-08"]);
   assert.deepEqual(hardwoods.mapPages.map(([feeder]) => feeder), ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07"]);
   assert.deepEqual(hardwoods.eventLoads, [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]]);
+  assert.match(hardwoods.mapNote, /HWD-08 route and recloser drawing/);
+  assert.equal(hardwoods.referenceSheets[0].pages, "physical PDF p. 44");
   assert.deepEqual(hardwoods.engineeringRecord.facts, [
     ["HWD-T1", "66/12.5 kV, 20 MVA, 16.62 MVA 2026 forecast"],
     ["HWD-T2", "66/12.5 kV, 20 MVA, 16.52 MVA 2026 forecast"],
@@ -414,7 +416,8 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.deepEqual(glendale.mapPages, [["GDL-01", 58], ["GDL-02", 59], ["GDL-03", 60], ["GDL-04", 61], ["GDL-05", 62], ["GDL-06", 63]]);
   assert.match(glendale.historyRecords[0].facts.flat().join(" "), /normally open switch between GDL-01 and HWD-04/);
   assert.match(glendale.historyRecords[1].facts.flat().join(" "), /new 25 MVA power transformer/);
-  assert.match(hardwoods.historyRecords[0].facts.flat().join(" "), /1\/0 AASC with 477 ASC/);
+  const hardwoodsGlendaleTie = hardwoods.historyRecords.find((record) => record.sourceId === "np-2004-gdl01");
+  assert.match(hardwoodsGlendaleTie.facts.flat().join(" "), /1\/0 AASC with 477 ASC/);
   assert.match(glendaleFacts, /GDL-T3; 25 MVA each; described as 66\/12\.5 kV/);
   assert.match(glendaleFacts, /installed in 2013/);
   assert.match(glendale.planningRecord.facts.flat().join(" "), /construction completed in 2021/);
@@ -464,6 +467,7 @@ test("every station record resolves to a source", () => {
 });
 
 test("station reference schematics remain expandable and locally preserved", async () => {
+  const hardwoods = stationProfiles.find((station) => station.code === "HWD");
   const stJohnsMain = stationProfiles.find((station) => station.code === "SJM");
   const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
@@ -474,10 +478,13 @@ test("station reference schematics remain expandable and locally preserved", asy
   assert.equal(kingsBridge.referenceSheets[0].image, "./reference-maps/kbr-2019-service-area.png");
   assert.equal(pepperell.referenceSheets[0].pages, "physical PDF p. 37");
   assert.equal(virginiaWaters.referenceSheets[0].pages, "physical PDF p. 39");
+  assert.equal(hardwoods.referenceSheets[0].image, "./reference-maps/hwd-08-2014-reclosers.png");
   const schematic = await readFile(new URL("../public/reference-maps/sjm-2011-water-street-existing.png", import.meta.url));
   const serviceArea = await readFile(new URL("../public/reference-maps/kbr-2019-service-area.png", import.meta.url));
+  const hwd08Route = await readFile(new URL("../public/reference-maps/hwd-08-2014-reclosers.png", import.meta.url));
   assert.ok(schematic.length > 300_000);
   assert.ok(serviceArea.length > 1_000_000);
+  assert.ok(hwd08Route.length > 700_000);
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(main, /referenceSheets/);
   assert.match(main, /SYSTEM SCHEMATICS/);

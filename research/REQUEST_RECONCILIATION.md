@@ -30,7 +30,7 @@ Updated: 2026-11-10
 - [ ] Current one-lines for Glendale, Virginia Waters, Stamp's Lane, St. John's Main, and Pepperell.
 - [ ] Current feeder-to-transformer and bus-section assignments for stations that have only register data.
 - [ ] Current circuit and feeder registers. The complete available register is dated June 2005.
-- [ ] Feeder map sheets beyond the 15 extracted Hardwoods, Kenmount, Oxen Pond, and Goulds sheets, including HWD-08, which is listed in the register but has no extracted map sheet.
+- [ ] Feeder map sheets beyond those preserved for Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, Stamp's Lane, King's Bridge, Pepperell, and Virginia Waters. The HWD-08 route and recloser drawing is preserved; the CA-NP-020 attachment has no HWD-08 feeder sheet.
 - [ ] Geographic coordinates or route data suitable for a measured line map. The available utility maps are semi-geographic.
 - [ ] Holyrood Unit 3 post-conversion as-built drawing. The 2024 reliability study places permanent conversion in spring 2030.
 - [ ] Pulpit Rock replacement-transformer commissioning record or post-work one-line. The 12.5 kV feeder-bus record is established; the replacement installation status remains open.
