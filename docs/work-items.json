@@ -82,10 +82,12 @@
       "title": "Search the direct and mirrored archives for current circuit and feeder registers",
       "phase": 0,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Find a current replacement for the June 2005 circuit and feeder registers, or document that no public replacement was located.",
       "dependencies": ["ARC-001", "ARC-003"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "research/NP_REGISTER_SUCCESSORS.md"
+      ],
       "blocker": null,
       "notes": "The final 504,049-page PUB index and the direct Newfoundland Power mirror were searched. No later complete public circuit or feeder register was located. The strongest later layers are the 2010 transmission construction register and the 2013 loading register; later capital records provide asset-specific changes only."
     },
@@ -132,7 +134,7 @@
         "research/NP_STATION_GAP_LEDGER.md"
       ],
       "blocker": null,
-      "notes": "CA-NP-255 establishes selected feeder-to-transformer assignments at HWD, OXP, KEN, GOU, KBR, RRD, SJM, SLA, PEP, and VIR. The 2019 Pepperell supplemental filing establishes feeder tie points and customer counts for KBR, PEP, and VIR. PUB-NP-064 Attachment G identifies Glendale T1/T2 and T2/T3 tie breakers. PUB-NP-276 and the 2019 and 2023 capital records preserve Stamp's Lane feeder voltages and SLA-05 work history. The remaining feeders and bus sections still require one-lines or protection drawings."
+      "notes": "CA-NP-255 establishes selected feeder-to-transformer assignments at HWD, OXP, KEN, GOU, KBR, RRD, SJM, SLA, PEP, and VIR. The 2013 Oxen Pond one-line assigns 70L, 32L, and 34L to B3; 67L, 58L, 35L, and 31L to B4; and identifies breaker B2B5 between the transformer-bus sections. The 2019 Pepperell supplemental filing establishes feeder tie points and customer counts for KBR, PEP, and VIR. PUB-NP-064 Attachment G identifies Glendale T1/T2 and T2/T3 tie breakers. PUB-NP-276 and the 2019 and 2023 capital records preserve Stamp's Lane feeder voltages and SLA-05 work history. The remaining feeders and bus sections still require one-lines or protection drawings."
     },
     {
       "id": "AVL-003",

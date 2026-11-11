@@ -706,6 +706,19 @@ test("Oxen Pond and Hardwoods capacitor banks are clickable and sourced", async 
   }
 });
 
+test("Oxen Pond retains the dated 66 kV bus and circuit assignments", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(html, /data-component="opd-bus-tie"/);
+  assert.match(html, /B3 \/ NEWFOUNDLAND POWER/);
+  assert.match(html, /B4 \/ NEWFOUNDLAND POWER/);
+  assert.match(html, /aria-label="70L to Stamp's Lane Substation"/);
+  assert.match(html, /aria-label="35L to Kenmount Substation"/);
+  assert.match(components["opd-summary"].data.flat().join(" "), /B3 circuits 70L, 32L, 34L/);
+  assert.match(components["opd-summary"].data.flat().join(" "), /B4 circuits 67L, 58L, 35L, 31L/);
+  assert.match(components["opd-bus-tie"].data.flat().join(" "), /B2 and B5/);
+  assert.equal(components["opd-bus-tie"].sources[0].sourceId, "oxen-2013");
+});
+
 test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);

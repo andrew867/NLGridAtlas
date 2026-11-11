@@ -248,68 +248,80 @@
         <div class="station-sheets" aria-labelledby="network-title">
         <div class="station-layout" id="terminal-opd" data-claim-id="oxen-pond-terminal-one-line">
           <article class="phase-frame station-sheet oxen-sheet">
-            <div class="panel-toolbar" role="group" aria-label="One-line visibility controls">
-              <button class="toggle active" type="button" data-layer="v230" aria-pressed="true">230 kV</button>
-              <button class="toggle active" type="button" data-layer="transformer" aria-pressed="true">Transformation</button>
-              <button class="toggle active" type="button" data-layer="v66" aria-pressed="true">66 kV</button>
+            <div class="panel-toolbar station-toolbar" aria-label="Oxen Pond voltage levels">
+              <span class="voltage-tag">230 kV</span><span class="voltage-tag">Transformation</span><span class="voltage-tag">66 kV</span>
             </div>
-            <svg class="one-line" viewBox="0 15 960 570" role="img" aria-labelledby="one-line-title one-line-desc">
+            <svg class="station-line" viewBox="0 -10 1000 710" role="img" aria-labelledby="one-line-title one-line-desc">
               <title id="one-line-title">Simplified Oxen Pond one-line diagram</title>
-              <desc id="one-line-desc">Two 230 kilovolt transmission lines connect to a 230 kilovolt bus. Three Hydro transformers and two capacitor banks connect to the 66 kilovolt bus.</desc>
+              <desc id="one-line-desc">Two 230 kilovolt transmission lines connect to three Hydro transformers. The 2013 arrangement has two tied 66 kilovolt transformer-bus sections, two capacitor banks, and two Newfoundland Power line-bus sections serving seven outgoing circuits.</desc>
               <g class="layer v230">
-                <path class="line v230-line" d="M150 188 H810" />
+                <path class="line v230-line" d="M100 120H900" />
                 <a class="diagram-link" href="#terminal-hwd" aria-label="TL236 to Hardwoods Terminal Station">
-                  <path class="line v230-line" d="M150 74 V188" /><text class="small-label transformer-rating" x="150" y="52">TL236 / HWD</text>
+                  <path class="line v230-line" d="M180 40V120" /><text class="small-label transformer-rating" x="180" y="20">TL236 / HWD</text>
                 </a>
                 <a class="diagram-link" href="#terminal-hrd" aria-label="TL218 to Holyrood Generating Station">
-                  <path class="line v230-line" d="M810 74 V188" /><text class="small-label transformer-rating" x="810" y="52">TL218 / HRD</text>
+                  <path class="line v230-line" d="M820 40V120" /><text class="small-label transformer-rating" x="820" y="20">TL218 / HRD</text>
                 </a>
-                <text class="bus-label center-label" x="480" y="169">230 kV BUS B1</text>
-                <circle class="junction" cx="150" cy="188" r="5" />
-                <circle class="junction" cx="810" cy="188" r="5" />
+                <text class="bus-label center-label" x="500" y="101">230 kV BUS B1</text>
+                <circle class="junction" cx="180" cy="120" r="5" />
+                <circle class="junction" cx="820" cy="120" r="5" />
               </g>
               <g class="layer transformer">
                 <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-t2" aria-label="Oxen Pond transformer T2">
-                  <path class="tap" d="M300 188 V260" />
-                  <circle class="winding v230-winding" cx="300" cy="282" r="22" />
-                  <circle class="winding v66-winding" cx="300" cy="314" r="22" />
-                  <path class="tap" d="M300 336 V422" />
-                  <text class="center-label" x="300" y="365">T2</text>
-                  <text class="rating center-label" x="300" y="389">75/100/125 MVA</text>
+                  <path class="tap" d="M300 120V180" />
+                  <circle class="winding v230-winding" cx="300" cy="202" r="22" />
+                  <circle class="winding v66-winding" cx="300" cy="234" r="22" />
+                  <path class="tap" d="M300 256V340" />
+                  <text class="center-label" x="300" y="282">T2</text>
+                  <text class="rating center-label" x="300" y="306">75/100/125 MVA</text>
                 </g>
                 <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-t1" aria-label="Oxen Pond transformer T1">
-                  <path class="tap" d="M480 188 V260" />
-                  <circle class="winding v230-winding" cx="480" cy="282" r="22" />
-                  <circle class="winding v66-winding" cx="480" cy="314" r="22" />
-                  <path class="tap" d="M480 336 V422" />
-                  <text class="center-label" x="480" y="365">T1</text>
-                  <text class="rating center-label" x="480" y="389">250 MVA</text>
+                  <path class="tap" d="M500 120V180" />
+                  <circle class="winding v230-winding" cx="500" cy="202" r="22" />
+                  <circle class="winding v66-winding" cx="500" cy="234" r="22" />
+                  <path class="tap" d="M500 256V340" />
+                  <text class="center-label" x="500" y="282">T1</text>
+                  <text class="rating center-label" x="500" y="306">250 MVA</text>
                 </g>
                 <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-t3" aria-label="Oxen Pond transformer T3">
-                  <path class="tap" d="M660 188 V260" />
-                  <circle class="winding v230-winding" cx="660" cy="282" r="22" />
-                  <circle class="winding v66-winding" cx="660" cy="314" r="22" />
-                  <path class="tap" d="M660 336 V422" />
-                  <text class="center-label" x="660" y="365">T3</text>
-                  <text class="rating center-label" x="660" y="389">250 MVA</text>
+                  <path class="tap" d="M700 120V180" />
+                  <circle class="winding v230-winding" cx="700" cy="202" r="22" />
+                  <circle class="winding v66-winding" cx="700" cy="234" r="22" />
+                  <path class="tap" d="M700 256V340" />
+                  <text class="center-label" x="700" y="282">T3</text>
+                  <text class="rating center-label" x="700" y="306">250 MVA</text>
                 </g>
               </g>
               <g class="layer v66">
-                <a class="diagram-link" href="#substation-oxp" aria-label="Open Newfoundland Power Oxen Pond Substation">
-                  <path class="line v66-line" d="M150 422 H810" />
-                  <text class="bus-label center-label" x="480" y="454">66 kV BUS B2 / B5</text>
-                </a>
+                <path class="line v66-line" d="M80 340H485M515 340H920" />
+                <text class="bus-label center-label" x="260" y="367">66 kV BUS B2</text>
+                <text class="bus-label center-label" x="740" y="367">66 kV BUS B5</text>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-bus-tie" aria-label="Oxen Pond 66 kilovolt bus tie B2B5">
+                  <path class="line v66-line" d="M485 340H492M508 340H515" />
+                  <rect class="breaker-symbol" x="492" y="328" width="16" height="24" />
+                  <text class="rating center-label" x="500" y="390">B2B5</text>
+                </g>
                 <g class="component capacitor-component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-c2" aria-label="Oxen Pond capacitor bank C2">
-                  <path class="tap" d="M190 422V456 M170 456H210 M170 471H210 M190 471V494 M174 494H206 M180 502H200 M185 510H195" />
-                  <text class="center-label" x="190" y="540">C2</text><text class="rating center-label" x="190" y="562">26.4 MVAR</text>
+                  <path class="tap" d="M120 340V370M100 370H140M100 384H140M120 384V406M104 406H136M110 414H130M115 422H125" />
+                  <text class="center-label" x="120" y="450">C2</text><text class="rating center-label" x="120" y="470">26.4 MVAR</text>
                 </g>
                 <g class="component capacitor-component" tabindex="0" role="button" aria-pressed="false" data-diagram="opd" data-component="opd-c1" aria-label="Oxen Pond capacitor bank C1">
-                  <path class="tap" d="M770 422V456 M750 456H790 M750 471H790 M770 471V494 M754 494H786 M760 502H780 M765 510H775" />
-                  <text class="center-label" x="770" y="540">C1</text><text class="rating center-label" x="770" y="562">25.2 MVAR</text>
+                  <path class="tap" d="M880 340V370M860 370H900M860 384H900M880 384V406M864 406H896M870 414H890M875 422H885" />
+                  <text class="center-label" x="880" y="450">C1</text><text class="rating center-label" x="880" y="470">25.2 MVAR</text>
                 </g>
+                <path class="line v66-line" d="M330 340V500M80 500H445M670 340V500M555 500H920" />
+                <text class="bus-label center-label" x="260" y="485">B3 / NEWFOUNDLAND POWER</text>
+                <text class="bus-label center-label" x="740" y="485">B4 / NEWFOUNDLAND POWER</text>
+                <a class="diagram-link" href="#station-browser" data-station-record="SLA" aria-label="70L to Stamp's Lane Substation"><path class="outgoing" d="M120 500V610"/><text class="small-label transformer-rating" x="120" y="638"><tspan x="120">70L</tspan><tspan x="120" dy="17">STAMP'S LANE</tspan></text></a>
+                <a class="diagram-link" href="#station-browser" data-station-record="RRD" aria-label="32L to Ridge Road Substation"><path class="outgoing" d="M230 500V610"/><text class="small-label transformer-rating" x="230" y="638"><tspan x="230">32L</tspan><tspan x="230" dy="17">RIDGE ROAD</tspan></text></a>
+                <a class="diagram-link" href="#station-browser" data-station-record="VIR" aria-label="34L to Virginia Waters Substation"><path class="outgoing" d="M340 500V610"/><text class="small-label transformer-rating" x="340" y="638"><tspan x="340">34L</tspan><tspan x="340" dy="17">VIRGINIA WATERS</tspan></text></a>
+                <a class="diagram-link" href="#station-browser" data-station-record="RRD" aria-label="67L to Ridge Road Substation"><path class="outgoing" d="M570 500V610"/><text class="small-label transformer-rating" x="570" y="638"><tspan x="570">67L</tspan><tspan x="570" dy="17">RIDGE ROAD</tspan></text></a>
+                <a class="diagram-link" href="#station-browser" data-station-record="VIR" aria-label="58L to Virginia Waters Substation"><path class="outgoing" d="M680 500V610"/><text class="small-label transformer-rating" x="680" y="638"><tspan x="680">58L</tspan><tspan x="680" dy="17">VIRGINIA WATERS</tspan></text></a>
+                <a class="diagram-link" href="#substation-ken" aria-label="35L to Kenmount Substation"><path class="outgoing" d="M790 500V610"/><text class="small-label transformer-rating" x="790" y="638"><tspan x="790">35L</tspan><tspan x="790" dy="17">KENMOUNT</tspan></text></a>
+                <a class="diagram-link" href="#station-browser" data-station-record="SLA" aria-label="31L to Stamp's Lane Substation"><path class="outgoing" d="M900 500V610"/><text class="small-label transformer-rating" x="900" y="638"><tspan x="900">31L</tspan><tspan x="900" dy="17">STAMP'S LANE</tspan></text></a>
               </g>
             </svg>
-            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2026 STUDY RATINGS ON 2013 BUS ARRANGEMENT</p>
+            <p class="diagram-note">SIMPLIFIED LOGICAL ARRANGEMENT / 2013 BUS AND CIRCUIT ASSIGNMENTS / 2026 STUDY TRANSFORMER RATINGS</p>
           </article>
 
           <aside class="component-evidence station-evidence" data-diagram-panel="opd" data-default-component="opd-summary" aria-live="polite">

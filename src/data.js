@@ -1200,9 +1200,9 @@ export const components = {
     status: "verified",
     code: "OPD / TERMINAL STATION",
     title: "Oxen Pond Terminal Station",
-    summary: "The 2026 loop study models three 230/66 kV transformers: T1 and T3 at 250 MVA, and T2 at 125 MVA. The 2013 one-line identifies capacitor banks C1 and C2.",
-    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["Bus", "66 kV"], ["C1, B5", "25.2 MVAR"], ["C2, B2", "26.4 MVAR"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 43")]
+    summary: "The 2013 one-line assigns 70L, 32L, and 34L to bus B3; 67L, 58L, 35L, and 31L to bus B4; and ties the two transformer-bus sections through breaker B2B5. The 2026 loop study models T1 and T3 at 250 MVA and T2 at 125 MVA.",
+    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["B3 circuits", "70L, 32L, 34L"], ["B4 circuits", "67L, 58L, 35L, 31L"], ["Bus tie", "B2B5"], ["C1, B5", "25.2 MVAR"], ["C2, B2", "26.4 MVAR"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 43"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
   "opd-t1": {
     diagram: "opd",
@@ -1242,6 +1242,12 @@ export const components = {
     summary: "The 2013 existing-station one-line labels C2 at 26.4 MVAR.",
     data: [["Bus", "66 kV B2"], ["Rating", "26.4 MVAR"]],
     sources: [sourceRef("oxen-2013", "PDF p. 43")]
+  },
+  "opd-bus-tie": {
+    diagram: "opd", status: "verified", code: "OPD / B2B5", title: "Oxen Pond 66 kV bus tie",
+    summary: "The 2013 one-line places breaker B2B5 between the B2 and B5 transformer-bus sections. The filing says a fault on one 66 kV bus section can be isolated while the paired circuits retain supply from the other section.",
+    data: [["Breaker", "B2B5"], ["Connected sections", "B2 and B5"], ["Arrangement date", "2013 filing"]],
+    sources: [sourceRef("oxen-2013", "PDF pp. 43 to 44")]
   },
   "hwd-summary": {
     diagram: "hwd",

@@ -317,6 +317,7 @@ button, input { font: inherit; }
 .generator-winding { stroke: var(--phase-c); }
 .station-winding { stroke: var(--phase-b); }
 .generator-symbol { fill: var(--paper); stroke: var(--ink); stroke-width: 3; vector-effect: non-scaling-stroke; }
+.breaker-symbol { fill: var(--paper); stroke: var(--ink); stroke-width: 3; vector-effect: non-scaling-stroke; }
 .station-bus { fill: none; stroke: var(--ink); stroke-width: 5; vector-effect: non-scaling-stroke; }
 .proposed-line { fill: none; stroke: var(--phase-a); stroke-width: 4; stroke-dasharray: 12 8; vector-effect: non-scaling-stroke; }
 .winding { fill: none; stroke-width: 4; vector-effect: non-scaling-stroke; }
