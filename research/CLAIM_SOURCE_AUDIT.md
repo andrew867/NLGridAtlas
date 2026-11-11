@@ -10,9 +10,9 @@ Work item: `SRC-001`
 | Static technical regions | 34 | `staticClaims` in `src/data.js`; attached to the rendered region by `data-claim-id` |
 | Selectable diagram components | 141 | `components` in `src/data.js` |
 | Timeline events | 27 | `timeline` in `src/data.js` |
-| Island terminal records | 10 | `islandTerminalRecords` in `src/data.js` |
+| Island terminal records and connection diagrams | 10 | `islandTerminalRecords` in `src/data.js`; `src/terminal-diagram.js` |
 | Detailed Newfoundland Power profiles | 19 | `stationProfiles` in `src/data.js` |
-| Source records | 79 | `sources` in `src/data.js` |
+| Source records | 86 | `sources` in `src/data.js` |
 
 The static ledger covers the system-length panel, island and Avalon network views, terminal-station and Newfoundland Power one-lines, Avalon transmission work, load records, and the VHF records.
 

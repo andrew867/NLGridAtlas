@@ -400,8 +400,8 @@ button, input { font: inherit; }
 .evidence-link { font: 400 .76rem/1.45 "IBM Plex Mono", monospace; text-underline-offset: .2rem; }
 .source-note { margin-top: 1.25rem; color: var(--muted); font: 400 .72rem/1.5 "IBM Plex Mono", monospace; }
 
-.station-sheets { display: grid; gap: 1.5rem; }
-.station-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
+.station-sheets { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+.station-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr); gap: clamp(1.5rem, 4vw, 4rem); min-width: 0; align-items: start; }
 .station-layout[id], .network-node[id] { scroll-margin-top: 88px; }
 .holyrood-layout { grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr); }
 .subsection-heading { display: grid; grid-template-columns: minmax(260px, .7fr) minmax(320px, 1.3fr); gap: .5rem 2rem; padding-top: 1.25rem; border-top: 1px solid var(--ink); }
@@ -475,6 +475,33 @@ button, input { font: inherit; }
 .hydro-terminal-record-grid dt, .hydro-terminal-record-grid dd { min-width: 0; margin: 0; overflow-wrap: anywhere; font: 400 .76rem/1.45 "IBM Plex Mono", monospace; }
 .hydro-terminal-record-grid dt { font-weight: 600; }
 .hydro-terminal-sources { display: flex; flex-direction: column; gap: .6rem; padding-top: .25rem; }
+.terminal-diagram-block { margin-top: 1.25rem; border: 1px solid var(--rule); background: color-mix(in srgb, var(--paper) 93%, white); }
+.terminal-diagram-scroll { overflow-x: auto; overscroll-behavior-inline: contain; }
+.terminal-diagram { display: block; width: 100%; min-width: 760px; height: auto; }
+.terminal-diagram text { fill: var(--ink); font-family: "IBM Plex Mono", monospace; }
+.terminal-bus line { stroke: var(--ink); stroke-width: 7; }
+.terminal-bus.voltage-230 line { stroke: var(--phase-a); }
+.terminal-bus.voltage-138 line { stroke: var(--copper); }
+.terminal-bus.voltage-66 line, .terminal-bus.voltage-69 line { stroke: var(--water); }
+.terminal-bus.voltage-138 text { fill: var(--copper); }
+.terminal-bus text { font-size: 19px; font-weight: 600; text-anchor: middle; transform: translateY(-13px); }
+.terminal-transformer line, .terminal-circuit line, .terminal-accessory line { stroke: var(--ink); stroke-width: 5; }
+.terminal-transformer circle { fill: var(--paper); stroke-width: 5; }
+.terminal-transformer circle:first-of-type { stroke: var(--phase-a); }
+.terminal-transformer circle:last-of-type { stroke: var(--water); }
+.terminal-device-name { font: 600 18px/1 "Barlow Condensed", sans-serif; text-anchor: start; }
+.terminal-device-rating { font-size: 14px; text-anchor: start; }
+.terminal-transformer .terminal-device-name, .terminal-transformer .terminal-device-rating { text-anchor: middle; }
+.terminal-circuit { color: var(--ink); }
+.terminal-circuit line { transition: stroke .15s ease; }
+.terminal-circuit-id { font: 600 18px/1 "Barlow Condensed", sans-serif; text-anchor: middle; }
+.terminal-circuit-destination { font-size: 12px; text-anchor: middle; }
+.terminal-diagram a:hover .terminal-circuit line, .terminal-diagram a:focus .terminal-circuit line { stroke: var(--copper); stroke-width: 8; }
+.terminal-diagram a:focus { outline: none; }
+.terminal-accessory circle { fill: var(--paper); stroke: var(--ink); stroke-width: 5; }
+.terminal-accessory-symbol { font: 600 21px/1 "Barlow Condensed", sans-serif; text-anchor: middle; }
+.terminal-accessory .terminal-device-name, .terminal-accessory .terminal-device-rating { text-anchor: middle; }
+.terminal-diagram-caption { margin: 0; padding: .7rem 1rem; border-top: 1px solid var(--rule); font: 400 .7rem/1.35 "IBM Plex Mono", monospace; color: var(--muted); }
 .profile-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem; padding: 0 3.5rem 1.25rem 0; border-bottom: 1px solid var(--ink); }
 .profile-heading span, .profile-heading > strong, .profile-label { font: 500 .7rem/1.35 "IBM Plex Mono", monospace; letter-spacing: .06em; }
 .profile-heading h4 { margin: .3rem 0 0; font: 600 clamp(2.5rem, 5vw, 5rem)/.9 "Barlow Condensed", sans-serif; text-transform: uppercase; }
@@ -625,10 +652,12 @@ button, input { font: inherit; }
   .telecom-history article { border-right: 0; border-bottom: 1px solid var(--ink); }
   .telecom-history article:last-child { border-bottom: 0; }
   .repeater-register > header { grid-template-columns: 1fr; }
-  .station-layout, .holyrood-layout, .subsection-heading { grid-template-columns: 1fr; }
+  .station-layout, .holyrood-layout, .subsection-heading { grid-template-columns: minmax(0, 1fr); }
   .subsection-heading p { grid-column: 1; grid-row: auto; }
   .profile-grid { grid-template-columns: 1fr; }
   .hydro-terminal-record-grid { grid-template-columns: 1fr; }
+  .terminal-diagram-block { margin-inline: -.45rem; }
+  .terminal-diagram-caption { display: none; }
   .profile-grid > section, .profile-grid > section:first-child { padding: 1.5rem 0; border-left: 0; border-top: 1px solid var(--rule); }
   .profile-record dl { grid-template-columns: 1fr 1fr; }
   .transmission-update-grid { grid-template-columns: 1fr; }

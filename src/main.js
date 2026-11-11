@@ -11,6 +11,7 @@ import handbook from "../research/derived/np-2006-handbook.json";
 import transformerRegister from "../research/derived/np-2027-transformer-register.json";
 import { avalonLabelOffsets, avalonNodePositions } from "./avalon-layout.js";
 import { initIslandBackbone } from "./island-backbone.js";
+import { renderTerminalDiagram } from "./terminal-diagram.js";
 
 const sourceById = new Map(sources.map((source) => [source.id, source]));
 const handbookStations = new Map(handbook.substations.map((station) => [station.code, station]));
@@ -358,6 +359,7 @@ function renderHydroTerminalRecord(code) {
       <div><span>${escapeHtml(record.code)} / ISLAND SYSTEM</span><h4>${escapeHtml(record.name)}</h4></div>
       <span class="evidence-state ${escapeHtml(record.status)}">${escapeHtml(record.status.toUpperCase())}</span>
     </header>
+    ${renderTerminalDiagram(record.diagram, escapeHtml)}
     <div class="hydro-terminal-record-grid">
       <dl>${factRows}</dl>
       <div class="hydro-terminal-sources"><span class="profile-label">SOURCE RECORDS</span>${sourceLinks}</div>

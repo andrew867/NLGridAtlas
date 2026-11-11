@@ -150,6 +150,76 @@ export const sources = [
     url: "http://www.pub.nf.ca/indexreports/transmission/From%20NLH%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202023-04-25.PDF"
   },
   {
+    id: "nlh-sunnyside-2014",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "Sunnyside Replacement Equipment",
+    topics: ["Sunnyside", "T1", "T4", "one-line", "230 kV breaker", "transformer failure"],
+    pages: "physical PDF pp. 14 to 19 and 29 to 34",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/NLHCBSUPP2014/SunnysideReplacementEquipment/Application/Application-SunnysideReplacementEquipment-2014-06-19.pdf"
+  },
+  {
+    id: "nlh-planning-2023",
+    year: 2023,
+    organization: "NL Hydro",
+    title: "2023 Annual Planning Assessment, 138 kV and 66 kV Loop Assessments",
+    topics: ["Sunnyside", "Stony Brook", "Bottom Brook", "Stephenville", "transformer loading"],
+    pages: "physical PDF pp. 40 and 43 to 47",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Newfoundland%20and%20Labrador%20System%20Operator%20(NLSO)%20-%202023%20Annual%20Planning%20Assessment%20-%202023-05-17.PDF"
+  },
+  {
+    id: "nlh-buchans-2018",
+    year: 2017,
+    organization: "NL Hydro",
+    title: "2018 Capital Budget Application, Buchans T1 Replacement",
+    topics: ["Buchans", "T1", "230/66 kV", "transformer replacement"],
+    pages: "physical PDF pp. 453 and 459 to 460",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2018/NLH2018Capital/applications/Capital%20Budget%20Volume%20II.pdf"
+  },
+  {
+    id: "nlh-deer-lake-2010",
+    year: 2009,
+    organization: "NL Hydro",
+    title: "2010 Capital Budget Application, Deer Lake Digital Fault Recorder",
+    topics: ["Deer Lake", "230/138 kV", "138/66 kV", "terminal station"],
+    pages: "physical PDF p. 378",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/NLH2010ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-bbk-stv-2021",
+    year: 2020,
+    organization: "NL Hydro",
+    title: "2021 Capital Budget Application, Stephenville Gas Turbine Retirement Upgrades",
+    topics: ["Bottom Brook", "Stephenville", "T2", "T3", "T4", "230/66 kV", "transformer addition"],
+    pages: "physical PDF pp. 500 and 510 to 519",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2021/NLH2021Capital/applications/From%20NLH%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-08-04.pdf"
+  },
+  {
+    id: "nlh-cbc-2013",
+    year: 2013,
+    organization: "NL Hydro",
+    title: "PUB-NLH-330, Come By Chance Capacitor Banks",
+    topics: ["Come By Chance", "capacitor banks", "38.35 MVAR"],
+    pages: "PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/PUB-NLH-330.PDF"
+  },
+  {
+    id: "nlh-transformer-loading-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "PUB-NLH-323, Hydro Transformer Loading",
+    topics: ["Massey Drive", "T1", "T2", "T3", "transformer loading"],
+    pages: "PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-323.pdf"
+  },
+  {
     id: "oxen-2013",
     year: 2013,
     organization: "NL Hydro",
@@ -2010,71 +2080,134 @@ export const islandTerminalRecords = [
     code: "SUN",
     name: "Sunnyside Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/138 kV"], ["2013 assignment", "Common plant assignment"], ["2023 record", "Control-building concrete cracking documented"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF p. 69")]
+    facts: [["Transformation", "T1 and T4, 230/138 kV, 125 MVA maximum rating each"], ["230 kV circuits", "TL202 and TL206 to Bay d'Espoir; TL203 to Western Avalon; TL207 to Come By Chance"], ["138 kV circuits", "TL212, TL219, 100L and 109L"], ["2014 work", "T1 replaced after its January 4 failure; dedicated 230 kV breaker B1T1 added"]],
+    diagram: {
+      label: "2015 breaker addition arrangement",
+      buses: [{ id: "b1", label: "B1", voltage: "230 kV" }, { id: "b2", label: "B2 / B3", voltage: "138 kV" }],
+      transformers: [{ label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" }, { label: "T4", rating: "125 MVA max", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL202", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL206", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL203", destination: "Western Avalon", bus: "b1" }, { label: "TL207", destination: "Come By Chance", bus: "b1", destinationCode: "CBC" }, { label: "TL212", destination: "Linton Lake", bus: "b2" }, { label: "TL219", destination: "Salt Pond", bus: "b2" }, { label: "100L", destination: "138 kV system", bus: "b2" }, { label: "109L", destination: "138 kV system", bus: "b2" }]
+    },
+    sources: [sourceRef("nlh-sunnyside-2014", "physical PDF pp. 18 to 19 and 29 to 34"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "STB",
     name: "Stony Brook Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/138 kV"], ["2023 work", "230 kV station fire protection completed"], ["2023 work", "Station lighting upgrade completed"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+    facts: [["Transformation", "T1 and T2, 230/138 kV, 125 MVA maximum rating each"], ["230 kV circuits", "TL231 and TL204 to Bay d'Espoir; TL205 and TL232 to Buchans"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"]],
+    diagram: {
+      label: "2018 routes / 2023 transformer ratings",
+      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }],
+      transformers: [{ label: "T1", rating: "125 MVA max", from: "b1", to: "b2" }, { label: "T2", rating: "125 MVA max", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL231", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL204", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL205", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL232", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL222", destination: "South Brook", bus: "b2" }, { label: "TL210", destination: "Cobb's Pond", bus: "b2" }]
+    },
+    sources: [sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
   },
   {
     code: "BDE",
     name: "Bay d'Espoir Generating Station",
     status: "verified",
-    facts: [["Transformation", "230/69 kV"], ["Plant assignment", "592 MW"], ["Network", "230 kV connections shown to Stony Brook and the western island"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+    facts: [["Transformation", "230/69 kV system interface"], ["2013 plant assignment", "592 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"], ["66 kV circuit", "TL220 to English Harbour West and Barachoix"]],
+    diagram: {
+      label: "2013 plant interface / 2018 routes",
+      buses: [{ id: "b1", label: "230 kV station bus", voltage: "230 kV" }, { id: "b2", label: "69 kV station bus", voltage: "69 kV" }],
+      transformers: [{ label: "Station transformation", rating: "Rating not stated on overview", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL202", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL206", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL204", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL231", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL234", destination: "Upper Salmon", bus: "b1" }, { label: "TL267", destination: "Western Avalon", bus: "b1" }, { label: "TL220", destination: "English Harbour West", bus: "b2" }],
+      generators: [{ label: "Bay d'Espoir plant", rating: "592 MW assignment", bus: "b1" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "BUC",
     name: "Buchans Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/66 kV and 66/12.5 kV"], ["2023 work", "Station lighting upgrade recorded"], ["2023 program", "Fire-protection work identified"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF p. 34")]
+    facts: [["T1", "230/66 kV, 40/53.3/66.6 MVA replacement specified in the 2018 capital filing"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
+    diagram: {
+      label: "2018 transformer replacement / 2018 routes",
+      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }],
+      transformers: [{ label: "T1", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL205", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL232", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL228", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL233", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }, { label: "TL264", destination: "Duck Pond", bus: "b2" }, { label: "TL280", destination: "Star Lake", bus: "b2" }]
+    },
+    sources: [sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 459 to 460"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "DLK",
     name: "Deer Lake Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/138 kV and 138/66 kV"], ["2023 work", "Breaker-failure protection upgrade completed"], ["Adjacent generation", "Deer Lake Power shown at 81 MW"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF p. 34")]
+    facts: [["Transformation", "One 75 MVA 230/138 kV transformer and one 41.6 MVA 138/66 kV transformer in the 2010 filing"], ["138 kV circuits", "TL239 to Berry Hill; TL245 to Howley"], ["66 kV circuit", "TL226 through Wiltondale to Rocky Harbour and Berry Hill"], ["Adjacent generation", "Deer Lake Power shown at 81 MW on the 2013 one-line"]],
+    diagram: {
+      label: "2010 transformation / 2018 routes",
+      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }, { id: "b3", label: "66 kV bus", voltage: "66 kV" }],
+      transformers: [{ label: "230/138 kV transformer", rating: "75 MVA", from: "b1", to: "b2" }, { label: "138/66 kV transformer", rating: "41.6 MVA", from: "b2", to: "b3" }],
+      circuits: [{ label: "TL239", destination: "Berry Hill", bus: "b2" }, { label: "TL245", destination: "Howley", bus: "b2" }, { label: "TL226", destination: "Wiltondale", bus: "b3" }]
+    },
+    sources: [sourceRef("nlh-deer-lake-2010", "physical PDF p. 378"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "BBK",
     name: "Bottom Brook Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/138 kV and 138/66 kV"], ["2022 scope", "Protection upgrade and relocation of one power transformer"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF p. 36")]
+    facts: [["T4", "230/66 kV, 40/53.3/66.7 MVA; added for Stephenville backup"], ["Former T2", "15/20/25 MVA unit retained as GT1 to ground the 66 kV system"], ["230 kV circuits", "TL233 to Buchans; TL211 to Massey Drive; TL209 to Stephenville"], ["138 kV circuits", "TL214 to Doyles; TL250 to Grandy Brook"]],
+    diagram: {
+      label: "2021 proposed terminal upgrades / 2018 routes",
+      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }, { id: "b3", label: "66 kV bus", voltage: "66 kV" }],
+      transformers: [{ label: "T3", rating: "230/138 kV", from: "b1", to: "b2" }, { label: "T4", rating: "40/53.3/66.7 MVA", from: "b1", to: "b3" }, { label: "GT1", rating: "15/20/25 MVA grounding role", from: "b2", to: "b3" }],
+      circuits: [{ label: "TL233", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL211", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL209", destination: "Stephenville", bus: "b1", destinationCode: "STV" }, { label: "TL214", destination: "Doyles", bus: "b2" }, { label: "TL250", destination: "Grandy Brook", bus: "b2" }, { label: "400L", destination: "Newfoundland Power 66 kV", bus: "b3" }]
+    },
+    sources: [sourceRef("nlh-bbk-stv-2021", "physical PDF pp. 500 and 510 to 519"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF p. 36")]
   },
   {
     code: "GFS",
     name: "Grand Falls and Bishop's Falls generation",
     status: "verified",
-    facts: [["System", "Shown on the 138 kV network"], ["Grand Falls G9", "26.9 MW"], ["Grand Falls G4", "25.7 MW"], ["Bishop's Falls", "18.4 MW"]],
+    facts: [["System", "Generation connected to the 138 kV network"], ["Grand Falls G9", "26.9 MW"], ["Grand Falls G4", "25.7 MW"], ["Bishop's Falls", "18.4 MW"]],
+    diagram: {
+      label: "2013 system one-line ratings",
+      buses: [{ id: "b1", label: "138 kV network", voltage: "138 kV" }],
+      transformers: [],
+      circuits: [],
+      generators: [{ label: "Grand Falls G9", rating: "26.9 MW", bus: "b1" }, { label: "Grand Falls G4", rating: "25.7 MW", bus: "b1" }, { label: "Bishop's Falls", rating: "18.4 MW", bus: "b1" }]
+    },
     sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
   },
   {
     code: "MAS",
     name: "Massey Drive Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/66 kV"], ["2023 work", "Data-alarm system upgrade completed"], ["2023 program", "230 kV station fire protection identified"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+    facts: [["Transformation", "230/66 kV"], ["Transformer assignments", "T1 supplies Corner Brook Pulp and Paper; T2 and T3 supply Newfoundland Power"], ["230 kV circuits", "TL228 to Buchans; TL211 to Bottom Brook"], ["2023 work", "Data-alarm system upgrade completed; 230 kV fire-protection work identified"]],
+    diagram: {
+      label: "2015 assignments / 2018 routes",
+      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }],
+      transformers: [{ label: "T1", rating: "Corner Brook Pulp and Paper", from: "b1", to: "b2" }, { label: "T2", rating: "Newfoundland Power", from: "b1", to: "b2" }, { label: "T3", rating: "Newfoundland Power", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }]
+    },
+    sources: [sourceRef("nlh-transformer-loading-2015", "PDF p. 4"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
   },
   {
     code: "STV",
     name: "Stephenville Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/66 kV"], ["Plant assignment", "50 MW"], ["2023 work", "Terminal upgrades associated with the gas-turbine retirement plan"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("asset-2023", "physical PDF pp. 33 and 36")]
+    facts: [["T3", "230/66 kV, 40/53.3/66.6 MVA"], ["230 kV circuit", "TL209 to Bottom Brook"], ["2021 project basis", "Gas turbine retirement required Bottom Brook backup capacity and a simpler Stephenville station arrangement"], ["2023 planning model", "T3 maximum rating listed as 66.6 MVA"]],
+    diagram: {
+      label: "2021 recommended post-retirement arrangement",
+      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }],
+      transformers: [{ label: "T3", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL209", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }]
+    },
+    sources: [sourceRef("nlh-bbk-stv-2021", "physical PDF pp. 500 and 510 to 519"), sourceRef("nlh-planning-2023", "physical PDF p. 43"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
   },
   {
     code: "CBC",
     name: "Come By Chance Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/13.8 kV"], ["Reactive equipment", "Two 38.35 MVAR banks"], ["Network", "230 kV connection shown to Western Avalon"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+    facts: [["Transformation", "230/13.8 kV shown on the 2013 system one-line"], ["Reactive equipment", "Four 38.35 MVAR, 230 kV capacitor banks installed in 2011/2012"], ["230 kV circuits", "TL207 to Sunnyside; TL237 to Western Avalon"]],
+    diagram: {
+      label: "2013 system one-line / capacitor-bank record",
+      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "13.8 kV customer interface", voltage: "13.8 kV" }],
+      transformers: [{ label: "Customer transformation", rating: "Rating not stated on overview", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL207", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL237", destination: "Western Avalon", bus: "b1" }],
+      shunts: [{ label: "C1", rating: "38.35 MVAR", bus: "b1" }, { label: "C2", rating: "38.35 MVAR", bus: "b1" }, { label: "C3", rating: "38.35 MVAR", bus: "b1" }, { label: "C4", rating: "38.35 MVAR", bus: "b1" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-cbc-2013", "PDF p. 1"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
   }
 ];
 

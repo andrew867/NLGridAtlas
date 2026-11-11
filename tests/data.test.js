@@ -691,9 +691,9 @@ test("island overview and Avalon map use cited geographic references", async () 
   assert.match(html, /ISLAND OVERVIEW \/ NOVEMBER 2012/);
   assert.match(html, /href="#terminal-wav"[\s\S]*href="#terminal-hrd"[\s\S]*href="#terminal-hwd"[\s\S]*href="#terminal-opd"/);
   assert.match(html, /SEMI-GEOGRAPHIC \/ STATION ORDER FROM 2012 AND 2013 MAPS/);
-  assert.match(html, /M360 300 H650/);
-  assert.match(html, /M650 300 L520 440/);
-  assert.match(html, /M840 155 C825 390 730 470 520 440/);
+  assert.match(html, /M360 330 H650/);
+  assert.match(html, /M650 330 L520 190/);
+  assert.match(html, /M520 190 C610 65 750 70 840 155/);
 });
 
 test("Hydro upload findings distinguish installed and proposed work", async () => {

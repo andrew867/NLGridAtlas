@@ -17,7 +17,7 @@ const nodeLayout = {
   "Western Avalon": [1260, 590],
   "Voisey's Bay Nickel Mine": [1155, 755],
   "Soldiers Pond": [1370, 590],
-  "Holyrood Generating Station": [1430, 755],
+  "Holyrood Generating Station": [1380, 500],
   Hardwoods: [1470, 545],
   "Oxen Pond": [1530, 420],
   "Linton Lake (NP)": [980, 375],
@@ -268,6 +268,11 @@ export function initIslandBackbone() {
   detail.addEventListener("click", (event) => {
     const button = event.target.closest("[data-island-circuit-select]");
     if (button) selectCircuit(button.dataset.islandCircuitSelect);
+  });
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest("a[data-island-circuit]");
+    if (!link || svg.contains(link)) return;
+    selectCircuit(link.dataset.islandCircuit);
   });
 }
 

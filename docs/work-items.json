@@ -293,12 +293,12 @@
       "title": "Create detailed records and one-lines for major island terminals",
       "phase": 2,
       "priority": "P0",
-      "status": "not_started",
+      "status": "done",
       "scope": "Expand Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls, Massey Drive, Stephenville, and Come By Chance beyond summary cards.",
       "dependencies": ["ISL-001"],
-      "completion_evidence": [],
+      "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "tests/terminal-diagram.test.js"],
       "blocker": null,
-      "notes": "Use explicit evidence-gap records when current one-lines are unavailable."
+      "notes": "All ten records now include dated connection diagrams, circuit destinations, equipment data where stated, and page-level source links. Sunnyside follows the 2015 breaker-addition arrangement. Other records state the source year and omit unsupported breaker-level detail."
     },
     {
       "id": "ISL-004",

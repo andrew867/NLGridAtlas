@@ -18,7 +18,7 @@ Updated: 2026-11-11
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 71 automated tests, source-hash verification, and the production build.
+- Passed 78 automated tests, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.
@@ -30,10 +30,12 @@ Updated: 2026-11-11
 - Added voltage filters, circuit records, station connection records, and links to the existing terminal records.
 - Verified one detail panel, circuit and station selection, filtering, zero browser warnings or errors, and a 390 px layout with no page overflow.
 - Added Molloy's Lane as `AVL-007`; its handbook circuits, feeder register, and 2027 transformer data were already available, but it does not yet have a dedicated station diagram.
+- Replaced the ten island terminal summary cards with dated connection diagrams and equipment records.
+- Added the filed Sunnyside T1 breaker arrangement, Stony Brook transformer ratings, Buchans T1 replacement rating, Deer Lake transformation ratings, Bottom Brook and Stephenville post-retirement planning arrangement, Massey Drive transformer assignments, and all four Come By Chance capacitor banks.
 
 ## Active work
 
-1. Expand the major island terminal records and one-lines, `ISL-003`.
+1. Create individual records for Upper Salmon, Granite Canal, Cat Arm, and Hinds Lake, `ISL-004`.
 2. Create a dedicated Molloy's Lane record from the existing register data and any later station filings, `AVL-007`.
 3. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
 

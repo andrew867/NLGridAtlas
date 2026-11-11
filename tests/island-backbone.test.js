@@ -27,6 +27,16 @@ test("island backbone exposes the dated source, voltage filters, and accessible 
   assert.match(css, /\.island-backbone-scroll[^}]*overflow-x: auto/);
 });
 
+test("Avalon layouts place Holyrood north of Soldiers Pond and TL201", () => {
+  const holyrood = islandNodeLayout["Holyrood Generating Station"];
+  const soldiersPond = islandNodeLayout["Soldiers Pond"];
+  const hardwoods = islandNodeLayout.Hardwoods;
+  assert.ok(holyrood[1] < soldiersPond[1]);
+  assert.ok(holyrood[0] < hardwoods[0]);
+  assert.match(html, /M520 190 C610 65 750 70 840 155/);
+  assert.match(html, /M360 330 H650/);
+});
+
 test("Molloy's Lane dedicated record remains tracked after its generic register entry was identified", () => {
   const item = workItems.work_items.find((entry) => entry.id === "AVL-007");
   assert.equal(item.status, "in_progress");
