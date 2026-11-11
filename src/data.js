@@ -250,6 +250,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-055.PDF"
   },
   {
+    id: "nlh-gra-2017-v2",
+    year: 2017,
+    organization: "NL Hydro",
+    title: "2017 General Rate Application, Volume 2, Provincial Electrical System",
+    topics: ["Holyrood T8", "Sunnyside T1", "transformer relocation", "system additions"],
+    pages: "physical PDF p. 14",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/applications/NLH%202017%20General%20Rate%20Application%20-%20Volume%202%20-%202017-07-28.PDF"
+  },
+  {
+    id: "nlh-holyrood-t7-2020",
+    year: 2019,
+    organization: "NL Hydro",
+    title: "2020 Capital Budget Application, Replace Transformer T7, Holyrood Terminal Station",
+    topics: ["Holyrood T7", "Churchill Falls T31", "transformer replacement", "230/138 kV"],
+    pages: "physical PDF pp. 331, 333 to 337, 341 and 349",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2020/NLH2020Capital/applications/From%20NLH%20-%202020%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202019-08-01.PDF"
+  },
+  {
+    id: "nlh-capex-2024",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "2024 Capital Expenditures and Carryover Report, Holyrood T7 Completion",
+    topics: ["Holyrood T7", "Churchill Falls T31", "commissioning", "project completion"],
+    pages: "physical PDF p. 332",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2026Capital/app/From%20NLH%20-%202026%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202025-07-15.PDF"
+  },
+  {
     id: "oxen-2013",
     year: 2013,
     organization: "NL Hydro",
@@ -1631,9 +1661,9 @@ export const components = {
   },
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
-    summary: "The drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. Unit 3 can operate as a generator or synchronous condenser.",
-    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Gas turbine", "15 MW through T9"], ["Unit 3", "Reversible generator and synchronous condenser"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138")]
+    summary: "The December 2012 drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. T8 was replaced in 2014 and T7 replacement work finished in 2024.",
+    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Gas turbine", "15 MW through T9"], ["Unit 3", "Reversible generator and synchronous condenser"], ["T8 replacement", "2014"], ["T7 replacement completed", "2024"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138")]
   },
   "hrd-t1": {
     diagram: "hrd", status: "verified", code: "HRD / T1", title: "Holyrood generator transformer T1",
@@ -1667,15 +1697,15 @@ export const components = {
   },
   "hrd-t7": {
     diagram: "hrd", status: "verified", code: "HRD / T7", title: "Holyrood transformer T7",
-    summary: "The 2012 drawing gives 25/33.3/41.7 MVA. The 2026 loop study uses a 125 MVA maximum rating for T7.",
-    data: [["2012 drawing", "25/33.3/41.7 MVA, ONAN/ONAF/ONAF"], ["2026 study", "125 MVA maximum"], ["Voltage", "230/138/6.9 kV"], ["Impedance", "Z1 5.5%"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2027-loop-study", "PDF p. 194")]
+    summary: "The 1969 Canadian General Electric T7 was removed from service after a 2018 internal inspection. Churchill Falls T31, rated 75/100/125 MVA, replaced it. Final construction and commissioning finished in 2024.",
+    data: [["Former T7", "25/33.3/41.7 MVA, 230/138 kV"], ["Former T7 manufacture", "Canadian General Electric, 1969"], ["Replacement", "Churchill Falls T31, 75/100/125 MVA"], ["Project completed", "2024"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-holyrood-t7-2020", "physical PDF pp. 331, 333 to 337, 341 and 349"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("np-2027-loop-study", "PDF p. 194")]
   },
   "hrd-t8": {
     diagram: "hrd", status: "verified", code: "HRD / T8", title: "Holyrood transformer T8",
-    summary: "The T8 shown on the December 2012 drawing was moved to the Sunnyside T1 position in 2014. A newly manufactured transformer ordered for Sunnyside was delivered to Holyrood. The 2026 study again models a Holyrood unit designated T8 at 125 MVA, but the filed records cited here do not establish that unit's physical identity.",
-    data: [["2012 T8", "75/100/125 MVA, ONAN/ONAF/ONAF"], ["2014 relocation", "Moved to Sunnyside T1 position"], ["2026 model", "HRD T8, 125 MVA maximum"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("np-2027-loop-study", "PDF p. 194")]
+    summary: "The T8 shown on the December 2012 drawing moved to the Sunnyside T1 position in 2014. A new 75/100/125 MVA transformer was installed as Holyrood T8 in 2014.",
+    data: [["2012 T8", "75/100/125 MVA, moved to Sunnyside"], ["Current T8 installation", "2014"], ["Current T8 rating", "75/100/125 MVA"], ["2026 model", "125 MVA maximum"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("np-2027-loop-study", "PDF p. 194")]
   },
   "hrd-t5": {
     diagram: "hrd", status: "verified", code: "HRD / T5", title: "Holyrood transformer T5",

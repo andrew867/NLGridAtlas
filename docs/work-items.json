@@ -343,19 +343,19 @@
       "dependencies": ["ISL-003", "ISL-005"],
       "completion_evidence": ["research/ISLAND_TRANSFORMER_LEDGER.md", "src/data.js", "tests/data.test.js"],
       "blocker": null,
-      "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, and Buchans transformer records. The original Holyrood T8 is separated from the later HRD T8 study model. Nameplate, filed equipment, study-model, and emergency ratings remain separate."
+      "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, and Buchans transformer records. Holyrood T7 and T8 replacement histories now extend through the 2024 T7 commissioning completion. Nameplate, filed equipment, study-model, and emergency ratings remain separate."
     },
     {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,
       "priority": "P0",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Search for drawings later than the December 2012 demolition drawing and publish a separately dated arrangement.",
       "dependencies": ["ARC-001", "ARC-002"],
-      "completion_evidence": [],
+      "completion_evidence": ["src/data.js", "research/ISLAND_TRANSFORMER_LEDGER.md"],
       "blocker": null,
-      "notes": "The current site diagram is historical."
+      "notes": "The current site diagram remains explicitly dated as December 2012. Later records establish the 2014 T8 replacement and the 2024 completion of the T7 replacement, but a current full station one-line has not been located."
     },
     {
       "id": "GEN-002",

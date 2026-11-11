@@ -316,8 +316,9 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   assert.match(masseyDrive.facts.flat().join(" "), /66\.7 MVA.*125 MVA/);
   assert.match(sunnyside.facts.flat().join(" "), /Former Holyrood T8.*Sunnyside T1 position/);
   assert.match(buchans.facts.flat().join(" "), /Massey Drive in 1970.*Buchans in 1998/);
-  assert.match(components["hrd-t8"].summary, /ordered for Sunnyside/);
-  assert.match(components["hrd-t8"].summary, /do not establish that unit's physical identity/);
+  assert.match(components["hrd-t8"].summary, /new 75\/100\/125 MVA transformer was installed as Holyrood T8 in 2014/);
+  assert.match(components["hrd-t7"].summary, /Churchill Falls T31/);
+  assert.match(components["hrd-t7"].summary, /finished in 2024/);
   assert.ok(howley.sources.some((reference) => reference.sourceId === "nlh-howley-system-2003"));
   assert.ok(masseyDrive.sources.some((reference) => reference.sourceId === "nlh-system-additions-2001"));
 });

@@ -42,6 +42,8 @@ Updated: 2026-11-11
 - Added the 1998 Massey Drive 230/66 kV transformer replacement record from the 2001 prefiled testimony.
 - Separated the original Holyrood T8 from the later Holyrood T8 model after locating the 2014 relocation record. The original unit entered service in the Sunnyside T1 position by December 2014.
 - Added Buchans T1's 1970 Massey Drive installation, 1998 Buchans relocation, and 2018 replacement plan.
+- Confirmed the replacement Holyrood T8 was installed in 2014 at 75/100/125 MVA.
+- Added the Holyrood T7 equipment chain: the 1969 Canadian General Electric unit, the 2018 removal from service, the Churchill Falls T31 replacement, and project completion in 2024.
 - Deferred unsupported lower-voltage rural records and current rural breaker drawings so the transformer ledger and main island network can proceed.
 
 ## Active work
