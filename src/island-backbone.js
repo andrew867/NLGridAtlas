@@ -71,10 +71,13 @@ const stationTargets = {
   Hardwoods: { href: "#terminal-hwd" },
   "Holyrood Generating Station": { href: "#terminal-hrd" },
   "Massey Drive": { href: "#hydro-terminal-browser", code: "MAS" },
+  "Granite Canal": { href: "#hydro-terminal-browser", code: "GRC" },
+  "Hinds Lake": { href: "#hydro-terminal-browser", code: "HLA" },
   "Oxen Pond": { href: "#terminal-opd" },
   Stephenville: { href: "#hydro-terminal-browser", code: "STV" },
   "Stoney Brook": { href: "#hydro-terminal-browser", code: "STB" },
   Sunnyside: { href: "#hydro-terminal-browser", code: "SUN" },
+  "Upper Salmon": { href: "#hydro-terminal-browser", code: "USL" },
   "Western Avalon": { href: "#terminal-wav" }
 };
 
@@ -276,4 +279,4 @@ export function initIslandBackbone() {
   });
 }
 
-export { islandTopology, nodeLayout as islandNodeLayout };
+export { islandTopology, nodeLayout as islandNodeLayout, stationTargets as islandStationTargets };

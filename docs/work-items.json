@@ -305,12 +305,12 @@
       "title": "Create individual records for four major generating stations",
       "phase": 2,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Add Upper Salmon, Granite Canal, Cat Arm, and Hinds Lake records with documented connections and ratings.",
       "dependencies": ["ISL-001"],
-      "completion_evidence": [],
+      "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "src/island-backbone.js", "tests/terminal-diagram.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "These plants are currently only named in overview text."
+      "notes": "Upper Salmon, Granite Canal, Cat Arm, and Hinds Lake now have individual records with filed plant ratings, energy capability, and documented transmission connections. Cat Arm TL247 is shown without a navigation link because the searched records did not establish its opposite endpoint."
     },
     {
       "id": "ISL-005",

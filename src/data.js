@@ -240,6 +240,36 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf"
   },
   {
+    id: "nlh-2001-generation-exhibit",
+    year: 2001,
+    organization: "NL Hydro",
+    title: "Hydro Generation Exhibit RH4",
+    topics: ["Cat Arm", "Upper Salmon", "Hinds Lake", "generation", "energy capability"],
+    pages: "physical PDF pp. 13 to 15",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Exhibits/ExhibitRH4.pdf"
+  },
+  {
+    id: "nlh-2001-granite-canal",
+    year: 2001,
+    organization: "NL Hydro",
+    title: "Information Exhibit I-2, Granite Canal Project",
+    topics: ["Granite Canal", "hydroelectric generation", "energy capability"],
+    pages: "physical PDF p. 10",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/InformationExhibits/I-2.pdf"
+  },
+  {
+    id: "nlh-2027-capital",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "2027 Capital Budget Application, Volume I",
+    topics: ["Cat Arm", "TL247", "instrument transformers", "power line carrier"],
+    pages: "physical PDF p. 342",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
+  },
+  {
     id: "nlh-2024-rra",
     year: 2024,
     organization: "NL Hydro",
@@ -891,7 +921,7 @@ export const staticClaims = [
     status: "verified",
     sources: [
       { sourceId: "nlh-2011-western-avalon", pages: "PDF p. 7" },
-      { sourceId: "gra-2013-v2", pages: "physical PDF p. 663" },
+      { sourceId: "gra-2013-v2", pages: "physical PDF p. 80" },
       { sourceId: "oxen-2013", pages: "physical PDF p. 15" }
     ]
   },
@@ -2114,7 +2144,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL202", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL206", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL204", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL231", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL234", destination: "Upper Salmon", bus: "b1" }, { label: "TL267", destination: "Western Avalon", bus: "b1" }, { label: "TL220", destination: "English Harbour West", bus: "b2" }],
       generators: [{ label: "Bay d'Espoir plant", rating: "592 MW assignment", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "BUC",
@@ -2127,7 +2157,7 @@ export const islandTerminalRecords = [
       transformers: [{ label: "T1", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2" }],
       circuits: [{ label: "TL205", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL232", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL228", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL233", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }, { label: "TL264", destination: "Duck Pond", bus: "b2" }, { label: "TL280", destination: "Star Lake", bus: "b2" }]
     },
-    sources: [sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 459 to 460"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 459 to 460"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "DLK",
@@ -2140,7 +2170,7 @@ export const islandTerminalRecords = [
       transformers: [{ label: "230/138 kV transformer", rating: "75 MVA", from: "b1", to: "b2" }, { label: "138/66 kV transformer", rating: "41.6 MVA", from: "b2", to: "b3" }],
       circuits: [{ label: "TL239", destination: "Berry Hill", bus: "b2" }, { label: "TL245", destination: "Howley", bus: "b2" }, { label: "TL226", destination: "Wiltondale", bus: "b3" }]
     },
-    sources: [sourceRef("nlh-deer-lake-2010", "physical PDF p. 378"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-deer-lake-2010", "physical PDF p. 378"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "BBK",
@@ -2167,7 +2197,7 @@ export const islandTerminalRecords = [
       circuits: [],
       generators: [{ label: "Grand Falls G9", rating: "26.9 MW", bus: "b1" }, { label: "Grand Falls G4", rating: "25.7 MW", bus: "b1" }, { label: "Bishop's Falls", rating: "18.4 MW", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80")]
   },
   {
     code: "MAS",
@@ -2180,7 +2210,7 @@ export const islandTerminalRecords = [
       transformers: [{ label: "T1", rating: "Corner Brook Pulp and Paper", from: "b1", to: "b2" }, { label: "T2", rating: "Newfoundland Power", from: "b1", to: "b2" }, { label: "T3", rating: "Newfoundland Power", from: "b1", to: "b2" }],
       circuits: [{ label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }]
     },
-    sources: [sourceRef("nlh-transformer-loading-2015", "PDF p. 4"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+    sources: [sourceRef("nlh-transformer-loading-2015", "PDF p. 4"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
   },
   {
     code: "STV",
@@ -2207,7 +2237,63 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL207", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL237", destination: "Western Avalon", bus: "b1" }],
       shunts: [{ label: "C1", rating: "38.35 MVAR", bus: "b1" }, { label: "C2", rating: "38.35 MVAR", bus: "b1" }, { label: "C3", rating: "38.35 MVAR", bus: "b1" }, { label: "C4", rating: "38.35 MVAR", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-cbc-2013", "PDF p. 1"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-cbc-2013", "PDF p. 1"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+  },
+  {
+    code: "USL",
+    name: "Upper Salmon Generating Station",
+    status: "verified",
+    facts: [["Plant rating", "84 MW on the 2013 system one-line"], ["2001 energy capability", "552 GWh"], ["230 kV circuits", "TL234 to Bay d'Espoir; TL263 to Granite Canal Tap"]],
+    diagram: {
+      label: "2013 plant rating / 2018 filed routes",
+      buses: [{ id: "b1", label: "plant connection", voltage: "230 kV" }],
+      transformers: [],
+      circuits: [{ label: "TL234", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL263", destination: "Granite Canal Tap", bus: "b1" }],
+      generators: [{ label: "Upper Salmon", rating: "84 MW", bus: "b1" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 14"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+  },
+  {
+    code: "GRC",
+    name: "Granite Canal Generating Station",
+    status: "verified",
+    facts: [["Plant rating", "40 MW"], ["2001 energy capability", "224 GWh"], ["2018 circuit", "TL270 to Granite Canal Tap"]],
+    diagram: {
+      label: "2001 plant rating / 2018 filed route",
+      buses: [{ id: "b1", label: "plant connection", voltage: "230 kV" }],
+      transformers: [],
+      circuits: [{ label: "TL270", destination: "Granite Canal Tap", bus: "b1" }],
+      generators: [{ label: "Granite Canal", rating: "40 MW", bus: "b1" }]
+    },
+    sources: [sourceRef("nlh-2001-granite-canal", "physical PDF p. 10"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+  },
+  {
+    code: "CAT",
+    name: "Cat Arm Generating Station",
+    status: "verified",
+    facts: [["Plant rating", "127 MW"], ["2001 energy capability", "735 GWh"], ["Transmission line", "TL247, identified in the 2027 capital filing as Cat Arm Transmission Line"]],
+    diagram: {
+      label: "2013 plant rating / filed TL247 connection",
+      buses: [{ id: "b1", label: "plant outlet", voltage: "Plant" }],
+      transformers: [],
+      circuits: [{ label: "TL247", destination: "Network connection", bus: "b1", link: false }],
+      generators: [{ label: "Cat Arm", rating: "127 MW", bus: "b1" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 13"), sourceRef("nlh-2027-capital", "physical PDF p. 342")]
+  },
+  {
+    code: "HLA",
+    name: "Hinds Lake Generating Station",
+    status: "verified",
+    facts: [["Plant rating", "75 MW"], ["2001 energy capability", "340 GWh"], ["138 kV circuit", "TL243 to Howley"]],
+    diagram: {
+      label: "2013 plant rating / 2018 filed route",
+      buses: [{ id: "b1", label: "plant connection", voltage: "138 kV" }],
+      transformers: [],
+      circuits: [{ label: "TL243", destination: "Howley", bus: "b1" }],
+      generators: [{ label: "Hinds Lake", rating: "75 MW", bus: "b1" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 15"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   }
 ];
 

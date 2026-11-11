@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { islandNodeLayout, islandStationId, islandTopology } from "../src/island-backbone.js";
+import { islandNodeLayout, islandStationId, islandStationTargets, islandTopology } from "../src/island-backbone.js";
 
 const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
 const css = await readFile(new URL("../src/styles.css", import.meta.url), "utf8");
@@ -41,4 +41,10 @@ test("Molloy's Lane dedicated record remains tracked after its generic register 
   const item = workItems.work_items.find((entry) => entry.id === "AVL-007");
   assert.equal(item.status, "in_progress");
   assert.match(item.scope, /Molloy's Lane/);
+});
+
+test("island map generation nodes open their individual records", () => {
+  assert.equal(islandStationTargets["Upper Salmon"].code, "USL");
+  assert.equal(islandStationTargets["Granite Canal"].code, "GRC");
+  assert.equal(islandStationTargets["Hinds Lake"].code, "HLA");
 });

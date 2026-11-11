@@ -43,3 +43,36 @@ test("Come By Chance renders four filed capacitor banks", () => {
   assert.match(html, /C1/);
   assert.match(html, /C4/);
 });
+
+test("four hydro generating stations have individual sourced records", () => {
+  const expected = {
+    USL: { name: "Upper Salmon Generating Station", rating: "84 MW", circuits: ["TL234", "TL263"] },
+    GRC: { name: "Granite Canal Generating Station", rating: "40 MW", circuits: ["TL270"] },
+    CAT: { name: "Cat Arm Generating Station", rating: "127 MW", circuits: ["TL247"] },
+    HLA: { name: "Hinds Lake Generating Station", rating: "75 MW", circuits: ["TL243"] }
+  };
+
+  for (const [code, recordExpected] of Object.entries(expected)) {
+    const record = islandTerminalRecords.find((entry) => entry.code === code);
+    assert.ok(record, `${code} requires an individual record`);
+    assert.equal(record.name, recordExpected.name);
+    assert.equal(record.diagram.generators[0].rating, recordExpected.rating);
+    assert.deepEqual(record.diagram.circuits.map((circuit) => circuit.label), recordExpected.circuits);
+    assert.ok(record.sources.every((source) => source.pages), `${code} requires page-level sources`);
+  }
+});
+
+test("Cat Arm TL247 remains unlinked until its opposite endpoint is established", () => {
+  const catArm = islandTerminalRecords.find((record) => record.code === "CAT");
+  const html = renderTerminalDiagram(catArm.diagram, escapeHtml);
+  assert.doesNotMatch(html, /data-island-circuit="TL247"/);
+  assert.match(html, />TL247</);
+});
+
+test("plant-assignment records cite physical PDF page 80", () => {
+  for (const code of ["USL", "GRC", "CAT", "HLA"]) {
+    const record = islandTerminalRecords.find((entry) => entry.code === code);
+    const systemSource = record.sources.find((source) => source.sourceId === "gra-2013-v2");
+    assert.equal(systemSource.pages, "physical PDF p. 80");
+  }
+});
