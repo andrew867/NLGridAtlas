@@ -55,6 +55,7 @@ const stationSectionAnchors = {
   MUN: "#substation-mun",
   OXP: "#terminal-opd",
   PUL: "#substation-pul",
+  VIR: "#substation-vir",
   WAV: "#terminal-wav"
 };
 const stationDetailAnchors = {
@@ -64,6 +65,7 @@ const stationDetailAnchors = {
   MUN: "#substation-mun",
   OXP: "#substation-oxp",
   PUL: "#substation-pul",
+  VIR: "#substation-vir",
   WAV: "#terminal-wav"
 };
 

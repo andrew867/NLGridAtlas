@@ -719,6 +719,23 @@ test("Oxen Pond retains the dated 66 kV bus and circuit assignments", async () =
   assert.equal(components["opd-bus-tie"].sources[0].sourceId, "oxen-2013");
 });
 
+test("Virginia Waters retains the documented 2016 logical arrangement", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const source = sources.find((item) => item.id === "np-2016-vir-modernization");
+  assert.equal(source.pages, "physical PDF pp. 261 to 263");
+  assert.match(html, /id="substation-vir"/);
+  assert.match(html, /data-claim-id="virginia-waters-substation-one-line"/);
+  for (const circuit of ["34L", "58L", "59L", "74L"]) assert.match(html, new RegExp(`${circuit} to`));
+  for (const transformer of ["vir-t1", "vir-t2", "vir-t3"]) assert.ok(components[transformer]);
+  for (const feeder of ["01", "02", "03", "04", "05", "06", "07", "08"]) {
+    assert.match(html, new RegExp(`data-component="vir-${feeder}"`));
+    assert.equal(components[`vir-${feeder}`].data[0][1], "12.5 kV");
+  }
+  assert.match(components["vir-summary"].data.flat().join(" "), /8 side-break switches; 1 bus-tie switch; 3 transformer air-break switches/);
+  assert.match(components["vir-t2"].data.flat().join(" "), /2027 register 66\/25 kV, 25 MVA/);
+  assert.match(components["vir-t2"].data.flat().join(" "), /2026 forecast 22.53 MVA/);
+});
+
 test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);

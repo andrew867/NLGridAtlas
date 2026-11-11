@@ -70,6 +70,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
   },
   {
+    id: "np-2016-vir-modernization",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Virginia Waters Substation Modernization",
+    topics: ["Virginia Waters", "VIR-T1", "VIR-T2", "VIR-T3", "34L", "58L", "59L", "74L", "bus tie", "protection"],
+    pages: "physical PDF pp. 261 to 263",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
     id: "np-2013-line-loading",
     year: 2013,
     organization: "Newfoundland Power",
@@ -881,6 +891,16 @@ export const staticClaims = [
     ]
   },
   {
+    id: "virginia-waters-substation-one-line",
+    scope: "Virginia Waters 2016 switching bus, transformer bank, circuits and distribution feeders",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2016-vir-modernization", pages: "physical PDF pp. 261 to 263" },
+      { sourceId: "np-2021-north-study", pages: "physical PDF pp. 6 to 14" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 551" }
+    ]
+  },
+  {
     id: "western-avalon-soldiers-pond-design",
     scope: "Preliminary Western Avalon to Soldiers Pond line design and seasonal ratings",
     status: "proposed",
@@ -1607,7 +1627,37 @@ export const components = {
     summary: "GOU-03 runs along Main Road in Goulds. The 2014 filing proposed a recloser on the Doyle's Road tap.",
     data: [["Voltage", "12.5 kV"], ["2014 customers", "Approximately 1,900"], ["Tap", "Doyle's Road, approximately 100 customers"]],
     sources: [sourceRef("np-2014-improvements", "physical PDF pp. 20 and 43")]
-  }
+  },
+  "vir-summary": {
+    diagram: "vir", status: "verified", code: "VIR / SUBSTATION", title: "Virginia Waters Substation",
+    summary: "The 2016 station record identifies four 66 kV lines, three 25 MVA transformers, one 12.5 kV bus structure, and eight distribution feeders.",
+    data: [["66 kV circuits", "34L and 58L to Oxen Pond; 59L to Pulpit Rock; 74L to Pepperrell"], ["Transformers", "VIR-T1, VIR-T2, VIR-T3; 25 MVA each"], ["2016 station bus", "12.5 kV"], ["Distribution feeders", "VIR-01 to VIR-08"], ["2016 switching equipment", "8 side-break switches; 1 bus-tie switch; 3 transformer air-break switches"]],
+    sources: [sourceRef("np-2016-vir-modernization", "physical PDF pp. 261 to 263"), sourceRef("np-2021-north-study", "physical PDF pp. 6 to 14")]
+  },
+  "vir-t1": {
+    diagram: "vir", status: "verified", code: "VIR / T1", title: "Virginia Waters transformer VIR-T1",
+    summary: "The 2016 and 2021 station records identify VIR-T1 as a 25 MVA, 66/12.5 kV transformer.",
+    data: [["2016 and 2021 record", "66/12.5 kV, 25 MVA"], ["2027 register", "66/12.5 kV, 25 MVA"], ["2026 forecast", "20.20 MVA"]],
+    sources: [sourceRef("np-2016-vir-modernization", "physical PDF p. 261"), sourceRef("np-2021-north-study", "physical PDF pp. 6 to 14"), sourceRef("np-2027-transformers", "physical PDF p. 551")]
+  },
+  "vir-t2": {
+    diagram: "vir", status: "verified", code: "VIR / T2", title: "Virginia Waters transformer VIR-T2",
+    summary: "The station studies identify VIR-T2 as a 25 MVA transformer. The 2016 and 2021 station records use 66/12.5 kV; the 2027 equipment table records 66/25 kV.",
+    data: [["2016 and 2021 record", "66/12.5 kV, 25 MVA"], ["2027 register", "66/25 kV, 25 MVA"], ["2026 forecast", "22.53 MVA"]],
+    sources: [sourceRef("np-2016-vir-modernization", "physical PDF p. 261"), sourceRef("np-2021-north-study", "physical PDF pp. 6 to 14"), sourceRef("np-2027-transformers", "physical PDF p. 551")]
+  },
+  "vir-t3": {
+    diagram: "vir", status: "verified", code: "VIR / T3", title: "Virginia Waters transformer VIR-T3",
+    summary: "The station studies identify VIR-T3 as a 25 MVA transformer. The 2016 and 2021 station records use 66/12.5 kV; the 2027 equipment table records 66/25 kV.",
+    data: [["2016 and 2021 record", "66/12.5 kV, 25 MVA"], ["2027 register", "66/25 kV, 25 MVA"], ["2026 forecast", "11.94 MVA"]],
+    sources: [sourceRef("np-2016-vir-modernization", "physical PDF p. 261"), sourceRef("np-2021-north-study", "physical PDF pp. 6 to 14"), sourceRef("np-2027-transformers", "physical PDF p. 551")]
+  },
+  ...Object.fromEntries(["01", "02", "03", "04", "05", "06", "07", "08"].map((feeder) => [`vir-${feeder}`, {
+    diagram: "vir", status: "verified", code: `VIR / VIR-${feeder}`, title: `Virginia Waters feeder VIR-${feeder}`,
+    summary: `VIR-${feeder} is one of the eight 12.5 kV distribution feeders listed at Virginia Waters in the 2016 and 2021 station records.`,
+    data: [["Voltage", "12.5 kV"], ["Station", "Virginia Waters"]],
+    sources: [sourceRef("np-2016-vir-modernization", "physical PDF p. 261"), sourceRef("np-2021-north-study", "physical PDF pp. 6 to 14")]
+  }]))
 };
 
 export const islandTerminalRecords = [
