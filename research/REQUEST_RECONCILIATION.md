@@ -24,6 +24,7 @@ Updated: 2026-11-10
 - [x] Hydro upload findings added to the site: TL201 dynamic line rating, Western Avalon controls, Avalon combustion-turbine connection, and the Holyrood 2030 planning case.
 - [x] Island station register added for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Massey Drive, Stephenville, and Come By Chance.
 - [x] All 15 feeder-map images currently extracted from the archive are linked from their station records.
+- [x] The 2016 PUL-02, RRD-10, and PUL-05 route drawings are extracted and linked from Pulpit Rock, Ridge Road, and Virginia Waters.
 
 ## Evidence gaps
 

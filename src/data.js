@@ -60,6 +60,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
   },
   {
+    id: "np-2016-feeder-growth",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Feeder Additions for Load Growth",
+    topics: ["Pulpit Rock", "Ridge Road", "Virginia Waters", "PUL-02", "PUL-05", "RRD-10", "VIR-06", "VIR-07", "load transfer", "conductor rating"],
+    pages: "physical PDF pp. 409 to 419",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
     id: "np-2013-line-loading",
     year: 2013,
     organization: "Newfoundland Power",
@@ -294,7 +304,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "PUB-NP-005, Substation Refurbishment and Modernization Project History",
-    topics: ["Springfield", "substation modernization", "completion", "protection", "SCADA", "circuit breaker"],
+    topics: ["Stamp's Lane", "Springfield", "substation modernization", "completion", "transformer radiators", "protection", "SCADA", "circuit breaker"],
     pages: "physical PDF p. 5",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/PUB-NP-005.PDF"
@@ -1753,7 +1763,28 @@ export const stationProfiles = [
       sourceId: "np-2025-ca-np-255",
       pages: "physical PDF p. 4",
       facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2016 PROPOSED VIR-07 LOAD TRANSFER",
+        sourceId: "np-2016-feeder-growth",
+        pages: "physical PDF pp. 410 and 418",
+        facts: [
+          ["RRD-10 extension", "approximately 1.2 km north along Portugal Cove Road to VIR-07 at Airport Road"],
+          ["Planned transfer", "3 MVA from VIR-07 to the Ridge Road transformer bank"],
+          ["2015 station load", "92% of the two-transformer 40 MVA combined rating"]
+        ]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "2016 proposed RRD-10 extension to VIR-07",
+        image: "./reference-maps/rrd-10-2016-upgrade.jpg",
+        alt: "Filed route drawing for the proposed 1.2 kilometre RRD-10 feeder extension to VIR-07 near Airport Road",
+        sourceId: "np-2016-feeder-growth",
+        pages: "physical PDF p. 418"
+      }
+    ]
   },
   {
     code: "GDL",
@@ -1943,6 +1974,15 @@ export const stationProfiles = [
           ["Actual", "$595,000"],
           ["Carryover", "$0"]
         ]
+      },
+      {
+        label: "2007 AND 2011 COMPLETED WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 5",
+        facts: [
+          ["2007", "refurbished deteriorated concrete foundations and replaced deteriorated transformer power cables"],
+          ["2011", "replaced transmission-line relays and deteriorated transformer radiators"]
+        ]
       }
     ]
   },
@@ -2030,6 +2070,20 @@ export const stationProfiles = [
         alt: "Virginia Waters VIR-06 feeder route and three-phase sectionalizing recloser location",
         sourceId: "np-2014-improvements",
         pages: "physical PDF p. 40"
+      },
+      {
+        title: "2016 proposed RRD-10 extension to VIR-07",
+        image: "./reference-maps/rrd-10-2016-upgrade.jpg",
+        alt: "Filed route drawing for the proposed RRD-10 feeder extension and VIR-07 interconnection near Airport Road",
+        sourceId: "np-2016-feeder-growth",
+        pages: "physical PDF p. 418"
+      },
+      {
+        title: "2016 proposed PUL-05 connection to VIR-06",
+        image: "./reference-maps/pul-05-2016-new-feeder.jpg",
+        alt: "Filed route drawing for the proposed PUL-05 feeder from Pulpit Rock to the VIR-06 interconnection at Torbay Road",
+        sourceId: "np-2016-feeder-growth",
+        pages: "physical PDF p. 419"
       }
     ],
     feederRegister: ["VIR-01", "VIR-02", "VIR-03", "VIR-04", "VIR-05", "VIR-06", "VIR-07", "VIR-08"],
@@ -2063,6 +2117,18 @@ export const stationProfiles = [
           ["VIR-06", "west along the Outer Ring Road, then north along Torbay Road"],
           ["2014 customers", "approximately 1,150 residential and commercial customers"],
           ["Project", "install one three-phase sectionalizing recloser"]
+        ]
+      },
+      {
+        label: "2016 PROPOSED FEEDER TRANSFERS",
+        sourceId: "np-2016-feeder-growth",
+        pages: "physical PDF pp. 410 to 411 and 418 to 419",
+        facts: [
+          ["Station record", "eight 12.5 kV feeders serving approximately 7,700 customers"],
+          ["VIR-07 forecast", "602 A per phase on 477 ASC with a 590 A per-phase planning rating"],
+          ["VIR-07 transfer", "3 MVA to RRD-10 through a proposed 1.2 km extension"],
+          ["VIR-06 forecast", "601 A per phase on 477 ASC with a 590 A per-phase planning rating"],
+          ["VIR-06 transfer", "3.2 MVA to proposed PUL-05 through a 3.9 km feeder"]
         ]
       }
     ]
@@ -2103,6 +2169,33 @@ export const stationProfiles = [
           ["Proposed work", "reconductor 4.3 km of pre-existing line with 477 ASC"],
           ["Planned transfer", "approximately 4.5 MVA from Broad Cove to Pulpit Rock"]
         ]
+      },
+      {
+        label: "2016 PROPOSED FEEDER WORK",
+        sourceId: "np-2016-feeder-growth",
+        pages: "physical PDF pp. 409 to 411 and 417 to 419",
+        facts: [
+          ["PUL-02 forecast", "193 A per phase on #4 copper with a 153 A per-phase planning rating"],
+          ["PUL-02 scope", "reconductor approximately 3.5 km with 4/0 AASC"],
+          ["PUL-05 scope", "construct approximately 3.9 km to VIR-06 at Torbay Road"],
+          ["2015 transformer load", "35.8 MVA, 72% of the 50 MVA combined rating"]
+        ]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "2016 proposed PUL-02 conductor upgrade",
+        image: "./reference-maps/pul-02-2016-upgrade.jpg",
+        alt: "Filed route drawing for the proposed 3.5 kilometre PUL-02 conductor upgrade near Pouch Cove",
+        sourceId: "np-2016-feeder-growth",
+        pages: "physical PDF p. 417"
+      },
+      {
+        title: "2016 proposed PUL-05 connection to VIR-06",
+        image: "./reference-maps/pul-05-2016-new-feeder.jpg",
+        alt: "Filed route drawing for the proposed 3.9 kilometre PUL-05 feeder to the VIR-06 interconnection at Torbay Road",
+        sourceId: "np-2016-feeder-growth",
+        pages: "physical PDF p. 419"
       }
     ]
   },

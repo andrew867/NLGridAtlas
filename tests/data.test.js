@@ -436,6 +436,24 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.match(stampsLane.historyRecords[0].facts.flat().join(" "), /SLA-02, SLA-03, SLA-05, SLA-06 and SLA-07/);
   assert.match(stampsLane.historyRecords[1].facts.flat().join(" "), /approximately 1\.26 MVA to SLA-08/);
   assert.match(stampsLane.historyRecords[3].facts.flat().join(" "), /approximately 135 A before conversion/);
+  assert.match(stampsLane.historyRecords[5].facts.flat().join(" "), /deteriorated transformer radiators/);
+});
+
+test("2016 feeder growth records retain proposed currents, transfers, and route drawings", () => {
+  const ridgeRoad = stationProfiles.find((station) => station.code === "RRD");
+  const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
+  const pulpitRock = stationProfiles.find((station) => station.code === "PUL");
+  const source = sources.find((item) => item.id === "np-2016-feeder-growth");
+
+  assert.equal(source.status, "proposed");
+  assert.match(ridgeRoad.historyRecords[0].facts.flat().join(" "), /3 MVA from VIR-07/);
+  assert.equal(ridgeRoad.referenceSheets[0].image, "./reference-maps/rrd-10-2016-upgrade.jpg");
+  assert.match(virginiaWaters.historyRecords[1].facts.flat().join(" "), /602 A per phase.*590 A per-phase planning rating/);
+  assert.match(virginiaWaters.historyRecords[1].facts.flat().join(" "), /3\.2 MVA to proposed PUL-05/);
+  assert.equal(virginiaWaters.referenceSheets[3].pages, "physical PDF p. 419");
+  assert.match(pulpitRock.historyRecords[1].facts.flat().join(" "), /193 A per phase.*153 A per-phase planning rating/);
+  assert.match(pulpitRock.historyRecords[1].facts.flat().join(" "), /35\.8 MVA, 72%/);
+  assert.equal(pulpitRock.referenceSheets[0].image, "./reference-maps/pul-02-2016-upgrade.jpg");
 });
 
 test("station history records retain source and page references", async () => {
