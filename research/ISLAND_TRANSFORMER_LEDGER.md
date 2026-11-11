@@ -20,6 +20,7 @@ Work item: `ISL-006`
 | Holyrood | 2024 completion record | T31 transport, installation, construction and commissioning finished in 2024 | 2024 Capital Expenditures and Carryover Report, physical PDF p. 332 |
 | Bay d'Espoir station 1 | 1998 system operating diagram | T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each | 2016 Capital Budget Application Volume III, physical PDF p. 248 |
 | Bay d'Espoir station 2 | 2013 system operating diagram | T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA; T10 and T12, 230/69 kV, 15/20/25 MVA each; T11, 69/24 kV, 10/13.3/16.6 MVA | 2016 Capital Budget Application Volume III, physical PDF p. 249 |
+| Come By Chance | 2014 facility review and 2023 Braya application | T1 and T2, 230/13.8 kV, 30/40/50 MVA each, manufactured in 1972; both serve only the Braya refinery, with the approved 2023 to 2024 bushing work charged to Braya | PUB-NLH-161, physical PDF pp. 54 to 56; Braya contribution application, physical PDF pp. 4 to 7 |
 
 ## Published station records with staged ratings
 
@@ -39,7 +40,7 @@ Work item: `ISL-006`
 | Target | Missing evidence |
 | --- | --- |
 | Bay d'Espoir current station arrangement | The located station 1 drawing is dated 1998 and the station 2 drawing is dated 2013; a later complete revision remains open |
-| Come By Chance customer interface | Transformer designations, staged ratings and ownership boundary |
+| Come By Chance current station arrangement | The transformer ratings, customer assignment and 2014 bus arrangement are documented; a later complete station one-line remains open |
 | Remaining rural stations | Transformer designations, manufacture dates, in-service dates, impedances and current one-lines |
 | Bottom Brook and Stephenville | Post-construction one-line confirming the final 2021 project arrangement |
 | Grand Falls and Bishop's Falls | Current generator-step-up and station-bus arrangement |

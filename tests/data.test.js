@@ -308,6 +308,7 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   const howley = islandTerminalRecords.find((record) => record.code === "HOW");
   const masseyDrive = islandTerminalRecords.find((record) => record.code === "MAS");
   const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
+  const comeByChance = islandTerminalRecords.find((record) => record.code === "CBC");
 
   assert.match(stonyBrook.facts.flat().join(" "), /75\/100\/125 MVA each in the 2003 system report/);
   assert.match(deerLake.facts.flat().join(" "), /45\/60\/75 MVA/);
@@ -323,12 +324,20 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
     { label: "T10", rating: "15/20/25 MVA", from: "b1", to: "b2" },
     { label: "T12", rating: "15/20/25 MVA", from: "b1", to: "b2" }
   ]);
+  assert.match(comeByChance.facts.flat().join(" "), /230\/13\.8 kV, 30\/40\/50 MVA each; both manufactured in 1972/);
+  assert.match(comeByChance.facts.flat().join(" "), /T1 and T2 serve only the Braya refinery/);
+  assert.deepEqual(comeByChance.diagram.transformers, [
+    { label: "T1", rating: "30/40/50 MVA", from: "b1", to: "b2" },
+    { label: "T2", rating: "30/40/50 MVA", from: "b1", to: "b2" }
+  ]);
   assert.match(components["hrd-t8"].summary, /new 75\/100\/125 MVA transformer was installed as Holyrood T8 in 2014/);
   assert.match(components["hrd-t7"].summary, /Churchill Falls T31/);
   assert.match(components["hrd-t7"].summary, /finished in 2024/);
   assert.ok(howley.sources.some((reference) => reference.sourceId === "nlh-howley-system-2003"));
   assert.ok(masseyDrive.sources.some((reference) => reference.sourceId === "nlh-system-additions-2001"));
   assert.ok(bayDEspoir.sources.some((reference) => reference.sourceId === "nlh-bde-one-lines-2016"));
+  assert.ok(comeByChance.sources.some((reference) => reference.sourceId === "nlh-cbc-facility-review-2014"));
+  assert.ok(comeByChance.sources.some((reference) => reference.sourceId === "nlh-braya-ciac-2023"));
 });
 
 test("2027 transformer register updates Avalon station records", async () => {

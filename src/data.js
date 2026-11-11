@@ -210,6 +210,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/PUB-NLH-330.PDF"
   },
   {
+    id: "nlh-cbc-facility-review-2014",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "PUB-NLH-161, Facilities Winter Readiness Review",
+    topics: ["Come By Chance", "T1", "T2", "terminal station", "transformer ratings", "bus arrangement"],
+    pages: "physical PDF pp. 54 to 56",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-161.pdf"
+  },
+  {
+    id: "nlh-braya-ciac-2023",
+    year: 2023,
+    organization: "NL Hydro",
+    title: "Contribution by Braya for Come By Chance Transformer Work",
+    topics: ["Come By Chance", "Braya", "T1", "T2", "customer-specific assets", "bushings"],
+    pages: "physical PDF pp. 4 to 7",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2023/NLH2023CIACBrayaTowards/app/From%20NLH%20-%20Approval%20of%20a%20%20CIAC%20by%20Braya%20towards%20the%20Cost%20of%20Improvements%20to%20its%20Property%20-%202023-11-29.PDF"
+  },
+  {
     id: "nlh-transformer-loading-2015",
     year: 2015,
     organization: "NL Hydro",
@@ -2455,15 +2475,15 @@ export const islandTerminalRecords = [
     code: "CBC",
     name: "Come By Chance Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/13.8 kV shown on the 2013 system one-line"], ["Reactive equipment", "Four 38.35 MVAR, 230 kV capacitor banks installed in 2011/2012"], ["230 kV circuits", "TL207 to Sunnyside; TL237 to Western Avalon"]],
+    facts: [["T1 and T2, 2014 facility review", "230/13.8 kV, 30/40/50 MVA each; both manufactured in 1972"], ["230 kV bus, 2014 facility review", "Split B1/B2 bus with two disconnects and one SF6 bus-tie breaker"], ["13.8 kV equipment, 2014 facility review", "Three breakers, two disconnects and two 75 kVA, 13.8 kV/230-115 V station-service transformers"], ["Customer assignment, 2023 application", "T1 and T2 serve only the Braya refinery; Braya was responsible for the approved bushing-replacement capital cost"], ["Reactive equipment", "Four 38.35 MVAR, 230 kV capacitor banks installed in 2011/2012"], ["230 kV circuits", "TL207 to Sunnyside; TL237 to Western Avalon"]],
     diagram: {
-      label: "2013 system one-line / capacitor-bank record",
+      label: "2014 facility arrangement / dated capacitor record / 2018 routes",
       buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "13.8 kV customer interface", voltage: "13.8 kV" }],
-      transformers: [{ label: "Customer transformation", rating: "Rating not stated on overview", from: "b1", to: "b2" }],
+      transformers: [{ label: "T1", rating: "30/40/50 MVA", from: "b1", to: "b2" }, { label: "T2", rating: "30/40/50 MVA", from: "b1", to: "b2" }],
       circuits: [{ label: "TL207", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL237", destination: "Western Avalon", bus: "b1" }],
       shunts: [{ label: "C1", rating: "38.35 MVAR", bus: "b1" }, { label: "C2", rating: "38.35 MVAR", bus: "b1" }, { label: "C3", rating: "38.35 MVAR", bus: "b1" }, { label: "C4", rating: "38.35 MVAR", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-cbc-2013", "PDF p. 1"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+    sources: [sourceRef("nlh-cbc-facility-review-2014", "physical PDF pp. 54 to 56"), sourceRef("nlh-braya-ciac-2023", "physical PDF pp. 4 to 7"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-cbc-2013", "PDF p. 1"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
   },
   {
     code: "USL",

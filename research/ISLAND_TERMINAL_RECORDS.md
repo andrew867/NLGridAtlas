@@ -15,7 +15,7 @@ The terminal browser uses dated connection diagrams. It does not present a break
 | Grand Falls and Bishop's Falls | 2013 system one-line | Three generation ratings on the 138 kV network |
 | Massey Drive | 2001 system-additions testimony, 2015 transformer loading response and 2018 route table | 1998 replacement of a 66.7 MVA unit by a 125 MVA unit, T1, T2 and T3 customer assignments, two 230 kV lines |
 | Stephenville | 2021 retirement study and 2023 planning assessment | T3 rating and TL209 connection |
-| Come By Chance | 2013 system one-line, capacitor-bank response and 2018 route table | 230/13.8 kV interface, TL207, TL237 and four 38.35 MVAR capacitor banks |
+| Come By Chance | 2014 facility review, 2023 Braya contribution application, capacitor-bank response and 2018 route table | T1 and T2 ratings and 1972 manufacture date; split 230 kV bus; customer-specific cost assignment; four capacitor banks; two filed 230 kV routes |
 | Berry Hill | 2013 system one-line and 2018 route table | 138/66 kV transformation; TL239, TL259, and TL226 |
 | Peter's Barren | 2013 system one-line and 2018 route table | 138/66 kV transformation; TL259, TL241, and TL262; the 2018 table prints the name as Peter's Barron |
 | Plum Point | 2013 system one-line and 2018 route table | 138/12.5 kV transformation; two 5 MVAR capacitor banks; TL241 and TL244 |
@@ -31,7 +31,7 @@ The terminal browser uses dated connection diagrams. It does not present a break
 ## Open drawing targets
 
 - Current breaker-level one-lines for Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Massey Drive, Stephenville, and Come By Chance.
-- Transformer nameplate ratings for the Bay d'Espoir station interface and the Come By Chance customer transformation.
+- Later complete station drawings for Bay d'Espoir and Come By Chance.
 - A post-construction Bottom Brook and Stephenville drawing confirming the final arrangement after the 2021 project.
 - The present Grand Falls and Bishop's Falls bus and generator-step-up arrangement.
 - Transformer ratings, dates, and current breaker arrangements for the added rural station records, deferred after the 2026-11-11 pass.
