@@ -22,12 +22,16 @@
       "title": "Complete and report the PUB mirror and index",
       "phase": 0,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Confirm crawler completion, unresolved URLs, document counts, extraction counts, page index counts, and final archive health.",
       "dependencies": [],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "research/PUB_MIRROR_AUDIT_2026-11-11.md",
+        "C:/src/misc/PUB/reports/audit.json",
+        "C:/src/misc/PUB/metadata/pub.sqlite"
+      ],
       "blocker": null,
-      "notes": "The resumed crawler downloaded 21 files without a reported transfer failure. Extraction, export, and the final audit were still running on 2026-11-10, so archive completion is not yet established."
+      "notes": "The 2026-11-10 final run completed extraction, export, and audit. All previously named timeout gaps were recovered. The crawl has no pending or transient work, but complete_mirror remains false because 1,587 URLs returned permanent 404 responses, 79 IIS _notes paths have permanent redirect loops, and three optional sitemap or robots probes are absent."
     },
     {
       "id": "ARC-002",
