@@ -7,6 +7,7 @@ research/derived/*
 !research/derived/np-2018-tod-study.json
 !research/derived/np-2018-tod-export-audit.json
 !research/derived/np-register-layers-2008-2013.json
+!research/derived/np-2027-transformer-register.json
 research/renders/
 research/tmp/
 .DS_Store

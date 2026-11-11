@@ -1,0 +1,1882 @@
+{
+  "source": {
+    "title": "2027 Capital Budget Application, Appendix A, Power Transformer Listing",
+    "organization": "Newfoundland Power",
+    "source_url": "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf",
+    "local_path": "C:/src/misc/PUB/mirror/applications/NP2027Capital/app/From NP - 2027 Capital Budget Application - 2026-05-29.PDF",
+    "sha256": "b55142e2f0a65cce29cba35c534492b1c151bb21f9925ff1a1daa71466522063",
+    "physical_pages": "546 to 553"
+  },
+  "transformers": [
+    {
+      "designation": "ABC-T1",
+      "station_code": "ABC",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 5.91,
+      "physical_page": 546
+    },
+    {
+      "designation": "APT-T1",
+      "station_code": "APT",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 16.72,
+      "physical_page": 546
+    },
+    {
+      "designation": "BCV-T1",
+      "station_code": "BCV",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 19.79,
+      "physical_page": 546
+    },
+    {
+      "designation": "BFS-T1",
+      "station_code": "BFS",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 8.47,
+      "physical_page": 546
+    },
+    {
+      "designation": "BHD-T1",
+      "station_code": "BHD",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 7.46,
+      "forecast_2026_mva": 3.82,
+      "physical_page": 546
+    },
+    {
+      "designation": "BIG-T1",
+      "station_code": "BIG",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 11.11,
+      "forecast_2026_mva": 8.3,
+      "physical_page": 546
+    },
+    {
+      "designation": "BLA-T1",
+      "station_code": "BLA",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 4.54,
+      "physical_page": 546
+    },
+    {
+      "designation": "BLK-T2",
+      "station_code": "BLK",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 16.21,
+      "physical_page": 546
+    },
+    {
+      "designation": "BOT-T1",
+      "station_code": "BOT",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 13.87,
+      "physical_page": 546
+    },
+    {
+      "designation": "BRB-T1",
+      "station_code": "BRB",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 11.54,
+      "physical_page": 546
+    },
+    {
+      "designation": "BRB-T4",
+      "station_code": "BRB",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 13.79,
+      "physical_page": 546
+    },
+    {
+      "designation": "BVA-T1",
+      "station_code": "BVA",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 13.81,
+      "physical_page": 546
+    },
+    {
+      "designation": "BVJ-T1",
+      "station_code": "BVJ",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 2.67,
+      "forecast_2026_mva": 0.29,
+      "physical_page": 546
+    },
+    {
+      "designation": "BVS-T1",
+      "station_code": "BVS",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 15.35,
+      "physical_page": 546
+    },
+    {
+      "designation": "BVS-T2",
+      "station_code": "BVS",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 15.0,
+      "forecast_2026_mva": 9.56,
+      "physical_page": 546
+    },
+    {
+      "designation": "CAB-T2",
+      "station_code": "CAB",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 3.83,
+      "physical_page": 546
+    },
+    {
+      "designation": "CAR-T1",
+      "station_code": "CAR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 18.45,
+      "physical_page": 546
+    },
+    {
+      "designation": "CAT-T2",
+      "station_code": "CAT",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 5.57,
+      "physical_page": 546
+    },
+    {
+      "designation": "CHA-T1",
+      "station_code": "CHA",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 50.0,
+      "forecast_2026_mva": 35.34,
+      "physical_page": 546
+    },
+    {
+      "designation": "CHA-T2",
+      "station_code": "CHA",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 17.02,
+      "physical_page": 546
+    },
+    {
+      "designation": "CLK-T1",
+      "station_code": "CLK",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 10.0,
+      "forecast_2026_mva": 5.21,
+      "physical_page": 546
+    },
+    {
+      "designation": "CLK-T2",
+      "station_code": "CLK",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 10.0,
+      "forecast_2026_mva": 5.53,
+      "physical_page": 546
+    },
+    {
+      "designation": "CLV-T2",
+      "station_code": "CLV",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 11.64,
+      "physical_page": 546
+    },
+    {
+      "designation": "CLV-T3",
+      "station_code": "CLV",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 13.01,
+      "physical_page": 546
+    },
+    {
+      "designation": "COB-T1",
+      "station_code": "COB",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 15.15,
+      "physical_page": 546
+    },
+    {
+      "designation": "COB-T3",
+      "station_code": "COB",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 19.22,
+      "physical_page": 546
+    },
+    {
+      "designation": "COL-T1",
+      "station_code": "COL",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 16.67,
+      "forecast_2026_mva": 6.99,
+      "physical_page": 547
+    },
+    {
+      "designation": "DLK-T1",
+      "station_code": "DLK",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 22.14,
+      "physical_page": 547
+    },
+    {
+      "designation": "DOY-T2",
+      "station_code": "DOY",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 5.13,
+      "physical_page": 547
+    },
+    {
+      "designation": "DUN-T1",
+      "station_code": "DUN",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 7.98,
+      "physical_page": 547
+    },
+    {
+      "designation": "FER-T1",
+      "station_code": "FER",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 4.0,
+      "forecast_2026_mva": 2.2,
+      "physical_page": 547
+    },
+    {
+      "designation": "FRN-T1",
+      "station_code": "FRN",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 4.92,
+      "physical_page": 547
+    },
+    {
+      "designation": "GAL-T1",
+      "station_code": "GAL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 9.67,
+      "physical_page": 547
+    },
+    {
+      "designation": "GAL-T2",
+      "station_code": "GAL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 9.57,
+      "physical_page": 547
+    },
+    {
+      "designation": "GAM-T1",
+      "station_code": "GAM",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 6.42,
+      "physical_page": 547
+    },
+    {
+      "designation": "GAN-T1",
+      "station_code": "GAN",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 18.1,
+      "physical_page": 547
+    },
+    {
+      "designation": "GAR-T1",
+      "station_code": "GAR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 3.72,
+      "forecast_2026_mva": 2.37,
+      "physical_page": 547
+    },
+    {
+      "designation": "GBE-T1",
+      "station_code": "GBE",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 7.2,
+      "size_mva": 0.33,
+      "forecast_2026_mva": 0.24,
+      "physical_page": 547
+    },
+    {
+      "designation": "GBS-T1",
+      "station_code": "GBS",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 8.78,
+      "physical_page": 547
+    },
+    {
+      "designation": "GBY-T1",
+      "station_code": "GBY",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 8.48,
+      "physical_page": 547
+    },
+    {
+      "designation": "GDL-T1",
+      "station_code": "GDL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 17.48,
+      "physical_page": 547
+    },
+    {
+      "designation": "GDL-T2",
+      "station_code": "GDL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 17.78,
+      "physical_page": 547
+    },
+    {
+      "designation": "GDL-T3",
+      "station_code": "GDL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 18.08,
+      "physical_page": 547
+    },
+    {
+      "designation": "GFS-T2",
+      "station_code": "GFS",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 13.5,
+      "physical_page": 547
+    },
+    {
+      "designation": "GFS-T3",
+      "station_code": "GFS",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 50.0,
+      "forecast_2026_mva": 30.45,
+      "physical_page": 547
+    },
+    {
+      "designation": "GFS-T5",
+      "station_code": "GFS",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 4.2,
+      "size_mva": 11.17,
+      "forecast_2026_mva": 6.27,
+      "physical_page": 547
+    },
+    {
+      "designation": "GIL-T1",
+      "station_code": "GIL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 7.11,
+      "physical_page": 547
+    },
+    {
+      "designation": "GLN-T1",
+      "station_code": "GLN",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 8.34,
+      "forecast_2026_mva": 3.82,
+      "physical_page": 547
+    },
+    {
+      "designation": "GLV-T1",
+      "station_code": "GLV",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 12.92,
+      "physical_page": 547
+    },
+    {
+      "designation": "GOU-T2",
+      "station_code": "GOU",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 13.23,
+      "physical_page": 547
+    },
+    {
+      "designation": "GOU-T3",
+      "station_code": "GOU",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 9.25,
+      "physical_page": 547
+    },
+    {
+      "designation": "GPD-T1",
+      "station_code": "GPD",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 2.8,
+      "forecast_2026_mva": 1.01,
+      "physical_page": 547
+    },
+    {
+      "designation": "GRH-T2",
+      "station_code": "GRH",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 15.04,
+      "physical_page": 548
+    },
+    {
+      "designation": "HAR-T1",
+      "station_code": "HAR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 14.9,
+      "forecast_2026_mva": 12.84,
+      "physical_page": 548
+    },
+    {
+      "designation": "HBS-T1",
+      "station_code": "HBS",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 4.02,
+      "physical_page": 548
+    },
+    {
+      "designation": "HCT-T3",
+      "station_code": "HCT",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 2.24,
+      "forecast_2026_mva": 1.59,
+      "physical_page": 548
+    },
+    {
+      "designation": "HGR-T1",
+      "station_code": "HGR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 9.54,
+      "physical_page": 548
+    },
+    {
+      "designation": "HOL-T1",
+      "station_code": "HOL",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 15.04,
+      "physical_page": 548
+    },
+    {
+      "designation": "HOW-T3",
+      "station_code": "HOW",
+      "type": "distribution",
+      "high_kv": 25.0,
+      "low_kv": 4.2,
+      "size_mva": 1.0,
+      "forecast_2026_mva": 1.04,
+      "physical_page": 548
+    },
+    {
+      "designation": "HUM-T1",
+      "station_code": "HUM",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 16.58,
+      "physical_page": 548
+    },
+    {
+      "designation": "HWD-T1",
+      "station_code": "HWD",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 16.62,
+      "physical_page": 548
+    },
+    {
+      "designation": "HWD-T2",
+      "station_code": "HWD",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 16.52,
+      "physical_page": 548
+    },
+    {
+      "designation": "HWD-T3",
+      "station_code": "HWD",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 50.0,
+      "forecast_2026_mva": 44.16,
+      "physical_page": 548
+    },
+    {
+      "designation": "ILC-T1",
+      "station_code": "ILC",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 9.89,
+      "physical_page": 548
+    },
+    {
+      "designation": "ISL-T1",
+      "station_code": "ISL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 4.0,
+      "forecast_2026_mva": 3.94,
+      "physical_page": 548
+    },
+    {
+      "designation": "JON-T1",
+      "station_code": "JON",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 0.33,
+      "forecast_2026_mva": 0.1,
+      "physical_page": 548
+    },
+    {
+      "designation": "KBR-T3",
+      "station_code": "KBR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 19.64,
+      "physical_page": 548
+    },
+    {
+      "designation": "KBR-T4",
+      "station_code": "KBR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 20.32,
+      "physical_page": 548
+    },
+    {
+      "designation": "KEL-T1",
+      "station_code": "KEL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 21.47,
+      "physical_page": 548
+    },
+    {
+      "designation": "KEN-T1",
+      "station_code": "KEN",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 20.04,
+      "physical_page": 548
+    },
+    {
+      "designation": "KEN-T2",
+      "station_code": "KEN",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 50.0,
+      "forecast_2026_mva": 41.93,
+      "physical_page": 548
+    },
+    {
+      "designation": "LAU-T1",
+      "station_code": "LAU",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.3,
+      "forecast_2026_mva": 6.73,
+      "physical_page": 548
+    },
+    {
+      "designation": "LET-T1",
+      "station_code": "LET",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 16.67,
+      "forecast_2026_mva": 8.9,
+      "physical_page": 548
+    },
+    {
+      "designation": "LEW-T1",
+      "station_code": "LEW",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 19.98,
+      "physical_page": 548
+    },
+    {
+      "designation": "LGL-T1",
+      "station_code": "LGL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 14.9,
+      "forecast_2026_mva": 6.19,
+      "physical_page": 548
+    },
+    {
+      "designation": "LLK-T1",
+      "station_code": "LLK",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 6.05,
+      "physical_page": 548
+    },
+    {
+      "designation": "LOK-T3",
+      "station_code": "LOK",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 4.0,
+      "forecast_2026_mva": 3.45,
+      "physical_page": 548
+    },
+    {
+      "designation": "LPD-T1",
+      "station_code": "LPD",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 20.0,
+      "physical_page": 548
+    },
+    {
+      "designation": "LPD-T2",
+      "station_code": "LPD",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 20.0,
+      "physical_page": 549
+    },
+    {
+      "designation": "MIL-T1",
+      "station_code": "MIL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 16.67,
+      "forecast_2026_mva": 12.85,
+      "physical_page": 549
+    },
+    {
+      "designation": "MKS-T1",
+      "station_code": "MKS",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 14.9,
+      "forecast_2026_mva": 8.0,
+      "physical_page": 549
+    },
+    {
+      "designation": "MMT-T1",
+      "station_code": "MMT",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 5.59,
+      "physical_page": 549
+    },
+    {
+      "designation": "MOB-T2",
+      "station_code": "MOB",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 16.67,
+      "forecast_2026_mva": 12.79,
+      "physical_page": 549
+    },
+    {
+      "designation": "MOL-T1",
+      "station_code": "MOL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 24.09,
+      "physical_page": 549
+    },
+    {
+      "designation": "MOL-T2",
+      "station_code": "MOL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 23.7,
+      "physical_page": 549
+    },
+    {
+      "designation": "MSY-T1",
+      "station_code": "MSY",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 18.33,
+      "physical_page": 549
+    },
+    {
+      "designation": "MUN-T1",
+      "station_code": "MUN",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 14.96,
+      "forecast_2026_mva": 3.87,
+      "physical_page": 549
+    },
+    {
+      "designation": "MUN-T2",
+      "station_code": "MUN",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 6.18,
+      "physical_page": 549
+    },
+    {
+      "designation": "NCH-T1",
+      "station_code": "NCH",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 4.17,
+      "physical_page": 549
+    },
+    {
+      "designation": "NHR-T1",
+      "station_code": "NHR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 7.6,
+      "physical_page": 549
+    },
+    {
+      "designation": "NWB-T1",
+      "station_code": "NWB",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 11.2,
+      "forecast_2026_mva": 5.85,
+      "physical_page": 549
+    },
+    {
+      "designation": "OPL-T1",
+      "station_code": "OPL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 15.0,
+      "forecast_2026_mva": 8.18,
+      "physical_page": 549
+    },
+    {
+      "designation": "OXP-T1",
+      "station_code": "OXP",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 9.87,
+      "physical_page": 549
+    },
+    {
+      "designation": "PAB-T5",
+      "station_code": "PAB",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 8.53,
+      "physical_page": 549
+    },
+    {
+      "designation": "PAS-T1",
+      "station_code": "PAS",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.3,
+      "forecast_2026_mva": 12.46,
+      "physical_page": 549
+    },
+    {
+      "designation": "PBD-T1",
+      "station_code": "PBD",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 16.67,
+      "forecast_2026_mva": 3.17,
+      "physical_page": 549
+    },
+    {
+      "designation": "PEP-T1",
+      "station_code": "PEP",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 11.7,
+      "physical_page": 549
+    },
+    {
+      "designation": "PEP-T2",
+      "station_code": "PEP",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 12.39,
+      "physical_page": 549
+    },
+    {
+      "designation": "PHR-T3",
+      "station_code": "PHR",
+      "type": "distribution",
+      "high_kv": 33.0,
+      "low_kv": 4.2,
+      "size_mva": 4.0,
+      "forecast_2026_mva": 2.35,
+      "physical_page": 549
+    },
+    {
+      "designation": "PJN-T1",
+      "station_code": "PJN",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 7.2,
+      "size_mva": 0.33,
+      "forecast_2026_mva": 0.0,
+      "physical_page": 549
+    },
+    {
+      "designation": "PUL-T1",
+      "station_code": "PUL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 18.79,
+      "physical_page": 549
+    },
+    {
+      "designation": "PUL-T2",
+      "station_code": "PUL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 19.09,
+      "physical_page": 549
+    },
+    {
+      "designation": "QTZ-T1",
+      "station_code": "QTZ",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 4.2,
+      "size_mva": 0.75,
+      "forecast_2026_mva": 0.1,
+      "physical_page": 549
+    },
+    {
+      "designation": "RBK-T2",
+      "station_code": "RBK",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 3.43,
+      "physical_page": 549
+    },
+    {
+      "designation": "ROB-T1",
+      "station_code": "ROB",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 3.92,
+      "physical_page": 550
+    },
+    {
+      "designation": "RRD-T2",
+      "station_code": "RRD",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 15.57,
+      "physical_page": 550
+    },
+    {
+      "designation": "RRD-T3",
+      "station_code": "RRD",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 17.54,
+      "physical_page": 550
+    },
+    {
+      "designation": "RVH-T1",
+      "station_code": "RVH",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 8.33,
+      "forecast_2026_mva": 3.36,
+      "physical_page": 550
+    },
+    {
+      "designation": "SCR-T1",
+      "station_code": "SCR",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 8.3,
+      "forecast_2026_mva": 5.97,
+      "physical_page": 550
+    },
+    {
+      "designation": "SCT-T1",
+      "station_code": "SCT",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 1.7,
+      "physical_page": 550
+    },
+    {
+      "designation": "SCT-T2",
+      "station_code": "SCT",
+      "type": "distribution",
+      "high_kv": 25.0,
+      "low_kv": 12.5,
+      "size_mva": 4.0,
+      "forecast_2026_mva": 0.98,
+      "physical_page": 550
+    },
+    {
+      "designation": "SCV-T2",
+      "station_code": "SCV",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 11.2,
+      "forecast_2026_mva": 8.69,
+      "physical_page": 550
+    },
+    {
+      "designation": "SJM-T1",
+      "station_code": "SJM",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 15.84,
+      "physical_page": 550
+    },
+    {
+      "designation": "SJM-T2",
+      "station_code": "SJM",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 17.19,
+      "physical_page": 550
+    },
+    {
+      "designation": "SJM-T3",
+      "station_code": "SJM",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 11.25,
+      "physical_page": 550
+    },
+    {
+      "designation": "SLA-T1",
+      "station_code": "SLA",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 4.2,
+      "size_mva": 13.3,
+      "forecast_2026_mva": 3.75,
+      "physical_page": 550
+    },
+    {
+      "designation": "SLA-T2",
+      "station_code": "SLA",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 4.2,
+      "size_mva": 10.4,
+      "forecast_2026_mva": 3.3,
+      "physical_page": 550
+    },
+    {
+      "designation": "SLA-T3",
+      "station_code": "SLA",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 19.86,
+      "physical_page": 550
+    },
+    {
+      "designation": "SLA-T4",
+      "station_code": "SLA",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 20.49,
+      "physical_page": 550
+    },
+    {
+      "designation": "SMV-T1",
+      "station_code": "SMV",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 4.0,
+      "forecast_2026_mva": 2.87,
+      "physical_page": 550
+    },
+    {
+      "designation": "SPF-T1",
+      "station_code": "SPF",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 13.77,
+      "physical_page": 550
+    },
+    {
+      "designation": "SPO-T1",
+      "station_code": "SPO",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 15.0,
+      "forecast_2026_mva": 11.99,
+      "physical_page": 550
+    },
+    {
+      "designation": "SPR-T1",
+      "station_code": "SPR",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 16.67,
+      "forecast_2026_mva": 9.91,
+      "physical_page": 550
+    },
+    {
+      "designation": "STG-T1",
+      "station_code": "STG",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 3.5,
+      "physical_page": 550
+    },
+    {
+      "designation": "STX-T1",
+      "station_code": "STX",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 4.97,
+      "physical_page": 550
+    },
+    {
+      "designation": "SUM-T1",
+      "station_code": "SUM",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 7.41,
+      "physical_page": 550
+    },
+    {
+      "designation": "SUN-T5",
+      "station_code": "SUN",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 9.64,
+      "physical_page": 550
+    },
+    {
+      "designation": "TNS-T1",
+      "station_code": "TNS",
+      "type": "distribution",
+      "high_kv": 138.0,
+      "low_kv": 14.4,
+      "size_mva": 1.0,
+      "forecast_2026_mva": 0.91,
+      "physical_page": 550
+    },
+    {
+      "designation": "TRN-T1",
+      "station_code": "TRN",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 6.67,
+      "forecast_2026_mva": 3.78,
+      "physical_page": 550
+    },
+    {
+      "designation": "TRP-T1",
+      "station_code": "TRP",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 15.0,
+      "forecast_2026_mva": 2.49,
+      "physical_page": 550
+    },
+    {
+      "designation": "TWG-T1",
+      "station_code": "TWG",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 9.24,
+      "physical_page": 551
+    },
+    {
+      "designation": "VIC-T1",
+      "station_code": "VIC",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 8.71,
+      "physical_page": 551
+    },
+    {
+      "designation": "VIR-T1",
+      "station_code": "VIR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 20.2,
+      "physical_page": 551
+    },
+    {
+      "designation": "VIR-T2",
+      "station_code": "VIR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 22.53,
+      "physical_page": 551
+    },
+    {
+      "designation": "VIR-T3",
+      "station_code": "VIR",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 11.94,
+      "physical_page": 551
+    },
+    {
+      "designation": "WAL-T1",
+      "station_code": "WAL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 20.0,
+      "forecast_2026_mva": 20.74,
+      "physical_page": 551
+    },
+    {
+      "designation": "WAL-T2",
+      "station_code": "WAL",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 25.0,
+      "forecast_2026_mva": 21.16,
+      "physical_page": 551
+    },
+    {
+      "designation": "WAV-T6",
+      "station_code": "WAV",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.3,
+      "forecast_2026_mva": 6.78,
+      "physical_page": 551
+    },
+    {
+      "designation": "WBC-T1",
+      "station_code": "WBC",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 25.0,
+      "size_mva": 8.33,
+      "forecast_2026_mva": 4.03,
+      "physical_page": 551
+    },
+    {
+      "designation": "WES-T1",
+      "station_code": "WES",
+      "type": "distribution",
+      "high_kv": 66.0,
+      "low_kv": 12.5,
+      "size_mva": 13.33,
+      "forecast_2026_mva": 9.75,
+      "physical_page": 551
+    },
+    {
+      "designation": "CAB-T1",
+      "station_code": "CAB",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 7.2,
+      "size_mva": 11.25,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "FPD-T1-A",
+      "station_code": "FPD",
+      "type": "generation",
+      "high_kv": 12.5,
+      "low_kv": 4.2,
+      "size_mva": 0.25,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "FPD-T1-B",
+      "station_code": "FPD",
+      "type": "generation",
+      "high_kv": 12.5,
+      "low_kv": 4.2,
+      "size_mva": 0.25,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "FPD-T1-C",
+      "station_code": "FPD",
+      "type": "generation",
+      "high_kv": 12.5,
+      "low_kv": 4.2,
+      "size_mva": 0.25,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "GRH-T1",
+      "station_code": "GRH",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 13.8,
+      "size_mva": 30.0,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "HCP-T1",
+      "station_code": "HCP",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 6.9,
+      "size_mva": 12.0,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "HCT-T1",
+      "station_code": "HCT",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 4.2,
+      "size_mva": 3.0,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "LBK-T1",
+      "station_code": "LBK",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 2.4,
+      "size_mva": 10.0,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "LOK-T1",
+      "station_code": "LOK",
+      "type": "generation",
+      "high_kv": 46.0,
+      "low_kv": 6.9,
+      "size_mva": 2.5,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "LOK-T2",
+      "station_code": "LOK",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 46.0,
+      "size_mva": 7.46,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "LOK-T4",
+      "station_code": "LOK",
+      "type": "generation",
+      "high_kv": 46.0,
+      "low_kv": 6.9,
+      "size_mva": 2.5,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "MOP-T1",
+      "station_code": "MOP",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 6.9,
+      "size_mva": 13.33,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "MRP-T1",
+      "station_code": "MRP",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 2.4,
+      "size_mva": 1.5,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "NCH-T2",
+      "station_code": "NCH",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 6.9,
+      "size_mva": 5.33,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "PAB-T3",
+      "station_code": "PAB",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 4.2,
+      "size_mva": 4.0,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "PBK-T1",
+      "station_code": "PBK",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 6.9,
+      "size_mva": 6.67,
+      "forecast_2026_mva": null,
+      "physical_page": 551
+    },
+    {
+      "designation": "PHR-T1",
+      "station_code": "PHR",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 2.4,
+      "size_mva": 6.7,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "PIT-T1-A",
+      "station_code": "PIT",
+      "type": "generation",
+      "high_kv": 12.5,
+      "low_kv": 4.2,
+      "size_mva": 0.33,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "PIT-T1-B",
+      "station_code": "PIT",
+      "type": "generation",
+      "high_kv": 12.5,
+      "low_kv": 4.2,
+      "size_mva": 0.33,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "PIT-T1-C",
+      "station_code": "PIT",
+      "type": "generation",
+      "high_kv": 12.5,
+      "low_kv": 4.2,
+      "size_mva": 0.33,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "PUN-T1-A",
+      "station_code": "PUN",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 2.4,
+      "size_mva": 0.33,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "PUN-T1-B",
+      "station_code": "PUN",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 2.4,
+      "size_mva": 0.33,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "PUN-T1-C",
+      "station_code": "PUN",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 2.4,
+      "size_mva": 0.33,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "RBH-T1",
+      "station_code": "RBH",
+      "type": "generation",
+      "high_kv": 25.0,
+      "low_kv": 6.9,
+      "size_mva": 9.3,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "RBK-T1",
+      "station_code": "RBK",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 6.9,
+      "size_mva": 23.75,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "ROP-T1",
+      "station_code": "ROP",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 6.9,
+      "size_mva": 5.33,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "SBK-T1",
+      "station_code": "SBK",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 6.9,
+      "size_mva": 7.0,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "SCV-T1",
+      "station_code": "SCV",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 4.2,
+      "size_mva": 3.33,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "TCV-T1",
+      "station_code": "TCV",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 6.9,
+      "size_mva": 7.5,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "TOP-T1",
+      "station_code": "TOP",
+      "type": "generation",
+      "high_kv": 25.0,
+      "low_kv": 2.4,
+      "size_mva": 0.75,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "VIC-T2",
+      "station_code": "VIC",
+      "type": "generation",
+      "high_kv": 12.5,
+      "low_kv": 2.4,
+      "size_mva": 0.6,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "WBK-T1",
+      "station_code": "WBK",
+      "type": "generation",
+      "high_kv": 12.5,
+      "low_kv": 4.2,
+      "size_mva": 0.33,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "WES-T2",
+      "station_code": "WES",
+      "type": "generation",
+      "high_kv": 66.0,
+      "low_kv": 13.8,
+      "size_mva": 16.0,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "BLK-T3",
+      "station_code": "BLK",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 41.6,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "BRB-T2",
+      "station_code": "BRB",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 41.6,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "BRB-T3",
+      "station_code": "BRB",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 41.6,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "CAT-T1",
+      "station_code": "CAT",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 16.7,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "CLV-T1",
+      "station_code": "CLV",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": null,
+      "physical_page": 552
+    },
+    {
+      "designation": "COB-T2",
+      "station_code": "COB",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 41.6,
+      "forecast_2026_mva": null,
+      "physical_page": 553
+    },
+    {
+      "designation": "GAM-T2",
+      "station_code": "GAM",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 41.6,
+      "forecast_2026_mva": null,
+      "physical_page": 553
+    },
+    {
+      "designation": "GAN-T2",
+      "station_code": "GAN",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 21.3,
+      "forecast_2026_mva": null,
+      "physical_page": 553
+    },
+    {
+      "designation": "GAN-T3",
+      "station_code": "GAN",
+      "type": "transmission",
+      "high_kv": 66.0,
+      "low_kv": null,
+      "size_mva": 3.5,
+      "forecast_2026_mva": null,
+      "physical_page": 553
+    },
+    {
+      "designation": "GFS-T1",
+      "station_code": "GFS",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 29.7,
+      "forecast_2026_mva": null,
+      "physical_page": 553
+    },
+    {
+      "designation": "GOU-T1",
+      "station_code": "GOU",
+      "type": "transmission",
+      "high_kv": 66.0,
+      "low_kv": 33.0,
+      "size_mva": 10.0,
+      "forecast_2026_mva": null,
+      "physical_page": 553
+    },
+    {
+      "designation": "RBK-T3",
+      "station_code": "RBK",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 25.0,
+      "forecast_2026_mva": null,
+      "physical_page": 553
+    },
+    {
+      "designation": "SPO-T4",
+      "station_code": "SPO",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 41.6,
+      "forecast_2026_mva": null,
+      "physical_page": 553
+    },
+    {
+      "designation": "SPO-T5",
+      "station_code": "SPO",
+      "type": "transmission",
+      "high_kv": 138.0,
+      "low_kv": 66.0,
+      "size_mva": 41.6,
+      "forecast_2026_mva": null,
+      "physical_page": 553
+    }
+  ]
+}
