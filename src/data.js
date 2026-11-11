@@ -280,6 +280,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/substationproject/From%20NP%20-%20St.%20Johns%20North-Portugal%20Cove%20System%20Planning%20Study%20Update%20-%202021-02-12.PDF"
   },
   {
+    id: "np-2020-capital-gdl",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, GDL-09 New Feeder Construction",
+    topics: ["Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "GDL-07", "GDL-09", "12.5 kV"],
+    pages: "physical PDF pp. 447 to 453",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "np-2023-ca-np-176",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "CA-NP-176, Distribution Reliability Records",
+    topics: ["Glendale", "GDL-09", "completion", "SAIDI", "SAIFI"],
+    pages: "physical PDF pp. 6 to 7",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/rfis/CA-NP-176.PDF"
+  },
+  {
+    id: "np-2011-capital-stations",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, St. John's Main and Stamp's Lane records",
+    topics: ["St. John's Main", "Stamp's Lane", "SJM-T1", "SJM-T2", "SJM-T4", "SLA-T1", "SLA-T2", "SLA-T3", "SLA-T4"],
+    pages: "physical PDF pp. 297 to 298 and 413 to 416",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2015-capital-sjm",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, St. John's Main Transformer Addition",
+    topics: ["St. John's Main", "SJM-T1", "SJM-T2", "SJM-T3", "SJM-T4", "12.5 kV", "4.16 kV"],
+    pages: "physical PDF pp. 502 to 507",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2026-ca-np-065",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "CA-NP-065, Power Transformer Failure Record",
+    topics: ["Stamp's Lane", "SLA-T4", "PUL-T2", "2021 replacement"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/responses/CA-NP-065.PDF"
+  },
+  {
     id: "np-2021-burin-reactive",
     year: 2021,
     organization: "Newfoundland Power / Hatch",
@@ -1413,6 +1463,91 @@ export const stationProfiles = [
         ["Five-year maximum peak", "34.7 MVA"],
         ["RRD-T3 failure study", "15.26 MVA transferable; 3.1 MVA exposed"],
         ["RRD-T3 project", "replacement planned from 2027 to 2029"]
+      ]
+    }
+  },
+  {
+    code: "GDL",
+    name: "Glendale",
+    voltage: "66 kV / 12.5 kV station record",
+    feederRegisterLabel: "2005 TO 2021 FEEDER RECORD",
+    feederRegister: ["GDL-01", "GDL-02", "GDL-03", "GDL-04", "GDL-05", "GDL-06", "GDL-07", "GDL-08", "GDL-09"],
+    mapPages: [["GDL-01", 58], ["GDL-02", 59], ["GDL-03", 60], ["GDL-04", 61], ["GDL-05", 62], ["GDL-06", 63]],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2020 CAPITAL BUDGET RECORD",
+      title: "Glendale transformer and feeder expansion",
+      sourceId: "np-2020-capital-gdl",
+      pages: "physical PDF pp. 452 to 453",
+      facts: [
+        ["Transformer bank", "GDL-T1, GDL-T2 and GDL-T3; 25 MVA each; described as 66/12.5 kV"],
+        ["2019 station load", "approximately 55 MVA combined peak; approximately 20 MVA spare capacity"],
+        ["GDL-T3", "installed in 2013"],
+        ["GDL-09", "new 12.5 kV feeder; approximately 2.1 km to GDL-07 at Southlands Boulevard"]
+      ]
+    },
+    planningRecord: {
+      label: "2021 COMPLETION RECORD",
+      sourceId: "np-2023-ca-np-176",
+      pages: "physical PDF pp. 6 to 7",
+      facts: [
+        ["GDL-09", "construction completed in 2021"]
+      ]
+    }
+  },
+  {
+    code: "SJM",
+    name: "St. John's Main",
+    voltage: "66 kV / 12.5 kV / historical 4.16 kV",
+    mapPages: [["SJM-06", 135], ["SJM-08", 136], ["SJM-11", 137], ["SJM-13", 138]],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2015 TRANSFORMER ADDITION",
+      title: "St. John's Main transformer expansion",
+      sourceId: "np-2015-capital-stations",
+      pages: "physical PDF pp. 502 to 507",
+      facts: [
+        ["2014 transformer bank", "SJM-T1 and SJM-T2, 25 MVA each at 66/12.5 kV; SJM-T4, 7.5 MVA at 66/4.16 kV"],
+        ["2014 distribution", "12 feeders; four underground and eight overhead"],
+        ["Selected work", "install 25 MVA SJM-T3 in parallel with SJM-T1 and SJM-T2"],
+        ["2015 estimate", "$1.479 million"]
+      ]
+    },
+    planningRecord: {
+      label: "2010 SYSTEM ARRANGEMENT",
+      sourceId: "np-2011-capital-stations",
+      pages: "physical PDF pp. 413 to 416",
+      facts: [
+        ["Underground network", "SJM-03, SJM-07 and SJM-08 interconnected"],
+        ["Waterford River duct bank", "nine feeders"],
+        ["SJM-T4 feeder", "SJM-12 at 4.16 kV"]
+      ]
+    }
+  },
+  {
+    code: "SLA",
+    name: "Stamp's Lane",
+    voltage: "66 kV / 12.5 kV / 4.16 kV",
+    mapPages: [["SLA-02", 139], ["SLA-03", 140], ["SLA-05", 141], ["SLA-06", 142], ["SLA-07", 143], ["SLA-08", 144], ["SLA-10", 145], ["SLA-11", 146], ["SLA-12", 147], ["SLA-13", 148]],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2011 STATION RECORD",
+      title: "Stamp's Lane station arrangement",
+      sourceId: "np-2011-capital-stations",
+      pages: "physical PDF pp. 297 to 298",
+      facts: [
+        ["Transformer bank", "four transformers; 50 MVA combined at 12.5 kV and 21 MVA combined at 4.16 kV"],
+        ["Distribution", "five 4.16 kV feeders and six 12.5 kV feeders"],
+        ["66 kV circuits", "13L, 14L, 15L, 31L, 69L and 70L"],
+        ["2007 work", "foundation and power-cable repairs; relay upgrades on 11 feeders"]
+      ]
+    },
+    planningRecord: {
+      label: "2021 TRANSFORMER REPLACEMENT",
+      sourceId: "np-2026-ca-np-065",
+      pages: "physical PDF p. 1",
+      facts: [
+        ["SLA-T4", "replaced in 2021 with repaired PUL-T2"]
       ]
     }
   },

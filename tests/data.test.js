@@ -400,6 +400,31 @@ test("Goulds record connects the switching station, distribution bank, and feede
   ]);
 });
 
+test("Glendale, St. John's Main, and Stamp's Lane retain their filed station records", () => {
+  const glendale = stationProfiles.find((station) => station.code === "GDL");
+  const stJohnsMain = stationProfiles.find((station) => station.code === "SJM");
+  const stampsLane = stationProfiles.find((station) => station.code === "SLA");
+  const glendaleFacts = glendale.engineeringRecord.facts.flat().join(" ");
+  const stJohnsMainFacts = stJohnsMain.engineeringRecord.facts.flat().join(" ");
+  const stampsLaneFacts = stampsLane.engineeringRecord.facts.flat().join(" ");
+
+  assert.deepEqual(glendale.feederRegister, ["GDL-01", "GDL-02", "GDL-03", "GDL-04", "GDL-05", "GDL-06", "GDL-07", "GDL-08", "GDL-09"]);
+  assert.deepEqual(glendale.mapPages, [["GDL-01", 58], ["GDL-02", 59], ["GDL-03", 60], ["GDL-04", 61], ["GDL-05", 62], ["GDL-06", 63]]);
+  assert.match(glendaleFacts, /GDL-T3; 25 MVA each; described as 66\/12\.5 kV/);
+  assert.match(glendaleFacts, /installed in 2013/);
+  assert.match(glendale.planningRecord.facts.flat().join(" "), /construction completed in 2021/);
+
+  assert.deepEqual(stJohnsMain.mapPages, [["SJM-06", 135], ["SJM-08", 136], ["SJM-11", 137], ["SJM-13", 138]]);
+  assert.match(stJohnsMainFacts, /SJM-T1 and SJM-T2, 25 MVA each at 66\/12\.5 kV/);
+  assert.match(stJohnsMainFacts, /install 25 MVA SJM-T3/);
+  assert.match(stJohnsMain.planningRecord.facts.flat().join(" "), /SJM-03, SJM-07 and SJM-08 interconnected/);
+
+  assert.deepEqual(stampsLane.mapPages, [["SLA-02", 139], ["SLA-03", 140], ["SLA-05", 141], ["SLA-06", 142], ["SLA-07", 143], ["SLA-08", 144], ["SLA-10", 145], ["SLA-11", 146], ["SLA-12", 147], ["SLA-13", 148]]);
+  assert.match(stampsLaneFacts, /50 MVA combined at 12\.5 kV and 21 MVA combined at 4\.16 kV/);
+  assert.match(stampsLaneFacts, /13L, 14L, 15L, 31L, 69L and 70L/);
+  assert.match(stampsLane.planningRecord.facts.flat().join(" "), /replaced in 2021 with repaired PUL-T2/);
+});
+
 test("map selection stays in place and feeder maps are expandable", async () => {
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");

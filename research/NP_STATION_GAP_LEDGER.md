@@ -29,11 +29,11 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 | [x] | Memorial, MUN | 12L and 14L supply; MUN-T1 and MUN-T2 ratings; two 12.5 kV bus sections; MUN-01 to MUN-10; MUN-01 and MUN-08 Health Sciences assignment | Post-refurbishment as-built revision | 2024 or later completion drawing |
 | [x] | Long Pond, LPD | 36L supply from Oxen Pond; 2024 T1 one-line; two 12.5 kV bus sections; MUN-20 to MUN-29 customer circuits; 2027 LPD-T1 and LPD-T2 ratings | Post-expansion as-built revision | 2024 or later completion drawing |
 | [x] | Goulds, GOU | 3L, 4L, 17L, 18L, 25L, and 72L terminations; 66/33 kV GOU-T1; 12.5 kV GOU-T2 and T3; GOU-01 to GOU-03 maps; 2007 station history; 2023 GOU-02 planning capacity and station customer count | Current bus arrangement and feeder-to-transformer assignments | Current one-line or protection drawing |
-| [ ] | Glendale, GDL | 2005 feeders GDL-01 to GDL-06; 2027 GDL-T1, T2, and T3 ratings | Bus arrangement and feeder assignments | Substation renewal filings and drawings |
+| [x] | Glendale, GDL | GDL-01 to GDL-09 record; GDL-01 to GDL-06 map sheets; three-transformer 2020 station record; GDL-T3 installed in 2013; GDL-09 completed in 2021; 2027 GDL-T1, T2, and T3 ratings | Current bus arrangement and feeder assignments | Protection drawings or current station one-line |
 | [x] | Virginia Waters, VIR | 2021 VIR-01 to VIR-08 record; 2021 three-transformer arrangement; 2027 VIR-T1, T2, and T3 operating records; selected Airport Substation expansion | Current bus arrangement and feeder assignments | Station renewal and protection filings |
 | [x] | Ridge Road, RRD | 30L, 32L, and 67L supply; RRD-T2 and RRD-T3 ratings; eight current 12.5 kV feeders; nine designations in the 2005 register; 34.7 MVA five-year maximum peak; RRD-T3 replacement planned for 2027 to 2029 | Bus arrangement and feeder assignments | Refurbishment one-line or protection drawing |
-| [ ] | Stamp's Lane, SLA | 2005 feeders SLA-01 to SLA-13; 2027 SLA-T1 to T4 ratings | 4.2 kV and 12.5 kV bus arrangement, feeder assignments | Refurbishment filings and station one-lines |
-| [ ] | St. John's Main, SJM | 2005 feeders SJM-01 to SJM-14; 2027 SJM-T1 to T3 ratings | 25 kV and 12.5 kV bus arrangement, feeder assignments | Refurbishment filings and station one-lines |
+| [x] | Stamp's Lane, SLA | Six 66 kV line terminations; 2011 four-transformer station record; ten feeder map sheets; SLA-T4 replaced with repaired PUL-T2 in 2021; 2027 SLA-T1 to T4 ratings | Current 4.2 kV and 12.5 kV bus arrangement and feeder assignments | Protection drawings or current station one-line |
+| [x] | St. John's Main, SJM | 2010 transformer and feeder arrangement; four feeder map sheets; selected 2015 SJM-T3 addition; 2027 SJM-T1 to T3 ratings | Current 25 kV and 12.5 kV bus arrangement and feeder assignments | Protection drawings or current station one-line |
 | [x] | Pepperell, PEP | PEP-T2 and PEP-05 2019 construction record; 2024 PEP-T1/T2 and PEP-05 supply table; 2027 PEP-T1 and T2 operating records | Current bus arrangement and 12.5/25 kV relationship | Station one-line or protection filing |
 | [x] | King's Bridge, KBR | 12L, 16L, and 30L supply; KBR-T3 and KBR-T4 ratings; six current 12.5 kV feeders; twelve designations in the 2005 register; 43.7 MVA five-year maximum peak; KBR-T3 replacement planned for summer 2028 | Bus arrangement and feeder assignments | Post-2028 commissioning drawing or expenditure report |
 
@@ -64,7 +64,7 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.
 - [ ] Current feeder register. Later capital filings prove additions such as PUL-04, PUL-05, KEN-01, and HWD-09 that are absent from the 2005 list.
-- [ ] Feeder map sheets beyond the 15 extracted Hardwoods, Kenmount, Oxen Pond, and Goulds sheets. HWD-08 is listed in the feeder register, but no corresponding extracted sheet is present.
+- [ ] Feeder map sheets beyond the 34 extracted Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, and Stamp's Lane sheets. HWD-08 is listed in the feeder register, but no corresponding extracted sheet is present.
 - [ ] Station one-lines that assign feeders to transformer banks and bus sections.
 - [ ] Commissioning and as-built records for replacement transformers.
 - [ ] Protection drawings that identify normally open bus ties and alternate supply paths.
@@ -84,3 +84,8 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 10. [2019 Capital Expenditure Report](http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202019%20Capital%20Expenditure%20Report%20-%202020-02-28.PDF), physical PDF pp. 8, 20 and 24.
 11. [St. John's North and Portugal Cove System Planning Study](http://www.pub.nl.ca/applications/2021/NP2021Capital/substationproject/From%20NP%20-%20St.%20Johns%20North-Portugal%20Cove%20System%20Planning%20Study%20Update%20-%202021-02-12.PDF), physical PDF pp. 6 to 14.
 12. [CA-NP-030, General Service Rate 2.4 supply table](http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-030.PDF), physical PDF p. 3.
+13. [2020 Capital Budget Application, GDL-09 New Feeder Construction](http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF), physical PDF pp. 447 to 453.
+14. [CA-NP-176, GDL-09 completion record](http://www.pub.nl.ca/applications/2023/NP2023Capital/rfis/CA-NP-176.PDF), physical PDF pp. 6 to 7.
+15. [2011 Capital Budget Application, St. John's Main and Stamp's Lane records](http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf), physical PDF pp. 297 to 298 and 413 to 416.
+16. [2015 Capital Budget Application, St. John's Main transformer addition](http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf), physical PDF pp. 502 to 507.
+17. [CA-NP-065, SLA-T4 replacement record](http://www.pub.nl.ca/applications/2026/NP2026Capital/responses/CA-NP-065.PDF), physical PDF p. 1.
