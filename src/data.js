@@ -234,7 +234,7 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "Electrical System Improvements",
-    topics: ["Broad Cove", "cold load pickup", "conductor", "39L", "HWD-08", "KEN", "VIR-06", "PUL-04", "GOU-01", "reclosers", "feeder routes"],
+    topics: ["Broad Cove", "cold load pickup", "conductor", "39L", "HWD-08", "KEN", "VIR-06", "PUL-04", "GOU-01", "CAB-01", "FER-01", "COL-01", "COL-02", "SPF-01", "SPF-02", "SPF-03", "HOL", "reclosers", "SCADA", "feeder routes"],
     pages: "physical PDF pp. 14 to 22 and 35 to 50",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf"
@@ -2023,6 +2023,102 @@ export const stationProfiles = [
           ["PUL-04", "south along Torbay Bypass Road to Indian Meal Line; approximately 550 customers"],
           ["Proposed work", "reconductor 4.3 km of pre-existing line with 477 ASC"],
           ["Planned transfer", "approximately 4.5 MVA from Broad Cove to Pulpit Rock"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "CAB",
+    name: "Cape Broyle",
+    mapPages: [],
+    eventLoads: [],
+    historyRecords: [
+      {
+        label: "2014 PROPOSED RECLOSER AND SCADA WORK",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 22",
+        facts: [
+          ["CAB-01", "approximately 1,300 customers"],
+          ["Existing equipment", "hydraulic recloser"],
+          ["Proposed work", "replace the hydraulic recloser with a digital recloser"],
+          ["Communications", "connect through Cape Broyle hydro plant equipment and integrate with Newfoundland Power SCADA"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "FER",
+    name: "Fermeuse",
+    mapPages: [],
+    eventLoads: [],
+    historyRecords: [
+      {
+        label: "2014 PROPOSED RECLOSER AND SCADA WORK",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 22",
+        facts: [
+          ["FER-01", "approximately 650 customers"],
+          ["Existing equipment", "hydraulic recloser"],
+          ["Proposed work", "replace the hydraulic recloser with a digital recloser"],
+          ["Communications", "connect through equipment in the substation building and integrate with Newfoundland Power SCADA"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "COL",
+    name: "Colliers",
+    mapPages: [],
+    eventLoads: [],
+    historyRecords: [
+      {
+        label: "2014 PROPOSED RECLOSER AND SCADA WORK",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 22",
+        facts: [
+          ["Feeders", "COL-01 and COL-02; approximately 1,400 customers combined"],
+          ["Existing equipment", "two hydraulic reclosers"],
+          ["Proposed work", "replace both hydraulic reclosers with digital reclosers"],
+          ["Communications", "establish a new channel and integrate both reclosers with Newfoundland Power SCADA"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "SPF",
+    name: "Springfield",
+    mapPages: [],
+    eventLoads: [],
+    historyRecords: [
+      {
+        label: "2014 PROPOSED RECLOSER AND SCADA WORK",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 22",
+        facts: [
+          ["Feeders", "SPF-01, SPF-02, and SPF-03; approximately 3,100 customers combined"],
+          ["Existing equipment", "three hydraulic reclosers"],
+          ["Proposed work", "replace all three hydraulic reclosers with digital reclosers"],
+          ["Communications", "establish a new channel and integrate all three reclosers with Newfoundland Power SCADA"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "HOL",
+    name: "Holyrood",
+    mapPages: [],
+    eventLoads: [],
+    historyRecords: [
+      {
+        label: "2014 PROPOSED 39L BREAKERS",
+        sourceId: "np-2014-improvements",
+        pages: "physical PDF p. 22",
+        facts: [
+          ["Supply", "39L between NL Hydro's Holyrood facility and Newfoundland Power's Broad Cove substation"],
+          ["Customers", "approximately 2,200"],
+          ["Approved related work", "refurbish and modernize Holyrood substation"],
+          ["Supplemental project", "install two breakers on 39L during summer 2014"],
+          ["Construction arrangement", "coordinate with the portable-substation installation for the approved modernization work"]
         ]
       }
     ]

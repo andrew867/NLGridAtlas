@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "status_values": ["not_started", "in_progress", "blocked", "done", "deferred"],
   "priority_values": ["P0", "P1", "P2", "P3"],
   "phase_values": [0, 1, 2, 3, 4, 5],
@@ -183,12 +183,15 @@
       "title": "Expand detailed Avalon substation coverage",
       "phase": 1,
       "priority": "P1",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Add consistent one-lines for every Avalon substation with sufficient public drawings, transformer data, and feeder data.",
       "dependencies": ["AVL-001", "AVL-002", "AVL-005"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "src/data.js",
+        "research/NP_STATION_GAP_LEDGER.md"
+      ],
       "blocker": null,
-      "notes": "Generic register tabs remain valid for stations without enough evidence."
+      "notes": "Detailed sourced records now cover Cape Broyle, Fermeuse, Colliers, Springfield, and Holyrood. The 2014 projects remain labelled proposed pending expenditure or completion records. Generic register tabs remain valid where public evidence is insufficient for a one-line."
     },
     {
       "id": "NAV-001",

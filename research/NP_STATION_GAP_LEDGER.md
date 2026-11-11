@@ -36,6 +36,11 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 | [x] | St. John's Main, SJM | Transformer record; four feeder maps; 2011 Water Street existing feeder schematic; 2015 SJM-T3 addition; SJM-03, 06, and 09 assigned to SJM-T1/T2; SJM-10 and 14 assigned to SJM-T3 | Current bus arrangement and remaining feeder assignments | Protection drawings or current station one-line |
 | [x] | Pepperell, PEP | PEP-T2 and PEP-05 construction record; PEP-05 assigned to PEP-T1/T2; 2027 PEP-T1 and T2 records; 2019 service-area map, customer counts, and tie points for PEP-01 to PEP-04 | Current bus arrangement and 12.5/25 kV relationship | Station one-line or protection filing |
 | [x] | King's Bridge, KBR | 12L, 16L, and 30L supply; KBR-T3 and T4 ratings; six current feeders; KBR-09, 11, 12, and 13 assigned to KBR-T3/T4; 43.7 MVA peak; 2019 service-area map, customer counts, and feeder tie points | Bus arrangement and remaining feeder assignments | Post-2028 commissioning drawing or expenditure report |
+| [x] | Cape Broyle, CAB | CAB-01 register; CAB-T2 at 66/25 kV; CAB-T1 generation transformer at 66/7.2 kV; 2014 proposed CAB-01 digital recloser and SCADA integration through the hydro plant communications equipment | Completion record and current station arrangement | 2014 expenditure report or later protection record |
+| [x] | Fermeuse, FER | FER-01 register; FER-T1 at 66/12.5 kV; 2014 proposed FER-01 digital recloser and SCADA integration | Completion record and current station arrangement | 2014 expenditure report or later protection record |
+| [x] | Colliers, COL | COL-01 and COL-02 register; COL-T1 at 138/12.5 kV; 2014 proposed replacement of two hydraulic reclosers and a new SCADA channel | Completion record and current station arrangement | 2014 expenditure report or later protection record |
+| [x] | Springfield, SPF | SPF-01 to SPF-03 register; SPF-T1 at 138/12.5 kV; 2014 proposed replacement of three hydraulic reclosers and a new SCADA channel | Completion record and current station arrangement | 2014 expenditure report or later protection record |
+| [x] | Holyrood, HOL | HOL-01 and HOL-02 register; HOL-T1 at 138/12.5 kV; 2014 proposed installation of two 39L breakers coordinated with approved station modernization | Breaker completion record and current station arrangement | 2014 expenditure report and station protection drawings |
 
 ## Archive priority
 
@@ -97,3 +102,4 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 22. [2019 Capital Expenditure Report](http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202019%20Capital%20Expenditure%20Report%20-%202020-02-28.PDF), physical PDF p. 24.
 23. [2023 Capital Budget Application, SLA-05 Refurbishment](http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF), physical PDF pp. 46 and 50.
 24. [2023 Capital Expenditure Report](http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202023%20Capital%20Expenditure%20Report%20-%202024-03-28.PDF), physical PDF p. 10.
+25. [2014 Electrical System Improvements](http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf), physical PDF p. 22.

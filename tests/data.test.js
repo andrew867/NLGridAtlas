@@ -518,6 +518,24 @@ test("2014 feeder service records preserve routes, customers, and proposed work"
   assert.match(pulpitRock.historyRecords[0].facts.flat().join(" "), /approximately 4\.5 MVA/);
 });
 
+test("2014 rural recloser and Holyrood breaker records remain proposed", () => {
+  const expected = {
+    CAB: /CAB-01 approximately 1,300 customers/,
+    FER: /FER-01 approximately 650 customers/,
+    COL: /COL-01 and COL-02; approximately 1,400 customers combined/,
+    SPF: /SPF-01, SPF-02, and SPF-03; approximately 3,100 customers combined/,
+    HOL: /install two breakers on 39L during summer 2014/
+  };
+
+  for (const [code, pattern] of Object.entries(expected)) {
+    const profile = stationProfiles.find((station) => station.code === code);
+    assert.ok(profile, `${code} profile is present`);
+    assert.equal(profile.historyRecords[0].sourceId, "np-2014-improvements");
+    assert.match(profile.historyRecords[0].label, /PROPOSED/);
+    assert.match(profile.historyRecords[0].facts.flat().join(" "), pattern);
+  }
+});
+
 test("2019 feeder tie records link King's Bridge, Pepperell, and Virginia Waters", async () => {
   const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
