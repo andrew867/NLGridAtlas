@@ -473,10 +473,11 @@
       "dependencies": ["REL-001", "REL-002", "REL-004"],
       "completion_evidence": [
         ".github/workflows/deploy-pages.yml",
-        "docs/PROJECT_STATUS.md"
+        "docs/PROJECT_STATUS.md",
+        "https://andrew867.github.io/NLGridAtlas/"
       ],
       "blocker": null,
-      "notes": "The Pages workflow is prepared. Deployment remains incomplete until GitHub accepts the Pages configuration, the workflow succeeds, and the live URL passes the release checks."
+      "notes": "GitHub Pages is enabled for the public repository. The deployment remains in progress until the workflow succeeds and the live URL passes the browser checks."
     },
     {
       "id": "REL-004",

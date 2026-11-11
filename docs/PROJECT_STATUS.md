@@ -5,11 +5,11 @@ Updated: 2026-11-11
 ## Repository and hosting
 
 - GitHub repository: `andrew867/NLGridAtlas`.
-- Repository visibility: private.
+- Repository visibility: public.
 - Default branch: `main`.
 - The local `main` branch tracks `origin/main`.
 - A GitHub Pages workflow builds with Node.js 20, runs the complete test suite, builds the Vite site, and deploys the `dist` artifact.
-- The Pages site is not recorded as live until GitHub accepts the Pages configuration and the deployment workflow succeeds.
+- GitHub Pages is enabled at `https://andrew867.github.io/NLGridAtlas/`. The site remains unverified until the deployment workflow succeeds and the live build passes browser checks.
 
 ## Verified in the current work session
 
@@ -25,7 +25,7 @@ Updated: 2026-11-11
 2. Add dated logical one-lines where the public record supports them, `AVL-006`.
 3. Link documented circuits directly to their other-end records, `NAV-001`.
 4. Complete the 390, 768, 1440, and 1920 px visual matrix, `QA-001`.
-5. Complete GitHub Pages activation and verify the deployed build, `REL-003`.
+5. Verify the GitHub Pages workflow and deployed build, `REL-003`.
 
 ## Next station target
 
@@ -33,7 +33,7 @@ St. John's Main has direct 2015 evidence for SJM-T1, SJM-T2, SJM-T3, and the his
 
 ## Open release gates
 
-- The private repository must support GitHub Pages, or its visibility or host must change with the owner's approval.
+- `REL-003` remains in progress until the Pages workflow succeeds and the deployed URL passes the browser checks.
 - The clean-clone qualification is not complete.
 - The public evidence-package strategy is not complete.
 - The full responsive audit is not complete.

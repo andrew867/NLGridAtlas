@@ -37,8 +37,6 @@ Pushes to `main` run the Pages workflow. The workflow installs the locked depend
 
 ## Hydro upload mirror
 
-The mirror tool crawls only the dated public directories under `nlhydro.com/wp-content/uploads/`. It excludes WordPress plugin, form-upload, import, and temporary directories.
-
 Inventory without downloading:
 
 ```powershell

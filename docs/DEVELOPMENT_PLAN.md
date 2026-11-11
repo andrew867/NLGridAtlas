@@ -135,8 +135,8 @@ Work items:
 
 Current deployment state:
 
-- `REL-001` is complete. The private `andrew867/NLGridAtlas` repository is connected and `main` is synchronized.
-- `REL-003` is in progress. The Pages workflow is prepared; the site remains unverified until GitHub accepts the Pages configuration and the workflow deploys successfully.
+- `REL-001` is complete. The public `andrew867/NLGridAtlas` repository is connected and `main` is synchronized.
+- `REL-003` is in progress. GitHub Pages is enabled at `https://andrew867.github.io/NLGridAtlas/`; the workflow and live build still require verification.
 
 Exit gate:
 
