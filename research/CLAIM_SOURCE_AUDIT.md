@@ -12,7 +12,7 @@ Work item: `SRC-001`
 | Timeline events | 25 | `timeline` in `src/data.js` |
 | Island terminal records | 10 | `islandTerminalRecords` in `src/data.js` |
 | Detailed Newfoundland Power profiles | 9 | `stationProfiles` in `src/data.js` |
-| Source records | 35 | `sources` in `src/data.js` |
+| Source records | 41 | `sources` in `src/data.js` |
 
 The static ledger covers the system-length panel, island and Avalon network views, four terminal-station one-lines, five detailed Newfoundland Power one-lines, Avalon transmission work, four load records, and the VHF records.
 
@@ -27,6 +27,17 @@ The static ledger covers the system-length panel, island and Avalon network view
 5. Every static ledger entry is attached to exactly one rendered region.
 
 Existing data tests perform the same source-resolution checks for timeline events, diagram components, island terminals and station profiles.
+
+## Completed manual checks
+
+| Claim ID | Pages inspected | Result |
+| --- | --- | --- |
+| `island-system-lengths` | 2023 asset report, physical PDF pp. 5 and 7 | Matched 4,432 km total, 2,246 km at 230 kV, 1,538 km at 138 kV, and 648 km at 69 kV. |
+| `island-generation-transmission-overview` | 2013 GRA Volume II, physical PDF p. 79; 2006 handbook, PDF pp. 2, 4 and 6 to 18 | The map is dated November 26, 2012. Extracted handbook totals match 104 transmission lines, 136 substations, and 302 feeders. |
+| `avalon-230-semi-geographic` | Exhibit 114, PDF p. 7; 2013 GRA Volume II, physical PDF p. 663; Oxen Pond application, physical PDF p. 15 | The displayed TL208, TL237, TL203, TL201, TL217, TL236, TL242, and TL218 endpoints match the drawings. The Oxen Pond map supports the west-to-east station placement. |
+| `avalon-66-semi-geographic` | 2006 handbook, PDF pp. 6 to 16; Oxen Pond application, physical PDF p. 15 | Automated endpoint checks reproduce the June 2005 register. The station placement follows the filed semi-geographic map. |
+
+The May 18, 2010 construction register pages and the 2013 loading tables were also inspected during `SRC-002`. Their extracted data is controlled separately in `research/derived/np-register-layers-2008-2013.json`.
 
 ## Remaining manual gate
 
