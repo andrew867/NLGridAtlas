@@ -839,7 +839,7 @@
                 <a class="diagram-link" href="#substation-oxp" aria-label="34L to Oxen Pond Substation"><path class="outgoing" d="M130 45V110"/><text class="small-label transformer-rating" x="130" y="8"><tspan x="130">34L</tspan><tspan x="130" dy="18">OXEN POND</tspan></text></a>
                 <a class="diagram-link" href="#substation-oxp" aria-label="58L to Oxen Pond Substation"><path class="outgoing" d="M370 45V110"/><text class="small-label transformer-rating" x="370" y="8"><tspan x="370">58L</tspan><tspan x="370" dy="18">OXEN POND</tspan></text></a>
                 <a class="diagram-link" href="#substation-pul" aria-label="59L to Pulpit Rock Substation"><path class="outgoing" d="M630 45V110"/><text class="small-label transformer-rating" x="630" y="8"><tspan x="630">59L</tspan><tspan x="630" dy="18">PULPIT ROCK</tspan></text></a>
-                <a class="diagram-link" href="#station-browser" data-station-record="PEP" aria-label="74L to Pepperrell Substation"><path class="outgoing" d="M870 45V110"/><text class="small-label transformer-rating" x="870" y="8"><tspan x="870">74L</tspan><tspan x="870" dy="18">PEPPERRELL</tspan></text></a>
+                <a class="diagram-link" href="#substation-pep" aria-label="74L to Pepperrell Substation"><path class="outgoing" d="M870 45V110"/><text class="small-label transformer-rating" x="870" y="8"><tspan x="870">74L</tspan><tspan x="870" dy="18">PEPPERRELL</tspan></text></a>
                 <g class="register-transformer component" transform="translate(300)" tabindex="0" role="button" aria-pressed="false" data-diagram="vir" data-component="vir-t1" aria-label="Virginia Waters transformer VIR-T1">
                   <path class="tap" d="M0 110V185 M0 243V350"/><circle class="winding v66-winding" cy="204" r="21"/><circle class="winding feeder-winding" cy="232" r="21"/>
                   <text class="center-label" x="0" y="277">VIR-T1</text><text class="small-label transformer-rating" x="0" y="301">25 MVA</text>
@@ -920,7 +920,7 @@
                 <desc id="kbr-desc">Circuits 12L, 16L, and 30L supply two 25 MVA transformers and six 12.5 kilovolt distribution feeders.</desc>
                 <path class="line v66-line" d="M120 100H880"/><text class="bus-label center-label" x="500" y="128">66 kV BUS</text>
                 <a class="diagram-link" href="#substation-mun" aria-label="12L to Memorial Substation"><path class="outgoing" d="M250 35V100"/><text class="small-label transformer-rating" x="250" y="2"><tspan x="250">12L</tspan><tspan x="250" dy="18">MEMORIAL</tspan></text></a>
-                <a class="diagram-link" href="#station-browser" data-station-record="PEP" aria-label="16L to Pepperrell Substation"><path class="outgoing" d="M500 35V100"/><text class="small-label transformer-rating" x="500" y="2"><tspan x="500">16L</tspan><tspan x="500" dy="18">PEPPERRELL</tspan></text></a>
+                <a class="diagram-link" href="#substation-pep" aria-label="16L to Pepperrell Substation"><path class="outgoing" d="M500 35V100"/><text class="small-label transformer-rating" x="500" y="2"><tspan x="500">16L</tspan><tspan x="500" dy="18">PEPPERRELL</tspan></text></a>
                 <a class="diagram-link" href="#substation-rrd" aria-label="30L to Ridge Road Substation"><path class="outgoing" d="M750 35V100"/><text class="small-label transformer-rating" x="750" y="2"><tspan x="750">30L</tspan><tspan x="750" dy="18">RIDGE ROAD</tspan></text></a>
                 <g class="register-transformer component" transform="translate(350)" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-t3" aria-label="King's Bridge transformer KBR-T3"><path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/><text class="center-label" x="0" y="267">KBR-T3</text><text class="small-label transformer-rating" x="0" y="291">25 MVA</text></g>
                 <g class="register-transformer component" transform="translate(650)" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-t4" aria-label="King's Bridge transformer KBR-T4"><path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/><text class="center-label" x="0" y="267">KBR-T4</text><text class="small-label transformer-rating" x="0" y="291">25 MVA</text></g>
@@ -935,6 +935,31 @@
               <p class="diagram-note">2026 STATION RECORD / 2019 FEEDER RECORD / T3 REPLACEMENT PROPOSED</p>
             </article>
             <aside class="component-evidence station-evidence" data-diagram-panel="kbr" data-default-component="kbr-summary" aria-live="polite"><span class="evidence-state verified" data-field="state">VERIFIED</span><p class="component-code" data-field="code"></p><h3 data-field="title"></h3><p data-field="summary"></p><dl class="component-data" data-field="data"></dl><div data-field="sources"></div></aside>
+          </div>
+
+          <div class="station-layout" id="substation-pep" data-claim-id="pepperrell-substation-one-line">
+            <article class="phase-frame station-sheet compact-sheet">
+              <div class="panel-toolbar station-toolbar" aria-label="Pepperrell voltage levels">
+                <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">5 feeders</span>
+              </div>
+              <svg class="station-line pepperrell-line" viewBox="0 -24 1000 560" role="img" aria-labelledby="pep-title pep-desc">
+                <title id="pep-title">Pepperrell Substation simplified one-line</title>
+                <desc id="pep-desc">Circuits 16L and 74L connect Pepperrell to King's Bridge and Virginia Waters. Two 25 MVA transformers supply the 12.5 kilovolt bus and feeders PEP-01 through PEP-05.</desc>
+                <path class="line v66-line" d="M150 100H850"/><text class="bus-label center-label" x="500" y="128">66 kV BUS</text>
+                <a class="diagram-link" href="#substation-kbr" aria-label="16L to King's Bridge Substation"><path class="outgoing" d="M300 35V100"/><text class="small-label transformer-rating" x="300" y="2"><tspan x="300">16L</tspan><tspan x="300" dy="18">KING'S BRIDGE</tspan></text></a>
+                <a class="diagram-link" href="#substation-vir" aria-label="74L to Virginia Waters Substation"><path class="outgoing" d="M700 35V100"/><text class="small-label transformer-rating" x="700" y="2"><tspan x="700">74L</tspan><tspan x="700" dy="18">VIRGINIA WATERS</tspan></text></a>
+                <g class="register-transformer component" transform="translate(350)" tabindex="0" role="button" aria-pressed="false" data-diagram="pep" data-component="pep-t1" aria-label="Pepperrell transformer PEP-T1"><path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/><text class="center-label" x="0" y="267">PEP-T1</text><text class="small-label transformer-rating" x="0" y="291">25 MVA</text></g>
+                <g class="register-transformer component" transform="translate(650)" tabindex="0" role="button" aria-pressed="false" data-diagram="pep" data-component="pep-t2" aria-label="Pepperrell transformer PEP-T2"><path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/><text class="center-label" x="0" y="267">PEP-T2</text><text class="small-label transformer-rating" x="0" y="291">25 MVA</text></g>
+                <path class="station-bus" d="M120 330H880"/><text class="bus-label center-label" x="500" y="316">12.5 kV BUS</text>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="pep" data-component="pep-01" aria-label="Pepperrell feeder PEP-01"><path class="outgoing" d="M180 330V450"/><text class="small-label center-label" x="180" y="480">PEP-01</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="pep" data-component="pep-02" aria-label="Pepperrell feeder PEP-02"><path class="outgoing" d="M340 330V450"/><text class="small-label center-label" x="340" y="480">PEP-02</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="pep" data-component="pep-03" aria-label="Pepperrell feeder PEP-03"><path class="outgoing" d="M500 330V450"/><text class="small-label center-label" x="500" y="480">PEP-03</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="pep" data-component="pep-04" aria-label="Pepperrell feeder PEP-04"><path class="outgoing" d="M660 330V450"/><text class="small-label center-label" x="660" y="480">PEP-04</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="pep" data-component="pep-05" aria-label="Pepperrell feeder PEP-05"><path class="outgoing" d="M820 330V450"/><text class="small-label center-label" x="820" y="480">PEP-05</text></g>
+              </svg>
+              <p class="diagram-note">SIMPLIFIED LOGICAL ARRANGEMENT / 2019 STATION AND CAPITAL RECORDS</p>
+            </article>
+            <aside class="component-evidence station-evidence" data-diagram-panel="pep" data-default-component="pep-summary" aria-live="polite"><span class="evidence-state verified" data-field="state">VERIFIED</span><p class="component-code" data-field="code"></p><h3 data-field="title"></h3><p data-field="summary"></p><dl class="component-data" data-field="data"></dl><div data-field="sources"></div></aside>
           </div>
 
           <section class="station-browser" id="station-browser" aria-labelledby="station-browser-title">

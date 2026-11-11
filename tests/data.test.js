@@ -766,6 +766,23 @@ test("King's Bridge retains the current six-feeder station record", async () => 
   assert.match(components["kbr-t3"].data.flat().join(" "), /Proposed commissioning in 2028/);
 });
 
+test("Pepperrell retains the completed two-transformer and five-feeder arrangement", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(html, /data-claim-id="pepperrell-substation-one-line"/);
+  assert.match(html, /16L to King's Bridge Substation/);
+  assert.match(html, /74L to Virginia Waters Substation/);
+  assert.match(main, /PEP: "#substation-pep"/);
+  for (const feeder of ["01", "02", "03", "04", "05"]) {
+    assert.match(html, new RegExp(`data-component="pep-${feeder}"`));
+    assert.equal(components[`pep-${feeder}`].data[0][1], "12.5 kV");
+  }
+  assert.match(components["pep-summary"].data.flat().join(" "), /PEP-T1 and PEP-T2; 25 MVA each/);
+  assert.match(components["pep-t1"].data.flat().join(" "), /2019 station record 66\/12.47 kV, 25 MVA/);
+  assert.match(components["pep-t1"].data.flat().join(" "), /2027 equipment table 66\/25 kV, 25 MVA/);
+  assert.match(components["pep-t2"].data.flat().join(" "), /2019 actual expenditure \$1.514 million/);
+});
+
 test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);

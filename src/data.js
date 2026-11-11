@@ -370,6 +370,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/NP2019Capital_SUPP_Pepperrell/applications/From%20NP%20-%20Approval%20for%20the%20Addition%20of%20a%20Substation%20Transformer%20at%20the%20Companys%20Pepperrell%20Substation%20-%202019-01-30.PDF"
   },
   {
+    id: "np-2019-pepperrell-modernization",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "2019 Capital Budget Application, Pepperrell Substation Refurbishment and Modernization",
+    topics: ["Pepperrell", "PEP-T1", "16L", "74L", "12.5 kV", "bus structure", "switchgear"],
+    pages: "physical PDF pp. 227 and 231 to 232",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
+  },
+  {
     id: "np-2019-capex-report",
     year: 2020,
     organization: "Newfoundland Power",
@@ -929,6 +939,17 @@ export const staticClaims = [
       { sourceId: "np-2026-kings-bridge", pages: "physical PDF pp. 72 to 75 and 427 to 434" },
       { sourceId: "np-2025-ca-np-255", pages: "physical PDF p. 4" },
       { sourceId: "np-2019-pepperrell", pages: "physical PDF p. 35" }
+    ]
+  },
+  {
+    id: "pepperrell-substation-one-line",
+    scope: "Pepperrell circuits, parallel transformer bank, 12.5 kV bus and five distribution feeders",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2019-pepperrell-modernization", pages: "physical PDF pp. 231 to 232" },
+      { sourceId: "np-2019-pepperrell", pages: "physical PDF pp. 8, 24, 33 and 37" },
+      { sourceId: "np-2019-capex-report", pages: "physical PDF pp. 8, 20 and 24" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 549" }
     ]
   },
   {
@@ -1748,6 +1769,36 @@ export const components = {
     summary: `KBR-${feeder} is one of the six 12.5 kV distribution feeders documented at King's Bridge.`,
     data: [["Voltage", "12.5 kV"], ["Station", "King's Bridge"]],
     sources: [sourceRef("np-2026-kings-bridge", "physical PDF p. 427"), sourceRef("np-2019-pepperrell", "physical PDF p. 35")]
+  }])),
+  "pep-summary": {
+    diagram: "pep", status: "verified", code: "PEP / SUBSTATION", title: "Pepperrell Substation",
+    summary: "Circuits 16L and 74L connect the 66 kV bus to King's Bridge and Virginia Waters. PEP-T1 and PEP-T2 operate in parallel and supply five 12.5 kV distribution feeders.",
+    data: [["Location", "The Boulevard and East White Hills Road"], ["66 kV circuits", "16L to King's Bridge; 74L to Virginia Waters"], ["Transformers", "PEP-T1 and PEP-T2; 25 MVA each"], ["Bus", "12.5 kV"], ["Feeders", "PEP-01 to PEP-05"], ["2019 work", "Station modernization, PEP-T2 addition and PEP-05 construction"]],
+    sources: [sourceRef("np-2019-pepperrell-modernization", "physical PDF pp. 231 to 232"), sourceRef("np-2019-pepperrell", "physical PDF pp. 8, 24, 33 and 37"), sourceRef("np-2019-capex-report", "physical PDF pp. 8, 20 and 24")]
+  },
+  "pep-t1": {
+    diagram: "pep", status: "verified", code: "PEP / T1", title: "Pepperrell transformer PEP-T1",
+    summary: "The 2019 station record identifies PEP-T1 as a 25 MVA, 66/12.47 kV transformer. The 2027 equipment table instead prints 25.0 kV as its low operating voltage.",
+    data: [["2019 station record", "66/12.47 kV, 25 MVA"], ["2027 equipment table", "66/25 kV, 25 MVA"], ["2026 forecast", "11.70 MVA"]],
+    sources: [sourceRef("np-2019-pepperrell", "physical PDF p. 24"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
+  },
+  "pep-t2": {
+    diagram: "pep", status: "verified", code: "PEP / T2", title: "Pepperrell transformer PEP-T2",
+    summary: "PEP-T2 was installed in 2019 as a 25 MVA, 66/12.5 kV transformer in parallel with PEP-T1. The 2027 equipment table prints 25.0 kV as its low operating voltage.",
+    data: [["2019 project", "66/12.5 kV, 25 MVA"], ["2019 actual expenditure", "$1.514 million"], ["2027 equipment table", "66/25 kV, 25 MVA"], ["2026 forecast", "12.39 MVA"]],
+    sources: [sourceRef("np-2019-pepperrell", "physical PDF pp. 8 and 33"), sourceRef("np-2019-capex-report", "physical PDF pp. 8 and 20"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
+  },
+  ...Object.fromEntries(["01", "02", "03", "04", "05"].map((feeder) => [`pep-${feeder}`, {
+    diagram: "pep", status: "verified", code: `PEP / PEP-${feeder}`, title: `Pepperrell feeder PEP-${feeder}`,
+    summary: feeder === "05"
+      ? "PEP-05 was constructed in 2019 as the fifth 12.5 kV feeder from the parallel PEP-T1 and PEP-T2 bank."
+      : `PEP-${feeder} is one of the 12.5 kV distribution feeders documented at Pepperrell.`,
+    data: feeder === "05"
+      ? [["Voltage", "12.5 kV"], ["Transformer bank", "PEP-T1 and PEP-T2"], ["Planning capacity", "12.7 MVA"], ["Construction", "2019"]]
+      : [["Voltage", "12.5 kV"], ["Station", "Pepperrell"]],
+    sources: feeder === "05"
+      ? [sourceRef("np-2019-pepperrell", "physical PDF pp. 8, 13 and 33"), sourceRef("np-2019-capex-report", "physical PDF pp. 8 and 24"), sourceRef("np-2025-ca-np-255", "physical PDF p. 4")]
+      : [sourceRef("np-2019-pepperrell-modernization", "physical PDF p. 231"), sourceRef("np-2019-pepperrell", "physical PDF p. 37")]
   }]))
 };
 
