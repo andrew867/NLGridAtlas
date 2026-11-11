@@ -2,9 +2,14 @@
   "source": {
     "response_url": "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078.PDF",
     "attachment_a_url": "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078%20-%20Attachment%20A,%20TOD%20Rate%20Study%20Load%20Data.ACCDB",
+    "attachment_a_local_path": "C:/src/misc/PUB/mirror/applications/2018/2018ratemitigation/responses/PUB-NP-078 - Attachment A, TOD Rate Study Load Data.ACCDB",
+    "attachment_a_sha256": "764336fae7b8d7f505822367e6011c5f9e6ab809a7b0e362751e398e2ed0a4c4",
+    "attachment_a_bytes": 238297088,
     "attachment_b_url": "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078,%20Attachment%20B.XLSX",
+    "csv_export_local_path": "C:/src/misc/TOD Rate Study Load Data.txt",
     "csv_export_sha256": "4f1e865baa2259d74dffccebc3ede06605584569478b6faf378c2b99ecc8ba10",
     "csv_export_bytes": 149372151,
+    "csv_export_audit": "research/derived/np-2018-tod-export-audit.json",
     "attachment_b_sha256": "b2ae69a0138dd8519e68905530712334265867f2d0dd0437ed72d56cf1e8bde1",
     "response_sha256": "23263ae4277838b1e274fc7c02d95e65dd6c792b4a8e80cc6f5b4bbea6811ae3"
   },

@@ -5,6 +5,7 @@ dist/
 research/derived/*
 !research/derived/np-2006-handbook.json
 !research/derived/np-2018-tod-study.json
+!research/derived/np-2018-tod-export-audit.json
 research/renders/
 research/tmp/
 .DS_Store

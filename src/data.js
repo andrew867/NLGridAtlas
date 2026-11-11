@@ -351,6 +351,197 @@ export const sources = [
   }
 ];
 
+export const staticClaims = [
+  {
+    id: "island-system-lengths",
+    scope: "2023 island transmission circuit lengths in the cover panel",
+    status: "verified",
+    sources: [{ sourceId: "asset-2023", pages: "PDF pp. 5 and 7" }]
+  },
+  {
+    id: "island-generation-transmission-overview",
+    scope: "Island generation and transmission overview image and register summary",
+    status: "verified",
+    sources: [
+      { sourceId: "gra-2013-v2", pages: "physical PDF p. 79" },
+      { sourceId: "np-2006-handbook", pages: "PDF pp. 2, 4 and 6 to 9" }
+    ]
+  },
+  {
+    id: "avalon-230-semi-geographic",
+    scope: "Avalon 230 kV station order and circuit topology",
+    status: "verified",
+    sources: [
+      { sourceId: "nlh-2011-western-avalon", pages: "PDF p. 7" },
+      { sourceId: "gra-2013-v2", pages: "physical PDF p. 663" },
+      { sourceId: "oxen-2013", pages: "physical PDF p. 15" }
+    ]
+  },
+  {
+    id: "avalon-66-semi-geographic",
+    scope: "Newfoundland Power 66 kV circuit topology and semi-geographic station placement",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2006-handbook", pages: "PDF pp. 6 to 16" },
+      { sourceId: "oxen-2013", pages: "physical PDF p. 15" },
+      { sourceId: "np-2027-loop-study", pages: "physical PDF p. 183" }
+    ]
+  },
+  {
+    id: "oxen-pond-terminal-one-line",
+    scope: "Oxen Pond terminal-station buses, transformers and capacitor banks",
+    status: "verified",
+    sources: [
+      { sourceId: "oxen-2013", pages: "physical PDF p. 43" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 548" }
+    ]
+  },
+  {
+    id: "hardwoods-terminal-one-line",
+    scope: "Hardwoods terminal-station buses, transformers, capacitor banks and generator",
+    status: "verified",
+    sources: [
+      { sourceId: "oxen-2013", pages: "physical PDF p. 61" },
+      { sourceId: "np-2027-loop-study", pages: "PDF p. 188" },
+      { sourceId: "nlh-2025-capital", pages: "physical PDF p. 99" }
+    ]
+  },
+  {
+    id: "western-avalon-terminal-one-line",
+    scope: "Western Avalon terminal-station buses, transformers, generator and circuits",
+    status: "verified",
+    sources: [
+      { sourceId: "nlh-2011-western-avalon", pages: "PDF p. 7" },
+      { sourceId: "np-2027-loop-study", pages: "PDF pp. 194 to 195" },
+      { sourceId: "nlh-2014-wav-t5", pages: "PDF pp. 12, 17 and 19 to 20" }
+    ]
+  },
+  {
+    id: "holyrood-historical-one-line",
+    scope: "Dated Holyrood internal electrical arrangement",
+    status: "verified",
+    sources: [
+      { sourceId: "gra-2013-v2", pages: "physical PDF p. 663" },
+      { sourceId: "nlh-2022-holyrood-t2", pages: "PDF pp. 5 to 13" },
+      { sourceId: "nlh-2024-rra", pages: "physical PDF pp. 100 and 182" }
+    ]
+  },
+  {
+    id: "hardwoods-substation-one-line",
+    scope: "Hardwoods Newfoundland Power transformers, buses, circuits and feeders",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 548" },
+      { sourceId: "np-2014-capital", pages: "physical PDF pp. 37, 42, 256 to 257, 348 and 351" },
+      { sourceId: "np-2006-handbook", pages: "PDF p. 14" }
+    ]
+  },
+  {
+    id: "oxen-pond-substation-one-line",
+    scope: "Oxen Pond Newfoundland Power transformer, bus, circuits and feeder",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 549" },
+      { sourceId: "np-2006-handbook", pages: "PDF p. 14" },
+      { sourceId: "np-island-ca-020", pages: "physical PDF pp. 14 and 115" }
+    ]
+  },
+  {
+    id: "pulpit-rock-substation-one-line",
+    scope: "Pulpit Rock transformers, 59L connection, bus and feeders",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2025-capital", pages: "PDF pp. 458 and 463 to 470" },
+      { sourceId: "np-2026-capital", pages: "PDF pp. 39, 197 and 370" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 549" }
+    ]
+  },
+  {
+    id: "memorial-substation-one-line",
+    scope: "Memorial transformers, 12L and 14L supplies, bus tie and university switchgear",
+    status: "verified",
+    sources: [
+      { sourceId: "memorial-2023", pages: "PDF pp. 14, 15, 25 and 29 to 33" },
+      { sourceId: "np-2024-ca-np-158", pages: "physical PDF pp. 1 to 3" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 549" }
+    ]
+  },
+  {
+    id: "long-pond-substation-one-line",
+    scope: "Long Pond transformer ratings and distribution bus summary",
+    status: "reported",
+    sources: [
+      { sourceId: "np-2023-long-pond", pages: "PDF pp. 109 to 111" },
+      { sourceId: "np-2024-ca-np-158", pages: "physical PDF pp. 4 to 5" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 548" }
+    ]
+  },
+  {
+    id: "western-avalon-soldiers-pond-design",
+    scope: "Preliminary Western Avalon to Soldiers Pond line design and seasonal ratings",
+    status: "proposed",
+    sources: [{ sourceId: "nlh-2026-wav-sop", pages: "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62 and 145 to 146" }]
+  },
+  {
+    id: "tl201-dynamic-line-rating",
+    scope: "Installed TL201 dynamic line rating system",
+    status: "verified",
+    sources: [{ sourceId: "nlh-2024-rra", pages: "physical PDF p. 339" }]
+  },
+  {
+    id: "avalon-option-four",
+    scope: "Proposed third line and four dynamic line rating systems",
+    status: "proposed",
+    sources: [{ sourceId: "nlh-2024-rra", pages: "physical PDF pp. 305 and 309" }]
+  },
+  {
+    id: "avalon-combustion-turbine-connection",
+    scope: "Proposed Avalon terminal and combustion-turbine connection",
+    status: "proposed",
+    sources: [{ sourceId: "nlh-2025-avalon-ct", pages: "physical PDF pp. 41, 65 and 573" }]
+  },
+  {
+    id: "broad-cove-2014-peak",
+    scope: "Broad Cove T1 nameplate rating and 2014 observed peak",
+    status: "verified",
+    sources: [{ sourceId: "np-2014-improvements", pages: "PDF p. 14" }]
+  },
+  {
+    id: "island-2024-forecast-accuracy",
+    scope: "2024 monthly utility peak actual, forecast and average absolute error",
+    status: "verified",
+    sources: [{ sourceId: "forecast-2024", pages: "PDF p. 119" }]
+  },
+  {
+    id: "hurricane-leslie-energy-totals",
+    scope: "Conflicting Hurricane Leslie table and narrative energy totals",
+    status: "unresolved",
+    sources: [{ sourceId: "gra-2013-v2", pages: "PDF p. 68" }]
+  },
+  {
+    id: "tod-rate-study-load-data",
+    scope: "2011 to 2013 time-of-day rate-study record counts",
+    status: "verified",
+    sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
+  },
+  {
+    id: "historical-vhf-system",
+    scope: "Historical VHF topology, equipment counts and Hydro-owned repeater records",
+    status: "verified",
+    sources: [{ sourceId: "vhf-2004", pages: "physical PDF pp. 194, 251, 258 and 265" }]
+  },
+  {
+    id: "vhf-replacement-record",
+    scope: "2004 VHF replacement design, revised site count, later P25 scope and reported installation status",
+    status: "reported",
+    sources: [
+      { sourceId: "vhf-2004", pages: "physical PDF pp. 200 to 203" },
+      { sourceId: "vhf-2004-revision", pages: "PDF p. 1, report p. 11" },
+      { sourceId: "vhf-2027-status", pages: "physical PDF p. 248" }
+    ]
+  }
+];
+
 export const timeline = [
   {
     date: "1967",

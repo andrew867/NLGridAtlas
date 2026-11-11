@@ -62,12 +62,12 @@
       "title": "Reconcile every current site claim with the source ledger",
       "phase": 0,
       "priority": "P0",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Audit each displayed technical claim, diagram component, and value against its page-level source and evidence state.",
       "dependencies": ["ARC-001", "ARC-002"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Existing automated checks validate structure, not every visual transcription."
+      "notes": "Static claim groups now have stable identifiers and page-level sources. Manual page-by-page transcription checks and final source-ledger reconciliation remain."
     },
     {
       "id": "SRC-002",
@@ -86,12 +86,12 @@
       "title": "Preserve the original TOD Access database",
       "phase": 0,
       "priority": "P1",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Acquire and hash the original ACCDB file, retain the exported table, and document row and recorder reconciliation.",
       "dependencies": ["ARC-001"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "The original ACCDB is preserved in the PUB mirror. Hash and exported-row reconciliation remain to be documented."
+      "notes": "The ACCDB and export hashes are recorded. A complete 4,175,709-row export audit passed. Direct Access table reconciliation will run after the PUB audit releases the database file."
     },
     {
       "id": "AVL-001",

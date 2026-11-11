@@ -45,7 +45,7 @@
               work, and communications infrastructure.
             </p>
           </div>
-          <div class="cover-datum" aria-label="2023 Hydro transmission inventory">
+          <div class="cover-datum" aria-label="2023 Hydro transmission inventory" data-claim-id="island-system-lengths">
             <span class="datum-label">HYDRO TRANSMISSION INVENTORY / 2023</span>
             <strong>4,432</strong>
             <span class="datum-unit">km of transmission line</span>
@@ -84,7 +84,7 @@
           <h3>Generation and transmission</h3>
         </header>
 
-        <div class="island-overview-layout">
+        <div class="island-overview-layout" data-claim-id="island-generation-transmission-overview">
           <figure class="phase-frame island-map-panel">
             <img src="./reference-maps/nlh-2012-provincial-grid.svg" loading="lazy" alt="NL Hydro provincial generation and transmission grid updated November 26, 2012" />
             <figcaption class="diagram-note">HISTORICAL SOURCE MAP / UPDATED NOVEMBER 26, 2012</figcaption>
@@ -119,7 +119,7 @@
           <p>Select a terminal to open its one-line. Circuit links in each terminal drawing return to the station at the other end.</p>
         </header>
 
-        <div class="phase-frame terminal-network-panel">
+        <div class="phase-frame terminal-network-panel" data-claim-id="avalon-230-semi-geographic">
           <svg class="terminal-network" viewBox="0 0 1000 560" role="img" aria-labelledby="terminal-network-title terminal-network-desc">
             <title id="terminal-network-title">Avalon 230 kilovolt terminal interconnection</title>
             <desc id="terminal-network-desc">Stations are ordered west to east as Western Avalon, Holyrood, Hardwoods, and Oxen Pond. Western Avalon also connects to Long Harbour, Come By Chance, and Sunnyside.</desc>
@@ -189,7 +189,7 @@
           </a>
         </div>
 
-        <div class="handbook-layout">
+        <div class="handbook-layout" data-claim-id="avalon-66-semi-geographic">
           <div class="phase-frame atlas-map-panel">
             <div class="map-key" aria-label="Diagram key">
               <span><i class="key-line"></i> Circuit listed in handbook</span>
@@ -246,7 +246,7 @@
         </header>
 
         <div class="station-sheets" aria-labelledby="network-title">
-        <div class="station-layout" id="terminal-opd">
+        <div class="station-layout" id="terminal-opd" data-claim-id="oxen-pond-terminal-one-line">
           <article class="phase-frame station-sheet oxen-sheet">
             <div class="panel-toolbar" role="group" aria-label="One-line visibility controls">
               <button class="toggle active" type="button" data-layer="v230" aria-pressed="true">230 kV</button>
@@ -322,7 +322,7 @@
           </aside>
         </div>
 
-          <div class="station-layout" id="terminal-hwd">
+          <div class="station-layout" id="terminal-hwd" data-claim-id="hardwoods-terminal-one-line">
           <article class="phase-frame station-sheet">
             <div class="panel-toolbar station-toolbar" aria-label="Hardwoods voltage levels">
               <span class="voltage-tag">230 kV</span><span class="voltage-tag">Transformation</span><span class="voltage-tag">66 kV</span>
@@ -379,7 +379,7 @@
           </aside>
           </div>
 
-          <div class="station-layout" id="terminal-wav" data-terminal-layout>
+          <div class="station-layout" id="terminal-wav" data-terminal-layout data-claim-id="western-avalon-terminal-one-line">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Western Avalon voltage levels">
                 <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66 kV</span>
@@ -426,7 +426,7 @@
             </aside>
           </div>
 
-          <div class="station-layout holyrood-layout" id="terminal-hrd" data-terminal-layout>
+          <div class="station-layout holyrood-layout" id="terminal-hrd" data-terminal-layout data-claim-id="holyrood-historical-one-line">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Holyrood voltage levels">
                 <span class="voltage-tag">230 kV</span><span class="voltage-tag">138 kV</span><span class="voltage-tag">66 kV</span><span class="voltage-tag">Generation</span>
@@ -510,7 +510,7 @@
         </header>
 
         <div class="station-sheets" aria-labelledby="substations-title">
-          <div class="station-layout" id="substation-hwd">
+          <div class="station-layout" id="substation-hwd" data-claim-id="hardwoods-substation-one-line">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Hardwoods substation voltage levels">
                 <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">25 kV</span><span class="voltage-tag">Distribution</span>
@@ -565,7 +565,7 @@
             </aside>
           </div>
 
-          <div class="station-layout" id="substation-oxp">
+          <div class="station-layout" id="substation-oxp" data-claim-id="oxen-pond-substation-one-line">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Oxen Pond substation voltage levels">
                 <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">OXP-01</span>
@@ -603,7 +603,7 @@
             </aside>
           </div>
 
-          <div class="station-layout" id="substation-pul">
+          <div class="station-layout" id="substation-pul" data-claim-id="pulpit-rock-substation-one-line">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Pulpit Rock substation voltage levels">
                 <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">Distribution</span>
@@ -641,7 +641,7 @@
             </aside>
           </div>
 
-          <div class="station-layout" id="substation-mun">
+          <div class="station-layout" id="substation-mun" data-claim-id="memorial-substation-one-line">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Memorial voltage levels">
                 <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">Memorial-owned switchgear</span>
@@ -683,7 +683,7 @@
             </aside>
           </div>
 
-          <div class="station-layout" id="substation-lpd">
+          <div class="station-layout" id="substation-lpd" data-claim-id="long-pond-substation-one-line">
             <article class="phase-frame station-sheet compact-sheet">
               <div class="panel-toolbar station-toolbar" aria-label="Long Pond voltage levels">
                 <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">Two 25 MVA units</span>
@@ -745,7 +745,7 @@
           <p>Installed line-rating work and proposed 230 kV additions are shown separately.</p>
         </header>
         <div class="station-sheets">
-          <section class="corridor-record" aria-labelledby="corridor-title">
+          <section class="corridor-record" aria-labelledby="corridor-title" data-claim-id="western-avalon-soldiers-pond-design">
             <header class="subsection-heading">
               <span>2026 TRANSMISSION FEASIBILITY STUDY</span>
               <h3 id="corridor-title">Western Avalon to Soldiers Pond</h3>
@@ -791,14 +791,14 @@
           </section>
 
           <section class="transmission-update-grid" aria-label="2024 Avalon transmission study findings">
-            <article class="phase-frame transmission-update">
+            <article class="phase-frame transmission-update" data-claim-id="tl201-dynamic-line-rating">
               <span class="evidence-state verified">VERIFIED</span>
               <p class="component-code">TL201 / MARCH 2024</p>
               <h3>Dynamic line rating installed</h3>
               <p>Hydro installed the dynamic line rating system on TL201 between Western Avalon and Hardwoods.</p>
               <a class="evidence-link" href="https://nlhydro.com/wp-content/uploads/2024/08/2024-08-26_NLH_RRA-Study_2024-RAP_Rev-2.pdf#page=339" target="_blank" rel="noreferrer">2024 Reliability and Resource Adequacy Study / physical PDF p. 339</a>
             </article>
-            <article class="phase-frame transmission-update">
+            <article class="phase-frame transmission-update" data-claim-id="avalon-option-four">
               <span class="evidence-state proposed">PROPOSED</span>
               <p class="component-code">OPTION 4 / 2024 STUDY</p>
               <h3>Third line and four DLR systems</h3>
@@ -807,7 +807,7 @@
             </article>
           </section>
 
-          <section class="corridor-record" aria-labelledby="avalon-ct-title">
+          <section class="corridor-record" aria-labelledby="avalon-ct-title" data-claim-id="avalon-combustion-turbine-connection">
             <header class="subsection-heading">
               <span>2025 CAPITAL APPLICATION</span>
               <h3 id="avalon-ct-title">Avalon combustion turbine connection</h3>
@@ -869,7 +869,7 @@
           </div>
         </header>
         <div class="load-grid">
-          <article class="phase-frame load-case">
+          <article class="phase-frame load-case" data-claim-id="broad-cove-2014-peak">
             <span class="case-date">2014-01-02 / BROAD COVE T1</span>
             <h3>Nameplate exceeded</h3>
             <div class="load-bars" aria-label="Broad Cove transformer rating 25 MVA and observed peak 28.5 MVA">
@@ -879,7 +879,7 @@
             <p>Relay settings were adjusted for temporary peak loading. Newfoundland Power proposed conductor work to transfer load.</p>
             <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf" target="_blank" rel="noreferrer">Electrical System Improvements / PDF p. 14</a>
           </article>
-          <article class="load-case ruled-case">
+          <article class="load-case ruled-case" data-claim-id="island-2024-forecast-accuracy">
             <span class="case-date">2024 / MONTHLY UTILITY PEAK AVERAGE</span>
             <h3>Forecast was 7 MW low</h3>
             <div class="paired-number"><strong>902</strong><span>MW actual</span></div>
@@ -887,7 +887,7 @@
             <p>The report's total-average row gives a 20 MW average absolute error for monthly utility peak averages.</p>
             <a class="evidence-link" href="http://www.pub.nf.ca/indexreports/nostradamus/From%20NLH%20-%20Short-Term%20Load%20Forecasting%20Accuracy%20-%202024%20Annual%20Report%20-%202025-01-31.PDF" target="_blank" rel="noreferrer">2024 accuracy report / PDF p. 119</a>
           </article>
-          <article class="load-case discrepancy-case">
+          <article class="load-case discrepancy-case" data-claim-id="hurricane-leslie-energy-totals">
             <span class="case-date">2012-09-11 / HURRICANE LESLIE</span>
             <h3>One page, two energy totals</h3>
             <dl>
@@ -896,7 +896,7 @@
             </dl>
             <a class="evidence-link" href="http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf" target="_blank" rel="noreferrer">2013 GRA Volume II / PDF p. 68</a>
           </article>
-          <article class="load-case discrepancy-case tod-case">
+          <article class="load-case discrepancy-case tod-case" data-claim-id="tod-rate-study-load-data">
             <span class="case-date">2011-12-01 TO 2013-11-30 / TOD RATE STUDY</span>
             <h3>238 hourly load series</h3>
             <dl>
@@ -911,7 +911,7 @@
         </div>
       </section>
 
-      <section class="section telecom-section" id="telecom" aria-labelledby="telecom-title">
+      <section class="section telecom-section" id="telecom" aria-labelledby="telecom-title" data-claim-id="historical-vhf-system">
         <header class="section-heading">
           <div>
             <span class="section-number">07 / OPERATIONS RADIO</span>
@@ -992,7 +992,7 @@
           </div>
         </div>
 
-        <div class="telecom-history" aria-label="VHF system replacement record">
+        <div class="telecom-history" aria-label="VHF system replacement record" data-claim-id="vhf-replacement-record">
           <article>
             <span class="case-date">FILED IN 2004</span>
             <h3>Keep the 170 MHz band</h3>
