@@ -228,12 +228,15 @@
       "title": "Complete the full responsive visual audit",
       "phase": 1,
       "priority": "P0",
-      "status": "not_started",
+      "status": "done",
       "scope": "Inspect every major section and detailed diagram at 390, 768, 1440, and 1920 px using the visual matrix.",
       "dependencies": ["AVL-005", "NAV-001"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "docs/RESPONSIVE_QA_2026-11-11.md",
+        "tests/data.test.js"
+      ],
       "blocker": null,
-      "notes": "Previous checks covered representative views, not the complete site."
+      "notes": "The 2026-11-11 browser audit covered every top-level section, station layout, framed diagram, station browser, and island-terminal browser at 390, 768, 1440, and 1920 px. No page or component overflow and no SVG text outside diagram bounds were found."
     },
     {
       "id": "ISL-001",

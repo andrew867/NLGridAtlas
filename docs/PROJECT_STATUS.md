@@ -28,7 +28,6 @@ Updated: 2026-11-11
 
 1. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
 2. Add dated logical one-lines where the public record supports them, `AVL-006`.
-3. Complete the 390, 768, 1440, and 1920 px visual matrix, `QA-001`.
 
 ## Next station target
 
@@ -40,4 +39,3 @@ Direct circuit navigation is complete where the opposite endpoint has a detailed
 
 - The clean-clone qualification is not complete.
 - The public evidence-package strategy is not complete.
-- The full responsive audit is not complete.
