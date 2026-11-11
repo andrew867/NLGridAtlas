@@ -10,6 +10,7 @@ This repository is at the first working-site stage. The initial evidence set is 
 
 Project control:
 
+- [Current project status](docs/PROJECT_STATUS.md)
 - [Atlas specification](docs/ATLAS_SPECIFICATION.md)
 - [Phased development plan](docs/DEVELOPMENT_PLAN.md)
 - [Verification plan](docs/VERIFICATION_PLAN.md)
@@ -29,6 +30,10 @@ Build and test:
 npm test
 npm run build
 ```
+
+## GitHub Pages
+
+Pushes to `main` run the Pages workflow. The workflow installs the locked dependencies, runs the automated tests, builds the static site, and deploys the `dist` artifact. A deployment is not treated as complete until the workflow succeeds and the published URL passes the browser checks in the verification plan.
 
 ## Hydro upload mirror
 

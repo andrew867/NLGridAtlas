@@ -440,12 +440,16 @@
       "title": "Configure the GitHub repository",
       "phase": 5,
       "priority": "P1",
-      "status": "blocked",
+      "status": "done",
       "scope": "Create or connect the GitHub remote, choose repository visibility, and push the reviewed history.",
       "dependencies": ["QA-001"],
-      "completion_evidence": [],
-      "blocker": "No GitHub remote, account destination, or final visibility decision is configured in the local repository.",
-      "notes": "The local repository is ready for a remote after the user confirms the destination."
+      "completion_evidence": [
+        "https://github.com/andrew867/NLGridAtlas",
+        "git remote origin",
+        "main at 385ca0f9335204f4e538727fbc28038b22b0fecf"
+      ],
+      "blocker": null,
+      "notes": "The private GitHub repository is connected as origin and the local main branch tracks origin/main."
     },
     {
       "id": "REL-002",
@@ -464,12 +468,15 @@
       "title": "Publish the static atlas",
       "phase": 5,
       "priority": "P1",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Publish the clean production build to GitHub Pages or the approved static host.",
       "dependencies": ["REL-001", "REL-002", "REL-004"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        ".github/workflows/deploy-pages.yml",
+        "docs/PROJECT_STATUS.md"
+      ],
       "blocker": null,
-      "notes": "The development server is not a public release."
+      "notes": "The Pages workflow is prepared. Deployment remains incomplete until GitHub accepts the Pages configuration, the workflow succeeds, and the live URL passes the release checks."
     },
     {
       "id": "REL-004",

@@ -1,6 +1,6 @@
 # NL Grid Atlas phased development plan
 
-Updated: 2026-11-10
+Updated: 2026-11-11
 
 `docs/work-items.json` is the authoritative status register. This plan defines execution order and phase exit gates.
 
@@ -132,6 +132,11 @@ Work items:
 - REL-002
 - REL-003
 - REL-004
+
+Current deployment state:
+
+- `REL-001` is complete. The private `andrew867/NLGridAtlas` repository is connected and `main` is synchronized.
+- `REL-003` is in progress. The Pages workflow is prepared; the site remains unverified until GitHub accepts the Pages configuration and the workflow deploys successfully.
 
 Exit gate:
 
