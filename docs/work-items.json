@@ -178,12 +178,17 @@
       "title": "Create consistent Kenmount and Goulds one-lines",
       "phase": 1,
       "priority": "P0",
-      "status": "not_started",
+      "status": "done",
       "scope": "Convert the supported Kenmount and Goulds station data into the same clickable one-line and evidence-panel pattern used by other detailed substations.",
       "dependencies": ["AVL-002"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "index.html",
+        "src/data.js",
+        "research/CLAIM_SOURCE_AUDIT.md",
+        "research/NP_STATION_GAP_LEDGER.md"
+      ],
       "blocker": null,
-      "notes": "Current records and feeder images do not constitute full one-lines."
+      "notes": "Clickable simplified one-lines now show the documented logical connections, transformer ratings, voltage buses, circuits, and feeders. They do not add unsupported breaker or bus-section detail."
     },
     {
       "id": "AVL-006",

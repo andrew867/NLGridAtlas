@@ -323,7 +323,7 @@ button, input { font: inherit; }
 .feeder-winding { stroke: var(--ink); stroke-width: 3; }
 .feeder-label { paint-order: stroke fill; stroke: var(--paper); stroke-width: 8px; }
 .junction { fill: var(--phase-a); }
-.component { cursor: pointer; outline: none; }
+.component { cursor: pointer; outline: none; pointer-events: bounding-box; }
 .diagram-link, .circuit-link { cursor: pointer; outline: none; text-decoration: none; }
 .diagram-link:hover .line, .diagram-link:hover .outgoing, .diagram-link:focus-visible .line, .diagram-link:focus-visible .outgoing,
 .circuit-link:hover .outgoing, .circuit-link:focus-visible .outgoing { stroke-width: 9; }
@@ -605,6 +605,7 @@ button, input { font: inherit; }
   .cover h1 { font-size: clamp(3.6rem, 18vw, 6rem); }
   .panel-toolbar { flex-wrap: wrap; }
   .station-sheet { padding: .75rem; overflow: hidden; }
+  .compact-sheet { min-height: 0; }
   .diagram-note { display: none; }
   .geographic-reference-grid { grid-template-columns: 1fr; }
   .island-map-panel { padding: .5rem; }

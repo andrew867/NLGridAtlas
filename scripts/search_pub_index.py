@@ -7,10 +7,12 @@ import argparse
 import json
 import re
 import sqlite3
+import sys
 from pathlib import Path
 
 
 def main() -> None:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     parser = argparse.ArgumentParser()
     parser.add_argument("database", type=Path)
     parser.add_argument("query", help="SQLite FTS5 match expression")

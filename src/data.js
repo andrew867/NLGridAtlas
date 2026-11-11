@@ -300,6 +300,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
   },
   {
+    id: "np-2015-kenmount",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Kenmount Substation Study",
+    topics: ["Kenmount", "KEN-T1", "KEN-T2", "KEN-01", "KEN-02", "KEN-03", "KEN-04", "KEN-05", "25 kV", "parallel transformers"],
+    pages: "physical PDF pp. 520 to 530",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
     id: "np-2027-pub-np-005",
     year: 2026,
     organization: "Newfoundland Power",
@@ -846,6 +856,28 @@ export const staticClaims = [
       { sourceId: "np-2023-long-pond", pages: "PDF pp. 109 to 111" },
       { sourceId: "np-2024-ca-np-158", pages: "physical PDF pp. 4 to 5" },
       { sourceId: "np-2027-transformers", pages: "physical PDF p. 548" }
+    ]
+  },
+  {
+    id: "kenmount-substation-one-line",
+    scope: "Kenmount transformer bank, 25 kV bus, connected circuits and distribution feeders",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2015-kenmount", pages: "physical PDF pp. 523 to 530" },
+      { sourceId: "np-2025-ca-np-255", pages: "physical PDF p. 4" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF p. 548" },
+      { sourceId: "np-2006-handbook", pages: "PDF pp. 6 to 7 and 14" }
+    ]
+  },
+  {
+    id: "goulds-substation-one-line",
+    scope: "Goulds 66 kV switching bus, 33 kV and 12.5 kV transformer banks, circuits and feeders",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2024-pub-np-033", pages: "physical PDF pp. 29 to 30" },
+      { sourceId: "np-2027-transformers", pages: "physical PDF pp. 547 and 553" },
+      { sourceId: "np-2006-handbook", pages: "PDF pp. 6 to 7 and 13" },
+      { sourceId: "np-2014-improvements", pages: "physical PDF pp. 20, 42 and 43" }
     ]
   },
   {
@@ -1479,6 +1511,96 @@ export const components = {
     summary: "LPD-T2 was proposed in the 2023 capacity project. The 2027 register lists it at 25 MVA with a 66/12.5 kV operating voltage.",
     data: [["Operating voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["2026 forecast", "20.00 MVA"], ["Project station capacity", "50 MVA"], ["Project boiler load", "25 MW"]],
     sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
+  },
+  "ken-summary": {
+    diagram: "ken", status: "verified", code: "KEN / SUBSTATION", title: "Kenmount Substation",
+    summary: "KEN-T1 and KEN-T2 operate in parallel on the 25 kV distribution bank. The 2027 register lists the two units at 25 MVA and 50 MVA.",
+    data: [["66 kV circuits", "35L, 54L, 69L"], ["KEN-T1", "66/25 kV, 25 MVA"], ["KEN-T2", "66/25 kV, 50 MVA"], ["25 kV feeders", "KEN-01 to KEN-05"]],
+    sources: [sourceRef("np-2015-kenmount", "physical PDF pp. 523 to 530"), sourceRef("np-2025-ca-np-255", "physical PDF p. 4"), sourceRef("np-2027-transformers", "physical PDF p. 548"), sourceRef("np-2006-handbook", "PDF pp. 6 to 7")]
+  },
+  "ken-t1": {
+    diagram: "ken", status: "verified", code: "KEN / T1", title: "Kenmount transformer KEN-T1",
+    summary: "The 2027 transformer register lists KEN-T1 at 25 MVA with a 66/25 kV operating voltage.",
+    data: [["Operating voltage", "66/25 kV"], ["Rating", "25 MVA"], ["2026 forecast", "20.04 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 548")]
+  },
+  "ken-t2": {
+    diagram: "ken", status: "verified", code: "KEN / T2", title: "Kenmount transformer KEN-T2",
+    summary: "The 2015 plan replaced the former 25 MVA unit. The 2027 transformer register lists KEN-T2 at 50 MVA.",
+    data: [["Operating voltage", "66/25 kV"], ["Rating", "50 MVA"], ["2026 forecast", "41.93 MVA"], ["Former unit", "25 MVA"]],
+    sources: [sourceRef("np-2015-kenmount", "physical PDF pp. 525 and 530"), sourceRef("np-2027-transformers", "physical PDF p. 548")]
+  },
+  "ken-01": {
+    diagram: "ken", status: "verified", code: "KEN / KEN-01", title: "Kenmount feeder KEN-01",
+    summary: "The 2014 study records KEN-01 running southwest along Kenmount Road, Mount Carson Avenue, and toward Wyatt Boulevard, Holden Street, and Farrell Drive.",
+    data: [["Voltage", "25 kV"], ["2013 customers", "1,828"], ["Main conductor", "477 ASC"]],
+    sources: [sourceRef("np-2015-kenmount", "physical PDF p. 523"), sourceRef("np-2014-improvements", "physical PDF p. 36")]
+  },
+  "ken-02": {
+    diagram: "ken", status: "verified", code: "KEN / KEN-02", title: "Kenmount feeder KEN-02",
+    summary: "The 2014 study records KEN-02 running northeast along Kenmount Road and serving the Pippy Place and O'Leary Avenue commercial area.",
+    data: [["Voltage", "25 kV"], ["2013 customers", "684"], ["Main conductor", "477 ASC"]],
+    sources: [sourceRef("np-2015-kenmount", "physical PDF p. 523"), sourceRef("np-2014-improvements", "physical PDF p. 37")]
+  },
+  "ken-03": {
+    diagram: "ken", status: "verified", code: "KEN / KEN-03", title: "Kenmount feeder KEN-03",
+    summary: "The 2014 study records KEN-03 running over Kenmount Hill and along Blackmarsh Road.",
+    data: [["Voltage", "25 kV"], ["2013 customers", "2,391"], ["Main conductor", "477 ASC"]],
+    sources: [sourceRef("np-2015-kenmount", "physical PDF pp. 523 to 524"), sourceRef("np-2014-improvements", "physical PDF p. 38")]
+  },
+  "ken-04": {
+    diagram: "ken", status: "verified", code: "KEN / KEN-04", title: "Kenmount feeder KEN-04",
+    summary: "The 2014 study records KEN-04 supplying Kenmount Terrace and part of Elizabeth Park.",
+    data: [["Voltage", "25 kV"], ["2013 customers", "2,527"], ["Main conductor", "477 ASC"]],
+    sources: [sourceRef("np-2015-kenmount", "physical PDF p. 524"), sourceRef("np-2014-improvements", "physical PDF p. 39")]
+  },
+  "ken-05": {
+    diagram: "ken", status: "verified", code: "KEN / KEN-05", title: "Kenmount feeder KEN-05",
+    summary: "The 2015 project added KEN-05 for Kelsey Drive and Kenmount Terrace. The 2024 supply table assigns it to the parallel KEN-T1 and KEN-T2 bank.",
+    data: [["Voltage", "25 kV"], ["Transformer bank", "KEN-T1 and KEN-T2"], ["Planning capacity", "25.5 MVA"]],
+    sources: [sourceRef("np-2015-kenmount", "physical PDF pp. 525 and 530"), sourceRef("np-2025-ca-np-255", "physical PDF p. 4")]
+  },
+  "gou-summary": {
+    diagram: "gou", status: "verified", code: "GOU / SUBSTATION", title: "Goulds Substation",
+    summary: "The 66 kV switching bus connects five transmission circuits. GOU-T1 supplies the 33 kV Petty Harbour circuit; GOU-T2 and GOU-T3 supply the three 12.5 kV distribution feeders.",
+    data: [["66 kV circuits", "4L, 17L, 18L, 25L, 72L"], ["GOU-T1", "66/33 kV, 10 MVA"], ["GOU-T2", "66/12.5 kV, 20 MVA"], ["GOU-T3", "66/12.5 kV, 13.33 MVA"], ["Distribution feeders", "GOU-01, GOU-02, GOU-03"]],
+    sources: [sourceRef("np-2024-pub-np-033", "physical PDF pp. 29 to 30"), sourceRef("np-2027-transformers", "physical PDF pp. 547 and 553"), sourceRef("np-2006-handbook", "PDF pp. 6 to 7")]
+  },
+  "gou-t1": {
+    diagram: "gou", status: "verified", code: "GOU / T1", title: "Goulds transformer GOU-T1",
+    summary: "GOU-T1 supplies the 33 kV circuit to Petty Harbour.",
+    data: [["Operating voltage", "66/33 kV"], ["Rating", "10 MVA"], ["Outgoing circuit", "3L to Petty Harbour"]],
+    sources: [sourceRef("np-2024-pub-np-033", "physical PDF pp. 29 to 30"), sourceRef("np-2027-transformers", "physical PDF p. 553")]
+  },
+  "gou-t2": {
+    diagram: "gou", status: "verified", code: "GOU / T2", title: "Goulds transformer GOU-T2",
+    summary: "The 2027 register lists GOU-T2 at 20 MVA on the 66/12.5 kV distribution bank.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "20 MVA"], ["2026 forecast", "13.23 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 547")]
+  },
+  "gou-t3": {
+    diagram: "gou", status: "verified", code: "GOU / T3", title: "Goulds transformer GOU-T3",
+    summary: "GOU-T3 operates with GOU-T2 on the 12.5 kV distribution bank.",
+    data: [["Operating voltage", "66/12.5 kV"], ["Rating", "13.33 MVA"], ["2026 forecast", "9.25 MVA"]],
+    sources: [sourceRef("np-2027-transformers", "physical PDF p. 547"), sourceRef("np-2024-pub-np-033", "physical PDF pp. 29 to 30")]
+  },
+  "gou-01": {
+    diagram: "gou", status: "verified", code: "GOU / GOU-01", title: "Goulds feeder GOU-01",
+    summary: "GOU-01 runs along Bay Bulls Road and serves Kilbride. The 2014 filing proposed a recloser on the Lannon Street tap.",
+    data: [["Voltage", "12.5 kV"], ["2014 customers", "Approximately 1,700"], ["Tap", "Lannon Street, approximately 100 customers"]],
+    sources: [sourceRef("np-2014-improvements", "physical PDF pp. 20 and 42")]
+  },
+  "gou-02": {
+    diagram: "gou", status: "verified", code: "GOU / GOU-02", title: "Goulds feeder GOU-02",
+    summary: "The 2024 supply table assigns GOU-02 to the GOU-T2 and GOU-T3 transformer bank.",
+    data: [["Voltage", "12.5 kV"], ["Transformer bank", "GOU-T2 and GOU-T3"], ["Planning capacity", "12.7 MVA"]],
+    sources: [sourceRef("np-2025-ca-np-255", "physical PDF p. 4")]
+  },
+  "gou-03": {
+    diagram: "gou", status: "verified", code: "GOU / GOU-03", title: "Goulds feeder GOU-03",
+    summary: "GOU-03 runs along Main Road in Goulds. The 2014 filing proposed a recloser on the Doyle's Road tap.",
+    data: [["Voltage", "12.5 kV"], ["2014 customers", "Approximately 1,900"], ["Tap", "Doyle's Road, approximately 100 customers"]],
+    sources: [sourceRef("np-2014-improvements", "physical PDF pp. 20 and 43")]
   }
 };
 
