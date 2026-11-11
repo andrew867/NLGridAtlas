@@ -18,7 +18,7 @@ Updated: 2026-11-11
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 87 automated tests, source-hash verification, and the production build.
+- Passed 92 automated tests, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.
@@ -51,13 +51,14 @@ Updated: 2026-11-11
 - Added a Soldiers Pond record that separates the six-circuit 230 kV yard, two LCC poles, three 175 MVAr synchronous condensers, converter-transformer spare, and EL3/4 electrode line. The island map now opens the station record.
 - Added dated system diagrams for the Labrador-Island Link and Maritime Link, including converter technology, pole designations, transfer ratings, AC interfaces, submarine cables, and ground-return facilities.
 - Separated the commissioned LIL date and Maritime Link operating record from earlier design-basis and preliminary one-line evidence.
+- Added the historical Corner Brook 50 Hz to 60 Hz rotating converter arrangement, including the 25 MVA motor-generator set, both 21/28 MVA transformers, the starting system, the Deer Lake and Massey Drive interfaces, the 2017 upgrade record, and the 2018 sale and abandonment approval.
+- Kept post-sale operation open because the 2018 order approves the transaction but does not provide a later as-built or operating one-line.
 
 ## Active work
 
-1. Document the Corner Brook frequency converter and Deer Lake connection, `CONV-001`.
-2. Complete island transformer nameplate and age records, `ISL-006`.
-3. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
-4. Find the latest supported Holyrood station arrangement, `GEN-001`.
+1. Complete island transformer nameplate and age records, `ISL-006`.
+2. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
+3. Find the latest supported Holyrood station arrangement, `GEN-001`.
 
 ## Island backbone progress
 

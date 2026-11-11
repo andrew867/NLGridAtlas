@@ -1060,6 +1060,46 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078.PDF"
   },
   {
+    id: "nlh-cbk-assessment-2005",
+    year: 2005,
+    organization: "NL Hydro",
+    title: "Corner Brook Frequency Converter Condition Assessment",
+    topics: ["Corner Brook", "frequency converter", "Deer Lake Power", "50 Hz", "60 Hz", "transformer"],
+    pages: "physical PDF pp. 4 to 6, 9, 22 to 24, and 34",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2006cap/files/applic/NLH2006Application-SectionH3.pdf"
+  },
+  {
+    id: "nlh-cbk-rfi-2006",
+    year: 2006,
+    organization: "NL Hydro",
+    title: "PUB-63, Corner Brook Frequency Converter",
+    topics: ["Corner Brook", "frequency converter", "Deer Lake Power", "50 Hz generation"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2006cap/files/rfi/PUB-63.pdf"
+  },
+  {
+    id: "nlh-cbk-upgrade-2017",
+    year: 2016,
+    organization: "NL Hydro",
+    title: "2017 Capital Budget Application, Corner Brook Frequency Converter Upgrade",
+    topics: ["Corner Brook", "frequency converter", "rotor", "stator", "operating limit"],
+    pages: "physical PDF pp. 182 to 183",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%202016-07-28.PDF"
+  },
+  {
+    id: "pub-cbk-sale-2018",
+    year: 2018,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 26(2018), Corner Brook Frequency Converter Sale and Abandonment",
+    topics: ["Corner Brook", "frequency converter", "sale", "abandonment", "Corner Brook Pulp and Paper"],
+    pages: "physical PDF pp. 1 to 3",
+    status: "verified",
+    url: "http://www.pub.nf.ca/orders/order2018/pu/PU26-2018.PDF"
+  },
+  {
     id: "np-2018-pub-np-084",
     year: 2018,
     organization: "Newfoundland Power / Newfoundland and Labrador Hydro",
@@ -1114,6 +1154,17 @@ export const staticClaims = [
       { sourceId: "nalcor-maritime-basis-2019", pages: "physical PDF pp. 107 to 120, 141 to 144, and 148 to 150" },
       { sourceId: "nlh-gra-2017-v2", pages: "physical PDF p. 15" },
       { sourceId: "synapse-maritime-service-2018", pages: "physical PDF p. 7" }
+    ]
+  },
+  {
+    id: "corner-brook-frequency-converter-record",
+    scope: "Historical Corner Brook rotating frequency converter arrangement, equipment ratings, operating limit, upgrade work, sale and abandonment approval",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-cbk-assessment-2005", pages: "physical PDF pp. 4 to 6, 9, 22 to 24, and 34" },
+      { sourceId: "nlh-cbk-rfi-2006", pages: "physical PDF p. 1" },
+      { sourceId: "nlh-cbk-upgrade-2017", pages: "physical PDF pp. 182 to 183" },
+      { sourceId: "pub-cbk-sale-2018", pages: "physical PDF pp. 1 to 3" }
     ]
   },
   {

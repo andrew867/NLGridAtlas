@@ -50,6 +50,29 @@ test("HVDC link system records retain the filed ratings and source pages", async
   assert.match(html, /301NS/);
 });
 
+test("Corner Brook frequency converter record retains the dated operating arrangement", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const sourceById = new Map(sources.map((source) => [source.id, source]));
+
+  assert.equal(sourceById.get("nlh-cbk-assessment-2005").pages, "physical PDF pp. 4 to 6, 9, 22 to 24, and 34");
+  assert.equal(sourceById.get("nlh-cbk-rfi-2006").pages, "physical PDF p. 1");
+  assert.equal(sourceById.get("nlh-cbk-upgrade-2017").pages, "physical PDF pp. 182 to 183");
+  assert.equal(sourceById.get("pub-cbk-sale-2018").pages, "physical PDF pp. 1 to 3");
+
+  assert.match(html, /id="corner-brook-frequency-converter"/);
+  assert.match(html, /data-claim-id="corner-brook-frequency-converter-record"/);
+  assert.match(html, /data-hydro-terminal-record="DLK"/);
+  assert.match(html, /data-hydro-terminal-record="MDR"/);
+  assert.match(html, /25 MVA MOTOR-GENERATOR SET/);
+  assert.match(html, /21\/28 MVA/);
+  assert.match(html, /66\/6\.6 kV/);
+  assert.match(html, /19 MVA operating limit/);
+  assert.match(html, /25 MW maximum output/);
+  assert.match(html, /\$2\.9438 million budget/);
+  assert.match(html, /Sale to Corner Brook Pulp and Paper approved for \$1; Hydro abandonment approved/);
+  assert.doesNotMatch(html, /50 Hz conversion completed/);
+});
+
 test("timeline events resolve to a source and evidence state", () => {
   const sourceIds = new Set(sources.map((source) => source.id));
   for (const event of timeline) {

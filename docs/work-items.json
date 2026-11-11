@@ -410,12 +410,12 @@
       "title": "Document the Corner Brook frequency converter and Deer Lake connection",
       "phase": 3,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Create a dedicated record and diagram for the frequency-conversion interface shown in the island system filings.",
       "dependencies": ["ISL-003"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/CORNER_BROOK_FREQUENCY_CONVERTER.md", "index.html", "src/data.js", "src/styles.css", "tests/data.test.js", "tests/claim-ledger.test.js"],
       "blocker": null,
-      "notes": "Identify equipment type and ratings only from source records."
+      "notes": "The record shows the 2005 filed operating arrangement, 2017 condition and upgrade evidence, and the 2018 sale and abandonment approval. Current post-sale operation remains an open evidence target."
     },
     {
       "id": "TEL-001",
