@@ -254,7 +254,7 @@
         "tests/island-topology.test.js"
       ],
       "blocker": null,
-      "notes": "PUB-NP-084 Attachment A now provides a tested 2018 layer with 58 Hydro circuit designations: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. Current 69 kV circuit assignments and post-2018 topology changes remain open."
+      "notes": "PUB-NP-084 Attachment A now provides a tested 2018 layer with 58 Hydro circuit designations: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. Older filings explicitly call nine of the 2018 table's 66 kV circuits 69 kV; those records are retained separately rather than replacing the later filed values. Current circuit classifications and post-2018 topology changes remain open."
     },
     {
       "id": "ISL-002",

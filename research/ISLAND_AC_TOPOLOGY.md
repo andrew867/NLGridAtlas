@@ -21,3 +21,9 @@ Seven circuit designations contain more than one route segment in the table. Tho
 - The table is a 2018 record. Later additions, removals, taps, and endpoint changes require newer circuit-specific evidence.
 - The 2023 asset report gives 648 km for Hydro's 69 kV class but does not name individual circuits. The dataset does not relabel the 2018 table's 66 kV circuits as 69 kV.
 - Endpoint names retain the spelling in the filed table. Stable station identifiers will be added after the station register and ownership records are reconciled.
+
+## 66 kV and 69 kV terminology
+
+Older circuit-specific filings call TL215, TL220, TL221, TL226, TL227, TL229, TL251, TL252, and TL261 69 kV. The later 2018 table records those same circuit designations in its 66 kV table. The JSON layer retains the 2018 filed voltage and stores the older 69 kV statements separately under `historical_voltage_records`.
+
+This is not evidence that every line in the 2018 66 kV table had a 69 kV operating designation. For example, the 2006 GRA describes TL264 as a 66 kV line from Buchans to Duck Pond. Circuit-level records remain controlling.

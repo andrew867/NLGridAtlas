@@ -22,6 +22,72 @@
     "Reconcile post-2018 additions, removals, taps, and endpoint changes before presenting this layer as current.",
     "Add stable station identifiers after endpoint spelling and ownership are reconciled against station records."
   ],
+  "historical_voltage_records": [
+    {
+      "circuits": ["TL215"],
+      "voltage_kv": 69,
+      "source_year": 2001,
+      "source_url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Dec3/Indust/ReplytoApplicationHydroreCapBudgetDec3-01.pdf",
+      "physical_pdf_page": 4,
+      "note": "The filing calls TL215 the 69 kV Doyles to Port aux Basques line. The 2018 table records TL215 at 66 kV from Doyles to Grand Bay (NP)."
+    },
+    {
+      "circuits": ["TL226"],
+      "voltage_kv": 69,
+      "source_year": 2001,
+      "source_url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Aug7/Hydro/Box5/Box%205%20RFIs%20August%203-01%20-%20PUB.pdf",
+      "physical_pdf_page": 1,
+      "note": "The filing calls TL226 the 69 kV Deer Lake to Berry Hill line."
+    },
+    {
+      "circuits": ["TL227"],
+      "voltage_kv": 69,
+      "source_year": 2001,
+      "source_url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Aug7/Hydro/Box4/Box%204%20RFIs%20August%203-01%20-%20PUB.pdf",
+      "physical_pdf_page": 4,
+      "note": "The filing calls TL227 the 69 kV Berry Hill to Daniel's Harbour line."
+    },
+    {
+      "circuits": ["TL229"],
+      "voltage_kv": 69,
+      "source_year": 2001,
+      "source_url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Aug7/Hydro/Box4/Box%204%20RFIs%20August%203-01%20-%20PUB.pdf",
+      "physical_pdf_page": 6,
+      "note": "The filing calls TL229 the 69 kV Wiltondale to Glenburnie line."
+    },
+    {
+      "circuits": ["TL251", "TL252"],
+      "voltage_kv": 69,
+      "source_year": 2001,
+      "source_url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Aug9/Hydro/Box7/BOX%207%20RFIs%20August%208-01%20-%20CA2of4.pdf",
+      "physical_pdf_page": 37,
+      "note": "The filing describes design of the 69 kV TL251 and TL252 system from Howley through Hampden and Jackson's Arm."
+    },
+    {
+      "circuits": ["TL261"],
+      "voltage_kv": 69,
+      "source_year": 2001,
+      "source_url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/hydresp/Indust/IC%20270.pdf",
+      "physical_pdf_page": 4,
+      "note": "The response identifies TL261 as a 69 kV line between St. Anthony Airport and St. Anthony Diesel Plant."
+    },
+    {
+      "circuits": ["TL220"],
+      "voltage_kv": 69,
+      "source_year": 2001,
+      "source_url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/July9/Hydro/preTest/May%202001%20Prefiled%20Testimony%20-%20Entire%20Document.pdf",
+      "physical_pdf_page": 225,
+      "note": "The testimony identifies TL220 as a 69 kV transmission line from Bay d'Espoir to Barachoix."
+    },
+    {
+      "circuits": ["TL221"],
+      "voltage_kv": 69,
+      "source_year": 2005,
+      "source_url": "http://www.pub.nl.ca/ARCHIVE/hydro2005cap/files/applic/hydro2005CapBudComplete.pdf",
+      "physical_pdf_page": 51,
+      "note": "The application states that TL221 was constructed in 1970 and was operating at 69 kV."
+    }
+  ],
   "lines": [
     {"circuit":"TL214","voltage_kv":138,"table":"A-2","physical_pdf_page":24,"segments":[{"from":"Bottom Brook","to":"Doyles"}]},
     {"circuit":"TL215","voltage_kv":66,"table":"A-2","physical_pdf_page":24,"segments":[{"from":"Doyles","to":"Grand Bay (NP)"}]},

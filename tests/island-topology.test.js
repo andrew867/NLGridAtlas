@@ -42,4 +42,9 @@ test("critical 230 kV paths match PUB-NP-084 Attachment A", () => {
 test("69 kV circuit assignment remains an explicit evidence gap", () => {
   assert.equal(topology.lines.some((line) => line.voltage_kv === 69), false);
   assert.match(topology.open_gaps.join(" "), /69 kV asset-class designations/);
+  const historical69 = new Set(topology.historical_voltage_records.flatMap((record) => record.circuits));
+  for (const circuit of ["TL215", "TL220", "TL221", "TL226", "TL227", "TL229", "TL251", "TL252", "TL261"]) {
+    assert.ok(historical69.has(circuit));
+    assert.equal(topology.lines.find((line) => line.circuit === circuit).voltage_kv, 66);
+  }
 });
