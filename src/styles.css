@@ -13,6 +13,10 @@
   --phase-c: #4f7352;
   --rule: #8e8f86;
   --shadow: 10px 10px 0 rgba(23, 25, 20, 0.12);
+  --diagram-component-size: 20px;
+  --diagram-bus-size: 14px;
+  --diagram-label-size: 12px;
+  --diagram-caption-size: 10px;
   font-family: "Source Serif 4", Georgia, serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -180,7 +184,7 @@ button, input { font: inherit; }
 .map-edge { transition: opacity .18s ease; }
 .map-edge { cursor: pointer; outline: none; }
 .map-edge line { stroke: var(--water); stroke-width: 3; vector-effect: non-scaling-stroke; }
-.map-edge text { fill: var(--ink); stroke: var(--paper-bright); stroke-width: 5px; paint-order: stroke fill; font: 500 12px/1 "IBM Plex Mono", monospace; text-anchor: middle; }
+.map-edge text { fill: var(--ink); stroke: var(--paper-bright); stroke-width: 5px; paint-order: stroke fill; font: 500 var(--diagram-label-size)/1 "IBM Plex Mono", monospace; text-anchor: middle; }
 .map-edge.dimmed { opacity: .12; }
 .map-edge.related line { stroke: var(--phase-a); stroke-width: 6; }
 .map-edge.related text { fill: var(--phase-a); font-weight: 700; }
@@ -188,7 +192,7 @@ button, input { font: inherit; }
 .map-edge:hover text, .map-edge:focus-visible text { fill: var(--phase-a); font-weight: 700; }
 .map-node { cursor: pointer; outline: none; }
 .map-node circle { fill: var(--paper-bright); stroke: var(--ink); stroke-width: 3; vector-effect: non-scaling-stroke; }
-.map-node text { fill: var(--ink); stroke: var(--paper-bright); stroke-width: 5px; paint-order: stroke fill; font: 600 17px/1 "Barlow Condensed", sans-serif; letter-spacing: .03em; }
+.map-node text { fill: var(--ink); stroke: var(--paper-bright); stroke-width: 5px; paint-order: stroke fill; font: 600 var(--diagram-component-size)/1 "Barlow Condensed", sans-serif; letter-spacing: .03em; }
 .map-node:hover circle, .map-node:focus-visible circle, .map-node.selected circle { fill: var(--phase-a); stroke-width: 5; }
 .map-node:focus-visible text, .map-node.selected text { fill: var(--phase-a); }
 .network-subheading { margin-top: 2rem; }
@@ -209,11 +213,11 @@ button, input { font: inherit; }
 .terminal-network text { paint-order: stroke fill; stroke: var(--paper); stroke-width: 10px; stroke-linejoin: round; }
 .network-circuit, .network-node { cursor: pointer; outline: none; text-decoration: none; }
 .network-circuit path { fill: none; stroke: var(--phase-a); stroke-width: 5; vector-effect: non-scaling-stroke; }
-.network-circuit text { fill: var(--ink); font: 500 14px "IBM Plex Mono", monospace; text-anchor: middle; }
+.network-circuit text { fill: var(--ink); font: 500 var(--diagram-label-size) "IBM Plex Mono", monospace; text-anchor: middle; }
 .network-circuit:hover path, .network-circuit:focus-visible path { stroke: var(--water); stroke-width: 9; }
 .network-circuit:hover text, .network-circuit:focus-visible text { fill: var(--water); }
 .network-node circle { fill: var(--paper); stroke: var(--ink); stroke-width: 4; vector-effect: non-scaling-stroke; }
-.network-node text { fill: var(--ink); font: 600 19px "Barlow Condensed", sans-serif; text-anchor: middle; letter-spacing: .04em; }
+.network-node text { fill: var(--ink); font: 600 var(--diagram-component-size) "Barlow Condensed", sans-serif; text-anchor: middle; letter-spacing: .04em; }
 .network-node:hover circle, .network-node:focus-visible circle { fill: var(--phase-c); stroke-width: 7; }
 .auxiliary-node circle { fill: var(--paper-bright); }
 .network-source-links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; padding: .8rem 0 1.5rem; }
@@ -290,13 +294,14 @@ button, input { font: inherit; }
 }
 .toggle.active, .filter.active, .toggle:hover, .filter:hover { background: var(--ink); color: var(--paper-bright); }
 .one-line { display: block; width: 100%; min-height: 460px; }
-.one-line text { fill: var(--ink); font: 600 21px "Barlow Condensed", sans-serif; letter-spacing: .03em; }
+.one-line text, .station-line text { fill: var(--ink); font: 600 var(--diagram-component-size) "Barlow Condensed", sans-serif; letter-spacing: .03em; }
 .one-line text, .station-line text { paint-order: stroke fill; stroke: var(--paper); stroke-width: 10px; stroke-linejoin: round; }
-.one-line .rating { font: 400 13px "IBM Plex Mono", monospace; }
-.one-line .bus-label { font: 400 14px "IBM Plex Mono", monospace; }
-.one-line .small-label { font: 400 12px "IBM Plex Mono", monospace; }
+.one-line .rating, .station-line .rating { font: 400 var(--diagram-label-size) "IBM Plex Mono", monospace; }
+.one-line .bus-label, .station-line .bus-label { font: 400 var(--diagram-bus-size) "IBM Plex Mono", monospace; }
+.one-line .small-label, .station-line .small-label { font: 400 var(--diagram-label-size) "IBM Plex Mono", monospace; }
 .center-label { text-anchor: middle; }
 .symbol-label { text-anchor: middle; dominant-baseline: central; }
+.transformer-rating, .vertical-label { text-anchor: middle; }
 .one-line .component text, .station-line .register-transformer text, .station-line .generator-transformer text, .station-line .station-service text {
   paint-order: stroke fill;
   stroke: var(--paper);
@@ -323,7 +328,7 @@ button, input { font: inherit; }
 .diagram-link:hover .line, .diagram-link:hover .outgoing, .diagram-link:focus-visible .line, .diagram-link:focus-visible .outgoing,
 .circuit-link:hover .outgoing, .circuit-link:focus-visible .outgoing { stroke-width: 9; }
 .diagram-link:hover text, .diagram-link:focus-visible text, .circuit-link:hover text, .circuit-link:focus-visible text { fill: var(--phase-a); }
-.circuit-link text { fill: var(--ink); font: 500 11px "IBM Plex Mono", monospace; text-anchor: middle; }
+.circuit-link text { fill: var(--ink); font: 500 var(--diagram-label-size) "IBM Plex Mono", monospace; text-anchor: middle; }
 .component:hover .winding, .component:focus-visible .winding, .component.selected .winding { stroke-width: 8; }
 .component:hover .tap, .component:hover .outgoing, .component:hover .line, .component:hover .station-bus,
 .component:focus-visible .tap, .component:focus-visible .outgoing, .component:focus-visible .line, .component:focus-visible .station-bus,
@@ -351,7 +356,7 @@ button, input { font: inherit; }
 .station-sheets { display: grid; gap: 1.5rem; }
 .station-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
 .station-layout[id], .network-node[id] { scroll-margin-top: 88px; }
-.holyrood-layout { grid-template-columns: minmax(0, 1.25fr) minmax(380px, .75fr); }
+.holyrood-layout { grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr); }
 .subsection-heading { display: grid; grid-template-columns: minmax(260px, .7fr) minmax(320px, 1.3fr); gap: .5rem 2rem; padding-top: 1.25rem; border-top: 1px solid var(--ink); }
 .subsection-heading > span { grid-column: 1; font: 500 .7rem/1.2 "IBM Plex Mono", monospace; letter-spacing: .08em; }
 .subsection-heading h3 { grid-column: 1; margin: 0; font: 600 clamp(2.1rem, 4vw, 4rem)/.95 "Barlow Condensed", sans-serif; text-transform: uppercase; }
@@ -362,21 +367,12 @@ button, input { font: inherit; }
 .station-evidence { min-width: 0; }
 .station-evidence .transformer-register { margin: 2rem 0; }
 .station-evidence .transformer-register div { grid-template-columns: 90px 1.4fr; }
-.holyrood-evidence .component-data dt, .holyrood-evidence .component-data dd { font-size: .68rem; }
-.holyrood-evidence .component-data div { padding: .5rem 0; }
-.holyrood-evidence .component-data dt, .holyrood-evidence .component-data dd { line-height: 1.25; }
 .station-sheet-heading { display: flex; justify-content: space-between; gap: 1rem; padding: .25rem 3.75rem 1rem .25rem; border-bottom: 1px solid var(--rule); }
 .station-sheet-heading span, .station-sheet-heading strong { font: 500 .7rem/1.2 "IBM Plex Mono", monospace; letter-spacing: .05em; }
 .station-sheet-heading h4 { margin: .3rem 0 0; font: 600 2.5rem/1 "Barlow Condensed", sans-serif; text-transform: uppercase; }
 .station-line { display: block; width: 100%; min-height: 350px; }
-.station-line text { fill: var(--ink); font: 600 20px "Barlow Condensed", sans-serif; letter-spacing: .03em; }
-.station-line .rating, .station-line .bus-label, .station-line .small-label { font-family: "IBM Plex Mono", monospace; font-weight: 400; }
-.station-line .rating { font-size: 12px; }
-.station-line .small-label { font-size: 12px; }
-.station-line .register-caption { fill: var(--muted); font: 400 10px "IBM Plex Mono", monospace; text-anchor: middle; }
-.station-line .cooling-label { font: 400 10px "IBM Plex Mono", monospace; }
-.station-line .bus-label { font-size: 14px; }
-.station-line .transformer-rating { text-anchor: middle; }
+.station-line .register-caption { fill: var(--muted); font: 400 var(--diagram-caption-size) "IBM Plex Mono", monospace; text-anchor: middle; }
+.station-line .cooling-label { font: 400 var(--diagram-caption-size) "IBM Plex Mono", monospace; }
 .station-footnote { margin: 0 0 .6rem; color: var(--muted); font: 400 .72rem/1.5 "IBM Plex Mono", monospace; }
 .station-event { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 3px solid var(--ink); }
 .station-event > span { font: 500 .68rem/1.2 "IBM Plex Mono", monospace; letter-spacing: .06em; }
@@ -527,9 +523,9 @@ button, input { font: inherit; }
 .telecom-sheet-heading h3 { margin: .3rem 0 0; font: 600 2.5rem/1 "Barlow Condensed", sans-serif; text-transform: uppercase; }
 .radio-line { display: block; width: 100%; min-height: 440px; }
 .radio-line rect, .radio-line path { fill: var(--paper); stroke: var(--ink); stroke-width: 3; vector-effect: non-scaling-stroke; }
-.radio-line text { fill: var(--ink); font: 600 21px "Barlow Condensed", sans-serif; text-anchor: middle; }
+.radio-line text { fill: var(--ink); font: 600 var(--diagram-component-size) "Barlow Condensed", sans-serif; text-anchor: middle; }
 .radio-line .radio-place { font-size: 30px; }
-.radio-line .radio-small, .radio-line .radio-link-label { font: 400 11px "IBM Plex Mono", monospace; }
+.radio-line .radio-small, .radio-line .radio-link-label { font: 400 var(--diagram-label-size) "IBM Plex Mono", monospace; }
 .radio-line .radio-link, .radio-line .site-link { fill: none; stroke: var(--water); stroke-width: 4; }
 .radio-line .site-link { stroke: var(--copper); }
 .radio-count > text:first-child { font-size: 72px; text-anchor: start; }
