@@ -421,7 +421,9 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.equal(components["hrd-g3"].status, "proposed");
   assert.match(components["hrd-g3"].data.flat().join(" "), /Spring 2030/);
   assert.match(components["wav-summary"].data.flat().join(" "), /Replacement began in 2019/);
-  assert.match(components["hwd-summary"].data.flat().join(" "), /75 MVA, 230\/66 kV/);
+  assert.match(components["hwd-summary"].data.flat().join(" "), /T5 45\/60\/75 MVA, 66\/13.8 kV/);
+  assert.match(components["hwd-g1"].data.flat().join(" "), /2026 study model 25 MW/);
+  assert.doesNotMatch(components["hwd-summary"].data.flat().join(" "), /2025 capital record/);
   assert.ok(timeline.some((event) => event.title === "Dynamic line rating entered service on TL201" && event.status === "verified"));
   assert.ok(timeline.some((event) => event.title === "Avalon combustion turbine connection was proposed" && event.status === "proposed"));
   assert.match(html, /Avalon combustion turbine connection/);

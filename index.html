@@ -327,9 +327,9 @@
             <div class="panel-toolbar station-toolbar" aria-label="Hardwoods voltage levels">
               <span class="voltage-tag">230 kV</span><span class="voltage-tag">Transformation</span><span class="voltage-tag">66 kV</span>
             </div>
-            <svg class="station-line hwd-line" viewBox="0 0 1000 520" role="img" aria-labelledby="hwd-title hwd-desc">
+            <svg class="station-line hwd-line" viewBox="0 0 1000 590" role="img" aria-labelledby="hwd-title hwd-desc">
               <title id="hwd-title">Hardwoods Terminal Station simplified one-line</title>
-              <desc id="hwd-desc">Four 230 over 66 kilovolt transformers, T1 through T4, connect the 230 kilovolt and 66 kilovolt buses.</desc>
+              <desc id="hwd-desc">Four 230 over 66 kilovolt transformers, T1 through T4, connect the 230 kilovolt and 66 kilovolt buses. Generator G1 connects to the 66 kilovolt bus through transformer T5.</desc>
               <path class="line v230-line" d="M80 75 H920" />
               <text class="bus-label" x="455" y="55">230 kV BUS</text>
               <a class="diagram-link" href="#terminal-opd" aria-label="TL236 to Oxen Pond Terminal Station">
@@ -340,7 +340,7 @@
               </a>
               <a class="diagram-link" href="#substation-hwd" aria-label="Open Newfoundland Power Hardwoods Substation">
                 <path class="line v66-line" d="M80 325 H920" />
-                <text class="bus-label" x="405" y="360">66 kV BUS / HWD SUBSTATION</text>
+                <text class="bus-label center-label" x="750" y="360">66 kV BUS</text>
               </a>
               <g class="component capacitor-component" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-c1" aria-label="Hardwoods capacitor bank C1">
                 <path class="tap" d="M95 325V375 M75 375H115 M75 391H115 M95 391V412 M79 412H111 M85 420H105 M90 428H100" />
@@ -365,6 +365,11 @@
               <g class="register-transformer component" transform="translate(830)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-t4" aria-label="Hardwoods transformer T4">
                 <path class="tap" d="M0 75 V155 M0 213 V325" /><circle class="winding v230-winding" cy="174" r="21"/><circle class="winding v66-winding" cy="202" r="21"/>
                 <text class="center-label" x="0" y="250">T4</text><text class="rating center-label" x="0" y="275">125 MVA</text>
+              </g>
+              <g class="component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd" data-component="hwd-g1" aria-label="Hardwoods generator G1 and transformer T5">
+                <path class="tap" d="M0 325 V365 M0 423 V445"/><circle class="winding v66-winding" cy="384" r="21"/><circle class="winding generator-winding" cy="412" r="21"/>
+                <circle class="generator-symbol" cy="480" r="26"/><text class="symbol-label" x="0" y="480">G1</text>
+                <text class="small-label center-label" x="0" y="525">T5 / 45/60/75 MVA</text><text class="small-label center-label" x="0" y="545">66/13.8 kV</text><text class="small-label center-label" x="0" y="565">G1 / 63.5 MVA</text>
               </g>
             </svg>
             <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2026 STUDY RATINGS</p>

@@ -453,7 +453,7 @@ export const staticClaims = [
     status: "verified",
     sources: [
       { sourceId: "oxen-2013", pages: "physical PDF p. 43" },
-      { sourceId: "np-2027-transformers", pages: "physical PDF p. 548" }
+      { sourceId: "np-2027-loop-study", pages: "PDF p. 188" }
     ]
   },
   {
@@ -462,13 +462,12 @@ export const staticClaims = [
     status: "verified",
     sources: [
       { sourceId: "oxen-2013", pages: "physical PDF p. 61" },
-      { sourceId: "np-2027-loop-study", pages: "PDF p. 188" },
-      { sourceId: "nlh-2025-capital", pages: "physical PDF p. 99" }
+      { sourceId: "np-2027-loop-study", pages: "PDF p. 188" }
     ]
   },
   {
     id: "western-avalon-terminal-one-line",
-    scope: "Western Avalon terminal-station buses, transformers, generator and circuits",
+    scope: "Western Avalon terminal-station buses, transformers and circuits",
     status: "verified",
     sources: [
       { sourceId: "nlh-2011-western-avalon", pages: "PDF p. 7" },
@@ -839,7 +838,7 @@ export const components = {
     code: "OPD / TERMINAL STATION",
     title: "Oxen Pond Terminal Station",
     summary: "The 2026 loop study models three 230/66 kV transformers: T1 and T3 at 250 MVA, and T2 at 125 MVA. The 2013 one-line identifies capacitor banks C1 and C2.",
-    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["Bus", "66 kV"], ["C1", "25.2 MVAR"], ["C2", "26.4 MVAR"]],
+    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["Bus", "66 kV"], ["C1, B5", "25.2 MVAR"], ["C2, B2", "26.4 MVAR"]],
     sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 43")]
   },
   "opd-t1": {
@@ -886,9 +885,9 @@ export const components = {
     status: "verified",
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
-    summary: "The 2026 loop study models four 230/66 kV transformers: T1 and T4 at 125 MVA, and T2 and T3 at 66.6 MVA. The 2013 alternative one-line shows 26.4 MVAR capacitor banks C1 and C2.",
-    data: [["T1", "125 MVA"], ["T2", "66.6 MVA"], ["T3", "66.6 MVA"], ["T4", "125 MVA"], ["2025 capital record", "75 MVA, 230/66 kV transformer"], ["Bus", "66 kV"], ["C1, C2", "26.4 MVAR each"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-2025-capital", "physical PDF p. 99")]
+    summary: "The 2026 loop study models four 230/66 kV transformers: T1 and T4 at 125 MVA, and T2 and T3 at 66.6 MVA. The 2013 alternative one-line shows 26.4 MVAR capacitor banks C1 and C2, and G1 connected to the 66 kV bus through T5.",
+    data: [["T1", "125 MVA"], ["T2", "66.6 MVA"], ["T3", "66.6 MVA"], ["T4", "125 MVA"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["Bus", "66 kV"], ["C1, C2", "26.4 MVAR each"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -925,6 +924,12 @@ export const components = {
     summary: "The 2013 Alternative 4 one-line labels C2 at 26.4 MVAR.",
     data: [["Bus", "66 kV B8"], ["Rating", "26.4 MVAR"]],
     sources: [sourceRef("oxen-2013", "PDF p. 61")]
+  },
+  "hwd-g1": {
+    diagram: "hwd", status: "verified", code: "HWD / G1 AND T5", title: "Hardwoods generator branch",
+    summary: "The 2013 alternative one-line connects G1 to the 66 kV bus through T5. The 2026 loop study models HWD-G1 at 25 MW.",
+    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["2026 study model", "25 MW"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
   "wav-summary": {
     diagram: "wav", status: "verified", code: "WAV / TERMINAL STATION", title: "Western Avalon Terminal Station",
