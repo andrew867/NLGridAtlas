@@ -45,4 +45,6 @@ Work item: `ISL-006`
 | Bottom Brook and Stephenville | Post-construction one-line confirming the final 2021 project arrangement |
 | Grand Falls and Bishop's Falls | Current generator-step-up and station-bus arrangement |
 
-Deferred rural targets remain in `ISL-005`; they do not hold `ISL-006` or the main island network work.
+The archive search located Grand Falls T1 and T2 oil-reclamation records and maintenance inventories, but not a later source that establishes the requested nameplate ratings or a current station one-line. No suitable Bishop's Falls nameplate or current station drawing was located.
+
+Deferred rural targets remain in `ISL-005`. They do not hold the completed transformer ledger or the main island network work.

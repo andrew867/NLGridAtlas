@@ -53,12 +53,12 @@ Updated: 2026-11-11
 - Separated the commissioned LIL date and Maritime Link operating record from earlier design-basis and preliminary one-line evidence.
 - Added the historical Corner Brook 50 Hz to 60 Hz rotating converter arrangement, including the 25 MVA motor-generator set, both 21/28 MVA transformers, the starting system, the Deer Lake and Massey Drive interfaces, the 2017 upgrade record, and the 2018 sale and abandonment approval.
 - Kept post-sale operation open because the 2018 order approves the transaction but does not provide a later as-built or operating one-line.
+- Closed the island transformer ledger for the published evidence located to date. Unsupported rural nameplates, current rural breaker drawings, and later Grand Falls and Bishop's Falls equipment drawings remain deferred rather than inferred.
 
 ## Active work
 
-1. Complete island transformer nameplate and age records, `ISL-006`.
-2. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
-3. Find the latest supported Holyrood station arrangement, `GEN-001`.
+1. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
+2. Find the latest supported Holyrood station arrangement, `GEN-001`.
 
 ## Island backbone progress
 
