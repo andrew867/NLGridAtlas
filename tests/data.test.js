@@ -423,6 +423,22 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.match(stampsLaneFacts, /50 MVA combined at 12\.5 kV and 21 MVA combined at 4\.16 kV/);
   assert.match(stampsLaneFacts, /13L, 14L, 15L, 31L, 69L and 70L/);
   assert.match(stampsLane.planningRecord.facts.flat().join(" "), /replaced in 2021 with repaired PUL-T2/);
+  assert.match(stampsLane.historyRecords[0].facts.flat().join(" "), /SLA-02, SLA-03, SLA-05, SLA-06 and SLA-07/);
+  assert.match(stampsLane.historyRecords[1].facts.flat().join(" "), /approximately 1\.26 MVA to SLA-08/);
+  assert.match(stampsLane.historyRecords[3].facts.flat().join(" "), /approximately 135 A before conversion/);
+});
+
+test("station history records retain source and page references", async () => {
+  const sourceIds = new Set(sources.map((source) => source.id));
+  for (const profile of stationProfiles.filter((station) => station.historyRecords)) {
+    for (const record of profile.historyRecords) {
+      assert.ok(sourceIds.has(record.sourceId));
+      assert.match(record.pages, /PDF p/);
+    }
+  }
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(main, /historyRecords\.map/);
+  assert.match(main, /historySource\.url/);
 });
 
 test("documented feeder assignments and bus breakers retain their filed scope", async () => {

@@ -264,10 +264,50 @@ export const sources = [
     year: 2020,
     organization: "Newfoundland Power",
     title: "2019 Capital Expenditure Report",
-    topics: ["Pepperrell", "PEP-T2", "PEP-05", "actual expenditure", "duct bank"],
+    topics: ["Pepperrell", "PEP-T2", "PEP-05", "Stamp's Lane", "SLA-05", "actual expenditure", "duct bank"],
     pages: "physical PDF pp. 8, 20 and 24",
     status: "verified",
     url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202019%20Capital%20Expenditure%20Report%20-%202020-02-28.PDF"
+  },
+  {
+    id: "np-2014-pub-np-276",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-276, Distribution Feeder Listing",
+    topics: ["Stamp's Lane", "SLA-05", "feeder voltage", "feeder capacity"],
+    pages: "physical PDF p. 6; attachment p. 4",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-276.pdf"
+  },
+  {
+    id: "np-2019-capital-sla05",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "2019 Capital Budget Application, SLA-05 Voltage Conversion",
+    topics: ["Stamp's Lane", "SLA-05", "SLA-08", "4.16 kV", "12.5 kV", "load transfer"],
+    pages: "physical PDF pp. 332 to 334",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
+  },
+  {
+    id: "np-2023-capital-sla05",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, SLA-05 Refurbishment",
+    topics: ["Stamp's Lane", "SLA-05", "SLA-08", "4.16 kV", "12.5 kV", "rear-lot distribution"],
+    pages: "physical PDF pp. 46 and 50",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-2023-capex-report",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Expenditure Report",
+    topics: ["Stamp's Lane", "SLA-05", "actual expenditure", "carryover expenditure"],
+    pages: "physical PDF p. 10",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202023%20Capital%20Expenditure%20Report%20-%202024-03-28.PDF"
   },
   {
     id: "np-2021-north-study",
@@ -1633,7 +1673,56 @@ export const stationProfiles = [
         ["SLA-T3", "SLA-08; 12.5 kV"],
         ["SLA-T4", "SLA-11; 12.5 kV"]
       ]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2014 FEEDER VOLTAGES",
+        sourceId: "np-2014-pub-np-276",
+        pages: "physical PDF p. 6; attachment p. 4",
+        facts: [
+          ["4.16 kV", "SLA-02, SLA-03, SLA-05, SLA-06 and SLA-07"],
+          ["12.47 kV", "SLA-08, SLA-09, SLA-10 and SLA-11"]
+        ]
+      },
+      {
+        label: "2019 SLA-05 WORK",
+        sourceId: "np-2019-capital-sla05",
+        pages: "physical PDF pp. 332 to 334",
+        facts: [
+          ["Approved scope", "convert part of SLA-05 and transfer approximately 1.26 MVA to SLA-08"],
+          ["Purpose", "relieve a forecast SLA-05 overload"]
+        ]
+      },
+      {
+        label: "2019 EXPENDITURE NOTE",
+        sourceId: "np-2019-capex-report",
+        pages: "physical PDF p. 24",
+        facts: [
+          ["Construction condition", "rear-lot access required additional tree cutting and specialized equipment"],
+          ["Project variance", "$150,000"]
+        ]
+      },
+      {
+        label: "2023 SLA-05 WORK",
+        sourceId: "np-2023-capital-sla05",
+        pages: "physical PDF pp. 46 and 50",
+        facts: [
+          ["Voltage work", "convert a section near Oxen Pond Road from 4.16 kV to 12.5 kV and transfer it to SLA-08"],
+          ["Primary line", "replace 789 m of #4 copper with 1/0 AASC and extend 200 m"],
+          ["Overloaded sections", "approximately 135 A before conversion; approximately 45 A after conversion"]
+        ]
+      },
+      {
+        label: "2023 EXPENDITURE RECORD",
+        sourceId: "np-2023-capex-report",
+        pages: "physical PDF p. 10",
+        facts: [
+          ["Approved", "$565,000"],
+          ["Actual", "$595,000"],
+          ["Carryover", "$0"]
+        ]
+      }
+    ]
   },
   {
     code: "PEP",
