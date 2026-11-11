@@ -751,6 +751,21 @@ test("Ridge Road retains the split 12.5 kV bus and completed tie", async () => {
   assert.match(components["rrd-t3"].data.flat().join(" "), /2026 forecast 17.54 MVA/);
 });
 
+test("King's Bridge retains the current six-feeder station record", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(html, /data-claim-id="kings-bridge-substation-one-line"/);
+  assert.match(html, /12L to Memorial Substation/);
+  assert.match(html, /16L to Pepperrell Substation/);
+  assert.match(html, /30L to Ridge Road Substation/);
+  for (const feeder of ["09", "10", "11", "12", "13", "15"]) {
+    assert.match(html, new RegExp(`data-component="kbr-${feeder}"`));
+    assert.equal(components[`kbr-${feeder}`].data[0][1], "12.5 kV");
+  }
+  assert.match(components["kbr-summary"].data.flat().join(" "), /KBR-T3 and KBR-T4; 25 MVA each/);
+  assert.equal(components["kbr-t3"].status, "proposed");
+  assert.match(components["kbr-t3"].data.flat().join(" "), /Proposed commissioning in 2028/);
+});
+
 test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);

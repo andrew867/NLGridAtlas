@@ -51,6 +51,7 @@ let stationTabQuery = "";
 const stationSectionAnchors = {
   GOU: "#substation-gou",
   HWD: "#terminal-hwd",
+  KBR: "#substation-kbr",
   KEN: "#substation-ken",
   MUN: "#substation-mun",
   OXP: "#terminal-opd",
@@ -62,6 +63,7 @@ const stationSectionAnchors = {
 const stationDetailAnchors = {
   GOU: "#substation-gou",
   HWD: "#substation-hwd",
+  KBR: "#substation-kbr",
   KEN: "#substation-ken",
   MUN: "#substation-mun",
   OXP: "#substation-oxp",

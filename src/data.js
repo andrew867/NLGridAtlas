@@ -922,6 +922,16 @@ export const staticClaims = [
     ]
   },
   {
+    id: "kings-bridge-substation-one-line",
+    scope: "King's Bridge circuits, current transformer bank and six distribution feeders",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2026-kings-bridge", pages: "physical PDF pp. 72 to 75 and 427 to 434" },
+      { sourceId: "np-2025-ca-np-255", pages: "physical PDF p. 4" },
+      { sourceId: "np-2019-pepperrell", pages: "physical PDF p. 35" }
+    ]
+  },
+  {
     id: "western-avalon-soldiers-pond-design",
     scope: "Preliminary Western Avalon to Soldiers Pond line design and seasonal ratings",
     status: "proposed",
@@ -1714,7 +1724,31 @@ export const components = {
     summary: "The 2015 station record assigns four 12.5 kV distribution feeders to the RRD-T3 bus section.",
     data: [["Transformer", "RRD-T3"], ["Voltage", "12.5 kV"], ["Feeders", "4"]],
     sources: [sourceRef("np-2015-rrd-modernization", "physical PDF p. 427")]
-  }
+  },
+  "kbr-summary": {
+    diagram: "kbr", status: "verified", code: "KBR / SUBSTATION", title: "King's Bridge Substation",
+    summary: "Circuits 12L, 16L, and 30L supply two 25 MVA transformers and six 12.5 kV distribution feeders.",
+    data: [["66 kV circuits", "12L to Memorial; 16L to Pepperrell; 30L to Ridge Road"], ["Transformers", "KBR-T3 and KBR-T4; 25 MVA each"], ["Distribution", "6 feeders at 12.5 kV"], ["Five-year maximum peak", "43.7 MVA"], ["Customers", "Approximately 5,740"]],
+    sources: [sourceRef("np-2026-kings-bridge", "physical PDF pp. 72 to 75 and 427 to 434"), sourceRef("np-2019-pepperrell", "physical PDF p. 35")]
+  },
+  "kbr-t3": {
+    diagram: "kbr", status: "proposed", code: "KBR / T3", title: "King's Bridge transformer KBR-T3",
+    summary: "KBR-T3 is a 1977 Federal Pioneer dual-secondary transformer. Newfoundland Power proposes replacement and commissioning in 2028.",
+    data: [["Windings", "66/12.5/25 kV"], ["Rating", "15/20/25 MVA"], ["Oil", "Approximately 10,100 L"], ["Replacement", "Proposed commissioning in 2028"], ["Project cost", "$2.971 million"]],
+    sources: [sourceRef("np-2026-kings-bridge", "physical PDF pp. 427, 431 and 434")]
+  },
+  "kbr-t4": {
+    diagram: "kbr", status: "verified", code: "KBR / T4", title: "King's Bridge transformer KBR-T4",
+    summary: "KBR-T4 is one of the two 25 MVA transformers supplying the station's six 12.5 kV feeders.",
+    data: [["Rating", "25 MVA"], ["Station feeder voltage", "12.5 kV"], ["2026 forecast", "20.32 MVA"]],
+    sources: [sourceRef("np-2026-kings-bridge", "physical PDF p. 427"), sourceRef("np-2027-transformers", "physical PDF p. 548")]
+  },
+  ...Object.fromEntries(["09", "10", "11", "12", "13", "15"].map((feeder) => [`kbr-${feeder}`, {
+    diagram: "kbr", status: "verified", code: `KBR / KBR-${feeder}`, title: `King's Bridge feeder KBR-${feeder}`,
+    summary: `KBR-${feeder} is one of the six 12.5 kV distribution feeders documented at King's Bridge.`,
+    data: [["Voltage", "12.5 kV"], ["Station", "King's Bridge"]],
+    sources: [sourceRef("np-2026-kings-bridge", "physical PDF p. 427"), sourceRef("np-2019-pepperrell", "physical PDF p. 35")]
+  }]))
 };
 
 export const islandTerminalRecords = [

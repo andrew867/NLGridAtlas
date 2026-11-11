@@ -672,7 +672,7 @@
                 <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="mun" data-component="mun-bus" aria-label="Memorial 66 kilovolt bus rebuild">
                   <path class="line v66-line" d="M110 95 H890"/><text class="bus-label center-label" x="500" y="72">66 kV BUS</text>
                 </g>
-                <a class="diagram-link" href="#station-KBR" aria-label="12L to King's Bridge Substation"><path class="outgoing" d="M110 95H35"/><text class="small-label" x="28" y="70">12L / KING'S BRIDGE</text></a>
+                <a class="diagram-link" href="#substation-kbr" aria-label="12L to King's Bridge Substation"><path class="outgoing" d="M110 95H35"/><text class="small-label" x="28" y="70">12L / KING'S BRIDGE</text></a>
                 <a class="diagram-link" href="#station-SLA" aria-label="14L to Stamp's Lane Substation"><path class="outgoing" d="M890 95H965"/><text class="small-label" x="805" y="70">14L / STAMP'S LANE</text></a>
                 <g class="register-transformer component" transform="translate(330)" tabindex="0" role="button" aria-pressed="false" data-diagram="mun" data-component="mun-t2" aria-label="Memorial transformer T2">
                   <path class="tap" d="M0 95 V175 M0 233 V310"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/>
@@ -881,7 +881,7 @@
                 <desc id="rrd-desc">Circuits 32L and 67L connect Ridge Road to Oxen Pond and circuit 30L connects Ridge Road to King's Bridge. Two 20 MVA transformers supply separate 12.5 kilovolt bus sections joined by a bus-tie breaker. Four feeders connect to each bus section.</desc>
                 <path class="line v66-line" d="M120 100H880"/><text class="bus-label center-label" x="500" y="128">66 kV BUS</text>
                 <a class="diagram-link" href="#substation-oxp" aria-label="32L to Oxen Pond Substation"><path class="outgoing" d="M250 35V100"/><text class="small-label transformer-rating" x="250" y="2"><tspan x="250">32L</tspan><tspan x="250" dy="18">OXEN POND</tspan></text></a>
-                <a class="diagram-link" href="#station-browser" data-station-record="KBR" aria-label="30L to King's Bridge Substation"><path class="outgoing" d="M500 35V100"/><text class="small-label transformer-rating" x="500" y="2"><tspan x="500">30L</tspan><tspan x="500" dy="18">KING'S BRIDGE</tspan></text></a>
+                <a class="diagram-link" href="#substation-kbr" aria-label="30L to King's Bridge Substation"><path class="outgoing" d="M500 35V100"/><text class="small-label transformer-rating" x="500" y="2"><tspan x="500">30L</tspan><tspan x="500" dy="18">KING'S BRIDGE</tspan></text></a>
                 <a class="diagram-link" href="#substation-oxp" aria-label="67L to Oxen Pond Substation"><path class="outgoing" d="M750 35V100"/><text class="small-label transformer-rating" x="750" y="2"><tspan x="750">67L</tspan><tspan x="750" dy="18">OXEN POND</tspan></text></a>
                 <g class="register-transformer component" transform="translate(350)" tabindex="0" role="button" aria-pressed="false" data-diagram="rrd" data-component="rrd-t2" aria-label="Ridge Road transformer RRD-T2">
                   <path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/>
@@ -908,6 +908,33 @@
               <p class="component-code" data-field="code"></p><h3 data-field="title"></h3><p data-field="summary"></p>
               <dl class="component-data" data-field="data"></dl><div data-field="sources"></div>
             </aside>
+          </div>
+
+          <div class="station-layout" id="substation-kbr" data-claim-id="kings-bridge-substation-one-line">
+            <article class="phase-frame station-sheet compact-sheet">
+              <div class="panel-toolbar station-toolbar" aria-label="King's Bridge voltage levels">
+                <span class="voltage-tag">66 kV</span><span class="voltage-tag">12.5 kV</span><span class="voltage-tag">6 feeders</span>
+              </div>
+              <svg class="station-line kings-bridge-line" viewBox="0 -24 1000 560" role="img" aria-labelledby="kbr-title kbr-desc">
+                <title id="kbr-title">King's Bridge Substation simplified one-line</title>
+                <desc id="kbr-desc">Circuits 12L, 16L, and 30L supply two 25 MVA transformers and six 12.5 kilovolt distribution feeders.</desc>
+                <path class="line v66-line" d="M120 100H880"/><text class="bus-label center-label" x="500" y="128">66 kV BUS</text>
+                <a class="diagram-link" href="#substation-mun" aria-label="12L to Memorial Substation"><path class="outgoing" d="M250 35V100"/><text class="small-label transformer-rating" x="250" y="2"><tspan x="250">12L</tspan><tspan x="250" dy="18">MEMORIAL</tspan></text></a>
+                <a class="diagram-link" href="#station-browser" data-station-record="PEP" aria-label="16L to Pepperrell Substation"><path class="outgoing" d="M500 35V100"/><text class="small-label transformer-rating" x="500" y="2"><tspan x="500">16L</tspan><tspan x="500" dy="18">PEPPERRELL</tspan></text></a>
+                <a class="diagram-link" href="#substation-rrd" aria-label="30L to Ridge Road Substation"><path class="outgoing" d="M750 35V100"/><text class="small-label transformer-rating" x="750" y="2"><tspan x="750">30L</tspan><tspan x="750" dy="18">RIDGE ROAD</tspan></text></a>
+                <g class="register-transformer component" transform="translate(350)" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-t3" aria-label="King's Bridge transformer KBR-T3"><path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/><text class="center-label" x="0" y="267">KBR-T3</text><text class="small-label transformer-rating" x="0" y="291">25 MVA</text></g>
+                <g class="register-transformer component" transform="translate(650)" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-t4" aria-label="King's Bridge transformer KBR-T4"><path class="tap" d="M0 100V175 M0 233V330"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/><text class="center-label" x="0" y="267">KBR-T4</text><text class="small-label transformer-rating" x="0" y="291">25 MVA</text></g>
+                <path class="station-bus" d="M100 330H900"/><text class="bus-label center-label" x="500" y="316">12.5 kV BUS</text>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-09" aria-label="King's Bridge feeder KBR-09"><path class="outgoing" d="M160 330V450"/><text class="small-label center-label" x="160" y="480">KBR-09</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-10" aria-label="King's Bridge feeder KBR-10"><path class="outgoing" d="M295 330V450"/><text class="small-label center-label" x="295" y="480">KBR-10</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-11" aria-label="King's Bridge feeder KBR-11"><path class="outgoing" d="M430 330V450"/><text class="small-label center-label" x="430" y="480">KBR-11</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-12" aria-label="King's Bridge feeder KBR-12"><path class="outgoing" d="M570 330V450"/><text class="small-label center-label" x="570" y="480">KBR-12</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-13" aria-label="King's Bridge feeder KBR-13"><path class="outgoing" d="M705 330V450"/><text class="small-label center-label" x="705" y="480">KBR-13</text></g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="kbr" data-component="kbr-15" aria-label="King's Bridge feeder KBR-15"><path class="outgoing" d="M840 330V450"/><text class="small-label center-label" x="840" y="480">KBR-15</text></g>
+              </svg>
+              <p class="diagram-note">2026 STATION RECORD / 2019 FEEDER RECORD / T3 REPLACEMENT PROPOSED</p>
+            </article>
+            <aside class="component-evidence station-evidence" data-diagram-panel="kbr" data-default-component="kbr-summary" aria-live="polite"><span class="evidence-state verified" data-field="state">VERIFIED</span><p class="component-code" data-field="code"></p><h3 data-field="title"></h3><p data-field="summary"></p><dl class="component-data" data-field="data"></dl><div data-field="sources"></div></aside>
           </div>
 
           <section class="station-browser" id="station-browser" aria-labelledby="station-browser-title">
