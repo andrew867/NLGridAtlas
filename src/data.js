@@ -2183,6 +2183,152 @@ export const islandTerminalRecords = [
     sources: [sourceRef("nlh-deer-lake-2010", "physical PDF p. 378"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
+    code: "BRH",
+    name: "Berry Hill Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "138/66 kV"], ["138 kV circuits", "TL239 to Deer Lake; TL259 to Peter's Barron"], ["66 kV circuit", "TL226 to Wiltondale"]],
+    diagram: {
+      label: "2013 station voltage / 2018 filed routes",
+      buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "66 kV" }],
+      transformers: [{ label: "Station transformer", rating: "138/66 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL239", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }, { label: "TL259", destination: "Peter's Barron", bus: "b1", destinationCode: "PBR" }, { label: "TL226", destination: "Wiltondale", bus: "b2" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "PBR",
+    name: "Peter's Barren Terminal Station",
+    status: "verified",
+    facts: [["Name", "Peter's Barren on the 2013 one-line; Peter's Barron in the 2018 line table"], ["Transformation", "138/66 kV"], ["138 kV circuits", "TL259 to Berry Hill; TL241 to Plum Point"], ["66 kV circuit", "TL262 to Daniel's Harbour"]],
+    diagram: {
+      label: "2013 station voltage / 2018 filed routes",
+      buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "66 kV" }],
+      transformers: [{ label: "Station transformer", rating: "138/66 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL259", destination: "Berry Hill", bus: "b1", destinationCode: "BRH" }, { label: "TL241", destination: "Plum Point", bus: "b1", destinationCode: "PLP" }, { label: "TL262", destination: "Daniel's Harbour", bus: "b2" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "PLP",
+    name: "Plum Point Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "138/12.5 kV"], ["Reactive equipment", "Two 5 MVAR capacitor banks"], ["138 kV circuits", "TL241 to Peter's Barron; TL244 to Bear Cove"]],
+    diagram: {
+      label: "2013 station voltage and reactive equipment / 2018 filed routes",
+      buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "Station transformer", rating: "138/12.5 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL241", destination: "Peter's Barron", bus: "b1", destinationCode: "PBR" }, { label: "TL244", destination: "Bear Cove", bus: "b1", destinationCode: "BRC" }],
+      shunts: [{ label: "C1", rating: "5 MVAR", bus: "b2" }, { label: "C2", rating: "5 MVAR", bus: "b2" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "BRC",
+    name: "Bear Cove Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "138/12.5 kV"], ["Reactive equipment", "5 MVAR capacitor bank"], ["138 kV circuits", "TL244 to Plum Point; TL256 to St. Anthony Airport"]],
+    diagram: {
+      label: "2013 station voltage and reactive equipment / 2018 filed routes",
+      buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "Station transformer", rating: "138/12.5 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL244", destination: "Plum Point", bus: "b1", destinationCode: "PLP" }, { label: "TL256", destination: "St. Anthony Airport", bus: "b1", destinationCode: "SAA" }],
+      shunts: [{ label: "C1", rating: "5 MVAR", bus: "b2" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "SAA",
+    name: "St. Anthony Airport Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "138/69 kV"], ["Reactive equipment", "Three 3 MVAR capacitor banks"], ["138 kV circuit", "TL256 to Bear Cove"], ["69 kV circuits", "TL257B to Main Brook; TL261 to St. Anthony Diesel Plant"]],
+    diagram: {
+      label: "2013 station voltage and reactive equipment / 2018 filed routes",
+      buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "69 kV" }],
+      transformers: [{ label: "Station transformer", rating: "138/69 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL256", destination: "Bear Cove", bus: "b1", destinationCode: "BRC" }, { label: "TL257B", destination: "Main Brook", bus: "b2" }, { label: "TL261", destination: "St. Anthony Diesel Plant", bus: "b2" }],
+      shunts: [{ label: "Capacitor banks", rating: "3 x 3 MVAR", bus: "b2" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "HAW",
+    name: "Hawke's Bay Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "66/12.5 kV"], ["2013 station load", "5 MW"], ["66 kV circuit", "TL221 to Peter's Barron"]],
+    diagram: {
+      label: "2013 station voltage and load / 2018 filed route",
+      buses: [{ id: "b1", label: "station bus", voltage: "66 kV" }, { id: "b2", label: "station bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "Station transformer", rating: "66/12.5 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL221", destination: "Peter's Barron", bus: "b1", destinationCode: "PBR" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "HOW",
+    name: "Howley Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "138/69 kV"], ["138 kV circuits", "TL245 to Deer Lake; TL243 to Hinds Lake; TL224 to Indian River"], ["69 kV circuit", "TL251 to Hampden Tap"]],
+    diagram: {
+      label: "2013 station voltage / 2018 filed routes",
+      buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "69 kV" }],
+      transformers: [{ label: "Station transformer", rating: "138/69 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL245", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }, { label: "TL243", destination: "Hinds Lake", bus: "b1", destinationCode: "HLA" }, { label: "TL224", destination: "Indian River", bus: "b1" }, { label: "TL251", destination: "Hampden Tap", bus: "b2" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "SBR",
+    name: "South Brook Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "138/25 kV"], ["138 kV circuit", "TL222 between Springdale and Stony Brook"]],
+    diagram: {
+      label: "2013 station voltage / 2018 filed route",
+      buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "25 kV" }],
+      transformers: [{ label: "Station transformer", rating: "138/25 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL222", destination: "Springdale", bus: "b1" }, { label: "TL222", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "DOY",
+    name: "Doyles Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "138/66 kV"], ["138 kV circuit", "TL214 to Bottom Brook"], ["66 kV circuit", "TL215 to Grand Bay"]],
+    diagram: {
+      label: "2013 station voltage / 2018 filed routes",
+      buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "66 kV" }],
+      transformers: [{ label: "Station transformer", rating: "138/66 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL214", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }, { label: "TL215", destination: "Grand Bay", bus: "b2" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 24")]
+  },
+  {
+    code: "GRB",
+    name: "Grandy Brook Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "138/25 kV"], ["138 kV circuit", "TL250 to Bottom Brook"]],
+    diagram: {
+      label: "2013 station voltage / 2018 filed route",
+      buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "25 kV" }],
+      transformers: [{ label: "Station transformer", rating: "138/25 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL250", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "EHW",
+    name: "English Harbour West Terminal Station",
+    status: "verified",
+    facts: [["Transformation", "69/25 kV on the 2013 system one-line"], ["Circuit", "TL220 to Bay d'Espoir and Barachoix"]],
+    diagram: {
+      label: "2013 station voltage and route",
+      buses: [{ id: "b1", label: "station bus", voltage: "69 kV" }, { id: "b2", label: "station bus", voltage: "25 kV" }],
+      transformers: [{ label: "Station transformer", rating: "69/25 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL220", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL220", destination: "Barachoix", bus: "b1" }]
+    },
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
     code: "BBK",
     name: "Bottom Brook Terminal Station",
     status: "verified",

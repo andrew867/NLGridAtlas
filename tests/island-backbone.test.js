@@ -49,3 +49,22 @@ test("island map generation nodes open their individual records", () => {
   assert.equal(islandStationTargets["Granite Canal"].code, "GRC");
   assert.equal(islandStationTargets["Hinds Lake"].code, "HLA");
 });
+
+test("western and northern station nodes open their individual records", () => {
+  const expected = {
+    "Berry Hill": "BRH",
+    "Peter's Barron": "PBR",
+    "Plum Point": "PLP",
+    "Bear Cove": "BRC",
+    "St. Anthony Airport": "SAA",
+    "Hawkes Bay": "HAW",
+    Howley: "HOW",
+    "South Brook": "SBR",
+    Doyles: "DOY",
+    "Grandy Brook": "GRB",
+    "English Harbour West": "EHW"
+  };
+  for (const [station, code] of Object.entries(expected)) {
+    assert.equal(islandStationTargets[station].code, code);
+  }
+});

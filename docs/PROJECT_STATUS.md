@@ -18,7 +18,7 @@ Updated: 2026-11-11
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 85 automated tests, source-hash verification, and the production build.
+- Passed 87 automated tests, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.
@@ -36,6 +36,8 @@ Updated: 2026-11-11
 - Verified Upper Salmon and Cat Arm record rendering at 1440 by 1000 px and 390 by 844 px. The mobile page has no horizontal page overflow; the one-line remains horizontally scrollable inside its own frame.
 - Added a dedicated Molloy's Lane record with 15L and 19L supplies, both transformer records, eight 12.5 kV feeders, the 2023 proposed modernization scope, and six filed feeder route sheets.
 - Verified the Molloy's Lane diagram and MOL-01 route sheet at 1440 by 1000 px and 390 by 844 px. The mobile page has no horizontal page overflow; the one-line remains horizontally scrollable inside its frame.
+- Added individual west-coast, Northern Peninsula, and rural records for Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, and English Harbour West.
+- Verified Berry Hill map selection, station navigation, and record rendering at 1440 by 1000 px and 390 by 844 px. The map selection stayed in place; the record link opened the station register; the mobile page had no horizontal page overflow.
 
 ## Active work
 

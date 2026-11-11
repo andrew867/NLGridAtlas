@@ -16,6 +16,17 @@ The terminal browser uses dated connection diagrams. It does not present a break
 | Massey Drive | 2015 transformer loading response and 2018 route table | T1, T2 and T3 customer assignments, two 230 kV lines |
 | Stephenville | 2021 retirement study and 2023 planning assessment | T3 rating and TL209 connection |
 | Come By Chance | 2013 system one-line, capacitor-bank response and 2018 route table | 230/13.8 kV interface, TL207, TL237 and four 38.35 MVAR capacitor banks |
+| Berry Hill | 2013 system one-line and 2018 route table | 138/66 kV transformation; TL239, TL259, and TL226 |
+| Peter's Barren | 2013 system one-line and 2018 route table | 138/66 kV transformation; TL259, TL241, and TL262; the 2018 table prints the name as Peter's Barron |
+| Plum Point | 2013 system one-line and 2018 route table | 138/12.5 kV transformation; two 5 MVAR capacitor banks; TL241 and TL244 |
+| Bear Cove | 2013 system one-line and 2018 route table | 138/12.5 kV transformation; 5 MVAR capacitor bank; TL244 and TL256 |
+| St. Anthony Airport | 2013 system one-line and 2018 route table | 138/69 kV transformation; three 3 MVAR capacitor banks; TL256, TL257B, and TL261 |
+| Hawke's Bay | 2013 system one-line and 2018 route table | 66/12.5 kV transformation; 5 MW station load; TL221 |
+| Howley | 2013 system one-line and 2018 route table | 138/69 kV transformation; TL245, TL243, TL224, and TL251 |
+| South Brook | 2013 system one-line and 2018 route table | 138/25 kV transformation; TL222 |
+| Doyles | 2013 system one-line and 2018 route table | 138/66 kV transformation; TL214 and TL215 |
+| Grandy Brook | 2013 system one-line and 2018 route table | 138/25 kV transformation; TL250 |
+| English Harbour West | 2013 system one-line and 2018 route table | 69/25 kV transformation; TL220 |
 
 ## Open drawing targets
 
@@ -23,3 +34,4 @@ The terminal browser uses dated connection diagrams. It does not present a break
 - Transformer nameplate ratings for the Bay d'Espoir station interface and the Come By Chance customer transformation.
 - A post-construction Bottom Brook and Stephenville drawing confirming the final arrangement after the 2021 project.
 - The present Grand Falls and Bishop's Falls bus and generator-step-up arrangement.
+- Transformer ratings, dates, and current breaker arrangements for the added rural station records.

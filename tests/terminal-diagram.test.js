@@ -95,3 +95,27 @@ test("diagram text masks conductor strokes", async () => {
   assert.match(css, /\.terminal-diagram text\s*\{[^}]*paint-order:\s*stroke fill/s);
   assert.match(css, /\.terminal-diagram text\s*\{[^}]*stroke-width:\s*8px/s);
 });
+
+test("western and northern rural station records retain filed transformation and routes", () => {
+  const expected = {
+    BRH: ["138/66 kV", ["TL239", "TL259", "TL226"]],
+    PBR: ["138/66 kV", ["TL259", "TL241", "TL262"]],
+    PLP: ["138/12.5 kV", ["TL241", "TL244"]],
+    BRC: ["138/12.5 kV", ["TL244", "TL256"]],
+    SAA: ["138/69 kV", ["TL256", "TL257B", "TL261"]],
+    HAW: ["66/12.5 kV", ["TL221"]],
+    HOW: ["138/69 kV", ["TL245", "TL243", "TL224", "TL251"]],
+    SBR: ["138/25 kV", ["TL222", "TL222"]],
+    DOY: ["138/66 kV", ["TL214", "TL215"]],
+    GRB: ["138/25 kV", ["TL250"]],
+    EHW: ["69/25 kV", ["TL220", "TL220"]]
+  };
+
+  for (const [code, [ratio, circuits]] of Object.entries(expected)) {
+    const record = islandTerminalRecords.find((entry) => entry.code === code);
+    assert.ok(record, `${code} requires an individual record`);
+    assert.equal(record.diagram.transformers[0].rating, ratio);
+    assert.deepEqual(record.diagram.circuits.map((circuit) => circuit.label), circuits);
+    assert.ok(record.sources.every((source) => source.pages), `${code} requires page-level sources`);
+  }
+});

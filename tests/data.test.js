@@ -286,7 +286,7 @@ test("every extracted feeder image is exposed by a station record", async () => 
 
 test("island terminal records retain page-level sources", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
-  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BBK", "GFS", "MAS", "STV", "CBC", "USL", "GRC", "CAT", "HLA"]);
+  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "MAS", "STV", "CBC", "USL", "GRC", "CAT", "HLA"]);
   for (const record of islandTerminalRecords) {
     assert.ok(allowedStates.has(record.status));
     assert.ok(record.facts.length > 0);
