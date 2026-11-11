@@ -250,6 +250,36 @@ export const sources = [
     url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
   },
   {
+    id: "np-2019-pepperrell",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "Pepperrell Substation Transformer Addition",
+    topics: ["Pepperrell", "PEP-T1", "PEP-T2", "PEP-05", "12.47 kV", "477 ASC"],
+    pages: "physical PDF pp. 24 and 28 to 33",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/NP2019Capital_SUPP_Pepperrell/applications/From%20NP%20-%20Approval%20for%20the%20Addition%20of%20a%20Substation%20Transformer%20at%20the%20Companys%20Pepperrell%20Substation%20-%202019-01-30.PDF"
+  },
+  {
+    id: "np-2019-capex-report",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2019 Capital Expenditure Report",
+    topics: ["Pepperrell", "PEP-T2", "PEP-05", "actual expenditure", "duct bank"],
+    pages: "physical PDF pp. 8, 20 and 24",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202019%20Capital%20Expenditure%20Report%20-%202020-02-28.PDF"
+  },
+  {
+    id: "np-2021-north-study",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "St. John's North and Portugal Cove System Planning Study",
+    topics: ["Virginia Waters", "VIR-T1", "VIR-T2", "VIR-T3", "Airport Substation", "66 kV"],
+    pages: "physical PDF pp. 6 to 14",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/substationproject/From%20NP%20-%20St.%20Johns%20North-Portugal%20Cove%20System%20Planning%20Study%20Update%20-%202021-02-12.PDF"
+  },
+  {
     id: "np-2021-burin-reactive",
     year: 2021,
     organization: "Newfoundland Power / Hatch",
@@ -334,7 +364,7 @@ export const sources = [
     year: 2023,
     organization: "Newfoundland Power",
     title: "CA-NP-030, General Service Rate 2.4 supply table",
-    topics: ["Goulds", "GOU-02", "feeder planning capacity", "transformer capacity", "customers"],
+    topics: ["Goulds", "GOU-02", "Pepperell", "PEP-05", "feeder planning capacity", "transformer capacity", "customers"],
     pages: "physical PDF p. 3",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-030.PDF"
@@ -1383,6 +1413,55 @@ export const stationProfiles = [
         ["Five-year maximum peak", "34.7 MVA"],
         ["RRD-T3 failure study", "15.26 MVA transferable; 3.1 MVA exposed"],
         ["RRD-T3 project", "replacement planned from 2027 to 2029"]
+      ]
+    }
+  },
+  {
+    code: "PEP",
+    name: "Pepperell",
+    feederRegisterLabel: "2019 AND 2024 FEEDER RECORD",
+    feederRegister: ["PEP-01", "PEP-02", "PEP-03", "PEP-04", "PEP-05"],
+    mapPages: [],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2024 SUPPLY TABLE",
+      title: "Pepperell transformer and feeder record",
+      sourceId: "np-2024-ca-np-030",
+      pages: "physical PDF p. 3",
+      facts: [
+        ["Transformer bank", "PEP-T1 and PEP-T2, 25 MVA each"],
+        ["PEP-05", "12.5 kV; 12.7 MVA feeder planning capacity"],
+        ["Customers served by station", "3,382"]
+      ]
+    },
+    planningRecord: {
+      label: "2019 COMPLETED CAPITAL WORK",
+      sourceId: "np-2019-capex-report",
+      pages: "physical PDF pp. 8, 20 and 24",
+      facts: [
+        ["Transformer addition", "$2.334 million approved; $1.514 million actual 2019 expenditure"],
+        ["PEP-05", "collapsed underground ductwork required replacement of the complete duct bank"],
+        ["PEP-05 variance", "$261,000 of additional work"]
+      ]
+    }
+  },
+  {
+    code: "VIR",
+    name: "Virginia Waters",
+    feederRegisterLabel: "2021 FEEDER RECORD",
+    feederRegister: ["VIR-01", "VIR-02", "VIR-03", "VIR-04", "VIR-05", "VIR-06", "VIR-07", "VIR-08"],
+    mapPages: [],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2021 SYSTEM PLANNING STUDY",
+      title: "Virginia Waters transformer and feeder arrangement",
+      sourceId: "np-2021-north-study",
+      pages: "physical PDF pp. 6 to 14",
+      facts: [
+        ["Transformer bank", "VIR-T1, VIR-T2 and VIR-T3; 25 MVA each; described as 66/12.5 kV"],
+        ["Distribution", "eight 12.5 kV feeders, VIR-01 to VIR-08"],
+        ["Selected expansion", "new Airport Substation and two 66 kV line sections from 35L"],
+        ["VIR-T4", "evaluated as an alternative; not part of the selected expansion"]
       ]
     }
   },

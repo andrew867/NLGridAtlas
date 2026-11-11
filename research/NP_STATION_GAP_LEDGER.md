@@ -1,6 +1,6 @@
 # Newfoundland Power station data gap ledger
 
-Last scan: 2026-11-10
+Last scan: 2026-11-11
 
 ## Scan completed
 
@@ -12,6 +12,7 @@ Last scan: 2026-11-10
 - [x] 2006 station and feeder register transcribed, 136 stations and 302 feeders.
 - [x] NL Hydro public upload index inventoried, 2,539 files and 9,402,399,683 listed bytes across the 2014 to 2026 year folders.
 - [x] 2027 application and responses searched page by page for the remaining Avalon station names and transformer designations.
+- [x] Capital expenditure, financial, depreciation, rate-base, and general-rate records included in station searches.
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
@@ -29,11 +30,11 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 | [x] | Long Pond, LPD | 36L supply from Oxen Pond; 2024 T1 one-line; two 12.5 kV bus sections; MUN-20 to MUN-29 customer circuits; 2027 LPD-T1 and LPD-T2 ratings | Post-expansion as-built revision | 2024 or later completion drawing |
 | [x] | Goulds, GOU | 3L, 4L, 17L, 18L, 25L, and 72L terminations; 66/33 kV GOU-T1; 12.5 kV GOU-T2 and T3; GOU-01 to GOU-03 maps; 2007 station history; 2023 GOU-02 planning capacity and station customer count | Current bus arrangement and feeder-to-transformer assignments | Current one-line or protection drawing |
 | [ ] | Glendale, GDL | 2005 feeders GDL-01 to GDL-06; 2027 GDL-T1, T2, and T3 ratings | Bus arrangement and feeder assignments | Substation renewal filings and drawings |
-| [ ] | Virginia Waters, VIR | 2005 feeders VIR-01 to VIR-07; 2027 VIR-T1, T2, and T3 ratings; 59L connection to Pulpit Rock | Bus arrangement and feeder assignments | Station renewal and protection filings |
+| [x] | Virginia Waters, VIR | 2021 VIR-01 to VIR-08 record; 2021 three-transformer arrangement; 2027 VIR-T1, T2, and T3 operating records; selected Airport Substation expansion | Current bus arrangement and feeder assignments | Station renewal and protection filings |
 | [x] | Ridge Road, RRD | 30L, 32L, and 67L supply; RRD-T2 and RRD-T3 ratings; eight current 12.5 kV feeders; nine designations in the 2005 register; 34.7 MVA five-year maximum peak; RRD-T3 replacement planned for 2027 to 2029 | Bus arrangement and feeder assignments | Refurbishment one-line or protection drawing |
 | [ ] | Stamp's Lane, SLA | 2005 feeders SLA-01 to SLA-13; 2027 SLA-T1 to T4 ratings | 4.2 kV and 12.5 kV bus arrangement, feeder assignments | Refurbishment filings and station one-lines |
 | [ ] | St. John's Main, SJM | 2005 feeders SJM-01 to SJM-14; 2027 SJM-T1 to T3 ratings | 25 kV and 12.5 kV bus arrangement, feeder assignments | Refurbishment filings and station one-lines |
-| [ ] | Pepperell, PEP | 2005 feeders PEP-01 to PEP-04; 2027 PEP-T1 and T2 ratings | Bus arrangement and feeder assignments | Station one-line or protection filing |
+| [x] | Pepperell, PEP | PEP-T2 and PEP-05 2019 construction record; 2024 PEP-T1/T2 and PEP-05 supply table; 2027 PEP-T1 and T2 operating records | Current bus arrangement and 12.5/25 kV relationship | Station one-line or protection filing |
 | [x] | King's Bridge, KBR | 12L, 16L, and 30L supply; KBR-T3 and KBR-T4 ratings; six current 12.5 kV feeders; twelve designations in the 2005 register; 43.7 MVA five-year maximum peak; KBR-T3 replacement planned for summer 2028 | Bus arrangement and feeder assignments | Post-2028 commissioning drawing or expenditure report |
 
 ## Archive priority
@@ -79,3 +80,7 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 6. [CA-NP-158, Memorial and Long Pond single-line diagrams](http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-158.PDF), physical PDF pp. 1 to 5.
 7. [PUB-NP-013, Memorial supply point](http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/PUB-NP-013.PDF), physical PDF pp. 2 to 3.
 8. [CA-NP-162, Long Pond outage and alternate supply](http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-162.PDF), physical PDF p. 1.
+9. [Pepperrell Substation Transformer Addition](http://www.pub.nl.ca/applications/2019/NP2019Capital/NP2019Capital_SUPP_Pepperrell/applications/From%20NP%20-%20Approval%20for%20the%20Addition%20of%20a%20Substation%20Transformer%20at%20the%20Companys%20Pepperrell%20Substation%20-%202019-01-30.PDF), physical PDF pp. 24 and 28 to 33.
+10. [2019 Capital Expenditure Report](http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202019%20Capital%20Expenditure%20Report%20-%202020-02-28.PDF), physical PDF pp. 8, 20 and 24.
+11. [St. John's North and Portugal Cove System Planning Study](http://www.pub.nl.ca/applications/2021/NP2021Capital/substationproject/From%20NP%20-%20St.%20Johns%20North-Portugal%20Cove%20System%20Planning%20Study%20Update%20-%202021-02-12.PDF), physical PDF pp. 6 to 14.
+12. [CA-NP-030, General Service Rate 2.4 supply table](http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-030.PDF), physical PDF p. 3.

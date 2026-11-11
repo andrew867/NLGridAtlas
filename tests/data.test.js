@@ -332,6 +332,22 @@ test("station browser covers the handbook and merges the 2027 transformer regist
   assert.match(html, /id="station-tabs"/);
 });
 
+test("Pepperell and Virginia Waters records separate completed work from rejected alternatives", () => {
+  const pepperell = stationProfiles.find((station) => station.code === "PEP");
+  const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
+  const pepperellFacts = [
+    ...pepperell.engineeringRecord.facts.flat(),
+    ...pepperell.planningRecord.facts.flat()
+  ].join(" ");
+  const virginiaFacts = virginiaWaters.engineeringRecord.facts.flat().join(" ");
+  assert.deepEqual(pepperell.feederRegister, ["PEP-01", "PEP-02", "PEP-03", "PEP-04", "PEP-05"]);
+  assert.match(pepperellFacts, /PEP-T1 and PEP-T2, 25 MVA each/);
+  assert.match(pepperellFacts, /collapsed underground ductwork/);
+  assert.deepEqual(virginiaWaters.feederRegister, ["VIR-01", "VIR-02", "VIR-03", "VIR-04", "VIR-05", "VIR-06", "VIR-07", "VIR-08"]);
+  assert.match(virginiaFacts, /new Airport Substation/);
+  assert.match(virginiaFacts, /VIR-T4.*not part of the selected expansion/);
+});
+
 test("Pulpit Rock record preserves the unresolved secondary-voltage evidence", () => {
   const pulpit = stationProfiles.find((station) => station.code === "PUL");
   assert.deepEqual(pulpit.feederRegister, ["PUL-01", "PUL-02", "PUL-03", "PUL-04", "PUL-05"]);

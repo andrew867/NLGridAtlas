@@ -31,7 +31,13 @@ for (const transformer of transformerRegister.transformers) {
   }
 }
 for (const profile of stationProfiles) {
-  if (!stationDirectory.has(profile.code)) stationDirectory.set(profile.code, { code: profile.code, name: profile.name, feeders: [], source_page: null });
+  const station = stationDirectory.get(profile.code);
+  stationDirectory.set(profile.code, {
+    code: profile.code,
+    name: profile.name || station?.name || profile.code,
+    feeders: profile.feederRegister || station?.feeders || [],
+    source_page: station?.source_page || null
+  });
 }
 const handbookEndpoints = new Map();
 for (const line of handbook.transmission_lines) {
