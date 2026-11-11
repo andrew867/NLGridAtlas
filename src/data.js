@@ -520,6 +520,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2023/NP2023Capital_SUPP_MemorialStation/app/From%20NP%20-%20Approval%20for%20the%20Purchase%20and%20Installation%20of%20a%20Replacement%20Power%20Transformer%20for%20Memorial%20Substation%20-%202023-03-03.PDF"
   },
   {
+    id: "gnl-2017-hsc-tender",
+    year: 2017,
+    organization: "Government of Newfoundland and Labrador",
+    title: "MUN/HSC Secondary Electrical Substation, Site Work and Distribution, tender report",
+    topics: ["Long Pond", "Health Sciences Centre", "site work", "distribution", "tender"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "https://www.gov.nl.ca/ti/files/tenderingandcontracts-reports-2017-november-mun-hsc-secondary-electrical-substation-site-work-and-distribution-st.-johns-nl.pdf"
+  },
+  {
+    id: "gnl-2018-hsc-award",
+    year: 2018,
+    organization: "Government of Newfoundland and Labrador",
+    title: "April 2018 contract awards",
+    topics: ["Long Pond", "Health Sciences Centre", "JSM Electrical", "181315001", "CONS1710790"],
+    pages: "physical PDF p. 4",
+    status: "verified",
+    url: "https://www.gov.nl.ca/ppa/files/tenders-awarded-2018-april-2018.pdf"
+  },
+  {
+    id: "pu-5-2019-long-pond",
+    year: 2019,
+    organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
+    title: "Order No. P.U. 5(2019), Long Pond Substation",
+    topics: ["Long Pond", "36L", "special facility", "provincial funding", "Memorial University"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2019/PU5-2019.PDF"
+  },
+  {
     id: "np-2024-capital",
     year: 2023,
     organization: "Newfoundland Power",
@@ -1424,9 +1454,9 @@ export const components = {
   },
   "lpd-summary": {
     diagram: "lpd", status: "verified", code: "LPD / SUBSTATION", title: "Long Pond Substation",
-    summary: "Circuit 36L from Oxen Pond supplies two 66/12.5 kV transformers and the split B1 and B2 bus arrangement shown in the 2023 single-line.",
-    data: [["Supply", "36L from Oxen Pond"], ["LPD-T1", "66/12.5 kV, 25 MVA"], ["LPD-T2", "66/12.5 kV, 25 MVA"], ["Bus sections", "B1 and B2, 12.5 kV"], ["Customer circuits", "MUN-20 through MUN-29"], ["2026 forecast", "20.00 MVA on each unit"], ["2021 station peak", "18 MVA"]],
-    sources: [sourceRef("np-2024-ca-np-158", "physical PDF pp. 4 to 5"), sourceRef("np-2027-transformers", "physical PDF pp. 548 to 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
+    summary: "Circuit 36L from Oxen Pond supplies two 66/12.5 kV transformers and the split B1 and B2 bus arrangement shown in the 2023 single-line. The station is a Newfoundland Power special facility funded by the province on Memorial University's behalf.",
+    data: [["Supply", "36L from Oxen Pond"], ["LPD-T1", "66/12.5 kV, 25 MVA"], ["LPD-T2", "66/12.5 kV, 25 MVA"], ["Bus sections", "B1 and B2, 12.5 kV"], ["Customer circuits", "MUN-20 through MUN-29"], ["2019 utility work", "$4.6 million, reimbursed by the provincial Department of Transportation and Works"], ["Rate treatment", "Special facility, not recovered from other ratepayers"], ["2026 forecast", "20.00 MVA on each unit"], ["2021 station peak", "18 MVA"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF pp. 4 to 5"), sourceRef("np-2027-transformers", "physical PDF pp. 548 to 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111"), sourceRef("pu-5-2019-long-pond", "physical PDF pp. 1 to 2")]
   },
   "lpd-t1": {
     diagram: "lpd", status: "verified", code: "LPD / T1", title: "Long Pond transformer T1",
@@ -2456,7 +2486,31 @@ export const stationProfiles = [
         ["12.5 kV buses", "B1 and B2 with bus tie"],
         ["Medical circuits", "HSC #2 and HSC #5 shown on Memorial-owned switchgear"]
       ]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2018 GOVERNMENT SITE AND DISTRIBUTION CONTRACT",
+        sourceId: "gnl-2018-hsc-award",
+        pages: "physical PDF p. 4",
+        facts: [
+          ["Contract", "181315001, MUN/HSC Secondary Electrical Substation, Site Work and Distribution"],
+          ["Contractor", "JSM Electrical Ltd."],
+          ["Award", "$4,422,267.50, excluding HST"],
+          ["Award date", "April 3, 2018"]
+        ]
+      },
+      {
+        label: "2019 NEWFOUNDLAND POWER SPECIAL FACILITY",
+        sourceId: "pu-5-2019-long-pond",
+        pages: "physical PDF pp. 1 to 2",
+        facts: [
+          ["Purpose", "second supply point for the Health Sciences Centre and the MUN campus"],
+          ["Approved capital expenditure", "$4.6 million"],
+          ["Funding", "provincial Department of Transportation and Works reimbursed Newfoundland Power"],
+          ["Rate treatment", "MUN special facility, not recovered from other ratepayers"]
+        ]
+      }
+    ]
   }
 ];
 

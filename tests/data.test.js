@@ -370,6 +370,11 @@ test("Memorial and Long Pond records preserve the filed Health Sciences supply p
   assert.match(memorialFacts, /MUN-01 and MUN-08/);
   assert.deepEqual(longPond.connectedCircuits, [{ circuit: "36L", from: "Oxen Pond", from_code: "OXP", to: "Long Pond", to_code: "LPD" }]);
   assert.match(longPondFacts, /HSC #2 and HSC #5/);
+  assert.deepEqual(longPond.historyRecords.map((record) => record.sourceId), ["gnl-2018-hsc-award", "pu-5-2019-long-pond"]);
+  assert.match(longPond.historyRecords[0].facts.flat().join(" "), /JSM Electrical Ltd\./);
+  assert.match(longPond.historyRecords[0].facts.flat().join(" "), /\$4,422,267\.50/);
+  assert.match(longPond.historyRecords[1].facts.flat().join(" "), /reimbursed Newfoundland Power/);
+  assert.match(longPond.historyRecords[1].facts.flat().join(" "), /not recovered from other ratepayers/);
   assert.match(html, /aria-label="36L to Oxen Pond Terminal Station"/);
   assert.match(html, /LPD-B1\/B2-B/);
   assert.match(html, /MUN-29[\s\S]*MUN-20/);
