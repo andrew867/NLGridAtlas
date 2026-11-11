@@ -25,6 +25,7 @@ Updated: 2026-11-11
 - Added a clickable Stamp's Lane logical one-line that separates the documented 4.16 kV and 12.5 kV banks.
 - Verified the Stamp's Lane diagram at 1440 by 1000 px and 390 by 844 px with no page overflow, out-of-bounds SVG text, browser warnings, or browser errors.
 - Linked documented circuit ends to the available detailed diagram, station record, or island terminal record.
+- Qualified public commit `af61cb5` from a fresh clone: 71 tests, production build, 66 pinned PDF hashes, and a clean worktree passed.
 
 ## Active work
 
@@ -43,5 +44,4 @@ Direct circuit navigation is complete where the opposite endpoint has a detailed
 
 ## Open release gates
 
-- The clean-clone qualification is not complete.
 - The public evidence-package strategy is not complete.

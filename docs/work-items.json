@@ -498,12 +498,15 @@
       "title": "Run the clean-clone release qualification",
       "phase": 5,
       "priority": "P0",
-      "status": "not_started",
+      "status": "done",
       "scope": "Verify source hashes, tests, build, links, accessibility, responsive layouts, and repository cleanliness from a clean clone.",
       "dependencies": ["QA-001", "SRC-001"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "docs/RELEASE_QUALIFICATION_2026-11-11.md",
+        "https://github.com/andrew867/NLGridAtlas/commit/af61cb5858f4f3be98286c3eaed8b47e1fc7a2f3"
+      ],
       "blocker": null,
-      "notes": "This gate must be rerun for each public release candidate."
+      "notes": "A fresh public clone at af61cb5 passed 71 tests, the production build, hashes for 66 pinned PDFs, and a clean-worktree check. Rerun this gate for each release candidate."
     }
   ]
 }
