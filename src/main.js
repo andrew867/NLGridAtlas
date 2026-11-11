@@ -221,6 +221,16 @@ function renderStationProfile(code) {
   const assignmentSource = assignmentRecord ? sourceById.get(assignmentRecord.sourceId) : null;
   const historyRecords = profile.historyRecords || [];
   const circuitSource = profile.circuitSource ? sourceById.get(profile.circuitSource.sourceId) : null;
+  const feederTieSource = profile.feederTieSource ? sourceById.get(profile.feederTieSource.sourceId) : null;
+  const feederTieRows = (profile.feederTies || []).map((record) => {
+    const ties = record.ties.map((tie) => {
+      const stationCode = tie.split("-")[0];
+      return stationDirectory.has(stationCode)
+        ? `<a href="#station-browser" data-station-record="${escapeHtml(stationCode)}">${escapeHtml(tie)}</a>`
+        : `<span>${escapeHtml(tie)}</span>`;
+    }).join(" ");
+    return `<div><dt><strong>${escapeHtml(record.feeder)}</strong><small>${record.customers.toLocaleString()} customers</small></dt><dd>${ties}</dd></div>`;
+  }).join("");
   document.querySelector("#station-profile").innerHTML = `
     <header class="profile-heading">
       <div><span>${escapeHtml(profile.code)} / STATION RECORD</span><h4>${escapeHtml(profile.name)}</h4></div>
@@ -240,7 +250,11 @@ function renderStationProfile(code) {
           ? profile.feederRegister.map((feeder) => `<span>${escapeHtml(feeder)}</span>`).join("")
           : "<span>No feeder designation</span>"}</div>
         ${feederMaps ? `<span class="profile-label map-label">2014 FEEDER MAP SHEETS</span><div class="feeder-maps">${feederMaps}</div>` : ""}
-        ${referenceSheets ? `<span class="profile-label map-label">SYSTEM SCHEMATICS</span><div class="feeder-maps reference-sheets">${referenceSheets}</div>` : ""}
+        ${referenceSheets ? `<span class="profile-label map-label">${escapeHtml(profile.referenceSheetLabel || "SYSTEM SCHEMATICS")}</span><div class="feeder-maps reference-sheets">${referenceSheets}</div>` : ""}
+        ${feederTieRows ? `
+          <span class="profile-label map-label">2019 FEEDER TIE POINTS</span>
+          <dl class="feeder-tie-list">${feederTieRows}</dl>
+          <a class="evidence-link" href="${escapeHtml(feederTieSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(feederTieSource.title)} / ${escapeHtml(profile.feederTieSource.pages)}</a>` : ""}
         ${profile.mapNote ? `<p class="profile-note">${escapeHtml(profile.mapNote)}</p>` : ""}
       </section>
       <section class="station-equipment">

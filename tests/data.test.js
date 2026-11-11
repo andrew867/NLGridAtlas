@@ -451,7 +451,7 @@ test("station history records retain source and page references", async () => {
 test("every station record resolves to a source", () => {
   const sourceIds = new Set(sources.map((source) => source.id));
   for (const profile of stationProfiles) {
-    for (const key of ["engineeringRecord", "planningRecord", "assignmentRecord", "circuitSource"]) {
+    for (const key of ["engineeringRecord", "planningRecord", "assignmentRecord", "circuitSource", "feederTieSource"]) {
       if (profile[key]) assert.ok(sourceIds.has(profile[key].sourceId), `${profile.code} ${key}: ${profile[key].sourceId}`);
     }
     for (const record of profile.historyRecords || []) {
@@ -465,14 +465,38 @@ test("every station record resolves to a source", () => {
 
 test("station reference schematics remain expandable and locally preserved", async () => {
   const stJohnsMain = stationProfiles.find((station) => station.code === "SJM");
+  const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
+  const pepperell = stationProfiles.find((station) => station.code === "PEP");
+  const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
   assert.deepEqual(stJohnsMain.referenceSheets.map((sheet) => [sheet.title, sheet.pages]), [
     ["2011 Water Street existing feeder schematic", "physical PDF p. 425"]
   ]);
+  assert.equal(kingsBridge.referenceSheets[0].image, "./reference-maps/kbr-2019-service-area.png");
+  assert.equal(pepperell.referenceSheets[0].pages, "physical PDF p. 37");
+  assert.equal(virginiaWaters.referenceSheets[0].pages, "physical PDF p. 39");
   const schematic = await readFile(new URL("../public/reference-maps/sjm-2011-water-street-existing.png", import.meta.url));
+  const serviceArea = await readFile(new URL("../public/reference-maps/kbr-2019-service-area.png", import.meta.url));
   assert.ok(schematic.length > 300_000);
+  assert.ok(serviceArea.length > 1_000_000);
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(main, /referenceSheets/);
   assert.match(main, /SYSTEM SCHEMATICS/);
+});
+
+test("2019 feeder tie records link King's Bridge, Pepperell, and Virginia Waters", async () => {
+  const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
+  const pepperell = stationProfiles.find((station) => station.code === "PEP");
+  const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
+
+  assert.deepEqual(kingsBridge.feederRegister, ["KBR-09", "KBR-10", "KBR-11", "KBR-12", "KBR-13", "KBR-15"]);
+  assert.deepEqual(kingsBridge.feederTies[0], { feeder: "KBR-09", customers: 996, ties: ["RRD-02", "PEP-01"] });
+  assert.deepEqual(pepperell.feederTies[0].ties, ["KBR-09", "PEP-04", "VIR-03", "VIR-05", "VIR-08"]);
+  assert.deepEqual(virginiaWaters.feederTies[7].ties, ["RRD-03", "RRD-07", "PEP-01", "VIR-05"]);
+
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(main, /profile\.feederTies/);
+  assert.match(main, /data-station-record/);
+  assert.match(main, /2019 FEEDER TIE POINTS/);
 });
 
 test("documented feeder assignments and bus breakers retain their filed scope", async () => {

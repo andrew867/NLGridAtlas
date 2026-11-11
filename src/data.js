@@ -275,7 +275,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "Pepperrell Substation Transformer Addition",
     topics: ["Pepperrell", "PEP-T1", "PEP-T2", "PEP-05", "12.47 kV", "477 ASC"],
-    pages: "physical PDF pp. 24 and 28 to 33",
+    pages: "physical PDF pp. 24, 28 to 33, 35, 37 and 39",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/NP2019Capital_SUPP_Pepperrell/applications/From%20NP%20-%20Approval%20for%20the%20Addition%20of%20a%20Substation%20Transformer%20at%20the%20Companys%20Pepperrell%20Substation%20-%202019-01-30.PDF"
   },
@@ -1541,8 +1541,29 @@ export const stationProfiles = [
     voltage: "66 kV / 12.5 kV feeders",
     circuitRegisterLabel: "2026 STATION RECORD",
     circuitSource: { sourceId: "np-2026-kings-bridge", pages: "physical PDF p. 72" },
+    feederRegisterLabel: "2019 FEEDER AND TIE RECORD",
+    feederRegister: ["KBR-09", "KBR-10", "KBR-11", "KBR-12", "KBR-13", "KBR-15"],
     mapPages: [],
     eventLoads: [],
+    feederTieSource: { sourceId: "np-2019-pepperrell", pages: "physical PDF p. 35" },
+    feederTies: [
+      { feeder: "KBR-09", customers: 996, ties: ["RRD-02", "PEP-01"] },
+      { feeder: "KBR-10", customers: 1334, ties: ["KBR-12", "SJM-03", "SJM-04"] },
+      { feeder: "KBR-11", customers: 794, ties: ["KBR-13", "KBR-15", "SLA-13", "RRD-05"] },
+      { feeder: "KBR-12", customers: 448, ties: ["KBR-10", "KBR-13", "PEP-02"] },
+      { feeder: "KBR-13", customers: 1009, ties: ["KBR-10", "KBR-11", "SLA-09"] },
+      { feeder: "KBR-15", customers: 1059, ties: ["KBR-11"] }
+    ],
+    referenceSheetLabel: "2019 SERVICE AREA MAP",
+    referenceSheets: [
+      {
+        title: "King's Bridge feeder service area and tie table",
+        image: "./reference-maps/kbr-2019-service-area.png",
+        alt: "King's Bridge feeder service area map and customer-count tie table filed in the 2019 Pepperell supplemental application",
+        sourceId: "np-2019-pepperrell",
+        pages: "physical PDF p. 35"
+      }
+    ],
     engineeringRecord: {
       date: "2026 CAPITAL APPLICATION",
       title: "King's Bridge transformer bank",
@@ -1790,6 +1811,24 @@ export const stationProfiles = [
     name: "Pepperell",
     feederRegisterLabel: "2019 AND 2024 FEEDER RECORD",
     feederRegister: ["PEP-01", "PEP-02", "PEP-03", "PEP-04", "PEP-05"],
+    feederTieSource: { sourceId: "np-2019-pepperrell", pages: "physical PDF p. 37" },
+    feederTies: [
+      { feeder: "PEP-01", customers: 1503, ties: ["KBR-09", "PEP-04", "VIR-03", "VIR-05", "VIR-08"] },
+      { feeder: "PEP-02", customers: 926, ties: ["PEP-03", "VIR-01"] },
+      { feeder: "PEP-03", customers: 442, ties: ["KBR-12", "PEP-02", "PEP-04"] },
+      { feeder: "PEP-04", customers: 379, ties: ["PEP-01", "PEP-03"] }
+    ],
+    referenceSheetLabel: "2019 SERVICE AREA MAP",
+    referenceSheets: [
+      {
+        title: "Pepperell feeder service area and tie table",
+        image: "./reference-maps/pep-2019-service-area.png",
+        alt: "Pepperell feeder service area map and customer-count tie table filed in the 2019 Pepperell supplemental application",
+        sourceId: "np-2019-pepperrell",
+        pages: "physical PDF p. 37"
+      }
+    ],
+    feederRegister: ["PEP-01", "PEP-02", "PEP-03", "PEP-04", "PEP-05"],
     mapPages: [],
     eventLoads: [],
     engineeringRecord: {
@@ -1824,6 +1863,28 @@ export const stationProfiles = [
     code: "VIR",
     name: "Virginia Waters",
     feederRegisterLabel: "2021 FEEDER RECORD",
+    feederRegister: ["VIR-01", "VIR-02", "VIR-03", "VIR-04", "VIR-05", "VIR-06", "VIR-07", "VIR-08"],
+    feederTieSource: { sourceId: "np-2019-pepperrell", pages: "physical PDF p. 39" },
+    feederTies: [
+      { feeder: "VIR-01", customers: 1115, ties: ["PEP-02", "VIR-03"] },
+      { feeder: "VIR-02", customers: 731, ties: ["VIR-06", "VIR-07"] },
+      { feeder: "VIR-03", customers: 827, ties: ["PEP-01", "VIR-01"] },
+      { feeder: "VIR-04", customers: 765, ties: ["VIR-08"] },
+      { feeder: "VIR-05", customers: 1364, ties: ["RRD-07", "VIR-07", "VIR-08"] },
+      { feeder: "VIR-06", customers: 694, ties: ["PUL-01", "VIR-02"] },
+      { feeder: "VIR-07", customers: 784, ties: ["RRD-09", "PUL-04", "VIR-02", "VIR-06"] },
+      { feeder: "VIR-08", customers: 1030, ties: ["RRD-03", "RRD-07", "PEP-01", "VIR-05"] }
+    ],
+    referenceSheetLabel: "2019 SERVICE AREA MAP",
+    referenceSheets: [
+      {
+        title: "Virginia Waters feeder service area and tie table",
+        image: "./reference-maps/vir-2019-service-area.png",
+        alt: "Virginia Waters feeder service area map and customer-count tie table filed in the 2019 Pepperell supplemental application",
+        sourceId: "np-2019-pepperrell",
+        pages: "physical PDF p. 39"
+      }
+    ],
     feederRegister: ["VIR-01", "VIR-02", "VIR-03", "VIR-04", "VIR-05", "VIR-06", "VIR-07", "VIR-08"],
     mapPages: [],
     eventLoads: [],

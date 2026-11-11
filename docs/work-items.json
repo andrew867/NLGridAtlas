@@ -125,7 +125,7 @@
         "research/NP_STATION_GAP_LEDGER.md"
       ],
       "blocker": null,
-      "notes": "CA-NP-255 establishes selected feeder-to-transformer assignments at HWD, OXP, KEN, GOU, KBR, RRD, SJM, SLA, PEP, and VIR. PUB-NP-064 Attachment G identifies Glendale T1/T2 and T2/T3 tie breakers. PUB-NP-276 and the 2019 and 2023 capital records preserve Stamp's Lane feeder voltages and SLA-05 work history. The remaining feeders and bus sections still require one-lines or protection drawings."
+      "notes": "CA-NP-255 establishes selected feeder-to-transformer assignments at HWD, OXP, KEN, GOU, KBR, RRD, SJM, SLA, PEP, and VIR. The 2019 Pepperell supplemental filing establishes feeder tie points and customer counts for KBR, PEP, and VIR. PUB-NP-064 Attachment G identifies Glendale T1/T2 and T2/T3 tie breakers. PUB-NP-276 and the 2019 and 2023 capital records preserve Stamp's Lane feeder voltages and SLA-05 work history. The remaining feeders and bus sections still require one-lines or protection drawings."
     },
     {
       "id": "AVL-003",

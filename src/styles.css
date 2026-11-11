@@ -453,6 +453,13 @@ button, input { font: inherit; }
 .feeder-map-image { display: block; background: var(--paper-bright); }
 .feeder-map-image img { display: block; width: 100%; max-height: 680px; object-fit: contain; }
 .feeder-map-source { display: inline-block; margin: .65rem 0 .8rem; font: 400 .66rem/1.4 "IBM Plex Mono", monospace; text-underline-offset: .2rem; }
+.feeder-tie-list { margin: 1rem 0; border-top: 1px solid var(--ink); }
+.feeder-tie-list > div { display: grid; grid-template-columns: minmax(100px, .45fr) 1fr; gap: .8rem; padding: .7rem 0; border-bottom: 1px solid var(--rule); }
+.feeder-tie-list dt, .feeder-tie-list dd { min-width: 0; margin: 0; font: 400 .7rem/1.45 "IBM Plex Mono", monospace; }
+.feeder-tie-list dt strong, .feeder-tie-list dt small { display: block; }
+.feeder-tie-list dt small { margin-top: .2rem; color: var(--muted); font-weight: 400; }
+.feeder-tie-list dd { display: flex; flex-wrap: wrap; align-content: flex-start; gap: .35rem .65rem; }
+.feeder-tie-list a { color: var(--ink); text-underline-offset: .2rem; }
 .map-label { display: block; margin-top: 2rem; }
 .profile-note, .event-loads > p { color: var(--muted); font: 400 .68rem/1.5 "IBM Plex Mono", monospace; }
 .event-loads dl { margin: 1rem 0 1.25rem; border-top: 1px solid var(--ink); }
