@@ -300,6 +300,22 @@ test("island terminal records retain page-level sources", async () => {
   assert.match(html, /data-hydro-terminal-record="BDE"/);
 });
 
+test("island transformer evidence keeps dated ratings and replacements", () => {
+  const stonyBrook = islandTerminalRecords.find((record) => record.code === "STB");
+  const deerLake = islandTerminalRecords.find((record) => record.code === "DLK");
+  const howley = islandTerminalRecords.find((record) => record.code === "HOW");
+  const masseyDrive = islandTerminalRecords.find((record) => record.code === "MAS");
+
+  assert.match(stonyBrook.facts.flat().join(" "), /75\/100\/125 MVA each in the 2003 system report/);
+  assert.match(deerLake.facts.flat().join(" "), /45\/60\/75 MVA/);
+  assert.match(deerLake.facts.flat().join(" "), /25\/33\.3\/41\.7 MVA/);
+  assert.match(howley.facts.flat().join(" "), /138\/69\/4\.16 kV, 7\.5\/10\/12\.5 MVA/);
+  assert.match(masseyDrive.facts.flat().join(" "), /1998 transformer replacement/);
+  assert.match(masseyDrive.facts.flat().join(" "), /66\.7 MVA.*125 MVA/);
+  assert.ok(howley.sources.some((reference) => reference.sourceId === "nlh-howley-system-2003"));
+  assert.ok(masseyDrive.sources.some((reference) => reference.sourceId === "nlh-system-additions-2001"));
+});
+
 test("2027 transformer register updates Avalon station records", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.deepEqual(components["oxp-np-transformer"].data, [

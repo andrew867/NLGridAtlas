@@ -38,12 +38,15 @@ Updated: 2026-11-11
 - Verified the Molloy's Lane diagram and MOL-01 route sheet at 1440 by 1000 px and 390 by 844 px. The mobile page has no horizontal page overflow; the one-line remains horizontally scrollable inside its frame.
 - Added individual west-coast, Northern Peninsula, and rural records for Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, and English Harbour West.
 - Verified Berry Hill map selection, station navigation, and record rendering at 1440 by 1000 px and 390 by 844 px. The map selection stayed in place; the record link opened the station register; the mobile page had no horizontal page overflow.
+- Added the 2003 staged transformer ratings for Howley, Deer Lake, and Stony Brook.
+- Added the 1998 Massey Drive 230/66 kV transformer replacement record from the 2001 prefiled testimony.
+- Deferred unsupported lower-voltage rural records and current rural breaker drawings so the transformer ledger and main island network can proceed.
 
 ## Active work
 
-1. Add western and rural terminal-station coverage, `ISL-005`.
+1. Complete island transformer nameplate and age records, `ISL-006`.
 2. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
-3. Complete island transformer nameplate and age records, `ISL-006`.
+3. Find the latest supported Holyrood station arrangement, `GEN-001`.
 
 ## Island backbone progress
 

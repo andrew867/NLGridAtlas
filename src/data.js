@@ -220,6 +220,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-323.pdf"
   },
   {
+    id: "nlh-howley-system-2003",
+    year: 2003,
+    organization: "NL Hydro",
+    title: "IC-126, Transmission System Analysis, Hinds Lake Runner Upgrade",
+    topics: ["Howley", "Deer Lake", "Stony Brook", "transformer ratings", "138 kV loop"],
+    pages: "physical PDF p. 29",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2006gra/files/rfi/IC-126.pdf"
+  },
+  {
+    id: "nlh-system-additions-2001",
+    year: 2001,
+    organization: "NL Hydro",
+    title: "May 2001 Prefiled Testimony, Island Interconnected System Additions",
+    topics: ["Massey Drive", "Hardwoods", "transformer replacement", "system additions"],
+    pages: "physical PDF p. 224",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/July9/Hydro/preTest/May%202001%20Prefiled%20Testimony%20-%20Entire%20Document.pdf"
+  },
+  {
     id: "oxen-2013",
     year: 2013,
     organization: "NL Hydro",
@@ -2133,14 +2153,14 @@ export const islandTerminalRecords = [
     code: "STB",
     name: "Stony Brook Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T1 and T2, 230/138 kV, 125 MVA maximum rating each"], ["230 kV circuits", "TL231 and TL204 to Bay d'Espoir; TL205 and TL232 to Buchans"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"]],
+    facts: [["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report"], ["230 kV circuits", "TL231 and TL204 to Bay d'Espoir; TL205 and TL232 to Buchans"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"]],
     diagram: {
-      label: "2018 routes / 2023 transformer ratings",
+      label: "2003 transformer ratings / 2018 routes",
       buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }],
-      transformers: [{ label: "T1", rating: "125 MVA max", from: "b1", to: "b2" }, { label: "T2", rating: "125 MVA max", from: "b1", to: "b2" }],
+      transformers: [{ label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" }, { label: "T2", rating: "75/100/125 MVA", from: "b1", to: "b2" }],
       circuits: [{ label: "TL231", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL204", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL205", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL232", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL222", destination: "South Brook", bus: "b2" }, { label: "TL210", destination: "Cobb's Pond", bus: "b2" }]
     },
-    sources: [sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+    sources: [sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
   },
   {
     code: "BDE",
@@ -2173,14 +2193,14 @@ export const islandTerminalRecords = [
     code: "DLK",
     name: "Deer Lake Terminal Station",
     status: "verified",
-    facts: [["Transformation", "One 75 MVA 230/138 kV transformer and one 41.6 MVA 138/66 kV transformer in the 2010 filing"], ["138 kV circuits", "TL239 to Berry Hill; TL245 to Howley"], ["66 kV circuit", "TL226 through Wiltondale to Rocky Harbour and Berry Hill"], ["Adjacent generation", "Deer Lake Power shown at 81 MW on the 2013 one-line"]],
+    facts: [["2003 transformer ratings", "230/138 kV at 45/60/75 MVA; 138/66 kV at 25/33.3/41.7 MVA"], ["2010 transformer record", "Maximum ratings printed as 75 MVA and 41.6 MVA"], ["138 kV circuits", "TL239 to Berry Hill; TL245 to Howley"], ["66 kV circuit", "TL226 through Wiltondale to Rocky Harbour and Berry Hill"], ["Adjacent generation", "Deer Lake Power shown at 81 MW on the 2013 one-line"]],
     diagram: {
-      label: "2010 transformation / 2018 routes",
+      label: "2003 transformer ratings / 2018 routes",
       buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }, { id: "b3", label: "66 kV bus", voltage: "66 kV" }],
-      transformers: [{ label: "230/138 kV transformer", rating: "75 MVA", from: "b1", to: "b2" }, { label: "138/66 kV transformer", rating: "41.6 MVA", from: "b2", to: "b3" }],
+      transformers: [{ label: "230/138 kV transformer", rating: "45/60/75 MVA", from: "b1", to: "b2" }, { label: "138/66 kV transformer", rating: "25/33.3/41.7 MVA", from: "b2", to: "b3" }],
       circuits: [{ label: "TL239", destination: "Berry Hill", bus: "b2" }, { label: "TL245", destination: "Howley", bus: "b2" }, { label: "TL226", destination: "Wiltondale", bus: "b3" }]
     },
-    sources: [sourceRef("nlh-deer-lake-2010", "physical PDF p. 378"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF p. 378"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "BRH",
@@ -2267,14 +2287,14 @@ export const islandTerminalRecords = [
     code: "HOW",
     name: "Howley Terminal Station",
     status: "verified",
-    facts: [["Transformation", "138/69 kV"], ["138 kV circuits", "TL245 to Deer Lake; TL243 to Hinds Lake; TL224 to Indian River"], ["69 kV circuit", "TL251 to Hampden Tap"]],
+    facts: [["Power transformer", "138/69/4.16 kV, 7.5/10/12.5 MVA in the 2003 system report"], ["138 kV circuits", "TL245 to Deer Lake; TL243 to Hinds Lake; TL224 to Indian River"], ["69 kV circuit", "TL251 to Hampden Tap"]],
     diagram: {
-      label: "2013 station voltage / 2018 filed routes",
+      label: "2003 transformer rating / 2018 filed routes",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "69 kV" }],
-      transformers: [{ label: "Station transformer", rating: "138/69 kV", from: "b1", to: "b2" }],
+      transformers: [{ label: "Power transformer", rating: "7.5/10/12.5 MVA", from: "b1", to: "b2" }],
       circuits: [{ label: "TL245", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }, { label: "TL243", destination: "Hinds Lake", bus: "b1", destinationCode: "HLA" }, { label: "TL224", destination: "Indian River", bus: "b1" }, { label: "TL251", destination: "Hampden Tap", bus: "b2" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "SBR",
@@ -2359,14 +2379,14 @@ export const islandTerminalRecords = [
     code: "MAS",
     name: "Massey Drive Terminal Station",
     status: "verified",
-    facts: [["Transformation", "230/66 kV"], ["Transformer assignments", "T1 supplies Corner Brook Pulp and Paper; T2 and T3 supply Newfoundland Power"], ["230 kV circuits", "TL228 to Buchans; TL211 to Bottom Brook"], ["2023 work", "Data-alarm system upgrade completed; 230 kV fire-protection work identified"]],
+    facts: [["1998 transformer replacement", "One 66.7 MVA, 230/66 kV transformer was replaced by a 125 MVA, 230/66 kV transformer"], ["Transformer assignments", "T1 supplies Corner Brook Pulp and Paper; T2 and T3 supply Newfoundland Power"], ["230 kV circuits", "TL228 to Buchans; TL211 to Bottom Brook"], ["2023 work", "Data-alarm system upgrade completed; 230 kV fire-protection work identified"]],
     diagram: {
       label: "2015 assignments / 2018 routes",
       buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }],
       transformers: [{ label: "T1", rating: "Corner Brook Pulp and Paper", from: "b1", to: "b2" }, { label: "T2", rating: "Newfoundland Power", from: "b1", to: "b2" }, { label: "T3", rating: "Newfoundland Power", from: "b1", to: "b2" }],
       circuits: [{ label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }]
     },
-    sources: [sourceRef("nlh-transformer-loading-2015", "PDF p. 4"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+    sources: [sourceRef("nlh-system-additions-2001", "physical PDF p. 224"), sourceRef("nlh-transformer-loading-2015", "PDF p. 4"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
   },
   {
     code: "STV",
