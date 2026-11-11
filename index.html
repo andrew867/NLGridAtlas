@@ -125,8 +125,8 @@
             <desc id="terminal-network-desc">Stations are ordered west to east as Western Avalon, Holyrood, Hardwoods, and Oxen Pond. Western Avalon also connects to Long Harbour, Come By Chance, and Sunnyside.</desc>
             <g class="terminal-network-lines">
               <a class="network-circuit" href="#terminal-overview-lhb" aria-label="TL208 to Long Harbour"><path d="M360 300 L130 450"/><text x="225" y="360">TL208</text></a>
-              <a class="network-circuit" href="#terminal-overview-cbc" aria-label="TL237 to Come By Chance"><path d="M360 300 L120 115"/><text x="225" y="190">TL237</text></a>
-              <a class="network-circuit" href="#terminal-overview-sun" aria-label="TL203 to Sunnyside"><path d="M360 300 L310 80"/><text x="320" y="185">TL203</text></a>
+              <a class="network-circuit" href="#hydro-terminal-browser" data-hydro-terminal-record="CBC" aria-label="TL237 to Come By Chance"><path d="M360 300 L120 115"/><text x="225" y="190">TL237</text></a>
+              <a class="network-circuit" href="#hydro-terminal-browser" data-hydro-terminal-record="SUN" aria-label="TL203 to Sunnyside"><path d="M360 300 L310 80"/><text x="320" y="185">TL203</text></a>
               <a class="network-circuit" href="#terminal-hwd" aria-label="TL201 to Hardwoods Terminal Station"><path d="M360 300 H650"/><text x="505" y="278">TL201</text></a>
               <a class="network-circuit" href="#terminal-hrd" aria-label="TL217 to Holyrood Generating Station"><path d="M360 300 L520 440"/><text x="410" y="390">TL217</text></a>
               <a class="network-circuit" href="#terminal-opd" aria-label="TL236 to Oxen Pond Terminal Station"><path d="M650 300 L840 155"/><text x="745" y="210">TL236</text></a>
@@ -134,8 +134,8 @@
               <a class="network-circuit" href="#terminal-hrd" aria-label="TL218 to Holyrood Generating Station"><path d="M840 155 C825 390 730 470 520 440"/><text x="760" y="405">TL218</text></a>
             </g>
             <g class="terminal-network-nodes">
-              <g id="terminal-overview-cbc" class="network-node auxiliary-node"><circle cx="120" cy="115" r="11"/><text x="120" y="83">COME BY CHANCE</text></g>
-              <g id="terminal-overview-sun" class="network-node auxiliary-node"><circle cx="310" cy="80" r="11"/><text x="310" y="48">SUNNYSIDE</text></g>
+              <a id="terminal-overview-cbc" class="network-node auxiliary-node" href="#hydro-terminal-browser" data-hydro-terminal-record="CBC" aria-label="Open Come By Chance terminal record"><circle cx="120" cy="115" r="11"/><text x="120" y="83">COME BY CHANCE</text></a>
+              <a id="terminal-overview-sun" class="network-node auxiliary-node" href="#hydro-terminal-browser" data-hydro-terminal-record="SUN" aria-label="Open Sunnyside terminal record"><circle cx="310" cy="80" r="11"/><text x="310" y="48">SUNNYSIDE</text></a>
               <g id="terminal-overview-lhb" class="network-node auxiliary-node"><circle cx="130" cy="450" r="11"/><text x="130" y="488">LONG HARBOUR</text></g>
               <a class="network-node" href="#terminal-wav" aria-label="Open Western Avalon Terminal Station"><circle cx="360" cy="300" r="14"/><text x="360" y="335">WESTERN AVALON</text></a>
               <a class="network-node" href="#terminal-hrd" aria-label="Open Holyrood Generating Station"><circle cx="520" cy="440" r="14"/><text x="520" y="478">HOLYROOD</text></a>
@@ -426,9 +426,9 @@
                   <path class="tap" d="M0 120 V205 M0 263 V330"/><circle class="winding v230-winding" cy="224" r="20"/><circle class="winding v66-winding" cy="252" r="20"/><text class="center-label" x="0" y="292">T2</text>
                 </g>
                 <a class="diagram-link" href="#terminal-overview-lhb" aria-label="TL208 to Long Harbour"><path class="outgoing" d="M535 120V42"/><text class="small-label transformer-rating" x="535" y="16">TL208</text><text class="small-label transformer-rating" x="535" y="31">LONG HARBOUR</text></a>
-                <a class="diagram-link" href="#terminal-overview-cbc" aria-label="TL237 to Come By Chance"><path class="outgoing" d="M620 120V78"/><text class="small-label transformer-rating" x="620" y="52">TL237</text><text class="small-label transformer-rating" x="620" y="67">COME BY CHANCE</text></a>
+                <a class="diagram-link" href="#hydro-terminal-browser" data-hydro-terminal-record="CBC" aria-label="TL237 to Come By Chance"><path class="outgoing" d="M620 120V78"/><text class="small-label transformer-rating" x="620" y="52">TL237</text><text class="small-label transformer-rating" x="620" y="67">COME BY CHANCE</text></a>
                 <a class="diagram-link" href="#terminal-hwd" aria-label="TL201 to Hardwoods Terminal Station"><path class="outgoing" d="M710 120V42"/><text class="small-label transformer-rating" x="710" y="16">TL201</text><text class="small-label transformer-rating" x="710" y="31">HARDWOODS</text></a>
-                <a class="diagram-link" href="#terminal-overview-sun" aria-label="TL203 to Sunnyside"><path class="outgoing" d="M800 120V78"/><text class="small-label transformer-rating" x="800" y="52">TL203</text><text class="small-label transformer-rating" x="800" y="67">SUNNYSIDE</text></a>
+                <a class="diagram-link" href="#hydro-terminal-browser" data-hydro-terminal-record="SUN" aria-label="TL203 to Sunnyside"><path class="outgoing" d="M800 120V78"/><text class="small-label transformer-rating" x="800" y="52">TL203</text><text class="small-label transformer-rating" x="800" y="67">SUNNYSIDE</text></a>
                 <a class="diagram-link" href="#terminal-hrd" aria-label="TL217 to Holyrood Generating Station"><path class="outgoing" d="M860 120V380"/><text class="small-label transformer-rating" x="860" y="405">TL217 / HOLYROOD</text></a>
               </svg>
               <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / 2011 FIGURE 3 / PROPOSED EQUIPMENT DASHED</p>
@@ -538,13 +538,13 @@
                 <a class="diagram-link" href="#terminal-hwd" aria-label="Open Hardwoods Terminal Station">
                   <path class="line v66-line" d="M70 85 H930"/><text class="bus-label center-label" x="500" y="118">66 kV BUS</text>
                 </a>
-                <a class="circuit-link" href="#station-BCV" aria-label="5L to Broad Cove"><path class="outgoing" d="M110 58V85"/><text x="110" y="14">5L</text><text x="110" y="43">BCV</text></a>
-                <a class="circuit-link" href="#station-MOL" aria-label="19L to Molloy's Lane"><path class="outgoing" d="M230 58V85"/><text x="230" y="14">19L</text><text x="230" y="43">MOL</text></a>
-                <a class="circuit-link" href="#station-CHA" aria-label="49L to Chamberlains"><path class="outgoing" d="M350 58V85"/><text x="350" y="14">49L</text><text x="350" y="43">CHA</text></a>
-                <a class="circuit-link" href="#station-KEN" aria-label="54L to Kenmount"><path class="outgoing" d="M620 58V85"/><text x="620" y="14">54L</text><text x="620" y="43">KEN</text></a>
-                <a class="circuit-link" href="#station-GOU" aria-label="72L to Goulds"><path class="outgoing" d="M720 58V85"/><text x="720" y="14">72L</text><text x="720" y="43">GOU</text></a>
+                <a class="circuit-link" href="#station-browser" data-station-record="BCV" aria-label="5L to Broad Cove"><path class="outgoing" d="M110 58V85"/><text x="110" y="14">5L</text><text x="110" y="43">BCV</text></a>
+                <a class="circuit-link" href="#station-browser" data-station-record="MOL" aria-label="19L to Molloy's Lane"><path class="outgoing" d="M230 58V85"/><text x="230" y="14">19L</text><text x="230" y="43">MOL</text></a>
+                <a class="circuit-link" href="#station-browser" data-station-record="CHA" aria-label="49L to Chamberlains"><path class="outgoing" d="M350 58V85"/><text x="350" y="14">49L</text><text x="350" y="43">CHA</text></a>
+                <a class="circuit-link" href="#substation-ken" aria-label="54L to Kenmount"><path class="outgoing" d="M620 58V85"/><text x="620" y="14">54L</text><text x="620" y="43">KEN</text></a>
+                <a class="circuit-link" href="#substation-gou" aria-label="72L to Goulds"><path class="outgoing" d="M720 58V85"/><text x="720" y="14">72L</text><text x="720" y="43">GOU</text></a>
                 <a class="circuit-link" href="#substation-gdl" aria-label="73L to Glendale"><path class="outgoing" d="M820 58V85"/><text x="820" y="14">73L</text><text x="820" y="43">GDL</text></a>
-                <a class="circuit-link" href="#station-CHA" aria-label="79L to Chamberlains"><path class="outgoing" d="M920 58V85"/><text x="920" y="14">79L</text><text x="920" y="43">CHA</text></a>
+                <a class="circuit-link" href="#station-browser" data-station-record="CHA" aria-label="79L to Chamberlains"><path class="outgoing" d="M920 58V85"/><text x="920" y="14">79L</text><text x="920" y="43">CHA</text></a>
                 <g class="register-transformer component" transform="translate(250)" tabindex="0" role="button" aria-pressed="false" data-diagram="hwd-np" data-component="hwd-np-t1" aria-label="Hardwoods transformer HWD-T1">
                   <path class="tap" d="M0 85 V155 M0 213 V300"/><circle class="winding v66-winding" cy="174" r="21"/><circle class="winding feeder-winding" cy="202" r="21"/>
                   <text class="center-label" x="0" y="246">HWD-T1</text><text class="small-label transformer-rating" x="0" y="268">66/12.5 kV / 20 MVA</text>
@@ -596,13 +596,13 @@
                 <a class="diagram-link" href="#terminal-opd" aria-label="Open Oxen Pond Terminal Station">
                   <path class="line v66-line" d="M70 90 H930"/><text class="bus-label center-label" x="500" y="73">66 kV BUS / OXP TERMINAL</text>
                 </a>
-                <a class="circuit-link" href="#station-SLA" aria-label="31L to Stamp's Lane"><path class="outgoing" d="M110 58V90"/><text x="110" y="20">31L</text><text x="110" y="47">SLA</text></a>
+                <a class="circuit-link" href="#station-browser" data-station-record="SLA" aria-label="31L to Stamp's Lane"><path class="outgoing" d="M110 58V90"/><text x="110" y="20">31L</text><text x="110" y="47">SLA</text></a>
                 <a class="circuit-link" href="#substation-rrd" aria-label="32L to Ridge Road"><path class="outgoing" d="M230 58V90"/><text x="230" y="20">32L</text><text x="230" y="47">RRD</text></a>
                 <a class="circuit-link" href="#substation-vir" aria-label="34L to Virginia Waters"><path class="outgoing" d="M350 58V90"/><text x="350" y="20">34L</text><text x="350" y="47">VIR</text></a>
-                <a class="circuit-link" href="#station-KEN" aria-label="35L to Kenmount"><path class="outgoing" d="M620 58V90"/><text x="620" y="20">35L</text><text x="620" y="47">KEN</text></a>
+                <a class="circuit-link" href="#substation-ken" aria-label="35L to Kenmount"><path class="outgoing" d="M620 58V90"/><text x="620" y="20">35L</text><text x="620" y="47">KEN</text></a>
                 <a class="circuit-link" href="#substation-vir" aria-label="58L to Virginia Waters"><path class="outgoing" d="M720 58V90"/><text x="720" y="20">58L</text><text x="720" y="47">VIR</text></a>
                 <a class="circuit-link" href="#substation-rrd" aria-label="67L to Ridge Road"><path class="outgoing" d="M820 58V90"/><text x="820" y="20">67L</text><text x="820" y="47">RRD</text></a>
-                <a class="circuit-link" href="#station-SLA" aria-label="70L to Stamp's Lane"><path class="outgoing" d="M920 58V90"/><text x="920" y="20">70L</text><text x="920" y="47">SLA</text></a>
+                <a class="circuit-link" href="#station-browser" data-station-record="SLA" aria-label="70L to Stamp's Lane"><path class="outgoing" d="M920 58V90"/><text x="920" y="20">70L</text><text x="920" y="47">SLA</text></a>
                 <g class="register-transformer component" transform="translate(500)" tabindex="0" role="button" aria-pressed="false" data-diagram="oxp-np" data-component="oxp-np-transformer" aria-label="Oxen Pond transformer OXP-T1">
                   <path class="tap" d="M0 90 V165 M0 223 V295"/><circle class="winding v66-winding" cy="184" r="21"/><circle class="winding feeder-winding" cy="212" r="21"/>
                   <text class="center-label" x="0" y="258">OXP-T1</text><text class="small-label transformer-rating" x="0" y="280">66/12.5 kV / 13.33 MVA</text>
@@ -673,7 +673,7 @@
                   <path class="line v66-line" d="M110 95 H890"/><text class="bus-label center-label" x="500" y="72">66 kV BUS</text>
                 </g>
                 <a class="diagram-link" href="#substation-kbr" aria-label="12L to King's Bridge Substation"><path class="outgoing" d="M110 95H35"/><text class="small-label" x="28" y="70">12L / KING'S BRIDGE</text></a>
-                <a class="diagram-link" href="#station-SLA" aria-label="14L to Stamp's Lane Substation"><path class="outgoing" d="M890 95H965"/><text class="small-label" x="805" y="70">14L / STAMP'S LANE</text></a>
+                <a class="diagram-link" href="#station-browser" data-station-record="SLA" aria-label="14L to Stamp's Lane Substation"><path class="outgoing" d="M890 95H965"/><text class="small-label" x="805" y="70">14L / STAMP'S LANE</text></a>
                 <g class="register-transformer component" transform="translate(330)" tabindex="0" role="button" aria-pressed="false" data-diagram="mun" data-component="mun-t2" aria-label="Memorial transformer T2">
                   <path class="tap" d="M0 95 V175 M0 233 V310"/><circle class="winding v66-winding" cy="194" r="21"/><circle class="winding feeder-winding" cy="222" r="21"/>
                   <text class="center-label" x="0" y="270">MUN-T2</text><text class="small-label transformer-rating" x="0" y="292">25 MVA</text>

@@ -443,6 +443,7 @@ function showHashStation() {
 
 function bindInternalDiagramLinks() {
   document.querySelectorAll('svg a[href^="#"]').forEach((link) => {
+    if (link.matches("[data-station-record], [data-hydro-terminal-record]")) return;
     link.addEventListener("click", (event) => {
       const href = link.getAttribute("href");
       const target = document.getElementById(href.slice(1));

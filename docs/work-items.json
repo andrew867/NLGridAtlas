@@ -212,12 +212,16 @@
       "title": "Make every documented circuit link open the other-end record",
       "phase": 1,
       "priority": "P0",
-      "status": "not_started",
+      "status": "done",
       "scope": "Replace intermediate decorative-node navigation for TL208, TL203, TL237, and 66 kV circuit links when a destination record exists.",
       "dependencies": ["AVL-006"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "index.html",
+        "src/main.js",
+        "tests/data.test.js"
+      ],
       "blocker": null,
-      "notes": "Map-point selection must continue to avoid browser scrolling."
+      "notes": "TL203 and TL237 open the Sunnyside and Come By Chance terminal records. The 66 kV station links open the detailed diagram where one exists, otherwise they open the station record. Map-point selection remains in place and does not scroll the page. TL208 still identifies Long Harbour on the terminal schematic because no destination record exists yet."
     },
     {
       "id": "QA-001",

@@ -128,10 +128,14 @@ test("network links use registered circuit endpoints and page anchors", async ()
   }
   for (const href of [
     "#terminal-opd", "#terminal-hwd", "#terminal-wav", "#terminal-hrd",
-    "#substation-hwd", "#substation-oxp", "#station-BCV", "#station-SLA"
+    "#substation-hwd", "#substation-oxp", "#station-browser", "#hydro-terminal-browser"
   ]) {
     assert.match(html, new RegExp(`href="${href}"`), `missing network link: ${href}`);
   }
+  assert.match(html, /data-station-record="BCV"/);
+  assert.match(html, /data-station-record="SLA"/);
+  assert.match(html, /data-hydro-terminal-record="SUN"/);
+  assert.match(html, /data-hydro-terminal-record="CBC"/);
   assert.match(html, /TL203[\s\S]*SUNNYSIDE/);
   assert.match(html, /TL237[\s\S]*COME BY CHANCE/);
   assert.match(html, /TL208[\s\S]*LONG HARBOUR/);
@@ -855,5 +859,16 @@ test("Greenhill code conflict is contextual and the latest code is preferred", a
   assert.match(html, /id="source-conflict" role="note" hidden/);
   assert.match(html, /<strong>GRH<\/strong> is used in the 2027 Greenhill filing/);
   assert.match(main, /greenhill \? "GRH" : plant\.code/);
+});
+
+test("documented circuit links open the available other-end record", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(html, /data-hydro-terminal-record="CBC" aria-label="TL237 to Come By Chance"/);
+  assert.match(html, /data-hydro-terminal-record="SUN" aria-label="TL203 to Sunnyside"/);
+  assert.match(html, /data-station-record="SLA" aria-label="31L to Stamp's Lane"/);
+  assert.match(html, /data-station-record="SLA" aria-label="70L to Stamp's Lane"/);
+  assert.match(html, /data-station-record="SLA" aria-label="14L to Stamp's Lane Substation"/);
+  assert.match(main, /link\.matches\("\[data-station-record\], \[data-hydro-terminal-record\]"\)/);
 });
 
