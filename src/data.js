@@ -550,6 +550,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/PU/orders/2019/PU5-2019.PDF"
   },
   {
+    id: "np-2019-long-pond",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2019 Long Pond Substation Project",
+    topics: ["Long Pond", "36L", "Oxen Pond", "Memorial University", "Health Sciences Centre", "single-line", "route drawing"],
+    pages: "physical PDF pp. 8 to 9, 14, 23 to 25, 29 and 31",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/NP2019Capital_SUPP_NorthSideMUN/applications/From%20NP%20-%20Approval%20for%20the%20Addition%20of%20a%20Substation%20on%20the%20North%20Side%20of%20the%20MUN%20St.%20Johns%20Campus%20-%202019-01-30.PDF"
+  },
+  {
     id: "np-2024-capital",
     year: 2023,
     organization: "Newfoundland Power",
@@ -1455,8 +1465,8 @@ export const components = {
   "lpd-summary": {
     diagram: "lpd", status: "verified", code: "LPD / SUBSTATION", title: "Long Pond Substation",
     summary: "Circuit 36L from Oxen Pond supplies two 66/12.5 kV transformers and the split B1 and B2 bus arrangement shown in the 2023 single-line. The station is a Newfoundland Power special facility funded by the province on Memorial University's behalf.",
-    data: [["Supply", "36L from Oxen Pond"], ["LPD-T1", "66/12.5 kV, 25 MVA"], ["LPD-T2", "66/12.5 kV, 25 MVA"], ["Bus sections", "B1 and B2, 12.5 kV"], ["Customer circuits", "MUN-20 through MUN-29"], ["2019 utility work", "$4.6 million, reimbursed by the provincial Department of Transportation and Works"], ["Rate treatment", "Special facility, not recovered from other ratepayers"], ["2026 forecast", "20.00 MVA on each unit"], ["2021 station peak", "18 MVA"]],
-    sources: [sourceRef("np-2024-ca-np-158", "physical PDF pp. 4 to 5"), sourceRef("np-2027-transformers", "physical PDF pp. 548 to 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111"), sourceRef("pu-5-2019-long-pond", "physical PDF pp. 1 to 2")]
+    data: [["Location", "Kerwin Place, behind the NRC Industry Partnership Facility"], ["Supply", "36L from Oxen Pond"], ["LPD-T1", "66/12.5 kV, 25 MVA"], ["LPD-T2", "66/12.5 kV, 25 MVA"], ["Bus sections", "B1 and B2, 12.5 kV"], ["Customer circuits", "MUN-20 through MUN-29"], ["Ownership", "Newfoundland Power upstream equipment; Memorial University distribution switchgear"], ["2019 utility work", "$4.6 million, reimbursed by the provincial Department of Transportation and Works"], ["Rate treatment", "Special facility, not recovered from other ratepayers"], ["2026 forecast", "20.00 MVA on each unit"], ["2021 station peak", "18 MVA"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF pp. 4 to 5"), sourceRef("np-2027-transformers", "physical PDF pp. 548 to 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111"), sourceRef("np-2019-long-pond", "physical PDF pp. 23, 29 and 31"), sourceRef("pu-5-2019-long-pond", "physical PDF pp. 1 to 2")]
   },
   "lpd-t1": {
     diagram: "lpd", status: "verified", code: "LPD / T1", title: "Long Pond transformer T1",
@@ -2500,6 +2510,19 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2019 FILED INITIAL DESIGN",
+        sourceId: "np-2019-long-pond",
+        pages: "physical PDF pp. 8 to 9, 14, 23 to 25, 29 and 31",
+        facts: [
+          ["Location", "behind the NRC Industry Partnership Facility on Kerwin Place"],
+          ["Initial transformer", "25.0 MVA, 66/12.47 kV in the project text; 15/20(25) MVA, 66/12.5 kV on the proposed one-line"],
+          ["Station equipment", "66 kV air-insulated bus, 36L breaker, transformer breaker, 12.47 kV switchgear and control building"],
+          ["Ownership boundary", "Newfoundland Power owned the 66 kV equipment and equipment through the transformer-breaker disconnect; MUN owned the downstream distribution switchgear"],
+          ["36L route", "1.4 km from Oxen Pond on a 15 m right-of-way"],
+          ["Yard-area conflict", "3,200 m2 in Schedule B; 2,400 m2 in Schedule C"]
+        ]
+      },
+      {
         label: "2019 NEWFOUNDLAND POWER SPECIAL FACILITY",
         sourceId: "pu-5-2019-long-pond",
         pages: "physical PDF pp. 1 to 2",
@@ -2509,6 +2532,23 @@ export const stationProfiles = [
           ["Funding", "provincial Department of Transportation and Works reimbursed Newfoundland Power"],
           ["Rate treatment", "MUN special facility, not recovered from other ratepayers"]
         ]
+      }
+    ],
+    referenceSheetLabel: "2019 PROPOSED ONE-LINE AND 36L ROUTE",
+    referenceSheets: [
+      {
+        title: "Proposed Long Pond single-line",
+        image: "./reference-maps/lpd-2019-proposed-one-line.jpeg",
+        alt: "Filed 2019 proposed Long Pond single-line showing 36L, the 66 kV bus, LPD-T1, the Newfoundland Power and Memorial University ownership boundary, and the split 12.5 kV buses",
+        sourceId: "np-2019-long-pond",
+        pages: "physical PDF p. 29"
+      },
+      {
+        title: "Proposed 36L route from Oxen Pond",
+        image: "./reference-maps/lpd-2019-36l-route.jpeg",
+        alt: "Aerial drawing of the filed 1.4 kilometre 36L route between Oxen Pond and the proposed Long Pond site near the Health Sciences Centre",
+        sourceId: "np-2019-long-pond",
+        pages: "physical PDF p. 31"
       }
     ]
   }
