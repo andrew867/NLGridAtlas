@@ -67,10 +67,13 @@
       "title": "Reconcile every current site claim with the source ledger",
       "phase": 0,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Audit each displayed technical claim, diagram component, and value against its page-level source and evidence state.",
       "dependencies": ["ARC-001", "ARC-002"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "research/NP_REGISTER_SUCCESSORS.md",
+        "research/derived/np-register-layers-2008-2013.json"
+      ],
       "blocker": null,
       "notes": "Static claim groups now have stable identifiers and page-level sources. Manual page-by-page transcription checks and final source-ledger reconciliation remain."
     },
@@ -84,7 +87,7 @@
       "dependencies": ["ARC-001", "ARC-003"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "A 2009 CBA response republishes the June 2005 station and feeder register without changes. A 2013 system response contains a nine-page transmission-line loading table, while a 2010 depreciation appendix contains line construction details. Later complete replacements are still being checked."
+      "notes": "The final 504,049-page PUB index and the direct Newfoundland Power mirror were searched. No later complete public circuit or feeder register was located. The strongest later layers are the 2010 transmission construction register and the 2013 loading register; later capital records provide asset-specific changes only."
     },
     {
       "id": "DB-001",

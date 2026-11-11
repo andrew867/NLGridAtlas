@@ -1,6 +1,6 @@
 # Newfoundland Power register successor search
 
-Updated: 2026-11-10
+Updated: 2026-11-11
 
 ## Result
 
@@ -72,6 +72,13 @@ The local PUB full-text index was searched for the exact phrases `Substation/Fee
 
 The direct Newfoundland Power mirror was also searched page by page. Its 13 PDFs contain 3,074 pages. The 2024 through 2027 capital applications contain project tables, five-year station forecasts, transformer schedules, and individual system studies. They do not contain a complete circuit and feeder register under the searched terms.
 
-The complete PUB audit was still running when this note was written. The exact searches must be repeated after the final index is closed before SRC-002 can be marked complete.
+The searches were repeated against the final 504,049-page index after the PUB audit closed. Exact text checks returned:
+
+- 22 pages containing `Substation/Feeder Listing`, all in the 2006 handbook or PUB-NP-5;
+- 12 pages containing `Transmission Line Listing`, all in the 2006 handbook or the 2010 depreciation appendix;
+- two pages containing `list of all Newfoundland Power transmission lines`, PUB-NP-275 and the compiled RFI package that reproduces it;
+- 29 pages containing `Transmission Line Loading`. Later hits in the 2019 and 2021 capital applications and the 2025 CA-NP-121 attachment are project criteria or copies of the 2019 Central Newfoundland study, not a complete system register.
+
+The closed index did not produce a later complete circuit or feeder register. `SRC-002` is complete as a search task. The current-register evidence gap remains open and must not be replaced with a reconstructed list presented as a utility register.
 
 The text-native feeder and loading tables are preserved in `research/derived/np-register-layers-2008-2013.json`. Regenerate the file with `scripts/extract_np_register_layers.py`.
