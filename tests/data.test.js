@@ -341,7 +341,8 @@ test("Pulpit Rock record preserves the unresolved secondary-voltage evidence", (
   assert.match(facts, /not found/);
 });
 
-test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", () => {
+test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");
   const longPond = stationProfiles.find((station) => station.code === "LPD");
   const memorialFacts = memorial.engineeringRecord.facts.flat().join(" ");
@@ -350,6 +351,9 @@ test("Memorial and Long Pond records preserve the filed Health Sciences supply p
   assert.match(memorialFacts, /MUN-01 and MUN-08/);
   assert.deepEqual(longPond.connectedCircuits, [{ circuit: "36L", from: "Oxen Pond", from_code: "OXP", to: "Long Pond", to_code: "LPD" }]);
   assert.match(longPondFacts, /HSC #2 and HSC #5/);
+  assert.match(html, /aria-label="36L to Oxen Pond Terminal Station"/);
+  assert.match(html, /LPD-B1\/B2-B/);
+  assert.match(html, /MUN-29[\s\S]*MUN-20/);
 });
 
 test("King's Bridge and Ridge Road records preserve current and historical feeder counts", () => {

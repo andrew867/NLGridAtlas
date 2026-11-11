@@ -549,7 +549,7 @@ export const staticClaims = [
   },
   {
     id: "long-pond-substation-one-line",
-    scope: "Long Pond transformer ratings and distribution bus summary",
+    scope: "Long Pond 36L supply, transformer ratings, split 12.5 kV buses and Memorial University circuits",
     status: "reported",
     sources: [
       { sourceId: "np-2023-long-pond", pages: "PDF pp. 109 to 111" },
@@ -1155,9 +1155,9 @@ export const components = {
   },
   "lpd-summary": {
     diagram: "lpd", status: "verified", code: "LPD / SUBSTATION", title: "Long Pond Substation",
-    summary: "The 2027 transformer register lists LPD-T1 and LPD-T2 at 25 MVA each. The second unit was proposed in the 2023 capacity project.",
-    data: [["LPD-T1", "66/12.5 kV, 25 MVA"], ["LPD-T2", "66/12.5 kV, 25 MVA"], ["2026 forecast", "20.00 MVA on each unit"], ["2021 station peak", "18 MVA"]],
-    sources: [sourceRef("np-2027-transformers", "physical PDF pp. 548 to 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
+    summary: "Circuit 36L from Oxen Pond supplies two 66/12.5 kV transformers and the split B1 and B2 bus arrangement shown in the 2023 single-line.",
+    data: [["Supply", "36L from Oxen Pond"], ["LPD-T1", "66/12.5 kV, 25 MVA"], ["LPD-T2", "66/12.5 kV, 25 MVA"], ["Bus sections", "B1 and B2, 12.5 kV"], ["Customer circuits", "MUN-20 through MUN-29"], ["2026 forecast", "20.00 MVA on each unit"], ["2021 station peak", "18 MVA"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF pp. 4 to 5"), sourceRef("np-2027-transformers", "physical PDF pp. 548 to 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
   },
   "lpd-t1": {
     diagram: "lpd", status: "verified", code: "LPD / T1", title: "Long Pond transformer T1",
