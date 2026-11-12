@@ -74,7 +74,7 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.
 - [ ] Current feeder register. Later capital filings prove additions such as PUL-04, PUL-05, KEN-01, and HWD-09 that are absent from the 2005 list.
-- [ ] Feeder map sheets beyond the 34 extracted Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, and Stamp's Lane sheets. Eight additional route and proposed-recloser drawings are preserved for HWD-08, KEN-01 to KEN-04, VIR-06, GOU-01, and GOU-03. CA-NP-020 has no HWD-08 feeder sheet.
+- [x] All 112 feeder map sheets in CA-NP-020 Attachment B, physical PDF pp. 58 to 169, are extracted and linked to 38 station records. Eight additional route and proposed-recloser drawings are preserved for HWD-08, KEN-01 to KEN-04, VIR-06, GOU-01, and GOU-03. CA-NP-020 has no feeder sheet for HWD-08 or the later additions listed in the feeder-map audit.
 - [ ] Station one-lines that assign feeders to transformer banks and bus sections.
 - [ ] Commissioning and as-built records for replacement transformers.
 - [ ] Protection drawings that identify normally open bus ties and alternate supply paths.

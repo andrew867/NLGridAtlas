@@ -564,8 +564,8 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "CA-NP-020, Supply Issues and Power Outages",
-    topics: ["distribution feeders", "feeder maps", "outage loads", "Glendale", "Hardwoods", "Kenmount", "Oxen Pond", "St. John's Main", "Stamp's Lane"],
-    pages: "physical PDF pp. 14, 58 to 63, 80 to 85, 101 to 104, 115 and 135 to 148",
+    topics: ["distribution feeders", "feeder maps", "outage loads", "Avalon", "central Newfoundland", "west coast", "south coast"],
+    pages: "physical PDF pp. 3 to 18 and 58 to 169",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/CA-NP-020.pdf"
   },
@@ -2758,7 +2758,34 @@ export const islandTerminalRecords = [
   }
 ];
 
+const filedFeederMapProfiles = [
+  { code: "GFS", mapPages: [["GFS-07", 64], ["GFS-08", 65]] },
+  { code: "GLV", mapPages: [["GLV-01", 66]] },
+  { code: "GRH", mapPages: [["GRH-03", 70]] },
+  { code: "HAR", mapPages: [["HAR-01", 71], ["HAR-02", 72]] },
+  { code: "HBS", mapPages: [["HBS-02", 73]] },
+  { code: "HGR", mapPages: [["HGR-01", 74]] },
+  { code: "HUM", mapPages: [["HUM-01", 77], ["HUM-08", 78], ["HUM-09", 79]] },
+  { code: "ILC", mapPages: [["ILC-01", 86], ["ILC-02", 87]] },
+  { code: "KEL", mapPages: [["KEL-01", 98], ["KEL-02", 99], ["KEL-03", 100]] },
+  { code: "LAU", mapPages: [["LAU-01", 105]] },
+  { code: "LGL", mapPages: [["LGL-01", 106]] },
+  { code: "MOB", mapPages: [["MOB-02", 107]] },
+  { code: "MSY", mapPages: [["MSY-01", 114]] },
+  { code: "PAB", mapPages: [["PAB-03", 116], ["PAB-05", 117]] },
+  { code: "PAS", mapPages: [["PAS-01", 118]] },
+  { code: "SCV", mapPages: [["SCV-01", 134]] },
+  { code: "STX", mapPages: [["STX-01", 151]] },
+  { code: "TRN", mapPages: [["TRN-02", 152]] },
+  { code: "TWG", mapPages: [["TWG-01", 153], ["TWG-02", 154]] },
+  { code: "VIC", mapPages: [["VIC-02", 155]] },
+  { code: "WAL", mapPages: [["WAL-01", 163], ["WAL-02", 164], ["WAL-04", 165], ["WAL-05", 166]] },
+  { code: "WAV", mapPages: [["WAV-01", 167]] },
+  { code: "WES", mapPages: [["WES-01", 168], ["WES-02", 169]] }
+];
+
 export const stationProfiles = [
+  ...filedFeederMapProfiles,
   {
     code: "MOL",
     name: "Molloy's Lane",
@@ -2996,7 +3023,7 @@ export const stationProfiles = [
     circuitSource: { sourceId: "np-2026-kings-bridge", pages: "physical PDF p. 72" },
     feederRegisterLabel: "2019 FEEDER AND TIE RECORD",
     feederRegister: ["KBR-09", "KBR-10", "KBR-11", "KBR-12", "KBR-13", "KBR-15"],
-    mapPages: [],
+    mapPages: [["KBR-02", 88], ["KBR-03", 89], ["KBR-04", 90], ["KBR-05", 91], ["KBR-06", 92], ["KBR-08", 93], ["KBR-09", 94], ["KBR-10", 95], ["KBR-11", 96], ["KBR-12", 97]],
     eventLoads: [],
     feederTieSource: { sourceId: "np-2019-pepperrell", pages: "physical PDF p. 35" },
     feederTies: [
@@ -3044,7 +3071,7 @@ export const stationProfiles = [
     voltage: "66 kV / 12.5 kV feeders",
     circuitRegisterLabel: "2027 STATION RECORD",
     circuitSource: { sourceId: "np-2027-ridge-road", pages: "physical PDF p. 105" },
-    mapPages: [],
+    mapPages: [["RRD-02", 127], ["RRD-03", 128], ["RRD-04", 129], ["RRD-05", 130], ["RRD-07", 131], ["RRD-08", 132], ["RRD-10", 133]],
     eventLoads: [],
     engineeringRecord: {
       date: "2027 CAPITAL APPLICATION",
@@ -3312,7 +3339,7 @@ export const stationProfiles = [
       }
     ],
     feederRegister: ["PEP-01", "PEP-02", "PEP-03", "PEP-04", "PEP-05"],
-    mapPages: [],
+    mapPages: [["PEP-01", 119], ["PEP-02", 120], ["PEP-03", 121], ["PEP-04", 122]],
     eventLoads: [],
     engineeringRecord: {
       date: "2024 SUPPLY TABLE",
@@ -3397,7 +3424,7 @@ export const stationProfiles = [
       }
     ],
     feederRegister: ["VIR-01", "VIR-02", "VIR-03", "VIR-04", "VIR-05", "VIR-06", "VIR-07", "VIR-08"],
-    mapPages: [],
+    mapPages: [["VIR-01", 156], ["VIR-02", 157], ["VIR-03", 158], ["VIR-04", 159], ["VIR-05", 160], ["VIR-06", 161], ["VIR-08", 162]],
     eventLoads: [],
     engineeringRecord: {
       date: "2021 SYSTEM PLANNING STUDY",
@@ -3466,7 +3493,7 @@ export const stationProfiles = [
     voltage: "66 kV supply / 12.5 kV feeders",
     feederRegisterLabel: "2025 FEEDER SET",
     feederRegister: ["PUL-01", "PUL-02", "PUL-03", "PUL-04", "PUL-05"],
-    mapPages: [],
+    mapPages: [["PUL-01", 123], ["PUL-02", 124], ["PUL-03", 125], ["PUL-04", 126]],
     eventLoads: [],
     engineeringRecord: {
       date: "2025 TO 2027 RECORD",
@@ -3624,7 +3651,7 @@ export const stationProfiles = [
   {
     code: "SPF",
     name: "Springfield",
-    mapPages: [],
+    mapPages: [["SPF-02", 149], ["SPF-03", 150]],
     eventLoads: [],
     engineeringRecord: {
       date: "2015 CAPITAL APPLICATION",
@@ -3665,7 +3692,7 @@ export const stationProfiles = [
   {
     code: "HOL",
     name: "Holyrood",
-    mapPages: [],
+    mapPages: [["HOL-01", 75], ["HOL-02", 76]],
     eventLoads: [],
     engineeringRecord: {
       date: "2014 CAPITAL APPLICATION",

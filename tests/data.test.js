@@ -381,6 +381,26 @@ test("every extracted feeder image is exposed by a station record", async () => 
   assert.deepEqual(mappedFiles, imageFiles);
 });
 
+test("CA-NP-020 feeder sheets preserve the complete filed page sequence", () => {
+  const mapRows = stationProfiles
+    .flatMap((station) => station.mapPages.map(([feeder, page]) => ({ feeder, page, station: station.code })))
+    .sort((left, right) => left.page - right.page);
+
+  assert.equal(mapRows.length, 112);
+  assert.deepEqual(mapRows.map(({ page }) => page), Array.from({ length: 112 }, (_, index) => index + 58));
+  assert.deepEqual(mapRows[0], { feeder: "GDL-01", page: 58, station: "GDL" });
+  assert.deepEqual(mapRows.at(-1), { feeder: "WES-02", page: 169, station: "WES" });
+  assert.equal(new Set(mapRows.map(({ feeder }) => feeder)).size, 112);
+  assert.deepEqual(mapRows.slice(-21).map(({ feeder, page }) => [feeder, page]), [
+    ["SPF-02", 149], ["SPF-03", 150], ["STX-01", 151], ["TRN-02", 152],
+    ["TWG-01", 153], ["TWG-02", 154], ["VIC-02", 155],
+    ["VIR-01", 156], ["VIR-02", 157], ["VIR-03", 158], ["VIR-04", 159],
+    ["VIR-05", 160], ["VIR-06", 161], ["VIR-08", 162],
+    ["WAL-01", 163], ["WAL-02", 164], ["WAL-04", 165], ["WAL-05", 166],
+    ["WAV-01", 167], ["WES-01", 168], ["WES-02", 169]
+  ]);
+});
+
 test("island terminal records retain page-level sources", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
   assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "MAS", "STV", "CBC", "SDP", "USL", "GRC", "CAT", "HLA"]);
