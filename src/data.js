@@ -720,6 +720,36 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/PUB-NP-005.PDF"
   },
   {
+    id: "np-2010-botwood-gallants",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Botwood and Gallant Street Substations",
+    topics: ["Botwood", "Gallant Street", "BOT-T1", "GAL-T1", "GAL-T2", "134L", "401L", "402L", "406L", "substation modernization"],
+    pages: "physical PDF pp. 287 to 288 and 291 to 292",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2014-carbonear",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Carbonear Substation",
+    topics: ["Carbonear", "CAR-T1", "40L", "41L", "56L", "68L", "substation modernization"],
+    pages: "physical PDF pp. 246 to 248",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2011-hearts-content",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Heart's Content Substation",
+    topics: ["Heart's Content", "HCT-T1", "HCT-T3", "41L", "43L", "80L", "hydroelectric generation", "substation modernization"],
+    pages: "physical PDF pp. 287 to 289",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
     id: "np-2027-loop-study",
     year: 2026,
     organization: "Newfoundland Power",
@@ -7744,6 +7774,229 @@ export const stationProfiles = [
         ["Customer equipment", "12.5 kV switchgear owned by Memorial University"]
       ]
     }
+  },
+  {
+    code: "BOT",
+    name: "Botwood",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2010 STATION RECORD",
+    circuitSource: { sourceId: "np-2010-botwood-gallants", pages: "physical PDF p. 287" },
+    connectedCircuits: [
+      { circuit: "134L", from: "Bishop's Falls", from_code: "BFS", to: "Botwood", to_code: "BOT" }
+    ],
+    feederRegisterLabel: "2010 STATION RECORD",
+    feederRegister: ["BOT-01", "BOT-02", "BOT-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2010 documented arrangement / 2026 rating",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "BOT-T1", rating: "20 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "134L", destination: "Bishop's Falls", bus: "b1", destinationCode: "BFS" }]
+    },
+    engineeringRecord: {
+      date: "2010 DOCUMENTED ARRANGEMENT",
+      title: "Botwood radial distribution station",
+      sourceId: "np-2010-botwood-gallants",
+      pages: "physical PDF p. 287",
+      facts: [
+        ["Station built", "1977"],
+        ["BOT-T1", "138/25 kV; 20 MVA"],
+        ["Supply", "radial 138 kV circuit 134L from Bishop's Falls"],
+        ["Distribution", "three 25 kV feeders; approximately 3,350 customers in 2009"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [["BOT-T1", "138/25 kV; 20 MVA; 13.87 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "2010 COMPLETED MODERNIZATION",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF pp. 2 to 3",
+        facts: [
+          ["Protection and monitoring", "upgraded transformer protection and monitoring equipment and communications systems"],
+          ["Site and control work", "installed a control building, improved the ground grid, and added feeder automation capability"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "CAR",
+    name: "Carbonear",
+    voltage: "66/12.5 kV in 2014 filing",
+    circuitRegisterLabel: "2014 STATION RECORD",
+    circuitSource: { sourceId: "np-2014-carbonear", pages: "physical PDF p. 246" },
+    connectedCircuits: [
+      { circuit: "40L", from: "Carbonear", from_code: "CAR", to: "Victoria", to_code: "VIC" },
+      { circuit: "41L", from: "Carbonear", from_code: "CAR", to: "Heart's Content", to_code: "HCT" },
+      { circuit: "56L", from: "Bay Roberts", from_code: "BRB", to: "Carbonear", to_code: "CAR" },
+      { circuit: "68L", from: "Harbour Grace", from_code: "HGR", to: "Carbonear", to_code: "CAR" }
+    ],
+    feederRegisterLabel: "2014 STATION RECORD",
+    feederRegister: ["CAR-01", "CAR-02", "CAR-03", "CAR-04"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2014 documented arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "CAR-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "40L", destination: "Victoria", bus: "b1", destinationCode: "VIC" },
+        { label: "41L", destination: "Heart's Content", bus: "b1", destinationCode: "HCT" },
+        { label: "56L", destination: "Bay Roberts", bus: "b1", destinationCode: "BRB" },
+        { label: "68L", destination: "Harbour Grace", bus: "b1", destinationCode: "HGR" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2014 DOCUMENTED ARRANGEMENT",
+      title: "Carbonear transmission and distribution station",
+      sourceId: "np-2014-carbonear",
+      pages: "physical PDF p. 246",
+      facts: [
+        ["Station built", "1974"],
+        ["CAR-T1", "66/12.5 kV; 25 MVA"],
+        ["66 kV circuits", "40L to Victoria, 41L to Heart's Content, 56L to Bay Roberts, and 68L to Harbour Grace"],
+        ["Distribution", "CAR-01 to CAR-04; approximately 2,700 customers in 2013"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [["CAR-T1 register entry", "66/25 kV; 25 MVA; 18.45 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "2007 COMPLETED CONTROL WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 3",
+        facts: [["Completed work", "replaced the transformer tap-changer controller with a SCADA-operated controller"]]
+      },
+      {
+        label: "2014 COMPLETED MODERNIZATION",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 3",
+        facts: [["Completed work", "replaced breakers; improved foundations and drainage; upgraded protection, control, feeder automation, communications, and grounding"]]
+      }
+    ]
+  },
+  {
+    code: "GAL",
+    name: "Gallant Street",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2010 STATION RECORD",
+    circuitSource: { sourceId: "np-2010-botwood-gallants", pages: "physical PDF p. 291" },
+    connectedCircuits: [
+      { circuit: "401L", from: "Stephenville", from_code: "STV", to: "Gallant Street", to_code: "GAL" },
+      { circuit: "402L", from: "Gallant Street", from_code: "GAL", to: "Berry Head", to_code: "BHD" },
+      { circuit: "406L", from: "Harmon", from_code: "HAR", to: "Gallant Street", to_code: "GAL" }
+    ],
+    feederRegisterLabel: "2005 FEEDER REGISTER",
+    feederRegister: ["GAL-01", "GAL-03", "GAL-04", "GAL-05"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2010 documented arrangement / 2026 ratings",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "GAL-T1", rating: "13.33 MVA", from: "b1", to: "b2" }, { label: "GAL-T2", rating: "13.33 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "401L", destination: "Stephenville", bus: "b1", destinationCode: "STV" },
+        { label: "402L", destination: "Berry Head", bus: "b1", destinationCode: "BHD" },
+        { label: "406L", destination: "Harmon", bus: "b1", destinationCode: "HAR" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2010 DOCUMENTED ARRANGEMENT",
+      title: "Gallant Street transmission and distribution station",
+      sourceId: "np-2010-botwood-gallants",
+      pages: "physical PDF pp. 291 to 292",
+      facts: [
+        ["Station built", "1973"],
+        ["Transformer bank", "two 66/12 kV transformers; 26.7 MVA combined"],
+        ["66 kV circuits", "401L to Stephenville, 402L to Berry Head, and 406L to Harmon"],
+        ["Distribution", "four 12 kV feeders; approximately 3,200 customers in 2009"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["GAL-T1", "66/12.5 kV; 13.33 MVA; 9.67 MVA 2026 forecast"],
+        ["GAL-T2", "66/12.5 kV; 13.33 MVA; 9.57 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2007 AND 2010 COMPLETED WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["2007", "replaced the transformer tap-changer controller with a SCADA-operated controller"],
+          ["2010", "replaced transmission-line protection, upgraded transformer monitoring and communications, refurbished fencing, and extended the grounding system"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "HCT",
+    name: "Heart's Content",
+    voltage: "66/12.5/2.4 kV in 2011 filing",
+    circuitRegisterLabel: "2025 CIRCUIT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "41L", from: "Carbonear", from_code: "CAR", to: "Heart's Content", to_code: "HCT" },
+      { circuit: "43L", from: "Heart's Content", from_code: "HCT", to: "New Chelsea", to_code: "NCH" },
+      { circuit: "80L", from: "Blaketown", from_code: "BLK", to: "Heart's Content", to_code: "HCT", via: "Islington" }
+    ],
+    feederRegisterLabel: "2011 STATION RECORD",
+    feederRegister: ["HCT-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2011 documented arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }, { id: "b3", label: "plant bus", voltage: "2.4 kV" }],
+      transformers: [{ label: "HCT-T3", rating: "2.3 MVA", from: "b1", to: "b2" }, { label: "HCT-T1", rating: "3 MVA", from: "b1", to: "b3" }],
+      circuits: [
+        { label: "41L", destination: "Carbonear", bus: "b1", destinationCode: "CAR" },
+        { label: "43L", destination: "New Chelsea", bus: "b1", destinationCode: "NCH" },
+        { label: "80L", destination: "Blaketown via Islington", bus: "b1", destinationCode: "BLK" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2011 DOCUMENTED ARRANGEMENT",
+      title: "Heart's Content generation and distribution station",
+      sourceId: "np-2011-hearts-content",
+      pages: "physical PDF pp. 287 to 288",
+      facts: [
+        ["Station built", "1956 as a generation station; distribution equipment was added later"],
+        ["HCT-T3", "66/12.5 kV; 2.3 MVA distribution transformer"],
+        ["HCT-T1", "66/2.4 kV; 3 MVA generation transformer"],
+        ["66 kV circuits", "41L to Carbonear, 43L to New Chelsea, and 80L to Islington"],
+        ["Distribution", "one 12.5 kV feeder; approximately 450 customers in 2010"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 548 and 551",
+      facts: [
+        ["HCT-T3 register entry", "66/12.5 kV; 2.24 MVA; 1.59 MVA 2026 forecast"],
+        ["HCT-T1 register entry", "66/4.2 kV; 3 MVA generation transformer"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2011 TO 2012 COMPLETED MODERNIZATION",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 4",
+        facts: [["Completed work", "replaced deteriorated foundations, potential transformers, power cables, lightning arresters, protection relays, and fencing; improved drainage"]]
+      }
+    ]
   },
   {
     code: "LPD",

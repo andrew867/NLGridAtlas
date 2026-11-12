@@ -1250,6 +1250,31 @@ test("2026 refurbishment history records completed work at ten documented statio
   assert.equal(source.pages, "physical PDF pp. 2 to 5");
 });
 
+test("Botwood, Carbonear, Gallant Street, and Heart's Content have dedicated station records", () => {
+  const botwood = stationProfiles.find((station) => station.code === "BOT");
+  const carbonear = stationProfiles.find((station) => station.code === "CAR");
+  const gallantStreet = stationProfiles.find((station) => station.code === "GAL");
+  const heartsContent = stationProfiles.find((station) => station.code === "HCT");
+
+  assert.deepEqual(botwood.connectedCircuits.map(({ circuit }) => circuit), ["134L"]);
+  assert.deepEqual(botwood.feederRegister, ["BOT-01", "BOT-02", "BOT-03"]);
+  assert.match(botwood.engineeringRecord.facts.flat().join(" "), /138\/25 kV; 20 MVA.*three 25 kV feeders/);
+
+  assert.deepEqual(carbonear.connectedCircuits.map(({ circuit }) => circuit), ["40L", "41L", "56L", "68L"]);
+  assert.deepEqual(carbonear.feederRegister, ["CAR-01", "CAR-02", "CAR-03", "CAR-04"]);
+  assert.match(carbonear.engineeringRecord.facts.flat().join(" "), /66\/12\.5 kV; 25 MVA/);
+  assert.match(carbonear.planningRecord.facts.flat().join(" "), /66\/25 kV; 25 MVA/);
+
+  assert.deepEqual(gallantStreet.connectedCircuits.map(({ circuit }) => circuit), ["401L", "402L", "406L"]);
+  assert.deepEqual(gallantStreet.feederRegister, ["GAL-01", "GAL-03", "GAL-04", "GAL-05"]);
+  assert.match(gallantStreet.engineeringRecord.facts.flat().join(" "), /26\.7 MVA combined.*four 12 kV feeders/);
+
+  assert.deepEqual(heartsContent.connectedCircuits.map(({ circuit }) => circuit), ["41L", "43L", "80L"]);
+  assert.deepEqual(heartsContent.feederRegister, ["HCT-01"]);
+  assert.match(heartsContent.engineeringRecord.facts.flat().join(" "), /66\/2\.4 kV; 3 MVA generation transformer/);
+  assert.match(heartsContent.planningRecord.facts.flat().join(" "), /66\/4\.2 kV; 3 MVA generation transformer/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
