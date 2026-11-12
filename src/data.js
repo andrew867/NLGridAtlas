@@ -1340,6 +1340,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
   },
   {
+    id: "np-2024-islington",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Islington Substation Refurbishment and Modernization",
+    topics: ["Islington", "ISL-T1", "ISL-01", "80L", "66 kV", "12.5 kV", "substation modernization"],
+    pages: "physical PDF pp. 390 to 400",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-2025-q4-regulatory",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "Q4 2025 Quarterly Regulatory Report",
+    topics: ["Islington", "Northwest Brook", "146L", "Lookout Brook", "Mobile Hydro Plant", "capital completion"],
+    pages: "physical PDF p. 9",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NP%20-%204th%20Quarterly%20Report%20for%20Period%20ending%20December%2031%2C%202025%20-%202026-02-13.PDF"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -4006,6 +4026,70 @@ export const stationProfiles = [
         pages: "physical PDF p. 15",
         facts: [
           ["Project status", "Newfoundland Power reported commissioning complete in the fourth quarter of 2024"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "ISL",
+    name: "Islington",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2023 FILED SUPPLY",
+    circuitSource: { sourceId: "np-2024-islington", pages: "physical PDF pp. 392 and 394" },
+    connectedCircuits: [
+      { circuit: "80L", from: "Heart's Content", from_code: "HCT", to: "New Harbour", to_code: "NHR", via: "Islington" }
+    ],
+    feederRegisterLabel: "2023 STATION RECORD",
+    feederRegister: ["ISL-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2023 filed logical connection / 2025 project completion",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "ISL-T1", rating: "4 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "80L", destination: "Heart's Content", bus: "b1", destinationCode: "HCT" }, { label: "80L", destination: "New Harbour", bus: "b1", destinationCode: "NHR" }]
+    },
+    engineeringRecord: {
+      date: "2023 FILED EQUIPMENT / 2025 PROJECT COMPLETION",
+      title: "Islington distribution station",
+      sourceId: "np-2024-islington",
+      pages: "physical PDF pp. 392 to 396",
+      facts: [
+        ["Station built", "1974 as a distribution substation"],
+        ["Transmission supply", "80L between Heart's Content and New Harbour substations"],
+        ["ISL-T1 before replacement", "69/13.8 kV; 4 MVA; English Electric; manufactured in 1958"],
+        ["Distribution", "ISL-01 at 12.5 kV; approximately 1,100 customers in the Islington area"],
+        ["Feeder recloser", "G&W unit manufactured in 2017 and retained for reconnection"],
+        ["Voltage regulators", "Cooper Power Systems units manufactured in 2020 and retained for reconnection"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["ISL-T1 fleet-table record", "66/12.5 kV; 4 MVA; 3.94 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2024 TO 2025 FILED MODERNIZATION SCOPE",
+        sourceId: "np-2024-islington",
+        pages: "physical PDF pp. 394 to 400",
+        facts: [
+          ["66 kV equipment", "replace the wood bus with a steel structure and install two line breakers to divide 80L into two sections"],
+          ["12.5 kV equipment", "replace deteriorated structures, switches, and the metering tank; reconnect the feeder recloser and voltage regulators"],
+          ["Transformer", "replace ISL-T1 on a new spill-containment foundation"],
+          ["Protection and control", "install digital relays, communications equipment, a control building, and a 125 VDC battery system"],
+          ["Site", "extend the yard and ground grid and address drainage and unsuitable soils"]
+        ]
+      },
+      {
+        label: "Q4 2025 COMPLETION",
+        sourceId: "np-2025-q4-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["Project status", "Newfoundland Power reported the refurbishment complete; final demolition to remove retired equipment remained in progress"]
         ]
       }
     ]

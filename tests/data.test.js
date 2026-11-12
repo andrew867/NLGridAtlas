@@ -716,6 +716,22 @@ test("Old Perlican retains the radial supply and both published transformer rati
   assert.match(historyFacts, /commissioning complete in the fourth quarter of 2024/);
 });
 
+test("Islington separates the former transformer record from the completed modernization", () => {
+  const islington = stationProfiles.find((station) => station.code === "ISL");
+  assert.ok(islington);
+  assert.deepEqual(islington.connectedCircuits.map(({ circuit }) => circuit), ["80L"]);
+  assert.deepEqual(islington.feederRegister, ["ISL-01"]);
+  assert.deepEqual(islington.diagram.circuits.map(({ label, destination }) => [label, destination]), [["80L", "Heart's Content"], ["80L", "New Harbour"]]);
+  const existingFacts = islington.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = islington.planningRecord.facts.flat().join(" ");
+  const historyFacts = islington.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /ISL-T1 before replacement 69\/13\.8 kV; 4 MVA; English Electric; manufactured in 1958/);
+  assert.match(existingFacts, /ISL-01 at 12\.5 kV; approximately 1,100 customers/);
+  assert.match(planningFacts, /ISL-T1 fleet-table record 66\/12\.5 kV; 4 MVA; 3\.94 MVA 2026 forecast/);
+  assert.match(historyFacts, /install two line breakers to divide 80L into two sections/);
+  assert.match(historyFacts, /refurbishment complete; final demolition to remove retired equipment remained in progress/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
