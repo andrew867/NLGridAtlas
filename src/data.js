@@ -1360,6 +1360,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-2017-salt-pond",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Salt Pond Substation Refurbishment and Modernization",
+    topics: ["Salt Pond", "SPO-T1", "SPO-T4", "SPO-T5", "SPO-01", "SPO-02", "SPO-03", "301L", "302L", "308L", "TL219", "138 kV", "66 kV", "12.5 kV"],
+    pages: "physical PDF pp. 228 to 232",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
     id: "np-2020-bonavista",
     year: 2019,
     organization: "Newfoundland Power",
@@ -3883,6 +3893,80 @@ const filedFeederMapProfiles = [
 
 export const stationProfiles = [
   ...filedFeederMapProfiles,
+  {
+    code: "SPO",
+    name: "Salt Pond",
+    voltage: "138/66/12.5 kV",
+    circuitRegisterLabel: "2016 FILED STATION ARRANGEMENT",
+    circuitSource: { sourceId: "np-2017-salt-pond", pages: "physical PDF p. 228" },
+    connectedCircuits: [
+      { circuit: "TL219", from: "Sunnyside", from_code: "SSD", to: "Salt Pond", to_code: "SPO" },
+      { circuit: "308L", from: "Marystown", from_code: "MSY", to: "Salt Pond", to_code: "SPO" },
+      { circuit: "301L", from: "Salt Pond", from_code: "SPO", to: "Greenhill", to_code: "GRH" },
+      { circuit: "302L", from: "Salt Pond", from_code: "SPO", to: "Laurentian", to_code: "LAU" }
+    ],
+    feederRegisterLabel: "2016 FILED STATION ARRANGEMENT",
+    feederRegister: ["SPO-01", "SPO-02", "SPO-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2016 filed logical arrangement with current transformer ratings",
+      buses: [
+        { id: "b1", label: "138 kV bus", voltage: "138 kV" },
+        { id: "b2", label: "66 kV bus", voltage: "66 kV" },
+        { id: "b3", label: "12.5 kV bus", voltage: "12.5 kV" }
+      ],
+      transformers: [
+        { label: "SPO-T4", rating: "41.6 MVA", from: "b1", to: "b2" },
+        { label: "SPO-T5", rating: "41.6 MVA", from: "b1", to: "b2" },
+        { label: "SPO-T1", rating: "15 MVA", from: "b2", to: "b3" }
+      ],
+      circuits: [
+        { label: "TL219", destination: "Sunnyside", bus: "b1", destinationCode: "SSD" },
+        { label: "308L", destination: "Marystown", bus: "b1", destinationCode: "MSY" },
+        { label: "301L", destination: "Greenhill", bus: "b2", destinationCode: "GRH" },
+        { label: "302L", destination: "Laurentian", bus: "b2", destinationCode: "LAU" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2016 FILED STATION ARRANGEMENT",
+      title: "Salt Pond transmission and distribution substation",
+      sourceId: "np-2017-salt-pond",
+      pages: "physical PDF pp. 228 and 231",
+      facts: [
+        ["Station built", "1967 as a transmission and distribution substation"],
+        ["138 kV connections", "TL219 to Sunnyside and 308L to Marystown"],
+        ["66 kV connections", "301L to Greenhill and 302L to Laurentian"],
+        ["SPO-T4 and SPO-T5", "138/66 kV; 41.6 MVA each; different winding configurations prevent parallel operation"],
+        ["SPO-T1", "66/12.5 kV; 15 MVA"],
+        ["Distribution", "SPO-01, SPO-02, and SPO-03; approximately 1,912 Burin-area customers in the 2016 filing"],
+        ["Transformer installations", "SPO-T1 in 1966, SPO-T4 in 1973, and SPO-T5 in 2003"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 550 and 553",
+      facts: [
+        ["SPO-T1", "66/12.5 kV; 15 MVA; 11.99 MVA 2026 forecast"],
+        ["SPO-T4", "138/66 kV; 41.6 MVA"],
+        ["SPO-T5", "138/66 kV; 41.6 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2017 FILED MODERNIZATION",
+        sourceId: "np-2017-salt-pond",
+        pages: "physical PDF pp. 228 to 232",
+        facts: [
+          ["66 kV structures", "replace deteriorated wood structures and foundations with steel structures and new foundations"],
+          ["Distribution protection", "replace three hydraulic reclosers with remotely monitored and controlled reclosers"],
+          ["Transformer work", "refurbish SPO-T1 and SPO-T4; add spill containment for both units"],
+          ["Protection and control", "replace ten electromechanical relays with two digital relays and construct a new control building"]
+        ]
+      }
+    ]
+  },
   {
     code: "GPD",
     name: "Greenspond",

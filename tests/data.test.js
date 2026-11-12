@@ -990,6 +990,22 @@ test("Greenhill keeps the transformer voltage conflict inside its station record
   assert.match(historyFacts, /install two nominal 15 MW combustion turbine generators/);
 });
 
+test("Salt Pond separates its filed arrangement from proposed modernization work", () => {
+  const saltPond = stationProfiles.find((station) => station.code === "SPO");
+  assert.ok(saltPond);
+  assert.deepEqual(saltPond.connectedCircuits.map(({ circuit }) => circuit), ["TL219", "308L", "301L", "302L"]);
+  assert.deepEqual(saltPond.feederRegister, ["SPO-01", "SPO-02", "SPO-03"]);
+  assert.deepEqual(saltPond.diagram.transformers.map(({ label, rating }) => [label, rating]), [["SPO-T4", "41.6 MVA"], ["SPO-T5", "41.6 MVA"], ["SPO-T1", "15 MVA"]]);
+  assert.deepEqual(saltPond.diagram.circuits.map(({ label, destination }) => [label, destination]), [["TL219", "Sunnyside"], ["308L", "Marystown"], ["301L", "Greenhill"], ["302L", "Laurentian"]]);
+  const existingFacts = saltPond.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = saltPond.planningRecord.facts.flat().join(" ");
+  const proposedFacts = saltPond.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /different winding configurations prevent parallel operation/);
+  assert.match(existingFacts, /SPO-T1 in 1966, SPO-T4 in 1973, and SPO-T5 in 2003/);
+  assert.match(planningFacts, /11.99 MVA 2026 forecast/);
+  assert.match(proposedFacts, /2017 FILED MODERNIZATION|replace three hydraulic reclosers/i);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
