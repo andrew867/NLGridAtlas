@@ -194,8 +194,8 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Pitmans Pond", "ABC-T1", "GAR-T1", "PIT-T1", "301L", "substation rebuild", "asset history"],
-    pages: "physical PDF pp. 166, 196, 201, 203 to 204, 207 and 277",
+    topics: ["Abrahams Cove", "Garnish", "Milton", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PIT-T1", "301L", "substation rebuild", "asset history"],
+    pages: "physical PDF pp. 166, 196 to 197, 201, 203 to 204, 206 to 207 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
@@ -1367,6 +1367,16 @@ export const sources = [
     topics: ["power transformers", "operating voltage", "MVA ratings", "2026 forecast", "portable compatibility", "2016 to 2025 failures"],
     pages: "physical PDF pp. 545 to 553 and 560",
     status: "verified",
+    url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
+  },
+  {
+    id: "np-2027-mil02",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, MIL-02 Distribution Feeder Refurbishment",
+    topics: ["Milton", "MIL-02", "George's Brook", "1/0 AASC", "distribution feeder refurbishment"],
+    pages: "physical PDF p. 181",
+    status: "proposed",
     url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
   },
   {
@@ -2833,11 +2843,21 @@ export const sources = [
     id: "np-2015-lethbridge",
     year: 2014,
     organization: "Newfoundland Power",
-    title: "2015 Capital Budget Application, Lethbridge Substation Load Growth Study",
-    topics: ["Lethbridge", "LET-T1", "LET-01", "66 kV", "25 kV", "transformer replacement", "load growth"],
-    pages: "physical PDF pp. 451 to 456",
+    title: "2015 Capital Budget Application, Lethbridge and Milton Substation Load Growth Study",
+    topics: ["Lethbridge", "Milton", "LET-T1", "LET-01", "MIL-T1", "MIL-01", "MIL-02", "66 kV", "25 kV", "transformer replacement", "load growth"],
+    pages: "physical PDF pp. 451 to 458",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "pu-7-2012-milton",
+    year: 2012,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 7(2012), Milton Substation Property Additions",
+    topics: ["Milton", "MIL-02", "Random Island", "Elliott's Cove", "Hickman's Harbour", "three-phase conversion"],
+    pages: "physical PDF pp. 1 to 3",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2012/pu7-2012.pdf"
   },
   {
     id: "np-2017-catalina",
@@ -10134,6 +10154,86 @@ export const stationProfiles = [
           ["Rejected feeder-transfer alternative", "extend MIL-02 and transfer 2.0 MVA from LET-01"],
           ["Former transformer plan", "move the 6.7 MVA unit to Doyles Substation in 2016"]
         ]
+      }
+    ]
+  },
+  {
+    code: "MIL",
+    name: "Milton",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2025 EXISTING CONNECTION",
+    circuitSource: { sourceId: "np-2025-ca-np-116", pages: "physical PDF p. 2" },
+    connectedCircuits: [
+      { circuit: "110L", from: "Clarenville", from_code: "CLV", to: "Milton", to_code: "MIL" }
+    ],
+    feederRegisterLabel: "2014 STATION RECORD",
+    feederRegister: ["MIL-01", "MIL-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 supply / 2027 transformer register",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "MIL-T1", rating: "16.67 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "110L", destination: "Clarenville", bus: "b1", destinationCode: "CLV" }]
+    },
+    engineeringRecord: {
+      date: "2014 EXISTING ARRANGEMENT",
+      title: "Milton distribution substation and feeder service areas",
+      sourceId: "np-2015-lethbridge",
+      pages: "physical PDF pp. 451 to 452 and 458",
+      facts: [
+        ["Location", "near the Route 231 causeway to Random Island"],
+        ["MIL-T1", "66/25 kV; 16.7 MVA"],
+        ["MIL-01", "approximately 4.0 km of 4/0 AASC main trunk; approximately 1,104 customers in Shoal Harbour"],
+        ["MIL-02", "approximately 27.0 km of 4/0 AASC main trunk; approximately 1,438 customers on Random Island, in Milton, and toward Burgoyne's Cove"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["MIL-T1 current fleet-table record", "66/25 kV; 16.67 MVA; 12.85 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1976 STATION ASSET RECORD",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF pp. 197 and 206",
+        facts: [
+          ["Station structures", "steel 66 kV and 25 kV structures installed in 1976; total transformer capacity 16.67 MVA"],
+          ["2007 work", "recloser replaced"],
+          ["2008 work", "lightning arrester and transformer tap-changer controls replaced"]
+        ]
+      },
+      {
+        label: "2012 APPROVED RANDOM ISLAND EXTENSION",
+        sourceId: "pu-7-2012-milton",
+        pages: "physical PDF pp. 1 and 3",
+        facts: [
+          ["Approved scope", "upgrade 18 km of distribution line from two-phase to three-phase, beginning approximately 9 km from Milton Substation and continuing to a fish-processing facility between Elliott's Cove and Hickman's Harbour"],
+          ["Approved expenditure", "$1,027,000"]
+        ]
+      },
+      {
+        label: "2027 FILED MIL-02 REFURBISHMENT",
+        sourceId: "np-2027-mil02",
+        pages: "physical PDF p. 181",
+        facts: [
+          ["Filed work", "refurbish 2.8 km in Milton and George's Brook, replacing 1960s poles and crossarms and non-standard #4 copper with 1/0 AASC primary conductor"],
+          ["Filed budget", "$685,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2015 SERVICE AREA MAP",
+    referenceSheets: [
+      {
+        title: "Lethbridge and Milton service areas",
+        image: "./reference-maps/mil-let-2015-service-area.jpg",
+        alt: "Filed map showing the Lethbridge and Milton substation service areas, including Random Island",
+        sourceId: "np-2015-lethbridge",
+        pages: "physical PDF p. 458"
       }
     ]
   },

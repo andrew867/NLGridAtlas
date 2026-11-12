@@ -146,6 +146,7 @@ Updated: 2026-11-12
 - Added Frenchman's Cove as a dedicated radial-station record with 353L, FRN-01 and FRN-02, 1977 wood structures, dated transformer voltages and loads, the 2003 regulator-clearance filing, and the 2018 communications-battery outage.
 - Added Gillams as a dedicated 358L radial-station record with GIL-01 and GIL-02, dated transformer loading, the 2003 clearance filing, the 2010 refurbishment scope, and both completed feeder-recloser replacements.
 - Added Marble Mountain with its Deer Lake Power L1 supply, MMT-01 service area and conductor, former 4 MVA station, filed 2014 expansion, and current 6.67 MVA transformer record.
+- Added Milton with its 110L supply, MIL-01 and MIL-02 service areas, 1976 structures, current transformer record, approved 2012 Random Island extension, filed 2027 refurbishment, and the 2015 service-area map.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work

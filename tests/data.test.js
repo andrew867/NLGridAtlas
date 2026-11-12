@@ -1368,6 +1368,23 @@ test("Lethbridge separates its former transformer from the current fleet-table r
   assert.match(historyFacts, /replace the 6\.7 MVA LET-T1 with a 16\.7 MVA, 66\/25 kV transformer/);
 });
 
+test("Milton joins its 110L supply, feeder service areas and dated renewal work", () => {
+  const milton = stationProfiles.find((station) => station.code === "MIL");
+  assert.ok(milton);
+  assert.deepEqual(milton.connectedCircuits.map(({ circuit, from }) => [circuit, from]), [["110L", "Clarenville"]]);
+  assert.deepEqual(milton.feederRegister, ["MIL-01", "MIL-02"]);
+  assert.deepEqual(milton.diagram.transformers.map(({ label, rating }) => [label, rating]), [["MIL-T1", "16.67 MVA"]]);
+  assert.equal(milton.referenceSheets[0].pages, "physical PDF p. 458");
+  const existingFacts = milton.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = milton.planningRecord.facts.flat().join(" ");
+  const historyFacts = milton.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /MIL-01 approximately 4\.0 km of 4\/0 AASC main trunk; approximately 1,104 customers/);
+  assert.match(existingFacts, /MIL-02 approximately 27\.0 km of 4\/0 AASC main trunk; approximately 1,438 customers/);
+  assert.match(planningFacts, /66\/25 kV; 16\.67 MVA; 12\.85 MVA 2026 forecast/);
+  assert.match(historyFacts, /upgrade 18 km of distribution line from two-phase to three-phase/);
+  assert.match(historyFacts, /refurbish 2\.8 km in Milton and George's Brook/);
+});
+
 test("Catalina retains both transformation levels and the three filed transmission circuits", () => {
   const catalina = stationProfiles.find((station) => station.code === "CAT");
   assert.ok(catalina);

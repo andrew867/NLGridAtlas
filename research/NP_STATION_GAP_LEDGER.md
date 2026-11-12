@@ -309,6 +309,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] PUB-NP-274 lists MMT-T1 at 66/12.5 kV, 6.7 MVA, with a 5.80 MVA forecast peak, physical PDF p. 8. The 2027 register lists 66/12.5 kV, 6.67 MVA, with a 5.59 MVA 2026 forecast, physical PDF p. 549.
 - [ ] The transformer listing establishes the 6.7 MVA station state; a completion report for the filed MMT-01 extension and regulator installation has not been located.
 
+## Milton station record
+
+- [x] 110L originates at Clarenville and supplies Milton and Lethbridge during normal operation, CA-NP-116 physical PDF p. 2.
+- [x] The 2010 asset history records 16.67 MVA of transformer capacity and steel 66 kV and 25 kV structures installed in 1976. It also records a recloser replacement in 2007 and lightning-arrester and transformer tap-control replacements in 2008, CA-NP-088 physical PDF pp. 197 and 206.
+- [x] The 2015 load-growth study records MIL-T1 at 66/25 kV and 16.7 MVA. MIL-01 used approximately 4.0 km of 4/0 AASC main trunk and served approximately 1,104 Shoal Harbour customers. MIL-02 used approximately 27.0 km of 4/0 AASC main trunk and served approximately 1,438 customers on Random Island, in Milton, and toward Burgoyne's Cove, physical PDF pp. 451 to 452.
+- [x] The filed Lethbridge and Milton service-area map is preserved from physical PDF p. 458.
+- [x] Order P.U. 7(2012) approved $1,027,000 to upgrade 18 km of line from two-phase to three-phase, beginning approximately 9 km from Milton Substation and continuing to a fish-processing facility between Elliott's Cove and Hickman's Harbour, physical PDF pp. 1 and 3.
+- [x] The 2027 register records MIL-T1 at 66/25 kV, 16.67 MVA, with a 12.85 MVA 2026 forecast, physical PDF p. 547.
+- [x] The 2027 filing proposes a $685,000 refurbishment of 2.8 km of MIL-02 in Milton and George's Brook, replacing 1960s structures and #4 copper with 1/0 AASC, physical PDF p. 181.
+- [ ] The Board order establishes approval of the 2012 Random Island work, not commissioning. A later completion record has not been located. The 2027 MIL-02 work remains proposed.
+
 ## Gambo station record
 
 - [x] The 2024 filing identifies 121L from Glovertown and 146L from Gander as the 138 kV supplies, physical PDF p. 349.
