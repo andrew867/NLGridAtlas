@@ -304,10 +304,20 @@ export const sources = [
     year: 2011,
     organization: "Newfoundland Power",
     title: "PUB-NP-013, 2010 Substation Equipment Replacements",
-    topics: ["Bishop's Falls", "BFS-01-R", "recloser", "in-service failure", "substation equipment"],
+    topics: ["Bishop's Falls", "BFS-01-R", "Gillams", "GIL-01-R", "GIL-02-R", "recloser", "in-service failure", "substation equipment"],
     pages: "physical PDF p. 3",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/rfi/PUB-NP-13.pdf"
+  },
+  {
+    id: "np-2010-gillams",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Gillams Substation Refurbishment",
+    topics: ["Gillams", "GIL-T1", "358L", "GIL-01", "GIL-02", "transformer radiators", "AC panel"],
+    pages: "physical PDF pp. 285, 287 and 293",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
   },
   {
     id: "np-2012-cobbs-pond",
@@ -9504,6 +9514,96 @@ export const stationProfiles = [
           ["Event", "a feeder outage affected more than 800 customers; failed cabinet batteries caused loss of communications and delayed restoration"],
           ["Follow-up", "Newfoundland Power reported installing battery monitoring that alarms when batteries start to degrade"]
         ]
+      }
+    ]
+  },
+  {
+    code: "GIL",
+    name: "Gillams",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2025 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "358L", from: "Bayview", from_code: "BVS", to: "Gillams", to_code: "GIL" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["GIL-01", "GIL-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "current transformer rating on documented radial connection",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "GIL-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "358L", destination: "Bayview", bus: "b1", destinationCode: "BVS" },
+        { label: "GIL-01", destination: "Gillams area", bus: "b2", link: false },
+        { label: "GIL-02", destination: "Gillams area", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2009 FILED STATION RECORD",
+      title: "Gillams radial distribution station",
+      sourceId: "np-2010-gillams",
+      pages: "physical PDF p. 293",
+      facts: [
+        ["Station built", "1977 as a distribution substation"],
+        ["Supply", "358L from Bayview Substation terminates on the 66 kV bus"],
+        ["Filed transformer", "one 66/12 kV, 6.7 MVA unit"],
+        ["Distribution", "two 12 kV feeders serving approximately 1,400 customers"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [["GIL-T1", "66/25 kV; 6.67 MVA; 7.11 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "1977 ASSET RECORD",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 200",
+        facts: [["Structures", "wood 66 kV and 12.47 kV structures installed in 1977; 6.67 MVA transformer capacity"]]
+      },
+      {
+        label: "2003 FILED CLEARANCE WORK",
+        sourceId: "np-2003-frenchmans-cove-clearance",
+        pages: "physical PDF p. 1",
+        facts: [["Filed work", "modify the station layout to correct insufficient electrical-equipment clearances around the regulators"]]
+      },
+      {
+        label: "2003 FILED COST",
+        sourceId: "np-2003-frenchmans-cove-cost",
+        pages: "physical PDF p. 1",
+        facts: [["Gillams", "$21,000 labour and $9,000 non-labour; $30,000 total"]]
+      },
+      {
+        label: "2010 FILED REFURBISHMENT",
+        sourceId: "np-2010-gillams",
+        pages: "physical PDF p. 293",
+        facts: [
+          ["Transformer", "replace significantly rusted radiators"],
+          ["Station service", "replace the deteriorated AC panel"],
+          ["Filed cost", "$138,000"]
+        ]
+      },
+      {
+        label: "2010 IN-SERVICE FAILURE REPLACEMENTS",
+        sourceId: "np-2012-in-service-failures",
+        pages: "physical PDF p. 3",
+        facts: [["Feeder equipment", "GIL-01-R and GIL-02-R reclosers replaced after in-service failures"]]
+      },
+      {
+        label: "2014 TRANSFORMER RECORD",
+        sourceId: "np-2014-pub-np-274",
+        pages: "physical PDF p. 8",
+        facts: [["GIL-T1", "66/12.5 kV; 6.67 MVA; 4.55 MVA forecast peak; 68% of rating"]]
+      },
+      {
+        label: "2018 TRANSFORMER RECORD",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF p. 8",
+        facts: [["GIL-T1", "66/12.47 kV; 6.7 MVA; 6.4 MVA forecast peak; 95.52% of rating"]]
       }
     ]
   },

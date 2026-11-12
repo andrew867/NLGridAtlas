@@ -1227,6 +1227,21 @@ test("Frenchman's Cove retains its radial supply and dated transformer records",
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "FRN-T1").forecast_2026_mva, 4.92);
 });
 
+test("Gillams retains its radial supply and dated loading records", () => {
+  const gillams = stationProfiles.find((station) => station.code === "GIL");
+  assert.ok(gillams);
+  assert.deepEqual(gillams.connectedCircuits.map((record) => [record.circuit, record.from_code, record.to_code]), [
+    ["358L", "BVS", "GIL"]
+  ]);
+  assert.deepEqual(gillams.feederRegister, ["GIL-01", "GIL-02"]);
+  assert.match(gillams.engineeringRecord.facts.flat().join(" "), /two 12 kV feeders serving approximately 1,400 customers/);
+  assert.match(gillams.historyRecords[3].facts.flat().join(" "), /replace significantly rusted radiators/);
+  assert.match(gillams.historyRecords[4].facts.flat().join(" "), /GIL-01-R and GIL-02-R reclosers replaced/);
+  assert.match(gillams.historyRecords[5].facts.flat().join(" "), /4\.55 MVA forecast peak; 68% of rating/);
+  assert.match(gillams.historyRecords[6].facts.flat().join(" "), /6\.4 MVA forecast peak; 95\.52% of rating/);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "GIL-T1").forecast_2026_mva, 7.11);
+});
+
 test("Gambo retains both voltage transformations and the completed 2024 modernization", () => {
   const gambo = stationProfiles.find((station) => station.code === "GAM");
   assert.ok(gambo);

@@ -144,6 +144,7 @@ Updated: 2026-11-12
 - Added Doyles as a combined Hydro terminal and Newfoundland Power distribution record, including TL214, TL215, both transformers, DOY-01, the 2016 transformer project, B1L15 breaker work, and the 2025 remote terminal unit replacement.
 - Corrected 403L as the St. George's to Lookout Brook main line with a separate Robinsons radial tap, then added detailed St. George's and Robinsons station records and the 2008 33 kV to 66 kV conversion history.
 - Added Frenchman's Cove as a dedicated radial-station record with 353L, FRN-01 and FRN-02, 1977 wood structures, dated transformer voltages and loads, the 2003 regulator-clearance filing, and the 2018 communications-battery outage.
+- Added Gillams as a dedicated 358L radial-station record with GIL-01 and GIL-02, dated transformer loading, the 2003 clearance filing, the 2010 refurbishment scope, and both completed feeder-recloser replacements.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work

@@ -289,6 +289,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] CA-NP-047 records a May 2018 feeder outage affecting more than 800 customers. Failed backup batteries in the pole-mounted communications cabinet caused loss of communications and delayed restoration; Newfoundland Power later installed battery monitoring, physical PDF p. 2.
 - [ ] Completion evidence for the filed 2003 clearance work has not been located.
 
+## Gillams station record
+
+- [x] 358L is the radial 66 kV supply from Bayview to Gillams, CA-NP-168 physical PDF p. 4.
+- [x] The 2010 filing records a station built in 1977 with one 66/12 kV, 6.7 MVA transformer and two 12 kV feeders serving approximately 1,400 customers, physical PDF p. 293.
+- [x] The 2006 register lists GIL-01 and GIL-02, Electrical System Handbook physical PDF p. 12.
+- [x] The 2003 clearance filing assigned $30,000 to Gillams, $21,000 labour and $9,000 non-labour, CA-20(b) and CA-20(f), physical PDF p. 1 in each response.
+- [x] The 2010 refurbishment filing proposed replacing rusted transformer radiators and the deteriorated AC panel for $138,000, physical PDF p. 293.
+- [x] PUB-NP-013 records GIL-01-R and GIL-02-R replaced after in-service failures in 2010, physical PDF p. 3.
+- [x] PUB-NP-274 records GIL-T1 at 66/12.5 kV, 6.67 MVA, with a 4.55 MVA 2013/14 forecast peak, physical PDF p. 8. PUB-NP-081 records a 6.4 MVA forecast in 2018, physical PDF p. 8. The 2027 register records 66/25 kV, 6.67 MVA, with a 7.11 MVA 2026 forecast, physical PDF p. 547.
+- [ ] Completion evidence for the filed 2003 clearance and 2010 radiator and AC-panel work has not been located.
+
 ## Gambo station record
 
 - [x] The 2024 filing identifies 121L from Glovertown and 146L from Gander as the 138 kV supplies, physical PDF p. 349.
