@@ -86,6 +86,7 @@ Updated: 2026-11-12
 - Added Greenhill's 301L and 305L connections, distribution and generation transformers, three feeders, existing 20 MW derated turbine, operating history, and the proposed two-unit replacement. The GRH-T2 voltage discrepancy is confined to the station detail.
 - Added Salt Pond's 138 kV, 66 kV, and 12.5 kV arrangement, four line connections, three transformers, three feeders, transformer installation years, current transformer ratings, and the separately labeled 2017 modernization filing.
 - Added Marystown's 300L and 308L connections, four feeders, current transformer rating and forecast, 2019 filed equipment, and the separately labeled 2020 modernization filing.
+- Added Grand Bay's three 66 kV connections, two feeders, former transformer and tap-changer record, mobile gas turbine role, filed 2020 work, and current fleet-table value. The published 12.5 kV and 25 kV records remain dated and separate.
 - Identified the current internal Holyrood drawing numbers `1403-500-E001` and `1403-500-E004` in the 2022 study document register. The drawings were named but not filed.
 - Added the March 2025 Holyrood Capital Plan Refresh, including Unit 3 condition-monitoring and auxiliary-system findings plus the six CAT 3516B black-start sets.
 - Added the 2017 Holyrood plant-service arrangements and the 2019 completion records for the SST34 cable replacement and the lower-cost Newfoundland Power auxiliary supply connection.

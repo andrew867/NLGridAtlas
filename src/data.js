@@ -1390,6 +1390,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
   },
   {
+    id: "np-2020-grand-bay",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Grand Bay Substation Refurbishment and Modernization",
+    topics: ["Grand Bay", "GBS-T1", "GBS-01", "GBS-02", "TL215", "416L", "417L", "mobile gas turbine", "66 kV", "12.5 kV"],
+    pages: "physical PDF pp. 364 to 368 and 374 to 376",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
     id: "np-2015-clarenville",
     year: 2014,
     organization: "Newfoundland Power",
@@ -3956,6 +3966,77 @@ const filedFeederMapProfiles = [
 
 export const stationProfiles = [
   ...filedFeederMapProfiles,
+  {
+    code: "GBS",
+    name: "Grand Bay",
+    voltage: "66/12.5 kV in 2019 filing",
+    circuitRegisterLabel: "2019 FILED STATION ARRANGEMENT",
+    circuitSource: { sourceId: "np-2020-grand-bay", pages: "physical PDF pp. 364 and 374" },
+    connectedCircuits: [
+      { circuit: "TL215", from: "Doyles", from_code: "DYL", to: "Grand Bay", to_code: "GBS" },
+      { circuit: "416L", from: "Long Lake", from_code: "LGL", to: "Grand Bay", to_code: "GBS" },
+      { circuit: "417L", from: "Port aux Basques", from_code: "PAB", to: "Grand Bay", to_code: "GBS" }
+    ],
+    feederRegisterLabel: "2019 FILED STATION ARRANGEMENT",
+    feederRegister: ["GBS-01", "GBS-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2019 filed logical arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "GBS-T1", rating: "14.93 MVA in 2019 filing", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "TL215", destination: "Doyles", bus: "b1", destinationCode: "DYL" },
+        { label: "416L", destination: "Long Lake", bus: "b1", destinationCode: "LGL" },
+        { label: "417L", destination: "Port aux Basques", bus: "b1", destinationCode: "PAB" }
+      ],
+      generators: [{ label: "MGT", rating: "mobile gas turbine", bus: "b1" }]
+    },
+    engineeringRecord: {
+      date: "2019 FILED STATION ARRANGEMENT",
+      title: "Grand Bay transmission and distribution substation",
+      sourceId: "np-2020-grand-bay",
+      pages: "physical PDF pp. 364 to 367 and 374",
+      facts: [
+        ["Station built", "1984 as a transmission and distribution substation"],
+        ["66 kV connections", "TL215 from Doyles, 416L from Long Lake, and 417L from Port aux Basques"],
+        ["GBS-T1 in 2019 filing", "66/12.5 kV; 14.93 MVA; Westinghouse unit manufactured in 1966 and transferred from Deer Lake in 1992"],
+        ["Distribution", "GBS-01 and GBS-02; approximately 1,183 customers in the 2019 filing"],
+        ["Mobile gas turbine", "two-trailer unit historically stationed at Grand Bay for TL214 and TL215 outage support"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["GBS-T1", "fleet table lists 66/25 kV; 25 MVA; 8.78 MVA 2026 forecast"],
+        ["Published voltage difference", "the 2019 station report identifies a 12.5 kV distribution bus; the 2027 fleet table lists 25 kV for GBS-T1"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2016 TAP-CHANGER RESTRICTION",
+        sourceId: "np-2020-grand-bay",
+        pages: "physical PDF pp. 365 to 366 and 374 to 375",
+        facts: [
+          ["OLTC condition", "elevated combustible gases indicated an internal arcing condition"],
+          ["Interim operation", "tap changer placed at a fixed position; temporary secondary-side voltage regulators installed"]
+        ]
+      },
+      {
+        label: "2020 FILED REPLACEMENT AND MODERNIZATION",
+        sourceId: "np-2020-grand-bay",
+        pages: "physical PDF pp. 365 to 368 and 376",
+        facts: [
+          ["Transformer", "replace GBS-T1 after the consultant recommended planned removal before failure"],
+          ["Protection", "install an incoming transformer breaker and replace eleven electromechanical relays with three digital relays"],
+          ["Control", "construct a new control building and replace protection, communications, and control equipment"],
+          ["Mobile generation", "construct a permanent placement pad with oil containment for the mobile gas turbine"]
+        ]
+      }
+    ]
+  },
   {
     code: "SPO",
     name: "Salt Pond",

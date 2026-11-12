@@ -1022,6 +1022,23 @@ test("Marystown retains its two 138 kV connections and filed modernization", () 
   assert.match(proposedFacts, /install breakers and digital protection for 300L, 308L, and MSY-T1/);
 });
 
+test("Grand Bay keeps its dated 12.5 kV arrangement separate from the latest fleet table", () => {
+  const grandBay = stationProfiles.find((station) => station.code === "GBS");
+  assert.ok(grandBay);
+  assert.deepEqual(grandBay.connectedCircuits.map(({ circuit }) => circuit), ["TL215", "416L", "417L"]);
+  assert.deepEqual(grandBay.feederRegister, ["GBS-01", "GBS-02"]);
+  assert.deepEqual(grandBay.diagram.transformers.map(({ label, rating }) => [label, rating]), [["GBS-T1", "14.93 MVA in 2019 filing"]]);
+  assert.deepEqual(grandBay.diagram.generators.map(({ label, rating }) => [label, rating]), [["MGT", "mobile gas turbine"]]);
+  const existingFacts = grandBay.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = grandBay.planningRecord.facts.flat().join(" ");
+  const historyFacts = grandBay.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /Westinghouse unit manufactured in 1966 and transferred from Deer Lake in 1992/);
+  assert.match(planningFacts, /fleet table lists 66\/25 kV; 25 MVA; 8.78 MVA 2026 forecast/);
+  assert.match(planningFacts, /2019 station report identifies a 12.5 kV distribution bus/);
+  assert.match(historyFacts, /tap changer placed at a fixed position/);
+  assert.match(historyFacts, /replace eleven electromechanical relays with three digital relays/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
