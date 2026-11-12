@@ -2768,6 +2768,22 @@ test("Baie Verte Junction and Seal Cove Road close the 363L radial record", () =
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "SCR-T1").forecast_2026_mva, 5.97);
 });
 
+test("Berry Head connects the Gallant Street and Abrahams Cove radial sections", () => {
+  const berryHead = stationProfiles.find((station) => station.code === "BHD");
+
+  assert.ok(berryHead);
+  assert.deepEqual(
+    berryHead.connectedCircuits.map((record) => [record.circuit, record.from_code, record.to_code]),
+    [["402L", "GAL", "BHD"], ["410L", "BHD", "ABC"]]
+  );
+  assert.deepEqual(berryHead.feederRegister, ["BHD-01"]);
+  assert.equal(berryHead.diagram.transformers[0].rating, "7.46 MVA");
+  assert.match(berryHead.historyRecords[0].facts.flat().join(" "), /none at Berry Head/);
+  assert.match(berryHead.historyRecords[1].facts.flat().join(" "), /January 2010/);
+  assert.match(berryHead.historyRecords[2].facts.flat().join(" "), /unplanned service interruption/);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "BHD-T1").forecast_2026_mva, 3.82);
+});
+
 test("Greenhill code conflict is contextual and the latest code is preferred", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");

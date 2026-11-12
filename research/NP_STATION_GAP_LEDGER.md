@@ -53,6 +53,14 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] Order P.U. 30 (2020) approved removal of the former 7.7 km extension from Seal Cove Road to the abandoned asbestos mine after the active 363L rebuild, physical PDF pp. 1 to 2.
 - [x] The 2027 transformer register records BVJ-T1 at 138/25 kV, 2.67 MVA, with a 0.29 MVA 2026 forecast, and SCR-T1 at 138/25 kV, 8.3 MVA, with a 5.97 MVA forecast, physical PDF pp. 546 and 550.
 
+## Berry Head station record
+
+- [x] 402L connects Gallant Street to Berry Head and 410L connects Berry Head to Abrahams Cove, 2025 transmission asset register, physical PDF p. 4.
+- [x] The filed radial-system control record identifies no transmission breaker at Berry Head. The Gallant Street breaker and Abrahams Cove feeder reclosers were remote controlled, PUB-NP-245, physical PDF p. 2.
+- [x] The 2012 transformer-failure table records the Berry Head transformer at 66/12.5 kV, 7.46 MVA, purchased in 1967, failed in January 2010, and repaired, physical PDF p. 414.
+- [x] A transformer gas-detect relay failure caused an unplanned Berry Head service interruption in 2013, 2014 Capital Budget Application, physical PDF p. 236.
+- [x] The 2027 transformer register records BHD-T1 at 66/25 kV, 7.46 MVA, with a 3.82 MVA 2026 forecast, physical PDF p. 546.
+
 ## Avalon stations
 
 | State | Station or system | Data now in the atlas | Missing evidence | Next archive target |

@@ -210,6 +210,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/PU/orders/2020/P.U.%2030(2020).pdf"
   },
   {
+    id: "np-2014-pub-np-245",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-245, Radial Transmission Control Record",
+    topics: ["410L", "Berry Head", "Abrahams Cove", "Gallant Street", "remote control", "breakers"],
+    pages: "physical PDF p. 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-245.pdf"
+  },
+  {
+    id: "np-2012-transformer-failure-history",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, Power Transformer Failure History",
+    topics: ["Berry Head", "BHD-T1", "transformer repair", "transformer age"],
+    pages: "physical PDF pp. 401 and 414",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2014-gas-relay-failures",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Transformer Gas-Relay Failure Record",
+    topics: ["Berry Head", "Doyles", "transformer gas detect relay", "unplanned outage"],
+    pages: "physical PDF p. 236",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
     id: "np-2012-in-service-failures",
     year: 2011,
     organization: "Newfoundland Power",
@@ -12993,6 +13023,71 @@ export const stationProfiles = [
         sourceId: "np-2025-pub-np-034",
         pages: "physical PDF p. 1",
         facts: [["363L", "rebuild completed by Newfoundland Power in 2020"]]
+      }
+    ]
+  },
+  {
+    code: "BHD",
+    name: "Berry Head",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2025 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "402L", from: "Gallant Street", from_code: "GAL", to: "Berry Head", to_code: "BHD" },
+      { circuit: "410L", from: "Berry Head", from_code: "BHD", to: "Abrahams Cove", to_code: "ABC" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["BHD-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 filed Port au Port radial arrangement",
+      buses: [
+        { id: "b1", label: "66 kV bus", voltage: "66 kV" },
+        { id: "b2", label: "25 kV bus", voltage: "25 kV" }
+      ],
+      transformers: [{ label: "BHD-T1", rating: "7.46 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "402L", destination: "Gallant Street", bus: "b1", destinationCode: "GAL" },
+        { label: "410L", destination: "Abrahams Cove", bus: "b1", destinationCode: "ABC" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2025 FILED CIRCUIT RECORD",
+      title: "Berry Head radial transmission and distribution station",
+      sourceId: "np-2025-ca-np-168",
+      pages: "physical PDF p. 4",
+      facts: [
+        ["East circuit", "402L to Gallant Street"],
+        ["West circuit", "410L to Abrahams Cove"],
+        ["Distribution", "BHD-T1 supplies BHD-01 at 25 kV"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2014 RADIAL CONTROL RECORD",
+        sourceId: "np-2014-pub-np-245",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Station breaker", "none at Berry Head"],
+          ["Upstream control", "breaker at Gallant Street under remote control"],
+          ["Downstream control", "feeder reclosers at Abrahams Cove under remote control"]
+        ]
+      },
+      {
+        label: "2012 FILED TRANSFORMER HISTORY",
+        sourceId: "np-2012-transformer-failure-history",
+        pages: "physical PDF p. 414",
+        facts: [
+          ["BHD-T1", "66/12.5 kV; 7.46 MVA; 1967 vintage in the filing"],
+          ["Repair", "January 2010"]
+        ]
+      },
+      {
+        label: "2013 GAS-RELAY FAILURE",
+        sourceId: "np-2014-gas-relay-failures",
+        pages: "physical PDF p. 236",
+        facts: [["BHD-T1", "gas-detect relay failure caused an unplanned service interruption"]]
       }
     ]
   }
