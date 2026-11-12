@@ -505,6 +505,18 @@ test("station browser covers the handbook and merges the 2027 transformer regist
   assert.match(html, /id="station-tabs"/);
 });
 
+test("Grand Falls record separates the two yards and parallel 25 kV bank", () => {
+  const grandFalls = stationProfiles.find((station) => station.code === "GFS");
+  assert.ok(grandFalls);
+  assert.deepEqual(grandFalls.feederRegister, ["GFS-02", "GFS-06", "GFS-07", "GFS-08", "GFS-10"]);
+  const engineeringFacts = grandFalls.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = grandFalls.planningRecord.facts.flat().join(" ");
+  assert.match(engineeringFacts, /separate 138\/66\/25 kV and 66\/4\.16 kV yards/);
+  assert.match(engineeringFacts, /GFS-T3 selected replacement 138\/25 kV; 50 MVA; operated in parallel with GFS-T2/);
+  assert.match(engineeringFacts, /101L to Rattling Brook; 130L to Stony Brook; 132L to Bishop's Falls/);
+  assert.match(planningFacts, /GFS-T5 66\/4\.2 kV; 11\.17 MVA; 6\.27 MVA 2026 forecast/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

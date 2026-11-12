@@ -80,6 +80,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
   },
   {
+    id: "np-2016-grand-falls",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Grand Falls 25 kV Substation Study",
+    topics: ["Grand Falls", "GFS-T1", "GFS-T2", "GFS-T3", "25 kV", "parallel transformers", "distribution feeders"],
+    pages: "physical PDF pp. 265 and 287 to 293",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
     id: "np-2015-rrd-modernization",
     year: 2014,
     organization: "Newfoundland Power",
@@ -2957,7 +2967,40 @@ export const islandTerminalRecords = [
 ];
 
 const filedFeederMapProfiles = [
-  { code: "GFS", mapPages: [["GFS-07", 64], ["GFS-08", 65]] },
+  {
+    code: "GFS",
+    name: "Grand Falls",
+    voltage: "138/66/25 kV and 66/4.2 kV",
+    feederRegisterLabel: "2016 GRAND FALLS 25 KV RECORD",
+    feederRegister: ["GFS-02", "GFS-06", "GFS-07", "GFS-08", "GFS-10"],
+    mapPages: [["GFS-07", 64], ["GFS-08", 65]],
+    eventLoads: [],
+    engineeringRecord: {
+      date: "2016 SELECTED ARRANGEMENT",
+      title: "Grand Falls transmission and 25 kV distribution banks",
+      sourceId: "np-2016-grand-falls",
+      pages: "physical PDF pp. 265 and 287 to 293",
+      facts: [
+        ["Station yards", "separate 138/66/25 kV and 66/4.16 kV yards on opposite sides of the Trans-Canada Highway"],
+        ["GFS-T1", "138/66 kV; 29.7 MVA"],
+        ["GFS-T2", "138/25 kV; 20 MVA"],
+        ["GFS-T3 selected replacement", "138/25 kV; 50 MVA; operated in parallel with GFS-T2"],
+        ["25 kV feeders", "GFS-02, GFS-06, GFS-07, GFS-08 and GFS-10"],
+        ["Transmission circuits", "101L to Rattling Brook; 130L to Stony Brook; 132L to Bishop's Falls"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 547 and 553",
+      facts: [
+        ["GFS-T1", "138/66 kV; 29.7 MVA"],
+        ["GFS-T2", "138/25 kV; 20 MVA; 13.50 MVA 2026 forecast"],
+        ["GFS-T3", "138/25 kV; 50 MVA; 30.45 MVA 2026 forecast"],
+        ["GFS-T5", "66/4.2 kV; 11.17 MVA; 6.27 MVA 2026 forecast"]
+      ]
+    }
+  },
   { code: "GLV", mapPages: [["GLV-01", 66]] },
   { code: "GRH", mapPages: [["GRH-03", 70]] },
   { code: "HAR", mapPages: [["HAR-01", 71], ["HAR-02", 72]] },

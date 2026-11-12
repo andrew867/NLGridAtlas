@@ -12,7 +12,7 @@ The terminal browser uses dated connection diagrams. It does not present a break
 | Buchans | 2018 T1 replacement filing and 2018 route table | Former T1 installed at Massey Drive in 1970 and moved to Buchans in 1998; planned 2019 replacement with the Hardwoods spare; four 230 kV lines, two 66 kV lines |
 | Deer Lake | 2003 system report, 2010 capital filing and 2018 route table | 45/60/75 MVA 230/138 kV transformation, 25/33.3/41.7 MVA 138/66 kV transformation, later 41.6 MVA maximum-rating record, three filed routes |
 | Bottom Brook | 2021 Stephenville retirement study and 2018 route table | T4 addition, former T2 grounding role, three 230 kV lines, two 138 kV lines, Newfoundland Power 400L |
-| Grand Falls and Bishop's Falls | 2013 system one-line | Three generation ratings on the 138 kV network |
+| Grand Falls and Bishop's Falls | 2013 system one-line, 2016 Grand Falls 25 kV study and 2027 transformer register | Three generation ratings on the 138 kV network; separate Grand Falls yards; GFS-T1 at 138/66 kV; parallel GFS-T2 and GFS-T3 138/25 kV bank; GFS-T5 at 66/4.2 kV; five 25 kV feeders |
 | Massey Drive | 2001 system-additions testimony, 2015 transformer loading response and 2018 route table | 1998 replacement of a 66.7 MVA unit by a 125 MVA unit, T1, T2 and T3 customer assignments, two 230 kV lines |
 | Stephenville | 2021 retirement study and 2023 planning assessment | T3 rating and TL209 connection |
 | Come By Chance | 2014 facility review, 2023 Braya contribution application, capacitor-bank response and 2018 route table | T1 and T2 ratings and 1972 manufacture date; split 230 kV bus; customer-specific cost assignment; four capacitor banks; two filed 230 kV routes |
