@@ -50,16 +50,24 @@ test("route export contains only finite line geometry inside the island selectio
   }
 });
 
-test("station coordinate register contains the eight checked station boundaries", () => {
+test("station coordinate register contains the 22 checked station boundaries", () => {
   assert.equal(stations.coordinateSystem, "WGS 84, EPSG:4326");
   assert.deepEqual(
     stations.stations.map((station) => station.id),
-    ["opd", "hwd", "hol", "spd", "wav", "rrd", "vir", "gou"]
+    [
+      "opd", "hwd", "hol", "spd", "wav", "apt", "bcv", "cha", "gdl", "gou", "kbr",
+      "kel", "ken", "lpd", "mol", "mun", "pep", "rrd", "scv", "sjm", "sla", "vir"
+    ]
   );
   assert.ok(stations.limits.some((limit) => /does not establish circuit topology/.test(limit)));
 
   const byId = new Map(stations.stations.map((station) => [station.id, station]));
   assert.equal(byId.get("hwd").sourceRef, "HWDTS");
+  assert.equal(byId.get("apt").sourceRef, "APT");
+  assert.equal(byId.get("kbr").sourceRef, "KBR");
+  assert.equal(byId.get("lpd").sourceRef, "LPD");
+  assert.equal(byId.get("mol").sourceRef, "MOL");
+  assert.equal(byId.get("sjm").sourceRef, "SJM");
   assert.equal(byId.get("rrd").sourceRef, "RRD");
   assert.equal(byId.get("vir").sourceRef, "VIR");
   assert.equal(byId.get("gou").sourceRef, "GOU");

@@ -20,9 +20,23 @@ const stationObjects = [
   { id: "hol", atlasName: "Holyrood Terminal Station", osmType: "way", osmId: 229936554 },
   { id: "spd", atlasName: "Soldiers Pond Terminal Station", osmType: "way", osmId: 1293515683 },
   { id: "wav", atlasName: "Western Avalon Terminal Station", osmType: "way", osmId: 132014003 },
+  { id: "apt", atlasName: "Airport Substation", osmType: "way", osmId: 1425073497 },
+  { id: "bcv", atlasName: "Broad Cove Substation", osmType: "way", osmId: 767405572 },
+  { id: "cha", atlasName: "Chamberlains Substation", osmType: "way", osmId: 940524714 },
+  { id: "gdl", atlasName: "Glendale Substation", osmType: "way", osmId: 775556176 },
+  { id: "gou", atlasName: "Goulds Substation", osmType: "way", osmId: 775556178 },
+  { id: "kbr", atlasName: "King's Bridge Station", osmType: "way", osmId: 216941660 },
+  { id: "kel", atlasName: "Kelligrews Substation", osmType: "way", osmId: 938223783 },
+  { id: "ken", atlasName: "Kenmount Substation", osmType: "way", osmId: 256872235 },
+  { id: "lpd", atlasName: "Long Pond Substation", osmType: "way", osmId: 1293488213 },
+  { id: "mol", atlasName: "Molloy's Lane Substation", osmType: "way", osmId: 937372866 },
+  { id: "mun", atlasName: "Memorial Substation", osmType: "way", osmId: 118116948 },
+  { id: "pep", atlasName: "Pepperrell Substation", osmType: "way", osmId: 918985168 },
   { id: "rrd", atlasName: "Ridge Road Substation", osmType: "way", osmId: 260768602 },
+  { id: "scv", atlasName: "Seal Cove Substation", osmType: "way", osmId: 259757163 },
+  { id: "sjm", atlasName: "St. John's Main", osmType: "way", osmId: 1427754728 },
+  { id: "sla", atlasName: "Stamp's Lane Substation", osmType: "way", osmId: 260955557 },
   { id: "vir", atlasName: "Virginia Waters Substation", osmType: "way", osmId: 381389667 },
-  { id: "gou", atlasName: "Goulds Substation", osmType: "way", osmId: 775556178 }
 ];
 
 const requestHeaders = {

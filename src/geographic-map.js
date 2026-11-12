@@ -11,7 +11,21 @@ const stationTargets = {
   hol: { href: "#terminal-hrd", label: "Open terminal station" },
   spd: { href: "#hydro-terminal-browser", label: "Open terminal station", hydroCode: "SDP" },
   wav: { href: "#terminal-wav", label: "Open terminal station" },
+  apt: { href: "#station-browser", label: "Open substation", stationCode: "APT" },
+  bcv: { href: "#station-browser", label: "Open substation", stationCode: "BCV" },
+  cha: { href: "#station-browser", label: "Open substation", stationCode: "CHA" },
+  gdl: { href: "#station-browser", label: "Open substation", stationCode: "GDL" },
+  kbr: { href: "#station-browser", label: "Open substation", stationCode: "KBR" },
+  kel: { href: "#station-browser", label: "Open substation", stationCode: "KEL" },
+  ken: { href: "#station-browser", label: "Open substation", stationCode: "KEN" },
+  lpd: { href: "#station-browser", label: "Open substation", stationCode: "LPD" },
+  mol: { href: "#station-browser", label: "Open substation", stationCode: "MOL" },
+  mun: { href: "#station-browser", label: "Open substation", stationCode: "MUN" },
+  pep: { href: "#station-browser", label: "Open substation", stationCode: "PEP" },
   rrd: { href: "#station-browser", label: "Open substation", stationCode: "RRD" },
+  scv: { href: "#station-browser", label: "Open substation", stationCode: "SCV" },
+  sjm: { href: "#station-browser", label: "Open substation", stationCode: "SJM" },
+  sla: { href: "#station-browser", label: "Open substation", stationCode: "SLA" },
   vir: { href: "#station-browser", label: "Open substation", stationCode: "VIR" },
   gou: { href: "#station-browser", label: "Open substation", stationCode: "GOU" }
 };
@@ -21,7 +35,21 @@ const avalonLabelOffsets = {
   hol: [12, -10],
   spd: [12, 18],
   wav: [12, -10],
+  apt: [-42, -12],
+  bcv: [-42, -10],
+  cha: [-38, 18],
+  gdl: [12, 18],
+  kbr: [12, 18],
+  kel: [-40, 18],
+  ken: [-42, -12],
+  lpd: [-44, 18],
+  mol: [-42, 18],
+  mun: [12, -12],
+  pep: [12, -12],
   rrd: [-42, 4],
+  scv: [-42, 18],
+  sjm: [12, 18],
+  sla: [-40, -12],
   vir: [12, -14],
   gou: [12, 18]
 };
@@ -74,8 +102,30 @@ function routePaths(bounds, width, height, className) {
     })).join("");
 }
 
+function spreadLabels(items, height) {
+  const gap = 24;
+  const minY = 34;
+  const maxY = height - 24;
+  const sorted = [...items].sort((a, b) => a.desiredY - b.desiredY);
+  let nextY = minY;
+
+  for (const item of sorted) {
+    item.labelY = Math.max(item.desiredY, nextY);
+    nextY = item.labelY + gap;
+  }
+
+  if (sorted.length && sorted.at(-1).labelY > maxY) {
+    sorted.at(-1).labelY = maxY;
+    for (let index = sorted.length - 2; index >= 0; index -= 1) {
+      sorted[index].labelY = Math.min(sorted[index].labelY, sorted[index + 1].labelY - gap);
+    }
+  }
+
+  return sorted;
+}
+
 function stationPoints(bounds, width, height, includeLabels) {
-  return stationRegister.stations
+  const plotted = stationRegister.stations
     .filter((station) => (
       station.longitude >= bounds.west
       && station.longitude <= bounds.east
@@ -85,8 +135,19 @@ function stationPoints(bounds, width, height, includeLabels) {
     .map((station) => {
       const [x, y] = project([station.longitude, station.latitude], bounds, width, height, 26);
       const [labelX, labelY] = avalonLabelOffsets[station.id] || [11, -10];
+      return { station, x, y, side: labelX < 0 ? -1 : 1, desiredY: y + labelY };
+    });
+
+  if (includeLabels) {
+    spreadLabels(plotted, height);
+  }
+
+  return plotted
+    .map(({ station, x, y, side, labelY }) => {
+      const labelX = x + side * 15;
       const label = includeLabels
-        ? `<text x="${x + labelX}" y="${y + labelY}">${escapeHtml(station.id.toUpperCase())}</text>`
+        ? `<path class="geographic-label-leader" d="M${x + side * 8} ${y} L${x + side * 11} ${labelY - 4}"></path>
+          <text x="${labelX}" y="${labelY}" text-anchor="${side < 0 ? "end" : "start"}">${escapeHtml(station.id.toUpperCase())}</text>`
         : "";
       return `<g class="geographic-station" tabindex="0" role="button" data-geographic-station="${escapeHtml(station.id)}" aria-label="${escapeHtml(station.atlasName)}">
         <circle cx="${x}" cy="${y}" r="7"></circle>
@@ -118,7 +179,7 @@ function stationDetail(station) {
 function initialDetail() {
   return `
     <span class="profile-label">GEOGRAPHIC REFERENCE</span>
-    <h4>Eight checked stations</h4>
+    <h4>${stationRegister.stations.length} checked stations</h4>
     <dl>
       <div><dt>Route features</dt><dd>${routes.selection.selectedFeatureCount}</dd></div>
       <div><dt>Route validation</dt><dd>${routes.selection.validationDateRange.join(" to ")}</dd></div>

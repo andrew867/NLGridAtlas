@@ -18,7 +18,7 @@ Updated: 2026-11-11
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 92 automated tests, source-hash verification, and the production build.
+- Passed the automated test suite, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.
@@ -65,7 +65,7 @@ Updated: 2026-11-11
 - Corrected the King's Bridge and Ridge Road maximum-peak labels to state that they are five-year forecasts.
 - Deferred missing rural measured-load records rather than holding up the documented load section.
 - Added 588 Newfoundland island transmission-line features from the Government of Newfoundland and Labrador GeoAtlas Canvec layer. Their validation years run from 1979 through 1991, so the dataset is retained as a historical geographic reference.
-- Added checked station-boundary centroids for Oxen Pond, Hardwoods, Holyrood, Soldiers Pond, Western Avalon, Ridge Road, Virginia Waters, and Goulds. The coordinate register preserves each OpenStreetMap object, version, and timestamp.
+- Expanded the checked station-boundary register from 8 to 22 records. The Avalon additions cover Airport, Broad Cove, Chamberlains, Glendale, King's Bridge, Kelligrews, Kenmount, Long Pond, Molloy's Lane, Memorial, Pepperrell, Seal Cove, St. John's Main, and Stamp's Lane. The register preserves each OpenStreetMap object, version, and timestamp.
 - Kept circuit designations out of the geographic route layer because the GeoAtlas records do not provide them.
 - Added island and Avalon geographic views. Station selection updates a fixed detail panel; the station-record link performs navigation.
 
@@ -73,7 +73,7 @@ Updated: 2026-11-11
 
 1. Extend the station coordinate register and reconcile supported routes, `GEO-001`.
 2. Extend the geographic interface with supported circuit and voltage data, `GEO-002`.
-3. Locate missing feeder-map sheets while processing those filings, `AVL-003`.
+3. Define the public evidence-package release strategy, `REL-002`.
 
 ## Island backbone progress
 

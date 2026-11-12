@@ -222,6 +222,7 @@ button, input { font: inherit; }
 .geographic-grid path { fill: none; stroke: var(--rule); stroke-width: 1; opacity: .18; vector-effect: non-scaling-stroke; }
 .geographic-station { cursor: pointer; outline: none; }
 .geographic-station circle { fill: var(--paper-bright); stroke: var(--ink); stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+.geographic-label-leader { fill: none; stroke: var(--ink); stroke-width: 1; opacity: .62; vector-effect: non-scaling-stroke; pointer-events: none; }
 .geographic-station text { fill: var(--ink); stroke: var(--paper-bright); stroke-width: 5px; paint-order: stroke fill; font: 600 18px/1 "Barlow Condensed", sans-serif; letter-spacing: .04em; pointer-events: none; }
 .geographic-station:hover circle, .geographic-station:focus-visible circle, .geographic-station.selected circle { fill: var(--phase-a); stroke-width: 5; }
 .geographic-map-detail > .evidence-link { display: block; margin-top: 1rem; }

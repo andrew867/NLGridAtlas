@@ -476,7 +476,7 @@
         "tests/geographic-data.test.js"
       ],
       "blocker": null,
-      "notes": "The first tranche contains 588 historical GeoAtlas route features and eight checked station-boundary centroids. The route layer has validation years from 1979 through 1991 and no utility circuit designations, so it remains a historical reference. Additional station coordinates and current circuit-to-route reconciliation remain open. Unsupported rural records are deferred."
+      "notes": "The dataset contains 588 historical GeoAtlas route features and 22 checked station-boundary centroids. The Avalon coordinate set now includes the five terminal stations and 17 Newfoundland Power substations with unambiguous published OpenStreetMap boundaries. The route layer has validation years from 1979 through 1991 and no utility circuit designations, so it remains a historical reference. Current circuit-to-route reconciliation remains open. Unsupported rural records are deferred."
     },
     {
       "id": "GEO-002",
@@ -493,7 +493,7 @@
         "tests/geographic-map.test.js"
       ],
       "blocker": null,
-      "notes": "The first interface renders the historical GeoAtlas routes and eight checked station coordinates at island and Avalon scales. Station selection updates the detail panel without moving the page. Current circuit-to-route matching, broader station coverage, and voltage-specific geographic routes remain open."
+      "notes": "The interface renders the historical GeoAtlas routes and 22 checked station coordinates at island and Avalon scales. Every mapped Avalon station opens its terminal or substation record. Station selection updates the detail panel without moving the page. Current circuit-to-route matching, broader island station coverage, and voltage-specific geographic routes remain open."
     },
     {
       "id": "REL-001",

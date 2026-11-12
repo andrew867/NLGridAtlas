@@ -32,9 +32,23 @@ The station register uses published OpenStreetMap station-boundary ways. The bui
 | Holyrood Terminal Station | `way/229936554` | 47.450633 | -53.097952 |
 | Soldiers Pond Terminal Station | `way/1293515683` | 47.417784 | -52.980346 |
 | Western Avalon Terminal Station | `way/132014003` | 47.516489 | -53.684638 |
-| Ridge Road Substation | `way/260768602` | 47.590700 | -52.728902 |
-| Virginia Waters Substation | `way/381389667` | 47.614864 | -52.703014 |
+| Airport Substation | `way/1425073497` | 47.608994 | -52.765199 |
+| Broad Cove Substation | `way/767405572` | 47.592562 | -52.883533 |
+| Chamberlains Substation | `way/940524714` | 47.522936 | -52.930564 |
+| Glendale Substation | `way/775556176` | 47.501382 | -52.804851 |
 | Goulds Substation | `way/775556178` | 47.485401 | -52.766512 |
+| King's Bridge Station | `way/216941660` | 47.575820 | -52.703430 |
+| Kelligrews Substation | `way/938223783` | 47.498134 | -53.000540 |
+| Kenmount Substation | `way/256872235` | 47.547595 | -52.787755 |
+| Long Pond Substation | `way/1293488213` | 47.574788 | -52.740132 |
+| Molloy's Lane Substation | `way/937372866` | 47.535585 | -52.745152 |
+| Memorial Substation | `way/118116948` | 47.572676 | -52.731094 |
+| Pepperrell Substation | `way/918985168` | 47.584758 | -52.683856 |
+| Ridge Road Substation | `way/260768602` | 47.590700 | -52.728902 |
+| Seal Cove Substation | `way/259757163` | 47.456965 | -53.067748 |
+| St. John's Main | `way/1427754728` | 47.553530 | -52.711702 |
+| Stamp's Lane Substation | `way/260955557` | 47.560774 | -52.740282 |
+| Virginia Waters Substation | `way/381389667` | 47.614864 | -52.703014 |
 
 Each register entry preserves the direct OpenStreetMap page, API URL, object version, object timestamp, retrieval date, and published tags. OpenStreetMap data is available under ODbL 1.0.
 
