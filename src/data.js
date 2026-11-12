@@ -800,6 +800,56 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
+    id: "np-2009-kelligrews",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Kelligrews Substation",
+    topics: ["Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "51L", "52L", "12.5 kV"],
+    pages: "physical PDF pp. 277 to 278",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2011-kelligrews",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Kelligrews Transformer Replacement",
+    topics: ["Kelligrews", "KEL-T1", "66 kV", "12.5 kV", "25 MVA", "load growth"],
+    pages: "physical PDF pp. 304 to 306 and 309 to 311",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2012-kelligrews-completion",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-217, 2011 Kelligrews Transformer Project Completion",
+    topics: ["Kelligrews", "KEL-T1", "25 MVA", "project completion"],
+    pages: "physical PDF p. 1167",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
+  },
+  {
+    id: "np-2012-kel03",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, KEL-03 Feeder Addition",
+    topics: ["Kelligrews", "KEL-03", "477 ASC", "Legion Road", "load growth"],
+    pages: "physical PDF pp. 463 and 465",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2018-pub-np-081",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-081, Distribution Transformer and Feeder Listings",
+    topics: ["Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "12.47 kV", "forecast loading"],
+    pages: "physical PDF pp. 3 and 11",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-081.PDF"
+  },
+  {
     id: "np-2018-harbour-grace",
     year: 2017,
     organization: "Newfoundland Power",
@@ -4040,7 +4090,94 @@ const filedFeederMapProfiles = [
       }
     ]
   },
-  { code: "KEL", mapPages: [["KEL-01", 98], ["KEL-02", 99], ["KEL-03", 100]] },
+  {
+    code: "KEL",
+    name: "Kelligrews",
+    voltage: "66/12.47 kV in 2018 filing",
+    circuitRegisterLabel: "2025 CIRCUIT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "51L", from: "Chamberlains", from_code: "CHA", to: "Kelligrews", to_code: "KEL" },
+      { circuit: "52L", from: "Kelligrews", from_code: "KEL", to: "Seal Cove", to_code: "SCV" }
+    ],
+    feederRegisterLabel: "2018 FILED FEEDER LIST",
+    feederRegister: ["KEL-01", "KEL-02", "KEL-03"],
+    mapPages: [["KEL-01", 98], ["KEL-02", 99], ["KEL-03", 100]],
+    eventLoads: [],
+    diagram: {
+      label: "2018 filed logical arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.47 kV distribution bus", voltage: "12.47 kV" }],
+      transformers: [{ label: "KEL-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "51L", destination: "Chamberlains", bus: "b1", destinationCode: "CHA" }, { label: "52L", destination: "Seal Cove", bus: "b1", destinationCode: "SCV" }]
+    },
+    engineeringRecord: {
+      date: "2018 FILED EQUIPMENT AND FEEDER LISTS",
+      title: "Kelligrews distribution station",
+      sourceId: "np-2018-pub-np-081",
+      pages: "physical PDF pp. 3 and 11",
+      facts: [
+        ["KEL-T1", "66/12.47 kV; 25 MVA"],
+        ["Distribution", "KEL-01, KEL-02, and KEL-03; 12.47 kV"],
+        ["2024 to 2025 forecast", "KEL-T1 24.4 MVA; KEL-01 7.6 MVA; KEL-02 7.2 MVA; KEL-03 9.9 MVA"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 POWER TRANSFORMER LISTING",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["KEL-T1 register entry", "66/25 kV; 25 MVA; 21.47 MVA 2026 forecast"]
+      ]
+    },
+    assignmentRecord: {
+      label: "FEBRUARY 2024 CUSTOMER SUPPLY TABLE",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [
+        ["KEL-03", "12.5 kV; 12.7 MVA feeder planning capacity; supplied by KEL-T1"],
+        ["Station customer count", "4,020"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2008 FILED STATION RECORD",
+        sourceId: "np-2009-kelligrews",
+        pages: "physical PDF pp. 277 to 278",
+        facts: [
+          ["Station built", "1977 as a 12.5 kV distribution substation"],
+          ["Former KEL-T1", "15 MVA"],
+          ["Distribution", "two 12.5 kV feeders serving approximately 2,600 customers"],
+          ["Transmission", "51L to Chamberlains and 52L to Seal Cove"]
+        ]
+      },
+      {
+        label: "2011 TRANSFORMER REPLACEMENT",
+        sourceId: "np-2011-kelligrews",
+        pages: "physical PDF pp. 304 to 306 and 309 to 311",
+        facts: [
+          ["Filed replacement", "replace the 15 MVA KEL-T1 with a 25 MVA, 66/12.5 kV transformer"],
+          ["2009 recorded peak", "14.5 MVA on the 15 MVA transformer"]
+        ]
+      },
+      {
+        label: "2011 PROJECT COMPLETION",
+        sourceId: "np-2012-kelligrews-completion",
+        pages: "physical PDF p. 1167",
+        facts: [
+          ["Completed work", "Newfoundland Power reported the new 25 MVA Kelligrews transformer installed in 2011"]
+        ]
+      },
+      {
+        label: "2012 FILED KEL-03 ADDITION",
+        sourceId: "np-2012-kel03",
+        pages: "physical PDF pp. 463 and 465",
+        facts: [
+          ["Filed work", "construct KEL-03 from Kelligrews Substation to Legion Road using 477 ASC conductor"],
+          ["Filed cost", "$318,000"]
+        ]
+      }
+    ]
+  },
   {
     code: "LGL",
     name: "Long Lake",

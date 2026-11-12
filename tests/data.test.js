@@ -1202,6 +1202,25 @@ test("Western Avalon joins the terminal and distribution records without merging
   assert.match(main, /circuitSources\.map/);
 });
 
+test("Kelligrews preserves its filed 12.47 kV arrangement and later register entry", () => {
+  const kelligrews = stationProfiles.find((station) => station.code === "KEL");
+  assert.ok(kelligrews);
+  assert.deepEqual(kelligrews.connectedCircuits.map(({ circuit }) => circuit), ["51L", "52L"]);
+  assert.deepEqual(kelligrews.feederRegister, ["KEL-01", "KEL-02", "KEL-03"]);
+  assert.deepEqual(kelligrews.diagram.transformers.map(({ label, rating }) => [label, rating]), [["KEL-T1", "25 MVA"]]);
+  const filedFacts = kelligrews.engineeringRecord.facts.flat().join(" ");
+  const laterEntry = kelligrews.planningRecord.facts.flat().join(" ");
+  const historyFacts = kelligrews.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(filedFacts, /66\/12.47 kV; 25 MVA/);
+  assert.match(filedFacts, /KEL-01, KEL-02, and KEL-03; 12.47 kV/);
+  assert.match(laterEntry, /66\/25 kV; 25 MVA; 21.47 MVA 2026 forecast/);
+  assert.match(kelligrews.assignmentRecord.facts.flat().join(" "), /Station customer count 4,020/);
+  assert.match(historyFacts, /1977 as a 12.5 kV distribution substation/);
+  assert.match(historyFacts, /25 MVA, 66\/12.5 kV transformer/);
+  assert.match(historyFacts, /new 25 MVA Kelligrews transformer installed in 2011/);
+  assert.match(historyFacts, /construct KEL-03.*477 ASC conductor/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
