@@ -564,6 +564,31 @@ test("Mobile Hydro Plant separates the existing outlet transformer from its prop
   assert.match(proposedFacts, /commissioning planned for 2028/);
 });
 
+test("Mobile separates the distribution station from the hydro plant outlet", () => {
+  const mobile = stationProfiles.find((station) => station.code === "MOB");
+  assert.ok(mobile);
+  assert.deepEqual(mobile.connectedCircuits.map(({ circuit }) => circuit), ["11L", "20L", "24L", "23L"]);
+  assert.deepEqual(mobile.feederRegister, ["MOB-01", "MOB-02"]);
+  const existingFacts = mobile.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = mobile.planningRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /MOB-T2 66\/12\.5 kV; 6\.7 MVA/);
+  assert.match(existingFacts, /MOB-T3 66\/33 kV; 4\.6 MVA/);
+  assert.match(planningFacts, /MOB-T2 66\/12\.5 kV; 16\.67 MVA; 12\.79 MVA 2026 forecast/);
+});
+
+test("Seal Cove keeps the dated distribution-voltage records separate", () => {
+  const sealCove = stationProfiles.find((station) => station.code === "SCV");
+  assert.ok(sealCove);
+  assert.deepEqual(sealCove.connectedCircuits.map(({ circuit }) => circuit), ["38L", "52L"]);
+  assert.deepEqual(sealCove.feederRegister, ["SCV-01", "SCV-02"]);
+  const existingFacts = sealCove.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = sealCove.planningRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /SCV-T2 66\/12\.5 kV; 11\.2 MVA/);
+  assert.match(existingFacts, /two generators, 4 MVA combined/);
+  assert.match(planningFacts, /SCV-T2 66\/25 kV distribution transformer; 11\.2 MVA; 8\.69 MVA 2026 forecast/);
+  assert.match(planningFacts, /SCV-T1 66\/4\.2 kV generation transformer; 3\.33 MVA/);
+});
+
 test("Boyd's Cove and Gander retain the present corridor before the proposed 138 kV conversion", () => {
   const boydsCove = stationProfiles.find((station) => station.code === "BOY");
   const gander = stationProfiles.find((station) => station.code === "GAN");

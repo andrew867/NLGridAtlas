@@ -91,6 +91,8 @@ Updated: 2026-11-12
 - Added Long Lake's 416L connection, two feeder records, the Rose Blanche hydro plant tap, current transformer value, and the filed LGL-02 pole replacement. The 12.5 kV feeder and 25 kV fleet-table records remain dated and separate.
 - Added Humber's 356L and 359L connections, former 4.16 kV and 12.5 kV banks, the 2019 bus-insulator failure, current transformer record, and the separately labeled 2022 voltage-conversion filing.
 - Added Victoria's radial 40L connection, both feeders, both transformer records, 500 kVA hydro generator, and the separately labeled 2016 modernization filing.
+- Added Mobile's four filed line connections, two distribution feeders, dated distribution and generation transformer records, current MOB-T2 fleet-table value, and the separately labeled 2008 refurbishment. The Mobile Hydro Plant remains a separate MOP record.
+- Added Seal Cove's 38L and 52L connections, two distribution feeders, dated generation and distribution equipment, and current transformer-register values. The 12.5 kV and 25 kV SCV-T2 records remain dated and separate.
 - Identified the current internal Holyrood drawing numbers `1403-500-E001` and `1403-500-E004` in the 2022 study document register. The drawings were named but not filed.
 - Added the March 2025 Holyrood Capital Plan Refresh, including Unit 3 condition-monitoring and auxiliary-system findings plus the six CAT 3516B black-start sets.
 - Added the 2017 Holyrood plant-service arrangements and the 2019 completion records for the SST34 cable replacement and the lower-cost Newfoundland Power auxiliary supply connection.

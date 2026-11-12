@@ -10,6 +10,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
   },
   {
+    id: "np-2004-cbs-study",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Conception Bay South Distribution Study",
+    topics: ["Seal Cove", "SCV-T2", "SCV-01", "SCV-02", "38L", "52L", "Kelligrews", "Chamberlains"],
+    pages: "physical PDF pp. 666 to 667",
+    status: "verified",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
+  },
+  {
     id: "np-2006-handbook",
     year: 2006,
     organization: "Newfoundland Power",
@@ -48,6 +58,16 @@ export const sources = [
     pages: "physical PDF pp. 310 and 334",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2008-mobile-substation",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Mobile Substation Refurbishment and Modernization",
+    topics: ["Mobile", "MOB-T2", "MOB-T3", "11L", "20L", "23L", "24L", "12.5 kV", "33 kV", "66 kV"],
+    pages: "physical PDF pp. 174 to 176",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
   },
   {
     id: "np-2016-hwd07",
@@ -3876,7 +3896,69 @@ const filedFeederMapProfiles = [
       }
     ]
   },
-  { code: "MOB", mapPages: [["MOB-02", 107]] },
+  {
+    code: "MOB",
+    name: "Mobile",
+    voltage: "66/33/12.5 kV filed arrangement",
+    circuitRegisterLabel: "2007 FILED STATION ARRANGEMENT",
+    circuitSource: { sourceId: "np-2008-mobile-substation", pages: "physical PDF p. 174" },
+    connectedCircuits: [
+      { circuit: "11L", from: "Tors Cove", from_code: "TCV", to: "Mobile", to_code: "MOB" },
+      { circuit: "20L", from: "Cape Broyle", from_code: "CAB", to: "Mobile", to_code: "MOB" },
+      { circuit: "24L", from: "Mobile", from_code: "MOB", to: "Big Pond", to_code: "BIG" },
+      { circuit: "23L", from: "Mobile", from_code: "MOB", to: "Pierre's Brook", to_code: "PBK" }
+    ],
+    feederRegisterLabel: "2007 FILED DISTRIBUTION ARRANGEMENT",
+    feederRegister: ["MOB-01", "MOB-02"],
+    mapPages: [["MOB-02", 107]],
+    eventLoads: [],
+    diagram: {
+      label: "2007 filed arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }, { id: "b3", label: "33 kV bus", voltage: "33 kV" }],
+      transformers: [{ label: "MOB-T2", rating: "6.7 MVA", from: "b1", to: "b2" }, { label: "MOB-T3", rating: "4.6 MVA", from: "b1", to: "b3" }],
+      circuits: [
+        { label: "11L", destination: "Tors Cove", bus: "b1", destinationCode: "TCV" },
+        { label: "20L", destination: "Cape Broyle", bus: "b1", destinationCode: "CAB" },
+        { label: "24L", destination: "Big Pond", bus: "b1", destinationCode: "BIG" },
+        { label: "23L", destination: "Pierre's Brook", bus: "b3", destinationCode: "PBK" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2007 FILED STATION ARRANGEMENT",
+      title: "Mobile transmission and distribution station",
+      sourceId: "np-2008-mobile-substation",
+      pages: "physical PDF pp. 174 to 176",
+      facts: [
+        ["Station role", "built in 1954 as a generation substation; described in 2007 as the transmission infeed for seven Southern Shore hydro plants"],
+        ["MOB-T2", "66/12.5 kV; 6.7 MVA; supplied two 12.5 kV feeders and approximately 1,600 customers in the 2007 filing"],
+        ["MOB-T3", "66/33 kV; 4.6 MVA; connected Pierre's Brook generation through 23L"],
+        ["66 kV connections", "11L to Tors Cove, 20L to Cape Broyle, and 24L to Big Pond"],
+        ["33 kV connection", "23L to Pierre's Brook"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["MOB-T2", "66/12.5 kV; 16.67 MVA; 12.79 MVA 2026 forecast"],
+        ["Dated rating change", "the 2007 station report lists MOB-T2 at 6.7 MVA; the 2027 fleet table lists 16.67 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2008 FILED REFURBISHMENT",
+        sourceId: "np-2008-mobile-substation",
+        pages: "physical PDF pp. 174 to 176",
+        facts: [
+          ["Structures", "replace deteriorated crossarms on the 66 kV and 12.5 kV structures and refurbish the 23L breaker foundation"],
+          ["Primary equipment", "replace the MOB-T2 air-break switch, 66 kV fuses and potential transformers; add a bypass switch across the 24L breaker"],
+          ["Protection", "replace the electromechanical impedance relays on 11L, 20L and 24L with digital relays"],
+          ["Transformers", "refurbish deteriorated MOB-T2; replace silicon-carbide arresters on MOB-T2 and MOB-T3 with metal-oxide arresters"]
+        ]
+      }
+    ]
+  },
   {
     code: "MSY",
     name: "Marystown",
@@ -3996,7 +4078,51 @@ const filedFeederMapProfiles = [
     ]
   },
   { code: "PAS", mapPages: [["PAS-01", 118]] },
-  { code: "SCV", mapPages: [["SCV-01", 134]] },
+  {
+    code: "SCV",
+    name: "Seal Cove",
+    voltage: "66/25/4.2 kV current transformer record",
+    circuitRegisterLabel: "2025 CIRCUIT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "38L", from: "Seal Cove", from_code: "SCV", to: "Duff's", to_code: "DUF" },
+      { circuit: "52L", from: "Kelligrews", from_code: "KEL", to: "Seal Cove", to_code: "SCV" }
+    ],
+    feederRegisterLabel: "2003 FILED DISTRIBUTION ARRANGEMENT",
+    feederRegister: ["SCV-01", "SCV-02"],
+    mapPages: [["SCV-01", 134]],
+    eventLoads: [],
+    diagram: {
+      label: "current transformer ratings on documented station connections",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV distribution bus", voltage: "25 kV" }, { id: "b3", label: "4.2 kV generation bus", voltage: "4.2 kV" }],
+      transformers: [{ label: "SCV-T2", rating: "11.2 MVA", from: "b1", to: "b2" }, { label: "SCV-T1", rating: "3.33 MVA", from: "b1", to: "b3" }],
+      circuits: [{ label: "38L", destination: "Duff's", bus: "b1", destinationCode: "DUF" }, { label: "52L", destination: "Kelligrews", bus: "b1", destinationCode: "KEL" }],
+      generators: [{ label: "Seal Cove units", rating: "4 MVA filed combined capacity", bus: "b3" }]
+    },
+    engineeringRecord: {
+      date: "2003 FILED STATION ARRANGEMENT",
+      title: "Seal Cove transmission, generation and distribution station",
+      sourceId: "np-2004-cbs-study",
+      pages: "physical PDF p. 666",
+      facts: [
+        ["SCV-T2", "66/12.5 kV; 11.2 MVA in the 2003 distribution study"],
+        ["Distribution", "SCV-01 and SCV-02 at 12.5 kV; SCV-01 tied toward KEL-01 and SCV-02 tied toward HOL-02"],
+        ["Transmission", "52L from Kelligrews and 38L from Duff's Steam Plant in Holyrood"],
+        ["Generation", "two generators, 4 MVA combined, generated at 2.4 kV and were tied to the 66 kV bus in the 2003 study"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 550 and 552",
+      facts: [
+        ["SCV-T2", "66/25 kV distribution transformer; 11.2 MVA; 8.69 MVA 2026 forecast"],
+        ["SCV-T1", "66/4.2 kV generation transformer; 3.33 MVA"],
+        ["Dated voltage difference", "the 2003 study lists SCV-T2 at 66/12.5 kV; the 2027 fleet table lists 66/25 kV"]
+      ]
+    },
+    historyRecords: []
+  },
   { code: "STX", mapPages: [["STX-01", 151]] },
   {
     code: "TRN",
