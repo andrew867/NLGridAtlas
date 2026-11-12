@@ -884,6 +884,23 @@ test("Port Union separates current generation equipment from the Igor rebuild", 
   assert.match(historyFacts, /rebuilt the Port Union hydroelectric plant/);
 });
 
+test("Glovertown separates the former radial tap from the completed loop arrangement", () => {
+  const glovertown = stationProfiles.find((station) => station.code === "GLV");
+  assert.ok(glovertown);
+  assert.deepEqual(glovertown.connectedCircuits.map(({ circuit }) => circuit), ["121L", "124L"]);
+  assert.deepEqual(glovertown.feederRegister, ["GLV-01", "GLV-02"]);
+  assert.deepEqual(glovertown.diagram.transformers.map(({ label, rating }) => [label, rating]), [["GLV-T1", "20 MVA"]]);
+  assert.deepEqual(glovertown.diagram.circuits.map(({ label, destination }) => [label, destination]), [["121L", "Gambo"], ["124L", "Clarenville"]]);
+  const existingFacts = glovertown.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = glovertown.planningRecord.facts.flat().join(" ");
+  const historyFacts = glovertown.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /GLV-T1 138\/25 kV; 20 MVA/);
+  assert.match(existingFacts, /approximately 2,730 customers/);
+  assert.match(planningFacts, /12\.92 MVA 2026 forecast/);
+  assert.match(historyFacts, /radial tap from 124L at Alexander Bay/);
+  assert.match(historyFacts, /construction and commissioning complete/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

@@ -764,10 +764,20 @@ export const sources = [
     year: 2023,
     organization: "Newfoundland Power",
     title: "Quarterly Regulatory Report, Q4 2022",
-    topics: ["Pulpit Rock", "Virginia Waters", "PUL-03", "VIR-01", "completion", "load growth"],
+    topics: ["Glovertown", "Humber", "Pulpit Rock", "Virginia Waters", "PUL-03", "VIR-01", "completion", "load growth"],
     pages: "physical PDF p. 13",
     status: "verified",
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202022_Redacted.pdf"
+  },
+  {
+    id: "np-2022-glovertown",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Glovertown Substation Refurbishment and Modernization",
+    topics: ["Glovertown", "GLV-T1", "GLV-01", "GLV-02", "121L", "124L", "138 kV", "25 kV"],
+    pages: "physical PDF pp. 292 to 295",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
   },
   {
     id: "np-2023-ca-np-176",
@@ -3411,7 +3421,68 @@ const filedFeederMapProfiles = [
       ]
     }
   },
-  { code: "GLV", mapPages: [["GLV-01", 66]] },
+  {
+    code: "GLV",
+    name: "Glovertown",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2022 FILED LOOP CONFIGURATION",
+    circuitSource: { sourceId: "np-2022-glovertown", pages: "physical PDF pp. 292 to 294" },
+    connectedCircuits: [
+      { circuit: "121L", from: "Gambo", from_code: "GAM", to: "Glovertown", to_code: "GLV" },
+      { circuit: "124L", from: "Glovertown", from_code: "GLV", to: "Clarenville", to_code: "CLV" }
+    ],
+    feederRegisterLabel: "2022 STATION RECORD",
+    feederRegister: ["GLV-01", "GLV-02"],
+    mapPages: [["GLV-01", 66]],
+    eventLoads: [],
+    diagram: {
+      label: "2022 completed logical arrangement",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "GLV-T1", rating: "20 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "121L", destination: "Gambo", bus: "b1", destinationCode: "GAM" }, { label: "124L", destination: "Clarenville", bus: "b1", destinationCode: "CLV" }]
+    },
+    engineeringRecord: {
+      date: "2022 FILED EQUIPMENT",
+      title: "Glovertown transmission and distribution station",
+      sourceId: "np-2022-glovertown",
+      pages: "physical PDF pp. 292 to 295",
+      facts: [
+        ["Station built", "1976 as a distribution and transmission substation"],
+        ["GLV-T1", "138/25 kV; 20 MVA"],
+        ["Distribution", "GLV-01 and GLV-02 at 25 kV; approximately 2,730 customers"],
+        ["138 kV circuits", "121L to Gambo and 124L to Clarenville"],
+        ["Line protection", "individual 138 kV breakers on 121L and 124L"],
+        ["Remote operation", "digital protection and communications equipment installed for remote breaker operation"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["GLV-T1", "138/25 kV; 20 MVA; 12.92 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "PRE-2022 RADIAL ARRANGEMENT",
+        sourceId: "np-2022-glovertown",
+        pages: "physical PDF pp. 292 to 293",
+        facts: [
+          ["Former supply", "121L was a radial tap from 124L at Alexander Bay"],
+          ["Filed reconfiguration", "terminate the rebuilt 124L at Glovertown; rename the Gambo to Glovertown section 121L and retain 124L from Glovertown to Clarenville"]
+        ]
+      },
+      {
+        label: "Q4 2022 COMPLETION",
+        sourceId: "np-2022-q4-report",
+        pages: "physical PDF p. 13",
+        facts: [
+          ["Project status", "Newfoundland Power reported Glovertown Substation construction and commissioning complete"]
+        ]
+      }
+    ]
+  },
   { code: "GRH", mapPages: [["GRH-03", 70]] },
   { code: "HBS", mapPages: [["HBS-02", 73]] },
   { code: "HGR", mapPages: [["HGR-01", 74]] },
