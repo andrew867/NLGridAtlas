@@ -960,12 +960,32 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
   },
   {
+    id: "np-2010-lightning-arrestors",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Lightning Arrestor Replacement",
+    topics: ["Seal Cove", "SCV", "lightning arrestors", "transformer protection", "silicon carbide"],
+    pages: "physical PDF p. 301",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
     id: "np-2015-substation-modernization",
     year: 2014,
     organization: "Newfoundland Power",
     title: "2015 Capital Budget Application, Substation Refurbishment and Modernization",
     topics: ["Colliers", "Springfield", "COL-T1", "SPF-T1", "42L", "46L", "47L", "protection", "SCADA", "circuit breakers"],
     pages: "physical PDF pp. 435 to 439",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2015-scv01",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, SCV-01 Feeder Upgrades",
+    topics: ["Seal Cove", "SCV-01", "Scott's Road South", "Lawrence Pond Road", "three-phase conversion"],
+    pages: "physical PDF pp. 647 to 649",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
   },
@@ -1187,6 +1207,16 @@ export const sources = [
     topics: ["Kelligrews", "KEL-T1", "66 kV", "12.5 kV", "25 MVA", "load growth"],
     pages: "physical PDF pp. 304 to 306 and 309 to 311",
     status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2011-cbs-study",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Conception Bay South Study",
+    topics: ["Seal Cove", "SCV-T2", "SCV-01", "SCV-02", "Kelligrews", "Chamberlains", "Hardwoods", "load growth"],
+    pages: "physical PDF pp. 310 to 316",
+    status: "reported",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
   },
   {
@@ -5266,7 +5296,38 @@ const filedFeederMapProfiles = [
         ["Dated voltage difference", "the 2003 study lists SCV-T2 at 66/12.5 kV; the 2027 fleet table lists 66/25 kV"]
       ]
     },
-    historyRecords: []
+    historyRecords: [
+      {
+        label: "2010 PROPOSED LIGHTNING ARRESTOR REPLACEMENT",
+        sourceId: "np-2010-lightning-arrestors",
+        pages: "physical PDF p. 301",
+        facts: [
+          ["Filed work", "replace the remaining silicon carbide lightning arrestors at Seal Cove"],
+          ["Purpose", "the filing identifies the arrestors as transformer protection and states that age-related moisture ingress had caused failures in this equipment class"]
+        ]
+      },
+      {
+        label: "2010 RECORDED LOAD AND SELECTED CBS PLAN",
+        sourceId: "np-2011-cbs-study",
+        pages: "physical PDF pp. 310, 311 and 316",
+        facts: [
+          ["SCV-T2", "11.2 MVA, 66/12.5 kV; 9.3 MVA recorded 2009 peak"],
+          ["SCV-01", "approximately 1,424 customers in Seal Cove and Upper Gullies"],
+          ["SCV-02", "470 customers in Seal Cove and Holyrood"],
+          ["Selected plan", "Alternative 1 retained SCV-T2 and scheduled a new Kelligrews feeder in 2018 to complete a load transfer from Seal Cove"]
+        ]
+      },
+      {
+        label: "2015 PROPOSED SCV-01 THREE-PHASE WORK",
+        sourceId: "np-2015-scv01",
+        pages: "physical PDF pp. 647 to 649",
+        facts: [
+          ["Scott's Road South", "approximately 1.5 km of single-phase line proposed for conversion to three-phase"],
+          ["Lawrence Pond Road", "approximately 2.0 km of single-phase line proposed for conversion to three-phase"],
+          ["Filed phase currents", "111 A and 101 A forecast for the two single-phase sections in 2015"]
+        ]
+      }
+    ]
   },
   {
     code: "STX",

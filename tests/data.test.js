@@ -666,6 +666,11 @@ test("Seal Cove keeps the dated distribution-voltage records separate", () => {
   assert.match(existingFacts, /two generators, 4 MVA combined/);
   assert.match(planningFacts, /SCV-T2 66\/25 kV distribution transformer; 11\.2 MVA; 8\.69 MVA 2026 forecast/);
   assert.match(planningFacts, /SCV-T1 66\/4\.2 kV generation transformer; 3\.33 MVA/);
+  const history = sealCove.historyRecords.flatMap((record) => record.facts).flat().join(" ");
+  assert.match(history, /9\.3 MVA recorded 2009 peak/);
+  assert.match(history, /Alternative 1 retained SCV-T2/);
+  assert.match(history, /1\.5 km of single-phase line proposed for conversion to three-phase/);
+  assert.match(history, /2\.0 km of single-phase line proposed for conversion to three-phase/);
 });
 
 test("Harbour Grace separates its 2017 dual-bank arrangement from the current fleet table", () => {
