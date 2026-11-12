@@ -1895,6 +1895,30 @@ test("Rocky Pond joins the segmented 66 kV corridor to the rebuilt hydro plant",
   assert.match(historyFacts, /packing was described as a temporary fix/);
 });
 
+test("Morris closes the 22L branch and preserves its hydraulic link to Mobile", () => {
+  const morris = stationProfiles.find((station) => station.code === "MRP");
+  assert.ok(morris);
+  assert.deepEqual(morris.connectedCircuits, [
+    { circuit: "22L", from: "Morris", from_code: "MRP", to: "Rocky Pond", to_code: "ROP" }
+  ]);
+  assert.deepEqual(morris.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "2.4 kV"]);
+  assert.deepEqual(morris.diagram.transformers.map(({ label, rating }) => [label, rating]), [["MRP-T1", "1.50 MVA"]]);
+  assert.deepEqual(morris.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "1.135 MW plant capacity"]]);
+  const plantFacts = morris.engineeringRecord.facts.flat().join(" ");
+  const historyFacts = morris.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /1,135 kW under 30\.0 m net head/);
+  assert.match(historyFacts, /Morris to Rocky Pond; 66 kV/);
+  assert.match(historyFacts, /MRP-T1, asset 200326/);
+  assert.match(historyFacts, /MRP-G-B air circuit breaker, asset 210550/);
+  assert.match(historyFacts, /SAGE 2100 remote terminal unit/);
+  assert.match(historyFacts, /water is used first at Morris and then flows downstream to Mobile/);
+  assert.match(historyFacts, /no programmable logic controller/);
+  assert.match(historyFacts, /Morris Plant Substation to Morris Plant Tap/);
+  assert.match(historyFacts, /960 to 963 kW/);
+  assert.match(historyFacts, /963 kW at the 1030 Island Time interval/);
+  assert.match(historyFacts, /held open with straps/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");

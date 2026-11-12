@@ -1795,7 +1795,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
     topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 371 to 376, 421, 427, 484 to 487 and 500 to 502",
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 371 to 376, 421, 427, 484 to 487 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1834,7 +1834,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "NP-NLH-168 Attachment 1, Newfoundland Power Generation Capacity Tests",
-    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Petty Harbour", "PHR-T1", "Pierre's Brook", "PBK-G1", "Rocky Pond", "ROP-G1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
+    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Morris", "MRP-G1", "Petty Harbour", "PHR-T1", "Pierre's Brook", "PBK-G1", "Rocky Pond", "ROP-G1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
     pages: "physical PDF p. 2",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/NP-NLH-168.PDF"
@@ -1898,6 +1898,36 @@ export const sources = [
     pages: "physical PDF pp. 15 and 159 to 170",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2004-morris",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Morris Turbine Runner Seals",
+    topics: ["Morris", "Morris Hydro Plant", "horizontal Francis turbine", "runner seals", "wicket gates"],
+    pages: "physical PDF p. 265",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
+  },
+  {
+    id: "np-2022-morris",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Morris Head Gate and Intake Gatehouse Replacement",
+    topics: ["Morris", "Morris Hydro Plant", "head gate", "intake gatehouse", "penstock isolation", "hydroelectric generation"],
+    pages: "physical PDF pp. 23 and 195 to 199",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
+    id: "np-2024-morris-mobile",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Morris controls and Mobile watershed record",
+    topics: ["Morris", "Morris Hydro Plant", "Mobile", "Mobile Hydro Plant", "programmable logic controller", "hydraulic sequence"],
+    pages: "physical PDF pp. 121 and 481",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
   },
   {
     id: "np-2015-pierre-brook",
@@ -10716,6 +10746,115 @@ export const stationProfiles = [
           ["Filed scope", "replace the staves, refurbish the bearing housing, and upgrade the cooling and lubricating water system"],
           ["Filed cost", "$410,000"],
           ["Filed schedule", "design by the end of the second quarter and field completion by the fourth quarter of 2027"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "MRP",
+    name: "Morris",
+    voltage: "66/2.4 kV",
+    circuitRegisterLabel: "2013 SEGMENTED LINE REGISTER",
+    circuitSource: { sourceId: "np-2013-line-loading", pages: "physical PDF p. 3; attachment p. 1" },
+    connectedCircuits: [
+      { circuit: "22L", from: "Morris", from_code: "MRP", to: "Rocky Pond", to_code: "ROP" }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2013 circuit record with current transformer rating",
+      buses: [
+        { id: "b1", label: "66 kV line connection", voltage: "66 kV" },
+        { id: "b2", label: "2.4 kV generator bus", voltage: "2.4 kV" }
+      ],
+      transformers: [{ label: "MRP-T1", rating: "1.50 MVA", from: "b2", to: "b1" }],
+      circuits: [{ label: "22L", destination: "Rocky Pond", bus: "b1", destinationCode: "ROP" }],
+      generators: [{ label: "G1", rating: "1.135 MW plant capacity", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2021 PLANT RECORD",
+      title: "Morris hydro generation station",
+      sourceId: "np-2022-morris",
+      pages: "physical PDF p. 196",
+      facts: [
+        ["Plant", "commissioned in 1983; 1,135 kW under 30.0 m net head"],
+        ["Normal production", "6.6 GWh in the 2021 project report"],
+        ["Location", "upstream of Mobile First Pond near Mobile"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER TABLE",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 551",
+      facts: [["MRP-T1", "generation transformer; 66/2.4 kV; 1.50 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "2003 FILED TURBINE SEAL WORK",
+        sourceId: "np-2004-morris",
+        pages: "physical PDF p. 265",
+        facts: [
+          ["Turbine", "Barber horizontal Francis turbine installed with the new plant in 1983"],
+          ["Condition", "carbon-steel stationary seals had corroded; accumulated rust interfered with wicket-gate movement"],
+          ["Filed scope", "replace the stationary seals with stainless steel or nickel-aluminum-bronze alloy"],
+          ["Filed cost", "$107,000"]
+        ]
+      },
+      {
+        label: "2013 FILED 22L LOADING",
+        sourceId: "np-2013-line-loading",
+        pages: "physical PDF p. 3; attachment p. 1",
+        facts: [
+          ["Connection", "Morris to Rocky Pond; 66 kV"],
+          ["Winter rating", "54.2 MVA; 474.3 A"],
+          ["2012 forecast peak", "1.54 MVA; 13.4 A; 3% loading"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 324 to 325",
+        facts: [
+          ["Transformer", "MRP-T1, asset 200326"],
+          ["Generator breaker", "MRP-G-B air circuit breaker, asset 210550"],
+          ["Telecommunications", "SAGE 2100 remote terminal unit"]
+        ]
+      },
+      {
+        label: "2021 FILED HEAD-GATE WORK",
+        sourceId: "np-2022-morris",
+        pages: "physical PDF pp. 196 to 199",
+        facts: [
+          ["Condition", "the original timber head gate's operator stem detached in 2020; the gate was held open with straps"],
+          ["Filed scope", "stainless-steel head gate, electric operator, upstream cofferdam, concrete rehabilitation, and a replacement gatehouse with removable roof"],
+          ["Filed cost", "$465,000"]
+        ]
+      },
+      {
+        label: "2023 OPERATING RECORD",
+        sourceId: "np-2024-morris-mobile",
+        pages: "physical PDF pp. 121 and 481",
+        facts: [
+          ["Hydraulic sequence", "water is used first at Morris and then flows downstream to Mobile"],
+          ["Controls", "the filing states Morris had digital protection and control systems but no programmable logic controller"]
+        ]
+      },
+      {
+        label: "2025 CIRCUIT ENDPOINT REGISTER",
+        sourceId: "np-2025-ca-np-168",
+        pages: "physical PDF p. 3",
+        facts: [["22L", "Morris Plant Substation to Morris Plant Tap"]]
+      },
+      {
+        label: "MARCH 18, 2025 CAPACITY TEST",
+        sourceId: "np-2026-generation-capacity-test",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Metered point", "MRP-G1-I"],
+          ["15-minute values shown", "960 to 963 kW"],
+          ["Highest interval shown", "963 kW at the 1030 Island Time interval"]
         ]
       }
     ]

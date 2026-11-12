@@ -16,9 +16,10 @@ Updated: 2026-11-12
 ## Verified in the current work session
 
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
-- Added Tors Cove, Horse Chops, Pierre's Brook, and Rocky Pond hydro generation-station records with current transformer ratings, documented line connections, dated plant work, inspection equipment, and capacity-test values.
+- Added Tors Cove, Horse Chops, Pierre's Brook, Rocky Pond, and Morris hydro generation-station records with current transformer ratings, documented line connections, dated plant work, inspection equipment, and capacity-test values.
 - Kept Pierre's Brook's published 2008 station upgrade, 2009 filed 23L conversion, 2013 installed line state, and 2015 filed electrical-refurbishment scope as separate dated records.
 - Added Rocky Pond's segmented 20L and 22L connections, 2005 switchgear fire, completed 2009 plant and substation rebuild, March 18, 2025 capacity test, and proposed 2027 bearing work.
+- Added Morris's 22L connection, 2003 turbine-seal scope, 2021 filed head-gate work, March 18, 2025 capacity test, and documented hydraulic sequence upstream of Mobile.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
 - Passed 87 automated tests, source-hash verification, and the production build.
