@@ -96,12 +96,17 @@
       "title": "Preserve the original TOD Access database",
       "phase": 0,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Acquire and hash the original ACCDB file, retain the exported table, and document row and recorder reconciliation.",
       "dependencies": ["ARC-001"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "research/TOD_ACCESS_RECONCILIATION.md",
+        "research/derived/np-2018-tod-access-reconciliation.json",
+        "scripts/reconcile_tod_access.ps1",
+        "tests/tod-export-audit.test.js"
+      ],
       "blocker": null,
-      "notes": "The ACCDB and export hashes are recorded. A complete 4,175,709-row export audit passed. Direct Access table reconciliation will run after the PUB audit releases the database file."
+      "notes": "The preserved ACCDB was opened read-only through the 64-bit Access ODBC driver. Its single user table matches the export's 4,175,709 total rows, 4,175,472 measurements, 237 separator rows, 238 recorder IDs, 17,544 measurements per recorder, primary-key range, date range, and 304,371 zero-value rows. The maximum Access DOUBLE is 30966.601; the export stores 30966.60, so the third decimal place is not preserved. A full value-by-value comparison was not performed."
     },
     {
       "id": "AVL-001",

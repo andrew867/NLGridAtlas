@@ -11,6 +11,7 @@ research/derived/*
 !research/derived/island-ac-topology-2018.json
 !research/derived/gnl-canvec-newfoundland-transmission-lines.geojson
 !research/derived/station-coordinate-register.json
+!research/derived/np-2018-tod-access-reconciliation.json
 research/renders/
 research/tmp/
 .DS_Store

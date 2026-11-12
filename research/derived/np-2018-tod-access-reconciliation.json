@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "database": {
+    "filename": "PUB-NP-078 - Attachment A, TOD Rate Study Load Data.ACCDB",
+    "bytes": 238297088,
+    "sha256": "764336fae7b8d7f505822367e6011c5f9e6ab809a7b0e362751e398e2ed0a4c4",
+    "driver": "Microsoft Access Driver (*.mdb, *.accdb)",
+    "mode": "read-only"
+  },
+  "table": {
+    "name": "TOD Rate Study Load Data",
+    "columns": [
+      { "name": "PrimaryKey", "type": "COUNTER" },
+      { "name": "RECORDER_ID", "type": "VARCHAR" },
+      { "name": "DATE", "type": "INTEGER" },
+      { "name": "HOUR", "type": "INTEGER" },
+      { "name": "WATTS", "type": "DOUBLE" }
+    ],
+    "total_data_rows": 4175709,
+    "measurement_rows": 4175472,
+    "separator_rows": 237,
+    "recorder_series": 238,
+    "measurements_per_recorder": 17544,
+    "primary_key": { "first": 1, "last": 4175709 },
+    "first_date_raw": 111201,
+    "last_date_raw": 131130,
+    "minimum_watts": 0.0,
+    "maximum_watts": 30966.601,
+    "zero_watt_rows": 304371
+  },
+  "export_comparison": {
+    "total_data_rows_match": true,
+    "measurement_rows_match": true,
+    "separator_rows_match": true,
+    "recorder_series_match": true,
+    "recorder_id_sets_match": true,
+    "measurements_per_recorder_match": true,
+    "primary_key_range_match": true,
+    "date_range_match": true,
+    "zero_watt_rows_match": true,
+    "maximum_row": {
+      "primary_key": 3579359,
+      "recorder_id": "W1N-009",
+      "date_raw": 111208,
+      "hour": 1100,
+      "access_value": 30966.601,
+      "export_text": "30966.60"
+    },
+    "full_value_by_value_comparison_performed": false
+  }
+}

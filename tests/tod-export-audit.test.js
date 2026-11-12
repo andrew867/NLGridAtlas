@@ -10,6 +10,10 @@ const audit = JSON.parse(await readFile(
   new URL("../research/derived/np-2018-tod-export-audit.json", import.meta.url),
   "utf8",
 ));
+const access = JSON.parse(await readFile(
+  new URL("../research/derived/np-2018-tod-access-reconciliation.json", import.meta.url),
+  "utf8",
+));
 
 test("TOD export audit reconciles the derived hourly-data record", () => {
   assert.equal(audit.source_sha256, study.source.csv_export_sha256);
@@ -40,4 +44,20 @@ test("TOD source record identifies the preserved Access database", () => {
     "764336fae7b8d7f505822367e6011c5f9e6ab809a7b0e362751e398e2ed0a4c4",
   );
   assert.match(study.source.attachment_a_local_path, /TOD Rate Study Load Data\.ACCDB$/);
+});
+
+test("Access table reconciles with the exported row and recorder structure", () => {
+  assert.equal(access.database.sha256, study.source.attachment_a_sha256);
+  assert.equal(access.database.bytes, study.source.attachment_a_bytes);
+  assert.equal(access.table.total_data_rows, audit.total_data_rows);
+  assert.equal(access.table.measurement_rows, audit.measurement_rows);
+  assert.equal(access.table.separator_rows, audit.separator_rows);
+  assert.equal(access.table.recorder_series, audit.recorder_series);
+  assert.equal(access.table.measurements_per_recorder, 17544);
+  assert.equal(access.table.zero_watt_rows, audit.zero_watt_rows);
+  assert.ok(access.export_comparison.recorder_id_sets_match);
+  assert.equal(access.export_comparison.maximum_row.primary_key, 3579359);
+  assert.equal(access.export_comparison.maximum_row.access_value, 30966.601);
+  assert.equal(access.export_comparison.maximum_row.export_text, "30966.60");
+  assert.equal(access.export_comparison.full_value_by_value_comparison_performed, false);
 });

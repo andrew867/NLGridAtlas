@@ -70,6 +70,7 @@ Updated: 2026-11-11
 - Added island and Avalon geographic views. Station selection updates a fixed detail panel; the station-record link performs navigation.
 - Added a complete digest manifest for the 66 committed evidence PDFs, including the eight catalog records that previously lacked pinned hashes.
 - Defined the external archive snapshot as immutable SHA-256 objects plus mirror path indexes. Current PUB, NL Hydro, and Newfoundland Power mirror counts and control-file hashes are recorded.
+- Reconciled the original TOD Access table with its text export. Row counts, recorder IDs, per-recorder counts, primary keys, dates, and zero-value counts match. The export rounds the maximum Access value from 30966.601 to 30966.60.
 
 ## Active work
 
