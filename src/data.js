@@ -1455,7 +1455,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "CA-NP-040, Power Transformer Replacement Schedule",
     topics: ["Pulpit Rock", "PUL-T2", "transformer replacement", "planned installation year", "portable substation"],
-    pages: "physical PDF p. 2",
+    pages: "physical PDF pp. 2 to 3",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/NP2027Capital/responses/CA-NP-040.PDF"
   },
@@ -1794,8 +1794,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 371 to 376, 421, 427, 484 to 487 and 500 to 502",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 328, 330, 371 to 376, 421, 427, 484 to 487 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1834,10 +1834,30 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "NP-NLH-168 Attachment 1, Newfoundland Power Generation Capacity Tests",
-    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Morris", "MRP-G1", "Petty Harbour", "PHR-T1", "Pierre's Brook", "PBK-G1", "Rocky Pond", "ROP-G1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
-    pages: "physical PDF p. 2",
+    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Morris", "MRP-G1", "New Chelsea", "NCH-G1", "Petty Harbour", "PHR-T1", "Pierre's Brook", "PBK-G1", "Rocky Pond", "ROP-G1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
+    pages: "physical PDF pp. 2 to 3",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/NP-NLH-168.PDF"
+  },
+  {
+    id: "np-2013-new-chelsea",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, New Chelsea Runner Replacement and Rewind",
+    topics: ["New Chelsea", "NCH", "hydroelectric generation", "turbine runner", "generator rewind", "stator", "rotor", "83.8 m net head", "3.70 MW", "16.3 GWh"],
+    pages: "physical PDF pp. 26 and 212 to 220",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2013-q3-new-chelsea",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-163 Attachment N, Capital Program Q3 2013 Quarterly Regulatory Report",
+    topics: ["New Chelsea", "NCH", "hydro plant refurbishment", "turbine runner", "stator", "rotor", "exciter", "project status"],
+    pages: "physical PDF p. 767",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-163.pdf"
   },
   {
     id: "np-2022-tors-cove",
@@ -2504,7 +2524,7 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "CA-NP-168, Attachment A, Transmission Line Endpoints",
-    topics: ["17L", "24L", "57L", "68L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "357L", "358L", "359L", "Big Pond", "Bayview", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
+    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "357L", "358L", "359L", "Big Pond", "Bayview", "Heart's Content", "New Chelsea", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
     pages: "physical PDF pp. 3 to 4",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
@@ -10855,6 +10875,132 @@ export const stationProfiles = [
           ["Metered point", "MRP-G1-I"],
           ["15-minute values shown", "960 to 963 kW"],
           ["Highest interval shown", "963 kW at the 1030 Island Time interval"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "NCH",
+    name: "New Chelsea",
+    voltage: "66/12.5/6.9 kV",
+    circuitRegisterLabel: "2025 CIRCUIT ENDPOINT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "43L", from: "Heart's Content", from_code: "HCT", to: "New Chelsea", to_code: "NCH" },
+      { circuit: "65L", from: "New Chelsea", from_code: "NCH", to: "Old Perlican", to_code: "OPL" }
+    ],
+    feederRegisterLabel: "2005 FEEDER REGISTER",
+    feederRegister: ["NCH-01", "NCH-02", "NCH-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "Current transformer register with documented generation and distribution buses",
+      buses: [
+        { id: "b1", label: "66 kV bus", voltage: "66 kV" },
+        { id: "b2", label: "12.5 kV distribution bus", voltage: "12.5 kV" },
+        { id: "b3", label: "6.9 kV generator bus", voltage: "6.9 kV" }
+      ],
+      transformers: [
+        { label: "NCH-T1", rating: "6.67 MVA", from: "b1", to: "b2" },
+        { label: "NCH-T2", rating: "5.33 MVA", from: "b3", to: "b1" }
+      ],
+      circuits: [
+        { label: "43L", destination: "Heart's Content", bus: "b1", destinationCode: "HCT" },
+        { label: "65L", destination: "Old Perlican", bus: "b1", destinationCode: "OPL" },
+        { label: "NCH-01", destination: "local distribution", bus: "b2", link: false },
+        { label: "NCH-02", destination: "local distribution", bus: "b2", link: false },
+        { label: "NCH-03", destination: "local distribution", bus: "b2", link: false }
+      ],
+      generators: [{ label: "G1", rating: "4.0 MW maximum load rating, 2013", bus: "b3" }]
+    },
+    engineeringRecord: {
+      date: "2012 ENGINEERING REPORT",
+      title: "New Chelsea generation and distribution station",
+      sourceId: "np-2013-new-chelsea",
+      pages: "physical PDF pp. 212 to 215",
+      facts: [
+        ["Plant", "commissioned in 1956; one vertical unit; 3.70 MW maximum output under 83.8 m net head"],
+        ["Normal production", "16.3 GWh per year in the 2012 engineering report"],
+        ["Generator", "4.0 MW maximum load rating"],
+        ["Turbine", "5,600 hp or 4.2 MW nameplate rating"],
+        ["Measured efficiency", "generator and turbine combination peaked at 83% at 3.3 MW; 82% at 3.7 MW"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 549 and 551",
+      facts: [
+        ["NCH-T1", "distribution transformer; 66/12.5 kV; 6.67 MVA; 4.17 MVA 2026 forecast"],
+        ["NCH-T2", "generation transformer; 66/6.9 kV; 5.33 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2004 REPORTED PLANT REFURBISHMENT",
+        sourceId: "np-2013-new-chelsea",
+        pages: "physical PDF p. 212",
+        facts: [
+          ["Hydraulic and mechanical work", "steel penstock, butterfly valve and actuator, pressure-relief valve, governor, and cooling-water system"],
+          ["Electrical and controls", "protection and control panel, unit control panel, switchgear cubicle, communications gateway, and battery charger"]
+        ]
+      },
+      {
+        label: "2013 FILED RUNNER AND GENERATOR WORK",
+        sourceId: "np-2013-new-chelsea",
+        pages: "physical PDF pp. 26 and 215 to 216",
+        facts: [
+          ["Turbine scope", "high-efficiency stainless-steel runner, stainless-steel wicket gates, and self-lubricating wicket-gate bushings"],
+          ["Generator scope", "replace stator windings and rotor-pole insulation after complete generator disassembly"],
+          ["Filed plant outage", "12 weeks from July to September 2013, including 10 weeks of overhaul and two weeks of commissioning"],
+          ["Filed project cost", "$1.5 million for the combined runner replacement and generator rewind"]
+        ]
+      },
+      {
+        label: "Q3 2013 REPORTED PROJECT STATUS",
+        sourceId: "np-2013-q3-new-chelsea",
+        pages: "physical PDF p. 767",
+        facts: [
+          ["Runner", "manufactured and being shipped"],
+          ["Generator", "stator, rotor and exciter being overhauled in Ontario"],
+          ["Schedule", "generator reassembly scheduled for November 2013"]
+        ]
+      },
+      {
+        label: "2013 FILED LINE LOADING",
+        sourceId: "np-2013-line-loading",
+        pages: "physical PDF p. 3; attachment p. 5",
+        facts: [
+          ["43L", "Heart's Content to New Chelsea; 66 kV; 81.5 MVA winter rating; 8.45 MVA forecast 2012 peak; 10% loading"],
+          ["65L", "New Chelsea to Old Perlican; 66 kV; 54.2 MVA winter rating; 9.83 MVA forecast 2012 peak; 18% loading"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 328 and 330",
+        facts: [
+          ["Distribution transformer", "NCH-T1, asset 200252"],
+          ["Generation transformer", "NCH-T2, asset 200253"]
+        ]
+      },
+      {
+        label: "2025 CIRCUIT ENDPOINT REGISTER",
+        sourceId: "np-2025-ca-np-168",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["43L", "Heart's Content Substation to New Chelsea Substation"],
+          ["65L", "New Chelsea Substation to Old Perlican Substation"]
+        ]
+      },
+      {
+        label: "MARCH 18, 2025 CAPACITY TEST",
+        sourceId: "np-2026-generation-capacity-test",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Metered point", "NCH-G1-I"],
+          ["15-minute values shown", "3,583 to 4,144 kW"],
+          ["Highest interval shown", "4,144 kW at the 1030 Island Time interval"]
         ]
       }
     ]

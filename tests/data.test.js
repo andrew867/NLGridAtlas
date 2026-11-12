@@ -1919,6 +1919,37 @@ test("Morris closes the 22L branch and preserves its hydraulic link to Mobile", 
   assert.match(historyFacts, /held open with straps/);
 });
 
+test("New Chelsea joins the Heart's Content and Old Perlican corridor to generation and local distribution", () => {
+  const newChelsea = stationProfiles.find((station) => station.code === "NCH");
+  assert.ok(newChelsea);
+  assert.deepEqual(newChelsea.connectedCircuits, [
+    { circuit: "43L", from: "Heart's Content", from_code: "HCT", to: "New Chelsea", to_code: "NCH" },
+    { circuit: "65L", from: "New Chelsea", from_code: "NCH", to: "Old Perlican", to_code: "OPL" }
+  ]);
+  assert.deepEqual(newChelsea.feederRegister, ["NCH-01", "NCH-02", "NCH-03"]);
+  assert.deepEqual(newChelsea.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "12.5 kV", "6.9 kV"]);
+  assert.deepEqual(newChelsea.diagram.transformers.map(({ label, rating }) => [label, rating]), [
+    ["NCH-T1", "6.67 MVA"],
+    ["NCH-T2", "5.33 MVA"]
+  ]);
+  const plantFacts = newChelsea.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = newChelsea.planningRecord.facts.flat().join(" ");
+  const historyFacts = newChelsea.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /3\.70 MW maximum output under 83\.8 m net head/);
+  assert.match(plantFacts, /83% at 3\.3 MW; 82% at 3\.7 MW/);
+  assert.match(planningFacts, /NCH-T1.*66\/12\.5 kV.*6\.67 MVA.*4\.17 MVA 2026 forecast/);
+  assert.match(planningFacts, /NCH-T2.*66\/6\.9 kV.*5\.33 MVA/);
+  assert.match(historyFacts, /steel penstock/);
+  assert.match(historyFacts, /high-efficiency stainless-steel runner/);
+  assert.match(historyFacts, /stator, rotor and exciter being overhauled in Ontario/);
+  assert.match(historyFacts, /43L.*8\.45 MVA.*10% loading/);
+  assert.match(historyFacts, /65L.*9\.83 MVA.*18% loading/);
+  assert.match(historyFacts, /NCH-T1, asset 200252/);
+  assert.match(historyFacts, /NCH-T2, asset 200253/);
+  assert.match(historyFacts, /3,583 to 4,144 kW/);
+  assert.match(historyFacts, /4,144 kW at the 1030 Island Time interval/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");
