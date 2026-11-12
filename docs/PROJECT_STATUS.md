@@ -54,11 +54,14 @@ Updated: 2026-11-11
 - Added the historical Corner Brook 50 Hz to 60 Hz rotating converter arrangement, including the 25 MVA motor-generator set, both 21/28 MVA transformers, the starting system, the Deer Lake and Massey Drive interfaces, the 2017 upgrade record, and the 2018 sale and abandonment approval.
 - Kept post-sale operation open because the 2018 order approves the transaction but does not provide a later as-built or operating one-line.
 - Closed the island transformer ledger for the published evidence located to date. Unsupported rural nameplates, current rural breaker drawings, and later Grand Falls and Bishop's Falls equipment drawings remain deferred rather than inferred.
+- Deferred the remaining Avalon feeder-to-bus assignments because the archive does not contain the required operating or protection one-lines.
+- Deferred a current complete Holyrood station drawing after a targeted 2020 to 2026 search returned planning loop diagrams and transformer tables, but no complete as-built station one-line.
 
 ## Active work
 
-1. Resolve remaining Avalon feeder-to-transformer and bus-section assignments, `AVL-002`.
-2. Find the latest supported Holyrood station arrangement, `GEN-001`.
+1. Add the final Avalon combustion-turbine connection when supported by the filed project record, `GEN-003`.
+2. Complete the historical VHF and microwave engineering record, `TEL-001`.
+3. Locate missing feeder-map sheets while processing those filings, `AVL-003`.
 
 ## Island backbone progress
 

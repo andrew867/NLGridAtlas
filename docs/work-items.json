@@ -126,7 +126,7 @@
       "title": "Resolve feeder-to-transformer and bus-section assignments",
       "phase": 1,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "deferred",
       "scope": "Find protection, operating, or one-line drawings that assign feeders to transformer banks and bus sections for detailed Avalon stations.",
       "dependencies": ["AVL-001"],
       "completion_evidence": [
@@ -134,7 +134,7 @@
         "research/NP_STATION_GAP_LEDGER.md"
       ],
       "blocker": null,
-      "notes": "CA-NP-255 establishes selected feeder-to-transformer assignments at HWD, OXP, KEN, GOU, KBR, RRD, SJM, SLA, PEP, and VIR. The 2013 Oxen Pond one-line assigns 70L, 32L, and 34L to B3; 67L, 58L, 35L, and 31L to B4; and identifies breaker B2B5 between the transformer-bus sections. The 2016 Virginia Waters station record establishes four 66 kV circuits, three 25 MVA transformers, one 12.5 kV bus structure, eight distribution feeders, eight side-break switches, one bus-tie switch, and three transformer air-break switches, but not their exact one-line positions. The 2019 Pepperell supplemental filing establishes feeder tie points and customer counts for KBR, PEP, and VIR. PUB-NP-064 Attachment G identifies Glendale T1/T2 and T2/T3 tie breakers. PUB-NP-276 and the 2019 and 2023 capital records preserve Stamp's Lane feeder voltages and SLA-05 work history. The remaining feeders and bus sections still require one-lines or protection drawings."
+      "notes": "CA-NP-255 establishes selected feeder-to-transformer assignments at HWD, OXP, KEN, GOU, KBR, RRD, SJM, SLA, PEP, and VIR. The 2013 Oxen Pond one-line assigns 70L, 32L, and 34L to B3; 67L, 58L, 35L, and 31L to B4; and identifies breaker B2B5 between the transformer-bus sections. The 2016 Virginia Waters station record establishes four 66 kV circuits, three 25 MVA transformers, one 12.5 kV bus structure, eight distribution feeders, eight side-break switches, one bus-tie switch, and three transformer air-break switches, but not their exact one-line positions. The 2019 Pepperell supplemental filing establishes feeder tie points and customer counts for KBR, PEP, and VIR. PUB-NP-064 Attachment G identifies Glendale T1/T2 and T2/T3 tie breakers. PUB-NP-276 and the 2019 and 2023 capital records preserve Stamp's Lane feeder voltages and SLA-05 work history. The remaining assignments are deferred until public operating or protection one-lines are located; the atlas does not infer them."
     },
     {
       "id": "AVL-003",
@@ -350,12 +350,12 @@
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "deferred",
       "scope": "Search for drawings later than the December 2012 demolition drawing and publish a separately dated arrangement.",
       "dependencies": ["ARC-001", "ARC-002"],
       "completion_evidence": ["src/data.js", "research/ISLAND_TRANSFORMER_LEDGER.md"],
       "blocker": null,
-      "notes": "The current site diagram remains explicitly dated as December 2012. A 2016 capital appendix contains Holyrood sheet B, revision 17, dated 2014-12-18, but not the full station drawing set. Later records establish the 2014 T8 replacement and the 2024 completion of the T7 replacement. A current full station one-line has not been located."
+      "notes": "The current site diagram remains explicitly dated as December 2012. A 2016 capital appendix contains Holyrood sheet B, revision 17, dated 2014-12-18, but not the full station drawing set. Later records establish the 2014 T8 replacement and the 2024 completion of the T7 replacement. A targeted search of the 2020 to 2026 archive found planning loop diagrams and transformer tables, but no current complete station one-line. The current arrangement remains deferred rather than reconstructed."
     },
     {
       "id": "GEN-002",
