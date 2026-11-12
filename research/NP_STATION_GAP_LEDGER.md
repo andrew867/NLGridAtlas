@@ -330,6 +330,16 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2027 register records PBD-T1 at 138/25 kV, 16.67 MVA, with a 3.17 MVA 2026 forecast, physical PDF p. 549.
 - [ ] A completion record for the 2021 PBD-01 work has not been located. The atlas keeps the route and conversion as filed work.
 
+## Terra Nova station record
+
+- [x] The current transmission register identifies Terra Nova as a tap on 124L between Clarenville and Glovertown, CA-NP-168 physical PDF p. 4.
+- [x] The 2027 transformer register records TNS-T1 at 138/14.4 kV, 1.00 MVA, with a 0.91 MVA 2026 forecast, physical PDF p. 550.
+- [x] The 2014 feeder listing records TNS-01 at 25 kV, with 224 A ampacity, a 168 A winter planning value, 10 MVA capacity, 7.3 MVA winter planning capacity, and a 0.6 MVA forecast, physical PDF p. 15.
+- [x] The 2010 asset history records wood 138 kV and 14.4 kV structures installed in 1973, 1 MVA of transformer capacity, 138 kV bus additions in 2001, and 2006 replacement of lightning arresters and the gas-detector relay, physical PDF pp. 198 and 208.
+- [x] The 2022 filing records the 2021 rebuild of 30.0 km of 124L between Port Blandford and Terra Nova, followed by the remaining work toward Gambo and the new section into Glovertown, physical PDF p. 343.
+- [x] PUB-NP-034 records completion of the Transmission Line 124L rebuild in 2022, physical PDF p. 1.
+- [ ] No current breaker-level Terra Nova one-line was located. The atlas uses the current circuit register, dated station records, and transformer table without adding breaker positions.
+
 ## Gambo station record
 
 - [x] The 2024 filing identifies 121L from Glovertown and 146L from Gander as the 138 kV supplies, physical PDF p. 349.

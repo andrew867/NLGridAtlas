@@ -194,8 +194,8 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Milton", "Port Blandford", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PBD-T1", "PIT-T1", "301L", "substation rebuild", "asset history"],
-    pages: "physical PDF pp. 166, 196 to 197, 201, 203 to 204, 206 to 207 and 277",
+    topics: ["Abrahams Cove", "Garnish", "Milton", "Port Blandford", "Terra Nova", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PBD-T1", "TNS-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
+    pages: "physical PDF pp. 166, 196 to 198, 201, 203 to 204, 206 to 208 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
@@ -248,6 +248,16 @@ export const sources = [
     pages: "physical PDF pp. 126 and 242 to 243",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
+    id: "np-2022-124l",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Transmission Line 124L Rebuild",
+    topics: ["124L", "Clarenville", "Port Blandford", "Terra Nova", "Gambo", "Glovertown", "138 kV", "transmission line rebuild"],
+    pages: "physical PDF pp. 343 to 347",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
   },
   {
     id: "np-2025-pub-np-034",
@@ -1514,8 +1524,8 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "PUB-NP-276, Distribution Feeder Listing",
-    topics: ["Stamp's Lane", "SLA-05", "feeder voltage", "feeder capacity"],
-    pages: "physical PDF p. 6; attachment p. 4",
+    topics: ["Stamp's Lane", "SLA-05", "Terra Nova", "TNS-01", "feeder voltage", "feeder capacity"],
+    pages: "physical PDF pp. 6 and 15; attachment pp. 4 and 13",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-276.pdf"
   },
@@ -10521,6 +10531,82 @@ export const stationProfiles = [
         alt: "Filed PBD-01 map showing the 700 metre new three-phase line and 2.3 kilometre single-phase to three-phase conversion",
         sourceId: "np-2021-pbd01",
         pages: "physical PDF p. 192"
+      }
+    ]
+  },
+  {
+    code: "TNS",
+    name: "Terra Nova",
+    voltage: "138/14.4 kV; 25 kV feeder",
+    circuitRegisterLabel: "2025 EXISTING CONNECTION",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "124L tap", from: "Clarenville-Glovertown 124L", from_code: null, to: "Terra Nova", to_code: "TNS" }
+    ],
+    feederRegisterLabel: "2014 FEEDER RECORD",
+    feederRegister: ["TNS-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 supply / 2027 transformer register",
+      buses: [{ id: "b1", label: "138 kV tap", voltage: "138 kV" }, { id: "b2", label: "25 kV feeder bus", voltage: "25 kV" }],
+      transformers: [{ label: "TNS-T1", rating: "1.0 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "124L TAP", destination: "Clarenville-Glovertown corridor", bus: "b1", link: false }]
+    },
+    engineeringRecord: {
+      date: "2014 FEEDER RECORD",
+      title: "Terra Nova distribution substation and radial feeder",
+      sourceId: "np-2014-pub-np-276",
+      pages: "physical PDF p. 15; attachment p. 13",
+      facts: [
+        ["Distribution", "TNS-01 at 25 kV"],
+        ["Feeder ampacity", "224 A; 168 A winter planning value"],
+        ["Feeder capacity", "10 MVA; 7.3 MVA winter planning value"],
+        ["Filed winter forecast", "0.6 MVA; 8.3% of planning capacity"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [
+        ["TNS-T1 current fleet-table record", "138/14.4 kV; 1.00 MVA; 0.91 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1973 STATION ASSET RECORD",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 198",
+        facts: [
+          ["Station structures", "wood 138 kV and 14.4 kV structures installed in 1973; 1 MVA transformer capacity"],
+          ["138 kV bus", "additions recorded in 2001"]
+        ]
+      },
+      {
+        label: "2006 STATION WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 208",
+        facts: [
+          ["Completed work", "replace lightning arresters and the gas-detector relay"]
+        ]
+      },
+      {
+        label: "2021 TO 2022 124L REBUILD",
+        sourceId: "np-2022-124l",
+        pages: "physical PDF p. 343",
+        facts: [
+          ["2021 stage", "rebuild 30.0 km of 124L between Port Blandford and Terra Nova"],
+          ["2022 stage", "address the remaining 26.7 km toward Gambo; rebuild 23.6 km, dismantle 3.1 km, and construct 5.4 km into Glovertown"]
+        ]
+      },
+      {
+        label: "2022 124L COMPLETION RECORD",
+        sourceId: "np-2025-pub-np-034",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Project status", "the Transmission Line 124L rebuild was completed in 2022"]
+        ]
       }
     ]
   },

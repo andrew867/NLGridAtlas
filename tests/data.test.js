@@ -1272,6 +1272,26 @@ test("Gambo retains both voltage transformations and the completed 2024 moderniz
   assert.match(historyFacts, /commissioning complete in the fourth quarter of 2024/);
 });
 
+test("Terra Nova retains its 124L tap, voltage distinction, and completed line rebuild", () => {
+  const terraNova = stationProfiles.find((station) => station.code === "TNS");
+  assert.ok(terraNova);
+  assert.deepEqual(terraNova.connectedCircuits.map(({ circuit, from_code, to_code }) => [circuit, from_code, to_code]), [
+    ["124L tap", null, "TNS"]
+  ]);
+  assert.deepEqual(terraNova.feederRegister, ["TNS-01"]);
+  assert.deepEqual(terraNova.diagram.buses.map(({ voltage }) => voltage), ["138 kV", "25 kV"]);
+  assert.deepEqual(terraNova.diagram.transformers.map(({ label, rating }) => [label, rating]), [["TNS-T1", "1.0 MVA"]]);
+  const feederFacts = terraNova.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = terraNova.planningRecord.facts.flat().join(" ");
+  const historyFacts = terraNova.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(feederFacts, /TNS-01 at 25 kV/);
+  assert.match(feederFacts, /0\.6 MVA; 8\.3% of planning capacity/);
+  assert.match(planningFacts, /138\/14\.4 kV; 1\.00 MVA; 0\.91 MVA 2026 forecast/);
+  assert.match(historyFacts, /wood 138 kV and 14\.4 kV structures installed in 1973/);
+  assert.match(historyFacts, /Transmission Line 124L rebuild was completed in 2022/);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "TNS-T1").forecast_2026_mva, 0.91);
+});
+
 test("Old Perlican retains the radial supply and both published transformer ratings", () => {
   const oldPerlican = stationProfiles.find((station) => station.code === "OPL");
   assert.ok(oldPerlican);

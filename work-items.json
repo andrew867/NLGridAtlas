@@ -96,12 +96,17 @@
       "title": "Preserve the original TOD Access database",
       "phase": 0,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Acquire and hash the original ACCDB file, retain the exported table, and document row and recorder reconciliation.",
       "dependencies": ["ARC-001"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "research/TOD_ACCESS_RECONCILIATION.md",
+        "research/derived/np-2018-tod-access-reconciliation.json",
+        "scripts/reconcile_tod_access.ps1",
+        "tests/tod-export-audit.test.js"
+      ],
       "blocker": null,
-      "notes": "The ACCDB and export hashes are recorded. A complete 4,175,709-row export audit passed. Direct Access table reconciliation will run after the PUB audit releases the database file."
+      "notes": "The preserved ACCDB was opened read-only through the 64-bit Access ODBC driver. Its single user table matches the export's 4,175,709 total rows, 4,175,472 measurements, 237 separator rows, 238 recorder IDs, 17,544 measurements per recorder, primary-key range, date range, and 304,371 zero-value rows. The maximum Access DOUBLE is 30966.601; the export stores 30966.60, so the third decimal place is not preserved. A full value-by-value comparison was not performed."
     },
     {
       "id": "AVL-001",
@@ -126,7 +131,7 @@
       "title": "Resolve feeder-to-transformer and bus-section assignments",
       "phase": 1,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "deferred",
       "scope": "Find protection, operating, or one-line drawings that assign feeders to transformer banks and bus sections for detailed Avalon stations.",
       "dependencies": ["AVL-001"],
       "completion_evidence": [
@@ -134,14 +139,14 @@
         "research/NP_STATION_GAP_LEDGER.md"
       ],
       "blocker": null,
-      "notes": "CA-NP-255 establishes selected feeder-to-transformer assignments at HWD, OXP, KEN, GOU, KBR, RRD, SJM, SLA, PEP, and VIR. The 2013 Oxen Pond one-line assigns 70L, 32L, and 34L to B3; 67L, 58L, 35L, and 31L to B4; and identifies breaker B2B5 between the transformer-bus sections. The 2016 Virginia Waters station record establishes four 66 kV circuits, three 25 MVA transformers, one 12.5 kV bus structure, eight distribution feeders, eight side-break switches, one bus-tie switch, and three transformer air-break switches, but not their exact one-line positions. The 2019 Pepperell supplemental filing establishes feeder tie points and customer counts for KBR, PEP, and VIR. PUB-NP-064 Attachment G identifies Glendale T1/T2 and T2/T3 tie breakers. PUB-NP-276 and the 2019 and 2023 capital records preserve Stamp's Lane feeder voltages and SLA-05 work history. The remaining feeders and bus sections still require one-lines or protection drawings."
+      "notes": "CA-NP-255 establishes selected feeder-to-transformer assignments at HWD, OXP, KEN, GOU, KBR, RRD, SJM, SLA, PEP, and VIR. The 2013 Oxen Pond one-line assigns 70L, 32L, and 34L to B3; 67L, 58L, 35L, and 31L to B4; and identifies breaker B2B5 between the transformer-bus sections. The 2016 Virginia Waters station record establishes four 66 kV circuits, three 25 MVA transformers, one 12.5 kV bus structure, eight distribution feeders, eight side-break switches, one bus-tie switch, and three transformer air-break switches, but not their exact one-line positions. The 2019 Pepperell supplemental filing establishes feeder tie points and customer counts for KBR, PEP, and VIR. PUB-NP-064 Attachment G identifies Glendale T1/T2 and T2/T3 tie breakers. PUB-NP-276 and the 2019 and 2023 capital records preserve Stamp's Lane feeder voltages and SLA-05 work history. The remaining assignments are deferred until public operating or protection one-lines are located; the atlas does not infer them."
     },
     {
       "id": "AVL-003",
       "title": "Locate missing feeder-map sheets",
       "phase": 1,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Locate feeder maps beyond the preserved Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, Stamp's Lane, King's Bridge, Pepperell, and Virginia Waters records.",
       "dependencies": ["ARC-001", "ARC-003"],
       "completion_evidence": [
@@ -153,11 +158,18 @@
         "public/reference-maps/vir-06.png",
         "public/reference-maps/gou-01.png",
         "public/reference-maps/gou-03.png",
+        "public/feeder-maps/kbr-02.jpg",
+        "public/feeder-maps/pep-01.jpg",
+        "public/feeder-maps/pul-01.jpg",
+        "public/feeder-maps/rrd-02.jpg",
+        "public/feeder-maps/vir-01.jpg",
         "src/data.js",
-        "research/NP_STATION_GAP_LEDGER.md"
+        "research/NP_STATION_GAP_LEDGER.md",
+        "research/AVALON_FEEDER_MAP_AUDIT.md",
+        "tests/data.test.js"
       ],
       "blocker": null,
-      "notes": "The 2014 Electrical System Improvements filing provides route and proposed-recloser drawings for HWD-08, KEN-01 to KEN-04, VIR-06, GOU-01, and GOU-03 on physical PDF pp. 36 to 44. They are preserved in the atlas. CA-NP-020 still has no HWD-08 feeder sheet. Service-area maps for King's Bridge, Pepperell, and Virginia Waters are also preserved. Broader feeder-sheet coverage remains open."
+      "notes": "All 150 feeder sheets in CA-NP-020 Attachment B, physical PDF pp. 20 to 169, are extracted and connected to station records. The recovered first 38 sheets add Abrahams Cove through Garnish, including Bishop's Falls, Botwood, Bay Roberts, Chamberlains, Clarenville, Gambo, and Gander. The 2014 Electrical System Improvements filing separately supplies route and proposed-recloser drawings for HWD-08, KEN-01 to KEN-04, VIR-06, GOU-01, and GOU-03 on physical PDF pp. 36 to 44. CA-NP-020 does not contain feeder sheets for later additions including HWD-08, HWD-09, PEP-05, PUL-05, and VIR-07."
     },
     {
       "id": "AVL-004",
@@ -247,7 +259,7 @@
         "tests/data.test.js"
       ],
       "blocker": null,
-      "notes": "TL203 and TL237 open the Sunnyside and Come By Chance terminal records. The 66 kV station links open the detailed diagram where one exists, otherwise they open the station record. Map-point selection remains in place and does not scroll the page. TL208 still identifies Long Harbour on the terminal schematic because no destination record exists yet."
+      "notes": "TL203 and TL237 open the Sunnyside and Come By Chance terminal records. TL208 opens the Voisey's Bay Nickel terminal record; the 2013 GRA establishes that Long Harbour was removed from service and TL208 was extended in 2012. The 66 kV station links open the detailed diagram where one exists, otherwise they open the station record. Map-point selection remains in place and does not scroll the page."
     },
     {
       "id": "QA-001",
@@ -331,31 +343,31 @@
       "dependencies": ["ISL-001", "ISL-003"],
       "completion_evidence": ["src/data.js", "src/island-backbone.js", "research/ISLAND_TERMINAL_RECORDS.md", "tests/terminal-diagram.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "Individual records cover Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, English Harbour West, Boyd's Cove, Gander, Gander Bay, Summerford, Jonathan's Pond, Roycefield Tap, Notre Dame Junction, and Glenwood. Glenwood is represented as the joint Hydro and Newfoundland Power 138/25 kV station on TL210. The studied 147L tap is not drawn as installed. Lower-voltage records without published equipment evidence remain deferred."
+      "notes": "Individual records cover the documented western, central, Northern Peninsula, Bonavista Peninsula, Burin Peninsula, southwest-coast, Southern Shore, and Avalon fringe stations located to date. The current pass added dated Abrahams Cove, Botwood, Carbonear, Gallant Street, Garnish, Heart's Content, Deer Lake, Bay Roberts, Bayview, Big Pond, Bishop's Falls, Cobb's Pond, Gander, Jonathan's Pond, Roycefield Tap, Notre Dame Junction, Glenwood, Cape Broyle, Fermeuse, Broad Cove, and Chamberlains records. Botwood includes the 2005 BOT-01 engineering study, its filed route sheet, and the separately documented 2008 completion of work on feeder sections. Grand Falls distinguishes the NGF 138/66/25 kV yard from the separate GFS 66/4.16 kV yard, records the 2011 to 2016 NGF work, and now has a logical one-line through the current 4.2 kV bank. Deer Lake separates the completed 2010 transformer replacement, the 2018 and 2027 low-voltage records, and the approved 2026 to 2027 DLK-03 work. Bay Roberts separates its filed station arrangement, 2014 modernization and BRB-T4 proposals, the reported 2014/15 transformer arrangement, and the 2020 BRB-05 proposal. Bayview now includes the completed 2004 BVS-T2 relocation, five feeders, current transformer and circuit records, proposed modernization, and the filed BVS-04 and BVS-05 route drawings. Big Pond now includes its 17L and 24L connections, current customer and water-supply record, filed cooling addition, reported load, and proposed 24L rebuild. Abrahams Cove now has both 410L sections, the current customer and contingency record, and the Lower Cove customer-funding boundary. Garnish now records the proposed replacement and the completed 2009 relocation from a 1.6 km tap to a direct 301L connection without a high-voltage bus. Bishop's Falls now has its 1978 steel 138/25 kV structures, current 132L, 133L, 134L, and 136L endpoints, March 2014 equipment register, Grand Falls tie alternative, and the 2036 P90 136L contingency result. Cobb's Pond now has the current TL210, 142L, 144L, and 147L connections, a three-bus diagram, dated structure history, 2012 COB-T3 addition, 2014 equipment register, and 2025 COB-T3 failure and repair. Gander now separates the existing 16/21.3/26.67 MVA GAN-T2 from its approved 41.6 MVA replacement, records the 2010 measured load and 2014 breaker inventory, and dates the approved 2027 transfer of the 66 kV supply function to Boyd's Cove. Notre Dame Junction is retained as a historical 66 kV switching record because the located order approved conditional removal but did not certify completion. Cape Broyle and Fermeuse now have sourced logical one-lines, transformer and feeder records, completed 2008 project records, 2014 equipment registers, and the wind-interconnection ownership boundary. Chamberlains now records the 2003 second-bank proposal, the filed 2017 T1 and CHA-04 work, current transformer values, and the 2027 CHA-04 route and upgrade. Broad Cove keeps the 2021 66/12.5 kV station arrangement separate from the 2027 66/25 kV fleet entry, and does not draw the proposed BCV-T2 as installed. Further station-specific additions remain in progress. Current breaker drawings and unsupported equipment details remain open where no filing has been located."
     },
     {
       "id": "ISL-006",
       "title": "Complete island transformer nameplate and age records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Record transformer designations, winding voltages, cooling ratings, impedances, manufacturers, manufacture dates, in-service dates, and replacements where published.",
       "dependencies": ["ISL-003", "ISL-005"],
       "completion_evidence": ["research/ISLAND_TRANSFORMER_LEDGER.md", "src/data.js", "tests/data.test.js"],
       "blocker": null,
-      "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, Buchans, Bay d'Espoir, and Come By Chance transformer records. Holyrood T7 and T8 replacement histories extend through the 2024 T7 commissioning completion. Bay d'Espoir has separate 1998 station 1 and 2013 station 2 equipment records. The Come By Chance record includes the 2014 ratings, manufacture dates, bus arrangement, and the later Braya-specific cost assignment. Nameplate, filed equipment, study-model, and emergency ratings remain separate."
+      "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, Buchans, Bay d'Espoir, and Come By Chance transformer records. Holyrood T7 and T8 replacement histories extend through the 2024 T7 commissioning completion. Bay d'Espoir has separate 1998 station 1 and 2013 station 2 equipment records. The Come By Chance record includes the 2014 ratings, manufacture dates, bus arrangement, and the later Braya-specific cost assignment. Nameplate, filed equipment, study-model, and emergency ratings remain separate. Unsupported rural nameplates and current rural one-lines remain deferred under ISL-005."
     },
     {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,
       "priority": "P0",
-      "status": "in_progress",
+      "status": "deferred",
       "scope": "Search for drawings later than the December 2012 demolition drawing and publish a separately dated arrangement.",
       "dependencies": ["ARC-001", "ARC-002"],
-      "completion_evidence": ["src/data.js", "research/ISLAND_TRANSFORMER_LEDGER.md"],
+      "completion_evidence": ["src/data.js", "research/ISLAND_TRANSFORMER_LEDGER.md", "research/HOLYROOD_MUSKRAT_RECORD.md"],
       "blocker": null,
-      "notes": "The current site diagram remains explicitly dated as December 2012. A 2016 capital appendix contains Holyrood sheet B, revision 17, dated 2014-12-18, but not the full station drawing set. Later records establish the 2014 T8 replacement and the 2024 completion of the T7 replacement. A current full station one-line has not been located."
+      "notes": "The 2026-11-12 archive pass searched Muskrat Falls, Labrador-Island Link, condition, reliability, capital, operating, annual, and financial filings. The current site diagram remains explicitly dated as December 2012. The 2022 condition study establishes the later generator, excitation, unit-service, and station-service transformer inventory. Its document register names 1403-500-E001 PLANT SINGLE LINE DIAGRAM and 1403-500-E004 PLANT MCC SINGLE LINE DIAGRAM, but does not reproduce them. The March 2025 Capital Plan Refresh adds Unit 3 condition-monitoring and synchronous-condenser auxiliary-system findings plus the six CAT 3516B black-start sets. The July 2026 operating report confirms continuing Unit 3 synchronous-condenser operation. A 2020 RFI confirms that Hydro dropped Units 1 and 2 from that role. The 2017 plant-service filing and 2019 completion report establish the SST34 cable replacement and the change from a proposed Hydro auxiliary substation to a Newfoundland Power supply connection. The final auxiliary transformer and switchgear arrangement was not published. Further work is deferred until drawing 1403-500-E001, 1403-500-E004, or another later complete one-line is publicly filed."
     },
     {
       "id": "GEN-002",
@@ -374,12 +386,12 @@
       "title": "Add the Avalon combustion turbine final connection",
       "phase": 3,
       "priority": "P1",
-      "status": "not_started",
+      "status": "deferred",
       "scope": "Find issued-for-construction or as-built one-lines for the new terminal, GSU transformers, TL218 tie-in, synchronous-condenser equipment, and rerouted Newfoundland Power lines.",
       "dependencies": ["ARC-002"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "The site currently shows application-stage information."
+      "notes": "The site currently shows application-stage information. Hydro's 2025-12-12 additional early-execution application states that the 2025 Build Application remained under review. It records continuing CT and GSU procurement, design work, TL218 modifications, and Newfoundland Power line relocations, but it does not provide an issued-for-construction or as-built station one-line. Final connection work is deferred until a later filed design or commissioning record exists."
     },
     {
       "id": "HVDC-001",
@@ -398,84 +410,96 @@
       "title": "Document the Labrador-Island Link and Maritime Link",
       "phase": 3,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Add dated system diagrams, ratings, terminals, electrodes, interfaces, and documented operating changes for both HVDC links.",
       "dependencies": ["HVDC-001"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/HVDC_LINKS_RECORD.md", "index.html", "src/data.js", "src/styles.css", "tests/data.test.js", "tests/claim-ledger.test.js"],
       "blocker": null,
-      "notes": "Do not mix planned and commissioned configurations."
+      "notes": "The system diagrams separate commissioned operation from earlier filed design material. Current as-built breaker arrangements and converter-transformer nameplate ratings remain open evidence targets rather than reconstructed data."
     },
     {
       "id": "CONV-001",
       "title": "Document the Corner Brook frequency converter and Deer Lake connection",
       "phase": 3,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Create a dedicated record and diagram for the frequency-conversion interface shown in the island system filings.",
       "dependencies": ["ISL-003"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/CORNER_BROOK_FREQUENCY_CONVERTER.md", "index.html", "src/data.js", "src/styles.css", "tests/data.test.js", "tests/claim-ledger.test.js"],
       "blocker": null,
-      "notes": "Identify equipment type and ratings only from source records."
+      "notes": "The record shows the 2005 filed operating arrangement, 2017 condition and upgrade evidence, and the 2018 sale and abandonment approval. Current post-sale operation remains an open evidence target."
     },
     {
       "id": "TEL-001",
       "title": "Complete the historical VHF and microwave engineering record",
       "phase": 4,
       "priority": "P2",
-      "status": "not_started",
+      "status": "done",
       "scope": "Index documented routes, sites, frequencies, radio models, antenna systems, ownership, and interconnection changes.",
       "dependencies": ["ARC-001", "ARC-002"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/TELECOMMUNICATIONS_SYSTEM_RECORD.md", "index.html", "src/data.js", "public/reference-maps/vhf-2001-existing-sites-265.png", "public/reference-maps/vhf-2001-potential-sites-266.png", "tests/data.test.js"],
       "blocker": null,
-      "notes": "The current page contains selected 2001, 2004, and 2025 records only."
+      "notes": "The record now separates the 2001 conventional system, the proposed 2004 trunked replacement, and the radio and vehicle-data project reported in 2026. It includes the filed site registers, Hydro-owned frequency rows, microwave interconnection changes, replacement economics, and unresolved equipment-detail limits."
     },
     {
       "id": "TEL-002",
       "title": "Reconstruct dated telecommunications network diagrams",
       "phase": 4,
       "priority": "P2",
-      "status": "not_started",
+      "status": "done",
       "scope": "Create separate diagrams for the conventional VHF system, proposed trunked replacement, and later P25 and satellite-data arrangement.",
       "dependencies": ["TEL-001"],
-      "completion_evidence": [],
+      "completion_evidence": ["index.html", "src/styles.css", "research/TELECOMMUNICATIONS_SYSTEM_RECORD.md", "tests/data.test.js"],
       "blocker": null,
-      "notes": "Do not infer the provenance of individual surplus amateur-radio repeaters."
+      "notes": "The three dated diagrams are separate. The 2004 diagram is labelled proposed, and the later diagram shows only the P25, Starlink, and Cradlepoint relationships stated by the filing. It does not infer P25 site topology or the provenance of surplus amateur-radio repeaters."
     },
     {
       "id": "LOAD-001",
       "title": "Expand measured load and planning comparisons",
       "phase": 4,
       "priority": "P2",
-      "status": "not_started",
+      "status": "done",
       "scope": "Add dated station, feeder, interruption, transformer, and forecast records where actual and planning values can be compared without mixing data classes.",
       "dependencies": ["DB-001", "ISL-006"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/LOAD_RECORD.md", "index.html", "src/data.js", "research/derived/np-2027-transformer-register.json", "tests/data.test.js"],
       "blocker": null,
-      "notes": "Every comparison must identify the measurement period and source."
+      "notes": "The load record now separates the 2013/2014 Newfoundland Power and Avalon actual winter peaks, the January 2020 Nostradamus import failure, 2024 measured and forecast summaries, and the highest 2026 transformer planning ratios. King's Bridge and Ridge Road values are correctly labelled as five-year forecasts. Unpublished rural measurements remain deferred."
     },
     {
       "id": "GEO-001",
       "title": "Build a sourced coordinate and route dataset",
       "phase": 4,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Extract defensible station coordinates and line routes from utility maps, drawings, GIS records, or other public primary sources.",
       "dependencies": ["ISL-001"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "scripts/build-geographic-data.mjs",
+        "research/derived/gnl-canvec-newfoundland-transmission-lines.geojson",
+        "research/derived/gnl-nalcor-l3501-route.geojson",
+        "research/derived/station-coordinate-register.json",
+        "research/GEOGRAPHIC_DATA_RECORD.md",
+        "tests/geographic-data.test.js"
+      ],
       "blocker": null,
-      "notes": "Current source maps are semi-geographic or low resolution."
+      "notes": "The dataset contains 588 historical GeoAtlas route features, the one island-intersecting GeoAtlas TL_ID 3501 feature, and 22 checked station-boundary centroids. The Avalon coordinate set includes five terminal stations and 17 Newfoundland Power substations with unambiguous published OpenStreetMap boundaries. The historical route layer has validation years from 1979 through 1991 and no utility circuit designations. GeoAtlas layer 15 has no voltage field and no separate L3502 geometry. Unsupported rural records and current AC circuit-to-route matching are deferred."
     },
     {
       "id": "GEO-002",
       "title": "Create the geographic island and Avalon map interface",
       "phase": 4,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Overlay the structured network on a defensible geographic base while preserving source-map access and voltage distinctions.",
       "dependencies": ["GEO-001", "ISL-002"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "index.html",
+        "src/geographic-map.js",
+        "src/styles.css",
+        "tests/geographic-map.test.js"
+      ],
       "blocker": null,
-      "notes": "Do not present a schematic point layout as measured geography."
+      "notes": "The interface renders the historical GeoAtlas routes, the published TL_ID 3501 route, and 22 checked station coordinates at island and Avalon scales. Every mapped Avalon station opens its terminal or substation record. Station selection updates the detail panel without moving the page. Unsupported rural station coverage and current AC circuit-to-route matching are deferred."
     },
     {
       "id": "REL-001",
@@ -498,12 +522,18 @@
       "title": "Define the public evidence-package strategy",
       "phase": 5,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Define which source PDFs are committed, which remain external, and how the multi-gigabyte mirrors can be restored without depending on the live PUB site.",
       "dependencies": ["ARC-001", "ARC-002", "ARC-003"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "docs/PUBLIC_EVIDENCE_PACKAGE.md",
+        "research/pinned-evidence-manifest.json",
+        "research/external-archive-manifest.json",
+        "scripts/build-evidence-manifest.mjs",
+        "scripts/verify-sources.mjs"
+      ],
       "blocker": null,
-      "notes": "Git is not suitable for the complete raw archive without a separate storage plan."
+      "notes": "The repository carries 66 pinned PDFs with a machine-checked digest manifest. The three large mirrors remain outside Git. Their local counts and control-file hashes are recorded, and the restore design uses immutable content-addressed objects plus path indexes. Publishing those external objects is tracked separately in REL-005."
     },
     {
       "id": "REL-003",
@@ -536,6 +566,18 @@
       ],
       "blocker": null,
       "notes": "A fresh public clone at af61cb5 passed 71 tests, the production build, hashes for 66 pinned PDFs, and a clean-worktree check. Rerun this gate for each release candidate."
+    },
+    {
+      "id": "REL-005",
+      "title": "Publish the external archive snapshot",
+      "phase": 5,
+      "priority": "P2",
+      "status": "deferred",
+      "scope": "Select public object storage, publish the content-addressed PUB, NL Hydro, and Newfoundland Power mirror objects and path indexes, then prove a clean restore without contacting the source sites.",
+      "dependencies": ["REL-002"],
+      "completion_evidence": [],
+      "blocker": null,
+      "notes": "Deferred by the user on 2026-11-12. Do not put the raw mirrors in the Git repository. When publication resumes, a restore passes only when all objects verify and the restored audit counts match research/external-archive-manifest.json."
     }
   ]
 }
