@@ -802,6 +802,21 @@ test("Lethbridge separates its former transformer from the current fleet-table r
   assert.match(historyFacts, /replace the 6\.7 MVA LET-T1 with a 16\.7 MVA, 66\/25 kV transformer/);
 });
 
+test("Catalina retains both transformation levels and the three filed transmission circuits", () => {
+  const catalina = stationProfiles.find((station) => station.code === "CAT");
+  assert.ok(catalina);
+  assert.deepEqual(catalina.connectedCircuits.map(({ circuit }) => circuit), ["111L", "117L", "123L"]);
+  assert.deepEqual(catalina.feederRegister, ["CAT-01", "CAT-02", "CAT-03"]);
+  assert.deepEqual(catalina.diagram.transformers.map(({ label, rating }) => [label, rating]), [["CAT-T1", "16.7 MVA"], ["CAT-T2", "20 MVA"]]);
+  const existingFacts = catalina.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = catalina.planningRecord.facts.flat().join(" ");
+  const historyFacts = catalina.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /CAT-T1 138\/66 kV; 16\.6 MVA; installed in 1972/);
+  assert.match(existingFacts, /CAT-T2 138\/12\.5 kV; 20 MVA; installed in 1977/);
+  assert.match(planningFacts, /CAT-T2 current fleet-table record 138\/12\.5 kV; 20 MVA; 5\.57 MVA 2026 forecast/);
+  assert.match(historyFacts, /install a 138 kV breaker on 123L and remove two high-speed ground switches/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

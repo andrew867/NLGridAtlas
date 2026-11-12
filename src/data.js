@@ -1260,6 +1260,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
   },
   {
+    id: "np-2017-catalina",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Catalina Substation Refurbishment and Modernization",
+    topics: ["Catalina", "CAT-T1", "CAT-T2", "CAT-01", "CAT-02", "CAT-03", "111L", "117L", "123L", "138 kV", "66 kV", "12.5 kV"],
+    pages: "physical PDF pp. 233 to 236",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
     id: "np-2025-ca-np-168",
     year: 2025,
     organization: "Newfoundland Power",
@@ -4470,6 +4480,64 @@ export const stationProfiles = [
           ["Rejected parallel-bank alternative", "add an 8.3 MVA transformer in parallel with the former LET-T1"],
           ["Rejected feeder-transfer alternative", "extend MIL-02 and transfer 2.0 MVA from LET-01"],
           ["Former transformer plan", "move the 6.7 MVA unit to Doyles Substation in 2016"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "CAT",
+    name: "Catalina",
+    voltage: "138/66/12.5 kV",
+    circuitRegisterLabel: "2025 EXISTING CONNECTIONS",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "111L", from: "Catalina", from_code: "CAT", to: "Lockston", to_code: "LOK" },
+      { circuit: "117L", from: "Catalina", from_code: "CAT", to: "Bonavista", to_code: "BVA" },
+      { circuit: "123L", from: "Clarenville", from_code: "CLV", to: "Catalina", to_code: "CAT" }
+    ],
+    feederRegisterLabel: "2016 STATION RECORD",
+    feederRegister: ["CAT-01", "CAT-02", "CAT-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2016 equipment / 2025 circuits / 2027 transformer register",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "CAT-T1", rating: "16.7 MVA", from: "b1", to: "b2" }, { label: "CAT-T2", rating: "20 MVA", from: "b1", to: "b3" }],
+      circuits: [{ label: "111L", destination: "Lockston", bus: "b2", destinationCode: "LOK" }, { label: "117L", destination: "Bonavista", bus: "b1", destinationCode: "BVA" }, { label: "123L", destination: "Clarenville", bus: "b1", destinationCode: "CLV" }]
+    },
+    engineeringRecord: {
+      date: "2016 EXISTING ARRANGEMENT",
+      title: "Catalina transmission and distribution substation",
+      sourceId: "np-2017-catalina",
+      pages: "physical PDF pp. 233 to 235",
+      facts: [
+        ["Station built", "1976 as a transmission and distribution substation"],
+        ["CAT-T1", "138/66 kV; 16.6 MVA; installed in 1972"],
+        ["CAT-T2", "138/12.5 kV; 20 MVA; installed in 1977"],
+        ["Transmission circuits", "117L to Bonavista, 123L to Princeton Pond, and 111L to Lockston in the 2016 station report"],
+        ["Distribution", "CAT-01, CAT-02, and CAT-03; approximately 1,053 customers"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 546 and 552",
+      facts: [
+        ["CAT-T1 current fleet-table record", "138/66 kV; 16.7 MVA"],
+        ["CAT-T2 current fleet-table record", "138/12.5 kV; 20 MVA; 5.57 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2017 FILED MODERNIZATION SCOPE",
+        sourceId: "np-2017-catalina",
+        pages: "physical PDF pp. 233 to 236",
+        facts: [
+          ["Retained equipment", "retain and refurbish CAT-T1 and CAT-T2; retain the steel structures, buses, and insulators"],
+          ["Switches and feeders", "replace aged switches and the three hydraulic feeder reclosers; add intelligent controllers and SCADA automation"],
+          ["Transmission protection", "install a 138 kV breaker on 123L and remove two high-speed ground switches"],
+          ["Transformer protection", "install a breaker between CAT-T2 and the 12.5 kV bus and replace electromechanical relays with digital relays"],
+          ["Site work", "refurbish foundations, add spill containment, extend the ground grid, and add varmint protection"]
         ]
       }
     ]

@@ -202,6 +202,15 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2027 fleet table lists LET-T1 at 16.67 MVA with an 8.9 MVA 2026 forecast, physical PDF p. 548.
 - [ ] The searched records do not give the replacement commissioning date. The atlas does not assign one.
 
+## Catalina station record
+
+- [x] The 2025 line register identifies 111L between Catalina and Lockston, 117L between Catalina and Bonavista, and 123L between Clarenville and Catalina, CA-NP-168 Attachment A, physical PDF p. 4.
+- [x] The 2017 filing records CAT-T1 at 16.6 MVA and 138/66 kV, CAT-T2 at 20 MVA and 138/12.5 kV, and three 12.5 kV feeders serving approximately 1,053 customers, physical PDF p. 233.
+- [x] CAT-T1 was installed in 1972 and CAT-T2 in 1977, physical PDF p. 234.
+- [x] The filed modernization retained and refurbished both transformers, replaced aged switches and feeder reclosers, added a 123L breaker, removed two high-speed ground switches, and installed digital protection and SCADA communications, physical PDF pp. 233 to 236.
+- [x] The 2027 fleet table lists CAT-T1 at 16.7 MVA and CAT-T2 at 20 MVA with a 5.57 MVA 2026 forecast, physical PDF pp. 546 and 552.
+- [ ] The searched records do not give a modernization completion date or a post-project breaker one-line. The atlas keeps the scope as filed work.
+
 ## Pulpit Rock feeder-bus and transformer records
 
 - [x] The 2025 application says PUL-T1 and the then-installed PUL-T2 supplied five 12.5 kV feeders, physical PDF pp. 458 and 463.
