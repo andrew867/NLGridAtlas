@@ -20,6 +20,22 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 
 The Deer Lake distribution record now separates four dated states. The 2010 project replaced the overloaded 16.7 MVA, 66/12.5 kV DLK-T1 with a 25 MVA unit and moved the former unit to Mobile. The Q4 2010 report records both replacements complete. The 2018 transformer listing records DLK-T1 at 66/12.47 kV, while the 2027 register records 66/25 kV. Order P.U. 38 (2025) approved the DLK-03 to Wiltondale load-transfer project; the 2027 application reports engineering in progress and construction planned for early 2027.
 
+## Springdale station record
+
+- [x] The 2014 filing identifies Springdale as a shared Newfoundland Power and Hydro station built in 1965. Hydro owns and maintains the 138 kV bus and breakers, physical PDF p. 234.
+- [x] TL222 connects Springdale to South Brook and TL223 connects Springdale to Indian River, physical PDF p. 234.
+- [x] SPR-T1 is recorded at 16.7 MVA, 138/25 kV. Four 25 kV feeders supplied approximately 1,552 customers in the 2014 filing, physical PDF p. 234.
+- [x] The filed 2014 work covers transformer bushings and auxiliary protection, tap-changer controls, SPR-T1-A, the low-voltage disconnect, four feeder bypass switches, transformer relays, four feeder reclosers, communications, grounding, and varmint protection, physical PDF pp. 234 and 236 to 238.
+- [x] The 2027 transformer register lists SPR-T1 at 16.67 MVA, 138/25 kV, with a 9.91 MVA 2026 forecast, physical PDF p. 550.
+
+## Bay L'Argent station record
+
+- [x] The 2026 Burin Peninsula study identifies Bay L'Argent as a joint Hydro and Newfoundland Power terminal station and substation, physical PDF p. 181.
+- [x] Existing TL212 runs from Sunnyside through Monkstown, Bay L'Argent, and Linton Lake. The station diagram uses the Monkstown to Bay L'Argent and Bay L'Argent to Linton Lake sections, physical PDF pp. 161 to 162, 201 and 223.
+- [x] The 2027 transformer register lists BLA-T1 at 6.67 MVA, 138/25 kV, with a 4.54 MVA 2026 forecast, physical PDF p. 546.
+- [x] BLA-01 is the sole feeder in the 2006 feeder register, PDF p. 11.
+- [x] The 2026 study recommendation to tap TL219 into Monkstown and Bay L'Argent is recorded as studied work, not as installed equipment, physical PDF pp. 170, 219 and 221.
+
 ## Avalon stations
 
 | State | Station or system | Data now in the atlas | Missing evidence | Next archive target |

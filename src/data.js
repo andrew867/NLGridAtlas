@@ -164,8 +164,8 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "Wesleyville and Greenhill Planning Study, Burin Peninsula 138/66 kV System",
-    topics: ["Burin Peninsula", "Salt Pond", "Greenhill", "Garnish", "Laurentian", "Grand Beach", "Webbers Cove", "66 kV loop"],
-    pages: "physical PDF p. 162",
+    topics: ["Burin Peninsula", "Sunnyside", "Monkstown", "Bay L'Argent", "Linton Lake", "Salt Pond", "Greenhill", "Garnish", "Laurentian", "Grand Beach", "Webbers Cove", "138 kV loop", "66 kV loop"],
+    pages: "physical PDF pp. 161 to 164, 181 to 182, 201, 221 and 223",
     status: "reported",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
@@ -868,6 +868,16 @@ export const sources = [
     pages: "PDF pp. 37, 42, 256 to 257, 309, 348, 351",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2014-springdale",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Springdale Substation",
+    topics: ["Springdale", "SPR-T1", "TL222", "TL223", "138 kV", "25 kV", "substation modernization"],
+    pages: "physical PDF pp. 234 and 236 to 238",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
   },
   {
     id: "np-2014-bay-roberts",
@@ -12629,6 +12639,122 @@ export const stationProfiles = [
         alt: "Aerial drawing of the filed 1.4 kilometre 36L route between Oxen Pond and the proposed Long Pond site near the Health Sciences Centre",
         sourceId: "np-2019-long-pond",
         pages: "physical PDF p. 31"
+      }
+    ]
+  },
+  {
+    code: "SPR",
+    name: "Springdale",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2014 FILED HYDRO INTERFACE",
+    circuitSource: { sourceId: "np-2014-springdale", pages: "physical PDF p. 234" },
+    connectedCircuits: [
+      { circuit: "TL222", from: "South Brook Terminal Station", from_code: "SBR", to: "Springdale", to_code: "SPR" },
+      { circuit: "TL223", from: "Springdale", from_code: "SPR", to: "Indian River Terminal Station", to_code: null }
+    ],
+    feederRegisterLabel: "2014 FILED FEEDER SET",
+    feederRegister: ["SPR-01", "SPR-02", "SPR-03", "SPR-04"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2014 filed arrangement",
+      buses: [
+        { id: "b1", label: "138 kV bus", voltage: "138 kV" },
+        { id: "b2", label: "25 kV bus", voltage: "25 kV" }
+      ],
+      transformers: [{ label: "SPR-T1", rating: "16.7 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "TL222", destination: "South Brook", bus: "b1", destinationCode: "SBR" },
+        { label: "TL223", destination: "Indian River", bus: "b1" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2014 FILED ARRANGEMENT",
+      title: "Springdale distribution station and Hydro interface",
+      sourceId: "np-2014-springdale",
+      pages: "physical PDF p. 234",
+      facts: [
+        ["Station", "built in 1965; shared with Newfoundland and Labrador Hydro"],
+        ["Hydro connections", "TL222 to South Brook and TL223 to Indian River; Hydro owns and maintains the 138 kV bus and breakers"],
+        ["SPR-T1", "138/25 kV; 16.7 MVA in the 2014 filing"],
+        ["Distribution", "SPR-01 to SPR-04; four 25 kV feeders serving approximately 1,552 customers"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [["SPR-T1", "138/25 kV; 16.67 MVA; 9.91 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "2014 FILED REFURBISHMENT AND MODERNIZATION",
+        sourceId: "np-2014-springdale",
+        pages: "physical PDF pp. 234 and 236 to 238",
+        facts: [
+          ["Transformer work", "replace PCB bushings, auxiliary protection, monitoring devices, and tap-changer controls"],
+          ["Switches", "replace SPR-T1-A, the low-voltage disconnect, and four feeder bypass switches"],
+          ["Protection", "replace original electromechanical transformer relays and four hydraulic feeder reclosers with digital protection and intelligent reclosers"],
+          ["Control", "add a communications gateway for SCADA monitoring and control"],
+          ["Site", "extend the Newfoundland Power ground grid and add low-voltage varmint protection"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "BLA",
+    name: "Bay L'Argent",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2026 FILED BURIN LOOP",
+    circuitSource: { sourceId: "np-2027-burin-study", pages: "physical PDF pp. 161 to 162, 201 and 223" },
+    connectedCircuits: [
+      { circuit: "TL212", from: "Monkstown", from_code: "MKS", to: "Bay L'Argent", to_code: "BLA" },
+      { circuit: "TL212", from: "Bay L'Argent", from_code: "BLA", to: "Linton Lake", to_code: "LLK" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["BLA-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2026 filed Burin loop arrangement",
+      buses: [
+        { id: "b1", label: "138 kV bus", voltage: "138 kV" },
+        { id: "b2", label: "25 kV bus", voltage: "25 kV" }
+      ],
+      transformers: [{ label: "BLA-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "TL212", destination: "Monkstown", bus: "b1", destinationCode: "MKS" },
+        { label: "TL212", destination: "Linton Lake", bus: "b1", destinationCode: "LLK" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2026 FILED LOOP RECORD",
+      title: "Bay L'Argent terminal and distribution station",
+      sourceId: "np-2027-burin-study",
+      pages: "physical PDF pp. 161 to 162, 181 and 201",
+      facts: [
+        ["Ownership", "joint Hydro and Newfoundland Power terminal station and substation"],
+        ["138 kV corridor", "TL212 from Sunnyside passes through Monkstown, Bay L'Argent, and Linton Lake"],
+        ["TL212 sections", "Monkstown to Bay L'Argent and Bay L'Argent to Linton Lake"],
+        ["Distribution", "BLA-T1 supplies BLA-01 at 25 kV"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [["BLA-T1", "138/25 kV; 6.67 MVA; 4.54 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "2026 STUDIED TL219 TIE-IN",
+        sourceId: "np-2027-burin-study",
+        pages: "physical PDF pp. 170, 219 and 221",
+        facts: [
+          ["Study recommendation", "tap TL219 into Monkstown and Bay L'Argent"],
+          ["Filed equipment", "two new 138 kV breakers at each station with associated TL219 tie-ins"],
+          ["Purpose", "split TL219 and support Burin Peninsula transmission voltage after retirement of the Greenhill combustion turbine"]
+        ]
       }
     ]
   }

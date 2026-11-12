@@ -135,6 +135,8 @@ Updated: 2026-11-12
 - Added Petty Harbour's 33/4.16/2.4 kV logical one-line, radial 3L supply from Goulds, PHR-T1 and PHR-T3, three-unit 5.3 MW plant, PHR-01, March 2014 equipment register, 2006 refurbishment, 2026 capacity-test values, and the deferred 2025 modernization study.
 - Added Tors Cove's completed 2022 66/6.9 kV replacement arrangement, radial 11L connection to Mobile, TCV-T1, three-generator one-line, March 2014 equipment register, 2026 capacity-test values, and the separately documented plant-modernization study.
 - Added Horse Chops' 66/6.9 kV station, 21L connection, 12 MVA HCP-T1, single 9 MVA generator, reported 2009 substation rebuild, filed generator rewind, March 2014 breaker record, 2026 capacity-test values, and the separately labeled 2026 controls project.
+- Added Springdale's TL222 and TL223 interface, 138/25 kV transformation, four feeders, 1965 station history, and filed 2014 modernization scope.
+- Added Bay L'Argent's two TL212 sections, 138/25 kV transformation, BLA-01, and the separately labelled TL219 tie-in study.
 
 ## Active work
 

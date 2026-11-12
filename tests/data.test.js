@@ -2674,6 +2674,32 @@ test("Hardwoods distribution feeders remain on their documented voltage buses", 
   assert.match(html, /data-component="hwd-np-hwd07"/);
 });
 
+test("Springdale keeps the filed Hydro interface and proposed 2014 work separate", () => {
+  const springdale = stationProfiles.find((station) => station.code === "SPR");
+  assert.ok(springdale);
+  assert.equal(springdale.voltage, "138/25 kV");
+  assert.deepEqual(springdale.connectedCircuits.map(({ circuit }) => circuit), ["TL222", "TL223"]);
+  assert.deepEqual(springdale.feederRegister, ["SPR-01", "SPR-02", "SPR-03", "SPR-04"]);
+  assert.deepEqual(springdale.diagram.transformers, [{ label: "SPR-T1", rating: "16.7 MVA", from: "b1", to: "b2" }]);
+  assert.match(springdale.engineeringRecord.facts.flat().join(" "), /Hydro owns and maintains the 138 kV bus and breakers/);
+  assert.match(springdale.historyRecords[0].facts.flat().join(" "), /replace original electromechanical transformer relays and four hydraulic feeder reclosers/);
+  assert.equal(sources.find((source) => source.id === "np-2014-springdale").status, "proposed");
+});
+
+test("Bay L'Argent keeps the existing TL212 corridor separate from the studied TL219 tie", () => {
+  const bayLArgent = stationProfiles.find((station) => station.code === "BLA");
+  assert.ok(bayLArgent);
+  assert.deepEqual(bayLArgent.connectedCircuits.map(({ circuit }) => circuit), ["TL212", "TL212"]);
+  assert.deepEqual(bayLArgent.connectedCircuits.map(({ from, to }) => `${from} to ${to}`), [
+    "Monkstown to Bay L'Argent",
+    "Bay L'Argent to Linton Lake"
+  ]);
+  assert.deepEqual(bayLArgent.diagram.transformers, [{ label: "BLA-T1", rating: "6.67 MVA", from: "b1", to: "b2" }]);
+  assert.match(bayLArgent.planningRecord.facts.flat().join(" "), /4.54 MVA 2026 forecast/);
+  assert.match(bayLArgent.historyRecords[0].facts.flat().join(" "), /tap TL219 into Monkstown and Bay L'Argent/);
+  assert.match(bayLArgent.historyRecords[0].label, /STUDIED/);
+});
+
 test("Greenhill code conflict is contextual and the latest code is preferred", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
