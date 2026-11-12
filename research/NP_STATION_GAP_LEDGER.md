@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Old Perlican, Islington, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Old Perlican, Islington, Northwest Brook, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -160,6 +160,16 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The Q4 2025 regulatory report says the refurbishment was complete. Final demolition to remove retired equipment remained in progress, physical PDF p. 9.
 - [x] The 2027 fleet table records ISL-T1 at 4 MVA, 66/12.5 kV with a 3.94 MVA 2026 forecast, physical PDF p. 548.
 - [ ] The completion report does not publish the post-project breaker one-line or the replacement transformer's manufacturer and manufacture date. The atlas uses a logical connection diagram and keeps the former unit explicitly dated.
+
+## Northwest Brook station record
+
+- [x] The 2025 filing identifies 109L between Sunnyside and Clarenville as the 138 kV supply through Northwest Brook, physical PDF pp. 402 to 403.
+- [x] NWB-T1 is an 11.2 MVA, 138/25 kV Westinghouse transformer manufactured in 1965, physical PDF p. 405.
+- [x] NWB-01 and NWB-02 served approximately 1,790 customers in the Northwest Brook to Ivany's Cove area. Both feeder reclosers were retained, physical PDF pp. 402 and 405.
+- [x] The filed project retained NWB-T1 and the voltage regulators. It added two 138 kV line breakers to divide 109L, replaced the transformer high-speed ground-switch protection with a breaker and digital relays, and replaced deteriorated switches, metering, and crossarms, physical PDF pp. 403 to 410.
+- [x] Newfoundland Power reported the station refurbishment complete in its Q4 2025 regulatory report, physical PDF p. 9.
+- [x] The 2027 fleet table records NWB-T1 at 11.2 MVA with a 5.85 MVA 2026 forecast, physical PDF p. 549.
+- [ ] The completion report does not publish an as-built breaker or bus one-line. The atlas retains the filed logical connections and does not reproduce the proposed breaker detail as an as-built drawing.
 
 ## Pulpit Rock feeder-bus and transformer records
 

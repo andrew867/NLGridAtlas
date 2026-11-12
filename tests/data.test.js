@@ -732,6 +732,22 @@ test("Islington separates the former transformer record from the completed moder
   assert.match(historyFacts, /refurbishment complete; final demolition to remove retired equipment remained in progress/);
 });
 
+test("Northwest Brook retains its 109L connection and completed 2025 modernization", () => {
+  const northwestBrook = stationProfiles.find((station) => station.code === "NWB");
+  assert.ok(northwestBrook);
+  assert.deepEqual(northwestBrook.connectedCircuits.map(({ circuit }) => circuit), ["109L"]);
+  assert.deepEqual(northwestBrook.feederRegister, ["NWB-01", "NWB-02"]);
+  assert.deepEqual(northwestBrook.diagram.circuits.map(({ label, destination }) => [label, destination]), [["109L", "Sunnyside"], ["109L", "Clarenville"]]);
+  const existingFacts = northwestBrook.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = northwestBrook.planningRecord.facts.flat().join(" ");
+  const historyFacts = northwestBrook.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /NWB-T1 138\/25 kV; 11\.2 MVA; Westinghouse; manufactured in 1965/);
+  assert.match(existingFacts, /NWB-01 and NWB-02 at 25 kV; approximately 1,790 customers/);
+  assert.match(planningFacts, /NWB-T1 138\/25 kV; 11\.2 MVA; 5\.85 MVA 2026 forecast/);
+  assert.match(historyFacts, /install two line breakers to divide 109L into sections/);
+  assert.match(historyFacts, /reported the Northwest Brook refurbishment complete/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

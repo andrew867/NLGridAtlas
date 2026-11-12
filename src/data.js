@@ -1150,6 +1150,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
   },
   {
+    id: "np-2025-northwest-brook",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, Northwest Brook Substation Refurbishment and Modernization",
+    topics: ["Northwest Brook", "NWB-T1", "NWB-01", "NWB-02", "109L", "138 kV", "25 kV", "substation modernization"],
+    pages: "physical PDF pp. 400 to 410",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
     id: "np-2026-capital",
     year: 2025,
     organization: "Newfoundland Power",
@@ -4090,6 +4100,70 @@ export const stationProfiles = [
         pages: "physical PDF p. 9",
         facts: [
           ["Project status", "Newfoundland Power reported the refurbishment complete; final demolition to remove retired equipment remained in progress"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "NWB",
+    name: "Northwest Brook",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2024 FILED SUPPLY",
+    circuitSource: { sourceId: "np-2025-northwest-brook", pages: "physical PDF pp. 402 to 403" },
+    connectedCircuits: [
+      { circuit: "109L", from: "Sunnyside", from_code: "SUN", to: "Clarenville", to_code: "CLV", via: "Northwest Brook" }
+    ],
+    feederRegisterLabel: "2024 STATION RECORD",
+    feederRegister: ["NWB-01", "NWB-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2024 filed logical connection / 2025 project completion",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "NWB-T1", rating: "11.2 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "109L", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "109L", destination: "Clarenville", bus: "b1", destinationCode: "CLV" }]
+    },
+    engineeringRecord: {
+      date: "2024 FILED EQUIPMENT / 2025 PROJECT COMPLETION",
+      title: "Northwest Brook transmission and distribution station",
+      sourceId: "np-2025-northwest-brook",
+      pages: "physical PDF pp. 402 to 405",
+      facts: [
+        ["Station built", "1992 as a transmission and distribution substation"],
+        ["Transmission supply", "109L between Sunnyside and Clarenville substations"],
+        ["NWB-T1", "138/25 kV; 11.2 MVA; Westinghouse; manufactured in 1965"],
+        ["Distribution", "NWB-01 and NWB-02 at 25 kV; approximately 1,790 customers in the Northwest Brook to Ivany's Cove area"],
+        ["Feeder reclosers", "both units were retained in service during the 2025 modernization"],
+        ["Voltage regulators", "Cooper Power Systems units manufactured in 2015 and retained in service"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["NWB-T1", "138/25 kV; 11.2 MVA; 5.85 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2025 FILED MODERNIZATION SCOPE",
+        sourceId: "np-2025-northwest-brook",
+        pages: "physical PDF pp. 403 to 410",
+        facts: [
+          ["138 kV equipment", "replace deteriorated switches and install two line breakers to divide 109L into sections"],
+          ["Transformer protection", "replace the high-speed ground switch with a 25 kV transformer breaker and digital relays; retain NWB-T1"],
+          ["25 kV equipment", "replace deteriorated switches, three wood crossarms, and the metering tank; retain the two feeder reclosers and voltage regulators"],
+          ["Protection and control", "replace electromechanical relays; install communications equipment, a control building, and a 125 VDC battery system"],
+          ["Site", "install transformer and regulator spill containment, extend the ground grid, and address drainage"]
+        ]
+      },
+      {
+        label: "Q4 2025 COMPLETION",
+        sourceId: "np-2025-q4-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["Project status", "Newfoundland Power reported the Northwest Brook refurbishment complete"]
         ]
       }
     ]
