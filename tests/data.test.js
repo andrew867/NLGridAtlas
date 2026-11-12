@@ -296,8 +296,8 @@ test("new station and corridor records retain primary source locators", () => {
     ["np-2023-long-pond", "PDF pp. 109 to 111"],
     ["nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20"],
     ["nlh-2026-wav-sop", "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146"],
-    ["np-2027-loop-study", "physical PDF pp. 183, 188 to 195 and 199"],
-    ["np-2027-transformers", "physical PDF pp. 545 to 551"]
+    ["np-2027-loop-study", "physical PDF pp. 183, 188 to 195, 199 to 200 and 223"],
+    ["np-2027-transformers", "physical PDF pp. 545 to 553 and 560"]
   ]);
   for (const [id, pages] of expected) {
     const source = sources.find((item) => item.id === id);
@@ -438,6 +438,16 @@ test("early CA-NP-020 feeder sheets have station records and current transformer
   assert.match(bishopsFallsHistory, /BFS-132L-B, BFS-133L-B, BFS-134L-B and BFS-136L-B; bulk-oil units/);
   assert.match(bishopsFallsHistory, /GFS-02 to BFS-02 tie was estimated at approximately \$900,000/);
   assert.match(bishopsFallsHistory, /voltages as low as 0\.86 pu.*approximately 20 MVAR at Gambo/);
+
+  const cobbsPond = stationProfiles.find((station) => station.code === "COB");
+  assert.deepEqual(cobbsPond.connectedCircuits.map(({ circuit }) => circuit), ["TL210", "142L", "144L", "147L"]);
+  assert.deepEqual(cobbsPond.diagram.buses.map(({ voltage }) => voltage), ["138 kV", "66 kV", "12.5 kV"]);
+  assert.deepEqual(cobbsPond.diagram.transformers.map(({ label }) => label), ["COB-T1", "COB-T2", "COB-T3"]);
+  assert.match(cobbsPond.engineeringRecord.facts.flat().join(" "), /steel; installed in 1980.*wood 66 kV structure installed in 1978.*bus modifications recorded in 2001/);
+  const cobbsPondHistory = cobbsPond.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(cobbsPondHistory, /19\.6 MVA on COB-T1.*add COB-T3, 25 MVA, 138\/12\.5 kV/);
+  assert.match(cobbsPondHistory, /two breakers, civil infrastructure, and a bus extension to complete the ring-bus configuration/);
+  assert.match(cobbsPondHistory, /in-service failure in 2025; repaired without a portable transformer/);
 });
 
 test("Deer Lake keeps the dated voltage records and approved DLK-03 work separate", () => {

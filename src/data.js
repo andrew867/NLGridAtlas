@@ -64,8 +64,8 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Transformer and Structure Listing",
-    topics: ["substation transformers", "installation year", "operating voltage", "Bishop's Falls", "BFS-T1", "Stephenville Crossing", "STX-T1"],
-    pages: "physical PDF pp. 199 and 201",
+    topics: ["substation transformers", "installation year", "operating voltage", "Cobb's Pond", "Bishop's Falls", "BFS-T1", "Stephenville Crossing", "STX-T1"],
+    pages: "physical PDF pp. 198 to 199 and 201",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
@@ -78,6 +78,16 @@ export const sources = [
     pages: "physical PDF p. 3",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/rfi/PUB-NP-13.pdf"
+  },
+  {
+    id: "np-2012-cobbs-pond",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, Cobb's Pond Transformer Addition",
+    topics: ["Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander", "138 kV", "66 kV", "12.5 kV", "ring bus", "load growth"],
+    pages: "physical PDF pp. 335 to 346, 348 and 354",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
   },
   {
     id: "np-2011-hardwoods",
@@ -804,8 +814,8 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "138 kV and 66 kV Loop Assessments, 2027 to 2036",
-    topics: ["Western Avalon", "Holyrood", "Bishop's Falls", "Rattling Brook", "136L", "transformer ratings", "contingencies"],
-    pages: "physical PDF pp. 183, 188 to 195 and 199",
+    topics: ["Western Avalon", "Holyrood", "Bishop's Falls", "Rattling Brook", "Cobb's Pond", "136L", "147L", "TL210", "transformer ratings", "contingencies"],
+    pages: "physical PDF pp. 183, 188 to 195, 199 to 200 and 223",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
@@ -904,8 +914,8 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "2027 Capital Budget Application, Power Transformer Listing",
-    topics: ["power transformers", "operating voltage", "MVA ratings", "2026 forecast", "portable compatibility"],
-    pages: "physical PDF pp. 545 to 551",
+    topics: ["power transformers", "operating voltage", "MVA ratings", "2026 forecast", "portable compatibility", "2016 to 2025 failures"],
+    pages: "physical PDF pp. 545 to 553 and 560",
     status: "verified",
     url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
   },
@@ -1513,9 +1523,9 @@ export const sources = [
     id: "np-2016-pub-np-064-g",
     year: 2016,
     organization: "Newfoundland Power",
-    title: "PUB-NP-064 Attachment G, Bishop's Falls and Glendale inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers"],
-    pages: "physical PDF pp. 28 to 31 and 148 to 152",
+    title: "PUB-NP-064 Attachment G, Bishop's Falls, Cobb's Pond, and Glendale inspection forms",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers"],
+    pages: "physical PDF pp. 28 to 31, 88 to 92 and 148 to 152",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -5340,19 +5350,95 @@ const earlyFeederMapProfiles = [
     code: "COB",
     name: "Cobb's Pond",
     voltage: "138/66/12.5 kV",
+    circuitRegisterLabel: "2025 NP AND 2026 FILED CIRCUIT RECORDS",
+    circuitSources: [
+      { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+      { sourceId: "np-2027-loop-study", pages: "physical PDF p. 223" }
+    ],
     handbookPage: "physical PDF pp. 8 and 11",
     feederRegister: ["COB-01", "COB-02", "COB-03"],
     mapPages: [["COB-03", 47]],
     connectedCircuits: [
-      { circuit: "136L", from: "Cobb's Pond", from_code: "COB", to: "Bishop's Falls", to_code: "BFS" },
+      { circuit: "TL210", from: "Stony Brook", from_code: "STY", to: "Cobb's Pond", to_code: "COB" },
       { circuit: "142L", from: "Cobb's Pond", from_code: "COB", to: "Clarke's Head Tap", to_code: null },
-      { circuit: "144L", from: "Cobb's Pond", from_code: "COB", to: "Gander", to_code: "GAN" }
+      { circuit: "144L", from: "Cobb's Pond", from_code: "COB", to: "Gander", to_code: "GAN" },
+      { circuit: "147L", from: "Cobb's Pond", from_code: "COB", to: "Lewisporte", to_code: "LEW" }
     ],
     transformerPages: "physical PDF pp. 546 and 553",
     transformerFacts: [
       ["COB-T1", "138/12.5 kV; 20 MVA; 15.15 MVA 2026 forecast"],
       ["COB-T3", "138/12.5 kV; 25 MVA; 19.22 MVA 2026 forecast"],
       ["COB-T2", "138/66 kV; 41.6 MVA"]
+    ],
+    diagram: {
+      label: "2025 circuit and 2027 transformer registers",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "COB-T1", rating: "20 MVA", from: "b1", to: "b3" }, { label: "COB-T2", rating: "41.6 MVA", from: "b1", to: "b2" }, { label: "COB-T3", rating: "25 MVA", from: "b1", to: "b3" }],
+      circuits: [
+        { label: "TL210", destination: "Stony Brook", bus: "b1", destinationCode: "STY" },
+        { label: "144L", destination: "Gander", bus: "b1", destinationCode: "GAN" },
+        { label: "147L", destination: "Lewisporte", bus: "b1", destinationCode: "LEW" },
+        { label: "142L", destination: "Clarke's Head tap", bus: "b2", link: false },
+        { label: "COB-01", destination: "12.5 kV feeder", bus: "b3", link: false },
+        { label: "COB-02", destination: "12.5 kV feeder", bus: "b3", link: false },
+        { label: "COB-03", destination: "12.5 kV feeder", bus: "b3", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2010 DEPRECIATION STUDY",
+      title: "Cobb's Pond transmission and distribution station",
+      sourceId: "np-2010-depreciation-transformers",
+      pages: "physical PDF p. 198",
+      facts: [
+        ["Transformer capacity", "41.6 MVA transmission bank and 20 MVA distribution bank"],
+        ["138 kV structure", "steel; installed in 1980"],
+        ["Station structures", "steel 12.47 kV structure installed in 1980; wood 66 kV structure installed in 1978"],
+        ["Bus work", "138 kV bus modifications recorded in 2001"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 546 and 553",
+      facts: [
+        ["Distribution banks", "COB-T1 138/12.5 kV, 20 MVA; COB-T3 138/12.5 kV, 25 MVA"],
+        ["2026 forecast", "COB-T1 15.15 MVA; COB-T3 19.22 MVA"],
+        ["Transmission bank", "COB-T2 138/66 kV; 41.6 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2010 MEASURED PEAK AND 2012 FILED EXPANSION",
+        sourceId: "np-2012-cobbs-pond",
+        pages: "physical PDF pp. 340 to 346",
+        facts: [
+          ["Original arrangement", "COB-T1, 20 MVA, 138/12.5 kV distribution; COB-T2, 41.6 MVA, 138/66 kV transmission"],
+          ["2010 measured peak", "19.6 MVA on COB-T1; 18.0 MVA on GAN-T1; 37.6 MVA combined"],
+          ["Selected project", "add COB-T3, 25 MVA, 138/12.5 kV; retain COB-T1"],
+          ["138 kV scope", "two breakers, civil infrastructure, and a bus extension to complete the ring-bus configuration"],
+          ["Filed cost", "$4.135 million"]
+        ]
+      },
+      {
+        label: "MARCH 2014 INSPECTION REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 88 to 92",
+        facts: [
+          ["Distribution breakers", "COB-01-B, COB-02-B and COB-03-B; vacuum units"],
+          ["Transformer equipment", "COB-T3, equipment number 200362, with COB-T3-B vacuum breaker"],
+          ["138 kV equipment", "COB-142L-B and COB-T1/T3-B SF6 breakers; dated bulk-oil and SF6 equipment also recorded for the former 136L, 144L and TL210 arrangement"],
+          ["Station supply", "COB-BAT-S battery and COB-CHG charger"]
+        ]
+      },
+      {
+        label: "2025 COB-T3 IN-SERVICE FAILURE",
+        sourceId: "np-2027-transformers",
+        pages: "physical PDF p. 560",
+        facts: [
+          ["Transformer", "COB-T3, 138/12.5 kV, 25 MVA; purchased in 2012"],
+          ["Failure record", "in-service failure in 2025; repaired without a portable transformer"]
+        ]
+      }
     ]
   },
   {

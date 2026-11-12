@@ -266,7 +266,7 @@ function renderStationProfile(code) {
         <span class="profile-label">${escapeHtml(profile.circuitRegisterLabel || "2005 CIRCUIT REGISTER")}</span>
         <ul class="circuit-list">${circuitRows || "<li><span>No connected transmission circuit in the register</span></li>"}</ul>
         ${circuitSources.length
-          ? circuitSources.map(({ reference, source }) => `<a class="evidence-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.title)} / ${escapeHtml(reference.pages)}</a>`).join("")
+          ? circuitSources.map(({ reference, source }) => `<a class="evidence-link stacked-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.title)} / ${escapeHtml(reference.pages)}</a>`).join("")
           : `<a class="evidence-link" href="${escapeHtml(handbook.source.source_url)}#page=6" target="_blank" rel="noreferrer">Electrical System Handbook / PDF pp. 6 to 7</a>`}
       </section>
       <section>

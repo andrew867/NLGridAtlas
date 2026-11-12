@@ -23,8 +23,19 @@ function transformerSymbol(transformer, index, count, buses, escapeHtml) {
   const to = buses.find((bus) => bus.id === transformer.to);
   if (!from || !to) return "";
   const x = spread(index, count, 300, 820);
-  const middle = (from.y + to.y) / 2;
+  const lowY = Math.min(from.y, to.y);
+  const highY = Math.max(from.y, to.y);
+  const intermediateBuses = buses
+    .filter((bus) => bus.y > lowY && bus.y < highY)
+    .sort((a, b) => Math.abs(a.y - from.y) - Math.abs(b.y - from.y));
+  const middle = intermediateBuses.length
+    ? (from.y + intermediateBuses[0].y) / 2
+    : (from.y + to.y) / 2;
+  const crossingMasks = intermediateBuses
+    .map((bus) => `<rect class="terminal-bus-crossing-mask" x="${x - 11}" y="${bus.y - 10}" width="22" height="20" />`)
+    .join("");
   return `<g class="terminal-transformer" role="img" aria-label="${escapeHtml(`${transformer.label}, ${transformer.rating}`)}">
+    ${crossingMasks}
     <line x1="${x}" y1="${from.y}" x2="${x}" y2="${middle - 28}" />
     <circle cx="${x}" cy="${middle - 13}" r="20" />
     <circle cx="${x}" cy="${middle + 13}" r="20" />

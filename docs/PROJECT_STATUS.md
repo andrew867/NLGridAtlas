@@ -114,6 +114,7 @@ Updated: 2026-11-12
 - Added the approved DLK-03 to Wiltondale load-transfer project. The filed record identifies the 147 A measured peak, 85 A planning maximum, 468-customer transfer, $1.137 million approval, and early-2027 construction schedule.
 - Added Bay Roberts' three-bus one-line, four transmission connections, four transformer records, 1967 and 1978 station history, proposed 2014 modernization, proposed BRB-T4 addition, reported 2014/15 transformer arrangement, and proposed 2020 BRB-05 upgrade. The 2014 filing's conflicting 66/12.5 kV and 138/12.5 kV BRB-T4 labels remain visible.
 - Added Bishop's Falls' 138/25 kV one-line, 1978 steel structure record, current 132L, 133L, 134L, and 136L endpoints, March 2014 breaker and feeder-protection inventory, the 2010 BFS-01-R replacement, the 2015 Grand Falls tie alternative, and the 2036 P90 136L contingency result.
+- Rebuilt Cobb's Pond as a three-bus 138/66/12.5 kV record. The station now shows TL210, 142L, 144L, and 147L, all three transformer banks, the 2010 measured Gander-area peak, the filed 2012 ring-bus and COB-T3 addition, the March 2014 equipment register, and the repaired 2025 COB-T3 in-service failure.
 
 ## Active work
 

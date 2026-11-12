@@ -120,6 +120,20 @@ test("diagram text masks conductor strokes", async () => {
   assert.match(css, /\.terminal-diagram text\s*\{[^}]*stroke-width:\s*8px/s);
 });
 
+test("transformers spanning an intermediate bus render a crossing break", async () => {
+  const diagram = {
+    label: "Three-bus crossing test",
+    buses: [{ id: "b1", label: "high", voltage: "138 kV" }, { id: "b2", label: "middle", voltage: "66 kV" }, { id: "b3", label: "low", voltage: "12.5 kV" }],
+    transformers: [{ label: "T1", rating: "25 MVA", from: "b1", to: "b3" }],
+    circuits: []
+  };
+  const html = renderTerminalDiagram(diagram, escapeHtml, "station");
+  const css = await readFile(new URL("../src/styles.css", import.meta.url), "utf8");
+  assert.match(html, /class="terminal-bus-crossing-mask"[^>]*y="365"/);
+  assert.match(html, /circle cx="560" cy="257" r="20"/);
+  assert.match(css, /\.terminal-bus-crossing-mask\s*\{[^}]*fill:/s);
+});
+
 test("western and northern rural station records retain filed transformation and routes", () => {
   const expected = {
     BRH: ["138/66 kV", ["TL239", "TL259", "TL226"]],
