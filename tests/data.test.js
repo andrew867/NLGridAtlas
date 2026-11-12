@@ -620,6 +620,22 @@ test("Lookout Brook retains both hydro units and the documented transformer rati
   assert.match(proposedFacts, /commissioning planned for 2029/);
 });
 
+test("Harmon retains both 66 kV supplies and the documented transformer rating difference", () => {
+  const harmon = stationProfiles.find((station) => station.code === "HAR");
+  assert.ok(harmon);
+  assert.deepEqual(harmon.connectedCircuits.map(({ circuit }) => circuit), ["405L", "406L"]);
+  assert.deepEqual(harmon.feederRegister, ["HAR-01", "HAR-02"]);
+  assert.deepEqual(harmon.mapPages, [["HAR-01", 71], ["HAR-02", 72]]);
+  const existingFacts = harmon.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = harmon.planningRecord.facts.flat().join(" ");
+  const proposedFacts = harmon.historyRecords[0].facts.flat().join(" ");
+  assert.match(existingFacts, /HAR-T1 66\/12\.5 kV; 11\.125 MVA station-specific rating/);
+  assert.match(planningFacts, /HAR-T1 fleet-table rating 66\/12\.5 kV; 14\.9 MVA; 12\.84 MVA 2026 forecast/);
+  assert.match(proposedFacts, /15\/20\/25 MVA, 66\/12\.5\/25 kV/);
+  assert.match(proposedFacts, /15\.9 MVA maximum peak-load forecast over ten years/);
+  assert.match(proposedFacts, /commissioning planned for 2029/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

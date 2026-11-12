@@ -1240,6 +1240,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
+    id: "np-2027-harmon",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, HAR-T1 Power Transformer Replacement",
+    topics: ["Harmon", "HAR-T1", "405L", "406L", "66 kV", "12.5 kV", "Stephenville"],
+    pages: "physical PDF pp. 498 to 503",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3113,7 +3123,6 @@ const filedFeederMapProfiles = [
   },
   { code: "GLV", mapPages: [["GLV-01", 66]] },
   { code: "GRH", mapPages: [["GRH-03", 70]] },
-  { code: "HAR", mapPages: [["HAR-01", 71], ["HAR-02", 72]] },
   { code: "HBS", mapPages: [["HBS-02", 73]] },
   { code: "HGR", mapPages: [["HGR-01", 74]] },
   { code: "HUM", mapPages: [["HUM-01", 77], ["HUM-08", 78], ["HUM-09", 79]] },
@@ -3527,6 +3536,64 @@ export const stationProfiles = [
           ["Replacement transformer", "5/6.7/8.3 MVA, 66/2.4 kV"],
           ["Site work", "new spill-containment foundation"],
           ["Existing transformer disposition", "scrap LBK-T1 after replacement because of its overall condition"],
+          ["Filed schedule", "design and procurement in 2027 and 2028; installation, testing and commissioning planned for 2029"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "HAR",
+    name: "Harmon",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2026 EXISTING CONNECTIONS",
+    circuitSource: { sourceId: "np-2027-harmon", pages: "physical PDF p. 498" },
+    connectedCircuits: [
+      { circuit: "405L", from: "Stephenville Gas Turbine", from_code: "STV", to: "Harmon", to_code: "HAR" },
+      { circuit: "406L", from: "Gallants", from_code: "GAL", to: "Harmon", to_code: "HAR" }
+    ],
+    feederRegisterLabel: "2005 FEEDER REGISTER",
+    feederRegister: ["HAR-01", "HAR-02"],
+    mapPages: [["HAR-01", 71], ["HAR-02", 72]],
+    eventLoads: [],
+    diagram: {
+      label: "2026 existing arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "HAR-T1", rating: "11.125 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "405L", destination: "Stephenville Gas Turbine", bus: "b1", destinationCode: "STV" }, { label: "406L", destination: "Gallants", bus: "b1", destinationCode: "GAL" }]
+    },
+    engineeringRecord: {
+      date: "2026 EXISTING ARRANGEMENT",
+      title: "Harmon transmission and distribution station",
+      sourceId: "np-2027-harmon",
+      pages: "physical PDF pp. 498 to 500",
+      facts: [
+        ["Station built", "1968 as a transmission and distribution substation"],
+        ["66 kV supplies", "405L from Stephenville Gas Turbine and 406L from Gallants"],
+        ["HAR-T1", "66/12.5 kV; 11.125 MVA station-specific rating; General Electric; installed in 1969"],
+        ["Distribution", "two 12.5 kV feeders serving approximately 1,400 customers in Stephenville"],
+        ["Forecast exposure", "6.28 MVA remains exposed after available offloading for a HAR-T1 failure"],
+        ["Ten-year station forecast", "15.9 MVA maximum peak load"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["HAR-T1 fleet-table rating", "66/12.5 kV; 14.9 MVA; 12.84 MVA 2026 forecast"],
+        ["Record difference", "the 2026 station-specific report describes the installed transformer as 11.125 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2027 TO 2029 PROPOSED REPLACEMENT",
+        sourceId: "np-2027-harmon",
+        pages: "physical PDF pp. 500 to 503",
+        facts: [
+          ["Replacement transformer", "15/20/25 MVA, 66/12.5/25 kV"],
+          ["Selection basis", "15.9 MVA maximum peak-load forecast over ten years"],
+          ["Site work", "new spill-containment foundation; fused protection upgrade coordinated with separate station modernization"],
+          ["Existing transformer disposition", "scrap HAR-T1 after replacement because of its overall condition"],
           ["Filed schedule", "design and procurement in 2027 and 2028; installation, testing and commissioning planned for 2029"]
         ]
       }

@@ -343,7 +343,7 @@
       "dependencies": ["ISL-001", "ISL-003"],
       "completion_evidence": ["src/data.js", "src/island-backbone.js", "research/ISLAND_TERMINAL_RECORDS.md", "tests/terminal-diagram.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "Individual records cover Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, English Harbour West, Grand Falls, Lewisporte, Rattling Brook, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, and Lookout Brook. Lookout Brook adds both hydro units, LBK-T1, 403L, and the proposed 2029 replacement. Remaining lower-voltage rural stations and current breaker drawings stay deferred where no current station-specific filing has been located."
+      "notes": "Individual records cover Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, English Harbour West, Grand Falls, Lewisporte, Rattling Brook, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, Lookout Brook, and Harmon. Harmon adds both 66 kV supplies, HAR-T1, feeder maps, forecast load, and the proposed 2029 replacement. Remaining lower-voltage rural stations and current breaker drawings stay deferred where no current station-specific filing has been located."
     },
     {
       "id": "ISL-006",

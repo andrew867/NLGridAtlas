@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, and Lookout Brook. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, Lookout Brook, and Harmon. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -97,6 +97,14 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The station-specific report describes LBK-T1 as a 7.5 MVA English Electric transformer in 66/2.4 kV service, installed at Lookout Brook in 1997 after relocation from Grand Falls, physical PDF p. 483.
 - [x] The 2027 fleet table lists LBK-T1 at 10 MVA. The atlas keeps this value separate from the station-specific 7.5 MVA description, physical PDF p. 551.
 - [x] The proposed replacement is a 5/6.7/8.3 MVA, 66/2.4 kV unit with commissioning planned for 2029, physical PDF p. 490.
+- [ ] Do not record the replacement as installed before a completion report confirms commissioning.
+
+## Harmon station record
+
+- [x] The 2027 report identifies 405L from Stephenville Gas Turbine and 406L from Gallants as the two 66 kV supplies, physical PDF p. 498.
+- [x] HAR-T1 is a General Electric 66/12.5 kV transformer installed in 1969. The station-specific report gives 11.125 MVA; the 2027 fleet table gives 14.9 MVA and a 12.84 MVA 2026 forecast. The atlas keeps both source values, physical PDF pp. 498 and 548.
+- [x] HAR-T1 supplies two 12.5 kV feeders and approximately 1,400 customers in Stephenville, physical PDF p. 498.
+- [x] The proposed replacement is a 15/20/25 MVA, 66/12.5/25 kV unit selected for a 15.9 MVA ten-year maximum peak forecast, with commissioning planned for 2029, physical PDF pp. 500 and 503.
 - [ ] Do not record the replacement as installed before a completion report confirms commissioning.
 
 ## Pulpit Rock feeder-bus and transformer records
