@@ -1794,8 +1794,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 235, 427 and 484 to 487",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 235, 371 to 373, 427 and 484 to 487",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1808,6 +1808,36 @@ export const sources = [
     pages: "PDF pp. 88 to 90, 458, 463 to 470",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
+    id: "np-2025-petty-harbour",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-016, Petty Harbour Substation Refurbishment and Modernization",
+    topics: ["Petty Harbour", "3L", "33 kV", "PHR-T1", "PHR-T3", "PHR-01", "4.16 kV", "hydroelectric generation", "deferred modernization"],
+    pages: "physical PDF p. 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/PUB-NP-016.PDF"
+  },
+  {
+    id: "np-2006-petty-harbour",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Petty Harbour Hydro Plant Refurbishment",
+    topics: ["Petty Harbour", "hydroelectric generation", "5.3 MW", "three generating units", "isolated operation", "plant controls", "generator protection"],
+    pages: "physical PDF pp. 178 to 188",
+    status: "verified",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2026-generation-capacity-test",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "NP-NLH-168 Attachment 1, Newfoundland Power Generation Capacity Tests",
+    topics: ["generation capacity test", "Petty Harbour", "PHR-T1", "15-minute generation", "actual output"],
+    pages: "physical PDF p. 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/NP-NLH-168.PDF"
   },
   {
     id: "np-2025-gander-t2",
@@ -1944,8 +1974,8 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "2026 Capital Budget Application, Power Transformer Listing",
-    topics: ["Jonathan's Pond", "JON-T1", "transformer voltage", "transformer capacity", "forecast load"],
-    pages: "physical PDF p. 368",
+    topics: ["Jonathan's Pond", "JON-T1", "Petty Harbour", "PHR-T1", "33 kV", "transformer voltage", "transformer capacity", "forecast load"],
+    pages: "physical PDF pp. 368 to 369 and 372",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
@@ -10027,6 +10057,111 @@ export const stationProfiles = [
         alt: "Filed PUL-03 route drawing showing the 2.5 kilometre Bauline Line section selected for conversion from two phase to three phase",
         sourceId: "np-2022-feeder-growth",
         pages: "physical PDF p. 401"
+      }
+    ]
+  },
+  {
+    code: "PHR",
+    name: "Petty Harbour",
+    voltage: "33/4.16/2.4 kV",
+    circuitRegisterLabel: "2025 OPERATING ARRANGEMENT",
+    circuitSource: { sourceId: "np-2025-petty-harbour", pages: "physical PDF p. 2" },
+    connectedCircuits: [
+      { circuit: "3L", from: "Goulds", from_code: "GOU", to: "Petty Harbour", to_code: "PHR" }
+    ],
+    feederRegisterLabel: "2025 STATION RECORD",
+    feederRegister: ["PHR-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 operating arrangement",
+      buses: [
+        { id: "b1", label: "33 kV bus", voltage: "33 kV" },
+        { id: "b2", label: "2.4 kV generator bus", voltage: "2.4 kV" },
+        { id: "b3", label: "4.16 kV distribution bus", voltage: "4.16 kV" }
+      ],
+      transformers: [
+        { label: "PHR-T1", rating: "6.70 MVA", from: "b2", to: "b1" },
+        { label: "PHR-T3", rating: "4.00 MVA", from: "b1", to: "b3" }
+      ],
+      circuits: [{ label: "3L", destination: "Goulds", bus: "b1", destinationCode: "GOU" }],
+      generators: [{ label: "G1 to G3", rating: "5.3 MW total", bus: "b2" }],
+      feeders: [{ label: "PHR-01", bus: "b3" }]
+    },
+    engineeringRecord: {
+      date: "2025 OPERATING ARRANGEMENT",
+      title: "Petty Harbour hydro and distribution station",
+      sourceId: "np-2025-petty-harbour",
+      pages: "physical PDF p. 2",
+      facts: [
+        ["Transmission supply", "radial 3L from Goulds; energized at 33 kV"],
+        ["Generation connection", "PHR-T1 connects three hydro generators to the electrical system"],
+        ["Distribution", "PHR-T3 supplies PHR-01 at 4.16 kV for Petty Harbour and Maddox Cove"],
+        ["Generation plant", "three horizontal units; 5.3 MW installed capacity under approximately 57.9 m net head"],
+        ["Isolated operation", "the plant can supply Petty Harbour and Maddox Cove while disconnected from the Island Interconnected System"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER TABLE",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 549 and 552",
+      facts: [
+        ["PHR-T1", "generation transformer; table prints 66/2.4 kV; 6.70 MVA"],
+        ["PHR-T3", "distribution transformer; 33/4.2 kV; 4.00 MVA; 2.35 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2026 TRANSFORMER TABLE",
+        sourceId: "np-2026-transformers",
+        pages: "physical PDF pp. 369 and 372",
+        facts: [
+          ["PHR-T1", "generation transformer; 33/2.4 kV; 6.70 MVA"],
+          ["PHR-T3", "distribution transformer; 33/4.2 kV; 4.00 MVA; 2.55 MVA 2025 forecast"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 371 to 373",
+        facts: [
+          ["Transformers", "PHR-T1 asset 200325 and PHR-T3 asset 200098"],
+          ["Generation breakers", "PHR-G1-B, PHR-G2-B, and PHR-G3-B"],
+          ["Transmission breaker", "PHR-3L-B, bulk-oil circuit breaker"],
+          ["Distribution protection", "PHR-01-R recloser"],
+          ["Telecommunications", "SAGE 2100 remote terminal unit"]
+        ]
+      },
+      {
+        label: "2006 PLANT REFURBISHMENT",
+        sourceId: "np-2006-petty-harbour",
+        pages: "physical PDF pp. 178 to 188",
+        facts: [
+          ["Plant history", "commissioned in 1900; three generating units"],
+          ["Protection and controls", "digital voltage regulation, generator protection, grounding transformers, automatic synchronization, PLC controls and instrumentation were included in the filed scope"],
+          ["Unit 2", "turbine overhaul filed to restore output reduced by wicket-gate problems"],
+          ["Penstock", "steel penstock installed in 1999; recoating included in the filed scope"]
+        ]
+      },
+      {
+        label: "2026 GENERATION CAPACITY TEST",
+        sourceId: "np-2026-generation-capacity-test",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Metered point", "PHR-T1-I"],
+          ["15-minute values shown", "4,279 to 4,739 kW"],
+          ["Highest interval shown", "4,739 kW at the 1045 Island Time interval"]
+        ]
+      },
+      {
+        label: "2025 MODERNIZATION DEFERRED",
+        sourceId: "np-2025-petty-harbour",
+        pages: "physical PDF pp. 1 to 2",
+        facts: [
+          ["Condition", "deteriorated and non-standard substation equipment"],
+          ["Study scope", "system planning study for Goulds, Big Pond, and Petty Harbour service"],
+          ["Status", "deferred for further engineering assessment"]
+        ]
       }
     ]
   },

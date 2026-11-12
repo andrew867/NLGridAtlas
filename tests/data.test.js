@@ -1775,6 +1775,32 @@ test("Pulpit Rock record separates the feeder bus from dual-secondary equipment"
   assert.doesNotMatch(facts, /not found/);
 });
 
+test("Petty Harbour separates the 33 kV plant connection from 4.16 kV distribution", () => {
+  const pettyHarbour = stationProfiles.find((station) => station.code === "PHR");
+  assert.ok(pettyHarbour);
+  assert.deepEqual(pettyHarbour.connectedCircuits, [
+    { circuit: "3L", from: "Goulds", from_code: "GOU", to: "Petty Harbour", to_code: "PHR" }
+  ]);
+  assert.deepEqual(pettyHarbour.feederRegister, ["PHR-01"]);
+  assert.deepEqual(pettyHarbour.diagram.buses.map(({ voltage }) => voltage), ["33 kV", "2.4 kV", "4.16 kV"]);
+  assert.deepEqual(pettyHarbour.diagram.transformers.map(({ label, rating }) => [label, rating]), [
+    ["PHR-T1", "6.70 MVA"],
+    ["PHR-T3", "4.00 MVA"]
+  ]);
+  const operatingFacts = pettyHarbour.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = pettyHarbour.planningRecord.facts.flat().join(" ");
+  const historyFacts = pettyHarbour.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(operatingFacts, /3L from Goulds; energized at 33 kV/);
+  assert.match(operatingFacts, /three horizontal units; 5\.3 MW/);
+  assert.match(planningFacts, /PHR-T1 generation transformer; table prints 66\/2\.4 kV; 6\.70 MVA/);
+  assert.match(historyFacts, /PHR-T1 generation transformer; 33\/2\.4 kV; 6\.70 MVA/);
+  assert.match(historyFacts, /PHR-3L-B, bulk-oil circuit breaker/);
+  assert.match(historyFacts, /PHR-01-R recloser/);
+  assert.match(historyFacts, /4,279 to 4,739 kW/);
+  assert.match(historyFacts, /4,739 kW at the 1045 Island Time interval/);
+  assert.match(historyFacts, /deferred for further engineering assessment/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");

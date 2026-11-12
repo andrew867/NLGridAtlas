@@ -132,6 +132,7 @@ Updated: 2026-11-12
 - Rebuilt Abrahams Cove around the radial 410L sections from Berry Head to Lower Cove Mine, current transformer values, the 2023 customer and contingency record, and the customer-funded Lower Cove extensions.
 - Rebuilt Garnish around the documented 2009 station relocation. The new 66/12.5 kV station retained the transformer, replaced the other equipment, removed the former 1.6 km transmission tap, and connects directly to 301L without a high-voltage bus.
 - Added the Grand Falls logical one-line across the separate station yards. It connects the 138 kV, 66 kV, 25 kV, and current 4.2 kV functions, the completed GFS-T3 addition, current GFS-T5 record, 101L, 130L, 132L, and the five filed 25 kV feeders.
+- Added Petty Harbour's 33/4.16/2.4 kV logical one-line, radial 3L supply from Goulds, PHR-T1 and PHR-T3, three-unit 5.3 MW plant, PHR-01, March 2014 equipment register, 2006 refurbishment, 2026 capacity-test values, and the deferred 2025 modernization study.
 
 ## Active work
 
