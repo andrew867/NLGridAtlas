@@ -109,6 +109,15 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] Order P.U. 27 (2024) approved the Lewisporte to Boyd's Cove transmission-line project. It did not approve the separately filed 2027 COB-02 extension, physical PDF p. 7.
 - [ ] Do not record Jonathan's Pond as retired before a later report confirms the feeder extension and equipment removal.
 
+## Roycefield Tap station record
+
+- [x] The 2023 single-line shows 102L from Gander, a 2 km section between switches RFD-102L-A1 and RFD-104L-D, and 104L continuing 40 km to customer-owned switch RMS-104L-A at the Roycefield mine site, physical PDF p. 7.
+- [x] The 2023 operating response records Roycefield Tap as a fenced yard with a 66 kV isolating switch immediately west of Glenwood. Removal of 104L or the tap station affects the single Rate 2.4 customer and no other Newfoundland Power customers, physical PDF p. 1.
+- [x] The March 2014 inspection form lists RFD-104L-B as SF6 breaker asset 210232. This is retained as dated equipment history because the later operating response describes only the remaining isolating switch, physical PDF p. 427.
+- [x] Newfoundland Power owns the tap station and 104L. The mine customer paid a contribution toward construction and has no second substation supply, physical PDF pp. 2 to 3.
+- [x] The 2022 asset register lists 102L from Gander to Roycefield as a common asset with $2.689 million gross historical cost. It lists 104L to the mine as fully contributed with $1.301 million gross historical cost, both at December 31, 2022, physical PDF p. 3.
+- [x] The filed single-line shows no transformer or distribution feeder at Roycefield Tap. The atlas therefore represents it as a 66 kV switching point.
+
 ## Blaketown station record
 
 - [x] The 2027 station report records two incoming 138 kV lines, four outgoing 66 kV lines, BLK-T3 at 25/33.3/41.6 MVA, BLK-T2 at 15/20 MVA, two 25 kV feeders, approximately 4,090 local customers, and approximately 5,970 customers on radial lines 55L and 94L, physical PDF pp. 422 to 425.

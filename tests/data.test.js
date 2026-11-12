@@ -841,6 +841,28 @@ test("Jonathan's Pond preserves the dated transformer records and proposed retir
   assert.deepEqual(jonathansPond.referenceSheets.map(({ image }) => image), ["./reference-maps/jon-cob02-2027-extension.jpg"]);
 });
 
+test("Roycefield remains a 66 kV switching point without an invented transformer", () => {
+  const roycefield = stationProfiles.find((station) => station.code === "RFD");
+  assert.ok(roycefield);
+  assert.deepEqual(roycefield.connectedCircuits.map(({ circuit }) => circuit), ["102L", "104L"]);
+  assert.deepEqual(roycefield.feederRegister, []);
+  assert.deepEqual(roycefield.diagram.transformers, []);
+
+  const currentFacts = roycefield.engineeringRecord.facts.flat().join(" ");
+  assert.match(currentFacts, /fenced yard with 66 kV isolating switch RFD-104L-D/);
+  assert.match(currentFacts, /104L runs approximately 40 km/);
+  assert.match(currentFacts, /none shown in the filed single-line/);
+  assert.match(currentFacts, /no other Newfoundland Power customers/);
+
+  const equipment = roycefield.historyRecords.find((record) => record.label === "MARCH 2014 EQUIPMENT REGISTER");
+  assert.match(equipment.facts.flat().join(" "), /SF6 circuit breaker asset 210232/);
+  const assetRegister = roycefield.historyRecords.find((record) => record.label === "2022 TRANSMISSION ASSET REGISTER");
+  const assetFacts = assetRegister.facts.flat().join(" ");
+  assert.match(assetFacts, /102L Gander to Roycefield Tap; common transmission asset; \$2\.689 million/);
+  assert.match(assetFacts, /104L Roycefield Tap to Roycefield Mine; fully contributed; \$1\.301 million/);
+  assert.deepEqual(roycefield.referenceSheets.map(({ image }) => image), ["./reference-maps/rfd-2023-single-line.png"]);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);

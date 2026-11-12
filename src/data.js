@@ -1483,9 +1483,9 @@ export const sources = [
     id: "np-2024-ca-np-158",
     year: 2023,
     organization: "Newfoundland Power",
-    title: "CA-NP-158, Memorial and Long Pond Single Line Diagrams",
-    topics: ["Memorial", "Long Pond", "single-line", "Health Sciences Complex", "feeders"],
-    pages: "physical PDF pp. 1 to 5",
+    title: "CA-NP-158, Memorial, Long Pond and Roycefield Single-Line Diagrams",
+    topics: ["Memorial", "Long Pond", "Roycefield", "RFD", "102L", "104L", "RFD-102L-A1", "RFD-104L-D", "RMS-104L-A", "single-line", "Health Sciences Complex", "feeders"],
+    pages: "physical PDF pp. 1 to 7",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/responses/CA-NP-158.PDF"
   },
@@ -1524,8 +1524,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Jonathan's Pond", "JON-T1", "102L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138, 148 to 152, 235 and 484 to 487",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138, 148 to 152, 235, 427 and 484 to 487",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1718,6 +1718,56 @@ export const sources = [
     pages: "physical PDF p. 7",
     status: "verified",
     url: "http://www.pub.nl.ca/PU/orders/2024/P.U.%2027(2024).PDF"
+  },
+  {
+    id: "np-2024-ca-np-049",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-049, Dedicated Lines and Substations",
+    topics: ["Roycefield", "RFD", "104L", "Beaver Brook Antimony Mine", "single-customer supply"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/CA-NP-049.PDF"
+  },
+  {
+    id: "np-2024-ca-np-156",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-156, Roycefield Ownership and Customer Contribution",
+    topics: ["Roycefield", "RFD", "104L", "Beaver Brook Antimony Mine", "Contribution in Aid of Construction", "ownership"],
+    pages: "physical PDF pp. 2 to 3",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/CA-NP-156.PDF"
+  },
+  {
+    id: "np-2024-ca-np-161",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-161, Roycefield Tap Operating Arrangement",
+    topics: ["Roycefield", "RFD", "104L", "Beaver Brook Antimony Mine", "66 kV switch", "Glenwood"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/CA-NP-161.PDF"
+  },
+  {
+    id: "np-2025-gra-ca-np-159",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "CA-NP-159, Roycefield Supply and Cost Treatment",
+    topics: ["Roycefield", "RFD", "104L", "mine supply", "Contribution in Aid of Construction", "cost of service"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-159.PDF"
+  },
+  {
+    id: "np-2025-gra-ca-np-168",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "CA-NP-168, Transmission Asset Cost and Allocation Register",
+    topics: ["Roycefield", "RFD", "102L", "104L", "historical cost", "transmission allocation"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
   },
   {
     id: "np-2025-northwest-brook",
@@ -6465,6 +6515,103 @@ export const stationProfiles = [
         alt: "Filed eight kilometre single-phase COB-02 extension route to Jonathan's Pond Substation",
         sourceId: "np-2027-cob02-extension",
         pages: "physical PDF p. 28"
+      }
+    ]
+  },
+  {
+    code: "RFD",
+    name: "Roycefield Tap",
+    voltage: "66 kV",
+    circuitRegisterLabel: "2023 OPERATING ARRANGEMENT",
+    circuitSource: { sourceId: "np-2024-ca-np-158", pages: "physical PDF pp. 6 to 7" },
+    connectedCircuits: [
+      { circuit: "102L", from: "Gander", from_code: "GAN", to: "Roycefield Tap", to_code: "RFD" },
+      { circuit: "104L", from: "Roycefield Tap", from_code: "RFD", to: "Roycefield Mine", to_code: null }
+    ],
+    feederRegisterLabel: "NO DISTRIBUTION FEEDERS",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2023 filed Roycefield Tap switching arrangement",
+      buses: [{ id: "b1", label: "switching point", voltage: "66 kV" }],
+      transformers: [],
+      circuits: [
+        { label: "102L", destination: "Gander", bus: "b1", destinationCode: "GAN" },
+        { label: "104L", destination: "Roycefield Mine", bus: "b1" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2023 OPERATING ARRANGEMENT",
+      title: "Roycefield Tap switching station",
+      sourceId: "np-2024-ca-np-161",
+      pages: "physical PDF p. 1",
+      facts: [
+        ["Present function", "fenced yard with 66 kV isolating switch RFD-104L-D"],
+        ["Location", "Trans-Canada Highway immediately west of Glenwood"],
+        ["Incoming circuit", "102L from Gander; the filed single-line shows 2 km between RFD-102L-A1 and RFD-104L-D"],
+        ["Mine supply", "104L runs approximately 40 km to customer-owned switch RMS-104L-A"],
+        ["Transformation", "none shown in the filed single-line"],
+        ["Outage consequence", "loss of 104L or the tap station interrupts the single Rate 2.4 customer; no other Newfoundland Power customers"]
+      ]
+    },
+    planningRecord: {
+      label: "2024 OWNERSHIP AND SUPPLY RECORD",
+      sourceId: "np-2025-gra-ca-np-159",
+      pages: "physical PDF pp. 1 to 2",
+      facts: [
+        ["Ownership", "Newfoundland Power owns Roycefield Tap and 104L"],
+        ["Supply", "Roycefield Tap and 104L are the only source for the mine site"],
+        ["Customer contribution", "the customer paid a Contribution in Aid of Construction toward the station and line"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 427",
+        facts: [
+          ["RFD-104L-B", "SF6 circuit breaker asset 210232"],
+          ["Station record", "station service and metering cabinet were listed on the inspection form"]
+        ]
+      },
+      {
+        label: "2023 SINGLE-CUSTOMER STATION RECORD",
+        sourceId: "np-2024-ca-np-049",
+        pages: "physical PDF pp. 1 to 2",
+        facts: [
+          ["Dedicated assets", "104L and Roycefield Tap serve the Beaver Brook Antimony Mine"],
+          ["Station arrangement", "fenced yard and high-voltage switch where 104L leaves the Trans-Canada Highway right-of-way"]
+        ]
+      },
+      {
+        label: "2023 OWNERSHIP AND CAPITAL RECORD",
+        sourceId: "np-2024-ca-np-156",
+        pages: "physical PDF pp. 2 to 3",
+        facts: [
+          ["Ownership", "Newfoundland Power owns Roycefield Tap and 104L; the customer is not served from another substation"],
+          ["2002 to 2022 station capital", "$11,000 recorded for Roycefield Tap"],
+          ["Original approval", "station and line construction approved in Order P.U. 9 (1996-1997)"]
+        ]
+      },
+      {
+        label: "2022 TRANSMISSION ASSET REGISTER",
+        sourceId: "np-2025-gra-ca-np-168",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["102L", "Gander to Roycefield Tap; common transmission asset; $2.689 million gross historical cost at December 31, 2022"],
+          ["104L", "Roycefield Tap to Roycefield Mine; fully contributed; $1.301 million gross historical cost at December 31, 2022"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED SINGLE-LINE",
+    referenceSheets: [
+      {
+        title: "Roycefield Tap and mine supply",
+        image: "./reference-maps/rfd-2023-single-line.png",
+        alt: "Filed 66 kV single-line from Gander through Roycefield Tap to the Roycefield mine site",
+        sourceId: "np-2024-ca-np-158",
+        pages: "physical PDF p. 7"
       }
     ]
   },

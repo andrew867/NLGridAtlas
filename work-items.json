@@ -331,7 +331,7 @@
       "dependencies": ["ISL-001", "ISL-003"],
       "completion_evidence": ["src/data.js", "src/island-backbone.js", "research/ISLAND_TERMINAL_RECORDS.md", "tests/terminal-diagram.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "Individual records cover Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, English Harbour West, Boyd's Cove, Gander, Gander Bay, Summerford, and Jonathan's Pond. Jonathan's Pond includes its 108L tap, dated transformer records, 2014 asset record, 2022 refurbishment, and proposed COB-02 extension and retirement state. Lower-voltage records without published equipment evidence remain deferred."
+      "notes": "Individual records cover Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, English Harbour West, Boyd's Cove, Gander, Gander Bay, Summerford, Jonathan's Pond, and Roycefield Tap. Roycefield is represented as the filed 66 kV switching point between 102L and the 40 km 104L mine supply, without an invented transformer. Lower-voltage records without published equipment evidence remain deferred."
     },
     {
       "id": "ISL-006",

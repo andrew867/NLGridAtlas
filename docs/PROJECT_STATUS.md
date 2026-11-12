@@ -119,6 +119,7 @@ Updated: 2026-11-12
 - Added Gander Bay's 66/25 kV station, 2024 normal 108L/114L operating configuration, 13.33 MVA transformer record, March 2014 equipment register, filed GBY-01, GBY-02, and GBY-03 feeder work, reported GBY-03 completion, and five preserved feeder-route drawings.
 - Added Summerford's 66/25 kV station, 114L and 140L connections, 13.33 MVA transformer record, March 2014 equipment register, filed and reported SUM-01 and SUM-02 work, the approved 2019 114L and SUM-02 relocation, the 2020 114L expenditure, the approved regional building replacement, and two filed feeder-route drawings.
 - Added Jonathan's Pond as the documented 108L tap, with its 0.33 MVA JON-T1 record, March 2014 asset record, 2022 refurbishment, separate dated 7.2 kV and 12.5 kV register entries, and the proposed COB-02 extension and station retirement route.
+- Added Roycefield Tap as the filed 66 kV switching point between 102L and the 40 km 104L mine supply, with its 2014 breaker record, current isolating-switch arrangement, ownership and customer-contribution record, asset costs, and filed single-line.
 
 ## Active work
 
