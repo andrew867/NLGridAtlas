@@ -962,6 +962,56 @@ test("Fermeuse separates the Newfoundland Power station from the seller and Hydr
   assert.match(boundaryFacts, /Hydro equipment export bidirectional metering/);
 });
 
+test("Broad Cove keeps the 2021 station arrangement separate from the 2027 voltage record", () => {
+  const broadCove = stationProfiles.find((station) => station.code === "BCV");
+  assert.ok(broadCove);
+  assert.deepEqual(broadCove.connectedCircuits.map(({ circuit }) => circuit), ["5L"]);
+  assert.deepEqual(broadCove.feederRegister, ["BCV-01", "BCV-02", "BCV-03", "BCV-04"]);
+  assert.deepEqual(broadCove.diagram.transformers, [{ label: "BCV-T1", rating: "25 MVA", from: "b1", to: "b2" }]);
+  assert.equal(broadCove.diagram.buses[1].voltage, "12.5 kV");
+
+  const stationFacts = broadCove.engineeringRecord.facts.flat().join(" ");
+  assert.match(stationFacts, /Belbin's Road and Pendergast Road/);
+  assert.match(stationFacts, /BCV-T1 25 MVA; 66\/12\.5 kV/);
+  assert.match(stationFacts, /BCV-02 1,580 customers; includes Bell Island through a submarine cable/);
+
+  const currentFacts = broadCove.planningRecord.facts.flat().join(" ");
+  assert.match(currentFacts, /66\/25 kV; 25 MVA; 19\.79 MVA 2026 forecast/);
+  assert.match(currentFacts, /Published voltage difference/);
+  const proposedT2 = broadCove.historyRecords.find((record) => record.label === "2021 PROPOSED BCV-T2");
+  assert.match(proposedT2.facts.flat().join(" "), /add 25 MVA, 66\/12\.5 kV BCV-T2 in parallel with BCV-T1/);
+  assert.doesNotMatch(broadCove.diagram.transformers.map(({ label }) => label).join(" "), /BCV-T2/);
+  const deferral = broadCove.historyRecords.find((record) => record.label === "2023 MODERNIZATION DEFERRAL");
+  assert.match(deferral.facts.flat().join(" "), /deferred from 2023 for further engineering assessment/);
+});
+
+test("Chamberlains records the second bank, T1 replacement, CHA-04, and current transformer values", () => {
+  const chamberlains = stationProfiles.find((station) => station.code === "CHA");
+  assert.ok(chamberlains);
+  assert.deepEqual(chamberlains.connectedCircuits.map(({ circuit }) => circuit), ["49L", "51L", "79L"]);
+  assert.deepEqual(chamberlains.feederRegister, ["CHA-01", "CHA-02", "CHA-03", "CHA-04"]);
+  assert.deepEqual(chamberlains.diagram.transformers.map(({ label, rating }) => [label, rating]), [["CHA-T1", "50 MVA"], ["CHA-T2", "25 MVA"]]);
+
+  const existing = chamberlains.engineeringRecord.facts.flat().join(" ");
+  assert.match(existing, /built in 1975/);
+  assert.match(existing, /three 66 kV lines/);
+  assert.match(existing, /CHA-T1 and CHA-T2 were each 25 MVA at 66\/25 kV/);
+
+  const secondBank = chamberlains.historyRecords.find((record) => record.label === "2003 PROPOSED SECOND TRANSFORMER");
+  assert.match(secondBank.facts.flat().join(" "), /peak load exceeded its nameplate rating.*second 25 MVA, 66\/25 kV transformer/s);
+  const capacity = chamberlains.historyRecords.find((record) => record.label === "2017 PROPOSED CAPACITY AND FEEDER WORK");
+  const capacityFacts = capacity.facts.flat().join(" ");
+  assert.match(capacityFacts, /increase from 49\.3 MVA to 74\.4 MVA/);
+  assert.match(capacityFacts, /0\.35 km of new 477 ASC trunk and 3\.00 km upgraded to three-phase 477 ASC/);
+
+  const current = chamberlains.planningRecord.facts.flat().join(" ");
+  assert.match(current, /CHA-T1 66\/25 kV; 50 MVA; 35\.34 MVA 2026 forecast/);
+  assert.match(current, /CHA-T2 66\/25 kV; 25 MVA; 17\.02 MVA 2026 forecast/);
+  const feederWork = chamberlains.historyRecords.find((record) => record.label === "2027 PROPOSED CHA-04 UPGRADE");
+  assert.match(feederWork.facts.flat().join(" "), /93 A peak in 2025.*up to 163 A in 2027.*single-phase to three-phase/s);
+  assert.deepEqual(chamberlains.referenceSheets.map(({ image }) => image), ["./reference-maps/cha-04-2027-route.jpeg"]);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);

@@ -20,6 +20,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
   },
   {
+    id: "np-2003-chamberlains",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Budget Application, Chamberlains Second Transformer",
+    topics: ["Chamberlains", "CHA-T1", "CHA-T2", "66 kV", "25 kV", "transformer capacity", "Conception Bay South"],
+    pages: "physical PDF pp. 36 to 37",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
+  },
+  {
+    id: "np-2008-broad-cove",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Broad Cove Substation",
+    topics: ["Broad Cove", "BCV-T1", "5L", "66 kV", "12.5 kV", "metering", "under-frequency load shedding"],
+    pages: "physical PDF pp. 163 to 164",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2017-chamberlains",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Chamberlains Capacity and Feeder Work",
+    topics: ["Chamberlains", "CHA-T1", "CHA-T2", "CHA-04", "66 kV", "25 kV", "477 ASC", "substation modernization"],
+    pages: "physical PDF pp. 38, 43, 237, 249 and 252 to 253",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-2021-broad-cove-study",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, St. John's North and Portugal Cove System Planning Study",
+    topics: ["Broad Cove", "BCV-T1", "BCV-T2", "BCV-01", "BCV-02", "BCV-03", "BCV-04", "66 kV", "12.5 kV", "transformer capacity"],
+    pages: "physical PDF pp. 5 to 9",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
+  },
+  {
+    id: "np-2023-broad-cove-deferral",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Broad Cove Modernization Deferral",
+    topics: ["Broad Cove", "substation modernization", "project deferral", "engineering assessment"],
+    pages: "physical PDF p. 247",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-2027-cha04",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, CHA-04 Feeder Upgrade",
+    topics: ["Chamberlains", "CHA-04", "Paradise", "Lanark Drive", "single-phase overload", "three-phase conversion"],
+    pages: "physical PDF pp. 37 to 39 and 391 to 394",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
     id: "np-2006-handbook",
     year: 2006,
     organization: "Newfoundland Power",
@@ -5457,13 +5517,80 @@ const earlyFeederMapProfiles = [
   {
     code: "BCV",
     name: "Broad Cove",
-    voltage: "66/25 kV",
+    voltage: "66/12.5 kV in the 2021 station study; 66/25 kV in the 2027 transformer register",
     handbookPage: "physical PDF pp. 6 and 11",
     feederRegister: ["BCV-01", "BCV-02", "BCV-03", "BCV-04"],
     mapPages: [["BCV-01", 22], ["BCV-02", 23], ["BCV-03", 24], ["BCV-04", 25]],
     connectedCircuits: [{ circuit: "5L", from: "Hardwoods", from_code: "HWD", to: "Broad Cove", to_code: "BCV" }],
     transformerPages: "physical PDF p. 546",
-    transformerFacts: [["BCV-T1", "66/25 kV; 25 MVA; 19.79 MVA 2026 forecast"]]
+    transformerFacts: [["BCV-T1", "66/25 kV; 25 MVA; 19.79 MVA 2026 forecast"]],
+    diagram: {
+      label: "2021 filed station arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "distribution bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "BCV-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "5L", destination: "Hardwoods", bus: "b1", destinationCode: "HWD" },
+        { label: "BCV-01", destination: "Old Broad Cove Road", bus: "b2", link: false },
+        { label: "BCV-02", destination: "Bell Island", bus: "b2", link: false },
+        { label: "BCV-03", destination: "Thorburn Road / Dogberry Hill Road", bus: "b2", link: false },
+        { label: "BCV-04", destination: "Portugal Cove and Bauline", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2021 FILED STATION ARRANGEMENT",
+      title: "Broad Cove radial distribution substation",
+      sourceId: "np-2021-broad-cove-study",
+      pages: "physical PDF pp. 5 to 7",
+      facts: [
+        ["Location", "intersection of Belbin's Road and Pendergast Road, St. Philip's"],
+        ["BCV-T1", "25 MVA; 66/12.5 kV"],
+        ["BCV-01", "617 customers; mainly Old Broad Cove Road"],
+        ["BCV-02", "1,580 customers; includes Bell Island through a submarine cable"],
+        ["BCV-03", "1,259 customers; mainly Thorburn Road and Dogberry Hill Road"],
+        ["BCV-04", "1,049 customers; Tuckers Hill Road, Beachy Cove Road, Portugal Cove Road and Bauline Line Extension"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [
+        ["BCV-T1", "66/25 kV; 25 MVA; 19.79 MVA 2026 forecast"],
+        ["Published voltage difference", "the 2008 and 2021 station records identify 12.5 kV local distribution; the 2027 fleet table lists BCV-T1 at 66/25 kV"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2008 FILED STATION WORK",
+        sourceId: "np-2008-broad-cove",
+        pages: "physical PDF p. 163",
+        facts: [
+          ["Station history", "built before 1960 as a distribution substation"],
+          ["Filed arrangement", "one 25 MVA, 66/12.5 kV transformer; radial 5L from Hardwoods; four 12.5 kV feeders"],
+          ["Customers", "approximately 4,350 in the St. Philip's and Bell Island areas"],
+          ["Proposed work", "replace the failed metering tank; restore metering and under-frequency load shedding; connect the functions to SCADA"]
+        ]
+      },
+      {
+        label: "2021 PROPOSED BCV-T2",
+        sourceId: "np-2021-broad-cove-study",
+        pages: "physical PDF pp. 7 to 9",
+        facts: [
+          ["Filed load forecast", "26.6 MVA in 2021 and 29.9 MVA in 2040 against the 25 MVA BCV-T1 rating; Table 1 prints the transformer row as BCV-01"],
+          ["Alternative 1", "add 25 MVA, 66/12.5 kV BCV-T2 in parallel with BCV-T1"],
+          ["Filed parallel capacity", "49.9 MVA"]
+        ]
+      },
+      {
+        label: "2023 MODERNIZATION DEFERRAL",
+        sourceId: "np-2023-broad-cove-deferral",
+        pages: "physical PDF p. 247",
+        facts: [
+          ["Project", "Broad Cove Substation Refurbishment and Modernization"],
+          ["Filed status", "deferred from 2023 for further engineering assessment; planned for 2025 in this filing"]
+        ]
+      }
+    ]
   },
   {
     code: "BFS",
@@ -5683,7 +5810,8 @@ const earlyFeederMapProfiles = [
     name: "Chamberlains",
     voltage: "66/25 kV",
     handbookPage: "physical PDF pp. 7 and 11",
-    feederRegister: ["CHA-01", "CHA-02", "CHA-03"],
+    feederRegisterLabel: "2018 PLANNING REGISTER",
+    feederRegister: ["CHA-01", "CHA-02", "CHA-03", "CHA-04"],
     mapPages: [["CHA-01", 41], ["CHA-03", 42]],
     connectedCircuits: [
       { circuit: "49L", from: "Hardwoods", from_code: "HWD", to: "Chamberlains", to_code: "CHA" },
@@ -5694,6 +5822,87 @@ const earlyFeederMapProfiles = [
     transformerFacts: [
       ["CHA-T1", "66/25 kV; 50 MVA; 35.34 MVA 2026 forecast"],
       ["CHA-T2", "66/25 kV; 25 MVA; 17.02 MVA 2026 forecast"]
+    ],
+    diagram: {
+      label: "2018 planning-register arrangement with 2027 transformer values",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "distribution bus", voltage: "25 kV" }],
+      transformers: [{ label: "CHA-T1", rating: "50 MVA", from: "b1", to: "b2" }, { label: "CHA-T2", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "49L", destination: "Hardwoods", bus: "b1", destinationCode: "HWD" },
+        { label: "51L", destination: "Kelligrews", bus: "b1", destinationCode: "KEL" },
+        { label: "79L", destination: "Hardwoods", bus: "b1", destinationCode: "HWD" },
+        { label: "CHA-01", destination: "25 kV feeder", bus: "b2", link: false },
+        { label: "CHA-02", destination: "25 kV feeder", bus: "b2", link: false },
+        { label: "CHA-03", destination: "25 kV feeder", bus: "b2", link: false },
+        { label: "CHA-04", destination: "Paradise", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2017 FILED EXISTING ARRANGEMENT",
+      title: "Chamberlains transmission and distribution substation",
+      sourceId: "np-2017-chamberlains",
+      pages: "physical PDF p. 237",
+      facts: [
+        ["Station history", "built in 1975 as a transmission and distribution substation"],
+        ["Transmission", "three 66 kV lines"],
+        ["Transformation", "CHA-T1 and CHA-T2 were each 25 MVA at 66/25 kV before the filed T1 replacement"],
+        ["Distribution", "CHA-01, CHA-02 and CHA-03 on the 25 kV bus"],
+        ["Customers", "approximately 8,265 in the Conception Bay South area"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [
+        ["CHA-T1", "66/25 kV; 50 MVA; 35.34 MVA 2026 forecast"],
+        ["CHA-T2", "66/25 kV; 25 MVA; 17.02 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2003 PROPOSED SECOND TRANSFORMER",
+        sourceId: "np-2003-chamberlains",
+        pages: "physical PDF pp. 36 to 37",
+        facts: [
+          ["Existing transformer", "25 MVA; peak load exceeded its nameplate rating"],
+          ["Proposed addition", "second 25 MVA, 66/25 kV transformer"],
+          ["Filed purpose", "customer growth in Chamberlains, Manuels and Topsail; outage capacity except during peak conditions"]
+        ]
+      },
+      {
+        label: "2017 PROPOSED CAPACITY AND FEEDER WORK",
+        sourceId: "np-2017-chamberlains",
+        pages: "physical PDF pp. 38, 43 and 252 to 253",
+        facts: [
+          ["Transformer", "replace 25 MVA CHA-T1 with a 50 MVA, 66/25 kV unit; retain 25 MVA CHA-T2"],
+          ["Filed parallel capacity", "increase from 49.3 MVA to 74.4 MVA"],
+          ["CHA-04", "new 25 kV feeder termination, approximately 0.35 km of new 477 ASC trunk and 3.00 km upgraded to three-phase 477 ASC"],
+          ["Filed cost", "$2.574 million for CHA-T1; $793,000 for distribution work; $284,000 for the feeder termination"]
+        ]
+      },
+      {
+        label: "2027 PROPOSED CHA-04 UPGRADE",
+        sourceId: "np-2027-cha04",
+        pages: "physical PDF pp. 38 to 39 and 391",
+        facts: [
+          ["Service", "2,683 customers in Paradise around Adam's Pond, Three Island Pond and Topsail Pond"],
+          ["Recorded load", "93 A peak in 2025 on the one-kilometre single-phase section near Lanark Drive"],
+          ["Forecast", "up to 163 A in 2027"],
+          ["Proposed work", "convert the overloaded one-kilometre section from single-phase to three-phase"],
+          ["Filed cost", "$561,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2027 CHA-04 ROUTE",
+    referenceSheets: [
+      {
+        title: "CHA-04 route through Paradise",
+        image: "./reference-maps/cha-04-2027-route.jpeg",
+        alt: "Filed CHA-04 route map from Chamberlains Substation through Paradise",
+        sourceId: "np-2027-cha04",
+        pages: "physical PDF p. 391"
+      }
     ]
   },
   {

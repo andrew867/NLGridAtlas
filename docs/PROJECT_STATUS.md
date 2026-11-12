@@ -124,6 +124,8 @@ Updated: 2026-11-12
 - Added Glenwood as the joint Hydro and Newfoundland Power 138/25 kV station on TL210, with its 1968 station history, GLN-T1, GLN-01, completed 2013 modernization, 2014 inspection record, current transformer listing and Central network map. The 147L tap remains identified only as a 2026 study assumption.
 - Added Cape Broyle and Fermeuse as the Southern Shore 66 kV chain. Cape Broyle now separates the plant circuit, local 12.5 kV distribution, 20L and 66L, and retains the conflicting 25 kV CAB-T2 fleet-table entry as a dated record. Fermeuse now separates Newfoundland Power's station extension and FER-902E-B from the seller-owned 66 kV line and Hydro-owned export meter.
 - Added the reported Q4 2008 completion of the Cape Broyle controls, station and 20L work, the completed Fermeuse wind-interconnection modifications, both March 2014 station equipment registers, the June 30, 2009 wind-project in-service date, and the 2027 CAB-01 route and proposed refurbishment.
+- Rebuilt Chamberlains as a dated 66/25 kV record. It now includes the proposed 2003 second transformer, the pre-project 2017 two-bank arrangement, the filed 50 MVA CHA-T1 replacement and CHA-04 construction, current CHA-T1 and CHA-T2 values, and the proposed 2027 CHA-04 single-phase conversion. The filed CHA-04 route map is preserved.
+- Rebuilt Broad Cove around the 2021 filed 66/12.5 kV arrangement, four feeder service areas, and radial 5L supply. The 2021 BCV-T2 proposal is not drawn as installed. The later 66/25 kV fleet-table entry and 2023 modernization deferral remain separate dated records.
 
 ## Active work
 

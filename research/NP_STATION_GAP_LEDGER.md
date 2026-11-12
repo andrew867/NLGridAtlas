@@ -356,6 +356,29 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The same application gives conflicting yard areas: 3,200 m2 in Schedule B on physical PDF p. 8 and 2,400 m2 in Schedule C on physical PDF p. 23. The atlas retains both values.
 - [x] Oxen Pond supplies Long Pond through 36L. No source found places the Health Sciences Complex on the OXP-01 distribution feeder.
 
+## Chamberlains station record
+
+- [x] The 2003 application proposed a second 25 MVA, 66/25 kV transformer. The existing 25 MVA transformer's peak load exceeded its nameplate rating, physical PDF p. 36.
+- [x] The 2017 filing records Chamberlains as a 1975 transmission and distribution station with three 66 kV lines, two 25 MVA, 66/25 kV transformers, three 25 kV feeders and approximately 8,265 customers, physical PDF p. 237.
+- [x] The filed 2017 work replaced CHA-T1 with a 50 MVA unit, retained 25 MVA CHA-T2, and raised the stated parallel capacity from 49.3 MVA to 74.4 MVA, physical PDF pp. 38 and 252.
+- [x] The same work added CHA-04 with approximately 0.35 km of new 477 ASC trunk and 3.00 km upgraded to three-phase 477 ASC, physical PDF pp. 43 and 252 to 253.
+- [x] The 2027 transformer table lists CHA-T1 at 50 MVA with a 35.34 MVA 2026 forecast and CHA-T2 at 25 MVA with a 17.02 MVA forecast, both at 66/25 kV, physical PDF p. 546.
+- [x] The 2027 CHA-04 filing records 2,683 customers, a 93 A measured 2025 peak on the one-kilometre single-phase section, an up-to-163 A 2027 forecast, and a proposed three-phase conversion, physical PDF pp. 38 to 39 and 391.
+- [x] The filed CHA-04 route map is extracted from physical PDF p. 391.
+- [ ] No searched record publishes the current breaker or bus-sectionalizing one-line. The atlas diagram is a logical connection record.
+
+## Broad Cove station record
+
+- [x] The 2008 filing records a pre-1960 distribution substation with one 25 MVA, 66/12.5 kV transformer, radial 5L supply from Hardwoods, four 12.5 kV feeders and approximately 4,350 customers, physical PDF p. 163.
+- [x] The filed 2008 work replaced a failed metering tank, restored metering and under-frequency load shedding, and tied those functions into SCADA, physical PDF p. 163.
+- [x] The 2021 planning study places the station at Belbin's Road and Pendergast Road and records one 25 MVA, 66/12.5 kV BCV-T1 with four distribution feeders, physical PDF pp. 5 to 6.
+- [x] BCV-01 served 617 customers, BCV-02 served 1,580 including Bell Island by submarine cable, BCV-03 served 1,259, and BCV-04 served 1,049, physical PDF pp. 5 to 6.
+- [x] The 2021 study forecast 26.6 MVA for 2021 and 29.9 MVA for 2040 against the 25 MVA transformer rating. The transformer row is printed as BCV-01 in Table 1, physical PDF p. 7.
+- [x] Alternative 1 proposed 25 MVA, 66/12.5 kV BCV-T2 in parallel with BCV-T1, for 49.9 MVA stated station capacity. This was an alternative, not an as-built record, physical PDF p. 8.
+- [x] The 2023 application says the Broad Cove modernization was deferred from 2023 for further engineering assessment and was then planned for 2025, physical PDF p. 247.
+- [x] The 2027 fleet table lists only BCV-T1 and gives 66/25 kV, 25 MVA, and a 19.79 MVA 2026 forecast, physical PDF p. 546.
+- [ ] The 12.5 kV station studies and 25 kV fleet-table entry remain unresolved. The atlas retains both dated records and does not draw BCV-T2 as installed.
+
 ## Remaining data classes
 
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.
