@@ -17,6 +17,14 @@
 
 The located record does not support a completed permanent conversion of Units 1, 2, or 3. The 2012 Units 1 and 2 conversion concept, the existing reversible Unit 3 arrangement, the 2022 life-extension plan, and the 2026 operating report are different dated states.
 
+## Plant services and auxiliary distribution
+
+| Date | Filed arrangement or work | Source |
+| --- | --- | --- |
+| 2017 filing | The plant had two station-service feeds. SST12 used a 66 kV overhead feed after its former cable failed in 2002. SST34 used an underground 66 kV cable system. Hydro proposed replacing the four SST34 cables and conduits. | [2017 Capital Budget Application, physical PDF pp. 278, 283 and 286](http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%20Volume%20III%20-%202016-07-28.PDF) |
+| 2017 filing | A separate Hydro substation near the terminal station supplied the dock, security building, warehouse, and trailers. It used Newfoundland Power circuit 38L, a 1.5 MVA three-phase 69-2.4/4.16 kV transformer installed in 1996, and one 4.16 kV feeder. | [2017 Capital Budget Application, physical PDF pp. 310 and 316](http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%20Volume%20III%20-%202016-07-28.PDF) |
+| 2019 completion | The SST34 cable replacement was completed in 2019. The proposed replacement auxiliary substation was not built as filed. Hydro instead completed a lower-cost supply connection developed with Newfoundland Power. The public completion report does not give the final transformer, feeder, or switchgear arrangement. | [2019 Capital Expenditures and Carryover Report, physical PDF pp. 39 to 40](http://www.pub.nl.ca/indexreports/expenditure/From%20NLH%20-%202019%20Capital%20Expenditures%20and%20Carryover%20Report%20-%202020-03-02.PDF) |
+
 ## Transformer inventory in the 2022 condition study
 
 | Equipment | Filed data | Physical PDF page |
