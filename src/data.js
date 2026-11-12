@@ -1430,6 +1430,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
   },
   {
+    id: "np-2022-humber",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Humber Substation Refurbishment and 4.16 kV Conversion",
+    topics: ["Humber", "HUM-T1", "HUM-T2", "HUM-T3", "HUM-01", "HUM-04", "HUM-07", "HUM-10", "356L", "359L", "66 kV", "12.5 kV", "4.16 kV"],
+    pages: "physical PDF pp. 282 to 289 and 312 to 317",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
     id: "np-2015-clarenville",
     year: 2014,
     organization: "Newfoundland Power",
@@ -3746,7 +3756,61 @@ const filedFeederMapProfiles = [
     ]
   },
   { code: "HGR", mapPages: [["HGR-01", 74]] },
-  { code: "HUM", mapPages: [["HUM-01", 77], ["HUM-08", 78], ["HUM-09", 79]] },
+  {
+    code: "HUM",
+    name: "Humber",
+    voltage: "66/12.5 kV current transformer record",
+    circuitRegisterLabel: "2021 FILED STATION ARRANGEMENT",
+    circuitSource: { sourceId: "np-2022-humber", pages: "physical PDF p. 282" },
+    connectedCircuits: [
+      { circuit: "356L", from: "Massey Drive", from_code: "MAS", to: "Humber", to_code: "HUM" },
+      { circuit: "359L", from: "Bayview", from_code: "BVS", to: "Humber", to_code: "HUM" }
+    ],
+    feederRegisterLabel: "2006 MAP REGISTER / 2022 FILED CONVERSION",
+    feederRegister: ["HUM-01", "HUM-04", "HUM-07", "HUM-08", "HUM-09", "HUM-10"],
+    mapPages: [["HUM-01", 77], ["HUM-08", 78], ["HUM-09", 79]],
+    eventLoads: [],
+    diagram: {
+      label: "2027 transformer record on the filed post-conversion arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "HUM-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "356L", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "359L", destination: "Bayview", bus: "b1", destinationCode: "BVS" }]
+    },
+    engineeringRecord: {
+      date: "2021 FILED STATION ARRANGEMENT",
+      title: "Humber transmission and distribution substation",
+      sourceId: "np-2022-humber",
+      pages: "physical PDF pp. 282 to 288",
+      facts: [
+        ["Station built", "1954 as a transmission and distribution substation"],
+        ["66 kV connections", "356L from Massey Drive and 359L from Bayview"],
+        ["Former 4.16 kV bank", "HUM-T2, 66/4.16 kV and 7.46 MVA; four switchgear exits, three normally serving customers"],
+        ["Former 12.5 kV bank", "HUM-T3, 66/12.5 kV and 13.3 MVA; two feeder exits"],
+        ["2019 bus-insulator failure", "a 66 kV centre-phase insulator failed on the 356L bus; no customer impact while the loop remained in service"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["HUM-T1", "66/12.5 kV; 25 MVA; 16.58 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2022 FILED CONVERSION AND MODERNIZATION",
+        sourceId: "np-2022-humber",
+        pages: "physical PDF pp. 288 to 289 and 312 to 317",
+        facts: [
+          ["Transformer arrangement", "remove HUM-T2 and replace HUM-T3 with one 25 MVA, 66/12.5 kV transformer"],
+          ["Voltage conversion", "convert HUM-01, HUM-04, and HUM-07 from 4.16 kV to 12.5 kV"],
+          ["Feeder arrangement", "construct HUM-10; the filed post-conversion design has three 12.5 kV feeders"],
+          ["Other station work", "replace deteriorated switches and vintage insulators; install transformer containment, protection, and a smaller control building"]
+        ]
+      }
+    ]
+  },
   { code: "ILC", mapPages: [["ILC-01", 86], ["ILC-02", 87]] },
   { code: "KEL", mapPages: [["KEL-01", 98], ["KEL-02", 99], ["KEL-03", 100]] },
   {

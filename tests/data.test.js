@@ -1073,6 +1073,24 @@ test("Long Lake connects 416L and the Rose Blanche plant feeder", () => {
   assert.match(historyFacts, /radial with no tie point or backup/);
 });
 
+test("Humber separates its former dual-voltage banks from the filed conversion", () => {
+  const humber = stationProfiles.find((station) => station.code === "HUM");
+  assert.ok(humber);
+  assert.deepEqual(humber.connectedCircuits.map(({ circuit }) => circuit), ["356L", "359L"]);
+  assert.deepEqual(humber.mapPages, [["HUM-01", 77], ["HUM-08", 78], ["HUM-09", 79]]);
+  assert.deepEqual(humber.diagram.transformers.map(({ label, rating }) => [label, rating]), [["HUM-T1", "25 MVA"]]);
+  const existingFacts = humber.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = humber.planningRecord.facts.flat().join(" ");
+  const proposedFacts = humber.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /HUM-T2, 66\/4.16 kV and 7.46 MVA/);
+  assert.match(existingFacts, /HUM-T3, 66\/12.5 kV and 13.3 MVA/);
+  assert.match(existingFacts, /no customer impact while the loop remained in service/);
+  assert.match(planningFacts, /66\/12.5 kV; 25 MVA; 16.58 MVA 2026 forecast/);
+  assert.match(proposedFacts, /remove HUM-T2 and replace HUM-T3 with one 25 MVA/);
+  assert.match(proposedFacts, /convert HUM-01, HUM-04, and HUM-07 from 4.16 kV to 12.5 kV/);
+  assert.match(proposedFacts, /post-conversion design has three 12.5 kV feeders/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
