@@ -142,6 +142,7 @@ Updated: 2026-11-12
 - Added Baie Verte Junction and Seal Cove Road as linked 363L station records, including the joint Indian River interface, the completed 2020 rebuild, and the former mine extension.
 - Added Berry Head's 402L and 410L connections, BHD-01, current transformer values, 1967 transformer record, January 2010 repair, 2013 gas-relay outage, and the filed radial control arrangement.
 - Added Doyles as a combined Hydro terminal and Newfoundland Power distribution record, including TL214, TL215, both transformers, DOY-01, the 2016 transformer project, B1L15 breaker work, and the 2025 remote terminal unit replacement.
+- Corrected 403L as the St. George's to Lookout Brook main line with a separate Robinsons radial tap, then added detailed St. George's and Robinsons station records and the 2008 33 kV to 66 kV conversion history.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work

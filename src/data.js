@@ -110,6 +110,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/rfi/PUB-NP-5.pdf"
   },
   {
+    id: "np-2008-403l-conversion",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Convert 403L to 66 kV",
+    topics: ["403L", "St. George's", "Robinsons", "Lookout Brook", "33 kV", "66 kV", "line losses"],
+    pages: "physical PDF pp. 28 and 183 to 185",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2020-403l-rob-tap",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, 403L Robinsons Tap Rebuild",
+    topics: ["403L", "St. George's", "Robinsons", "Lookout Brook", "1/0 ACSR", "transmission line rebuild"],
+    pages: "physical PDF pp. 143, 394 and 402",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
     id: "np-2010-transmission-list",
     year: 2010,
     organization: "Newfoundland Power",
@@ -7628,6 +7648,145 @@ export const stationProfiles = [
     ]
   },
   {
+    code: "ROB",
+    name: "Robinsons",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2020 FILED 403L TAP ARRANGEMENT",
+    circuitSource: { sourceId: "np-2020-403l-rob-tap", pages: "physical PDF pp. 394 and 402" },
+    connectedCircuits: [
+      { circuit: "403L Tap", from: "403L Tap Location", from_code: null, to: "Robinsons", to_code: "ROB" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["ROB-01", "ROB-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2020 filed radial tap arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "ROB-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "403L TAP", destination: "403L main line", bus: "b1", link: false },
+        { label: "ROB-01", destination: "Robinsons area", bus: "b2", link: false },
+        { label: "ROB-02", destination: "Robinsons area", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2020 FILED TAP RECORD",
+      title: "Robinsons radial transmission and distribution station",
+      sourceId: "np-2020-403l-rob-tap",
+      pages: "physical PDF p. 394",
+      facts: [
+        ["Supply", "4.0 km three-phase radial tap from the 403L St. George's to Lookout Brook main line"],
+        ["Original construction", "1960; 46 single-pole structures; non-standard 1/0 ACSR conductor"],
+        ["Customers", "approximately 1,300 in the filing"],
+        ["Filed 2020 work", "rebuild the radial tap at an estimated cost of $674,000"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [["ROB-T1", "66/25 kV; 6.67 MVA; 3.92 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "2008 FILED VOLTAGE CONVERSION",
+        sourceId: "np-2008-403l-conversion",
+        pages: "physical PDF pp. 183 to 185",
+        facts: [
+          ["Former operating voltage", "33 kV"],
+          ["Transformer", "existing dual-wound 33/66 kV unit retained for 66 kV operation"],
+          ["January 2007 peak", "4.0 MVA"]
+        ]
+      },
+      {
+        label: "2008 OPERATING CONVERSION RECORD",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 276",
+        facts: [["403L main line", "converted from 33 kV to 66 kV in 2008; Robinsons remained on the radial tap"]]
+      },
+      {
+        label: "2010 ASSET HISTORY",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF pp. 201 and 207",
+        facts: [
+          ["Station structures", "66 kV high-voltage wood structure installed in 1971; 25 kV low-voltage wood structure installed in 1974"],
+          ["2007 work", "replace voltage regulator"],
+          ["2008 work", "replace lightning arresters and refurbish ROB-T1"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "STG",
+    name: "St. George's",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2025 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "407L", from: "Stephenville Gas Turbine", from_code: "STV", to: "St. George's", to_code: "STG" },
+      { circuit: "403L", from: "St. George's", from_code: "STG", to: "Lookout Brook", to_code: "LBK" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["STG-01", "STG-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "Filed 66 kV through-station arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "STG-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "407L", destination: "Stephenville Gas Turbine", bus: "b1", destinationCode: "STV" },
+        { label: "403L", destination: "Lookout Brook", bus: "b1", destinationCode: "LBK" },
+        { label: "STG-01", destination: "St. George's area", bus: "b2", link: false },
+        { label: "STG-02", destination: "St. George's area", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2025 FILED CIRCUIT RECORD",
+      title: "St. George's transmission and distribution station",
+      sourceId: "np-2025-ca-np-168",
+      pages: "physical PDF p. 4",
+      facts: [
+        ["West circuit", "407L to Stephenville Gas Turbine"],
+        ["East circuit", "403L to Lookout Brook with a radial tap to Robinsons"],
+        ["Distribution", "STG-T1 supplies STG-01 and STG-02"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [["STG-T1", "66/25 kV; 6.67 MVA; 3.50 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "2008 FILED VOLTAGE CONVERSION",
+        sourceId: "np-2008-403l-conversion",
+        pages: "physical PDF pp. 183 to 185",
+        facts: [
+          ["Former arrangement", "407L supplied St. George's at 66 kV; a station transformer stepped down to the former 33 kV 403L system"],
+          ["Filed change", "remove the 66/33 kV step-down transformer and operate 403L at 66 kV"]
+        ]
+      },
+      {
+        label: "2008 COMPLETED RETIREMENT AND CONVERSION",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF pp. 166 and 276",
+        facts: [
+          ["St. George's", "33 kV section retired in 2008; the transformer returned to standby and the remaining equipment was scrapped"],
+          ["403L", "main line converted from 33 kV to 66 kV in 2008"]
+        ]
+      },
+      {
+        label: "2010 ASSET HISTORY",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 201",
+        facts: [["Distribution structures", "66 kV and 12.47 kV steel structures installed in 1977; 6.7 MVA transformer capacity"]]
+      }
+    ]
+  },
+  {
     code: "GBS",
     name: "Grand Bay",
     voltage: "66/12.5 kV in 2019 filing",
@@ -8893,7 +9052,8 @@ export const stationProfiles = [
     circuitRegisterLabel: "2026 EXISTING CONNECTION",
     circuitSource: { sourceId: "np-2027-lookout-brook", pages: "physical PDF p. 483" },
     connectedCircuits: [
-      { circuit: "403L", from: "Lookout Brook", from_code: "LBK", to: "Robinsons", to_code: "ROB" }
+      { circuit: "403L", from: "St. George's", from_code: "STG", to: "Lookout Brook", to_code: "LBK" },
+      { circuit: "403L Tap", from: "403L Tap Location", from_code: null, to: "Robinsons", to_code: "ROB" }
     ],
     feederRegisterLabel: "GENERATION STATION",
     feederRegister: [],
@@ -8903,7 +9063,10 @@ export const stationProfiles = [
       label: "2026 existing arrangement",
       buses: [{ id: "b1", label: "plant bus", voltage: "2.4 kV" }, { id: "b2", label: "transmission connection", voltage: "66 kV" }],
       transformers: [{ label: "LBK-T1", rating: "7.5 MVA", from: "b1", to: "b2" }],
-      circuits: [{ label: "403L", destination: "Robinsons", bus: "b2", destinationCode: "ROB" }],
+      circuits: [
+        { label: "403L", destination: "St. George's", bus: "b2", destinationCode: "STG" },
+        { label: "403L TAP", destination: "Robinsons", bus: "b2", destinationCode: "ROB" }
+      ],
       generators: [{ label: "G3", rating: "3 MVA", bus: "b1" }, { label: "G4", rating: "2.889 MVA", bus: "b1" }]
     },
     engineeringRecord: {
@@ -8916,7 +9079,7 @@ export const stationProfiles = [
         ["Generation", "G3 at 3 MVA and G4 at 2.889 MVA"],
         ["LBK-T1", "66/2.4 kV operating service; 7.5 MVA station-specific rating; English Electric"],
         ["Transformer history", "installed at Lookout Brook in 1997 after relocation from Grand Falls"],
-        ["Transmission connection", "403L to Robinsons Substation"],
+        ["Transmission connection", "403L main line to St. George's; the Robinsons radial tap branches from 403L"],
         ["Transformer protection", "fuses"]
       ]
     },

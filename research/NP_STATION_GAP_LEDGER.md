@@ -72,6 +72,15 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] Hydro's Q4 2025 report records replacement of the Doyles Terminal Station remote terminal unit, physical PDF p. 29.
 - [x] The 2027 transformer register records DOY-T2 at 66/25 kV, 6.67 MVA, with a 5.13 MVA 2026 forecast, physical PDF p. 547.
 
+## St. George's, Robinsons, and Lookout Brook 403L record
+
+- [x] 403L is the 66 kV main line between St. George's and Lookout Brook; Robinsons is supplied by a 4.0 km three-phase radial tap, 2020 Capital Budget Application, physical PDF p. 394.
+- [x] The 2008 project converted the former St. George's 33 kV system to 66 kV. The St. George's 66/33 kV step-down transformer was removed; the dual-wound Robinsons and Lookout Brook transformers were retained, physical PDF pp. 183 to 185. The depreciation study records the 33 kV section retired in 2008 and 403L operating at 66 kV, physical PDF pp. 166 and 276.
+- [x] The 2020 filing records the Robinsons tap as original 1960 construction with 46 deteriorated single-pole structures and non-standard 1/0 ACSR conductor. It was the only supply to approximately 1,300 customers, physical PDF p. 394.
+- [x] The 2010 asset history records ROB-T1 at 6.7 MVA, with a 66 kV wood structure installed in 1971 and a 25 kV wood structure installed in 1974; the transformer was refurbished in 2008, physical PDF pp. 201 and 207.
+- [x] The same asset record lists the St. George's distribution station at 6.7 MVA, with steel 66 kV and 12.47 kV structures installed in 1977, physical PDF p. 201.
+- [x] The 2027 transformer register records ROB-T1 at 66/25 kV, 6.67 MVA, with a 3.92 MVA 2026 forecast, and STG-T1 at 66/25 kV, 6.67 MVA, with a 3.50 MVA forecast, physical PDF p. 550.
+
 ## Avalon stations
 
 | State | Station or system | Data now in the atlas | Missing evidence | Next archive target |

@@ -1134,7 +1134,7 @@ test("Laurentian retains its three 66 kV connections and proposed transformer re
 test("Lookout Brook retains both hydro units and the documented transformer rating difference", () => {
   const lookoutBrook = stationProfiles.find((station) => station.code === "LBK");
   assert.ok(lookoutBrook);
-  assert.deepEqual(lookoutBrook.connectedCircuits.map(({ circuit }) => circuit), ["403L"]);
+  assert.deepEqual(lookoutBrook.connectedCircuits.map(({ circuit }) => circuit), ["403L", "403L Tap"]);
   assert.deepEqual(lookoutBrook.diagram.generators.map(({ label, rating }) => [label, rating]), [["G3", "3 MVA"], ["G4", "2.889 MVA"]]);
   const existingFacts = lookoutBrook.engineeringRecord.facts.flat().join(" ");
   const planningFacts = lookoutBrook.planningRecord.facts.flat().join(" ");
@@ -2811,6 +2811,34 @@ test("Doyles joins the Hydro terminal and Newfoundland Power distribution record
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "DOY-T2").forecast_2026_mva, 5.13);
   assert.equal(grandBay.connectedCircuits[0].from_code, "DOY");
   assert.equal(bottomBrook.diagram.circuits.find((record) => record.label === "TL214").destinationCode, "DOY");
+});
+
+test("the 403L records preserve the main line and Robinsons radial tap", () => {
+  const stGeorges = stationProfiles.find((station) => station.code === "STG");
+  const robinsons = stationProfiles.find((station) => station.code === "ROB");
+  const lookoutBrook = stationProfiles.find((station) => station.code === "LBK");
+
+  assert.ok(stGeorges);
+  assert.deepEqual(stGeorges.connectedCircuits.map((record) => [record.circuit, record.from_code, record.to_code]), [
+    ["407L", "STV", "STG"],
+    ["403L", "STG", "LBK"]
+  ]);
+  assert.deepEqual(stGeorges.feederRegister, ["STG-01", "STG-02"]);
+  assert.match(stGeorges.historyRecords[0].facts.flat().join(" "), /remove the 66\/33 kV step-down transformer/);
+  assert.match(stGeorges.historyRecords[1].facts.flat().join(" "), /33 kV section retired in 2008/);
+
+  assert.ok(robinsons);
+  assert.equal(robinsons.connectedCircuits[0].circuit, "403L Tap");
+  assert.deepEqual(robinsons.feederRegister, ["ROB-01", "ROB-02"]);
+  assert.match(robinsons.engineeringRecord.facts.flat().join(" "), /4.0 km three-phase radial tap/);
+  assert.match(robinsons.engineeringRecord.facts.flat().join(" "), /46 single-pole structures/);
+  assert.match(robinsons.historyRecords[1].facts.flat().join(" "), /converted from 33 kV to 66 kV in 2008/);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "ROB-T1").forecast_2026_mva, 3.92);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "STG-T1").forecast_2026_mva, 3.5);
+
+  assert.ok(lookoutBrook);
+  assert.deepEqual(lookoutBrook.connectedCircuits.map((record) => record.circuit), ["403L", "403L Tap"]);
+  assert.match(lookoutBrook.engineeringRecord.facts.flat().join(" "), /main line to St. George's/);
 });
 
 test("Greenhill code conflict is contextual and the latest code is preferred", async () => {
