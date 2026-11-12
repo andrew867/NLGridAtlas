@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, and Gander. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Greenspond, Mobile Plant, Boyd's Cove, and Gander separate existing equipment from future capital work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, and Blaketown. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Greenspond, Mobile Plant, Boyd's Cove, Gander, and Blaketown separate existing equipment from future capital work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -73,6 +73,15 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2027 fleet table lists GAN-T2 at 21.3 MVA and the GAN-T3 bank at 3.5 MVA. These values remain separate from the individual-unit rating in the 2015 station report, physical PDF p. 553.
 - [x] The proposed project adds a 138 kV line from Lewisporte to Boyd's Cove, moves the planned GAN-T2 replacement to Boyd's Cove, removes the 66 kV system from Gander, and adds a 138 kV grounding transformer at Gander, physical PDF pp. 65 to 67.
 - [ ] Do not render the proposed 138 kV Boyd's Cove supply or revised Gander arrangement as commissioned before a completion record confirms the filed 2027 schedule.
+
+## Blaketown station record
+
+- [x] The 2027 station report records two incoming 138 kV lines, four outgoing 66 kV lines, BLK-T3 at 25/33.3/41.6 MVA, BLK-T2 at 15/20 MVA, two 25 kV feeders, approximately 4,090 local customers, and approximately 5,970 customers on radial lines 55L and 94L, physical PDF pp. 422 to 425.
+- [x] The 2007 station report identifies the line designations and endpoints: 48L and 64L on the 138 kV bus; 55L, 80L, 86L, and 94L on the 66 kV bus, physical PDF p. 160.
+- [x] BLK-T3 is a Westinghouse 138/66 kV unit manufactured in 1977. BLK-T2 is a Federal Pioneer 138/25 kV unit manufactured in 1977, physical PDF pp. 424 to 425.
+- [x] BLK-T2's on-load tap changer faulted in 2021. The transformer was locked in a fixed position and external voltage regulators were installed, physical PDF p. 425.
+- [x] The proposed 2027 to 2028 work retains both transformers, repairs the BLK-T2 tap changer, and replaces switches, one 25 kV breaker, relays, the control building, and the cable trench, physical PDF pp. 423 to 431.
+- [ ] Do not record the modernization as commissioned before a completion report confirms the filed 2028 schedule.
 
 ## Pulpit Rock feeder-bus and transformer records
 

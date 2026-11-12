@@ -1200,6 +1200,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
   },
   {
+    id: "np-2007-blaketown",
+    year: 2006,
+    organization: "Newfoundland Power",
+    title: "2007 Capital Budget Application, Blaketown Substation Strategic Plan",
+    topics: ["Blaketown", "BLK-T2", "BLK-T3", "48L", "64L", "55L", "80L", "86L", "94L"],
+    pages: "physical PDF p. 160",
+    status: "verified",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2027-blaketown",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Blaketown Substation Refurbishment and Modernization",
+    topics: ["Blaketown", "BLK-T2", "BLK-T3", "138 kV", "66 kV", "25 kV", "substation modernization"],
+    pages: "physical PDF pp. 422 to 431",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3314,6 +3334,67 @@ export const stationProfiles = [
           ["GAN-T2", "install the replacement transformer at Boyd's Cove"],
           ["Ground source", "install a new 138 kV grounding transformer at Gander"],
           ["Filed schedule", "construction and commissioning planned for 2027"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "BLK",
+    name: "Blaketown",
+    voltage: "138/66/25 kV",
+    circuitRegisterLabel: "2007 DOCUMENTED CIRCUITS",
+    circuitSource: { sourceId: "np-2007-blaketown", pages: "physical PDF p. 160" },
+    connectedCircuits: [
+      { circuit: "48L", from: "Bay Roberts", from_code: "BRB", to: "Blaketown", to_code: "BLK" },
+      { circuit: "64L", from: "Western Avalon", from_code: "WAV", to: "Blaketown", to_code: "BLK" },
+      { circuit: "55L", from: "Blaketown", from_code: "BLK", to: "Clarkes Pond", to_code: "CLK" },
+      { circuit: "80L", from: "Blaketown", from_code: "BLK", to: "Heart's Content", to_code: "HCT" },
+      { circuit: "86L", from: "Western Avalon", from_code: "WAV", to: "Blaketown", to_code: "BLK" },
+      { circuit: "94L", from: "Blaketown", from_code: "BLK", to: "Riverhead", to_code: "RVH" }
+    ],
+    feederRegisterLabel: "2005 FEEDER REGISTER",
+    feederRegister: ["BLK-01", "BLK-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2007 circuits / 2026 equipment",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "BLK-T3", rating: "25/33.3/41.6 MVA", from: "b1", to: "b2" }, { label: "BLK-T2", rating: "15/20 MVA", from: "b1", to: "b3" }],
+      circuits: [{ label: "48L", destination: "Bay Roberts", bus: "b1", destinationCode: "BRB" }, { label: "64L", destination: "Western Avalon", bus: "b1", destinationCode: "WAV" }, { label: "55L", destination: "Clarkes Pond", bus: "b2", destinationCode: "CLK" }, { label: "80L", destination: "Heart's Content", bus: "b2", destinationCode: "HCT" }, { label: "86L", destination: "Western Avalon", bus: "b2", destinationCode: "WAV" }, { label: "94L", destination: "Riverhead", bus: "b2", destinationCode: "RVH" }]
+    },
+    engineeringRecord: {
+      date: "2026 STATION RECORD",
+      title: "Blaketown transmission and distribution station",
+      sourceId: "np-2027-blaketown",
+      pages: "physical PDF pp. 422 to 426",
+      facts: [
+        ["Station built", "1967; 138 kV infrastructure added in 1977"],
+        ["BLK-T3", "138/66 kV; 25/33.3/41.6 MVA; Westinghouse; manufactured in 1977"],
+        ["BLK-T2", "138/25 kV; 15/20 MVA; Federal Pioneer; manufactured in 1977"],
+        ["Distribution feeders", "two 25 kV feeders serving approximately 4,090 customers"],
+        ["Radial transmission load", "55L and 94L serve approximately 5,970 customers"],
+        ["BLK-T2 tap changer", "faulted in 2021; locked in a fixed position with external voltage regulators installed"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 546 and 552",
+      facts: [
+        ["BLK-T2", "138/25 kV; 20 MVA; 16.21 MVA 2026 forecast"],
+        ["BLK-T3", "138/66 kV; 41.6 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2027 TO 2028 PROPOSED MODERNIZATION",
+        sourceId: "np-2027-blaketown",
+        pages: "physical PDF pp. 423 to 431",
+        facts: [
+          ["Primary equipment", "replace deteriorated 138 kV and 66 kV switches and one oil-filled 25 kV breaker"],
+          ["Transformers", "retain BLK-T2 and BLK-T3; repair the BLK-T2 tap changer and add spill containment"],
+          ["Protection and control", "replace electromechanical relays with digital relays; replace the control building and cable trench"],
+          ["Filed schedule", "construction and commissioning planned for 2028"]
         ]
       }
     ]
