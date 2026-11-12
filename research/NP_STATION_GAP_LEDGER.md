@@ -1,6 +1,6 @@
 # Newfoundland Power station data gap ledger
 
-Last scan: 2026-11-11
+Last scan: 2026-11-12
 
 ## Scan completed
 
@@ -17,6 +17,8 @@ Last scan: 2026-11-11
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
 The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Old Perlican, Islington, Northwest Brook, Lockston, Summerville, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
+
+The Deer Lake distribution record now separates four dated states. The 2010 project replaced the overloaded 16.7 MVA, 66/12.5 kV DLK-T1 with a 25 MVA unit and moved the former unit to Mobile. The Q4 2010 report records both replacements complete. The 2018 transformer listing records DLK-T1 at 66/12.47 kV, while the 2027 register records 66/25 kV. Order P.U. 38 (2025) approved the DLK-03 to Wiltondale load-transfer project; the 2027 application reports engineering in progress and construction planned for early 2027.
 
 ## Avalon stations
 

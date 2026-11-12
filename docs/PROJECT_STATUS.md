@@ -110,6 +110,8 @@ Updated: 2026-11-12
 - Distinguished the Grand Falls NGF 138/66/25 kV yard north of the Trans-Canada Highway from the GFS 66/4.16 kV yard south of the highway. Added the documented 2011 to 2016 NGF modernization and 50 MVA transformer addition.
 - Corrected the CA-NP-020 feeder-map inventory from 112 sheets to the complete 150-sheet attachment. Added physical PDF pp. 20 to 57, including the previously omitted Abrahams Cove, Broad Cove, Bishop's Falls, Big Pond, Blaketown, Botwood, Bay Roberts, Bayview, Catalina, Chamberlains, Clarkes Pond, Clarenville, Cobb's Pond, Deer Lake, Gallant Street, Gambo, Gander, and Garnish sheets.
 - Added station records for Abrahams Cove, Broad Cove, Bishop's Falls, Big Pond, Bay Roberts, Bayview, Chamberlains, Cobb's Pond, Deer Lake distribution substation, and Garnish with the dated 2005 register, recovered feeder sheets, and 2027 transformer entries.
+- Added Deer Lake's 2010 transformer replacement and Q4 completion record, including the 16.8 MVA measured peak, the 25 MVA replacement, and relocation of the former 16.7 MVA unit to Mobile. Kept the 2018 66/12.47 kV listing separate from the 2027 66/25 kV register.
+- Added the approved DLK-03 to Wiltondale load-transfer project. The filed record identifies the 147 A measured peak, 85 A planning maximum, 468-customer transfer, $1.137 million approval, and early-2027 construction schedule.
 
 ## Active work
 

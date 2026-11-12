@@ -820,6 +820,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
   },
   {
+    id: "np-2010-deer-lake-mobile",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Deer Lake and Mobile Transformer Replacements",
+    topics: ["Deer Lake", "Mobile", "DLK-T1", "MOB-T2", "66 kV", "12.5 kV", "transformer replacement", "load growth"],
+    pages: "physical PDF pp. 307 to 314",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2010-q4-deer-lake-mobile",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "Q3 and Q4 2010 Quarterly Regulatory Reports, Deer Lake and Mobile Transformer Work",
+    topics: ["Deer Lake", "Mobile", "DLK-T1", "MOB-T2", "transformer replacement", "project completion"],
+    pages: "physical PDF pp. 815 and 864",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
+  },
+  {
+    id: "np-2026-dlk03",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, DLK-03 Feeder Additions for Load Growth",
+    topics: ["Deer Lake", "DLK-03", "Wiltondale", "WDL-L1", "Bonne Bay Big Pond", "feeder load transfer", "1/0 AASC"],
+    pages: "physical PDF pp. 307 to 313",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
+    id: "pu-38-2025",
+    year: 2025,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 38 (2025), Newfoundland Power 2026 Capital Budget",
+    topics: ["Deer Lake", "DLK-03", "Feeder Additions for Load Growth", "capital approval"],
+    pages: "physical PDF pp. 15, 20 and 23",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2025/P.U.%2038(2025).PDF"
+  },
+  {
+    id: "np-2027-dlk03-status",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, DLK-03 Project Status",
+    topics: ["Deer Lake", "DLK-03", "Wiltondale", "WDL-L1", "Bonne Bay Big Pond", "project status"],
+    pages: "physical PDF p. 238",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
     id: "np-2027-transformers",
     year: 2026,
     organization: "Newfoundland Power",
@@ -894,8 +944,8 @@ export const sources = [
     year: 2018,
     organization: "Newfoundland Power",
     title: "PUB-NP-081, Distribution Transformer and Feeder Listings",
-    topics: ["Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "12.47 kV", "forecast loading"],
-    pages: "physical PDF pp. 3 and 11",
+    topics: ["Deer Lake", "DLK-T1", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "12.47 kV", "forecast loading"],
+    pages: "physical PDF pp. 3, 8 and 11",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-081.PDF"
   },
@@ -4390,6 +4440,15 @@ const filedFeederMapProfiles = [
           ["Protection", "replace the electromechanical impedance relays on 11L, 20L and 24L with digital relays"],
           ["Transformers", "refurbish deteriorated MOB-T2; replace silicon-carbide arresters on MOB-T2 and MOB-T3 with metal-oxide arresters"]
         ]
+      },
+      {
+        label: "2010 COMPLETED MOB-T2 REPLACEMENT",
+        sourceId: "np-2010-q4-deer-lake-mobile",
+        pages: "physical PDF pp. 815 and 864",
+        facts: [
+          ["Replacement source", "the former 16.7 MVA, 66/12.5 kV DLK-T1 was relocated from Deer Lake to replace the 6.7 MVA MOB-T2"],
+          ["Completion", "the Q4 2010 regulatory report lists the Deer Lake and Mobile transformer replacements among completed major projects"]
+        ]
       }
     ]
   },
@@ -5114,12 +5173,81 @@ const earlyFeederMapProfiles = [
   {
     code: "DLK",
     name: "Deer Lake Distribution Substation",
-    voltage: "66/25 kV",
+    voltage: "66/25 kV in 2027 transformer register",
     handbookPage: "physical PDF p. 12",
     feederRegister: ["DLK-01", "DLK-03", "DLK-04"],
     mapPages: [["DLK-01", 48], ["DLK-03", 49]],
     transformerPages: "physical PDF p. 547",
-    transformerFacts: [["DLK-T1", "66/25 kV; 25 MVA; 22.14 MVA 2026 forecast"]]
+    transformerFacts: [
+      ["DLK-T1", "66/25 kV; 25 MVA; 22.14 MVA 2026 forecast"],
+      ["Dated voltage record", "the 2018 transformer listing records 66/12.47 kV; the 2027 transformer register records 66/25 kV"]
+    ],
+    diagram: {
+      label: "2027 transformer register",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "DLK-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: []
+    },
+    engineeringRecord: {
+      date: "2025 FILED FEEDER RECORD",
+      title: "Deer Lake distribution substation and DLK-03",
+      sourceId: "np-2026-dlk03",
+      pages: "physical PDF pp. 307 to 310",
+      facts: [
+        ["DLK-03 service", "approximately 1,490 residential and commercial customers in Deer Lake, Reidville, Cormack, Bonne Bay and the airport area"],
+        ["Overloaded section", "16 km of single-phase line, including 5.5 km of remote off-road three-phase supply"],
+        ["Measured peak", "approximately 147 A on the identified single-phase section; the filed planning maximum is 85 A"],
+        ["Bonne Bay Big Pond", "468 customers on the section identified for transfer to a new Wiltondale supply"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["DLK-T1", "66/25 kV; 25 MVA; 22.14 MVA 2026 forecast"],
+        ["Dated voltage record", "the 2018 transformer listing records 66/12.47 kV; the 2027 transformer register records 66/25 kV"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2010 COMPLETED TRANSFORMER REPLACEMENT",
+        sourceId: "np-2010-deer-lake-mobile",
+        pages: "physical PDF pp. 307 to 314",
+        facts: [
+          ["2008 peak", "16.8 MVA on the 16.7 MVA DLK-T1"],
+          ["Replacement", "new 25 MVA, 66/12.5 kV DLK-T1"],
+          ["Displaced unit", "the 16.7 MVA, 66/12.5 kV transformer was assigned to replace MOB-T2"],
+          ["Completion", "the Q4 2010 report records both Deer Lake and Mobile transformer replacements complete"]
+        ]
+      },
+      {
+        label: "2018 TRANSFORMER LISTING",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF p. 8",
+        facts: [
+          ["DLK-T1", "66/12.47 kV; 25 MVA; 21.5 MVA forecast for 2024 to 2025"]
+        ]
+      },
+      {
+        label: "DECEMBER 2025 APPROVED DLK-03 WORK",
+        sourceId: "pu-38-2025",
+        pages: "physical PDF pp. 15, 20 and 23",
+        facts: [
+          ["Approved scope", "upgrade 3.5 km of DLK-03 from single-phase to three-phase and connect it to a new 2.5 km extension from WDL-L1"],
+          ["Approved cost", "$1.137 million over 2026 and 2027 under Order P.U. 38 (2025)"]
+        ]
+      },
+      {
+        label: "2026 FILED PROJECT STATUS",
+        sourceId: "np-2027-dlk03-status",
+        pages: "physical PDF p. 238",
+        facts: [
+          ["Status", "engineering was in progress; construction was set to begin in early 2027"],
+          ["2027 expenditure", "$887,000 of the approved $1.137 million total"]
+        ]
+      }
+    ]
   },
   {
     code: "GAR",
@@ -5137,19 +5265,20 @@ const earlyFeederMapProfiles = [
   ...(station.connectedCircuits ? { circuitSource: { sourceId: "np-2006-handbook", pages: station.handbookPage } } : {}),
   feederRegisterLabel: "2005 FEEDER REGISTER",
   eventLoads: [],
-  engineeringRecord: {
+  engineeringRecord: station.engineeringRecord ?? {
     date: "2005 REGISTER",
     title: `${station.name} feeder and circuit record`,
     sourceId: "np-2006-handbook",
     pages: station.handbookPage,
     facts: [["Registered feeders", station.feederRegister.join(", ")]]
   },
-  planningRecord: {
+  planningRecord: station.planningRecord ?? {
     label: "2027 TRANSFORMER REGISTER",
     sourceId: "np-2027-transformers",
     pages: station.transformerPages,
     facts: station.transformerFacts
-  }
+  },
+  historyRecords: station.historyRecords ?? []
 }));
 
 export const stationProfiles = [

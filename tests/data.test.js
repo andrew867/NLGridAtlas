@@ -432,6 +432,23 @@ test("early CA-NP-020 feeder sheets have station records and current transformer
   assert.match(bishopsFalls.planningRecord.facts.flat().join(" "), /BFS-T1.*138\/25 kV; 20 MVA; 8\.47 MVA/);
 });
 
+test("Deer Lake keeps the dated voltage records and approved DLK-03 work separate", () => {
+  const deerLake = stationProfiles.find((station) => station.code === "DLK");
+  assert.ok(deerLake);
+  assert.deepEqual(deerLake.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "25 kV"]);
+  assert.match(deerLake.engineeringRecord.facts.flat().join(" "), /approximately 147 A.*85 A/);
+  assert.match(deerLake.planningRecord.facts.flat().join(" "), /2018 transformer listing records 66\/12\.47 kV.*2027 transformer register records 66\/25 kV/);
+
+  const history = deerLake.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(history, /16\.8 MVA on the 16\.7 MVA DLK-T1/);
+  assert.match(history, /Q4 2010 report records both Deer Lake and Mobile transformer replacements complete/);
+  assert.match(history, /upgrade 3\.5 km of DLK-03.*new 2\.5 km extension from WDL-L1/);
+  assert.match(history, /engineering was in progress; construction was set to begin in early 2027/);
+
+  const mobile = stationProfiles.find((station) => station.code === "MOB");
+  assert.match(mobile.historyRecords.flatMap(({ facts }) => facts).flat().join(" "), /former 16\.7 MVA, 66\/12\.5 kV DLK-T1 was relocated/);
+});
+
 test("island terminal records retain page-level sources", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
   assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "MAS", "STV", "CBC", "VBN", "SDP", "USL", "GRC", "CAT", "HLA"]);
