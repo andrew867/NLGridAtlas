@@ -102,6 +102,18 @@ test("Newfoundland Power circuit links open the station browser", () => {
   assert.match(html, /data-station-record="SLA"/);
 });
 
+test("station-profile destination codes open the station browser", () => {
+  const diagram = {
+    label: "Princeton Pond switching point",
+    buses: [{ id: "b1", label: "bus 1", voltage: "138 kV" }],
+    transformers: [],
+    circuits: [{ label: "123L", destination: "Catalina", destinationCode: "CAT", bus: "b1" }]
+  };
+  const html = renderTerminalDiagram(diagram, escapeHtml, "station");
+  assert.match(html, /data-station-record="CAT"/);
+  assert.doesNotMatch(html, /data-hydro-terminal-record="CAT"/);
+});
+
 test("diagram text masks conductor strokes", async () => {
   const css = await readFile(new URL("../src/styles.css", import.meta.url), "utf8");
   assert.match(css, /\.terminal-diagram text\s*\{[^}]*paint-order:\s*stroke fill/s);

@@ -3,13 +3,16 @@ function spread(index, count, left = 170, right = 950) {
   return left + ((right - left) * index) / (count - 1);
 }
 
-function circuitLink(circuit, body, escapeHtml) {
+function circuitLink(circuit, body, escapeHtml, linkTarget) {
   if (circuit.link === false) return body;
   const label = escapeHtml(`${circuit.label} to ${circuit.destination}`);
   if (circuit.stationCode) {
     return `<a href="#station-browser" data-station-record="${escapeHtml(circuit.stationCode)}" aria-label="Open ${label}">${body}</a>`;
   }
   if (circuit.destinationCode) {
+    if (linkTarget === "station") {
+      return `<a href="#station-browser" data-station-record="${escapeHtml(circuit.destinationCode)}" aria-label="Open ${label}">${body}</a>`;
+    }
     return `<a href="#hydro-terminal-browser" data-hydro-terminal-record="${escapeHtml(circuit.destinationCode)}" aria-label="Open ${label}">${body}</a>`;
   }
   return `<a href="#island-backbone" data-island-circuit="${escapeHtml(circuit.label)}" aria-label="Locate ${label} on the island backbone">${body}</a>`;
@@ -31,7 +34,7 @@ function transformerSymbol(transformer, index, count, buses, escapeHtml) {
   </g>`;
 }
 
-function circuitSymbol(circuit, index, count, bus, direction, escapeHtml) {
+function circuitSymbol(circuit, index, count, bus, direction, escapeHtml, linkTarget) {
   const x = spread(index, count);
   const lineEnd = bus.y + direction * 68;
   const labelY = bus.y + direction * 88;
@@ -41,7 +44,7 @@ function circuitSymbol(circuit, index, count, bus, direction, escapeHtml) {
     <text class="terminal-circuit-id" x="${x}" y="${labelY}">${escapeHtml(circuit.label)}</text>
     <text class="terminal-circuit-destination" x="${x}" y="${destinationY}">${escapeHtml(circuit.destination)}</text>
   </g>`;
-  return circuitLink(circuit, body, escapeHtml);
+  return circuitLink(circuit, body, escapeHtml, linkTarget);
 }
 
 function accessorySymbol(accessory, index, count, bus, type, escapeHtml) {
@@ -85,7 +88,7 @@ function converterSymbol(converter, index, count, bus, escapeHtml) {
   </g>`;
 }
 
-export function renderTerminalDiagram(diagram, escapeHtml) {
+export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-terminal") {
   if (!diagram) return "";
   const busGap = 210;
   const buses = diagram.buses.map((bus, index) => ({ ...bus, y: 165 + index * busGap }));
@@ -103,7 +106,7 @@ export function renderTerminalDiagram(diagram, escapeHtml) {
   const circuitMarkup = buses.map((bus, busIndex) => {
     const circuits = circuitsByBus.get(bus.id) || [];
     const direction = busIndex === 0 ? -1 : 1;
-    return circuits.map((circuit, index) => circuitSymbol(circuit, index, circuits.length, bus, direction, escapeHtml)).join("");
+    return circuits.map((circuit, index) => circuitSymbol(circuit, index, circuits.length, bus, direction, escapeHtml, linkTarget)).join("");
   }).join("");
 
   const transformerMarkup = diagram.transformers.map((transformer, index) => transformerSymbol(transformer, index, diagram.transformers.length, buses, escapeHtml)).join("");

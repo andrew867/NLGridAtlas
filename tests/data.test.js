@@ -849,6 +849,24 @@ test("Clarenville separates the 2014 arrangement from the present three-transfor
   assert.match(historyFacts, /41\.5 MVA for CLV-T2 and CLV-T3 operating in parallel/);
 });
 
+test("Princeton Pond is represented as a breakerless switching point", async () => {
+  const princetonPond = stationProfiles.find((station) => station.code === "PRC");
+  assert.ok(princetonPond);
+  assert.equal(princetonPond.diagram.transformers.length, 0);
+  assert.deepEqual(princetonPond.diagram.buses.map(({ voltage }) => voltage), ["138 kV", "66 kV"]);
+  assert.deepEqual(princetonPond.diagram.circuits.map(({ label, destination }) => [label, destination]), [["123L", "Clarenville"], ["123L", "Catalina"], ["113L", "Summerville"], ["113L", "Lockston"]]);
+  const facts = [
+    ...princetonPond.engineeringRecord.facts.flat(),
+    ...princetonPond.historyRecords.flatMap(({ facts }) => facts).flat()
+  ].join(" ");
+  assert.match(facts, /138 kV and 66 kV buses are not connected/);
+  assert.match(facts, /station has no circuit breakers/);
+  assert.match(facts, /portable substation can connect 113L at 66 kV to 123L at 138 kV/);
+  assert.match(facts, /normally open point at Lethbridge/);
+  assert.deepEqual(princetonPond.referenceSheets.map((sheet) => sheet.image), ["./reference-maps/prc-2024-single-line.png"]);
+  await readFile(new URL("../public/reference-maps/prc-2024-single-line.png", import.meta.url));
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

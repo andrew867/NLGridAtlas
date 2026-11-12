@@ -231,6 +231,15 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2027 fleet table lists CLV-T1 at 25 MVA, CLV-T2 at 20 MVA with an 11.64 MVA forecast, and CLV-T3 at 25 MVA with a 13.01 MVA forecast, physical PDF pp. 546 and 552.
 - [ ] The searched records do not give the CLV-T3 commissioning date or a post-modernization breaker one-line. The atlas does not assign either.
 
+## Princeton Pond switching-station record
+
+- [x] CA-NP-116 states that 113L and 123L terminate at Princeton Pond. The filed single-line shows 123L at 138 kV toward Clarenville and Catalina and 113L at 66 kV toward Summerville and Lockston, physical PDF pp. 2 and 7.
+- [x] The station has no circuit breakers. Its 138 kV and 66 kV buses are separate in the filed arrangement, physical PDF pp. 2 and 7.
+- [x] Princeton Pond provides a connection point for a portable substation that can connect 66 kV 113L to 138 kV 123L for Bonavista Peninsula support, physical PDF p. 2.
+- [x] The Bonavista Peninsula normally operates as two radial networks with a normally open point at Lethbridge. The Lethbridge switch can connect 110L and 113L for emergency backup, physical PDF p. 2.
+- [x] The filed Princeton Pond one-line is extracted as a station reference sheet, physical PDF p. 7.
+- [ ] No searched record establishes a permanent power transformer or distribution feeder at Princeton Pond. The atlas does not draw either.
+
 ## Pulpit Rock feeder-bus and transformer records
 
 - [x] The 2025 application says PUL-T1 and the then-installed PUL-T2 supplied five 12.5 kV feeders, physical PDF pp. 458 and 463.

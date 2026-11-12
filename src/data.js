@@ -1310,6 +1310,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
   },
   {
+    id: "np-2025-ca-np-116",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "CA-NP-116, Bonavista Peninsula Network and Princeton Pond Single-Line",
+    topics: ["Princeton Pond", "PRC", "113L", "123L", "66 kV", "138 kV", "portable substation", "Bonavista Peninsula"],
+    pages: "physical PDF pp. 1 to 2 and 7",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/CA-NP-116.PDF"
+  },
+  {
     id: "np-2007-blaketown",
     year: 2006,
     organization: "Newfoundland Power",
@@ -4711,6 +4721,64 @@ export const stationProfiles = [
           ["Feeder details", "CLV-02 provided backup to the Clarenville Hospital for a 1.2 MVA demand; CLV-03 supplied White Hills Ski Resort"],
           ["Parallel-bank capacity", "the filing gives 41.5 MVA for CLV-T2 and CLV-T3 operating in parallel because transformer impedance affects load sharing"]
         ]
+      }
+    ]
+  },
+  {
+    code: "PRC",
+    name: "Princeton Pond",
+    voltage: "138/66 kV switching point",
+    circuitRegisterLabel: "2024 FILED CONNECTIONS",
+    circuitSource: { sourceId: "np-2025-ca-np-116", pages: "physical PDF pp. 2 and 7" },
+    connectedCircuits: [
+      { circuit: "123L", from: "Clarenville", from_code: "CLV", to: "Princeton Pond", to_code: "PRC" },
+      { circuit: "123L", from: "Princeton Pond", from_code: "PRC", to: "Catalina", to_code: "CAT" },
+      { circuit: "113L", from: "Summerville", from_code: "SMV", to: "Princeton Pond", to_code: "PRC" },
+      { circuit: "113L", from: "Princeton Pond", from_code: "PRC", to: "Lockston", to_code: "LOK" }
+    ],
+    feederRegisterLabel: "2024 FILED STATION ROLE",
+    feederRegister: ["Breakerless switching point", "Portable substation connection point"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2024 filed Princeton Pond arrangement",
+      buses: [{ id: "b1", label: "bus 1 / bus 2", voltage: "138 kV" }, { id: "b2", label: "bus 3", voltage: "66 kV" }],
+      transformers: [],
+      circuits: [{ label: "123L", destination: "Clarenville", bus: "b1", destinationCode: "CLV" }, { label: "123L", destination: "Catalina", bus: "b1", destinationCode: "CAT" }, { label: "113L", destination: "Summerville", bus: "b2", destinationCode: "SMV" }, { label: "113L", destination: "Lockston", bus: "b2", destinationCode: "LOK" }]
+    },
+    engineeringRecord: {
+      date: "2024 FILED ARRANGEMENT",
+      title: "Princeton Pond breakerless transmission switching point",
+      sourceId: "np-2025-ca-np-116",
+      pages: "physical PDF pp. 2 and 7",
+      facts: [
+        ["138 kV circuit", "123L toward Clarenville and Catalina"],
+        ["66 kV circuit", "113L toward Summerville and Lockston"],
+        ["Normal arrangement", "the 138 kV and 66 kV buses are not connected"],
+        ["Installed switching", "the station has no circuit breakers"],
+        ["Portable equipment role", "a portable substation can connect 113L at 66 kV to 123L at 138 kV to support the Bonavista Peninsula network"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "BONAVISTA PENINSULA OPERATING ARRANGEMENT",
+        sourceId: "np-2025-ca-np-116",
+        pages: "physical PDF pp. 1 to 2",
+        facts: [
+          ["Normal supply", "two radial networks operate with a normally open point at Lethbridge"],
+          ["138 kV path", "123L originates at Clarenville and supplies 111L, 113L, and 117L"],
+          ["Emergency backup", "closing the normally open switch at Lethbridge connects 110L and 113L for contingency supply"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2024 FILED SINGLE-LINE",
+    referenceSheets: [
+      {
+        title: "Princeton Pond electrical single-line",
+        image: "./reference-maps/prc-2024-single-line.png",
+        alt: "Filed Princeton Pond single-line showing separate 138 kV and 66 kV buses, 123L, 113L, potential transformers, and no circuit breakers",
+        sourceId: "np-2025-ca-np-116",
+        pages: "physical PDF p. 7"
       }
     ]
   },
