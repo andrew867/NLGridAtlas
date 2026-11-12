@@ -1380,6 +1380,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
   },
   {
+    id: "np-2020-marystown",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Marystown Substation Refurbishment and Modernization",
+    topics: ["Marystown", "MSY-T1", "MSY-01", "MSY-02", "MSY-03", "MSY-04", "300L", "308L", "138 kV", "12.5 kV"],
+    pages: "physical PDF pp. 359 to 362",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
     id: "np-2015-clarenville",
     year: 2014,
     organization: "Newfoundland Power",
@@ -3701,7 +3711,60 @@ const filedFeederMapProfiles = [
   { code: "KEL", mapPages: [["KEL-01", 98], ["KEL-02", 99], ["KEL-03", 100]] },
   { code: "LGL", mapPages: [["LGL-01", 106]] },
   { code: "MOB", mapPages: [["MOB-02", 107]] },
-  { code: "MSY", mapPages: [["MSY-01", 114]] },
+  {
+    code: "MSY",
+    name: "Marystown",
+    voltage: "138/12.5 kV",
+    circuitRegisterLabel: "2025 CIRCUIT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "300L", from: "Linton Lake", from_code: "LLK", to: "Marystown", to_code: "MSY" },
+      { circuit: "308L", from: "Marystown", from_code: "MSY", to: "Salt Pond", to_code: "SPO" }
+    ],
+    feederRegisterLabel: "2019 FILED STATION ARRANGEMENT",
+    feederRegister: ["MSY-01", "MSY-02", "MSY-03", "MSY-04"],
+    mapPages: [["MSY-01", 114]],
+    eventLoads: [],
+    diagram: {
+      label: "2019 filed logical arrangement with current transformer rating",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "MSY-T1", rating: "20 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "300L", destination: "Linton Lake", bus: "b1", destinationCode: "LLK" }, { label: "308L", destination: "Salt Pond", bus: "b1", destinationCode: "SPO" }]
+    },
+    engineeringRecord: {
+      date: "2019 FILED STATION ARRANGEMENT",
+      title: "Marystown transmission and distribution substation",
+      sourceId: "np-2020-marystown",
+      pages: "physical PDF pp. 359 to 361",
+      facts: [
+        ["Station built", "1976 as a transmission and distribution substation"],
+        ["138 kV connections", "300L from Linton Lake and 308L from Salt Pond"],
+        ["MSY-T1", "138/12.5 kV; 20 MVA; installed in 1977"],
+        ["Distribution", "MSY-01, MSY-02, MSY-03, and MSY-04; approximately 2,975 Marystown-area customers in the 2019 filing"],
+        ["Transformer protection", "high-speed ground switch and five electromechanical relays in the filed arrangement"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["MSY-T1", "138/12.5 kV; 20 MVA; 18.33 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2020 FILED MODERNIZATION",
+        sourceId: "np-2020-marystown",
+        pages: "physical PDF pp. 359 to 362",
+        facts: [
+          ["Transformer work", "refurbish MSY-T1, upgrade auxiliary protection, and install spill containment"],
+          ["138 kV switching", "install breakers and digital protection for 300L, 308L, and MSY-T1; remove the transformer high-speed ground switch"],
+          ["Protection and control", "replace the electromechanical transformer relays; add a control building, gateway, and SCADA equipment"]
+        ]
+      }
+    ]
+  },
   { code: "PAB", mapPages: [["PAB-03", 116], ["PAB-05", 117]] },
   { code: "PAS", mapPages: [["PAS-01", 118]] },
   { code: "SCV", mapPages: [["SCV-01", 134]] },

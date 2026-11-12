@@ -1006,6 +1006,22 @@ test("Salt Pond separates its filed arrangement from proposed modernization work
   assert.match(proposedFacts, /2017 FILED MODERNIZATION|replace three hydraulic reclosers/i);
 });
 
+test("Marystown retains its two 138 kV connections and filed modernization", () => {
+  const marystown = stationProfiles.find((station) => station.code === "MSY");
+  assert.ok(marystown);
+  assert.deepEqual(marystown.connectedCircuits.map(({ circuit }) => circuit), ["300L", "308L"]);
+  assert.deepEqual(marystown.feederRegister, ["MSY-01", "MSY-02", "MSY-03", "MSY-04"]);
+  assert.deepEqual(marystown.mapPages, [["MSY-01", 114]]);
+  assert.deepEqual(marystown.diagram.transformers.map(({ label, rating }) => [label, rating]), [["MSY-T1", "20 MVA"]]);
+  const existingFacts = marystown.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = marystown.planningRecord.facts.flat().join(" ");
+  const proposedFacts = marystown.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /installed in 1977/);
+  assert.match(existingFacts, /high-speed ground switch and five electromechanical relays/);
+  assert.match(planningFacts, /18.33 MVA 2026 forecast/);
+  assert.match(proposedFacts, /install breakers and digital protection for 300L, 308L, and MSY-T1/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
