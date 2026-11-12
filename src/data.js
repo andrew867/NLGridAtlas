@@ -30,6 +30,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-2003-frenchmans-cove-clearance",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-20(b), Frenchman's Cove and Gillams Regulator Clearances",
+    topics: ["Frenchman's Cove", "Gillams", "voltage regulators", "substation clearances"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2020%20(b).pdf"
+  },
+  {
+    id: "np-2003-frenchmans-cove-cost",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-20(f), Frenchman's Cove and Gillams Rebuild Cost Breakdown",
+    topics: ["Frenchman's Cove", "Gillams", "substation rebuild", "capital cost"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2020%20(f).pdf"
+  },
+  {
     id: "np-2008-broad-cove",
     year: 2007,
     organization: "Newfoundland Power",
@@ -128,6 +148,26 @@ export const sources = [
     pages: "physical PDF pp. 143, 394 and 402",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "np-2022-ca-np-047",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "CA-NP-047, Communications Equipment Reliability",
+    topics: ["Frenchman's Cove", "communications", "battery monitoring", "SCADA", "outage restoration"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/rfis/CA-NP-047.PDF"
+  },
+  {
+    id: "np-2023-nlh-np-022",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-022, Walbournes and Frenchman's Cove Customer Supply",
+    topics: ["Walbournes", "Frenchman's Cove", "353L", "customer count"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/rfis/NLH-NP-022.PDF"
   },
   {
     id: "np-2010-transmission-list",
@@ -1024,8 +1064,8 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "PUB-NP-274, 2014/15 Transformer Ratings and Forecast Loads",
-    topics: ["Bay Roberts", "Big Pond", "BRB-T1", "BRB-T2", "BRB-T3", "BRB-T4", "BIG-T1", "transformer ratings", "winter forecast"],
-    pages: "physical PDF pp. 1, 3, 5 and 10",
+    topics: ["Bay Roberts", "Big Pond", "Frenchman's Cove", "BRB-T1", "BRB-T2", "BRB-T3", "BRB-T4", "BIG-T1", "FRN-T1", "transformer ratings", "winter forecast"],
+    pages: "physical PDF pp. 1, 3, 5, 8 and 10",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-274.pdf"
   },
@@ -1394,7 +1434,7 @@ export const sources = [
     year: 2018,
     organization: "Newfoundland Power",
     title: "PUB-NP-081, Distribution Transformer and Feeder Listings",
-    topics: ["Deer Lake", "DLK-T1", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "12.47 kV", "forecast loading"],
+    topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "12.47 kV", "forecast loading"],
     pages: "physical PDF pp. 3, 8 and 11",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-081.PDF"
@@ -2934,7 +2974,7 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "CA-NP-168, Attachment A, Transmission Line Endpoints",
-    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "105L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "357L", "358L", "359L", "Big Pond", "Bayview", "Grand Falls", "Sandy Brook", "Heart's Content", "New Chelsea", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
+    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "105L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "353L", "357L", "358L", "359L", "Big Pond", "Bayview", "Frenchman's Cove", "Grand Falls", "Sandy Brook", "Heart's Content", "New Chelsea", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
     pages: "physical PDF pp. 3 to 4",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
@@ -9379,6 +9419,90 @@ export const stationProfiles = [
         pages: "physical PDF p. 12",
         facts: [
           ["Project status", "Newfoundland Power reported the Walbournes refurbishment and modernization complete"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "FRN",
+    name: "Frenchman's Cove",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2025 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "353L", from: "Walbournes", from_code: "WAL", to: "Frenchman's Cove", to_code: "FRN" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["FRN-01", "FRN-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "current transformer rating on documented radial connection",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "FRN-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "353L", destination: "Walbournes", bus: "b1", destinationCode: "WAL" },
+        { label: "FRN-01", destination: "Frenchman's Cove area", bus: "b2", link: false },
+        { label: "FRN-02", destination: "Frenchman's Cove area", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2022 REPORTED SYSTEM RECORD",
+      title: "Frenchman's Cove radial distribution station",
+      sourceId: "np-2023-nlh-np-022",
+      pages: "physical PDF p. 2",
+      facts: [
+        ["Supply", "radial 353L from Walbournes Substation"],
+        ["Customers", "approximately 1,400 in the response"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [["FRN-T1", "66/25 kV; 6.67 MVA; 4.92 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "1977 ASSET RECORD",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 200",
+        facts: [
+          ["FRN-T1 capacity", "6.67 MVA"],
+          ["Structures", "wood 66 kV and 12.47 kV structures installed in 1977"]
+        ]
+      },
+      {
+        label: "2003 FILED CLEARANCE WORK",
+        sourceId: "np-2003-frenchmans-cove-clearance",
+        pages: "physical PDF p. 1",
+        facts: [["Filed work", "modify the station layout to correct insufficient electrical-equipment clearances around the regulators"]]
+      },
+      {
+        label: "2003 FILED COST",
+        sourceId: "np-2003-frenchmans-cove-cost",
+        pages: "physical PDF p. 1",
+        facts: [["Frenchman's Cove", "$21,000 labour and $9,000 non-labour; $30,000 total"]]
+      },
+      {
+        label: "2014 TRANSFORMER RECORD",
+        sourceId: "np-2014-pub-np-274",
+        pages: "physical PDF p. 8",
+        facts: [["FRN-T1", "66/12.5 kV; 6.67 MVA; 6.34 MVA forecast peak; 95% of rating"]]
+      },
+      {
+        label: "2018 TRANSFORMER RECORD",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF p. 8",
+        facts: [["FRN-T1", "66/12.47 kV; 6.7 MVA; 5.2 MVA forecast peak; 77.61% of rating"]]
+      },
+      {
+        label: "MAY 2018 COMMUNICATIONS FAILURE",
+        sourceId: "np-2022-ca-np-047",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Event", "a feeder outage affected more than 800 customers; failed cabinet batteries caused loss of communications and delayed restoration"],
+          ["Follow-up", "Newfoundland Power reported installing battery monitoring that alarms when batteries start to degrade"]
         ]
       }
     ]

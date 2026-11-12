@@ -278,6 +278,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2027 transformer table records 2026 forecasts of 20.74 MVA for WAL-T1 and 21.16 MVA for WAL-T2, physical PDF p. 551.
 - [ ] The completion report does not publish the post-project breaker or bus one-line. The atlas retains a logical connection diagram rather than an as-built breaker arrangement.
 
+## Frenchman's Cove station record
+
+- [x] 353L is the radial 66 kV supply from Walbournes to Frenchman's Cove, CA-NP-168 physical PDF p. 4.
+- [x] The 2010 asset table records FRN-T1 at 6.67 MVA, with wood 66 kV and 12.47 kV structures installed in 1977, CA-NP-088 physical PDF p. 200.
+- [x] The 2006 register lists FRN-01 and FRN-02, Electrical System Handbook physical PDF p. 12.
+- [x] The 2003 filing proposed station-layout changes to correct regulator clearances. The Frenchman's Cove share was $21,000 labour and $9,000 non-labour, CA-20(b) and CA-20(f), physical PDF p. 1 in each response.
+- [x] PUB-NP-274 records FRN-T1 at 66/12.5 kV, 6.67 MVA, with a 6.34 MVA 2013/14 forecast peak, physical PDF p. 8. The 2027 register records 66/25 kV, 6.67 MVA, with a 4.92 MVA 2026 forecast, physical PDF p. 547.
+- [x] NLH-NP-022 reports approximately 1,400 customers supplied from Frenchman's Cove, physical PDF p. 2.
+- [x] CA-NP-047 records a May 2018 feeder outage affecting more than 800 customers. Failed backup batteries in the pole-mounted communications cabinet caused loss of communications and delayed restoration; Newfoundland Power later installed battery monitoring, physical PDF p. 2.
+- [ ] Completion evidence for the filed 2003 clearance work has not been located.
+
 ## Gambo station record
 
 - [x] The 2024 filing identifies 121L from Glovertown and 146L from Gander as the 138 kV supplies, physical PDF p. 349.

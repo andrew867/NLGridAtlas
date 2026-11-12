@@ -1212,6 +1212,21 @@ test("Walbournes combines its filed equipment record with the project completion
   assert.match(historyFacts, /reported the Walbournes refurbishment and modernization complete/);
 });
 
+test("Frenchman's Cove retains its radial supply and dated transformer records", () => {
+  const frenchmansCove = stationProfiles.find((station) => station.code === "FRN");
+  assert.ok(frenchmansCove);
+  assert.deepEqual(frenchmansCove.connectedCircuits.map((record) => [record.circuit, record.from_code, record.to_code]), [
+    ["353L", "WAL", "FRN"]
+  ]);
+  assert.deepEqual(frenchmansCove.feederRegister, ["FRN-01", "FRN-02"]);
+  assert.match(frenchmansCove.engineeringRecord.facts.flat().join(" "), /approximately 1,400/);
+  assert.match(frenchmansCove.historyRecords[0].facts.flat().join(" "), /wood 66 kV and 12\.47 kV structures installed in 1977/);
+  assert.match(frenchmansCove.historyRecords[1].facts.flat().join(" "), /insufficient electrical-equipment clearances/);
+  assert.match(frenchmansCove.historyRecords[3].facts.flat().join(" "), /6\.34 MVA forecast peak; 95% of rating/);
+  assert.match(frenchmansCove.historyRecords[5].facts.flat().join(" "), /more than 800 customers/);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "FRN-T1").forecast_2026_mva, 4.92);
+});
+
 test("Gambo retains both voltage transformations and the completed 2024 modernization", () => {
   const gambo = stationProfiles.find((station) => station.code === "GAM");
   assert.ok(gambo);
