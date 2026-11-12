@@ -2101,6 +2101,32 @@ test("Fall Pond preserves the LAU-01 connection and current generating bank", ()
   assert.match(historyFacts, /no capital project relating to Fall Pond was approved for 2026/);
 });
 
+test("Lawn separates its external connection, Igor repairs, and current outage", () => {
+  const lawn = stationProfiles.find((station) => station.code === "LWN");
+  assert.ok(lawn);
+  assert.deepEqual(lawn.connectedCircuits, []);
+  assert.deepEqual(lawn.feederRegister, ["WBC-01"]);
+  assert.deepEqual(lawn.diagram.buses.map(({ voltage }) => voltage), ["25 kV"]);
+  assert.deepEqual(lawn.diagram.transformers, []);
+  assert.deepEqual(lawn.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1, OUT OF SERVICE", "0.6 MW"]]);
+  const plantFacts = lawn.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = lawn.planningRecord.facts.flat().join(" ");
+  const historyFacts = lawn.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /commissioned in 1929.*refurbished in 1983/);
+  assert.match(plantFacts, /600 kW horizontal Francis turbine.*Ideal Electric generator/);
+  assert.match(plantFacts, /two original Voith turbines/);
+  assert.match(plantFacts, /24\.3 m net head/);
+  assert.match(plantFacts, /WBC-01.*25 kV.*7\.2 MVA/);
+  assert.match(planningFacts, /deferred from 2027 to 2031/);
+  assert.match(historyFacts, /overtopped by 0\.45 m.*284 m3\/s/);
+  assert.match(historyFacts, /six timber penstock supports washed out/);
+  assert.match(historyFacts, /\$450,000.*2\.6 GWh/);
+  assert.match(historyFacts, /concrete was breaking from the intake structure/);
+  assert.match(historyFacts, /penstock failure in June 2025/);
+  assert.match(historyFacts, /remained out of service.*September 17, 2026/);
+  assert.match(historyFacts, /1,086,742 kWh/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");

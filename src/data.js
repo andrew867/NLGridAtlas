@@ -2014,7 +2014,7 @@ export const sources = [
     year: 2012,
     organization: "Newfoundland Power",
     title: "CA-NP-027, Generating-Facility Connection Data",
-    topics: ["Fall Pond", "FPD", "West Brook", "WBK", "LAU-01", "12.5 kV", "distribution feeder", "capacity"],
+    topics: ["Fall Pond", "FPD", "Lawn", "LWN", "West Brook", "WBK", "LAU-01", "WBC-01", "12.5 kV", "25 kV", "distribution feeder", "capacity"],
     pages: "physical PDF p. 2",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-027.pdf"
@@ -2078,6 +2078,56 @@ export const sources = [
     pages: "physical PDF pp. 1 to 5",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/CA-NP-055.PDF"
+  },
+  {
+    id: "np-2011-lawn-rehabilitation",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-175 Attachment I, Lawn Hydro Plant Rehabilitation",
+    topics: ["Lawn", "LWN", "Hurricane Igor", "hydroelectric generation", "forebay dam", "woodstave penstock", "penstock supports", "culvert"],
+    pages: "physical PDF pp. 167 to 168 and 180 to 181",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf"
+  },
+  {
+    id: "np-2013-lawn-plant",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2010 Depreciation Study, Lawn Hydro Plant Overview",
+    topics: ["Lawn", "LWN", "hydroelectric generation", "Francis turbine", "generator", "net head"],
+    pages: "physical PDF p. 140",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-2014-lawn-intake",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Lawn Intake Structure Rehabilitation",
+    topics: ["Lawn", "LWN", "hydroelectric generation", "intake conduit", "gate support", "penstock dewatering"],
+    pages: "physical PDF p. 166",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2027-ca-np-053-lawn",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "CA-NP-053, Lawn Plant Failure, Generation and Expenditure Record",
+    topics: ["Lawn", "LWN", "hydroelectric generation", "penstock failure", "out of service", "generation", "operating costs", "capital expenditures"],
+    pages: "physical PDF pp. 1 to 5",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/CA-NP-053.PDF"
+  },
+  {
+    id: "np-2027-lawn-deferral",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Deferred Capital Expenditures",
+    topics: ["Lawn", "LWN", "hydroelectric generation", "plant refurbishment", "engineering assessment", "economic analysis"],
+    pages: "physical PDF p. 220",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
     id: "np-2022-tors-cove",
@@ -5523,6 +5573,78 @@ const filedFeederMapProfiles = [
           ["Protection and control", "replace obsolete generator, transformer, excitation, synchronization and forebay-monitoring equipment"],
           ["Auxiliary power", "replace the original 8.5 kW propane unit, which cannot support winter black-start heating load"],
           ["Filed schedule and cost", "design and procurement in 2027, construction by year-end 2028; $1.728 million total budget"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "LWN",
+    name: "Lawn",
+    voltage: "25 kV documented external connection",
+    circuitRegisterLabel: "2012 GENERATING-FACILITY CONNECTION",
+    circuitSource: { sourceId: "np-2013-west-brook-connection", pages: "physical PDF p. 1" },
+    connectedCircuits: [],
+    feederRegisterLabel: "2012 CONNECTION RECORD",
+    feederRegister: ["WBC-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2012 documented external connection",
+      buses: [{ id: "b1", label: "WBC-01 connection", voltage: "25 kV" }],
+      transformers: [],
+      circuits: [{ label: "WBC-01", destination: "distribution feeder", bus: "b1" }],
+      generators: [{ label: "G1, OUT OF SERVICE", rating: "0.6 MW", bus: "b1" }]
+    },
+    engineeringRecord: {
+      date: "2010 PLANT OVERVIEW",
+      title: "Lawn hydro generation station",
+      sourceId: "np-2013-lawn-plant",
+      pages: "physical PDF p. 140",
+      facts: [
+        ["Plant", "originally commissioned in 1929 and substantially refurbished in 1983"],
+        ["Generating unit", "one 600 kW horizontal Francis turbine manufactured by Barber and one Ideal Electric generator, both installed in 1983"],
+        ["Earlier units", "the 1983 generating unit replaced two original Voith turbines"],
+        ["Hydraulics", "approximately 24.3 m net head"],
+        ["Grid connection", "WBC-01, a 25 kV distribution feeder with a recorded 7.2 MVA capacity"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 PROJECT DEFERRAL",
+      sourceId: "np-2027-lawn-deferral",
+      pages: "physical PDF p. 220",
+      facts: [["Plant refurbishment", "deferred from 2027 to 2031 for further engineering assessment and economic analysis"]]
+    },
+    historyRecords: [
+      {
+        label: "2010 HURRICANE IGOR DAMAGE AND 2011 FILED REPAIRS",
+        sourceId: "np-2011-lawn-rehabilitation",
+        pages: "physical PDF pp. 167 to 168 and 180 to 181",
+        facts: [
+          ["Flood", "the Lawn Forebay Dam was overtopped by 0.45 m after a 284 m3/s peak flow, recorded as 1.5 times the 1-in-10,000-year flood"],
+          ["Damage", "six timber penstock supports washed out; downstream rockfill eroded and the multi-plate culvert protecting the woodstave penstock was destroyed"],
+          ["Filed work", "new penstock supports, replacement reinforced-concrete decking and walkway, and reinstatement of downstream rockfill and culvert"],
+          ["Filed cost and energy", "$450,000, covered by insurance subject to the event deductible; 2.6 GWh of annual energy identified for the restored plant"]
+        ]
+      },
+      {
+        label: "2014 FILED INTAKE REHABILITATION",
+        sourceId: "np-2014-lawn-intake",
+        pages: "physical PDF p. 166",
+        facts: [
+          ["Condition", "concrete was breaking from the intake structure and passing through the penstock to the turbine; leakage prevented penstock dewatering"],
+          ["Filed work", "rehabilitate the concrete intake conduit and intake-gate support structure"],
+          ["Filed cost", "$200,000"]
+        ]
+      },
+      {
+        label: "JUNE 2025 PENSTOCK FAILURE",
+        sourceId: "np-2027-ca-np-053-lawn",
+        pages: "physical PDF pp. 1, 3 and 5",
+        facts: [
+          ["Operating status", "a penstock failure in June 2025 took the plant out of service; it remained out of service when the response was filed on September 17, 2026"],
+          ["Assessment", "Newfoundland Power was assessing the least-cost option for the future of the plant"],
+          ["2025 production", "1,086,742 kWh"],
+          ["2026 capital status", "no capital project relating to Lawn was approved for 2026"]
         ]
       }
     ]
