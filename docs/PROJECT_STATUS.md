@@ -126,6 +126,8 @@ Updated: 2026-11-12
 - Added the reported Q4 2008 completion of the Cape Broyle controls, station and 20L work, the completed Fermeuse wind-interconnection modifications, both March 2014 station equipment registers, the June 30, 2009 wind-project in-service date, and the 2027 CAB-01 route and proposed refurbishment.
 - Rebuilt Chamberlains as a dated 66/25 kV record. It now includes the proposed 2003 second transformer, the pre-project 2017 two-bank arrangement, the filed 50 MVA CHA-T1 replacement and CHA-04 construction, current CHA-T1 and CHA-T2 values, and the proposed 2027 CHA-04 single-phase conversion. The filed CHA-04 route map is preserved.
 - Rebuilt Broad Cove around the 2021 filed 66/12.5 kV arrangement, four feeder service areas, and radial 5L supply. The 2021 BCV-T2 proposal is not drawn as installed. The later 66/25 kV fleet-table entry and 2023 modernization deferral remain separate dated records.
+- Rebuilt Big Pond around its one-bank 66/12.5 kV arrangement, 17L and 24L connections, two feeders, water-supply exposure, the filed cooling-capacity addition, the reported 2013/14 load, and the proposed rebuild of the remaining original 24L section.
+- Rebuilt Bayview as a two-bank 66/12.5 kV station with 357L, 358L, 359L, and five distribution feeders. The record includes the completed 2004 BVS-T2 relocation, filed BVS-05 work, proposed station modernization, current transformer values, the proposed BVS-04 refurbishment, and both feeder-project drawings.
 
 ## Active work
 

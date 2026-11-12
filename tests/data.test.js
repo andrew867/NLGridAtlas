@@ -1012,6 +1012,49 @@ test("Chamberlains records the second bank, T1 replacement, CHA-04, and current 
   assert.deepEqual(chamberlains.referenceSheets.map(({ image }) => image), ["./reference-maps/cha-04-2027-route.jpeg"]);
 });
 
+test("Big Pond separates the current station record from historic capacity and 24L work", () => {
+  const bigPond = stationProfiles.find((station) => station.code === "BIG");
+  assert.ok(bigPond);
+  assert.deepEqual(bigPond.connectedCircuits.map(({ circuit }) => circuit), ["17L", "24L"]);
+  assert.deepEqual(bigPond.feederRegister, ["BIG-01", "BIG-02"]);
+  assert.deepEqual(bigPond.diagram.transformers, [{ label: "BIG-T1", rating: "11.11 MVA", from: "b1", to: "b2" }]);
+
+  const current = bigPond.engineeringRecord.facts.flat().join(" ");
+  assert.match(current, /two customers; one served under Rate 2\.4/);
+  assert.match(current, /BIG-02 approximately 1,300 customers/);
+  assert.match(current, /Bay Bulls Big Pond Water Treatment Facility/);
+
+  const cooling = bigPond.historyRecords.find((record) => record.label === "2006 PROPOSED TRANSFORMER COOLING ADDITION");
+  assert.match(cooling.facts.flat().join(" "), /8\.4 MVA at 66\/12\.5 kV.*increase.*11\.2 MVA.*Della Drive/s);
+  const loading = bigPond.historyRecords.find((record) => record.label === "2014/15 REPORTED TRANSFORMER LOAD");
+  assert.match(loading.facts.flat().join(" "), /9\.08 MVA 2013\/14 forecast; 82 percent/);
+  const line = bigPond.historyRecords.find((record) => record.label === "2010 PROPOSED 24L REBUILD");
+  assert.match(line.facts.flat().join(" "), /20 km radial 66 kV.*7\.7 km.*69 MW/s);
+});
+
+test("Bayview records the two-bank station, fifth feeder, modernization, and route drawings", () => {
+  const bayview = stationProfiles.find((station) => station.code === "BVS");
+  assert.ok(bayview);
+  assert.deepEqual(bayview.connectedCircuits.map(({ circuit }) => circuit), ["357L", "358L", "359L"]);
+  assert.deepEqual(bayview.feederRegister, ["BVS-01", "BVS-02", "BVS-03", "BVS-04", "BVS-05"]);
+  assert.deepEqual(bayview.diagram.transformers.map(({ label, rating }) => [label, rating]), [["BVS-T1", "20 MVA"], ["BVS-T2", "15 MVA"]]);
+
+  const existing = bayview.engineeringRecord.facts.flat().join(" ");
+  assert.match(existing, /built in 1971/);
+  assert.match(existing, /BVS-T1 66\/12\.5 kV; 20 MVA; installed in 1976/);
+  assert.match(existing, /BVS-T2 66\/12\.5 kV; 15 MVA; installed in 1969/);
+
+  const relocation = bayview.historyRecords.find((record) => record.label === "2004 BVS-T2 RELOCATION");
+  assert.match(relocation.facts.flat().join(" "), /unit 200145 relocated from Walbournes.*increased from 20 MVA to 35 MVA/s);
+  const bvs05 = bayview.historyRecords.find((record) => record.label === "2016 PROPOSED BVS-05 ADDITION");
+  assert.match(bvs05.facts.flat().join(" "), /transfer 2\.5 MVA.*construct 1\.0 km.*convert 1\.4 km.*3\.6 km/s);
+  const modernization = bayview.historyRecords.find((record) => record.label === "2018 PROPOSED STATION MODERNIZATION");
+  assert.match(modernization.facts.flat().join(" "), /six 66 kV side-break switches.*18 electromechanical relays/s);
+  const bvs04 = bayview.historyRecords.find((record) => record.label === "2024 PROPOSED BVS-04 REFURBISHMENT");
+  assert.match(bvs04.facts.flat().join(" "), /320 customers in 2008 and 478 in 2022.*125 A.*11\.0 km/s);
+  assert.deepEqual(bayview.referenceSheets.map(({ image }) => image), ["./reference-maps/bvs-05-2016-feeder.jpeg", "./reference-maps/bvs-04-2024-route.jpeg"]);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);

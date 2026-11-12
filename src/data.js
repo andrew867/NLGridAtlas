@@ -834,10 +834,90 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "PUB-NP-274, 2014/15 Transformer Ratings and Forecast Loads",
-    topics: ["Bay Roberts", "BRB-T1", "BRB-T2", "BRB-T3", "BRB-T4", "transformer ratings", "winter forecast"],
-    pages: "physical PDF pp. 1, 5 and 10",
+    topics: ["Bay Roberts", "Big Pond", "BRB-T1", "BRB-T2", "BRB-T3", "BRB-T4", "BIG-T1", "transformer ratings", "winter forecast"],
+    pages: "physical PDF pp. 1, 3, 5 and 10",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-274.pdf"
+  },
+  {
+    id: "np-2004-corner-brook-transformers",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Corner Brook Area Transformer Capacity",
+    topics: ["Bayview", "Walbournes", "BVS-T1", "BVS-T2", "WAL-T2", "transformer relocation", "Corner Brook"],
+    pages: "physical PDF pp. 47, 349, 352, 356 and 359",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
+  },
+  {
+    id: "np-2010-ca-np-016",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016, Bayview Transformer Relocation and Recorded Peaks",
+    topics: ["Bayview", "Walbournes", "BVS-T2", "transformer relocation", "recorded peak"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/rfi/CA-NP-016.pdf"
+  },
+  {
+    id: "np-2018-bayview",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, Bayview Substation Refurbishment and Modernization",
+    topics: ["Bayview", "BVS-T1", "BVS-T2", "BVS-01", "BVS-02", "BVS-03", "BVS-04", "BVS-05", "357L", "358L", "359L", "substation modernization"],
+    pages: "physical PDF pp. 231 to 233",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
+    id: "np-2016-bvs05",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, BVS-05 Feeder Addition and Voltage Conversion",
+    topics: ["Bayview", "BVS-05", "HUM-01", "HUM-07", "12.5 kV", "feeder transfer"],
+    pages: "physical PDF pp. 411 to 412 and 420",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
+    id: "np-2024-bvs04",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, BVS-04 Feeder Refurbishment",
+    topics: ["Bayview", "BVS-04", "Pinchgut Lake", "George's Lake", "Gallants", "feeder refurbishment"],
+    pages: "physical PDF pp. 310 to 313",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-2006-big-pond",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Big Pond Transformer Capacity",
+    topics: ["Big Pond", "BIG-T1", "BIG-01", "BIG-02", "Goulds", "Mobile", "transformer cooling"],
+    pages: "physical PDF p. 235",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2024-ca-np-163",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-163, Big Pond Station Supply and Customer Record",
+    topics: ["Big Pond", "BIG-T1", "BIG-01", "BIG-02", "Bay Bulls Big Pond Water Treatment Facility"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/CA-NP-163.PDF"
+  },
+  {
+    id: "np-2010-24l",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, 24L Rebuild",
+    topics: ["24L", "Big Pond", "Mobile", "Southern Shore", "transmission line rebuild"],
+    pages: "physical PDF p. 331",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
   },
   {
     id: "np-2015-substation-modernization",
@@ -2174,8 +2254,8 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "CA-NP-168, Attachment A, Transmission Line Endpoints",
-    topics: ["110L", "111L", "113L", "115L", "116L", "117L", "123L", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
-    pages: "physical PDF p. 4",
+    topics: ["17L", "24L", "57L", "68L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "357L", "358L", "359L", "Big Pond", "Bayview", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
+    pages: "physical PDF pp. 3 to 4",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
   },
@@ -5678,7 +5758,10 @@ const earlyFeederMapProfiles = [
     code: "BIG",
     name: "Big Pond",
     voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2025 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
     handbookPage: "physical PDF pp. 6 and 11",
+    feederRegisterLabel: "2006 AND 2023 FILED STATION RECORDS",
     feederRegister: ["BIG-01", "BIG-02"],
     mapPages: [["BIG-02", 28]],
     connectedCircuits: [
@@ -5686,7 +5769,71 @@ const earlyFeederMapProfiles = [
       { circuit: "24L", from: "Big Pond", from_code: "BIG", to: "Mobile", to_code: "MOB" }
     ],
     transformerPages: "physical PDF p. 546",
-    transformerFacts: [["BIG-T1", "66/12.5 kV; 11.11 MVA; 8.30 MVA 2026 forecast"]]
+    transformerFacts: [["BIG-T1", "66/12.5 kV; 11.11 MVA; 8.30 MVA 2026 forecast"]],
+    diagram: {
+      label: "2023 station record with 2025 circuits and 2027 transformer value",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "BIG-T1", rating: "11.11 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "17L", destination: "Goulds", bus: "b1", destinationCode: "GOU" },
+        { label: "24L", destination: "Mobile", bus: "b1", destinationCode: "MOB" },
+        { label: "BIG-01", destination: "water-supply area", bus: "b2", link: false },
+        { label: "BIG-02", destination: "Goulds and Southern Shore", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2023 FILED CUSTOMER AND CONTINGENCY RECORD",
+      title: "Big Pond distribution station",
+      sourceId: "np-2024-ca-np-163",
+      pages: "physical PDF p. 1",
+      facts: [
+        ["Location", "shore of Big Pond in Goulds, adjacent to the St. John's regional water supply"],
+        ["Station equipment", "one transformer, BIG-T1, and two distribution feeders"],
+        ["BIG-01", "two customers; one served under Rate 2.4"],
+        ["BIG-02", "approximately 1,300 customers"],
+        ["Transformer contingency", "loss of BIG-T1 interrupts all station customers"],
+        ["Water-supply exposure", "loss of the Rate 2.4 customer on BIG-01 could affect the Bay Bulls Big Pond Water Treatment Facility"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [["BIG-T1", "66/12.5 kV; 11.11 MVA; 8.30 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "2006 PROPOSED TRANSFORMER COOLING ADDITION",
+        sourceId: "np-2006-big-pond",
+        pages: "physical PDF p. 235",
+        facts: [
+          ["Former BIG-T1 rating", "8.4 MVA at 66/12.5 kV"],
+          ["Filed work", "add cooling radiators to increase the transformer rating to 11.2 MVA"],
+          ["2006 forecast", "9.2 MVA; 11.2 MVA forecast for 2010"],
+          ["BIG-01 service", "one water-supply pumping customer in the 2005 filing"],
+          ["BIG-02 route", "north into west Goulds with a tie to GOU-03 at Della Drive; south toward Bay Bulls"],
+          ["Filed cost", "$67,000"]
+        ]
+      },
+      {
+        label: "2014/15 REPORTED TRANSFORMER LOAD",
+        sourceId: "np-2014-pub-np-274",
+        pages: "physical PDF p. 3",
+        facts: [["BIG-T1", "66/12.5 kV; 11.1 MVA; 9.08 MVA 2013/14 forecast; 82 percent of rating"]]
+      },
+      {
+        label: "2010 PROPOSED 24L REBUILD",
+        sourceId: "np-2010-24l",
+        pages: "physical PDF p. 331",
+        facts: [
+          ["Line", "20 km radial 66 kV connection between Big Pond and Mobile"],
+          ["Original construction", "sections dated 1954 and 1964"],
+          ["Filed work", "rebuild the remaining 7.7 km of original 1964 construction"],
+          ["Connected system", "approximately 4,600 customers, seven hydro plants, and nine private wind units; 69 MW total generation capacity in the filing"],
+          ["Filed cost", "$1.161 million"]
+        ]
+      }
+    ]
   },
   {
     code: "BRB",
@@ -5791,8 +5938,11 @@ const earlyFeederMapProfiles = [
     code: "BVS",
     name: "Bayview",
     voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2025 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
     handbookPage: "physical PDF pp. 9 and 11",
-    feederRegister: ["BVS-01", "BVS-02", "BVS-03", "BVS-04"],
+    feederRegisterLabel: "2017 FILED STATION ARRANGEMENT",
+    feederRegister: ["BVS-01", "BVS-02", "BVS-03", "BVS-04", "BVS-05"],
     mapPages: [["BVS-01", 38], ["BVS-02", 39]],
     connectedCircuits: [
       { circuit: "357L", from: "Massey Drive", from_code: "MAS", to: "Bayview", to_code: "BVS" },
@@ -5803,6 +5953,107 @@ const earlyFeederMapProfiles = [
     transformerFacts: [
       ["BVS-T1", "66/12.5 kV; 20 MVA; 15.35 MVA 2026 forecast"],
       ["BVS-T2", "66/12.5 kV; 15 MVA; 9.56 MVA 2026 forecast"]
+    ],
+    diagram: {
+      label: "2017 filed arrangement with current circuit and transformer records",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "BVS-T1", rating: "20 MVA", from: "b1", to: "b2" }, { label: "BVS-T2", rating: "15 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "357L", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" },
+        { label: "358L", destination: "Gillams", bus: "b1", destinationCode: "GIL" },
+        { label: "359L", destination: "Humber", bus: "b1", destinationCode: "HUM" },
+        { label: "BVS-01", destination: "12.5 kV feeder", bus: "b2", link: false },
+        { label: "BVS-02", destination: "12.5 kV feeder", bus: "b2", link: false },
+        { label: "BVS-03", destination: "12.5 kV feeder", bus: "b2", link: false },
+        { label: "BVS-04", destination: "Pinchgut Lake and Gallants", bus: "b2", link: false },
+        { label: "BVS-05", destination: "Corner Brook load transfer", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2017 FILED EXISTING ARRANGEMENT",
+      title: "Bayview transmission and distribution substation",
+      sourceId: "np-2018-bayview",
+      pages: "physical PDF pp. 231 to 233",
+      facts: [
+        ["Station history", "built in 1971 as a transmission and distribution substation"],
+        ["Transmission", "357L to Massey Drive, 358L to Gillams, and 359L to Humber"],
+        ["BVS-T1", "66/12.5 kV; 20 MVA; installed in 1976"],
+        ["BVS-T2", "66/12.5 kV; 15 MVA; installed in 1969"],
+        ["Distribution", "BVS-01 to BVS-05; approximately 3,400 customers in the Corner Brook area"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [
+        ["BVS-T1", "66/12.5 kV; 20 MVA; 15.35 MVA 2026 forecast"],
+        ["BVS-T2", "66/12.5 kV; 15 MVA; 9.56 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2004 BVS-T2 RELOCATION",
+        sourceId: "np-2010-ca-np-016",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Transformer", "15 MVA, 66/12.5 kV unit 200145 relocated from Walbournes and installed at Bayview in 2004"],
+          ["Station capacity", "increased from 20 MVA to 35 MVA"],
+          ["Recorded peaks", "19.9 MVA in 2002; 20.2 MVA in 2003; 21.3 MVA in 2004; 18.8 MVA in 2005; 20.8 MVA in 2006"]
+        ]
+      },
+      {
+        label: "2016 PROPOSED BVS-05 ADDITION",
+        sourceId: "np-2016-bvs05",
+        pages: "physical PDF pp. 411 to 412 and 420",
+        facts: [
+          ["Load transfer", "transfer 2.5 MVA from HUM-01 and HUM-07 to BVS-T2"],
+          ["New feeder", "construct 1.0 km of BVS-05"],
+          ["Voltage conversion", "convert 1.4 km of HUM-01 and 3.6 km of HUM-07 from 4.16 kV to 12.5 kV"],
+          ["BVS-T2 load", "8.3 MVA on the 15 MVA transformer in the 2015 filing"],
+          ["Filed cost", "$370,000"]
+        ]
+      },
+      {
+        label: "2018 PROPOSED STATION MODERNIZATION",
+        sourceId: "np-2018-bayview",
+        pages: "physical PDF pp. 231 to 233",
+        facts: [
+          ["Switches", "replace six 66 kV side-break switches and the BVS-T1-A and BVS-T2-A transformer switches"],
+          ["Transformers", "refurbish both transformers, upgrade auxiliary protection, and install spill containment"],
+          ["Protection", "replace 18 electromechanical relays in four panels with digital protection and control equipment"],
+          ["Foundations", "refurbish five steel-structure pier foundations and one circuit-breaker foundation"]
+        ]
+      },
+      {
+        label: "2024 PROPOSED BVS-04 REFURBISHMENT",
+        sourceId: "np-2024-bvs04",
+        pages: "physical PDF pp. 310 to 313",
+        facts: [
+          ["Service", "approximately 1,660 customers from Pinchgut Lake through George's Lake to Gallants"],
+          ["Growth", "320 customers in 2008 and 478 in 2022 on the project section; increase of 158 customers, or 49 percent rounded to the nearest whole percent"],
+          ["Recorded current", "approximately 125 A against the 85 A planning criterion"],
+          ["Filed work", "convert 11.0 km from single-phase to three-phase using 1/0 AASC conductor"],
+          ["Filed cost", "$1.736 million"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED BAYVIEW FEEDER PROJECTS",
+    referenceSheets: [
+      {
+        title: "BVS-05 addition and Corner Brook load transfer",
+        image: "./reference-maps/bvs-05-2016-feeder.jpeg",
+        alt: "Filed BVS-05 feeder addition and Humber feeder conversion map",
+        sourceId: "np-2016-bvs05",
+        pages: "physical PDF p. 420"
+      },
+      {
+        title: "BVS-04 route to Gallants",
+        image: "./reference-maps/bvs-04-2024-route.jpeg",
+        alt: "Filed BVS-04 route from Bayview through Pinchgut Lake and George's Lake to Gallants",
+        sourceId: "np-2024-bvs04",
+        pages: "physical PDF p. 311"
+      }
     ]
   },
   {
