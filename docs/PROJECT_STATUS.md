@@ -122,6 +122,8 @@ Updated: 2026-11-12
 - Added Roycefield Tap as the filed 66 kV switching point between 102L and the 40 km 104L mine supply, with its 2014 breaker record, current isolating-switch arrangement, ownership and customer-contribution record, asset costs, and filed single-line.
 - Added Notre Dame Junction as a historical 66 kV switching junction with the filed 102L and 103L sections, 2014 inspection assets, the 2018 replacement study, the conditional 2020 removal approval, current successor connections, and the filed Central Newfoundland system map. No public completion record was located for the station removal.
 - Added Glenwood as the joint Hydro and Newfoundland Power 138/25 kV station on TL210, with its 1968 station history, GLN-T1, GLN-01, completed 2013 modernization, 2014 inspection record, current transformer listing and Central network map. The 147L tap remains identified only as a 2026 study assumption.
+- Added Cape Broyle and Fermeuse as the Southern Shore 66 kV chain. Cape Broyle now separates the plant circuit, local 12.5 kV distribution, 20L and 66L, and retains the conflicting 25 kV CAB-T2 fleet-table entry as a dated record. Fermeuse now separates Newfoundland Power's station extension and FER-902E-B from the seller-owned 66 kV line and Hydro-owned export meter.
+- Added the reported Q4 2008 completion of the Cape Broyle controls, station and 20L work, the completed Fermeuse wind-interconnection modifications, both March 2014 station equipment registers, the June 30, 2009 wind-project in-service date, and the 2027 CAB-01 route and proposed refurbishment.
 
 ## Active work
 

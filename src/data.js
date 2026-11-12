@@ -110,6 +110,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
   },
   {
+    id: "np-2008-cape-broyle-controls",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Cape Broyle Protection and Control",
+    topics: ["Cape Broyle", "Cape Broyle Hydro Plant", "CAB-T1", "generator protection", "governor", "voltage regulation", "SCADA"],
+    pages: "physical PDF pp. 151 to 152",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2008-fermeuse-substation",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Fermeuse Substation",
+    topics: ["Fermeuse", "FER-T1", "FER-01", "66L", "66 kV", "12.5 kV", "air-break switch", "animal protection"],
+    pages: "physical PDF p. 167",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2008-southern-shore-q4",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "Q4 2008 Quarterly Report, Southern Shore project completions",
+    topics: ["Cape Broyle", "Fermeuse", "20L", "SkyPower", "wind interconnection", "plant controls", "substation modifications"],
+    pages: "physical PDF p. 261",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
+  },
+  {
+    id: "np-2013-cape-broyle",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Cape Broyle and Horse Chops development record",
+    topics: ["Cape Broyle", "Horse Chops", "CAB-T1", "CAB-T2", "20L", "66L", "66 kV", "12.5 kV", "6.9 kV", "hydroelectric generation"],
+    pages: "physical PDF pp. 258 to 263 and 269",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
     id: "np-2016-hwd07",
     year: 2015,
     organization: "Newfoundland Power",
@@ -1534,8 +1574,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138, 148 to 155, 235, 427 and 484 to 487",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 235, 427 and 484 to 487",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1814,7 +1854,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "Q2 2026 Quarterly Regulatory Report",
-    topics: ["Lockston", "Summerville", "94L", "24L", "capital construction"],
+    topics: ["Lockston", "Summerville", "Cape Broyle", "Horse Chops", "plant controls", "94L", "24L", "capital construction"],
     pages: "physical PDF p. 9",
     status: "reported",
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NP%20-%202nd%20Quarterly%20Report%20for%20Period%20ending%20June%2030%2C%202026%20-%202026-08-14.PDF"
@@ -1824,10 +1864,30 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "2026 Capital Budget Application",
-    topics: ["Pulpit Rock", "PUL-05", "PUL-T2", "transformer fleet"],
-    pages: "PDF pp. 39, 197, 370",
+    topics: ["Pulpit Rock", "PUL-05", "PUL-T2", "Cape Broyle", "Horse Chops", "plant controls", "transformer fleet"],
+    pages: "physical PDF pp. 39, 174, 197 and 370",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
+    id: "np-2026-fermeuse-wind",
+    year: 2026,
+    organization: "Newfoundland and Labrador Hydro, Newfoundland Power, and Fermeuse Wind Power Corp.",
+    title: "PUB-NLH-166, Fermeuse Wind Project agreement and operations boundary",
+    topics: ["Fermeuse", "FER-902E-B", "FER-902E-DL", "66 kV", "wind generation", "interconnection", "ownership", "revenue metering", "SCADA"],
+    pages: "physical PDF pp. 3, 49, 54 to 55, 59, 64, 67, 69, 77 and 80",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/PUB-NLH-166.PDF"
+  },
+  {
+    id: "np-2027-cab01",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, CAB-01 Feeder Refurbishment",
+    topics: ["Cape Broyle", "CAB-01", "12.5 kV", "Route 10", "Southern Shore", "distribution feeder", "conductor", "poles", "reliability"],
+    pages: "physical PDF pp. 48 to 52",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
     id: "np-2027-gander-program-status",
@@ -9249,9 +9309,80 @@ export const stationProfiles = [
   {
     code: "CAB",
     name: "Cape Broyle",
+    voltage: "66/12.5/7.2 kV filed arrangement",
+    circuitRegisterLabel: "2013 FILED STATION ARRANGEMENT",
+    circuitSource: { sourceId: "np-2013-cape-broyle", pages: "physical PDF p. 263" },
+    connectedCircuits: [
+      { circuit: "20L", from: "Mobile", from_code: "MOB", to: "Cape Broyle", to_code: "CAB" },
+      { circuit: "66L", from: "Cape Broyle", from_code: "CAB", to: "Fermeuse", to_code: "FER" }
+    ],
+    feederRegisterLabel: "2026 FILED DISTRIBUTION ARRANGEMENT",
+    feederRegister: ["CAB-01"],
     mapPages: [],
     eventLoads: [],
+    diagram: {
+      label: "2013 filed bus arrangement with 2026 fleet ratings",
+      buses: [
+        { id: "b1", label: "66 kV bus", voltage: "66 kV" },
+        { id: "b2", label: "12.5 kV distribution bus", voltage: "12.5 kV" },
+        { id: "b3", label: "7.2 kV plant circuit", voltage: "7.2 kV" }
+      ],
+      transformers: [
+        { label: "CAB-T2", rating: "6.67 MVA", from: "b1", to: "b2" },
+        { label: "CAB-T1", rating: "11.25 MVA", from: "b1", to: "b3" }
+      ],
+      circuits: [
+        { label: "20L", destination: "Mobile", bus: "b1", destinationCode: "MOB" },
+        { label: "66L", destination: "Fermeuse", bus: "b1", destinationCode: "FER" },
+        { label: "CAB-01", destination: "local distribution", bus: "b2", link: false },
+        { label: "plant circuit", destination: "Cape Broyle Hydro", bus: "b3", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2013 ARRANGEMENT / 2026 FEEDER RECORD",
+      title: "Cape Broyle generation and distribution station",
+      sourceId: "np-2013-cape-broyle",
+      pages: "physical PDF pp. 258 and 263",
+      facts: [
+        ["66 kV connections", "20L to Mobile and 66L to Fermeuse"],
+        ["Generation connection", "the 2013 record describes 6.9 kV from the Cape Broyle plant stepped up to 66 kV"],
+        ["Local distribution", "the 2013 record describes 66 kV stepped down to 12.5 kV and one local distribution line"],
+        ["CAB-01", "sole 12.5 kV feeder; 13.4 km main trunk; 1,247 customers in the 2026 filing"],
+        ["Plant", "commissioned in 1953; one 6,000 kW vertical Francis turbine in the 2013 development record"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 546 and 551",
+      facts: [
+        ["CAB-T1", "generation; 66/7.2 kV; 11.25 MVA"],
+        ["CAB-T2", "distribution; 66/25 kV; 6.67 MVA; 3.83 MVA 2026 forecast"],
+        ["Published voltage difference", "the 2013 station record and 2026 CAB-01 filing identify 12.5 kV local distribution; the 2027 fleet table lists CAB-T2 at 66/25 kV"]
+      ]
+    },
     historyRecords: [
+      {
+        label: "Q4 2008 REPORTED PLANT AND STATION COMPLETION",
+        sourceId: "np-2008-southern-shore-q4",
+        pages: "physical PDF p. 261",
+        facts: [
+          ["Plant work", "Cape Broyle hydro plant protection and control refurbishment completed"],
+          ["Station work", "associated Cape Broyle substation modifications completed"],
+          ["Transmission", "20L rebuild between Mobile and Cape Broyle completed"]
+        ]
+      },
+      {
+        label: "MARCH 2014 INSPECTION REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 58 to 61",
+        facts: [
+          ["Station number", "001904"],
+          ["Recorded primary equipment", "CAB-66L-B bulk-oil breaker 210150, CAB-G-B air breaker 210581, CAB-T2 asset 200290"],
+          ["Distribution equipment", "CAB-01-R hydraulic recloser 230467 and two three-regulator banks"],
+          ["Control and station supply", "SAGE 2100 RTU and battery 100317"]
+        ]
+      },
       {
         label: "2014 PROPOSED RECLOSER AND SCADA WORK",
         sourceId: "np-2014-improvements",
@@ -9262,15 +9393,116 @@ export const stationProfiles = [
           ["Proposed work", "replace the hydraulic recloser with a digital recloser"],
           ["Communications", "connect through Cape Broyle hydro plant equipment and integrate with Newfoundland Power SCADA"]
         ]
+      },
+      {
+        label: "2026 PLANT CONTROL PROJECT",
+        sourceId: "np-2026-q2-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["Q2 status", "plant-control design complete"],
+          ["Filed schedule", "work expected to begin in the third quarter of 2026"],
+          ["Coordination", "the 2026 capital filing coordinates the control work with Mount Carmel gate automation"]
+        ]
+      },
+      {
+        label: "2027 PROPOSED CAB-01 REFURBISHMENT",
+        sourceId: "np-2027-cab01",
+        pages: "physical PDF pp. 48 to 52",
+        facts: [
+          ["Filed scope", "replace 3.1 km of three-phase #4 copper, deteriorated poles, crossarms, insulators, hardware, transformers and anchors"],
+          ["Condition record", "147 conductor splices and 37 deficiency-related work orders, including 30 poles"],
+          ["Filed schedule", "design in Q1 2027; construction from Q2 through Q3 2027"],
+          ["Budget", "$972,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2027 CAB-01 REFURBISHMENT MAP",
+    referenceSheets: [
+      {
+        title: "CAB-01 route and proposed 3.1 km refurbishment area",
+        image: "./reference-maps/cab-01-2027-refurbishment.png",
+        alt: "Filed CAB-01 route map showing the proposed refurbishment area through Cape Broyle and along Route 10",
+        sourceId: "np-2027-cab01",
+        pages: "physical PDF p. 49"
       }
     ]
   },
   {
     code: "FER",
     name: "Fermeuse",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2007 FILED / 2014 INSPECTED CONNECTIONS",
+    circuitSources: [
+      { sourceId: "np-2008-fermeuse-substation", pages: "physical PDF p. 167" },
+      { sourceId: "np-2016-pub-np-064-g", pages: "physical PDF pp. 111 to 113" }
+    ],
+    connectedCircuits: [
+      { circuit: "66L", from: "Cape Broyle", from_code: "CAB", to: "Fermeuse", to_code: "FER" },
+      { circuit: "902E", from: "Fermeuse", from_code: "FER", to: "Fermeuse Wind Project", to_code: null }
+    ],
+    feederRegisterLabel: "2007 FILED DISTRIBUTION ARRANGEMENT",
+    feederRegister: ["FER-01"],
     mapPages: [],
     eventLoads: [],
+    diagram: {
+      label: "2007 filed distribution arrangement with 2014 inspected wind connection",
+      buses: [
+        { id: "b1", label: "66 kV bus", voltage: "66 kV" },
+        { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }
+      ],
+      transformers: [{ label: "FER-T1", rating: "4 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "66L", destination: "Cape Broyle", bus: "b1", destinationCode: "CAB" },
+        { label: "902E", destination: "Fermeuse Wind Project", bus: "b1", link: false },
+        { label: "FER-01", destination: "local distribution", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2007 FILED / 2014 INSPECTED",
+      title: "Fermeuse distribution and wind-interconnection station",
+      sourceId: "np-2008-fermeuse-substation",
+      pages: "physical PDF p. 167",
+      facts: [
+        ["Station", "built in 1976 as a distribution substation"],
+        ["Supply", "radial 66L from Cape Broyle"],
+        ["FER-T1", "66/12.5 kV; 4 MVA"],
+        ["Distribution", "one 12.5 kV feeder; approximately 630 customers in the 2007 filing"],
+        ["Wind connection", "the March 2014 inspection register records 66 kV breaker FER-902E-B"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [["FER-T1", "66/12.5 kV; 4 MVA; 2.2 MVA 2026 forecast"]]
+    },
     historyRecords: [
+      {
+        label: "2008 FILED STATION WORK",
+        sourceId: "np-2008-fermeuse-substation",
+        pages: "physical PDF p. 167",
+        facts: [
+          ["T1 primary switch", "replace the air-break switch after more than 30 years in service"],
+          ["12.5 kV equipment", "install small-animal protection on the bus and equipment"]
+        ]
+      },
+      {
+        label: "Q4 2008 REPORTED WIND-INTERCONNECTION COMPLETION",
+        sourceId: "np-2008-southern-shore-q4",
+        pages: "physical PDF p. 261",
+        facts: [["Project status", "Fermeuse station modifications for the SkyPower wind-farm interconnection completed"]]
+      },
+      {
+        label: "MARCH 2014 INSPECTION REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 111 to 113",
+        facts: [
+          ["Station number", "001936"],
+          ["Wind connection", "FER-902E-B SF6 breaker 210691"],
+          ["Distribution equipment", "FER-T1 asset 200093, FER-01-R hydraulic recloser 230317 and three regulators"],
+          ["Station supply", "meter 370126, battery 100319 and charger 110241"]
+        ]
+      },
       {
         label: "2014 PROPOSED RECLOSER AND SCADA WORK",
         sourceId: "np-2014-improvements",
@@ -9280,6 +9512,19 @@ export const stationProfiles = [
           ["Existing equipment", "hydraulic recloser"],
           ["Proposed work", "replace the hydraulic recloser with a digital recloser"],
           ["Communications", "connect through equipment in the substation building and integrate with Newfoundland Power SCADA"]
+        ]
+      },
+      {
+        label: "2009 WIND PROJECT IN SERVICE / 2026 REPUBLISHED AGREEMENT",
+        sourceId: "np-2026-fermeuse-wind",
+        pages: "physical PDF pp. 3, 49, 54 to 55, 59, 64, 67, 69, 77 and 80",
+        facts: [
+          ["Commercial in-service date", "June 30, 2009"],
+          ["Interconnection", "60 Hz, 66 kV at Fermeuse Substation through FER-902E-DL and FER-902E-B"],
+          ["Newfoundland Power equipment", "station extension, 66 kV steel bus, breaker, revenue CTs and associated protection and control"],
+          ["Seller equipment", "three-phase 66 kV line from FER-902E-DL to the wind-project substation and designated equipment on Newfoundland Power land"],
+          ["Hydro equipment", "export bidirectional metering"],
+          ["Operating control", "Newfoundland Power controls FER-902E-DL and FER-902E-B; the seller bears maintenance costs for the Newfoundland Power interconnection equipment"]
         ]
       }
     ]

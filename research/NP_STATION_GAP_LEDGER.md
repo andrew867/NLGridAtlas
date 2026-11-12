@@ -39,8 +39,8 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 | [x] | St. John's Main, SJM | Clickable dated 2015 logical one-line; 4L, 13L and 25L; SJM-T1, T2 and T3 parallel 12.5 kV bank; historical SJM-T4 and SJM-12 4.16 kV branch; four feeder maps; 2011 Water Street schematic; SJM-03, 06 and 09 assigned to SJM-T1/T2; SJM-10 and 14 assigned to SJM-T3 | Current bus arrangement, remaining feeder assignments, and SJM-T1/T3 voltage-record conflict | Protection drawings or current station one-line |
 | [x] | Pepperell, PEP | Clickable logical one-line; 16L and 74L; parallel PEP-T1 and PEP-T2 at 25 MVA each; 12.5 kV bus; PEP-01 to PEP-05; PEP-T2 and PEP-05 construction record; PEP-05 assigned to PEP-T1/T2; 2019 service-area map, customer counts, and tie points for PEP-01 to PEP-04 | Exact breaker positions; resolve the 2019 station-record and 2027 transformer-table low-voltage conflict | Current protection one-line or asset record |
 | [x] | King's Bridge, KBR | Clickable logical one-line; 12L, 16L, and 30L; KBR-T3 and T4 at 25 MVA; KBR-09, 10, 11, 12, 13, and 15 at 12.5 kV; KBR-09, 11, 12, and 13 assigned to the T3/T4 bank; 43.7 MVA peak; 2019 service-area map, customer counts, and feeder tie points; T3 replacement proposed for 2028 | Bus-section and breaker arrangement; individual feeder assignments | Post-2028 commissioning drawing or protection one-line |
-| [x] | Cape Broyle, CAB | CAB-01 register; CAB-T2 at 66/25 kV; CAB-T1 generation transformer at 66/7.2 kV; 2014 proposed CAB-01 digital recloser and SCADA integration through the hydro plant communications equipment | Completion record and current station arrangement | 2014 expenditure report or later protection record |
-| [x] | Fermeuse, FER | FER-01 register; FER-T1 at 66/12.5 kV; 2014 proposed FER-01 digital recloser and SCADA integration | Completion record and current station arrangement | 2014 expenditure report or later protection record |
+| [x] | Cape Broyle, CAB | 20L and 66L; 2013 generation and 12.5 kV distribution arrangement; CAB-T1 and CAB-T2 fleet values; CAB-01 route, customers, condition, proposed 2027 work and route sheet; completed 2008 plant, station and 20L work; March 2014 equipment register; 2026 plant-control status | Current breaker arrangement; resolve the 12.5 kV station and feeder records against the 25 kV CAB-T2 fleet-table entry | Current operating or protection one-line |
+| [x] | Fermeuse, FER | Radial 66L supply; FER-T1 and FER-01; 2008 station work; completed wind-interconnection modifications; March 2014 FER-902E-B, transformer, recloser and regulator register; 902E ownership and operating boundary; 2009 commercial in-service date | Current breaker arrangement; 2014 recloser completion | Current operating one-line or later recloser asset record |
 | [x] | Colliers, COL | COL-01 and COL-02 register; COL-T1 at 138/12.5 kV; 2014 proposed feeder recloser automation; detailed 2015 breaker, protection, control-building, transformer-controller, SCADA, and incoming-breaker scope; planned 42L and 46L designations | Direct completion record and current station arrangement | 2015 expenditure report or later protection record |
 | [x] | Springfield, SPF | SPF-01 to SPF-03 register; SPF-T1 at 138/12.5 kV; 2014 proposed feeder recloser automation; detailed 2015 breaker, protection, transformer, SCADA, control-building, and incoming-breaker scope; 2026 filing confirms the 2015 modernization was completed | Current station arrangement | Current one-line or protection record |
 | [x] | Holyrood, HOL | HOL-T1 at 138/12.5 kV; HOL-01 and HOL-02; detailed 2014 feeder-split and transformer-modernization scope; proposed installation of two 39L breakers coordinated with station work | Breaker and station-modernization completion record; the 2014 base application reports approximately 2,700 customers while the supplemental application reports approximately 2,200 | 2014 expenditure report and station protection drawings |
@@ -138,6 +138,27 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2026 Central loop study lists Glenwood as a joint Hydro and Newfoundland Power terminal station and substation. It describes TL210 as the Hydro 138 kV line between Stony Brook, Glenwood and Cobb's Pond, physical PDF pp. 181 and 200.
 - [x] The same study assumed a 1 km, 559.5 kcmil Darien AAAC tap from 147L to Glenwood. Its sensitivity analysis found that the tap had little effect on voltage and was not required to maintain voltage levels, physical PDF pp. 217 and 228.
 - [ ] Do not draw 147L as an installed Glenwood connection without a later as-built or operating record. It is a study assumption in the located filing.
+
+## Cape Broyle station record
+
+- [x] The 2013 development record identifies 20L to Mobile, 66L to Fermeuse, 6.9 kV generation stepped up to 66 kV, 66 kV stepped down to 12.5 kV, and one local distribution line, physical PDF p. 263.
+- [x] The 2027 transformer register lists CAB-T1 at 66/7.2 kV and 11.25 MVA. It lists CAB-T2 at 66/25 kV and 6.67 MVA, with a 3.83 MVA 2026 forecast, physical PDF pp. 546 and 551.
+- [x] The 2027 CAB-01 filing identifies the sole station feeder as 12.5 kV, 13.4 km long, and serving 1,247 customers. The filed 2027 project replaces 3.1 km of #4 copper plus deteriorated poles, crossarms, insulators, hardware, transformers and anchors, physical PDF pp. 48 to 52.
+- [x] The Q4 2008 report records completion of the Cape Broyle plant protection and control refurbishment, associated station modifications, and the 20L rebuild between Mobile and Cape Broyle, physical PDF p. 261.
+- [x] The March 2014 inspection register identifies station 001904, CAB-66L-B breaker 210150, CAB-G-B breaker 210581, CAB-T2 asset 200290, CAB-01-R recloser 230467, two regulator banks, SAGE 2100 RTU and battery 100317, physical PDF pp. 58 to 61.
+- [x] The Q2 2026 report says the plant-control design was complete and work was expected to start in Q3 2026, physical PDF p. 9.
+- [ ] Do not resolve the 12.5 kV and 25 kV CAB-T2 records without a later nameplate, operating one-line or protection record.
+
+## Fermeuse station record
+
+- [x] The 2007 station record identifies Fermeuse as a 1976 distribution station, supplied radially from Cape Broyle by 66L, with one 4 MVA 66/12.5 kV transformer, one feeder and approximately 630 customers, physical PDF p. 167.
+- [x] The same filing proposed replacing the more than 30-year-old FER-T1 air-break switch and adding small-animal protection on the 12.5 kV equipment and bus, physical PDF p. 167.
+- [x] The Q4 2008 report records completion of the Fermeuse station modifications for the SkyPower wind-farm interconnection, physical PDF p. 261.
+- [x] The March 2014 inspection register identifies station 001936, FER-902E-B SF6 breaker 210691, FER-T1 asset 200093, FER-01-R recloser 230317, three regulators, meter 370126, battery 100319 and charger 110241, physical PDF pp. 111 to 113.
+- [x] The republished agreement places the 66 kV interconnection at FER-902E-DL and FER-902E-B. Newfoundland Power owns and controls the station extension, 66 kV bus, breaker and revenue instrument transformers. The seller owns the 66 kV line beyond FER-902E-DL and designated equipment on Newfoundland Power land. Hydro owns the export bidirectional meter, physical PDF pp. 49 and 54 to 59.
+- [x] Hydro reports June 30, 2009 as the Fermeuse Wind Project commercial in-service date, physical PDF p. 3.
+- [x] The 2027 transformer register lists FER-T1 at 66/12.5 kV and 4 MVA, with a 2.2 MVA 2026 forecast, physical PDF p. 547.
+- [ ] Do not mark the proposed 2014 FER-01 digital-recloser replacement complete without a later asset or completion record.
 
 ## Blaketown station record
 

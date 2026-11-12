@@ -915,6 +915,53 @@ test("Glenwood separates the installed TL210 station from the studied 147L tap",
   assert.deepEqual(glenwood.referenceSheets.map(({ image }) => image), ["./reference-maps/gln-2026-study-area.png"]);
 });
 
+test("Cape Broyle records generation, distribution, and dated voltage evidence without flattening the source conflict", () => {
+  const capeBroyle = stationProfiles.find((station) => station.code === "CAB");
+  assert.ok(capeBroyle);
+  assert.deepEqual(capeBroyle.connectedCircuits.map(({ circuit }) => circuit), ["20L", "66L"]);
+  assert.deepEqual(capeBroyle.connectedCircuits.map(({ from_code, to_code }) => [from_code, to_code]), [["MOB", "CAB"], ["CAB", "FER"]]);
+  assert.deepEqual(capeBroyle.feederRegister, ["CAB-01"]);
+  assert.deepEqual(capeBroyle.diagram.transformers.map(({ label, rating }) => [label, rating]), [["CAB-T2", "6.67 MVA"], ["CAB-T1", "11.25 MVA"]]);
+
+  const arrangement = capeBroyle.engineeringRecord.facts.flat().join(" ");
+  assert.match(arrangement, /6\.9 kV from the Cape Broyle plant stepped up to 66 kV/);
+  assert.match(arrangement, /66 kV stepped down to 12\.5 kV/);
+  assert.match(arrangement, /CAB-01 sole 12\.5 kV feeder; 13\.4 km main trunk; 1,247 customers/);
+
+  const fleet = capeBroyle.planningRecord.facts.flat().join(" ");
+  assert.match(fleet, /CAB-T1 generation; 66\/7\.2 kV; 11\.25 MVA/);
+  assert.match(fleet, /CAB-T2 distribution; 66\/25 kV; 6\.67 MVA; 3\.83 MVA 2026 forecast/);
+  assert.match(fleet, /Published voltage difference/);
+
+  const completion = capeBroyle.historyRecords.find((record) => record.label === "Q4 2008 REPORTED PLANT AND STATION COMPLETION");
+  assert.match(completion.facts.flat().join(" "), /20L rebuild between Mobile and Cape Broyle completed/);
+  const inspection = capeBroyle.historyRecords.find((record) => record.label === "MARCH 2014 INSPECTION REGISTER");
+  assert.match(inspection.facts.flat().join(" "), /CAB-66L-B bulk-oil breaker 210150.*CAB-T2 asset 200290/);
+  assert.deepEqual(capeBroyle.referenceSheets.map(({ image }) => image), ["./reference-maps/cab-01-2027-refurbishment.png"]);
+});
+
+test("Fermeuse separates the Newfoundland Power station from the seller and Hydro wind equipment", () => {
+  const fermeuse = stationProfiles.find((station) => station.code === "FER");
+  assert.ok(fermeuse);
+  assert.deepEqual(fermeuse.connectedCircuits.map(({ circuit }) => circuit), ["66L", "902E"]);
+  assert.deepEqual(fermeuse.feederRegister, ["FER-01"]);
+  assert.deepEqual(fermeuse.diagram.transformers, [{ label: "FER-T1", rating: "4 MVA", from: "b1", to: "b2" }]);
+  assert.match(fermeuse.engineeringRecord.facts.flat().join(" "), /built in 1976.*radial 66L from Cape Broyle.*66\/12\.5 kV; 4 MVA/s);
+  assert.match(fermeuse.planningRecord.facts.flat().join(" "), /2\.2 MVA 2026 forecast/);
+
+  const completion = fermeuse.historyRecords.find((record) => record.label === "Q4 2008 REPORTED WIND-INTERCONNECTION COMPLETION");
+  assert.match(completion.facts.flat().join(" "), /station modifications.*completed/);
+  const inspection = fermeuse.historyRecords.find((record) => record.label === "MARCH 2014 INSPECTION REGISTER");
+  assert.match(inspection.facts.flat().join(" "), /FER-902E-B SF6 breaker 210691/);
+
+  const boundary = fermeuse.historyRecords.find((record) => record.label === "2009 WIND PROJECT IN SERVICE / 2026 REPUBLISHED AGREEMENT");
+  const boundaryFacts = boundary.facts.flat().join(" ");
+  assert.match(boundaryFacts, /June 30, 2009/);
+  assert.match(boundaryFacts, /Newfoundland Power equipment station extension, 66 kV steel bus, breaker, revenue CTs/);
+  assert.match(boundaryFacts, /Seller equipment three-phase 66 kV line from FER-902E-DL/);
+  assert.match(boundaryFacts, /Hydro equipment export bidirectional metering/);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);
@@ -1827,9 +1874,10 @@ test("2014 rural recloser and Holyrood breaker records remain proposed", () => {
   for (const [code, pattern] of Object.entries(expected)) {
     const profile = stationProfiles.find((station) => station.code === code);
     assert.ok(profile, `${code} profile is present`);
-    assert.equal(profile.historyRecords[0].sourceId, "np-2014-improvements");
-    assert.match(profile.historyRecords[0].label, /PROPOSED/);
-    assert.match(profile.historyRecords[0].facts.flat().join(" "), pattern);
+    const proposed = profile.historyRecords.find((record) => record.sourceId === "np-2014-improvements");
+    assert.ok(proposed, `${code} retains its 2014 proposal`);
+    assert.match(proposed.label, /PROPOSED/);
+    assert.match(proposed.facts.flat().join(" "), pattern);
   }
 });
 
