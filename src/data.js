@@ -1180,6 +1180,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
   {
+    id: "np-2026-lewisporte-boyds-cove",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, Lewisporte-Boyd's Cove 138 kV Conversion",
+    topics: ["Lewisporte", "Boyd's Cove", "Gander", "138 kV conversion", "114L", "TL254", "GAN-T2"],
+    pages: "physical PDF pp. 65 to 67",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
+    id: "np-2015-gander-modernization",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Gander Substation Refurbishment and Modernization",
+    topics: ["Gander", "GAN-T1", "GAN-T2", "GAN-T3", "138 kV", "66 kV", "12.5 kV", "grounding transformer"],
+    pages: "physical PDF pp. 429 to 431",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3185,6 +3205,115 @@ export const stationProfiles = [
           ["Site work", "new spill-containment foundation"],
           ["Filed schedule", "design and procurement in 2026 and 2027; installation, testing and commissioning planned for 2028"],
           ["Existing transformer disposition", "assess after replacement for possible spare use, repair or disposal"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "BOY",
+    name: "Boyd's Cove",
+    voltage: "66 kV",
+    circuitRegisterLabel: "2025 EXISTING CONNECTIONS",
+    circuitSource: { sourceId: "np-2026-lewisporte-boyds-cove", pages: "physical PDF p. 66" },
+    connectedCircuits: [
+      { circuit: "114L", from: "Gander Bay", from_code: "GBY", to: "Boyd's Cove", to_code: "BOY" },
+      { circuit: "114L", from: "Boyd's Cove", from_code: "BOY", to: "Summerford", to_code: "SUM" },
+      { circuit: "TL254", from: "Boyd's Cove", from_code: "BOY", to: "NL Hydro system", to_code: null }
+    ],
+    feederRegisterLabel: "TRANSMISSION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 existing arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }],
+      transformers: [],
+      circuits: [
+        { label: "114L", destination: "Gander Bay", bus: "b1", destinationCode: "GBY" },
+        { label: "114L", destination: "Summerford", bus: "b1", destinationCode: "SUM" },
+        { label: "TL254", destination: "NL Hydro system", bus: "b1", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2025 EXISTING ARRANGEMENT",
+      title: "Boyd's Cove 66 kV transmission station",
+      sourceId: "np-2026-lewisporte-boyds-cove",
+      pages: "physical PDF p. 66",
+      facts: [
+        ["Station role", "transmission substation"],
+        ["Incoming supply", "114L from Gander Bay Substation"],
+        ["Outgoing circuits", "114L to Summerford Substation and Newfoundland and Labrador Hydro TL254"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2026 TO 2027 PROPOSED 138 KV CONVERSION",
+        sourceId: "np-2026-lewisporte-boyds-cove",
+        pages: "physical PDF pp. 65 to 67",
+        facts: [
+          ["New supply", "new 138 kV line from Lewisporte to Boyd's Cove"],
+          ["Station work", "yard expansion, control building, 138 kV and 66 kV structures, breakers, switches, instrument transformers, relays and communications"],
+          ["Transformer relocation", "install the GAN-T2 replacement transformer at Boyd's Cove instead of Gander"],
+          ["Filed schedule", "construction and commissioning planned for 2027"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "GAN",
+    name: "Gander",
+    voltage: "138/66/12.5 kV",
+    circuitRegisterLabel: "2025 EXISTING CONNECTIONS",
+    circuitSource: { sourceId: "np-2026-lewisporte-boyds-cove", pages: "physical PDF p. 66" },
+    connectedCircuits: [
+      { circuit: "144L", from: "Cobb's Pond", from_code: "COB", to: "Gander", to_code: "GAN" },
+      { circuit: "146L", from: "Gambo", from_code: "GAM", to: "Gander", to_code: "GAN" },
+      { circuit: "108L", from: "Gander", from_code: "GAN", to: "Gander Bay", to_code: "GBY" },
+      { circuit: "102L", from: "Gander", from_code: "GAN", to: "Roycefield", to_code: "RFD" }
+    ],
+    feederRegisterLabel: "2015 STATION RECORD",
+    feederRegister: ["GAN-01", "GAN-02", "GAN-03", "GAN-04"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2015 equipment / 2025 existing connections",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "12.5 kV bus", voltage: "12.5 kV" }, { id: "b4", label: "grounding-bank secondary", voltage: "6.9 kV" }],
+      transformers: [{ label: "GAN-T1", rating: "20 MVA", from: "b1", to: "b3" }, { label: "GAN-T2", rating: "21.3 MVA", from: "b1", to: "b2" }, { label: "GAN-T3", rating: "3 x 1.667 MVA grounding bank", from: "b2", to: "b4" }],
+      circuits: [{ label: "144L", destination: "Cobb's Pond", bus: "b1", destinationCode: "COB" }, { label: "146L", destination: "Gambo", bus: "b1", destinationCode: "GAM" }, { label: "108L", destination: "Gander Bay", bus: "b2", destinationCode: "GBY" }, { label: "102L", destination: "Roycefield", bus: "b2", destinationCode: "RFD" }]
+    },
+    engineeringRecord: {
+      date: "2015 EQUIPMENT / 2025 CONNECTIONS",
+      title: "Gander transmission and distribution station",
+      sourceId: "np-2015-gander-modernization",
+      pages: "physical PDF pp. 429 to 431",
+      facts: [
+        ["GAN-T1", "138/12.5 kV; 20 MVA; supplies four distribution feeders"],
+        ["GAN-T2", "138/66 kV system transformer; 21.3 MVA in the 2027 fleet table"],
+        ["GAN-T3", "three single-phase 69/6.9 kV, 1.667 MVA transformers acting as the 66 kV ground source"],
+        ["Distribution feeders", "GAN-01, GAN-02, GAN-03 and GAN-04"],
+        ["2015 station load", "approximately 1,683 customers in the Gander area"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 547 and 553",
+      facts: [
+        ["GAN-T1", "138/12.5 kV; 20 MVA; 18.10 MVA 2026 forecast"],
+        ["GAN-T2", "138/66 kV; 21.3 MVA"],
+        ["GAN-T3", "66 kV grounding-transformer bank; 3.5 MVA in the fleet table"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2026 TO 2027 PROPOSED 66 KV REMOVAL",
+        sourceId: "np-2026-lewisporte-boyds-cove",
+        pages: "physical PDF pp. 65 to 67",
+        facts: [
+          ["66 kV system", "remove the 66 kV system from Gander"],
+          ["GAN-T2", "install the replacement transformer at Boyd's Cove"],
+          ["Ground source", "install a new 138 kV grounding transformer at Gander"],
+          ["Filed schedule", "construction and commissioning planned for 2027"]
         ]
       }
     ]

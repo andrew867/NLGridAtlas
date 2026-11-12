@@ -561,6 +561,22 @@ test("Mobile Hydro Plant separates the existing outlet transformer from its prop
   assert.match(proposedFacts, /commissioning planned for 2028/);
 });
 
+test("Boyd's Cove and Gander retain the present corridor before the proposed 138 kV conversion", () => {
+  const boydsCove = stationProfiles.find((station) => station.code === "BOY");
+  const gander = stationProfiles.find((station) => station.code === "GAN");
+  assert.deepEqual(boydsCove.connectedCircuits.map(({ circuit }) => circuit), ["114L", "114L", "TL254"]);
+  assert.match(boydsCove.engineeringRecord.facts.flat().join(" "), /114L to Summerford Substation and Newfoundland and Labrador Hydro TL254/);
+  assert.match(boydsCove.historyRecords[0].facts.flat().join(" "), /new 138 kV line from Lewisporte to Boyd's Cove/);
+
+  assert.deepEqual(gander.connectedCircuits.map(({ circuit }) => circuit), ["144L", "146L", "108L", "102L"]);
+  assert.deepEqual(gander.feederRegister, ["GAN-01", "GAN-02", "GAN-03", "GAN-04"]);
+  const ganderFacts = gander.engineeringRecord.facts.flat().join(" ");
+  assert.match(ganderFacts, /GAN-T1 138\/12\.5 kV; 20 MVA/);
+  assert.match(ganderFacts, /three single-phase 69\/6\.9 kV, 1\.667 MVA transformers/);
+  assert.match(gander.planningRecord.facts.flat().join(" "), /GAN-T3 66 kV grounding-transformer bank; 3\.5 MVA/);
+  assert.match(gander.historyRecords[0].facts.flat().join(" "), /remove the 66 kV system from Gander/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

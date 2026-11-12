@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, and Mobile Hydro Plant. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. The Greenspond and Mobile Plant records separate existing equipment from future capital work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, and Gander. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Greenspond, Mobile Plant, Boyd's Cove, and Gander separate existing equipment from future capital work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -64,6 +64,15 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2027 fleet table lists MOP-T1 at 13.33 MVA. The atlas retains this separately from the station-specific 10 MVA description, physical PDF p. 551.
 - [x] The proposed replacement is 10/13.3/16.7 MVA at 66/6.9 kV, with commissioning planned for 2028, physical PDF pp. 447 to 448.
 - [ ] Do not record the replacement as installed before a completion report confirms commissioning.
+
+## Gander and Boyd's Cove corridor
+
+- [x] The 2026 filing records Boyd's Cove as a 66 kV transmission substation on 114L between Gander Bay and Summerford, with Newfoundland and Labrador Hydro TL254 also supplied from the station, physical PDF p. 66.
+- [x] The same filing records Gander's 138 kV supplies as 144L from Cobb's Pond and 146L from Gambo. Its 66 kV outputs are 108L to Gander Bay and 102L to Roycefield, physical PDF p. 66.
+- [x] The 2015 Gander station report identifies GAN-T1 at 138/12.5 kV and 20 MVA, GAN-T2 between the 138 kV and 66 kV buses, and GAN-T3 as three single-phase 69/6.9 kV, 1.667 MVA grounding transformers, physical PDF pp. 429 to 431.
+- [x] The 2027 fleet table lists GAN-T2 at 21.3 MVA and the GAN-T3 bank at 3.5 MVA. These values remain separate from the individual-unit rating in the 2015 station report, physical PDF p. 553.
+- [x] The proposed project adds a 138 kV line from Lewisporte to Boyd's Cove, moves the planned GAN-T2 replacement to Boyd's Cove, removes the 66 kV system from Gander, and adds a 138 kV grounding transformer at Gander, physical PDF pp. 65 to 67.
+- [ ] Do not render the proposed 138 kV Boyd's Cove supply or revised Gander arrangement as commissioned before a completion record confirms the filed 2027 schedule.
 
 ## Pulpit Rock feeder-bus and transformer records
 
