@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Old Perlican, Islington, Northwest Brook, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Old Perlican, Islington, Northwest Brook, Lockston, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -170,6 +170,17 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] Newfoundland Power reported the station refurbishment complete in its Q4 2025 regulatory report, physical PDF p. 9.
 - [x] The 2027 fleet table records NWB-T1 at 11.2 MVA with a 5.85 MVA 2026 forecast, physical PDF p. 549.
 - [ ] The completion report does not publish an as-built breaker or bus one-line. The atlas retains the filed logical connections and does not reproduce the proposed breaker detail as an as-built drawing.
+
+## Lockston station record
+
+- [x] The filed existing arrangement connects the 6.9 kV hydro plant to the 66 kV system through LOK-T1 and LOK-T4 at 46/6.9 kV and LOK-T2 at 66/46 kV. LOK-T3 supplies one 12.5 kV distribution feeder, physical PDF pp. 413 and 418.
+- [x] The 2024 station table gives manufacturer, manufacture year, voltage, and MVA data for LOK-T1, LOK-T2, LOK-T3, and LOK-T4, physical PDF p. 418.
+- [x] The station is connected to 110L toward Clarenville, 111L toward Port Union and Catalina, and 113L toward Princeton Pond. The recent filing directly identifies the latter two connections; the 2006 handbook and later rebuild records identify 110L, physical PDF pp. 413, 415 and 418; 2006 handbook physical PDF p. 8.
+- [x] The filed project removes LOK-T1, LOK-T2, LOK-T4, and all 46 kV equipment. One 5 MVA, 66/6.9 kV transformer replaces the three-unit generation bank, physical PDF pp. 420 and 423.
+- [x] LOK-T3 remains in service. The project also replaces wood structures, deteriorated switches, and the high-speed ground switch, physical PDF pp. 420 and 423 to 424.
+- [x] The 2027 fleet table lists LOK-T2 at 7.46 MVA while the station-specific 2024 table gives 4 MVA. The atlas retains both values as separate records, physical PDF p. 551; 2025 capital application physical PDF p. 418.
+- [x] The Q2 2026 regulatory report says early construction had begun and the station was being transferred to a temporary transformer installation, physical PDF p. 9.
+- [ ] No later public report available in the archive on 2026-11-12 confirms commissioning or gives the replacement transformer's designation. The atlas does not render the proposed 66/6.9 kV unit as installed.
 
 ## Pulpit Rock feeder-bus and transformer records
 

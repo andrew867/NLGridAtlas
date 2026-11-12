@@ -748,6 +748,23 @@ test("Northwest Brook retains its 109L connection and completed 2025 modernizati
   assert.match(historyFacts, /reported the Northwest Brook refurbishment complete/);
 });
 
+test("Lockston preserves the legacy 46 kV plant connection and separates the in-progress replacement", () => {
+  const lockston = stationProfiles.find((station) => station.code === "LOK");
+  assert.ok(lockston);
+  assert.deepEqual(lockston.connectedCircuits.map(({ circuit }) => circuit), ["110L", "111L", "113L"]);
+  assert.deepEqual(lockston.feederRegister, ["LOK-01"]);
+  assert.deepEqual(lockston.diagram.transformers.map(({ label, rating }) => [label, rating]), [["LOK-T2", "4 MVA"], ["LOK-T1", "2.5 MVA"], ["LOK-T4", "2.5 MVA"], ["LOK-T3", "4 MVA"]]);
+  const existingFacts = lockston.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = lockston.planningRecord.facts.flat().join(" ");
+  const historyFacts = lockston.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /LOK-T1 and LOK-T4 step 6\.9 kV to 46 kV; LOK-T2 steps 46 kV to 66 kV/);
+  assert.match(existingFacts, /LOK-T3 66\/12\.5 kV; 4 MVA; General Electric; manufactured in 1970/);
+  assert.match(planningFacts, /LOK-T2 fleet-table rating 66\/46 kV; 7\.46 MVA/);
+  assert.match(planningFacts, /station-specific table describes LOK-T2 as 4 MVA/);
+  assert.match(historyFacts, /filing does not state its designation/);
+  assert.match(historyFacts, /early construction had begun.*temporary transformer installation/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

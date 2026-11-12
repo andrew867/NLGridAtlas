@@ -1160,6 +1160,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
   },
   {
+    id: "np-2025-lockston",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, Lockston Substation Refurbishment and Modernization",
+    topics: ["Lockston", "LOK-T1", "LOK-T2", "LOK-T3", "LOK-T4", "110L", "111L", "113L", "66 kV", "46 kV", "12.5 kV", "6.9 kV", "hydroelectric generation"],
+    pages: "physical PDF pp. 411 to 426",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
+    id: "np-2026-q2-regulatory",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "Q2 2026 Quarterly Regulatory Report",
+    topics: ["Lockston", "Summerville", "94L", "24L", "capital construction"],
+    pages: "physical PDF p. 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NP%20-%202nd%20Quarterly%20Report%20for%20Period%20ending%20June%2030%2C%202026%20-%202026-08-14.PDF"
+  },
+  {
     id: "np-2026-capital",
     year: 2025,
     organization: "Newfoundland Power",
@@ -4164,6 +4184,87 @@ export const stationProfiles = [
         pages: "physical PDF p. 9",
         facts: [
           ["Project status", "Newfoundland Power reported the Northwest Brook refurbishment complete"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "LOK",
+    name: "Lockston",
+    voltage: "66/46/12.5/6.9 kV",
+    circuitRegisterLabel: "2024 FILED CONNECTIONS",
+    circuitSource: { sourceId: "np-2025-lockston", pages: "physical PDF pp. 413, 415 and 418" },
+    connectedCircuits: [
+      { circuit: "110L", from: "Clarenville", from_code: "CLV", to: "Lockston", to_code: "LOK", sourceId: "np-2006-handbook", pages: "physical PDF p. 8" },
+      { circuit: "111L", from: "Lockston", from_code: "LOK", to: "Port Union and Catalina", to_code: "CAT", sourceId: "np-2025-lockston", pages: "physical PDF p. 415" },
+      { circuit: "113L", from: "Lockston", from_code: "LOK", to: "Princeton Pond", to_code: "PPD", sourceId: "np-2025-lockston", pages: "physical PDF p. 415" }
+    ],
+    feederRegisterLabel: "2024 STATION RECORD",
+    feederRegister: ["LOK-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2024 filed existing arrangement / Q2 2026 construction state",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "46 kV legacy bus", voltage: "46 kV" }, { id: "b3", label: "6.9 kV plant bus", voltage: "6.9 kV" }, { id: "b4", label: "12.5 kV distribution bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "LOK-T2", rating: "4 MVA", from: "b1", to: "b2" }, { label: "LOK-T1", rating: "2.5 MVA", from: "b2", to: "b3" }, { label: "LOK-T4", rating: "2.5 MVA", from: "b2", to: "b3" }, { label: "LOK-T3", rating: "4 MVA", from: "b1", to: "b4" }],
+      circuits: [{ label: "110L", destination: "Clarenville", bus: "b1", destinationCode: "CLV" }, { label: "111L", destination: "Port Union and Catalina", bus: "b1", destinationCode: "CAT" }, { label: "113L", destination: "Princeton Pond", bus: "b1", destinationCode: "PPD" }],
+      generators: [{ label: "Lockston plant", rating: "4.275 MVA filed station record", bus: "b3" }]
+    },
+    engineeringRecord: {
+      date: "2024 FILED EXISTING EQUIPMENT",
+      title: "Lockston hydro, transmission, and distribution station",
+      sourceId: "np-2025-lockston",
+      pages: "physical PDF pp. 413, 415 to 420",
+      facts: [
+        ["Station built", "1956 as part of the Lockston hydroelectric development"],
+        ["2024 transmission record", "111L toward Port Union and Catalina; 113L to Princeton Pond"],
+        ["Generation connection", "LOK-T1 and LOK-T4 step 6.9 kV to 46 kV; LOK-T2 steps 46 kV to 66 kV for the 4.275 MVA plant"],
+        ["LOK-T1", "46/6.9 kV; 2.5 MVA; General Electric; manufactured in 1955"],
+        ["LOK-T2", "66/46 kV; 4 MVA; General Electric; manufactured in 1967"],
+        ["LOK-T4", "46/6.9 kV; 2.5 MVA; General Electric; manufactured in 1955"],
+        ["LOK-T3", "66/12.5 kV; 4 MVA; General Electric; manufactured in 1970; supplies LOK-01 and approximately 1,100 customers"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 548 and 551",
+      facts: [
+        ["LOK-T1 fleet-table rating", "46/6.9 kV; 2.5 MVA"],
+        ["LOK-T2 fleet-table rating", "66/46 kV; 7.46 MVA"],
+        ["LOK-T4 fleet-table rating", "46/6.9 kV; 2.5 MVA"],
+        ["LOK-T3", "66/12.5 kV; 4 MVA; 3.45 MVA 2026 forecast"],
+        ["Record difference", "the 2024 station-specific table describes LOK-T2 as 4 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2005 CIRCUIT REGISTER",
+        sourceId: "np-2006-handbook",
+        pages: "physical PDF p. 8",
+        facts: [
+          ["Bonavista loop", "110L from Clarenville to Lockston and 111L from Lockston to Catalina"]
+        ]
+      },
+      {
+        label: "2025 TO 2026 FILED MODERNIZATION SCOPE",
+        sourceId: "np-2025-lockston",
+        pages: "physical PDF pp. 418 to 426",
+        facts: [
+          ["Generation transformers", "remove LOK-T1, LOK-T2, and LOK-T4 and eliminate the legacy 46 kV arrangement"],
+          ["Replacement", "install one 5 MVA, 66/6.9 kV transformer on a spill-containment foundation; the filing does not state its designation"],
+          ["Retained transformer", "retain distribution transformer LOK-T3"],
+          ["Structures", "replace the 66 kV, 12.5 kV, and 6.9 kV wood structures with steel structures"],
+          ["Protection and control", "replace the transformer high-speed ground switch with a 66 kV breaker; install digital relays and communications equipment"],
+          ["Site", "extend the yard and ground grid and install security cameras and varmint protection"]
+        ]
+      },
+      {
+        label: "Q2 2026 CONSTRUCTION STATE",
+        sourceId: "np-2026-q2-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["Project status", "early construction had begun and work was under way to transfer the station load to a temporary transformer installation"]
         ]
       }
     ]
