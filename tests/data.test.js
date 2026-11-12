@@ -296,7 +296,7 @@ test("new station and corridor records retain primary source locators", () => {
     ["np-2023-long-pond", "PDF pp. 109 to 111"],
     ["nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20"],
     ["nlh-2026-wav-sop", "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146"],
-    ["np-2027-loop-study", "PDF pp. 183, 188 to 195"],
+    ["np-2027-loop-study", "physical PDF pp. 183, 188 to 195 and 199"],
     ["np-2027-transformers", "physical PDF pp. 545 to 551"]
   ]);
   for (const [id, pages] of expected) {
@@ -429,7 +429,15 @@ test("early CA-NP-020 feeder sheets have station records and current transformer
 
   const bishopsFalls = stationProfiles.find((station) => station.code === "BFS");
   assert.deepEqual(bishopsFalls.connectedCircuits.map(({ circuit }) => circuit), ["132L", "133L", "134L", "136L"]);
+  assert.equal(bishopsFalls.connectedCircuits.find(({ circuit }) => circuit === "136L").from_code, "RBK");
+  assert.equal(bishopsFalls.circuitSource.sourceId, "np-2025-ca-np-168");
+  assert.deepEqual(bishopsFalls.diagram.buses.map(({ voltage }) => voltage), ["138 kV", "25 kV"]);
   assert.match(bishopsFalls.planningRecord.facts.flat().join(" "), /BFS-T1.*138\/25 kV; 20 MVA; 8\.47 MVA/);
+  assert.match(bishopsFalls.engineeringRecord.facts.flat().join(" "), /20 MVA.*steel; installed in 1978.*steel; installed in 1978/);
+  const bishopsFallsHistory = bishopsFalls.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(bishopsFallsHistory, /BFS-132L-B, BFS-133L-B, BFS-134L-B and BFS-136L-B; bulk-oil units/);
+  assert.match(bishopsFallsHistory, /GFS-02 to BFS-02 tie was estimated at approximately \$900,000/);
+  assert.match(bishopsFallsHistory, /voltages as low as 0\.86 pu.*approximately 20 MVAR at Gambo/);
 });
 
 test("Deer Lake keeps the dated voltage records and approved DLK-03 work separate", () => {

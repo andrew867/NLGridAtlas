@@ -63,11 +63,21 @@ export const sources = [
     id: "np-2010-depreciation-transformers",
     year: 2010,
     organization: "Newfoundland Power",
-    title: "2010 Depreciation Study, Substation Transformer Listing",
-    topics: ["substation transformers", "installation year", "operating voltage", "Stephenville Crossing", "STX-T1"],
-    pages: "physical PDF p. 201",
+    title: "2010 Depreciation Study, Substation Transformer and Structure Listing",
+    topics: ["substation transformers", "installation year", "operating voltage", "Bishop's Falls", "BFS-T1", "Stephenville Crossing", "STX-T1"],
+    pages: "physical PDF pp. 199 and 201",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-2012-in-service-failures",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-013, 2010 Substation Equipment Replacements",
+    topics: ["Bishop's Falls", "BFS-01-R", "recloser", "in-service failure", "substation equipment"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/rfi/PUB-NP-13.pdf"
   },
   {
     id: "np-2011-hardwoods",
@@ -794,8 +804,8 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "138 kV and 66 kV Loop Assessments, 2027 to 2036",
-    topics: ["Western Avalon", "Holyrood", "transformer ratings", "contingencies"],
-    pages: "PDF pp. 183, 188 to 195",
+    topics: ["Western Avalon", "Holyrood", "Bishop's Falls", "Rattling Brook", "136L", "transformer ratings", "contingencies"],
+    pages: "physical PDF pp. 183, 188 to 195 and 199",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
@@ -1503,9 +1513,9 @@ export const sources = [
     id: "np-2016-pub-np-064-g",
     year: 2016,
     organization: "Newfoundland Power",
-    title: "PUB-NP-064 Attachment G, Glendale inspection form",
-    topics: ["Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers"],
-    pages: "physical PDF pp. 148 to 152",
+    title: "PUB-NP-064 Attachment G, Bishop's Falls and Glendale inspection forms",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers"],
+    pages: "physical PDF pp. 28 to 31 and 148 to 152",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -5099,6 +5109,8 @@ const earlyFeederMapProfiles = [
     code: "BFS",
     name: "Bishop's Falls",
     voltage: "138/25 kV",
+    circuitRegisterLabel: "2025 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
     handbookPage: "physical PDF pp. 8 and 11",
     feederRegister: ["BFS-01", "BFS-02"],
     mapPages: [["BFS-01", 26], ["BFS-02", 27]],
@@ -5106,10 +5118,74 @@ const earlyFeederMapProfiles = [
       { circuit: "132L", from: "Grand Falls", from_code: "GFS", to: "Bishop's Falls", to_code: "BFS" },
       { circuit: "133L", from: "Stony Brook", from_code: "STY", to: "Bishop's Falls", to_code: "BFS" },
       { circuit: "134L", from: "Bishop's Falls", from_code: "BFS", to: "Botwood", to_code: "BOT" },
-      { circuit: "136L", from: "Cobb's Pond", from_code: "COB", to: "Bishop's Falls", to_code: "BFS" }
+      { circuit: "136L", from: "Rattling Brook", from_code: "RBK", to: "Bishop's Falls", to_code: "BFS" }
     ],
     transformerPages: "physical PDF p. 546",
-    transformerFacts: [["BFS-T1", "138/25 kV; 20 MVA; 8.47 MVA 2026 forecast"]]
+    transformerFacts: [["BFS-T1", "138/25 kV; 20 MVA; 8.47 MVA 2026 forecast"]],
+    diagram: {
+      label: "2025 registered arrangement with 2014 station equipment",
+      buses: [{ id: "b1", label: "transmission bus", voltage: "138 kV" }, { id: "b2", label: "distribution bus", voltage: "25 kV" }],
+      transformers: [{ label: "BFS-T1", rating: "20 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "132L", destination: "Grand Falls", bus: "b1", destinationCode: "GFS" },
+        { label: "133L", destination: "Stony Brook", bus: "b1", destinationCode: "STY" },
+        { label: "134L", destination: "Botwood", bus: "b1", destinationCode: "BOT" },
+        { label: "136L", destination: "Rattling Brook", bus: "b1", destinationCode: "RBK" },
+        { label: "BFS-01", destination: "25 kV feeder", bus: "b2", link: false },
+        { label: "BFS-02", destination: "25 kV feeder", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2010 DEPRECIATION STUDY",
+      title: "Bishop's Falls 138/25 kV substation",
+      sourceId: "np-2010-depreciation-transformers",
+      pages: "physical PDF p. 199",
+      facts: [
+        ["Transformer capacity", "20 MVA"],
+        ["138 kV structure", "steel; installed in 1978"],
+        ["25 kV structure", "steel; installed in 1978"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2010 IN-SERVICE REPLACEMENT",
+        sourceId: "np-2012-in-service-failures",
+        pages: "physical PDF p. 3",
+        facts: [["Equipment", "BFS-01-R recloser replaced under the in-service failures item"]]
+      },
+      {
+        label: "MARCH 2014 INSPECTION REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 28 to 31",
+        facts: [
+          ["138 kV breakers", "BFS-132L-B, BFS-133L-B, BFS-134L-B and BFS-136L-B; bulk-oil units"],
+          ["25 kV feeder protection", "BFS-01-R and BFS-02-R maintenance-free reclosers"],
+          ["Voltage regulation", "three BFS-01-VR1 regulators"],
+          ["Transformer", "BFS-T1, equipment number 200305"],
+          ["Control and station supply", "SAGE 2100 RTU, BFS-BAT-S battery and BFS-CHG charger"]
+        ]
+      },
+      {
+        label: "2015 GRAND FALLS TIE ALTERNATIVE",
+        sourceId: "np-2016-grand-falls",
+        pages: "physical PDF p. 288",
+        facts: [
+          ["Distance", "Bishop's Falls was approximately 14 km from Grand Falls"],
+          ["Alternative", "a GFS-02 to BFS-02 tie was estimated at approximately $900,000"],
+          ["Study result", "the tie would defer the Grand Falls transformer by one year; a longer deferral required a complete BFS-02 rebuild"]
+        ]
+      },
+      {
+        label: "2036 P90 136L CONTINGENCY STUDY",
+        sourceId: "np-2027-loop-study",
+        pages: "physical PDF p. 199",
+        facts: [
+          ["Line", "136L runs between Bishop's Falls and Rattling Brook"],
+          ["Modeled loss", "voltages as low as 0.86 pu near Gander, Gambo and Glovertown; the 115L/116L system approached 0.40 pu"],
+          ["Modeled mitigation", "8 MW at Wesleyville produced a lowest reported voltage of 0.92 pu; approximately 20 MVAR at Gambo gave comparable voltages"]
+        ]
+      }
+    ]
   },
   {
     code: "BIG",
