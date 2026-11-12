@@ -554,9 +554,12 @@ test("Mobile Hydro Plant separates the existing outlet transformer from its prop
   assert.deepEqual(mobilePlant.diagram.generators.map(({ rating }) => rating), ["11 MVA"]);
   const existingFacts = mobilePlant.engineeringRecord.facts.flat().join(" ");
   const planningFacts = mobilePlant.planningRecord.facts.flat().join(" ");
-  const proposedFacts = mobilePlant.historyRecords[0].facts.flat().join(" ");
+  const historyFacts = mobilePlant.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  const proposedFacts = mobilePlant.historyRecords.find(({ label }) => label.includes("PROPOSED REPLACEMENT")).facts.flat().join(" ");
   assert.match(existingFacts, /MOP-T1 66\/6\.9 kV; 10 MVA; Westinghouse; installed at Mobile Plant in 1951/);
   assert.match(planningFacts, /MOP-T1 fleet-table rating 66\/6\.9 kV; 13\.33 MVA/);
+  assert.match(historyFacts, /upgrade AC\/DC distribution, protection and control systems and the governor; replace the switchgear/);
+  assert.match(historyFacts, /reported all commissioning complete/);
   assert.match(proposedFacts, /10\/13\.3\/16\.7 MVA, 66\/6\.9 kV/);
   assert.match(proposedFacts, /commissioning planned for 2028/);
 });
@@ -612,10 +615,13 @@ test("Lookout Brook retains both hydro units and the documented transformer rati
   assert.deepEqual(lookoutBrook.diagram.generators.map(({ label, rating }) => [label, rating]), [["G3", "3 MVA"], ["G4", "2.889 MVA"]]);
   const existingFacts = lookoutBrook.engineeringRecord.facts.flat().join(" ");
   const planningFacts = lookoutBrook.planningRecord.facts.flat().join(" ");
-  const proposedFacts = lookoutBrook.historyRecords[0].facts.flat().join(" ");
+  const historyFacts = lookoutBrook.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  const proposedFacts = lookoutBrook.historyRecords.find(({ label }) => label.includes("PROPOSED REPLACEMENT")).facts.flat().join(" ");
   assert.match(existingFacts, /installed at Lookout Brook in 1997 after relocation from Grand Falls/);
   assert.match(planningFacts, /LBK-T1 fleet-table rating 66\/2\.4 kV; 10 MVA/);
   assert.match(planningFacts, /station-specific report describes the installed transformer as 7\.5 MVA/);
+  assert.match(historyFacts, /rewind the stator, rotor and exciter/);
+  assert.match(historyFacts, /reported the Lookout Brook refurbishment complete/);
   assert.match(proposedFacts, /5\/6\.7\/8\.3 MVA, 66\/2\.4 kV/);
   assert.match(proposedFacts, /commissioning planned for 2029/);
 });

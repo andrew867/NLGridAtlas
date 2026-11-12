@@ -1220,6 +1220,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
   {
+    id: "np-2023-mobile-refurbishment",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Mobile Hydro Plant Refurbishment",
+    topics: ["Mobile Hydro Plant", "powerhouse", "switchgear", "protection and control", "turbine", "generator"],
+    pages: "physical PDF pp. 138 and 501",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
     id: "np-2026-lewisporte-boyds-cove",
     year: 2025,
     organization: "Newfoundland Power",
@@ -1278,6 +1288,16 @@ export const sources = [
     pages: "physical PDF pp. 483 to 490",
     status: "proposed",
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
+    id: "np-2024-lookout-brook-refurbishment",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Lookout Brook Hydro Plant Refurbishment",
+    topics: ["Lookout Brook", "G3", "stator", "rotor", "exciter", "main inlet valve", "powerhouse"],
+    pages: "physical PDF pp. 111 to 112 and 455",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
   },
   {
     id: "np-2027-harmon",
@@ -3394,6 +3414,24 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2023 TO 2024 PLANT REFURBISHMENT",
+        sourceId: "np-2023-mobile-refurbishment",
+        pages: "physical PDF pp. 138 and 501",
+        facts: [
+          ["Powerhouse", "upgrade the powerhouse building, add an extension and rehabilitate the crane"],
+          ["Electrical systems", "upgrade AC/DC distribution, protection and control systems and the governor; replace the switchgear"],
+          ["Generating unit", "overhaul the turbine and refurbish the generator"]
+        ]
+      },
+      {
+        label: "Q4 2025 COMPLETION",
+        sourceId: "np-2025-q4-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["Commissioning", "issues identified during commissioning were resolved; Newfoundland Power reported all commissioning complete"]
+        ]
+      },
+      {
         label: "2026 TO 2028 PROPOSED REPLACEMENT",
         sourceId: "np-2026-mobile-plant",
         pages: "physical PDF pp. 441 to 448",
@@ -3677,6 +3715,24 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2024 TO 2025 PLANT REFURBISHMENT",
+        sourceId: "np-2024-lookout-brook-refurbishment",
+        pages: "physical PDF pp. 111 to 112 and 455",
+        facts: [
+          ["G3 generator", "rewind the stator, rotor and exciter"],
+          ["Plant equipment", "replace the G3 main inlet valve and powerhouse crane"],
+          ["Powerhouse", "replace the roof, windows and main loading door"]
+        ]
+      },
+      {
+        label: "Q4 2025 COMPLETION",
+        sourceId: "np-2025-q4-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["Project status", "Newfoundland Power reported the Lookout Brook refurbishment complete"]
+        ]
+      },
       {
         label: "2027 TO 2029 PROPOSED REPLACEMENT",
         sourceId: "np-2027-lookout-brook",

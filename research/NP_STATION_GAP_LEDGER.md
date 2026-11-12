@@ -62,6 +62,7 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2026 capital filing identifies MOP as a 1950 generation substation. An 11 MVA generator supplies MOP-T1 at 6.9 kV, and MOP-T1 connects the plant to the 66 kV line to Mobile Substation, physical PDF p. 441.
 - [x] The station-specific report describes the installed MOP-T1 as a 10 MVA, 66/6.9 kV Westinghouse unit installed at Mobile Plant in 1951, physical PDF p. 441.
 - [x] The 2027 fleet table lists MOP-T1 at 13.33 MVA. The atlas retains this separately from the station-specific 10 MVA description, physical PDF p. 551.
+- [x] The 2023 filing scopes powerhouse, crane, AC/DC distribution, protection, governor, switchgear, turbine, and generator work. The Q4 2025 report states that commissioning issues were resolved and all commissioning was complete, physical PDF pp. 138 and 501; Q4 2025 report physical PDF p. 9.
 - [x] The proposed replacement is 10/13.3/16.7 MVA at 66/6.9 kV, with commissioning planned for 2028, physical PDF pp. 447 to 448.
 - [ ] Do not record the replacement as installed before a completion report confirms commissioning.
 
@@ -96,6 +97,7 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2027 report identifies Lookout Brook G3 at 3 MVA, G4 at 2.889 MVA, LBK-T1, and 403L to Robinsons, physical PDF p. 483.
 - [x] The station-specific report describes LBK-T1 as a 7.5 MVA English Electric transformer in 66/2.4 kV service, installed at Lookout Brook in 1997 after relocation from Grand Falls, physical PDF p. 483.
 - [x] The 2027 fleet table lists LBK-T1 at 10 MVA. The atlas keeps this value separate from the station-specific 7.5 MVA description, physical PDF p. 551.
+- [x] The 2024 filing scopes G3 stator, rotor, exciter, main inlet valve, crane, and building work. The Q4 2025 report states that the Lookout Brook refurbishment was complete, physical PDF pp. 111 to 112 and 455; Q4 2025 report physical PDF p. 9.
 - [x] The proposed replacement is a 5/6.7/8.3 MVA, 66/2.4 kV unit with commissioning planned for 2029, physical PDF p. 490.
 - [ ] Do not record the replacement as installed before a completion report confirms commissioning.
 
