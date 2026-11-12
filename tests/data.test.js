@@ -1871,6 +1871,30 @@ test("Pierre's Brook separates the installed 66 kV station from filed conversion
   assert.equal(pierresBrook.historyRecords.find(({ label }) => label.includes("FILED ELECTRICAL"))?.sourceId, "np-2016-pierre-brook");
 });
 
+test("Rocky Pond joins the segmented 66 kV corridor to the rebuilt hydro plant", () => {
+  const rockyPond = stationProfiles.find((station) => station.code === "ROP");
+  assert.ok(rockyPond);
+  assert.deepEqual(rockyPond.connectedCircuits, [
+    { circuit: "20L(A)", from: "Rocky Pond", from_code: "ROP", to: "Mobile", to_code: "MOB" },
+    { circuit: "20L(B)", from: "Horse Chops Tap", from_code: null, to: "Rocky Pond", to_code: "ROP" },
+    { circuit: "22L", from: "Morris", from_code: "MRP", to: "Rocky Pond", to_code: "ROP" }
+  ]);
+  assert.deepEqual(rockyPond.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "6.9 kV"]);
+  assert.deepEqual(rockyPond.diagram.transformers.map(({ label, rating }) => [label, rating]), [["ROP-T1", "5.33 MVA"]]);
+  assert.deepEqual(rockyPond.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "3.25 MW plant capacity"]]);
+  const plantFacts = rockyPond.engineeringRecord.facts.flat().join(" ");
+  const historyFacts = rockyPond.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /3\.25 MW under 32\.6 m net head/);
+  assert.match(historyFacts, /shut the plant down for eight months/);
+  assert.match(historyFacts, /governor, generator, penstock and substation refurbishment completed/);
+  assert.match(historyFacts, /20L\(A\).*36\.96 MVA.*37% loading/);
+  assert.match(historyFacts, /ROP-T1, asset 200148/);
+  assert.match(historyFacts, /ROP-G1-B vacuum circuit breaker, asset 210675/);
+  assert.match(historyFacts, /2,934 to 3,224 kW/);
+  assert.match(historyFacts, /3,224 kW at the 1030 Island Time interval/);
+  assert.match(historyFacts, /packing was described as a temporary fix/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");

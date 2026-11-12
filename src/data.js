@@ -1795,7 +1795,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
     topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 371 to 376, 427, 484 to 487 and 500 to 502",
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 371 to 376, 421, 427, 484 to 487 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1834,7 +1834,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "NP-NLH-168 Attachment 1, Newfoundland Power Generation Capacity Tests",
-    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Petty Harbour", "PHR-T1", "Pierre's Brook", "PBK-G1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
+    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Petty Harbour", "PHR-T1", "Pierre's Brook", "PBK-G1", "Rocky Pond", "ROP-G1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
     pages: "physical PDF p. 2",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/NP-NLH-168.PDF"
@@ -1873,8 +1873,8 @@ export const sources = [
     id: "np-2009-q4-horse-chops",
     year: 2010,
     organization: "Newfoundland Power",
-    title: "Q4 2009 Quarterly Regulatory Report, Horse Chops completion",
-    topics: ["Horse Chops", "Horse Chops Hydro Plant", "substation refurbishment", "governor", "protection", "plant controls"],
+    title: "Q4 2009 Quarterly Regulatory Report, plant and substation completion",
+    topics: ["Horse Chops", "Horse Chops Hydro Plant", "Rocky Pond", "Rocky Pond Hydro Plant", "substation refurbishment", "governor", "protection", "plant controls", "generator", "penstock"],
     pages: "physical PDF p. 553",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
@@ -1888,6 +1888,16 @@ export const sources = [
     pages: "physical PDF pp. 321 to 324 and 330 to 331",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2009-rocky-pond",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Rocky Pond Hydro Plant Refurbishment",
+    topics: ["Rocky Pond", "Rocky Pond Hydro Plant", "ROP-T1", "66 kV", "6.9 kV", "hydroelectric generation", "generator rewind", "governor", "penstock", "substation refurbishment"],
+    pages: "physical PDF pp. 15 and 159 to 170",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
   },
   {
     id: "np-2015-pierre-brook",
@@ -1908,6 +1918,16 @@ export const sources = [
     pages: "physical PDF pp. 235 to 240",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
+    id: "np-2027-rocky-pond",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Rocky Pond Bearing Refurbishment",
+    topics: ["Rocky Pond", "Rocky Pond Hydro Plant", "turbine bearing", "lignum vitae", "shaft vibration", "cooling water", "lubricating water"],
+    pages: "physical PDF pp. 136 to 138",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
     id: "np-2011-horse-chops",
@@ -10590,6 +10610,112 @@ export const stationProfiles = [
           ["Metered point", "PBK-G1-I"],
           ["15-minute values shown", "3,545 to 4,013 kW"],
           ["Highest interval shown", "4,013 kW at the 1115 Island Time interval"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "ROP",
+    name: "Rocky Pond",
+    voltage: "66/6.9 kV",
+    circuitRegisterLabel: "2013 SEGMENTED LINE REGISTER",
+    circuitSource: { sourceId: "np-2013-line-loading", pages: "physical PDF p. 3; attachment p. 1" },
+    connectedCircuits: [
+      { circuit: "20L(A)", from: "Rocky Pond", from_code: "ROP", to: "Mobile", to_code: "MOB" },
+      { circuit: "20L(B)", from: "Horse Chops Tap", from_code: null, to: "Rocky Pond", to_code: "ROP" },
+      { circuit: "22L", from: "Morris", from_code: "MRP", to: "Rocky Pond", to_code: "ROP" }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2013 segmented circuit record with current transformer rating",
+      buses: [
+        { id: "b1", label: "66 kV line connection", voltage: "66 kV" },
+        { id: "b2", label: "6.9 kV generator bus", voltage: "6.9 kV" }
+      ],
+      transformers: [{ label: "ROP-T1", rating: "5.33 MVA", from: "b2", to: "b1" }],
+      circuits: [
+        { label: "20L(A)", destination: "Mobile", bus: "b1", destinationCode: "MOB" },
+        { label: "20L(B)", destination: "Horse Chops tap", bus: "b1", link: false },
+        { label: "22L", destination: "Morris", bus: "b1", destinationCode: "MRP" }
+      ],
+      generators: [{ label: "G1", rating: "3.25 MW plant capacity", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2008 PLANT RECORD",
+      title: "Rocky Pond hydro generation station",
+      sourceId: "np-2009-rocky-pond",
+      pages: "physical PDF pp. 161 and 167",
+      facts: [
+        ["Plant", "commissioned in 1942; 3.25 MW under 32.6 m net head"],
+        ["Normal production", "14.1 GWh in the 2008 project report"],
+        ["Generator", "Westinghouse unit manufactured in 1941; 6.9 kV"],
+        ["Hydraulic sequence", "Rocky Pond is upstream of the Tors Cove development"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER TABLE",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 552",
+      facts: [["ROP-T1", "generation transformer; 66/6.9 kV; 5.33 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "JULY 2005 SWITCHGEAR FIRE",
+        sourceId: "np-2009-rocky-pond",
+        pages: "physical PDF p. 15",
+        facts: [
+          ["Damage", "fire originated in the switchgear and shut the plant down for eight months"],
+          ["Replacement work", "switchgear, protection and control panels, battery bank, battery charger, and AC/DC panels and wiring were replaced"],
+          ["Not replaced", "generator and governor"]
+        ]
+      },
+      {
+        label: "2009 PLANT AND SUBSTATION REBUILD",
+        sourceId: "np-2009-q4-horse-chops",
+        pages: "physical PDF p. 553",
+        facts: [["Completion", "governor, generator, penstock and substation refurbishment completed in the fourth quarter"]]
+      },
+      {
+        label: "2013 FILED LINE LOADING",
+        sourceId: "np-2013-line-loading",
+        pages: "physical PDF p. 3; attachment p. 1",
+        facts: [
+          ["20L(A)", "Rocky Pond to Mobile; 66 kV; 100.1 MVA winter rating; 36.96 MVA forecast 2012 peak; 37% loading"],
+          ["20L(B)", "Horse Chops Tap to Rocky Pond; 66 kV; 100.1 MVA winter rating; 32.35 MVA forecast 2012 peak; 33% loading"],
+          ["22L", "Morris to Rocky Pond; 66 kV; 54.2 MVA winter rating; 1.54 MVA forecast 2012 peak; 3% loading"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 421",
+        facts: [
+          ["Transformer", "ROP-T1, asset 200148"],
+          ["Generator breaker", "ROP-G1-B vacuum circuit breaker, asset 210675"]
+        ]
+      },
+      {
+        label: "MARCH 18, 2025 CAPACITY TEST",
+        sourceId: "np-2026-generation-capacity-test",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Metered point", "ROP-G1-I"],
+          ["15-minute values shown", "2,934 to 3,224 kW"],
+          ["Highest interval shown", "3,224 kW at the 1030 Island Time interval"]
+        ]
+      },
+      {
+        label: "2026 FILED BEARING REFURBISHMENT",
+        sourceId: "np-2027-rocky-pond",
+        pages: "physical PDF pp. 136 to 138",
+        facts: [
+          ["Condition", "worn lignum vitae bearing staves caused leakage, shaft vibration and unit trips; packing was described as a temporary fix"],
+          ["Filed scope", "replace the staves, refurbish the bearing housing, and upgrade the cooling and lubricating water system"],
+          ["Filed cost", "$410,000"],
+          ["Filed schedule", "design by the end of the second quarter and field completion by the fourth quarter of 2027"]
         ]
       }
     ]
