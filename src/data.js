@@ -1250,6 +1250,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
   },
   {
+    id: "np-2015-lethbridge",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Lethbridge Substation Load Growth Study",
+    topics: ["Lethbridge", "LET-T1", "LET-01", "66 kV", "25 kV", "transformer replacement", "load growth"],
+    pages: "physical PDF pp. 451 to 456",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2025-ca-np-168",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "CA-NP-168, Attachment A, Transmission Line Endpoints",
+    topics: ["110L", "111L", "113L", "117L", "123L", "Lethbridge", "Catalina", "Bonavista", "Clarenville"],
+    pages: "physical PDF p. 4",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
+  },
+  {
     id: "np-2007-blaketown",
     year: 2006,
     organization: "Newfoundland Power",
@@ -4263,7 +4283,7 @@ export const stationProfiles = [
     connectedCircuits: [
       { circuit: "110L", from: "Clarenville", from_code: "CLV", to: "Lockston", to_code: "LOK", sourceId: "np-2006-handbook", pages: "physical PDF p. 8" },
       { circuit: "111L", from: "Lockston", from_code: "LOK", to: "Port Union and Catalina", to_code: "CAT", sourceId: "np-2025-lockston", pages: "physical PDF p. 415" },
-      { circuit: "113L", from: "Lockston", from_code: "LOK", to: "Princeton Pond", to_code: "PPD", sourceId: "np-2025-lockston", pages: "physical PDF p. 415" }
+      { circuit: "113L", from: "Lockston", from_code: "LOK", to: "Princeton Pond", to_code: "PRC", sourceId: "np-2025-lockston", pages: "physical PDF p. 415" }
     ],
     feederRegisterLabel: "2024 STATION RECORD",
     feederRegister: ["LOK-01"],
@@ -4273,7 +4293,7 @@ export const stationProfiles = [
       label: "2024 filed existing arrangement / Q2 2026 construction state",
       buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "46 kV legacy bus", voltage: "46 kV" }, { id: "b3", label: "6.9 kV plant bus", voltage: "6.9 kV" }, { id: "b4", label: "12.5 kV distribution bus", voltage: "12.5 kV" }],
       transformers: [{ label: "LOK-T2", rating: "4 MVA", from: "b1", to: "b2" }, { label: "LOK-T1", rating: "2.5 MVA", from: "b2", to: "b3" }, { label: "LOK-T4", rating: "2.5 MVA", from: "b2", to: "b3" }, { label: "LOK-T3", rating: "4 MVA", from: "b1", to: "b4" }],
-      circuits: [{ label: "110L", destination: "Clarenville", bus: "b1", destinationCode: "CLV" }, { label: "111L", destination: "Port Union and Catalina", bus: "b1", destinationCode: "CAT" }, { label: "113L", destination: "Princeton Pond", bus: "b1", destinationCode: "PPD" }],
+      circuits: [{ label: "110L", destination: "Clarenville", bus: "b1", destinationCode: "CLV" }, { label: "111L", destination: "Port Union and Catalina", bus: "b1", destinationCode: "CAT" }, { label: "113L", destination: "Princeton Pond", bus: "b1", destinationCode: "PRC" }],
       generators: [{ label: "Lockston plant", rating: "4.275 MVA filed station record", bus: "b3" }]
     },
     engineeringRecord: {
@@ -4342,7 +4362,7 @@ export const stationProfiles = [
     circuitRegisterLabel: "2024 FILED SUPPLY",
     circuitSource: { sourceId: "np-2025-summerville", pages: "physical PDF pp. 390 and 392" },
     connectedCircuits: [
-      { circuit: "113L", from: "Princeton Pond", from_code: "PPD", to: "Lethbridge", to_code: "LET", via: "Summerville" }
+      { circuit: "113L", from: "Princeton Pond", from_code: "PRC", to: "Lethbridge", to_code: "LET", via: "Summerville" }
     ],
     feederRegisterLabel: "2024 STATION RECORD",
     feederRegister: ["SMV-01"],
@@ -4352,7 +4372,7 @@ export const stationProfiles = [
       label: "2024 filed existing arrangement / Q2 2026 construction state",
       buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
       transformers: [{ label: "SMV-T1", rating: "4 MVA", from: "b1", to: "b2" }],
-      circuits: [{ label: "113L", destination: "Princeton Pond", bus: "b1", destinationCode: "PPD" }, { label: "113L", destination: "Lethbridge", bus: "b1", destinationCode: "LET" }]
+      circuits: [{ label: "113L", destination: "Princeton Pond", bus: "b1", destinationCode: "PRC" }, { label: "113L", destination: "Lethbridge", bus: "b1", destinationCode: "LET" }]
     },
     engineeringRecord: {
       date: "2024 FILED EXISTING EQUIPMENT",
@@ -4395,6 +4415,61 @@ export const stationProfiles = [
         pages: "physical PDF p. 9",
         facts: [
           ["Project status", "early construction had begun, including foundation work at Summerville"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "LET",
+    name: "Lethbridge",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2025 EXISTING CONNECTIONS",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "110L", from: "Clarenville", from_code: "CLV", to: "Lethbridge", to_code: "LET" },
+      { circuit: "113L", from: "Lethbridge", from_code: "LET", to: "Lockston", to_code: "LOK" }
+    ],
+    feederRegisterLabel: "2014 STATION RECORD",
+    feederRegister: ["LET-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 circuits / 2027 transformer register",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "LET-T1", rating: "16.67 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "110L", destination: "Clarenville", bus: "b1", destinationCode: "CLV" }, { label: "113L", destination: "Lockston", bus: "b1", destinationCode: "LOK" }]
+    },
+    engineeringRecord: {
+      date: "2014 EXISTING ARRANGEMENT",
+      title: "Lethbridge distribution substation before transformer replacement",
+      sourceId: "np-2015-lethbridge",
+      pages: "physical PDF pp. 451 to 452",
+      facts: [
+        ["LET-T1", "66/25 kV; 6.7 MVA"],
+        ["Distribution feeder", "LET-01; approximately 1,744 customers"],
+        ["2012 peak", "7.4 MVA"],
+        ["2015 forecast", "7.8 MVA"],
+        ["Load-growth driver", "additional load at the Sexton and Jamestown sawmills"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["LET-T1 current fleet-table record", "66/25 kV; 16.67 MVA; 8.9 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2015 FILED TRANSFORMER REPLACEMENT",
+        sourceId: "np-2015-lethbridge",
+        pages: "physical PDF pp. 452 to 456",
+        facts: [
+          ["Selected work", "replace the 6.7 MVA LET-T1 with a 16.7 MVA, 66/25 kV transformer"],
+          ["Rejected parallel-bank alternative", "add an 8.3 MVA transformer in parallel with the former LET-T1"],
+          ["Rejected feeder-transfer alternative", "extend MIL-02 and transfer 2.0 MVA from LET-01"],
+          ["Former transformer plan", "move the 6.7 MVA unit to Doyles Substation in 2016"]
         ]
       }
     ]

@@ -787,6 +787,21 @@ test("Summerville retains its 113L through connection and in-progress modernizat
   assert.match(historyFacts, /early construction had begun, including foundation work at Summerville/);
 });
 
+test("Lethbridge separates its former transformer from the current fleet-table record", () => {
+  const lethbridge = stationProfiles.find((station) => station.code === "LET");
+  assert.ok(lethbridge);
+  assert.deepEqual(lethbridge.connectedCircuits.map(({ circuit }) => circuit), ["110L", "113L"]);
+  assert.deepEqual(lethbridge.feederRegister, ["LET-01"]);
+  assert.deepEqual(lethbridge.diagram.transformers.map(({ label, rating }) => [label, rating]), [["LET-T1", "16.67 MVA"]]);
+  const existingFacts = lethbridge.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = lethbridge.planningRecord.facts.flat().join(" ");
+  const historyFacts = lethbridge.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /LET-T1 66\/25 kV; 6\.7 MVA/);
+  assert.match(existingFacts, /LET-01; approximately 1,744 customers/);
+  assert.match(planningFacts, /66\/25 kV; 16\.67 MVA; 8\.9 MVA 2026 forecast/);
+  assert.match(historyFacts, /replace the 6\.7 MVA LET-T1 with a 16\.7 MVA, 66\/25 kV transformer/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

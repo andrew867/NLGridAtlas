@@ -194,6 +194,14 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2027 fleet table records SMV-T1 at 4 MVA with a 2.87 MVA 2026 forecast, physical PDF p. 550.
 - [ ] No later public report available in the archive on 2026-11-12 confirms commissioning or publishes a post-project breaker one-line. The atlas retains a dated logical connection diagram.
 
+## Lethbridge station record
+
+- [x] The 2025 line register identifies 110L between Clarenville and Lethbridge and 113L between Lethbridge and Lockston, CA-NP-168 Attachment A, physical PDF p. 4.
+- [x] The 2015 study records the former LET-T1 at 6.7 MVA and 66/25 kV. LET-01 served approximately 1,744 customers, physical PDF p. 451.
+- [x] The study selected replacement of the former transformer with a 16.7 MVA, 66/25 kV unit. It separately evaluates a parallel-bank option and a transfer to MIL-02, physical PDF pp. 452 to 456.
+- [x] The 2027 fleet table lists LET-T1 at 16.67 MVA with an 8.9 MVA 2026 forecast, physical PDF p. 548.
+- [ ] The searched records do not give the replacement commissioning date. The atlas does not assign one.
+
 ## Pulpit Rock feeder-bus and transformer records
 
 - [x] The 2025 application says PUL-T1 and the then-installed PUL-T2 supplied five 12.5 kV feeders, physical PDF pp. 458 and 463.
