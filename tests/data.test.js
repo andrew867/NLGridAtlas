@@ -605,6 +605,21 @@ test("Laurentian retains its three 66 kV connections and proposed transformer re
   assert.match(proposedFacts, /commissioning planned for 2028/);
 });
 
+test("Lookout Brook retains both hydro units and the documented transformer rating difference", () => {
+  const lookoutBrook = stationProfiles.find((station) => station.code === "LBK");
+  assert.ok(lookoutBrook);
+  assert.deepEqual(lookoutBrook.connectedCircuits.map(({ circuit }) => circuit), ["403L"]);
+  assert.deepEqual(lookoutBrook.diagram.generators.map(({ label, rating }) => [label, rating]), [["G3", "3 MVA"], ["G4", "2.889 MVA"]]);
+  const existingFacts = lookoutBrook.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = lookoutBrook.planningRecord.facts.flat().join(" ");
+  const proposedFacts = lookoutBrook.historyRecords[0].facts.flat().join(" ");
+  assert.match(existingFacts, /installed at Lookout Brook in 1997 after relocation from Grand Falls/);
+  assert.match(planningFacts, /LBK-T1 fleet-table rating 66\/2\.4 kV; 10 MVA/);
+  assert.match(planningFacts, /station-specific report describes the installed transformer as 7\.5 MVA/);
+  assert.match(proposedFacts, /5\/6\.7\/8\.3 MVA, 66\/2\.4 kV/);
+  assert.match(proposedFacts, /commissioning planned for 2029/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

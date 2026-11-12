@@ -1230,6 +1230,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
+    id: "np-2027-lookout-brook",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, LBK-T1 Power Transformer Replacement",
+    topics: ["Lookout Brook", "LBK-T1", "G3", "G4", "403L", "66 kV", "2.4 kV", "hydroelectric generation"],
+    pages: "physical PDF pp. 483 to 490",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3461,6 +3471,63 @@ export const stationProfiles = [
           ["Site work", "new spill-containment foundation"],
           ["Existing transformer disposition", "scrap LAU-T1 after replacement because of its overall condition"],
           ["Filed schedule", "design and procurement in 2027; installation, testing and commissioning planned for 2028"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "LBK",
+    name: "Lookout Brook Hydro Plant",
+    voltage: "66/2.4 kV",
+    circuitRegisterLabel: "2026 EXISTING CONNECTION",
+    circuitSource: { sourceId: "np-2027-lookout-brook", pages: "physical PDF p. 483" },
+    connectedCircuits: [
+      { circuit: "403L", from: "Lookout Brook", from_code: "LBK", to: "Robinsons", to_code: "ROB" }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2026 existing arrangement",
+      buses: [{ id: "b1", label: "plant bus", voltage: "2.4 kV" }, { id: "b2", label: "transmission connection", voltage: "66 kV" }],
+      transformers: [{ label: "LBK-T1", rating: "7.5 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "403L", destination: "Robinsons", bus: "b2", destinationCode: "ROB" }],
+      generators: [{ label: "G3", rating: "3 MVA", bus: "b1" }, { label: "G4", rating: "2.889 MVA", bus: "b1" }]
+    },
+    engineeringRecord: {
+      date: "2026 EXISTING ARRANGEMENT",
+      title: "Lookout Brook hydro generation outlet",
+      sourceId: "np-2027-lookout-brook",
+      pages: "physical PDF pp. 483 to 487",
+      facts: [
+        ["Station built", "1966 as the generation substation for the Lookout Brook Hydro Plant"],
+        ["Generation", "G3 at 3 MVA and G4 at 2.889 MVA"],
+        ["LBK-T1", "66/2.4 kV operating service; 7.5 MVA station-specific rating; English Electric"],
+        ["Transformer history", "installed at Lookout Brook in 1997 after relocation from Grand Falls"],
+        ["Transmission connection", "403L to Robinsons Substation"],
+        ["Transformer protection", "fuses"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 551",
+      facts: [
+        ["LBK-T1 fleet-table rating", "66/2.4 kV; 10 MVA"],
+        ["Record difference", "the 2026 station-specific report describes the installed transformer as 7.5 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2027 TO 2029 PROPOSED REPLACEMENT",
+        sourceId: "np-2027-lookout-brook",
+        pages: "physical PDF pp. 487 to 490",
+        facts: [
+          ["Replacement transformer", "5/6.7/8.3 MVA, 66/2.4 kV"],
+          ["Site work", "new spill-containment foundation"],
+          ["Existing transformer disposition", "scrap LBK-T1 after replacement because of its overall condition"],
+          ["Filed schedule", "design and procurement in 2027 and 2028; installation, testing and commissioning planned for 2029"]
         ]
       }
     ]

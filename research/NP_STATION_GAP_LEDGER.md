@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, and Laurentian. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Greenspond, Mobile Plant, Boyd's Cove, Gander, Blaketown, and Laurentian separate existing equipment from future capital work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, and Lookout Brook. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -89,6 +89,14 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] LAU-T1 is a 13.3 MVA, 66/12.5 kV Federal Pioneer transformer installed in 1976. It supplies two 12.5 kV feeders and approximately 700 customers in St. Lawrence, physical PDF p. 466.
 - [x] The 2027 transformer table gives a 6.73 MVA 2026 forecast for LAU-T1, physical PDF p. 548.
 - [x] The proposed replacement is a 10/13.3/16.6 MVA, 66/12.5/25 kV unit with commissioning planned for 2028, physical PDF p. 472.
+- [ ] Do not record the replacement as installed before a completion report confirms commissioning.
+
+## Lookout Brook station record
+
+- [x] The 2027 report identifies Lookout Brook G3 at 3 MVA, G4 at 2.889 MVA, LBK-T1, and 403L to Robinsons, physical PDF p. 483.
+- [x] The station-specific report describes LBK-T1 as a 7.5 MVA English Electric transformer in 66/2.4 kV service, installed at Lookout Brook in 1997 after relocation from Grand Falls, physical PDF p. 483.
+- [x] The 2027 fleet table lists LBK-T1 at 10 MVA. The atlas keeps this value separate from the station-specific 7.5 MVA description, physical PDF p. 551.
+- [x] The proposed replacement is a 5/6.7/8.3 MVA, 66/2.4 kV unit with commissioning planned for 2029, physical PDF p. 490.
 - [ ] Do not record the replacement as installed before a completion report confirms commissioning.
 
 ## Pulpit Rock feeder-bus and transformer records
