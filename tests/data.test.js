@@ -1826,6 +1826,28 @@ test("Tors Cove records the completed replacement and the filed generator arrang
   await readFile(new URL("../public/reference-maps/tcv-2022-one-line.svg", import.meta.url));
 });
 
+test("Horse Chops separates the rebuilt station from later generator and control work", () => {
+  const horseChops = stationProfiles.find((station) => station.code === "HCP");
+  assert.ok(horseChops);
+  assert.deepEqual(horseChops.connectedCircuits, [
+    { circuit: "21L", from: "Horse Chops", from_code: "HCP", to: "Horse Chops Tap", to_code: null }
+  ]);
+  assert.deepEqual(horseChops.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "6.9 kV"]);
+  assert.deepEqual(horseChops.diagram.transformers.map(({ label, rating }) => [label, rating]), [["HCP-T1", "12.0 MVA"]]);
+  assert.deepEqual(horseChops.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "9.0 MVA"]]);
+  const plantFacts = horseChops.engineeringRecord.facts.flat().join(" ");
+  const historyFacts = horseChops.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /46\.70 GWh/);
+  assert.match(plantFacts, /water passes through Horse Chops before flowing downstream to Cape Broyle/);
+  assert.match(historyFacts, /substation refurbished in 2009/);
+  assert.match(historyFacts, /66\/6\.9 kV; 8\.0 MVA; asset 200165/);
+  assert.match(historyFacts, /1\.47 to 1\.79/);
+  assert.match(historyFacts, /HCP-G-B air circuit breaker, asset 210611/);
+  assert.match(historyFacts, /7,728 to 7,885 kW/);
+  assert.match(historyFacts, /7,885 kW at the 1115 Island Time interval/);
+  assert.match(historyFacts, /design complete; field work expected to begin in the third quarter of 2026/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");

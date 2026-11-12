@@ -1794,8 +1794,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 235, 371 to 373, 427, 484 to 487 and 500 to 502",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 371 to 373, 427, 484 to 487 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1834,7 +1834,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "NP-NLH-168 Attachment 1, Newfoundland Power Generation Capacity Tests",
-    topics: ["generation capacity test", "Petty Harbour", "PHR-T1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
+    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Petty Harbour", "PHR-T1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
     pages: "physical PDF p. 2",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/NP-NLH-168.PDF"
@@ -1858,6 +1858,46 @@ export const sources = [
     pages: "physical PDF pp. 2 to 3",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/PUB-NP-007.PDF"
+  },
+  {
+    id: "np-2009-horse-chops",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Horse Chops Plant Power Transformer Replacement",
+    topics: ["Horse Chops", "Horse Chops Hydro Plant", "HCP-T1", "66 kV", "6.9 kV", "transformer replacement", "substation relocation", "dissolved gas analysis"],
+    pages: "physical PDF pp. 285 to 297",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2009-q4-horse-chops",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "Q4 2009 Quarterly Regulatory Report, Horse Chops completion",
+    topics: ["Horse Chops", "Horse Chops Hydro Plant", "substation refurbishment", "governor", "protection", "plant controls"],
+    pages: "physical PDF p. 553",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
+  },
+  {
+    id: "np-2011-horse-chops",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Horse Chops Rewind and Rotor Re-insulation",
+    topics: ["Horse Chops", "Horse Chops Hydro Plant", "generator rewind", "stator coils", "rotor insulation", "Francis turbine", "SCADA"],
+    pages: "physical PDF pp. 185 to 198",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2025-cbhc-development",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, Mount Carmel Pond Dam Refurbishment",
+    topics: ["Cape Broyle", "Horse Chops", "Cape Broyle-Horse Chops development", "hydroelectric generation", "Mount Carmel Pond", "winter capacity"],
+    pages: "physical PDF pp. 544 to 545",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
   },
   {
     id: "np-2025-gander-t2",
@@ -10301,6 +10341,113 @@ export const stationProfiles = [
         alt: "Filed Tors Cove one-line showing 11L, TCV-T1, the 6.9 kV bus and generators G1, G2 and G3",
         sourceId: "np-2022-tors-cove",
         pages: "physical PDF p. 332"
+      }
+    ]
+  },
+  {
+    code: "HCP",
+    name: "Horse Chops",
+    voltage: "66/6.9 kV",
+    circuitRegisterLabel: "2025 CIRCUIT ENDPOINT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "21L", from: "Horse Chops", from_code: "HCP", to: "Horse Chops Tap", to_code: null }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2009 rebuilt station with current transformer rating",
+      buses: [
+        { id: "b1", label: "66 kV line connection", voltage: "66 kV" },
+        { id: "b2", label: "6.9 kV generator bus", voltage: "6.9 kV" }
+      ],
+      transformers: [{ label: "HCP-T1", rating: "12.0 MVA", from: "b2", to: "b1" }],
+      circuits: [{ label: "21L", destination: "20L tap", bus: "b1", link: false }],
+      generators: [{ label: "G1", rating: "9.0 MVA", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2024 PLANT / 2027 TRANSFORMER RECORD",
+      title: "Horse Chops hydro generation station",
+      sourceId: "np-2025-cbhc-development",
+      pages: "physical PDF pp. 544 to 545",
+      facts: [
+        ["Plant", "one vertical generating unit; commissioned in 1954; 9.0 MVA"],
+        ["Turbine", "10,000 hp vertical Francis turbine manufactured by Dominion Engineering"],
+        ["Generator", "Canadian General Electric"],
+        ["Normal production", "46.70 GWh in the 2024 development record"],
+        ["Hydraulic sequence", "water passes through Horse Chops before flowing downstream to Cape Broyle"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER TABLE",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 551",
+      facts: [["HCP-T1", "generation transformer; 66/6.9 kV; 12.00 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "2009 SUBSTATION REBUILD",
+        sourceId: "np-2009-q4-horse-chops",
+        pages: "physical PDF p. 553",
+        facts: [["Completion", "plant governor, protection and control systems, and substation refurbished in 2009"]]
+      },
+      {
+        label: "2008 FILED TRANSFORMER REPLACEMENT",
+        sourceId: "np-2009-horse-chops",
+        pages: "physical PDF pp. 287 to 291",
+        facts: [
+          ["Former transformer", "Reliance Electric unit built in 1951; 66/6.9 kV; 8.0 MVA; asset 200165"],
+          ["Condition", "combustible-gas increase and acetylene in oil; plant operated at reduced load"],
+          ["Relocation", "new fenced substation site approximately 20 m from the former location"],
+          ["Filed cost", "$1.341 million"]
+        ]
+      },
+      {
+        label: "2010 FILED GENERATOR REWIND",
+        sourceId: "np-2011-horse-chops",
+        pages: "physical PDF pp. 187 to 190",
+        facts: [
+          ["Generator", "original stator coils selected for replacement"],
+          ["Rotor", "rotor poles selected for re-insulation during the same disassembly"],
+          ["Condition basis", "stator polarization-index results ranged from 1.47 to 1.79; the cited IEEE recommended value was 2.0 or above"],
+          ["Filed cost", "$1.276 million"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 216 to 218",
+        facts: [
+          ["Breaker", "HCP-G-B air circuit breaker, asset 210611"],
+          ["Telecommunications", "SAGE 2100 remote terminal unit"]
+        ]
+      },
+      {
+        label: "2026 GENERATION CAPACITY TEST",
+        sourceId: "np-2026-generation-capacity-test",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Metered point", "HCP-G1-I"],
+          ["15-minute values shown", "7,728 to 7,885 kW"],
+          ["Highest interval shown", "7,885 kW at the 1115 Island Time interval"]
+        ]
+      },
+      {
+        label: "2026 PLANT CONTROL WORK",
+        sourceId: "np-2026-capital",
+        pages: "physical PDF p. 139",
+        facts: [
+          ["Filed scope", "programmable logic controller, human-machine interface and exciter-control replacements shared with Cape Broyle"],
+          ["Budget", "$398,000 for the two-plant project"]
+        ]
+      },
+      {
+        label: "JUNE 2026 PROJECT STATUS",
+        sourceId: "np-2026-q2-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [["Status", "design complete; field work expected to begin in the third quarter of 2026"]]
       }
     ]
   },
