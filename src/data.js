@@ -1960,6 +1960,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202023%20(1st%20Revision)_Redacted.pdf"
   },
   {
+    id: "np-2017-rose-blanche-supplemental",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2017 Supplemental Capital Application, Rose Blanche Turbine and Rockfall Work",
+    topics: ["Rose Blanche", "RBH", "hydroelectric generation", "Turbine No. 1", "runner", "generator shaft", "rockfall", "penstock"],
+    pages: "physical PDF pp. 4, 11, 13, 17, 21 and 96",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital_SUPP_RoseBlanche/applications/From%20NP%20-%20Application%20-%20Purchase%20and%20Construction%20of%20Improvements%20and%20Additions%20to%20Rose%20Blanche%20Hydroelectric%20Plant%20-%202017-04-20.PDF"
+  },
+  {
+    id: "np-2027-rose-blanche",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Rose Blanche Hydro Plant Refurbishment",
+    topics: ["Rose Blanche", "RBH", "LGL-02", "hydroelectric generation", "governor", "protection and control", "auxiliary power", "black start"],
+    pages: "physical PDF pp. 141 to 143 and 563 to 572",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
     id: "np-2022-tors-cove",
     year: 2021,
     organization: "Newfoundland Power",
@@ -5317,6 +5337,92 @@ const filedFeederMapProfiles = [
           ["Condition", "42 of 44 untreated cedar poles were deteriorated on the 3.3 km section near the protected water supply"],
           ["Topology", "the three-phase Rose Blanche plant tap is radial with no tie point or backup"],
           ["Filed work", "replace deteriorated cedar poles with non-wood poles on the 3.3 km section"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "RBH",
+    name: "Rose Blanche",
+    voltage: "25/6.9 kV",
+    circuitRegisterLabel: "2026 ENGINEERING REPORT",
+    circuitSource: { sourceId: "np-2027-rose-blanche", pages: "physical PDF p. 563" },
+    connectedCircuits: [
+      { circuit: "LGL-02", from: "Long Lake", from_code: "LGL", to: "Rose Blanche", to_code: "RBH" }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "Current transformer register and documented LGL-02 plant connection",
+      buses: [
+        { id: "b1", label: "LGL-02 connection", voltage: "25 kV" },
+        { id: "b2", label: "generator bus", voltage: "6.9 kV" }
+      ],
+      transformers: [{ label: "RBH-T1", rating: "9.3 MVA", from: "b2", to: "b1" }],
+      circuits: [{ label: "LGL-02", destination: "Long Lake", bus: "b1", destinationCode: "LGL" }],
+      generators: [{ label: "G1", rating: "6.0 MW", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2026 ENGINEERING REPORT",
+      title: "Rose Blanche hydro generation station",
+      sourceId: "np-2027-rose-blanche",
+      pages: "physical PDF pp. 563 to 565",
+      facts: [
+        ["Plant", "commissioned in 1998 with one 6.0 MW General Electric generator coupled to two Francis turbines on a common shaft"],
+        ["Hydraulics", "approximately 114 m net head"],
+        ["Grid connection", "LGL-02 to Long Lake Substation, also serving Burnt Islands, Diamond Cove, and Rose Blanche-Harbour Le Cou"],
+        ["Normal production", "21.90 GWh per year"],
+        ["Regional operation", "can operate with Port aux Basques thermal generation as an isolated southwest-coast system when TL214 and TL215 are unavailable"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 552",
+      facts: [["RBH-T1", "generation transformer; 25/6.9 kV; 9.3 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "DECEMBER 2016 TURBINE FAILURE",
+        sourceId: "np-2017-rose-blanche-supplemental",
+        pages: "physical PDF pp. 4, 11 and 17",
+        facts: [
+          ["Initial trip", "high bearing temperature on December 14, 2016; unusual noise and failure to accelerate during restart"],
+          ["Inspection", "cracks in Turbine No. 1 runner blades, loose stationary sealing ring, and damage to the generator shaft"],
+          ["Operating effect", "both turbines could no longer be used together for maximum plant output"]
+        ]
+      },
+      {
+        label: "2017 FILED TURBINE AND ROCKFALL WORK",
+        sourceId: "np-2017-rose-blanche-supplemental",
+        pages: "physical PDF pp. 13, 21 and 96",
+        facts: [
+          ["Turbine scope", "new runner, stationary seal components and generator shaft; reuse of the flywheel and generator poles; cooling-water, instrumentation and vibration-monitoring work"],
+          ["Rockfall", "repair and bury the damaged penstock, stabilize the rock face, and relocate the access road to the opposite side of the valley"],
+          ["Filed costs", "$1.787 million for turbine work and $1.494 million for rockfall remediation"]
+        ]
+      },
+      {
+        label: "2009 TO 2021 REPORTED PLANT UPGRADES",
+        sourceId: "np-2027-rose-blanche",
+        pages: "physical PDF p. 565",
+        facts: [
+          ["Waterways and access", "storage and spillway capacity increased in 2009; forebay road, penstock burial and fish-compensation valve extension completed in 2017"],
+          ["Generating unit", "generator rotor and G1 runner replaced in 2018"],
+          ["Controls", "plant control system upgraded in 2021"]
+        ]
+      },
+      {
+        label: "2027 TO 2028 FILED PLANT REFURBISHMENT",
+        sourceId: "np-2027-rose-blanche",
+        pages: "physical PDF pp. 141 to 143 and 565 to 572",
+        facts: [
+          ["Governor", "replace the unsupported SICOS control system and inadequate governor oil cooler"],
+          ["Protection and control", "replace obsolete generator, transformer, excitation, synchronization and forebay-monitoring equipment"],
+          ["Auxiliary power", "replace the original 8.5 kW propane unit, which cannot support winter black-start heating load"],
+          ["Filed schedule and cost", "design and procurement in 2027, construction by year-end 2028; $1.728 million total budget"]
         ]
       }
     ]

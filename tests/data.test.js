@@ -1596,6 +1596,30 @@ test("Long Lake connects 416L and the Rose Blanche plant feeder", () => {
   assert.match(historyFacts, /radial with no tie point or backup/);
 });
 
+test("Rose Blanche closes the LGL-02 plant connection and preserves its dual-turbine history", () => {
+  const roseBlanche = stationProfiles.find((station) => station.code === "RBH");
+  assert.ok(roseBlanche);
+  assert.deepEqual(roseBlanche.connectedCircuits, [
+    { circuit: "LGL-02", from: "Long Lake", from_code: "LGL", to: "Rose Blanche", to_code: "RBH" }
+  ]);
+  assert.deepEqual(roseBlanche.diagram.buses.map(({ voltage }) => voltage), ["25 kV", "6.9 kV"]);
+  assert.deepEqual(roseBlanche.diagram.transformers.map(({ label, rating }) => [label, rating]), [["RBH-T1", "9.3 MVA"]]);
+  assert.deepEqual(roseBlanche.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "6.0 MW"]]);
+  const plantFacts = roseBlanche.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = roseBlanche.planningRecord.facts.flat().join(" ");
+  const historyFacts = roseBlanche.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /two Francis turbines on a common shaft/);
+  assert.match(plantFacts, /21\.90 GWh per year/);
+  assert.match(plantFacts, /isolated southwest-coast system/);
+  assert.match(planningFacts, /RBH-T1.*25\/6\.9 kV.*9\.3 MVA/);
+  assert.match(historyFacts, /cracks in Turbine No\. 1 runner blades/);
+  assert.match(historyFacts, /damage to the generator shaft/);
+  assert.match(historyFacts, /repair and bury the damaged penstock/);
+  assert.match(historyFacts, /generator rotor and G1 runner replaced in 2018/);
+  assert.match(historyFacts, /original 8\.5 kW propane unit/);
+  assert.match(historyFacts, /\$1\.728 million total budget/);
+});
+
 test("Humber separates its former dual-voltage banks from the filed conversion", () => {
   const humber = stationProfiles.find((station) => station.code === "HUM");
   assert.ok(humber);

@@ -16,7 +16,7 @@ Updated: 2026-11-12
 ## Verified in the current work session
 
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
-- Added Tors Cove, Horse Chops, Pierre's Brook, Rocky Pond, Morris, New Chelsea, Pitmans Pond, Topsail, and Sandy Brook hydro generation-station records with current transformer ratings, documented connections, dated plant work, inspection equipment, and operating records.
+- Added Tors Cove, Horse Chops, Pierre's Brook, Rocky Pond, Morris, New Chelsea, Pitmans Pond, Topsail, Sandy Brook, and Rose Blanche hydro generation-station records with current transformer ratings, documented connections, dated plant work, inspection equipment, and operating records.
 - Kept Pierre's Brook's published 2008 station upgrade, 2009 filed 23L conversion, 2013 installed line state, and 2015 filed electrical-refurbishment scope as separate dated records.
 - Added Rocky Pond's segmented 20L and 22L connections, 2005 switchgear fire, completed 2009 plant and substation rebuild, March 18, 2025 capacity test, and proposed 2027 bearing work.
 - Added Morris's 22L connection, 2003 turbine-seal scope, 2021 filed head-gate work, March 18, 2025 capacity test, and documented hydraulic sequence upstream of Mobile.
@@ -24,6 +24,7 @@ Updated: 2026-11-12
 - Added Pitmans Pond's NCH-03 connection, induction generator, three-unit transformer bank, 2005 failure work, 2013 plant refurbishment and installed-upgrade record, and March 18, 2025 capacity test.
 - Added Topsail's 25/2.4 kV internal arrangement, current TOP-T1 rating, 1983 unit and penstock record, 2021 filed intake and runner scope, final multi-year capital expenditure, transformer asset, and September 2026 bearing-failure status.
 - Added Sandy Brook's 105L connection, 66/6.9 kV transformer, 6.31 MW unit, staged plant upgrades, original woodstave penstock condition, generator rewind scope, and Q4 2023 completion record.
+- Added Rose Blanche's LGL-02 connection, 25/6.9 kV transformer, dual-Francis generating unit, isolated southwest-coast duty, 2016 turbine failure, 2017 filed repair work, reported 2018 unit replacements, and filed 2027 to 2028 refurbishment.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
 - Passed 87 automated tests, source-hash verification, and the production build.
