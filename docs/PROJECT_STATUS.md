@@ -115,6 +115,7 @@ Updated: 2026-11-12
 - Added Bay Roberts' three-bus one-line, four transmission connections, four transformer records, 1967 and 1978 station history, proposed 2014 modernization, proposed BRB-T4 addition, reported 2014/15 transformer arrangement, and proposed 2020 BRB-05 upgrade. The 2014 filing's conflicting 66/12.5 kV and 138/12.5 kV BRB-T4 labels remain visible.
 - Added Bishop's Falls' 138/25 kV one-line, 1978 steel structure record, current 132L, 133L, 134L, and 136L endpoints, March 2014 breaker and feeder-protection inventory, the 2010 BFS-01-R replacement, the 2015 Grand Falls tie alternative, and the 2036 P90 136L contingency result.
 - Rebuilt Cobb's Pond as a three-bus 138/66/12.5 kV record. The station now shows TL210, 142L, 144L, and 147L, all three transformer banks, the 2010 measured Gander-area peak, the filed 2012 ring-bus and COB-T3 addition, the March 2014 equipment register, and the repaired 2025 COB-T3 in-service failure.
+- Rebuilt Gander's dated engineering record around the existing 138/66/12.5 kV arrangement. The station now includes the 2008 filed refurbishment, 2010 measured peak, March 2014 breaker and asset register, completed 2015 modernization, GAN-T2 service and condition history, its approved 41.6 MVA replacement, and the separately approved 2027 removal of the Gander 66 kV supply function.
 
 ## Active work
 

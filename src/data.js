@@ -1523,9 +1523,9 @@ export const sources = [
     id: "np-2016-pub-np-064-g",
     year: 2016,
     organization: "Newfoundland Power",
-    title: "PUB-NP-064 Attachment G, Bishop's Falls, Cobb's Pond, and Glendale inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers"],
-    pages: "physical PDF pp. 28 to 31, 88 to 92 and 148 to 152",
+    title: "PUB-NP-064 Attachment G, Bishop's Falls, Cobb's Pond, Gander, and Glendale inspection forms",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "102L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers"],
+    pages: "physical PDF pp. 28 to 31, 88 to 92, 133 to 138 and 148 to 152",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1538,6 +1538,16 @@ export const sources = [
     pages: "PDF pp. 88 to 90, 458, 463 to 470",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
+    id: "np-2025-gander-t2",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, Gander Substation Power Transformer Replacement",
+    topics: ["Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Cobb's Pond", "COB-T2", "Gander Bay", "Jonathan's Pond", "Roycefield", "108L", "102L", "transformer condition", "dissolved gas analysis", "power transformer replacement"],
+    pages: "physical PDF pp. 477 to 486",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
   },
   {
     id: "np-2025-northwest-brook",
@@ -1590,6 +1600,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
   {
+    id: "np-2027-gander-program-status",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Gander and Lewisporte-Boyd's Cove project status",
+    topics: ["Gander", "GAN-T2", "Boyd's Cove", "Lewisporte", "138 kV conversion", "66 kV retirement", "grounding transformer", "commissioning"],
+    pages: "physical PDF pp. 239 to 240",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
     id: "np-2026-greenspond",
     year: 2025,
     organization: "Newfoundland Power",
@@ -1630,12 +1650,22 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
   {
+    id: "np-2008-gander",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Gander Substation Refurbishment and Modernization",
+    topics: ["Gander", "GAN-T1", "GAN-T2", "GAN-T3", "144L", "146L", "102L", "108L", "138 kV", "66 kV", "12.5 kV", "grounding transformer", "tap changer controls", "relay replacement"],
+    pages: "physical PDF pp. 167 to 169",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
     id: "np-2015-gander-modernization",
     year: 2014,
     organization: "Newfoundland Power",
     title: "2015 Capital Budget Application, Gander Substation Refurbishment and Modernization",
     topics: ["Gander", "GAN-T1", "GAN-T2", "GAN-T3", "138 kV", "66 kV", "12.5 kV", "grounding transformer"],
-    pages: "physical PDF pp. 429 to 431",
+    pages: "physical PDF pp. 428 to 432",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
   },
@@ -5897,22 +5927,22 @@ export const stationProfiles = [
     mapPages: [["GAN-01", 55], ["GAN-02", 56]],
     eventLoads: [],
     diagram: {
-      label: "2015 equipment / 2025 existing connections",
+      label: "2024 equipment / 2025 existing connections",
       buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "12.5 kV bus", voltage: "12.5 kV" }, { id: "b4", label: "grounding-bank secondary", voltage: "6.9 kV" }],
-      transformers: [{ label: "GAN-T1", rating: "20 MVA", from: "b1", to: "b3" }, { label: "GAN-T2", rating: "21.3 MVA", from: "b1", to: "b2" }, { label: "GAN-T3", rating: "3 x 1.667 MVA grounding bank", from: "b2", to: "b4" }],
+      transformers: [{ label: "GAN-T1", rating: "20 MVA", from: "b1", to: "b3" }, { label: "GAN-T2", rating: "16/21.3/26.67 MVA", from: "b1", to: "b2" }, { label: "GAN-T3", rating: "3 x 1.667 MVA grounding bank", from: "b2", to: "b4" }],
       circuits: [{ label: "144L", destination: "Cobb's Pond", bus: "b1", destinationCode: "COB" }, { label: "146L", destination: "Gambo", bus: "b1", destinationCode: "GAM" }, { label: "108L", destination: "Gander Bay", bus: "b2", destinationCode: "GBY" }, { label: "102L", destination: "Roycefield", bus: "b2", destinationCode: "RFD" }]
     },
     engineeringRecord: {
-      date: "2015 EQUIPMENT / 2025 CONNECTIONS",
+      date: "2024 EXISTING EQUIPMENT / 2025 CONNECTIONS",
       title: "Gander transmission and distribution station",
-      sourceId: "np-2015-gander-modernization",
-      pages: "physical PDF pp. 429 to 431",
+      sourceId: "np-2025-gander-t2",
+      pages: "physical PDF pp. 477 to 480",
       facts: [
-        ["GAN-T1", "138/12.5 kV; 20 MVA; supplies four distribution feeders"],
-        ["GAN-T2", "138/66 kV system transformer; 21.3 MVA in the 2027 fleet table"],
-        ["GAN-T3", "three single-phase 69/6.9 kV, 1.667 MVA transformers acting as the 66 kV ground source"],
-        ["Distribution feeders", "GAN-01, GAN-02, GAN-03 and GAN-04"],
-        ["2015 station load", "approximately 1,683 customers in the Gander area"]
+        ["Station", "constructed in 1959 as a transmission and distribution substation"],
+        ["GAN-T1", "asset 200249; 138/12.5 kV; 20 MVA; supplies four distribution feeders"],
+        ["GAN-T2", "asset 200175; Federal Pioneer; 138/66 kV; 16/21.3/26.67 MVA; purchased in 1967"],
+        ["Distribution", "GAN-01, GAN-02, GAN-03 and GAN-04 served approximately 1,697 customers"],
+        ["66 kV supply", "GAN-T2 supplies 108L to Gander Bay and Jonathan's Pond, and 102L to Roycefield"]
       ]
     },
     planningRecord: {
@@ -5927,6 +5957,49 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2008 FILED REFURBISHMENT",
+        sourceId: "np-2008-gander",
+        pages: "physical PDF pp. 167 to 169",
+        facts: [
+          ["Filed station equipment", "GAN-T1 20 MVA; GAN-T2 27 MVA; three GAN-T3 single-phase 1.6 MVA grounding transformers"],
+          ["GAN-T1", "replace the approximately 25-year-old tap changer controls"],
+          ["GAN-T2", "replace the high-side silicon-carbide lightning arresters with metal-oxide units"],
+          ["GAN-T3", "replace the leaking three-unit bank, then over 40 years old, with a three-phase unit"],
+          ["Protection", "replace 146L relaying and automate the four 12.5 kV feeder protection schemes"]
+        ]
+      },
+      {
+        label: "2010 MEASURED WINTER PEAK",
+        sourceId: "np-2012-cobbs-pond",
+        pages: "physical PDF pp. 340 to 341",
+        facts: [
+          ["GAN-T1", "18.0 MVA measured peak on a 20 MVA transformer"],
+          ["Gander area", "GAN-T1 and COB-T1 recorded 37.6 MVA combined against 40.0 MVA combined capacity"]
+        ]
+      },
+      {
+        label: "2014 FILED STATION ARRANGEMENT",
+        sourceId: "np-2015-gander-modernization",
+        pages: "physical PDF pp. 428 to 431",
+        facts: [
+          ["GAN-T1", "138/12.5 kV; 20 MVA"],
+          ["GAN-T2", "138/66 kV; 26.7 MVA in the filing"],
+          ["GAN-T3", "three single-phase 69/6.9 kV, 1.667 MVA transformers acting as the 66 kV ground source"],
+          ["Distribution", "four 12.5 kV feeders supplied approximately 1,683 customers"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 133 to 138",
+        facts: [
+          ["Feeder breakers", "GAN-01-B, GAN-02-B, GAN-03-B and GAN-04-B were bulk-oil breakers"],
+          ["Transmission breakers", "GAN-102L-B and GAN-108L-B were bulk-oil; GAN-144L-B and GAN-146L-B were minimum-oil"],
+          ["Transformer breakers", "GAN-T1-B was vacuum; GAN-T2-B was bulk-oil"],
+          ["Transformer assets", "GAN-T1 asset 200249; GAN-T2 asset 200175; GAN-T3 assets 200001, 200003 and 200004"]
+        ]
+      },
+      {
         label: "2015 COMPLETED MODERNIZATION",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF pp. 3 to 4",
@@ -5936,14 +6009,45 @@ export const stationProfiles = [
         ]
       },
       {
-        label: "2026 TO 2027 PROPOSED 66 KV REMOVAL",
-        sourceId: "np-2026-lewisporte-boyds-cove",
-        pages: "physical PDF pp. 65 to 67",
+        label: "2025 146L REBUILD COMPLETED",
+        sourceId: "np-2025-q4-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["146L", "construction in the Gander area was complete and the rebuilt line was energized"]
+        ]
+      },
+      {
+        label: "2024 GAN-T2 CONDITION ASSESSMENT",
+        sourceId: "np-2025-gander-t2",
+        pages: "physical PDF pp. 479 to 486",
+        facts: [
+          ["Service history", "internal damage found in 1981 after elevated gas levels; repaired out of province and returned to service in 1982"],
+          ["Oil analysis", "arcing and partial discharge indications persisted from June 2022; all reported abnormal-condition indices exceeded the 0.5 review threshold"],
+          ["2023 exterior inspection", "minor tank, radiator, conservator and piping corrosion; no visible leaks; bushings and protection devices reported in good condition"],
+          ["Selected transformer", "new 138/66 kV, 25/33.3/41.6 MVA unit; $4.185 million filed project cost"],
+          ["Contingency", "COB-T2 could accept load after a GAN-T2 failure but could not independently supply the 66 kV system at peak without undervoltage"]
+        ]
+      },
+      {
+        label: "2026 REPORTED REPLACEMENT STATUS",
+        sourceId: "np-2027-gander-program-status",
+        pages: "physical PDF p. 240",
+        facts: [
+          ["Approval", "three-year project approved in Order No. P.U. 27 (2024)"],
+          ["Procurement", "replacement transformer procured in 2025 and scheduled to arrive in the fourth quarter of 2026"],
+          ["Commissioning", "scheduled for 2027"],
+          ["Approved project cost", "$4.185 million"]
+        ]
+      },
+      {
+        label: "2026 TO 2027 APPROVED 66 KV REMOVAL",
+        sourceId: "np-2027-gander-program-status",
+        pages: "physical PDF p. 239",
         facts: [
           ["66 kV system", "remove the 66 kV system from Gander"],
-          ["GAN-T2", "install the replacement transformer at Boyd's Cove"],
+          ["GAN-T2 replacement", "install the replacement transformer at Boyd's Cove"],
           ["Ground source", "install a new 138 kV grounding transformer at Gander"],
-          ["Filed schedule", "construction and commissioning planned for 2027"]
+          ["Reported status", "project proceeding as approved; completion planned for the fourth quarter of 2027"]
         ]
       }
     ]

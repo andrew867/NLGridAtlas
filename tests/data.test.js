@@ -718,10 +718,23 @@ test("Boyd's Cove and Gander retain the present corridor before the proposed 138
   assert.deepEqual(gander.connectedCircuits.map(({ circuit }) => circuit), ["144L", "146L", "108L", "102L"]);
   assert.deepEqual(gander.feederRegister, ["GAN-01", "GAN-02", "GAN-03", "GAN-04"]);
   const ganderFacts = gander.engineeringRecord.facts.flat().join(" ");
-  assert.match(ganderFacts, /GAN-T1 138\/12\.5 kV; 20 MVA/);
-  assert.match(ganderFacts, /three single-phase 69\/6\.9 kV, 1\.667 MVA transformers/);
+  assert.match(ganderFacts, /138\/12\.5 kV; 20 MVA/);
+  assert.match(ganderFacts, /16\/21\.3\/26\.67 MVA/);
+  const filedArrangement = gander.historyRecords.find((record) => record.label === "2014 FILED STATION ARRANGEMENT");
+  assert.match(filedArrangement.facts.flat().join(" "), /three single-phase 69\/6\.9 kV, 1\.667 MVA transformers/);
   assert.match(gander.planningRecord.facts.flat().join(" "), /GAN-T3 66 kV grounding-transformer bank; 3\.5 MVA/);
-  const conversion = gander.historyRecords.find((record) => record.label === "2026 TO 2027 PROPOSED 66 KV REMOVAL");
+  const peak = gander.historyRecords.find((record) => record.label === "2010 MEASURED WINTER PEAK");
+  assert.match(peak.facts.flat().join(" "), /18\.0 MVA measured peak/);
+  const equipment = gander.historyRecords.find((record) => record.label === "MARCH 2014 EQUIPMENT REGISTER");
+  assert.match(equipment.facts.flat().join(" "), /GAN-144L-B and GAN-146L-B were minimum-oil/);
+  const condition = gander.historyRecords.find((record) => record.label === "2024 GAN-T2 CONDITION ASSESSMENT");
+  assert.match(condition.facts.flat().join(" "), /25\/33\.3\/41\.6 MVA/);
+  assert.match(condition.facts.flat().join(" "), /arcing and partial discharge/);
+  const status = gander.historyRecords.find((record) => record.label === "2026 REPORTED REPLACEMENT STATUS");
+  assert.match(status.facts.flat().join(" "), /procured in 2025/);
+  const lineRebuild = gander.historyRecords.find((record) => record.label === "2025 146L REBUILD COMPLETED");
+  assert.match(lineRebuild.facts.flat().join(" "), /rebuilt line was energized/);
+  const conversion = gander.historyRecords.find((record) => record.label === "2026 TO 2027 APPROVED 66 KV REMOVAL");
   assert.match(conversion.facts.flat().join(" "), /remove the 66 kV system from Gander/);
 });
 
