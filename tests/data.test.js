@@ -1981,6 +1981,29 @@ test("Pitmans Pond connects its induction generator to New Chelsea through NCH-0
   assert.match(historyFacts, /673 to 674 kW/);
 });
 
+test("Topsail separates its internal generation connection from the external transmission network", () => {
+  const topsail = stationProfiles.find((station) => station.code === "TOP");
+  assert.ok(topsail);
+  assert.deepEqual(topsail.connectedCircuits, []);
+  assert.deepEqual(topsail.diagram.buses.map(({ voltage }) => voltage), ["25 kV", "2.4 kV"]);
+  assert.deepEqual(topsail.diagram.transformers.map(({ label, rating }) => [label, rating]), [["TOP-T1", "0.75 MVA"]]);
+  assert.deepEqual(topsail.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "2.6 MW"]]);
+  const plantFacts = topsail.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = topsail.planningRecord.facts.flat().join(" ");
+  const historyFacts = topsail.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /2\.6 MW turbine-generator operating at 85\.5 m rated net head/);
+  assert.match(plantFacts, /13\.3 GWh per year/);
+  assert.match(planningFacts, /TOP-T1.*25\/2\.4 kV.*0\.75 MVA/);
+  assert.match(historyFacts, /1,915 m long and 1,067 mm diameter/);
+  assert.match(historyFacts, /no transmission into or out of Topsail Substation/);
+  assert.match(historyFacts, /heavy cavitation damage/);
+  assert.match(historyFacts, /\$8\.288 million actual/);
+  assert.match(historyFacts, /TOP-T1, asset 201074/);
+  assert.match(historyFacts, /combination thrust and guide bearing failures/);
+  assert.match(historyFacts, /attempted repair that was unsuccessful/);
+  assert.match(historyFacts, /1,190,064 kWh in 2025/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");

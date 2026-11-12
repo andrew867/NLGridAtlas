@@ -1794,8 +1794,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 484 to 487 and 500 to 502",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Topsail", "TOP-T1", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 484 to 487, 498 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1888,6 +1888,46 @@ export const sources = [
     pages: "physical PDF pp. 17 and 20",
     status: "verified",
     url: "http://www.pub.nl.ca/indexreports/hydroelectricproduction/From%20NP%20-%20Normal%20Hydroelectric%20Production%20for%202022%20-%202022-02-01.PDF"
+  },
+  {
+    id: "np-2013-topsail-system",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Topsail Hydroelectric Development Record",
+    topics: ["Topsail", "TOP", "hydroelectric generation", "2.4 kV", "25 kV", "penstock", "Topsail Pond", "Paddy's Pond", "Thomas Pond"],
+    pages: "physical PDF pp. 198 to 200",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-2021-topsail-refurbishment",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, Topsail Hydro Plant Refurbishment",
+    topics: ["Topsail", "TOP", "hydroelectric generation", "intake gate", "turbine runner", "cavitation", "shaft seal", "penstock"],
+    pages: "physical PDF pp. 92 to 99",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
+  },
+  {
+    id: "np-2023-topsail-capex",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Expenditure Report, Topsail Hydro Plant Refurbishment",
+    topics: ["Topsail", "TOP", "hydroelectric generation", "capital expenditure", "multi-year project"],
+    pages: "physical PDF pp. 17 and 25",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202022%20Capital%20Expenditure%20Report%20-%202023-03-31.PDF"
+  },
+  {
+    id: "np-2027-topsail-status",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "CA-NP-052, Topsail Hydro Plant Operating Status and Generation",
+    topics: ["Topsail", "TOP", "hydroelectric generation", "combination thrust and guide bearing", "plant outage", "annual generation"],
+    pages: "physical PDF pp. 1 and 5",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/CA-NP-052.PDF"
   },
   {
     id: "np-2022-tors-cove",
@@ -11132,6 +11172,95 @@ export const stationProfiles = [
           ["Metered point", "PIT-G1-I"],
           ["15-minute values shown", "673 to 674 kW"],
           ["Highest value shown", "674 kW"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "TOP",
+    name: "Topsail",
+    voltage: "25/2.4 kV",
+    circuitRegisterLabel: "2010 DEVELOPMENT RECORD",
+    circuitSource: { sourceId: "np-2013-topsail-system", pages: "physical PDF p. 200" },
+    connectedCircuits: [],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "Documented plant and substation voltage arrangement with current transformer rating",
+      buses: [
+        { id: "b1", label: "distribution bus", voltage: "25 kV" },
+        { id: "b2", label: "generator bus", voltage: "2.4 kV" }
+      ],
+      transformers: [{ label: "TOP-T1", rating: "0.75 MVA", from: "b2", to: "b1" }],
+      circuits: [],
+      generators: [{ label: "G1", rating: "2.6 MW", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2020 ENGINEERING REPORT",
+      title: "Topsail hydro generation station",
+      sourceId: "np-2021-topsail-refurbishment",
+      pages: "physical PDF p. 92",
+      facts: [
+        ["Plant", "placed in service in 1932 with one 1.2 MW unit; upgraded in 1983"],
+        ["Current unit in the report", "single 2.6 MW turbine-generator operating at 85.5 m rated net head"],
+        ["Normal production", "approximately 13.3 GWh per year"],
+        ["Location", "Paradise and Conception Bay South, approximately 8 km west of St. John's"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 552",
+      facts: [["TOP-T1", "generation transformer; 25/2.4 kV; 0.75 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "2010 DEVELOPMENT RECORD",
+        sourceId: "np-2013-topsail-system",
+        pages: "physical PDF pp. 198 and 200",
+        facts: [
+          ["1983 unit", "Barber turbine and Ideal Electric generator replaced the original 1.2 MW unit"],
+          ["Penstock", "1,915 m long and 1,067 mm diameter; first 300 m buried and the remainder above ground on timber cradles"],
+          ["Substation", "steps 2.4 kV generation up to 25 kV for distribution and down to 120/240 V for station service"],
+          ["External connection", "no transmission into or out of Topsail Substation other than the underground line from the plant"]
+        ]
+      },
+      {
+        label: "2021 FILED INTAKE AND RUNNER WORK",
+        sourceId: "np-2021-topsail-refurbishment",
+        pages: "physical PDF pp. 92, 94 and 97 to 99",
+        facts: [
+          ["Intake", "replace the corroded gate and slides with stainless-steel equipment, install an electric operator, and rehabilitate the concrete structure"],
+          ["Runner", "repair heavy cavitation damage, rework the shaft-seal area, and install a new seal"],
+          ["Filed cost", "$460,000 for the intake-gate replacement and runner overhaul"]
+        ]
+      },
+      {
+        label: "2022 FINAL CAPITAL EXPENDITURE",
+        sourceId: "np-2023-topsail-capex",
+        pages: "physical PDF pp. 17 and 25",
+        facts: [
+          ["Multi-year project", "$9.859 million budget; $8.288 million actual, including $209,000 carried into 2022"],
+          ["Variance", "$1.571 million below budget, attributed to better tender pricing"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 498",
+        facts: [["Generation transformer", "TOP-T1, asset 201074"]]
+      },
+      {
+        label: "SEPTEMBER 2026 REPORTED OPERATING STATUS",
+        sourceId: "np-2027-topsail-status",
+        pages: "physical PDF pp. 1 and 5",
+        facts: [
+          ["Unit status", "offline after repeated combination thrust and guide bearing failures; limited operation was for testing and commissioning"],
+          ["2025 repair", "November and December generation followed an attempted repair that was unsuccessful"],
+          ["Recent annual generation", "7,066,579 kWh in 2022; 4,515,547 kWh in 2023; no generation shown for 2024; 1,190,064 kWh in 2025"],
+          ["2026 capital program", "no capital project relating to Topsail Hydro Plant was approved for 2026"]
         ]
       }
     ]
