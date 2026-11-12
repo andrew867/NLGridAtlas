@@ -833,6 +833,22 @@ test("Bonavista separates the 2018 transformer failure from the filed modernizat
   assert.match(historyFacts, /listed in service/);
 });
 
+test("Clarenville separates the 2014 arrangement from the present three-transformer record", () => {
+  const clarenville = stationProfiles.find((station) => station.code === "CLV");
+  assert.ok(clarenville);
+  assert.deepEqual(clarenville.connectedCircuits.map(({ circuit }) => circuit), ["109L", "110L", "123L", "124L"]);
+  assert.deepEqual(clarenville.feederRegister, ["CLV-01", "CLV-02", "CLV-03"]);
+  assert.deepEqual(clarenville.diagram.transformers.map(({ label, rating }) => [label, rating]), [["CLV-T1", "25 MVA"], ["CLV-T2", "20 MVA"], ["CLV-T3", "25 MVA"]]);
+  const existingFacts = clarenville.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = clarenville.planningRecord.facts.flat().join(" ");
+  const historyFacts = clarenville.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /CLV-T1 138\/66 kV; 25 MVA/);
+  assert.match(existingFacts, /CLV-T2 138\/12\.5 kV; 20 MVA/);
+  assert.match(planningFacts, /CLV-T3 138\/12\.5 kV; 25 MVA; 13\.01 MVA 2026 forecast/);
+  assert.match(historyFacts, /replace 65 electromechanical relays with 14 digital relays/);
+  assert.match(historyFacts, /41\.5 MVA for CLV-T2 and CLV-T3 operating in parallel/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

@@ -1280,6 +1280,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
   },
   {
+    id: "np-2015-clarenville",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Clarenville Substation Modernization and Load Growth Studies",
+    topics: ["Clarenville", "CLV-T1", "CLV-T2", "CLV-T3", "CLV-01", "CLV-02", "CLV-03", "138 kV", "66 kV", "12.5 kV"],
+    pages: "physical PDF pp. 433 to 435 and 475 to 482",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
     id: "np-2027-ca-np-041",
     year: 2026,
     organization: "Newfoundland Power",
@@ -4629,6 +4639,77 @@ export const stationProfiles = [
         pages: "physical PDF p. 560",
         facts: [
           ["BVA-T1 register state", "25 MVA, 138/12.5 kV, manufactured in 1990, repair recorded for the 2018 failure, and listed in service"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "CLV",
+    name: "Clarenville",
+    voltage: "138/66/12.5 kV",
+    circuitRegisterLabel: "2025 EXISTING CONNECTIONS",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "109L", from: "Sunnyside", from_code: "SUN", to: "Clarenville", to_code: "CLV" },
+      { circuit: "110L", from: "Clarenville", from_code: "CLV", to: "Lethbridge", to_code: "LET" },
+      { circuit: "123L", from: "Clarenville", from_code: "CLV", to: "Catalina", to_code: "CAT" },
+      { circuit: "124L", from: "Clarenville", from_code: "CLV", to: "Glovertown", to_code: "GLV" }
+    ],
+    feederRegisterLabel: "2014 STATION RECORD",
+    feederRegister: ["CLV-01", "CLV-02", "CLV-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 circuits / 2027 transformer register",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "CLV-T1", rating: "25 MVA", from: "b1", to: "b2" }, { label: "CLV-T2", rating: "20 MVA", from: "b1", to: "b3" }, { label: "CLV-T3", rating: "25 MVA", from: "b1", to: "b3" }],
+      circuits: [{ label: "109L", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "110L", destination: "Lethbridge", bus: "b2", destinationCode: "LET" }, { label: "123L", destination: "Catalina", bus: "b1", destinationCode: "CAT" }, { label: "124L", destination: "Glovertown", bus: "b1", destinationCode: "GLV" }]
+    },
+    engineeringRecord: {
+      date: "2014 EXISTING ARRANGEMENT",
+      title: "Clarenville transmission and distribution substation before CLV-T3",
+      sourceId: "np-2015-clarenville",
+      pages: "physical PDF pp. 433 and 475 to 477",
+      facts: [
+        ["Station built", "1967 as a transmission and distribution substation"],
+        ["CLV-T1", "138/66 kV; 25 MVA"],
+        ["CLV-T2", "138/12.5 kV; 20 MVA"],
+        ["2014 transmission circuits", "100L and 109L to Sunnyside, 123L to Catalina, 124L to Port Blandford, and 110L to Milton"],
+        ["Distribution", "CLV-01, CLV-02, and CLV-03; approximately 2,465 customers"],
+        ["2015 CLV-T2 forecast", "21.8 MVA against a 20 MVA rating"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 546 and 552",
+      facts: [
+        ["CLV-T1", "138/66 kV; 25 MVA"],
+        ["CLV-T2", "138/12.5 kV; 20 MVA; 11.64 MVA 2026 forecast"],
+        ["CLV-T3", "138/12.5 kV; 25 MVA; 13.01 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2015 FILED MODERNIZATION SCOPE",
+        sourceId: "np-2015-clarenville",
+        pages: "physical PDF pp. 433 to 435",
+        facts: [
+          ["Switches", "replace aged transformer, bus-tie, bypass, line, and ground switches"],
+          ["Protection and control", "replace 65 electromechanical relays with 14 digital relays and automate the three feeder breakers"],
+          ["Control building", "replace the deteriorated building, protection panels, control cables, and communications equipment"],
+          ["Site work", "replace cable trench covers, extend the ground grid, and add varmint protection"]
+        ]
+      },
+      {
+        label: "2015 FILED CLV-T3 ADDITION",
+        sourceId: "np-2015-clarenville",
+        pages: "physical PDF pp. 475 to 482",
+        facts: [
+          ["Selected work", "install CLV-T3 at 25 MVA and 138/12.5 kV in parallel with CLV-T2"],
+          ["Pre-project load", "CLV-T2 carried 21.0 MVA in 2013 and was forecast at 21.8 MVA for 2015"],
+          ["Feeder details", "CLV-02 provided backup to the Clarenville Hospital for a 1.2 MVA demand; CLV-03 supplied White Hills Ski Resort"],
+          ["Parallel-bank capacity", "the filing gives 41.5 MVA for CLV-T2 and CLV-T3 operating in parallel because transformer impedance affects load sharing"]
         ]
       }
     ]

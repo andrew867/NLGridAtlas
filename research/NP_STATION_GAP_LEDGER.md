@@ -221,6 +221,16 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2027 fleet table lists BVA-T1 at 25 MVA with a 13.81 MVA 2026 forecast. The failure-history table records the repaired unit as in service, physical PDF pp. 546 and 560.
 - [ ] The searched records do not give the exact repair return-to-service date or a post-modernization breaker one-line. The atlas does not assign either.
 
+## Clarenville station record
+
+- [x] The current line register identifies 109L to Sunnyside, 110L to Lethbridge, 123L to Catalina, and 124L to Glovertown, CA-NP-168 Attachment A, physical PDF p. 4.
+- [x] The 2015 filing records CLV-T1 at 25 MVA and 138/66 kV and CLV-T2 at 20 MVA and 138/12.5 kV. Three 12.5 kV feeders served approximately 2,465 customers, physical PDF pp. 433 and 475.
+- [x] The 2014 arrangement included 100L and 109L to Sunnyside, 123L to Catalina, 124L to Port Blandford, and 110L to Milton. The current line register above is kept as a separate dated record, physical PDF p. 433.
+- [x] CLV-T2 carried 21.0 MVA in 2013 and was forecast at 21.8 MVA for 2015 against its 20 MVA rating. The selected work added 25 MVA CLV-T3 in parallel, physical PDF pp. 476 to 482.
+- [x] The filed modernization replaced aged switches, 65 electromechanical relays, the control building, protection panels, control cables, and communications equipment, physical PDF pp. 433 to 435.
+- [x] The 2027 fleet table lists CLV-T1 at 25 MVA, CLV-T2 at 20 MVA with an 11.64 MVA forecast, and CLV-T3 at 25 MVA with a 13.01 MVA forecast, physical PDF pp. 546 and 552.
+- [ ] The searched records do not give the CLV-T3 commissioning date or a post-modernization breaker one-line. The atlas does not assign either.
+
 ## Pulpit Rock feeder-bus and transformer records
 
 - [x] The 2025 application says PUL-T1 and the then-installed PUL-T2 supplied five 12.5 kV feeders, physical PDF pp. 458 and 463.
