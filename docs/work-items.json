@@ -446,12 +446,12 @@
       "title": "Expand measured load and planning comparisons",
       "phase": 4,
       "priority": "P2",
-      "status": "not_started",
+      "status": "done",
       "scope": "Add dated station, feeder, interruption, transformer, and forecast records where actual and planning values can be compared without mixing data classes.",
       "dependencies": ["DB-001", "ISL-006"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/LOAD_RECORD.md", "index.html", "src/data.js", "research/derived/np-2027-transformer-register.json", "tests/data.test.js"],
       "blocker": null,
-      "notes": "Every comparison must identify the measurement period and source."
+      "notes": "The load record now separates the 2013/2014 Newfoundland Power and Avalon actual winter peaks, the January 2020 Nostradamus import failure, 2024 measured and forecast summaries, and the highest 2026 transformer planning ratios. King's Bridge and Ridge Road values are correctly labelled as five-year forecasts. Unpublished rural measurements remain deferred."
     },
     {
       "id": "GEO-001",

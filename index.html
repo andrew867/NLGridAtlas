@@ -1450,6 +1450,26 @@
             <p>The report's total-average row gives a 20 MW average absolute error for monthly utility peak averages.</p>
             <a class="evidence-link" href="http://www.pub.nf.ca/indexreports/nostradamus/From%20NLH%20-%20Short-Term%20Load%20Forecasting%20Accuracy%20-%202024%20Annual%20Report%20-%202025-01-31.PDF" target="_blank" rel="noreferrer">2024 accuracy report / PDF p. 119</a>
           </article>
+          <article class="load-case discrepancy-case" data-claim-id="nostradamus-2020-import-failure">
+            <span class="case-date">2020-01-02 TO 2020-01-03 / DATA IMPORT FAILURE</span>
+            <h3>Forecast stopped updating</h3>
+            <dl>
+              <div><dt>January 2, reported forecast</dt><dd>1,135 MW</dd></div>
+              <div><dt>January 2, actual reported peak</dt><dd>1,282 MW</dd></div>
+              <div><dt>January 3, reported forecast</dt><dd>1,165 MW</dd></div>
+              <div><dt>January 3, actual reported peak</dt><dd>1,295 MW</dd></div>
+            </dl>
+            <p>Scheduled tasks were deleted at the start of the year. Nostradamus stopped importing actual-load data until January 3. The reported peak errors were 147 MW on January 2 and 130 MW on January 3.</p>
+            <a class="evidence-link" href="http://www.pub.nl.ca/indexreports/From%20NLH%20-%20Accuracy%20of%20Nostradamus%20Load%20Forecasting%20-%202020%20Annual%20Report%20-%202021-02-01.PDF" target="_blank" rel="noreferrer">2020 accuracy report / physical PDF pp. 13 to 14</a>
+          </article>
+          <article class="load-case ruled-case" data-claim-id="np-2014-winter-actual-peaks">
+            <span class="case-date">2013 TO 2014 WINTER / ACTUAL PEAKS</span>
+            <h3>Newfoundland Power demand</h3>
+            <div class="paired-number"><strong>1,398.465</strong><span>MW Newfoundland Power</span></div>
+            <div class="paired-number"><strong>863.868</strong><span>MW Avalon Peninsula</span></div>
+            <p>The response reports each winter peak separately. It does not state that the two peaks occurred at the same time.</p>
+            <a class="evidence-link" href="http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-239.pdf" target="_blank" rel="noreferrer">PUB-NP-239 / physical PDF p. 1</a>
+          </article>
           <article class="load-case discrepancy-case" data-claim-id="hurricane-leslie-energy-totals">
             <span class="case-date">2012-09-11 / HURRICANE LESLIE</span>
             <h3>One page, two energy totals</h3>
@@ -1472,6 +1492,29 @@
             <a class="evidence-link stacked-link" href="http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078,%20Attachment%20B.XLSX" target="_blank" rel="noreferrer">PUB-NP-078 / Attachment B</a>
           </article>
         </div>
+
+        <section class="transformer-load-register" aria-labelledby="transformer-load-title" data-claim-id="np-2026-transformer-forecast-ratios">
+          <header>
+            <div><span class="case-date">2026 PLANNING FORECAST / POWER TRANSFORMER LISTING</span><h3 id="transformer-load-title">Highest forecast-to-rating ratios</h3></div>
+            <p>Ratios compare each table forecast with its listed MVA rating. They are planning values, not measured peaks.</p>
+          </header>
+          <div class="transformer-load-table-wrap">
+            <table>
+              <thead><tr><th>Transformer</th><th>Listed rating</th><th>2026 forecast</th><th>Ratio</th><th>Physical PDF</th></tr></thead>
+              <tbody>
+                <tr><td>GIL-T1</td><td>6.67 MVA</td><td>7.11 MVA</td><td>106.6%</td><td>p. 547</td></tr>
+                <tr><td>HOW-T3</td><td>1.00 MVA</td><td>1.04 MVA</td><td>104.0%</td><td>p. 548</td></tr>
+                <tr><td>WAL-T1</td><td>20.00 MVA</td><td>20.74 MVA</td><td>103.7%</td><td>p. 551</td></tr>
+                <tr><td>ISL-T1</td><td>4.00 MVA</td><td>3.94 MVA</td><td>98.5%</td><td>p. 548</td></tr>
+                <tr><td>MOL-T1</td><td>25.00 MVA</td><td>24.09 MVA</td><td>96.4%</td><td>p. 549</td></tr>
+                <tr><td>GAM-T1</td><td>6.67 MVA</td><td>6.42 MVA</td><td>96.3%</td><td>p. 547</td></tr>
+                <tr><td>MOL-T2</td><td>25.00 MVA</td><td>23.70 MVA</td><td>94.8%</td><td>p. 549</td></tr>
+                <tr><td>PAS-T1</td><td>13.30 MVA</td><td>12.46 MVA</td><td>93.7%</td><td>p. 549</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <a class="evidence-link" href="https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf#page=547" target="_blank" rel="noreferrer">2027 Capital Budget Application / physical PDF pp. 547 to 551</a>
+        </section>
       </section>
 
       <section class="section telecom-section" id="telecom" aria-labelledby="telecom-title" data-claim-id="historical-vhf-system">

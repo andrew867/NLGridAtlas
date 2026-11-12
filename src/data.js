@@ -1060,6 +1060,26 @@ export const sources = [
     url: "http://www.pub.nf.ca/indexreports/nostradamus/From%20NLH%20-%20Short-Term%20Load%20Forecasting%20Accuracy%20-%202024%20Annual%20Report%20-%202025-01-31.PDF"
   },
   {
+    id: "forecast-2020",
+    year: 2020,
+    organization: "NL Hydro",
+    title: "Accuracy of Nostradamus Load Forecasting, 2020 Annual Report",
+    topics: ["actual load", "forecast", "Nostradamus", "data import", "Island system"],
+    pages: "physical PDF pp. 13 to 14; report pp. 7 to 8",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/From%20NLH%20-%20Accuracy%20of%20Nostradamus%20Load%20Forecasting%20-%202020%20Annual%20Report%20-%202021-02-01.PDF"
+  },
+  {
+    id: "np-2014-winter-peak",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-239, 2013 to 2014 Winter Peak Demand",
+    topics: ["actual peak", "Newfoundland Power", "Avalon Peninsula", "winter demand"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-239.pdf"
+  },
+  {
     id: "np-2018-tod-study",
     year: 2018,
     organization: "Newfoundland Power",
@@ -1434,6 +1454,24 @@ export const staticClaims = [
     scope: "2024 monthly utility peak actual, forecast and average absolute error",
     status: "verified",
     sources: [{ sourceId: "forecast-2024", pages: "PDF p. 119" }]
+  },
+  {
+    id: "nostradamus-2020-import-failure",
+    scope: "2020-01-02 and 2020-01-03 forecast and actual peak records during a failed actual-load import",
+    status: "verified",
+    sources: [{ sourceId: "forecast-2020", pages: "physical PDF pp. 13 to 14; report pp. 7 to 8" }]
+  },
+  {
+    id: "np-2014-winter-actual-peaks",
+    scope: "Newfoundland Power and Avalon Peninsula actual peak demands during the 2013 to 2014 winter",
+    status: "verified",
+    sources: [{ sourceId: "np-2014-winter-peak", pages: "physical PDF p. 1" }]
+  },
+  {
+    id: "np-2026-transformer-forecast-ratios",
+    scope: "Highest 2026 transformer forecast to listed MVA rating ratios in the 2027 power-transformer listing",
+    status: "verified",
+    sources: [{ sourceId: "np-2027-transformers", pages: "physical PDF pp. 547 to 549" }]
   },
   {
     id: "hurricane-leslie-energy-totals",
@@ -2166,7 +2204,7 @@ export const components = {
   "rrd-summary": {
     diagram: "rrd", status: "verified", code: "RRD / SUBSTATION", title: "Ridge Road Substation",
     summary: "Three 66 kV circuits supply two 20 MVA transformers. Four 12.5 kV feeders are connected to each low-voltage bus, with a bus-tie breaker between the sections.",
-    data: [["66 kV circuits", "32L and 67L to Oxen Pond; 30L to King's Bridge"], ["Transformers", "RRD-T2 and RRD-T3; 20 MVA each"], ["Distribution", "Two 12.5 kV bus sections; 4 feeders on each section"], ["Bus tie", "Installed in 2015"], ["Five-year maximum peak", "34.7 MVA"]],
+    data: [["66 kV circuits", "32L and 67L to Oxen Pond; 30L to King's Bridge"], ["Transformers", "RRD-T2 and RRD-T3; 20 MVA each"], ["Distribution", "Two 12.5 kV bus sections; 4 feeders on each section"], ["Bus tie", "Installed in 2015"], ["Five-year forecast maximum peak", "34.7 MVA"]],
     sources: [sourceRef("np-2015-rrd-modernization", "physical PDF p. 427"), sourceRef("np-2027-ridge-road", "physical PDF pp. 105 to 108 and 511 to 518"), sourceRef("np-2027-pub-np-005", "physical PDF p. 5")]
   },
   "rrd-t2": {
@@ -2202,7 +2240,7 @@ export const components = {
   "kbr-summary": {
     diagram: "kbr", status: "verified", code: "KBR / SUBSTATION", title: "King's Bridge Substation",
     summary: "Circuits 12L, 16L, and 30L supply two 25 MVA transformers and six 12.5 kV distribution feeders.",
-    data: [["66 kV circuits", "12L to Memorial; 16L to Pepperrell; 30L to Ridge Road"], ["Transformers", "KBR-T3 and KBR-T4; 25 MVA each"], ["Distribution", "6 feeders at 12.5 kV"], ["Five-year maximum peak", "43.7 MVA"], ["Customers", "Approximately 5,740"]],
+    data: [["66 kV circuits", "12L to Memorial; 16L to Pepperrell; 30L to Ridge Road"], ["Transformers", "KBR-T3 and KBR-T4; 25 MVA each"], ["Distribution", "6 feeders at 12.5 kV"], ["Five-year forecast maximum peak", "43.7 MVA"], ["Customers", "Approximately 5,740"]],
     sources: [sourceRef("np-2026-kings-bridge", "physical PDF pp. 72 to 75 and 427 to 434"), sourceRef("np-2019-pepperrell", "physical PDF p. 35")]
   },
   "kbr-t3": {

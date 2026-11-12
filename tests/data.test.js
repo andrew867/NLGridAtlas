@@ -96,6 +96,32 @@ test("telecommunications record keeps historical, proposed and reported systems 
   assert.match(html, /vhf-2001-potential-sites-266\.png/);
 });
 
+test("load records separate actual peaks, forecasts and planning ratios", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const sourceById = new Map(sources.map((source) => [source.id, source]));
+
+  assert.equal(sourceById.get("forecast-2020").pages, "physical PDF pp. 13 to 14; report pp. 7 to 8");
+  assert.equal(sourceById.get("np-2014-winter-peak").pages, "physical PDF p. 1");
+
+  assert.match(html, /2020-01-02 TO 2020-01-03 \/ DATA IMPORT FAILURE/);
+  assert.match(html, /1,135 MW/);
+  assert.match(html, /1,282 MW/);
+  assert.match(html, /1,165 MW/);
+  assert.match(html, /1,295 MW/);
+  assert.match(html, /1,398\.465/);
+  assert.match(html, /863\.868/);
+  assert.match(html, /They are planning values, not measured peaks/);
+  assert.match(html, /GIL-T1<\/td><td>6\.67 MVA<\/td><td>7\.11 MVA<\/td><td>106\.6%/);
+
+  const ratio = 7.11 / 6.67 * 100;
+  assert.equal(ratio.toFixed(1), "106.6");
+
+  const ridgeRoad = components["rrd-summary"];
+  const kingsBridge = components["kbr-summary"];
+  assert.ok(ridgeRoad.data.some(([label, value]) => label === "Five-year forecast maximum peak" && value === "34.7 MVA"));
+  assert.ok(kingsBridge.data.some(([label, value]) => label === "Five-year forecast maximum peak" && value === "43.7 MVA"));
+});
+
 test("timeline events resolve to a source and evidence state", () => {
   const sourceIds = new Set(sources.map((source) => source.id));
   for (const event of timeline) {

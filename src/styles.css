@@ -651,14 +651,24 @@ button, input { font: inherit; }
 .ruled-case, .discrepancy-case { padding: clamp(1.5rem, 3vw, 3rem); border-top: 8px solid var(--water); background: transparent; }
 .discrepancy-case { border-color: var(--phase-a); }
 .tod-case { border-color: var(--copper); }
-.paired-number { display: flex; align-items: baseline; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--rule); }
-.paired-number strong { font: 600 4rem/.85 "Barlow Condensed", sans-serif; }
+.paired-number { display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem 1rem; padding: 1rem 0; border-top: 1px solid var(--rule); }
+.paired-number strong { font: 600 clamp(2.6rem, 5vw, 4rem)/.85 "Barlow Condensed", sans-serif; }
 .paired-number span { font: 400 .8rem/1 "IBM Plex Mono", monospace; }
 .paired-number.forecast strong { color: var(--water); }
 .discrepancy-case dl { margin: 0; }
 .discrepancy-case dl div { padding: .8rem 0; border-top: 1px solid var(--rule); }
 .discrepancy-case dt { font: 400 .7rem/1.2 "IBM Plex Mono", monospace; }
 .discrepancy-case dd { margin: .2rem 0 0; font: 600 1.25rem/1.2 "IBM Plex Mono", monospace; }
+.transformer-load-register { margin-top: 4rem; padding-top: 2rem; border-top: 8px solid var(--copper); }
+.transformer-load-register > header { display: grid; grid-template-columns: 1fr minmax(280px, .75fr); gap: 2rem; align-items: end; padding-bottom: 1.25rem; border-bottom: 1px solid var(--ink); }
+.transformer-load-register h3 { margin: .4rem 0 0; font: 600 2.8rem/.95 "Barlow Condensed", sans-serif; text-transform: uppercase; }
+.transformer-load-register > header p { margin: 0; line-height: 1.5; }
+.transformer-load-table-wrap { overflow-x: auto; }
+.transformer-load-register table { width: 100%; border-collapse: collapse; font: 400 .75rem/1.35 "IBM Plex Mono", monospace; }
+.transformer-load-register th, .transformer-load-register td { padding: .8rem .65rem; border-bottom: 1px solid var(--rule); text-align: left; white-space: nowrap; }
+.transformer-load-register th { background: var(--ink); color: var(--paper-bright); font-weight: 500; text-transform: uppercase; }
+.transformer-load-register td:nth-child(4) { font-weight: 600; }
+.transformer-load-register > .evidence-link { display: inline-block; margin-top: 1rem; }
 
 .telecom-section { background: #d6d9d1; }
 .telecom-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: stretch; }
@@ -746,6 +756,7 @@ button, input { font: inherit; }
   .telecom-history article { border-right: 0; border-bottom: 1px solid var(--ink); }
   .telecom-history article:last-child { border-bottom: 0; }
   .repeater-register > header { grid-template-columns: 1fr; }
+  .transformer-load-register > header { grid-template-columns: 1fr; }
   .microwave-record { grid-template-columns: 1fr; }
   .microwave-record ol, .microwave-record > p, .microwave-record > .evidence-link { grid-column: 1; }
   .station-layout, .holyrood-layout, .subsection-heading { grid-template-columns: minmax(0, 1fr); }

@@ -59,12 +59,16 @@ Updated: 2026-11-11
 - Deferred the final Avalon combustion-turbine connection. Hydro's 2025-12-12 filing remained an early-execution request while the build application was under review. It records design, procurement, TL218 work, and Newfoundland Power line relocations, but no issued-for-construction or as-built one-line.
 - Completed the dated telecommunications record. Separate diagrams now show the 2001 conventional network, the proposed 2004 trunked replacement, and the P25 plus vehicle-data project reported in 2026.
 - Added the 1999 to 2003 microwave work, the 2004 replacement economics, the four Hydro-owned frequency records, and expandable copies of the complete existing-site and potential-site sheets.
+- Added the 2013/2014 Newfoundland Power and Avalon actual winter peaks without treating them as coincident measurements.
+- Added the January 2020 Nostradamus data-import failure with the separately reported forecast, actual peak, and error values for January 2 and January 3.
+- Added a planning table for the eight highest 2026 transformer forecast-to-rating ratios in the 2027 transformer register. The table identifies them as planning values, not measured loading.
+- Corrected the King's Bridge and Ridge Road maximum-peak labels to state that they are five-year forecasts.
+- Deferred missing rural measured-load records rather than holding up the documented load section.
 
 ## Active work
 
-1. Expand measured load and planning comparisons, `LOAD-001`.
-2. Build the sourced coordinate and route dataset, `GEO-001`.
-3. Locate missing feeder-map sheets while processing those filings, `AVL-003`.
+1. Build the sourced coordinate and route dataset, `GEO-001`.
+2. Locate missing feeder-map sheets while processing those filings, `AVL-003`.
 
 ## Island backbone progress
 
