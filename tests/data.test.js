@@ -711,6 +711,19 @@ test("Pasadena separates the 2013 expansion plan from the current transformer re
   assert.match(proposedFacts, /scheduled a 15\/20\/25 MVA PAS-T1 replacement for 2021/);
 });
 
+test("Marble Mountain preserves the former transformer and filed Humber Valley expansion", () => {
+  const marbleMountain = stationProfiles.find((station) => station.code === "MMT");
+  assert.ok(marbleMountain);
+  assert.deepEqual(marbleMountain.connectedCircuits.map(({ circuit }) => circuit), ["Deer Lake Power L1"]);
+  assert.deepEqual(marbleMountain.feederRegister, ["MMT-01"]);
+  assert.match(marbleMountain.engineeringRecord.facts.flat().join(" "), /approximately 9 km of 4\/0 AASC/);
+  assert.match(marbleMountain.historyRecords[0].facts.flat().join(" "), /structures installed in 1990/);
+  assert.match(marbleMountain.historyRecords[1].facts.flat().join(" "), /former MOB-T1, rated 5\/6\.7 MVA/);
+  assert.match(marbleMountain.historyRecords[1].facts.flat().join(" "), /extend the main trunk 0\.6 km/);
+  assert.match(marbleMountain.historyRecords[2].facts.flat().join(" "), /5\.80 MVA forecast peak; 87% of rating/);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "MMT-T1").forecast_2026_mva, 5.59);
+});
+
 test("Stephenville Crossing remains a documented tap on radial 407L", () => {
   const crossing = stationProfiles.find((station) => station.code === "STX");
   assert.ok(crossing);

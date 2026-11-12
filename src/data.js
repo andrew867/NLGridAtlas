@@ -6243,6 +6243,77 @@ const filedFeederMapProfiles = [
     ]
   },
   {
+    code: "MMT",
+    name: "Marble Mountain",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2021 REGULATORY CONNECTION RECORD",
+    circuitSource: { sourceId: "pu-4-2021-deer-lake-power", pages: "physical PDF p. 5" },
+    connectedCircuits: [
+      { circuit: "Deer Lake Power L1", from: "Deer Lake Power", from_code: null, to: "Marble Mountain", to_code: "MMT" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["MMT-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "current transformer rating on documented supply connection",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "MMT-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "L1", destination: "Deer Lake Power", bus: "b1", link: false },
+        { label: "MMT-01", destination: "Steady Brook, Humber Village, Little Rapids and Marble Mountain", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2013 FILED EXISTING ARRANGEMENT",
+      title: "Marble Mountain distribution station",
+      sourceId: "np-2014-humber-valley",
+      pages: "physical PDF p. 285",
+      facts: [
+        ["Location", "near Steady Brook, approximately 1 km east of the Marble Mountain resort along the Trans-Canada Highway"],
+        ["Former MMT-T1", "66/12.5 kV; 4 MVA"],
+        ["MMT-01", "approximately 9 km of 4/0 AASC; served approximately 475 customers at the ski resort, Steady Brook, Humber Village and Little Rapids"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [["MMT-T1", "66/12.5 kV; 6.67 MVA; 5.59 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "1990 ASSET RECORD",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 200",
+        facts: [["Station structures", "wood 66 kV and 12.47 kV structures installed in 1990; 4 MVA transformer capacity"]]
+      },
+      {
+        label: "2013 FILED HUMBER VALLEY EXPANSION PLAN",
+        sourceId: "np-2014-humber-valley",
+        pages: "physical PDF pp. 285 to 291",
+        facts: [
+          ["Filed load", "4.2 MVA winter 2014 peak against the former 4 MVA transformer rating"],
+          ["Transformer", "replace the former 4 MVA unit with the existing former MOB-T1, rated 5/6.7 MVA at 66/12.5 kV"],
+          ["MMT-01", "extend the main trunk 0.6 km with 4/0 AASC and install a bank of 300 A voltage regulators"],
+          ["Filed cost", "$435,000 total; $285,000 substation and $150,000 distribution"]
+        ]
+      },
+      {
+        label: "2014 TRANSFORMER RECORD",
+        sourceId: "np-2014-pub-np-274",
+        pages: "physical PDF p. 8",
+        facts: [["MMT-T1", "66/12.5 kV; 6.7 MVA; 5.80 MVA forecast peak; 87% of rating"]]
+      },
+      {
+        label: "2018 TRANSFORMER RECORD",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF p. 8",
+        facts: [["MMT-T1", "66/12.47 kV; 6.7 MVA; 6.0 MVA forecast peak; 89.55% of rating"]]
+      }
+    ]
+  },
+  {
     code: "SCV",
     name: "Seal Cove",
     voltage: "66/25/4.2 kV current transformer record",

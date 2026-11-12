@@ -300,6 +300,15 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] PUB-NP-274 records GIL-T1 at 66/12.5 kV, 6.67 MVA, with a 4.55 MVA 2013/14 forecast peak, physical PDF p. 8. PUB-NP-081 records a 6.4 MVA forecast in 2018, physical PDF p. 8. The 2027 register records 66/25 kV, 6.67 MVA, with a 7.11 MVA 2026 forecast, physical PDF p. 547.
 - [ ] Completion evidence for the filed 2003 clearance and 2010 radiator and AC-panel work has not been located.
 
+## Marble Mountain station record
+
+- [x] Deer Lake Power L1 supplies the Pasadena and Marble Mountain station transformers, Order P.U. 4(2021), physical PDF p. 5.
+- [x] The 2010 asset table records a 4 MVA station with wood 66 kV and 12.47 kV structures installed in 1990, CA-NP-088 physical PDF p. 200.
+- [x] The 2013 Humber Valley study records former MMT-T1 at 66/12.5 kV and 4 MVA. MMT-01 used approximately 9 km of 4/0 AASC and served approximately 475 customers at the ski resort, Steady Brook, Humber Village and Little Rapids, physical PDF p. 285.
+- [x] The selected 2014 plan used the former MOB-T1, rated 5/6.7 MVA, extended MMT-01 by 0.6 km with 4/0 AASC, and added 300 A regulators. The filed total was $435,000, physical PDF pp. 286, 288 and 291.
+- [x] PUB-NP-274 lists MMT-T1 at 66/12.5 kV, 6.7 MVA, with a 5.80 MVA forecast peak, physical PDF p. 8. The 2027 register lists 66/12.5 kV, 6.67 MVA, with a 5.59 MVA 2026 forecast, physical PDF p. 549.
+- [ ] The transformer listing establishes the 6.7 MVA station state; a completion report for the filed MMT-01 extension and regulator installation has not been located.
+
 ## Gambo station record
 
 - [x] The 2024 filing identifies 121L from Glovertown and 146L from Gander as the 138 kV supplies, physical PDF p. 349.

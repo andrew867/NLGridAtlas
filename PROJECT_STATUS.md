@@ -27,6 +27,7 @@ Updated: 2026-11-12
 - Corrected 403L as the St. George's to Lookout Brook main line with a separate Robinsons radial tap, then added detailed St. George's and Robinsons station records and the 2008 33 kV to 66 kV conversion history.
 - Added Frenchman's Cove as a dedicated radial-station record with 353L, FRN-01 and FRN-02, 1977 wood structures, dated transformer voltages and loads, the 2003 regulator-clearance filing, and the 2018 communications-battery outage.
 - Added Gillams as a dedicated 358L radial-station record with GIL-01 and GIL-02, dated transformer loading, the 2003 clearance filing, the 2010 refurbishment scope, and both completed feeder-recloser replacements.
+- Added Marble Mountain with its Deer Lake Power L1 supply, MMT-01 service area and conductor, former 4 MVA station, filed 2014 expansion, and current 6.67 MVA transformer record.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 - Kept Pierre's Brook's published 2008 station upgrade, 2009 filed 23L conversion, 2013 installed line state, and 2015 filed electrical-refurbishment scope as separate dated records.
 - Added Rocky Pond's segmented 20L and 22L connections, 2005 switchgear fire, completed 2009 plant and substation rebuild, March 18, 2025 capacity test, and proposed 2027 bearing work.
@@ -38,7 +39,7 @@ Updated: 2026-11-12
 - Added Rose Blanche's LGL-02 connection, 25/6.9 kV transformer, dual-Francis generating unit, isolated southwest-coast duty, 2016 turbine failure, 2017 filed repair work, reported 2018 unit replacements, and filed 2027 to 2028 refurbishment.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 198 automated tests, source-hash verification, and the production build.
+- Passed 199 automated tests, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.
