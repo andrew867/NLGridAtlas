@@ -25,6 +25,8 @@ The PUB archive establishes two different Unit 3 arrangements:
 | 2020 Capital Budget Application | Unit 3 has had reversible synchronous-condenser capability since 1986. The arrangement uses a pony motor and synchro-self-shifting clutch, and the generator rotor is decoupled from the steam turbine before synchronous-condenser operation. | [Volume II, physical PDF pp. 135 to 138](http://www.pub.nl.ca/applications/2020/NLH2020Capital/applications/From%20NLH%20-%202020%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202019-08-01.PDF) |
 | April 2022 energy report | Hydro converted Unit 3 from generation service to synchronous-condenser service between April 4 and April 15, 2022. It operated for 373 hours in that mode during April. | [Report, physical PDF pp. 7 to 8](http://www.pub.nl.ca/indexreports/20152019energysupply/From%20NLH%20-%20Energy%20Supply%20Monthly%20Report%20-%20April%202022%20-%202022-05-17.PDF) |
 | 2022 condition study | The in-service inventory includes generator transformers T1, T2, and T3; excitation transformers RT1, RT2, and RT3; unit-service transformers UST-1, UST-2, and UST-3; and station-service transformers SST-12 and SST-34. | [Condition study, physical PDF pp. 90 to 91](http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Assessment%20to%20Determine%20the%20Potential%20Long-Term%20Viability%20of%20the%20Holyrood%20Thermal%20Generating%20Station%20-%202022-03-31.PDF) |
+| 2025 annual-report article | Hydro completed the Unit 1 overhaul in February 2025 after removing the turbine and generator rotors, restoring two bearing journals, and replacing three turbine-rotor blade rows. | [Hydro article, dated March 12, 2025](https://nlhydro.com/good-to-know/holyrood-unit-1-overhaul-ensuring-long-term-reliability/) |
+| 2026 Capital RFI | Hydro is assessing Unit 3 against combustion-turbine synchronous operation, stand-alone synchronous condensers, STATCOMs, grid-forming inverters, and combinations of those resources. | [CA-NLH-057, physical PDF p. 1](http://www.pub.nl.ca/applications/2025/NLH2026Capital/responses/CA-NLH-057.PDF) |
 | July 2026 energy report | Unit 3 recorded 0 generating hours and 697 synchronous-condensing hours. | [Report, physical PDF p. 10, report p. 7](http://www.pub.nl.ca/indexreports/20152019energysupply/From%20NLH%20-%20Energy%20Supply%20Monthly%20Report%20-%20July%202026%20-%202026-08-17.PDF) |
 
 The 1986 retrofit supports reversible seasonal operation. The spring 2030 record concerns permanent post-steam operation. The 2026 capital filing states that retaining Unit 3 after steam operation remains a planning assumption under review. See [Holyrood and Muskrat Falls record](HOLYROOD_MUSKRAT_RECORD.md).
@@ -41,8 +43,8 @@ The 1986 retrofit supports reversible seasonal operation. The spring 2030 record
 
 ## Search targets
 
-- [ ] Holyrood Unit 3 permanent post-steam conversion design package, issued-for-construction drawings, and commissioning report.
-- [ ] Holyrood Unit 3 permanent post-steam station single-line.
+- [ ] Holyrood Unit 3 permanent post-steam design package, if Hydro selects that option and issues the design.
+- [ ] `1403-500-E001 PLANT SINGLE LINE DIAGRAM` and `1403-500-E004 PLANT MCC SINGLE LINE DIAGRAM`, named but not reproduced in the 2022 condition study.
 - [ ] Avalon combustion turbine connection one-line and synchronous-condensing operating data.
 - [ ] Hardwoods, Oxen Pond, and Western Avalon terminal drawings not already preserved from PUB filings.
 - [ ] Soldiers Pond converter-station auxiliary and AC-yard drawings.

@@ -885,6 +885,8 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.match(components["hrd-g3"].data.flat().join(" "), /Pony motor and SSS clutch/);
   assert.match(components["hrd-g3"].data.flat().join(" "), /April 2022 operation 373 hours/);
   assert.match(components["hrd-g3"].data.flat().join(" "), /Spring 2030/);
+  assert.match(components["hrd-g3"].data.flat().join(" "), /STATCOMs.*grid-forming inverters/);
+  assert.match(components["hrd-summary"].data.flat().join(" "), /Unit 1 overhaul completed February 2025/);
   assert.match(components["wav-summary"].data.flat().join(" "), /Replacement began in 2019/);
   assert.match(components["hwd-summary"].data.flat().join(" "), /T5 45\/60\/75 MVA, 66\/13.8 kV/);
   assert.match(components["hwd-g1"].data.flat().join(" "), /2026 study model 25 MW/);

@@ -367,7 +367,7 @@
       "dependencies": ["ARC-001", "ARC-002"],
       "completion_evidence": ["src/data.js", "research/ISLAND_TRANSFORMER_LEDGER.md", "research/HOLYROOD_MUSKRAT_RECORD.md"],
       "blocker": null,
-      "notes": "Research resumed on 2026-11-12. The current site diagram remains explicitly dated as December 2012. The 2022 condition study establishes the later generator, excitation, unit-service, and station-service transformer inventory. The July 2026 operating report confirms continuing Unit 3 synchronous-condenser operation. Muskrat Falls RFIs document an earlier three-unit conversion concept that was not implemented as filed. No current complete station one-line has been located, so the atlas does not reconstruct breaker positions."
+      "notes": "Research resumed on 2026-11-12. The current site diagram remains explicitly dated as December 2012. The 2022 condition study establishes the later generator, excitation, unit-service, and station-service transformer inventory. Its document register names 1403-500-E001 PLANT SINGLE LINE DIAGRAM and 1403-500-E004 PLANT MCC SINGLE LINE DIAGRAM, but does not reproduce them. The July 2026 operating report confirms continuing Unit 3 synchronous-condenser operation. A 2020 RFI confirms that Hydro dropped Units 1 and 2 from that role. No current complete station one-line has been located, so the atlas does not reconstruct breaker positions."
     },
     {
       "id": "GEN-002",
