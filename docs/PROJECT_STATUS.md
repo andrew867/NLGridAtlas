@@ -112,6 +112,7 @@ Updated: 2026-11-12
 - Added station records for Abrahams Cove, Broad Cove, Bishop's Falls, Big Pond, Bay Roberts, Bayview, Chamberlains, Cobb's Pond, Deer Lake distribution substation, and Garnish with the dated 2005 register, recovered feeder sheets, and 2027 transformer entries.
 - Added Deer Lake's 2010 transformer replacement and Q4 completion record, including the 16.8 MVA measured peak, the 25 MVA replacement, and relocation of the former 16.7 MVA unit to Mobile. Kept the 2018 66/12.47 kV listing separate from the 2027 66/25 kV register.
 - Added the approved DLK-03 to Wiltondale load-transfer project. The filed record identifies the 147 A measured peak, 85 A planning maximum, 468-customer transfer, $1.137 million approval, and early-2027 construction schedule.
+- Added Bay Roberts' three-bus one-line, four transmission connections, four transformer records, 1967 and 1978 station history, proposed 2014 modernization, proposed BRB-T4 addition, reported 2014/15 transformer arrangement, and proposed 2020 BRB-05 upgrade. The 2014 filing's conflicting 66/12.5 kV and 138/12.5 kV BRB-T4 labels remain visible.
 
 ## Active work
 

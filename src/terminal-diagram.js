@@ -29,8 +29,8 @@ function transformerSymbol(transformer, index, count, buses, escapeHtml) {
     <circle cx="${x}" cy="${middle - 13}" r="20" />
     <circle cx="${x}" cy="${middle + 13}" r="20" />
     <line x1="${x}" y1="${middle + 28}" x2="${x}" y2="${to.y}" />
-    <text class="terminal-device-name" x="${x}" y="${middle - 72}">${escapeHtml(transformer.label)}</text>
-    <text class="terminal-device-rating" x="${x}" y="${middle - 52}">${escapeHtml(transformer.rating)}</text>
+    <text class="terminal-device-name" x="${x}" y="${middle - 82}">${escapeHtml(transformer.label)}</text>
+    <text class="terminal-device-rating" x="${x}" y="${middle - 60}">${escapeHtml(transformer.rating)}</text>
   </g>`;
 }
 
@@ -38,7 +38,7 @@ function circuitSymbol(circuit, index, count, bus, direction, escapeHtml, linkTa
   const x = spread(index, count);
   const lineEnd = bus.y + direction * 68;
   const labelY = bus.y + direction * 88;
-  const destinationY = bus.y + direction * 108;
+  const destinationY = bus.y + direction * 114;
   const body = `<g class="terminal-circuit">
     <line x1="${x}" y1="${bus.y}" x2="${x}" y2="${lineEnd}" />
     <text class="terminal-circuit-id" x="${x}" y="${labelY}">${escapeHtml(circuit.label)}</text>

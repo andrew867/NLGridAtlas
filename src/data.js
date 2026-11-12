@@ -690,6 +690,26 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
   },
   {
+    id: "np-2014-bay-roberts",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Bay Roberts Substation and 12.5 kV System",
+    topics: ["Bay Roberts", "BRB-T1", "BRB-T2", "BRB-T3", "BRB-T4", "39L", "48L", "56L", "57L", "BRB-05", "substation modernization", "load growth"],
+    pages: "physical PDF pp. 243 to 245, 257 and 262 to 268",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2014-pub-np-274",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-274, 2014/15 Transformer Ratings and Forecast Loads",
+    topics: ["Bay Roberts", "BRB-T1", "BRB-T2", "BRB-T3", "BRB-T4", "transformer ratings", "winter forecast"],
+    pages: "physical PDF pp. 1, 5 and 10",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-274.pdf"
+  },
+  {
     id: "np-2015-substation-modernization",
     year: 2014,
     organization: "Newfoundland Power",
@@ -1057,6 +1077,16 @@ export const sources = [
     topics: ["Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "GDL-07", "GDL-09", "12.5 kV"],
     pages: "physical PDF pp. 447 to 453",
     status: "verified",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "np-2020-brb05",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, BRB-05 Feeder Upgrade",
+    topics: ["Bay Roberts", "BRB-05", "Shearstown", "Butlerville", "4/0 AASC", "feeder upgrade", "measured load"],
+    pages: "physical PDF pp. 70 and 449 to 450",
+    status: "proposed",
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
   },
   {
@@ -5099,20 +5129,99 @@ const earlyFeederMapProfiles = [
     code: "BRB",
     name: "Bay Roberts",
     voltage: "138/66/12.5 kV",
+    circuitRegisterLabel: "2014 FILED TRANSMISSION ARRANGEMENT",
+    circuitSource: { sourceId: "np-2014-bay-roberts", pages: "physical PDF p. 243" },
     handbookPage: "physical PDF pp. 6 to 7 and 11",
     feederRegister: ["BRB-01", "BRB-02", "BRB-03", "BRB-04", "BRB-05"],
     mapPages: [["BRB-01", 33], ["BRB-02", 34], ["BRB-03", 35], ["BRB-04", 36], ["BRB-05", 37]],
     connectedCircuits: [
-      { circuit: "39L", from: "Duff's", from_code: "DUF", to: "Bay Roberts", to_code: "BRB" },
+      { circuit: "39L", from: "Springfield", from_code: "SPF", to: "Bay Roberts", to_code: "BRB" },
       { circuit: "48L", from: "Bay Roberts", from_code: "BRB", to: "Blaketown", to_code: "BLK" },
       { circuit: "56L", from: "Bay Roberts", from_code: "BRB", to: "Carbonear", to_code: "CAR" },
-      { circuit: "57L", from: "Bay Roberts", from_code: "BRB", to: "Harbour Grace", to_code: "HGR" }
+      { circuit: "57L", from: "Bay Roberts", from_code: "BRB", to: "Upper Island Cove", to_code: "ILC" }
     ],
     transformerPages: "physical PDF pp. 546 and 552",
     transformerFacts: [
       ["BRB-T1", "138/12.5 kV; 20 MVA; 11.54 MVA 2026 forecast"],
       ["BRB-T4", "138/12.5 kV; 25 MVA; 13.79 MVA 2026 forecast"],
       ["BRB-T2 and BRB-T3", "138/66 kV; 41.6 MVA each"]
+    ],
+    diagram: {
+      label: "2014/15 filed arrangement",
+      buses: [{ id: "b1", label: "transmission bus", voltage: "138 kV" }, { id: "b2", label: "transmission bus", voltage: "66 kV" }, { id: "b3", label: "distribution bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "BRB-T2", rating: "41.6 MVA", from: "b1", to: "b2" }, { label: "BRB-T3", rating: "41.6 MVA", from: "b1", to: "b2" }, { label: "BRB-T1", rating: "20 MVA", from: "b1", to: "b3" }, { label: "BRB-T4", rating: "25 MVA", from: "b1", to: "b3" }],
+      circuits: [{ label: "39L", destination: "Springfield", bus: "b1", destinationCode: "SPF" }, { label: "48L", destination: "Blaketown", bus: "b1", destinationCode: "BLK" }, { label: "56L", destination: "Carbonear", bus: "b2", destinationCode: "CAR" }, { label: "57L", destination: "Upper Island Cove", bus: "b2", destinationCode: "ILC" }]
+    },
+    engineeringRecord: {
+      date: "2014 FILED STATION ARRANGEMENT",
+      title: "Bay Roberts transmission and distribution substation",
+      sourceId: "np-2014-bay-roberts",
+      pages: "physical PDF pp. 243 to 245 and 262 to 263",
+      facts: [
+        ["Station history", "built in 1967 as a distribution substation; expanded in 1978 for transmission and distribution"],
+        ["138 kV circuits", "39L to Springfield and 48L to Blaketown"],
+        ["66 kV circuits", "56L to Carbonear and 57L to Upper Island Cove"],
+        ["138/66 kV transformation", "BRB-T2 and BRB-T3; approximately 42 MVA each in the 2014 filing"],
+        ["138/12.5 kV transformation", "BRB-T1; 20 MVA before the BRB-T4 addition"],
+        ["Distribution", "BRB-01 to BRB-05; approximately 3,600 customers in the 2014 filing"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 546 and 552",
+      facts: [
+        ["BRB-T1", "138/12.5 kV; 20 MVA; 11.54 MVA 2026 forecast"],
+        ["BRB-T4", "138/12.5 kV; 25 MVA; 13.79 MVA 2026 forecast"],
+        ["BRB-T2 and BRB-T3", "138/66 kV; 41.6 MVA each"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2014 PROPOSED MODERNIZATION",
+        sourceId: "np-2014-bay-roberts",
+        pages: "physical PDF pp. 243 to 245",
+        facts: [
+          ["Protection", "replace 42 electromechanical relays in nine panels with eight digital relays and new protection panels"],
+          ["Transformers", "refurbish the three existing transformers and replace their auxiliary protection devices"],
+          ["Primary switch", "replace the 35-year-old BRB-T1-A 138 kV air-break switch"],
+          ["Control", "upgrade communications and SCADA equipment"]
+        ]
+      },
+      {
+        label: "2014 PROPOSED BRB-T4 ADDITION",
+        sourceId: "np-2014-bay-roberts",
+        pages: "physical PDF pp. 257 and 264 to 268",
+        facts: [
+          ["Filed need", "22.1 MVA winter 2014 forecast for the 20 MVA BRB-T1"],
+          ["Selected work", "install BRB-T4, 25 MVA at 138/12.5 kV, in parallel with BRB-T1"],
+          ["Resulting capacity", "45 MVA at 12.5 kV"],
+          ["Filed cost", "$2.320 million"],
+          ["Voltage record", "the p. 243 footnote says 66/12.5 kV; the detailed study on pp. 264 to 268 and later transformer registers say 138/12.5 kV"]
+        ]
+      },
+      {
+        label: "2014/15 REPORTED TRANSFORMER ARRANGEMENT",
+        sourceId: "np-2014-pub-np-274",
+        pages: "physical PDF pp. 1, 5 and 10",
+        facts: [
+          ["Distribution bank", "BRB-T1, 20 MVA, and BRB-T4, 25 MVA, both 138/12.5 kV"],
+          ["Transmission bank", "BRB-T2 and BRB-T3, both 41.6 MVA at 138/66 kV"],
+          ["Filed status", "ratings included the capacity upgrade reported as being completed before the 2014/15 winter season"]
+        ]
+      },
+      {
+        label: "2020 PROPOSED BRB-05 UPGRADE",
+        sourceId: "np-2020-brb05",
+        pages: "physical PDF pp. 70 and 449 to 450",
+        facts: [
+          ["Overloaded section", "2.4 km along Shearstown Road from the Veterans Memorial Highway underpass into Butlerville"],
+          ["Filed load", "107 A forecast on the single-phase section; 85 A planning maximum"],
+          ["Proposed work", "convert 1.3 km from two phase to three phase and 1.1 km from single phase to three phase; reconductor the full section with 4/0 AASC"],
+          ["Conductor ratings", "153 A existing conductor; 356 A for the proposed 4/0 AASC"],
+          ["Filed cost", "$495,000"]
+        ]
+      }
     ]
   },
   {
@@ -5261,8 +5370,8 @@ const earlyFeederMapProfiles = [
   }
 ].map((station) => ({
   ...station,
-  circuitRegisterLabel: "2005 TRANSMISSION REGISTER",
-  ...(station.connectedCircuits ? { circuitSource: { sourceId: "np-2006-handbook", pages: station.handbookPage } } : {}),
+  circuitRegisterLabel: station.circuitRegisterLabel ?? "2005 TRANSMISSION REGISTER",
+  ...(station.connectedCircuits ? { circuitSource: station.circuitSource ?? { sourceId: "np-2006-handbook", pages: station.handbookPage } } : {}),
   feederRegisterLabel: "2005 FEEDER REGISTER",
   eventLoads: [],
   engineeringRecord: station.engineeringRecord ?? {

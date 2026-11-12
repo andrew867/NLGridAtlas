@@ -1643,6 +1643,20 @@ test("Colliers, Springfield, and Holyrood records separate filed scopes from com
   assert.match(holyrood.engineeringRecord.facts.flat().join(" "), /split HOL-01 into two feeders/);
 });
 
+test("Bay Roberts keeps the filed station, transformer addition, and feeder work separate", () => {
+  const bayRoberts = stationProfiles.find((station) => station.code === "BRB");
+  const recordText = bayRoberts.historyRecords.flatMap((record) => record.facts.flat()).join(" ");
+
+  assert.deepEqual(bayRoberts.diagram.buses.map((bus) => bus.voltage), ["138 kV", "66 kV", "12.5 kV"]);
+  assert.deepEqual(bayRoberts.diagram.transformers.map((transformer) => transformer.label), ["BRB-T2", "BRB-T3", "BRB-T1", "BRB-T4"]);
+  assert.match(bayRoberts.engineeringRecord.facts.flat().join(" "), /39L to Springfield and 48L to Blaketown/);
+  assert.match(recordText, /22\.1 MVA winter 2014 forecast for the 20 MVA BRB-T1/);
+  assert.match(recordText, /p\. 243 footnote says 66\/12\.5 kV.*later transformer registers say 138\/12\.5 kV/);
+  assert.match(recordText, /107 A forecast.*85 A planning maximum/);
+  assert.match(recordText, /1\.3 km from two phase to three phase.*1\.1 km from single phase to three phase/);
+  assert.equal(bayRoberts.historyRecords.find((record) => record.label.includes("2014/15")).sourceId, "np-2014-pub-np-274");
+});
+
 test("2019 feeder tie records link King's Bridge, Pepperell, and Virginia Waters", async () => {
   const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
