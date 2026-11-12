@@ -108,6 +108,8 @@ Updated: 2026-11-12
 - Added dedicated station profiles for Botwood, Carbonear, Gallant Street, and Heart's Content, retaining source-year voltage differences instead of merging them.
 - Added the 2005 BOT-01 feeder study with its filed route map, 199 km route, conductor record, 2002 to 2004 interruption history, proposed three-year scope, and the separately documented 2008 completion of work on feeder sections.
 - Distinguished the Grand Falls NGF 138/66/25 kV yard north of the Trans-Canada Highway from the GFS 66/4.16 kV yard south of the highway. Added the documented 2011 to 2016 NGF modernization and 50 MVA transformer addition.
+- Corrected the CA-NP-020 feeder-map inventory from 112 sheets to the complete 150-sheet attachment. Added physical PDF pp. 20 to 57, including the previously omitted Abrahams Cove, Broad Cove, Bishop's Falls, Big Pond, Blaketown, Botwood, Bay Roberts, Bayview, Catalina, Chamberlains, Clarkes Pond, Clarenville, Cobb's Pond, Deer Lake, Gallant Street, Gambo, Gander, and Garnish sheets.
+- Added station records for Abrahams Cove, Broad Cove, Bishop's Falls, Big Pond, Bay Roberts, Bayview, Chamberlains, Cobb's Pond, Deer Lake distribution substation, and Garnish with the dated 2005 register, recovered feeder sheets, and 2027 transformer entries.
 
 ## Active work
 

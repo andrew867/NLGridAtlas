@@ -386,11 +386,16 @@ test("CA-NP-020 feeder sheets preserve the complete filed page sequence", () => 
     .flatMap((station) => station.mapPages.map(([feeder, page]) => ({ feeder, page, station: station.code })))
     .sort((left, right) => left.page - right.page);
 
-  assert.equal(mapRows.length, 112);
-  assert.deepEqual(mapRows.map(({ page }) => page), Array.from({ length: 112 }, (_, index) => index + 58));
-  assert.deepEqual(mapRows[0], { feeder: "GDL-01", page: 58, station: "GDL" });
+  assert.equal(mapRows.length, 150);
+  assert.deepEqual(mapRows.map(({ page }) => page), Array.from({ length: 150 }, (_, index) => index + 20));
+  assert.deepEqual(mapRows[0], { feeder: "ABC-01", page: 20, station: "ABC" });
   assert.deepEqual(mapRows.at(-1), { feeder: "WES-02", page: 169, station: "WES" });
-  assert.equal(new Set(mapRows.map(({ feeder }) => feeder)).size, 112);
+  assert.equal(new Set(mapRows.map(({ feeder }) => feeder)).size, 150);
+  assert.deepEqual(mapRows.slice(0, 12).map(({ feeder, page }) => [feeder, page]), [
+    ["ABC-01", 20], ["ABC-02", 21], ["BCV-01", 22], ["BCV-02", 23],
+    ["BCV-03", 24], ["BCV-04", 25], ["BFS-01", 26], ["BFS-02", 27],
+    ["BIG-02", 28], ["BLK-01", 29], ["BLK-02", 30], ["BOT-01", 31]
+  ]);
   assert.deepEqual(mapRows.slice(-21).map(({ feeder, page }) => [feeder, page]), [
     ["SPF-02", 149], ["SPF-03", 150], ["STX-01", 151], ["TRN-02", 152],
     ["TWG-01", 153], ["TWG-02", 154], ["VIC-02", 155],
@@ -399,6 +404,32 @@ test("CA-NP-020 feeder sheets preserve the complete filed page sequence", () => 
     ["WAL-01", 163], ["WAL-02", 164], ["WAL-04", 165], ["WAL-05", 166],
     ["WAV-01", 167], ["WES-01", 168], ["WES-02", 169]
   ]);
+});
+
+test("early CA-NP-020 feeder sheets have station records and current transformer entries", () => {
+  const expected = {
+    ABC: [["ABC-01", 20], ["ABC-02", 21]],
+    BCV: [["BCV-01", 22], ["BCV-02", 23], ["BCV-03", 24], ["BCV-04", 25]],
+    BFS: [["BFS-01", 26], ["BFS-02", 27]],
+    BIG: [["BIG-02", 28]],
+    BRB: [["BRB-01", 33], ["BRB-02", 34], ["BRB-03", 35], ["BRB-04", 36], ["BRB-05", 37]],
+    BVS: [["BVS-01", 38], ["BVS-02", 39]],
+    CHA: [["CHA-01", 41], ["CHA-03", 42]],
+    COB: [["COB-03", 47]],
+    DLK: [["DLK-01", 48], ["DLK-03", 49]],
+    GAR: [["GAR-01", 57]]
+  };
+
+  for (const [code, mapPages] of Object.entries(expected)) {
+    const profile = stationProfiles.find((station) => station.code === code);
+    assert.ok(profile, `${code} station profile`);
+    assert.deepEqual(profile.mapPages, mapPages, `${code} feeder maps`);
+    assert.equal(profile.planningRecord.sourceId, "np-2027-transformers", `${code} transformer source`);
+  }
+
+  const bishopsFalls = stationProfiles.find((station) => station.code === "BFS");
+  assert.deepEqual(bishopsFalls.connectedCircuits.map(({ circuit }) => circuit), ["132L", "133L", "134L", "136L"]);
+  assert.match(bishopsFalls.planningRecord.facts.flat().join(" "), /BFS-T1.*138\/25 kV; 20 MVA; 8\.47 MVA/);
 });
 
 test("island terminal records retain page-level sources", async () => {

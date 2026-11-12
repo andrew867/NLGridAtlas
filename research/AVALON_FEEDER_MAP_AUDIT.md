@@ -1,18 +1,36 @@
 # CA-NP-020 feeder map audit
 
-Updated: 2026-11-11
+Updated: 2026-11-12
 
 ## Source
 
 Newfoundland Power, CA-NP-020, Supply Issues and Power Outages:  
 <http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/CA-NP-020.pdf>
 
-Attachment B contains 112 consecutive feeder index-grid sheets on physical PDF pp. 58 to 169. The atlas preserves each sheet as a 144 dpi JPEG without cropping. The filename is the lowercase feeder designation.
+Attachment B contains 150 consecutive feeder index-grid sheets on physical PDF pp. 20 to 169. The atlas preserves each sheet as a 144 dpi JPEG without cropping. The filename is the lowercase feeder designation.
 
 ## Filed sheets
 
 | Station | Feeder sheets | Physical PDF pages |
 | --- | --- | --- |
+| ABC | ABC-01, ABC-02 | 20 to 21 |
+| BCV | BCV-01 to BCV-04 | 22 to 25 |
+| BFS | BFS-01, BFS-02 | 26 to 27 |
+| BIG | BIG-02 | 28 |
+| BLK | BLK-01, BLK-02 | 29 to 30 |
+| BOT | BOT-01, BOT-03 | 31 to 32 |
+| BRB | BRB-01 to BRB-05 | 33 to 37 |
+| BVS | BVS-01, BVS-02 | 38 to 39 |
+| CAT | CAT-01 | 40 |
+| CHA | CHA-01, CHA-03 | 41 to 42 |
+| CLK | CLK-02, CLK-04 | 43 to 44 |
+| CLV | CLV-01, CLV-02 | 45 to 46 |
+| COB | COB-03 | 47 |
+| DLK | DLK-01, DLK-03 | 48 to 49 |
+| GAL | GAL-01, GAL-03 to GAL-05 | 50 to 53 |
+| GAM | GAM-01 | 54 |
+| GAN | GAN-01, GAN-02 | 55 to 56 |
+| GAR | GAR-01 | 57 |
 | GDL | GDL-01 to GDL-06 | 58 to 63 |
 | GFS | GFS-07, GFS-08 | 64 to 65 |
 | GLV | GLV-01 | 66 |
@@ -58,6 +76,6 @@ CA-NP-020 does not contain sheets for later additions such as HWD-08, HWD-09, PE
 
 ## Verification
 
-- The page sequence test requires one unique sheet for every physical PDF page from 58 through 169.
+- The page sequence test requires one unique sheet for every physical PDF page from 20 through 169.
 - The asset test requires every JPEG in `public/feeder-maps` to appear in one station record.
 - Visual checks covered the first newly extracted group, a middle group, and the last group.

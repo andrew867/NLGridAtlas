@@ -665,7 +665,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "CA-NP-020, Supply Issues and Power Outages",
     topics: ["distribution feeders", "feeder maps", "outage loads", "Avalon", "central Newfoundland", "west coast", "south coast"],
-    pages: "physical PDF pp. 3 to 18 and 58 to 169",
+    pages: "physical PDF pp. 3 to 18 and 20 to 169",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/CA-NP-020.pdf"
   },
@@ -4984,8 +4984,177 @@ const filedFeederMapProfiles = [
   }
 ];
 
+const earlyFeederMapProfiles = [
+  {
+    code: "ABC",
+    name: "Abrahams Cove",
+    voltage: "66/12.5 kV",
+    handbookPage: "physical PDF p. 11",
+    feederRegister: ["ABC-01", "ABC-02"],
+    mapPages: [["ABC-01", 20], ["ABC-02", 21]],
+    transformerPages: "physical PDF p. 546",
+    transformerFacts: [["ABC-T1", "66/12.5 kV; 13.33 MVA; 5.91 MVA 2026 forecast"]]
+  },
+  {
+    code: "BCV",
+    name: "Broad Cove",
+    voltage: "66/25 kV",
+    handbookPage: "physical PDF pp. 6 and 11",
+    feederRegister: ["BCV-01", "BCV-02", "BCV-03", "BCV-04"],
+    mapPages: [["BCV-01", 22], ["BCV-02", 23], ["BCV-03", 24], ["BCV-04", 25]],
+    connectedCircuits: [{ circuit: "5L", from: "Hardwoods", from_code: "HWD", to: "Broad Cove", to_code: "BCV" }],
+    transformerPages: "physical PDF p. 546",
+    transformerFacts: [["BCV-T1", "66/25 kV; 25 MVA; 19.79 MVA 2026 forecast"]]
+  },
+  {
+    code: "BFS",
+    name: "Bishop's Falls",
+    voltage: "138/25 kV",
+    handbookPage: "physical PDF pp. 8 and 11",
+    feederRegister: ["BFS-01", "BFS-02"],
+    mapPages: [["BFS-01", 26], ["BFS-02", 27]],
+    connectedCircuits: [
+      { circuit: "132L", from: "Grand Falls", from_code: "GFS", to: "Bishop's Falls", to_code: "BFS" },
+      { circuit: "133L", from: "Stony Brook", from_code: "STY", to: "Bishop's Falls", to_code: "BFS" },
+      { circuit: "134L", from: "Bishop's Falls", from_code: "BFS", to: "Botwood", to_code: "BOT" },
+      { circuit: "136L", from: "Cobb's Pond", from_code: "COB", to: "Bishop's Falls", to_code: "BFS" }
+    ],
+    transformerPages: "physical PDF p. 546",
+    transformerFacts: [["BFS-T1", "138/25 kV; 20 MVA; 8.47 MVA 2026 forecast"]]
+  },
+  {
+    code: "BIG",
+    name: "Big Pond",
+    voltage: "66/12.5 kV",
+    handbookPage: "physical PDF pp. 6 and 11",
+    feederRegister: ["BIG-01", "BIG-02"],
+    mapPages: [["BIG-02", 28]],
+    connectedCircuits: [
+      { circuit: "17L", from: "Goulds", from_code: "GOU", to: "Big Pond", to_code: "BIG" },
+      { circuit: "24L", from: "Big Pond", from_code: "BIG", to: "Mobile", to_code: "MOB" }
+    ],
+    transformerPages: "physical PDF p. 546",
+    transformerFacts: [["BIG-T1", "66/12.5 kV; 11.11 MVA; 8.30 MVA 2026 forecast"]]
+  },
+  {
+    code: "BRB",
+    name: "Bay Roberts",
+    voltage: "138/66/12.5 kV",
+    handbookPage: "physical PDF pp. 6 to 7 and 11",
+    feederRegister: ["BRB-01", "BRB-02", "BRB-03", "BRB-04", "BRB-05"],
+    mapPages: [["BRB-01", 33], ["BRB-02", 34], ["BRB-03", 35], ["BRB-04", 36], ["BRB-05", 37]],
+    connectedCircuits: [
+      { circuit: "39L", from: "Duff's", from_code: "DUF", to: "Bay Roberts", to_code: "BRB" },
+      { circuit: "48L", from: "Bay Roberts", from_code: "BRB", to: "Blaketown", to_code: "BLK" },
+      { circuit: "56L", from: "Bay Roberts", from_code: "BRB", to: "Carbonear", to_code: "CAR" },
+      { circuit: "57L", from: "Bay Roberts", from_code: "BRB", to: "Harbour Grace", to_code: "HGR" }
+    ],
+    transformerPages: "physical PDF pp. 546 and 552",
+    transformerFacts: [
+      ["BRB-T1", "138/12.5 kV; 20 MVA; 11.54 MVA 2026 forecast"],
+      ["BRB-T4", "138/12.5 kV; 25 MVA; 13.79 MVA 2026 forecast"],
+      ["BRB-T2 and BRB-T3", "138/66 kV; 41.6 MVA each"]
+    ]
+  },
+  {
+    code: "BVS",
+    name: "Bayview",
+    voltage: "66/12.5 kV",
+    handbookPage: "physical PDF pp. 9 and 11",
+    feederRegister: ["BVS-01", "BVS-02", "BVS-03", "BVS-04"],
+    mapPages: [["BVS-01", 38], ["BVS-02", 39]],
+    connectedCircuits: [
+      { circuit: "357L", from: "Massey Drive", from_code: "MAS", to: "Bayview", to_code: "BVS" },
+      { circuit: "358L", from: "Bayview", from_code: "BVS", to: "Gillams", to_code: "GIL" },
+      { circuit: "359L", from: "Humber", from_code: "HUM", to: "Bayview", to_code: "BVS" }
+    ],
+    transformerPages: "physical PDF p. 546",
+    transformerFacts: [
+      ["BVS-T1", "66/12.5 kV; 20 MVA; 15.35 MVA 2026 forecast"],
+      ["BVS-T2", "66/12.5 kV; 15 MVA; 9.56 MVA 2026 forecast"]
+    ]
+  },
+  {
+    code: "CHA",
+    name: "Chamberlains",
+    voltage: "66/25 kV",
+    handbookPage: "physical PDF pp. 7 and 11",
+    feederRegister: ["CHA-01", "CHA-02", "CHA-03"],
+    mapPages: [["CHA-01", 41], ["CHA-03", 42]],
+    connectedCircuits: [
+      { circuit: "49L", from: "Hardwoods", from_code: "HWD", to: "Chamberlains", to_code: "CHA" },
+      { circuit: "51L", from: "Chamberlains", from_code: "CHA", to: "Kelligrews", to_code: "KEL" },
+      { circuit: "79L", from: "Hardwoods", from_code: "HWD", to: "Chamberlains", to_code: "CHA" }
+    ],
+    transformerPages: "physical PDF p. 546",
+    transformerFacts: [
+      ["CHA-T1", "66/25 kV; 50 MVA; 35.34 MVA 2026 forecast"],
+      ["CHA-T2", "66/25 kV; 25 MVA; 17.02 MVA 2026 forecast"]
+    ]
+  },
+  {
+    code: "COB",
+    name: "Cobb's Pond",
+    voltage: "138/66/12.5 kV",
+    handbookPage: "physical PDF pp. 8 and 11",
+    feederRegister: ["COB-01", "COB-02", "COB-03"],
+    mapPages: [["COB-03", 47]],
+    connectedCircuits: [
+      { circuit: "136L", from: "Cobb's Pond", from_code: "COB", to: "Bishop's Falls", to_code: "BFS" },
+      { circuit: "142L", from: "Cobb's Pond", from_code: "COB", to: "Clarke's Head Tap", to_code: null },
+      { circuit: "144L", from: "Cobb's Pond", from_code: "COB", to: "Gander", to_code: "GAN" }
+    ],
+    transformerPages: "physical PDF pp. 546 and 553",
+    transformerFacts: [
+      ["COB-T1", "138/12.5 kV; 20 MVA; 15.15 MVA 2026 forecast"],
+      ["COB-T3", "138/12.5 kV; 25 MVA; 19.22 MVA 2026 forecast"],
+      ["COB-T2", "138/66 kV; 41.6 MVA"]
+    ]
+  },
+  {
+    code: "DLK",
+    name: "Deer Lake Distribution Substation",
+    voltage: "66/25 kV",
+    handbookPage: "physical PDF p. 12",
+    feederRegister: ["DLK-01", "DLK-03", "DLK-04"],
+    mapPages: [["DLK-01", 48], ["DLK-03", 49]],
+    transformerPages: "physical PDF p. 547",
+    transformerFacts: [["DLK-T1", "66/25 kV; 25 MVA; 22.14 MVA 2026 forecast"]]
+  },
+  {
+    code: "GAR",
+    name: "Garnish",
+    voltage: "66/12.5 kV",
+    handbookPage: "physical PDF p. 12",
+    feederRegister: ["GAR-01"],
+    mapPages: [["GAR-01", 57]],
+    transformerPages: "physical PDF p. 547",
+    transformerFacts: [["GAR-T1", "66/12.5 kV; 3.72 MVA; 2.37 MVA 2026 forecast"]]
+  }
+].map((station) => ({
+  ...station,
+  circuitRegisterLabel: "2005 TRANSMISSION REGISTER",
+  ...(station.connectedCircuits ? { circuitSource: { sourceId: "np-2006-handbook", pages: station.handbookPage } } : {}),
+  feederRegisterLabel: "2005 FEEDER REGISTER",
+  eventLoads: [],
+  engineeringRecord: {
+    date: "2005 REGISTER",
+    title: `${station.name} feeder and circuit record`,
+    sourceId: "np-2006-handbook",
+    pages: station.handbookPage,
+    facts: [["Registered feeders", station.feederRegister.join(", ")]]
+  },
+  planningRecord: {
+    label: "2027 TRANSFORMER REGISTER",
+    sourceId: "np-2027-transformers",
+    pages: station.transformerPages,
+    facts: station.transformerFacts
+  }
+}));
+
 export const stationProfiles = [
   ...filedFeederMapProfiles,
+  ...earlyFeederMapProfiles,
   {
     code: "GBS",
     name: "Grand Bay",
@@ -5325,7 +5494,7 @@ export const stationProfiles = [
     ],
     feederRegisterLabel: "2015 STATION RECORD",
     feederRegister: ["GAN-01", "GAN-02", "GAN-03", "GAN-04"],
-    mapPages: [],
+    mapPages: [["GAN-01", 55], ["GAN-02", 56]],
     eventLoads: [],
     diagram: {
       label: "2015 equipment / 2025 existing connections",
@@ -5395,7 +5564,7 @@ export const stationProfiles = [
     ],
     feederRegisterLabel: "2005 FEEDER REGISTER",
     feederRegister: ["BLK-01", "BLK-02"],
-    mapPages: [],
+    mapPages: [["BLK-01", 29], ["BLK-02", 30]],
     eventLoads: [],
     diagram: {
       label: "2007 circuits / 2026 equipment",
@@ -5720,7 +5889,7 @@ export const stationProfiles = [
     ],
     feederRegisterLabel: "2020 STATION RECORD",
     feederRegister: ["CLK-02", "CLK-03", "CLK-04"],
-    mapPages: [],
+    mapPages: [["CLK-02", 43], ["CLK-04", 44]],
     eventLoads: [],
     diagram: {
       label: "2020 documented arrangement / 2026 ratings",
@@ -5844,7 +6013,7 @@ export const stationProfiles = [
     ],
     feederRegisterLabel: "2023 STATION RECORD",
     feederRegister: ["GAM-01", "GAM-02"],
-    mapPages: [],
+    mapPages: [["GAM-01", 54]],
     eventLoads: [],
     diagram: {
       label: "2023 filed logical connection / 2024 commissioning record",
@@ -6303,7 +6472,7 @@ export const stationProfiles = [
     ],
     feederRegisterLabel: "2016 STATION RECORD",
     feederRegister: ["CAT-01", "CAT-02", "CAT-03"],
-    mapPages: [],
+    mapPages: [["CAT-01", 40]],
     eventLoads: [],
     diagram: {
       label: "2016 equipment / 2025 circuits / 2027 transformer register",
@@ -6433,7 +6602,7 @@ export const stationProfiles = [
     ],
     feederRegisterLabel: "2014 STATION RECORD",
     feederRegister: ["CLV-01", "CLV-02", "CLV-03"],
-    mapPages: [],
+    mapPages: [["CLV-01", 45], ["CLV-02", 46]],
     eventLoads: [],
     diagram: {
       label: "2025 circuits / 2027 transformer register",
@@ -7817,7 +7986,7 @@ export const stationProfiles = [
     ],
     feederRegisterLabel: "2010 STATION RECORD",
     feederRegister: ["BOT-01", "BOT-02", "BOT-03"],
-    mapPages: [],
+    mapPages: [["BOT-01", 31], ["BOT-03", 32]],
     eventLoads: [],
     diagram: {
       label: "2010 documented arrangement / 2026 rating",
@@ -7961,7 +8130,7 @@ export const stationProfiles = [
     ],
     feederRegisterLabel: "2005 FEEDER REGISTER",
     feederRegister: ["GAL-01", "GAL-03", "GAL-04", "GAL-05"],
-    mapPages: [],
+    mapPages: [["GAL-01", 50], ["GAL-03", 51], ["GAL-04", 52], ["GAL-05", 53]],
     eventLoads: [],
     diagram: {
       label: "2010 documented arrangement / 2026 ratings",
