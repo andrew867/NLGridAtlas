@@ -134,8 +134,8 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "ABC-T1", "GAR-T1", "301L", "substation rebuild", "asset history"],
-    pages: "physical PDF pp. 166, 196, 201, 203 to 204 and 277",
+    topics: ["Abrahams Cove", "Garnish", "Pitmans Pond", "ABC-T1", "GAR-T1", "PIT-T1", "301L", "substation rebuild", "asset history"],
+    pages: "physical PDF pp. 166, 196, 201, 203 to 204, 207 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
@@ -1795,7 +1795,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
     topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 328, 330, 371 to 376, 421, 427, 484 to 487 and 500 to 502",
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 484 to 487 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1834,7 +1834,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "NP-NLH-168 Attachment 1, Newfoundland Power Generation Capacity Tests",
-    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Morris", "MRP-G1", "New Chelsea", "NCH-G1", "Petty Harbour", "PHR-T1", "Pierre's Brook", "PBK-G1", "Rocky Pond", "ROP-G1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
+    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Morris", "MRP-G1", "New Chelsea", "NCH-G1", "Pitmans Pond", "PIT-G1", "Petty Harbour", "PHR-T1", "Pierre's Brook", "PBK-G1", "Rocky Pond", "ROP-G1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
     pages: "physical PDF pp. 2 to 3",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/NP-NLH-168.PDF"
@@ -1858,6 +1858,36 @@ export const sources = [
     pages: "physical PDF p. 767",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-163.pdf"
+  },
+  {
+    id: "np-2013-pitmans-pond",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, Pitmans Pond Hydro Plant Refurbishment",
+    topics: ["Pitmans Pond", "PIT", "NCH-03", "hydroelectric generation", "induction generator", "turbine runner", "plant controls", "switchgear", "gate positioner"],
+    pages: "physical PDF pp. 28 and 229 to 239",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2013-pitmans-system",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, New Chelsea and Pitmans Pond Development Record",
+    topics: ["New Chelsea", "Pitmans Pond", "NCH-03", "12.5 kV", "2.4 kV", "hydroelectric generation", "substation", "transmission line"],
+    pages: "physical PDF p. 172",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-2022-hydro-normal",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2020 Hydro Normal Production Review, filed 2022",
+    topics: ["hydroelectric generation", "Pitmans Pond", "turbine runner", "plant controls", "switchgear", "gate positioner", "heating and ventilation", "normal production"],
+    pages: "physical PDF pp. 17 and 20",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/hydroelectricproduction/From%20NP%20-%20Normal%20Hydroelectric%20Production%20for%202022%20-%202022-02-01.PDF"
   },
   {
     id: "np-2022-tors-cove",
@@ -11001,6 +11031,107 @@ export const stationProfiles = [
           ["Metered point", "NCH-G1-I"],
           ["15-minute values shown", "3,583 to 4,144 kW"],
           ["Highest interval shown", "4,144 kW at the 1030 Island Time interval"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "PIT",
+    name: "Pitmans Pond",
+    voltage: "12.5/2.4 kV in 2013 development record",
+    circuitRegisterLabel: "2013 DEVELOPMENT RECORD",
+    circuitSource: { sourceId: "np-2013-pitmans-system", pages: "physical PDF p. 172" },
+    connectedCircuits: [
+      { circuit: "NCH-03", from: "New Chelsea", from_code: "NCH", to: "Pitmans Pond", to_code: "PIT" }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2013 documented bus arrangement with 2027 transformer-bank sizes",
+      buses: [
+        { id: "b1", label: "NCH-03 connection", voltage: "12.5 kV" },
+        { id: "b2", label: "generator bus in 2013 record", voltage: "2.4 kV" }
+      ],
+      transformers: [
+        { label: "PIT-T1-A", rating: "0.33 MVA", from: "b2", to: "b1" },
+        { label: "PIT-T1-B", rating: "0.33 MVA", from: "b2", to: "b1" },
+        { label: "PIT-T1-C", rating: "0.33 MVA", from: "b2", to: "b1" }
+      ],
+      circuits: [
+        { label: "NCH-03", destination: "New Chelsea", bus: "b1", destinationCode: "NCH" }
+      ],
+      generators: [{ label: "G1", rating: "1,000 kVA induction, 85% PF", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2012 ENGINEERING REPORT",
+      title: "Pitmans Pond hydro generation station",
+      sourceId: "np-2013-pitmans-pond",
+      pages: "physical PDF p. 230",
+      facts: [
+        ["Plant", "commissioned in 1959; 625 kW under approximately 21.3 m net head"],
+        ["Turbine", "single horizontal 1,200 hp Francis turbine manufactured by Gilkes"],
+        ["Generator", "Westinghouse 1,000 kVA induction generator; 85% power factor; 850 kW load rating"],
+        ["Grid connection", "NCH-03, a 12.5 kV distribution feeder to New Chelsea Substation"],
+        ["Normal production", "2.8 GWh per year in the 2012 engineering report"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 552",
+      facts: [
+        ["PIT-T1-A", "generation transformer; 12.5/4.2 kV; 0.33 MVA"],
+        ["PIT-T1-B", "generation transformer; 12.5/4.2 kV; 0.33 MVA"],
+        ["PIT-T1-C", "generation transformer; 12.5/4.2 kV; 0.33 MVA"],
+        ["Published voltage difference", "the 2013 development and plant records identify the generator bus as 2.4 kV; the 2027 fleet table lists the transformer low side as 4.2 kV"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2005 REPORTED TRANSFORMER FAILURE WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 207",
+        facts: [
+          ["Transformer", "failed unit replaced with spare equipment"],
+          ["Bus", "bus structure replaced"]
+        ]
+      },
+      {
+        label: "2013 FILED PLANT REFURBISHMENT",
+        sourceId: "np-2013-pitmans-pond",
+        pages: "physical PDF pp. 28, 231 and 238 to 239",
+        facts: [
+          ["Turbine and gate control", "high-efficiency stainless-steel runner and PLC-based digital gate positioner"],
+          ["Electrical work", "neutral grounding transformer and resistor, automatic stator-insulation monitoring, instrument-transformer replacement, AC and DC panels, digital generator protection, and new unit-control panel"],
+          ["Controls", "plant PLC, HMI, data concentrator, Water Management System integrated with New Chelsea, and remote monitoring and control from New Chelsea"],
+          ["Filed project cost", "$1.35 million, including $875,000 plant refurbishment and $475,000 runner replacement"]
+        ]
+      },
+      {
+        label: "2013 REPORTED INSTALLED UPGRADES",
+        sourceId: "np-2022-hydro-normal",
+        pages: "physical PDF p. 17",
+        facts: [
+          ["Installed work", "runner, protection and control panels, switchgear, gate positioner, heating and ventilation equipment, and plant electrical wiring"],
+          ["Later model update", "installed capacity increased from 640 kW to 700 kW and peak unit efficiency from 0.71 to 0.73 in the 2020 review"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 379",
+        facts: [["Transformer bank", "PIT-T1, asset 201054"]]
+      },
+      {
+        label: "MARCH 18, 2025 CAPACITY TEST",
+        sourceId: "np-2026-generation-capacity-test",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Metered point", "PIT-G1-I"],
+          ["15-minute values shown", "673 to 674 kW"],
+          ["Highest value shown", "674 kW"]
         ]
       }
     ]

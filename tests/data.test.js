@@ -1950,6 +1950,37 @@ test("New Chelsea joins the Heart's Content and Old Perlican corridor to generat
   assert.match(historyFacts, /4,144 kW at the 1030 Island Time interval/);
 });
 
+test("Pitmans Pond connects its induction generator to New Chelsea through NCH-03", () => {
+  const pitmans = stationProfiles.find((station) => station.code === "PIT");
+  assert.ok(pitmans);
+  assert.deepEqual(pitmans.connectedCircuits, [
+    { circuit: "NCH-03", from: "New Chelsea", from_code: "NCH", to: "Pitmans Pond", to_code: "PIT" }
+  ]);
+  assert.deepEqual(pitmans.diagram.buses.map(({ voltage }) => voltage), ["12.5 kV", "2.4 kV"]);
+  assert.deepEqual(pitmans.diagram.transformers.map(({ label, rating }) => [label, rating]), [
+    ["PIT-T1-A", "0.33 MVA"],
+    ["PIT-T1-B", "0.33 MVA"],
+    ["PIT-T1-C", "0.33 MVA"]
+  ]);
+  assert.deepEqual(pitmans.diagram.generators.map(({ label, rating }) => [label, rating]), [
+    ["G1", "1,000 kVA induction, 85% PF"]
+  ]);
+  const plantFacts = pitmans.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = pitmans.planningRecord.facts.flat().join(" ");
+  const historyFacts = pitmans.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /625 kW under approximately 21\.3 m net head/);
+  assert.match(plantFacts, /850 kW load rating/);
+  assert.match(plantFacts, /NCH-03, a 12\.5 kV distribution feeder/);
+  assert.match(planningFacts, /PIT-T1-A.*12\.5\/4\.2 kV.*0\.33 MVA/);
+  assert.match(planningFacts, /2013 development and plant records identify the generator bus as 2\.4 kV/);
+  assert.match(historyFacts, /failed unit replaced with spare equipment/);
+  assert.match(historyFacts, /PLC-based digital gate positioner/);
+  assert.match(historyFacts, /remote monitoring and control from New Chelsea/);
+  assert.match(historyFacts, /installed capacity increased from 640 kW to 700 kW/);
+  assert.match(historyFacts, /PIT-T1, asset 201054/);
+  assert.match(historyFacts, /673 to 674 kW/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");
