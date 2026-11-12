@@ -936,6 +936,25 @@ test("Trinity preserves the 116L tap control and the 2020 transformer failure", 
   assert.match(historyFacts, /isolated to Trinity Substation customers/);
 });
 
+test("Hare Bay joins 115L and 116L with the reported distribution transfer", () => {
+  const hareBay = stationProfiles.find((station) => station.code === "HBS");
+  const trinity = stationProfiles.find((station) => station.code === "TRN");
+  assert.ok(hareBay);
+  assert.deepEqual(hareBay.connectedCircuits.map(({ circuit }) => circuit), ["115L", "116L"]);
+  assert.deepEqual(hareBay.feederRegister, ["HBS-01", "HBS-02"]);
+  assert.deepEqual(hareBay.diagram.transformers.map(({ label, rating }) => [label, rating]), [["HBS-T1", "6.67 MVA"]]);
+  assert.deepEqual(hareBay.diagram.circuits.map(({ label, destination }) => [label, destination]), [["115L", "Gambo"], ["116L", "Wesleyville"]]);
+  assert.deepEqual(trinity.diagram.circuits.map(({ label, destination }) => [label, destination]), [["116L tap", "Hare Bay"], ["116L tap", "Wesleyville"]]);
+  const existingFacts = hareBay.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = hareBay.planningRecord.facts.flat().join(" ");
+  const reliabilityFacts = hareBay.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /approximately 1.1 MVA can be transferred from HBS-01 to GAM-01/);
+  assert.match(existingFacts, /837 in December 2025/);
+  assert.match(planningFacts, /66\/25 kV; 6.67 MVA; 4.02 MVA 2026 forecast/);
+  assert.match(reliabilityFacts, /T-SAIDI 2.88; corporate average 0.62/);
+  assert.match(reliabilityFacts, /T-SAIFI 3.49; corporate average 0.49/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

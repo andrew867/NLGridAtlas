@@ -680,6 +680,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
   {
+    id: "np-2027-wesleyville-study",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "Wesleyville and Greenhill Planning Study, Gambo to Wesleyville 66 kV System",
+    topics: ["Gambo", "Hare Bay", "Trinity", "Greenspond", "Wesleyville", "115L", "116L", "66 kV", "reliability", "load forecast"],
+    pages: "physical PDF pp. 158 to 160",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
     id: "np-2027-transformers",
     year: 2026,
     organization: "Newfoundland Power",
@@ -3524,7 +3534,60 @@ const filedFeederMapProfiles = [
     ]
   },
   { code: "GRH", mapPages: [["GRH-03", 70]] },
-  { code: "HBS", mapPages: [["HBS-02", 73]] },
+  {
+    code: "HBS",
+    name: "Hare Bay",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2026 REPORTED RADIAL CONNECTION",
+    circuitSource: { sourceId: "np-2027-wesleyville-study", pages: "physical PDF pp. 158 to 160" },
+    connectedCircuits: [
+      { circuit: "115L", from: "Gambo", from_code: "GAM", to: "Hare Bay", to_code: "HBS" },
+      { circuit: "116L", from: "Hare Bay", from_code: "HBS", to: "Wesleyville", to_code: "WES" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["HBS-01", "HBS-02"],
+    mapPages: [["HBS-02", 73]],
+    eventLoads: [],
+    diagram: {
+      label: "2026 reported logical arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "HBS-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "115L", destination: "Gambo", bus: "b1", destinationCode: "GAM" }, { label: "116L", destination: "Wesleyville", bus: "b1", destinationCode: "WES" }]
+    },
+    engineeringRecord: {
+      date: "DECEMBER 2025 CUSTOMER RECORD / 2026 FILED STUDY",
+      title: "Hare Bay series connection on the Gambo to Wesleyville radial system",
+      sourceId: "np-2027-wesleyville-study",
+      pages: "physical PDF pp. 158 to 160",
+      facts: [
+        ["115L", "approximately 21 km from Gambo to Hare Bay"],
+        ["116L", "approximately 62 km from Hare Bay to Wesleyville; supplies Trinity and Greenspond taps"],
+        ["Hare Bay customers", "837 in December 2025"],
+        ["Distribution transfer", "approximately 1.1 MVA can be transferred from HBS-01 to GAM-01 during peak events"],
+        ["Transmission switching", "no transmission line breakers at Hare Bay; manual switches can isolate line sections"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["HBS-T1", "66/25 kV; 6.67 MVA; 4.02 MVA 2026 forecast"],
+        ["2030 station demand forecast", "4.0 MVA in the Wesleyville and Greenhill Planning Study"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2021 TO 2025 TRANSMISSION-SUPPLY RELIABILITY",
+        sourceId: "np-2027-wesleyville-study",
+        pages: "physical PDF p. 160",
+        facts: [
+          ["HBS-TRN-GPD-WES T-SAIDI", "2.88; corporate average 0.62"],
+          ["HBS-TRN-GPD-WES T-SAIFI", "3.49; corporate average 0.49"]
+        ]
+      }
+    ]
+  },
   { code: "HGR", mapPages: [["HGR-01", 74]] },
   { code: "HUM", mapPages: [["HUM-01", 77], ["HUM-08", 78], ["HUM-09", 79]] },
   { code: "ILC", mapPages: [["ILC-01", 86], ["ILC-02", 87]] },
@@ -3553,7 +3616,7 @@ const filedFeederMapProfiles = [
       label: "2025 filed logical tap arrangement",
       buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
       transformers: [{ label: "TRN-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
-      circuits: [{ label: "116L tap", destination: "Hare Bay to Wesleyville radial line", bus: "b1", link: false }]
+      circuits: [{ label: "116L tap", destination: "Hare Bay", bus: "b1", destinationCode: "HBS" }, { label: "116L tap", destination: "Wesleyville", bus: "b1", destinationCode: "WES" }]
     },
     engineeringRecord: {
       date: "2005 FILED OPERATING RECORD",
