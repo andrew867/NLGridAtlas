@@ -892,6 +892,7 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.match(components["hrd-summary"].data.flat().join(" "), /SST34 feed 66 kV underground cable replacement completed in 2019/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /38L supply.*1.5 MVA.*69-2.4\/4.16 kV/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /lower-cost Newfoundland Power supply connection/);
+  assert.match(components["hrd-summary"].data.flat().join(" "), /292\.827 million capital.*330\.915 million operating.*623\.742 million total/);
   assert.match(components["wav-summary"].data.flat().join(" "), /Replacement began in 2019/);
   assert.match(components["hwd-summary"].data.flat().join(" "), /T5 45\/60\/75 MVA, 66\/13.8 kV/);
   assert.match(components["hwd-g1"].data.flat().join(" "), /2026 study model 25 MW/);
