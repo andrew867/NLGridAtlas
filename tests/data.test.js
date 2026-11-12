@@ -889,6 +889,32 @@ test("Notre Dame Junction stays historical until a completion record establishes
   assert.deepEqual(notreDameJunction.referenceSheets.map(({ image }) => image), ["./reference-maps/ndj-2018-central-system.png"]);
 });
 
+test("Glenwood separates the installed TL210 station from the studied 147L tap", () => {
+  const glenwood = stationProfiles.find((station) => station.code === "GLN");
+  assert.ok(glenwood);
+  assert.equal(glenwood.voltage, "138/25 kV");
+  assert.deepEqual(glenwood.connectedCircuits.map(({ circuit }) => circuit), ["TL210", "TL210"]);
+  assert.deepEqual(glenwood.connectedCircuits.map(({ from_code, to_code }) => [from_code, to_code]), [["STB", "GLN"], ["GLN", "COB"]]);
+  assert.deepEqual(glenwood.feederRegister, ["GLN-01"]);
+  assert.doesNotMatch(glenwood.connectedCircuits.map(({ circuit }) => circuit).join(" "), /147L/);
+
+  const existingFacts = glenwood.engineeringRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /built in 1968/);
+  assert.match(existingFacts, /138\/25 kV; 8\.3 MVA/);
+  assert.match(existingFacts, /GLN-01; 707 customers/);
+  assert.match(glenwood.planningRecord.facts.flat().join(" "), /8\.34 MVA; 3\.82 MVA 2026 forecast/);
+
+  const completion = glenwood.historyRecords.find((record) => record.label === "Q3 2013 REPORTED COMPLETION");
+  assert.equal(completion.sourceId, "np-2013-q3-report");
+  assert.match(completion.facts.flat().join(" "), /construction complete in the third quarter of 2013/);
+
+  const study = glenwood.historyRecords.find((record) => record.label === "2026 CENTRAL LOOP STUDY");
+  const studyFacts = study.facts.flat().join(" ");
+  assert.match(studyFacts, /1 km tap from 147L/);
+  assert.match(studyFacts, /not required to maintain voltage levels/);
+  assert.deepEqual(glenwood.referenceSheets.map(({ image }) => image), ["./reference-maps/gln-2026-study-area.png"]);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);

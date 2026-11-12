@@ -128,6 +128,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2025 Lewisporte record identifies the successor 138 kV supplies as 137L from Rattling Brook and 147L from Cobb's Pond. It identifies the remaining 102L section as the Gander to Roycefield supply, physical PDF p. 66.
 - [ ] Do not record Notre Dame Junction removal as completed until a direct completion or as-built record confirms it.
 
+## Glenwood station record
+
+- [x] The 2012 filing records Glenwood as a 1968 transmission and distribution station with two Hydro TL210 links, one 8.3 MVA 138/25 kV transformer, a voltage-regulator bank, a 25 kV bus, GLN-01 and 707 customers, physical PDF p. 272.
+- [x] The filed 2013 modernization included GLN-T1 refurbishment, replacement of silicon-carbide arresters, the 138 kV transformer switch and high-speed ground switch, digital transformer protection, a new control building, 25 kV potential transformers, relocation of the voltage-regulator bank and ground-grid work, physical PDF pp. 273 to 274.
+- [x] Newfoundland Power reported Glenwood construction complete in the third quarter of 2013, physical PDF p. 767.
+- [x] The March 2014 inspection register identifies station 005923, station-service meter 371224, GLN-T1 meter 96 with a 7.20 multiplier, and battery asset 100201, physical PDF pp. 154 to 155.
+- [x] The 2027 transformer register lists GLN-T1 at 138/25 kV and 8.34 MVA, with a 3.82 MVA 2026 forecast, physical PDF p. 547.
+- [x] The 2026 Central loop study lists Glenwood as a joint Hydro and Newfoundland Power terminal station and substation. It describes TL210 as the Hydro 138 kV line between Stony Brook, Glenwood and Cobb's Pond, physical PDF pp. 181 and 200.
+- [x] The same study assumed a 1 km, 559.5 kcmil Darien AAAC tap from 147L to Glenwood. Its sensitivity analysis found that the tap had little effect on voltage and was not required to maintain voltage levels, physical PDF pp. 217 and 228.
+- [ ] Do not draw 147L as an installed Glenwood connection without a later as-built or operating record. It is a study assumption in the located filing.
+
 ## Blaketown station record
 
 - [x] The 2027 station report records two incoming 138 kV lines, four outgoing 66 kV lines, BLK-T3 at 25/33.3/41.6 MVA, BLK-T2 at 15/20 MVA, two 25 kV feeders, approximately 4,090 local customers, and approximately 5,970 customers on radial lines 55L and 94L, physical PDF pp. 422 to 425.

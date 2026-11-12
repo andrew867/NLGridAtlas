@@ -121,6 +121,7 @@ Updated: 2026-11-12
 - Added Jonathan's Pond as the documented 108L tap, with its 0.33 MVA JON-T1 record, March 2014 asset record, 2022 refurbishment, separate dated 7.2 kV and 12.5 kV register entries, and the proposed COB-02 extension and station retirement route.
 - Added Roycefield Tap as the filed 66 kV switching point between 102L and the 40 km 104L mine supply, with its 2014 breaker record, current isolating-switch arrangement, ownership and customer-contribution record, asset costs, and filed single-line.
 - Added Notre Dame Junction as a historical 66 kV switching junction with the filed 102L and 103L sections, 2014 inspection assets, the 2018 replacement study, the conditional 2020 removal approval, current successor connections, and the filed Central Newfoundland system map. No public completion record was located for the station removal.
+- Added Glenwood as the joint Hydro and Newfoundland Power 138/25 kV station on TL210, with its 1968 station history, GLN-T1, GLN-01, completed 2013 modernization, 2014 inspection record, current transformer listing and Central network map. The 147L tap remains identified only as a 2026 study assumption.
 
 ## Active work
 

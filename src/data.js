@@ -200,6 +200,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-163.pdf"
   },
   {
+    id: "np-2013-glenwood",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, Glenwood Substation Refurbishment and Modernization",
+    topics: ["Glenwood", "GLN-T1", "GLN-01", "TL210", "138 kV", "25 kV", "voltage regulators", "substation modernization"],
+    pages: "physical PDF pp. 272 to 274",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
     id: "np-2013-twillingate",
     year: 2012,
     organization: "Newfoundland Power",
@@ -836,7 +846,7 @@ export const sources = [
     title: "2027 Supplemental Capital Application, Wesleyville Thermal Generation Facility Refurbishment",
     topics: ["Wesleyville", "WES CTG", "WES-T2", "combustion turbine", "66 kV", "thermal generation", "synchronous condenser"],
     pages: "physical PDF pp. 24 to 28",
-    status: "proposed",
+    status: "reported",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
   {
@@ -1524,8 +1534,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138, 148 to 152, 235, 427 and 484 to 487",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138, 148 to 155, 235, 427 and 484 to 487",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1966,6 +1976,16 @@ export const sources = [
     title: "Thermal Generation Fleet Review, Overview",
     topics: ["Port aux Basques", "Grand Bay", "Greenhill", "Wesleyville", "diesel engine generator", "combustion turbine generator", "417L", "PAB-03", "PAB-05"],
     pages: "physical PDF p. 89",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
+    id: "np-2027-central-loop-study",
+    year: 2026,
+    organization: "Newfoundland Power / Newfoundland and Labrador Hydro",
+    title: "Wesleyville and Greenhill Planning Study, Central 138 kV Network and Glenwood Sensitivity",
+    topics: ["Glenwood", "GLN", "TL210", "147L", "Stony Brook", "Cobb's Pond", "138 kV", "transmission planning", "sensitivity analysis"],
+    pages: "physical PDF pp. 181, 183, 200, 217, 219, 221, 223 and 228",
     status: "reported",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
@@ -6721,6 +6741,106 @@ export const stationProfiles = [
         alt: "Filed 2018 Central Newfoundland map showing 102L through Notre Dame Junction and 103L to Lewisporte",
         sourceId: "np-2025-ca-np-121-central",
         pages: "physical PDF p. 6"
+      }
+    ]
+  },
+  {
+    code: "GLN",
+    name: "Glenwood",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2026 FILED CENTRAL NETWORK",
+    circuitSource: { sourceId: "np-2027-central-loop-study", pages: "physical PDF pp. 181, 183 and 200" },
+    connectedCircuits: [
+      { circuit: "TL210", from: "Stony Brook", from_code: "STB", to: "Glenwood", to_code: "GLN" },
+      { circuit: "TL210", from: "Glenwood", from_code: "GLN", to: "Cobb's Pond", to_code: "COB" }
+    ],
+    feederRegisterLabel: "2012 FILED STATION ARRANGEMENT",
+    feederRegister: ["GLN-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2012 filed arrangement with 2026 transformer rating",
+      buses: [
+        { id: "b1", label: "138 kV bus", voltage: "138 kV" },
+        { id: "b2", label: "25 kV bus", voltage: "25 kV" }
+      ],
+      transformers: [{ label: "GLN-T1", rating: "8.34 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "TL210", destination: "Stony Brook", bus: "b1", destinationCode: "STB" },
+        { label: "TL210", destination: "Cobb's Pond", bus: "b1", destinationCode: "COB" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2012 FILED STATION ARRANGEMENT",
+      title: "Glenwood transmission and distribution station",
+      sourceId: "np-2013-glenwood",
+      pages: "physical PDF pp. 272 to 274",
+      facts: [
+        ["Station", "built in 1968; transmission and distribution functions"],
+        ["138 kV connections", "two Hydro TL210 links, one toward Cobb's Pond and one toward Stony Brook"],
+        ["GLN-T1", "138/25 kV; 8.3 MVA in the 2012 filing; feeds a voltage-regulator bank and 25 kV bus"],
+        ["Distribution", "GLN-01; 707 customers in the Glenwood area in the 2012 filing"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["GLN-T1", "138/25 kV; 8.34 MVA; 3.82 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2013 FILED REFURBISHMENT AND MODERNIZATION",
+        sourceId: "np-2013-glenwood",
+        pages: "physical PDF pp. 273 to 274",
+        facts: [
+          ["Transformer", "refurbish GLN-T1 and replace silicon-carbide lightning arresters with metal-oxide units"],
+          ["138 kV equipment", "replace the motorized air-break switch and high-speed ground switch for GLN-T1"],
+          ["Protection and control", "install microprocessor transformer protection in a new control building"],
+          ["25 kV equipment", "install potential transformers and relocate the voltage-regulator bank outside the station fence"],
+          ["Site", "complete a grounding study, extend the ground grid, add an access gate and add crushed stone"]
+        ]
+      },
+      {
+        label: "Q3 2013 REPORTED COMPLETION",
+        sourceId: "np-2013-q3-report",
+        pages: "physical PDF p. 767",
+        facts: [
+          ["Project status", "Newfoundland Power reported Glenwood construction complete in the third quarter of 2013"]
+        ]
+      },
+      {
+        label: "MARCH 2014 INSPECTION REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 154 to 155",
+        facts: [
+          ["Station number", "005923"],
+          ["Recorded equipment", "station-service meter 371224, GLN-T1 meter 96 with 7.20 multiplier, and battery asset 100201"]
+        ]
+      },
+      {
+        label: "2026 CENTRAL LOOP STUDY",
+        sourceId: "np-2027-central-loop-study",
+        pages: "physical PDF pp. 181, 200, 217, 219, 221, 223 and 228",
+        facts: [
+          ["Ownership record", "Glenwood is listed as a joint Hydro and Newfoundland Power terminal station and substation"],
+          ["Existing TL210", "138 kV Hydro line between Stony Brook, Glenwood and Cobb's Pond"],
+          ["Studied 147L tap", "each option assumed a 1 km tap from 147L to Glenwood using 559.5 kcmil Darien AAAC"],
+          ["Sensitivity result", "the study found the 147L tap had little effect on system voltages and was not required to maintain voltage levels"],
+          ["Studied TL210 reinforcement", "parallel 138 kV sections from Stony Brook to Glenwood and Glenwood toward Gander were recommended for the modelled loop violations"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED 2026 CENTRAL NETWORK MAP",
+    referenceSheets: [
+      {
+        title: "Central and eastern island transmission study area",
+        image: "./reference-maps/gln-2026-study-area.png",
+        alt: "Filed transmission study map showing Glenwood on Hydro TL210 and Newfoundland Power 147L passing north of the station",
+        sourceId: "np-2027-central-loop-study",
+        pages: "physical PDF p. 183"
       }
     ]
   },
