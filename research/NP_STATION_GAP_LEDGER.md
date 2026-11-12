@@ -44,6 +44,15 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] 300L connects Linton Lake and Marystown, 2026 Burin Peninsula study, physical PDF p. 162.
 - [x] The 2002 engineering review dates TL212 to 1966, the 300L and 308L rebuilds to 1982, and TL219 completion to late 1990, physical PDF pp. 4 to 5.
 
+## Baie Verte Junction and Seal Cove Road station records
+
+- [x] Baie Verte Junction is part of a jointly owned substation with Hydro's Indian River Substation, 2018 Capital Budget Application, physical PDF p. 242.
+- [x] 363L is the radial 138 kV circuit from Baie Verte Junction to Seal Cove Road, physical PDF pp. 126 and 242.
+- [x] The 2018 filing records approximately 62 km of original 1963 construction, 478 H-frame structures, and non-standard 266.8 ACSR conductor; the filing also identifies 363L as the only supply to Newfoundland Power and Hydro customers on the Baie Verte Peninsula, physical PDF p. 242.
+- [x] PUB-NP-034 records the 363L rebuild as completed in 2020, physical PDF p. 1.
+- [x] Order P.U. 30 (2020) approved removal of the former 7.7 km extension from Seal Cove Road to the abandoned asbestos mine after the active 363L rebuild, physical PDF pp. 1 to 2.
+- [x] The 2027 transformer register records BVJ-T1 at 138/25 kV, 2.67 MVA, with a 0.29 MVA 2026 forecast, and SCR-T1 at 138/25 kV, 8.3 MVA, with a 5.97 MVA forecast, physical PDF pp. 546 and 550.
+
 ## Avalon stations
 
 | State | Station or system | Data now in the atlas | Missing evidence | Next archive target |

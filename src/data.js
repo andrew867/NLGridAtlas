@@ -180,6 +180,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf"
   },
   {
+    id: "np-2018-363l",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, Transmission Line 363L Rebuild",
+    topics: ["363L", "Baie Verte Junction", "Indian River", "Seal Cove Road", "138 kV", "transmission line rebuild"],
+    pages: "physical PDF pp. 126 and 242 to 243",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
+    id: "np-2025-pub-np-034",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-034, Completed Transmission Line Rebuild Cost Basis",
+    topics: ["363L", "124L", "transmission line rebuild", "completion"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/PUB-NP-034.PDF"
+  },
+  {
+    id: "pu-30-2020-363l",
+    year: 2020,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 30 (2020), Abandonment of the Former 363L Mine Extension",
+    topics: ["363L", "Seal Cove Road", "Baie Verte asbestos mine", "transmission line abandonment"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2020/P.U.%2030(2020).pdf"
+  },
+  {
     id: "np-2012-in-service-failures",
     year: 2011,
     organization: "Newfoundland Power",
@@ -12861,6 +12891,108 @@ export const stationProfiles = [
           ["300L and 308L", "rebuilt in 1982"],
           ["TL219", "completed between Sunnyside and Salt Pond in late 1990, adding redundancy to Linton Lake and Marystown"]
         ]
+      }
+    ]
+  },
+  {
+    code: "BVJ",
+    name: "Baie Verte Junction",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2018 FILED RADIAL SUPPLY",
+    circuitSource: { sourceId: "np-2018-363l", pages: "physical PDF pp. 126 and 242" },
+    connectedCircuits: [
+      { circuit: "363L", from: "Baie Verte Junction", from_code: "BVJ", to: "Seal Cove Road", to_code: "SCR" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["BVJ-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2018 filed Baie Verte radial arrangement",
+      buses: [
+        { id: "b1", label: "138 kV bus", voltage: "138 kV" },
+        { id: "b2", label: "25 kV bus", voltage: "25 kV" }
+      ],
+      transformers: [{ label: "BVJ-T1", rating: "2.67 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "363L", destination: "Seal Cove Road", bus: "b1", destinationCode: "SCR" }]
+    },
+    engineeringRecord: {
+      date: "2018 FILED ARRANGEMENT",
+      title: "Baie Verte Junction and Indian River interface",
+      sourceId: "np-2018-363l",
+      pages: "physical PDF p. 242",
+      facts: [
+        ["Station interface", "Baie Verte Junction is part of a jointly owned substation with Hydro's Indian River Substation"],
+        ["138 kV circuit", "363L to Seal Cove Road"],
+        ["Distribution", "BVJ-T1 supplies BVJ-01 at 25 kV"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2018 TO 2020 363L REBUILD",
+        sourceId: "np-2018-363l",
+        pages: "physical PDF pp. 126 and 242 to 243",
+        facts: [
+          ["Original line", "constructed in 1963; approximately 62 km and 478 two-pole and three-pole H-frame structures remained in the 2018 filing"],
+          ["Original conductor", "non-standard 266.8 ACSR"],
+          ["System role", "radial and the only supply to Newfoundland Power and Hydro customers on the Baie Verte Peninsula"]
+        ]
+      },
+      {
+        label: "2020 REBUILD COMPLETION",
+        sourceId: "np-2025-pub-np-034",
+        pages: "physical PDF p. 1",
+        facts: [["363L", "rebuild completed by Newfoundland Power in 2020"]]
+      }
+    ]
+  },
+  {
+    code: "SCR",
+    name: "Seal Cove Road",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2018 FILED RADIAL SUPPLY",
+    circuitSource: { sourceId: "np-2018-363l", pages: "physical PDF pp. 126 and 242" },
+    connectedCircuits: [
+      { circuit: "363L", from: "Baie Verte Junction", from_code: "BVJ", to: "Seal Cove Road", to_code: "SCR" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["SCR-01", "SCR-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2018 filed Baie Verte radial arrangement",
+      buses: [
+        { id: "b1", label: "138 kV bus", voltage: "138 kV" },
+        { id: "b2", label: "25 kV bus", voltage: "25 kV" }
+      ],
+      transformers: [{ label: "SCR-T1", rating: "8.3 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "363L", destination: "Baie Verte Junction", bus: "b1", destinationCode: "BVJ" }]
+    },
+    engineeringRecord: {
+      date: "2018 FILED ARRANGEMENT",
+      title: "Seal Cove Road radial endpoint",
+      sourceId: "np-2018-363l",
+      pages: "physical PDF pp. 126 and 242",
+      facts: [
+        ["138 kV circuit", "363L to Baie Verte Junction"],
+        ["Distribution", "SCR-T1 supplies SCR-01 and SCR-02 at 25 kV"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2020 FORMER MINE EXTENSION ABANDONMENT",
+        sourceId: "pu-30-2020-363l",
+        pages: "physical PDF pp. 1 to 2",
+        facts: [
+          ["Former extension", "7.7 km from Seal Cove Road to the abandoned asbestos mine"],
+          ["Board approval", "removal from service approved after completion of the active 363L rebuild"]
+        ]
+      },
+      {
+        label: "2020 REBUILD COMPLETION",
+        sourceId: "np-2025-pub-np-034",
+        pages: "physical PDF p. 1",
+        facts: [["363L", "rebuild completed by Newfoundland Power in 2020"]]
       }
     ]
   }

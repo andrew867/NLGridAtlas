@@ -322,6 +322,7 @@ function renderStationProfile(code) {
         <dl>${record.facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>
         <a class="evidence-link" href="${escapeHtml(recordSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(recordSource.title)} / ${escapeHtml(record.pages)}</a>
       </section>` : ""}`;
+  centerDynamicDiagram(document.querySelector("#station-profile"));
   renderStationTabs(stationTabQuery);
 }
 
@@ -341,6 +342,12 @@ function openStationRecord(code, scroll = true) {
   if (!stationDirectory.has(code)) return;
   renderStationProfile(code);
   if (scroll) document.querySelector("#station-browser").scrollIntoView({ block: "start" });
+}
+
+function centerDynamicDiagram(container) {
+  const diagramScroll = container.querySelector(".terminal-diagram-scroll");
+  if (!diagramScroll) return;
+  diagramScroll.scrollLeft = Math.max(0, (diagramScroll.scrollWidth - diagramScroll.clientWidth) / 2);
 }
 
 function renderHydroTerminalTabs() {
@@ -369,6 +376,7 @@ function renderHydroTerminalRecord(code) {
       <dl>${factRows}</dl>
       <div class="hydro-terminal-sources"><span class="profile-label">SOURCE RECORDS</span>${sourceLinks}</div>
     </div>`;
+  centerDynamicDiagram(document.querySelector("#hydro-terminal-record"));
   renderHydroTerminalTabs();
 }
 

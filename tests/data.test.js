@@ -2468,6 +2468,14 @@ test("map selection stays in place and feeder maps are expandable", async () => 
   assert.match(html, /M940 168 H968 V236 H940 M940 304 H968 V372 H940/);
 });
 
+test("dynamic one-line diagrams open centred on narrow screens", async () => {
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(main, /function centerDynamicDiagram\(container\)/);
+  assert.match(main, /diagramScroll\.scrollLeft = Math\.max\(0, \(diagramScroll\.scrollWidth - diagramScroll\.clientWidth\) \/ 2\)/);
+  assert.match(main, /centerDynamicDiagram\(document\.querySelector\("#station-profile"\)\)/);
+  assert.match(main, /centerDynamicDiagram\(document\.querySelector\("#hydro-terminal-record"\)\)/);
+});
+
 test("geographic reference maps retain their source pages", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, /reference-maps\/oxen-2013-st-johns-system\.jpg/);
@@ -2735,6 +2743,29 @@ test("Monkstown and Linton Lake complete the documented TL212 corridor", () => {
   assert.deepEqual(lintonLake.feederRegister, ["LLK-01", "LLK-02", "LLK-03"]);
   assert.match(lintonLake.historyRecords[0].facts.flat().join(" "), /rebuilt in 1982/);
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "LLK-T1").forecast_2026_mva, 6.05);
+});
+
+test("Baie Verte Junction and Seal Cove Road close the 363L radial record", () => {
+  const baieVerteJunction = stationProfiles.find((station) => station.code === "BVJ");
+  const sealCoveRoad = stationProfiles.find((station) => station.code === "SCR");
+
+  assert.ok(baieVerteJunction);
+  assert.deepEqual(baieVerteJunction.connectedCircuits, [
+    { circuit: "363L", from: "Baie Verte Junction", from_code: "BVJ", to: "Seal Cove Road", to_code: "SCR" }
+  ]);
+  assert.equal(baieVerteJunction.diagram.transformers[0].rating, "2.67 MVA");
+  assert.match(baieVerteJunction.engineeringRecord.facts.flat().join(" "), /Hydro's Indian River Substation/);
+  assert.match(baieVerteJunction.historyRecords[0].facts.flat().join(" "), /478 two-pole and three-pole H-frame structures/);
+  assert.match(baieVerteJunction.historyRecords[1].facts.flat().join(" "), /completed by Newfoundland Power in 2020/);
+
+  assert.ok(sealCoveRoad);
+  assert.deepEqual(sealCoveRoad.connectedCircuits, baieVerteJunction.connectedCircuits);
+  assert.deepEqual(sealCoveRoad.feederRegister, ["SCR-01", "SCR-02"]);
+  assert.equal(sealCoveRoad.diagram.transformers[0].rating, "8.3 MVA");
+  assert.match(sealCoveRoad.historyRecords[0].facts.flat().join(" "), /7.7 km from Seal Cove Road to the abandoned asbestos mine/);
+
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "BVJ-T1").forecast_2026_mva, 0.29);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "SCR-T1").forecast_2026_mva, 5.97);
 });
 
 test("Greenhill code conflict is contextual and the latest code is preferred", async () => {

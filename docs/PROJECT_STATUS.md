@@ -139,6 +139,8 @@ Updated: 2026-11-12
 - Added Bay L'Argent's two TL212 sections, 138/25 kV transformation, BLA-01, and the separately labelled TL219 tie-in study.
 - Added linked Monkstown and Linton Lake station records, completing the documented TL212 sequence and Linton Lake's 300L connection to Marystown.
 - Added the 2002 Burin engineering history for the 1966 TL212 supply, 1982 rebuilds of 300L and 308L, and late-1990 completion of TL219.
+- Added Baie Verte Junction and Seal Cove Road as linked 363L station records, including the joint Indian River interface, the completed 2020 rebuild, and the former mine extension.
+- Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work
 
