@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Old Perlican, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -140,6 +140,16 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] Newfoundland Power reported commissioning complete in the fourth quarter of 2024, Q4 2024 regulatory report, physical PDF p. 15.
 - [x] The 2027 transformer table records GAM-T1 at 6.67 MVA with a 6.42 MVA 2026 forecast and GAM-T2 at 41.6 MVA, physical PDF pp. 547 and 553.
 - [ ] The completion report does not publish an as-built one-line. The atlas uses the filed logical connections and does not reproduce the conceptual breaker layout as an as-built drawing.
+
+## Old Perlican station record
+
+- [x] The 2024 filing identifies radial 65L from New Chelsea as the 66 kV supply, physical PDF p. 366.
+- [x] The station-specific report describes OPL-T1 as a 13.3 MVA, 66/12.5 kV Moloney Electric transformer manufactured in 1969, physical PDF p. 370.
+- [x] OPL-01, OPL-02, and OPL-03 served approximately 1,800 customers in Old Perlican, Bay de Verde, and Lower Island Cove, physical PDF pp. 366 and 369.
+- [x] The filed project retained OPL-T1, the feeder reclosers, and the voltage regulators. It replaced structures, switches, transformer fuses, protection, and control equipment, physical PDF pp. 367 to 375.
+- [x] Newfoundland Power reported commissioning complete in the fourth quarter of 2024, Q4 2024 regulatory report, physical PDF p. 15.
+- [x] The 2027 fleet table lists OPL-T1 at 15 MVA with an 8.18 MVA 2026 forecast. The atlas keeps the 15 MVA table value separate from the station-specific 13.3 MVA value, physical PDF p. 549.
+- [ ] The completion report does not publish an as-built breaker or bus one-line. The atlas keeps the filed logical connection and the transformer-rating difference visible.
 
 ## Pulpit Rock feeder-bus and transformer records
 

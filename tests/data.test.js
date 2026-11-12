@@ -700,6 +700,22 @@ test("Gambo retains both voltage transformations and the completed 2024 moderniz
   assert.match(historyFacts, /commissioning complete in the fourth quarter of 2024/);
 });
 
+test("Old Perlican retains the radial supply and both published transformer ratings", () => {
+  const oldPerlican = stationProfiles.find((station) => station.code === "OPL");
+  assert.ok(oldPerlican);
+  assert.deepEqual(oldPerlican.connectedCircuits.map(({ circuit }) => circuit), ["65L"]);
+  assert.deepEqual(oldPerlican.feederRegister, ["OPL-01", "OPL-02", "OPL-03"]);
+  const existingFacts = oldPerlican.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = oldPerlican.planningRecord.facts.flat().join(" ");
+  const historyFacts = oldPerlican.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /radial 65L from New Chelsea Substation/);
+  assert.match(existingFacts, /OPL-T1 station report 66\/12\.5 kV; 13\.3 MVA/);
+  assert.match(planningFacts, /OPL-T1 fleet-table rating 66\/12\.5 kV; 15 MVA; 8\.18 MVA 2026 forecast/);
+  assert.match(planningFacts, /station-specific report describes OPL-T1 as 13\.3 MVA/);
+  assert.match(historyFacts, /retain OPL-T1, the three feeder reclosers, and the voltage regulators/);
+  assert.match(historyFacts, /commissioning complete in the fourth quarter of 2024/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

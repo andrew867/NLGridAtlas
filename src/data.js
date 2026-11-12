@@ -1330,6 +1330,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202024_Redacted.pdf"
   },
   {
+    id: "np-2024-old-perlican",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Old Perlican Substation Refurbishment and Modernization",
+    topics: ["Old Perlican", "OPL-T1", "65L", "66 kV", "12.5 kV", "substation modernization"],
+    pages: "physical PDF pp. 366 to 375",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3925,6 +3935,69 @@ export const stationProfiles = [
           ["25 kV equipment", "replace the wood structure, switches, and metering tank; reinstall the two feeder reclosers and voltage regulators"],
           ["Transformers", "retain GAM-T1 and GAM-T2 on new spill-containment foundations"],
           ["Protection and control", "replace electromechanical relays; construct a new control building; extend the ground grid"]
+        ]
+      },
+      {
+        label: "Q4 2024 COMMISSIONING",
+        sourceId: "np-2024-q4-regulatory",
+        pages: "physical PDF p. 15",
+        facts: [
+          ["Project status", "Newfoundland Power reported commissioning complete in the fourth quarter of 2024"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "OPL",
+    name: "Old Perlican",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2023 FILED SUPPLY",
+    circuitSource: { sourceId: "np-2024-old-perlican", pages: "physical PDF p. 366" },
+    connectedCircuits: [
+      { circuit: "65L", from: "New Chelsea", from_code: "NCH", to: "Old Perlican", to_code: "OPL" }
+    ],
+    feederRegisterLabel: "2023 STATION RECORD",
+    feederRegister: ["OPL-01", "OPL-02", "OPL-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2023 filed logical connection / 2024 commissioning record",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "OPL-T1", rating: "13.3 / 15 MVA records", from: "b1", to: "b2" }],
+      circuits: [{ label: "65L", destination: "New Chelsea", bus: "b1", destinationCode: "NCH" }]
+    },
+    engineeringRecord: {
+      date: "2023 FILED EQUIPMENT / 2024 PROJECT COMMISSIONING",
+      title: "Old Perlican radial distribution station",
+      sourceId: "np-2024-old-perlican",
+      pages: "physical PDF pp. 366 and 369 to 371",
+      facts: [
+        ["Station built", "1975 as a distribution substation"],
+        ["Transmission supply", "radial 65L from New Chelsea Substation"],
+        ["OPL-T1 station report", "66/12.5 kV; 13.3 MVA; Moloney Electric; manufactured in 1969"],
+        ["Distribution", "OPL-01, OPL-02, and OPL-03 at 12.5 kV; approximately 1,800 customers in Old Perlican, Bay de Verde, and Lower Island Cove"],
+        ["Feeder equipment", "three Thomas & Betts reclosers manufactured in 2014 and voltage regulators manufactured by Cooper Power Systems in 2016"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["OPL-T1 fleet-table rating", "66/12.5 kV; 15 MVA; 8.18 MVA 2026 forecast"],
+        ["Record difference", "the 2023 station-specific report describes OPL-T1 as 13.3 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2024 FILED MODERNIZATION SCOPE",
+        sourceId: "np-2024-old-perlican",
+        pages: "physical PDF pp. 367 to 375",
+        facts: [
+          ["Structures", "replace the 66 kV and 12.5 kV wood structures with steel structures"],
+          ["Protection", "replace transformer fuses with a 66 kV breaker and digital relay; add a 12.5 kV breaker"],
+          ["Retained equipment", "retain OPL-T1, the three feeder reclosers, and the voltage regulators"],
+          ["Site work", "construct spill-containment foundations, a control building, a yard extension, and ground-grid upgrades"]
         ]
       },
       {
