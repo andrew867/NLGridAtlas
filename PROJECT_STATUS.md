@@ -19,6 +19,8 @@ Updated: 2026-11-12
 - Added Tors Cove, Horse Chops, Pierre's Brook, Rocky Pond, Morris, New Chelsea, Pitmans Pond, Topsail, Sandy Brook, Rose Blanche, West Brook, Fall Pond, and Lawn hydro generation-station records with current transformer ratings, documented connections, dated plant work, inspection equipment, and operating records.
 - Added Springdale's TL222 and TL223 interface, 138/25 kV transformation, four feeders, 1965 station history, and filed 2014 modernization scope.
 - Added Bay L'Argent's two TL212 sections, 138/25 kV transformation, BLA-01, and the separately labelled TL219 tie-in study.
+- Added linked Monkstown and Linton Lake station records, completing the documented TL212 sequence and Linton Lake's 300L connection to Marystown.
+- Added the 2002 Burin engineering history for the 1966 TL212 supply, 1982 rebuilds of 300L and 308L, and late-1990 completion of TL219.
 - Kept Pierre's Brook's published 2008 station upgrade, 2009 filed 23L conversion, 2013 installed line state, and 2015 filed electrical-refurbishment scope as separate dated records.
 - Added Rocky Pond's segmented 20L and 22L connections, 2005 switchgear fire, completed 2009 plant and substation rebuild, March 18, 2025 capacity test, and proposed 2027 bearing work.
 - Added Morris's 22L connection, 2003 turbine-seal scope, 2021 filed head-gate work, March 18, 2025 capacity test, and documented hydraulic sequence upstream of Mobile.
@@ -29,7 +31,7 @@ Updated: 2026-11-12
 - Added Rose Blanche's LGL-02 connection, 25/6.9 kV transformer, dual-Francis generating unit, isolated southwest-coast duty, 2016 turbine failure, 2017 filed repair work, reported 2018 unit replacements, and filed 2027 to 2028 refurbishment.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 189 automated tests, source-hash verification, and the production build.
+- Passed 190 automated tests, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.

@@ -2695,9 +2695,46 @@ test("Bay L'Argent keeps the existing TL212 corridor separate from the studied T
     "Bay L'Argent to Linton Lake"
   ]);
   assert.deepEqual(bayLArgent.diagram.transformers, [{ label: "BLA-T1", rating: "6.67 MVA", from: "b1", to: "b2" }]);
-  assert.match(bayLArgent.planningRecord.facts.flat().join(" "), /4.54 MVA 2026 forecast/);
+  assert.deepEqual(
+    transformerRegister.transformers.find((record) => record.designation === "BLA-T1"),
+    {
+      designation: "BLA-T1",
+      station_code: "BLA",
+      type: "distribution",
+      high_kv: 138,
+      low_kv: 25,
+      size_mva: 6.67,
+      forecast_2026_mva: 4.54,
+      physical_page: 546
+    }
+  );
   assert.match(bayLArgent.historyRecords[0].facts.flat().join(" "), /tap TL219 into Monkstown and Bay L'Argent/);
   assert.match(bayLArgent.historyRecords[0].label, /STUDIED/);
+});
+
+test("Monkstown and Linton Lake complete the documented TL212 corridor", () => {
+  const monkstown = stationProfiles.find((station) => station.code === "MKS");
+  const lintonLake = stationProfiles.find((station) => station.code === "LLK");
+
+  assert.ok(monkstown);
+  assert.deepEqual(
+    monkstown.connectedCircuits.map((record) => [record.circuit, record.from_code, record.to_code]),
+    [["TL212", "SUN", "MKS"], ["TL212", "MKS", "BLA"]]
+  );
+  assert.equal(monkstown.diagram.transformers[0].rating, "14.9 MVA");
+  assert.deepEqual(monkstown.feederRegister, ["MKS-01", "MKS-02"]);
+  assert.match(monkstown.historyRecords[1].facts.flat().join(" "), /two new 138 kV breakers at Monkstown/);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "MKS-T1").forecast_2026_mva, 8);
+
+  assert.ok(lintonLake);
+  assert.deepEqual(
+    lintonLake.connectedCircuits.map((record) => [record.circuit, record.from_code, record.to_code]),
+    [["TL212", "BLA", "LLK"], ["300L", "LLK", "MSY"]]
+  );
+  assert.equal(lintonLake.diagram.transformers[0].rating, "20 MVA");
+  assert.deepEqual(lintonLake.feederRegister, ["LLK-01", "LLK-02", "LLK-03"]);
+  assert.match(lintonLake.historyRecords[0].facts.flat().join(" "), /rebuilt in 1982/);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "LLK-T1").forecast_2026_mva, 6.05);
 });
 
 test("Greenhill code conflict is contextual and the latest code is preferred", async () => {

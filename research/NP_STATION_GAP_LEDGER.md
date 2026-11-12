@@ -36,6 +36,14 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] BLA-01 is the sole feeder in the 2006 feeder register, PDF p. 11.
 - [x] The 2026 study recommendation to tap TL219 into Monkstown and Bay L'Argent is recorded as studied work, not as installed equipment, physical PDF pp. 170, 219 and 221.
 
+## Monkstown and Linton Lake station records
+
+- [x] TL212 is divided into Sunnyside to Monkstown, Monkstown to Bay L'Argent, and Bay L'Argent to Linton Lake sections, 2026 Burin Peninsula study, physical PDF pp. 162, 201 and 223.
+- [x] Monkstown is listed as a joint Hydro and Newfoundland Power terminal station and substation; MKS-T1 is 138/25 kV, 14.9 MVA, with an 8.00 MVA 2026 forecast, physical PDF pp. 182 and 549.
+- [x] Linton Lake is listed as a joint Hydro and Newfoundland Power station; LLK-T1 is 138/12.5 kV, 20 MVA, with a 6.05 MVA 2026 forecast, physical PDF pp. 182 and 548.
+- [x] 300L connects Linton Lake and Marystown, 2026 Burin Peninsula study, physical PDF p. 162.
+- [x] The 2002 engineering review dates TL212 to 1966, the 300L and 308L rebuilds to 1982, and TL219 completion to late 1990, physical PDF pp. 4 to 5.
+
 ## Avalon stations
 
 | State | Station or system | Data now in the atlas | Missing evidence | Next archive target |

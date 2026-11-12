@@ -137,6 +137,8 @@ Updated: 2026-11-12
 - Added Horse Chops' 66/6.9 kV station, 21L connection, 12 MVA HCP-T1, single 9 MVA generator, reported 2009 substation rebuild, filed generator rewind, March 2014 breaker record, 2026 capacity-test values, and the separately labeled 2026 controls project.
 - Added Springdale's TL222 and TL223 interface, 138/25 kV transformation, four feeders, 1965 station history, and filed 2014 modernization scope.
 - Added Bay L'Argent's two TL212 sections, 138/25 kV transformation, BLA-01, and the separately labelled TL219 tie-in study.
+- Added linked Monkstown and Linton Lake station records, completing the documented TL212 sequence and Linton Lake's 300L connection to Marystown.
+- Added the 2002 Burin engineering history for the 1966 TL212 supply, 1982 rebuilds of 300L and 308L, and late-1990 completion of TL219.
 
 ## Active work
 

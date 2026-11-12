@@ -170,6 +170,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
   {
+    id: "np-2003-burin-review",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "PUB 10-2A, Burin Peninsula Engineering Review",
+    topics: ["Burin Peninsula", "TL212", "TL219", "300L", "308L", "Monkstown", "Bay L'Argent", "Linton Lake", "Marystown", "Salt Pond"],
+    pages: "physical PDF pp. 4 to 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf"
+  },
+  {
     id: "np-2012-in-service-failures",
     year: 2011,
     organization: "Newfoundland Power",
@@ -12680,12 +12690,6 @@ export const stationProfiles = [
         ["Distribution", "SPR-01 to SPR-04; four 25 kV feeders serving approximately 1,552 customers"]
       ]
     },
-    planningRecord: {
-      label: "2027 TRANSFORMER REGISTER",
-      sourceId: "np-2027-transformers",
-      pages: "physical PDF p. 550",
-      facts: [["SPR-T1", "138/25 kV; 16.67 MVA; 9.91 MVA 2026 forecast"]]
-    },
     historyRecords: [
       {
         label: "2014 FILED REFURBISHMENT AND MODERNIZATION",
@@ -12739,12 +12743,6 @@ export const stationProfiles = [
         ["Distribution", "BLA-T1 supplies BLA-01 at 25 kV"]
       ]
     },
-    planningRecord: {
-      label: "2027 TRANSFORMER REGISTER",
-      sourceId: "np-2027-transformers",
-      pages: "physical PDF p. 546",
-      facts: [["BLA-T1", "138/25 kV; 6.67 MVA; 4.54 MVA 2026 forecast"]]
-    },
     historyRecords: [
       {
         label: "2026 STUDIED TL219 TIE-IN",
@@ -12754,6 +12752,114 @@ export const stationProfiles = [
           ["Study recommendation", "tap TL219 into Monkstown and Bay L'Argent"],
           ["Filed equipment", "two new 138 kV breakers at each station with associated TL219 tie-ins"],
           ["Purpose", "split TL219 and support Burin Peninsula transmission voltage after retirement of the Greenhill combustion turbine"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "MKS",
+    name: "Monkstown",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2026 FILED BURIN LOOP",
+    circuitSource: { sourceId: "np-2027-burin-study", pages: "physical PDF pp. 162, 182, 201 and 223" },
+    connectedCircuits: [
+      { circuit: "TL212", from: "Sunnyside", from_code: "SUN", to: "Monkstown", to_code: "MKS" },
+      { circuit: "TL212", from: "Monkstown", from_code: "MKS", to: "Bay L'Argent", to_code: "BLA" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["MKS-01", "MKS-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2026 filed Burin loop arrangement",
+      buses: [
+        { id: "b1", label: "138 kV bus", voltage: "138 kV" },
+        { id: "b2", label: "25 kV bus", voltage: "25 kV" }
+      ],
+      transformers: [{ label: "MKS-T1", rating: "14.9 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "TL212", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" },
+        { label: "TL212", destination: "Bay L'Argent", bus: "b1", destinationCode: "BLA" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2026 FILED LOOP RECORD",
+      title: "Monkstown terminal and distribution station",
+      sourceId: "np-2027-burin-study",
+      pages: "physical PDF pp. 162, 182 and 201",
+      facts: [
+        ["Ownership", "joint Hydro and Newfoundland Power terminal station and substation"],
+        ["138 kV corridor", "TL212 between Sunnyside and Bay L'Argent"],
+        ["Distribution", "MKS-T1 supplies MKS-01 and MKS-02 at 25 kV"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1966 TO 1990 BURIN SUPPLY RECORD",
+        sourceId: "np-2003-burin-review",
+        pages: "physical PDF pp. 4 to 5",
+        facts: [
+          ["TL212", "built in 1966; sole supply to Monkstown, Bay L'Argent and Linton Lake until 1990"],
+          ["TL219", "completed between Sunnyside and Salt Pond in late 1990"]
+        ]
+      },
+      {
+        label: "2026 STUDIED TL219 TIE-IN",
+        sourceId: "np-2027-burin-study",
+        pages: "physical PDF pp. 170, 219 and 221",
+        facts: [
+          ["Study recommendation", "tap TL219 into Monkstown and Bay L'Argent"],
+          ["Filed equipment", "two new 138 kV breakers at Monkstown with associated TL219 tie-ins"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "LLK",
+    name: "Linton Lake",
+    voltage: "138/12.5 kV",
+    circuitRegisterLabel: "2026 FILED BURIN LOOP",
+    circuitSource: { sourceId: "np-2027-burin-study", pages: "physical PDF pp. 162, 182, 201 and 223" },
+    connectedCircuits: [
+      { circuit: "TL212", from: "Bay L'Argent", from_code: "BLA", to: "Linton Lake", to_code: "LLK" },
+      { circuit: "300L", from: "Linton Lake", from_code: "LLK", to: "Marystown", to_code: "MSY" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["LLK-01", "LLK-02", "LLK-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2026 filed Burin loop arrangement",
+      buses: [
+        { id: "b1", label: "138 kV bus", voltage: "138 kV" },
+        { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }
+      ],
+      transformers: [{ label: "LLK-T1", rating: "20 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "TL212", destination: "Bay L'Argent", bus: "b1", destinationCode: "BLA" },
+        { label: "300L", destination: "Marystown", bus: "b1", destinationCode: "MSY" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2026 FILED LOOP RECORD",
+      title: "Linton Lake terminal and distribution station",
+      sourceId: "np-2027-burin-study",
+      pages: "physical PDF pp. 162, 182 and 201",
+      facts: [
+        ["Ownership", "joint Hydro and Newfoundland Power station"],
+        ["138 kV connections", "TL212 to Bay L'Argent and 300L to Marystown"],
+        ["Distribution", "LLK-T1 supplies LLK-01, LLK-02 and LLK-03 at 12.5 kV"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1966 TO 1990 BURIN SUPPLY RECORD",
+        sourceId: "np-2003-burin-review",
+        pages: "physical PDF pp. 4 to 5",
+        facts: [
+          ["TL212", "built in 1966; sole supply to Monkstown, Bay L'Argent and Linton Lake until 1990"],
+          ["300L and 308L", "rebuilt in 1982"],
+          ["TL219", "completed between Sunnyside and Salt Pond in late 1990, adding redundancy to Linton Lake and Marystown"]
         ]
       }
     ]
