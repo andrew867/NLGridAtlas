@@ -667,6 +667,22 @@ test("Clarkes Pond retains the documented parallel transformer bank and three fe
   assert.match(planningFacts, /CLK-T2 66\/12\.5 kV; 10 MVA; 5\.53 MVA 2026 forecast/);
 });
 
+test("Walbournes combines its filed equipment record with the project completion report", () => {
+  const walbournes = stationProfiles.find((station) => station.code === "WAL");
+  assert.ok(walbournes);
+  assert.deepEqual(walbournes.connectedCircuits.map(({ circuit }) => circuit), ["351L", "352L", "353L"]);
+  assert.deepEqual(walbournes.feederRegister, ["WAL-01", "WAL-02", "WAL-04", "WAL-05", "WAL-06", "WAL-07"]);
+  assert.deepEqual(walbournes.mapPages, [["WAL-01", 163], ["WAL-02", 164], ["WAL-04", 165], ["WAL-05", 166]]);
+  const existingFacts = walbournes.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = walbournes.planningRecord.facts.flat().join(" ");
+  const historyFacts = walbournes.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /WAL-T1 66\/12\.5 kV; 20 MVA; Westinghouse; manufactured in 1976/);
+  assert.match(existingFacts, /prevented parallel operation of WAL-T1 and WAL-T2/);
+  assert.match(planningFacts, /WAL-T1 66\/12\.5 kV; 20 MVA; 20\.74 MVA 2026 forecast/);
+  assert.match(historyFacts, /replace the 1965 switchgear with an outdoor steel bus/);
+  assert.match(historyFacts, /reported the Walbournes refurbishment and modernization complete/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

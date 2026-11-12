@@ -1290,6 +1290,26 @@ export const sources = [
     url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
   },
   {
+    id: "np-2023-walbournes",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Walbournes Substation Refurbishment and Modernization",
+    topics: ["Walbournes", "WAL-T1", "WAL-T2", "351L", "352L", "353L", "66 kV", "12.5 kV", "substation modernization"],
+    pages: "physical PDF pp. 392 to 400",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-2023-q4-regulatory",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "Q4 2023 Quarterly Regulatory Report, First Revision",
+    topics: ["Walbournes", "Molloy's Lane", "Long Pond", "capital completion"],
+    pages: "physical PDF p. 12",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202023%20(1st%20Revision)_Redacted.pdf"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3178,7 +3198,6 @@ const filedFeederMapProfiles = [
   { code: "TRN", mapPages: [["TRN-02", 152]] },
   { code: "TWG", mapPages: [["TWG-01", 153], ["TWG-02", 154]] },
   { code: "VIC", mapPages: [["VIC-02", 155]] },
-  { code: "WAL", mapPages: [["WAL-01", 163], ["WAL-02", 164], ["WAL-04", 165], ["WAL-05", 166]] },
   { code: "WAV", mapPages: [["WAV-01", 167]] },
   { code: "WES", mapPages: [["WES-01", 168], ["WES-02", 169]] }
 ];
@@ -3761,6 +3780,74 @@ export const stationProfiles = [
       ]
     },
     historyRecords: []
+  },
+  {
+    code: "WAL",
+    name: "Walbournes",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2022 FILED CONNECTIONS",
+    circuitSource: { sourceId: "np-2023-walbournes", pages: "physical PDF p. 392" },
+    connectedCircuits: [
+      { circuit: "351L", from: "Massey Drive", from_code: "MSY", to: "Walbournes", to_code: "WAL" },
+      { circuit: "352L", from: "Massey Drive", from_code: "MSY", to: "Walbournes", to_code: "WAL" },
+      { circuit: "353L", from: "Walbournes", from_code: "WAL", to: "Frenchman's Cove", to_code: "FRN" }
+    ],
+    feederRegisterLabel: "2005 FEEDER REGISTER",
+    feederRegister: ["WAL-01", "WAL-02", "WAL-04", "WAL-05", "WAL-06", "WAL-07"],
+    mapPages: [["WAL-01", 163], ["WAL-02", 164], ["WAL-04", 165], ["WAL-05", 166]],
+    eventLoads: [],
+    diagram: {
+      label: "2022 filed logical connection / 2023 completion record",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV distribution bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "WAL-T1", rating: "20 MVA", from: "b1", to: "b2" }, { label: "WAL-T2", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "351L", destination: "Massey Drive", bus: "b1", destinationCode: "MSY" }, { label: "352L", destination: "Massey Drive", bus: "b1", destinationCode: "MSY" }, { label: "353L", destination: "Frenchman's Cove", bus: "b1", destinationCode: "FRN" }]
+    },
+    engineeringRecord: {
+      date: "2022 FILED EQUIPMENT / 2023 PROJECT COMPLETION",
+      title: "Walbournes transmission and distribution station",
+      sourceId: "np-2023-walbournes",
+      pages: "physical PDF pp. 392 to 395",
+      facts: [
+        ["Station built", "1966 as a transmission and distribution substation"],
+        ["66 kV supplies", "351L and 352L from Massey Drive Terminal Station"],
+        ["Radial output", "353L to Frenchman's Cove Substation"],
+        ["WAL-T1", "66/12.5 kV; 20 MVA; Westinghouse; manufactured in 1976"],
+        ["WAL-T2", "66/12.5 kV; 25 MVA; Virginia Transformer; manufactured in 2004"],
+        ["Distribution", "six 12.5 kV feeders serving approximately 6,900 customers in west Corner Brook, Curling, and Mount Moriah"],
+        ["2022 operating limit", "the existing switchgear interrupting rating prevented parallel operation of WAL-T1 and WAL-T2"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 551",
+      facts: [
+        ["WAL-T1", "66/12.5 kV; 20 MVA; 20.74 MVA 2026 forecast"],
+        ["WAL-T2", "66/12.5 kV; 25 MVA; 21.16 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2023 FILED MODERNIZATION SCOPE",
+        sourceId: "np-2023-walbournes",
+        pages: "physical PDF pp. 393 to 400",
+        facts: [
+          ["66 kV equipment", "replace deteriorated switches and install two transformer circuit breakers; retain the three transmission-line breakers"],
+          ["12.5 kV equipment", "replace the 1965 switchgear with an outdoor steel bus, eight circuit breakers, switches, and potential transformers"],
+          ["Transformers", "retain WAL-T1 and WAL-T2; move both units to new spill-containment foundations"],
+          ["Protection and control", "replace obsolete relays and communications equipment; construct a new control building"],
+          ["Site", "extend the yard and ground grid and correct drainage"]
+        ]
+      },
+      {
+        label: "Q4 2023 COMPLETION",
+        sourceId: "np-2023-q4-regulatory",
+        pages: "physical PDF p. 12",
+        facts: [
+          ["Project status", "Newfoundland Power reported the Walbournes refurbishment and modernization complete"]
+        ]
+      }
+    ]
   },
   {
     code: "LEW",

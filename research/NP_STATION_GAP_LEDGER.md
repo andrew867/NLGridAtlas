@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, and Clarkes Pond. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -119,6 +119,16 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [ ] Do not label 50L as the current Dunville to Clarkes Pond circuit until a later completion or circuit record confirms the filed change.
 - [x] The 2020 Clarkes Pond record identifies parallel CLK-T1 and CLK-T2, each 10 MVA at 66/12.5 kV, and three 12.5 kV feeders serving Freshwater, Jerseyside, Placentia, and Argentia, physical PDF p. 123.
 - [x] The 2027 transformer table records 2026 forecasts of 5.21 MVA for CLK-T1 and 5.53 MVA for CLK-T2, physical PDF p. 546.
+
+## Walbournes station record
+
+- [x] The 2023 filing identifies 351L and 352L from Massey Drive as the two 66 kV supplies and 353L to Frenchman's Cove as the radial output, physical PDF p. 392.
+- [x] WAL-T1 is a 20 MVA, 66/12.5 kV Westinghouse transformer manufactured in 1976. WAL-T2 is a 25 MVA, 66/12.5 kV Virginia Transformer unit manufactured in 2004, physical PDF p. 395.
+- [x] Six 12.5 kV feeders served approximately 6,900 customers in west Corner Brook, Curling, and Mount Moriah, physical PDF p. 392.
+- [x] The old switchgear interrupting rating prevented parallel operation of WAL-T1 and WAL-T2. The filed project replaced it with outdoor 12.5 kV equipment and installed two 66 kV transformer breakers, physical PDF pp. 393 to 399.
+- [x] Newfoundland Power reported the station refurbishment and modernization complete in its Q4 2023 regulatory report, physical PDF p. 12.
+- [x] The 2027 transformer table records 2026 forecasts of 20.74 MVA for WAL-T1 and 21.16 MVA for WAL-T2, physical PDF p. 551.
+- [ ] The completion report does not publish the post-project breaker or bus one-line. The atlas retains a logical connection diagram rather than an as-built breaker arrangement.
 
 ## Pulpit Rock feeder-bus and transformer records
 
