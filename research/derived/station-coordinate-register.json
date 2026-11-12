@@ -1,0 +1,180 @@
+{
+  "generated": "2026-11-11",
+  "coordinateSystem": "WGS 84, EPSG:4326",
+  "method": "Centroids are calculated from published OSM station-boundary nodes. Coordinates support map placement only.",
+  "limits": [
+    "OpenStreetMap is a community-maintained geographic dataset, not a utility asset register.",
+    "A coordinate does not establish circuit topology, equipment ownership, voltage, or operating state.",
+    "Station records without a checked boundary remain outside this register."
+  ],
+  "stations": [
+    {
+      "id": "opd",
+      "atlasName": "Oxen Pond Terminal Station",
+      "sourceName": "Oxen Pond Substation",
+      "sourceRef": null,
+      "sourceOperator": "Nalcor",
+      "latitude": 47.573357,
+      "longitude": -52.755719,
+      "coordinateMethod": "polygon centroid of the published OSM station boundary",
+      "source": {
+        "publisher": "OpenStreetMap contributors",
+        "object": "way/113031677",
+        "url": "https://www.openstreetmap.org/way/113031677",
+        "apiUrl": "https://api.openstreetmap.org/api/0.6/way/113031677/full.json",
+        "objectTimestamp": "2024-06-18T18:28:50Z",
+        "objectVersion": 6,
+        "retrieved": "2026-11-11",
+        "license": "ODbL 1.0",
+        "evidenceState": "reported"
+      }
+    },
+    {
+      "id": "hwd",
+      "atlasName": "Hardwoods Terminal Station",
+      "sourceName": "Hardwoods Terminal Station",
+      "sourceRef": "HWDTS",
+      "sourceOperator": "Newfoundland and Labrador Hydro",
+      "latitude": 47.524408,
+      "longitude": -52.847219,
+      "coordinateMethod": "polygon centroid of the published OSM station boundary",
+      "source": {
+        "publisher": "OpenStreetMap contributors",
+        "object": "way/252505650",
+        "url": "https://www.openstreetmap.org/way/252505650",
+        "apiUrl": "https://api.openstreetmap.org/api/0.6/way/252505650/full.json",
+        "objectTimestamp": "2025-09-07T18:31:15Z",
+        "objectVersion": 8,
+        "retrieved": "2026-11-11",
+        "license": "ODbL 1.0",
+        "evidenceState": "reported"
+      }
+    },
+    {
+      "id": "hol",
+      "atlasName": "Holyrood Terminal Station",
+      "sourceName": "Holyrood Terminal Station",
+      "sourceRef": "HRDTS",
+      "sourceOperator": "Newfoundland and Labrador Hydro",
+      "latitude": 47.450633,
+      "longitude": -53.097952,
+      "coordinateMethod": "polygon centroid of the published OSM station boundary",
+      "source": {
+        "publisher": "OpenStreetMap contributors",
+        "object": "way/229936554",
+        "url": "https://www.openstreetmap.org/way/229936554",
+        "apiUrl": "https://api.openstreetmap.org/api/0.6/way/229936554/full.json",
+        "objectTimestamp": "2025-09-07T04:46:30Z",
+        "objectVersion": 6,
+        "retrieved": "2026-11-11",
+        "license": "ODbL 1.0",
+        "evidenceState": "reported"
+      }
+    },
+    {
+      "id": "spd",
+      "atlasName": "Soldiers Pond Terminal Station",
+      "sourceName": "Soldiers Pond Terminal Station",
+      "sourceRef": "SOPTS",
+      "sourceOperator": "Newfoundland and Labrador Hydro",
+      "latitude": 47.417784,
+      "longitude": -52.980346,
+      "coordinateMethod": "polygon centroid of the published OSM station boundary",
+      "source": {
+        "publisher": "OpenStreetMap contributors",
+        "object": "way/1293515683",
+        "url": "https://www.openstreetmap.org/way/1293515683",
+        "apiUrl": "https://api.openstreetmap.org/api/0.6/way/1293515683/full.json",
+        "objectTimestamp": "2025-09-07T18:16:33Z",
+        "objectVersion": 3,
+        "retrieved": "2026-11-11",
+        "license": "ODbL 1.0",
+        "evidenceState": "reported"
+      }
+    },
+    {
+      "id": "wav",
+      "atlasName": "Western Avalon Terminal Station",
+      "sourceName": "Western Avalon Terminal Station",
+      "sourceRef": null,
+      "sourceOperator": "Newfoundland and Labrador Hydro",
+      "latitude": 47.516489,
+      "longitude": -53.684638,
+      "coordinateMethod": "polygon centroid of the published OSM station boundary",
+      "source": {
+        "publisher": "OpenStreetMap contributors",
+        "object": "way/132014003",
+        "url": "https://www.openstreetmap.org/way/132014003",
+        "apiUrl": "https://api.openstreetmap.org/api/0.6/way/132014003/full.json",
+        "objectTimestamp": "2025-12-09T04:06:23Z",
+        "objectVersion": 7,
+        "retrieved": "2026-11-11",
+        "license": "ODbL 1.0",
+        "evidenceState": "reported"
+      }
+    },
+    {
+      "id": "rrd",
+      "atlasName": "Ridge Road Substation",
+      "sourceName": "Ridge Road Substation",
+      "sourceRef": "RRD",
+      "sourceOperator": "Newfoundland Power",
+      "latitude": 47.5907,
+      "longitude": -52.728902,
+      "coordinateMethod": "polygon centroid of the published OSM station boundary",
+      "source": {
+        "publisher": "OpenStreetMap contributors",
+        "object": "way/260768602",
+        "url": "https://www.openstreetmap.org/way/260768602",
+        "apiUrl": "https://api.openstreetmap.org/api/0.6/way/260768602/full.json",
+        "objectTimestamp": "2025-09-07T20:48:08Z",
+        "objectVersion": 5,
+        "retrieved": "2026-11-11",
+        "license": "ODbL 1.0",
+        "evidenceState": "reported"
+      }
+    },
+    {
+      "id": "vir",
+      "atlasName": "Virginia Waters Substation",
+      "sourceName": "Virginia Waters Substation",
+      "sourceRef": "VIR",
+      "sourceOperator": "Newfoundland Power",
+      "latitude": 47.614864,
+      "longitude": -52.703014,
+      "coordinateMethod": "polygon centroid of the published OSM station boundary",
+      "source": {
+        "publisher": "OpenStreetMap contributors",
+        "object": "way/381389667",
+        "url": "https://www.openstreetmap.org/way/381389667",
+        "apiUrl": "https://api.openstreetmap.org/api/0.6/way/381389667/full.json",
+        "objectTimestamp": "2025-09-07T05:28:33Z",
+        "objectVersion": 5,
+        "retrieved": "2026-11-11",
+        "license": "ODbL 1.0",
+        "evidenceState": "reported"
+      }
+    },
+    {
+      "id": "gou",
+      "atlasName": "Goulds Substation",
+      "sourceName": "Goulds Substation",
+      "sourceRef": "GOU",
+      "sourceOperator": "Newfoundland Power",
+      "latitude": 47.485401,
+      "longitude": -52.766512,
+      "coordinateMethod": "polygon centroid of the published OSM station boundary",
+      "source": {
+        "publisher": "OpenStreetMap contributors",
+        "object": "way/775556178",
+        "url": "https://www.openstreetmap.org/way/775556178",
+        "apiUrl": "https://api.openstreetmap.org/api/0.6/way/775556178/full.json",
+        "objectTimestamp": "2025-09-07T06:45:33Z",
+        "objectVersion": 2,
+        "retrieved": "2026-11-11",
+        "license": "ODbL 1.0",
+        "evidenceState": "reported"
+      }
+    }
+  ]
+}

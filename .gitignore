@@ -9,6 +9,8 @@ research/derived/*
 !research/derived/np-register-layers-2008-2013.json
 !research/derived/np-2027-transformer-register.json
 !research/derived/island-ac-topology-2018.json
+!research/derived/gnl-canvec-newfoundland-transmission-lines.geojson
+!research/derived/station-coordinate-register.json
 research/renders/
 research/tmp/
 .DS_Store

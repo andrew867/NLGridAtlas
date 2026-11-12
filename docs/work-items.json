@@ -458,12 +458,18 @@
       "title": "Build a sourced coordinate and route dataset",
       "phase": 4,
       "priority": "P1",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Extract defensible station coordinates and line routes from utility maps, drawings, GIS records, or other public primary sources.",
       "dependencies": ["ISL-001"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "scripts/build-geographic-data.mjs",
+        "research/derived/gnl-canvec-newfoundland-transmission-lines.geojson",
+        "research/derived/station-coordinate-register.json",
+        "research/GEOGRAPHIC_DATA_RECORD.md",
+        "tests/geographic-data.test.js"
+      ],
       "blocker": null,
-      "notes": "Current source maps are semi-geographic or low resolution."
+      "notes": "The first tranche contains 588 historical GeoAtlas route features and eight checked station-boundary centroids. The route layer has validation years from 1979 through 1991 and no utility circuit designations, so it remains a historical reference. Additional station coordinates and current circuit-to-route reconciliation remain open. Unsupported rural records are deferred."
     },
     {
       "id": "GEO-002",

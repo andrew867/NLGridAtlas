@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
+    "build:geodata": "node scripts/build-geographic-data.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test",
     "verify:sources": "node scripts/verify-sources.mjs"
