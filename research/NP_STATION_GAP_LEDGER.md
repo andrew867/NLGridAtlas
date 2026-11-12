@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, and Come By Chance. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, and Greenspond. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. The Greenspond record separates its 2025 existing equipment from the proposed 2026 to 2027 modernization. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -48,6 +48,14 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 1. Mirror Newfoundland Power regulatory PDFs. Its Regulation page currently exposes the 2024 to 2027 capital applications and the 2025 to 2026 general rate application. These are the best direct source for the remaining distribution-station records.
 2. Mirror the NL Hydro uploads index. The inventory contains 2,521 PDFs and 9,402,399,683 listed bytes. Use it for Hydro transmission, generating-station, HVDC, telecommunications, and Muskrat Falls integration records.
 3. Search Fortis annual reports selectively. They record corporate-level asset additions and transfers, but the current Fortis report library does not expose Newfoundland Power station drawings or capital-application appendices.
+
+## Greenspond station record
+
+- [x] The 2026 capital filing identifies GPD as a 1981 distribution substation supplied from Trinity by a tap on the 115L/116L radial 66 kV system, physical PDF p. 340.
+- [x] GPD-T1 is a 2.8 MVA, 66/12.5 kV Canadian General Electric transformer manufactured in 1965. It supplies GPD-01 and approximately 260 customers, physical PDF pp. 340 and 343.
+- [x] The existing station uses 66 kV fuses for GPD-T1 protection, one 12.5 kV feeder recloser, and three feeder voltage regulators, physical PDF pp. 342 to 344.
+- [x] The proposed work retains GPD-T1 and the voltage regulators. It replaces the wood structures, switches, fused disconnect, and feeder recloser; it adds spill containment, instrument transformers, digital relays, communications, a control building, SCADA monitoring, and ground-grid work, physical PDF pp. 341 to 346.
+- [ ] Do not record the modernization as commissioned before a completion report confirms the filed fourth-quarter 2027 commissioning schedule.
 
 ## Pulpit Rock feeder-bus and transformer records
 

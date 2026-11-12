@@ -1160,6 +1160,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
   {
+    id: "np-2026-greenspond",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, Greenspond Substation Refurbishment and Modernization",
+    topics: ["Greenspond", "GPD-T1", "GPD-01", "115L", "116L", "66 kV", "12.5 kV", "substation modernization"],
+    pages: "physical PDF pp. 340 to 346",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3057,6 +3067,62 @@ const filedFeederMapProfiles = [
 
 export const stationProfiles = [
   ...filedFeederMapProfiles,
+  {
+    code: "GPD",
+    name: "Greenspond",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2025 EXISTING SUPPLY",
+    circuitSource: { sourceId: "np-2026-greenspond", pages: "physical PDF p. 340" },
+    connectedCircuits: [
+      { circuit: "115L/116L tap", from: "Trinity", from_code: "TRN", to: "Greenspond", to_code: "GPD" }
+    ],
+    feederRegisterLabel: "2025 STATION RECORD",
+    feederRegister: ["GPD-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 existing arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "GPD-T1", rating: "2.8 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "115L/116L tap", destination: "Trinity", bus: "b1", destinationCode: "TRN" }]
+    },
+    engineeringRecord: {
+      date: "2025 EXISTING ARRANGEMENT",
+      title: "Greenspond radial distribution substation",
+      sourceId: "np-2026-greenspond",
+      pages: "physical PDF pp. 340 to 344",
+      facts: [
+        ["Station built", "1981"],
+        ["Supply", "tap from the 115L/116L radial 66 kV system from Trinity Substation"],
+        ["GPD-T1", "66/12.5 kV; 2.8 MVA; Canadian General Electric; manufactured in 1965"],
+        ["Distribution feeder", "GPD-01; one 12.5 kV feeder serving approximately 260 customers"],
+        ["Transformer protection", "66 kV fuses"],
+        ["Feeder equipment", "one recloser and a three-unit voltage-regulator bank"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["GPD-T1", "66/12.5 kV; 2.8 MVA; 1.01 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2026 TO 2027 PROPOSED MODERNIZATION",
+        sourceId: "np-2026-greenspond",
+        pages: "physical PDF pp. 341 to 346",
+        facts: [
+          ["Structures", "replace the 66 kV and 12.5 kV wood structures with galvanized steel structures"],
+          ["Primary equipment", "replace the 66 kV switch, fused disconnect, 12.5 kV switches and GPD-01 recloser"],
+          ["Retained equipment", "retain GPD-T1 and the three voltage regulators; add spill containment"],
+          ["Protection and control", "add instrument transformers, digital relays, communications gateway, control building and SCADA monitoring"],
+          ["Filed schedule", "construction in 2027; commissioning planned for the fourth quarter of 2027"]
+        ]
+      }
+    ]
+  },
   {
     code: "LEW",
     name: "Lewisporte",

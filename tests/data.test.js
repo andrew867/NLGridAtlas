@@ -534,6 +534,19 @@ test("Lewisporte and Rattling Brook retain the completed central 138 kV arrangem
   assert.match(rattlingBrook.referenceSheets[0].image, /rbk-2018-selected-one-line\.svg/);
 });
 
+test("Greenspond separates existing equipment from the proposed modernization", () => {
+  const greenspond = stationProfiles.find((station) => station.code === "GPD");
+  assert.ok(greenspond);
+  assert.deepEqual(greenspond.connectedCircuits.map(({ circuit }) => circuit), ["115L/116L tap"]);
+  assert.deepEqual(greenspond.feederRegister, ["GPD-01"]);
+  const existingFacts = greenspond.engineeringRecord.facts.flat().join(" ");
+  const proposedFacts = greenspond.historyRecords[0].facts.flat().join(" ");
+  assert.match(existingFacts, /GPD-T1 66\/12\.5 kV; 2\.8 MVA; Canadian General Electric; manufactured in 1965/);
+  assert.match(existingFacts, /one 12\.5 kV feeder serving approximately 260 customers/);
+  assert.match(proposedFacts, /retain GPD-T1 and the three voltage regulators/);
+  assert.match(proposedFacts, /commissioning planned for the fourth quarter of 2027/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
