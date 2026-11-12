@@ -589,6 +589,31 @@ test("Seal Cove keeps the dated distribution-voltage records separate", () => {
   assert.match(planningFacts, /SCV-T1 66\/4\.2 kV generation transformer; 3\.33 MVA/);
 });
 
+test("Harbour Grace separates its 2017 dual-bank arrangement from the current fleet table", () => {
+  const harbourGrace = stationProfiles.find((station) => station.code === "HGR");
+  assert.ok(harbourGrace);
+  assert.deepEqual(harbourGrace.connectedCircuits.map(({ circuit }) => circuit), ["57L", "68L"]);
+  assert.deepEqual(harbourGrace.feederRegister, ["HGR-01", "HGR-02", "HGR-03"]);
+  const existingFacts = harbourGrace.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = harbourGrace.planningRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /HGR-T1, 66\/12\.5 kV, 10 MVA; HGR-T2, 66\/12\.5 kV, 6\.7 MVA/);
+  assert.match(existingFacts, /57L to Upper Island Cove and 68L to Carbonear/);
+  assert.match(planningFacts, /HGR-T1 66\/25 kV; 25 MVA; 9\.54 MVA 2026 forecast/);
+});
+
+test("Upper Island Cove links both 57L sections and the filed feeder tie", () => {
+  const islandCove = stationProfiles.find((station) => station.code === "ILC");
+  assert.ok(islandCove);
+  assert.deepEqual(islandCove.connectedCircuits.map(({ circuit }) => circuit), ["57L", "57L"]);
+  assert.deepEqual(islandCove.connectedCircuits.map(({ from_code, to_code }) => [from_code, to_code]), [["BRB", "ILC"], ["ILC", "HGR"]]);
+  assert.deepEqual(islandCove.feederRegister, ["ILC-01", "ILC-02"]);
+  const existingFacts = islandCove.engineeringRecord.facts.flat().join(" ");
+  const proposedFacts = islandCove.historyRecords.find(({ label }) => label.includes("PROPOSED ILC-02")).facts.flat().join(" ");
+  assert.match(existingFacts, /TD-2018 connects ILC-02 to ILC-01/);
+  assert.match(islandCove.planningRecord.facts.flat().join(" "), /ILC-T1 66\/12\.5 kV; 13\.33 MVA; 9\.89 MVA 2026 forecast/);
+  assert.match(proposedFacts, /96 A on phase A and 77 A on phase C/);
+});
+
 test("Boyd's Cove and Gander retain the present corridor before the proposed 138 kV conversion", () => {
   const boydsCove = stationProfiles.find((station) => station.code === "BOY");
   const gander = stationProfiles.find((station) => station.code === "GAN");

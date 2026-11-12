@@ -80,6 +80,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
   },
   {
+    id: "np-2016-57l",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Transmission Line 57L Rebuild",
+    topics: ["57L", "Bay Roberts", "Upper Island Cove", "Harbour Grace", "66 kV", "transmission line rebuild"],
+    pages: "physical PDF pp. 318 to 320",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
     id: "np-2016-feeder-growth",
     year: 2015,
     organization: "Newfoundland Power",
@@ -748,6 +758,26 @@ export const sources = [
     pages: "physical PDF pp. 545 to 551",
     status: "verified",
     url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
+  },
+  {
+    id: "np-2027-ilc02",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, ILC-02 Feeder Refurbishment",
+    topics: ["Upper Island Cove", "ILC-01", "ILC-02", "TD-2018", "12.5 kV", "feeder refurbishment"],
+    pages: "physical PDF pp. 40 to 47",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
+    id: "np-2018-harbour-grace",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, Harbour Grace Substation Refurbishment and Modernization",
+    topics: ["Harbour Grace", "HGR-T1", "HGR-T2", "HGR-01", "HGR-02", "HGR-03", "57L", "68L", "substation modernization"],
+    pages: "physical PDF pp. 227 to 231",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
   },
   {
     id: "np-2019-pepperrell",
@@ -3785,7 +3815,63 @@ const filedFeederMapProfiles = [
       }
     ]
   },
-  { code: "HGR", mapPages: [["HGR-01", 74]] },
+  {
+    code: "HGR",
+    name: "Harbour Grace",
+    voltage: "66/25 kV current transformer record",
+    circuitRegisterLabel: "2025 CIRCUIT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "57L", from: "Upper Island Cove", from_code: "ILC", to: "Harbour Grace", to_code: "HGR" },
+      { circuit: "68L", from: "Harbour Grace", from_code: "HGR", to: "Carbonear", to_code: "CAR" }
+    ],
+    feederRegisterLabel: "2017 FILED STATION ARRANGEMENT",
+    feederRegister: ["HGR-01", "HGR-02", "HGR-03"],
+    mapPages: [["HGR-01", 74]],
+    eventLoads: [],
+    diagram: {
+      label: "current transformer rating on documented circuit connections",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "HGR-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "57L", destination: "Upper Island Cove", bus: "b1", destinationCode: "ILC" }, { label: "68L", destination: "Carbonear", bus: "b1", destinationCode: "CAR" }]
+    },
+    engineeringRecord: {
+      date: "2017 FILED STATION ARRANGEMENT",
+      title: "Harbour Grace transmission and distribution station",
+      sourceId: "np-2018-harbour-grace",
+      pages: "physical PDF pp. 227 to 230",
+      facts: [
+        ["Station built", "1966 as a transmission and distribution substation"],
+        ["Filed transformers", "HGR-T1, 66/12.5 kV, 10 MVA; HGR-T2, 66/12.5 kV, 6.7 MVA"],
+        ["Distribution", "HGR-01, HGR-02 and HGR-03 at 12.5 kV; approximately 1,800 customers in the 2017 filing"],
+        ["Transmission", "57L to Upper Island Cove and 68L to Carbonear"],
+        ["Installation years", "HGR-T1 installed in 1970; HGR-T2 installed in 1971"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["HGR-T1", "66/25 kV; 25 MVA; 9.54 MVA 2026 forecast"],
+        ["Dated arrangement change", "the 2017 station report lists two 66/12.5 kV banks; the 2027 fleet table lists one 66/25 kV HGR-T1 bank"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2018 FILED MODERNIZATION",
+        sourceId: "np-2018-harbour-grace",
+        pages: "physical PDF pp. 227 to 231",
+        facts: [
+          ["Structures", "replace the 66 kV and 12.5 kV wood structures with steel structures and reconstruct both buses"],
+          ["Switching", "replace aged bus, transformer and feeder switches; install motorized transformer switches with ground switches"],
+          ["Feeder control", "replace three hydraulic reclosers with SCADA-capable reclosers"],
+          ["Transformers", "refurbish HGR-T1 and HGR-T2, upgrade auxiliary protection and add spill containment"],
+          ["Protection and control", "install transformer breakers, digital line and transformer relays, a new control building and new control cables"]
+        ]
+      }
+    ]
+  },
   {
     code: "HUM",
     name: "Humber",
@@ -3841,7 +3927,69 @@ const filedFeederMapProfiles = [
       }
     ]
   },
-  { code: "ILC", mapPages: [["ILC-01", 86], ["ILC-02", 87]] },
+  {
+    code: "ILC",
+    name: "Upper Island Cove",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2015 FILED 57L ARRANGEMENT",
+    circuitSource: { sourceId: "np-2016-57l", pages: "physical PDF p. 318" },
+    connectedCircuits: [
+      { circuit: "57L", from: "Bay Roberts", from_code: "BRB", to: "Upper Island Cove", to_code: "ILC" },
+      { circuit: "57L", from: "Upper Island Cove", from_code: "ILC", to: "Harbour Grace", to_code: "HGR" }
+    ],
+    feederRegisterLabel: "2026 FILED FEEDER RECORD",
+    feederRegister: ["ILC-01", "ILC-02"],
+    mapPages: [["ILC-01", 86], ["ILC-02", 87]],
+    eventLoads: [],
+    diagram: {
+      label: "current transformer rating on documented 57L arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "ILC-T1", rating: "13.33 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "57L", destination: "Bay Roberts", bus: "b1", destinationCode: "BRB" }, { label: "57L", destination: "Harbour Grace", bus: "b1", destinationCode: "HGR" }]
+    },
+    engineeringRecord: {
+      date: "2026 FILED FEEDER RECORD",
+      title: "Upper Island Cove distribution station and feeder ties",
+      sourceId: "np-2027-ilc02",
+      pages: "physical PDF pp. 40 to 46",
+      facts: [
+        ["ILC-01", "served 953 customers in Upper Island Cove and Bryant's Cove in the 2026 filing"],
+        ["ILC-02", "served 1,166 customers in Bishop's Cove, Spaniard's Bay and Tilton"],
+        ["Distribution tie", "TD-2018 connects ILC-02 to ILC-01 near Bishop's Cove"],
+        ["Transmission connection", "57L runs between Bay Roberts and Harbour Grace through the Upper Island Cove station"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["ILC-T1", "66/12.5 kV; 13.33 MVA; 9.89 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2016 TO 2017 FILED 57L REBUILD",
+        sourceId: "np-2016-57l",
+        pages: "physical PDF pp. 318 to 320",
+        facts: [
+          ["Line history", "57L was built in 1958; the 8 km section into Upper Island Cove was built in 1989"],
+          ["Filed work", "rebuild 17.8 km of the original line in two stages during 2016 and 2017"]
+        ]
+      },
+      {
+        label: "2027 TO 2028 PROPOSED ILC-02 REFURBISHMENT",
+        sourceId: "np-2027-ilc02",
+        pages: "physical PDF pp. 40 to 47",
+        facts: [
+          ["Scope", "relocate 1.5 km of two-phase line to roadside and upgrade it to three-phase; refurbish another 4.5 km"],
+          ["Loading", "the filed phase peaks were 96 A on phase A and 77 A on phase C; the filing states an 86 A per-phase average"],
+          ["Tie limitation", "the phase imbalance restricted transfers through TD-2018 to Bishop's Cove Road load"],
+          ["Filed schedule", "construction planned for 2027 through the third quarter of 2028"]
+        ]
+      }
+    ]
+  },
   { code: "KEL", mapPages: [["KEL-01", 98], ["KEL-02", 99], ["KEL-03", 100]] },
   {
     code: "LGL",
