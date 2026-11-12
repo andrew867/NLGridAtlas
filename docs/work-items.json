@@ -343,7 +343,7 @@
       "dependencies": ["ISL-001", "ISL-003"],
       "completion_evidence": ["src/data.js", "src/island-backbone.js", "research/ISLAND_TERMINAL_RECORDS.md", "tests/terminal-diagram.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "Individual records cover Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, English Harbour West, Grand Falls, Lewisporte, Rattling Brook, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, and Blaketown. Blaketown combines its documented circuit endpoints with the 2026 equipment record and keeps the proposed 2028 modernization separate. Remaining lower-voltage rural stations and current breaker drawings stay deferred where no current station-specific filing has been located."
+      "notes": "Individual records cover Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, English Harbour West, Grand Falls, Lewisporte, Rattling Brook, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, and Laurentian. Laurentian adds all three filed 66 kV connections, LAU-T1, two feeders, and the proposed 2028 replacement. Remaining lower-voltage rural stations and current breaker drawings stay deferred where no current station-specific filing has been located."
     },
     {
       "id": "ISL-006",

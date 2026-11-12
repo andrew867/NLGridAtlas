@@ -1220,6 +1220,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
+    id: "np-2027-laurentian",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, LAU-T1 Power Transformer Replacement",
+    topics: ["Laurentian", "LAU-T1", "302L", "305L", "901E", "66 kV", "12.5 kV", "St. Lawrence"],
+    pages: "physical PDF pp. 466 to 472",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3099,7 +3109,6 @@ const filedFeederMapProfiles = [
   { code: "HUM", mapPages: [["HUM-01", 77], ["HUM-08", 78], ["HUM-09", 79]] },
   { code: "ILC", mapPages: [["ILC-01", 86], ["ILC-02", 87]] },
   { code: "KEL", mapPages: [["KEL-01", 98], ["KEL-02", 99], ["KEL-03", 100]] },
-  { code: "LAU", mapPages: [["LAU-01", 105]] },
   { code: "LGL", mapPages: [["LGL-01", 106]] },
   { code: "MOB", mapPages: [["MOB-02", 107]] },
   { code: "MSY", mapPages: [["MSY-01", 114]] },
@@ -3395,6 +3404,63 @@ export const stationProfiles = [
           ["Transformers", "retain BLK-T2 and BLK-T3; repair the BLK-T2 tap changer and add spill containment"],
           ["Protection and control", "replace electromechanical relays with digital relays; replace the control building and cable trench"],
           ["Filed schedule", "construction and commissioning planned for 2028"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "LAU",
+    name: "Laurentian",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2026 EXISTING CONNECTIONS",
+    circuitSource: { sourceId: "np-2027-laurentian", pages: "physical PDF p. 466" },
+    connectedCircuits: [
+      { circuit: "302L", from: "Salt Pond", from_code: "SPO", to: "Laurentian", to_code: "LAU" },
+      { circuit: "305L", from: "Webber's Cove", from_code: "WBC", to: "Laurentian", to_code: "LAU" },
+      { circuit: "901E", from: "Laurentian", from_code: "LAU", to: "Ryan's Hill and wind generation site", to_code: null }
+    ],
+    feederRegisterLabel: "2005 FEEDER REGISTER",
+    feederRegister: ["LAU-01", "LAU-02"],
+    mapPages: [["LAU-01", 105]],
+    eventLoads: [],
+    diagram: {
+      label: "2026 existing arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "LAU-T1", rating: "13.3 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "302L", destination: "Salt Pond", bus: "b1", destinationCode: "SPO" }, { label: "305L", destination: "Webber's Cove", bus: "b1", destinationCode: "WBC" }, { label: "901E", destination: "Ryan's Hill and wind generation site", bus: "b1", link: false }]
+    },
+    engineeringRecord: {
+      date: "2026 EXISTING ARRANGEMENT",
+      title: "Laurentian transmission and distribution station",
+      sourceId: "np-2027-laurentian",
+      pages: "physical PDF pp. 466 to 469",
+      facts: [
+        ["Station built", "1975 as a transmission and distribution substation"],
+        ["66 kV supplies", "302L from Salt Pond and 305L from Webber's Cove"],
+        ["Interconnection", "Newind 901E to Ryan's Hill Substation and the wind generation site"],
+        ["LAU-T1", "66/12.5 kV; 13.3 MVA; Federal Pioneer; installed in 1976"],
+        ["Distribution", "two 12.5 kV feeders serving approximately 700 customers in St. Lawrence"],
+        ["Protection and control", "existing circuit breakers and microprocessor-based digital relays"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["LAU-T1", "66/12.5 kV; 13.3 MVA; 6.73 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2027 TO 2028 PROPOSED REPLACEMENT",
+        sourceId: "np-2027-laurentian",
+        pages: "physical PDF pp. 470 to 472",
+        facts: [
+          ["Replacement transformer", "10/13.3/16.6 MVA, 66/12.5/25 kV"],
+          ["Site work", "new spill-containment foundation"],
+          ["Existing transformer disposition", "scrap LAU-T1 after replacement because of its overall condition"],
+          ["Filed schedule", "design and procurement in 2027; installation, testing and commissioning planned for 2028"]
         ]
       }
     ]

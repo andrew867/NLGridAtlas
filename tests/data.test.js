@@ -591,6 +591,20 @@ test("Blaketown combines documented circuits with the current transformer record
   assert.match(proposedFacts, /commissioning planned for 2028/);
 });
 
+test("Laurentian retains its three 66 kV connections and proposed transformer replacement", () => {
+  const laurentian = stationProfiles.find((station) => station.code === "LAU");
+  assert.ok(laurentian);
+  assert.deepEqual(laurentian.connectedCircuits.map(({ circuit }) => circuit), ["302L", "305L", "901E"]);
+  assert.deepEqual(laurentian.feederRegister, ["LAU-01", "LAU-02"]);
+  const existingFacts = laurentian.engineeringRecord.facts.flat().join(" ");
+  const proposedFacts = laurentian.historyRecords[0].facts.flat().join(" ");
+  assert.match(existingFacts, /LAU-T1 66\/12\.5 kV; 13\.3 MVA; Federal Pioneer; installed in 1976/);
+  assert.match(existingFacts, /Newind 901E to Ryan's Hill Substation and the wind generation site/);
+  assert.match(laurentian.planningRecord.facts.flat().join(" "), /6\.73 MVA 2026 forecast/);
+  assert.match(proposedFacts, /10\/13\.3\/16\.6 MVA, 66\/12\.5\/25 kV/);
+  assert.match(proposedFacts, /commissioning planned for 2028/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
