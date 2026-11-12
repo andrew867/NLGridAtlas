@@ -1795,7 +1795,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
     topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Topsail", "TOP-T1", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 484 to 487, 498 and 500 to 502",
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 438, 484 to 487, 498 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1928,6 +1928,36 @@ export const sources = [
     pages: "physical PDF pp. 1 and 5",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/CA-NP-052.PDF"
+  },
+  {
+    id: "np-2022-sandy-brook-penstock",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Sandy Brook Plant Penstock Replacement",
+    topics: ["Sandy Brook", "SBK", "hydroelectric generation", "woodstave penstock", "surge tank", "Exploits River"],
+    pages: "physical PDF pp. 210 to 218",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
+    id: "np-2023-sandy-brook-generator",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Sandy Brook Hydro Plant Generator Refurbishment",
+    topics: ["Sandy Brook", "SBK", "SBK-G1", "hydroelectric generation", "generator stator", "rotor insulation", "penstock"],
+    pages: "physical PDF pp. 142 to 145 and 466 to 477",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-2024-q4-sandy-brook",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "Q4 2023 Quarterly Regulatory Report, Sandy Brook Completion",
+    topics: ["Sandy Brook", "SBK", "hydroelectric generation", "penstock replacement", "generator refurbishment", "project completion"],
+    pages: "physical PDF p. 13",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202023%20(1st%20Revision)_Redacted.pdf"
   },
   {
     id: "np-2022-tors-cove",
@@ -2594,7 +2624,7 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "CA-NP-168, Attachment A, Transmission Line Endpoints",
-    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "357L", "358L", "359L", "Big Pond", "Bayview", "Heart's Content", "New Chelsea", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
+    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "105L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "357L", "358L", "359L", "Big Pond", "Bayview", "Grand Falls", "Sandy Brook", "Heart's Content", "New Chelsea", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
     pages: "physical PDF pp. 3 to 4",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
@@ -11262,6 +11292,104 @@ export const stationProfiles = [
           ["Recent annual generation", "7,066,579 kWh in 2022; 4,515,547 kWh in 2023; no generation shown for 2024; 1,190,064 kWh in 2025"],
           ["2026 capital program", "no capital project relating to Topsail Hydro Plant was approved for 2026"]
         ]
+      }
+    ]
+  },
+  {
+    code: "SBK",
+    name: "Sandy Brook",
+    voltage: "66/6.9 kV",
+    circuitRegisterLabel: "2025 CIRCUIT ENDPOINT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "105L", from: "Grand Falls", from_code: "GFS", to: "Sandy Brook", to_code: "SBK" }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "Current transformer register and documented 105L connection",
+      buses: [
+        { id: "b1", label: "105L connection", voltage: "66 kV" },
+        { id: "b2", label: "generator bus", voltage: "6.9 kV" }
+      ],
+      transformers: [{ label: "SBK-T1", rating: "7.0 MVA", from: "b2", to: "b1" }],
+      circuits: [{ label: "105L", destination: "Grand Falls", bus: "b1", destinationCode: "GFS" }],
+      generators: [{ label: "SBK-G1", rating: "6.31 MW", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2022 ENGINEERING REPORT",
+      title: "Sandy Brook hydro generation station",
+      sourceId: "np-2023-sandy-brook-generator",
+      pages: "physical PDF pp. 143 and 466 to 468",
+      facts: [
+        ["Plant", "placed in service in 1963 with one vertical 6.31 MW unit operating at 33.5 m rated net head"],
+        ["Normal production", "29.41 GWh per year in the 2022 engineering report"],
+        ["Generator", "SBK-G1, Canadian Westinghouse, manufactured in 1963 and original to the plant"],
+        ["Operation", "used throughout the year; Newfoundland and Labrador Hydro requested generation 352 times from 2017 through 2021"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 552",
+      facts: [["SBK-T1", "generation transformer; 66/6.9 kV; 7.0 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "2013 FILED LINE LOADING",
+        sourceId: "np-2013-line-loading",
+        pages: "physical PDF p. 3; attachment p. 9",
+        facts: [["105L", "Sandy Brook to Grand Falls; 66 kV; 40.1 MVA winter rating; 5.75 MVA forecast 2012 peak; 14% loading"]]
+      },
+      {
+        label: "1997 TO 2011 REPORTED PLANT UPGRADES",
+        sourceId: "np-2023-sandy-brook-generator",
+        pages: "physical PDF p. 468",
+        facts: [
+          ["Turbine and controls", "runner and wicket gates replaced in 2001; instrumentation and programmable logic controller installed in 2001"],
+          ["Electrical systems", "station-service transfer switch installed in 2000; battery bank and charger replaced in 2007; revenue meter installed in 2009"],
+          ["2011 work", "switchgear and plant control replaced"]
+        ]
+      },
+      {
+        label: "2022 FILED PENSTOCK REPLACEMENT",
+        sourceId: "np-2022-sandy-brook-penstock",
+        pages: "physical PDF pp. 210 to 217",
+        facts: [
+          ["Original penstock", "336 m long and 2.6 m diameter, installed in 1963, entirely above ground, with 251 m upstream and 85 m downstream sections separated by the surge tank"],
+          ["Condition", "poor timber saddles, joint leakage, stave brooming and decay, pipe ovaling, ice buildup, and drainage loss around supports"],
+          ["Filed replacement", "engineering and procurement in 2022; site construction and commissioning planned for 2023; $5.094 million total budget"]
+        ]
+      },
+      {
+        label: "2023 FILED GENERATOR REFURBISHMENT",
+        sourceId: "np-2023-sandy-brook-generator",
+        pages: "physical PDF pp. 142 to 145 and 466 to 477",
+        facts: [
+          ["Scope", "rewind the generator stator and reinsulate the rotor poles during the penstock outage"],
+          ["Execution", "remove and ship the rotor and exciter, install new stator coils, reassemble, realign, reconnect instrumentation, commission and test"],
+          ["Filed cost and duration", "$1.577 million and approximately 24 weeks"]
+        ]
+      },
+      {
+        label: "Q4 2023 REPORTED COMPLETION",
+        sourceId: "np-2024-q4-sandy-brook",
+        pages: "physical PDF p. 13",
+        facts: [["Completed work", "penstock replacement and generator refurbishment completed in the fourth quarter of 2023"]]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 438",
+        facts: [["Generation transformer", "SBK-T1, asset 200181"]]
+      },
+      {
+        label: "2025 CIRCUIT ENDPOINT REGISTER",
+        sourceId: "np-2025-ca-np-168",
+        pages: "physical PDF p. 4",
+        facts: [["105L", "Sandy Brook Substation to Grand Falls Substation"]]
       }
     ]
   },

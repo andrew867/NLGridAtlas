@@ -2004,6 +2004,31 @@ test("Topsail separates its internal generation connection from the external tra
   assert.match(historyFacts, /1,190,064 kWh in 2025/);
 });
 
+test("Sandy Brook connects the rebuilt hydro plant to Grand Falls through 105L", () => {
+  const sandyBrook = stationProfiles.find((station) => station.code === "SBK");
+  assert.ok(sandyBrook);
+  assert.deepEqual(sandyBrook.connectedCircuits, [
+    { circuit: "105L", from: "Grand Falls", from_code: "GFS", to: "Sandy Brook", to_code: "SBK" }
+  ]);
+  assert.deepEqual(sandyBrook.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "6.9 kV"]);
+  assert.deepEqual(sandyBrook.diagram.transformers.map(({ label, rating }) => [label, rating]), [["SBK-T1", "7.0 MVA"]]);
+  assert.deepEqual(sandyBrook.diagram.generators.map(({ label, rating }) => [label, rating]), [["SBK-G1", "6.31 MW"]]);
+  const plantFacts = sandyBrook.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = sandyBrook.planningRecord.facts.flat().join(" ");
+  const historyFacts = sandyBrook.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /6\.31 MW unit operating at 33\.5 m rated net head/);
+  assert.match(plantFacts, /29\.41 GWh per year/);
+  assert.match(plantFacts, /requested generation 352 times/);
+  assert.match(planningFacts, /SBK-T1.*66\/6\.9 kV.*7\.0 MVA/);
+  assert.match(historyFacts, /105L.*40\.1 MVA.*5\.75 MVA.*14% loading/);
+  assert.match(historyFacts, /runner and wicket gates replaced in 2001/);
+  assert.match(historyFacts, /336 m long and 2\.6 m diameter/);
+  assert.match(historyFacts, /joint leakage, stave brooming and decay/);
+  assert.match(historyFacts, /rewind the generator stator and reinsulate the rotor poles/);
+  assert.match(historyFacts, /completed in the fourth quarter of 2023/);
+  assert.match(historyFacts, /SBK-T1, asset 200181/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");
