@@ -130,6 +130,7 @@ Updated: 2026-11-12
 - Rebuilt Bayview as a two-bank 66/12.5 kV station with 357L, 358L, 359L, and five distribution feeders. The record includes the completed 2004 BVS-T2 relocation, filed BVS-05 work, proposed station modernization, current transformer values, the proposed BVS-04 refurbishment, and both feeder-project drawings.
 - Rebuilt Abrahams Cove around the radial 410L sections from Berry Head to Lower Cove Mine, current transformer values, the 2023 customer and contingency record, and the customer-funded Lower Cove extensions.
 - Rebuilt Garnish around the documented 2009 station relocation. The new 66/12.5 kV station retained the transformer, replaced the other equipment, removed the former 1.6 km transmission tap, and connects directly to 301L without a high-voltage bus.
+- Added the Grand Falls logical one-line across the separate station yards. It connects the 138 kV, 66 kV, 25 kV, and current 4.2 kV functions, the completed GFS-T3 addition, current GFS-T5 record, 101L, 130L, 132L, and the five filed 25 kV feeders.
 
 ## Active work
 

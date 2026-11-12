@@ -4391,18 +4391,39 @@ const filedFeederMapProfiles = [
     code: "GFS",
     name: "Grand Falls",
     voltage: "138/66/25 kV and 66/4.2 kV",
+    circuitRegisterLabel: "2015 FILED STATION ARRANGEMENT",
+    circuitSource: { sourceId: "np-2016-grand-falls", pages: "physical PDF p. 265" },
+    connectedCircuits: [
+      { circuit: "101L", from: "Grand Falls", from_code: "GFS", to: "Rattling Brook", to_code: "RBK" },
+      { circuit: "130L", from: "Stony Brook", from_code: "STB", to: "Grand Falls", to_code: "GFS" },
+      { circuit: "132L", from: "Grand Falls", from_code: "GFS", to: "Bishop's Falls", to_code: "BFS" }
+    ],
     feederRegisterLabel: "2016 GRAND FALLS 25 KV RECORD",
     feederRegister: ["GFS-02", "GFS-06", "GFS-07", "GFS-08", "GFS-10"],
     mapPages: [["GFS-07", 64], ["GFS-08", 65]],
     eventLoads: [],
+    diagram: {
+      label: "2016 completed 25 kV arrangement with current 4.2 kV bank",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "25 kV bus", voltage: "25 kV" }, { id: "b4", label: "Grand Falls 4.2 kV bus", voltage: "4.2 kV" }],
+      transformers: [{ label: "GFS-T1", rating: "29.7 MVA", from: "b1", to: "b2" }, { label: "GFS-T2", rating: "20 MVA", from: "b1", to: "b3" }, { label: "GFS-T3", rating: "50 MVA", from: "b1", to: "b3" }, { label: "GFS-T5", rating: "11.17 MVA", from: "b2", to: "b4" }],
+      circuits: [
+        { label: "130L", destination: "Stony Brook", bus: "b1", destinationCode: "STB" },
+        { label: "132L", destination: "Bishop's Falls", bus: "b1", destinationCode: "BFS" },
+        { label: "101L", destination: "Rattling Brook", bus: "b2", destinationCode: "RBK" },
+        { label: "GFS-02", destination: "Grand Falls and Grenfell Heights", bus: "b3", link: false },
+        { label: "GFS-06", destination: "Grand Falls and Badger", bus: "b3", link: false },
+        { label: "GFS-07", destination: "Grand Falls", bus: "b3", link: false },
+        { label: "GFS-08", destination: "Grand Falls", bus: "b3", link: false },
+        { label: "GFS-10", destination: "Grand Falls", bus: "b3", link: false }
+      ]
+    },
     engineeringRecord: {
       date: "2016 SELECTED ARRANGEMENT",
       title: "Grand Falls transmission and 25 kV distribution banks",
       sourceId: "np-2016-grand-falls",
       pages: "physical PDF pp. 265 and 287 to 293",
       facts: [
-        ["Station yards", "NGF is the 138/66/25 kV yard north of the Trans-Canada Highway; GFS is the separate 66/4.16 kV yard south of the highway"],
-        ["Station yards", "separate 138/66/25 kV and 66/4.16 kV yards on opposite sides of the Trans-Canada Highway"],
+        ["Station yards", "separate 138/66/25 kV and 66/4.16 kV yards; NGF is north of the Trans-Canada Highway and the 4.16 kV yard is south of the highway"],
         ["GFS-T1", "138/66 kV; 29.7 MVA"],
         ["GFS-T2", "138/25 kV; 20 MVA"],
         ["GFS-T3 selected replacement", "138/25 kV; 50 MVA; operated in parallel with GFS-T2"],
