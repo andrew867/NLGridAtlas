@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, Lookout Brook, and Harmon. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, and Clarkes Pond. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -106,6 +106,19 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] HAR-T1 supplies two 12.5 kV feeders and approximately 1,400 customers in Stephenville, physical PDF p. 498.
 - [x] The proposed replacement is a 15/20/25 MVA, 66/12.5/25 kV unit selected for a 15.9 MVA ten-year maximum peak forecast, with commissioning planned for 2029, physical PDF pp. 500 and 503.
 - [ ] Do not record the replacement as installed before a completion report confirms commissioning.
+
+## Dunville and Clarkes Pond station records
+
+- [x] The 2021 filing records Dunville as a 1980 transmission and distribution substation on 55L between Blaketown and Clarkes Pond. The documented arrangement had one 8.3 MVA, 66/25 kV transformer and two 25 kV feeders, physical PDF pp. 108 to 109.
+- [x] DUN-01 served approximately 1,050 customers along the Cape Shore. DUN-02 served approximately 950 customers in Dunville, physical PDF p. 123.
+- [x] Dunville station load increased from 7.6 MVA in 2009 to 8.6 MVA in 2018. The filing forecast 8.8 MVA for 2021, physical PDF pp. 123 to 124.
+- [x] The filed 2021 project replaced the 8.3 MVA transformer with a spare 25 MVA, 66/25 kV transformer. NLH-NP-023 identifies the selected spare as former Lewisporte transformer LEW-T1, physical PDF pp. 119 to 120; NLH-NP-023 physical PDF p. 1.
+- [x] The 2027 transformer table records the current DUN-T1 at 25 MVA with a 7.98 MVA 2026 forecast, physical PDF p. 547.
+- [x] The 2027 failure table records the 25 MVA DUN-T1 as an in-service failure in 2021 followed by repair. NLH-NP-014 records 773 days out of service for a rewind, physical PDF p. 560; NLH-NP-014 physical PDF p. 1.
+- [x] The 2021 station project proposed dividing 55L into 55L from Blaketown to Dunville and new 50L from Dunville to Clarkes Pond, physical PDF p. 109.
+- [ ] Do not label 50L as the current Dunville to Clarkes Pond circuit until a later completion or circuit record confirms the filed change.
+- [x] The 2020 Clarkes Pond record identifies parallel CLK-T1 and CLK-T2, each 10 MVA at 66/12.5 kV, and three 12.5 kV feeders serving Freshwater, Jerseyside, Placentia, and Argentia, physical PDF p. 123.
+- [x] The 2027 transformer table records 2026 forecasts of 5.21 MVA for CLK-T1 and 5.53 MVA for CLK-T2, physical PDF p. 546.
 
 ## Pulpit Rock feeder-bus and transformer records
 

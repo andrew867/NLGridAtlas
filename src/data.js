@@ -1250,6 +1250,46 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
+    id: "np-2021-dunville-study",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, Dunville Refurbishment and Load Growth Study",
+    topics: ["Dunville", "Clarkes Pond", "DUN-T1", "CLK-T1", "CLK-T2", "55L", "50L", "66 kV", "25 kV", "12.5 kV"],
+    pages: "physical PDF pp. 108 to 109 and 119 to 124",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
+  },
+  {
+    id: "np-2021-nlh-np-023",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-023, Dunville Replacement Transformer Source",
+    topics: ["Dunville", "DUN-T1", "Lewisporte", "LEW-T1", "spare transformer"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/rfis/NLH-NP-023.PDF"
+  },
+  {
+    id: "np-2026-nlh-np-014",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-014, Power Transformer Repair Times",
+    topics: ["Dunville", "DUN-T1", "transformer failure", "transformer rewind"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/responses/NLH-NP-014.PDF"
+  },
+  {
+    id: "np-2027-transformer-failures",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Power Transformer Failure History",
+    topics: ["Dunville", "DUN-T1", "power transformer failures", "repair"],
+    pages: "physical PDF p. 560",
+    status: "verified",
+    url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3598,6 +3638,129 @@ export const stationProfiles = [
         ]
       }
     ]
+  },
+  {
+    code: "DUN",
+    name: "Dunville",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2020 DOCUMENTED SUPPLY",
+    circuitSource: { sourceId: "np-2021-dunville-study", pages: "physical PDF pp. 108 to 109" },
+    connectedCircuits: [
+      { circuit: "55L", from: "Blaketown", from_code: "BLK", to: "Dunville", to_code: "DUN" },
+      { circuit: "55L", from: "Dunville", from_code: "DUN", to: "Clarkes Pond", to_code: "CLK" }
+    ],
+    feederRegisterLabel: "2020 STATION RECORD",
+    feederRegister: ["DUN-01", "DUN-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2020 layout / 2026 transformer rating",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "DUN-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "55L", destination: "Blaketown", bus: "b1", destinationCode: "BLK" }, { label: "55L", destination: "Clarkes Pond", bus: "b1", destinationCode: "CLK" }]
+    },
+    engineeringRecord: {
+      date: "2020 DOCUMENTED ARRANGEMENT",
+      title: "Dunville transmission and distribution station",
+      sourceId: "np-2021-dunville-study",
+      pages: "physical PDF pp. 108 to 109 and 123 to 124",
+      facts: [
+        ["Station built", "1980 as a transmission and distribution substation"],
+        ["Transmission supply", "55L from Blaketown continued through Dunville to Clarkes Pond"],
+        ["DUN-T1 in 2020", "66/25 kV; 8.3 MVA"],
+        ["DUN-01", "25 kV; approximately 1,050 customers along the Cape Shore"],
+        ["DUN-02", "25 kV; approximately 950 customers in Dunville"],
+        ["Recorded load", "7.6 MVA in 2009 and 8.6 MVA in 2018; 8.8 MVA forecast for 2021"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["DUN-T1", "66/25 kV; 25 MVA; 7.98 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2021 FILED CAPACITY AND LINE WORK",
+        sourceId: "np-2021-dunville-study",
+        pages: "physical PDF pp. 109, 119 to 120 and 124",
+        facts: [
+          ["Transformer project", "replace the 8.3 MVA DUN-T1 with a spare 25 MVA, 66/25 kV transformer"],
+          ["Line project", "install a 66 kV breaker and divide 55L into 55L from Blaketown to Dunville and new 50L from Dunville to Clarkes Pond"],
+          ["Evidence state", "filed project arrangement; the atlas does not treat the 50L designation as current without a later completion or circuit record"]
+        ]
+      },
+      {
+        label: "2021 FILED REPLACEMENT UNIT",
+        sourceId: "np-2021-nlh-np-023",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Selected spare", "former 25 MVA Lewisporte transformer LEW-T1, removed during the 2019 Lewisporte 138 kV conversion"]
+        ]
+      },
+      {
+        label: "2021 FAILURE RECORD",
+        sourceId: "np-2027-transformer-failures",
+        pages: "physical PDF p. 560",
+        facts: [
+          ["Failure record", "25 MVA DUN-T1 failed in service in 2021 and was repaired"]
+        ]
+      },
+      {
+        label: "REPAIR DURATION REPORTED IN 2025",
+        sourceId: "np-2026-nlh-np-014",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Repair", "DUN-T1 was out of service for 773 days for a transformer rewind"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "CLK",
+    name: "Clarkes Pond",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2020 DOCUMENTED SUPPLY",
+    circuitSource: { sourceId: "np-2021-dunville-study", pages: "physical PDF pp. 109 and 123" },
+    connectedCircuits: [
+      { circuit: "55L", from: "Dunville", from_code: "DUN", to: "Clarkes Pond", to_code: "CLK" }
+    ],
+    feederRegisterLabel: "2020 STATION RECORD",
+    feederRegister: ["CLK-02", "CLK-03", "CLK-04"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2020 documented arrangement / 2026 ratings",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "CLK-T1", rating: "10 MVA", from: "b1", to: "b2" }, { label: "CLK-T2", rating: "10 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "55L", destination: "Dunville", bus: "b1", destinationCode: "DUN" }]
+    },
+    engineeringRecord: {
+      date: "2020 DOCUMENTED ARRANGEMENT",
+      title: "Clarkes Pond distribution station",
+      sourceId: "np-2021-dunville-study",
+      pages: "physical PDF p. 123",
+      facts: [
+        ["Location", "High Road in Jerseyside, approximately 7 kilometres from Dunville Substation"],
+        ["CLK-T1", "66/12.5 kV; 10 MVA; operated in parallel with CLK-T2"],
+        ["CLK-T2", "66/12.5 kV; 10 MVA; operated in parallel with CLK-T1"],
+        ["CLK-02", "12.5 kV; approximately 390 customers in Freshwater and Jerseyside"],
+        ["CLK-03", "12.5 kV; approximately 750 customers in Placentia"],
+        ["CLK-04", "12.5 kV; approximately 100 customers in Argentia"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [
+        ["CLK-T1", "66/12.5 kV; 10 MVA; 5.21 MVA 2026 forecast"],
+        ["CLK-T2", "66/12.5 kV; 10 MVA; 5.53 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: []
   },
   {
     code: "LEW",

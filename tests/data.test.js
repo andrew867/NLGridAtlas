@@ -636,6 +636,37 @@ test("Harmon retains both 66 kV supplies and the documented transformer rating d
   assert.match(proposedFacts, /commissioning planned for 2029/);
 });
 
+test("Dunville separates its documented 2020 layout from the later 25 MVA transformer record", () => {
+  const dunville = stationProfiles.find((station) => station.code === "DUN");
+  assert.ok(dunville);
+  assert.deepEqual(dunville.connectedCircuits.map(({ circuit }) => circuit), ["55L", "55L"]);
+  assert.deepEqual(dunville.feederRegister, ["DUN-01", "DUN-02"]);
+  assert.deepEqual(dunville.diagram.transformers.map(({ label, rating }) => [label, rating]), [["DUN-T1", "25 MVA"]]);
+  const existingFacts = dunville.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = dunville.planningRecord.facts.flat().join(" ");
+  const historyFacts = dunville.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /DUN-T1 in 2020 66\/25 kV; 8\.3 MVA/);
+  assert.match(existingFacts, /7\.6 MVA in 2009 and 8\.6 MVA in 2018; 8\.8 MVA forecast for 2021/);
+  assert.match(planningFacts, /DUN-T1 66\/25 kV; 25 MVA; 7\.98 MVA 2026 forecast/);
+  assert.match(historyFacts, /former 25 MVA Lewisporte transformer LEW-T1/);
+  assert.match(historyFacts, /773 days.*transformer rewind/);
+  assert.match(historyFacts, /does not treat the 50L designation as current/);
+});
+
+test("Clarkes Pond retains the documented parallel transformer bank and three feeders", () => {
+  const clarkesPond = stationProfiles.find((station) => station.code === "CLK");
+  assert.ok(clarkesPond);
+  assert.deepEqual(clarkesPond.connectedCircuits.map(({ circuit }) => circuit), ["55L"]);
+  assert.deepEqual(clarkesPond.feederRegister, ["CLK-02", "CLK-03", "CLK-04"]);
+  assert.deepEqual(clarkesPond.diagram.transformers.map(({ label, rating }) => [label, rating]), [["CLK-T1", "10 MVA"], ["CLK-T2", "10 MVA"]]);
+  const existingFacts = clarkesPond.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = clarkesPond.planningRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /operated in parallel with CLK-T2/);
+  assert.match(existingFacts, /approximately 750 customers in Placentia/);
+  assert.match(planningFacts, /CLK-T1 66\/12\.5 kV; 10 MVA; 5\.21 MVA 2026 forecast/);
+  assert.match(planningFacts, /CLK-T2 66\/12\.5 kV; 10 MVA; 5\.53 MVA 2026 forecast/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
