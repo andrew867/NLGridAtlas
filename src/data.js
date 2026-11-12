@@ -730,6 +730,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
   },
   {
+    id: "np-2006-bot01-study",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Botwood-01 Feeder Study",
+    topics: ["Botwood", "BOT-01", "25 kV", "7.2 kV", "14.4 kV insulation", "AASC", "ACSR", "reliability", "feeder rebuild"],
+    pages: "physical PDF pp. 387, 393 to 403",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
     id: "np-2014-carbonear",
     year: 2013,
     organization: "Newfoundland Power",
@@ -7821,6 +7831,30 @@ export const stationProfiles = [
           ["Protection and monitoring", "upgraded transformer protection and monitoring equipment and communications systems"],
           ["Site and control work", "installed a control building, improved the ground grid, and added feeder automation capability"]
         ]
+      },
+      {
+        label: "2005 BOT-01 REBUILD STUDY",
+        sourceId: "np-2006-bot01-study",
+        pages: "physical PDF pp. 387, 393 to 401",
+        facts: [
+          ["Feeder extent", "25 kV; approximately 199 km; approximately 1,607 customers"],
+          ["Construction dates", "main feeder constructed in 1959; Leading Tickles and Fortune Harbour sections constructed in 1965"],
+          ["Conductor", "main sections used 4/0 AASC; other sections included 4/0 and 1/0 AASC and long sections of #2 and #4 ACSR"],
+          ["2002 to 2004 record", "140 interruptions and 2,709,850 customer-minutes of interruption"],
+          ["Recorded causes", "broken conductor accounted for 34% of distribution outages; nine tree-contact outages produced 823,248 customer-minutes"],
+          ["Filed scope", "replace deteriorated conductor, relocate off-road sections, remove danger trees, and rebuild remaining 7.2 kV sections to 14.4 kV insulation standards while retaining 7.2 kV operation"],
+          ["Filed cost", "$2.585 million over 2006 to 2008"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2005 BOT-01 FEEDER ROUTE",
+    referenceSheets: [
+      {
+        title: "BOT-01 route and study sections",
+        image: "./reference-maps/bot-01-2005-route.png",
+        alt: "Filed BOT-01 feeder route from Botwood through Northern Arm, Point of Bay, Point Leamington, Fortune Harbour, Cottrell's Cove, Moore's Cove, and Leading Tickles, with study sections 7.2 to 7.13",
+        sourceId: "np-2006-bot01-study",
+        pages: "physical PDF p. 403"
       }
     ]
   },

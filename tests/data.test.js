@@ -1259,6 +1259,13 @@ test("Botwood, Carbonear, Gallant Street, and Heart's Content have dedicated sta
   assert.deepEqual(botwood.connectedCircuits.map(({ circuit }) => circuit), ["134L"]);
   assert.deepEqual(botwood.feederRegister, ["BOT-01", "BOT-02", "BOT-03"]);
   assert.match(botwood.engineeringRecord.facts.flat().join(" "), /138\/25 kV; 20 MVA.*three 25 kV feeders/);
+  const bot01 = botwood.historyRecords.find((record) => record.sourceId === "np-2006-bot01-study");
+  assert.match(bot01.facts.flat().join(" "), /approximately 199 km.*1,607 customers.*140 interruptions.*2,709,850 customer-minutes/);
+  assert.match(bot01.facts.flat().join(" "), /7\.2 kV sections to 14\.4 kV insulation standards.*\$2\.585 million/);
+  assert.deepEqual(botwood.referenceSheets.map((sheet) => [sheet.image, sheet.pages]), [
+    ["./reference-maps/bot-01-2005-route.png", "physical PDF p. 403"]
+  ]);
+  assert.equal(sources.find((source) => source.id === "np-2006-bot01-study").status, "proposed");
 
   assert.deepEqual(carbonear.connectedCircuits.map(({ circuit }) => circuit), ["40L", "41L", "56L", "68L"]);
   assert.deepEqual(carbonear.feederRegister, ["CAR-01", "CAR-02", "CAR-03", "CAR-04"]);
