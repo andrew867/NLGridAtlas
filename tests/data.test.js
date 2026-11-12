@@ -683,6 +683,23 @@ test("Walbournes combines its filed equipment record with the project completion
   assert.match(historyFacts, /reported the Walbournes refurbishment and modernization complete/);
 });
 
+test("Gambo retains both voltage transformations and the completed 2024 modernization", () => {
+  const gambo = stationProfiles.find((station) => station.code === "GAM");
+  assert.ok(gambo);
+  assert.deepEqual(gambo.connectedCircuits.map(({ circuit }) => circuit), ["121L", "146L", "115L"]);
+  assert.deepEqual(gambo.feederRegister, ["GAM-01", "GAM-02"]);
+  assert.deepEqual(gambo.diagram.transformers.map(({ label, rating }) => [label, rating]), [["GAM-T1", "6.67 MVA"], ["GAM-T2", "41.6 MVA"]]);
+  const existingFacts = gambo.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = gambo.planningRecord.facts.flat().join(" ");
+  const historyFacts = gambo.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /GAM-T1 138\/12\.5\/25 kV; 6\.67 MVA/);
+  assert.match(existingFacts, /GAM-T2 138\/66 kV; 41\.6 MVA/);
+  assert.match(existingFacts, /radial 66 kV supply to Hare Bay, Trinity, Greenspond, and Wesleyville/);
+  assert.match(planningFacts, /GAM-T1 138\/25 kV operating record; 6\.67 MVA; 6\.42 MVA 2026 forecast/);
+  assert.match(historyFacts, /add tie-breaker B1\/B2-B/);
+  assert.match(historyFacts, /commissioning complete in the fourth quarter of 2024/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

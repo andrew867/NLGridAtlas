@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -129,6 +129,17 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] Newfoundland Power reported the station refurbishment and modernization complete in its Q4 2023 regulatory report, physical PDF p. 12.
 - [x] The 2027 transformer table records 2026 forecasts of 20.74 MVA for WAL-T1 and 21.16 MVA for WAL-T2, physical PDF p. 551.
 - [ ] The completion report does not publish the post-project breaker or bus one-line. The atlas retains a logical connection diagram rather than an as-built breaker arrangement.
+
+## Gambo station record
+
+- [x] The 2024 filing identifies 121L from Glovertown and 146L from Gander as the 138 kV supplies, physical PDF p. 349.
+- [x] GAM-T1 is a 6.67 MVA, 138/12.5/25 kV Moloney Electric transformer manufactured in 1972. It supplies two 25 kV feeders and approximately 1,370 customers, physical PDF pp. 349 and 356.
+- [x] GAM-T2 is a 41.6 MVA, 138/66 kV Westinghouse transformer manufactured in 1976. It supplies radial 115L to Hare Bay, Trinity, Greenspond, and Wesleyville, serving approximately 3,500 customers, physical PDF pp. 349 and 356.
+- [x] The 121L breaker was replaced with a 138 kV SF6 breaker in 2023 after the previous oil-filled breaker failed, physical PDF p. 352.
+- [x] The 2024 project scope replaced the 146L and 115L breakers, deteriorated structures and switches, added 138 kV tie-breaker B1/B2-B, and retained both transformers, physical PDF pp. 351 to 363.
+- [x] Newfoundland Power reported commissioning complete in the fourth quarter of 2024, Q4 2024 regulatory report, physical PDF p. 15.
+- [x] The 2027 transformer table records GAM-T1 at 6.67 MVA with a 6.42 MVA 2026 forecast and GAM-T2 at 41.6 MVA, physical PDF pp. 547 and 553.
+- [ ] The completion report does not publish an as-built one-line. The atlas uses the filed logical connections and does not reproduce the conceptual breaker layout as an as-built drawing.
 
 ## Pulpit Rock feeder-bus and transformer records
 

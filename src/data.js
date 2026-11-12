@@ -1310,6 +1310,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202023%20(1st%20Revision)_Redacted.pdf"
   },
   {
+    id: "np-2024-gambo",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Gambo Substation Refurbishment and Modernization",
+    topics: ["Gambo", "GAM-T1", "GAM-T2", "121L", "146L", "115L", "138 kV", "66 kV", "25 kV"],
+    pages: "physical PDF pp. 349 to 363",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-2024-q4-regulatory",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "Q4 2024 Quarterly Regulatory Report",
+    topics: ["Gambo", "Old Perlican", "Memorial", "Islington", "substation commissioning"],
+    pages: "physical PDF p. 15",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202024_Redacted.pdf"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3845,6 +3865,74 @@ export const stationProfiles = [
         pages: "physical PDF p. 12",
         facts: [
           ["Project status", "Newfoundland Power reported the Walbournes refurbishment and modernization complete"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "GAM",
+    name: "Gambo",
+    voltage: "138/66/25 kV",
+    circuitRegisterLabel: "2023 FILED CONNECTIONS",
+    circuitSource: { sourceId: "np-2024-gambo", pages: "physical PDF p. 349" },
+    connectedCircuits: [
+      { circuit: "121L", from: "Glovertown", from_code: "GLV", to: "Gambo", to_code: "GAM" },
+      { circuit: "146L", from: "Gander", from_code: "GAN", to: "Gambo", to_code: "GAM" },
+      { circuit: "115L", from: "Gambo", from_code: "GAM", to: "Hare Bay, Trinity, Greenspond, and Wesleyville radial system", to_code: null }
+    ],
+    feederRegisterLabel: "2023 STATION RECORD",
+    feederRegister: ["GAM-01", "GAM-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2023 filed logical connection / 2024 commissioning record",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "GAM-T1", rating: "6.67 MVA", from: "b1", to: "b3" }, { label: "GAM-T2", rating: "41.6 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "121L", destination: "Glovertown", bus: "b1", destinationCode: "GLV" }, { label: "146L", destination: "Gander", bus: "b1", destinationCode: "GAN" }, { label: "115L", destination: "Hare Bay to Lumsden radial system", bus: "b2", link: false }]
+    },
+    engineeringRecord: {
+      date: "2023 FILED EQUIPMENT / 2024 PROJECT COMMISSIONING",
+      title: "Gambo transmission and distribution station",
+      sourceId: "np-2024-gambo",
+      pages: "physical PDF pp. 349, 352 and 356 to 357",
+      facts: [
+        ["Station built", "1966 as a transmission and distribution substation"],
+        ["138 kV supplies", "121L from Glovertown and 146L from Gander"],
+        ["GAM-T1", "138/12.5/25 kV; 6.67 MVA; Moloney Electric; manufactured in 1972"],
+        ["Distribution", "GAM-01 and GAM-02 at 25 kV; approximately 1,370 customers in the Gambo area"],
+        ["GAM-T2", "138/66 kV; 41.6 MVA; Westinghouse; manufactured in 1976"],
+        ["115L system", "radial 66 kV supply to Hare Bay, Trinity, Greenspond, and Wesleyville; approximately 3,500 customers"],
+        ["121L breaker", "138 kV SF6 breaker installed in 2023 after failure of the previous oil-filled breaker"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 547 and 553",
+      facts: [
+        ["GAM-T1", "138/25 kV operating record; 6.67 MVA; 6.42 MVA 2026 forecast"],
+        ["GAM-T2", "138/66 kV; 41.6 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2024 FILED MODERNIZATION SCOPE",
+        sourceId: "np-2024-gambo",
+        pages: "physical PDF pp. 351 to 363",
+        facts: [
+          ["138 kV equipment", "replace the 146L breaker and deteriorated switches; add tie-breaker B1/B2-B"],
+          ["66 kV equipment", "replace the 115L breaker, switches, potential transformers, and wood structure"],
+          ["25 kV equipment", "replace the wood structure, switches, and metering tank; reinstall the two feeder reclosers and voltage regulators"],
+          ["Transformers", "retain GAM-T1 and GAM-T2 on new spill-containment foundations"],
+          ["Protection and control", "replace electromechanical relays; construct a new control building; extend the ground grid"]
+        ]
+      },
+      {
+        label: "Q4 2024 COMMISSIONING",
+        sourceId: "np-2024-q4-regulatory",
+        pages: "physical PDF p. 15",
+        facts: [
+          ["Project status", "Newfoundland Power reported commissioning complete in the fourth quarter of 2024"]
         ]
       }
     ]
