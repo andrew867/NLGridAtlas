@@ -470,12 +470,22 @@ export const sources = [
     url: "https://nlhydro.com/wp-content/uploads/2025/09/From-NLH-Application-for-Capital-Expenditures-for-the-Purchase-and-Installation-of-Bay-dEspoir-Unit-8-and-Avalon-Combustion-Turbine-Redacted-2025-03-21-UPDATED-2025-05-09-compressed.pdf"
   },
   {
+    id: "nlh-2025-avalon-ct-early-execution",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "Additional Early Execution Capital Work for Bay d'Espoir Unit 8 and Avalon Combustion Turbine",
+    topics: ["Avalon combustion turbine", "early execution", "TL218", "generator step-up transformer", "Newfoundland Power line relocation"],
+    pages: "physical PDF pp. 1 to 2, 15 to 21, and 34",
+    status: "proposed",
+    url: "https://nlhydro.com/wp-content/uploads/2026/04/From_20NLH_20-_20Application_20for_20Additional_20Early_20Execution_20Capital_20Work_20for_20Bay_20d_E2_80_99Espoir_20Unit_208_20and_20Avalon_20Combustion_20Turbine_20-_20REDACTED_20-_202025-12-11.PDF.pdf"
+  },
+  {
     id: "vhf-2004",
     year: 2004,
     organization: "NL Hydro",
     title: "2004 Capital Budget Application",
     topics: ["VHF", "repeaters", "microwave", "protection"],
-    pages: "PDF pp. 92, 193, 195, 200, 265 to 266",
+    pages: "physical PDF pp. 193 to 203, 251, 258, and 265 to 266",
     status: "verified",
     url: "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf"
   },
@@ -545,7 +555,7 @@ export const sources = [
     organization: "NL Hydro",
     title: "2027 Capital Budget Application, Volume I",
     topics: ["VHF replacement", "P25", "Provincial Wide Radio System", "Starlink", "Cradlepoint"],
-    pages: "PDF p. 248",
+    pages: "physical PDF p. 248",
     status: "reported",
     url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
   },
@@ -1441,7 +1451,7 @@ export const staticClaims = [
     id: "historical-vhf-system",
     scope: "Historical VHF topology, equipment counts and Hydro-owned repeater records",
     status: "verified",
-    sources: [{ sourceId: "vhf-2004", pages: "physical PDF pp. 194, 251, 258 and 265" }]
+    sources: [{ sourceId: "vhf-2004", pages: "physical PDF pp. 193 to 195, 251, 258 and 265" }]
   },
   {
     id: "vhf-replacement-record",

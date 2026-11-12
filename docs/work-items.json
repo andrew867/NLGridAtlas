@@ -374,12 +374,12 @@
       "title": "Add the Avalon combustion turbine final connection",
       "phase": 3,
       "priority": "P1",
-      "status": "not_started",
+      "status": "deferred",
       "scope": "Find issued-for-construction or as-built one-lines for the new terminal, GSU transformers, TL218 tie-in, synchronous-condenser equipment, and rerouted Newfoundland Power lines.",
       "dependencies": ["ARC-002"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "The site currently shows application-stage information."
+      "notes": "The site currently shows application-stage information. Hydro's 2025-12-12 additional early-execution application states that the 2025 Build Application remained under review. It records continuing CT and GSU procurement, design work, TL218 modifications, and Newfoundland Power line relocations, but it does not provide an issued-for-construction or as-built station one-line. Final connection work is deferred until a later filed design or commissioning record exists."
     },
     {
       "id": "HVDC-001",
@@ -422,24 +422,24 @@
       "title": "Complete the historical VHF and microwave engineering record",
       "phase": 4,
       "priority": "P2",
-      "status": "not_started",
+      "status": "done",
       "scope": "Index documented routes, sites, frequencies, radio models, antenna systems, ownership, and interconnection changes.",
       "dependencies": ["ARC-001", "ARC-002"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/TELECOMMUNICATIONS_SYSTEM_RECORD.md", "index.html", "src/data.js", "public/reference-maps/vhf-2001-existing-sites-265.png", "public/reference-maps/vhf-2001-potential-sites-266.png", "tests/data.test.js"],
       "blocker": null,
-      "notes": "The current page contains selected 2001, 2004, and 2025 records only."
+      "notes": "The record now separates the 2001 conventional system, the proposed 2004 trunked replacement, and the radio and vehicle-data project reported in 2026. It includes the filed site registers, Hydro-owned frequency rows, microwave interconnection changes, replacement economics, and unresolved equipment-detail limits."
     },
     {
       "id": "TEL-002",
       "title": "Reconstruct dated telecommunications network diagrams",
       "phase": 4,
       "priority": "P2",
-      "status": "not_started",
+      "status": "done",
       "scope": "Create separate diagrams for the conventional VHF system, proposed trunked replacement, and later P25 and satellite-data arrangement.",
       "dependencies": ["TEL-001"],
-      "completion_evidence": [],
+      "completion_evidence": ["index.html", "src/styles.css", "research/TELECOMMUNICATIONS_SYSTEM_RECORD.md", "tests/data.test.js"],
       "blocker": null,
-      "notes": "Do not infer the provenance of individual surplus amateur-radio repeaters."
+      "notes": "The three dated diagrams are separate. The 2004 diagram is labelled proposed, and the later diagram shows only the P25, Starlink, and Cradlepoint relationships stated by the filing. It does not infer P25 site topology or the provenance of surplus amateur-radio repeaters."
     },
     {
       "id": "LOAD-001",

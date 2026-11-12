@@ -73,6 +73,29 @@ test("Corner Brook frequency converter record retains the dated operating arrang
   assert.doesNotMatch(html, /50 Hz conversion completed/);
 });
 
+test("telecommunications record keeps historical, proposed and reported systems separate", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const sourceById = new Map(sources.map((source) => [source.id, source]));
+
+  assert.equal(sourceById.get("vhf-2004").pages, "physical PDF pp. 193 to 203, 251, 258, and 265 to 266");
+  assert.equal(sourceById.get("vhf-2027-status").pages, "physical PDF p. 248");
+  assert.equal(sourceById.get("nlh-2025-avalon-ct-early-execution").status, "proposed");
+
+  assert.match(html, /HISTORICAL \/ 2001 STUDY/);
+  assert.match(html, /PROPOSED \/ 2004 REVISION/);
+  assert.match(html, /REPORTED \/ 2026 FILING/);
+  assert.match(html, /170 MHz \/ 39 SITES/);
+  assert.match(html, /\$10,827,896/);
+  assert.match(html, /\$10,597,828/);
+  assert.match(html, /\$230,068/);
+  assert.match(html, /PROVINCIAL P25/);
+  assert.match(html, /STARLINK/);
+  assert.match(html, /CRADLEPOINT/);
+  assert.match(html, /West-coast microwave upgrade/);
+  assert.match(html, /vhf-2001-existing-sites-265\.png/);
+  assert.match(html, /vhf-2001-potential-sites-266\.png/);
+});
+
 test("timeline events resolve to a source and evidence state", () => {
   const sourceIds = new Set(sources.map((source) => source.id));
   for (const event of timeline) {

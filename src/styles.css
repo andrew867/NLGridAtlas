@@ -685,11 +685,30 @@ button, input { font: inherit; }
 .radio-inventory div { display: flex; justify-content: space-between; gap: 1rem; padding: .65rem 0; border-bottom: 1px solid var(--rule); }
 .radio-inventory dt, .radio-inventory dd { margin: 0; font: 400 .76rem/1.4 "IBM Plex Mono", monospace; }
 .radio-inventory dd { font-weight: 600; }
+.telecom-network-records { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: 4rem; }
+.telecom-network-record { min-width: 0; padding: 1rem; scroll-margin-top: 85px; }
+.telecom-record-body { display: grid; grid-template-columns: minmax(0, 1fr); }
+.radio-evolution-line { min-height: 0; height: auto; aspect-ratio: 960 / 430; }
+.telecom-cost-register { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0 1rem 1rem; border-top: 1px solid var(--ink); }
+.telecom-cost-register div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .75rem; padding: .65rem .5rem; border-bottom: 1px solid var(--rule); }
+.telecom-cost-register div:nth-child(odd) { border-right: 1px solid var(--rule); }
+.telecom-cost-register dt, .telecom-cost-register dd { margin: 0; font: 400 .68rem/1.35 "IBM Plex Mono", monospace; }
+.telecom-cost-register dd { font-weight: 600; text-align: right; }
+.telecom-network-record > .evidence-link { display: inline-block; margin: .5rem 1rem; }
 .telecom-history { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 4rem; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
 .telecom-history article { min-height: 330px; padding: 1.5rem; border-right: 1px solid var(--ink); }
 .telecom-history article:nth-child(2n) { border-right: 0; }
 .telecom-history article:nth-child(-n+2) { border-bottom: 1px solid var(--ink); }
-.repeater-register { margin-top: 4rem; }
+.microwave-record { display: grid; grid-template-columns: minmax(240px, .7fr) minmax(0, 1fr); gap: 2rem; margin-top: 4rem; padding: 2rem 0; border-top: 8px solid var(--water); border-bottom: 1px solid var(--ink); }
+.microwave-record header h3 { margin: .4rem 0 0; font: 600 2.6rem/.92 "Barlow Condensed", sans-serif; text-transform: uppercase; }
+.microwave-record ol { grid-column: 2; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.microwave-record li { padding: 1rem; border: 1px solid var(--ink); }
+.microwave-record li strong { display: block; font: 600 2rem/1 "Barlow Condensed", sans-serif; }
+.microwave-record li span { display: block; margin-top: .5rem; font: 400 .72rem/1.4 "IBM Plex Mono", monospace; }
+.microwave-record > p, .microwave-record > .evidence-link { grid-column: 2; }
+.microwave-record > p { margin: 0; line-height: 1.5; }
+.microwave-record > .evidence-link { justify-self: start; }
+.repeater-register { margin-top: 4rem; scroll-margin-top: 85px; }
 .repeater-register > header { display: grid; grid-template-columns: 1fr minmax(280px, .8fr); gap: 2rem; align-items: end; padding-bottom: 1.25rem; border-bottom: 1px solid var(--ink); }
 .repeater-register > header p { margin: 0; line-height: 1.5; }
 .repeater-table-wrap { overflow-x: auto; }
@@ -697,6 +716,10 @@ button, input { font: inherit; }
 .repeater-register th, .repeater-register td { padding: .8rem .65rem; border-bottom: 1px solid var(--rule); text-align: left; white-space: nowrap; }
 .repeater-register th { background: var(--ink); color: var(--paper-bright); font-weight: 500; text-transform: uppercase; }
 .repeater-register > .evidence-link { display: inline-block; margin-top: 1rem; }
+.source-sheet-disclosures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.source-sheet-disclosures details { min-width: 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.source-sheet-disclosures summary { cursor: pointer; padding: 1rem .25rem; font: 500 .72rem/1.35 "IBM Plex Mono", monospace; text-transform: uppercase; }
+.source-sheet-disclosures img { display: block; width: 100%; height: auto; margin-bottom: 1rem; border: 1px solid var(--rule); background: white; }
 
 .evidence-section { background: var(--paper-bright); }
 .source-search { display: grid; grid-template-columns: auto minmax(210px, 1fr); gap: 1rem; align-items: center; font: 400 .72rem/1.2 "IBM Plex Mono", monospace; text-transform: uppercase; }
@@ -719,10 +742,12 @@ button, input { font: inherit; }
   .site-header { grid-template-columns: 1fr auto; }
   .site-header nav { display: none; }
   .cover-grid, .handbook-layout, .island-overview-layout, .island-backbone-layout, .hvdc-link-grid, .converter-record-layout, .load-grid, .telecom-layout { grid-template-columns: 1fr; }
-  .telecom-history { grid-template-columns: 1fr; }
+  .telecom-network-records, .telecom-history { grid-template-columns: 1fr; }
   .telecom-history article { border-right: 0; border-bottom: 1px solid var(--ink); }
   .telecom-history article:last-child { border-bottom: 0; }
   .repeater-register > header { grid-template-columns: 1fr; }
+  .microwave-record { grid-template-columns: 1fr; }
+  .microwave-record ol, .microwave-record > p, .microwave-record > .evidence-link { grid-column: 1; }
   .station-layout, .holyrood-layout, .subsection-heading { grid-template-columns: minmax(0, 1fr); }
   .subsection-heading p { grid-column: 1; grid-row: auto; }
   .profile-grid { grid-template-columns: 1fr; }
@@ -782,6 +807,12 @@ button, input { font: inherit; }
   .converter-record-heading strong { display: block; margin-top: .75rem; text-align: left; }
   .converter-diagram { min-width: 760px; }
   .converter-caption { display: none; }
+  .telecom-network-record { padding: .75rem; }
+  .telecom-sheet-heading { display: block; padding-right: 2.75rem; }
+  .telecom-sheet-heading strong { display: block; margin-top: .75rem; }
+  .telecom-sheet-heading h3 { font-size: 2rem; }
+  .telecom-cost-register, .microwave-record ol, .source-sheet-disclosures { grid-template-columns: 1fr; }
+  .telecom-cost-register div:nth-child(odd) { border-right: 0; }
   .one-line, .station-line {
     width: 100%;
     min-width: 0;

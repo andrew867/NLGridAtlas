@@ -56,11 +56,14 @@ Updated: 2026-11-11
 - Closed the island transformer ledger for the published evidence located to date. Unsupported rural nameplates, current rural breaker drawings, and later Grand Falls and Bishop's Falls equipment drawings remain deferred rather than inferred.
 - Deferred the remaining Avalon feeder-to-bus assignments because the archive does not contain the required operating or protection one-lines.
 - Deferred a current complete Holyrood station drawing after a targeted 2020 to 2026 search returned planning loop diagrams and transformer tables, but no complete as-built station one-line.
+- Deferred the final Avalon combustion-turbine connection. Hydro's 2025-12-12 filing remained an early-execution request while the build application was under review. It records design, procurement, TL218 work, and Newfoundland Power line relocations, but no issued-for-construction or as-built one-line.
+- Completed the dated telecommunications record. Separate diagrams now show the 2001 conventional network, the proposed 2004 trunked replacement, and the P25 plus vehicle-data project reported in 2026.
+- Added the 1999 to 2003 microwave work, the 2004 replacement economics, the four Hydro-owned frequency records, and expandable copies of the complete existing-site and potential-site sheets.
 
 ## Active work
 
-1. Add the final Avalon combustion-turbine connection when supported by the filed project record, `GEN-003`.
-2. Complete the historical VHF and microwave engineering record, `TEL-001`.
+1. Expand measured load and planning comparisons, `LOAD-001`.
+2. Build the sourced coordinate and route dataset, `GEO-001`.
 3. Locate missing feeder-map sheets while processing those filings, `AVL-003`.
 
 ## Island backbone progress
