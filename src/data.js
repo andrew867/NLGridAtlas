@@ -2014,7 +2014,7 @@ export const sources = [
     year: 2012,
     organization: "Newfoundland Power",
     title: "CA-NP-027, Generating-Facility Connection Data",
-    topics: ["West Brook", "WBK", "LAU-01", "12.5 kV", "distribution feeder", "capacity"],
+    topics: ["Fall Pond", "FPD", "West Brook", "WBK", "LAU-01", "12.5 kV", "distribution feeder", "capacity"],
     pages: "physical PDF p. 2",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-027.pdf"
@@ -2028,6 +2028,56 @@ export const sources = [
     pages: "physical PDF pp. 1 to 5",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/CA-NP-056.PDF"
+  },
+  {
+    id: "np-2003-fall-pond-rehabilitation",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-97(b), 2002 Fall Pond Dam Rehabilitation Schedule",
+    topics: ["Fall Pond", "FPD", "hydroelectric generation", "dam rehabilitation"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2097%20(b).pdf"
+  },
+  {
+    id: "np-2003-fall-pond-runner",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "PUB 1.1, 2003 Hydro Plant Facility Rehabilitation Plan",
+    topics: ["Fall Pond", "FPD", "hydroelectric generation", "turbine runner"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%20%201-1.pdf"
+  },
+  {
+    id: "np-2008-fall-pond-dam",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Fall Pond Main Dam Rehabilitation",
+    topics: ["Fall Pond", "FPD", "hydroelectric generation", "main dam", "buttresses", "decking", "concrete rehabilitation"],
+    pages: "physical PDF p. 150",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2013-fall-pond-plant",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2010 Depreciation Study, Fall Pond Hydro Plant Overview",
+    topics: ["Fall Pond", "FPD", "hydroelectric generation", "Francis turbine", "generator", "net head"],
+    pages: "physical PDF p. 140",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-2027-ca-np-055-fall-pond",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "CA-NP-055, Fall Pond Generation and Expenditure Record",
+    topics: ["Fall Pond", "FPD", "hydroelectric generation", "run-of-river", "drought", "generation", "operating costs", "capital expenditures"],
+    pages: "physical PDF pp. 1 to 5",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/CA-NP-055.PDF"
   },
   {
     id: "np-2022-tors-cove",
@@ -5473,6 +5523,94 @@ const filedFeederMapProfiles = [
           ["Protection and control", "replace obsolete generator, transformer, excitation, synchronization and forebay-monitoring equipment"],
           ["Auxiliary power", "replace the original 8.5 kW propane unit, which cannot support winter black-start heating load"],
           ["Filed schedule and cost", "design and procurement in 2027, construction by year-end 2028; $1.728 million total budget"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "FPD",
+    name: "Fall Pond",
+    voltage: "12.5/4.2 kV transformer register",
+    circuitRegisterLabel: "2012 GENERATING-FACILITY CONNECTION",
+    circuitSource: { sourceId: "np-2013-west-brook-connection", pages: "physical PDF p. 1" },
+    connectedCircuits: [],
+    feederRegisterLabel: "2012 CONNECTION RECORD",
+    feederRegister: ["LAU-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "Current transformer-register values and documented LAU-01 connection",
+      buses: [
+        { id: "b1", label: "LAU-01 connection", voltage: "12.5 kV" },
+        { id: "b2", label: "transformer low-side winding", voltage: "4.2 kV" }
+      ],
+      transformers: [{ label: "FPD-T1 A/B/C", rating: "3 x 0.25 MVA", from: "b2", to: "b1" }],
+      circuits: [{ label: "LAU-01", destination: "distribution feeder", bus: "b1" }],
+      generators: [{ label: "G1", rating: "0.35 MW", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2010 PLANT OVERVIEW",
+      title: "Fall Pond hydro generation station",
+      sourceId: "np-2013-fall-pond-plant",
+      pages: "physical PDF p. 140",
+      facts: [
+        ["Plant", "commissioned in 1939 near Little St. Lawrence with one horizontal Francis turbine manufactured by Voith and one Westinghouse generator"],
+        ["Rated output", "350 kW"],
+        ["Hydraulics", "approximately 15.2 m net head"],
+        ["Water storage", "largely run-of-river operation with 42 MWh of storage, equivalent to five days at rated output"],
+        ["Current normal production", "1.2 GWh per year in the 2026 response"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 551",
+      facts: [["FPD-T1-A/B/C", "three generation transformers; each 12.5/4.2 kV and 0.25 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "2002 TO 2003 REHABILITATION RECORDS",
+        sourceId: "np-2003-fall-pond-rehabilitation",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Dam work", "the 2002 status response records Fall Pond dam rehabilitation from July through October"]
+        ]
+      },
+      {
+        label: "2003 FILED RUNNER WORK",
+        sourceId: "np-2003-fall-pond-runner",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Runner", "the 2003 facility-rehabilitation plan allocated $10,000 to replace the Fall Pond runner"]
+        ]
+      },
+      {
+        label: "2003 FILED TRANSFORMER REPLACEMENTS",
+        sourceId: "np-2003-west-brook-transformers",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Filed equipment", "three 6.9/12.5 kV step-up transformer replacements"],
+          ["Filed cost", "$47,600 total, including $9,700 labour and $39,900 non-labour"]
+        ]
+      },
+      {
+        label: "2008 FILED MAIN-DAM WORK",
+        sourceId: "np-2008-fall-pond-dam",
+        pages: "physical PDF p. 150",
+        facts: [
+          ["Condition", "inspection found increased deterioration and leakage through the concrete main dam"],
+          ["Filed work", "rehabilitate buttresses, decking and concrete faces"],
+          ["Filed cost", "$110,000"]
+        ]
+      },
+      {
+        label: "2025 GENERATION RECORD",
+        sourceId: "np-2027-ca-np-055-fall-pond",
+        pages: "physical PDF pp. 1, 3 and 5",
+        facts: [
+          ["2025 production", "891,892 kWh; Newfoundland Power considered the result reasonable given the drought conditions during 2025"],
+          ["Plant duty", "183 MWh in one month equals approximately 523 hours at the 0.35 MW rating"],
+          ["2026 capital status", "no capital project relating to Fall Pond was approved for 2026"]
         ]
       }
     ]

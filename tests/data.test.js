@@ -2077,6 +2077,30 @@ test("West Brook preserves the current transformer entries and dated plant recor
   assert.match(historyFacts, /no capital project relating to West Brook was approved for 2026/);
 });
 
+test("Fall Pond preserves the LAU-01 connection and current generating bank", () => {
+  const fallPond = stationProfiles.find((station) => station.code === "FPD");
+  assert.ok(fallPond);
+  assert.deepEqual(fallPond.connectedCircuits, []);
+  assert.deepEqual(fallPond.feederRegister, ["LAU-01"]);
+  assert.deepEqual(fallPond.diagram.buses.map(({ voltage }) => voltage), ["12.5 kV", "4.2 kV"]);
+  assert.deepEqual(fallPond.diagram.transformers.map(({ label, rating }) => [label, rating]), [["FPD-T1 A/B/C", "3 x 0.25 MVA"]]);
+  assert.deepEqual(fallPond.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "0.35 MW"]]);
+  const plantFacts = fallPond.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = fallPond.planningRecord.facts.flat().join(" ");
+  const historyFacts = fallPond.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /commissioned in 1939/);
+  assert.match(plantFacts, /15\.2 m net head/);
+  assert.match(plantFacts, /42 MWh of storage.*five days/);
+  assert.match(plantFacts, /1\.2 GWh per year/);
+  assert.match(planningFacts, /FPD-T1-A\/B\/C.*12\.5\/4\.2 kV.*0\.25 MVA/);
+  assert.match(historyFacts, /dam rehabilitation from July through October/);
+  assert.match(historyFacts, /allocated \$10,000 to replace the Fall Pond runner/);
+  assert.match(historyFacts, /three 6\.9\/12\.5 kV step-up transformer replacements/);
+  assert.match(historyFacts, /rehabilitate buttresses, decking and concrete faces/);
+  assert.match(historyFacts, /891,892 kWh/);
+  assert.match(historyFacts, /no capital project relating to Fall Pond was approved for 2026/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");
