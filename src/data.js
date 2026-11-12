@@ -920,6 +920,16 @@ export const sources = [
     url: "https://nlhydro.com/good-to-know/holyrood-unit-1-overhaul-ensuring-long-term-reliability/"
   },
   {
+    id: "nlh-2025-holyrood-refresh",
+    year: 2025,
+    organization: "NL Hydro / Hatch",
+    title: "Holyrood Thermal Generating Station Capital Plan Refresh",
+    topics: ["Holyrood", "Unit 3", "synchronous condenser", "black start", "CAT 3516B", "condition monitoring", "capital plan"],
+    pages: "physical PDF pp. 1 to 2, 9 to 10, 29, 31 and 35",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Holyrood%20Thermal%20Generating%20Station%20Capital%20Plan%20Refresh%20-%202025-03-07.PDF"
+  },
+  {
     id: "nlh-2026-reactive-options",
     year: 2025,
     organization: "NL Hydro",
@@ -2047,8 +2057,8 @@ export const components = {
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
     summary: "The December 2012 drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. The 2022 condition study confirms the transformer inventory, including the unit-service and station-service banks. T8 was replaced in 2014, T7 replacement work finished in 2024, and the Unit 1 turbine and generator overhaul finished in February 2025.",
-    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["Gas turbine", "15 MW through T9"], ["Unit 3", "Reversible generator and synchronous condenser"], ["T8 replacement", "2014"], ["T7 replacement completed", "2024"], ["Unit 1 overhaul completed", "February 2025"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025")]
+    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["Gas turbine", "15 MW through T9"], ["Black start", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["T8 replacement", "2014"], ["T7 replacement completed", "2024"], ["Unit 1 overhaul completed", "February 2025"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF p. 35")]
   },
   "hrd-t1": {
     diagram: "hrd", status: "verified", code: "HRD / T1", title: "Holyrood generator transformer T1",
@@ -2070,9 +2080,9 @@ export const components = {
   },
   "hrd-g3": {
     diagram: "hrd", status: "verified", code: "HRD / UNIT 3", title: "Holyrood Unit 3 generator",
-    summary: "Unit 3 has had reversible synchronous-condenser capability since 1986. In July 2026 it recorded no generating hours and 697 synchronous-condensing hours. Permanent post-steam operation remains a planning assumption under review, not a completed conversion.",
-    data: [["Generator", "185 MVA, 0.85 power factor"], ["Stator", "16 kV, hydrogen cooled"], ["Rotor", "3,600 rpm"], ["Synchronous condenser", "Approximately 70 MVAR in the 2020 filing"], ["Starting system", "Pony motor and SSS clutch"], ["2020 return to generation", "Filed procedure took five to seven days, including H2, CO2, and air purges"], ["Wood proposal", "Retain H2 and recouple in three 10-hour days; presented as a recommendation"], ["2016 work", "Rotor rewind"], ["2021 actual expenditure", "$7.2857 million for the stator-rewind project"], ["April 2022 operation", "373 hours as a synchronous condenser"], ["2024 planning case", "Spring 2030 permanent synchronous-condensing operation"], ["July 2026 operation", "0 generating hours; 697 synchronous-condensing hours"], ["Post-steam role", "Under assessment against combustion-turbine synchronous operation, stand-alone synchronous condensers, STATCOMs, and grid-forming inverters"]],
-    sources: [sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2020-units12-plan", "physical PDF p. 1"), sourceRef("nlh-2020-holyrood-backup", "physical PDF pp. 3 and 24"), sourceRef("nlh-2021-capex", "physical PDF p. 71"), sourceRef("nlh-2022-april-energy", "physical PDF pp. 7 to 8"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 69 and 648"), sourceRef("nlh-2026-holyrood-overview", "physical PDF p. 170"), sourceRef("nlh-2026-reactive-options", "physical PDF p. 1"), sourceRef("nlh-2026-july-energy", "physical PDF p. 10")]
+    summary: "Unit 3 has had reversible synchronous-condenser capability since 1986. The March 2025 capital model assumed synchronous-condenser operation beyond 2035, but Hydro's September 2025 filing says the long-term source of reactive and short-circuit support remains under assessment. In July 2026 Unit 3 recorded no generating hours and 697 synchronous-condensing hours.",
+    data: [["Generator", "185 MVA, 0.85 power factor"], ["Stator", "16 kV, hydrogen cooled"], ["Rotor", "3,600 rpm"], ["Synchronous condenser", "Approximately 70 MVAR in the 2020 filing"], ["Starting system", "Pony motor and SSS clutch"], ["2020 return to generation", "Filed procedure took five to seven days, including H2, CO2, and air purges"], ["Wood proposal", "Retain H2 and recouple in three 10-hour days; presented as a recommendation"], ["2016 work", "Rotor rewind"], ["2021 actual expenditure", "$7.2857 million for the stator-rewind project"], ["April 2022 operation", "373 hours as a synchronous condenser"], ["2024 planning case", "Spring 2030 permanent synchronous-condensing operation"], ["March 2025 capital model", "Assumed synchronous-condenser operation beyond 2035; no general generator condition-monitoring instrumentation was installed"], ["Synchronous-condenser support", "Exciter and transformer, cooling water, H2, generator lube-oil, and seal-oil systems require inspection or refurbishment"], ["July 2026 operation", "0 generating hours; 697 synchronous-condensing hours"], ["Post-steam role", "Under assessment against combustion-turbine synchronous operation, stand-alone synchronous condensers, STATCOMs, and grid-forming inverters"]],
+    sources: [sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2020-units12-plan", "physical PDF p. 1"), sourceRef("nlh-2020-holyrood-backup", "physical PDF pp. 3 and 24"), sourceRef("nlh-2021-capex", "physical PDF p. 71"), sourceRef("nlh-2022-april-energy", "physical PDF pp. 7 to 8"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 69 and 648"), sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 29 and 31"), sourceRef("nlh-2026-holyrood-overview", "physical PDF p. 170"), sourceRef("nlh-2026-reactive-options", "physical PDF p. 1"), sourceRef("nlh-2026-july-energy", "physical PDF p. 10")]
   },
   "hrd-t6": {
     diagram: "hrd", status: "verified", code: "HRD / T6", title: "Holyrood transformer T6",
