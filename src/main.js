@@ -10,6 +10,7 @@ import { components, islandTerminalRecords, sources, stationProfiles, timeline }
 import handbook from "../research/derived/np-2006-handbook.json";
 import transformerRegister from "../research/derived/np-2027-transformer-register.json";
 import { avalonLabelOffsets, avalonNodePositions } from "./avalon-layout.js";
+import { initGeographicMap } from "./geographic-map.js";
 import { initIslandBackbone } from "./island-backbone.js";
 import { renderTerminalDiagram } from "./terminal-diagram.js";
 
@@ -624,6 +625,7 @@ renderStationProfile(activeStationProfile);
 renderHydroTerminalTabs();
 renderHydroTerminalRecord(activeHydroTerminal);
 initIslandBackbone();
+initGeographicMap();
 renderHandbookRegister();
 renderTimeline();
 renderSources();

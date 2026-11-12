@@ -67,11 +67,13 @@ Updated: 2026-11-11
 - Added 588 Newfoundland island transmission-line features from the Government of Newfoundland and Labrador GeoAtlas Canvec layer. Their validation years run from 1979 through 1991, so the dataset is retained as a historical geographic reference.
 - Added checked station-boundary centroids for Oxen Pond, Hardwoods, Holyrood, Soldiers Pond, Western Avalon, Ridge Road, Virginia Waters, and Goulds. The coordinate register preserves each OpenStreetMap object, version, and timestamp.
 - Kept circuit designations out of the geographic route layer because the GeoAtlas records do not provide them.
+- Added island and Avalon geographic views. Station selection updates a fixed detail panel; the station-record link performs navigation.
 
 ## Active work
 
 1. Extend the station coordinate register and reconcile supported routes, `GEO-001`.
-2. Locate missing feeder-map sheets while processing those filings, `AVL-003`.
+2. Extend the geographic interface with supported circuit and voltage data, `GEO-002`.
+3. Locate missing feeder-map sheets while processing those filings, `AVL-003`.
 
 ## Island backbone progress
 

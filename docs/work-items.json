@@ -476,12 +476,17 @@
       "title": "Create the geographic island and Avalon map interface",
       "phase": 4,
       "priority": "P1",
-      "status": "not_started",
+      "status": "in_progress",
       "scope": "Overlay the structured network on a defensible geographic base while preserving source-map access and voltage distinctions.",
       "dependencies": ["GEO-001", "ISL-002"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "index.html",
+        "src/geographic-map.js",
+        "src/styles.css",
+        "tests/geographic-map.test.js"
+      ],
       "blocker": null,
-      "notes": "Do not present a schematic point layout as measured geography."
+      "notes": "The first interface renders the historical GeoAtlas routes and eight checked station coordinates at island and Avalon scales. Station selection updates the detail panel without moving the page. Current circuit-to-route matching, broader station coverage, and voltage-specific geographic routes remain open."
     },
     {
       "id": "REL-001",
