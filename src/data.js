@@ -700,6 +700,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
   {
+    id: "np-2027-greenhill-refurbishment",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Supplemental Capital Application, Greenhill Thermal Generation Facility Refurbishment",
+    topics: ["Greenhill", "GRH-T1", "GRH-T2", "GRH-01", "GRH-02", "GRH-03", "301L", "305L", "combustion turbine", "synchronous condenser"],
+    pages: "physical PDF pp. 19 to 23, 40 and 43 to 46",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
     id: "np-2010-wesleyville",
     year: 2009,
     organization: "Newfoundland Power",
@@ -3553,7 +3563,74 @@ const filedFeederMapProfiles = [
       }
     ]
   },
-  { code: "GRH", mapPages: [["GRH-03", 70]] },
+  {
+    code: "GRH",
+    name: "Greenhill",
+    voltage: "66/12.5/13.8 kV infrastructure",
+    circuitRegisterLabel: "2026 REPORTED FACILITY CONNECTION",
+    circuitSource: { sourceId: "np-2027-greenhill-refurbishment", pages: "physical PDF pp. 20 and 43 to 45" },
+    connectedCircuits: [
+      { circuit: "301L", from: "Salt Pond", from_code: "SPO", to: "Greenhill", to_code: "GRH" },
+      { circuit: "305L", from: "Laurentian", from_code: "LAU", to: "Greenhill", to_code: "GRH" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["GRH-01", "GRH-02", "GRH-03"],
+    mapPages: [["GRH-03", 70]],
+    eventLoads: [],
+    diagram: {
+      label: "2026 reported logical arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV distribution bus", voltage: "12.5 kV" }, { id: "b3", label: "13.8 kV generation bus", voltage: "13.8 kV" }],
+      transformers: [{ label: "GRH-T2", rating: "20 MVA; high-side record conflict", from: "b1", to: "b2" }, { label: "GRH-T1", rating: "30 MVA", from: "b1", to: "b3" }],
+      circuits: [{ label: "301L", destination: "Salt Pond", bus: "b1", destinationCode: "SPO" }, { label: "305L", destination: "Laurentian", bus: "b1", destinationCode: "LAU" }],
+      generators: [{ label: "GRH CTG", rating: "20 MW derated", bus: "b3" }]
+    },
+    engineeringRecord: {
+      date: "2026 EXISTING FACILITY RECORD",
+      title: "Greenhill distribution and thermal-generation station",
+      sourceId: "np-2027-greenhill-refurbishment",
+      pages: "physical PDF pp. 40 and 43 to 46",
+      facts: [
+        ["Station built", "1977; 66 kV, 12.5 kV, and 13.8 kV infrastructure"],
+        ["Transmission connections", "301L to Salt Pond and 305L to Laurentian, both operating at 66 kV"],
+        ["Distribution", "GRH-01, GRH-02, and GRH-03; approximately 2,300 Grand Bank customers"],
+        ["Existing turbine", "Curtiss Wright unit commissioned in 1975; originally 25 MW and derated to 20 MW in 1984"],
+        ["Synchronous operation", "existing combustion turbine can operate as a synchronous condenser"],
+        ["Fuel and start", "three 100,000 litre diesel tanks and an auxiliary power unit for black start"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 548 and 551",
+      facts: [
+        ["GRH-T1", "66/13.8 kV generation transformer; 30 MVA"],
+        ["GRH-T2", "20 MVA distribution transformer; 15.04 MVA 2026 forecast"],
+        ["Published voltage difference", "the transformer register lists GRH-T2 at 138/12.5 kV; the facility report identifies 66 kV, 12.5 kV, and 13.8 kV station infrastructure"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2006 TO 2025 OPERATING RECORD",
+        sourceId: "np-2027-greenhill-refurbishment",
+        pages: "physical PDF p. 46",
+        facts: [
+          ["Hydro system support, unplanned", "114 dispatch events; 3.7 hour average duration"],
+          ["Hydro local support, planned", "29 dispatch events; 3.3 hour average duration"],
+          ["Hydro local support, unplanned", "2 dispatch events; 6.8 hour average duration"]
+        ]
+      },
+      {
+        label: "2027 TO 2031 PROPOSED REPLACEMENT",
+        sourceId: "np-2027-greenhill-refurbishment",
+        pages: "physical PDF pp. 19 and 23",
+        facts: [
+          ["Generation", "install two nominal 15 MW combustion turbine generators"],
+          ["Electrical scope", "replace switchgear, protection, and controls; provide synchronous-condenser capability"],
+          ["Other scope", "replace fuel systems; install an auxiliary power unit; expand the yard; remove the existing building and construct an auxiliary building"]
+        ]
+      }
+    ]
+  },
   {
     code: "HBS",
     name: "Hare Bay",

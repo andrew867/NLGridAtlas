@@ -972,6 +972,24 @@ test("Wesleyville separates the existing derated turbine from the proposed repla
   assert.match(historyFacts, /synchronous-condenser capability/);
 });
 
+test("Greenhill keeps the transformer voltage conflict inside its station record", () => {
+  const greenhill = stationProfiles.find((station) => station.code === "GRH");
+  assert.ok(greenhill);
+  assert.deepEqual(greenhill.connectedCircuits.map(({ circuit }) => circuit), ["301L", "305L"]);
+  assert.deepEqual(greenhill.feederRegister, ["GRH-01", "GRH-02", "GRH-03"]);
+  assert.deepEqual(greenhill.diagram.transformers.map(({ label }) => label), ["GRH-T2", "GRH-T1"]);
+  assert.deepEqual(greenhill.diagram.generators.map(({ label, rating }) => [label, rating]), [["GRH CTG", "20 MW derated"]]);
+  const existingFacts = greenhill.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = greenhill.planningRecord.facts.flat().join(" ");
+  const historyFacts = greenhill.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /originally 25 MW and derated to 20 MW in 1984/);
+  assert.match(existingFacts, /approximately 2,300 Grand Bank customers/);
+  assert.match(planningFacts, /register lists GRH-T2 at 138\/12.5 kV/);
+  assert.match(planningFacts, /facility report identifies 66 kV, 12.5 kV, and 13.8 kV/);
+  assert.match(historyFacts, /114 dispatch events; 3.7 hour average duration/);
+  assert.match(historyFacts, /install two nominal 15 MW combustion turbine generators/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

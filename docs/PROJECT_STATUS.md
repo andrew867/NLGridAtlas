@@ -83,6 +83,7 @@ Updated: 2026-11-12
 - Added Trinity's 116L tap, 66/25 kV transformer and feeder record, 2005 sectionalizing-control description, and the documented 2020 TRN-T1 bushing failure.
 - Added Hare Bay's 115L and 116L series connection, current transformer and feeder records, HBS-01 to GAM-01 distribution transfer, customer count, and observed 2021 to 2025 transmission-supply reliability.
 - Added Wesleyville's distribution and generation transformers, three feeders, 116L connection, existing 8 MW derated combustion turbine, and the separately labeled 2027 to 2031 replacement proposal.
+- Added Greenhill's 301L and 305L connections, distribution and generation transformers, three feeders, existing 20 MW derated turbine, operating history, and the proposed two-unit replacement. The GRH-T2 voltage discrepancy is confined to the station detail.
 - Identified the current internal Holyrood drawing numbers `1403-500-E001` and `1403-500-E004` in the 2022 study document register. The drawings were named but not filed.
 - Added the March 2025 Holyrood Capital Plan Refresh, including Unit 3 condition-monitoring and auxiliary-system findings plus the six CAT 3516B black-start sets.
 - Added the 2017 Holyrood plant-service arrangements and the 2019 completion records for the SST34 cable replacement and the lower-cost Newfoundland Power auxiliary supply connection.
