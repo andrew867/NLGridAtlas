@@ -1270,6 +1270,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-2020-bonavista",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Bonavista Substation Refurbishment and Modernization",
+    topics: ["Bonavista", "BVA-T1", "BVA-01", "BVA-02", "BVA-03", "117L", "138 kV", "12.5 kV", "transformer repair"],
+    pages: "physical PDF pp. 362 to 364",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "np-2027-ca-np-041",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "CA-NP-041, Portable Substation Capacity and Transformer Outage History",
+    topics: ["Bonavista", "BVA-T1", "Trinity", "TRN-T1", "transformer failure", "customer outage"],
+    pages: "physical PDF p. 2",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/CA-NP-041.PDF"
+  },
+  {
     id: "np-2025-ca-np-168",
     year: 2025,
     organization: "Newfoundland Power",
@@ -1374,7 +1394,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "2027 Capital Budget Application, Power Transformer Failure History",
-    topics: ["Dunville", "DUN-T1", "power transformer failures", "repair"],
+    topics: ["Dunville", "DUN-T1", "Bonavista", "BVA-T1", "power transformer failures", "repair"],
     pages: "physical PDF p. 560",
     status: "verified",
     url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
@@ -4538,6 +4558,77 @@ export const stationProfiles = [
           ["Transmission protection", "install a 138 kV breaker on 123L and remove two high-speed ground switches"],
           ["Transformer protection", "install a breaker between CAT-T2 and the 12.5 kV bus and replace electromechanical relays with digital relays"],
           ["Site work", "refurbish foundations, add spill containment, extend the ground grid, and add varmint protection"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "BVA",
+    name: "Bonavista",
+    voltage: "138/12.5 kV",
+    circuitRegisterLabel: "2025 EXISTING CONNECTION",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "117L", from: "Catalina", from_code: "CAT", to: "Bonavista", to_code: "BVA" }
+    ],
+    feederRegisterLabel: "2019 STATION RECORD",
+    feederRegister: ["BVA-01", "BVA-02", "BVA-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2019 equipment / 2025 circuit / 2027 transformer register",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "BVA-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "117L", destination: "Catalina", bus: "b1", destinationCode: "CAT" }]
+    },
+    engineeringRecord: {
+      date: "2019 FILED EXISTING ARRANGEMENT",
+      title: "Bonavista transmission and distribution substation",
+      sourceId: "np-2020-bonavista",
+      pages: "physical PDF pp. 362 to 364",
+      facts: [
+        ["Station built", "1977 as a transmission and distribution substation"],
+        ["Transmission supply", "117L from Catalina"],
+        ["BVA-T1", "138/12.5 kV; 25 MVA; installed in 1990"],
+        ["Distribution", "BVA-01, BVA-02, and BVA-03; approximately 2,565 customers"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [
+        ["BVA-T1 current fleet-table record", "138/12.5 kV; 25 MVA; 13.81 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "NOVEMBER 2018 BVA-T1 FAILURE",
+        sourceId: "np-2027-ca-np-041",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Failure", "internal transformer fault"],
+          ["Service interruption", "23 hours and 54 minutes"],
+          ["Customers affected", "all 2,566 customers supplied from Bonavista Substation"]
+        ]
+      },
+      {
+        label: "2019 FILED REPAIR AND 2020 MODERNIZATION",
+        sourceId: "np-2020-bonavista",
+        pages: "physical PDF pp. 362 to 364",
+        facts: [
+          ["Transformer state", "the filing states that BVA-T1 was sent to Quebec for inspection and repair and was planned for reinstallation in 2019"],
+          ["117L protection", "install a 138 kV breaker and remove the high-speed ground switch used for transformer protection"],
+          ["Station equipment", "replace aged 138 kV and 12.5 kV switches and install a control building, digital relays, and SCADA communications"],
+          ["Site work", "construct spill containment, extend the ground grid, and add varmint protection"]
+        ]
+      },
+      {
+        label: "2027 FAILURE-HISTORY REGISTER",
+        sourceId: "np-2027-transformer-failures",
+        pages: "physical PDF p. 560",
+        facts: [
+          ["BVA-T1 register state", "25 MVA, 138/12.5 kV, manufactured in 1990, repair recorded for the 2018 failure, and listed in service"]
         ]
       }
     ]

@@ -211,6 +211,16 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2027 fleet table lists CAT-T1 at 16.7 MVA and CAT-T2 at 20 MVA with a 5.57 MVA 2026 forecast, physical PDF pp. 546 and 552.
 - [ ] The searched records do not give a modernization completion date or a post-project breaker one-line. The atlas keeps the scope as filed work.
 
+## Bonavista station record
+
+- [x] The current line register identifies 117L between Catalina and Bonavista, CA-NP-168 Attachment A, physical PDF p. 4.
+- [x] The 2020 filing records BVA-T1 at 25 MVA and 138/12.5 kV, installed in 1990. BVA-01, BVA-02, and BVA-03 served approximately 2,565 customers, physical PDF p. 362.
+- [x] BVA-T1 failed internally in November 2018. The outage lasted 23 hours and 54 minutes and affected all 2,566 customers supplied from Bonavista, CA-NP-041, physical PDF p. 2.
+- [x] The 2019 filing state says BVA-T1 was sent to Quebec for inspection and repair and was planned for reinstallation in 2019, physical PDF p. 362.
+- [x] The filed modernization added 117L breaker protection, removed the transformer high-speed ground switch, replaced aged switches, and added a control building, digital relays, communications, spill containment, and ground-grid work, physical PDF pp. 363 to 364.
+- [x] The 2027 fleet table lists BVA-T1 at 25 MVA with a 13.81 MVA 2026 forecast. The failure-history table records the repaired unit as in service, physical PDF pp. 546 and 560.
+- [ ] The searched records do not give the exact repair return-to-service date or a post-modernization breaker one-line. The atlas does not assign either.
+
 ## Pulpit Rock feeder-bus and transformer records
 
 - [x] The 2025 application says PUL-T1 and the then-installed PUL-T2 supplied five 12.5 kV feeders, physical PDF pp. 458 and 463.

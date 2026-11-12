@@ -817,6 +817,22 @@ test("Catalina retains both transformation levels and the three filed transmissi
   assert.match(historyFacts, /install a 138 kV breaker on 123L and remove two high-speed ground switches/);
 });
 
+test("Bonavista separates the 2018 transformer failure from the filed modernization", () => {
+  const bonavista = stationProfiles.find((station) => station.code === "BVA");
+  assert.ok(bonavista);
+  assert.deepEqual(bonavista.connectedCircuits.map(({ circuit }) => circuit), ["117L"]);
+  assert.deepEqual(bonavista.feederRegister, ["BVA-01", "BVA-02", "BVA-03"]);
+  assert.deepEqual(bonavista.diagram.transformers.map(({ label, rating }) => [label, rating]), [["BVA-T1", "25 MVA"]]);
+  const existingFacts = bonavista.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = bonavista.planningRecord.facts.flat().join(" ");
+  const historyFacts = bonavista.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /BVA-T1 138\/12\.5 kV; 25 MVA; installed in 1990/);
+  assert.match(planningFacts, /138\/12\.5 kV; 25 MVA; 13\.81 MVA 2026 forecast/);
+  assert.match(historyFacts, /23 hours and 54 minutes/);
+  assert.match(historyFacts, /all 2,566 customers supplied from Bonavista Substation/);
+  assert.match(historyFacts, /listed in service/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
