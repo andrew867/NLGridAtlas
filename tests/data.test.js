@@ -1055,6 +1055,39 @@ test("Bayview records the two-bank station, fifth feeder, modernization, and rou
   assert.deepEqual(bayview.referenceSheets.map(({ image }) => image), ["./reference-maps/bvs-05-2016-feeder.jpeg", "./reference-maps/bvs-04-2024-route.jpeg"]);
 });
 
+test("Abrahams Cove records both 410L sections and the Lower Cove supply boundary", () => {
+  const abrahamsCove = stationProfiles.find((station) => station.code === "ABC");
+  assert.ok(abrahamsCove);
+  assert.deepEqual(abrahamsCove.connectedCircuits.map(({ circuit }) => circuit), ["410L", "410L"]);
+  assert.deepEqual(abrahamsCove.feederRegister, ["ABC-01", "ABC-02"]);
+  assert.deepEqual(abrahamsCove.diagram.transformers, [{ label: "ABC-T1", rating: "13.33 MVA", from: "b1", to: "b2" }]);
+
+  const supply = abrahamsCove.engineeringRecord.facts.flat().join(" ");
+  assert.match(supply, /18\.7 km from Berry Head.*8\.9 km.*Lower Cove Mine/s);
+  assert.match(supply, /approximately 1,800.*radial transmission system with no backup generation/s);
+  const assignment = abrahamsCove.assignmentRecord.facts.flat().join(" ");
+  assert.match(assignment, /ABC-01.*Rate 2\.4.*3\.6 km extension.*8\.9 km extension/s);
+  const structure = abrahamsCove.historyRecords.find((record) => record.label === "1977 STRUCTURE RECORD");
+  assert.match(structure.facts.flat().join(" "), /13\.3 MVA.*wood; installed in 1977; 66 kV.*wood; installed in 1977; 12\.47 kV/s);
+});
+
+test("Garnish records the 2009 main-line rebuild without inventing a high-voltage bus", () => {
+  const garnish = stationProfiles.find((station) => station.code === "GAR");
+  assert.ok(garnish);
+  assert.deepEqual(garnish.connectedCircuits.map(({ circuit }) => circuit), ["301L"]);
+  assert.deepEqual(garnish.feederRegister, ["GAR-01"]);
+  assert.equal(garnish.diagram.buses[0].label, "301L tap point");
+  assert.deepEqual(garnish.diagram.transformers, [{ label: "GAR-T1", rating: "3.72 MVA", from: "b1", to: "b2" }]);
+
+  const rebuilt = garnish.engineeringRecord.facts.flat().join(" ");
+  assert.match(rebuilt, /new station constructed in 2009.*no high-voltage bus/s);
+  assert.match(rebuilt, /former 1\.6 km Garnish tap.*replacement station was constructed in the main line/s);
+  assert.match(rebuilt, /existing transformer retained; all other station equipment replaced/);
+  const proposed = garnish.historyRecords.find((record) => record.label === "2007 PROPOSED STATION REPLACEMENT");
+  assert.match(proposed.facts.flat().join(" "), /approximately 430 customers.*Highway 210.*\$374,000/s);
+  assert.match(garnish.assignmentRecord.facts.flat().join(" "), /66 kV loop.*Greenhill.*Webbers Cove/);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);

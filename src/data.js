@@ -130,6 +130,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-2010-substation-asset-history",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2010 Depreciation Study, Substation Asset and Modification History",
+    topics: ["Abrahams Cove", "Garnish", "ABC-T1", "GAR-T1", "301L", "substation rebuild", "asset history"],
+    pages: "physical PDF pp. 166, 196, 201, 203 to 204 and 277",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-2007-garnish",
+    year: 2006,
+    organization: "Newfoundland Power",
+    title: "2007 Capital Budget Application, Garnish Substation Replacement",
+    topics: ["Garnish", "GAR-T1", "301L", "substation replacement", "Burin Peninsula"],
+    pages: "physical PDF pp. 159 and 162 to 164",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2024-ca-np-160",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-160, 410L and Abrahams Cove Contingency Record",
+    topics: ["Abrahams Cove", "Lower Cove Mine", "Berry Head", "410L", "radial supply", "customer outage"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/CA-NP-160.PDF"
+  },
+  {
+    id: "np-2027-burin-study",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "Wesleyville and Greenhill Planning Study, Burin Peninsula 138/66 kV System",
+    topics: ["Burin Peninsula", "Salt Pond", "Greenhill", "Garnish", "Laurentian", "Grand Beach", "Webbers Cove", "66 kV loop"],
+    pages: "physical PDF p. 162",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
     id: "np-2012-in-service-failures",
     year: 2011,
     organization: "Newfoundland Power",
@@ -1923,9 +1963,9 @@ export const sources = [
     id: "np-2024-ca-np-156",
     year: 2023,
     organization: "Newfoundland Power",
-    title: "CA-NP-156, Roycefield Ownership and Customer Contribution",
-    topics: ["Roycefield", "RFD", "104L", "Beaver Brook Antimony Mine", "Contribution in Aid of Construction", "ownership"],
-    pages: "physical PDF pp. 2 to 3",
+    title: "CA-NP-156, Customer-Owned Stations and Customer Contributions",
+    topics: ["Abrahams Cove", "Lower Cove Mine", "ABC-01", "410L", "Roycefield", "RFD", "104L", "Beaver Brook Antimony Mine", "Contribution in Aid of Construction", "ownership"],
+    pages: "physical PDF pp. 1 to 3",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/CA-NP-156.PDF"
   },
@@ -5588,11 +5628,80 @@ const earlyFeederMapProfiles = [
     code: "ABC",
     name: "Abrahams Cove",
     voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2025 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
     handbookPage: "physical PDF p. 11",
+    feederRegisterLabel: "2005 REGISTER / 2023 CUSTOMER RECORD",
     feederRegister: ["ABC-01", "ABC-02"],
     mapPages: [["ABC-01", 20], ["ABC-02", 21]],
+    connectedCircuits: [
+      { circuit: "410L", from: "Berry Head", from_code: "BHD", to: "Abrahams Cove", to_code: "ABC" },
+      { circuit: "410L", from: "Abrahams Cove", from_code: "ABC", to: "Lower Cove Mine", to_code: null }
+    ],
     transformerPages: "physical PDF p. 546",
-    transformerFacts: [["ABC-T1", "66/12.5 kV; 13.33 MVA; 5.91 MVA 2026 forecast"]]
+    transformerFacts: [["ABC-T1", "66/12.5 kV; 13.33 MVA; 5.91 MVA 2026 forecast"]],
+    diagram: {
+      label: "2023 station record with current circuit and transformer values",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "ABC-T1", rating: "13.33 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "410L", destination: "Berry Head", bus: "b1", destinationCode: "BHD" },
+        { label: "410L", destination: "Lower Cove Mine", bus: "b1", link: false },
+        { label: "ABC-01", destination: "Piccadilly and Lower Cove area", bus: "b2", link: false },
+        { label: "ABC-02", destination: "12.5 kV feeder", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2023 FILED SUPPLY AND CONTINGENCY RECORD",
+      title: "Abrahams Cove radial transmission and distribution station",
+      sourceId: "np-2024-ca-np-160",
+      pages: "physical PDF p. 1",
+      facts: [
+        ["410L east section", "approximately 18.7 km from Berry Head to Abrahams Cove"],
+        ["410L west section", "approximately 8.9 km from Abrahams Cove to customer-owned Lower Cove Mine Substation"],
+        ["Station customers", "approximately 1,800 in the 2023 filing"],
+        ["Supply configuration", "radial transmission system with no backup generation"],
+        ["410L contingency", "loss of 410L interrupts the Abrahams Cove customers and the Rate 2.4 customer at Lower Cove Mine"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 546",
+      facts: [["ABC-T1", "66/12.5 kV; 13.33 MVA; 5.91 MVA 2026 forecast"]]
+    },
+    assignmentRecord: {
+      label: "2023 LOWER COVE CUSTOMER RECORD",
+      sourceId: "np-2024-ca-np-156",
+      pages: "physical PDF p. 1",
+      facts: [
+        ["ABC-01", "also serves the Lower Cove Rate 2.4 customer and multiple Rate 2.1 and Rate 2.3 accounts"],
+        ["Distribution extension", "3.6 km extension to ABC-01 funded through a customer contribution approved in Order P.U. 25 (2001-2002)"],
+        ["410L extension", "8.9 km extension to Lower Cove funded through a customer contribution in 1988"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1977 STRUCTURE RECORD",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 201",
+        facts: [
+          ["Transformer capacity", "13.3 MVA"],
+          ["High-voltage structure", "wood; installed in 1977; 66 kV"],
+          ["Low-voltage structure", "wood; installed in 1977; 12.47 kV"]
+        ]
+      },
+      {
+        label: "2005 TO 2009 STATION WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 203",
+        facts: [
+          ["2005", "replace lightning arresters"],
+          ["2008", "refurbish the transformer and metering equipment"],
+          ["2009", "replace a lightning arrester"]
+        ]
+      }
+    ]
   },
   {
     code: "BCV",
@@ -6334,17 +6443,70 @@ const earlyFeederMapProfiles = [
     code: "GAR",
     name: "Garnish",
     voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2016 FILED 301L CONNECTION",
+    circuitSource: { sourceId: "np-2017-salt-pond", pages: "physical PDF p. 228" },
     handbookPage: "physical PDF p. 12",
+    feederRegisterLabel: "2005 FEEDER REGISTER",
     feederRegister: ["GAR-01"],
     mapPages: [["GAR-01", 57]],
+    connectedCircuits: [{ circuit: "301L", from: "Salt Pond", from_code: "SPO", to: "Garnish", to_code: "GAR" }],
     transformerPages: "physical PDF p. 547",
-    transformerFacts: [["GAR-T1", "66/12.5 kV; 3.72 MVA; 2.37 MVA 2026 forecast"]]
+    transformerFacts: [["GAR-T1", "66/12.5 kV; 3.72 MVA; 2.37 MVA 2026 forecast"]],
+    diagram: {
+      label: "2009 rebuilt station on the documented 301L connection",
+      buses: [{ id: "b1", label: "301L tap point", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "GAR-T1", rating: "3.72 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "301L", destination: "Salt Pond / Burin 66 kV loop", bus: "b1", destinationCode: "SPO" },
+        { label: "GAR-01", destination: "Garnish and Frenchman's Cove", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2009 REBUILT STATION",
+      title: "Garnish distribution substation on the Burin Peninsula 66 kV loop",
+      sourceId: "np-2010-substation-asset-history",
+      pages: "physical PDF pp. 166, 196, 204 and 277",
+      facts: [
+        ["Rebuild", "new station constructed in 2009; former station retired"],
+        ["Transformation", "3.7 MVA at 66/12.47 kV in the 2010 asset table"],
+        ["Structure", "12.47 kV steel structure installed in 2009"],
+        ["High-voltage arrangement", "no high-voltage bus; station connected directly to the transmission line"],
+        ["Former tap", "the former 1.6 km Garnish tap was removed from service in 2009; the replacement station was constructed in the main line"],
+        ["Reused equipment", "existing transformer retained; all other station equipment replaced"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [["GAR-T1", "66/12.5 kV; 3.72 MVA; 2.37 MVA 2026 forecast"]]
+    },
+    assignmentRecord: {
+      label: "2026 BURIN PENINSULA SYSTEM RECORD",
+      sourceId: "np-2027-burin-study",
+      pages: "physical PDF p. 162",
+      facts: [["System role", "Garnish is supplied from the 66 kV loop that also serves Greenhill, Laurentian, Grand Beach, and Webbers Cove"]]
+    },
+    historyRecords: [
+      {
+        label: "2007 PROPOSED STATION REPLACEMENT",
+        sourceId: "np-2007-garnish",
+        pages: "physical PDF pp. 162 to 164",
+        facts: [
+          ["Former station age and service", "38 years; approximately 430 customers"],
+          ["Condition", "deteriorated fence, insulators and crossarms; wood rot; crumbling foundations; corroded metering equipment; seized transformer-fan bearings"],
+          ["Selected site", "adjacent to Highway 210"],
+          ["Design", "use the rebuilt 301L arrangement to eliminate the high-voltage bus and avoid rebuilding the former transmission tap"],
+          ["Filed cost", "$374,000"]
+        ]
+      }
+    ]
   }
 ].map((station) => ({
   ...station,
   circuitRegisterLabel: station.circuitRegisterLabel ?? "2005 TRANSMISSION REGISTER",
   ...(station.connectedCircuits ? { circuitSource: station.circuitSource ?? { sourceId: "np-2006-handbook", pages: station.handbookPage } } : {}),
-  feederRegisterLabel: "2005 FEEDER REGISTER",
+  feederRegisterLabel: station.feederRegisterLabel ?? "2005 FEEDER REGISTER",
   eventLoads: [],
   engineeringRecord: station.engineeringRecord ?? {
     date: "2005 REGISTER",
