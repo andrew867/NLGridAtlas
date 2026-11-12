@@ -23,6 +23,7 @@ Updated: 2026-11-12
 - Added the 2002 Burin engineering history for the 1966 TL212 supply, 1982 rebuilds of 300L and 308L, and late-1990 completion of TL219.
 - Added Baie Verte Junction and Seal Cove Road as linked 363L station records, including the joint Indian River interface, the completed 2020 rebuild, and the former mine extension.
 - Added Berry Head's 402L and 410L connections, BHD-01, current transformer values, 1967 transformer record, January 2010 repair, 2013 gas-relay outage, and the filed radial control arrangement.
+- Added Doyles as a combined Hydro terminal and Newfoundland Power distribution record, including TL214, TL215, both transformers, DOY-01, the 2016 transformer project, B1L15 breaker work, and the 2025 remote terminal unit replacement.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 - Kept Pierre's Brook's published 2008 station upgrade, 2009 filed 23L conversion, 2013 installed line state, and 2015 filed electrical-refurbishment scope as separate dated records.
 - Added Rocky Pond's segmented 20L and 22L connections, 2005 switchgear fire, completed 2009 plant and substation rebuild, March 18, 2025 capacity test, and proposed 2027 bearing work.
@@ -34,7 +35,7 @@ Updated: 2026-11-12
 - Added Rose Blanche's LGL-02 connection, 25/6.9 kV transformer, dual-Francis generating unit, isolated southwest-coast duty, 2016 turbine failure, 2017 filed repair work, reported 2018 unit replacements, and filed 2027 to 2028 refurbishment.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.
-- Passed 193 automated tests, source-hash verification, and the production build.
+- Passed 195 automated tests, source-hash verification, and the production build.
 - Verified the Memorial diagram and evidence interaction in the browser.
 - Published and verified the atlas on GitHub Pages.
 - Added a clickable, source-cited St. John's Main logical one-line for the 2015 selected arrangement.

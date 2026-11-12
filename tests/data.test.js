@@ -2476,6 +2476,11 @@ test("dynamic one-line diagrams open centred on narrow screens", async () => {
   assert.match(main, /centerDynamicDiagram\(document\.querySelector\("#hydro-terminal-record"\)\)/);
 });
 
+test("two-transformer one-lines keep both banks inside the centred mobile view", async () => {
+  const renderer = await readFile(new URL("../src/terminal-diagram.js", import.meta.url), "utf8");
+  assert.match(renderer, /count === 2\s*\? spread\(index, count, 420, 700\)/);
+});
+
 test("geographic reference maps retain their source pages", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, /reference-maps\/oxen-2013-st-johns-system\.jpg/);
@@ -2782,6 +2787,30 @@ test("Berry Head connects the Gallant Street and Abrahams Cove radial sections",
   assert.match(berryHead.historyRecords[1].facts.flat().join(" "), /January 2010/);
   assert.match(berryHead.historyRecords[2].facts.flat().join(" "), /unplanned service interruption/);
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "BHD-T1").forecast_2026_mva, 3.82);
+});
+
+test("Doyles joins the Hydro terminal and Newfoundland Power distribution records", () => {
+  const doyles = stationProfiles.find((station) => station.code === "DOY");
+  const grandBay = stationProfiles.find((station) => station.code === "GBS");
+  const bottomBrook = islandTerminalRecords.find((station) => station.code === "BBK");
+
+  assert.ok(doyles);
+  assert.deepEqual(
+    doyles.connectedCircuits.map((record) => [record.circuit, record.from_code, record.to_code]),
+    [["TL214", "BBK", "DOY"], ["TL215", "DOY", "GBS"]]
+  );
+  assert.deepEqual(doyles.feederRegister, ["DOY-01"]);
+  assert.deepEqual(doyles.diagram.transformers.map((record) => [record.label, record.rating]), [
+    ["DOY-T1", "41.7 MVA"],
+    ["DOY-T2", "6.67 MVA"]
+  ]);
+  assert.match(doyles.engineeringRecord.facts.flat().join(" "), /approximately 1,700 customers/);
+  assert.match(doyles.historyRecords[1].facts.flat().join(" "), /former Lethbridge 6.7 MVA/);
+  assert.match(doyles.historyRecords[4].facts.flat().join(" "), /bypass disconnect/);
+  assert.match(doyles.historyRecords[5].facts.flat().join(" "), /remote terminal unit replaced/);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "DOY-T2").forecast_2026_mva, 5.13);
+  assert.equal(grandBay.connectedCircuits[0].from_code, "DOY");
+  assert.equal(bottomBrook.diagram.circuits.find((record) => record.label === "TL214").destinationCode, "DOY");
 });
 
 test("Greenhill code conflict is contextual and the latest code is preferred", async () => {

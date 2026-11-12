@@ -61,6 +61,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] A transformer gas-detect relay failure caused an unplanned Berry Head service interruption in 2013, 2014 Capital Budget Application, physical PDF p. 236.
 - [x] The 2027 transformer register records BHD-T1 at 66/25 kV, 7.46 MVA, with a 3.82 MVA 2026 forecast, physical PDF p. 546.
 
+## Doyles terminal and substation record
+
+- [x] TL214 connects Bottom Brook and Doyles at 138 kV; TL215 connects Doyles and Grand Bay at 66 kV, 2018 island transmission table, physical PDF p. 24.
+- [x] The 2015 study identifies the joint station arrangement: Hydro's 41.7 MVA DOY-T1 converts 138 kV to 66 kV, and Newfoundland Power's former 4.0 MVA DOY-T2 converted 66 kV to 25 kV, physical PDF p. 309.
+- [x] DOY-01 served approximately 1,700 customers in the filing. Its main trunk included approximately 4.7 km of #2 ACSR along the Trans-Canada Highway and 5.9 km along Route 406, physical PDF p. 309.
+- [x] The 2016 project selected the former Lethbridge 6.7 MVA transformer to replace the 4.0 MVA DOY-T2 at a filed cost of $768,000, physical PDF pp. 275 to 276 and 311 to 312. The 2018 transformer listing records DOY-T2 at 66/24.94 kV and 6.7 MVA, physical PDF p. 8.
+- [x] The 2009 filing proposed a replacement feeder recloser and remote terminal unit for DOY-01, physical PDF p. 271.
+- [x] The 2020 expenditure report records refurbishment of leaking 69 kV breaker B1L15 and installation of a bypass disconnect, physical PDF p. 40.
+- [x] Hydro's Q4 2025 report records replacement of the Doyles Terminal Station remote terminal unit, physical PDF p. 29.
+- [x] The 2027 transformer register records DOY-T2 at 66/25 kV, 6.67 MVA, with a 5.13 MVA 2026 forecast, physical PDF p. 547.
+
 ## Avalon stations
 
 | State | Station or system | Data now in the atlas | Missing evidence | Next archive target |

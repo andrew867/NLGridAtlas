@@ -22,7 +22,9 @@ function transformerSymbol(transformer, index, count, buses, escapeHtml) {
   const from = buses.find((bus) => bus.id === transformer.from);
   const to = buses.find((bus) => bus.id === transformer.to);
   if (!from || !to) return "";
-  const x = spread(index, count, 300, 820);
+  const x = count === 2
+    ? spread(index, count, 420, 700)
+    : spread(index, count, 300, 820);
   const lowY = Math.min(from.y, to.y);
   const highY = Math.max(from.y, to.y);
   const intermediateBuses = buses

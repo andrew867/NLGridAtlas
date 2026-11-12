@@ -370,6 +370,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
   },
   {
+    id: "np-2009-doyles-modernization",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Doyles Substation Modernization",
+    topics: ["Doyles", "DOY-T2", "DOY-01", "25 kV", "recloser", "remote terminal unit"],
+    pages: "physical PDF p. 271",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2016-doyles-study",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Doyles 25 kV Substation Study",
+    topics: ["Doyles", "DOY-T1", "DOY-T2", "DOY-01", "TL215", "66 kV", "25 kV", "load growth"],
+    pages: "physical PDF pp. 275 to 276 and 309 to 312",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
+    id: "nlh-2020-doyles-breaker",
+    year: 2021,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2020 Capital Expenditures and Carryover Report, Doyles B1L15 Refurbishment",
+    topics: ["Doyles", "B1L15", "69 kV", "SF6", "circuit breaker", "bypass disconnect"],
+    pages: "physical PDF p. 40",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NLH%20-%202020%20Capital%20Expenditures%20and%20Carryover%20Report%20-%202021-03-01.PDF"
+  },
+  {
+    id: "nlh-2025-q4-doyles-rtu",
+    year: 2026,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Q4 2025 Quarterly Summary, Doyles Remote Terminal Unit Replacement",
+    topics: ["Doyles", "remote terminal unit", "telecontrol"],
+    pages: "physical PDF p. 29",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q4%20Report%20for%20period%20ending%20December%2031%2C%202025%20-%202026-02-17.PDF"
+  },
+  {
     id: "np-2015-rrd-modernization",
     year: 2014,
     organization: "Newfoundland Power",
@@ -4832,7 +4872,7 @@ export const islandTerminalRecords = [
       label: "2021 proposed terminal upgrades / 2018 routes",
       buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }, { id: "b3", label: "66 kV bus", voltage: "66 kV" }],
       transformers: [{ label: "T3", rating: "230/138 kV", from: "b1", to: "b2" }, { label: "T4", rating: "40/53.3/66.7 MVA", from: "b1", to: "b3" }, { label: "GT1", rating: "15/20/25 MVA grounding role", from: "b2", to: "b3" }],
-      circuits: [{ label: "TL233", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL211", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL209", destination: "Stephenville", bus: "b1", destinationCode: "STV" }, { label: "TL214", destination: "Doyles", bus: "b2" }, { label: "TL250", destination: "Grandy Brook", bus: "b2" }, { label: "400L", destination: "Newfoundland Power 66 kV", bus: "b3" }]
+      circuits: [{ label: "TL233", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL211", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL209", destination: "Stephenville", bus: "b1", destinationCode: "STV" }, { label: "TL214", destination: "Doyles", bus: "b2", destinationCode: "DOY" }, { label: "TL250", destination: "Grandy Brook", bus: "b2" }, { label: "400L", destination: "Newfoundland Power 66 kV", bus: "b3" }]
     },
     sources: [sourceRef("nlh-bbk-stv-2021", "physical PDF pp. 500 and 510 to 519"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF p. 36")]
   },
@@ -7489,13 +7529,112 @@ export const stationProfiles = [
   ...filedFeederMapProfiles,
   ...earlyFeederMapProfiles,
   {
+    code: "DOY",
+    name: "Doyles",
+    voltage: "138/66/25 kV",
+    circuitRegisterLabel: "2018 FILED TRANSMISSION ROUTES",
+    circuitSource: { sourceId: "np-2018-pub-np-084", pages: "physical PDF p. 24" },
+    connectedCircuits: [
+      { circuit: "TL214", from: "Bottom Brook", from_code: "BBK", to: "Doyles", to_code: "DOY" },
+      { circuit: "TL215", from: "Doyles", from_code: "DOY", to: "Grand Bay", to_code: "GBS" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["DOY-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "Filed terminal and distribution arrangement",
+      buses: [
+        { id: "b1", label: "138 kV bus", voltage: "138 kV" },
+        { id: "b2", label: "66 kV bus", voltage: "66 kV" },
+        { id: "b3", label: "25 kV bus", voltage: "25 kV" }
+      ],
+      transformers: [
+        { label: "DOY-T1", rating: "41.7 MVA", from: "b1", to: "b2" },
+        { label: "DOY-T2", rating: "6.67 MVA", from: "b2", to: "b3" }
+      ],
+      circuits: [
+        { label: "TL214", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" },
+        { label: "TL215", destination: "Grand Bay", bus: "b2", destinationCode: "GBS" },
+        { label: "DOY-01", destination: "Doyles and Codroy Valley", bus: "b3", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2015 FILED EXISTING SYSTEM",
+      title: "Joint Hydro terminal and Newfoundland Power distribution station",
+      sourceId: "np-2016-doyles-study",
+      pages: "physical PDF p. 309",
+      facts: [
+        ["DOY-T1 ownership and duty", "Hydro; 41.7 MVA; 138/66 kV; supplies DOY-T2 and the Port aux Basques area through TL215"],
+        ["DOY-T2 before replacement", "Newfoundland Power; 4.0 MVA; 66/25 kV"],
+        ["DOY-01", "single 25 kV feeder serving approximately 1,700 customers in the filing"],
+        ["Main feeder trunk", "approximately 4.7 km of #2 ACSR along the Trans-Canada Highway and 5.9 km along Route 406"],
+        ["2016 forecast", "4.2 MVA on the 4.0 MVA DOY-T2"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [["DOY-T2", "66/25 kV; 6.67 MVA; 5.13 MVA 2026 forecast"]]
+    },
+    historyRecords: [
+      {
+        label: "2009 FILED FEEDER AUTOMATION",
+        sourceId: "np-2009-doyles-modernization",
+        pages: "physical PDF p. 271",
+        facts: [
+          ["Newfoundland Power equipment", "DOY-T2, the 25 kV bus and the single distribution feeder"],
+          ["Filed work", "replace the feeder recloser and install a remote terminal unit"]
+        ]
+      },
+      {
+        label: "2016 FILED TRANSFORMER REPLACEMENT",
+        sourceId: "np-2016-doyles-study",
+        pages: "physical PDF pp. 275 to 276 and 311 to 312",
+        facts: [
+          ["Selected unit", "former Lethbridge 6.7 MVA, 66/25 kV transformer"],
+          ["Replaced unit", "4.0 MVA DOY-T2"],
+          ["Filed project cost", "$768,000"]
+        ]
+      },
+      {
+        label: "2018 FILED OPERATING RECORD",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF p. 8",
+        facts: [["DOY-T2", "66/24.94 kV; 6.7 MVA; 4.4 MVA forecast peak"]]
+      },
+      {
+        label: "2013 GAS-RELAY FAILURE",
+        sourceId: "np-2014-gas-relay-failures",
+        pages: "physical PDF p. 236",
+        facts: [["DOY-T2", "gas-detect relay failure caused an unplanned service interruption"]]
+      },
+      {
+        label: "2020 B1L15 BREAKER REFURBISHMENT",
+        sourceId: "nlh-2020-doyles-breaker",
+        pages: "physical PDF p. 40",
+        facts: [
+          ["Failure condition", "69 kV breaker B1L15 leaked SF6 gas"],
+          ["Completed work", "refurbished B1L15 and installed a bypass disconnect for future maintenance"]
+        ]
+      },
+      {
+        label: "Q4 2025 TELECONTROL WORK",
+        sourceId: "nlh-2025-q4-doyles-rtu",
+        pages: "physical PDF p. 29",
+        facts: [["Doyles Terminal Station", "remote terminal unit replaced"]]
+      }
+    ]
+  },
+  {
     code: "GBS",
     name: "Grand Bay",
     voltage: "66/12.5 kV in 2019 filing",
     circuitRegisterLabel: "2019 FILED STATION ARRANGEMENT",
     circuitSource: { sourceId: "np-2020-grand-bay", pages: "physical PDF pp. 364 and 374" },
     connectedCircuits: [
-      { circuit: "TL215", from: "Doyles", from_code: "DYL", to: "Grand Bay", to_code: "GBS" },
+      { circuit: "TL215", from: "Doyles", from_code: "DOY", to: "Grand Bay", to_code: "GBS" },
       { circuit: "416L", from: "Long Lake", from_code: "LGL", to: "Grand Bay", to_code: "GBS" },
       { circuit: "417L", from: "Port aux Basques", from_code: "PAB", to: "Grand Bay", to_code: "GBS" }
     ],
@@ -7508,7 +7647,7 @@ export const stationProfiles = [
       buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
       transformers: [{ label: "GBS-T1", rating: "14.93 MVA in 2019 filing", from: "b1", to: "b2" }],
       circuits: [
-        { label: "TL215", destination: "Doyles", bus: "b1", destinationCode: "DYL" },
+        { label: "TL215", destination: "Doyles", bus: "b1", destinationCode: "DOY" },
         { label: "416L", destination: "Long Lake", bus: "b1", destinationCode: "LGL" },
         { label: "417L", destination: "Port aux Basques", bus: "b1", destinationCode: "PAB" }
       ],
