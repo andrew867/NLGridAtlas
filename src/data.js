@@ -1440,6 +1440,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
   },
   {
+    id: "np-2016-victoria",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Victoria Substation Refurbishment and Modernization",
+    topics: ["Victoria", "VIC-T1", "VIC-T2", "VIC-01", "VIC-02", "40L", "hydroelectric generation", "66 kV", "12.5 kV", "2.4 kV"],
+    pages: "physical PDF pp. 258 to 261",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
     id: "np-2015-clarenville",
     year: 2014,
     organization: "Newfoundland Power",
@@ -4102,7 +4112,62 @@ const filedFeederMapProfiles = [
       }
     ]
   },
-  { code: "VIC", mapPages: [["VIC-02", 155]] },
+  {
+    code: "VIC",
+    name: "Victoria",
+    voltage: "66/12.5/2.4 kV",
+    circuitRegisterLabel: "2025 CIRCUIT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "40L", from: "Carbonear", from_code: "CAR", to: "Victoria", to_code: "VIC" }
+    ],
+    feederRegisterLabel: "2015 FILED STATION ARRANGEMENT",
+    feederRegister: ["VIC-01", "VIC-02"],
+    mapPages: [["VIC-02", 155]],
+    eventLoads: [],
+    diagram: {
+      label: "2015 filed logical arrangement with current transformer ratings",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV distribution bus", voltage: "12.5 kV" }, { id: "b3", label: "2.4 kV generation bus", voltage: "2.4 kV" }],
+      transformers: [{ label: "VIC-T1", rating: "13.33 MVA", from: "b1", to: "b2" }, { label: "VIC-T2", rating: "0.6 MVA", from: "b2", to: "b3" }],
+      circuits: [{ label: "40L", destination: "Carbonear", bus: "b1", destinationCode: "CAR" }],
+      generators: [{ label: "Victoria hydro", rating: "500 kVA", bus: "b3" }]
+    },
+    engineeringRecord: {
+      date: "2015 FILED STATION ARRANGEMENT",
+      title: "Victoria distribution and hydro-generation station",
+      sourceId: "np-2016-victoria",
+      pages: "physical PDF pp. 258 to 260",
+      facts: [
+        ["Station built", "1966 as a generation and distribution substation"],
+        ["VIC-T1", "66/12.5 kV; 13.3 MVA; installed in 1974"],
+        ["Distribution", "VIC-01 and VIC-02; approximately 2,060 Victoria-area customers in the 2015 filing"],
+        ["VIC-T2", "12.5/2.4 kV; 0.6 MVA; connects the 500 kVA hydroelectric generator"],
+        ["Transmission", "radial 40L from Carbonear"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 551 to 552",
+      facts: [
+        ["VIC-T1", "66/12.5 kV; 13.33 MVA; 8.71 MVA 2026 forecast"],
+        ["VIC-T2", "12.5/2.4 kV generation transformer; 0.6 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2016 FILED MODERNIZATION",
+        sourceId: "np-2016-victoria",
+        pages: "physical PDF pp. 258 to 261",
+        facts: [
+          ["Structures", "replace deteriorated 66 kV and 12.5 kV wood structures with steel structures and new foundations"],
+          ["Feeder protection", "replace two hydraulic reclosers with remotely controlled intelligent reclosers"],
+          ["Transformer work", "refurbish VIC-T1 and upgrade containment for VIC-T1, VIC-T2, and VIC-VR"],
+          ["40L protection", "install a 66 kV breaker, bypass switch, digital relays, communications gateway, and control building"]
+        ]
+      }
+    ]
+  },
   { code: "WAV", mapPages: [["WAV-01", 167]] },
   {
     code: "WES",

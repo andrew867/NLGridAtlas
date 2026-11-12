@@ -1091,6 +1091,23 @@ test("Humber separates its former dual-voltage banks from the filed conversion",
   assert.match(proposedFacts, /post-conversion design has three 12.5 kV feeders/);
 });
 
+test("Victoria links the radial distribution station and hydro generator", () => {
+  const victoria = stationProfiles.find((station) => station.code === "VIC");
+  assert.ok(victoria);
+  assert.deepEqual(victoria.connectedCircuits.map(({ circuit }) => circuit), ["40L"]);
+  assert.deepEqual(victoria.feederRegister, ["VIC-01", "VIC-02"]);
+  assert.deepEqual(victoria.diagram.transformers.map(({ label, rating }) => [label, rating]), [["VIC-T1", "13.33 MVA"], ["VIC-T2", "0.6 MVA"]]);
+  assert.deepEqual(victoria.diagram.generators.map(({ label, rating }) => [label, rating]), [["Victoria hydro", "500 kVA"]]);
+  const existingFacts = victoria.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = victoria.planningRecord.facts.flat().join(" ");
+  const proposedFacts = victoria.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /approximately 2,060 Victoria-area customers/);
+  assert.match(existingFacts, /connects the 500 kVA hydroelectric generator/);
+  assert.match(planningFacts, /8.71 MVA 2026 forecast/);
+  assert.match(proposedFacts, /replace two hydraulic reclosers with remotely controlled intelligent reclosers/);
+  assert.match(proposedFacts, /install a 66 kV breaker, bypass switch, digital relays/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
