@@ -955,6 +955,23 @@ test("Hare Bay joins 115L and 116L with the reported distribution transfer", () 
   assert.match(reliabilityFacts, /T-SAIFI 3.49; corporate average 0.49/);
 });
 
+test("Wesleyville separates the existing derated turbine from the proposed replacement", () => {
+  const wesleyville = stationProfiles.find((station) => station.code === "WES");
+  assert.ok(wesleyville);
+  assert.deepEqual(wesleyville.connectedCircuits.map(({ circuit }) => circuit), ["116L"]);
+  assert.deepEqual(wesleyville.feederRegister, ["WES-01", "WES-02", "WES-03"]);
+  assert.deepEqual(wesleyville.diagram.transformers.map(({ label, rating }) => [label, rating]), [["WES-T1", "13.33 MVA"], ["WES-T2", "16 MVA"]]);
+  assert.deepEqual(wesleyville.diagram.generators.map(({ label, rating }) => [label, rating]), [["WES CTG", "8 MW derated"]]);
+  const existingFacts = wesleyville.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = wesleyville.planningRecord.facts.flat().join(" ");
+  const historyFacts = wesleyville.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /WES-T2 station report 66\/13 kV; 20 MVA/);
+  assert.match(planningFacts, /WES-T2 66\/13.8 kV generation transformer; 16 MVA/);
+  assert.match(historyFacts, /originally 14.7 MW; derated to 8 MW/);
+  assert.match(historyFacts, /install one nominal 15 MW combustion turbine generator/);
+  assert.match(historyFacts, /synchronous-condenser capability/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

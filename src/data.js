@@ -690,6 +690,26 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
   {
+    id: "np-2027-wesleyville-refurbishment",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Supplemental Capital Application, Wesleyville Thermal Generation Facility Refurbishment",
+    topics: ["Wesleyville", "WES CTG", "WES-T2", "combustion turbine", "66 kV", "thermal generation", "synchronous condenser"],
+    pages: "physical PDF pp. 24 to 28",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
+    id: "np-2010-wesleyville",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Wesleyville Substation Refurbishment",
+    topics: ["Wesleyville", "WES-T1", "WES-T2", "WES-01", "WES-02", "WES-03", "116L", "gas turbine"],
+    pages: "physical PDF pp. 298 to 299",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
     id: "np-2027-transformers",
     year: 2026,
     organization: "Newfoundland Power",
@@ -3715,7 +3735,73 @@ const filedFeederMapProfiles = [
   },
   { code: "VIC", mapPages: [["VIC-02", 155]] },
   { code: "WAV", mapPages: [["WAV-01", 167]] },
-  { code: "WES", mapPages: [["WES-01", 168], ["WES-02", 169]] }
+  {
+    code: "WES",
+    name: "Wesleyville",
+    voltage: "66/12.5/13.8 kV",
+    circuitRegisterLabel: "2026 REPORTED RADIAL SUPPLY",
+    circuitSource: { sourceId: "np-2027-wesleyville-study", pages: "physical PDF pp. 158 to 160" },
+    connectedCircuits: [
+      { circuit: "116L", from: "Hare Bay", from_code: "HBS", to: "Wesleyville", to_code: "WES", via: "Trinity and Greenspond taps" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["WES-01", "WES-02", "WES-03"],
+    mapPages: [["WES-01", 168], ["WES-02", 169]],
+    eventLoads: [],
+    diagram: {
+      label: "2026 existing logical arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV distribution bus", voltage: "12.5 kV" }, { id: "b3", label: "13.8 kV generation bus", voltage: "13.8 kV" }],
+      transformers: [{ label: "WES-T1", rating: "13.33 MVA", from: "b1", to: "b2" }, { label: "WES-T2", rating: "16 MVA", from: "b1", to: "b3" }],
+      circuits: [{ label: "116L", destination: "Hare Bay", bus: "b1", destinationCode: "HBS" }],
+      generators: [{ label: "WES CTG", rating: "8 MW derated", bus: "b3" }]
+    },
+    engineeringRecord: {
+      date: "2009 FILED STATION EQUIPMENT",
+      title: "Wesleyville distribution and thermal-generation station",
+      sourceId: "np-2010-wesleyville",
+      pages: "physical PDF pp. 298 to 299",
+      facts: [
+        ["Station built", "1974 as a distribution substation"],
+        ["WES-T1 station report", "66/12 kV; 13 MVA; supplied three 12 kV feeders"],
+        ["WES-T2 station report", "66/13 kV; 20 MVA; connected the gas turbine to the Island Interconnected System"],
+        ["Gas turbine relocation", "relocated to Wesleyville in 2005"],
+        ["Transmission supply", "radial 116L from Trinity in the 2009 station report"],
+        ["Customers", "approximately 1,700 in the New-Wes-Valley area"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 551 to 552",
+      facts: [
+        ["WES-T1", "66/12.5 kV; 13.33 MVA; 9.75 MVA 2026 forecast"],
+        ["WES-T2", "66/13.8 kV generation transformer; 16 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2026 EXISTING COMBUSTION TURBINE",
+        sourceId: "np-2027-wesleyville-refurbishment",
+        pages: "physical PDF pp. 25 to 26",
+        facts: [
+          ["Original installation", "Associated Electrical Industries unit installed at Salt Pond in 1969"],
+          ["Relocation", "moved to New-Wes-Valley in 2003"],
+          ["Output", "originally 14.7 MW; derated to 8 MW"],
+          ["Operating role", "backup generation during transmission outages and emergency or peak-load system support"]
+        ]
+      },
+      {
+        label: "2027 TO 2031 PROPOSED REPLACEMENT",
+        sourceId: "np-2027-wesleyville-refurbishment",
+        pages: "physical PDF pp. 24 and 28",
+        facts: [
+          ["Generation", "install one nominal 15 MW combustion turbine generator"],
+          ["Electrical scope", "new switchgear, protection, controls, and synchronous-condenser capability"],
+          ["Other scope", "replace fuel-storage and forwarding systems; install an auxiliary power unit; expand the yard and modify the building"]
+        ]
+      }
+    ]
+  }
 ];
 
 export const stationProfiles = [
