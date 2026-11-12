@@ -2053,6 +2053,30 @@ test("Sandy Brook connects the rebuilt hydro plant to Grand Falls through 105L",
   assert.match(historyFacts, /SBK-T1, asset 200181/);
 });
 
+test("West Brook preserves the current transformer entries and dated plant records", () => {
+  const westBrook = stationProfiles.find((station) => station.code === "WBK");
+  assert.ok(westBrook);
+  assert.deepEqual(westBrook.connectedCircuits, []);
+  assert.deepEqual(westBrook.feederRegister, ["LAU-01"]);
+  assert.deepEqual(westBrook.diagram.buses.map(({ voltage }) => voltage), ["12.5 kV", "4.2 kV"]);
+  assert.deepEqual(westBrook.diagram.transformers.map(({ label, rating }) => [label, rating]), [["WBK-T1 A/B/C", "3 x 0.33 MVA"]]);
+  assert.deepEqual(westBrook.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "0.72 MW"]]);
+  const plantFacts = westBrook.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = westBrook.planningRecord.facts.flat().join(" ");
+  const historyFacts = westBrook.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /constructed in 1942/);
+  assert.match(plantFacts, /680 kW.*0\.72 MW/);
+  assert.match(plantFacts, /47\.0 m net head/);
+  assert.match(plantFacts, /run-of-river operation with no system storage/);
+  assert.match(plantFacts, /3\.4 GWh per year/);
+  assert.match(planningFacts, /three generation-transformer entries.*12\.5\/4\.2 kV.*0\.33 MVA/);
+  assert.match(historyFacts, /three 6\.9\/12\.5 kV step-up transformer replacements/);
+  assert.match(historyFacts, /1967 by a 24-inch butterfly valve/);
+  assert.match(historyFacts, /actuator failed open in 2009/);
+  assert.match(historyFacts, /1,742,324 kWh/);
+  assert.match(historyFacts, /no capital project relating to West Brook was approved for 2026/);
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");

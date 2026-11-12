@@ -1980,6 +1980,56 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
+    id: "np-2003-west-brook-transformers",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-22(j), Fall Pond, West Brook and Gander Transformer Replacements",
+    topics: ["West Brook", "WBK", "hydroelectric generation", "step-up transformers", "6.9 kV", "12.5 kV"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2022%20(j).pdf"
+  },
+  {
+    id: "np-2011-west-brook-main-valve",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, West Brook Main Valve Replacement",
+    topics: ["West Brook", "WBK", "hydroelectric generation", "main valve", "thrust bearing", "battery bank", "cooling system"],
+    pages: "physical PDF pp. 181 to 182 and 184",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2013-west-brook-plant",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2010 Depreciation Study, West Brook Hydro Plant Overview",
+    topics: ["West Brook", "WBK", "hydroelectric generation", "Francis turbine", "generator", "net head"],
+    pages: "physical PDF p. 140",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-2013-west-brook-connection",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-027, Generating-Facility Connection Data",
+    topics: ["West Brook", "WBK", "LAU-01", "12.5 kV", "distribution feeder", "capacity"],
+    pages: "physical PDF p. 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-027.pdf"
+  },
+  {
+    id: "np-2027-ca-np-056-west-brook",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "CA-NP-056, West Brook Generation and Expenditure Record",
+    topics: ["West Brook", "WBK", "hydroelectric generation", "run-of-river", "drought", "generation", "operating costs", "capital expenditures"],
+    pages: "physical PDF pp. 1 to 5",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/CA-NP-056.PDF"
+  },
+  {
     id: "np-2022-tors-cove",
     year: 2021,
     organization: "Newfoundland Power",
@@ -5423,6 +5473,79 @@ const filedFeederMapProfiles = [
           ["Protection and control", "replace obsolete generator, transformer, excitation, synchronization and forebay-monitoring equipment"],
           ["Auxiliary power", "replace the original 8.5 kW propane unit, which cannot support winter black-start heating load"],
           ["Filed schedule and cost", "design and procurement in 2027, construction by year-end 2028; $1.728 million total budget"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "WBK",
+    name: "West Brook",
+    voltage: "12.5/4.2 kV transformer register",
+    circuitRegisterLabel: "2012 GENERATING-FACILITY CONNECTION",
+    circuitSource: { sourceId: "np-2013-west-brook-connection", pages: "physical PDF p. 2" },
+    connectedCircuits: [],
+    feederRegisterLabel: "2012 CONNECTION RECORD",
+    feederRegister: ["LAU-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "Current transformer-register values and documented LAU-01 connection",
+      buses: [
+        { id: "b1", label: "LAU-01 connection", voltage: "12.5 kV" },
+        { id: "b2", label: "transformer low-side winding", voltage: "4.2 kV" }
+      ],
+      transformers: [{ label: "WBK-T1 A/B/C", rating: "3 x 0.33 MVA", from: "b2", to: "b1" }],
+      circuits: [{ label: "LAU-01", destination: "distribution feeder", bus: "b1" }],
+      generators: [{ label: "G1", rating: "0.72 MW", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2010 PLANT OVERVIEW",
+      title: "West Brook hydro generation station",
+      sourceId: "np-2013-west-brook-plant",
+      pages: "physical PDF p. 140",
+      facts: [
+        ["Plant", "constructed in 1942 near St. Lawrence with one horizontal Francis turbine manufactured by Leffel and one Westinghouse generator"],
+        ["Recorded capacity", "680 kW in the 2010 plant overview; the 2026 response rates maximum output at 0.72 MW"],
+        ["Hydraulics", "approximately 47.0 m net head"],
+        ["Water storage", "run-of-river operation with no system storage"],
+        ["Current normal production", "approximately 3.4 GWh per year in the 2026 response"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 552",
+      facts: [["WBK-T1", "three generation-transformer entries; each 12.5/4.2 kV and 0.33 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "2003 FILED TRANSFORMER REPLACEMENTS",
+        sourceId: "np-2003-west-brook-transformers",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Filed equipment", "three 6.9/12.5 kV step-up transformer replacements"],
+          ["Filed cost", "$47,600 total, including $9,700 labour and $39,900 non-labour"]
+        ]
+      },
+      {
+        label: "2011 FILED MAIN-VALVE WORK",
+        sourceId: "np-2011-west-brook-main-valve",
+        pages: "physical PDF pp. 181 to 182 and 184",
+        facts: [
+          ["Existing valve", "the original 1942 valve was replaced in 1967 by a 24-inch butterfly valve; leakage prevented positive turbine isolation"],
+          ["Failure risk", "the actuator failed open in 2009; the filing stated that failure of the wicket gates to stop flow could cause catastrophic turbine and generator failure"],
+          ["Filed work", "replace the main valve, battery bank, battery charger and thrust-bearing oil-cooling system during the plant outage"],
+          ["Filed cost", "$275,000"]
+        ]
+      },
+      {
+        label: "2025 GENERATION RECORD",
+        sourceId: "np-2027-ca-np-056-west-brook",
+        pages: "physical PDF pp. 1, 3 and 5",
+        facts: [
+          ["2025 production", "1,742,324 kWh; Newfoundland Power attributed part of the difference from normal production to widespread summer drought"],
+          ["Plant duty", "0.72 MW maximum rating; 326 MWh in one month equals approximately 453 full-output hours"],
+          ["2026 capital status", "no capital project relating to West Brook was approved for 2026"]
         ]
       }
     ]
