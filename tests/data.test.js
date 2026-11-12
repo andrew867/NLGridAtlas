@@ -919,6 +919,23 @@ test("Twillingate combines the completed station work with measured winter volta
   assert.match(historyFacts, /0.873 pu on January 24, 2024/);
 });
 
+test("Trinity preserves the 116L tap control and the 2020 transformer failure", () => {
+  const trinity = stationProfiles.find((station) => station.code === "TRN");
+  assert.ok(trinity);
+  assert.deepEqual(trinity.connectedCircuits.map(({ circuit }) => circuit), ["116L tap"]);
+  assert.deepEqual(trinity.feederRegister, ["TRN-01", "TRN-02"]);
+  assert.deepEqual(trinity.diagram.transformers.map(({ label, rating }) => [label, rating]), [["TRN-T1", "6.67 MVA"]]);
+  const operatingFacts = trinity.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = trinity.planningRecord.facts.flat().join(" ");
+  const historyFacts = trinity.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(operatingFacts, /TRN-116L-A3 automated air-break switch/);
+  assert.match(operatingFacts, /remotely disable under-voltage tripping/);
+  assert.match(planningFacts, /66\/25 kV; 6.67 MVA; 3.78 MVA 2026 forecast/);
+  assert.match(historyFacts, /3,503 customers supplied from 115L and 116L/);
+  assert.match(historyFacts, /25 hours and 58 minutes/);
+  assert.match(historyFacts, /isolated to Trinity Substation customers/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

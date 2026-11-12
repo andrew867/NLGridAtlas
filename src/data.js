@@ -140,6 +140,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
   },
   {
+    id: "np-2006-trinity-control",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Trinity Substation Control",
+    topics: ["Trinity", "TRN-116L-A3", "115L", "116L", "under-voltage protection", "SCADA"],
+    pages: "physical PDF p. 231",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
     id: "np-2025-gander-twillingate",
     year: 2024,
     organization: "Newfoundland Power",
@@ -1344,7 +1354,7 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "CA-NP-168, Attachment A, Transmission Line Endpoints",
-    topics: ["110L", "111L", "113L", "117L", "123L", "Lethbridge", "Catalina", "Bonavista", "Clarenville"],
+    topics: ["110L", "111L", "113L", "115L", "116L", "117L", "123L", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
     pages: "physical PDF p. 4",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
@@ -3526,7 +3536,58 @@ const filedFeederMapProfiles = [
   { code: "PAS", mapPages: [["PAS-01", 118]] },
   { code: "SCV", mapPages: [["SCV-01", 134]] },
   { code: "STX", mapPages: [["STX-01", 151]] },
-  { code: "TRN", mapPages: [["TRN-02", 152]] },
+  {
+    code: "TRN",
+    name: "Trinity",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2025 FILED RADIAL NETWORK",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "116L tap", from: "Hare Bay", from_code: "HBS", to: "Wesleyville", to_code: "WES", via: "Trinity" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["TRN-01", "TRN-02"],
+    mapPages: [["TRN-02", 152]],
+    eventLoads: [],
+    diagram: {
+      label: "2025 filed logical tap arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "TRN-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "116L tap", destination: "Hare Bay to Wesleyville radial line", bus: "b1", link: false }]
+    },
+    engineeringRecord: {
+      date: "2005 FILED OPERATING RECORD",
+      title: "Trinity tap station and 116L sectionalizing control",
+      sourceId: "np-2006-trinity-control",
+      pages: "physical PDF p. 231",
+      facts: [
+        ["Regional supply", "radial 115L and 116L system from Gambo serving Hare Bay, Trinity, Greenspond, and New-Wes-Valley"],
+        ["TRN-116L-A3", "automated air-break switch at Trinity used to isolate faults on 116L"],
+        ["Restoration function", "opening TRN-116L-A3 permitted earlier restoration to Hare Bay and Trinity customers"],
+        ["2006 filed control work", "modify the scheme so System Control could remotely disable under-voltage tripping"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [
+        ["TRN-T1", "66/25 kV; 6.67 MVA; 3.78 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2020 TRN-T1 BUSHING FAILURE",
+        sourceId: "np-2027-ca-np-041",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Initial interruption", "3,503 customers supplied from 115L and 116L, including Hare Bay, Trinity, Greenspond, and Wesleyville"],
+          ["Outage duration", "approximately 25 hours and 58 minutes"],
+          ["Isolation", "after the failed bushing was identified, the outage was isolated to Trinity Substation customers"]
+        ]
+      }
+    ]
+  },
   {
     code: "TWG",
     name: "Twillingate",
