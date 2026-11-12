@@ -85,7 +85,9 @@ Updated: 2026-11-12
 
 ## Active work
 
-1. Continue the latest-supported Holyrood arrangement search, including Muskrat Falls, Labrador-Island Link, condition, reliability, capital, annual, and financial filings, `GEN-001`.
+1. Continue source-specific western and rural station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+
+The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
 Phase 4 geography is complete for the sources located to date. Current AC circuit-to-route matching remains deferred because the available island route layer has no utility circuit designations.
 
