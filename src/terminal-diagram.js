@@ -99,6 +99,14 @@ function converterSymbol(converter, index, count, bus, escapeHtml) {
   </g>`;
 }
 
+function busDisplayLabel(bus) {
+  const voltage = bus.voltage.trim();
+  const label = bus.label.trim();
+  if (label.toLowerCase().includes(voltage.toLowerCase())) return label;
+  if (label.toLowerCase() === "bus") return `${voltage} bus`;
+  return `${voltage} / ${label}`;
+}
+
 export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-terminal") {
   if (!diagram) return "";
   const busGap = 210;
@@ -111,7 +119,7 @@ export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-t
   const busMarkup = buses.map((bus) => `
     <g class="terminal-bus voltage-${escapeHtml(bus.voltage.replace(/[^0-9]/g, ""))}">
       <line x1="120" y1="${bus.y}" x2="1000" y2="${bus.y}" />
-      <text x="560" y="${bus.y - 17}">${escapeHtml(`${bus.voltage} / ${bus.label}`)}</text>
+      <text x="560" y="${bus.y - 17}">${escapeHtml(busDisplayLabel(bus))}</text>
     </g>`).join("");
 
   const circuitMarkup = buses.map((bus, busIndex) => {

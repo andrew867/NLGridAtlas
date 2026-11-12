@@ -120,6 +120,21 @@ test("diagram text masks conductor strokes", async () => {
   assert.match(css, /\.terminal-diagram text\s*\{[^}]*stroke-width:\s*8px/s);
 });
 
+test("bus labels do not repeat their voltage", () => {
+  const markup = renderTerminalDiagram({
+    label: "bus label test",
+    buses: [
+      { id: "b1", label: "66 kV bus", voltage: "66 kV" },
+      { id: "b2", label: "bus", voltage: "25 kV" }
+    ],
+    transformers: [],
+    circuits: []
+  }, escapeHtml, "station");
+  assert.match(markup, />66 kV bus<\/text>/);
+  assert.match(markup, />25 kV bus<\/text>/);
+  assert.doesNotMatch(markup, /66 kV \/ 66 kV bus/);
+});
+
 test("transformers spanning an intermediate bus render a crossing break", async () => {
   const diagram = {
     label: "Three-bus crossing test",

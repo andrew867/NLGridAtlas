@@ -77,6 +77,16 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The proposed project adds a 138 kV line from Lewisporte to Boyd's Cove, moves the planned GAN-T2 replacement to Boyd's Cove, removes the 66 kV system from Gander, and adds a 138 kV grounding transformer at Gander, physical PDF pp. 65 to 67.
 - [ ] Do not render the proposed 138 kV Boyd's Cove supply or revised Gander arrangement as commissioned before a completion record confirms the filed 2027 schedule.
 
+## Gander Bay station record
+
+- [x] The 2024 existing-system description records 108L from Gander as Gander Bay's normal supply. It records 114L normally open at the Gander Bay end and the 142L tie approximately 1.7 km west of the station normally closed, physical PDF pp. 478 to 479.
+- [x] The 2027 transformer table lists GBY-T1 at 66/25 kV, 13.33 MVA, with an 8.48 MVA 2026 forecast, physical PDF p. 547.
+- [x] The March 2014 equipment register identifies GBY-T1 asset 200248, the GBY-01 and GBY-02 reclosers, three GBY-02 voltage regulators, three GBY-03 reclosers, and four GBY-03 voltage regulators, physical PDF pp. 129 to 132.
+- [x] The 2005 application records the filed GBY-02 rebuild, including the 25 kV feeder, approximately 886 customers, 1965 construction, existing conductor, reliability results, selected 4/0 AASC rebuild, and $862,695 two-year scope, physical PDF pp. 325 to 334.
+- [x] The 2019 application records the filed GBY-03 rebuild. The 2022 application reports that the work was carried out in 2019 and 2020, physical PDF pp. 302 to 304; 2022 application physical PDF p. 380.
+- [x] The 2027 application records the proposed GBY-01 refurbishment, 643 customers, SUM-02 tie at Roger's Cove, 11 km of deteriorated 2/0 ACSR, 22 causeway poles, and a $1.36 million filed cost, physical PDF pp. 30 to 36.
+- [ ] Do not record the GBY-01 refurbishment as complete before a later expenditure report confirms the filed 2028 construction schedule.
+
 ## Blaketown station record
 
 - [x] The 2027 station report records two incoming 138 kV lines, four outgoing 66 kV lines, BLK-T3 at 25/33.3/41.6 MVA, BLK-T2 at 15/20 MVA, two 25 kV feeders, approximately 4,090 local customers, and approximately 5,970 customers on radial lines 55L and 94L, physical PDF pp. 422 to 425.

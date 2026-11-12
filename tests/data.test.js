@@ -738,6 +738,47 @@ test("Boyd's Cove and Gander retain the present corridor before the proposed 138
   assert.match(conversion.facts.flat().join(" "), /remove the 66 kV system from Gander/);
 });
 
+test("Gander Bay separates its normal transmission configuration from filed feeder projects", () => {
+  const ganderBay = stationProfiles.find((station) => station.code === "GBY");
+  assert.ok(ganderBay);
+  assert.deepEqual(ganderBay.connectedCircuits.map(({ circuit }) => circuit), ["108L", "114L"]);
+  assert.deepEqual(ganderBay.feederRegister, ["GBY-01", "GBY-02", "GBY-03"]);
+
+  const existingFacts = ganderBay.engineeringRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /108L from Gander/);
+  assert.match(existingFacts, /114L is normally open at the Gander Bay end/);
+  assert.match(existingFacts, /approximately 1\.7 km west of Gander Bay/);
+  assert.match(ganderBay.planningRecord.facts.flat().join(" "), /66\/25 kV; 13\.33 MVA; 8\.48 MVA 2026 forecast/);
+
+  const gby02 = ganderBay.historyRecords.find((record) => record.label === "2004 TO 2006 FILED GBY-02 REBUILD");
+  assert.match(gby02.facts.flat().join(" "), /approximately 886 customers/);
+  assert.match(gby02.facts.flat().join(" "), /predominantly #2 ACSR/);
+  assert.match(gby02.facts.flat().join(" "), /\$862,695/);
+
+  const equipment = ganderBay.historyRecords.find((record) => record.label === "MARCH 2014 EQUIPMENT REGISTER");
+  assert.match(equipment.facts.flat().join(" "), /GBY-T1 asset 200248/);
+  assert.match(equipment.facts.flat().join(" "), /GBY-02-VR1 regulator assets 220684, 220685 and 220686/);
+
+  const gby03 = ganderBay.historyRecords.find((record) => record.label === "2018 FILED GBY-03 REBUILD");
+  assert.match(gby03.facts.flat().join(" "), /49 km/);
+  assert.match(gby03.facts.flat().join(" "), /266 MCM ACSR/);
+  const gby03Status = ganderBay.historyRecords.find((record) => record.label === "2019 TO 2020 REPORTED GBY-03 WORK");
+  assert.match(gby03Status.facts.flat().join(" "), /carried out in 2019 and 2020/);
+
+  const gby01 = ganderBay.historyRecords.find((record) => record.label === "2027 TO 2028 PROPOSED GBY-01 REFURBISHMENT");
+  assert.match(gby01.facts.flat().join(" "), /tie to SUM-02 at Roger's Cove/);
+  assert.match(gby01.facts.flat().join(" "), /22 leaning or deteriorated causeway poles/);
+  assert.match(gby01.facts.flat().join(" "), /\$1\.36 million/);
+
+  assert.deepEqual(ganderBay.referenceSheets.map(({ image }) => image), [
+    "./reference-maps/gby-01-2027-route.png",
+    "./reference-maps/gby-02-2005-map-1.png",
+    "./reference-maps/gby-02-2005-map-2.png",
+    "./reference-maps/gby-02-2005-map-3.png",
+    "./reference-maps/gby-03-2018-route.png"
+  ]);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);

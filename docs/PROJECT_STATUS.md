@@ -116,10 +116,11 @@ Updated: 2026-11-12
 - Added Bishop's Falls' 138/25 kV one-line, 1978 steel structure record, current 132L, 133L, 134L, and 136L endpoints, March 2014 breaker and feeder-protection inventory, the 2010 BFS-01-R replacement, the 2015 Grand Falls tie alternative, and the 2036 P90 136L contingency result.
 - Rebuilt Cobb's Pond as a three-bus 138/66/12.5 kV record. The station now shows TL210, 142L, 144L, and 147L, all three transformer banks, the 2010 measured Gander-area peak, the filed 2012 ring-bus and COB-T3 addition, the March 2014 equipment register, and the repaired 2025 COB-T3 in-service failure.
 - Rebuilt Gander's dated engineering record around the existing 138/66/12.5 kV arrangement. The station now includes the 2008 filed refurbishment, 2010 measured peak, March 2014 breaker and asset register, completed 2015 modernization, GAN-T2 service and condition history, its approved 41.6 MVA replacement, and the separately approved 2027 removal of the Gander 66 kV supply function.
+- Added Gander Bay's 66/25 kV station, 2024 normal 108L/114L operating configuration, 13.33 MVA transformer record, March 2014 equipment register, filed GBY-01, GBY-02, and GBY-03 feeder work, reported GBY-03 completion, and five preserved feeder-route drawings.
 
 ## Active work
 
-1. Continue source-specific western and rural station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Continue source-specific central, northeastern, western, and rural station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

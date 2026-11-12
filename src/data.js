@@ -1523,9 +1523,9 @@ export const sources = [
     id: "np-2016-pub-np-064-g",
     year: 2016,
     organization: "Newfoundland Power",
-    title: "PUB-NP-064 Attachment G, Bishop's Falls, Cobb's Pond, Gander, and Glendale inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "102L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers"],
-    pages: "physical PDF pp. 28 to 31, 88 to 92, 133 to 138 and 148 to 152",
+    title: "PUB-NP-064 Attachment G, Bishop's Falls, Cobb's Pond, Gander Bay, Gander, and Glendale inspection forms",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "102L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138 and 148 to 152",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1548,6 +1548,56 @@ export const sources = [
     pages: "physical PDF pp. 477 to 486",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
+    id: "np-2025-gander-system",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, Gander to Twillingate Existing System Configuration",
+    topics: ["Gander", "Gander Bay", "Jonathan's Pond", "Boyd's Cove", "Summerford", "Twillingate", "108L", "114L", "142L", "normal operating configuration"],
+    pages: "physical PDF pp. 478 to 479",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
+    id: "np-2005-gby02",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "2005 Capital Budget Application, GBY-02 Feeder Reliability Study",
+    topics: ["Gander Bay", "GBY-02", "25 kV", "feeder reliability", "conductor replacement", "4/0 AASC", "Harris Point", "Main Point", "Davidsville", "Carmanville", "Noggin Cove", "Frederickton"],
+    pages: "physical PDF pp. 324 to 347",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
+  },
+  {
+    id: "np-2019-gby03",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "2019 Capital Budget Application, GBY-03 Feeder Study",
+    topics: ["Gander Bay", "GBY-03", "25 kV", "feeder reliability", "Musgrave Harbour", "Carmanville", "conductor replacement", "pole replacement", "cutout replacement"],
+    pages: "physical PDF pp. 300 to 307",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
+  },
+  {
+    id: "np-2022-gby03-review",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Distribution Reliability Initiative Review",
+    topics: ["Gander Bay", "GBY-03", "distribution reliability", "completed feeder work"],
+    pages: "physical PDF p. 380",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
+    id: "np-2027-gby01",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, GBY-01 Distribution Feeder Refurbishment",
+    topics: ["Gander Bay", "GBY-01", "25 kV", "feeder refurbishment", "Roger's Cove", "Victoria Cove", "Clarke's Head", "Summerford", "SUM-02", "causeway"],
+    pages: "physical PDF pp. 30 to 36",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
     id: "np-2025-northwest-brook",
@@ -5907,6 +5957,150 @@ export const stationProfiles = [
           ["Transformer relocation", "install the GAN-T2 replacement transformer at Boyd's Cove instead of Gander"],
           ["Filed schedule", "construction and commissioning planned for 2027"]
         ]
+      }
+    ]
+  },
+  {
+    code: "GBY",
+    name: "Gander Bay",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2024 EXISTING / NORMAL CONFIGURATION",
+    circuitSource: { sourceId: "np-2025-gander-system", pages: "physical PDF pp. 478 to 479" },
+    connectedCircuits: [
+      { circuit: "108L", from: "Gander", from_code: "GAN", to: "Gander Bay", to_code: "GBY" },
+      { circuit: "114L", from: "Gander Bay", from_code: "GBY", to: "Boyd's Cove", to_code: "BOY" }
+    ],
+    feederRegisterLabel: "2005 STATION REGISTER",
+    feederRegister: ["GBY-01", "GBY-02", "GBY-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2024 existing equipment and normal system configuration",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "GBY-T1", rating: "13.33 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "108L", destination: "Gander", bus: "b1", destinationCode: "GAN" }, { label: "114L", destination: "Boyd's Cove, normally open at GBY", bus: "b1", destinationCode: "BOY" }]
+    },
+    engineeringRecord: {
+      date: "2024 EXISTING / NORMAL CONFIGURATION",
+      title: "Gander Bay transmission and distribution station",
+      sourceId: "np-2025-gander-system",
+      pages: "physical PDF pp. 478 to 479",
+      facts: [
+        ["Normal supply", "108L from Gander, supplied by GAN-T2"],
+        ["114L operating point", "114L is normally open at the Gander Bay end"],
+        ["142L tie", "142L connects to 114L approximately 1.7 km west of Gander Bay; the tie is normally closed"],
+        ["Northbound corridor", "114L passes through Boyd's Cove before Summerford"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["GBY-T1", "66/25 kV; 13.33 MVA; 8.48 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2004 TO 2006 FILED GBY-02 REBUILD",
+        sourceId: "np-2005-gby02",
+        pages: "physical PDF pp. 325 to 334",
+        facts: [
+          ["Feeder", "25 kV; approximately 886 customers in the 2004 report"],
+          ["Existing construction", "line originally built in 1965; predominantly #2 ACSR with approximately 3.5 km of 4/0 AASC"],
+          ["1999 to 2003 performance", "SAIFI 3.45 and SAIDI 8.18 hours"],
+          ["Selected work", "rebuild and relocate the trunk with 4/0 AASC"],
+          ["Filed cost and schedule", "$862,695; work staged over 2005 and 2006"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 129 to 132",
+        facts: [
+          ["GBY-T1", "asset 200248; power transformer with load-tap changer"],
+          ["GBY-01", "GBY-01-R asset 230308; hydraulic recloser"],
+          ["GBY-02", "GBY-02-R asset 230471; resistor recloser; GBY-02-VR1 regulator assets 220684, 220685 and 220686"],
+          ["GBY-03", "recloser assets 230431, 230473 and 230498; regulator assets 220721, 220748, 220749 and 220755"]
+        ]
+      },
+      {
+        label: "2018 FILED GBY-03 REBUILD",
+        sourceId: "np-2019-gby03",
+        pages: "physical PDF pp. 302 to 304",
+        facts: [
+          ["Feeder route", "49 km; the first 19 km is a cross-country H-frame section, followed by 30 km to Musgrave Harbour"],
+          ["Existing conductor", "266 MCM ACSR on the cross-country section; later sections include 1/0 AASC and #2 ACSR"],
+          ["2013 to 2017 performance", "SAIFI 2.87 and SAIDI 6.40 hours"],
+          ["Filed work", "replace approximately 90 poles, re-insulate 70 structures, renew crossarms and insulators on approximately 100 structures, replace poor conductor and remove remaining porcelain cutouts"],
+          ["Filed cost and schedule", "$1.2 million; work planned for 2019 and 2020"]
+        ]
+      },
+      {
+        label: "2019 TO 2020 REPORTED GBY-03 WORK",
+        sourceId: "np-2022-gby03-review",
+        pages: "physical PDF p. 380",
+        facts: [
+          ["Project status", "Newfoundland Power reported that the GBY-03 work was carried out in 2019 and 2020"]
+        ]
+      },
+      {
+        label: "2027 TO 2028 PROPOSED GBY-01 REFURBISHMENT",
+        sourceId: "np-2027-gby01",
+        pages: "physical PDF pp. 30 to 36",
+        facts: [
+          ["Feeder", "25 kV; approximately 15 km of three-phase trunk; 643 customers"],
+          ["Route", "Gander Bay area, Clarke's Head, Victoria Cove and Roger's Cove; tie to SUM-02 at Roger's Cove"],
+          ["Condition", "approximately 11 km of deteriorated 2/0 ACSR and 22 leaning or deteriorated causeway poles"],
+          ["Filed cost and schedule", "$1.36 million; design in 2027 and construction planned for completion in 2028"]
+        ]
+      },
+      {
+        label: "2024 FILED 66 KV NETWORK REPLACEMENT",
+        sourceId: "np-2025-gander-t2",
+        pages: "physical PDF pp. 478 to 480",
+        facts: [
+          ["Planning basis", "weak voltage performance and the deteriorated 108L corridor"],
+          ["Filed configuration", "new 138 kV supply from Lewisporte to Boyd's Cove and retirement of 108L"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED FEEDER ROUTES",
+    referenceSheets: [
+      {
+        title: "GBY-01 route and SUM-02 tie",
+        image: "./reference-maps/gby-01-2027-route.png",
+        alt: "Filed GBY-01 route from Gander Bay through Clarke's Head and Victoria Cove to the SUM-02 tie at Roger's Cove",
+        sourceId: "np-2027-gby01",
+        pages: "physical PDF p. 31"
+      },
+      {
+        title: "GBY-02 segment 1, Gander Bay to Harris Point",
+        image: "./reference-maps/gby-02-2005-map-1.png",
+        alt: "Filed GBY-02 rebuild map from Gander Bay Substation to the Harris Point and Route 330 intersection",
+        sourceId: "np-2005-gby02",
+        pages: "physical PDF p. 338"
+      },
+      {
+        title: "GBY-02 segment 2",
+        image: "./reference-maps/gby-02-2005-map-2.png",
+        alt: "Filed GBY-02 rebuild route map continuing north from Harris Point",
+        sourceId: "np-2005-gby02",
+        pages: "physical PDF p. 340"
+      },
+      {
+        title: "GBY-02 northern segment",
+        image: "./reference-maps/gby-02-2005-map-3.png",
+        alt: "Filed GBY-02 northern feeder route map through the Main Point area",
+        sourceId: "np-2005-gby02",
+        pages: "physical PDF p. 346"
+      },
+      {
+        title: "GBY-03 route to Musgrave Harbour",
+        image: "./reference-maps/gby-03-2018-route.png",
+        alt: "Filed GBY-03 route from Gander Bay to Carmanville and Musgrave Harbour",
+        sourceId: "np-2019-gby03",
+        pages: "physical PDF p. 306"
       }
     ]
   },
