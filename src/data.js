@@ -1170,6 +1170,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
   {
+    id: "np-2026-mobile-plant",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, Mobile Plant Substation Power Transformer Replacement",
+    topics: ["Mobile Hydro Plant", "MOP-T1", "Mobile Substation", "66 kV", "6.9 kV", "hydroelectric generation", "transformer replacement"],
+    pages: "physical PDF pp. 441 to 448",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
     id: "np-2019-central-system",
     year: 2018,
     organization: "Newfoundland Power",
@@ -3119,6 +3129,62 @@ export const stationProfiles = [
           ["Retained equipment", "retain GPD-T1 and the three voltage regulators; add spill containment"],
           ["Protection and control", "add instrument transformers, digital relays, communications gateway, control building and SCADA monitoring"],
           ["Filed schedule", "construction in 2027; commissioning planned for the fourth quarter of 2027"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "MOP",
+    name: "Mobile Hydro Plant",
+    voltage: "66/6.9 kV",
+    circuitRegisterLabel: "2025 EXISTING CONNECTION",
+    circuitSource: { sourceId: "np-2026-mobile-plant", pages: "physical PDF p. 441" },
+    connectedCircuits: [
+      { circuit: "Mobile plant line", from: "Mobile Hydro Plant", from_code: "MOP", to: "Mobile", to_code: "MOB" }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 existing arrangement",
+      buses: [{ id: "b1", label: "plant bus", voltage: "6.9 kV" }, { id: "b2", label: "transmission connection", voltage: "66 kV" }],
+      transformers: [{ label: "MOP-T1", rating: "10 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "Mobile plant line", destination: "Mobile", bus: "b2", destinationCode: "MOB" }],
+      generators: [{ label: "Mobile hydro unit", rating: "11 MVA", bus: "b1" }]
+    },
+    engineeringRecord: {
+      date: "2025 EXISTING ARRANGEMENT",
+      title: "Mobile hydro generation outlet",
+      sourceId: "np-2026-mobile-plant",
+      pages: "physical PDF pp. 441 to 444",
+      facts: [
+        ["Station built", "1950 as a generation substation for the Mobile Hydro Plant"],
+        ["Generator", "11 MVA at 6.9 kV"],
+        ["MOP-T1", "66/6.9 kV; 10 MVA; Westinghouse; installed at Mobile Plant in 1951"],
+        ["Transmission connection", "66 kV line to Mobile Substation"],
+        ["Protection and control", "existing remote circuit breaker and microprocessor-based digital relays"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 551",
+      facts: [
+        ["MOP-T1 fleet-table rating", "66/6.9 kV; 13.33 MVA"],
+        ["Record difference", "the 2025 station-specific report describes the installed transformer as 10 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2026 TO 2028 PROPOSED REPLACEMENT",
+        sourceId: "np-2026-mobile-plant",
+        pages: "physical PDF pp. 441 to 448",
+        facts: [
+          ["Replacement transformer", "10/13.3/16.7 MVA, 66/6.9 kV"],
+          ["Site work", "new spill-containment foundation"],
+          ["Filed schedule", "design and procurement in 2026 and 2027; installation, testing and commissioning planned for 2028"],
+          ["Existing transformer disposition", "assess after replacement for possible spare use, repair or disposal"]
         ]
       }
     ]

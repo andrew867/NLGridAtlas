@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, and Greenspond. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. The Greenspond record separates its 2025 existing equipment from the proposed 2026 to 2027 modernization. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, and Mobile Hydro Plant. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. The Greenspond and Mobile Plant records separate existing equipment from future capital work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -56,6 +56,14 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The existing station uses 66 kV fuses for GPD-T1 protection, one 12.5 kV feeder recloser, and three feeder voltage regulators, physical PDF pp. 342 to 344.
 - [x] The proposed work retains GPD-T1 and the voltage regulators. It replaces the wood structures, switches, fused disconnect, and feeder recloser; it adds spill containment, instrument transformers, digital relays, communications, a control building, SCADA monitoring, and ground-grid work, physical PDF pp. 341 to 346.
 - [ ] Do not record the modernization as commissioned before a completion report confirms the filed fourth-quarter 2027 commissioning schedule.
+
+## Mobile Hydro Plant station record
+
+- [x] The 2026 capital filing identifies MOP as a 1950 generation substation. An 11 MVA generator supplies MOP-T1 at 6.9 kV, and MOP-T1 connects the plant to the 66 kV line to Mobile Substation, physical PDF p. 441.
+- [x] The station-specific report describes the installed MOP-T1 as a 10 MVA, 66/6.9 kV Westinghouse unit installed at Mobile Plant in 1951, physical PDF p. 441.
+- [x] The 2027 fleet table lists MOP-T1 at 13.33 MVA. The atlas retains this separately from the station-specific 10 MVA description, physical PDF p. 551.
+- [x] The proposed replacement is 10/13.3/16.7 MVA at 66/6.9 kV, with commissioning planned for 2028, physical PDF pp. 447 to 448.
+- [ ] Do not record the replacement as installed before a completion report confirms commissioning.
 
 ## Pulpit Rock feeder-bus and transformer records
 
