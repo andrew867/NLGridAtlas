@@ -779,6 +779,43 @@ test("Gander Bay separates its normal transmission configuration from filed feed
   ]);
 });
 
+test("Summerford combines its 66 kV corridor, transformer, equipment, and feeder histories", () => {
+  const summerford = stationProfiles.find((station) => station.code === "SUM");
+  assert.ok(summerford);
+  assert.deepEqual(summerford.connectedCircuits.map(({ circuit }) => circuit), ["114L", "140L"]);
+  assert.deepEqual(summerford.feederRegister, ["SUM-01", "SUM-02"]);
+
+  const existingFacts = summerford.engineeringRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /114L from Boyd's Cove; 140L to Twillingate/);
+  assert.match(existingFacts, /2,421 Newfoundland Power customers/);
+  assert.match(summerford.planningRecord.facts.flat().join(" "), /66\/25 kV; 13\.33 MVA; 7\.41 MVA 2026 forecast/);
+
+  const equipment = summerford.historyRecords.find((record) => record.label === "MARCH 2014 EQUIPMENT REGISTER");
+  assert.match(equipment.facts.flat().join(" "), /SUM-T1 asset 200264/);
+  assert.match(equipment.facts.flat().join(" "), /SUM-140L-B bulk-oil circuit breaker asset 210096/);
+
+  const sum02 = summerford.historyRecords.find((record) => record.label === "2017 TO 2018 FILED SUM-02 REFURBISHMENT");
+  assert.match(sum02.facts.flat().join(" "), /replace 29 km of 2\/0 ACSR with 4\/0 AASC/);
+  assert.match(sum02.facts.flat().join(" "), /\$1\.798 million/);
+  const sum02Status = summerford.historyRecords.find((record) => record.label === "2017 TO 2018 REPORTED SUM-02 WORK");
+  assert.match(sum02Status.facts.flat().join(" "), /carried out in 2017 and 2018/);
+
+  const relocation = summerford.historyRecords.find((record) => record.label === "NOVEMBER 2019 APPROVED 114L AND SUM-02 RELOCATION");
+  assert.match(relocation.facts.flat().join(" "), /Cottle's Island Lumber/);
+  assert.match(relocation.facts.flat().join(" "), /\$309,619 approved/);
+
+  const sum01 = summerford.historyRecords.find((record) => record.label === "2023 TO 2024 FILED SUM-01 REFURBISHMENT");
+  assert.match(sum01.facts.flat().join(" "), /1,812 customers/);
+  assert.match(sum01.facts.flat().join(" "), /replace 6\.5 km of 2\/0 ACSR with 4\/0 AASC/);
+  const sum01Expenditure = summerford.historyRecords.find((record) => record.label === "2025 FINAL SUM-01 CAPITAL EXPENDITURE");
+  assert.match(sum01Expenditure.facts.flat().join(" "), /\$1\.681 million through 2025/);
+
+  assert.deepEqual(summerford.referenceSheets.map(({ image }) => image), [
+    "./reference-maps/sum-01-2022-route.jpg",
+    "./reference-maps/sum-02-2016-route.jpg"
+  ]);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);

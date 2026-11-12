@@ -87,6 +87,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2027 application records the proposed GBY-01 refurbishment, 643 customers, SUM-02 tie at Roger's Cove, 11 km of deteriorated 2/0 ACSR, 22 causeway poles, and a $1.36 million filed cost, physical PDF pp. 30 to 36.
 - [ ] Do not record the GBY-01 refurbishment as complete before a later expenditure report confirms the filed 2028 construction schedule.
 
+## Summerford station record
+
+- [x] The 2024 planning study records 114L from Boyd's Cove, 140L to Twillingate, 2,421 Newfoundland Power customers, and the 142L/114L corridor as the primary supply downstream of Boyd's Cove, physical PDF pp. 491 to 494.
+- [x] The 2027 transformer table lists SUM-T1 at 66/25 kV and 13.33 MVA, with a 7.41 MVA 2026 forecast, physical PDF p. 550.
+- [x] The March 2014 equipment register identifies SUM-T1 asset 200264, feeder reclosers and voltage regulators for SUM-01 and SUM-02, and SUM-140L-B bulk-oil breaker asset 210096, physical PDF pp. 484 to 487.
+- [x] The 2017 application records SUM-02 as a 25 kV feeder with 615 customers, a GBY-01 tie at Roger's Cove, 29 km of deteriorated 2/0 ACSR, and a filed $1.798 million refurbishment. The 2023 filing reports that work was carried out in 2017 and 2018, physical PDF pp. 317 to 321; 2023 application physical PDF p. 350.
+- [x] Order P.U. 36 (2019) approved $309,619 for relocation of part of 114L beside the Cottle's Island Lumber facility. The order records the related SUM-02 relocation within the approved 2019 capital budget. Newfoundland Power reported $384,000 of 114L relocation expenditure in 2020, order physical PDF p. 2; 2020 annual report physical PDF p. 54.
+- [x] The 2023 application records SUM-01 as a 25 kV feeder with 1,812 customers, approximately 100 km of line including taps, a 24 km three-phase trunk, a 15 km two-phase tap, and a filed $1.671 million refurbishment. The 2025 expenditure report records $1.681 million of actual expenditure and no carryover, physical PDF pp. 331 to 339; 2025 expenditure report physical PDF p. 17.
+- [x] The 2027 application records the Summerford operations building as a 1968 structure serving the area from Twillingate to Musgrave Harbour. The approved $717,000 replacement was in design with construction forecast for completion in the fourth quarter of 2027, physical PDF p. 250.
+- [ ] Do not record the Summerford building replacement as complete before a later report confirms the filed 2027 schedule.
+
 ## Blaketown station record
 
 - [x] The 2027 station report records two incoming 138 kV lines, four outgoing 66 kV lines, BLK-T3 at 25/33.3/41.6 MVA, BLK-T2 at 15/20 MVA, two 25 kV feeders, approximately 4,090 local customers, and approximately 5,970 customers on radial lines 55L and 94L, physical PDF pp. 422 to 425.

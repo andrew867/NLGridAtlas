@@ -1523,9 +1523,9 @@ export const sources = [
     id: "np-2016-pub-np-064-g",
     year: 2016,
     organization: "Newfoundland Power",
-    title: "PUB-NP-064 Attachment G, Bishop's Falls, Cobb's Pond, Gander Bay, Gander, and Glendale inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "102L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138 and 148 to 152",
+    title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "102L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138, 148 to 152 and 484 to 487",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1597,6 +1597,76 @@ export const sources = [
     topics: ["Gander Bay", "GBY-01", "25 kV", "feeder refurbishment", "Roger's Cove", "Victoria Cove", "Clarke's Head", "Summerford", "SUM-02", "causeway"],
     pages: "physical PDF pp. 30 to 36",
     status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
+    id: "np-2017-sum02",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, SUM-02 Feeder Study",
+    topics: ["Summerford", "SUM-02", "GBY-01", "25 kV", "feeder reliability", "2/0 ACSR", "4/0 AASC", "New World Island"],
+    pages: "physical PDF pp. 315 to 325",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-2023-sum02-review",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Worst Performing Feeders Review",
+    topics: ["Summerford", "SUM-02", "distribution reliability", "completed feeder work"],
+    pages: "physical PDF p. 350",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-2023-sum01",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, SUM-01 Distribution Reliability Initiative",
+    topics: ["Summerford", "SUM-01", "25 kV", "feeder reliability", "2/0 ACSR", "4/0 AASC", "New World Island", "downline reclosers"],
+    pages: "physical PDF pp. 330 to 339",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-2025-sum01-expenditure",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Expenditure Report, SUM-01 Distribution Reliability Initiative",
+    topics: ["Summerford", "SUM-01", "distribution reliability", "actual expenditure", "capital carryover"],
+    pages: "physical PDF p. 17",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202025%20Capital%20Expenditure%20Report%20-%202026-03-27.PDF"
+  },
+  {
+    id: "pu-36-2019-cottles",
+    year: 2019,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 36 (2019), Cottle's Island Lumber 114L relocation",
+    topics: ["Summerford", "114L", "SUM-02", "Cottle's Island Lumber", "line relocation", "capital approval"],
+    pages: "physical PDF p. 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2019/PU36-2019.PDF"
+  },
+  {
+    id: "np-2020-114l-expenditure",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2020 Annual Report, 114L relocation capital expenditure",
+    topics: ["Summerford", "114L", "Cottle's Island Lumber", "capital expenditure"],
+    pages: "physical PDF p. 54",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/2020/From%20NP%20-%202020%20Annual%20Report%20-%202021-03-31.PDF"
+  },
+  {
+    id: "np-2027-summerford-building",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Summerford Building Replacement",
+    topics: ["Summerford", "building replacement", "general property", "capital project"],
+    pages: "physical PDF p. 250",
+    status: "reported",
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
@@ -6101,6 +6171,145 @@ export const stationProfiles = [
         alt: "Filed GBY-03 route from Gander Bay to Carmanville and Musgrave Harbour",
         sourceId: "np-2019-gby03",
         pages: "physical PDF p. 306"
+      }
+    ]
+  },
+  {
+    code: "SUM",
+    name: "Summerford",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2024 EXISTING CONFIGURATION",
+    circuitSource: { sourceId: "np-2025-gander-twillingate", pages: "physical PDF pp. 491 to 494" },
+    connectedCircuits: [
+      { circuit: "114L", from: "Boyd's Cove", from_code: "BOY", to: "Summerford", to_code: "SUM" },
+      { circuit: "140L", from: "Summerford", from_code: "SUM", to: "Twillingate", to_code: "TWG" }
+    ],
+    feederRegisterLabel: "2005 STATION REGISTER",
+    feederRegister: ["SUM-01", "SUM-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2024 existing connections and 2026 transformer register",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "SUM-T1", rating: "13.33 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "114L", destination: "Boyd's Cove", bus: "b1", destinationCode: "BOY" }, { label: "140L", destination: "Twillingate", bus: "b1", destinationCode: "TWG" }]
+    },
+    engineeringRecord: {
+      date: "2024 EXISTING CONFIGURATION",
+      title: "Summerford transmission and distribution station",
+      sourceId: "np-2025-gander-twillingate",
+      pages: "physical PDF pp. 491 to 494",
+      facts: [
+        ["66 kV corridor", "114L from Boyd's Cove; 140L to Twillingate"],
+        ["Normal source", "142L and 114L provide the primary supply downstream of Boyd's Cove"],
+        ["114L", "built in 1972; runs from Clarke's Head through Boyd's Cove to Summerford"],
+        ["Customers", "2,421 Newfoundland Power customers in the planning study"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [
+        ["SUM-T1", "66/25 kV; 13.33 MVA; 7.41 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 484 to 487",
+        facts: [
+          ["SUM-T1", "asset 200264; power transformer with load-tap changer"],
+          ["SUM-01", "station recloser asset 230418; downline recloser assets 230347, 230348 and 230341; regulator assets 220133, 220530 and 220534"],
+          ["SUM-02", "station recloser asset 230432; regulator assets 220558, 220575, 220576 and 220556"],
+          ["140L", "SUM-140L-B bulk-oil circuit breaker asset 210096"]
+        ]
+      },
+      {
+        label: "2017 TO 2018 FILED SUM-02 REFURBISHMENT",
+        sourceId: "np-2017-sum02",
+        pages: "physical PDF pp. 317 to 321",
+        facts: [
+          ["Feeder", "25 kV; 615 customers in the 2016 study; tie to GBY-01 at Roger's Cove"],
+          ["Existing line", "main trunk built in the mid-1960s with 2/0 ACSR; more than 100 conductor sleeves were recorded"],
+          ["2011 to 2015 performance", "SAIFI 2.97 and SAIDI 10.93 hours"],
+          ["Filed work", "replace 29 km of 2/0 ACSR with 4/0 AASC; renew approximately 400 structures and replace 75 poles"],
+          ["Filed cost", "$1.798 million over 2017 and 2018"]
+        ]
+      },
+      {
+        label: "2017 TO 2018 REPORTED SUM-02 WORK",
+        sourceId: "np-2023-sum02-review",
+        pages: "physical PDF p. 350",
+        facts: [
+          ["Project status", "Newfoundland Power reported the work was carried out in 2017 and 2018; no additional work was required at the time of the review"]
+        ]
+      },
+      {
+        label: "NOVEMBER 2019 APPROVED 114L AND SUM-02 RELOCATION",
+        sourceId: "pu-36-2019-cottles",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Location", "114L and SUM-02 ran beside the Cottle's Island Lumber facility near Summerford"],
+          ["Work", "reroute portions of 114L and SUM-02 to accommodate a lumber-kiln addition"],
+          ["Approval", "$309,619 approved for the 114L portion; SUM-02 work was within the approved 2019 capital budget"]
+        ]
+      },
+      {
+        label: "2020 REPORTED 114L RELOCATION EXPENDITURE",
+        sourceId: "np-2020-114l-expenditure",
+        pages: "physical PDF p. 54",
+        facts: [
+          ["Actual expenditure", "$384,000 reported in 2020 for the 114L relocation carried forward from 2019"]
+        ]
+      },
+      {
+        label: "2023 TO 2024 FILED SUM-01 REFURBISHMENT",
+        sourceId: "np-2023-sum01",
+        pages: "physical PDF pp. 331 to 339",
+        facts: [
+          ["Feeder", "25 kV; 1,812 customers; approximately 100 km including taps"],
+          ["Route", "24 km three-phase trunk toward Twillingate; 15 km two-phase tap to Virgin Arm and Moreton's Harbour"],
+          ["2017 to 2021 performance", "SAIFI 2.89 and SAIDI 7.98 hours"],
+          ["Filed work", "replace 6.5 km of 2/0 ACSR with 4/0 AASC; renew deficient poles and structures; install two automated downline reclosers"],
+          ["Filed cost", "$1.671 million over 2023 and 2024"]
+        ]
+      },
+      {
+        label: "2025 FINAL SUM-01 CAPITAL EXPENDITURE",
+        sourceId: "np-2025-sum01-expenditure",
+        pages: "physical PDF p. 17",
+        facts: [
+          ["Actual expenditure", "$1.681 million through 2025 against a $1.671 million budget; no carryover was reported"]
+        ]
+      },
+      {
+        label: "2026 TO 2027 SUMMERFORD BUILDING REPLACEMENT",
+        sourceId: "np-2027-summerford-building",
+        pages: "physical PDF p. 250",
+        facts: [
+          ["Existing building", "constructed in 1968; supports operations from Twillingate to Musgrave Harbour"],
+          ["Project status", "approved as a two-year project; design was ongoing and construction was forecast for completion in the fourth quarter of 2027"],
+          ["Approved expenditure", "$717,000 total, including $562,000 in 2027"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED FEEDER ROUTES",
+    referenceSheets: [
+      {
+        title: "SUM-01 route and downline reclosers",
+        image: "./reference-maps/sum-01-2022-route.jpg",
+        alt: "Filed SUM-01 route across New World Island with the Summerford Substation and downline reclosers marked",
+        sourceId: "np-2023-sum01",
+        pages: "physical PDF p. 332"
+      },
+      {
+        title: "SUM-02 route and GBY-01 tie",
+        image: "./reference-maps/sum-02-2016-route.jpg",
+        alt: "Filed SUM-02 route from Summerford through Boyd's Cove to the GBY-01 tie at Roger's Cove",
+        sourceId: "np-2017-sum02",
+        pages: "physical PDF p. 321"
       }
     ]
   },
