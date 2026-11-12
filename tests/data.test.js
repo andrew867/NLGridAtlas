@@ -816,6 +816,31 @@ test("Summerford combines its 66 kV corridor, transformer, equipment, and feeder
   ]);
 });
 
+test("Jonathan's Pond preserves the dated transformer records and proposed retirement state", () => {
+  const jonathansPond = stationProfiles.find((station) => station.code === "JON");
+  assert.ok(jonathansPond);
+  assert.deepEqual(jonathansPond.connectedCircuits.map(({ circuit }) => circuit), ["108L"]);
+  assert.deepEqual(jonathansPond.feederRegister, ["JON-01"]);
+
+  const existingFacts = jonathansPond.engineeringRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /tap on 108L between Gander and Gander Bay/);
+  assert.match(existingFacts, /5 in the 2024 planning study/);
+  assert.match(jonathansPond.planningRecord.facts.flat().join(" "), /66\/12\.5 kV; 0\.33 MVA; 0\.10 MVA 2026 forecast/);
+
+  const earlierRegister = jonathansPond.historyRecords.find((record) => record.label === "2025 TRANSFORMER REGISTER");
+  assert.match(earlierRegister.facts.flat().join(" "), /66\/7\.2 kV; 0\.33 MVA; 0\.10 MVA 2025 forecast/);
+  const refurbishment = jonathansPond.historyRecords.find((record) => record.label === "2022 REPORTED JON-T1 REFURBISHMENT");
+  assert.match(refurbishment.facts.flat().join(" "), /asset 200102; refurbishment cost \$57,000/);
+
+  const retirement = jonathansPond.historyRecords.find((record) => record.label === "2027 PROPOSED COB-02 EXTENSION AND STATION RETIREMENT");
+  const retirementFacts = retirement.facts.flat().join(" ");
+  assert.match(retirementFacts, /approximately 8 km of single-phase line from COB-02/);
+  assert.match(retirementFacts, /\$1\.828 million/);
+  assert.match(retirementFacts, /construction by end of Q3 2027/);
+  assert.match(retirementFacts, /proposed for retirement after the extension is in service/);
+  assert.deepEqual(jonathansPond.referenceSheets.map(({ image }) => image), ["./reference-maps/jon-cob02-2027-extension.jpg"]);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);

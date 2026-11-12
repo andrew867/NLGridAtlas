@@ -98,6 +98,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2027 application records the Summerford operations building as a 1968 structure serving the area from Twillingate to Musgrave Harbour. The approved $717,000 replacement was in design with construction forecast for completion in the fourth quarter of 2027, physical PDF p. 250.
 - [ ] Do not record the Summerford building replacement as complete before a later report confirms the filed 2027 schedule.
 
+## Jonathan's Pond station record
+
+- [x] The 2024 planning study records Jonathan's Pond as a tap on 108L between Gander and Gander Bay. It records five customers and identifies GAN-T2 as the normal 66 kV source, physical PDF pp. 492 to 494.
+- [x] The 2027 transformer table lists JON-T1 at 66/12.5 kV and 0.33 MVA, with a 0.10 MVA 2026 forecast, physical PDF p. 548.
+- [x] The 2026 transformer table lists JON-T1 at 66/7.2 kV and 0.33 MVA, with a 0.10 MVA 2025 forecast. The two dated voltage records remain separate because the filings do not explain the change, physical PDF p. 368.
+- [x] The March 2014 equipment register identifies JON-T1 as asset 200102 and records a power transformer with tap changer, physical PDF p. 235.
+- [x] The 2024 response reports a 2022 JON-T1 refurbishment cost of $57,000 for asset 200102, physical PDF p. 12.
+- [x] The 2027 application proposes approximately 8 km of single-phase COB-02 extension, a $1.828 million budget, and construction by the end of the third quarter of 2027. The filed project would retire JON-T1, Jonathan's Pond Substation, and most of 108L after the extension enters service, physical PDF pp. 27 to 29.
+- [x] Order P.U. 27 (2024) approved the Lewisporte to Boyd's Cove transmission-line project. It did not approve the separately filed 2027 COB-02 extension, physical PDF p. 7.
+- [ ] Do not record Jonathan's Pond as retired before a later report confirms the feeder extension and equipment removal.
+
 ## Blaketown station record
 
 - [x] The 2027 station report records two incoming 138 kV lines, four outgoing 66 kV lines, BLK-T3 at 25/33.3/41.6 MVA, BLK-T2 at 15/20 MVA, two 25 kV feeders, approximately 4,090 local customers, and approximately 5,970 customers on radial lines 55L and 94L, physical PDF pp. 422 to 425.

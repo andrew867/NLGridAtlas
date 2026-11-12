@@ -224,8 +224,8 @@ export const sources = [
     year: 2024,
     organization: "Newfoundland Power",
     title: "2025 Capital Budget Application, Gander to Twillingate Transmission System Planning Study",
-    topics: ["Gander", "Twillingate", "Summerford", "Boyd's Cove", "140L", "66 kV", "voltage"],
-    pages: "physical PDF pp. 491 to 498",
+    topics: ["Gander", "Twillingate", "Summerford", "Boyd's Cove", "Jonathan's Pond", "JON-T1", "JON-01", "Roycefield", "108L", "102L", "140L", "COB-02", "66 kV", "voltage"],
+    pages: "physical PDF pp. 491 to 508",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
   },
@@ -1524,8 +1524,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "102L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138, 148 to 152 and 484 to 487",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Jonathan's Pond", "JON-T1", "102L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 88 to 92, 129 to 138, 148 to 152, 235 and 484 to 487",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1668,6 +1668,56 @@ export const sources = [
     pages: "physical PDF p. 250",
     status: "reported",
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
+    id: "np-2026-transformers",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, Power Transformer Listing",
+    topics: ["Jonathan's Pond", "JON-T1", "transformer voltage", "transformer capacity", "forecast load"],
+    pages: "physical PDF p. 368",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
+    id: "np-2024-ca-np-167",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-167, Transformer Replacements and Refurbishments",
+    topics: ["Jonathan's Pond", "JON-T1", "asset 200102", "transformer refurbishment"],
+    pages: "physical PDF p. 12",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/CA-NP-167.PDF"
+  },
+  {
+    id: "np-2027-cob02-extension",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, COB-02 Distribution Feeder Extension",
+    topics: ["Cobb's Pond", "COB-02", "Jonathan's Pond", "JON-01", "JON-T1", "108L", "feeder extension", "substation retirement"],
+    pages: "physical PDF pp. 27 to 29",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
+    id: "np-2027-pub-np-020",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-020, System-Based Transformer Replacement Alternatives",
+    topics: ["Jonathan's Pond", "JON-T1", "Cobb's Pond", "COB-02", "108L", "system reconfiguration"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/PUB-NP-020.PDF"
+  },
+  {
+    id: "pu-27-2024-np-capital",
+    year: 2024,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 27 (2024), 2025 Capital Budget",
+    topics: ["Lewisporte", "Boyd's Cove", "new transmission line", "capital approval"],
+    pages: "physical PDF p. 7",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2024/P.U.%2027(2024).PDF"
   },
   {
     id: "np-2025-northwest-brook",
@@ -6310,6 +6360,111 @@ export const stationProfiles = [
         alt: "Filed SUM-02 route from Summerford through Boyd's Cove to the GBY-01 tie at Roger's Cove",
         sourceId: "np-2017-sum02",
         pages: "physical PDF p. 321"
+      }
+    ]
+  },
+  {
+    code: "JON",
+    name: "Jonathan's Pond",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2024 EXISTING CONFIGURATION",
+    circuitSource: { sourceId: "np-2025-gander-twillingate", pages: "physical PDF pp. 492 to 494" },
+    connectedCircuits: [
+      { circuit: "108L", from: "Gander", from_code: "GAN", to: "Gander Bay", to_code: "GBY" }
+    ],
+    feederRegisterLabel: "2027 PROJECT RECORD",
+    feederRegister: ["JON-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2024 existing connection and 2026 transformer register",
+      buses: [{ id: "b1", label: "66 kV 108L tap", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "JON-T1", rating: "0.33 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "108L", destination: "Gander to Gander Bay", bus: "b1", destinationCode: "GAN" }]
+    },
+    engineeringRecord: {
+      date: "2024 EXISTING CONFIGURATION",
+      title: "Jonathan's Pond distribution station",
+      sourceId: "np-2025-gander-twillingate",
+      pages: "physical PDF pp. 492 to 494",
+      facts: [
+        ["Supply", "tap on 108L between Gander and Gander Bay"],
+        ["Normal source", "GAN-T2 at Gander"],
+        ["Customers", "5 in the 2024 planning study"],
+        ["Distribution feeder", "JON-01"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["JON-T1", "66/12.5 kV; 0.33 MVA; 0.10 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 235",
+        facts: [
+          ["JON-T1", "asset 200102; power transformer with tap changer"]
+        ]
+      },
+      {
+        label: "2022 REPORTED JON-T1 REFURBISHMENT",
+        sourceId: "np-2024-ca-np-167",
+        pages: "physical PDF p. 12",
+        facts: [
+          ["JON-T1", "asset 200102; refurbishment cost $57,000"]
+        ]
+      },
+      {
+        label: "2025 TRANSFORMER REGISTER",
+        sourceId: "np-2026-transformers",
+        pages: "physical PDF p. 368",
+        facts: [
+          ["JON-T1", "66/7.2 kV; 0.33 MVA; 0.10 MVA 2025 forecast"]
+        ]
+      },
+      {
+        label: "2024 APPROVED REGIONAL TRANSMISSION PROJECT",
+        sourceId: "pu-27-2024-np-capital",
+        pages: "physical PDF p. 7",
+        facts: [
+          ["Lewisporte to Boyd's Cove", "new transmission line approved as a $20.722 million multi-year project for 2025 to 2027"]
+        ]
+      },
+      {
+        label: "2027 PROPOSED COB-02 EXTENSION AND STATION RETIREMENT",
+        sourceId: "np-2027-cob02-extension",
+        pages: "physical PDF pp. 27 to 29",
+        facts: [
+          ["Feeder extension", "approximately 8 km of single-phase line from COB-02"],
+          ["Existing load", "JON-01 supplies five customers in the 2024 study"],
+          ["Filed budget", "$1.828 million"],
+          ["Filed schedule", "design by end of Q2 2027; construction by end of Q3 2027"],
+          ["Station status", "JON-T1, Jonathan's Pond Substation and most of 108L are proposed for retirement after the extension is in service"]
+        ]
+      },
+      {
+        label: "2026 REPORTED SYSTEM-BASED ALTERNATIVE",
+        sourceId: "np-2027-pub-np-020",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Study result", "retire JON-T1 and supply the customers from Cobb's Pond"],
+          ["Planning result", "the system reconfiguration was reported as least cost and improves transmission-level voltage"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED FEEDER ROUTE",
+    referenceSheets: [
+      {
+        title: "COB-02 extension to Jonathan's Pond",
+        image: "./reference-maps/jon-cob02-2027-extension.jpg",
+        alt: "Filed eight kilometre single-phase COB-02 extension route to Jonathan's Pond Substation",
+        sourceId: "np-2027-cob02-extension",
+        pages: "physical PDF p. 28"
       }
     ]
   },
