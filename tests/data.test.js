@@ -1056,6 +1056,23 @@ test("Port aux Basques separates the 2010 generator connection from current tran
   assert.match(historyFacts, /automate the installed Nulec reclosers/);
 });
 
+test("Long Lake connects 416L and the Rose Blanche plant feeder", () => {
+  const longLake = stationProfiles.find((station) => station.code === "LGL");
+  assert.ok(longLake);
+  assert.deepEqual(longLake.connectedCircuits.map(({ circuit }) => circuit), ["416L"]);
+  assert.deepEqual(longLake.feederRegister, ["LGL-01", "LGL-02"]);
+  assert.deepEqual(longLake.mapPages, [["LGL-01", 106]]);
+  assert.deepEqual(longLake.diagram.transformers.map(({ label, rating }) => [label, rating]), [["LGL-T1", "14.9 MVA fleet rating"]]);
+  const existingFacts = longLake.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = longLake.planningRecord.facts.flat().join(" ");
+  const historyFacts = longLake.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /connects the 6.0 MW Rose Blanche plant through a 4.7 km distribution line/);
+  assert.match(planningFacts, /66\/25 kV; 14.9 MVA; 6.19 MVA 2026 forecast/);
+  assert.match(planningFacts, /2020 feeder report identifies two 12.5 kV feeders/);
+  assert.match(historyFacts, /42 of 44 untreated cedar poles were deteriorated/);
+  assert.match(historyFacts, /radial with no tie point or backup/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

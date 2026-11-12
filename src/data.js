@@ -1420,6 +1420,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
   {
+    id: "np-2021-lgl02",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, LGL-02 Distribution Feeder Refurbishment",
+    topics: ["Long Lake", "LGL-02", "Rose Blanche", "Rose Blanche hydroelectric plant", "12.5 kV", "distribution feeder"],
+    pages: "physical PDF pp. 197 to 203",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
+  },
+  {
     id: "np-2015-clarenville",
     year: 2014,
     organization: "Newfoundland Power",
@@ -3739,7 +3749,59 @@ const filedFeederMapProfiles = [
   { code: "HUM", mapPages: [["HUM-01", 77], ["HUM-08", 78], ["HUM-09", 79]] },
   { code: "ILC", mapPages: [["ILC-01", 86], ["ILC-02", 87]] },
   { code: "KEL", mapPages: [["KEL-01", 98], ["KEL-02", 99], ["KEL-03", 100]] },
-  { code: "LGL", mapPages: [["LGL-01", 106]] },
+  {
+    code: "LGL",
+    name: "Long Lake",
+    voltage: "66 kV supply; 12.5 kV feeder record",
+    circuitRegisterLabel: "2025 CIRCUIT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "416L", from: "Long Lake", from_code: "LGL", to: "Grand Bay", to_code: "GBS" }
+    ],
+    feederRegisterLabel: "2006 REGISTER / 2020 FEEDER REPORT",
+    feederRegister: ["LGL-01", "LGL-02"],
+    mapPages: [["LGL-01", 106]],
+    eventLoads: [],
+    diagram: {
+      label: "2020 feeder arrangement with current transformer MVA rating",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV feeder bus in 2020 report", voltage: "12.5 kV" }],
+      transformers: [{ label: "LGL-T1", rating: "14.9 MVA fleet rating", from: "b1", to: "b2" }],
+      circuits: [{ label: "416L", destination: "Grand Bay", bus: "b1", destinationCode: "GBS" }]
+    },
+    engineeringRecord: {
+      date: "2020 FILED FEEDER ARRANGEMENT",
+      title: "Long Lake distribution station and Rose Blanche plant connection",
+      sourceId: "np-2021-lgl02",
+      pages: "physical PDF pp. 197 to 199",
+      facts: [
+        ["Distribution", "two 12.5 kV feeders originate at Long Lake Substation"],
+        ["LGL-02 customers", "approximately 620 in Burnt Islands and Rose Blanche-Harbour Le Cou"],
+        ["Hydro plant connection", "LGL-02 connects the 6.0 MW Rose Blanche plant through a 4.7 km distribution line"],
+        ["Regional supply", "Long Lake, Grand Bay, and Port aux Basques are supplied through the TL215 radial system"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["LGL-T1", "fleet table lists 66/25 kV; 14.9 MVA; 6.19 MVA 2026 forecast"],
+        ["Published voltage difference", "the 2020 feeder report identifies two 12.5 kV feeders; the 2027 fleet table lists 25 kV for LGL-T1"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2021 FILED LGL-02 REFURBISHMENT",
+        sourceId: "np-2021-lgl02",
+        pages: "physical PDF pp. 198 to 203",
+        facts: [
+          ["Condition", "42 of 44 untreated cedar poles were deteriorated on the 3.3 km section near the protected water supply"],
+          ["Topology", "the three-phase Rose Blanche plant tap is radial with no tie point or backup"],
+          ["Filed work", "replace deteriorated cedar poles with non-wood poles on the 3.3 km section"]
+        ]
+      }
+    ]
+  },
   { code: "MOB", mapPages: [["MOB-02", 107]] },
   {
     code: "MSY",

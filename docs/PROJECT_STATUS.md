@@ -88,6 +88,7 @@ Updated: 2026-11-12
 - Added Marystown's 300L and 308L connections, four feeders, current transformer rating and forecast, 2019 filed equipment, and the separately labeled 2020 modernization filing.
 - Added Grand Bay's three 66 kV connections, two feeders, former transformer and tap-changer record, mobile gas turbine role, filed 2020 work, and current fleet-table value. The published 12.5 kV and 25 kV records remain dated and separate.
 - Added Port aux Basques' 417L connection, two mapped feeders, present diesel generator and transformer records, the 2010 arrangement, and the separately labeled 2011 modernization filing.
+- Added Long Lake's 416L connection, two feeder records, the Rose Blanche hydro plant tap, current transformer value, and the filed LGL-02 pole replacement. The 12.5 kV feeder and 25 kV fleet-table records remain dated and separate.
 - Identified the current internal Holyrood drawing numbers `1403-500-E001` and `1403-500-E004` in the 2022 study document register. The drawings were named but not filed.
 - Added the March 2025 Holyrood Capital Plan Refresh, including Unit 3 condition-monitoring and auxiliary-system findings plus the six CAT 3516B black-start sets.
 - Added the 2017 Holyrood plant-service arrangements and the 2019 completion records for the SST34 cable replacement and the lower-cost Newfoundland Power auxiliary supply connection.
