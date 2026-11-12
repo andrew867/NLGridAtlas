@@ -118,6 +118,16 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2022 asset register lists 102L from Gander to Roycefield as a common asset with $2.689 million gross historical cost. It lists 104L to the mine as fully contributed with $1.301 million gross historical cost, both at December 31, 2022, physical PDF p. 3.
 - [x] The filed single-line shows no transformer or distribution feeder at Roycefield Tap. The atlas therefore represents it as a 66 kV switching point.
 
+## Notre Dame Junction historical station record
+
+- [x] The 2018 study shows Notre Dame Junction as the 66 kV junction between the 17 km Rattling Brook section of 102L, the 20 km Roycefield section of 102L, and the 14 km radial 103L to Lewisporte, physical PDF pp. 5 to 6.
+- [x] The study records 102L as a 1958 line and 103L as a 1973 line, physical PDF p. 6.
+- [x] The March 2014 inspection form lists station 006907, station-service meter 274796, battery asset 100343 and charger asset 110085, physical PDF p. 345.
+- [x] The 2018 study recommended Alternative 3, including Lewisporte and Rattling Brook 138 kV conversion and removal of the intervening 66 kV system. Its stated net present value was $24.229 million, physical PDF pp. 12 to 14.
+- [x] Order P.U. 24(2020) approved removal of 101L, 37 km of 102L, and associated station equipment, including Notre Dame Junction equipment, after completion of the necessary 2020 and 2021 work, physical PDF pp. 1 to 2.
+- [x] The 2025 Lewisporte record identifies the successor 138 kV supplies as 137L from Rattling Brook and 147L from Cobb's Pond. It identifies the remaining 102L section as the Gander to Roycefield supply, physical PDF p. 66.
+- [ ] Do not record Notre Dame Junction removal as completed until a direct completion or as-built record confirms it.
+
 ## Blaketown station record
 
 - [x] The 2027 station report records two incoming 138 kV lines, four outgoing 66 kV lines, BLK-T3 at 25/33.3/41.6 MVA, BLK-T2 at 15/20 MVA, two 25 kV feeders, approximately 4,090 local customers, and approximately 5,970 customers on radial lines 55L and 94L, physical PDF pp. 422 to 425.

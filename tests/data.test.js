@@ -863,6 +863,32 @@ test("Roycefield remains a 66 kV switching point without an invented transformer
   assert.deepEqual(roycefield.referenceSheets.map(({ image }) => image), ["./reference-maps/rfd-2023-single-line.png"]);
 });
 
+test("Notre Dame Junction stays historical until a completion record establishes removal", () => {
+  const notreDameJunction = stationProfiles.find((station) => station.code === "NDJ");
+  assert.ok(notreDameJunction);
+  assert.equal(notreDameJunction.voltage, "66 kV historical");
+  assert.deepEqual(notreDameJunction.connectedCircuits.map(({ circuit }) => circuit), ["102L", "102L", "103L"]);
+  assert.deepEqual(notreDameJunction.feederRegister, []);
+  assert.deepEqual(notreDameJunction.diagram.transformers, []);
+
+  const existingFacts = notreDameJunction.engineeringRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /66 kV junction on 102L/);
+  assert.match(existingFacts, /approximately 17 km/);
+  assert.match(existingFacts, /approximately 20 km/);
+  assert.match(existingFacts, /approximately 14 km/);
+
+  const approvalFacts = notreDameJunction.planningRecord.facts.flat().join(" ");
+  assert.match(approvalFacts, /remove 101L and 37 km of 102L/);
+  assert.match(approvalFacts, /removal follows completion/);
+  assert.doesNotMatch(approvalFacts, /removal completed/);
+
+  const inspection = notreDameJunction.historyRecords.find((record) => record.label === "MARCH 2014 INSPECTION REGISTER");
+  assert.match(inspection.facts.flat().join(" "), /battery asset 100343 and charger asset 110085/);
+  const successor = notreDameJunction.historyRecords.find((record) => record.label === "2025 FILED SUCCESSOR CONNECTIONS");
+  assert.match(successor.facts.flat().join(" "), /137L from Rattling Brook and 147L from Cobb's Pond/);
+  assert.deepEqual(notreDameJunction.referenceSheets.map(({ image }) => image), ["./reference-maps/ndj-2018-central-system.png"]);
+});
+
 test("Blaketown combines documented circuits with the current transformer record", () => {
   const blaketown = stationProfiles.find((station) => station.code === "BLK");
   assert.ok(blaketown);

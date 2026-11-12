@@ -273,7 +273,7 @@ function renderStationProfile(code) {
         <span class="profile-label">${escapeHtml(profile.feederRegisterLabel || "2005 FEEDER REGISTER")}</span>
         <div class="feeder-tags">${profile.feederRegister.length
           ? profile.feederRegister.map((feeder) => `<span>${escapeHtml(feeder)}</span>`).join("")
-          : "<span>No feeder designation</span>"}</div>
+          : /^NO DISTRIBUTION FEEDERS/.test(profile.feederRegisterLabel || "") ? "" : "<span>No feeder designation</span>"}</div>
         ${feederMaps ? `<span class="profile-label map-label">2014 FEEDER MAP SHEETS</span><div class="feeder-maps">${feederMaps}</div>` : ""}
         ${referenceSheets ? `<span class="profile-label map-label">${escapeHtml(profile.referenceSheetLabel || "SYSTEM SCHEMATICS")}</span><div class="feeder-maps reference-sheets">${referenceSheets}</div>` : ""}
         ${feederTieRows ? `

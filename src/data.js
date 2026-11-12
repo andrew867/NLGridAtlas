@@ -2280,6 +2280,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
   },
   {
+    id: "np-2025-ca-np-121-central",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "CA-NP-121, Central Newfoundland System Planning Study",
+    topics: ["Notre Dame Junction", "NDJ", "101L", "102L", "103L", "Lewisporte", "Rattling Brook", "Roycefield", "Central Newfoundland"],
+    pages: "physical PDF pp. 1 and 5 to 14",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/CA-NP-121.PDF"
+  },
+  {
+    id: "pu-24-2020-central-abandonment",
+    year: 2020,
+    organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
+    title: "Order P.U. 24(2020), Central Newfoundland 66 kV Infrastructure Abandonment",
+    topics: ["Notre Dame Junction", "NDJ", "101L", "102L", "Lewisporte", "Rattling Brook", "Roycefield", "abandonment approval"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2020/P.U.%2024(2020).pdf"
+  },
+  {
     id: "np-2026-lewisporte",
     year: 2025,
     organization: "Newfoundland Power",
@@ -6612,6 +6632,95 @@ export const stationProfiles = [
         alt: "Filed 66 kV single-line from Gander through Roycefield Tap to the Roycefield mine site",
         sourceId: "np-2024-ca-np-158",
         pages: "physical PDF p. 7"
+      }
+    ]
+  },
+  {
+    code: "NDJ",
+    name: "Notre Dame Junction",
+    voltage: "66 kV historical",
+    circuitRegisterLabel: "2018 EXISTING ARRANGEMENT",
+    circuitSource: { sourceId: "np-2025-ca-np-121-central", pages: "physical PDF pp. 5 to 6" },
+    connectedCircuits: [
+      { circuit: "102L", from: "Rattling Brook", from_code: "RBK", to: "Notre Dame Junction", to_code: "NDJ" },
+      { circuit: "102L", from: "Notre Dame Junction", from_code: "NDJ", to: "Roycefield Tap", to_code: "RFD" },
+      { circuit: "103L", from: "Notre Dame Junction", from_code: "NDJ", to: "Lewisporte", to_code: "LEW" }
+    ],
+    feederRegisterLabel: "NO DISTRIBUTION FEEDERS IN FILED ARRANGEMENT",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2018 existing 66 kV junction, later approved for removal",
+      buses: [{ id: "b1", label: "66 kV switching junction", voltage: "66 kV" }],
+      transformers: [],
+      circuits: [
+        { label: "102L", destination: "Rattling Brook", bus: "b1", destinationCode: "RBK" },
+        { label: "102L", destination: "Roycefield Tap", bus: "b1", destinationCode: "RFD" },
+        { label: "103L", destination: "Lewisporte", bus: "b1", destinationCode: "LEW" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2018 EXISTING ARRANGEMENT",
+      title: "Notre Dame Junction switching station",
+      sourceId: "np-2025-ca-np-121-central",
+      pages: "physical PDF pp. 5 to 6",
+      facts: [
+        ["Function", "66 kV junction on 102L with the 103L radial branch to Lewisporte"],
+        ["102L west section", "approximately 17 km from Rattling Brook to Notre Dame Junction"],
+        ["102L east section", "approximately 20 km from Notre Dame Junction to Roycefield Tap"],
+        ["103L", "approximately 14 km from Notre Dame Junction to Lewisporte"],
+        ["Line history", "102L was built in 1958; 103L was built in 1973"]
+      ]
+    },
+    planningRecord: {
+      label: "AUGUST 2020 APPROVED REMOVAL",
+      sourceId: "pu-24-2020-central-abandonment",
+      pages: "physical PDF pp. 1 to 2",
+      facts: [
+        ["Approved scope", "remove 101L and 37 km of 102L between Rattling Brook and Roycefield Tap"],
+        ["Station equipment", "remove associated 66 kV breakers and switches at Notre Dame Junction and four other named stations"],
+        ["Approval condition", "removal follows completion of the necessary 2020 and 2021 capital work"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "MARCH 2014 INSPECTION REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 345",
+        facts: [
+          ["Station number", "006907"],
+          ["Recorded equipment", "metering cabinet, station-service meter 274796, battery asset 100343 and charger asset 110085"]
+        ]
+      },
+      {
+        label: "JULY 2018 RECOMMENDED SYSTEM RECONFIGURATION",
+        sourceId: "np-2025-ca-np-121-central",
+        pages: "physical PDF pp. 10 to 14",
+        facts: [
+          ["Selected alternative", "convert Lewisporte and Rattling Brook to the 138 kV system and remove the intervening 66 kV system"],
+          ["Study result", "Alternative 3 had the lowest stated net present value of customer revenue requirement at $24.229 million"],
+          ["NDJ work", "decommission Notre Dame Junction with 103L and the Rattling Brook to Roycefield section of 102L"]
+        ]
+      },
+      {
+        label: "2025 FILED SUCCESSOR CONNECTIONS",
+        sourceId: "np-2026-lewisporte",
+        pages: "physical PDF p. 66",
+        facts: [
+          ["Lewisporte", "supplied at 138 kV by 137L from Rattling Brook and 147L from Cobb's Pond"],
+          ["Roycefield Tap", "supplied by the remaining 102L section from Gander"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED 2018 SYSTEM MAP",
+    referenceSheets: [
+      {
+        title: "Central Newfoundland existing system",
+        image: "./reference-maps/ndj-2018-central-system.png",
+        alt: "Filed 2018 Central Newfoundland map showing 102L through Notre Dame Junction and 103L to Lewisporte",
+        sourceId: "np-2025-ca-np-121-central",
+        pages: "physical PDF p. 6"
       }
     ]
   },
