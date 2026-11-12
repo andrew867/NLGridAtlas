@@ -1848,6 +1848,29 @@ test("Horse Chops separates the rebuilt station from later generator and control
   assert.match(historyFacts, /design complete; field work expected to begin in the third quarter of 2026/);
 });
 
+test("Pierre's Brook separates the installed 66 kV station from filed conversion and refurbishment scopes", () => {
+  const pierresBrook = stationProfiles.find((station) => station.code === "PBK");
+  assert.ok(pierresBrook);
+  assert.deepEqual(pierresBrook.connectedCircuits, [
+    { circuit: "23L", from: "Pierre's Brook", from_code: "PBK", to: "Mobile", to_code: "MOB" }
+  ]);
+  assert.deepEqual(pierresBrook.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "6.9 kV"]);
+  assert.deepEqual(pierresBrook.diagram.transformers.map(({ label, rating }) => [label, rating]), [["PBK-T1", "6.67 MVA"]]);
+  assert.deepEqual(pierresBrook.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "4.0 MVA / 80% PF"]]);
+  const plantFacts = pierresBrook.engineeringRecord.facts.flat().join(" ");
+  const historyFacts = pierresBrook.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /4,100 kW actual peak output/);
+  assert.match(historyFacts, /new 66 kV substation and replacement power transformer/);
+  assert.match(historyFacts, /23L was a 5\.5 km, 33 kV radial line built in 1942/);
+  assert.match(historyFacts, /2012 forecast peak 3\.98 MVA; 34\.6 A; 7% loading/);
+  assert.match(historyFacts, /PBK-T1, asset 200356/);
+  assert.match(historyFacts, /PBK-G-B air circuit breaker, asset 210551/);
+  assert.match(historyFacts, /replacement of the 1972 assembly/);
+  assert.match(historyFacts, /3,545 to 4,013 kW/);
+  assert.match(historyFacts, /4,013 kW at the 1115 Island Time interval/);
+  assert.equal(pierresBrook.historyRecords.find(({ label }) => label.includes("FILED ELECTRICAL"))?.sourceId, "np-2016-pierre-brook");
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");

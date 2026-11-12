@@ -1794,8 +1794,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 371 to 373, 427, 484 to 487 and 500 to 502",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 371 to 376, 427, 484 to 487 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1834,7 +1834,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "NP-NLH-168 Attachment 1, Newfoundland Power Generation Capacity Tests",
-    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Petty Harbour", "PHR-T1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
+    topics: ["generation capacity test", "Horse Chops", "HCP-G1", "Petty Harbour", "PHR-T1", "Pierre's Brook", "PBK-G1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
     pages: "physical PDF p. 2",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/NP-NLH-168.PDF"
@@ -1878,6 +1878,36 @@ export const sources = [
     pages: "physical PDF p. 553",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
+  },
+  {
+    id: "np-2010-pierre-brook-23l",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, 23L and Pierre's Brook voltage conversion",
+    topics: ["Pierre's Brook", "PBK-T1", "Mobile", "MOB-T3", "23L", "33 kV", "66 kV", "voltage conversion", "line loss"],
+    pages: "physical PDF pp. 321 to 324 and 330 to 331",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2015-pierre-brook",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Pierre's Brook Hydro Plant",
+    topics: ["Pierre's Brook", "hydroelectric generation", "Francis turbine", "penstock", "normal annual production"],
+    pages: "physical PDF pp. 185 to 194",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2016-pierre-brook",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Pierre's Brook Plant Electrical Refurbishment",
+    topics: ["Pierre's Brook", "PBK-T1", "23L", "66 kV", "6.9 kV", "generator protection", "station service", "switchgear", "plant controls"],
+    pages: "physical PDF pp. 235 to 240",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
   },
   {
     id: "np-2011-horse-chops",
@@ -10448,6 +10478,119 @@ export const stationProfiles = [
         sourceId: "np-2026-q2-regulatory",
         pages: "physical PDF p. 9",
         facts: [["Status", "design complete; field work expected to begin in the third quarter of 2026"]]
+      }
+    ]
+  },
+  {
+    code: "PBK",
+    name: "Pierre's Brook",
+    voltage: "66/6.9 kV",
+    circuitRegisterLabel: "2025 CIRCUIT ENDPOINT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "23L", from: "Pierre's Brook", from_code: "PBK", to: "Mobile", to_code: "MOB" }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "installed 66 kV station with current transformer rating",
+      buses: [
+        { id: "b1", label: "66 kV line connection", voltage: "66 kV" },
+        { id: "b2", label: "6.9 kV generator bus", voltage: "6.9 kV" }
+      ],
+      transformers: [{ label: "PBK-T1", rating: "6.67 MVA", from: "b2", to: "b1" }],
+      circuits: [{ label: "23L", destination: "Mobile", bus: "b1", destinationCode: "MOB" }],
+      generators: [{ label: "G1", rating: "4.0 MVA / 80% PF", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2015 PLANT RECORD",
+      title: "Pierre's Brook hydro generation station",
+      sourceId: "np-2016-pierre-brook",
+      pages: "physical PDF pp. 235 to 236",
+      facts: [
+        ["Plant", "commissioned in 1931; one 4,000 kVA generator rated at 80% power factor"],
+        ["Turbine", "5,029 hp vertical Francis turbine manufactured by J.M. Voith"],
+        ["Output", "3,200 kW nameplate; the filing reports 4,100 kW actual peak output after the 1995 runner and 1996 stator-winding replacements"],
+        ["Normal production", "24.4 GWh"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER TABLE",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 551",
+      facts: [["PBK-T1", "generation transformer; 66/6.9 kV; 6.67 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "1931 PLANT ORIGIN",
+        sourceId: "np-2015-pierre-brook",
+        pages: "physical PDF p. 185",
+        facts: [
+          ["Original service", "constructed to supply the Bell Island iron-ore mines"],
+          ["Rated head", "80 m"]
+        ]
+      },
+      {
+        label: "2008 PUBLISHED STATION UPGRADE",
+        sourceId: "np-2016-pierre-brook",
+        pages: "physical PDF p. 236",
+        facts: [["Installed work", "new 66 kV substation and replacement power transformer listed among completed plant upgrades"]]
+      },
+      {
+        label: "2009 FILED 23L VOLTAGE CONVERSION",
+        sourceId: "np-2010-pierre-brook-23l",
+        pages: "physical PDF pp. 321 to 324 and 330",
+        facts: [
+          ["Former arrangement", "23L was a 5.5 km, 33 kV radial line built in 1942"],
+          ["Pierre's Brook scope", "reconfigure the transformer's dual 33/66 kV winding for 66 kV operation; add 66 kV arresters and replace transformer fuses"],
+          ["Mobile scope", "remove the 33/66 kV transformer and replace the 33 kV breaker with a 66 kV breaker"],
+          ["Filed cost", "$286,000"],
+          ["Filed loss reduction", "251,096 kWh annually"]
+        ]
+      },
+      {
+        label: "2013 FILED 23L LOADING",
+        sourceId: "np-2013-line-loading",
+        pages: "physical PDF p. 3; attachment p. 1",
+        facts: [
+          ["Installed line state", "Pierre's Brook to Mobile; 66.0 kV"],
+          ["Winter rating", "29.6 MVA; 518.4 A"],
+          ["2012 forecast peak", "3.98 MVA; 34.6 A; 7% loading in the filed table"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 375 to 376",
+        facts: [
+          ["Transformer", "PBK-T1, asset 200356"],
+          ["Generator breaker", "PBK-G-B air circuit breaker, asset 210551"],
+          ["Telecommunications", "SAGE 2100 remote terminal unit"]
+        ]
+      },
+      {
+        label: "2015 FILED ELECTRICAL REFURBISHMENT",
+        sourceId: "np-2016-pierre-brook",
+        pages: "physical PDF pp. 237 to 240",
+        facts: [
+          ["66 kV yard", "new low-voltage steel structure, generator cables, station-service bank and T1-D disconnect"],
+          ["Protection and controls", "multifunction generator protection, neutral grounding equipment, control PLC, data concentrator, voltage regulator and field breaker"],
+          ["Switchgear", "replacement of the 1972 assembly with arc-flash-rated switchgear and a vacuum breaker"],
+          ["Station service", "75 kVA normal bank and 45 kVA emergency transformer for black start"],
+          ["Filed cost", "$1.482 million"]
+        ]
+      },
+      {
+        label: "2026 GENERATION CAPACITY TEST",
+        sourceId: "np-2026-generation-capacity-test",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Metered point", "PBK-G1-I"],
+          ["15-minute values shown", "3,545 to 4,013 kW"],
+          ["Highest interval shown", "4,013 kW at the 1115 Island Time interval"]
+        ]
       }
     ]
   },
