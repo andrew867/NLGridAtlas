@@ -194,7 +194,7 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Milton", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PIT-T1", "301L", "substation rebuild", "asset history"],
+    topics: ["Abrahams Cove", "Garnish", "Milton", "Port Blandford", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PBD-T1", "PIT-T1", "301L", "substation rebuild", "asset history"],
     pages: "physical PDF pp. 166, 196 to 197, 201, 203 to 204, 206 to 207 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
@@ -1378,6 +1378,16 @@ export const sources = [
     pages: "physical PDF p. 181",
     status: "proposed",
     url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
+  },
+  {
+    id: "np-2021-pbd01",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, PBD-01 Feeder Upgrade",
+    topics: ["Port Blandford", "PBD-01", "Thorburn Lake", "three-phase conversion", "feeder load growth"],
+    pages: "physical PDF pp. 183 to 186 and 192",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
   },
   {
     id: "pu-4-2021-deer-lake-power",
@@ -10442,6 +10452,75 @@ export const stationProfiles = [
           ["Feeder details", "CLV-02 provided backup to the Clarenville Hospital for a 1.2 MVA demand; CLV-03 supplied White Hills Ski Resort"],
           ["Parallel-bank capacity", "the filing gives 41.5 MVA for CLV-T2 and CLV-T3 operating in parallel because transformer impedance affects load sharing"]
         ]
+      }
+    ]
+  },
+  {
+    code: "PBD",
+    name: "Port Blandford",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2025 EXISTING CONNECTION",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "124L tap", from: "Clarenville-Glovertown 124L", from_code: null, to: "Port Blandford", to_code: "PBD" }
+    ],
+    feederRegisterLabel: "2021 STATION RECORD",
+    feederRegister: ["PBD-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 supply / 2027 transformer register",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "PBD-T1", rating: "16.67 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "124L TAP", destination: "Clarenville-Glovertown corridor", bus: "b1", link: false }]
+    },
+    engineeringRecord: {
+      date: "2020 EXISTING ARRANGEMENT",
+      title: "Port Blandford distribution substation and radial feeder",
+      sourceId: "np-2021-pbd01",
+      pages: "physical PDF p. 183",
+      facts: [
+        ["Location", "Port Blandford on the Trans-Canada Highway"],
+        ["Distribution", "PBD-01 was the only feeder; approximately 671 customers"],
+        ["Feeder construction", "approximately 60 km total, including 5 km of three-phase line and 55 km of single-phase line"],
+        ["Thorburn Lake tap", "approximately 10 km of single-phase #2 ACSR south from Main Road; 107 A forecast against the Company's 85 A single-phase planning criterion"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["PBD-T1 current fleet-table record", "138/25 kV; 16.67 MVA; 3.17 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1990 STATION ASSET RECORD",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 197",
+        facts: [
+          ["Station structures", "steel 138 kV structure and wood 25 kV structure installed in 1990; total transformer capacity 16.7 MVA"]
+        ]
+      },
+      {
+        label: "2021 FILED PBD-01 UPGRADE",
+        sourceId: "np-2021-pbd01",
+        pages: "physical PDF pp. 183 to 186 and 192",
+        facts: [
+          ["Selected work", "construct 700 m of new three-phase line and convert 2.3 km of PBD-01 from single-phase to three-phase"],
+          ["Filed budget", "$600,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2021 FILED PBD-01 ROUTE",
+    referenceSheets: [
+      {
+        title: "PBD-01 three-phase extension and conversion",
+        image: "./reference-maps/pbd-01-2021-upgrade.jpg",
+        alt: "Filed PBD-01 map showing the 700 metre new three-phase line and 2.3 kilometre single-phase to three-phase conversion",
+        sourceId: "np-2021-pbd01",
+        pages: "physical PDF p. 192"
       }
     ]
   },

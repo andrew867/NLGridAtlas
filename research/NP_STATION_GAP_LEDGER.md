@@ -320,6 +320,16 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2027 filing proposes a $685,000 refurbishment of 2.8 km of MIL-02 in Milton and George's Brook, replacing 1960s structures and #4 copper with 1/0 AASC, physical PDF p. 181.
 - [ ] The Board order establishes approval of the 2012 Random Island work, not commissioning. A later completion record has not been located. The 2027 MIL-02 work remains proposed.
 
+## Port Blandford station record
+
+- [x] The current line register identifies PBD as a tap on 124L between Clarenville and Glovertown, CA-NP-168 physical PDF p. 4.
+- [x] The 2010 asset history records 16.7 MVA of transformer capacity, a steel 138 kV structure, and a wood 25 kV structure installed in 1990, CA-NP-088 physical PDF p. 197.
+- [x] The 2021 filing records PBD-01 as the station's only feeder, serving approximately 671 customers. The feeder was approximately 60 km long, including 5 km of three-phase line and 55 km of single-phase line, physical PDF p. 183.
+- [x] The filed Thorburn Lake tap used approximately 10 km of single-phase #2 ACSR. Its 107 A forecast exceeded the company's 85 A single-phase planning criterion, physical PDF p. 183.
+- [x] The selected 2021 project proposed 700 m of new three-phase line and conversion of 2.3 km from single-phase to three-phase for $600,000. The filed route map is preserved from physical PDF pp. 186 and 192.
+- [x] The 2027 register records PBD-T1 at 138/25 kV, 16.67 MVA, with a 3.17 MVA 2026 forecast, physical PDF p. 549.
+- [ ] A completion record for the 2021 PBD-01 work has not been located. The atlas keeps the route and conversion as filed work.
+
 ## Gambo station record
 
 - [x] The 2024 filing identifies 121L from Glovertown and 146L from Gander as the 138 kV supplies, physical PDF p. 349.

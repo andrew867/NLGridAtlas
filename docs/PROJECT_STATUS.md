@@ -147,6 +147,7 @@ Updated: 2026-11-12
 - Added Gillams as a dedicated 358L radial-station record with GIL-01 and GIL-02, dated transformer loading, the 2003 clearance filing, the 2010 refurbishment scope, and both completed feeder-recloser replacements.
 - Added Marble Mountain with its Deer Lake Power L1 supply, MMT-01 service area and conductor, former 4 MVA station, filed 2014 expansion, and current 6.67 MVA transformer record.
 - Added Milton with its 110L supply, MIL-01 and MIL-02 service areas, 1976 structures, current transformer record, approved 2012 Random Island extension, filed 2027 refurbishment, and the 2015 service-area map.
+- Added Port Blandford with its 124L tap, PBD-01 construction and service record, 1990 station assets, current transformer record, filed 2021 three-phase work, and the filed route map.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work

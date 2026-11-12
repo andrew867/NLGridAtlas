@@ -1432,6 +1432,24 @@ test("Clarenville separates the 2014 arrangement from the present three-transfor
   assert.match(historyFacts, /41\.5 MVA for CLV-T2 and CLV-T3 operating in parallel/);
 });
 
+test("Port Blandford records the 124L tap, radial feeder and filed three-phase work", async () => {
+  const portBlandford = stationProfiles.find((station) => station.code === "PBD");
+  assert.ok(portBlandford);
+  assert.deepEqual(portBlandford.connectedCircuits.map(({ circuit }) => circuit), ["124L tap"]);
+  assert.deepEqual(portBlandford.feederRegister, ["PBD-01"]);
+  assert.deepEqual(portBlandford.diagram.transformers.map(({ label, rating }) => [label, rating]), [["PBD-T1", "16.67 MVA"]]);
+  const existingFacts = portBlandford.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = portBlandford.planningRecord.facts.flat().join(" ");
+  const historyFacts = portBlandford.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /PBD-01 was the only feeder; approximately 671 customers/);
+  assert.match(existingFacts, /approximately 60 km total, including 5 km of three-phase line and 55 km of single-phase line/);
+  assert.match(planningFacts, /138\/25 kV; 16\.67 MVA; 3\.17 MVA 2026 forecast/);
+  assert.match(historyFacts, /steel 138 kV structure and wood 25 kV structure installed in 1990/);
+  assert.match(historyFacts, /construct 700 m of new three-phase line and convert 2\.3 km/);
+  assert.equal(portBlandford.referenceSheets[0].pages, "physical PDF p. 192");
+  await readFile(new URL("../public/reference-maps/pbd-01-2021-upgrade.jpg", import.meta.url));
+});
+
 test("Princeton Pond is represented as a breakerless switching point", async () => {
   const princetonPond = stationProfiles.find((station) => station.code === "PRC");
   assert.ok(princetonPond);
