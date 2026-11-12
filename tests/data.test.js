@@ -867,6 +867,23 @@ test("Princeton Pond is represented as a breakerless switching point", async () 
   await readFile(new URL("../public/reference-maps/prc-2024-single-line.png", import.meta.url));
 });
 
+test("Port Union separates current generation equipment from the Igor rebuild", () => {
+  const portUnion = stationProfiles.find((station) => station.code === "PUN");
+  assert.ok(portUnion);
+  assert.deepEqual(portUnion.connectedCircuits.map(({ circuit }) => circuit), ["111L", "111L"]);
+  assert.deepEqual(portUnion.diagram.transformers.map(({ label, rating }) => [label, rating]), [["PUN-T1-A", "0.33 MVA"], ["PUN-T1-B", "0.33 MVA"], ["PUN-T1-C", "0.33 MVA"]]);
+  assert.deepEqual(portUnion.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1 / G2", "0.52 MW plant rating"]]);
+  const currentFacts = portUnion.engineeringRecord.facts.flat().join(" ");
+  const transformerFacts = portUnion.planningRecord.facts.flat().join(" ");
+  const historyFacts = portUnion.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(currentFacts, /35 MWh, approximately 2\.8 days/);
+  assert.match(currentFacts, /464,232 kWh/);
+  assert.match(transformerFacts, /PUN-T1-A 66\/2\.4 kV; 0\.33 MVA/);
+  assert.match(historyFacts, /powerhouse flooded to approximately 2 m/);
+  assert.match(historyFacts, /500 kW Caterpillar D398A unit was decommissioned/);
+  assert.match(historyFacts, /rebuilt the Port Union hydroelectric plant/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

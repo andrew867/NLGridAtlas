@@ -1320,6 +1320,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/CA-NP-116.PDF"
   },
   {
+    id: "np-2009-111l",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Transmission Line 111L Rebuild",
+    topics: ["111L", "Port Union", "Lockston", "Catalina", "66 kV", "transmission line rebuild"],
+    pages: "physical PDF pp. 312 to 313",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2013-port-union-hydro",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Port Union Hydroelectric Development Record",
+    topics: ["Port Union", "hydroelectric generation", "G1", "G2", "2400 V", "66 kV", "woodstave penstock"],
+    pages: "physical PDF pp. 144 to 145",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-2011-port-union-rehabilitation",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-175 Attachment I, Port Union Hydro Plant Rehabilitation",
+    topics: ["Port Union", "Hurricane Igor", "hydroelectric generation", "G1", "G2", "diesel retirement", "plant rehabilitation"],
+    pages: "physical PDF pp. 161 to 166 and 168",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf"
+  },
+  {
+    id: "np-2011-annual-port-union",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2011 Annual Report, Port Union Hydro Plant Rebuild",
+    topics: ["Port Union", "Hurricane Igor", "hydroelectric generation", "plant rebuild", "capital expenditure"],
+    pages: "physical PDF p. 1217",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
+  },
+  {
+    id: "np-2027-ca-np-054",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "CA-NP-054, Port Union Hydro Plant Generation and Expenditures",
+    topics: ["Port Union", "hydroelectric generation", "run-of-river", "storage", "drought", "annual generation"],
+    pages: "physical PDF pp. 1, 3 and 5",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/CA-NP-054.PDF"
+  },
+  {
     id: "np-2007-blaketown",
     year: 2006,
     organization: "Newfoundland Power",
@@ -4779,6 +4829,94 @@ export const stationProfiles = [
         alt: "Filed Princeton Pond single-line showing separate 138 kV and 66 kV buses, 123L, 113L, potential transformers, and no circuit breakers",
         sourceId: "np-2025-ca-np-116",
         pages: "physical PDF p. 7"
+      }
+    ]
+  },
+  {
+    code: "PUN",
+    name: "Port Union",
+    voltage: "66/2.4 kV generation station",
+    circuitRegisterLabel: "2008 FILED 111L ROUTE",
+    circuitSource: { sourceId: "np-2009-111l", pages: "physical PDF p. 312" },
+    connectedCircuits: [
+      { circuit: "111L", from: "Lockston", from_code: "LOK", to: "Port Union", to_code: "PUN" },
+      { circuit: "111L", from: "Port Union", from_code: "PUN", to: "Catalina", to_code: "CAT" }
+    ],
+    feederRegisterLabel: "2026 PLANT ROLE",
+    feederRegister: ["Hydroelectric generation"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2026 plant record / 2027 filed transformer bank",
+      buses: [{ id: "b1", label: "111L switching bus", voltage: "66 kV" }, { id: "b2", label: "generation bus", voltage: "2.4 kV" }],
+      transformers: [{ label: "PUN-T1-A", rating: "0.33 MVA", from: "b1", to: "b2" }, { label: "PUN-T1-B", rating: "0.33 MVA", from: "b1", to: "b2" }, { label: "PUN-T1-C", rating: "0.33 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "111L", destination: "Lockston", bus: "b1", destinationCode: "LOK" }, { label: "111L", destination: "Catalina", bus: "b1", destinationCode: "CAT" }],
+      generators: [{ label: "G1 / G2", rating: "0.52 MW plant rating", bus: "b2" }]
+    },
+    engineeringRecord: {
+      date: "2026 FILED OPERATING RECORD",
+      title: "Port Union run-of-river hydroelectric plant",
+      sourceId: "np-2027-ca-np-054",
+      pages: "physical PDF pp. 1, 3 and 5",
+      facts: [
+        ["Plant rating", "0.52 MW"],
+        ["Storage", "35 MWh, approximately 2.8 days of production at rated capacity"],
+        ["Operating type", "substantially run-of-river"],
+        ["2025 generation", "464,232 kWh"],
+        ["2025 operating condition", "summer and fall drought reduced production"],
+        ["2026 capital state", "no Port Union Hydro Plant capital project was approved for 2026"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 552",
+      facts: [
+        ["PUN-T1-A", "66/2.4 kV; 0.33 MVA; generation transformer"],
+        ["PUN-T1-B", "66/2.4 kV; 0.33 MVA; generation transformer"],
+        ["PUN-T1-C", "66/2.4 kV; 0.33 MVA; generation transformer"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1917 TO 2012 DEVELOPMENT RECORD",
+        sourceId: "np-2013-port-union-hydro",
+        pages: "physical PDF pp. 144 to 145",
+        facts: [
+          ["Commissioned", "1917"],
+          ["2012 recorded capacity", "500 kW from two horizontal Francis turbine-generator units"],
+          ["Generation voltage", "2,400 V stepped up to 66 kV for the Bonavista Peninsula transmission grid"],
+          ["Waterway", "137 m woodstave penstock and approximately 350 m power canal"]
+        ]
+      },
+      {
+        label: "SEPTEMBER 2010 HURRICANE IGOR DAMAGE",
+        sourceId: "np-2011-port-union-rehabilitation",
+        pages: "physical PDF pp. 161 to 165",
+        facts: [
+          ["Plant condition", "the powerhouse flooded to approximately 2 m and the plant remained out of service pending restoration"],
+          ["Electrical damage", "generators, switchgear, control panels, metering, battery equipment, and AC and DC distribution equipment were partially or completely submerged"],
+          ["Diesel unit", "the 500 kW Caterpillar D398A unit was decommissioned and sent for recycling"]
+        ]
+      },
+      {
+        label: "2011 FILED REHABILITATION",
+        sourceId: "np-2011-port-union-rehabilitation",
+        pages: "physical PDF pp. 165 to 166 and 168",
+        facts: [
+          ["Generating units", "overhaul both units; replace G1 stator and rotor windings and exciter; refurbish the corresponding G2 equipment"],
+          ["Plant controls", "replace hydraulic governors, G1 and G2 control panels, battery bank, and charger; refurbish switchgear and circuit breakers"],
+          ["Filed schedule", "completion was anticipated in September 2011"]
+        ]
+      },
+      {
+        label: "2011 REBUILD COMPLETION RECORD",
+        sourceId: "np-2011-annual-port-union",
+        pages: "physical PDF p. 1217",
+        facts: [
+          ["Completed work", "Newfoundland Power reported that it rebuilt the Port Union hydroelectric plant after Hurricane Igor damage"],
+          ["Combined expenditure", "approximately $1.7 million for the Lawn dam repair and Port Union plant rebuild"]
+        ]
       }
     ]
   },

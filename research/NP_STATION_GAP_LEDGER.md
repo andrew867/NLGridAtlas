@@ -240,6 +240,16 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The filed Princeton Pond one-line is extracted as a station reference sheet, physical PDF p. 7.
 - [ ] No searched record establishes a permanent power transformer or distribution feeder at Princeton Pond. The atlas does not draw either.
 
+## Port Union generation-station record
+
+- [x] The 2009 capital filing identifies 111L as a 66 kV line between Lockston and Catalina via Port Union. The 31 km line also connected the Port Union hydroelectric and diesel plants to the Island system, physical PDF p. 312.
+- [x] The 2012 plant record identifies a 1917 hydroelectric development with two horizontal Francis units, 500 kW total recorded capacity, a 137 m woodstave penstock, an approximately 350 m power canal, and 2,400 V generation stepped up to 66 kV, physical PDF pp. 144 to 145.
+- [x] The 2026 response describes the plant as substantially run-of-river, rated at 0.52 MW, with 35 MWh of storage. It records 464,232 kWh of 2025 generation and drought-reduced production, physical PDF pp. 1, 3 and 5.
+- [x] The current fleet table lists PUN-T1-A, PUN-T1-B, and PUN-T1-C as separate 66/2.4 kV, 0.33 MVA generation transformers, physical PDF p. 552.
+- [x] Hurricane Igor flooded the powerhouse to approximately 2 m, submerged major electrical systems, and left the plant out of service. The damaged 500 kW Caterpillar D398A diesel was decommissioned, physical PDF pp. 161 to 165.
+- [x] The 2011 filing proposed mechanical, electrical, control, and civil rehabilitation. The 2011 annual report later records the Port Union rebuild as completed, physical PDF pp. 165 to 166, 168 and 1217.
+- [ ] The searched records do not give a current breaker-level one-line for Port Union. The atlas diagram shows only the directly documented voltage transformation, generation units, and 111L connection.
+
 ## Pulpit Rock feeder-bus and transformer records
 
 - [x] The 2025 application says PUL-T1 and the then-installed PUL-T2 supplied five 12.5 kV feeders, physical PDF pp. 458 and 463.
