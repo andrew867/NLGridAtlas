@@ -36,7 +36,7 @@ Updated: 2026-11-11
 - [ ] Feeder map sheets beyond those preserved for Hardwoods, Kenmount, Oxen Pond, Goulds, Glendale, St. John's Main, Stamp's Lane, King's Bridge, Pepperell, and Virginia Waters. The HWD-08 route and recloser drawing is preserved; the CA-NP-020 attachment has no HWD-08 feeder sheet.
 - [ ] Geographic coordinates or route data suitable for a measured line map. The available utility maps are semi-geographic.
 - [ ] Holyrood Unit 3 permanent post-steam as-built drawing. The reversible synchronous-condenser arrangement dates to 1986. The July 2026 operating report still records synchronous-condensing hours under the reversible arrangement; the future post-steam role remains a planning assumption under review.
-- [ ] Pulpit Rock replacement-transformer commissioning record or post-work one-line. The 12.5 kV feeder-bus record is established; the replacement installation status remains open.
+- [ ] Pulpit Rock replacement-transformer commissioning record or post-work one-line. CA-NP-040, physical PDF p. 2, lists PUL-T2 for installation in 2026. The 12.5 kV feeder-bus record and asset history are established, but no commissioning record has been located.
 
 ## Next archive searches
 

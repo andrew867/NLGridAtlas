@@ -1254,9 +1254,14 @@ test("Pulpit Rock record separates the feeder bus from dual-secondary equipment"
   const pulpit = stationProfiles.find((station) => station.code === "PUL");
   assert.deepEqual(pulpit.feederRegister, ["PUL-01", "PUL-02", "PUL-03", "PUL-04", "PUL-05"]);
   const facts = pulpit.engineeringRecord.facts.flat().join(" ");
+  const history = pulpit.historyRecords.flatMap((record) => record.facts).flat().join(" ");
   assert.match(facts, /five 12\.5 kV feeders/);
   assert.match(facts, /66\/12\.5\/25 kV/);
   assert.match(facts, /third quarter of 2026/);
+  assert.match(facts, /25 MVA replacement energized in 2011/);
+  assert.match(facts, /commissioning record not located/);
+  assert.match(history, /installed as SLA-T4 in 2021/);
+  assert.match(history, /asset 200331/);
   assert.doesNotMatch(facts, /not found/);
 });
 
@@ -1376,8 +1381,9 @@ test("2016 feeder growth records retain proposed currents, transfers, and route 
   assert.match(virginiaWaters.historyRecords[1].facts.flat().join(" "), /602 A per phase.*590 A per-phase planning rating/);
   assert.match(virginiaWaters.historyRecords[1].facts.flat().join(" "), /3\.2 MVA to proposed PUL-05/);
   assert.equal(virginiaWaters.referenceSheets[3].pages, "physical PDF p. 419");
-  assert.match(pulpitRock.historyRecords[1].facts.flat().join(" "), /193 A per phase.*153 A per-phase planning rating/);
-  assert.match(pulpitRock.historyRecords[1].facts.flat().join(" "), /35\.8 MVA, 72%/);
+  const pul2016 = pulpitRock.historyRecords.find((record) => record.label === "2016 PROPOSED FEEDER WORK");
+  assert.match(pul2016.facts.flat().join(" "), /193 A per phase.*153 A per-phase planning rating/);
+  assert.match(pul2016.facts.flat().join(" "), /35\.8 MVA, 72%/);
   assert.equal(pulpitRock.referenceSheets[0].image, "./reference-maps/pul-02-2016-upgrade.jpg");
 });
 
@@ -1481,8 +1487,9 @@ test("2014 feeder service records preserve routes, customers, and proposed work"
   assert.match(kenmount.historyRecords[0].label, /PROPOSED RECLOSERS/);
   assert.match(goulds.historyRecords[0].facts.flat().join(" "), /Lannon Street; approximately 100 customers/);
   assert.match(virginiaWaters.historyRecords[0].facts.flat().join(" "), /Outer Ring Road, then north along Torbay Road/);
-  assert.match(pulpitRock.historyRecords[0].facts.flat().join(" "), /reconductor 4\.3 km.*477 ASC/);
-  assert.match(pulpitRock.historyRecords[0].facts.flat().join(" "), /approximately 4\.5 MVA/);
+  const pul2014 = pulpitRock.historyRecords.find((record) => record.label === "2014 PROPOSED PUL-04 CONDUCTOR WORK");
+  assert.match(pul2014.facts.flat().join(" "), /reconductor 4\.3 km.*477 ASC/);
+  assert.match(pul2014.facts.flat().join(" "), /approximately 4\.5 MVA/);
 });
 
 test("2014 rural recloser and Holyrood breaker records remain proposed", () => {

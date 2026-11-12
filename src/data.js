@@ -823,8 +823,8 @@ export const sources = [
     id: "np-2012-kelligrews-completion",
     year: 2012,
     organization: "Newfoundland Power",
-    title: "CA-NP-217, 2011 Kelligrews Transformer Project Completion",
-    topics: ["Kelligrews", "KEL-T1", "25 MVA", "project completion"],
+    title: "CA-NP-217, 2011 Pulpit Rock and Kelligrews Transformer Project Completion",
+    topics: ["Pulpit Rock", "PUL-T1", "Kelligrews", "KEL-T1", "25 MVA", "project completion"],
     pages: "physical PDF p. 1167",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
@@ -1028,6 +1028,16 @@ export const sources = [
     pages: "physical PDF p. 1",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/responses/CA-NP-065.PDF"
+  },
+  {
+    id: "np-2027-ca-np-040",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "CA-NP-040, Power Transformer Replacement Schedule",
+    topics: ["Pulpit Rock", "PUL-T2", "transformer replacement", "planned installation year", "portable substation"],
+    pages: "physical PDF p. 2",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/NP2027Capital/responses/CA-NP-040.PDF"
   },
   {
     id: "np-2021-burin-reactive",
@@ -2948,15 +2958,15 @@ export const components = {
   },
   "pul-np-t1": {
     diagram: "pul-np", status: "verified", code: "PUL / T1", title: "Pulpit Rock transformer PUL-T1",
-    summary: "PUL-T1 is one of the two 25 MVA transformers that supply the station's five 12.5 kV feeders.",
-    data: [["Primary", "66 kV"], ["2027 equipment-table entry", "25.0 kV low operating voltage"], ["Rating", "25 MVA"], ["2026 forecast", "18.79 MVA"]],
-    sources: [sourceRef("np-2025-capital", "PDF p. 463"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
+    summary: "Newfoundland Power energized the 25 MVA PUL-T1 replacement in 2011. PUL-T1 is one of the two transformers that supply the station's five 12.5 kV feeders.",
+    data: [["Installed", "2011"], ["Primary", "66 kV"], ["2027 equipment-table entry", "25.0 kV low operating voltage"], ["Rating", "25 MVA"], ["2026 forecast", "18.79 MVA"]],
+    sources: [sourceRef("np-2012-kelligrews-completion", "physical PDF p. 1167"), sourceRef("np-2025-capital", "PDF p. 463"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
   },
   "pul-np-t2": {
     diagram: "pul-np", status: "verified", code: "PUL / T2", title: "Pulpit Rock transformer PUL-T2",
-    summary: "Asset 200331 entered service at Pulpit Rock in 2019. It is a dual-secondary 66/12.5/25 kV transformer. Newfoundland Power scheduled its replacement transformer to arrive in the third quarter of 2026.",
-    data: [["Asset", "200331, Ferranti Packard"], ["Manufactured", "1985"], ["Asset rating", "15/20/25 MVA"], ["Asset windings", "66/12.5/25 kV"], ["2027 table rating", "25 MVA"], ["2027 equipment-table entry", "25.0 kV low operating voltage"], ["2026 forecast", "19.09 MVA"], ["Replacement", "Scheduled delivery, Q3 2026"]],
-    sources: [sourceRef("np-2025-capital", "PDF pp. 463 to 470"), sourceRef("np-2026-capital", "PDF p. 197"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
+    summary: "Current asset 200331 entered service at Pulpit Rock in 2019. It is a dual-secondary 66/12.5/25 kV transformer. The 2027 capital record lists its replacement for installation in 2026, but no commissioning record is published in the sources reviewed.",
+    data: [["Current asset", "200331, Ferranti Packard"], ["Manufactured", "1985"], ["Asset rating", "15/20/25 MVA"], ["Asset windings", "66/12.5/25 kV"], ["2027 table rating", "25 MVA"], ["2027 equipment-table entry", "25.0 kV low operating voltage"], ["2026 forecast", "19.09 MVA"], ["Replacement delivery", "Scheduled for Q3 2026"], ["Planned installation year", "2026"]],
+    sources: [sourceRef("np-2025-capital", "PDF pp. 463 to 470"), sourceRef("np-2026-capital", "PDF p. 197"), sourceRef("np-2027-ca-np-040", "physical PDF p. 2"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
   },
   "mun-summary": {
     diagram: "mun", status: "verified", code: "MUN / SUBSTATION", title: "Memorial Substation",
@@ -7364,13 +7374,42 @@ export const stationProfiles = [
       facts: [
         ["Supply", "59L from Virginia Waters, 66 kV"],
         ["2025 station record", "two 25 MVA transformers supply five 12.5 kV feeders"],
+        ["PUL-T1 completion", "25 MVA replacement energized in 2011"],
         ["PUL-T2 installed in 2019", "15/20/25 MVA, dual 66/12.5/25 kV; used on the 12.5 kV feeder bus"],
         ["Replacement specification", "15/20/25 MVA, 66/12.5/25 kV"],
         ["Replacement schedule", "arrival scheduled for the third quarter of 2026"],
+        ["Planned installation year", "2026; commissioning record not located"],
         ["2027 equipment table", "PUL-T1 and PUL-T2 listed at 66/25 kV, 25 MVA"]
       ]
     },
     historyRecords: [
+      {
+        label: "2011 PUL-T1 REPLACEMENT COMPLETION",
+        sourceId: "np-2012-kelligrews-completion",
+        pages: "physical PDF p. 1167",
+        facts: [
+          ["Transformer", "new 25 MVA unit installed at Pulpit Rock"],
+          ["Status", "project completed and transformer energized"]
+        ]
+      },
+      {
+        label: "FORMER PUL-T2 ASSET REUSE",
+        sourceId: "np-2026-ca-np-065",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Filed asset history", "a transformer identified as PUL-T2 was repaired and installed as SLA-T4 in 2021"],
+          ["Current designation", "the 2025 station record assigns PUL-T2 to asset 200331, installed at Pulpit Rock in 2019"]
+        ]
+      },
+      {
+        label: "2026 PUL-T2 REPLACEMENT SCHEDULE",
+        sourceId: "np-2027-ca-np-040",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Planned installation year", "2026"],
+          ["Status", "commissioning record not located in the reviewed filings"]
+        ]
+      },
       {
         label: "2014 PROPOSED PUL-04 CONDUCTOR WORK",
         sourceId: "np-2014-improvements",
