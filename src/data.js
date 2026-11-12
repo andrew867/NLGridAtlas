@@ -730,6 +730,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
   },
   {
+    id: "np-2010-distribution-reliability",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Distribution Reliability Initiative",
+    topics: ["BOT-01", "GLV-02", "distribution reliability", "completed work", "capital expenditure"],
+    pages: "physical PDF pp. 349 to 353",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
     id: "np-2006-bot01-study",
     year: 2005,
     organization: "Newfoundland Power",
@@ -3761,6 +3771,7 @@ const filedFeederMapProfiles = [
       sourceId: "np-2016-grand-falls",
       pages: "physical PDF pp. 265 and 287 to 293",
       facts: [
+        ["Station yards", "NGF is the 138/66/25 kV yard north of the Trans-Canada Highway; GFS is the separate 66/4.16 kV yard south of the highway"],
         ["Station yards", "separate 138/66/25 kV and 66/4.16 kV yards on opposite sides of the Trans-Canada Highway"],
         ["GFS-T1", "138/66 kV; 29.7 MVA"],
         ["GFS-T2", "138/25 kV; 20 MVA"],
@@ -3788,6 +3799,16 @@ const filedFeederMapProfiles = [
         facts: [
           ["Structures", "replaced deteriorated wood poles and changed the switchgear-building configuration"],
           ["Electrical work", "installed lightning arresters, replaced relaying equipment, and added feeder automation"]
+        ]
+      },
+      {
+        label: "2011 TO 2016 GRAND FALLS 25 KV YARD WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF pp. 4 to 5",
+        facts: [
+          ["2011 to 2012", "replaced lightning arresters, transformer cables, air-break switches, potential transformers, and transmission-line protection relays; upgraded grounding"],
+          ["2016 modernization", "completed switch and relay replacements"],
+          ["2016 load growth", "added a 50 MVA power transformer and associated infrastructure"]
         ]
       }
     ]
@@ -7844,6 +7865,15 @@ export const stationProfiles = [
           ["Recorded causes", "broken conductor accounted for 34% of distribution outages; nine tree-contact outages produced 823,248 customer-minutes"],
           ["Filed scope", "replace deteriorated conductor, relocate off-road sections, remove danger trees, and rebuild remaining 7.2 kV sections to 14.4 kV insulation standards while retaining 7.2 kV operation"],
           ["Filed cost", "$2.585 million over 2006 to 2008"]
+        ]
+      },
+      {
+        label: "2008 COMPLETED BOT-01 SECTIONS",
+        sourceId: "np-2010-distribution-reliability",
+        pages: "physical PDF p. 350",
+        facts: [
+          ["Completed work", "completed Distribution Reliability Initiative work on sections of BOT-01"],
+          ["Recorded expenditure", "$630,000 in 2008"]
         ]
       }
     ],

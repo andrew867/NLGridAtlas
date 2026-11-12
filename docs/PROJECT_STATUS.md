@@ -103,6 +103,11 @@ Updated: 2026-11-12
 - Added the March 2025 Holyrood Capital Plan Refresh, including Unit 3 condition-monitoring and auxiliary-system findings plus the six CAT 3516B black-start sets.
 - Added the 2017 Holyrood plant-service arrangements and the 2019 completion records for the SST34 cable replacement and the lower-cost Newfoundland Power auxiliary supply connection.
 - Deferred publication of the external archive snapshot at the user's request.
+- Added the Pulpit Rock transformer chronology: the 2011 25 MVA installation, the former PUL-T2 unit's 2021 relocation to Stamp's Lane as SLA-T4, the 2019 in-service date for the current PUL-T2 asset, and the separately labeled 2026 replacement plan.
+- Added completed refurbishment histories for Botwood, Carbonear, Clarkes Pond, Clarenville, Gallants, Gander, Glovertown, Heart's Content, King's Bridge, Kelligrews, Lewisporte, Oxen Pond, Ridge Road, Stamp's Lane, and Springfield from PUB-NP-005.
+- Added dedicated station profiles for Botwood, Carbonear, Gallant Street, and Heart's Content, retaining source-year voltage differences instead of merging them.
+- Added the 2005 BOT-01 feeder study with its filed route map, 199 km route, conductor record, 2002 to 2004 interruption history, proposed three-year scope, and the separately documented 2008 completion of work on feeder sections.
+- Distinguished the Grand Falls NGF 138/66/25 kV yard north of the Trans-Canada Highway from the GFS 66/4.16 kV yard south of the highway. Added the documented 2011 to 2016 NGF modernization and 50 MVA transformer addition.
 
 ## Active work
 

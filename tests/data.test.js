@@ -512,9 +512,12 @@ test("Grand Falls record separates the two yards and parallel 25 kV bank", () =>
   const engineeringFacts = grandFalls.engineeringRecord.facts.flat().join(" ");
   const planningFacts = grandFalls.planningRecord.facts.flat().join(" ");
   assert.match(engineeringFacts, /separate 138\/66\/25 kV and 66\/4\.16 kV yards/);
+  assert.match(engineeringFacts, /NGF is the 138\/66\/25 kV yard.*GFS is the separate 66\/4\.16 kV yard/);
   assert.match(engineeringFacts, /GFS-T3 selected replacement 138\/25 kV; 50 MVA; operated in parallel with GFS-T2/);
   assert.match(engineeringFacts, /101L to Rattling Brook; 130L to Stony Brook; 132L to Bishop's Falls/);
   assert.match(planningFacts, /GFS-T5 66\/4\.2 kV; 11\.17 MVA; 6\.27 MVA 2026 forecast/);
+  const ngfHistory = grandFalls.historyRecords.find((record) => record.label.includes("25 KV YARD"));
+  assert.match(ngfHistory.facts.flat().join(" "), /2011 to 2012.*air-break switches.*2016 load growth.*50 MVA/);
 });
 
 test("Lewisporte and Rattling Brook retain the completed central 138 kV arrangement", () => {
@@ -1266,6 +1269,8 @@ test("Botwood, Carbonear, Gallant Street, and Heart's Content have dedicated sta
     ["./reference-maps/bot-01-2005-route.png", "physical PDF p. 403"]
   ]);
   assert.equal(sources.find((source) => source.id === "np-2006-bot01-study").status, "proposed");
+  const bot01Completion = botwood.historyRecords.find((record) => record.sourceId === "np-2010-distribution-reliability");
+  assert.match(bot01Completion.facts.flat().join(" "), /sections of BOT-01.*\$630,000 in 2008/);
 
   assert.deepEqual(carbonear.connectedCircuits.map(({ circuit }) => circuit), ["40L", "41L", "56L", "68L"]);
   assert.deepEqual(carbonear.feederRegister, ["CAR-01", "CAR-02", "CAR-03", "CAR-04"]);
