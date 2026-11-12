@@ -517,6 +517,23 @@ test("Grand Falls record separates the two yards and parallel 25 kV bank", () =>
   assert.match(planningFacts, /GFS-T5 66\/4\.2 kV; 11\.17 MVA; 6\.27 MVA 2026 forecast/);
 });
 
+test("Lewisporte and Rattling Brook retain the completed central 138 kV arrangement", () => {
+  const lewisporte = stationProfiles.find((station) => station.code === "LEW");
+  const rattlingBrook = stationProfiles.find((station) => station.code === "RBK");
+  assert.deepEqual(lewisporte.connectedCircuits.map(({ circuit }) => circuit), ["137L", "147L"]);
+  assert.deepEqual(lewisporte.feederRegister, ["LEW-01", "LEW-02", "LEW-03", "LEW-04"]);
+  assert.match(lewisporte.engineeringRecord.facts.flat().join(" "), /147L from Cobb's Pond and 137L from Rattling Brook/);
+  assert.match(lewisporte.referenceSheets[0].image, /lew-2018-selected-one-line\.svg/);
+
+  assert.deepEqual(rattlingBrook.connectedCircuits.map(({ circuit }) => circuit), ["136L", "137L"]);
+  assert.deepEqual(rattlingBrook.feederRegister, ["RBK-01"]);
+  const rbkFacts = rattlingBrook.engineeringRecord.facts.flat().join(" ");
+  assert.match(rbkFacts, /RBK-T3 15\/20\/25 MVA, 138\/66 kV; installed in 2021/);
+  assert.match(rbkFacts, /RBK-T2 5 MVA, 66\/12\.5 kV; supplies RBK-01/);
+  assert.match(rattlingBrook.planningRecord.facts.flat().join(" "), /Record difference/);
+  assert.match(rattlingBrook.referenceSheets[0].image, /rbk-2018-selected-one-line\.svg/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

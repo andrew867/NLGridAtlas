@@ -1160,6 +1160,36 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
   {
+    id: "np-2019-central-system",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "Central Newfoundland System Planning Study",
+    topics: ["Lewisporte", "Rattling Brook", "138 kV conversion", "136L", "137L", "147L", "single-line diagrams"],
+    pages: "physical PDF pp. 171 to 191",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
+  },
+  {
+    id: "np-2026-lewisporte",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, Lewisporte existing supply record",
+    topics: ["Lewisporte", "137L", "147L", "Rattling Brook", "Cobb's Pond", "138 kV"],
+    pages: "physical PDF pp. 65 to 67",
+    status: "verified",
+    url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
+    id: "np-2027-rattling-brook",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Rattling Brook Substation record",
+    topics: ["Rattling Brook", "RBK-T1", "RBK-T2", "RBK-T3", "138 kV", "66 kV", "generation", "distribution"],
+    pages: "physical PDF pp. 417 and 434 to 440",
+    status: "verified",
+    url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
+  },
+  {
     id: "np-2026-kings-bridge",
     year: 2025,
     organization: "Newfoundland Power",
@@ -3027,6 +3057,135 @@ const filedFeederMapProfiles = [
 
 export const stationProfiles = [
   ...filedFeederMapProfiles,
+  {
+    code: "LEW",
+    name: "Lewisporte",
+    voltage: "138/25 kV",
+    circuitRegisterLabel: "2026 EXISTING SUPPLY",
+    circuitSource: { sourceId: "np-2026-lewisporte", pages: "physical PDF p. 66" },
+    connectedCircuits: [
+      { circuit: "137L", from: "Rattling Brook", from_code: "RBK", to: "Lewisporte", to_code: "LEW" },
+      { circuit: "147L", from: "Lewisporte", from_code: "LEW", to: "Cobb's Pond", to_code: "COB" }
+    ],
+    feederRegisterLabel: "2019 STATION RECORD",
+    feederRegister: ["LEW-01", "LEW-02", "LEW-03", "LEW-04"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2018 selected conversion / 2026 existing supply",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "LEW-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "137L", destination: "Rattling Brook", bus: "b1", destinationCode: "RBK" }, { label: "147L", destination: "Cobb's Pond", bus: "b1", destinationCode: "COB" }]
+    },
+    engineeringRecord: {
+      date: "2026 EXISTING ARRANGEMENT",
+      title: "Lewisporte 138 kV supply",
+      sourceId: "np-2026-lewisporte",
+      pages: "physical PDF p. 66",
+      facts: [
+        ["Station role", "transmission and distribution substation"],
+        ["138 kV supply", "147L from Cobb's Pond and 137L from Rattling Brook"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["LEW-T1", "138/25 kV; 25 MVA; 19.98 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2018 SELECTED 138 KV CONVERSION",
+        sourceId: "np-2019-central-system",
+        pages: "physical PDF pp. 173 to 190",
+        facts: [
+          ["Former system", "single 66 kV supply from the 101L and 102L system"],
+          ["Selected conversion", "replace LEW-T1 with a 25 MVA, 138/25 kV transformer and connect the station to the 138 kV system"],
+          ["Filed one-line", "two 138 kV line positions, one 138 kV bus, LEW-T1 and four 25 kV feeders"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2018 SELECTED CONVERSION ONE-LINE",
+    referenceSheets: [
+      {
+        title: "Lewisporte 138 kV conversion one-line",
+        image: "./reference-maps/lew-2018-selected-one-line.svg",
+        alt: "Filed Lewisporte conversion one-line showing two 138 kV line positions, LEW-T1, the 25 kV main and transfer buses, and four feeders",
+        sourceId: "np-2019-central-system",
+        pages: "physical PDF p. 190"
+      }
+    ]
+  },
+  {
+    code: "RBK",
+    name: "Rattling Brook",
+    voltage: "138/66/12.5/6.9 kV",
+    circuitRegisterLabel: "2027 EXISTING CONNECTIONS",
+    circuitSource: { sourceId: "np-2027-rattling-brook", pages: "physical PDF pp. 435 to 436" },
+    connectedCircuits: [
+      { circuit: "136L", from: "Bishop's Falls", from_code: "BFS", to: "Rattling Brook", to_code: "RBK" },
+      { circuit: "137L", from: "Rattling Brook", from_code: "RBK", to: "Lewisporte", to_code: "LEW" }
+    ],
+    feederRegisterLabel: "2027 STATION RECORD",
+    feederRegister: ["RBK-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2027 existing arrangement",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "distribution bus", voltage: "12.5 kV" }, { id: "b4", label: "plant bus", voltage: "6.9 kV" }],
+      transformers: [{ label: "RBK-T3", rating: "25 MVA", from: "b1", to: "b2" }, { label: "RBK-T2", rating: "5 MVA", from: "b2", to: "b3" }, { label: "RBK-T1", rating: "15/20 MVA", from: "b2", to: "b4" }],
+      circuits: [{ label: "136L", destination: "Bishop's Falls", bus: "b1", destinationCode: "BFS" }, { label: "137L", destination: "Lewisporte", bus: "b1", destinationCode: "LEW" }],
+      generators: [{ label: "RBK-G1", rating: "7.5 MVA", bus: "b4" }, { label: "RBK-G2", rating: "8.25 MVA", bus: "b4" }]
+    },
+    engineeringRecord: {
+      date: "2027 STATION RECORD",
+      title: "Rattling Brook generation, transmission, and distribution arrangement",
+      sourceId: "np-2027-rattling-brook",
+      pages: "physical PDF pp. 435 to 440",
+      facts: [
+        ["Station built", "1959"],
+        ["Generation", "RBK-G1 at 7.5 MVA and RBK-G2 at 8.25 MVA"],
+        ["RBK-T1", "15/20 MVA, 66/6.9 kV; connects the generating plant to the 66 kV bus"],
+        ["RBK-T2", "5 MVA, 66/12.5 kV; supplies RBK-01 and approximately 780 customers"],
+        ["RBK-T3", "15/20/25 MVA, 138/66 kV; installed in 2021"],
+        ["138 kV connections", "Bishop's Falls and Lewisporte"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 EQUIPMENT TABLE",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 549, 552 and 553",
+      facts: [
+        ["RBK-T1", "66/6.9 kV; 23.75 MVA in the fleet table"],
+        ["RBK-T2", "66/25 kV; 6.67 MVA; 3.43 MVA 2026 forecast in the fleet table"],
+        ["RBK-T3", "138/66 kV; 25 MVA"],
+        ["Record difference", "the station-specific 2027 report describes RBK-T1 as 15/20 MVA and RBK-T2 as 5 MVA, 66/12.5 kV"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2018 SELECTED 138 KV EXPANSION",
+        sourceId: "np-2019-central-system",
+        pages: "physical PDF pp. 173 to 191",
+        facts: [
+          ["Selected expansion", "new 138 kV bus, two line positions and a 138/66 kV transformer feeding the existing 66 kV bus"],
+          ["Filed one-line", "retained RBK-T1, RBK-T2, RBK-01, both generators and their 6.9 kV bus"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2018 SELECTED EXPANSION ONE-LINE",
+    referenceSheets: [
+      {
+        title: "Rattling Brook 138 kV expansion one-line",
+        image: "./reference-maps/rbk-2018-selected-one-line.svg",
+        alt: "Filed Rattling Brook expansion one-line showing the new 138 kV yard, 138/66 kV transformer, existing 66 kV bus, distribution transformer, plant transformer, and two generators",
+        sourceId: "np-2019-central-system",
+        pages: "physical PDF p. 191"
+      }
+    ]
+  },
   {
     code: "MOL",
     name: "Molloy's Lane",
