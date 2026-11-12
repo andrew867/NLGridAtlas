@@ -241,7 +241,10 @@ function renderStationProfile(code) {
   const assignmentRecord = profile.assignmentRecord;
   const assignmentSource = assignmentRecord ? sourceById.get(assignmentRecord.sourceId) : null;
   const historyRecords = profile.historyRecords || [];
-  const circuitSource = profile.circuitSource ? sourceById.get(profile.circuitSource.sourceId) : null;
+  const circuitSourceRefs = profile.circuitSources || (profile.circuitSource ? [profile.circuitSource] : []);
+  const circuitSources = circuitSourceRefs
+    .map((reference) => ({ reference, source: sourceById.get(reference.sourceId) }))
+    .filter(({ source }) => source);
   const feederTieSource = profile.feederTieSource ? sourceById.get(profile.feederTieSource.sourceId) : null;
   const feederTieRows = (profile.feederTies || []).map((record) => {
     const ties = record.ties.map((tie) => {
@@ -262,8 +265,8 @@ function renderStationProfile(code) {
       <section>
         <span class="profile-label">${escapeHtml(profile.circuitRegisterLabel || "2005 CIRCUIT REGISTER")}</span>
         <ul class="circuit-list">${circuitRows || "<li><span>No connected transmission circuit in the register</span></li>"}</ul>
-        ${circuitSource
-          ? `<a class="evidence-link" href="${escapeHtml(circuitSource.url)}" target="_blank" rel="noreferrer">${escapeHtml(circuitSource.title)} / ${escapeHtml(profile.circuitSource.pages)}</a>`
+        ${circuitSources.length
+          ? circuitSources.map(({ reference, source }) => `<a class="evidence-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.title)} / ${escapeHtml(reference.pages)}</a>`).join("")
           : `<a class="evidence-link" href="${escapeHtml(handbook.source.source_url)}#page=6" target="_blank" rel="noreferrer">Electrical System Handbook / PDF pp. 6 to 7</a>`}
       </section>
       <section>

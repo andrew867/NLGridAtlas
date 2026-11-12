@@ -1260,6 +1260,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
   },
   {
+    id: "np-2024-wav01",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, WAV-01 Distribution Reliability Initiative",
+    topics: ["Western Avalon", "WAV-01", "12.5 kV", "Route 201", "distribution reliability", "feeder relocation"],
+    pages: "physical PDF pp. 274 to 285",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
     id: "np-2024-ca-np-158",
     year: 2023,
     organization: "Newfoundland Power",
@@ -4590,7 +4600,85 @@ const filedFeederMapProfiles = [
       }
     ]
   },
-  { code: "WAV", mapPages: [["WAV-01", 167]] },
+  {
+    code: "WAV",
+    name: "Western Avalon",
+    voltage: "230/138/66/12.5 kV",
+    circuitRegisterLabel: "2018 ISLAND AND 2025 NP CIRCUIT REGISTERS",
+    circuitSources: [
+      { sourceId: "np-2018-pub-np-084", pages: "physical PDF p. 26" },
+      { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" }
+    ],
+    connectedCircuits: [
+      { circuit: "TL267", from: "Bay d'Espoir", from_code: "BDE", to: "Western Avalon", to_code: "WAV" },
+      { circuit: "TL203", from: "Sunnyside", from_code: "SUN", to: "Western Avalon", to_code: "WAV" },
+      { circuit: "TL237", from: "Come By Chance", from_code: "CBC", to: "Western Avalon", to_code: "WAV" },
+      { circuit: "TL208", from: "Western Avalon", from_code: "WAV", to: "Voisey's Bay Nickel", to_code: "VBN" },
+      { circuit: "TL201", from: "Western Avalon", from_code: "WAV", to: "Soldiers Pond", to_code: "SOP" },
+      { circuit: "TL217", from: "Western Avalon", from_code: "WAV", to: "Soldiers Pond", to_code: "SOP" },
+      { circuit: "64L", from: "Western Avalon", from_code: "WAV", to: "Blaketown", to_code: "BLK" },
+      { circuit: "86L", from: "Western Avalon", from_code: "WAV", to: "Blaketown", to_code: "BLK" }
+    ],
+    feederRegisterLabel: "2023 FILED FEEDER RECORD",
+    feederRegister: ["WAV-01", "WAV-02", "WAV-03"],
+    mapPages: [["WAV-01", 167]],
+    eventLoads: [],
+    diagram: {
+      label: "2026 model ratings on filed circuit routes",
+      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }, { id: "b3", label: "66 kV bus", voltage: "66 kV" }, { id: "b4", label: "12.5 kV distribution bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "WAV-T1", rating: "25 MVA", from: "b1", to: "b3" }, { label: "WAV-T2", rating: "25 MVA", from: "b1", to: "b3" }, { label: "WAV-T3", rating: "41.7 MVA", from: "b1", to: "b2" }, { label: "WAV-T4", rating: "41.7 MVA", from: "b1", to: "b2" }, { label: "WAV-T5", rating: "125 MVA", from: "b1", to: "b2" }, { label: "WAV-T6", rating: "13.30 MVA", from: "b3", to: "b4" }],
+      circuits: [{ label: "TL267", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL203", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL237", destination: "Come By Chance", bus: "b1", destinationCode: "CBC" }, { label: "TL208", destination: "Voisey's Bay Nickel", bus: "b1", destinationCode: "VBN" }, { label: "TL201", destination: "Soldiers Pond", bus: "b1", destinationCode: "SOP" }, { label: "TL217", destination: "Soldiers Pond", bus: "b1", destinationCode: "SOP" }, { label: "64L", destination: "Blaketown", bus: "b3", destinationCode: "BLK" }, { label: "86L", destination: "Blaketown", bus: "b3", destinationCode: "BLK" }]
+    },
+    engineeringRecord: {
+      date: "2026 PLANNING MODEL",
+      title: "Western Avalon terminal transformation",
+      sourceId: "np-2027-loop-study",
+      pages: "physical PDF p. 192",
+      facts: [
+        ["230/66 kV", "WAV-T1 and WAV-T2; 25 MVA each"],
+        ["230/138 kV", "WAV-T3 and WAV-T4; 41.7 MVA each; WAV-T5, 125 MVA"],
+        ["2036 P90 model", "WAV-T1 17.0 MVA; WAV-T2 17.3 MVA; WAV-T3 14.5 MVA; WAV-T4 14.4 MVA; WAV-T5 42.1 MVA"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 551",
+      facts: [
+        ["WAV-T6", "66/12.5 kV; 13.30 MVA; 6.78 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "JANUARY 2014 T5 TAP-CHANGER FAILURE",
+        sourceId: "nlh-2014-wav-t5",
+        pages: "physical PDF pp. 12, 17, 19 to 20",
+        facts: [
+          ["Failure", "phase-to-phase fault damaged the T5 on-load tap changer"],
+          ["Replacement", "obsolete Type H mechanism replaced with a Type VV mechanism"]
+        ]
+      },
+      {
+        label: "2019 TAP-CHANGER CONTROL WORK",
+        sourceId: "nlh-2025-capital",
+        pages: "physical PDF p. 117",
+        facts: [
+          ["Project record", "Hydro began replacing the Western Avalon transformer tap-changer paralleling controls in 2019"]
+        ]
+      },
+      {
+        label: "2024 PROPOSED WAV-01 RELOCATION",
+        sourceId: "np-2024-wav01",
+        pages: "physical PDF pp. 274, 276 to 285",
+        facts: [
+          ["Feeder", "WAV-01 is a 12.5 kV feeder with three-phase, two-phase, and single-phase sections"],
+          ["Filed system", "WAV-01 was one of three feeders leaving Western Avalon Substation and served approximately 1,300 customers"],
+          ["Proposed work", "construct 6.5 km of three-phase line along Route 201 and transfer the 4.8 km Long Cove to Thornlea section"],
+          ["Filed cost", "$900,000"]
+        ]
+      }
+    ]
+  },
   {
     code: "WES",
     name: "Wesleyville",

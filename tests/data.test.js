@@ -1183,6 +1183,25 @@ test("Victoria links the radial distribution station and hydro generator", () =>
   assert.match(proposedFacts, /install a 66 kV breaker, bypass switch, digital relays/);
 });
 
+test("Western Avalon joins the terminal and distribution records without merging their sources", async () => {
+  const westernAvalon = stationProfiles.find((station) => station.code === "WAV");
+  assert.ok(westernAvalon);
+  assert.deepEqual(westernAvalon.connectedCircuits.map(({ circuit }) => circuit), ["TL267", "TL203", "TL237", "TL208", "TL201", "TL217", "64L", "86L"]);
+  assert.deepEqual(westernAvalon.feederRegister, ["WAV-01", "WAV-02", "WAV-03"]);
+  assert.deepEqual(westernAvalon.circuitSources.map(({ sourceId }) => sourceId), ["np-2018-pub-np-084", "np-2025-ca-np-168"]);
+  assert.deepEqual(westernAvalon.diagram.transformers.map(({ label, rating }) => [label, rating]), [["WAV-T1", "25 MVA"], ["WAV-T2", "25 MVA"], ["WAV-T3", "41.7 MVA"], ["WAV-T4", "41.7 MVA"], ["WAV-T5", "125 MVA"], ["WAV-T6", "13.30 MVA"]]);
+  const modelFacts = westernAvalon.engineeringRecord.facts.flat().join(" ");
+  const distributionFacts = westernAvalon.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(modelFacts, /WAV-T1 17.0 MVA; WAV-T2 17.3 MVA/);
+  assert.match(westernAvalon.planningRecord.facts.flat().join(" "), /66\/12.5 kV; 13.30 MVA; 6.78 MVA 2026 forecast/);
+  assert.match(distributionFacts, /Type H mechanism replaced with a Type VV mechanism/);
+  assert.match(distributionFacts, /one of three feeders leaving Western Avalon Substation/);
+  assert.match(distributionFacts, /construct 6.5 km of three-phase line along Route 201/);
+  const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
+  assert.match(main, /profile\.circuitSources/);
+  assert.match(main, /circuitSources\.map/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
@@ -1382,6 +1401,9 @@ test("every station record resolves to a source", () => {
   for (const profile of stationProfiles) {
     for (const key of ["engineeringRecord", "planningRecord", "assignmentRecord", "circuitSource", "feederTieSource"]) {
       if (profile[key]) assert.ok(sourceIds.has(profile[key].sourceId), `${profile.code} ${key}: ${profile[key].sourceId}`);
+    }
+    for (const source of profile.circuitSources || []) {
+      assert.ok(sourceIds.has(source.sourceId), `${profile.code} circuit source: ${source.sourceId}`);
     }
     for (const record of profile.historyRecords || []) {
       assert.ok(sourceIds.has(record.sourceId), `${profile.code} history record: ${record.sourceId}`);
