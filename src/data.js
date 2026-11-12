@@ -30,6 +30,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationHandbook.pdf"
   },
   {
+    id: "np-2006-407l",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Transmission Line 407L Rebuild",
+    topics: ["407L", "Stephenville", "Stephenville Crossing", "St. George's", "66 kV", "transmission line rebuild"],
+    pages: "physical PDF pp. 311 to 313",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
     id: "np-2009-feeder-list",
     year: 2008,
     organization: "Newfoundland Power",
@@ -46,6 +56,16 @@ export const sources = [
     title: "2010 Depreciation Study, Transmission Line Listing",
     topics: ["transmission lines", "line sections", "length", "year built", "conductor"],
     pages: "PDF pp. 280 to 286; appendix pp. A1 to A6",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-2010-depreciation-transformers",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2010 Depreciation Study, Substation Transformer Listing",
+    topics: ["substation transformers", "installation year", "operating voltage", "Stephenville Crossing", "STX-T1"],
+    pages: "physical PDF p. 201",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
@@ -758,6 +778,16 @@ export const sources = [
     pages: "physical PDF pp. 545 to 551",
     status: "verified",
     url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
+  },
+  {
+    id: "pu-4-2021-deer-lake-power",
+    year: 2021,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 4 (2021), Deer Lake Power Supply Agreement",
+    topics: ["Deer Lake Power", "L1", "Pasadena", "Marble Mountain", "66 kV"],
+    pages: "physical PDF p. 5",
+    status: "verified",
+    url: "http://www.pub.nl.ca/orders/order2021/pu/P.U.%204(2021).PDF"
   },
   {
     id: "np-2027-ilc02",
@@ -1508,6 +1538,16 @@ export const sources = [
     pages: "physical PDF pp. 433 to 435 and 475 to 482",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2014-humber-valley",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Humber Valley Load Growth Study",
+    topics: ["Pasadena", "PAS-T1", "PAS-01", "PAS-02", "Marble Mountain", "MMT-T1", "Humber Valley"],
+    pages: "physical PDF pp. 285 to 291",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
   },
   {
     id: "np-2027-ca-np-041",
@@ -4225,7 +4265,58 @@ const filedFeederMapProfiles = [
       }
     ]
   },
-  { code: "PAS", mapPages: [["PAS-01", 118]] },
+  {
+    code: "PAS",
+    name: "Pasadena",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2021 REGULATORY CONNECTION RECORD",
+    circuitSource: { sourceId: "pu-4-2021-deer-lake-power", pages: "physical PDF p. 5" },
+    connectedCircuits: [
+      { circuit: "Deer Lake Power L1", from: "Deer Lake Power", from_code: null, to: "Pasadena", to_code: "PAS" }
+    ],
+    feederRegisterLabel: "2013 FILED STATION ARRANGEMENT",
+    feederRegister: ["PAS-01", "PAS-02"],
+    mapPages: [["PAS-01", 118]],
+    eventLoads: [],
+    diagram: {
+      label: "current transformer rating on documented supply connection",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "PAS-T1", rating: "13.30 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "L1", destination: "Deer Lake Power", bus: "b1", link: false }]
+    },
+    engineeringRecord: {
+      date: "2013 FILED STATION ARRANGEMENT",
+      title: "Pasadena distribution station",
+      sourceId: "np-2014-humber-valley",
+      pages: "physical PDF pp. 285 to 286",
+      facts: [
+        ["PAS-T1", "66/12.5 kV; 13.3 MVA"],
+        ["PAS-01", "served approximately 1,052 customers, primarily on the west side of Pasadena, in the 2013 filing"],
+        ["PAS-02", "served approximately 1,080 customers, primarily on the east side, plus Eastern Brook, Pynn's Brook and Little Harbour"],
+        ["Supply", "Deer Lake Power L1 supplies the Pasadena and Marble Mountain station transformers"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["PAS-T1", "66/12.5 kV; 13.30 MVA; 12.46 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2013 FILED HUMBER VALLEY EXPANSION PLAN",
+        sourceId: "np-2014-humber-valley",
+        pages: "physical PDF pp. 286 to 291",
+        facts: [
+          ["2014 filed forecast", "PAS-T1 at 13.9 MVA against its 13.3 MVA rating; MMT-T1 at 4.2 MVA against its 4 MVA rating"],
+          ["Selected first stage", "replace MMT-T1 with the 5/6.7 MVA former MOB-T1, extend MMT-01 and add voltage regulators in 2014"],
+          ["Selected later stage", "the study scheduled a 15/20/25 MVA PAS-T1 replacement for 2021"]
+        ]
+      }
+    ]
+  },
   {
     code: "SCV",
     name: "Seal Cove",
@@ -4271,7 +4362,64 @@ const filedFeederMapProfiles = [
     },
     historyRecords: []
   },
-  { code: "STX", mapPages: [["STX-01", 151]] },
+  {
+    code: "STX",
+    name: "Stephenville Crossing",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2005 FILED 407L ARRANGEMENT",
+    circuitSource: { sourceId: "np-2006-407l", pages: "physical PDF p. 312" },
+    connectedCircuits: [
+      { circuit: "407L", from: "Stephenville", from_code: "STV", to: "Stephenville Crossing", to_code: "STX" },
+      { circuit: "407L", from: "Stephenville Crossing", from_code: "STX", to: "St. George's", to_code: "STG" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["STX-01"],
+    mapPages: [["STX-01", 151]],
+    eventLoads: [],
+    diagram: {
+      label: "current transformer rating on documented 407L arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "STX-T1", rating: "6.67 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "407L", destination: "Stephenville", bus: "b1", destinationCode: "STV" }, { label: "407L", destination: "St. George's", bus: "b1", destinationCode: "STG" }]
+    },
+    engineeringRecord: {
+      date: "2005 FILED NETWORK RECORD",
+      title: "Stephenville Crossing distribution tap on 407L",
+      sourceId: "np-2006-407l",
+      pages: "physical PDF p. 312",
+      facts: [
+        ["Transmission", "407L is a 66 kV radial line between Stephenville and St. George's through Stephenville Crossing"],
+        ["Line role", "the 2005 filing reported more than 3,000 customers on 407L and identified it as the only tie from Lookout Brook hydro plant to the main grid"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [
+        ["STX-T1", "66/12.5 kV; 6.67 MVA; 4.97 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2010 DEPRECIATION STUDY EQUIPMENT RECORD",
+        sourceId: "np-2010-depreciation-transformers",
+        pages: "physical PDF p. 201",
+        facts: [
+          ["STX-T1 installation record", "6.7 MVA, 66/12.47 kV; installed in 1977"]
+        ]
+      },
+      {
+        label: "2006 FILED 407L REBUILD",
+        sourceId: "np-2006-407l",
+        pages: "physical PDF pp. 312 to 313",
+        facts: [
+          ["Line history", "407L was built in 1956; the 13 km section between Stephenville Crossing and St. George's included sections rebuilt in 1978 and 1992"],
+          ["Filed work", "rebuild 7.6 km of deteriorated line"]
+        ]
+      }
+    ]
+  },
   {
     code: "TRN",
     name: "Trinity",

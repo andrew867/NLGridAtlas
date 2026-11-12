@@ -95,6 +95,8 @@ Updated: 2026-11-12
 - Added Seal Cove's 38L and 52L connections, two distribution feeders, dated generation and distribution equipment, and current transformer-register values. The 12.5 kV and 25 kV SCV-T2 records remain dated and separate.
 - Added Harbour Grace's 57L and 68L connections, three feeders, 2017 dual-bank arrangement, filed modernization, and current HGR-T1 fleet-table value. The later single-bank 25 kV record is not presented as the 2017 as-built arrangement.
 - Added Upper Island Cove's two 57L sections, both feeders, TD-2018 tie, current transformer value, the filed 57L rebuild, and the proposed 2027 to 2028 ILC-02 work.
+- Added Pasadena's Deer Lake Power L1 supply, both feeders, 2013 load-growth record, and current transformer value. The study's planned 25 MVA replacement remains separate from the current 13.30 MVA fleet-table record.
+- Added Stephenville Crossing as the documented 407L tap, with STX-01, the 1977 transformer record, current rating and forecast, and the filed 407L rebuild.
 - Identified the current internal Holyrood drawing numbers `1403-500-E001` and `1403-500-E004` in the 2022 study document register. The drawings were named but not filed.
 - Added the March 2025 Holyrood Capital Plan Refresh, including Unit 3 condition-monitoring and auxiliary-system findings plus the six CAT 3516B black-start sets.
 - Added the 2017 Holyrood plant-service arrangements and the 2019 completion records for the SST34 cable replacement and the lower-cost Newfoundland Power auxiliary supply connection.

@@ -614,6 +614,31 @@ test("Upper Island Cove links both 57L sections and the filed feeder tie", () =>
   assert.match(proposedFacts, /96 A on phase A and 77 A on phase C/);
 });
 
+test("Pasadena separates the 2013 expansion plan from the current transformer record", () => {
+  const pasadena = stationProfiles.find((station) => station.code === "PAS");
+  assert.ok(pasadena);
+  assert.deepEqual(pasadena.connectedCircuits.map(({ circuit }) => circuit), ["Deer Lake Power L1"]);
+  assert.deepEqual(pasadena.feederRegister, ["PAS-01", "PAS-02"]);
+  const existingFacts = pasadena.engineeringRecord.facts.flat().join(" ");
+  const proposedFacts = pasadena.historyRecords[0].facts.flat().join(" ");
+  assert.match(existingFacts, /PAS-T1 66\/12\.5 kV; 13\.3 MVA/);
+  assert.match(existingFacts, /Deer Lake Power L1 supplies the Pasadena and Marble Mountain station transformers/);
+  assert.match(pasadena.planningRecord.facts.flat().join(" "), /PAS-T1 66\/12\.5 kV; 13\.30 MVA; 12\.46 MVA 2026 forecast/);
+  assert.match(proposedFacts, /scheduled a 15\/20\/25 MVA PAS-T1 replacement for 2021/);
+});
+
+test("Stephenville Crossing remains a documented tap on radial 407L", () => {
+  const crossing = stationProfiles.find((station) => station.code === "STX");
+  assert.ok(crossing);
+  assert.deepEqual(crossing.connectedCircuits.map(({ circuit }) => circuit), ["407L", "407L"]);
+  assert.deepEqual(crossing.connectedCircuits.map(({ from_code, to_code }) => [from_code, to_code]), [["STV", "STX"], ["STX", "STG"]]);
+  assert.deepEqual(crossing.feederRegister, ["STX-01"]);
+  const existingFacts = crossing.engineeringRecord.facts.flat().join(" ");
+  assert.match(existingFacts, /66 kV radial line between Stephenville and St\. George's through Stephenville Crossing/);
+  assert.match(crossing.planningRecord.facts.flat().join(" "), /STX-T1 66\/12\.5 kV; 6\.67 MVA; 4\.97 MVA 2026 forecast/);
+  assert.match(crossing.historyRecords[0].facts.flat().join(" "), /installed in 1977/);
+});
+
 test("Boyd's Cove and Gander retain the present corridor before the proposed 138 kV conversion", () => {
   const boydsCove = stationProfiles.find((station) => station.code === "BOY");
   const gander = stationProfiles.find((station) => station.code === "GAN");
