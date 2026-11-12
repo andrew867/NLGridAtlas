@@ -765,6 +765,22 @@ test("Lockston preserves the legacy 46 kV plant connection and separates the in-
   assert.match(historyFacts, /early construction had begun.*temporary transformer installation/);
 });
 
+test("Summerville retains its 113L through connection and in-progress modernization", () => {
+  const summerville = stationProfiles.find((station) => station.code === "SMV");
+  assert.ok(summerville);
+  assert.deepEqual(summerville.connectedCircuits.map(({ circuit }) => circuit), ["113L"]);
+  assert.deepEqual(summerville.feederRegister, ["SMV-01"]);
+  assert.deepEqual(summerville.diagram.circuits.map(({ label, destination }) => [label, destination]), [["113L", "Princeton Pond"], ["113L", "Lethbridge"]]);
+  const existingFacts = summerville.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = summerville.planningRecord.facts.flat().join(" ");
+  const historyFacts = summerville.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /SMV-T1 66\/25 kV; 4 MVA; Canadian General Electric; manufactured in 1971/);
+  assert.match(existingFacts, /SMV-01 at 25 kV; approximately 1,130 customers/);
+  assert.match(planningFacts, /SMV-T1 66\/25 kV; 4 MVA; 2\.87 MVA 2026 forecast/);
+  assert.match(historyFacts, /install two line breakers to divide 113L into sections/);
+  assert.match(historyFacts, /early construction had begun, including foundation work at Summerville/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

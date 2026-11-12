@@ -1170,6 +1170,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
   },
   {
+    id: "np-2025-summerville",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, Summerville Substation Refurbishment and Modernization",
+    topics: ["Summerville", "SMV-T1", "SMV-01", "113L", "66 kV", "25 kV", "substation modernization"],
+    pages: "physical PDF pp. 388 to 399",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
     id: "np-2026-q2-regulatory",
     year: 2026,
     organization: "Newfoundland Power",
@@ -4265,6 +4275,70 @@ export const stationProfiles = [
         pages: "physical PDF p. 9",
         facts: [
           ["Project status", "early construction had begun and work was under way to transfer the station load to a temporary transformer installation"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "SMV",
+    name: "Summerville",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2024 FILED SUPPLY",
+    circuitSource: { sourceId: "np-2025-summerville", pages: "physical PDF pp. 390 and 392" },
+    connectedCircuits: [
+      { circuit: "113L", from: "Princeton Pond", from_code: "PPD", to: "Lethbridge", to_code: "LET", via: "Summerville" }
+    ],
+    feederRegisterLabel: "2024 STATION RECORD",
+    feederRegister: ["SMV-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2024 filed existing arrangement / Q2 2026 construction state",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "SMV-T1", rating: "4 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "113L", destination: "Princeton Pond", bus: "b1", destinationCode: "PPD" }, { label: "113L", destination: "Lethbridge", bus: "b1", destinationCode: "LET" }]
+    },
+    engineeringRecord: {
+      date: "2024 FILED EXISTING EQUIPMENT",
+      title: "Summerville distribution station",
+      sourceId: "np-2025-summerville",
+      pages: "physical PDF pp. 390 to 395",
+      facts: [
+        ["Station built", "1969 as a distribution substation"],
+        ["Transmission supply", "113L between Princeton Pond and Lethbridge substations"],
+        ["SMV-T1", "66/25 kV; 4 MVA; Canadian General Electric; manufactured in 1971"],
+        ["Distribution", "SMV-01 at 25 kV; approximately 1,130 customers in the Charleston, Princeton, Summerville, Plate Cove, and King's Cove area"],
+        ["Feeder recloser", "G&W unit manufactured in 2016 and retained for reconnection"],
+        ["Voltage regulators", "two Allis-Chalmers units manufactured in 1973 and one Cooper unit manufactured in 2020; all retained for reconnection"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [
+        ["SMV-T1", "66/25 kV; 4 MVA; 2.87 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2025 TO 2026 FILED MODERNIZATION SCOPE",
+        sourceId: "np-2025-summerville",
+        pages: "physical PDF pp. 392 to 399",
+        facts: [
+          ["66 kV equipment", "replace the wood bus with a steel structure and install two line breakers to divide 113L into sections"],
+          ["25 kV equipment", "replace the wood structure, switches, and metering equipment; retain the feeder recloser and voltage regulators"],
+          ["Transformer", "retain SMV-T1 and move it to a new spill-containment foundation"],
+          ["Protection and control", "install digital relays, communications equipment, a control building, and a 125 VDC battery system"],
+          ["Site", "extend the yard and ground grid and address drainage"]
+        ]
+      },
+      {
+        label: "Q2 2026 CONSTRUCTION STATE",
+        sourceId: "np-2026-q2-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["Project status", "early construction had begun, including foundation work at Summerville"]
         ]
       }
     ]

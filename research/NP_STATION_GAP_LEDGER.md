@@ -16,7 +16,7 @@ Last scan: 2026-11-11
 
 The station browser now covers 139 station codes, the 136 stations in the 2006 handbook plus Airport, Long Pond, and Mobile Hydro Plant from the 2027 transformer register. Records combine connected transmission circuits, feeder designations, current transformer ratings, and detailed maps or one-lines where those documents exist.
 
-The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Old Perlican, Islington, Northwest Brook, Lockston, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
+The island station register now adds sourced records for Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls and Bishop's Falls, Lewisporte, Rattling Brook, Massey Drive, Stephenville, Come By Chance, Greenspond, Mobile Hydro Plant, Boyd's Cove, Gander, Gambo, Old Perlican, Islington, Northwest Brook, Lockston, Summerville, Blaketown, Laurentian, Lookout Brook, Harmon, Dunville, Clarkes Pond, and Walbournes. The Lewisporte and Rattling Brook records include the filed selected one-lines and later records of the completed 138 kV supply arrangements. Recent capital records keep existing equipment separate from future work. Other entries remain station-level records where no current one-line is public.
 
 ## Avalon stations
 
@@ -181,6 +181,16 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 - [x] The 2027 fleet table lists LOK-T2 at 7.46 MVA while the station-specific 2024 table gives 4 MVA. The atlas retains both values as separate records, physical PDF p. 551; 2025 capital application physical PDF p. 418.
 - [x] The Q2 2026 regulatory report says early construction had begun and the station was being transferred to a temporary transformer installation, physical PDF p. 9.
 - [ ] No later public report available in the archive on 2026-11-12 confirms commissioning or gives the replacement transformer's designation. The atlas does not render the proposed 66/6.9 kV unit as installed.
+
+## Summerville station record
+
+- [x] The 2025 filing identifies 113L between Princeton Pond and Lethbridge as the 66 kV supply through Summerville, physical PDF pp. 390 and 392.
+- [x] SMV-T1 is a 4 MVA, 66/25 kV Canadian General Electric transformer manufactured in 1971, physical PDF p. 394.
+- [x] SMV-01 served approximately 1,130 customers. The 2016 feeder recloser and three voltage regulators were retained for reconnection, physical PDF pp. 390 and 393 to 394.
+- [x] The filed project retains SMV-T1, the recloser, and the voltage regulators. It replaces the wood structures, deteriorated switches, and metering equipment and adds two 66 kV breakers, digital protection, a control building, spill containment, and ground-grid work, physical PDF pp. 392 to 399.
+- [x] The Q2 2026 regulatory report says early construction had begun, including structure foundation work at Summerville, physical PDF p. 9.
+- [x] The 2027 fleet table records SMV-T1 at 4 MVA with a 2.87 MVA 2026 forecast, physical PDF p. 550.
+- [ ] No later public report available in the archive on 2026-11-12 confirms commissioning or publishes a post-project breaker one-line. The atlas retains a dated logical connection diagram.
 
 ## Pulpit Rock feeder-bus and transformer records
 
