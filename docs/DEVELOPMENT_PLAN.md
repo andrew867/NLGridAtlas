@@ -133,11 +133,14 @@ Work items:
 - REL-002
 - REL-003
 - REL-004
+- REL-005
 
 Current deployment state:
 
 - `REL-001` is complete. The public `andrew867/NLGridAtlas` repository is connected and `main` is synchronized.
 - `REL-003` is complete. GitHub Pages is live at `https://andrew867.github.io/NLGridAtlas/`; the workflow passed and the published build passed browser and phone-width checks.
+- `REL-002` is complete. The repository evidence manifest and external archive snapshot format are defined.
+- `REL-005` remains open until a public object-store destination is selected and a clean restore passes without contacting the source sites.
 
 Exit gate:
 

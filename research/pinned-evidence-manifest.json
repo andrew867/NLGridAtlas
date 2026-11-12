@@ -1,0 +1,457 @@
+{
+  "schema_version": 1,
+  "scope": "All PDF files committed under research/sources",
+  "source_catalog": "research/catalog.json",
+  "file_count": 66,
+  "total_bytes": 222565583,
+  "files": [
+    {
+      "local_path": "sources/Hydro-2004-Capital-Budget-Complete.pdf",
+      "bytes": 14819601,
+      "sha256": "e21f32476728bcc6929b0be9db0e1b9d42ee8d6e9367d838171314c44c6b7fa3",
+      "catalog_ids": [
+        "hydro-2004-capital"
+      ]
+    },
+    {
+      "local_path": "sources/NLH-2023-Transmission-and-Terminal-Station-Asset-Management-Execution-Report.pdf",
+      "bytes": 4280476,
+      "sha256": "e09e63b38d1226a2e2535e98bd52d46393896ddc021ab3b5d7d4a6dc82b05d8a",
+      "catalog_ids": [
+        "hydro-2023-transmission-assets"
+      ]
+    },
+    {
+      "local_path": "sources/NLH2013GRA-Application-VolumeII.pdf",
+      "bytes": 17717483,
+      "sha256": "2d4124655c2cefacb0b53e45de4a23ba64ce5b24daac5dae28b1b57781f91e29",
+      "catalog_ids": [
+        "hydro-2013-gra-v2"
+      ]
+    },
+    {
+      "local_path": "sources/labrador-230kv/2017-02-03-application.pdf",
+      "bytes": 898429,
+      "sha256": "bd49146f79d5004a399f34a2485e1328eabcb1c21767709eb27fae8ca7eb1fed",
+      "catalog_ids": [
+        "hydro-2017-labrador-230kv"
+      ]
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/NP-NLH-001.pdf",
+      "bytes": 90767,
+      "sha256": "dda0766b0fc4647600452945306d6d36891956b6b3dc58a2290f319fce860357",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/NP-NLH-002.pdf",
+      "bytes": 94649,
+      "sha256": "d909642e4b852ba66c78008a659b445b1687246bf48848743feecc0b7f3faa5c",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/NP-NLH-003.pdf",
+      "bytes": 90212,
+      "sha256": "e6242d7eab4e5daf2618eb4c775937b4a46b3ff55b0ee832964e7cd9c2c50695",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/NP-NLH-004.pdf",
+      "bytes": 90178,
+      "sha256": "0f2f87d81f8a8df52cc4b7f006c6f99475226e1e6a75d6e54cb45103d654066a",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/NP-NLH-005.pdf",
+      "bytes": 89396,
+      "sha256": "22fdaa183d76ac13c5e754824abf4a6ea08e1633871c72723709203ea52cd039",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/NP-NLH-006.pdf",
+      "bytes": 105668,
+      "sha256": "3b04d2cf70cdcf1443d46a831af58cc0c0f383a3852606f0d214c9632293d737",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/PUB-NLH-001.pdf",
+      "bytes": 3686199,
+      "sha256": "a88768e6db01a64cb68f7b29f34a74d67ba3c349327390e2282b3fdf04082c82",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/PUB-NLH-002.pdf",
+      "bytes": 64647,
+      "sha256": "e61b2ac86ec916884b9b67f30fefa8dbc375bc55da0dce486a3ea662382e52ee",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/PUB-NLH-003.pdf",
+      "bytes": 62886,
+      "sha256": "385a880dfa809378082b43f9914a2e1db752c9297a2340572022de144b002b81",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/PUB-NLH-004.pdf",
+      "bytes": 86457,
+      "sha256": "cbd12d85a9d471ee9bbe17494290aa2041958ccd24aaa3e78d5a5d366c07ed07",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/PUB-NLH-005.pdf",
+      "bytes": 96040,
+      "sha256": "4e6de7bf49d1df1b9c60379a4ed8e9952928d2754e47dae1726c509a55803b50",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/PUB-NLH-006.pdf",
+      "bytes": 87234,
+      "sha256": "f4c0404eed46baf2bec4a6320f33f3db457fdbad6ec07910c099b74df876ec9e",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/labrador-230kv/rfi/PUB-NLH-007.pdf",
+      "bytes": 65936,
+      "sha256": "1ce36dbb08773c7d8da934dc5840fe06b759bbe5f1cc008343f2d645f7a9cce9",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/loadforecast/2024-annual.pdf",
+      "bytes": 2428390,
+      "sha256": "2f1834b53d1a97f173f46f6a847194b94732198e0a349bbacb4404a0e580bf88",
+      "catalog_ids": [
+        "hydro-2024-load-forecast"
+      ]
+    },
+    {
+      "local_path": "sources/nlh-2024-rra/selected-pages.pdf",
+      "bytes": 2282121,
+      "sha256": "26b3a0221970941c8ac23f86fcd57b2a23c1d66c86fc8c9e94bc889197654e71",
+      "catalog_ids": [
+        "nlh-2024-rra"
+      ]
+    },
+    {
+      "local_path": "sources/nlh-2025-avalon-ct/selected-pages.pdf",
+      "bytes": 397850,
+      "sha256": "4c6880158d01dbe12c19626e44bdee3c21b2d05420840bee87dfff3326a89b24",
+      "catalog_ids": [
+        "nlh-2025-avalon-ct"
+      ]
+    },
+    {
+      "local_path": "sources/nlh-2025-capital/selected-pages.pdf",
+      "bytes": 1367226,
+      "sha256": "db6d60c129d58510acd30b35bb52e08e19335fa46a0178f3d39cd94dd4a119d0",
+      "catalog_ids": [
+        "nlh-2025-capital"
+      ]
+    },
+    {
+      "local_path": "sources/nlh-2027-capital/VHF-replacement-physical-page-248.pdf",
+      "bytes": 149514,
+      "sha256": "01469a29124b8c5d6b83ac23a1e174d595103e116f2c18b3b8ba22526aaf0194",
+      "catalog_ids": [
+        "hydro-2027-capital-vhf-extract"
+      ]
+    },
+    {
+      "local_path": "sources/nlh-2027-capital/equipment-voltage-physical-page-542.pdf",
+      "bytes": 129522,
+      "sha256": "5eff22b98770fd6b96b3df4f89f6e73392ac952e394b404114822477e6661580",
+      "catalog_ids": [
+        "hydro-2027-capital-equipment-voltage-extract"
+      ]
+    },
+    {
+      "local_path": "sources/np-2006/NP2006ApplicationHandbook.pdf",
+      "bytes": 238773,
+      "sha256": "54cfa1347e25bdf937dd09acbe5d84da7c0ac8b08c87e1284a8a84d23085a5ff",
+      "catalog_ids": [
+        "np-2006-electrical-system-handbook"
+      ]
+    },
+    {
+      "local_path": "sources/np-2014-capital/NP2014ApplicationComplete.pdf",
+      "bytes": 10064890,
+      "sha256": "da133a107fc706c45e36d4e0f30b2156855a7b247f468aec02a23d1fad19566c",
+      "catalog_ids": [
+        "np-2014-capital"
+      ]
+    },
+    {
+      "local_path": "sources/np-2014-electrical-system-improvements/Application.pdf",
+      "bytes": 2363398,
+      "sha256": "01a4aa3ef8a70d2ad76610a6b9058942ced0d4b43fc143f5f65e7006906920ad",
+      "catalog_ids": [
+        "np-2014-electrical-system-improvements"
+      ]
+    },
+    {
+      "local_path": "sources/np-2023-memorial/2023-03-03-application.pdf",
+      "bytes": 2974403,
+      "sha256": "ff56072df7a5fa778e9a7e5b6092d476c72d578cbc9ab36fdb1b24ee81b25d5d",
+      "catalog_ids": [
+        "np-2023-memorial"
+      ]
+    },
+    {
+      "local_path": "sources/np-2024-general-service/feeder-table-3.pdf",
+      "bytes": 932109,
+      "sha256": "78b471e1222854aa1b5df79cd1279a4baa354f72143cdf2474d53c7261b05c43",
+      "catalog_ids": [
+        "np-2024-general-service"
+      ]
+    },
+    {
+      "local_path": "sources/np-2024-goulds/station-record-excerpt.pdf",
+      "bytes": 910992,
+      "sha256": "2367cbb669e2738dedbe7bfe9f69b5e1f6376b0717a8c798015a109a0bf413ad",
+      "catalog_ids": [
+        "np-2024-goulds"
+      ]
+    },
+    {
+      "local_path": "sources/np-2025-capital/pulpit-rock-pages.pdf",
+      "bytes": 1626185,
+      "sha256": "161a28b520ea1229483a89e37ac44bc715bdae94f49e22eb035800f8bdd319ec",
+      "catalog_ids": [
+        "np-2025-capital-pulpit-rock"
+      ]
+    },
+    {
+      "local_path": "sources/np-2025-lines-38l-39l/2025-10-06-application.pdf",
+      "bytes": 1194513,
+      "sha256": "237ce82aa9b6d8915c7e35e16c6b9037c87ddf8b7fbc66ebd4c88f20439d7328",
+      "catalog_ids": [
+        "np-2025-lines-38l-39l"
+      ]
+    },
+    {
+      "local_path": "sources/np-2026-capital/pulpit-rock-pages.pdf",
+      "bytes": 1010186,
+      "sha256": "cefc411b2f049396b828a2769a24fc882588cf6206921292f7e8ee60d2de0c89",
+      "catalog_ids": [
+        "np-2026-capital-pulpit-rock"
+      ]
+    },
+    {
+      "local_path": "sources/np-2026-kings-bridge/station-record-excerpt.pdf",
+      "bytes": 1684096,
+      "sha256": "3e797fd23b4a38d1fe5776d4445a2d4a1a9322ed70ffdff0416504ca03c1e731",
+      "catalog_ids": [
+        "np-2026-kings-bridge"
+      ]
+    },
+    {
+      "local_path": "sources/np-2027-capital/power-transformer-listing-physical-pages-545-551.pdf",
+      "bytes": 779988,
+      "sha256": "baa7329016744c8ef36b8dbda9831b345fc4245c777cbc64fd7b69a23a3cf9e8",
+      "catalog_ids": [
+        "np-2027-transformers"
+      ]
+    },
+    {
+      "local_path": "sources/np-2027-ridge-road/station-record-excerpt.pdf",
+      "bytes": 1196765,
+      "sha256": "03fcd2e80d74a7c5dd4af377e1e984b4ddfbd33133d18f3aadb60ad5a1ad7e4b",
+      "catalog_ids": [
+        "np-2027-ridge-road"
+      ]
+    },
+    {
+      "local_path": "sources/np-2027-thermal/application.pdf",
+      "bytes": 56021927,
+      "sha256": "f712a7a14a2834d7d9dedb32d4396104f80fc5f14062cd81a5be74efae208633",
+      "catalog_ids": [
+        "np-2027-loop-study"
+      ]
+    },
+    {
+      "local_path": "sources/np-island-system/CA-NP-020.pdf",
+      "bytes": 8417204,
+      "sha256": "8c329a31b72d3471e9acc6fe7b368618a5262e2ef82c4ac4ad0927563c55bb3f",
+      "catalog_ids": [
+        "np-island-ca-020"
+      ]
+    },
+    {
+      "local_path": "sources/oxenpond/2013-03-20AppOxenPond.PDF",
+      "bytes": 76353353,
+      "sha256": "d1dec55ac47d4af754d9d7d01579504933cd77e7db8da4c5e289f3a3e8587116",
+      "catalog_ids": [
+        "hydro-2013-oxen-pond"
+      ]
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/CA-NLH-001.pdf",
+      "bytes": 33702,
+      "sha256": "c00ab9e991e726d9cb74a9ce7c7a3507dac453da7d2d813ee1d5d597f6f1d5ba",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/IC-NLH-001.pdf",
+      "bytes": 43618,
+      "sha256": "b3999a1018f19839294c041ed16750a9d4c9b3fb371996346dd913b59c69e98c",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/IC-NLH-002.pdf",
+      "bytes": 3531174,
+      "sha256": "3b095486383b498be061ac9a7c5ec4d3f25fc463c36a60fd00f9380929f86eea",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/IC-NLH-003.pdf",
+      "bytes": 84893,
+      "sha256": "0c9ecf20c60edcdf59722d37869cb5863a18ef66e380538a12f8385661578853",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/IC-NLH-004.pdf",
+      "bytes": 46273,
+      "sha256": "96469c70ebe5ef20fedd2c86eab8897cb05c6d64cf1e702d336e47dfc42e6ba7",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/IC-NLH-005.pdf",
+      "bytes": 40535,
+      "sha256": "5452813108745ab55ff7b1d9a33c0d039553f4755f66934e9255e41ad7013cd8",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/IC-NLH-006.pdf",
+      "bytes": 53811,
+      "sha256": "67cf9675fde6e5d20ae077435d371aca77ff1be6f16743a7614fee8c19f73ecd",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/IC-NLH-007.pdf",
+      "bytes": 45031,
+      "sha256": "4732fb13dba488d4ff2423ad25db261b65e6bfae9b23b61e659ac36dbe79f70e",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/IC-NLH-008.pdf",
+      "bytes": 40450,
+      "sha256": "8ae1c8067c129df5f41d852d6dbf99211d7cc9903923fc622300b66f2ef162c3",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/IC-NLH-009.pdf",
+      "bytes": 56850,
+      "sha256": "dc9bc91e0667854259efe1eb8e9c7809b708d5661a56d722440ff1d91fcc1fcb",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/NP-NLH-001.pdf",
+      "bytes": 38634,
+      "sha256": "c6c07f3404bfe168835b631c81b29e5a9035c4e271958f6563c747d6525219e9",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/NP-NLH-002.pdf",
+      "bytes": 57071,
+      "sha256": "3762fd5b3a9b3865b19fd8b87259fab7e86764c96494421ded833e239e31ff2b",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/NP-NLH-003.pdf",
+      "bytes": 81631,
+      "sha256": "de425b073dee39c876f3b4476ea34c7a1478c04a4b7b4d75797eefe54af70c4b",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/NP-NLH-004.pdf",
+      "bytes": 38420,
+      "sha256": "2a00fb97a4bbe2156949e7b6a8e86a29cc3558c259cbb26f4385c2714b158922",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-001.pdf",
+      "bytes": 58438,
+      "sha256": "08032d078fb146f31be99564369e7905a272f982691fbd8beeb3a80cf96810a8",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-002.pdf",
+      "bytes": 47323,
+      "sha256": "7755930cf45c7b8e17f90c7265fad2081b2fbefa9759bbe6e3b1ab182d2ff848",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-003.pdf",
+      "bytes": 59068,
+      "sha256": "d6ca1e4c41446fcc0a3605be90a1cb69cc6bace258efc72a04146cdbacc64932",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-004.pdf",
+      "bytes": 47777,
+      "sha256": "f2a3b91bc81dd53af2b3c94f8b1feba5aa58e9d4c57562f878b6be67586bd44e",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-005.pdf",
+      "bytes": 55420,
+      "sha256": "06c47227283e322db5d01ac0f2e8ddbf9c2d2818c7040ad4bd6e6c302d159c8d",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-006.pdf",
+      "bytes": 48147,
+      "sha256": "c5045a23dece1048178dc3d846f299f918d7d5bd8a5ab0761f7d2a9131a3f522",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-007.pdf",
+      "bytes": 49891,
+      "sha256": "2e55bca934b1e824ee18b5e350eb0863018be3826dfa41dffe2e0d754fbbfee2",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-008.pdf",
+      "bytes": 56209,
+      "sha256": "5c33f9a242d65aeeabfceea64a432e4c16c67d4ae86fd1c9c862583388a0c77d",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-009.pdf",
+      "bytes": 1575930,
+      "sha256": "a863ebe10ae0eb0cac1da865b3b002bb6a714a98c67d290ce05e74ff41df61bd",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-010.pdf",
+      "bytes": 46883,
+      "sha256": "e42a4f3bf53897d8043384051d68ee82e9ebfb7b88a27654c58ff593d2a87ecc",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-011.pdf",
+      "bytes": 34557,
+      "sha256": "2caec41431c3e24a372ee73402345ca37597cd3c199293631185f3d42de58065",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-012.pdf",
+      "bytes": 41794,
+      "sha256": "542aacbd25d4b1498c4d46344c5eb21df09ea828419fe50be64fbf40426c1b77",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/oxenpond/rfi/PUB-NLH-013.pdf",
+      "bytes": 48558,
+      "sha256": "e2dc60735dd202d56feee783dac1f5fd07ae41ac27e7e61e77cfcd47b4ed093e",
+      "catalog_ids": []
+    },
+    {
+      "local_path": "sources/western-avalon/Exhibit114.pdf",
+      "bytes": 1253832,
+      "sha256": "f934d8974182f567f518870c6df09625eac5faa51e095c636ad2c18c2b7942a2",
+      "catalog_ids": [
+        "nlh-2011-western-avalon"
+      ]
+    }
+  ]
+}

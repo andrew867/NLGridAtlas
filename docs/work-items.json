@@ -516,12 +516,18 @@
       "title": "Define the public evidence-package strategy",
       "phase": 5,
       "priority": "P1",
-      "status": "not_started",
+      "status": "done",
       "scope": "Define which source PDFs are committed, which remain external, and how the multi-gigabyte mirrors can be restored without depending on the live PUB site.",
       "dependencies": ["ARC-001", "ARC-002", "ARC-003"],
-      "completion_evidence": [],
+      "completion_evidence": [
+        "docs/PUBLIC_EVIDENCE_PACKAGE.md",
+        "research/pinned-evidence-manifest.json",
+        "research/external-archive-manifest.json",
+        "scripts/build-evidence-manifest.mjs",
+        "scripts/verify-sources.mjs"
+      ],
       "blocker": null,
-      "notes": "Git is not suitable for the complete raw archive without a separate storage plan."
+      "notes": "The repository carries 66 pinned PDFs with a machine-checked digest manifest. The three large mirrors remain outside Git. Their local counts and control-file hashes are recorded, and the restore design uses immutable content-addressed objects plus path indexes. Publishing those external objects is tracked separately in REL-005."
     },
     {
       "id": "REL-003",
@@ -554,6 +560,18 @@
       ],
       "blocker": null,
       "notes": "A fresh public clone at af61cb5 passed 71 tests, the production build, hashes for 66 pinned PDFs, and a clean-worktree check. Rerun this gate for each release candidate."
+    },
+    {
+      "id": "REL-005",
+      "title": "Publish the external archive snapshot",
+      "phase": 5,
+      "priority": "P2",
+      "status": "not_started",
+      "scope": "Select public object storage, publish the content-addressed PUB, NL Hydro, and Newfoundland Power mirror objects and path indexes, then prove a clean restore without contacting the source sites.",
+      "dependencies": ["REL-002"],
+      "completion_evidence": [],
+      "blocker": "No public object-store destination has been selected for approximately 49.7 GB of local mirror files.",
+      "notes": "Do not put the raw mirrors in the Git repository. A restore passes only when all objects verify and the restored audit counts match research/external-archive-manifest.json."
     }
   ]
 }

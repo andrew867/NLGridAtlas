@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-11-11",
+  "object_layout": "sha256/{digest[0:2]}/{digest}",
+  "public_snapshot_base_url": null,
+  "archives": [
+    {
+      "id": "pub",
+      "local_root": "C:/src/misc/PUB",
+      "source_url": "http://www.pub.nl.ca/",
+      "file_count": 52931,
+      "file_bytes": 40130031268,
+      "document_count": 49293,
+      "distinct_hashes": 49286,
+      "page_records": 504049,
+      "control_files": [
+        {
+          "path": "reports/audit.json",
+          "sha256": "60d2b3a5a525f848f6fc463ed9c671227cae0ccefa9b57d296e8b9b1518b4545"
+        }
+      ],
+      "snapshot_state": "local"
+    },
+    {
+      "id": "nlhydro-uploads",
+      "local_root": "C:/src/misc/NLHydroUploads",
+      "source_url": "https://nlhydro.com/wp-content/uploads/",
+      "file_count": 2539,
+      "file_bytes": 9402399683,
+      "pdf_count": 2521,
+      "control_files": [
+        {
+          "path": "inventory.json",
+          "sha256": "30092dd7436b0a67ecb12a44ddf82b1331223732c6597b063e4c6c0608e44c2f"
+        },
+        {
+          "path": "downloads.jsonl",
+          "sha256": "2231f690c98a869f588ed1f0098394f44a6cc11515dcdde983527f61ad0d6bcf"
+        }
+      ],
+      "snapshot_state": "local"
+    },
+    {
+      "id": "newfoundland-power-direct",
+      "local_root": "C:/src/misc/NewfoundlandPowerRegulatory",
+      "source_url": "https://www.newfoundlandpower.com/en/About/Who-We-Are/Regulation",
+      "file_count": 13,
+      "file_bytes": 208202772,
+      "pdf_count": 13,
+      "control_files": [
+        {
+          "path": "inventory.json",
+          "sha256": "9af74fb94f6e19103d3223b0fc3c3967edf061bdcc95a1c22d1b56fecd904b9a"
+        },
+        {
+          "path": "downloads.jsonl",
+          "sha256": "99d53827a6d7c559b95ff20882425ed3d9e129377e14f1cd75c7d26490854274"
+        }
+      ],
+      "snapshot_state": "local"
+    }
+  ]
+}

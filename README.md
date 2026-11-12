@@ -16,6 +16,7 @@ Project control:
 - [Atlas specification](docs/ATLAS_SPECIFICATION.md)
 - [Phased development plan](docs/DEVELOPMENT_PLAN.md)
 - [Verification plan](docs/VERIFICATION_PLAN.md)
+- [Public evidence package](docs/PUBLIC_EVIDENCE_PACKAGE.md)
 - [Authoritative work-item register](docs/work-items.json)
 - [Newfoundland Power direct regulatory mirror](research/NEWFOUNDLAND_POWER_DIRECT_MIRROR.md)
 
@@ -31,6 +32,13 @@ Build and test:
 ```powershell
 npm test
 npm run build
+```
+
+Verify or rebuild the pinned PDF manifest:
+
+```powershell
+npm run verify:sources
+npm run build:evidence-manifest
 ```
 
 ## GitHub Pages

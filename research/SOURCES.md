@@ -2,7 +2,9 @@
 
 This directory contains unmodified copies of public regulatory filings used by NL Grid Atlas. The copies preserve filings when source URLs fail.
 
-Run `npm run verify:sources` to calculate SHA-256 digests and file sizes.
+Run `npm run verify:sources` to check every PDF against `pinned-evidence-manifest.json` and the digests in `catalog.json`.
+
+Run `npm run build:evidence-manifest` after deliberately adding or replacing a source PDF, then review the manifest diff before committing it.
 
 The initial collection includes:
 

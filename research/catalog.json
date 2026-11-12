@@ -15,6 +15,7 @@
       "id": "hydro-2004-capital",
       "local_path": "sources/Hydro-2004-Capital-Budget-Complete.pdf",
       "source_url": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf",
+      "sha256": "e21f32476728bcc6929b0be9db0e1b9d42ee8d6e9367d838171314c44c6b7fa3",
       "notes": "Physical pages 193 to 205 contain the VHF replacement business case. Physical page 258 contains the existing ATI network block diagram. Physical pages 265 and 266 contain existing and potential repeater-site registers."
     },
     {
@@ -57,17 +58,20 @@
       "id": "hydro-2013-oxen-pond",
       "local_path": "sources/oxenpond/2013-03-20AppOxenPond.PDF",
       "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF",
+      "sha256": "d1dec55ac47d4af754d9d7d01579504933cd77e7db8da4c5e289f3a3e8587116",
       "notes": "Physical PDF page 15 contains Figure 1, a semi-geographic 230 kV and 66 kV power-system map for the St. John's region."
     },
     {
       "id": "hydro-2017-labrador-230kv",
       "local_path": "sources/labrador-230kv/2017-02-03-application.pdf",
-      "source_url": "http://www.pub.nf.ca/applications/2017/NLH2017Capital/NLH2017Capital_SUPP_230TransmissionLines/applications/NLH%20-%20Acquisition%20of%20two%20230%20kV%20Transmission%20Lines%20Serving%20Labrador%20West%20-%202017-02-03.PDF"
+      "source_url": "http://www.pub.nf.ca/applications/2017/NLH2017Capital/NLH2017Capital_SUPP_230TransmissionLines/applications/NLH%20-%20Acquisition%20of%20two%20230%20kV%20Transmission%20Lines%20Serving%20Labrador%20West%20-%202017-02-03.PDF",
+      "sha256": "bd49146f79d5004a399f34a2485e1328eabcb1c21767709eb27fae8ca7eb1fed"
     },
     {
       "id": "np-2014-electrical-system-improvements",
       "local_path": "sources/np-2014-electrical-system-improvements/Application.pdf",
-      "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf"
+      "source_url": "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf",
+      "sha256": "01a4aa3ef8a70d2ad76610a6b9058942ced0d4b43fc143f5f65e7006906920ad"
     },
     {
       "id": "np-2014-capital",
@@ -186,22 +190,26 @@
     {
       "id": "np-2023-memorial",
       "local_path": "sources/np-2023-memorial/2023-03-03-application.pdf",
-      "source_url": "http://www.pub.nl.ca/applications/2023/NP2023Capital_SUPP_MemorialStation/app/From%20NP%20-%20Approval%20for%20the%20Purchase%20and%20Installation%20of%20a%20Replacement%20Power%20Transformer%20for%20Memorial%20Substation%20-%202023-03-03.PDF"
+      "source_url": "http://www.pub.nl.ca/applications/2023/NP2023Capital_SUPP_MemorialStation/app/From%20NP%20-%20Approval%20for%20the%20Purchase%20and%20Installation%20of%20a%20Replacement%20Power%20Transformer%20for%20Memorial%20Substation%20-%202023-03-03.PDF",
+      "sha256": "ff56072df7a5fa778e9a7e5b6092d476c72d578cbc9ab36fdb1b24ee81b25d5d"
     },
     {
       "id": "np-2025-lines-38l-39l",
       "local_path": "sources/np-2025-lines-38l-39l/2025-10-06-application.pdf",
-      "source_url": "http://www.pub.nf.ca/applications/2025/NP2025RelocateLines38Land39L/app/From%20NP%20-%20Approval%20of%20a%20Contribution%20from%20Hydro%20toward%20the%20Cost%20to%20Relocate%20Transmission%20Lines%2038L%20and%2039L%20-%202025-10-06.PDF"
+      "source_url": "http://www.pub.nf.ca/applications/2025/NP2025RelocateLines38Land39L/app/From%20NP%20-%20Approval%20of%20a%20Contribution%20from%20Hydro%20toward%20the%20Cost%20to%20Relocate%20Transmission%20Lines%2038L%20and%2039L%20-%202025-10-06.PDF",
+      "sha256": "237ce82aa9b6d8915c7e35e16c6b9037c87ddf8b7fbc66ebd4c88f20439d7328"
     },
     {
       "id": "hydro-2023-transmission-assets",
       "local_path": "sources/NLH-2023-Transmission-and-Terminal-Station-Asset-Management-Execution-Report.pdf",
-      "source_url": "http://www.pub.nf.ca/indexreports/transmission/From%20NLH%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202023-04-25.PDF"
+      "source_url": "http://www.pub.nf.ca/indexreports/transmission/From%20NLH%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202023-04-25.PDF",
+      "sha256": "e09e63b38d1226a2e2535e98bd52d46393896ddc021ab3b5d7d4a6dc82b05d8a"
     },
     {
       "id": "hydro-2024-load-forecast",
       "local_path": "sources/loadforecast/2024-annual.pdf",
-      "source_url": "http://www.pub.nf.ca/indexreports/nostradamus/From%20NLH%20-%20Short-Term%20Load%20Forecasting%20Accuracy%20-%202024%20Annual%20Report%20-%202025-01-31.PDF"
+      "source_url": "http://www.pub.nf.ca/indexreports/nostradamus/From%20NLH%20-%20Short-Term%20Load%20Forecasting%20Accuracy%20-%202024%20Annual%20Report%20-%202025-01-31.PDF",
+      "sha256": "2f1834b53d1a97f173f46f6a847194b94732198e0a349bbacb4404a0e580bf88"
     }
   ]
 }

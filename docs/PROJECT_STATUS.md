@@ -68,12 +68,14 @@ Updated: 2026-11-11
 - Expanded the checked station-boundary register from 8 to 22 records. The Avalon additions cover Airport, Broad Cove, Chamberlains, Glendale, King's Bridge, Kelligrews, Kenmount, Long Pond, Molloy's Lane, Memorial, Pepperrell, Seal Cove, St. John's Main, and Stamp's Lane. The register preserves each OpenStreetMap object, version, and timestamp.
 - Kept circuit designations out of the geographic route layer because the GeoAtlas records do not provide them.
 - Added island and Avalon geographic views. Station selection updates a fixed detail panel; the station-record link performs navigation.
+- Added a complete digest manifest for the 66 committed evidence PDFs, including the eight catalog records that previously lacked pinned hashes.
+- Defined the external archive snapshot as immutable SHA-256 objects plus mirror path indexes. Current PUB, NL Hydro, and Newfoundland Power mirror counts and control-file hashes are recorded.
 
 ## Active work
 
 1. Extend the station coordinate register and reconcile supported routes, `GEO-001`.
 2. Extend the geographic interface with supported circuit and voltage data, `GEO-002`.
-3. Define the public evidence-package release strategy, `REL-002`.
+3. Select storage and publish the external archive snapshot, `REL-005`.
 
 ## Island backbone progress
 
@@ -87,4 +89,4 @@ Direct circuit navigation is complete where the opposite endpoint has a detailed
 
 ## Open release gates
 
-- The public evidence-package strategy is not complete.
+- The full external mirror snapshot is not public. The repository's 66 pinned evidence PDFs are public and independently verified.
