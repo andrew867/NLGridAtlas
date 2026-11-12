@@ -133,6 +133,7 @@ Updated: 2026-11-12
 - Rebuilt Garnish around the documented 2009 station relocation. The new 66/12.5 kV station retained the transformer, replaced the other equipment, removed the former 1.6 km transmission tap, and connects directly to 301L without a high-voltage bus.
 - Added the Grand Falls logical one-line across the separate station yards. It connects the 138 kV, 66 kV, 25 kV, and current 4.2 kV functions, the completed GFS-T3 addition, current GFS-T5 record, 101L, 130L, 132L, and the five filed 25 kV feeders.
 - Added Petty Harbour's 33/4.16/2.4 kV logical one-line, radial 3L supply from Goulds, PHR-T1 and PHR-T3, three-unit 5.3 MW plant, PHR-01, March 2014 equipment register, 2006 refurbishment, 2026 capacity-test values, and the deferred 2025 modernization study.
+- Added Tors Cove's completed 2022 66/6.9 kV replacement arrangement, radial 11L connection to Mobile, TCV-T1, three-generator one-line, March 2014 equipment register, 2026 capacity-test values, and the separately documented plant-modernization study.
 
 ## Active work
 

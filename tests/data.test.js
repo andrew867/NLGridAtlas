@@ -1801,6 +1801,31 @@ test("Petty Harbour separates the 33 kV plant connection from 4.16 kV distributi
   assert.match(historyFacts, /deferred for further engineering assessment/);
 });
 
+test("Tors Cove records the completed replacement and the filed generator arrangement", async () => {
+  const torsCove = stationProfiles.find((station) => station.code === "TCV");
+  assert.ok(torsCove);
+  assert.deepEqual(torsCove.connectedCircuits, [
+    { circuit: "11L", from: "Tors Cove", from_code: "TCV", to: "Mobile", to_code: "MOB" }
+  ]);
+  assert.deepEqual(torsCove.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "6.9 kV"]);
+  assert.deepEqual(torsCove.diagram.transformers.map(({ label, rating }) => [label, rating]), [["TCV-T1", "7.5 MVA"]]);
+  assert.deepEqual(torsCove.diagram.generators.map(({ label, rating }) => [label, rating]), [
+    ["G1", "2.35 MVA / 85% PF"],
+    ["G2", "2.35 MVA / 85% PF"],
+    ["G3", "2.75 MVA / 85% PF"]
+  ]);
+  const historyFacts = torsCove.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(historyFacts, /refurbishment completed, including a new power transformer/);
+  assert.match(historyFacts, /new fenced yard approximately 50 m/);
+  assert.match(historyFacts, /TCV-G1-B, TCV-G2-B and TCV-G3-B/);
+  assert.match(historyFacts, /2,777 to 6,068 kW/);
+  assert.match(historyFacts, /6,068 kW at the 1130 Island Time interval/);
+  assert.deepEqual(torsCove.referenceSheets.map(({ image, pages }) => [image, pages]), [
+    ["./reference-maps/tcv-2022-one-line.svg", "physical PDF p. 332"]
+  ]);
+  await readFile(new URL("../public/reference-maps/tcv-2022-one-line.svg", import.meta.url));
+});
+
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const memorial = stationProfiles.find((station) => station.code === "MUN");

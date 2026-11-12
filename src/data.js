@@ -1794,8 +1794,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 235, 371 to 373, 427 and 484 to 487",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 235, 371 to 373, 427, 484 to 487 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -1834,10 +1834,30 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "NP-NLH-168 Attachment 1, Newfoundland Power Generation Capacity Tests",
-    topics: ["generation capacity test", "Petty Harbour", "PHR-T1", "15-minute generation", "actual output"],
+    topics: ["generation capacity test", "Petty Harbour", "PHR-T1", "Tors Cove", "TCV-T1", "15-minute generation", "actual output"],
     pages: "physical PDF p. 2",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/NP-NLH-168.PDF"
+  },
+  {
+    id: "np-2022-tors-cove",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Tors Cove Substation Refurbishment and Modernization",
+    topics: ["Tors Cove", "Tors Cove Hydro Plant", "TCV-T1", "11L", "Mobile", "66 kV", "6.9 kV", "substation relocation", "transformer replacement", "G1", "G2", "G3"],
+    pages: "physical PDF pp. 289 to 292, 296 and 329 to 339",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
+    id: "np-2024-pub-np-007",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-007, Tors Cove Hydro Plant Refurbishment",
+    topics: ["Tors Cove", "Tors Cove Hydro Plant", "TCV-T1", "substation refurbishment", "transformer replacement", "G1", "G3", "plant controls"],
+    pages: "physical PDF pp. 2 to 3",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/PUB-NP-007.PDF"
   },
   {
     id: "np-2025-gander-t2",
@@ -10162,6 +10182,125 @@ export const stationProfiles = [
           ["Study scope", "system planning study for Goulds, Big Pond, and Petty Harbour service"],
           ["Status", "deferred for further engineering assessment"]
         ]
+      }
+    ]
+  },
+  {
+    code: "TCV",
+    name: "Tors Cove",
+    voltage: "66/6.9 kV",
+    circuitRegisterLabel: "2025 CIRCUIT ENDPOINT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "11L", from: "Tors Cove", from_code: "TCV", to: "Mobile", to_code: "MOB" }
+    ],
+    feederRegisterLabel: "GENERATION STATION",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2022 completed replacement, logical arrangement",
+      buses: [
+        { id: "b1", label: "66 kV line connection", voltage: "66 kV" },
+        { id: "b2", label: "6.9 kV generator bus", voltage: "6.9 kV" }
+      ],
+      transformers: [{ label: "TCV-T1", rating: "7.5 MVA", from: "b2", to: "b1" }],
+      circuits: [{ label: "11L", destination: "Mobile", bus: "b1", destinationCode: "MOB" }],
+      generators: [
+        { label: "G1", rating: "2.35 MVA / 85% PF", bus: "b2" },
+        { label: "G2", rating: "2.35 MVA / 85% PF", bus: "b2" },
+        { label: "G3", rating: "2.75 MVA / 85% PF", bus: "b2" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2022 STATION RECORD",
+      title: "Tors Cove hydro generation station",
+      sourceId: "np-2022-tors-cove",
+      pages: "physical PDF pp. 289 and 329",
+      facts: [
+        ["Plant", "commissioned in 1941; 6.5 MW in the 2022 project report"],
+        ["Grid connection", "11L runs approximately 5 km to Mobile Substation"],
+        ["Transformer", "TCV-T1; 66/6.9 kV; 7.5 MVA"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER TABLE",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 552",
+      facts: [["TCV-T1", "generation transformer; 66/6.9 kV; 7.50 MVA"]]
+    },
+    historyRecords: [
+      {
+        label: "2022 SUBSTATION WORK COMPLETED",
+        sourceId: "np-2024-pub-np-007",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Substation", "refurbishment completed, including a new power transformer"],
+          ["Generator G3", "refurbished in 2017"]
+        ]
+      },
+      {
+        label: "2021 FILED REPLACEMENT SCOPE",
+        sourceId: "np-2022-tors-cove",
+        pages: "physical PDF pp. 289 to 292 and 296",
+        facts: [
+          ["Former transformer", "Canadian General Electric unit built in 1950; 66/33-6.9 kV; 7.5 MVA"],
+          ["Condition", "severe tank and radiator corrosion; consultant recommended planned removal within one to two years"],
+          ["Relocation", "new fenced yard approximately 50 m from the former substation"],
+          ["Protection", "three single-phase fused 66 kV disconnects, one 66 kV air-break switch and 6.9 kV switches filed for the replacement"],
+          ["Filed cost", "$1.813 million"]
+        ]
+      },
+      {
+        label: "2021 FILED GENERATOR ONE-LINE",
+        sourceId: "np-2022-tors-cove",
+        pages: "physical PDF pp. 331 to 332",
+        facts: [
+          ["G1", "2.35 MVA; 85% power factor"],
+          ["G2", "2.35 MVA; 85% power factor"],
+          ["G3", "2.75 MVA; 85% power factor"],
+          ["Protection", "TCV-T1-B and individual TCV-G1-B, TCV-G2-B and TCV-G3-B breakers"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 500 to 502",
+        facts: [
+          ["Transformer", "TCV-T1 asset 200162"],
+          ["Generation breakers", "TCV-G1-B, TCV-G2-B and TCV-G3-B"],
+          ["Transformer breaker", "TCV-T1-B"],
+          ["Telecommunications", "SAGE 2100 remote terminal unit"]
+        ]
+      },
+      {
+        label: "2026 GENERATION CAPACITY TEST",
+        sourceId: "np-2026-generation-capacity-test",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Metered point", "TCV-T1-I"],
+          ["15-minute values shown", "2,777 to 6,068 kW"],
+          ["Highest interval shown", "6,068 kW at the 1130 Island Time interval"]
+        ]
+      },
+      {
+        label: "2023 PLANT MODERNIZATION STUDY",
+        sourceId: "np-2024-pub-np-007",
+        pages: "physical PDF pp. 2 to 3",
+        facts: [
+          ["Switchgear", "obsolete metal-clad switchgear; control-room location complicates replacement"],
+          ["G1", "lacked sufficient automation for remote control from the System Control Centre"],
+          ["Status", "plant refurbishment deferred for further engineering assessment"]
+        ]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "2021 filed existing Tors Cove one-line",
+        image: "./reference-maps/tcv-2022-one-line.svg",
+        alt: "Filed Tors Cove one-line showing 11L, TCV-T1, the 6.9 kV bus and generators G1, G2 and G3",
+        sourceId: "np-2022-tors-cove",
+        pages: "physical PDF p. 332"
       }
     ]
   },
