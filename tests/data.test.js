@@ -901,6 +901,24 @@ test("Glovertown separates the former radial tap from the completed loop arrange
   assert.match(historyFacts, /construction and commissioning complete/);
 });
 
+test("Twillingate combines the completed station work with measured winter voltage", () => {
+  const twillingate = stationProfiles.find((station) => station.code === "TWG");
+  assert.ok(twillingate);
+  assert.deepEqual(twillingate.connectedCircuits.map(({ circuit }) => circuit), ["140L"]);
+  assert.deepEqual(twillingate.feederRegister, ["TWG-01", "TWG-02", "TWG-03"]);
+  assert.deepEqual(twillingate.diagram.transformers.map(({ label, rating }) => [label, rating]), [["TWG-T1", "13.33 MVA"]]);
+  assert.deepEqual(twillingate.diagram.circuits.map(({ label, destination }) => [label, destination]), [["140L", "Summerford"]]);
+  const existingFacts = twillingate.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = twillingate.planningRecord.facts.flat().join(" ");
+  const historyFacts = twillingate.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /66\/12.5 kV; 13.3 MVA/);
+  assert.match(existingFacts, /three hydraulic reclosers/);
+  assert.match(planningFacts, /13.33 MVA; 9.24 MVA 2026 forecast/);
+  assert.match(historyFacts, /construction complete/);
+  assert.match(historyFacts, /approximately 31% of the winter period/);
+  assert.match(historyFacts, /0.873 pu on January 24, 2024/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

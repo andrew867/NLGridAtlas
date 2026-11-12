@@ -79,6 +79,7 @@ Updated: 2026-11-12
 - Confirmed from the 2020 capital RFI that Hydro had dropped Units 1 and 2 from the synchronous-condenser operating plan; only Unit 3 remained.
 - Added the February 2025 Unit 1 overhaul completion record and the September 2025 list of reactive-power alternatives under assessment.
 - Added Glovertown's filed 2022 station equipment, former radial tap, completed 121L and 124L loop arrangement, feeder set, and current transformer-register value.
+- Added Twillingate's filed station equipment, completed 2013 modernization, current transformer-register value, radial 140L connection, feeder set, and measured 2023 to 2024 winter-voltage record.
 - Identified the current internal Holyrood drawing numbers `1403-500-E001` and `1403-500-E004` in the 2022 study document register. The drawings were named but not filed.
 - Added the March 2025 Holyrood Capital Plan Refresh, including Unit 3 condition-monitoring and auxiliary-system findings plus the six CAT 3516B black-start sets.
 - Added the 2017 Holyrood plant-service arrangements and the 2019 completion records for the SST34 cable replacement and the lower-cost Newfoundland Power auxiliary supply connection.

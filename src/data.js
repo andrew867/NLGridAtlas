@@ -120,6 +120,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-163.pdf"
   },
   {
+    id: "np-2013-q3-report",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-163 Attachment N, Q3 2013 Quarterly Regulatory Report",
+    topics: ["Twillingate", "Glenwood", "substation modernization", "capital completion", "quarterly report"],
+    pages: "physical PDF p. 767; attachment p. 56",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-163.pdf"
+  },
+  {
+    id: "np-2013-twillingate",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, Twillingate Substation Refurbishment and Modernization",
+    topics: ["Twillingate", "TWG-T1", "TWG-01", "TWG-02", "TWG-03", "140L", "66 kV", "12.5 kV"],
+    pages: "physical PDF pp. 275 to 277",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2025-gander-twillingate",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, Gander to Twillingate Transmission System Planning Study",
+    topics: ["Gander", "Twillingate", "Summerford", "Boyd's Cove", "140L", "66 kV", "voltage"],
+    pages: "physical PDF pp. 491 to 498",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
     id: "np-2022-line-age",
     year: 2021,
     organization: "Newfoundland Power",
@@ -3497,7 +3527,68 @@ const filedFeederMapProfiles = [
   { code: "SCV", mapPages: [["SCV-01", 134]] },
   { code: "STX", mapPages: [["STX-01", 151]] },
   { code: "TRN", mapPages: [["TRN-02", 152]] },
-  { code: "TWG", mapPages: [["TWG-01", 153], ["TWG-02", 154]] },
+  {
+    code: "TWG",
+    name: "Twillingate",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2024 EXISTING RADIAL SUPPLY",
+    circuitSource: { sourceId: "np-2025-gander-twillingate", pages: "physical PDF pp. 492 to 494" },
+    connectedCircuits: [
+      { circuit: "140L", from: "Summerford", from_code: "SUM", to: "Twillingate", to_code: "TWG" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER",
+    feederRegister: ["TWG-01", "TWG-02", "TWG-03"],
+    mapPages: [["TWG-01", 153], ["TWG-02", 154]],
+    eventLoads: [],
+    diagram: {
+      label: "2024 existing logical arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "TWG-T1", rating: "13.33 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "140L", destination: "Summerford", bus: "b1", destinationCode: "SUM" }]
+    },
+    engineeringRecord: {
+      date: "2012 FILED EQUIPMENT / 2013 PROJECT COMPLETION",
+      title: "Twillingate radial distribution station",
+      sourceId: "np-2013-twillingate",
+      pages: "physical PDF pp. 275 to 277",
+      facts: [
+        ["Station built", "1976 as a distribution substation"],
+        ["Transmission supply", "radial 140L from Summerford"],
+        ["TWG-T1 station report", "66/12.5 kV; 13.3 MVA"],
+        ["Distribution", "TWG-01, TWG-02, and TWG-03 at 12.5 kV; approximately 1,650 customers in the 2012 station report"],
+        ["2013 feeder work", "replace three hydraulic reclosers with remotely monitored and controlled Nulec reclosers"],
+        ["Transformer protection", "replace the deteriorated 66 kV air-break switch and silicon-carbide arresters"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 551",
+      facts: [
+        ["TWG-T1", "66/12.5 kV; 13.33 MVA; 9.24 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "Q3 2013 COMPLETION",
+        sourceId: "np-2013-q3-report",
+        pages: "physical PDF p. 767; attachment p. 56",
+        facts: [
+          ["Project status", "Newfoundland Power reported Twillingate Substation refurbishment and modernization construction complete"]
+        ]
+      },
+      {
+        label: "2023 TO 2024 WINTER VOLTAGE RECORD",
+        sourceId: "np-2025-gander-twillingate",
+        pages: "physical PDF pp. 497 to 498",
+        facts: [
+          ["Below 0.95 pu", "approximately 31% of the winter period"],
+          ["Below 0.90 pu", "6.5 hours"],
+          ["Recorded minimum", "0.873 pu on January 24, 2024, the seasonal peak day"]
+        ]
+      }
+    ]
+  },
   { code: "VIC", mapPages: [["VIC-02", 155]] },
   { code: "WAV", mapPages: [["WAV-01", 167]] },
   { code: "WES", mapPages: [["WES-01", 168], ["WES-02", 169]] }
