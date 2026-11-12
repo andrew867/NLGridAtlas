@@ -1039,6 +1039,23 @@ test("Grand Bay keeps its dated 12.5 kV arrangement separate from the latest fle
   assert.match(historyFacts, /replace eleven electromechanical relays with three digital relays/);
 });
 
+test("Port aux Basques separates the 2010 generator connection from current transformer records", () => {
+  const portAuxBasques = stationProfiles.find((station) => station.code === "PAB");
+  assert.ok(portAuxBasques);
+  assert.deepEqual(portAuxBasques.connectedCircuits.map(({ circuit }) => circuit), ["417L"]);
+  assert.deepEqual(portAuxBasques.feederRegister, ["PAB-03", "PAB-05"]);
+  assert.deepEqual(portAuxBasques.mapPages, [["PAB-03", 116], ["PAB-05", 117]]);
+  assert.deepEqual(portAuxBasques.diagram.transformers.map(({ label, rating }) => [label, rating]), [["PAB-T5", "13.33 MVA"], ["PAB-T3", "4 MVA"]]);
+  assert.deepEqual(portAuxBasques.diagram.generators.map(({ label, rating }) => [label, rating]), [["PAB DEG", "2.5 MW"]]);
+  const currentFacts = portAuxBasques.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = portAuxBasques.planningRecord.facts.flat().join(" ");
+  const historyFacts = portAuxBasques.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(currentFacts, /PAB-03 and PAB-05 at 12.5 kV/);
+  assert.match(planningFacts, /PAB-T3 66\/4.2 kV generation transformer; 4 MVA/);
+  assert.match(historyFacts, /PAB-T3 at 3 MVA connected the 2.5 MW diesel generator from 4.16 kV to 12.5 kV/);
+  assert.match(historyFacts, /automate the installed Nulec reclosers/);
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);

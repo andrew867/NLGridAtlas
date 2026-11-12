@@ -1400,6 +1400,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
   },
   {
+    id: "np-2011-port-aux-basques",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Port aux Basques Substation Refurbishment and Modernization",
+    topics: ["Port aux Basques", "PAB-T3", "PAB-T5", "PAB-03", "PAB-05", "417L", "diesel generation", "66 kV", "12.5 kV", "4.16 kV"],
+    pages: "physical PDF pp. 292 to 294",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2027-thermal-fleet-overview",
+    year: 2026,
+    organization: "Newfoundland Power / Stantec",
+    title: "Thermal Generation Fleet Review, Overview",
+    topics: ["Port aux Basques", "Grand Bay", "Greenhill", "Wesleyville", "diesel engine generator", "combustion turbine generator", "417L", "PAB-03", "PAB-05"],
+    pages: "physical PDF p. 89",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
     id: "np-2015-clarenville",
     year: 2014,
     organization: "Newfoundland Power",
@@ -3775,7 +3795,70 @@ const filedFeederMapProfiles = [
       }
     ]
   },
-  { code: "PAB", mapPages: [["PAB-03", 116], ["PAB-05", 117]] },
+  {
+    code: "PAB",
+    name: "Port aux Basques",
+    voltage: "66/12.5/4.2 kV current transformer record",
+    circuitRegisterLabel: "2025 CIRCUIT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+    connectedCircuits: [
+      { circuit: "417L", from: "Port aux Basques", from_code: "PAB", to: "Grand Bay", to_code: "GBS" }
+    ],
+    feederRegisterLabel: "2006 FEEDER REGISTER / 2026 THERMAL FLEET REVIEW",
+    feederRegister: ["PAB-03", "PAB-05"],
+    mapPages: [["PAB-03", 116], ["PAB-05", 117]],
+    eventLoads: [],
+    diagram: {
+      label: "2026 reported logical arrangement",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV distribution bus", voltage: "12.5 kV" }, { id: "b3", label: "4.2 kV generation bus", voltage: "4.2 kV" }],
+      transformers: [{ label: "PAB-T5", rating: "13.33 MVA", from: "b1", to: "b2" }, { label: "PAB-T3", rating: "4 MVA", from: "b1", to: "b3" }],
+      circuits: [{ label: "417L", destination: "Grand Bay", bus: "b1", destinationCode: "GBS" }],
+      generators: [{ label: "PAB DEG", rating: "2.5 MW", bus: "b3" }]
+    },
+    engineeringRecord: {
+      date: "2026 REPORTED GENERATION AND DISTRIBUTION CONNECTION",
+      title: "Port aux Basques distribution and diesel-generation station",
+      sourceId: "np-2027-thermal-fleet-overview",
+      pages: "physical PDF p. 89",
+      facts: [
+        ["Stationary generation", "2.5 MW diesel engine generator"],
+        ["Grid connection", "417L at 66 kV"],
+        ["Local distribution", "PAB-03 and PAB-05 at 12.5 kV"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 549 and 551",
+      facts: [
+        ["PAB-T5", "66/12.5 kV distribution transformer; 13.33 MVA; 8.53 MVA 2026 forecast"],
+        ["PAB-T3", "66/4.2 kV generation transformer; 4 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2010 FILED STATION ARRANGEMENT",
+        sourceId: "np-2011-port-aux-basques",
+        pages: "physical PDF p. 292",
+        facts: [
+          ["Station built", "1946"],
+          ["Distribution", "PAB-T5 at 13.3 MVA and four 12.5 kV outdoor feeders; approximately 1,400 customers"],
+          ["Generation connection", "PAB-T3 at 3 MVA connected the 2.5 MW diesel generator from 4.16 kV to 12.5 kV"],
+          ["Transmission", "one radial 66 kV circuit, 417L"]
+        ]
+      },
+      {
+        label: "2011 FILED MODERNIZATION",
+        sourceId: "np-2011-port-aux-basques",
+        pages: "physical PDF pp. 292 to 294",
+        facts: [
+          ["Site work", "replace the deteriorated retaining wall and fencing"],
+          ["Electrical work", "replace transformer lightning arresters and the 12.5 kV metering tank"],
+          ["Feeder control", "automate the installed Nulec reclosers for System Control Centre operation"]
+        ]
+      }
+    ]
+  },
   { code: "PAS", mapPages: [["PAS-01", 118]] },
   { code: "SCV", mapPages: [["SCV-01", 134]] },
   { code: "STX", mapPages: [["STX-01", 151]] },
