@@ -714,8 +714,8 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "PUB-NP-005, Substation Refurbishment and Modernization Project History",
-    topics: ["Stamp's Lane", "Springfield", "substation modernization", "completion", "transformer radiators", "protection", "SCADA", "circuit breaker"],
-    pages: "physical PDF p. 5",
+    topics: ["Botwood", "Carbonear", "Clarkes Pond", "Clarenville", "Gallants", "Gander", "Grand Falls", "Glovertown", "Heart's Content", "King's Bridge", "Kelligrews", "Lewisporte", "Oxen Pond", "Ridge Road", "Stamp's Lane", "Springfield", "substation modernization", "completion"],
+    pages: "physical PDF pp. 2 to 5",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/NP2027Capital/responses/PUB-NP-005.PDF"
   },
@@ -3739,7 +3739,18 @@ const filedFeederMapProfiles = [
         ["GFS-T3", "138/25 kV; 50 MVA; 30.45 MVA 2026 forecast"],
         ["GFS-T5", "66/4.2 kV; 11.17 MVA; 6.27 MVA 2026 forecast"]
       ]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2009 TO 2010 GRAND FALLS 4.16 KV YARD WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 4",
+        facts: [
+          ["Structures", "replaced deteriorated wood poles and changed the switchgear-building configuration"],
+          ["Electrical work", "installed lightning arresters, replaced relaying equipment, and added feeder automation"]
+        ]
+      }
+    ]
   },
   {
     code: "GLV",
@@ -3784,6 +3795,15 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2007 AND 2010 COMPLETED WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 4",
+        facts: [
+          ["2007", "replaced lightning arresters and the tap-changer controller; installed varmint protection and feeder automation"],
+          ["2010", "installed transformer protection"]
+        ]
+      },
       {
         label: "PRE-2022 RADIAL ARRANGEMENT",
         sourceId: "np-2022-glovertown",
@@ -4149,6 +4169,14 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2008 TO 2009 COMPLETED STATION WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 4",
+        facts: [
+          ["Completed work", "replaced a potential transformer, refurbished the control-building roof, and replaced lightning arresters and transformer power cables"]
+        ]
+      },
       {
         label: "2008 FILED STATION RECORD",
         sourceId: "np-2009-kelligrews",
@@ -5269,6 +5297,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2015 COMPLETED MODERNIZATION",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF pp. 3 to 4",
+        facts: [
+          ["Primary equipment", "replaced aging structures and switches; refurbished transformers and replaced the grounding transformer"],
+          ["Control systems", "constructed a control building and modernized protection, control, and communications equipment"]
+        ]
+      },
+      {
         label: "2026 TO 2027 PROPOSED 66 KV REMOVAL",
         sourceId: "np-2026-lewisporte-boyds-cove",
         pages: "physical PDF pp. 65 to 67",
@@ -5653,7 +5690,17 @@ export const stationProfiles = [
         ["CLK-T2", "66/12.5 kV; 10 MVA; 5.53 MVA 2026 forecast"]
       ]
     },
-    historyRecords: []
+    historyRecords: [
+      {
+        label: "2010 COMPLETED MODERNIZATION",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Control and communications", "replaced transformer tap-changer controllers and installed communications for remote monitoring and feeder automation"],
+          ["Site work", "upgraded foundations and varmint protection"]
+        ]
+      }
+    ]
   },
   {
     code: "WAL",
@@ -6359,6 +6406,14 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2015 COMPLETED MODERNIZATION",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Completed work", "replaced switches, constructed a control building, and modernized protection and control equipment"]
+        ]
+      },
+      {
         label: "2015 FILED MODERNIZATION SCOPE",
         sourceId: "np-2015-clarenville",
         pages: "physical PDF pp. 433 to 435",
@@ -6567,6 +6622,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2019 COMPLETED 138 KV CONVERSION",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF pp. 4 to 5",
+        facts: [
+          ["Conversion", "replaced the power transformer and converted the station from 66 kV to 138 kV"],
+          ["Station work", "installed bus structures and switching equipment; modernized protection, control, communications, and SCADA; constructed a control building and extended the grounding system"]
+        ]
+      },
       {
         label: "2018 SELECTED 138 KV CONVERSION",
         sourceId: "np-2019-central-system",
@@ -6782,7 +6846,17 @@ export const stationProfiles = [
       sourceId: "np-2025-ca-np-255",
       pages: "physical PDF p. 4",
       facts: [["OXP-01", "12.5 kV; OXP-T1; 12.7 MVA feeder planning capacity"]]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2008 TO 2009 COMPLETED STATION WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 5",
+        facts: [
+          ["Completed work", "replaced foundations and lightning arresters; upgraded feeder protection and feeder automation"]
+        ]
+      }
+    ]
   },
   {
     code: "KEN",
@@ -6934,7 +7008,25 @@ export const stationProfiles = [
       sourceId: "np-2025-ca-np-255",
       pages: "physical PDF p. 4",
       facts: [["KBR-T3/T4", "KBR-09, KBR-11, KBR-12 and KBR-13; 12.5 kV"]]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2008 TO 2009 COMPLETED STATION WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 4",
+        facts: [
+          ["Completed work", "replaced the switchgear building; constructed a control building; replaced cables; upgraded protection; refurbished feeder automation"]
+        ]
+      },
+      {
+        label: "2016 COMPLETED STATION WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 4",
+        facts: [
+          ["Completed work", "replaced switches and completed protection and automation upgrades"]
+        ]
+      }
+    ]
   },
   {
     code: "RRD",
@@ -6966,6 +7058,15 @@ export const stationProfiles = [
       facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2007 AND 2015 COMPLETED WORK",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 5",
+        facts: [
+          ["2007", "refurbished a structure foundation"],
+          ["2015", "installed a low-voltage bus-tie breaker; modernized protection, control, feeder automation, and communications; upgraded the grounding system"]
+        ]
+      },
       {
         label: "2016 PROPOSED VIR-07 LOAD TRANSFER",
         sourceId: "np-2016-feeder-growth",

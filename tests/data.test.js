@@ -652,7 +652,8 @@ test("Boyd's Cove and Gander retain the present corridor before the proposed 138
   assert.match(ganderFacts, /GAN-T1 138\/12\.5 kV; 20 MVA/);
   assert.match(ganderFacts, /three single-phase 69\/6\.9 kV, 1\.667 MVA transformers/);
   assert.match(gander.planningRecord.facts.flat().join(" "), /GAN-T3 66 kV grounding-transformer bank; 3\.5 MVA/);
-  assert.match(gander.historyRecords[0].facts.flat().join(" "), /remove the 66 kV system from Gander/);
+  const conversion = gander.historyRecords.find((record) => record.label === "2026 TO 2027 PROPOSED 66 KV REMOVAL");
+  assert.match(conversion.facts.flat().join(" "), /remove the 66 kV system from Gander/);
 });
 
 test("Blaketown combines documented circuits with the current transformer record", () => {
@@ -1221,6 +1222,34 @@ test("Kelligrews preserves its filed 12.47 kV arrangement and later register ent
   assert.match(historyFacts, /construct KEL-03.*477 ASC conductor/);
 });
 
+test("2026 refurbishment history records completed work at ten documented stations", () => {
+  const expected = {
+    GFS: /switchgear-building configuration.*feeder automation/,
+    GLV: /tap-changer controller.*transformer protection/,
+    KEL: /potential transformer.*transformer power cables/,
+    GAN: /grounding transformer.*control building/,
+    CLK: /tap-changer controllers.*remote monitoring/,
+    CLV: /constructed a control building.*protection and control/,
+    LEW: /converted the station from 66 kV to 138 kV/,
+    OXP: /foundations and lightning arresters.*feeder automation/,
+    KBR: /switchgear building.*feeder automation/,
+    RRD: /low-voltage bus-tie breaker.*grounding system/
+  };
+
+  for (const [code, pattern] of Object.entries(expected)) {
+    const profile = stationProfiles.find((station) => station.code === code);
+    const completed = profile.historyRecords
+      .filter((record) => record.sourceId === "np-2027-pub-np-005")
+      .flatMap((record) => record.facts)
+      .flat()
+      .join(" ");
+    assert.match(completed, pattern, `${code} completed-work record`);
+  }
+
+  const source = sources.find((item) => item.id === "np-2027-pub-np-005");
+  assert.equal(source.pages, "physical PDF pp. 2 to 5");
+});
+
 test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   const molloys = stationProfiles.find((station) => station.code === "MOL");
   assert.ok(molloys);
@@ -1376,7 +1405,8 @@ test("2016 feeder growth records retain proposed currents, transfers, and route 
   const source = sources.find((item) => item.id === "np-2016-feeder-growth");
 
   assert.equal(source.status, "proposed");
-  assert.match(ridgeRoad.historyRecords[0].facts.flat().join(" "), /3 MVA from VIR-07/);
+  const rrd2016 = ridgeRoad.historyRecords.find((record) => record.label === "2016 PROPOSED VIR-07 LOAD TRANSFER");
+  assert.match(rrd2016.facts.flat().join(" "), /3 MVA from VIR-07/);
   assert.equal(ridgeRoad.referenceSheets[0].image, "./reference-maps/rrd-10-2016-upgrade.jpg");
   assert.match(virginiaWaters.historyRecords[1].facts.flat().join(" "), /602 A per phase.*590 A per-phase planning rating/);
   assert.match(virginiaWaters.historyRecords[1].facts.flat().join(" "), /3\.2 MVA to proposed PUL-05/);
