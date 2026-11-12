@@ -235,7 +235,7 @@ test("network links use registered circuit endpoints and page anchors", async ()
   assert.match(html, /data-hydro-terminal-record="CBC"/);
   assert.match(html, /TL203[\s\S]*SUNNYSIDE/);
   assert.match(html, /TL237[\s\S]*COME BY CHANCE/);
-  assert.match(html, /TL208[\s\S]*LONG HARBOUR/);
+  assert.match(html, /TL208[\s\S]*VOISEY'S BAY[\s\S]*NICKEL/);
   assert.ok(html.indexOf('id="terminal-hrd"') < html.indexOf('id="substations"'));
   assert.match(html, /59L \/ VIRGINIA WATERS/);
   assert.match(html, /PUL-T1[\s\S]*PUL-T2[\s\S]*PUL-05/);
@@ -403,7 +403,7 @@ test("CA-NP-020 feeder sheets preserve the complete filed page sequence", () => 
 
 test("island terminal records retain page-level sources", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
-  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "MAS", "STV", "CBC", "SDP", "USL", "GRC", "CAT", "HLA"]);
+  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "MAS", "STV", "CBC", "VBN", "SDP", "USL", "GRC", "CAT", "HLA"]);
   for (const record of islandTerminalRecords) {
     assert.ok(allowedStates.has(record.status));
     assert.ok(record.facts.length > 0);
@@ -426,6 +426,7 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   const masseyDrive = islandTerminalRecords.find((record) => record.code === "MAS");
   const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
   const comeByChance = islandTerminalRecords.find((record) => record.code === "CBC");
+  const voiseysBayNickel = islandTerminalRecords.find((record) => record.code === "VBN");
   const soldiersPond = islandTerminalRecords.find((record) => record.code === "SDP");
 
   assert.match(stonyBrook.facts.flat().join(" "), /75\/100\/125 MVA each in the 2003 system report/);
@@ -438,6 +439,8 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   assert.match(buchans.facts.flat().join(" "), /Massey Drive in 1970.*Buchans in 1998/);
   assert.match(bayDEspoir.facts.flat().join(" "), /T10 and T12, 230\/69 kV, 15\/20\/25 MVA each/);
   assert.match(bayDEspoir.facts.flat().join(" "), /T7, 230\/13\.8 kV, 129\/172 MVA/);
+  assert.match(voiseysBayNickel.facts.flat().join(" "), /TL208 to Western Avalon/);
+  assert.match(voiseysBayNickel.facts.flat().join(" "), /Long Harbour predecessor.*removed from service/);
   assert.deepEqual(bayDEspoir.diagram.transformers, [
     { label: "T10", rating: "15/20/25 MVA", from: "b1", to: "b2" },
     { label: "T12", rating: "15/20/25 MVA", from: "b1", to: "b2" }
@@ -1063,6 +1066,7 @@ test("documented circuit links open the available other-end record", async () =>
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(html, /data-hydro-terminal-record="CBC" aria-label="TL237 to Come By Chance"/);
   assert.match(html, /data-hydro-terminal-record="SUN" aria-label="TL203 to Sunnyside"/);
+  assert.match(html, /data-hydro-terminal-record="VBN" aria-label="TL208 to Voisey's Bay Nickel terminal"/);
   assert.match(html, /href="#substation-sla" aria-label="31L to Stamp's Lane"/);
   assert.match(html, /href="#substation-sla" aria-label="70L to Stamp's Lane"/);
   assert.match(html, /href="#substation-sla" aria-label="14L to Stamp's Lane Substation"/);

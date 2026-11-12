@@ -1,6 +1,6 @@
 # NL Grid Atlas project status
 
-Updated: 2026-11-11
+Updated: 2026-11-12
 
 ## Repository and hosting
 
@@ -72,10 +72,15 @@ Updated: 2026-11-11
 - Added a complete digest manifest for the 66 committed evidence PDFs, including the eight catalog records that previously lacked pinned hashes.
 - Defined the external archive snapshot as immutable SHA-256 objects plus mirror path indexes. Current PUB, NL Hydro, and Newfoundland Power mirror counts and control-file hashes are recorded.
 - Reconciled the original TOD Access table with its text export. Row counts, recorder IDs, per-recorder counts, primary keys, dates, and zero-value counts match. The export rounds the maximum Access value from 30966.601 to 30966.60.
+- Corrected TL208's current eastern endpoint from the retired Long Harbour terminal to the Voisey's Bay Nickel terminal. The new terminal entered service in 2012 after TL208 was extended; the historical Long Harbour equipment remains in the source record.
+- Added the 2022 Holyrood condition-study transformer inventory, including the three generator transformers, three excitation transformers, three unit-service transformers, and two station-service transformers.
+- Added the July 2026 Unit 3 operating record: 0 generating hours and 697 synchronous-condensing hours.
+- Separated the 2012 Muskrat Falls three-unit conversion concept from later Holyrood backup, life-extension, and post-steam planning records.
+- Deferred publication of the external archive snapshot at the user's request.
 
 ## Active work
 
-1. Select storage and publish the external archive snapshot, `REL-005`.
+1. Continue the latest-supported Holyrood arrangement search, including Muskrat Falls, Labrador-Island Link, condition, reliability, capital, annual, and financial filings, `GEN-001`.
 
 Phase 4 geography is complete for the sources located to date. Current AC circuit-to-route matching remains deferred because the available island route layer has no utility circuit designations.
 
@@ -87,8 +92,8 @@ The structured and interactive 2018 layer contains all 58 Hydro circuit designat
 
 The detailed-station pass is complete for the public evidence located to date. Remaining work is not another register-based drawing. It requires protection or operating one-lines that assign feeders to transformer banks and bus sections, especially at Hardwoods, Glendale, Ridge Road, and Stamp's Lane.
 
-Direct circuit navigation is complete where the opposite endpoint has a detailed diagram or station record. TL208 remains labelled to Long Harbour without a destination record.
+Direct circuit navigation is complete where the opposite endpoint has a detailed diagram or station record. TL208 now opens the Voisey's Bay Nickel record; Long Harbour is retained as the retired historical predecessor.
 
 ## Open release gates
 
-- The full external mirror snapshot is not public. The repository's 66 pinned evidence PDFs are public and independently verified.
+- The full external mirror snapshot is not public. Publication is deferred; the repository's 66 pinned evidence PDFs remain public and independently verified.

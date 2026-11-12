@@ -820,6 +820,86 @@ export const sources = [
     url: "https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf"
   },
   {
+    id: "nlh-2013-system-changes",
+    year: 2013,
+    organization: "NL Hydro",
+    title: "NP-NLH-131, Major Island Interconnected System Changes",
+    topics: ["TL208", "Long Harbour", "Voisey's Bay Nickel", "Western Avalon", "terminal retirement", "Vale"],
+    pages: "physical PDF p. 4",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/NP-NLH-131.PDF"
+  },
+  {
+    id: "nlh-2013-specific-assets",
+    year: 2013,
+    organization: "NL Hydro",
+    title: "IC-NLH-101, Specifically Assigned Transmission Assets",
+    topics: ["TL208", "Long Harbour", "Voisey's Bay Nickel", "230/13.8 kV", "230/46 kV", "capacitor bank"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/IC-NLH-101.PDF"
+  },
+  {
+    id: "mhi-nalcor-11",
+    year: 2012,
+    organization: "Manitoba Hydro International / Nalcor Energy",
+    title: "MHI-Nalcor-11, Holyrood Retirement and Synchronous-Condenser Conversion",
+    topics: ["Muskrat Falls", "Holyrood", "synchronous condenser", "conversion cost", "retirement plan"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-11.pdf"
+  },
+  {
+    id: "mhi-nalcor-17",
+    year: 2012,
+    organization: "Manitoba Hydro International / Nalcor Energy",
+    title: "MHI-Nalcor-17, Holyrood Conversion Timing",
+    topics: ["Muskrat Falls", "Holyrood", "synchronous condenser", "Soldiers Pond", "conversion schedule"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-17.pdf"
+  },
+  {
+    id: "nlh-2020-holyrood-backup",
+    year: 2020,
+    organization: "NL Hydro / Wood",
+    title: "Assessment of Holyrood as a Backup Facility",
+    topics: ["Holyrood", "Unit 3", "synchronous condenser", "hydrogen purge", "conversion time", "backup generation"],
+    pages: "physical PDF pp. 3 and 24 to 26",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Assessment%20of%20Options%20to%20Improve%20Holyrood%20Thermal%20Generating%20Station%27s%20Suitability%20as%20a%20Backup%20Facility%20-%202020-09-30.PDF"
+  },
+  {
+    id: "nlh-2022-holyrood-condition",
+    year: 2022,
+    organization: "NL Hydro / Hatch",
+    title: "Holyrood Condition Assessment and Life Extension Study",
+    topics: ["Holyrood", "generator transformers", "unit service transformers", "station service transformers", "condition assessment"],
+    pages: "physical PDF pp. 55, 62, 69, 77 to 78, 90 to 91 and 648",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Assessment%20to%20Determine%20the%20Potential%20Long-Term%20Viability%20of%20the%20Holyrood%20Thermal%20Generating%20Station%20-%202022-03-31.PDF"
+  },
+  {
+    id: "nlh-2026-holyrood-overview",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "2026 Capital Budget Application, Holyrood Overview",
+    topics: ["Holyrood", "post-steam", "Unit 3", "synchronous condenser", "Bridging Period"],
+    pages: "physical PDF p. 170; report p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2026Capital/app/From%20NLH%20-%202026%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202025-07-15.PDF"
+  },
+  {
+    id: "nlh-2026-july-energy",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Energy Supply Monthly Report, July 2026",
+    topics: ["Holyrood", "Unit 3", "synchronous condenser", "operating hours", "annual outage"],
+    pages: "physical PDF p. 10; report p. 7",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/20152019energysupply/From%20NLH%20-%20Energy%20Supply%20Monthly%20Report%20-%20July%202026%20-%202026-08-17.PDF"
+  },
+  {
     id: "labrador-2017",
     year: 2017,
     organization: "NL Hydro",
@@ -1204,7 +1284,8 @@ export const staticClaims = [
     sources: [
       { sourceId: "nlh-2011-western-avalon", pages: "PDF p. 7" },
       { sourceId: "gra-2013-v2", pages: "physical PDF p. 80" },
-      { sourceId: "oxen-2013", pages: "physical PDF p. 15" }
+      { sourceId: "oxen-2013", pages: "physical PDF p. 15" },
+      { sourceId: "nlh-2013-system-changes", pages: "physical PDF p. 4" }
     ]
   },
   {
@@ -1242,7 +1323,8 @@ export const staticClaims = [
     sources: [
       { sourceId: "nlh-2011-western-avalon", pages: "PDF p. 7" },
       { sourceId: "np-2027-loop-study", pages: "PDF pp. 194 to 195" },
-      { sourceId: "nlh-2014-wav-t5", pages: "PDF pp. 12, 17 and 19 to 20" }
+      { sourceId: "nlh-2014-wav-t5", pages: "PDF pp. 12, 17 and 19 to 20" },
+      { sourceId: "nlh-2013-specific-assets", pages: "physical PDF pp. 1 to 2" }
     ]
   },
   {
@@ -1252,7 +1334,9 @@ export const staticClaims = [
     sources: [
       { sourceId: "gra-2013-v2", pages: "physical PDF p. 663" },
       { sourceId: "nlh-2022-holyrood-t2", pages: "PDF pp. 5 to 13" },
-      { sourceId: "nlh-2024-rra", pages: "physical PDF pp. 100 and 182" }
+      { sourceId: "nlh-2022-holyrood-condition", pages: "physical PDF pp. 77 and 90 to 91" },
+      { sourceId: "nlh-2024-rra", pages: "physical PDF pp. 100 and 182" },
+      { sourceId: "nlh-2026-july-energy", pages: "physical PDF p. 10" }
     ]
   },
   {
@@ -1263,7 +1347,11 @@ export const staticClaims = [
       { sourceId: "nlh-2020-holyrood-unit3", pages: "physical PDF pp. 135 to 138" },
       { sourceId: "nlh-2021-capex", pages: "physical PDF p. 71" },
       { sourceId: "nlh-2022-april-energy", pages: "physical PDF pp. 7 to 8" },
-      { sourceId: "nlh-2024-rra", pages: "physical PDF pp. 100 and 182" }
+      { sourceId: "nlh-2020-holyrood-backup", pages: "physical PDF pp. 3 and 24" },
+      { sourceId: "nlh-2022-holyrood-condition", pages: "physical PDF pp. 69 and 648" },
+      { sourceId: "nlh-2024-rra", pages: "physical PDF pp. 100 and 182" },
+      { sourceId: "nlh-2026-holyrood-overview", pages: "physical PDF p. 170" },
+      { sourceId: "nlh-2026-july-energy", pages: "physical PDF p. 10" }
     ]
   },
   {
@@ -1586,6 +1674,15 @@ export const timeline = [
     status: "unresolved"
   },
   {
+    date: "2012",
+    category: "station",
+    title: "Muskrat plan anticipated two more Holyrood conversions",
+    body: "Nalcor reported that no specific schedule had been prepared, but anticipated converting Units 1 and 2 to synchronous condensers before commissioning the Soldiers Pond converter.",
+    sourceId: "mhi-nalcor-17",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
     date: "2013 to 2014",
     category: "station",
     title: "12L rebuilt between Memorial and King's Bridge",
@@ -1737,6 +1834,15 @@ export const timeline = [
     sourceId: "nlh-2026-wav-sop",
     pages: "PDF pp. 9, 30 to 33, 41 and 60",
     status: "proposed"
+  },
+  {
+    date: "2026-07",
+    category: "station",
+    title: "Holyrood Unit 3 operated as a synchronous condenser",
+    body: "The July report records no generating hours and 697 synchronous-condensing hours for Unit 3.",
+    sourceId: "nlh-2026-july-energy",
+    pages: "physical PDF p. 10; report p. 7",
+    status: "verified"
   },
   {
     date: "2030",
@@ -1891,33 +1997,33 @@ export const components = {
   },
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
-    summary: "The December 2012 drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. T8 was replaced in 2014 and T7 replacement work finished in 2024.",
-    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Gas turbine", "15 MW through T9"], ["Unit 3", "Reversible generator and synchronous condenser"], ["T8 replacement", "2014"], ["T7 replacement completed", "2024"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138")]
+    summary: "The December 2012 drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. The 2022 condition study confirms the transformer inventory, including the unit-service and station-service banks. T8 was replaced in 2014 and T7 replacement work finished in 2024.",
+    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["Gas turbine", "15 MW through T9"], ["Unit 3", "Reversible generator and synchronous condenser"], ["T8 replacement", "2014"], ["T7 replacement completed", "2024"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138")]
   },
   "hrd-t1": {
     diagram: "hrd", status: "verified", code: "HRD / T1", title: "Holyrood generator transformer T1",
-    summary: "The 2012 drawing gives a 105/140/180 MVA, 230/16 kV generator transformer. The spare-transformer filing records a 1978 manufacture date.",
-    data: [["Rating", "105/140/180 MVA, OFAF"], ["Voltage", "230,000/16,000 V"], ["Vector", "Yd1"], ["Impedance", "Z1 13.6%, Z0 11.7%"], ["Manufactured", "1978"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14")]
+    summary: "The 2022 condition study identifies T1 as a 1978 Trafo-Union 105/140/180 MVA, 230/16 kV generator transformer.",
+    data: [["Manufacturer", "Trafo-Union"], ["Rating", "105/140/180 MVA, ONAN/ONAF/OFAF"], ["Voltage", "230,000/16,000 V"], ["Vector", "Yd1"], ["Impedance", "Z1 13.6%, Z0 11.7%"], ["Manufactured", "1978"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2022-holyrood-condition", "physical PDF p. 90"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14")]
   },
   "hrd-t2": {
     diagram: "hrd", status: "verified", code: "HRD / T2", title: "Holyrood generator transformer T2",
-    summary: "The 1989 Federal Pioneer T2 failed internally in November 2021. Its 1970 Canadian General Electric predecessor returned to service on January 13, 2022.",
-    data: [["Failed unit", "115/152/190 MVA, 230/16 kV"], ["Replacement nameplate", "170 MVA, 230/16 kV, wye/delta"], ["Available cooling", "Four of five cooler motors, approximately 150 MVA"], ["Returned", "January 13, 2022"]],
-    sources: [sourceRef("nlh-2022-holyrood-t2", "PDF pp. 5 to 8 and 13"), sourceRef("gra-2013-v2", "physical PDF p. 663")]
+    summary: "The 1989 Federal Pioneer T2 failed internally in November 2021. Hydro installed its 1970 General Electric spare T4 in the T2 position and returned it to service on January 13, 2022.",
+    data: [["Failed unit", "115/152/190 MVA, 230/16 kV"], ["Installed spare T4", "115/152/170 MVA, 230/16 kV, star-delta"], ["Available cooling", "Four of five cooler motors, approximately 150 MVA"], ["Returned", "January 13, 2022"]],
+    sources: [sourceRef("nlh-2022-holyrood-t2", "PDF pp. 5 to 8 and 13"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90"), sourceRef("gra-2013-v2", "physical PDF p. 663")]
   },
   "hrd-t3": {
     diagram: "hrd", status: "verified", code: "HRD / T3", title: "Holyrood generator transformer T3",
-    summary: "The drawing gives a 170 MVA, 230/16 kV generator transformer. The spare-transformer filing records a 1969 manufacture date.",
-    data: [["Rating", "170 MVA, OFAF"], ["Voltage", "230,000/16,000 V"], ["Vector", "Yd1"], ["Impedance", "Z1 13.5%"], ["Manufactured", "1969"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14")]
+    summary: "The 2022 condition study identifies T3 as a 1969 General Electric 170 MVA, 230/16 kV generator transformer.",
+    data: [["Manufacturer", "General Electric"], ["Rating", "170 MVA, OFAF"], ["Voltage", "230,000/16,000 V"], ["Vector", "Yd1"], ["Impedance", "Z1 13.5%"], ["Manufactured", "1969"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2022-holyrood-condition", "physical PDF p. 90"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14")]
   },
   "hrd-g3": {
     diagram: "hrd", status: "verified", code: "HRD / UNIT 3", title: "Holyrood Unit 3 generator",
-    summary: "Unit 3 has had reversible synchronous-condenser capability since 1986. The generator is decoupled from the steam turbine and started by a pony motor through an SSS clutch. Permanent synchronous-condensing operation remains a spring 2030 planning case.",
-    data: [["Generator", "185 MVA, 0.85 power factor"], ["Stator", "16 kV, hydrogen cooled"], ["Rotor", "3,600 rpm"], ["Synchronous condenser", "Approximately 70 MVAR in the 2020 filing"], ["Starting system", "Pony motor and SSS clutch"], ["2016 work", "Rotor rewind"], ["2021 actual expenditure", "$7.2857 million for the stator-rewind project"], ["April 2022 operation", "373 hours as a synchronous condenser"], ["Spring 2030 planning case", "Permanent synchronous-condensing operation"]],
-    sources: [sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2021-capex", "physical PDF p. 71"), sourceRef("nlh-2022-april-energy", "physical PDF pp. 7 to 8"), sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182")]
+    summary: "Unit 3 has had reversible synchronous-condenser capability since 1986. In July 2026 it recorded no generating hours and 697 synchronous-condensing hours. Permanent post-steam operation remains a planning assumption under review, not a completed conversion.",
+    data: [["Generator", "185 MVA, 0.85 power factor"], ["Stator", "16 kV, hydrogen cooled"], ["Rotor", "3,600 rpm"], ["Synchronous condenser", "Approximately 70 MVAR in the 2020 filing"], ["Starting system", "Pony motor and SSS clutch"], ["2020 return to generation", "Filed procedure took five to seven days, including H2, CO2, and air purges"], ["Wood proposal", "Retain H2 and recouple in three 10-hour days; presented as a recommendation"], ["2016 work", "Rotor rewind"], ["2021 actual expenditure", "$7.2857 million for the stator-rewind project"], ["April 2022 operation", "373 hours as a synchronous condenser"], ["2024 planning case", "Spring 2030 permanent synchronous-condensing operation"], ["July 2026 operation", "0 generating hours; 697 synchronous-condensing hours"], ["Post-steam role", "Unit 3 retention is a planning assumption under RRA review"]],
+    sources: [sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2020-holyrood-backup", "physical PDF pp. 3 and 24"), sourceRef("nlh-2021-capex", "physical PDF p. 71"), sourceRef("nlh-2022-april-energy", "physical PDF pp. 7 to 8"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 69 and 648"), sourceRef("nlh-2026-holyrood-overview", "physical PDF p. 170"), sourceRef("nlh-2026-july-energy", "physical PDF p. 10")]
   },
   "hrd-t6": {
     diagram: "hrd", status: "verified", code: "HRD / T6", title: "Holyrood transformer T6",
@@ -2684,6 +2790,19 @@ export const islandTerminalRecords = [
       shunts: [{ label: "C1", rating: "38.35 MVAR", bus: "b1" }, { label: "C2", rating: "38.35 MVAR", bus: "b1" }, { label: "C3", rating: "38.35 MVAR", bus: "b1" }, { label: "C4", rating: "38.35 MVAR", bus: "b1" }]
     },
     sources: [sourceRef("nlh-cbc-facility-review-2014", "physical PDF pp. 54 to 56"), sourceRef("nlh-braya-ciac-2023", "physical PDF pp. 4 to 7"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-cbc-2013", "PDF p. 1"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+  },
+  {
+    code: "VBN",
+    name: "Voisey's Bay Nickel Terminal Station",
+    status: "verified",
+    facts: [["Added", "2012"], ["Transformation", "230/13.8 kV terminal station at the Vale site"], ["230 kV circuit", "TL208 to Western Avalon"], ["Asset assignment", "Specifically assigned to Vale in the 2013 GRA"], ["Long Harbour predecessor", "The 230/46 kV terminal, its 50/66.7/83.3 MVA T1, and its 24 MVAR capacitor bank were removed from service"]],
+    diagram: {
+      label: "2012 terminal addition / filed TL208 route",
+      buses: [{ id: "b1", label: "terminal bus", voltage: "230 kV" }, { id: "b2", label: "customer interface", voltage: "13.8 kV" }],
+      transformers: [{ label: "Customer supply", rating: "230/13.8 kV", from: "b1", to: "b2" }],
+      circuits: [{ label: "TL208", destination: "Western Avalon", bus: "b1" }]
+    },
+    sources: [sourceRef("nlh-2013-system-changes", "physical PDF p. 4"), sourceRef("nlh-2013-specific-assets", "physical PDF pp. 1 to 2"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
   },
   {
     code: "SDP",

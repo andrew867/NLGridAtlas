@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "status_values": ["not_started", "in_progress", "blocked", "done", "deferred"],
   "priority_values": ["P0", "P1", "P2", "P3"],
   "phase_values": [0, 1, 2, 3, 4, 5],
@@ -259,7 +259,7 @@
         "tests/data.test.js"
       ],
       "blocker": null,
-      "notes": "TL203 and TL237 open the Sunnyside and Come By Chance terminal records. The 66 kV station links open the detailed diagram where one exists, otherwise they open the station record. Map-point selection remains in place and does not scroll the page. TL208 still identifies Long Harbour on the terminal schematic because no destination record exists yet."
+      "notes": "TL203 and TL237 open the Sunnyside and Come By Chance terminal records. TL208 opens the Voisey's Bay Nickel terminal record; the 2013 GRA establishes that Long Harbour was removed from service and TL208 was extended in 2012. The 66 kV station links open the detailed diagram where one exists, otherwise they open the station record. Map-point selection remains in place and does not scroll the page."
     },
     {
       "id": "QA-001",
@@ -362,12 +362,12 @@
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,
       "priority": "P0",
-      "status": "deferred",
+      "status": "in_progress",
       "scope": "Search for drawings later than the December 2012 demolition drawing and publish a separately dated arrangement.",
       "dependencies": ["ARC-001", "ARC-002"],
-      "completion_evidence": ["src/data.js", "research/ISLAND_TRANSFORMER_LEDGER.md"],
+      "completion_evidence": ["src/data.js", "research/ISLAND_TRANSFORMER_LEDGER.md", "research/HOLYROOD_MUSKRAT_RECORD.md"],
       "blocker": null,
-      "notes": "The current site diagram remains explicitly dated as December 2012. A 2016 capital appendix contains Holyrood sheet B, revision 17, dated 2014-12-18, but not the full station drawing set. Later records establish the 2014 T8 replacement and the 2024 completion of the T7 replacement. A targeted search of the 2020 to 2026 archive found planning loop diagrams and transformer tables, but no current complete station one-line. The current arrangement remains deferred rather than reconstructed."
+      "notes": "Research resumed on 2026-11-12. The current site diagram remains explicitly dated as December 2012. The 2022 condition study establishes the later generator, excitation, unit-service, and station-service transformer inventory. The July 2026 operating report confirms continuing Unit 3 synchronous-condenser operation. Muskrat Falls RFIs document an earlier three-unit conversion concept that was not implemented as filed. No current complete station one-line has been located, so the atlas does not reconstruct breaker positions."
     },
     {
       "id": "GEN-002",
@@ -572,12 +572,12 @@
       "title": "Publish the external archive snapshot",
       "phase": 5,
       "priority": "P2",
-      "status": "not_started",
+      "status": "deferred",
       "scope": "Select public object storage, publish the content-addressed PUB, NL Hydro, and Newfoundland Power mirror objects and path indexes, then prove a clean restore without contacting the source sites.",
       "dependencies": ["REL-002"],
       "completion_evidence": [],
-      "blocker": "No public object-store destination has been selected for approximately 49.7 GB of local mirror files.",
-      "notes": "Do not put the raw mirrors in the Git repository. A restore passes only when all objects verify and the restored audit counts match research/external-archive-manifest.json."
+      "blocker": null,
+      "notes": "Deferred by the user on 2026-11-12. Do not put the raw mirrors in the Git repository. When publication resumes, a restore passes only when all objects verify and the restored audit counts match research/external-archive-manifest.json."
     }
   ]
 }
