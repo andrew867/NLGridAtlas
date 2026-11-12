@@ -21,6 +21,18 @@ The full layer contains 671 features. The island selection contains 588 features
 
 Generated file: `research/derived/gnl-canvec-newfoundland-transmission-lines.geojson`
 
+## L3501 route
+
+GeoAtlas's Nalcor Transmission Line layer 15 publishes four features with `TL_ID` values 3101, 3102, and 3501:
+
+`https://dnrmaps.gov.nl.ca/arcgis/rest/services/GeoAtlas/Map_Layers/MapServer/15`
+
+One `TL_ID` 3501 feature intersects the Newfoundland island selection envelope. The atlas draws that feature separately from the historical Canvec routes.
+
+The layer has no voltage field and no separate L3502 geometry. It does not support assigning circuit numbers to the historical AC routes.
+
+Generated file: `research/derived/gnl-nalcor-l3501-route.geojson`
+
 ## Station coordinates
 
 The station register uses published OpenStreetMap station-boundary ways. The build script calculates a polygon centroid from each boundary's nodes. The coordinates are for map placement. They do not establish circuit topology, equipment ownership, voltage, or operating state.
@@ -56,4 +68,4 @@ Generated file: `research/derived/station-coordinate-register.json`
 
 ## Rebuild
 
-Run `npm run build:geodata`. The script downloads the two source datasets and rewrites both derived files. A failed or missing station boundary stops the build instead of substituting an estimated coordinate.
+Run `npm run build:geodata`. The script downloads the three source datasets and rewrites all three derived files. A failed or missing station boundary stops the build instead of substituting an estimated coordinate.

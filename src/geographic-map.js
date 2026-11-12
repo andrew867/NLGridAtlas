@@ -1,7 +1,9 @@
 import routesUrl from "../research/derived/gnl-canvec-newfoundland-transmission-lines.geojson?url";
+import l3501Url from "../research/derived/gnl-nalcor-l3501-route.geojson?url";
 import stationRegister from "../research/derived/station-coordinate-register.json" with { type: "json" };
 
 let routes;
+let l3501Routes;
 
 const islandBounds = { west: -59.7, south: 46.45, east: -52.4, north: 51.0 };
 const avalonBounds = { west: -54.0, south: 47.25, east: -52.55, north: 47.75 };
@@ -92,8 +94,8 @@ function project([longitude, latitude], bounds, width, height, padding) {
   ];
 }
 
-function routePaths(bounds, width, height, className) {
-  return routes.features.flatMap((feature) => geometryLines(feature.geometry)
+function routePaths(dataset, bounds, width, height, className) {
+  return dataset.features.flatMap((feature) => geometryLines(feature.geometry)
     .filter((line) => intersectsBounds(line, bounds))
     .map((line) => {
       const points = line.map((point) => project(point, bounds, width, height, 26));
@@ -183,10 +185,12 @@ function initialDetail() {
     <dl>
       <div><dt>Route features</dt><dd>${routes.selection.selectedFeatureCount}</dd></div>
       <div><dt>Route validation</dt><dd>${routes.selection.validationDateRange.join(" to ")}</dd></div>
+      <div><dt>L3501 GIS route</dt><dd>${l3501Routes.selection.selectedFeatureCount}</dd></div>
       <div><dt>Coordinates</dt><dd>WGS 84</dd></div>
     </dl>
     <p>Select a station for its coordinate and source object.</p>
-    <a class="evidence-link" href="${escapeHtml(routes.source.url)}" target="_blank" rel="noreferrer">Government of Newfoundland and Labrador GeoAtlas / layer 16</a>`;
+    <a class="evidence-link" href="${escapeHtml(routes.source.url)}" target="_blank" rel="noreferrer">Government of Newfoundland and Labrador GeoAtlas / layer 16</a>
+    <a class="evidence-link" href="${escapeHtml(l3501Routes.source.url)}" target="_blank" rel="noreferrer">Government of Newfoundland and Labrador GeoAtlas / L3501 layer 15</a>`;
 }
 
 export async function initGeographicMap() {
@@ -195,19 +199,22 @@ export async function initGeographicMap() {
   const detail = document.querySelector("#geographic-map-detail");
   if (!island || !avalon || !detail) return;
 
-  const response = await fetch(routesUrl);
-  if (!response.ok) {
+  const [response, l3501Response] = await Promise.all([fetch(routesUrl), fetch(l3501Url)]);
+  if (!response.ok || !l3501Response.ok) {
     detail.textContent = "Geographic route data could not be loaded.";
     return;
   }
   routes = await response.json();
+  l3501Routes = await l3501Response.json();
 
   island.insertAdjacentHTML("beforeend", `
-    <g class="geographic-routes">${routePaths(islandBounds, 780, 760, "geographic-route")}</g>
+    <g class="geographic-routes">${routePaths(routes, islandBounds, 780, 760, "geographic-route")}</g>
+    <g class="geographic-hvdc-routes">${routePaths(l3501Routes, islandBounds, 780, 760, "geographic-hvdc-route")}</g>
     <g class="geographic-stations">${stationPoints(islandBounds, 780, 760, false)}</g>`);
   avalon.insertAdjacentHTML("beforeend", `
     <g class="geographic-grid" aria-hidden="true"><path d="M70 30V590M210 30V590M350 30V590M490 30V590M630 30V590M30 120H690M30 260H690M30 400H690M30 540H690"></path></g>
-    <g class="geographic-routes">${routePaths(avalonBounds, 720, 620, "geographic-route")}</g>
+    <g class="geographic-routes">${routePaths(routes, avalonBounds, 720, 620, "geographic-route")}</g>
+    <g class="geographic-hvdc-routes">${routePaths(l3501Routes, avalonBounds, 720, 620, "geographic-hvdc-route")}</g>
     <g class="geographic-stations">${stationPoints(avalonBounds, 720, 620, true)}</g>`);
   detail.innerHTML = initialDetail();
 

@@ -10,6 +10,10 @@ const stations = JSON.parse(await readFile(
   new URL("../research/derived/station-coordinate-register.json", import.meta.url),
   "utf8"
 ));
+const l3501 = JSON.parse(await readFile(
+  new URL("../research/derived/gnl-nalcor-l3501-route.geojson", import.meta.url),
+  "utf8"
+));
 
 function coordinatePairs(geometry) {
   const pairs = [];
@@ -48,6 +52,24 @@ test("route export contains only finite line geometry inside the island selectio
       assert.ok(Number.isFinite(latitude));
     }
   }
+});
+
+test("GeoAtlas retains the published L3501 geographic route", () => {
+  assert.equal(l3501.type, "FeatureCollection");
+  assert.equal(l3501.source.layer, "Nalcor Transmission Line, MapServer layer 15");
+  assert.equal(l3501.source.url, "https://dnrmaps.gov.nl.ca/arcgis/rest/services/GeoAtlas/Map_Layers/MapServer/15");
+  assert.equal(l3501.selection.fullLayerFeatureCount, 4);
+  assert.equal(l3501.selection.selectedFeatureCount, 1);
+  assert.equal(l3501.features.length, 1);
+  assert.equal(String(l3501.features[0].properties.TL_ID), "3501");
+  const pairs = coordinatePairs(l3501.features[0].geometry);
+  assert.ok(pairs.some(([longitude, latitude]) => (
+    longitude >= l3501.selection.envelopeWgs84.west
+    && longitude <= l3501.selection.envelopeWgs84.east
+    && latitude >= l3501.selection.envelopeWgs84.south
+    && latitude <= l3501.selection.envelopeWgs84.north
+  )));
+  assert.ok(l3501.limits.some((limit) => /does not contain.*L3502/.test(limit)));
 });
 
 test("station coordinate register contains the 22 checked station boundaries", () => {

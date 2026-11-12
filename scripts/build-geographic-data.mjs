@@ -7,6 +7,8 @@ const RETRIEVED = "2026-11-11";
 
 const CANVEC_LAYER = "https://dnrmaps.gov.nl.ca/arcgis/rest/services/GeoAtlas/Map_Layers/MapServer/16";
 const CANVEC_QUERY = `${CANVEC_LAYER}/query`;
+const NALCOR_LAYER = "https://dnrmaps.gov.nl.ca/arcgis/rest/services/GeoAtlas/Map_Layers/MapServer/15";
+const NALCOR_QUERY = `${NALCOR_LAYER}/query`;
 const ISLAND_SELECTION_ENVELOPE = {
   west: -59.7,
   south: 46.45,
@@ -149,6 +151,49 @@ async function fetchCanvecRoutes() {
   };
 }
 
+async function fetchL3501Route() {
+  const query = new URLSearchParams({
+    where: "1=1",
+    outFields: "OBJECTID,Id,TL_ID,Shape_Length",
+    returnGeometry: "true",
+    outSR: "4326",
+    returnZ: "false",
+    returnM: "false",
+    f: "geojson"
+  });
+  const geojson = await fetchJson(`${NALCOR_QUERY}?${query}`, {
+    headers: { Referer: `${NALCOR_LAYER}/query` }
+  });
+  const features = geojson.features.filter((feature) => (
+    String(feature.properties.TL_ID) === "3501"
+    && intersectsSelectionEnvelope(feature)
+  ));
+  return {
+    type: "FeatureCollection",
+    source: {
+      publisher: "Government of Newfoundland and Labrador, GeoAtlas",
+      layer: "Nalcor Transmission Line, MapServer layer 15",
+      url: NALCOR_LAYER,
+      queryUrl: `${NALCOR_QUERY}?${query}`,
+      retrieved: RETRIEVED,
+      evidenceState: "reported"
+    },
+    selection: {
+      description: "TL_ID 3501 features that intersect the Newfoundland island selection envelope",
+      envelopeWgs84: ISLAND_SELECTION_ENVELOPE,
+      fullLayerFeatureCount: geojson.features.length,
+      selectedFeatureCount: features.length,
+      fullLayerCircuitIds: [...new Set(geojson.features.map((feature) => String(feature.properties.TL_ID)))].sort()
+    },
+    limits: [
+      "The layer contains one island-intersecting TL_ID 3501 route feature.",
+      "The layer does not contain a voltage field or separate geometry for L3502.",
+      "The route geometry does not establish conductor, structure, or as-built equipment details."
+    ],
+    features
+  };
+}
+
 async function fetchStationCoordinate(station) {
   const sourceUrl = `https://api.openstreetmap.org/api/0.6/${station.osmType}/${station.osmId}/full.json`;
   const payload = await fetchJson(sourceUrl);
@@ -184,8 +229,9 @@ async function fetchStationCoordinate(station) {
 }
 
 await mkdir(OUTPUT_DIR, { recursive: true });
-const [routes, stations] = await Promise.all([
+const [routes, l3501, stations] = await Promise.all([
   fetchCanvecRoutes(),
+  fetchL3501Route(),
   Promise.all(stationObjects.map(fetchStationCoordinate))
 ]);
 
@@ -202,11 +248,14 @@ const stationRegister = {
 };
 
 const routesPath = resolve(OUTPUT_DIR, "gnl-canvec-newfoundland-transmission-lines.geojson");
+const l3501Path = resolve(OUTPUT_DIR, "gnl-nalcor-l3501-route.geojson");
 const stationsPath = resolve(OUTPUT_DIR, "station-coordinate-register.json");
 await Promise.all([
   writeFile(routesPath, `${JSON.stringify(routes, null, 2)}\n`, "utf8"),
+  writeFile(l3501Path, `${JSON.stringify(l3501, null, 2)}\n`, "utf8"),
   writeFile(stationsPath, `${JSON.stringify(stationRegister, null, 2)}\n`, "utf8")
 ]);
 
 console.log(`Wrote ${routes.selection.selectedFeatureCount} route features to ${routesPath}`);
+console.log(`Wrote ${l3501.selection.selectedFeatureCount} L3501 route feature to ${l3501Path}`);
 console.log(`Wrote ${stations.length} station coordinates to ${stationsPath}`);

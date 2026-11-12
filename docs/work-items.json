@@ -470,25 +470,26 @@
       "title": "Build a sourced coordinate and route dataset",
       "phase": 4,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Extract defensible station coordinates and line routes from utility maps, drawings, GIS records, or other public primary sources.",
       "dependencies": ["ISL-001"],
       "completion_evidence": [
         "scripts/build-geographic-data.mjs",
         "research/derived/gnl-canvec-newfoundland-transmission-lines.geojson",
+        "research/derived/gnl-nalcor-l3501-route.geojson",
         "research/derived/station-coordinate-register.json",
         "research/GEOGRAPHIC_DATA_RECORD.md",
         "tests/geographic-data.test.js"
       ],
       "blocker": null,
-      "notes": "The dataset contains 588 historical GeoAtlas route features and 22 checked station-boundary centroids. The Avalon coordinate set now includes the five terminal stations and 17 Newfoundland Power substations with unambiguous published OpenStreetMap boundaries. The route layer has validation years from 1979 through 1991 and no utility circuit designations, so it remains a historical reference. Current circuit-to-route reconciliation remains open. Unsupported rural records are deferred."
+      "notes": "The dataset contains 588 historical GeoAtlas route features, the one island-intersecting GeoAtlas TL_ID 3501 feature, and 22 checked station-boundary centroids. The Avalon coordinate set includes five terminal stations and 17 Newfoundland Power substations with unambiguous published OpenStreetMap boundaries. The historical route layer has validation years from 1979 through 1991 and no utility circuit designations. GeoAtlas layer 15 has no voltage field and no separate L3502 geometry. Unsupported rural records and current AC circuit-to-route matching are deferred."
     },
     {
       "id": "GEO-002",
       "title": "Create the geographic island and Avalon map interface",
       "phase": 4,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Overlay the structured network on a defensible geographic base while preserving source-map access and voltage distinctions.",
       "dependencies": ["GEO-001", "ISL-002"],
       "completion_evidence": [
@@ -498,7 +499,7 @@
         "tests/geographic-map.test.js"
       ],
       "blocker": null,
-      "notes": "The interface renders the historical GeoAtlas routes and 22 checked station coordinates at island and Avalon scales. Every mapped Avalon station opens its terminal or substation record. Station selection updates the detail panel without moving the page. Current circuit-to-route matching, broader island station coverage, and voltage-specific geographic routes remain open."
+      "notes": "The interface renders the historical GeoAtlas routes, the published TL_ID 3501 route, and 22 checked station coordinates at island and Avalon scales. Every mapped Avalon station opens its terminal or substation record. Station selection updates the detail panel without moving the page. Unsupported rural station coverage and current AC circuit-to-route matching are deferred."
     },
     {
       "id": "REL-001",
