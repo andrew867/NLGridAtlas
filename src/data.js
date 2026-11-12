@@ -540,6 +540,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/files/application/NLH-2016-Capital-Budget-Application-Volume-III-2015-07-31.pdf"
   },
   {
+    id: "nlh-2016-38l",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "2016 Capital Budget Application, 38L Protective Relay Replacement",
+    topics: ["38L", "Holyrood Terminal Station", "Seal Cove", "69 kV", "protective relays"],
+    pages: "physical PDF pp. 232 and 237",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/files/application/NLH-2016-Capital-Budget-Application-Volume-III-2015-07-31.pdf"
+  },
+  {
     id: "liberty-supply-review-2014",
     year: 2014,
     organization: "Liberty Consulting Group",
@@ -2328,6 +2338,16 @@ export const sources = [
     pages: "physical PDF pp. 3 to 4",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
+  },
+  {
+    id: "np-2025-holyrood-line-relocation",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "Relocation of Transmission Lines 38L and 39L for the Avalon CT",
+    topics: ["38L", "39L", "Holyrood", "Avalon combustion turbine", "transmission relocation"],
+    pages: "physical PDF pp. 3 to 10",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025RelocateLines38Land39L/app/From%20NP%20-%20Approval%20of%20a%20Contribution%20from%20Hydro%20toward%20the%20Cost%20to%20Relocate%20Transmission%20Lines%2038L%20and%2039L%20-%202025-10-06.PDF"
   },
   {
     id: "np-2025-ca-np-116",
@@ -10309,9 +10329,25 @@ export const stationProfiles = [
   },
   {
     code: "HOL",
-    name: "Holyrood",
+    name: "Holyrood distribution station",
+    voltage: "138/12.5 kV",
+    circuitRegisterLabel: "2025 CIRCUIT REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "39L", from: "Duff's", from_code: "DUF", to: "Holyrood", to_code: "HOL" },
+      { circuit: "42L", from: "Holyrood", from_code: "HOL", to: "Colliers", to_code: "COL" }
+    ],
+    feederRegisterLabel: "2014 FILED DISTRIBUTION ARRANGEMENT",
+    feederRegister: ["HOL-01", "HOL-02"],
     mapPages: [["HOL-01", 75], ["HOL-02", 76]],
     eventLoads: [],
+    diagram: {
+      label: "current transformer rating on documented 39L and 42L connections",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "HOL-T1", rating: "20 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "39L", destination: "Duff's / Holyrood Terminal", bus: "b1" }, { label: "42L", destination: "Colliers", bus: "b1", destinationCode: "COL" }],
+      feeders: [{ label: "HOL-01", bus: "b2" }, { label: "HOL-02", bus: "b2" }]
+    },
     engineeringRecord: {
       date: "2014 CAPITAL APPLICATION",
       title: "Holyrood transformer and feeder modernization scope",
@@ -10326,6 +10362,14 @@ export const stationProfiles = [
         ["Proposed station work", "HOL-T1 refurbishment, digital transformer protection, tap changer controls, SCADA integration, control building, varmint protection, and ground-grid extension"]
       ]
     },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["HOL-T1", "138/12.5 kV; 20 MVA; 15.04 MVA 2026 forecast"]
+      ]
+    },
     historyRecords: [
       {
         label: "2014 PROPOSED 39L BREAKERS",
@@ -10338,6 +10382,46 @@ export const stationProfiles = [
           ["Supplemental project", "install two breakers on 39L during summer 2014"],
           ["Construction arrangement", "coordinate with the portable-substation installation for the approved modernization work"]
         ]
+      },
+      {
+        label: "2015 FILED LINE SEGMENTATION",
+        sourceId: "np-2015-substation-modernization",
+        pages: "physical PDF p. 435",
+        facts: [
+          ["42L", "Holyrood to Colliers"],
+          ["46L", "Colliers to Springfield"],
+          ["Nomenclature", "the filing states that installation of transmission-line breakers in 2014 and 2015 divided the former 39L designation"]
+        ]
+      },
+      {
+        label: "2015 FILED 38L TERMINAL RECORD",
+        sourceId: "nlh-2016-38l",
+        pages: "physical PDF pp. 232 and 237",
+        facts: [
+          ["38L", "69 kV line between Holyrood Terminal Station and Seal Cove Substation"],
+          ["System role", "part of the loop between Holyrood Terminal Station and Hardwoods Terminal Station"]
+        ]
+      },
+      {
+        label: "2025 PROPOSED 38L AND 39L RELOCATION",
+        sourceId: "np-2025-holyrood-line-relocation",
+        pages: "physical PDF pp. 3 to 10",
+        facts: [
+          ["Project driver", "Hydro requested relocation of portions of 38L and 39L to accommodate construction of the Avalon combustion turbine"],
+          ["Filed construction cost", "$1,609,731 before the remaining-life credit"],
+          ["Hydro contribution", "$1,012,231 excluding HST after the filed betterment credit"],
+          ["Drawing", "the preliminary layout dated August 1, 2025 shows the existing routes to be removed and the proposed replacement alignments"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2025 FILED 38L AND 39L ROUTES",
+    referenceSheets: [
+      {
+        title: "38L and 39L relocation at Holyrood",
+        image: "./reference-maps/holyrood-38l-39l-relocation.svg",
+        alt: "Filed aerial layout showing the existing and proposed 38L and 39L routes at Holyrood",
+        sourceId: "np-2025-holyrood-line-relocation",
+        pages: "physical PDF p. 7"
       }
     ]
   },

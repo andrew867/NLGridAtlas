@@ -2038,6 +2038,15 @@ test("Colliers, Springfield, and Holyrood records separate filed scopes from com
   assert.equal(holyrood.engineeringRecord.sourceId, "np-2014-capital");
   assert.match(holyrood.engineeringRecord.facts.flat().join(" "), /HOL-T1; 138\/12\.5 kV; 20 MVA/);
   assert.match(holyrood.engineeringRecord.facts.flat().join(" "), /split HOL-01 into two feeders/);
+  assert.deepEqual(holyrood.connectedCircuits.map(({ circuit }) => circuit), ["39L", "42L"]);
+  assert.deepEqual(holyrood.feederRegister, ["HOL-01", "HOL-02"]);
+  assert.equal(holyrood.diagram.buses.find((bus) => bus.id === "b1").voltage, "138 kV");
+  assert.match(holyrood.planningRecord.facts.flat().join(" "), /15\.04 MVA 2026 forecast/);
+  const lineHistory = holyrood.historyRecords.flatMap((record) => record.facts).flat().join(" ");
+  assert.match(lineHistory, /69 kV line between Holyrood Terminal Station and Seal Cove Substation/);
+  assert.match(lineHistory, /installation of transmission-line breakers in 2014 and 2015 divided the former 39L designation/);
+  assert.match(lineHistory, /\$1,609,731 before the remaining-life credit/);
+  assert.equal(holyrood.referenceSheets[0].image, "./reference-maps/holyrood-38l-39l-relocation.svg");
 });
 
 test("Bay Roberts keeps the filed station, transformer addition, and feeder work separate", () => {
