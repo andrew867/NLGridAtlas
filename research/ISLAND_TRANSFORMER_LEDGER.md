@@ -24,6 +24,7 @@ Work item: `ISL-006`
 | Bay d'Espoir T5S and T6S | January 2025 project update | T5 failed in July 2022 and was repaired as T5S; T5S replaced T6 after its July 2023 failure; Unit 6 returned in October 2023; repaired T6S became the filed spare for T1 to T6 and Granite Canal T1, with reduced capacity for T7 and Upper Salmon T1 | Spare Generator Step-Up Transformer update, physical PDF p. 5 |
 | Common GSU spare | February 2025 Board order | Revised capital budget approved at $12,324,025; completion scheduled for December 2028 | Order P.U. 8(2025), physical PDF pp. 1 to 3 |
 | Bay d'Espoir Unit 7 excitation transformer | August 2023 inspection | ABB, oil-filled, 1,175 kVA; 13.8/7.97 kV to 559 V; 5.64% impedance; replaced in 2014 | Unit 7 life-extension application, physical PDF p. 219 |
+| Bay d'Espoir Unit 8 proposed GSU | June 2025 basis of design | Oil-filled, three-phase, 129/172 MVA, 13.8/230 kV; dimensions to match Unit 7 for spare interchangeability | Unit 8 Basis of Design, physical PDF p. 9 |
 | Come By Chance | 2014 facility review and 2023 Braya application | T1 and T2, 230/13.8 kV, 30/40/50 MVA each, manufactured in 1972; both serve only the Braya refinery, with the approved 2023 to 2024 bushing work charged to Braya | PUB-NLH-161, physical PDF pp. 54 to 56; Braya contribution application, physical PDF pp. 4 to 7 |
 
 ## Published station records with staged ratings

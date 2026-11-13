@@ -1,0 +1,47 @@
+{
+  "source": {
+    "build_application_sha256": "6D1CD1284E42CAD440B8F51C6594EB90A9EA4C54478C55D4F5D2D8D07849452B",
+    "basis_of_design_sha256": "CAAB7447B174BAEAF82553F3B5E1E7ACD2D60B7C1E4836009CC92321BDE8F92A",
+    "october_update_sha256": "777A2BC9773103050644BB116B6974A6A518DBAD982747F5F9964D493E2E4CCF",
+    "order_17_2025_sha256": "8833F47F111894F7F09DF8F80E7431A42172182F5115926038D28DD7C701683F",
+    "order_21_2026_sha256": "8914B27C653A9B888FC2203CEDB9A3D8D17A5F892D2614CC3D409345D9A990F7"
+  },
+  "design": {
+    "status": "proposed",
+    "nominal_capacity_mw": 150,
+    "turbine": {
+      "type": "Francis",
+      "shaft_orientation": "vertical",
+      "physical_pdf_page": 8
+    },
+    "generator": {
+      "type": "synchronous",
+      "synchronous_condenser_capable": true,
+      "excitation_type": "static",
+      "minimum_design_life_years": 65,
+      "physical_pdf_pages": [8, 9]
+    },
+    "generator_step_up_transformer": {
+      "type": "oil-filled three-phase",
+      "rating_mva": [129, 172],
+      "low_voltage_kv": 13.8,
+      "high_voltage_kv": 230,
+      "minimum_design_life_years": 55,
+      "unit_7_spare_interchangeability": true,
+      "physical_pdf_page": 9
+    }
+  },
+  "early_execution": {
+    "order_17_2025_approved_cad": 16670000,
+    "order_21_2026_approved_cad": 5630000,
+    "total_approved_cad": 22300000,
+    "order_21_2026_date": "2026-07-08",
+    "october_2026_status": {
+      "geotechnical_field_investigations": "complete",
+      "breaker_procurement": "request for proposals under review and negotiation",
+      "turbine_generator_procurement": "paused with no financial commitments",
+      "commercial_operation_date": "unknown",
+      "full_build_approval": "unresolved"
+    }
+  }
+}
