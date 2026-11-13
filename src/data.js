@@ -940,6 +940,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/LAB-NLH-030%20-%20Revision%201%20-%20Redacted.PDF"
   },
   {
+    id: "nlh-exploits-condition-2017",
+    year: 2019,
+    organization: "NL Hydro",
+    title: "PUB-NLH-005, Exploits Generation Condition Assessment",
+    topics: ["Grand Falls", "Bishop's Falls", "Exploits generation", "G4", "G9", "T1", "T2", "T3", "T8", "T9", "6.9 kV", "66 kV", "generator step-up transformer", "station bus"],
+    pages: "physical PDF pp. 663 to 667, 693 to 695, and 978",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-005.PDF"
+  },
+  {
+    id: "nlh-gfc-decommissioning-2014",
+    year: 2013,
+    organization: "NL Hydro",
+    title: "2014 Capital Budget Application, Grand Falls Frequency Converter Terminal Station",
+    topics: ["Grand Falls Frequency Converter", "decommissioning", "terminal station name", "T1", "230 kV", "surge arresters"],
+    pages: "physical PDF pp. 499 to 500",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/files/application/NLH2014ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-gfc-q4-2025",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Q4 2025 Quarterly Regulatory Report",
+    topics: ["Grand Falls Frequency Converter", "T2", "transformer refurbishment", "protective relays", "completion"],
+    pages: "physical PDF pp. 31 to 32",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q4%20Report%20for%20period%20ending%20December%2031%2C%202025%20-%202026-02-17.PDF"
+  },
+  {
     id: "nlh-bbk-capital-2027",
     year: 2026,
     organization: "NL Hydro",
@@ -6115,22 +6145,37 @@ export const islandTerminalRecords = [
   {
     code: "GFS",
     name: "Grand Falls and Bishop's Falls generation",
-    status: "verified",
-    facts: [["System", "Generation connected to the 138 kV network"], ["Grand Falls G9", "26.9 MW"], ["Grand Falls G4", "25.7 MW"], ["Bishop's Falls", "18.4 MW"]],
+    status: "reported",
+    facts: [
+      ["2013 system assignment", "Grand Falls G9, 26.9 MW; Grand Falls G4, 25.7 MW; Bishop's Falls, 18.4 MW"],
+      ["Grand Falls G9", "33.3 MVA generator in the 2017 condition assessment"],
+      ["Grand Falls G4", "27.5 MVA generator; converted from 50 Hz to 60 Hz and connected at 6.9 kV"],
+      ["Grand Falls G5 to G8", "5 MVA, 6 MVA, 5 MVA, and 6 MVA respectively in the 2017 condition assessment"],
+      ["Bishop's Falls Units 1 to 7", "3 MVA each on a common 6.9 kV bus in the 2017 condition assessment"],
+      ["Bishop's Falls Units 8 and 9", "1.6 MVA and 1.9 MVA at 600 V; both were out of service in the 2017 condition assessment"],
+      ["Bishop's Falls export", "T8, built in 2002, steps generation up to the 66 kV link to Grand Falls; a complementary transformer steps it down at Grand Falls"],
+      ["Bishop's Falls second transformer", "T9 was built in 1983; the 2017 assessment described the spare transformers as 46 kV units with less capacity than the plant output"]
+    ],
     diagram: {
-      label: "2013 system one-line ratings",
-      buses: [{ id: "b1", label: "138 kV network", voltage: "138 kV" }],
-      transformers: [],
+      label: "2017 assessed collection arrangement / 2013 MW assignments",
+      buses: [{ id: "b1", label: "Grand Falls collection", voltage: "6.9 kV" }, { id: "b2", label: "Bishop's Falls export", voltage: "66 kV" }, { id: "b3", label: "Bishop's Falls collection", voltage: "6.9 kV" }],
+      transformers: [{ label: "Grand Falls receiving transformer", rating: "66/6.9 kV", from: "b2", to: "b1" }, { label: "T8", rating: "6.9/66 kV / built 2002", from: "b3", to: "b2" }],
       circuits: [],
-      generators: [{ label: "Grand Falls G9", rating: "26.9 MW", bus: "b1" }, { label: "Grand Falls G4", rating: "25.7 MW", bus: "b1" }, { label: "Bishop's Falls", rating: "18.4 MW", bus: "b1" }]
+      generators: [{ label: "Grand Falls G9", rating: "26.9 MW / 33.3 MVA", bus: "b1" }, { label: "Grand Falls G4", rating: "25.7 MW / 27.5 MVA", bus: "b1" }, { label: "Bishop's Falls G1 to G7", rating: "7 x 3 MVA", bus: "b3" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
   },
   {
     code: "GFC",
     name: "Grand Falls Frequency Converter",
-    status: "verified",
+    status: "reported",
     facts: [
+      ["Station name", "The frequency-converter system was decommissioned in May 2002; Hydro retained Grand Falls Frequency Converter as the terminal-station name"],
+      ["2026 planning ratings", "T1, T2, and T3 are each 30/40/50 MVA"],
+      ["2035/36 pre-contingency model", "T1, 23.12 MVA; T2, 24.03 MVA; T3, 20.43 MVA"],
+      ["2035/36 T1-out model", "T2, 30.69 MVA; T3, 34.62 MVA"],
+      ["2016 generator-transformer assignment", "G4 used T1 and G9 used T2; a study proposed assigning the existing T3 to a new replacement unit"],
+      ["2025 T2 work", "Transformer refurbishment and protective-relay replacement were completed"],
       ["230 kV circuit", "TL235 to Stony Brook"],
       ["2016 filed route length", "0.620 km"],
       ["2015 and 2016 winter rating", "322.2 MVA"],
@@ -6139,13 +6184,17 @@ export const islandTerminalRecords = [
       ["Function", "Hydro identified TL235 as the connection for Exploits generation at Grand Falls and Bishop's Falls"]
     ],
     diagram: {
-      label: "2015 to 2016 filed TL235 connection",
-      buses: [{ id: "b1", label: "frequency-converter connection", voltage: "230 kV" }],
-      transformers: [],
+      label: "2016 generator assignment / 2026 planning ratings",
+      buses: [{ id: "b1", label: "terminal bus", voltage: "230 kV" }, { id: "b2", label: "Grand Falls collection", voltage: "6.9 kV" }],
+      transformers: [{ label: "T1 / G4", rating: "30/40/50 MVA", from: "b2", to: "b1" }, { label: "T2 / G9", rating: "30/40/50 MVA", from: "b2", to: "b1" }, { label: "T3", rating: "30/40/50 MVA", from: "b2", to: "b1" }],
       circuits: [{ label: "TL235", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }],
       generators: []
     },
     sources: [
+      sourceRef("nlh-gfc-decommissioning-2014", "physical PDF pp. 499 to 500"),
+      sourceRef("nlh-bbk-planning-2026", "physical PDF pp. 13 and 18"),
+      sourceRef("nlh-exploits-condition-2017", "physical PDF p. 978"),
+      sourceRef("nlh-gfc-q4-2025", "physical PDF pp. 31 to 32"),
       sourceRef("nlh-transmission-loads-2015", "physical PDF pp. 2 to 3"),
       sourceRef("nlh-probabilistic-transmission-2016", "physical PDF p. 60")
     ]

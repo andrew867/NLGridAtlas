@@ -26,6 +26,8 @@ Work item: `ISL-006`
 | Bay d'Espoir Unit 7 excitation transformer | August 2023 inspection | ABB, oil-filled, 1,175 kVA; 13.8/7.97 kV to 559 V; 5.64% impedance; replaced in 2014 | Unit 7 life-extension application, physical PDF p. 219 |
 | Bay d'Espoir Unit 8 proposed GSU | June 2025 basis of design | Oil-filled, three-phase, 129/172 MVA, 13.8/230 kV; dimensions to match Unit 7 for spare interchangeability | Unit 8 Basis of Design, physical PDF p. 9 |
 | Come By Chance | 2014 facility review and 2023 Braya application | T1 and T2, 230/13.8 kV, 30/40/50 MVA each, manufactured in 1972; both serve only the Braya refinery, with the approved 2023 to 2024 bushing work charged to Braya | PUB-NLH-161, physical PDF pp. 54 to 56; Braya contribution application, physical PDF pp. 4 to 7 |
+| Grand Falls and Bishop's Falls | 2017 Exploits condition assessment | Grand Falls G4 and G9 collect at 6.9 kV; the assessment assigns G4 to T1 and G9 to T2. Bishop's Falls Units 1 to 7 collect at 6.9 kV and export through T8 over a 66 kV link to Grand Falls | PUB-NLH-005, physical PDF pp. 663 to 667, 693 to 695, and 978 |
+| Grand Falls Frequency Converter Terminal Station | 2026 Annual Planning Assessment | T1, T2, and T3 are each 30/40/50 MVA. The 2035/36 pre-contingency model loads them to 23.12 MVA, 24.03 MVA, and 20.43 MVA respectively | LAB-NLH-030 Revision 1, physical PDF p. 13 |
 
 ## Published station records with staged ratings
 
@@ -48,8 +50,8 @@ Work item: `ISL-006`
 | Come By Chance current station arrangement | The transformer ratings, customer assignment and 2014 bus arrangement are documented; a later complete station one-line remains open |
 | Remaining rural stations | Transformer designations, manufacture dates, in-service dates, impedances and current one-lines |
 | Bottom Brook | Post-2024 one-line confirming the completed bus, grounding, disconnect and protection work from the partially completed project |
-| Grand Falls and Bishop's Falls | Current generator-step-up and station-bus arrangement |
+| Grand Falls and Bishop's Falls | A current as-built drawing and complete transformer nameplates; the published diagram uses the 2017 assessed arrangement and 2026 planning ratings |
 
-The archive search located Grand Falls T1 and T2 oil-reclamation records and maintenance inventories, but not a later source that establishes the requested nameplate ratings or a current station one-line. No suitable Bishop's Falls nameplate or current station drawing was located.
+The 2017 assessment establishes the collection voltages, generator-transformer assignments, and Bishop's Falls export path. The 2026 planning assessment establishes the current modeled ratings for Grand Falls T1, T2, and T3. Neither source is a current as-built station drawing.
 
 Deferred rural targets remain in `ISL-005`. They do not hold the completed transformer ledger or the main island network work.
