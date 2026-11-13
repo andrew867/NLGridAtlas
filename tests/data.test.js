@@ -516,7 +516,7 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   ]);
   assert.match(comeByChance.facts.flat().join(" "), /230\/13\.8 kV, 30\/40\/50 MVA each; both manufactured in 1972/);
   assert.match(comeByChance.facts.flat().join(" "), /T1 and T2 serve only the Braya refinery/);
-  assert.deepEqual(comeByChance.diagram.transformers, [
+  assert.deepEqual(comeByChance.diagram.transformers.map(({ label, rating, from, to }) => ({ label, rating, from, to })), [
     { label: "T1", rating: "30/40/50 MVA", from: "b1", to: "b2" },
     { label: "T2", rating: "30/40/50 MVA", from: "b1", to: "b2" }
   ]);

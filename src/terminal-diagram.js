@@ -122,9 +122,22 @@ export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-t
     const lines = bus.segments?.length
       ? bus.segments.map(({ x, width = 76 }) => `<line x1="${x - width / 2}" y1="${bus.y}" x2="${x + width / 2}" y2="${bus.y}" />`).join("")
       : `<line x1="120" y1="${bus.y}" x2="1000" y2="${bus.y}" />`;
+    const tie = bus.tie;
+    const tieMarkup = tie ? (() => {
+      const middle = (tie.fromX + tie.toX) / 2;
+      const device = tie.open
+        ? `<line class="terminal-bus-tie-blade" x1="${middle - 8}" y1="${bus.y}" x2="${middle + 7}" y2="${bus.y - 13}" />`
+        : `<rect x="${middle - 7}" y="${bus.y - 9}" width="14" height="18" />`;
+      return `<g class="terminal-bus-tie${tie.open ? " terminal-bus-tie-open" : ""}">
+        <line x1="${tie.fromX}" y1="${bus.y}" x2="${middle - 8}" y2="${bus.y}" />
+        ${device}
+        <line x1="${middle + 8}" y1="${bus.y}" x2="${tie.toX}" y2="${bus.y}" />
+        <text x="${middle}" y="${bus.y + 31}">${escapeHtml(tie.label)}</text>
+      </g>`;
+    })() : "";
     return `
     <g class="terminal-bus terminal-bus-${escapeHtml(bus.kind || "bus")} voltage-${escapeHtml(bus.voltage.replace(/[^0-9]/g, ""))}">
-      ${lines}
+      ${lines}${tieMarkup}
       <text x="560" y="${bus.y - 17}">${escapeHtml(busDisplayLabel(bus))}</text>
     </g>`;
   }).join("");

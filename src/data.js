@@ -1050,6 +1050,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2023/NLH2023CIACBrayaTowards/app/From%20NLH%20-%20Approval%20of%20a%20%20CIAC%20by%20Braya%20towards%20the%20Cost%20of%20Improvements%20to%20its%20Property%20-%202023-11-29.PDF"
   },
   {
+    id: "nlh-cbc-ngr-cancel-2010",
+    year: 2010,
+    organization: "NL Hydro",
+    title: "2010 Capital Expenditures and Carryover Report, Come By Chance NGR Project",
+    topics: ["Come By Chance", "neutral grounding resistors", "cancelled project", "NARL"],
+    pages: "physical PDF p. 345",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf"
+  },
+  {
+    id: "nlh-cbc-q4-2024",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "Q4 2024 Quarterly Regulatory Report",
+    topics: ["Come By Chance", "transformer bushings", "completed work"],
+    pages: "physical PDF p. 30",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20(To%20Parties)%20-%204th%20Quarter%20Report%20for%20period%20ending%20December%2031%2C%202024%20-%202025-02-14.PDF"
+  },
+  {
+    id: "nlh-cbc-capital-2027",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "2027 Capital Budget Application, Come By Chance Asset Work",
+    topics: ["Come By Chance", "TL237 protection", "fire protection", "reclosing controllers", "T1", "T2"],
+    pages: "physical PDF pp. 66, 266, and 333 to 334",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
+  },
+  {
+    id: "nlh-cbc-relay-status-2026",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "IIC-NLH-004, Come By Chance Transformer Protection Status",
+    topics: ["Come By Chance", "T1", "T2", "protective relays", "Braya", "schedule"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NLH2027Capital/responses/IIC-NLH-004.PDF"
+  },
+  {
     id: "nlh-transformer-loading-2015",
     year: 2015,
     organization: "NL Hydro",
@@ -6390,15 +6430,15 @@ export const islandTerminalRecords = [
     code: "CBC",
     name: "Come By Chance Terminal Station",
     status: "verified",
-    facts: [["T1 and T2, 2014 facility review", "230/13.8 kV, 30/40/50 MVA each; both manufactured in 1972"], ["230 kV bus, 2014 facility review", "Split B1/B2 bus with two disconnects and one SF6 bus-tie breaker"], ["13.8 kV equipment, 2014 facility review", "Three breakers, two disconnects and two 75 kVA, 13.8 kV/230-115 V station-service transformers"], ["Customer assignment, 2023 application", "T1 and T2 serve only the Braya refinery; Braya was responsible for the approved bushing-replacement capital cost"], ["Reactive equipment", "Four 38.35 MVAR, 230 kV capacitor banks installed in 2011/2012"], ["230 kV circuits", "TL207 to Sunnyside; TL237 to Western Avalon"]],
+    facts: [["T1 and T2, 2014 facility review", "230/13.8 kV, 30/40/50 MVA each; both manufactured in 1972"], ["230 kV bus, 2014 facility review", "B1 and B2 are joined through two disconnects and one SF6 bus-tie breaker"], ["13.8 kV buses, 2014 filed one-line", "T1 and T2 feed separate sections; breaker 52-3 is normally open between them"], ["Station service, 2014 facility review", "Two 75 kVA, 13,800/230-115 V transformers"], ["Reactive equipment", "Four 38.35 MVAR, 230 kV capacitor banks installed in 2011/2012; Nalcor owned the banks and Hydro operated and maintained them"], ["Cancelled grounding project, 2010", "The customer-funded neutral-grounding-resistor project was cancelled after NARL did not approve cost recovery; reported actual expenditure was $0"], ["Customer assignment", "T1 and T2 serve only the Braya refinery; Braya was responsible for the approved bushing-replacement capital cost"], ["Transformer work, Q4 2024", "Hydro reported transformer bushing replacement completed at Come By Chance"], ["Protection work", "TL237 protection at Come By Chance and Western Avalon was completed in 2025; T1 and T2 relay work was planned for Q4 2026 and awaited Braya schedule confirmation in September 2026"], ["2026 forecast and proposed work", "Control-building fire-protection work remained forecast for 2026; reclosing-controller replacement was proposed for 2027/2028"], ["230 kV circuits", "TL207 to Sunnyside; TL237 to Western Avalon"]],
     diagram: {
-      label: "2014 facility arrangement / dated capacitor record / 2018 routes",
-      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "13.8 kV customer interface", voltage: "13.8 kV" }],
-      transformers: [{ label: "T1", rating: "30/40/50 MVA", from: "b1", to: "b2" }, { label: "T2", rating: "30/40/50 MVA", from: "b1", to: "b2" }],
-      circuits: [{ label: "TL207", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL237", destination: "Western Avalon", bus: "b1" }],
-      shunts: [{ label: "C1", rating: "38.35 MVAR", bus: "b1" }, { label: "C2", rating: "38.35 MVAR", bus: "b1" }, { label: "C3", rating: "38.35 MVAR", bus: "b1" }, { label: "C4", rating: "38.35 MVAR", bus: "b1" }]
+      label: "2014 filed operating arrangement / 2011 to 2012 capacitor banks / 2018 routes",
+      buses: [{ id: "b1", label: "split bus B1 / B2", voltage: "230 kV", segments: [{ x: 330, width: 420 }, { x: 790, width: 420 }], tie: { fromX: 540, toX: 580, label: "B1B2 tie" } }, { id: "b2", label: "split customer bus", voltage: "13.8 kV", segments: [{ x: 330, width: 420 }, { x: 790, width: 420 }], tie: { fromX: 540, toX: 580, label: "52-3 N.O.", open: true } }],
+      transformers: [{ label: "T1", rating: "30/40/50 MVA", from: "b1", to: "b2", x: 420 }, { label: "T2", rating: "30/40/50 MVA", from: "b1", to: "b2", x: 700 }],
+      circuits: [{ label: "TL207", destination: "Sunnyside", bus: "b1", destinationCode: "SUN", x: 170 }, { label: "TL237", destination: "Western Avalon", bus: "b1", destinationCode: "WAV", x: 950 }],
+      shunts: [{ label: "C1", rating: "38.35 MVAR", bus: "b1", x: 150 }, { label: "C2", rating: "38.35 MVAR", bus: "b1", x: 290 }, { label: "C3", rating: "38.35 MVAR", bus: "b1", x: 830 }, { label: "C4", rating: "38.35 MVAR", bus: "b1", x: 970 }]
     },
-    sources: [sourceRef("nlh-cbc-facility-review-2014", "physical PDF pp. 54 to 56"), sourceRef("nlh-braya-ciac-2023", "physical PDF pp. 4 to 7"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-cbc-2013", "PDF p. 1"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+    sources: [sourceRef("nlh-cbc-facility-review-2014", "physical PDF pp. 54 to 56"), sourceRef("nlh-cbc-2013", "physical PDF p. 1"), sourceRef("nlh-cbc-ngr-cancel-2010", "physical PDF p. 345"), sourceRef("nlh-braya-ciac-2023", "physical PDF pp. 4 to 7"), sourceRef("nlh-cbc-q4-2024", "physical PDF p. 30"), sourceRef("nlh-cbc-capital-2027", "physical PDF pp. 66, 266, and 333 to 334"), sourceRef("nlh-cbc-relay-status-2026", "physical PDF pp. 1 to 2"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
   },
   {
     code: "VBN",

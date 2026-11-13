@@ -16,7 +16,7 @@ The terminal browser uses dated connection diagrams. It does not present a break
 | Lewisporte and Rattling Brook | 2018 selected conversion one-lines, 2026 Lewisporte supply record and 2027 Rattling Brook station record | Lewisporte supplied by 137L and 147L at 138 kV; Rattling Brook supplied by 136L and 137L through RBK-T3; retained 66 kV, 12.5 kV and 6.9 kV systems; two hydro units and RBK-01 |
 | Massey Drive | 2001 system-additions testimony, 2015 transformer loading response and 2018 route table | 1998 replacement of a 66.7 MVA unit by a 125 MVA unit, T1, T2 and T3 customer assignments, two 230 kV lines |
 | Stephenville | 2020 retirement study, 2023 and 2024 planning assessments, 2025 endpoint and asset-work records, and 2026 condition assessment | TL209, 401L, 405L, and 407L; T3 and gas-turbine T1 ratings; 63.5 MVA G1; proposed removal one-line; partial project closeout; 2032 retirement-case loading; retained standby-generation and synchronous-condensing roles |
-| Come By Chance | 2014 facility review, 2023 Braya contribution application, capacitor-bank response and 2018 route table | T1 and T2 ratings and 1972 manufacture date; split 230 kV bus; customer-specific cost assignment; four capacitor banks; two filed 230 kV routes |
+| Come By Chance | 2010 cancelled-project record, 2014 facility review and operating one-line, 2023 Braya contribution application, 2024 completion report, 2026 capital status, capacitor-bank response and 2018 route table | T1 and T2 ratings and 1972 manufacture date; split B1/B2 230 kV bus; separate 13.8 kV sections and normally open 52-3 tie; customer-specific cost assignment; four capacitor banks; cancelled neutral-grounding-resistor project; later bushing and protection work; two filed 230 kV routes |
 | Voisey's Bay Nickel | 2013 GRA asset-change responses and 2018 route table | 230/13.8 kV terminal added in 2012; TL208 extended from the retired Long Harbour terminal; current Western Avalon route; Vale-specific asset assignment |
 | Soldiers Pond | 2014 integration study, 2019 reliability response, 2020 emergency-response plan, 2023 commissioning reports and 2024 planning assessment | two LCC poles; three 175 MVAr synchronous condensers; six 230 kV routes; spare converter transformer; EL3/4 to Dowden's Point; commissioned 2023-04-14 |
 | Berry Hill | 2013 system one-line and 2018 route table | 138/66 kV transformation; TL239, TL259, and TL226 |
@@ -33,8 +33,8 @@ The terminal browser uses dated connection diagrams. It does not present a break
 
 ## Open drawing targets
 
-- Current breaker-level one-lines for Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Massey Drive, Stephenville, and Come By Chance.
-- Later complete station drawings for Bay d'Espoir and Come By Chance.
+- Current breaker-level one-lines for Stony Brook, Buchans, Deer Lake, Bottom Brook, Massey Drive, and Stephenville.
+- Later complete station drawings for Bay d'Espoir and Come By Chance. The atlas uses the filed 1998 and 2013 Bay d'Espoir drawings and the filed 2000 Come By Chance drawing until later records are found.
 - A post-2024 Bottom Brook one-line showing the completed bus foundations, disconnect, grounding, and protection work from the partially completed Stephenville-retirement project.
 - A current as-built Grand Falls and Bishop's Falls drawing. The published station view uses the 2017 assessed arrangement and the 2026 planning ratings.
 - Transformer ratings, dates, and current breaker arrangements for the added rural station records, deferred after the 2026-11-11 pass.

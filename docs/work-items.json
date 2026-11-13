@@ -538,6 +538,18 @@
       "notes": "Implemented from physical PDF pp. 248 to 249 of the 2016 Capital Budget Application. The diagram separates the four grouped 13.8 kV unit-terminal segments, seven generator step-up positions, Station 2 buses B13 and B14, T10 to T12, and the filed outgoing circuits. The 283-test suite, production build, and browser layout review passed."
     },
     {
+      "id": "ISL-020",
+      "title": "Reconstruct the filed Come By Chance split-bus arrangement and later asset history",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Use the filed operating one-line to separate the B1 and B2 230 kV sections, the two 13.8 kV sections, their bus ties, the transformers, capacitor banks, and outgoing circuits; keep cancelled, completed, forecast, and proposed work distinct.",
+      "dependencies": ["ISL-003", "SRC-001"],
+      "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "src/styles.css", "tests/terminal-diagram.test.js", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "The 2014 facility review, physical PDF pp. 54 to 56, establishes the split B1/B2 230 kV bus, its SF6 tie, separate T1 and T2 13.8 kV sections, and normally open breaker 52-3. The 2010 report records the neutral-grounding-resistor project cancelled with $0 actual expenditure. Later records separate completed bushing and TL237 protection work from relay work awaiting Braya schedule confirmation, forecast fire-protection work, and proposed reclosing-controller replacement."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

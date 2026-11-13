@@ -40,9 +40,20 @@ test("Come By Chance renders four filed capacitor banks", () => {
   const comeByChance = islandTerminalRecords.find((record) => record.code === "CBC");
   assert.equal(comeByChance.diagram.shunts.length, 4);
   assert.ok(comeByChance.diagram.shunts.every((bank) => bank.rating === "38.35 MVAR"));
+  assert.equal(comeByChance.diagram.buses[0].segments.length, 2);
+  assert.equal(comeByChance.diagram.buses[0].tie.label, "B1B2 tie");
+  assert.equal(comeByChance.diagram.buses[1].tie.label, "52-3 N.O.");
+  assert.equal(comeByChance.diagram.buses[1].tie.open, true);
+  assert.ok(comeByChance.facts.some(([, value]) => /cancelled/.test(value) && /\$0/.test(value)));
+  assert.ok(comeByChance.facts.some(([, value]) => /planned for Q4 2026/.test(value) && /Braya schedule confirmation/.test(value)));
   const html = renderTerminalDiagram(comeByChance.diagram, escapeHtml);
   assert.match(html, /C1/);
   assert.match(html, /C4/);
+  assert.match(html, /class="terminal-bus-tie"/);
+  assert.match(html, />B1B2 tie</);
+  assert.match(html, /terminal-bus-tie terminal-bus-tie-open/);
+  assert.match(html, />52-3 N\.O\.</);
+  assert.match(html, /data-hydro-terminal-record="WAV"/);
 });
 
 test("Bay d'Espoir separates the individual unit terminals from the Station 2 buses", () => {
