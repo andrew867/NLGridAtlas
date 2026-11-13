@@ -382,6 +382,18 @@
       "notes": "The circuit panel now separates the 1996 construction record, the 2012 upgrade history, the 2014 seasonal planning ratings, TL267's 2017 commissioning, and the 2026 proposed dynamic line rating work. The load section adds the filed 2006 to 2010 EMS peak series without treating the values as circuit ratings."
     },
     {
+      "id": "ISL-009",
+      "title": "Add central and western 230 kV circuit engineering records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Record dated route lengths, winter ratings, anticipated loading, connection history, storm damage, strengthening work, and study-only uprating assumptions for the central and western 230 kV network.",
+      "dependencies": ["ISL-001", "ISL-008"],
+      "completion_evidence": ["research/WESTERN_230KV_LINE_ENGINEERING.md", "research/derived/island-ac-topology-2018.json", "src/data.js", "src/island-backbone.js", "tests/island-topology.test.js"],
+      "blocker": null,
+      "notes": "The circuit panels now include dated records for TL204, TL231, TL205, TL232, TL228, TL233, TL211, and TL209. The 2015 planning table and 2016 reliability base case remain separate. TL228's 55 degree Celsius operating assumption is labelled modelled, while its 1967 construction and later storm-strengthening record remains historical."
+    },
+    {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,

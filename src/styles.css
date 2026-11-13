@@ -479,6 +479,7 @@ button, input { font: inherit; }
 .component-evidence { padding: 2rem 0 0; border-top: 8px solid var(--copper); }
 .evidence-state { display: inline-block; padding: .3rem .5rem; background: var(--phase-c); color: #fff; font: 400 .65rem/1 "IBM Plex Mono", monospace; }
 .evidence-state.proposed { background: var(--phase-a); }
+.evidence-state.modelled { background: var(--copper); }
 .component-code { margin: 2rem 0 .35rem; font: 400 .78rem/1.2 "IBM Plex Mono", monospace; color: var(--muted); }
 .component-evidence h3 { margin: 0 0 1rem; font: 600 2.5rem/.95 "Barlow Condensed", sans-serif; text-transform: uppercase; }
 .component-evidence > p:not(.component-code) { line-height: 1.55; }

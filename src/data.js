@@ -1224,10 +1224,50 @@ export const sources = [
     year: 1996,
     organization: "NL Hydro",
     title: "Reliability Study of Transmission Lines on Avalon and Connaigre Peninsulas",
-    topics: ["TL201", "TL203", "TL207", "TL217", "TL218", "TL220", "TL236", "TL237", "transmission conductor", "line construction", "ice loading"],
-    pages: "physical PDF pp. 48 and 52 to 55",
+    topics: ["TL201", "TL203", "TL207", "TL217", "TL218", "TL220", "TL228", "TL236", "TL237", "transmission conductor", "line construction", "ice loading"],
+    pages: "physical PDF pp. 48, 52 to 55, and 158 to 160",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit85.pdf"
+  },
+  {
+    id: "nlh-system-design-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "PUB-NLH-318, Island Transmission System Design History",
+    topics: ["Bottom Brook", "Buchans", "Stony Brook", "Bay d'Espoir", "Sunnyside", "Western Avalon", "TL209", "TL211", "TL233", "ring bus", "system history"],
+    pages: "physical PDF pp. 1 to 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
+  },
+  {
+    id: "nlh-transmission-loads-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "PUB-NLH-324, Transmission Line Loads for 2015",
+    topics: ["230 kV", "138 kV", "66 kV", "69 kV", "winter rating", "anticipated peak", "average loading", "TL204", "TL205", "TL209", "TL211", "TL228", "TL231", "TL232", "TL233"],
+    pages: "physical PDF pp. 1 to 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-324.pdf"
+  },
+  {
+    id: "nlh-probabilistic-transmission-2016",
+    year: 2016,
+    organization: "Nalcor Energy",
+    title: "Probabilistic Based Transmission Reliability Assessment, Island Interconnected System",
+    topics: ["230 kV", "transmission length", "winter rating", "pre-HVDC", "post-HVDC", "TL204", "TL205", "TL209", "TL211", "TL228", "TL231", "TL232", "TL233"],
+    pages: "physical PDF pp. 60 to 61",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/reports/From%20NLH%20-%20Probabilistic%20Based%20Transmiss~Assessment%20Report%20-%20Island%20Interconnected%20System%20(Teshmont%20Report)%20-%202016-05-27.PDF"
+  },
+  {
+    id: "nlh-maritime-runback-2016",
+    year: 2016,
+    organization: "NL Hydro",
+    title: "PUB-NLH-565, Maritime Link Run-Back Requirements Dynamic Study",
+    topics: ["Maritime Link", "TL228", "hot conductor temperature", "conductor sag", "export limit", "special protection system"],
+    pages: "physical PDF pp. 7 to 13 and 124 to 129",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-565.pdf"
   },
   {
     id: "nlh-lil-commissioning-2023",

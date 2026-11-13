@@ -79,6 +79,34 @@ test("Bay d'Espoir to Western Avalon circuits retain dated ratings and upgrade s
   assert.match(byCircuit.TL267.engineering_records[1].facts[0], /Commissioned.*2017|Commissioned as a 230 kV line/);
 });
 
+test("central and western circuits preserve planning, route, and historical records", () => {
+  const byCircuit = Object.fromEntries(topology.lines.map((line) => [line.circuit, line]));
+  const expected = {
+    TL204: [469.6, 89.5, 45.6, "105.021 km"],
+    TL231: [469.6, 89.5, 34.7, "105.310 km"],
+    TL205: [322.2, 38.0, 22.0, "83.937 km"],
+    TL232: [469.6, 37.7, 10.9, "84.247 km"],
+    TL233: [369.5, 41.0, 15.6, "135.847 km"],
+    TL211: [322.2, 42.2, 28.5, "55.680 km"],
+    TL209: [369.5, 45.4, 28.7, "21.056 km"]
+  };
+
+  for (const [circuit, [rating, peak, average, length]] of Object.entries(expected)) {
+    const facts = byCircuit[circuit].engineering_records.flatMap(({ facts = [] }) => facts).join(" ");
+    assert.match(facts, new RegExp(`${rating} MVA`));
+    assert.match(facts, new RegExp(`${peak.toFixed(1)} MVA`));
+    assert.match(facts, new RegExp(`${average.toFixed(1)} MVA`));
+    assert.match(facts, new RegExp(length.replace(".", "\\.")));
+  }
+
+  assert.equal(byCircuit.TL228.engineering_records.at(-1).status, "modelled");
+  assert.match(byCircuit.TL228.engineering_records[0].facts.join(" "), /1967.*1987.*mid-span structures/);
+  assert.match(byCircuit.TL228.engineering_records.at(-1).facts.join(" "), /55 °C.*470 MW/);
+  assert.match(byCircuit.TL233.engineering_records[0].facts.join(" "), /1973.*1978/);
+  assert.match(byCircuit.TL211.engineering_records[0].facts[0], /1967/);
+  assert.match(byCircuit.TL209.engineering_records[0].facts[0], /1971/);
+});
+
 test("69 kV circuit assignment remains an explicit evidence gap", () => {
   assert.equal(topology.lines.some((line) => line.voltage_kv === 69), false);
   assert.match(topology.open_gaps.join(" "), /69 kV asset-class designations/);

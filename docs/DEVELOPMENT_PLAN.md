@@ -1,6 +1,6 @@
 # NL Grid Atlas phased development plan
 
-Updated: 2026-11-11
+Updated: 2026-11-13
 
 `docs/work-items.json` is the authoritative status register. This plan defines execution order and phase exit gates.
 
@@ -75,6 +75,7 @@ Work items:
 - ISL-006
 - ISL-007
 - ISL-008
+- ISL-009
 
 Exit gate:
 
