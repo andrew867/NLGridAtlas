@@ -2690,6 +2690,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-255.PDF"
   },
   {
+    id: "np-2016-pub-np-064-f",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-064 Attachment F, 2006 switchgear partial-discharge forms",
+    topics: ["King's Bridge", "Ridge Road", "Pepperrell", "St. John's Main", "Stamp's Lane", "switchgear", "feeder breakers", "transformer breakers", "bus ties"],
+    pages: "physical PDF pp. 48, 57, 61, 65 and 66",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20F.pdf"
+  },
+  {
     id: "np-2016-pub-np-064-g",
     year: 2016,
     organization: "Newfoundland Power",
@@ -13808,6 +13818,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 SWITCHGEAR CUBICLE REGISTER",
+        sourceId: "np-2016-pub-np-064-f",
+        pages: "physical PDF p. 48",
+        facts: [
+          ["Feeder breakers", "KBR-01-B to KBR-06-B, KBR-08-B to KBR-12-B"],
+          ["Transformer breakers", "KBR-T1-B, KBR-T2-B and KBR-T3-B"],
+          ["Tie designations", "KBR-TB-3-5 and KBR-TB-3-4"]
+        ]
+      },
+      {
         label: "2008 TO 2009 COMPLETED STATION WORK",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF p. 4",
@@ -13855,6 +13875,16 @@ export const stationProfiles = [
       facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2006 SWITCHGEAR CUBICLE REGISTER",
+        sourceId: "np-2016-pub-np-064-f",
+        pages: "physical PDF p. 61",
+        facts: [
+          ["Feeder breakers", "RRD-01-B to RRD-10-B"],
+          ["Transformer breakers", "RRD-T1-B, RRD-T2-B and RRD-T3-B"],
+          ["Tie designations", "RRD-TB-2-3, RRD-TIE-2-3-D and RRD-TB-3-4"]
+        ]
+      },
       {
         label: "2007 AND 2015 COMPLETED WORK",
         sourceId: "np-2027-pub-np-005",
@@ -13981,6 +14011,18 @@ export const stationProfiles = [
         ["SJM-T3", "SJM-10 and SJM-14; 12.5 kV"]
       ]
     },
+    historyRecords: [
+      {
+        label: "2006 SWITCHGEAR CUBICLE REGISTER",
+        sourceId: "np-2016-pub-np-064-f",
+        pages: "physical PDF p. 65",
+        facts: [
+          ["Feeder breakers", "SJM-02-B, SJM-03-B, SJM-04-B, SJM-06-B to SJM-11-B, and SJM-13-B to SJM-15-B"],
+          ["Transformer breakers", "SJM-T1-B and SJM-T2-B"],
+          ["Tie designations", "SJM-TB-1-2, SJM-TB-1-3 and SJM-TIE-1-3-D"]
+        ]
+      }
+    ],
     referenceSheets: [
       {
         title: "2011 Water Street existing feeder schematic",
@@ -14027,6 +14069,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2006 T1/T2 SWITCHGEAR CUBICLE REGISTER",
+        sourceId: "np-2016-pub-np-064-f",
+        pages: "physical PDF p. 66",
+        facts: [
+          ["Feeder breakers", "SLA-01-B to SLA-07-B"],
+          ["Transformer breakers", "SLA-T1-B and SLA-T2-B"],
+          ["Other cubicles", "two spare positions, auxiliary and metering"]
+        ]
+      },
       {
         label: "2014 FEEDER VOLTAGES",
         sourceId: "np-2014-pub-np-276",
@@ -14145,7 +14197,19 @@ export const stationProfiles = [
       sourceId: "np-2025-ca-np-255",
       pages: "physical PDF p. 4",
       facts: [["PEP-05", "12.5 kV; PEP-T1/T2; 12.7 MVA feeder planning capacity"]]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2006 SWITCHGEAR CUBICLE REGISTER",
+        sourceId: "np-2016-pub-np-064-f",
+        pages: "physical PDF p. 57",
+        facts: [
+          ["Feeder breakers", "PEP-01-B to PEP-04-B"],
+          ["Transformer breaker", "PEP-T1-B"],
+          ["Tie designations", "PEP-TB-1-3 and PEP-TB-1-2"]
+        ]
+      }
+    ]
   },
   {
     code: "VIR",

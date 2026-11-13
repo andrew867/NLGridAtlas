@@ -2754,10 +2754,10 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.match(stampsLaneFacts, /50 MVA combined at 12\.5 kV and 21 MVA combined at 4\.16 kV/);
   assert.match(stampsLaneFacts, /13L, 14L, 15L, 31L, 69L and 70L/);
   assert.match(stampsLane.planningRecord.facts.flat().join(" "), /replaced in 2021 with repaired PUL-T2/);
-  assert.match(stampsLane.historyRecords[0].facts.flat().join(" "), /SLA-02, SLA-03, SLA-05, SLA-06 and SLA-07/);
-  assert.match(stampsLane.historyRecords[1].facts.flat().join(" "), /approximately 1\.26 MVA to SLA-08/);
-  assert.match(stampsLane.historyRecords[3].facts.flat().join(" "), /approximately 135 A before conversion/);
-  assert.match(stampsLane.historyRecords[5].facts.flat().join(" "), /deteriorated transformer radiators/);
+  assert.match(stampsLane.historyRecords.find(({ label }) => label === "2014 FEEDER VOLTAGES").facts.flat().join(" "), /SLA-02, SLA-03, SLA-05, SLA-06 and SLA-07/);
+  assert.match(stampsLane.historyRecords.find(({ label }) => label === "2019 SLA-05 WORK").facts.flat().join(" "), /approximately 1\.26 MVA to SLA-08/);
+  assert.match(stampsLane.historyRecords.find(({ label }) => label === "2023 SLA-05 WORK").facts.flat().join(" "), /approximately 135 A before conversion/);
+  assert.match(stampsLane.historyRecords.find(({ label }) => label === "2007 AND 2011 COMPLETED WORK").facts.flat().join(" "), /deteriorated transformer radiators/);
 });
 
 test("2016 feeder growth records retain proposed currents, transfers, and route drawings", () => {

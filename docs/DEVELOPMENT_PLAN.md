@@ -48,6 +48,7 @@ Work items:
 - AVL-005
 - AVL-006
 - AVL-007
+- AVL-008
 - NAV-001
 - QA-001
 

@@ -15,6 +15,7 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added the 2006 switchgear cubicle registers for King's Bridge, Pepperrell, Ridge Road, St. John's Main, and the Stamp's Lane T1/T2 bank. The station histories preserve the feeder breaker, transformer breaker, and tie designations without treating the maintenance forms as current operating one-lines.
 - Added the six transformer repair durations in NLH-NP-014 to the Blaketown, Dunville, Stamp's Lane, Humber, and Trinity station histories.
 - Kept the one-day TRN-T1 repair duration separate from the approximately 25-hour 58-minute customer interruption recorded in the later reliability response.
 - Added the 109-row Newfoundland Power transmission asset register from CA-NP-168 Attachment A. The interface separates the December 31, 2022 historical-cost layer from the June 2005 handbook map and register.
