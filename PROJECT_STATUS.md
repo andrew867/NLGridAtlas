@@ -40,11 +40,12 @@ Updated: 2026-11-12
 - Kept the 33L label tied to the 2020 preliminary design because the 2025 transmission register lists only 35L at Airport. The proposed APT-02 line rebuild remains proposed until a completion record is located.
 - Added individual west-coast, Northern Peninsula, and rural records for Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, and English Harbour West.
 - Added a dedicated Howley station record joining the 138 kV and 69 kV terminal routes, the three-winding HOW-T2 record, HOW-01, the current HOW-T3 distribution record, and the March 2014 equipment inspection sheets.
+- Added a dedicated Buchans record joining all six filed transmission routes, the completed 2019 T1 replacement, BUC-01 and BUC-02, the Buchans Lake hydro connection, and the completed 2025 T1 refurbishment.
 - Verified Berry Hill map selection, station navigation, and record rendering at 1440 by 1000 px and 390 by 844 px. The map selection stayed in place; the record link opened the station register; the mobile page had no horizontal page overflow.
 - Added the 2003 staged transformer ratings for Howley, Deer Lake, and Stony Brook.
 - Added the 1998 Massey Drive 230/66 kV transformer replacement record from the 2001 prefiled testimony.
 - Separated the original Holyrood T8 from the later Holyrood T8 model after locating the 2014 relocation record. The original unit entered service in the Sunnyside T1 position by December 2014.
-- Added Buchans T1's 1970 Massey Drive installation, 1998 Buchans relocation, and 2018 replacement plan.
+- Added Buchans T1's 1970 Massey Drive installation, 1998 Buchans relocation, 2018 replacement basis, 2019 completion record, and 2025 refurbishment.
 - Confirmed the replacement Holyrood T8 was installed in 2014 at 75/100/125 MVA.
 - Added the Holyrood T7 equipment chain: the 1969 Canadian General Electric unit, the 2018 removal from service, the Churchill Falls T31 replacement, and project completion in 2024.
 - Located Holyrood sheet B, revision 17, dated December 18, 2014. It updates one station section but is not a complete post-2012 station drawing set.

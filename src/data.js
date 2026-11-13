@@ -740,6 +740,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2018/NLH2018Capital/applications/Capital%20Budget%20Volume%20II.pdf"
   },
   {
+    id: "np-2009-buchans-modernization",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Buchans Substation Refurbishment and Modernization",
+    topics: ["Buchans", "BUC-01", "BUC-02", "12.5 kV", "reclosers", "RTU", "Buchans Lake hydro plant"],
+    pages: "physical PDF p. 268",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "nlh-buchans-completion-2020",
+    year: 2020,
+    organization: "NL Hydro",
+    title: "Transmission System and Terminal Station Asset Management Execution Report",
+    topics: ["Buchans", "T1", "230/66 kV", "transformer replacement", "completion"],
+    pages: "physical PDF p. 51",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/transmission/From%20NLH%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202020-05-11.PDF"
+  },
+  {
+    id: "nlh-buchans-q3-2025",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Q3 2025 Quarterly Regulatory Report, Revision 1",
+    topics: ["Buchans", "T1", "tap changer", "transformer refurbishment", "leak repairs"],
+    pages: "physical PDF p. 36",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q3%20Report%20for%20period%20ending%20September%202025%20-%20Revision%201%20-%202026-01-06.PDF"
+  },
+  {
     id: "nlh-deer-lake-2010",
     year: 2009,
     organization: "NL Hydro",
@@ -5005,14 +5035,14 @@ export const islandTerminalRecords = [
     code: "BUC",
     name: "Buchans Terminal Station",
     status: "verified",
-    facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2018 replacement plan", "Retire the former T1 and install the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare in 2019"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
+    facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2019 T1 replacement", "Completed using the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare"], ["2025 T1 work", "Tap changer oil replacement, access hatch re-gasketing, and leak repairs completed"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
     diagram: {
-      label: "2018 transformer replacement / 2018 routes",
+      label: "2019 completed transformer replacement / 2018 routes",
       buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }],
       transformers: [{ label: "T1", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2" }],
       circuits: [{ label: "TL205", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL232", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL228", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL233", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }, { label: "TL264", destination: "Duck Pond", bus: "b2" }, { label: "TL280", destination: "Star Lake", bus: "b2" }]
     },
-    sources: [sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 458 to 460"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 458 to 460"), sourceRef("nlh-buchans-completion-2020", "physical PDF p. 51"), sourceRef("nlh-buchans-q3-2025", "physical PDF p. 36"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "DLK",
@@ -7909,6 +7939,120 @@ const earlyFeederMapProfiles = [
 export const stationProfiles = [
   ...filedFeederMapProfiles,
   ...earlyFeederMapProfiles,
+  {
+    code: "BUC",
+    name: "Buchans",
+    voltage: "230/66/12.5 kV",
+    circuitRegisterLabel: "2018 FILED TRANSMISSION ROUTES",
+    circuitSources: [
+      { sourceId: "np-2018-pub-np-084", pages: "physical PDF pp. 25 to 26" }
+    ],
+    connectedCircuits: [
+      { circuit: "TL205", from: "Stony Brook", from_code: "STB", to: "Buchans", to_code: "BUC" },
+      { circuit: "TL232", from: "Stony Brook", from_code: "STB", to: "Buchans", to_code: "BUC" },
+      { circuit: "TL228", from: "Buchans", from_code: "BUC", to: "Massey Drive", to_code: "MAS" },
+      { circuit: "TL233", from: "Buchans", from_code: "BUC", to: "Bottom Brook", to_code: "BBK" },
+      { circuit: "TL264", from: "Buchans", from_code: "BUC", to: "Duck Pond" },
+      { circuit: "TL280", from: "Buchans", from_code: "BUC", to: "Star Lake" }
+    ],
+    feederRegister: ["BUC-01", "BUC-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2019 completed T1 replacement / 2018 filed routes",
+      buses: [
+        { id: "b1", label: "bus", voltage: "230 kV" },
+        { id: "b2", label: "bus", voltage: "66 kV" },
+        { id: "b3", label: "bus", voltage: "12.5 kV" }
+      ],
+      transformers: [
+        { label: "BUC-T1", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2" },
+        { label: "Local transformer", rating: "66/12.5 kV", from: "b2", to: "b3" }
+      ],
+      circuits: [
+        { label: "TL205", destination: "Stony Brook", bus: "b1", destinationCode: "STB" },
+        { label: "TL232", destination: "Stony Brook", bus: "b1", destinationCode: "STB" },
+        { label: "TL228", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" },
+        { label: "TL233", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" },
+        { label: "TL264", destination: "Duck Pond", bus: "b2" },
+        { label: "TL280", destination: "Star Lake", bus: "b2" },
+        { label: "BUC-01", destination: "Buchans Lake hydro plant and local distribution", bus: "b3", link: false },
+        { label: "BUC-02", destination: "Local distribution", bus: "b3", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2009 JOINT STATION RECORD",
+      title: "Newfoundland Power distribution equipment at the Hydro terminal",
+      sourceId: "np-2009-buchans-modernization",
+      pages: "physical PDF p. 268",
+      facts: [
+        ["Newfoundland Power equipment", "Two 12.5 kV distribution feeder terminations"],
+        ["Filed service", "Approximately 700 customers in the Buchans area"],
+        ["BUC-01", "Connects the 2.0 MW Buchans Lake hydro plant to the Island Interconnected System"],
+        ["2009 work", "Replace both feeder reclosers and add an RTU for remote control"]
+      ]
+    },
+    planningRecord: {
+      label: "2019 T1 REPLACEMENT COMPLETION",
+      sourceId: "nlh-buchans-completion-2020",
+      pages: "physical PDF p. 51",
+      facts: [
+        ["Project", "Replace Transformer T1, Buchans"],
+        ["Status", "Complete"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2018 FILED T1 REPLACEMENT BASIS",
+        sourceId: "nlh-buchans-2018",
+        pages: "physical PDF pp. 453 and 458 to 460",
+        facts: [
+          ["Former T1", "Installed at Massey Drive in 1970 and moved to Buchans in 1998"],
+          ["Condition", "Dissolved gas analysis and condition evidence identified a high risk of in-service failure"],
+          ["Replacement", "Hardwoods spare, 230/66 kV, 40/53.3/66.6 MVA"]
+        ]
+      },
+      {
+        label: "Q3 2025 T1 REFURBISHMENT",
+        sourceId: "nlh-buchans-q3-2025",
+        pages: "physical PDF p. 36",
+        facts: [
+          ["Completed work", "Tap changer oil replacement, access hatch re-gasketing, and leak repairs"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "BUCHANS SOURCE SHEETS",
+    referenceSheets: [
+      {
+        title: "2009 joint station and feeder record",
+        image: "./reference-maps/buchans-2009-modernization.png",
+        alt: "2009 capital filing page describing the joint Buchans station, two 12.5 kV feeders, and BUC-01 Buchans Lake hydro connection",
+        sourceId: "np-2009-buchans-modernization",
+        pages: "physical PDF p. 268"
+      },
+      {
+        title: "2018 T1 replacement basis",
+        image: "./reference-maps/buchans-2018-replacement.png",
+        alt: "2018 capital filing summary for replacement of Buchans transformer T1 with the Hardwoods spare",
+        sourceId: "nlh-buchans-2018",
+        pages: "physical PDF p. 453"
+      },
+      {
+        title: "2019 T1 replacement completion record",
+        image: "./reference-maps/buchans-2020-completion.png",
+        alt: "2020 execution report table marking replacement of Buchans transformer T1 complete",
+        sourceId: "nlh-buchans-completion-2020",
+        pages: "physical PDF p. 51"
+      },
+      {
+        title: "Q3 2025 T1 refurbishment record",
+        image: "./reference-maps/buchans-2025-refurbishment.png",
+        alt: "Q3 2025 quarterly report listing completed tap changer oil, gasket, and leak repairs on Buchans transformer T1",
+        sourceId: "nlh-buchans-q3-2025",
+        pages: "physical PDF p. 36"
+      }
+    ]
+  },
   {
     code: "HOW",
     name: "Howley",

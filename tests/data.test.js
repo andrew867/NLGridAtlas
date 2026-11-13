@@ -2062,6 +2062,24 @@ test("Airport separates the filed design from installed and proposed records", (
   assert.match(historyFacts, /82 A on phase B and 109 A on phase C; 85 A planning criterion/);
 });
 
+test("Buchans joins the terminal transformer and Newfoundland Power distribution record", () => {
+  const buchans = stationProfiles.find((station) => station.code === "BUC");
+  assert.ok(buchans);
+  assert.deepEqual(buchans.connectedCircuits.map(({ circuit }) => circuit), ["TL205", "TL232", "TL228", "TL233", "TL264", "TL280"]);
+  assert.deepEqual(buchans.feederRegister, ["BUC-01", "BUC-02"]);
+  assert.deepEqual(buchans.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "66 kV", "12.5 kV"]);
+  assert.deepEqual(buchans.diagram.transformers.map(({ label, rating }) => [label, rating]), [["BUC-T1", "40/53.3/66.6 MVA"], ["Local transformer", "66/12.5 kV"]]);
+  assert.deepEqual(buchans.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 268", "physical PDF p. 453", "physical PDF p. 51", "physical PDF p. 36"]);
+  const distributionFacts = buchans.engineeringRecord.facts.flat().join(" ");
+  const completionFacts = buchans.planningRecord.facts.flat().join(" ");
+  const historyFacts = buchans.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(distributionFacts, /Two 12\.5 kV distribution feeder terminations/);
+  assert.match(distributionFacts, /2\.0 MW Buchans Lake hydro plant/);
+  assert.match(completionFacts, /Replace Transformer T1, Buchans Status Complete/);
+  assert.match(historyFacts, /Hardwoods spare, 230\/66 kV, 40\/53\.3\/66\.6 MVA/);
+  assert.match(historyFacts, /Tap changer oil replacement, access hatch re-gasketing, and leak repairs/);
+});
+
 test("Howley joins the terminal routes and local distribution record", () => {
   const howley = stationProfiles.find((station) => station.code === "HOW");
   assert.ok(howley);

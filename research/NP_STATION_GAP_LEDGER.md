@@ -80,6 +80,15 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2027 transformer register records HOW-T3 at 25/4.2 kV and 1 MVA, with a 1.04 MVA 2026 forecast, physical PDF p. 548.
 - [ ] The internal connection between Hydro's terminal equipment and Newfoundland Power's 25/4.2 kV distribution transformer remains open; no public operating one-line was located.
 
+## Buchans terminal and substation record
+
+- [x] The 2018 transmission table identifies TL205 and TL232 to Stony Brook, TL228 to Massey Drive, TL233 to Bottom Brook, TL264 to Duck Pond, and TL280 to Star Lake, PUB-NP-084 Attachment A, physical PDF pp. 25 to 26.
+- [x] The 2009 filing records a joint Hydro and Newfoundland Power station. Newfoundland Power's equipment terminated BUC-01 and BUC-02 at 12.5 kV and served approximately 700 customers, physical PDF p. 268.
+- [x] BUC-01 connected the 2.0 MW Buchans Lake hydro plant to the Island Interconnected System. The same filing proposed replacement of both reclosers and installation of an RTU, physical PDF p. 268.
+- [x] The 2018 filing selected the Hardwoods spare, rated 230/66 kV and 40/53.3/66.6 MVA, to replace Buchans T1. Hydro's 2020 execution report marks the 2019 replacement complete, physical PDF pp. 453 and 458 to 460; completion report physical PDF p. 51.
+- [x] Hydro's Q3 2025 report records completed T1 tap changer oil replacement, access hatch re-gasketing, and leak repairs, physical PDF p. 36.
+- [ ] A current breaker-level one-line and the local 66/12.5 kV transformer nameplate remain open.
+
 ## St. George's, Robinsons, and Lookout Brook 403L record
 
 - [x] 403L is the 66 kV main line between St. George's and Lookout Brook; Robinsons is supplied by a 4.0 km three-phase radial tap, 2020 Capital Budget Application, physical PDF p. 394.
