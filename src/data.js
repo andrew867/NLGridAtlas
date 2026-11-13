@@ -2760,6 +2760,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/IC-NLH-101.PDF"
   },
   {
+    id: "nlh-holyrood-breakers-2014-plan",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "Air Blast Circuit Breaker Replacement Program",
+    topics: ["Holyrood", "230 kV", "air blast circuit breakers", "SF6 circuit breakers", "Labrador-Island Link"],
+    pages: "physical PDF pp. 22, 25 and 27",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/AirBlastCircuitBreakers-2014-08-01.pdf"
+  },
+  {
+    id: "nlh-holyrood-breakers-2014-completion",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "NP-NLH-131 Revision 1, Major Island Interconnected System Changes",
+    topics: ["Holyrood", "B1L17", "B1B11", "B2B11", "230 kV circuit breakers", "replacement"],
+    pages: "physical PDF pp. 7 to 8",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA-Amended/files/rfi/NP-NLH-131%20Rev%201.PDF"
+  },
+  {
+    id: "nlh-holyrood-b1l17-2014",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "PR-PUB-NLH-036, Holyrood Breaker B1L17 Replacement",
+    topics: ["Holyrood", "B1L17", "SF6 circuit breaker", "in-service date"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHGRASUPP2013/PrudenceReview/files/rfi/PR-PUB-NLH-036.PDF"
+  },
+  {
+    id: "nlh-holyrood-breakers-2015-status",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "2015 to 2016 Winter Readiness Planning Report, December 1 Status",
+    topics: ["Holyrood", "Bay d'Espoir", "circuit breaker upgrades", "winter readiness", "in service"],
+    pages: "physical PDF p. 22",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/2015-2016WinterReadinessPlanningReport-StatusUpdatetoDecember1-2015-2015-12-03.pdf"
+  },
+  {
+    id: "nlh-breakers-2016-status",
+    year: 2016,
+    organization: "NL Hydro",
+    title: "2016 to 2017 Winter Readiness Report, November Update",
+    topics: ["circuit breakers", "winter readiness", "terminal stations", "replacement", "refurbishment"],
+    pages: "physical PDF pp. 30 to 31",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/Winter%20Readiness%20Report%20-%20November%20Upate%20-%202016-12-07.pdf"
+  },
+  {
     id: "mhi-nalcor-11",
     year: 2012,
     organization: "Manitoba Hydro International / Nalcor Energy",
@@ -5455,6 +5505,12 @@ export const components = {
     summary: "The December 2012 drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. The 2022 condition study confirms the transformer inventory, including the unit-service and station-service banks. T8 was replaced in 2014, the two plant-service projects were completed in 2019, the replacement T7 entered service on February 1, 2024, and the Unit 1 turbine and generator overhaul finished in February 2025.",
     data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine", "15 MW through T9"], ["Black start", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"]],
     sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35")]
+  },
+  "hrd-breaker-program": {
+    diagram: "hrd", status: "reported", code: "HRD / 230 kV BREAKERS", title: "Holyrood 230 kV breaker replacement program",
+    summary: "Hydro scheduled nine 230 kV air-blast breakers for replacement in three annual groups. The 2014 response names all three completed replacements. A December 2015 report states that the Holyrood breaker upgrades were complete and in service. The 2016 completion note covers a wider multi-site breaker program and does not identify its breakers by station.",
+    data: [["2014 group", "B2B11, B1B11 and B1L17; replaced"], ["B1L17 in service", "October 17, 2014; new SF6 breaker"], ["2015 group", "B2L42, B3L18 and B3B13; scheduled group; Holyrood upgrades reported complete and in service by December 1"], ["2016 group", "B12L42, B12L17 and B12B15; scheduled group"], ["2016 program status", "Upgrade Circuit Breakers 2015-2016 marked complete; eleven of twelve breakers complete, with the remaining breaker at Bay d'Espoir"]],
+    sources: [sourceRef("nlh-holyrood-breakers-2014-plan", "physical PDF pp. 22, 25 and 27"), sourceRef("nlh-holyrood-breakers-2014-completion", "physical PDF pp. 7 to 8"), sourceRef("nlh-holyrood-b1l17-2014", "physical PDF p. 1"), sourceRef("nlh-holyrood-breakers-2015-status", "physical PDF p. 22"), sourceRef("nlh-breakers-2016-status", "physical PDF pp. 30 to 31")]
   },
   "hrd-b8l39": {
     diagram: "hrd", status: "verified", code: "HRD / 39L", title: "Holyrood 39L terminal equipment",

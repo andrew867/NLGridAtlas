@@ -15,6 +15,7 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added the Holyrood nine-breaker 230 kV replacement schedule, the explicit 2014 completion record, the October 17, 2014 B1L17 in-service date, the December 2015 Holyrood completion report, and the 2016 multi-site program status. The later reports do not provide equipment-by-equipment commissioning dates for the 2015 and 2016 Holyrood groups.
 - Added exact in-service dates from the 2026 GRA asset schedule for the replacement Holyrood T7, Western Avalon TL208 protection and terminal equipment, and Western Avalon breaker B4L64. The asset dates remain separate from unproved bus positions.
 - Added dated Colliers and Springfield one-lines using the December 31, 2022 transmission endpoint register, the 2018 feeder register, and the 2027 transformer table. Springfield retains its explicit 2015 modernization completion record. Colliers breaker positions and direct completion remain open.
 - Added the 2006 switchgear cubicle registers for King's Bridge, Pepperrell, Ridge Road, St. John's Main, and the Stamp's Lane T1/T2 bank. The station histories preserve the feeder breaker, transformer breaker, and tie designations without treating the maintenance forms as current operating one-lines.

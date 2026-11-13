@@ -3118,6 +3118,16 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.match(components["hrd-summary"].data.flat().join(" "), /lower-cost Newfoundland Power supply connection/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /B8L39 breaker.*August 2018.*disconnects.*September 2019/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /292\.827 million capital.*330\.915 million operating.*623\.742 million total/);
+  const breakerProgram = components["hrd-breaker-program"];
+  assert.equal(breakerProgram.status, "reported");
+  assert.match(breakerProgram.data.flat().join(" "), /B2B11, B1B11 and B1L17; replaced/);
+  assert.match(breakerProgram.data.flat().join(" "), /B2L42, B3L18 and B3B13/);
+  assert.match(breakerProgram.data.flat().join(" "), /B12L42, B12L17 and B12B15/);
+  assert.match(breakerProgram.data.flat().join(" "), /October 17, 2014; new SF6 breaker/);
+  assert.match(breakerProgram.summary, /does not identify its breakers by station/);
+  for (const sourceId of ["nlh-holyrood-breakers-2014-plan", "nlh-holyrood-breakers-2014-completion", "nlh-holyrood-b1l17-2014", "nlh-holyrood-breakers-2015-status", "nlh-breakers-2016-status"]) {
+    assert.ok(sources.some((source) => source.id === sourceId), `${sourceId} source is required`);
+  }
   const facilityReview = sources.find((source) => source.id === "nlh-holyrood-facility-review-2014");
   assert.equal(facilityReview.pages, "physical PDF pp. 61 to 66");
   assert.match(components["hrd-t5"].sources.map(({ sourceId }) => sourceId).join(" "), /nlh-holyrood-facility-review-2014/);

@@ -19,6 +19,20 @@
 
 The located record does not support a completed permanent conversion of Units 1, 2, or 3. The 2012 Units 1 and 2 conversion concept, the existing reversible Unit 3 arrangement, the 2022 life-extension plan, and the 2026 operating report are different dated states.
 
+## 230 kV breaker replacement program
+
+The August 2014 program records nine Holyrood 230 kV air-blast breakers and assigns them to three annual replacement groups. The program specified new SF6 breakers.
+
+| Program year | Breakers | Located completion evidence |
+| --- | --- | --- |
+| 2014 | B2B11, B1B11, B1L17 | NP-NLH-131 Revision 1 names all three as replaced. PR-PUB-NLH-036 records B1L17 in service on October 17, 2014. |
+| 2015 | B2L42, B3L18, B3B13 | The December 1 winter-readiness report states that the Holyrood and Bay d'Espoir circuit-breaker upgrades were complete and the equipment was in service. The completion sentence does not list the three Holyrood identifiers. |
+| 2016 | B12L42, B12L17, B12B15 | The November update marks the multi-site `Upgrade Circuit Breakers 2015-2016` project complete. Its note records eleven of twelve breakers complete and places the remaining breaker at Bay d'Espoir. The note does not list the Holyrood identifiers. |
+
+Sources: [Air Blast Circuit Breaker Replacement Program, physical PDF pp. 22, 25 and 27](http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/AirBlastCircuitBreakers-2014-08-01.pdf); [NP-NLH-131 Revision 1, physical PDF pp. 7 to 8](http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA-Amended/files/rfi/NP-NLH-131%20Rev%201.PDF); [PR-PUB-NLH-036, physical PDF p. 1](http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHGRASUPP2013/PrudenceReview/files/rfi/PR-PUB-NLH-036.PDF); [December 1, 2015 winter-readiness status, physical PDF p. 22](http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/2015-2016WinterReadinessPlanningReport-StatusUpdatetoDecember1-2015-2015-12-03.pdf); [November 2016 winter-readiness update, physical PDF pp. 30 to 31](http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/Winter%20Readiness%20Report%20-%20November%20Upate%20-%202016-12-07.pdf).
+
+The 2018 Interim Transmission Funding Agreement lists the Holyrood replacement scope on physical PDF p. 64, but prints `B2L18` where the 2014 schedule and later station records use `B3L18`. The atlas retains the earlier equipment designation and does not use the agreement to establish completion.
+
 ## Plant services and auxiliary distribution
 
 | Date | Filed arrangement or work | Source |

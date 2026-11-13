@@ -658,6 +658,18 @@
       "notes": "NP-NLH-013, physical PDF pp. 1 to 2, provides the September 2015 B1/B2 operating diagram with five breaker strings, 18 breaker identifiers, six 230 kV line positions, three synchronous-condenser connections, and four converter-station connections. PUB-NLH-630, physical PDF p. 8, records five 75 MVAR operating filters plus one installed spare. CA-NLH-019, physical PDF p. 36, lists the 230/25/15 kV, 200 MVA synchronous-condenser transformer spare and a converter-transformer spare at Soldiers Pond. Converter-transformer nameplates, station service, and a post-commissioning as-built breaker sheet remain open."
     },
     {
+      "id": "ISL-030",
+      "title": "Trace the Holyrood 230 kV breaker replacement program",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Connect the filed nine-breaker schedule to the available 2014, 2015 and 2016 completion records without presenting the historical Holyrood one-line as a current as-built arrangement.",
+      "dependencies": ["ISL-002", "SRC-001"],
+      "completion_evidence": ["src/data.js", "index.html", "tests/data.test.js", "tests/terminal-diagram.test.js", "research/HOLYROOD_MUSKRAT_RECORD.md", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "The August 2014 program assigns B2B11, B1B11 and B1L17 to 2014; B2L42, B3L18 and B3B13 to 2015; and B12L42, B12L17 and B12B15 to 2016. NP-NLH-131 Revision 1 explicitly records the 2014 group as replaced. PR-PUB-NLH-036 records B1L17 in service on October 17, 2014. The December 2015 report states that the Holyrood breaker upgrades were complete and in service. The 2016 report marks the wider Upgrade Circuit Breakers 2015-2016 program complete, but does not list its Holyrood breakers or their individual commissioning dates."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

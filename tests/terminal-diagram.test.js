@@ -27,6 +27,12 @@ test("every major island record has a sourced connection diagram", () => {
   }
 });
 
+test("Holyrood historical one-line exposes the breaker program without changing its drawing date", async () => {
+  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  assert.match(html, /data-component="hrd-breaker-program"/);
+  assert.match(html, /DECEMBER 2012 DEMOLITION DRAWING/);
+});
+
 test("terminal diagrams link documented routes to the opposite station or island view", () => {
   const sunnyside = islandTerminalRecords.find((record) => record.code === "SUN");
   const html = renderTerminalDiagram(sunnyside.diagram, escapeHtml);
