@@ -695,7 +695,7 @@
               </div>
               <svg class="station-line holyrood-line" viewBox="0 -16 1100 730" role="img" aria-labelledby="hrd-title hrd-desc">
                 <title id="hrd-title">Holyrood internal transformer and bus arrangement</title>
-                <desc id="hrd-desc">A simplified historical arrangement from physical PDF page 663. T6, T7, and T8 connect the 138 and 230 kilovolt buses. Their three ratings are identified as ONAN, ONAF, and ONAF cooling stages. Generator transformers T1, T2, and T3 feed the 230 kilovolt system. T5 and T10 feed the 66 kilovolt bus. The 15 megawatt gas turbine is shown separately on the 13.8 kilovolt station-service branch through T9.</desc>
+                <desc id="hrd-desc">A simplified arrangement based on Holyrood drawing A0-1403-500-E-001, revision 19, dated March 16, 2015 and marked revised as built. T6, T7, and T8 connect the 138 and 230 kilovolt buses. Generator transformers T1, T2, and T3 feed the 230 kilovolt system. T5 and T10 feed the 66 kilovolt bus. The historical gas-turbine branch is marked no longer in service. The 2014 mobile diesel black-start plant is shown separately.</desc>
                 <path class="line v138-line" d="M70 90 H390"/><text class="bus-label center-label" x="230" y="70">B8 / 138 kV BUS</text>
                 <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-b8l39" aria-label="Holyrood breaker B8L39 and 39L protection">
                   <path class="outgoing" d="M90 90V46"/><rect class="breaker-symbol" x="82" y="30" width="16" height="16"/><path class="outgoing" d="M90 30V10"/>
@@ -742,9 +742,16 @@
                   <circle class="generator-symbol" cy="535" r="26"/><text class="symbol-label" x="0" y="535">GT</text><text class="small-label transformer-rating" x="0" y="500">15 MW</text><text class="small-label transformer-rating" x="0" y="516">13.8 kV</text>
                   <path class="tap" d="M0 561 V575 M0 633 V655"/><circle class="winding generator-winding" cy="594" r="20"/><circle class="winding station-winding" cy="622" r="20"/>
                   <path class="station-bus" d="M-75 655 H75"/><text class="small-label transformer-rating" x="0" y="672">T9 / 10.5/14 MVA</text><text class="small-label transformer-rating" x="0" y="688">STATION SERVICE</text>
+                  <text class="cooling-label transformer-rating" x="0" y="700">NO LONGER IN SERVICE / REV 19</text>
+                </g>
+                <g class="component" tabindex="0" role="button" aria-pressed="false" data-diagram="hrd" data-component="hrd-black-start-2014" aria-label="Holyrood 2014 mobile diesel black-start plant">
+                  <rect class="breaker-symbol" x="825" y="565" width="185" height="92"/>
+                  <text class="small-label center-label" x="918" y="590">2014 BLACK START</text>
+                  <text class="small-label center-label" x="918" y="615">8 × 1,825 kW DIESELS</text>
+                  <text class="small-label center-label" x="918" y="640">4.16 kV CONNECTION</text>
                 </g>
               </svg>
-              <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / DECEMBER 2012 DEMOLITION DRAWING</p>
+              <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / MARCH 2015 REVISION 19 AS-BUILT DRAWING</p>
             </article>
             <aside class="component-evidence station-evidence holyrood-evidence" data-diagram-panel="hrd" data-default-component="hrd-summary" aria-live="polite">
               <span class="evidence-state verified" data-field="state">VERIFIED</span>

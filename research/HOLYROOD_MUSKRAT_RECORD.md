@@ -87,6 +87,22 @@ Source: [PUB-NLH-161, physical PDF pp. 61 to 66](http://www.pub.nl.ca/applicatio
 
 The prose inventory on physical PDF p. 62 identifies the second 230/69 kV transformer as T2. The operating drawing on physical PDF p. 63 labels it T5. The December 2012 plant drawing and later Newfoundland Power study also identify T5, so the atlas uses T5 and preserves the prose discrepancy here.
 
-## Drawing gap
+## March 2015 as-built whole-plant one-line
 
-The 2022 condition study confirms equipment that remained in the Holyrood switchyard, but it does not publish a complete current station one-line. Its document register names `1403-500-E001 PLANT SINGLE LINE DIAGRAM` and `1403-500-E004 PLANT MCC SINGLE LINE DIAGRAM` on physical PDF p. 125, without reproducing either drawing. The atlas therefore keeps the December 2012 electrical drawing as a dated historical arrangement.
+The July 2015 Unit 1 and Unit 3 field-investigation report reproduces `A0-1403-500-E-001`, Holyrood Generating Station Powerhouse and Switchyard Single Line Diagram, on physical PDF p. 17. The title block identifies revision 19. The revision table records:
+
+| Revision | Date | Description |
+| --- | --- | --- |
+| 19 | March 16, 2015 | Revised as built with new T4 extension |
+| 18 | October 1, 2014 | Black start, eight 1,825 kW diesels added |
+| 17 | September 14, 2010 | Air-compressor numbering changed |
+| 16 | June 15, 2005 | Updated |
+| 15 | January 16, 2003 | As built |
+
+Revision 19 is the latest published complete Holyrood electrical arrangement located. It shows the 138 kV, 230 kV, and 66 kV switchyard sections; T1 to T3 generator transformers; T6 to T8 interbus transformers; T5 and T10; UST-1 to UST-3; SST-12 and SST-34; the 4.16 kV and 600 V auxiliary boards; and the mobile diesel black-start plant. The gas-turbine branch is marked `NO LONGER IN SERVICE`. Note B states that the 13.8 kV oil circuit breaker was removed and jumpered out.
+
+Source: [Field Investigation for Unit 1 and Unit 3, physical PDF p. 17](http://www.pub.nl.ca/applications/ARCHIVE/2015/March4thPowerOutage/files/corresp/NLH-Field-Investigation-for-Holyrood-Unit-1-and-Unit-3-March-4-2015-2015-07-20.PDF).
+
+## Remaining drawing gap
+
+The 2022 condition study confirms equipment that remained in the Holyrood switchyard, but it does not publish a later complete station one-line. Its document register names `1403-500-E001 PLANT SINGLE LINE DIAGRAM` and `1403-500-E004 PLANT MCC SINGLE LINE DIAGRAM` on physical PDF p. 125, without reproducing the then-current revisions. The atlas uses revision 19 as the latest published whole-plant arrangement and applies later component changes only where separate filings support them.

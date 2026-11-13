@@ -249,7 +249,7 @@ test("station additions preserve sourced details", async () => {
 
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, />OXP-01</);
-  assert.match(html, /December 2012 demolition drawing/i);
+  assert.match(html, /March 2015 revision 19 as-built drawing/i);
   assert.match(html, /T2 \/ 115\/152\/190 MVA/);
   assert.match(html, /T9 \/ 10\.5\/14 MVA/);
   assert.match(html, /ATI mobile network/);
@@ -520,7 +520,7 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
     { label: "T1", rating: "30/40/50 MVA", from: "b1", to: "b2" },
     { label: "T2", rating: "30/40/50 MVA", from: "b1", to: "b2" }
   ]);
-  assert.match(components["hrd-t8"].summary, /new 75\/100\/125 MVA transformer was installed as Holyrood T8 in 2014/);
+  assert.match(components["hrd-t8"].summary, /replacement 75\/100\/125 MVA Holyrood T8 appears on the March 2015 as-built drawing/);
   assert.match(components["hrd-t7"].summary, /Churchill Falls T31/);
   assert.match(components["hrd-t7"].summary, /entered service on February 1, 2024/);
   assert.ok(howley.sources.some((reference) => reference.sourceId === "nlh-howley-system-2003"));
@@ -3105,6 +3105,7 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.ok(sourceIds.has("nlh-2026-avalon-ct-phase-ii"));
   assert.ok(sourceIds.has("nlh-2026-avalon-ct-pub-nlh-011"));
   assert.ok(sourceIds.has("nlh-2027-ca-nlh-058"));
+  assert.ok(sourceIds.has("nlh-holyrood-as-built-2015"));
   assert.equal(components["hrd-g3"].status, "verified");
   assert.match(components["hrd-g3"].data.flat().join(" "), /Pony motor and SSS clutch/);
   assert.match(components["hrd-g3"].data.flat().join(" "), /April 2022 operation 373 hours/);
@@ -3120,6 +3121,15 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.match(components["hrd-summary"].data.flat().join(" "), /lower-cost Newfoundland Power supply connection/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /B8L39 breaker.*August 2018.*disconnects.*September 2019/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /292\.827 million capital.*330\.915 million operating.*623\.742 million total/);
+  assert.match(components["hrd-summary"].data.flat().join(" "), /A0-1403-500-E-001.*revision 19.*March 16, 2015/);
+  assert.match(components["hrd-summary"].data.flat().join(" "), /Eight 1,825 kW mobile diesel units/);
+  assert.match(components["hrd-gt"].data.flat().join(" "), /No longer in service.*oil circuit breaker removed and jumpered out/i);
+  assert.deepEqual(components["hrd-black-start-2014"].data, [
+    ["Units", "Eight diesel generator sets"],
+    ["Unit rating", "1,825 kW each"],
+    ["Connection", "4.16 kV, three-phase distribution line"],
+    ["Drawing state", "Revision 19 as-built"]
+  ]);
   const breakerProgram = components["hrd-breaker-program"];
   assert.equal(breakerProgram.status, "reported");
   assert.match(breakerProgram.data.flat().join(" "), /B2B11, B1B11 and B1L17; replaced/);

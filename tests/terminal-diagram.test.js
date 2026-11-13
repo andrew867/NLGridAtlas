@@ -27,10 +27,11 @@ test("every major island record has a sourced connection diagram", () => {
   }
 });
 
-test("Holyrood historical one-line exposes the breaker program without changing its drawing date", async () => {
+test("Holyrood one-line exposes the breaker program and 2015 as-built drawing date", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, /data-component="hrd-breaker-program"/);
-  assert.match(html, /DECEMBER 2012 DEMOLITION DRAWING/);
+  assert.match(html, /MARCH 2015 REVISION 19 AS-BUILT DRAWING/);
+  assert.match(html, /data-component="hrd-black-start-2014"/);
 });
 
 test("terminal diagrams link documented routes to the opposite station or island view", () => {

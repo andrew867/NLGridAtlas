@@ -1100,6 +1100,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-161.pdf"
   },
   {
+    id: "nlh-holyrood-as-built-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "Field Investigation for Unit 1 and Unit 3, Holyrood Powerhouse and Switchyard Single-Line",
+    topics: ["Holyrood", "A0-1403-500-E-001", "revision 19", "as-built", "single-line diagram", "black start", "mobile diesel plant", "gas turbine"],
+    pages: "physical PDF p. 17",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/March4thPowerOutage/files/corresp/NLH-Field-Investigation-for-Holyrood-Unit-1-and-Unit-3-March-4-2015-2015-07-20.PDF"
+  },
+  {
     id: "nlh-braya-ciac-2023",
     year: 2023,
     organization: "NL Hydro",
@@ -4752,6 +4762,7 @@ export const staticClaims = [
     scope: "Dated Holyrood internal electrical arrangement",
     status: "verified",
     sources: [
+      { sourceId: "nlh-holyrood-as-built-2015", pages: "physical PDF p. 17" },
       { sourceId: "gra-2013-v2", pages: "physical PDF p. 663" },
       { sourceId: "nlh-holyrood-facility-review-2014", pages: "physical PDF pp. 61 to 66" },
       { sourceId: "nlh-2022-holyrood-t2", pages: "PDF pp. 5 to 13" },
@@ -5522,9 +5533,9 @@ export const components = {
   },
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
-    summary: "The December 2012 drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. The 2022 condition study confirms the transformer inventory, including the unit-service and station-service banks. T8 was replaced in 2014, the two plant-service projects were completed in 2019, the replacement T7 entered service on February 1, 2024, and the Unit 1 turbine and generator overhaul finished in February 2025.",
-    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine", "15 MW through T9"], ["Black start", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35")]
+    summary: "Revision 19 of drawing A0-1403-500-E-001, dated March 16, 2015, is the latest published whole-plant as-built arrangement located. It links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. Later records establish component replacements and operating changes without publishing a newer complete one-line.",
+    data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"]],
+    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35")]
   },
   "hrd-breaker-program": {
     diagram: "hrd", status: "reported", code: "HRD / 230 kV BREAKERS", title: "Holyrood 230 kV breaker replacement program",
@@ -5537,6 +5548,12 @@ export const components = {
     summary: "Hydro placed the replacement B8L39 breaker and both 39L protection relays in service in August 2018. The two adjacent disconnects entered service in September 2019.",
     data: [["B8L39 breaker", "In service August 23, 2018"], ["39L protection 1", "In service August 30, 2018"], ["39L protection 2", "In service August 30, 2018"], ["B8L39-1 disconnect", "In service September 24, 2019"], ["B8L39-2/L39G disconnect", "In service September 24, 2019"]],
     sources: [sourceRef("nlh-bbk-ts2-2018", "physical PDF p. 94"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF p. 13; attachment p. 6")]
+  },
+  "hrd-black-start-2014": {
+    diagram: "hrd", status: "verified", code: "HRD / 2014 BLACK START", title: "Mobile diesel black-start plant",
+    summary: "Revision 18 added the mobile diesel plant to the Holyrood drawing in October 2014. Revision 19 retained eight 1,825 kW diesel units and their 4.16 kV distribution connection in the March 2015 as-built drawing.",
+    data: [["Units", "Eight diesel generator sets"], ["Unit rating", "1,825 kW each"], ["Connection", "4.16 kV, three-phase distribution line"], ["Drawing state", "Revision 19 as-built"]],
+    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17")]
   },
   "hrd-t1": {
     diagram: "hrd", status: "verified", code: "HRD / T1", title: "Holyrood generator transformer T1",
@@ -5576,9 +5593,9 @@ export const components = {
   },
   "hrd-t8": {
     diagram: "hrd", status: "verified", code: "HRD / T8", title: "Holyrood transformer T8",
-    summary: "The T8 shown on the December 2012 drawing moved to the Sunnyside T1 position in 2014. A new 75/100/125 MVA transformer was installed as Holyrood T8 in 2014.",
+    summary: "The former T8 moved to the Sunnyside T1 position in 2014. The replacement 75/100/125 MVA Holyrood T8 appears on the March 2015 as-built drawing.",
     data: [["2012 T8", "75/100/125 MVA, moved to Sunnyside"], ["Current T8 installation", "2014"], ["Current T8 rating", "75/100/125 MVA"], ["2026 model", "125 MVA maximum"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("np-2027-loop-study", "PDF p. 194")]
+    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("np-2027-loop-study", "PDF p. 194")]
   },
   "hrd-t5": {
     diagram: "hrd", status: "verified", code: "HRD / T5", title: "Holyrood transformer T5",
@@ -5594,9 +5611,9 @@ export const components = {
   },
   "hrd-gt": {
     diagram: "hrd", status: "verified", code: "HRD / GT AND T9", title: "Holyrood gas turbine branch",
-    summary: "The 15 MW, 13.8 kV gas turbine connects through T9 to the station-service bus.",
-    data: [["Gas turbine", "15 MW, 13.8 kV"], ["T9", "10.5/14 MVA"], ["Service", "Station-service bus"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663")]
+    summary: "The 15 MW, 13.8 kV gas-turbine branch connects through T9 to the station-service bus. The March 2015 as-built drawing marks the gas turbine no longer in service and notes that its 13.8 kV oil circuit breaker was removed and jumpered out.",
+    data: [["Gas turbine", "15 MW, 13.8 kV"], ["T9", "10.5/14 MVA"], ["Service", "Station-service bus"], ["March 2015 state", "No longer in service; 13.8 kV oil circuit breaker removed and jumpered out"]],
+    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663")]
   },
   "hwd-np-summary": {
     diagram: "hwd-np", status: "verified", code: "HWD / NEWFOUNDLAND POWER", title: "Hardwoods Substation",
