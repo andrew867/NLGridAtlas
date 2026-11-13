@@ -2771,6 +2771,28 @@ test("King's Bridge and Ridge Road records preserve current and historical feede
   assert.match(ridgeRoadFacts, /3\.1 MVA exposed/);
 });
 
+test("Broad Cove, Ridge Road, and Virginia Waters retain the filed 2019-2020 transformer peaks", () => {
+  const broadCove = stationProfiles.find((station) => station.code === "BCV");
+  const ridgeRoad = stationProfiles.find((station) => station.code === "RRD");
+  const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
+
+  const broadCoveLoad = broadCove.historyRecords.find((record) => record.label === "2019-2020 TRANSFORMER LOAD");
+  assert.equal(broadCoveLoad.pages, "physical PDF p. 9");
+  assert.match(broadCoveLoad.facts.flat().join(" "), /BCV-T1.*23\.2 MVA actual peak.*26\.5 MVA worst-case peak.*25\.2 MVA 2021 forecast peak/);
+
+  const ridgeRoadLoad = ridgeRoad.historyRecords.find((record) => record.label === "2019-2020 TRANSFORMER LOAD");
+  const ridgeRoadFacts = ridgeRoadLoad.facts.flat().join(" ");
+  assert.match(ridgeRoadFacts, /RRD-T2.*18\.1 MVA actual peak.*20\.6 MVA worst-case peak.*19\.6 MVA 2021 forecast peak/);
+  assert.match(ridgeRoadFacts, /RRD-T3.*20\.4 MVA actual peak.*23\.3 MVA worst-case peak.*22\.1 MVA 2021 forecast peak/);
+
+  const virginiaWatersLoad = virginiaWaters.historyRecords.find((record) => record.label === "2019-2020 TRANSFORMER LOAD");
+  const virginiaWatersFacts = virginiaWatersLoad.facts.flat().join(" ");
+  assert.match(virginiaWatersFacts, /VIR-T1.*20\.2 MVA actual peak.*23\.6 MVA worst-case peak.*23\.3 MVA 2021 forecast peak/);
+  assert.match(virginiaWatersFacts, /VIR-T2.*22\.7 MVA actual peak.*25\.9 MVA worst-case peak.*25\.9 MVA 2021 forecast peak/);
+  assert.match(virginiaWatersFacts, /VIR-T3.*15\.7 MVA actual peak.*17\.9 MVA worst-case peak.*17\.1 MVA 2021 forecast peak/);
+  assert.match(virginiaWatersFacts, /February 22, 2019 temporary transfer.*VIR-04 feeder outage.*22\.38 MVA VIR-T3 value/);
+});
+
 test("Goulds record connects the switching station, distribution bank, and feeder maps", () => {
   const goulds = stationProfiles.find((station) => station.code === "GOU");
   const facts = goulds.engineeringRecord.facts.flat().join(" ");

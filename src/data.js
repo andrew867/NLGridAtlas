@@ -2584,7 +2584,7 @@ export const sources = [
     year: 2021,
     organization: "Newfoundland Power",
     title: "St. John's North and Portugal Cove System Planning Study Update",
-    topics: ["Virginia Waters", "VIR-T1", "VIR-T2", "VIR-T3", "Airport Substation", "AIR", "APT", "35L", "33L", "66 kV"],
+    topics: ["Broad Cove", "Ridge Road", "Virginia Waters", "BCV-T1", "RRD-T2", "RRD-T3", "VIR-T1", "VIR-T2", "VIR-T3", "actual transformer loads", "Airport Substation", "AIR", "APT", "35L", "33L", "66 kV"],
     pages: "physical PDF pp. 6 to 19",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/substationproject/From%20NP%20-%20St.%20Johns%20North-Portugal%20Cove%20System%20Planning%20Study%20Update%20-%202021-02-12.PDF"
@@ -9058,6 +9058,14 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2019-2020 TRANSFORMER LOAD",
+        sourceId: "np-2021-north-study",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["BCV-T1", "25 MVA rating; 23.2 MVA actual peak; 26.5 MVA worst-case peak; 25.2 MVA 2021 forecast peak"]
+        ]
+      },
+      {
         label: "2008 FILED STATION WORK",
         sourceId: "np-2008-broad-cove",
         pages: "physical PDF p. 163",
@@ -14818,6 +14826,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2019-2020 TRANSFORMER LOAD",
+        sourceId: "np-2021-north-study",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["RRD-T2", "20 MVA rating; 18.1 MVA actual peak; 20.6 MVA worst-case peak; 19.6 MVA 2021 forecast peak"],
+          ["RRD-T3", "20 MVA rating; 20.4 MVA actual peak; 23.3 MVA worst-case peak; 22.1 MVA 2021 forecast peak"]
+        ]
+      },
+      {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
         pages: "physical PDF pp. 408 to 411",
@@ -15308,6 +15325,17 @@ export const stationProfiles = [
       facts: [["VIR-T1/T2", "VIR-01 and VIR-06; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2019-2020 TRANSFORMER LOAD",
+        sourceId: "np-2021-north-study",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["VIR-T1", "25 MVA rating; 20.2 MVA actual peak; 23.6 MVA worst-case peak; 23.3 MVA 2021 forecast peak"],
+          ["VIR-T2", "25 MVA rating; 22.7 MVA actual peak; 25.9 MVA worst-case peak; 25.9 MVA 2021 forecast peak"],
+          ["VIR-T3", "25 MVA rating; 15.7 MVA actual peak; 17.9 MVA worst-case peak; 17.1 MVA 2021 forecast peak"],
+          ["February 22, 2019 temporary transfer", "load moved from VIR-T1 and VIR-T2 to VIR-T3 during a VIR-04 feeder outage; the filing says the earlier 22.38 MVA VIR-T3 value included this temporary transfer"]
+        ]
+      },
       {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
