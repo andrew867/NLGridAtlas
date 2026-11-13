@@ -154,6 +154,36 @@ function sourceUrl(page) {
   return `${islandTopology.source.url}#page=${page}`;
 }
 
+function engineeringRecordSource(record) {
+  const firstPage = String(record.source.physical_pdf_pages).match(/\d+/)?.[0];
+  return firstPage ? `${record.source.url}#page=${firstPage}` : record.source.url;
+}
+
+function engineeringRecord(record) {
+  const facts = record.facts?.length
+    ? `<ul>${record.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join("")}</ul>`
+    : "";
+  const ratings = record.ambient_ratings_mva
+    ? `<div class="island-rating-grid" aria-label="Seasonal planning ratings">
+        ${Object.entries(record.ambient_ratings_mva).map(([ambient, rating]) => `<div><span>${escapeHtml(ambient)} °C</span><strong>${escapeHtml(rating)} MVA</strong></div>`).join("")}
+      </div>`
+    : "";
+  return `<details class="island-engineering-record">
+    <summary><strong>${escapeHtml(record.year)}</strong><span>${escapeHtml(record.label)}</span></summary>
+    ${facts}
+    ${ratings}
+    <a class="evidence-link" href="${escapeHtml(engineeringRecordSource(record))}" target="_blank" rel="noreferrer">Physical PDF ${record.source.physical_pdf_pages.includes(" to ") || record.source.physical_pdf_pages.includes(" and ") ? "pp." : "p."} ${escapeHtml(record.source.physical_pdf_pages)}</a>
+  </details>`;
+}
+
+function engineeringRecords(line) {
+  if (!line.engineering_records?.length) return "";
+  return `<div class="island-engineering-records">
+    <span class="profile-label">DATED ENGINEERING RECORDS</span>
+    ${line.engineering_records.slice().reverse().map(engineeringRecord).join("")}
+  </div>`;
+}
+
 function stationLink(name) {
   const target = stationTargets[name];
   if (!target) return "";
@@ -172,6 +202,7 @@ function circuitDetail(line) {
       <div><dt>Source year</dt><dd>${islandTopology.as_of_year}</dd></div>
       <div><dt>Table</dt><dd>${escapeHtml(line.table)}</dd></div>
     </dl>
+    ${engineeringRecords(line)}
     <a class="evidence-link" href="${escapeHtml(sourceUrl(line.physical_pdf_page))}" target="_blank" rel="noreferrer">PUB-NP-084 Attachment A / physical PDF p. ${line.physical_pdf_page}</a>`;
 }
 

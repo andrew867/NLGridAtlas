@@ -73,6 +73,7 @@ Work items:
 - ISL-004
 - ISL-005
 - ISL-006
+- ISL-007
 
 Exit gate:
 
@@ -81,6 +82,7 @@ Exit gate:
 3. Sunnyside, Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Grand Falls, Massey Drive, Stephenville, and Come By Chance have diagrams or explicit evidence-gap records.
 4. Upper Salmon, Granite Canal, Cat Arm, and Hinds Lake have individual records.
 5. Rural and western stations are not hidden inside one generic map image.
+6. Published conductor, line-length, and seasonal rating records are attached to their dated circuits.
 
 ## Phase 3, generation, HVDC, and converter systems
 

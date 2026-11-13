@@ -266,6 +266,16 @@ button, input { font: inherit; }
 .island-detail-voltage.voltage-230 { color: var(--phase-a); }
 .island-detail-voltage.voltage-138 { color: #835b0e; }
 .island-detail-voltage.voltage-66 { color: var(--water); }
+.island-engineering-records { margin-top: 1.35rem; border-top: 1px solid var(--ink); padding-top: 1rem; }
+.island-engineering-record { border-bottom: 1px solid var(--rule); }
+.island-engineering-record summary { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .75rem; align-items: baseline; padding: .75rem 0; cursor: pointer; font: 400 .68rem/1.35 "IBM Plex Mono", monospace; }
+.island-engineering-record summary strong { color: var(--water); }
+.island-engineering-record ul { margin: 0 0 .75rem; padding-left: 1.15rem; font-size: .86rem; line-height: 1.45; }
+.island-engineering-record li + li { margin-top: .3rem; }
+.island-rating-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: .75rem; border-top: 1px solid var(--rule); }
+.island-rating-grid div { display: flex; justify-content: space-between; gap: .5rem; padding: .55rem .35rem; border-bottom: 1px solid var(--rule); font: 400 .65rem/1.25 "IBM Plex Mono", monospace; }
+.island-rating-grid div:nth-child(odd) { border-right: 1px solid var(--rule); }
+.island-engineering-record > .evidence-link { display: inline-block; margin: 0 0 .75rem; font-size: .65rem; }
 .island-connected-circuits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 1rem 0; border-top: 1px solid var(--rule); }
 .island-connected-circuits button { display: flex; justify-content: space-between; gap: .5rem; border: 0; border-bottom: 1px solid var(--rule); padding: .65rem .3rem; background: transparent; color: var(--ink); cursor: pointer; font: 400 .68rem/1.2 "IBM Plex Mono", monospace; }
 .island-connected-circuits button:nth-child(odd) { border-right: 1px solid var(--rule); padding-right: .65rem; }

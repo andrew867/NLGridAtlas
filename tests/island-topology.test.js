@@ -39,6 +39,24 @@ test("critical 230 kV paths match PUB-NP-084 Attachment A", () => {
   assert.deepEqual(byCircuit.TL218.segments, [{ from: "Holyrood Generating Station", to: "Oxen Pond" }]);
 });
 
+test("east Avalon circuit details preserve dated engineering records", () => {
+  const byCircuit = Object.fromEntries(topology.lines.map((line) => [line.circuit, line]));
+  assert.deepEqual(byCircuit.TL201.engineering_records.map(({ year }) => year), [1996, 2014, 2024]);
+  assert.match(byCircuit.TL201.engineering_records[0].facts.join(" "), /81 km.*636 kcmil.*1192 kcmil/);
+  assert.deepEqual(byCircuit.TL201.engineering_records[1].ambient_ratings_mva, {
+    0: 322.2,
+    15: 260.2,
+    25: 207.7,
+    30: 175.5
+  });
+  assert.match(byCircuit.TL201.engineering_records[2].facts[0], /March 2024/);
+  assert.match(byCircuit.TL217.engineering_records[1].facts[0], /804 kcmil AACSR\/TW.*795 kcmil/);
+  assert.match(byCircuit.TL242.engineering_records[0].facts[0], /804 kcmil, 23\/19 AACSR\/TW/);
+  assert.match(byCircuit.TL266.engineering_records[0].facts[0], /636 kcmil, 26\/7 ACSR Grosbeak/);
+  assert.equal(byCircuit.TL218.engineering_records[0].year, 1996);
+  assert.match(byCircuit.TL218.engineering_records[0].label, /Pre-Soldiers Pond/);
+});
+
 test("69 kV circuit assignment remains an explicit evidence gap", () => {
   assert.equal(topology.lines.some((line) => line.voltage_kv === 69), false);
   assert.match(topology.open_gaps.join(" "), /69 kV asset-class designations/);

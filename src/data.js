@@ -1194,10 +1194,20 @@ export const sources = [
     year: 2014,
     organization: "NL Hydro",
     title: "Upgrade Transmission Line Corridor, Bay d'Espoir to Western Avalon",
-    topics: ["Soldiers Pond", "Labrador-Island Link", "HVDC", "synchronous condenser", "converter station"],
-    pages: "physical PDF pp. 30, 37 to 38",
+    topics: ["Soldiers Pond", "Labrador-Island Link", "HVDC", "synchronous condenser", "converter station", "transmission conductor", "seasonal MVA ratings"],
+    pages: "physical PDF pp. 30, 37 to 38, 44 to 45 and 95",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/NLHCBSUPP2014/TransmissionLine/Application/Application-2014-04-30.pdf"
+  },
+  {
+    id: "nlh-1996-avalon-line-reliability",
+    year: 1996,
+    organization: "NL Hydro",
+    title: "Reliability Study of Transmission Lines on Avalon and Connaigre Peninsulas",
+    topics: ["TL201", "TL217", "TL218", "TL236", "TL220", "transmission conductor", "line construction", "ice loading"],
+    pages: "physical PDF pp. 48 and 53 to 55",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit85.pdf"
   },
   {
     id: "nlh-lil-commissioning-2023",

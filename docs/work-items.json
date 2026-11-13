@@ -358,6 +358,18 @@
       "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, Buchans, Bay d'Espoir, and Come By Chance transformer records. Holyrood T7 and T8 replacement histories extend through the 2024 T7 commissioning completion. Bay d'Espoir has separate 1998 station 1 and 2013 station 2 equipment records. The Come By Chance record includes the 2014 ratings, manufacture dates, bus arrangement, and the later Braya-specific cost assignment. Nameplate, filed equipment, study-model, and emergency ratings remain separate. Unsupported rural nameplates and current rural one-lines remain deferred under ISL-005."
     },
     {
+      "id": "ISL-007",
+      "title": "Add dated conductor and seasonal rating records to the Avalon 230 kV corridor",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Record published line construction, conductor types, circuit lengths, seasonal MVA ratings, and later operating changes without merging records from different years.",
+      "dependencies": ["ISL-001", "ISL-002"],
+      "completion_evidence": ["research/AVALON_230KV_LINE_ENGINEERING.md", "research/derived/island-ac-topology-2018.json", "src/island-backbone.js", "tests/island-topology.test.js"],
+      "blocker": null,
+      "notes": "The interactive circuit panel now includes the 1996 construction records for TL201, TL217, TL218, and TL236; the 2014 seasonal MVA ratings for TL201, TL208, TL217, TL218, TL236, TL242, TL265, TL266, and TL268; 2014 conductor records for TL201, TL217, TL242, and TL266; and the March 2024 TL201 dynamic line rating installation. The 1996 routes remain explicitly dated before the Soldiers Pond line splits."
+    },
+    {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,
