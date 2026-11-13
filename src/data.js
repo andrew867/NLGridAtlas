@@ -4030,6 +4030,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/CA-NP-121.PDF"
   },
   {
+    id: "np-2024-ca-np-138-central-closeout",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-138, Central Newfoundland System Planning Program Closeout",
+    topics: ["Central Newfoundland", "Lewisporte", "Rattling Brook", "Notre Dame Junction", "138 kV conversion", "capital expenditure", "project completion"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/CA-NP-138.PDF"
+  },
+  {
     id: "pu-24-2020-central-abandonment",
     year: 2020,
     organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
@@ -10796,6 +10806,18 @@ export const stationProfiles = [
           ["Selected alternative", "convert Lewisporte and Rattling Brook to the 138 kV system and remove the intervening 66 kV system"],
           ["Study result", "Alternative 3 had the lowest stated net present value of customer revenue requirement at $24.229 million"],
           ["NDJ work", "decommission Notre Dame Junction with 103L and the Rattling Brook to Roycefield section of 102L"]
+        ]
+      },
+      {
+        label: "2019 TO 2021 CENTRAL PROGRAM REPORTED COMPLETE",
+        sourceId: "np-2024-ca-np-138-central-closeout",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Program", "multiple substation and transmission projects converting part of the Central Newfoundland system from 66 kV to 138 kV"],
+          ["Status", "the projects in the selected alternative were reported complete"],
+          ["Approved budget", "$13.641 million"],
+          ["Actual expenditure", "$13.881 million"],
+          ["Variance", "$240,000 above budget; reported as approximately 2 percent"]
         ]
       },
       {

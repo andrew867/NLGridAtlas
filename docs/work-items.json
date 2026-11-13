@@ -514,6 +514,18 @@
       "notes": "IIC-NLH-012 Attachment 2 records the replacement Holyrood T7 in service on February 1, 2024; Western Avalon TL208 protection and disconnect L08G in service on November 4, 2017; the TL208 cable and terminal-hardware group in service on December 15, 2018; and breaker B4L64 in service on November 5, 2020. The asset schedule does not establish internal bus positions."
     },
     {
+      "id": "ISL-018",
+      "title": "Add the Central Newfoundland program closeout",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Add the reported completion and actual expenditure for the 2019 to 2021 Central Newfoundland 138 kV conversion program without assigning an unsupported Notre Dame Junction removal date.",
+      "dependencies": ["ISL-010", "SRC-001"],
+      "completion_evidence": ["research/CENTRAL_NEWFOUNDLAND_PROGRAM_CLOSEOUT.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "CA-NP-138 physical PDF p. 2 reports the selected 2019 to 2021 program complete at $13.881 million actual expenditure against a $13.641 million approved budget. The program-level closeout does not give a Notre Dame Junction dismantling date, so that station remains a historical arrangement rather than a dated removal record."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

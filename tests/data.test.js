@@ -894,7 +894,7 @@ test("Roycefield remains a 66 kV switching point without an invented transformer
   assert.deepEqual(roycefield.referenceSheets.map(({ image }) => image), ["./reference-maps/rfd-2023-single-line.png"]);
 });
 
-test("Notre Dame Junction stays historical until a completion record establishes removal", () => {
+test("Notre Dame Junction stays historical because the program closeout lacks an asset removal date", () => {
   const notreDameJunction = stationProfiles.find((station) => station.code === "NDJ");
   assert.ok(notreDameJunction);
   assert.equal(notreDameJunction.voltage, "66 kV historical");
@@ -915,6 +915,10 @@ test("Notre Dame Junction stays historical until a completion record establishes
 
   const inspection = notreDameJunction.historyRecords.find((record) => record.label === "MARCH 2014 INSPECTION REGISTER");
   assert.match(inspection.facts.flat().join(" "), /battery asset 100343 and charger asset 110085/);
+  const closeout = notreDameJunction.historyRecords.find((record) => record.label === "2019 TO 2021 CENTRAL PROGRAM REPORTED COMPLETE");
+  assert.equal(closeout.sourceId, "np-2024-ca-np-138-central-closeout");
+  assert.match(closeout.facts.flat().join(" "), /reported complete.*\$13\.641 million.*\$13\.881 million.*\$240,000 above budget.*approximately 2 percent/s);
+  assert.equal(sources.find((source) => source.id === "np-2024-ca-np-138-central-closeout").pages, "physical PDF p. 2");
   const successor = notreDameJunction.historyRecords.find((record) => record.label === "2025 FILED SUCCESSOR CONNECTIONS");
   assert.match(successor.facts.flat().join(" "), /137L from Rattling Brook and 147L from Cobb's Pond/);
   assert.deepEqual(notreDameJunction.referenceSheets.map(({ image }) => image), ["./reference-maps/ndj-2018-central-system.png"]);
