@@ -1290,6 +1290,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/2ReviewofSupplyDisruptionsandRotatingOutagesVolumeII.pdf"
   },
   {
+    id: "np-2019-pub-np-056",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-056 Attachment B, Hardwoods short and long substation inspection forms",
+    topics: ["Hardwoods", "distribution breakers", "line breakers", "transformer breakers", "reclosers", "equipment register"],
+    pages: "physical PDF pp. 19 to 31",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-056.PDF"
+  },
+  {
     id: "nlh-gra-2017-v2",
     year: 2017,
     organization: "NL Hydro",
@@ -14244,6 +14254,19 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "APRIL 2019 EQUIPMENT REGISTER",
+        sourceId: "np-2019-pub-np-056",
+        pages: "physical PDF pp. 20 to 30",
+        facts: [
+          ["Distribution bulk-oil breakers", "HWD-01-B, asset 210103; HWD-02-B, asset 210102; HWD-06-B, asset 210101"],
+          ["Distribution vacuum and SF6 breakers", "HWD-03-B, vacuum asset 210869; HWD-04-B, SF6 asset 210669; HWD-07-B, SF6 asset 210642; HWD-08-B, SF6 asset 210641"],
+          ["Line bulk-oil breakers", "HWD-19L-B, asset 210117; HWD-49L-B, asset 210202; HWD-5L-B, asset 210203; HWD-79L-B, asset 210185"],
+          ["Line SF6 breakers", "HWD-54L-B, asset 210706; HWD-72L-B, asset 210571"],
+          ["Transformer equipment listed", "HWD-T1 asset 200271 with bulk-oil breaker 210122; HWD-T2 asset 200236 with bulk-oil breaker 210123"],
+          ["Feeder reclosers", "HWD-07-R2, Tavrida Electric asset 230657; HWD-08-R2, Tavrida Electric asset 230659; HWD-09-R4, G&W asset 230722"]
+        ]
+      },
+      {
         label: "2013 RESTORATION ARRANGEMENT",
         sourceId: "np-east-coast-restoration-2013",
         pages: "physical PDF p. 818",
@@ -14625,6 +14648,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2013 RESTORATION ARRANGEMENT",
+        sourceId: "np-east-coast-restoration-2013",
+        pages: "physical PDF p. 820",
+        facts: [
+          ["Former 4.16 kV group", "KBR-Group-1 contained eight feeders; the restoration table records 15.5 MVA"],
+          ["12.5 kV group", "KBR-Group-2 contained four feeders; the restoration table records 24.0 MVA"]
+        ]
+      },
+      {
         label: "2006 SWITCHGEAR CUBICLE REGISTER",
         sourceId: "np-2016-pub-np-064-f",
         pages: "physical PDF p. 48",
@@ -14830,6 +14862,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2013 RESTORATION ARRANGEMENT",
+        sourceId: "np-east-coast-restoration-2013",
+        pages: "physical PDF p. 818",
+        facts: [
+          ["12.5 kV groups", "SJM-Group-1 and SJM-Group-2 each contained four feeders; SJM-Group-3 contained three feeders"],
+          ["Restoration loads", "14.5 MVA, 16.5 MVA and 11.0 MVA for Groups 1, 2 and 3 respectively"],
+          ["4.16 kV branch", "SJM-12-B restored one 4.16 kV feeder; the table records 2.7 MVA"]
+        ]
+      },
+      {
         label: "2006 SWITCHGEAR CUBICLE REGISTER",
         sourceId: "np-2016-pub-np-064-f",
         pages: "physical PDF p. 65",
@@ -14886,6 +14928,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2013 RESTORATION ARRANGEMENT",
+        sourceId: "np-east-coast-restoration-2013",
+        pages: "physical PDF p. 819",
+        facts: [
+          ["4.16 kV group", "SLA-Group-1 contained five feeders; the restoration table records 11.6 MVA"],
+          ["12.5 kV groups", "SLA-Group-2 and SLA-Group-3 each contained three feeders; the table records 20 MVA for each group"]
+        ]
+      },
       {
         label: "2006 T1/T2 SWITCHGEAR CUBICLE REGISTER",
         sourceId: "np-2016-pub-np-064-f",
@@ -16842,7 +16893,19 @@ export const stationProfiles = [
         ["Health Sciences Complex", "MUN-01 and MUN-08"],
         ["Customer equipment", "12.5 kV switchgear owned by Memorial University"]
       ]
-    }
+    },
+    historyRecords: [
+      {
+        label: "2013 RESTORATION ARRANGEMENT",
+        sourceId: "np-east-coast-restoration-2013",
+        pages: "physical PDF pp. 816 and 819 to 820",
+        facts: [
+          ["MUN-T2-B section", "three 12.5 kV feeders; the restoration table records 5.5 MVA"],
+          ["MUN-T1-B section", "six 12.5 kV feeders; the restoration table records 11.1 MVA"],
+          ["Bus tie", "MUN-TB-1-2 connected the two sections"]
+        ]
+      }
+    ]
   },
   {
     code: "BOT",

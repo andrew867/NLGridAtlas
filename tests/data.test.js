@@ -3482,14 +3482,40 @@ test("Avalon restoration records preserve bank-level topology without inventing 
   const oxenPond = stationProfiles.find((station) => station.code === "OXP");
   const ridgeRoad = stationProfiles.find((station) => station.code === "RRD");
   const restoration = sources.find((source) => source.id === "np-east-coast-restoration-2013");
+  const hardwoodsRestoration = hardwoods.historyRecords.find((record) => record.sourceId === "np-east-coast-restoration-2013");
 
   assert.ok(restoration);
-  assert.match(hardwoods.historyRecords[0].facts.flat().join(" "), /HWD-T3-B.*HWD-07-B.*HWD-08-B/);
-  assert.match(hardwoods.historyRecords[0].facts.flat().join(" "), /five-feeder group/);
+  assert.match(hardwoodsRestoration.facts.flat().join(" "), /HWD-T3-B.*HWD-07-B.*HWD-08-B/);
+  assert.match(hardwoodsRestoration.facts.flat().join(" "), /five-feeder group/);
   assert.match(oxenPond.historyRecords[0].facts.flat().join(" "), /OXP-01-B.*210682.*SF6/);
   assert.match(oxenPond.historyRecords[1].facts.flat().join(" "), /31L and 70L.*32L and 67L.*35L and 58L/);
   assert.match(ridgeRoad.historyRecords[0].facts.flat().join(" "), /RRD-T2-B.*RRD-T3-B.*four 12.5 kV feeders/);
   assert.match(ridgeRoad.historyRecords[0].facts.flat().join(" "), /RRD-TB-2-3/);
+});
+
+test("Avalon restoration records preserve the dated urban feeder groups", () => {
+  const memorial = stationProfiles.find((station) => station.code === "MUN");
+  const kingsBridge = stationProfiles.find((station) => station.code === "KBR");
+  const stJohnsMain = stationProfiles.find((station) => station.code === "SJM");
+  const stampsLane = stationProfiles.find((station) => station.code === "SLA");
+
+  assert.match(memorial.historyRecords[0].facts.flat().join(" "), /MUN-T2-B.*three 12.5 kV feeders.*MUN-T1-B.*six 12.5 kV feeders.*MUN-TB-1-2/);
+  assert.match(kingsBridge.historyRecords[0].facts.flat().join(" "), /KBR-Group-1.*eight feeders.*KBR-Group-2.*four feeders/);
+  assert.match(stJohnsMain.historyRecords[0].facts.flat().join(" "), /SJM-Group-1.*four feeders.*SJM-Group-3.*three feeders.*SJM-12-B/);
+  assert.match(stampsLane.historyRecords[0].facts.flat().join(" "), /SLA-Group-1.*five feeders.*SLA-Group-2.*SLA-Group-3.*three feeders/);
+});
+
+test("Hardwoods preserves the April 2019 breaker and recloser inventory", () => {
+  const hardwoods = stationProfiles.find((station) => station.code === "HWD");
+  const register = sources.find((source) => source.id === "np-2019-pub-np-056");
+  const facts = hardwoods.historyRecords[0].facts.flat().join(" ");
+
+  assert.ok(register);
+  assert.match(facts, /HWD-03-B, vacuum asset 210869/);
+  assert.match(facts, /HWD-19L-B, asset 210117.*HWD-79L-B, asset 210185/);
+  assert.match(facts, /HWD-T1 asset 200271.*HWD-T2 asset 200236/);
+  assert.match(facts, /HWD-07-R2.*230657.*HWD-09-R4.*230722/);
+  assert.doesNotMatch(facts, /satisfactory|unsatisfactory|condition/i);
 });
 
 test("documented circuit links open the available other-end record", async () => {
