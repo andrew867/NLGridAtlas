@@ -2062,6 +2062,30 @@ test("Airport separates the filed design from installed and proposed records", (
   assert.match(historyFacts, /82 A on phase B and 109 A on phase C; 85 A planning criterion/);
 });
 
+test("Massey Drive separates the customer bank from the Newfoundland Power 66 kV buses", () => {
+  const massey = stationProfiles.find((station) => station.code === "MAS");
+  assert.ok(massey);
+  assert.deepEqual(massey.connectedCircuits.map(({ circuit }) => circuit), ["TL211", "TL228", "TL248", "351L", "352L", "356L", "357L"]);
+  assert.deepEqual(massey.feederRegister, []);
+  assert.deepEqual(massey.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "66 kV", "66 kV"]);
+  assert.deepEqual(massey.diagram.transformers.map(({ label, rating }) => [label, rating]), [["T1", "75/100/125 MVA"], ["T2", "40/53.3/66.7 MVA"], ["T3", "75/100/125 MVA"]]);
+  assert.deepEqual(massey.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 40", "physical PDF p. 238", "physical PDF p. 57"]);
+  const siteFacts = massey.engineeringRecord.facts.flat().join(" ");
+  const loadingFacts = massey.planningRecord.facts.flat().join(" ");
+  const historyFacts = massey.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(siteFacts, /shared by Newfoundland Power, NL Hydro, and Deer Lake Power/);
+  assert.match(siteFacts, /351L and 352L to Walbournes; 356L to Humber; 357L to Bayview/);
+  assert.match(loadingFacts, /T1 75\/100\/125 MVA; 59\.76 MVA, 47\.8 percent/);
+  assert.match(loadingFacts, /T2 40\/53\.3\/66\.7 MVA; 37\.71 MVA, 56\.5 percent/);
+  assert.match(loadingFacts, /T3 75\/100\/125 MVA; 66\.84 MVA, 53\.5 percent/);
+  assert.match(historyFacts, /First Hydro 66 kV station selected for the protection scheme/);
+  assert.match(historyFacts, /Replace fifteen electromechanical relays.*with four digital relays/);
+  assert.match(historyFacts, /fire-protection system was installed/);
+
+  const terminal = islandTerminalRecords.find((station) => station.code === "MAS");
+  assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL211", "TL228", "TL248", "351L", "352L", "356L", "357L"]);
+});
+
 test("Buchans joins the terminal transformer and Newfoundland Power distribution record", () => {
   const buchans = stationProfiles.find((station) => station.code === "BUC");
   assert.ok(buchans);

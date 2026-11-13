@@ -710,6 +710,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/indexreports/transmission/From%20NLH%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202023-04-25.PDF"
   },
   {
+    id: "nlh-massey-q3-2023",
+    year: 2023,
+    organization: "NL Hydro",
+    title: "Q3 2023 Quarterly Regulatory Report",
+    topics: ["Massey Drive", "230 kV", "fire protection", "completion"],
+    pages: "physical PDF p. 34",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%203rd%20Quarter%20Report%20for%20period%20ending%20September%2030%2C%202023%20-%202023-11-20.PDF"
+  },
+  {
     id: "nlh-sunnyside-2014",
     year: 2014,
     organization: "NL Hydro",
@@ -835,7 +845,7 @@ export const sources = [
     organization: "NL Hydro",
     title: "PUB-NLH-323, Hydro Transformer Loading",
     topics: ["Massey Drive", "T1", "T2", "T3", "transformer loading"],
-    pages: "PDF p. 4",
+    pages: "physical PDF pp. 2 and 4",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-323.pdf"
   },
@@ -858,6 +868,26 @@ export const sources = [
     pages: "physical PDF p. 224",
     status: "reported",
     url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/July9/Hydro/preTest/May%202001%20Prefiled%20Testimony%20-%20Entire%20Document.pdf"
+  },
+  {
+    id: "nlh-massey-breaker-failure-2005",
+    year: 2004,
+    organization: "NL Hydro",
+    title: "2005 Capital Budget Application, Massey Drive 66 kV Breaker Failure Protection",
+    topics: ["Massey Drive", "66 kV", "breaker failure protection", "system protection"],
+    pages: "physical PDF p. 57",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2005cap/files/applic/hydro2005CapBudComplete.pdf"
+  },
+  {
+    id: "np-2014-massey-drive",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Massey Drive Substation",
+    topics: ["Massey Drive", "351L", "352L", "356L", "357L", "66 kV", "digital relays", "SCADA", "substation modernization"],
+    pages: "physical PDF pp. 238 to 240",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
   },
   {
     id: "nlh-bde-one-lines-2016",
@@ -1054,8 +1084,8 @@ export const sources = [
     year: 2024,
     organization: "NL Hydro",
     title: "2024 Annual Planning Assessment",
-    topics: ["Soldiers Pond", "Labrador-Island Link", "Avalon", "230 kV", "synchronous condenser"],
-    pages: "physical PDF pp. 8 and 13 to 14",
+    topics: ["Soldiers Pond", "Labrador-Island Link", "Avalon", "Massey Drive", "TL211", "TL228", "TL248", "transformer loading", "230 kV", "synchronous condenser"],
+    pages: "physical PDF pp. 8, 13 to 15, 38, and 40",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/correspondence/From%20NLH%20-%20Newfoundland%20and%20Labrador%20System%20Operator%20(NLSO)%20-%202024%20Annual%20Planning%20Assessment%20-%202024-07-30.PDF"
   },
@@ -5244,14 +5274,14 @@ export const islandTerminalRecords = [
     code: "MAS",
     name: "Massey Drive Terminal Station",
     status: "verified",
-    facts: [["1998 transformer replacement", "One 66.7 MVA, 230/66 kV transformer was replaced by a 125 MVA, 230/66 kV transformer"], ["Transformer assignments", "T1 supplies Corner Brook Pulp and Paper; T2 and T3 supply Newfoundland Power"], ["230 kV circuits", "TL228 to Buchans; TL211 to Bottom Brook"], ["2023 work", "Data-alarm system upgrade completed; 230 kV fire-protection work identified"]],
+    facts: [["1998 transformer replacement", "One 66.7 MVA, 230/66 kV transformer was replaced by a 125 MVA, 230/66 kV transformer"], ["Transformer assignments", "T1 supplies Corner Brook Pulp and Paper; T2 and T3 supply Newfoundland Power"], ["230 kV circuits", "TL211 to Bottom Brook; TL228 to Buchans; TL248 to Deer Lake"], ["Newfoundland Power 66 kV circuits", "351L and 352L to Walbournes; 356L to Humber; 357L to Bayview"], ["2023 work", "Data-alarm system upgrade and 230 kV fire-protection work completed"]],
     diagram: {
-      label: "2015 assignments / 2018 routes",
-      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }],
-      transformers: [{ label: "T1", rating: "Corner Brook Pulp and Paper", from: "b1", to: "b2" }, { label: "T2", rating: "Newfoundland Power", from: "b1", to: "b2" }, { label: "T3", rating: "Newfoundland Power", from: "b1", to: "b2" }],
-      circuits: [{ label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }]
+      label: "2024 ratings and routes / 2014 Newfoundland Power connections",
+      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "customer 66 kV supply", voltage: "66 kV" }, { id: "b3", label: "Newfoundland Power 66 kV buses", voltage: "66 kV" }],
+      transformers: [{ label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" }, { label: "T2", rating: "40/53.3/66.7 MVA", from: "b1", to: "b3" }, { label: "T3", rating: "75/100/125 MVA", from: "b1", to: "b3" }],
+      circuits: [{ label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }, { label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL248", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }, { label: "351L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" }, { label: "352L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" }, { label: "356L", destination: "Humber", bus: "b3", destinationCode: "HUM" }, { label: "357L", destination: "Bayview", bus: "b3", destinationCode: "BVS" }]
     },
-    sources: [sourceRef("nlh-system-additions-2001", "physical PDF p. 224"), sourceRef("nlh-transformer-loading-2015", "PDF p. 4"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+    sources: [sourceRef("nlh-system-additions-2001", "physical PDF p. 224"), sourceRef("nlh-transformer-loading-2015", "physical PDF p. 4"), sourceRef("nlh-planning-2024", "physical PDF pp. 15 and 40"), sourceRef("np-2014-massey-drive", "physical PDF p. 238"), sourceRef("asset-2023", "physical PDF pp. 33 to 34"), sourceRef("nlh-massey-q3-2023", "physical PDF p. 34")]
   },
   {
     code: "STV",
@@ -8068,6 +8098,130 @@ export const stationProfiles = [
     ]
   },
   {
+    code: "MAS",
+    name: "Massey Drive Terminal Station",
+    voltage: "230/66 kV",
+    circuitRegisterLabel: "2024 HYDRO ROUTES / 2014 NEWFOUNDLAND POWER CIRCUITS",
+    circuitSources: [
+      { sourceId: "nlh-planning-2024", pages: "physical PDF p. 15" },
+      { sourceId: "np-2014-massey-drive", pages: "physical PDF p. 238" }
+    ],
+    connectedCircuits: [
+      { circuit: "TL211", from: "Bottom Brook", from_code: "BBK", to: "Massey Drive", to_code: "MAS" },
+      { circuit: "TL228", from: "Buchans", from_code: "BUC", to: "Massey Drive", to_code: "MAS" },
+      { circuit: "TL248", from: "Massey Drive", from_code: "MAS", to: "Deer Lake", to_code: "DLK" },
+      { circuit: "351L", from: "Massey Drive", from_code: "MAS", to: "Walbournes", to_code: "WAL" },
+      { circuit: "352L", from: "Massey Drive", from_code: "MAS", to: "Walbournes", to_code: "WAL" },
+      { circuit: "356L", from: "Massey Drive", from_code: "MAS", to: "Humber", to_code: "HUM" },
+      { circuit: "357L", from: "Massey Drive", from_code: "MAS", to: "Bayview", to_code: "BVS" }
+    ],
+    feederRegisterLabel: "NO DISTRIBUTION FEEDERS",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2024 transformer ratings and routes / 2014 Newfoundland Power connections",
+      buses: [
+        { id: "b1", label: "bus", voltage: "230 kV" },
+        { id: "b2", label: "Corner Brook Pulp and Paper supply", voltage: "66 kV" },
+        { id: "b3", label: "Newfoundland Power buses", voltage: "66 kV" }
+      ],
+      transformers: [
+        { label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" },
+        { label: "T2", rating: "40/53.3/66.7 MVA", from: "b1", to: "b3" },
+        { label: "T3", rating: "75/100/125 MVA", from: "b1", to: "b3" }
+      ],
+      circuits: [
+        { label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" },
+        { label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC" },
+        { label: "TL248", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" },
+        { label: "351L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" },
+        { label: "352L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" },
+        { label: "356L", destination: "Humber", bus: "b3", destinationCode: "HUM" },
+        { label: "357L", destination: "Bayview", bus: "b3", destinationCode: "BVS" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2014 SHARED-SITE RECORD",
+      title: "Hydro terminal and Newfoundland Power 66 kV transmission equipment",
+      sourceId: "np-2014-massey-drive",
+      pages: "physical PDF pp. 238 to 240",
+      facts: [
+        ["Site", "Built in 1967; shared by Newfoundland Power, NL Hydro, and Deer Lake Power"],
+        ["Newfoundland Power equipment", "Four 66 kV transmission breakers and associated high-voltage switches"],
+        ["66 kV circuits", "351L and 352L to Walbournes; 356L to Humber; 357L to Bayview"],
+        ["Service", "Approximately 21,500 greater Corner Brook customers were served indirectly through the transmission network in the 2014 filing"]
+      ]
+    },
+    planningRecord: {
+      label: "2033/34 PRE-CONTINGENCY TRANSFORMER LOADS",
+      sourceId: "nlh-planning-2024",
+      pages: "physical PDF pp. 38 and 40",
+      facts: [
+        ["T1", "75/100/125 MVA; 59.76 MVA, 47.8 percent"],
+        ["T2", "40/53.3/66.7 MVA; 37.71 MVA, 56.5 percent"],
+        ["T3", "75/100/125 MVA; 66.84 MVA, 53.5 percent"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1998 TRANSFORMER REPLACEMENT",
+        sourceId: "nlh-system-additions-2001",
+        pages: "physical PDF p. 224",
+        facts: [["Replacement", "One 66.7 MVA, 230/66 kV transformer was replaced with a 125 MVA, 230/66 kV transformer"]]
+      },
+      {
+        label: "2005 BREAKER FAILURE PROTECTION",
+        sourceId: "nlh-massey-breaker-failure-2005",
+        pages: "physical PDF p. 57",
+        facts: [
+          ["Filed work", "Install local 66 kV breaker failure protection"],
+          ["System role", "First Hydro 66 kV station selected for the protection scheme"]
+        ]
+      },
+      {
+        label: "2014 NEWFOUNDLAND POWER MODERNIZATION",
+        sourceId: "np-2014-massey-drive",
+        pages: "physical PDF pp. 239 to 240",
+        facts: [
+          ["Switches", "Replace two side-break disconnect switches and two line-to-ground switches installed in 1967"],
+          ["Protection", "Replace fifteen electromechanical relays on two panels with four digital relays for the four lines and 66 kV bus"],
+          ["Control", "Upgrade the communications gateway and integrate the line and bus protection into SCADA"]
+        ]
+      },
+      {
+        label: "2023 COMPLETED HYDRO WORK",
+        sourceId: "nlh-massey-q3-2023",
+        pages: "physical PDF p. 34",
+        facts: [["Fire protection", "A fire-protection system was installed at the terminal station"]]
+      }
+    ],
+    referenceSheetLabel: "MASSEY DRIVE SOURCE SHEETS",
+    referenceSheets: [
+      {
+        title: "2033/34 transformer loading table",
+        image: "./reference-maps/massey-2024-transformer-loading.png",
+        alt: "2024 planning table listing Massey Drive transformer ratings and 2033/34 pre-contingency loads",
+        sourceId: "nlh-planning-2024",
+        pages: "physical PDF p. 40"
+      },
+      {
+        title: "2014 shared-site and circuit record",
+        image: "./reference-maps/massey-2014-shared-site.png",
+        alt: "2014 Massey Drive shared-site record listing Newfoundland Power 66 kV circuit equipment and destinations",
+        sourceId: "np-2014-massey-drive",
+        pages: "physical PDF p. 238"
+      },
+      {
+        title: "2005 breaker failure protection filing",
+        image: "./reference-maps/massey-2005-breaker-failure.png",
+        alt: "2005 Massey Drive 66 kV breaker failure protection project filing",
+        sourceId: "nlh-massey-breaker-failure-2005",
+        pages: "physical PDF p. 57"
+      }
+    ]
+  },
+  {
     code: "BUC",
     name: "Buchans",
     voltage: "230/66/12.5 kV",
@@ -10032,8 +10186,8 @@ export const stationProfiles = [
     circuitRegisterLabel: "2022 FILED CONNECTIONS",
     circuitSource: { sourceId: "np-2023-walbournes", pages: "physical PDF p. 392" },
     connectedCircuits: [
-      { circuit: "351L", from: "Massey Drive", from_code: "MSY", to: "Walbournes", to_code: "WAL" },
-      { circuit: "352L", from: "Massey Drive", from_code: "MSY", to: "Walbournes", to_code: "WAL" },
+      { circuit: "351L", from: "Massey Drive", from_code: "MAS", to: "Walbournes", to_code: "WAL" },
+      { circuit: "352L", from: "Massey Drive", from_code: "MAS", to: "Walbournes", to_code: "WAL" },
       { circuit: "353L", from: "Walbournes", from_code: "WAL", to: "Frenchman's Cove", to_code: "FRN" }
     ],
     feederRegisterLabel: "2005 FEEDER REGISTER",
@@ -10044,7 +10198,7 @@ export const stationProfiles = [
       label: "2022 filed logical connection / 2023 completion record",
       buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV distribution bus", voltage: "12.5 kV" }],
       transformers: [{ label: "WAL-T1", rating: "20 MVA", from: "b1", to: "b2" }, { label: "WAL-T2", rating: "25 MVA", from: "b1", to: "b2" }],
-      circuits: [{ label: "351L", destination: "Massey Drive", bus: "b1", destinationCode: "MSY" }, { label: "352L", destination: "Massey Drive", bus: "b1", destinationCode: "MSY" }, { label: "353L", destination: "Frenchman's Cove", bus: "b1", destinationCode: "FRN" }]
+      circuits: [{ label: "351L", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "352L", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "353L", destination: "Frenchman's Cove", bus: "b1", destinationCode: "FRN" }]
     },
     engineeringRecord: {
       date: "2022 FILED EQUIPMENT / 2023 PROJECT COMPLETION",
