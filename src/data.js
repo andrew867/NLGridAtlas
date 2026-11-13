@@ -2850,6 +2850,26 @@ export const sources = [
     url: "https://www.assembly.nl.ca/business/electronicdocuments/MuskratFalls/Exhibit114.pdf"
   },
   {
+    id: "nlh-1991-hardwoods-operating",
+    year: 1991,
+    organization: "NL Hydro",
+    title: "HWD-1, Hardwoods Terminal Station System Operating Diagram, Revision 17",
+    topics: ["Hardwoods", "system operating diagram", "B1", "B2", "B7", "B8", "B1B2", "B7B8", "T1", "T2", "T3", "T4", "T5", "G1"],
+    pages: "physical PDF p. 189",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/NLHCBSUPP2016/EngineRefurbishments/files/rfis/NP-NLH-013.PDF"
+  },
+  {
+    id: "nlh-2014-western-avalon-operating",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "Review of Supply Disruptions and Rotating Outages, Volume II, Appendix 2",
+    topics: ["Western Avalon", "WAV-A", "WAV-B", "system operating diagram", "B1", "B2", "B3", "B4", "B1B3", "T1", "T2", "T3", "T4", "T5", "T6", "64L", "86L"],
+    pages: "physical PDF pp. 341 to 342",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/2ReviewofSupplyDisruptionsandRotatingOutagesVolumeII.pdf"
+  },
+  {
     id: "nlh-2013-system-changes",
     year: 2013,
     organization: "NL Hydro",
@@ -5542,9 +5562,9 @@ export const components = {
     status: "verified",
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
-    summary: "The 2026 loop study models four 230/66 kV transformers: T1 and T4 at 125 MVA, and T2 and T3 at 66.6 MVA. The 2013 alternative one-line shows 26.4 MVAR capacitor banks C1 and C2, and G1 connected to the 66 kV bus through T5.",
-    data: [["T1", "125 MVA"], ["T2", "66.6 MVA"], ["T3", "66.6 MVA"], ["T4", "125 MVA"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["Bus", "66 kV"], ["C1, C2", "26.4 MVAR each"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61")]
+    summary: "Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
+    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -5573,8 +5593,8 @@ export const components = {
   "hwd-c1": {
     diagram: "hwd", status: "verified", code: "HWD / C1", title: "Hardwoods capacitor bank C1",
     summary: "The 2013 Alternative 4 one-line labels C1 at 26.4 MVAR.",
-    data: [["Bus", "66 kV B6"], ["Rating", "26.4 MVAR"]],
-    sources: [sourceRef("oxen-2013", "PDF p. 61")]
+    data: [["Bus", "66 kV B7 in the 1991 drawing"], ["Rating", "26.4 MVAR"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("oxen-2013", "PDF p. 61")]
   },
   "hwd-c2": {
     diagram: "hwd", status: "verified", code: "HWD / C2", title: "Hardwoods capacitor bank C2",
@@ -5588,11 +5608,23 @@ export const components = {
     data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["2026 study model", "25 MW"]],
     sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
+  "hwd-b1b2": {
+    diagram: "hwd", status: "verified", code: "HWD / B1B2", title: "Hardwoods 230 kV bus tie",
+    summary: "The 1991 HWD-1 operating diagram places breaker B1B2 between the B1 and B2 230 kV bus sections.",
+    data: [["Breaker", "B1B2"], ["Connected sections", "230 kV B1 and B2"], ["Drawing date", "July 7, 1991"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189")]
+  },
+  "hwd-b7b8": {
+    diagram: "hwd", status: "verified", code: "HWD / B7B8", title: "Hardwoods 66 kV bus tie",
+    summary: "The 1991 HWD-1 operating diagram places breaker B7B8 between the B7 and B8 66 kV bus sections.",
+    data: [["Breaker", "B7B8"], ["Connected sections", "66 kV B7 and B8"], ["Drawing date", "July 7, 1991"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189")]
+  },
   "wav-summary": {
     diagram: "wav", status: "verified", code: "WAV / TERMINAL STATION", title: "Western Avalon Terminal Station",
-    summary: "T1 and T2 connect the 230 kV and 66 kV buses. T3, T4, and T5 connect the 230 kV and 138 kV buses.",
-    data: [["T1, T2", "15/20/25 MVA"], ["T3, T4", "25/33.3/41.7 MVA"], ["T5", "75/100/125 MVA"], ["Low-voltage bus", "66 kV"], ["Tap-changer controls", "Replacement began in 2019"]],
-    sources: [sourceRef("nlh-2011-western-avalon", "PDF p. 7"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195"), sourceRef("nlh-2025-capital", "physical PDF p. 117")]
+    summary: "Operating drawings WAV-A revision 6, dated April 29, 2010, and WAV-B revision 15, dated June 12, 2012, show the B3 and B1 230 kV sections, breaker B1B3, the B4 138 kV section, the B2 66 kV section, T1 through T6, and the 64L and 86L Blaketown connections.",
+    data: [["Filed arrangement", "WAV-A revision 6, April 29, 2010; WAV-B revision 15, June 12, 2012"], ["230 kV sections", "B3 and B1; breaker B1B3"], ["T1, T2", "15/20/25 MVA, 230/66 kV"], ["T3, T4", "25/33.3/41.7 MVA, 230/138 kV"], ["T5", "75/100/125 MVA, 230/138 kV"], ["T6", "10/13.3 MVA, 66/12.5 kV"], ["Blaketown circuits", "64L from B4; 86L from B2"], ["Tap-changer controls", "Replacement began in 2019"]],
+    sources: [sourceRef("nlh-2014-western-avalon-operating", "physical PDF pp. 341 to 342"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195"), sourceRef("nlh-2025-capital", "physical PDF p. 117")]
   },
   "wav-t1": {
     diagram: "wav", status: "verified", code: "WAV / T1", title: "Western Avalon transformer T1",
@@ -5619,6 +5651,30 @@ export const components = {
     summary: "A phase-to-phase fault damaged the T5 on-load tap changer. The obsolete Type H mechanism was replaced with a Type VV mechanism.",
     data: [["Voltage", "230/138 kV"], ["Rating", "75/100/125 MVA"], ["T5 and T4 out", "T3 at 113% in the 2018 peak case"], ["Tap changer", "Type H replaced by Type VV"]],
     sources: [sourceRef("nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20")]
+  },
+  "wav-b1b3": {
+    diagram: "wav", status: "verified", code: "WAV / B1B3", title: "Western Avalon 230 kV bus tie",
+    summary: "The 2010 WAV-A drawing places breaker B1B3 between the B3 and B1 230 kV sections.",
+    data: [["Breaker", "B1B3"], ["Connected sections", "230 kV B3 and B1"], ["Drawing date", "April 29, 2010"]],
+    sources: [sourceRef("nlh-2014-western-avalon-operating", "physical PDF p. 342")]
+  },
+  "wav-t6": {
+    diagram: "wav", status: "verified", code: "WAV / T6", title: "Western Avalon distribution transformer T6",
+    summary: "The 2012 WAV-B drawing connects T6 from the 66 kV B2 section to the 12.5 kV main and transfer buses.",
+    data: [["Voltage", "66/12.5 kV"], ["Rating", "10/13.3 MVA"], ["Feeders", "WAV-01, WAV-02 and WAV-03"]],
+    sources: [sourceRef("nlh-2014-western-avalon-operating", "physical PDF p. 341")]
+  },
+  "wav-64l": {
+    diagram: "wav", status: "verified", code: "WAV / 64L", title: "Western Avalon 64L terminal",
+    summary: "The 2010 WAV-A drawing connects 64L to Blaketown through breaker B4L64 on the 138 kV B4 section.",
+    data: [["Circuit", "64L"], ["Breaker", "B4L64"], ["Endpoint", "Blaketown"], ["Bus", "138 kV B4"]],
+    sources: [sourceRef("nlh-2014-western-avalon-operating", "physical PDF p. 342")]
+  },
+  "wav-86l": {
+    diagram: "wav", status: "verified", code: "WAV / 86L", title: "Western Avalon 86L terminal",
+    summary: "The 2012 WAV-B drawing connects 86L to Blaketown from the 66 kV B2 section.",
+    data: [["Circuit", "86L"], ["Endpoint", "Blaketown"], ["Bus", "66 kV B2"]],
+    sources: [sourceRef("nlh-2014-western-avalon-operating", "physical PDF p. 341")]
   },
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",

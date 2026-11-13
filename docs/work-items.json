@@ -670,6 +670,18 @@
       "notes": "The August 2014 program assigns B2B11, B1B11 and B1L17 to 2014; B2L42, B3L18 and B3B13 to 2015; and B12L42, B12L17 and B12B15 to 2016. NP-NLH-131 Revision 1 explicitly records the 2014 group as replaced. PR-PUB-NLH-036 records B1L17 in service on October 17, 2014. The December 2015 report states that the Holyrood breaker upgrades were complete and in service. The 2016 report marks the wider Upgrade Circuit Breakers 2015-2016 program complete, but does not list its Holyrood breakers or their individual commissioning dates."
     },
     {
+      "id": "ISL-031",
+      "title": "Add the dated Hardwoods and Western Avalon operating arrangements",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Replace the simplified Hardwoods and proposed Western Avalon sketches with the filed dated bus sections, bus ties, transformer positions, and documented lower-voltage circuits without presenting the historical drawings as current as-builts.",
+      "dependencies": ["ISL-003", "SRC-001"],
+      "completion_evidence": ["index.html", "src/data.js", "tests/data.test.js", "research/ISLAND_TERMINAL_RECORDS.md", "research/ISLAND_TRANSFORMER_LEDGER.md"],
+      "blocker": null,
+      "notes": "HWD-1 revision 17, dated July 7, 1991, establishes the B1/B2 230 kV sections, B7/B8 66 kV sections, B1B2 and B7B8 ties, transformer positions, capacitor banks, station service, and generator branch. WAV-A revision 6 and WAV-B revision 15, dated April 29, 2010 and June 12, 2012, establish the Western Avalon B3/B1, B4, and B2 sections, B1B3 tie, T1 through T6, 64L, 86L, and three 12.5 kV feeders. The 2026 Hardwoods condition-study register names HWD-1 revision 38, dated October 11, 2019, but does not reproduce it."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

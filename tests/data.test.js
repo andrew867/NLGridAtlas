@@ -256,9 +256,9 @@ test("station additions preserve sourced details", async () => {
   assert.match(html, /29[\s\S]*Repeater sites/);
   assert.match(html, /Bay d'Espoir Hill[\s\S]*164\.22 MHz[\s\S]*170\.28 MHz/);
   assert.match(html, /P25 system and Starlink with Cradlepoint routers/);
-  assert.match(html, /Hardwoods Terminal Station simplified one-line/);
+  assert.match(html, /Hardwoods Terminal Station dated logical one-line/);
   assert.match(html, /Simplified Oxen Pond one-line diagram/);
-  assert.match(html, /Western Avalon Terminal Station simplified one-line/);
+  assert.match(html, /Western Avalon Terminal Station dated logical one-line/);
   assert.match(html, /Newfoundland Power substations/);
   assert.match(html, /Hardwoods Substation simplified one-line/);
   assert.match(html, /Oxen Pond Substation simplified one-line/);
@@ -3194,9 +3194,24 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
     ["B8L39-2/L39G disconnect", "In service September 24, 2019"]
   ]);
   assert.match(components["wav-summary"].data.flat().join(" "), /Replacement began in 2019/);
+  assert.match(components["wav-summary"].data.flat().join(" "), /WAV-A revision 6.*WAV-B revision 15/);
+  assert.deepEqual(components["wav-b1b3"].data.slice(0, 2), [["Breaker", "B1B3"], ["Connected sections", "230 kV B3 and B1"]]);
+  assert.match(components["wav-t6"].data.flat().join(" "), /66\/12.5 kV.*10\/13.3 MVA.*WAV-01, WAV-02 and WAV-03/);
+  assert.match(components["wav-64l"].data.flat().join(" "), /64L.*B4L64.*Blaketown.*138 kV B4/);
+  assert.match(components["wav-86l"].data.flat().join(" "), /86L.*Blaketown.*66 kV B2/);
   assert.match(components["hwd-summary"].data.flat().join(" "), /T5 45\/60\/75 MVA, 66\/13.8 kV/);
+  assert.match(components["hwd-summary"].data.flat().join(" "), /HWD-1 revision 17.*B1 and B2; breaker B1B2.*B7 and B8; breaker B7B8/);
+  assert.match(components["hwd-summary"].data.flat().join(" "), /revision 38.*October 11, 2019.*drawing not reproduced/);
+  assert.deepEqual(components["hwd-b1b2"].data.slice(0, 2), [["Breaker", "B1B2"], ["Connected sections", "230 kV B1 and B2"]]);
+  assert.deepEqual(components["hwd-b7b8"].data.slice(0, 2), [["Breaker", "B7B8"], ["Connected sections", "66 kV B7 and B8"]]);
   assert.match(components["hwd-g1"].data.flat().join(" "), /2026 study model 25 MW/);
   assert.doesNotMatch(components["hwd-summary"].data.flat().join(" "), /2025 capital record/);
+  for (const sourceId of ["nlh-1991-hardwoods-operating", "nlh-2014-western-avalon-operating"]) {
+    assert.ok(sources.some((source) => source.id === sourceId), `${sourceId} source is required`);
+  }
+  for (const componentId of ["hwd-b1b2", "hwd-b7b8", "wav-b1b3", "wav-t6", "wav-64l", "wav-86l"]) {
+    assert.match(html, new RegExp(`data-component="${componentId}"`));
+  }
   assert.ok(timeline.some((event) => event.title === "Dynamic line rating entered service on TL201" && event.status === "verified"));
   assert.ok(timeline.some((event) => event.title === "Avalon combustion turbine connection was proposed" && event.status === "proposed"));
   assert.match(timeline.find((event) => event.title === "Avalon combustion turbine connection was proposed").body, /0\.5 km.*bus extension.*37 km.*TL218/);
@@ -3210,7 +3225,7 @@ test("Oxen Pond and Hardwoods capacitor banks are clickable and sourced", async 
     assert.match(html, new RegExp(`data-component="${id}"`));
     assert.ok(components[id]);
     assert.match(components[id].data.flat().join(" "), /MVAR/);
-    assert.equal(components[id].sources[0].sourceId, "oxen-2013");
+    assert.ok(components[id].sources.some(({ sourceId }) => sourceId === "oxen-2013"));
   }
 });
 

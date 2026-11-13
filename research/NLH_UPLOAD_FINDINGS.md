@@ -49,6 +49,6 @@ The 1986 retrofit supports reversible seasonal operation. The spring 2030 record
 - [ ] Holyrood Unit 3 permanent post-steam design package, if Hydro selects that option and issues the design.
 - [ ] `1403-500-E001 PLANT SINGLE LINE DIAGRAM` and `1403-500-E004 PLANT MCC SINGLE LINE DIAGRAM`, named but not reproduced in the 2022 condition study.
 - [ ] Avalon combustion turbine issued-for-construction or as-built one-line and synchronous-condensing operating data. The July 2026 proposed interconnection is recorded in the atlas.
-- [ ] Hardwoods, Oxen Pond, and Western Avalon terminal drawings not already preserved from PUB filings.
+- [x] Hardwoods HWD-1 revision 17 and Western Avalon WAV-A revision 6 and WAV-B revision 15 are preserved from PUB filings. Oxen Pond's 2013 existing-station one-line was already preserved. Later complete as-built revisions remain open.
 - [ ] Soldiers Pond converter-station auxiliary and AC-yard drawings.
-- [ ] VHF and microwave system route, frequency, radio, antenna, and site records.
+- [x] The published conventional VHF, proposed trunked VHF, microwave, P25, cellular, satellite, site, and four Hydro-owned frequency records are indexed in `TELECOMMUNICATIONS_SYSTEM_RECORD.md`. Detailed P25 talkgroup, radio-model, antenna, and complete as-built route records were not located.

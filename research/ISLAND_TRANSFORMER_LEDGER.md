@@ -35,8 +35,8 @@ Work item: `ISL-006`
 | Station | Equipment | Published rating basis | Source locator |
 | --- | --- | --- | --- |
 | Oxen Pond | T1, T2, T3 | 2013 equipment ratings and 2026 planning-model ratings are separate in the component panels | Oxen Pond application, physical PDF pp. 43 to 44; 2026 loop study, PDF p. 188 |
-| Hardwoods | T1 through T4 | 2013 equipment arrangement and 2026 planning-model ratings are separate in the component panels | Oxen Pond application, physical PDF p. 61; 2026 loop study, PDF p. 188 |
-| Western Avalon | T1 through T5 | Staged transformer ratings; T5 tap-changer replacement record | Exhibit 114, PDF p. 7; 2014 T5 application, PDF pp. 12, 17, 19 to 20 |
+| Hardwoods | T1 through T5 | HWD-1 revision 17 preserves the July 7, 1991 bus positions and staged transformer ratings; the 2013 and 2026 records remain separate in the component panels | NP-NLH-013 Attachment 1, physical PDF p. 189; Oxen Pond application, physical PDF p. 61; 2026 loop study, PDF p. 188 |
+| Western Avalon | T1 through T6 | WAV-A revision 6 and WAV-B revision 15 preserve the 2010 and 2012 transformer positions and ratings; the T5 tap-changer replacement remains a separate 2014 event | Review of Supply Disruptions and Rotating Outages Volume II, physical PDF pp. 341 to 342; 2014 T5 application, PDF pp. 12, 17, 19 to 20 |
 | Holyrood | T1, T2, T3, T6, T7, T8 | Historical winding voltages, cooling ratings and impedances; T2, T7 and T8 replacement records | 2013 GRA Volume II, physical PDF p. 663; 2022 T2 final report, PDF pp. 5 to 13; 2024 T7 completion record, physical PDF p. 332 |
 | Sunnyside | T1, T4 | 2014 replacement filing, T8 relocation record and later model ratings | 2014 replacement application, physical PDF pp. 14 to 19 and 29 to 34; Liberty supply review, physical PDF pp. 228 to 229 |
 | Buchans | T1 | 230/66 kV, 40/53.3/66.6 MVA replacement specification and former-unit history | 2018 capital filing, physical PDF pp. 453 and 458 to 460 |

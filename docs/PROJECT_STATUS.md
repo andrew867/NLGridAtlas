@@ -15,6 +15,8 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Replaced the simplified Hardwoods sketch with the filed HWD-1 revision 17 arrangement dated July 7, 1991. The diagram now separates the B1/B2 230 kV sections and B7/B8 66 kV sections, adds breakers B1B2 and B7B8, and places T1 through T4, C1, C2, T5, G1, TL201, TL236, and TL242 on their filed sections. A 2019 HWD-1 revision is named in the 2026 drawing register but is not reproduced.
+- Replaced the proposed 2011 Western Avalon GIS sketch with the filed WAV-A revision 6 and WAV-B revision 15 operating arrangements dated April 29, 2010 and June 12, 2012. The diagram now shows the B3/B1 230 kV sections, breaker B1B3, B4 138 kV and B2 66 kV sections, T1 through T6, 64L, 86L, and the WAV-01 through WAV-03 distribution feeders.
 - Added the Holyrood nine-breaker 230 kV replacement schedule, the explicit 2014 completion record, the October 17, 2014 B1L17 in-service date, the December 2015 Holyrood completion report, and the 2016 multi-site program status. The later reports do not provide equipment-by-equipment commissioning dates for the 2015 and 2016 Holyrood groups.
 - Added exact in-service dates from the 2026 GRA asset schedule for the replacement Holyrood T7, Western Avalon TL208 protection and terminal equipment, and Western Avalon breaker B4L64. The asset dates remain separate from unproved bus positions.
 - Added dated Colliers and Springfield one-lines using the December 31, 2022 transmission endpoint register, the 2018 feeder register, and the 2027 transformer table. Springfield retains its explicit 2015 modernization completion record. Colliers breaker positions and direct completion remain open.
