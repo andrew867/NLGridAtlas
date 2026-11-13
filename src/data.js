@@ -330,12 +330,32 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/rfis/NLH-NP-022.PDF"
   },
   {
+    id: "np-2004-argentia-status",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Expenditure Status Report, Argentia Distribution Takeover",
+    topics: ["Argentia", "AUS", "Argentia Management Authority", "distribution system", "capital expenditure"],
+    pages: "physical PDF p. 20",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/StatusReportRev1.pdf"
+  },
+  {
+    id: "np-2004-pub-115-argentia",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "PUB-115 NP, Argentia Distribution-System Extension",
+    topics: ["Argentia", "AUS", "Argentia Management Authority", "distribution extension", "general service customers"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/PUB-115NP.pdf"
+  },
+  {
     id: "np-2010-transmission-list",
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Transmission Line Listing",
-    topics: ["transmission lines", "line sections", "length", "year built", "conductor"],
-    pages: "PDF pp. 280 to 286; appendix pp. A1 to A6",
+    topics: ["transmission lines", "line sections", "length", "year built", "conductor", "55L", "Argentia", "Newlite Quarry"],
+    pages: "physical PDF p. 278 and PDF pp. 280 to 286; appendix pp. A1 to A6",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
@@ -10864,6 +10884,63 @@ export const stationProfiles = [
         facts: [
           ["Control and communications", "replaced transformer tap-changer controllers and installed communications for remote monitoring and feeder automation"],
           ["Site work", "upgraded foundations and varmint protection"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "AUS",
+    name: "Argentia",
+    voltage: "66 kV historical endpoint",
+    hideFeederRegister: true,
+    circuitRegisterLabel: "2010 HISTORICAL LINE RECORD",
+    circuitSource: { sourceId: "np-2010-transmission-list", pages: "physical PDF p. 278" },
+    connectedCircuits: [
+      { circuit: "55L", from: "Blaketown", from_code: "BLK", to: "Argentia", to_code: "AUS" }
+    ],
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2010 filed line endpoint",
+      buses: [{ id: "b1", label: "Argentia connection", voltage: "66 kV" }],
+      transformers: [],
+      circuits: [{ label: "55L", destination: "Blaketown", bus: "b1", destinationCode: "BLK" }]
+    },
+    engineeringRecord: {
+      date: "2010 HISTORICAL LINE RECORD",
+      title: "Argentia 55L endpoint",
+      sourceId: "np-2010-transmission-list",
+      pages: "physical PDF p. 278",
+      facts: [
+        ["55L", "66 kV single-pole line along the Argentia Access Road from Blaketown to Argentia"],
+        ["Newlite branch", "1 kilometre tap from 55L to the Newlite Quarry site"],
+        ["March 2010 damage", "six structures on the Newlite tap were damaged and replaced, including poles and conductor"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2003 DISTRIBUTION-SYSTEM TAKEOVER",
+        sourceId: "np-2004-argentia-status",
+        pages: "physical PDF p. 20",
+        facts: [
+          ["Forecast cost", "$190,000 for takeover of the Argentia distribution system from the Argentia Management Authority"]
+        ]
+      },
+      {
+        label: "2003 CUSTOMER CONNECTION RECORD",
+        sourceId: "np-2004-pub-115-argentia",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Work", "distribution-line extension to serve 14 general-service customers previously served by the Argentia Management Authority"]
+        ]
+      },
+      {
+        label: "2006 STATION DESIGNATION",
+        sourceId: "np-2006-handbook",
+        pages: "physical PDF p. 11",
+        facts: [
+          ["Register", "AUS, Argentia - USN"]
         ]
       }
     ]

@@ -1210,6 +1210,22 @@ test("Clarkes Pond retains the documented parallel transformer bank and three fe
   assert.match(planningFacts, /CLK-T2 66\/12\.5 kV; 10 MVA; 5\.53 MVA 2026 forecast/);
 });
 
+test("Argentia preserves the historical 55L endpoint and distribution takeover", () => {
+  const argentia = stationProfiles.find((station) => station.code === "AUS");
+  assert.ok(argentia);
+  assert.equal(argentia.hideFeederRegister, true);
+  assert.deepEqual(argentia.connectedCircuits.map(({ circuit, from_code, to_code }) => [circuit, from_code, to_code]), [["55L", "BLK", "AUS"]]);
+  assert.deepEqual(argentia.diagram.circuits.map(({ label, destination }) => [label, destination]), [["55L", "Blaketown"]]);
+  assert.deepEqual(argentia.diagram.transformers, []);
+  const existingFacts = argentia.engineeringRecord.facts.flat().join(" ");
+  const historyFacts = argentia.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /66 kV single-pole line along the Argentia Access Road from Blaketown to Argentia/);
+  assert.match(existingFacts, /six structures on the Newlite tap were damaged and replaced/);
+  assert.match(historyFacts, /\$190,000.*Argentia distribution system/);
+  assert.match(historyFacts, /14 general-service customers/);
+  assert.match(historyFacts, /AUS, Argentia - USN/);
+});
+
 test("Walbournes combines its filed equipment record with the project completion report", () => {
   const walbournes = stationProfiles.find((station) => station.code === "WAL");
   assert.ok(walbournes);

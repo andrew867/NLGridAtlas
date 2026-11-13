@@ -312,6 +312,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2020 Clarkes Pond record identifies parallel CLK-T1 and CLK-T2, each 10 MVA at 66/12.5 kV, and three 12.5 kV feeders serving Freshwater, Jerseyside, Placentia, and Argentia, physical PDF p. 123.
 - [x] The 2027 transformer table records 2026 forecasts of 5.21 MVA for CLK-T1 and 5.53 MVA for CLK-T2, physical PDF p. 546.
 
+## Argentia historical station record
+
+- [x] The 2006 handbook lists AUS as Argentia - USN, physical PDF p. 11.
+- [x] The 2010 depreciation study describes 55L as a 66 kV single-pole line along the Argentia Access Road from Blaketown to Argentia, with a 1 kilometre tap to Newlite Quarry, physical PDF p. 278.
+- [x] Six structures on the Newlite tap were damaged and replaced in March 2010, including poles and conductor, physical PDF p. 278.
+- [x] The 2003 capital status report forecast $190,000 for takeover of the Argentia distribution system from the Argentia Management Authority, physical PDF p. 20.
+- [x] PUB-115 NP identifies the associated distribution-line extension as serving 14 general-service customers previously supplied by the Argentia Management Authority, physical PDF p. 1.
+- [ ] No searched filing establishes the present electrical arrangement or confirms when the historical 55L Argentia endpoint ceased to be the registered line endpoint.
+- [ ] Baie Verte Mines remains only a station-register name in the located evidence. No electrical arrangement has been located.
+- [ ] The 2010 asset history reports that Newfoundland Power disposed of the Musgrave Harbour land in 2006, physical PDF p. 206. No electrical arrangement has been located.
+
 ## Walbournes station record
 
 - [x] The 2023 filing identifies 351L and 352L from Massey Drive as the two 66 kV supplies and 353L to Frenchman's Cove as the radial output, physical PDF p. 392.
