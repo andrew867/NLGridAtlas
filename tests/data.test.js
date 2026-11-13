@@ -530,9 +530,15 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   assert.ok(comeByChance.sources.some((reference) => reference.sourceId === "nlh-braya-ciac-2023"));
   assert.match(soldiersPond.facts.flat().join(" "), /commissioned on 2023-04-14/);
   assert.match(soldiersPond.facts.flat().join(" "), /SC1, SC2 and SC3; 175 MVAr each/);
-  assert.deepEqual(soldiersPond.diagram.circuits.map((circuit) => circuit.label), ["TL201", "TL217", "TL242", "TL266", "TL265", "TL268"]);
-  assert.equal(soldiersPond.diagram.converters.length, 2);
+  assert.match(soldiersPond.facts.flat().join(" "), /five breaker strings and 18 named breakers/);
+  assert.match(soldiersPond.facts.flat().join(" "), /Five 75 MVAR operating filters plus one installed spare/);
+  assert.match(soldiersPond.facts.flat().join(" "), /230\/25\/15 kV, 200 MVA spare/);
+  assert.equal(soldiersPond.diagram.diameters.flatMap(({ breakers }) => breakers).length, 18);
+  assert.deepEqual(soldiersPond.diagram.diameters.flatMap(({ connections }) => connections).filter(({ label }) => /^TL/.test(label)).map(({ label }) => label), ["TL242", "TL266", "TL268", "TL265", "TL201", "TL217"]);
   assert.ok(soldiersPond.sources.some((reference) => reference.sourceId === "nlh-lil-commissioning-2023"));
+  assert.ok(soldiersPond.sources.some((reference) => reference.sourceId === "nlh-sop-operating-2015" && reference.pages.includes("2")));
+  assert.ok(soldiersPond.sources.some((reference) => reference.sourceId === "nlh-sop-filters-2016" && reference.pages.includes("8")));
+  assert.ok(soldiersPond.sources.some((reference) => reference.sourceId === "nlh-sop-transformer-spares-2021" && reference.pages.includes("36")));
 });
 
 test("2027 transformer register updates Avalon station records", async () => {

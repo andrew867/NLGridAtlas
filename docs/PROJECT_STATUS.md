@@ -190,6 +190,7 @@ Updated: 2026-11-13
 - Added the 2018 substation program and 2021 feeder load-growth program closeouts. The records preserve the aggregate budgets, annual expenditures, variances, and zero carryover without presenting program closeout as asset commissioning evidence.
 - Rebuilt Buchans as a five-breaker 230 kV ring bus around T1. The diagram now identifies B1L05, L05L33, L32L33, L28L32, and B1L28; places TL205, TL233, TL232, and TL228 in their filed line positions; and adds B2L64 on TL264 and B2L80 on TL280.
 - Added the March 2014 Grand Falls and Bishop's Falls breaker registers to their station one-lines. Grand Falls now identifies two 138 kV line breakers, four transformer breakers, and five 25 kV feeder breakers. Bishop's Falls identifies the four 138 kV line breakers. Present bus-section and disconnect-switch arrangements remain open because no current as-built drawing was located.
+- Rebuilt Soldiers Pond from the September 2015 filed operating diagram. The station view now shows buses B1 and B2, five breaker strings, all 18 filed breaker identifiers, the six 230 kV routes, three synchronous-condenser connections, and four converter-station connections. The equipment record adds five operating 75 MVAR filters plus one installed spare and the 230/25/15 kV, 200 MVA synchronous-condenser transformer spare. Converter-transformer nameplates, station service, and a post-commissioning as-built breaker sheet remain open.
 
 ## Active work
 

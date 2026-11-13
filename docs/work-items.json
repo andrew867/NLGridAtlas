@@ -646,6 +646,18 @@
       "notes": "PUB-NP-064 Attachment G identifies GFS-130L-B, GFS-132L-B, GFS-T1-B, GFS-T2-B, GFS-T3-B, GFS-T5-B, and five GFS feeder breakers on physical PDF pp. 178 and 332 to 337. Physical PDF pp. 28 to 31 identify BFS-132L-B, BFS-133L-B, BFS-134L-B, and BFS-136L-B. No located filing establishes the present bus-section and disconnect-switch arrangement, so that drawing target remains open."
     },
     {
+      "id": "ISL-029",
+      "title": "Reconstruct the filed Soldiers Pond 230 kV yard",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Replace the simplified Soldiers Pond interface with the filed B1/B2 breaker strings and add published filter and transformer-spare data without treating the 2015 drawing as a post-commissioning as-built.",
+      "dependencies": ["ISL-002", "SRC-001"],
+      "completion_evidence": ["src/data.js", "tests/data.test.js", "tests/terminal-diagram.test.js", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "NP-NLH-013, physical PDF pp. 1 to 2, provides the September 2015 B1/B2 operating diagram with five breaker strings, 18 breaker identifiers, six 230 kV line positions, three synchronous-condenser connections, and four converter-station connections. PUB-NLH-630, physical PDF p. 8, records five 75 MVAR operating filters plus one installed spare. CA-NLH-019, physical PDF p. 36, lists the 230/25/15 kV, 200 MVA synchronous-condenser transformer spare and a converter-transformer spare at Soldiers Pond. Converter-transformer nameplates, station service, and a post-commissioning as-built breaker sheet remain open."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

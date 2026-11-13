@@ -1400,6 +1400,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/NLHCBSUPP2014/TransmissionLine/Application/Application-2014-04-30.pdf"
   },
   {
+    id: "nlh-sop-operating-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "NP-NLH-013, Soldiers Pond Terminal Station Operating Diagram",
+    topics: ["Soldiers Pond", "230 kV", "breaker-and-a-half", "circuit breakers", "synchronous condensers", "HVDC converter station", "TL201", "TL217", "TL242", "TL265", "TL266", "TL268"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/files/rfi/NP-NLH-013.PDF"
+  },
+  {
+    id: "nlh-sop-filters-2016",
+    year: 2016,
+    organization: "NL Hydro",
+    title: "PUB-NLH-630, Ready for Integration Technical Note",
+    topics: ["Soldiers Pond", "harmonic filters", "75 MVAR", "Labrador-Island Link", "synchronous condensers"],
+    pages: "physical PDF p. 8",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-630.pdf"
+  },
+  {
+    id: "nlh-sop-transformer-spares-2021",
+    year: 2021,
+    organization: "NL Hydro",
+    title: "CA-NLH-019, Transmission Planning Criteria",
+    topics: ["Soldiers Pond", "synchronous condenser", "step-up transformer", "converter transformer", "capital spares"],
+    pages: "physical PDF p. 36",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2021/NLH2021Capital/rfis/CA-NLH-019.PDF"
+  },
+  {
     id: "nlh-bde-wav-2012",
     year: 2012,
     organization: "NL Hydro",
@@ -6725,16 +6755,21 @@ export const islandTerminalRecords = [
     code: "SDP",
     name: "Soldiers Pond Converter Station",
     status: "verified",
-    facts: [["Commissioned", "Labrador-Island Link commissioned on 2023-04-14"], ["HVDC design basis", "Line-commutated converter; +/-350 kV DC; 900 MW at Muskrat Falls and 830 MW at Soldiers Pond in bipolar operation"], ["Synchronous condensers", "SC1, SC2 and SC3; 175 MVAr each; all three reported in service after 2023-04-13 except for planned maintenance"], ["230 kV circuits", "TL201 and TL217 to Western Avalon; TL242 and TL266 to Hardwoods; TL265 and TL268 to Holyrood"], ["Converter-transformer spare", "2019 reliability response records one spare converter transformer at Soldiers Pond"], ["Electrode line", "EL3/4 between Soldiers Pond and Dowden's Point"], ["2033/34 study case", "All Soldiers Pond filter banks available; electrode lines and electrode sites in service"], ["Diagram scope", "Simplified AC interface and converter poles; converter-transformer, filter-bank and breaker detail remains open"]],
+    facts: [["Commissioned", "Labrador-Island Link commissioned on 2023-04-14"], ["HVDC design basis", "Line-commutated converter; +/-350 kV DC; 900 MW at Muskrat Falls and 830 MW at Soldiers Pond in bipolar operation"], ["Synchronous condensers", "SC1, SC2 and SC3; 175 MVAr each; all three reported in service after 2023-04-13 except for planned maintenance"], ["230 kV yard", "The September 2015 operating diagram shows buses B1 and B2 with five breaker strings and 18 named breakers"], ["230 kV circuits", "TL201 and TL217 to Western Avalon; TL242 and TL266 to Hardwoods; TL265 and TL268 to Holyrood"], ["Harmonic filters", "Five 75 MVAR operating filters plus one installed spare were specified in the 2016 integration study"], ["Synchronous-condenser transformer spare", "The 2021 planning criteria lists one 230/25/15 kV, 200 MVA spare"], ["Converter-transformer spare", "A spare converter transformer is listed at Soldiers Pond in the 2019 reliability response and 2021 planning criteria"], ["Electrode line", "EL3/4 between Soldiers Pond and Dowden's Point"], ["2033/34 study case", "All Soldiers Pond filter banks available; electrode lines and electrode sites in service"]],
     diagram: {
-      label: "2023 commissioned interface / 2024 filed AC routes / converter detail simplified",
-      buses: [{ id: "b1", label: "Soldiers Pond AC yard", voltage: "230 kV" }],
+      label: "September 2015 filed operating arrangement / 2023 LIL commissioning",
+      buses: [{ id: "b1", label: "B1 / 230 kV", voltage: "230 kV", y: 165 }, { id: "b2", label: "B2 / 230 kV", voltage: "230 kV", y: 585, labelX: 690 }],
       transformers: [],
-      circuits: [{ label: "TL201", destination: "Western Avalon", bus: "b1" }, { label: "TL217", destination: "Western Avalon", bus: "b1" }, { label: "TL242", destination: "Hardwoods", bus: "b1" }, { label: "TL266", destination: "Hardwoods", bus: "b1" }, { label: "TL265", destination: "Holyrood", bus: "b1" }, { label: "TL268", destination: "Holyrood", bus: "b1" }],
-      converters: [{ label: "Pole 1", rating: "+/-350 kV DC", technology: "LCC inverter", bus: "b1", x: 230 }, { label: "Pole 2", rating: "+/-350 kV DC", technology: "LCC inverter", bus: "b1", x: 410 }],
-      generators: [{ label: "SC1", rating: "175 MVAr", symbol: "SC", bus: "b1", x: 670 }, { label: "SC2", rating: "175 MVAr", symbol: "SC", bus: "b1", x: 815 }, { label: "SC3", rating: "175 MVAr", symbol: "SC", bus: "b1", x: 960 }]
+      circuits: [],
+      diameters: [
+        { from: "b1", to: "b2", voltage: "230 kV", label: "B11/B31/B21 string", x: 140, breakers: [{ y: 230, label: "B1B11" }, { y: 375, label: "B21B31" }, { y: 520, label: "B2B21" }], connections: [{ y: 300, side: "left", lineLength: 25, label: "SC A", destination: "SC facility", link: false }, { y: 450, side: "right", label: "TL242", destination: "Hardwoods", destinationCode: "HRD" }] },
+        { from: "b1", to: "b2", voltage: "230 kV", label: "B12/B32/B22 string", x: 350, breakers: [{ y: 220, label: "B1B12" }, { y: 320, label: "B12B32" }, { y: 430, label: "B22B32" }, { y: 530, label: "B2B22" }], connections: [{ y: 270, side: "left", lineLength: 45, label: "SC B", destination: "SC facility", link: false }, { y: 375, side: "right", label: "TL266", destination: "Hardwoods", destinationCode: "HRD" }, { y: 500, side: "right", lineLength: 45, label: "SC C", destination: "SC facility", link: false }] },
+        { from: "b1", to: "b2", voltage: "230 kV", label: "B13/B33/B23 string", x: 560, breakers: [{ y: 220, label: "B1B13" }, { y: 320, label: "B13B33" }, { y: 430, label: "B23B33" }, { y: 530, label: "B2B23" }], connections: [{ y: 450, side: "left", lineLength: 50, label: "Converter A", destination: "SOPCS", link: false }, { y: 270, side: "right", lineLength: 50, label: "Converter B", destination: "SOPCS", link: false }, { y: 375, side: "right", label: "TL268", destination: "Holyrood", destinationCode: "HRD" }] },
+        { from: "b1", to: "b2", voltage: "230 kV", label: "B14/B34/B24 string", x: 770, breakers: [{ y: 220, label: "B1B14" }, { y: 320, label: "B14B34" }, { y: 430, label: "B24B34" }, { y: 530, label: "B2B24" }], connections: [{ y: 270, side: "right", lineLength: 50, label: "Converter C", destination: "SOPCS", link: false }, { y: 375, side: "right", label: "TL265", destination: "Holyrood", destinationCode: "HRD" }, { y: 480, side: "left", label: "TL201", destination: "Western Avalon", destinationCode: "WAV" }] },
+        { from: "b1", to: "b2", voltage: "230 kV", label: "B15/B35 string", x: 980, breakers: [{ y: 230, label: "B1B15" }, { y: 375, label: "B15B35" }, { y: 520, label: "B2B35" }], connections: [{ y: 300, side: "left", label: "Converter D", destination: "SOPCS", link: false }, { y: 450, side: "left", label: "TL217", destination: "Western Avalon", destinationCode: "WAV" }] }
+      ]
     },
-    sources: [sourceRef("nlh-lil-commissioning-2023", "physical PDF p. 1"), sourceRef("nlh-lil-april-2023", "physical PDF pp. 2 to 3"), sourceRef("nlh-sop-integration-2014", "physical PDF pp. 30 and 37 to 38"), sourceRef("nlh-lil-spares-2019", "physical PDF p. 1"), sourceRef("nlh-lil-near-term-2020", "physical PDF pp. 38 to 39"), sourceRef("nlh-planning-2024", "physical PDF pp. 8 and 13 to 14")]
+    sources: [sourceRef("nlh-lil-commissioning-2023", "physical PDF p. 1"), sourceRef("nlh-lil-april-2023", "physical PDF pp. 2 to 3"), sourceRef("nlh-sop-operating-2015", "physical PDF pp. 1 to 2"), sourceRef("nlh-sop-filters-2016", "physical PDF p. 8"), sourceRef("nlh-sop-transformer-spares-2021", "physical PDF p. 36"), sourceRef("nlh-sop-integration-2014", "physical PDF pp. 30 and 37 to 38"), sourceRef("nlh-lil-spares-2019", "physical PDF p. 1"), sourceRef("nlh-lil-near-term-2020", "physical PDF pp. 38 to 39"), sourceRef("nlh-planning-2024", "physical PDF pp. 8 and 13 to 14")]
   },
   {
     code: "USL",

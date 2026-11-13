@@ -204,15 +204,17 @@ test("Bay d'Espoir separates the individual unit terminals from the Station 2 bu
   assert.match(html, /data-hydro-terminal-record="USL"/);
 });
 
-test("Soldiers Pond separates converter poles from synchronous condensers", () => {
+test("Soldiers Pond renders the filed five-string 230 kV breaker arrangement", () => {
   const soldiersPond = islandTerminalRecords.find((record) => record.code === "SDP");
   const html = renderTerminalDiagram(soldiersPond.diagram, escapeHtml);
-  assert.match(html, /class="terminal-converter"/);
-  assert.match(html, />LCC</);
-  assert.match(html, />Pole 1</);
-  assert.match(html, />SC1</);
-  assert.match(html, />SC</);
-  assert.match(html, /175 MVAr/);
+  assert.equal(soldiersPond.diagram.diameters.length, 5);
+  assert.deepEqual(soldiersPond.diagram.diameters.flatMap(({ breakers }) => breakers.map(({ label }) => label)), ["B1B11", "B21B31", "B2B21", "B1B12", "B12B32", "B22B32", "B2B22", "B1B13", "B13B33", "B23B33", "B2B23", "B1B14", "B14B34", "B24B34", "B2B24", "B1B15", "B15B35", "B2B35"]);
+  assert.match(html, />B1B11</);
+  assert.match(html, />B15B35</);
+  assert.match(html, />TL242</);
+  assert.match(html, />TL217</);
+  assert.match(html, /data-hydro-terminal-record="HRD"/);
+  assert.match(html, /data-hydro-terminal-record="WAV"/);
   assert.doesNotMatch(html, /terminal-transformer/);
 });
 
