@@ -15,6 +15,7 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added the 109-row Newfoundland Power transmission asset register from CA-NP-168 Attachment A. The interface separates the December 31, 2022 historical-cost layer from the June 2005 handbook map and register.
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.

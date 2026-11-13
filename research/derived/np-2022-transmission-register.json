@@ -1,0 +1,1202 @@
+{
+  "source": {
+    "title": "CA-NP-168, Attachment A, Transmission Assets - Data",
+    "url": "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF",
+    "physical_pdf_pages": [
+      3,
+      4
+    ],
+    "sha256": "94e1720d54e98dc6126f4faa2106584de6c28a84d143ccb3e11adb5fd8793c56"
+  },
+  "cost_date": "2022-12-31",
+  "record_count": 109,
+  "circuit_cost_thousands": 186897,
+  "undistributed_cost_thousands": 54,
+  "total_cost_thousands": 186951,
+  "records": [
+    {
+      "circuit": "3L",
+      "description": "Petty Harbour Substation - Goulds Substation (PHR-GOU)",
+      "allocation": "Common",
+      "historical_cost_thousands": 551,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "PHR",
+        "GOU"
+      ]
+    },
+    {
+      "circuit": "4L",
+      "description": "Goulds Substation-St. John's Main Substation (GOU-SJM)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1892,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "GOU",
+        "SJM"
+      ]
+    },
+    {
+      "circuit": "5L",
+      "description": "Hardwoods Substation-Broad Cove Substation (HWD-BCV)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1455,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "HWD",
+        "BCV"
+      ]
+    },
+    {
+      "circuit": "11L",
+      "description": "Tors Cove Substation-Mobile Substation (TCV-MOB)",
+      "allocation": "Common",
+      "historical_cost_thousands": 467,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "TCV",
+        "MOB"
+      ]
+    },
+    {
+      "circuit": "12L",
+      "description": "Memorial Substation-Kings Bridge Road Substation (MUN-KBR)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1927,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "MUN",
+        "KBR"
+      ]
+    },
+    {
+      "circuit": "13L",
+      "description": "St. John's Main Substation-Stamp's Lane Substation(SJM-SLA)",
+      "allocation": "Common",
+      "historical_cost_thousands": 909,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "SJM",
+        "SLA"
+      ]
+    },
+    {
+      "circuit": "14L",
+      "description": "Stamp's Lane Substation-Memorial Substation (SLA-MUN)",
+      "allocation": "Common",
+      "historical_cost_thousands": 994,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "SLA",
+        "MUN"
+      ]
+    },
+    {
+      "circuit": "15L",
+      "description": "Molloy's Lane Substation-Stamp's Lane Substation (MOL-SLA)",
+      "allocation": "Common",
+      "historical_cost_thousands": 947,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "MOL",
+        "SLA"
+      ]
+    },
+    {
+      "circuit": "16L",
+      "description": "Kings Bridge Road Substation-Pepperell Substaion (KBR-PEP)",
+      "allocation": "Common",
+      "historical_cost_thousands": 818,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "KBR",
+        "PEP"
+      ]
+    },
+    {
+      "circuit": "17L",
+      "description": "Goulds Substation-Big Pond Substation (GOU-BIG)",
+      "allocation": "Common",
+      "historical_cost_thousands": 762,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "GOU",
+        "BIG"
+      ]
+    },
+    {
+      "circuit": "18L",
+      "description": "Glendale Substation-Goulds Substation (GDL-GOU)",
+      "allocation": "Common",
+      "historical_cost_thousands": 890,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "GDL",
+        "GOU"
+      ]
+    },
+    {
+      "circuit": "19L",
+      "description": "Hardwoods Substation-Molloy's Lane Substation (HWD-MOL)",
+      "allocation": "Common",
+      "historical_cost_thousands": 940,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "HWD",
+        "MOL"
+      ]
+    },
+    {
+      "circuit": "20L",
+      "description": "Cape Broyle Substation-Mobile Hydro Substation (CAB-MOB)",
+      "allocation": "Common",
+      "historical_cost_thousands": 3373,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "CAB",
+        "MOB"
+      ]
+    },
+    {
+      "circuit": "21L",
+      "description": "Horse Chops Substation-HorseChops Tap(HCP)",
+      "allocation": "Common",
+      "historical_cost_thousands": 854,
+      "physical_pdf_page": 3
+    },
+    {
+      "circuit": "22L",
+      "description": "Morris Plant Substation-Morris Plant Tap (MRP)",
+      "allocation": "Common",
+      "historical_cost_thousands": 343,
+      "physical_pdf_page": 3
+    },
+    {
+      "circuit": "23L",
+      "description": "Pierre's Brook Substation-Mobile Hydro Substation (PBK-MOB)",
+      "allocation": "Common",
+      "historical_cost_thousands": 765,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "PBK",
+        "MOB"
+      ]
+    },
+    {
+      "circuit": "24L",
+      "description": "Mobile Hydro Substation-Big Pond Substation (MOB-BIG)",
+      "allocation": "Common",
+      "historical_cost_thousands": 2672,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "MOB",
+        "BIG"
+      ]
+    },
+    {
+      "circuit": "25L",
+      "description": "Goulds Substation-St. John's Main Substation (GOU-SJM)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1465,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "GOU",
+        "SJM"
+      ]
+    },
+    {
+      "circuit": "30L",
+      "description": "Kings Bridge Road Substation-Ridge Road Substation (KBR-RRD)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1386,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "KBR",
+        "RRD"
+      ]
+    },
+    {
+      "circuit": "31L",
+      "description": "Stamp's Lane SubStation-Oxen Pond Substation (SLA-OXP)",
+      "allocation": "Common",
+      "historical_cost_thousands": 576,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "SLA",
+        "OXP"
+      ]
+    },
+    {
+      "circuit": "32L",
+      "description": "Oxen Pond Substation-Ridge Road Substation (OXP-RRD)",
+      "allocation": "Common",
+      "historical_cost_thousands": 515,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "OXP",
+        "RRD"
+      ]
+    },
+    {
+      "circuit": "34L",
+      "description": "Oxen Pond Substation-Virginia Waters Substation (OXP-VIR)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1050,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "OXP",
+        "VIR"
+      ]
+    },
+    {
+      "circuit": "35L",
+      "description": "Kenmount Road Substaion-Airport Substation (KEN-APT)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1832,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "KEN",
+        "APT"
+      ]
+    },
+    {
+      "circuit": "36L",
+      "description": "Oxen Pond Substation-Long Pond Substation (OXP-LPD)",
+      "allocation": "Fully Contributed",
+      "historical_cost_thousands": 682,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "OXP",
+        "LPD"
+      ]
+    },
+    {
+      "circuit": "38L",
+      "description": "Seal Cove Substation-Duff's Substation (SCV-DUF)",
+      "allocation": "Common",
+      "historical_cost_thousands": 465,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "SCV",
+        "DUF"
+      ]
+    },
+    {
+      "circuit": "39L",
+      "description": "Duff's Substation-Holyrood Substation (DUF-HOL)",
+      "allocation": "Common",
+      "historical_cost_thousands": 830,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "DUF",
+        "HOL"
+      ]
+    },
+    {
+      "circuit": "40L",
+      "description": "Carbonear Substation-Victoria Substation (CAR-VIC)",
+      "allocation": "Common",
+      "historical_cost_thousands": 320,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "CAR",
+        "VIC"
+      ]
+    },
+    {
+      "circuit": "41L",
+      "description": "Carbonear Substation-Heart's Content Substation (CAR-HCT)",
+      "allocation": "Common",
+      "historical_cost_thousands": 3224,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "CAR",
+        "HCT"
+      ]
+    },
+    {
+      "circuit": "42L",
+      "description": "Holyrood Substation-Colliers Substation (HOL-COL)",
+      "allocation": "Common",
+      "historical_cost_thousands": 809,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "HOL",
+        "COL"
+      ]
+    },
+    {
+      "circuit": "43L",
+      "description": "Heart's Content Substation-New Chelsea Substation (HCT-NCH)",
+      "allocation": "Common",
+      "historical_cost_thousands": 3036,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "HCT",
+        "NCH"
+      ]
+    },
+    {
+      "circuit": "46L",
+      "description": "Colliers Substation-Springfield Substation (COL-SPF)",
+      "allocation": "Common",
+      "historical_cost_thousands": 369,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "COL",
+        "SPF"
+      ]
+    },
+    {
+      "circuit": "47L",
+      "description": "Springfield Substation- Bay Robert's Substation (SPF-BRB)",
+      "allocation": "Common",
+      "historical_cost_thousands": 449,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "SPF",
+        "BRB"
+      ]
+    },
+    {
+      "circuit": "48L",
+      "description": "Bay Robert's Substation-Blaketown Substation (BRB-BLK)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1587,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "BRB",
+        "BLK"
+      ]
+    },
+    {
+      "circuit": "49L",
+      "description": "Hardwoods Substation-Chamberlains Substation (HWD-CHA)",
+      "allocation": "Common",
+      "historical_cost_thousands": 996,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "HWD",
+        "CHA"
+      ]
+    },
+    {
+      "circuit": "51L",
+      "description": "Chamberlains Substation-Kelligrews Substation (CHA-KEL)",
+      "allocation": "Common",
+      "historical_cost_thousands": 718,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "CHA",
+        "KEL"
+      ]
+    },
+    {
+      "circuit": "52L",
+      "description": "Kelligrews Substation-Seal Cove Hydro Substation (KEL-SCV)",
+      "allocation": "Common",
+      "historical_cost_thousands": 486,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "KEL",
+        "SCV"
+      ]
+    },
+    {
+      "circuit": "54L",
+      "description": "Kenmount Road Substaion-Hardwoods Substation (KEN-HWD)",
+      "allocation": "Common",
+      "historical_cost_thousands": 816,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "KEN",
+        "HWD"
+      ]
+    },
+    {
+      "circuit": "55L",
+      "description": "Blaketown Substation-Clarkes Pond Substation (BLK-CLK)",
+      "allocation": "Common",
+      "historical_cost_thousands": 2172,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "BLK",
+        "CLK"
+      ]
+    },
+    {
+      "circuit": "56L",
+      "description": "Bay Roberts Substation-Carbonear Substation (BRB-CAR)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1115,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "BRB",
+        "CAR"
+      ]
+    },
+    {
+      "circuit": "57L",
+      "description": "Bay Roberts Substation-Harbour Grace Substation (BRB-HGR)",
+      "allocation": "Common",
+      "historical_cost_thousands": 3064,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "BRB",
+        "HGR"
+      ]
+    },
+    {
+      "circuit": "58L",
+      "description": "Oxen Pond Substation-Virginia Waters Substation (OXP-VIR)",
+      "allocation": "Common",
+      "historical_cost_thousands": 594,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "OXP",
+        "VIR"
+      ]
+    },
+    {
+      "circuit": "59L",
+      "description": "Virginia Waters Substation-Pulpit Rock Substation (VIR-PUL)",
+      "allocation": "Common",
+      "historical_cost_thousands": 731,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "VIR",
+        "PUL"
+      ]
+    },
+    {
+      "circuit": "64L",
+      "description": "Blaketown Substation-Western Avalon Substation (BLK-WAV)",
+      "allocation": "Common",
+      "historical_cost_thousands": 582,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "BLK",
+        "WAV"
+      ]
+    },
+    {
+      "circuit": "65L",
+      "description": "New Chelsea Substation-Old Perlican Substation (NCH-OPL)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1102,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "NCH",
+        "OPL"
+      ]
+    },
+    {
+      "circuit": "66L",
+      "description": "Fermuese Substation-Cape Broyle Substation (FER-CAB)",
+      "allocation": "Common",
+      "historical_cost_thousands": 850,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "FER",
+        "CAB"
+      ]
+    },
+    {
+      "circuit": "67L",
+      "description": "Oxen Pond Substation-Ridge Road Substation (OXP-RRD)",
+      "allocation": "Common",
+      "historical_cost_thousands": 520,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "OXP",
+        "RRD"
+      ]
+    },
+    {
+      "circuit": "68L",
+      "description": "Carbonear Substation-Harbour Grace Substation (CAR-HGR)",
+      "allocation": "Common",
+      "historical_cost_thousands": 983,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "CAR",
+        "HGR"
+      ]
+    },
+    {
+      "circuit": "69L",
+      "description": "Kenmount Road Substaion- Stamp's Lane SubStation (KEN-SLA)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1024,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "KEN",
+        "SLA"
+      ]
+    },
+    {
+      "circuit": "70L",
+      "description": "Stamp's Lane SubStation-Oxen Pond Substation (SLA-OXP)",
+      "allocation": "Common",
+      "historical_cost_thousands": 385,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "SLA",
+        "OXP"
+      ]
+    },
+    {
+      "circuit": "72L",
+      "description": "Goulds Substation-Hardwoods Substation (GOU-HWD)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1252,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "GOU",
+        "HWD"
+      ]
+    },
+    {
+      "circuit": "73L",
+      "description": "Glendale Substation-Hardwoods Substation (GDL-HWD)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1008,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "GDL",
+        "HWD"
+      ]
+    },
+    {
+      "circuit": "74L",
+      "description": "Virginia Waters Substation-Pepperell Substation (VIR-PEP)",
+      "allocation": "Common",
+      "historical_cost_thousands": 901,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "VIR",
+        "PEP"
+      ]
+    },
+    {
+      "circuit": "79L",
+      "description": "Chamberlains Substation-Hardwoods Substation (CHA-HWD)",
+      "allocation": "Common",
+      "historical_cost_thousands": 599,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "CHA",
+        "HWD"
+      ]
+    },
+    {
+      "circuit": "80L",
+      "description": "Blaketown Substation-Heart's Content Hydro Substation (BLK-HCT)",
+      "allocation": "Common",
+      "historical_cost_thousands": 3776,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "BLK",
+        "HCT"
+      ]
+    },
+    {
+      "circuit": "86L",
+      "description": "Western Avalon Substation-Blaketown Substation (WAV-BLK)",
+      "allocation": "Common",
+      "historical_cost_thousands": 779,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "WAV",
+        "BLK"
+      ]
+    },
+    {
+      "circuit": "94L",
+      "description": "Blaketown Substation- Riverhead Substation (BLK-RVH)",
+      "allocation": "Common",
+      "historical_cost_thousands": 2855,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "BLK",
+        "RVH"
+      ]
+    },
+    {
+      "circuit": "95L",
+      "description": "Riverhead Substation-Trespassey Substation (RVH-TRP)",
+      "allocation": "Common",
+      "historical_cost_thousands": 3029,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "RVH",
+        "TRP"
+      ]
+    },
+    {
+      "circuit": "100L",
+      "description": "Sunnyside Substation-Clarenville Substation (SUN-CLV)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1182,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "SUN",
+        "CLV"
+      ]
+    },
+    {
+      "circuit": "102L",
+      "description": "Gander Substation-RoyceField Substation (GAN-RFD)",
+      "allocation": "Common",
+      "historical_cost_thousands": 2689,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "GAN",
+        "RFD"
+      ]
+    },
+    {
+      "circuit": "104L",
+      "description": "RoyceField Substation-RoyceField Mine (Tap off 102L) (RFD-RFM)",
+      "allocation": "Fully Contributed",
+      "historical_cost_thousands": 1301,
+      "physical_pdf_page": 3,
+      "endpoint_codes": [
+        "RFD",
+        "RFM"
+      ]
+    },
+    {
+      "circuit": "105L",
+      "description": "Sandy Brook Substation-Grand Falls Substation (SBK-GFS)",
+      "allocation": "Common",
+      "historical_cost_thousands": 644,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "SBK",
+        "GFS"
+      ]
+    },
+    {
+      "circuit": "108L",
+      "description": "Gander Substation-Gander Bay Substation (GAN-GBY)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1225,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "GAN",
+        "GBY"
+      ]
+    },
+    {
+      "circuit": "109L",
+      "description": "Clarenville Substation-Sunnyside Substation (CLV-SUN)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1366,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "CLV",
+        "SUN"
+      ]
+    },
+    {
+      "circuit": "110L",
+      "description": "Clarenville Substation-Lethbridge Substation (CLV-LET)",
+      "allocation": "Common",
+      "historical_cost_thousands": 3804,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "CLV",
+        "LET"
+      ]
+    },
+    {
+      "circuit": "111L",
+      "description": "Catalina Substation-Lockston Substation (CAT-LOK)",
+      "allocation": "Common",
+      "historical_cost_thousands": 4083,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "CAT",
+        "LOK"
+      ]
+    },
+    {
+      "circuit": "113L",
+      "description": "Lethbridge Substation-Lockston Substation (LET-LOK)",
+      "allocation": "Common",
+      "historical_cost_thousands": 5415,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "LET",
+        "LOK"
+      ]
+    },
+    {
+      "circuit": "114L",
+      "description": "Gander Bay Substation-Summerford Substation (GBY-SUM)",
+      "allocation": "Common",
+      "historical_cost_thousands": 2342,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "GBY",
+        "SUM"
+      ]
+    },
+    {
+      "circuit": "115L",
+      "description": "Gambo Substation-Hare Bay Substation (GAM-HBS)",
+      "allocation": "Common",
+      "historical_cost_thousands": 817,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "GAM",
+        "HBS"
+      ]
+    },
+    {
+      "circuit": "116L",
+      "description": "Hare Bay Substation-Wesleyville Substation (HBS-WES) (Taps to Trinity Sub and Greenspond Sub)",
+      "allocation": "Common",
+      "historical_cost_thousands": 4170,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "HBS",
+        "WES"
+      ]
+    },
+    {
+      "circuit": "117L",
+      "description": "Catalina Substation-Bonavista Substation (CAT-BON)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1171,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "CAT",
+        "BON"
+      ]
+    },
+    {
+      "circuit": "121L",
+      "description": "Glovertown Substation-Gambo Substation (GLV-GAM)",
+      "allocation": "Common",
+      "historical_cost_thousands": 5094,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "GLV",
+        "GAM"
+      ]
+    },
+    {
+      "circuit": "123L",
+      "description": "Clarenville Substation-Catalina Substation (CLV-CAT)",
+      "allocation": "Common",
+      "historical_cost_thousands": 6202,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "CLV",
+        "CAT"
+      ]
+    },
+    {
+      "circuit": "124L",
+      "description": "Clarenville Substation-Glovertown Substation (CLV-GLV) (Taps to Port Blandford Sub and Terra Nova Sub)",
+      "allocation": "Common",
+      "historical_cost_thousands": 10549,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "CLV",
+        "GLV"
+      ]
+    },
+    {
+      "circuit": "130L",
+      "description": "Stony Brook Terminal Station - Grand Falls Substation 25 (STY-GFS25)",
+      "allocation": "Common",
+      "historical_cost_thousands": 654,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "STY",
+        "GFS25"
+      ]
+    },
+    {
+      "circuit": "132L",
+      "description": "Grand Falls Substation 25 - Bishop's Falls Substation (GFS25-BFS)",
+      "allocation": "Common",
+      "historical_cost_thousands": 613,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "GFS25",
+        "BFS"
+      ]
+    },
+    {
+      "circuit": "133L",
+      "description": "Stony Brook Terminal Station-Bishop's Falls Substation (STY-BFS)",
+      "allocation": "Common",
+      "historical_cost_thousands": 956,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "STY",
+        "BFS"
+      ]
+    },
+    {
+      "circuit": "134L",
+      "description": "Bishop's Falls Substation-Botwood Substation (BFS-BOT)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1045,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "BFS",
+        "BOT"
+      ]
+    },
+    {
+      "circuit": "136L",
+      "description": "Rattling Brook Substation-Bishop's Falls Substation (RBK-BFS)",
+      "allocation": "Common",
+      "historical_cost_thousands": 7666,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "RBK",
+        "BFS"
+      ]
+    },
+    {
+      "circuit": "137L",
+      "description": "Lewisporte Substation-Rattling Brook Substation (LEW-RBK)",
+      "allocation": "Common",
+      "historical_cost_thousands": 454,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "LEW",
+        "RBK"
+      ]
+    },
+    {
+      "circuit": "140L",
+      "description": "Summerford Substation-Twillingate Substation (SUM-TWG)",
+      "allocation": "Common",
+      "historical_cost_thousands": 2283,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "SUM",
+        "TWG"
+      ]
+    },
+    {
+      "circuit": "142L",
+      "description": "Clarke's Head -Cobb's Pond Substation (CLK-COB) (Clarke's head is the tie point between 142L and 114L)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1897,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "CLK",
+        "COB"
+      ]
+    },
+    {
+      "circuit": "144L",
+      "description": "Cobb's Pond Substation-Gander Substation (COB-GAN)",
+      "allocation": "Common",
+      "historical_cost_thousands": 380,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "COB",
+        "GAN"
+      ]
+    },
+    {
+      "circuit": "146L",
+      "description": "Gander Substation-Gambo Substation (GAN-GAM)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1165,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "GAN",
+        "GAM"
+      ]
+    },
+    {
+      "circuit": "147L",
+      "description": "Cobb's Pond Substation-Lewisporte Substation (COB-LEW)",
+      "allocation": "Common",
+      "historical_cost_thousands": 2765,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "COB",
+        "LEW"
+      ]
+    },
+    {
+      "circuit": "300L",
+      "description": "Linton Lake Substation-Marystown Substation (LLK-MSY)",
+      "allocation": "Common",
+      "historical_cost_thousands": 359,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "LLK",
+        "MSY"
+      ]
+    },
+    {
+      "circuit": "301L",
+      "description": "Salt Pond Substation-Greenhill Substation (SPO-GRH)",
+      "allocation": "Common",
+      "historical_cost_thousands": 3337,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "SPO",
+        "GRH"
+      ]
+    },
+    {
+      "circuit": "302L",
+      "description": "Salt Pond Substation-Laurentian Substation (SPO-LAU)",
+      "allocation": "Common",
+      "historical_cost_thousands": 4260,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "SPO",
+        "LAU"
+      ]
+    },
+    {
+      "circuit": "305L",
+      "description": "Laurentian Substation-Greenhill Substation (LAU-GRH)",
+      "allocation": "Common",
+      "historical_cost_thousands": 2458,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "LAU",
+        "GRH"
+      ]
+    },
+    {
+      "circuit": "308L",
+      "description": "Salt Pond Substation-Marystown Substation (SPO-MSY)",
+      "allocation": "Common",
+      "historical_cost_thousands": 887,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "SPO",
+        "MSY"
+      ]
+    },
+    {
+      "circuit": "351L",
+      "description": "Massey Drive Substation-Walbournes Substation (MAS-WAL)",
+      "allocation": "Common",
+      "historical_cost_thousands": 331,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "MAS",
+        "WAL"
+      ]
+    },
+    {
+      "circuit": "352L",
+      "description": "Massey Drive Substation-Walbournes Substation (MAS-WAL)",
+      "allocation": "Common",
+      "historical_cost_thousands": 618,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "MAS",
+        "WAL"
+      ]
+    },
+    {
+      "circuit": "353L",
+      "description": "Walbournes Substation-Frenchman's Cove Substation(WAL-FRN)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1647,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "WAL",
+        "FRN"
+      ]
+    },
+    {
+      "circuit": "356L",
+      "description": "Massey Drive Substation-Humber Substation (MAS-HUM)",
+      "allocation": "Common",
+      "historical_cost_thousands": 104,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "MAS",
+        "HUM"
+      ]
+    },
+    {
+      "circuit": "357L",
+      "description": "Massey Drive Substation-Bayview Substation (MAS-BVS)",
+      "allocation": "Common",
+      "historical_cost_thousands": 360,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "MAS",
+        "BVS"
+      ]
+    },
+    {
+      "circuit": "358L",
+      "description": "Bayview Substation -Gillams Substation(BVS-GIL)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1802,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "BVS",
+        "GIL"
+      ]
+    },
+    {
+      "circuit": "359L",
+      "description": "Humber Substation-Bayview Substation (HUM-BVS)",
+      "allocation": "Common",
+      "historical_cost_thousands": 403,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "HUM",
+        "BVS"
+      ]
+    },
+    {
+      "circuit": "363L",
+      "description": "Baie Verte Junction-Seal Cove Substation (BVJ-SCV)",
+      "allocation": "Common",
+      "historical_cost_thousands": 12454,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "BVJ",
+        "SCV"
+      ]
+    },
+    {
+      "circuit": "400L",
+      "description": "Bottom Brook Substation-Wheeler's Substation (BBK-WHE)",
+      "allocation": "Common",
+      "historical_cost_thousands": 3764,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "BBK",
+        "WHE"
+      ]
+    },
+    {
+      "circuit": "401L",
+      "description": "Gallant Street Substation-Stephenville Gas Turbine (GAL-STV)",
+      "allocation": "Common",
+      "historical_cost_thousands": 772,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "GAL",
+        "STV"
+      ]
+    },
+    {
+      "circuit": "402L",
+      "description": "Gallant Street Substation-Berry Head Substation (GAL-BHD)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1380,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "GAL",
+        "BHD"
+      ]
+    },
+    {
+      "circuit": "403L Rob Tap",
+      "description": "403L Tap Location - Robinson's Substation (403L Tap-ROB)",
+      "allocation": "Common",
+      "historical_cost_thousands": 885,
+      "physical_pdf_page": 4
+    },
+    {
+      "circuit": "403L",
+      "description": "Lookout Brook Substation-St. Georges Substation (LBK-STG)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1452,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "LBK",
+        "STG"
+      ]
+    },
+    {
+      "circuit": "404L",
+      "description": "Wheeler's Substation -Wheelers Tap",
+      "allocation": "Common",
+      "historical_cost_thousands": 162,
+      "physical_pdf_page": 4
+    },
+    {
+      "circuit": "405L",
+      "description": "Stephenville Gas Turbine-Harmon Substation (STV-HAR)",
+      "allocation": "Common",
+      "historical_cost_thousands": 266,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "STV",
+        "HAR"
+      ]
+    },
+    {
+      "circuit": "406L",
+      "description": "Gallant Street Substation-Harmon Substation (GAL-HAR)",
+      "allocation": "Common",
+      "historical_cost_thousands": 317,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "GAL",
+        "HAR"
+      ]
+    },
+    {
+      "circuit": "407L",
+      "description": "Stephenville Gas Turbine-St. George's Substation (STV-STG)",
+      "allocation": "Common",
+      "historical_cost_thousands": 1746,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "STV",
+        "STG"
+      ]
+    },
+    {
+      "circuit": "410L",
+      "description": "Berry Head Substation-Lower Cove Mine Site (BHD-LCV)",
+      "allocation": "Common/Specific",
+      "historical_cost_thousands": 2720,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "BHD",
+        "LCV"
+      ],
+      "footnote": 2
+    },
+    {
+      "circuit": "416L",
+      "description": "Long Lake Substation-Grand Bay Substation (LGL-GBS)",
+      "allocation": "Common",
+      "historical_cost_thousands": 2455,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "LGL",
+        "GBS"
+      ]
+    },
+    {
+      "circuit": "417L",
+      "description": "Port aux Basques Substation-Grand Bay Substation (PAB-GBS)",
+      "allocation": "Common",
+      "historical_cost_thousands": 535,
+      "physical_pdf_page": 4,
+      "endpoint_codes": [
+        "PAB",
+        "GBS"
+      ]
+    }
+  ]
+}

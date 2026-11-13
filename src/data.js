@@ -3683,9 +3683,9 @@ export const sources = [
     id: "np-2025-ca-np-168",
     year: 2025,
     organization: "Newfoundland Power",
-    title: "CA-NP-168, Attachment A, Transmission Line Endpoints",
-    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "80L", "105L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "353L", "357L", "358L", "359L", "401L", "405L", "407L", "Big Pond", "Bayview", "Blaketown", "Frenchman's Cove", "Grand Falls", "Sandy Brook", "Heart's Content", "Islington", "New Chelsea", "New Harbour", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville", "Stephenville", "Gallant Street", "Harmon", "St. George's"],
-    pages: "physical PDF pp. 3 to 4",
+    title: "CA-NP-168, Transmission Asset Cost and Allocation Register",
+    topics: ["transmission assets", "circuit endpoints", "allocation", "historical cost", "2022 asset register", "17L", "24L", "43L", "57L", "65L", "68L", "80L", "105L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "353L", "357L", "358L", "359L", "401L", "405L", "407L", "Big Pond", "Bayview", "Blaketown", "Frenchman's Cove", "Grand Falls", "Sandy Brook", "Heart's Content", "Islington", "New Chelsea", "New Harbour", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville", "Stephenville", "Gallant Street", "Harmon", "St. George's"],
+    pages: "physical PDF pp. 1 and 3 to 4",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
   },

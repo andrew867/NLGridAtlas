@@ -83,6 +83,7 @@ Work items:
 - ISL-014
 - ISL-015
 - ISL-016
+- NPREG-001
 
 Exit gate:
 

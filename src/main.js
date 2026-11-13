@@ -8,6 +8,7 @@ import "@fontsource/ibm-plex-mono/400.css";
 import "./styles.css";
 import { components, islandTerminalRecords, sources, stationProfiles, timeline } from "./data.js";
 import handbook from "../research/derived/np-2006-handbook.json";
+import transmissionRegister2022 from "../research/derived/np-2022-transmission-register.json";
 import transformerRegister from "../research/derived/np-2027-transformer-register.json";
 import { avalonLabelOffsets, avalonNodePositions } from "./avalon-layout.js";
 import { initGeographicMap } from "./geographic-map.js";
@@ -47,7 +48,7 @@ for (const line of handbook.transmission_lines) {
   if (line.from_code) handbookEndpoints.set(line.from_code, { name: line.from, source_page: line.source_page });
   if (line.to_code) handbookEndpoints.set(line.to_code, { name: line.to, source_page: line.source_page });
 }
-let activeRegister = "lines";
+let activeRegister = "lines-2022";
 let activeStationProfile = "HWD";
 let activeHydroTerminal = "SUN";
 let stationTabQuery = "";
@@ -510,7 +511,9 @@ function registerRows() {
       title: station.name,
       detail: station.feeders.length ? station.feeders.join(", ") : "No feeder listed",
       page: station.source_page,
-      search: [station.code, station.name, ...station.feeders].join(" ")
+      search: [station.code, station.name, ...station.feeders].join(" "),
+      sourceUrl: handbook.source.source_url,
+      sourceLabel: `PDF p. ${station.source_page}`
     }));
   }
   if (activeRegister === "plants") {
@@ -522,16 +525,31 @@ function registerRows() {
         detail: plant.category.replaceAll("_", " "),
         page: plant.source_page,
         conflict: greenhill,
-        search: [plant.code, greenhill ? "GRH" : "", plant.name, plant.category].join(" ")
+        search: [plant.code, greenhill ? "GRH" : "", plant.name, plant.category].join(" "),
+        sourceUrl: handbook.source.source_url,
+        sourceLabel: `PDF p. ${plant.source_page}`
       };
     });
+  }
+  if (activeRegister === "lines-2022") {
+    return transmissionRegister2022.records.map((line) => ({
+      key: line.circuit,
+      title: line.description,
+      detail: `${line.allocation}; $${line.historical_cost_thousands.toLocaleString()} thousand historical cost`,
+      page: line.physical_pdf_page,
+      search: [line.circuit, line.description, line.allocation, ...(line.endpoint_codes || [])].join(" "),
+      sourceUrl: transmissionRegister2022.source.url,
+      sourceLabel: `Physical PDF p. ${line.physical_pdf_page}`
+    }));
   }
   return handbook.transmission_lines.map((line) => ({
     key: line.circuit,
     title: `${line.from}${line.from_code ? ` (${line.from_code})` : ""} to ${line.to}${line.to_code ? ` (${line.to_code})` : ""}`,
     detail: "Transmission circuit",
     page: line.source_page,
-    search: [line.circuit, line.from, line.from_code, line.to, line.to_code].filter(Boolean).join(" ")
+    search: [line.circuit, line.from, line.from_code, line.to, line.to_code].filter(Boolean).join(" "),
+    sourceUrl: handbook.source.source_url,
+    sourceLabel: `PDF p. ${line.source_page}`
   }));
 }
 
@@ -544,7 +562,7 @@ function renderHandbookRegister(query = "") {
     <article class="register-row${row.conflict ? " conflict-record" : ""}"${row.conflict ? ` data-conflict-code="${escapeHtml(row.key)}" tabindex="0" role="button" aria-controls="source-conflict"` : ""}>
       <strong>${escapeHtml(row.key)}</strong>
       <div><span>${escapeHtml(row.title)}</span><small>${escapeHtml(row.detail)}</small></div>
-      <a href="${escapeHtml(handbook.source.source_url)}" target="_blank" rel="noreferrer">PDF p. ${row.page}</a>
+      <a href="${escapeHtml(row.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(row.sourceLabel)}</a>
     </article>`).join("");
 }
 
