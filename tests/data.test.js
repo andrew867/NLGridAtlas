@@ -3034,12 +3034,15 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.ok(sourceIds.has("nlh-2024-rra"));
   assert.ok(sourceIds.has("nlh-2025-capital"));
   assert.ok(sourceIds.has("nlh-2025-avalon-ct"));
+  assert.ok(sourceIds.has("nlh-2027-ca-nlh-058"));
   assert.equal(components["hrd-g3"].status, "verified");
   assert.match(components["hrd-g3"].data.flat().join(" "), /Pony motor and SSS clutch/);
   assert.match(components["hrd-g3"].data.flat().join(" "), /April 2022 operation 373 hours/);
   assert.match(components["hrd-g3"].data.flat().join(" "), /Spring 2030/);
   assert.match(components["hrd-g3"].data.flat().join(" "), /beyond 2035.*condition-monitoring instrumentation/);
   assert.match(components["hrd-g3"].data.flat().join(" "), /STATCOMs.*grid-forming inverters/);
+  assert.match(components["hrd-g3"].data.flat().join(" "), /June 2026 review.*continued requirement and effectiveness/);
+  assert.match(components["hrd-g3"].data.flat().join(" "), /September 2026 position.*planning assumption.*RRA Study Review/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /Unit 1 overhaul completed February 2025/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /Six containerized CAT 3516B/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /SST34 feed 66 kV underground cable replacement completed in 2019/);

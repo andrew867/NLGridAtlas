@@ -83,6 +83,7 @@ Updated: 2026-11-13
 - Corrected TL208's current eastern endpoint from the retired Long Harbour terminal to the Voisey's Bay Nickel terminal. The new terminal entered service in 2012 after TL208 was extended; the historical Long Harbour equipment remains in the source record.
 - Added the 2022 Holyrood condition-study transformer inventory, including the three generator transformers, three excitation transformers, three unit-service transformers, and two station-service transformers.
 - Added the July 2026 Unit 3 operating record: 0 generating hours and 697 synchronous-condensing hours.
+- Updated the Holyrood Unit 3 post-steam record with the June and September 2026 filings. Both retain the synchronous-condenser role as a planning assumption under review, not a completed conversion.
 - Separated the 2012 Muskrat Falls plan to convert Units 1 and 2 from later Holyrood backup, life-extension, and post-steam planning records.
 - Confirmed from the 2020 capital RFI that Hydro had dropped Units 1 and 2 from the synchronous-condenser operating plan; only Unit 3 remained.
 - Added the February 2025 Unit 1 overhaul completion record and the September 2025 list of reactive-power alternatives under assessment.
