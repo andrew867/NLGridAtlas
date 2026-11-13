@@ -742,6 +742,18 @@
       "notes": "The 2024 filing records the 1.6 km shoreline relocation and BIG-02 work. NLH-NP-025 confirms 66 kV, steel poles, the protected-water-supply constraint, and BIG-02 underbuild. The Q2 2026 report records the relocation complete for the quarter ended June 30, 2026; no exact commissioning date was found."
     },
     {
+      "id": "NPREG-004",
+      "title": "Reconcile Newfoundland Power 2024 station and feeder closeouts",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile quarterly completion reports, the annual capital expenditure report, and the annual financial report without treating equipment commissioning and financial closeout as the same event.",
+      "dependencies": ["ARC-001", "SRC-001"],
+      "completion_evidence": ["research/NP_2024_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "The Q3 report records the Oxen Pond 66 kV bus upgrade and switch replacements complete. The annual capital report records zero carryover for those projects and the OXP-01 refurbishment. Gambo and Old Perlican were commissioned in 2024, while final capital expenditures carried into 2025. The annual financial report was checked and did not add station topology or equipment ratings."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -363,6 +363,12 @@ test("station profiles separate registers, maps, and recorded event loads", () =
     ["Rating", "13.33 MVA"],
     ["2026 forecast", "9.87 MVA"]
   ]);
+  const oxenScope = oxenPond.historyRecords.find((record) => record.sourceId === "np-2024-oxen-pond-projects");
+  const oxenCompletion = oxenPond.historyRecords.find((record) => record.sourceId === "np-2024-q3-regulatory");
+  const oxenCloseout = oxenPond.historyRecords.find((record) => record.sourceId === "np-2024-capex-system-closeout");
+  assert.match(oxenScope.facts.flat().join(" "), /3\.2 km.*#4 copper.*32 poles.*35 crossarms.*105 insulators/);
+  assert.match(oxenCompletion.facts.flat().join(" "), /66 kV bus upgrade and switch replacement/);
+  assert.match(oxenCloseout.facts.flat().join(" "), /\$451,000.*\$364,000.*\$316,000.*\$281,000.*\$840,000.*\$966,000/);
 
   const kenmount = stationProfiles.find((station) => station.code === "KEN");
   assert.deepEqual(kenmount.feederRegister, ["KEN-02", "KEN-03", "KEN-04"]);

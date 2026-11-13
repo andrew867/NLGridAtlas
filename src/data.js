@@ -4580,6 +4580,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
   },
   {
+    id: "np-2024-oxen-pond-projects",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Oxen Pond Station and Feeder Work",
+    topics: ["Oxen Pond", "OXP-01", "66 kV bus", "switch replacement", "distribution feeder refurbishment"],
+    pages: "physical PDF pp. 41 to 46 and 164 to 165",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-2024-q3-regulatory",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "Q3 2024 Quarterly Regulatory Report",
+    topics: ["Oxen Pond", "Gambo", "Old Perlican", "Memorial", "66 kV bus", "substation commissioning"],
+    pages: "physical PDF p. 13",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q3%202024_Redacted.pdf"
+  },
+  {
+    id: "np-2024-capex-system-closeout",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Expenditure Report, Substation and Feeder Closeout",
+    topics: ["Oxen Pond", "OXP-01", "Gambo", "Memorial", "Old Perlican", "capital expenditure", "carryover"],
+    pages: "physical PDF pp. 8, 12, 14 and 23",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/NP%20-%202024%20-%20Capital%20Expenditure%20Report%20-%202025-04-01.PDF"
+  },
+  {
     id: "np-2024-q4-regulatory",
     year: 2025,
     organization: "Newfoundland Power",
@@ -14701,6 +14731,34 @@ export const stationProfiles = [
         pages: "physical PDF p. 5",
         facts: [
           ["Completed work", "replaced foundations and lightning arresters; upgraded feeder protection and feeder automation"]
+        ]
+      },
+      {
+        label: "2024 FILED OXP-01 REFURBISHMENT SCOPE",
+        sourceId: "np-2024-oxen-pond-projects",
+        pages: "physical PDF pp. 41 to 46",
+        facts: [
+          ["Feeder", "OXP-01 served approximately 1,290 customers in Pippy Park and extended along Thorburn Road toward Portugal Cove-St. Philip's"],
+          ["Filed work", "replace 3.2 km of 1960s three-phase #4 copper conductor, deteriorated poles and crossarms, vintage insulators, transformer brackets, and overloaded mainline poles"],
+          ["Inspected section", "the 3.2 km three-phase trunk along Thorburn Road had 32 poles, 35 crossarms, and 105 insulators identified for replacement"]
+        ]
+      },
+      {
+        label: "Q3 2024 BUS AND SWITCH WORK COMPLETED",
+        sourceId: "np-2024-q3-regulatory",
+        pages: "physical PDF p. 13",
+        facts: [
+          ["Completed work", "66 kV bus upgrade and switch replacement projects"]
+        ]
+      },
+      {
+        label: "2024 BUS, SWITCH, AND FEEDER CAPITAL CLOSEOUT",
+        sourceId: "np-2024-capex-system-closeout",
+        pages: "physical PDF pp. 12, 14 and 23",
+        facts: [
+          ["66 kV bus upgrade", "$451,000 approved; $364,000 actual expenditure; no carryover to 2025"],
+          ["66 kV switch replacements", "$316,000 approved; $281,000 actual expenditure; no carryover to 2025"],
+          ["OXP-01 refurbishment", "$840,000 approved; $966,000 actual expenditure; no carryover to 2025"]
         ]
       }
     ]
