@@ -1720,6 +1720,26 @@ test("Alexander Bay separates the former switchyard from the completed 2022 reco
   assert.match(historyFacts, /undertaken in 2022, completed/);
 });
 
+test("Indian Cove preserves the dated stepdown station and proposed replacement", () => {
+  const indianCove = stationProfiles.find((station) => station.code === "IND");
+  assert.ok(indianCove);
+  assert.deepEqual(indianCove.connectedCircuits, []);
+  assert.deepEqual(indianCove.feederRegister, ["IND-01"]);
+  assert.deepEqual(indianCove.diagram.buses.map(({ voltage }) => voltage), ["25 kV", "12.5 kV"]);
+  assert.deepEqual(indianCove.diagram.transformers.map(({ label, rating }) => [label, rating]), [["Existing transformer", "1.8 MVA"]]);
+  assert.deepEqual(indianCove.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 76"]);
+
+  const existingFacts = indianCove.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = indianCove.planningRecord.facts.flat().join(" ");
+  const historyFacts = indianCove.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /1\.8 MVA, 25\/12\.5 kV/);
+  assert.match(existingFacts, /described as deteriorated/);
+  assert.match(planningFacts, /replace the transformer and structure/);
+  assert.match(planningFacts, /\$138,000/);
+  assert.match(historyFacts, /351 customers/);
+  assert.match(historyFacts, /SAIFI 2\.92; SAIDI 5\.29 hours/);
+});
+
 test("Twillingate combines the completed station work with measured winter voltage", () => {
   const twillingate = stationProfiles.find((station) => station.code === "TWG");
   assert.ok(twillingate);

@@ -79,6 +79,14 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] CA-NP-124 records the 124L rebuild as undertaken in 2022, completed, and the new transmission line in service, physical PDF p. 3.
 - [x] The filed pre-rebuild and post-rebuild geographic configurations are retained with the station record, 2022 Capital Budget Application, physical PDF pp. 346 to 347.
 
+## Indian Cove station record
+
+- [x] The 2003 filing records a deteriorated 1.8 MVA, 25/12.5 kV stepdown transformer and wood structure at Indian Cove, 2004 Capital Budget Application Volume II, physical PDF p. 76.
+- [x] The filing proposed replacement of the transformer and structure and other station improvements at a cost of $138,000, physical PDF p. 76.
+- [x] CA-116 identifies IND-01 with 351 customers in the 2001 project table. For the 12 months ended August 31, 2002, it records SAIFI 2.92 and SAIDI 5.29 hours, physical PDF pp. 1 to 2.
+- [x] The filed station photograph and project description are retained with the station record, 2004 Capital Budget Application Volume II, physical PDF p. 76.
+- [ ] No completion record or current Indian Cove transformer record was located. The replacement remains filed work and the equipment record remains dated 2003.
+
 ## Doyles terminal and substation record
 
 - [x] TL214 connects Bottom Brook and Doyles at 138 kV; TL215 connects Doyles and Grand Bay at 66 kV, 2018 island transmission table, physical PDF p. 24.

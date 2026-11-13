@@ -45,6 +45,7 @@ Updated: 2026-11-13
 - Rebuilt Bottom Brook around the commissioned Terminal Station 2 ring bus and the retained T1, T2, and T3 arrangement. The record separates the 2017 Maritime Link and TL269 commissioning, the proposed T4 drawings, the work completed before the 2024 project closeout, and the 2026 transformer-contingency configuration.
 - Added Wheelers as a 66 kV switching record between 400L and the 404L tap into 401L. The record separates the 2004 decommissioning proposal, the 2014 normally open operating arrangement, and the filed 2015 to 2016 line rebuild.
 - Added Alexander Bay as a former 138 kV switchyard. The record preserves its 2021 121L and 124L arrangement, the two air-break switches, the filed retirement configuration, and the 2024 confirmation that the 2022 rebuild was completed and the new line entered service.
+- Added Indian Cove as a dated 25/12.5 kV stepdown-station record with the 1.8 MVA pre-project transformer, IND-01 reliability figures, and the 2004 filed structure and transformer replacement. A current transformer record remains open.
 - Separated the original Holyrood T8 from the later Holyrood T8 model after locating the 2014 relocation record. The original unit entered service in the Sunnyside T1 position by December 2014.
 - Added Buchans T1's 1970 Massey Drive installation, 1998 Buchans relocation, and 2018 replacement plan.
 - Confirmed the replacement Holyrood T8 was installed in 2014 at 75/100/125 MVA.

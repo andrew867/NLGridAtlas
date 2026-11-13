@@ -60,6 +60,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicVolumeII.pdf"
   },
   {
+    id: "np-2004-indian-cove",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Indian Cove Structure and Transformer Upgrade",
+    topics: ["Indian Cove", "IND", "IND-01", "25 kV", "12.5 kV", "1.8 MVA", "stepdown transformer", "substation rebuild"],
+    pages: "physical PDF p. 76",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicVolumeII.pdf"
+  },
+  {
+    id: "np-2003-ca-116",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-116, Distribution Reliability Initiative Records",
+    topics: ["Indian Cove", "IND-01", "distribution reliability", "SAIFI", "SAIDI", "customers"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20116.pdf"
+  },
+  {
     id: "np-2015-400l",
     year: 2014,
     organization: "Newfoundland Power",
@@ -5887,6 +5907,64 @@ const filedFeederMapProfiles = [
         alt: "Filed post-rebuild map showing 121L from Gambo to Glovertown and 124L from Glovertown toward Terra Nova and Clarenville",
         sourceId: "np-2022-124l",
         pages: "physical PDF p. 347"
+      }
+    ]
+  },
+  {
+    code: "IND",
+    name: "Indian Cove",
+    voltage: "25/12.5 kV filed arrangement",
+    connectedCircuits: [],
+    feederRegisterLabel: "2001 DISTRIBUTION RELIABILITY RECORD",
+    feederSource: { sourceId: "np-2003-ca-116", pages: "physical PDF pp. 1 to 2" },
+    feederRegister: ["IND-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2003 pre-project arrangement",
+      buses: [{ id: "b1", label: "25 kV supply", voltage: "25 kV" }, { id: "b2", label: "12.5 kV distribution", voltage: "12.5 kV" }],
+      transformers: [{ label: "Existing transformer", rating: "1.8 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "IND-01", destination: "local distribution", bus: "b2", link: false }]
+    },
+    engineeringRecord: {
+      date: "2003 PRE-PROJECT RECORD",
+      title: "Indian Cove 25/12.5 kV stepdown station",
+      sourceId: "np-2004-indian-cove",
+      pages: "physical PDF p. 76",
+      facts: [
+        ["Transformer", "1.8 MVA, 25/12.5 kV stepdown unit"],
+        ["Condition", "transformer and wood structure described as deteriorated"]
+      ]
+    },
+    planningRecord: {
+      label: "2004 FILED STRUCTURE AND TRANSFORMER UPGRADE",
+      sourceId: "np-2004-indian-cove",
+      pages: "physical PDF p. 76",
+      facts: [
+        ["Filed work", "replace the transformer and structure and make station improvements"],
+        ["Filed cost", "$138,000"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2001 TO 2002 IND-01 RELIABILITY RECORD",
+        sourceId: "np-2003-ca-116",
+        pages: "physical PDF pp. 1 to 2",
+        facts: [
+          ["2001 project table", "351 customers; SAIFI 2.3 interruptions per year; SAIDI 7.3 hours per year"],
+          ["12 months ended August 31, 2002", "SAIFI 2.92; SAIDI 5.29 hours"],
+          ["2001 status", "the proposed Indian Cove feeder project was not completed in 2001"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED 2003 STATION PHOTOGRAPH AND PROJECT RECORD",
+    referenceSheets: [
+      {
+        title: "Indian Cove structure and transformer upgrade filing",
+        image: "./reference-maps/indian-cove-2004-rebuild.png",
+        alt: "Filed Indian Cove station photograph showing the 25 kV and 12.5 kV wood structures and transformer before the proposed 2004 replacement",
+        sourceId: "np-2004-indian-cove",
+        pages: "physical PDF p. 76"
       }
     ]
   },
