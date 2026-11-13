@@ -2787,10 +2787,11 @@ test("2016 feeder growth records retain proposed currents, transfers, and route 
 
   assert.equal(source.status, "proposed");
   const rrd2016 = ridgeRoad.historyRecords.find((record) => record.label === "2016 PROPOSED VIR-07 LOAD TRANSFER");
+  const vir2016 = virginiaWaters.historyRecords.find((record) => record.label === "2016 PROPOSED FEEDER TRANSFERS");
   assert.match(rrd2016.facts.flat().join(" "), /3 MVA from VIR-07/);
   assert.equal(ridgeRoad.referenceSheets[0].image, "./reference-maps/rrd-10-2016-upgrade.jpg");
-  assert.match(virginiaWaters.historyRecords[1].facts.flat().join(" "), /602 A per phase.*590 A per-phase planning rating/);
-  assert.match(virginiaWaters.historyRecords[1].facts.flat().join(" "), /3\.2 MVA to proposed PUL-05/);
+  assert.match(vir2016.facts.flat().join(" "), /602 A per phase.*590 A per-phase planning rating/);
+  assert.match(vir2016.facts.flat().join(" "), /3\.2 MVA to proposed PUL-05/);
   assert.equal(virginiaWaters.referenceSheets[3].pages, "physical PDF p. 419");
   const pul2016 = pulpitRock.historyRecords.find((record) => record.label === "2016 PROPOSED FEEDER WORK");
   assert.match(pul2016.facts.flat().join(" "), /193 A per phase.*153 A per-phase planning rating/);
@@ -2893,11 +2894,12 @@ test("2014 feeder service records preserve routes, customers, and proposed work"
   const goulds = stationProfiles.find((station) => station.code === "GOU");
   const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
   const pulpitRock = stationProfiles.find((station) => station.code === "PUL");
+  const vir2014 = virginiaWaters.historyRecords.find((record) => record.label === "2014 SERVICE AREA AND PROPOSED RECLOSER");
 
   assert.match(kenmount.historyRecords[0].facts.flat().join(" "), /approximately 1,800 residential customers/);
   assert.match(kenmount.historyRecords[0].label, /PROPOSED RECLOSERS/);
   assert.match(goulds.historyRecords[0].facts.flat().join(" "), /Lannon Street; approximately 100 customers/);
-  assert.match(virginiaWaters.historyRecords[0].facts.flat().join(" "), /Outer Ring Road, then north along Torbay Road/);
+  assert.match(vir2014.facts.flat().join(" "), /Outer Ring Road, then north along Torbay Road/);
   const pul2014 = pulpitRock.historyRecords.find((record) => record.label === "2014 PROPOSED PUL-04 CONDUCTOR WORK");
   assert.match(pul2014.facts.flat().join(" "), /reconductor 4\.3 km.*477 ASC/);
   assert.match(pul2014.facts.flat().join(" "), /approximately 4\.5 MVA/);
@@ -3142,6 +3144,13 @@ test("Virginia Waters retains the documented 2016 logical arrangement", async ()
   assert.match(components["vir-summary"].data.flat().join(" "), /8 side-break switches; 1 bus-tie switch; 3 transformer air-break switches/);
   assert.match(components["vir-t2"].data.flat().join(" "), /2027 register 66\/25 kV, 25 MVA/);
   assert.match(components["vir-t2"].data.flat().join(" "), /2026 forecast 22.53 MVA/);
+  assert.match(components["vir-01"].data.flat().join(" "), /Transformer bank VIR-T1 and VIR-T2/);
+  assert.match(components["vir-06"].data.flat().join(" "), /Transformer bank VIR-T1 and VIR-T2/);
+  assert.match(components["vir-03"].data.flat().join(" "), /2019 planning-study bank VIR-T1 and VIR-T2/);
+  const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
+  const selectedStudy = virginiaWaters.historyRecords.find((record) => record.label === "2019 SELECTED EXPANSION STUDY");
+  assert.match(selectedStudy.facts.flat().join(" "), /VIR-01 and VIR-03.*VIR-T1\/T2.*PEP-01 and PEP-02/);
+  assert.match(selectedStudy.facts.flat().join(" "), /Rejected Alternative 1.*normally open tie/);
 });
 
 test("Ridge Road retains the split 12.5 kV bus and completed tie", async () => {

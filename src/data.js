@@ -2144,8 +2144,8 @@ export const sources = [
     year: 2019,
     organization: "Newfoundland Power",
     title: "Pepperrell Substation Transformer Addition",
-    topics: ["Pepperrell", "PEP-T1", "PEP-T2", "PEP-05", "12.47 kV", "477 ASC"],
-    pages: "physical PDF pp. 24, 28 to 33, 35, 37 and 39",
+    topics: ["Pepperrell", "Virginia Waters", "PEP-T1", "PEP-T2", "PEP-05", "VIR-T1", "VIR-T2", "VIR-01", "VIR-03", "12.47 kV", "477 ASC"],
+    pages: "physical PDF pp. 24, 27 to 33, 35, 37 and 39",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/NP2019Capital_SUPP_Pepperrell/applications/From%20NP%20-%20Approval%20for%20the%20Addition%20of%20a%20Substation%20Transformer%20at%20the%20Companys%20Pepperrell%20Substation%20-%202019-01-30.PDF"
   },
@@ -4457,6 +4457,7 @@ export const staticClaims = [
     status: "verified",
     sources: [
       { sourceId: "np-2016-vir-modernization", pages: "physical PDF pp. 261 to 263" },
+      { sourceId: "np-2019-pepperrell", pages: "physical PDF pp. 27 to 28" },
       { sourceId: "np-2021-north-study", pages: "physical PDF pp. 6 to 14" },
       { sourceId: "np-2027-transformers", pages: "physical PDF p. 551" }
     ]
@@ -5388,9 +5389,21 @@ export const components = {
   },
   ...Object.fromEntries(["01", "02", "03", "04", "05", "06", "07", "08"].map((feeder) => [`vir-${feeder}`, {
     diagram: "vir", status: "verified", code: `VIR / VIR-${feeder}`, title: `Virginia Waters feeder VIR-${feeder}`,
-    summary: `VIR-${feeder} is one of the eight 12.5 kV distribution feeders listed at Virginia Waters in the 2016 and 2021 station records.`,
-    data: [["Voltage", "12.5 kV"], ["Station", "Virginia Waters"]],
-    sources: [sourceRef("np-2016-vir-modernization", "physical PDF p. 261"), sourceRef("np-2021-north-study", "physical PDF pp. 6 to 14")]
+    summary: feeder === "01" || feeder === "06"
+      ? `The 2024 supply table assigns VIR-${feeder} to the parallel VIR-T1 and VIR-T2 transformer bank.`
+      : feeder === "03"
+        ? "The selected 2019 expansion study identifies VIR-03 with the VIR-T1 and VIR-T2 bank in its proposed 2029 load transfer."
+        : `VIR-${feeder} is one of the eight 12.5 kV distribution feeders listed at Virginia Waters in the 2016 and 2021 station records.`,
+    data: feeder === "01" || feeder === "06"
+      ? [["Voltage", "12.5 kV"], ["Transformer bank", "VIR-T1 and VIR-T2"], ["Record date", "2024 supply table"]]
+      : feeder === "03"
+        ? [["Voltage", "12.5 kV"], ["2019 planning-study bank", "VIR-T1 and VIR-T2"], ["Filed transfer year", "2029"]]
+        : [["Voltage", "12.5 kV"], ["Station", "Virginia Waters"]],
+    sources: feeder === "01" || feeder === "06"
+      ? [sourceRef("np-2025-ca-np-255", "physical PDF p. 4")]
+      : feeder === "03"
+        ? [sourceRef("np-2019-pepperrell", "physical PDF p. 28")]
+        : [sourceRef("np-2016-vir-modernization", "physical PDF p. 261"), sourceRef("np-2021-north-study", "physical PDF pp. 6 to 14")]
   }])),
   "rrd-summary": {
     diagram: "rrd", status: "verified", code: "RRD / SUBSTATION", title: "Ridge Road Substation",
@@ -14396,6 +14409,16 @@ export const stationProfiles = [
       facts: [["VIR-T1/T2", "VIR-01 and VIR-06; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2019 SELECTED EXPANSION STUDY",
+        sourceId: "np-2019-pepperrell",
+        pages: "physical PDF pp. 27 to 28 and 31 to 33",
+        facts: [
+          ["Selected alternative", "add PEP-T2 and PEP-05 in 2019"],
+          ["Filed 2029 transfer", "5.75 MVA from VIR-01 and VIR-03, identified with VIR-T1/T2, to PEP-01 and PEP-02"],
+          ["Rejected Alternative 1", "would add VIR-T4 in parallel with VIR-T3 and use a normally open tie between the VIR-T1/T2 and VIR-T3/T4 bus sections"]
+        ]
+      },
       {
         label: "2014 SERVICE AREA AND PROPOSED RECLOSER",
         sourceId: "np-2014-improvements",
