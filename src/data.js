@@ -14222,7 +14222,21 @@ export const stationProfiles = [
         ["MOL-T2", "Federal Pioneer, manufactured 1976, 66/12.5/25 kV, 25 MVA"],
         ["2023 proposed work", "New 66 kV steel bus structure, bus tie breaker, two 66 kV breakers, one 12.5 kV breaker, new switches, digital relays, control building, transformer spill containment, and ground-grid extension"]
       ]
-    }
+    },
+    historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 316 to 319",
+        facts: [
+          ["Distribution bulk-oil breakers", "MOL-01-B asset 210110; MOL-02-B 210126; MOL-04-B 210228; MOL-05-B 210109; MOL-06-B 210367; MOL-09-B 210224"],
+          ["Distribution vacuum breaker", "MOL-03-B, asset 210783"],
+          ["66 kV bulk-oil breakers", "MOL-15L-B asset 210128; MOL-19L-B 210173"],
+          ["MOL-T1", "transformer asset 200324; vacuum breaker MOL-T1-B asset 210779"],
+          ["MOL-T2", "transformer asset 200295; bulk-oil breaker MOL-T2-B asset 210368"]
+        ]
+      }
+    ]
   },
   {
     code: "HWD",
@@ -14264,6 +14278,18 @@ export const stationProfiles = [
           ["Line SF6 breakers", "HWD-54L-B, asset 210706; HWD-72L-B, asset 210571"],
           ["Transformer equipment listed", "HWD-T1 asset 200271 with bulk-oil breaker 210122; HWD-T2 asset 200236 with bulk-oil breaker 210123"],
           ["Feeder reclosers", "HWD-07-R2, Tavrida Electric asset 230657; HWD-08-R2, Tavrida Electric asset 230659; HWD-09-R4, G&W asset 230722"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 194 to 200",
+        facts: [
+          ["Distribution breakers", "HWD-01-B asset 210103; HWD-02-B 210102; HWD-03-B vacuum asset 210599; HWD-04-B SF6 asset 210669; HWD-06-B 210101; HWD-07-B SF6 asset 210642; HWD-08-B SF6 asset 210641"],
+          ["66 kV line breakers", "HWD-5L-B asset 210203; HWD-19L-B 210117; HWD-49L-B 210202; HWD-54L-B SF6 asset 210706; HWD-72L-B SF6 asset 210571; HWD-73L-B SF6 asset 210579; HWD-79L-B 210185"],
+          ["HWD-T1", "transformer asset 200271; bulk-oil breaker HWD-T1-B asset 210122"],
+          ["HWD-T2", "transformer asset 200236; bulk-oil breaker HWD-T2-B asset 210123"],
+          ["HWD-T3", "transformer asset 200341; vacuum breaker HWD-T3-B asset 210600"]
         ]
       },
       {
@@ -14389,6 +14415,17 @@ export const stationProfiles = [
       facts: [["KEN-05", "25 kV; KEN-T1/T2; 25.5 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 241 to 244",
+        facts: [
+          ["Distribution breakers", "KEN-01-B vacuum asset 210711; KEN-02-B minimum-oil asset 210379; KEN-03-B SF6 asset 210568"],
+          ["66 kV breakers", "KEN-35L-B SF6 asset 210720; KEN-54L-B bulk-oil asset 210142; KEN-69L-B bulk-oil asset 210144"],
+          ["KEN-T1", "transformer asset 200329; vacuum breaker KEN-T1-B asset 210732"],
+          ["KEN-T2", "transformer asset 200342; minimum-oil breaker KEN-T2-B asset 210542"]
+        ]
+      },
       {
         label: "2014 SERVICE AREAS AND PROPOSED RECLOSERS",
         sourceId: "np-2014-improvements",
@@ -14579,6 +14616,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 161 to 165",
+        facts: [
+          ["Distribution reclosers", "GOU-01-R asset 230589; GOU-02-R 230590; GOU-03-R 230591"],
+          ["66 kV SF6 breakers", "GOU-17L-B1 asset 210091; GOU-17L-B2 210024; GOU-18L-B 210742; GOU-25L-B 210657; GOU-3L-B 210704; GOU-4L-B 210230; GOU-72L-B 210697"],
+          ["GOU-T1", "transformer asset 200124"],
+          ["GOU-T2", "transformer asset 200292; bulk-oil breaker GOU-T2-B asset 210242"],
+          ["GOU-T3", "transformer asset 200257; SF6 breaker GOU-T3-B asset 210680"]
+        ]
+      },
+      {
         label: "2014 PROPOSED SINGLE-PHASE RECLOSERS",
         sourceId: "np-2014-improvements",
         pages: "physical PDF p. 20",
@@ -14648,6 +14697,19 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 248 to 252",
+        facts: [
+          ["Distribution air breakers, KBR-01-B to KBR-06-B", "assets 210008, 210292, 210544, 210007, 210330 and 210294 respectively"],
+          ["Distribution air breakers, KBR-07-B to KBR-12-B", "assets 210296, 210291, 210348, 210302, 210349 and 210350 respectively"],
+          ["66 kV breakers", "KBR-12L-B bulk-oil asset 210145; KBR-16L-B bulk-oil asset 210227; KBR-30L-B SF6 asset 210698"],
+          ["Transformer assets", "KBR-T1 asset 200131; KBR-T2 200130; KBR-T3 200293"],
+          ["Transformer air breakers", "KBR-T1-B asset 210344; KBR-T2-B 210345; KBR-T3-B 210346"],
+          ["Bus tie", "KBR-TB-3-5-B, air breaker asset 210347"]
+        ]
+      },
+      {
         label: "2013 RESTORATION ARRANGEMENT",
         sourceId: "np-east-coast-restoration-2013",
         pages: "physical PDF p. 820",
@@ -14714,6 +14776,18 @@ export const stationProfiles = [
       facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 408 to 411",
+        facts: [
+          ["Distribution air breakers", "RRD-02-B asset 210326; RRD-03-B 210327; RRD-04-B 210328; RRD-05-B 210329; RRD-07-B 210342; RRD-09-B 210336; RRD-10-B 210339"],
+          ["66 kV SF6 breakers", "RRD-30L-B asset 210696; RRD-32L-B 210701; RRD-67L-B 210702"],
+          ["RRD-T2", "transformer asset 200228; air breaker RRD-T2-B asset 210334"],
+          ["RRD-T3", "transformer asset 200272; air breaker RRD-T3-B asset 210338"],
+          ["Bus tie", "RRD-TB-2-3, air breaker asset 210335"]
+        ]
+      },
       {
         label: "2013 RESTORATION ARRANGEMENT",
         sourceId: "np-east-coast-restoration-2013",
@@ -14797,9 +14871,11 @@ export const stationProfiles = [
       sourceId: "np-2016-pub-np-064-g",
       pages: "physical PDF pp. 148 to 152",
       facts: [
-        ["Transformer breakers", "GDL-T1-B, GDL-T2-B and GDL-T3-B"],
-        ["Tie breakers", "GDL-T1/T2-B and GDL-T2/T3-B"],
-        ["Feeder breakers listed", "GDL-01, GDL-02 and GDL-04 to GDL-08"]
+        ["Distribution vacuum breakers", "GDL-01-B asset 210767; GDL-02-B 210769; GDL-04-B 210774; GDL-05-B 210770; GDL-06-B 210775; GDL-07-B 210773; GDL-08-B 210771"],
+        ["66 kV bulk-oil breakers", "GDL-18L-B asset 210149; GDL-73L-B 210151"],
+        ["Transformer assets", "GDL-T1 asset 200344; GDL-T2 200332; GDL-T3 200363"],
+        ["Transformer vacuum breakers", "GDL-T1-B asset 210772; GDL-T2-B 210776; GDL-T3-B 210777"],
+        ["Tie breakers", "GDL-T1/T2-B and GDL-T2/T3-B are identified on the form"]
       ]
     },
     historyRecords: [
@@ -14861,6 +14937,19 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 455 to 460",
+        facts: [
+          ["Distribution air breakers", "SJM-02-B asset 210297; SJM-03-B 210304; SJM-04-B 210305; SJM-06-B 210306; SJM-07-B 210107; SJM-08-B 210300; SJM-09-B 210307; SJM-10-B 210309; SJM-11-B 210308; SJM-13-B 210310; SJM-14-B 210311; SJM-15-B 210351"],
+          ["Distribution vacuum breaker", "SJM-12-B, asset 210728"],
+          ["66 kV SF6 breakers", "SJM-4L-B asset 210690; SJM-13L-B 210717; SJM-25L-B 210678"],
+          ["Transformer assets", "SJM-T1 asset 200294; SJM-T2 200317; SJM-T4 200117"],
+          ["Transformer air breakers", "SJM-T1-B asset 210314; SJM-T2-B 210315"],
+          ["Air bus-tie breakers", "SJM-TB-1-2 asset 210312; SJM-TB-1-3 asset 210313"]
+        ]
+      },
       {
         label: "2013 RESTORATION ARRANGEMENT",
         sourceId: "np-east-coast-restoration-2013",
@@ -14928,6 +15017,18 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 469 to 475",
+        facts: [
+          ["Distribution air breakers", "SLA-02-B asset 210004; SLA-03-B 210299; SLA-05-B 210293; SLA-06-B 210005; SLA-07-B 210298"],
+          ["Distribution bulk-oil and SF6 breakers", "SLA-08-B asset 210352; SLA-09-B 210032; SLA-10-B 210175; SLA-11-B 210021; SLA-12-B 210161; SLA-13-B SF6 asset 210634"],
+          ["66 kV breakers", "SLA-13L-B SF6 asset 210694; SLA-14L-B SF6 210239; SLA-31L-B bulk-oil 210064; SLA-69L-B SF6 210357; SLA-70L-B SF6 210610"],
+          ["Transformer assets", "SLA-T1 asset 200220; SLA-T2 200139; SLA-T3 200245; SLA-T4 200334"],
+          ["Transformer air breakers", "SLA-T1-B asset 210119; SLA-T2-B 210036"]
+        ]
+      },
       {
         label: "2013 RESTORATION ARRANGEMENT",
         sourceId: "np-east-coast-restoration-2013",
@@ -15068,6 +15169,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 367 to 369",
+        facts: [
+          ["Distribution air breakers", "PEP-01-B asset 210322; PEP-02-B 210321; PEP-03-B 210320; PEP-04-B 210370"],
+          ["66 kV breakers", "PEP-16L-B SF6 asset 210668; PEP-74L-B bulk-oil asset 210359"],
+          ["PEP-T1", "transformer asset 200309; air breaker PEP-T1-B asset 210325"],
+          ["Air bus-tie breakers", "PEP-TB-1-2 asset 210616; PEP-TB-1-3 asset 210324"]
+        ]
+      },
+      {
         label: "2006 SWITCHGEAR CUBICLE REGISTER",
         sourceId: "np-2016-pub-np-064-f",
         pages: "physical PDF p. 57",
@@ -15155,6 +15267,19 @@ export const stationProfiles = [
       facts: [["VIR-T1/T2", "VIR-01 and VIR-06; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 518 to 524",
+        facts: [
+          ["Distribution vacuum breakers", "VIR-01-B asset 210757; VIR-02-B 210760; VIR-03-B 210758"],
+          ["Distribution SF6 and bulk-oil breakers", "VIR-04-B SF6 asset 210683; VIR-05-B bulk-oil 210195; VIR-06-B SF6 210681; VIR-07-B SF6 210673; VIR-08-B SF6 210671"],
+          ["Feeder regulator", "VIR-07-VR1, asset 220738"],
+          ["66 kV bulk-oil breakers", "VIR-34L-B asset 210190; VIR-58L-B 210189; VIR-59L-B 210188; VIR-74L-B 210204"],
+          ["Transformer assets", "VIR-T1 asset 200256; VIR-T2 200336; VIR-T3 200354"],
+          ["Transformer breakers", "VIR-T1-B vacuum asset 210744; VIR-T2-B vacuum 210733; VIR-T3-B SF6 210661"]
+        ]
+      },
       {
         label: "2019 SELECTED EXPANSION STUDY",
         sourceId: "np-2019-pepperrell",
@@ -16895,6 +17020,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 296 to 298",
+        facts: [
+          ["66 kV bulk-oil breakers", "MUN-12L-B asset 210152; MUN-14L-B asset 210155"],
+          ["MUN-T1", "transformer asset 200142; air breaker MUN-T1-B asset 210341"],
+          ["MUN-T2", "transformer asset 200273; air breaker MUN-T2-B asset 210373"]
+        ]
+      },
       {
         label: "2013 RESTORATION ARRANGEMENT",
         sourceId: "np-east-coast-restoration-2013",
