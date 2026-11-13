@@ -2080,6 +2080,25 @@ test("Buchans joins the terminal transformer and Newfoundland Power distribution
   assert.match(historyFacts, /Tap changer oil replacement, access hatch re-gasketing, and leak repairs/);
 });
 
+test("Sunnyside joins the Hydro terminal and Newfoundland Power distribution equipment", () => {
+  const sunnyside = stationProfiles.find((station) => station.code === "SUN");
+  assert.ok(sunnyside);
+  assert.deepEqual(sunnyside.connectedCircuits.map(({ circuit }) => circuit), ["TL202", "TL206", "TL203", "TL207", "TL212", "TL219", "100L", "109L"]);
+  assert.deepEqual(sunnyside.feederRegister, ["SUN-01", "SUN-03"]);
+  assert.deepEqual(sunnyside.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "138 kV", "25 kV"]);
+  assert.deepEqual(sunnyside.diagram.transformers.map(({ label, rating }) => [label, rating]), [["T1", "75/100/125 MVA"], ["T4", "75/100/125 MVA"], ["SUN-T5", "25 MVA"]]);
+  assert.deepEqual(sunnyside.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 2", "physical PDF p. 492", "physical PDF p. 493"]);
+  const operatingFacts = sunnyside.engineeringRecord.facts.flat().join(" ");
+  const currentFacts = sunnyside.planningRecord.facts.flat().join(" ");
+  const historyFacts = sunnyside.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(operatingFacts, /SUN-T5 138\/25 kV; 15\/20\/25 MVA/);
+  assert.match(operatingFacts, /SUN-01 to Arnold's Cove and GBS site/);
+  assert.match(currentFacts, /SUN-T5 138\/25 kV; 25 MVA/);
+  assert.match(currentFacts, /9\.64 MVA/);
+  assert.match(historyFacts, /Former Holyrood T8 moved to the Sunnyside T1 position/);
+  assert.match(historyFacts, /SUN-03-R electronic recloser 230516/);
+});
+
 test("Howley joins the terminal routes and local distribution record", () => {
   const howley = stationProfiles.find((station) => station.code === "HOW");
   assert.ok(howley);

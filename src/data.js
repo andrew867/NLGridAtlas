@@ -720,6 +720,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/NLHCBSUPP2014/SunnysideReplacementEquipment/Application/Application-SunnysideReplacementEquipment-2014-06-19.pdf"
   },
   {
+    id: "nlh-sunnyside-operating-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "PR-PUB-NLH-025, Sunnyside Terminal Station System Operating Diagram",
+    topics: ["Sunnyside", "T1", "T4", "SUN-T5", "SUN-01", "SUN-03", "system operating diagram", "breaker failure protection"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHGRASUPP2013/PrudenceReview/files/rfi/PR-PUB-NLH-025.PDF"
+  },
+  {
     id: "nlh-planning-2023",
     year: 2023,
     organization: "NL Hydro",
@@ -2244,8 +2254,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Howley", "HOW-T2", "HOW-T3", "HOW-01-R", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Topsail", "TOP-T1", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 221, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 438, 484 to 487, 498 and 500 to 502",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Howley", "HOW-T2", "HOW-T3", "HOW-01-R", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Sunnyside", "SUN-T5", "SUN-01-B", "SUN-01-R2", "SUN-01-VR2", "SUN-03-R", "Topsail", "TOP-T1", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 221, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 438, 484 to 487, 492 to 493, 498 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -7939,6 +7949,124 @@ const earlyFeederMapProfiles = [
 export const stationProfiles = [
   ...filedFeederMapProfiles,
   ...earlyFeederMapProfiles,
+  {
+    code: "SUN",
+    name: "Sunnyside",
+    voltage: "230/138/25 kV",
+    circuitRegisterLabel: "2015 OPERATING DIAGRAM / 2018 FILED ROUTES",
+    circuitSources: [
+      { sourceId: "nlh-sunnyside-operating-2015", pages: "physical PDF p. 2" },
+      { sourceId: "np-2018-pub-np-084", pages: "physical PDF pp. 24 and 26" }
+    ],
+    connectedCircuits: [
+      { circuit: "TL202", from: "Bay d'Espoir", from_code: "BDE", to: "Sunnyside", to_code: "SUN" },
+      { circuit: "TL206", from: "Bay d'Espoir", from_code: "BDE", to: "Sunnyside", to_code: "SUN" },
+      { circuit: "TL203", from: "Sunnyside", from_code: "SUN", to: "Western Avalon", to_code: "WAV" },
+      { circuit: "TL207", from: "Sunnyside", from_code: "SUN", to: "Come By Chance", to_code: "CBC" },
+      { circuit: "TL212", from: "Sunnyside", from_code: "SUN", to: "Linton Lake", to_code: "LLK" },
+      { circuit: "TL219", from: "Sunnyside", from_code: "SUN", to: "Salt Pond", to_code: "SPO" },
+      { circuit: "100L", from: "Sunnyside", from_code: "SUN", to: "Clarenville", to_code: "CLV" },
+      { circuit: "109L", from: "Sunnyside", from_code: "SUN", to: "Clarenville", to_code: "CLV", via: "Northwest Brook" }
+    ],
+    feederRegisterLabel: "2005 FEEDER REGISTER",
+    feederRegister: ["SUN-01", "SUN-03"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2015 system operating arrangement / 2027 SUN-T5 fleet value",
+      buses: [
+        { id: "b1", label: "B1 bus", voltage: "230 kV" },
+        { id: "b2", label: "B2 / B3 buses", voltage: "138 kV" },
+        { id: "b3", label: "distribution bus", voltage: "25 kV" }
+      ],
+      transformers: [
+        { label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" },
+        { label: "T4", rating: "75/100/125 MVA", from: "b1", to: "b2" },
+        { label: "SUN-T5", rating: "25 MVA", from: "b2", to: "b3" }
+      ],
+      circuits: [
+        { label: "TL202", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" },
+        { label: "TL206", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" },
+        { label: "TL203", destination: "Western Avalon", bus: "b1", destinationCode: "WAV" },
+        { label: "TL207", destination: "Come By Chance", bus: "b1", destinationCode: "CBC" },
+        { label: "TL212", destination: "Linton Lake", bus: "b2", destinationCode: "LLK" },
+        { label: "TL219", destination: "Salt Pond", bus: "b2", destinationCode: "SPO" },
+        { label: "100L", destination: "Clarenville", bus: "b2", destinationCode: "CLV" },
+        { label: "109L", destination: "Northwest Brook / Clarenville", bus: "b2", destinationCode: "NWB" },
+        { label: "SUN-01", destination: "Arnold's Cove and GBS site", bus: "b3", link: false },
+        { label: "SUN-03", destination: "Goobie's and Come By Chance", bus: "b3", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "JANUARY 2015 SYSTEM OPERATING DIAGRAM",
+      title: "Hydro terminal and Newfoundland Power distribution equipment",
+      sourceId: "nlh-sunnyside-operating-2015",
+      pages: "physical PDF p. 2",
+      facts: [
+        ["T1", "230/138/6.6 kV; 75/100/125 MVA"],
+        ["T4", "230/138 kV; 75/100/125 MVA"],
+        ["SUN-T5", "138/25 kV; 15/20/25 MVA"],
+        ["230 kV circuits", "TL202 and TL206 to Bay d'Espoir; TL203 to Western Avalon; TL207 to Come By Chance"],
+        ["138 kV circuits", "TL212 to Linton Lake; TL219 to Salt Pond; 100L to Clarenville; 109L through Northwest Brook toward Clarenville"],
+        ["Distribution feeders", "SUN-01 to Arnold's Cove and GBS site; SUN-03 to Goobie's and Come By Chance"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["SUN-T5", "138/25 kV; 25 MVA"],
+        ["2026 forecast", "9.64 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2014 T1 REPLACEMENT AND BREAKER WORK",
+        sourceId: "nlh-sunnyside-2014",
+        pages: "physical PDF pp. 18 to 19 and 29 to 34",
+        facts: [
+          ["Replacement transformer", "Former Holyrood T8 moved to the Sunnyside T1 position and entered service by December 2014"],
+          ["230 kV protection", "Dedicated breaker B1T1 added after the January 4 T1 failure"]
+        ]
+      },
+      {
+        label: "MARCH 2014 DISTRIBUTION EQUIPMENT INSPECTION",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 492 to 493",
+        facts: [
+          ["SUN-01 protection", "SUN-01-B minimum-oil breaker 210564 and SUN-01-R2 electronic recloser 230500"],
+          ["SUN-01 regulation", "SUN-01-VR2 and regulator equipment 220564, 220780, and 220790"],
+          ["SUN-03 protection", "SUN-03-R electronic recloser 230516"],
+          ["Transformer", "SUN-T5 on-load-tap-changing power transformer 200348"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "SUNNYSIDE SOURCE SHEETS",
+    referenceSheets: [
+      {
+        title: "2015 system operating diagram",
+        image: "./reference-maps/sunnyside-2015-operating-diagram.png",
+        alt: "January 2015 Sunnyside system operating diagram showing the 230 kV, 138 kV, and 25 kV equipment",
+        sourceId: "nlh-sunnyside-operating-2015",
+        pages: "physical PDF p. 2"
+      },
+      {
+        title: "2014 SUN-01 equipment inspection",
+        image: "./reference-maps/sunnyside-2014-inspection-1.png",
+        alt: "March 2014 inspection form listing the SUN-01 breaker and electronic recloser",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 492"
+      },
+      {
+        title: "2014 SUN-T5 and SUN-03 inspection",
+        image: "./reference-maps/sunnyside-2014-inspection-2.png",
+        alt: "March 2014 inspection form listing SUN-01 voltage regulators, SUN-03 recloser, and SUN-T5",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 493"
+      }
+    ]
+  },
   {
     code: "BUC",
     name: "Buchans",
