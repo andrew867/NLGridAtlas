@@ -156,6 +156,7 @@ Updated: 2026-11-12
 - Added Quartz as a documented 55L tap with its route map, current transformer record, dated feeder-voltage conflict, and the reported 55L rebuild scope change and final expenditure.
 - Added Placentia Junction with its 55L corridor position, 66/7.2 kV transformation, PJN-01 capacity records, transformer replacement history, and the filed Dunville sectionalization proposal.
 - Added Grand Beach with both sectional 301L connections, the 66/7.2 kV station, GBE-01 capacity records, the completed 2003 line rebuild, later station work, and the 2026 Burin Peninsula map and load record.
+- Added Webbers Cove with both sectional 305L connections, the 66/25 kV station, WBC-01 capacity records, the 2002 loop-restoration sequence, later station work, the current Burin load record, and the filed 2050 transmission-hardening plan.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work

@@ -575,6 +575,18 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The station asset history records recloser refurbishment in 2008 and replacement of the high-voltage switch, lightning arresters, and power fuses in 2009, physical PDF p. 204.
 - [ ] No searched record publishes a breaker-level Grand Beach station one-line.
 
+## Webbers Cove station record
+
+- [x] The 2013 line-loading table records 305L(A) from Greenhill to Webbers Cove and 305L(B) from Laurentian to Webbers Cove, both at 66 kV, physical PDF p. 6; attachment p. 4.
+- [x] The historical station table records a complete station built in 2001, 66 kV and 25 kV structures installed in 2001, and 6.7 MVA total transformer capacity, physical PDF p. 196.
+- [x] The 2027 fleet table records WBC-T1 at 66/25 kV and 8.33 MVA with a 4.03 MVA 2026 forecast, physical PDF p. 549.
+- [x] The 2014 feeder table records WBC-01 at 25 kV, 474 A rating, 356 A winter planning value, 20.5 MVA rating, 15.4 MVA winter planning value, and 3.6 MVA forecast, physical PDF p. 11; attachment p. 9.
+- [x] The 2026 Burin Peninsula study retains both 305L sections, WBC-T1 at 25/66 kV, and WBC-01 at 25 kV in its system model. It records 820 customers in December 2025 and a 4.3 MVA forecast demand for 2030, physical PDF pp. 163 and 241.
+- [x] The April 19, 2002 Salt Pond T4 fault interrupted 6,080 customers on the 66 kV loop. Greenhill generation energized 305L at 10:15 p.m., followed by the WBC and LAU feeders, physical PDF p. 17.
+- [x] The station asset history records work from 2005 through 2009 on lightning arresters, the recloser, heat tracing, battery equipment, transformer radiators, the potential transformer, and high-voltage switches, physical PDF p. 209.
+- [x] The 2024 climate plan projects the Webbers Cove to Greenhill section of 305L to reach high risk by 2050 and schedules hardened reconstruction by 2050, physical PDF p. 22; attachment p. 20.
+- [ ] No searched record publishes a breaker-level Webbers Cove station one-line.
+
 ## New Harbour station record
 
 - [x] The 2025 transmission register records 80L from Blaketown to Heart's Content, CA-NP-168 Attachment A, physical PDF p. 3.

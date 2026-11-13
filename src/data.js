@@ -60,6 +60,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/hydro2006gra/files/rfi/CA-186.pdf"
   },
   {
+    id: "np-2025-climate-adaptation",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-019 Attachment A, Climate Change Adaptation Plan",
+    topics: ["Webbers Cove", "Greenhill", "305L", "65L", "transmission hardening", "wind", "climate risk"],
+    pages: "physical PDF p. 22; attachment p. 20",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/PUB-NP-019.PDF"
+  },
+  {
     id: "np-2003-frenchmans-cove-clearance",
     year: 2002,
     organization: "Newfoundland Power",
@@ -284,8 +294,8 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Grand Beach", "Milton", "New Harbour", "Placentia Junction", "Port Blandford", "Quartz", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "GBE-T1", "MIL-T1", "NHR-T1", "PJN-T1", "PBD-T1", "QTZ-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
-    pages: "physical PDF pp. 166, 194 to 198, 201, 203 to 204, 206 to 208 and 277",
+    topics: ["Abrahams Cove", "Garnish", "Grand Beach", "Milton", "New Harbour", "Placentia Junction", "Port Blandford", "Quartz", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Webbers Cove", "Pitmans Pond", "ABC-T1", "GAR-T1", "GBE-T1", "MIL-T1", "NHR-T1", "PJN-T1", "PBD-T1", "QTZ-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "WBC-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
+    pages: "physical PDF pp. 166, 194 to 198, 201, 203 to 204, 206 to 209 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
@@ -314,8 +324,8 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "Wesleyville and Greenhill Planning Study, Burin Peninsula 138/66 kV System",
-    topics: ["Burin Peninsula", "Sunnyside", "Monkstown", "Bay L'Argent", "Linton Lake", "Salt Pond", "Greenhill", "Garnish", "Laurentian", "Grand Beach", "GBE", "GBE-T1", "301L", "Webbers Cove", "138 kV loop", "66 kV loop", "customer count", "load forecast"],
-    pages: "physical PDF pp. 161 to 164, 181 to 182, 201, 221 and 223",
+    topics: ["Burin Peninsula", "Sunnyside", "Monkstown", "Bay L'Argent", "Linton Lake", "Salt Pond", "Greenhill", "Garnish", "Laurentian", "Grand Beach", "GBE", "GBE-T1", "301L", "Webbers Cove", "WBC", "WBC-T1", "WBC-01", "305L", "138 kV loop", "66 kV loop", "customer count", "load forecast"],
+    pages: "physical PDF pp. 161 to 164, 181 to 182, 201, 221, 223 and 241",
     status: "reported",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
   },
@@ -324,8 +334,8 @@ export const sources = [
     year: 2002,
     organization: "Newfoundland Power",
     title: "PUB 10-2A, Burin Peninsula Engineering Review",
-    topics: ["Burin Peninsula", "TL212", "TL219", "300L", "308L", "Monkstown", "Bay L'Argent", "Linton Lake", "Marystown", "Salt Pond"],
-    pages: "physical PDF pp. 4 to 5",
+    topics: ["Burin Peninsula", "TL212", "TL219", "300L", "305L", "308L", "Monkstown", "Bay L'Argent", "Linton Lake", "Marystown", "Salt Pond", "Webbers Cove", "WBC", "2002 outage restoration"],
+    pages: "physical PDF pp. 4 to 5 and 17",
     status: "reported",
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf"
   },
@@ -594,7 +604,7 @@ export const sources = [
     year: 2013,
     organization: "Newfoundland Power",
     title: "PUB-NP-275, Transmission Line Loading",
-    topics: ["transmission lines", "endpoints", "voltage", "winter rating", "forecast peak load", "Grand Beach", "Garnish", "Greenhill", "301L(A)", "301L(B)", "301L(C)"],
+    topics: ["transmission lines", "endpoints", "voltage", "winter rating", "forecast peak load", "Grand Beach", "Garnish", "Greenhill", "Webbers Cove", "Laurentian", "301L(A)", "301L(B)", "301L(C)", "305L(A)", "305L(B)"],
     pages: "PDF pp. 3 to 11; attachment pp. 1 to 9",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-275.pdf"
@@ -1494,7 +1504,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "2027 Capital Budget Application, Power Transformer Listing",
-    topics: ["power transformers", "operating voltage", "MVA ratings", "2026 forecast", "portable compatibility", "2016 to 2025 failures"],
+    topics: ["power transformers", "operating voltage", "MVA ratings", "2026 forecast", "portable compatibility", "2016 to 2025 failures", "Webbers Cove", "WBC-T1"],
     pages: "physical PDF pp. 545 to 553 and 560",
     status: "verified",
     url: "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf"
@@ -1594,8 +1604,8 @@ export const sources = [
     year: 2018,
     organization: "Newfoundland Power",
     title: "PUB-NP-081, Distribution Transformer and Feeder Listings",
-    topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Grand Beach", "GBE-T1", "GBE-01", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "Placentia Junction", "PJN-T1", "PJN-01", "Quartz", "QTZ-T1", "QTZ-01", "7.2 kV", "12.47 kV", "forecast loading"],
-    pages: "physical PDF pp. 3, 5, 8, 11 and 15",
+    topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Grand Beach", "GBE-T1", "GBE-01", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "Placentia Junction", "PJN-T1", "PJN-01", "Quartz", "QTZ-T1", "QTZ-01", "Webbers Cove", "WBC-T1", "WBC-01", "7.2 kV", "12.47 kV", "24.94 kV", "forecast loading"],
+    pages: "physical PDF pp. 3, 5 to 6, 8, 11 and 15 to 16",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-081.PDF"
   },
@@ -1654,8 +1664,8 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "PUB-NP-276, Distribution Feeder Listing",
-    topics: ["Stamp's Lane", "SLA-05", "Grand Beach", "GBE-01", "New Harbour", "NHR-01", "NHR-02", "Placentia Junction", "PJN-01", "Quartz", "QTZ-01", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "7.2 kV", "feeder voltage", "feeder capacity"],
-    pages: "physical PDF pp. 6, 10 and 15; attachment pp. 4, 8 and 13",
+    topics: ["Stamp's Lane", "SLA-05", "Grand Beach", "GBE-01", "New Harbour", "NHR-01", "NHR-02", "Placentia Junction", "PJN-01", "Quartz", "QTZ-01", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "Webbers Cove", "WBC-01", "7.2 kV", "25 kV", "feeder voltage", "feeder capacity"],
+    pages: "physical PDF pp. 6, 9 to 11 and 15; attachment pp. 4, 7 to 9 and 13",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-276.pdf"
   },
@@ -10424,6 +10434,111 @@ export const stationProfiles = [
     referenceSheetLabel: "BURIN PENINSULA SYSTEM MAP",
     referenceSheets: [
       { title: "Burin Peninsula 138/66 kV transmission system", image: "./reference-maps/gbe-burin-2027-overview.png", alt: "Filed Burin Peninsula transmission map showing Grand Beach between Greenhill and the Garnish tap on 301L", sourceId: "np-2027-burin-study", pages: "physical PDF p. 162" }
+    ]
+  },
+  {
+    code: "WBC",
+    name: "Webbers Cove",
+    voltage: "66/25 kV",
+    circuitRegisterLabel: "2013 FILED 305L SECTIONS",
+    circuitSource: { sourceId: "np-2013-line-loading", pages: "physical PDF p. 6; attachment p. 4" },
+    connectedCircuits: [
+      { circuit: "305L(A)", from: "Greenhill", from_code: "GRH", to: "Webbers Cove", to_code: "WBC" },
+      { circuit: "305L(B)", from: "Laurentian", from_code: "LAU", to: "Webbers Cove", to_code: "WBC" }
+    ],
+    feederRegisterLabel: "2014 FEEDER CAPACITY RECORD",
+    feederRegister: ["WBC-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "documented 305L sections and voltage transformation",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
+      transformers: [{ label: "WBC-T1", rating: "8.33 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "305L(A)", destination: "Greenhill", bus: "b1", destinationCode: "GRH" },
+        { label: "305L(B)", destination: "Laurentian", bus: "b1", destinationCode: "LAU" },
+        { label: "WBC-01", destination: "local distribution", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2001 STATION RECORD",
+      title: "Webbers Cove transmission and distribution station",
+      sourceId: "np-2010-substation-asset-history",
+      pages: "physical PDF p. 196",
+      facts: [
+        ["Station", "complete substation built in 2001"],
+        ["Structures", "66 kV and 25 kV structures installed in 2001"],
+        ["Transformer capacity", "6.7 MVA total capacity in the historical station table"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["WBC-T1", "66/25 kV; 8.33 MVA; 4.03 MVA 2026 forecast"]
+      ]
+    },
+    assignmentRecord: {
+      label: "2026 BURIN PENINSULA SYSTEM RECORD",
+      sourceId: "np-2027-burin-study",
+      pages: "physical PDF pp. 162 to 163 and 241",
+      facts: [
+        ["66 kV loop", "305L(A) between Greenhill and Webbers Cove; 305L(B) between Laurentian and Webbers Cove"],
+        ["December 2025 customers", "820"],
+        ["2030 forecast demand", "4.3 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "APRIL 19, 2002 RESTORATION RECORD",
+        sourceId: "np-2003-burin-review",
+        pages: "physical PDF p. 17",
+        facts: [
+          ["Initial event", "Salt Pond T4 fault at 7:19 p.m.; 6,080 customers on the 66 kV loop lost supply"],
+          ["Webbers Cove restoration", "Greenhill generation energized 305L at 10:15 p.m.; the WBC and LAU feeders were closed shortly afterward"]
+        ]
+      },
+      {
+        label: "2005 TO 2009 STATION WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 209",
+        facts: [
+          ["2005", "lightning arresters replaced"],
+          ["2007", "recloser replaced"],
+          ["2008", "heat tracing replaced"],
+          ["2009", "battery bank and charger, transformer radiators, lightning arresters, and potential transformer replaced; high-voltage switches refurbished"]
+        ]
+      },
+      {
+        label: "2014 FEEDER CAPACITY RECORD",
+        sourceId: "np-2014-pub-np-276",
+        pages: "physical PDF p. 11; attachment p. 9",
+        facts: [
+          ["WBC-01", "25 kV; 474 A rating; 356 A winter planning value; 20.5 MVA rating; 15.4 MVA winter planning value; 3.6 MVA forecast; 23.4% forecast loading"]
+        ]
+      },
+      {
+        label: "2018 TRANSFORMER AND FEEDER RECORD",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF pp. 6 and 16",
+        facts: [
+          ["WBC-T1", "66/24.94 kV; 8.3 MVA; 3.5 MVA forecast"],
+          ["WBC-01", "24.94 kV; 15.4 MVA planning value; 20.5 MVA rating; 4.6 MVA forecast"]
+        ]
+      },
+      {
+        label: "2050 TRANSMISSION HARDENING PLAN",
+        sourceId: "np-2025-climate-adaptation",
+        pages: "physical PDF p. 22; attachment p. 20",
+        facts: [
+          ["305L", "the Webbers Cove to Greenhill section is projected to reach high climate risk by 2050 and is planned for rebuild by 2050 with hardened structures"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "BURIN PENINSULA SYSTEM MAP",
+    referenceSheets: [
+      { title: "Burin Peninsula 138/66 kV transmission system", image: "./reference-maps/gbe-burin-2027-overview.png", alt: "Filed Burin Peninsula transmission map showing Webbers Cove at the junction of the 305L sections to Greenhill and Laurentian", sourceId: "np-2027-burin-study", pages: "physical PDF p. 162" }
     ]
   },
   {

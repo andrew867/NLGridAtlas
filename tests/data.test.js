@@ -1479,6 +1479,28 @@ test("Grand Beach closes the sectional 301L record and retains its 7.2 kV load",
   assert.match(historyFacts, /GBE-01 7\.2 kV; 224 A rating; 168 A winter planning value/);
 });
 
+test("Webbers Cove joins both 305L sections and retains its 25 kV load", () => {
+  const webbersCove = stationProfiles.find((station) => station.code === "WBC");
+  assert.ok(webbersCove);
+  assert.deepEqual(webbersCove.connectedCircuits.map(({ circuit, from_code }) => [circuit, from_code]), [["305L(A)", "GRH"], ["305L(B)", "LAU"]]);
+  assert.deepEqual(webbersCove.feederRegister, ["WBC-01"]);
+  assert.deepEqual(webbersCove.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "25 kV"]);
+  assert.deepEqual(webbersCove.diagram.transformers.map(({ label, rating }) => [label, rating]), [["WBC-T1", "8.33 MVA"]]);
+  assert.deepEqual(webbersCove.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 162"]);
+  const existingFacts = webbersCove.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = webbersCove.planningRecord.facts.flat().join(" ");
+  const assignmentFacts = webbersCove.assignmentRecord.facts.flat().join(" ");
+  const historyFacts = webbersCove.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /complete substation built in 2001/);
+  assert.match(existingFacts, /6\.7 MVA total capacity/);
+  assert.match(planningFacts, /66\/25 kV; 8\.33 MVA; 4\.03 MVA 2026 forecast/);
+  assert.match(assignmentFacts, /305L\(A\) between Greenhill and Webbers Cove; 305L\(B\) between Laurentian and Webbers Cove/);
+  assert.match(assignmentFacts, /December 2025 customers 820/);
+  assert.match(historyFacts, /Greenhill generation energized 305L at 10:15 p\.m\./);
+  assert.match(historyFacts, /WBC-01 25 kV; 474 A rating; 356 A winter planning value/);
+  assert.match(historyFacts, /projected to reach high climate risk by 2050/);
+});
+
 test("Northwest Brook retains its 109L connection and completed 2025 modernization", () => {
   const northwestBrook = stationProfiles.find((station) => station.code === "NWB");
   assert.ok(northwestBrook);
