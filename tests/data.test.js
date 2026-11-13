@@ -635,6 +635,27 @@ test("2025 Hydro quarterly reports update completed terminal equipment work", ()
   assert.ok(timeline.some(({ title, sourceId }) => title.includes("B1B10-2") && sourceId === "nlh-q2-2025-terminal-work"));
 });
 
+test("2024 Hydro reports separate completed work from proposed asset registers", () => {
+  const sourceIds = new Set(sources.map(({ id }) => id));
+  for (const id of ["nlh-q1-2024-terminal-work", "nlh-q2-2024-terminal-work", "nlh-q3-2024-terminal-work", "nlh-q4-2024-terminal-work", "nlh-2024-terminal-program-registers", "nlh-2024-capex-closeout"]) {
+    assert.ok(sourceIds.has(id), id);
+  }
+
+  assert.equal(sources.find(({ id }) => id === "nlh-2024-terminal-program-registers").status, "proposed");
+  assert.match(components["opd-summary"].data.flat().join(" "), /T1 tap changer refurbished; circuit-breaker phase tank replaced/);
+  assert.match(components["opd-t1"].data.flat().join(" "), /2024 work Tap changer refurbished/);
+  assert.match(components["hwd-summary"].data.flat().join(" "), /B2L42 current transformers Planned for 2024; construction did not proceed in 2024 or 2025/);
+
+  const byCode = Object.fromEntries(islandTerminalRecords.map((station) => [station.code, station]));
+  assert.match(byCode.STB.facts.flat().join(" "), /TL205 protection upgrade completed/);
+  assert.match(byCode.BUC.facts.flat().join(" "), /Fire protection installed; TL205 protection upgrade completed/);
+  assert.match(byCode.PLP.facts.flat().join(" "), /dissolved-gas monitor installed on T1/);
+  assert.match(byCode.BRC.facts.flat().join(" "), /dissolved-gas monitor installed on T1/);
+  assert.match(byCode.SBR.facts.flat().join(" "), /dissolved-gas analyser installed on T1/);
+  assert.match(byCode.BBK.facts.flat().join(" "), /TL214 protective relays and station lighting replaced/);
+  assert.match(byCode.SUN.facts.flat().join(" "), /breaker-failure project Work remained incomplete at year end and carried into 2025/);
+});
+
 test("Bishop's Falls diagram carries the four filed 138 kV breaker names", () => {
   const bishopsFalls = stationProfiles.find((station) => station.code === "BFS");
   assert.ok(bishopsFalls);

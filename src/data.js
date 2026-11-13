@@ -860,6 +860,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q4%20Report%20for%20period%20ending%20December%2031%2C%202025%20-%202026-02-17.PDF"
   },
   {
+    id: "nlh-q1-2024-terminal-work",
+    year: 2024,
+    organization: "NL Hydro",
+    title: "Q1 2024 Quarterly Summary, Completed Terminal-Station Work",
+    topics: ["Holyrood", "Buchans", "South Brook", "Stony Brook", "TL205", "T7", "protective relays", "dissolved gas analysis"],
+    pages: "physical PDF p. 32",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20(To%20Parties)%20-%201st%20Quarter%20Report%20for%20period%20ending%20March%2031%2C%202024%20-%202024-05-21.PDF"
+  },
+  {
+    id: "nlh-q2-2024-terminal-work",
+    year: 2024,
+    organization: "NL Hydro",
+    title: "Q2 2024 Quarterly Summary, Completed Terminal-Station Work",
+    topics: ["Oxen Pond", "St. Anthony Diesel Plant", "circuit breaker", "tap changer"],
+    pages: "physical PDF p. 33",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%202nd%20Quarter%20Report%20for%20period%20ending%20June%2030%2C%202024%20-%202024-08-14.PDF"
+  },
+  {
+    id: "nlh-q3-2024-terminal-work",
+    year: 2024,
+    organization: "NL Hydro",
+    title: "Q3 2024 Quarterly Summary, Completed Terminal-Station Work",
+    topics: ["Oxen Pond", "Holyrood", "Cat Arm", "Bear Cove", "Plum Point", "Deer Lake", "Bottom Brook", "Massey Drive", "terminal equipment"],
+    pages: "physical PDF p. 35",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20(To%20Parties)%20-%203rd%20Quarter%20Report%20for%20period%20ending%20September%2030%2C%202024%20-%202024-11-27.PDF"
+  },
+  {
+    id: "nlh-q4-2024-terminal-work",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "Q4 2024 Quarterly Summary, Completed Terminal-Station Work",
+    topics: ["Come By Chance", "Bottom Brook", "Holyrood", "Hardwoods", "Sunnyside", "Upper Salmon", "terminal equipment"],
+    pages: "physical PDF p. 30",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20(To%20Parties)%20-%204th%20Quarter%20Report%20for%20period%20ending%20December%2031%2C%202024%20-%202025-02-14.PDF"
+  },
+  {
+    id: "nlh-2024-terminal-program-registers",
+    year: 2023,
+    organization: "NL Hydro",
+    title: "2024 Capital Budget Application, Terminal-Station Program Asset Registers",
+    topics: ["power transformers", "protective relays", "circuit breakers", "disconnect switches", "instrument transformers"],
+    pages: "physical PDF pp. 365, 396, 441, 482 and 505",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2024/NLH2024Capital/app/From%20NLH%20-%202024%20Capital%20Budget%20Application%20-%20Revision%202%20-%202023-09-21.PDF"
+  },
+  {
+    id: "nlh-2024-capex-closeout",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "2024 Capital Expenditures and Carryover Report",
+    topics: ["terminal stations", "circuit breakers", "Holyrood T7", "Bay d'Espoir T6", "project closeout"],
+    pages: "physical PDF pp. 46, 49, 55 to 56, 59, 72 and 90",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NLH%20-%202024%20-%20Capital%20Expenditures%20and%20Carryover%20Report%20-%202025-04-01.PDF"
+  },
+  {
     id: "nlh-sunnyside-2014",
     year: 2014,
     organization: "NL Hydro",
@@ -1170,16 +1230,6 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf"
   },
   {
-    id: "nlh-cbc-q4-2024",
-    year: 2025,
-    organization: "NL Hydro",
-    title: "Q4 2024 Quarterly Regulatory Report",
-    topics: ["Come By Chance", "transformer bushings", "completed work"],
-    pages: "physical PDF p. 30",
-    status: "verified",
-    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20(To%20Parties)%20-%204th%20Quarter%20Report%20for%20period%20ending%20December%2031%2C%202024%20-%202025-02-14.PDF"
-  },
-  {
     id: "nlh-cbc-capital-2027",
     year: 2026,
     organization: "NL Hydro",
@@ -1444,8 +1494,8 @@ export const sources = [
     year: 2026,
     organization: "NL Hydro",
     title: "2027 Capital Budget Application, Volume I",
-    topics: ["Cat Arm", "TL247", "instrument transformers", "power line carrier"],
-    pages: "physical PDF p. 342",
+    topics: ["Cat Arm", "TL247", "Hardwoods", "B2L42", "instrument transformers", "power line carrier"],
+    pages: "physical PDF pp. 236 and 342",
     status: "reported",
     url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
   },
@@ -5558,8 +5608,8 @@ export const components = {
     code: "OPD / TERMINAL STATION",
     title: "Oxen Pond Terminal Station",
     summary: "The 2013 one-line assigns 70L, 32L, and 34L to bus B3; 67L, 58L, 35L, and 31L to bus B4; and ties the two transformer-bus sections through breaker B2B5. The 2026 loop study models T1 and T3 at 250 MVA and T2 at 125 MVA.",
-    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["B3 circuits", "70L, 32L, 34L"], ["B4 circuits", "67L, 58L, 35L, 31L"], ["Bus tie", "B2B5"], ["C1, B5", "25.2 MVAR"], ["C2, B2", "26.4 MVAR"], ["2025 disconnect work", "B2B3 replaced"]],
-    sources: [sourceRef("oxen-2013", "PDF p. 43"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 37")]
+    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["B3 circuits", "70L, 32L, 34L"], ["B4 circuits", "67L, 58L, 35L, 31L"], ["Bus tie", "B2B5"], ["C1, B5", "25.2 MVAR"], ["C2, B2", "26.4 MVAR"], ["2024 work", "T1 tap changer refurbished; circuit-breaker phase tank replaced"], ["2025 disconnect work", "B2B3 replaced"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 43"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("nlh-q2-2024-terminal-work", "physical PDF p. 33"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 37")]
   },
   "opd-t1": {
     diagram: "opd",
@@ -5567,8 +5617,8 @@ export const components = {
     code: "OPD / T1",
     title: "Oxen Pond transformer T1",
     summary: "The 2026 loop study models T1 at 250 MVA. The 2013 filing recorded the earlier T1 as a 40/53.3/66.6 MVA unit placed in service in 1967.",
-    data: [["Voltage", "230/66 kV"], ["2026 model", "250 MVA"], ["2013 record", "40/53.3/66.6 MVA, in service 1967"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 17")]
+    data: [["Voltage", "230/66 kV"], ["2026 model", "250 MVA"], ["2013 record", "40/53.3/66.6 MVA, in service 1967"], ["2024 work", "Tap changer refurbished"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 17"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 365")]
   },
   "opd-t2": {
     diagram: "opd",
@@ -5612,8 +5662,8 @@ export const components = {
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
     summary: "Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
-    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
-    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
+    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -6300,20 +6350,20 @@ export const islandTerminalRecords = [
     code: "SUN",
     name: "Sunnyside Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T1 and T4, 230/138 kV, 125 MVA maximum rating each"], ["2014 T1 replacement", "Former Holyrood T8 moved to the Sunnyside T1 position and entered service by December 2014"], ["230 kV circuits", "TL202 and TL206 to Bay d'Espoir; TL203 to Western Avalon; TL207 to Come By Chance"], ["138 kV circuits", "TL212, TL219, 100L and 109L"], ["2014 breaker work", "Dedicated 230 kV breaker B1T1 added after the January 4 T1 failure"], ["2025 completed work", "T4 protective relays replaced; T4 received a protective coating; disconnect B1L03-1 replaced"]],
+    facts: [["Transformation", "T1 and T4, 230/138 kV, 125 MVA maximum rating each"], ["2014 T1 replacement", "Former Holyrood T8 moved to the Sunnyside T1 position and entered service by December 2014"], ["230 kV circuits", "TL202 and TL206 to Bay d'Espoir; TL203 to Western Avalon; TL207 to Come By Chance"], ["138 kV circuits", "TL212, TL219, 100L and 109L"], ["2014 breaker work", "Dedicated 230 kV breaker B1T1 added after the January 4 T1 failure"], ["Q4 2024 work", "TL203 protective relays replaced"], ["2024 breaker-failure project", "Work remained incomplete at year end and carried into 2025"], ["2025 completed work", "T4 protective relays replaced; T4 received a protective coating; disconnect B1L03-1 replaced"]],
     diagram: {
       label: "2015 breaker addition arrangement",
       buses: [{ id: "b1", label: "B1", voltage: "230 kV" }, { id: "b2", label: "B2 / B3", voltage: "138 kV" }],
       transformers: [{ label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" }, { label: "T4", rating: "125 MVA max", from: "b1", to: "b2" }],
       circuits: [{ label: "TL202", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL206", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL203", destination: "Western Avalon", bus: "b1" }, { label: "TL207", destination: "Come By Chance", bus: "b1", destinationCode: "CBC" }, { label: "TL212", destination: "Linton Lake", bus: "b2" }, { label: "TL219", destination: "Salt Pond", bus: "b2" }, { label: "100L", destination: "138 kV system", bus: "b2" }, { label: "109L", destination: "138 kV system", bus: "b2" }]
     },
-    sources: [sourceRef("nlh-sunnyside-2014", "physical PDF pp. 18 to 19 and 29 to 34"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-q2-2025-terminal-work", "physical PDF p. 34"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 37")]
+    sources: [sourceRef("nlh-sunnyside-2014", "physical PDF pp. 18 to 19 and 29 to 34"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-capex-closeout", "physical PDF p. 59"), sourceRef("nlh-q2-2025-terminal-work", "physical PDF p. 34"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 37")]
   },
   {
     code: "STB",
     name: "Stony Brook Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report and the 2016 operating diagram"], ["2016 split-bus arrangement", "TL204 enters bus B2 through B2L04; TL232 enters bus B1 through B1L32; normally closed disconnect B1B2 connects the bus sections"], ["2016 ring section", "TL231, TL205 and TL235 connect through ring breakers B1L31, L05L31, L05L35 and B1L35"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2016 transformer protection study", "T1 and T2 had no dedicated 230 kV breaker. The study did not recommend the proposed breaker additions."], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"], ["2025 completed work", "Disconnects L05L31-1, L05L31-2 and L05L35-1/L05G replaced; TL232 protective relays replaced"]],
+    facts: [["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report and the 2016 operating diagram"], ["2016 split-bus arrangement", "TL204 enters bus B2 through B2L04; TL232 enters bus B1 through B1L32; normally closed disconnect B1B2 connects the bus sections"], ["2016 ring section", "TL231, TL205 and TL235 connect through ring breakers B1L31, L05L31, L05L35 and B1L35"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2016 transformer protection study", "T1 and T2 had no dedicated 230 kV breaker. The study did not recommend the proposed breaker additions."], ["Q1 2024 work", "TL205 protection upgrade completed"], ["Q3 2024 work", "Disconnect switches replaced"], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"], ["2025 completed work", "Disconnects L05L31-1, L05L31-2 and L05L35-1/L05G replaced; TL232 protective relays replaced"]],
     diagram: {
       label: "2016 filed operating arrangement / 2018 138 kV routes",
       buses: [
@@ -6347,7 +6397,7 @@ export const islandTerminalRecords = [
         ]
       }]
     },
-    sources: [sourceRef("nlh-terminal-risk-2017", "physical PDF pp. 34 and 42"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
+    sources: [sourceRef("nlh-terminal-risk-2017", "physical PDF pp. 34 and 42"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34"), sourceRef("nlh-q1-2024-terminal-work", "physical PDF p. 32"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   {
     code: "BDE",
@@ -6395,7 +6445,7 @@ export const islandTerminalRecords = [
     code: "BUC",
     name: "Buchans Terminal Station",
     status: "verified",
-    facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2019 T1 replacement", "Completed using the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare"], ["230 kV ring bus", "T1 is between B1L05 and B1L28; TL205, TL233, TL232, and TL228 occupy the four line positions around the five-breaker ring"], ["2025 T1 work", "Tap changer oil replacement, access hatch re-gasketing, and leak repairs completed"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
+    facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2019 T1 replacement", "Completed using the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare"], ["230 kV ring bus", "T1 is between B1L05 and B1L28; TL205, TL233, TL232, and TL228 occupy the four line positions around the five-breaker ring"], ["Q1 2024 work", "Fire protection installed; TL205 protection upgrade completed"], ["2025 T1 work", "Tap changer oil replacement, access hatch re-gasketing, and leak repairs completed"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
     diagram: {
       label: "2013 filed ring-bus operation / 2019 completed T1 replacement",
       buses: [{ id: "b1", label: "B1 bus", voltage: "230 kV", y: 330 }, { id: "b2", label: "B2 bus", voltage: "66 kV", y: 540 }],
@@ -6423,13 +6473,13 @@ export const islandTerminalRecords = [
         ]
       }]
     },
-    sources: [sourceRef("nlh-buchans-storm-2013", "physical PDF pp. 135, 150 to 151, and 162"), sourceRef("nlh-buchans-airblast-2015", "physical PDF p. 3"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 9"), sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 458 to 460"), sourceRef("nlh-buchans-completion-2020", "physical PDF p. 51"), sourceRef("nlh-buchans-industrial-assets-2018", "physical PDF p. 10"), sourceRef("nlh-buchans-q3-2025", "physical PDF p. 36"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-buchans-storm-2013", "physical PDF pp. 135, 150 to 151, and 162"), sourceRef("nlh-buchans-airblast-2015", "physical PDF p. 3"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 9"), sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 458 to 460"), sourceRef("nlh-buchans-completion-2020", "physical PDF p. 51"), sourceRef("nlh-buchans-industrial-assets-2018", "physical PDF p. 10"), sourceRef("nlh-q1-2024-terminal-work", "physical PDF p. 32"), sourceRef("nlh-buchans-q3-2025", "physical PDF p. 36"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "DLK",
     name: "Deer Lake Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T2, 230/138 kV, 45/60/75 MVA; T1, 138/66 kV, 25/33.3/41.7 MVA"], ["230 kV terminals", "TL247 to Cat Arm through B3L47; TL248 to Massey Drive through B3L48"], ["138 kV ring bus", "Established in 1983 to 1984; breakers B1L39, L39T2, L45T2 and B1L45"], ["TL239 protection", "TL239 to Berry Hill operates through L39T2 and B1L39"], ["138 kV circuit", "TL245 to Howley"], ["66 kV bus B2", "TL226 through B2L26 to Wiltondale; TL225 through B2L25 to Deer Lake Power"], ["2014 TL225 isolation", "Disconnect L25-2 was added 1.4 km from the terminal-station end so Deer Lake customers could remain supplied from Deer Lake Power during a terminal-station outage"], ["2016 transformer protection study", "T2 had no dedicated 230 kV breaker; a T2 fault operated B3L47 and B3L48, isolating TL247, TL248 and Cat Arm generation"]],
+    facts: [["Transformation", "T2, 230/138 kV, 45/60/75 MVA; T1, 138/66 kV, 25/33.3/41.7 MVA"], ["230 kV terminals", "TL247 to Cat Arm through B3L47; TL248 to Massey Drive through B3L48"], ["138 kV ring bus", "Established in 1983 to 1984; breakers B1L39, L39T2, L45T2 and B1L45"], ["TL239 protection", "TL239 to Berry Hill operates through L39T2 and B1L39"], ["138 kV circuit", "TL245 to Howley"], ["66 kV bus B2", "TL226 through B2L26 to Wiltondale; TL225 through B2L25 to Deer Lake Power"], ["2014 TL225 isolation", "Disconnect L25-2 was added 1.4 km from the terminal-station end so Deer Lake customers could remain supplied from Deer Lake Power during a terminal-station outage"], ["Q3 2024 work", "Circuit breaker refurbished"], ["Q4 2024 work", "Fire protection installed"], ["2016 transformer protection study", "T2 had no dedicated 230 kV breaker; a T2 fault operated B3L47 and B3L48, isolating TL247, TL248 and Cat Arm generation"]],
     diagram: {
       label: "1983 to 1984 ring bus / 2014 breaker records / 2003 transformer ratings / 2024 routes",
       buses: [{ id: "b1", label: "bus B3", voltage: "230 kV", y: 165 }, { id: "b2", label: "bus B1", voltage: "138 kV", y: 610 }, { id: "b3", label: "bus B2", voltage: "66 kV", y: 860 }],
@@ -6454,7 +6504,7 @@ export const islandTerminalRecords = [
         ]
       }]
     },
-    sources: [sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-deer-lake-ring-breakers-2015", "physical PDF pp. 37 to 38"), sourceRef("nlh-deer-lake-event-2013", "physical PDF p. 191"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF pp. 377 to 378"), sourceRef("nlh-deer-lake-operating-2014", "physical PDF pp. 769 to 770"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 19"), sourceRef("nlh-planning-2024", "physical PDF p. 15"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-deer-lake-ring-breakers-2015", "physical PDF pp. 37 to 38"), sourceRef("nlh-deer-lake-event-2013", "physical PDF p. 191"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF pp. 377 to 378"), sourceRef("nlh-deer-lake-operating-2014", "physical PDF pp. 769 to 770"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 19"), sourceRef("nlh-planning-2024", "physical PDF p. 15"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "DLP",
@@ -6514,7 +6564,7 @@ export const islandTerminalRecords = [
     code: "PLP",
     name: "Plum Point Terminal Station",
     status: "verified",
-    facts: [["Transformation", "138/12.5 kV"], ["Reactive equipment", "Two 5 MVAR capacitor banks"], ["138 kV circuits", "TL241 to Peter's Barron; TL244 to Bear Cove"]],
+    facts: [["Transformation", "138/12.5 kV"], ["Reactive equipment", "Two 5 MVAR capacitor banks"], ["2024 work", "Online dissolved-gas monitor installed on T1"], ["138 kV circuits", "TL241 to Peter's Barron; TL244 to Bear Cove"]],
     diagram: {
       label: "2013 station voltage and reactive equipment / 2018 filed routes",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "12.5 kV" }],
@@ -6522,13 +6572,13 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL241", destination: "Peter's Barron", bus: "b1", destinationCode: "PBR" }, { label: "TL244", destination: "Bear Cove", bus: "b1", destinationCode: "BRC" }],
       shunts: [{ label: "C1", rating: "5 MVAR", bus: "b2" }, { label: "C2", rating: "5 MVAR", bus: "b2" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 365"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "BRC",
     name: "Bear Cove Terminal Station",
     status: "verified",
-    facts: [["Transformation", "138/12.5 kV"], ["Reactive equipment", "5 MVAR capacitor bank"], ["138 kV circuits", "TL244 to Plum Point; TL256 to St. Anthony Airport"]],
+    facts: [["Transformation", "138/12.5 kV"], ["Reactive equipment", "5 MVAR capacitor bank"], ["2024 work", "Online dissolved-gas monitor installed on T1"], ["138 kV circuits", "TL244 to Plum Point; TL256 to St. Anthony Airport"]],
     diagram: {
       label: "2013 station voltage and reactive equipment / 2018 filed routes",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "12.5 kV" }],
@@ -6536,13 +6586,13 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL244", destination: "Plum Point", bus: "b1", destinationCode: "PLP" }, { label: "TL256", destination: "St. Anthony Airport", bus: "b1", destinationCode: "SAA" }],
       shunts: [{ label: "C1", rating: "5 MVAR", bus: "b2" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 365"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "SAA",
     name: "St. Anthony Airport Terminal Station",
     status: "verified",
-    facts: [["Transformation", "138/69 kV"], ["Reactive equipment", "Three 3 MVAR capacitor banks"], ["138 kV circuit", "TL256 to Bear Cove"], ["69 kV circuits", "TL257 to Roddickton Woodchip; TL257B to Main Brook; TL261 to St. Anthony Diesel Plant"]],
+    facts: [["Transformation", "138/69 kV"], ["Reactive equipment", "Three 3 MVAR capacitor banks"], ["Q4 2024 work", "Transformer bushings replaced"], ["138 kV circuit", "TL256 to Bear Cove"], ["69 kV circuits", "TL257 to Roddickton Woodchip; TL257B to Main Brook; TL261 to St. Anthony Diesel Plant"]],
     diagram: {
       label: "2013 station voltage and reactive equipment / 2018 filed routes",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "69 kV" }],
@@ -6550,7 +6600,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL256", destination: "Bear Cove", bus: "b1", destinationCode: "BRC" }, { label: "TL257", destination: "Roddickton Woodchip", bus: "b2", destinationCode: "RWC" }, { label: "TL257B", destination: "Main Brook", bus: "b2" }, { label: "TL261", destination: "St. Anthony Diesel Plant", bus: "b2", destinationCode: "SAD" }],
       shunts: [{ label: "Capacitor banks", rating: "3 x 3 MVAR", bus: "b2" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-transmission-routes-2015", "physical PDF p. 5"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-transmission-routes-2015", "physical PDF p. 5"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "SAD",
@@ -6610,14 +6660,14 @@ export const islandTerminalRecords = [
     code: "SBR",
     name: "South Brook Terminal Station",
     status: "verified",
-    facts: [["Transformation", "138/25 kV"], ["138 kV circuit", "TL222 between Springdale and Stony Brook"]],
+    facts: [["Transformation", "138/25 kV"], ["Q1 2024 work", "Online dissolved-gas analyser installed on T1"], ["138 kV circuit", "TL222 between Springdale and Stony Brook"]],
     diagram: {
       label: "2013 station voltage / 2018 filed route",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "25 kV" }],
       transformers: [{ label: "Station transformer", rating: "138/25 kV", from: "b1", to: "b2" }],
       circuits: [{ label: "TL222", destination: "Springdale", bus: "b1" }, { label: "TL222", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-q1-2024-terminal-work", "physical PDF p. 32"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "DOY",
@@ -6662,7 +6712,7 @@ export const islandTerminalRecords = [
     code: "BBK",
     name: "Bottom Brook Terminal Station",
     status: "verified",
-    facts: [["Terminal Station 2", "Four-rung, 12-breaker, breaker-and-one-half 230 kV yard"], ["T1 and T3", "230/138-6.9 kV, 25/33.3/41.7 MVA each"], ["T2", "138/66 kV, 15/20/25 MVA"], ["230 kV pairings", "TL211 with T1; TL233 with T3; TL269 with converter Line 2; converter Line 1 with TL209"], ["138 kV buses", "B2 and B3 joined by normally open disconnect B2B3"], ["230 kV circuits", "TL209, TL211, TL233, TL269, and two Maritime Link converter connections"], ["138 kV circuits", "TL214 through B2L14 to Doyles; TL250 through B3L50 to Grandy Brook"], ["66 kV circuit", "400L through B6L400 to Wheelers"], ["T4", "Proposed 230/66 kV addition; most remaining project scope was cancelled in 2024"]],
+    facts: [["Terminal Station 2", "Four-rung, 12-breaker, breaker-and-one-half 230 kV yard"], ["T1 and T3", "230/138-6.9 kV, 25/33.3/41.7 MVA each"], ["T2", "138/66 kV, 15/20/25 MVA"], ["230 kV pairings", "TL211 with T1; TL233 with T3; TL269 with converter Line 2; converter Line 1 with TL209"], ["138 kV buses", "B2 and B3 joined by normally open disconnect B2B3"], ["230 kV circuits", "TL209, TL211, TL233, TL269, and two Maritime Link converter connections"], ["138 kV circuits", "TL214 through B2L14 to Doyles; TL250 through B3L50 to Grandy Brook"], ["66 kV circuit", "400L through B6L400 to Wheelers"], ["Q4 2024 work", "Online dissolved-gas monitor installed on T3; TL214 protective relays and station lighting replaced"], ["T4", "Proposed 230/66 kV addition; most remaining project scope was cancelled in 2024"]],
     voltage: "230/138/66 kV",
     circuitRegisterLabel: "2018 FILED ROUTES / 2020 STATION DRAWINGS",
     circuitSources: [
@@ -6789,7 +6839,7 @@ export const islandTerminalRecords = [
         pages: "physical PDF p. 5"
       }
     ],
-    sources: [sourceRef("nlh-bbk-ts2-2018", "physical PDF pp. 27, 30, and 93 to 94"), sourceRef("nlh-bbk-configuration-2014", "physical PDF p. 2"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 9"), sourceRef("nlh-bbk-planning-2026", "physical PDF pp. 13, 15, and 18"), sourceRef("nlh-bbk-t4-2020", "physical PDF pp. 3 and 5"), sourceRef("nlh-stv-scope-2025", "physical PDF pp. 1 to 2"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-bbk-ts2-2018", "physical PDF pp. 27, 30, and 93 to 94"), sourceRef("nlh-bbk-configuration-2014", "physical PDF p. 2"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 9"), sourceRef("nlh-bbk-planning-2026", "physical PDF pp. 13, 15, and 18"), sourceRef("nlh-bbk-t4-2020", "physical PDF pp. 3 and 5"), sourceRef("nlh-stv-scope-2025", "physical PDF pp. 1 to 2"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 365"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "GFS",
@@ -7047,7 +7097,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL207", destination: "Sunnyside", bus: "b1", destinationCode: "SUN", x: 170 }, { label: "TL237", destination: "Western Avalon", bus: "b1", destinationCode: "WAV", x: 950 }],
       shunts: [{ label: "C1", rating: "38.35 MVAR", bus: "b1", x: 150 }, { label: "C2", rating: "38.35 MVAR", bus: "b1", x: 290 }, { label: "C3", rating: "38.35 MVAR", bus: "b1", x: 830 }, { label: "C4", rating: "38.35 MVAR", bus: "b1", x: 970 }]
     },
-    sources: [sourceRef("nlh-cbc-facility-review-2014", "physical PDF pp. 54 to 56"), sourceRef("nlh-cbc-2013", "physical PDF p. 1"), sourceRef("nlh-cbc-ngr-cancel-2010", "physical PDF p. 345"), sourceRef("nlh-braya-ciac-2023", "physical PDF pp. 4 to 7"), sourceRef("nlh-cbc-q4-2024", "physical PDF p. 30"), sourceRef("nlh-cbc-capital-2027", "physical PDF pp. 66, 266, and 333 to 334"), sourceRef("nlh-cbc-relay-status-2026", "physical PDF pp. 1 to 2"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+    sources: [sourceRef("nlh-cbc-facility-review-2014", "physical PDF pp. 54 to 56"), sourceRef("nlh-cbc-2013", "physical PDF p. 1"), sourceRef("nlh-cbc-ngr-cancel-2010", "physical PDF p. 345"), sourceRef("nlh-braya-ciac-2023", "physical PDF pp. 4 to 7"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-cbc-capital-2027", "physical PDF pp. 66, 266, and 333 to 334"), sourceRef("nlh-cbc-relay-status-2026", "physical PDF pp. 1 to 2"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
   },
   {
     code: "VBN",
@@ -7086,7 +7136,7 @@ export const islandTerminalRecords = [
     code: "USL",
     name: "Upper Salmon Generating Station",
     status: "verified",
-    facts: [["Plant rating", "84 MW on the 2013 system one-line"], ["2001 energy capability", "552 GWh"], ["230 kV circuits", "TL234 to Bay d'Espoir; TL263 to Granite Canal Tap"], ["Q2 2025 work", "Circuit breaker L34T1 refurbished"]],
+    facts: [["Plant rating", "84 MW on the 2013 system one-line"], ["2001 energy capability", "552 GWh"], ["230 kV circuits", "TL234 to Bay d'Espoir; TL263 to Granite Canal Tap"], ["Q4 2024 work", "T1 bushings replaced and transformer oil processed"], ["Q2 2025 work", "Circuit breaker L34T1 refurbished"]],
     diagram: {
       label: "2013 plant rating / 2018 filed routes",
       buses: [{ id: "b1", label: "plant connection", voltage: "230 kV" }],
@@ -7094,7 +7144,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL234", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL263", destination: "Granite Canal Tap", bus: "b1" }],
       generators: [{ label: "Upper Salmon", rating: "84 MW", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 14"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("nlh-q2-2025-terminal-work", "physical PDF p. 34")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 14"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-q2-2025-terminal-work", "physical PDF p. 34")]
   },
   {
     code: "GRC",
@@ -7114,7 +7164,7 @@ export const islandTerminalRecords = [
     code: "CAT",
     name: "Cat Arm Generating Station",
     status: "verified",
-    facts: [["Plant rating", "127 MW"], ["2001 energy capability", "735 GWh"], ["Transmission line", "TL247 to Deer Lake"]],
+    facts: [["Plant rating", "127 MW"], ["2001 energy capability", "735 GWh"], ["Transmission line", "TL247 to Deer Lake"], ["Q3 2024 work", "Transformer refurbishment and transformer-oil spill containment completed"]],
     diagram: {
       label: "2013 plant rating / filed TL247 connection",
       buses: [{ id: "b1", label: "plant outlet", voltage: "Plant" }],
@@ -7122,7 +7172,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL247", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }],
       generators: [{ label: "Cat Arm", rating: "127 MW", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 13"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-generation-transmission-2012", "physical PDF p. 1")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 13"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-generation-transmission-2012", "physical PDF p. 1"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35")]
   },
   {
     code: "HLA",

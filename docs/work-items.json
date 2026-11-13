@@ -694,6 +694,18 @@
       "notes": "The Q1 through Q4 2025 summaries establish completed work at Oxen Pond, Hardwoods, Holyrood, Sunnyside, Stony Brook, Western Avalon, Bay d'Espoir, Upper Salmon, Massey Drive, Come By Chance, Grand Falls Frequency Converter, Stephenville, and Buchans. The atlas records exact equipment identifiers where the filing provides them."
     },
     {
+      "id": "ISL-033",
+      "title": "Reconcile completed 2024 terminal-station work",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile Hydro's 2024 quarterly and year-end completion reports with the proposed capital-program asset registers without converting planned equipment into as-built facts.",
+      "dependencies": ["SRC-001", "ISL-002"],
+      "completion_evidence": ["research/NLH_2024_TERMINAL_WORK.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "The Q1 through Q4 summaries establish completed station work. Exact equipment identifiers are used only when the report names the asset or another filing supplies a unique mapping. Hardwoods B2L42 current-transformer construction did not proceed in 2024 or 2025 and remains separate from completed work."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,
