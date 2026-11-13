@@ -787,7 +787,7 @@
       "dependencies": ["ISL-002"],
       "completion_evidence": ["research/SOLDIERS_POND_RECORD.md", "src/data.js", "src/terminal-diagram.js", "src/island-backbone.js", "tests/data.test.js", "tests/terminal-diagram.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "The published record separates the AC yard, LCC poles, synchronous condensers, converter-transformer spare, and electrode line. Breaker detail, converter-transformer ratings, filter-bank ratings, and station-service detail remain documented research targets rather than reconstructed data."
+      "notes": "The published record separates the AC yard, LCC poles, synchronous condensers, converter-transformer spare, and electrode line. The filed 2015 breaker arrangement is implemented under ISL-029. Converter-transformer nameplates and station-service detail remain documented research targets rather than reconstructed data."
     },
     {
       "id": "HVDC-002",
@@ -800,6 +800,18 @@
       "completion_evidence": ["research/HVDC_LINKS_RECORD.md", "index.html", "src/data.js", "src/styles.css", "tests/data.test.js", "tests/claim-ledger.test.js"],
       "blocker": null,
       "notes": "The system diagrams separate commissioned operation from earlier filed design material. Current as-built breaker arrangements and converter-transformer nameplate ratings remain open evidence targets rather than reconstructed data."
+    },
+    {
+      "id": "HVDC-003",
+      "title": "Resolve the Soldiers Pond transformer count and construction chronology",
+      "phase": 3,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Use construction and inquiry records to establish the converter-transformer count and dated AC-yard milestones without applying preliminary study ratings to installed equipment.",
+      "dependencies": ["HVDC-001", "ISL-029"],
+      "completion_evidence": ["research/SOLDIERS_POND_RECORD.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "Nalcor's September 2018 presentation records seven converter transformers transported to Soldiers Pond in spring 2017. The CD0504 civil scope separately lists six delta-star converter-transformer foundations and one spare foundation for the converter-station works. The independent engineer records the AC switchyard energized and fully commissioned in November 2017, with the converter transformers oil-filled on their pads. No located source gives installed converter-transformer voltage, impedance, winding, or MVA nameplate data."
     },
     {
       "id": "CONV-001",

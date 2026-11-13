@@ -1450,6 +1450,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-630.pdf"
   },
   {
+    id: "cimfp-soldiers-pond-transformers-2018",
+    year: 2018,
+    organization: "Commission of Inquiry Respecting the Muskrat Falls Project",
+    title: "Muskrat Falls Project Overview, CIMFP Exhibit P-00136",
+    topics: ["Soldiers Pond", "converter transformers", "construction", "Labrador-Island Link"],
+    pages: "physical PDF p. 82",
+    status: "reported",
+    url: "https://www.muskratfallsinquiry.ca/files/P-00136.pdf"
+  },
+  {
+    id: "cimfp-hvdc-civil-scope-2015",
+    year: 2015,
+    organization: "Nalcor Energy and Alstom Grid",
+    title: "CD0504 Civil Works and Buildings HVdc Specialties, Bid Evaluation and Award Recommendation",
+    topics: ["Soldiers Pond", "Muskrat Falls", "converter transformers", "spare transformer", "civil works"],
+    pages: "physical PDF p. 7",
+    status: "reported",
+    url: "https://www.muskratfallsinquiry.ca/files/P-02995.pdf"
+  },
+  {
+    id: "gnl-lcp-site-visit-2018",
+    year: 2018,
+    organization: "Government of Newfoundland and Labrador",
+    title: "Independent Engineer Site Visit Report, November 26 to December 1, 2017",
+    topics: ["Soldiers Pond", "converter transformers", "AC switchyard", "synchronous condensers", "commissioning"],
+    pages: "physical PDF p. 8",
+    status: "verified",
+    url: "https://www.gov.nl.ca/exec/files/mfoversight-engineer-lcp-independent-engineer-site-visit-report-nov26-dec1-2017.pdf"
+  },
+  {
     id: "nlh-sop-transformer-spares-2021",
     year: 2021,
     organization: "NL Hydro",
@@ -6931,7 +6961,7 @@ export const islandTerminalRecords = [
     code: "SDP",
     name: "Soldiers Pond Converter Station",
     status: "verified",
-    facts: [["Commissioned", "Labrador-Island Link commissioned on 2023-04-14"], ["HVDC design basis", "Line-commutated converter; +/-350 kV DC; 900 MW at Muskrat Falls and 830 MW at Soldiers Pond in bipolar operation"], ["Synchronous condensers", "SC1, SC2 and SC3; 175 MVAr each; all three reported in service after 2023-04-13 except for planned maintenance"], ["230 kV yard", "The September 2015 operating diagram shows buses B1 and B2 with five breaker strings and 18 named breakers"], ["230 kV circuits", "TL201 and TL217 to Western Avalon; TL242 and TL266 to Hardwoods; TL265 and TL268 to Holyrood"], ["Harmonic filters", "Five 75 MVAR operating filters plus one installed spare were specified in the 2016 integration study"], ["Synchronous-condenser transformer spare", "The 2021 planning criteria lists one 230/25/15 kV, 200 MVA spare"], ["Converter-transformer spare", "A spare converter transformer is listed at Soldiers Pond in the 2019 reliability response and 2021 planning criteria"], ["Electrode line", "EL3/4 between Soldiers Pond and Dowden's Point"], ["2033/34 study case", "All Soldiers Pond filter banks available; electrode lines and electrode sites in service"]],
+    facts: [["Commissioned", "Labrador-Island Link commissioned on 2023-04-14"], ["HVDC design basis", "Line-commutated converter; +/-350 kV DC; 900 MW at Muskrat Falls and 830 MW at Soldiers Pond in bipolar operation"], ["Synchronous condensers", "SC1, SC2 and SC3; 175 MVAr each; all three reported in service after 2023-04-13 except for planned maintenance"], ["230 kV yard", "The September 2015 operating diagram shows buses B1 and B2 with five breaker strings and 18 named breakers"], ["AC-yard milestone", "The independent engineer reported the switchyard energized and fully commissioned in November 2017"], ["230 kV circuits", "TL201 and TL217 to Western Avalon; TL242 and TL266 to Hardwoods; TL265 and TL268 to Holyrood"], ["Converter transformers", "Seven units were transported from Bay Bulls to Soldiers Pond in spring 2017"], ["Harmonic filters", "Five 75 MVAR operating filters plus one installed spare were specified in the 2016 integration study"], ["Synchronous-condenser transformer spare", "The 2021 planning criteria lists one 230/25/15 kV, 200 MVA spare"], ["Converter-transformer spare", "A spare converter transformer is listed at Soldiers Pond in the 2019 reliability response and 2021 planning criteria"], ["Electrode line", "EL3/4 between Soldiers Pond and Dowden's Point"], ["2033/34 study case", "All Soldiers Pond filter banks available; electrode lines and electrode sites in service"]],
     diagram: {
       label: "September 2015 filed operating arrangement / 2023 LIL commissioning",
       buses: [{ id: "b1", label: "B1 / 230 kV", voltage: "230 kV", y: 165 }, { id: "b2", label: "B2 / 230 kV", voltage: "230 kV", y: 585, labelX: 690 }],
@@ -6945,7 +6975,7 @@ export const islandTerminalRecords = [
         { from: "b1", to: "b2", voltage: "230 kV", label: "B15/B35 string", x: 980, breakers: [{ y: 230, label: "B1B15" }, { y: 375, label: "B15B35" }, { y: 520, label: "B2B35" }], connections: [{ y: 300, side: "left", label: "Converter D", destination: "SOPCS", link: false }, { y: 450, side: "left", label: "TL217", destination: "Western Avalon", destinationCode: "WAV" }] }
       ]
     },
-    sources: [sourceRef("nlh-lil-commissioning-2023", "physical PDF p. 1"), sourceRef("nlh-lil-april-2023", "physical PDF pp. 2 to 3"), sourceRef("nlh-sop-operating-2015", "physical PDF pp. 1 to 2"), sourceRef("nlh-sop-filters-2016", "physical PDF p. 8"), sourceRef("nlh-sop-transformer-spares-2021", "physical PDF p. 36"), sourceRef("nlh-sop-integration-2014", "physical PDF pp. 30 and 37 to 38"), sourceRef("nlh-lil-spares-2019", "physical PDF p. 1"), sourceRef("nlh-lil-near-term-2020", "physical PDF pp. 38 to 39"), sourceRef("nlh-planning-2024", "physical PDF pp. 8 and 13 to 14")]
+    sources: [sourceRef("nlh-lil-commissioning-2023", "physical PDF p. 1"), sourceRef("nlh-lil-april-2023", "physical PDF pp. 2 to 3"), sourceRef("nlh-sop-operating-2015", "physical PDF pp. 1 to 2"), sourceRef("cimfp-soldiers-pond-transformers-2018", "physical PDF p. 82"), sourceRef("cimfp-hvdc-civil-scope-2015", "physical PDF p. 7"), sourceRef("gnl-lcp-site-visit-2018", "physical PDF p. 8"), sourceRef("nlh-sop-filters-2016", "physical PDF p. 8"), sourceRef("nlh-sop-transformer-spares-2021", "physical PDF p. 36"), sourceRef("nlh-sop-integration-2014", "physical PDF pp. 30 and 37 to 38"), sourceRef("nlh-lil-spares-2019", "physical PDF p. 1"), sourceRef("nlh-lil-near-term-2020", "physical PDF pp. 38 to 39"), sourceRef("nlh-planning-2024", "physical PDF pp. 8 and 13 to 14")]
   },
   {
     code: "USL",

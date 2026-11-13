@@ -508,6 +508,10 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   assert.match(bayDEspoir.facts.flat().join(" "), /T10 and T12, 230\/69 kV, 15\/20\/25 MVA each/);
   assert.match(bayDEspoir.facts.flat().join(" "), /T7, 230\/13\.8 kV, 129\/172 MVA/);
   assert.match(voiseysBayNickel.facts.flat().join(" "), /TL208 to Western Avalon/);
+  assert.match(soldiersPond.facts.flat().join(" "), /Seven units were transported from Bay Bulls to Soldiers Pond in spring 2017/);
+  assert.match(soldiersPond.facts.flat().join(" "), /energized and fully commissioned in November 2017/);
+  assert.ok(soldiersPond.sources.some(({ sourceId, pages }) => sourceId === "cimfp-soldiers-pond-transformers-2018" && pages === "physical PDF p. 82"));
+  assert.ok(soldiersPond.sources.some(({ sourceId, pages }) => sourceId === "gnl-lcp-site-visit-2018" && pages === "physical PDF p. 8"));
   assert.match(voiseysBayNickel.facts.flat().join(" "), /Long Harbour predecessor.*removed from service/);
   assert.deepEqual(bayDEspoir.diagram.transformers.map(({ label }) => label), ["T1 to T3", "T4", "T5 and T6", "T7", "T10", "T12", "T11"]);
   assert.deepEqual(bayDEspoir.diagram.transformers.filter(({ label }) => ["T10", "T12"].includes(label)).map(({ label, rating, from, to }) => ({ label, rating, from, to })), [

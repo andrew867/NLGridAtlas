@@ -126,6 +126,7 @@ Work items:
 - GEN-004
 - HVDC-001
 - HVDC-002
+- HVDC-003
 - CONV-001
 
 Exit gate:
