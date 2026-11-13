@@ -643,6 +643,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [ ] No searched record confirms completion of the 2018 feeder-automation work.
 - [ ] No searched record publishes a breaker-level New Harbour one-line. The atlas diagram shows the documented local 80L directions and voltage transformation.
 
+## St. John's Diesel historical plant record
+
+- [x] The 2003 plant study records one Nordberg diesel engine and General Electric Type AT1 generator rated 2,500 kW, 3,125 kVA, 6,600 V, 274 A armature, 0.80 power factor, and 60 Hz, physical PDF p. 191.
+- [x] The engine data sheet records 3,580 bhp, 225 rpm, and a Woodward Type 1C 500 governor, physical PDF p. 191.
+- [x] The plant narrative records three 1,500 kVA transformers stepping 6,900 V down to 4,160 V. This differs from the generator's 6,600 V nameplate and is retained as a separate source value, physical PDF p. 180.
+- [x] The plant connected directly to a distribution line into St. John's Main Substation and had no associated transmission line, physical PDF p. 181.
+- [x] The Board records that the plant was installed in 1953 for St. John's Steam Plant station-service startup, had not operated since 1999, and was approved for decommissioning on September 28, 2003, physical PDF pp. 2 and 4.
+- [x] CA-NP-035 records retirement in 2005, a $197,208 decommissioning cost, and no salvage, physical PDF p. 1.
+- [x] The plant study preserves a data sheet and photographs of the Southside Road powerhouse and the Nordberg unit, physical PDF pp. 191 and 193.
+- [ ] No searched record gives the exact distribution feeder designation between the plant and St. John's Main.
+
 ## Remaining data classes
 
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.

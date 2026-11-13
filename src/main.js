@@ -263,18 +263,18 @@ function renderStationProfile(code) {
     </header>
     ${profile.diagram ? renderTerminalDiagram(profile.diagram, escapeHtml, "station") : ""}
     <div class="profile-grid">
-      <section>
+      ${profile.hideCircuitRegister ? "" : `<section>
         <span class="profile-label">${escapeHtml(profile.circuitRegisterLabel || "2005 CIRCUIT REGISTER")}</span>
         <ul class="circuit-list">${circuitRows || "<li><span>No connected transmission circuit in the register</span></li>"}</ul>
         ${circuitSources.length
           ? circuitSources.map(({ reference, source }) => `<a class="evidence-link stacked-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.title)} / ${escapeHtml(reference.pages)}</a>`).join("")
           : `<a class="evidence-link" href="${escapeHtml(handbook.source.source_url)}#page=6" target="_blank" rel="noreferrer">Electrical System Handbook / PDF pp. 6 to 7</a>`}
-      </section>
+      </section>`}
       <section>
-        <span class="profile-label">${escapeHtml(profile.feederRegisterLabel || "2005 FEEDER REGISTER")}</span>
+        ${profile.hideFeederRegister ? "" : `<span class="profile-label">${escapeHtml(profile.feederRegisterLabel || "2005 FEEDER REGISTER")}</span>
         <div class="feeder-tags">${profile.feederRegister.length
           ? profile.feederRegister.map((feeder) => `<span>${escapeHtml(feeder)}</span>`).join("")
-          : /^NO DISTRIBUTION FEEDERS/.test(profile.feederRegisterLabel || "") ? "" : "<span>No feeder designation</span>"}</div>
+          : /^NO DISTRIBUTION FEEDERS/.test(profile.feederRegisterLabel || "") ? "" : "<span>No feeder designation</span>"}</div>`}
         ${feederMaps ? `<span class="profile-label map-label">2014 FEEDER MAP SHEETS</span><div class="feeder-maps">${feederMaps}</div>` : ""}
         ${referenceSheets ? `<span class="profile-label map-label">${escapeHtml(profile.referenceSheetLabel || "SYSTEM SCHEMATICS")}</span><div class="feeder-maps reference-sheets">${referenceSheets}</div>` : ""}
         ${feederTieRows ? `

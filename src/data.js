@@ -80,6 +80,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20116.pdf"
   },
   {
+    id: "np-2013-ca-np-035-sjd",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-035, St. John's Diesel Plant Historical and Decommissioning Record",
+    topics: ["St. John's Diesel", "SJD", "diesel generation", "Nordberg", "General Electric", "6.6 kV", "4.16 kV", "St. John's Main", "decommissioning"],
+    pages: "physical PDF pp. 1, 180 to 181, 185, 187, 191 and 193",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-035.pdf"
+  },
+  {
+    id: "pu-33-2003-sjd",
+    year: 2003,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 33 (2003), St. John's Diesel Plant Decommissioning",
+    topics: ["St. John's Diesel", "SJD", "diesel generation", "St. John's Steam Plant", "decommissioning", "Section 38"],
+    pages: "physical PDF pp. 1, 2 and 4",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2003/pu33-2003.pdf"
+  },
+  {
     id: "np-2015-400l",
     year: 2014,
     organization: "Newfoundland Power",
@@ -5965,6 +5985,90 @@ const filedFeederMapProfiles = [
         alt: "Filed Indian Cove station photograph showing the 25 kV and 12.5 kV wood structures and transformer before the proposed 2004 replacement",
         sourceId: "np-2004-indian-cove",
         pages: "physical PDF p. 76"
+      }
+    ]
+  },
+  {
+    code: "SJD",
+    name: "St. John's Diesel",
+    voltage: "6.6/4.16 kV historical plant",
+    hideCircuitRegister: true,
+    hideFeederRegister: true,
+    connectedCircuits: [],
+    feederRegisterLabel: "2003 HISTORICAL CONNECTION RECORD",
+    feederSource: { sourceId: "np-2013-ca-np-035-sjd", pages: "physical PDF p. 181" },
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2003 historical operating arrangement",
+      buses: [
+        { id: "b1", label: "6.6 kV generator nameplate", voltage: "6.6 kV" },
+        { id: "b2", label: "4.16 kV distribution connection", voltage: "4.16 kV" }
+      ],
+      transformers: [{ label: "Transformer bank", rating: "3 x 1.5 MVA; report states 6.9/4.16 kV", from: "b1", to: "b2" }],
+      generators: [{ label: "Nordberg / GE unit", rating: "2.5 MW; 3.125 MVA", bus: "b1" }],
+      circuits: [{ label: "distribution line", destination: "St. John's Main", bus: "b2", destinationCode: "SJM" }]
+    },
+    engineeringRecord: {
+      date: "2003 HISTORICAL PLANT RECORD",
+      title: "St. John's Diesel generating plant and grid connection",
+      sourceId: "np-2013-ca-np-035-sjd",
+      pages: "physical PDF pp. 180 to 181 and 191",
+      facts: [
+        ["Generating set", "Nordberg diesel engine and General Electric Type AT1 generator; 2,500 kW; 3,125 kVA; 6,600 V; 274 A armature; 0.80 power factor; 60 Hz"],
+        ["Engine", "3,580 bhp; 225 rpm; Woodward Type 1C 500 governor"],
+        ["Transformer bank", "Three 1,500 kVA transformers; narrative states 6,900 V down to 4,160 V"],
+        ["Grid connection", "Direct distribution-line connection to St. John's Main Substation; no transmission line associated with the plant"],
+        ["Fuel", "22,703 litre self-dyked No. 2 diesel tank"]
+      ]
+    },
+    planningRecord: {
+      label: "2003 BOARD DECOMMISSIONING ORDER",
+      sourceId: "pu-33-2003-sjd",
+      pages: "physical PDF pp. 1, 2 and 4",
+      facts: [
+        ["Original duty", "Installed in 1953 to supply station services for starting the St. John's Steam Plant"],
+        ["Operating status", "Order records no operation since 1999"],
+        ["Order", "Board approved decommissioning on September 28, 2003"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1991 TO 2000 OPERATING-HOUR RECORD",
+        sourceId: "np-2013-ca-np-035-sjd",
+        pages: "physical PDF p. 181",
+        facts: [
+          ["Meter readings", "2,355 hours in 1991 and 2,455 hours in 2000"],
+          ["Source-reported use", "11.1 operating hours per year between the two readings"]
+        ]
+      },
+      {
+        label: "2005 RETIREMENT RECORD",
+        sourceId: "np-2013-ca-np-035-sjd",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Retired", "2005"],
+          ["Decommissioning cost", "$197,208"],
+          ["Salvage", "$0"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "HISTORICAL PLANT DATA AND PHOTOGRAPHS",
+    referenceSheets: [
+      {
+        title: "St. John's Diesel Plant data sheet",
+        image: "./reference-maps/st-johns-diesel-2003-data-sheet.png",
+        alt: "Filed St. John's Diesel Plant data sheet listing the Nordberg engine and General Electric generator nameplate values",
+        sourceId: "np-2013-ca-np-035-sjd",
+        pages: "physical PDF p. 191"
+      },
+      {
+        title: "St. John's Diesel powerhouse and Nordberg unit",
+        image: "./reference-maps/st-johns-diesel-2003-photographs.png",
+        alt: "Filed photographs of the St. John's Diesel powerhouse on Southside Road and the 2,500 kW Nordberg diesel unit",
+        sourceId: "np-2013-ca-np-035-sjd",
+        pages: "physical PDF p. 193"
       }
     ]
   },

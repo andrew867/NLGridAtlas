@@ -1740,6 +1740,31 @@ test("Indian Cove preserves the dated stepdown station and proposed replacement"
   assert.match(historyFacts, /SAIFI 2\.92; SAIDI 5\.29 hours/);
 });
 
+test("St. John's Diesel preserves the historical plant connection and retirement", () => {
+  const stJohnsDiesel = stationProfiles.find((station) => station.code === "SJD");
+  assert.ok(stJohnsDiesel);
+  assert.equal(stJohnsDiesel.hideCircuitRegister, true);
+  assert.equal(stJohnsDiesel.hideFeederRegister, true);
+  assert.deepEqual(stJohnsDiesel.connectedCircuits, []);
+  assert.deepEqual(stJohnsDiesel.diagram.buses.map(({ voltage }) => voltage), ["6.6 kV", "4.16 kV"]);
+  assert.deepEqual(stJohnsDiesel.diagram.generators.map(({ label, rating }) => [label, rating]), [["Nordberg / GE unit", "2.5 MW; 3.125 MVA"]]);
+  assert.deepEqual(stJohnsDiesel.diagram.transformers.map(({ label, rating }) => [label, rating]), [["Transformer bank", "3 x 1.5 MVA; report states 6.9/4.16 kV"]]);
+  assert.deepEqual(stJohnsDiesel.diagram.circuits.map(({ label, destination }) => [label, destination]), [["distribution line", "St. John's Main"]]);
+  assert.deepEqual(stJohnsDiesel.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 191", "physical PDF p. 193"]);
+
+  const plantFacts = stJohnsDiesel.engineeringRecord.facts.flat().join(" ");
+  const orderFacts = stJohnsDiesel.planningRecord.facts.flat().join(" ");
+  const historyFacts = stJohnsDiesel.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(plantFacts, /2,500 kW; 3,125 kVA; 6,600 V; 274 A armature; 0.80 power factor; 60 Hz/);
+  assert.match(plantFacts, /Three 1,500 kVA transformers; narrative states 6,900 V down to 4,160 V/);
+  assert.match(plantFacts, /St. John's Main Substation/);
+  assert.match(orderFacts, /supply station services for starting the St. John's Steam Plant/);
+  assert.match(orderFacts, /approved decommissioning on September 28, 2003/);
+  assert.match(historyFacts, /2,355 hours in 1991 and 2,455 hours in 2000/);
+  assert.match(historyFacts, /Retired 2005/);
+  assert.match(historyFacts, /\$197,208/);
+});
+
 test("Twillingate combines the completed station work with measured winter voltage", () => {
   const twillingate = stationProfiles.find((station) => station.code === "TWG");
   assert.ok(twillingate);
