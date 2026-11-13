@@ -1,0 +1,62 @@
+{
+  "source": {
+    "title": "NLH-NP-014, Power Transformer Repair Times",
+    "url": "http://www.pub.nl.ca/applications/2026/NP2026Capital/responses/NLH-NP-014.PDF",
+    "local_file": "applications/2026/NP2026Capital/responses/NLH-NP-014.PDF",
+    "filed_date": "2025-09-09",
+    "physical_pdf_pages": [1],
+    "sha256": "cc883009ff958225c9db9200d8100dac9b68961213428e201d4c6f6f5dc7a783"
+  },
+  "record_count": 6,
+  "records": [
+    {
+      "station_code": "BLK",
+      "transformer": "BLK-T2",
+      "days_out_of_service_for_repair": 126,
+      "repair_type": "Locked on-load tap changer position and installed external voltage regulators",
+      "returned_to_service": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "station_code": "DUN",
+      "transformer": "DUN-T1",
+      "days_out_of_service_for_repair": 773,
+      "repair_type": "Transformer rewind",
+      "returned_to_service": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "station_code": "SLA",
+      "transformer": "SLA-T3",
+      "days_out_of_service_for_repair": 5,
+      "repair_type": "De-energized tap changer repair",
+      "returned_to_service": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "station_code": "HUM",
+      "transformer": "HUM-T2",
+      "days_out_of_service_for_repair": 6,
+      "repair_type": "Oil leak repair",
+      "returned_to_service": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "station_code": "HUM",
+      "transformer": "HUM-T3",
+      "days_out_of_service_for_repair": 6,
+      "repair_type": "On-load tap changer repair",
+      "returned_to_service": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "station_code": "TRN",
+      "transformer": "TRN-T1",
+      "days_out_of_service_for_repair": 1,
+      "repair_type": "Transformer bushing replacement",
+      "returned_to_service": true,
+      "physical_pdf_page": 1,
+      "source_note": "The bushing was replaced during the outage resulting from the bushing failure."
+    }
+  ]
+}

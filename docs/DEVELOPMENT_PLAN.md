@@ -85,6 +85,7 @@ Work items:
 - ISL-016
 - NPREG-001
 - NPREG-002
+- ASSET-001
 
 Exit gate:
 

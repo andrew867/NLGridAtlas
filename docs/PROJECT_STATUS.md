@@ -15,6 +15,8 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added the six transformer repair durations in NLH-NP-014 to the Blaketown, Dunville, Stamp's Lane, Humber, and Trinity station histories.
+- Kept the one-day TRN-T1 repair duration separate from the approximately 25-hour 58-minute customer interruption recorded in the later reliability response.
 - Added the 109-row Newfoundland Power transmission asset register from CA-NP-168 Attachment A. The interface separates the December 31, 2022 historical-cost layer from the June 2005 handbook map and register.
 - Added the 300-row PUB-NP-081 distribution feeder register. The interface exposes operating voltage and the filed 2024 to 2025 winter planning values without treating them as measured loads.
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.

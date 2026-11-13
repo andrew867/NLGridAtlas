@@ -502,6 +502,18 @@
       "notes": "PUB-NP-081 Attachment B physical PDF pp. 10 to 20 contains 108 St. John's, 87 Eastern, and 105 Western feeder rows. All 300 published loading percentages reconcile to forecast winter peak divided by planning capacity within 0.02 percentage point. The values are planning forecasts, not measured peaks."
     },
     {
+      "id": "ASSET-001",
+      "title": "Add Newfoundland Power transformer repair durations",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Add the six transformer repair durations reported in NLH-NP-014 to the affected station histories.",
+      "dependencies": ["ARC-001", "SRC-001"],
+      "completion_evidence": ["research/NP_TRANSFORMER_REPAIR_TIMES.md", "research/derived/np-transformer-repair-times-2025.json", "src/data.js", "tests/np-transformer-repair-times.test.js"],
+      "blocker": null,
+      "notes": "NLH-NP-014 physical PDF p. 1 records the repair type and days out of service for BLK-T2, DUN-T1, SLA-T3, HUM-T2, HUM-T3, and TRN-T1. The station records keep transformer repair time separate from customer interruption duration."
+    },
+    {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,

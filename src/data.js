@@ -3844,7 +3844,7 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "NLH-NP-014, Power Transformer Repair Times",
-    topics: ["Dunville", "DUN-T1", "transformer failure", "transformer rewind"],
+    topics: ["Blaketown", "BLK-T2", "Dunville", "DUN-T1", "Stamp's Lane", "SLA-T3", "Humber", "HUM-T2", "HUM-T3", "Trinity", "TRN-T1", "transformer repair", "returned to service"],
     pages: "physical PDF p. 1",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/responses/NLH-NP-014.PDF"
@@ -6792,6 +6792,16 @@ const filedFeederMapProfiles = [
           ["Feeder arrangement", "construct HUM-10; the filed post-conversion design has three 12.5 kV feeders"],
           ["Other station work", "replace deteriorated switches and vintage insulators; install transformer containment, protection, and a smaller control building"]
         ]
+      },
+      {
+        label: "2025 REPAIR DURATION RECORD",
+        sourceId: "np-2026-nlh-np-014",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["HUM-T2", "6 days out of service for an oil leak repair"],
+          ["HUM-T3", "6 days out of service for an on-load tap changer repair"],
+          ["Disposition", "both transformers were repaired and returned to service"]
+        ]
       }
     ]
   },
@@ -7821,6 +7831,16 @@ const filedFeederMapProfiles = [
           ["Initial interruption", "3,503 customers supplied from 115L and 116L, including Hare Bay, Trinity, Greenspond, and Wesleyville"],
           ["Outage duration", "approximately 25 hours and 58 minutes"],
           ["Isolation", "after the failed bushing was identified, the outage was isolated to Trinity Substation customers"]
+        ]
+      },
+      {
+        label: "2025 REPAIR DURATION RECORD",
+        sourceId: "np-2026-nlh-np-014",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Repair", "TRN-T1 was out of service for 1 day for a transformer bushing replacement"],
+          ["Timing", "the bushing was replaced during the outage caused by the bushing failure"],
+          ["Disposition", "TRN-T1 was repaired and returned to service"]
         ]
       }
     ]
@@ -10957,6 +10977,16 @@ export const stationProfiles = [
           ["Protection and control", "replace electromechanical relays with digital relays; replace the control building and cable trench"],
           ["Filed schedule", "construction and commissioning planned for 2028"]
         ]
+      },
+      {
+        label: "2025 REPAIR DURATION RECORD",
+        sourceId: "np-2026-nlh-np-014",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Repair", "BLK-T2 was out of service for 126 days"],
+          ["Work", "the on-load tap changer position was locked and external voltage regulators were installed"],
+          ["Disposition", "BLK-T2 was repaired and returned to service"]
+        ]
       }
     ]
   },
@@ -11223,11 +11253,12 @@ export const stationProfiles = [
         ]
       },
       {
-        label: "REPAIR DURATION REPORTED IN 2025",
+        label: "2025 REPAIR DURATION RECORD",
         sourceId: "np-2026-nlh-np-014",
         pages: "physical PDF p. 1",
         facts: [
-          ["Repair", "DUN-T1 was out of service for 773 days for a transformer rewind"]
+          ["Repair", "DUN-T1 was out of service for 773 days for a transformer rewind"],
+          ["Disposition", "DUN-T1 was repaired and returned to service"]
         ]
       }
     ]
@@ -13944,6 +13975,15 @@ export const stationProfiles = [
         facts: [
           ["2007", "refurbished deteriorated concrete foundations and replaced deteriorated transformer power cables"],
           ["2011", "replaced transmission-line relays and deteriorated transformer radiators"]
+        ]
+      },
+      {
+        label: "2025 REPAIR DURATION RECORD",
+        sourceId: "np-2026-nlh-np-014",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Repair", "SLA-T3 was out of service for 5 days for a de-energized tap changer repair"],
+          ["Disposition", "SLA-T3 was repaired and returned to service"]
         ]
       }
     ]
