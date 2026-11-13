@@ -1270,6 +1270,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf"
   },
   {
+    id: "nlh-gnp-generation-2001",
+    year: 2001,
+    organization: "NL Hydro",
+    title: "IC-270, Great Northern Peninsula Pre-Interconnection Generation",
+    topics: ["St. Anthony Diesel", "Roddickton Woodchip", "Roddickton Diesel", "Roddickton Mini-hydro", "black start", "mobile diesel", "TL257", "TL261"],
+    pages: "physical PDF pp. 3 to 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/hydresp/Indust/IC%20270.pdf"
+  },
+  {
+    id: "pub-roddickton-generation-2004",
+    year: 2004,
+    organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
+    title: "Order P.U. 34 (2004), Roddickton Mobile Diesel Relocation",
+    topics: ["Roddickton", "St. Anthony", "mobile diesel", "woodchip plant", "diesel plant", "abandonment", "relocation"],
+    pages: "physical PDF pp. 1 and 11",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2004/pu34-2004.pdf"
+  },
+  {
     id: "nlh-probabilistic-transmission-2016",
     year: 2016,
     organization: "Nalcor Energy",
@@ -1374,8 +1394,8 @@ export const sources = [
     year: 2024,
     organization: "NL Hydro",
     title: "2024 Annual Planning Assessment",
-    topics: ["Soldiers Pond", "Labrador-Island Link", "Avalon", "Massey Drive", "Stephenville", "TL211", "TL228", "TL248", "transformer loading", "230 kV", "synchronous condenser"],
-    pages: "physical PDF pp. 8, 13 to 15, 35, 38, 40, and 41",
+    topics: ["Soldiers Pond", "Labrador-Island Link", "Avalon", "Massey Drive", "Stephenville", "St. Anthony Diesel", "TL211", "TL228", "TL239", "TL241", "TL244", "TL248", "TL256", "TL261", "transformer loading", "230 kV", "synchronous condenser"],
+    pages: "physical PDF pp. 8, 13 to 15, 35, 38, and 40 to 42",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/correspondence/From%20NLH%20-%20Newfoundland%20and%20Labrador%20System%20Operator%20(NLSO)%20-%202024%20Annual%20Planning%20Assessment%20-%202024-07-30.PDF"
   },
@@ -5546,15 +5566,43 @@ export const islandTerminalRecords = [
     code: "SAA",
     name: "St. Anthony Airport Terminal Station",
     status: "verified",
-    facts: [["Transformation", "138/69 kV"], ["Reactive equipment", "Three 3 MVAR capacitor banks"], ["138 kV circuit", "TL256 to Bear Cove"], ["69 kV circuits", "TL257B to Main Brook; TL261 to St. Anthony Diesel Plant"]],
+    facts: [["Transformation", "138/69 kV"], ["Reactive equipment", "Three 3 MVAR capacitor banks"], ["138 kV circuit", "TL256 to Bear Cove"], ["69 kV circuits", "TL257 to Roddickton Woodchip; TL257B to Main Brook; TL261 to St. Anthony Diesel Plant"]],
     diagram: {
       label: "2013 station voltage and reactive equipment / 2018 filed routes",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "69 kV" }],
       transformers: [{ label: "Station transformer", rating: "138/69 kV", from: "b1", to: "b2" }],
-      circuits: [{ label: "TL256", destination: "Bear Cove", bus: "b1", destinationCode: "BRC" }, { label: "TL257B", destination: "Main Brook", bus: "b2" }, { label: "TL261", destination: "St. Anthony Diesel Plant", bus: "b2" }],
+      circuits: [{ label: "TL256", destination: "Bear Cove", bus: "b1", destinationCode: "BRC" }, { label: "TL257", destination: "Roddickton Woodchip", bus: "b2", destinationCode: "RWC" }, { label: "TL257B", destination: "Main Brook", bus: "b2" }, { label: "TL261", destination: "St. Anthony Diesel Plant", bus: "b2", destinationCode: "SAD" }],
       shunts: [{ label: "Capacitor banks", rating: "3 x 3 MVAR", bus: "b2" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-transmission-routes-2015", "physical PDF p. 5"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "SAD",
+    name: "St. Anthony Diesel Generating Station",
+    status: "reported",
+    facts: [["2024 backup capacity", "9.7 MW diesel plant"], ["2001 pre-interconnection capacity", "8,850 kW including one 850 kW mobile diesel generator"], ["69 kV circuit", "TL261 to St. Anthony Airport"], ["2004 mobile-unit relocation", "Two 850 kW mobile diesel units moved from Roddickton to St. Anthony"]],
+    diagram: {
+      label: "2024 backup capacity / 69 kV TL261 interface",
+      buses: [{ id: "b1", label: "terminal connection", voltage: "69 kV" }],
+      transformers: [],
+      circuits: [{ label: "TL261", destination: "St. Anthony Airport", bus: "b1", destinationCode: "SAA" }],
+      generators: [{ label: "Diesel plant", rating: "9.7 MW", bus: "b1" }]
+    },
+    sources: [sourceRef("nlh-planning-2024", "physical PDF p. 42"), sourceRef("nlh-gnp-generation-2001", "physical PDF p. 3"), sourceRef("pub-roddickton-generation-2004", "physical PDF p. 11")]
+  },
+  {
+    code: "RWC",
+    name: "Roddickton Generation Sites, Historic",
+    status: "reported",
+    facts: [["2001 woodchip capacity", "5,000 kW"], ["Woodchip-site diesel units", "450 kW black-start diesel; one 850 kW mobile diesel"], ["Roddickton Diesel Plant", "2,350 kW installed capacity"], ["Roddickton Mini-hydro Plant", "425 kW"], ["2004 disposition", "The woodchip and diesel plant abandonments were recorded; two 850 kW mobile units were relocated to St. Anthony"], ["69 kV circuit", "TL257 to St. Anthony Airport"]],
+    diagram: {
+      label: "2001 pre-interconnection capacity / 1989 TL257 connection",
+      buses: [{ id: "b1", label: "St. Anthony / Roddickton system", voltage: "69 kV" }],
+      transformers: [],
+      circuits: [{ label: "TL257", destination: "St. Anthony Airport", bus: "b1", destinationCode: "SAA" }],
+      generators: [{ label: "Woodchip", rating: "5,000 kW", bus: "b1" }, { label: "Diesel plant", rating: "2,350 kW", bus: "b1" }, { label: "Mini-hydro", rating: "425 kW", bus: "b1" }]
+    },
+    sources: [sourceRef("nlh-gnp-generation-2001", "physical PDF pp. 3 to 4"), sourceRef("pub-roddickton-generation-2004", "physical PDF pp. 1 and 11")]
   },
   {
     code: "HAW",

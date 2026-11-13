@@ -118,6 +118,30 @@ test("Deer Lake Power separates the 60 Hz generating group from the frequency co
   assert.ok(dlp.sources.some((source) => source.sourceId === "nlh-near-term-generation-2017" && source.pages.includes("61")));
 });
 
+test("Great Northern Peninsula generation records separate current backup from retired sites", () => {
+  const stAnthony = islandTerminalRecords.find((record) => record.code === "SAD");
+  assert.ok(stAnthony);
+  assert.deepEqual(stAnthony.diagram.generators, [{ label: "Diesel plant", rating: "9.7 MW", bus: "b1" }]);
+  assert.deepEqual(stAnthony.diagram.circuits, [{ label: "TL261", destination: "St. Anthony Airport", bus: "b1", destinationCode: "SAA" }]);
+  assert.match(stAnthony.facts.flat().join(" "), /8,850 kW.*850 kW mobile/i);
+  assert.ok(stAnthony.sources.some((source) => source.sourceId === "nlh-planning-2024" && source.pages.includes("42")));
+
+  const roddickton = islandTerminalRecords.find((record) => record.code === "RWC");
+  assert.ok(roddickton);
+  assert.deepEqual(roddickton.diagram.generators.map(({ label, rating }) => ({ label, rating })), [
+    { label: "Woodchip", rating: "5,000 kW" },
+    { label: "Diesel plant", rating: "2,350 kW" },
+    { label: "Mini-hydro", rating: "425 kW" }
+  ]);
+  assert.match(roddickton.facts.flat().join(" "), /450 kW black-start.*850 kW mobile/i);
+  assert.match(roddickton.facts.flat().join(" "), /abandonments.*relocated to St\. Anthony/i);
+  assert.ok(roddickton.sources.some((source) => source.sourceId === "pub-roddickton-generation-2004" && source.pages.includes("11")));
+
+  const airport = islandTerminalRecords.find((record) => record.code === "SAA");
+  assert.ok(airport.diagram.circuits.some((circuit) => circuit.label === "TL257" && circuit.destinationCode === "RWC"));
+  assert.ok(airport.diagram.circuits.some((circuit) => circuit.label === "TL261" && circuit.destinationCode === "SAD"));
+});
+
 test("plant-assignment records cite physical PDF page 80", () => {
   for (const code of ["USL", "GRC", "CAT", "HLA"]) {
     const record = islandTerminalRecords.find((entry) => entry.code === code);
@@ -191,7 +215,7 @@ test("western and northern rural station records retain filed transformation and
     PBR: ["138/66 kV", ["TL259", "TL241", "TL262"]],
     PLP: ["138/12.5 kV", ["TL241", "TL244"]],
     BRC: ["138/12.5 kV", ["TL244", "TL256"]],
-    SAA: ["138/69 kV", ["TL256", "TL257B", "TL261"]],
+    SAA: ["138/69 kV", ["TL256", "TL257", "TL257B", "TL261"]],
     HAW: ["66/12.5 kV", ["TL221"]],
     HOW: ["7.5/10/12.5 MVA", ["TL245", "TL243", "TL224", "TL251"]],
     SBR: ["138/25 kV", ["TL222", "TL222"]],

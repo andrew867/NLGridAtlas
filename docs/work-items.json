@@ -466,6 +466,18 @@
       "notes": "The station record uses the 2013 system one-line, the 2017 generation supply table, the 2018 industrial-customer asset review, and PUB-NLH-309. It shows DLPG1-7 at the filed 81.1 MW combined rating, L1 to Massey Drive, and TL225 to Deer Lake. The 18.0 MW frequency-converter entry remains separate. Generator-by-generator ratings and a current plant switchgear one-line were not located."
     },
     {
+      "id": "ISL-016",
+      "title": "Add Great Northern Peninsula backup and historic generation records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Connect the St. Anthony backup plant and retired Roddickton generation sites to their filed capacities, circuit interfaces, and dated disposition records.",
+      "dependencies": ["ISL-014"],
+      "completion_evidence": ["research/GNP_GENERATION_HISTORY.md", "src/data.js", "src/island-backbone.js", "tests/terminal-diagram.test.js"],
+      "blocker": null,
+      "notes": "IC-270 physical PDF pp. 3 to 4 establish the pre-interconnection generating capacities and the TL257 and TL261 line records. Order P.U. 34 (2004) physical PDF pp. 1 and 11 records the Roddickton plant abandonments and relocation of two 850 kW mobile units to St. Anthony. The 2024 Annual Planning Assessment physical PDF p. 42 provides the current filed 9.7 MW St. Anthony backup capacity."
+    },
+    {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,

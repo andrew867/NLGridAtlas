@@ -132,9 +132,11 @@ const stationTargets = {
   "Oxen Pond": { href: "#terminal-opd" },
   "Peter's Barron": { href: "#hydro-terminal-browser", code: "PBR" },
   "Plum Point": { href: "#hydro-terminal-browser", code: "PLP" },
+  "Roddicktown Wood Chip": { href: "#hydro-terminal-browser", code: "RWC" },
   "South Brook": { href: "#hydro-terminal-browser", code: "SBR" },
   "Soldiers Pond": { href: "#hydro-terminal-browser", code: "SDP" },
   "St. Anthony Airport": { href: "#hydro-terminal-browser", code: "SAA" },
+  "St. Anthony Diesel Plant": { href: "#hydro-terminal-browser", code: "SAD" },
   Stephenville: { href: "#hydro-terminal-browser", code: "STV" },
   "Stoney Brook": { href: "#hydro-terminal-browser", code: "STB" },
   Sunnyside: { href: "#hydro-terminal-browser", code: "SUN" },
@@ -280,7 +282,7 @@ function stationDetail(name) {
   const circuitList = circuits.map((line) => `<button type="button" data-island-circuit-select="${escapeHtml(line.circuit)}"><strong>${escapeHtml(line.circuit)}</strong><span>${line.voltage_kv} kV</span></button>`).join("");
   return `
     <span class="profile-label">SELECTED STATION OR TAP</span>
-    <h4>${escapeHtml(name)}</h4>
+    <h4>${escapeHtml(labelOverrides[name] || name)}</h4>
     <p>${circuits.length} filed circuit designation${circuits.length === 1 ? "" : "s"} at this point.</p>
     <div class="island-connected-circuits">${circuitList}</div>
     ${stationLink(name)}
