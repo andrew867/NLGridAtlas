@@ -39,6 +39,8 @@ The same filed records establish data for circuits that are outside the PUB-NP-0
 
 The interactive island schematic adds TL235, TL247, TL248, and TL269 through a separate source-specific layer. The original PUB-NP-084 assessment asset list remains unchanged at 58 circuits.
 
+TL235 opens a dedicated Grand Falls Frequency Converter record. TL247 links the Cat Arm record to Deer Lake. These links use the circuit-specific Hydro records rather than the PUB-NP-084 assessment list.
+
 ## Sources
 
 1. [CA-NLH-048, Transmission Facilities Connected to Generating Stations](http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Depreciation/files/rfi/CA-NLH-048.pdf), physical PDF p. 1.

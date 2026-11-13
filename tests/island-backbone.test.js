@@ -64,6 +64,7 @@ test("island map generation nodes open their individual records", () => {
   assert.equal(islandStationTargets["Upper Salmon"].code, "USL");
   assert.equal(islandStationTargets["Granite Canal"].code, "GRC");
   assert.equal(islandStationTargets["Hinds Lake"].code, "HLA");
+  assert.equal(islandStationTargets["Grand Falls Frequency Converter"].code, "GFC");
 });
 
 test("Soldiers Pond opens its converter-station record", () => {

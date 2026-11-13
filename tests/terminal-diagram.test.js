@@ -87,11 +87,22 @@ test("four hydro generating stations have individual sourced records", () => {
   }
 });
 
-test("Cat Arm TL247 remains unlinked until its opposite endpoint is established", () => {
+test("Cat Arm TL247 opens the documented Deer Lake endpoint", () => {
   const catArm = islandTerminalRecords.find((record) => record.code === "CAT");
   const html = renderTerminalDiagram(catArm.diagram, escapeHtml);
-  assert.doesNotMatch(html, /data-island-circuit="TL247"/);
-  assert.match(html, />TL247</);
+  assert.match(html, /data-hydro-terminal-record="DLK"/);
+  assert.match(html, /Deer Lake/);
+});
+
+test("Grand Falls Frequency Converter has a distinct TL235 terminal record", () => {
+  const converter = islandTerminalRecords.find((record) => record.code === "GFC");
+  assert.ok(converter);
+  assert.equal(converter.name, "Grand Falls Frequency Converter");
+  assert.deepEqual(converter.diagram.circuits, [
+    { label: "TL235", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }
+  ]);
+  assert.match(converter.facts.flat().join(" "), /0\.620 km.*322\.2 MVA.*86\.1 MVA.*64\.3 MVA/);
+  assert.ok(converter.sources.every((source) => source.pages));
 });
 
 test("plant-assignment records cite physical PDF page 80", () => {

@@ -165,6 +165,7 @@ Updated: 2026-11-13
 - Added Trepassey with its radial 95L supply, current TRP-T1 record, sole TRP-01 feeder, conductor and route record, filed reliability scope, Cape Race service reduction, and the filed 2026 to 2028 95L rebuild schedule.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 - Added Sunnyside as one combined Hydro terminal and Newfoundland Power distribution record. The January 2015 operating diagram establishes T1, T4, SUN-T5, both transmission buses, SUN-01, and SUN-03. The March 2014 inspection sheets identify the distribution breaker, recloser, regulator, and transformer equipment, while the 2027 register supplies SUN-T5's current fleet value and 2026 forecast.
+- Added TL235 as a dedicated Grand Falls Frequency Converter record and connected Cat Arm TL247 to its documented Deer Lake endpoint.
 
 ## Active work
 

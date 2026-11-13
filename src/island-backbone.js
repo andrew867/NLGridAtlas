@@ -78,7 +78,7 @@ const stationTargets = {
   "Come By Chance": { href: "#hydro-terminal-browser", code: "CBC" },
   "Deer Lake": { href: "#hydro-terminal-browser", code: "DLK" },
   Doyles: { href: "#hydro-terminal-browser", code: "DOY" },
-  "Grand Falls Frequency Converter": { href: "#hydro-terminal-browser", code: "GFS" },
+  "Grand Falls Frequency Converter": { href: "#hydro-terminal-browser", code: "GFC" },
   "English Harbour West": { href: "#hydro-terminal-browser", code: "EHW" },
   "Grandy Brook": { href: "#hydro-terminal-browser", code: "GRB" },
   Hardwoods: { href: "#terminal-hwd" },

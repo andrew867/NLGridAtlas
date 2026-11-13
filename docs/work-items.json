@@ -331,7 +331,7 @@
       "dependencies": ["ISL-001"],
       "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "src/island-backbone.js", "tests/terminal-diagram.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "Upper Salmon, Granite Canal, Cat Arm, and Hinds Lake now have individual records with filed plant ratings, energy capability, and documented transmission connections. Cat Arm TL247 is shown without a navigation link because the searched records did not establish its opposite endpoint."
+      "notes": "Upper Salmon, Granite Canal, Cat Arm, and Hinds Lake have individual records with filed plant ratings, energy capability, and documented transmission connections. The separate generation collection layer establishes Cat Arm TL247 to Deer Lake, so the circuit now opens the Deer Lake record."
     },
     {
       "id": "ISL-005",
@@ -415,7 +415,7 @@
       "dependencies": ["ISL-001", "ISL-010"],
       "completion_evidence": ["research/derived/generation-collection-lines.json", "research/GENERATION_COLLECTION_230KV_ENGINEERING.md", "src/island-backbone.js", "tests/generation-collection-lines.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "The schematic now contains 62 circuit designations, 58 from the 2018 assessment asset list and four from separate generation collection records. TL235 carries the 2015 load and 2016 route records. TL247 and TL248 carry the Deer Lake connection history, steel-line ratings, planning loads, and route lengths. TL269 separates the 2016 post-HVDC model from the 2017 reported in-service state."
+      "notes": "The schematic contains 62 circuit designations, 58 from the 2018 assessment asset list and four from separate generation collection records. TL235 carries the 2015 load and 2016 route records and opens a dedicated Grand Falls Frequency Converter record. TL247 and TL248 carry the Deer Lake connection history, steel-line ratings, planning loads, and route lengths. Cat Arm TL247 now links to Deer Lake. TL269 separates the 2016 post-HVDC model from the 2017 reported in-service state."
     },
     {
       "id": "GEN-001",

@@ -1234,7 +1234,7 @@ export const sources = [
     year: 2015,
     organization: "NL Hydro",
     title: "PUB-NLH-318, Island Transmission System Design History",
-    topics: ["Bottom Brook", "Buchans", "Stony Brook", "Bay d'Espoir", "Sunnyside", "Western Avalon", "TL209", "TL211", "TL233", "ring bus", "system history"],
+    topics: ["Bottom Brook", "Buchans", "Stony Brook", "Bay d'Espoir", "Sunnyside", "Western Avalon", "Deer Lake", "TL209", "TL211", "TL233", "TL247", "TL248", "ring bus", "system history"],
     pages: "physical PDF pp. 1 to 5",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
@@ -5690,6 +5690,30 @@ export const islandTerminalRecords = [
     sources: [sourceRef("gra-2013-v2", "physical PDF p. 80")]
   },
   {
+    code: "GFC",
+    name: "Grand Falls Frequency Converter",
+    status: "verified",
+    facts: [
+      ["230 kV circuit", "TL235 to Stony Brook"],
+      ["2016 filed route length", "0.620 km"],
+      ["2015 and 2016 winter rating", "322.2 MVA"],
+      ["2015 anticipated peak", "86.1 MVA"],
+      ["2015 anticipated average", "64.3 MVA"],
+      ["Function", "Hydro identified TL235 as the connection for Exploits generation at Grand Falls and Bishop's Falls"]
+    ],
+    diagram: {
+      label: "2015 to 2016 filed TL235 connection",
+      buses: [{ id: "b1", label: "frequency-converter connection", voltage: "230 kV" }],
+      transformers: [],
+      circuits: [{ label: "TL235", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }],
+      generators: []
+    },
+    sources: [
+      sourceRef("nlh-transmission-loads-2015", "physical PDF pp. 2 to 3"),
+      sourceRef("nlh-probabilistic-transmission-2016", "physical PDF p. 60")
+    ]
+  },
+  {
     code: "STV",
     name: "Stephenville Terminal Station",
     status: "verified",
@@ -5922,15 +5946,15 @@ export const islandTerminalRecords = [
     code: "CAT",
     name: "Cat Arm Generating Station",
     status: "verified",
-    facts: [["Plant rating", "127 MW"], ["2001 energy capability", "735 GWh"], ["Transmission line", "TL247, identified in the 2027 capital filing as Cat Arm Transmission Line"]],
+    facts: [["Plant rating", "127 MW"], ["2001 energy capability", "735 GWh"], ["Transmission line", "TL247 to Deer Lake"]],
     diagram: {
       label: "2013 plant rating / filed TL247 connection",
       buses: [{ id: "b1", label: "plant outlet", voltage: "Plant" }],
       transformers: [],
-      circuits: [{ label: "TL247", destination: "Network connection", bus: "b1", link: false }],
+      circuits: [{ label: "TL247", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }],
       generators: [{ label: "Cat Arm", rating: "127 MW", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 13"), sourceRef("nlh-2027-capital", "physical PDF p. 342")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 13"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-generation-transmission-2012", "physical PDF p. 1")]
   },
   {
     code: "HLA",
