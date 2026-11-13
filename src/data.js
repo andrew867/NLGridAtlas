@@ -120,6 +120,16 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
   {
+    id: "np-2025-94l-sct01",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, 94L Rebuild and SCT-01 Relocation",
+    topics: ["94L", "Blaketown", "St. Catherines", "Riverhead", "Trepassey", "SCT-01", "BLK-01", "66 kV", "transmission rebuild", "distribution underbuild"],
+    pages: "physical PDF pp. 32 to 33 and 531 to 541",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
     id: "np-2021-broad-cove-study",
     year: 2021,
     organization: "Newfoundland Power",
@@ -1574,8 +1584,8 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "PUB-NP-276, Distribution Feeder Listing",
-    topics: ["Stamp's Lane", "SLA-05", "Terra Nova", "TNS-01", "feeder voltage", "feeder capacity"],
-    pages: "physical PDF pp. 6 and 15; attachment pp. 4 and 13",
+    topics: ["Stamp's Lane", "SLA-05", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "feeder voltage", "feeder capacity"],
+    pages: "physical PDF pp. 6, 10 and 15; attachment pp. 4, 8 and 13",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-276.pdf"
   },
@@ -14000,6 +14010,116 @@ export const stationProfiles = [
         sourceId: "np-2014-gas-relay-failures",
         pages: "physical PDF p. 236",
         facts: [["BHD-T1", "gas-detect relay failure caused an unplanned service interruption"]]
+      }
+    ]
+  },
+  {
+    code: "SCT",
+    name: "St. Catherines",
+    voltage: "66/25/12.5 kV",
+    circuitRegisterLabel: "2024 REPORTED CORRIDOR",
+    circuitSource: { sourceId: "np-2025-94l-sct01", pages: "physical PDF pp. 531 to 534" },
+    connectedCircuits: [
+      { circuit: "94L", from: "Blaketown", from_code: "BLK", to: "St. Catherines", to_code: "SCT" },
+      { circuit: "94L", from: "St. Catherines", from_code: "SCT", to: "Riverhead", to_code: "RVH" }
+    ],
+    feederRegisterLabel: "2014 FEEDER RECORD",
+    feederRegister: ["SCT-01", "SCT-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2024 corridor with 2027 transformer ratings",
+      buses: [
+        { id: "b1", label: "66 kV bus", voltage: "66 kV" },
+        { id: "b2", label: "25 kV bus", voltage: "25 kV" },
+        { id: "b3", label: "12.5 kV bus", voltage: "12.5 kV" }
+      ],
+      transformers: [
+        { label: "SCT-T1", rating: "6.67 MVA", from: "b1", to: "b2" },
+        { label: "SCT-T2", rating: "4.0 MVA", from: "b2", to: "b3" }
+      ],
+      circuits: [
+        { label: "94L", destination: "Blaketown", bus: "b1", destinationCode: "BLK" },
+        { label: "94L", destination: "Riverhead", bus: "b1", destinationCode: "RVH" },
+        { label: "SCT-01", destination: "25 kV distribution", bus: "b2", link: false },
+        { label: "SCT-02", destination: "12.5 kV distribution", bus: "b3", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2024 REPORTED CORRIDOR",
+      title: "St. Catherines on the 94L radial system",
+      sourceId: "np-2025-94l-sct01",
+      pages: "physical PDF pp. 531 to 534",
+      facts: [
+        ["94L", "66 kV radial line from Blaketown through St. Catherines to Riverhead"],
+        ["Downstream supply", "95L continues from Riverhead to Trepassey"],
+        ["Regional service", "St. Catherines, Riverhead, and Trepassey collectively served approximately 2,500 customers in the filing"],
+        ["2023 completed section", "the 21.5 km Riverhead to St. Catherines rebuild was placed in service in 2023; reported cost was $7.899 million"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [
+        ["SCT-T1", "66/25 kV; 6.67 MVA; 1.70 MVA 2026 forecast"],
+        ["SCT-T2", "25/12.5 kV; 4.00 MVA; 0.98 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2000 TO 2001 STATION CONSTRUCTION",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 195",
+        facts: [
+          ["Station", "complete steel 66 kV and 25 kV substation built in 2000"],
+          ["Transformation", "6.7 MVA at 66/25 kV; 4 MVA at 25/12.5 kV; SCT-T2 asset 200315 installed in 2001"]
+        ]
+      },
+      {
+        label: "2005 TO 2009 STATION WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 208",
+        facts: [
+          ["Recorded work", "voltage regulator replaced in 2005; site improved in 2006; heat tracing replaced in 2008; petro plug added in 2009"]
+        ]
+      },
+      {
+        label: "2014 FEEDER CAPACITY RECORD",
+        sourceId: "np-2014-pub-np-276",
+        pages: "physical PDF p. 10; attachment p. 8",
+        facts: [
+          ["SCT-01", "25 kV; 474 A rating; 356 A winter planning value; 20.5 MVA rating; 15.4 MVA winter planning value; 2.1 MVA forecast"],
+          ["SCT-02", "12.47 kV; 474 A rating; 356 A winter planning value; 10.2 MVA rating; 7.7 MVA winter planning value; 1.0 MVA forecast"]
+        ]
+      },
+      {
+        label: "2025 TO 2026 FILED 94L AND SCT-01 WORK",
+        sourceId: "np-2025-94l-sct01",
+        pages: "physical PDF pp. 32, 538 to 541",
+        facts: [
+          ["Selected route", "revised 94L right-of-way from St. Catherines to Blaketown, primarily roadside along Routes 91, 81, and 100"],
+          ["Filed 2025 scope", "approximately 12.5 km from St. Catherines to about 5 km north of Colinet; SCT-01 underbuild where property constraints require shared structures"],
+          ["Filed 2026 scope", "final 27.5 km along Routes 81 and 100 and the Trans-Canada Highway to Blaketown; BLK-01 underbuild on shared structures"],
+          ["Retirement sequence", "the filing calls for the former St. Catherines to Blaketown section to be decommissioned after the new line is energized"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED 94L SYSTEM AND ROUTE DRAWINGS",
+    referenceSheets: [
+      {
+        title: "94L radial corridor through St. Catherines",
+        image: "./reference-maps/sct-94l-corridor-2025.png",
+        alt: "Filed map showing 94L from Blaketown through St. Catherines to Riverhead and 95L from Riverhead to Trepassey",
+        sourceId: "np-2025-94l-sct01",
+        pages: "physical PDF p. 532"
+      },
+      {
+        title: "Filed revised 94L route between St. Catherines and Blaketown",
+        image: "./reference-maps/sct-94l-revised-route-2025.png",
+        alt: "Filed map comparing the existing 94L route with the revised roadside rebuild route between St. Catherines and Blaketown",
+        sourceId: "np-2025-94l-sct01",
+        pages: "physical PDF p. 539"
       }
     ]
   },

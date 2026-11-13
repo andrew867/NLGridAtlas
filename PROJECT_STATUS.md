@@ -151,6 +151,7 @@ Updated: 2026-11-12
 - Added Terra Nova with its current 124L tap, TNS-01 feeder values, 1973 station structures, 2001 bus addition, current transformer record, and the completed 2022 124L rebuild.
 - Added Trepassey with its radial 95L supply, current TRP-T1 record, sole TRP-01 feeder, conductor and route record, filed reliability scope, Cape Race service reduction, and the filed 2026 to 2028 95L rebuild schedule.
 - Added Riverhead with the filed 94L and 95L arrangement, current RVH-T1 rating, 2016 arcing-fault record, 2017 replacement confirmation, both distribution feeders, RVH-02 conductor and reliability data, and the filed station and feeder drawings.
+- Added St. Catherines with both 94L sections, cascaded 66/25/12.5 kV transformation, separate SCT-01 and SCT-02 voltage records, the completed 2023 Riverhead section, and the filed St. Catherines to Blaketown rebuild route.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work

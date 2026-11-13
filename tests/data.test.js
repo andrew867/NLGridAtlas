@@ -1341,6 +1341,34 @@ test("Riverhead retains the filed 94L and 95L topology, replacement transformer,
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "RVH-T1").forecast_2026_mva, 3.36);
 });
 
+test("St. Catherines closes both 94L sections and retains the cascaded transformer banks", () => {
+  const stCatherines = stationProfiles.find((station) => station.code === "SCT");
+  assert.ok(stCatherines);
+  assert.deepEqual(stCatherines.connectedCircuits.map(({ circuit, from_code, to_code }) => [circuit, from_code, to_code]), [
+    ["94L", "BLK", "SCT"],
+    ["94L", "SCT", "RVH"]
+  ]);
+  assert.deepEqual(stCatherines.feederRegister, ["SCT-01", "SCT-02"]);
+  assert.deepEqual(stCatherines.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "25 kV", "12.5 kV"]);
+  assert.deepEqual(stCatherines.diagram.transformers.map(({ label, rating }) => [label, rating]), [["SCT-T1", "6.67 MVA"], ["SCT-T2", "4.0 MVA"]]);
+  const existingFacts = stCatherines.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = stCatherines.planningRecord.facts.flat().join(" ");
+  const historyFacts = stCatherines.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /66 kV radial line from Blaketown through St\. Catherines to Riverhead/);
+  assert.match(existingFacts, /21\.5 km Riverhead to St\. Catherines rebuild was placed in service in 2023/);
+  assert.match(planningFacts, /SCT-T1 66\/25 kV; 6\.67 MVA; 1\.70 MVA 2026 forecast/);
+  assert.match(planningFacts, /SCT-T2 25\/12\.5 kV; 4\.00 MVA; 0\.98 MVA 2026 forecast/);
+  assert.match(historyFacts, /complete steel 66 kV and 25 kV substation built in 2000/);
+  assert.match(historyFacts, /SCT-01 25 kV; 474 A rating/);
+  assert.match(historyFacts, /SCT-02 12\.47 kV; 474 A rating/);
+  assert.match(historyFacts, /12\.5 km from St\. Catherines/);
+  assert.match(historyFacts, /final 27\.5 km/);
+  assert.equal(stCatherines.referenceSheets[0].pages, "physical PDF p. 532");
+  assert.equal(stCatherines.referenceSheets[1].pages, "physical PDF p. 539");
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "SCT-T1").forecast_2026_mva, 1.7);
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "SCT-T2").forecast_2026_mva, 0.98);
+});
+
 test("Old Perlican retains the radial supply and both published transformer ratings", () => {
   const oldPerlican = stationProfiles.find((station) => station.code === "OPL");
   assert.ok(oldPerlican);

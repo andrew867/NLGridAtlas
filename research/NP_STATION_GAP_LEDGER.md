@@ -529,6 +529,18 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The filed station one-line and RVH-02 service-area drawing are extracted, physical PDF pp. 27 and 350.
 - [ ] No searched record publishes a post-replacement breaker-level one-line. The atlas uses the 2017 filed topology and the separately dated 2027 transformer records.
 
+## St. Catherines station record
+
+- [x] The 2025 filing shows 94L as a 66 kV radial corridor from Blaketown through St. Catherines to Riverhead, with 95L continuing to Trepassey, physical PDF pp. 531 to 532.
+- [x] The same filing reports the 21.5 km Riverhead to St. Catherines rebuild in service in 2023 at a cost of $7.899 million, physical PDF pp. 533 to 534.
+- [x] The historical station table records a complete steel 66/25 kV station built in 2000 and SCT-T2 installed in 2001, physical PDF p. 195.
+- [x] The 2027 fleet table records SCT-T1 at 66/25 kV and 6.67 MVA with a 1.70 MVA forecast, and SCT-T2 at 25/12.5 kV and 4 MVA with a 0.98 MVA forecast, physical PDF p. 550.
+- [x] The 2014 feeder table records SCT-01 at 25 kV and SCT-02 at 12.47 kV, including ampacity, capacity, planning value, and forecast load, physical PDF p. 10; attachment p. 8.
+- [x] The filed revised 94L route follows Routes 91, 81, and 100 and the Trans-Canada Highway. SCT-01 and BLK-01 are underbuilt on shared structures where property constraints require it, physical PDF pp. 538 to 541.
+- [x] The 94L corridor map and selected-route map are extracted, physical PDF pp. 532 and 539.
+- [ ] The searched record gives a filed 2025 to 2026 schedule for the St. Catherines to Blaketown work. A later completion record is required before the atlas labels those scopes complete.
+- [ ] No searched record publishes a breaker-level St. Catherines station one-line. The atlas diagram shows only the documented voltage transformation, feeder voltages, and line connections.
+
 ## Remaining data classes
 
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.
