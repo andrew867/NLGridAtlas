@@ -80,6 +80,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-2017-rvh-transformer",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2017 Supplemental Capital Application, Riverhead Transformer Replacement",
+    topics: ["Riverhead", "RVH-T1", "94L", "95L", "RVH-01", "RVH-02", "66 kV", "12.5 kV", "transformer failure", "portable substation"],
+    pages: "physical PDF pp. 4, 11 and 20 to 27",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital_SUPP_DistLineStLawrence/applications/From%20NP%20-%202017%20Capital%20Budget%20Supplement~ruction%20of%20a%20Distribution%20Line%20for%20the%20St.%20Lawrence%20Fluorspar%20Mine%20-%202017-02-07.PDF"
+  },
+  {
+    id: "np-2017-rvh02",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, RVH-02 Distribution Reliability Initiative",
+    topics: ["Riverhead", "RVH-02", "12.5 kV", "Mall Bay", "Admiral's Beach", "feeder rebuild", "conductor", "reliability"],
+    pages: "physical PDF pp. 301 to 302, 313 and 344 to 350",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
     id: "pu-11-2019-trp01",
     year: 2019,
     organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
@@ -224,7 +244,7 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Milton", "Port Blandford", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PBD-T1", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
+    topics: ["Abrahams Cove", "Garnish", "Milton", "Port Blandford", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PBD-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
     pages: "physical PDF pp. 166, 195 to 198, 201, 203 to 204, 206 to 208 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
@@ -13980,6 +14000,124 @@ export const stationProfiles = [
         sourceId: "np-2014-gas-relay-failures",
         pages: "physical PDF p. 236",
         facts: [["BHD-T1", "gas-detect relay failure caused an unplanned service interruption"]]
+      }
+    ]
+  },
+  {
+    code: "RVH",
+    name: "Riverhead",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2017 FILED ARRANGEMENT",
+    circuitSource: { sourceId: "np-2017-rvh-transformer", pages: "physical PDF pp. 11, 20 and 27" },
+    connectedCircuits: [
+      { circuit: "94L", from: "St. Catherines", from_code: "SCT", to: "Riverhead", to_code: "RVH" },
+      { circuit: "95L", from: "Riverhead", from_code: "RVH", to: "Trepassey", to_code: "TRP" }
+    ],
+    feederRegisterLabel: "2017 FILED ARRANGEMENT",
+    feederRegister: ["RVH-01", "RVH-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2017 topology with 2027 transformer rating",
+      buses: [
+        { id: "b1", label: "66 kV bus", voltage: "66 kV" },
+        { id: "b2", label: "12.5 kV main bus", voltage: "12.5 kV" }
+      ],
+      transformers: [{ label: "RVH-T1", rating: "8.33 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "94L", destination: "St. Catherines", bus: "b1", destinationCode: "SCT" },
+        { label: "95L", destination: "Trepassey", bus: "b1", destinationCode: "TRP" },
+        { label: "RVH-01", destination: "local distribution", bus: "b2", link: false },
+        { label: "RVH-02", destination: "Riverhead, Mall Bay, and Admiral's Beach", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2017 FILED ARRANGEMENT",
+      title: "Riverhead radial transmission and distribution station",
+      sourceId: "np-2017-rvh-transformer",
+      pages: "physical PDF pp. 11, 20 and 27",
+      facts: [
+        ["Transmission", "94L toward St. Catherines and 95L toward Trepassey on the 66 kV bus"],
+        ["Distribution", "RVH-01 and RVH-02 on a 12.5 kV main bus with a transfer bus"],
+        ["Service", "897 customers in Riverhead, Mall Bay, Admiral's Beach, St. Mary's, Gaskiers-Point La Haye, St. Vincent's, St. Stephen's, and Peter's River"],
+        ["2017 drawing", "the filed one-line shows line breaker RVH-95L-B, RVH-T1, secondary voltage regulators, and separate feeder switching to the main and transfer buses"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF pp. 550 and 560",
+      facts: [
+        ["RVH-T1 fleet-table record", "66/25 kV; 8.33 MVA; 3.36 MVA 2026 forecast"],
+        ["RVH-T1 failure-history record", "66/12.5 kV; 8.33 MVA; replacement action in 2017; portable substation required; replacement listed in service"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "1969 TO 1972 STATION HISTORY",
+        sourceId: "np-2017-rvh-transformer",
+        pages: "physical PDF pp. 11 and 20",
+        facts: [
+          ["Construction", "Riverhead was built in 1969 as a transmission and distribution station"],
+          ["Ownership", "Newfoundland Power has owned and operated the station since the 1972 transfer of the Whitbourne-Trepassey system"]
+        ]
+      },
+      {
+        label: "HISTORICAL STRUCTURES AND WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF pp. 195 and 207",
+        facts: [
+          ["Station structures", "6.7 MVA total transformer capacity; wood 66 kV and 12.47 kV structures installed before 1972"],
+          ["Station work", "gate installed in 2005; power fuses replaced in 2006; voltage regulator replaced in 2007"]
+        ]
+      },
+      {
+        label: "OCTOBER TO NOVEMBER 2016 TRANSFORMER FAILURE",
+        sourceId: "np-2017-rvh-transformer",
+        pages: "physical PDF pp. 4, 20 to 23",
+        facts: [
+          ["Condition", "two oil samples showed high acetylene; an internal inspection found charred paper-insulation debris and confirmed an arcing fault"],
+          ["Temporary supply", "Portable Substation No. 1 was installed after RVH-T1 was removed from service on November 6, 2016"],
+          ["Filed replacement", "new transformer with an on-load tap changer, remote monitoring, and SCADA control; the former regulator bank was to be repurposed"],
+          ["Recorded result", "the 2027 failure-history table lists the 8.33 MVA replacement action in 2017 and the transformer in service"]
+        ]
+      },
+      {
+        label: "2016 RVH-02 ENGINEERING RECORD",
+        sourceId: "np-2017-rvh02",
+        pages: "physical PDF pp. 346 to 348",
+        facts: [
+          ["Feeder", "12.5 kV; approximately 153 customers; 29.5 km total; tie to RVH-01 for permanent and temporary transfers"],
+          ["Route", "from Riverhead through Mall Bay, then 4.8 km cross-country to Admiral's Beach and south to the Marine Centre"],
+          ["Conductor", "4/0 AASC main trunk; two three-phase taps and three single-phase taps using #2 ACSR"],
+          ["Filed work", "reframe the 4.8 km Mall Bay to Admiral's Beach section, replace anchors and guys, and replace poles as required; 60 structures identified"]
+        ]
+      },
+      {
+        label: "2011 TO 2015 RVH-02 RELIABILITY RECORD",
+        sourceId: "np-2017-rvh02",
+        pages: "physical PDF pp. 301, 305 to 306 and 347",
+        facts: [
+          ["Five-year average", "153 customers; SAIFI 4.20; SAIDI 6.24; CHIKM 29; CIKM 5"],
+          ["Failure record", "failed insulators, conductor ties, and crossarms were concentrated on the Mall Bay to Admiral's Beach section"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED STATION AND FEEDER DRAWINGS",
+    referenceSheets: [
+      {
+        title: "Riverhead station single-line before RVH-T1 replacement",
+        image: "./reference-maps/rvh-2017-single-line.png",
+        alt: "Filed Riverhead station single-line showing 94L, 95L, RVH-T1, the voltage regulators, the 12.5 kV main and transfer buses, RVH-01, and RVH-02",
+        sourceId: "np-2017-rvh-transformer",
+        pages: "physical PDF p. 27"
+      },
+      {
+        title: "RVH-02 service area and filed rebuild section",
+        image: "./reference-maps/rvh-02-2017-service-area.png",
+        alt: "Filed RVH-02 route from Riverhead through Mall Bay to Admiral's Beach, with the 4.8 kilometre rebuild section",
+        sourceId: "np-2017-rvh02",
+        pages: "physical PDF p. 350"
       }
     ]
   },

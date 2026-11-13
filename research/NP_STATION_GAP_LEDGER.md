@@ -515,6 +515,20 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [ ] The searched records do not establish completion of the filed 2017 to 2018 TRP-01 rebuild. The atlas labels the work as filed scope.
 - [ ] The searched records do not provide a current breaker-level station one-line or feeder protection arrangement.
 
+## Riverhead station record
+
+- [x] The 2017 filing identifies Riverhead as a transmission and distribution station built in 1969. Its 66 kV bus connects 94L toward St. Catherines and 95L toward Trepassey, physical PDF pp. 11, 20 and 27.
+- [x] The filed one-line identifies RVH-01 and RVH-02 on 12.5 kV main and transfer buses, secondary voltage regulators, and line breaker RVH-95L-B, physical PDF p. 27.
+- [x] Two oil samples in October and November 2016 showed high acetylene. An internal inspection found charred paper-insulation debris, and RVH-T1 was removed from service on November 6, 2016, physical PDF pp. 4 and 20 to 23.
+- [x] Portable Substation No. 1 carried the load while a replacement with an on-load tap changer, remote monitoring, and SCADA control was procured, physical PDF pp. 20 to 23.
+- [x] The 2027 failure-history table records an 8.33 MVA replacement action in 2017 and lists the replacement in service, physical PDF p. 560.
+- [x] The current fleet table records RVH-T1 at 8.33 MVA with a 3.36 MVA 2026 forecast, physical PDF p. 550.
+- [x] The fleet table labels the unit 66/25 kV while the failure-history table labels it 66/12.5 kV. The atlas retains both dated records, physical PDF pp. 550 and 560.
+- [x] The 2016 RVH-02 study records a 12.5 kV, 29.5 km feeder serving approximately 153 customers, with a tie to RVH-01 and a 4/0 AASC main trunk, physical PDF p. 346.
+- [x] The filed RVH-02 work covers 60 structures on the 4.8 km cross-country section between Mall Bay and Admiral's Beach, physical PDF pp. 347 to 348.
+- [x] The filed station one-line and RVH-02 service-area drawing are extracted, physical PDF pp. 27 and 350.
+- [ ] No searched record publishes a post-replacement breaker-level one-line. The atlas uses the 2017 filed topology and the separately dated 2027 transformer records.
+
 ## Remaining data classes
 
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.

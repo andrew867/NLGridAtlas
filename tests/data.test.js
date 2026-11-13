@@ -1315,6 +1315,32 @@ test("Trepassey retains its radial supply, sole feeder, conductor record, and Ca
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "TRP-T1").forecast_2026_mva, 2.49);
 });
 
+test("Riverhead retains the filed 94L and 95L topology, replacement transformer, and RVH-02 record", () => {
+  const riverhead = stationProfiles.find((station) => station.code === "RVH");
+  assert.ok(riverhead);
+  assert.deepEqual(riverhead.connectedCircuits.map(({ circuit, from_code, to_code }) => [circuit, from_code, to_code]), [
+    ["94L", "SCT", "RVH"],
+    ["95L", "RVH", "TRP"]
+  ]);
+  assert.deepEqual(riverhead.feederRegister, ["RVH-01", "RVH-02"]);
+  assert.deepEqual(riverhead.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "12.5 kV"]);
+  assert.deepEqual(riverhead.diagram.transformers.map(({ label, rating }) => [label, rating]), [["RVH-T1", "8.33 MVA"]]);
+  const existingFacts = riverhead.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = riverhead.planningRecord.facts.flat().join(" ");
+  const historyFacts = riverhead.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /94L toward St\. Catherines and 95L toward Trepassey/);
+  assert.match(existingFacts, /12\.5 kV main bus with a transfer bus/);
+  assert.match(planningFacts, /66\/25 kV; 8\.33 MVA; 3\.36 MVA 2026 forecast/);
+  assert.match(planningFacts, /66\/12\.5 kV; 8\.33 MVA; replacement action in 2017/);
+  assert.match(historyFacts, /high acetylene/);
+  assert.match(historyFacts, /Portable Substation No\. 1/);
+  assert.match(historyFacts, /29\.5 km total; tie to RVH-01/);
+  assert.match(historyFacts, /4\/0 AASC main trunk/);
+  assert.equal(riverhead.referenceSheets[0].pages, "physical PDF p. 27");
+  assert.equal(riverhead.referenceSheets[1].pages, "physical PDF p. 350");
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "RVH-T1").forecast_2026_mva, 3.36);
+});
+
 test("Old Perlican retains the radial supply and both published transformer ratings", () => {
   const oldPerlican = stationProfiles.find((station) => station.code === "OPL");
   assert.ok(oldPerlican);
