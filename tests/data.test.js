@@ -2098,6 +2098,8 @@ test("Stephenville separates retained equipment from the modelled retirement cas
   const conditionFacts = stephenville.engineeringRecord.facts.flat().join(" ");
   const planningFacts = stephenville.planningRecord.facts.flat().join(" ");
   const historyFacts = stephenville.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.equal(typeof stephenville.planningRecord.label, "string");
+  assert.ok(stephenville.historyRecords.every(({ label }) => typeof label === "string"));
   assert.match(conditionFacts, /Two 25 MW Rolls-Royce Olympus C-type 2022 gas turbines/);
   assert.match(conditionFacts, /Shared 63\.5 MVA generator/);
   assert.match(conditionFacts, /Consider retirement or replacement in 2040/);
@@ -2110,6 +2112,33 @@ test("Stephenville separates retained equipment from the modelled retirement cas
 
   const terminal = islandTerminalRecords.find((station) => station.code === "STV");
   assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL209", "401L", "405L", "407L"]);
+});
+
+test("Bottom Brook separates the commissioned station from the cancelled T4 scope", () => {
+  const bottomBrook = stationProfiles.find((station) => station.code === "BBK");
+  assert.ok(bottomBrook);
+  assert.deepEqual(bottomBrook.connectedCircuits.map(({ circuit }) => circuit), ["TL209", "TL211", "TL233", "TL269", "Line 1", "Line 2", "TL214", "TL250", "400L"]);
+  assert.deepEqual(bottomBrook.feederRegister, []);
+  assert.deepEqual(bottomBrook.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "138 kV", "66 kV"]);
+  assert.deepEqual(bottomBrook.diagram.transformers.map(({ label, rating }) => [label, rating]), [["T1", "25/33.3/41.7 MVA"], ["T3", "25/33.3/41.7 MVA"], ["T2", "15/20/25 MVA"]]);
+  assert.deepEqual(bottomBrook.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 3", "physical PDF p. 5"]);
+
+  const commissionedFacts = bottomBrook.engineeringRecord.facts.flat().join(" ");
+  const currentFacts = bottomBrook.planningRecord.facts.flat().join(" ");
+  const historyFacts = bottomBrook.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.equal(typeof bottomBrook.planningRecord.label, "string");
+  assert.ok(bottomBrook.historyRecords.every(({ label }) => typeof label === "string"));
+  assert.match(commissionedFacts, /New Terminal Station 2 commissioned for TL269 and the Maritime Link/);
+  assert.match(commissionedFacts, /Four old air-blast breakers were removed/);
+  assert.match(currentFacts, /Close 138 kV bus tie B2B3/);
+  assert.match(currentFacts, /Emera station-service load from T1 only/);
+  assert.match(currentFacts, /T4 remains a future planning case/);
+  assert.match(historyFacts, /Concrete pads and oil containment for two transformers/);
+  assert.match(historyFacts, /Most remaining work was cancelled/);
+  assert.match(historyFacts, /Bottom Brook Terminal Station 1, built 1968/);
+
+  const terminal = islandTerminalRecords.find((station) => station.code === "BBK");
+  assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL211", "TL233", "TL269", "Line 1", "Line 2", "TL209", "TL214", "TL250", "400L"]);
 });
 
 test("Buchans joins the terminal transformer and Newfoundland Power distribution record", () => {

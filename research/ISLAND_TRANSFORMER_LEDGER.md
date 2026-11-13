@@ -32,7 +32,7 @@ Work item: `ISL-006`
 | Holyrood | T1, T2, T3, T6, T7, T8 | Historical winding voltages, cooling ratings and impedances; T2, T7 and T8 replacement records | 2013 GRA Volume II, physical PDF p. 663; 2022 T2 final report, PDF pp. 5 to 13; 2024 T7 completion record, physical PDF p. 332 |
 | Sunnyside | T1, T4 | 2014 replacement filing, T8 relocation record and later model ratings | 2014 replacement application, physical PDF pp. 14 to 19 and 29 to 34; Liberty supply review, physical PDF pp. 228 to 229 |
 | Buchans | T1 | 230/66 kV, 40/53.3/66.6 MVA replacement specification and former-unit history | 2018 capital filing, physical PDF pp. 453 and 458 to 460 |
-| Bottom Brook | T4, former T2 | 40/53.3/66.7 MVA T4; 15/20/25 MVA former T2 retained as GT1 | 2021 capital filing, physical PDF pp. 500 and 510 to 519 |
+| Bottom Brook | T1, T2, T3; proposed T4 | T1 and T3 are 25/33.3/41.7 MVA, 230/138-6.9 kV; T2 is 15/20/25 MVA, 138/66 kV; the 40/53.3/66.7 MVA T4 remained proposed when most remaining project scope was cancelled | NP-NLH-001, physical PDF pp. 1 to 5; 2026 Annual Planning Assessment, physical PDF pp. 13, 15 and 18; PUB-NLH-030, physical PDF pp. 1 to 2 |
 | Stephenville | T3 | 230/66 kV, 40/53.3/66.6 MVA | 2021 capital filing, physical PDF pp. 500 and 510 to 519 |
 
 ## Deferred evidence targets
@@ -42,7 +42,7 @@ Work item: `ISL-006`
 | Bay d'Espoir current station arrangement | The located station 1 drawing is dated 1998 and the station 2 drawing is dated 2013; a later complete revision remains open |
 | Come By Chance current station arrangement | The transformer ratings, customer assignment and 2014 bus arrangement are documented; a later complete station one-line remains open |
 | Remaining rural stations | Transformer designations, manufacture dates, in-service dates, impedances and current one-lines |
-| Bottom Brook and Stephenville | Post-construction one-line confirming the final 2021 project arrangement |
+| Bottom Brook | Post-2024 one-line confirming the completed bus, grounding, disconnect and protection work from the partially completed project |
 | Grand Falls and Bishop's Falls | Current generator-step-up and station-bus arrangement |
 
 The archive search located Grand Falls T1 and T2 oil-reclamation records and maintenance inventories, but not a later source that establishes the requested nameplate ratings or a current station one-line. No suitable Bishop's Falls nameplate or current station drawing was located.

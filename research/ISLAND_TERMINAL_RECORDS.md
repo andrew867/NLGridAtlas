@@ -11,7 +11,7 @@ The terminal browser uses dated connection diagrams. It does not present a break
 | Bay d'Espoir | 1998 station 1 one-line, 2013 station 2 one-line and 2018 route table | Station 1 unit and GSU ratings; station 2 T7, G7, T10, T11 and T12 ratings; 592 MW plant assignment; seven filed transmission routes |
 | Buchans | 2018 T1 replacement filing and 2018 route table | Former T1 installed at Massey Drive in 1970 and moved to Buchans in 1998; planned 2019 replacement with the Hardwoods spare; four 230 kV lines, two 66 kV lines |
 | Deer Lake | 2003 system report, 2010 capital filing and 2018 route table | 45/60/75 MVA 230/138 kV transformation, 25/33.3/41.7 MVA 138/66 kV transformation, later 41.6 MVA maximum-rating record, three filed routes |
-| Bottom Brook | 2021 Stephenville retirement study and 2018 route table | T4 addition, former T2 grounding role, three 230 kV lines, two 138 kV lines, Newfoundland Power 400L |
+| Bottom Brook | 2017 commissioning record, 2019 T4 planning drawings, 2024 project closeout and 2026 planning assessment | Commissioned Terminal Station 2 ring bus; T1 and T3 at 230/138 kV; T2 at 138/66 kV; four 230 kV lines; two converter connections; two 138 kV lines; 400L; proposed T4 kept separate from installed equipment |
 | Grand Falls and Bishop's Falls | 2013 system one-line, 2016 Grand Falls 25 kV study and 2027 transformer register | Three generation ratings on the 138 kV network; separate Grand Falls yards; GFS-T1 at 138/66 kV; parallel GFS-T2 and GFS-T3 138/25 kV bank; GFS-T5 at 66/4.2 kV; five 25 kV feeders |
 | Lewisporte and Rattling Brook | 2018 selected conversion one-lines, 2026 Lewisporte supply record and 2027 Rattling Brook station record | Lewisporte supplied by 137L and 147L at 138 kV; Rattling Brook supplied by 136L and 137L through RBK-T3; retained 66 kV, 12.5 kV and 6.9 kV systems; two hydro units and RBK-01 |
 | Massey Drive | 2001 system-additions testimony, 2015 transformer loading response and 2018 route table | 1998 replacement of a 66.7 MVA unit by a 125 MVA unit, T1, T2 and T3 customer assignments, two 230 kV lines |
@@ -35,7 +35,7 @@ The terminal browser uses dated connection diagrams. It does not present a break
 
 - Current breaker-level one-lines for Stony Brook, Bay d'Espoir, Buchans, Deer Lake, Bottom Brook, Massey Drive, Stephenville, and Come By Chance.
 - Later complete station drawings for Bay d'Espoir and Come By Chance.
-- An as-built Bottom Brook and Stephenville drawing showing the portion of the 2021 project placed in service before most remaining work was cancelled.
+- A post-2024 Bottom Brook one-line showing the completed bus foundations, disconnect, grounding, and protection work from the partially completed Stephenville-retirement project.
 - The present Grand Falls and Bishop's Falls bus and generator-step-up arrangement.
 - Transformer ratings, dates, and current breaker arrangements for the added rural station records, deferred after the 2026-11-11 pass.
 - Soldiers Pond converter-transformer nameplate data, filter-bank ratings, current breaker arrangement, and station-service one-line.

@@ -1,6 +1,6 @@
 # NL Grid Atlas project status
 
-Updated: 2026-11-12
+Updated: 2026-11-13
 
 ## Repository and hosting
 
@@ -30,7 +30,7 @@ Updated: 2026-11-12
 - Added voltage filters, circuit records, station connection records, and links to the existing terminal records.
 - Verified one detail panel, circuit and station selection, filtering, zero browser warnings or errors, and a 390 px layout with no page overflow.
 - Replaced the ten island terminal summary cards with dated connection diagrams and equipment records.
-- Added the filed Sunnyside T1 breaker arrangement, Stony Brook transformer ratings, Buchans T1 replacement rating, Deer Lake transformation ratings, Bottom Brook and Stephenville post-retirement planning arrangement, Massey Drive transformer assignments, and all four Come By Chance capacitor banks.
+- Added the filed Sunnyside T1 breaker arrangement, Stony Brook transformer ratings, Buchans T1 replacement rating, Deer Lake transformation ratings, the commissioned Bottom Brook Terminal Station 2 ring bus, Massey Drive transformer assignments, and all four Come By Chance capacitor banks.
 - Added individual records for Upper Salmon, Granite Canal, Cat Arm, and Hinds Lake with filed plant ratings, energy capability, and documented transmission connections.
 - Corrected the 2013 island plant-assignment source reference from physical PDF p. 663 to physical PDF p. 80. Physical PDF p. 663 remains the Holyrood demolition drawing.
 - Verified Upper Salmon and Cat Arm record rendering at 1440 by 1000 px and 390 by 844 px. The mobile page has no horizontal page overflow; the one-line remains horizontally scrollable inside its own frame.
@@ -42,6 +42,7 @@ Updated: 2026-11-12
 - Added the 1998 Massey Drive 230/66 kV transformer replacement record from the 2001 prefiled testimony.
 - Added a dedicated Massey Drive terminal profile with the three current transformer ratings, 2033/34 pre-contingency loads, TL211, TL228, and TL248, the four Newfoundland Power 66 kV circuits, the shared-site ownership record, the 2005 breaker-failure scheme, the 2014 Newfoundland Power modernization, and the completed 2023 fire-protection installation.
 - Rebuilt Stephenville as a combined terminal and retained gas-turbine record. The one-line now includes TL209, 401L, 405L, 407L, T3, T1, and the 63.5 MVA generator. Dated records separate the proposed 2020 removal arrangement, the partially completed and mostly cancelled retirement project, the 2024 synchronous-condenser planning assumption, the 2025 transformer and relay work, the 2032 retirement-case loading model, and the 2026 condition assessment.
+- Rebuilt Bottom Brook around the commissioned Terminal Station 2 ring bus and the retained T1, T2, and T3 arrangement. The record separates the 2017 Maritime Link and TL269 commissioning, the proposed T4 drawings, the work completed before the 2024 project closeout, and the 2026 transformer-contingency configuration.
 - Separated the original Holyrood T8 from the later Holyrood T8 model after locating the 2014 relocation record. The original unit entered service in the Sunnyside T1 position by December 2014.
 - Added Buchans T1's 1970 Massey Drive installation, 1998 Buchans relocation, and 2018 replacement plan.
 - Confirmed the replacement Holyrood T8 was installed in 2014 at 75/100/125 MVA.

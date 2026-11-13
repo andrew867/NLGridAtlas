@@ -810,12 +810,52 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2021/NLH2021Capital/applications/From%20NLH%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-08-04.pdf"
   },
   {
+    id: "nlh-bbk-t4-2020",
+    year: 2019,
+    organization: "NL Hydro",
+    title: "NP-NLH-001, Bottom Brook T4 Planning Diagrams",
+    topics: ["Bottom Brook", "Terminal Station 1", "Terminal Station 2", "T1", "T2", "T3", "T4", "230 kV ring bus", "400L", "Maritime Link"],
+    pages: "physical PDF pp. 1 to 5",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2020/NLH2020Capital/rfis/NP-NLH-001.PDF"
+  },
+  {
+    id: "nlh-bbk-ts2-2018",
+    year: 2018,
+    organization: "NL Hydro",
+    title: "Transmission System and Terminal Station Asset Management Execution Report",
+    topics: ["Bottom Brook", "Terminal Station 2", "TL269", "Maritime Link", "230 kV station", "commissioning"],
+    pages: "physical PDF pp. 27, 30 to 31, and 93 to 94",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/From%20NLH%20-%202018%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202018-04-11.PDF"
+  },
+  {
+    id: "nlh-bbk-planning-2026",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "2026 Annual Planning Assessment",
+    topics: ["Bottom Brook", "T1", "T3", "138 kV bus tie", "Emera station service", "transformer contingency"],
+    pages: "physical PDF pp. 13, 15 to 18",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/LAB-NLH-030%20-%20Revision%201%20-%20Redacted.PDF"
+  },
+  {
+    id: "nlh-bbk-capital-2027",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "2027 Capital Budget Application, Bottom Brook Asset Work",
+    topics: ["Bottom Brook", "T1", "T3", "TL214", "protective relays", "fire protection", "control building"],
+    pages: "physical PDF pp. 334 and 600",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
+  },
+  {
     id: "nlh-stv-scope-2025",
     year: 2024,
     organization: "NL Hydro",
     title: "PUB-NLH-030, Stephenville Gas Turbine Retirement Project Scope",
-    topics: ["Stephenville", "Bottom Brook", "gas turbine", "project cancellation", "retirement", "bridging period"],
-    pages: "physical PDF p. 1",
+    topics: ["Stephenville", "Bottom Brook", "gas turbine", "project cancellation", "retirement", "bridging period", "partial completion"],
+    pages: "physical PDF pp. 1 to 2",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NLH2025Capital/responses/PUB-NLH-030.PDF"
   },
@@ -5277,14 +5317,110 @@ export const islandTerminalRecords = [
     code: "BBK",
     name: "Bottom Brook Terminal Station",
     status: "verified",
-    facts: [["T4", "230/66 kV, 40/53.3/66.7 MVA; added for Stephenville backup"], ["Former T2", "15/20/25 MVA unit retained as GT1 to ground the 66 kV system"], ["230 kV circuits", "TL233 to Buchans; TL211 to Massey Drive; TL209 to Stephenville"], ["138 kV circuits", "TL214 to Doyles; TL250 to Grandy Brook"]],
+    facts: [["T1 and T3", "230/138-6.9 kV, 25/33.3/41.7 MVA each"], ["T2", "138/66 kV, 15/20/25 MVA"], ["230 kV circuits", "TL209, TL211, TL233, TL269, and two Maritime Link converter connections"], ["138 kV circuits", "TL214 to Doyles; TL250 to Grandy Brook"], ["66 kV circuit", "400L to Wheelers"], ["T4", "Proposed 230/66 kV addition; most remaining project scope was cancelled in 2024"]],
+    voltage: "230/138/66 kV",
+    circuitRegisterLabel: "2018 FILED ROUTES / 2020 STATION DRAWINGS",
+    circuitSources: [
+      { sourceId: "np-2018-pub-np-084", pages: "physical PDF pp. 24 to 26" },
+      { sourceId: "nlh-bbk-t4-2020", pages: "physical PDF pp. 3 and 5" }
+    ],
+    connectedCircuits: [
+      { circuit: "TL209", from: "Bottom Brook", from_code: "BBK", to: "Stephenville", to_code: "STV" },
+      { circuit: "TL211", from: "Bottom Brook", from_code: "BBK", to: "Massey Drive", to_code: "MAS" },
+      { circuit: "TL233", from: "Bottom Brook", from_code: "BBK", to: "Buchans", to_code: "BUC" },
+      { circuit: "TL269", from: "Bottom Brook", from_code: "BBK", to: "Granite Canal", to_code: "GRC" },
+      { circuit: "Line 1", from: "Bottom Brook", from_code: "BBK", to: "Bottom Brook Converter Station" },
+      { circuit: "Line 2", from: "Bottom Brook", from_code: "BBK", to: "Bottom Brook Converter Station" },
+      { circuit: "TL214", from: "Bottom Brook", from_code: "BBK", to: "Doyles", to_code: "DOY" },
+      { circuit: "TL250", from: "Bottom Brook", from_code: "BBK", to: "Grandy Brook", to_code: "GRB" },
+      { circuit: "400L", from: "Bottom Brook", from_code: "BBK", to: "Wheelers", to_code: "WHE" }
+    ],
+    feederRegisterLabel: "NO DISTRIBUTION FEEDERS",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
     diagram: {
-      label: "2021 proposed terminal upgrades / 2018 routes",
+      label: "2018 commissioned terminal arrangement / 2026 transformer record",
       buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }, { id: "b3", label: "66 kV bus", voltage: "66 kV" }],
-      transformers: [{ label: "T3", rating: "230/138 kV", from: "b1", to: "b2" }, { label: "T4", rating: "40/53.3/66.7 MVA", from: "b1", to: "b3" }, { label: "GT1", rating: "15/20/25 MVA grounding role", from: "b2", to: "b3" }],
-      circuits: [{ label: "TL233", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL211", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL209", destination: "Stephenville", bus: "b1", destinationCode: "STV" }, { label: "TL214", destination: "Doyles", bus: "b2", destinationCode: "DOY" }, { label: "TL250", destination: "Grandy Brook", bus: "b2" }, { label: "400L", destination: "Newfoundland Power 66 kV", bus: "b3" }]
+      transformers: [{ label: "T1", rating: "25/33.3/41.7 MVA", from: "b1", to: "b2" }, { label: "T3", rating: "25/33.3/41.7 MVA", from: "b1", to: "b2" }, { label: "T2", rating: "15/20/25 MVA", from: "b2", to: "b3" }],
+      circuits: [{ label: "TL211", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL233", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL269", destination: "Granite Canal", bus: "b1", destinationCode: "GRC" }, { label: "Line 1", destination: "Bottom Brook Converter", bus: "b1" }, { label: "Line 2", destination: "Bottom Brook Converter", bus: "b1" }, { label: "TL209", destination: "Stephenville", bus: "b1", destinationCode: "STV" }, { label: "TL214", destination: "Doyles", bus: "b2", destinationCode: "DOY" }, { label: "TL250", destination: "Grandy Brook", bus: "b2", destinationCode: "GRB" }, { label: "400L", destination: "Wheelers", bus: "b3", destinationCode: "WHE" }]
     },
-    sources: [sourceRef("nlh-bbk-stv-2021", "physical PDF pp. 500 and 510 to 519"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF p. 36")]
+    engineeringRecord: {
+      date: "2017 COMMISSIONING",
+      title: "Terminal Station 2 and Maritime Link interconnection",
+      sourceId: "nlh-bbk-ts2-2018",
+      pages: "physical PDF pp. 27, 30, and 93 to 94",
+      facts: [
+        ["230 kV station", "New Terminal Station 2 commissioned for TL269 and the Maritime Link"],
+        ["TL269", "Granite Canal to Bottom Brook interconnection completed in 2017"],
+        ["Converter interface", "Two 230 kV connections from Terminal Station 2 to the Bottom Brook converter station"],
+        ["Retired breakers", "Four old air-blast breakers were removed after replacement by the new Emera breakers"],
+        ["Project status", "Interconnection was commissioned and energized in 2017; minor deficiencies did not affect operation"]
+      ]
+    },
+    planningRecord: {
+      label: "2026 PLANNING ASSESSMENT / CURRENT TRANSFORMER AND CONTINGENCY RECORD",
+      sourceId: "nlh-bbk-planning-2026",
+      pages: "physical PDF pp. 13, 15, and 18",
+      facts: [
+        ["T1", "25/33.3/41.7 MVA"],
+        ["T3", "25/33.3/41.7 MVA"],
+        ["Contingency switching", "Close 138 kV bus tie B2B3"],
+        ["Station service", "Terminal Station 1 supplies the Emera station-service load from T1 only"],
+        ["T4 status", "The assessment lists T1 and T3 at Bottom Brook; T4 remains a future planning case rather than installed equipment"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2019 PLANNING DRAWINGS / PROPOSED 230/66 KV T4 ADDITION",
+        sourceId: "nlh-bbk-t4-2020",
+        pages: "physical PDF pp. 1 to 5",
+        facts: [
+          ["T4", "Proposed 230/66 kV, 40/53.3/66.7 MVA transformer connecting Terminal Station 2 to 400L"],
+          ["Proposed source", "Hardwoods or Oxen Pond spare transformer, subject to inspection"],
+          ["T2 option", "Retain the 138/66 kV T2 as a grounding transformer if the spare were used"],
+          ["Study trigger", "Retirement of the Stephenville gas turbine and loss-of-TL209 backup requirement"]
+        ]
+      },
+      {
+        label: "2024 PROJECT CLOSEOUT / PARTIAL CONSTRUCTION AND CANCELLED REMAINING SCOPE",
+        sourceId: "nlh-stv-scope-2025",
+        pages: "physical PDF pp. 1 to 2",
+        facts: [
+          ["Completed at Bottom Brook", "Concrete pads and oil containment for two transformers; one disconnect; foundations and structures for 230 kV and 69 kV buses; partial lighting and grounding upgrades"],
+          ["Protection", "Transformer and line protection work was partially complete and transferred to the protective-relay program"],
+          ["Cancelled scope", "Most remaining work was cancelled when Stephenville gas-turbine retirement was deferred"],
+          ["Unused equipment", "Hydro planned to reassign it, retain it as capital spares, or add it to inventory"]
+        ]
+      },
+      {
+        label: "2027 TO 2028 PROPOSAL / TERMINAL STATION 1 FIRE PROTECTION",
+        sourceId: "nlh-bbk-capital-2027",
+        pages: "physical PDF p. 600",
+        facts: [
+          ["Control building", "Bottom Brook Terminal Station 1, built 1968"],
+          ["Proposed work", "Install fire protection in the 230 kV station"],
+          ["Filed budget", "$652,100, with $73,800 in 2027 and $578,300 in future years"]
+        ]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "2019 Terminal Station 1 drawing with proposed T4 addition",
+        image: "./reference-maps/bottom-brook-2020-ts1-proposed.png",
+        alt: "Bottom Brook Terminal Station 1 drawing showing T1, T2, T3, the 138 and 66 kV buses, 400L, and the proposed T4 addition",
+        sourceId: "nlh-bbk-t4-2020",
+        pages: "physical PDF p. 3"
+      },
+      {
+        title: "2019 Terminal Station 2 ring-bus drawing with proposed T4 bay",
+        image: "./reference-maps/bottom-brook-2020-ts2-proposed.png",
+        alt: "Bottom Brook Terminal Station 2 ring-bus drawing showing TL209, TL211, TL233, TL269, converter Lines 1 and 2, and the proposed T4 bay",
+        sourceId: "nlh-bbk-t4-2020",
+        pages: "physical PDF p. 5"
+      }
+    ],
+    sources: [sourceRef("nlh-bbk-ts2-2018", "physical PDF pp. 27, 30, and 93 to 94"), sourceRef("nlh-bbk-planning-2026", "physical PDF pp. 13, 15, and 18"), sourceRef("nlh-bbk-t4-2020", "physical PDF pp. 1 to 5"), sourceRef("nlh-stv-scope-2025", "physical PDF pp. 1 to 2"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "GFS",
@@ -8384,7 +8520,7 @@ export const stationProfiles = [
       }
     ]
   },
-  ...islandTerminalRecords.filter(({ code }) => code === "STV"),
+  ...islandTerminalRecords.filter(({ code }) => ["BBK", "STV"].includes(code)),
   {
     code: "BUC",
     name: "Buchans",
