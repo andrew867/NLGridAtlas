@@ -2055,7 +2055,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "PUB-NP-081, Distribution Transformer and Feeder Listings",
     topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Grand Beach", "GBE-T1", "GBE-01", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "Placentia Junction", "PJN-T1", "PJN-01", "Quartz", "QTZ-T1", "QTZ-01", "Webbers Cove", "WBC-T1", "WBC-01", "7.2 kV", "12.47 kV", "24.94 kV", "forecast loading"],
-    pages: "physical PDF pp. 3, 5 to 6, 8, 11 and 15 to 16",
+    pages: "physical PDF pp. 3, 5 to 8 and 10 to 20",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-081.PDF"
   },

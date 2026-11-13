@@ -668,7 +668,7 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 ## Remaining data classes
 
 - [x] CA-NP-168 Attachment A provides 109 Newfoundland Power transmission asset descriptions and allocations. Its historical-cost date is December 31, 2022; physical PDF pp. 1 and 3 to 4. The atlas retains the June 2005 map as a separate dated network layer.
-- [ ] Current feeder register. Later capital filings prove additions such as PUL-04, PUL-05, KEN-01, and HWD-09 that are absent from the 2005 list.
+- [x] PUB-NP-081 Attachment B provides 300 unique distribution feeder records with operating voltage, planning and winter capacity, 2024 to 2025 forecast winter peak, and loading against planning capacity; physical PDF pp. 10 to 20. This later planning register is separate from the June 2005 feeder list.
 - [x] All 150 feeder map sheets in CA-NP-020 Attachment B, physical PDF pp. 20 to 169, are extracted and linked to station records. Eight additional route and proposed-recloser drawings are preserved for HWD-08, KEN-01 to KEN-04, VIR-06, GOU-01, and GOU-03. CA-NP-020 has no feeder sheet for HWD-08 or the later additions listed in the feeder-map audit.
 - [ ] Station one-lines that assign feeders to transformer banks and bus sections.
 - [ ] Commissioning and as-built records for replacement transformers.

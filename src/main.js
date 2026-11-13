@@ -8,6 +8,7 @@ import "@fontsource/ibm-plex-mono/400.css";
 import "./styles.css";
 import { components, islandTerminalRecords, sources, stationProfiles, timeline } from "./data.js";
 import handbook from "../research/derived/np-2006-handbook.json";
+import feederRegister2018 from "../research/derived/np-2018-feeder-register.json";
 import transmissionRegister2022 from "../research/derived/np-2022-transmission-register.json";
 import transformerRegister from "../research/derived/np-2027-transformer-register.json";
 import { avalonLabelOffsets, avalonNodePositions } from "./avalon-layout.js";
@@ -540,6 +541,17 @@ function registerRows() {
       search: [line.circuit, line.description, line.allocation, ...(line.endpoint_codes || [])].join(" "),
       sourceUrl: transmissionRegister2022.source.url,
       sourceLabel: `Physical PDF p. ${line.physical_pdf_page}`
+    }));
+  }
+  if (activeRegister === "feeders-2018") {
+    return feederRegister2018.records.map((feeder) => ({
+      key: feeder.feeder,
+      title: `${feeder.region} region; ${feeder.operating_voltage_kv} kV`,
+      detail: `${feeder.forecast_winter_peak_mva} MVA forecast; ${feeder.loading_vs_planning_percent}% of planning capacity`,
+      page: feeder.physical_pdf_page,
+      search: [feeder.feeder, feeder.station_code, feeder.region, feeder.operating_voltage_kv].join(" "),
+      sourceUrl: feederRegister2018.source.url,
+      sourceLabel: `Physical PDF p. ${feeder.physical_pdf_page}`
     }));
   }
   return handbook.transmission_lines.map((line) => ({

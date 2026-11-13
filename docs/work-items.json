@@ -490,6 +490,18 @@
       "notes": "CA-NP-168 physical PDF pp. 1 and 3 to 4 provide 109 unique circuit records. The parsed circuit costs total $186,897,000; with $54,000 undistributed, this reconciles to the published $186,951,000 total. The source states a December 31, 2022 historical-cost date and does not establish voltage, conductor, length, breaker positions, or present energization."
     },
     {
+      "id": "NPREG-002",
+      "title": "Add the PUB-NP-081 distribution feeder register",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Extract the complete 300-row feeder table and present its operating-voltage and 2024 to 2025 planning values as a dated register.",
+      "dependencies": ["ARC-001", "SRC-001"],
+      "completion_evidence": ["research/NP_2018_FEEDER_REGISTER.md", "research/derived/np-2018-feeder-register.json", "scripts/extract_np_2018_feeder_register.py", "tests/np-feeder-register-2018.test.js"],
+      "blocker": null,
+      "notes": "PUB-NP-081 Attachment B physical PDF pp. 10 to 20 contains 108 St. John's, 87 Eastern, and 105 Western feeder rows. All 300 published loading percentages reconcile to forecast winter peak divided by planning capacity within 0.02 percentage point. The values are planning forecasts, not measured peaks."
+    },
+    {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,
