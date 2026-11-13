@@ -1699,6 +1699,27 @@ test("Glovertown separates the former radial tap from the completed loop arrange
   assert.match(historyFacts, /construction and commissioning complete/);
 });
 
+test("Alexander Bay separates the former switchyard from the completed 2022 reconfiguration", () => {
+  const alexanderBay = stationProfiles.find((station) => station.code === "ALX");
+  assert.ok(alexanderBay);
+  assert.deepEqual(alexanderBay.connectedCircuits.map(({ circuit }) => circuit), ["121L", "124L", "124L"]);
+  assert.deepEqual(alexanderBay.feederRegister, []);
+  assert.deepEqual(alexanderBay.diagram.transformers, []);
+  assert.deepEqual(alexanderBay.diagram.circuits.map(({ label, destination }) => [label, destination]), [["121L", "Glovertown"], ["124L", "Gambo"], ["124L", "Terra Nova"]]);
+  assert.deepEqual(alexanderBay.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 346", "physical PDF p. 347"]);
+
+  const existingFacts = alexanderBay.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = alexanderBay.planningRecord.facts.flat().join(" ");
+  const historyFacts = alexanderBay.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /two separately fenced 138 kV air-break transmission switches/);
+  assert.match(existingFacts, /ALX-124L-A2 built in 1983/);
+  assert.match(existingFacts, /ALX-124L-A3 built in 1994/);
+  assert.match(planningFacts, /retire the switchyard/);
+  assert.match(planningFacts, /Gambo to Glovertown becomes 121L/);
+  assert.match(historyFacts, /no breakers at either end of 121L/);
+  assert.match(historyFacts, /undertaken in 2022, completed/);
+});
+
 test("Twillingate combines the completed station work with measured winter voltage", () => {
   const twillingate = stationProfiles.find((station) => station.code === "TWG");
   assert.ok(twillingate);

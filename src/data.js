@@ -374,10 +374,20 @@ export const sources = [
     year: 2021,
     organization: "Newfoundland Power",
     title: "2022 Capital Budget Application, Transmission Line 124L Rebuild",
-    topics: ["124L", "Clarenville", "Port Blandford", "Terra Nova", "Gambo", "Glovertown", "138 kV", "transmission line rebuild"],
+    topics: ["124L", "121L", "Alexander Bay", "ALX", "Clarenville", "Port Blandford", "Terra Nova", "Gambo", "Glovertown", "138 kV", "transmission line rebuild", "switchyard retirement"],
     pages: "physical PDF pp. 343 to 347",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
+    id: "np-2024-ca-np-124-124l",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "CA-NP-124, Transmission Line 124L Completion Record",
+    topics: ["124L", "Alexander Bay", "ALX", "Glovertown", "transmission line rebuild", "completion"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/CA-NP-124.PDF"
   },
   {
     id: "np-2025-pub-np-034",
@@ -5790,6 +5800,93 @@ const filedFeederMapProfiles = [
           ["2016 modernization", "completed switch and relay replacements"],
           ["2016 load growth", "added a 50 MVA power transformer and associated infrastructure"]
         ]
+      }
+    ]
+  },
+  {
+    code: "ALX",
+    name: "Alexander Bay",
+    voltage: "138 kV former switchyard",
+    circuitRegisterLabel: "2021 PRE-REBUILD CONFIGURATION",
+    circuitSources: [
+      { sourceId: "np-2022-124l", pages: "physical PDF pp. 345 to 347" },
+      { sourceId: "np-2014-pub-np-245", pages: "physical PDF p. 2" }
+    ],
+    connectedCircuits: [
+      { circuit: "121L", from: "Alexander Bay", from_code: "ALX", to: "Glovertown", to_code: "GLV" },
+      { circuit: "124L", from: "Gambo", from_code: "GAM", to: "Alexander Bay", to_code: "ALX" },
+      { circuit: "124L", from: "Alexander Bay", from_code: "ALX", to: "Terra Nova", to_code: "TNS" }
+    ],
+    feederRegisterLabel: "NO DISTRIBUTION FEEDERS",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2021 configuration before the 124L rebuild",
+      buses: [{ id: "b1", label: "Alexander Bay switching point", voltage: "138 kV" }],
+      transformers: [],
+      circuits: [
+        { label: "121L", destination: "Glovertown", bus: "b1", destinationCode: "GLV" },
+        { label: "124L", destination: "Gambo", bus: "b1", destinationCode: "GAM" },
+        { label: "124L", destination: "Terra Nova", bus: "b1", destinationCode: "TNS" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2021 PRE-REBUILD RECORD",
+      title: "Alexander Bay 138 kV switchyard",
+      sourceId: "np-2022-124l",
+      pages: "physical PDF pp. 345 to 346",
+      facts: [
+        ["121L", "approximately 5.3 km radial connection from Alexander Bay to Glovertown"],
+        ["Switchyard", "two separately fenced 138 kV air-break transmission switches"],
+        ["ALX-124L-A2", "built in 1983"],
+        ["ALX-124L-A3", "built in 1994"]
+      ]
+    },
+    planningRecord: {
+      label: "2022 FILED RECONFIGURATION",
+      sourceId: "np-2022-124l",
+      pages: "physical PDF pp. 343 and 347",
+      facts: [
+        ["Alexander Bay", "retire the switchyard and remove the two 138 kV switch structures"],
+        ["124L", "extend the rebuilt line directly into Glovertown"],
+        ["Post-rebuild designations", "Gambo to Glovertown becomes 121L; Glovertown to Clarenville remains 124L"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2014 RADIAL-LINE CONTROL RECORD",
+        sourceId: "np-2014-pub-np-245",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["121L", "approximately 5 km between Alexander Bay and Glovertown"],
+          ["Control", "no breakers at either end of 121L; the line could not be remotely controlled"]
+        ]
+      },
+      {
+        label: "2022 REBUILD COMPLETION",
+        sourceId: "np-2024-ca-np-124-124l",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Project status", "undertaken in 2022, completed, and the new transmission line placed in service"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED PRE-REBUILD AND POST-REBUILD CONFIGURATIONS",
+    referenceSheets: [
+      {
+        title: "2021 existing Alexander Bay and Glovertown configuration",
+        image: "./reference-maps/alexander-bay-2021-existing.png",
+        alt: "Filed map of the former Alexander Bay switchyard, 121L to Glovertown, and 124L toward Gambo and Terra Nova, with photographs of switches ALX-124L-A2 and ALX-124L-A3",
+        sourceId: "np-2022-124l",
+        pages: "physical PDF p. 346"
+      },
+      {
+        title: "2022 filed 121L and 124L post-rebuild configuration",
+        image: "./reference-maps/alexander-bay-2022-filed-configuration.png",
+        alt: "Filed post-rebuild map showing 121L from Gambo to Glovertown and 124L from Glovertown toward Terra Nova and Clarenville",
+        sourceId: "np-2022-124l",
+        pages: "physical PDF p. 347"
       }
     ]
   },

@@ -70,6 +70,15 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2015 filing proposed rebuilding 11 km of 400L and all 1.2 km of 404L in 2015, followed by the remaining 11 km of 400L in 2016, using 559.5 AASC conductor, physical PDF p. 560. No completion certificate was located, so the rebuild remains a filed proposal.
 - [x] The filed one-line and route map are retained with the station record, 2015 Capital Budget Application, physical PDF pp. 557 and 569.
 
+## Alexander Bay switchyard record
+
+- [x] The pre-rebuild arrangement had 121L running approximately 5.3 km from Alexander Bay to Glovertown, with Alexander Bay on 124L between Gambo and Terra Nova, 2022 Capital Budget Application, physical PDF pp. 345 to 346.
+- [x] The switchyard had two separately fenced 138 kV air-break switches. ALX-124L-A2 was built in 1983 and ALX-124L-A3 in 1994, physical PDF p. 346.
+- [x] The 2014 operating record identifies no breakers at either end of 121L and no remote control for the line, PUB-NP-245, physical PDF p. 2.
+- [x] The 2022 filed configuration retired Alexander Bay, extended 124L directly into Glovertown, renamed the Gambo to Glovertown section 121L, and retained the Glovertown to Clarenville section as 124L, physical PDF pp. 343 and 347.
+- [x] CA-NP-124 records the 124L rebuild as undertaken in 2022, completed, and the new transmission line in service, physical PDF p. 3.
+- [x] The filed pre-rebuild and post-rebuild geographic configurations are retained with the station record, 2022 Capital Budget Application, physical PDF pp. 346 to 347.
+
 ## Doyles terminal and substation record
 
 - [x] TL214 connects Bottom Brook and Doyles at 138 kV; TL215 connects Doyles and Grand Bay at 66 kV, 2018 island transmission table, physical PDF p. 24.
