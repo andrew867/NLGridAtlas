@@ -2169,9 +2169,9 @@ test("Airport separates the filed design from installed and proposed records", (
 test("Massey Drive separates the customer bank from the Newfoundland Power 66 kV buses", () => {
   const massey = stationProfiles.find((station) => station.code === "MAS");
   assert.ok(massey);
-  assert.deepEqual(massey.connectedCircuits.map(({ circuit }) => circuit), ["TL211", "TL228", "TL248", "351L", "352L", "356L", "357L"]);
+  assert.deepEqual(massey.connectedCircuits.map(({ circuit }) => circuit), ["TL211", "TL228", "TL248", "L1", "L16", "L17", "351L", "352L", "356L", "357L"]);
   assert.deepEqual(massey.feederRegister, []);
-  assert.deepEqual(massey.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "66 kV", "66 kV"]);
+  assert.deepEqual(massey.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "66 kV"]);
   assert.deepEqual(massey.diagram.transformers.map(({ label, rating }) => [label, rating]), [["T1", "75/100/125 MVA"], ["T2", "40/53.3/66.7 MVA"], ["T3", "75/100/125 MVA"]]);
   assert.deepEqual(massey.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 40", "physical PDF p. 238", "physical PDF p. 57"]);
   const siteFacts = massey.engineeringRecord.facts.flat().join(" ");
@@ -2185,9 +2185,11 @@ test("Massey Drive separates the customer bank from the Newfoundland Power 66 kV
   assert.match(historyFacts, /First Hydro 66 kV station selected for the protection scheme/);
   assert.match(historyFacts, /Replace fifteen electromechanical relays.*with four digital relays/);
   assert.match(historyFacts, /fire-protection system was installed/);
+  assert.match(historyFacts, /B5L11-1 and B5L11-2\/L11G were replaced/);
+  assert.match(historyFacts, /Bus B2B3, bus B4, and transformer T2/);
 
   const terminal = islandTerminalRecords.find((station) => station.code === "MAS");
-  assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL211", "TL228", "TL248", "351L", "352L", "356L", "357L"]);
+  assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL248", "TL228", "TL211", "L1", "L16", "L17", "352L", "356L", "351L", "357L"]);
 });
 
 test("Stephenville separates retained equipment from the modelled retirement case", () => {

@@ -586,6 +586,18 @@
       "notes": "The January 2013 storm report, physical PDF pp. 135 and 150 to 151, identifies T1 operation through B1L05 and B1L28 and the L05L33 and L32L33 line positions. Undertaking 73, physical PDF p. 3, lists the air-blast breakers B1L05, L05L33, L28L32 and B1L28. The 2017 transformer-protection study, physical PDF p. 9, confirms T1 already had two-breaker protection. The 2018 industrial-customer asset review identifies TL264 through B2L64; the 2013 restoration record identifies B2L80."
     },
     {
+      "id": "ISL-024",
+      "title": "Reconstruct the Massey Drive split buses and customer interface",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Replace the transformer connection sketch with the filed B1 and B5 230 kV sections, the three named line breakers, the B4 customer bus, the B2 and B3 Newfoundland Power sections, both bus ties, the transformer low-side breakers, and all documented outgoing circuits.",
+      "dependencies": ["ISL-003", "SRC-001"],
+      "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "tests/terminal-diagram.test.js", "tests/data.test.js", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "The 2017 terminal-risk review, physical PDF p. 28, establishes T1 on B1, T2 and T3 on B5, normally closed disconnect B1B5, and breakers B1L48, B1L28 and B5L11. The January 2013 event report establishes low-side breakers B4T1, B2T2 and B3T3. The 2018 industrial-customer report assigns L1, L16 and L17 to B4. The 2017 disconnect register assigns 352L and 356L to B2 and 351L and 357L to B3. CA-NLH-085 establishes that B2B4-1 is closed when supplemental capacity assistance is requested."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

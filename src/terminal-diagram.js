@@ -36,12 +36,21 @@ function transformerSymbol(transformer, index, count, buses, escapeHtml) {
   const crossingMasks = intermediateBuses
     .map((bus) => `<rect class="terminal-bus-crossing-mask" x="${x - 11}" y="${bus.y - 10}" width="22" height="20" />`)
     .join("");
+  const toDirection = to.y > from.y ? 1 : -1;
+  const toBreakerY = to.y - toDirection * 28;
+  const toBreakerMarkup = transformer.toBreaker
+    ? `<g class="terminal-line-breaker terminal-transformer-breaker">
+      <rect x="${x - 7}" y="${toBreakerY - 11}" width="14" height="22" />
+      <text x="${x + 18}" y="${toBreakerY + 4}" text-anchor="start">${escapeHtml(transformer.toBreaker)}</text>
+    </g>`
+    : "";
   return `<g class="terminal-transformer" role="img" aria-label="${escapeHtml(`${transformer.label}, ${transformer.rating}`)}">
     ${crossingMasks}
     <line x1="${x}" y1="${from.y}" x2="${x}" y2="${middle - 28}" />
     <circle cx="${x}" cy="${middle - 13}" r="20" />
     <circle cx="${x}" cy="${middle + 13}" r="20" />
     <line x1="${x}" y1="${middle + 28}" x2="${x}" y2="${to.y}" />
+    ${toBreakerMarkup}
     <text class="terminal-device-name" x="${x}" y="${middle - 82}">${escapeHtml(transformer.label)}</text>
     <text class="terminal-device-rating" x="${x}" y="${middle - 60}">${escapeHtml(transformer.rating)}</text>
   </g>`;
@@ -165,10 +174,10 @@ export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-t
 
   const busMarkup = buses.map((bus) => {
     const lines = bus.segments?.length
-      ? bus.segments.map(({ x, width = 76, label }) => `<line x1="${x - width / 2}" y1="${bus.y}" x2="${x + width / 2}" y2="${bus.y}" />${label ? `<text class="terminal-bus-segment-label" x="${x}" y="${bus.y + 54}">${escapeHtml(label)}</text>` : ""}`).join("")
+      ? bus.segments.map(({ x, width = 76, label, labelOffset = 54 }) => `<line x1="${x - width / 2}" y1="${bus.y}" x2="${x + width / 2}" y2="${bus.y}" />${label ? `<text class="terminal-bus-segment-label" x="${x}" y="${bus.y + labelOffset}">${escapeHtml(label)}</text>` : ""}`).join("")
       : `<line x1="120" y1="${bus.y}" x2="1000" y2="${bus.y}" />`;
-    const tie = bus.tie;
-    const tieMarkup = tie ? (() => {
+    const ties = bus.ties || (bus.tie ? [bus.tie] : []);
+    const tieMarkup = ties.map((tie) => {
       const middle = (tie.fromX + tie.toX) / 2;
       const device = tie.open
         ? `<line class="terminal-bus-tie-blade" x1="${middle - 8}" y1="${bus.y}" x2="${middle + 7}" y2="${bus.y - 13}" />`
@@ -177,13 +186,13 @@ export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-t
         <line x1="${tie.fromX}" y1="${bus.y}" x2="${middle - 8}" y2="${bus.y}" />
         ${device}
         <line x1="${middle + 8}" y1="${bus.y}" x2="${tie.toX}" y2="${bus.y}" />
-        <text x="${middle}" y="${bus.y + 31}">${escapeHtml(tie.label)}</text>
+        <text x="${middle}" y="${bus.y + (tie.labelOffset ?? 31)}">${escapeHtml(tie.label)}</text>
       </g>`;
-    })() : "";
+    }).join("");
     return `
     <g class="terminal-bus terminal-bus-${escapeHtml(bus.kind || "bus")} voltage-${escapeHtml(bus.voltage.replace(/[^0-9]/g, ""))}">
       ${lines}${tieMarkup}
-      <text x="560" y="${bus.y - 17}">${escapeHtml(busDisplayLabel(bus))}</text>
+      ${bus.hideLabel ? "" : `<text x="${bus.labelX ?? 560}" y="${bus.y + (bus.labelOffset ?? -17)}">${escapeHtml(busDisplayLabel(bus))}</text>`}
     </g>`;
   }).join("");
 

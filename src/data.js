@@ -810,6 +810,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%203rd%20Quarter%20Report%20for%20period%20ending%20September%2030%2C%202023%20-%202023-11-20.PDF"
   },
   {
+    id: "nlh-massey-q3-2025",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Q3 2025 Quarterly Regulatory Report, Massey Drive Work",
+    topics: ["Massey Drive", "T1", "B5L11-1", "B5L11-2", "L11G", "protective relays", "disconnect switches"],
+    pages: "physical PDF pp. 36 to 37",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q3%20Report%20for%20period%20ending%20September%202025%20-%20Revision%201%20-%202026-01-06.PDF"
+  },
+  {
     id: "nlh-sunnyside-2014",
     year: 2014,
     organization: "NL Hydro",
@@ -1170,6 +1180,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
   },
   {
+    id: "nlh-massey-storm-2013",
+    year: 2013,
+    organization: "NL Hydro",
+    title: "Report on Three Island System Events in January 2013",
+    topics: ["Massey Drive", "B1L48", "B1L28", "B5L11", "B2T2", "B3T3", "B4T1", "B4", "L1", "L16", "L17"],
+    pages: "physical PDF pp. 135, 198 to 199, and 208",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/3EventsofJan2013.pdf"
+  },
+  {
+    id: "nlh-massey-industrial-2018",
+    year: 2018,
+    organization: "NL Hydro",
+    title: "Review of Industrial Customer Specifically Assigned Assets, Revision 1",
+    topics: ["Massey Drive", "Deer Lake Power", "Corner Brook Pulp and Paper", "B4", "L1", "L16", "L17"],
+    pages: "physical PDF p. 7",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/report/From%20NLH%20-%20Review%20of%20Industrial%20Customer%20Specifically%20Assigned%20Assets%20Report%20-%20Revision%201%20-%202018-03-05.PDF"
+  },
+  {
+    id: "nlh-massey-disconnects-2017",
+    year: 2016,
+    organization: "NL Hydro",
+    title: "2017 Capital Budget Application, Disconnect Switch Replacement Register",
+    topics: ["Massey Drive", "B2", "B3", "B2B3-1", "B2T2-1", "351L", "352L", "356L", "357L"],
+    pages: "physical PDF p. 542",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202016-07-28.PDF"
+  },
+  {
+    id: "nlh-massey-bus-tie-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "CA-NLH-085, Supplemental Capacity Assistance Operating Instruction",
+    topics: ["Massey Drive", "B2B4-1", "66 kV", "bus tie", "supplemental capacity"],
+    pages: "physical PDF p. 10",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/CA-NLH-085.pdf"
+  },
+  {
+    id: "nlh-massey-relays-2027",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "2027 Capital Budget Application, Protection and Control Modernization",
+    topics: ["Massey Drive", "B2B3", "B4", "T2", "protective relays", "planned work"],
+    pages: "physical PDF p. 506",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
+  },
+  {
     id: "nlh-bde-one-lines-2016",
     year: 2015,
     organization: "NL Hydro",
@@ -1364,8 +1424,8 @@ export const sources = [
     year: 2017,
     organization: "NL Hydro",
     title: "Updated Integrated Action Plan, Risk and Reward Review of 230 kV Terminal Stations",
-    topics: ["Stony Brook", "Buchans", "Deer Lake", "230 kV", "ring bus", "B1B2", "B1L31", "B1L35", "B3L47", "B3L48", "TL204", "TL205", "TL231", "TL232", "TL235", "TL247", "TL248", "transformer protection"],
-    pages: "physical PDF pp. 9 to 13, 19, 34, 40 and 42",
+    topics: ["Stony Brook", "Buchans", "Deer Lake", "Massey Drive", "230 kV", "ring bus", "split bus", "B1B2", "B1B5", "B1L31", "B1L35", "B1L48", "B1L28", "B5L11", "B3L47", "B3L48", "TL204", "TL205", "TL211", "TL228", "TL231", "TL232", "TL235", "TL247", "TL248", "transformer protection"],
+    pages: "physical PDF pp. 9 to 13, 19, 28, 34, 40 and 42",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/From%20NLH%20-%20Updated%20Integrated%20Action%20Plan%20-%20Status%20Update%20-%202017-03-03.PDF"
   },
@@ -6515,14 +6575,17 @@ export const islandTerminalRecords = [
     code: "MAS",
     name: "Massey Drive Terminal Station",
     status: "verified",
-    facts: [["1998 transformer replacement", "One 66.7 MVA, 230/66 kV transformer was replaced by a 125 MVA, 230/66 kV transformer"], ["Transformer assignments", "T1 supplies Corner Brook Pulp and Paper; T2 and T3 supply Newfoundland Power"], ["230 kV circuits", "TL211 to Bottom Brook; TL228 to Buchans; TL248 to Deer Lake"], ["Newfoundland Power 66 kV circuits", "351L and 352L to Walbournes; 356L to Humber; 357L to Bayview"], ["2023 work", "Data-alarm system upgrade and 230 kV fire-protection work completed"]],
+    facts: [["230 kV arrangement", "T1 is connected to B1; T2 and T3 are connected to B5; normally closed disconnect B1B5 joins the bus sections"], ["230 kV circuits", "TL248 to Deer Lake through B1L48; TL228 to Buchans through B1L28; TL211 to Bottom Brook through B5L11"], ["Customer 66 kV bus B4", "T1 connects through B4T1; L1 runs to Deer Lake Power; L16 and L17 run to the Corner Brook frequency converter"], ["Newfoundland Power 66 kV buses", "B2 carries 352L to Walbournes and 356L to Humber; B3 carries 351L to Walbournes and 357L to Bayview"], ["Bus ties", "B2B3-1 joins the Newfoundland Power sections; B2B4-1 is closed when supplemental capacity assistance is requested"], ["1998 transformer replacement", "One 66.7 MVA, 230/66 kV transformer was replaced by a 125 MVA, 230/66 kV transformer"], ["2025 completed work", "TL211 disconnects B5L11-1 and B5L11-2/L11G were replaced; T1 protective relays were replaced"]],
     diagram: {
-      label: "2024 ratings and routes / 2014 Newfoundland Power connections",
-      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "customer 66 kV supply", voltage: "66 kV" }, { id: "b3", label: "Newfoundland Power 66 kV buses", voltage: "66 kV" }],
-      transformers: [{ label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" }, { label: "T2", rating: "40/53.3/66.7 MVA", from: "b1", to: "b3" }, { label: "T3", rating: "75/100/125 MVA", from: "b1", to: "b3" }],
-      circuits: [{ label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }, { label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL248", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }, { label: "351L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" }, { label: "352L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" }, { label: "356L", destination: "Humber", bus: "b3", destinationCode: "HUM" }, { label: "357L", destination: "Bayview", bus: "b3", destinationCode: "BVS" }]
+      label: "2013 operating evidence / 2017 disconnect register / 2024 transformer ratings",
+      buses: [
+        { id: "b1", label: "split bus B1 / B5", voltage: "230 kV", hideLabel: true, segments: [{ x: 350, width: 460, label: "B1 / 230 kV", labelOffset: -18 }, { x: 800, width: 400, label: "B5 / 230 kV", labelOffset: -18 }], ties: [{ fromX: 580, toX: 600, label: "B1B5 N.C.", labelOffset: -18 }] },
+        { id: "b2", label: "buses B4 / B2 / B3", voltage: "66 kV", hideLabel: true, segments: [{ x: 270, width: 300, label: "B4 / CUSTOMER / 66 kV" }, { x: 630, width: 220, label: "B2 / NP / 66 kV" }, { x: 900, width: 200, label: "B3 / NP / 66 kV" }], ties: [{ fromX: 420, toX: 520, label: "B2B4-1 N.O.", open: true }, { fromX: 740, toX: 800, label: "B2B3-1" }] }
+      ],
+      transformers: [{ label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2", toBreaker: "B4T1", x: 320 }, { label: "T2", rating: "40/53.3/66.7 MVA", from: "b1", to: "b2", toBreaker: "B2T2", x: 620 }, { label: "T3", rating: "75/100/125 MVA", from: "b1", to: "b2", toBreaker: "B3T3", x: 875 }],
+      circuits: [{ label: "TL248", destination: "Deer Lake", bus: "b1", destinationCode: "DLK", breaker: "B1L48", x: 150 }, { label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC", breaker: "B1L28", x: 500 }, { label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK", breaker: "B5L11", x: 970 }, { label: "L1", destination: "Deer Lake Power", bus: "b2", destinationCode: "DLP", x: 125 }, { label: "L16", destination: "Frequency converter", bus: "b2", x: 260 }, { label: "L17", destination: "Frequency converter", bus: "b2", x: 410 }, { label: "352L", destination: "Walbournes", bus: "b2", destinationCode: "WAL", x: 545 }, { label: "356L", destination: "Humber", bus: "b2", destinationCode: "HUM", x: 715 }, { label: "351L", destination: "Walbournes", bus: "b2", destinationCode: "WAL", x: 825 }, { label: "357L", destination: "Bayview", bus: "b2", destinationCode: "BVS", x: 970 }]
     },
-    sources: [sourceRef("nlh-system-additions-2001", "physical PDF p. 224"), sourceRef("nlh-transformer-loading-2015", "physical PDF p. 4"), sourceRef("nlh-planning-2024", "physical PDF pp. 15 and 40"), sourceRef("np-2014-massey-drive", "physical PDF p. 238"), sourceRef("asset-2023", "physical PDF pp. 33 to 34"), sourceRef("nlh-massey-q3-2023", "physical PDF p. 34")]
+    sources: [sourceRef("nlh-terminal-risk-2017", "physical PDF p. 28"), sourceRef("nlh-massey-storm-2013", "physical PDF pp. 135, 198 to 199, and 208"), sourceRef("nlh-massey-industrial-2018", "physical PDF p. 7"), sourceRef("nlh-massey-disconnects-2017", "physical PDF p. 542"), sourceRef("nlh-massey-bus-tie-2015", "physical PDF p. 10"), sourceRef("nlh-system-additions-2001", "physical PDF p. 224"), sourceRef("nlh-transformer-loading-2015", "physical PDF p. 4"), sourceRef("nlh-planning-2024", "physical PDF pp. 15 and 40"), sourceRef("np-2014-massey-drive", "physical PDF p. 238"), sourceRef("asset-2023", "physical PDF pp. 33 to 34"), sourceRef("nlh-massey-q3-2023", "physical PDF p. 34"), sourceRef("nlh-massey-q3-2025", "physical PDF pp. 36 to 37"), sourceRef("nlh-massey-relays-2027", "physical PDF p. 506")]
   },
   {
     code: "CBC",
@@ -9662,6 +9725,9 @@ export const stationProfiles = [
       { circuit: "TL211", from: "Bottom Brook", from_code: "BBK", to: "Massey Drive", to_code: "MAS" },
       { circuit: "TL228", from: "Buchans", from_code: "BUC", to: "Massey Drive", to_code: "MAS" },
       { circuit: "TL248", from: "Massey Drive", from_code: "MAS", to: "Deer Lake", to_code: "DLK" },
+      { circuit: "L1", from: "Deer Lake Power", from_code: "DLP", to: "Massey Drive", to_code: "MAS" },
+      { circuit: "L16", from: "Massey Drive", from_code: "MAS", to: "Corner Brook frequency converter" },
+      { circuit: "L17", from: "Massey Drive", from_code: "MAS", to: "Corner Brook frequency converter" },
       { circuit: "351L", from: "Massey Drive", from_code: "MAS", to: "Walbournes", to_code: "WAL" },
       { circuit: "352L", from: "Massey Drive", from_code: "MAS", to: "Walbournes", to_code: "WAL" },
       { circuit: "356L", from: "Massey Drive", from_code: "MAS", to: "Humber", to_code: "HUM" },
@@ -9672,25 +9738,27 @@ export const stationProfiles = [
     mapPages: [],
     eventLoads: [],
     diagram: {
-      label: "2024 transformer ratings and routes / 2014 Newfoundland Power connections",
+      label: "2013 operating evidence / 2017 disconnect register / 2024 transformer ratings",
       buses: [
-        { id: "b1", label: "bus", voltage: "230 kV" },
-        { id: "b2", label: "Corner Brook Pulp and Paper supply", voltage: "66 kV" },
-        { id: "b3", label: "Newfoundland Power buses", voltage: "66 kV" }
+        { id: "b1", label: "split bus B1 / B5", voltage: "230 kV", hideLabel: true, segments: [{ x: 350, width: 460, label: "B1 / 230 kV", labelOffset: -18 }, { x: 800, width: 400, label: "B5 / 230 kV", labelOffset: -18 }], ties: [{ fromX: 580, toX: 600, label: "B1B5 N.C.", labelOffset: -18 }] },
+        { id: "b2", label: "buses B4 / B2 / B3", voltage: "66 kV", hideLabel: true, segments: [{ x: 270, width: 300, label: "B4 / CUSTOMER / 66 kV" }, { x: 630, width: 220, label: "B2 / NP / 66 kV" }, { x: 900, width: 200, label: "B3 / NP / 66 kV" }], ties: [{ fromX: 420, toX: 520, label: "B2B4-1 N.O.", open: true }, { fromX: 740, toX: 800, label: "B2B3-1" }] }
       ],
       transformers: [
-        { label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" },
-        { label: "T2", rating: "40/53.3/66.7 MVA", from: "b1", to: "b3" },
-        { label: "T3", rating: "75/100/125 MVA", from: "b1", to: "b3" }
+        { label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2", toBreaker: "B4T1", x: 320 },
+        { label: "T2", rating: "40/53.3/66.7 MVA", from: "b1", to: "b2", toBreaker: "B2T2", x: 620 },
+        { label: "T3", rating: "75/100/125 MVA", from: "b1", to: "b2", toBreaker: "B3T3", x: 875 }
       ],
       circuits: [
-        { label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" },
-        { label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC" },
-        { label: "TL248", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" },
-        { label: "351L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" },
-        { label: "352L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" },
-        { label: "356L", destination: "Humber", bus: "b3", destinationCode: "HUM" },
-        { label: "357L", destination: "Bayview", bus: "b3", destinationCode: "BVS" }
+        { label: "TL248", destination: "Deer Lake", bus: "b1", destinationCode: "DLK", breaker: "B1L48", x: 150 },
+        { label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC", breaker: "B1L28", x: 500 },
+        { label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK", breaker: "B5L11", x: 970 },
+        { label: "L1", destination: "Deer Lake Power", bus: "b2", destinationCode: "DLP", x: 125 },
+        { label: "L16", destination: "Frequency converter", bus: "b2", x: 260 },
+        { label: "L17", destination: "Frequency converter", bus: "b2", x: 410 },
+        { label: "352L", destination: "Walbournes", bus: "b2", destinationCode: "WAL", x: 545 },
+        { label: "356L", destination: "Humber", bus: "b2", destinationCode: "HUM", x: 715 },
+        { label: "351L", destination: "Walbournes", bus: "b2", destinationCode: "WAL", x: 825 },
+        { label: "357L", destination: "Bayview", bus: "b2", destinationCode: "BVS", x: 970 }
       ]
     },
     engineeringRecord: {
@@ -9746,6 +9814,18 @@ export const stationProfiles = [
         sourceId: "nlh-massey-q3-2023",
         pages: "physical PDF p. 34",
         facts: [["Fire protection", "A fire-protection system was installed at the terminal station"]]
+      },
+      {
+        label: "2025 COMPLETED PROTECTION AND SWITCH WORK",
+        sourceId: "nlh-massey-q3-2025",
+        pages: "physical PDF pp. 36 to 37",
+        facts: [["TL211 disconnects", "B5L11-1 and B5L11-2/L11G were replaced"], ["T1 protection", "Protective relays were replaced"]]
+      },
+      {
+        label: "2027 PLANNED PROTECTION WORK",
+        sourceId: "nlh-massey-relays-2027",
+        pages: "physical PDF p. 506",
+        facts: [["Planned relay replacements", "Bus B2B3, bus B4, and transformer T2"]]
       }
     ],
     referenceSheetLabel: "MASSEY DRIVE SOURCE SHEETS",

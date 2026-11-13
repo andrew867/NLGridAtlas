@@ -121,6 +121,30 @@ test("Deer Lake renders the filed 230 kV and 66 kV breaker records", () => {
   assert.match(html, /data-hydro-terminal-record="DLP"/);
 });
 
+test("Massey Drive renders the filed split buses, ties and terminal breakers", () => {
+  const masseyDrive = islandTerminalRecords.find((record) => record.code === "MAS");
+  assert.ok(masseyDrive);
+  assert.deepEqual(masseyDrive.diagram.buses[0].segments.map(({ label }) => label), ["B1 / 230 kV", "B5 / 230 kV"]);
+  assert.deepEqual(masseyDrive.diagram.buses[0].ties.map(({ label }) => label), ["B1B5 N.C."]);
+  assert.deepEqual(masseyDrive.diagram.buses[1].segments.map(({ label }) => label), ["B4 / CUSTOMER / 66 kV", "B2 / NP / 66 kV", "B3 / NP / 66 kV"]);
+  assert.deepEqual(masseyDrive.diagram.buses[1].ties.map(({ label, open }) => [label, open || false]), [["B2B4-1 N.O.", true], ["B2B3-1", false]]);
+  assert.deepEqual(masseyDrive.diagram.transformers.map(({ label, toBreaker }) => [label, toBreaker]), [["T1", "B4T1"], ["T2", "B2T2"], ["T3", "B3T3"]]);
+  assert.deepEqual(masseyDrive.diagram.circuits.slice(0, 3).map(({ label, breaker }) => [label, breaker]), [["TL248", "B1L48"], ["TL228", "B1L28"], ["TL211", "B5L11"]]);
+  assert.ok(masseyDrive.sources.some((source) => source.sourceId === "nlh-terminal-risk-2017" && source.pages.includes("28")));
+  assert.ok(masseyDrive.sources.some((source) => source.sourceId === "nlh-massey-industrial-2018" && source.pages.includes("7")));
+  const html = renderTerminalDiagram(masseyDrive.diagram, escapeHtml);
+  assert.match(html, />B1B5 N\.C\.</);
+  assert.match(html, />B2B4-1 N\.O\.</);
+  assert.match(html, />B2B3-1</);
+  assert.match(html, />B1L48</);
+  assert.match(html, />B1L28</);
+  assert.match(html, />B5L11</);
+  assert.match(html, />B4T1</);
+  assert.match(html, />B2T2</);
+  assert.match(html, />B3T3</);
+  assert.match(html, /data-hydro-terminal-record="DLP"/);
+});
+
 test("Bay d'Espoir separates the individual unit terminals from the Station 2 buses", () => {
   const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
   assert.equal(bayDEspoir.diagram.buses[1].kind, "terminals");
