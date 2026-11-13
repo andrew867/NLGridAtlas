@@ -509,9 +509,10 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   assert.match(bayDEspoir.facts.flat().join(" "), /T7, 230\/13\.8 kV, 129\/172 MVA/);
   assert.match(voiseysBayNickel.facts.flat().join(" "), /TL208 to Western Avalon/);
   assert.match(voiseysBayNickel.facts.flat().join(" "), /Long Harbour predecessor.*removed from service/);
-  assert.deepEqual(bayDEspoir.diagram.transformers, [
-    { label: "T10", rating: "15/20/25 MVA", from: "b1", to: "b2" },
-    { label: "T12", rating: "15/20/25 MVA", from: "b1", to: "b2" }
+  assert.deepEqual(bayDEspoir.diagram.transformers.map(({ label }) => label), ["T1 to T3", "T4", "T5 and T6", "T7", "T10", "T12", "T11"]);
+  assert.deepEqual(bayDEspoir.diagram.transformers.filter(({ label }) => ["T10", "T12"].includes(label)).map(({ label, rating, from, to }) => ({ label, rating, from, to })), [
+    { label: "T10", rating: "15/20/25 MVA", from: "b1", to: "b3" },
+    { label: "T12", rating: "15/20/25 MVA", from: "b1", to: "b3" }
   ]);
   assert.match(comeByChance.facts.flat().join(" "), /230\/13\.8 kV, 30\/40\/50 MVA each; both manufactured in 1972/);
   assert.match(comeByChance.facts.flat().join(" "), /T1 and T2 serve only the Braya refinery/);

@@ -526,6 +526,18 @@
       "notes": "CA-NP-138 physical PDF p. 2 reports the selected 2019 to 2021 program complete at $13.881 million actual expenditure against a $13.641 million approved budget. The program-level closeout does not give a Notre Dame Junction dismantling date, so that station remains a historical arrangement rather than a dated removal record."
     },
     {
+      "id": "ISL-019",
+      "title": "Replace the Bay d'Espoir interface sketch with the filed generating-station arrangement",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Use the 1998 Station 1 and 2013 Station 2 operating diagrams to separate the seven generator terminals, generator step-up transformers, Station 2 transformation, and outgoing circuits.",
+      "dependencies": ["ISL-003", "SRC-001"],
+      "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "tests/terminal-diagram.test.js"],
+      "blocker": null,
+      "notes": "Implemented from physical PDF pp. 248 to 249 of the 2016 Capital Budget Application. The diagram separates the four grouped 13.8 kV unit-terminal segments, seven generator step-up positions, Station 2 buses B13 and B14, T10 to T12, and the filed outgoing circuits. The 283-test suite, production build, and browser layout review passed."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

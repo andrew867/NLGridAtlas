@@ -22,9 +22,9 @@ function transformerSymbol(transformer, index, count, buses, escapeHtml) {
   const from = buses.find((bus) => bus.id === transformer.from);
   const to = buses.find((bus) => bus.id === transformer.to);
   if (!from || !to) return "";
-  const x = count === 2
+  const x = transformer.x ?? (count === 2
     ? spread(index, count, 420, 700)
-    : spread(index, count, 300, 820);
+    : spread(index, count, 300, 820));
   const lowY = Math.min(from.y, to.y);
   const highY = Math.max(from.y, to.y);
   const intermediateBuses = buses
@@ -48,7 +48,7 @@ function transformerSymbol(transformer, index, count, buses, escapeHtml) {
 }
 
 function circuitSymbol(circuit, index, count, bus, direction, escapeHtml, linkTarget) {
-  const x = spread(index, count);
+  const x = circuit.x ?? spread(index, count);
   const lineEnd = bus.y + direction * 68;
   const labelY = bus.y + direction * 88;
   const destinationY = bus.y + direction * 114;
@@ -118,16 +118,24 @@ export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-t
   const hasBottomDevices = (diagram.generators?.length || 0) + (diagram.shunts?.length || 0) + (diagram.converters?.length || 0) > 0;
   const height = lastBus.y + (hasBottomDevices ? 180 : 135);
 
-  const busMarkup = buses.map((bus) => `
-    <g class="terminal-bus voltage-${escapeHtml(bus.voltage.replace(/[^0-9]/g, ""))}">
-      <line x1="120" y1="${bus.y}" x2="1000" y2="${bus.y}" />
+  const busMarkup = buses.map((bus) => {
+    const lines = bus.segments?.length
+      ? bus.segments.map(({ x, width = 76 }) => `<line x1="${x - width / 2}" y1="${bus.y}" x2="${x + width / 2}" y2="${bus.y}" />`).join("")
+      : `<line x1="120" y1="${bus.y}" x2="1000" y2="${bus.y}" />`;
+    return `
+    <g class="terminal-bus terminal-bus-${escapeHtml(bus.kind || "bus")} voltage-${escapeHtml(bus.voltage.replace(/[^0-9]/g, ""))}">
+      ${lines}
       <text x="560" y="${bus.y - 17}">${escapeHtml(busDisplayLabel(bus))}</text>
-    </g>`).join("");
+    </g>`;
+  }).join("");
 
   const circuitMarkup = buses.map((bus, busIndex) => {
     const circuits = circuitsByBus.get(bus.id) || [];
-    const direction = busIndex === 0 ? -1 : 1;
-    return circuits.map((circuit, index) => circuitSymbol(circuit, index, circuits.length, bus, direction, escapeHtml, linkTarget)).join("");
+    const defaultDirection = busIndex === 0 ? -1 : 1;
+    return circuits.map((circuit, index) => {
+      const direction = circuit.direction === "up" ? -1 : circuit.direction === "down" ? 1 : defaultDirection;
+      return circuitSymbol(circuit, index, circuits.length, bus, direction, escapeHtml, linkTarget);
+    }).join("");
   }).join("");
 
   const transformerMarkup = diagram.transformers.map((transformer, index) => transformerSymbol(transformer, index, diagram.transformers.length, buses, escapeHtml)).join("");

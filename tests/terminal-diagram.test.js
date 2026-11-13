@@ -45,6 +45,20 @@ test("Come By Chance renders four filed capacitor banks", () => {
   assert.match(html, /C4/);
 });
 
+test("Bay d'Espoir separates the individual unit terminals from the Station 2 buses", () => {
+  const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
+  assert.equal(bayDEspoir.diagram.buses[1].kind, "terminals");
+  assert.deepEqual(bayDEspoir.diagram.buses[1].segments.map(({ x }) => x), [200, 380, 560, 740]);
+  assert.deepEqual(bayDEspoir.diagram.transformers.map(({ label }) => label), ["T1 to T3", "T4", "T5 and T6", "T7", "T10", "T12", "T11"]);
+  assert.deepEqual(bayDEspoir.diagram.generators.map(({ label }) => label), ["G1 to G3", "G4", "G5 and G6", "G7"]);
+  assert.ok(bayDEspoir.diagram.circuits.some(({ label, destination }) => label === "TL220" && /Barachois/.test(destination)));
+  const html = renderTerminalDiagram(bayDEspoir.diagram, escapeHtml);
+  assert.match(html, /terminal-bus-terminals/);
+  assert.match(html, /x1="162" y1="375" x2="238" y2="375"/);
+  assert.match(html, /circle cx="990"/);
+  assert.match(html, /data-hydro-terminal-record="USL"/);
+});
+
 test("Soldiers Pond separates converter poles from synchronous condensers", () => {
   const soldiersPond = islandTerminalRecords.find((record) => record.code === "SDP");
   const html = renderTerminalDiagram(soldiersPond.diagram, escapeHtml);
