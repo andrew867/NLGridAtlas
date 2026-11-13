@@ -2141,6 +2141,25 @@ test("Bottom Brook separates the commissioned station from the cancelled T4 scop
   assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL211", "TL233", "TL269", "Line 1", "Line 2", "TL209", "TL214", "TL250", "400L"]);
 });
 
+test("Wheelers remains a switching point between 400L and the 401L tap", () => {
+  const wheelers = stationProfiles.find((station) => station.code === "WHE");
+  assert.ok(wheelers);
+  assert.deepEqual(wheelers.connectedCircuits.map(({ circuit }) => circuit), ["400L", "404L"]);
+  assert.deepEqual(wheelers.feederRegister, []);
+  assert.deepEqual(wheelers.diagram.buses.map(({ voltage }) => voltage), ["66 kV"]);
+  assert.deepEqual(wheelers.diagram.transformers, []);
+  assert.deepEqual(wheelers.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 557", "physical PDF p. 569"]);
+
+  const operatingFacts = wheelers.engineeringRecord.facts.flat().join(" ");
+  const rebuildFacts = wheelers.planningRecord.facts.flat().join(" ");
+  const historyFacts = wheelers.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(operatingFacts, /404L breaker at Wheelers normally open/);
+  assert.match(rebuildFacts, /21\.9 km; 90 H-frame structures/);
+  assert.match(rebuildFacts, /266\.8 ACSR with 559\.5 AASC/);
+  assert.match(historyFacts, /The 2014 operating response still identifies Wheelers/);
+  assert.match(historyFacts, /approximately 10,000 customers/);
+});
+
 test("Buchans joins the terminal transformer and Newfoundland Power distribution record", () => {
   const buchans = stationProfiles.find((station) => station.code === "BUC");
   assert.ok(buchans);

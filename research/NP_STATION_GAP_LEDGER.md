@@ -1,6 +1,6 @@
 # Newfoundland Power station data gap ledger
 
-Last scan: 2026-11-12
+Last scan: 2026-11-13
 
 ## Scan completed
 
@@ -60,6 +60,15 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2012 transformer-failure table records the Berry Head transformer at 66/12.5 kV, 7.46 MVA, purchased in 1967, failed in January 2010, and repaired, physical PDF p. 414.
 - [x] A transformer gas-detect relay failure caused an unplanned Berry Head service interruption in 2013, 2014 Capital Budget Application, physical PDF p. 236.
 - [x] The 2027 transformer register records BHD-T1 at 66/25 kV, 7.46 MVA, with a 3.82 MVA 2026 forecast, physical PDF p. 546.
+
+## Wheelers switching record
+
+- [x] 400L connects Bottom Brook and Wheelers. 404L connects Wheelers to a tap on 401L between Gallant Street and Stephenville, PUB-NP-245, physical PDF p. 1.
+- [x] The 400L breaker at Bottom Brook was remote controlled through Hydro's energy management system. The 404L breaker at Wheelers was normally open because of Bottom Brook transformation limits, PUB-NP-245, physical PDF p. 1.
+- [x] The 2004 filing proposed a new 404L dead-end structure, retermination to switch 404L-A, and protective-relay changes at Gallant Street and Stephenville to permit Wheelers decommissioning, 2004 Capital Budget Application Volume II, physical PDF pp. 78 to 79. No completion record was located, so this is retained as proposed work.
+- [x] The 2015 filing records 400L as a 21.9 km, 66 kV line built in 1967 between Bottom Brook and Wheelers, and 404L as a 1.2 km, 66 kV line built in 1967 between Wheelers and the 401L tap, physical PDF p. 556.
+- [x] The 2015 filing proposed rebuilding 11 km of 400L and all 1.2 km of 404L in 2015, followed by the remaining 11 km of 400L in 2016, using 559.5 AASC conductor, physical PDF p. 560. No completion certificate was located, so the rebuild remains a filed proposal.
+- [x] The filed one-line and route map are retained with the station record, 2015 Capital Budget Application, physical PDF pp. 557 and 569.
 
 ## Doyles terminal and substation record
 

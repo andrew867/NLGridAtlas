@@ -50,6 +50,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicCompleteRev1.pdf"
   },
   {
+    id: "np-2004-wheelers",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Wheelers 404L Retermination",
+    topics: ["Wheelers", "WHE", "404L", "404L-A", "Gallant Street", "Stephenville", "retermination", "decommissioning proposal"],
+    pages: "physical PDF pp. 78 to 79",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicVolumeII.pdf"
+  },
+  {
+    id: "np-2015-400l",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, 400L and 404L Transmission Rebuild",
+    topics: ["Wheelers", "WHE", "Bottom Brook", "BBK", "400L", "404L", "401L", "66 kV", "559.5 AASC", "transmission rebuild"],
+    pages: "physical PDF pp. 556 to 560 and 569",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
     id: "nlh-2004-reliability-review",
     year: 2004,
     organization: "Newfoundland and Labrador Hydro",
@@ -383,9 +403,9 @@ export const sources = [
     id: "np-2014-pub-np-245",
     year: 2014,
     organization: "Newfoundland Power",
-    title: "PUB-NP-245, Radial Transmission Control Record",
-    topics: ["410L", "Berry Head", "Abrahams Cove", "Gallant Street", "remote control", "breakers"],
-    pages: "physical PDF p. 2",
+    title: "PUB-NP-245, Transmission Control Record",
+    topics: ["400L", "404L", "Wheelers", "Bottom Brook", "410L", "Berry Head", "Abrahams Cove", "Gallant Street", "remote control", "breakers"],
+    pages: "physical PDF pp. 1 to 2",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-245.pdf"
   },
@@ -8521,6 +8541,96 @@ export const stationProfiles = [
     ]
   },
   ...islandTerminalRecords.filter(({ code }) => ["BBK", "STV"].includes(code)),
+  {
+    code: "WHE",
+    name: "Wheelers",
+    voltage: "66 kV",
+    circuitRegisterLabel: "2014 OPERATING ARRANGEMENT",
+    circuitSources: [
+      { sourceId: "np-2014-pub-np-245", pages: "physical PDF p. 1" },
+      { sourceId: "np-2015-400l", pages: "physical PDF pp. 556 to 557" }
+    ],
+    connectedCircuits: [
+      { circuit: "400L", from: "Bottom Brook", from_code: "BBK", to: "Wheelers", to_code: "WHE" },
+      { circuit: "404L", from: "Wheelers", from_code: "WHE", to: "401L Wheelers tap" }
+    ],
+    feederRegisterLabel: "NO DISTRIBUTION FEEDERS",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2014 switching arrangement / 2015 filed line diagram",
+      buses: [{ id: "b1", label: "Wheelers switching point", voltage: "66 kV" }],
+      transformers: [],
+      circuits: [
+        { label: "400L", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" },
+        { label: "404L", destination: "401L Wheelers tap", bus: "b1" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2014 OPERATING ARRANGEMENT",
+      title: "Wheelers switching point between 400L and the 401L tap",
+      sourceId: "np-2014-pub-np-245",
+      pages: "physical PDF p. 1",
+      facts: [
+        ["400L", "66 kV connection to Bottom Brook; the Bottom Brook breaker was remotely controlled through Hydro's energy-management system"],
+        ["404L", "66 kV connection from Wheelers to the tap on 401L between Gallant Street and Stephenville"],
+        ["Normal state", "404L breaker at Wheelers normally open because of the transformation limit at Bottom Brook"]
+      ]
+    },
+    planningRecord: {
+      label: "2015 TO 2016 FILED 400L AND 404L REBUILD",
+      sourceId: "np-2015-400l",
+      pages: "physical PDF pp. 556 to 560 and 569",
+      facts: [
+        ["400L", "Built in 1967; 21.9 km; 90 H-frame structures between Bottom Brook and Wheelers"],
+        ["404L", "Built in 1967; 1.2 km; 14 single-pole structures between Wheelers and the 401L tap"],
+        ["Filed conductor work", "Replace the original 266.8 ACSR with 559.5 AASC"],
+        ["Filed schedule", "Rebuild 11 km of 400L and all 1.2 km of 404L in 2015; rebuild the remaining 11 km of 400L in 2016"],
+        ["Filed cost", "$1.920 million in 2015 and $1.807 million in 2016"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2004 PROPOSED 404L RETERMINATION AND STATION DECOMMISSIONING",
+        sourceId: "np-2004-wheelers",
+        pages: "physical PDF pp. 78 to 79",
+        facts: [
+          ["Filed work", "Install a new 404L dead-end structure, reterminate 404L to air-break switch 404L-A, and install protective relaying at Gallant Street and Stephenville"],
+          ["Filed purpose", "Permit Wheelers decommissioning after the station was described as deteriorated and obsolete"],
+          ["Later evidence", "The 2014 operating response still identifies Wheelers and its normally open 404L breaker"]
+        ]
+      },
+      {
+        label: "2015 FILED BACKUP-SUPPLY RECORD",
+        sourceId: "np-2015-400l",
+        pages: "physical PDF pp. 556 to 557",
+        facts: [
+          ["System role", "400L and the Stephenville gas turbine provided backup during TL209 outages and maintenance"],
+          ["Customers", "The filing associated the corridor with approximately 10,000 customers in Stephenville and the Port au Port Peninsula"],
+          ["Filed limitation", "400L was rated 50 MVA, but its conductor condition and splices reduced the available rating below 50 MVA"],
+          ["Seasonal capability", "The filing stated that 400L could supply the area without TL209 or the gas turbine in June, July, August, and September"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED SYSTEM AND ROUTE DRAWINGS",
+    referenceSheets: [
+      {
+        title: "2015 Stephenville area simplified single-line",
+        image: "./reference-maps/wheelers-2015-single-line.png",
+        alt: "Filed simplified single-line showing Bottom Brook, 400L, Wheelers, 404L, the 401L tap, Stephenville, Gallant Street, and Harmon",
+        sourceId: "np-2015-400l",
+        pages: "physical PDF p. 557"
+      },
+      {
+        title: "2015 filed 400L and 404L route map",
+        image: "./reference-maps/wheelers-2015-route-map.png",
+        alt: "Filed route map showing Wheelers, Bottom Brook, Stephenville, Gallant Street, 400L, 404L, and 401L",
+        sourceId: "np-2015-400l",
+        pages: "physical PDF p. 569"
+      }
+    ]
+  },
   {
     code: "BUC",
     name: "Buchans",
