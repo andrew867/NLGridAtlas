@@ -1244,7 +1244,7 @@ export const sources = [
     year: 2015,
     organization: "NL Hydro",
     title: "PUB-NLH-324, Transmission Line Loads for 2015",
-    topics: ["230 kV", "138 kV", "66 kV", "69 kV", "winter rating", "anticipated peak", "average loading", "TL204", "TL205", "TL209", "TL211", "TL228", "TL231", "TL232", "TL233"],
+    topics: ["230 kV", "138 kV", "66 kV", "69 kV", "winter rating", "anticipated peak", "average loading", "TL204", "TL205", "TL209", "TL211", "TL228", "TL231", "TL232", "TL233", "TL234", "TL235", "TL247", "TL248", "TL263"],
     pages: "physical PDF pp. 1 to 5",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-324.pdf"
@@ -1254,10 +1254,50 @@ export const sources = [
     year: 2016,
     organization: "Nalcor Energy",
     title: "Probabilistic Based Transmission Reliability Assessment, Island Interconnected System",
-    topics: ["230 kV", "transmission length", "winter rating", "pre-HVDC", "post-HVDC", "TL204", "TL205", "TL209", "TL211", "TL228", "TL231", "TL232", "TL233"],
+    topics: ["230 kV", "transmission length", "winter rating", "pre-HVDC", "post-HVDC", "TL204", "TL205", "TL209", "TL211", "TL228", "TL231", "TL232", "TL233", "TL234", "TL235", "TL247", "TL248", "TL263", "TL269"],
     pages: "physical PDF pp. 60 to 61",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/reports/From%20NLH%20-%20Probabilistic%20Based%20Transmiss~Assessment%20Report%20-%20Island%20Interconnected%20System%20(Teshmont%20Report)%20-%202016-05-27.PDF"
+  },
+  {
+    id: "nlh-generation-transmission-2012",
+    year: 2012,
+    organization: "NL Hydro",
+    title: "CA-NLH-048, Transmission Facilities Connected to Generating Stations",
+    topics: ["TL234", "TL247", "TL248", "TL263", "seasonal rating", "construction type", "generation collection"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Depreciation/files/rfi/CA-NLH-048.pdf"
+  },
+  {
+    id: "nlh-wood-pole-plan-2013",
+    year: 2013,
+    organization: "NL Hydro",
+    title: "2013 Wood Pole Line Management",
+    topics: ["TL234", "wood pole", "year in service", "inspection plan"],
+    pages: "physical PDF p. 738",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013Capital/files/application/NLH2013ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-maritime-ac-ready-2017",
+    year: 2017,
+    organization: "NL Hydro",
+    title: "Ready for Integration, Transition to Operations",
+    topics: ["TL263", "TL269", "Granite Canal Tap", "Bottom Brook Terminal Station 2", "Maritime Link", "in service"],
+    pages: "physical PDF pp. 292 to 293",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/correspondance/From%20NLH%20-%20Availability%20of%20Requested%20Information%20from%20Hydro%20-%20July%205,%202017%20Update%20-%20%202017-07-05.PDF"
+  },
+  {
+    id: "nlh-provincial-system-2018",
+    year: 2018,
+    organization: "NL Hydro",
+    title: "2017 General Rate Application, Provincial Electrical System, Revision 5",
+    topics: ["TL263", "TL269", "TL270", "Granite Canal Tap", "Bottom Brook Terminal Station 2", "line reconfiguration"],
+    pages: "physical PDF pp. 12 to 13",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/applications/NLH%202017%20General%20Rate%20Application%20-%20Volume%20II%20-%20Revision%205%20-%202018-07-04.PDF"
   },
   {
     id: "nlh-maritime-runback-2016",

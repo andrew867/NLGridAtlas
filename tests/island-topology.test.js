@@ -107,6 +107,27 @@ test("central and western circuits preserve planning, route, and historical reco
   assert.match(byCircuit.TL209.engineering_records[0].facts[0], /1971/);
 });
 
+test("generation collection circuits preserve the Granite Canal split chronology", () => {
+  const byCircuit = Object.fromEntries(topology.lines.map((line) => [line.circuit, line]));
+
+  assert.deepEqual(byCircuit.TL234.engineering_records.map(({ year }) => year), [1981, 2012, 2015, 2016]);
+  assert.match(byCircuit.TL234.engineering_records[0].facts.join(" "), /1981.*122 poles/);
+  assert.match(byCircuit.TL234.engineering_records[1].facts.join(" "), /wood-pole.*469\.6 MVA.*469\.5 MVA/);
+  assert.match(byCircuit.TL234.engineering_records[2].facts.join(" "), /125\.5 MVA.*79\.7 MVA/);
+  assert.match(byCircuit.TL234.engineering_records[3].facts.join(" "), /51\.538 km.*469\.6 MVA/);
+
+  assert.deepEqual(byCircuit.TL263.engineering_records.map(({ year }) => year), [2012, 2015, 2016, 2017]);
+  assert.match(byCircuit.TL263.engineering_records[0].facts.join(" "), /hybrid line.*369\.5 MVA/);
+  assert.match(byCircuit.TL263.engineering_records[2].facts.join(" "), /pre-HVDC.*74\.761 km/);
+  assert.equal(byCircuit.TL263.engineering_records[3].status, "reported");
+  assert.match(byCircuit.TL263.engineering_records[3].facts.join(" "), /reterminated.*TL269.*in service/);
+
+  assert.deepEqual(byCircuit.TL270.engineering_records.map(({ year }) => year), [2017, 2018]);
+  assert.equal(byCircuit.TL270.engineering_records[0].status, "proposed");
+  assert.match(byCircuit.TL270.engineering_records[0].facts.join(" "), /remaining section.*not yet in service/);
+  assert.match(byCircuit.TL270.engineering_records[1].facts[0], /Granite Canal Tap to Granite Canal/);
+});
+
 test("69 kV circuit assignment remains an explicit evidence gap", () => {
   assert.equal(topology.lines.some((line) => line.voltage_kv === 69), false);
   assert.match(topology.open_gaps.join(" "), /69 kV asset-class designations/);
