@@ -3082,6 +3082,10 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.match(components["hrd-summary"].data.flat().join(" "), /lower-cost Newfoundland Power supply connection/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /B8L39 breaker.*August 2018.*disconnects.*September 2019/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /292\.827 million capital.*330\.915 million operating.*623\.742 million total/);
+  const facilityReview = sources.find((source) => source.id === "nlh-holyrood-facility-review-2014");
+  assert.equal(facilityReview.pages, "physical PDF pp. 61 to 66");
+  assert.match(components["hrd-t5"].sources.map(({ sourceId }) => sourceId).join(" "), /nlh-holyrood-facility-review-2014/);
+  assert.match(components["hrd-t10"].sources.map(({ sourceId }) => sourceId).join(" "), /nlh-holyrood-facility-review-2014/);
   assert.deepEqual(components["hrd-b8l39"].data, [
     ["B8L39 breaker", "In service August 23, 2018"],
     ["39L protection 1", "In service August 30, 2018"],

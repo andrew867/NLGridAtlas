@@ -58,6 +58,21 @@ The same asset schedule records `New HRD T7` with an in-service date of February
 
 Source: [Holyrood Condition Assessment and Life Extension Study, physical PDF pp. 90 to 91](http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Assessment%20to%20Determine%20the%20Potential%20Long-Term%20Viability%20of%20the%20Holyrood%20Thermal%20Generating%20Station%20-%202022-03-31.PDF).
 
+## Filed station operating drawings
+
+The 2014 winter-readiness review reproduces four Holyrood system operating drawings. The sheets establish a dated switchyard baseline, not a current as-built arrangement.
+
+| Physical PDF page | Drawing | Filed arrangement |
+| --- | --- | --- |
+| 63 | HRD-B, revision 10, dated 2005-03-16 | The 230 kV ring bus connects TL218, TL242, and TL217. T10 and T5 supply the 69 kV B6 and B7 bus sections. The drawing also shows 38L to the separate Holyrood Substation and outside-services branch. |
+| 64 | Holyrood Terminal Station A, revision 1, dated 1991-08-14 | T6, T7, and T8 connect the 230 kV B15 bus to the 138 kV B8 bus and 39L. |
+| 65 | HRD-C, revision 3, dated 2006-09-22 | Generator transformers T1, T2, and T3 connect Units 1, 2, and 3 to the 230 kV bus. The sheet also shows UST-1, UST-2, UST-3, SST-12, SST-34, and the 13.8 kV gas turbine branch. |
+| 66 | Holyrood Substation D, revision 2, dated 2007-10-25 | Circuit 38L supplies T1, rated 1.5 MVA and 69-2.4/4.16 kV, for outside services. |
+
+Source: [PUB-NLH-161, physical PDF pp. 61 to 66](http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-161.pdf).
+
+The prose inventory on physical PDF p. 62 identifies the second 230/69 kV transformer as T2. The operating drawing on physical PDF p. 63 labels it T5. The December 2012 plant drawing and later Newfoundland Power study also identify T5, so the atlas uses T5 and preserves the prose discrepancy here.
+
 ## Drawing gap
 
 The 2022 condition study confirms equipment that remained in the Holyrood switchyard, but it does not publish a complete current station one-line. Its document register names `1403-500-E001 PLANT SINGLE LINE DIAGRAM` and `1403-500-E004 PLANT MCC SINGLE LINE DIAGRAM` on physical PDF p. 125, without reproducing either drawing. The atlas therefore keeps the December 2012 electrical drawing as a dated historical arrangement.
