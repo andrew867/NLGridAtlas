@@ -2,8 +2,10 @@ import islandTopology from "../research/derived/island-ac-topology-2018.json" wi
 import generationCollection from "../research/derived/generation-collection-lines.json" with { type: "json" };
 import planningLoads2015 from "../research/derived/transmission-loads-2015.json" with { type: "json" };
 import supplementalAcLines from "../research/derived/supplemental-ac-lines.json" with { type: "json" };
+import northernLineHistory2001 from "../research/derived/northern-peninsula-line-history-2001.json" with { type: "json" };
 
 const planningLoadByCircuit = new Map(planningLoads2015.records.map((record) => [record.circuit, record]));
+const northernHistoryByCircuit = new Map(northernLineHistory2001.records.map((record) => [record.circuit, record.engineering_records]));
 
 function planningLoadEngineeringRecord(record) {
   return {
@@ -25,10 +27,15 @@ function planningLoadEngineeringRecord(record) {
 
 const datedAcLines = [...islandTopology.lines, ...supplementalAcLines.lines].map((line) => {
   const planningLoad = planningLoadByCircuit.get(line.circuit);
-  if (!planningLoad) return line;
+  const northernHistory = northernHistoryByCircuit.get(line.circuit) || [];
+  if (!planningLoad && !northernHistory.length) return line;
   return {
     ...line,
-    engineering_records: [...(line.engineering_records || []), planningLoadEngineeringRecord(planningLoad)]
+    engineering_records: [
+      ...(line.engineering_records || []),
+      ...northernHistory,
+      ...(planningLoad ? [planningLoadEngineeringRecord(planningLoad)] : [])
+    ]
   };
 });
 
@@ -386,4 +393,4 @@ export function initIslandBackbone() {
   });
 }
 
-export { generationCollection, islandTopology, planningLoads2015, supplementalAcLines, renderedLines as islandRenderedLines, nodeLayout as islandNodeLayout, stationTargets as islandStationTargets };
+export { generationCollection, islandTopology, northernLineHistory2001, planningLoads2015, supplementalAcLines, renderedLines as islandRenderedLines, nodeLayout as islandNodeLayout, stationTargets as islandStationTargets };

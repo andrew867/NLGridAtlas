@@ -168,6 +168,7 @@ Updated: 2026-11-13
 - Added TL235 as a dedicated Grand Falls Frequency Converter record and connected Cat Arm TL247 to its documented Deer Lake endpoint.
 - Added all 32 rows in the 2015 Hydro 138 kV and 66/69 kV planning tables, including 0 degrees Celsius ratings, winter peaks, average loads, filed average-to-peak percentages, and circuit-specific operating notes.
 - Added TL225 and TL257 as separate supplemental AC circuits. TL225 uses the filed 66 kV Deer Lake Power connection; TL257 uses the filed 69 kV St. Anthony Airport to Roddickton Woodchip connection and its 1989 construction record.
+- Added the IC-270 construction history for TL221, TL241, TL244, TL256, TL261, and TL257. The record includes the 1990 TL221 and TL262 reconfiguration, the 1995 TL241 extension and voltage change, and the 1995 TL244 voltage upgrade.
 
 ## Active work
 
@@ -179,7 +180,7 @@ Phase 4 geography is complete for the sources located to date. Current AC circui
 
 ## Island backbone progress
 
-The structured island schematic contains all 58 circuit designations in PUB-NP-084 Attachment A, physical PDF pp. 24 to 26: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. A separate generation collection layer adds TL235, TL247, TL248, and TL269 from circuit-specific Hydro filings. Every rendered segment has a stable endpoint identifier and source-page detail. Current 69 kV circuit assignments remain open because the 2023 asset report gives only the class total, not circuit designations.
+The structured island schematic contains all 58 circuit designations in PUB-NP-084 Attachment A, physical PDF pp. 24 to 26: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. Separate source-specific layers add TL225, TL257, TL235, TL247, TL248, and TL269. The rendered total is 64 circuits: 30 at 230 kV, 16 at 138 kV, one at 69 kV, and 17 at 66 kV. Every rendered segment has a stable endpoint identifier and source-page detail.
 
 ## Remaining Avalon evidence target
 

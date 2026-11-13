@@ -16,7 +16,6 @@ test("supplemental circuits retain endpoint, construction, and source-page evide
   const byCircuit = Object.fromEntries(supplementalAcLines.lines.map((line) => [line.circuit, line]));
   assert.match(byCircuit.TL225.engineering_records[0].facts.join(" "), /66 kV.*Deer Lake Power.*Deer Lake Terminal Station/);
   assert.equal(byCircuit.TL225.source.physical_pdf_pages, "4");
-  assert.match(byCircuit.TL257.engineering_records[0].facts.join(" "), /69 kV.*Roddickton Woodchip.*St\. Anthony Airport.*1989/);
   assert.equal(byCircuit.TL257.source.physical_pdf_pages, "35");
 });
 

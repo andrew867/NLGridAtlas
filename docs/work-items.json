@@ -442,6 +442,18 @@
       "notes": "TL225 is rendered as the filed 66 kV Deer Lake Power to Deer Lake circuit. TL257 is rendered as the filed 69 kV St. Anthony Airport to Roddickton Woodchip circuit with its 1989 construction record. Both receive their 2015 rating and load records without changing the 58-circuit assessment asset list."
     },
     {
+      "id": "ISL-014",
+      "title": "Attach the Great Northern Peninsula circuit construction history",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Attach the filed construction, reconfiguration, and voltage history for TL221, TL241, TL244, TL256, TL261, and TL257 without replacing the later topology inventory.",
+      "dependencies": ["ISL-001", "ISL-013"],
+      "completion_evidence": ["research/derived/northern-peninsula-line-history-2001.json", "research/NORTHERN_PENINSULA_LINE_HISTORY.md", "src/island-backbone.js", "tests/northern-peninsula-line-history.test.js"],
+      "blocker": null,
+      "notes": "IC-270 physical PDF pp. 34 to 35 establish the 1970 TL221 build, the 1990 Peter's Barren reconfiguration and TL262 renumbering, the 1983 and 1995 TL241 and TL244 histories, the 1995 TL256 build, the 1996 TL261 build, and the 1989 TL257 build. The dated 69 kV TL261 construction record remains separate from the 2018 66 kV topology listing."
+    },
+    {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,

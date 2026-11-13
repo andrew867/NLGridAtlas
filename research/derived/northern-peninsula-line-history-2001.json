@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "status": "reported",
+  "scope": "Dated construction, reconfiguration, and voltage history for the Great Northern Peninsula transmission lines in IC-270",
+  "source": {
+    "title": "IC-270, Northern Peninsula Transmission Line Construction History",
+    "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+    "physical_pdf_pages": "34 to 35"
+  },
+  "records": [
+    {
+      "circuit": "TL221",
+      "engineering_records": [
+        {
+          "year": 1970,
+          "label": "Construction record",
+          "facts": [
+            "Hydro records TL221 as a 66 kV line built between Daniel's Harbour and Hawke's Bay Terminal Stations"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "34"
+          }
+        },
+        {
+          "year": 1990,
+          "label": "Peter's Barren reconfiguration",
+          "facts": [
+            "TL221 was terminated at Peter's Barren when that terminal station was added",
+            "The Daniel's Harbour to Peter's Barren section was renumbered TL262"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "34 to 35"
+          }
+        }
+      ]
+    },
+    {
+      "circuit": "TL241",
+      "engineering_records": [
+        {
+          "year": 1983,
+          "label": "Construction record",
+          "facts": [
+            "TL241 was built between Hawke's Bay and Plum Point Terminal Stations",
+            "The line was built to 138 kV standard and initially operated at 66 kV"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "35"
+          }
+        },
+        {
+          "year": 1995,
+          "label": "Extension and 138 kV operation",
+          "facts": [
+            "TL241 was extended to Peter's Barren Terminal Station and commenced operation at 138 kV",
+            "The former TL241 66 kV termination at Hawke's Bay was removed from service"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "35"
+          }
+        }
+      ]
+    },
+    {
+      "circuit": "TL244",
+      "engineering_records": [
+        {
+          "year": 1983,
+          "label": "Construction record",
+          "facts": [
+            "TL244 was built between Plum Point and Bear Cove Terminal Stations to 66 kV standards"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "35"
+          }
+        },
+        {
+          "year": 1995,
+          "label": "138 kV upgrade",
+          "facts": [
+            "TL244 was upgraded for operation at 138 kV"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "35"
+          }
+        }
+      ]
+    },
+    {
+      "circuit": "TL256",
+      "engineering_records": [
+        {
+          "year": 1995,
+          "label": "Construction record",
+          "facts": [
+            "TL256 was built as a 138 kV line between Bear Cove and St. Anthony Airport Terminal Stations"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "35"
+          }
+        }
+      ]
+    },
+    {
+      "circuit": "TL261",
+      "engineering_records": [
+        {
+          "year": 1996,
+          "label": "Construction record",
+          "facts": [
+            "Hydro records TL261 as a 69 kV line built between St. Anthony Airport and St. Anthony Diesel Plant Terminal Stations"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "35"
+          }
+        }
+      ]
+    },
+    {
+      "circuit": "TL257",
+      "engineering_records": [
+        {
+          "year": 1989,
+          "label": "Construction record",
+          "facts": [
+            "TL257 was built as a 69 kV line between Roddickton Woodchip and St. Anthony Airport Terminal Stations"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "35"
+          }
+        }
+      ]
+    }
+  ]
+}

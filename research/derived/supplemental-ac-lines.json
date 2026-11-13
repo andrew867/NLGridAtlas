@@ -41,20 +41,6 @@
       },
       "segments": [
         {"from": "St. Anthony Airport", "to": "Roddicktown Wood Chip", "source_to": "Roddickton Woodchip"}
-      ],
-      "engineering_records": [
-        {
-          "year": 1989,
-          "label": "Construction record",
-          "facts": [
-            "TL257 is a 69 kV line between Roddickton Woodchip and St. Anthony Airport Terminal Station",
-            "Hydro records the line as built in 1989"
-          ],
-          "source": {
-            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
-            "physical_pdf_pages": "35"
-          }
-        }
       ]
     }
   ]
