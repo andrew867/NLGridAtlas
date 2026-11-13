@@ -290,7 +290,7 @@
         "tests/island-topology.test.js"
       ],
       "blocker": null,
-      "notes": "The tested 2018 layer contains 58 Hydro circuit designations: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. It records Hydro ownership, endpoints, source year, filed table, and physical PDF page. Nine circuit-specific historical 69 kV records remain separate from the 2018 filed values. Post-2018 changes require a later dated layer, not an overwrite of this one."
+      "notes": "The tested 2018 assessment layer contains 58 Hydro circuit designations: 16 at 66 kV, 16 at 138 kV, and 26 at 230 kV. It records Hydro ownership, endpoints, source year, filed table, and physical PDF page. Nine circuit-specific historical 69 kV records remain separate from the 2018 filed values. Four generation collection circuits established by other Hydro records are stored in a separate layer under ISL-011. Post-2018 changes require a later dated layer, not an overwrite of this one."
     },
     {
       "id": "ISL-002",
@@ -307,7 +307,7 @@
         "tests/island-backbone.test.js"
       ],
       "blocker": null,
-      "notes": "The atlas now renders every filed segment in the 58-circuit 2018 layer. Voltage filters, circuit selection, station selection, source-page links, keyboard operation, mobile horizontal scrolling, and links to existing station records are implemented. The 2012 source map remains above the interactive schematic."
+      "notes": "The atlas renders every filed segment in the 58-circuit 2018 assessment layer plus four separately sourced generation collection circuits. Voltage filters, circuit selection, station selection, source-page links, keyboard operation, mobile horizontal scrolling, and links to existing station records are implemented. The 2012 source map remains above the interactive schematic."
     },
     {
       "id": "ISL-003",
@@ -403,7 +403,19 @@
       "dependencies": ["ISL-001", "ISL-009"],
       "completion_evidence": ["research/GENERATION_COLLECTION_230KV_ENGINEERING.md", "research/derived/island-ac-topology-2018.json", "src/data.js", "src/island-backbone.js", "tests/island-topology.test.js"],
       "blocker": null,
-      "notes": "The circuit panels now separate TL234's 1981 wood-pole record, the 2012 generating-station ratings, 2015 planning loads, and 2016 route record. TL263 retains its pre-split length and rating, followed by the reported 2017 Granite Canal Tap retermination. TL270 shows the proposed split filing and the later 2018 filed route. TL235, TL247, TL248, and TL269 remain outside the PUB-NP-084 assessment asset list and require a source-specific expansion layer."
+      "notes": "The circuit panels separate TL234's 1981 wood-pole record, the 2012 generating-station ratings, 2015 planning loads, and 2016 route record. TL263 retains its pre-split length and rating, followed by the reported 2017 Granite Canal Tap retermination. TL270 shows the proposed split filing and the later 2018 filed route. TL235, TL247, TL248, and TL269 remain outside the PUB-NP-084 assessment asset list and are implemented separately under ISL-011."
+    },
+    {
+      "id": "ISL-011",
+      "title": "Add omitted generation collection circuits to the island schematic",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Add TL235, TL247, TL248, and TL269 from their own Hydro filings without changing the scope of the 58-circuit PUB-NP-084 assessment asset list.",
+      "dependencies": ["ISL-001", "ISL-010"],
+      "completion_evidence": ["research/derived/generation-collection-lines.json", "research/GENERATION_COLLECTION_230KV_ENGINEERING.md", "src/island-backbone.js", "tests/generation-collection-lines.test.js", "tests/island-backbone.test.js"],
+      "blocker": null,
+      "notes": "The schematic now contains 62 circuit designations, 58 from the 2018 assessment asset list and four from separate generation collection records. TL235 carries the 2015 load and 2016 route records. TL247 and TL248 carry the Deer Lake connection history, steel-line ratings, planning loads, and route lengths. TL269 separates the 2016 post-HVDC model from the 2017 reported in-service state."
     },
     {
       "id": "GEN-001",

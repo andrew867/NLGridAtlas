@@ -26,7 +26,7 @@ The 2017 General Rate Application describes reconfiguring TL263 at Granite Canal
 
 PUB-NP-084 Attachment A later lists TL270 as a 230 kV circuit from Granite Canal Tap to Granite Canal. It does not publish a separate TL270 length or rating. The atlas does not transfer the older full-length TL263 values to TL270.
 
-## Other generation collection circuits
+## Additional generation collection circuits
 
 The same filed records establish data for circuits that are outside the PUB-NP-084 transmission-assessment asset list used by the current interactive layer.
 
@@ -37,7 +37,7 @@ The same filed records establish data for circuits that are outside the PUB-NP-0
 | TL248 | Cat Arm generation connection | Steel; 246.8 MVA at 30 °C; 374.4 MVA at 15 °C; 466.6 MVA at 0 °C | 466.6 MVA at 0 °C; 127.2 MVA anticipated peak; 85.5 MVA anticipated average | Deer Lake to Massey Drive; 55.119 km; 466.6 MVA |
 | TL269 | Granite Canal Tap to Bottom Brook Terminal Station 2 | Not built when the 2012 table was filed | Not listed in PUB-NLH-324 | Post-HVDC model: 180 km; 460 MVA |
 
-TL235, TL247, TL248, and TL269 require a source-specific expansion layer. Adding them to the PUB-NP-084 dataset would change the scope of that filed asset list.
+The interactive island schematic adds TL235, TL247, TL248, and TL269 through a separate source-specific layer. The original PUB-NP-084 assessment asset list remains unchanged at 58 circuits.
 
 ## Sources
 
@@ -48,6 +48,7 @@ TL235, TL247, TL248, and TL269 require a source-specific expansion layer. Adding
 5. [Ready for Integration, Transition to Operations](http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/correspondance/From%20NLH%20-%20Availability%20of%20Requested%20Information%20from%20Hydro%20-%20July%205,%202017%20Update%20-%20%202017-07-05.PDF), physical PDF pp. 292 to 293.
 6. [2017 General Rate Application, Provincial Electrical System, Revision 5](http://www.pub.nl.ca/applications/2017/NLH2017GRA/applications/NLH%202017%20General%20Rate%20Application%20-%20Volume%20II%20-%20Revision%205%20-%202018-07-04.PDF), physical PDF p. 13.
 7. [PUB-NP-084 Attachment A](http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-084.PDF), physical PDF p. 26.
+8. [PUB-NLH-318, Island Transmission System Design History](http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf), physical PDF p. 4.
 
 ## Archive inventory
 
@@ -62,3 +63,4 @@ All retrieval timestamps are from the local PUB mirror database.
 | 2017 operational study compilation | `mirror/applications/IslandInterconnectedSystem/phasetwo/files/correspondance/From NLH - Availability of Requested Information from Hydro - July 5, 2017 Update - 2017-07-05.PDF` | 2026-11-10T11:18:57Z | `5c36cda7a0e170455d46af5edc8db955ada28da7fff242f9a9d0f0261e9be6c0` |
 | 2017 General Rate Application, Revision 5 | `mirror/applications/2017/NLH2017GRA/applications/NLH 2017 General Rate Application - Volume II - Revision 5 - 2018-07-04.PDF` | 2026-11-10T09:37:24Z | `6168c55ea33488c32a327ab6aaf6718ba1afbd08e87c4c169f723ebfc5d5f902` |
 | PUB-NP-084 | `mirror/applications/2018/2018ratemitigation/responses/PUB-NP-084.PDF` | 2026-11-10T09:17:23Z | `0d4c71016d342ad1dcff9f40d5a9b1f1950ede8d8b41fc18c2b50eee0580afe0` |
+| PUB-NLH-318 | `mirror/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf` | 2026-11-10T11:55:36Z | `341a4aa08a70909a34b79b2a1ae0fe33e365d2e173812abf16144176e9607344` |

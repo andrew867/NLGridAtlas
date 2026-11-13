@@ -16,7 +16,7 @@ The layer contains 58 circuit designations:
 
 Seven circuit designations contain more than one route segment in the table. Those segments remain grouped under the filed circuit designation.
 
-The interactive backbone in `src/island-backbone.js` uses the complete 58-circuit layer. Every endpoint has a stable slug identifier and an explicit schematic position. The positions organize the filed topology for inspection; they are not surveyed coordinates.
+The interactive backbone in `src/island-backbone.js` preserves this 58-circuit assessment layer and adds a separate four-circuit generation collection layer for TL235, TL247, TL248, and TL269. Every endpoint has a stable slug identifier and an explicit schematic position. The positions organize the filed topology for inspection; they are not surveyed coordinates.
 
 ## Open reconciliation
 

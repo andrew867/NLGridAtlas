@@ -1,17 +1,23 @@
 import islandTopology from "../research/derived/island-ac-topology-2018.json" with { type: "json" };
+import generationCollection from "../research/derived/generation-collection-lines.json" with { type: "json" };
+
+const renderedLines = [...islandTopology.lines, ...generationCollection.lines];
 
 const nodeLayout = {
   "Grand Bay (NP)": [70, 785],
   Doyles: [155, 735],
   "Bottom Brook": [285, 690],
+  "Bottom Brook Terminal Station 2": [330, 650],
   Stephenville: [300, 835],
   "Massey Drive": [425, 735],
   Buchans: [560, 620],
   "Stoney Brook": [735, 535],
+  "Grand Falls Frequency Converter": [675, 590],
   "Bay d'Espoir": [850, 735],
   "Upper Salmon": [700, 835],
   "Granite Canal Tap": [590, 865],
   "Granite Canal": [485, 895],
+  "Cat Arm": [285, 555],
   Sunnyside: [1030, 510],
   "Come By Chance": [1140, 405],
   "Western Avalon": [1260, 590],
@@ -67,10 +73,12 @@ const stationTargets = {
   "Bear Cove": { href: "#hydro-terminal-browser", code: "BRC" },
   "Berry Hill": { href: "#hydro-terminal-browser", code: "BRH" },
   "Bottom Brook": { href: "#hydro-terminal-browser", code: "BBK" },
+  "Bottom Brook Terminal Station 2": { href: "#hydro-terminal-browser", code: "BBK" },
   Buchans: { href: "#hydro-terminal-browser", code: "BUC" },
   "Come By Chance": { href: "#hydro-terminal-browser", code: "CBC" },
   "Deer Lake": { href: "#hydro-terminal-browser", code: "DLK" },
   Doyles: { href: "#hydro-terminal-browser", code: "DOY" },
+  "Grand Falls Frequency Converter": { href: "#hydro-terminal-browser", code: "GFS" },
   "English Harbour West": { href: "#hydro-terminal-browser", code: "EHW" },
   "Grandy Brook": { href: "#hydro-terminal-browser", code: "GRB" },
   Hardwoods: { href: "#terminal-hwd" },
@@ -79,6 +87,7 @@ const stationTargets = {
   Howley: { href: "#hydro-terminal-browser", code: "HOW" },
   "Massey Drive": { href: "#hydro-terminal-browser", code: "MAS" },
   "Granite Canal": { href: "#hydro-terminal-browser", code: "GRC" },
+  "Cat Arm": { href: "#hydro-terminal-browser", code: "CAT" },
   "Hinds Lake": { href: "#hydro-terminal-browser", code: "HLA" },
   "Oxen Pond": { href: "#terminal-opd" },
   "Peter's Barron": { href: "#hydro-terminal-browser", code: "PBR" },
@@ -98,7 +107,9 @@ const labelOverrides = {
   "Roddicktown Wood Chip": "RODDICKTON WOOD CHIP",
   "St. Anthony Diesel Plant": "ST. ANTHONY DIESEL",
   "Voisey's Bay Nickel Mine": "VOISEY'S BAY NICKEL",
-  "Granite Canal Tap": "GRANITE CANAL TAP"
+  "Granite Canal Tap": "GRANITE CANAL TAP",
+  "Bottom Brook Terminal Station 2": "BOTTOM BROOK #2",
+  "Grand Falls Frequency Converter": "GRAND FALLS FC"
 };
 
 function escapeHtml(value) {
@@ -118,7 +129,7 @@ export function islandStationId(name) {
 }
 
 function buildSegments() {
-  const segments = islandTopology.lines.flatMap((line) => line.segments.map((segment, segmentIndex) => ({
+  const segments = renderedLines.flatMap((line) => line.segments.map((segment, segmentIndex) => ({
     ...segment,
     circuit: line.circuit,
     voltage: line.voltage_kv,
@@ -147,11 +158,21 @@ function buildSegments() {
 }
 
 function connectedCircuits(name) {
-  return islandTopology.lines.filter((line) => line.segments.some((segment) => segment.from === name || segment.to === name));
+  return renderedLines.filter((line) => line.segments.some((segment) => segment.from === name || segment.to === name));
 }
 
-function sourceUrl(page) {
-  return `${islandTopology.source.url}#page=${page}`;
+function lineSource(line) {
+  return line.source || islandTopology.source;
+}
+
+function sourceUrl(line) {
+  const source = lineSource(line);
+  const firstPage = String(source.physical_pdf_pages || line.physical_pdf_page).match(/\d+/)?.[0];
+  return firstPage ? `${source.url}#page=${firstPage}` : source.url;
+}
+
+function sourceLabel(line) {
+  return line.source?.title || "PUB-NP-084 Attachment A";
 }
 
 function engineeringRecordSource(record) {
@@ -196,21 +217,26 @@ function stationLink(name) {
 
 function circuitDetail(line) {
   const routes = line.segments.map((segment) => `${segment.from} to ${segment.to}`).join("; ");
+  const source = lineSource(line);
+  const pages = source.physical_pdf_pages || String(line.physical_pdf_page);
   return `
     <span class="profile-label">SELECTED CIRCUIT</span>
     <h4>${escapeHtml(line.circuit)}</h4>
     <strong class="island-detail-voltage voltage-${line.voltage_kv}">${line.voltage_kv} kV</strong>
     <dl>
       <div><dt>Filed route</dt><dd>${escapeHtml(routes)}</dd></div>
-      <div><dt>Source year</dt><dd>${islandTopology.as_of_year}</dd></div>
-      <div><dt>Table</dt><dd>${escapeHtml(line.table)}</dd></div>
+      <div><dt>Source year</dt><dd>${line.source_year || islandTopology.as_of_year}</dd></div>
+      <div><dt>Source set</dt><dd>${escapeHtml(line.table || "Generation collection")}</dd></div>
     </dl>
     ${engineeringRecords(line)}
-    <a class="evidence-link" href="${escapeHtml(sourceUrl(line.physical_pdf_page))}" target="_blank" rel="noreferrer">PUB-NP-084 Attachment A / physical PDF p. ${line.physical_pdf_page}</a>`;
+    <a class="evidence-link" href="${escapeHtml(sourceUrl(line))}" target="_blank" rel="noreferrer">${escapeHtml(sourceLabel(line))} / physical PDF ${String(pages).includes(" to ") || String(pages).includes(" and ") ? "pp." : "p."} ${escapeHtml(pages)}</a>`;
 }
 
 function stationDetail(name) {
   const circuits = connectedCircuits(name);
+  const firstLine = circuits[0];
+  const firstSource = firstLine ? lineSource(firstLine) : islandTopology.source;
+  const firstPages = firstSource.physical_pdf_pages || String(firstLine?.physical_pdf_page || 24);
   const circuitList = circuits.map((line) => `<button type="button" data-island-circuit-select="${escapeHtml(line.circuit)}"><strong>${escapeHtml(line.circuit)}</strong><span>${line.voltage_kv} kV</span></button>`).join("");
   return `
     <span class="profile-label">SELECTED STATION OR TAP</span>
@@ -218,20 +244,21 @@ function stationDetail(name) {
     <p>${circuits.length} filed circuit designation${circuits.length === 1 ? "" : "s"} at this point.</p>
     <div class="island-connected-circuits">${circuitList}</div>
     ${stationLink(name)}
-    <a class="evidence-link" href="${escapeHtml(sourceUrl(circuits[0]?.physical_pdf_page || 24))}" target="_blank" rel="noreferrer">PUB-NP-084 Attachment A / 2018 line tables</a>`;
+    <a class="evidence-link" href="${escapeHtml(firstLine ? sourceUrl(firstLine) : islandTopology.source.url)}" target="_blank" rel="noreferrer">${escapeHtml(firstLine ? sourceLabel(firstLine) : islandTopology.source.title)} / physical PDF ${String(firstPages).includes(" to ") || String(firstPages).includes(" and ") ? "pp." : "p."} ${escapeHtml(firstPages)}</a>`;
 }
 
 function initialDetail() {
   return `
-    <span class="profile-label">2018 FILED NETWORK</span>
-    <h4>58 circuit designations</h4>
+    <span class="profile-label">2017 TO 2018 FILED NETWORK</span>
+    <h4>62 circuit designations</h4>
     <dl>
-      <div><dt>230 kV</dt><dd>26 circuits</dd></div>
+      <div><dt>230 kV</dt><dd>30 circuits</dd></div>
       <div><dt>138 kV</dt><dd>16 circuits</dd></div>
       <div><dt>66 kV</dt><dd>16 circuits</dd></div>
     </dl>
-    <p>Select a line for its filed route and source page, or select a station for its connected circuits.</p>
-    <a class="evidence-link" href="${escapeHtml(sourceUrl(24))}" target="_blank" rel="noreferrer">PUB-NP-084 Attachment A / physical PDF pp. 24 to 26</a>`;
+    <p>The schematic combines 58 circuits from the 2018 transmission assessment asset list with four generation collection circuits established in separate Hydro records.</p>
+    <a class="evidence-link" href="${escapeHtml(islandTopology.source.url)}#page=24" target="_blank" rel="noreferrer">PUB-NP-084 Attachment A / physical PDF pp. 24 to 26</a>
+    <a class="evidence-link" href="${escapeHtml(generationCollection.lines[0].source.url)}#page=60" target="_blank" rel="noreferrer">Generation collection routes / physical PDF pp. 60 to 61</a>`;
 }
 
 function renderMap(svg) {
@@ -274,11 +301,11 @@ export function initIslandBackbone() {
   detail.innerHTML = initialDetail();
   renderMap(svg);
 
-  const counts = Object.fromEntries([66, 138, 230].map((voltage) => [voltage, islandTopology.lines.filter((line) => line.voltage_kv === voltage).length]));
+  const counts = Object.fromEntries([66, 138, 230].map((voltage) => [voltage, renderedLines.filter((line) => line.voltage_kv === voltage).length]));
   controls.innerHTML = [230, 138, 66].map((voltage) => `<button type="button" aria-pressed="true" data-island-voltage="${voltage}"><strong>${voltage} kV</strong><span>${counts[voltage]} circuits</span></button>`).join("");
 
   function selectCircuit(circuit) {
-    const line = islandTopology.lines.find((item) => item.circuit === circuit);
+    const line = renderedLines.find((item) => item.circuit === circuit);
     if (!line) return;
     svg.querySelectorAll(".island-circuit").forEach((item) => item.classList.toggle("selected", item.dataset.islandCircuit === circuit));
     svg.querySelectorAll(".island-node").forEach((item) => item.classList.remove("selected"));
@@ -325,4 +352,4 @@ export function initIslandBackbone() {
   });
 }
 
-export { islandTopology, nodeLayout as islandNodeLayout, stationTargets as islandStationTargets };
+export { generationCollection, islandTopology, renderedLines as islandRenderedLines, nodeLayout as islandNodeLayout, stationTargets as islandStationTargets };

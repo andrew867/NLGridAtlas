@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "status": "reported",
+  "scope": "Island 230 kV generation collection circuits omitted from PUB-NP-084 Attachment A but established by Hydro filings and system studies",
+  "normalization_notes": [
+    "The rendered Stoney Brook node retains the spelling used in PUB-NP-084. The generation-collection sources print Stony Brook.",
+    "TL269 uses the 2017 in-service endpoints Granite Canal Tap Terminal Station and Bottom Brook Terminal Station 2.",
+    "Study lengths and ratings remain attached to their dated pre-HVDC or post-HVDC model records."
+  ],
+  "lines": [
+    {
+      "circuit": "TL235",
+      "voltage_kv": 230,
+      "source_year": 2016,
+      "source": {
+        "title": "Probabilistic Based Transmission Reliability Assessment",
+        "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/reports/From%20NLH%20-%20Probabilistic%20Based%20Transmiss~Assessment%20Report%20-%20Island%20Interconnected%20System%20(Teshmont%20Report)%20-%202016-05-27.PDF",
+        "physical_pdf_pages": "60"
+      },
+      "segments": [
+        {"from": "Grand Falls Frequency Converter", "to": "Stoney Brook", "source_to": "Stony Brook"}
+      ],
+      "engineering_records": [
+        {
+          "year": 2015,
+          "label": "Filed winter planning record",
+          "facts": [
+            "0 °C rating: 322.2 MVA",
+            "Anticipated 2014/2015 winter peak: 86.1 MVA",
+            "Anticipated 2015 average loading: 64.3 MVA",
+            "Hydro identified TL235 as the connection for Exploits generation at Grand Falls and Bishop's Falls"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-324.pdf",
+            "physical_pdf_pages": "2 to 3"
+          }
+        },
+        {
+          "year": 2016,
+          "label": "Pre-HVDC reliability base-case record",
+          "facts": [
+            "Filed route: Grand Falls Frequency Converter to Stony Brook",
+            "Filed route length: 0.620 km",
+            "Winter rating used in the study: 322.2 MVA"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/reports/From%20NLH%20-%20Probabilistic%20Based%20Transmiss~Assessment%20Report%20-%20Island%20Interconnected%20System%20(Teshmont%20Report)%20-%202016-05-27.PDF",
+            "physical_pdf_pages": "60"
+          }
+        }
+      ]
+    },
+    {
+      "circuit": "TL247",
+      "voltage_kv": 230,
+      "source_year": 2015,
+      "source": {
+        "title": "PUB-NLH-318, Island Transmission System Design History",
+        "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf",
+        "physical_pdf_pages": "4"
+      },
+      "segments": [
+        {"from": "Cat Arm", "to": "Deer Lake"}
+      ],
+      "engineering_records": [
+        {
+          "year": 1984,
+          "label": "Deer Lake connection record",
+          "facts": [
+            "Hydro records TL247 from Cat Arm to Deer Lake as constructed in 1984",
+            "TL247 and the 1983 TL248 addition established the Deer Lake ring-bus arrangement in 1983 to 1984"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf",
+            "physical_pdf_pages": "4"
+          }
+        },
+        {
+          "year": 2012,
+          "label": "Generating-station transmission record",
+          "facts": [
+            "Filed construction: steel line",
+            "30 °C rating: 246.8 MVA",
+            "15 °C rating: 374.4 MVA",
+            "0 °C rating: 466.6 MVA",
+            "The filed Cat Arm path limit was 175 MW for under-frequency load shedding"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Depreciation/files/rfi/CA-NLH-048.pdf",
+            "physical_pdf_pages": "1"
+          }
+        },
+        {
+          "year": 2015,
+          "label": "Filed winter planning record",
+          "facts": [
+            "0 °C rating: 466.6 MVA",
+            "Anticipated 2014/2015 winter peak: 132.5 MVA",
+            "Anticipated 2015 average loading: 85.3 MVA"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-324.pdf",
+            "physical_pdf_pages": "2 to 3"
+          }
+        },
+        {
+          "year": 2016,
+          "label": "Pre-HVDC reliability base-case record",
+          "facts": [
+            "Filed route length: 122.909 km",
+            "Winter rating used in the study: 466.6 MVA"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/reports/From%20NLH%20-%20Probabilistic%20Based%20Transmiss~Assessment%20Report%20-%20Island%20Interconnected%20System%20(Teshmont%20Report)%20-%202016-05-27.PDF",
+            "physical_pdf_pages": "60"
+          }
+        }
+      ]
+    },
+    {
+      "circuit": "TL248",
+      "voltage_kv": 230,
+      "source_year": 2015,
+      "source": {
+        "title": "PUB-NLH-318, Island Transmission System Design History",
+        "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf",
+        "physical_pdf_pages": "4"
+      },
+      "segments": [
+        {"from": "Deer Lake", "to": "Massey Drive"}
+      ],
+      "engineering_records": [
+        {
+          "year": 1983,
+          "label": "Deer Lake connection record",
+          "facts": [
+            "Hydro records TL248 from Deer Lake to Massey Drive as constructed in 1983",
+            "TL248 and the 1984 TL247 addition established the Deer Lake ring-bus arrangement in 1983 to 1984"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf",
+            "physical_pdf_pages": "4"
+          }
+        },
+        {
+          "year": 2012,
+          "label": "Generating-station transmission record",
+          "facts": [
+            "Filed construction: steel line",
+            "30 °C rating: 246.8 MVA",
+            "15 °C rating: 374.4 MVA",
+            "0 °C rating: 466.6 MVA",
+            "The filed Cat Arm path limit was 175 MW for under-frequency load shedding"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Depreciation/files/rfi/CA-NLH-048.pdf",
+            "physical_pdf_pages": "1"
+          }
+        },
+        {
+          "year": 2015,
+          "label": "Filed winter planning record",
+          "facts": [
+            "0 °C rating: 466.6 MVA",
+            "Anticipated 2014/2015 winter peak: 127.2 MVA",
+            "Anticipated 2015 average loading: 85.5 MVA"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-324.pdf",
+            "physical_pdf_pages": "2 to 3"
+          }
+        },
+        {
+          "year": 2016,
+          "label": "Pre-HVDC reliability base-case record",
+          "facts": [
+            "Filed route length: 55.119 km",
+            "Winter rating used in the study: 466.6 MVA"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/reports/From%20NLH%20-%20Probabilistic%20Based%20Transmiss~Assessment%20Report%20-%20Island%20Interconnected%20System%20(Teshmont%20Report)%20-%202016-05-27.PDF",
+            "physical_pdf_pages": "60"
+          }
+        }
+      ]
+    },
+    {
+      "circuit": "TL269",
+      "voltage_kv": 230,
+      "source_year": 2017,
+      "source": {
+        "title": "Ready for Integration, Transition to Operations",
+        "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/correspondance/From%20NLH%20-%20Availability%20of%20Requested%20Information%20from%20Hydro%20-%20July%205,%202017%20Update%20-%20%202017-07-05.PDF",
+        "physical_pdf_pages": "293"
+      },
+      "segments": [
+        {"from": "Granite Canal Tap", "to": "Bottom Brook Terminal Station 2"}
+      ],
+      "engineering_records": [
+        {
+          "year": 2016,
+          "label": "Post-HVDC reliability base-case record",
+          "status": "modelled",
+          "facts": [
+            "The post-HVDC base case modelled TL269 from Granite Canal to Bottom Brook",
+            "Modelled route length: 180 km",
+            "Winter rating used in the study: 460 MVA"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/reports/From%20NLH%20-%20Probabilistic%20Based%20Transmiss~Assessment%20Report%20-%20Island%20Interconnected%20System%20(Teshmont%20Report)%20-%202016-05-27.PDF",
+            "physical_pdf_pages": "61"
+          }
+        },
+        {
+          "year": 2017,
+          "label": "In-service operational study record",
+          "status": "reported",
+          "facts": [
+            "An April 2017 operational study states that all AC work for the Maritime Link had been completed",
+            "The study states that TL269 between Granite Canal Tap Terminal Station and Bottom Brook Terminal Station 2 was in service"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/correspondance/From%20NLH%20-%20Availability%20of%20Requested%20Information%20from%20Hydro%20-%20July%205,%202017%20Update%20-%20%202017-07-05.PDF",
+            "physical_pdf_pages": "293"
+          }
+        }
+      ]
+    }
+  ]
+}
