@@ -502,6 +502,18 @@
       "notes": "IC-270 physical PDF pp. 3 to 4 establish the pre-interconnection generating capacities and the TL257 and TL261 line records. Order P.U. 34 (2004) physical PDF pp. 1 and 11 records the Roddickton plant abandonments and relocation of two 850 kW mobile units to St. Anthony. The 2024 Annual Planning Assessment physical PDF p. 42 provides the current filed 9.7 MW St. Anthony backup capacity."
     },
     {
+      "id": "ISL-017",
+      "title": "Add Avalon terminal asset in-service dates from the 2026 GRA",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Add exact in-service dates for named Holyrood and Western Avalon terminal assets without inferring a bus arrangement from the financial asset schedule.",
+      "dependencies": ["ISL-004", "ISL-006"],
+      "completion_evidence": ["research/AVALON_TERMINAL_ASSET_DATES.md", "research/HOLYROOD_MUSKRAT_RECORD.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "IIC-NLH-012 Attachment 2 records the replacement Holyrood T7 in service on February 1, 2024; Western Avalon TL208 protection and disconnect L08G in service on November 4, 2017; the TL208 cable and terminal-hardware group in service on December 15, 2018; and breaker B4L64 in service on November 5, 2020. The asset schedule does not establish internal bus positions."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

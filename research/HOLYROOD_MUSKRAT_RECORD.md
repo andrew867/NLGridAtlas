@@ -40,6 +40,8 @@ The 2018 execution report states that the Holyrood 39L protection upgrade was de
 
 The 2026 GRA source file has SHA-256 `629de4bf8e5da66aa5cf4b9df88413ca6fa215c16a7acd406d2b7b781855c8ee`. These records establish equipment in-service dates. They do not replace the missing current station one-line.
 
+The same asset schedule records `New HRD T7` with an in-service date of February 1, 2024 on physical PDF p. 10, attachment p. 3. This is the replacement unit previously identified as former Churchill Falls T31.
+
 ## Transformer inventory in the 2022 condition study
 
 | Equipment | Filed data | Physical PDF page |

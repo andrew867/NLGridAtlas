@@ -521,7 +521,7 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
   ]);
   assert.match(components["hrd-t8"].summary, /new 75\/100\/125 MVA transformer was installed as Holyrood T8 in 2014/);
   assert.match(components["hrd-t7"].summary, /Churchill Falls T31/);
-  assert.match(components["hrd-t7"].summary, /finished in 2024/);
+  assert.match(components["hrd-t7"].summary, /entered service on February 1, 2024/);
   assert.ok(howley.sources.some((reference) => reference.sourceId === "nlh-howley-system-2003"));
   assert.ok(masseyDrive.sources.some((reference) => reference.sourceId === "nlh-system-additions-2001"));
   assert.ok(bayDEspoir.sources.some((reference) => reference.sourceId === "nlh-bde-one-lines-2016"));
@@ -2026,8 +2026,12 @@ test("Western Avalon joins the terminal and distribution records without merging
   assert.match(modelFacts, /WAV-T1 17.0 MVA; WAV-T2 17.3 MVA/);
   assert.match(westernAvalon.planningRecord.facts.flat().join(" "), /66\/12.5 kV; 13.30 MVA; 6.78 MVA 2026 forecast/);
   assert.match(distributionFacts, /Type H mechanism replaced with a Type VV mechanism/);
+  assert.match(distributionFacts, /TL208 protection In service November 4, 2017/);
+  assert.match(distributionFacts, /Three phase cables and one spare cable entered service December 15, 2018/);
+  assert.match(distributionFacts, /64L breaker B4L64 In service November 5, 2020/);
   assert.match(distributionFacts, /one of three feeders leaving Western Avalon Substation/);
   assert.match(distributionFacts, /construct 6.5 km of three-phase line along Route 201/);
+  assert.equal(sources.find((source) => source.id === "nlh-2026-iic-nlh-012").pages, "physical PDF pp. 10 to 14; attachment pp. 3 to 7");
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(main, /profile\.circuitSources/);
   assert.match(main, /circuitSources\.map/);

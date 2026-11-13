@@ -15,6 +15,7 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added exact in-service dates from the 2026 GRA asset schedule for the replacement Holyrood T7, Western Avalon TL208 protection and terminal equipment, and Western Avalon breaker B4L64. The asset dates remain separate from unproved bus positions.
 - Added dated Colliers and Springfield one-lines using the December 31, 2022 transmission endpoint register, the 2018 feeder register, and the 2027 transformer table. Springfield retains its explicit 2015 modernization completion record. Colliers breaker positions and direct completion remain open.
 - Added the 2006 switchgear cubicle registers for King's Bridge, Pepperrell, Ridge Road, St. John's Main, and the Stamp's Lane T1/T2 bank. The station histories preserve the feeder breaker, transformer breaker, and tie designations without treating the maintenance forms as current operating one-lines.
 - Added the six transformer repair durations in NLH-NP-014 to the Blaketown, Dunville, Stamp's Lane, Humber, and Trinity station histories.
@@ -57,7 +58,7 @@ Updated: 2026-11-13
 - Separated the original Holyrood T8 from the later Holyrood T8 model after locating the 2014 relocation record. The original unit entered service in the Sunnyside T1 position by December 2014.
 - Added Buchans T1's 1970 Massey Drive installation, 1998 Buchans relocation, and 2018 replacement plan.
 - Confirmed the replacement Holyrood T8 was installed in 2014 at 75/100/125 MVA.
-- Added the Holyrood T7 equipment chain: the 1969 Canadian General Electric unit, the 2018 removal from service, the Churchill Falls T31 replacement, and project completion in 2024.
+- Added the Holyrood T7 equipment chain: the 1969 Canadian General Electric unit, the 2018 removal from service, the Churchill Falls T31 replacement, and the replacement unit's February 1, 2024 in-service date.
 - Located Holyrood sheet B, revision 17, dated December 18, 2014. It updates one station section but is not a complete post-2012 station drawing set.
 - Added Bay d'Espoir station 1 and station 2 equipment records from the filed one-lines: six original unit banks and generators, G7 and T7, the two 230/69 kV interface transformers, and the 69/24 kV local transformer.
 - Added the 2014 Come By Chance facility arrangement: two 30/40/50 MVA, 230/13.8 kV transformers manufactured in 1972, the split B1/B2 bus, the documented 13.8 kV equipment, and the later Braya-specific cost assignment.

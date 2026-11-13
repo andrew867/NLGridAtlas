@@ -85,6 +85,7 @@ Work items:
 - ISL-014
 - ISL-015
 - ISL-016
+- ISL-017
 - NPREG-001
 - NPREG-002
 - ASSET-001
