@@ -52,8 +52,16 @@ function circuitSymbol(circuit, index, count, bus, direction, escapeHtml, linkTa
   const lineEnd = bus.y + direction * 68;
   const labelY = bus.y + direction * 88;
   const destinationY = bus.y + direction * 114;
+  const breakerY = bus.y + direction * 32;
+  const breakerMarkup = circuit.breaker
+    ? `<g class="terminal-line-breaker">
+      <rect x="${x - 7}" y="${breakerY - 11}" width="14" height="22" />
+      <text x="${x + 18}" y="${breakerY + 4}" text-anchor="start">${escapeHtml(circuit.breaker)}</text>
+    </g>`
+    : "";
   const body = `<g class="terminal-circuit">
     <line x1="${x}" y1="${bus.y}" x2="${x}" y2="${lineEnd}" />
+    ${breakerMarkup}
     <text class="terminal-circuit-id" x="${x}" y="${labelY}">${escapeHtml(circuit.label)}</text>
     <text class="terminal-circuit-destination" x="${x}" y="${destinationY}">${escapeHtml(circuit.destination)}</text>
   </g>`;

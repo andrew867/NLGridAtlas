@@ -74,6 +74,32 @@ test("Stony Brook renders the filed split bus and B1 ring section", () => {
   assert.match(html, /data-hydro-terminal-record="GFC"/);
 });
 
+test("Deer Lake renders the filed 230 kV and 66 kV breaker records", () => {
+  const deerLake = islandTerminalRecords.find((record) => record.code === "DLK");
+  assert.ok(deerLake);
+  assert.deepEqual(deerLake.diagram.transformers.map(({ label, rating }) => [label, rating]), [
+    ["T2", "45/60/75 MVA"],
+    ["T1", "25/33.3/41.7 MVA"]
+  ]);
+  assert.deepEqual(deerLake.diagram.circuits.map(({ label, breaker }) => [label, breaker || null]), [
+    ["TL247", "B3L47"],
+    ["TL248", "B3L48"],
+    ["TL239", null],
+    ["TL245", null],
+    ["TL226", "B2L26"],
+    ["TL225", "B2L25"]
+  ]);
+  assert.ok(deerLake.sources.some((source) => source.sourceId === "nlh-deer-lake-operating-2014" && source.pages.includes("770")));
+  const html = renderTerminalDiagram(deerLake.diagram, escapeHtml);
+  assert.match(html, /class="terminal-line-breaker"/);
+  assert.match(html, />B3L47</);
+  assert.match(html, />B3L48</);
+  assert.match(html, />B2L26</);
+  assert.match(html, />B2L25</);
+  assert.match(html, /data-hydro-terminal-record="CAT"/);
+  assert.match(html, /data-hydro-terminal-record="DLP"/);
+});
+
 test("Bay d'Espoir separates the individual unit terminals from the Station 2 buses", () => {
   const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
   assert.equal(bayDEspoir.diagram.buses[1].kind, "terminals");

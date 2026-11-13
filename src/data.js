@@ -1334,10 +1334,20 @@ export const sources = [
     year: 2017,
     organization: "NL Hydro",
     title: "Updated Integrated Action Plan, Risk and Reward Review of 230 kV Terminal Stations",
-    topics: ["Stony Brook", "230 kV", "ring bus", "B1B2", "B1L31", "B1L35", "TL204", "TL205", "TL231", "TL232", "TL235", "transformer protection"],
-    pages: "physical PDF pp. 9 to 13, 34, 40 and 42",
+    topics: ["Stony Brook", "Deer Lake", "230 kV", "ring bus", "B1B2", "B1L31", "B1L35", "B3L47", "B3L48", "TL204", "TL205", "TL231", "TL232", "TL235", "TL247", "TL248", "transformer protection"],
+    pages: "physical PDF pp. 9 to 13, 19, 34, 40 and 42",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/From%20NLH%20-%20Updated%20Integrated%20Action%20Plan%20-%20Status%20Update%20-%202017-03-03.PDF"
+  },
+  {
+    id: "nlh-deer-lake-operating-2014",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "2014 Capital Budget Application, Deer Lake System Operating Diagram and L25-2 Addition",
+    topics: ["Deer Lake", "66 kV", "B2", "B2L25", "B2L26", "L25-2", "TL225", "TL226", "system operating diagram"],
+    pages: "physical PDF pp. 769 to 770",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/files/application/NLH2014ApplicationComplete-VolumeII.pdf"
   },
   {
     id: "nlh-transmission-loads-2015",
@@ -5927,14 +5937,14 @@ export const islandTerminalRecords = [
     code: "DLK",
     name: "Deer Lake Terminal Station",
     status: "verified",
-    facts: [["2003 transformer ratings", "230/138 kV at 45/60/75 MVA; 138/66 kV at 25/33.3/41.7 MVA"], ["2010 transformer record", "Maximum ratings printed as 75 MVA and 41.6 MVA"], ["138 kV circuits", "TL239 to Berry Hill; TL245 to Howley"], ["66 kV circuit", "TL226 through Wiltondale to Rocky Harbour and Berry Hill"], ["Adjacent generation", "Deer Lake Power shown at 81 MW on the 2013 one-line"]],
+    facts: [["Transformation", "T2, 230/138 kV, 45/60/75 MVA; T1, 138/66 kV, 25/33.3/41.7 MVA"], ["230 kV terminals", "TL247 to Cat Arm through B3L47; TL248 to Massey Drive through B3L48"], ["138 kV circuits", "TL239 to Berry Hill; TL245 to Howley"], ["66 kV bus B2", "TL226 through B2L26 to Wiltondale; TL225 through B2L25 to Deer Lake Power"], ["2014 TL225 isolation", "Disconnect L25-2 was added 1.4 km from the terminal-station end so Deer Lake customers could remain supplied from Deer Lake Power during a terminal-station outage"], ["2016 transformer protection study", "T2 had no dedicated 230 kV breaker; a T2 fault operated B3L47 and B3L48, isolating TL247, TL248 and Cat Arm generation"]],
     diagram: {
-      label: "2003 transformer ratings / 2018 routes",
-      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }, { id: "b3", label: "66 kV bus", voltage: "66 kV" }],
-      transformers: [{ label: "230/138 kV transformer", rating: "45/60/75 MVA", from: "b1", to: "b2" }, { label: "138/66 kV transformer", rating: "25/33.3/41.7 MVA", from: "b2", to: "b3" }],
-      circuits: [{ label: "TL239", destination: "Berry Hill", bus: "b2" }, { label: "TL245", destination: "Howley", bus: "b2" }, { label: "TL226", destination: "Wiltondale", bus: "b3" }]
+      label: "2014 B2 operating diagram / 2016 230 kV breaker record / 2003 transformer ratings / 2024 routes",
+      buses: [{ id: "b1", label: "bus B3", voltage: "230 kV" }, { id: "b2", label: "station bus", voltage: "138 kV" }, { id: "b3", label: "bus B2", voltage: "66 kV" }],
+      transformers: [{ label: "T2", rating: "45/60/75 MVA", from: "b1", to: "b2", x: 420 }, { label: "T1", rating: "25/33.3/41.7 MVA", from: "b2", to: "b3", x: 700 }],
+      circuits: [{ label: "TL247", destination: "Cat Arm", bus: "b1", destinationCode: "CAT", breaker: "B3L47", x: 220 }, { label: "TL248", destination: "Massey Drive", bus: "b1", destinationCode: "MAS", breaker: "B3L48", x: 900 }, { label: "TL239", destination: "Berry Hill", bus: "b2", destinationCode: "BRH", x: 220 }, { label: "TL245", destination: "Howley", bus: "b2", destinationCode: "HOW", x: 900 }, { label: "TL226", destination: "Wiltondale", bus: "b3", breaker: "B2L26", x: 220 }, { label: "TL225", destination: "Deer Lake Power", bus: "b3", destinationCode: "DLP", breaker: "B2L25", x: 900 }]
     },
-    sources: [sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF p. 378"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF pp. 377 to 378"), sourceRef("nlh-deer-lake-operating-2014", "physical PDF pp. 769 to 770"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 19"), sourceRef("nlh-planning-2024", "physical PDF p. 15"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "DLP",

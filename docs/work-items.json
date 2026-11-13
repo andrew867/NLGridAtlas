@@ -562,6 +562,18 @@
       "notes": "The 2016 risk and reward review, physical PDF pp. 34 and 42, establishes T2 on B2, T1 on B1, normally closed disconnect B1B2, line breakers B2L04 and B1L32, and the B1L31, L05L31, L05L35 and B1L35 ring section serving TL231, TL205 and TL235. The proposed dedicated transformer breakers remain excluded from the installed arrangement because the same study did not recommend the additions."
     },
     {
+      "id": "ISL-022",
+      "title": "Reconstruct the filed Deer Lake 230 kV and 66 kV terminal equipment",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Replace the connection sketch with the named T2 and T1 transformer stages, the filed B3L47 and B3L48 230 kV terminals, the filed B2L26 and B2L25 66 kV terminals, and all six documented transmission routes without inventing the missing 138 kV breaker arrangement.",
+      "dependencies": ["ISL-003", "SRC-001"],
+      "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "src/styles.css", "tests/terminal-diagram.test.js", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "The 2014 operating diagram, physical PDF pp. 769 to 770, establishes bus B2, breakers B2L26 and B2L25, TL226 and TL225, and the L25-2 isolation point. The 2016 transformer-protection study, physical PDF p. 19, identifies T2 with B3L47 and B3L48 on TL247 and TL248. The 2003 report supplies staged transformer ratings. No filed breaker-level drawing for the 138 kV section was found in this pass."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,
