@@ -154,6 +154,7 @@ Updated: 2026-11-12
 - Added St. Catherines with both 94L sections, cascaded 66/25/12.5 kV transformation, separate SCT-01 and SCT-02 voltage records, the completed 2023 Riverhead section, and the filed St. Catherines to Blaketown rebuild route.
 - Added New Harbour with its local 80L connections, 1981 wood-bus station record, both feeder capacity rows, current transformer loading, 2007 voltage-regulator work, and the filed feeder automation.
 - Added Quartz as a documented 55L tap with its route map, current transformer record, dated feeder-voltage conflict, and the reported 55L rebuild scope change and final expenditure.
+- Added Placentia Junction with its 55L corridor position, 66/7.2 kV transformation, PJN-01 capacity records, transformer replacement history, and the filed Dunville sectionalization proposal.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work

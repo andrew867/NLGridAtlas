@@ -541,8 +541,6 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [ ] The searched record gives a filed 2025 to 2026 schedule for the St. Catherines to Blaketown work. A later completion record is required before the atlas labels those scopes complete.
 - [ ] No searched record publishes a breaker-level St. Catherines station one-line. The atlas diagram shows only the documented voltage transformation, feeder voltages, and line connections.
 
-## Remaining data classes
-
 ## Quartz station record
 
 - [x] The 2023 filing identifies Quartz as a tap on 66 kV radial 55L between Blaketown and Clarkes Pond. The line was the sole supply for Placentia Junction, Dunville, Clarkes Pond, and Quartz, physical PDF p. 440.
@@ -555,7 +553,16 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [ ] No searched record explains how the 12.47 kV QTZ-01 feeder relates electrically to the 4.16 or 4.2 kV transformer secondary. The one-line does not connect that feeder to the documented 4.2 kV bus.
 - [ ] No searched record confirms reconstruction of the deferred 5 km section after the highway twinning project.
 
-## Remaining data classes
+## Placentia Junction station record
+
+- [x] The filed 55L route map places Placentia Junction between Blaketown and Quartz on the radial route to Dunville and Clarkes Pond, physical PDF p. 462.
+- [x] The historical station table records 0.333 MVA total capacity, wood 66 kV and 7.2 kV structures, and replacement of PJN-T1 in 2003 with asset 200081, physical PDF p. 195.
+- [x] The 2027 fleet table records PJN-T1 at 66/7.2 kV and 0.33 MVA with a 0.00 MVA 2026 forecast, physical PDF p. 549.
+- [x] The 2014 feeder table records PJN-01 at 7.2 kV, 303 A rating, 228 A winter planning value, 3.8 MVA rating, 2.8 MVA winter planning value, and 0.3 MVA forecast, physical PDF p. 10; attachment p. 8.
+- [x] The 2018 listing records PJN-T1 at 66/7.2 kV and PJN-01 at 7.2 kV, physical PDF pp. 5 and 15.
+- [x] The 2021 filing proposed a Dunville breaker that would divide the corridor into 55L from Blaketown to Dunville and new 50L from Dunville to Clarkes Pond, physical PDF p. 109.
+- [ ] No searched record confirms the 50L circuit designation entered service. The 2022 filing still describes the complete Blaketown to Clarkes Pond route as 55L, physical PDF pp. 440 and 462.
+- [ ] No searched record publishes a breaker-level Placentia Junction station one-line.
 
 ## New Harbour station record
 

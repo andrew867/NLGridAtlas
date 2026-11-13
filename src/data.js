@@ -254,7 +254,7 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Milton", "New Harbour", "Port Blandford", "Quartz", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "NHR-T1", "PBD-T1", "QTZ-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
+    topics: ["Abrahams Cove", "Garnish", "Milton", "New Harbour", "Placentia Junction", "Port Blandford", "Quartz", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "NHR-T1", "PJN-T1", "PBD-T1", "QTZ-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
     pages: "physical PDF pp. 166, 194 to 198, 201, 203 to 204, 206 to 208 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
@@ -1564,7 +1564,7 @@ export const sources = [
     year: 2018,
     organization: "Newfoundland Power",
     title: "PUB-NP-081, Distribution Transformer and Feeder Listings",
-    topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "Quartz", "QTZ-T1", "QTZ-01", "12.47 kV", "forecast loading"],
+    topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "Placentia Junction", "PJN-T1", "PJN-01", "Quartz", "QTZ-T1", "QTZ-01", "7.2 kV", "12.47 kV", "forecast loading"],
     pages: "physical PDF pp. 3, 5, 8, 11 and 15",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-081.PDF"
@@ -1624,7 +1624,7 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "PUB-NP-276, Distribution Feeder Listing",
-    topics: ["Stamp's Lane", "SLA-05", "New Harbour", "NHR-01", "NHR-02", "Quartz", "QTZ-01", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "feeder voltage", "feeder capacity"],
+    topics: ["Stamp's Lane", "SLA-05", "New Harbour", "NHR-01", "NHR-02", "Placentia Junction", "PJN-01", "Quartz", "QTZ-01", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "7.2 kV", "feeder voltage", "feeder capacity"],
     pages: "physical PDF pp. 6, 10 and 15; attachment pp. 4, 8 and 13",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-276.pdf"
@@ -3264,7 +3264,7 @@ export const sources = [
     year: 2020,
     organization: "Newfoundland Power",
     title: "2021 Capital Budget Application, Dunville Refurbishment and Load Growth Study",
-    topics: ["Dunville", "Clarkes Pond", "DUN-T1", "CLK-T1", "CLK-T2", "55L", "50L", "66 kV", "25 kV", "12.5 kV"],
+    topics: ["Dunville", "Clarkes Pond", "Placentia Junction", "Quartz", "DUN-T1", "CLK-T1", "CLK-T2", "55L", "50L", "66 kV", "25 kV", "12.5 kV"],
     pages: "physical PDF pp. 108 to 109 and 119 to 124",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
@@ -9492,8 +9492,7 @@ export const stationProfiles = [
         pages: "physical PDF pp. 109, 119 to 120 and 124",
         facts: [
           ["Transformer project", "replace the 8.3 MVA DUN-T1 with a spare 25 MVA, 66/25 kV transformer"],
-          ["Line project", "install a 66 kV breaker and divide 55L into 55L from Blaketown to Dunville and new 50L from Dunville to Clarkes Pond"],
-          ["Evidence state", "filed project arrangement; the atlas does not treat the 50L designation as current without a later completion or circuit record"]
+          ["Line project", "install a 66 kV breaker and divide 55L into 55L from Blaketown to Dunville and new 50L from Dunville to Clarkes Pond"]
         ]
       },
       {
@@ -10184,6 +10183,99 @@ export const stationProfiles = [
     referenceSheetLabel: "55L CORRIDOR MAP",
     referenceSheets: [
       { title: "55L route and station sequence", image: "./reference-maps/qtz-55l-2023-overview.png", alt: "Aerial route map of transmission line 55L from Blaketown through Placentia Junction, Quartz, and Dunville to Clarkes Pond", sourceId: "np-2023-55l", pages: "physical PDF p. 462" }
+    ]
+  },
+  {
+    code: "PJN",
+    name: "Placentia Junction",
+    voltage: "66/7.2 kV",
+    circuitRegisterLabel: "2022 FILED 55L CONNECTION",
+    circuitSource: { sourceId: "np-2023-55l", pages: "physical PDF pp. 440 and 462" },
+    connectedCircuits: [
+      { circuit: "55L connection", from: "Placentia Junction", from_code: "PJN", to: "55L between Blaketown and Dunville", to_code: null }
+    ],
+    feederRegisterLabel: "2014 FEEDER CAPACITY RECORD",
+    feederRegister: ["PJN-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "documented 55L connection and voltage transformation",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "7.2 kV bus", voltage: "7.2 kV" }],
+      transformers: [{ label: "PJN-T1", rating: "0.33 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "55L", destination: "BLK-DUN corridor", bus: "b1", link: false },
+        { label: "PJN-01", destination: "local distribution", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2003 TRANSFORMER RECORD",
+      title: "Placentia Junction distribution station",
+      sourceId: "np-2010-substation-asset-history",
+      pages: "physical PDF p. 195",
+      facts: [
+        ["Station structures", "wood 66 kV and 7.2 kV structures"],
+        ["Transformer capacity", "0.333 MVA total capacity"],
+        ["PJN-T1", "replaced in 2003 with asset 200081"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["PJN-T1", "66/7.2 kV; 0.33 MVA; 0.00 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2005 TO 2006 STATION WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 207",
+        facts: [
+          ["2005", "power fuses replaced"],
+          ["2006", "transformer replaced with spare equipment"]
+        ]
+      },
+      {
+        label: "2014 FEEDER CAPACITY RECORD",
+        sourceId: "np-2014-pub-np-276",
+        pages: "physical PDF p. 10; attachment p. 8",
+        facts: [
+          ["PJN-01", "7.2 kV; 303 A rating; 228 A winter planning value; 3.8 MVA rating; 2.8 MVA winter planning value; 0.3 MVA forecast; 10.6% forecast loading"]
+        ]
+      },
+      {
+        label: "2018 TRANSFORMER AND FEEDER RECORD",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF pp. 5 and 15",
+        facts: [
+          ["PJN-T1", "66/7.2 kV; 0.3 MVA; 0.2 MVA forecast"],
+          ["PJN-01", "7.2 kV; 2.8 MVA planning value; 3.8 MVA rating; 0.2 MVA forecast"]
+        ]
+      },
+      {
+        label: "2021 FILED 55L SECTIONALIZATION",
+        sourceId: "np-2021-dunville-study",
+        pages: "physical PDF p. 109",
+        facts: [
+          ["Filed work", "install a 66 kV breaker at Dunville to divide the corridor into 55L from Blaketown to Dunville and new 50L from Dunville to Clarkes Pond"],
+          ["Reliability purpose", "remove Placentia Junction and Quartz outages caused by faults between Dunville and Clarkes Pond"]
+        ]
+      },
+      {
+        label: "2022 FILED 55L RECORD",
+        sourceId: "np-2023-55l",
+        pages: "physical PDF pp. 440 to 441 and 462",
+        facts: [
+          ["Line", "66 kV radial 55L from Blaketown to Clarkes Pond; sole supply for Placentia Junction, Dunville, Clarkes Pond, and Quartz"],
+          ["Route order", "Blaketown, Placentia Junction, Quartz, Dunville, and Clarkes Pond"],
+          ["Original line", "43.3 km; built in 1971; 372 single-pole structures; 54 H-frame structures; 4/0 AASC, 266.8 ACSR, and 397.5 ACSR conductor"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "55L CORRIDOR MAP",
+    referenceSheets: [
+      { title: "55L route and Placentia Junction position", image: "./reference-maps/qtz-55l-2023-overview.png", alt: "Aerial route map of transmission line 55L from Blaketown through Placentia Junction, Quartz, and Dunville to Clarkes Pond", sourceId: "np-2023-55l", pages: "physical PDF p. 462" }
     ]
   },
   {

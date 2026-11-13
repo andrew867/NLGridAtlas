@@ -1193,7 +1193,7 @@ test("Dunville separates its documented 2020 layout from the later 25 MVA transf
   assert.match(planningFacts, /DUN-T1 66\/25 kV; 25 MVA; 7\.98 MVA 2026 forecast/);
   assert.match(historyFacts, /former 25 MVA Lewisporte transformer LEW-T1/);
   assert.match(historyFacts, /773 days.*transformer rewind/);
-  assert.match(historyFacts, /does not treat the 50L designation as current/);
+  assert.match(historyFacts, /divide 55L into 55L from Blaketown to Dunville and new 50L from Dunville to Clarkes Pond/);
 });
 
 test("Clarkes Pond retains the documented parallel transformer bank and three feeders", () => {
@@ -1437,6 +1437,25 @@ test("Quartz preserves the 55L tap and its conflicting transformer and feeder vo
   assert.match(historyFacts, /Quartz tap constructed in 1981/);
   assert.match(historyFacts, /5 km near Whitbourne remained on the former line/);
   assert.match(historyFacts, /\$13\.032 million against the \$10\.612 million budget/);
+});
+
+test("Placentia Junction retains its 55L connection and 7.2 kV station record", () => {
+  const placentiaJunction = stationProfiles.find((station) => station.code === "PJN");
+  assert.ok(placentiaJunction);
+  assert.deepEqual(placentiaJunction.connectedCircuits.map(({ circuit }) => circuit), ["55L connection"]);
+  assert.deepEqual(placentiaJunction.feederRegister, ["PJN-01"]);
+  assert.deepEqual(placentiaJunction.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "7.2 kV"]);
+  assert.deepEqual(placentiaJunction.diagram.transformers.map(({ label, rating }) => [label, rating]), [["PJN-T1", "0.33 MVA"]]);
+  assert.deepEqual(placentiaJunction.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 462"]);
+  const existingFacts = placentiaJunction.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = placentiaJunction.planningRecord.facts.flat().join(" ");
+  const historyFacts = placentiaJunction.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /wood 66 kV and 7\.2 kV structures/);
+  assert.match(existingFacts, /PJN-T1 replaced in 2003 with asset 200081/);
+  assert.match(planningFacts, /66\/7\.2 kV; 0\.33 MVA; 0\.00 MVA 2026 forecast/);
+  assert.match(historyFacts, /PJN-01 7\.2 kV; 303 A rating; 228 A winter planning value/);
+  assert.match(historyFacts, /remove Placentia Junction and Quartz outages caused by faults between Dunville and Clarkes Pond/);
+  assert.match(historyFacts, /Blaketown, Placentia Junction, Quartz, Dunville, and Clarkes Pond/);
 });
 
 test("Northwest Brook retains its 109L connection and completed 2025 modernization", () => {
