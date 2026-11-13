@@ -78,6 +78,8 @@ Work items:
 - ISL-009
 - ISL-010
 - ISL-011
+- ISL-012
+- ISL-013
 
 Exit gate:
 

@@ -415,7 +415,31 @@
       "dependencies": ["ISL-001", "ISL-010"],
       "completion_evidence": ["research/derived/generation-collection-lines.json", "research/GENERATION_COLLECTION_230KV_ENGINEERING.md", "src/island-backbone.js", "tests/generation-collection-lines.test.js", "tests/island-backbone.test.js"],
       "blocker": null,
-      "notes": "The schematic contains 62 circuit designations, 58 from the 2018 assessment asset list and four from separate generation collection records. TL235 carries the 2015 load and 2016 route records and opens a dedicated Grand Falls Frequency Converter record. TL247 and TL248 carry the Deer Lake connection history, steel-line ratings, planning loads, and route lengths. Cat Arm TL247 now links to Deer Lake. TL269 separates the 2016 post-HVDC model from the 2017 reported in-service state."
+      "notes": "The generation collection layer adds four circuits outside the 58-circuit assessment asset list. TL235 carries the 2015 load and 2016 route records and opens a dedicated Grand Falls Frequency Converter record. TL247 and TL248 carry the Deer Lake connection history, steel-line ratings, planning loads, and route lengths. Cat Arm TL247 links to Deer Lake. TL269 separates the 2016 post-HVDC model from the 2017 reported in-service state."
+    },
+    {
+      "id": "ISL-012",
+      "title": "Add the complete 2015 138 kV and 66/69 kV planning-load tables",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Attach every filed 138 kV and 66/69 kV rating, anticipated winter peak, anticipated average load, filed average-to-peak percentage, and circuit-specific operating note in PUB-NLH-324 to its dated circuit record.",
+      "dependencies": ["ISL-001", "ISL-011"],
+      "completion_evidence": ["research/derived/transmission-loads-2015.json", "research/TRANSMISSION_LOADS_2015_ENGINEERING.md", "src/island-backbone.js", "tests/transmission-loads-2015.test.js"],
+      "blocker": null,
+      "notes": "The source-specific layer contains all 16 rows from the 138 kV table and all 16 rows from the 66/69 kV table. It keeps the 2015 source voltage label separate from the later 2018 circuit voltage and preserves the filing's generation, reactor, capacitor, line-charging, mine-closure, and production-dependent loading notes."
+    },
+    {
+      "id": "ISL-013",
+      "title": "Add TL225 and TL257 as supplemental island AC circuits",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Add the two circuits in the 2015 planning-load tables that are absent from the PUB-NP-084 assessment asset list, using separate endpoint and voltage records.",
+      "dependencies": ["ISL-012"],
+      "completion_evidence": ["research/derived/supplemental-ac-lines.json", "research/SUPPLEMENTAL_ISLAND_AC_LINES.md", "src/island-backbone.js", "tests/supplemental-ac-lines.test.js"],
+      "blocker": null,
+      "notes": "TL225 is rendered as the filed 66 kV Deer Lake Power to Deer Lake circuit. TL257 is rendered as the filed 69 kV St. Anthony Airport to Roddickton Woodchip circuit with its 1989 construction record. Both receive their 2015 rating and load records without changing the 58-circuit assessment asset list."
     },
     {
       "id": "GEN-001",

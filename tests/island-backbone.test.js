@@ -7,7 +7,8 @@ import {
   islandRenderedLines,
   islandStationId,
   islandStationTargets,
-  islandTopology
+  islandTopology,
+  supplementalAcLines
 } from "../src/island-backbone.js";
 
 const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
@@ -25,11 +26,12 @@ test("island backbone has a schematic position and stable identifier for every f
 
 test("island backbone exposes the dated source, voltage filters, and accessible map shell", () => {
   assert.match(html, /id="island-backbone"/);
-  assert.match(html, /2017 TO 2018 FILED LINE RECORDS/);
+  assert.match(html, /DATED FILED LINE RECORDS/);
   assert.match(html, /id="island-backbone-map"/);
   assert.match(html, /aria-label="Scrollable island transmission schematic"/);
   assert.match(css, /\.island-circuit\.voltage-230/);
   assert.match(css, /\.island-circuit\.voltage-138/);
+  assert.match(css, /\.island-circuit\.voltage-69/);
   assert.match(css, /\.island-circuit\.voltage-66/);
   assert.match(css, /\.island-backbone-scroll[^}]*overflow-x: auto/);
 });
@@ -37,10 +39,13 @@ test("island backbone exposes the dated source, voltage filters, and accessible 
 test("generation collection layer adds four separately sourced 230 kV circuits", () => {
   assert.equal(islandTopology.lines.length, 58);
   assert.equal(generationCollection.lines.length, 4);
-  assert.equal(islandRenderedLines.length, 62);
+  assert.equal(supplementalAcLines.lines.length, 2);
+  assert.equal(islandRenderedLines.length, 64);
   assert.equal(islandRenderedLines.filter((line) => line.voltage_kv === 230).length, 30);
+  assert.equal(islandRenderedLines.filter((line) => line.voltage_kv === 69).length, 1);
+  assert.equal(islandRenderedLines.filter((line) => line.voltage_kv === 66).length, 17);
   assert.deepEqual(generationCollection.lines.map((line) => line.circuit), ["TL235", "TL247", "TL248", "TL269"]);
-  assert.match(html, /58 circuit designations in the 2018 transmission assessment asset list and four generation collection circuits/);
+  assert.match(html, /58 circuit designations in the 2018 transmission assessment asset list and six circuits from separate Hydro records/);
 });
 
 test("Avalon layouts place Holyrood north of Soldiers Pond and TL201", () => {

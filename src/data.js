@@ -1244,10 +1244,30 @@ export const sources = [
     year: 2015,
     organization: "NL Hydro",
     title: "PUB-NLH-324, Transmission Line Loads for 2015",
-    topics: ["230 kV", "138 kV", "66 kV", "69 kV", "winter rating", "anticipated peak", "average loading", "TL204", "TL205", "TL209", "TL211", "TL228", "TL231", "TL232", "TL233", "TL234", "TL235", "TL247", "TL248", "TL263"],
+    topics: ["230 kV", "138 kV", "66 kV", "69 kV", "winter rating", "anticipated peak", "average loading", "TL204", "TL205", "TL209", "TL210", "TL211", "TL212", "TL214", "TL215", "TL219", "TL220", "TL221", "TL222", "TL223", "TL224", "TL225", "TL226", "TL227", "TL228", "TL229", "TL231", "TL232", "TL233", "TL234", "TL235", "TL239", "TL241", "TL243", "TL244", "TL245", "TL247", "TL248", "TL250", "TL251", "TL252", "TL253", "TL254", "TL256", "TL257", "TL259", "TL260", "TL261", "TL262", "TL263", "TL264", "TL280"],
     pages: "physical PDF pp. 1 to 5",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-324.pdf"
+  },
+  {
+    id: "nlh-transmission-routes-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "PUB-NLH-309, Hydro 138 kV and 66/69 kV Transmission Lines",
+    topics: ["138 kV", "66 kV", "69 kV", "TL225", "Deer Lake Power", "Deer Lake", "radial operation", "transmission endpoints"],
+    pages: "physical PDF pp. 1 to 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-309.pdf"
+  },
+  {
+    id: "nlh-northern-line-history-2001",
+    year: 2001,
+    organization: "NL Hydro",
+    title: "IC-270, Northern Peninsula Transmission Line Construction History",
+    topics: ["TL221", "TL241", "TL244", "TL256", "TL257", "TL261", "Roddickton Woodchip", "St. Anthony Airport", "construction history"],
+    pages: "physical PDF pp. 32 to 43",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf"
   },
   {
     id: "nlh-probabilistic-transmission-2016",

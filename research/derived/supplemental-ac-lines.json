@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "status": "reported",
+  "scope": "Filed island AC circuits omitted from the PUB-NP-084 assessment asset list and not part of the generation collection layer",
+  "lines": [
+    {
+      "circuit": "TL225",
+      "voltage_kv": 66,
+      "source_year": 2015,
+      "source": {
+        "title": "PUB-NLH-309, Hydro 138 kV and 66/69 kV Transmission Lines",
+        "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-309.pdf",
+        "physical_pdf_pages": "4"
+      },
+      "segments": [
+        {"from": "Deer Lake Power", "to": "Deer Lake"}
+      ],
+      "engineering_records": [
+        {
+          "year": 2015,
+          "label": "Filed circuit function",
+          "facts": [
+            "Hydro identifies TL225 as a 66 kV line between Deer Lake Power and Deer Lake Terminal Station",
+            "Hydro identifies TL225 as the exception to the normally radial operation of its 66/69 kV lines"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-309.pdf",
+            "physical_pdf_pages": "4"
+          }
+        }
+      ]
+    },
+    {
+      "circuit": "TL257",
+      "voltage_kv": 69,
+      "source_year": 2001,
+      "source": {
+        "title": "IC-270, Northern Peninsula Transmission Line Construction History",
+        "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+        "physical_pdf_pages": "35"
+      },
+      "segments": [
+        {"from": "St. Anthony Airport", "to": "Roddicktown Wood Chip", "source_to": "Roddickton Woodchip"}
+      ],
+      "engineering_records": [
+        {
+          "year": 1989,
+          "label": "Construction record",
+          "facts": [
+            "TL257 is a 69 kV line between Roddickton Woodchip and St. Anthony Airport Terminal Station",
+            "Hydro records the line as built in 1989"
+          ],
+          "source": {
+            "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf",
+            "physical_pdf_pages": "35"
+          }
+        }
+      ]
+    }
+  ]
+}

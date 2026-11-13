@@ -1,7 +1,38 @@
 import islandTopology from "../research/derived/island-ac-topology-2018.json" with { type: "json" };
 import generationCollection from "../research/derived/generation-collection-lines.json" with { type: "json" };
+import planningLoads2015 from "../research/derived/transmission-loads-2015.json" with { type: "json" };
+import supplementalAcLines from "../research/derived/supplemental-ac-lines.json" with { type: "json" };
 
-const renderedLines = [...islandTopology.lines, ...generationCollection.lines];
+const planningLoadByCircuit = new Map(planningLoads2015.records.map((record) => [record.circuit, record]));
+
+function planningLoadEngineeringRecord(record) {
+  return {
+    year: 2015,
+    label: `${record.source_table} filed rating and load record`,
+    facts: [
+      `0 °C rating: ${record.rating_at_0c_mva.toFixed(1)} MVA`,
+      `Anticipated 2014/2015 winter peak: ${record.anticipated_winter_peak_mva.toFixed(1)} MVA`,
+      `Anticipated 2015 average loading: ${record.anticipated_2015_average_mva.toFixed(1)} MVA`,
+      `Filed average-to-peak ratio: ${record.filed_average_to_peak_percent}%`,
+      ...(record.notes || [])
+    ],
+    source: {
+      url: planningLoads2015.source.url,
+      physical_pdf_pages: String(record.physical_pdf_page)
+    }
+  };
+}
+
+const datedAcLines = [...islandTopology.lines, ...supplementalAcLines.lines].map((line) => {
+  const planningLoad = planningLoadByCircuit.get(line.circuit);
+  if (!planningLoad) return line;
+  return {
+    ...line,
+    engineering_records: [...(line.engineering_records || []), planningLoadEngineeringRecord(planningLoad)]
+  };
+});
+
+const renderedLines = [...datedAcLines, ...generationCollection.lines];
 
 const nodeLayout = {
   "Grand Bay (NP)": [70, 785],
@@ -18,6 +49,7 @@ const nodeLayout = {
   "Granite Canal Tap": [590, 865],
   "Granite Canal": [485, 895],
   "Cat Arm": [285, 555],
+  "Deer Lake Power": [295, 535],
   Sunnyside: [1030, 510],
   "Come By Chance": [1140, 405],
   "Western Avalon": [1260, 590],
@@ -249,16 +281,18 @@ function stationDetail(name) {
 
 function initialDetail() {
   return `
-    <span class="profile-label">2017 TO 2018 FILED NETWORK</span>
-    <h4>62 circuit designations</h4>
+    <span class="profile-label">DATED FILED NETWORK</span>
+    <h4>64 circuit designations</h4>
     <dl>
       <div><dt>230 kV</dt><dd>30 circuits</dd></div>
       <div><dt>138 kV</dt><dd>16 circuits</dd></div>
-      <div><dt>66 kV</dt><dd>16 circuits</dd></div>
+      <div><dt>69 kV</dt><dd>1 circuit</dd></div>
+      <div><dt>66 kV</dt><dd>17 circuits</dd></div>
     </dl>
-    <p>The schematic combines 58 circuits from the 2018 transmission assessment asset list with four generation collection circuits established in separate Hydro records.</p>
+    <p>The schematic combines 58 circuits from the 2018 transmission assessment asset list with six circuits established in separate Hydro records.</p>
     <a class="evidence-link" href="${escapeHtml(islandTopology.source.url)}#page=24" target="_blank" rel="noreferrer">PUB-NP-084 Attachment A / physical PDF pp. 24 to 26</a>
-    <a class="evidence-link" href="${escapeHtml(generationCollection.lines[0].source.url)}#page=60" target="_blank" rel="noreferrer">Generation collection routes / physical PDF pp. 60 to 61</a>`;
+    <a class="evidence-link" href="${escapeHtml(generationCollection.lines[0].source.url)}#page=60" target="_blank" rel="noreferrer">Generation collection routes / physical PDF pp. 60 to 61</a>
+    <a class="evidence-link" href="${escapeHtml(supplementalAcLines.lines[0].source.url)}#page=4" target="_blank" rel="noreferrer">Supplemental AC circuits / physical PDF p. 4</a>`;
 }
 
 function renderMap(svg) {
@@ -301,8 +335,8 @@ export function initIslandBackbone() {
   detail.innerHTML = initialDetail();
   renderMap(svg);
 
-  const counts = Object.fromEntries([66, 138, 230].map((voltage) => [voltage, renderedLines.filter((line) => line.voltage_kv === voltage).length]));
-  controls.innerHTML = [230, 138, 66].map((voltage) => `<button type="button" aria-pressed="true" data-island-voltage="${voltage}"><strong>${voltage} kV</strong><span>${counts[voltage]} circuits</span></button>`).join("");
+  const counts = Object.fromEntries([66, 69, 138, 230].map((voltage) => [voltage, renderedLines.filter((line) => line.voltage_kv === voltage).length]));
+  controls.innerHTML = [230, 138, 69, 66].map((voltage) => `<button type="button" aria-pressed="true" data-island-voltage="${voltage}"><strong>${voltage} kV</strong><span>${counts[voltage]} circuits</span></button>`).join("");
 
   function selectCircuit(circuit) {
     const line = renderedLines.find((item) => item.circuit === circuit);
@@ -352,4 +386,4 @@ export function initIslandBackbone() {
   });
 }
 
-export { generationCollection, islandTopology, renderedLines as islandRenderedLines, nodeLayout as islandNodeLayout, stationTargets as islandStationTargets };
+export { generationCollection, islandTopology, planningLoads2015, supplementalAcLines, renderedLines as islandRenderedLines, nodeLayout as islandNodeLayout, stationTargets as islandStationTargets };

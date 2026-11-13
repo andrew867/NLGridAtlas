@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "status": "reported",
+  "as_of_year": 2015,
+  "scope": "Hydro 138 kV and 66/69 kV transmission-line ratings and anticipated loads filed in PUB-NLH-324",
+  "source": {
+    "title": "PUB-NLH-324, Transmission Line Loads for 2015",
+    "url": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-324.pdf",
+    "physical_pdf_pages": "4 to 5"
+  },
+  "field_notes": [
+    "The rating column is the filed MVA rating at 0 degrees Celsius.",
+    "Anticipated peak is the filed 2014/2015 winter peak in normal system configuration.",
+    "Average loading is the anticipated average line load for 2015.",
+    "The filed percentage compares average loading with anticipated peak; it is not a percentage of the line rating.",
+    "The 66/69 kV table designation is retained as a dated source label and does not overwrite later circuit voltage records."
+  ],
+  "records": [
+    {"circuit":"TL210","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":144.1,"anticipated_winter_peak_mva":67.6,"anticipated_2015_average_mva":43.9,"filed_average_to_peak_percent":65},
+    {"circuit":"TL212","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":112.4,"anticipated_winter_peak_mva":26.1,"anticipated_2015_average_mva":9.4,"filed_average_to_peak_percent":36},
+    {"circuit":"TL214","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":112.4,"anticipated_winter_peak_mva":27.8,"anticipated_2015_average_mva":11.9,"filed_average_to_peak_percent":43},
+    {"circuit":"TL219","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":161.7,"anticipated_winter_peak_mva":28.8,"anticipated_2015_average_mva":12.2,"filed_average_to_peak_percent":42},
+    {"circuit":"TL222","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":112.4,"anticipated_winter_peak_mva":11.1,"anticipated_2015_average_mva":10.5,"filed_average_to_peak_percent":95,"notes":["The peak case assumes Hinds Lake and Cat Arm generation in service.","Hinds Lake generation has a significant effect on 138 kV flows between Deer Lake and Stony Brook."]},
+    {"circuit":"TL223","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":92.7,"anticipated_winter_peak_mva":19.5,"anticipated_2015_average_mva":18.9,"filed_average_to_peak_percent":97,"notes":["The peak case assumes Hinds Lake and Cat Arm generation in service.","Hinds Lake generation has a significant effect on 138 kV flows between Deer Lake and Stony Brook."]},
+    {"circuit":"TL224","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":92.7,"anticipated_winter_peak_mva":38.0,"anticipated_2015_average_mva":27.0,"filed_average_to_peak_percent":71,"notes":["The peak case assumes Hinds Lake and Cat Arm generation in service.","Hinds Lake generation has a significant effect on 138 kV flows between Deer Lake and Stony Brook."]},
+    {"circuit":"TL239","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":161.7,"anticipated_winter_peak_mva":38.6,"anticipated_2015_average_mva":23.1,"filed_average_to_peak_percent":60},
+    {"circuit":"TL241","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":160.8,"anticipated_winter_peak_mva":24.6,"anticipated_2015_average_mva":14.4,"filed_average_to_peak_percent":59,"notes":["Two 5 MVAR, 138 kV shunt reactors on TL241 were normally in service for sudden loss of load and light-load voltage control.","The reactors affect the filed line loading."]},
+    {"circuit":"TL243","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":161.7,"anticipated_winter_peak_mva":83.0,"anticipated_2015_average_mva":49.8,"filed_average_to_peak_percent":60,"notes":["TL243 connects Hinds Lake Generating Station to the Island Interconnected System.","Average loading depends on Hinds Lake production."]},
+    {"circuit":"TL244","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":112.6,"anticipated_winter_peak_mva":21.9,"anticipated_2015_average_mva":12.1,"filed_average_to_peak_percent":55,"notes":["One 5 MVAR, 138 kV shunt reactor on TL244 was normally in service for sudden loss of load and light-load voltage control.","The reactor affects the filed line loading."]},
+    {"circuit":"TL245","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":112.6,"anticipated_winter_peak_mva":39.1,"anticipated_2015_average_mva":26.7,"filed_average_to_peak_percent":68,"notes":["The peak case assumes Hinds Lake and Cat Arm generation in service.","Hinds Lake generation has a significant effect on 138 kV flows between Deer Lake and Stony Brook."]},
+    {"circuit":"TL250","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":161.7,"anticipated_winter_peak_mva":7.8,"anticipated_2015_average_mva":6.8,"filed_average_to_peak_percent":87,"notes":["TL250 is a relatively long, lightly loaded 138 kV line.","The Bottom Brook average-load reading is influenced by line charging during lighter load conditions."]},
+    {"circuit":"TL256","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":160.8,"anticipated_winter_peak_mva":16.5,"anticipated_2015_average_mva":11.0,"filed_average_to_peak_percent":66,"notes":["TL256 connects the St. Anthony and Roddickton area to the Island Interconnected System.","Three 3 MVAR, 69 kV switched shunt capacitor banks at St. Anthony Airport affect the average loading."]},
+    {"circuit":"TL259","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":161.7,"anticipated_winter_peak_mva":35.4,"anticipated_2015_average_mva":18.2,"filed_average_to_peak_percent":51},
+    {"circuit":"TL260","source_table":"138 kV","physical_pdf_page":4,"rating_at_0c_mva":161.7,"anticipated_winter_peak_mva":9.6,"anticipated_2015_average_mva":6.2,"filed_average_to_peak_percent":60},
+    {"circuit":"TL215","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":46.0,"anticipated_winter_peak_mva":22.1,"anticipated_2015_average_mva":8.5,"filed_average_to_peak_percent":38,"notes":["The peak assumes Rose Blanche Brook Hydro Plant in service at 5.7 MW."]},
+    {"circuit":"TL220","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":56.2,"anticipated_winter_peak_mva":14.7,"anticipated_2015_average_mva":6.5,"filed_average_to_peak_percent":44},
+    {"circuit":"TL221","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":53.8,"anticipated_winter_peak_mva":7.0,"anticipated_2015_average_mva":4.0,"filed_average_to_peak_percent":57},
+    {"circuit":"TL225","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":53.8,"anticipated_winter_peak_mva":23.0,"anticipated_2015_average_mva":20.1,"filed_average_to_peak_percent":87,"notes":["TL225 connects Deer Lake Power generation to Deer Lake Terminal Station.","The line is part of the delivery path to Corner Brook Pulp and Paper through the 230 kV connection to Massey Drive."]},
+    {"circuit":"TL226","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":53.8,"anticipated_winter_peak_mva":6.9,"anticipated_2015_average_mva":3.2,"filed_average_to_peak_percent":46},
+    {"circuit":"TL227","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":53.8,"anticipated_winter_peak_mva":2.0,"anticipated_2015_average_mva":0.8,"filed_average_to_peak_percent":40},
+    {"circuit":"TL229","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":53.4,"anticipated_winter_peak_mva":2.3,"anticipated_2015_average_mva":1.1,"filed_average_to_peak_percent":48},
+    {"circuit":"TL251","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":56.2,"anticipated_winter_peak_mva":1.3,"anticipated_2015_average_mva":0.7,"filed_average_to_peak_percent":56,"notes":["The peak case assumes Rattle Brook generation in service."]},
+    {"circuit":"TL252","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":56.2,"anticipated_winter_peak_mva":2.1,"anticipated_2015_average_mva":1.0,"filed_average_to_peak_percent":48,"notes":["The peak case assumes Rattle Brook generation in service."]},
+    {"circuit":"TL253","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":56.2,"anticipated_winter_peak_mva":4.0,"anticipated_2015_average_mva":1.3,"filed_average_to_peak_percent":46,"notes":["The peak case assumes Rattle Brook generation in service."]},
+    {"circuit":"TL254","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":80.8,"anticipated_winter_peak_mva":7.1,"anticipated_2015_average_mva":3.8,"filed_average_to_peak_percent":53},
+    {"circuit":"TL257","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":56.2,"anticipated_winter_peak_mva":3.5,"anticipated_2015_average_mva":2.0,"filed_average_to_peak_percent":57},
+    {"circuit":"TL261","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":76.9,"anticipated_winter_peak_mva":11.6,"anticipated_2015_average_mva":6.7,"filed_average_to_peak_percent":58},
+    {"circuit":"TL262","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":53.8,"anticipated_winter_peak_mva":2.0,"anticipated_2015_average_mva":1.2,"filed_average_to_peak_percent":60},
+    {"circuit":"TL264","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":53.8,"anticipated_winter_peak_mva":7.4,"anticipated_2015_average_mva":5.9,"filed_average_to_peak_percent":80,"notes":["The filing expected Duck Pond Mine to close during 2015."]},
+    {"circuit":"TL280","source_table":"66/69 kV","physical_pdf_page":5,"rating_at_0c_mva":53.8,"anticipated_winter_peak_mva":17.9,"anticipated_2015_average_mva":17.2,"filed_average_to_peak_percent":96,"notes":["TL280 connects Star Lake Generating Station to the Island Interconnected System.","Average loading depends on Star Lake production."]}
+  ]
+}

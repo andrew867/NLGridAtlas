@@ -166,6 +166,8 @@ Updated: 2026-11-13
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 - Added Sunnyside as one combined Hydro terminal and Newfoundland Power distribution record. The January 2015 operating diagram establishes T1, T4, SUN-T5, both transmission buses, SUN-01, and SUN-03. The March 2014 inspection sheets identify the distribution breaker, recloser, regulator, and transformer equipment, while the 2027 register supplies SUN-T5's current fleet value and 2026 forecast.
 - Added TL235 as a dedicated Grand Falls Frequency Converter record and connected Cat Arm TL247 to its documented Deer Lake endpoint.
+- Added all 32 rows in the 2015 Hydro 138 kV and 66/69 kV planning tables, including 0 degrees Celsius ratings, winter peaks, average loads, filed average-to-peak percentages, and circuit-specific operating notes.
+- Added TL225 and TL257 as separate supplemental AC circuits. TL225 uses the filed 66 kV Deer Lake Power connection; TL257 uses the filed 69 kV St. Anthony Airport to Roddickton Woodchip connection and its 1989 construction record.
 
 ## Active work
 
