@@ -1420,6 +1420,25 @@ test("New Harbour retains its local 80L connections, feeder capacities and dated
   assert.match(historyFacts, /80L from Blaketown to Heart's Content/);
 });
 
+test("Quartz preserves the 55L tap and its conflicting transformer and feeder voltage records", () => {
+  const quartz = stationProfiles.find((station) => station.code === "QTZ");
+  assert.ok(quartz);
+  assert.deepEqual(quartz.connectedCircuits.map(({ circuit }) => circuit), ["55L tap"]);
+  assert.deepEqual(quartz.feederRegister, ["QTZ-01"]);
+  assert.deepEqual(quartz.diagram.transformers.map(({ label, rating }) => [label, rating]), [["QTZ-T1", "0.75 MVA"]]);
+  assert.equal(quartz.diagram.circuits.some(({ label }) => label === "QTZ-01"), false);
+  assert.deepEqual(quartz.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 462"]);
+  const existingFacts = quartz.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = quartz.planningRecord.facts.flat().join(" ");
+  const historyFacts = quartz.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /wood 66 kV and 4\.16 kV structures installed in 1968/);
+  assert.match(planningFacts, /66\/4\.2 kV; 0\.75 MVA; 0\.10 MVA 2026 forecast/);
+  assert.match(historyFacts, /QTZ-01 12\.47 kV; 224 A rating; 168 A winter planning value/);
+  assert.match(historyFacts, /Quartz tap constructed in 1981/);
+  assert.match(historyFacts, /5 km near Whitbourne remained on the former line/);
+  assert.match(historyFacts, /\$13\.032 million against the \$10\.612 million budget/);
+});
+
 test("Northwest Brook retains its 109L connection and completed 2025 modernization", () => {
   const northwestBrook = stationProfiles.find((station) => station.code === "NWB");
   assert.ok(northwestBrook);

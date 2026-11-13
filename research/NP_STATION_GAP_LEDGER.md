@@ -543,6 +543,20 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 
 ## Remaining data classes
 
+## Quartz station record
+
+- [x] The 2023 filing identifies Quartz as a tap on 66 kV radial 55L between Blaketown and Clarkes Pond. The line was the sole supply for Placentia Junction, Dunville, Clarkes Pond, and Quartz, physical PDF p. 440.
+- [x] The historical station table records 0.725 MVA total capacity and wood 66 kV and 4.16 kV structures installed in 1968. It also records the former station name as Newlite, physical PDF p. 194.
+- [x] The 2027 fleet table records QTZ-T1 at 66/4.2 kV and 0.75 MVA with a 0.10 MVA 2026 forecast, physical PDF p. 549.
+- [x] The 2014 and 2018 feeder listings both record QTZ-01 at 12.47 kV, while the transformer listings record QTZ-T1 at 4.16 or 4.2 kV, physical PDF p. 10; attachment p. 8; PUB-NP-081 physical PDF pp. 5 and 15.
+- [x] The filed 55L route map shows the station sequence from Blaketown through Placentia Junction, Quartz, and Dunville to Clarkes Pond, physical PDF p. 462.
+- [x] The 2024 expenditure report records that a 5 km section near Whitbourne remained on the former alignment because highway approvals were not secured. The new line was tied into the existing section, physical PDF p. 30.
+- [x] The 2025 expenditure report records $13.032 million in actual expenditure against the $10.612 million budget, physical PDF pp. 17 and 25.
+- [ ] No searched record explains how the 12.47 kV QTZ-01 feeder relates electrically to the 4.16 or 4.2 kV transformer secondary. The one-line does not connect that feeder to the documented 4.2 kV bus.
+- [ ] No searched record confirms reconstruction of the deferred 5 km section after the highway twinning project.
+
+## Remaining data classes
+
 ## New Harbour station record
 
 - [x] The 2025 transmission register records 80L from Blaketown to Heart's Content, CA-NP-168 Attachment A, physical PDF p. 3.

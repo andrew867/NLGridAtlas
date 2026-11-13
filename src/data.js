@@ -254,7 +254,7 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Milton", "New Harbour", "Port Blandford", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "NHR-T1", "PBD-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
+    topics: ["Abrahams Cove", "Garnish", "Milton", "New Harbour", "Port Blandford", "Quartz", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "NHR-T1", "PBD-T1", "QTZ-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
     pages: "physical PDF pp. 166, 194 to 198, 201, 203 to 204, 206 to 208 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
@@ -1430,6 +1430,36 @@ export const sources = [
     url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
   },
   {
+    id: "np-2023-55l",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Transmission Line 55L Rebuild",
+    topics: ["55L", "Blaketown", "Placentia Junction", "Quartz", "Dunville", "Clarkes Pond", "66 kV", "transmission rebuild", "route map"],
+    pages: "physical PDF pp. 129 to 131, 440 to 448 and 462 to 463",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-2024-capex-55l",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Expenditure Report, Transmission Line 55L Rebuild",
+    topics: ["55L", "Blaketown", "Quartz", "Clarkes Pond", "carryover", "Trans-Canada Highway", "scope change"],
+    pages: "physical PDF pp. 20, 26 and 30",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/NP%20-%202024%20-%20Capital%20Expenditure%20Report%20-%202025-04-01.PDF"
+  },
+  {
+    id: "np-2025-capex-55l",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Expenditure Report, Transmission Line 55L Rebuild",
+    topics: ["55L", "Blaketown", "Quartz", "Clarkes Pond", "actual expenditure"],
+    pages: "physical PDF pp. 17 and 25",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202025%20Capital%20Expenditure%20Report%20-%202026-03-27.PDF"
+  },
+  {
     id: "np-2027-transformers",
     year: 2026,
     organization: "Newfoundland Power",
@@ -1534,8 +1564,8 @@ export const sources = [
     year: 2018,
     organization: "Newfoundland Power",
     title: "PUB-NP-081, Distribution Transformer and Feeder Listings",
-    topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "12.47 kV", "forecast loading"],
-    pages: "physical PDF pp. 3, 8 and 11",
+    topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "Quartz", "QTZ-T1", "QTZ-01", "12.47 kV", "forecast loading"],
+    pages: "physical PDF pp. 3, 5, 8, 11 and 15",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-081.PDF"
   },
@@ -1594,7 +1624,7 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "PUB-NP-276, Distribution Feeder Listing",
-    topics: ["Stamp's Lane", "SLA-05", "New Harbour", "NHR-01", "NHR-02", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "feeder voltage", "feeder capacity"],
+    topics: ["Stamp's Lane", "SLA-05", "New Harbour", "NHR-01", "NHR-02", "Quartz", "QTZ-01", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "feeder voltage", "feeder capacity"],
     pages: "physical PDF pp. 6, 10 and 15; attachment pp. 4, 8 and 13",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-276.pdf"
@@ -10064,6 +10094,96 @@ export const stationProfiles = [
           ["Registered endpoints", "80L from Blaketown to Heart's Content"]
         ]
       }
+    ]
+  },
+  {
+    code: "QTZ",
+    name: "Quartz",
+    voltage: "66/4.2 kV",
+    circuitRegisterLabel: "2022 FILED 55L TAP",
+    circuitSource: { sourceId: "np-2023-55l", pages: "physical PDF pp. 440 and 462" },
+    connectedCircuits: [
+      { circuit: "55L tap", from: "Quartz", from_code: "QTZ", to: "55L between Blaketown and Clarkes Pond", to_code: null }
+    ],
+    feederRegisterLabel: "2014 FEEDER CAPACITY RECORD",
+    feederRegister: ["QTZ-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "documented 55L tap and voltage transformation",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "4.2 kV bus", voltage: "4.2 kV" }],
+      transformers: [{ label: "QTZ-T1", rating: "0.75 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "55L TAP", destination: "BLK-CLK corridor", bus: "b1", link: false }]
+    },
+    engineeringRecord: {
+      date: "1968 STATION RECORD",
+      title: "Quartz distribution station",
+      sourceId: "np-2010-substation-asset-history",
+      pages: "physical PDF p. 194",
+      facts: [
+        ["Station structures", "wood 66 kV and 4.16 kV structures installed in 1968"],
+        ["Transformer capacity", "0.725 MVA total capacity"],
+        ["Former name", "Newlite"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["QTZ-T1", "66/4.2 kV; 0.75 MVA; 0.10 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2014 FEEDER CAPACITY RECORD",
+        sourceId: "np-2014-pub-np-276",
+        pages: "physical PDF p. 10; attachment p. 8",
+        facts: [
+          ["QTZ-01", "12.47 kV; 224 A rating; 168 A winter planning value; 4.8 MVA rating; 3.6 MVA winter planning value; 0.1 MVA forecast; 2.8% forecast loading"]
+        ]
+      },
+      {
+        label: "2018 TRANSFORMER AND FEEDER RECORD",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF pp. 5 and 15",
+        facts: [
+          ["QTZ-T1", "66/4.16 kV; 0.7 MVA; 0.1 MVA forecast"],
+          ["QTZ-01", "12.47 kV; 3.6 MVA planning value; 4.8 MVA rating; 0.1 MVA forecast"]
+        ]
+      },
+      {
+        label: "2022 FILED 55L RECORD",
+        sourceId: "np-2023-55l",
+        pages: "physical PDF pp. 440 to 441 and 462",
+        facts: [
+          ["Line", "66 kV radial 55L from Blaketown to Clarkes Pond; sole supply for Placentia Junction, Dunville, Clarkes Pond, and Quartz"],
+          ["Quartz tap", "constructed in 1981"],
+          ["Original line", "43.3 km; 372 single-pole structures; 54 H-frame structures; 4/0 AASC, 266.8 ACSR, and 397.5 ACSR conductor"]
+        ]
+      },
+      {
+        label: "2024 REBUILD SCOPE CHANGE",
+        sourceId: "np-2024-capex-55l",
+        pages: "physical PDF pp. 26 and 30",
+        facts: [
+          ["Unbuilt section", "5 km near Whitbourne remained on the former line after highway approvals were not secured"],
+          ["Temporary arrangement", "the rebuilt line was tied into the existing 55L section pending the highway twinning project"],
+          ["2025 carryover", "$901,000 reported in the 2024 expenditure report"]
+        ]
+      },
+      {
+        label: "2025 FINAL EXPENDITURE RECORD",
+        sourceId: "np-2025-capex-55l",
+        pages: "physical PDF pp. 17 and 25",
+        facts: [
+          ["Actual expenditure", "$13.032 million against the $10.612 million budget"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "55L CORRIDOR MAP",
+    referenceSheets: [
+      { title: "55L route and station sequence", image: "./reference-maps/qtz-55l-2023-overview.png", alt: "Aerial route map of transmission line 55L from Blaketown through Placentia Junction, Quartz, and Dunville to Clarkes Pond", sourceId: "np-2023-55l", pages: "physical PDF p. 462" }
     ]
   },
   {
