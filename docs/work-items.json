@@ -682,6 +682,18 @@
       "notes": "HWD-1 revision 17, dated July 7, 1991, establishes the B1/B2 230 kV sections, B7/B8 66 kV sections, B1B2 and B7B8 ties, transformer positions, capacitor banks, station service, and generator branch. WAV-A revision 6 and WAV-B revision 15, dated April 29, 2010 and June 12, 2012, establish the Western Avalon B3/B1, B4, and B2 sections, B1B3 tie, T1 through T6, 64L, 86L, and three 12.5 kV feeders. The 2026 Hardwoods condition-study register names HWD-1 revision 38, dated October 11, 2019, but does not reproduce it."
     },
     {
+      "id": "ISL-032",
+      "title": "Add completed 2025 terminal-station equipment work",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Use Hydro's quarterly financial and work-plan reports to add completed transformer, breaker, disconnect, relay, monitoring, and coating work to the affected station records.",
+      "dependencies": ["SRC-001", "ISL-002"],
+      "completion_evidence": ["research/NLH_2025_TERMINAL_WORK.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "The Q1 through Q4 2025 summaries establish completed work at Oxen Pond, Hardwoods, Holyrood, Sunnyside, Stony Brook, Western Avalon, Bay d'Espoir, Upper Salmon, Massey Drive, Come By Chance, Grand Falls Frequency Converter, Stephenville, and Buchans. The atlas records exact equipment identifiers where the filing provides them."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

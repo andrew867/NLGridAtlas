@@ -593,6 +593,7 @@ test("Grand Falls record separates the two yards and parallel 25 kV bank", () =>
   const planningFacts = grandFalls.planningRecord.facts.flat().join(" ");
   assert.match(engineeringFacts, /separate 138\/66\/25 kV and 66\/4\.16 kV yards/);
   assert.match(engineeringFacts, /GFS-T3 selected replacement 138\/25 kV; 50 MVA; operated in parallel with GFS-T2/);
+  assert.match(engineeringFacts, /GFS-T1-A, GFS-T2-A and GFS-T3-A transformer switches; GFS-BTS-1 bus-tie switch/);
   assert.match(engineeringFacts, /101L to Rattling Brook; 130L to Stony Brook; 132L to Bishop's Falls/);
   assert.match(planningFacts, /GFS-T5 66\/4\.2 kV; 11\.17 MVA; 6\.27 MVA 2026 forecast/);
   const ngfHistory = grandFalls.historyRecords.find((record) => record.label.includes("25 KV YARD"));
@@ -613,6 +614,25 @@ test("Grand Falls renders the 138 kV, 66 kV, 25 kV, and 4.2 kV station functions
   assert.match(breakerRegister.facts.flat().join(" "), /GFS-130L-B.*GFS-132L-B.*GFS-T1-B.*GFS-T5-B.*GFS-02-B.*GFS-10-B/);
   assert.match(grandFalls.engineeringRecord.facts.flat().join(" "), /separate 138\/66\/25 kV and 66\/4\.16 kV yards.*north of the Trans-Canada Highway.*south of the highway/s);
   assert.match(grandFalls.planningRecord.facts.flat().join(" "), /GFS-T5 66\/4\.2 kV; 11\.17 MVA; 6\.27 MVA 2026 forecast/);
+});
+
+test("2025 Hydro quarterly reports update completed terminal equipment work", () => {
+  const sourceIds = new Set(sources.map(({ id }) => id));
+  for (const id of ["nlh-q1-2025-terminal-work", "nlh-q2-2025-terminal-work", "nlh-q3-2025-terminal-work", "nlh-q4-2025-terminal-work"]) {
+    assert.ok(sourceIds.has(id), id);
+  }
+
+  assert.match(components["opd-summary"].data.flat().join(" "), /B2B3 replaced/);
+  assert.match(components["hwd-summary"].data.flat().join(" "), /B7T2 refurbished; B1L36 reclosing controller upgraded/);
+  assert.match(components["hwd-t4"].data.flat().join(" "), /dissolved-gas monitor installed/);
+  assert.match(components["wav-summary"].data.flat().join(" "), /B4L64-2\/L64G replaced/);
+  assert.match(components["hrd-summary"].data.flat().join(" "), /T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced/);
+
+  const byCode = Object.fromEntries(islandTerminalRecords.map((station) => [station.code, station]));
+  assert.match(byCode.SUN.facts.flat().join(" "), /B1L03-1 replaced/);
+  assert.match(byCode.STB.facts.flat().join(" "), /L05L31-1, L05L31-2 and L05L35-1\/L05G replaced/);
+  assert.match(byCode.USL.facts.flat().join(" "), /L34T1 refurbished/);
+  assert.ok(timeline.some(({ title, sourceId }) => title.includes("B1B10-2") && sourceId === "nlh-q2-2025-terminal-work"));
 });
 
 test("Bishop's Falls diagram carries the four filed 138 kV breaker names", () => {

@@ -820,6 +820,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q3%20Report%20for%20period%20ending%20September%202025%20-%20Revision%201%20-%202026-01-06.PDF"
   },
   {
+    id: "nlh-q1-2025-terminal-work",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "Q1 2025 Quarterly Summary, Completed Terminal-Station Work",
+    topics: ["Hardwoods", "Holyrood", "T4", "T1", "dissolved gas analysis", "protective relays"],
+    pages: "physical PDF p. 34",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q1%20Report%20for%20period%20ending%20March%2031%2C%202025%20-Revision%201%20-%202025-08-05.PDF"
+  },
+  {
+    id: "nlh-q2-2025-terminal-work",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "Q2 2025 Quarterly Summary, Completed Terminal-Station Work",
+    topics: ["Bay d'Espoir", "Upper Salmon", "Sunnyside", "B1B10-2", "L34T1", "T4", "disconnect switch", "circuit breaker"],
+    pages: "physical PDF p. 34",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q2%20Report%20for%20period%20ending%20June%2030%2C%202025%20-%202025-08-19.PDF"
+  },
+  {
+    id: "nlh-q3-2025-terminal-work",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Q3 2025 Quarterly Summary, Completed Terminal-Station Work",
+    topics: ["Oxen Pond", "Hardwoods", "Holyrood", "Sunnyside", "Stony Brook", "Western Avalon", "Massey Drive", "disconnect switches", "transformer refurbishment", "protective relays"],
+    pages: "physical PDF pp. 36 to 38",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q3%20Report%20for%20period%20ending%20September%202025%20-%20Revision%201%20-%202026-01-06.PDF"
+  },
+  {
+    id: "nlh-q4-2025-terminal-work",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Q4 2025 Quarterly Summary, Completed Terminal-Station Work",
+    topics: ["Hardwoods", "Holyrood", "Stony Brook", "Western Avalon", "Massey Drive", "B1L36", "B4L64-2", "protective relays", "disconnect switches"],
+    pages: "physical PDF pp. 31 to 32",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q4%20Report%20for%20period%20ending%20December%2031%2C%202025%20-%202026-02-17.PDF"
+  },
+  {
     id: "nlh-sunnyside-2014",
     year: 2014,
     organization: "NL Hydro",
@@ -5454,6 +5494,15 @@ export const timeline = [
     status: "verified"
   },
   {
+    date: "2025-06-30",
+    category: "station",
+    title: "Bay d'Espoir disconnect B1B10-2 was replaced",
+    body: "Hydro's Q2 work summary records the completed replacement of the 230 kV disconnect switch.",
+    sourceId: "nlh-q2-2025-terminal-work",
+    pages: "physical PDF p. 34",
+    status: "verified"
+  },
+  {
     date: "2026-07-08",
     category: "station",
     title: "Board approved additional Bay d'Espoir Unit 8 early works",
@@ -5509,8 +5558,8 @@ export const components = {
     code: "OPD / TERMINAL STATION",
     title: "Oxen Pond Terminal Station",
     summary: "The 2013 one-line assigns 70L, 32L, and 34L to bus B3; 67L, 58L, 35L, and 31L to bus B4; and ties the two transformer-bus sections through breaker B2B5. The 2026 loop study models T1 and T3 at 250 MVA and T2 at 125 MVA.",
-    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["B3 circuits", "70L, 32L, 34L"], ["B4 circuits", "67L, 58L, 35L, 31L"], ["Bus tie", "B2B5"], ["C1, B5", "25.2 MVAR"], ["C2, B2", "26.4 MVAR"]],
-    sources: [sourceRef("oxen-2013", "PDF p. 43"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+    data: [["T1", "250 MVA"], ["T2", "125 MVA"], ["T3", "250 MVA"], ["B3 circuits", "70L, 32L, 34L"], ["B4 circuits", "67L, 58L, 35L, 31L"], ["Bus tie", "B2B5"], ["C1, B5", "25.2 MVAR"], ["C2, B2", "26.4 MVAR"], ["2025 disconnect work", "B2B3 replaced"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 43"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 37")]
   },
   "opd-t1": {
     diagram: "opd",
@@ -5563,8 +5612,8 @@ export const components = {
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
     summary: "Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
-    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
-    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168")]
+    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -5575,20 +5624,20 @@ export const components = {
   "hwd-t2": {
     diagram: "hwd", status: "verified", code: "HWD / T2", title: "Hardwoods transformer T2",
     summary: "The 2026 loop study models T2 at 66.6 MVA. The 2013 filing records the 40/53.3/66.6 MVA unit as in service since 1976.",
-    data: [["Voltage", "230/66 kV"], ["Rating", "40/53.3/66.6 MVA"], ["In service", "1976"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15")]
+    data: [["Voltage", "230/66 kV"], ["Rating", "40/53.3/66.6 MVA"], ["In service", "1976"], ["2025 work", "B7T2 breaker refurbished; protective relays replaced"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
   },
   "hwd-t3": {
     diagram: "hwd", status: "verified", code: "HWD / T3", title: "Hardwoods transformer T3",
     summary: "The 2026 loop study models T3 at 66.6 MVA. The unit entered service at Oxen Pond in 1968 and moved to Hardwoods in 1986.",
-    data: [["Voltage", "230/66 kV"], ["Rating", "40/53.3/66.6 MVA"], ["Moved to Hardwoods", "1986"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF pp. 15 and 17")]
+    data: [["Voltage", "230/66 kV"], ["Rating", "40/53.3/66.6 MVA"], ["Moved to Hardwoods", "1986"], ["2025 work", "Protective relays replaced"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF pp. 15 and 17"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "hwd-t4": {
     diagram: "hwd", status: "verified", code: "HWD / T4", title: "Hardwoods transformer T4",
     summary: "The 2026 loop study models T4 at 125 MVA. The 2013 filing records the 75/100/125 MVA unit as in service since 1992.",
-    data: [["Voltage", "230/66 kV"], ["Rating", "75/100/125 MVA"], ["In service", "1992"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15")]
+    data: [["Voltage", "230/66 kV"], ["Rating", "75/100/125 MVA"], ["In service", "1992"], ["Q1 2025 work", "On-line dissolved-gas monitor installed"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15"), sourceRef("nlh-q1-2025-terminal-work", "physical PDF p. 34")]
   },
   "hwd-c1": {
     diagram: "hwd", status: "verified", code: "HWD / C1", title: "Hardwoods capacitor bank C1",
@@ -5623,8 +5672,8 @@ export const components = {
   "wav-summary": {
     diagram: "wav", status: "verified", code: "WAV / TERMINAL STATION", title: "Western Avalon Terminal Station",
     summary: "Operating drawings WAV-A revision 6, dated April 29, 2010, and WAV-B revision 15, dated June 12, 2012, show the B3 and B1 230 kV sections, breaker B1B3, the B4 138 kV section, the B2 66 kV section, T1 through T6, and the 64L and 86L Blaketown connections.",
-    data: [["Filed arrangement", "WAV-A revision 6, April 29, 2010; WAV-B revision 15, June 12, 2012"], ["230 kV sections", "B3 and B1; breaker B1B3"], ["T1, T2", "15/20/25 MVA, 230/66 kV"], ["T3, T4", "25/33.3/41.7 MVA, 230/138 kV"], ["T5", "75/100/125 MVA, 230/138 kV"], ["T6", "10/13.3 MVA, 66/12.5 kV"], ["Blaketown circuits", "64L from B4; 86L from B2"], ["Tap-changer controls", "Replacement began in 2019"]],
-    sources: [sourceRef("nlh-2014-western-avalon-operating", "physical PDF pp. 341 to 342"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195"), sourceRef("nlh-2025-capital", "physical PDF p. 117")]
+    data: [["Filed arrangement", "WAV-A revision 6, April 29, 2010; WAV-B revision 15, June 12, 2012"], ["230 kV sections", "B3 and B1; breaker B1B3"], ["T1, T2", "15/20/25 MVA, 230/66 kV"], ["T3, T4", "25/33.3/41.7 MVA, 230/138 kV"], ["T5", "75/100/125 MVA, 230/138 kV"], ["T6", "10/13.3 MVA, 66/12.5 kV"], ["Blaketown circuits", "64L from B4; 86L from B2"], ["Tap-changer controls", "Replacement began in 2019"], ["2025 disconnect work", "B4L64-2/L64G replaced"]],
+    sources: [sourceRef("nlh-2014-western-avalon-operating", "physical PDF pp. 341 to 342"), sourceRef("np-2027-loop-study", "PDF pp. 194 to 195"), sourceRef("nlh-2025-capital", "physical PDF p. 117"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "wav-t1": {
     diagram: "wav", status: "verified", code: "WAV / T1", title: "Western Avalon transformer T1",
@@ -5649,8 +5698,8 @@ export const components = {
   "wav-t5": {
     diagram: "wav", status: "verified", code: "JANUARY 2014 / T5 OLTC FAILURE", title: "Tap changer replaced",
     summary: "A phase-to-phase fault damaged the T5 on-load tap changer. The obsolete Type H mechanism was replaced with a Type VV mechanism.",
-    data: [["Voltage", "230/138 kV"], ["Rating", "75/100/125 MVA"], ["T5 and T4 out", "T3 at 113% in the 2018 peak case"], ["Tap changer", "Type H replaced by Type VV"]],
-    sources: [sourceRef("nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20")]
+    data: [["Voltage", "230/138 kV"], ["Rating", "75/100/125 MVA"], ["T5 and T4 out", "T3 at 113% in the 2018 peak case"], ["Tap changer", "Type H replaced by Type VV"], ["2025 work", "Protective relays replaced"]],
+    sources: [sourceRef("nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "wav-b1b3": {
     diagram: "wav", status: "verified", code: "WAV / B1B3", title: "Western Avalon 230 kV bus tie",
@@ -5679,8 +5728,8 @@ export const components = {
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
     summary: "Revision 19 of drawing A0-1403-500-E-001, dated March 16, 2015, is the latest published whole-plant as-built arrangement located. It links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. Later records establish component replacements and operating changes without publishing a newer complete one-line.",
-    data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"]],
-    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35")]
+    data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"], ["2025 terminal work", "T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced"]],
+    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
   },
   "hrd-breaker-program": {
     diagram: "hrd", status: "reported", code: "HRD / 230 kV BREAKERS", title: "Holyrood 230 kV breaker replacement program",
@@ -5703,14 +5752,14 @@ export const components = {
   "hrd-t1": {
     diagram: "hrd", status: "verified", code: "HRD / T1", title: "Holyrood generator transformer T1",
     summary: "The 2022 condition study identifies T1 as a 1978 Trafo-Union 105/140/180 MVA, 230/16 kV generator transformer.",
-    data: [["Manufacturer", "Trafo-Union"], ["Rating", "105/140/180 MVA, ONAN/ONAF/OFAF"], ["Voltage", "230,000/16,000 V"], ["Vector", "Yd1"], ["Impedance", "Z1 13.6%, Z0 11.7%"], ["Manufactured", "1978"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2022-holyrood-condition", "physical PDF p. 90"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14")]
+    data: [["Manufacturer", "Trafo-Union"], ["Rating", "105/140/180 MVA, ONAN/ONAF/OFAF"], ["Voltage", "230,000/16,000 V"], ["Vector", "Yd1"], ["Impedance", "Z1 13.6%, Z0 11.7%"], ["Manufactured", "1978"], ["2025 work", "Transformer refurbished; generator and transformer protective relays replaced"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2022-holyrood-condition", "physical PDF p. 90"), sourceRef("nlh-2023-spare-gsu", "PDF p. 14"), sourceRef("nlh-q1-2025-terminal-work", "physical PDF p. 34"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 36")]
   },
   "hrd-t2": {
     diagram: "hrd", status: "verified", code: "HRD / T2", title: "Holyrood generator transformer T2",
     summary: "The 1989 Federal Pioneer T2 failed internally in November 2021. Hydro installed its 1970 General Electric spare T4 in the T2 position and returned it to service on January 13, 2022.",
-    data: [["Failed unit", "115/152/190 MVA, 230/16 kV"], ["Installed spare T4", "115/152/170 MVA, 230/16 kV, star-delta"], ["Available cooling", "Four of five cooler motors, approximately 150 MVA"], ["Returned", "January 13, 2022"]],
-    sources: [sourceRef("nlh-2022-holyrood-t2", "PDF pp. 5 to 8 and 13"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90"), sourceRef("gra-2013-v2", "physical PDF p. 663")]
+    data: [["Failed unit", "115/152/190 MVA, 230/16 kV"], ["Installed spare T4", "115/152/170 MVA, 230/16 kV, star-delta"], ["Available cooling", "Four of five cooler motors, approximately 150 MVA"], ["Returned", "January 13, 2022"], ["2025 work", "Transformer refurbished; generator and transformer protective relays replaced"]],
+    sources: [sourceRef("nlh-2022-holyrood-t2", "PDF pp. 5 to 8 and 13"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 36"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "hrd-t3": {
     diagram: "hrd", status: "verified", code: "HRD / T3", title: "Holyrood generator transformer T3",
@@ -6251,20 +6300,20 @@ export const islandTerminalRecords = [
     code: "SUN",
     name: "Sunnyside Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T1 and T4, 230/138 kV, 125 MVA maximum rating each"], ["2014 T1 replacement", "Former Holyrood T8 moved to the Sunnyside T1 position and entered service by December 2014"], ["230 kV circuits", "TL202 and TL206 to Bay d'Espoir; TL203 to Western Avalon; TL207 to Come By Chance"], ["138 kV circuits", "TL212, TL219, 100L and 109L"], ["2014 breaker work", "Dedicated 230 kV breaker B1T1 added after the January 4 T1 failure"]],
+    facts: [["Transformation", "T1 and T4, 230/138 kV, 125 MVA maximum rating each"], ["2014 T1 replacement", "Former Holyrood T8 moved to the Sunnyside T1 position and entered service by December 2014"], ["230 kV circuits", "TL202 and TL206 to Bay d'Espoir; TL203 to Western Avalon; TL207 to Come By Chance"], ["138 kV circuits", "TL212, TL219, 100L and 109L"], ["2014 breaker work", "Dedicated 230 kV breaker B1T1 added after the January 4 T1 failure"], ["2025 completed work", "T4 protective relays replaced; T4 received a protective coating; disconnect B1L03-1 replaced"]],
     diagram: {
       label: "2015 breaker addition arrangement",
       buses: [{ id: "b1", label: "B1", voltage: "230 kV" }, { id: "b2", label: "B2 / B3", voltage: "138 kV" }],
       transformers: [{ label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" }, { label: "T4", rating: "125 MVA max", from: "b1", to: "b2" }],
       circuits: [{ label: "TL202", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL206", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL203", destination: "Western Avalon", bus: "b1" }, { label: "TL207", destination: "Come By Chance", bus: "b1", destinationCode: "CBC" }, { label: "TL212", destination: "Linton Lake", bus: "b2" }, { label: "TL219", destination: "Salt Pond", bus: "b2" }, { label: "100L", destination: "138 kV system", bus: "b2" }, { label: "109L", destination: "138 kV system", bus: "b2" }]
     },
-    sources: [sourceRef("nlh-sunnyside-2014", "physical PDF pp. 18 to 19 and 29 to 34"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-sunnyside-2014", "physical PDF pp. 18 to 19 and 29 to 34"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-q2-2025-terminal-work", "physical PDF p. 34"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 37")]
   },
   {
     code: "STB",
     name: "Stony Brook Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report and the 2016 operating diagram"], ["2016 split-bus arrangement", "TL204 enters bus B2 through B2L04; TL232 enters bus B1 through B1L32; normally closed disconnect B1B2 connects the bus sections"], ["2016 ring section", "TL231, TL205 and TL235 connect through ring breakers B1L31, L05L31, L05L35 and B1L35"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2016 transformer protection study", "T1 and T2 had no dedicated 230 kV breaker. The study did not recommend the proposed breaker additions."], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"]],
+    facts: [["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report and the 2016 operating diagram"], ["2016 split-bus arrangement", "TL204 enters bus B2 through B2L04; TL232 enters bus B1 through B1L32; normally closed disconnect B1B2 connects the bus sections"], ["2016 ring section", "TL231, TL205 and TL235 connect through ring breakers B1L31, L05L31, L05L35 and B1L35"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2016 transformer protection study", "T1 and T2 had no dedicated 230 kV breaker. The study did not recommend the proposed breaker additions."], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"], ["2025 completed work", "Disconnects L05L31-1, L05L31-2 and L05L35-1/L05G replaced; TL232 protective relays replaced"]],
     diagram: {
       label: "2016 filed operating arrangement / 2018 138 kV routes",
       buses: [
@@ -6298,7 +6347,7 @@ export const islandTerminalRecords = [
         ]
       }]
     },
-    sources: [sourceRef("nlh-terminal-risk-2017", "physical PDF pp. 34 and 42"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+    sources: [sourceRef("nlh-terminal-risk-2017", "physical PDF pp. 34 and 42"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   {
     code: "BDE",
@@ -7037,7 +7086,7 @@ export const islandTerminalRecords = [
     code: "USL",
     name: "Upper Salmon Generating Station",
     status: "verified",
-    facts: [["Plant rating", "84 MW on the 2013 system one-line"], ["2001 energy capability", "552 GWh"], ["230 kV circuits", "TL234 to Bay d'Espoir; TL263 to Granite Canal Tap"]],
+    facts: [["Plant rating", "84 MW on the 2013 system one-line"], ["2001 energy capability", "552 GWh"], ["230 kV circuits", "TL234 to Bay d'Espoir; TL263 to Granite Canal Tap"], ["Q2 2025 work", "Circuit breaker L34T1 refurbished"]],
     diagram: {
       label: "2013 plant rating / 2018 filed routes",
       buses: [{ id: "b1", label: "plant connection", voltage: "230 kV" }],
@@ -7045,7 +7094,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL234", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL263", destination: "Granite Canal Tap", bus: "b1" }],
       generators: [{ label: "Upper Salmon", rating: "84 MW", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 14"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 14"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("nlh-q2-2025-terminal-work", "physical PDF p. 34")]
   },
   {
     code: "GRC",
@@ -7188,6 +7237,7 @@ const filedFeederMapProfiles = [
         ["GFS-T1", "138/66 kV; 29.7 MVA"],
         ["GFS-T2", "138/25 kV; 20 MVA"],
         ["GFS-T3 selected replacement", "138/25 kV; 50 MVA; operated in parallel with GFS-T2"],
+        ["25 kV switching", "GFS-T1-A, GFS-T2-A and GFS-T3-A transformer switches; GFS-BTS-1 bus-tie switch"],
         ["25 kV feeders", "GFS-02, GFS-06, GFS-07, GFS-08 and GFS-10"],
         ["Transmission circuits", "101L to Rattling Brook; 130L to Stony Brook; 132L to Bishop's Falls"]
       ]
