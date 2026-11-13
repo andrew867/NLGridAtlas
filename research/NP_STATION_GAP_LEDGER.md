@@ -502,6 +502,19 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2027 fleet table lists only BCV-T1 and gives 66/25 kV, 25 MVA, and a 19.79 MVA 2026 forecast, physical PDF p. 546.
 - [ ] The 12.5 kV station studies and 25 kV fleet-table entry remain unresolved. The atlas retains both dated records and does not draw BCV-T2 as installed.
 
+## Trepassey station record
+
+- [x] The 2026 filing identifies 95L from Riverhead to Trepassey and records the line as built in 1969, physical PDF p. 477.
+- [x] The 2017 engineering record identifies TRP-01 as the only feeder from Trepassey and says no feeder tie was available for load transfer, physical PDF p. 331.
+- [x] The same record gives the three-phase main sections, the 17 km cross-country Cape Race branch, and the east and west single-phase sections, physical PDF p. 331.
+- [x] The five-year 2011 to 2015 record gives 611 customers, SAIFI 2.42, SAIDI 4.81, CHIKM 291, and CIKM 2, physical PDF pp. 306 to 307 and 332.
+- [x] The filed route drawing identifies the service area and the proposed 50-pole and 10 km rebuild scope, physical PDF p. 335.
+- [x] Order P.U. 11(2019) approved reducing 14 km of the former Cape Race Loran-C branch to single-phase and dismantling 2 km, physical PDF pp. 1 to 2.
+- [x] The 2027 transformer register lists TRP-T1 at 66/12.5 kV, 15 MVA, with a 2.49 MVA 2026 forecast, physical PDF p. 550.
+- [x] The historical station table records 6.7 MVA total capacity and wood 66 kV and 12.47 kV structures installed before 1972, physical PDF p. 195.
+- [ ] The searched records do not establish completion of the filed 2017 to 2018 TRP-01 rebuild. The atlas labels the work as filed scope.
+- [ ] The searched records do not provide a current breaker-level station one-line or feeder protection arrangement.
+
 ## Remaining data classes
 
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.

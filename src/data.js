@@ -70,6 +70,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-2017-trp01",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, TRP-01 Distribution Reliability Initiative",
+    topics: ["Trepassey", "TRP-01", "12.5 kV", "Portugal Cove South", "Cape Race", "St. Shott's", "feeder rebuild", "conductor", "reliability"],
+    pages: "physical PDF pp. 301 to 307 and 331 to 335",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "pu-11-2019-trp01",
+    year: 2019,
+    organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
+    title: "Order P.U. 11(2019), TRP-01 Cape Race Service Reduction",
+    topics: ["Trepassey", "TRP-01", "Cape Race", "Loran-C", "three-phase", "single-phase", "line retirement"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2019/PU11-2019.PDF"
+  },
+  {
+    id: "np-2026-95l",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, 94L Supply Record and 95L Rebuild Schedule",
+    topics: ["94L", "95L", "Blaketown", "Riverhead", "St. Catherines", "Trepassey", "radial supply", "transmission line rebuild"],
+    pages: "physical PDF pp. 192 and 477",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
     id: "np-2021-broad-cove-study",
     year: 2021,
     organization: "Newfoundland Power",
@@ -194,8 +224,8 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Milton", "Port Blandford", "Terra Nova", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PBD-T1", "TNS-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
-    pages: "physical PDF pp. 166, 196 to 198, 201, 203 to 204, 206 to 208 and 277",
+    topics: ["Abrahams Cove", "Garnish", "Milton", "Port Blandford", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PBD-T1", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
+    pages: "physical PDF pp. 166, 195 to 198, 201, 203 to 204, 206 to 208 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
@@ -13950,6 +13980,108 @@ export const stationProfiles = [
         sourceId: "np-2014-gas-relay-failures",
         pages: "physical PDF p. 236",
         facts: [["BHD-T1", "gas-detect relay failure caused an unplanned service interruption"]]
+      }
+    ]
+  },
+  {
+    code: "TRP",
+    name: "Trepassey",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2025 FILED RADIAL SUPPLY",
+    circuitSource: { sourceId: "np-2026-95l", pages: "physical PDF pp. 192 and 477" },
+    connectedCircuits: [
+      { circuit: "95L", from: "Riverhead", from_code: "RVH", to: "Trepassey", to_code: "TRP" }
+    ],
+    feederRegisterLabel: "2016 ENGINEERING RECORD",
+    feederRegister: ["TRP-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2025 radial supply with current transformer rating",
+      buses: [
+        { id: "b1", label: "66 kV bus", voltage: "66 kV" },
+        { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }
+      ],
+      transformers: [{ label: "TRP-T1", rating: "15 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "95L", destination: "Riverhead", bus: "b1", destinationCode: "RVH" },
+        { label: "TRP-01", destination: "local distribution", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "2016 ENGINEERING RECORD",
+      title: "Trepassey radial transmission and distribution station",
+      sourceId: "np-2017-trp01",
+      pages: "physical PDF pp. 331 to 332",
+      facts: [
+        ["Distribution", "TRP-01 was the only feeder originating at Trepassey and had no feeder ties for permanent or temporary load transfer"],
+        ["Service", "approximately 611 customers in Trepassey, Biscay Bay, Portugal Cove South, Cape Race, and St. Shott's"],
+        ["Main three-phase sections", "4 km west of Trepassey using #4/0 AASC; 7 km east, with 6 km of 477 ASC and 1 km of #1/0 AASC"],
+        ["Cape Race branch", "17 km three-phase cross-country section from Portugal Cove South to the NAV Canada facility"],
+        ["Single-phase sections", "7.5 km west along Route 10 plus 14 km south to St. Shott's; 30 km east through Biscay Bay and Portugal Cove South to Cape Race"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 550",
+      facts: [
+        ["TRP-T1", "66/12.5 kV; 15 MVA; 2.49 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "PRE-1972 STATION STRUCTURES",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 195",
+        facts: [
+          ["Station record", "6.7 MVA total transformer capacity; wood 66 kV and 12.47 kV structures installed before 1972"]
+        ]
+      },
+      {
+        label: "2005 STATION WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 208",
+        facts: [
+          ["Installed work", "lightning arresters and power fuses replaced"]
+        ]
+      },
+      {
+        label: "2011 TO 2015 RELIABILITY RECORD",
+        sourceId: "np-2017-trp01",
+        pages: "physical PDF pp. 332, 306 and 307",
+        facts: [
+          ["Five-year average", "611 customers; SAIFI 2.42; SAIDI 4.81; CHIKM 291; CIKM 2"],
+          ["Filed condition", "pole and crossarm decay, splits and cracks; deficiencies in guys, anchors, hardware, and insulators; many insulators were more than 40 years old"],
+          ["Filed rebuild scope", "replace 50 poles on the main trunk and rebuild 10 km of single-phase line between Trepassey and Portugal Cove South"]
+        ]
+      },
+      {
+        label: "MARCH 2019 CAPE RACE ORDER",
+        sourceId: "pu-11-2019-trp01",
+        pages: "physical PDF pp. 1 to 2",
+        facts: [
+          ["Former load", "the Cape Race Loran-C transmitter site was dismantled in 2012; Nav Canada remained the only customer on the 16 km section"],
+          ["Approved change", "reduce 14 km of TRP-01 from three-phase to single-phase and dismantle 2 km"]
+        ]
+      },
+      {
+        label: "2026 TO 2028 FILED 95L REBUILD SCHEDULE",
+        sourceId: "np-2026-95l",
+        pages: "physical PDF p. 477",
+        facts: [
+          ["95L", "Riverhead to Trepassey; built in 1969; filed rebuild expenditures in 2026, 2027, and 2028"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED FEEDER SERVICE AREA",
+    referenceSheets: [
+      {
+        title: "TRP-01 service area and 2017 rebuild scope",
+        image: "./reference-maps/trp-01-2017-service-area.png",
+        alt: "Filed TRP-01 route from Trepassey toward St. Shott's, Portugal Cove South, and Cape Race",
+        sourceId: "np-2017-trp01",
+        pages: "physical PDF p. 335"
       }
     ]
   }

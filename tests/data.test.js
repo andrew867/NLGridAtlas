@@ -1292,6 +1292,29 @@ test("Terra Nova retains its 124L tap, voltage distinction, and completed line r
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "TNS-T1").forecast_2026_mva, 0.91);
 });
 
+test("Trepassey retains its radial supply, sole feeder, conductor record, and Cape Race change", () => {
+  const trepassey = stationProfiles.find((station) => station.code === "TRP");
+  assert.ok(trepassey);
+  assert.deepEqual(trepassey.connectedCircuits.map(({ circuit, from_code, to_code }) => [circuit, from_code, to_code]), [
+    ["95L", "RVH", "TRP"]
+  ]);
+  assert.deepEqual(trepassey.feederRegister, ["TRP-01"]);
+  assert.deepEqual(trepassey.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "12.5 kV"]);
+  assert.deepEqual(trepassey.diagram.transformers.map(({ label, rating }) => [label, rating]), [["TRP-T1", "15 MVA"]]);
+  const feederFacts = trepassey.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = trepassey.planningRecord.facts.flat().join(" ");
+  const historyFacts = trepassey.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(feederFacts, /only feeder originating at Trepassey/);
+  assert.match(feederFacts, /4 km west of Trepassey using #4\/0 AASC/);
+  assert.match(feederFacts, /17 km three-phase cross-country section/);
+  assert.match(planningFacts, /66\/12\.5 kV; 15 MVA; 2\.49 MVA 2026 forecast/);
+  assert.match(historyFacts, /wood 66 kV and 12\.47 kV structures installed before 1972/);
+  assert.match(historyFacts, /reduce 14 km of TRP-01 from three-phase to single-phase and dismantle 2 km/);
+  assert.match(historyFacts, /filed rebuild expenditures in 2026, 2027, and 2028/);
+  assert.equal(trepassey.referenceSheets[0].pages, "physical PDF p. 335");
+  assert.equal(transformerRegister.transformers.find((record) => record.designation === "TRP-T1").forecast_2026_mva, 2.49);
+});
+
 test("Old Perlican retains the radial supply and both published transformer ratings", () => {
   const oldPerlican = stationProfiles.find((station) => station.code === "OPL");
   assert.ok(oldPerlican);

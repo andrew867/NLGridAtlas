@@ -149,6 +149,7 @@ Updated: 2026-11-12
 - Added Milton with its 110L supply, MIL-01 and MIL-02 service areas, 1976 structures, current transformer record, approved 2012 Random Island extension, filed 2027 refurbishment, and the 2015 service-area map.
 - Added Port Blandford with its 124L tap, PBD-01 construction and service record, 1990 station assets, current transformer record, filed 2021 three-phase work, and the filed route map.
 - Added Terra Nova with its current 124L tap, TNS-01 feeder values, 1973 station structures, 2001 bus addition, current transformer record, and the completed 2022 124L rebuild.
+- Added Trepassey with its radial 95L supply, current TRP-T1 record, sole TRP-01 feeder, conductor and route record, filed reliability scope, Cape Race service reduction, and the filed 2026 to 2028 95L rebuild schedule.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work
