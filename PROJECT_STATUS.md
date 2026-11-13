@@ -155,6 +155,7 @@ Updated: 2026-11-12
 - Added New Harbour with its local 80L connections, 1981 wood-bus station record, both feeder capacity rows, current transformer loading, 2007 voltage-regulator work, and the filed feeder automation.
 - Added Quartz as a documented 55L tap with its route map, current transformer record, dated feeder-voltage conflict, and the reported 55L rebuild scope change and final expenditure.
 - Added Placentia Junction with its 55L corridor position, 66/7.2 kV transformation, PJN-01 capacity records, transformer replacement history, and the filed Dunville sectionalization proposal.
+- Added Grand Beach with both sectional 301L connections, the 66/7.2 kV station, GBE-01 capacity records, the completed 2003 line rebuild, later station work, and the 2026 Burin Peninsula map and load record.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work

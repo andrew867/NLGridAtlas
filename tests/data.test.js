@@ -1458,6 +1458,27 @@ test("Placentia Junction retains its 55L connection and 7.2 kV station record", 
   assert.match(historyFacts, /Blaketown, Placentia Junction, Quartz, Dunville, and Clarkes Pond/);
 });
 
+test("Grand Beach closes the sectional 301L record and retains its 7.2 kV load", () => {
+  const grandBeach = stationProfiles.find((station) => station.code === "GBE");
+  assert.ok(grandBeach);
+  assert.deepEqual(grandBeach.connectedCircuits.map(({ circuit, to_code }) => [circuit, to_code]), [["301L(B)", "GAR"], ["301L(C)", "GBE"]]);
+  assert.deepEqual(grandBeach.feederRegister, ["GBE-01"]);
+  assert.deepEqual(grandBeach.diagram.buses.map(({ voltage }) => voltage), ["66 kV", "7.2 kV"]);
+  assert.deepEqual(grandBeach.diagram.transformers.map(({ label, rating }) => [label, rating]), [["GBE-T1", "0.33 MVA"]]);
+  assert.deepEqual(grandBeach.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 162"]);
+  const existingFacts = grandBeach.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = grandBeach.planningRecord.facts.flat().join(" ");
+  const assignmentFacts = grandBeach.assignmentRecord.facts.flat().join(" ");
+  const historyFacts = grandBeach.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /wood 66 kV structure installed in 1967/);
+  assert.match(existingFacts, /wood 7\.2 kV structure installed before 1966/);
+  assert.match(planningFacts, /66\/7\.2 kV; 0\.33 MVA; 0\.24 MVA 2026 forecast/);
+  assert.match(assignmentFacts, /301L\(C\) from Greenhill to Grand Beach and 301L\(B\) from Grand Beach to the Garnish tap/);
+  assert.match(assignmentFacts, /December 2025 customers 105/);
+  assert.match(historyFacts, /32 km from Grand Beach to Salt Pond reported complete/);
+  assert.match(historyFacts, /GBE-01 7\.2 kV; 224 A rating; 168 A winter planning value/);
+});
+
 test("Northwest Brook retains its 109L connection and completed 2025 modernization", () => {
   const northwestBrook = stationProfiles.find((station) => station.code === "NWB");
   assert.ok(northwestBrook);

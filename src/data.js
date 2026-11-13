@@ -30,6 +30,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-2003-grand-beach",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Budget Application, Grand Beach Substation and 301L Rebuild",
+    topics: ["Grand Beach", "GBE", "301L", "66 kV", "substation rebuild", "conductor replacement", "Burin Peninsula"],
+    pages: "physical PDF pp. 25 and 39 to 40",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
+  },
+  {
+    id: "np-2004-grand-beach-status",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Expenditure Status Report, Grand Beach Substation",
+    topics: ["Grand Beach", "GBE", "substation rebuild", "engineering", "scope change"],
+    pages: "physical PDF p. 123",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicCompleteRev1.pdf"
+  },
+  {
+    id: "nlh-2004-reliability-review",
+    year: 2004,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2003 Inter-Utility System Reliability Review, Completed Transmission Work",
+    topics: ["Grand Beach", "Salt Pond", "301L", "66 kV", "transmission rebuild", "completion"],
+    pages: "physical PDF p. 86",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2006gra/files/rfi/CA-186.pdf"
+  },
+  {
     id: "np-2003-frenchmans-cove-clearance",
     year: 2002,
     organization: "Newfoundland Power",
@@ -254,7 +284,7 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Milton", "New Harbour", "Placentia Junction", "Port Blandford", "Quartz", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "NHR-T1", "PJN-T1", "PBD-T1", "QTZ-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
+    topics: ["Abrahams Cove", "Garnish", "Grand Beach", "Milton", "New Harbour", "Placentia Junction", "Port Blandford", "Quartz", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "GBE-T1", "MIL-T1", "NHR-T1", "PJN-T1", "PBD-T1", "QTZ-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
     pages: "physical PDF pp. 166, 194 to 198, 201, 203 to 204, 206 to 208 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
@@ -284,7 +314,7 @@ export const sources = [
     year: 2026,
     organization: "Newfoundland Power",
     title: "Wesleyville and Greenhill Planning Study, Burin Peninsula 138/66 kV System",
-    topics: ["Burin Peninsula", "Sunnyside", "Monkstown", "Bay L'Argent", "Linton Lake", "Salt Pond", "Greenhill", "Garnish", "Laurentian", "Grand Beach", "Webbers Cove", "138 kV loop", "66 kV loop"],
+    topics: ["Burin Peninsula", "Sunnyside", "Monkstown", "Bay L'Argent", "Linton Lake", "Salt Pond", "Greenhill", "Garnish", "Laurentian", "Grand Beach", "GBE", "GBE-T1", "301L", "Webbers Cove", "138 kV loop", "66 kV loop", "customer count", "load forecast"],
     pages: "physical PDF pp. 161 to 164, 181 to 182, 201, 221 and 223",
     status: "reported",
     url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
@@ -564,7 +594,7 @@ export const sources = [
     year: 2013,
     organization: "Newfoundland Power",
     title: "PUB-NP-275, Transmission Line Loading",
-    topics: ["transmission lines", "endpoints", "voltage", "winter rating", "forecast peak load"],
+    topics: ["transmission lines", "endpoints", "voltage", "winter rating", "forecast peak load", "Grand Beach", "Garnish", "Greenhill", "301L(A)", "301L(B)", "301L(C)"],
     pages: "PDF pp. 3 to 11; attachment pp. 1 to 9",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-275.pdf"
@@ -1564,7 +1594,7 @@ export const sources = [
     year: 2018,
     organization: "Newfoundland Power",
     title: "PUB-NP-081, Distribution Transformer and Feeder Listings",
-    topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "Placentia Junction", "PJN-T1", "PJN-01", "Quartz", "QTZ-T1", "QTZ-01", "7.2 kV", "12.47 kV", "forecast loading"],
+    topics: ["Deer Lake", "DLK-T1", "Frenchman's Cove", "FRN-T1", "Grand Beach", "GBE-T1", "GBE-01", "Kelligrews", "KEL-T1", "KEL-01", "KEL-02", "KEL-03", "Placentia Junction", "PJN-T1", "PJN-01", "Quartz", "QTZ-T1", "QTZ-01", "7.2 kV", "12.47 kV", "forecast loading"],
     pages: "physical PDF pp. 3, 5, 8, 11 and 15",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-081.PDF"
@@ -1624,7 +1654,7 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "PUB-NP-276, Distribution Feeder Listing",
-    topics: ["Stamp's Lane", "SLA-05", "New Harbour", "NHR-01", "NHR-02", "Placentia Junction", "PJN-01", "Quartz", "QTZ-01", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "7.2 kV", "feeder voltage", "feeder capacity"],
+    topics: ["Stamp's Lane", "SLA-05", "Grand Beach", "GBE-01", "New Harbour", "NHR-01", "NHR-02", "Placentia Junction", "PJN-01", "Quartz", "QTZ-01", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "7.2 kV", "feeder voltage", "feeder capacity"],
     pages: "physical PDF pp. 6, 10 and 15; attachment pp. 4, 8 and 13",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-276.pdf"
@@ -10276,6 +10306,124 @@ export const stationProfiles = [
     referenceSheetLabel: "55L CORRIDOR MAP",
     referenceSheets: [
       { title: "55L route and Placentia Junction position", image: "./reference-maps/qtz-55l-2023-overview.png", alt: "Aerial route map of transmission line 55L from Blaketown through Placentia Junction, Quartz, and Dunville to Clarkes Pond", sourceId: "np-2023-55l", pages: "physical PDF p. 462" }
+    ]
+  },
+  {
+    code: "GBE",
+    name: "Grand Beach",
+    voltage: "66/7.2 kV",
+    circuitRegisterLabel: "2013 FILED 301L SECTIONS",
+    circuitSource: { sourceId: "np-2013-line-loading", pages: "physical PDF p. 6; attachment p. 4" },
+    connectedCircuits: [
+      { circuit: "301L(B)", from: "Grand Beach", from_code: "GBE", to: "Garnish tap", to_code: "GAR" },
+      { circuit: "301L(C)", from: "Greenhill", from_code: "GRH", to: "Grand Beach", to_code: "GBE" }
+    ],
+    feederRegisterLabel: "2014 FEEDER CAPACITY RECORD",
+    feederRegister: ["GBE-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "documented 301L sections and voltage transformation",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "7.2 kV bus", voltage: "7.2 kV" }],
+      transformers: [{ label: "GBE-T1", rating: "0.33 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "301L(B)", destination: "Garnish tap", bus: "b1", destinationCode: "GAR" },
+        { label: "301L(C)", destination: "Greenhill", bus: "b1", destinationCode: "GRH" },
+        { label: "GBE-01", destination: "local distribution", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "1967 STATION RECORD",
+      title: "Grand Beach transmission and distribution station",
+      sourceId: "np-2010-substation-asset-history",
+      pages: "physical PDF p. 196",
+      facts: [
+        ["High-voltage structure", "wood 66 kV structure installed in 1967"],
+        ["Low-voltage structure", "wood 7.2 kV structure installed before 1966"],
+        ["Transformer capacity", "0.33 MVA total capacity"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [
+        ["GBE-T1", "66/7.2 kV; 0.33 MVA; 0.24 MVA 2026 forecast"]
+      ]
+    },
+    assignmentRecord: {
+      label: "2026 BURIN PENINSULA SYSTEM RECORD",
+      sourceId: "np-2027-burin-study",
+      pages: "physical PDF pp. 162 to 163 and 241",
+      facts: [
+        ["66 kV loop", "301L(C) from Greenhill to Grand Beach and 301L(B) from Grand Beach to the Garnish tap"],
+        ["December 2025 customers", "105"],
+        ["2030 forecast demand", "0.3 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2003 FILED STATION WORK",
+        sourceId: "np-2003-grand-beach",
+        pages: "physical PDF p. 25",
+        facts: [
+          ["Filed scope", "rebuild a section of Grand Beach Substation as one of the substation projects under $50,000"]
+        ]
+      },
+      {
+        label: "2003 SCOPE CHANGE",
+        sourceId: "np-2004-grand-beach-status",
+        pages: "physical PDF p. 123",
+        facts: [
+          ["Status report", "the Grand Beach and Trepassey work exceeded the original estimates; both projects were reduced to engineering and drafting for 2003"]
+        ]
+      },
+      {
+        label: "2003 COMPLETED 301L REBUILD",
+        sourceId: "np-2003-grand-beach",
+        pages: "physical PDF pp. 39 to 40",
+        facts: [
+          ["Filed line work", "rebuild approximately 38 km of 301L sections built in 1959 and 1966; replace corroded conductor and deteriorated poles; use a higher wind and ice design standard"]
+        ]
+      },
+      {
+        label: "2004 COMPLETION RECORD",
+        sourceId: "nlh-2004-reliability-review",
+        pages: "physical PDF p. 86",
+        facts: [
+          ["301L completion", "32 km from Grand Beach to Salt Pond reported complete"]
+        ]
+      },
+      {
+        label: "2008 TO 2009 STATION WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 204",
+        facts: [
+          ["2008", "recloser refurbished"],
+          ["2009", "high-voltage switch, lightning arresters, and power fuses replaced"]
+        ]
+      },
+      {
+        label: "2014 FEEDER CAPACITY RECORD",
+        sourceId: "np-2014-pub-np-276",
+        pages: "physical PDF p. 9; attachment p. 7",
+        facts: [
+          ["GBE-01", "7.2 kV; 224 A rating; 168 A winter planning value; 2.8 MVA rating; 2.1 MVA winter planning value; 0.2 MVA forecast; 9.6% forecast loading"]
+        ]
+      },
+      {
+        label: "2018 TRANSFORMER AND FEEDER RECORD",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF pp. 6 and 16",
+        facts: [
+          ["GBE-T1", "66/7.2 kV; 0.3 MVA; 0.2 MVA forecast"],
+          ["GBE-01", "7.2 kV; 2.1 MVA planning value; 2.8 MVA rating; 0.2 MVA forecast"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "BURIN PENINSULA SYSTEM MAP",
+    referenceSheets: [
+      { title: "Burin Peninsula 138/66 kV transmission system", image: "./reference-maps/gbe-burin-2027-overview.png", alt: "Filed Burin Peninsula transmission map showing Grand Beach between Greenhill and the Garnish tap on 301L", sourceId: "np-2027-burin-study", pages: "physical PDF p. 162" }
     ]
   },
   {

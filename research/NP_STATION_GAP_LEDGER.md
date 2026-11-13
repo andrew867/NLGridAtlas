@@ -564,6 +564,17 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [ ] No searched record confirms the 50L circuit designation entered service. The 2022 filing still describes the complete Blaketown to Clarkes Pond route as 55L, physical PDF pp. 440 and 462.
 - [ ] No searched record publishes a breaker-level Placentia Junction station one-line.
 
+## Grand Beach station record
+
+- [x] The 2013 line-loading table divides 301L into 301L(C) from Greenhill to Grand Beach, 301L(B) from Grand Beach to the Garnish tap, and 301L(A) from the Garnish tap to Salt Pond, physical PDF p. 6; attachment p. 4.
+- [x] The historical station table records a 0.33 MVA station with a wood 66 kV structure installed in 1967 and a wood 7.2 kV structure installed before 1966, physical PDF p. 196.
+- [x] The 2027 fleet table records GBE-T1 at 66/7.2 kV and 0.33 MVA with a 0.24 MVA 2026 forecast, physical PDF p. 547.
+- [x] The 2014 feeder table records GBE-01 at 7.2 kV, 224 A rating, 168 A winter planning value, 2.8 MVA rating, 2.1 MVA winter planning value, and 0.2 MVA forecast, physical PDF p. 9; attachment p. 7.
+- [x] The 2026 Burin Peninsula study retains 301L(B), 301L(C), the 66 kV Grand Beach bus, and GBE-T1 at 66/7.2 kV in its system model. It records 105 customers in December 2025 and a 0.3 MVA forecast demand for 2030, physical PDF pp. 163 and 241.
+- [x] The 2003 filing proposed rebuilding approximately 38 km of 301L sections built in 1959 and 1966. The 2004 reliability review reports 32 km from Grand Beach to Salt Pond complete, physical PDF pp. 39 to 40; completion review p. 86.
+- [x] The station asset history records recloser refurbishment in 2008 and replacement of the high-voltage switch, lightning arresters, and power fuses in 2009, physical PDF p. 204.
+- [ ] No searched record publishes a breaker-level Grand Beach station one-line.
+
 ## New Harbour station record
 
 - [x] The 2025 transmission register records 80L from Blaketown to Heart's Content, CA-NP-168 Attachment A, physical PDF p. 3.
