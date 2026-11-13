@@ -389,9 +389,9 @@
       "status": "deferred",
       "scope": "Find issued-for-construction or as-built one-lines for the new terminal, GSU transformers, TL218 tie-in, synchronous-condenser equipment, and rerouted Newfoundland Power lines.",
       "dependencies": ["ARC-002"],
-      "completion_evidence": [],
+      "completion_evidence": ["src/data.js", "tests/data.test.js", "tests/terminal-diagram.test.js"],
       "blocker": null,
-      "notes": "The site currently shows application-stage information. Hydro's 2025-12-12 additional early-execution application states that the 2025 Build Application remained under review. It records continuing CT and GSU procurement, design work, TL218 modifications, and Newfoundland Power line relocations, but it does not provide an issued-for-construction or as-built station one-line. Final connection work is deferred until a later filed design or commissioning record exists."
+      "notes": "The atlas now includes the July 2026 proposed HRDGT2 topology. PUB-NLH-011 places the new terminal approximately 0.5 km from Holyrood, treats that short section as a bus extension, and retains TL218 for the remaining 37 km to Oxen Pond. The June 2026 filing still describes Phase II additional early execution. The filed overall operation single-line is redacted in full. Final connection work remains deferred until an issued-for-construction, commissioning, or as-built record exists."
     },
     {
       "id": "HVDC-001",

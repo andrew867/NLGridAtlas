@@ -1280,6 +1280,36 @@ export const sources = [
     url: "https://nlhydro.com/wp-content/uploads/2026/04/From_20NLH_20-_20Application_20for_20Additional_20Early_20Execution_20Capital_20Work_20for_20Bay_20d_E2_80_99Espoir_20Unit_208_20and_20Avalon_20Combustion_20Turbine_20-_20REDACTED_20-_202025-12-11.PDF.pdf"
   },
   {
+    id: "nlh-2025-avalon-ct-basis",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "Avalon Combustion Turbine Basis of Design",
+    topics: ["Avalon combustion turbine", "HRDGT2", "generator step-up transformer", "13.8 kV", "230 kV", "synchronous condenser"],
+    pages: "physical PDF pp. 12 and 18",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/NLH2025AvalonCombustionMarch/report/From%20NLH%20-%20Attachment%203%20-%20Avalon%20Combustion%20Turbine%20%E2%80%93%20Basis%20of%20Design%20-%20Redacted%20-%202025-06-13.PDF"
+  },
+  {
+    id: "nlh-2026-avalon-ct-phase-ii",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Phase II Additional Early Execution Capital Work for the Avalon Combustion Turbine",
+    topics: ["Avalon combustion turbine", "HRDGT2", "TL218", "230 kV", "Newfoundland Power line relocation"],
+    pages: "physical PDF p. 19",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2026/NLH2026AdditionalEarlyExecutionPhaseII/app/From%20NLH%20-%20Approval%20of%20Additional%20Early%20Execution%20Capital%20Work%20for%20Phase%20II%20of%20the%20Avalon%20Combustion%20Turbine%20%20-%20REDACTED%20-%202026-06-19.PDF"
+  },
+  {
+    id: "nlh-2026-avalon-ct-pub-nlh-011",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "PUB-NLH-011, Proposed Avalon CT Interconnection",
+    topics: ["Avalon combustion turbine", "HRDGT2", "TL218", "Holyrood", "Oxen Pond", "bus extension"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/NLH2025AvalonCombustionMarch/responses/PUB-NLH-011.PDF"
+  },
+  {
     id: "vhf-2004",
     year: 2004,
     organization: "NL Hydro",
@@ -4211,7 +4241,12 @@ export const staticClaims = [
     id: "avalon-combustion-turbine-connection",
     scope: "Proposed Avalon terminal and combustion-turbine connection",
     status: "proposed",
-    sources: [{ sourceId: "nlh-2025-avalon-ct", pages: "physical PDF pp. 41, 65 and 573" }]
+    sources: [
+      { sourceId: "nlh-2025-avalon-ct", pages: "physical PDF pp. 41, 65 and 573" },
+      { sourceId: "nlh-2025-avalon-ct-basis", pages: "physical PDF p. 12" },
+      { sourceId: "nlh-2026-avalon-ct-phase-ii", pages: "physical PDF p. 19" },
+      { sourceId: "nlh-2026-avalon-ct-pub-nlh-011", pages: "physical PDF p. 1" }
+    ]
   },
   {
     id: "broad-cove-2014-peak",
@@ -4509,12 +4544,12 @@ export const timeline = [
     status: "reported"
   },
   {
-    date: "2025",
+    date: "2025 to 2026",
     category: "station",
     title: "Avalon combustion turbine connection was proposed",
-    body: "The application connects a new terminal station to TL218 between Holyrood and Oxen Pond. The scope includes generator step-up transformers, isolated-phase bus, synchronous-condenser capability, and rerouted Newfoundland Power lines.",
-    sourceId: "nlh-2025-avalon-ct",
-    pages: "physical PDF pp. 41, 65 and 573",
+    body: "The proposed HRDGT2 terminal is approximately 0.5 km from Holyrood. The short section to Holyrood would become a bus extension; the 37 km section to Oxen Pond would retain the TL218 designation. The June 2026 filing still described the work as Phase II early execution.",
+    sourceId: "nlh-2026-avalon-ct-pub-nlh-011",
+    pages: "physical PDF p. 1",
     status: "proposed"
   },
   {
@@ -5794,6 +5829,34 @@ export const islandTerminalRecords = [
       generators: [{ label: "Hinds Lake", rating: "75 MW", bus: "b1" }]
     },
     sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 15"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "HRDGT2",
+    name: "Proposed Avalon CT Terminal Station",
+    status: "proposed",
+    facts: [
+      ["Location", "approximately 0.5 km from the existing Holyrood Terminal Station"],
+      ["Holyrood connection", "the 0.5 km section of former TL218 would be treated as a bus extension"],
+      ["Oxen Pond connection", "the remaining 37 km section would retain the TL218 designation"],
+      ["Generation", "multiple 13.8 kV units with 150 MW nominal total capacity and synchronous-condensing capability"],
+      ["Transformation", "one 13.8/230 kV generator step-up transformer for each generating unit, plus one spare"],
+      ["June 2026 status", "Phase II additional early execution application"]
+    ],
+    diagram: {
+      label: "proposed July 2026 interconnection / not as-built",
+      buses: [{ id: "b1", label: "HRDGT2 terminal bus", voltage: "230 kV" }, { id: "b2", label: "generator buses", voltage: "13.8 kV" }],
+      transformers: [{ label: "GSU bank", rating: "13.8/230 kV", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "TL218", destination: "Oxen Pond, 37 km", bus: "b1" },
+        { label: "Bus extension", destination: "Holyrood, 0.5 km", bus: "b1", link: false }
+      ],
+      generators: [{ label: "Avalon CT", rating: "150 MW nominal", symbol: "CT", bus: "b2" }]
+    },
+    sources: [
+      sourceRef("nlh-2025-avalon-ct-basis", "physical PDF p. 12"),
+      sourceRef("nlh-2026-avalon-ct-phase-ii", "physical PDF p. 19"),
+      sourceRef("nlh-2026-avalon-ct-pub-nlh-011", "physical PDF p. 1")
+    ]
   }
 ];
 

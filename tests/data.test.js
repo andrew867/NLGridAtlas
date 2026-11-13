@@ -469,7 +469,7 @@ test("Deer Lake keeps the dated voltage records and approved DLK-03 work separat
 
 test("island terminal records retain page-level sources", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
-  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "STV", "MAS", "CBC", "VBN", "SDP", "USL", "GRC", "CAT", "HLA"]);
+  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "STV", "MAS", "CBC", "VBN", "SDP", "USL", "GRC", "CAT", "HLA", "HRDGT2"]);
   for (const record of islandTerminalRecords) {
     assert.ok(allowedStates.has(record.status));
     assert.ok(record.facts.length > 0);
@@ -3034,6 +3034,9 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.ok(sourceIds.has("nlh-2024-rra"));
   assert.ok(sourceIds.has("nlh-2025-capital"));
   assert.ok(sourceIds.has("nlh-2025-avalon-ct"));
+  assert.ok(sourceIds.has("nlh-2025-avalon-ct-basis"));
+  assert.ok(sourceIds.has("nlh-2026-avalon-ct-phase-ii"));
+  assert.ok(sourceIds.has("nlh-2026-avalon-ct-pub-nlh-011"));
   assert.ok(sourceIds.has("nlh-2027-ca-nlh-058"));
   assert.equal(components["hrd-g3"].status, "verified");
   assert.match(components["hrd-g3"].data.flat().join(" "), /Pony motor and SSS clutch/);
@@ -3055,6 +3058,7 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.doesNotMatch(components["hwd-summary"].data.flat().join(" "), /2025 capital record/);
   assert.ok(timeline.some((event) => event.title === "Dynamic line rating entered service on TL201" && event.status === "verified"));
   assert.ok(timeline.some((event) => event.title === "Avalon combustion turbine connection was proposed" && event.status === "proposed"));
+  assert.match(timeline.find((event) => event.title === "Avalon combustion turbine connection was proposed").body, /0\.5 km.*bus extension.*37 km.*TL218/);
   assert.match(html, /Avalon combustion turbine connection/);
   assert.match(html, /TL201 \/ MARCH 2024/);
 });

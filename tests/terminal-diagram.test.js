@@ -57,6 +57,18 @@ test("Soldiers Pond separates converter poles from synchronous condensers", () =
   assert.doesNotMatch(html, /terminal-transformer/);
 });
 
+test("proposed Avalon CT terminal retains the July 2026 interconnection distances", () => {
+  const avalonCt = islandTerminalRecords.find((record) => record.code === "HRDGT2");
+  assert.equal(avalonCt.status, "proposed");
+  assert.deepEqual(avalonCt.diagram.circuits.map(({ label, destination }) => [label, destination]), [
+    ["TL218", "Oxen Pond, 37 km"],
+    ["Bus extension", "Holyrood, 0.5 km"]
+  ]);
+  assert.equal(avalonCt.diagram.transformers[0].rating, "13.8/230 kV");
+  assert.equal(avalonCt.diagram.generators[0].rating, "150 MW nominal");
+  assert.ok(avalonCt.sources.every((source) => source.pages));
+});
+
 test("four hydro generating stations have individual sourced records", () => {
   const expected = {
     USL: { name: "Upper Salmon Generating Station", rating: "84 MW", circuits: ["TL234", "TL263"] },

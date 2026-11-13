@@ -17,6 +17,7 @@ Local root: `C:\src\misc\NLHydroUploads\files`
 | 2024 Reliability and Resource Adequacy Study | The planning case retires Holyrood Units 1 and 2 in spring 2030 and permanently converts Unit 3 to synchronous-condensing mode. This is a future planning assumption, not an as-built conversion record. | [2024 RRA Study, physical PDF pp. 100 and 182](https://nlhydro.com/wp-content/uploads/2024/08/2024-08-26_NLH_RRA-Study_2024-RAP_Rev-2.pdf) |
 | Avalon combustion turbine application | The proposed Avalon combustion turbine includes synchronous-condenser capability. | [Application, physical PDF p. 41](https://nlhydro.com/wp-content/uploads/2025/09/From-NLH-Application-for-Capital-Expenditures-for-the-Purchase-and-Installation-of-Bay-dEspoir-Unit-8-and-Avalon-Combustion-Turbine-Redacted-2025-03-21-UPDATED-2025-05-09-compressed.pdf) |
 | Avalon combustion turbine connection | The project includes new GSU transformers, isolated-phase bus, a new terminal station, and a tie-in to TL218. Existing Newfoundland Power transmission lines are also rerouted into the new station. | [Application, physical PDF p. 65](https://nlhydro.com/wp-content/uploads/2025/09/From-NLH-Application-for-Capital-Expenditures-for-the-Purchase-and-Installation-of-Bay-dEspoir-Unit-8-and-Avalon-Combustion-Turbine-Redacted-2025-03-21-UPDATED-2025-05-09-compressed.pdf) |
+| Proposed HRDGT2 topology | The proposed terminal is approximately 0.5 km from Holyrood. That section would become a bus extension, while the remaining 37 km to Oxen Pond would retain the TL218 designation. | [PUB-NLH-011, physical PDF p. 1](http://www.pub.nl.ca/applications/NLH2025AvalonCombustionMarch/responses/PUB-NLH-011.PDF) |
 
 The PUB archive establishes two different Unit 3 arrangements:
 
@@ -47,7 +48,7 @@ The 1986 retrofit supports reversible seasonal operation. The spring 2030 record
 
 - [ ] Holyrood Unit 3 permanent post-steam design package, if Hydro selects that option and issues the design.
 - [ ] `1403-500-E001 PLANT SINGLE LINE DIAGRAM` and `1403-500-E004 PLANT MCC SINGLE LINE DIAGRAM`, named but not reproduced in the 2022 condition study.
-- [ ] Avalon combustion turbine connection one-line and synchronous-condensing operating data.
+- [ ] Avalon combustion turbine issued-for-construction or as-built one-line and synchronous-condensing operating data. The July 2026 proposed interconnection is recorded in the atlas.
 - [ ] Hardwoods, Oxen Pond, and Western Avalon terminal drawings not already preserved from PUB filings.
 - [ ] Soldiers Pond converter-station auxiliary and AC-yard drawings.
 - [ ] VHF and microwave system route, frequency, radio, antenna, and site records.
