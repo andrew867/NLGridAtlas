@@ -145,6 +145,21 @@ test("Massey Drive renders the filed split buses, ties and terminal breakers", (
   assert.match(html, /data-hydro-terminal-record="DLP"/);
 });
 
+test("Stephenville renders the filed circuit switcher and three-breaker 66 kV ring", () => {
+  const stephenville = islandTerminalRecords.find((record) => record.code === "STV");
+  assert.ok(stephenville);
+  assert.deepEqual(stephenville.diagram.rings[0].breakers.map(({ label }) => label), ["L405T4", "B2T3", "B2L405"]);
+  assert.deepEqual(stephenville.diagram.rings[0].circuits.map(({ label }) => label), ["405L"]);
+  assert.equal(stephenville.diagram.transformers.find(({ label }) => label === "T3").toY, 365);
+  const html = renderTerminalDiagram(stephenville.diagram, escapeHtml);
+  assert.match(html, />B1L09 CS</);
+  assert.match(html, />L405T4</);
+  assert.match(html, />B2T3</);
+  assert.match(html, />B2L405</);
+  assert.match(html, /data-hydro-terminal-record="HAR"/);
+  assert.match(html, /y2="365"/);
+});
+
 test("Bay d'Espoir separates the individual unit terminals from the Station 2 buses", () => {
   const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
   assert.equal(bayDEspoir.diagram.buses[1].kind, "terminals");

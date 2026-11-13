@@ -2215,9 +2215,15 @@ test("Stephenville separates retained equipment from the modelled retirement cas
   assert.match(historyFacts, /Most remaining scope was cancelled/);
   assert.match(historyFacts, /Modelled in service as a synchronous condenser and unavailable as a generator/);
   assert.match(historyFacts, /Completed for T1 and T3/);
+  assert.match(historyFacts, /L09L38/);
+  assert.match(historyFacts, /TL238/);
 
   const terminal = islandTerminalRecords.find((station) => station.code === "STV");
-  assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL209", "401L", "405L", "407L"]);
+  assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL209", "401L", "407L"]);
+  assert.deepEqual(terminal.diagram.rings[0].circuits.map(({ label }) => label), ["405L"]);
+  assert.deepEqual(terminal.diagram.rings[0].breakers.map(({ label }) => label), ["L405T4", "B2T3", "B2L405"]);
+  assert.ok(terminal.sources.some((source) => source.sourceId === "nlh-terminal-risk-2017" && source.pages.includes("32")));
+  assert.ok(terminal.sources.some((source) => source.sourceId === "nlh-stv-assigned-assets-2014"));
 });
 
 test("Bottom Brook separates the commissioned station from the cancelled T4 scope", () => {

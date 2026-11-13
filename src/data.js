@@ -934,7 +934,7 @@ export const sources = [
     year: 2020,
     organization: "NL Hydro",
     title: "2021 Capital Budget Application, Stephenville Gas Turbine Retirement Upgrades",
-    topics: ["Bottom Brook", "Stephenville", "T2", "T3", "T4", "230/66 kV", "transformer addition"],
+    topics: ["Bottom Brook", "Stephenville", "T2", "T3", "T4", "230/66 kV", "66 kV ring bus", "B1L09", "L405T4", "B2T3", "B2L405", "transformer addition"],
     pages: "physical PDF pp. 500 to 505, 509 to 523",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2021/NLH2021Capital/applications/From%20NLH%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-08-04.pdf"
@@ -1048,6 +1048,16 @@ export const sources = [
     pages: "physical PDF pp. 5 to 15",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/study/From%20NLH%20-%20Condition%20Assessment%20and%20Retirement%20Optimization%20Study%20-%202026-06-15.PDF"
+  },
+  {
+    id: "nlh-stv-assigned-assets-2014",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "IC-NLH-097 Revision 1, Stephenville Specifically Assigned Assets",
+    topics: ["Stephenville", "B2L405", "B2T3", "L405T4", "GT1T3", "66 kV", "circuit breaker", "disconnect switch"],
+    pages: "physical PDF pp. 6 and 15",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA-Amended/files/rfi/IC-NLH-097%20Rev%201.PDF"
   },
   {
     id: "nlh-cbc-2013",
@@ -1424,8 +1434,8 @@ export const sources = [
     year: 2017,
     organization: "NL Hydro",
     title: "Updated Integrated Action Plan, Risk and Reward Review of 230 kV Terminal Stations",
-    topics: ["Stony Brook", "Buchans", "Deer Lake", "Massey Drive", "230 kV", "ring bus", "split bus", "B1B2", "B1B5", "B1L31", "B1L35", "B1L48", "B1L28", "B5L11", "B3L47", "B3L48", "TL204", "TL205", "TL211", "TL228", "TL231", "TL232", "TL235", "TL247", "TL248", "transformer protection"],
-    pages: "physical PDF pp. 9 to 13, 19, 28, 34, 40 and 42",
+    topics: ["Stony Brook", "Buchans", "Deer Lake", "Massey Drive", "Stephenville", "230 kV", "ring bus", "split bus", "B1B2", "B1B5", "B1L09", "B1L31", "B1L35", "B1L48", "B1L28", "B5L11", "B3L47", "B3L48", "TL204", "TL205", "TL209", "TL211", "TL228", "TL231", "TL232", "TL235", "TL247", "TL248", "transformer protection"],
+    pages: "physical PDF pp. 9 to 13, 19, 28, 32, 34, 40 and 42",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/From%20NLH%20-%20Updated%20Integrated%20Action%20Plan%20-%20Status%20Update%20-%202017-03-03.PDF"
   },
@@ -2684,8 +2694,8 @@ export const sources = [
     year: 2013,
     organization: "NL Hydro",
     title: "IC-NLH-101, Specifically Assigned Transmission Assets",
-    topics: ["TL208", "Long Harbour", "Voisey's Bay Nickel", "230/13.8 kV", "230/46 kV", "capacitor bank"],
-    pages: "physical PDF pp. 1 to 2",
+    topics: ["TL208", "Long Harbour", "Voisey's Bay Nickel", "Stephenville", "TL238", "L09L38", "230/13.8 kV", "230/46 kV", "capacitor bank", "removed from service"],
+    pages: "physical PDF pp. 1 to 3",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/IC-NLH-101.PDF"
   },
@@ -6429,7 +6439,7 @@ export const islandTerminalRecords = [
     code: "STV",
     name: "Stephenville Terminal Station",
     status: "verified",
-    facts: [["T3", "230/66 kV, 40/53.3/66.7 MVA"], ["T1", "66/13.8 kV, 45/60/75 MVA gas-turbine transformer"], ["G1", "63.5 MVA generator"], ["230 kV circuit", "TL209 to Bottom Brook"], ["66 kV circuits", "401L to Gallant Street; 405L to Harmon; 407L to St. George's"], ["2024 project decision", "Most remaining gas-turbine retirement work was cancelled after retirement was deferred"]],
+    facts: [["T3", "230/66 kV, 40/53.3/66.7 MVA; directly connected to 230 kV bus B1"], ["T1", "66/13.8 kV, 45/60/75 MVA gas-turbine transformer"], ["G1", "63.5 MVA generator"], ["230 kV circuit", "TL209 to Bottom Brook through circuit switcher B1L09"], ["66 kV ring", "L405T4, B2T3, and B2L405"], ["66 kV circuits", "401L to Gallant Street; 405L to Harmon; 407L to St. George's"], ["Former mill branch", "Breaker L09L38, its disconnects, and TL238 were removed from service before the 2013 filing"], ["2024 project decision", "Most remaining gas-turbine retirement work was cancelled after retirement was deferred"]],
     voltage: "230/66/13.8 kV",
     circuitRegisterLabel: "2025 NEWFOUNDLAND POWER ENDPOINTS / HYDRO TERMINAL RECORD",
     circuitSources: [
@@ -6447,22 +6457,35 @@ export const islandTerminalRecords = [
     mapPages: [],
     eventLoads: [],
     diagram: {
-      label: "retained terminal and gas-turbine equipment / 2025 circuit endpoints",
+      label: "2018 operating drawing / 2025 retained equipment and circuit endpoints",
       buses: [
-        { id: "b1", label: "bus", voltage: "230 kV" },
-        { id: "b2", label: "Newfoundland Power interface", voltage: "66 kV" },
-        { id: "b3", label: "gas-turbine bus", voltage: "13.8 kV" }
+        { id: "b1", label: "B1", voltage: "230 kV", y: 165 },
+        { id: "b2", label: "B2 / Newfoundland Power interface", voltage: "66 kV", y: 520 },
+        { id: "b3", label: "gas-turbine bus", voltage: "13.8 kV", y: 730 }
       ],
       transformers: [
-        { label: "T3", rating: "40/53.3/66.7 MVA", from: "b1", to: "b2" },
-        { label: "T1", rating: "45/60/75 MVA", from: "b2", to: "b3" }
+        { label: "T3", rating: "40/53.3/66.7 MVA", from: "b1", to: "b2", toY: 365, x: 820 },
+        { label: "T1", rating: "45/60/75 MVA", from: "b2", to: "b3", x: 820 }
       ],
       circuits: [
-        { label: "TL209", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" },
-        { label: "401L", destination: "Gallant Street", bus: "b2", destinationCode: "GAL" },
-        { label: "405L", destination: "Harmon", bus: "b2", destinationCode: "HAR" },
-        { label: "407L", destination: "St. George's", bus: "b2", destinationCode: "STG" }
+        { label: "TL209", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK", breaker: "B1L09 CS", x: 250 },
+        { label: "401L", destination: "Gallant Street", bus: "b2", destinationCode: "GAL", x: 190 },
+        { label: "407L", destination: "St. George's", bus: "b2", destinationCode: "STG", x: 930 }
       ],
+      rings: [{
+        bus: "b2",
+        voltage: "66 kV",
+        label: "Stephenville 66 kV three-breaker ring",
+        y: 365,
+        fromX: 300,
+        toX: 820,
+        breakers: [
+          { x: 560, y: 365, orientation: "horizontal", label: "L405T4" },
+          { x: 820, y: 440, orientation: "vertical", label: "B2T3" },
+          { x: 560, y: 520, orientation: "horizontal", label: "B2L405" }
+        ],
+        circuits: [{ label: "405L", destination: "Harmon", destinationCode: "HAR", x: 300 }]
+      }],
       generators: [{ label: "G1", rating: "63.5 MVA", bus: "b3" }]
     },
     engineeringRecord: {
@@ -6499,7 +6522,19 @@ export const islandTerminalRecords = [
           ["Terminal supply", "TL209 from Bottom Brook feeds one 230/66 kV T3 rated 40/53.3/66.7 MVA"],
           ["Gas-turbine transformer", "T1 rated 45/60/75 MVA, 66/13.8 kV"],
           ["Gas-turbine generator", "G1 rated 63.5 MVA at 13.8 kV"],
+          ["230 kV switching", "TL209 connects to bus B1 through circuit switcher B1L09; T3 is directly connected to B1 without an individual 230 kV breaker"],
+          ["66 kV ring", "The existing ring uses breakers L405T4, B2T3, and B2L405 between T3, T1, 405L, and the Newfoundland Power interface"],
           ["Recommended retirement arrangement", "Remove the gas turbine and associated breakers; retain T3 and add station-service and grounding transformation supplied from the Newfoundland Power system"]
+        ]
+      },
+      {
+        label: "2013 FORMER ABITIBI MILL BRANCH",
+        sourceId: "nlh-2013-specific-assets",
+        pages: "physical PDF pp. 2 to 3",
+        facts: [
+          ["Former 230 kV terminal equipment", "Ground switch L38G, disconnects B1L38 and L09L38-1/-2, and breaker L09L38"],
+          ["Former line", "TL238 from Stephenville Terminal Station to the former Abitibi pulp and paper mill"],
+          ["Filed state", "The filing states that the mill branch assets were removed from service after the mill closed and was dismantled"]
         ]
       },
       {
@@ -6569,7 +6604,7 @@ export const islandTerminalRecords = [
         pages: "physical PDF p. 6"
       }
     ],
-    sources: [sourceRef("nlh-bbk-stv-2021", "physical PDF pp. 509 and 521 to 522"), sourceRef("nlh-planning-2023", "physical PDF pp. 43 to 44"), sourceRef("nlh-planning-2024", "physical PDF pp. 35 and 41"), sourceRef("nlh-stv-scope-2025", "physical PDF p. 1"), sourceRef("nlh-stv-q3-2025", "physical PDF pp. 36 to 37"), sourceRef("nlh-stv-condition-2026", "physical PDF pp. 5 to 15"), sourceRef("np-2025-ca-np-168", "physical PDF p. 4")]
+    sources: [sourceRef("nlh-bbk-stv-2021", "physical PDF pp. 509, 511, and 521 to 522"), sourceRef("nlh-stv-assigned-assets-2014", "physical PDF pp. 6 and 15"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 32"), sourceRef("nlh-2013-specific-assets", "physical PDF pp. 2 to 3"), sourceRef("nlh-planning-2023", "physical PDF pp. 43 to 44"), sourceRef("nlh-planning-2024", "physical PDF pp. 35 and 41"), sourceRef("nlh-stv-scope-2025", "physical PDF p. 1"), sourceRef("nlh-stv-q3-2025", "physical PDF pp. 36 to 37"), sourceRef("nlh-stv-condition-2026", "physical PDF pp. 5 to 15"), sourceRef("np-2025-ca-np-168", "physical PDF p. 4")]
   },
   {
     code: "MAS",

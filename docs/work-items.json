@@ -598,6 +598,18 @@
       "notes": "The 2017 terminal-risk review, physical PDF p. 28, establishes T1 on B1, T2 and T3 on B5, normally closed disconnect B1B5, and breakers B1L48, B1L28 and B5L11. The January 2013 event report establishes low-side breakers B4T1, B2T2 and B3T3. The 2018 industrial-customer report assigns L1, L16 and L17 to B4. The 2017 disconnect register assigns 352L and 356L to B2 and 351L and 357L to B3. CA-NLH-085 establishes that B2B4-1 is closed when supplemental capacity assistance is requested."
     },
     {
+      "id": "ISL-025",
+      "title": "Reconstruct the Stephenville circuit switcher and 66 kV ring",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Replace the connection sketch with the filed B1L09 circuit switcher, direct-connected T3 position, three-breaker 66 kV ring, gas-turbine transformer and generator, and the documented Newfoundland Power circuits without restoring the retired Abitibi mill branch to the live diagram.",
+      "dependencies": ["ISL-003", "SRC-001"],
+      "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "tests/terminal-diagram.test.js", "tests/data.test.js", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "The 2018 operating drawing in the 2021 Capital Budget Application, physical PDF p. 511, establishes circuit switcher B1L09, direct-connected T3, and the retained gas-turbine equipment. The proposed-removal drawing on physical PDF p. 521 identifies the existing 66 kV ring breakers L405T4, B2T3, and B2L405. The 2017 terminal-risk review, physical PDF p. 32, confirms that T3 lacked an individual 230 kV breaker. IC-NLH-101, physical PDF pp. 2 to 3, records L09L38, its disconnects, and TL238 as removed from service after the former mill closed."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

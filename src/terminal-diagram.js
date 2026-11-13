@@ -22,22 +22,24 @@ function transformerSymbol(transformer, index, count, buses, escapeHtml) {
   const from = buses.find((bus) => bus.id === transformer.from);
   const to = buses.find((bus) => bus.id === transformer.to);
   if (!from || !to) return "";
+  const fromY = transformer.fromY ?? from.y;
+  const toY = transformer.toY ?? to.y;
   const x = transformer.x ?? (count === 2
     ? spread(index, count, 420, 700)
     : spread(index, count, 300, 820));
-  const lowY = Math.min(from.y, to.y);
-  const highY = Math.max(from.y, to.y);
+  const lowY = Math.min(fromY, toY);
+  const highY = Math.max(fromY, toY);
   const intermediateBuses = buses
     .filter((bus) => bus.y > lowY && bus.y < highY)
-    .sort((a, b) => Math.abs(a.y - from.y) - Math.abs(b.y - from.y));
+    .sort((a, b) => Math.abs(a.y - fromY) - Math.abs(b.y - fromY));
   const middle = intermediateBuses.length
-    ? (from.y + intermediateBuses[0].y) / 2
-    : (from.y + to.y) / 2;
+    ? (fromY + intermediateBuses[0].y) / 2
+    : (fromY + toY) / 2;
   const crossingMasks = intermediateBuses
     .map((bus) => `<rect class="terminal-bus-crossing-mask" x="${x - 11}" y="${bus.y - 10}" width="22" height="20" />`)
     .join("");
-  const toDirection = to.y > from.y ? 1 : -1;
-  const toBreakerY = to.y - toDirection * 28;
+  const toDirection = toY > fromY ? 1 : -1;
+  const toBreakerY = toY - toDirection * 28;
   const toBreakerMarkup = transformer.toBreaker
     ? `<g class="terminal-line-breaker terminal-transformer-breaker">
       <rect x="${x - 7}" y="${toBreakerY - 11}" width="14" height="22" />
@@ -46,10 +48,10 @@ function transformerSymbol(transformer, index, count, buses, escapeHtml) {
     : "";
   return `<g class="terminal-transformer" role="img" aria-label="${escapeHtml(`${transformer.label}, ${transformer.rating}`)}">
     ${crossingMasks}
-    <line x1="${x}" y1="${from.y}" x2="${x}" y2="${middle - 28}" />
+    <line x1="${x}" y1="${fromY}" x2="${x}" y2="${middle - 28}" />
     <circle cx="${x}" cy="${middle - 13}" r="20" />
     <circle cx="${x}" cy="${middle + 13}" r="20" />
-    <line x1="${x}" y1="${middle + 28}" x2="${x}" y2="${to.y}" />
+    <line x1="${x}" y1="${middle + 28}" x2="${x}" y2="${toY}" />
     ${toBreakerMarkup}
     <text class="terminal-device-name" x="${x}" y="${middle - 82}">${escapeHtml(transformer.label)}</text>
     <text class="terminal-device-rating" x="${x}" y="${middle - 60}">${escapeHtml(transformer.rating)}</text>
