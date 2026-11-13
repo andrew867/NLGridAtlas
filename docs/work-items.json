@@ -538,6 +538,18 @@
       "notes": "PUB-NP-081 Attachment B physical PDF pp. 10 to 20 contains 108 St. John's, 87 Eastern, and 105 Western feeder rows. All 300 published loading percentages reconcile to forecast winter peak divided by planning capacity within 0.02 percentage point. The values are planning forecasts, not measured peaks."
     },
     {
+      "id": "NPREG-003",
+      "title": "Add the completed 24L shoreline relocation record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Connect the filed 1.6 km 24L shoreline relocation, protected-water-supply construction constraints, BIG-02 underbuild, and the reported completion to the Big Pond and Mobile station histories.",
+      "dependencies": ["ARC-001", "SRC-001"],
+      "completion_evidence": ["research/TRANSMISSION_LINE_24L_RELOCATION.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "The 2024 filing records the 1.6 km shoreline relocation and BIG-02 work. NLH-NP-025 confirms 66 kV, steel poles, the protected-water-supply constraint, and BIG-02 underbuild. The Q2 2026 report records the relocation complete for the quarter ended June 30, 2026; no exact commissioning date was found."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

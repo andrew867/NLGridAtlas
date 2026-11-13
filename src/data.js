@@ -1740,6 +1740,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
   },
   {
+    id: "np-2024-24l-relocation",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Transmission Line 24L Relocation",
+    topics: ["24L", "Big Pond", "Mobile", "Southern Shore Highway", "BIG-02", "transmission line relocation"],
+    pages: "physical PDF pp. 163 and 166",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-2024-nlh-np-025",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-025, Transmission Line 24L Voltage and Construction Constraints",
+    topics: ["24L", "Big Pond", "BIG-02", "66 kV", "steel poles", "protected public water supply", "underbuild"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/NLH-NP-025.PDF"
+  },
+  {
     id: "np-2010-lightning-arrestors",
     year: 2009,
     organization: "Newfoundland Power",
@@ -8523,6 +8543,34 @@ const earlyFeederMapProfiles = [
           ["Connected system", "approximately 4,600 customers, seven hydro plants, and nine private wind units; 69 MW total generation capacity in the filing"],
           ["Filed cost", "$1.161 million"]
         ]
+      },
+      {
+        label: "2024 FILED 24L SHORELINE RELOCATION",
+        sourceId: "np-2024-24l-relocation",
+        pages: "physical PDF pp. 163 and 166",
+        facts: [
+          ["Relocation", "move a 1.6 km section from the Bay Bulls Big Pond shoreline to the Southern Shore Highway roadside"],
+          ["Condition", "increased water levels placed shoreline poles inside the high-water mark; water and ice pressure caused excessive leaning and risk of line failure"],
+          ["BIG-02", "relocate 1.6 km of the distribution feeder onto the new 24L poles"],
+          ["Filed budgets", "$701,000 for 24L and $196,000 for BIG-02"]
+        ]
+      },
+      {
+        label: "2024 FILED 24L CONSTRUCTION CONSTRAINTS",
+        sourceId: "np-2024-nlh-np-025",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Voltage", "66 kV"],
+          ["Protected area", "the relocated section lies inside the City of St. John's Bay Bulls Big Pond Protected Public Water Supply Area"],
+          ["Structures", "treated wood poles were not permitted; the estimate used steel transmission poles"],
+          ["Shared right-of-way", "BIG-02 was to be attached to the relocated line in an underbuild configuration along its existing roadside right-of-way"]
+        ]
+      },
+      {
+        label: "2026 REPORTED 24L RELOCATION COMPLETE",
+        sourceId: "np-2026-q2-regulatory",
+        pages: "physical PDF p. 9",
+        facts: [["Status", "the relocation was reported complete for the quarter ended June 30, 2026"]]
       }
     ]
   },

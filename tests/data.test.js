@@ -1061,6 +1061,17 @@ test("Big Pond separates the current station record from historic capacity and 2
   assert.match(loading.facts.flat().join(" "), /9\.08 MVA 2013\/14 forecast; 82 percent/);
   const line = bigPond.historyRecords.find((record) => record.label === "2010 PROPOSED 24L REBUILD");
   assert.match(line.facts.flat().join(" "), /20 km radial 66 kV.*7\.7 km.*69 MW/s);
+  const relocation = bigPond.historyRecords.find((record) => record.label === "2024 FILED 24L SHORELINE RELOCATION");
+  assert.equal(relocation.sourceId, "np-2024-24l-relocation");
+  assert.match(relocation.facts.flat().join(" "), /1\.6 km.*Bay Bulls Big Pond shoreline.*Southern Shore Highway roadside.*water and ice pressure.*BIG-02.*\$701,000.*\$196,000/s);
+  const constraints = bigPond.historyRecords.find((record) => record.label === "2024 FILED 24L CONSTRUCTION CONSTRAINTS");
+  assert.equal(constraints.sourceId, "np-2024-nlh-np-025");
+  assert.match(constraints.facts.flat().join(" "), /66 kV.*Protected Public Water Supply Area.*steel transmission poles.*underbuild/s);
+  const completion = bigPond.historyRecords.find((record) => record.label === "2026 REPORTED 24L RELOCATION COMPLETE");
+  assert.equal(completion.sourceId, "np-2026-q2-regulatory");
+  assert.match(completion.facts.flat().join(" "), /reported complete.*June 30, 2026/);
+  assert.equal(sources.find((source) => source.id === "np-2024-24l-relocation").pages, "physical PDF pp. 163 and 166");
+  assert.equal(sources.find((source) => source.id === "np-2024-nlh-np-025").pages, "physical PDF p. 1");
 });
 
 test("Bayview records the two-bank station, fifth feeder, modernization, and route drawings", () => {
