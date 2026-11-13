@@ -254,8 +254,8 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Milton", "Port Blandford", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "PBD-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
-    pages: "physical PDF pp. 166, 195 to 198, 201, 203 to 204, 206 to 208 and 277",
+    topics: ["Abrahams Cove", "Garnish", "Milton", "New Harbour", "Port Blandford", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Pitmans Pond", "ABC-T1", "GAR-T1", "MIL-T1", "NHR-T1", "PBD-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
+    pages: "physical PDF pp. 166, 194 to 198, 201, 203 to 204, 206 to 208 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
@@ -1550,6 +1550,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
   },
   {
+    id: "np-2018-feeder-automation",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, Substation Feeder Automation",
+    topics: ["New Harbour", "NHR-01", "NHR-02", "distribution feeder automation", "SCADA", "remote control"],
+    pages: "physical PDF p. 235",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
     id: "np-2019-pepperrell",
     year: 2019,
     organization: "Newfoundland Power",
@@ -1584,7 +1594,7 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "PUB-NP-276, Distribution Feeder Listing",
-    topics: ["Stamp's Lane", "SLA-05", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "feeder voltage", "feeder capacity"],
+    topics: ["Stamp's Lane", "SLA-05", "New Harbour", "NHR-01", "NHR-02", "St. Catherines", "SCT-01", "SCT-02", "Terra Nova", "TNS-01", "feeder voltage", "feeder capacity"],
     pages: "physical PDF pp. 6, 10 and 15; attachment pp. 4, 8 and 13",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-276.pdf"
@@ -3084,7 +3094,7 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "CA-NP-168, Attachment A, Transmission Line Endpoints",
-    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "105L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "353L", "357L", "358L", "359L", "Big Pond", "Bayview", "Frenchman's Cove", "Grand Falls", "Sandy Brook", "Heart's Content", "New Chelsea", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
+    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "80L", "105L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "353L", "357L", "358L", "359L", "Big Pond", "Bayview", "Blaketown", "Frenchman's Cove", "Grand Falls", "Sandy Brook", "Heart's Content", "Islington", "New Chelsea", "New Harbour", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
     pages: "physical PDF pp. 3 to 4",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
@@ -3314,8 +3324,8 @@ export const sources = [
     year: 2023,
     organization: "Newfoundland Power",
     title: "2024 Capital Budget Application, Islington Substation Refurbishment and Modernization",
-    topics: ["Islington", "ISL-T1", "ISL-01", "80L", "66 kV", "12.5 kV", "substation modernization"],
-    pages: "physical PDF pp. 390 to 400",
+    topics: ["Islington", "ISL-T1", "ISL-01", "New Harbour", "NHR", "80L", "66 kV", "12.5 kV", "substation modernization", "line sectionalization"],
+    pages: "physical PDF pp. 86, 345 and 390 to 400",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
   },
@@ -9969,6 +9979,89 @@ export const stationProfiles = [
         pages: "physical PDF p. 9",
         facts: [
           ["Project status", "Newfoundland Power reported the refurbishment complete; final demolition to remove retired equipment remained in progress"]
+        ]
+      }
+    ]
+  },
+  {
+    code: "NHR",
+    name: "New Harbour",
+    voltage: "66/12.5 kV",
+    circuitRegisterLabel: "2023 FILED LOCAL 80L CONNECTIONS",
+    circuitSource: { sourceId: "np-2024-islington", pages: "physical PDF p. 394" },
+    connectedCircuits: [
+      { circuit: "80L", from: "New Harbour", from_code: "NHR", to: "Islington", to_code: "ISL" },
+      { circuit: "80L", from: "New Harbour", from_code: "NHR", to: "Blaketown", to_code: "BLK" }
+    ],
+    feederRegisterLabel: "2014 FEEDER CAPACITY RECORD",
+    feederRegister: ["NHR-01", "NHR-02"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "documented 80L connection and voltage transformation",
+      buses: [{ id: "b1", label: "66 kV bus", voltage: "66 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "NHR-T1", rating: "13.33 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "80L", destination: "Islington", bus: "b1", destinationCode: "ISL" }, { label: "80L", destination: "Blaketown", bus: "b1", destinationCode: "BLK" }]
+    },
+    engineeringRecord: {
+      date: "1981 STATION RECORD",
+      title: "New Harbour distribution station",
+      sourceId: "np-2010-substation-asset-history",
+      pages: "physical PDF p. 194",
+      facts: [
+        ["Station structures", "wood 66 kV and 12.47 kV structures installed in 1981"],
+        ["NHR-T1", "13.3 MVA total transformer capacity; 66/12.47 kV station record"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 549",
+      facts: [
+        ["NHR-T1", "66/12.5 kV; 13.33 MVA; 7.60 MVA 2026 forecast"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2007 VOLTAGE-REGULATOR WORK",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 206",
+        facts: [
+          ["Station work", "voltage regulator replaced in 2007"]
+        ]
+      },
+      {
+        label: "2014 FEEDER CAPACITY RECORD",
+        sourceId: "np-2014-pub-np-276",
+        pages: "physical PDF p. 10; attachment p. 8",
+        facts: [
+          ["NHR-01", "12.47 kV; 474 A rating; 356 A winter planning value; 10.2 MVA rating; 7.7 MVA winter planning value; 4.3 MVA forecast; 56.0% forecast loading"],
+          ["NHR-02", "12.47 kV; 303 A rating; 228 A winter planning value; 6.5 MVA rating; 4.9 MVA winter planning value; 2.1 MVA forecast; 42.7% forecast loading"]
+        ]
+      },
+      {
+        label: "2018 FILED FEEDER AUTOMATION",
+        sourceId: "np-2018-feeder-automation",
+        pages: "physical PDF p. 235",
+        facts: [
+          ["Filed work", "automate the two New Harbour distribution feeders for remote control and operational setting changes"]
+        ]
+      },
+      {
+        label: "2023 80L SECTIONALIZATION RECORD",
+        sourceId: "np-2024-islington",
+        pages: "physical PDF pp. 394 and 397",
+        facts: [
+          ["Local section", "New Harbour is on the Islington to Blaketown portion of 80L"],
+          ["Customers", "approximately 1,800 New Harbour customers could be affected by faults at Islington before the filed sectionalization work"]
+        ]
+      },
+      {
+        label: "2025 TRANSMISSION LINE REGISTER",
+        sourceId: "np-2025-ca-np-168",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Registered endpoints", "80L from Blaketown to Heart's Content"]
         ]
       }
     ]

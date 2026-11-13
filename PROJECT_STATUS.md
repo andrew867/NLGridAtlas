@@ -152,6 +152,7 @@ Updated: 2026-11-12
 - Added Trepassey with its radial 95L supply, current TRP-T1 record, sole TRP-01 feeder, conductor and route record, filed reliability scope, Cape Race service reduction, and the filed 2026 to 2028 95L rebuild schedule.
 - Added Riverhead with the filed 94L and 95L arrangement, current RVH-T1 rating, 2016 arcing-fault record, 2017 replacement confirmation, both distribution feeders, RVH-02 conductor and reliability data, and the filed station and feeder drawings.
 - Added St. Catherines with both 94L sections, cascaded 66/25/12.5 kV transformation, separate SCT-01 and SCT-02 voltage records, the completed 2023 Riverhead section, and the filed St. Catherines to Blaketown rebuild route.
+- Added New Harbour with its local 80L connections, 1981 wood-bus station record, both feeder capacity rows, current transformer loading, 2007 voltage-regulator work, and the filed feeder automation.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
 
 ## Active work

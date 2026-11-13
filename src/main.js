@@ -238,6 +238,7 @@ function renderStationProfile(code) {
   const recordSource = record ? sourceById.get(record.sourceId) : null;
   const planningRecord = profile.planningRecord;
   const planningSource = planningRecord ? sourceById.get(planningRecord.sourceId) : null;
+  const renderAutomaticTransformerRegister = transformers.length && planningRecord?.sourceId !== "np-2027-transformers";
   const assignmentRecord = profile.assignmentRecord;
   const assignmentSource = assignmentRecord ? sourceById.get(assignmentRecord.sourceId) : null;
   const historyRecords = profile.historyRecords || [];
@@ -283,7 +284,7 @@ function renderStationProfile(code) {
         ${profile.mapNote ? `<p class="profile-note">${escapeHtml(profile.mapNote)}</p>` : ""}
       </section>
       <section class="station-equipment">
-        ${transformers.length ? `
+        ${renderAutomaticTransformerRegister ? `
           <span class="profile-label">2027 TRANSFORMER REGISTER</span>
           <dl>${transformerRows}</dl>
           <a class="evidence-link" href="${escapeHtml(transformerRegister.source.source_url)}#page=${transformerPages[0]}" target="_blank" rel="noreferrer">Power Transformer Listing / physical PDF ${transformerPages.length === 1 ? `p. ${transformerPages[0]}` : `pp. ${transformerPages.join(", ")}`}</a>` : ""}

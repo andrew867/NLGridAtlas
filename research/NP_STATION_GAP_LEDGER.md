@@ -543,6 +543,20 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 
 ## Remaining data classes
 
+## New Harbour station record
+
+- [x] The 2025 transmission register records 80L from Blaketown to Heart's Content, CA-NP-168 Attachment A, physical PDF p. 3.
+- [x] The 2024 Islington filing places New Harbour on the Islington to Blaketown portion of 80L and records approximately 1,800 New Harbour customers exposed to faults at Islington before the filed sectionalization work, physical PDF pp. 394 and 397.
+- [x] The historical station table records 13.3 MVA total transformer capacity and wood 66 kV and 12.47 kV structures installed in 1981, physical PDF p. 194.
+- [x] The current fleet table records NHR-T1 at 66/12.5 kV and 13.33 MVA with a 7.60 MVA 2026 forecast, physical PDF p. 549.
+- [x] The 2014 feeder record gives 12.47 kV capacity and forecast values for NHR-01 and NHR-02, physical PDF p. 10; attachment p. 8.
+- [x] The 2018 filing proposed remote automation of both New Harbour feeders, physical PDF p. 235.
+- [x] The station asset history records replacement of the voltage regulator in 2007, physical PDF p. 206.
+- [ ] No searched record confirms completion of the 2018 feeder-automation work.
+- [ ] No searched record publishes a breaker-level New Harbour one-line. The atlas diagram shows the documented local 80L directions and voltage transformation.
+
+## Remaining data classes
+
 - [ ] Current circuit register. The 2005 handbook is a historical baseline, not a current network inventory.
 - [ ] Current feeder register. Later capital filings prove additions such as PUL-04, PUL-05, KEN-01, and HWD-09 that are absent from the 2005 list.
 - [x] All 150 feeder map sheets in CA-NP-020 Attachment B, physical PDF pp. 20 to 169, are extracted and linked to station records. Eight additional route and proposed-recloser drawings are preserved for HWD-08, KEN-01 to KEN-04, VIR-06, GOU-01, and GOU-03. CA-NP-020 has no feeder sheet for HWD-08 or the later additions listed in the feeder-map audit.

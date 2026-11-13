@@ -566,6 +566,7 @@ test("station browser covers the handbook and merges the 2027 transformer regist
   );
   assert.match(main, /handbook\.substations[\s\S]*data-station-profile/);
   assert.match(main, /transformersByStation/);
+  assert.match(main, /planningRecord\?\.sourceId !== "np-2027-transformers"/);
   assert.match(main, /data-station-record/);
   assert.match(html, /id="station-search"/);
   assert.match(html, /id="station-tabs"/);
@@ -1399,6 +1400,24 @@ test("Islington separates the former transformer record from the completed moder
   assert.match(planningFacts, /ISL-T1 fleet-table record 66\/12\.5 kV; 4 MVA; 3\.94 MVA 2026 forecast/);
   assert.match(historyFacts, /install two line breakers to divide 80L into two sections/);
   assert.match(historyFacts, /refurbishment complete; final demolition to remove retired equipment remained in progress/);
+});
+
+test("New Harbour retains its local 80L connections, feeder capacities and dated station record", () => {
+  const newHarbour = stationProfiles.find((station) => station.code === "NHR");
+  assert.ok(newHarbour);
+  assert.deepEqual(newHarbour.connectedCircuits.map(({ circuit, to_code }) => [circuit, to_code]), [["80L", "ISL"], ["80L", "BLK"]]);
+  assert.deepEqual(newHarbour.feederRegister, ["NHR-01", "NHR-02"]);
+  assert.deepEqual(newHarbour.diagram.transformers.map(({ label, rating }) => [label, rating]), [["NHR-T1", "13.33 MVA"]]);
+  const existingFacts = newHarbour.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = newHarbour.planningRecord.facts.flat().join(" ");
+  const historyFacts = newHarbour.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(existingFacts, /wood 66 kV and 12\.47 kV structures installed in 1981/);
+  assert.match(planningFacts, /66\/12\.5 kV; 13\.33 MVA; 7\.60 MVA 2026 forecast/);
+  assert.match(historyFacts, /NHR-01 12\.47 kV; 474 A rating; 356 A winter planning value/);
+  assert.match(historyFacts, /NHR-02 12\.47 kV; 303 A rating; 228 A winter planning value/);
+  assert.match(historyFacts, /automate the two New Harbour distribution feeders/);
+  assert.match(historyFacts, /New Harbour is on the Islington to Blaketown portion of 80L/);
+  assert.match(historyFacts, /80L from Blaketown to Heart's Content/);
 });
 
 test("Northwest Brook retains its 109L connection and completed 2025 modernization", () => {
