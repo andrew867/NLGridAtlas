@@ -1,6 +1,6 @@
 # Island transformer evidence ledger
 
-Updated: 2026-11-11  
+Updated: 2026-11-13
 Work item: `ISL-006`
 
 ## Added in this pass
@@ -20,6 +20,9 @@ Work item: `ISL-006`
 | Holyrood | 2024 completion record | T31 transport, installation, construction and commissioning finished in 2024 | 2024 Capital Expenditures and Carryover Report, physical PDF p. 332 |
 | Bay d'Espoir station 1 | 1998 system operating diagram | T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each | 2016 Capital Budget Application Volume III, physical PDF p. 248 |
 | Bay d'Espoir station 2 | 2013 system operating diagram | T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA; T10 and T12, 230/69 kV, 15/20/25 MVA each; T11, 69/24 kV, 10/13.3/16.6 MVA | 2016 Capital Budget Application Volume III, physical PDF p. 249 |
+| Bay d'Espoir GSU fleet | 2023 spare-transformer filing | Manufacture years: T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016 | Spare Generator Step-Up Transformer application, physical PDF p. 12 |
+| Bay d'Espoir T5S and T6S | January 2025 project update | T5 failed in July 2022 and was repaired as T5S; T5S replaced T6 after its July 2023 failure; Unit 6 returned in October 2023; repaired T6S became the filed spare for T1 to T6 and Granite Canal T1, with reduced capacity for T7 and Upper Salmon T1 | Spare Generator Step-Up Transformer update, physical PDF p. 5 |
+| Common GSU spare | February 2025 Board order | Revised capital budget approved at $12,324,025; completion scheduled for December 2028 | Order P.U. 8(2025), physical PDF pp. 1 to 3 |
 | Come By Chance | 2014 facility review and 2023 Braya application | T1 and T2, 230/13.8 kV, 30/40/50 MVA each, manufactured in 1972; both serve only the Braya refinery, with the approved 2023 to 2024 bushing work charged to Braya | PUB-NLH-161, physical PDF pp. 54 to 56; Braya contribution application, physical PDF pp. 4 to 7 |
 
 ## Published station records with staged ratings

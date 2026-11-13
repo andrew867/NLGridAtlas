@@ -1565,9 +1565,29 @@ export const sources = [
     organization: "NL Hydro",
     title: "Purchase of a Spare Generator Step-Up Transformer",
     topics: ["generator step-up transformer", "Holyrood", "Bay d'Espoir", "Upper Salmon", "Granite Canal"],
-    pages: "PDF pp. 12 to 17, schedule pp. 2 to 7",
+    pages: "physical PDF pp. 11 to 17, schedule pp. 1 to 7",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2023/NLH2023Capital_SUPP_SpareGenerator/app/From%20NLH%20-%20Approval%20of%20the%20Purchase%20of%20a%20Spare%20Generator%20Step-Up%20Transformer%20-%202023-09-21.PDF"
+  },
+  {
+    id: "nlh-2025-spare-gsu-update",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "Spare Generator Step-Up Transformer Cost and Schedule Update",
+    topics: ["generator step-up transformer", "Bay d'Espoir", "T5S", "T6S", "Holyrood", "project schedule"],
+    pages: "physical PDF pp. 5 to 7",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2025ModificationOrder28/app/From%20NLH%20-%20Request%20for%20Change%20or%20Modification%20to%20Order%20No.%20P.U.%2028(2023)%20-%202025-01-10.PDF"
+  },
+  {
+    id: "pub-2025-spare-gsu-order",
+    year: 2025,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 8(2025), Spare Generator Step-Up Transformer",
+    topics: ["generator step-up transformer", "Bay d'Espoir", "Holyrood", "capital approval", "project schedule"],
+    pages: "physical PDF pp. 1 to 3",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2025/P.U.%208(2025).PDF"
   },
   {
     id: "nlh-2020-holyrood-unit3",
@@ -4826,6 +4846,15 @@ export const timeline = [
     status: "proposed"
   },
   {
+    date: "2025-02-04",
+    category: "station",
+    title: "Board approved the revised common GSU spare budget",
+    body: "Order P.U. 8(2025) approved a revised $12,324,025 budget and extended project completion to December 2028. The approved work remained a new common generator step-up transformer, not an installed unit.",
+    sourceId: "pub-2025-spare-gsu-order",
+    pages: "physical PDF pp. 1 to 3",
+    status: "verified"
+  },
+  {
     date: "2023",
     category: "station",
     title: "Memorial T2 replacement was recommended",
@@ -5640,7 +5669,7 @@ export const islandTerminalRecords = [
     code: "BDE",
     name: "Bay d'Espoir Generating Station",
     status: "reported",
-    facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"], ["66 kV circuit", "TL220 to English Harbour West and Barachoix"]],
+    facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"], ["66 kV circuit", "TL220 to English Harbour West and Barachoix"]],
     diagram: {
       label: "2013 station 2 interface / 2018 routes",
       buses: [{ id: "b1", label: "230 kV station bus", voltage: "230 kV" }, { id: "b2", label: "69 kV station bus", voltage: "69 kV" }],
@@ -5648,7 +5677,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL202", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL206", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL204", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL231", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL234", destination: "Upper Salmon", bus: "b1" }, { label: "TL267", destination: "Western Avalon", bus: "b1" }, { label: "TL220", destination: "English Harbour West", bus: "b2" }],
       generators: [{ label: "Bay d'Espoir plant", rating: "592 MW assignment", bus: "b1" }]
     },
-    sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-bde-frazil-2026", "physical PDF pp. 13 to 15 and 32")]
+    sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-2023-spare-gsu", "physical PDF pp. 11 to 14"), sourceRef("nlh-2025-spare-gsu-update", "physical PDF pp. 5 to 7"), sourceRef("pub-2025-spare-gsu-order", "physical PDF pp. 1 to 3"), sourceRef("nlh-bde-frazil-2026", "physical PDF pp. 13 to 15 and 32")]
   },
   {
     code: "BUC",
