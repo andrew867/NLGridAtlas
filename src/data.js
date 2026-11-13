@@ -4050,6 +4050,26 @@ export const sources = [
     url: "http://www.pub.nf.ca/orders/order2018/pu/PU26-2018.PDF"
   },
   {
+    id: "nlh-dlp-assets-2018",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Review of Industrial Customer Specifically Assigned Assets, Deer Lake Power",
+    topics: ["Deer Lake Power", "Massey Drive", "L1", "L16", "L17", "66 kV", "frequency converter", "Pasadena", "Marble Mountain"],
+    pages: "physical PDF pp. 7 to 8 and 23 to 26",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/report/From%20NLH%20-%20Review%20of%20Industrial%20Customer%20Specifically%20Assigned%20Assets%20Report%20-%20Revision%201%20-%202018-03-05.PDF"
+  },
+  {
+    id: "nlh-near-term-generation-2017",
+    year: 2017,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Near-Term Generation Adequacy Report, Island Generation Supply Table",
+    topics: ["Deer Lake Power", "DLPG1-7", "60 Hz", "frequency converter", "generation capacity"],
+    pages: "physical PDF pp. 61 to 62",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/phasetwo/files/correspondance/From%20NLH%20-%20Near-Term%20Generation%20Adequacy%20Report%20-%202017-05-15.PDF"
+  },
+  {
     id: "np-2018-pub-np-084",
     year: 2018,
     organization: "Newfoundland Power / Newfoundland and Labrador Hydro",
@@ -5439,6 +5459,34 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL239", destination: "Berry Hill", bus: "b2" }, { label: "TL245", destination: "Howley", bus: "b2" }, { label: "TL226", destination: "Wiltondale", bus: "b3" }]
     },
     sources: [sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF p. 378"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+  },
+  {
+    code: "DLP",
+    name: "Deer Lake Power Generating Station",
+    status: "reported",
+    facts: [
+      ["2017 60 Hz generation", "DLPG1-7; 81.1 MW gross continuous unit rating"],
+      ["66 kV island connections", "L1 to Massey Drive; TL225 to Deer Lake Terminal Station"],
+      ["Massey Drive interface", "L1, L16, and L17 connect to 66 kV bus B4"],
+      ["Newfoundland Power supply", "Hydro wheels power on L1 to Marble Mountain and Pasadena"],
+      ["Frequency converter", "Listed separately from the 81.1 MW 60 Hz generation at 18.0 MW in the 2017 generation supply table"]
+    ],
+    diagram: {
+      label: "2017 generation record / 2018 filed connections",
+      buses: [{ id: "b1", label: "plant bus", voltage: "60 Hz" }],
+      transformers: [],
+      circuits: [
+        { label: "L1", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" },
+        { label: "TL225", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }
+      ],
+      generators: [{ label: "DLPG1-7", rating: "81.1 MW", bus: "b1" }]
+    },
+    sources: [
+      sourceRef("gra-2013-v2", "physical PDF p. 80"),
+      sourceRef("nlh-near-term-generation-2017", "physical PDF pp. 61 to 62"),
+      sourceRef("nlh-dlp-assets-2018", "physical PDF pp. 7 to 8 and 23"),
+      sourceRef("nlh-transmission-routes-2015", "physical PDF p. 4")
+    ]
   },
   {
     code: "BRH",

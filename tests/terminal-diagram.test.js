@@ -105,6 +105,19 @@ test("Grand Falls Frequency Converter has a distinct TL235 terminal record", () 
   assert.ok(converter.sources.every((source) => source.pages));
 });
 
+test("Deer Lake Power separates the 60 Hz generating group from the frequency converter", () => {
+  const dlp = islandTerminalRecords.find((record) => record.code === "DLP");
+  assert.ok(dlp);
+  assert.deepEqual(dlp.diagram.generators, [{ label: "DLPG1-7", rating: "81.1 MW", bus: "b1" }]);
+  assert.deepEqual(dlp.diagram.circuits.map(({ label, destination, destinationCode }) => ({ label, destination, destinationCode })), [
+    { label: "L1", destination: "Massey Drive", destinationCode: "MAS" },
+    { label: "TL225", destination: "Deer Lake", destinationCode: "DLK" }
+  ]);
+  assert.match(dlp.facts.flat().join(" "), /frequency converter.*separately.*18\.0 MW/i);
+  assert.ok(dlp.sources.some((source) => source.sourceId === "nlh-dlp-assets-2018" && source.pages.includes("23")));
+  assert.ok(dlp.sources.some((source) => source.sourceId === "nlh-near-term-generation-2017" && source.pages.includes("61")));
+});
+
 test("plant-assignment records cite physical PDF page 80", () => {
   for (const code of ["USL", "GRC", "CAT", "HLA"]) {
     const record = islandTerminalRecords.find((entry) => entry.code === code);

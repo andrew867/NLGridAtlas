@@ -169,6 +169,7 @@ Updated: 2026-11-13
 - Added all 32 rows in the 2015 Hydro 138 kV and 66/69 kV planning tables, including 0 degrees Celsius ratings, winter peaks, average loads, filed average-to-peak percentages, and circuit-specific operating notes.
 - Added TL225 and TL257 as separate supplemental AC circuits. TL225 uses the filed 66 kV Deer Lake Power connection; TL257 uses the filed 69 kV St. Anthony Airport to Roddickton Woodchip connection and its 1989 construction record.
 - Added the IC-270 construction history for TL221, TL241, TL244, TL256, TL261, and TL257. The record includes the 1990 TL221 and TL262 reconfiguration, the 1995 TL241 extension and voltage change, and the 1995 TL244 voltage upgrade.
+- Added a dedicated Deer Lake Power generating-station record. It shows the filed 81.1 MW combined rating for DLPG1-7, L1 to Massey Drive, and TL225 to Deer Lake Terminal Station. The Corner Brook frequency converter remains a separate 18.0 MW record.
 
 ## Active work
 

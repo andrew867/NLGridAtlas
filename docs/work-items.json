@@ -454,6 +454,18 @@
       "notes": "IC-270 physical PDF pp. 34 to 35 establish the 1970 TL221 build, the 1990 Peter's Barren reconfiguration and TL262 renumbering, the 1983 and 1995 TL241 and TL244 histories, the 1995 TL256 build, the 1996 TL261 build, and the 1989 TL257 build. The dated 69 kV TL261 construction record remains separate from the 2018 66 kV topology listing."
     },
     {
+      "id": "ISL-015",
+      "title": "Add the Deer Lake Power generating-station interface",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Add a dedicated Deer Lake Power record that separates the 60 Hz generating group, L1, TL225, and the Corner Brook frequency converter.",
+      "dependencies": ["ISL-013"],
+      "completion_evidence": ["research/DEER_LAKE_POWER_INTERFACE.md", "src/data.js", "src/island-backbone.js", "tests/terminal-diagram.test.js"],
+      "blocker": null,
+      "notes": "The station record uses the 2013 system one-line, the 2017 generation supply table, the 2018 industrial-customer asset review, and PUB-NLH-309. It shows DLPG1-7 at the filed 81.1 MW combined rating, L1 to Massey Drive, and TL225 to Deer Lake. The 18.0 MW frequency-converter entry remains separate. Generator-by-generator ratings and a current plant switchgear one-line were not located."
+    },
+    {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,

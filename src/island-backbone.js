@@ -116,6 +116,7 @@ const stationTargets = {
   Buchans: { href: "#hydro-terminal-browser", code: "BUC" },
   "Come By Chance": { href: "#hydro-terminal-browser", code: "CBC" },
   "Deer Lake": { href: "#hydro-terminal-browser", code: "DLK" },
+  "Deer Lake Power": { href: "#hydro-terminal-browser", code: "DLP" },
   Doyles: { href: "#hydro-terminal-browser", code: "DOY" },
   "Grand Falls Frequency Converter": { href: "#hydro-terminal-browser", code: "GFC" },
   "English Harbour West": { href: "#hydro-terminal-browser", code: "EHW" },
