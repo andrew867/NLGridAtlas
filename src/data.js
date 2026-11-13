@@ -920,6 +920,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/From%20NLH%20-%202018%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202018-04-11.PDF"
   },
   {
+    id: "nlh-2026-iic-nlh-012",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "IIC-NLH-012 Attachment 2, Capital Cost and Depreciation Asset Register",
+    topics: ["Holyrood", "B8L39", "39L", "circuit breaker", "protective relays", "disconnect switches", "in-service dates"],
+    pages: "physical PDF p. 13; attachment p. 6",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/NLH2026GRA/responses/IIC-NLH-012.PDF"
+  },
+  {
     id: "nlh-bbk-planning-2026",
     year: 2026,
     organization: "NL Hydro",
@@ -5026,8 +5036,14 @@ export const components = {
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
     summary: "The December 2012 drawing links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. The 2022 condition study confirms the transformer inventory, including the unit-service and station-service banks. T8 was replaced in 2014, the two plant-service projects were completed in 2019, T7 replacement work finished in 2024, and the Unit 1 turbine and generator overhaul finished in February 2025.",
-    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine", "15 MW through T9"], ["Black start", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["T7 replacement completed", "2024"], ["Unit 1 overhaul completed", "February 2025"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35")]
+    data: [["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine", "15 MW through T9"], ["Black start", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["T7 replacement completed", "2024"], ["Unit 1 overhaul completed", "February 2025"]],
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF p. 13; attachment p. 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35")]
+  },
+  "hrd-b8l39": {
+    diagram: "hrd", status: "verified", code: "HRD / 39L", title: "Holyrood 39L terminal equipment",
+    summary: "Hydro placed the replacement B8L39 breaker and both 39L protection relays in service in August 2018. The two adjacent disconnects entered service in September 2019.",
+    data: [["B8L39 breaker", "In service August 23, 2018"], ["39L protection 1", "In service August 30, 2018"], ["39L protection 2", "In service August 30, 2018"], ["B8L39-1 disconnect", "In service September 24, 2019"], ["B8L39-2/L39G disconnect", "In service September 24, 2019"]],
+    sources: [sourceRef("nlh-bbk-ts2-2018", "physical PDF p. 94"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF p. 13; attachment p. 6")]
   },
   "hrd-t1": {
     diagram: "hrd", status: "verified", code: "HRD / T1", title: "Holyrood generator transformer T1",

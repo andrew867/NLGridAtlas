@@ -156,7 +156,7 @@ test("every clickable diagram item has an evidence record", async () => {
     "opd-t1", "opd-t2", "opd-t3",
     "hwd-t1", "hwd-t2", "hwd-t3", "hwd-t4",
     "wav-t1", "wav-t2", "wav-t3", "wav-t4", "wav-t5",
-    "hrd-t1", "hrd-t2", "hrd-t3", "hrd-g3", "hrd-t5", "hrd-t6", "hrd-t7", "hrd-t8", "hrd-t10", "hrd-gt",
+    "hrd-b8l39", "hrd-t1", "hrd-t2", "hrd-t3", "hrd-g3", "hrd-t5", "hrd-t6", "hrd-t7", "hrd-t8", "hrd-t10", "hrd-gt",
     "hwd-np-t1", "hwd-np-t2", "hwd-np-t3", "hwd-np-hwd08", "hwd-np-hwd09",
     "oxp-np-transformer", "oxp-np-feeder",
     "mun-t1", "mun-t2", "mun-bus",
@@ -3061,7 +3061,15 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.match(components["hrd-summary"].data.flat().join(" "), /SST34 feed 66 kV underground cable replacement completed in 2019/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /38L supply.*1.5 MVA.*69-2.4\/4.16 kV/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /lower-cost Newfoundland Power supply connection/);
+  assert.match(components["hrd-summary"].data.flat().join(" "), /B8L39 breaker.*August 2018.*disconnects.*September 2019/);
   assert.match(components["hrd-summary"].data.flat().join(" "), /292\.827 million capital.*330\.915 million operating.*623\.742 million total/);
+  assert.deepEqual(components["hrd-b8l39"].data, [
+    ["B8L39 breaker", "In service August 23, 2018"],
+    ["39L protection 1", "In service August 30, 2018"],
+    ["39L protection 2", "In service August 30, 2018"],
+    ["B8L39-1 disconnect", "In service September 24, 2019"],
+    ["B8L39-2/L39G disconnect", "In service September 24, 2019"]
+  ]);
   assert.match(components["wav-summary"].data.flat().join(" "), /Replacement began in 2019/);
   assert.match(components["hwd-summary"].data.flat().join(" "), /T5 45\/60\/75 MVA, 66\/13.8 kV/);
   assert.match(components["hwd-g1"].data.flat().join(" "), /2026 study model 25 MW/);

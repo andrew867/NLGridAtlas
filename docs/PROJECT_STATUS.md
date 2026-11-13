@@ -123,6 +123,7 @@ Updated: 2026-11-13
 - Identified the current internal Holyrood drawing numbers `1403-500-E001` and `1403-500-E004` in the 2022 study document register. The drawings were named but not filed.
 - Added the March 2025 Holyrood Capital Plan Refresh, including Unit 3 condition-monitoring and auxiliary-system findings plus the six CAT 3516B black-start sets.
 - Added the 2017 Holyrood plant-service arrangements and the 2019 completion records for the SST34 cable replacement and the lower-cost Newfoundland Power auxiliary supply connection.
+- Added the Holyrood 39L terminal equipment sequence from the 2026 GRA asset schedule: breaker B8L39 entered service on August 23, 2018, both 39L protection relays on August 30, 2018, and both adjacent disconnects on September 24, 2019.
 - Deferred publication of the external archive snapshot at the user's request.
 - Added the Pulpit Rock transformer chronology: the 2011 25 MVA installation, the former PUL-T2 unit's 2021 relocation to Stamp's Lane as SLA-T4, the 2019 in-service date for the current PUL-T2 asset, and the separately labeled 2026 replacement plan.
 - Added completed refurbishment histories for Botwood, Carbonear, Clarkes Pond, Clarenville, Gallants, Gander, Glovertown, Heart's Content, King's Bridge, Kelligrews, Lewisporte, Oxen Pond, Ridge Road, Stamp's Lane, and Springfield from PUB-NP-005.

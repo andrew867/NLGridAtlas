@@ -27,6 +27,19 @@ The located record does not support a completed permanent conversion of Units 1,
 | 2017 filing | A separate Hydro substation near the terminal station supplied the dock, security building, warehouse, and trailers. It used Newfoundland Power circuit 38L, a 1.5 MVA three-phase 69-2.4/4.16 kV transformer installed in 1996, and one 4.16 kV feeder. | [2017 Capital Budget Application, physical PDF pp. 310 and 316](http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%20Volume%20III%20-%202016-07-28.PDF) |
 | 2019 completion | The SST34 cable replacement was completed in 2019. The proposed replacement auxiliary substation was not built as filed. Hydro instead completed a lower-cost supply connection developed with Newfoundland Power. The public completion report does not give the final transformer, feeder, or switchgear arrangement. | [2019 Capital Expenditures and Carryover Report, physical PDF pp. 39 to 40](http://www.pub.nl.ca/indexreports/expenditure/From%20NLH%20-%202019%20Capital%20Expenditures%20and%20Carryover%20Report%20-%202020-03-02.PDF) |
 
+## 138 kV 39L terminal equipment
+
+The 2018 execution report states that the Holyrood 39L protection upgrade was deferred from 2017 to coincide with replacement of breaker B8L39 in 2018. A later financial asset schedule records the resulting equipment individually.
+
+| Equipment | In-service date | Source |
+| --- | --- | --- |
+| Breaker B8L39 | August 23, 2018 | [IIC-NLH-012 Attachment 2, physical PDF p. 13, attachment p. 6](http://www.pub.nl.ca/applications/NLH2026GRA/responses/IIC-NLH-012.PDF) |
+| 39L protection relays 1 and 2 | August 30, 2018 | [IIC-NLH-012 Attachment 2, physical PDF p. 13, attachment p. 6](http://www.pub.nl.ca/applications/NLH2026GRA/responses/IIC-NLH-012.PDF) |
+| Disconnect B8L39-1 | September 24, 2019 | [IIC-NLH-012 Attachment 2, physical PDF p. 13, attachment p. 6](http://www.pub.nl.ca/applications/NLH2026GRA/responses/IIC-NLH-012.PDF) |
+| Disconnect B8L39-2/L39G | September 24, 2019 | [IIC-NLH-012 Attachment 2, physical PDF p. 13, attachment p. 6](http://www.pub.nl.ca/applications/NLH2026GRA/responses/IIC-NLH-012.PDF) |
+
+The 2026 GRA source file has SHA-256 `629de4bf8e5da66aa5cf4b9df88413ca6fa215c16a7acd406d2b7b781855c8ee`. These records establish equipment in-service dates. They do not replace the missing current station one-line.
+
 ## Transformer inventory in the 2022 condition study
 
 | Equipment | Filed data | Physical PDF page |
