@@ -850,6 +850,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2018/NLH2018Capital/applications/Capital%20Budget%20Volume%20II.pdf"
   },
   {
+    id: "nlh-buchans-storm-2013",
+    year: 2013,
+    organization: "NL Hydro",
+    title: "January 11, 2013 Storm Events, Power System Performance Review",
+    topics: ["Buchans", "T1", "230 kV ring bus", "B1L05", "L05L33", "L32L33", "L28L32", "B1L28", "TL205", "TL228", "TL232", "TL233"],
+    pages: "physical PDF pp. 135, 150 to 151, and 162",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/3EventsofJan2013.pdf"
+  },
+  {
+    id: "nlh-buchans-airblast-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "Undertaking 73, Air-Blast Circuit Breakers by Terminal Station",
+    topics: ["Buchans", "B1L05", "L05L33", "L28L32", "B1L28", "air-blast circuit breakers"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA-Amended/files/undertakings/U-73-2015-11-19.pdf"
+  },
+  {
+    id: "nlh-buchans-industrial-assets-2018",
+    year: 2018,
+    organization: "NL Hydro",
+    title: "Review of Industrial Customer Specifically Assigned Assets, Duck Pond",
+    topics: ["Buchans", "Duck Pond", "TL264", "B2L64", "66 kV"],
+    pages: "physical PDF p. 10",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/report/From%20NLH%20-%20Review%20of%20Industrial%20Customer%20Specifically%20Assigned%20Assets%20Report%20-%20Revision%201%20-%202018-03-05.PDF"
+  },
+  {
     id: "np-2009-buchans-modernization",
     year: 2008,
     organization: "Newfoundland Power",
@@ -1334,7 +1364,7 @@ export const sources = [
     year: 2017,
     organization: "NL Hydro",
     title: "Updated Integrated Action Plan, Risk and Reward Review of 230 kV Terminal Stations",
-    topics: ["Stony Brook", "Deer Lake", "230 kV", "ring bus", "B1B2", "B1L31", "B1L35", "B3L47", "B3L48", "TL204", "TL205", "TL231", "TL232", "TL235", "TL247", "TL248", "transformer protection"],
+    topics: ["Stony Brook", "Buchans", "Deer Lake", "230 kV", "ring bus", "B1B2", "B1L31", "B1L35", "B3L47", "B3L48", "TL204", "TL205", "TL231", "TL232", "TL235", "TL247", "TL248", "transformer protection"],
     pages: "physical PDF pp. 9 to 13, 19, 34, 40 and 42",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/From%20NLH%20-%20Updated%20Integrated%20Action%20Plan%20-%20Status%20Update%20-%202017-03-03.PDF"
@@ -5924,14 +5954,35 @@ export const islandTerminalRecords = [
     code: "BUC",
     name: "Buchans Terminal Station",
     status: "verified",
-    facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2019 T1 replacement", "Completed using the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare"], ["2025 T1 work", "Tap changer oil replacement, access hatch re-gasketing, and leak repairs completed"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
+    facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2019 T1 replacement", "Completed using the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare"], ["230 kV ring bus", "T1 is between B1L05 and B1L28; TL205, TL233, TL232, and TL228 occupy the four line positions around the five-breaker ring"], ["2025 T1 work", "Tap changer oil replacement, access hatch re-gasketing, and leak repairs completed"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
     diagram: {
-      label: "2019 completed transformer replacement / 2018 routes",
-      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }],
-      transformers: [{ label: "T1", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2" }],
-      circuits: [{ label: "TL205", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL232", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL228", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL233", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }, { label: "TL264", destination: "Duck Pond", bus: "b2" }, { label: "TL280", destination: "Star Lake", bus: "b2" }]
+      label: "2013 filed ring-bus operation / 2019 completed T1 replacement",
+      buses: [{ id: "b1", label: "B1 bus", voltage: "230 kV", y: 330 }, { id: "b2", label: "B2 bus", voltage: "66 kV", y: 540 }],
+      transformers: [{ label: "T1", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2", x: 560 }],
+      circuits: [{ label: "TL264", destination: "Duck Pond", bus: "b2", breaker: "B2L64", x: 280 }, { label: "TL280", destination: "Star Lake", bus: "b2", breaker: "B2L80", x: 840 }],
+      rings: [{
+        label: "B1 230 kV five-breaker ring bus",
+        voltage: "230 kV",
+        bus: "b1",
+        y: 170,
+        fromX: 190,
+        toX: 930,
+        breakers: [
+          { x: 190, y: 250, orientation: "vertical", label: "B1L05" },
+          { x: 375, orientation: "horizontal", label: "L05L33" },
+          { x: 560, orientation: "horizontal", label: "L32L33" },
+          { x: 745, orientation: "horizontal", label: "L28L32" },
+          { x: 930, y: 250, orientation: "vertical", label: "B1L28" }
+        ],
+        circuits: [
+          { label: "TL205", destination: "Stony Brook", destinationCode: "STB", x: 280 },
+          { label: "TL233", destination: "Bottom Brook", destinationCode: "BBK", x: 465 },
+          { label: "TL232", destination: "Stony Brook", destinationCode: "STB", x: 655 },
+          { label: "TL228", destination: "Massey Drive", destinationCode: "MAS", x: 840 }
+        ]
+      }]
     },
-    sources: [sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 458 to 460"), sourceRef("nlh-buchans-completion-2020", "physical PDF p. 51"), sourceRef("nlh-buchans-q3-2025", "physical PDF p. 36"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-buchans-storm-2013", "physical PDF pp. 135, 150 to 151, and 162"), sourceRef("nlh-buchans-airblast-2015", "physical PDF p. 3"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 9"), sourceRef("nlh-buchans-2018", "physical PDF pp. 453 and 458 to 460"), sourceRef("nlh-buchans-completion-2020", "physical PDF p. 51"), sourceRef("nlh-buchans-industrial-assets-2018", "physical PDF p. 10"), sourceRef("nlh-buchans-q3-2025", "physical PDF p. 36"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "DLK",
@@ -9833,26 +9884,43 @@ export const stationProfiles = [
     mapPages: [],
     eventLoads: [],
     diagram: {
-      label: "2019 completed T1 replacement / 2018 filed routes",
+      label: "2013 filed ring-bus operation / 2019 completed T1 replacement",
       buses: [
-        { id: "b1", label: "bus", voltage: "230 kV" },
-        { id: "b2", label: "bus", voltage: "66 kV" },
-        { id: "b3", label: "bus", voltage: "12.5 kV" }
+        { id: "b1", label: "B1 bus", voltage: "230 kV", y: 330 },
+        { id: "b2", label: "B2 bus", voltage: "66 kV", y: 540 },
+        { id: "b3", label: "bus", voltage: "12.5 kV", y: 750 }
       ],
       transformers: [
-        { label: "BUC-T1", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2" },
-        { label: "Local transformer", rating: "66/12.5 kV", from: "b2", to: "b3" }
+        { label: "BUC-T1", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2", x: 560 },
+        { label: "Local transformer", rating: "66/12.5 kV", from: "b2", to: "b3", x: 560 }
       ],
       circuits: [
-        { label: "TL205", destination: "Stony Brook", bus: "b1", destinationCode: "STB" },
-        { label: "TL232", destination: "Stony Brook", bus: "b1", destinationCode: "STB" },
-        { label: "TL228", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" },
-        { label: "TL233", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" },
-        { label: "TL264", destination: "Duck Pond", bus: "b2" },
-        { label: "TL280", destination: "Star Lake", bus: "b2" },
-        { label: "BUC-01", destination: "Buchans Lake hydro plant and local distribution", bus: "b3", link: false },
-        { label: "BUC-02", destination: "Local distribution", bus: "b3", link: false }
-      ]
+        { label: "TL264", destination: "Duck Pond", bus: "b2", breaker: "B2L64", x: 280 },
+        { label: "TL280", destination: "Star Lake", bus: "b2", breaker: "B2L80", x: 840 },
+        { label: "BUC-01", destination: "Buchans Lake hydro plant and local distribution", bus: "b3", link: false, x: 360 },
+        { label: "BUC-02", destination: "Local distribution", bus: "b3", link: false, x: 760 }
+      ],
+      rings: [{
+        label: "B1 230 kV five-breaker ring bus",
+        voltage: "230 kV",
+        bus: "b1",
+        y: 170,
+        fromX: 190,
+        toX: 930,
+        breakers: [
+          { x: 190, y: 250, orientation: "vertical", label: "B1L05" },
+          { x: 375, orientation: "horizontal", label: "L05L33" },
+          { x: 560, orientation: "horizontal", label: "L32L33" },
+          { x: 745, orientation: "horizontal", label: "L28L32" },
+          { x: 930, y: 250, orientation: "vertical", label: "B1L28" }
+        ],
+        circuits: [
+          { label: "TL205", destination: "Stony Brook", destinationCode: "STB", x: 280 },
+          { label: "TL233", destination: "Bottom Brook", destinationCode: "BBK", x: 465 },
+          { label: "TL232", destination: "Stony Brook", destinationCode: "STB", x: 655 },
+          { label: "TL228", destination: "Massey Drive", destinationCode: "MAS", x: 840 }
+        ]
+      }]
     },
     engineeringRecord: {
       date: "2009 JOINT STATION RECORD",

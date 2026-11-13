@@ -74,6 +74,27 @@ test("Stony Brook renders the filed split bus and B1 ring section", () => {
   assert.match(html, /data-hydro-terminal-record="GFC"/);
 });
 
+test("Buchans renders the filed five-breaker ring and 66 kV line breakers", () => {
+  const buchans = islandTerminalRecords.find((record) => record.code === "BUC");
+  assert.ok(buchans);
+  assert.deepEqual(buchans.diagram.rings[0].breakers.map(({ label }) => label), ["B1L05", "L05L33", "L32L33", "L28L32", "B1L28"]);
+  assert.deepEqual(buchans.diagram.rings[0].circuits.map(({ label }) => label), ["TL205", "TL233", "TL232", "TL228"]);
+  assert.deepEqual(buchans.diagram.circuits.map(({ label, breaker }) => [label, breaker]), [["TL264", "B2L64"], ["TL280", "B2L80"]]);
+  assert.ok(buchans.sources.some((source) => source.sourceId === "nlh-buchans-storm-2013" && source.pages.includes("150")));
+  assert.ok(buchans.sources.some((source) => source.sourceId === "nlh-terminal-risk-2017" && source.pages.includes("9")));
+  const html = renderTerminalDiagram(buchans.diagram, escapeHtml);
+  assert.match(html, /class="terminal-ring voltage-230"/);
+  assert.match(html, />B1L05</);
+  assert.match(html, />L05L33</);
+  assert.match(html, />L32L33</);
+  assert.match(html, />L28L32</);
+  assert.match(html, />B1L28</);
+  assert.match(html, />B2L64</);
+  assert.match(html, />B2L80</);
+  assert.match(html, /data-hydro-terminal-record="BBK"/);
+  assert.match(html, /data-hydro-terminal-record="MAS"/);
+});
+
 test("Deer Lake renders the filed 230 kV and 66 kV breaker records", () => {
   const deerLake = islandTerminalRecords.find((record) => record.code === "DLK");
   assert.ok(deerLake);

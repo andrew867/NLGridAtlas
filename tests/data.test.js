@@ -2271,6 +2271,9 @@ test("Buchans joins the terminal transformer and Newfoundland Power distribution
   assert.deepEqual(buchans.feederRegister, ["BUC-01", "BUC-02"]);
   assert.deepEqual(buchans.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "66 kV", "12.5 kV"]);
   assert.deepEqual(buchans.diagram.transformers.map(({ label, rating }) => [label, rating]), [["BUC-T1", "40/53.3/66.6 MVA"], ["Local transformer", "66/12.5 kV"]]);
+  assert.deepEqual(buchans.diagram.rings[0].breakers.map(({ label }) => label), ["B1L05", "L05L33", "L32L33", "L28L32", "B1L28"]);
+  assert.deepEqual(buchans.diagram.rings[0].circuits.map(({ label }) => label), ["TL205", "TL233", "TL232", "TL228"]);
+  assert.deepEqual(buchans.diagram.circuits.slice(0, 2).map(({ label, breaker }) => [label, breaker]), [["TL264", "B2L64"], ["TL280", "B2L80"]]);
   assert.deepEqual(buchans.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 268", "physical PDF p. 453", "physical PDF p. 51", "physical PDF p. 36"]);
   const distributionFacts = buchans.engineeringRecord.facts.flat().join(" ");
   const completionFacts = buchans.planningRecord.facts.flat().join(" ");

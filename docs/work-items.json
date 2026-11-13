@@ -574,6 +574,18 @@
       "notes": "The 2014 operating diagram, physical PDF pp. 769 to 770, establishes bus B2, breakers B2L26 and B2L25, TL226 and TL225, and the L25-2 isolation point. The 2016 transformer-protection study, physical PDF p. 19, identifies T2 with B3L47 and B3L48 on TL247 and TL248. The 2003 report supplies staged transformer ratings. No filed breaker-level drawing for the 138 kV section was found in this pass."
     },
     {
+      "id": "ISL-023",
+      "title": "Reconstruct the Buchans five-breaker ring bus",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Replace the four-line connection sketch with the filed five-breaker ring around T1, its four 230 kV line positions, the named 66 kV line breakers, and the completed T1 replacement record.",
+      "dependencies": ["ISL-003", "SRC-001"],
+      "completion_evidence": ["src/data.js", "tests/terminal-diagram.test.js", "tests/data.test.js", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "The January 2013 storm report, physical PDF pp. 135 and 150 to 151, identifies T1 operation through B1L05 and B1L28 and the L05L33 and L32L33 line positions. Undertaking 73, physical PDF p. 3, lists the air-blast breakers B1L05, L05L33, L28L32 and B1L28. The 2017 transformer-protection study, physical PDF p. 9, confirms T1 already had two-breaker protection. The 2018 industrial-customer asset review identifies TL264 through B2L64; the 2013 restoration record identifies B2L80."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,
