@@ -95,7 +95,7 @@ test("Buchans renders the filed five-breaker ring and 66 kV line breakers", () =
   assert.match(html, /data-hydro-terminal-record="MAS"/);
 });
 
-test("Deer Lake renders the filed 230 kV and 66 kV breaker records", () => {
+test("Deer Lake renders the filed 230 kV, 138 kV ring and 66 kV breaker records", () => {
   const deerLake = islandTerminalRecords.find((record) => record.code === "DLK");
   assert.ok(deerLake);
   assert.deepEqual(deerLake.diagram.transformers.map(({ label, rating }) => [label, rating]), [
@@ -105,19 +105,30 @@ test("Deer Lake renders the filed 230 kV and 66 kV breaker records", () => {
   assert.deepEqual(deerLake.diagram.circuits.map(({ label, breaker }) => [label, breaker || null]), [
     ["TL247", "B3L47"],
     ["TL248", "B3L48"],
-    ["TL239", null],
-    ["TL245", null],
     ["TL226", "B2L26"],
     ["TL225", "B2L25"]
   ]);
+  assert.deepEqual(deerLake.diagram.rings[0].breakers.map(({ label }) => label), ["B1L39", "L39T2", "L45T2", "B1L45"]);
+  assert.deepEqual(deerLake.diagram.rings[0].circuits.map(({ label }) => label), ["TL239", "TL245"]);
+  assert.equal(deerLake.diagram.transformers[0].toY, deerLake.diagram.rings[0].y);
+  assert.ok(deerLake.sources.some((source) => source.sourceId === "nlh-system-design-2015" && source.pages.includes("4")));
+  assert.ok(deerLake.sources.some((source) => source.sourceId === "nlh-deer-lake-ring-breakers-2015" && source.pages.includes("37")));
+  assert.ok(deerLake.sources.some((source) => source.sourceId === "nlh-deer-lake-event-2013" && source.pages.includes("191")));
   assert.ok(deerLake.sources.some((source) => source.sourceId === "nlh-deer-lake-operating-2014" && source.pages.includes("770")));
   const html = renderTerminalDiagram(deerLake.diagram, escapeHtml);
+  assert.match(html, /class="terminal-ring voltage-138"/);
   assert.match(html, /class="terminal-line-breaker"/);
   assert.match(html, />B3L47</);
   assert.match(html, />B3L48</);
+  assert.match(html, />B1L39</);
+  assert.match(html, />L39T2</);
+  assert.match(html, />L45T2</);
+  assert.match(html, />B1L45</);
   assert.match(html, />B2L26</);
   assert.match(html, />B2L25</);
   assert.match(html, /data-hydro-terminal-record="CAT"/);
+  assert.match(html, /data-hydro-terminal-record="BRH"/);
+  assert.match(html, /data-hydro-terminal-record="HOW"/);
   assert.match(html, /data-hydro-terminal-record="DLP"/);
 });
 

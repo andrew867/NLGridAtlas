@@ -1440,6 +1440,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
   },
   {
+    id: "nlh-deer-lake-ring-breakers-2015",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "Upgrade Circuit Breakers Report, Deer Lake 138 kV Ring Breakers",
+    topics: ["Deer Lake", "138 kV", "ring bus", "B1L39", "L39T2", "L45T2", "B1L45", "circuit breakers"],
+    pages: "physical PDF pp. 37 to 38",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NLH2015Capital/files/reports/Upgrade-Circuit-Breakers-Report-2014-09-12.pdf"
+  },
+  {
+    id: "nlh-deer-lake-event-2013",
+    year: 2013,
+    organization: "NL Hydro",
+    title: "Report on Three Island System Events in January 2013, Deer Lake TL239 Operation",
+    topics: ["Deer Lake", "TL239", "L39T2", "B1L39", "138 kV", "circuit breakers"],
+    pages: "physical PDF p. 191",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/3EventsofJan2013.pdf"
+  },
+  {
     id: "nlh-terminal-risk-2017",
     year: 2017,
     organization: "NL Hydro",
@@ -6068,14 +6088,32 @@ export const islandTerminalRecords = [
     code: "DLK",
     name: "Deer Lake Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T2, 230/138 kV, 45/60/75 MVA; T1, 138/66 kV, 25/33.3/41.7 MVA"], ["230 kV terminals", "TL247 to Cat Arm through B3L47; TL248 to Massey Drive through B3L48"], ["138 kV circuits", "TL239 to Berry Hill; TL245 to Howley"], ["66 kV bus B2", "TL226 through B2L26 to Wiltondale; TL225 through B2L25 to Deer Lake Power"], ["2014 TL225 isolation", "Disconnect L25-2 was added 1.4 km from the terminal-station end so Deer Lake customers could remain supplied from Deer Lake Power during a terminal-station outage"], ["2016 transformer protection study", "T2 had no dedicated 230 kV breaker; a T2 fault operated B3L47 and B3L48, isolating TL247, TL248 and Cat Arm generation"]],
+    facts: [["Transformation", "T2, 230/138 kV, 45/60/75 MVA; T1, 138/66 kV, 25/33.3/41.7 MVA"], ["230 kV terminals", "TL247 to Cat Arm through B3L47; TL248 to Massey Drive through B3L48"], ["138 kV ring bus", "Established in 1983 to 1984; breakers B1L39, L39T2, L45T2 and B1L45"], ["TL239 protection", "TL239 to Berry Hill operates through L39T2 and B1L39"], ["138 kV circuit", "TL245 to Howley"], ["66 kV bus B2", "TL226 through B2L26 to Wiltondale; TL225 through B2L25 to Deer Lake Power"], ["2014 TL225 isolation", "Disconnect L25-2 was added 1.4 km from the terminal-station end so Deer Lake customers could remain supplied from Deer Lake Power during a terminal-station outage"], ["2016 transformer protection study", "T2 had no dedicated 230 kV breaker; a T2 fault operated B3L47 and B3L48, isolating TL247, TL248 and Cat Arm generation"]],
     diagram: {
-      label: "2014 B2 operating diagram / 2016 230 kV breaker record / 2003 transformer ratings / 2024 routes",
-      buses: [{ id: "b1", label: "bus B3", voltage: "230 kV" }, { id: "b2", label: "station bus", voltage: "138 kV" }, { id: "b3", label: "bus B2", voltage: "66 kV" }],
-      transformers: [{ label: "T2", rating: "45/60/75 MVA", from: "b1", to: "b2", x: 420 }, { label: "T1", rating: "25/33.3/41.7 MVA", from: "b2", to: "b3", x: 700 }],
-      circuits: [{ label: "TL247", destination: "Cat Arm", bus: "b1", destinationCode: "CAT", breaker: "B3L47", x: 220 }, { label: "TL248", destination: "Massey Drive", bus: "b1", destinationCode: "MAS", breaker: "B3L48", x: 900 }, { label: "TL239", destination: "Berry Hill", bus: "b2", destinationCode: "BRH", x: 220 }, { label: "TL245", destination: "Howley", bus: "b2", destinationCode: "HOW", x: 900 }, { label: "TL226", destination: "Wiltondale", bus: "b3", breaker: "B2L26", x: 220 }, { label: "TL225", destination: "Deer Lake Power", bus: "b3", destinationCode: "DLP", breaker: "B2L25", x: 900 }]
+      label: "1983 to 1984 ring bus / 2014 breaker records / 2003 transformer ratings / 2024 routes",
+      buses: [{ id: "b1", label: "bus B3", voltage: "230 kV", y: 165 }, { id: "b2", label: "bus B1", voltage: "138 kV", y: 610 }, { id: "b3", label: "bus B2", voltage: "66 kV", y: 860 }],
+      transformers: [{ label: "T2", rating: "45/60/75 MVA", from: "b1", to: "b2", toY: 410, x: 560 }, { label: "T1", rating: "25/33.3/41.7 MVA", from: "b2", to: "b3", x: 700 }],
+      circuits: [{ label: "TL247", destination: "Cat Arm", bus: "b1", destinationCode: "CAT", breaker: "B3L47", x: 220 }, { label: "TL248", destination: "Massey Drive", bus: "b1", destinationCode: "MAS", breaker: "B3L48", x: 900 }, { label: "TL226", destination: "Wiltondale", bus: "b3", breaker: "B2L26", x: 220 }, { label: "TL225", destination: "Deer Lake Power", bus: "b3", destinationCode: "DLP", breaker: "B2L25", x: 900 }],
+      rings: [{
+        label: "Deer Lake 138 kV ring bus",
+        voltage: "138 kV",
+        bus: "b2",
+        y: 410,
+        fromX: 190,
+        toX: 930,
+        breakers: [
+          { x: 190, y: 510, orientation: "vertical", label: "B1L39" },
+          { x: 435, orientation: "horizontal", label: "L39T2" },
+          { x: 685, orientation: "horizontal", label: "L45T2" },
+          { x: 930, y: 510, orientation: "vertical", label: "B1L45" }
+        ],
+        circuits: [
+          { label: "TL239", destination: "Berry Hill", destinationCode: "BRH", x: 315 },
+          { label: "TL245", destination: "Howley", destinationCode: "HOW", x: 805 }
+        ]
+      }]
     },
-    sources: [sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF pp. 377 to 378"), sourceRef("nlh-deer-lake-operating-2014", "physical PDF pp. 769 to 770"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 19"), sourceRef("nlh-planning-2024", "physical PDF p. 15"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-deer-lake-ring-breakers-2015", "physical PDF pp. 37 to 38"), sourceRef("nlh-deer-lake-event-2013", "physical PDF p. 191"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF pp. 377 to 378"), sourceRef("nlh-deer-lake-operating-2014", "physical PDF pp. 769 to 770"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 19"), sourceRef("nlh-planning-2024", "physical PDF p. 15"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "DLP",

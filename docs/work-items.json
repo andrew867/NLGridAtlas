@@ -622,6 +622,18 @@
       "notes": "CA-NLH-036, physical PDF p. 2, states that the rebuilt Terminal Station 2 uses breaker-and-one-half configuration, with TL209, TL211, TL233, TL269, T1, T3, and both converter connections on separate legs. NP-NLH-001, physical PDF pp. 3 and 5, identifies the twelve installed breaker positions, the eight circuit and transformer taps, the B2/B3 normally open 138 kV tie, B2L14, B3L50, and B6L400. Proposed T4 equipment is omitted from the installed diagrams."
     },
     {
+      "id": "ISL-027",
+      "title": "Reconstruct the Deer Lake 138 kV ring bus",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Replace the unresolved Deer Lake 138 kV section with the filed four-breaker ring, the TL239 and TL245 positions, and the T2 ring connection while retaining the documented 230 kV and 66 kV equipment.",
+      "dependencies": ["ISL-022", "SRC-001"],
+      "completion_evidence": ["src/data.js", "tests/terminal-diagram.test.js", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "PUB-NLH-318, physical PDF p. 4, states that the 138 kV ring bus was established in 1983 to 1984. The 2015 breaker report, physical PDF pp. 37 to 38, names B1L39, L39T2, L45T2, and B1L45. The January 2013 event report, physical PDF p. 191, records TL239 tripping through L39T2 and B1L39. The breaker names and filed ring-bus history establish the B1, TL239, T2, and TL245 ring positions."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,
