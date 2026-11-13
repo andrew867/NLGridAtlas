@@ -227,13 +227,22 @@ test("Soldiers Pond renders the filed five-string 230 kV breaker arrangement", (
 
 test("proposed Avalon CT terminal retains the July 2026 interconnection distances", () => {
   const avalonCt = islandTerminalRecords.find((record) => record.code === "HRDGT2");
+  const html = renderTerminalDiagram(avalonCt.diagram, escapeHtml);
   assert.equal(avalonCt.status, "proposed");
   assert.deepEqual(avalonCt.diagram.circuits.map(({ label, destination }) => [label, destination]), [
     ["TL218", "Oxen Pond, 37 km"],
-    ["Bus extension", "Holyrood, 0.5 km"]
+    ["Bus extension", "Holyrood, 0.5 km"],
+    ["Station service", "Holyrood Bus 8"]
   ]);
-  assert.equal(avalonCt.diagram.transformers[0].rating, "13.8/230 kV");
-  assert.equal(avalonCt.diagram.generators[0].rating, "150 MW nominal");
+  assert.equal(avalonCt.diagram.transformers.length, 3);
+  assert.ok(avalonCt.diagram.transformers.every(({ rating }) => rating === "13.8/230 kV"));
+  assert.deepEqual(avalonCt.diagram.generators.map(({ label, rating }) => [label, rating]), [
+    ["CT1", "50 MW"],
+    ["CT2", "50 MW"],
+    ["CT3", "50 MW"]
+  ]);
+  assert.match(html, /138 kV \/ station-service supply/);
+  assert.match(html, /data-station-record="OXP"/);
   assert.ok(avalonCt.sources.every((source) => source.pages));
 });
 

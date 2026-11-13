@@ -1835,9 +1835,39 @@ export const sources = [
     organization: "NL Hydro",
     title: "Avalon Combustion Turbine Basis of Design",
     topics: ["Avalon combustion turbine", "HRDGT2", "generator step-up transformer", "13.8 kV", "230 kV", "synchronous condenser"],
-    pages: "physical PDF pp. 12 and 18",
+    pages: "physical PDF pp. 12 to 14 and 17 to 18",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/NLH2025AvalonCombustionMarch/report/From%20NLH%20-%20Attachment%203%20-%20Avalon%20Combustion%20Turbine%20%E2%80%93%20Basis%20of%20Design%20-%20Redacted%20-%202025-06-13.PDF"
+  },
+  {
+    id: "nlh-2026-avalon-reactive-phase-1",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Avalon Reactive Power Study, Phase 1",
+    topics: ["Avalon combustion turbine", "3 x 50 MW", "synchronous condenser", "reactive power", "Holyrood"],
+    pages: "physical PDF p. 8",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/study/From%20NLH%20-%20Avalon%20Reactive%20Power%20Study%20-%20Phase%201%20-%202026-07-10.PDF"
+  },
+  {
+    id: "nlh-2026-avalon-ct-february-update",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Avalon Combustion Turbine Project Early Execution Update, February 2026",
+    topics: ["Avalon combustion turbine", "generator step-up transformer", "station service transformer", "procurement"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/indexreports/avaloncombustion/From%20NLH%20-%20Avalon%20Combustion%20Turbine%20Project%20Early%20Execution%20Update%20-%20December%202025%20-%202026-02-16%20-%20REDACTED.PDF"
+  },
+  {
+    id: "nlh-2026-avalon-ct-bw-nlh-015",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "BW-NLH-015, Avalon CT Spare Transformer Response",
+    topics: ["Avalon combustion turbine", "generator step-up transformer", "spare transformer", "MVA rating"],
+    pages: "physical PDF p. 415",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/NLH2025AvalonCombustionMarch/report/Bates%20White%20Economic%20Consulting%20-%20Expert%20Report%20-%20Phase%20Two%20-%20REDACTED%20-%202026-02-03.PDF"
   },
   {
     id: "nlh-2026-avalon-ct-phase-ii",
@@ -6981,8 +7011,13 @@ export const islandTerminalRecords = [
       ["Location", "approximately 0.5 km from the existing Holyrood Terminal Station"],
       ["Holyrood connection", "the 0.5 km section of former TL218 would be treated as a bus extension"],
       ["Oxen Pond connection", "the remaining 37 km section would retain the TL218 designation"],
-      ["Generation", "multiple 13.8 kV units with 150 MW nominal total capacity and synchronous-condensing capability"],
-      ["Transformation", "one 13.8/230 kV generator step-up transformer for each generating unit, plus one spare"],
+      ["Generation", "three 13.8 kV, 50 MW combustion-turbine units with synchronous-condensing capability"],
+      ["Transformation", "three operating 13.8/230 kV generator step-up transformers plus one spare"],
+      ["Spare GSU rating", "50/66.6/83.3 MVA"],
+      ["Generator connections", "one generator circuit breaker and one 13.8 kV switchgear lineup per unit; isolated-phase bus connects each unit to its GSU"],
+      ["Station service", "a separate 138 kV circuit from Holyrood Bus 8 supplies the new terminal; the transformer package includes one station-service transformer"],
+      ["Black start", "the design basis specifies two 2 MW diesel generators as necessary"],
+      ["Filed drawings", "the October 2024 switchyard layout and operation single-line covers are public; both drawings are redacted in full"],
       ["June 2026 status", "Phase II additional early execution application"],
       ["Line relocation milestone", "Newfoundland Power completed the 38L and 39L relocations on July 31, 2026"],
       ["CT package", "awarded December 15, 2025; the GE agreement was executed on the same date"],
@@ -6992,17 +7027,33 @@ export const islandTerminalRecords = [
       ["Full project approval", "awaiting a Board order when the October 2026 update was filed"]
     ],
     diagram: {
-      label: "proposed July 2026 interconnection / not as-built",
-      buses: [{ id: "b1", label: "HRDGT2 terminal bus", voltage: "230 kV" }, { id: "b2", label: "generator buses", voltage: "13.8 kV" }],
-      transformers: [{ label: "GSU bank", rating: "13.8/230 kV", from: "b1", to: "b2" }],
-      circuits: [
-        { label: "TL218", destination: "Oxen Pond, 37 km", bus: "b1" },
-        { label: "Bus extension", destination: "Holyrood, 0.5 km", bus: "b1", link: false }
+      label: "proposed design basis / not as-built",
+      buses: [
+        { id: "b1", label: "HRDGT2 terminal bus", voltage: "230 kV", y: 165 },
+        { id: "b2", label: "generator terminals", voltage: "13.8 kV", y: 405 },
+        { id: "b3", label: "station-service supply", voltage: "138 kV", y: 645, segments: [{ x: 560, width: 360 }] }
       ],
-      generators: [{ label: "Avalon CT", rating: "150 MW nominal", symbol: "CT", bus: "b2" }]
+      transformers: [
+        { label: "GSU 1", rating: "13.8/230 kV", from: "b1", to: "b2", x: 270 },
+        { label: "GSU 2", rating: "13.8/230 kV", from: "b1", to: "b2", x: 560 },
+        { label: "GSU 3", rating: "13.8/230 kV", from: "b1", to: "b2", x: 850 }
+      ],
+      circuits: [
+        { label: "TL218", destination: "Oxen Pond, 37 km", bus: "b1", x: 260, stationCode: "OXP" },
+        { label: "Bus extension", destination: "Holyrood, 0.5 km", bus: "b1", x: 860, link: false },
+        { label: "Station service", destination: "Holyrood Bus 8", bus: "b3", x: 560, direction: "down", link: false }
+      ],
+      generators: [
+        { label: "CT1", rating: "50 MW", symbol: "CT", bus: "b2", x: 270 },
+        { label: "CT2", rating: "50 MW", symbol: "CT", bus: "b2", x: 560 },
+        { label: "CT3", rating: "50 MW", symbol: "CT", bus: "b2", x: 850 }
+      ]
     },
     sources: [
-      sourceRef("nlh-2025-avalon-ct-basis", "physical PDF p. 12"),
+      sourceRef("nlh-2025-avalon-ct-basis", "physical PDF pp. 12 to 14 and 17 to 18"),
+      sourceRef("nlh-2026-avalon-reactive-phase-1", "physical PDF p. 8"),
+      sourceRef("nlh-2026-avalon-ct-february-update", "physical PDF p. 3"),
+      sourceRef("nlh-2026-avalon-ct-bw-nlh-015", "physical PDF p. 415"),
       sourceRef("nlh-2026-avalon-ct-phase-ii", "physical PDF p. 19"),
       sourceRef("nlh-2026-avalon-ct-pub-nlh-011", "physical PDF p. 1"),
       sourceRef("nlh-2026-avalon-ct-october-update", "physical PDF pp. 3 to 8 and 11")

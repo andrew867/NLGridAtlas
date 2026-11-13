@@ -28,6 +28,10 @@ test("Avalon CT status is connected to the source, terminal, timeline and Holyro
   const terminal = islandTerminalRecords.find(({ code }) => code === "HRDGT2");
   const terminalFacts = terminal.facts.flat().join(" ");
   assert.match(terminalFacts, /38L and 39L relocations on July 31, 2026/);
+  assert.match(terminalFacts, /three 13\.8 kV, 50 MW/);
+  assert.match(terminalFacts, /50\/66\.6\/83\.3 MVA/);
+  assert.match(terminalFacts, /Holyrood Bus 8/);
+  assert.match(terminalFacts, /redacted in full/);
   assert.match(terminalFacts, /\$95\.411 million/);
   assert.match(terminalFacts, /March 7, 2030/);
   assert.equal(terminal.status, "proposed");

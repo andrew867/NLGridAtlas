@@ -761,9 +761,9 @@
       "status": "deferred",
       "scope": "Find issued-for-construction or as-built one-lines for the new terminal, GSU transformers, TL218 tie-in, synchronous-condenser equipment, and rerouted Newfoundland Power lines.",
       "dependencies": ["ARC-002"],
-      "completion_evidence": ["src/data.js", "tests/data.test.js", "tests/terminal-diagram.test.js"],
+      "completion_evidence": ["research/AVALON_CT_OCTOBER_2026_STATUS.md", "src/data.js", "tests/data.test.js", "tests/terminal-diagram.test.js"],
       "blocker": null,
-      "notes": "The atlas includes the July 2026 proposed HRDGT2 topology. PUB-NLH-011 places the new terminal approximately 0.5 km from Holyrood, treats that short section as a bus extension, and retains TL218 for the remaining 37 km to Oxen Pond. The October 2026 update records the 38L and 39L relocations as complete on July 31, 2026, but does not publish the terminal as-built. Final connection work remains deferred until an issued-for-construction, commissioning, or as-built record exists."
+      "notes": "The proposed record now shows three 13.8 kV, 50 MW combustion-turbine units, three connected 13.8/230 kV GSUs, one spare 50/66.6/83.3 MVA GSU, individual generator breakers and 13.8 kV switchgear, and the separate 138 kV station-service supply from Holyrood Bus 8. The February 2026 update confirms procurement of four GSUs and one station-service transformer. PUB-NLH-011 places the new terminal approximately 0.5 km from Holyrood, treats that section as a bus extension, and retains TL218 for the remaining 37 km to Oxen Pond. The October 2026 update records the 38L and 39L relocations complete on July 31, 2026. The public Basis of Design identifies the October 2024 switchyard layout and operation single-line drawing numbers, but both drawings are redacted in full. Final connection work remains deferred until an issued-for-construction, commissioning, or as-built record exists."
     },
     {
       "id": "GEN-004",

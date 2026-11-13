@@ -3132,6 +3132,9 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
   assert.ok(sourceIds.has("nlh-2025-capital"));
   assert.ok(sourceIds.has("nlh-2025-avalon-ct"));
   assert.ok(sourceIds.has("nlh-2025-avalon-ct-basis"));
+  assert.ok(sourceIds.has("nlh-2026-avalon-reactive-phase-1"));
+  assert.ok(sourceIds.has("nlh-2026-avalon-ct-february-update"));
+  assert.ok(sourceIds.has("nlh-2026-avalon-ct-bw-nlh-015"));
   assert.ok(sourceIds.has("nlh-2026-avalon-ct-phase-ii"));
   assert.ok(sourceIds.has("nlh-2026-avalon-ct-pub-nlh-011"));
   assert.ok(sourceIds.has("nlh-2027-ca-nlh-058"));
