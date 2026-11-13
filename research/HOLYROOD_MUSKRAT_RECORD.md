@@ -1,5 +1,11 @@
 # Holyrood and Muskrat Falls record
 
+## Unit 3 reversible synchronous-condenser arrangement
+
+The Unit 3 starter uses an induction pony motor, a speed-increasing gearbox, a variable-fluid drive, and an SSS clutch. The pony motor accelerates the generator. The operator applies DC field, the generator breaker closes at synchronous speed, and the SSS clutch disengages the starter. Reactive output is then controlled through generator field current. [2011 Capital Budget Application, physical PDF pp. 809 and 812](http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf).
+
+The 2011 application proposed a new extension shaft, journal bearing, thrust bearing, couplings, and jacking-oil modifications. The 2012 year-end capital table records $925,800 of total expenditure and no carryover into 2013 for the project. A 2015 equipment history explicitly records a new thrust bearing installed in 2012 for synchronous-condenser operation. It does not itemize the other proposed components. [2012 Capital Expenditures and Carryover Report, physical PDF p. 428](http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf); [2016 Capital Budget Application, physical PDF p. 558](http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/files/application/NLH-2016-Capital-Budget-Application-Volume-II-2015-07-31.pdf).
+
 ## Conversion plan history
 
 | Date | Filed position | Source |

@@ -1930,6 +1930,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/PU/orders/2025/P.U.%208(2025).PDF"
   },
   {
+    id: "nlh-2011-holyrood-sc-upgrade",
+    year: 2010,
+    organization: "NL Hydro",
+    title: "2011 Capital Budget Application, Holyrood Unit 3 Synchronous Condenser Upgrade",
+    topics: ["Holyrood", "Unit 3", "synchronous condenser", "pony motor", "gearbox", "SSS clutch", "thrust bearing"],
+    pages: "physical PDF pp. 809 to 820 and 826; project pp. 2 to 13 and 19",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-2016-holyrood-unit3-history",
+    year: 2015,
+    organization: "NL Hydro",
+    title: "2016 Capital Budget Application, Rewind Rotor and Install Flux Probe on Unit 3",
+    topics: ["Holyrood", "Unit 3", "synchronous condenser", "thrust bearing", "rotor"],
+    pages: "physical PDF p. 558; project p. 4",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/files/application/NLH-2016-Capital-Budget-Application-Volume-II-2015-07-31.pdf"
+  },
+  {
     id: "nlh-2020-holyrood-unit3",
     year: 2019,
     organization: "NL Hydro",
@@ -5129,6 +5149,15 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "2012",
+    category: "station",
+    title: "Holyrood Unit 3 received a new thrust bearing",
+    body: "Hydro's later equipment history records the new thrust bearing as required for synchronous-condenser operation. The 2012 year-end capital table records $925,800 of total project expenditure and no carryover into 2013.",
+    sourceId: "nlh-2016-holyrood-unit3-history",
+    pages: "physical PDF p. 558; project p. 4",
+    status: "verified"
+  },
+  {
     date: "2012-09-11",
     category: "load",
     title: "Hurricane Leslie interrupted Avalon load",
@@ -5575,9 +5604,9 @@ export const components = {
   },
   "hrd-g3": {
     diagram: "hrd", status: "verified", code: "HRD / UNIT 3", title: "Holyrood Unit 3 generator",
-    summary: "Unit 3 has had reversible synchronous-condenser capability since 1986. The March 2025 capital model assumed synchronous-condenser operation beyond 2035. Hydro's June and September 2026 filings say the post-steam requirement and Unit 3 role remain under assessment. In July 2026 Unit 3 recorded no generating hours and 697 synchronous-condensing hours.",
-    data: [["Generator", "185 MVA, 0.85 power factor"], ["Stator", "16 kV, hydrogen cooled"], ["Rotor", "3,600 rpm"], ["Synchronous condenser", "Approximately 70 MVAR in the 2020 filing"], ["Starting system", "Pony motor and SSS clutch"], ["2020 return to generation", "Filed procedure took five to seven days, including H2, CO2, and air purges"], ["Wood proposal", "Retain H2 and recouple in three 10-hour days; presented as a recommendation"], ["2016 work", "Rotor rewind"], ["2021 actual expenditure", "$7.2857 million for the stator-rewind project"], ["April 2022 operation", "373 hours as a synchronous condenser"], ["2024 planning case", "Spring 2030 permanent synchronous-condensing operation"], ["March 2025 capital model", "Assumed synchronous-condenser operation beyond 2035; no general generator condition-monitoring instrumentation was installed"], ["Synchronous-condenser support", "Exciter and transformer, cooling water, H2, generator lube-oil, and seal-oil systems require inspection or refurbishment"], ["July 2026 operation", "0 generating hours; 697 synchronous-condensing hours"], ["June 2026 review", "Hydro was assessing the continued requirement and effectiveness of Unit 3 synchronous-condensing capability"], ["September 2026 position", "Post-steam Unit 3 operation remained a planning assumption; the RRA Study Review was evaluating the required Avalon synchronous-condensing support"], ["Alternatives under review", "Combustion-turbine synchronous operation, stand-alone synchronous condensers, STATCOMs, and grid-forming inverters"]],
-    sources: [sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2020-units12-plan", "physical PDF p. 1"), sourceRef("nlh-2020-holyrood-backup", "physical PDF pp. 3 and 24"), sourceRef("nlh-2021-capex", "physical PDF p. 71"), sourceRef("nlh-2022-april-energy", "physical PDF pp. 7 to 8"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 69 and 648"), sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 29 and 31"), sourceRef("nlh-2026-holyrood-overview", "physical PDF p. 170"), sourceRef("nlh-2026-reactive-options", "physical PDF p. 1"), sourceRef("nlh-2026-july-energy", "physical PDF p. 10"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 13"), sourceRef("nlh-2027-ca-nlh-058", "physical PDF p. 2")]
+    summary: "Unit 3 has had reversible synchronous-condenser capability since 1986. The starter drives the generator through a gearbox and variable-fluid drive; the SSS clutch disconnects the starter after the generator breaker closes at synchronous speed. A new thrust bearing was installed in 2012. Hydro's June and September 2026 filings say the post-steam requirement and Unit 3 role remain under assessment.",
+    data: [["Generator", "185 MVA, 0.85 power factor"], ["Stator", "16 kV, hydrogen cooled"], ["Rotor", "3,600 rpm"], ["Synchronous condenser", "Approximately 70 MVAR in the 2020 filing"], ["Starting equipment", "Induction pony motor, speed-increasing gearbox, variable-fluid drive, and SSS clutch"], ["Starting sequence", "Pony motor accelerates the generator; DC field is applied; the generator breaker closes at synchronous speed; the SSS clutch disengages the pony motor and gearbox"], ["2012 work", "New thrust bearing installed for synchronous-condenser operation"], ["2012 project closeout", "$925,800 total expenditure; no carryover into 2013"], ["2020 return to generation", "Filed procedure took five to seven days, including H2, CO2, and air purges"], ["Wood proposal", "Retain H2 and recouple in three 10-hour days; presented as a recommendation"], ["2016 work", "Rotor rewind"], ["2021 actual expenditure", "$7.2857 million for the stator-rewind project"], ["April 2022 operation", "373 hours as a synchronous condenser"], ["2024 planning case", "Spring 2030 permanent synchronous-condensing operation"], ["March 2025 capital model", "Assumed synchronous-condenser operation beyond 2035; no general generator condition-monitoring instrumentation was installed"], ["Synchronous-condenser support", "Exciter and transformer, cooling water, H2, generator lube-oil, and seal-oil systems require inspection or refurbishment"], ["July 2026 operation", "0 generating hours; 697 synchronous-condensing hours"], ["June 2026 review", "Hydro was assessing the continued requirement and effectiveness of Unit 3 synchronous-condensing capability"], ["September 2026 position", "Post-steam Unit 3 operation remained a planning assumption; the RRA Study Review was evaluating the required Avalon synchronous-condensing support"], ["Alternatives under review", "Combustion-turbine synchronous operation, stand-alone synchronous condensers, STATCOMs, and grid-forming inverters"]],
+    sources: [sourceRef("nlh-2011-holyrood-sc-upgrade", "physical PDF pp. 809, 812 and 820; project pp. 2, 5 and 13"), sourceRef("gra-2013-v2", "physical PDF p. 428"), sourceRef("nlh-2016-holyrood-unit3-history", "physical PDF p. 558; project p. 4"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2020-units12-plan", "physical PDF p. 1"), sourceRef("nlh-2020-holyrood-backup", "physical PDF pp. 3 and 24"), sourceRef("nlh-2021-capex", "physical PDF p. 71"), sourceRef("nlh-2022-april-energy", "physical PDF pp. 7 to 8"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 69 and 648"), sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 29 and 31"), sourceRef("nlh-2026-holyrood-overview", "physical PDF p. 170"), sourceRef("nlh-2026-reactive-options", "physical PDF p. 1"), sourceRef("nlh-2026-july-energy", "physical PDF p. 10"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 13"), sourceRef("nlh-2027-ca-nlh-058", "physical PDF p. 2")]
   },
   "hrd-t6": {
     diagram: "hrd", status: "verified", code: "HRD / T6", title: "Holyrood transformer T6",
