@@ -36,6 +36,8 @@ Updated: 2026-11-12
 - Verified Upper Salmon and Cat Arm record rendering at 1440 by 1000 px and 390 by 844 px. The mobile page has no horizontal page overflow; the one-line remains horizontally scrollable inside its own frame.
 - Added a dedicated Molloy's Lane record with 15L and 19L supplies, both transformer records, eight 12.5 kV feeders, the 2023 proposed modernization scope, and six filed feeder route sheets.
 - Verified the Molloy's Lane diagram and MOL-01 route sheet at 1440 by 1000 px and 390 by 844 px. The mobile page has no horizontal page overflow; the one-line remains horizontally scrollable inside its frame.
+- Added a dedicated Airport record with the filed preliminary one-line, 35L current endpoint, completion evidence, APT-T1 planning data, APT-01 and APT-02 energization records, and the filed APT-02 route and Neary's Pond Road rebuild drawings.
+- Kept the 33L label tied to the 2020 preliminary design because the 2025 transmission register lists only 35L at Airport. The proposed APT-02 line rebuild remains proposed until a completion record is located.
 - Added individual west-coast, Northern Peninsula, and rural records for Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, and English Harbour West.
 - Verified Berry Hill map selection, station navigation, and record rendering at 1440 by 1000 px and 390 by 844 px. The map selection stayed in place; the record link opened the station register; the mobile page had no horizontal page overflow.
 - Added the 2003 staged transformer ratings for Howley, Deer Lake, and Stony Brook.

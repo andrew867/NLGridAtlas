@@ -1713,11 +1713,71 @@ export const sources = [
     id: "np-2021-north-study",
     year: 2021,
     organization: "Newfoundland Power",
-    title: "St. John's North and Portugal Cove System Planning Study",
-    topics: ["Virginia Waters", "VIR-T1", "VIR-T2", "VIR-T3", "Airport Substation", "66 kV"],
-    pages: "physical PDF pp. 6 to 14",
+    title: "St. John's North and Portugal Cove System Planning Study Update",
+    topics: ["Virginia Waters", "VIR-T1", "VIR-T2", "VIR-T3", "Airport Substation", "AIR", "APT", "35L", "33L", "66 kV"],
+    pages: "physical PDF pp. 6 to 19",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/substationproject/From%20NP%20-%20St.%20Johns%20North-Portugal%20Cove%20System%20Planning%20Study%20Update%20-%202021-02-12.PDF"
+  },
+  {
+    id: "np-2021-airport-project",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, Airport Substation Project",
+    topics: ["Airport Substation", "AIR", "APT", "AIR-T1", "35L", "33L", "66 kV", "12.47 kV", "AIR-01", "AIR-02", "AIR-03"],
+    pages: "physical PDF pp. 38 to 44",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
+  },
+  {
+    id: "np-2023-airport-completion",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "Q1 2023 Quarterly Regulatory Report, Airport Substation",
+    topics: ["Airport Substation", "APT", "35L", "transmission line", "transformer", "distribution feeders", "commissioning"],
+    pages: "physical PDF p. 13",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q1%202023_Redacted.pdf"
+  },
+  {
+    id: "np-2025-nlh-np-003",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-003, APT-02 Energization and Prior PUL-04 Supply",
+    topics: ["Airport Substation", "APT-02", "PUL-04", "Neary's Pond Road", "feeder reconfiguration"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/NLH-NP-003.PDF"
+  },
+  {
+    id: "np-2025-nlh-np-004",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-004, APT-01 Energization and Reliability Record",
+    topics: ["Airport Substation", "APT-01", "feeder reliability", "energization"],
+    pages: "physical PDF pp. 5 to 6",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/NLH-NP-004.PDF"
+  },
+  {
+    id: "np-2025-nlh-np-029",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-029, APT-02 Feeder Exit and Neary's Pond Road Section",
+    topics: ["Airport Substation", "APT-02", "PUL-04", "Neary's Pond Road", "feeder exit", "feeder reconfiguration"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/NLH-NP-029.PDF"
+  },
+  {
+    id: "np-2025-airport-feeder-growth",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, APT-02 Feeder Upgrade",
+    topics: ["Airport Substation", "APT-02", "Neary's Pond Road", "two-phase line", "1/0 AASC", "feeder upgrade"],
+    pages: "physical PDF pp. 28 to 30 and 352 to 355",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
   },
   {
     id: "np-2020-capital-gdl",
@@ -11703,6 +11763,137 @@ export const stationProfiles = [
       { title: "KEN-02 route and sectionalizing recloser", image: "./reference-maps/ken-02.png", alt: "Kenmount KEN-02 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 37" },
       { title: "KEN-03 route and sectionalizing recloser", image: "./reference-maps/ken-03.png", alt: "Kenmount KEN-03 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 38" },
       { title: "KEN-04 route and sectionalizing recloser", image: "./reference-maps/ken-04.png", alt: "Kenmount KEN-04 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 39" }
+    ]
+  },
+  {
+    code: "APT",
+    name: "Airport",
+    voltage: "66/12.5 kV",
+    feederRegister: ["APT-01", "APT-02"],
+    feederRegisterLabel: "2023 ENERGIZED FEEDERS",
+    mapPages: [],
+    eventLoads: [],
+    mapNote: "The 2020 preliminary drawing uses AIR equipment designations. The installed station records use APT.",
+    circuitRegisterLabel: "2025 FILED TRANSMISSION REGISTER",
+    connectedCircuits: [
+      { circuit: "35L", from: "Kenmount Road Substation", from_code: "KEN", to: "Airport Substation", to_code: "APT" }
+    ],
+    circuitSources: [
+      { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" }
+    ],
+    diagram: {
+      label: "2020 preliminary design / station energized 2023",
+      buses: [{ id: "b1", label: "bus", voltage: "66 kV" }, { id: "b2", label: "main and transfer buses", voltage: "12.5 kV" }],
+      transformers: [{ label: "AIR-T1", rating: "25 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "35L", destination: "Kenmount", bus: "b1", stationCode: "KEN" },
+        { label: "33L", destination: "Oxen Pond", bus: "b1", stationCode: "OXP" },
+        { label: "AIR-01", destination: "filed feeder exit", bus: "b2", link: false },
+        { label: "AIR-03", destination: "filed feeder exit", bus: "b2", link: false },
+        { label: "AIR-02", destination: "filed feeder exit", bus: "b2", link: false }
+      ]
+    },
+    engineeringRecord: {
+      date: "Q1 2023 COMPLETION REPORT",
+      title: "Airport station commissioning",
+      sourceId: "np-2023-airport-completion",
+      pages: "physical PDF p. 13",
+      facts: [
+        ["35L extension", "constructed during the first quarter"],
+        ["Energized equipment", "transmission lines and station transformer"],
+        ["Distribution", "three feeders connected through the station"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 544",
+      facts: [
+        ["APT-T1", "66/25 kV; 25 MVA"],
+        ["2026 forecast", "16.72 MVA"]
+      ]
+    },
+    assignmentRecord: {
+      label: "2024 DOCUMENTED FEEDER ASSIGNMENT",
+      sourceId: "np-2025-ca-np-255",
+      pages: "physical PDF p. 4",
+      facts: [
+        ["APT-01", "12.5 kV; APT-T1; 12.7 MVA feeder planning capacity"],
+        ["Station customers", "2,051"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2020 FILED DESIGN",
+        sourceId: "np-2021-airport-project",
+        pages: "physical PDF pp. 38 to 44",
+        facts: [
+          ["Station yard", "2,500 m²; 66 kV air-insulated steel bus; two 66 kV line breakers"],
+          ["Transformer", "25 MVA, 66/12.47 kV"],
+          ["Distribution", "12.47 kV main and transfer buses; three feeder breakers"],
+          ["Line work", "35L retained from Kenmount; filed 33L section from Oxen Pond; 3.3 km of line extensions along Parker's Pond Road"]
+        ]
+      },
+      {
+        label: "MARCH 2023 FEEDER ENERGIZATION",
+        sourceId: "np-2025-nlh-np-003",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["APT-02", "first energized in March 2023"],
+          ["Prior supply", "the Neary's Pond Road two-phase section was supplied by PUL-04"]
+        ]
+      },
+      {
+        label: "2024 FILED APT-02 CONDITIONS",
+        sourceId: "np-2025-nlh-np-029",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Feeder exit", "one of three exits built for the Airport project"],
+          ["Service", "949 customers in Portugal Cove"],
+          ["Reconfiguration", "energizing APT-02 moved the Neary's Pond Road section from PUL-04 to APT-02"]
+        ]
+      },
+      {
+        label: "2025 PROPOSED APT-02 WORK",
+        sourceId: "np-2025-airport-feeder-growth",
+        pages: "physical PDF pp. 352 to 355",
+        facts: [
+          ["Measured current", "82 A on phase B and 109 A on phase C; 85 A planning criterion"],
+          ["Selected work", "convert 1.6 km on Neary's Pond Road from two-phase to three-phase 1/0 AASC"],
+          ["Filed cost", "$375,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED DRAWINGS AND ROUTE MAPS",
+    referenceSheets: [
+      {
+        title: "2020 preliminary Airport single-line",
+        image: "./reference-maps/airport-2020-preliminary-one-line.png",
+        alt: "Filed preliminary Airport substation single-line showing 35L from Kenmount, 33L from Oxen Pond, one 66 to 12.5 kV transformer, and three feeder exits",
+        sourceId: "np-2021-airport-project",
+        pages: "physical PDF p. 42"
+      },
+      {
+        title: "2020 proposed transmission route",
+        image: "./reference-maps/airport-2020-line-route.png",
+        alt: "Filed aerial route for the Airport substation transmission extensions along Parker's Pond Road",
+        sourceId: "np-2021-airport-project",
+        pages: "physical PDF p. 44"
+      },
+      {
+        title: "APT-02 feeder route",
+        image: "./reference-maps/apt-02-2024-route.png",
+        alt: "Filed APT-02 feeder route from Airport substation to Portugal Cove",
+        sourceId: "np-2025-airport-feeder-growth",
+        pages: "physical PDF p. 353"
+      },
+      {
+        title: "APT-02 proposed Neary's Pond Road upgrade",
+        image: "./reference-maps/apt-02-2024-proposed-upgrade.png",
+        alt: "Filed route of the proposed 1.6 kilometre APT-02 two-phase to three-phase conversion on Neary's Pond Road",
+        sourceId: "np-2025-airport-feeder-growth",
+        pages: "physical PDF p. 354"
+      }
     ]
   },
   {

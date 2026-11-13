@@ -2043,6 +2043,25 @@ test("Molloy's Lane has a filed station record and feeder route sheets", () => {
   assert.match(facts, /2023 proposed work/);
 });
 
+test("Airport separates the filed design from installed and proposed records", () => {
+  const airport = stationProfiles.find((station) => station.code === "APT");
+  assert.ok(airport);
+  assert.deepEqual(airport.connectedCircuits.map(({ circuit, from_code }) => [circuit, from_code]), [["35L", "KEN"]]);
+  assert.deepEqual(airport.feederRegister, ["APT-01", "APT-02"]);
+  assert.deepEqual(airport.diagram.circuits.slice(0, 2).map(({ label, stationCode }) => [label, stationCode]), [["35L", "KEN"], ["33L", "OXP"]]);
+  assert.deepEqual(airport.diagram.transformers.map(({ label, rating }) => [label, rating]), [["AIR-T1", "25 MVA"]]);
+  assert.deepEqual(airport.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 42", "physical PDF p. 44", "physical PDF p. 353", "physical PDF p. 354"]);
+  const completionFacts = airport.engineeringRecord.facts.flat().join(" ");
+  const currentFacts = airport.planningRecord.facts.flat().join(" ");
+  const historyFacts = airport.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(completionFacts, /transmission lines and station transformer/);
+  assert.match(completionFacts, /three feeders connected/);
+  assert.match(currentFacts, /66\/25 kV; 25 MVA/);
+  assert.match(historyFacts, /25 MVA, 66\/12\.47 kV/);
+  assert.match(historyFacts, /first energized in March 2023/);
+  assert.match(historyFacts, /82 A on phase B and 109 A on phase C; 85 A planning criterion/);
+});
+
 test("Pepperell and Virginia Waters records separate completed work from rejected alternatives", () => {
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
   const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
