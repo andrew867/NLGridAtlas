@@ -5695,21 +5695,33 @@ export const components = {
   },
   "mun-summary": {
     diagram: "mun", status: "verified", code: "MUN / SUBSTATION", title: "Memorial Substation",
-    summary: "Circuits 12L and 14L supply two 66/12.5 kV transformers and Memorial-owned switchgear.",
-    data: [["MUN-T1", "14.96 MVA"], ["MUN-T2", "25 MVA"], ["Supply", "12L and 14L, 66 kV"], ["Secondary bus", "12.5 kV"]],
-    sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("memorial-2023", "PDF pp. 14, 15, 25 and 29 to 33")]
+    summary: "Circuits 12L and 14L supply MUN-T2-B and MUN-T1-B bus sections through two 66/12.5 kV transformers. MUN-TB-1-2 ties the two Memorial-owned 12.5 kV sections.",
+    data: [["MUN-T2-B", "MUN-07 to MUN-10"], ["MUN-T1-B", "MUN-01 to MUN-06"], ["MUN-T1", "14.96 MVA in the 2027 register"], ["MUN-T2", "25 MVA in the 2027 register"], ["Supply", "12L and 14L, 66 kV"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF p. 3"), sourceRef("np-2027-transformers", "physical PDF p. 549")]
   },
   "mun-t1": {
     diagram: "mun", status: "verified", code: "MUN / T1", title: "Memorial transformer T1",
     summary: "The 2027 transformer register lists MUN-T1 at 14.96 MVA. The 2023 filing identifies the Ferranti-Packard unit manufactured in 1966.",
-    data: [["Manufacturer", "Ferranti-Packard"], ["Manufactured", "1966"], ["2023 asset rating", "11.125/14.83 MVA"], ["2027 listing", "14.96 MVA"], ["Operating voltage", "66/12.5 kV"], ["2026 forecast", "3.87 MVA"]],
-    sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("memorial-2023", "PDF pp. 14, 15 and 25")]
+    data: [["Manufacturer", "Ferranti-Packard"], ["Manufactured", "1966"], ["2023 asset rating", "11.125/14.83 MVA"], ["2027 listing", "14.96 MVA"], ["Operating voltage", "66/12.5 kV"], ["Bus section", "MUN-T1-B"], ["Feeders", "MUN-01 to MUN-06"], ["2026 forecast", "3.87 MVA"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF p. 3"), sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("memorial-2023", "PDF pp. 14, 15 and 25")]
   },
   "mun-t2": {
     diagram: "mun", status: "verified", code: "MUN / T2", title: "Memorial transformer T2",
     summary: "The 2027 transformer register lists MUN-T2 at 25 MVA. The 2023 filing documents the deteriorated 1976 Federal Pioneer unit and its replacement project.",
-    data: [["2027 listing", "25 MVA"], ["Operating voltage", "66/12.5 kV"], ["2026 forecast", "6.18 MVA"], ["Former unit", "Federal Pioneer, 1976, 15/20 MVA"], ["2023 project", "Replacement recommended"]],
-    sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("memorial-2023", "PDF pp. 14, 15, 25 and 29 to 33")]
+    data: [["2027 listing", "25 MVA"], ["Operating voltage", "66/12.5 kV"], ["Bus section", "MUN-T2-B"], ["Feeders", "MUN-07 to MUN-10"], ["2026 forecast", "6.18 MVA"], ["Former unit", "Federal Pioneer, 1976, 15/20 MVA"], ["2023 project", "Replacement recommended"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF p. 3"), sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("memorial-2023", "PDF pp. 14, 15, 25 and 29 to 33")]
+  },
+  "mun-t2-section": {
+    diagram: "mun", status: "verified", code: "MUN / T2 SECTION", title: "MUN-T2-B bus section",
+    summary: "The filed single-line assigns MUN-07, MUN-08, MUN-09, and MUN-10 to the MUN-T2-B section.",
+    data: [["MUN-10", "New South Campus Residences"], ["MUN-09", "N.E. Campus Loop"], ["MUN-08", "N.W. Campus Loop, Feeder B; Health Sciences Complex and Utilities Annex"], ["MUN-07", "Education, Inco, QEII and F.H."], ["Potential transformer", "MUN-PT-1"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF p. 3")]
+  },
+  "mun-t1-section": {
+    diagram: "mun", status: "verified", code: "MUN / T1 SECTION", title: "MUN-T1-B bus section",
+    summary: "The filed single-line assigns MUN-01 through MUN-06 to the MUN-T1-B section.",
+    data: [["MUN-06", "Old Residences, BPA, Daycare and A&C"], ["MUN-05", "Theological Colleges"], ["MUN-04", "C.P., Biotech and A&A extension"], ["MUN-03", "Old University"], ["MUN-02", "Spare"], ["MUN-01", "N.W. Campus Loop, Feeder A; Health Sciences Complex and Utilities Annex"], ["Potential transformer", "MUN-PT-2"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF p. 3")]
   },
   "mun-bus": {
     diagram: "mun", status: "proposed", code: "MUN / 66 kV BUS", title: "Memorial station rebuild",
@@ -5725,8 +5737,8 @@ export const components = {
   },
   "lpd-summary": {
     diagram: "lpd", status: "verified", code: "LPD / SUBSTATION", title: "Long Pond Substation",
-    summary: "Circuit 36L from Oxen Pond supplies two 66/12.5 kV transformers and the split B1 and B2 bus arrangement shown in the 2023 single-line. The station is a Newfoundland Power special facility funded by the province on Memorial University's behalf.",
-    data: [["Location", "Kerwin Place, behind the NRC Industry Partnership Facility"], ["Supply", "36L from Oxen Pond"], ["LPD-T1", "66/12.5 kV, 25 MVA"], ["LPD-T2", "66/12.5 kV, 25 MVA"], ["Bus sections", "B1 and B2, 12.5 kV"], ["Customer circuits", "MUN-20 through MUN-29"], ["Ownership", "Newfoundland Power upstream equipment; Memorial University distribution switchgear"], ["2019 utility work", "$4.6 million, reimbursed by the provincial Department of Transportation and Works"], ["Rate treatment", "Special facility, not recovered from other ratepayers"], ["2026 forecast", "20.00 MVA on each unit"], ["2021 station peak", "18 MVA"]],
+    summary: "Circuit 36L from Oxen Pond supplies the station. The 2023 single-line shows LPD-T1 on B1 and a future T2 connection on B2. The 2027 transformer register lists both units at 25 MVA.",
+    data: [["Location", "Kerwin Place, behind the NRC Industry Partnership Facility"], ["Supply", "36L from Oxen Pond"], ["LPD-T1", "66/12.5 kV, 25 MVA"], ["LPD-T2", "future on the 2023 drawing; 25 MVA in the 2027 register"], ["Bus sections", "B1 and B2, 12.5 kV"], ["Customer circuits", "MUN-20 through MUN-29"], ["Ownership", "Newfoundland Power upstream equipment; Memorial University distribution switchgear"], ["2019 utility work", "$4.6 million, reimbursed by the provincial Department of Transportation and Works"], ["Rate treatment", "Special facility, not recovered from other ratepayers"], ["2026 forecast", "20.00 MVA on each unit"], ["2021 station peak", "18 MVA"]],
     sources: [sourceRef("np-2024-ca-np-158", "physical PDF pp. 4 to 5"), sourceRef("np-2027-transformers", "physical PDF pp. 548 to 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111"), sourceRef("np-2019-long-pond", "physical PDF pp. 23, 29 and 31"), sourceRef("pu-5-2019-long-pond", "physical PDF pp. 1 to 2")]
   },
   "lpd-t1": {
@@ -5740,6 +5752,18 @@ export const components = {
     summary: "LPD-T2 was proposed in the 2023 capacity project. The 2027 register lists it at 25 MVA with a 66/12.5 kV operating voltage.",
     data: [["Operating voltage", "66/12.5 kV"], ["Rating", "25 MVA"], ["2026 forecast", "20.00 MVA"], ["Project station capacity", "50 MVA"], ["Project boiler load", "25 MW"]],
     sources: [sourceRef("np-2027-transformers", "physical PDF p. 549"), sourceRef("np-2023-long-pond", "PDF pp. 109 to 111")]
+  },
+  "lpd-b1": {
+    diagram: "lpd", status: "verified", code: "LPD / B1", title: "Long Pond B1 customer circuits",
+    summary: "The 2023 single-line shows MUN-29, MUN-28, MUN-27, MUN-26, and MUN-25 on B1. MUN-28, MUN-27, and MUN-25 are marked future.",
+    data: [["MUN-29", "Spare"], ["MUN-28", "Mental Health Facility, future"], ["MUN-27", "Core Science Building, future"], ["MUN-26", "MUN UIA"], ["MUN-25", "HSC #5, future"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF p. 5")]
+  },
+  "lpd-b2": {
+    diagram: "lpd", status: "verified", code: "LPD / B2", title: "Long Pond B2 customer circuits",
+    summary: "The 2023 single-line shows MUN-24, MUN-23, MUN-22, MUN-21, and MUN-20 on B2. MUN-24, MUN-22, and MUN-21 are marked future.",
+    data: [["MUN-24", "HSC #2, future"], ["MUN-23", "MUN UIA"], ["MUN-22", "Core Science Building, future"], ["MUN-21", "NRC, future"], ["MUN-20", "Spare"]],
+    sources: [sourceRef("np-2024-ca-np-158", "physical PDF p. 5")]
   },
   "ken-summary": {
     diagram: "ken", status: "verified", code: "KEN / SUBSTATION", title: "Kenmount Substation",
@@ -17032,6 +17056,8 @@ export const stationProfiles = [
       facts: [
         ["66 kV supply", "12L from King's Bridge and 14L from Stamp's Lane"],
         ["12.5 kV buses", "two sections with MUN-TB-1-2 tie"],
+        ["MUN-T2-B section", "MUN-07, MUN-08, MUN-09 and MUN-10"],
+        ["MUN-T1-B section", "MUN-01, MUN-02, MUN-03, MUN-04, MUN-05 and MUN-06"],
         ["Health Sciences Complex", "MUN-01 and MUN-08"],
         ["Customer equipment", "12.5 kV switchgear owned by Memorial University"]
       ]
@@ -17335,7 +17361,8 @@ export const stationProfiles = [
         ["66 kV supply", "36L from Oxen Pond"],
         ["2024 drawing", "LPD-T1, 15/20(25) MVA, 66/12.5 kV"],
         ["12.5 kV buses", "B1 and B2 with bus tie"],
-        ["Medical circuits", "HSC #2 and HSC #5 shown on Memorial-owned switchgear"]
+        ["B1 circuits", "MUN-29 spare; MUN-28 Mental Health Facility, future; MUN-27 Core Science Building, future; MUN-26 MUN UIA; MUN-25 HSC #5, future"],
+        ["B2 circuits", "MUN-24 HSC #2, future; MUN-23 MUN UIA; MUN-22 Core Science Building, future; MUN-21 NRC, future; MUN-20 spare"]
       ]
     },
     historyRecords: [

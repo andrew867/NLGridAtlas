@@ -2716,9 +2716,16 @@ test("Memorial and Long Pond records preserve the filed Health Sciences supply p
   const memorialFacts = memorial.engineeringRecord.facts.flat().join(" ");
   const longPondFacts = longPond.engineeringRecord.facts.flat().join(" ");
   assert.deepEqual(memorial.feederRegister, ["MUN-01", "MUN-02", "MUN-03", "MUN-04", "MUN-05", "MUN-06", "MUN-07", "MUN-08", "MUN-09", "MUN-10"]);
+  assert.match(memorialFacts, /MUN-T2-B section MUN-07, MUN-08, MUN-09 and MUN-10/);
+  assert.match(memorialFacts, /MUN-T1-B section MUN-01, MUN-02, MUN-03, MUN-04, MUN-05 and MUN-06/);
   assert.match(memorialFacts, /MUN-01 and MUN-08/);
+  assert.match(components["mun-t2-section"].data.flat().join(" "), /MUN-10 New South Campus Residences.*MUN-08 N\.W\. Campus Loop/);
+  assert.match(components["mun-t1-section"].data.flat().join(" "), /MUN-06 Old Residences.*MUN-01 N\.W\. Campus Loop/);
   assert.deepEqual(longPond.connectedCircuits, [{ circuit: "36L", from: "Oxen Pond", from_code: "OXP", to: "Long Pond", to_code: "LPD" }]);
-  assert.match(longPondFacts, /HSC #2 and HSC #5/);
+  assert.match(longPondFacts, /B1 circuits MUN-29 spare.*MUN-25 HSC #5, future/);
+  assert.match(longPondFacts, /B2 circuits MUN-24 HSC #2, future.*MUN-20 spare/);
+  assert.match(components["lpd-b1"].summary, /MUN-28, MUN-27, and MUN-25 are marked future/);
+  assert.match(components["lpd-b2"].summary, /MUN-24, MUN-22, and MUN-21 are marked future/);
   assert.deepEqual(longPond.historyRecords.map((record) => record.sourceId), ["gnl-2018-hsc-award", "np-2019-long-pond", "pu-5-2019-long-pond"]);
   assert.match(longPond.historyRecords[0].facts.flat().join(" "), /JSM Electrical Ltd\./);
   assert.match(longPond.historyRecords[0].facts.flat().join(" "), /\$4,422,267\.50/);
@@ -2732,6 +2739,7 @@ test("Memorial and Long Pond records preserve the filed Health Sciences supply p
   assert.match(html, /aria-label="36L to Oxen Pond Terminal Station"/);
   assert.match(html, /LPD-B1\/B2-B/);
   assert.match(html, /MUN-29[\s\S]*MUN-20/);
+  assert.equal((html.match(/proposed-label/g) || []).length, 6);
 });
 
 test("MUN archive records retain the 1975 HSC equipment captions", async () => {
