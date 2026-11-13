@@ -2062,6 +2062,22 @@ test("Airport separates the filed design from installed and proposed records", (
   assert.match(historyFacts, /82 A on phase B and 109 A on phase C; 85 A planning criterion/);
 });
 
+test("Howley joins the terminal routes and local distribution record", () => {
+  const howley = stationProfiles.find((station) => station.code === "HOW");
+  assert.ok(howley);
+  assert.deepEqual(howley.connectedCircuits.map(({ circuit }) => circuit), ["TL245", "TL243", "TL224", "TL251"]);
+  assert.deepEqual(howley.feederRegister, ["HOW-01"]);
+  assert.deepEqual(howley.diagram.buses.map(({ voltage }) => voltage), ["138 kV", "69 kV"]);
+  assert.deepEqual(howley.diagram.transformers.map(({ label, rating }) => [label, rating]), [["HOW-T2", "7.5/10/12.5 MVA"]]);
+  assert.deepEqual(howley.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 219", "physical PDF p. 220"]);
+  const terminalFacts = howley.engineeringRecord.facts.flat().join(" ");
+  const distributionFacts = howley.planningRecord.facts.flat().join(" ");
+  const inspectionFacts = howley.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(terminalFacts, /138\/69\/4\.16 kV; 7\.5\/10\/12\.5 MVA/);
+  assert.match(distributionFacts, /HOW-T3 25\/4\.2 kV; 1 MVA/);
+  assert.match(inspectionFacts, /HOW-01-R and hydraulic recloser equipment 230371/);
+});
+
 test("Pepperell and Virginia Waters records separate completed work from rejected alternatives", () => {
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
   const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");

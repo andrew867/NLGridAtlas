@@ -39,6 +39,7 @@ Updated: 2026-11-12
 - Added a dedicated Airport record with the filed preliminary one-line, 35L current endpoint, completion evidence, APT-T1 planning data, APT-01 and APT-02 energization records, and the filed APT-02 route and Neary's Pond Road rebuild drawings.
 - Kept the 33L label tied to the 2020 preliminary design because the 2025 transmission register lists only 35L at Airport. The proposed APT-02 line rebuild remains proposed until a completion record is located.
 - Added individual west-coast, Northern Peninsula, and rural records for Berry Hill, Peter's Barren, Plum Point, Bear Cove, St. Anthony Airport, Hawke's Bay, Howley, South Brook, Doyles, Grandy Brook, and English Harbour West.
+- Added a dedicated Howley station record joining the 138 kV and 69 kV terminal routes, the three-winding HOW-T2 record, HOW-01, the current HOW-T3 distribution record, and the March 2014 equipment inspection sheets.
 - Verified Berry Hill map selection, station navigation, and record rendering at 1440 by 1000 px and 390 by 844 px. The map selection stayed in place; the record link opened the station register; the mobile page had no horizontal page overflow.
 - Added the 2003 staged transformer ratings for Howley, Deer Lake, and Stony Brook.
 - Added the 1998 Massey Drive 230/66 kV transformer replacement record from the 2001 prefiled testimony.

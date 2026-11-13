@@ -72,6 +72,14 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] Hydro's Q4 2025 report records replacement of the Doyles Terminal Station remote terminal unit, physical PDF p. 29.
 - [x] The 2027 transformer register records DOY-T2 at 66/25 kV, 6.67 MVA, with a 5.13 MVA 2026 forecast, physical PDF p. 547.
 
+## Howley terminal and substation record
+
+- [x] The 2003 system report records HOW-T2 at 138/69/4.16 kV and 7.5/10/12.5 MVA, IC-126, physical PDF p. 29.
+- [x] The 2018 transmission table identifies TL245 to Deer Lake, TL243 to Hinds Lake, TL224 to Indian River, and TL251 to Hampden Tap, PUB-NP-084 Attachment A, physical PDF p. 25.
+- [x] The March 2014 inspection form lists HOW-T2-D1, HOW-T2-D2, HOW-T3, HOW-01-R, transformer equipment 200600, and hydraulic recloser equipment 230371, PUB-NP-064 Attachment G, physical PDF pp. 219 to 220.
+- [x] The 2027 transformer register records HOW-T3 at 25/4.2 kV and 1 MVA, with a 1.04 MVA 2026 forecast, physical PDF p. 548.
+- [ ] The internal connection between Hydro's terminal equipment and Newfoundland Power's 25/4.2 kV distribution transformer remains open; no public operating one-line was located.
+
 ## St. George's, Robinsons, and Lookout Brook 403L record
 
 - [x] 403L is the 66 kV main line between St. George's and Lookout Brook; Robinsons is supplied by a 4.0 km three-phase radial tap, 2020 Capital Budget Application, physical PDF p. 394.

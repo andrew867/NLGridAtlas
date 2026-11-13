@@ -2214,8 +2214,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Topsail", "TOP-T1", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 218, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 438, 484 to 487, 498 and 500 to 502",
+    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Howley", "HOW-T2", "HOW-T3", "HOW-01-R", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Topsail", "TOP-T1", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 221, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 438, 484 to 487, 498 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -7909,6 +7909,84 @@ const earlyFeederMapProfiles = [
 export const stationProfiles = [
   ...filedFeederMapProfiles,
   ...earlyFeederMapProfiles,
+  {
+    code: "HOW",
+    name: "Howley",
+    voltage: "138/69/4.16 kV terminal; 25/4.2 kV distribution",
+    circuitRegisterLabel: "2018 FILED TRANSMISSION ROUTES",
+    circuitSources: [
+      { sourceId: "np-2018-pub-np-084", pages: "physical PDF p. 25" }
+    ],
+    connectedCircuits: [
+      { circuit: "TL245", from: "Deer Lake", from_code: "DLK", to: "Howley", to_code: "HOW" },
+      { circuit: "TL243", from: "Howley", from_code: "HOW", to: "Hinds Lake", to_code: "HLA" },
+      { circuit: "TL224", from: "Indian River", to: "Howley", to_code: "HOW" },
+      { circuit: "TL251", from: "Howley", from_code: "HOW", to: "Hampden Tap" }
+    ],
+    feederRegister: ["HOW-01"],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "2003 transformer rating / 2018 filed routes",
+      buses: [{ id: "b1", label: "bus", voltage: "138 kV" }, { id: "b2", label: "bus", voltage: "69 kV" }],
+      transformers: [{ label: "HOW-T2", rating: "7.5/10/12.5 MVA", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "TL245", destination: "Deer Lake", bus: "b1", stationCode: "DLK" },
+        { label: "TL243", destination: "Hinds Lake", bus: "b1" },
+        { label: "TL224", destination: "Indian River", bus: "b1" },
+        { label: "TL251", destination: "Hampden Tap", bus: "b2" }
+      ]
+    },
+    engineeringRecord: {
+      date: "2003 SYSTEM REPORT",
+      title: "Howley terminal transformer and loop connections",
+      sourceId: "nlh-howley-system-2003",
+      pages: "physical PDF p. 29",
+      facts: [
+        ["HOW-T2", "138/69/4.16 kV; 7.5/10/12.5 MVA"],
+        ["138 kV loop", "TL245 to Deer Lake; TL243 to Hinds Lake; TL224 to Indian River"],
+        ["White Bay supply", "TL251 from the 69 kV bus to Hampden Tap"]
+      ]
+    },
+    planningRecord: {
+      label: "2027 TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 548",
+      facts: [
+        ["HOW-T3", "25/4.2 kV; 1 MVA"],
+        ["2026 forecast", "1.04 MVA"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT INSPECTION",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 219 to 220",
+        facts: [
+          ["Metering", "HOW-T2-D1, HOW-T2-D2 and HOW-T3"],
+          ["Distribution transformer", "HOW-T3, equipment 200600"],
+          ["Feeder protection", "HOW-01-R and hydraulic recloser equipment 230371"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2014 EQUIPMENT INSPECTION",
+    referenceSheets: [
+      {
+        title: "Howley inspection form and equipment list",
+        image: "./reference-maps/howley-2014-inspection-1.png",
+        alt: "March 2014 Howley substation inspection form listing HOW-T2 metering, HOW-T3 metering, and HOW-01-R",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 219"
+      },
+      {
+        title: "HOW-T3 and hydraulic recloser inspection sheet",
+        image: "./reference-maps/howley-2014-inspection-2.png",
+        alt: "March 2014 Howley inspection sheet for HOW-T3 and hydraulic recloser equipment 230371",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF p. 220"
+      }
+    ]
+  },
   {
     code: "DOY",
     name: "Doyles",
