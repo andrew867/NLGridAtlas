@@ -634,7 +634,7 @@ export const sources = [
     year: 2015,
     organization: "Newfoundland Power",
     title: "2016 Capital Budget Application, Grand Falls 25 kV Substation Study",
-    topics: ["Grand Falls", "GFS-T1", "GFS-T2", "GFS-T3", "25 kV", "parallel transformers", "distribution feeders"],
+    topics: ["Grand Falls", "GFS-T1", "GFS-T2", "GFS-T3", "GFS-BTS-1", "GFS-T1-A", "GFS-T2-A", "GFS-T3-A", "25 kV", "parallel transformers", "distribution feeders", "air-break switches"],
     pages: "physical PDF pp. 265 and 287 to 293",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
@@ -3044,8 +3044,8 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "PUB-NP-064 Attachment G, selected Newfoundland Power substation inspection forms",
-    topics: ["Bishop's Falls", "BFS-T1", "132L", "133L", "134L", "136L", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Howley", "HOW-T2", "HOW-T3", "HOW-01-R", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Sunnyside", "SUN-T5", "SUN-01-B", "SUN-01-R2", "SUN-01-VR2", "SUN-03-R", "Topsail", "TOP-T1", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
-    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 216 to 221, 235, 324 to 325, 328, 330, 371 to 376, 379, 421, 427, 438, 484 to 487, 492 to 493, 498 and 500 to 502",
+    topics: ["Bishop's Falls", "BFS-T1", "BFS-132L-B", "BFS-133L-B", "BFS-134L-B", "BFS-136L-B", "132L", "133L", "134L", "136L", "Grand Falls", "GFS-T1", "GFS-T2", "GFS-T3", "GFS-T5", "GFS-02-B", "GFS-06-B", "GFS-07-B", "GFS-08-B", "GFS-10-B", "GFS-130L-B", "GFS-132L-B", "Cape Broyle", "CAB-T2", "CAB-01", "66L", "Cobb's Pond", "COB-T1", "COB-T2", "COB-T3", "Fermeuse", "FER-T1", "FER-01", "FER-902E-B", "Gander Bay", "GBY-T1", "GBY-01", "GBY-02", "GBY-03", "Gander", "GAN-T1", "GAN-T2", "GAN-T3", "Glenwood", "GLN-T1", "Howley", "HOW-T2", "HOW-T3", "HOW-01-R", "Jonathan's Pond", "JON-T1", "Roycefield", "RFD-104L-B", "102L", "104L", "108L", "144L", "146L", "Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "Horse Chops", "HCP-G-B", "New Chelsea", "NCH-T1", "NCH-T2", "Petty Harbour", "PHR-T1", "PHR-T3", "PHR-01", "PHR-3L-B", "Pierre's Brook", "PBK-T1", "PBK-G-B", "Summerford", "SUM-T1", "SUM-01", "SUM-02", "140L", "Sunnyside", "SUN-T5", "SUN-01-B", "SUN-01-R2", "SUN-01-VR2", "SUN-03-R", "Topsail", "TOP-T1", "Tors Cove", "TCV-T1", "TCV-G1-B", "TCV-G2-B", "TCV-G3-B", "TCV-T1-B", "bus-tie breakers", "feeder breakers", "reclosers", "voltage regulators"],
+    pages: "physical PDF pp. 28 to 31, 58 to 61, 88 to 92, 111 to 113, 129 to 138, 148 to 155, 178, 216 to 221, 235, 324 to 325, 328, 330, 332 to 337, 371 to 376, 379, 421, 427, 438, 484 to 487, 492 to 493, 498 and 500 to 502",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-064%20Attachment%20G.pdf"
   },
@@ -6846,18 +6846,18 @@ const filedFeederMapProfiles = [
     mapPages: [["GFS-07", 64], ["GFS-08", 65]],
     eventLoads: [],
     diagram: {
-      label: "2016 completed 25 kV arrangement with current 4.2 kV bank",
-      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "25 kV bus", voltage: "25 kV" }, { id: "b4", label: "Grand Falls 4.2 kV bus", voltage: "4.2 kV" }],
-      transformers: [{ label: "GFS-T1", rating: "29.7 MVA", from: "b1", to: "b2" }, { label: "GFS-T2", rating: "20 MVA", from: "b1", to: "b3" }, { label: "GFS-T3", rating: "50 MVA", from: "b1", to: "b3" }, { label: "GFS-T5", rating: "11.17 MVA", from: "b2", to: "b4" }],
+      label: "2014 breaker register / 2016 completed 25 kV arrangement / current 4.2 kV bank",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }, { id: "b3", label: "25 kV bus", voltage: "25 kV", labelOffset: -42 }, { id: "b4", label: "Grand Falls 4.2 kV bus", voltage: "4.2 kV" }],
+      transformers: [{ label: "GFS-T1", rating: "29.7 MVA", from: "b1", to: "b2", toBreaker: "GFS-T1-B", x: 300 }, { label: "GFS-T2", rating: "20 MVA", from: "b1", to: "b3", toBreaker: "GFS-T2-B", x: 500 }, { label: "GFS-T3", rating: "50 MVA", from: "b1", to: "b3", toBreaker: "GFS-T3-B", x: 700 }, { label: "GFS-T5", rating: "11.17 MVA", from: "b2", to: "b4", toBreaker: "GFS-T5-B", x: 970 }],
       circuits: [
-        { label: "130L", destination: "Stony Brook", bus: "b1", destinationCode: "STB" },
-        { label: "132L", destination: "Bishop's Falls", bus: "b1", destinationCode: "BFS" },
-        { label: "101L", destination: "Rattling Brook", bus: "b2", destinationCode: "RBK" },
-        { label: "GFS-02", destination: "Grand Falls and Grenfell Heights", bus: "b3", link: false },
-        { label: "GFS-06", destination: "Grand Falls and Badger", bus: "b3", link: false },
-        { label: "GFS-07", destination: "Grand Falls", bus: "b3", link: false },
-        { label: "GFS-08", destination: "Grand Falls", bus: "b3", link: false },
-        { label: "GFS-10", destination: "Grand Falls", bus: "b3", link: false }
+        { label: "130L", destination: "Stony Brook", bus: "b1", destinationCode: "STB", breaker: "GFS-130L-B", x: 170 },
+        { label: "132L", destination: "Bishop's Falls", bus: "b1", destinationCode: "BFS", breaker: "GFS-132L-B", x: 950 },
+        { label: "101L", destination: "Rattling Brook", bus: "b2", destinationCode: "RBK", x: 560 },
+        { label: "GFS-02", destination: "Grenfell Heights", bus: "b3", link: false, breaker: "GFS-02-B", x: 170 },
+        { label: "GFS-06", destination: "Badger", bus: "b3", link: false, breaker: "GFS-06-B", x: 340 },
+        { label: "GFS-07", destination: "Grand Falls", bus: "b3", link: false, breaker: "GFS-07-B", x: 510 },
+        { label: "GFS-08", destination: "Grand Falls", bus: "b3", link: false, breaker: "GFS-08-B", x: 680 },
+        { label: "GFS-10", destination: "Grand Falls", bus: "b3", link: false, breaker: "GFS-10-B", x: 850 }
       ]
     },
     engineeringRecord: {
@@ -6893,6 +6893,16 @@ const filedFeederMapProfiles = [
         facts: [
           ["Structures", "replaced deteriorated wood poles and changed the switchgear-building configuration"],
           ["Electrical work", "installed lightning arresters, replaced relaying equipment, and added feeder automation"]
+        ]
+      },
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 178 and 332 to 337",
+        facts: [
+          ["138 kV line breakers", "GFS-130L-B and GFS-132L-B; bulk-oil units"],
+          ["Transformer breakers", "GFS-T1-B, GFS-T2-B and GFS-T3-B; bulk-oil units; GFS-T5-B; air breaker"],
+          ["25 kV feeder breakers", "GFS-02-B, GFS-06-B, GFS-07-B, GFS-08-B and GFS-10-B; bulk-oil units"]
         ]
       },
       {
@@ -8946,13 +8956,13 @@ const earlyFeederMapProfiles = [
     transformerFacts: [["BFS-T1", "138/25 kV; 20 MVA; 8.47 MVA 2026 forecast"]],
     diagram: {
       label: "2025 registered arrangement with 2014 station equipment",
-      buses: [{ id: "b1", label: "transmission bus", voltage: "138 kV" }, { id: "b2", label: "distribution bus", voltage: "25 kV" }],
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "25 kV bus", voltage: "25 kV" }],
       transformers: [{ label: "BFS-T1", rating: "20 MVA", from: "b1", to: "b2" }],
       circuits: [
-        { label: "132L", destination: "Grand Falls", bus: "b1", destinationCode: "GFS" },
-        { label: "133L", destination: "Stony Brook", bus: "b1", destinationCode: "STY" },
-        { label: "134L", destination: "Botwood", bus: "b1", destinationCode: "BOT" },
-        { label: "136L", destination: "Rattling Brook", bus: "b1", destinationCode: "RBK" },
+        { label: "132L", destination: "Grand Falls", bus: "b1", destinationCode: "GFS", breaker: "BFS-132L-B" },
+        { label: "133L", destination: "Stony Brook", bus: "b1", destinationCode: "STY", breaker: "BFS-133L-B" },
+        { label: "134L", destination: "Botwood", bus: "b1", destinationCode: "BOT", breaker: "BFS-134L-B" },
+        { label: "136L", destination: "Rattling Brook", bus: "b1", destinationCode: "RBK", breaker: "BFS-136L-B" },
         { label: "BFS-01", destination: "25 kV feeder", bus: "b2", link: false },
         { label: "BFS-02", destination: "25 kV feeder", bus: "b2", link: false }
       ]

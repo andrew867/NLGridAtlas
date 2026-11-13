@@ -189,6 +189,7 @@ Updated: 2026-11-13
 - Added the 2016 to 2020 MIL-02 and PBD-01 feeder reliability records. The station histories now include customer counts, average interruption duration, average interruption frequency, and the published Newfoundland Power averages.
 - Added the 2018 substation program and 2021 feeder load-growth program closeouts. The records preserve the aggregate budgets, annual expenditures, variances, and zero carryover without presenting program closeout as asset commissioning evidence.
 - Rebuilt Buchans as a five-breaker 230 kV ring bus around T1. The diagram now identifies B1L05, L05L33, L32L33, L28L32, and B1L28; places TL205, TL233, TL232, and TL228 in their filed line positions; and adds B2L64 on TL264 and B2L80 on TL280.
+- Added the March 2014 Grand Falls and Bishop's Falls breaker registers to their station one-lines. Grand Falls now identifies two 138 kV line breakers, four transformer breakers, and five 25 kV feeder breakers. Bishop's Falls identifies the four 138 kV line breakers. Present bus-section and disconnect-switch arrangements remain open because no current as-built drawing was located.
 
 ## Active work
 

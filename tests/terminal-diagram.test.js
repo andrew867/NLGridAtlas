@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { islandTerminalRecords } from "../src/data.js";
+import { islandTerminalRecords, stationProfiles } from "../src/data.js";
 import { renderTerminalDiagram } from "../src/terminal-diagram.js";
 
 const escapeHtml = (value) => String(value)
@@ -262,6 +262,19 @@ test("Grand Falls Frequency Converter has a distinct TL235 terminal record", () 
   ]);
   assert.match(converter.facts.flat().join(" "), /0\.620 km.*322\.2 MVA.*86\.1 MVA.*64\.3 MVA/);
   assert.ok(converter.sources.every((source) => source.pages));
+});
+
+test("Grand Falls and Bishop's Falls diagrams render their filed breaker identifiers", () => {
+  const grandFalls = stationProfiles.find((station) => station.code === "GFS");
+  const bishopsFalls = stationProfiles.find((station) => station.code === "BFS");
+  assert.ok(grandFalls);
+  assert.ok(bishopsFalls);
+  const grandFallsHtml = renderTerminalDiagram(grandFalls.diagram, escapeHtml);
+  const bishopsFallsHtml = renderTerminalDiagram(bishopsFalls.diagram, escapeHtml);
+  assert.match(grandFallsHtml, /GFS-130L-B/);
+  assert.match(grandFallsHtml, /GFS-T5-B/);
+  assert.match(bishopsFallsHtml, /BFS-132L-B/);
+  assert.match(bishopsFallsHtml, /BFS-136L-B/);
 });
 
 test("Deer Lake Power separates the 60 Hz generating group from the frequency converter", () => {

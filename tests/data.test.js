@@ -596,8 +596,21 @@ test("Grand Falls renders the 138 kV, 66 kV, 25 kV, and 4.2 kV station functions
   assert.deepEqual(grandFalls.diagram.buses.map(({ voltage }) => voltage), ["138 kV", "66 kV", "25 kV", "4.2 kV"]);
   assert.deepEqual(grandFalls.diagram.transformers.map(({ label, rating }) => [label, rating]), [["GFS-T1", "29.7 MVA"], ["GFS-T2", "20 MVA"], ["GFS-T3", "50 MVA"], ["GFS-T5", "11.17 MVA"]]);
   assert.deepEqual(grandFalls.diagram.circuits.slice(0, 3).map(({ label, destination }) => [label, destination]), [["130L", "Stony Brook"], ["132L", "Bishop's Falls"], ["101L", "Rattling Brook"]]);
+  assert.deepEqual(grandFalls.diagram.transformers.map(({ label, toBreaker }) => [label, toBreaker]), [["GFS-T1", "GFS-T1-B"], ["GFS-T2", "GFS-T2-B"], ["GFS-T3", "GFS-T3-B"], ["GFS-T5", "GFS-T5-B"]]);
+  assert.deepEqual(grandFalls.diagram.circuits.filter(({ breaker }) => breaker).map(({ label, breaker }) => [label, breaker]), [["130L", "GFS-130L-B"], ["132L", "GFS-132L-B"], ["GFS-02", "GFS-02-B"], ["GFS-06", "GFS-06-B"], ["GFS-07", "GFS-07-B"], ["GFS-08", "GFS-08-B"], ["GFS-10", "GFS-10-B"]]);
+  const breakerRegister = grandFalls.historyRecords.find((record) => record.label.includes("2014 EQUIPMENT"));
+  assert.equal(breakerRegister.pages, "physical PDF pp. 178 and 332 to 337");
+  assert.match(breakerRegister.facts.flat().join(" "), /GFS-130L-B.*GFS-132L-B.*GFS-T1-B.*GFS-T5-B.*GFS-02-B.*GFS-10-B/);
   assert.match(grandFalls.engineeringRecord.facts.flat().join(" "), /separate 138\/66\/25 kV and 66\/4\.16 kV yards.*north of the Trans-Canada Highway.*south of the highway/s);
   assert.match(grandFalls.planningRecord.facts.flat().join(" "), /GFS-T5 66\/4\.2 kV; 11\.17 MVA; 6\.27 MVA 2026 forecast/);
+});
+
+test("Bishop's Falls diagram carries the four filed 138 kV breaker names", () => {
+  const bishopsFalls = stationProfiles.find((station) => station.code === "BFS");
+  assert.ok(bishopsFalls);
+  assert.deepEqual(bishopsFalls.diagram.circuits.slice(0, 4).map(({ label, breaker }) => [label, breaker]), [["132L", "BFS-132L-B"], ["133L", "BFS-133L-B"], ["134L", "BFS-134L-B"], ["136L", "BFS-136L-B"]]);
+  const equipmentRegister = bishopsFalls.historyRecords.find((record) => record.label.includes("2014 INSPECTION"));
+  assert.equal(equipmentRegister.pages, "physical PDF pp. 28 to 31");
 });
 
 test("Lewisporte and Rattling Brook retain the completed central 138 kV arrangement", () => {

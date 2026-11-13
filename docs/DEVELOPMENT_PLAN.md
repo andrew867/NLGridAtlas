@@ -96,6 +96,7 @@ Work items:
 - ISL-025
 - ISL-026
 - ISL-027
+- ISL-028
 - NPREG-001
 - NPREG-002
 - NPREG-003
