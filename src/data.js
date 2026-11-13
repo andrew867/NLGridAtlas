@@ -805,9 +805,39 @@ export const sources = [
     organization: "NL Hydro",
     title: "2021 Capital Budget Application, Stephenville Gas Turbine Retirement Upgrades",
     topics: ["Bottom Brook", "Stephenville", "T2", "T3", "T4", "230/66 kV", "transformer addition"],
-    pages: "physical PDF pp. 500 and 510 to 519",
+    pages: "physical PDF pp. 500 to 505, 509 to 523",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2021/NLH2021Capital/applications/From%20NLH%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-08-04.pdf"
+  },
+  {
+    id: "nlh-stv-scope-2025",
+    year: 2024,
+    organization: "NL Hydro",
+    title: "PUB-NLH-030, Stephenville Gas Turbine Retirement Project Scope",
+    topics: ["Stephenville", "Bottom Brook", "gas turbine", "project cancellation", "retirement", "bridging period"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2025Capital/responses/PUB-NLH-030.PDF"
+  },
+  {
+    id: "nlh-stv-q3-2025",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Q3 2025 Quarterly Regulatory Report, Revision 1",
+    topics: ["Stephenville", "T1", "T3", "GT1", "transformer refurbishment", "protective relays"],
+    pages: "physical PDF pp. 36 to 37",
+    status: "verified",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/From%20NLH%20-%20Q3%20Report%20for%20period%20ending%20September%202025%20-%20Revision%201%20-%202026-01-06.PDF"
+  },
+  {
+    id: "nlh-stv-condition-2026",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Hardwoods and Stephenville Life Extension Condition Assessment",
+    topics: ["Stephenville", "gas turbine", "synchronous condenser", "63.5 MVA", "condition assessment", "retirement"],
+    pages: "physical PDF pp. 5 to 15",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/study/From%20NLH%20-%20Condition%20Assessment%20and%20Retirement%20Optimization%20Study%20-%202026-06-15.PDF"
   },
   {
     id: "nlh-cbc-2013",
@@ -1084,8 +1114,8 @@ export const sources = [
     year: 2024,
     organization: "NL Hydro",
     title: "2024 Annual Planning Assessment",
-    topics: ["Soldiers Pond", "Labrador-Island Link", "Avalon", "Massey Drive", "TL211", "TL228", "TL248", "transformer loading", "230 kV", "synchronous condenser"],
-    pages: "physical PDF pp. 8, 13 to 15, 38, and 40",
+    topics: ["Soldiers Pond", "Labrador-Island Link", "Avalon", "Massey Drive", "Stephenville", "TL211", "TL228", "TL248", "transformer loading", "230 kV", "synchronous condenser"],
+    pages: "physical PDF pp. 8, 13 to 15, 35, 38, 40, and 41",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/correspondence/From%20NLH%20-%20Newfoundland%20and%20Labrador%20System%20Operator%20(NLSO)%20-%202024%20Annual%20Planning%20Assessment%20-%202024-07-30.PDF"
   },
@@ -3294,7 +3324,7 @@ export const sources = [
     year: 2025,
     organization: "Newfoundland Power",
     title: "CA-NP-168, Attachment A, Transmission Line Endpoints",
-    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "80L", "105L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "353L", "357L", "358L", "359L", "Big Pond", "Bayview", "Blaketown", "Frenchman's Cove", "Grand Falls", "Sandy Brook", "Heart's Content", "Islington", "New Chelsea", "New Harbour", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville"],
+    topics: ["17L", "24L", "43L", "57L", "65L", "68L", "80L", "105L", "110L", "111L", "113L", "115L", "116L", "117L", "123L", "132L", "133L", "134L", "136L", "353L", "357L", "358L", "359L", "401L", "405L", "407L", "Big Pond", "Bayview", "Blaketown", "Frenchman's Cove", "Grand Falls", "Sandy Brook", "Heart's Content", "Islington", "New Chelsea", "New Harbour", "Old Perlican", "Lethbridge", "Catalina", "Bonavista", "Clarenville", "Trinity", "Greenspond", "Hare Bay", "Wesleyville", "Stephenville", "Gallant Street", "Harmon", "St. George's"],
     pages: "physical PDF pp. 3 to 4",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2025/NP2025GRA/responses/CA-NP-168.PDF"
@@ -5271,6 +5301,152 @@ export const islandTerminalRecords = [
     sources: [sourceRef("gra-2013-v2", "physical PDF p. 80")]
   },
   {
+    code: "STV",
+    name: "Stephenville Terminal Station",
+    status: "verified",
+    facts: [["T3", "230/66 kV, 40/53.3/66.7 MVA"], ["T1", "66/13.8 kV, 45/60/75 MVA gas-turbine transformer"], ["G1", "63.5 MVA generator"], ["230 kV circuit", "TL209 to Bottom Brook"], ["66 kV circuits", "401L to Gallant Street; 405L to Harmon; 407L to St. George's"], ["2024 project decision", "Most remaining gas-turbine retirement work was cancelled after retirement was deferred"]],
+    voltage: "230/66/13.8 kV",
+    circuitRegisterLabel: "2025 NEWFOUNDLAND POWER ENDPOINTS / HYDRO TERMINAL RECORD",
+    circuitSources: [
+      { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 4" },
+      { sourceId: "nlh-bbk-stv-2021", pages: "physical PDF pp. 509 and 521" }
+    ],
+    connectedCircuits: [
+      { circuit: "TL209", from: "Bottom Brook", from_code: "BBK", to: "Stephenville", to_code: "STV" },
+      { circuit: "401L", from: "Stephenville", from_code: "STV", to: "Gallant Street", to_code: "GAL" },
+      { circuit: "405L", from: "Stephenville", from_code: "STV", to: "Harmon", to_code: "HAR" },
+      { circuit: "407L", from: "Stephenville", from_code: "STV", to: "St. George's", to_code: "STG" }
+    ],
+    feederRegisterLabel: "NO DISTRIBUTION FEEDERS",
+    feederRegister: [],
+    mapPages: [],
+    eventLoads: [],
+    diagram: {
+      label: "retained terminal and gas-turbine equipment / 2025 circuit endpoints",
+      buses: [
+        { id: "b1", label: "bus", voltage: "230 kV" },
+        { id: "b2", label: "Newfoundland Power interface", voltage: "66 kV" },
+        { id: "b3", label: "gas-turbine bus", voltage: "13.8 kV" }
+      ],
+      transformers: [
+        { label: "T3", rating: "40/53.3/66.7 MVA", from: "b1", to: "b2" },
+        { label: "T1", rating: "45/60/75 MVA", from: "b2", to: "b3" }
+      ],
+      circuits: [
+        { label: "TL209", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" },
+        { label: "401L", destination: "Gallant Street", bus: "b2", destinationCode: "GAL" },
+        { label: "405L", destination: "Harmon", bus: "b2", destinationCode: "HAR" },
+        { label: "407L", destination: "St. George's", bus: "b2", destinationCode: "STG" }
+      ],
+      generators: [{ label: "G1", rating: "63.5 MVA", bus: "b3" }]
+    },
+    engineeringRecord: {
+      date: "2026 CONDITION ASSESSMENT",
+      title: "Stephenville gas turbine and terminal role",
+      sourceId: "nlh-stv-condition-2026",
+      pages: "physical PDF pp. 5 to 10 and 15",
+      facts: [
+        ["Entered service", "1975"],
+        ["Prime movers", "Two 25 MW Rolls-Royce Olympus C-type 2022 gas turbines coupled through clutches to one power turbine"],
+        ["Generator", "Shared 63.5 MVA generator"],
+        ["System role", "Standby generation and reactive-power support as a synchronous condenser"],
+        ["Condition", "The facility appeared to remain in reasonable condition, with increasing degradation, obsolescence, parts, and service-support risks"],
+        ["Hatch recommendation", "Consider retirement or replacement in 2040 based on asset condition and supportability; Hydro retained the wider system decision for later planning"]
+      ]
+    },
+    planningRecord: {
+      label: "2032 RETIREMENT-CASE TRANSFORMER LOADING",
+      sourceId: "nlh-planning-2023",
+      pages: "physical PDF pp. 43 to 44",
+      facts: [
+        ["Model basis", "Stephenville gas turbine retired and Bottom Brook T4 installed"],
+        ["SVL-T3 pre-contingency", "66.6 MVA maximum; 37.8 MVA, 56.8 percent"],
+        ["SVL-T3 with BBK-T4 out", "58.7 MVA, 88.1 percent"],
+        ["BBK-T4 with SVL-T3 out", "65.2 MVA, 97.9 percent"]
+      ]
+    },
+    historyRecords: [
+      {
+        label: "2020 EXISTING EQUIPMENT AND PROPOSED FINAL ARRANGEMENT",
+        sourceId: "nlh-bbk-stv-2021",
+        pages: "physical PDF pp. 509 and 521 to 522",
+        facts: [
+          ["Terminal supply", "TL209 from Bottom Brook feeds one 230/66 kV T3 rated 40/53.3/66.7 MVA"],
+          ["Gas-turbine transformer", "T1 rated 45/60/75 MVA, 66/13.8 kV"],
+          ["Gas-turbine generator", "G1 rated 63.5 MVA at 13.8 kV"],
+          ["Recommended retirement arrangement", "Remove the gas turbine and associated breakers; retain T3 and add station-service and grounding transformation supplied from the Newfoundland Power system"]
+        ]
+      },
+      {
+        label: "2024 PARTIAL PROJECT CLOSEOUT",
+        sourceId: "nlh-stv-scope-2025",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Completed work", "A portion of the Bottom Brook and Stephenville upgrade scope was complete and in service"],
+          ["Cancelled work", "Most remaining scope was cancelled after the Stephenville gas-turbine retirement was deferred"],
+          ["Bridging period", "Hydro retained the unit until 2030, or until alternative generation is commissioned, Labrador-Island Link performance is proven, and generation reserves are met"]
+        ]
+      },
+      {
+        label: "2024 PLANNING MODEL",
+        sourceId: "nlh-planning-2024",
+        pages: "physical PDF pp. 35 and 41",
+        facts: [
+          ["Gas turbine", "Modelled in service as a synchronous condenser and unavailable as a generator"],
+          ["Bottom Brook T4", "A 40/53.3/66.7 MVA transformer was assumed to be added before the year-10 case"]
+        ]
+      },
+      {
+        label: "2025 COMPLETED ASSET WORK",
+        sourceId: "nlh-stv-q3-2025",
+        pages: "physical PDF pp. 36 to 37",
+        facts: [
+          ["Transformer refurbishment", "Completed for T1 and T3"],
+          ["Protective relays", "Replaced for T3 and GT1"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "STEPHENVILLE SOURCE SHEETS",
+    referenceSheets: [
+      {
+        title: "2020 existing equipment marked for proposed removal",
+        image: "./reference-maps/stephenville-2020-removal-one-line.png",
+        alt: "Stephenville terminal one-line showing T3, the 66 kV interface, T1, G1, station service, and the equipment proposed for removal in 2020",
+        sourceId: "nlh-bbk-stv-2021",
+        pages: "physical PDF p. 521"
+      },
+      {
+        title: "2020 recommended post-retirement arrangement",
+        image: "./reference-maps/stephenville-2020-post-retirement-one-line.png",
+        alt: "Recommended Stephenville terminal arrangement after gas-turbine removal, retaining T3 and adding station-service and grounding transformation",
+        sourceId: "nlh-bbk-stv-2021",
+        pages: "physical PDF p. 522"
+      },
+      {
+        title: "2032 pre-contingency loop loading",
+        image: "./reference-maps/stephenville-2032-loop-loading.png",
+        alt: "2032 Stephenville to Bottom Brook loop model showing T3 and T4 pre-contingency loading",
+        sourceId: "nlh-planning-2023",
+        pages: "physical PDF p. 43"
+      },
+      {
+        title: "2032 transformer-contingency loading",
+        image: "./reference-maps/stephenville-2032-contingency-loading.png",
+        alt: "2032 Stephenville to Bottom Brook loop model showing the reciprocal T3 and T4 contingency loadings",
+        sourceId: "nlh-planning-2023",
+        pages: "physical PDF p. 44"
+      },
+      {
+        title: "2026 condition-assessment plant data",
+        image: "./reference-maps/stephenville-2026-condition-overview.png",
+        alt: "2026 Hydro overview listing Stephenville service date, two 25 MW Olympus gas turbines, and the shared 63.5 MVA generator",
+        sourceId: "nlh-stv-condition-2026",
+        pages: "physical PDF p. 6"
+      }
+    ],
+    sources: [sourceRef("nlh-bbk-stv-2021", "physical PDF pp. 509 and 521 to 522"), sourceRef("nlh-planning-2023", "physical PDF pp. 43 to 44"), sourceRef("nlh-planning-2024", "physical PDF pp. 35 and 41"), sourceRef("nlh-stv-scope-2025", "physical PDF p. 1"), sourceRef("nlh-stv-q3-2025", "physical PDF pp. 36 to 37"), sourceRef("nlh-stv-condition-2026", "physical PDF pp. 5 to 15"), sourceRef("np-2025-ca-np-168", "physical PDF p. 4")]
+  },
+  {
     code: "MAS",
     name: "Massey Drive Terminal Station",
     status: "verified",
@@ -5282,19 +5458,6 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL211", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }, { label: "TL228", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL248", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }, { label: "351L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" }, { label: "352L", destination: "Walbournes", bus: "b3", destinationCode: "WAL" }, { label: "356L", destination: "Humber", bus: "b3", destinationCode: "HUM" }, { label: "357L", destination: "Bayview", bus: "b3", destinationCode: "BVS" }]
     },
     sources: [sourceRef("nlh-system-additions-2001", "physical PDF p. 224"), sourceRef("nlh-transformer-loading-2015", "physical PDF p. 4"), sourceRef("nlh-planning-2024", "physical PDF pp. 15 and 40"), sourceRef("np-2014-massey-drive", "physical PDF p. 238"), sourceRef("asset-2023", "physical PDF pp. 33 to 34"), sourceRef("nlh-massey-q3-2023", "physical PDF p. 34")]
-  },
-  {
-    code: "STV",
-    name: "Stephenville Terminal Station",
-    status: "verified",
-    facts: [["T3", "230/66 kV, 40/53.3/66.6 MVA"], ["230 kV circuit", "TL209 to Bottom Brook"], ["2021 project basis", "Gas turbine retirement required Bottom Brook backup capacity and a simpler Stephenville station arrangement"], ["2023 planning model", "T3 maximum rating listed as 66.6 MVA"]],
-    diagram: {
-      label: "2021 recommended post-retirement arrangement",
-      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "66 kV bus", voltage: "66 kV" }],
-      transformers: [{ label: "T3", rating: "40/53.3/66.6 MVA", from: "b1", to: "b2" }],
-      circuits: [{ label: "TL209", destination: "Bottom Brook", bus: "b1", destinationCode: "BBK" }]
-    },
-    sources: [sourceRef("nlh-bbk-stv-2021", "physical PDF pp. 500 and 510 to 519"), sourceRef("nlh-planning-2023", "physical PDF p. 43"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26")]
   },
   {
     code: "CBC",
@@ -8221,6 +8384,7 @@ export const stationProfiles = [
       }
     ]
   },
+  ...islandTerminalRecords.filter(({ code }) => code === "STV"),
   {
     code: "BUC",
     name: "Buchans",

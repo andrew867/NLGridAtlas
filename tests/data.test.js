@@ -469,7 +469,7 @@ test("Deer Lake keeps the dated voltage records and approved DLK-03 work separat
 
 test("island terminal records retain page-level sources", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
-  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "MAS", "STV", "CBC", "VBN", "SDP", "USL", "GRC", "CAT", "HLA"]);
+  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "BUC", "DLK", "BRH", "PBR", "PLP", "BRC", "SAA", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "STV", "MAS", "CBC", "VBN", "SDP", "USL", "GRC", "CAT", "HLA"]);
   for (const record of islandTerminalRecords) {
     assert.ok(allowedStates.has(record.status));
     assert.ok(record.facts.length > 0);
@@ -2084,6 +2084,32 @@ test("Massey Drive separates the customer bank from the Newfoundland Power 66 kV
 
   const terminal = islandTerminalRecords.find((station) => station.code === "MAS");
   assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL211", "TL228", "TL248", "351L", "352L", "356L", "357L"]);
+});
+
+test("Stephenville separates retained equipment from the modelled retirement case", () => {
+  const stephenville = stationProfiles.find((station) => station.code === "STV");
+  assert.ok(stephenville);
+  assert.deepEqual(stephenville.connectedCircuits.map(({ circuit }) => circuit), ["TL209", "401L", "405L", "407L"]);
+  assert.deepEqual(stephenville.feederRegister, []);
+  assert.deepEqual(stephenville.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "66 kV", "13.8 kV"]);
+  assert.deepEqual(stephenville.diagram.transformers.map(({ label, rating }) => [label, rating]), [["T3", "40/53.3/66.7 MVA"], ["T1", "45/60/75 MVA"]]);
+  assert.deepEqual(stephenville.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "63.5 MVA"]]);
+  assert.deepEqual(stephenville.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 521", "physical PDF p. 522", "physical PDF p. 43", "physical PDF p. 44", "physical PDF p. 6"]);
+  const conditionFacts = stephenville.engineeringRecord.facts.flat().join(" ");
+  const planningFacts = stephenville.planningRecord.facts.flat().join(" ");
+  const historyFacts = stephenville.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(conditionFacts, /Two 25 MW Rolls-Royce Olympus C-type 2022 gas turbines/);
+  assert.match(conditionFacts, /Shared 63\.5 MVA generator/);
+  assert.match(conditionFacts, /Consider retirement or replacement in 2040/);
+  assert.match(planningFacts, /gas turbine retired and Bottom Brook T4 installed/);
+  assert.match(planningFacts, /37\.8 MVA, 56\.8 percent/);
+  assert.match(planningFacts, /65\.2 MVA, 97\.9 percent/);
+  assert.match(historyFacts, /Most remaining scope was cancelled/);
+  assert.match(historyFacts, /Modelled in service as a synchronous condenser and unavailable as a generator/);
+  assert.match(historyFacts, /Completed for T1 and T3/);
+
+  const terminal = islandTerminalRecords.find((station) => station.code === "STV");
+  assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL209", "401L", "405L", "407L"]);
 });
 
 test("Buchans joins the terminal transformer and Newfoundland Power distribution record", () => {
