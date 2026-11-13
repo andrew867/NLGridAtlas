@@ -1280,6 +1280,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-NP-055.PDF"
   },
   {
+    id: "np-east-coast-restoration-2013",
+    year: 2014,
+    organization: "Newfoundland Power / Newfoundland and Labrador Hydro",
+    title: "East Coast Power System Restoration Plan, Revision 0",
+    topics: ["Hardwoods", "Oxen Pond", "Ridge Road", "Memorial", "bus sections", "transformer breakers", "feeder groups", "restoration"],
+    pages: "physical PDF pp. 810 to 820",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/2ReviewofSupplyDisruptionsandRotatingOutagesVolumeII.pdf"
+  },
+  {
     id: "nlh-gra-2017-v2",
     year: 2017,
     organization: "NL Hydro",
@@ -14234,6 +14244,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2013 RESTORATION ARRANGEMENT",
+        sourceId: "np-east-coast-restoration-2013",
+        pages: "physical PDF p. 818",
+        facts: [
+          ["25 kV bus", "HWD-T3-B supplied HWD-07-B and HWD-08-B; the restoration table records 24.9 MVA"],
+          ["12.5 kV bus", "HWD-T1-B and HWD-T2-B supplied one five-feeder group; the restoration table records 38.4 MVA"]
+        ]
+      },
+      {
         label: "2014 HWD-08 RECLOSER PROJECT",
         sourceId: "np-2014-improvements",
         pages: "physical PDF pp. 18, 21 and 44",
@@ -14291,6 +14310,27 @@ export const stationProfiles = [
       facts: [["OXP-01", "12.5 kV; OXP-T1; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "MARCH 2014 EQUIPMENT REGISTER",
+        sourceId: "np-2016-pub-np-064-g",
+        pages: "physical PDF pp. 351 to 354",
+        facts: [
+          ["Distribution breaker", "OXP-01-B, asset 210682, SF6 circuit breaker"],
+          ["Feeder regulator", "OXP-01-VR1, asset 220495"],
+          ["Transformer", "OXP-T1, asset 200279"],
+          ["66 kV SF6 breakers", "OXP-31L-B and OXP-58L-B"],
+          ["66 kV bulk-oil breakers", "OXP-32L-B, OXP-34L-B, OXP-35L-B, OXP-67L-B and OXP-70L-B"]
+        ]
+      },
+      {
+        label: "2013 RESTORATION ARRANGEMENT",
+        sourceId: "np-east-coast-restoration-2013",
+        pages: "physical PDF pp. 819 to 820",
+        facts: [
+          ["Local distribution", "OXP-01-B restored the 12.5 kV feeder; the restoration table records 10.7 MVA"],
+          ["66 kV groups", "31L and 70L restored Stamp's Lane and Memorial; 32L and 67L restored Ridge Road and King's Bridge; 35L and 58L restored Virginia Waters, Pepperell and Pulpit Rock"]
+        ]
+      },
       {
         label: "2008 TO 2009 COMPLETED STATION WORK",
         sourceId: "np-2027-pub-np-005",
@@ -14642,6 +14682,16 @@ export const stationProfiles = [
       facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2013 RESTORATION ARRANGEMENT",
+        sourceId: "np-east-coast-restoration-2013",
+        pages: "physical PDF pp. 816 and 820",
+        facts: [
+          ["Bus sections", "RRD-T2-B and RRD-T3-B each supplied four 12.5 kV feeders on separate low-voltage buses"],
+          ["Bus tie", "RRD-TB-2-3 connected the two low-voltage buses"],
+          ["Restoration load", "the plan records 17.6 MVA on each four-feeder section"]
+        ]
+      },
       {
         label: "2006 SWITCHGEAR CUBICLE REGISTER",
         sourceId: "np-2016-pub-np-064-f",

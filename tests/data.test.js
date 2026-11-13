@@ -3477,6 +3477,21 @@ test("Greenhill code conflict is contextual and the latest code is preferred", a
   assert.match(main, /greenhill \? "GRH" : plant\.code/);
 });
 
+test("Avalon restoration records preserve bank-level topology without inventing feeder splits", () => {
+  const hardwoods = stationProfiles.find((station) => station.code === "HWD");
+  const oxenPond = stationProfiles.find((station) => station.code === "OXP");
+  const ridgeRoad = stationProfiles.find((station) => station.code === "RRD");
+  const restoration = sources.find((source) => source.id === "np-east-coast-restoration-2013");
+
+  assert.ok(restoration);
+  assert.match(hardwoods.historyRecords[0].facts.flat().join(" "), /HWD-T3-B.*HWD-07-B.*HWD-08-B/);
+  assert.match(hardwoods.historyRecords[0].facts.flat().join(" "), /five-feeder group/);
+  assert.match(oxenPond.historyRecords[0].facts.flat().join(" "), /OXP-01-B.*210682.*SF6/);
+  assert.match(oxenPond.historyRecords[1].facts.flat().join(" "), /31L and 70L.*32L and 67L.*35L and 58L/);
+  assert.match(ridgeRoad.historyRecords[0].facts.flat().join(" "), /RRD-T2-B.*RRD-T3-B.*four 12.5 kV feeders/);
+  assert.match(ridgeRoad.historyRecords[0].facts.flat().join(" "), /RRD-TB-2-3/);
+});
+
 test("documented circuit links open the available other-end record", async () => {
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
