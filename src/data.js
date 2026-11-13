@@ -15747,8 +15747,24 @@ export const stationProfiles = [
   {
     code: "COL",
     name: "Colliers",
+    voltage: "138/12.5 kV",
+    circuitRegisterLabel: "2022 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "42L", from: "Holyrood", from_code: "HOL", to: "Colliers", to_code: "COL" },
+      { circuit: "46L", from: "Colliers", from_code: "COL", to: "Springfield", to_code: "SPF" }
+    ],
+    feederRegisterLabel: "2018 FEEDER REGISTER",
+    feederRegister: ["COL-01", "COL-02"],
     mapPages: [],
     eventLoads: [],
+    diagram: {
+      label: "2022 line register, 2018 feeder register, and 2027 transformer register",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "COL-T1", rating: "16.67 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "42L", destination: "Holyrood", bus: "b1", destinationCode: "HOL" }, { label: "46L", destination: "Springfield", bus: "b1", destinationCode: "SPF" }],
+      feeders: [{ label: "COL-01", bus: "b2" }, { label: "COL-02", bus: "b2" }]
+    },
     engineeringRecord: {
       date: "2015 CAPITAL APPLICATION",
       title: "Colliers transformer, lines, and modernization scope",
@@ -15758,12 +15774,33 @@ export const stationProfiles = [
         ["Station built", "1992"],
         ["Transformer", "COL-T1; 138/12.5 kV; 16.7 MVA"],
         ["2014 distribution", "COL-01 and COL-02; approximately 1,377 customers"],
-        ["Planned line designations", "42L to Holyrood and 46L to Springfield after the transmission-breaker work"],
+        ["Filed line designations", "42L to Holyrood and 46L to Springfield after the transmission-breaker work"],
         ["Proposed 138 kV work", "two line breakers with associated protective relaying"],
         ["Proposed station work", "tap changer controller, digital bus, line and transformer relays, SCADA gateway, incoming 12.5 kV breaker, control building, and ground-grid extension"]
       ]
     },
+    planningRecord: {
+      label: "CURRENT TRANSFORMER REGISTER",
+      sourceId: "np-2027-transformers",
+      pages: "physical PDF p. 547",
+      facts: [["COL-T1", "138/12.5 kV; 16.67 MVA; 6.99 MVA 2026 forecast"]]
+    },
     historyRecords: [
+      {
+        label: "2018 FEEDER REGISTER",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF p. 14",
+        facts: [
+          ["COL-01", "12.47 kV; 7.7 MVA planning capacity; 3.3 MVA 2024/25 forecast winter peak"],
+          ["COL-02", "12.47 kV; 7.7 MVA planning capacity; 3.4 MVA 2024/25 forecast winter peak"]
+        ]
+      },
+      {
+        label: "2022 TRANSMISSION ASSET REGISTER",
+        sourceId: "np-2025-ca-np-168",
+        pages: "physical PDF p. 3",
+        facts: [["42L", "Holyrood Substation to Colliers Substation"], ["46L", "Colliers Substation to Springfield Substation"]]
+      },
       {
         label: "2014 PROPOSED RECLOSER AND SCADA WORK",
         sourceId: "np-2014-improvements",
@@ -15780,8 +15817,24 @@ export const stationProfiles = [
   {
     code: "SPF",
     name: "Springfield",
+    voltage: "138/12.5 kV",
+    circuitRegisterLabel: "2022 TRANSMISSION ASSET REGISTER",
+    circuitSource: { sourceId: "np-2025-ca-np-168", pages: "physical PDF p. 3" },
+    connectedCircuits: [
+      { circuit: "46L", from: "Colliers", from_code: "COL", to: "Springfield", to_code: "SPF" },
+      { circuit: "47L", from: "Springfield", from_code: "SPF", to: "Bay Roberts", to_code: "BRB" }
+    ],
+    feederRegisterLabel: "2018 FEEDER REGISTER",
+    feederRegister: ["SPF-01", "SPF-02", "SPF-03"],
     mapPages: [["SPF-02", 149], ["SPF-03", 150]],
     eventLoads: [],
+    diagram: {
+      label: "2022 line register, 2018 feeder register, and 2027 transformer register",
+      buses: [{ id: "b1", label: "138 kV bus", voltage: "138 kV" }, { id: "b2", label: "12.5 kV bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "SPF-T1", rating: "20 MVA", from: "b1", to: "b2" }],
+      circuits: [{ label: "46L", destination: "Colliers", bus: "b1", destinationCode: "COL" }, { label: "47L", destination: "Bay Roberts", bus: "b1", destinationCode: "BRB" }],
+      feeders: [{ label: "SPF-01", bus: "b2" }, { label: "SPF-02", bus: "b2" }, { label: "SPF-03", bus: "b2" }]
+    },
     engineeringRecord: {
       date: "2015 CAPITAL APPLICATION",
       title: "Springfield transformer, lines, and modernization scope",
@@ -15791,7 +15844,7 @@ export const stationProfiles = [
         ["Station built", "1976"],
         ["Transformer", "SPF-T1; 138/12.5 kV; 20 MVA"],
         ["2014 distribution", "SPF-01, SPF-02, and SPF-03; approximately 3,141 customers from Brigus to North River"],
-        ["Planned line designations", "47L to Bay Roberts and 46L to Colliers after the transmission-breaker work"],
+        ["Filed line designations", "47L to Bay Roberts and 46L to Colliers after the transmission-breaker work"],
         ["Proposed 138 kV work", "two line breakers with associated protective relaying"],
         ["Proposed station work", "SPF-T1 refurbishment, digital bus, line and transformer relays, SCADA gateway, incoming 12.5 kV breaker, control building, and ground-grid extension"]
       ]
@@ -15801,10 +15854,27 @@ export const stationProfiles = [
       sourceId: "np-2027-pub-np-005",
       pages: "physical PDF p. 5",
       facts: [
-        ["Completed work", "power-transformer protection refurbishment; transmission-line and bus-protection upgrades; communications and SCADA equipment; control building; circuit breaker; ground-grid extension"]
+        ["Completed work", "power-transformer protection refurbishment; transmission-line and bus-protection upgrades; communications and SCADA equipment; control building; circuit breaker; ground-grid extension"],
+        ["Current transformer register", "SPF-T1; 138/12.5 kV; 20 MVA; 13.77 MVA 2026 forecast"]
       ]
     },
     historyRecords: [
+      {
+        label: "2018 FEEDER REGISTER",
+        sourceId: "np-2018-pub-np-081",
+        pages: "physical PDF p. 15",
+        facts: [
+          ["SPF-01", "12.47 kV; 7.7 MVA planning capacity; 6.0 MVA 2024/25 forecast winter peak"],
+          ["SPF-02", "12.47 kV; 7.7 MVA planning capacity; 5.4 MVA 2024/25 forecast winter peak"],
+          ["SPF-03", "12.47 kV; 7.7 MVA planning capacity; 1.4 MVA 2024/25 forecast winter peak"]
+        ]
+      },
+      {
+        label: "2022 TRANSMISSION ASSET REGISTER",
+        sourceId: "np-2025-ca-np-168",
+        pages: "physical PDF p. 3",
+        facts: [["46L", "Colliers Substation to Springfield Substation"], ["47L", "Springfield Substation to Bay Roberts Substation"]]
+      },
       {
         label: "2014 PROPOSED RECLOSER AND SCADA WORK",
         sourceId: "np-2014-improvements",

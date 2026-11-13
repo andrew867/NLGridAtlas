@@ -258,6 +258,18 @@
       "notes": "PUB-NP-064 Attachment F, physical PDF pp. 48, 57, 61, 65 and 66, contains the forms revised December 8, 2006 for King's Bridge, Pepperrell, Ridge Road, St. John's Main, and Stamp's Lane. The forms establish cubicle designations but not current bus positions."
     },
     {
+      "id": "AVL-009",
+      "title": "Add dated Colliers and Springfield one-lines",
+      "phase": 1,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Combine the current circuit endpoint register, feeder register, transformer register, and separately dated modernization evidence into clickable station diagrams.",
+      "dependencies": ["AVL-001", "SRC-001"],
+      "completion_evidence": ["research/AVALON_138KV_CHAIN_CURRENT_RECORD.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "The 2022 transmission asset register establishes 42L, 46L, and 47L endpoints. The diagrams use the 2018 feeder register and 2027 transformer table. Springfield has an explicit later completion record; Colliers breaker positions and direct completion remain open."
+    },
+    {
       "id": "NAV-001",
       "title": "Make every documented circuit link open the other-end record",
       "phase": 1,

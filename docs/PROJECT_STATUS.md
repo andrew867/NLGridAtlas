@@ -15,6 +15,7 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added dated Colliers and Springfield one-lines using the December 31, 2022 transmission endpoint register, the 2018 feeder register, and the 2027 transformer table. Springfield retains its explicit 2015 modernization completion record. Colliers breaker positions and direct completion remain open.
 - Added the 2006 switchgear cubicle registers for King's Bridge, Pepperrell, Ridge Road, St. John's Main, and the Stamp's Lane T1/T2 bank. The station histories preserve the feeder breaker, transformer breaker, and tie designations without treating the maintenance forms as current operating one-lines.
 - Added the six transformer repair durations in NLH-NP-014 to the Blaketown, Dunville, Stamp's Lane, Humber, and Trinity station histories.
 - Kept the one-day TRN-T1 repair duration separate from the approximately 25-hour 58-minute customer interruption recorded in the later reliability response.
