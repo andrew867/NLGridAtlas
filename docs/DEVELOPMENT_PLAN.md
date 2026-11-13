@@ -106,6 +106,7 @@ Work items:
 - GEN-001
 - GEN-002
 - GEN-003
+- GEN-004
 - HVDC-001
 - HVDC-002
 - CONV-001

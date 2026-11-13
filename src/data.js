@@ -1500,6 +1500,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/NLH2025AvalonCombustionMarch/responses/PUB-NLH-011.PDF"
   },
   {
+    id: "nlh-2026-avalon-ct-october-update",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Avalon Combustion Turbine Project Early Execution Update, August 2026 Reporting Period",
+    topics: ["Avalon combustion turbine", "HRDGT2", "38L", "39L", "early execution", "project schedule"],
+    pages: "physical PDF pp. 3 to 8 and 11",
+    status: "reported",
+    url: "http://www.pub.nf.ca/indexreports/avaloncombustion/From%20NLH%20-%20Avalon%20Combustion%20Turbine%20Project%20Early%20Execution%20Update%20-%20August%202026%20-%202026-10-16%20-%20REDACTED.PDF"
+  },
+  {
     id: "vhf-2004",
     year: 2004,
     organization: "NL Hydro",
@@ -4817,6 +4827,15 @@ export const timeline = [
     status: "proposed"
   },
   {
+    date: "2026-07-31",
+    category: "station",
+    title: "Newfoundland Power completed the Avalon CT line relocations",
+    body: "The October 2026 early execution schedule records the 38L and 39L relocation milestone as complete on July 31, 2026. The new HRDGT2 terminal arrangement remained proposed and the full project still awaited a Board order.",
+    sourceId: "nlh-2026-avalon-ct-october-update",
+    pages: "physical PDF pp. 5 and 11",
+    status: "reported"
+  },
+  {
     date: "2026-01-21",
     category: "station",
     title: "Frazil ice removed all Bay d'Espoir units",
@@ -6193,7 +6212,13 @@ export const islandTerminalRecords = [
       ["Oxen Pond connection", "the remaining 37 km section would retain the TL218 designation"],
       ["Generation", "multiple 13.8 kV units with 150 MW nominal total capacity and synchronous-condensing capability"],
       ["Transformation", "one 13.8/230 kV generator step-up transformer for each generating unit, plus one spare"],
-      ["June 2026 status", "Phase II additional early execution application"]
+      ["June 2026 status", "Phase II additional early execution application"],
+      ["Line relocation milestone", "Newfoundland Power completed the 38L and 39L relocations on July 31, 2026"],
+      ["CT package", "awarded December 15, 2025; the GE agreement was executed on the same date"],
+      ["Transformer package", "contract award milestone March 20, 2026; Hitachi agreement executed March 26, 2026"],
+      ["Approved early execution budget", "$95.411 million as of the August 2026 reporting period"],
+      ["Forecast commercial operation", "March 7, 2030"],
+      ["Full project approval", "awaiting a Board order when the October 2026 update was filed"]
     ],
     diagram: {
       label: "proposed July 2026 interconnection / not as-built",
@@ -6208,7 +6233,8 @@ export const islandTerminalRecords = [
     sources: [
       sourceRef("nlh-2025-avalon-ct-basis", "physical PDF p. 12"),
       sourceRef("nlh-2026-avalon-ct-phase-ii", "physical PDF p. 19"),
-      sourceRef("nlh-2026-avalon-ct-pub-nlh-011", "physical PDF p. 1")
+      sourceRef("nlh-2026-avalon-ct-pub-nlh-011", "physical PDF p. 1"),
+      sourceRef("nlh-2026-avalon-ct-october-update", "physical PDF pp. 3 to 8 and 11")
     ]
   }
 ];
@@ -15812,6 +15838,16 @@ export const stationProfiles = [
           ["Filed construction cost", "$1,609,731 before the remaining-life credit"],
           ["Hydro contribution", "$1,012,231 excluding HST after the filed betterment credit"],
           ["Drawing", "the preliminary layout dated August 1, 2025 shows the existing routes to be removed and the proposed replacement alignments"]
+        ]
+      },
+      {
+        label: "2026 REPORTED LINE RELOCATION COMPLETION",
+        sourceId: "nlh-2026-avalon-ct-october-update",
+        pages: "physical PDF p. 11",
+        facts: [
+          ["Milestone", "Newfoundland Power early execution complete"],
+          ["Work", "38L and 39L relocated"],
+          ["Actual date", "July 31, 2026"]
         ]
       }
     ],

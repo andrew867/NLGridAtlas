@@ -1,0 +1,36 @@
+{
+  "retrieved_date": "2026-11-13",
+  "source": {
+    "id": "nlh-2026-avalon-ct-october-update",
+    "title": "Avalon Combustion Turbine Project Early Execution Update, August 2026 Reporting Period",
+    "url": "http://www.pub.nf.ca/indexreports/avaloncombustion/From%20NLH%20-%20Avalon%20Combustion%20Turbine%20Project%20Early%20Execution%20Update%20-%20August%202026%20-%202026-10-16%20-%20REDACTED.PDF",
+    "local_file": "indexreports/avaloncombustion/From NLH - Avalon Combustion Turbine Project Early Execution Update - August 2026 - 2026-10-16 - REDACTED.PDF",
+    "physical_pdf_pages": [3, 4, 5, 6, 7, 8, 11],
+    "sha256": "d8319822fcb6e019b15901e8514c61d0a4a8071bc04e0f0eaa9affb571e8f3cf"
+  },
+  "reported_milestones": {
+    "ge_agreement_executed": "2025-12-15",
+    "transformer_contract_award_milestone": "2026-03-20",
+    "hitachi_agreement_executed": "2026-03-26",
+    "np_38l_39l_relocation_complete": "2026-07-31"
+  },
+  "approved_early_execution_budget_cad": {
+    "initial": 30710000,
+    "additional": 29294000,
+    "phase_ii_additional": 35407000,
+    "total": 95411000
+  },
+  "forecast": {
+    "commercial_operation_date": "2030-03-07"
+  },
+  "open_at_report_date": {
+    "full_project_board_order": true,
+    "construction_power_feed_installation": true,
+    "circuit_breaker_contract": true
+  },
+  "evidence_state": {
+    "line_relocations": "reported_complete",
+    "terminal_arrangement": "proposed",
+    "commercial_operation_date": "forecast"
+  }
+}

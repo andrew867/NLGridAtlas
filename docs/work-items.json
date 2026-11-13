@@ -559,7 +559,19 @@
       "dependencies": ["ARC-002"],
       "completion_evidence": ["src/data.js", "tests/data.test.js", "tests/terminal-diagram.test.js"],
       "blocker": null,
-      "notes": "The atlas now includes the July 2026 proposed HRDGT2 topology. PUB-NLH-011 places the new terminal approximately 0.5 km from Holyrood, treats that short section as a bus extension, and retains TL218 for the remaining 37 km to Oxen Pond. The June 2026 filing still describes Phase II additional early execution. The filed overall operation single-line is redacted in full. Final connection work remains deferred until an issued-for-construction, commissioning, or as-built record exists."
+      "notes": "The atlas includes the July 2026 proposed HRDGT2 topology. PUB-NLH-011 places the new terminal approximately 0.5 km from Holyrood, treats that short section as a bus extension, and retains TL218 for the remaining 37 km to Oxen Pond. The October 2026 update records the 38L and 39L relocations as complete on July 31, 2026, but does not publish the terminal as-built. Final connection work remains deferred until an issued-for-construction, commissioning, or as-built record exists."
+    },
+    {
+      "id": "GEN-004",
+      "title": "Add the October 2026 Avalon CT early execution status",
+      "phase": 3,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Record completed line relocations, executed equipment agreements, approved early execution budget, forecast commercial operation date, and the unresolved full-project approval gate.",
+      "dependencies": ["GEN-003"],
+      "completion_evidence": ["research/AVALON_CT_OCTOBER_2026_STATUS.md", "research/derived/avalon-ct-october-2026-status.json", "src/data.js", "tests/avalon-ct-status-2026.test.js"],
+      "blocker": null,
+      "notes": "The October 2026 filing reports that Newfoundland Power completed the 38L and 39L relocations on July 31, 2026. It records the GE and Hitachi agreements, a $95.411 million approved early execution budget, and a March 7, 2030 forecast commercial operation date. The full 2025 Build Application still awaited a Board order, so HRDGT2 remains proposed."
     },
     {
       "id": "HVDC-001",
