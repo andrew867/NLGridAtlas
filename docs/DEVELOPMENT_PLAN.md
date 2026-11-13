@@ -125,6 +125,7 @@ Work items:
 - LOAD-001
 - LOAD-002
 - OPS-001
+- OPS-002
 - GEO-001
 - GEO-002
 

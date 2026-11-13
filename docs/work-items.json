@@ -610,6 +610,18 @@
       "notes": "Hydro's March 31, 2026 reply provides five-year SAIDI and SAIFI values, outage-cause shares, 16 terminal stations, about 700 km of transmission line, 13 communities, and regional design loads. The Hawke's Bay record combines the current 5 MW backup role with the two filed 2.5 MW units, 2024 transformer records, the 2011 restoration sequence, and the 2026 life-extension assessment."
     },
     {
+      "id": "OPS-002",
+      "title": "Add the January 2026 Bay d'Espoir frazil-ice event",
+      "phase": 4,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Preserve the generating-unit shutdown, reserve levels, synchronous-condenser operation and observed return-to-service sequence from Hydro's event report.",
+      "dependencies": ["OPS-001", "ISL-003"],
+      "completion_evidence": ["research/BDE_FRAZIL_2026.md", "research/derived/bde-frazil-2026.json", "index.html", "src/data.js", "tests/bde-frazil.test.js"],
+      "blocker": null,
+      "notes": "The event record retains the January 21 removal of all seven units and approximately 250 MW reserve, the January 24 Power Warning at approximately 360 MW reserve, the January 25 release of Units 1 to 6 at 6 x 76.5 MW, and the January 31 release of Unit 7 at 154.4 MW."
+    },
+    {
       "id": "GEO-001",
       "title": "Build a sourced coordinate and route dataset",
       "phase": 4,

@@ -173,6 +173,7 @@ Updated: 2026-11-13
 - Added the current filed 9.7 MW St. Anthony backup-plant record and the pre-interconnection Roddickton woodchip, diesel, mini-hydro, black-start, and mobile-unit records. The station browser links TL257 and TL261 to the dated generation records.
 - Added the IC-270 Great Northern Peninsula load record. The extractor publishes complete-year peak series and compares the recorded January to April 2001 Bear Cove and Plum Point peaks with the filed winter forecasts.
 - Added the 2021 to 2025 Great Northern Peninsula reliability record, outage-cause shares, system extent, regional line design loads, and Hawke's Bay diesel, transformer, restoration and 2026 life-extension records.
+- Added the January 2026 Bay d'Espoir frazil-ice event, including the seven-unit shutdown, reported reserve levels, synchronous-condenser use and exact return-to-service records.
 
 ## Active work
 

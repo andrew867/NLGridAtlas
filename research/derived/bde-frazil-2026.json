@@ -1,0 +1,29 @@
+{
+  "source": {
+    "title": "Frazil Ice at Bay d'Espoir Hydroelectric Generating Station",
+    "url": "http://www.pub.nl.ca/applications/2026/NLH2026SystemReliabilityFrazilIce/From%20NLH%20-%20Frazil%20Ice%20Report%20for%20BDE%20-%202026-04-30.PDF",
+    "physical_pdf_pages": "13 to 15 and 32",
+    "sha256": "4EBDD49D282D6F2D51ABF4CA55A0B9C6CBFC8E6350FEE660F5FBA77EF47F0058"
+  },
+  "event": {
+    "start_date": "2026-01-21",
+    "all_units_removed_time": "18:00",
+    "all_units_removed_reserve_mw_approximate": 250,
+    "power_warning_date": "2026-01-24",
+    "power_warning_reserve_mw_approximate": 360,
+    "units_1_to_6_full_release": {
+      "timestamp": "2026-01-25 15:42",
+      "unit_count": 6,
+      "available_mw_each": 76.5
+    },
+    "unit_7_release": {
+      "timestamp": "2026-01-31 10:33",
+      "available_mw": 154.4
+    }
+  },
+  "plant_effect": {
+    "penstocks_affected": 4,
+    "generating_units_affected": 7,
+    "unit_7_synchronous_condenser_before_removal": true
+  }
+}

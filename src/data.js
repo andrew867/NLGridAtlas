@@ -1390,6 +1390,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Near-Term%20Reliability%20Report%20-%20May%202020%20-%202020-05-15.pdf"
   },
   {
+    id: "nlh-bde-frazil-2026",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Frazil Ice at Bay d'Espoir Hydroelectric Generating Station",
+    topics: ["Bay d'Espoir", "frazil ice", "trash rack", "generation reserve", "synchronous condenser", "Maritime Link", "Labrador-Island Link", "standby generation"],
+    pages: "physical PDF pp. 4 to 8, 13 to 16, 24, and 31 to 32",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2026/NLH2026SystemReliabilityFrazilIce/From%20NLH%20-%20Frazil%20Ice%20Report%20for%20BDE%20-%202026-04-30.PDF"
+  },
+  {
     id: "nlh-gnp-reliability-2026",
     year: 2026,
     organization: "NL Hydro",
@@ -4461,6 +4471,12 @@ export const staticClaims = [
     sources: [{ sourceId: "nlh-bde-wav-2012", pages: "physical PDF p. 4" }]
   },
   {
+    id: "bde-2026-frazil-event",
+    scope: "Bay d'Espoir generating-unit removal, system reserve and restoration during the January 2026 frazil-ice event",
+    status: "reported",
+    sources: [{ sourceId: "nlh-bde-frazil-2026", pages: "physical PDF pp. 13 to 15 and 32" }]
+  },
+  {
     id: "gnp-2001-forecast-comparison",
     scope: "Bear Cove and Plum Point recorded January to April 2001 peaks compared with the filed 2001 winter peak forecasts",
     status: "reported",
@@ -4769,6 +4785,15 @@ export const timeline = [
     sourceId: "nlh-2026-avalon-ct-pub-nlh-011",
     pages: "physical PDF p. 1",
     status: "proposed"
+  },
+  {
+    date: "2026-01-21",
+    category: "station",
+    title: "Frazil ice removed all Bay d'Espoir units",
+    body: "By 18:00 all seven generating units were out of service and reserve was approximately 250 MW. Units 1 to 6 returned to full capacity on January 25; Unit 7 returned on January 31.",
+    sourceId: "nlh-bde-frazil-2026",
+    pages: "physical PDF pp. 13 to 15 and 32",
+    status: "reported"
   },
   {
     date: "2026",
@@ -5485,8 +5510,8 @@ export const islandTerminalRecords = [
   {
     code: "BDE",
     name: "Bay d'Espoir Generating Station",
-    status: "verified",
-    facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA"], ["2013 plant assignment", "592 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"], ["66 kV circuit", "TL220 to English Harbour West and Barachoix"]],
+    status: "reported",
+    facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"], ["66 kV circuit", "TL220 to English Harbour West and Barachoix"]],
     diagram: {
       label: "2013 station 2 interface / 2018 routes",
       buses: [{ id: "b1", label: "230 kV station bus", voltage: "230 kV" }, { id: "b2", label: "69 kV station bus", voltage: "69 kV" }],
@@ -5494,7 +5519,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL202", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL206", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL204", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL231", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL234", destination: "Upper Salmon", bus: "b1" }, { label: "TL267", destination: "Western Avalon", bus: "b1" }, { label: "TL220", destination: "English Harbour West", bus: "b2" }],
       generators: [{ label: "Bay d'Espoir plant", rating: "592 MW assignment", bus: "b1" }]
     },
-    sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-bde-frazil-2026", "physical PDF pp. 13 to 15 and 32")]
   },
   {
     code: "BUC",
