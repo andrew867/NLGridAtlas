@@ -60,6 +60,43 @@ function circuitSymbol(circuit, index, count, bus, direction, escapeHtml, linkTa
   return circuitLink(circuit, body, escapeHtml, linkTarget);
 }
 
+function breakerSymbol({ x, y, orientation = "horizontal", label }, escapeHtml) {
+  const horizontal = orientation === "horizontal";
+  const width = horizontal ? 22 : 14;
+  const height = horizontal ? 14 : 22;
+  const labelX = horizontal ? x : x + 18;
+  const labelY = horizontal ? y - 13 : y + 4;
+  const anchor = horizontal ? "middle" : "start";
+  return `<g class="terminal-ring-breaker">
+    <rect x="${x - width / 2}" y="${y - height / 2}" width="${width}" height="${height}" />
+    <text x="${labelX}" y="${labelY}" text-anchor="${anchor}">${escapeHtml(label)}</text>
+  </g>`;
+}
+
+function ringSymbol(ring, buses, escapeHtml, linkTarget) {
+  const bus = buses.find((candidate) => candidate.id === ring.bus);
+  if (!bus) return "";
+  const topY = ring.y;
+  const fromX = ring.fromX;
+  const toX = ring.toX;
+  const conductor = `<path d="M ${fromX} ${bus.y} V ${topY} H ${toX} V ${bus.y}" />`;
+  const breakers = (ring.breakers || [])
+    .map((breaker) => breakerSymbol({ ...breaker, y: breaker.y ?? topY }, escapeHtml))
+    .join("");
+  const circuits = (ring.circuits || []).map((circuit) => {
+    const lineEnd = topY - 62;
+    const body = `<g class="terminal-circuit terminal-ring-circuit">
+      <line x1="${circuit.x}" y1="${topY}" x2="${circuit.x}" y2="${lineEnd}" />
+      <text class="terminal-circuit-id" x="${circuit.x}" y="${lineEnd - 18}">${escapeHtml(circuit.label)}</text>
+      <text class="terminal-circuit-destination" x="${circuit.x}" y="${lineEnd - 40}">${escapeHtml(circuit.destination)}</text>
+    </g>`;
+    return circuitLink(circuit, body, escapeHtml, linkTarget);
+  }).join("");
+  return `<g class="terminal-ring voltage-${escapeHtml(ring.voltage.replace(/[^0-9]/g, ""))}" role="img" aria-label="${escapeHtml(ring.label)}">
+    ${conductor}${breakers}${circuits}
+  </g>`;
+}
+
 function accessorySymbol(accessory, index, count, bus, type, escapeHtml) {
   const fourShuntPositions = [190, 390, 730, 930];
   const x = accessory.x ?? (type === "shunt" && count === 4
@@ -112,15 +149,15 @@ function busDisplayLabel(bus) {
 export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-terminal") {
   if (!diagram) return "";
   const busGap = 210;
-  const buses = diagram.buses.map((bus, index) => ({ ...bus, y: 165 + index * busGap }));
-  const lastBus = buses.at(-1);
+  const buses = diagram.buses.map((bus, index) => ({ ...bus, y: bus.y ?? 165 + index * busGap }));
+  const lastBus = [...buses].sort((a, b) => a.y - b.y).at(-1);
   const circuitsByBus = new Map(buses.map((bus) => [bus.id, diagram.circuits.filter((circuit) => circuit.bus === bus.id)]));
   const hasBottomDevices = (diagram.generators?.length || 0) + (diagram.shunts?.length || 0) + (diagram.converters?.length || 0) > 0;
   const height = lastBus.y + (hasBottomDevices ? 180 : 135);
 
   const busMarkup = buses.map((bus) => {
     const lines = bus.segments?.length
-      ? bus.segments.map(({ x, width = 76 }) => `<line x1="${x - width / 2}" y1="${bus.y}" x2="${x + width / 2}" y2="${bus.y}" />`).join("")
+      ? bus.segments.map(({ x, width = 76, label }) => `<line x1="${x - width / 2}" y1="${bus.y}" x2="${x + width / 2}" y2="${bus.y}" />${label ? `<text class="terminal-bus-segment-label" x="${x}" y="${bus.y + 54}">${escapeHtml(label)}</text>` : ""}`).join("")
       : `<line x1="120" y1="${bus.y}" x2="1000" y2="${bus.y}" />`;
     const tie = bus.tie;
     const tieMarkup = tie ? (() => {
@@ -152,6 +189,7 @@ export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-t
   }).join("");
 
   const transformerMarkup = diagram.transformers.map((transformer, index) => transformerSymbol(transformer, index, diagram.transformers.length, buses, escapeHtml)).join("");
+  const ringMarkup = (diagram.rings || []).map((ring) => ringSymbol(ring, buses, escapeHtml, linkTarget)).join("");
   const generators = diagram.generators || [];
   const shunts = diagram.shunts || [];
   const converters = diagram.converters || [];
@@ -162,7 +200,7 @@ export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-t
   return `<section class="terminal-diagram-block" aria-label="${escapeHtml(diagram.label)}">
     <div class="terminal-diagram-scroll">
       <svg class="terminal-diagram" viewBox="0 0 1120 ${height}" role="img" aria-label="${escapeHtml(diagram.label)}">
-        ${busMarkup}${circuitMarkup}${transformerMarkup}${converterMarkup}${generatorMarkup}${shuntMarkup}
+        ${busMarkup}${ringMarkup}${circuitMarkup}${transformerMarkup}${converterMarkup}${generatorMarkup}${shuntMarkup}
       </svg>
     </div>
     <p class="terminal-diagram-caption">${escapeHtml(diagram.label.toUpperCase())}</p>

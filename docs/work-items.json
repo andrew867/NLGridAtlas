@@ -550,6 +550,18 @@
       "notes": "The 2014 facility review, physical PDF pp. 54 to 56, establishes the split B1/B2 230 kV bus, its SF6 tie, separate T1 and T2 13.8 kV sections, and normally open breaker 52-3. The 2010 report records the neutral-grounding-resistor project cancelled with $0 actual expenditure. Later records separate completed bushing and TL237 protection work from relay work awaiting Braya schedule confirmation, forecast fire-protection work, and proposed reclosing-controller replacement."
     },
     {
+      "id": "ISL-021",
+      "title": "Reconstruct the filed Stony Brook split bus and ring section",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Use the filed 2016 operating diagram to replace the connection sketch with the B2 and B1 bus sections, normally closed B1B2 disconnect, B1 ring section, transformer positions, breaker identifiers, and five documented 230 kV circuits.",
+      "dependencies": ["ISL-003", "SRC-001"],
+      "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "src/styles.css", "tests/terminal-diagram.test.js", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "The 2016 risk and reward review, physical PDF pp. 34 and 42, establishes T2 on B2, T1 on B1, normally closed disconnect B1B2, line breakers B2L04 and B1L32, and the B1L31, L05L31, L05L35 and B1L35 ring section serving TL231, TL205 and TL235. The proposed dedicated transformer breakers remain excluded from the installed arrangement because the same study did not recommend the additions."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

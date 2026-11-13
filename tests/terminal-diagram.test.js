@@ -56,6 +56,24 @@ test("Come By Chance renders four filed capacitor banks", () => {
   assert.match(html, /data-hydro-terminal-record="WAV"/);
 });
 
+test("Stony Brook renders the filed split bus and B1 ring section", () => {
+  const stonyBrook = islandTerminalRecords.find((record) => record.code === "STB");
+  assert.ok(stonyBrook);
+  assert.equal(stonyBrook.diagram.buses[0].tie.label, "B1B2 N.C.");
+  assert.deepEqual(stonyBrook.diagram.buses[0].segments.map(({ label }) => label), ["B2", "B1"]);
+  assert.deepEqual(stonyBrook.diagram.rings[0].breakers.map(({ label }) => label), ["B1L31", "L05L31", "L05L35", "B1L35"]);
+  assert.deepEqual(stonyBrook.diagram.rings[0].circuits.map(({ label }) => label), ["TL231", "TL205", "TL235"]);
+  assert.ok(stonyBrook.sources.some((source) => source.sourceId === "nlh-terminal-risk-2017" && source.pages.includes("42")));
+  const html = renderTerminalDiagram(stonyBrook.diagram, escapeHtml);
+  assert.match(html, /class="terminal-ring voltage-230"/);
+  assert.match(html, />B1B2 N\.C\.</);
+  assert.match(html, />B1L31</);
+  assert.match(html, />L05L31</);
+  assert.match(html, />L05L35</);
+  assert.match(html, />B1L35</);
+  assert.match(html, /data-hydro-terminal-record="GFC"/);
+});
+
 test("Bay d'Espoir separates the individual unit terminals from the Station 2 buses", () => {
   const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
   assert.equal(bayDEspoir.diagram.buses[1].kind, "terminals");

@@ -1330,6 +1330,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
   },
   {
+    id: "nlh-terminal-risk-2017",
+    year: 2017,
+    organization: "NL Hydro",
+    title: "Updated Integrated Action Plan, Risk and Reward Review of 230 kV Terminal Stations",
+    topics: ["Stony Brook", "230 kV", "ring bus", "B1B2", "B1L31", "B1L35", "TL204", "TL205", "TL231", "TL232", "TL235", "transformer protection"],
+    pages: "physical PDF pp. 9 to 13, 34, 40 and 42",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/From%20NLH%20-%20Updated%20Integrated%20Action%20Plan%20-%20Status%20Update%20-%202017-03-03.PDF"
+  },
+  {
     id: "nlh-transmission-loads-2015",
     year: 2015,
     organization: "NL Hydro",
@@ -5822,14 +5832,41 @@ export const islandTerminalRecords = [
     code: "STB",
     name: "Stony Brook Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report"], ["230 kV circuits", "TL231 and TL204 to Bay d'Espoir; TL205 and TL232 to Buchans"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"]],
+    facts: [["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report and the 2016 operating diagram"], ["2016 split-bus arrangement", "TL204 enters bus B2 through B2L04; TL232 enters bus B1 through B1L32; normally closed disconnect B1B2 connects the bus sections"], ["2016 ring section", "TL231, TL205 and TL235 connect through ring breakers B1L31, L05L31, L05L35 and B1L35"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2016 transformer protection study", "T1 and T2 had no dedicated 230 kV breaker. The study did not recommend the proposed breaker additions."], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"]],
     diagram: {
-      label: "2003 transformer ratings / 2018 routes",
-      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }],
-      transformers: [{ label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2" }, { label: "T2", rating: "75/100/125 MVA", from: "b1", to: "b2" }],
-      circuits: [{ label: "TL231", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL204", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL205", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL232", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL222", destination: "South Brook", bus: "b2" }, { label: "TL210", destination: "Cobb's Pond", bus: "b2" }]
+      label: "2016 filed operating arrangement / 2018 138 kV routes",
+      buses: [
+        { id: "b1", label: "split bus", voltage: "230 kV", y: 330, segments: [{ x: 220, width: 260, label: "B2" }, { x: 685, width: 610, label: "B1" }], tie: { fromX: 350, toX: 380, label: "B1B2 N.C." } },
+        { id: "b2", label: "bus", voltage: "138 kV", y: 540 }
+      ],
+      transformers: [{ label: "T2", rating: "75/100/125 MVA", from: "b1", to: "b2", x: 220 }, { label: "T1", rating: "75/100/125 MVA", from: "b1", to: "b2", x: 480 }],
+      circuits: [
+        { label: "TL204", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE", x: 150, direction: "up" },
+        { label: "TL232", destination: "Buchans", bus: "b1", destinationCode: "BUC", x: 430, direction: "up" },
+        { label: "TL222", destination: "South Brook", bus: "b2", x: 370 },
+        { label: "TL210", destination: "Cobb's Pond", bus: "b2", x: 760 }
+      ],
+      rings: [{
+        label: "B1 230 kV ring section",
+        voltage: "230 kV",
+        bus: "b1",
+        y: 170,
+        fromX: 620,
+        toX: 990,
+        breakers: [
+          { x: 620, y: 250, orientation: "vertical", label: "B1L31" },
+          { x: 760, orientation: "horizontal", label: "L05L31" },
+          { x: 875, orientation: "horizontal", label: "L05L35" },
+          { x: 990, y: 250, orientation: "vertical", label: "B1L35" }
+        ],
+        circuits: [
+          { label: "TL231", destination: "Bay d'Espoir", destinationCode: "BDE", x: 620 },
+          { label: "TL205", destination: "Buchans", destinationCode: "BUC", x: 820 },
+          { label: "TL235", destination: "Grand Falls converter", destinationCode: "GFC", x: 990 }
+        ]
+      }]
     },
-    sources: [sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
+    sources: [sourceRef("nlh-terminal-risk-2017", "physical PDF pp. 34 and 42"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-planning-2023", "physical PDF p. 40"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("asset-2023", "physical PDF pp. 33 to 34")]
   },
   {
     code: "BDE",

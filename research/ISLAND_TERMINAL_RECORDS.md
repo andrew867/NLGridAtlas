@@ -7,7 +7,7 @@ The terminal browser uses dated connection diagrams. It does not present a break
 | Record | Diagram basis | Equipment detail added |
 | --- | --- | --- |
 | Sunnyside | 2014 replacement filing and Liberty's December 2014 status | T1 and T4 maximum ratings, former Holyrood T8 in the Sunnyside T1 position, four 230 kV lines, four 138 kV lines, dedicated T1 high-side breaker |
-| Stony Brook | 2003 system report, 2018 route table and 2023 planning assessment | T1 and T2 at 75/100/125 MVA, four 230 kV lines, two 138 kV lines |
+| Stony Brook | 2016 filed operating diagram, 2015 design history, 2018 route table and 2023 planning assessment | split B2/B1 bus with normally closed B1B2 disconnect; B1 ring section and its four breaker identifiers; T1 and T2 at 75/100/125 MVA; five 230 kV lines, including TL235; two 138 kV lines |
 | Bay d'Espoir | 1998 station 1 one-line, 2013 station 2 one-line, 2018 route table, 2023 GSU filing, 2025 GSU update, 2025 Unit 7 inspection, 2025 Unit 8 basis of design and 2026 Board orders | Station 1 units G1 to G6 and GSUs T1 to T6; station 2 G7, T7, T10, T11 and T12; separate 13.8 kV unit terminals; 69 kV bus B13; 25 kV bus B14; TL220, L1 and L2; GSU manufacture years; T5S and T6S repair and spare roles; proposed Unit 8 design and early-work status; seven filed transmission routes |
 | Buchans | 2018 T1 replacement filing and 2018 route table | Former T1 installed at Massey Drive in 1970 and moved to Buchans in 1998; planned 2019 replacement with the Hardwoods spare; four 230 kV lines, two 66 kV lines |
 | Deer Lake | 2003 system report, 2010 capital filing and 2018 route table | 45/60/75 MVA 230/138 kV transformation, 25/33.3/41.7 MVA 138/66 kV transformation, later 41.6 MVA maximum-rating record, three filed routes |
@@ -33,7 +33,7 @@ The terminal browser uses dated connection diagrams. It does not present a break
 
 ## Open drawing targets
 
-- Current breaker-level one-lines for Stony Brook, Buchans, Deer Lake, Bottom Brook, Massey Drive, and Stephenville.
+- Current breaker-level one-lines for Buchans, Deer Lake, Bottom Brook, Massey Drive, and Stephenville.
 - Later complete station drawings for Bay d'Espoir and Come By Chance. The atlas uses the filed 1998 and 2013 Bay d'Espoir drawings and the filed 2000 Come By Chance drawing until later records are found.
 - A post-2024 Bottom Brook one-line showing the completed bus foundations, disconnect, grounding, and protection work from the partially completed Stephenville-retirement project.
 - A current as-built Grand Falls and Bishop's Falls drawing. The published station view uses the 2017 assessed arrangement and the 2026 planning ratings.
