@@ -295,7 +295,9 @@ test("new station and corridor records retain primary source locators", () => {
     ["np-2024-capital", "PDF pp. 378 to 389"],
     ["np-2023-long-pond", "PDF pp. 109 to 111"],
     ["nlh-2014-wav-t5", "PDF pp. 12, 17, 19 to 20"],
-    ["nlh-2026-wav-sop", "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146"],
+    ["nlh-2026-wav-sop", "physical PDF pp. 27, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146"],
+    ["nlh-bde-wav-2012", "physical PDF pp. 3 to 4 and 9 to 14"],
+    ["nlh-tl267-commissioning-2017", "physical PDF p. 129"],
     ["np-2027-loop-study", "physical PDF pp. 183, 188 to 195, 199 to 200 and 223"],
     ["np-2027-transformers", "physical PDF pp. 545 to 553 and 560"]
   ]);

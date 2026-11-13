@@ -160,6 +160,9 @@ function engineeringRecordSource(record) {
 }
 
 function engineeringRecord(record) {
+  const state = record.status
+    ? `<span class="evidence-state ${escapeHtml(record.status)}">${escapeHtml(record.status.toUpperCase())}</span>`
+    : "";
   const facts = record.facts?.length
     ? `<ul>${record.facts.map((fact) => `<li>${escapeHtml(fact)}</li>`).join("")}</ul>`
     : "";
@@ -169,7 +172,7 @@ function engineeringRecord(record) {
       </div>`
     : "";
   return `<details class="island-engineering-record">
-    <summary><strong>${escapeHtml(record.year)}</strong><span>${escapeHtml(record.label)}</span></summary>
+    <summary><strong>${escapeHtml(record.year)}</strong><span>${escapeHtml(record.label)}</span>${state}</summary>
     ${facts}
     ${ratings}
     <a class="evidence-link" href="${escapeHtml(engineeringRecordSource(record))}" target="_blank" rel="noreferrer">Physical PDF ${record.source.physical_pdf_pages.includes(" to ") || record.source.physical_pdf_pages.includes(" and ") ? "pp." : "p."} ${escapeHtml(record.source.physical_pdf_pages)}</a>

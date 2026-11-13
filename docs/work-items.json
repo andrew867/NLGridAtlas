@@ -370,6 +370,18 @@
       "notes": "The interactive circuit panel now includes the 1996 construction records for TL201, TL217, TL218, and TL236; the 2014 seasonal MVA ratings for TL201, TL208, TL217, TL218, TL236, TL242, TL265, TL266, and TL268; 2014 conductor records for TL201, TL217, TL242, and TL266; and the March 2024 TL201 dynamic line rating installation. The 1996 routes remain explicitly dated before the Soldiers Pond line splits."
     },
     {
+      "id": "ISL-008",
+      "title": "Add dated Bay d'Espoir to Western Avalon circuit engineering records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Record the construction history, seasonal ratings, completed upgrades, TL267 commissioning, measured east and west peak-load series, and proposed dynamic line rating work for the Bay d'Espoir to Western Avalon 230 kV corridor.",
+      "dependencies": ["ISL-001", "ISL-007"],
+      "completion_evidence": ["research/BDE_WAV_230KV_LINE_ENGINEERING.md", "research/derived/island-ac-topology-2018.json", "index.html", "src/island-backbone.js", "tests/island-topology.test.js"],
+      "blocker": null,
+      "notes": "The circuit panel now separates the 1996 construction record, the 2012 upgrade history, the 2014 seasonal planning ratings, TL267's 2017 commissioning, and the 2026 proposed dynamic line rating work. The load section adds the filed 2006 to 2010 EMS peak series without treating the values as circuit ratings."
+    },
+    {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,

@@ -268,8 +268,9 @@ button, input { font: inherit; }
 .island-detail-voltage.voltage-66 { color: var(--water); }
 .island-engineering-records { margin-top: 1.35rem; border-top: 1px solid var(--ink); padding-top: 1rem; }
 .island-engineering-record { border-bottom: 1px solid var(--rule); }
-.island-engineering-record summary { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .75rem; align-items: baseline; padding: .75rem 0; cursor: pointer; font: 400 .68rem/1.35 "IBM Plex Mono", monospace; }
+.island-engineering-record summary { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: .75rem; align-items: baseline; padding: .75rem 0; cursor: pointer; font: 400 .68rem/1.35 "IBM Plex Mono", monospace; }
 .island-engineering-record summary strong { color: var(--water); }
+.island-engineering-record summary .evidence-state { padding: .2rem .35rem; font-size: .58rem; }
 .island-engineering-record ul { margin: 0 0 .75rem; padding-left: 1.15rem; font-size: .86rem; line-height: 1.45; }
 .island-engineering-record li + li { margin-top: .3rem; }
 .island-rating-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: .75rem; border-top: 1px solid var(--rule); }

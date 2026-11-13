@@ -57,6 +57,28 @@ test("east Avalon circuit details preserve dated engineering records", () => {
   assert.match(byCircuit.TL218.engineering_records[0].label, /Pre-Soldiers Pond/);
 });
 
+test("Bay d'Espoir to Western Avalon circuits retain dated ratings and upgrade states", () => {
+  const byCircuit = Object.fromEntries(topology.lines.map((line) => [line.circuit, line]));
+  assert.deepEqual(byCircuit.TL202.engineering_records[1].ambient_ratings_mva, {
+    0: 369.5,
+    15: 297.7,
+    25: 236.9,
+    30: 199.3
+  });
+  assert.equal(byCircuit.TL202.engineering_records[2].status, "proposed");
+  assert.match(byCircuit.TL203.engineering_records[0].facts.join(" "), /562\.5 kcmil.*636 kcmil/);
+  assert.deepEqual(byCircuit.TL203.engineering_records[2].ambient_ratings_mva, {
+    0: 347.0,
+    15: 307.8,
+    25: 278.0,
+    30: 261.7
+  });
+  assert.match(byCircuit.TL207.engineering_records[1].facts.join(" "), /1968.*2002.*three-inch ice load/);
+  assert.match(byCircuit.TL237.engineering_records[2].facts[0], /80 °C/);
+  assert.equal(byCircuit.TL267.engineering_records[0].status, "proposed");
+  assert.match(byCircuit.TL267.engineering_records[1].facts[0], /Commissioned.*2017|Commissioned as a 230 kV line/);
+});
+
 test("69 kV circuit assignment remains an explicit evidence gap", () => {
   assert.equal(topology.lines.some((line) => line.voltage_kv === 69), false);
   assert.match(topology.open_gaps.join(" "), /69 kV asset-class designations/);

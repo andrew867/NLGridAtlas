@@ -1194,18 +1194,38 @@ export const sources = [
     year: 2014,
     organization: "NL Hydro",
     title: "Upgrade Transmission Line Corridor, Bay d'Espoir to Western Avalon",
-    topics: ["Soldiers Pond", "Labrador-Island Link", "HVDC", "synchronous condenser", "converter station", "transmission conductor", "seasonal MVA ratings"],
-    pages: "physical PDF pp. 30, 37 to 38, 44 to 45 and 95",
+    topics: ["Soldiers Pond", "Labrador-Island Link", "HVDC", "synchronous condenser", "converter station", "transmission conductor", "seasonal MVA ratings", "TL202", "TL203", "TL206", "TL207", "TL237", "TL267"],
+    pages: "physical PDF pp. 30, 37 to 38, 44 to 45, 94 to 96 and 109 to 110",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/NLHCBSUPP2014/TransmissionLine/Application/Application-2014-04-30.pdf"
+  },
+  {
+    id: "nlh-bde-wav-2012",
+    year: 2012,
+    organization: "NL Hydro",
+    title: "Upgrade Transmission Line Corridor, Bay d'Espoir to Western Avalon",
+    topics: ["Bay d'Espoir", "Western Avalon", "TL202", "TL203", "TL206", "TL207", "TL237", "actual peak load", "transmission upgrade history"],
+    pages: "physical PDF pp. 3 to 4 and 9 to 14",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012Application-VolumeII-Report10.pdf"
+  },
+  {
+    id: "nlh-tl267-commissioning-2017",
+    year: 2018,
+    organization: "NL Hydro",
+    title: "Deferral of 2015, 2016 and 2017 Supply Costs, Revision 2",
+    topics: ["TL267", "Bay d'Espoir", "Western Avalon", "230 kV", "commissioning", "rate base"],
+    pages: "physical PDF p. 129",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/applicationdefer20152016/application/From%20NLH%20-%20Application%20for%20Deferral%20of%202015%2C%202016%20and%202017%20Supply%20Costs%20-%20Revision%202%20-%202018-04-25.PDF"
   },
   {
     id: "nlh-1996-avalon-line-reliability",
     year: 1996,
     organization: "NL Hydro",
     title: "Reliability Study of Transmission Lines on Avalon and Connaigre Peninsulas",
-    topics: ["TL201", "TL217", "TL218", "TL236", "TL220", "transmission conductor", "line construction", "ice loading"],
-    pages: "physical PDF pp. 48 and 53 to 55",
+    topics: ["TL201", "TL203", "TL207", "TL217", "TL218", "TL220", "TL236", "TL237", "transmission conductor", "line construction", "ice loading"],
+    pages: "physical PDF pp. 48 and 52 to 55",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit85.pdf"
   },
@@ -3844,8 +3864,8 @@ export const sources = [
     year: 2026,
     organization: "NL Hydro / Hatch",
     title: "Western Avalon to Soldiers Pond Transmission Feasibility Study",
-    topics: ["Western Avalon", "Soldiers Pond", "230 kV", "Grackle ACSR", "ampacity", "OPGW"],
-    pages: "PDF pp. 9, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146",
+    topics: ["Western Avalon", "Soldiers Pond", "230 kV", "Grackle ACSR", "ampacity", "OPGW", "dynamic line rating", "TL201", "TL202", "TL203", "TL206"],
+    pages: "physical PDF pp. 27, 30 to 33, 41 to 43, 57, 60, 62, 145 to 146",
     status: "proposed",
     url: "http://www.pub.nf.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Transmission%20Feasibility%20Study%20-%202026-04-17.PDF"
   },
@@ -4263,6 +4283,12 @@ export const staticClaims = [
     scope: "Broad Cove T1 nameplate rating and 2014 observed peak",
     status: "verified",
     sources: [{ sourceId: "np-2014-improvements", pages: "PDF p. 14" }]
+  },
+  {
+    id: "bde-east-west-peak-loads",
+    scope: "Bay d'Espoir east and west corridor loads at the 2006 to 2010 system peaks",
+    status: "verified",
+    sources: [{ sourceId: "nlh-bde-wav-2012", pages: "physical PDF p. 4" }]
   },
   {
     id: "island-2024-forecast-accuracy",
