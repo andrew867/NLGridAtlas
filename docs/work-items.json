@@ -610,6 +610,18 @@
       "notes": "The 2018 operating drawing in the 2021 Capital Budget Application, physical PDF p. 511, establishes circuit switcher B1L09, direct-connected T3, and the retained gas-turbine equipment. The proposed-removal drawing on physical PDF p. 521 identifies the existing 66 kV ring breakers L405T4, B2T3, and B2L405. The 2017 terminal-risk review, physical PDF p. 32, confirms that T3 lacked an individual 230 kV breaker. IC-NLH-101, physical PDF pp. 2 to 3, records L09L38, its disconnects, and TL238 as removed from service after the former mill closed."
     },
     {
+      "id": "ISL-026",
+      "title": "Reconstruct the Bottom Brook terminal stations",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Separate Terminal Station 2 from Terminal Station 1, then replace the combined connection sketch with the filed four-diameter, 12-breaker 230 kV breaker-and-one-half yard and the installed 230/138/66 kV transformer and line-breaker arrangement.",
+      "dependencies": ["ISL-003", "SRC-001"],
+      "completion_evidence": ["src/data.js", "src/terminal-diagram.js", "src/main.js", "tests/terminal-diagram.test.js", "tests/data.test.js", "research/ISLAND_TERMINAL_RECORDS.md"],
+      "blocker": null,
+      "notes": "CA-NLH-036, physical PDF p. 2, states that the rebuilt Terminal Station 2 uses breaker-and-one-half configuration, with TL209, TL211, TL233, TL269, T1, T3, and both converter connections on separate legs. NP-NLH-001, physical PDF pp. 3 and 5, identifies the twelve installed breaker positions, the eight circuit and transformer taps, the B2/B3 normally open 138 kV tie, B2L14, B3L50, and B6L400. Proposed T4 equipment is omitted from the installed diagrams."
+    },
+    {
       "id": "NPREG-001",
       "title": "Add the December 2022 Newfoundland Power transmission asset register",
       "phase": 2,

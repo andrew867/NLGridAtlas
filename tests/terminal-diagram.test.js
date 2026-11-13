@@ -160,6 +160,25 @@ test("Stephenville renders the filed circuit switcher and three-breaker 66 kV ri
   assert.match(html, /y2="365"/);
 });
 
+test("Bottom Brook renders the four-rung breaker-and-one-half yard and separate Station 1", () => {
+  const bottomBrook = islandTerminalRecords.find((record) => record.code === "BBK");
+  assert.ok(bottomBrook);
+  assert.equal(bottomBrook.diagram.diameters.length, 4);
+  assert.deepEqual(bottomBrook.diagram.diameters.flatMap(({ breakers }) => breakers.map(({ label }) => label)), ["B5B54", "B44B54", "B4B44", "B5B53", "B43B53", "B4B43", "B5B52", "B42B52", "B4B42", "B5B51", "B41B51", "B4B41"]);
+  assert.deepEqual(bottomBrook.diagram.diameters.flatMap(({ connections }) => connections.map(({ label }) => label)), ["TL211", "T1", "TL233", "T3", "TL269", "Line 2", "Line 1", "TL209"]);
+  assert.equal(bottomBrook.additionalDiagrams.length, 1);
+  assert.deepEqual(bottomBrook.additionalDiagrams[0].circuits.map(({ label, breaker }) => [label, breaker]), [["TL214", "B2L14"], ["TL250", "B3L50"], ["400L", "B6L400"]]);
+  const ts2 = renderTerminalDiagram(bottomBrook.diagram, escapeHtml);
+  const ts1 = renderTerminalDiagram(bottomBrook.additionalDiagrams[0], escapeHtml);
+  assert.match(ts2, /class="terminal-diameter/);
+  assert.match(ts2, />B41B51</);
+  assert.match(ts2, /data-hydro-terminal-record="STV"/);
+  assert.match(ts1, />B2B3 N\.O\.</);
+  assert.match(ts1, />B2L14</);
+  assert.match(ts1, />B3L50</);
+  assert.match(ts1, />B6L400</);
+});
+
 test("Bay d'Espoir separates the individual unit terminals from the Station 2 buses", () => {
   const bayDEspoir = islandTerminalRecords.find((record) => record.code === "BDE");
   assert.equal(bayDEspoir.diagram.buses[1].kind, "terminals");

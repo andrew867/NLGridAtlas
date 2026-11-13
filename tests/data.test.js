@@ -2231,8 +2231,9 @@ test("Bottom Brook separates the commissioned station from the cancelled T4 scop
   assert.ok(bottomBrook);
   assert.deepEqual(bottomBrook.connectedCircuits.map(({ circuit }) => circuit), ["TL209", "TL211", "TL233", "TL269", "Line 1", "Line 2", "TL214", "TL250", "400L"]);
   assert.deepEqual(bottomBrook.feederRegister, []);
-  assert.deepEqual(bottomBrook.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "138 kV", "66 kV"]);
-  assert.deepEqual(bottomBrook.diagram.transformers.map(({ label, rating }) => [label, rating]), [["T1", "25/33.3/41.7 MVA"], ["T3", "25/33.3/41.7 MVA"], ["T2", "15/20/25 MVA"]]);
+  assert.deepEqual(bottomBrook.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "230 kV"]);
+  assert.deepEqual(bottomBrook.additionalDiagrams[0].buses.map(({ voltage }) => voltage), ["230 kV", "138 kV", "66 kV"]);
+  assert.deepEqual(bottomBrook.additionalDiagrams[0].transformers.map(({ label, rating }) => [label, rating]), [["T1", "25/33.3/41.7 MVA"], ["T3", "25/33.3/41.7 MVA"], ["T2", "15/20/25 MVA"]]);
   assert.deepEqual(bottomBrook.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 3", "physical PDF p. 5"]);
 
   const commissionedFacts = bottomBrook.engineeringRecord.facts.flat().join(" ");
@@ -2250,7 +2251,9 @@ test("Bottom Brook separates the commissioned station from the cancelled T4 scop
   assert.match(historyFacts, /Bottom Brook Terminal Station 1, built 1968/);
 
   const terminal = islandTerminalRecords.find((station) => station.code === "BBK");
-  assert.deepEqual(terminal.diagram.circuits.map(({ label }) => label), ["TL211", "TL233", "TL269", "Line 1", "Line 2", "TL209", "TL214", "TL250", "400L"]);
+  assert.deepEqual(terminal.diagram.diameters.flatMap(({ connections }) => connections.map(({ label }) => label)), ["TL211", "T1", "TL233", "T3", "TL269", "Line 2", "Line 1", "TL209"]);
+  assert.deepEqual(terminal.additionalDiagrams[0].circuits.map(({ label }) => label), ["TL214", "TL250", "400L"]);
+  assert.ok(terminal.sources.some((source) => source.sourceId === "nlh-bbk-configuration-2014" && source.pages.includes("2")));
 });
 
 test("Wheelers remains a switching point between 400L and the 401L tap", () => {
@@ -3406,7 +3409,7 @@ test("Doyles joins the Hydro terminal and Newfoundland Power distribution record
   assert.match(doyles.historyRecords[5].facts.flat().join(" "), /remote terminal unit replaced/);
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "DOY-T2").forecast_2026_mva, 5.13);
   assert.equal(grandBay.connectedCircuits[0].from_code, "DOY");
-  assert.equal(bottomBrook.diagram.circuits.find((record) => record.label === "TL214").destinationCode, "DOY");
+  assert.equal(bottomBrook.additionalDiagrams[0].circuits.find((record) => record.label === "TL214").destinationCode, "DOY");
 });
 
 test("the 403L records preserve the main line and Robinsons radial tap", () => {

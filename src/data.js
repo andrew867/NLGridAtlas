@@ -944,7 +944,7 @@ export const sources = [
     year: 2019,
     organization: "NL Hydro",
     title: "NP-NLH-001, Bottom Brook T4 Planning Diagrams",
-    topics: ["Bottom Brook", "Terminal Station 1", "Terminal Station 2", "T1", "T2", "T3", "T4", "230 kV ring bus", "400L", "Maritime Link"],
+    topics: ["Bottom Brook", "Terminal Station 1", "Terminal Station 2", "T1", "T2", "T3", "T4", "230 kV breaker-and-one-half", "400L", "Maritime Link"],
     pages: "physical PDF pp. 1 to 5",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2020/NLH2020Capital/rfis/NP-NLH-001.PDF"
@@ -958,6 +958,16 @@ export const sources = [
     pages: "physical PDF pp. 27, 30 to 31, and 93 to 94",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/reports/From%20NLH%20-%202018%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202018-04-11.PDF"
+  },
+  {
+    id: "nlh-bbk-configuration-2014",
+    year: 2014,
+    organization: "NL Hydro",
+    title: "CA-NLH-036, 230 kV and 138 kV Bus Configuration Criteria",
+    topics: ["Bottom Brook", "Terminal Station 2", "breaker-and-one-half", "TL209", "TL211", "TL233", "TL269", "Maritime Link", "T1", "T3"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/CA-NLH-036.pdf"
   },
   {
     id: "nlh-2026-iic-nlh-012",
@@ -6273,7 +6283,7 @@ export const islandTerminalRecords = [
     code: "BBK",
     name: "Bottom Brook Terminal Station",
     status: "verified",
-    facts: [["T1 and T3", "230/138-6.9 kV, 25/33.3/41.7 MVA each"], ["T2", "138/66 kV, 15/20/25 MVA"], ["230 kV circuits", "TL209, TL211, TL233, TL269, and two Maritime Link converter connections"], ["138 kV circuits", "TL214 to Doyles; TL250 to Grandy Brook"], ["66 kV circuit", "400L to Wheelers"], ["T4", "Proposed 230/66 kV addition; most remaining project scope was cancelled in 2024"]],
+    facts: [["Terminal Station 2", "Four-rung, 12-breaker, breaker-and-one-half 230 kV yard"], ["T1 and T3", "230/138-6.9 kV, 25/33.3/41.7 MVA each"], ["T2", "138/66 kV, 15/20/25 MVA"], ["230 kV pairings", "TL211 with T1; TL233 with T3; TL269 with converter Line 2; converter Line 1 with TL209"], ["138 kV buses", "B2 and B3 joined by normally open disconnect B2B3"], ["230 kV circuits", "TL209, TL211, TL233, TL269, and two Maritime Link converter connections"], ["138 kV circuits", "TL214 through B2L14 to Doyles; TL250 through B3L50 to Grandy Brook"], ["66 kV circuit", "400L through B6L400 to Wheelers"], ["T4", "Proposed 230/66 kV addition; most remaining project scope was cancelled in 2024"]],
     voltage: "230/138/66 kV",
     circuitRegisterLabel: "2018 FILED ROUTES / 2020 STATION DRAWINGS",
     circuitSources: [
@@ -6296,11 +6306,35 @@ export const islandTerminalRecords = [
     mapPages: [],
     eventLoads: [],
     diagram: {
-      label: "2018 commissioned terminal arrangement / 2026 transformer record",
-      buses: [{ id: "b1", label: "230 kV bus", voltage: "230 kV" }, { id: "b2", label: "138 kV bus", voltage: "138 kV" }, { id: "b3", label: "66 kV bus", voltage: "66 kV" }],
-      transformers: [{ label: "T1", rating: "25/33.3/41.7 MVA", from: "b1", to: "b2" }, { label: "T3", rating: "25/33.3/41.7 MVA", from: "b1", to: "b2" }, { label: "T2", rating: "15/20/25 MVA", from: "b2", to: "b3" }],
-      circuits: [{ label: "TL211", destination: "Massey Drive", bus: "b1", destinationCode: "MAS" }, { label: "TL233", destination: "Buchans", bus: "b1", destinationCode: "BUC" }, { label: "TL269", destination: "Granite Canal", bus: "b1", destinationCode: "GRC" }, { label: "Line 1", destination: "Bottom Brook Converter", bus: "b1" }, { label: "Line 2", destination: "Bottom Brook Converter", bus: "b1" }, { label: "TL209", destination: "Stephenville", bus: "b1", destinationCode: "STV" }, { label: "TL214", destination: "Doyles", bus: "b2", destinationCode: "DOY" }, { label: "TL250", destination: "Grandy Brook", bus: "b2", destinationCode: "GRB" }, { label: "400L", destination: "Wheelers", bus: "b3", destinationCode: "WHE" }]
+      label: "2018 Terminal Station 2 / commissioned four-rung breaker-and-one-half yard / proposed T4 omitted",
+      buses: [{ id: "b5", label: "B5", voltage: "230 kV", y: 165 }, { id: "b4", label: "B4", voltage: "230 kV", y: 585 }],
+      transformers: [],
+      circuits: [],
+      diameters: [
+        { from: "b5", to: "b4", voltage: "230 kV", label: "B54/B44 diameter", x: 180, breakers: [{ y: 230, label: "B5B54" }, { y: 375, label: "B44B54" }, { y: 520, label: "B4B44" }], connections: [{ y: 300, side: "left", label: "TL211", destination: "Massey Drive", destinationCode: "MAS" }, { y: 450, side: "left", label: "T1", destination: "Terminal Station 1", link: false }] },
+        { from: "b5", to: "b4", voltage: "230 kV", label: "B53/B43 diameter", x: 435, breakers: [{ y: 230, label: "B5B53" }, { y: 375, label: "B43B53" }, { y: 520, label: "B4B43" }], connections: [{ y: 300, side: "right", label: "TL233", destination: "Buchans", destinationCode: "BUC" }, { y: 450, side: "right", label: "T3", destination: "Terminal Station 1", link: false }] },
+        { from: "b5", to: "b4", voltage: "230 kV", label: "B52/B42 diameter", x: 685, breakers: [{ y: 230, label: "B5B52" }, { y: 375, label: "B42B52" }, { y: 520, label: "B4B42" }], connections: [{ y: 300, side: "left", label: "TL269", destination: "Granite Canal", destinationCode: "GRC" }, { y: 450, side: "right", label: "Line 2", destination: "BBK converter", link: false }] },
+        { from: "b5", to: "b4", voltage: "230 kV", label: "B51/B41 diameter", x: 940, breakers: [{ y: 230, label: "B5B51" }, { y: 375, label: "B41B51" }, { y: 520, label: "B4B41" }], connections: [{ y: 300, side: "left", label: "Line 1", destination: "BBK converter", link: false }, { y: 450, side: "right", label: "TL209", destination: "Stephenville", destinationCode: "STV" }] }
+      ]
     },
+    additionalDiagrams: [{
+      label: "2018 Terminal Station 1 / installed transformer arrangement / proposed T4 omitted",
+      buses: [
+        { id: "b1", label: "connections to Terminal Station 2", voltage: "230 kV", y: 165 },
+        { id: "b2", label: "split buses B2 / B3", voltage: "138 kV", y: 470, hideLabel: true, segments: [{ x: 335, width: 430, label: "B2 / 138 kV", labelOffset: -18 }, { x: 805, width: 390, label: "B3 / 138 kV", labelOffset: -18 }], ties: [{ fromX: 550, toX: 610, label: "B2B3 N.O.", labelOffset: -31, open: true }] },
+        { id: "b3", label: "B6", voltage: "66 kV", y: 700 }
+      ],
+      transformers: [
+        { label: "T1", rating: "25/33.3/41.7 MVA", from: "b1", to: "b2", x: 330 },
+        { label: "T3", rating: "25/33.3/41.7 MVA", from: "b1", to: "b2", x: 800 },
+        { label: "T2", rating: "15/20/25 MVA", from: "b2", to: "b3", x: 540 }
+      ],
+      circuits: [
+        { label: "TL214", destination: "Doyles", bus: "b2", destinationCode: "DOY", breaker: "B2L14", x: 170 },
+        { label: "TL250", destination: "Grandy Brook", bus: "b2", destinationCode: "GRB", breaker: "B3L50", x: 950 },
+        { label: "400L", destination: "Wheelers", bus: "b3", destinationCode: "WHE", breaker: "B6L400", x: 800 }
+      ]
+    }],
     engineeringRecord: {
       date: "2017 COMMISSIONING",
       title: "Terminal Station 2 and Maritime Link interconnection",
@@ -6369,14 +6403,14 @@ export const islandTerminalRecords = [
         pages: "physical PDF p. 3"
       },
       {
-        title: "2019 Terminal Station 2 ring-bus drawing with proposed T4 bay",
+        title: "2019 Terminal Station 2 breaker-and-one-half drawing with proposed T4 bay",
         image: "./reference-maps/bottom-brook-2020-ts2-proposed.png",
-        alt: "Bottom Brook Terminal Station 2 ring-bus drawing showing TL209, TL211, TL233, TL269, converter Lines 1 and 2, and the proposed T4 bay",
+        alt: "Bottom Brook Terminal Station 2 breaker-and-one-half drawing showing TL209, TL211, TL233, TL269, converter Lines 1 and 2, and the proposed T4 bay",
         sourceId: "nlh-bbk-t4-2020",
         pages: "physical PDF p. 5"
       }
     ],
-    sources: [sourceRef("nlh-bbk-ts2-2018", "physical PDF pp. 27, 30, and 93 to 94"), sourceRef("nlh-bbk-planning-2026", "physical PDF pp. 13, 15, and 18"), sourceRef("nlh-bbk-t4-2020", "physical PDF pp. 1 to 5"), sourceRef("nlh-stv-scope-2025", "physical PDF pp. 1 to 2"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
+    sources: [sourceRef("nlh-bbk-ts2-2018", "physical PDF pp. 27, 30, and 93 to 94"), sourceRef("nlh-bbk-configuration-2014", "physical PDF p. 2"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 9"), sourceRef("nlh-bbk-planning-2026", "physical PDF pp. 13, 15, and 18"), sourceRef("nlh-bbk-t4-2020", "physical PDF pp. 3 and 5"), sourceRef("nlh-stv-scope-2025", "physical PDF pp. 1 to 2"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26")]
   },
   {
     code: "GFS",

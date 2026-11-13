@@ -116,6 +116,34 @@ function ringSymbol(ring, buses, escapeHtml, linkTarget) {
   </g>`;
 }
 
+function diameterSymbol(diameter, buses, escapeHtml, linkTarget) {
+  const from = buses.find((candidate) => candidate.id === diameter.from);
+  const to = buses.find((candidate) => candidate.id === diameter.to);
+  if (!from || !to) return "";
+  const topY = Math.min(from.y, to.y);
+  const bottomY = Math.max(from.y, to.y);
+  const breakers = (diameter.breakers || [])
+    .map((breaker) => breakerSymbol({ ...breaker, x: diameter.x, orientation: "vertical" }, escapeHtml))
+    .join("");
+  const connections = (diameter.connections || []).map((connection) => {
+    const right = connection.side === "right";
+    const lineLength = connection.lineLength ?? 62;
+    const endX = diameter.x + (right ? lineLength : -lineLength);
+    const textX = endX + (right ? 8 : -8);
+    const anchor = right ? "start" : "end";
+    const body = `<g class="terminal-diameter-connection">
+      <line x1="${diameter.x}" y1="${connection.y}" x2="${endX}" y2="${connection.y}" />
+      <text class="terminal-circuit-id" x="${textX}" y="${connection.y - 6}" text-anchor="${anchor}">${escapeHtml(connection.label)}</text>
+      <text class="terminal-circuit-destination" x="${textX}" y="${connection.y + 15}" text-anchor="${anchor}">${escapeHtml(connection.destination)}</text>
+    </g>`;
+    return circuitLink(connection, body, escapeHtml, linkTarget);
+  }).join("");
+  return `<g class="terminal-diameter voltage-${escapeHtml(diameter.voltage.replace(/[^0-9]/g, ""))}" role="img" aria-label="${escapeHtml(diameter.label)}">
+    <line x1="${diameter.x}" y1="${topY}" x2="${diameter.x}" y2="${bottomY}" />
+    ${breakers}${connections}
+  </g>`;
+}
+
 function accessorySymbol(accessory, index, count, bus, type, escapeHtml) {
   const fourShuntPositions = [190, 390, 730, 930];
   const x = accessory.x ?? (type === "shunt" && count === 4
@@ -209,6 +237,7 @@ export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-t
 
   const transformerMarkup = diagram.transformers.map((transformer, index) => transformerSymbol(transformer, index, diagram.transformers.length, buses, escapeHtml)).join("");
   const ringMarkup = (diagram.rings || []).map((ring) => ringSymbol(ring, buses, escapeHtml, linkTarget)).join("");
+  const diameterMarkup = (diagram.diameters || []).map((diameter) => diameterSymbol(diameter, buses, escapeHtml, linkTarget)).join("");
   const generators = diagram.generators || [];
   const shunts = diagram.shunts || [];
   const converters = diagram.converters || [];
@@ -219,7 +248,7 @@ export function renderTerminalDiagram(diagram, escapeHtml, linkTarget = "hydro-t
   return `<section class="terminal-diagram-block" aria-label="${escapeHtml(diagram.label)}">
     <div class="terminal-diagram-scroll">
       <svg class="terminal-diagram" viewBox="0 0 1120 ${height}" role="img" aria-label="${escapeHtml(diagram.label)}">
-        ${busMarkup}${ringMarkup}${circuitMarkup}${transformerMarkup}${converterMarkup}${generatorMarkup}${shuntMarkup}
+        ${busMarkup}${ringMarkup}${diameterMarkup}${circuitMarkup}${transformerMarkup}${converterMarkup}${generatorMarkup}${shuntMarkup}
       </svg>
     </div>
     <p class="terminal-diagram-caption">${escapeHtml(diagram.label.toUpperCase())}</p>

@@ -348,9 +348,9 @@ function openStationRecord(code, scroll = true) {
 }
 
 function centerDynamicDiagram(container) {
-  const diagramScroll = container.querySelector(".terminal-diagram-scroll");
-  if (!diagramScroll) return;
-  diagramScroll.scrollLeft = Math.max(0, (diagramScroll.scrollWidth - diagramScroll.clientWidth) / 2);
+  container.querySelectorAll(".terminal-diagram-scroll").forEach((diagramScroll) => {
+    diagramScroll.scrollLeft = Math.max(0, (diagramScroll.scrollWidth - diagramScroll.clientWidth) / 2);
+  });
 }
 
 function renderHydroTerminalTabs() {
@@ -369,12 +369,13 @@ function renderHydroTerminalRecord(code) {
     const source = sourceById.get(reference.sourceId);
     return `<a class="evidence-link stacked-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.title)} / ${escapeHtml(reference.pages)}</a>`;
   }).join("");
+  const diagrams = [record.diagram, ...(record.additionalDiagrams || [])];
   document.querySelector("#hydro-terminal-record").innerHTML = `
     <header class="profile-heading">
       <div><span>${escapeHtml(record.code)} / ISLAND SYSTEM</span><h4>${escapeHtml(record.name)}</h4></div>
       <span class="evidence-state ${escapeHtml(record.status)}">${escapeHtml(record.status.toUpperCase())}</span>
     </header>
-    ${renderTerminalDiagram(record.diagram, escapeHtml)}
+    ${diagrams.map((diagram) => renderTerminalDiagram(diagram, escapeHtml)).join("")}
     <div class="hydro-terminal-record-grid">
       <dl>${factRows}</dl>
       <div class="hydro-terminal-sources"><span class="profile-label">SOURCE RECORDS</span>${sourceLinks}</div>
