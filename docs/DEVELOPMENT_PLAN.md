@@ -86,6 +86,7 @@ Work items:
 - NPREG-001
 - NPREG-002
 - ASSET-001
+- ASSET-002
 
 Exit gate:
 

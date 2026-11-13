@@ -1,0 +1,95 @@
+{
+  "retrieved_date": "2026-11-13",
+  "sources": [
+    {
+      "id": "np-2018-feeder-automation",
+      "title": "2018 Capital Budget Application, Substation Feeder Automation",
+      "url": "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF",
+      "local_file": "applications/2018/NP2018Capital/applications/From NP - 2018 Capital Budget Application - 2017-07-07.PDF",
+      "physical_pdf_pages": [235],
+      "sha256": "d5fe2f1847725348d395edbdd0d34d649d6749c4a00eb4babb15fd1924da59ed"
+    },
+    {
+      "id": "np-2019-capex-report-2018",
+      "title": "2018 Capital Expenditure Report",
+      "url": "http://www.pub.nl.ca/indexreports/2019/From%20NP%20-%202018%20Capital%20Expenditure%20Report%20-%202019-03-01.PDF",
+      "local_file": "indexreports/2019/From NP - 2018 Capital Expenditure Report - 2019-03-01.PDF",
+      "physical_pdf_pages": [8],
+      "sha256": "cf3040ef577d52049bbc248635ff8b78211b4aa37aea56420ae79cfcde044ae8"
+    },
+    {
+      "id": "np-2022-ca-np-034",
+      "title": "CA-NP-034, Distribution Feeder Reliability",
+      "url": "http://www.pub.nl.ca/applications/2022/NP2022Capital/rfis/CA-NP-034.PDF",
+      "local_file": "applications/2022/NP2022Capital/rfis/CA-NP-034.PDF",
+      "physical_pdf_pages": [1, 2, 3],
+      "sha256": "1e54e3c0e9580a1bcf1b007d8c961c60f6c39906c59119dc8155328aff6c2e51"
+    },
+    {
+      "id": "np-2021-pbd01",
+      "title": "2021 Capital Budget Application, PBD-01 Feeder Upgrade",
+      "url": "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf",
+      "local_file": "applications/2021/NP2021Capital/applications/From NP - 2021 Capital Budget Application - Volume II - 2020-07-09.pdf",
+      "physical_pdf_pages": [183, 184, 186, 192],
+      "sha256": "3f482d1be23a135b3ca9752909bee2331fc88da6e7f5b78d57b234571118af02"
+    },
+    {
+      "id": "np-2023-capex-report-2022",
+      "title": "2022 Capital Expenditure Report",
+      "url": "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202022%20Capital%20Expenditure%20Report%20-%202023-03-31.PDF",
+      "local_file": "indexreports/expenditure/From NP - 2022 Capital Expenditure Report - 2023-03-31.PDF",
+      "physical_pdf_pages": [10],
+      "sha256": "8dc8c59e30984ba71610b32ee9f591d8d7248df901270c54ec362e4d1575cfcc"
+    }
+  ],
+  "reliability_period": {
+    "start_year": 2016,
+    "end_year": 2020,
+    "system_average_saidi_hours": 1.82,
+    "system_average_saifi_interruptions_per_year": 1.33,
+    "records": [
+      {
+        "station_code": "MIL",
+        "feeder": "MIL-02",
+        "customers": 1493,
+        "average_saidi_hours": 2.98,
+        "average_saifi_interruptions_per_year": 1.55,
+        "physical_pdf_pages": [2, 3]
+      },
+      {
+        "station_code": "PBD",
+        "feeder": "PBD-01",
+        "customers": 672,
+        "average_saidi_hours": 2.2,
+        "average_saifi_interruptions_per_year": 1.47,
+        "physical_pdf_pages": [2, 3]
+      }
+    ]
+  },
+  "program_closeouts": [
+    {
+      "program": "2018 Substations Refurbishment and Modernization",
+      "relevant_filed_scope": ["NHR-01", "NHR-02", "PBD-01"],
+      "approved_budget_cad": 8001000,
+      "actual_expenditure_cad": 7917000,
+      "variance_cad": -84000,
+      "carryover_cad": 0,
+      "carryover_year": 2019,
+      "program_closeout_only": true,
+      "physical_pdf_page": 8
+    },
+    {
+      "program": "2021 Feeder Additions for Load Growth",
+      "relevant_filed_scope": ["PBD-01"],
+      "approved_budget_cad": 2655000,
+      "actual_expenditure_2021_cad": 1899000,
+      "actual_expenditure_2022_cad": 773000,
+      "actual_expenditure_total_cad": 2672000,
+      "variance_cad": 17000,
+      "carryover_cad": 0,
+      "carryover_year": 2023,
+      "program_closeout_only": true,
+      "physical_pdf_page": 10
+    }
+  ]
+}

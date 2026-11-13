@@ -514,6 +514,18 @@
       "notes": "NLH-NP-014 physical PDF p. 1 records the repair type and days out of service for BLK-T2, DUN-T1, SLA-T3, HUM-T2, HUM-T3, and TRN-T1. The station records keep transformer repair time separate from customer interruption duration."
     },
     {
+      "id": "ASSET-002",
+      "title": "Add rural feeder reliability and capital program closeouts",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Add the published MIL-02 and PBD-01 reliability values and reconcile the related 2018 and 2021 capital programs without treating aggregate expenditure as asset commissioning evidence.",
+      "dependencies": ["ARC-001", "SRC-001"],
+      "completion_evidence": ["research/NP_RURAL_FEEDER_RELIABILITY_AND_CLOSEOUTS.md", "research/derived/np-rural-feeder-reliability-and-closeouts.json", "src/data.js", "tests/np-rural-feeder-closeouts.test.js"],
+      "blocker": null,
+      "notes": "CA-NP-034 physical PDF pp. 1 to 3 records 2016 to 2020 SAIDI and SAIFI for MIL-02 and PBD-01. The 2018 and 2022 expenditure reports close the combined capital programs with zero carryover. Neither report gives an asset-level commissioning date or as-built arrangement."
+    },
+    {
       "id": "GEN-001",
       "title": "Find the latest supported Holyrood station arrangement",
       "phase": 3,

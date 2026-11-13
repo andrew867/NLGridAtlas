@@ -371,6 +371,7 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2015 load-growth study records MIL-T1 at 66/25 kV and 16.7 MVA. MIL-01 used approximately 4.0 km of 4/0 AASC main trunk and served approximately 1,104 Shoal Harbour customers. MIL-02 used approximately 27.0 km of 4/0 AASC main trunk and served approximately 1,438 customers on Random Island, in Milton, and toward Burgoyne's Cove, physical PDF pp. 451 to 452.
 - [x] The filed Lethbridge and Milton service-area map is preserved from physical PDF p. 458.
 - [x] Order P.U. 7(2012) approved $1,027,000 to upgrade 18 km of line from two-phase to three-phase, beginning approximately 9 km from Milton Substation and continuing to a fish-processing facility between Elliott's Cove and Hickman's Harbour, physical PDF pp. 1 and 3.
+- [x] CA-NP-034 records 1,493 customers on MIL-02, average SAIDI of 2.98 hours, and average SAIFI of 1.55 interruptions per year for 2016 to 2020, physical PDF pp. 1 to 3.
 - [x] The 2027 register records MIL-T1 at 66/25 kV, 16.67 MVA, with a 12.85 MVA 2026 forecast, physical PDF p. 547.
 - [x] The 2027 filing proposes a $685,000 refurbishment of 2.8 km of MIL-02 in Milton and George's Brook, replacing 1960s structures and #4 copper with 1/0 AASC, physical PDF p. 181.
 - [ ] The Board order establishes approval of the 2012 Random Island work, not commissioning. A later completion record has not been located. The 2027 MIL-02 work remains proposed.
@@ -382,8 +383,11 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The 2021 filing records PBD-01 as the station's only feeder, serving approximately 671 customers. The feeder was approximately 60 km long, including 5 km of three-phase line and 55 km of single-phase line, physical PDF p. 183.
 - [x] The filed Thorburn Lake tap used approximately 10 km of single-phase #2 ACSR. Its 107 A forecast exceeded the company's 85 A single-phase planning criterion, physical PDF p. 183.
 - [x] The selected 2021 project proposed 700 m of new three-phase line and conversion of 2.3 km from single-phase to three-phase for $600,000. The filed route map is preserved from physical PDF pp. 186 and 192.
+- [x] CA-NP-034 records 672 customers on PBD-01, average SAIDI of 2.20 hours, and average SAIFI of 1.47 interruptions per year for 2016 to 2020, physical PDF pp. 1 to 3.
+- [x] The 2018 filing included PBD-01 in the feeder-automation program. The 2018 expenditure report closes the combined substation program at $7.917 million actual expenditure and no carryover to 2019, physical PDF pp. 235 and 8 respectively.
+- [x] The 2022 expenditure report closes the combined 2021 Feeder Additions for Load Growth program at $2.672 million actual expenditure and no carryover to 2023, physical PDF p. 10.
 - [x] The 2027 register records PBD-T1 at 138/25 kV, 16.67 MVA, with a 3.17 MVA 2026 forecast, physical PDF p. 549.
-- [ ] A completion record for the 2021 PBD-01 work has not been located. The atlas keeps the route and conversion as filed work.
+- [ ] The combined program closeout does not identify an asset-level commissioning date or final arrangement for the 2018 automation or 2021 PBD-01 line work.
 
 ## Terra Nova station record
 
@@ -650,8 +654,9 @@ The Deer Lake distribution record now separates four dated states. The 2010 proj
 - [x] The current fleet table records NHR-T1 at 66/12.5 kV and 13.33 MVA with a 7.60 MVA 2026 forecast, physical PDF p. 549.
 - [x] The 2014 feeder record gives 12.47 kV capacity and forecast values for NHR-01 and NHR-02, physical PDF p. 10; attachment p. 8.
 - [x] The 2018 filing proposed remote automation of both New Harbour feeders, physical PDF p. 235.
+- [x] The 2018 expenditure report closes the combined Substations Refurbishment and Modernization program at $7.917 million actual expenditure and no carryover to 2019, physical PDF p. 8.
 - [x] The station asset history records replacement of the voltage regulator in 2007, physical PDF p. 206.
-- [ ] No searched record confirms completion of the 2018 feeder-automation work.
+- [ ] The combined program closeout does not identify an asset-level commissioning date or final arrangement for NHR-01 or NHR-02 automation.
 - [ ] No searched record publishes a breaker-level New Harbour one-line. The atlas diagram shows the documented local 80L directions and voltage transformation.
 
 ## St. John's Diesel historical plant record

@@ -178,6 +178,8 @@ Updated: 2026-11-13
 - Added the IC-270 Great Northern Peninsula load record. The extractor publishes complete-year peak series and compares the recorded January to April 2001 Bear Cove and Plum Point peaks with the filed winter forecasts.
 - Added the 2021 to 2025 Great Northern Peninsula reliability record, outage-cause shares, system extent, regional line design loads, and Hawke's Bay diesel, transformer, restoration and 2026 life-extension records.
 - Added the January 2026 Bay d'Espoir frazil-ice event, including the seven-unit shutdown, reported reserve levels, synchronous-condenser use and exact return-to-service records.
+- Added the 2016 to 2020 MIL-02 and PBD-01 feeder reliability records. The station histories now include customer counts, average interruption duration, average interruption frequency, and the published Newfoundland Power averages.
+- Added the 2018 substation program and 2021 feeder load-growth program closeouts. The records preserve the aggregate budgets, annual expenditures, variances, and zero carryover without presenting program closeout as asset commissioning evidence.
 
 ## Active work
 

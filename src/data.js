@@ -2080,6 +2080,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
   },
   {
+    id: "np-2019-capex-report-2018",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Expenditure Report",
+    topics: ["substation refurbishment", "substation feeder automation", "New Harbour", "Port Blandford", "actual expenditure", "program closeout"],
+    pages: "physical PDF p. 8",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/2019/From%20NP%20-%202018%20Capital%20Expenditure%20Report%20-%202019-03-01.PDF"
+  },
+  {
     id: "np-2019-pepperrell",
     year: 2019,
     organization: "Newfoundland Power",
@@ -2796,6 +2806,26 @@ export const sources = [
     title: "2022 Capital Expenditure Report, Topsail Hydro Plant Refurbishment",
     topics: ["Topsail", "TOP", "hydroelectric generation", "capital expenditure", "multi-year project"],
     pages: "physical PDF pp. 17 and 25",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202022%20Capital%20Expenditure%20Report%20-%202023-03-31.PDF"
+  },
+  {
+    id: "np-2022-ca-np-034",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "CA-NP-034, Distribution Feeder Reliability",
+    topics: ["MIL-02", "PBD-01", "SAIDI", "SAIFI", "customer interruptions", "2016 to 2020"],
+    pages: "physical PDF pp. 1 to 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/rfis/CA-NP-034.PDF"
+  },
+  {
+    id: "np-2023-capex-report-2022",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Expenditure Report",
+    topics: ["PBD-01", "feeder additions for load growth", "actual expenditure", "program closeout"],
+    pages: "physical PDF p. 10",
     status: "reported",
     url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202022%20Capital%20Expenditure%20Report%20-%202023-03-31.PDF"
   },
@@ -11876,6 +11906,14 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2018 SUBSTATION PROGRAM CLOSEOUT",
+        sourceId: "np-2019-capex-report-2018",
+        pages: "physical PDF p. 8",
+        facts: [
+          ["Program result", "$8.001 million approved; $7.917 million actual; $84,000 under budget; no carryover to 2019"]
+        ]
+      },
+      {
         label: "2023 80L SECTIONALIZATION RECORD",
         sourceId: "np-2024-islington",
         pages: "physical PDF pp. 394 and 397",
@@ -12624,6 +12662,15 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2016 TO 2020 MIL-02 RELIABILITY",
+        sourceId: "np-2022-ca-np-034",
+        pages: "physical PDF pp. 1 to 3",
+        facts: [
+          ["MIL-02", "1,493 customers; average SAIDI 2.98 hours; average SAIFI 1.55 interruptions per year"],
+          ["Newfoundland Power average", "SAIDI 1.82 hours; SAIFI 1.33 interruptions per year"]
+        ]
+      },
+      {
         label: "2027 FILED MIL-02 REFURBISHMENT",
         sourceId: "np-2027-mil02",
         pages: "physical PDF p. 181",
@@ -12901,12 +12948,45 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2018 FILED FEEDER AUTOMATION",
+        sourceId: "np-2018-feeder-automation",
+        pages: "physical PDF p. 235",
+        facts: [
+          ["Filed work", "automate PBD-01 for remote control and operational setting changes"]
+        ]
+      },
+      {
+        label: "2018 SUBSTATION PROGRAM CLOSEOUT",
+        sourceId: "np-2019-capex-report-2018",
+        pages: "physical PDF p. 8",
+        facts: [
+          ["Program result", "$8.001 million approved; $7.917 million actual; $84,000 under budget; no carryover to 2019"]
+        ]
+      },
+      {
+        label: "2016 TO 2020 PBD-01 RELIABILITY",
+        sourceId: "np-2022-ca-np-034",
+        pages: "physical PDF pp. 1 to 3",
+        facts: [
+          ["PBD-01", "672 customers; average SAIDI 2.20 hours; average SAIFI 1.47 interruptions per year"],
+          ["Newfoundland Power average", "SAIDI 1.82 hours; SAIFI 1.33 interruptions per year"]
+        ]
+      },
+      {
         label: "2021 FILED PBD-01 UPGRADE",
         sourceId: "np-2021-pbd01",
         pages: "physical PDF pp. 183 to 186 and 192",
         facts: [
           ["Selected work", "construct 700 m of new three-phase line and convert 2.3 km of PBD-01 from single-phase to three-phase"],
           ["Filed budget", "$600,000"]
+        ]
+      },
+      {
+        label: "2022 LOAD-GROWTH PROGRAM CLOSEOUT",
+        sourceId: "np-2023-capex-report-2022",
+        pages: "physical PDF p. 10",
+        facts: [
+          ["Program result", "$2.655 million approved; $1.899 million spent in 2021; $773,000 spent in 2022; $2.672 million total; $17,000 over budget; no carryover to 2023"]
         ]
       }
     ],
