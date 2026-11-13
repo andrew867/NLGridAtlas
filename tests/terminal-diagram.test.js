@@ -216,7 +216,7 @@ test("western and northern rural station records retain filed transformation and
     PLP: ["138/12.5 kV", ["TL241", "TL244"]],
     BRC: ["138/12.5 kV", ["TL244", "TL256"]],
     SAA: ["138/69 kV", ["TL256", "TL257", "TL257B", "TL261"]],
-    HAW: ["66/12.5 kV", ["TL221"]],
+    HAW: ["5/6.7 MVA", ["TL221"]],
     HOW: ["7.5/10/12.5 MVA", ["TL245", "TL243", "TL224", "TL251"]],
     SBR: ["138/25 kV", ["TL222", "TL222"]],
     DOY: ["138/66 kV", ["TL214", "TL215"]],
@@ -231,4 +231,19 @@ test("western and northern rural station records retain filed transformation and
     assert.deepEqual(record.diagram.circuits.map((circuit) => circuit.label), circuits);
     assert.ok(record.sources.every((source) => source.pages), `${code} requires page-level sources`);
   }
+});
+
+test("Hawke's Bay record separates station transformation, backup generation and restoration use", () => {
+  const hawkesBay = islandTerminalRecords.find((record) => record.code === "HAW");
+  assert.ok(hawkesBay);
+  assert.deepEqual(hawkesBay.diagram.transformers.map(({ label, rating }) => ({ label, rating })), [
+    { label: "T1", rating: "5/6.7 MVA" },
+    { label: "T2", rating: "2.5/3.3 MVA" }
+  ]);
+  assert.match(hawkesBay.facts.flat().join(" "), /two 2\.5 MW diesel units; 5 MW total/i);
+  assert.match(hawkesBay.facts.flat().join(" "), /6\.34 MW transformer peak.*15 MVA mobile transformer/i);
+  assert.match(hawkesBay.facts.flat().join(" "), /open both Hawke's Bay feeders.*diesel online/i);
+  assert.ok(hawkesBay.sources.some((source) => source.sourceId === "nlh-gnp-reliability-2026" && source.pages.includes("15 to 16")));
+  assert.ok(hawkesBay.sources.some((source) => source.sourceId === "nlh-hawkes-diesel-2005" && source.pages.includes("102")));
+  assert.ok(hawkesBay.sources.some((source) => source.sourceId === "nlh-gnp-operation-2011" && source.pages.includes("50 to 56")));
 });

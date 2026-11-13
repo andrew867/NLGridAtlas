@@ -1,0 +1,45 @@
+{
+  "source": {
+    "title": "Electrical Service Provided to the Great Northern Peninsula, Hydro Reply",
+    "url": "http://www.pub.nl.ca/applications/NLH2026GRA/information/Information%20Item%204.PDF",
+    "physical_pdf_pages": "8 to 10 and 15 to 16",
+    "sha256": "5E0C3D2DE891081AB82BAD83CF42641134B05D0555F6801367777255572ABD36"
+  },
+  "reliability_2021_to_2025": {
+    "great_northern_peninsula": {
+      "saidi_hours_per_customer_per_year": 15.67,
+      "saifi_interruptions_per_customer_per_year": 5.99
+    },
+    "hydro_customer_average": {
+      "saidi_hours_per_customer_per_year": 17.94,
+      "saifi_interruptions_per_customer_per_year": 5.61
+    },
+    "outage_cause_percent": {
+      "planned": 27,
+      "equipment": 24,
+      "adverse_weather": 20,
+      "tree_contact": 19,
+      "unplanned_transmission": 10
+    }
+  },
+  "system_extent": {
+    "terminal_stations": 16,
+    "transmission_line_km_approximate": 700,
+    "communities": 13
+  },
+  "regional_line_design": {
+    "radial_ice_inches_maximum": 1.5,
+    "wind_mph_maximum": 110
+  },
+  "backup_generation": {
+    "hawkes_bay": {
+      "capacity_mw": 5,
+      "role": "backup power for the Great Northern Peninsula",
+      "life_extension_condition_assessment_year": 2026
+    },
+    "st_anthony": {
+      "role": "backup power for the Great Northern Peninsula",
+      "life_extension_condition_assessment_year": 2026
+    }
+  }
+}

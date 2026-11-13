@@ -676,6 +676,7 @@ button, input { font: inherit; }
 .load-section { background: #d8d2c5; }
 .load-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 3vw, 2.5rem); }
 .load-case { min-height: 430px; padding: clamp(1.5rem, 3vw, 3rem); }
+.load-case[id] { scroll-margin-top: 5rem; }
 .load-case h3 { margin: .65rem 0 2rem; font: 600 clamp(2.5rem, 4vw, 4.5rem)/.88 "Barlow Condensed", sans-serif; text-transform: uppercase; }
 .load-case p { line-height: 1.5; }
 .load-case .evidence-link { display: inline-block; margin-top: 1.5rem; }

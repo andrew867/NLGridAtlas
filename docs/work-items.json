@@ -598,6 +598,18 @@
       "notes": "IC-270 physical PDF pp. 5 to 7 contain 112 monthly rows. Bear Cove's recorded January to April 2001 peak was 5,801 kW against a 5,002 kW winter forecast. Plum Point's was 3,184 kW against 4,404 kW. Complete-year maxima exclude any year with a missing monthly kW value."
     },
     {
+      "id": "OPS-001",
+      "title": "Add the current Great Northern Peninsula reliability and Hawke's Bay backup record",
+      "phase": 4,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Preserve the 2021 to 2025 regional reliability indices, outage causes, system extent, line design loads, Hawke's Bay diesel capacity, and documented restoration role.",
+      "dependencies": ["LOAD-002", "ISL-016"],
+      "completion_evidence": ["research/GNP_RELIABILITY_2026.md", "research/derived/gnp-reliability-2026.json", "index.html", "src/data.js", "tests/gnp-reliability.test.js", "tests/terminal-diagram.test.js"],
+      "blocker": null,
+      "notes": "Hydro's March 31, 2026 reply provides five-year SAIDI and SAIFI values, outage-cause shares, 16 terminal stations, about 700 km of transmission line, 13 communities, and regional design loads. The Hawke's Bay record combines the current 5 MW backup role with the two filed 2.5 MW units, 2024 transformer records, the 2011 restoration sequence, and the 2026 life-extension assessment."
+    },
+    {
       "id": "GEO-001",
       "title": "Build a sourced coordinate and route dataset",
       "phase": 4,

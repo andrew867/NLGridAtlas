@@ -124,6 +124,7 @@ Work items:
 - TEL-002
 - LOAD-001
 - LOAD-002
+- OPS-001
 - GEO-001
 - GEO-002
 

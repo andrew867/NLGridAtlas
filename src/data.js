@@ -1390,6 +1390,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Near-Term%20Reliability%20Report%20-%20May%202020%20-%202020-05-15.pdf"
   },
   {
+    id: "nlh-gnp-reliability-2026",
+    year: 2026,
+    organization: "NL Hydro",
+    title: "Electrical Service Provided to the Great Northern Peninsula, Hydro Reply",
+    topics: ["Great Northern Peninsula", "SAIDI", "SAIFI", "outage causes", "line design", "Hawke's Bay Diesel", "St. Anthony Diesel", "life extension"],
+    pages: "physical PDF pp. 8 to 10 and 15 to 16",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2026GRA/information/Information%20Item%204.PDF"
+  },
+  {
+    id: "nlh-hawkes-diesel-2005",
+    year: 2004,
+    organization: "NL Hydro",
+    title: "2005 Capital Budget Application, Hawkes Bay Diesel Generator Breakers",
+    topics: ["Hawke's Bay", "diesel generation", "generator breaker", "5 kV", "voltage support", "standby power"],
+    pages: "physical PDF p. 102",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2005cap/files/applic/hydro2005CapBudComplete.pdf"
+  },
+  {
+    id: "nlh-gnp-operation-2011",
+    year: 2011,
+    organization: "NL Hydro",
+    title: "System Operating Instruction T-063, Operation Without TL239 or TL259",
+    topics: ["Great Northern Peninsula", "Hawke's Bay Diesel", "St. Anthony Diesel", "TL239", "TL259", "restoration", "voltage support"],
+    pages: "physical PDF pp. 50 to 56",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/CA-NLH-019.PDF"
+  },
+  {
     id: "nlh-planning-2024",
     year: 2024,
     organization: "NL Hydro",
@@ -4437,6 +4467,12 @@ export const staticClaims = [
     sources: [{ sourceId: "nlh-gnp-generation-2001", pages: "physical PDF p. 7" }]
   },
   {
+    id: "gnp-2021-2025-reliability",
+    scope: "Great Northern Peninsula five-year reliability indices, outage causes, system extent and line design loads",
+    status: "reported",
+    sources: [{ sourceId: "nlh-gnp-reliability-2026", pages: "physical PDF pp. 8 to 9" }]
+  },
+  {
     id: "island-2024-forecast-accuracy",
     scope: "2024 monthly utility peak actual, forecast and average absolute error",
     status: "verified",
@@ -5613,15 +5649,15 @@ export const islandTerminalRecords = [
   {
     code: "HAW",
     name: "Hawke's Bay Terminal Station",
-    status: "verified",
-    facts: [["Transformation", "66/12.5 kV"], ["2013 station load", "5 MW"], ["66 kV circuit", "TL221 to Peter's Barron"]],
+    status: "reported",
+    facts: [["Transformation", "66/12.5 kV; T1 5/6.7 MVA and T2 2.5/3.3 MVA in the 2024 assessment"], ["2024 winter condition", "6.34 MW transformer peak; normally supplied by a 15 MVA mobile transformer"], ["Backup generation", "Two 2.5 MW diesel units; 5 MW total"], ["Diesel functions", "Standby supply for Hawke's Bay, Port Saunders and Port au Choix; voltage support and system reserve"], ["2011 restoration sequence", "Open both Hawke's Bay feeders before energizing the terminal station; place the diesel online before closing the feeders"], ["2026 asset work", "Life-extension condition assessment of the Hawke's Bay and St. Anthony diesel plants"], ["66 kV circuit", "TL221 to Peter's Barron"]],
     diagram: {
-      label: "2013 station voltage and load / 2018 filed route",
+      label: "2024 transformer record / 2018 filed route",
       buses: [{ id: "b1", label: "station bus", voltage: "66 kV" }, { id: "b2", label: "station bus", voltage: "12.5 kV" }],
-      transformers: [{ label: "Station transformer", rating: "66/12.5 kV", from: "b1", to: "b2" }],
+      transformers: [{ label: "T1", rating: "5/6.7 MVA", from: "b1", to: "b2" }, { label: "T2", rating: "2.5/3.3 MVA", from: "b1", to: "b2" }],
       circuits: [{ label: "TL221", destination: "Peter's Barron", bus: "b1", destinationCode: "PBR" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25"), sourceRef("nlh-planning-2024", "physical PDF pp. 39, 41 to 42"), sourceRef("nlh-hawkes-diesel-2005", "physical PDF p. 102"), sourceRef("nlh-gnp-operation-2011", "physical PDF pp. 50 to 56"), sourceRef("nlh-gnp-reliability-2026", "physical PDF pp. 10 and 15 to 16")]
   },
   {
     code: "HOW",
