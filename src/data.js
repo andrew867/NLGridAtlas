@@ -1420,6 +1420,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2026/NLH2026SystemReliabilityFrazilIce/From%20NLH%20-%20Frazil%20Ice%20Report%20for%20BDE%20-%202026-04-30.PDF"
   },
   {
+    id: "nlh-bde-u7-life-extension-2025",
+    year: 2025,
+    organization: "NL Hydro",
+    title: "Life Extension of Bay d'Espoir Unit 7",
+    topics: ["Bay d'Espoir", "Unit 7", "generator", "excitation system", "excitation transformer", "neutral grounding"],
+    pages: "physical PDF pp. 211, 218 to 219, and 221",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2025LifeExtensionUnit7/app/From%20NLH%20-%20Application%20for%20Capital%20Expenditures%20for%20the%20Life%20Extension%20of%20Bay%20d%E2%80%99Espoir%20Unit%207%20-%202025-06-20%20-%20REDACTED.PDF"
+  },
+  {
+    id: "pub-2026-bde-u7-order",
+    year: 2026,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 12(2026), Bay d'Espoir Unit 7 Life Extension",
+    topics: ["Bay d'Espoir", "Unit 7", "life extension", "capital approval"],
+    pages: "physical PDF pp. 1, 3 to 4",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2026/P.U.%2012(2026).PDF"
+  },
+  {
     id: "nlh-gnp-reliability-2026",
     year: 2026,
     organization: "NL Hydro",
@@ -4936,6 +4956,15 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "2026-04-21",
+    category: "station",
+    title: "Board approved the Bay d'Espoir Unit 7 life extension",
+    body: "Order P.U. 12(2026) approved capital expenditures of up to $66,265,000 for the Unit 7 life-extension project.",
+    sourceId: "pub-2026-bde-u7-order",
+    pages: "physical PDF pp. 3 to 4",
+    status: "verified"
+  },
+  {
     date: "2026",
     category: "station",
     title: "Western Avalon to Soldiers Pond line was studied",
@@ -5669,7 +5698,7 @@ export const islandTerminalRecords = [
     code: "BDE",
     name: "Bay d'Espoir Generating Station",
     status: "reported",
-    facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"], ["66 kV circuit", "TL220 to English Harbour West and Barachoix"]],
+    facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"], ["66 kV circuit", "TL220 to English Harbour West and Barachoix"]],
     diagram: {
       label: "2013 station 2 interface / 2018 routes",
       buses: [{ id: "b1", label: "230 kV station bus", voltage: "230 kV" }, { id: "b2", label: "69 kV station bus", voltage: "69 kV" }],
@@ -5677,7 +5706,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL202", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL206", destination: "Sunnyside", bus: "b1", destinationCode: "SUN" }, { label: "TL204", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL231", destination: "Stony Brook", bus: "b1", destinationCode: "STB" }, { label: "TL234", destination: "Upper Salmon", bus: "b1" }, { label: "TL267", destination: "Western Avalon", bus: "b1" }, { label: "TL220", destination: "English Harbour West", bus: "b2" }],
       generators: [{ label: "Bay d'Espoir plant", rating: "592 MW assignment", bus: "b1" }]
     },
-    sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-2023-spare-gsu", "physical PDF pp. 11 to 14"), sourceRef("nlh-2025-spare-gsu-update", "physical PDF pp. 5 to 7"), sourceRef("pub-2025-spare-gsu-order", "physical PDF pp. 1 to 3"), sourceRef("nlh-bde-frazil-2026", "physical PDF pp. 13 to 15 and 32")]
+    sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-2023-spare-gsu", "physical PDF pp. 11 to 14"), sourceRef("nlh-2025-spare-gsu-update", "physical PDF pp. 5 to 7"), sourceRef("pub-2025-spare-gsu-order", "physical PDF pp. 1 to 3"), sourceRef("nlh-bde-u7-life-extension-2025", "physical PDF pp. 211, 218 to 219, and 221"), sourceRef("pub-2026-bde-u7-order", "physical PDF pp. 1, 3 to 4"), sourceRef("nlh-bde-frazil-2026", "physical PDF pp. 13 to 15 and 32")]
   },
   {
     code: "BUC",

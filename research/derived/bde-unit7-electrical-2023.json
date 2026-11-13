@@ -1,0 +1,48 @@
+{
+  "source": {
+    "application_sha256": "1CF1F6663569A6C5DAE6F4495F207BE3E0B523A380E0392261C7E6648E6E021C",
+    "order_sha256": "E6C4434AA7325C7BBDDC60B16839D2D40C1B02688A648543F76B28E2B8042B36"
+  },
+  "generator": {
+    "inspection_date": "2023-08-08 to 2023-08-10",
+    "manufacturer": "GE",
+    "installation_year": 1977,
+    "rating_mva": 172,
+    "voltage_v": 13800,
+    "current_a": 7196,
+    "frequency_hz": 60,
+    "power_factor": 0.9,
+    "rated_speed_rpm": 225,
+    "runaway_speed_rpm": 380,
+    "physical_pdf_page": 211
+  },
+  "excitation_system": {
+    "manufacturer": "ABB",
+    "commissioning_year": 2004,
+    "type": "static",
+    "rated_output_voltage_v": 230,
+    "rated_output_current_a": 1457,
+    "physical_pdf_pages": [218, 219],
+    "transformer": {
+      "rating_kva": 1175,
+      "hv_rating_v": [13800, 7970],
+      "lv_rating_v": 559,
+      "impedance_percent": 5.64,
+      "replacement_year": 2014
+    }
+  },
+  "neutral_grounding_cubicle": {
+    "manufacturer": "GE",
+    "commissioning_year": 1992,
+    "type": "metal-enclosed transformer and resistor",
+    "rated_voltage_kv": 18,
+    "maximum_voltage_kv": 24.94,
+    "physical_pdf_page": 221
+  },
+  "approval": {
+    "order": "P.U. 12(2026)",
+    "date": "2026-04-21",
+    "approved_capital_cad": 66265000,
+    "physical_pdf_pages": [3, 4]
+  }
+}

@@ -377,9 +377,9 @@
       "status": "done",
       "scope": "Record transformer designations, winding voltages, cooling ratings, impedances, manufacturers, manufacture dates, in-service dates, and replacements where published.",
       "dependencies": ["ISL-003", "ISL-005"],
-      "completion_evidence": ["research/ISLAND_TRANSFORMER_LEDGER.md", "src/data.js", "tests/data.test.js"],
+      "completion_evidence": ["research/ISLAND_TRANSFORMER_LEDGER.md", "research/BDE_UNIT7_ELECTRICAL_AND_LIFE_EXTENSION.md", "research/derived/bde-unit7-electrical-2023.json", "src/data.js", "tests/data.test.js", "tests/bde-unit7-electrical.test.js"],
       "blocker": null,
-      "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, Buchans, Bay d'Espoir, and Come By Chance transformer records. Holyrood T7 and T8 replacement histories extend through the 2024 T7 commissioning completion. Bay d'Espoir has separate 1998 station 1 and 2013 station 2 equipment records, GSU manufacture years, the T5S and T6S repair and spare history, and the approved 2025 common-spare budget and schedule. The Come By Chance record includes the 2014 ratings, manufacture dates, bus arrangement, and the later Braya-specific cost assignment. Nameplate, filed equipment, study-model, and emergency ratings remain separate. Unsupported rural nameplates and current rural one-lines remain deferred under ISL-005."
+      "notes": "The evidence pass added dated Howley, Deer Lake, Stony Brook, Massey Drive, Sunnyside, Holyrood, Buchans, Bay d'Espoir, and Come By Chance transformer records. Holyrood T7 and T8 replacement histories extend through the 2024 T7 commissioning completion. Bay d'Espoir has separate 1998 station 1 and 2013 station 2 equipment records, GSU manufacture years, the T5S and T6S repair and spare history, the approved 2025 common-spare budget and schedule, and the 2023 Unit 7 generator, excitation-transformer, and neutral-grounding records tied to Order P.U. 12(2026). The Come By Chance record includes the 2014 ratings, manufacture dates, bus arrangement, and the later Braya-specific cost assignment. Nameplate, filed equipment, study-model, and emergency ratings remain separate. Unsupported rural nameplates and current rural one-lines remain deferred under ISL-005."
     },
     {
       "id": "ISL-007",

@@ -13,6 +13,7 @@ research/derived/*
 !research/derived/gnl-nalcor-l3501-route.geojson
 !research/derived/station-coordinate-register.json
 !research/derived/np-2018-tod-access-reconciliation.json
+!research/derived/bde-unit7-electrical-2023.json
 research/renders/
 research/tmp/
 .DS_Store
