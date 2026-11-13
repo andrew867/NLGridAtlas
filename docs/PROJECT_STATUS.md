@@ -171,6 +171,7 @@ Updated: 2026-11-13
 - Added the IC-270 construction history for TL221, TL241, TL244, TL256, TL261, and TL257. The record includes the 1990 TL221 and TL262 reconfiguration, the 1995 TL241 extension and voltage change, and the 1995 TL244 voltage upgrade.
 - Added a dedicated Deer Lake Power generating-station record. It shows the filed 81.1 MW combined rating for DLPG1-7, L1 to Massey Drive, and TL225 to Deer Lake Terminal Station. The Corner Brook frequency converter remains a separate 18.0 MW record.
 - Added the current filed 9.7 MW St. Anthony backup-plant record and the pre-interconnection Roddickton woodchip, diesel, mini-hydro, black-start, and mobile-unit records. The station browser links TL257 and TL261 to the dated generation records.
+- Added the IC-270 Great Northern Peninsula load record. The extractor publishes complete-year peak series and compares the recorded January to April 2001 Bear Cove and Plum Point peaks with the filed winter forecasts.
 
 ## Active work
 

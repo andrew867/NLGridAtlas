@@ -1273,9 +1273,9 @@ export const sources = [
     id: "nlh-gnp-generation-2001",
     year: 2001,
     organization: "NL Hydro",
-    title: "IC-270, Great Northern Peninsula Pre-Interconnection Generation",
-    topics: ["St. Anthony Diesel", "Roddickton Woodchip", "Roddickton Diesel", "Roddickton Mini-hydro", "black start", "mobile diesel", "TL257", "TL261"],
-    pages: "physical PDF pp. 3 to 4",
+    title: "IC-270, Great Northern Peninsula System Record",
+    topics: ["St. Anthony Diesel", "Roddickton Woodchip", "Roddickton Diesel", "Roddickton Mini-hydro", "Bear Cove", "Plum Point", "actual peak", "forecast", "black start", "mobile diesel", "TL257", "TL261"],
+    pages: "physical PDF pp. 3 to 7",
     status: "reported",
     url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/hydresp/Indust/IC%20270.pdf"
   },
@@ -4429,6 +4429,12 @@ export const staticClaims = [
     scope: "Bay d'Espoir east and west corridor loads at the 2006 to 2010 system peaks",
     status: "verified",
     sources: [{ sourceId: "nlh-bde-wav-2012", pages: "physical PDF p. 4" }]
+  },
+  {
+    id: "gnp-2001-forecast-comparison",
+    scope: "Bear Cove and Plum Point recorded January to April 2001 peaks compared with the filed 2001 winter peak forecasts",
+    status: "reported",
+    sources: [{ sourceId: "nlh-gnp-generation-2001", pages: "physical PDF p. 7" }]
   },
   {
     id: "island-2024-forecast-accuracy",

@@ -586,6 +586,18 @@
       "notes": "The load record now separates the 2013/2014 Newfoundland Power and Avalon actual winter peaks, the January 2020 Nostradamus import failure, 2024 measured and forecast summaries, and the highest 2026 transformer planning ratios. King's Bridge and Ridge Road values are correctly labelled as five-year forecasts. Unpublished rural measurements remain deferred."
     },
     {
+      "id": "LOAD-002",
+      "title": "Add the Great Northern Peninsula historical peak and forecast record",
+      "phase": 4,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Extract the IC-270 Bear Cove and Plum Point monthly peak series, publish only complete-year maxima, and compare the recorded January to April 2001 peaks with the filed winter forecasts.",
+      "dependencies": ["LOAD-001", "ISL-016"],
+      "completion_evidence": ["scripts/extract_ic270_loads.py", "research/derived/gnp-loads-2001.json", "research/GNP_LOADS_2001.md", "index.html", "tests/gnp-loads.test.js"],
+      "blocker": null,
+      "notes": "IC-270 physical PDF pp. 5 to 7 contain 112 monthly rows. Bear Cove's recorded January to April 2001 peak was 5,801 kW against a 5,002 kW winter forecast. Plum Point's was 3,184 kW against 4,404 kW. Complete-year maxima exclude any year with a missing monthly kW value."
+    },
+    {
       "id": "GEO-001",
       "title": "Build a sourced coordinate and route dataset",
       "phase": 4,

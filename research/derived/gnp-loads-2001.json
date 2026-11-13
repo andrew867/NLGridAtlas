@@ -1,0 +1,50 @@
+{
+  "source": {
+    "title": "IC-270, 2001 General Rate Application",
+    "url": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/hydresp/Indust/IC%20270.pdf",
+    "physical_pdf_pages": "5 to 7",
+    "sha256": "7C025C2ADDFA4133B06649698AE41C2E67FA998BCE94363696659F784B5345E3"
+  },
+  "units": {
+    "energy": "MWh",
+    "peak_demand": "kW"
+  },
+  "monthly_row_count": 112,
+  "complete_year_peaks": {
+    "bear_cove": [
+      { "year": 1992, "peak_kw": 6931 },
+      { "year": 1993, "peak_kw": 6336 },
+      { "year": 1994, "peak_kw": 5760 },
+      { "year": 1996, "peak_kw": 5800 },
+      { "year": 1997, "peak_kw": 5652 },
+      { "year": 1998, "peak_kw": 4856 },
+      { "year": 1999, "peak_kw": 4808 }
+    ],
+    "plum_point": [
+      { "year": 1994, "peak_kw": 4026 },
+      { "year": 1996, "peak_kw": 3520 },
+      { "year": 1997, "peak_kw": 3368 },
+      { "year": 1998, "peak_kw": 3932 },
+      { "year": 1999, "peak_kw": 4224 },
+      { "year": 2000, "peak_kw": 3960 }
+    ]
+  },
+  "forecast_comparison_2001": {
+    "bear_cove": {
+      "recorded_january_to_april_peak_kw": 5801,
+      "filed_winter_peak_forecast_kw": 5002,
+      "difference_kw": 799,
+      "difference_percent_of_forecast": 16.0
+    },
+    "plum_point": {
+      "recorded_january_to_april_peak_kw": 3184,
+      "filed_winter_peak_forecast_kw": 4404,
+      "difference_kw": -1220,
+      "difference_percent_of_forecast": -27.7
+    }
+  },
+  "forecasts": {
+    "2001": { "bear_cove_peak_kw": 5002, "plum_point_peak_kw": 4404 },
+    "2002": { "bear_cove_peak_kw": 5005, "plum_point_peak_kw": 4411 }
+  }
+}

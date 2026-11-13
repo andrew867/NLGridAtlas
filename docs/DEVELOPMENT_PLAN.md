@@ -123,6 +123,7 @@ Work items:
 - TEL-001
 - TEL-002
 - LOAD-001
+- LOAD-002
 - GEO-001
 - GEO-002
 
