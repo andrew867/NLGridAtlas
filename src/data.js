@@ -520,6 +520,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1961-38l",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, 38L Historical and Rebuild Record",
+    topics: ["1961", "38L", "Seal Cove", "Duff's", "Holyrood", "66 kV", "transmission line"],
+    pages: "physical PDF p. 389",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
+  },
+  {
+    id: "np-1961-53l",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, 53L Golden Eagle Refinery Line Record",
+    topics: ["1961", "53L", "38L", "Golden Eagle Refinery", "Holyrood", "66 kV", "retirement"],
+    pages: "physical PDF p. 277",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-1961-rattling-brook-storage",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Rattling Brook Plant Record",
+    topics: ["1961", "Rattling Brook", "RBK", "hydroelectric generation", "reservoir storage"],
+    pages: "physical PDF p. 141",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "nlh-1961-venams-bight-dams",
+    year: 2024,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Mini-Hydro Economic and Technical Assessment, Venams Bight",
+    topics: ["1961", "Venams Bight", "SV-5", "SV-6", "SV-7", "timber crib dam", "rockfill dam", "spillway"],
+    pages: "physical PDF pp. 30 to 35",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/other/From%20NLH%20-%20Mini-Hydro%20-%20Economic%20and%20Technical%20Assessment%20-%202024-12-20.PDF"
+  },
+  {
+    id: "nlh-1961-wabush-breaker",
+    year: 2017,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Various Replacements at Wabush Terminal Station, Revised Application",
+    topics: ["1961", "1963", "Wabush", "WABTS", "46-33", "46 kV", "oil circuit breaker", "current transformer"],
+    pages: "physical PDF pp. 10 to 11",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017Capital/NLH2017Capital_SUPP_VariousWabush/applications/From%20NLH%20-%20Application%20-%20Various%20Replacements%20at%20the%20Wabush%20Terminal%20Station%20-%20Revision%20-%202017-04-10.PDF"
+  },
+  {
+    id: "nlh-1961-happy-valley-diesel-building",
+    year: 2007,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2008 Capital Budget Application, Happy Valley/Goose Bay Facilities Study",
+    topics: ["1961", "Happy Valley", "Goose Bay", "diesel generation", "warehouse", "line depot"],
+    pages: "physical PDF pp. 462 to 463",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2008Capital/files/application/NLH2008ApplicationComplete.pdf"
+  },
+  {
     id: "nlh-1962-transmission-register",
     year: 2018,
     organization: "Newfoundland and Labrador Hydro",
@@ -9528,6 +9588,19 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1961-system-record",
+    scope: "1961 transmission construction, hydro storage and dam work, dated Wabush switchgear and a former Happy Valley diesel plant",
+    status: "reported",
+    sources: [
+      { sourceId: "np-1961-38l", pages: "physical PDF p. 389" },
+      { sourceId: "np-1961-53l", pages: "physical PDF p. 277" },
+      { sourceId: "np-1961-rattling-brook-storage", pages: "physical PDF p. 141" },
+      { sourceId: "nlh-1961-venams-bight-dams", pages: "physical PDF pp. 30 to 35" },
+      { sourceId: "nlh-1961-wabush-breaker", pages: "physical PDF pp. 10 to 11" },
+      { sourceId: "nlh-1961-happy-valley-diesel-building", pages: "physical PDF pp. 462 to 463" }
+    ]
+  },
+  {
     id: "np-1962-system-record",
     scope: "1962 transmission and distribution construction, station equipment, hydroelectric generation, diesel generation and ice-storm damage",
     status: "unresolved",
@@ -10138,6 +10211,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1961",
+    category: "network",
+    title: "38L and the Golden Eagle refinery line date to 1961",
+    body: "38L connected Seal Cove and Duff's and formed part of the Holyrood to Conception Bay South transmission path. The 5.9 km, 66 kV single-pole 53L served the Golden Eagle Refinery in Holyrood until Newfoundland Power retired the line in 2007 after the refinery load declined enough for local distribution service.",
+    sourceId: "np-1961-38l",
+    pages: "physical PDF p. 389; 53L physical PDF p. 277",
+    status: "reported"
+  },
+  {
+    date: "1961",
+    category: "generation",
+    title: "Rattling Brook gained storage and Venams Bight gained six dam structures",
+    body: "Additional storage was added to the Rattling Brook hydro development. At Venams Bight, timber crib systems SV-6 and SV-7, comprising five structures, and the SV-5 concrete-faced rockfill dam, intake and concrete spillway were constructed. The Venams Bight generating station itself had been commissioned in 1957.",
+    sourceId: "np-1961-rattling-brook-storage",
+    pages: "physical PDF p. 141; Venams Bight physical PDF pp. 30 to 35",
+    status: "reported"
+  },
+  {
+    date: "1961 equipment / 1963 operation",
+    category: "station",
+    title: "Wabush breaker 46-33 predates terminal operation",
+    body: "The 46 kV oil-filled circuit breaker 46-33 and its internal 16 MVA metering current transformers date to 1961. The same filing states that Wabush Terminal Station had operated since 1963, and identifies eight 230:46 kV transformers, three 230 kV air-blast breakers, twenty-two 46 kV oil breakers, five 46 kV gas breakers, two 46 kV capacitor banks and two synchronous condensers at the site.",
+    sourceId: "nlh-1961-wabush-breaker",
+    pages: "physical PDF pp. 10 to 11",
+    status: "reported"
+  },
+  {
+    date: "1961 to 1977",
+    category: "generation",
+    title: "The Happy Valley warehouse began as a diesel plant",
+    body: "The 460 m2 Hunt Street building was constructed in 1961 and housed diesel generating units until 1977. By the 2007 facilities study, 290 m2 served as warehouse space and 170 m2 as a line depot.",
+    sourceId: "nlh-1961-happy-valley-diesel-building",
+    pages: "physical PDF pp. 462 to 463",
+    status: "reported"
+  },
   {
     date: "1962",
     category: "network",
@@ -18163,6 +18272,16 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1961 38L TRANSMISSION LINE",
+        sourceId: "np-1961-38l",
+        pages: "physical PDF p. 389",
+        facts: [
+          ["Route", "Seal Cove to Duff's"],
+          ["System role", "part of the Holyrood to Conception Bay South transmission path"],
+          ["Later condition", "a 2.8 km section had deteriorated poles, crossarms, insulators and hardware, plus conductor that limited transfers between Duff's and Hardwoods"]
+        ]
+      },
+      {
         label: "1964 G1 RUNNER REPLACEMENT",
         sourceId: "np-1964-seal-cove-runner",
         pages: "physical PDF p. 270",
@@ -25757,6 +25876,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1961 ADDITIONAL STORAGE",
+        sourceId: "np-1961-rattling-brook-storage",
+        pages: "physical PDF p. 141",
+        facts: [
+          ["Development", "commissioned in 1958"],
+          ["1961 work", "additional storage added"]
+        ]
+      },
       {
         label: "1986 UNIT 2 RUNNER REPLACEMENT",
         sourceId: "np-1986-rattling-brook",

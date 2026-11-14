@@ -1498,6 +1498,18 @@
       "notes": "The available historical-demand table begins in 1967, so no 1962 demand value is stated. Later primary records establish 13L, TL2303, a King's Bridge 66 kV structure, Lockston G1, NWB-01, part of Happy Valley L8, and two February ice storms. Hydro records conflict between 1962 and 1968 for TL224. Newfoundland Power records conflict between 1962 and 1972 for the Port Union diesel unit. A radio-account credit was excluded because it does not identify an installed telecommunications asset."
     },
     {
+      "id": "NPREG-067",
+      "title": "Reconcile Newfoundland Power 1961 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1961 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-066"],
+      "completion_evidence": ["research/NP_1961_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1961-system.test.js"],
+      "blocker": null,
+      "notes": "The available historical-demand table begins in 1967, so no 1961 demand value is stated. Later primary records establish 38L, 53L, additional Rattling Brook storage, the Venams Bight SV-5, SV-6 and SV-7 dam systems, Wabush breaker 46-33, and the former Happy Valley diesel plant building. Wabush terminal operation began in 1963 despite the dated 1961 breaker. Venams Bight was commissioned in 1957; the dated 1961 work applies to dams. No named 1961 telecommunications installation was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
