@@ -380,6 +380,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-1999-annual-report",
+    year: 1999,
+    organization: "Newfoundland Power",
+    title: "1999 Annual Report, Electrical System Work and Operating Systems",
+    topics: ["SCADA", "Telephony Video Data", "Burnt Islands", "Riverhead", "Dunville", "Botwood", "Petty Harbour", "Mobile", "Horse Chops", "Rose Blanche", "thermoscanning", "system reliability"],
+    pages: "physical PDF pp. 10 to 13, 15, 20, 29 and 35",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213D.pdf"
+  },
+  {
     id: "np-2000-annual-report",
     year: 2000,
     organization: "Newfoundland Power",
@@ -6514,6 +6524,15 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2003-ca-241-load-factor", pages: "physical PDF p. 1" }]
   },
   {
+    id: "np-1999-system-reliability",
+    scope: "1999 Newfoundland Power service availability and actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
+    status: "reported",
+    sources: [
+      { sourceId: "np-1999-annual-report", pages: "physical PDF p. 10" },
+      { sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }
+    ]
+  },
+  {
     id: "np-2000-system-reliability",
     scope: "2000 Newfoundland Power service availability and actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
     status: "reported",
@@ -6627,6 +6646,69 @@ export const timeline = [
     body: "Western work in 1999, eastern work in 2001, and the 2003 interconnection supported the move of about ten repeaters from NewTel sites.",
     sourceId: "vhf-2004",
     pages: "PDF p. 200",
+    status: "reported"
+  },
+  {
+    date: "1999",
+    category: "reliability",
+    title: "Service availability reached 99.89 percent",
+    body: "Newfoundland Power reported 5.28 interruptions and 9.36 hours per customer, excluding Hydro loss-of-supply outages. The annual report identifies the April 5 to 6 snowfall, equipment failure, Hydro supply losses and wind storms among the year's outage causes.",
+    sourceId: "np-1999-annual-report",
+    pages: "physical PDF p. 10; CA-446Rev physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1999",
+    category: "telecom",
+    title: "SCADA installation cost $2.6 million",
+    body: "The new system expanded electrical-system control and automation and connected directly to the Telephony Video Data outage-communications system.",
+    sourceId: "np-1999-annual-report",
+    pages: "physical PDF p. 10",
+    status: "reported"
+  },
+  {
+    date: "1999",
+    category: "network",
+    title: "Poor-performing feeder work received $2.8 million",
+    body: "The annual report names Burnt Islands, Riverhead, Dunville and Botwood among the service areas. It also reports that infrared thermoscanning prevented more than 250 outages across 10,000 km of transmission and distribution lines.",
+    sourceId: "np-1999-annual-report",
+    pages: "physical PDF p. 11",
+    status: "reported"
+  },
+  {
+    date: "1999",
+    category: "generation",
+    title: "Three hydro waterway projects were completed",
+    body: "Newfoundland Power replaced the Petty Harbour penstock and surge tanks at Mobile and Horse Chops for a combined $3.5 million.",
+    sourceId: "np-1999-annual-report",
+    pages: "physical PDF p. 15",
+    status: "reported"
+  },
+  {
+    date: "1999-08",
+    category: "generation",
+    title: "Rose Blanche hydro plant was officially opened",
+    body: "The annual report records more than $1 million of the $13.8 million facility for fish ladders and habitat compensation and estimates annual greenhouse-gas displacement at 19,000 metric tonnes.",
+    sourceId: "np-1999-annual-report",
+    pages: "physical PDF pp. 12 to 13",
+    status: "reported"
+  },
+  {
+    date: "1999",
+    category: "generation",
+    title: "Company generation reached 450 GWh",
+    body: "The ten-year summary reports 450 million kWh generated and 4,292 million kWh purchased in 1999.",
+    sourceId: "np-1999-annual-report",
+    pages: "physical PDF p. 35",
+    status: "reported"
+  },
+  {
+    date: "1999-12-31",
+    category: "financial",
+    title: "Transmission and substations carried $95.379 million net book value",
+    body: "Newfoundland Power reported $171.604 million cost and $76.225 million accumulated depreciation for the asset class.",
+    sourceId: "np-1999-annual-report",
+    pages: "physical PDF p. 29",
     status: "reported"
   },
   {
@@ -10077,6 +10159,16 @@ const filedFeederMapProfiles = [
       facts: [["RBH-T1", "generation transformer; 25/6.9 kV; 9.3 MVA"]]
     },
     historyRecords: [
+      {
+        label: "AUGUST 1999 OFFICIAL OPENING",
+        sourceId: "np-1999-annual-report",
+        pages: "physical PDF pp. 12 to 13",
+        facts: [
+          ["Facility cost", "$13.8 million"],
+          ["Environmental work", "more than $1 million for fish ladders and a habitat-compensation channel"],
+          ["Reported emissions effect", "19,000 metric tonnes of greenhouse-gas emissions displaced annually"]
+        ]
+      },
       {
         label: "2006 FILED GENERATOR COOLING WORK",
         sourceId: "np-2006-hydro-rehabilitation",
@@ -13851,6 +13943,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1999 REPORTED SURGE-TANK REPLACEMENT",
+        sourceId: "np-1999-annual-report",
+        pages: "physical PDF p. 15",
+        facts: [["Completed work", "replaced the Mobile hydro-plant surge tank as part of a combined $3.5 million program with the Petty Harbour penstock and Horse Chops surge tank"]]
+      },
+      {
         label: "2008 FILED WICKET-GATE BUSHING REPLACEMENT",
         sourceId: "np-2008-hydro-rehabilitation",
         pages: "physical PDF p. 156",
@@ -15309,6 +15407,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1999 REPORTED FEEDER RELIABILITY INVESTMENT",
+        sourceId: "np-1999-annual-report",
+        pages: "physical PDF p. 11",
+        facts: [["Area record", "Dunville was among the areas named in a $2.8 million program for distribution feeders with poor performance records"]]
+      },
       {
         label: "2002 REPORTED DUNVILLE TO FOX HARBOUR DISTRIBUTION REBUILD",
         sourceId: "np-2002-annual-report",
@@ -20537,6 +20641,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1999 REPORTED PENSTOCK REPLACEMENT",
+        sourceId: "np-1999-annual-report",
+        pages: "physical PDF p. 15",
+        facts: [["Completed work", "replaced the Petty Harbour penstock as part of a combined $3.5 million program with the Mobile and Horse Chops surge tanks"]]
+      },
+      {
         label: "2004 FILED 3L REBUILD",
         sourceId: "np-2004-transmission-rebuild",
         pages: "physical PDF p. 388",
@@ -20849,6 +20959,12 @@ export const stationProfiles = [
       facts: [["HCP-T1", "generation transformer; 66/6.9 kV; 12.00 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1999 REPORTED SURGE-TANK REPLACEMENT",
+        sourceId: "np-1999-annual-report",
+        pages: "physical PDF p. 15",
+        facts: [["Completed work", "replaced the Horse Chops hydro-plant surge tank as part of a combined $3.5 million program with the Petty Harbour penstock and Mobile surge tank"]]
+      },
       {
         label: "2000 REPORTED PENSTOCK REPLACEMENT",
         sourceId: "np-2000-annual-report",
@@ -22549,6 +22665,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1999 REPORTED FEEDER RELIABILITY INVESTMENT",
+        sourceId: "np-1999-annual-report",
+        pages: "physical PDF p. 11",
+        facts: [["Area record", "Botwood was among the areas named in a $2.8 million program for distribution feeders with poor performance records"]]
+      },
+      {
         label: "2008 FILED STATION MODERNIZATION",
         sourceId: "np-2008-station-modernization",
         pages: "physical PDF pp. 164 to 165",
@@ -23559,6 +23681,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1999 REPORTED FEEDER RELIABILITY INVESTMENT",
+        sourceId: "np-1999-annual-report",
+        pages: "physical PDF p. 11",
+        facts: [["Area record", "Riverhead was among the areas named in a $2.8 million program for distribution feeders with poor performance records"]]
+      },
       {
         label: "2006 FILED TRANSFORMER BACKUP FUSES",
         sourceId: "np-2006-substation-program",

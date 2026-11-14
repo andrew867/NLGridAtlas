@@ -15,6 +15,9 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 1999 Newfoundland Power system record from the annual report and revised General Rate Application responses. The record covers 99.89 percent service availability, actual system and regional SAIFI and SAIDI, the $2.6 million SCADA installation and Telephony Video Data connection, named poor-performing feeder areas, thermoscanning results, and the actual 0.540 system load factor.
+- Added the Petty Harbour penstock and Mobile and Horse Chops surge-tank replacements, the Rose Blanche official opening, 450 GWh company generation, 4,292 GWh purchased energy, and the 1999 transmission and substation fixed-asset values. The Burnt Islands investment remains a system timeline record because the source does not identify a station or feeder designation represented in the atlas.
+- Opened NPREG-030 for the surviving Newfoundland Power 1998 system and annual records.
 - Added the 2000 Newfoundland Power system record from the annual report and revised General Rate Application responses. The record covers 99.93 percent service availability, actual system and regional SAIFI and SAIDI, 415 GWh hydro production, 88 percent plant availability, St. Catherines construction, Gander Bay reconstruction, four distribution-line projects, feeder rebuilding, SCADA expansion, and the radio-frequency metering pilot.
 - Added the Tors Cove surge-tank and Horse Chops penstock replacements, the 2000 transmission and substation fixed-asset values, and the actual 0.549 system load factor. The Bay de Verde work remains a system timeline record because its source does not identify a station or feeder designation.
 - Opened NPREG-029 for the surviving Newfoundland Power 1999 system and annual records.
