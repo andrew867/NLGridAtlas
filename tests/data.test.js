@@ -1119,7 +1119,10 @@ test("Chamberlains records the second bank, T1 replacement, CHA-04, and current 
   assert.match(current, /CHA-T2 66\/25 kV; 25 MVA; 17\.02 MVA 2026 forecast/);
   const feederWork = chamberlains.historyRecords.find((record) => record.label === "2027 PROPOSED CHA-04 UPGRADE");
   assert.match(feederWork.facts.flat().join(" "), /93 A peak in 2025.*up to 163 A in 2027.*single-phase to three-phase/s);
-  assert.deepEqual(chamberlains.referenceSheets.map(({ image }) => image), ["./reference-maps/cha-04-2027-route.jpeg"]);
+  assert.deepEqual(chamberlains.referenceSheets.map(({ image }) => image), [
+    "./reference-maps/cha-04-2021-upgrade.jpeg",
+    "./reference-maps/cha-04-2027-route.jpeg"
+  ]);
 });
 
 test("Big Pond separates the current station record from historic capacity and 24L work", () => {
@@ -2975,8 +2978,8 @@ test("2022 Humber, Springfield, and Broad Cove records retain completion, projec
   assert.match(spfWork.facts.flat().join(" "), /1\.2 km.*2\.6 km.*#6 copper.*4\/0 AASC/);
   assert.match(spfWork.facts.flat().join(" "), /145 A.*132 A.*85 A.*50 A/);
   assert.match(spfCompletion.facts.flat().join(" "), /SPF-01 load growth upgrade complete/);
-  assert.equal(springfield.referenceSheets[0].image, "./reference-maps/spf-01-2022-upgrade.jpeg");
-  assert.equal(springfield.referenceSheets[0].pages, "physical PDF p. 402");
+  const spf01Sheet = springfield.referenceSheets.find(({ image }) => image === "./reference-maps/spf-01-2022-upgrade.jpeg");
+  assert.equal(spf01Sheet.pages, "physical PDF p. 402");
 
   const bcvEvent = broadCove.historyRecords.find((record) => record.label === "NOVEMBER 22, 2022 RADIAL SUPPLY FAULT");
   assert.match(bcvEvent.facts.flat().join(" "), /approximately 17,300.*2,285,000/);
@@ -2984,6 +2987,41 @@ test("2022 Humber, Springfield, and Broad Cove records retain completion, projec
   const timelineEvent = timeline.find((event) => event.title === "Broad Cove radial supply fault caused a station outage");
   assert.equal(timelineEvent.sourceId, "np-2022-q4-report");
   assert.equal(timelineEvent.pages, "physical PDF p. 11");
+});
+
+test("2021 load-growth records retain filed scope, route sheets, and unresolved asset completion", () => {
+  const ridgeRoad = stationProfiles.find((station) => station.code === "RRD");
+  const springfield = stationProfiles.find((station) => station.code === "SPF");
+  const pulpitRock = stationProfiles.find((station) => station.code === "PUL");
+  const chamberlains = stationProfiles.find((station) => station.code === "CHA");
+  const filedSource = sources.find((item) => item.id === "np-2021-feeder-growth");
+  const expenditureSource = sources.find((item) => item.id === "np-2022-capex-report-2021");
+
+  assert.equal(filedSource.status, "proposed");
+  assert.equal(filedSource.pages, "physical PDF pp. 181 to 186 and 190 to 194");
+  assert.equal(expenditureSource.status, "reported");
+  assert.match(expenditureSource.pages, /physical PDF pp\. 4, 8 to 10, 13 and 19 to 21/);
+
+  const rrdWork = ridgeRoad.historyRecords.find((record) => record.label === "2021 PROPOSED RRD-10 UPGRADE");
+  assert.match(rrdWork.facts.flat().join(" "), /1,276.*3\.8 km.*2\/0 ACSR.*4\/0 AASC.*\$654,000/);
+  assert.ok(ridgeRoad.referenceSheets.some(({ image, pages }) => image === "./reference-maps/rrd-10-2021-upgrade.jpeg" && pages === "physical PDF p. 190"));
+
+  const spfWork = springfield.historyRecords.find((record) => record.label === "2021 PROPOSED SPF-02 UPGRADE");
+  assert.match(spfWork.facts.flat().join(" "), /1,421.*4\.0 km.*127 A.*132 A.*85 A.*50 A.*3\.2 km.*4\/0 AASC.*\$600,000/);
+  assert.ok(springfield.referenceSheets.some(({ image, pages }) => image === "./reference-maps/spf-02-2021-upgrade.jpeg" && pages === "physical PDF p. 191"));
+
+  const pulWork = pulpitRock.historyRecords.find((record) => record.label === "2021 PROPOSED PUL-05 UPGRADE");
+  assert.match(pulWork.facts.flat().join(" "), /118 customers.*134.*2\.0 km.*#4 copper.*95 A.*\$360,000/);
+  assert.ok(pulpitRock.referenceSheets.some(({ image, pages }) => image === "./reference-maps/pul-05-2021-upgrade.jpeg" && pages === "physical PDF p. 193"));
+
+  const chaWork = chamberlains.historyRecords.find((record) => record.label === "2021 PROPOSED CHA-04 UPGRADE");
+  assert.match(chaWork.facts.flat().join(" "), /128 customers.*163.*1\.3 km.*94 A.*\$290,000/);
+  assert.ok(chamberlains.referenceSheets.some(({ image, pages }) => image === "./reference-maps/cha-04-2021-upgrade.jpeg" && pages === "physical PDF p. 194"));
+
+  for (const record of [rrdWork, spfWork, pulWork, chaWork]) {
+    assert.match(record.label, /PROPOSED/);
+    assert.doesNotMatch(record.facts.flat().join(" "), /completed|commissioned/);
+  }
 });
 
 test("station history records retain source and page references", async () => {

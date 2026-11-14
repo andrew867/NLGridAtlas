@@ -2560,6 +2560,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
   },
   {
+    id: "np-2021-feeder-growth",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, Feeder Additions for Load Growth",
+    topics: ["Ridge Road", "Springfield", "Port Blandford", "Pulpit Rock", "Chamberlains", "RRD-10", "SPF-02", "PBD-01", "PUL-05", "CHA-04", "Airport Substation", "feeder load growth", "route drawing"],
+    pages: "physical PDF pp. 181 to 186 and 190 to 194",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
+  },
+  {
+    id: "np-2022-capex-report-2021",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Expenditure Report",
+    topics: ["substations", "transmission", "distribution", "telecommunications", "feeder load growth", "35L", "fibre optic cable", "in-service failures", "actual expenditure", "carryover expenditure"],
+    pages: "physical PDF pp. 4, 8 to 10, 13 and 19 to 21",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202021%20Capital%20Expenditure%20Report%20-%202022-02-28.pdf"
+  },
+  {
     id: "pu-4-2021-deer-lake-power",
     year: 2021,
     organization: "Board of Commissioners of Public Utilities",
@@ -9997,6 +10017,19 @@ const earlyFeederMapProfiles = [
         ]
       },
       {
+        label: "2021 PROPOSED CHA-04 UPGRADE",
+        sourceId: "np-2021-feeder-growth",
+        pages: "physical PDF pp. 184 to 185 and 194",
+        facts: [
+          ["Location", "Three Island Pond Road in Paradise"],
+          ["Customer growth", "128 customers in 2010 and 163 in the filed current record"],
+          ["Affected section", "1.3 km of overloaded single-phase line"],
+          ["2020 forecast load", "94 A"],
+          ["Filed work", "convert the 1.3 km section from single phase to three phase"],
+          ["Approved allocation", "$290,000"]
+        ]
+      },
+      {
         label: "2027 PROPOSED CHA-04 UPGRADE",
         sourceId: "np-2027-cha04",
         pages: "physical PDF pp. 38 to 39 and 391",
@@ -10009,8 +10042,15 @@ const earlyFeederMapProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "2027 CHA-04 ROUTE",
+    referenceSheetLabel: "2021 AND 2027 CHA-04 ROUTES",
     referenceSheets: [
+      {
+        title: "2021 proposed Three Island Pond Road conversion",
+        image: "./reference-maps/cha-04-2021-upgrade.jpeg",
+        alt: "Filed CHA-04 route drawing showing the 1.3 kilometre Three Island Pond Road single-phase section proposed for three-phase conversion",
+        sourceId: "np-2021-feeder-growth",
+        pages: "physical PDF p. 194"
+      },
       {
         title: "CHA-04 route through Paradise",
         image: "./reference-maps/cha-04-2027-route.jpeg",
@@ -15323,6 +15363,18 @@ export const stationProfiles = [
           ["Planned transfer", "3 MVA from VIR-07 to the Ridge Road transformer bank"],
           ["2015 station load", "92% of the two-transformer 40 MVA combined rating"]
         ]
+      },
+      {
+        label: "2021 PROPOSED RRD-10 UPGRADE",
+        sourceId: "np-2021-feeder-growth",
+        pages: "physical PDF pp. 181 to 182 and 190",
+        facts: [
+          ["Service", "approximately 1,276 residential and commercial customers in St. John's"],
+          ["Affected section", "3.8 km along Portugal Cove Road from Airport Heights Drive"],
+          ["Filed work", "replace non-standard 2/0 ACSR on the three-phase section with 4/0 AASC"],
+          ["System purpose", "carry planned transfers from Broad Cove through RRD-10 to the new Airport Substation feeders"],
+          ["Approved allocation", "$654,000"]
+        ]
       }
     ],
     referenceSheets: [
@@ -15332,6 +15384,13 @@ export const stationProfiles = [
         alt: "Filed route drawing for the proposed 1.2 kilometre RRD-10 feeder extension to VIR-07 near Airport Road",
         sourceId: "np-2016-feeder-growth",
         pages: "physical PDF p. 418"
+      },
+      {
+        title: "2021 proposed RRD-10 reconductoring",
+        image: "./reference-maps/rrd-10-2021-upgrade.jpeg",
+        alt: "Filed RRD-10 route drawing showing the 3.8 kilometre Portugal Cove Road section proposed for 4/0 AASC reconductoring",
+        sourceId: "np-2021-feeder-growth",
+        pages: "physical PDF p. 190"
       }
     ]
   },
@@ -15918,6 +15977,19 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2021 PROPOSED PUL-05 UPGRADE",
+        sourceId: "np-2021-feeder-growth",
+        pages: "physical PDF pp. 184 to 185 and 193",
+        facts: [
+          ["Location", "Middle Cove Road in Torbay and Logy Bay-Middle Cove-Outer Cove"],
+          ["Customer growth", "118 customers in 2010 and 134 in the filed current record"],
+          ["Existing section", "2.0 km of overloaded single-phase line with non-standard #4 copper"],
+          ["2020 forecast load", "95 A"],
+          ["Filed work", "convert the 2.0 km section from single phase to three phase"],
+          ["Approved allocation", "$360,000"]
+        ]
+      },
+      {
         label: "2022 PUL-03 PROJECT BASIS",
         sourceId: "np-2022-feeder-growth",
         pages: "physical PDF pp. 400 to 401",
@@ -15986,6 +16058,13 @@ export const stationProfiles = [
         alt: "Filed route drawing for the proposed 3.9 kilometre PUL-05 feeder to the VIR-06 interconnection at Torbay Road",
         sourceId: "np-2016-feeder-growth",
         pages: "physical PDF p. 419"
+      },
+      {
+        title: "2021 proposed PUL-05 Middle Cove Road upgrade",
+        image: "./reference-maps/pul-05-2021-upgrade.jpeg",
+        alt: "Filed PUL-05 route drawing showing the two kilometre Middle Cove Road single-phase section proposed for three-phase conversion",
+        sourceId: "np-2021-feeder-growth",
+        pages: "physical PDF p. 193"
       },
       {
         title: "2022 PUL-03 route and completed upgrade section",
@@ -17449,6 +17528,19 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2021 PROPOSED SPF-02 UPGRADE",
+        sourceId: "np-2021-feeder-growth",
+        pages: "physical PDF pp. 182 to 183 and 191",
+        facts: [
+          ["Feeder", "SPF-02; 12.5 kV; approximately 1,421 primarily residential customers in Makinsons, Cupids, Brigus and Roaches Line"],
+          ["Existing section", "4.0 km of 1970s-vintage construction with non-standard #6 copper; mixed two-phase and three-phase line"],
+          ["Measured current", "approximately 127 A per phase on the two-phase section"],
+          ["Planning values", "132 A winter rating for new #6 copper; 85 A single-phase planning maximum; 50 A neutral current"],
+          ["Filed work", "convert 3.2 km from two phase to three phase and reconductor the full 4.0 km with 4/0 AASC"],
+          ["Approved allocation", "$600,000"]
+        ]
+      },
+      {
         label: "2022 SPF-01 LOAD GROWTH WORK",
         sourceId: "np-2022-feeder-growth",
         pages: "physical PDF pp. 402 to 403 and 407",
@@ -17470,8 +17562,15 @@ export const stationProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "2022 FILED SPF-01 ROUTE",
+    referenceSheetLabel: "2021 AND 2022 FILED FEEDER ROUTES",
     referenceSheets: [
+      {
+        title: "SPF-02 Hodgewater Line conversion and reconductoring",
+        image: "./reference-maps/spf-02-2021-upgrade.jpeg",
+        alt: "Filed SPF-02 map showing 3.2 kilometres of two-phase line selected for three-phase conversion and 0.8 kilometres of three-phase line selected for reconductoring",
+        sourceId: "np-2021-feeder-growth",
+        pages: "physical PDF p. 191"
+      },
       {
         title: "SPF-01 three-phase conversion and reconductoring",
         image: "./reference-maps/spf-01-2022-upgrade.jpeg",

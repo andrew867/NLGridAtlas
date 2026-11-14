@@ -778,6 +778,18 @@
       "notes": "Humber, Glovertown, and SPF-01 are tied to direct completion records. Humber also has a separate project closeout. Broad Cove retains the reported November 22 radial-supply outage without assigning an unreported circuit number. The 2022 teleprotection carryover remains separate from its 2023 commissioning record."
     },
     {
+      "id": "NPREG-007",
+      "title": "Reconcile Newfoundland Power 2021 feeder, station, transmission, and capital records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2021 capital application, capital expenditure report, and annual financial report for feeder projects, station work, transmission projects, equipment failures, and year-end carryover.",
+      "dependencies": ["ARC-001", "SRC-001"],
+      "completion_evidence": ["research/NP_2021_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "The filed RRD-10, SPF-02, PUL-05, and CHA-04 scopes and route drawings are attached to their station records. The expenditure report leaves $671,000 of the load-growth feeder program in 2022 carryover without identifying an individual feeder, so the asset records remain proposed. The annual report adds aggregate plant values but no topology or commissioning dates."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
