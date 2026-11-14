@@ -650,6 +650,96 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
   },
   {
+    id: "np-2012-capital-transmission",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, Transmission Line Rebuilds",
+    topics: ["21L", "124L", "Horse Chops", "Clarenville", "White Hills", "transmission line rebuild", "477 ASC"],
+    pages: "physical PDF pp. 427 to 436",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2012-south-stjohns-load",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, South St. John's and Mount Pearl Load Study",
+    topics: ["Hardwoods", "Glendale", "Goulds", "transformer loading", "load forecast", "66 kV", "12.5 kV", "25 kV"],
+    pages: "physical PDF pp. 363 to 370",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2012-feeder-growth",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, Feeder Additions for Growth",
+    topics: ["KEL-03", "PUL-02", "SJM-08", "Kelligrews", "Pulpit Rock", "St. John's Main", "distribution feeder"],
+    pages: "physical PDF pp. 463 to 465 and 469",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2012-fibre-plan",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, St. John's Fibre Network Expansion",
+    topics: ["System Control Centre", "Molloy's Lane", "Stamp's Lane", "St. John's Main", "fibre network"],
+    pages: "physical PDF pp. 93 to 94",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2012-lockston",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, Lockston Plant Refurbishment",
+    topics: ["Lockston", "hydroelectric generation", "governor controls", "generator rewind", "protection and control", "station service"],
+    pages: "physical PDF pp. 28, 44 and 278 to 294",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2012-q2-report",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "Q2 2012 Quarterly Report, Capital Project Status",
+    topics: ["124L", "Cobb's Pond", "Lockston", "capital project status"],
+    pages: "physical PDF p. 625",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-520.pdf"
+  },
+  {
+    id: "np-2012-q3-report",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "Q3 2012 Quarterly Report, Capital Project Status",
+    topics: ["21L", "110L", "Heart's Content", "Grand Falls", "SJM-08", "capital project completion"],
+    pages: "physical PDF p. 12",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/information/Information-23.pdf"
+  },
+  {
+    id: "np-2012-fibre-decision",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016, St. John's Fibre Expansion Decision",
+    topics: ["System Control Centre", "Molloy's Lane", "Stamp's Lane", "St. John's Main", "leased circuits", "fibre network"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/rfi/CA-NP-016.pdf"
+  },
+  {
+    id: "np-2012-annual-review",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2012 Annual Capital Expenditure Review",
+    topics: ["Lockston", "110L", "St. John's Main", "fibre network", "capital expenditure"],
+    pages: "physical PDF pp. 20 to 21",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-179,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-2011-hardwoods",
     year: 2011,
     organization: "Newfoundland Power",
@@ -5827,6 +5917,51 @@ export const timeline = [
     status: "verified"
   },
   {
+    date: "2012-06",
+    category: "station",
+    title: "White Hills section of 124L rebuilt",
+    body: "Newfoundland Power reported the 5 km section near Clarenville complete. The filed work replaced 23 wood H-frame structures exposed to greater ice loading than the original design basis.",
+    sourceId: "np-2012-q2-report",
+    pages: "physical PDF p. 625",
+    status: "verified"
+  },
+  {
+    date: "2012-Q3",
+    category: "station",
+    title: "21L rebuild completed",
+    body: "Newfoundland Power reported the Horse Chops to 20L tap section complete. The filed project replaced the 1952 H-frame line and 266.8 ACSR conductor with 477 ASC construction.",
+    sourceId: "np-2012-q3-report",
+    pages: "physical PDF p. 12",
+    status: "verified"
+  },
+  {
+    date: "2012-Q3",
+    category: "station",
+    title: "Heart's Content and Grand Falls station work completed",
+    body: "The third-quarter report records both modernization projects complete and the stations returned to normal service.",
+    sourceId: "np-2012-q3-report",
+    pages: "physical PDF p. 12",
+    status: "verified"
+  },
+  {
+    date: "2012-Q3",
+    category: "station",
+    title: "SJM-08 relocation completed",
+    body: "Newfoundland Power reported the feeder relocation to the south side of Water Street and Harbour Drive complete.",
+    sourceId: "np-2012-q3-report",
+    pages: "physical PDF p. 12",
+    status: "verified"
+  },
+  {
+    date: "2012-06",
+    category: "telecom",
+    title: "St. John's fibre construction replaced by leased circuits",
+    body: "A five-year vendor agreement supplied the six remaining circuits. Newfoundland Power suspended the three fibre routes filed for construction in the 2012 capital application.",
+    sourceId: "np-2012-fibre-decision",
+    pages: "physical PDF p. 1",
+    status: "verified"
+  },
+  {
     date: "2012-09-11",
     category: "load",
     title: "Hurricane Leslie interrupted Avalon load",
@@ -10933,6 +11068,15 @@ const earlyFeederMapProfiles = [
           ["Failure record", "in-service failure in 2025; repaired without a portable transformer"]
         ]
       }
+    ],
+    referenceSheets: [
+      {
+        title: "2012 Gander area distribution network",
+        image: "./reference-maps/gander-2012-distribution-network.png",
+        alt: "Filed Gander area network drawing showing Cobb's Pond, Gander, Glenwood, Lewisporte, Gambo, Gander Bay, Roycefield, and connected substations",
+        sourceId: "np-2012-cobbs-pond",
+        pages: "physical PDF p. 348"
+      }
     ]
   },
   {
@@ -13158,6 +13302,15 @@ export const stationProfiles = [
           ["Reported status", "project proceeding as approved; completion planned for the fourth quarter of 2027"]
         ]
       }
+    ],
+    referenceSheets: [
+      {
+        title: "2012 Gander area distribution network",
+        image: "./reference-maps/gander-2012-distribution-network.png",
+        alt: "Filed Gander area network drawing showing Gander, Cobb's Pond, Glenwood, Lewisporte, Gambo, Gander Bay, Roycefield, and connected substations",
+        sourceId: "np-2012-cobbs-pond",
+        pages: "physical PDF p. 348"
+      }
     ]
   },
   {
@@ -14766,6 +14919,35 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2011 FILED 2012 PLANT REFURBISHMENT",
+        sourceId: "np-2012-lockston",
+        pages: "physical PDF pp. 28, 44 and 278 to 294",
+        facts: [
+          ["Plant systems", "replace or refurbish plant controls, governor controls, protection, cables, station service, AC and DC panels, and switchgear"],
+          ["Generating unit", "rewind G1; replace the exciter; refurbish the runner, wicket gates, and main valve"],
+          ["Station work", "replace substation and transmission protection panels and extend the building"],
+          ["Filed cost", "$3.451 million"]
+        ]
+      },
+      {
+        label: "Q2 2012 CONSTRUCTION STATUS",
+        sourceId: "np-2012-q2-report",
+        pages: "physical PDF p. 625",
+        facts: [
+          ["Building", "extension substantially complete"],
+          ["Plant outage", "scheduled to begin in mid-July 2012"]
+        ]
+      },
+      {
+        label: "2012 ACTUAL EXPENDITURE REVIEW",
+        sourceId: "np-2012-annual-review",
+        pages: "physical PDF p. 20",
+        facts: [
+          ["Variance", "$387,000 below budget"],
+          ["Cause", "competitive construction bid"]
+        ]
+      },
+      {
         label: "2013 COMPLETED 110L REBUILD",
         sourceId: "np-2013-q4-report",
         pages: "physical PDF p. 787; attachment p. 76",
@@ -15248,6 +15430,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "JUNE 2012 COMPLETED WHITE HILLS 124L SECTION",
+        sourceId: "np-2012-q2-report",
+        pages: "physical PDF p. 625",
+        facts: [
+          ["Section", "5 km of 138 kV H-frame line near Clarenville; 23 structures"],
+          ["Filed condition", "seven insulator, four crossarm, one crossbrace, and nine structure deficiencies"],
+          ["Ice loading", "12.7 mm original design basis; 38 mm measured ice accumulation cited in the filing"],
+          ["Longest spans", "1,283 ft and 1,502 ft"],
+          ["Completion", "reported complete in June 2012"]
+        ]
+      },
+      {
         label: "2015 COMPLETED MODERNIZATION",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF p. 3",
@@ -15276,6 +15470,15 @@ export const stationProfiles = [
           ["Feeder details", "CLV-02 provided backup to the Clarenville Hospital for a 1.2 MVA demand; CLV-03 supplied White Hills Ski Resort"],
           ["Parallel-bank capacity", "the filing gives 41.5 MVA for CLV-T2 and CLV-T3 operating in parallel because transformer impedance affects load sharing"]
         ]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "2012 filed White Hills 124L rebuild route",
+        image: "./reference-maps/124l-2012-route.png",
+        alt: "Filed route drawing for the White Hills section of 124L near Clarenville",
+        sourceId: "np-2012-capital-transmission",
+        pages: "physical PDF p. 436"
       }
     ]
   },
@@ -15830,6 +16033,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2011 FILED FIBRE ROUTES / JUNE 2012 LEASE DECISION",
+        sourceId: "np-2012-fibre-decision",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Filed routes", "System Control Centre to Molloy's Lane, Molloy's Lane to Stamp's Lane, and Molloy's Lane to St. John's Main"],
+          ["Re-evaluation", "leasing the six remaining circuits was selected as the least-cost option"],
+          ["Agreement", "five-year vendor lease completed in June 2012"],
+          ["Construction", "the three filed fibre routes were suspended"]
+        ]
+      },
+      {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
         pages: "physical PDF pp. 316 to 319",
@@ -15911,6 +16125,17 @@ export const stationProfiles = [
       facts: [["HWD-02", "12.5 kV; HWD-T1/T2; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2011 FILED 2013 LOAD FORECAST",
+        sourceId: "np-2012-south-stjohns-load",
+        pages: "physical PDF pp. 363 to 370",
+        facts: [
+          ["HWD-T1", "66/12.5 kV; 20 MVA; 20.1 MVA forecast for 2013"],
+          ["HWD-T2", "66/12.5 kV; 20 MVA; 20.1 MVA forecast for 2013"],
+          ["HWD-T3", "66/25 kV; 25 MVA in the filed existing arrangement"],
+          ["Service", "five distribution feeders and approximately 4,635 customers"]
+        ]
+      },
       {
         label: "2016 FILED ST. JOHN'S WEST FIBRE ROUTE",
         sourceId: "np-2016-fibre-network",
@@ -16445,6 +16670,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2011 FILED 2013 LOAD FORECAST",
+        sourceId: "np-2012-south-stjohns-load",
+        pages: "physical PDF pp. 363 to 370",
+        facts: [
+          ["GOU-T2", "66/12.5 kV; 20 MVA; 21.4 MVA forecast for 2013"],
+          ["GOU-T3", "66/12.5 kV; 13.3 MVA; 14.0 MVA forecast for 2013"],
+          ["GOU-T1", "33/66 kV generation step-up transformer"],
+          ["Service", "three distribution feeders and approximately 4,456 customers"]
+        ]
+      },
+      {
         label: "2014 FILED 18L REBUILD",
         sourceId: "np-2014-transmission-lines",
         pages: "physical PDF pp. 310 to 311",
@@ -16882,6 +17118,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2011 FILED 2013 LOAD FORECAST",
+        sourceId: "np-2012-south-stjohns-load",
+        pages: "physical PDF pp. 363 to 370",
+        facts: [
+          ["GDL-T1", "66/12.5 kV; 25 MVA; 22.4 MVA forecast for 2013"],
+          ["GDL-T2", "66/12.5 kV; 25 MVA; 22.4 MVA forecast for 2013"],
+          ["Filed staging", "civil work in 2012; third 25 MVA transformer and two feeders in 2013"],
+          ["Service", "six distribution feeders and approximately 6,422 customers in the filed existing arrangement"]
+        ]
+      },
+      {
         label: "2013 PROPOSED FEEDER ADDITIONS",
         sourceId: "np-2013-feeder-growth",
         pages: "physical PDF p. 312",
@@ -16989,6 +17236,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "Q3 2012 COMPLETED SJM-08 RELOCATION",
+        sourceId: "np-2012-q3-report",
+        pages: "physical PDF p. 12",
+        facts: [
+          ["Route", "south side of Water Street and Harbour Drive"],
+          ["Filed cable", "three 1,100 m single-phase 500 MCM XLPE cables"],
+          ["Completion", "reported complete in the third quarter of 2012"]
+        ]
+      },
       {
         label: "2013 PROPOSED FEEDER AND DUCTBANK WORK",
         sourceId: "np-2013-feeder-growth",
@@ -17578,6 +17835,17 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2012 FILED PUL-02 CONDUCTOR UPGRADE",
+        sourceId: "np-2012-feeder-growth",
+        pages: "physical PDF pp. 464 to 465 and 469",
+        facts: [
+          ["Route", "6.8 km from Pulpit Rock toward Windgap Road"],
+          ["Existing conductor", "4/0 AASC; 356 A planning rating"],
+          ["Filed forecast", "374 A per phase"],
+          ["Proposed conductor", "477 ASC; 590 A planning rating"]
+        ]
+      },
+      {
         label: "2026 PUL-T2 REPLACEMENT SCHEDULE",
         sourceId: "np-2027-ca-np-040",
         pages: "physical PDF p. 2",
@@ -17692,6 +17960,13 @@ export const stationProfiles = [
       }
     ],
     referenceSheets: [
+      {
+        title: "2012 proposed PUL-02 conductor upgrade",
+        image: "./reference-maps/pul-02-2012-single-line.png",
+        alt: "Filed PUL-02 distribution drawing showing the proposed 477 ASC conductor section from Pulpit Rock toward Windgap Road",
+        sourceId: "np-2012-feeder-growth",
+        pages: "physical PDF p. 469"
+      },
       {
         title: "2016 proposed PUL-02 conductor upgrade",
         image: "./reference-maps/pul-02-2016-upgrade.jpg",
@@ -18054,6 +18329,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2012 COMPLETED 21L REBUILD",
+        sourceId: "np-2012-q3-report",
+        pages: "physical PDF p. 12",
+        facts: [
+          ["Line", "5.3 km of 66 kV H-frame construction between Horse Chops and the 20L tap; 36 two-pole and three-pole structures; built in 1952"],
+          ["Filed condition", "the 2010 inspection recorded 25 insulator, seven crossarm, 17 crossbrace, and 11 pole deficiencies"],
+          ["Filed conductor", "replace 266.8 ACSR with 477 ASC"],
+          ["Completion", "reported complete in the third quarter of 2012"]
+        ]
+      },
+      {
         label: "2009 SUBSTATION REBUILD",
         sourceId: "np-2009-q4-horse-chops",
         pages: "physical PDF p. 553",
@@ -18114,6 +18400,15 @@ export const stationProfiles = [
         sourceId: "np-2026-q2-regulatory",
         pages: "physical PDF p. 9",
         facts: [["Status", "design complete; field work expected to begin in the third quarter of 2026"]]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "2012 filed 21L rebuild route",
+        image: "./reference-maps/21l-2012-route.png",
+        alt: "Filed route drawing for the 21L rebuild between Horse Chops and the 20L transmission line tap",
+        sourceId: "np-2012-capital-transmission",
+        pages: "physical PDF p. 432"
       }
     ]
   },

@@ -886,6 +886,18 @@
       "notes": "The station records now include the final original 110L section, St. Catherines and Stephenville filed refurbishment plus completion, Kenmount flood mitigation, and the Glendale, St. John's Main, and KEL-02 feeder projects. The radio section separates Newfoundland Power's 24-site network and Bell PassPort replacement from Hydro's radio systems. Filed projects without asset-specific completion evidence remain proposed."
     },
     {
+      "id": "NPREG-016",
+      "title": "Reconcile Newfoundland Power 2012 transmission, station, feeder, plant, fibre, and capital records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2012 capital application, quarterly status reports, annual capital review, transmission rebuilds, station and plant work, feeder projects, and the St. John's fibre decision.",
+      "dependencies": ["NPREG-015"],
+      "completion_evidence": ["research/NP_2012_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/21l-2012-route.png", "public/reference-maps/124l-2012-route.png", "public/reference-maps/pul-02-2012-single-line.png", "public/reference-maps/gander-2012-distribution-network.png", "tests/np-2012-capital.test.js"],
+      "blocker": null,
+      "notes": "The station records now include the completed 21L and White Hills 124L sections, completed SJM-08 relocation, 2011 South St. John's and Mount Pearl transformer forecasts, Lockston filed scope and expenditure variance, the proposed PUL-02 work, and the Gander area network drawing. The three filed St. John's fibre routes are recorded as suspended after six leased circuits were selected. Filed work without an asset-level completion record remains proposed."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

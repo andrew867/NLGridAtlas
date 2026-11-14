@@ -15,6 +15,12 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the completed 2012 21L rebuild between Horse Chops and the 20L tap, including the filed 5.3 km route, 36 structures, inspection deficiencies, conductor replacement, completion report, and route drawing.
+- Added the completed June 2012 White Hills section of 124L near Clarenville, including the 5 km route, 23 structures, cited ice-loading difference, long spans, and route drawing.
+- Added the completed SJM-08 Water Street and Harbour Drive relocation. Added the filed PUL-02 conductor upgrade as proposed because no asset-level completion record was located.
+- Added the 2011 filed 2013 transformer-load forecasts for Hardwoods, Glendale, and Goulds. Added the filed Lockston refurbishment scope, Q2 construction state, and annual expenditure variance without replacing those records with an unsupported final completion date.
+- Added the 2012 St. John's fibre decision. The three filed construction routes were suspended after Newfoundland Power completed a five-year lease for six circuits.
+- Added the 2012 Gander area distribution network drawing to the Cobb's Pond and Gander records.
 - Added the 2013 final original 110L rebuild record, including the 21.1 km Lethbridge to Summerville section, 227 original structures, 1/0 ACSR replacement by 477 ASC, derating basis, October completion report, and filed route drawing.
 - Added the filed St. Catherines and Stephenville modernization work and the separate fourth-quarter completion report. Added Kenmount's filed access-road, culvert, and flood-berm work as proposed because the reviewed reports do not identify its completion.
 - Added the filed Glendale feeder additions, St. John's Main aerial-feeder and SJM-07 ductbank work, and KEL-02 voltage regulators. These remain proposed because the reviewed reports do not provide asset-specific completion records.
@@ -227,7 +233,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the Newfoundland Power 2012 capital and system records, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the Newfoundland Power 2011 capital and system records, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

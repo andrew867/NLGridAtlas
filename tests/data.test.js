@@ -2933,7 +2933,7 @@ test("2016 feeder growth records retain proposed currents, transfers, and route 
   const pul2016 = pulpitRock.historyRecords.find((record) => record.label === "2016 PROPOSED FEEDER WORK");
   assert.match(pul2016.facts.flat().join(" "), /193 A per phase.*153 A per-phase planning rating/);
   assert.match(pul2016.facts.flat().join(" "), /35\.8 MVA, 72%/);
-  assert.equal(pulpitRock.referenceSheets[0].image, "./reference-maps/pul-02-2016-upgrade.jpg");
+  assert.equal(pulpitRock.referenceSheets.find(({ sourceId }) => sourceId === "np-2016-feeder-growth").image, "./reference-maps/pul-02-2016-upgrade.jpg");
 });
 
 test("2022 PUL-03 and VIR-01 records separate measured project bases from completion", () => {
