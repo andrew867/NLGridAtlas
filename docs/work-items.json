@@ -1394,12 +1394,12 @@
       "title": "Reconcile Newfoundland Power 1970 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1970 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-057"],
-      "completion_evidence": [],
+      "completion_evidence": ["research/NP_1970_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1970-system.test.js"],
       "blocker": null,
-      "notes": "Start with historical demand, terminal and transmission construction, transformer installations, generation equipment and dated communications records."
+      "notes": "Historical demand establishes the reported Newfoundland Power peak. Later primary records establish Holyrood Unit 1 commissioning, both Unit 1 and Unit 2 generator installations, the original T2 and present T3 generator-transformer histories, Hawke's Bay Terminal Station, TL220, TL221, TL225, TL226, TL227, Massey Drive and Harbour Grace transformer installations, Blaketown terminal assets, Bay d'Espoir Surge Tank 3, and Holyrood's emergency paging system. Unit 2's 1970 generator installation remains separate from its 1971 generating-unit commissioning."
     },
     {
       "id": "ASSET-001",

@@ -163,6 +163,10 @@ Work items:
 - ASSET-001
 - ASSET-002
 
+Current state:
+
+- The year-by-year Newfoundland Power register is complete from 1970 through 2024. All `NPREG` and `ISL` work items are complete; the remaining evidence gaps retain their deferred or blocked status in `docs/work-items.json`.
+
 Exit gate:
 
 1. The documented 230 kV, 138 kV, 69 kV, and 66 kV backbone is represented in structured data.
