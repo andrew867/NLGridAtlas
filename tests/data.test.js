@@ -3076,6 +3076,7 @@ test("station reference schematics remain expandable and locally preserved", asy
     "physical PDF p. 37",
     "physical PDF p. 38",
     "physical PDF p. 39",
+    "physical PDF p. 568",
     "physical PDF p. 558"
   ]);
   assert.deepEqual(goulds.referenceSheets.map((sheet) => sheet.pages), ["physical PDF p. 42", "physical PDF p. 43"]);
@@ -3248,6 +3249,7 @@ test("map selection stays in place and feeder maps are expandable", async () => 
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(main, /event\.preventDefault\(\);[\s\S]*event\.stopImmediatePropagation\(\);[\s\S]*showHandbookStation/);
   assert.match(main, /handbook-detail-station-link/);
+  assert.match(main, /stationLink\.setAttribute\("aria-label", `Open \$\{station\.name\} station record`\)/);
   assert.match(main, /stationDetailAnchors = \{[\s\S]*HWD: "#substation-hwd"/);
   assert.match(main, /<details class="feeder-map">/);
   assert.match(main, /\.\/feeder-maps\/\$\{feeder\.toLowerCase\(\)\}\.jpg/);

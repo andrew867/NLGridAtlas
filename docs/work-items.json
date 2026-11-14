@@ -850,6 +850,18 @@
       "notes": "King's Bridge now retains the filed 4.16 kV to 12.5 kV conversion, new feeder positions, and 30L reconstruction record. Hardwoods, Kenmount, Humber, Bayview, Massey Drive, and Walbournes include the filed fibre routes. Greenhill keeps the 2014 condition findings separate from reported expenditure. The two later records disagree on the 2016 fibre actual, and neither gives the exact installed St. John's endpoints."
     },
     {
+      "id": "NPREG-013",
+      "title": "Reconcile Newfoundland Power 2015 line, feeder, generation, SCADA, and capital records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2015 capital application, transmission rebuilds, reliability and load-growth feeders, Tors Cove and Seal Cove plant work, SCADA replacement, route drawings, and later reported expenditures.",
+      "dependencies": ["NPREG-012"],
+      "completion_evidence": ["research/NP_2015_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/14l-2015-route.png", "public/reference-maps/15l-2015-route.png", "public/reference-maps/69l-2015-route.png", "public/reference-maps/kbr-10-2015-route.png", "public/reference-maps/mol-09-2015-route.png", "public/reference-maps/mob-01-2015-route.png", "tests/np-2015-capital.test.js"],
+      "blocker": null,
+      "notes": "The station records now include the filed 14L, 15L, 30L, 69L, 400L, and 404L work; KBR-10 and MOL-09 reliability data; MOB-01 and RBK-01 growth work; and Tors Cove and Seal Cove plant records. The 1999 SCADA system inventory and proposed replacement are dated. The later expenditure table remains separate from asset commissioning evidence. The primary filing gives both 1951 and 1959 for 69L construction."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

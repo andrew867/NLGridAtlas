@@ -212,10 +212,13 @@ Updated: 2026-11-13
 - Rebuilt Soldiers Pond from the September 2015 filed operating diagram. The station view now shows buses B1 and B2, five breaker strings, all 18 filed breaker identifiers, the six 230 kV routes, three synchronous-condenser connections, and four converter-station connections. The equipment record adds five operating 75 MVAR filters plus one installed spare and the 230/25/15 kV, 200 MVA synchronous-condenser transformer spare. Converter-transformer nameplates, station service, and a post-commissioning as-built breaker sheet remain open.
 - Added completed 2025 terminal-station work from Hydro's quarterly reports. The records now identify exact breaker, disconnect, relay, transformer-refurbishment, dissolved-gas-monitoring, and coating work at Oxen Pond, Hardwoods, Holyrood, Sunnyside, Stony Brook, Western Avalon, Bay d'Espoir, Upper Salmon, Massey Drive, Come By Chance, Grand Falls Frequency Converter, Stephenville, and Buchans.
 - Reconciled the 2024 Hydro quarterly and year-end reports with the capital-program asset registers. The atlas adds completed station work where the reports identify it, keeps the capital lists proposed where the completed equipment identifier is not stated, and records that Hardwoods B2L42 current-transformer construction did not proceed in 2024 or 2025.
+- Added the filed 2015 14L, 15L, 30L, 69L, 400L, and 404L transmission work and the original route sheets. The 69L construction year remains a documented source conflict because the same filing gives 1951 and 1959.
+- Added KBR-10 and MOL-09 reliability performance, MOB-01 and RBK-01 load-growth work, and the filed route sheets for KBR-10, MOL-09, and MOB-01.
+- Added the 2015 Tors Cove and Seal Cove generating-station scopes, later reported expenditures, and the filed 1999 SCADA system inventory and replacement scope. Proposed work remains separate from later pooled capital actuals.
 
 ## Active work
 
-1. Continue source-specific central, northeastern, western, and rural station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the Newfoundland Power 2014 capital and system records, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

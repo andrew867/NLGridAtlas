@@ -491,6 +491,7 @@ function showHandbookStation(code) {
     stationLink.href = "#station-browser";
     stationLink.dataset.stationRecord = code;
     stationLink.textContent = `Open ${station.name} station record`;
+    stationLink.setAttribute("aria-label", `Open ${station.name} station record`);
   }
   document.querySelector("#handbook-detail-data").innerHTML = [
     ["Feeders", stationRecord ? (stationRecord.feeders.length ? stationRecord.feeders.join(", ") : "None listed") : "Not in station register"],

@@ -110,6 +110,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
   },
   {
+    id: "np-2015-transmission-lines",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Transmission Line Rebuilds",
+    topics: ["14L", "15L", "30L", "69L", "400L", "404L", "66 kV", "MUN", "SLA", "MOL", "KBR", "KEN", "BBK", "WHE", "transmission rebuild"],
+    pages: "physical PDF pp. 552 to 569",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2015-reliability-feeders",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, KBR-10 and MOL-09 Reliability Work",
+    topics: ["KBR-10", "MOL-09", "distribution reliability", "SAIFI", "SAIDI", "CHIKM", "CIKM", "conductor replacement"],
+    pages: "physical PDF pp. 75, 598 to 599, 615 to 619 and 629 to 633",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2015-feeder-growth",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Feeder Additions for Load Growth",
+    topics: ["MOB-01", "RBK-01", "SCV-01", "KEN-05", "12.5 kV", "distribution feeder", "load growth"],
+    pages: "physical PDF pp. 73, 646 to 649 and 653",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2015-plants",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Tors Cove and Seal Cove Plant Work",
+    topics: ["Tors Cove", "Seal Cove", "TCV", "SCV", "hydroelectric generation", "generator rotor", "penstock", "turbine runner"],
+    pages: "physical PDF pp. 28, 30, 342 to 343, 356 and 361",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2015-scada",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, SCADA Replacement",
+    topics: ["SCADA", "OASyS", "Tru64", "remote terminal unit", "historian", "ICCP", "system control"],
+    pages: "physical PDF pp. 110 to 111 and 783 to 789",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-2021-ca-np-001-2015-actuals",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "CA-NP-001 Attachment A, 2015 Capital Project Budget and Actual Expenditures",
+    topics: ["2015 capital expenditure", "Tors Cove", "Seal Cove", "transmission", "distribution reliability", "SCADA", "actual expenditure"],
+    pages: "physical PDF pp. 3 to 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/rfis/CA-NP-001.PDF"
+  },
+  {
     id: "nlh-2004-reliability-review",
     year: 2004,
     organization: "Newfoundland and Labrador Hydro",
@@ -5693,6 +5753,15 @@ export const timeline = [
     status: "verified"
   },
   {
+    date: "2015",
+    category: "telecom",
+    title: "Newfoundland Power filed a SCADA replacement",
+    body: "The two-year project proposed replacing the 1999 OASyS system and its Tru64 platform. The filed inventory covered 71 substations, 25 hydro generators, two gas turbines, 187 feeders, 78 power transformers, and approximately 40,000 points.",
+    sourceId: "np-2015-scada",
+    pages: "physical PDF pp. 783 to 789",
+    status: "proposed"
+  },
+  {
     date: "2019",
     category: "station",
     title: "Long Pond Substation was built",
@@ -8903,6 +8972,28 @@ const filedFeederMapProfiles = [
           ["Replacement source", "the former 16.7 MVA, 66/12.5 kV DLK-T1 was relocated from Deer Lake to replace the 6.7 MVA MOB-T2"],
           ["Completion", "the Q4 2010 regulatory report lists the Deer Lake and Mobile transformer replacements among completed major projects"]
         ]
+      },
+      {
+        label: "2015 FILED MOB-01 CONDUCTOR UPGRADES",
+        sourceId: "np-2015-feeder-growth",
+        pages: "physical PDF pp. 646 to 647",
+        facts: [
+          ["Feeder", "12.5 kV; approximately 1,500 customers from Mobile north through Witless Bay and Bay Bulls"],
+          ["Mobile to Carey's Road", "3.0 km of 4/0 AASC; 356 A planning rating; 407 A filed 2015 forecast per phase"],
+          ["Witless Bay Line to Southside Road", "2.0 km of #4 copper; 153 A planning rating; 228 A filed 2015 forecast per phase"],
+          ["Filed work", "replace the first section with 477 ASC and the second section with 4/0 AASC"],
+          ["Filed cost", "$785,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED MOB-01 GROWTH WORK",
+    referenceSheets: [
+      {
+        title: "2015 proposed MOB-01 conductor upgrades",
+        image: "./reference-maps/mob-01-2015-route.png",
+        alt: "Filed MOB-01 route drawing showing the two conductor-upgrade sections from Mobile through Witless Bay toward Bay Bulls",
+        sourceId: "np-2015-feeder-growth",
+        pages: "physical PDF p. 653"
       }
     ]
   },
@@ -9231,6 +9322,26 @@ const filedFeederMapProfiles = [
         ]
       },
       {
+        label: "2015 FILED G1 ROTOR REFURBISHMENT",
+        sourceId: "np-2015-plants",
+        pages: "physical PDF pp. 30 and 342 to 343",
+        facts: [
+          ["Plant", "commissioned in 1924 with two generators; 3.3 MW capacity"],
+          ["G1", "Allis Chalmers unit with a stator rewound in 1988 and original rotor windings"],
+          ["Filed work", "rewind the 16 rotor poles"],
+          ["Filed production", "9.4 GWh normal annual production"],
+          ["Filed cost", "$156,000"]
+        ]
+      },
+      {
+        label: "2015 REPORTED CAPITAL EXPENDITURE",
+        sourceId: "np-2021-ca-np-001-2015-actuals",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Seal Cove G1 rotor refurbishment", "$156,000 budget; $165,000 actual"]
+        ]
+      },
+      {
         label: "2019 FILED SCV-01 BYPASS-ROAD EXTENSION",
         sourceId: "np-2019-feeder-growth",
         pages: "physical PDF pp. 331 to 333 and 338",
@@ -9243,7 +9354,7 @@ const filedFeederMapProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "FILED 2019 FEEDER EXTENSION",
+    referenceSheetLabel: "FILED FEEDER ROUTES",
     referenceSheets: [
       {
         title: "2019 proposed SCV-01 bypass-road extension",
@@ -15307,6 +15418,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2015 FILED RBK-01 THREE-PHASE CONVERSION",
+        sourceId: "np-2015-feeder-growth",
+        pages: "physical PDF pp. 648 to 649",
+        facts: [
+          ["Area", "Sandy Point"],
+          ["Condition", "the filing describes the single-phase line as exceeding the planning criterion for maximum current"],
+          ["Filed work", "convert approximately 6.0 km of RBK-01 from single-phase to three-phase"],
+          ["Filed cost", "$386,000"]
+        ]
+      },
+      {
         label: "2017 FILED RBK-01 CONDUCTOR UPGRADE",
         sourceId: "np-2017-rbk01",
         pages: "physical PDF pp. 360 to 364 and 366",
@@ -15397,6 +15519,45 @@ export const stationProfiles = [
           ["MOL-T1", "transformer asset 200324; vacuum breaker MOL-T1-B asset 210779"],
           ["MOL-T2", "transformer asset 200295; bulk-oil breaker MOL-T2-B asset 210368"]
         ]
+      },
+      {
+        label: "2015 FILED MOL-09 RELIABILITY WORK",
+        sourceId: "np-2015-reliability-feeders",
+        pages: "physical PDF pp. 598 to 599 and 629 to 631",
+        facts: [
+          ["Feeder", "12.5 kV; approximately 1,930 customers; five feeder ties"],
+          ["Five-year performance, 2009 to 2013", "SAIFI 1.73; SAIDI 2.13 hours; CHIKM 403.4; CIKM 327.2"],
+          ["Main trunk", "1.8 km on Topsail Road and Cornwall Avenue with 397 ACSR, 4/0 AASC, and 477 ASC sections"],
+          ["Filed work", "reconductor 0.5 km from Hamilton Avenue to Blackmarsh Road with 477 ASC; replace 71 poles and 33 anchors; replace two-piece insulators"],
+          ["Filed cost", "$652,000"]
+        ]
+      },
+      {
+        label: "2015 FILED 15L REBUILD",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF pp. 552 and 554",
+        facts: [
+          ["Line", "66 kV between Molloy's Lane and Stamp's Lane; 4.22 km; 73 mainly single-pole structures; built in 1958"],
+          ["Filed work", "rebuild the remaining 0.80 km and 27 original structures; replace 266.8 ACSR with 477 ASC"],
+          ["Filed cost", "$350,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED TRANSMISSION AND FEEDER ROUTES",
+    referenceSheets: [
+      {
+        title: "2015 proposed 15L rebuild",
+        image: "./reference-maps/15l-2015-route.png",
+        alt: "Filed route map for the 15L rebuild between Molloy's Lane and Stamp's Lane",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF p. 566"
+      },
+      {
+        title: "2015 proposed MOL-09 reliability work",
+        image: "./reference-maps/mol-09-2015-route.png",
+        alt: "Filed MOL-09 route drawing showing the Topsail Road, Cornwall Avenue, Craigmillar Avenue, Hamilton Avenue, and Blackmarsh Road sections",
+        sourceId: "np-2015-reliability-feeders",
+        pages: "physical PDF p. 633"
       }
     ]
   },
@@ -15706,6 +15867,18 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2015 FILED 69L REBUILD",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF pp. 552 and 555 to 556",
+        facts: [
+          ["Line", "66 kV between Kenmount and Stamp's Lane; 2.74 km; 48 single-pole structures"],
+          ["Underbuild", "approximately one-third of the transmission structures carried distribution circuitry"],
+          ["Filed conductor work", "replace 266.8 ACSR with 715.5 ASC"],
+          ["Filed cost", "$727,000"],
+          ["Construction-year conflict", "the summary table gives 1951; the project text says the line was originally constructed in 1959"]
+        ]
+      },
+      {
         label: "2018 FILED KEN-03 RELIABILITY REBUILD",
         sourceId: "np-2018-dri",
         pages: "physical PDF pp. 282 to 284",
@@ -15724,6 +15897,7 @@ export const stationProfiles = [
       { title: "KEN-02 route and sectionalizing recloser", image: "./reference-maps/ken-02.png", alt: "Kenmount KEN-02 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 37" },
       { title: "KEN-03 route and sectionalizing recloser", image: "./reference-maps/ken-03.png", alt: "Kenmount KEN-03 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 38" },
       { title: "KEN-04 route and sectionalizing recloser", image: "./reference-maps/ken-04.png", alt: "Kenmount KEN-04 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 39" },
+      { title: "2015 proposed 69L rebuild", image: "./reference-maps/69l-2015-route.png", alt: "Filed route map for the 69L rebuild between Kenmount and Stamp's Lane", sourceId: "np-2015-transmission-lines", pages: "physical PDF p. 568" },
       { title: "2016 proposed St. John's west fibre routes", image: "./reference-maps/st-johns-west-2016-fibre.png", alt: "Filed fibre map showing the planned Hardwoods to Kenmount and Kenmount to Duffy Place links and the existing west St. John's fibre network", sourceId: "np-2016-fibre-network", pages: "physical PDF p. 558" }
     ]
   },
@@ -15962,6 +16136,13 @@ export const stationProfiles = [
         pages: "physical PDF p. 322"
       },
       {
+        title: "2015 proposed KBR-10 reliability work",
+        image: "./reference-maps/kbr-10-2015-route.png",
+        alt: "Filed KBR-10 route drawing through King's Bridge Road, Gower Street, Water Street, Signal Hill, and the Battery",
+        sourceId: "np-2015-reliability-feeders",
+        pages: "physical PDF p. 619"
+      },
+      {
         title: "2016 proposed King's Bridge feeder configuration",
         image: "./reference-maps/kbr-2016-reconfigured-feeders.png",
         alt: "Filed reconfigured feeder schematic showing the proposed KBR-09 through KBR-14 service areas and ties to adjacent substations",
@@ -16040,6 +16221,30 @@ export const stationProfiles = [
           ["2016 feeder work", "convert KBR-01 to 12.5 kV; eliminate KBR-01 and KBR-07; transfer their load with KBR-12 to a new KBR-12 trunk"],
           ["New feeder positions", "install KBR-13 for three converted feeders and KBR-14 for the remaining 4.16 kV group"],
           ["2017 filed follow-on", "convert KBR-03 and KBR-06 to 12.5 kV and eliminate the remaining 4.16 kV system"]
+        ]
+      },
+      {
+        label: "2015 FILED KBR-10 RELIABILITY WORK",
+        sourceId: "np-2015-reliability-feeders",
+        pages: "physical PDF pp. 598 to 599 and 615 to 617",
+        facts: [
+          ["Feeder", "12.5 kV; approximately 950 customers; three feeder ties"],
+          ["Five-year performance, 2009 to 2013", "SAIFI 1.21; SAIDI 2.20 hours; CHIKM 313.0; CIKM 172.3"],
+          ["Route", "King's Bridge Road through Gower Street, Water Street, Signal Hill, and the Battery"],
+          ["Filed work", "replace 24 poles and 19 anchors; replace 25 three-phase spans and 26 single-phase spans; replace the first 700 m of aerial cable with open wire"],
+          ["Filed cost", "$211,000"]
+        ]
+      },
+      {
+        label: "2015 FILED 30L REBUILD",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF pp. 552 and 554 to 555",
+        facts: [
+          ["Line", "66 kV between Ridge Road and King's Bridge; 2.9 km; 87 single-pole structures; built in 1959"],
+          ["Underbuild", "distribution circuitry on every transmission structure"],
+          ["Filed work", "rebuild 1.5 km in 2015 and the remaining 1.4 km in 2016"],
+          ["Filed cost", "$590,000 in 2015; $511,000 in 2016"],
+          ["Insulators", "the filing identifies Canadian Ohio Brass insulators affected by cement growth"]
         ]
       },
       {
@@ -16497,6 +16702,18 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2015 FILED TRANSMISSION REBUILDS",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF pp. 552 to 556",
+        facts: [
+          ["14L", "66 kV to Memorial; 1.13 km aerial and 1.13 km underground; replace remaining 477 ASC aerial conductor with 715.5 ASC; $243,000 filed cost"],
+          ["14L structures", "22 original single-pole structures remained after a 0.45 km rebuild in 1993; the filing records a January 2014 wind failure"],
+          ["15L", "66 kV to Molloy's Lane; 4.22 km total; rebuild the remaining 0.80 km and 27 original structures with 477 ASC; $350,000 filed cost"],
+          ["69L", "66 kV to Kenmount; rebuild 2.74 km with 715.5 ASC; $727,000 filed cost"],
+          ["69L construction-year conflict", "the summary table gives 1951; the project text says the line was originally constructed in 1959"]
+        ]
+      },
+      {
         label: "2019 SLA-05 WORK",
         sourceId: "np-2019-feeder-growth",
         pages: "physical PDF pp. 332 to 334 and 339",
@@ -16556,8 +16773,29 @@ export const stationProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "FILED 2019 FEEDER CONVERSION",
+    referenceSheetLabel: "FILED TRANSMISSION AND FEEDER ROUTES",
     referenceSheets: [
+      {
+        title: "2015 proposed 14L rebuild",
+        image: "./reference-maps/14l-2015-route.png",
+        alt: "Filed route map for the 14L rebuild between Stamp's Lane and Memorial",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF p. 565"
+      },
+      {
+        title: "2015 proposed 15L rebuild",
+        image: "./reference-maps/15l-2015-route.png",
+        alt: "Filed route map for the 15L rebuild between Stamp's Lane and Molloy's Lane",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF p. 566"
+      },
+      {
+        title: "2015 proposed 69L rebuild",
+        image: "./reference-maps/69l-2015-route.png",
+        alt: "Filed route map for the 69L rebuild between Stamp's Lane and Kenmount",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF p. 568"
+      },
       {
         title: "2019 proposed SLA-05 conversion",
         image: "./reference-maps/sla-05-2019-conversion.png",
@@ -17214,6 +17452,26 @@ export const stationProfiles = [
           ["Metered point", "TCV-T1-I"],
           ["15-minute values shown", "2,777 to 6,068 kW"],
           ["Highest interval shown", "6,068 kW at the 1130 Island Time interval"]
+        ]
+      },
+      {
+        label: "2015 FILED PLANT REHABILITATION",
+        sourceId: "np-2015-plants",
+        pages: "physical PDF pp. 28, 356 and 361",
+        facts: [
+          ["Plant", "commissioned in 1941; 6.5 MW capacity"],
+          ["Filed work", "replace the penstock trestle with a reinforced steel penstock; refurbish the overhead crane, turbine runner, main inlet valve, generator rotor, and power cables"],
+          ["G2 turbine", "original 1941 English Electric unit; overhauled in 1985; erosion noted in the engineering assessment"],
+          ["Filed cost", "$1.777 million"],
+          ["Filed production values", "25.4 GWh in the application summary; 25.9 GWh after the work in the engineering assessment"]
+        ]
+      },
+      {
+        label: "2015 REPORTED CAPITAL EXPENDITURE",
+        sourceId: "np-2021-ca-np-001-2015-actuals",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Tors Cove plant rehabilitation", "$1.777 million budget; $2.122 million actual"]
         ]
       },
       {
@@ -18663,6 +18921,27 @@ export const stationProfiles = [
           ["MUN-T1-B section", "six 12.5 kV feeders; the restoration table records 11.1 MVA"],
           ["Bus tie", "MUN-TB-1-2 connected the two sections"]
         ]
+      },
+      {
+        label: "2015 FILED 14L REBUILD",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF pp. 552 to 553",
+        facts: [
+          ["Line", "66 kV between Memorial and Stamp's Lane; 1.13 km aerial and 1.13 km underground"],
+          ["Aerial section", "built in 1950; 0.45 km rebuilt in 1993; 22 original single-pole structures remained in the filing"],
+          ["Filed conductor work", "replace 477 ASC with 715.5 ASC"],
+          ["Filed cost", "$243,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED 14L ROUTE",
+    referenceSheets: [
+      {
+        title: "2015 proposed 14L rebuild",
+        image: "./reference-maps/14l-2015-route.png",
+        alt: "Filed route map for the 14L rebuild between Memorial and Stamp's Lane",
+        sourceId: "np-2015-transmission-lines",
+        pages: "physical PDF p. 565"
       }
     ]
   },
