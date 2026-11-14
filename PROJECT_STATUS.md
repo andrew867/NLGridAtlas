@@ -15,6 +15,11 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 2005 Wesleyville inspection and overhaul sequence, with the later completed gas-generator exchange kept separate.
+- Added the 2005 Rattling Brook plant assessment and detailed-design scope, with the later 2007 station completion kept separate.
+- Added the 2005 Humber transformer-radiator, Hardwoods HWD-04 breaker, Rocky Pond breaker, and St. John's Main switchgear records.
+- Added the 2005 11L and 43L rebuild stages and preserved the later 43L stages and completion record.
+- Added the dated St. John's east end transformer and feeder arrangement and its upright source drawing to Broad Cove, Ridge Road, Virginia Waters, and Pulpit Rock.
 - Added the 2006 123L construction, ice-damage, rehabilitation, and route record.
 - Added five 2006 feeder reliability studies, the Humber Valley load plan, selected substation equipment work, hydro rehabilitation, and the December 6, 2004 manual building-load reduction.
 - Added the 2016 King's Bridge 4.16 kV to 12.5 kV conversion, new KBR-13 and KBR-14 positions, and the filed reconfigured-feeder drawing.

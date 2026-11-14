@@ -2930,10 +2930,10 @@ test("2016 feeder growth records retain proposed currents, transfers, and route 
   const rrd2016 = ridgeRoad.historyRecords.find((record) => record.label === "2016 PROPOSED VIR-07 LOAD TRANSFER");
   const vir2016 = virginiaWaters.historyRecords.find((record) => record.label === "2016 PROPOSED FEEDER TRANSFERS");
   assert.match(rrd2016.facts.flat().join(" "), /3 MVA from VIR-07/);
-  assert.equal(ridgeRoad.referenceSheets[0].image, "./reference-maps/rrd-10-2016-upgrade.jpg");
+  assert.equal(ridgeRoad.referenceSheets.find(({ image }) => image === "./reference-maps/rrd-10-2016-upgrade.jpg").pages, "physical PDF p. 418");
   assert.match(vir2016.facts.flat().join(" "), /602 A per phase.*590 A per-phase planning rating/);
   assert.match(vir2016.facts.flat().join(" "), /3\.2 MVA to proposed PUL-05/);
-  assert.equal(virginiaWaters.referenceSheets[3].pages, "physical PDF p. 419");
+  assert.equal(virginiaWaters.referenceSheets.find(({ image }) => image === "./reference-maps/pul-05-2016-new-feeder.jpg").pages, "physical PDF p. 419");
   const pul2016 = pulpitRock.historyRecords.find((record) => record.label === "2016 PROPOSED FEEDER WORK");
   assert.match(pul2016.facts.flat().join(" "), /193 A per phase.*153 A per-phase planning rating/);
   assert.match(pul2016.facts.flat().join(" "), /35\.8 MVA, 72%/);
@@ -3083,7 +3083,7 @@ test("station reference schematics remain expandable and locally preserved", asy
     "./reference-maps/kbr-2019-service-area.png"
   );
   assert.equal(pepperell.referenceSheets.find((sheet) => sheet.image === "./reference-maps/pep-2019-service-area.png").pages, "physical PDF p. 37");
-  assert.equal(virginiaWaters.referenceSheets[0].pages, "physical PDF p. 39");
+  assert.equal(virginiaWaters.referenceSheets.find((sheet) => sheet.image === "./reference-maps/vir-2019-service-area.png").pages, "physical PDF p. 39");
   assert.ok(hardwoods.referenceSheets.some((sheet) => sheet.image === "./reference-maps/hwd-08-2014-reclosers.png"));
   assert.deepEqual(kenmount.referenceSheets.map((sheet) => sheet.pages), [
     "physical PDF p. 385",
@@ -3101,7 +3101,7 @@ test("station reference schematics remain expandable and locally preserved", asy
     "physical PDF p. 42",
     "physical PDF p. 43"
   ]);
-  assert.equal(virginiaWaters.referenceSheets[1].image, "./reference-maps/vir-06.png");
+  assert.equal(virginiaWaters.referenceSheets.find((sheet) => sheet.image === "./reference-maps/vir-06.png").pages, "physical PDF p. 40");
   const schematic = await readFile(new URL("../public/reference-maps/sjm-2011-water-street-existing.png", import.meta.url));
   const serviceArea = await readFile(new URL("../public/reference-maps/kbr-2019-service-area.png", import.meta.url));
   const hwd08Route = await readFile(new URL("../public/reference-maps/hwd-08-2014-reclosers.png", import.meta.url));

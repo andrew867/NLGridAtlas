@@ -4790,6 +4790,86 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
   },
   {
+    id: "np-2005-hydro-rehabilitation",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "2005 Capital Budget Application, Hydro Plants Facility Rehabilitation",
+    topics: ["Cape Broyle", "Seal Cove", "Heart's Content", "Mobile", "Port Union", "Fenelons Pond", "Whirl Pond", "dam rehabilitation", "plant valves", "protection and controls"],
+    pages: "physical PDF pp. 163 to 169",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
+  },
+  {
+    id: "np-2005-wesleyville-overhaul",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "2005 Capital Budget Application, Wesleyville Gas Turbine Overhaul",
+    topics: ["Wesleyville", "Salt Pond", "Rolls-Royce AVON", "gas generator", "gas turbine", "overhaul"],
+    pages: "physical PDF pp. 170 to 174",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
+  },
+  {
+    id: "np-2005-pub-31-1",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "PUB-31.1-NP, Wesleyville Gas Generator Inspection Record",
+    topics: ["Wesleyville", "Salt Pond", "Rolls-Royce", "Trans Canada Turbine", "gas generator", "inspection", "overhaul recommendation"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/rfi/PUB-31-1NP.pdf"
+  },
+  {
+    id: "np-2005-rattling-brook",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "2005 Capital Budget Application, Rattling Brook Hydro Plant Refurbishment",
+    topics: ["Rattling Brook", "penstock", "surge tank", "switchgear", "generator cables", "protection", "controls", "station service", "voltage regulator", "governor"],
+    pages: "physical PDF pp. 188 to 193 and 283 to 301",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
+  },
+  {
+    id: "np-2005-pub-32-1",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "PUB-32.1-NP, Rattling Brook Refurbishment Approval Scope",
+    topics: ["Rattling Brook", "penstock", "surge tank", "detailed engineering", "capital approval"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/rfi/PUB-32-1NP.pdf"
+  },
+  {
+    id: "np-2005-substation-program",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "2005 Capital Budget Application, Substation Equipment Program",
+    topics: ["Humber", "St. John's Main", "Rocky Pond", "Hardwoods", "Greenspond", "Grand Beach", "Topsail", "Stephenville", "transformer cooling", "switchgear", "feeder breaker", "station equipment"],
+    pages: "physical PDF pp. 34 to 38 and 312 to 318",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
+  },
+  {
+    id: "np-2005-transmission-rebuild",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "2005 Capital Budget Application, Transmission Line Rebuilds",
+    topics: ["11L", "43L", "124L", "Tors Cove", "Mobile", "Heart's Content", "New Chelsea", "Clarenville", "Gambo", "transmission line rebuild"],
+    pages: "physical PDF pp. 319 to 321",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
+  },
+  {
+    id: "np-2005-east-end-planning",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "2005 Capital Budget Application, St. John's East End Planning Study",
+    topics: ["Virginia Waters", "Ridge Road", "Broad Cove", "Pulpit Rock", "VIR-08", "12.5 kV", "4.16 kV", "transformer capacity", "feeder capacity", "load forecast"],
+    pages: "physical PDF pp. 356 to 371",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
+  },
+  {
     id: "np-2019-gby03",
     year: 2018,
     organization: "Newfoundland Power",
@@ -9159,6 +9239,17 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2005 FILED TRANSFORMER COOLING REFURBISHMENT",
+        sourceId: "np-2005-substation-program",
+        pages: "physical PDF pp. 34 to 35",
+        facts: [
+          ["Transformer ages in the filing", "the two affected Humber transformers were purchased in 1968 and 1974"],
+          ["Condition", "painted cooling radiators had corroded, blistered, and begun leaking oil at seams and thin panel surfaces"],
+          ["Filed work", "replace the radiators with galvanized units"],
+          ["Filed cost", "$174,000"]
+        ]
+      },
+      {
         label: "2016 FILED CORNER BROOK FIBRE RING",
         sourceId: "np-2016-fibre-network",
         pages: "physical PDF pp. 558 to 560",
@@ -9863,6 +9954,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2005 FILED 11L REBUILD",
+        sourceId: "np-2005-transmission-rebuild",
+        pages: "physical PDF p. 319",
+        facts: [
+          ["Line", "66 kV between Tors Cove and Mobile; 5.0 km; built in 1942"],
+          ["Filed work", "rebuild the 5.0 km line"],
+          ["Filed cost", "$343,000"]
+        ]
+      },
       {
         label: "2008 FILED 20L REBUILD",
         sourceId: "np-2008-transmission-rebuild",
@@ -10731,6 +10832,16 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 INSPECTIONS / 2005 FILED OVERHAUL",
+        sourceId: "np-2005-pub-31-1",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Inspection sequence", "Trans Canada Turbine inspected the gas generator in 2000; Rolls-Royce inspected it before and after the 2003 relocation"],
+          ["Manufacturer recommendation", "both 2003 Rolls-Royce inspections recommended overhaul"],
+          ["Filed response", "Newfoundland Power scheduled the overhaul after preparing a work specification and competitive bid process"]
+        ]
+      },
+      {
         label: "2005 COMPLETED GAS-GENERATOR EXCHANGE",
         sourceId: "np-2007-wesleyville-completion",
         pages: "physical PDF p. 139",
@@ -10892,6 +11003,16 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 EAST END PLANNING RECORD",
+        sourceId: "np-2005-east-end-planning",
+        pages: "physical PDF pp. 359 to 365 and 371",
+        facts: [
+          ["Filed station", "one 25 MVA transformer and four 12.5 kV feeders serving approximately 4,100 customers"],
+          ["Prior transfer", "parts of BCV-03 had been converted to 25 kV and transferred to Hardwoods to defer a second Broad Cove transformer"],
+          ["Selected plan", "Alternative 1 used new feeder VIR-08 and later feeder and transformer additions; its filed NPV was $2.870 million"]
+        ]
+      },
+      {
         label: "2006 FILED BCV-02 RELIABILITY WORK",
         sourceId: "np-2006-distribution-reliability",
         pages: "physical PDF pp. 430 to 434",
@@ -11009,6 +11130,13 @@ const earlyFeederMapProfiles = [
     ],
     referenceSheetLabel: "FILED FEEDER PROJECTS",
     referenceSheets: [
+      {
+        title: "2004 east end feeder and transformer arrangement",
+        image: "./reference-maps/east-end-2005-network-371.png",
+        alt: "Filed east end planning schematic showing Broad Cove, Pulpit Rock, Ridge Road, Virginia Waters, their transformer ratings, feeders, and feeder ties",
+        sourceId: "np-2005-east-end-planning",
+        pages: "physical PDF p. 371"
+      },
       {
         title: "2010 filed BCV-03 Thorburn Road upgrade",
         image: "./reference-maps/bcv-03-2010-upgrade.png",
@@ -16997,6 +17125,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2005 DETAILED ENGINEERING AND PLANT ASSESSMENT",
+        sourceId: "np-2005-rattling-brook",
+        pages: "physical PDF pp. 188 to 193 and 283 to 292",
+        facts: [
+          ["Plant", "commissioned December 16, 1958 with two 8,500 hp vertical Francis turbines and two 7,500 kVA generators"],
+          ["Electrical condition", "the assessment identified original 1958 switchgear and generator cables, mechanical voltage regulators, and a vacuum-tube synchronizer"],
+          ["Station service", "one bank used three 25 kVA single-phase transformers; a second 150 kVA bank supplied 120/208 V"],
+          ["Filed electrical scope", "replace switchgear, one generator cable set, protection, voltage regulators, synchronizing equipment, governors, controls, and AC and DC distribution"],
+          ["Approval scope", "the 2005 application requested $350,000 for detailed assessment and design, not approval of the later construction program"]
+        ]
+      },
+      {
         label: "2007 COMPLETED 66 KV STATION MODERNIZATION",
         sourceId: "np-2021-rattling-brook-completion",
         pages: "physical PDF pp. 110 to 111",
@@ -17327,6 +17467,16 @@ export const stationProfiles = [
           ["Tie point", "normally open switch between GDL-01 and HWD-04 in Donovan's Industrial Park"],
           ["Proposed work", "replace 1/0 AASC with 477 ASC on GDL-01 from Ruth Avenue to Royal Garage"],
           ["Operating purpose", "permit either feeder to carry part of the other feeder's load"]
+        ]
+      },
+      {
+        label: "2005 FILED HWD-04 BREAKER REPLACEMENT",
+        sourceId: "np-2005-substation-program",
+        pages: "physical PDF p. 315",
+        facts: [
+          ["Existing breaker rating", "12.5 kA interrupting capacity"],
+          ["Calculated station fault level", "approximately 16 kA in the filing"],
+          ["Filed work", "replace the HWD-04 25 kV feeder breaker"]
         ]
       }
     ],
@@ -18175,6 +18325,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 EAST END PLANNING RECORD",
+        sourceId: "np-2005-east-end-planning",
+        pages: "physical PDF pp. 359 to 365 and 371",
+        facts: [
+          ["Filed transformer bank", "one 2.2 MVA bank on the 4.16 kV bus and two 20 MVA banks on the 12.5 kV bus"],
+          ["Filed service", "eight feeders serving approximately 4,200 customers"],
+          ["Cold-load pickup multiplier", "2.0 in the planning model"],
+          ["Selected plan", "the filing forecast a later transformer addition; it did not establish an installed 2005 transformer"]
+        ]
+      },
+      {
         label: "2007 FILED STATION ARRANGEMENT AND WORK",
         sourceId: "np-2007-capital",
         pages: "physical PDF pp. 167 to 168",
@@ -18290,6 +18451,13 @@ export const stationProfiles = [
       }
     ],
     referenceSheets: [
+      {
+        title: "2004 east end feeder and transformer arrangement",
+        image: "./reference-maps/east-end-2005-network-371.png",
+        alt: "Filed east end planning schematic showing Broad Cove, Pulpit Rock, Ridge Road, Virginia Waters, their transformer ratings, feeders, and feeder ties",
+        sourceId: "np-2005-east-end-planning",
+        pages: "physical PDF p. 371"
+      },
       {
         title: "2016 proposed RRD-10 extension to VIR-07",
         image: "./reference-maps/rrd-10-2016-upgrade.jpg",
@@ -18492,6 +18660,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2005 FILED SWITCHGEAR ENCLOSURES",
+        sourceId: "np-2005-substation-program",
+        pages: "physical PDF pp. 312 to 313",
+        facts: [
+          ["Equipment", "three 15 kV metalclad switchgear sections containing 17 air circuit breakers"],
+          ["Filed work", "construct two buildings around the outdoor switchgear"],
+          ["Filed cost", "$251,000"]
+        ]
+      },
       {
         label: "2010 FILED WATER STREET SJM-03 RELOCATION",
         sourceId: "np-2010-sjm-underground",
@@ -19000,6 +19178,13 @@ export const stationProfiles = [
     referenceSheetLabel: "FEEDER SERVICE AND ROUTE MAPS",
     referenceSheets: [
       {
+        title: "2004 east end feeder and transformer arrangement",
+        image: "./reference-maps/east-end-2005-network-371.png",
+        alt: "Filed east end planning schematic showing Broad Cove, Pulpit Rock, Ridge Road, Virginia Waters, their transformer ratings, feeders, and feeder ties",
+        sourceId: "np-2005-east-end-planning",
+        pages: "physical PDF p. 371"
+      },
+      {
         title: "Virginia Waters feeder service area and tie table",
         image: "./reference-maps/vir-2019-service-area.png",
         alt: "Virginia Waters feeder service area map and customer-count tie table filed in the 2019 Pepperell supplemental application",
@@ -19057,6 +19242,18 @@ export const stationProfiles = [
       facts: [["VIR-T1/T2", "VIR-01 and VIR-06; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2004 EAST END PLANNING RECORD / 2005 VIR-08",
+        sourceId: "np-2005-east-end-planning",
+        pages: "physical PDF pp. 356 and 359 to 365 and 371",
+        facts: [
+          ["Filed transformer bank", "three 25 MVA transformers on the 12.5 kV distribution bus"],
+          ["Filed service", "seven feeders serving approximately 5,800 customers; the study drawing shows proposed VIR-08 dashed"],
+          ["Recent station change", "the filing records a third transformer added in 2003"],
+          ["Selected 2005 work", "construct VIR-08 from the Snow's Lane station and transfer 5 MVA from VIR-06"],
+          ["Filed project cost", "$319,000"]
+        ]
+      },
       {
         label: "2006 FILED VIR-04 AND VIR-06 BREAKER REPLACEMENTS",
         sourceId: "np-2006-substation-program",
@@ -19177,6 +19374,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2004 EAST END PLANNING RECORD",
+        sourceId: "np-2005-east-end-planning",
+        pages: "physical PDF pp. 359 to 365 and 371",
+        facts: [
+          ["Filed transformer", "one 25 MVA bank on the 12.5 kV distribution bus"],
+          ["Filed feeders", "PUL-01 and PUL-02 supplied approximately 3,500 customers; PUL-03 was being added in 2004"],
+          ["Planning result", "the selected plan deferred a second Pulpit Rock transformer and PUL-04 to later years"]
+        ]
+      },
       {
         label: "2010 SELECTED PULPIT ROCK EXPANSION",
         sourceId: "np-2011-northeast-load",
@@ -19340,6 +19547,13 @@ export const stationProfiles = [
       }
     ],
     referenceSheets: [
+      {
+        title: "2004 east end feeder and transformer arrangement",
+        image: "./reference-maps/east-end-2005-network-371.png",
+        alt: "Filed east end planning schematic showing Broad Cove, Pulpit Rock, Ridge Road, Virginia Waters, their transformer ratings, feeders, and feeder ties",
+        sourceId: "np-2005-east-end-planning",
+        pages: "physical PDF p. 371"
+      },
       {
         title: "2012 proposed PUL-02 conductor upgrade",
         image: "./reference-maps/pul-02-2012-single-line.png",
@@ -19566,6 +19780,16 @@ export const stationProfiles = [
       facts: [["TCV-T1", "generation transformer; 66/6.9 kV; 7.50 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2005 FILED 11L REBUILD",
+        sourceId: "np-2005-transmission-rebuild",
+        pages: "physical PDF p. 319",
+        facts: [
+          ["Line", "66 kV between Tors Cove and Mobile; 5.0 km; built in 1942"],
+          ["Filed work", "rebuild the 5.0 km line"],
+          ["Filed cost", "$343,000"]
+        ]
+      },
       {
         label: "2006 FILED FOREBAY EMBANKMENT WORK",
         sourceId: "np-2006-hydro-rehabilitation",
@@ -20022,6 +20246,17 @@ export const stationProfiles = [
       facts: [["ROP-T1", "generation transformer; 66/6.9 kV; 5.33 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2005 FILED 6.9 KV BREAKER REPLACEMENT",
+        sourceId: "np-2005-substation-program",
+        pages: "physical PDF p. 315",
+        facts: [
+          ["Equipment", "6.9 kV plant breaker"],
+          ["Filed age", "27 years"],
+          ["Condition", "replacement parts were obsolete and no longer available"],
+          ["Filed work", "replace the breaker"]
+        ]
+      },
       {
         label: "2014 FILED LA MANCHE CANAL CAPACITY INCREASE",
         sourceId: "np-2014-la-manche",
@@ -21642,6 +21877,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2005 FILED 43L REBUILD STAGE",
+        sourceId: "np-2005-transmission-rebuild",
+        pages: "physical PDF p. 320",
+        facts: [
+          ["Line", "66 kV radial line between Heart's Content and New Chelsea; 25.1 km; built in 1956"],
+          ["Filed work", "rebuild 8.0 km"],
+          ["Filed cost", "$707,000"],
+          ["Service", "more than 2,500 customers and the New Chelsea hydro plant grid connection"]
+        ]
+      },
       {
         label: "2006 FILED SEAL COVE POND DAM WORK",
         sourceId: "np-2006-hydro-rehabilitation",

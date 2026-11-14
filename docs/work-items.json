@@ -970,6 +970,18 @@
       "notes": "The 123L record preserves line construction, the 1992 collapse, staged rehabilitation and the filed route. LEW-02, GLV-02, BCV-02, SMV-01 and GPD-01 retain measured interruption totals and later completion or cancellation evidence where located. Humber Valley alternatives remain separate from later selected work. Station and hydro records remain filed unless a later source states completion."
     },
     {
+      "id": "NPREG-023",
+      "title": "Reconcile Newfoundland Power 2005 generation, station, transmission, and east end planning records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2005 capital application, Wesleyville gas-generator inspections and overhaul, Rattling Brook assessment, station equipment, 11L, 43L and 124L stages, and the St. John's east end planning study.",
+      "dependencies": ["NPREG-022"],
+      "completion_evidence": ["research/NP_2005_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/east-end-2005-network-371.png", "tests/np-2005-capital.test.js"],
+      "blocker": null,
+      "notes": "Wesleyville separates the three inspection records, filed overhaul, and later completed exchange. Rattling Brook separates the 2005 design request from the later construction and 2007 station completion. Humber, Hardwoods, Rocky Pond, and St. John's Main retain equipment condition and filed scope. The upright east end source sheet is attached to Broad Cove, Ridge Road, Virginia Waters, and Pulpit Rock with dated transformer, feeder, customer, and planning records."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

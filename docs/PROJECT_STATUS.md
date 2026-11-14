@@ -15,6 +15,11 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 2005 Wesleyville inspection and overhaul sequence, with the later completed gas-generator exchange kept separate.
+- Added the 2005 Rattling Brook plant assessment and detailed-design scope, with the later 2007 station completion kept separate.
+- Added the 2005 Humber transformer-radiator, Hardwoods HWD-04 breaker, Rocky Pond breaker, and St. John's Main switchgear records.
+- Added the 2005 11L and 43L rebuild stages and preserved the later 43L stages and completion record.
+- Added the dated St. John's east end transformer and feeder arrangement and its upright source drawing to Broad Cove, Ridge Road, Virginia Waters, and Pulpit Rock.
 - Added the 2006 123L construction, 1992 ice-collapse, rehabilitation, and route record across Clarenville, Princeton Pond, and Catalina.
 - Added the LEW-02, GLV-02, BCV-02, SMV-01, and GPD-01 reliability studies with measured interruption totals, filed work, route drawings, and later completion or cancellation evidence where located.
 - Added the 2006 Humber Valley actual and forecast loads, alternatives, and Little Rapids study result without presenting the proposed station as built.
