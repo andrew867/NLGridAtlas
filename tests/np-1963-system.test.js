@@ -25,8 +25,8 @@ test("1963 line records are attached to documented stations", () => {
   assert.match(stationText("SBK"), /1963 ORIGINAL PLANT AND 105L.*6\.31 MW.*105L/);
 });
 
-test("Ridge Road and Stamp's Lane retain their 1963 station records", () => {
-  assert.match(stationText("RRD"), /built in 1963.*30L to King's Bridge.*32L and 67L to Oxen Pond/);
+test("Ridge Road conflict and Stamp's Lane 1963 record remain separate", () => {
+  assert.match(stationText("RRD"), /1960 \/ 1963 CONSTRUCTION-DATE CONFLICT.*2027 filing.*1960.*2007 filing.*1963/);
   assert.match(stationText("SLA"), /Station built.*1963.*five 4\.16 kV feeders and six 12\.5 kV feeders/);
 });
 

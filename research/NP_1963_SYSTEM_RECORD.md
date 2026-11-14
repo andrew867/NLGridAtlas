@@ -26,11 +26,16 @@ The 2018 transmission rebuild schedule dates 105L, Grand Falls to Sandy Brook, t
 
 Source: `http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF`, physical PDF p. 247, SHA-256 `d5fe2f1847725348d395edbdd0d34d649d6749c4a00eb4babb15fd1924da59ed`
 
-## Ridge Road
+## Ridge Road date conflict
 
-Ridge Road was built in 1963 as a 66 kV switching station and 12.5 kV distribution substation. The 2007 filing records 30L to King's Bridge and 32L and 67L to Oxen Pond. It also records the later retirement of the 4.16 kV T1 bank and eight 12.5 kV feeders serving approximately 4,200 customers.
+The 2007 filing states that Ridge Road was built in 1963 as a 66 kV switching station and 12.5 kV distribution substation. It records 30L to King's Bridge and 32L and 67L to Oxen Pond. It also records the later retirement of the 4.16 kV T1 bank and eight 12.5 kV feeders serving approximately 4,200 customers.
 
-Source: `http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf`, physical PDF p. 167, SHA-256 `6cfd75d76b0f7cdb103216420b29a1130a57dc22999f47621951c8322b8c3402`
+A 2027 filing instead states that Ridge Road was constructed in 1960. Neither filing explains the difference. The atlas retains both dates as unresolved.
+
+Sources:
+
+- `http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf`, physical PDF p. 167, SHA-256 `6cfd75d76b0f7cdb103216420b29a1130a57dc22999f47621951c8322b8c3402`
+- `http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF`, physical PDF pp. 105 and 511, SHA-256 `b55142e2f0a65cce29cba35c534492b1c151bb21f9925ff1a1daa71466522063`
 
 ## Stamp's Lane
 
@@ -60,6 +65,6 @@ Sources:
 
 ## Evidence state
 
-- Reported: 363L, 32L and 105L construction dates; Ridge Road and Stamp's Lane station dates and functions; Sandy Brook commissioning, plant dimensions and original electrical equipment.
-- Unresolved: no 1963 demand, energy, customer or reliability total was located in the reviewed archive.
+- Reported: 363L, 32L and 105L construction dates; Stamp's Lane station date and function; Sandy Brook commissioning, plant dimensions and original electrical equipment.
+- Unresolved: Ridge Road construction is dated to 1963 in the 2007 filing and 1960 in the 2027 filing. No 1963 demand, energy, customer or reliability total was located in the reviewed archive.
 - Excluded: a 1963 accounting credit under a radio-related account does not identify a radio site, frequency, circuit or installed asset.

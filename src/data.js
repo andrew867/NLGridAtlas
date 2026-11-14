@@ -520,6 +520,76 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1960-ridge-road",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Ridge Road Construction Record",
+    topics: ["1960", "1963", "Ridge Road", "RRD", "substation", "construction date", "date conflict"],
+    pages: "physical PDF pp. 105 and 511",
+    status: "unresolved",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
+    id: "np-1960-403l-rob",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, 403L Robinsons Tap",
+    topics: ["1960", "403L", "Robinsons", "ROB", "66 kV", "1/0 ACSR", "transmission line"],
+    pages: "physical PDF p. 394",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "nlh-1960-makkovik-l1",
+    year: 2009,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2010 Capital Budget Application, Makkovik L1 Distribution Line",
+    topics: ["1960", "Makkovik", "L1", "4.16 kV", "distribution line", "Ranger Bight Road"],
+    pages: "physical PDF p. 232",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/NLH2010ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "np-1960-hearts-content",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Heart's Content Plant Record",
+    topics: ["1960", "Heart's Content", "HCT", "hydroelectric generation", "Francis turbine", "remote control"],
+    pages: "physical PDF p. 26",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1960-hearts-content-remote",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Heart's Content Redevelopment and Remote Control",
+    topics: ["1960", "Heart's Content", "HCT", "New Chelsea", "remote control", "hydroelectric generation"],
+    pages: "physical PDF p. 285",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
+  },
+  {
+    id: "nlh-1960-holyrood-t6",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Holyrood Condition Assessment, Transformer T6",
+    topics: ["1960", "Holyrood", "T6", "Canadian General Electric", "230 kV", "138 kV", "transformer"],
+    pages: "physical PDF pp. 699 to 700",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1960-bishops-falls-shop",
+    year: 2022,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2023 Capital Budget Application, Bishop's Falls Diesel Shop",
+    topics: ["1960", "Bishop's Falls", "diesel maintenance", "workshop", "operations facility"],
+    pages: "physical PDF pp. 640 to 641",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2023/NLH2023Capital/apps/From%20NLH%20-%202023%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202022-07-13.PDF"
+  },
+  {
     id: "np-1961-38l",
     year: 2003,
     organization: "Newfoundland Power",
@@ -9588,6 +9658,22 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1960-system-record",
+    scope: "1960 station construction, transmission and distribution lines, hydroelectric redevelopment, transformer manufacture and a diesel-maintenance facility",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2023-capital-molloys", pages: "physical PDF pp. 403 and 408" },
+      { sourceId: "np-1960-ridge-road", pages: "physical PDF pp. 105 and 511" },
+      { sourceId: "np-2007-capital", pages: "physical PDF pp. 167 to 168" },
+      { sourceId: "np-1960-403l-rob", pages: "physical PDF p. 394" },
+      { sourceId: "nlh-1960-makkovik-l1", pages: "physical PDF p. 232" },
+      { sourceId: "np-1960-hearts-content", pages: "physical PDF p. 26" },
+      { sourceId: "np-1960-hearts-content-remote", pages: "physical PDF p. 285" },
+      { sourceId: "nlh-1960-holyrood-t6", pages: "physical PDF pp. 699 to 700" },
+      { sourceId: "nlh-1960-bishops-falls-shop", pages: "physical PDF pp. 640 to 641" }
+    ]
+  },
+  {
     id: "np-1961-system-record",
     scope: "1961 transmission construction, hydro storage and dam work, dated Wabush switchgear and a former Happy Valley diesel plant",
     status: "reported",
@@ -9620,7 +9706,7 @@ export const staticClaims = [
   },
   {
     id: "np-1963-system-record",
-    scope: "1963 transmission construction, St. John's station construction, Sandy Brook commissioning and original plant electrical equipment",
+    scope: "1963 transmission construction, Stamp's Lane station construction, Sandy Brook commissioning and original plant electrical equipment",
     status: "reported",
     sources: [
       { sourceId: "np-2018-363l", pages: "physical PDF pp. 126 and 242" },
@@ -10212,6 +10298,60 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1960",
+    category: "station",
+    title: "Molloy's Lane Substation was built",
+    body: "The Topsail Road station was built for 66 kV transmission and 12.5 kV distribution. Its control building originally housed the 12.5 kV switchgear. An early-1970s switchgear failure damaged the foundation, walls and roof; outdoor distribution equipment replaced the failed switchgear.",
+    sourceId: "np-2023-capital-molloys",
+    pages: "physical PDF pp. 403 and 408",
+    status: "reported"
+  },
+  {
+    date: "1960 or 1963",
+    category: "station",
+    title: "Newfoundland Power filings conflict on Ridge Road construction",
+    body: "The 2027 capital filing dates Ridge Road Substation to 1960. The 2007 capital filing dates it to 1963. Both describe it as a 66 kV transmission switching and 12.5 kV distribution station.",
+    sourceId: "np-1960-ridge-road",
+    pages: "physical PDF pp. 105 and 511; compare 2007 Capital physical PDF p. 167",
+    status: "unresolved"
+  },
+  {
+    date: "1960",
+    category: "network",
+    title: "The Robinsons 403L tap and Makkovik L1 were built",
+    body: "The Robinsons supply was a 4.0 km, three-phase tap from 403L, with 46 single-pole structures and 1/0 ACSR conductor. Makkovik L1 was a 5.4 km, 4.16 kV three-phase feeder to the Ranger Bight Road pump house, with single-phase taps to a communications tower, the airport and the sewage lift station.",
+    sourceId: "np-1960-403l-rob",
+    pages: "physical PDF p. 394; Makkovik physical PDF p. 232",
+    status: "reported"
+  },
+  {
+    date: "1960",
+    category: "generation",
+    title: "The replacement Heart's Content plant entered service",
+    body: "The 2.4 MW plant replaced the original 1918 plant. The plant record identifies a 2,370 kW development under about 46.9 m net head, with an English Electric vertical Francis turbine and Bruce Peebles generator commissioned in 1960. It was remotely controlled from New Chelsea.",
+    sourceId: "np-1960-hearts-content",
+    pages: "physical PDF p. 26; plant record physical PDF p. 139; remote-control record physical PDF p. 285",
+    status: "reported"
+  },
+  {
+    date: "1960 manufacture",
+    category: "equipment",
+    title: "Holyrood transformer T6 was manufactured",
+    body: "The Canadian General Electric T6 record gives 25/33.3/41.7 MVA, ONAN/ONAF/ONAF cooling and a 230/138 kV winding voltage. The 1960 date applies to manufacture; the filing does not state that T6 entered service at Holyrood that year.",
+    sourceId: "nlh-1960-holyrood-t6",
+    pages: "physical PDF pp. 699 to 700",
+    status: "reported"
+  },
+  {
+    date: "1960",
+    category: "operations",
+    title: "The Bishop's Falls diesel shop was installed",
+    body: "The original pre-engineered steel building measured 40 by 60 feet. It served as a workshop and storage base for diesel-generator maintenance, critical spares and specialized tools; a wood-frame office extension was added in the 1980s.",
+    sourceId: "nlh-1960-bishops-falls-shop",
+    pages: "physical PDF pp. 640 to 641",
+    status: "reported"
+  },
+  {
     date: "1961",
     category: "network",
     title: "38L and the Golden Eagle refinery line date to 1961",
@@ -10322,8 +10462,8 @@ export const timeline = [
   {
     date: "1963",
     category: "station",
-    title: "Ridge Road and Stamp's Lane substations were built",
-    body: "Ridge Road was built for 66 kV switching and 12.5 kV distribution. Stamp's Lane was built for 66 kV switching and 4.16/12.5 kV distribution.",
+    title: "Stamp's Lane Substation was built",
+    body: "Stamp's Lane was built for 66 kV switching and 4.16/12.5 kV distribution. Ridge Road is excluded from this event because Newfoundland Power filings conflict between 1960 and 1963.",
     sourceId: "np-2007-capital",
     pages: "physical PDF pp. 167 to 168",
     status: "reported"
@@ -14363,9 +14503,9 @@ export const components = {
   },
   "hrd-t6": {
     diagram: "hrd", status: "verified", code: "HRD / T6", title: "Holyrood transformer T6",
-    summary: "The 2012 drawing gives three cooling-stage ratings for T6.",
-    data: [["Rating", "25/33.3/41.7 MVA, ONAN/ONAF/ONAF"], ["Voltage", "230/138/6.9 kV"], ["Impedance", "Z1 5.5%"], ["Tap text", "230 kV +4/-12 at 1.25%"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2027-loop-study", "PDF p. 194")]
+    summary: "Canadian General Electric manufactured T6 in 1960. The 1960 date is a manufacturing record, not a Holyrood in-service date.",
+    data: [["Manufacturer", "Canadian General Electric"], ["Manufactured", "1960"], ["Rating", "25/33.3/41.7 MVA, ONAN/ONAF/ONAF"], ["Voltage", "230/138 kV condition record; 230/138/6.9 kV on the station drawing"], ["Impedance", "Z1 5.5%"], ["Primary taps", "+4 and -12 steps at 1.25%"], ["2009 oil results", "elevated carbon monoxide and power factor; low dielectric breakdown voltage"]],
+    sources: [sourceRef("nlh-1960-holyrood-t6", "physical PDF pp. 699 to 700"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("np-2027-loop-study", "PDF p. 194")]
   },
   "hrd-t7": {
     diagram: "hrd", status: "verified", code: "HRD / T7", title: "Holyrood transformer T7",
@@ -26093,6 +26233,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1960 CONTROL BUILDING / EARLY-1970S SWITCHGEAR FAILURE",
+        sourceId: "np-2023-capital-molloys",
+        pages: "physical PDF p. 408",
+        facts: [
+          ["Original use", "the 1960 control building housed 12.5 kV switchgear"],
+          ["Failure", "an early-1970s catastrophic switchgear failure damaged the building foundation, walls and roof"],
+          ["Replacement arrangement", "outdoor distribution equipment replaced the failed switchgear"]
+        ]
+      },
+      {
         label: "1972 LOW-VOLTAGE STRUCTURE",
         sourceId: "np-1978-substation-structures",
         pages: "physical PDF p. 192",
@@ -27267,6 +27417,16 @@ export const stationProfiles = [
       facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "1960 / 1963 CONSTRUCTION-DATE CONFLICT",
+        sourceId: "np-1960-ridge-road",
+        pages: "physical PDF pp. 105 and 511; compare 2007 Capital physical PDF p. 167",
+        facts: [
+          ["2027 filing", "Ridge Road was constructed in 1960"],
+          ["2007 filing", "Ridge Road was built in 1963"],
+          ["Common description", "66 kV transmission switching and 12.5 kV distribution station"]
+        ]
+      },
       {
         label: "1965 12.5 KV SWITCHGEAR",
         sourceId: "np-2010-substation-asset-history",
@@ -31161,6 +31321,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1960 REPLACEMENT PLANT",
+        sourceId: "np-1960-hearts-content",
+        pages: "physical PDF p. 26; CA-NP-088 physical PDF p. 139; remote-control record physical PDF p. 285",
+        facts: [
+          ["Plant", "the 1960 plant replaced the original 1918 plant"],
+          ["Published capacity", "2.4 MW; the plant record gives 2,370 kW under about 46.9 m net head"],
+          ["Machine", "English Electric vertical Francis turbine and Bruce Peebles generator, both commissioned in 1960"],
+          ["Control", "remotely controlled from New Chelsea"]
+        ]
+      },
       {
         label: "1965 PENSTOCK INSTALLATION",
         sourceId: "np-1965-penstocks",

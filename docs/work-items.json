@@ -1483,7 +1483,7 @@
       "dependencies": ["NPREG-064"],
       "completion_evidence": ["research/NP_1963_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1963-system.test.js"],
       "blocker": null,
-      "notes": "The available historical-demand table begins in 1967, so no 1963 demand value is stated. Later primary records establish 363L, 32L and 105L; Ridge Road and Stamp's Lane station construction; Sandy Brook commissioning, plant dimensions and original electrical equipment. A radio-account credit was excluded because it does not identify an installed telecommunications asset."
+      "notes": "The available historical-demand table begins in 1967, so no 1963 demand value is stated. Later primary records establish 363L, 32L and 105L; Stamp's Lane station construction; and Sandy Brook commissioning, plant dimensions and original electrical equipment. Ridge Road construction is unresolved because the 2007 filing says 1963 and the 2027 filing says 1960. A radio-account credit was excluded because it does not identify an installed telecommunications asset."
     },
     {
       "id": "NPREG-066",
@@ -1508,6 +1508,18 @@
       "completion_evidence": ["research/NP_1961_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1961-system.test.js"],
       "blocker": null,
       "notes": "The available historical-demand table begins in 1967, so no 1961 demand value is stated. Later primary records establish 38L, 53L, additional Rattling Brook storage, the Venams Bight SV-5, SV-6 and SV-7 dam systems, Wabush breaker 46-33, and the former Happy Valley diesel plant building. Wabush terminal operation began in 1963 despite the dated 1961 breaker. Venams Bight was commissioned in 1957; the dated 1961 work applies to dams. No named 1961 telecommunications installation was located."
+    },
+    {
+      "id": "NPREG-068",
+      "title": "Reconcile Newfoundland Power 1960 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1960 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-067"],
+      "completion_evidence": ["research/NP_1960_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1960-system.test.js"],
+      "blocker": null,
+      "notes": "The available historical-demand table begins in 1967, so no 1960 demand value is stated. Later primary records establish Molloy's Lane Substation, the 403L Robinsons tap, Makkovik L1, the replacement Heart's Content plant, Holyrood T6 manufacture, and the Bishop's Falls diesel shop. Newfoundland Power filings conflict between 1960 and 1963 for Ridge Road Substation. The T6 record dates manufacture, not installation at Holyrood. No named 1960 telecommunications installation was located."
     },
     {
       "id": "ASSET-001",

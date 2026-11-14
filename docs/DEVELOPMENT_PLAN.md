@@ -69,6 +69,7 @@ Objective: replace the source-image-only overview with a navigable, dated island
 
 Work items:
 
+- NPREG-068
 - NPREG-067
 - NPREG-066
 - NPREG-065
@@ -174,7 +175,7 @@ Work items:
 
 Current state:
 
-- The year-by-year Newfoundland Power register is complete from 1961 through 2024. All listed `NPREG` and `ISL` work items are complete; the remaining evidence gaps retain their deferred or blocked status in `docs/work-items.json`.
+- The year-by-year Newfoundland Power register is complete from 1960 through 2024. All listed `NPREG` and `ISL` work items are complete; the remaining evidence gaps retain their deferred or blocked status in `docs/work-items.json`.
 
 Exit gate:
 
