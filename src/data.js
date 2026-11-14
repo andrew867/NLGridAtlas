@@ -520,6 +520,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1974-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1974", "Newfoundland Power peak demand", "Hydro system peak", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1974-mobile-gas-turbine",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-079, Mobile Gas Turbine Service and Equipment Record",
+    topics: ["1974", "MGT", "Grand Bay", "Orenda", "gas turbine", "mobile generation"],
+    pages: "physical PDF pp. 1 and 13",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022GRA/responses/NLH-NP-079.PDF"
+  },
+  {
+    id: "np-1974-mob-t2",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "CA-NP-007, Mobile Transformer MOB-T2 Asset Record",
+    topics: ["1974", "Mobile", "MOB-T2", "transformer"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/rfi/CA-NP-007.pdf"
+  },
+  {
+    id: "nlh-1974-come-by-chance-assets",
+    year: 2012,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-NLH-097, Come By Chance Specifically Assigned Asset Details",
+    topics: ["1974", "Come By Chance", "terminal station", "230 kV", "asset register"],
+    pages: "physical PDF p. 19",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/IC-NLH-097.PDF"
+  },
+  {
+    id: "np-2024-memorial",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Memorial Substation Refurbishment and Modernization",
+    topics: ["1974", "Memorial", "MUN-T1", "MUN-T2", "protection", "electromechanical relays"],
+    pages: "physical PDF pp. 378 to 386",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
     id: "nlh-1975-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8588,6 +8638,30 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1974-system-record",
+    scope: "1974 demand, station construction, generation and transformer equipment, transmission sections and Come By Chance terminal assets",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-1974-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-2025-capital", pages: "physical PDF p. 458" },
+      { sourceId: "np-2010-wesleyville", pages: "physical PDF p. 298" },
+      { sourceId: "np-2024-islington", pages: "physical PDF p. 392" },
+      { sourceId: "np-2008-station-modernization", pages: "physical PDF p. 173" },
+      { sourceId: "np-2014-carbonear", pages: "physical PDF p. 246" },
+      { sourceId: "np-2016-vir-modernization", pages: "physical PDF p. 261" },
+      { sourceId: "np-1974-mobile-gas-turbine", pages: "physical PDF pp. 1 and 13" },
+      { sourceId: "np-2016-victoria", pages: "physical PDF p. 260" },
+      { sourceId: "np-1974-mob-t2", pages: "physical PDF p. 1" },
+      { sourceId: "np-2024-gambo", pages: "physical PDF p. 353" },
+      { sourceId: "np-2024-memorial", pages: "physical PDF p. 382" },
+      { sourceId: "nlh-1974-come-by-chance-assets", pages: "physical PDF p. 19" },
+      { sourceId: "np-2017-transmission-rebuild", pages: "physical PDF p. 278" },
+      { sourceId: "np-2018-302l", pages: "physical PDF p. 244" },
+      { sourceId: "np-2014-transmission-lines", pages: "physical PDF p. 312" },
+      { sourceId: "np-2007-capital", pages: "physical PDF pp. 178 to 179" }
+    ]
+  },
+  {
     id: "np-1975-system-record",
     scope: "1975 demand, terminal and substation construction, generation commissioning and transmission construction",
     status: "unresolved",
@@ -8961,6 +9035,78 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1974",
+    category: "load",
+    title: "Newfoundland Power peak demand was 408.4 MW",
+    body: "The historical demand table reports Hydro system peak demand of 538 MW. It does not print an Island transmission peak for 1974.",
+    sourceId: "nlh-1974-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1974",
+    category: "station",
+    title: "Six Newfoundland Power substations date to 1974",
+    body: "Later station records date Pulpit Rock, Wesleyville, Islington, Lewisporte, Carbonear and Virginia Waters to 1974. The filings identify different transmission and distribution roles at each site.",
+    sourceId: "np-2025-capital",
+    pages: "physical PDF p. 458; compare the five cited station records",
+    status: "reported"
+  },
+  {
+    date: "1974",
+    category: "generation",
+    title: "The Mobile gas turbine entered service",
+    body: "The filed record describes a 6,750 kW combustion turbine assembled on two trailers. It identifies an Orenda OT-390 Model 2G gas generator and an Orenda OT-3 Model 6 power turbine. The unit later became permanently stationed at Grand Bay after its trailer chassis deteriorated.",
+    sourceId: "np-1974-mobile-gas-turbine",
+    pages: "physical PDF pp. 1 and 13",
+    status: "reported"
+  },
+  {
+    date: "1974",
+    category: "equipment",
+    title: "Victoria T1 and Mobile MOB-T2 date to 1974",
+    body: "The Victoria station history dates VIC-T1 to 1974. CA-NP-007 says the former 6.7 MVA MOB-T2 was purchased in 1974; it does not provide a separate installation date.",
+    sourceId: "np-2016-victoria",
+    pages: "physical PDF p. 260; compare CA-NP-007 physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1974",
+    category: "station",
+    title: "Gambo received a 66 kV wood-pole structure",
+    body: "The 2024 refurbishment filing dates the station's 66 kV wood-pole structure to 1974.",
+    sourceId: "np-2024-gambo",
+    pages: "physical PDF p. 353",
+    status: "reported"
+  },
+  {
+    date: "1974",
+    category: "protection",
+    title: "Memorial bus and transformer relays were installed",
+    body: "The 2024 filing dates 17 electromechanical relays for the 66 kV bus and MUN-T1 and MUN-T2 protection to 1974. It does not identify 1974 as the station construction year.",
+    sourceId: "np-2024-memorial",
+    pages: "physical PDF p. 382",
+    status: "reported"
+  },
+  {
+    date: "1974",
+    category: "station",
+    title: "Come By Chance terminal assets entered service",
+    body: "The specifically assigned asset register dates the two 230 kV power transformers, bus work, disconnects, control building, compressed-air equipment, insulators, cable and support steel to January 1, 1974. The same register estimates the terminal itself in service in 1973.",
+    sourceId: "nlh-1974-come-by-chance-assets",
+    pages: "physical PDF p. 19",
+    status: "reported"
+  },
+  {
+    date: "1972 to 1974",
+    category: "network",
+    title: "Four transmission-line sections received dated work",
+    body: "Later filings date the 2.0 km 41L section entering Carbonear, the 2.01 km 68L section entering Carbonear and the 2.4 km 302L section entering Laurentian to 1974. The 110L history records 18.2 km upgraded between 1972 and 1974.",
+    sourceId: "np-2017-transmission-rebuild",
+    pages: "physical PDF p. 278; compare 2014 p. 312, 2018 p. 244 and 2007 pp. 178 to 179",
     status: "reported"
   },
   {
@@ -13703,6 +13849,12 @@ export const islandTerminalRecords = [
     name: "Come By Chance Terminal Station",
     status: "verified",
     facts: [["T1 and T2, 2014 facility review", "230/13.8 kV, 30/40/50 MVA each; both manufactured in 1972"], ["230 kV bus, 2014 facility review", "B1 and B2 are joined through two disconnects and one SF6 bus-tie breaker"], ["13.8 kV buses, 2014 filed one-line", "T1 and T2 feed separate sections; breaker 52-3 is normally open between them"], ["Station service, 2014 facility review", "Two 75 kVA, 13,800/230-115 V transformers"], ["Reactive equipment", "Four 38.35 MVAR, 230 kV capacitor banks installed in 2011/2012; Nalcor owned the banks and Hydro operated and maintained them"], ["Cancelled grounding project, 2010", "The customer-funded neutral-grounding-resistor project was cancelled after NARL did not approve cost recovery; reported actual expenditure was $0"], ["Customer assignment", "T1 and T2 serve only the Braya refinery; Braya was responsible for the approved bushing-replacement capital cost"], ["Transformer work, Q4 2024", "Hydro reported transformer bushing replacement completed at Come By Chance"], ["Protection work", "TL237 protection at Come By Chance and Western Avalon was completed in 2025; T1 and T2 relay work was planned for Q4 2026 and awaited Braya schedule confirmation in September 2026"], ["2026 forecast and proposed work", "Control-building fire-protection work remained forecast for 2026; reclosing-controller replacement was proposed for 2027/2028"], ["230 kV circuits", "TL207 to Sunnyside; TL237 to Western Avalon"]],
+    historyRecords: [{
+      label: "1974 SPECIFICALLY ASSIGNED ASSETS",
+      sourceId: "nlh-1974-come-by-chance-assets",
+      pages: "physical PDF p. 19",
+      facts: [["Terminal header", "estimated in service in 1973"], ["1974 asset group", "two 230 kV power transformers, bus work, four named disconnects, control building, compressed-air equipment, insulators, power and control cable, and steel support structure"], ["Asset date", "January 1, 1974"]]
+    }],
     diagram: {
       label: "2014 filed operating arrangement / 2011 to 2012 capacitor banks / 2018 routes",
       buses: [{ id: "b1", label: "split bus B1 / B2", voltage: "230 kV", segments: [{ x: 330, width: 420 }, { x: 790, width: 420 }], tie: { fromX: 540, toX: 580, label: "B1B2 tie" } }, { id: "b2", label: "split customer bus", voltage: "13.8 kV", segments: [{ x: 330, width: 420 }, { x: 790, width: 420 }], tie: { fromX: 540, toX: 580, label: "52-3 N.O.", open: true } }],
@@ -15456,6 +15608,12 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1974 MOB-T2 PURCHASE",
+        sourceId: "np-1974-mob-t2",
+        pages: "physical PDF p. 1",
+        facts: [["Former transformer", "MOB-T2 purchased in 1974; 6.7 MVA in the 2010 response"], ["Record limit", "the response does not state a separate installation date"]]
+      },
       {
         label: "2002 REPORTED GOULDS TO MOBILE LINE WORK",
         sourceId: "np-2002-annual-report",
@@ -18722,6 +18880,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1974 MOBILE GAS TURBINE",
+        sourceId: "np-1974-mobile-gas-turbine",
+        pages: "physical PDF pp. 1 and 13",
+        facts: [["Entered service", "1974"], ["Filed output", "6,750 kW"], ["Prime mover", "Orenda OT-390 Model 2G gas generator and Orenda OT-3 Model 6 power turbine"], ["Package", "two trailers; generation train on one and switchgear, controls, batteries, transformer, recloser and auxiliary power on the other"], ["Later location", "permanently stationed at Grand Bay after deterioration of the trailer chassis"]]
+      },
+      {
         label: "1983 STATION ASSETS / 1984 STATION DATE",
         sourceId: "np-1983-substation-assets",
         pages: "physical PDF p. 201",
@@ -18889,6 +19053,7 @@ export const stationProfiles = [
         sourceId: "np-2018-302l",
         pages: "physical PDF p. 244",
         facts: [
+          ["1974 section", "2.4 km entering Laurentian"],
           ["Original line", "66 kV; approximately 26.6 km of 1959 construction and 315 single-pole structures remained in the 2017 filing"],
           ["Filed rebuild", "11 km in 2018 and the remaining 16 km in 2019; replace non-standard 4/0 ACSR with 477 ASC"]
         ]
@@ -20325,6 +20490,7 @@ export const stationProfiles = [
         sourceId: "np-2018-302l",
         pages: "physical PDF p. 244",
         facts: [
+          ["1974 section", "2.4 km entering Laurentian"],
           ["Original line", "66 kV; approximately 26.6 km of 1959 construction and 315 single-pole structures remained in the 2017 filing"],
           ["Filed rebuild", "11 km in 2018 and the remaining 16 km in 2019; replace non-standard 4/0 ACSR with 477 ASC"]
         ]
@@ -21119,6 +21285,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1974 66 KV STRUCTURE",
+        sourceId: "np-2024-gambo",
+        pages: "physical PDF p. 353",
+        facts: [["Structure", "66 kV wood-pole structure installed in 1974"]]
+      },
       {
         label: "1980 138 KV STEEL STRUCTURE",
         sourceId: "np-2024-gambo",
@@ -23086,6 +23258,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1974 STATION CONSTRUCTION",
+        sourceId: "np-2008-station-modernization",
+        pages: "physical PDF p. 173",
+        facts: [["Original role", "25 kV distribution substation"], ["Later filed arrangement", "one 25 MVA transformer, four 25 kV feeders and 103L to Notre Dame Junction"]]
+      },
       {
         label: "1981 147L CONSTRUCTION",
         sourceId: "np-1981-147l",
@@ -25530,6 +25708,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1974 STATION CONSTRUCTION",
+        sourceId: "np-2016-vir-modernization",
+        pages: "physical PDF p. 261",
+        facts: [["Station role", "transmission and distribution substation"], ["Filed 2015 equipment", "four 66 kV lines; three 25 MVA, 66/12.5 kV transformers; eight 12.5 kV feeders"]]
+      },
+      {
         label: "2003 FILED THIRD TRANSFORMER",
         sourceId: "np-2003-capital-substations",
         pages: "physical PDF pp. 34 to 35",
@@ -25672,6 +25856,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1974 STATION CONSTRUCTION",
+        sourceId: "np-2025-capital",
+        pages: "physical PDF p. 458",
+        facts: [["Original role", "distribution substation"], ["Supply", "59L from Virginia Waters"], ["2024 filed equipment", "two 25 MVA transformers and five 12.5 kV feeders"]]
+      },
       {
         label: "2004 EAST END PLANNING RECORD",
         sourceId: "np-2005-east-end-planning",
@@ -28008,6 +28198,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1974 PROTECTION EQUIPMENT",
+        sourceId: "np-2024-memorial",
+        pages: "physical PDF p. 382",
+        facts: [["Equipment", "17 electromechanical relays in three customer-owned switchgear cubicles"], ["Protection", "66 kV bus, MUN-T1 and MUN-T2"], ["Installed", "1974"]]
+      },
+      {
         label: "2013 TO 2014 COMPLETED 12L REBUILD",
         sourceId: "np-2016-12l-completion",
         pages: "physical PDF pp. 480 and 485",
@@ -28248,6 +28444,7 @@ export const stationProfiles = [
         pages: "physical PDF pp. 278 to 279 and 285",
         facts: [
           ["Line", "66 kV between Carbonear and Heart's Content"],
+          ["1974 section", "2.0 km entering Carbonear"],
           ["Filed work", "rebuild 13.6 km, including 55 H-frame structures and 3 single-pole structures"],
           ["Conductor", "4/0 ACSR, identified as non-standard in the filing"],
           ["Filed cost", "$2.510 million"]

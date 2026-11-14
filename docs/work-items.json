@@ -1346,12 +1346,24 @@
       "title": "Reconcile Newfoundland Power 1974 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1974 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-053"],
+      "completion_evidence": ["research/NP_1974_SYSTEM_RECORD.md", "src/data.js", "tests/np-1974-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the reported utility peaks. Later primary records establish six Newfoundland Power station dates, the Mobile gas turbine, Victoria T1, MOB-T2, the Gambo 66 kV structure, Memorial protection, Come By Chance individual terminal assets and four dated line sections. The Come By Chance terminal header estimates the station in service in 1973, so the 1974 asset dates are not treated as a station construction date."
+    },
+    {
+      "id": "NPREG-055",
+      "title": "Reconcile Newfoundland Power 1973 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1973 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-054"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with historical demand, transmission-line construction, station assets, generation equipment and dated utility records."
+      "notes": "Start with historical demand, station construction, generation equipment, transmission-line construction and dated asset registers."
     },
     {
       "id": "ASSET-001",

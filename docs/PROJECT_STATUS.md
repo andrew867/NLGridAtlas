@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1974 system record from historical demand, station, generation, transformer, protection, transmission-line and terminal-asset records.
+- Added the 408.4 MW Newfoundland Power peak and 538 MW Hydro system peak, six Newfoundland Power station dates, the 6,750 kW two-trailer Mobile gas turbine, Victoria T1, MOB-T2, the Gambo 66 kV structure, Memorial relays, Come By Chance individual asset dates and four dated line sections.
+- Kept the Come By Chance terminal's estimated 1973 in-service date separate from its January 1, 1974 individual asset rows. Excluded L'Anse au Loup from the Island record and did not convert a Humber transformer manufacture date into an installation date.
+- Completed NPREG-054 and opened NPREG-055 for the surviving 1973 system and annual records.
 - Reconstructed the surviving 1975 system record from historical demand, terminal-station, generation, substation, transmission and later asset records.
 - Added the 488.2 MW Newfoundland Power peak and 527 MW Hydro system peak, Wiltondale Terminal Station, Holyrood Terminal Stage 2, the Stephenville gas-turbine plant, four Newfoundland Power substations, 305L and the Clarenville connection on 100L.
 - Preserved the Greenhill facility conflicts. The 2027 filing says the turbine was commissioned in 1975 while the 2002 review says it was installed in 1977. The 2027 filing dates Greenhill Substation to 1975 on physical page 14 and 1977 on physical page 45.
