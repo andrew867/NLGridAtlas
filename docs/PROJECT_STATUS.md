@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1977 system record from historical demand, transmission, station, generation and telecommunications records.
+- Added the 584.2 MW Newfoundland Power peak and 679 MW Hydro system peak, the Blaketown 138 kV expansion, seven dated station structures, two power line carrier systems and the Bay d'Espoir Unit 7 exciter record.
+- Preserved the Blaketown structure conflict between 1977 construction and 1978 installation records. Preserved the Greenhill conflict between a 1977 installation record and the later filing's 1975 manufacture and 1977 substation dates.
+- Completed NPREG-051 and opened NPREG-052 for the surviving 1976 system and annual records.
 - Reconstructed the surviving 1978 system record from historical demand, transmission, terminal-station, distribution-station, rural-protection and Holyrood equipment records.
 - Added 639.9 MW Newfoundland Power peak demand, 939 MW Island transmission peak, 142L from Cobb's Pond toward Boyd's Cove, TL243 from Hinds Lake to Howley, Western Avalon T3 and its 230 kV bay, dated structures at Bay Roberts, Blaketown, Cobb's Pond, Jonathan's Pond, Bishop's Falls and Springdale, four rural reclosers, and the Holyrood Unit 3 turbine manufacture, relay-panel installation and T3 transformer movement.
 - Completed NPREG-050 and opened NPREG-051 for the surviving 1977 system and annual records.
@@ -342,7 +346,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1977 system and annual records under `NPREG-051`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1976 system and annual records under `NPREG-052`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

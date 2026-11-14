@@ -520,6 +520,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1977-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1977", "Newfoundland Power peak demand", "Hydro system peak", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1977-greenhill-installation",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2002 Burin Peninsula Engineering Review, Greenhill Gas Turbine",
+    topics: ["1977", "Greenhill", "gas turbine", "Burin Peninsula", "installation date conflict"],
+    pages: "physical PDF p. 11",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf"
+  },
+  {
+    id: "nlh-1977-powerline-carrier",
+    year: 2002,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Telecommunication Plan, Central and West Powerline Carrier Inventory",
+    topics: ["1977", "power line carrier", "TL232", "TL205", "Stony Brook", "Buchans", "Bay d'Espoir"],
+    pages: "physical PDF p. 41",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionH.pdf"
+  },
+  {
+    id: "nlh-1977-bde-unit7-exciter",
+    year: 2002,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2003 Capital Budget Application, Bay d'Espoir Unit 7 Exciter",
+    topics: ["1977", "Bay d'Espoir", "Unit 7", "exciter", "GE Silcomatic IV"],
+    pages: "physical PDF pp. 36 to 37",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionAtoGtab1.pdf"
+  },
+  {
     id: "nlh-1978-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8438,6 +8478,20 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1977-system-record",
+    scope: "1977 demand, Blaketown 138 kV expansion, station structures, Greenhill generation, power line carrier and Bay d'Espoir Unit 7 equipment",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1977-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-2027-blaketown", pages: "physical PDF pp. 423 to 424" },
+      { sourceId: "np-1978-substation-structures", pages: "physical PDF pp. 191, 194 and 199 to 201" },
+      { sourceId: "np-1977-greenhill-installation", pages: "physical PDF p. 11" },
+      { sourceId: "np-2027-greenhill-refurbishment", pages: "physical PDF pp. 40 and 45" },
+      { sourceId: "nlh-1977-powerline-carrier", pages: "physical PDF p. 41" },
+      { sourceId: "nlh-1977-bde-unit7-exciter", pages: "physical PDF pp. 36 to 37" }
+    ]
+  },
+  {
     id: "np-1978-system-record",
     scope: "1978 actual demand, transmission construction, terminal and distribution assets, rural protection and Holyrood Unit 3 equipment",
     status: "reported",
@@ -8760,6 +8814,60 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1977",
+    category: "load",
+    title: "Newfoundland Power peak demand was 584.2 MW",
+    body: "The historical demand table reports Hydro system peak demand of 679 MW. It does not print an Island transmission peak for 1977.",
+    sourceId: "nlh-1977-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1977 to 1978",
+    category: "station",
+    title: "Blaketown received its 138 kV infrastructure",
+    body: "The 2027 station study dates construction of the 138 kV steel structure and manufacture of BLK-T3 to 1977. The older structure register lists the 138 kV steel structure as installed in 1978.",
+    sourceId: "np-2027-blaketown",
+    pages: "physical PDF pp. 423 to 424; compare CA-NP-088 physical PDF p. 194",
+    status: "unresolved"
+  },
+  {
+    date: "1977",
+    category: "station",
+    title: "Station structures entered service across the Island",
+    body: "The asset register dates structures at Big Pond, Broad Cove, Holyrood, Botwood, Frenchman's Cove, Gillams and Abrahams Cove to 1977.",
+    sourceId: "np-2010-substation-asset-history",
+    pages: "physical PDF pp. 191, 194 and 199 to 201",
+    status: "reported"
+  },
+  {
+    date: "1977",
+    category: "generation",
+    title: "Greenhill installation date remains unresolved",
+    body: "A 2002 engineering review says the 25 MW gas turbine was installed near Grand Bank in 1977. The 2027 filing says the unit was manufactured in 1975, while the Greenhill substation was constructed in 1977.",
+    sourceId: "np-1977-greenhill-installation",
+    pages: "physical PDF p. 11; compare 2027 filing physical PDF pp. 40 and 45",
+    status: "unresolved"
+  },
+  {
+    date: "1977",
+    category: "telecommunications",
+    title: "Two power line carrier links were purchased",
+    body: "The Central and West inventory dates one TL232 Stony Brook to Buchans carrier system and the TL205 Bay d'Espoir to Stony Brook carrier system to 1977.",
+    sourceId: "nlh-1977-powerline-carrier",
+    pages: "physical PDF p. 41",
+    status: "reported"
+  },
+  {
+    date: "1977",
+    category: "generation",
+    title: "Bay d'Espoir Unit 7 entered service with its original exciter",
+    body: "The capital filing identifies the GE Silcomatic IV exciter as original Unit 7 equipment installed in 1977. It had accumulated 91,856 service hours when the replacement project was filed.",
+    sourceId: "nlh-1977-bde-unit7-exciter",
+    pages: "physical PDF pp. 36 to 37",
     status: "reported"
   },
   {
@@ -12439,6 +12547,16 @@ export const islandTerminalRecords = [
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
       {
+        label: "1977 UNIT 7 AND ORIGINAL EXCITER",
+        sourceId: "nlh-1977-bde-unit7-exciter",
+        pages: "physical PDF pp. 36 to 37",
+        facts: [
+          ["Unit 7", "in service in 1977"],
+          ["Original exciter", "General Electric Silcomatic IV installed in 1977"],
+          ["Filed service record", "91,856 operating hours when the 2003 replacement project was filed"]
+        ]
+      },
+      {
         label: "1981 UNIT 5 DRAFT-TUBE REPAIRS",
         sourceId: "nlh-1981-bde-work",
         pages: "physical PDF p. 319",
@@ -13936,6 +14054,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1975 TO 1977 INSTALLATION DATE CONFLICT",
+        sourceId: "np-1977-greenhill-installation",
+        pages: "physical PDF p. 11; compare 2027 filing physical PDF pp. 40 and 45",
+        facts: [
+          ["2002 engineering review", "25 MW gas turbine installed near Grand Bank in 1977"],
+          ["2027 facility record", "Curtiss Wright unit manufactured in 1975; Greenhill substation constructed in 1977"],
+          ["Record state", "the filings do not reconcile turbine manufacture, installation and commissioning dates"]
+        ]
+      },
       {
         label: "1979 LOW-VOLTAGE BUS",
         sourceId: "np-1979-greenhill-lv-bus",
@@ -16094,6 +16222,12 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1977 LOW-VOLTAGE STRUCTURE",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 191",
+        facts: [["Station record", "25 MVA transformer capacity; 12.47 kV wood low-voltage structure installed in 1977; 66 kV high-voltage structure dated to 1955"]]
+      },
+      {
         label: "1988 BELL ISLAND SUBMARINE-CABLE INSTALLATION",
         sourceId: "np-1988-bell-island-cables",
         pages: "physical PDF p. 314",
@@ -16420,6 +16554,12 @@ const earlyFeederMapProfiles = [
       facts: [["BIG-T1", "66/12.5 kV; 11.11 MVA; 8.30 MVA 2026 forecast"]]
     },
     historyRecords: [
+      {
+        label: "1977 STATION STRUCTURES",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 191",
+        facts: [["Station record", "11.1 MVA transformer capacity; wood 66 kV and 12.47 kV structures installed in 1977"]]
+      },
       {
         label: "2003 FILED OIL-FILLED EQUIPMENT REPLACEMENT",
         sourceId: "np-2003-big-pond-oil-equipment",
@@ -19707,12 +19847,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
-        label: "1978 STATION STRUCTURES",
-        sourceId: "np-1978-substation-structures",
-        pages: "physical PDF p. 194",
+        label: "1977 TO 1978 STRUCTURE DATE CONFLICT",
+        sourceId: "np-2027-blaketown",
+        pages: "physical PDF pp. 423 to 424; compare CA-NP-088 physical PDF p. 194",
         facts: [
-          ["Transmission bank", "41.6 MVA"],
-          ["High-voltage structure", "138 kV steel structure installed in 1978"],
+          ["2027 station study", "138 kV steel structure constructed in 1977; BLK-T3 manufactured in 1977"],
+          ["2013 asset register", "41.6 MVA transmission bank; 138 kV steel structure installed in 1978"],
           ["Later work", "66 kV wood structure and complete substation overhaul dated to 2001"]
         ]
       },
@@ -27446,6 +27586,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1977 STATION STRUCTURES",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 194",
+        facts: [["Station record", "20 MVA transformer capacity; steel 138 kV and 12.47 kV structures installed in 1977"]]
+      },
+      {
         label: "2014 PROPOSED 39L BREAKERS",
         sourceId: "np-2014-improvements",
         pages: "physical PDF p. 22",
@@ -27631,6 +27777,12 @@ export const stationProfiles = [
       facts: [["BOT-T1", "138/25 kV; 20 MVA; 13.87 MVA 2026 forecast"]]
     },
     historyRecords: [
+      {
+        label: "1977 STATION STRUCTURES",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 199",
+        facts: [["Station record", "20 MVA transformer capacity; steel 138 kV and 25 kV structures installed in 1977"]]
+      },
       {
         label: "1999 REPORTED FEEDER RELIABILITY INVESTMENT",
         sourceId: "np-1999-annual-report",

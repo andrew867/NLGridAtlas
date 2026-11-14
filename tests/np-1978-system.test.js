@@ -30,7 +30,7 @@ test("1978 Western Avalon and station structure records remain specific", () => 
   assert.match(recordText("WAV"), /MAY 15, 1978 T3 AND 230 KV BAY/);
   assert.match(recordText("WAV"), /B1L17/);
   assert.match(recordText("BRB"), /1978 TRANSMISSION EXPANSION/);
-  assert.match(recordText("BLK"), /1978 STATION STRUCTURES/);
+  assert.match(recordText("BLK"), /1977 TO 1978 STRUCTURE DATE CONFLICT/);
   assert.match(recordText("JON"), /1978 ORIGINAL STRUCTURES/);
   assert.match(recordText("BFS"), /1978 STRUCTURE REGISTER/);
   assert.match(recordText("SPR"), /1978 25 KV STRUCTURE/);

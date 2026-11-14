@@ -1310,12 +1310,24 @@
       "title": "Reconcile Newfoundland Power 1977 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1977 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-050"],
+      "completion_evidence": ["research/NP_1977_SYSTEM_RECORD.md", "src/data.js", "tests/np-1977-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the reported system values. Later primary records establish the Blaketown 138 kV expansion, seven station structure records, the Greenhill installation record, two power line carrier systems and the Bay d'Espoir Unit 7 exciter. Blaketown remains unresolved because filings date the 138 kV structure to 1977 and 1978. Greenhill remains unresolved because a 2002 review dates turbine installation to 1977 while the 2027 filing identifies 1975 manufacture and 1977 substation construction."
+    },
+    {
+      "id": "NPREG-052",
+      "title": "Reconcile Newfoundland Power 1976 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1976 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-051"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with historical demand, Blaketown construction, dated transmission and distribution assets, Holyrood Unit 3 construction, rural generation and protection records."
+      "notes": "Start with historical demand, Hardwoods T2, Holyrood distribution and generating-station work, dated line and station assets, power line carrier and rural generation records."
     },
     {
       "id": "ASSET-001",
