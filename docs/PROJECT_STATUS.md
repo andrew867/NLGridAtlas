@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1976 system record from historical demand, transmission-line, station and generation records.
+- Added the 585.4 MW Newfoundland Power peak and 681 MW Hydro system peak, TL231 from Bay d'Espoir to Stony Brook, TL229 from Wiltondale to Glenburnie, 123L from Clarenville to Catalina, and the 1976 Marystown, Glovertown, Springfield, Fermeuse and new Grand Falls station records.
+- Preserved the Hardwoods commissioning conflict between the 2014 criticality assessment's 1976 service date and the 2010 Capital Plan table's 1977 date. Added the two Olympus C gas generators, Curtiss-Wright power turbine, 13.8/66 kV transformer and synchronous-condenser role to the interactive Hardwoods record.
+- Completed NPREG-052 and opened NPREG-053 for the surviving 1975 system and annual records.
 - Reconstructed the surviving 1977 system record from historical demand, transmission, station, generation and telecommunications records.
 - Added the 584.2 MW Newfoundland Power peak and 679 MW Hydro system peak, the Blaketown 138 kV expansion, seven dated station structures, two power line carrier systems and the Bay d'Espoir Unit 7 exciter record.
 - Preserved the Blaketown structure conflict between 1977 construction and 1978 installation records. Preserved the Greenhill conflict between a 1977 installation record and the later filing's 1975 manufacture and 1977 substation dates.
@@ -346,7 +350,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1976 system and annual records under `NPREG-052`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1975 system and annual records under `NPREG-053`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

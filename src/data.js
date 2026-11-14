@@ -520,6 +520,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1976-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1976", "Newfoundland Power peak demand", "Hydro system peak", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "nlh-1976-hardwoods-gt",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-450, Hardwoods Gas Turbine Criticality Assessment",
+    topics: ["1976", "Hardwoods", "gas turbine", "synchronous condenser", "facility history"],
+    pages: "physical PDF p. 63",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-450.pdf"
+  },
+  {
+    id: "nlh-1977-hardwoods-gt-conflict",
+    year: 2009,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2010 Capital Plan, Generating-Plant Age Table",
+    topics: ["1977", "Hardwoods", "gas turbine", "commissioning date conflict"],
+    pages: "physical PDF p. 28",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/NLH2010ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1976-tl231",
+    year: 2005,
+    organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
+    title: "Order P.U. 31(2005), TL231 Line Record",
+    topics: ["1976", "TL231", "Bay d'Espoir", "Stony Brook", "230 kV"],
+    pages: "physical PDF p. 16",
+    status: "reported",
+    url: "http://www.pub.nl.ca/PU/orders/2005/pu31-2005.pdf"
+  },
+  {
+    id: "nlh-1976-tl229",
+    year: 2025,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2026 Capital Budget Application, TL229 Right-of-Way Record",
+    topics: ["1976", "TL229", "Wiltondale", "Glenburnie", "right-of-way"],
+    pages: "physical PDF p. 331",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2026Capital/app/From%20NLH%20-%202026%20Capital%20Budget%20Application%20-%20Volume%20II%20-%20Redacted%20-%202025-07-15.PDF"
+  },
+  {
+    id: "np-2012-grand-falls-history",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, Grand Falls Station History",
+    topics: ["1976", "Grand Falls", "138 kV", "66 kV", "25 kV", "station history"],
+    pages: "physical PDF p. 327",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
     id: "nlh-1977-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8478,6 +8538,24 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1976-system-record",
+    scope: "1976 demand, transmission construction, station construction and Hardwoods gas-turbine equipment",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1976-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "nlh-1976-hardwoods-gt", pages: "physical PDF p. 63" },
+      { sourceId: "nlh-1977-hardwoods-gt-conflict", pages: "physical PDF p. 28" },
+      { sourceId: "nlh-1976-tl231", pages: "physical PDF p. 16" },
+      { sourceId: "nlh-1976-tl229", pages: "physical PDF p. 331" },
+      { sourceId: "np-2006-123l", pages: "physical PDF pp. 332 to 338" },
+      { sourceId: "np-2020-marystown", pages: "physical PDF p. 359" },
+      { sourceId: "np-2022-glovertown", pages: "physical PDF p. 292" },
+      { sourceId: "np-2010-station-modernization", pages: "physical PDF p. 297" },
+      { sourceId: "np-2008-fermeuse-substation", pages: "physical PDF p. 167" },
+      { sourceId: "np-2012-grand-falls-history", pages: "physical PDF p. 327" }
+    ]
+  },
+  {
     id: "np-1977-system-record",
     scope: "1977 demand, Blaketown 138 kV expansion, station structures, Greenhill generation, power line carrier and Bay d'Espoir Unit 7 equipment",
     status: "unresolved",
@@ -8814,6 +8892,60 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1976",
+    category: "load",
+    title: "Newfoundland Power peak demand was 585.4 MW",
+    body: "The historical demand table reports Hydro system peak demand of 681 MW. It does not print an Island transmission peak for 1976.",
+    sourceId: "nlh-1976-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1976 to 1977",
+    category: "generation",
+    title: "Hardwoods commissioning date remains unresolved",
+    body: "The 2014 criticality assessment says the Hardwoods Gas Turbine Facility entered service in 1976. The 2010 Capital Plan table prints 1977. The facility uses two nominal 25 MW Olympus C gas generators, a Curtiss-Wright power turbine, and a 13.8/66 kV, 45/60/75 MVA transformer; it also operates as a synchronous condenser.",
+    sourceId: "nlh-1976-hardwoods-gt",
+    pages: "physical PDF p. 63; compare 2010 Capital Plan physical PDF p. 28",
+    status: "unresolved"
+  },
+  {
+    date: "1976",
+    category: "network",
+    title: "TL231 connected Bay d'Espoir and Stony Brook",
+    body: "The 105.3 km, 230 kV steel-tower line was constructed in 1976.",
+    sourceId: "nlh-1976-tl231",
+    pages: "physical PDF p. 16",
+    status: "reported"
+  },
+  {
+    date: "1976",
+    category: "network",
+    title: "TL229 connected Wiltondale and Glenburnie",
+    body: "The later asset filing dates the 13 km route to 1976.",
+    sourceId: "nlh-1976-tl229",
+    pages: "physical PDF p. 331",
+    status: "reported"
+  },
+  {
+    date: "1976",
+    category: "network",
+    title: "123L connected Clarenville and Catalina",
+    body: "Newfoundland Power built the 94 km, 138 kV line with wood H-frame structures.",
+    sourceId: "np-2006-123l",
+    pages: "physical PDF pp. 332 to 338",
+    status: "reported"
+  },
+  {
+    date: "1976",
+    category: "station",
+    title: "Five Newfoundland Power stations were built",
+    body: "Later station histories date Marystown, Glovertown, Springfield, Fermeuse and the new Grand Falls station to 1976.",
+    sourceId: "np-2012-grand-falls-history",
+    pages: "physical PDF p. 327; compare the cited station histories",
     status: "reported"
   },
   {
@@ -11837,10 +11969,10 @@ export const components = {
     sources: [sourceRef("oxen-2013", "PDF p. 61")]
   },
   "hwd-g1": {
-    diagram: "hwd", status: "verified", code: "HWD / G1 AND T5", title: "Hardwoods generator branch",
-    summary: "The 2013 alternative one-line connects G1 to the 66 kV bus through T5. The 2026 loop study models HWD-G1 at 25 MW.",
-    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["1984 plant work", "Alternator end windings replaced after an exciter failure"], ["T5 register date", "1985"], ["1988 turbine work", "Curtiss-Wright power-turbine casings replaced at Hardwoods and Stephenville; approximately $4 million combined"], ["1992 stack work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
-    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1984-hardwoods-gas-turbine", "physical PDF p. 69"), sourceRef("nlh-1985-hardwoods-t5", "physical PDF p. 70"), sourceRef("nlh-1988-gas-turbine-casings", "physical PDF p. 166"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+    diagram: "hwd", status: "unresolved", code: "HWD / G1 AND T5", title: "Hardwoods generator branch",
+    summary: "The 2013 alternative one-line connects G1 to the 66 kV bus through T5. Later filings disagree whether the facility entered service in 1976 or 1977.",
+    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["Facility service date", "1976 in the 2014 criticality assessment; 1977 in the 2010 Capital Plan table"], ["Prime movers", "two Rolls-Royce Olympus C gas generators, nominal 25 MW each, driving a Curtiss-Wright power turbine"], ["Operating role", "peaking and emergency generation; synchronous-condenser operation is dominant"], ["1984 plant work", "Alternator end windings replaced after an exciter failure"], ["T5 register date", "1985"], ["1988 turbine work", "Curtiss-Wright power-turbine casings replaced at Hardwoods and Stephenville; approximately $4 million combined"], ["1992 stack work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1976-hardwoods-gt", "physical PDF p. 63"), sourceRef("nlh-1977-hardwoods-gt-conflict", "physical PDF p. 28"), sourceRef("nlh-1984-hardwoods-gas-turbine", "physical PDF p. 69"), sourceRef("nlh-1985-hardwoods-t5", "physical PDF p. 70"), sourceRef("nlh-1988-gas-turbine-casings", "physical PDF p. 166"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
   "hwd-b1b2": {
     diagram: "hwd", status: "verified", code: "HWD / B1B2", title: "Hardwoods 230 kV bus tie",
@@ -13627,6 +13759,19 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1976 NEW GRAND FALLS STATION",
+        sourceId: "np-2012-grand-falls-history",
+        pages: "physical PDF p. 327",
+        facts: [
+          ["Station", "transmission and distribution station built in 1976"],
+          ["GFS-T1", "138/66 kV; 30 MVA in the 2011 filing"],
+          ["138 kV circuits", "130L to Stony Brook and 132L to Bishop's Falls"],
+          ["66 kV circuit", "101L to Rattling Brook and a 66 kV tie to Grand Falls"],
+          ["Distribution banks", "GFS-T2 and GFS-T3; each 138/25 kV, 20 MVA in the 2011 filing"],
+          ["25 kV feeders", "five feeders serving approximately 6,000 customers"]
+        ]
+      },
       {
         label: "2009 FILED GRAND FALLS 4.16 KV YARD WORK",
         sourceId: "np-2009-station-modernization",
