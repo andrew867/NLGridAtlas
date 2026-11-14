@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1993 system record from the revised reliability response, the 2003 capital variance response, the 2002 ten-year summary and later equipment histories. No standalone 1993 annual return was located.
+- Added actual 1993 SAIFI and SAIDI, $33.862 million capital expenditure, 420 GWh company generation, 4,093 GWh purchased energy, 4,286 GWh in sales and the year-end 201,628 customer count.
+- Added 70L construction, the 14L Stamp's Lane rebuild section, the 1993 to 1996 TL202 insulator program, Hardwoods gas-turbine and air-start work, Northwest Brook protection, the Salt Pond powerhouse replacement and the Hawke Hill icing monitor.
+- Opened NPREG-036 for the surviving 1992 system and annual records.
 - Reconstructed the 1994 system record from the revised reliability response, the 2003 capital variance response, the 2002 ten-year summary, and the complete December 1994 storm chronology embedded in the later prudence filing.
 - Added actual 1994 SAIFI and SAIDI, $34.773 million capital expenditure, 420 GWh company generation, 4,178 GWh purchased energy, 4,371 GWh in sales, and the year-end 204,900 customer count.
 - Added the TL201 and TL217 storm damage, both December 10 Avalon blackouts, Hardwoods and Holyrood restoration sequence, post-storm feeder sectionalizing, Holyrood black-start changes, and control-centre telephone, VHF and power-line-carrier record.
@@ -279,7 +283,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1993 system and annual records under `NPREG-035`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1992 system and annual records under `NPREG-036`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

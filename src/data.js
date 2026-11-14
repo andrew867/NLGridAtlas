@@ -390,6 +390,76 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
   },
   {
+    id: "np-1993-capital-variance",
+    year: 1993,
+    organization: "Newfoundland Power",
+    title: "CA-2, 1993 Capital Expenditure Variance Summary",
+    topics: ["capital expenditure", "energy supply", "substations", "transmission", "distribution", "telecommunications", "1993"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
+  },
+  {
+    id: "np-1993-70l",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-147, Transmission Planning and 70L Construction Record",
+    topics: ["70L", "Oxen Pond", "Stamp's Lane", "66 kV", "transmission planning", "construction"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-147.pdf"
+  },
+  {
+    id: "np-1993-70l-row",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-062, Transmission Line Right-of-Way Record",
+    topics: ["70L", "Oxen Pond", "Stamp's Lane", "right-of-way", "1993"],
+    pages: "physical PDF p. 10",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-062.pdf"
+  },
+  {
+    id: "nlh-1993-hardwoods-gt",
+    year: 2009,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2010 Capital Budget Application, Hardwoods Gas Turbine Plant Life Extension",
+    topics: ["Hardwoods", "gas turbine", "End B", "engine 202223", "overhaul"],
+    pages: "physical PDF pp. 8 and 33",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/NLH2010ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1993-hardwoods-air-start",
+    year: 1998,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Hardwoods Gas Turbine Plant Condition Assessment, Air Start System",
+    topics: ["Hardwoods", "gas turbine", "air start", "compressors", "control panel"],
+    pages: "physical PDF p. 135",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/rfi/PUB-174.pdf"
+  },
+  {
+    id: "nlh-1993-hawke-hill",
+    year: 2005,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2006 Capital Budget Application, Hawke Hill Monitoring Site",
+    topics: ["Hawke Hill", "transmission", "ice monitoring", "data acquisition", "radio link"],
+    pages: "physical PDF p. 69",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2006cap/files/applic/NLH2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1993-salt-pond-enclosure",
+    year: 2000,
+    organization: "Newfoundland Power",
+    title: "Salt Pond Gas Turbine Plant Condition Record",
+    topics: ["Salt Pond", "gas turbine", "powerhouse", "14.7 MW", "Burin"],
+    pages: "physical PDF p. 335",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
     id: "np-1994-capital-variance",
     year: 1994,
     organization: "Newfoundland Power",
@@ -6598,6 +6668,12 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1993-system-reliability",
+    scope: "1993 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
+    status: "reported",
+    sources: [{ sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }]
+  },
+  {
     id: "np-1994-system-reliability",
     scope: "1994 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
     status: "reported",
@@ -6756,6 +6832,96 @@ export const timeline = [
     body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
     sourceId: "vhf-2004",
     pages: "PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1993",
+    category: "reliability",
+    title: "SAIFI was 3.68 and SAIDI was 4.64 hours",
+    body: "The annual customer-interruption indices exclude Hydro loss-of-supply outages.",
+    sourceId: "np-2003-ca-446-rev",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1993",
+    category: "network",
+    title: "Actual capital expenditure was $33.862 million",
+    body: "The filed variance summary records $2.115 million for energy supply, $3.104 million for substations, $2.140 million for transmission, $21.710 million for distribution and $0.618 million for telecommunications.",
+    sourceId: "np-1993-capital-variance",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1993",
+    category: "generation",
+    title: "Company generation was 420 GWh",
+    body: "The ten-year summary records 4,093 GWh purchased, 420 GWh generated, 4,513 GWh total supply and 4,286 GWh in sales. Newfoundland Power served 201,628 customers at year end.",
+    sourceId: "np-2002-ten-year-summary",
+    pages: "physical PDF p. 51",
+    status: "reported"
+  },
+  {
+    date: "1993",
+    category: "network",
+    title: "70L entered service between Oxen Pond and Stamp's Lane",
+    body: "The 1991 planning study recommended a second 66 kV circuit for the forecast overload on 31L. Newfoundland Power completed 70L in 1993 and later described it as its last newly constructed transmission line.",
+    sourceId: "np-1993-70l",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1993",
+    category: "network",
+    title: "A 0.45 km section of 14L was rebuilt along Stamp's Lane",
+    body: "The rebuilt section formed part of the 66 kV circuit between Stamp's Lane and Memorial University. The 2015 filing records 22 original single-pole structures remaining along University Avenue.",
+    sourceId: "np-2015-transmission-lines",
+    pages: "physical PDF p. 553",
+    status: "reported"
+  },
+  {
+    date: "1993 to 1996",
+    category: "network",
+    title: "Canadian Ohio Brass insulators were replaced on TL202",
+    body: "The Bay d'Espoir to Western Avalon corridor history records the four-year replacement program on the 230 kV Bay d'Espoir to Sunnyside circuit.",
+    sourceId: "nlh-bde-wav-2012",
+    pages: "physical PDF p. 12",
+    status: "reported"
+  },
+  {
+    date: "1993",
+    category: "generation",
+    title: "Hardwoods End B gas-turbine engine was overhauled",
+    body: "The life-extension record identifies engine serial 202223. A separate plant assessment records replacement of both air-start compressors, air lines, valves and the air-start control panel in the same year.",
+    sourceId: "nlh-1993-hardwoods-gt",
+    pages: "physical PDF pp. 8 and 33",
+    status: "reported"
+  },
+  {
+    date: "1993",
+    category: "network",
+    title: "Hawke Hill transmission icing monitor entered service",
+    body: "Hydro used the test site to collect icing-storm data, develop and validate line design criteria, assess line upgrades and validate long-term ice models.",
+    sourceId: "nlh-1993-hawke-hill",
+    pages: "physical PDF p. 69",
+    status: "reported"
+  },
+  {
+    date: "1993",
+    category: "station",
+    title: "Northwest Brook bus and transformer protection relays were installed",
+    body: "The later modernization filing identifies the original protection as outdoor pole-mounted electromechanical relays for the 138 kV bus and NWB-T1.",
+    sourceId: "np-2025-northwest-brook",
+    pages: "physical PDF p. 406",
+    status: "reported"
+  },
+  {
+    date: "1993",
+    category: "generation",
+    title: "Salt Pond gas-turbine powerhouse was replaced",
+    body: "The pre-engineered steel building replaced the deteriorated original prefabricated enclosures around the 14.7 MW gas-turbine plant.",
+    sourceId: "np-1993-salt-pond-enclosure",
+    pages: "physical PDF p. 335",
     status: "reported"
   },
   {
@@ -7903,8 +8069,8 @@ export const components = {
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
     summary: "Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
-    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
-    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
+    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["1993 gas-turbine work", "End B engine overhauled; both air-start compressors, air lines, valves and the control panel replaced"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -7945,8 +8111,8 @@ export const components = {
   "hwd-g1": {
     diagram: "hwd", status: "verified", code: "HWD / G1 AND T5", title: "Hardwoods generator branch",
     summary: "The 2013 alternative one-line connects G1 to the 66 kV bus through T5. The 2026 loop study models HWD-G1 at 25 MW.",
-    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["2026 study model", "25 MW"]],
-    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
   "hwd-b1b2": {
     diagram: "hwd", status: "verified", code: "HWD / B1B2", title: "Hardwoods 230 kV bus tie",
@@ -14231,6 +14397,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1993 GAS-TURBINE POWERHOUSE REPLACEMENT",
+        sourceId: "np-1993-salt-pond-enclosure",
+        pages: "physical PDF p. 335",
+        facts: [
+          ["Plant", "14.7 MW gas turbine commissioned in 1969"],
+          ["Building", "pre-engineered steel structure, approximately 18 m by 12 m by 5 m"],
+          ["1993 work", "replaced the deteriorated original prefabricated enclosures"]
+        ]
+      },
+      {
         label: "2002 REPORTED TRANSFORMER FAILURES",
         sourceId: "np-2002-annual-report",
         pages: "physical PDF p. 17",
@@ -17090,6 +17266,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1993 PROTECTION INSTALLATION",
+        sourceId: "np-2025-northwest-brook",
+        pages: "physical PDF p. 406",
+        facts: [
+          ["Equipment", "electromechanical relays for the 138 kV bus and NWB-T1"],
+          ["Panel", "outdoor pole-mounted protection panel"]
+        ]
+      },
+      {
         label: "NOVEMBER 1995 POST-STORM SECTIONALIZING",
         sourceId: "np-1994-storm-report",
         pages: "physical PDF p. 63",
@@ -18933,6 +19118,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1993 70L COMPLETION",
+        sourceId: "np-1993-70l",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Circuit", "second 66 kV connection between Oxen Pond and Stamp's Lane"],
+          ["Planning trigger", "a 1991 study forecast an overload on 31L"],
+          ["Completion", "1993; later described as Newfoundland Power's last newly constructed transmission line"]
+        ]
+      },
+      {
         label: "2004 ST. JOHN'S AMPACITY STUDY",
         sourceId: "np-2004-st-johns-ampacity",
         pages: "physical PDF pp. 393 to 408",
@@ -20305,6 +20500,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1993 70L COMPLETION",
+        sourceId: "np-1993-70l",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Circuit", "second 66 kV connection between Stamp's Lane and Oxen Pond"],
+          ["Planning trigger", "a 1991 study forecast an overload on 31L"],
+          ["Completion", "1993; later described as Newfoundland Power's last newly constructed transmission line"]
+        ]
+      },
       {
         label: "2004 FILED TRANSFORMER-CABLE REPLACEMENT",
         sourceId: "np-2004-rebuild-substations",

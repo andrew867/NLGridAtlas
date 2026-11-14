@@ -1118,12 +1118,24 @@
       "title": "Reconcile Newfoundland Power 1993 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1993 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-034"],
+      "completion_evidence": ["research/NP_1993_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1993-system.test.js"],
+      "blocker": null,
+      "notes": "No standalone 1993 annual return was located. The revised reliability response, 2003 capital variance response, 2002 ten-year summary and later asset histories establish actual reliability, capital expenditure, energy and customers, 70L construction, the 14L partial rebuild, TL202 insulator work, Hardwoods and Salt Pond gas-turbine work, Northwest Brook protection and the Hawke Hill icing monitor."
+    },
+    {
+      "id": "NPREG-036",
+      "title": "Reconcile Newfoundland Power 1992 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1992 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-035"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the revised 1992 to 2002 reliability table, the 1993 to 2002 capital variance response, the 2002 ten-year summary and dated asset histories."
+      "notes": "Start with the revised 1992 to 2002 reliability table and dated asset histories. The 2003 capital variance response begins with 1993, so the 1992 capital total requires a separate source."
     },
     {
       "id": "ASSET-001",
