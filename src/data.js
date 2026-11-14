@@ -520,6 +520,86 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1980-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1980", "Newfoundland Power peak demand", "Island peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "nlh-1980-board-record",
+    year: 1981,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "1981 Electric Power Control Act Report, 1980 Hydro and Rural-System Record",
+    topics: ["1980", "Roddickton", "mini-hydro", "Power Distribution District", "rural electrification"],
+    pages: "physical PDF p. 20",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Consents/81PAPRIL.pdf"
+  },
+  {
+    id: "np-1980-greenspond-feeder",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, GPD-01 Feeder Study",
+    topics: ["1980", "Greenspond", "GPD-01", "12.5 kV", "AASC", "ACSR"],
+    pages: "physical PDF p. 444",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "nlh-1980-deer-lake",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-318, Deer Lake Terminal Station Development History",
+    topics: ["1980", "Deer Lake", "terminal station", "138 kV", "66 kV"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
+  },
+  {
+    id: "nlh-1980-hinds-lake",
+    year: 2019,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Hinds Lake Unit Major Overhaul and Penstock Assessments Application",
+    topics: ["1980", "Hinds Lake", "Francis turbine", "penstock", "hydroelectric generation"],
+    pages: "physical PDF p. 23",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2019/NLH2019Capital/NLH2019Capital_SUPP_HindsLake/applications/From%20NLH%20-%20Approval%20of%20Hinds%20Lake%20Unit%20Major%20Overhaul%20and%20Assessments%20of%20Bay%20d%20Espoir%20Penstock%204,%20Granite%20Canal%20Penstock%20and%20Hinds%20Lake%20Penstock%20-%202019-05-22.PDF"
+  },
+  {
+    id: "nlh-1980-holyrood-unit3",
+    year: 2012,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2013 Capital Budget Application, Holyrood Unit 3 Turbine-Valve Overhaul",
+    topics: ["1980", "Holyrood", "Unit 3", "commissioning", "150 MW"],
+    pages: "physical PDF p. 14",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013Capital/files/application/NLH2013ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1980-roddickton-assessment",
+    year: 2024,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Mini-Hydro Economic and Technical Assessment, Roddickton Asset Record",
+    topics: ["1980", "Roddickton", "mini-hydro", "crossflow turbine", "pilot project"],
+    pages: "physical PDF p. 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/other/From%20NLH%20-%20Mini-Hydro%20-%20Economic%20and%20Technical%20Assessment%20-%202024-12-20.PDF"
+  },
+  {
+    id: "nlh-1980-paradise-river-diesel",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2015 Capital Budget Application, Paradise River Diesel Unit 254",
+    topics: ["1980", "Paradise River Labrador", "diesel generation", "Unit 254", "50 kW"],
+    pages: "physical PDF p. 344",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NLH2015Capital/files/application/NLH-2015-Capital-Budget-Application-Volume-I-2014-08-01.PDF"
+  },
+  {
     id: "nlh-1981-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8208,6 +8288,23 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1980-system-record",
+    scope: "1980 actual demand, terminal and distribution-station construction, generation commissioning, rural electrification and the transfer of Power Distribution District assets",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-1980-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "nlh-1980-board-record", pages: "physical PDF p. 20" },
+      { sourceId: "nlh-1980-deer-lake", pages: "physical PDF p. 4" },
+      { sourceId: "np-2021-dunville-study", pages: "physical PDF p. 108" },
+      { sourceId: "np-2024-gambo", pages: "physical PDF p. 349" },
+      { sourceId: "np-1980-greenspond-feeder", pages: "physical PDF p. 444" },
+      { sourceId: "nlh-1980-hinds-lake", pages: "physical PDF p. 23" },
+      { sourceId: "nlh-1980-holyrood-unit3", pages: "physical PDF p. 14" },
+      { sourceId: "nlh-1980-roddickton-assessment", pages: "physical PDF p. 9" },
+      { sourceId: "nlh-1980-paradise-river-diesel", pages: "physical PDF p. 344" }
+    ]
+  },
+  {
     id: "np-1981-system-record",
     scope: "1981 actual demand, the contemporary planning case, four Hydro transmission lines, two Newfoundland Power 138 kV lines, station construction, generation work and Cat Arm construction",
     status: "unresolved",
@@ -8478,6 +8575,96 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1980",
+    category: "load",
+    title: "The Island transmission peak was 1,030 MW",
+    body: "The historical demand table reports Newfoundland Power peak demand of 662.7 MW and Hydro system peak demand of 836 MW. It does not print a separate Hydro Rural peak for 1980.",
+    sourceId: "nlh-1980-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1980-04",
+    category: "system",
+    title: "Hydro acquired the Power Distribution District assets",
+    body: "The Board report states that the fixed assets transferred to Hydro for one dollar. Current assets and liabilities transferred at cost, and Hydro became responsible for funding and constructing new assets.",
+    sourceId: "nlh-1980-board-record",
+    pages: "physical PDF p. 20",
+    status: "reported"
+  },
+  {
+    date: "1980",
+    category: "station",
+    title: "Deer Lake Terminal Station entered service at 138/66 kV",
+    body: "The original station preceded TL239 and the later 230 kV TL247 and TL248 additions. Those projects produced the 138 kV ring-bus arrangement in 1983 to 1984.",
+    sourceId: "nlh-1980-deer-lake",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1980",
+    category: "station",
+    title: "Dunville Substation entered service",
+    body: "The transmission and distribution station had one 66 kV line, an 8.3 MVA 66/25 kV transformer, and two 25 kV feeders. The source identifies 55L from Blaketown as its transmission supply.",
+    sourceId: "np-2021-dunville-study",
+    pages: "physical PDF p. 108",
+    status: "reported"
+  },
+  {
+    date: "1980",
+    category: "station",
+    title: "Gambo gained a steel 138 kV structure",
+    body: "The structure was added to support 138 kV transmission-line breakers and switches. The original 1966 wood-pole structure remained in the station.",
+    sourceId: "np-2024-gambo",
+    pages: "physical PDF p. 349",
+    status: "reported"
+  },
+  {
+    date: "1980",
+    category: "network",
+    title: "GPD-01 was constructed to Greenspond",
+    body: "The 12.5 kV line used 1/0 AASC from the later substation site to the causeway, ACSR on the island crossing, and mainly No. 2 ACSR in the town. A separate filing dates the Greenspond substation and grid connection to 1981.",
+    sourceId: "np-1980-greenspond-feeder",
+    pages: "physical PDF p. 444",
+    status: "reported"
+  },
+  {
+    date: "1980",
+    category: "generation",
+    title: "Hinds Lake entered service",
+    body: "The station has one 75 MW vertical Francis turbine, approximately 340 GWh annual average production, 214 m average net head, and a buried welded-steel penstock approximately 1,400 m long.",
+    sourceId: "nlh-1980-hinds-lake",
+    pages: "physical PDF p. 23",
+    status: "reported"
+  },
+  {
+    date: "1980",
+    category: "generation",
+    title: "Holyrood Unit 3 was commissioned",
+    body: "The 150 MW turbine-generator had been installed in 1979. The later overhaul filing reports 132,356 operating hours through February 2012.",
+    sourceId: "nlh-1980-holyrood-unit3",
+    pages: "physical PDF p. 14",
+    status: "reported"
+  },
+  {
+    date: "1980-12",
+    category: "generation",
+    title: "Roddickton mini-hydro was completed",
+    body: "The federal pilot project used one horizontal crossflow unit. The 2024 assessment reports a 0.4 MW rating; a 2001 system record separately lists 425 kW.",
+    sourceId: "nlh-1980-board-record",
+    pages: "physical PDF p. 20; compare 2024 assessment physical PDF p. 9",
+    status: "reported"
+  },
+  {
+    date: "1980",
+    category: "generation",
+    title: "Paradise River, Labrador received diesel Unit 254",
+    body: "The later replacement filing identifies Unit 254 as a 50 kW set in the three-unit isolated diesel plant.",
+    sourceId: "nlh-1980-paradise-river-diesel",
+    pages: "physical PDF p. 344",
     status: "reported"
   },
   {
@@ -12086,7 +12273,7 @@ export const islandTerminalRecords = [
     code: "DLK",
     name: "Deer Lake Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T2, 230/138 kV, 45/60/75 MVA; T1, 138/66 kV, 25/33.3/41.7 MVA"], ["230 kV terminals", "TL247 to Cat Arm through B3L47; TL248 to Massey Drive through B3L48"], ["138 kV ring bus", "Established in 1983 to 1984; breakers B1L39, L39T2, L45T2 and B1L45"], ["TL239 protection", "TL239 to Berry Hill operates through L39T2 and B1L39"], ["138 kV circuit", "TL245 to Howley"], ["66 kV bus B2", "TL226 through B2L26 to Wiltondale; TL225 through B2L25 to Deer Lake Power"], ["2014 TL225 isolation", "Disconnect L25-2 was added 1.4 km from the terminal-station end so Deer Lake customers could remain supplied from Deer Lake Power during a terminal-station outage"], ["Q3 2024 work", "Circuit breaker refurbished"], ["Q4 2024 work", "Fire protection installed"], ["2016 transformer protection study", "T2 had no dedicated 230 kV breaker; a T2 fault operated B3L47 and B3L48, isolating TL247, TL248 and Cat Arm generation"]],
+    facts: [["Commissioned", "1980 as a 138/66 kV terminal station"], ["Transformation", "T2, 230/138 kV, 45/60/75 MVA; T1, 138/66 kV, 25/33.3/41.7 MVA"], ["230 kV terminals", "TL247 to Cat Arm through B3L47; TL248 to Massey Drive through B3L48"], ["138 kV ring bus", "Established in 1983 to 1984; breakers B1L39, L39T2, L45T2 and B1L45"], ["TL239 protection", "TL239 to Berry Hill operates through L39T2 and B1L39"], ["138 kV circuit", "TL245 to Howley"], ["66 kV bus B2", "TL226 through B2L26 to Wiltondale; TL225 through B2L25 to Deer Lake Power"], ["2014 TL225 isolation", "Disconnect L25-2 was added 1.4 km from the terminal-station end so Deer Lake customers could remain supplied from Deer Lake Power during a terminal-station outage"], ["Q3 2024 work", "Circuit breaker refurbished"], ["Q4 2024 work", "Fire protection installed"], ["2016 transformer protection study", "T2 had no dedicated 230 kV breaker; a T2 fault operated B3L47 and B3L48, isolating TL247, TL248 and Cat Arm generation"]],
     diagram: {
       label: "1983 to 1984 ring bus / 2014 breaker records / 2003 transformer ratings / 2024 routes",
       buses: [{ id: "b1", label: "bus B3", voltage: "230 kV", y: 165 }, { id: "b2", label: "bus B1", voltage: "138 kV", y: 610 }, { id: "b3", label: "bus B2", voltage: "66 kV", y: 860 }],
@@ -12111,7 +12298,7 @@ export const islandTerminalRecords = [
         ]
       }]
     },
-    sources: [sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-deer-lake-ring-breakers-2015", "physical PDF pp. 37 to 38"), sourceRef("nlh-deer-lake-event-2013", "physical PDF p. 191"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF pp. 377 to 378"), sourceRef("nlh-deer-lake-operating-2014", "physical PDF pp. 769 to 770"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 19"), sourceRef("nlh-planning-2024", "physical PDF p. 15"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("nlh-1980-deer-lake", "physical PDF p. 4"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-deer-lake-ring-breakers-2015", "physical PDF pp. 37 to 38"), sourceRef("nlh-deer-lake-event-2013", "physical PDF p. 191"), sourceRef("nlh-howley-system-2003", "physical PDF p. 29"), sourceRef("nlh-deer-lake-2010", "physical PDF pp. 377 to 378"), sourceRef("nlh-deer-lake-operating-2014", "physical PDF pp. 769 to 770"), sourceRef("nlh-terminal-risk-2017", "physical PDF p. 19"), sourceRef("nlh-planning-2024", "physical PDF p. 15"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "DLP",
@@ -12254,12 +12441,25 @@ export const islandTerminalRecords = [
     name: "Roddickton Generation Sites, Historic",
     status: "reported",
     facts: [["2001 woodchip capacity", "5,000 kW"], ["Woodchip-site diesel units", "450 kW black-start diesel; one 850 kW mobile diesel"], ["Roddickton Diesel Plant", "2,350 kW installed capacity"], ["Roddickton Mini-hydro Plant", "425 kW"], ["2004 disposition", "The woodchip and diesel plant abandonments were recorded; two 850 kW mobile units were relocated to St. Anthony"], ["69 kV circuit", "TL257 to St. Anthony Airport"]],
-    historyRecords: [{
-      label: "1989 TL257 INTERCONNECTION",
-      sourceId: "nlh-1989-tl257-history",
-      pages: "physical PDF p. 4",
-      facts: [["Completed line", "69 kV TL257 between Roddickton Woodchip and St. Anthony Airport"]]
-    }],
+    historyRecords: [
+      {
+        label: "1980 MINI-HYDRO PILOT",
+        sourceId: "nlh-1980-roddickton-assessment",
+        pages: "physical PDF p. 9; compare 1981 Board report physical PDF p. 20",
+        facts: [
+          ["Completion", "December 1980"],
+          ["Plant", "single horizontal crossflow unit on Marble Brook"],
+          ["2024 reported rating", "0.4 MW"],
+          ["Program", "mini-hydro pilot project under an agreement with the Government of Canada"]
+        ]
+      },
+      {
+        label: "1989 TL257 INTERCONNECTION",
+        sourceId: "nlh-1989-tl257-history",
+        pages: "physical PDF p. 4",
+        facts: [["Completed line", "69 kV TL257 between Roddickton Woodchip and St. Anthony Airport"]]
+      }
+    ],
     diagram: {
       label: "2001 pre-interconnection capacity / 1989 TL257 connection",
       buses: [{ id: "b1", label: "St. Anthony / Roddickton system", voltage: "69 kV" }],
@@ -12267,7 +12467,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL257", destination: "St. Anthony Airport", bus: "b1", destinationCode: "SAA" }],
       generators: [{ label: "Woodchip", rating: "5,000 kW", bus: "b1" }, { label: "Diesel plant", rating: "2,350 kW", bus: "b1" }, { label: "Mini-hydro", rating: "425 kW", bus: "b1" }]
     },
-    sources: [sourceRef("nlh-1989-tl257-history", "physical PDF p. 4"), sourceRef("nlh-gnp-generation-2001", "physical PDF pp. 3 to 4"), sourceRef("pub-roddickton-generation-2004", "physical PDF pp. 1 and 11")]
+    sources: [sourceRef("nlh-1980-board-record", "physical PDF p. 20"), sourceRef("nlh-1980-roddickton-assessment", "physical PDF p. 9"), sourceRef("nlh-1989-tl257-history", "physical PDF p. 4"), sourceRef("nlh-gnp-generation-2001", "physical PDF pp. 3 to 4"), sourceRef("pub-roddickton-generation-2004", "physical PDF pp. 1 and 11")]
   },
   {
     code: "HAW",
@@ -12853,7 +13053,7 @@ export const islandTerminalRecords = [
     code: "HLA",
     name: "Hinds Lake Generating Station",
     status: "verified",
-    facts: [["Plant rating", "75 MW"], ["2001 energy capability", "340 GWh"], ["138 kV circuit", "TL243 to Howley"]],
+    facts: [["Commissioned", "1980"], ["Plant rating", "75 MW vertical Francis turbine"], ["Average annual production", "approximately 340 GWh"], ["Average net head", "approximately 214 m"], ["Penstock", "approximately 1,400 m buried welded steel"], ["138 kV circuit", "TL243 to Howley"]],
     historyRecords: [{
       label: "JANUARY 1982 CANAL-DYKE BREACH",
       sourceId: "nlh-1982-board-system-record",
@@ -12871,7 +13071,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL243", destination: "Howley", bus: "b1" }],
       generators: [{ label: "Hinds Lake", rating: "75 MW", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 15"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("nlh-1980-hinds-lake", "physical PDF p. 23"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 15"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "HRDGT2",
@@ -19515,6 +19715,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1980 CONSTRUCTION",
+        sourceId: "np-2021-dunville-study",
+        pages: "physical PDF p. 108",
+        facts: [
+          ["Station", "transmission and distribution substation"],
+          ["Transmission", "one 66 kV line; 55L supply from Blaketown"],
+          ["Original transformer", "DUN-T1; 66/25 kV; 8.3 MVA"],
+          ["Distribution", "DUN-01 and DUN-02 at 25 kV"]
+        ]
+      },
+      {
         label: "1999 REPORTED FEEDER RELIABILITY INVESTMENT",
         sourceId: "np-1999-annual-report",
         pages: "physical PDF p. 11",
@@ -20024,6 +20235,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1980 138 KV STEEL STRUCTURE",
+        sourceId: "np-2024-gambo",
+        pages: "physical PDF p. 349",
+        facts: [
+          ["Added structure", "steel 138 kV structure supporting transmission-line breakers and switches"],
+          ["Original structure", "the 1966 wood-pole 138 kV structure remained in service"]
+        ]
+      },
       {
         label: "2024 FILED MODERNIZATION SCOPE",
         sourceId: "np-2024-gambo",

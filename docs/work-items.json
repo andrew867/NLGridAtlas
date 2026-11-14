@@ -1274,12 +1274,24 @@
       "title": "Reconcile Newfoundland Power 1980 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1980 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-047"],
+      "completion_evidence": ["research/NP_1980_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1980-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the actual system values. Later primary records establish Deer Lake Terminal, Dunville, the Gambo 138 kV steel structure, GPD-01, Hinds Lake, Holyrood Unit 3, the Roddickton mini-hydro pilot, Paradise River diesel Unit 254 and the transfer of Power Distribution District assets. No supported 1980 Newfoundland Power capital, reliability, energy-sales, customer-account, VHF equipment total or planning-case row was located."
+    },
+    {
+      "id": "NPREG-049",
+      "title": "Reconcile Newfoundland Power 1979 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1979 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-048"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the surviving demand and planning tables, then reconcile dated transmission, station, generation, protection, telecommunications and construction records. Keep planning forecasts separate from actual demand and do not treat depreciation dates as complete project records without supporting evidence."
+      "notes": "Start with the surviving demand table and contemporary Board records, then reconcile dated station, generation, protection, telecommunications and construction evidence. Keep installation dates separate from commissioning dates."
     },
     {
       "id": "ASSET-001",

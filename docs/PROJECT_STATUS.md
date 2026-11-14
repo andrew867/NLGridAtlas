@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1980 system record from historical demand, terminal-station, distribution-station, generation, rural-electrification and asset-transfer records.
+- Added 662.7 MW Newfoundland Power peak demand, 1,030 MW Island transmission peak, Deer Lake Terminal, Dunville, the Gambo 138 kV steel structure, GPD-01, Hinds Lake, Holyrood Unit 3, the Roddickton mini-hydro pilot, Paradise River diesel Unit 254 and the April transfer of Power Distribution District assets to Hydro.
+- Kept the 1980 GPD-01 construction date separate from the 1981 Greenspond substation and grid-connection date. No supported 1980 Newfoundland Power capital, reliability, energy-sales, customer-account, VHF equipment total or planning-case row was located.
+- Completed NPREG-048 and opened NPREG-049 for the surviving 1979 system and annual records.
 - Reconstructed the surviving 1981 system record from historical demand, planning, transmission, station, generation and construction records.
 - Added 716.2 MW Newfoundland Power peak demand, 978 MW Island transmission peak, the 1981 planning case, TL232, TL234, TL251, TL252, the original 136L and 147L routes, the Quartz tap, the Greenspond grid connection, Hardwoods B7C1, Bay d'Espoir unit work, Cat Arm construction and Francois diesel Unit 2001.
 - Preserved the unresolved Topsail penstock conflict. The 2020 application dates the 1,910 m woodstave penstock to 1981, while the separate 2004 plant history dates the extended penstock and intake to the 1983 refurbishment.
