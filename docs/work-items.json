@@ -1202,12 +1202,24 @@
       "title": "Reconcile Newfoundland Power 1986 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1986 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-041"],
+      "completion_evidence": ["research/NP_1986_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1986-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand, capital, planning, transmission, terminal-station and later asset records establish actual capital and demand, the planning case, Oxen Pond T2 and the Hardwoods T3 relocation, 124L construction, the TL220 storm failure, and dated plant, control, protection and civil work. No supported 1986 SAIFI, SAIDI, CAIDI, annual energy, sales or customer total was located. Two later filings give 847.8 MW and 863 MW for Newfoundland Power's actual 1986 peak, so the difference remains unresolved."
+    },
+    {
+      "id": "NPREG-043",
+      "title": "Reconcile Newfoundland Power 1985 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1985 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-042"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the surviving reliability and capital tables, the Holyrood Unit 3 synchronous-condenser conversion, the Hardwoods transformer relocation, and dated plant, station, transmission, distribution, and telecommunications records."
+      "notes": "Start with surviving capital and demand tables, then search later asset histories, financial filings, line and station registers, plant condition reports, telecommunications records, and project closeouts for work completed in 1985."
     },
     {
       "id": "ASSET-001",

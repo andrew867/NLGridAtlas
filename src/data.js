@@ -520,6 +520,156 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1986-capital",
+    year: 1991,
+    organization: "Newfoundland Power",
+    title: "CA-NP-146 Attachment B, Capital Expenditures Since 1984",
+    topics: ["1986", "capital expenditure"],
+    pages: "physical PDF p. 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf"
+  },
+  {
+    id: "nlh-1986-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1986", "Newfoundland Power peak demand", "Island peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1986-peak-demand-conflict",
+    year: 1997,
+    organization: "Newfoundland Power",
+    title: "1997 Marginal Cost Study, Historical Newfoundland Power Peak Demand",
+    topics: ["1986", "peak demand", "historical load", "date conflict"],
+    pages: "physical PDF pp. 336 and 338",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2006gra/files/rfi/IC-59.pdf"
+  },
+  {
+    id: "np-1986-planning-forecast",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-295, 1981 Island Supply Planning Table",
+    topics: ["1986", "coincident peak demand", "installed capability", "LOLP", "energy balance", "forecast"],
+    pages: "physical PDF p. 8",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf"
+  },
+  {
+    id: "nlh-1986-holyrood-gas-turbine",
+    year: 2012,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "NP-NLH-022 Attachment 1, Holyrood Gas-Turbine Condition Assessment",
+    topics: ["1986", "Holyrood", "gas turbine", "building", "air inlet", "exhaust", "power turbine", "controls"],
+    pages: "physical PDF pp. 39 to 40, 60, 66 to 67 and 96",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
+  },
+  {
+    id: "np-1986-new-chelsea-scada",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, New Chelsea Plant History",
+    topics: ["1986", "New Chelsea", "SCADA", "remote control"],
+    pages: "physical PDF p. 28",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
+  },
+  {
+    id: "np-1986-rattling-brook",
+    year: 2006,
+    organization: "Newfoundland Power",
+    title: "2007 Capital Budget Application, Rattling Brook Unit 2 History",
+    topics: ["1986", "Rattling Brook", "Unit 2", "runner", "Allis-Chalmers"],
+    pages: "physical PDF p. 393",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1986-port-union",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-175, Port Union Diesel Refit History",
+    topics: ["1986", "Port Union", "diesel", "cylinder heads", "pistons"],
+    pages: "physical PDF p. 176",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf"
+  },
+  {
+    id: "nlh-1986-cat-arm-plc",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2015 Capital Budget Application, Cat Arm Station-Service System",
+    topics: ["1986", "Cat Arm", "station service", "PLC"],
+    pages: "physical PDF pp. 8 to 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NLH2015Capital/files/application/NLH-2015-Capital-Budget-Application-Volume-II-2014-08-01.PDF"
+  },
+  {
+    id: "nlh-1986-western-avalon-charger",
+    year: 2005,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2006 Capital Budget Application, Terminal-Station Battery Chargers",
+    topics: ["1986", "Western Avalon", "battery charger", "station protection", "control power"],
+    pages: "physical PDF p. 73",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2006cap/files/applic/NLH2006ApplicationComplete.pdf"
+  },
+  {
+    id: "nlh-1986-plant-condition",
+    year: 1998,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Plant Condition Assessments, Stephenville and Holyrood",
+    topics: ["1986", "Stephenville", "gas turbine", "vibration monitoring", "Holyrood", "Unit 1", "feedwater heaters"],
+    pages: "physical PDF pp. 74 and 229",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/rfi/PUB-174.pdf"
+  },
+  {
+    id: "np-1986-mobile-relay",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Mobile Hydro Plant Protection",
+    topics: ["1986", "Mobile", "hydro plant", "negative-sequence relay", "generator protection"],
+    pages: "physical PDF p. 488",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-1986-hydro-civil",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Sandy Brook and Tors Cove Hydro Development Records",
+    topics: ["1986", "Sandy Brook", "Island Pond", "dams", "Tors Cove", "penstock"],
+    pages: "physical PDF pp. 123 and 240",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1986-tl124",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Transmission Line 124L History",
+    topics: ["1986", "124L", "Clarenville", "Gambo", "138 kV", "transmission line"],
+    pages: "physical PDF p. 343",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
+    id: "nlh-1986-tl220-storm",
+    year: 2015,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-299, Historic Island Transmission Storm Damage",
+    topics: ["1986", "TL220", "Bay d'Espoir", "Barachoix", "storm", "structures"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-299.pdf"
+  },
+  {
     id: "np-1988-reliability",
     year: 1991,
     organization: "Newfoundland Power",
@@ -7358,6 +7508,17 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1986-system-load-capital",
+    scope: "1986 actual peak-demand records, 1981 planning forecast and Newfoundland Power capital expenditure",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1986-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-1986-peak-demand-conflict", pages: "physical PDF pp. 336 and 338" },
+      { sourceId: "np-1986-planning-forecast", pages: "physical PDF p. 8" },
+      { sourceId: "np-1986-capital", pages: "physical PDF p. 9" }
+    ]
+  },
+  {
     id: "np-1987-system-reliability",
     scope: "1987 Newfoundland Power actual SAIFI, SAIDI and CAIDI",
     status: "reported",
@@ -7550,6 +7711,204 @@ export const timeline = [
     sourceId: "nlh-2020-holyrood-unit3",
     pages: "physical PDF p. 136; project p. 2",
     status: "verified"
+  },
+  {
+    date: "1986",
+    category: "network",
+    title: "Actual capital expenditure was $32.184 million",
+    body: "The historical capital table reports Newfoundland Power's annual expenditure as $32,184,000.",
+    sourceId: "np-1986-capital",
+    pages: "physical PDF p. 9",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "load",
+    title: "The historical demand table reports a 1,291 MW Island transmission peak",
+    body: "The same table reports Newfoundland Power peak demand of 847.8 MW, Hydro rural peak demand of 43.9 MW, and Hydro system peak demand of 1,084 MW.",
+    sourceId: "nlh-1986-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1986 planning case",
+    category: "load",
+    title: "A 1981 planning table projected a 1,548 MW coincident peak",
+    body: "The table used 1,600 MW installed capability, a 3.58 loss-of-load-probability index, 8,046 GWh system energy requirement, 7,490 GWh firm energy capability, and a 556 GWh deficit for its 1986 case.",
+    sourceId: "np-1986-planning-forecast",
+    pages: "physical PDF p. 8",
+    status: "proposed"
+  },
+  {
+    date: "1986",
+    category: "unresolved",
+    title: "Two later tables give different Newfoundland Power peak values",
+    body: "MHI-Nalcor-92 reports 847.8 MW. The 1997 Marginal Cost Study labels its 863 MW value as actual historical peak demand. The filings do not explain the 15.2 MW difference.",
+    sourceId: "np-1986-peak-demand-conflict",
+    pages: "physical PDF pp. 336 and 338; compare MHI-Nalcor-92 physical PDF p. 2",
+    status: "unresolved"
+  },
+  {
+    date: "1986",
+    category: "station",
+    title: "Oxen Pond received a new 125 MVA T2",
+    body: "The 75/100/125 MVA transformer replaced the original T2. Hydro relocated the original 40/53.3/66.6 MVA unit to Hardwoods, where it became T3.",
+    sourceId: "oxen-2013",
+    pages: "physical PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Holyrood rebuilt the gas-turbine installation",
+    body: "The unit was removed from its enclosure and installed in a new building with a new inlet filter house, exhaust silencer and stack. The work also replaced the power-turbine casings and added new governor, synchronizer and monitoring equipment.",
+    sourceId: "nlh-1986-holyrood-gas-turbine",
+    pages: "physical PDF pp. 39 to 40 and 66 to 67",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Petty Harbour overhauled Units 2 and 3",
+    body: "Unit 2 received a main valve, flywheel, generator, turbine and governor. Unit 3 received a main valve, turbine, shaft, wicket gates and governor. The Unit 2 generator was rewound and received a brushless exciter; Voith electronic governors were installed on Units 2 and 3.",
+    sourceId: "np-2006-petty-harbour",
+    pages: "physical PDF pp. 178, 186 and 188",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "controls",
+    title: "New Chelsea gained remote SCADA control",
+    body: "The later plant history identifies this as the principal capital upgrade between the plant's 1957 commissioning and its 2004 refurbishment filing.",
+    sourceId: "np-1986-new-chelsea-scada",
+    pages: "physical PDF p. 28",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Rattling Brook replaced the Unit 2 runner",
+    body: "The later assessment identifies the replacement as an Allis-Chalmers runner.",
+    sourceId: "np-1986-rattling-brook",
+    pages: "physical PDF p. 393",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Port Union refitted the diesel engine",
+    body: "The refit replaced two cylinder heads and four pistons on the Caterpillar D398A engine.",
+    sourceId: "np-1986-port-union",
+    pages: "physical PDF p. 176",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Pitmans Pond replaced generator surge protection",
+    body: "The work installed a three-phase capacitor and metal-oxide-varistor surge arresters on the 2.4 kV switchgear bus.",
+    sourceId: "np-2013-pitmans-pond",
+    pages: "physical PDF pp. 231 to 232",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Heart's Content replaced generator surge protection",
+    body: "The later plant record identifies a three-phase capacitor installed on the 2.4 kV switchgear bus and replacement of the surge-protection system.",
+    sourceId: "np-2014-hearts-content",
+    pages: "physical PDF pp. 182 to 183",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Pierre's Brook installed three generator surge capacitors",
+    body: "The three single-phase capacitors were connected to the 6.9 kV switchgear bus.",
+    sourceId: "np-2016-pierre-brook",
+    pages: "physical PDF p. 245",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "controls",
+    title: "Cat Arm installed its station-service PLC",
+    body: "The PLC controlled equipment supplying essential plant systems and remained in continuous service with the original station-service breakers.",
+    sourceId: "nlh-1986-cat-arm-plc",
+    pages: "physical PDF pp. 8 to 9",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "station",
+    title: "Western Avalon installed a Staticon battery charger",
+    body: "The charger supplied the station DC system used for protection, local and remote control, event logging and annunciation.",
+    sourceId: "nlh-1986-western-avalon-charger",
+    pages: "physical PDF p. 73",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "controls",
+    title: "Stephenville installed gas-turbine vibration monitoring",
+    body: "The system used an IRD Mechanalysis Model 5806 machine monitor, Model SP95C signal conditioner and Model 544M vibration pickups.",
+    sourceId: "nlh-1986-plant-condition",
+    pages: "physical PDF p. 74",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Holyrood Unit 1 replaced its high-pressure feedwater heaters",
+    body: "The 1998 plant condition assessment records the heater replacement in the Unit 1 high-pressure feedwater system.",
+    sourceId: "nlh-1986-plant-condition",
+    pages: "physical PDF p. 229",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "controls",
+    title: "Mobile added generator negative-sequence protection",
+    body: "The electronic relay supplemented the plant's original Westinghouse electromechanical protection.",
+    sourceId: "np-1986-mobile-relay",
+    pages: "physical PDF p. 488",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Tors Cove replaced its woodstave penstock",
+    body: "The replacement comprised a 591 m section at 2,743 mm diameter and a 113 m section at 2,438 mm diameter.",
+    sourceId: "np-1986-hydro-civil",
+    pages: "physical PDF p. 240",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "generation",
+    title: "Sandy Brook replaced two Island Pond dams",
+    body: "The project replaced the original rockfill timber-crib structures with two earthfill dams, including a roughly 120 m diversion dam and a roughly 60 m secondary dam.",
+    sourceId: "np-1986-hydro-civil",
+    pages: "physical PDF p. 123",
+    status: "reported"
+  },
+  {
+    date: "1986",
+    category: "network",
+    title: "Newfoundland Power built 7.2 km of 124L",
+    body: "The later line history records the addition within the 138 kV H-frame circuit between Clarenville and Gambo.",
+    sourceId: "np-1986-tl124",
+    pages: "physical PDF p. 343",
+    status: "reported"
+  },
+  {
+    date: "March 29, 1986",
+    category: "network",
+    title: "A storm failed four TL220 structures",
+    body: "Hydro returned the Bay d'Espoir to Barachoix line to service in 1 1/3 days.",
+    sourceId: "nlh-1986-tl220-storm",
+    pages: "physical PDF p. 2",
+    status: "reported"
   },
   {
     date: "1987",
@@ -9627,9 +9986,9 @@ export const components = {
   },
   "hrd-gt": {
     diagram: "hrd", status: "verified", code: "HRD / GT AND T9", title: "Holyrood gas turbine branch",
-    summary: "The 15 MW, 13.8 kV gas-turbine branch connects through T9 to the station-service bus. The March 2015 as-built drawing marks the gas turbine no longer in service and notes that its 13.8 kV oil circuit breaker was removed and jumpered out.",
-    data: [["Gas turbine", "15 MW, 13.8 kV"], ["T9", "10.5/14 MVA"], ["Service", "Station-service bus"], ["1991 work", "Major overhaul completed"], ["March 2015 state", "No longer in service; 13.8 kV oil circuit breaker removed and jumpered out"]],
-    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1991-holyrood-gt-overhaul", "physical PDF p. 19")]
+    summary: "The 15 MW, 13.8 kV gas-turbine branch connects through T9 to the station-service bus. Hydro rebuilt the installation in 1986. The March 2015 as-built drawing marks the gas turbine no longer in service and notes that its 13.8 kV oil circuit breaker was removed and jumpered out.",
+    data: [["Gas turbine", "15 MW, 13.8 kV"], ["T9", "10.5/14 MVA"], ["Service", "Station-service bus"], ["1986 work", "New building, filter house, exhaust silencer and stack; power-turbine casings, governor, synchronizer and monitoring equipment replaced"], ["1991 work", "Major overhaul completed"], ["March 2015 state", "No longer in service; 13.8 kV oil circuit breaker removed and jumpered out"]],
+    sources: [sourceRef("nlh-1986-holyrood-gas-turbine", "physical PDF pp. 39 to 40 and 66 to 67"), sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1991-holyrood-gt-overhaul", "physical PDF p. 19")]
   },
   "hwd-np-summary": {
     diagram: "hwd-np", status: "verified", code: "HWD / NEWFOUNDLAND POWER", title: "Hardwoods Substation",
@@ -16099,6 +16458,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1986 NEGATIVE-SEQUENCE RELAY",
+        sourceId: "np-1986-mobile-relay",
+        pages: "physical PDF p. 488",
+        facts: [["Completed work", "added an electronic negative-sequence relay to the Mobile generating unit protection"]]
+      },
+      {
         label: "1990 TURBINE-RUNNER REPLACEMENT",
         sourceId: "np-1990-mobile-hydro",
         pages: "physical PDF pp. 484, 493 to 494",
@@ -19474,6 +19839,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1986 124L CONSTRUCTION",
+        sourceId: "np-1986-tl124",
+        pages: "physical PDF p. 343",
+        facts: [["Completed work", "built 7.2 km of 138 kV wood H-frame line on 124L"]]
+      },
+      {
         label: "2006 FILED 123L REHABILITATION",
         sourceId: "np-2006-123l",
         pages: "physical PDF pp. 332 to 338",
@@ -19888,6 +20259,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1986 DIESEL ENGINE REFIT",
+        sourceId: "np-1986-port-union",
+        pages: "physical PDF p. 176",
+        facts: [["Completed work", "replaced the two remaining cylinder heads and four pistons on the Caterpillar D398A diesel unit"]]
+      },
+      {
         label: "1987 DIESEL CONTROL AND SWITCHGEAR WORK",
         sourceId: "np-1987-port-union",
         pages: "physical PDF p. 176",
@@ -20152,6 +20529,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1986 UNIT 2 RUNNER REPLACEMENT",
+        sourceId: "np-1986-rattling-brook",
+        pages: "physical PDF p. 393",
+        facts: [["Completed work", "replaced the Unit 2 runner with an Allis-Chalmers runner"]]
+      },
       {
         label: "1987 UNIT 1 RUNNER AND LEVEL INSTRUMENTATION",
         sourceId: "np-1987-rattling-brook",
@@ -22887,6 +23270,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1986 UNIT 2 AND UNIT 3 OVERHAULS",
+        sourceId: "np-2006-petty-harbour",
+        pages: "physical PDF pp. 178, 186 and 188",
+        facts: [
+          ["Unit 2", "main valve, flywheel, generator, turbine and governor work; generator rewound and fitted with a brushless exciter"],
+          ["Unit 3", "main valve, turbine, shaft, wicket-gate and governor work"],
+          ["Governors", "Voith EHR530 electronic-hydraulic governors installed on Units 2 and 3"]
+        ]
+      },
+      {
         label: "1999 REPORTED PENSTOCK REPLACEMENT",
         sourceId: "np-1999-annual-report",
         pages: "physical PDF p. 15",
@@ -23020,6 +23413,15 @@ export const stationProfiles = [
       facts: [["TCV-T1", "generation transformer; 66/6.9 kV; 7.50 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1986 WOODSTAVE PENSTOCK",
+        sourceId: "np-1986-hydro-civil",
+        pages: "physical PDF p. 240",
+        facts: [
+          ["Upstream section", "591 m long; 2,743 mm diameter"],
+          ["Downstream section", "113 m long; 2,438 mm diameter"]
+        ]
+      },
       {
         label: "2000 REPORTED SURGE TANK REPLACEMENT",
         sourceId: "np-2000-annual-report",
@@ -23369,6 +23771,12 @@ export const stationProfiles = [
       facts: [["PBK-T1", "generation transformer; 66/6.9 kV; 6.67 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1986 SURGE-CAPACITOR INSTALLATION",
+        sourceId: "np-2016-pierre-brook",
+        pages: "physical PDF p. 245",
+        facts: [["Completed work", "installed three single-phase surge capacitors on the 6.9 kV bus"]]
+      },
       {
         label: "1991 SURGE-TANK REPLACEMENT",
         sourceId: "np-1991-pierre-brook-surge",
@@ -23808,6 +24216,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1986 REMOTE SCADA CONTROL",
+        sourceId: "np-1986-new-chelsea-scada",
+        pages: "physical PDF p. 28",
+        facts: [["Completed work", "added remote supervisory control and data acquisition control at New Chelsea"]]
+      },
+      {
         label: "2004 FILED MAJOR REFURBISHMENT",
         sourceId: "np-2004-new-chelsea",
         pages: "physical PDF pp. 285 to 293; budget table p. 329",
@@ -23970,6 +24384,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1986 SURGE-PROTECTION INSTALLATION",
+        sourceId: "np-2013-pitmans-pond",
+        pages: "physical PDF pp. 231 to 232",
+        facts: [["Completed work", "installed a three-phase surge capacitor and metal-oxide-varistor arresters on the 2.4 kV generator bus"]]
+      },
       {
         label: "2005 REPORTED TRANSFORMER FAILURE WORK",
         sourceId: "np-2010-substation-asset-history",
@@ -24184,6 +24604,15 @@ export const stationProfiles = [
       facts: [["SBK-T1", "generation transformer; 66/6.9 kV; 7.0 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1986 ISLAND POND DAM REPLACEMENTS",
+        sourceId: "np-1986-hydro-civil",
+        pages: "physical PDF p. 123",
+        facts: [
+          ["Completed work", "replaced the original rock-filled timber-crib dams with two earthfill dams"],
+          ["Recorded lengths", "approximately 120 m and 60 m"]
+        ]
+      },
       {
         label: "2001 REPORTED RUNNER AND CONTROL WORK",
         sourceId: "np-2001-annual-report",
@@ -25193,6 +25622,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1986 SURGE-PROTECTION INSTALLATION",
+        sourceId: "np-2014-hearts-content",
+        pages: "physical PDF pp. 182 to 183",
+        facts: [["Completed work", "installed a three-phase surge capacitor on the 2.4 kV generator bus and replaced surge protection"]]
+      },
       {
         label: "1992 80L REBUILD SECTION",
         sourceId: "np-1992-80l-rebuild",

@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1986 system record from historical demand, capital, planning, transmission, terminal-station, plant, and protection records. The comparative distribution-reliability table begins in 1987, so the atlas does not publish unsupported 1986 SAIFI, SAIDI, or CAIDI.
+- Added $32.184 million actual capital expenditure, 847.8 MW Newfoundland Power peak, 1,291 MW Island transmission peak, the 1981 planning case, Oxen Pond T2 and the Hardwoods T3 relocation, 124L construction, the TL220 storm failure, and dated plant, control, protection, and civil work at Holyrood, Petty Harbour, New Chelsea, Rattling Brook, Port Union, Cat Arm, Western Avalon, Stephenville, Mobile, Tors Cove, Sandy Brook, Pitmans Pond, Heart's Content, and Pierre's Brook.
+- Preserved the unresolved 1986 Newfoundland Power peak-demand conflict. MHI-Nalcor-92 reports 847.8 MW; the 1997 marginal-cost study prints 863 MW as actual historical peak. The filings do not explain the 15.2 MW difference. The adjacent-page Holyrood Gem 80/500 controller conflict also remains unresolved.
+- Completed NPREG-042 and opened NPREG-043 for the surviving 1985 system and annual records.
 - Reconstructed the surviving 1987 system record from the comparative reliability table, capital history, transmission and telecommunications registers, and later asset histories. The accessible ten-year operating summary starts in 1989, so the atlas does not publish unsupported 1987 energy, demand, sales, or customer totals.
 - Added actual 1987 SAIFI, SAIDI, and CAIDI, $38.881 million capital expenditure, TL250 and TL255 with their powerline-carrier links, the Glendale bus extension, West Brook intake and penstock work, the Rattling Brook Unit 1 runner and water-level equipment, Port Union diesel controls, the 63 day TL217 failure, and Goodyear's Dam repairs.
 - Preserved two Holyrood conflicts. Later sources separately date the two unit uprates to 1988 and 1989, while a condition study assigns both to 1987. Consecutive pages in one gas-turbine study date the Gem 80/500 controller change to 1987 and 1986.
@@ -308,7 +312,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1986 system and annual records under `NPREG-042`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1985 system and annual records under `NPREG-043`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
