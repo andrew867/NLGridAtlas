@@ -520,6 +520,126 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1965-tl203-register",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-316 Attachment 1, Island Transmission-Line Register",
+    topics: ["1965", "TL203", "Western Avalon", "Sunnyside", "230 kV", "H-frame wood"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf"
+  },
+  {
+    id: "nlh-1965-tl203-structures",
+    year: 2015,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2016 Capital Budget Application, TL203 Insulator Replacement",
+    topics: ["1965", "TL203", "H-frame wood", "AACSR", "ACSR", "ice loading"],
+    pages: "physical PDF p. 196",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/files/application/NLH-2016-Capital-Budget-Application-Volume-III-2015-07-31.pdf"
+  },
+  {
+    id: "np-1965-transmission-lines",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Transmission-Line Rebuild Schedule",
+    topics: ["1965", "35L", "108L", "Oxen Pond", "Airport", "Gander", "Gander Bay"],
+    pages: "physical PDF p. 418",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-1965-352l",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Transmission-Line Rebuild Schedule",
+    topics: ["1965", "352L", "Massey Drive", "Walbournes", "66 kV"],
+    pages: "physical PDF p. 398",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "np-1965-108l",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, Transmission Line 108L",
+    topics: ["1965", "108L", "Gander", "Gander Bay", "Jonathan's Pond", "66 kV", "2/0 ACSR"],
+    pages: "physical PDF pp. 100 and 498",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
+    id: "nlh-1965-holyrood-stage1",
+    year: 2016,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2017 Capital Budget Application, Holyrood Terminal Support Structures",
+    topics: ["1965", "Holyrood", "terminal station", "Stage 1", "aluminum structures"],
+    pages: "physical PDF p. 334",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202016-07-28.PDF"
+  },
+  {
+    id: "nlh-1965-bay-despoir-construction",
+    year: 2009,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2010 Capital Budget Application, Bay d'Espoir Stage 1 Construction History",
+    topics: ["1965", "Bay d'Espoir", "Stage 1", "Units 1 to 3", "75 MW", "construction"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/Application-VolumeII-Tab5.pdf"
+  },
+  {
+    id: "nlh-1965-bay-despoir-distribution",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2012 Capital Budget Application, Bay d'Espoir Distribution Lines L1 and L2",
+    topics: ["1965", "Bay d'Espoir", "L1", "L2", "25 kV", "T11", "voltage regulators", "reclosers"],
+    pages: "physical PDF pp. 290 and 341",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1965-rigolet",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Rigolet Distribution System",
+    topics: ["1965", "Rigolet", "L1", "4.16 kV", "distribution"],
+    pages: "physical PDF p. 317",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1965-little-bay",
+    year: 2002,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2003 Capital Budget Application, Little Bay and SPR-03 Supply Record",
+    topics: ["1965", "Little Bay", "SPR-03", "Whalesback Mine", "25 kV", "266.6 MCM ACSR"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionGtabs4and5.pdf"
+  },
+  {
+    id: "nlh-1965-lanse-amour",
+    year: 2004,
+    organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
+    title: "Order P.U. 53(2004) Reasons, L'Anse au Loup Distribution Upgrade",
+    topics: ["1965", "L'Anse Amour", "L'Anse au Loup", "distribution", "concrete poles", "wood poles"],
+    pages: "physical PDF p. 35",
+    status: "reported",
+    url: "http://www.pub.nl.ca/PU/orders/2004/pu53-2004Reasons.pdf"
+  },
+  {
+    id: "np-1965-penstocks",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, Pierre's Brook and Heart's Content Penstock Plan",
+    topics: ["1965", "Pierre's Brook", "Heart's Content", "penstock", "hydroelectric generation"],
+    pages: "physical PDF p. 128",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
     id: "nlh-1966-transmission-lines",
     year: 2014,
     organization: "Newfoundland and Labrador Hydro",
@@ -9188,6 +9308,31 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1965-system-record",
+    scope: "1965 transmission construction, terminal development, station construction, transformer manufacture, hydroelectric construction, penstock work and rural distribution",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-1965-tl203-register", pages: "physical PDF p. 4" },
+      { sourceId: "nlh-1965-tl203-structures", pages: "physical PDF p. 196" },
+      { sourceId: "np-1965-transmission-lines", pages: "physical PDF p. 418" },
+      { sourceId: "np-1965-352l", pages: "physical PDF p. 398" },
+      { sourceId: "np-1965-108l", pages: "physical PDF pp. 100 and 498" },
+      { sourceId: "nlh-1965-holyrood-stage1", pages: "physical PDF p. 334" },
+      { sourceId: "np-2014-springdale", pages: "physical PDF p. 234" },
+      { sourceId: "np-2025-northwest-brook", pages: "physical PDF p. 405" },
+      { sourceId: "np-2026-greenspond", pages: "physical PDF p. 343" },
+      { sourceId: "nlh-1965-bay-despoir-construction", pages: "physical PDF p. 3" },
+      { sourceId: "nlh-1965-bay-despoir-distribution", pages: "physical PDF pp. 290 and 341" },
+      { sourceId: "np-1965-penstocks", pages: "physical PDF p. 128" },
+      { sourceId: "np-2015-pierre-brook", pages: "physical PDF p. 186" },
+      { sourceId: "nlh-1965-rigolet", pages: "physical PDF p. 317" },
+      { sourceId: "nlh-1965-little-bay", pages: "physical PDF p. 3" },
+      { sourceId: "nlh-1965-lanse-amour", pages: "physical PDF p. 35" },
+      { sourceId: "np-2006-bot01-study", pages: "physical PDF p. 393" },
+      { sourceId: "np-2010-substation-asset-history", pages: "physical PDF pp. 191 to 192" }
+    ]
+  },
+  {
     id: "np-1966-system-record",
     scope: "1966 transmission construction, terminal commissioning, station construction, transformer manufacture, generation support systems and rural distribution",
     status: "unresolved",
@@ -9722,6 +9867,87 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1965",
+    category: "network",
+    title: "TL203 connected Western Avalon and Sunnyside",
+    body: "The 230 kV line register records 44.534 km of H-frame wood construction. A later engineering report records 185 structures, with 562.5 kcmil AACSR in the ice zone and 636 kcmil ACSR in the normal zone.",
+    sourceId: "nlh-1965-tl203-register",
+    pages: "physical PDF p. 4; structure detail physical PDF p. 196",
+    status: "reported"
+  },
+  {
+    date: "1965",
+    category: "network",
+    title: "35L, 108L and 352L date to 1965",
+    body: "The rebuild schedules date 35L, 108L and 352L to 1965. The current 35L schedule identifies Oxen Pond to Airport. The 108L report records a 44 km, 396-structure single-pole line with 2/0 ACSR from Gander toward Gander Bay and Jonathan's Pond. The 352L schedule identifies Massey Drive to Walbournes.",
+    sourceId: "np-1965-transmission-lines",
+    pages: "physical PDF p. 418; 108L physical PDF pp. 100 and 498; 352L physical PDF p. 398",
+    status: "reported"
+  },
+  {
+    date: "1965",
+    category: "station",
+    title: "Holyrood Terminal Stage 1 was completed",
+    body: "The terminal support-structure record dates Stage 1 to 1965. Stages 1 and 2 used aluminum structures; Stage 3 used galvanized steel.",
+    sourceId: "nlh-1965-holyrood-stage1",
+    pages: "physical PDF p. 334",
+    status: "reported"
+  },
+  {
+    date: "1965",
+    category: "station",
+    title: "Springdale was built and three transformers were manufactured",
+    body: "The Springdale filing dates the shared Hydro and Newfoundland Power station to 1965. Later transformer records date Westinghouse NWB-T1 and Canadian General Electric GPD-T1 to 1965. These are manufacture dates for Northwest Brook and Greenspond equipment, not station commissioning dates.",
+    sourceId: "np-2014-springdale",
+    pages: "physical PDF p. 234; Northwest Brook physical PDF p. 405; Greenspond physical PDF p. 343",
+    status: "reported"
+  },
+  {
+    date: "spring 1965",
+    category: "generation",
+    title: "Bay d'Espoir Stage 1 construction began",
+    body: "The construction history says work began in spring 1965 on the first three generating units, each rated 75 MW.",
+    sourceId: "nlh-1965-bay-despoir-construction",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1965",
+    category: "network",
+    title: "Bay d'Espoir distribution lines L1 and L2 were constructed",
+    body: "Both are recorded as 25 kV three-phase feeders. L1 is over 20 km and is supplied from 69/24 kV transformer T11 through a 25 kV bus, two regulator banks and three reclosers. L2 is 17 km and supplied Hydro sites and private customers.",
+    sourceId: "nlh-1965-bay-despoir-distribution",
+    pages: "physical PDF pp. 290 and 341",
+    status: "reported"
+  },
+  {
+    date: "1965",
+    category: "generation",
+    title: "Pierre's Brook and Heart's Content penstock records date to 1965",
+    body: "The Pierre's Brook filing records a 2,470 m woodstave section built in 1965 and a 63 m steel section built in 1931 and refurbished in 1965. The Heart's Content planning record dates its existing penstock installation to 1965.",
+    sourceId: "np-2015-pierre-brook",
+    pages: "physical PDF p. 186; Heart's Content physical PDF p. 128",
+    status: "reported"
+  },
+  {
+    date: "1965",
+    category: "network",
+    title: "Rural distribution records span Rigolet, Little Bay, L'Anse Amour and Botwood",
+    body: "The records date Rigolet L1, the Bowater-built SPR-03 supply toward Little Bay and Whalesback Mine, the L'Anse Amour line section, and the BOT-01 extensions toward Leading Tickles and Fortune Harbour to 1965.",
+    sourceId: "nlh-1965-rigolet",
+    pages: "physical PDF p. 317; Little Bay physical PDF p. 3; L'Anse Amour physical PDF p. 35; Botwood physical PDF p. 393",
+    status: "reported"
+  },
+  {
+    date: "1965",
+    category: "equipment",
+    title: "Mobile and Ridge Road low-voltage structures date to 1965",
+    body: "The depreciation register dates the Mobile 12.47 kV wood structure, Mobile Plant 6.9 kV wood structure, and Ridge Road 12.47 kV switchgear to 1965.",
+    sourceId: "np-2010-substation-asset-history",
+    pages: "physical PDF pp. 191 to 192",
+    status: "reported"
+  },
   {
     date: "1966",
     category: "network",
@@ -13576,7 +13802,7 @@ export const components = {
     diagram: "hrd", status: "unresolved", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
     summary: "Published Hydro records conflict on Stage I commissioning. The 2022 Unit 1 investigation dates Unit 1 to 1969, while a report filed in 2017 dates Unit 1 to late 1969 and Unit 2 to early 1970. Separate capital records date Unit 1 to 1970, Unit 2 to 1971, or the complete Stage I to 1971. Both units were originally rated 150 MW. Revision 19 of drawing A0-1403-500-E-001, dated March 16, 2015, is the latest published whole-plant as-built arrangement located. It links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus.",
     data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["Unit commissioning", "Conflicting records: Unit 1 in 1969, late 1969, or 1970; Unit 2 in early 1970 or 1971; complete Stage I in 1971"], ["Original unit rating", "150 MW each"], ["Original generators", "Unit 1 and Unit 2 GE generators installed in 1970; 175 MVA, 16 kV in the 2022 condition study"], ["Terminal construction stages", "Stage 1 in 1965; Stage 2 in 1975; Stage 3 in 1982"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["1988 Unit 1 uprate", "150 MW to 175 MW"], ["1988 T4 spare position", "former T2 transformer; 115/152/190 MVA, 230/16 kV"], ["1969 unit service", "UST-1 and UST-2; Federal Pioneer; 10 MVA each; 16 kV/4.16-2.4 kV; star-delta; ONAN"], ["1969 station service", "SST-12; Federal Pioneer; 10.5/14 MVA; 69 kV/4.16-2.4 kV; star-delta; ONAN/ONAF"], ["Later service transformers", "UST-3, 10 MVA; SST-34, 10.5/14 MVA"], ["1969 black start", "15 MW Holyrood gas turbine"], ["1969 marine terminal", "Initial construction"], ["1970 paging system", "Primary plant emergency-protocol communications; replaced after poor coverage and sound quality were reported"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"], ["2025 terminal work", "T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced"]],
-    sources: [sourceRef("nlh-1969-holyrood-unit1", "physical PDF p. 8"), sourceRef("nlh-1969-holyrood-commissioning-conflict", "physical PDF p. 66"), sourceRef("nlh-1969-holyrood-blackstart", "physical PDF p. 23"), sourceRef("nlh-1969-holyrood-marine-terminal", "physical PDF p. 1104"), sourceRef("nlh-1970-holyrood-units", "physical PDF p. 69"), sourceRef("nlh-1971-holyrood-stage1", "physical PDF p. 910"), sourceRef("nlh-1970-holyrood-generators", "physical PDF pp. 55 and 62"), sourceRef("nlh-1970-holyrood-paging", "physical PDF pp. 13 to 14"), sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1975-holyrood-stage2", "physical PDF p. 334"), sourceRef("nlh-1988-holyrood-unit1", "physical PDF p. 5"), sourceRef("nlh-1988-holyrood-t4", "physical PDF p. 229"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
+    sources: [sourceRef("nlh-1965-holyrood-stage1", "physical PDF p. 334"), sourceRef("nlh-1969-holyrood-unit1", "physical PDF p. 8"), sourceRef("nlh-1969-holyrood-commissioning-conflict", "physical PDF p. 66"), sourceRef("nlh-1969-holyrood-blackstart", "physical PDF p. 23"), sourceRef("nlh-1969-holyrood-marine-terminal", "physical PDF p. 1104"), sourceRef("nlh-1970-holyrood-units", "physical PDF p. 69"), sourceRef("nlh-1971-holyrood-stage1", "physical PDF p. 910"), sourceRef("nlh-1970-holyrood-generators", "physical PDF pp. 55 and 62"), sourceRef("nlh-1970-holyrood-paging", "physical PDF pp. 13 to 14"), sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1975-holyrood-stage2", "physical PDF p. 334"), sourceRef("nlh-1988-holyrood-unit1", "physical PDF p. 5"), sourceRef("nlh-1988-holyrood-t4", "physical PDF p. 229"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
   },
   "hrd-breaker-program": {
     diagram: "hrd", status: "reported", code: "HRD / 230 kV BREAKERS", title: "Holyrood 230 kV breaker replacement program",
@@ -14226,6 +14452,25 @@ export const islandTerminalRecords = [
     status: "reported",
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
+      {
+        label: "SPRING 1965 STAGE 1 CONSTRUCTION START",
+        sourceId: "nlh-1965-bay-despoir-construction",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Initial scope", "construction began on Units 1 to 3"],
+          ["Unit rating", "75 MW each"]
+        ]
+      },
+      {
+        label: "1965 DISTRIBUTION LINES L1 AND L2",
+        sourceId: "nlh-1965-bay-despoir-distribution",
+        pages: "physical PDF pp. 290 and 341",
+        facts: [
+          ["L1", "25 kV three-phase radial; over 20 km; #2 ACSR; supplied from T11 through the 25 kV bus"],
+          ["L1 regulation and protection", "BD1-VR1 and BD1-VR2 regulator banks; BD1-R1, BD1-R2 and BD1-R3 reclosers"],
+          ["L2", "25 kV three-phase; 17 km; supplied approximately six Hydro sites and four private customers"]
+        ]
+      },
       {
         label: "1965 TO 1966 ORIGINAL 230 KV BUS",
         sourceId: "nlh-1966-terminal-history",
@@ -17018,6 +17263,12 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1965 12.47 KV STRUCTURE",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 191",
+        facts: [["Low-voltage structure", "12.47 kV wood structure installed in 1965"]]
+      },
       {
         label: "1974 MOB-T2 PURCHASE",
         sourceId: "np-1974-mob-t2",
@@ -20701,6 +20952,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1965 6.9 KV STRUCTURE",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 191",
+        facts: [["Low-voltage structure", "6.9 kV wood structure installed in 1965"]]
+      },
+      {
         label: "1986 NEGATIVE-SEQUENCE RELAY",
         sourceId: "np-1986-mobile-relay",
         pages: "physical PDF p. 488",
@@ -20864,6 +21121,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1965 108L CONSTRUCTION",
+        sourceId: "np-1965-108l",
+        pages: "physical PDF pp. 100 and 498",
+        facts: [
+          ["Route", "Gander to Gander Bay and the Jonathan's Pond tap; 44 km"],
+          ["Construction", "396 single wood-pole structures; 2/0 ACSR"]
+        ]
+      },
       {
         label: "1978 142L TIE",
         sourceId: "np-1978-142l",
@@ -21628,6 +21894,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1965 108L CONSTRUCTION",
+        sourceId: "np-1965-108l",
+        pages: "physical PDF pp. 100 and 498",
+        facts: [
+          ["Route", "Gander toward Gander Bay and Jonathan's Pond; 44 km"],
+          ["Construction", "396 single wood-pole structures; 2/0 ACSR"]
+        ]
+      },
       {
         label: "2002 REPORTED STEEL-BUS REBUILD",
         sourceId: "np-2002-annual-report",
@@ -22523,6 +22798,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1965 352L CONSTRUCTION",
+        sourceId: "np-1965-352l",
+        pages: "physical PDF p. 398",
+        facts: [["Circuit", "352L from Massey Drive to Walbournes"]]
+      },
       {
         label: "2016 FILED CORNER BROOK FIBRE RING",
         sourceId: "np-2016-fibre-network",
@@ -25467,6 +25748,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1965 35L CONSTRUCTION RECORD",
+        sourceId: "np-1965-transmission-lines",
+        pages: "physical PDF p. 418",
+        facts: [["Current scheduled endpoint", "35L from Oxen Pond to Airport"]]
+      },
+      {
         label: "1993 70L COMPLETION",
         sourceId: "np-1993-70l",
         pages: "physical PDF p. 1",
@@ -26289,6 +26576,12 @@ export const stationProfiles = [
       facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "1965 12.5 KV SWITCHGEAR",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 192",
+        facts: [["Low-voltage equipment", "12.47 kV switchgear installed in 1965"]]
+      },
       {
         label: "2004 EAST END PLANNING RECORD",
         sourceId: "np-2005-east-end-planning",
@@ -28227,6 +28520,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1965 PENSTOCK RECONSTRUCTION",
+        sourceId: "np-2015-pierre-brook",
+        pages: "physical PDF p. 186",
+        facts: [
+          ["Woodstave section", "2,470 m long; 1,829 mm diameter; constructed in 1965"],
+          ["Steel section", "63 m long; 1,829 mm diameter; built in 1931 and refurbished in 1965"],
+          ["Reused material", "400 original 120-degree cradles and bands over more than 80 percent of the penstock length"]
+        ]
+      },
+      {
         label: "1985 POWERHOUSE VENTILATION",
         sourceId: "np-1985-pierres-brook",
         pages: "physical PDF p. 251",
@@ -30138,6 +30441,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1965 PENSTOCK INSTALLATION",
+        sourceId: "np-1965-penstocks",
+        pages: "physical PDF p. 128",
+        facts: [["Existing penstock", "installed in 1965"]]
+      },
       {
         label: "1986 SURGE-PROTECTION INSTALLATION",
         sourceId: "np-2014-hearts-content",

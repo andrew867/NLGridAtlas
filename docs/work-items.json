@@ -1450,6 +1450,18 @@
       "notes": "The available historical-demand table begins in 1967, so no 1966 demand value is stated. Later primary records establish TL201, TL202, TL204, TL212, TL223 and TL235; Bay d'Espoir, Stony Brook, Sunnyside and Western Avalon terminal history; six Newfoundland Power station construction records; Bay d'Espoir T1 and T2 manufacture; the gas turbine first installed at Hardwoods and later moved to Holyrood; the Corner Brook frequency-converter compressed-air system; Farewell Head distribution lines; Hardwoods structures; and a 1966 section of 49L. Clarenville, Stony Brook and Sunnyside retain conflicting station dates."
     },
     {
+      "id": "NPREG-063",
+      "title": "Reconcile Newfoundland Power 1965 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1965 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-062"],
+      "completion_evidence": ["research/NP_1965_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1965-system.test.js"],
+      "blocker": null,
+      "notes": "The available historical-demand table begins in 1967, so no 1965 demand value is stated. Later primary records establish TL203, 35L, 108L and 352L; Holyrood Terminal Stage 1; Springdale; NWB-T1 and GPD-T1 manufacture; the start of Bay d'Espoir Stage 1 construction; Bay d'Espoir distribution lines L1 and L2; Pierre's Brook and Heart's Content penstock work; Rigolet, Little Bay, L'Anse Amour and Botwood rural distribution; and Mobile, Mobile Plant and Ridge Road low-voltage structures."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
