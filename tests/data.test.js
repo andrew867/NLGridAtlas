@@ -1236,7 +1236,7 @@ test("Laurentian retains its three 66 kV connections and proposed transformer re
   assert.deepEqual(laurentian.connectedCircuits.map(({ circuit }) => circuit), ["302L", "305L", "901E"]);
   assert.deepEqual(laurentian.feederRegister, ["LAU-01", "LAU-02"]);
   const existingFacts = laurentian.engineeringRecord.facts.flat().join(" ");
-  const proposedFacts = laurentian.historyRecords[0].facts.flat().join(" ");
+  const proposedFacts = laurentian.historyRecords.find((record) => record.label === "2027 TO 2028 PROPOSED REPLACEMENT").facts.flat().join(" ");
   assert.match(existingFacts, /LAU-T1 66\/12\.5 kV; 13\.3 MVA; Federal Pioneer; installed in 1976/);
   assert.match(existingFacts, /Newind 901E to Ryan's Hill Substation and the wind generation site/);
   assert.match(laurentian.planningRecord.facts.flat().join(" "), /6\.73 MVA 2026 forecast/);
@@ -3840,5 +3840,43 @@ test("2019 Newfoundland Power records preserve filed work and reported capital v
   assert.match(history("OXP", "2019 36L TERMINATION AND ROUTE WORK").facts.flat().join(" "), /\$400,000 approved; \$643,000 actual/);
   assert.match(history("HUM", "2019 FILED HUMBER TO BAYVIEW FIBRE LINK").facts.flat().join(" "), /SCADA.*digital protection relay/);
   assert.match(history("BVS", "2019 FILED HUMBER TO BAYVIEW FIBRE LINK").facts.flat().join(" "), /SCADA.*digital protection relay/);
+});
+
+test("2018 Newfoundland Power records separate filed asset work from program closeout", () => {
+  const station = (code) => stationProfiles.find((record) => record.code === code);
+  const history = (code, label) => station(code).historyRecords.find((record) => record.label === label);
+  const route = (code, image) => station(code).referenceSheets.find((record) => record.image === image);
+
+  assert.equal(sources.find((source) => source.id === "np-2018-302l").status, "proposed");
+  assert.equal(sources.find((source) => source.id === "np-2018-distribution-feeder-automation").status, "proposed");
+  assert.equal(sources.find((source) => source.id === "np-2018-feeder-automation").status, "proposed");
+  assert.equal(sources.find((source) => source.id === "np-2019-capex-report-2018").status, "reported");
+  assert.equal(sources.find((source) => source.id === "np-2020-transmission-rebuild-status").status, "reported");
+
+  for (const code of ["SPO", "LAU"]) {
+    assert.match(history(code, "2018 TO 2019 302L REBUILD").facts.flat().join(" "), /26\.6 km.*315.*477 ASC/);
+    assert.match(history(code, "2019 REPORTED 302L COMPLETE").facts.flat().join(" "), /complete/);
+    assert.match(history(code, "2025 ACTUAL COST TABLE").facts.flat().join(" "), /\$2\.076929 million.*\$1\.865733 million/);
+    assert.ok(route(code, "./reference-maps/302l-2018-route.png"));
+  }
+
+  assert.match(history("BCV", "2018 FILED BCV-03 RECONDUCTORING").facts.flat().join(" "), /390 A.*356 A.*477 ASC.*590 A/);
+  assert.ok(route("BCV", "./reference-maps/bcv-03-2018-upgrade.png"));
+  assert.match(history("KEN", "2018 FILED KEN-03 RELIABILITY REBUILD").facts.flat().join(" "), /2,317 customers.*SAIFI 1\.69.*SAIDI 2\.69.*230 structures/);
+  assert.match(history("SUM", "2018 DRI RELIABILITY RECORD").facts.flat().join(" "), /609 customers.*SAIFI 3\.68.*SAIDI 10\.59/);
+  assert.match(history("TRP", "2018 DRI RELIABILITY RECORD").facts.flat().join(" "), /605 customers.*SAIFI 2\.76.*SAIDI 5\.90/);
+
+  assert.match(history("CHA", "2018 FILED DOWNLINE RECLOSERS").facts.flat().join(" "), /CHA-01, CHA-02 and CHA-03.*three-phase/);
+  assert.match(history("HWD", "2018 FILED DOWNLINE RECLOSERS").facts.flat().join(" "), /HWD-07 and HWD-09.*three-phase/);
+  assert.match(history("BRB", "2018 FILED DOWNLINE RECLOSER").facts.flat().join(" "), /BRB-01.*three-phase/);
+  assert.match(history("MIL", "2018 FILED DOWNLINE RECLOSER").facts.flat().join(" "), /MIL-02.*three-phase/);
+  assert.match(history("LEW", "2018 FILED DOWNLINE RECLOSER").facts.flat().join(" "), /LEW-01.*single-phase/);
+  assert.match(history("DLK", "2018 FILED DOWNLINE RECLOSER").facts.flat().join(" "), /DLK-03.*three-phase/);
+
+  assert.match(history("DUN", "2018 FILED FEEDER AUTOMATION").facts.flat().join(" "), /DUN-01 and DUN-02/);
+  assert.match(history("ILC", "2018 FILED FEEDER AUTOMATION").facts.flat().join(" "), /ILC-01 and ILC-02/);
+  assert.match(history("NCH", "2018 FILED FEEDER AUTOMATION").facts.flat().join(" "), /two New Chelsea.*does not identify which two/);
+  assert.match(history("NHR", "2018 FILED FEEDER AUTOMATION").facts.flat().join(" "), /two New Harbour/);
+  assert.match(history("PBD", "2018 FILED FEEDER AUTOMATION").facts.flat().join(" "), /PBD-01/);
 });
 

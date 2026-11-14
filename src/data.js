@@ -2670,11 +2670,51 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
   },
   {
+    id: "np-2018-302l",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, Transmission Line 302L Rebuild",
+    topics: ["302L", "Salt Pond", "Laurentian", "66 kV", "477 ASC", "transmission line rebuild"],
+    pages: "physical PDF pp. 244 and 250",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
+    id: "np-2018-bcv03",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, BCV-03 Feeder Upgrade",
+    topics: ["Broad Cove", "BCV-03", "Thorburn Road", "St. Thomas Line", "477 ASC", "feeder load growth"],
+    pages: "physical PDF pp. 295 to 297 and 302",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
+    id: "np-2018-dri",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, Distribution Reliability Initiative",
+    topics: ["KEN-03", "SUM-02", "TRP-01", "SAIFI", "SAIDI", "CIKM", "CHIKM", "distribution reliability"],
+    pages: "physical PDF pp. 65 to 67 and 271 to 273",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
+    id: "np-2018-distribution-feeder-automation",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, Distribution Feeder Automation",
+    topics: ["CHA-01", "CHA-02", "CHA-03", "HWD-07", "HWD-09", "BRB-01", "MIL-02", "LEW-01", "DLK-03", "downline recloser"],
+    pages: "physical PDF pp. 68 and 131",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
     id: "np-2018-feeder-automation",
     year: 2017,
     organization: "Newfoundland Power",
     title: "2018 Capital Budget Application, Substation Feeder Automation",
-    topics: ["New Harbour", "NHR-01", "NHR-02", "distribution feeder automation", "SCADA", "remote control"],
+    topics: ["Dunville", "New Chelsea", "New Harbour", "Port Blandford", "Upper Island Cove", "Harbour Grace", "distribution feeder automation", "SCADA", "remote control"],
     pages: "physical PDF p. 235",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
@@ -2694,10 +2734,20 @@ export const sources = [
     year: 2019,
     organization: "Newfoundland Power",
     title: "2018 Capital Expenditure Report",
-    topics: ["substation refurbishment", "substation feeder automation", "New Harbour", "Port Blandford", "actual expenditure", "program closeout"],
-    pages: "physical PDF p. 8",
+    topics: ["capital expenditure", "substation refurbishment", "transmission line rebuild", "distribution feeder automation", "fibre optic network", "actual expenditure", "program closeout"],
+    pages: "physical PDF pp. 4 to 5, 8 to 10, 13, 17, 20 and 26",
     status: "reported",
     url: "http://www.pub.nl.ca/indexreports/2019/From%20NP%20-%202018%20Capital%20Expenditure%20Report%20-%202019-03-01.PDF"
+  },
+  {
+    id: "np-2020-transmission-rebuild-status",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-007, Transmission Line Rebuild Strategy Status Update",
+    topics: ["302L", "transmission line rebuild", "completion status"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/rfi/PUB-NP-007.PDF"
   },
   {
     id: "np-2019-pepperrell",
@@ -8118,6 +8168,14 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2018 FILED FEEDER AUTOMATION",
+        sourceId: "np-2018-feeder-automation",
+        pages: "physical PDF p. 235",
+        facts: [
+          ["Filed work", "automate ILC-01 and ILC-02 for remote control and operational setting changes"]
+        ]
+      },
+      {
         label: "2016 TO 2017 FILED 57L REBUILD",
         sourceId: "np-2016-57l",
         pages: "physical PDF pp. 318 to 320",
@@ -9600,6 +9658,18 @@ const earlyFeederMapProfiles = [
         ]
       },
       {
+        label: "2018 FILED BCV-03 RECONDUCTORING",
+        sourceId: "np-2018-bcv03",
+        pages: "physical PDF pp. 295 to 297",
+        facts: [
+          ["Feeder", "12.5 kV; approximately 1,200 customers in the 2017 filing"],
+          ["Overloaded section", "0.7 km from Broad Cove Substation to Thorburn Road and St. Thomas Line"],
+          ["Filed loading", "390 A per phase against the 356 A planning rating of the existing 4/0 AASC"],
+          ["Filed work", "replace the section with 477 ASC rated at 590 A per phase"],
+          ["Filed cost", "$220,000"]
+        ]
+      },
+      {
         label: "2020 PROPOSED BCV-03 UPGRADE",
         sourceId: "np-2020-feeder-growth",
         pages: "physical PDF pp. 451 and 459",
@@ -9612,8 +9682,15 @@ const earlyFeederMapProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "FILED 2020 FEEDER ROUTE",
+    referenceSheetLabel: "FILED FEEDER PROJECTS",
     referenceSheets: [
+      {
+        title: "2018 filed BCV-03 reconductoring",
+        image: "./reference-maps/bcv-03-2018-upgrade.png",
+        alt: "Filed BCV-03 route drawing showing the 0.7 kilometre section proposed for 477 ASC reconductoring",
+        sourceId: "np-2018-bcv03",
+        pages: "physical PDF p. 302"
+      },
       {
         title: "2020 proposed BCV-03 Tolt Road upgrade",
         image: "./reference-maps/bcv-03-2020-upgrade.png",
@@ -9866,6 +9943,15 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2018 FILED DOWNLINE RECLOSER",
+        sourceId: "np-2018-distribution-feeder-automation",
+        pages: "physical PDF p. 68",
+        facts: [
+          ["Filed feeder", "BRB-01"],
+          ["Equipment", "one three-phase downline automated recloser"]
+        ]
+      },
       {
         label: "2014 PROPOSED MODERNIZATION",
         sourceId: "np-2014-bay-roberts",
@@ -10148,6 +10234,15 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2018 FILED DOWNLINE RECLOSERS",
+        sourceId: "np-2018-distribution-feeder-automation",
+        pages: "physical PDF p. 68",
+        facts: [
+          ["Filed feeders", "CHA-01, CHA-02 and CHA-03"],
+          ["Equipment", "one three-phase downline automated recloser on each listed feeder"]
+        ]
+      },
+      {
         label: "2003 PROPOSED SECOND TRANSFORMER",
         sourceId: "np-2003-chamberlains",
         pages: "physical PDF pp. 36 to 37",
@@ -10347,6 +10442,15 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2018 FILED DOWNLINE RECLOSER",
+        sourceId: "np-2018-distribution-feeder-automation",
+        pages: "physical PDF p. 68",
+        facts: [
+          ["Filed feeder", "DLK-03"],
+          ["Equipment", "one three-phase downline automated recloser"]
+        ]
+      },
       {
         label: "2010 COMPLETED TRANSFORMER REPLACEMENT",
         sourceId: "np-2010-deer-lake-mobile",
@@ -11422,6 +11526,40 @@ export const stationProfiles = [
           ["Transformer work", "refurbish SPO-T1 and SPO-T4; add spill containment for both units"],
           ["Protection and control", "replace ten electromechanical relays with two digital relays and construct a new control building"]
         ]
+      },
+      {
+        label: "2018 TO 2019 302L REBUILD",
+        sourceId: "np-2018-302l",
+        pages: "physical PDF p. 244",
+        facts: [
+          ["Original line", "66 kV; approximately 26.6 km of 1959 construction and 315 single-pole structures remained in the 2017 filing"],
+          ["Filed rebuild", "11 km in 2018 and the remaining 16 km in 2019; replace non-standard 4/0 ACSR with 477 ASC"]
+        ]
+      },
+      {
+        label: "2019 REPORTED 302L COMPLETE",
+        sourceId: "np-2020-transmission-rebuild-status",
+        pages: "physical PDF p. 2",
+        facts: [["Status", "Newfoundland Power listed 302L complete in its 2006 to 2019 strategy update"]]
+      },
+      {
+        label: "2025 ACTUAL COST TABLE",
+        sourceId: "np-2026-line-rebuilds",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["2018 work", "$2.068 million approved; $2.076929 million actual"],
+          ["2019 work", "$2.679 million approved; $1.865733 million actual"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED TRANSMISSION ROUTE",
+    referenceSheets: [
+      {
+        title: "302L rebuild sections",
+        image: "./reference-maps/302l-2018-route.png",
+        alt: "Filed 302L route drawing from Salt Pond to Laurentian showing the 2018 and 2019 rebuild sections",
+        sourceId: "np-2018-302l",
+        pages: "physical PDF p. 250"
       }
     ]
   },
@@ -11811,6 +11949,15 @@ export const stationProfiles = [
           ["2011 to 2015 performance", "SAIFI 2.97 and SAIDI 10.93 hours"],
           ["Filed work", "replace 29 km of 2/0 ACSR with 4/0 AASC; renew approximately 400 structures and replace 75 poles"],
           ["Filed cost", "$1.798 million over 2017 and 2018"]
+        ]
+      },
+      {
+        label: "2018 DRI RELIABILITY RECORD",
+        sourceId: "np-2018-dri",
+        pages: "physical PDF pp. 65 and 67",
+        facts: [
+          ["Five-year average to 2016", "609 customers; SAIFI 3.68; SAIDI 10.59 hours; CHIKM 81; CIKM 28"],
+          ["2018 filed expenditure", "$1.007 million within the two-year SUM-02 project"]
         ]
       },
       {
@@ -12570,6 +12717,30 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2018 TO 2019 302L REBUILD",
+        sourceId: "np-2018-302l",
+        pages: "physical PDF p. 244",
+        facts: [
+          ["Original line", "66 kV; approximately 26.6 km of 1959 construction and 315 single-pole structures remained in the 2017 filing"],
+          ["Filed rebuild", "11 km in 2018 and the remaining 16 km in 2019; replace non-standard 4/0 ACSR with 477 ASC"]
+        ]
+      },
+      {
+        label: "2019 REPORTED 302L COMPLETE",
+        sourceId: "np-2020-transmission-rebuild-status",
+        pages: "physical PDF p. 2",
+        facts: [["Status", "Newfoundland Power listed 302L complete in its 2006 to 2019 strategy update"]]
+      },
+      {
+        label: "2025 ACTUAL COST TABLE",
+        sourceId: "np-2026-line-rebuilds",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["2018 work", "$2.068 million approved; $2.076929 million actual"],
+          ["2019 work", "$2.679 million approved; $1.865733 million actual"]
+        ]
+      },
+      {
         label: "2027 TO 2028 PROPOSED REPLACEMENT",
         sourceId: "np-2027-laurentian",
         pages: "physical PDF pp. 470 to 472",
@@ -12579,6 +12750,16 @@ export const stationProfiles = [
           ["Existing transformer disposition", "scrap LAU-T1 after replacement because of its overall condition"],
           ["Filed schedule", "design and procurement in 2027; installation, testing and commissioning planned for 2028"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED TRANSMISSION ROUTE",
+    referenceSheets: [
+      {
+        title: "302L rebuild sections",
+        image: "./reference-maps/302l-2018-route.png",
+        alt: "Filed 302L route drawing from Salt Pond to Laurentian showing the 2018 and 2019 rebuild sections",
+        sourceId: "np-2018-302l",
+        pages: "physical PDF p. 250"
       }
     ]
   },
@@ -12762,6 +12943,14 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2018 FILED FEEDER AUTOMATION",
+        sourceId: "np-2018-feeder-automation",
+        pages: "physical PDF p. 235",
+        facts: [
+          ["Filed work", "automate DUN-01 and DUN-02 for remote control and operational setting changes"]
+        ]
+      },
       {
         label: "2019 TO 2021 FILED DUN-01 RELIABILITY WORK",
         sourceId: "np-2019-dri",
@@ -14170,6 +14359,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2018 FILED DOWNLINE RECLOSER",
+        sourceId: "np-2018-distribution-feeder-automation",
+        pages: "physical PDF p. 68",
+        facts: [
+          ["Filed feeder", "MIL-02"],
+          ["Equipment", "one three-phase downline automated recloser"]
+        ]
+      },
+      {
         label: "1976 STATION ASSET RECORD",
         sourceId: "np-2010-substation-asset-history",
         pages: "physical PDF pp. 197 and 206",
@@ -14799,6 +14997,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2018 FILED DOWNLINE RECLOSER",
+        sourceId: "np-2018-distribution-feeder-automation",
+        pages: "physical PDF p. 68",
+        facts: [
+          ["Filed feeder", "LEW-01"],
+          ["Equipment", "one single-phase downline automated recloser"]
+        ]
+      },
+      {
         label: "2019 COMPLETED 138 KV CONVERSION",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF pp. 4 to 5",
@@ -14980,6 +15187,15 @@ export const stationProfiles = [
       facts: [["HWD-02", "12.5 kV; HWD-T1/T2; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2018 FILED DOWNLINE RECLOSERS",
+        sourceId: "np-2018-distribution-feeder-automation",
+        pages: "physical PDF p. 68",
+        facts: [
+          ["Filed feeders", "HWD-07 and HWD-09"],
+          ["Equipment", "one three-phase downline automated recloser on each listed feeder"]
+        ]
+      },
       {
         label: "APRIL 2019 EQUIPMENT REGISTER",
         sourceId: "np-2019-pub-np-056",
@@ -15209,6 +15425,18 @@ export const stationProfiles = [
           ["KEN-02", "east along Kenmount Road into Pippy Place and O'Leary Avenue; approximately 700 primarily commercial customers"],
           ["KEN-03", "south over Kenmount Hill toward Blackmarsh Road, Frecker Drive, and Canada Drive; approximately 2,400 residential customers"],
           ["KEN-04", "Ladysmith Drive, Great Eastern Avenue, Kenmount Terrace, and part of Elizabeth Park; approximately 2,500 residential customers"]
+        ]
+      },
+      {
+        label: "2018 FILED KEN-03 RELIABILITY REBUILD",
+        sourceId: "np-2018-dri",
+        pages: "physical PDF pp. 282 to 284",
+        facts: [
+          ["Feeder", "25 kV; approximately 2,317 customers; ties to KEN-01 and KEN-04"],
+          ["Main trunk", "approximately 5 km of three-phase line, mainly 477 ASC, with 0.5 km of 4/0 AASC and 0.5 km of 2/0 ACSR"],
+          ["Five-year average to 2016", "SAIFI 1.69; SAIDI 2.69 hours; CHIKM 241; CIKM 151"],
+          ["Filed work", "replace crossarms and insulators on approximately 230 structures, replace deteriorated conductor, and replace remaining porcelain cutouts"],
+          ["Filed cost", "$358,000"]
         ]
       }
     ],
@@ -17121,6 +17349,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2018 FILED FEEDER AUTOMATION",
+        sourceId: "np-2018-feeder-automation",
+        pages: "physical PDF p. 235",
+        facts: [
+          ["Filed work", "automate two New Chelsea distribution feeders for remote control and operational setting changes"],
+          ["Feeder assignment", "the filing does not identify which two of NCH-01, NCH-02 and NCH-03 were included"]
+        ]
+      },
       {
         label: "2004 REPORTED PLANT REFURBISHMENT",
         sourceId: "np-2013-new-chelsea",
@@ -19072,6 +19309,15 @@ export const stationProfiles = [
           ["Five-year average", "611 customers; SAIFI 2.42; SAIDI 4.81; CHIKM 291; CIKM 2"],
           ["Filed condition", "pole and crossarm decay, splits and cracks; deficiencies in guys, anchors, hardware, and insulators; many insulators were more than 40 years old"],
           ["Filed rebuild scope", "replace 50 poles on the main trunk and rebuild 10 km of single-phase line between Trepassey and Portugal Cove South"]
+        ]
+      },
+      {
+        label: "2018 DRI RELIABILITY RECORD",
+        sourceId: "np-2018-dri",
+        pages: "physical PDF pp. 65 and 67",
+        facts: [
+          ["Five-year average to 2016", "605 customers; SAIFI 2.76; SAIDI 5.90 hours; CHIKM 32; CIKM 15"],
+          ["2018 filed expenditure", "$424,000 within the two-year TRP-01 project"]
         ]
       },
       {

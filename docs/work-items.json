@@ -814,6 +814,18 @@
       "notes": "The filed BLK-02, DUN-01, SJM-06, SCV-01, and SLA-05 scopes and route drawings are attached to their station records. The expenditure report supplies actual Long Pond, Oxen Pond termination, and 36L spending and the 36L construction explanation. The report's Long Pond p. 20 value conflicts with its own variance and the p. 8 category table; the reconciled $2.382 million value is documented. Asset-level completion remains open for four feeder projects and the filed Humber to Bayview fibre link."
     },
     {
+      "id": "NPREG-010",
+      "title": "Reconcile Newfoundland Power 2018 transmission, feeder, automation, and capital records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2018 capital application, line and feeder drawings, the 2018 capital expenditure report, later 302L completion records, and the two separate feeder-automation programs.",
+      "dependencies": ["NPREG-009"],
+      "completion_evidence": ["research/NP_2018_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/302l-2018-route.png", "public/reference-maps/bcv-03-2018-upgrade.png", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "The 302L record now combines the filed Salt Pond to Laurentian rebuild, route sheet, later complete status, and annual actual costs. BCV-03, KEN-03, SUM-02, and TRP-01 retain filed asset details without treating pooled financial closeout as commissioning evidence. The station automation and downline recloser programs remain separate. The filing's nine named downline feeders and eight-recloser program statement are both preserved."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

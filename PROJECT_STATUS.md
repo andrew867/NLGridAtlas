@@ -163,6 +163,9 @@ Updated: 2026-11-13
 - Added Grand Beach with both sectional 301L connections, the 66/7.2 kV station, GBE-01 capacity records, the completed 2003 line rebuild, later station work, and the 2026 Burin Peninsula map and load record.
 - Added Webbers Cove with both sectional 305L connections, the 66/25 kV station, WBC-01 capacity records, the 2002 loop-restoration sequence, later station work, the current Burin load record, and the filed 2050 transmission-hardening plan.
 - Centred dynamic station and Hydro terminal one-lines when they open in narrow viewports.
+- Added the filed 2018 to 2019 302L rebuild between Salt Pond and Laurentian, the route drawing, later completion status, and annual actual costs.
+- Added the 2018 BCV-03, KEN-03, SUM-02, and TRP-01 records. Pooled capital closeout remains separate from asset commissioning state.
+- Added the 2018 station feeder-automation records for Dunville, New Chelsea, New Harbour, Port Blandford, and Upper Island Cove, plus the separately filed downline reclosers on nine named feeders. The filing's conflicting eight-recloser program statement remains documented in the research record.
 
 ## Active work
 
