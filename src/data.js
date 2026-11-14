@@ -520,6 +520,86 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1966-transmission-lines",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-316 Attachment 1, Island Transmission-Line Register",
+    topics: ["1966", "TL201", "TL202", "TL204", "TL212", "TL223", "TL235", "230 kV", "138 kV"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf"
+  },
+  {
+    id: "nlh-1966-terminal-history",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-318, Island Terminal-Station Development History",
+    topics: ["1965", "1966", "Bay d'Espoir", "Stony Brook", "Sunnyside", "Western Avalon", "commissioning conflict"],
+    pages: "physical PDF pp. 4 to 5",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
+  },
+  {
+    id: "np-1966-clarenville",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Clarenville Substation",
+    topics: ["1966", "Clarenville", "CLV-T1", "CLV-T2", "100L", "109L", "110L", "123L", "124L", "date conflict"],
+    pages: "physical PDF p. 269",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "nlh-1966-bde-transformers",
+    year: 2023,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2024 Capital Budget Application, Bay d'Espoir Generator Transformer Replacement",
+    topics: ["1966", "Bay d'Espoir", "T1", "T2", "generator transformer", "manufacture year"],
+    pages: "physical PDF p. 543",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2024/NLH2024Capital/app/From%20NLH%20-%202024%20Capital%20Budget%20Application%20-%202023-07-12.PDF"
+  },
+  {
+    id: "nlh-1966-black-start-gas-turbine",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Holyrood Gas-Turbine History",
+    topics: ["1966", "Hardwoods", "Holyrood", "Rolls-Royce Avon", "AEI", "gas turbine", "black start"],
+    pages: "physical PDF p. 766",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1966-frequency-converter-air",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Corner Brook Frequency-Converter Compressed-Air System",
+    topics: ["1966", "1967", "Corner Brook", "frequency converter", "compressed air", "air receiver"],
+    pages: "physical PDF p. 314",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1966-farewell-head",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Farewell Head and Fogo Distribution Lines",
+    topics: ["1966", "Farewell Head", "Fogo", "L4", "L5", "L6", "12.5 kV", "distribution"],
+    pages: "physical PDF p. 419",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "np-1966-49l",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, 49L Transmission-Line Rebuild",
+    topics: ["1966", "49L", "Hardwoods", "Chamberlains", "66 kV", "336.4 ACSR"],
+    pages: "physical PDF p. 393",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
     id: "nlh-1967-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -1034,7 +1114,7 @@ export const sources = [
     year: 2023,
     organization: "Newfoundland Power",
     title: "2024 Capital Budget Application, Memorial Substation Refurbishment and Modernization",
-    topics: ["1974", "Memorial", "MUN-T1", "MUN-T2", "protection", "electromechanical relays"],
+    topics: ["1966", "1974", "Memorial", "station construction", "MUN-T1", "MUN-T2", "protection", "electromechanical relays"],
     pages: "physical PDF pp. 378 to 386",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
@@ -3504,7 +3584,7 @@ export const sources = [
     year: 2010,
     organization: "Newfoundland Power",
     title: "2010 Depreciation Study, Substation Asset and Modification History",
-    topics: ["Abrahams Cove", "Garnish", "Grand Beach", "Milton", "New Harbour", "Placentia Junction", "Port Blandford", "Quartz", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Webbers Cove", "Pitmans Pond", "ABC-T1", "GAR-T1", "GBE-T1", "MIL-T1", "NHR-T1", "PJN-T1", "PBD-T1", "QTZ-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "WBC-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
+    topics: ["Abrahams Cove", "Garnish", "Grand Beach", "Hardwoods", "Milton", "New Harbour", "Placentia Junction", "Port Blandford", "Quartz", "Riverhead", "St. Catherines", "Terra Nova", "Trepassey", "Webbers Cove", "Pitmans Pond", "ABC-T1", "GAR-T1", "GBE-T1", "MIL-T1", "NHR-T1", "PJN-T1", "PBD-T1", "QTZ-T1", "RVH-T1", "SCT-T1", "SCT-T2", "TNS-T1", "TRP-T1", "WBC-T1", "PIT-T1", "301L", "124L", "substation rebuild", "asset history"],
     pages: "physical PDF pp. 166, 194 to 198, 201, 203 to 204, 206 to 209 and 277",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
@@ -9108,6 +9188,28 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1966-system-record",
+    scope: "1966 transmission construction, terminal commissioning, station construction, transformer manufacture, generation support systems and rural distribution",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1966-transmission-lines", pages: "physical PDF p. 4" },
+      { sourceId: "nlh-1966-terminal-history", pages: "physical PDF pp. 4 to 5" },
+      { sourceId: "np-1966-clarenville", pages: "physical PDF p. 269" },
+      { sourceId: "np-2024-gambo", pages: "physical PDF p. 349" },
+      { sourceId: "np-2024-memorial", pages: "physical PDF pp. 378 to 379" },
+      { sourceId: "np-2018-harbour-grace", pages: "physical PDF p. 227" },
+      { sourceId: "np-2016-victoria", pages: "physical PDF p. 258" },
+      { sourceId: "np-2023-walbournes", pages: "physical PDF p. 392" },
+      { sourceId: "np-2027-lookout-brook", pages: "physical PDF p. 483" },
+      { sourceId: "nlh-1966-bde-transformers", pages: "physical PDF p. 543" },
+      { sourceId: "nlh-1966-black-start-gas-turbine", pages: "physical PDF p. 766" },
+      { sourceId: "nlh-1966-frequency-converter-air", pages: "physical PDF p. 314" },
+      { sourceId: "nlh-1966-farewell-head", pages: "physical PDF p. 419" },
+      { sourceId: "np-1966-49l", pages: "physical PDF p. 393" },
+      { sourceId: "np-2010-substation-asset-history", pages: "physical PDF p. 191" }
+    ]
+  },
+  {
     id: "np-1967-system-record",
     scope: "1967 demand, generation commissioning, transmission construction, terminal and substation development, transformer vintages, hydro plant equipment and telecommunications",
     status: "unresolved",
@@ -9620,6 +9722,96 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1966",
+    category: "network",
+    title: "Six Hydro transmission records date to 1966",
+    body: "The line register dates TL201, TL202, TL204, TL212, TL223 and TL235 to 1966. The records cover 230 kV and 138 kV circuits from Western Avalon to Hardwoods, Bay d'Espoir to Sunnyside and Stony Brook, Sunnyside to Linton Lake, Springdale to Indian River, and Stony Brook to the Grand Falls frequency converter.",
+    sourceId: "nlh-1966-transmission-lines",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1965 to 1967",
+    category: "station",
+    title: "Four terminal histories include 1966 commissioning records",
+    body: "PUB-NLH-318 dates Bay d'Espoir's original 230 kV main-and-transfer bus to 1965 to 1966, Stony Brook's original load bus to 1966, Sunnyside's original station to 1965 to 1966, and Western Avalon's original load bus to 1966. Separate filings date Stony Brook and Sunnyside to 1967, so those two station dates remain unresolved.",
+    sourceId: "nlh-1966-terminal-history",
+    pages: "physical PDF pp. 4 to 5",
+    status: "unresolved"
+  },
+  {
+    date: "1966",
+    category: "station",
+    title: "Gambo, Memorial, Harbour Grace, Victoria, Walbournes and Lookout Brook were constructed",
+    body: "Later station filings date all six facilities to 1966. Their original roles include transmission, distribution, hydroelectric generation, or combinations of those functions.",
+    sourceId: "np-2024-gambo",
+    pages: "physical PDF p. 349; compare Memorial pp. 378 to 379, Harbour Grace p. 227, Victoria p. 258, Walbournes p. 392 and Lookout Brook p. 483",
+    status: "reported"
+  },
+  {
+    date: "1966 or 1967",
+    category: "station",
+    title: "Clarenville construction records conflict",
+    body: "The 2009 capital filing says Clarenville was built in 1966. The 2015 filing says it was built in 1967. Both describe the station as a transmission and distribution facility.",
+    sourceId: "np-1966-clarenville",
+    pages: "physical PDF p. 269; compare 2015 Capital physical PDF p. 433",
+    status: "unresolved"
+  },
+  {
+    date: "1966",
+    category: "equipment",
+    title: "Bay d'Espoir T1 and T2 were manufactured",
+    body: "The 2024 capital filing identifies 1966 as the manufacture year for generator transformers T1 and T2. This is an equipment manufacture date, not a claimed station commissioning date.",
+    sourceId: "nlh-1966-bde-transformers",
+    pages: "physical PDF p. 543",
+    status: "reported"
+  },
+  {
+    date: "1966",
+    category: "generation",
+    title: "Hydro purchased the gas turbine later used for Holyrood black start",
+    body: "The Rolls-Royce Avon engine, AEI power turbine and AEI generator were purchased in 1966 and first installed at Hardwoods for emergency and peak-load duty. Hydro later moved the unit to Holyrood during the initial plant construction.",
+    sourceId: "nlh-1966-black-start-gas-turbine",
+    pages: "physical PDF p. 766",
+    status: "reported"
+  },
+  {
+    date: "1966 to 1967",
+    category: "equipment",
+    title: "Corner Brook frequency-converter compressed-air equipment entered service",
+    body: "The capital filing dates the air receiver and piping to 1966 and the dryer to 1967.",
+    sourceId: "nlh-1966-frequency-converter-air",
+    pages: "physical PDF p. 314",
+    status: "reported"
+  },
+  {
+    date: "1966",
+    category: "network",
+    title: "Farewell Head distribution lines L4, L5 and L6 were constructed",
+    body: "The 12.5 kV system supplied Fogo, Shoal Cove, Barr'd Island, Joe Batt's Arm, Seldom, Little Seldom, Stag Harbour, Deep Bay, Sandy Cove and Tilting through three-phase, two-phase and single-phase sections.",
+    sourceId: "nlh-1966-farewell-head",
+    pages: "physical PDF p. 419",
+    status: "reported"
+  },
+  {
+    date: "1966",
+    category: "network",
+    title: "A 2.7 km section of 49L was constructed",
+    body: "The Hardwoods to Chamberlains 66 kV record identifies a 1966 section with two H-frame structures, 24 single-pole structures and 336.4 ACSR conductor. A separate 5.5 km section dates to 1976.",
+    sourceId: "np-1966-49l",
+    pages: "physical PDF p. 393",
+    status: "reported"
+  },
+  {
+    date: "1966",
+    category: "equipment",
+    title: "Hardwoods substation structures date to 1966",
+    body: "The depreciation register dates the Newfoundland Power 66 kV and 12.47 kV steel structures at Hardwoods to 1966. This record is separate from Hydro's Hardwoods terminal and gas-turbine assets.",
+    sourceId: "np-2010-substation-asset-history",
+    pages: "physical PDF p. 191",
+    status: "reported"
+  },
   {
     date: "1967",
     category: "station",
@@ -13460,9 +13652,9 @@ export const components = {
   },
   "hrd-gt": {
     diagram: "hrd", status: "verified", code: "HRD / GT AND T9", title: "Holyrood gas turbine branch",
-    summary: "The 15 MW, 13.8 kV gas-turbine branch connects through T9 to the station-service bus. Hydro rebuilt the installation in 1986. The March 2015 as-built drawing marks the gas turbine no longer in service and notes that its 13.8 kV oil circuit breaker was removed and jumpered out.",
-    data: [["Gas turbine", "15 MW, 13.8 kV"], ["T9", "10.5/14 MVA"], ["Service", "Station-service bus"], ["1986 work", "New building, filter house, exhaust silencer and stack; power-turbine casings, governor, synchronizer and monitoring equipment replaced"], ["1991 work", "Major overhaul completed"], ["March 2015 state", "No longer in service; 13.8 kV oil circuit breaker removed and jumpered out"]],
-    sources: [sourceRef("nlh-1986-holyrood-gas-turbine", "physical PDF pp. 39 to 40 and 66 to 67"), sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1991-holyrood-gt-overhaul", "physical PDF p. 19")]
+    summary: "Hydro purchased the Rolls-Royce Avon engine, AEI power turbine and AEI generator in 1966, first installed the unit at Hardwoods, then moved it to Holyrood for black-start service. The 15 MW, 13.8 kV branch connects through T9 to the station-service bus. Hydro rebuilt the installation in 1986. The March 2015 as-built drawing marks the gas turbine no longer in service and notes that its 13.8 kV oil circuit breaker was removed and jumpered out.",
+    data: [["1966 purchase", "Rolls-Royce Avon engine, AEI power turbine and AEI generator"], ["First installation", "Hardwoods; emergency and peak-load service"], ["Relocation", "Moved to Holyrood during initial plant construction for black-start service"], ["Gas turbine", "15 MW, 13.8 kV"], ["T9", "10.5/14 MVA"], ["Service", "Station-service bus"], ["1986 work", "New building, filter house, exhaust silencer and stack; power-turbine casings, governor, synchronizer and monitoring equipment replaced"], ["1991 work", "Major overhaul completed"], ["March 2015 state", "No longer in service; 13.8 kV oil circuit breaker removed and jumpered out"]],
+    sources: [sourceRef("nlh-1966-black-start-gas-turbine", "physical PDF p. 766"), sourceRef("nlh-1986-holyrood-gas-turbine", "physical PDF pp. 39 to 40 and 66 to 67"), sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1991-holyrood-gt-overhaul", "physical PDF p. 19")]
   },
   "hwd-np-summary": {
     diagram: "hwd-np", status: "verified", code: "HWD / NEWFOUNDLAND POWER", title: "Hardwoods Substation",
@@ -14034,6 +14226,21 @@ export const islandTerminalRecords = [
     status: "reported",
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
+      {
+        label: "1965 TO 1966 ORIGINAL 230 KV BUS",
+        sourceId: "nlh-1966-terminal-history",
+        pages: "physical PDF p. 4",
+        facts: [
+          ["Original arrangement", "230 kV main-and-transfer bus commissioned in 1965 to 1966"],
+          ["Later modification", "converted into ring buses in 1993"]
+        ]
+      },
+      {
+        label: "1966 T1 AND T2 MANUFACTURE",
+        sourceId: "nlh-1966-bde-transformers",
+        pages: "physical PDF p. 543",
+        facts: [["Generator transformers", "T1 and T2 manufactured in 1966"]]
+      },
       {
         label: "1967 STAGE I UNITS 1 TO 3",
         sourceId: "nlh-1967-bde-stage1",
@@ -17634,6 +17841,12 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1966 ORIGINAL TERMINAL COMMISSIONING",
+        sourceId: "nlh-1966-terminal-history",
+        pages: "physical PDF p. 5",
+        facts: [["Original arrangement", "230 kV load bus commissioned in 1966"], ["1993 to 1994 work", "modified to a ring bus"]]
+      },
       {
         label: "1967 230/138 KV TRANSFORMER",
         sourceId: "nlh-1967-transformer-register",
@@ -23983,7 +24196,17 @@ export const stationProfiles = [
         ["CLV-T3", "138/12.5 kV; 25 MVA; 13.01 MVA 2026 forecast"]
       ]
     },
+    status: "unresolved",
     historyRecords: [
+      {
+        label: "1966 TO 1967 STATION DATE CONFLICT",
+        sourceId: "np-1966-clarenville",
+        pages: "physical PDF p. 269; compare 2015 Capital physical PDF p. 433",
+        facts: [
+          ["2009 filing", "station built in 1966 as a transmission switching and 12.5 kV distribution station"],
+          ["2015 filing", "station built in 1967 as a transmission and distribution substation"]
+        ]
+      },
       {
         label: "1986 124L CONSTRUCTION",
         sourceId: "np-1986-tl124",
@@ -25015,6 +25238,15 @@ export const stationProfiles = [
       facts: [["HWD-02", "12.5 kV; HWD-T1/T2; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "1966 SUBSTATION STRUCTURES",
+        sourceId: "np-2010-substation-asset-history",
+        pages: "physical PDF p. 191",
+        facts: [
+          ["66 kV structure", "steel; installed 1966"],
+          ["12.47 kV structure", "steel; installed 1966"]
+        ]
+      },
       {
         label: "2002 REPORTED HWD-T2 CABLE FAILURE",
         sourceId: "np-2003-substation-equipment-inspections",
@@ -29520,6 +29752,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1966 STATION AND MUN-T1",
+        sourceId: "np-2024-memorial",
+        pages: "physical PDF pp. 378 to 379",
+        facts: [
+          ["Station", "originally constructed in 1966; equipment jointly owned by Newfoundland Power and Memorial University"],
+          ["MUN-T1", "Ferranti-Packard; manufactured 1966; 66/12.5 kV; 11.125/14.83 MVA"]
+        ]
+      },
       {
         label: "1974 PROTECTION EQUIPMENT",
         sourceId: "np-2024-memorial",

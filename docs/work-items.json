@@ -1438,6 +1438,18 @@
       "notes": "Historical demand establishes the reported Newfoundland Power peak. Later primary records establish Bay d'Espoir Stage I Units 1 to 3, TL205, TL211, TL222, TL228, Bottom Brook, Oxen Pond, Massey Drive, Blaketown, Burgeo, seven Hydro transformers, the Molloy's Lane 66 kV structure, the West Brook main valve and East Coast carrier equipment. Sunnyside remains unresolved because one filing dates the station to 1967 while another dates original commissioning to 1965 to 1966 and the ring bus to 1967. Stony Brook remains unresolved because filed records give 1966 and 1967 in-service dates."
     },
     {
+      "id": "NPREG-062",
+      "title": "Reconcile Newfoundland Power 1966 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1966 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-061"],
+      "completion_evidence": ["research/NP_1966_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1966-system.test.js"],
+      "blocker": null,
+      "notes": "The available historical-demand table begins in 1967, so no 1966 demand value is stated. Later primary records establish TL201, TL202, TL204, TL212, TL223 and TL235; Bay d'Espoir, Stony Brook, Sunnyside and Western Avalon terminal history; six Newfoundland Power station construction records; Bay d'Espoir T1 and T2 manufacture; the gas turbine first installed at Hardwoods and later moved to Holyrood; the Corner Brook frequency-converter compressed-air system; Farewell Head distribution lines; Hardwoods structures; and a 1966 section of 49L. Clarenville, Stony Brook and Sunnyside retain conflicting station dates."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
