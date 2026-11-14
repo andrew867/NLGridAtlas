@@ -1358,12 +1358,24 @@
       "title": "Reconcile Newfoundland Power 1973 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1973 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-054"],
+      "completion_evidence": ["research/NP_1973_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1973-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the reported Newfoundland Power peak. Later primary records establish Gallant Street, 103L, Buchans Terminal Station and its ring bus, TL233, SPO-T4, Lockston's 66 kV structure, and dated structures at Harbour Grace and St. John's Main. The Come By Chance terminal header is an estimate; its listed individual terminal assets date to 1974. TL214 and TL215 are excluded because their construction dates are 1968 and 1969."
+    },
+    {
+      "id": "NPREG-056",
+      "title": "Reconcile Newfoundland Power 1972 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1972 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-055"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with historical demand, station construction, generation equipment, transmission-line construction and dated asset registers."
+      "notes": "Start with historical demand, Hardwoods terminal evidence, station construction, generation equipment, transmission-line construction and dated asset registers."
     },
     {
       "id": "ASSET-001",

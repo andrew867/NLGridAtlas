@@ -520,6 +520,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1973-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1973", "Newfoundland Power peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "nlh-1973-tl233",
+    year: 2003,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2004 Capital Budget Application, TL233 Insulator Replacement",
+    topics: ["1973", "TL233", "Buchans", "Bottom Brook", "230 kV", "wood pole line"],
+    pages: "physical PDF p. 48",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf"
+  },
+  {
+    id: "nlh-1973-buchans-air",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2012 Capital Budget Application, Buchans Compressed-Air System",
+    topics: ["1973", "Buchans", "terminal station", "compressed air", "TL280", "69/230 kV", "66/12.5 kV"],
+    pages: "physical PDF pp. 337 to 339",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012ApplicationComplete-VolumeI.pdf"
+  },
+  {
     id: "nlh-1974-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8638,6 +8668,23 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1973-system-record",
+    scope: "1973 demand, terminal and substation construction, transmission construction and dated station equipment",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-1973-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-2010-botwood-gallants", pages: "physical PDF p. 291" },
+      { sourceId: "np-2019-central-system", pages: "physical PDF p. 174" },
+      { sourceId: "nlh-1973-tl233", pages: "physical PDF p. 48" },
+      { sourceId: "nlh-system-design-2015", pages: "physical PDF pp. 3 to 4" },
+      { sourceId: "nlh-1973-buchans-air", pages: "physical PDF pp. 337 to 339" },
+      { sourceId: "np-2017-salt-pond", pages: "physical PDF p. 231" },
+      { sourceId: "np-2025-lockston", pages: "physical PDF p. 413" },
+      { sourceId: "np-1978-substation-structures", pages: "physical PDF pp. 192 and 194" },
+      { sourceId: "nlh-1974-come-by-chance-assets", pages: "physical PDF p. 19" }
+    ]
+  },
+  {
     id: "np-1974-system-record",
     scope: "1974 demand, station construction, generation and transformer equipment, transmission sections and Come By Chance terminal assets",
     status: "reported",
@@ -9035,6 +9082,60 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1973",
+    category: "load",
+    title: "Newfoundland Power peak demand was 336.3 MW",
+    body: "The historical table does not print Hydro or Island transmission peak demand for 1973.",
+    sourceId: "nlh-1973-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1973",
+    category: "station",
+    title: "Gallant Street entered service",
+    body: "The station was built as a 66/12 kV distribution substation. The later filing records two transformers, four distribution feeders, and 401L, 402L and 406L on the 66 kV bus.",
+    sourceId: "np-2010-botwood-gallants",
+    pages: "physical PDF p. 291",
+    status: "reported"
+  },
+  {
+    date: "1973",
+    category: "network",
+    title: "103L connected Lewisporte to Notre Dame Junction",
+    body: "The 14 km, 66 kV radial line replaced Lewisporte's earlier distribution-feeder supply from Rattling Brook.",
+    sourceId: "np-2019-central-system",
+    pages: "physical PDF p. 174",
+    status: "reported"
+  },
+  {
+    date: "1973",
+    category: "station",
+    title: "Buchans terminal and TL233 entered service",
+    body: "Buchans Terminal Station and its 230 kV ring bus date to 1973. TL233 connected Buchans and Bottom Brook over 135 km of wood H-frame line. Before the terminal opened, Buchans received 50 Hz power from Bowater's Deer Lake plant.",
+    sourceId: "nlh-system-design-2015",
+    pages: "physical PDF pp. 3 to 4; compare 2004 Capital Budget Application physical PDF p. 48",
+    status: "reported"
+  },
+  {
+    date: "1973",
+    category: "equipment",
+    title: "Dated station equipment entered service",
+    body: "Later records date Salt Pond transformer SPO-T4, Lockston's 66 kV wood-pole structure, Harbour Grace's 66 kV and 12.47 kV structures, and St. John's Main's 4.16 kV low-voltage structure to 1973.",
+    sourceId: "np-2017-salt-pond",
+    pages: "physical PDF p. 231; compare 2025 Capital p. 413 and CA-NP-088 pp. 192 and 194",
+    status: "reported"
+  },
+  {
+    date: "1973",
+    category: "station",
+    title: "Come By Chance terminal date is estimated",
+    body: "The asset register estimates the terminal in service in 1973, while the individually listed transformers and terminal assets are dated January 1, 1974.",
+    sourceId: "nlh-1974-come-by-chance-assets",
+    pages: "physical PDF p. 19",
     status: "reported"
   },
   {
@@ -13081,12 +13182,34 @@ export const islandTerminalRecords = [
     code: "BUC",
     name: "Buchans Terminal Station",
     status: "verified",
-    historyRecords: [{
-      label: "1979 TO 1981 TL232 DATE CONFLICT",
-      sourceId: "nlh-1979-tl232-construction",
-      pages: "physical PDF p. 64; compare 2008 application physical PDF p. 116",
-      facts: [["Contemporary record", "built during 1979 and 1980 at a reported capital cost of $7.0 million"], ["Later record", "84 km, 230 kV radial line to Stony Brook; built as a parallel central-system link and dated to 1981"]]
-    }],
+    historyRecords: [
+      {
+        label: "1973 COMMISSIONING",
+        sourceId: "nlh-system-design-2015",
+        pages: "physical PDF pp. 3 to 4",
+        facts: [
+          ["Terminal station", "commissioned in 1973"],
+          ["Earlier supply", "Bowater supplied Buchans at 50 Hz from Deer Lake before 1973"],
+          ["230 kV ring bus", "asset in-service dates place its establishment in 1973"],
+          ["TL233", "added between Buchans and Bottom Brook in 1973"]
+        ]
+      },
+      {
+        label: "1973 COMPRESSED-AIR SYSTEM",
+        sourceId: "nlh-1973-buchans-air",
+        pages: "physical PDF pp. 337 to 339",
+        facts: [
+          ["Original system", "compressed-air piping installed in 1973 for four air-blast circuit breakers"],
+          ["Filed 2012 replacement", "replace the piping and add a backup dryer and SCADA-connected dew-point monitor"]
+        ]
+      },
+      {
+        label: "1979 TO 1981 TL232 DATE CONFLICT",
+        sourceId: "nlh-1979-tl232-construction",
+        pages: "physical PDF p. 64; compare 2008 application physical PDF p. 116",
+        facts: [["Contemporary record", "built during 1979 and 1980 at a reported capital cost of $7.0 million"], ["Later record", "84 km, 230 kV radial line to Stony Brook; built as a parallel central-system link and dated to 1981"]]
+      }
+    ],
     facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2019 T1 replacement", "Completed using the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare"], ["230 kV ring bus", "T1 is between B1L05 and B1L28; TL205, TL233, TL232, and TL228 occupy the four line positions around the five-breaker ring"], ["Q1 2024 work", "Fire protection installed; TL205 protection upgrade completed"], ["2025 T1 work", "Tap changer oil replacement, access hatch re-gasketing, and leak repairs completed"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
     diagram: {
       label: "2013 filed ring-bus operation / 2019 completed T1 replacement",
@@ -14730,6 +14853,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1973 STRUCTURE REGISTER",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 194",
+        facts: [
+          ["66 kV structure", "wood structure installed in 1973"],
+          ["12.47 kV structure", "wood structure installed in 1973"],
+          ["Register capacity", "16.7 MVA"]
+        ]
+      },
       {
         label: "2014 FILED 68L REBUILD",
         sourceId: "np-2014-transmission-lines",
@@ -18998,6 +19131,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1973 SPO-T4 INSTALLATION",
+        sourceId: "np-2017-salt-pond",
+        pages: "physical PDF p. 231",
+        facts: [
+          ["SPO-T4", "installed in 1973"],
+          ["2017 filed work", "transformer refurbishment and auxiliary-protection upgrades"]
+        ]
+      },
+      {
         label: "1982 TRANSFORMER PROTECTION",
         sourceId: "np-2017-salt-pond",
         pages: "physical PDF pp. 231 to 232",
@@ -22120,6 +22262,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1973 66 KV STRUCTURE",
+        sourceId: "np-2025-lockston",
+        pages: "physical PDF p. 413",
+        facts: [
+          ["Structure", "66 kV wood-pole structure installed in 1973"],
+          ["2022 inspection", "documented pole splits and decay"]
+        ]
+      },
+      {
         label: "2005 CIRCUIT REGISTER",
         sourceId: "np-2006-handbook",
         pages: "physical PDF p. 8",
@@ -25087,6 +25238,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1973 4.16 KV STRUCTURE",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 192",
+        facts: [
+          ["Low-voltage structure", "4.16 kV steel structure installed in 1973"],
+          ["Later additions", "the same register dates 12.47 kV low-voltage structures to 1978, 1980 and 1983"]
+        ]
+      },
       {
         label: "1983 LOW-VOLTAGE STRUCTURE",
         sourceId: "np-1983-substation-assets",
