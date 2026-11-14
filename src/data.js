@@ -380,6 +380,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-2002-annual-report",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2002 Annual Report, Electrical System Work and Operating Events",
+    topics: ["Salt Pond", "Gander", "Rattling Brook", "Grand Beach", "Goulds", "Mobile", "transmission rebuild", "substation rebuild", "lightning storm", "gas turbine relocation"],
+    pages: "physical PDF pp. 17 to 18",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213G.pdf"
+  },
+  {
+    id: "np-2003-gra-operations-rev1",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2003 General Rate Application, Operations and Customer Service Evidence, first revision",
+    topics: ["2002 reliability", "SAIFI", "SAIDI", "underfrequency load shedding", "Holyrood", "SCADA", "distribution feeders"],
+    pages: "physical PDF pp. 83 to 86",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/Application/CompleteApplicationRev1.pdf"
+  },
+  {
+    id: "np-2003-ca-241-load-factor",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "CA-241, System Load Factors",
+    topics: ["system load factor", "actual load factor", "forecast load factor", "demand management"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-241.pdf"
+  },
+  {
+    id: "np-2003-ca-279-rev",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "CA-279, Operating-Area Reliability Statistics, first revision",
+    topics: ["St. John's", "Avalon", "Burin", "Bonavista", "Gander", "Grand Falls", "Corner Brook", "Stephenville", "SAIFI", "SAIDI"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-279Rev.pdf"
+  },
+  {
+    id: "np-2003-ca-446-rev",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "CA-446, System Reliability Statistics, first revision",
+    topics: ["1992 to 2002", "SAIFI", "SAIDI", "loss of supply", "reliability"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf"
+  },
+  {
     id: "pu-36-2003-capital",
     year: 2002,
     organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
@@ -6438,6 +6488,22 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1998-2005-system-load-factors",
+    scope: "Actual Newfoundland Power system load factors for 1998 to 2001 and filed forecasts for 2002 to 2005",
+    status: "reported",
+    sources: [{ sourceId: "np-2003-ca-241-load-factor", pages: "physical PDF p. 1" }]
+  },
+  {
+    id: "np-2002-system-reliability",
+    scope: "2002 actual system and operating-area SAIFI and SAIDI, excluding Hydro loss-of-supply outages, plus underfrequency load-shedding events",
+    status: "reported",
+    sources: [
+      { sourceId: "np-2003-gra-operations-rev1", pages: "physical PDF pp. 83 to 86" },
+      { sourceId: "np-2003-ca-279-rev", pages: "physical PDF p. 1" },
+      { sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }
+    ]
+  },
+  {
     id: "historical-vhf-system",
     scope: "Historical VHF topology, equipment counts and Hydro-owned repeater records",
     status: "verified",
@@ -6535,6 +6601,33 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "2002",
+    category: "station",
+    title: "Salt Pond transformer failures delayed the gas-turbine move",
+    body: "A Salt Pond power transformer failed, followed by the portable replacement transformer. Newfoundland Power deferred the Salt Pond gas-turbine relocation to Wesleyville until 2003.",
+    sourceId: "np-2002-annual-report",
+    pages: "physical PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "2002",
+    category: "network",
+    title: "Transmission and station rebuilds entered service",
+    body: "The annual report records the Grand Bank to Grand Beach line rebuild, 11 km replaced and 10 km upgraded between Goulds and Mobile, the Gander steel-bus rebuild, and Rattling Brook transformer and breaker replacement.",
+    sourceId: "np-2002-annual-report",
+    pages: "physical PDF p. 18",
+    status: "reported"
+  },
+  {
+    date: "2002-08",
+    category: "event",
+    title: "Lightning storms damaged equipment across the island",
+    body: "The annual report records more than 10,000 lightning strikes, outages in nearly 300 communities, and approximately $1 million in repair cost.",
+    sourceId: "np-2002-annual-report",
+    pages: "physical PDF p. 17",
+    status: "reported"
+  },
+  {
     date: "2002-12-20",
     category: "telecom",
     title: "Board approved the 2003 radio program",
@@ -6542,6 +6635,15 @@ export const timeline = [
     sourceId: "pu-36-2003-capital",
     pages: "physical PDF pp. 21, 26 and 28",
     status: "verified"
+  },
+  {
+    date: "2002-12-31",
+    category: "reliability",
+    title: "Seventeen underfrequency trips operated load shedding",
+    body: "Newfoundland Power reported 17 underfrequency trips against a target of 8. Its 2002 SAIFI and SAIDI were 4.76 interruptions and 4.54 hours per customer; excluding Hydro loss of supply, they were 3.25 and 4.18.",
+    sourceId: "np-2003-gra-operations-rev1",
+    pages: "physical PDF pp. 83 to 86",
+    status: "reported"
   },
   {
     date: "2004-09-24",
@@ -9106,6 +9208,14 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2002 REPORTED EASTPORT PENINSULA DISTRIBUTION UPGRADE",
+        sourceId: "np-2002-annual-report",
+        pages: "physical PDF p. 18",
+        facts: [
+          ["Reported work", "upgraded the distribution line from Glovertown to the Eastport Peninsula"]
+        ]
+      },
+      {
         label: "2006 FILED GLV-02 RELIABILITY WORK",
         sourceId: "np-2006-distribution-reliability",
         pages: "physical PDF pp. 418 to 427",
@@ -10152,6 +10262,14 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2002 REPORTED GOULDS TO MOBILE LINE WORK",
+        sourceId: "np-2002-annual-report",
+        pages: "physical PDF p. 18",
+        facts: [
+          ["Reported work", "replaced an 11 km section and upgraded a 10 km section of the transmission line between Goulds and Mobile"]
+        ]
+      },
       {
         label: "2005 FILED 11L REBUILD",
         sourceId: "np-2005-transmission-rebuild",
@@ -13351,6 +13469,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2002 REPORTED TRANSFORMER FAILURES",
+        sourceId: "np-2002-annual-report",
+        pages: "physical PDF p. 17",
+        facts: [
+          ["Station transformer", "a Salt Pond power transformer failed"],
+          ["Portable replacement", "the replacement portable transformer subsequently failed"],
+          ["Operational effect", "the gas-turbine relocation to Wesleyville was deferred to 2003"]
+        ]
+      },
+      {
         label: "2006 FILED 66 KV BUS DIFFERENTIAL PROTECTION",
         sourceId: "np-2006-substation-program",
         pages: "physical PDF pp. 228 to 231",
@@ -14392,6 +14520,14 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2002 REPORTED STEEL-BUS REBUILD",
+        sourceId: "np-2002-annual-report",
+        pages: "physical PDF p. 18",
+        facts: [
+          ["Completed work", "replaced the existing wooden bus structure with a steel structure"]
+        ]
+      },
+      {
         label: "2002 REPORTED 12.5 KV STRUCTURE AND CABLE WORK",
         sourceId: "np-2003-status-2002",
         pages: "physical PDF p. 113",
@@ -14955,6 +15091,14 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2002 REPORTED DUNVILLE TO FOX HARBOUR DISTRIBUTION REBUILD",
+        sourceId: "np-2002-annual-report",
+        pages: "physical PDF p. 18",
+        facts: [
+          ["Reported work", "rebuilt distribution lines between Dunville and Fox Harbour"]
+        ]
+      },
       {
         label: "2018 FILED FEEDER AUTOMATION",
         sourceId: "np-2018-feeder-automation",
@@ -15928,6 +16072,14 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2002 REPORTED GRAND BANK TO GRAND BEACH REBUILD",
+        sourceId: "np-2002-annual-report",
+        pages: "physical PDF p. 18",
+        facts: [
+          ["Reported work", "rebuilt the transmission line between Grand Bank and Grand Beach"]
+        ]
+      },
       {
         label: "2003 FILED STATION WORK",
         sourceId: "np-2003-grand-beach",
@@ -17482,6 +17634,14 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2002 REPORTED TRANSFORMER AND BREAKER REPLACEMENT",
+        sourceId: "np-2002-annual-report",
+        pages: "physical PDF p. 18",
+        facts: [
+          ["Completed work", "replaced a power transformer and circuit breaker at Rattling Brook Substation"]
+        ]
+      },
+      {
         label: "2003 REPORTED 66 KV BREAKER AGE",
         sourceId: "np-2003-breaker-ages",
         pages: "physical PDF p. 1",
@@ -18428,6 +18588,14 @@ export const stationProfiles = [
       facts: [["GOU-02", "12.5 kV; GOU-T2/T3; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2002 REPORTED GOULDS TO MOBILE LINE WORK",
+        sourceId: "np-2002-annual-report",
+        pages: "physical PDF p. 18",
+        facts: [
+          ["Reported work", "replaced an 11 km section and upgraded a 10 km section of the transmission line between Goulds and Mobile"]
+        ]
+      },
       {
         label: "2007 FILED STATION WORK",
         sourceId: "np-2007-capital",

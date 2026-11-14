@@ -1010,12 +1010,24 @@
       "title": "Reconcile Newfoundland Power 2002 capital and system records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
-      "scope": "Reconcile the 2002 capital application, Board decision, RFIs, station and line work, telecommunications records, and later evidence that establishes project state.",
+      "status": "done",
+      "scope": "Reconcile surviving 2002 system records in the 2003 capital filing, 2003 General Rate Application, RFIs, annual report, station and line work, reliability statistics, and later evidence that establishes project state.",
       "dependencies": ["NPREG-025"],
+      "completion_evidence": ["research/NP_2002_SYSTEM_AND_RELIABILITY_RECORD.md", "src/data.js", "index.html", "tests/np-2002-system.test.js"],
+      "blocker": null,
+      "notes": "No standalone 2002 capital-application directory was located in the public mirror. The surviving record establishes completed 2002 line and station work, Salt Pond transformer failures, the August lightning event, revised actual SAIFI and SAIDI, regional reliability values, and the boundary between actual and forecast load-factor data."
+    },
+    {
+      "id": "NPREG-027",
+      "title": "Reconcile Newfoundland Power 2001 General Rate Application and system records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory the surviving 2001 General Rate Application and related annual, financial, station, transmission, distribution, generation, telecommunications, load, and reliability evidence.",
+      "dependencies": ["NPREG-026"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start after NPREG-025 passes the complete test, source-verification, build, and browser-review gates."
+      "notes": "Use the public mirror to establish the surviving source set before assigning any project state."
     },
     {
       "id": "ASSET-001",
