@@ -530,6 +530,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1955-bell-island-28l",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "Bell Island Submarine Cable System Replacement, 1955 Cable Record",
+    topics: ["1955", "Bell Island", "Broad Cove", "28L", "three-phase submarine cable", "cable fault"],
+    pages: "physical PDF pp. 15, 79 to 80 and 314",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/BellIslandSubCable/application/Application-ApprovaltoReplacetheBellIslandSubmarineCable-2013-12-09.PDF"
+  },
+  {
+    id: "nlh-1955-venams-bight-penstock",
+    year: 2008,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2009 Capital Budget Application, Venam's Bight Penstock",
+    topics: ["1955", "Venam's Bight", "wood-stave penstock", "hydroelectric generation"],
+    pages: "physical PDF p. 34",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NLH2009Capital/files/application/NLH2009ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1955-ice-storm",
+    year: 2011,
+    organization: "Nalcor Energy",
+    title: "Exhibit 96, Newfoundland and Labrador Weather Chronology",
+    topics: ["1955", "St. John's", "freezing rain", "ice storm", "United Towns Electric", "Newfoundland Power", "Canadian National Telegraphs"],
+    pages: "physical PDF p. 54",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit96.pdf"
+  },
+  {
     id: "np-1956-new-chelsea-penstock",
     year: 2003,
     organization: "Newfoundland Power",
@@ -9868,6 +9898,17 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1955-system-record",
+    scope: "1955 transmission construction, submarine cable installation, hydroelectric civil work and ice-storm damage",
+    status: "reported",
+    sources: [
+      { sourceId: "np-2025-lockston", pages: "physical PDF p. 413" },
+      { sourceId: "np-1955-bell-island-28l", pages: "physical PDF pp. 15, 79 to 80 and 314" },
+      { sourceId: "nlh-1955-venams-bight-penstock", pages: "physical PDF p. 34" },
+      { sourceId: "nlh-1955-ice-storm", pages: "physical PDF p. 54" }
+    ]
+  },
+  {
     id: "np-1956-system-record",
     scope: "1956 transmission construction, generation and station development, original plant electrical equipment, and hydroelectric civil works",
     status: "unresolved",
@@ -10590,6 +10631,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1955",
+    category: "network",
+    title: "A 46 kV line connected the future Lockston plant site to Port Union",
+    body: "The line was built before the Lockston hydro plant entered service. Its purpose was to connect the planned plant to the Port Union electricity system.",
+    sourceId: "np-2025-lockston",
+    pages: "physical PDF p. 413",
+    status: "reported"
+  },
+  {
+    date: "1955",
+    category: "network",
+    title: "Three-phase cable 28L supplemented the Bell Island crossing",
+    body: "The cable supplemented three submarine cables installed in 1932. It remained in service when the replacement cables were installed in 1988, then was abandoned in 1990 after a cable fault. A 2013 inspection found the abandoned cable exposed in the Bell Island tidal zone with deteriorated cast-iron necklaces.",
+    sourceId: "np-1955-bell-island-28l",
+    pages: "physical PDF pp. 15, 79 to 80 and 314",
+    status: "reported"
+  },
+  {
+    date: "1955",
+    category: "civil",
+    title: "A wood-stave penstock was installed at Venam's Bight",
+    body: "The penstock supplied water to the generating station. The 2009 capital plan says it had deteriorated to the point that replacement was required. The installation date predates the 1956 construction and 1956 or 1957 commissioning dates stated for the generating plant in other records.",
+    sourceId: "nlh-1955-venams-bight-penstock",
+    pages: "physical PDF p. 34",
+    status: "reported"
+  },
+  {
+    date: "March 13 to 22, 1955",
+    category: "reliability",
+    title: "Heavy ice damaged power lines in the St. John's area",
+    body: "The weather chronology reports that United Towns Electric lost three poles, one area served by Newfoundland Power was dark, and wires were torn from eight houses. Canadian National Telegraphs had little trouble because there was no wind.",
+    sourceId: "nlh-1955-ice-storm",
+    pages: "physical PDF p. 54",
+    status: "reported"
+  },
   {
     date: "1956",
     category: "network",
@@ -19648,6 +19725,16 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1955 BELL ISLAND SUBMARINE CABLE 28L",
+        sourceId: "np-1955-bell-island-28l",
+        pages: "physical PDF pp. 15, 79 to 80 and 314",
+        facts: [
+          ["Cable", "three-phase submarine cable 28L; supplemented three cables installed in 1932"],
+          ["Service history", "still operating when the 1988 cables were installed; abandoned in 1990 after a cable fault"],
+          ["2013 inspection", "cable exposed in the Bell Island tidal zone; cast-iron necklaces deteriorated but relatively good for their age"]
+        ]
+      },
+      {
         label: "1977 LOW-VOLTAGE STRUCTURE",
         sourceId: "np-2010-substation-asset-history",
         pages: "physical PDF p. 191",
@@ -25232,6 +25319,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1955 46 KV LINK TO PORT UNION",
+        sourceId: "np-2025-lockston",
+        pages: "physical PDF p. 413",
+        facts: [
+          ["Line", "46 kV transmission line from the future Lockston plant site to the Port Union electricity system"],
+          ["Purpose", "constructed in anticipation of the Lockston hydro plant"],
+          ["Later change", "transmission voltage increased to 66 kV in 1965 to establish links to Port Blandford and Clarenville"]
+        ]
+      },
       {
         label: "1956 ORIGINAL DEVELOPMENT",
         sourceId: "np-2012-lockston",
