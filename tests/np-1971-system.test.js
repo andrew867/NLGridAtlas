@@ -11,8 +11,8 @@ test("1971 demand retains only the printed peak", () => {
 });
 
 test("Holyrood Stage I and Bayview retain their 1971 records", () => {
-  assert.match(components["hrd-summary"].summary, /Unit 1 was commissioned in 1970 and Unit 2 in 1971/);
-  assert.match(components["hrd-summary"].summary, /both were originally designed for 150 MW/);
+  assert.match(components["hrd-summary"].summary, /complete Stage I to 1971/);
+  assert.match(JSON.stringify(components["hrd-summary"]), /Original unit rating.*150 MW each/);
   assert.match(stationText("BVS"), /built in 1971/);
   assert.match(stationText("BVS"), /1972 STRUCTURE REGISTER/);
 });

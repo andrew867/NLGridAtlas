@@ -12,7 +12,8 @@ test("1970 demand retains only the printed peak", () => {
 });
 
 test("Holyrood separates installation, commissioning and later equipment states", () => {
-  assert.match(components["hrd-summary"].summary, /Unit 1 was commissioned in 1970 and Unit 2 in 1971/);
+  assert.equal(components["hrd-summary"].status, "unresolved");
+  assert.match(components["hrd-summary"].summary, /Published Hydro records conflict on Stage I commissioning/);
   assert.match(JSON.stringify(components["hrd-summary"]), /Unit 1 and Unit 2 GE generators installed in 1970/);
   assert.match(JSON.stringify(components["hrd-t2"]), /Original T2.*170 MVA.*installed in 1970/);
   assert.match(JSON.stringify(components["hrd-t3"]), /installed in the T1 position in 1970/);

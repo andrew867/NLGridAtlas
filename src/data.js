@@ -520,6 +520,96 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1969-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1969", "Newfoundland Power peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "nlh-1969-holyrood-unit1",
+    year: 2022,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Holyrood Unit 1 Root Cause Investigation Report",
+    topics: ["1969", "Holyrood", "Unit 1", "commissioning", "150 MW", "175 MW"],
+    pages: "physical PDF p. 8",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/other/From%20NLH%20-%20Holyrood%20Thermal%20Generating%20Station%20Unit%201%20-%20Root%20Cause%20Investigation%20Report%20-%202022-03-04.PDF"
+  },
+  {
+    id: "nlh-1969-holyrood-commissioning-conflict",
+    year: 2017,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-NLH-150 Attachment, Holyrood Unit Commissioning History",
+    topics: ["1969", "1970", "1971", "Holyrood", "Unit 1", "Unit 2", "commissioning", "date conflict"],
+    pages: "physical PDF p. 66",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/rfi/IC-NLH-150.PDF"
+  },
+  {
+    id: "nlh-1969-holyrood-blackstart",
+    year: 2016,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 13(2016), Holyrood Black-Start Facilities",
+    topics: ["1969", "Holyrood", "black start", "gas turbine", "15 MW"],
+    pages: "physical PDF p. 23",
+    status: "reported",
+    url: "http://www.pub.nl.ca/PU/orders/2016/PU13-2016.pdf"
+  },
+  {
+    id: "nlh-1969-holyrood-t5",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Holyrood Condition Assessment and Life Extension Study, Transformer T5",
+    topics: ["1969", "Holyrood", "T5", "Westinghouse", "230 kV", "69 kV", "transformer"],
+    pages: "physical PDF p. 547",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/reports/AMEC-Report-Jan28-11.pdf"
+  },
+  {
+    id: "nlh-1969-holyrood-marine-terminal",
+    year: 2024,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2025 Capital Budget Application, Holyrood Marine Terminal",
+    topics: ["1969", "Holyrood", "marine terminal", "fuel oil"],
+    pages: "physical PDF p. 1104",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2025Capital/app/From%20NLH%20-%202025%20Capital%20Budget%20Application%20-%202024-08-22%20-%20CORRECTED.PDF"
+  },
+  {
+    id: "nlh-1969-bde-stage2",
+    year: 2008,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2009 Capital Budget Application, Bay d'Espoir Stage II",
+    topics: ["1969", "Bay d'Espoir", "Stage II", "Unit 5", "Unit 6", "commissioning"],
+    pages: "physical PDF p. 97",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NLH2009Capital/files/application/NLH2009ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1969-assigned-assets",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-NLH-097 Revision 1, Riverhead, Trepassey, TL213, TL215 and Stony Brook Assigned Assets",
+    topics: ["1969", "Riverhead", "Trepassey", "TL213", "TL215", "Stony Brook", "assigned assets"],
+    pages: "physical PDF pp. 14 to 15",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA-Amended/files/rfi/IC-NLH-097%20Rev%201.PDF"
+  },
+  {
+    id: "np-1969-salt-pond-turbine",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2014 Thermal Generation Refurbishment, Salt Pond Gas Turbine",
+    topics: ["1969", "Salt Pond", "Wesleyville", "gas turbine", "AEI", "Rolls-Royce AVON"],
+    pages: "physical PDF p. 10",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ThermalGenerationRefurb/application/Application-2014-04-16.pdf"
+  },
+  {
     id: "nlh-1970-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8828,6 +8918,25 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1969-system-record",
+    scope: "1969 demand, generation commissioning, Holyrood equipment and facilities, transmission construction, station construction and dated assigned assets",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1969-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "nlh-1969-holyrood-unit1", pages: "physical PDF p. 8" },
+      { sourceId: "nlh-1969-holyrood-commissioning-conflict", pages: "physical PDF p. 66" },
+      { sourceId: "nlh-1969-holyrood-blackstart", pages: "physical PDF p. 23" },
+      { sourceId: "nlh-1969-holyrood-t5", pages: "physical PDF p. 547" },
+      { sourceId: "nlh-2022-holyrood-condition", pages: "physical PDF p. 91" },
+      { sourceId: "nlh-1969-holyrood-marine-terminal", pages: "physical PDF p. 1104" },
+      { sourceId: "nlh-1969-bde-stage2", pages: "physical PDF p. 97" },
+      { sourceId: "np-2025-summerville", pages: "physical PDF p. 390" },
+      { sourceId: "np-2026-95l", pages: "physical PDF pp. 192 and 477" },
+      { sourceId: "nlh-1969-assigned-assets", pages: "physical PDF pp. 14 to 15" },
+      { sourceId: "np-1969-salt-pond-turbine", pages: "physical PDF p. 10" }
+    ]
+  },
+  {
     id: "np-1970-system-record",
     scope: "1970 demand, generation commissioning and equipment, terminal and transmission construction, dated transformer assets and plant communications",
     status: "reported",
@@ -9287,6 +9396,78 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "1969",
+    category: "load",
+    title: "Newfoundland Power peak demand was 188.8 MW",
+    body: "The historical table does not print Hydro or Island transmission peak demand for 1969.",
+    sourceId: "nlh-1969-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1969",
+    category: "generation",
+    title: "Bay d'Espoir Stage II Units 5 and 6 were commissioned",
+    body: "The 2009 capital filing dates both Stage II units to 1969.",
+    sourceId: "nlh-1969-bde-stage2",
+    pages: "physical PDF p. 97",
+    status: "reported"
+  },
+  {
+    date: "1969 to 1971",
+    category: "generation",
+    title: "Holyrood Stage I commissioning dates conflict",
+    body: "The 2022 Unit 1 investigation dates Unit 1 to 1969. A report filed in 2017 dates Unit 1 to late 1969 and Unit 2 to early 1970. Other capital records date Unit 1 to 1970, Unit 2 to 1971, or the complete Stage I to 1971.",
+    sourceId: "nlh-1969-holyrood-unit1",
+    pages: "physical PDF p. 8; compare IC-NLH-150 physical PDF p. 66, 2014 Capital physical PDF p. 69 and 2011 Capital physical PDF p. 910",
+    status: "unresolved"
+  },
+  {
+    date: "1969",
+    category: "equipment",
+    title: "Holyrood service transformers and T5 entered service",
+    body: "UST-1, UST-2 and SST-12 were installed in 1969. The Westinghouse T5 record gives 15/20/25 MVA and 230/69 kV.",
+    sourceId: "nlh-2022-holyrood-condition",
+    pages: "physical PDF p. 91; compare 2011 condition assessment physical PDF p. 547",
+    status: "reported"
+  },
+  {
+    date: "1969",
+    category: "generation",
+    title: "Holyrood black-start turbine and marine terminal entered service",
+    body: "Hydro maintained a 15 MW gas turbine at Holyrood for black start from 1969. The marine terminal was also initially constructed in 1969.",
+    sourceId: "nlh-1969-holyrood-blackstart",
+    pages: "physical PDF p. 23; compare 2025 Capital physical PDF p. 1104",
+    status: "reported"
+  },
+  {
+    date: "1969",
+    category: "network",
+    title: "Summerville, 94L and TL215 entered service",
+    body: "Summerville was constructed as a distribution substation. The 66 kV 94L corridor connected Blaketown and Riverhead, and Hydro records 1969 as the year built for TL215 from Doyles to Grand Bay.",
+    sourceId: "np-2025-summerville",
+    pages: "physical PDF p. 390; compare 2026 Capital physical PDF p. 192 and IC-NLH-097 Revision 1 physical PDF p. 15",
+    status: "reported"
+  },
+  {
+    date: "1969",
+    category: "equipment",
+    title: "Riverhead and Trepassey assets carry 1969 dates",
+    body: "The assigned-asset register dates Riverhead transformer and terminal equipment, Trepassey transformer and terminal equipment, and Stony Brook's estimated in-service date to 1969. It explicitly leaves the Riverhead and Trepassey station in-service dates and TL213 year built unknown.",
+    sourceId: "nlh-1969-assigned-assets",
+    pages: "physical PDF pp. 14 to 15",
+    status: "unresolved"
+  },
+  {
+    date: "1969",
+    category: "generation",
+    title: "Salt Pond gas turbine was installed",
+    body: "The AEI and Rolls-Royce AVON unit was installed at Salt Pond in 1969 and later relocated to Wesleyville.",
+    sourceId: "np-1969-salt-pond-turbine",
+    pages: "physical PDF p. 10",
+    status: "reported"
+  },
+  {
     date: "1970",
     category: "load",
     title: "Newfoundland Power peak demand was 223.7 MW",
@@ -9298,11 +9479,11 @@ export const timeline = [
   {
     date: "1970",
     category: "generation",
-    title: "Holyrood Unit 1 was commissioned",
-    body: "Unit 1 was commissioned at its original 150 MW design output. The Unit 1 and Unit 2 GE generators were installed in 1970; each is rated 175 MVA at 16 kV in the 2022 condition study.",
+    title: "One capital record dates Holyrood Unit 1 to 1970",
+    body: "The record gives Unit 1's original output as 150 MW. The Unit 1 and Unit 2 GE generators were installed in 1970; each is rated 175 MVA at 16 kV in the 2022 condition study. Other Hydro records give different Stage I commissioning dates.",
     sourceId: "nlh-1970-holyrood-units",
     pages: "physical PDF p. 69; compare 2022 condition study physical PDF pp. 55 and 62",
-    status: "reported"
+    status: "unresolved"
   },
   {
     date: "1970",
@@ -9352,11 +9533,11 @@ export const timeline = [
   {
     date: "1971",
     category: "generation",
-    title: "Holyrood Stage I entered service",
-    body: "Stage I brought Units 1 and 2 on line at 150 MW each.",
+    title: "One capital record dates Holyrood Stage I to 1971",
+    body: "The record states that Stage I brought Units 1 and 2 on line at 150 MW each. Other Hydro records date Unit 1 to 1969, late 1969, or 1970 and Unit 2 to early 1970 or 1971.",
     sourceId: "nlh-1971-holyrood-stage1",
     pages: "physical PDF p. 910",
-    status: "reported"
+    status: "unresolved"
   },
   {
     date: "1971",
@@ -12795,10 +12976,10 @@ export const components = {
     sources: [sourceRef("nlh-2014-western-avalon-operating", "physical PDF p. 341")]
   },
   "hrd-summary": {
-    diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
-    summary: "Holyrood Unit 1 was commissioned in 1970 and Unit 2 in 1971; both were originally designed for 150 MW. Revision 19 of drawing A0-1403-500-E-001, dated March 16, 2015, is the latest published whole-plant as-built arrangement located. It links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. Later records establish component replacements and operating changes without publishing a newer complete one-line.",
-    data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["Unit commissioning", "Unit 1 in 1970; Unit 2 in 1971; original design output 150 MW each"], ["Original generators", "Unit 1 and Unit 2 GE generators installed in 1970; 175 MVA, 16 kV in the 2022 condition study"], ["Terminal construction stages", "Stage 1 in 1965; Stage 2 in 1975; Stage 3 in 1982"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["1988 Unit 1 uprate", "150 MW to 175 MW"], ["1988 T4 spare position", "former T2 transformer; 115/152/190 MVA, 230/16 kV"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["1970 paging system", "Primary plant emergency-protocol communications; replaced after poor coverage and sound quality were reported"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"], ["2025 terminal work", "T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced"]],
-    sources: [sourceRef("nlh-1970-holyrood-units", "physical PDF p. 69"), sourceRef("nlh-1970-holyrood-generators", "physical PDF pp. 55 and 62"), sourceRef("nlh-1970-holyrood-paging", "physical PDF pp. 13 to 14"), sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1975-holyrood-stage2", "physical PDF p. 334"), sourceRef("nlh-1988-holyrood-unit1", "physical PDF p. 5"), sourceRef("nlh-1988-holyrood-t4", "physical PDF p. 229"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
+    diagram: "hrd", status: "unresolved", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
+    summary: "Published Hydro records conflict on Stage I commissioning. The 2022 Unit 1 investigation dates Unit 1 to 1969, while a report filed in 2017 dates Unit 1 to late 1969 and Unit 2 to early 1970. Separate capital records date Unit 1 to 1970, Unit 2 to 1971, or the complete Stage I to 1971. Both units were originally rated 150 MW. Revision 19 of drawing A0-1403-500-E-001, dated March 16, 2015, is the latest published whole-plant as-built arrangement located. It links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus.",
+    data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["Unit commissioning", "Conflicting records: Unit 1 in 1969, late 1969, or 1970; Unit 2 in early 1970 or 1971; complete Stage I in 1971"], ["Original unit rating", "150 MW each"], ["Original generators", "Unit 1 and Unit 2 GE generators installed in 1970; 175 MVA, 16 kV in the 2022 condition study"], ["Terminal construction stages", "Stage 1 in 1965; Stage 2 in 1975; Stage 3 in 1982"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["1988 Unit 1 uprate", "150 MW to 175 MW"], ["1988 T4 spare position", "former T2 transformer; 115/152/190 MVA, 230/16 kV"], ["1969 unit service", "UST-1 and UST-2; Federal Pioneer; 10 MVA each; 16 kV/4.16-2.4 kV; star-delta; ONAN"], ["1969 station service", "SST-12; Federal Pioneer; 10.5/14 MVA; 69 kV/4.16-2.4 kV; star-delta; ONAN/ONAF"], ["Later service transformers", "UST-3, 10 MVA; SST-34, 10.5/14 MVA"], ["1969 black start", "15 MW Holyrood gas turbine"], ["1969 marine terminal", "Initial construction"], ["1970 paging system", "Primary plant emergency-protocol communications; replaced after poor coverage and sound quality were reported"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"], ["2025 terminal work", "T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced"]],
+    sources: [sourceRef("nlh-1969-holyrood-unit1", "physical PDF p. 8"), sourceRef("nlh-1969-holyrood-commissioning-conflict", "physical PDF p. 66"), sourceRef("nlh-1969-holyrood-blackstart", "physical PDF p. 23"), sourceRef("nlh-1969-holyrood-marine-terminal", "physical PDF p. 1104"), sourceRef("nlh-1970-holyrood-units", "physical PDF p. 69"), sourceRef("nlh-1971-holyrood-stage1", "physical PDF p. 910"), sourceRef("nlh-1970-holyrood-generators", "physical PDF pp. 55 and 62"), sourceRef("nlh-1970-holyrood-paging", "physical PDF pp. 13 to 14"), sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1975-holyrood-stage2", "physical PDF p. 334"), sourceRef("nlh-1988-holyrood-unit1", "physical PDF p. 5"), sourceRef("nlh-1988-holyrood-t4", "physical PDF p. 229"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
   },
   "hrd-breaker-program": {
     diagram: "hrd", status: "reported", code: "HRD / 230 kV BREAKERS", title: "Holyrood 230 kV breaker replacement program",
@@ -12862,9 +13043,9 @@ export const components = {
   },
   "hrd-t5": {
     diagram: "hrd", status: "verified", code: "HRD / T5", title: "Holyrood transformer T5",
-    summary: "T5 connects the 230 kV and 66 kV buses.",
-    data: [["Voltage", "230/69 kV equipment record"], ["Rating", "15/20/25 MVA"], ["2026 model", "25 MVA maximum"]],
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF p. 63"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+    summary: "The Westinghouse T5 was installed in 1969. Its equipment record gives 15/20/25 MVA and 230/69 kV; the station one-line and current model place it between the 230 kV and 66 kV buses.",
+    data: [["Manufacturer", "Westinghouse"], ["Installed", "1969"], ["Voltage", "230/69 kV equipment record"], ["Rating", "15/20/25 MVA"], ["Bus connection", "230 kV to 66 kV in the station one-line and model"], ["2026 model", "25 MVA maximum"]],
+    sources: [sourceRef("nlh-1969-holyrood-t5", "physical PDF p. 547"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF p. 63"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
   "hrd-t10": {
     diagram: "hrd", status: "verified", code: "HRD / T10", title: "Holyrood transformer T10",
@@ -13430,6 +13611,15 @@ export const islandTerminalRecords = [
     status: "reported",
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
+      {
+        label: "1969 STAGE II UNITS 5 AND 6",
+        sourceId: "nlh-1969-bde-stage2",
+        pages: "physical PDF p. 97",
+        facts: [
+          ["Commissioning", "Units 5 and 6 commissioned in 1969"],
+          ["Stator winding", "solid copper-bar design"]
+        ]
+      },
       {
         label: "1970 STAGE II SURGE TANK 3",
         sourceId: "nlh-1970-bde-surge-tank",
