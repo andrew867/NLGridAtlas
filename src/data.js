@@ -894,7 +894,7 @@ export const sources = [
     year: 2013,
     organization: "Newfoundland Power",
     title: "PUB-NP-163, Q4 2013 Quarterly Regulatory Report",
-    topics: ["Glendale", "GDL-T3", "transformer addition", "capital completion", "quarterly report"],
+    topics: ["Glendale", "GDL-T3", "New Chelsea", "Pitmans Pond", "110L", "Glenwood", "St. Catherines", "Stephenville", "capital completion", "quarterly report"],
     pages: "physical PDF p. 787; attachment p. 76",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-163.pdf"
@@ -904,7 +904,7 @@ export const sources = [
     year: 2013,
     organization: "Newfoundland Power",
     title: "PUB-NP-163 Attachment N, Q3 2013 Quarterly Regulatory Report",
-    topics: ["Twillingate", "Glenwood", "substation modernization", "capital completion", "quarterly report"],
+    topics: ["Twillingate", "Glenwood", "12L", "110L", "substation modernization", "transmission rebuild", "capital completion", "quarterly report"],
     pages: "physical PDF p. 767; attachment p. 56",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-163.pdf"
@@ -928,6 +928,56 @@ export const sources = [
     pages: "physical PDF pp. 275 to 277",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2013-transmission-rebuild",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, Transmission Line Rebuild",
+    topics: ["110L", "12L", "Clarenville", "Lockston", "Lethbridge", "Summerville", "Bonavista Peninsula", "66 kV", "transmission rebuild", "477 ASC"],
+    pages: "physical PDF pp. 285 to 292",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2013-substation-modernization",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, Substation Refurbishment and Modernization",
+    topics: ["St. Catherines", "Stephenville", "Glenwood", "Twillingate", "Kenmount", "Portable Substation P4", "substation modernization"],
+    pages: "physical PDF pp. 265 to 280",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2013-feeder-growth",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, Feeder Additions for Load Growth",
+    topics: ["Glendale", "St. John's Main", "Kelligrews", "GDL", "SJM-07", "KEL-02", "distribution feeder", "voltage regulator"],
+    pages: "physical PDF pp. 312 to 315",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2013-mobile-radio",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, Mobile Radio System Replacement",
+    topics: ["VHF", "mobile radio", "repeater", "System Control Centre", "Bell Aliant", "VoIP", "PassPort", "operational communications"],
+    pages: "physical PDF pp. 394 to 402",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2017-mobile-radio-completion",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Plan, Telecommunications Expenditure History",
+    topics: ["mobile radio", "VHF", "2014 replacement", "telecommunications expenditure"],
+    pages: "physical PDF p. 141",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
     id: "np-2006-trinity-control",
@@ -5674,6 +5724,15 @@ export const staticClaims = [
     sources: [{ sourceId: "vhf-2004", pages: "physical PDF pp. 193 to 195, 251, 258 and 265" }]
   },
   {
+    id: "np-2014-mobile-radio",
+    scope: "Newfoundland Power VHF inventory, operating-area topology and 2014 replacement",
+    status: "verified",
+    sources: [
+      { sourceId: "np-2013-mobile-radio", pages: "physical PDF pp. 394 to 402" },
+      { sourceId: "np-2017-mobile-radio-completion", pages: "physical PDF p. 141" }
+    ]
+  },
+  {
     id: "vhf-replacement-record",
     scope: "2004 VHF replacement design, revised site count, later P25 scope and reported installation status",
     status: "reported",
@@ -5786,12 +5845,39 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "2013-10",
+    category: "station",
+    title: "Final original 110L section rebuilt",
+    body: "Newfoundland Power reported the 110L work complete in October. The filed project replaced the remaining 21.1 km section between Lethbridge and Summerville, including 227 original structures and 1/0 ACSR conductor, with 477 ASC construction.",
+    sourceId: "np-2013-q3-report",
+    pages: "physical PDF p. 767; attachment p. 56",
+    status: "verified"
+  },
+  {
+    date: "2013",
+    category: "station",
+    title: "New Chelsea and Pitmans Pond turbines replaced",
+    body: "The fourth-quarter report records both plant refurbishments complete. It reports a combined annual production increase of approximately 1.7 GWh from the two more efficient turbine runners.",
+    sourceId: "np-2013-q4-report",
+    pages: "physical PDF p. 787; attachment p. 76",
+    status: "verified"
+  },
+  {
     date: "2013 to 2014",
     category: "station",
     title: "12L rebuilt between Memorial and King's Bridge",
     body: "Newfoundland Power reported that the 66 kV line rebuild was complete. The associated work replaced six bundled three-phase aerial cables with one open-wire feeder and prepared distribution equipment for 12.5 kV conversion.",
     sourceId: "np-2016-12l-completion",
     pages: "physical PDF pp. 480 and 485",
+    status: "verified"
+  },
+  {
+    date: "2014",
+    category: "telecom",
+    title: "Newfoundland Power replaced its mobile radio system",
+    body: "The later capital plan records the mobile radio replacement in 2014 at approximately $838,000. The selected 2012 design moved Newfoundland Power from its own 24-site VHF network to Bell's shared PassPort system.",
+    sourceId: "np-2017-mobile-radio-completion",
+    pages: "physical PDF p. 141",
     status: "verified"
   },
   {
@@ -7490,6 +7576,26 @@ export const islandTerminalRecords = [
     },
     historyRecords: [
       {
+        label: "2013 COMPLETED NEWFOUNDLAND POWER REFURBISHMENT",
+        sourceId: "np-2013-q4-report",
+        pages: "physical PDF p. 787; attachment p. 76",
+        facts: [
+          ["Completion", "Newfoundland Power reported the Stephenville Substation refurbishment complete in the fourth quarter of 2013"]
+        ]
+      },
+      {
+        label: "2013 FILED NEWFOUNDLAND POWER REFURBISHMENT",
+        sourceId: "np-2013-substation-modernization",
+        pages: "physical PDF pp. 270 to 272",
+        facts: [
+          ["Station record", "built in 1976 as a 66 kV transmission substation; 401L to Gallants, 405L to Harmon, and 407L to Stephenville Crossing"],
+          ["Customer reach", "the filing states that the station indirectly supplied approximately 5,569 customers"],
+          ["Switching", "replace the deteriorated 401L-DB disconnect switch"],
+          ["Potential transformers", "add one 66 kV potential-transformer set on the Newfoundland Power bus and one fuse-protected potential transformer on 407L for synchronizing"],
+          ["Protection and communications", "replace the 1976 electromechanical line and bus relays with microprocessor relays, add communications equipment, and extend the ground grid"]
+        ]
+      },
+      {
         label: "2020 EXISTING EQUIPMENT AND PROPOSED FINAL ARRANGEMENT",
         sourceId: "nlh-bbk-stv-2021",
         pages: "physical PDF pp. 509 and 521 to 522",
@@ -8602,6 +8708,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2013 PROPOSED KEL-02 VOLTAGE REGULATION",
+        sourceId: "np-2013-feeder-growth",
+        pages: "physical PDF pp. 314 to 315",
+        facts: [
+          ["Filed branch", "approximately 10 km of three-phase, 12.47 kV line along Incinerator Road"],
+          ["Filed equipment", "three voltage regulators and a supporting pole structure"],
+          ["Filed cost", "$73,000"]
+        ]
+      },
       {
         label: "2008 TO 2009 COMPLETED STATION WORK",
         sourceId: "np-2027-pub-np-005",
@@ -14650,6 +14766,16 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2013 COMPLETED 110L REBUILD",
+        sourceId: "np-2013-q4-report",
+        pages: "physical PDF p. 787; attachment p. 76",
+        facts: [
+          ["Filed final section", "21.1 km between Lethbridge and Summerville; 227 original structures; 1/0 ACSR replaced by 477 ASC"],
+          ["Condition", "corrosion had reduced the physical strength and electrical capacity; the section had been derated to about one-half of its original current capacity"],
+          ["Completion", "the fourth-quarter report states that all Bonavista Peninsula transmission-line rebuilds were complete after approximately $11.0 million spent since 2006"]
+        ]
+      },
+      {
         label: "2025 TO 2026 FILED MODERNIZATION SCOPE",
         sourceId: "np-2025-lockston",
         pages: "physical PDF pp. 418 to 426",
@@ -14715,6 +14841,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2013 COMPLETED 110L SECTION",
+        sourceId: "np-2013-q4-report",
+        pages: "physical PDF p. 787; attachment p. 76",
+        facts: [
+          ["Historic designation", "the 2012 filing identified the Lethbridge to Summerville section as the final 21.1 km of original 110L construction"],
+          ["Construction", "227 structures; original 1/0 ACSR replaced by 477 ASC"],
+          ["Completion", "the Bonavista Peninsula transmission-line rebuild program was reported complete in 2013"]
+        ]
+      },
+      {
         label: "2025 TO 2026 FILED MODERNIZATION SCOPE",
         sourceId: "np-2025-summerville",
         pages: "physical PDF pp. 392 to 399",
@@ -14733,6 +14869,15 @@ export const stationProfiles = [
         facts: [
           ["Project status", "early construction had begun, including foundation work at Summerville"]
         ]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "2013 filed final 110L rebuild route",
+        image: "./reference-maps/110l-2013-route.png",
+        alt: "Filed route drawing for the final original 110L section between Lethbridge and Summerville",
+        sourceId: "np-2013-transmission-rebuild",
+        pages: "physical PDF p. 291"
       }
     ]
   },
@@ -14779,6 +14924,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2013 COMPLETED 110L SECTION",
+        sourceId: "np-2013-q4-report",
+        pages: "physical PDF p. 787; attachment p. 76",
+        facts: [
+          ["Historic designation", "the 2012 filing identified the Lethbridge to Summerville section as the final 21.1 km of original 110L construction"],
+          ["Construction", "227 structures; original 1/0 ACSR replaced by 477 ASC"],
+          ["Completion", "the Bonavista Peninsula transmission-line rebuild program was reported complete in 2013"]
+        ]
+      },
+      {
         label: "2015 FILED TRANSFORMER REPLACEMENT",
         sourceId: "np-2015-lethbridge",
         pages: "physical PDF pp. 452 to 456",
@@ -14788,6 +14943,15 @@ export const stationProfiles = [
           ["Rejected feeder-transfer alternative", "extend MIL-02 and transfer 2.0 MVA from LET-01"],
           ["Former transformer plan", "move the 6.7 MVA unit to Doyles Substation in 2016"]
         ]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "2013 filed final 110L rebuild route",
+        image: "./reference-maps/110l-2013-route.png",
+        alt: "Filed route drawing for the final original 110L section between Lethbridge and Summerville",
+        sourceId: "np-2013-transmission-rebuild",
+        pages: "physical PDF p. 291"
       }
     ]
   },
@@ -16010,6 +16174,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2013 PROPOSED ACCESS AND FLOOD MITIGATION",
+        sourceId: "np-2013-substation-modernization",
+        pages: "physical PDF pp. 277 to 279",
+        facts: [
+          ["Station record", "built in 1975 with two 25 MVA, 66/25 kV transformers and four 25 kV feeders"],
+          ["Customer reach", "the filing states that the station supplied approximately 7,184 customers"],
+          ["Transmission circuits", "54L to Hardwoods, 69L to Stamp's Lane, and 35L to Oxen Pond"],
+          ["Access constraint", "the existing access-road culvert had a 1.82 square metre opening; the downstream City of St. John's box culvert had a 14 square metre opening"],
+          ["Filed work", "construct a west-side access road with a larger culvert and a berm to reduce flood exposure"]
+        ]
+      },
+      {
         label: "2008 TO 2012 KEN-04 RELIABILITY REVIEW",
         sourceId: "np-2014-reliability-review",
         pages: "physical PDF pp. 336 and 341",
@@ -16706,6 +16882,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2013 PROPOSED FEEDER ADDITIONS",
+        sourceId: "np-2013-feeder-growth",
+        pages: "physical PDF p. 312",
+        facts: [
+          ["Filed work", "construct two new feeders from Glendale Substation"],
+          ["Transfer purpose", "transfer load from the Goulds and Hardwoods systems to Glendale"],
+          ["Filed cost", "$451,000"]
+        ]
+      },
+      {
         label: "2014 FILED 18L REBUILD",
         sourceId: "np-2014-transmission-lines",
         pages: "physical PDF pp. 310 to 311",
@@ -16803,6 +16989,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2013 PROPOSED FEEDER AND DUCTBANK WORK",
+        sourceId: "np-2013-feeder-growth",
+        pages: "physical PDF pp. 313 to 315",
+        facts: [
+          ["Aerial feeders", "construct a double-circuit aerial distribution line for the project's aerial feeders 3 and 4"],
+          ["Underground relocation", "relocate SJM-07 between Hutchings Street and Beck's Cove into new ductbanks on the south side of Water Street and along Harbour Drive"],
+          ["Filed cable", "three 1,100 m single-phase 500 MCM XLPE cables"],
+          ["Filed costs", "$252,000 for the aerial work and $428,000 for the underground work; $680,000 combined"]
+        ]
+      },
       {
         label: "2014 FILED 13L REBUILD",
         sourceId: "np-2014-transmission-lines",
@@ -18368,6 +18565,16 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "Q4 2013 COMPLETION",
+        sourceId: "np-2013-q4-report",
+        pages: "physical PDF p. 787; attachment p. 76",
+        facts: [
+          ["Completed work", "Newfoundland Power reported the New Chelsea and Pitmans Pond hydro-plant refurbishments complete"],
+          ["Turbines", "both turbine runners were replaced with more efficient models"],
+          ["Combined production increase", "approximately 1.7 GWh annually for the two plants"]
+        ]
+      },
+      {
         label: "2013 FILED LINE LOADING",
         sourceId: "np-2013-line-loading",
         pages: "physical PDF p. 3; attachment p. 5",
@@ -18487,6 +18694,16 @@ export const stationProfiles = [
         facts: [
           ["Installed work", "runner, protection and control panels, switchgear, gate positioner, heating and ventilation equipment, and plant electrical wiring"],
           ["Later model update", "installed capacity increased from 640 kW to 700 kW and peak unit efficiency from 0.71 to 0.73 in the 2020 review"]
+        ]
+      },
+      {
+        label: "Q4 2013 COMPLETION",
+        sourceId: "np-2013-q4-report",
+        pages: "physical PDF p. 787; attachment p. 76",
+        facts: [
+          ["Completed work", "Newfoundland Power reported the Pitmans Pond and New Chelsea hydro-plant refurbishments complete"],
+          ["Turbines", "both turbine runners were replaced with more efficient models"],
+          ["Combined production increase", "approximately 1.7 GWh annually for the two plants"]
         ]
       },
       {
@@ -20171,6 +20388,24 @@ export const stationProfiles = [
         facts: [
           ["Recorded work", "voltage regulator replaced in 2005; site improved in 2006; heat tracing replaced in 2008; petro plug added in 2009"]
         ]
+      },
+      {
+        label: "2013 FILED REFURBISHMENT",
+        sourceId: "np-2013-substation-modernization",
+        pages: "physical PDF pp. 266 to 268",
+        facts: [
+          ["Filed equipment", "SCT-T1 at 5 MVA, 66/25 kV and SCT-T2 at 4 MVA, 25/12.5 kV; approximately 924 customers on one feeder at each distribution voltage"],
+          ["Transformer work", "refurbish both transformers; replace temperature gauges, gas-detection relays and silicon-carbide arresters; replace SCT-T2 oil reported above 50 ppm PCB"],
+          ["Metering and protection", "install potential and current transformers for load metering and relay signals"],
+          ["Feeders", "replace the two hydraulic reclosers with remotely controlled Nulec units"],
+          ["Site", "add varmint protection and extend the ground grid"]
+        ]
+      },
+      {
+        label: "Q4 2013 REPORTED COMPLETION",
+        sourceId: "np-2013-q4-report",
+        pages: "physical PDF p. 787; attachment p. 76",
+        facts: [["Project status", "Newfoundland Power reported the St. Catherines substation refurbishment complete"]]
       },
       {
         label: "2014 FEEDER CAPACITY RECORD",

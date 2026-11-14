@@ -874,6 +874,18 @@
       "notes": "The station records now include the filed 13L, 18L, former 35L, and 68L rebuilds plus all five route sheets. The later King's Bridge filing confirms 12L completion in 2014. Heart's Content and La Manche retain proposed technical scope and separate later expenditure records because no asset-level commissioning record was located. The five highest 2008 to 2012 feeder reliability rows and the explicit no-project decision are preserved."
     },
     {
+      "id": "NPREG-015",
+      "title": "Reconcile Newfoundland Power 2013 transmission, station, feeder, hydro, and radio records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2013 capital application, 110L rebuild, station modernization, feeder additions, hydro-runner work, mobile-radio replacement, and later completion evidence.",
+      "dependencies": ["NPREG-014"],
+      "completion_evidence": ["research/NP_2013_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "index.html", "public/reference-maps/110l-2013-route.png", "public/reference-maps/np-vhf-2012-sites.png", "tests/np-2013-capital.test.js"],
+      "blocker": null,
+      "notes": "The station records now include the final original 110L section, St. Catherines and Stephenville filed refurbishment plus completion, Kenmount flood mitigation, and the Glendale, St. John's Main, and KEL-02 feeder projects. The radio section separates Newfoundland Power's 24-site network and Bell PassPort replacement from Hydro's radio systems. Filed projects without asset-specific completion evidence remain proposed."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

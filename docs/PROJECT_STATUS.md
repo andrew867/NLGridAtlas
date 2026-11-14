@@ -15,6 +15,11 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 2013 final original 110L rebuild record, including the 21.1 km Lethbridge to Summerville section, 227 original structures, 1/0 ACSR replacement by 477 ASC, derating basis, October completion report, and filed route drawing.
+- Added the filed St. Catherines and Stephenville modernization work and the separate fourth-quarter completion report. Added Kenmount's filed access-road, culvert, and flood-berm work as proposed because the reviewed reports do not identify its completion.
+- Added the filed Glendale feeder additions, St. John's Main aerial-feeder and SJM-07 ductbank work, and KEL-02 voltage regulators. These remain proposed because the reviewed reports do not provide asset-specific completion records.
+- Added Newfoundland Power's separate early-1980s VHF network, including nine operating areas, 24 repeater sites, radio counts, System Control and VoIP interconnection, the selected Bell PassPort replacement, and the later report that replacement occurred in 2014 at approximately $838,000.
+- Added the completed New Chelsea and Pitmans Pond runner replacements. The source reports a combined annual production increase of approximately 1.7 GWh and does not split the value by plant.
 - Added the 2014 filed 13L, 18L, former 35L, and 68L rebuild records with original route sheets, structure counts, remaining original lengths, conductor details, and filed costs. Added the 12L route sheet and the later explicit record that its rebuild was completed in 2014.
 - Added the filed Heart's Content generator, governor-control, protection, switchgear, cable, battery, and penstock work. Added the later actual and forecast expenditure without treating the financial table as a commissioning record.
 - Added the filed La Manche Canal capacity increase to Rocky Pond and Tors Cove. The record preserves the 6 m3/s and 9 m3/s capacities, 5.54 GWh annual production increase, shared water path, and later expenditure report without claiming completion.
@@ -222,7 +227,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the Newfoundland Power 2014 capital and system records, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the Newfoundland Power 2012 capital and system records, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
