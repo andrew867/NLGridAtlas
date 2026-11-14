@@ -390,6 +390,126 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
   },
   {
+    id: "np-1991-reliability-capital",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "CA-NP-004 Attachment A, Reliability and Capital Expenditure 1990 to 2019",
+    topics: ["1991", "SAIDI", "SAIFI", "capital expenditure"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/rfis/CA-NP-004.PDF"
+  },
+  {
+    id: "np-1991-operating-summary",
+    year: 1998,
+    organization: "Newfoundland Power",
+    title: "1998 Annual Report, Ten Year Summary",
+    topics: ["1991", "purchased energy", "generation", "peak demand", "sales", "customers"],
+    pages: "physical PDF p. 29",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213C.pdf"
+  },
+  {
+    id: "nlh-1991-island-load",
+    year: 2001,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2001 General Rate Application, 1991 Forecast and Actual Total Island Requirements",
+    topics: ["1991", "Island Interconnected System", "peak", "energy", "forecast", "actual"],
+    pages: "physical PDF p. 235",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/July9/Hydro/preTest/May%202001%20Prefiled%20Testimony%20-%20Entire%20Document.pdf"
+  },
+  {
+    id: "nlh-1991-tl217-upgrade",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Muskrat Falls Project Exhibit 85, TL217 Ice-Loading History",
+    topics: ["1991", "TL217", "Hawke Hill", "Brigus Junction", "glaze ice", "mid-span structures", "dead-end towers"],
+    pages: "physical PDF p. 54",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit85.pdf"
+  },
+  {
+    id: "nlh-1991-bde-unit3",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Bay d'Espoir Powerhouse 1 Generator Condition Assessment",
+    topics: ["1991", "Bay d'Espoir", "Unit 3", "stator wedges"],
+    pages: "physical PDF p. 52",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012Application-VolumeI-Report1-AppendixA.pdf"
+  },
+  {
+    id: "nlh-1991-bde-unit7",
+    year: 2025,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-003, Bay d'Espoir Unit 7 Historical Investments",
+    topics: ["1991", "Bay d'Espoir", "Unit 7", "synchronous condenser", "blower"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2025LifeExtensionUnit7/responses/PUB-NLH-003.PDF"
+  },
+  {
+    id: "np-1991-pierre-brook-surge",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Pierre's Brook Surge Tank Inspection",
+    topics: ["1991", "Pierre's Brook", "surge tank", "anchor block", "tee"],
+    pages: "physical PDF p. 298",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-1991-west-brook-electrical",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, West Brook Facility Rehabilitation",
+    topics: ["1991", "West Brook", "battery bank", "battery charger"],
+    pages: "physical PDF p. 182",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "nlh-1991-holyrood-boiler",
+    year: 1998,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Holyrood Unit 2 Plant Condition Assessment",
+    topics: ["1991", "Holyrood", "Unit 2", "breeching", "boiler", "175 MW"],
+    pages: "physical PDF p. 245",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/rfi/PUB-174.pdf"
+  },
+  {
+    id: "nlh-1991-holyrood-draft-motors",
+    year: 2012,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2013 Capital Budget Application, Holyrood Forced-Draft Fan Drives",
+    topics: ["1991", "Holyrood", "Units 1 and 2", "forced-draft motors"],
+    pages: "physical PDF p. 735",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013Capital/files/application/NLH2013ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1991-holyrood-gt-overhaul",
+    year: 2013,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Holyrood Blackstart Analysis, Gas-Turbine Overhaul History",
+    topics: ["1991", "Holyrood", "gas turbine", "black start", "overhaul"],
+    pages: "physical PDF p. 19",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/application/Application-2013-11-29-Revision2.PDF"
+  },
+  {
+    id: "nlh-1991-vhf-support",
+    year: 2001,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "NP-117, Existing VHF Mobile Radio System",
+    topics: ["1991", "VHF", "mobile radio", "manufacturer support"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/hydresp/NFpower/NP%20117.pdf"
+  },
+  {
     id: "np-1992-capital-variance",
     year: 2002,
     organization: "Board of Commissioners of Public Utilities",
@@ -6748,6 +6868,12 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1991-system-reliability",
+    scope: "1991 Newfoundland Power actual SAIFI, SAIDI and capital expenditure",
+    status: "reported",
+    sources: [{ sourceId: "np-1991-reliability-capital", pages: "physical PDF p. 4" }]
+  },
+  {
     id: "np-1992-system-reliability",
     scope: "1992 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
     status: "reported",
@@ -6918,6 +7044,132 @@ export const timeline = [
     body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
     sourceId: "vhf-2004",
     pages: "PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "reliability",
+    title: "SAIFI was 2.09 and SAIDI was 3.26 hours",
+    body: "The filed historical table also records five-year rolling averages of 2.29 for SAIFI and 3.56 hours for SAIDI.",
+    sourceId: "np-1991-reliability-capital",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "network",
+    title: "Actual capital expenditure was $43.322 million",
+    body: "The historical reliability and capital table reports the annual expenditure in thousands of dollars.",
+    sourceId: "np-1991-reliability-capital",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "generation",
+    title: "Company generation was 417 GWh and peak demand was 1,101 MW",
+    body: "The ten-year summary records 4,008 GWh purchased, 4,425 GWh total supply, 4,196 GWh in sales and 195,730 customer accounts at year end.",
+    sourceId: "np-1991-operating-summary",
+    pages: "physical PDF p. 29",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "load",
+    title: "Total Island peak was 1,488 MW and energy requirement was 7,464 GWh",
+    body: "Hydro's 1991 forecast was 1,480 MW and 7,547 GWh. The filed actual variances were 8 MW above the peak forecast and 83 GWh below the energy forecast.",
+    sourceId: "nlh-1991-island-load",
+    pages: "physical PDF p. 235",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "station",
+    title: "Hardwoods drawing HWD-1 recorded the split-bus operating arrangement",
+    body: "Revision 17, dated July 7, shows 230 kV sections B1 and B2 with breaker B1B2, 66 kV sections B7 and B8 with breaker B7B8, transformers T1 to T5, G1 and capacitor bank C1.",
+    sourceId: "nlh-1991-hardwoods-operating",
+    pages: "physical PDF p. 189",
+    status: "verified"
+  },
+  {
+    date: "1991",
+    category: "network",
+    title: "TL217 was strengthened for 63 mm glaze-ice loading",
+    body: "Hydro added mid-span structures and dead-end towers on the portion over Hawke Hill and near Brigus Junction.",
+    sourceId: "nlh-1991-tl217-upgrade",
+    pages: "physical PDF p. 54",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "generation",
+    title: "Bay d'Espoir Unit 3 stator was rewedged",
+    body: "The generator maintenance history identifies piggyback wedges.",
+    sourceId: "nlh-1991-bde-unit3",
+    pages: "physical PDF p. 52",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "generation",
+    title: "Bay d'Espoir Unit 7 synchronous-condenser blower was replaced",
+    body: "The 2025 historical-investment table reports the work but states that the pre-2000 cost was not readily available.",
+    sourceId: "nlh-1991-bde-unit7",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "generation",
+    title: "Pierre's Brook surge tank was replaced",
+    body: "The welded-steel differential surge tank reused the former foundations; a new anchor block and tee were installed at its base.",
+    sourceId: "np-1991-pierre-brook-surge",
+    pages: "physical PDF p. 298",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "generation",
+    title: "West Brook battery bank and charger were installed",
+    body: "The 2011 rehabilitation filing identifies the 1991 equipment while describing its later replacement scope.",
+    sourceId: "np-1991-west-brook-electrical",
+    pages: "physical PDF p. 182",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "generation",
+    title: "Holyrood Unit 2 boiler breeching was replaced and the boiler was uprated",
+    body: "The plant condition assessment records replacement of the breeching and a boiler modification that increased capability to 175 MW.",
+    sourceId: "nlh-1991-holyrood-boiler",
+    pages: "physical PDF p. 245",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "generation",
+    title: "Holyrood Units 1 and 2 forced-draft motors were replaced",
+    body: "The 2013 capital filing identifies both installed motors as constant-speed, 1,189 rpm units consuming 1,120 kW continuously while operating.",
+    sourceId: "nlh-1991-holyrood-draft-motors",
+    pages: "physical PDF p. 735",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "generation",
+    title: "Holyrood gas turbine received a major overhaul",
+    body: "The black-start analysis lists 1991 among the major overhaul years for the 15 MW unit.",
+    sourceId: "nlh-1991-holyrood-gt-overhaul",
+    pages: "physical PDF p. 19",
+    status: "reported"
+  },
+  {
+    date: "1991",
+    category: "telecom",
+    title: "Manufacturer support ended for Hydro's VHF mobile-radio system",
+    body: "Hydro had purchased the system in 1989. The later replacement response records the 1991 support cutoff and a 10 to 12 year expected system life.",
+    sourceId: "nlh-1991-vhf-support",
+    pages: "physical PDF p. 1",
     status: "reported"
   },
   {
@@ -8430,8 +8682,8 @@ export const components = {
   "hrd-gt": {
     diagram: "hrd", status: "verified", code: "HRD / GT AND T9", title: "Holyrood gas turbine branch",
     summary: "The 15 MW, 13.8 kV gas-turbine branch connects through T9 to the station-service bus. The March 2015 as-built drawing marks the gas turbine no longer in service and notes that its 13.8 kV oil circuit breaker was removed and jumpered out.",
-    data: [["Gas turbine", "15 MW, 13.8 kV"], ["T9", "10.5/14 MVA"], ["Service", "Station-service bus"], ["March 2015 state", "No longer in service; 13.8 kV oil circuit breaker removed and jumpered out"]],
-    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663")]
+    data: [["Gas turbine", "15 MW, 13.8 kV"], ["T9", "10.5/14 MVA"], ["Service", "Station-service bus"], ["1991 work", "Major overhaul completed"], ["March 2015 state", "No longer in service; 13.8 kV oil circuit breaker removed and jumpered out"]],
+    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1991-holyrood-gt-overhaul", "physical PDF p. 19")]
   },
   "hwd-np-summary": {
     diagram: "hwd-np", status: "verified", code: "HWD / NEWFOUNDLAND POWER", title: "Hardwoods Substation",
@@ -8978,6 +9230,20 @@ export const islandTerminalRecords = [
     name: "Bay d'Espoir Generating Station",
     status: "reported",
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
+    historyRecords: [
+      {
+        label: "1991 UNIT 3 STATOR WORK",
+        sourceId: "nlh-1991-bde-unit3",
+        pages: "physical PDF p. 52",
+        facts: [["Completed work", "Stator re-wedged with piggyback wedges"]]
+      },
+      {
+        label: "1991 UNIT 7 SYNCHRONOUS-CONDENSER WORK",
+        sourceId: "nlh-1991-bde-unit7",
+        pages: "physical PDF p. 1",
+        facts: [["Completed work", "Synchronous-condenser blower replaced"]]
+      }
+    ],
     diagram: {
       label: "1998 Station 1 and 2013 Station 2 operating diagrams / 2018 routes",
       buses: [
@@ -11246,6 +11512,12 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1991 BATTERY BANK AND CHARGER",
+        sourceId: "np-1991-west-brook-electrical",
+        pages: "physical PDF p. 182",
+        facts: [["Installed equipment", "battery bank and battery charger"]]
+      },
+      {
         label: "2003 FILED TRANSFORMER REPLACEMENTS",
         sourceId: "np-2003-west-brook-transformers",
         pages: "physical PDF p. 1",
@@ -12153,6 +12425,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1991 TL217 ICE-LOADING UPGRADE",
+        sourceId: "nlh-1991-tl217-upgrade",
+        pages: "physical PDF p. 54",
+        facts: [
+          ["Location", "portion over Hawke Hill and near Brigus Junction"],
+          ["Design load", "63 mm glaze ice"],
+          ["Work", "added mid-span structures and dead-end towers"]
+        ]
+      },
       {
         label: "JANUARY 2014 T5 TAP-CHANGER FAILURE",
         sourceId: "nlh-2014-wav-t5",
@@ -21989,6 +22271,15 @@ export const stationProfiles = [
       facts: [["PBK-T1", "generation transformer; 66/6.9 kV; 6.67 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1991 SURGE-TANK REPLACEMENT",
+        sourceId: "np-1991-pierre-brook-surge",
+        pages: "physical PDF p. 298",
+        facts: [
+          ["Tank", "welded-steel differential surge tank replacing the earlier tank"],
+          ["Civil work", "former foundations reused; new anchor block and tee installed at the base"]
+        ]
+      },
       {
         label: "1995 RUNNER AND STATION-SERVICE TRANSFORMER WORK",
         sourceId: "np-2016-pierre-brook",

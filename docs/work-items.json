@@ -1142,12 +1142,24 @@
       "title": "Reconcile Newfoundland Power 1991 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1991 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-036"],
+      "completion_evidence": ["research/NP_1991_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1991-system.test.js"],
+      "blocker": null,
+      "notes": "The revised reliability and capital table, ten-year operating summary, historical load table and later asset records establish actual reliability, capital, energy, demand, customers, the TL217 ice-loading upgrade, the dated Hardwoods arrangement, generation work at Bay d'Espoir, Holyrood, Pierre's Brook and West Brook, and the VHF manufacturer-support cutoff."
+    },
+    {
+      "id": "NPREG-038",
+      "title": "Reconcile Newfoundland Power 1990 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1990 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-037"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the revised reliability table, the surviving ten-year operating summary, the 1991 Hardwoods operating drawing and dated asset histories."
+      "notes": "Start with the surviving operating summary, reliability and capital tables, TL221 and TL262 reconfiguration, and dated generation and station histories."
     },
     {
       "id": "ASSET-001",
