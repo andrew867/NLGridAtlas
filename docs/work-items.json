@@ -1130,12 +1130,24 @@
       "title": "Reconcile Newfoundland Power 1992 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1992 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-035"],
+      "completion_evidence": ["research/NP_1992_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1992-system.test.js"],
+      "blocker": null,
+      "notes": "The revised reliability response, 2003 rate-hearing report, 2001 ten-year summary, historical loss table and later asset histories establish actual reliability, capital expenditure, energy, customers, losses, the Hardwoods T4 and gas-turbine work, Bay d'Espoir bus and Unit 4 work, and the 80L rebuild section. The dated 1991 Hardwoods drawing and later 1992 bus-tie project history remain separate because the public record does not resolve the date conflict."
+    },
+    {
+      "id": "NPREG-037",
+      "title": "Reconcile Newfoundland Power 1991 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1991 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-036"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the revised 1992 to 2002 reliability table and dated asset histories. The 2003 capital variance response begins with 1993, so the 1992 capital total requires a separate source."
+      "notes": "Start with the revised reliability table, the surviving ten-year operating summary, the 1991 Hardwoods operating drawing and dated asset histories."
     },
     {
       "id": "ASSET-001",

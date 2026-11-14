@@ -390,6 +390,86 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
   },
   {
+    id: "np-1992-capital-variance",
+    year: 2002,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Newfoundland Power Rate Hearing Report, Capital Expenditure History",
+    topics: ["capital expenditure", "budget variance", "1992"],
+    pages: "physical PDF p. 33",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/Reports/GTreportFeb4.pdf"
+  },
+  {
+    id: "np-1992-ten-year-summary",
+    year: 2001,
+    organization: "Newfoundland Power",
+    title: "2001 Annual Report, Ten Year Operating Summary",
+    topics: ["1992", "purchased energy", "generation", "sales", "customers"],
+    pages: "physical PDF p. 40",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213F.pdf"
+  },
+  {
+    id: "np-1992-losses",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "CA-NP-004 Attachment B, Historical Transmission and Distribution Losses",
+    topics: ["1992", "transmission losses", "distribution losses", "energy losses", "peak losses"],
+    pages: "physical PDF p. 49",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/rfis/CA-NP-004.PDF"
+  },
+  {
+    id: "nlh-1992-island-additions",
+    year: 2001,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2001 General Rate Application, Island System Addition History",
+    topics: ["1992", "Hardwoods", "T4", "Bay d'Espoir", "230 kV bus", "system additions"],
+    pages: "physical PDF p. 224",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/July9/Hydro/preTest/May%202001%20Prefiled%20Testimony%20-%20Entire%20Document.pdf"
+  },
+  {
+    id: "nlh-1992-hardwoods-bus-tie",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2012 Capital Budget Application, Oxen Pond Transformer Report",
+    topics: ["1992", "Hardwoods", "T4", "B1B2", "230 kV bus tie"],
+    pages: "physical PDF p. 16",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012Application-VolumeII-Report11.pdf"
+  },
+  {
+    id: "nlh-1992-hardwoods-stack",
+    year: 2009,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2010 Capital Budget Application, Hardwoods Gas Turbine Plant Life Extension",
+    topics: ["1992", "Hardwoods", "gas turbine", "exhaust stacks", "silencer"],
+    pages: "physical PDF p. 33",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/NLH2010ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "np-1992-80l-rebuild",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, 2010 Depreciation Study Transmission History",
+    topics: ["1992", "80L", "Blaketown", "Heart's Content", "transmission rebuild"],
+    pages: "physical PDF p. 279",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "nlh-1992-bde-unit4",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Bay d'Espoir Powerhouse 1 Generator Condition Assessment",
+    topics: ["1992", "Bay d'Espoir", "Unit 4", "stator wedges", "ground fault", "main lead"],
+    pages: "physical PDF p. 52",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012Application-VolumeI-Report1-AppendixA.pdf"
+  },
+  {
     id: "np-1993-capital-variance",
     year: 1993,
     organization: "Newfoundland Power",
@@ -6668,6 +6748,12 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1992-system-reliability",
+    scope: "1992 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
+    status: "reported",
+    sources: [{ sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }]
+  },
+  {
     id: "np-1993-system-reliability",
     scope: "1993 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
     status: "reported",
@@ -6832,6 +6918,87 @@ export const timeline = [
     body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
     sourceId: "vhf-2004",
     pages: "PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1992",
+    category: "reliability",
+    title: "SAIFI was 3.46 and SAIDI was 4.75 hours",
+    body: "The annual customer-interruption indices exclude Hydro loss-of-supply outages.",
+    sourceId: "np-2003-ca-446-rev",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1992",
+    category: "network",
+    title: "Actual capital expenditure was $43.080 million",
+    body: "The rate-hearing report compares the actual expenditure with a $47.739 million budget and records a 9.76% underspend.",
+    sourceId: "np-1992-capital-variance",
+    pages: "physical PDF p. 33",
+    status: "reported"
+  },
+  {
+    date: "1992",
+    category: "generation",
+    title: "Company generation was 417 GWh",
+    body: "The ten-year summary records 4,066 GWh purchased, 417 GWh generated, 4,483 GWh total supply and 4,244 GWh in sales. Newfoundland Power served 198,936 customers at year end.",
+    sourceId: "np-1992-ten-year-summary",
+    pages: "physical PDF p. 40",
+    status: "reported"
+  },
+  {
+    date: "1992",
+    category: "network",
+    title: "Energy losses were 1.87% on transmission and 3.00% on distribution",
+    body: "The filed table reports 4.78% total energy loss. Peak losses were 3.18% on transmission, 5.18% on distribution and 8.10% in total.",
+    sourceId: "np-1992-losses",
+    pages: "physical PDF p. 49",
+    status: "reported"
+  },
+  {
+    date: "1992",
+    category: "station",
+    title: "Hardwoods T4 and a 230 kV bus-tie breaker were added",
+    body: "Hydro records the transformer at 75/100/125 MVA and states that the bus-tie breaker reduced the risk of losing the complete terminal station. A dated 1991 operating drawing already shows breaker B1B2, and the public record does not resolve the date difference.",
+    sourceId: "nlh-1992-hardwoods-bus-tie",
+    pages: "physical PDF p. 16",
+    status: "reported"
+  },
+  {
+    date: "1992",
+    category: "generation",
+    title: "Hardwoods gas-turbine exhaust stacks were replaced",
+    body: "The plant history states that the existing interior silencer panel was reused.",
+    sourceId: "nlh-1992-hardwoods-stack",
+    pages: "physical PDF p. 33",
+    status: "reported"
+  },
+  {
+    date: "1992",
+    category: "station",
+    title: "Bay d'Espoir 230 kV bus modifications were completed",
+    body: "Hydro lists the bus work among the significant Island Interconnected System additions completed in 1992.",
+    sourceId: "nlh-1992-island-additions",
+    pages: "physical PDF p. 224",
+    status: "reported"
+  },
+  {
+    date: "1992",
+    category: "generation",
+    title: "Bay d'Espoir Unit 4 main-lead ground fault was repaired",
+    body: "The generator history records a wedge inspection and stator re-wedging. After the phase A ground fault, the bus was reinsulated and the unit returned to service.",
+    sourceId: "nlh-1992-bde-unit4",
+    pages: "physical PDF p. 52",
+    status: "reported"
+  },
+  {
+    date: "1992",
+    category: "network",
+    title: "A 5 km section of 80L near Heart's Content was rebuilt",
+    body: "The depreciation study identifies the 66 kV H-frame circuit between Blaketown and Heart's Content and dates the section rebuild to 1992.",
+    sourceId: "np-1992-80l-rebuild",
+    pages: "physical PDF p. 279",
     status: "reported"
   },
   {
@@ -8068,9 +8235,9 @@ export const components = {
     status: "verified",
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
-    summary: "Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
-    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["1993 gas-turbine work", "End B engine overhauled; both air-start compressors, air lines, valves and the control panel replaced"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
-    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
+    summary: "Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A later project history dates the B1B2 addition to the 1992 T4 project. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
+    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["1992 terminal work", "T4 and 230 kV bus-tie breaker added"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["1992 gas-turbine work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 gas-turbine work", "End B engine overhauled; both air-start compressors, air lines, valves and the control panel replaced"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("nlh-1992-hardwoods-bus-tie", "physical PDF p. 16"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -8093,8 +8260,8 @@ export const components = {
   "hwd-t4": {
     diagram: "hwd", status: "verified", code: "HWD / T4", title: "Hardwoods transformer T4",
     summary: "The 2026 loop study models T4 at 125 MVA. The 2013 filing records the 75/100/125 MVA unit as in service since 1992.",
-    data: [["Voltage", "230/66 kV"], ["Rating", "75/100/125 MVA"], ["In service", "1992"], ["Q1 2025 work", "On-line dissolved-gas monitor installed"]],
-    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15"), sourceRef("nlh-q1-2025-terminal-work", "physical PDF p. 34")]
+    data: [["Voltage", "230/66 kV"], ["Rating", "75/100/125 MVA"], ["In service", "1992"], ["1992 project", "T4 added with a 230 kV bus-tie breaker"], ["Q1 2025 work", "On-line dissolved-gas monitor installed"]],
+    sources: [sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 15"), sourceRef("nlh-1992-island-additions", "physical PDF p. 224"), sourceRef("nlh-1992-hardwoods-bus-tie", "physical PDF p. 16"), sourceRef("nlh-q1-2025-terminal-work", "physical PDF p. 34")]
   },
   "hwd-c1": {
     diagram: "hwd", status: "verified", code: "HWD / C1", title: "Hardwoods capacitor bank C1",
@@ -8111,14 +8278,14 @@ export const components = {
   "hwd-g1": {
     diagram: "hwd", status: "verified", code: "HWD / G1 AND T5", title: "Hardwoods generator branch",
     summary: "The 2013 alternative one-line connects G1 to the 66 kV bus through T5. The 2026 loop study models HWD-G1 at 25 MW.",
-    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
-    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["1992 stack work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
   "hwd-b1b2": {
     diagram: "hwd", status: "verified", code: "HWD / B1B2", title: "Hardwoods 230 kV bus tie",
-    summary: "The 1991 HWD-1 operating diagram places breaker B1B2 between the B1 and B2 230 kV bus sections.",
-    data: [["Breaker", "B1B2"], ["Connected sections", "230 kV B1 and B2"], ["Drawing date", "July 7, 1991"]],
-    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189")]
+    summary: "The HWD-1 operating drawing dated July 7, 1991 places breaker B1B2 between the B1 and B2 230 kV bus sections. A 2012 project report says the bus-tie breaker was added during the 1992 T4 project.",
+    data: [["Breaker", "B1B2"], ["Connected sections", "230 kV B1 and B2"], ["Drawing date", "July 7, 1991"], ["Project history", "Added with T4 in 1992"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("nlh-1992-hardwoods-bus-tie", "physical PDF p. 16")]
   },
   "hwd-b7b8": {
     diagram: "hwd", status: "verified", code: "HWD / B7B8", title: "Hardwoods 66 kV bus tie",
@@ -8810,7 +8977,7 @@ export const islandTerminalRecords = [
     code: "BDE",
     name: "Bay d'Espoir Generating Station",
     status: "reported",
-    facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
+    facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     diagram: {
       label: "1998 Station 1 and 2013 Station 2 operating diagrams / 2018 routes",
       buses: [
@@ -8846,7 +9013,7 @@ export const islandTerminalRecords = [
         { label: "G7", rating: "172 MVA", bus: "b2", x: 740 }
       ]
     },
-    sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-2023-spare-gsu", "physical PDF pp. 11 to 14"), sourceRef("nlh-2025-spare-gsu-update", "physical PDF pp. 5 to 7"), sourceRef("pub-2025-spare-gsu-order", "physical PDF pp. 1 to 3"), sourceRef("nlh-bde-u7-life-extension-2025", "physical PDF pp. 211, 218 to 219, and 221"), sourceRef("pub-2026-bde-u7-order", "physical PDF pp. 1, 3 to 4"), sourceRef("nlh-2025-bde-u8-basis", "physical PDF pp. 5 and 8 to 9"), sourceRef("pub-2025-bde-u8-early-order", "physical PDF pp. 1 and 6"), sourceRef("pub-2026-bde-u8-early-order", "physical PDF pp. 1 and 3 to 7"), sourceRef("nlh-2026-bde-u8-october-update", "physical PDF pp. 3 to 8 and 10"), sourceRef("nlh-bde-frazil-2026", "physical PDF pp. 13 to 15 and 32")]
+    sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-1992-island-additions", "physical PDF p. 224"), sourceRef("nlh-1992-bde-unit4", "physical PDF p. 52"), sourceRef("nlh-2023-spare-gsu", "physical PDF pp. 11 to 14"), sourceRef("nlh-2025-spare-gsu-update", "physical PDF pp. 5 to 7"), sourceRef("pub-2025-spare-gsu-order", "physical PDF pp. 1 to 3"), sourceRef("nlh-bde-u7-life-extension-2025", "physical PDF pp. 211, 218 to 219, and 221"), sourceRef("pub-2026-bde-u7-order", "physical PDF pp. 1, 3 to 4"), sourceRef("nlh-2025-bde-u8-basis", "physical PDF pp. 5 and 8 to 9"), sourceRef("pub-2025-bde-u8-early-order", "physical PDF pp. 1 and 6"), sourceRef("pub-2026-bde-u8-early-order", "physical PDF pp. 1 and 3 to 7"), sourceRef("nlh-2026-bde-u8-october-update", "physical PDF pp. 3 to 8 and 10"), sourceRef("nlh-bde-frazil-2026", "physical PDF pp. 13 to 15 and 32")]
   },
   {
     code: "BUC",
@@ -15665,6 +15832,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1992 80L REBUILD SECTION",
+        sourceId: "np-1992-80l-rebuild",
+        pages: "physical PDF p. 279",
+        facts: [
+          ["Circuit", "66 kV H-frame line between Blaketown and Heart's Content"],
+          ["Rebuild", "5 km near Heart's Content"]
+        ]
+      },
       {
         label: "2027 TO 2028 PROPOSED MODERNIZATION",
         sourceId: "np-2027-blaketown",
@@ -23628,6 +23804,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1992 80L REBUILD SECTION",
+        sourceId: "np-1992-80l-rebuild",
+        pages: "physical PDF p. 279",
+        facts: [
+          ["Circuit", "66 kV H-frame line between Blaketown and Heart's Content"],
+          ["Rebuild", "5 km near Heart's Content"]
+        ]
+      },
       {
         label: "2005 FILED 43L REBUILD STAGE",
         sourceId: "np-2005-transmission-rebuild",

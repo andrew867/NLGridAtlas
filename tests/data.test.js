@@ -1226,7 +1226,7 @@ test("Blaketown combines documented circuits with the current transformer record
   assert.deepEqual(blaketown.connectedCircuits.map(({ circuit }) => circuit), ["48L", "64L", "55L", "80L", "86L", "94L"]);
   assert.deepEqual(blaketown.feederRegister, ["BLK-01", "BLK-02"]);
   const existingFacts = blaketown.engineeringRecord.facts.flat().join(" ");
-  const proposedFacts = blaketown.historyRecords[0].facts.flat().join(" ");
+  const proposedFacts = blaketown.historyRecords.find((record) => record.label === "2027 TO 2028 PROPOSED MODERNIZATION").facts.flat().join(" ");
   assert.match(existingFacts, /BLK-T3 138\/66 kV; 25\/33\.3\/41\.6 MVA; Westinghouse/);
   assert.match(existingFacts, /BLK-T2 tap changer faulted in 2021/);
   assert.match(blaketown.planningRecord.facts.flat().join(" "), /BLK-T2 138\/25 kV; 20 MVA; 16\.21 MVA 2026 forecast/);
