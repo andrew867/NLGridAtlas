@@ -39,12 +39,13 @@ Source: [2010 Capital Budget Application, Volume II, physical PDF p. 232](http:/
 
 ### Heart's Content replacement plant
 
-The 2.4 MW Heart's Content plant commissioned in 1960 replaced the original plant commissioned in 1918. The plant record gives a 2,370 kW capacity under about 46.9 m net head, with an English Electric vertical Francis turbine and Bruce Peebles generator commissioned in 1960. The redeveloped plant was remotely controlled from New Chelsea.
+The 2.4 MW Heart's Content plant commissioned in 1960 replaced the original plant commissioned in 1918. The plant history gives a 2,370 kW capacity under about 46.9 m net head and says the English Electric vertical Francis turbine and Bruce Peebles generator were commissioned in 1960. A separate development record prints 1969 for the turbine. The component date remains unresolved. The redeveloped plant was remotely controlled from New Chelsea.
 
 Sources:
 
 - [2014 Capital Budget Application, physical PDF p. 26](http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf#page=26), SHA-256 `da133a107fc706c45e36d4e0f30b2156855a7b247f468aec02a23d1fad19566c`.
 - [CA-NP-088, physical PDF p. 139](http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=139), SHA-256 `12ea7123d3f8b84f30e0f0cf445f5631fdb412b907e6d33588d2765807280b0d`.
+- [CA-NP-036, physical PDF p. 160](http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf#page=160), SHA-256 `1b27d6b0a58416c06045f8e54618c33b2902f26dda83d53780a4b01b5e14b477`.
 - [2004 Capital Budget Application, physical PDF p. 285](http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf#page=285), SHA-256 `96f51d230a792c294b759fcc0dc6a52a5755f1ece0351be661444d16041f21cd`.
 
 ## Holyrood transformer T6

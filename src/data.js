@@ -520,6 +520,76 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1959-grand-falls",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Grand Falls Substation History",
+    topics: ["1959", "Grand Falls", "GFS", "66 kV", "4.16 kV", "25 kV", "138 kV", "substation"],
+    pages: "physical PDF p. 294",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1959-rattling-brook-plant",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, Rattling Brook Plant and Facility Record",
+    topics: ["1959", "Rattling Brook", "RBK", "hydroelectric generation", "surge tank", "garage", "date conflict"],
+    pages: "physical PDF pp. 50 and 52",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
+  },
+  {
+    id: "np-1959-hydro-civil",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Heart's Content and Pitmans Pond Development Records",
+    topics: ["1959", "Heart's Content", "Pitmans Pond", "penstock", "Francis turbine", "hydroelectric generation"],
+    pages: "physical PDF pp. 160 and 171",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1959-woodstave-penstocks",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-017, Woodstave Penstock Register",
+    topics: ["1959", "Pitmans Pond", "Victoria", "woodstave penstock", "hydroelectric generation"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/rfi/NLH-NP-017.PDF"
+  },
+  {
+    id: "np-1959-pitmans-head-gate",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-004, Pitmans Pond Head Gate Record",
+    topics: ["1959", "Pitmans Pond", "head gate", "steel gate", "manual lifting mechanism"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/responses/NLH-NP-004.PDF"
+  },
+  {
+    id: "np-1959-gallant-building",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Gallant Street Building Record",
+    topics: ["1959", "Gallant Street", "GAL", "protection and control", "operations building"],
+    pages: "physical PDF p. 509",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "nlh-1959-dry-sequence",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-NLH-039, Historic Dry Sequence",
+    topics: ["1959", "1960", "1961", "1962", "hydrology", "historic dry sequence", "reservoir inflow"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/IC-NLH-039.pdf"
+  },
+  {
     id: "np-1960-ridge-road",
     year: 2026,
     organization: "Newfoundland Power",
@@ -9658,6 +9728,30 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1959-system-record",
+    scope: "1959 station construction, transmission and distribution lines, hydroelectric plant and civil works, an operations building and the start of Hydro's historic dry sequence",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2025-gander-t2", pages: "physical PDF pp. 477 to 480" },
+      { sourceId: "np-1959-grand-falls", pages: "physical PDF p. 294" },
+      { sourceId: "np-2027-rattling-brook", pages: "physical PDF pp. 435 to 440" },
+      { sourceId: "np-1961-rattling-brook-storage", pages: "physical PDF p. 141" },
+      { sourceId: "np-1959-rattling-brook-plant", pages: "physical PDF pp. 50 and 52" },
+      { sourceId: "np-2016-30l", pages: "physical PDF p. 316" },
+      { sourceId: "np-2014-transmission-lines", pages: "physical PDF p. 311" },
+      { sourceId: "np-2015-transmission-lines", pages: "physical PDF pp. 552 and 555 to 556" },
+      { sourceId: "np-2003-grand-beach", pages: "physical PDF pp. 39 to 40" },
+      { sourceId: "np-2018-302l", pages: "physical PDF p. 244" },
+      { sourceId: "np-2006-bot01-study", pages: "physical PDF pp. 387 and 393 to 401" },
+      { sourceId: "np-2013-pitmans-pond", pages: "physical PDF pp. 28 and 230" },
+      { sourceId: "np-1959-hydro-civil", pages: "physical PDF pp. 160 and 171" },
+      { sourceId: "np-1959-woodstave-penstocks", pages: "physical PDF p. 1" },
+      { sourceId: "np-1959-pitmans-head-gate", pages: "physical PDF p. 1" },
+      { sourceId: "np-1959-gallant-building", pages: "physical PDF p. 509" },
+      { sourceId: "nlh-1959-dry-sequence", pages: "physical PDF p. 1" }
+    ]
+  },
+  {
     id: "np-1960-system-record",
     scope: "1960 station construction, transmission and distribution lines, hydroelectric redevelopment, transformer manufacture and a diesel-maintenance facility",
     status: "unresolved",
@@ -10298,6 +10392,78 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1959",
+    category: "station",
+    title: "Gander, Grand Falls and Rattling Brook substations were built",
+    body: "Gander began as a distribution station and later became a major 138/66/12.5 kV transmission and distribution station. Grand Falls began as a 66/4.16 kV distribution station and later gained 138 kV, 66 kV and 25 kV functions. Rattling Brook was built as a transmission, distribution and generation station.",
+    sourceId: "np-2025-gander-t2",
+    pages: "physical PDF pp. 477 to 480; Grand Falls physical PDF p. 294; Rattling Brook physical PDF pp. 435 to 440",
+    status: "reported"
+  },
+  {
+    date: "1958 or 1959",
+    category: "generation",
+    title: "Newfoundland Power records disagree on the Rattling Brook development date",
+    body: "The 2013 plant history says the development was commissioned in 1958. The 2021 capital filing says it was constructed in 1959. The same records publish 11.5 MW and 14.8 MW capacity values without reconciling the difference.",
+    sourceId: "np-1961-rattling-brook-storage",
+    pages: "physical PDF p. 141; compare 2021 Capital Budget Application physical PDF p. 50",
+    status: "unresolved"
+  },
+  {
+    date: "1959",
+    category: "network",
+    title: "New 66 kV corridors and a long rural feeder entered the system record",
+    body: "30L connected Ridge Road and King's Bridge over 2.9 km. The original 35L section between Oxen Pond and Kenmount included 3.39 km and 39 single-pole structures. Portions of 301L date to 1959 and 1966. The original 302L Salt Pond to Laurentian line included approximately 26.6 km and 315 single-pole structures. BOT-01 began as a 25 kV feeder in the Botwood area.",
+    sourceId: "np-2016-30l",
+    pages: "physical PDF p. 316; 35L physical PDF p. 311; 301L physical PDF pp. 39 to 40; 302L physical PDF p. 244; BOT-01 physical PDF p. 393",
+    status: "reported"
+  },
+  {
+    date: "1951 or 1959",
+    category: "network",
+    title: "The 69L construction year remains unresolved",
+    body: "The 2015 filing summary dates the Kenmount to Stamp's Lane line to 1951, while the project text says it was originally constructed in 1959. The filing records 2.74 km of original-vintage line and 48 single-pole structures in the rebuild scope.",
+    sourceId: "np-2015-transmission-lines",
+    pages: "physical PDF pp. 552 and 555 to 556",
+    status: "unresolved"
+  },
+  {
+    date: "1959",
+    category: "generation",
+    title: "Pitmans Pond entered service",
+    body: "The plant was commissioned at 625 kW under approximately 21.3 m net head. Its horizontal Gilkes Francis turbine was rated 1,200 hp in the 2013 application and 895 kW in the development record. A Westinghouse 1,000 kVA induction generator connected to New Chelsea through the 12.5 kV NCH-03 feeder. The 385 m woodstave penstock and manually operated steel head gate also date to 1959.",
+    sourceId: "np-2013-pitmans-pond",
+    pages: "physical PDF pp. 28 and 230; development record physical PDF p. 171; penstock and head-gate records physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1959",
+    category: "generation",
+    title: "Heart's Content and Victoria received penstock work",
+    body: "Heart's Content gained a 21 m, 1,829 mm steel penstock section between its woodstave pipe and powerhouse. At Victoria, 238 m of the 412 m woodstave penstock was replaced; the remaining 174 m was replaced in 1963.",
+    sourceId: "np-1959-hydro-civil",
+    pages: "physical PDF p. 160; Victoria physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1959",
+    category: "operations",
+    title: "The Gallant Street Building was constructed",
+    body: "The Stephenville building housed protection and control equipment for the adjacent Gallant Street Substation and stored regional operating equipment. Newfoundland Power expanded it in 1970.",
+    sourceId: "np-1959-gallant-building",
+    pages: "physical PDF p. 509",
+    status: "reported"
+  },
+  {
+    date: "April 1959 to December 1962",
+    category: "planning",
+    title: "Hydro's historic dry sequence began",
+    body: "Hydro identifies this 45-month period as the longest sustained low-inflow period in its hydrological record. Individual months or quarters elsewhere were lower, but no other recorded low-inflow sequence lasted as long.",
+    sourceId: "nlh-1959-dry-sequence",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
     date: "1960",
     category: "station",
     title: "Molloy's Lane Substation was built",
@@ -10328,7 +10494,7 @@ export const timeline = [
     date: "1960",
     category: "generation",
     title: "The replacement Heart's Content plant entered service",
-    body: "The 2.4 MW plant replaced the original 1918 plant. The plant record identifies a 2,370 kW development under about 46.9 m net head, with an English Electric vertical Francis turbine and Bruce Peebles generator commissioned in 1960. It was remotely controlled from New Chelsea.",
+    body: "The 2.4 MW plant replaced the original 1918 plant. The plant history identifies a 2,370 kW development under about 46.9 m net head, with an English Electric vertical Francis turbine and Bruce Peebles generator commissioned in 1960. A separate development record prints 1969 for the turbine, so that component date remains unresolved. The plant was remotely controlled from New Chelsea.",
     sourceId: "np-1960-hearts-content",
     pages: "physical PDF p. 26; plant record physical PDF p. 139; remote-control record physical PDF p. 285",
     status: "reported"
@@ -16409,6 +16575,15 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1959 ORIGINAL 66/4.16 KV YARD",
+        sourceId: "np-1959-grand-falls",
+        pages: "physical PDF p. 294",
+        facts: [
+          ["Original station", "built as a 66/4.16 kV distribution substation"],
+          ["Later development", "the 2010 filing records 138 kV and 66 kV transmission functions and 25 kV and 4 kV distribution functions in two yards separated by the Trans-Canada Highway"]
+        ]
+      },
+      {
         label: "1963 105L CONSTRUCTION RECORD",
         sourceId: "np-1963-105l",
         pages: "physical PDF p. 247",
@@ -18739,6 +18914,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1959 AND 1963 PENSTOCK REPLACEMENT",
+        sourceId: "np-1959-woodstave-penstocks",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["1959 section", "238 m of the 412 m woodstave penstock replaced"],
+          ["1963 section", "remaining 174 m of woodstave penstock replaced"],
+          ["Separate steel section", "82 m, installed in 1986"]
+        ]
+      },
       {
         label: "2006 FILED BLUE HILL AND ROCKY POND DAM WORK",
         sourceId: "np-2006-hydro-rehabilitation",
@@ -26017,6 +26202,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1958 / 1959 DEVELOPMENT-DATE CONFLICT",
+        sourceId: "np-1959-rattling-brook-plant",
+        pages: "physical PDF p. 50; compare CA-NP-088 physical PDF p. 141 and 2005 Capital physical PDF p. 188",
+        facts: [
+          ["1958 records", "the plant history says the development was commissioned in 1958; the 2005 assessment gives December 16, 1958"],
+          ["1959 record", "the 2021 capital filing says the hydroelectric development was constructed in 1959"],
+          ["Capacity difference", "the 2013 plant history gives 11.5 MW; the 2021 filing gives 14.8 MW"]
+        ]
+      },
+      {
         label: "1961 ADDITIONAL STORAGE",
         sourceId: "np-1961-rattling-brook-storage",
         pages: "physical PDF p. 141",
@@ -30016,6 +30211,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1959 PLANT AND CIVIL WORKS",
+        sourceId: "np-1959-hydro-civil",
+        pages: "physical PDF p. 171; penstock and head-gate records physical PDF p. 1",
+        facts: [
+          ["Turbine", "horizontal Gilkes Francis turbine commissioned in 1959; 895 kW in the development record and 1,200 hp in the 2013 application"],
+          ["Penstock", "385 m above-ground woodstave pipe, 1,372 mm diameter"],
+          ["Head gate", "steel gate raised and lowered by two steel cables and a manual drum-style lifting mechanism"]
+        ]
+      },
+      {
         label: "1986 SURGE-PROTECTION INSTALLATION",
         sourceId: "np-2013-pitmans-pond",
         pages: "physical PDF pp. 231 to 232",
@@ -31263,6 +31468,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1959 PROTECTION AND CONTROL BUILDING",
+        sourceId: "np-1959-gallant-building",
+        pages: "physical PDF p. 509",
+        facts: [
+          ["Building", "constructed in 1959 and expanded in 1970"],
+          ["Use", "housed protection and control equipment for Gallant Street Substation and stored regional operating equipment"]
+        ]
+      },
+      {
         label: "2007 AND 2010 COMPLETED WORK",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF p. 3",
@@ -31322,13 +31536,22 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1959 STEEL PENSTOCK SECTION",
+        sourceId: "np-1959-hydro-civil",
+        pages: "physical PDF p. 160",
+        facts: [
+          ["Steel section", "21 m long and 1,829 mm diameter"],
+          ["Connection", "installed between the 558 m woodstave section and the powerhouse"]
+        ]
+      },
+      {
         label: "1960 REPLACEMENT PLANT",
         sourceId: "np-1960-hearts-content",
-        pages: "physical PDF p. 26; CA-NP-088 physical PDF p. 139; remote-control record physical PDF p. 285",
+        pages: "physical PDF p. 26; CA-NP-088 physical PDF p. 139; compare CA-NP-036 physical PDF p. 160; remote-control record physical PDF p. 285",
         facts: [
           ["Plant", "the 1960 plant replaced the original 1918 plant"],
           ["Published capacity", "2.4 MW; the plant record gives 2,370 kW under about 46.9 m net head"],
-          ["Machine", "English Electric vertical Francis turbine and Bruce Peebles generator, both commissioned in 1960"],
+          ["Machine", "English Electric vertical Francis turbine and Bruce Peebles generator; the 2013 plant history says both were commissioned in 1960, while a separate development record prints 1969 for the turbine"],
           ["Control", "remotely controlled from New Chelsea"]
         ]
       },

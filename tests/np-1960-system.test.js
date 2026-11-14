@@ -39,7 +39,7 @@ test("Heart's Content record separates published capacity values", () => {
   const event = timeline.find((entry) => entry.date === "1960" && /replacement Heart's Content/.test(entry.title));
   assert.ok(event);
   assert.match(event.body, /2\.4 MW.*2,370 kW.*46\.9 m/);
-  assert.match(event.body, /English Electric.*Bruce Peebles.*remotely controlled from New Chelsea/);
+  assert.match(event.body, /English Electric.*Bruce Peebles.*1960.*1969.*unresolved.*remotely controlled from New Chelsea/);
   assert.match(stationText("HCT"), /1960 REPLACEMENT PLANT.*2\.4 MW.*2,370 kW/);
 });
 

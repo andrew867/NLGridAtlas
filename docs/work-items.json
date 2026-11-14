@@ -1522,6 +1522,18 @@
       "notes": "The available historical-demand table begins in 1967, so no 1960 demand value is stated. Later primary records establish Molloy's Lane Substation, the 403L Robinsons tap, Makkovik L1, the replacement Heart's Content plant, Holyrood T6 manufacture, and the Bishop's Falls diesel shop. Newfoundland Power filings conflict between 1960 and 1963 for Ridge Road Substation. The T6 record dates manufacture, not installation at Holyrood. No named 1960 telecommunications installation was located."
     },
     {
+      "id": "NPREG-069",
+      "title": "Reconcile Newfoundland Power 1959 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1959 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-068"],
+      "completion_evidence": ["research/NP_1959_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1959-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records establish Gander, Grand Falls and Rattling Brook substations; 30L, 35L, portions of 301L, 302L and BOT-01; Pitmans Pond generation and civil works; penstock work at Heart's Content and Victoria; the Gallant Street Building; and the April 1959 start of Hydro's historic dry sequence. Rattling Brook records conflict between 1958 commissioning and 1959 construction and publish different plant capacities. The 69L filing conflicts between 1951 and 1959. No named 1959 telecommunications installation was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
