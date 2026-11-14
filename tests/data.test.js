@@ -3574,7 +3574,8 @@ test("Springdale keeps the filed Hydro interface and proposed 2014 work separate
   assert.deepEqual(springdale.feederRegister, ["SPR-01", "SPR-02", "SPR-03", "SPR-04"]);
   assert.deepEqual(springdale.diagram.transformers, [{ label: "SPR-T1", rating: "16.7 MVA", from: "b1", to: "b2" }]);
   assert.match(springdale.engineeringRecord.facts.flat().join(" "), /Hydro owns and maintains the 138 kV bus and breakers/);
-  assert.match(springdale.historyRecords[0].facts.flat().join(" "), /replace original electromechanical transformer relays and four hydraulic feeder reclosers/);
+  const modernization = springdale.historyRecords.find((record) => /2014 FILED REFURBISHMENT/.test(record.label));
+  assert.match(modernization.facts.flat().join(" "), /replace original electromechanical transformer relays and four hydraulic feeder reclosers/);
   assert.equal(sources.find((source) => source.id === "np-2014-springdale").status, "proposed");
 });
 

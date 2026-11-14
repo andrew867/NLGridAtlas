@@ -1298,12 +1298,24 @@
       "title": "Reconcile Newfoundland Power 1978 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1978 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-049"],
+      "completion_evidence": ["research/NP_1978_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1978-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the actual system values. Later primary records establish 142L, TL243, Western Avalon T3 and its 230 kV bay, dated station structures at six Newfoundland Power sites, four rural reclosers, and Holyrood Unit 3 manufacture, installation and transformer movement."
+    },
+    {
+      "id": "NPREG-051",
+      "title": "Reconcile Newfoundland Power 1977 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1977 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-050"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the surviving demand table and contemporary Board records, then reconcile dated station, generation, protection, telecommunications and construction evidence."
+      "notes": "Start with historical demand, Blaketown construction, dated transmission and distribution assets, Holyrood Unit 3 construction, rural generation and protection records."
     },
     {
       "id": "ASSET-001",

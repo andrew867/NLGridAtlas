@@ -520,6 +520,76 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1978-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1978", "Newfoundland Power peak demand", "Island peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1978-142l",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "2025 Capital Budget Application, 142L Rebuild",
+    topics: ["1978", "142L", "Cobb's Pond", "Boyd's Cove", "Gander Bay", "Clarke's Head"],
+    pages: "physical PDF p. 100",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
+  },
+  {
+    id: "nlh-1978-tl243",
+    year: 2004,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2005 Capital Budget Application, TL243 Insulator Replacement",
+    topics: ["1978", "TL243", "Hinds Lake", "Howley", "138 kV", "transmission line"],
+    pages: "physical PDF p. 53",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2005cap/files/applic/hydro2005CapBudComplete.pdf"
+  },
+  {
+    id: "np-1978-substation-structures",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Substation Structure Register",
+    topics: ["1978", "Bay Roberts", "Blaketown", "Cobb's Pond", "Jonathan's Pond", "Bishop's Falls", "Springdale"],
+    pages: "physical PDF pp. 194, 198 to 199",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "nlh-1978-western-avalon-assets",
+    year: 2013,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-NLH-097, Western Avalon Asset Register",
+    topics: ["1978", "Western Avalon", "T3", "B1L17", "230 kV", "switchyard"],
+    pages: "physical PDF pp. 7 to 8",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/IC-NLH-097.PDF"
+  },
+  {
+    id: "nlh-1978-reclosers",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Recloser Control Panel Register",
+    topics: ["1978", "South Brook", "Jackson's Arm", "Hampden", "recloser", "distribution protection"],
+    pages: "physical PDF p. 431",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/NLH2010ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1978-holyrood-turbine",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2019 Capital Budget Application, Holyrood Unit 3 Turbine Valve Overhaul",
+    topics: ["1978", "Holyrood", "Unit 3", "Hitachi", "turbine", "valves"],
+    pages: "physical PDF p. 135",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2019/NLH2019Capital/applications/2019%20CBA%20-%20Volume%202.PDF"
+  },
+  {
     id: "nlh-1979-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8368,6 +8438,22 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1978-system-record",
+    scope: "1978 actual demand, transmission construction, terminal and distribution assets, rural protection and Holyrood Unit 3 equipment",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-1978-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-1978-142l", pages: "physical PDF p. 100" },
+      { sourceId: "nlh-1978-tl243", pages: "physical PDF p. 53" },
+      { sourceId: "np-1978-substation-structures", pages: "physical PDF pp. 194, 198 to 199" },
+      { sourceId: "nlh-1978-western-avalon-assets", pages: "physical PDF pp. 7 to 8" },
+      { sourceId: "nlh-1978-reclosers", pages: "physical PDF p. 431" },
+      { sourceId: "nlh-1978-holyrood-turbine", pages: "physical PDF p. 135" },
+      { sourceId: "nlh-1979-holyrood-stage2", pages: "physical PDF p. 918" },
+      { sourceId: "nlh-1979-holyrood-assets", pages: "physical PDF p. 547" }
+    ]
+  },
+  {
     id: "np-1979-system-record",
     scope: "1979 actual demand, transmission and distribution construction, telecommunications, station equipment and Holyrood Unit 3 electrical work",
     status: "unresolved",
@@ -8674,6 +8760,69 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1978",
+    category: "load",
+    title: "The Island transmission peak was 939 MW",
+    body: "The historical demand table reports Newfoundland Power peak demand of 639.9 MW and Hydro system peak demand of 718 MW.",
+    sourceId: "nlh-1978-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1978",
+    category: "network",
+    title: "142L supplied Boyd's Cove from Cobb's Pond",
+    body: "Newfoundland Power built 142L from Cobb's Pond to Boyd's Cove. The line connects to 114L at Clarke's Head, approximately 1.7 km from Gander Bay Substation.",
+    sourceId: "np-1978-142l",
+    pages: "physical PDF p. 100",
+    status: "reported"
+  },
+  {
+    date: "1978",
+    category: "network",
+    title: "TL243 connected Hinds Lake to Howley",
+    body: "The 15 km, 138 kV radial line uses 74 H-frame wood structures and was built to connect the Hinds Lake development to the Island system.",
+    sourceId: "nlh-1978-tl243",
+    pages: "physical PDF p. 53",
+    status: "reported"
+  },
+  {
+    date: "1978",
+    category: "station",
+    title: "Western Avalon T3 and its 230 kV bay entered service",
+    body: "The asset register dates transformer T3, breaker B1L17, associated 230 kV switching, buswork, control, metering, relaying, foundations, grounding, fencing, lighting, cable work and steel supports to May 15, 1978.",
+    sourceId: "nlh-1978-western-avalon-assets",
+    pages: "physical PDF pp. 7 to 8",
+    status: "reported"
+  },
+  {
+    date: "1978",
+    category: "station",
+    title: "Six station registers record 1978 structures",
+    body: "Bay Roberts, Blaketown, Cobb's Pond, Jonathan's Pond, Bishop's Falls and Springdale each have station structures or buswork dated to 1978 in the later asset register.",
+    sourceId: "np-1978-substation-structures",
+    pages: "physical PDF pp. 194, 198 to 199",
+    status: "reported"
+  },
+  {
+    date: "1978",
+    category: "protection",
+    title: "Four rural feeder reclosers entered service",
+    body: "The register dates SB7-R2 at South Brook, JA1-R1 and JA2-R1 at Jackson's Arm, and HA1-R1 at Hampden to 1978.",
+    sourceId: "nlh-1978-reclosers",
+    pages: "physical PDF p. 431",
+    status: "reported"
+  },
+  {
+    date: "1978",
+    category: "generation",
+    title: "Holyrood Unit 3 equipment was being installed",
+    body: "Hitachi manufactured the Unit 3 turbine in 1978. The Stage 2 relay panels were installed in 1978, and the transformer now designated T3 was moved from the T1 position to T3 that year.",
+    sourceId: "nlh-1978-holyrood-turbine",
+    pages: "physical PDF p. 135; relay-panel filing physical PDF p. 918; condition study physical PDF p. 547",
     status: "reported"
   },
   {
@@ -13217,6 +13366,15 @@ export const islandTerminalRecords = [
     status: "verified",
     facts: [["Commissioned", "1980"], ["Plant rating", "75 MW vertical Francis turbine"], ["Average annual production", "approximately 340 GWh"], ["Average net head", "approximately 214 m"], ["Penstock", "approximately 1,400 m buried welded steel"], ["138 kV circuit", "TL243 to Howley"]],
     historyRecords: [{
+      label: "1978 TL243 CONNECTION",
+      sourceId: "nlh-1978-tl243",
+      pages: "physical PDF p. 53",
+      facts: [
+        ["Line", "15 km, 138 kV radial circuit to Howley"],
+        ["Structures", "74 H-frame wood structures"],
+        ["Purpose", "connect the Hinds Lake development to the Island system"]
+      ]
+    }, {
       label: "JANUARY 1982 CANAL-DYKE BREACH",
       sourceId: "nlh-1982-board-system-record",
       pages: "physical PDF p. 25",
@@ -15659,6 +15817,16 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "MAY 15, 1978 T3 AND 230 KV BAY",
+        sourceId: "nlh-1978-western-avalon-assets",
+        pages: "physical PDF pp. 7 to 8",
+        facts: [
+          ["Transformer", "T3"],
+          ["Line bay", "B1L17 breaker and associated 230 kV switching and buswork"],
+          ["Station work", "control, metering, relaying, foundations, grounding, fencing, lighting, cable work and steel supports"]
+        ]
+      },
+      {
         label: "1991 TL217 ICE-LOADING UPGRADE",
         sourceId: "nlh-1991-tl217-upgrade",
         pages: "physical PDF p. 54",
@@ -16146,6 +16314,15 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1978 STRUCTURE REGISTER",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 199",
+        facts: [
+          ["Transformer", "BFS-T1, 20 MVA"],
+          ["Structures", "138 kV and 25 kV steel structures installed in 1978"]
+        ]
+      },
+      {
         label: "1981 ORIGINAL 136L CONNECTION",
         sourceId: "np-2025-ca-np-121-central",
         pages: "physical PDF pp. 5 and 7",
@@ -16365,6 +16542,16 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1978 TRANSMISSION EXPANSION",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 194",
+        facts: [
+          ["Transmission bank", "83.2 MVA register total"],
+          ["High-voltage structure", "138 kV steel structure installed in 1978"],
+          ["Distribution bus", "12.47 kV steel structure installed in 1978 for the 20 MVA distribution bank"]
+        ]
+      },
       {
         label: "1984 DISTRIBUTION TRANSFORMER",
         sourceId: "np-1984-bay-roberts-transformer",
@@ -16875,6 +17062,15 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1978 142L TO BOYD'S COVE",
+        sourceId: "np-1978-142l",
+        pages: "physical PDF p. 100",
+        facts: [
+          ["Route", "built from Cobb's Pond to supply Boyd's Cove"],
+          ["Tie", "connects to 114L at Clarke's Head, approximately 1.7 km from Gander Bay Substation"]
+        ]
+      },
       {
         label: "1981 138 KV TRANSMISSION EXPANSION",
         sourceId: "np-2025-ca-np-121-central",
@@ -17669,6 +17865,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1978 TL243 CONNECTION",
+        sourceId: "nlh-1978-tl243",
+        pages: "physical PDF p. 53",
+        facts: [
+          ["Line", "15 km, 138 kV radial circuit to Hinds Lake"],
+          ["Structures", "74 H-frame wood structures"]
+        ]
+      },
       {
         label: "MARCH 2014 EQUIPMENT INSPECTION",
         sourceId: "np-2016-pub-np-064-g",
@@ -18542,6 +18747,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1978 142L TIE",
+        sourceId: "np-1978-142l",
+        pages: "physical PDF p. 100",
+        facts: [
+          ["Line", "142L was built from Cobb's Pond to supply Boyd's Cove"],
+          ["Connection", "142L connects to 114L at Clarke's Head, approximately 1.7 km from Gander Bay Substation"]
+        ]
+      },
+      {
         label: "1979 129L TO CARMANVILLE",
         sourceId: "np-1979-129l",
         pages: "physical PDF p. 329",
@@ -18868,6 +19082,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1978 ORIGINAL STRUCTURES",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 198",
+        facts: [
+          ["Transformer", "0.333 MVA"],
+          ["Structures", "wood 66 kV high-voltage and 7.2 kV low-voltage structures installed in 1978"]
+        ]
+      },
       {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
@@ -19483,6 +19706,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1978 STATION STRUCTURES",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 194",
+        facts: [
+          ["Transmission bank", "41.6 MVA"],
+          ["High-voltage structure", "138 kV steel structure installed in 1978"],
+          ["Later work", "66 kV wood structure and complete substation overhaul dated to 2001"]
+        ]
+      },
       {
         label: "1992 80L REBUILD SECTION",
         sourceId: "np-1992-80l-rebuild",
@@ -27906,6 +28139,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1978 25 KV STRUCTURE",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 199",
+        facts: [
+          ["Transformer", "16.7 MVA"],
+          ["Low-voltage structure", "25 kV wood structure installed in 1978"],
+          ["High-voltage bus", "owned by Newfoundland and Labrador Hydro"]
+        ]
+      },
       {
         label: "2014 FILED REFURBISHMENT AND MODERNIZATION",
         sourceId: "np-2014-springdale",

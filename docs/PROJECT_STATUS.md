@@ -15,6 +15,9 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1978 system record from historical demand, transmission, terminal-station, distribution-station, rural-protection and Holyrood equipment records.
+- Added 639.9 MW Newfoundland Power peak demand, 939 MW Island transmission peak, 142L from Cobb's Pond toward Boyd's Cove, TL243 from Hinds Lake to Howley, Western Avalon T3 and its 230 kV bay, dated structures at Bay Roberts, Blaketown, Cobb's Pond, Jonathan's Pond, Bishop's Falls and Springdale, four rural reclosers, and the Holyrood Unit 3 turbine manufacture, relay-panel installation and T3 transformer movement.
+- Completed NPREG-050 and opened NPREG-051 for the surviving 1977 system and annual records.
 - Reconstructed the surviving 1979 system record from historical demand, transmission, distribution, telecommunications, station-equipment, protection and Holyrood records.
 - Added 664.1 MW Newfoundland Power peak demand, 997 MW Island transmission peak, 129L from Gander Bay to Carmanville, the ten-hop West Coast microwave system, the Greenhill 12.47 kV steel bus, Barachois reclosers, and Holyrood Unit 3 bus, protection, DC and excitation equipment.
 - Preserved the Holyrood Unit 3 date conflict. One filing says Stage 2 came online in spring 1979; another says the turbine-generator was commissioned in 1980. Preserved the TL232 conflict between construction during 1979 and 1980 and the later 1981 construction date.
@@ -339,7 +342,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1978 system and annual records under `NPREG-050`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1977 system and annual records under `NPREG-051`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
