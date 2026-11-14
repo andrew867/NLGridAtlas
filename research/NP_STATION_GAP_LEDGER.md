@@ -697,6 +697,14 @@ The March 2014 inspection-form asset registers are now attached to the HWD, MOL,
 - [x] The 32-circuit fibre inventory and its control, SCADA, relay and voice uses are recorded, physical PDF pp. 228 to 234.
 - [ ] The reviewed 2008 year-end report identifies 20L, Cape Broyle and Fermeuse completions. It does not identify completion of every station or hydro item in the 2008 filing.
 
+## 2007 capital-record reconciliation
+
+- [x] Direct 2007 station records are attached to Blaketown, Clarkes Pond, Garnish, Glovertown, Goulds, Ridge Road, and Stamp's Lane, physical PDF pp. 160 to 169.
+- [x] Rattling Brook separates the filed plant and station scope from the later report that the 66 kV transmission, distribution and generation substation modernization was completed in 2007, physical PDF pp. 18 to 19, 27 to 28 and 375 to 385; 2021 Capital Budget Application physical PDF pp. 110 to 111.
+- [x] The filed 43L and 110L stages and route sheets are attached to Heart's Content and Lockston. Later records identify 43L and the Bonavista Peninsula rebuild program as complete, physical PDF pp. 178 to 182; PUB-NP-007 physical PDF p. 2; Q4 2013 report physical PDF p. 787.
+- [x] Petty Harbour Forebay Dam, Horse Chops West Dam, and the completed Wesleyville gas-generator exchange are attached to their station records, physical PDF pp. 133 to 134 and 139.
+- [ ] The 2007 filing does not identify completion of every proposed station, hydro, or Rattling Brook plant component. Only later asset-specific completion records are marked complete.
+
 ## Remaining data classes
 
 ## 2019 capital-record reconciliation

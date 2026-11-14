@@ -946,6 +946,18 @@
       "notes": "The ten filed station records now use the direct 2008 application pages. The 20L and 111L records preserve the filed 2008 sections and later completion evidence. The hydro records add plant-specific civil and equipment work. The 32-circuit fibre inventory and its operational uses are dated separately from later construction outcomes."
     },
     {
+      "id": "NPREG-021",
+      "title": "Reconcile Newfoundland Power 2007 station, transmission, generation, and system records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2007 capital application, Rattling Brook plant and station work, the substation strategic plan, 43L, 110L and 20L rebuild stages, hydro-facility work, the Wesleyville gas-generator exchange, and later completion evidence.",
+      "dependencies": ["NPREG-020"],
+      "completion_evidence": ["research/NP_2007_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/43l-2007-route-181.png", "public/reference-maps/110l-2007-route-182.png", "tests/np-2007-capital.test.js"],
+      "blocker": null,
+      "notes": "The seven direct strategic-plan station records now use the 2007 application pages. Rattling Brook separates the filed plant scope from the later report that the 66 kV station modernization was completed. The 43L and 110L records preserve staged rebuild lengths and route sheets. Petty Harbour, Horse Chops and Wesleyville retain project-specific generation records."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

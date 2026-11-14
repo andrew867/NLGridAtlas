@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .vite/
+.playwright-cli/
 *.log
 research/derived/*
 !research/derived/np-2006-handbook.json

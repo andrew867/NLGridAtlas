@@ -210,6 +210,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2020%20(f).pdf"
   },
   {
+    id: "np-2007-capital",
+    year: 2006,
+    organization: "Newfoundland Power",
+    title: "2007 Capital Budget Application",
+    topics: ["Rattling Brook", "Blaketown", "Clarkes Pond", "Garnish", "Glovertown", "Goulds", "Ridge Road", "Stamp's Lane", "43L", "110L", "20L", "substation modernization", "transmission rebuild", "hydroelectric generation"],
+    pages: "physical PDF pp. 18 to 31, 133 to 183 and 375 to 385",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2007-wesleyville-completion",
+    year: 2006,
+    organization: "Newfoundland Power",
+    title: "2007 Capital Budget Application, Wesleyville Gas Turbine Refurbishment Update",
+    topics: ["Wesleyville", "Rolls-Royce AVON", "gas generator", "project completion"],
+    pages: "physical PDF p. 139",
+    status: "verified",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2021-rattling-brook-completion",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, Rattling Brook Substation Record",
+    topics: ["Rattling Brook", "66 kV", "6.9 kV", "12.5 kV", "substation refurbishment", "capital completion"],
+    pages: "physical PDF pp. 108 to 112",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
+  },
+  {
     id: "np-2008-broad-cove",
     year: 2007,
     organization: "Newfoundland Power",
@@ -3304,7 +3334,7 @@ export const sources = [
     year: 2019,
     organization: "Newfoundland Power",
     title: "PUB-NP-007, Transmission Line Rebuild Strategy Status Update",
-    topics: ["16L", "21L", "25L", "302L", "transmission line rebuild", "completion status"],
+    topics: ["16L", "20L", "21L", "25L", "43L", "110L", "302L", "transmission line rebuild", "completion status"],
     pages: "physical PDF p. 2",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/rfi/PUB-NP-007.PDF"
@@ -6164,6 +6194,15 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "2007",
+    category: "station",
+    title: "Rattling Brook 66 kV station refurbished",
+    body: "Newfoundland Power later reported that refurbishment and modernization of the 66 kV transmission, distribution and generation substation was completed in 2007.",
+    sourceId: "np-2021-rattling-brook-completion",
+    pages: "physical PDF pp. 110 to 111",
+    status: "verified"
+  },
+  {
     date: "2010",
     category: "load",
     title: "Transformer backup criterion was violated",
@@ -8690,6 +8729,16 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2007 FILED STATION ARRANGEMENT AND WORK",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF p. 165",
+        facts: [
+          ["Filed station", "built in 1976 with GLV-T1 rated 20 MVA at 138/25 kV; supplied from a tap on 124L"],
+          ["Distribution", "two 25 kV feeders serving approximately 2,300 customers"],
+          ["Filed work", "replace transformer lightning arresters and the tap-changer controller; install animal protection; automate both feeders and the tap changer"]
+        ]
+      },
+      {
         label: "2007 AND 2010 COMPLETED WORK",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF p. 4",
@@ -10484,6 +10533,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2005 COMPLETED GAS-GENERATOR EXCHANGE",
+        sourceId: "np-2007-wesleyville-completion",
+        pages: "physical PDF p. 139",
+        facts: [
+          ["Unit", "Rolls-Royce AVON gas generator"],
+          ["Completed work", "exchanged the existing gas generator for a zero-hour-rated refurbished unit supplied by Siemens Canada; installed and commissioned at Wesleyville"],
+          ["Final cost", "$1.139 million compared with the $1.124 million approved budget"]
+        ]
+      },
       {
         label: "2026 EXISTING COMBUSTION TURBINE",
         sourceId: "np-2027-wesleyville-refurbishment",
@@ -13827,6 +13886,17 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2007 FILED SUBSTATION WORK",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF pp. 160 to 161",
+        facts: [
+          ["2007 transformer record", "BLK-T3 at 42 MVA, 138/66 kV; BLK-T2 at 20 MVA, 138/25 kV"],
+          ["2007 circuit record", "64L and 48L on the 138 kV bus; 55L, 94L, 80L and 86L on the 66 kV bus"],
+          ["Filed work", "replace BLK-T2 radiator fins and air-break switch, replace silicon-carbide arresters on both transformers, and add small-animal protection"],
+          ["Distribution", "two 25 kV feeders serving approximately 2,600 customers in the 2007 filing"]
+        ]
+      },
+      {
         label: "2025 REPAIR DURATION RECORD",
         sourceId: "np-2026-nlh-np-014",
         pages: "physical PDF p. 1",
@@ -14263,6 +14333,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2007 FILED STATION ARRANGEMENT AND WORK",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF pp. 161 to 162",
+        facts: [
+          ["2007 transformer record", "CLK-T1 and CLK-T2 at 7.5 MVA each, 66/12.5 kV"],
+          ["Supply", "radial 55L from Blaketown"],
+          ["Distribution", "three 12.5 kV feeders serving approximately 2,500 customers in the Placentia and Argentia areas"],
+          ["Filed work", "replace five deteriorated foundations and both tap-changer controllers, automate all three feeders, and add small-animal protection"]
+        ]
+      },
       {
         label: "2010 COMPLETED MODERNIZATION",
         sourceId: "np-2027-pub-np-005",
@@ -15430,6 +15511,17 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2007 FILED 110L REBUILD SECTION",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF pp. 178 to 179 and 182",
+        facts: [
+          ["Line", "66 kV between Clarenville and Lockston; 79 km; single wood-pole construction; built in 1958"],
+          ["Filed condition", "corroded conductor had reduced the line to about one-half of its original load-carrying capacity"],
+          ["Earlier sections", "17.4 km upgraded in 1966; 18.2 km upgraded from 1972 to 1974; 6.7 km filed for 2006"],
+          ["Filed 2007 section", "remaining 14.1 km between Lockston and Summerville; filed cost $1.311 million"]
+        ]
+      },
+      {
         label: "2011 FILED 2012 PLANT REFURBISHMENT",
         sourceId: "np-2012-lockston",
         pages: "physical PDF pp. 28, 44 and 278 to 294",
@@ -15488,6 +15580,16 @@ export const stationProfiles = [
         facts: [
           ["Project status", "early construction had begun and work was under way to transfer the station load to a temporary transformer installation"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED TRANSMISSION ROUTE",
+    referenceSheets: [
+      {
+        title: "110L filed 2007 rebuild section",
+        image: "./reference-maps/110l-2007-route-182.png",
+        alt: "Filed 110L topographic map showing the 2007 rebuild section between Lockston and Summerville",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF p. 182"
       }
     ]
   },
@@ -16548,6 +16650,27 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2007 COMPLETED 66 KV STATION MODERNIZATION",
+        sourceId: "np-2021-rattling-brook-completion",
+        pages: "physical PDF pp. 110 to 111",
+        facts: [
+          ["Completed work", "refurbishment and modernization of the 66 kV transmission, distribution and generation substation"],
+          ["Retained arrangement", "66 kV bus, RBK-T1 to the 6.9 kV generation bus, RBK-T2 to the 12.5 kV feeder bus, and two generating units"]
+        ]
+      },
+      {
+        label: "2007 FILED PLANT AND STATION SCOPE",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF pp. 18 to 19, 27 to 28 and 375 to 385",
+        facts: [
+          ["Plant", "two vertical Francis turbine-generator units commissioned in 1958; each generator originally rated 7,500 kVA"],
+          ["Electrical scope", "replace switchgear and generator power cables; modernize protection, controls, governors, excitation, AC and DC distribution, station service, and communications"],
+          ["Mechanical scope", "replace both main inlet butterfly valves and overhaul the Unit 2 exciter and generator brake system"],
+          ["Station scope", "enlarge the site, rebuild the 12.5 kV bus to standard clearances, and install a three-phase station-service transformer"],
+          ["Filed 2007 cost", "$18.242 million for the plant and $578,000 for the station"]
+        ]
+      },
+      {
         label: "2011 RATTLING LAKE SPILLWAY REPLACEMENT",
         sourceId: "np-2011-hydro-work",
         pages: "physical PDF pp. 204 to 210",
@@ -17340,8 +17463,8 @@ export const stationProfiles = [
     engineeringRecord: {
       date: "2007 SUBSTATION STRATEGIC PLAN",
       title: "Goulds switching and distribution arrangement",
-      sourceId: "np-2024-pub-np-033",
-      pages: "physical PDF pp. 29 to 30",
+      sourceId: "np-2007-capital",
+      pages: "physical PDF pp. 166 to 167",
       facts: [
         ["Station built", "1954"],
         ["66 kV lines", "4L and 25L to St. John's Main; 17L to Big Pond; 18L to Glendale; 72L to Hardwoods"],
@@ -17368,6 +17491,16 @@ export const stationProfiles = [
       facts: [["GOU-02", "12.5 kV; GOU-T2/T3; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2007 FILED STATION WORK",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF pp. 166 to 167",
+        facts: [
+          ["Filed civil work", "replace the GOU-T1 concrete foundation"],
+          ["Filed switching work", "replace the bypassed 66 kV bus-tie switch and add a 17L breaker bypass switch"],
+          ["Filed instrument work", "replace the deteriorated 66 kV potential transformers"]
+        ]
+      },
       {
         label: "2011 FILED / 2019 REPORTED 25L REBUILD",
         sourceId: "np-2011-transmission-rebuild",
@@ -17694,6 +17827,16 @@ export const stationProfiles = [
       facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2007 FILED STATION ARRANGEMENT AND WORK",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF pp. 167 to 168",
+        facts: [
+          ["Filed station", "built in 1963 with 30L to King's Bridge and 32L and 67L to Oxen Pond"],
+          ["Distribution", "eight 12.5 kV feeders serving approximately 4,200 customers after retirement of the 4.16 kV RRD-T1 bank"],
+          ["Filed work", "refurbish one 66 kV structure foundation; replace relaying and automate eight feeders"]
+        ]
+      },
       {
         label: "2008 TO 2012 RRD-09 RELIABILITY REVIEW",
         sourceId: "np-2014-reliability-review",
@@ -18174,15 +18317,16 @@ export const stationProfiles = [
     mapPages: [["SLA-02", 139], ["SLA-03", 140], ["SLA-05", 141], ["SLA-06", 142], ["SLA-07", 143], ["SLA-08", 144], ["SLA-10", 145], ["SLA-11", 146], ["SLA-12", 147], ["SLA-13", 148]],
     eventLoads: [],
     engineeringRecord: {
-      date: "2011 STATION RECORD",
+      date: "2007 SUBSTATION STRATEGIC PLAN",
       title: "Stamp's Lane station arrangement",
-      sourceId: "np-2011-capital-stations",
-      pages: "physical PDF pp. 297 to 298",
+      sourceId: "np-2007-capital",
+      pages: "physical PDF pp. 168 to 169",
       facts: [
+        ["Station built", "1963"],
         ["Transformer bank", "four transformers; 50 MVA combined at 12.5 kV and 21 MVA combined at 4.16 kV"],
-        ["Distribution", "five 4.16 kV feeders and six 12.5 kV feeders"],
+        ["Distribution", "five 4.16 kV feeders and six 12.5 kV feeders; approximately 9,300 customers"],
         ["66 kV circuits", "13L, 14L, 15L, 31L, 69L and 70L"],
-        ["2007 work", "foundation and power-cable repairs; relay upgrades on 11 feeders"]
+        ["Filed 2007 work", "refurbish four 66 kV structure foundations; replace SLA-T2 power cables; replace relaying and automate 11 feeders"]
       ]
     },
     planningRecord: {
@@ -18937,6 +19081,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2007 FILED FOREBAY DAM WORK",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF p. 134",
+        facts: [
+          ["Filed work", "place anti-scour and erosion protection at the dam abutments and downstream toe for overtopping protection"],
+          ["Filed cost", "$50,000"]
+        ]
+      },
+      {
         label: "2008 FILED COCHRANE POND DAM WORK",
         sourceId: "np-2008-hydro-rehabilitation",
         pages: "physical PDF p. 150",
@@ -19204,6 +19357,16 @@ export const stationProfiles = [
       facts: [["HCP-T1", "generation transformer; 66/6.9 kV; 12.00 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2007 FILED HORSE CHOPS WEST DAM WORK",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF p. 133",
+        facts: [
+          ["Filed condition", "inspection records identified holes in riprap, missing bedding-transition material, and evidence of breaching"],
+          ["Filed work", "refurbish the upstream slope"],
+          ["Filed cost", "$76,000"]
+        ]
+      },
       {
         label: "2008 FILED MOUNT CARMEL POND DAM WORK",
         sourceId: "np-2008-hydro-rehabilitation",
@@ -21043,6 +21206,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2007 FILED 43L FINAL REBUILD SECTION",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF pp. 178 and 181",
+        facts: [
+          ["Line", "66 kV radial line between Heart's Content and New Chelsea; 25.1 km; H-frame wood-pole construction; built in 1956"],
+          ["Service", "more than 2,500 customers and the New Chelsea hydro plant grid connection"],
+          ["Rebuild stages", "8.0 km rebuilt in 2005; 12.0 km filed for 2006; final 5.1 km filed for 2007 at $570,000"],
+          ["Later status", "the 2019 strategy update lists 43L complete"]
+        ]
+      },
+      {
         label: "2008 FILED RUNNER AND WICKET-GATE REPLACEMENT",
         sourceId: "np-2008-hydro-rehabilitation",
         pages: "physical PDF pp. 153 to 154",
@@ -21092,6 +21266,16 @@ export const stationProfiles = [
           ["Filed section", "13.6 km of 1958-vintage line; 55 H-frame structures and 3 single-pole structures"],
           ["Earlier work", "2.0 km entering Carbonear was built in 1974; 5.3 km was rebuilt after the March 2010 ice storm"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED TRANSMISSION ROUTE",
+    referenceSheets: [
+      {
+        title: "43L final 2007 rebuild section",
+        image: "./reference-maps/43l-2007-route-181.png",
+        alt: "Filed 43L topographic map showing the final 2007 rebuild section between Heart's Content and New Chelsea",
+        sourceId: "np-2007-capital",
+        pages: "physical PDF p. 181"
       }
     ]
   },
