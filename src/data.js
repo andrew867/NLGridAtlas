@@ -520,6 +520,126 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1983-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1983", "Newfoundland Power peak demand", "Hydro Rural peak demand", "Island peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1983-planning-forecast",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-295, 1981 Island Supply Planning Table",
+    topics: ["1983", "coincident peak demand", "installed capability", "LOLP", "energy balance", "forecast"],
+    pages: "physical PDF p. 8",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf"
+  },
+  {
+    id: "nlh-1983-northern-interconnection",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "CA-NP-001, 1983 Northern Peninsula Interconnection Record",
+    topics: ["1983", "Hawke's Bay", "Flowers Cove", "Great Northern Peninsula", "138 kV", "69 kV", "diesel displacement"],
+    pages: "physical PDF p. 31",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/NLH2018CostofService/rfis/CA-NP-001.PDF"
+  },
+  {
+    id: "nlh-1983-tl248-deer-lake",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-318, TL248 and Deer Lake Ring-Bus History",
+    topics: ["1983", "TL248", "Deer Lake", "Massey Drive", "138 kV", "ring bus"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
+  },
+  {
+    id: "nlh-1983-upper-salmon",
+    year: 2001,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "NP-44 Revised, Hydroelectric Plant In-Service Dates",
+    topics: ["1983", "Upper Salmon", "hydroelectric generation", "commissioning"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/hydresp/NFpower/NP44Revised.pdf"
+  },
+  {
+    id: "nlh-1983-upper-salmon-rating",
+    year: 1983,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "1983 Electric Power Control Act Report, Upper Salmon Commissioning",
+    topics: ["1983", "Upper Salmon", "86 MW", "commissioning", "Cat Arm"],
+    pages: "physical PDF p. 24",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Consents/83PMARCH.pdf"
+  },
+  {
+    id: "nlh-1983-bay-despoir-flood",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Muskrat Falls Project Exhibit 54, Bay d'Espoir Flood Analysis",
+    topics: ["1983", "Bay d'Espoir", "flood", "probable maximum precipitation", "spillway capacity"],
+    pages: "physical PDF pp. 27 to 28",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit54.pdf"
+  },
+  {
+    id: "np-1983-substation-assets",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, 1983 Substation Structure and Bus Records",
+    topics: ["1983", "Morris", "St. John's Main", "Long Lake", "Grand Bay", "substation", "switchgear"],
+    pages: "physical PDF pp. 192 and 201",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-1983-hydro-plants",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Morris, Topsail and Lawn Hydroelectric Records",
+    topics: ["1983", "Morris", "Topsail", "Lawn", "turbine", "generator", "hydroelectric generation"],
+    pages: "physical PDF pp. 137 to 140",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-1983-topsail-refurbishment",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Topsail 1983 Refurbishment History",
+    topics: ["1983", "Topsail", "turbine", "generator", "governor", "switchgear", "protection", "control"],
+    pages: "physical PDF p. 270",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf"
+  },
+  {
+    id: "nlh-1983-grand-bay-capacitor",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Island Transmission System Outlook, Grand Bay Capacitor-Bank History",
+    topics: ["1983", "Grand Bay", "3 MVAR", "66 kV", "capacitor bank", "voltage support"],
+    pages: "physical PDF p. 24",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit24-IslandTransmissionOutlook.pdf"
+  },
+  {
+    id: "np-1983-vhf",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "PUB-69 NP, Historical VHF Mobile and Tower Inventory",
+    topics: ["1983", "VHF", "Midland 70-341", "mobile radio", "Torbayman's Pond", "radio tower"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/PUB-69NP.pdf"
+  },
+  {
     id: "np-1984-capital",
     year: 1991,
     organization: "Newfoundland Power",
@@ -7888,6 +8008,21 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1983-system-record",
+    scope: "1983 actual demand, the 1981 planning case, northern and western transmission additions, generation work, station assets, flood history and VHF equipment",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-1983-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-1983-planning-forecast", pages: "physical PDF p. 8" },
+      { sourceId: "nlh-1983-northern-interconnection", pages: "physical PDF p. 31" },
+      { sourceId: "nlh-1983-tl248-deer-lake", pages: "physical PDF p. 4" },
+      { sourceId: "nlh-1983-upper-salmon", pages: "physical PDF p. 1" },
+      { sourceId: "np-1983-substation-assets", pages: "physical PDF pp. 192 and 201" },
+      { sourceId: "np-1983-hydro-plants", pages: "physical PDF pp. 137 to 140" },
+      { sourceId: "np-1983-vhf", pages: "physical PDF p. 1" }
+    ]
+  },
+  {
     id: "np-1984-system-record",
     scope: "1984 actual demand and capital records, the 1981 planning case, and the April Avalon sleet-storm failure and restoration record",
     status: "reported",
@@ -8105,6 +8240,123 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1983",
+    category: "load",
+    title: "The Island transmission peak was 1,251 MW",
+    body: "The historical demand table reports Newfoundland Power peak demand of 742.6 MW, Hydro Rural peak demand of 49.2 MW, and Hydro system peak demand of 1,040 MW.",
+    sourceId: "nlh-1983-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1983 planning case",
+    category: "load",
+    title: "A 1981 planning table projected a 1,362 MW coincident peak",
+    body: "The case used 1,594 MW installed capability, a 0.15 loss-of-load-probability index, 7,059 GWh system energy requirement, 7,455 GWh firm energy capability, and a 396 GWh surplus.",
+    sourceId: "np-1983-planning-forecast",
+    pages: "physical PDF p. 8",
+    status: "proposed"
+  },
+  {
+    date: "January 1983",
+    category: "generation",
+    title: "Upper Salmon entered service",
+    body: "The contemporary Board report describes an 86 MW hydroelectric facility. The later 2013 Island system one-line lists the plant at 84 MW; the filings do not explain the rating difference.",
+    sourceId: "nlh-1983-upper-salmon-rating",
+    pages: "physical PDF p. 24; compare 2013 Application Volume II physical PDF p. 80",
+    status: "unresolved"
+  },
+  {
+    date: "January 1983",
+    category: "water",
+    title: "A severe flood changed the Bay d'Espoir design basis",
+    body: "The later flood-analysis report states that the storm exceeded the probable maximum precipitation used for the original design. Hydro commissioned flood studies for the reservoir system and Salmon basin.",
+    sourceId: "nlh-1983-bay-despoir-flood",
+    pages: "physical PDF pp. 27 to 28",
+    status: "reported"
+  },
+  {
+    date: "1983",
+    category: "network",
+    title: "TL241 and TL244 extended the Great Northern Peninsula grid",
+    body: "TL241 was built from Hawke's Bay to Plum Point to 138 kV standard but operated at 66 kV. TL244 was built from Plum Point to Bear Cove to 66 kV standard. Both were upgraded for 138 kV operation in 1995.",
+    sourceId: "nlh-northern-line-history-2001",
+    pages: "physical PDF p. 35",
+    status: "reported"
+  },
+  {
+    date: "1983",
+    category: "network",
+    title: "The Hawke's Bay to Flowers Cove interconnection reached 30 communities",
+    body: "Hydro's annual-report passage describes 84 km of 138/69 kV line. It connected communities from Castors River to Eddies Cove that had previously used diesel generation.",
+    sourceId: "nlh-1983-northern-interconnection",
+    pages: "physical PDF p. 31",
+    status: "reported"
+  },
+  {
+    date: "1983",
+    category: "network",
+    title: "TL248 connected Deer Lake and Massey Drive",
+    body: "The line ran from Deer Lake to Massey Drive. With TL239 and the later TL247, it formed the Deer Lake 138 kV ring-bus arrangement established during 1983 and 1984.",
+    sourceId: "nlh-1983-tl248-deer-lake",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1983",
+    category: "generation",
+    title: "Morris entered service upstream of Mobile",
+    body: "The 1,135 kW plant used one Barber horizontal Francis turbine and one Ideal Electric induction generator under 30.0 m net head.",
+    sourceId: "np-1983-hydro-plants",
+    pages: "physical PDF p. 137",
+    status: "reported"
+  },
+  {
+    date: "1983",
+    category: "generation",
+    title: "Topsail received a new turbine-generator and plant controls",
+    body: "The major refurbishment replaced the turbine, generator, switchgear, protection, and control systems. The Barber governor and control system also date to this work.",
+    sourceId: "np-1983-topsail-refurbishment",
+    pages: "physical PDF p. 270",
+    status: "reported"
+  },
+  {
+    date: "1983",
+    category: "generation",
+    title: "Lawn replaced its two original generating units",
+    body: "The refurbishment installed one 600 kW Barber horizontal Francis turbine and one Ideal Electric generator in place of the two original Voith units.",
+    sourceId: "np-1983-hydro-plants",
+    pages: "physical PDF p. 140",
+    status: "reported"
+  },
+  {
+    date: "1983",
+    category: "station",
+    title: "Station records date assets at Morris, St. John's Main, Long Lake, and Grand Bay",
+    body: "The register dates the Morris 66/2.4 kV structures, St. John's Main 12.47 kV low-voltage structure, Long Lake 66/25 kV structures, and Grand Bay 66 kV high-voltage structure to 1983. A later filing describes Grand Bay station as built in 1984.",
+    sourceId: "np-1983-substation-assets",
+    pages: "physical PDF pp. 192 and 201; compare 2020 Capital Budget Application physical PDF p. 364",
+    status: "unresolved"
+  },
+  {
+    date: "1983",
+    category: "station",
+    title: "Hydro installed the Grand Bay capacitor bank for peak voltage support",
+    body: "The later system outlook identifies a 3 MVAR, 66 kV capacitor bank and dates its installation to 1983.",
+    sourceId: "nlh-1983-grand-bay-capacitor",
+    pages: "physical PDF p. 24",
+    status: "reported"
+  },
+  {
+    date: "1983",
+    category: "telecommunications",
+    title: "Newfoundland Power added Midland VHF mobiles and the Torbayman's Pond tower",
+    body: "The 2004 inventory identifies Midland 70-341 mobile radios purchased in 1983 and dates the Torbayman's Pond VHF tower to 1983. It does not state how many Midland units were purchased that year.",
+    sourceId: "np-1983-vhf",
+    pages: "physical PDF p. 1",
     status: "reported"
   },
   {
@@ -12074,7 +12326,7 @@ export const islandTerminalRecords = [
     code: "USL",
     name: "Upper Salmon Generating Station",
     status: "verified",
-    facts: [["Plant rating", "84 MW on the 2013 system one-line"], ["2001 energy capability", "552 GWh"], ["230 kV circuits", "TL234 to Bay d'Espoir; TL263 to Granite Canal Tap"], ["Q4 2024 work", "T1 bushings replaced and transformer oil processed"], ["Q2 2025 work", "Circuit breaker L34T1 refurbished"]],
+    facts: [["In service", "January 1983"], ["Contemporary rating", "86 MW in the 1983 Board report"], ["Later plant rating", "84 MW on the 2013 system one-line"], ["2001 energy capability", "552 GWh"], ["230 kV circuits", "TL234 to Bay d'Espoir; TL263 to Granite Canal Tap"], ["Q4 2024 work", "T1 bushings replaced and transformer oil processed"], ["Q2 2025 work", "Circuit breaker L34T1 refurbished"]],
     diagram: {
       label: "2013 plant rating / 2018 filed routes",
       buses: [{ id: "b1", label: "plant connection", voltage: "230 kV" }],
@@ -12082,7 +12334,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL234", destination: "Bay d'Espoir", bus: "b1", destinationCode: "BDE" }, { label: "TL263", destination: "Granite Canal Tap", bus: "b1" }],
       generators: [{ label: "Upper Salmon", rating: "84 MW", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 14"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-q2-2025-terminal-work", "physical PDF p. 34")]
+    sources: [sourceRef("nlh-1983-upper-salmon", "physical PDF p. 1"), sourceRef("nlh-1983-upper-salmon-rating", "physical PDF p. 24"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 14"), sourceRef("np-2018-pub-np-084", "physical PDF p. 26"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-q2-2025-terminal-work", "physical PDF p. 34")]
   },
   {
     code: "GRC",
@@ -13225,6 +13477,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1983 STATION STRUCTURES",
+        sourceId: "np-1983-substation-assets",
+        pages: "physical PDF p. 201",
+        facts: [
+          ["Station record", "14.9 MVA total transformer capacity"],
+          ["High-voltage structure", "wood, 66 kV, installed in 1983"],
+          ["Low-voltage structure", "wood, 25 kV, installed in 1983"]
+        ]
+      },
       {
         label: "2021 FILED LGL-02 REFURBISHMENT",
         sourceId: "np-2021-lgl02",
@@ -16889,6 +17151,26 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1983 STATION ASSETS / 1984 STATION DATE",
+        sourceId: "np-1983-substation-assets",
+        pages: "physical PDF p. 201",
+        facts: [
+          ["1983 asset record", "66 kV steel high-voltage structure installed in 1983; 14.93 MVA total transformer capacity"],
+          ["1984 station record", "the 2019 project report separately describes Grand Bay as built in 1984"],
+          ["Record state", "the two filings do not explain the one-year difference"]
+        ]
+      },
+      {
+        label: "1983 HYDRO CAPACITOR BANK",
+        sourceId: "nlh-1983-grand-bay-capacitor",
+        pages: "physical PDF p. 24",
+        facts: [
+          ["Equipment", "3 MVAR, 66 kV capacitor bank"],
+          ["Purpose", "peak voltage support for the Doyles to Port aux Basques system"],
+          ["Later disposition", "a 2010 review concluded that the bank could be removed instead of replacing its leaking circuit breaker"]
+        ]
+      },
       {
         label: "2016 TAP-CHANGER RESTRICTION",
         sourceId: "np-2020-grand-bay",
@@ -22974,6 +23256,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1983 LOW-VOLTAGE STRUCTURE",
+        sourceId: "np-1983-substation-assets",
+        pages: "physical PDF p. 192",
+        facts: [
+          ["12.47 kV structure", "steel low-voltage structure installed in 1983"],
+          ["Equipment", "the station table identifies low-voltage switchgear"]
+        ]
+      },
+      {
         label: "2005 FILED SWITCHGEAR ENCLOSURES",
         sourceId: "np-2005-substation-program",
         pages: "physical PDF pp. 312 to 313",
@@ -25270,6 +25561,17 @@ export const stationProfiles = [
       facts: [["TOP-T1", "generation transformer; 25/2.4 kV; 0.75 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1983 MAJOR REFURBISHMENT",
+        sourceId: "np-1983-topsail-refurbishment",
+        pages: "physical PDF p. 270",
+        facts: [
+          ["Replaced systems", "turbine, generator, switchgear, protection, and control systems"],
+          ["Governor", "Barber Voest-Alpine electronic governor installed with the refurbishment"],
+          ["Generating unit", "Barber turbine and Ideal Electric generator replaced the original 1.2 MW unit"],
+          ["Waterway", "the 1,915 m by 1,067 mm penstock and extended intake also date to 1983"]
+        ]
+      },
       {
         label: "2004 FILED CONTROL AND PROTECTION REPLACEMENT",
         sourceId: "np-2004-hydro-rehabilitation",

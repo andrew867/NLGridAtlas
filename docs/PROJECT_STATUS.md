@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1983 system record from historical demand, planning, transmission, generation, station, flood and telecommunications records.
+- Added 742.6 MW Newfoundland Power peak demand, 1,251 MW Island transmission peak, the 1981 planning case, Upper Salmon commissioning, the Bay d'Espoir flood study, TL241, TL244 and TL248, the Hawke's Bay to Flowers Cove interconnection, the Deer Lake ring, Morris commissioning, Topsail and Lawn generation work, dated station assets, the Grand Bay capacitor bank, Midland VHF mobiles and the Torbayman's Pond tower.
+- Preserved the Upper Salmon rating difference between the contemporary 86 MW Board report and later 84 MW system one-line. Preserved the Grand Bay difference between the 1983 high-voltage structure record and the later 1984 station date. The located capital and reliability series begin after 1983.
+- Completed NPREG-045 and opened NPREG-046 for the surviving 1982 system and annual records.
 - Reconstructed the surviving 1984 system record from historical demand, capital, planning, transmission, storm, station and generation records.
 - Added 833.8 MW Newfoundland Power peak demand, 1,186 MW Island transmission peak, $30.615 million capital expenditure, the 1981 planning case, the five-route Avalon sleet-storm failure and restoration sequence, manual feeder rotation before SCADA, the TL203 ice-loading upgrade, TL247 and the Deer Lake ring bus, the Bay Roberts transformer, and plant work at Lookout Brook, Petty Harbour, Port Union, Cat Arm, Hardwoods and Greenhill.
 - Corrected the unresolved Tors Cove penstock record. Later Newfoundland Power sources separately state 1984, 1985 and 1986 for the same replacement.
@@ -320,7 +324,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1983 system and annual records under `NPREG-045`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1982 system and annual records under `NPREG-046`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

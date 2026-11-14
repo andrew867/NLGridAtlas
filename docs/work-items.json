@@ -1238,12 +1238,24 @@
       "title": "Reconcile Newfoundland Power 1983 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1983 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-044"],
+      "completion_evidence": ["research/NP_1983_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1983-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand and planning tables establish the actual and forecast system values. Later primary records establish Upper Salmon commissioning, the Bay d'Espoir flood study, TL241, TL244 and TL248, the Deer Lake ring, the Hawke's Bay to Flowers Cove interconnection, Morris, Topsail, Lawn, dated station assets, the Grand Bay capacitor bank and VHF equipment. Upper Salmon's contemporary 86 MW description and later 84 MW one-line remain separate. Grand Bay's 1983 high-voltage structure date and later 1984 station date also remain unresolved. No supported 1983 Newfoundland Power capital, reliability, energy-sales or customer-account total was located."
+    },
+    {
+      "id": "NPREG-046",
+      "title": "Reconcile Newfoundland Power 1982 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1982 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-045"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with surviving capital, demand, planning and financial tables, then reconcile station, line, generation, protection and telecommunications histories without assigning dates from adjacent-year summaries."
+      "notes": "Start with surviving demand and planning tables, then reconcile TL239, 300L, 308L, station, generation, protection, flood, financial and telecommunications records without treating asset-account dates as project completion unless the filing establishes the work."
     },
     {
       "id": "ASSET-001",
