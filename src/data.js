@@ -165,7 +165,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "CA-NP-035, St. John's Diesel Plant Historical and Decommissioning Record",
     topics: ["St. John's Diesel", "SJD", "diesel generation", "Nordberg", "General Electric", "6.6 kV", "4.16 kV", "St. John's Main", "decommissioning"],
-    pages: "physical PDF pp. 1, 180 to 181, 185, 187, 191 and 193",
+    pages: "physical PDF pp. 1, 178, 180 to 181, 185, 187, 191 and 193",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-035.pdf"
   },
@@ -528,6 +528,26 @@ export const sources = [
     pages: "physical PDF pp. 66 to 67",
     status: "unresolved",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
+  },
+  {
+    id: "np-1953-blackwoods-pond",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "U-2, Blackwoods Pond Reservoir Construction Record",
+    topics: ["1953", "Blackwoods Pond", "reservoir", "dam", "Cape Broyle", "Horse Chops"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/undertaking/U-2.pdf"
+  },
+  {
+    id: "np-1953-horse-chops-spillway",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Horse Chops Spillway",
+    topics: ["1953", "Horse Chops", "spillway", "stop logs", "dam safety", "hydroelectric generation"],
+    pages: "physical PDF pp. 176 to 177",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
   },
   {
     id: "np-1954-petty-harbour-penstock",
@@ -9918,6 +9938,18 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1953-system-record",
+    scope: "1953 thermal generation, hydroelectric development and civil works",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2013-ca-np-035-sjd", pages: "physical PDF pp. 178, 180 to 181 and 187" },
+      { sourceId: "pu-33-2003-sjd", pages: "physical PDF p. 2" },
+      { sourceId: "np-2013-cape-broyle", pages: "physical PDF pp. 258 to 259" },
+      { sourceId: "np-1953-blackwoods-pond", pages: "physical PDF p. 1" },
+      { sourceId: "np-1953-horse-chops-spillway", pages: "physical PDF pp. 176 to 177" }
+    ]
+  },
+  {
     id: "np-1954-system-record",
     scope: "1954 transmission construction, station development, hydroelectric generation and civil works, and utility governance",
     status: "unresolved",
@@ -10667,6 +10699,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1953",
+    category: "generation",
+    title: "St. John's Diesel and Steam plants were built",
+    body: "The 2,500 kW Nordberg diesel and General Electric generator supplied station services for starting the steam plant. The diesel plant connected directly to a St. John's Main distribution line through three 1,500 kVA transformers described as 6.9/4.16 kV.",
+    sourceId: "np-2013-ca-np-035-sjd",
+    pages: "physical PDF pp. 178 and 180 to 181",
+    status: "reported"
+  },
+  {
+    date: "1953",
+    category: "civil",
+    title: "Blackwoods Pond Reservoir was constructed",
+    body: "The reservoir was built as part of the Cape Broyle and Horse Chops hydroelectric development.",
+    sourceId: "np-1953-blackwoods-pond",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1953",
+    category: "civil",
+    title: "Horse Chops spillway was constructed",
+    body: "The original stop-log spillway had one large bay and 11 smaller bays. The 2015 filing reports 150 mm stop logs in the smaller bays and 300 mm stop logs in the large bay.",
+    sourceId: "np-1953-horse-chops-spillway",
+    pages: "physical PDF pp. 176 to 177",
+    status: "reported"
+  },
   {
     date: "1954",
     category: "network",
@@ -17389,6 +17448,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1953 ORIGINAL INSTALLATION",
+        sourceId: "np-2013-ca-np-035-sjd",
+        pages: "physical PDF pp. 178, 180 to 181 and 187",
+        facts: [
+          ["Plant duty", "station-service supply for starting the St. John's Steam Plant"],
+          ["Generating set", "2,500 kW Nordberg diesel and General Electric generator; commissioned in 1953"],
+          ["Grid connection", "direct distribution-line connection to St. John's Main through three 1,500 kVA transformers described as 6.9/4.16 kV"]
+        ]
+      },
       {
         label: "1991 TO 2000 OPERATING-HOUR RECORD",
         sourceId: "np-2013-ca-np-035-sjd",
@@ -30055,6 +30124,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1953 HORSE CHOPS SPILLWAY",
+        sourceId: "np-1953-horse-chops-spillway",
+        pages: "physical PDF pp. 176 to 177",
+        facts: [
+          ["Original structure", "stop-log spillway constructed as part of the hydro development"],
+          ["Filed arrangement", "one large stop-log bay and 11 smaller bays; 150 mm stop logs in the smaller bays and 300 mm stop logs in the large bay"]
+        ]
+      },
+      {
         label: "1953 / 1954 COMMISSIONING RECORDS",
         sourceId: "np-2013-cape-broyle",
         pages: "physical PDF pp. 258 to 259; 2025 filing physical PDF pp. 544 to 545",
@@ -31324,6 +31402,12 @@ export const stationProfiles = [
           ["2025 capital filing", "Cape Broyle plant commissioned in 1954; 7.0 MVA; 54.8 m net head"],
           ["Hydraulic sequence", "Cape Broyle is downstream of Horse Chops"]
         ]
+      },
+      {
+        label: "1953 BLACKWOODS POND RESERVOIR",
+        sourceId: "np-1953-blackwoods-pond",
+        pages: "physical PDF p. 1",
+        facts: [["Construction", "reservoir built as part of the Cape Broyle and Horse Chops hydroelectric development"]]
       },
       {
         label: "1954 MOUNT CARMEL POND STRUCTURES",
