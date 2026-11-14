@@ -26,13 +26,13 @@ test("2009 source records retain page locators and evidence states", () => {
 });
 
 test("2009 station records separate filed scope, delay, and completion evidence", () => {
-  assert.match(stationText("CLV"), /2009 FILED STATION WORK/);
+  assert.match(stationText("CLV"), /2008 FILED STATION WORK/);
   assert.match(stationText("CLV"), /2008 TO 2009 WORK DELAYED/);
   assert.match(stationText("GAN"), /2009 FILED STATION WORK/);
   assert.match(stationText("GAN"), /2008 TO 2009 WORK DELAYED/);
   assert.match(stationText("GFS"), /2009 FILED GRAND FALLS 4\.16 KV YARD WORK/);
   assert.match(stationText("KBR"), /Q4 2009 REPORTED STATION COMPLETION/);
-  assert.match(stationText("OXP"), /2009 FILED OXEN POND STATION WORK/);
+  assert.match(stationText("OXP"), /2008 FILED OXEN POND STATION WORK/);
 });
 
 test("2009 line rebuilds retain filed engineering and later completion reports", () => {

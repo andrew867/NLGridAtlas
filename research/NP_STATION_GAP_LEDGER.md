@@ -689,6 +689,14 @@ The March 2014 inspection-form asset registers are now attached to the HWD, MOL,
 - [x] The plant study preserves a data sheet and photographs of the Southside Road powerhouse and the Nordberg unit, physical PDF pp. 191 and 193.
 - [ ] No searched record gives the exact distribution feeder designation between the plant and St. John's Main.
 
+## 2008 capital-record reconciliation
+
+- [x] Direct 2008 station records are attached to Broad Cove, Botwood, Clarenville, Fermeuse, Gander, King's Bridge, Kelligrews, Lewisporte, Mobile, and Oxen Pond, physical PDF pp. 161 to 180.
+- [x] The filed 20L and 111L rebuild sections, line data and 20L route sheet are attached to the affected station records, physical PDF pp. 189 to 197.
+- [x] Plant-specific 2008 hydro work is attached to Port Union, Fall Pond, Seal Cove, Horse Chops, Petty Harbour, Cape Broyle, Heart's Content, Pierre's Brook, Mobile and Rocky Pond, physical PDF pp. 149 to 159.
+- [x] The 32-circuit fibre inventory and its control, SCADA, relay and voice uses are recorded, physical PDF pp. 228 to 234.
+- [ ] The reviewed 2008 year-end report identifies 20L, Cape Broyle and Fermeuse completions. It does not identify completion of every station or hydro item in the 2008 filing.
+
 ## Remaining data classes
 
 ## 2019 capital-record reconciliation

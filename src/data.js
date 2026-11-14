@@ -220,6 +220,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
   },
   {
+    id: "np-2008-station-modernization",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Substation Refurbishment and Modernization",
+    topics: ["Broad Cove", "Botwood", "Clarenville", "Fermeuse", "Gander", "King's Bridge", "Kelligrews", "Lewisporte", "Mobile", "Oxen Pond", "substation modernization"],
+    pages: "physical PDF pp. 161 to 180",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2008-transmission-rebuild",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Transmission Line Rebuild",
+    topics: ["20L", "111L", "Mobile", "Cape Broyle", "Lockston", "Port Union", "Catalina", "66 kV", "transmission line rebuild"],
+    pages: "physical PDF pp. 189 to 203",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2008-hydro-rehabilitation",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Hydro Facility Rehabilitation",
+    topics: ["Port Union", "Fall Pond", "Seal Cove", "Horse Chops", "Cape Broyle", "Petty Harbour", "Heart's Content", "Pierre's Brook", "Mobile", "Rocky Pond", "hydroelectric generation"],
+    pages: "physical PDF pp. 149 to 159",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2008-fibre-network",
+    year: 2007,
+    organization: "Newfoundland Power",
+    title: "2008 Capital Budget Application, Fibre Optic Circuit Replacement",
+    topics: ["fibre optic", "SCADA", "protective relaying", "system control", "leased circuits", "communications"],
+    pages: "physical PDF pp. 228 to 234",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf"
+  },
+  {
     id: "np-2017-chamberlains",
     year: 2016,
     organization: "Newfoundland Power",
@@ -6033,6 +6073,12 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-2008-fibre-network",
+    scope: "Newfoundland Power fibre-network inventory, operational uses, leased links and filed construction schedule",
+    status: "proposed",
+    sources: [{ sourceId: "np-2008-fibre-network", pages: "physical PDF pp. 228 to 234" }]
+  },
+  {
     id: "vhf-replacement-record",
     scope: "2004 VHF replacement design, revised site count, later P25 scope and reported installation status",
     status: "reported",
@@ -6107,6 +6153,15 @@ export const timeline = [
     sourceId: "vhf-2004-revision",
     pages: "PDF p. 1, report p. 11",
     status: "verified"
+  },
+  {
+    date: "1990 to 2008",
+    category: "telecom",
+    title: "Newfoundland Power documented its fibre network",
+    body: "The first circuits were built in 1990. The 2008 filing lists 32 circuits, comprising 16 company-built, 15 leased and one rented circuit, used for operational data, voice, SCADA and protective relaying.",
+    sourceId: "np-2008-fibre-network",
+    pages: "physical PDF pp. 228 and 232 to 234",
+    status: "reported"
   },
   {
     date: "2010",
@@ -9137,13 +9192,14 @@ const filedFeederMapProfiles = [
       },
       {
         label: "2008 FILED STATION RECORD",
-        sourceId: "np-2009-kelligrews",
-        pages: "physical PDF pp. 277 to 278",
+        sourceId: "np-2008-station-modernization",
+        pages: "physical PDF pp. 171 to 173",
         facts: [
           ["Station built", "1977 as a 12.5 kV distribution substation"],
           ["Former KEL-T1", "15 MVA"],
           ["Distribution", "two 12.5 kV feeders serving approximately 2,600 customers"],
-          ["Transmission", "51L to Chamberlains and 52L to Seal Cove"]
+          ["Transmission", "51L to Chamberlains and 52L to Seal Cove"],
+          ["Filed work", "replace the deteriorated potential transformer, control-building roof, lightning arresters and 30-year-old transformer power cables"]
         ]
       },
       {
@@ -9608,6 +9664,16 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2008 FILED 20L REBUILD",
+        sourceId: "np-2008-transmission-rebuild",
+        pages: "physical PDF pp. 190 to 196",
+        facts: [
+          ["Line", "66 kV from Mobile to Cape Broyle; 20.1 km; H-frame wood-pole construction; built in 1951"],
+          ["Service", "more than 1,700 customers through Cape Broyle and Fermeuse, plus the Morris, Rocky Pond, Horse Chops and Cape Broyle hydro plants"],
+          ["Filed section", "rebuild the remaining approximately 13.5 km after the 2007 section; filed cost $1.563 million"]
+        ]
+      },
+      {
         label: "2017 FILED DOWNLINE RECLOSER",
         sourceId: "np-2017-automation",
         pages: "physical PDF p. 76",
@@ -9649,8 +9715,15 @@ const filedFeederMapProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "FILED MOB-01 GROWTH WORK",
+    referenceSheetLabel: "FILED 20L AND MOB-01 ROUTES",
     referenceSheets: [
+      {
+        title: "2008 filed 20L rebuild route",
+        image: "./reference-maps/20l-2008-route.png",
+        alt: "Filed 20L route from Mobile to Cape Broyle showing the 2007 and 2008 rebuild sections",
+        sourceId: "np-2008-transmission-rebuild",
+        pages: "physical PDF p. 196"
+      },
       {
         title: "2015 proposed MOB-01 conductor upgrades",
         image: "./reference-maps/mob-01-2015-route.png",
@@ -9954,6 +10027,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2008 FILED SOLDIERS POND DAM AND SPILLWAY REPLACEMENT",
+        sourceId: "np-2008-hydro-rehabilitation",
+        pages: "physical PDF p. 150",
+        facts: [
+          ["Condition", "rotted structural timbers, separated timber facing and loss of crib rock fill"],
+          ["Filed work", "replace the rock-filled timber crib dam and timber crib overflow spillway"],
+          ["Filed cost", "$250,000"]
+        ]
+      },
       {
         label: "2010 PROPOSED LIGHTNING ARRESTOR REPLACEMENT",
         sourceId: "np-2010-lightning-arrestors",
@@ -12709,6 +12792,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2008 FILED WICKET-GATE BUSHING REPLACEMENT",
+        sourceId: "np-2008-hydro-rehabilitation",
+        pages: "physical PDF p. 156",
+        facts: [
+          ["Filed plant capacity", "12.0 MW, derated to 10.5 MW by the turbine mechanical limitation"],
+          ["Condition", "worn lower wicket-gate bushings increased clearance, scored adjacent runner seals and prevented full wicket-gate closure"],
+          ["Filed work", "replace the bushings with self-lubricating units; filed cost $200,000"],
+          ["Expected result", "recover some or all of the 1.5 MW derating"]
+        ]
+      },
       {
         label: "2023 TO 2024 PLANT REFURBISHMENT",
         sourceId: "np-2023-mobile-refurbishment",
@@ -15847,9 +15941,9 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
-        label: "2009 FILED STATION WORK",
-        sourceId: "np-2009-station-modernization",
-        pages: "physical PDF pp. 269 to 270",
+        label: "2008 FILED STATION WORK",
+        sourceId: "np-2008-station-modernization",
+        pages: "physical PDF pp. 165 to 166",
         facts: [
           ["Filed station equipment", "CLV-T1 138/66 kV, 25 MVA; CLV-T2 138/12.5 kV, 20 MVA"],
           ["Distribution", "three feeders serving approximately 2,000 customers"],
@@ -16180,7 +16274,7 @@ export const stationProfiles = [
     name: "Port Union",
     voltage: "66/2.4 kV generation station",
     circuitRegisterLabel: "2008 FILED 111L ROUTE",
-    circuitSource: { sourceId: "np-2009-111l", pages: "physical PDF p. 312" },
+    circuitSource: { sourceId: "np-2008-transmission-rebuild", pages: "physical PDF p. 191" },
     connectedCircuits: [
       { circuit: "111L", from: "Lockston", from_code: "LOK", to: "Port Union", to_code: "PUN" },
       { circuit: "111L", from: "Port Union", from_code: "PUN", to: "Catalina", to_code: "CAT" }
@@ -16221,6 +16315,25 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2008 FILED 111L REBUILD",
+        sourceId: "np-2008-transmission-rebuild",
+        pages: "physical PDF pp. 190 to 197",
+        facts: [
+          ["Line", "66 kV from Lockston to Catalina through Port Union; 31 km; single wood-pole construction; built in 1956"],
+          ["Condition", "deteriorated poles and guy wires; damaged non-standard conductor with broken strands and numerous repair sleeves"],
+          ["Filed section", "rebuild the most deteriorated 13 km in 2008; filed cost $1.482 million"]
+        ]
+      },
+      {
+        label: "2008 FILED WHIRL POND STRUCTURE REPLACEMENTS",
+        sourceId: "np-2008-hydro-rehabilitation",
+        pages: "physical PDF pp. 149 to 150",
+        facts: [
+          ["Whirl Pond dam", "replace the deteriorated rock-filled timber crib dam; filed cost $175,000"],
+          ["Outlet structure", "replace the leaking rock-filled timber crib outlet structure; filed cost $100,000"]
+        ]
+      },
       {
         label: "2009 FILED FINAL 111L REBUILD",
         sourceId: "np-2009-transmission-rebuild",
@@ -16328,6 +16441,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2008 FILED STATION WORK",
+        sourceId: "np-2008-station-modernization",
+        pages: "physical PDF pp. 173 to 174",
+        facts: [
+          ["Filed station", "one 25 MVA transformer, four 25 kV feeders and approximately 3,900 customers"],
+          ["Transmission", "103L to Notre Dame Junction"],
+          ["Filed work", "replace silicon-carbide transformer arresters with metal-oxide arresters"]
+        ]
+      },
       {
         label: "2018 FILED DOWNLINE RECLOSER",
         sourceId: "np-2018-distribution-feeder-automation",
@@ -16861,9 +16984,9 @@ export const stationProfiles = [
         ]
       },
       {
-        label: "2009 FILED OXEN POND STATION WORK",
-        sourceId: "np-2009-station-modernization",
-        pages: "physical PDF pp. 279 to 281",
+        label: "2008 FILED OXEN POND STATION WORK",
+        sourceId: "np-2008-station-modernization",
+        pages: "physical PDF pp. 177 to 178",
         facts: [
           ["Filed local transformer", "OXP-T1 rated 13.3 MVA at 12.5 kV; one feeder serving approximately 1,150 customers"],
           ["66 kV lines", "31L and 70L to Stamp's Lane, 32L and 67L to Ridge Road, 34L and 58L to Virginia Waters, and 35L to Kenmount"],
@@ -17405,9 +17528,9 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
-        label: "2009 FILED STATION MODERNIZATION",
-        sourceId: "np-2009-station-modernization",
-        pages: "physical PDF pp. 275 to 277",
+        label: "2008 FILED STATION MODERNIZATION",
+        sourceId: "np-2008-station-modernization",
+        pages: "physical PDF pp. 169 to 171",
         facts: [
           ["Filed station", "66 kV with 4.16 kV and 12.5 kV distribution; 20 MVA combined 4.16 kV capacity and 25 MVA 12.5 kV capacity"],
           ["Filed service", "approximately 5,500 customers; eight 4.16 kV feeders and four 12.5 kV feeders"],
@@ -18814,6 +18937,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2008 FILED COCHRANE POND DAM WORK",
+        sourceId: "np-2008-hydro-rehabilitation",
+        pages: "physical PDF p. 150",
+        facts: [
+          ["Filed work", "install riprap beside the spillway and enlarge the spillway channel to pass the design flood"],
+          ["Filed cost", "$50,000"]
+        ]
+      },
+      {
         label: "2026 TRANSFORMER TABLE",
         sourceId: "np-2026-transformers",
         pages: "physical PDF pp. 369 and 372",
@@ -19073,6 +19205,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2008 FILED MOUNT CARMEL POND DAM WORK",
+        sourceId: "np-2008-hydro-rehabilitation",
+        pages: "physical PDF p. 150",
+        facts: [
+          ["Hydraulic role", "main dam in the Horse Chops and Cape Broyle system"],
+          ["Filed work", "add riprap, remove downstream vegetation and root mat, place rock fill, and replace deteriorated gabions and the outlet headwall"],
+          ["Filed cost", "$200,000"]
+        ]
+      },
+      {
         label: "2012 COMPLETED 21L REBUILD",
         sourceId: "np-2012-q3-report",
         pages: "physical PDF p. 12",
@@ -19205,6 +19347,16 @@ export const stationProfiles = [
         facts: [
           ["Original service", "constructed to supply the Bell Island iron-ore mines"],
           ["Rated head", "80 m"]
+        ]
+      },
+      {
+        label: "2008 FILED GOVERNOR REPLACEMENT",
+        sourceId: "np-2008-hydro-rehabilitation",
+        pages: "physical PDF pp. 155 to 156",
+        facts: [
+          ["Condition", "oil leakage at the power piston, unreliable shutdown-solenoid operation and overheating control-panel components"],
+          ["Filed work", "replace the governor controls with digital controls integrated into the plant protection and control system, and replace the leaking power piston"],
+          ["Filed cost", "$225,000"]
         ]
       },
       {
@@ -20632,6 +20784,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2008 FILED STATION MODERNIZATION",
+        sourceId: "np-2008-station-modernization",
+        pages: "physical PDF pp. 164 to 165",
+        facts: [
+          ["Filed station", "one 20 MVA, 138/25 kV transformer supplied radially by 134L from Bishop's Falls"],
+          ["Distribution", "three 25 kV feeders serving approximately 3,350 customers"],
+          ["Filed work", "repair a 25 kV structure foundation, replace transformer arresters and tap controls, add transformer protection and a high-speed ground switch, and automate the three feeder reclosers"]
+        ]
+      },
+      {
         label: "2010 COMPLETED MODERNIZATION",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF pp. 2 to 3",
@@ -20880,6 +21042,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2008 FILED RUNNER AND WICKET-GATE REPLACEMENT",
+        sourceId: "np-2008-hydro-rehabilitation",
+        pages: "physical PDF pp. 153 to 154",
+        facts: [
+          ["Filed plant record", "single 1960-vintage turbine-generator unit with a 2.7 MW nameplate rating"],
+          ["Condition", "holes and trailing-edge corrosion in the mild-steel runner blades; corroded wicket gates with restricted travel"],
+          ["Filed work", "install a stainless-steel runner and wicket gates with self-lubricating bushings"],
+          ["Filed cost", "$700,000"]
+        ]
+      },
       {
         label: "2014 FILED PLANT REFURBISHMENT",
         sourceId: "np-2014-hearts-content",

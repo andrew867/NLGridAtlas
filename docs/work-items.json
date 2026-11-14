@@ -934,6 +934,18 @@
       "notes": "The station records now include the filed Clarenville, Gander, Grand Falls, King's Bridge, Oxen Pond, and Rocky Pond work. Clarenville and Gander retain the later delay record. The completed 110L and 111L sections, King's Bridge modernization, Rose Blanche spillway raise, and Rocky Pond refurbishment have separate later status evidence. Broad Cove remains proposed because no asset-specific completion statement was located."
     },
     {
+      "id": "NPREG-020",
+      "title": "Reconcile Newfoundland Power 2008 station, transmission, hydro, and fibre records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2008 capital application, station modernization records, 20L and 111L rebuilds, hydro-facility work, fibre-network inventory, and later completion evidence.",
+      "dependencies": ["NPREG-019"],
+      "completion_evidence": ["research/NP_2008_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/20l-2008-route.png", "tests/np-2008-capital.test.js"],
+      "blocker": null,
+      "notes": "The ten filed station records now use the direct 2008 application pages. The 20L and 111L records preserve the filed 2008 sections and later completion evidence. The hydro records add plant-specific civil and equipment work. The 32-circuit fibre inventory and its operational uses are dated separately from later construction outcomes."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
