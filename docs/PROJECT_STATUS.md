@@ -15,6 +15,9 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 1997 Newfoundland Power system record from the annual report, regulatory returns and revised General Rate Application reliability response. The record covers actual SAIFI and SAIDI, the insulator replacement program, expanded infrared inspection, Rose Blanche construction, exact capital categories, 424 GWh company generation, 4,244 GWh purchased energy, 1,065 MW peak demand, and transmission and substation fixed-asset values.
+- Kept the 1997 SCADA sentence as a planned 1998 employee-training placement, not an installed replacement system. The located sources do not publish a 1997 service-availability percentage, operating-area reliability table or system load factor.
+- Opened NPREG-032 for the surviving Newfoundland Power 1996 system and annual records.
 - Added the 1998 Newfoundland Power system record from the annual report and revised General Rate Application responses. The record covers actual system and regional SAIFI and SAIDI, the actual 0.519 system load factor, outage causes, TVD outage communications, the 60-monitor power-quality pilot, and the replacement SCADA system's planned 1999 state.
 - Added Rose Blanche's December 22, 1998 energization separately from its August 1999 official opening. Added the $45 million capital total, four-year distribution-transformer environmental program, 429 GWh company generation, 4,259 GWh purchased energy, 957 MW peak demand, and the 1998 transmission and substation fixed-asset values.
 - Opened NPREG-031 for the surviving Newfoundland Power 1997 system and annual records.

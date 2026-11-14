@@ -380,6 +380,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-1997-annual-report",
+    year: 1997,
+    organization: "Newfoundland Power",
+    title: "1997 Annual Report and Regulatory Returns, Electrical System Record",
+    topics: ["insulator replacement", "infrared thermoscanning", "power quality", "Rose Blanche", "transmission", "substations", "telecommunications", "system reliability"],
+    pages: "physical PDF pp. 10 to 11, 13, 18, 26, 34, 42 and 56",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213B.pdf"
+  },
+  {
     id: "np-1998-annual-report",
     year: 1998,
     organization: "Newfoundland Power",
@@ -6528,6 +6538,15 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1997-system-reliability",
+    scope: "1997 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages and reported outage causes",
+    status: "reported",
+    sources: [
+      { sourceId: "np-1997-annual-report", pages: "physical PDF p. 10" },
+      { sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }
+    ]
+  },
+  {
     id: "np-1998-2005-system-load-factors",
     scope: "Actual Newfoundland Power system load factors for 1998 to 2001 and filed forecasts for 2002 to 2005",
     status: "reported",
@@ -6647,6 +6666,60 @@ export const timeline = [
     body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
     sourceId: "vhf-2004",
     pages: "PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1997",
+    category: "reliability",
+    title: "SAIFI was 2.72 and SAIDI was 3.73 hours",
+    body: "The figures exclude Hydro loss-of-supply outages. The annual report attributes the slight increase in customer interruption frequency and duration primarily to supply interruptions late in the year.",
+    sourceId: "np-1997-annual-report",
+    pages: "physical PDF p. 10; CA-446Rev physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1997",
+    category: "network",
+    title: "Insulator replacement and infrared inspection continued",
+    body: "The 12-year insulator program was scheduled to replace more than 70,000 defective units by 2001 at a reported cost of $10 million. Newfoundland Power also increased infrared thermoscanning of its transmission and distribution systems.",
+    sourceId: "np-1997-annual-report",
+    pages: "physical PDF pp. 10 to 11",
+    status: "reported"
+  },
+  {
+    date: "1997",
+    category: "generation",
+    title: "Rose Blanche construction received more than $13 million",
+    body: "The annual report describes the 6.1 MW project as Newfoundland Power's first new generating facility in 14 years and states that it was intended to strengthen supply in southwestern Newfoundland.",
+    sourceId: "np-1997-annual-report",
+    pages: "physical PDF pp. 11 and 18",
+    status: "reported"
+  },
+  {
+    date: "1997",
+    category: "network",
+    title: "Actual capital expenditure was $30.965 million",
+    body: "The regulatory return records $2.102 million for substations, $1.855 million for transmission, $11.580 million for distribution and $0.562 million for telecommunications.",
+    sourceId: "np-1997-annual-report",
+    pages: "physical PDF p. 42",
+    status: "reported"
+  },
+  {
+    date: "1997",
+    category: "generation",
+    title: "Company generation reached 424 GWh",
+    body: "The ten-year summary reports 424 million kWh generated, 4,244 million kWh purchased and a 1,065 MW peak one-hour demand in 1997.",
+    sourceId: "np-1997-annual-report",
+    pages: "physical PDF p. 34",
+    status: "reported"
+  },
+  {
+    date: "1997-12-31",
+    category: "financial",
+    title: "Transmission and substations carried $92.197 million net book value",
+    body: "Newfoundland Power reported $162.864 million cost, $70.837 million accumulated depreciation and $0.170 million of construction in progress for the asset class.",
+    sourceId: "np-1997-annual-report",
+    pages: "physical PDF p. 26",
     status: "reported"
   },
   {
@@ -10232,6 +10305,16 @@ const filedFeederMapProfiles = [
       facts: [["RBH-T1", "generation transformer; 25/6.9 kV; 9.3 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1997 CONSTRUCTION PROGRAM",
+        sourceId: "np-1997-annual-report",
+        pages: "physical PDF pp. 11 and 18",
+        facts: [
+          ["Filed rating", "6.1 MW"],
+          ["Allocated construction cost", "more than $13 million"],
+          ["Filed purpose", "new generation and improved supply reliability in southwestern Newfoundland"]
+        ]
+      },
       {
         label: "DECEMBER 22, 1998 ENERGIZATION",
         sourceId: "np-1998-annual-report",

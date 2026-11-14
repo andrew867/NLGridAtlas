@@ -1070,12 +1070,24 @@
       "title": "Reconcile Newfoundland Power 1997 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1997 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-030"],
+      "completion_evidence": ["research/NP_1997_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1997-system.test.js"],
+      "blocker": null,
+      "notes": "No standalone Newfoundland Power 1997 capital-application directory was located. The surviving annual report, regulatory returns and revised reliability response establish actual system reliability, insulator and infrared-inspection work, Rose Blanche construction, exact capital categories, generation and demand, and transmission and substation fixed-asset values. The report does not provide 1997 operating-area reliability, service availability or system load factor."
+    },
+    {
+      "id": "NPREG-032",
+      "title": "Reconcile Newfoundland Power 1996 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1996 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-031"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Begin with the surviving annual report and the 2003 General Rate Application responses, then reconcile dated completion claims against later equipment histories."
+      "notes": "Begin with the surviving annual report and 2003 General Rate Application responses. Preserve actual values separately from later forecasts and do not infer unavailable operating-area data."
     },
     {
       "id": "ASSET-001",
