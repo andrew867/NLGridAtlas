@@ -1190,12 +1190,24 @@
       "title": "Reconcile Newfoundland Power 1987 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1987 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-040"],
+      "completion_evidence": ["research/NP_1987_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1987-system.test.js"],
+      "blocker": null,
+      "notes": "The comparative reliability table, capital history, transmission and telecommunications registers, and later asset histories establish actual reliability, capital, TL250 and TL255, their powerline-carrier links, Glendale, West Brook, Rattling Brook, Port Union, the TL217 failure, and Goodyear's Dam. The accessible ten-year operating summary starts in 1989. Conflicting Holyrood uprate and gas-turbine controller dates remain unresolved."
+    },
+    {
+      "id": "NPREG-042",
+      "title": "Reconcile Newfoundland Power 1986 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1986 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-041"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the surviving reliability and capital tables, TL250 between Bottom Brook and Grandy Brook, and dated plant, station, transmission, distribution and telecommunications records."
+      "notes": "Start with the surviving reliability and capital tables, the Holyrood Unit 3 synchronous-condenser conversion, the Hardwoods transformer relocation, and dated plant, station, transmission, distribution, and telecommunications records."
     },
     {
       "id": "ASSET-001",

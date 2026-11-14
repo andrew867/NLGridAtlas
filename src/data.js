@@ -390,6 +390,136 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
   },
   {
+    id: "np-1987-reliability",
+    year: 1991,
+    organization: "Newfoundland Power",
+    title: "Comparative Distribution-System Reliability Record",
+    topics: ["1987", "SAIFI", "SAIDI", "CAIDI", "distribution reliability"],
+    pages: "physical PDF p. 11",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008GRA/files/information/Information-17.pdf"
+  },
+  {
+    id: "np-1987-capital",
+    year: 1991,
+    organization: "Newfoundland Power",
+    title: "CA-NP-146 Attachment B, Capital Expenditures Since 1984",
+    topics: ["1987", "capital expenditure"],
+    pages: "physical PDF p. 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf"
+  },
+  {
+    id: "nlh-1987-tl250-tl255",
+    year: 2013,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-316 Attachment 1, Island Transmission-Line Register",
+    topics: ["1987", "TL250", "TL255", "Bottom Brook", "Grandy Brook", "Hope Brook", "138 kV"],
+    pages: "physical PDF p. 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf"
+  },
+  {
+    id: "nlh-1987-plc-carrier",
+    year: 2002,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2003 Capital Budget Application, Powerline-Carrier Inventory",
+    topics: ["1987", "TL250", "TL255", "powerline carrier", "telecommunications"],
+    pages: "physical PDF p. 41",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionH.pdf"
+  },
+  {
+    id: "np-1987-glendale",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Substation Structure and Bus Record",
+    topics: ["1987", "Glendale", "66 kV", "bus extension"],
+    pages: "physical PDF p. 191",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-1987-west-brook-intake",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-001, West Brook Intake Rehabilitation History",
+    topics: ["1987", "West Brook", "intake", "gate", "concrete"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/rfi/PUB-NP-001.pdf"
+  },
+  {
+    id: "np-1987-west-brook-penstock",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, West Brook Hydroelectric Plant Record",
+    topics: ["1987", "West Brook", "penstock", "FRP", "woodstave"],
+    pages: "physical PDF p. 282",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1987-rattling-brook",
+    year: 2006,
+    organization: "Newfoundland Power",
+    title: "2007 Capital Budget Application, Rattling Brook Plant History",
+    topics: ["1987", "Rattling Brook", "Unit 1", "runner", "water-level instrumentation"],
+    pages: "physical PDF pp. 383 and 392",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1987-port-union",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-175, Port Union Diesel Control History",
+    topics: ["1987", "Port Union", "diesel", "controls", "instrumentation", "unit breaker"],
+    pages: "physical PDF p. 176",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf"
+  },
+  {
+    id: "nlh-1987-tl217-failure",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Exhibit 88, TL217 Failure History",
+    topics: ["1987", "TL217", "ice", "cascade failure", "outage"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit88.pdf"
+  },
+  {
+    id: "nlh-1987-goodyears-dam",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-005 Attachment, Goodyear's Dam As-Built Drawing Register",
+    topics: ["1987", "Goodyear's Dam", "emergency repair", "as-built"],
+    pages: "physical PDF p. 719",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-005.PDF"
+  },
+  {
+    id: "nlh-1987-holyrood-uprate-conflict",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Holyrood Condition Assessment and Life Extension Study",
+    topics: ["1987", "Holyrood", "Unit 1", "Unit 2", "uprate", "date conflict"],
+    pages: "physical PDF p. 5",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/reports/AMEC-Report-Jan28-11.pdf"
+  },
+  {
+    id: "nlh-1987-holyrood-gt-control-conflict",
+    year: 2012,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "NP-NLH-022 Attachment 1, Holyrood Gas-Turbine Control History",
+    topics: ["1986", "1987", "Holyrood", "gas turbine", "Gem 80/500", "PLC", "date conflict"],
+    pages: "physical PDF pp. 66 to 67",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
+  },
+  {
     id: "np-1988-reliability",
     year: 1991,
     organization: "Newfoundland Power",
@@ -7228,6 +7358,12 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1987-system-reliability",
+    scope: "1987 Newfoundland Power actual SAIFI, SAIDI and CAIDI",
+    status: "reported",
+    sources: [{ sourceId: "np-1987-reliability", pages: "physical PDF p. 11" }]
+  },
+  {
     id: "np-1988-system-reliability",
     scope: "1988 Newfoundland Power actual SAIFI, SAIDI and CAIDI",
     status: "reported",
@@ -7414,6 +7550,123 @@ export const timeline = [
     sourceId: "nlh-2020-holyrood-unit3",
     pages: "physical PDF p. 136; project p. 2",
     status: "verified"
+  },
+  {
+    date: "1987",
+    category: "reliability",
+    title: "SAIFI was 4.05 and SAIDI was 6.32 hours",
+    body: "The comparative reliability table reports CAIDI of 1.56 hours per interruption.",
+    sourceId: "np-1987-reliability",
+    pages: "physical PDF p. 11",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "network",
+    title: "Actual capital expenditure was $38.881 million",
+    body: "The historical capital table reports the annual expenditure as $38,881,000.",
+    sourceId: "np-1987-capital",
+    pages: "physical PDF p. 9",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "network",
+    title: "TL250 and TL255 entered the transmission register",
+    body: "TL250 is a 123.231 km, 138 kV H-frame wood line from Bottom Brook to Grandy Brook. TL255 is a 33.014 km line of the same voltage and construction from Grandy Brook to Hope Brook.",
+    sourceId: "nlh-1987-tl250-tl255",
+    pages: "physical PDF p. 5",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "telecom",
+    title: "TL250 and TL255 powerline-carrier links were purchased",
+    body: "The 2003 telecommunications inventory dates both central-west carrier links to 1987.",
+    sourceId: "nlh-1987-plc-carrier",
+    pages: "physical PDF p. 41",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "station",
+    title: "Newfoundland Power extended the Glendale 66 kV bus",
+    body: "The later structure register dates the original high-voltage bus to 1976 and the extension to 1987.",
+    sourceId: "np-1987-glendale",
+    pages: "physical PDF p. 191",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "generation",
+    title: "West Brook rehabilitated its intake structure",
+    body: "The work repaired the intake foundation concrete and replaced the intake gate.",
+    sourceId: "np-1987-west-brook-intake",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "generation",
+    title: "West Brook replaced its woodstave penstock",
+    body: "The plant record identifies a 536 m long, 1,372 mm diameter buried fibre-reinforced plastic penstock installed in place of the 1,219 mm woodstave penstock.",
+    sourceId: "np-1987-west-brook-penstock",
+    pages: "physical PDF p. 282",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "generation",
+    title: "Rattling Brook replaced the Unit 1 runner and water-level equipment",
+    body: "The later plant history identifies a new Allis-Chalmers runner and dates the forebay and Amy's Gate level probes and transducers to 1987.",
+    sourceId: "np-1987-rattling-brook",
+    pages: "physical PDF pp. 383 and 392",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "generation",
+    title: "Port Union replaced diesel controls and switchgear components",
+    body: "The later history records replacement of the off-engine controls, instrumentation, and unit breaker as part of plant switchgear work.",
+    sourceId: "np-1987-port-union",
+    pages: "physical PDF p. 176",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "network",
+    title: "A TL217 cascade failure caused a 63 day outage",
+    body: "Seven structures failed in the central section and a conductor broke. The later line history reports an approximate cost of $500,000.",
+    sourceId: "nlh-1987-tl217-failure",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "generation",
+    title: "Hydro recorded emergency repairs at Goodyear's Dam",
+    body: "The surviving register identifies drawing 791D-17082 as an as-built record for emergency repairs to the north side of the dam.",
+    sourceId: "nlh-1987-goodyears-dam",
+    pages: "physical PDF p. 719",
+    status: "reported"
+  },
+  {
+    date: "1987",
+    category: "generation",
+    title: "Holyrood uprate records disagree on the completion year",
+    body: "A 2011 condition study dates both 150 MW to 175 MW uprates to 1987. Unit-specific capital histories separately date Unit 1 to 1988 and Unit 2 to 1989.",
+    sourceId: "nlh-1987-holyrood-uprate-conflict",
+    pages: "physical PDF p. 5",
+    status: "unresolved"
+  },
+  {
+    date: "1987",
+    category: "generation",
+    title: "Holyrood gas-turbine PLC records disagree by one year",
+    body: "Two consecutive pages in the same condition report date the Gem 80/500 replacement of relay logic to 1987 and 1986 respectively.",
+    sourceId: "nlh-1987-holyrood-gt-control-conflict",
+    pages: "physical PDF pp. 66 to 67",
+    status: "unresolved"
   },
   {
     date: "1988",
@@ -9925,6 +10178,12 @@ export const islandTerminalRecords = [
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
       {
+        label: "1987 GOODYEAR'S DAM EMERGENCY REPAIRS",
+        sourceId: "nlh-1987-goodyears-dam",
+        pages: "physical PDF p. 719",
+        facts: [["As-built record", "drawing 791D-17082 records emergency repairs to the north side of Goodyear's Dam"]]
+      },
+      {
         label: "1990 UNIT 7 PARTIAL-DISCHARGE MONITORING",
         sourceId: "nlh-1990-bde-unit7",
         pages: "physical PDF p. 1",
@@ -12270,6 +12529,23 @@ const filedFeederMapProfiles = [
       facts: [["WBK-T1", "three generation-transformer entries; each 12.5/4.2 kV and 0.33 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1987 INTAKE REHABILITATION",
+        sourceId: "np-1987-west-brook-intake",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Completed work", "repaired the intake foundation concrete and replaced the intake gate"]
+        ]
+      },
+      {
+        label: "1987 PENSTOCK REPLACEMENT",
+        sourceId: "np-1987-west-brook-penstock",
+        pages: "physical PDF p. 282",
+        facts: [
+          ["Installed penstock", "536 m long, 1,372 mm diameter buried fibre-reinforced plastic"],
+          ["Replaced penstock", "1,219 mm woodstave"]
+        ]
+      },
       {
         label: "1991 BATTERY BANK AND CHARGER",
         sourceId: "np-1991-west-brook-electrical",
@@ -19612,6 +19888,14 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1987 DIESEL CONTROL AND SWITCHGEAR WORK",
+        sourceId: "np-1987-port-union",
+        pages: "physical PDF p. 176",
+        facts: [
+          ["Completed work", "replaced off-engine controls, instrumentation, and the unit breaker as part of plant switchgear replacement"]
+        ]
+      },
+      {
         label: "2008 FILED 111L REBUILD",
         sourceId: "np-2008-transmission-rebuild",
         pages: "physical PDF pp. 190 to 197",
@@ -19868,6 +20152,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1987 UNIT 1 RUNNER AND LEVEL INSTRUMENTATION",
+        sourceId: "np-1987-rattling-brook",
+        pages: "physical PDF pp. 383 and 392",
+        facts: [
+          ["Unit 1 runner", "replaced with a new Allis-Chalmers runner"],
+          ["Runner repairs", "repaired shaft pitting and the stainless-steel gland sleeve; rebuilt cavitated scroll-case head-cover and discharge-ring surfaces with Mazel molecular metal"],
+          ["Water-level equipment", "installed probes and transducers at the forebay and Amy's Gate"]
+        ]
+      },
       {
         label: "1988 FROZEN OCEAN LAKE DAM REBUILD",
         sourceId: "np-1988-rattling-brook",
@@ -21399,6 +21693,14 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1987 66 KV BUS EXTENSION",
+        sourceId: "np-1987-glendale",
+        pages: "physical PDF p. 191",
+        facts: [
+          ["Completed work", "extended the 66 kV high-voltage bus originally installed in 1976"]
+        ]
+      },
       {
         label: "2006 PROPOSED GDL-02 CAPACITY UPGRADE",
         sourceId: "np-2006-feeder-growth",

@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1987 system record from the comparative reliability table, capital history, transmission and telecommunications registers, and later asset histories. The accessible ten-year operating summary starts in 1989, so the atlas does not publish unsupported 1987 energy, demand, sales, or customer totals.
+- Added actual 1987 SAIFI, SAIDI, and CAIDI, $38.881 million capital expenditure, TL250 and TL255 with their powerline-carrier links, the Glendale bus extension, West Brook intake and penstock work, the Rattling Brook Unit 1 runner and water-level equipment, Port Union diesel controls, the 63 day TL217 failure, and Goodyear's Dam repairs.
+- Preserved two Holyrood conflicts. Later sources separately date the two unit uprates to 1988 and 1989, while a condition study assigns both to 1987. Consecutive pages in one gas-turbine study date the Gem 80/500 controller change to 1987 and 1986.
+- Opened NPREG-042 for the surviving 1986 system and annual records.
 - Reconstructed the surviving 1988 system record from the comparative reliability table, capital history, transmission register and later asset histories. The accessible ten-year operating summary starts in 1989, so the atlas does not publish unsupported 1988 energy, demand, sales or customer totals.
 - Added actual 1988 SAIFI, SAIDI and CAIDI, $46.598 million capital expenditure, Boyd's Cove and TL254, the Change Islands and Fogo Island submarine system, the Bell Island operating and abandoned cable records, Holyrood Unit 1 and T4 work, the Hardwoods and Stephenville casing replacement, Frozen Ocean Lake dam and the Seal Cove G1 rewind.
 - Preserved the unresolved 410L date conflict. CA-NP-156 states 1988 and CA-NP-160 states 1989 for the customer-funded 8.9 km extension, so the atlas assigns no definitive completion year.
@@ -304,7 +308,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1987 system and annual records under `NPREG-041`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1986 system and annual records under `NPREG-042`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
