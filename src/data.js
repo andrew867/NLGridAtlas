@@ -530,6 +530,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1954-petty-harbour-penstock",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Petty Harbour Penstock",
+    topics: ["1954", "Petty Harbour", "wood-stave penstock", "steel penstock", "hydroelectric generation"],
+    pages: "physical PDF pp. 207 to 208",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "nlh-1954-power-commission",
+    year: 2006,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2007 Capital Budget Overview, Newfoundland Power Commission",
+    topics: ["1954", "Newfoundland Power Commission", "rural electrification", "Newfoundland and Labrador Hydro"],
+    pages: "physical PDF p. 12",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/applic/NLH2007ApplicationComplete.pdf"
+  },
+  {
     id: "np-1955-bell-island-28l",
     year: 2013,
     organization: "Newfoundland Power",
@@ -8965,7 +8985,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "2022 Capital Budget Application, Humber Substation Refurbishment and 4.16 kV Conversion",
     topics: ["Humber", "HUM-T1", "HUM-T2", "HUM-T3", "HUM-01", "HUM-04", "HUM-07", "HUM-10", "356L", "359L", "66 kV", "12.5 kV", "4.16 kV"],
-    pages: "physical PDF pp. 282 to 289 and 312 to 317",
+    pages: "physical PDF pp. 282 to 289, 304 to 309 and 312 to 317",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
   },
@@ -9898,6 +9918,22 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1954-system-record",
+    scope: "1954 transmission construction, station development, hydroelectric generation and civil works, and utility governance",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2011-transmission-rebuild", pages: "physical PDF p. 375" },
+      { sourceId: "np-2010-24l", pages: "physical PDF p. 331" },
+      { sourceId: "np-2008-mobile-substation", pages: "physical PDF p. 174" },
+      { sourceId: "np-2007-capital", pages: "physical PDF p. 166" },
+      { sourceId: "np-2022-humber", pages: "physical PDF pp. 304 and 309" },
+      { sourceId: "np-1954-petty-harbour-penstock", pages: "physical PDF pp. 207 to 208" },
+      { sourceId: "np-2013-cape-broyle", pages: "physical PDF pp. 258 to 259" },
+      { sourceId: "np-2025-cbhc-development", pages: "physical PDF pp. 544 to 545" },
+      { sourceId: "nlh-1954-power-commission", pages: "physical PDF p. 12" }
+    ]
+  },
+  {
     id: "np-1955-system-record",
     scope: "1955 transmission construction, submarine cable installation, hydroelectric civil work and ice-storm damage",
     status: "reported",
@@ -10631,6 +10667,87 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1954",
+    category: "network",
+    title: "Transmission line 25L connected Goulds and St. John's Main",
+    body: "The 66 kV line was built as 9.25 km of H-frame construction with 51 two-pole and three-pole structures, two steel towers, and 477 ACSR conductor.",
+    sourceId: "np-2011-transmission-rebuild",
+    pages: "physical PDF p. 375",
+    status: "reported"
+  },
+  {
+    date: "1954",
+    category: "network",
+    title: "The first documented stage of transmission line 24L was built",
+    body: "The 20 km, 66 kV radial line between Bay Bulls Big Pond and Mobile contained 1954 and 1964 construction. The 1954 H-frame section was completely rebuilt in 2002.",
+    sourceId: "np-2010-24l",
+    pages: "physical PDF p. 331",
+    status: "reported"
+  },
+  {
+    date: "1954",
+    category: "station",
+    title: "Mobile Substation was built",
+    body: "The station was built as a generation substation. A later filing describes it as the transmission infeed for seven Southern Shore hydro plants.",
+    sourceId: "np-2008-mobile-substation",
+    pages: "physical PDF p. 174",
+    status: "reported"
+  },
+  {
+    date: "1954",
+    category: "station",
+    title: "Goulds Substation was built",
+    body: "The station was built as a major 66 kV transmission switching station and a 12.5 kV distribution station.",
+    sourceId: "np-2007-capital",
+    pages: "physical PDF p. 166",
+    status: "reported"
+  },
+  {
+    date: "1954",
+    category: "station",
+    title: "Humber Substation and its control building were built",
+    body: "The later filing identifies Humber as a transmission and distribution substation. Its 1954 building housed protection and control equipment and, by 2021, the 4.16 kV switchgear.",
+    sourceId: "np-2022-humber",
+    pages: "physical PDF pp. 304 and 309",
+    status: "reported"
+  },
+  {
+    date: "1953 or 1954",
+    category: "generation",
+    title: "Cape Broyle and Horse Chops commissioning dates conflict",
+    body: "The 2013 development record dates both plants and both turbines to 1953. The 2025 capital filing dates both plants to 1954. Both records describe one vertical Francis unit at each plant and place Horse Chops upstream of Cape Broyle.",
+    sourceId: "np-2013-cape-broyle",
+    pages: "physical PDF pp. 258 to 259; 2025 filing physical PDF pp. 544 to 545",
+    status: "unresolved"
+  },
+  {
+    date: "1954",
+    category: "civil",
+    title: "Petty Harbour received a new upper penstock section",
+    body: "The installed wood-stave section was 250 m long and 2,286 mm in diameter. It was supported on timber cradles and originally treated with creosote. A 720 m steel section installed in 1999 completed the 970 m penstock recorded in 2019.",
+    sourceId: "np-1954-petty-harbour-penstock",
+    pages: "physical PDF pp. 207 to 208",
+    status: "reported"
+  },
+  {
+    date: "1954",
+    category: "civil",
+    title: "Mount Carmel Pond spillway and outlet gate were installed",
+    body: "The structures were original to the Cape Broyle and Horse Chops development. The outlet gate was operated manually because the site had no electricity for control equipment.",
+    sourceId: "np-2025-cbhc-development",
+    pages: "physical PDF p. 544",
+    status: "reported"
+  },
+  {
+    date: "1954",
+    category: "governance",
+    title: "The Newfoundland Power Commission was incorporated",
+    body: "The 2007 Hydro overview identifies the commission as Hydro's predecessor and says its original purpose was to electrify the province.",
+    sourceId: "nlh-1954-power-commission",
+    pages: "physical PDF p. 12",
+    status: "reported"
+  },
   {
     date: "1955",
     category: "network",
@@ -18575,6 +18692,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1954 / 1964 24L CONSTRUCTION",
+        sourceId: "np-2010-24l",
+        pages: "physical PDF p. 331",
+        facts: [
+          ["Circuit", "24L between Bay Bulls Big Pond and Mobile; 66 kV; 20 km"],
+          ["1954 section", "H-frame construction; completely rebuilt in 2002"],
+          ["1964 section", "single-pole construction; one section rebuilt in 2003; 7.7 km of original structures remained in the 2009 filing"]
+        ]
+      },
       {
         label: "1965 12.47 KV STRUCTURE",
         sourceId: "np-2010-substation-asset-history",
@@ -29565,6 +29692,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1954 UPPER PENSTOCK SECTION",
+        sourceId: "np-1954-petty-harbour-penstock",
+        pages: "physical PDF pp. 207 to 208",
+        facts: [
+          ["Wood-stave section", "installed in 1954; 250 m long; 2,286 mm diameter; supported on timber cradles; timber originally treated with creosote"],
+          ["Recorded complete penstock", "970 m total; remaining 720 m steel section installed in 1999"]
+        ]
+      },
+      {
         label: "1986 UNIT 2 AND UNIT 3 OVERHAULS",
         sourceId: "np-2006-petty-harbour",
         pages: "physical PDF pp. 178, 186 and 188",
@@ -29904,7 +30040,7 @@ export const stationProfiles = [
       sourceId: "np-2025-cbhc-development",
       pages: "physical PDF pp. 544 to 545",
       facts: [
-        ["Plant", "one vertical generating unit; commissioned in 1954; 9.0 MVA"],
+        ["Plant", "one vertical generating unit; 9.0 MVA; commissioned in 1953 in the 2013 development record and 1954 in the 2025 filing"],
         ["Turbine", "10,000 hp vertical Francis turbine manufactured by Dominion Engineering"],
         ["Generator", "Canadian General Electric"],
         ["Normal production", "46.70 GWh in the 2024 development record"],
@@ -29918,6 +30054,16 @@ export const stationProfiles = [
       facts: [["HCP-T1", "generation transformer; 66/6.9 kV; 12.00 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1953 / 1954 COMMISSIONING RECORDS",
+        sourceId: "np-2013-cape-broyle",
+        pages: "physical PDF pp. 258 to 259; 2025 filing physical PDF pp. 544 to 545",
+        facts: [
+          ["2013 development record", "Horse Chops development and its 7,650 kW turbine commissioned in 1953"],
+          ["2025 capital filing", "Horse Chops plant commissioned in 1954; 9.0 MVA; 85.3 m net head"],
+          ["Hydraulic sequence", "Horse Chops is upstream of Cape Broyle"]
+        ]
+      },
       {
         label: "1999 REPORTED SURGE-TANK REPLACEMENT",
         sourceId: "np-1999-annual-report",
@@ -31155,7 +31301,7 @@ export const stationProfiles = [
         ["Generation connection", "the 2013 record describes 6.9 kV from the Cape Broyle plant stepped up to 66 kV"],
         ["Local distribution", "the 2013 record describes 66 kV stepped down to 12.5 kV and one local distribution line"],
         ["CAB-01", "sole 12.5 kV feeder; 13.4 km main trunk; 1,247 customers in the 2026 filing"],
-        ["Plant", "commissioned in 1953; one 6,000 kW vertical Francis turbine in the 2013 development record"]
+        ["Plant", "one vertical Francis unit; commissioned in 1953 in the 2013 development record and 1954 in the 2025 filing"]
       ]
     },
     planningRecord: {
@@ -31169,6 +31315,25 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1953 / 1954 COMMISSIONING RECORDS",
+        sourceId: "np-2013-cape-broyle",
+        pages: "physical PDF p. 258; 2025 filing physical PDF pp. 544 to 545",
+        facts: [
+          ["2013 development record", "Cape Broyle development and its 6,000 kW turbine commissioned in 1953"],
+          ["2025 capital filing", "Cape Broyle plant commissioned in 1954; 7.0 MVA; 54.8 m net head"],
+          ["Hydraulic sequence", "Cape Broyle is downstream of Horse Chops"]
+        ]
+      },
+      {
+        label: "1954 MOUNT CARMEL POND STRUCTURES",
+        sourceId: "np-2025-cbhc-development",
+        pages: "physical PDF p. 544",
+        facts: [
+          ["Installed", "spillway and outlet gate, original to the development"],
+          ["Outlet-gate operation", "manual because the site had no electricity for control equipment"]
+        ]
+      },
       {
         label: "2001 REPORTED PENSTOCK REPLACEMENT",
         sourceId: "np-2001-annual-report",

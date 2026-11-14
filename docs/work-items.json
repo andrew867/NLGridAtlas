@@ -1582,6 +1582,18 @@
       "notes": "Later primary records establish the 46 kV Lockston to Port Union line; Bell Island three-phase submarine cable 28L; the Venam's Bight wood-stave penstock; and damage from the March 13 to 22 St. John's area ice event. The penstock installation predates the plant construction and commissioning dates in later records. Unidentified depreciation vintages were excluded."
     },
     {
+      "id": "NPREG-074",
+      "title": "Reconcile Newfoundland Power 1954 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1954 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-073"],
+      "completion_evidence": ["research/NP_1954_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1954-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records establish 25L; the 1954 stage of 24L; construction of Mobile, Goulds and Humber substations; the Petty Harbour upper penstock; the Mount Carmel Pond spillway and outlet gate; and incorporation of the Newfoundland Power Commission. Cape Broyle and Horse Chops records conflict between 1953 and 1954 commissioning dates. The available historical-demand tables begin later. No named 1954 telecommunications installation was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
