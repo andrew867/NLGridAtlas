@@ -470,6 +470,96 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
   },
   {
+    id: "np-2006-hydro-rehabilitation",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Hydro Plants Facility Rehabilitation",
+    topics: ["Morris", "Tors Cove", "Victoria", "West Brook", "Heart's Content", "Lawn", "Topsail", "Rocky Pond", "Horse Chops", "Rose Blanche", "Cape Broyle", "Pitmans Pond", "hydroelectric generation", "dam rehabilitation"],
+    pages: "physical PDF pp. 170 to 175",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2006-substation-program",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Substation Rebuild, Replacement, Protection and Load Growth",
+    topics: ["Bay Roberts", "Laurentian", "Topsail", "Petty Harbour", "Clarkes Pond", "Twillingate", "Marystown", "Greenhill", "Virginia Waters", "Bayview", "Trepassey", "Riverhead", "Salt Pond", "New Chelsea", "Pasadena", "substation equipment", "protection"],
+    pages: "physical PDF pp. 202 to 235",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2006-humber-valley",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Humber Valley Planning",
+    topics: ["Pasadena", "Marble Mountain", "Little Rapids", "Deer Lake Power L1", "Humber Valley Resort", "load forecast", "distribution planning"],
+    pages: "physical PDF pp. 237 to 245",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2006-123l",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, 123L Transmission Line Upgrade",
+    topics: ["123L", "Clarenville", "Princeton Pond", "Catalina", "Bonavista Peninsula", "138 kV", "transmission hardware", "insulators"],
+    pages: "physical PDF pp. 332 to 338",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2006-distribution-reliability",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Distribution Reliability Feeder Studies",
+    topics: ["LEW-02", "GLV-02", "BCV-02", "SMV-01", "GPD-01", "feeder rebuild", "outage history", "heavy-loading construction"],
+    pages: "physical PDF pp. 405 to 451",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2006-feeder-growth",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Feeder Additions and Upgrades to Accommodate Growth",
+    topics: ["Bay Roberts", "BRB-T1", "BRB-01", "BRB-02", "BRB-03", "BRB-04", "BRB-05", "Island Cove", "Springfield", "Glendale", "GDL-02", "feeder load transfer", "477 ASC"],
+    pages: "physical PDF pp. 453 to 455",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2006-standby-load-control",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Standby Generation and Load Control",
+    topics: ["Duffy Place", "Clarenville", "operations buildings", "standby generation", "SCADA", "load control", "demand reduction"],
+    pages: "physical PDF pp. 457 to 465",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2006-pub-63-64",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "PUB 63.0 NP and PUB 64.0 NP, Standby-Generator Installation Schedule",
+    topics: ["Duffy Place", "Clarenville", "Gander", "Burin", "Grand Falls", "Corner Brook", "Carbonear", "Stephenville", "standby generation"],
+    pages: "physical PDF pp. 16 to 17",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/rfi/RFIpub59-64.pdf"
+  },
+  {
+    id: "np-2011-ca-np-021",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "CA-NP-021, Deferred 2006 Distribution Reliability Work",
+    topics: ["BOT-01", "LEW-02", "GLV-02", "distribution reliability", "deferred work", "completed work"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/rfi/CA-NP-021.pdf"
+  },
+  {
     id: "np-2009-feeder-list",
     year: 2008,
     organization: "Newfoundland Power",
@@ -2954,8 +3044,8 @@ export const sources = [
     year: 2009,
     organization: "Newfoundland Power",
     title: "2010 Capital Budget Application, Distribution Reliability Initiative",
-    topics: ["BOT-01", "GLV-02", "distribution reliability", "completed work", "capital expenditure"],
-    pages: "physical PDF pp. 349 to 353",
+    topics: ["BOT-01", "LEW-02", "GLV-02", "BCV-02", "GPD-01", "distribution reliability", "completed work", "cancelled work", "capital expenditure"],
+    pages: "physical PDF pp. 349 to 360",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
   },
@@ -6185,6 +6275,15 @@ export const timeline = [
     status: "verified"
   },
   {
+    date: "2004-12-06",
+    category: "load",
+    title: "Manual building-load reduction demonstrated 2.5 MW",
+    body: "Newfoundland Power estimated that manual load reduction at selected company buildings reduced the system peak by 2.5 MW. The 2006 filing proposed remote metering and control at ten buildings through the SCADA system.",
+    sourceId: "np-2006-standby-load-control",
+    pages: "physical PDF pp. 463 to 465",
+    status: "reported"
+  },
+  {
     date: "1990 to 2008",
     category: "telecom",
     title: "Newfoundland Power documented its fibre network",
@@ -8729,6 +8828,18 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED GLV-02 RELIABILITY WORK",
+        sourceId: "np-2006-distribution-reliability",
+        pages: "physical PDF pp. 418 to 427",
+        facts: [
+          ["Feeder", "25 kV; approximately 1,222 customers; original construction dating from 1964 and expansion in 1976"],
+          ["Reliability record", "151 interruption reports and 1,476,700 customer outage minutes in the study period; 48% attributed to conductor failure"],
+          ["Filed scope", "replace aged conductor and insulators, relocate exposed sections, and address loading and clearance deficiencies"],
+          ["Filed program", "$1.245 million over 2006 to 2008; $465,000 filed for 2006"],
+          ["Later record", "the 2010 filing reports $781,000 of work completed in 2008 and says the remaining 2009 allocation was cancelled after reliability improved"]
+        ]
+      },
+      {
         label: "2007 FILED STATION ARRANGEMENT AND WORK",
         sourceId: "np-2007-capital",
         pages: "physical PDF p. 165",
@@ -8763,6 +8874,16 @@ const filedFeederMapProfiles = [
         facts: [
           ["Project status", "Newfoundland Power reported Glovertown Substation construction and commissioning complete"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED FEEDER ROUTE",
+    referenceSheets: [
+      {
+        title: "2006 filed GLV-02 reliability route",
+        image: "./reference-maps/glv-02-2006-route-427.png",
+        alt: "Filed GLV-02 route map showing the staged 2006 to 2008 reliability work sections",
+        sourceId: "np-2006-distribution-reliability",
+        pages: "physical PDF p. 427"
       }
     ]
   },
@@ -8812,6 +8933,15 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2006 FILED BREAKER AND POTENTIAL-TRANSFORMER WORK",
+        sourceId: "np-2006-substation-program",
+        pages: "physical PDF pp. 214 to 219",
+        facts: [
+          ["301L and 305L breakers", "replace two 1975 bulk-oil circuit breakers, each containing more than 12,000 litres of oil"],
+          ["Potential transformers", "replace three corroded 66 kV potential transformers"]
+        ]
+      },
       {
         label: "2014 CONDITION ASSESSMENT / 2016 FILED OVERHAUL",
         sourceId: "np-2016-greenhill-overhaul",
@@ -9376,6 +9506,12 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED GENERATOR COOLING WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [["Filed work", "replace deteriorated generator cooling-water coils at Rose Blanche as part of a five-plant program; total program cost $50,000"]]
+      },
+      {
         label: "2009 COMPLETED SPILLWAY RAISE",
         sourceId: "np-2009-q3-capital",
         pages: "physical PDF p. 505",
@@ -9467,6 +9603,12 @@ const filedFeederMapProfiles = [
       facts: [["Plant refurbishment", "deferred from 2027 to 2031 for further engineering assessment and economic analysis"]]
     },
     historyRecords: [
+      {
+        label: "2006 FILED GENERATOR COOLING WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [["Filed work", "replace deteriorated generator cooling-water coils at Lawn as part of a five-plant program; total program cost $50,000"]]
+      },
       {
         label: "2010 HURRICANE IGOR DAMAGE AND 2011 FILED REPAIRS",
         sourceId: "np-2011-lawn-rehabilitation",
@@ -9637,6 +9779,15 @@ const filedFeederMapProfiles = [
         facts: [
           ["Filed equipment", "three 6.9/12.5 kV step-up transformer replacements"],
           ["Filed cost", "$47,600 total, including $9,700 labour and $39,900 non-labour"]
+        ]
+      },
+      {
+        label: "2006 FILED SPILLWAY REHABILITATION",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 173",
+        facts: [
+          ["Filed work", "rehabilitate the West Brook spillway"],
+          ["Filed cost", "$81,000"]
         ]
       },
       {
@@ -9958,6 +10109,30 @@ const filedFeederMapProfiles = [
           ["Selected first stage", "replace MMT-T1 with the 5/6.7 MVA former MOB-T1, extend MMT-01 and add voltage regulators in 2014"],
           ["Selected later stage", "the study scheduled a 15/20/25 MVA PAS-T1 replacement for 2021"]
         ]
+      },
+      {
+        label: "2006 FILED PAS-T1 FORCED-COOLING ADDITION",
+        sourceId: "np-2006-substation-program",
+        pages: "physical PDF p. 234",
+        facts: [
+          ["PAS-T1", "10 MVA without forced cooling and 13.3 MVA with fans"],
+          ["2006 filing forecast", "13.2 MVA"],
+          ["Filed work", "install transformer cooling fans"],
+          ["Filed cost", "$68,000"]
+        ]
+      },
+      {
+        label: "2006 FILED HUMBER VALLEY LOAD PLAN",
+        sourceId: "np-2006-humber-valley",
+        pages: "physical PDF pp. 238 to 245",
+        facts: [
+          ["PAS-T1", "10 MVA unfanned and 13.3 MVA with fans; the 2004 actual peak was 9.04 MVA and the filing forecast 13.22 MVA for 2006"],
+          ["PAS-01", "served the west side of Pasadena and the Humber Valley Resort tap; PAS-02 served the remaining station area"],
+          ["Common supply", "Pasadena and Marble Mountain were supplied by Deer Lake Power 66 kV Line 1"],
+          ["Selected 2006 study alternative", "build Little Rapids Substation in 2007 with a 25 MVA on-load-tap-changing transformer and LTR-01"],
+          ["Economic comparison", "filed revenue-requirement net present values were $2.898 million for Pasadena expansion, $2.746 million for Marble Mountain expansion, and $1.873 million for Little Rapids"],
+          ["Later plan", "the 2013 Humber Valley study selected Marble Mountain transformer and feeder work instead of documenting Little Rapids as built"]
+        ]
       }
     ]
   },
@@ -10029,6 +10204,19 @@ const filedFeederMapProfiles = [
         sourceId: "np-2018-pub-np-081",
         pages: "physical PDF p. 8",
         facts: [["MMT-T1", "66/12.47 kV; 6.7 MVA; 6.0 MVA forecast peak; 89.55% of rating"]]
+      },
+      {
+        label: "2006 FILED HUMBER VALLEY LOAD PLAN",
+        sourceId: "np-2006-humber-valley",
+        pages: "physical PDF pp. 238 to 245",
+        facts: [
+          ["MMT-T1", "4 MVA with fans and no on-load tap changer; the 2004 actual peak was 3.10 MVA and the filing forecast 3.34 MVA for 2006"],
+          ["MMT-01", "served Steady Brook, Humber Village, Little Rapids, and Marble Mountain"],
+          ["Contingency tie", "three voltage regulators supported transfers between MMT-01 and PAS-01"],
+          ["Resort forecast", "the study used 14.5 MVA at full development in 2011"],
+          ["Selected 2006 study alternative", "build Little Rapids Substation in 2007 with a 25 MVA on-load-tap-changing transformer and LTR-01"],
+          ["Later plan", "the 2013 Humber Valley study selected replacement of MMT-T1 and work on MMT-01 instead of documenting Little Rapids as built"]
+        ]
       }
     ]
   },
@@ -10386,6 +10574,15 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED BLUE HILL AND ROCKY POND DAM WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF pp. 172 to 173",
+        facts: [
+          ["Blue Hill Pond", "add overtopping protection; filed cost $85,000"],
+          ["Rocky Pond", "add overtopping protection; filed cost $85,000"]
+        ]
+      },
+      {
         label: "2016 FILED MODERNIZATION",
         sourceId: "np-2016-victoria",
         pages: "physical PDF pp. 258 to 261",
@@ -10694,6 +10891,18 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2006 FILED BCV-02 RELIABILITY WORK",
+        sourceId: "np-2006-distribution-reliability",
+        pages: "physical PDF pp. 430 to 434",
+        facts: [
+          ["Feeder", "12.5 kV; approximately 62 km and 1,530 customers; includes the Bell Island submarine-cable supply"],
+          ["Construction record", "original construction dates from the early 1930s; approximately 25% was rebuilt after the 1984 ice storm"],
+          ["Reliability record", "261 interruption reports and 3,512,882 customer outage minutes in the study period"],
+          ["Filed scope", "rebuild approximately 10 km of the main trunk with 1/0 AASC conductor and new poles; filed cost $440,000"],
+          ["Later record", "the 2010 filing says BCV-02 was rebuilt under the distribution reliability initiative in 2006 and had no reliability issues after 2006"]
+        ]
+      },
       {
         label: "2009 FILED LOAD TRANSFER TO HARDWOODS",
         sourceId: "np-2009-broad-cove-growth",
@@ -11066,6 +11275,27 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2006 FILED 25 KV STRUCTURE FOUNDATION",
+        sourceId: "np-2006-substation-program",
+        pages: "physical PDF p. 203",
+        facts: [
+          ["Filed work", "replace the Bay Roberts 25 kV structure foundation"],
+          ["Filed cost", "$21,000"]
+        ]
+      },
+      {
+        label: "2006 FILED BRB-T1 LOAD TRANSFER",
+        sourceId: "np-2006-feeder-growth",
+        pages: "physical PDF pp. 454 to 455",
+        facts: [
+          ["BRB-T1", "20 MVA at 138/12.5 kV; 20.2 MVA measured 2004 peak; 23.4 MVA 2006 forecast"],
+          ["Feeder peaks in 2004", "BRB-01 5.0 MVA; BRB-02 2.4 MVA; BRB-03 4.7 MVA; BRB-04 5.3 MVA; BRB-05 3.3 MVA"],
+          ["Selected alternative", "transfer 2.7 MVA from BRB-T1 through ties from BRB-01 to Springfield SPF-01 and from BRB-02 to Island Cove ICL-02"],
+          ["Voltage control", "install three-phase regulators for ICL-02 and SPF-03 and one single-phase regulator on ICL-02"],
+          ["Filed cost", "$176,000; the filing compared this with approximately $1 million for a 25 MVA transformer replacement"]
+        ]
+      },
       {
         label: "2018 FILED DOWNLINE RECLOSER",
         sourceId: "np-2018-distribution-feeder-automation",
@@ -12706,6 +12936,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED 66 KV BUS DIFFERENTIAL PROTECTION",
+        sourceId: "np-2006-substation-program",
+        pages: "physical PDF pp. 228 to 231",
+        facts: [
+          ["Existing protection", "the filing states that Salt Pond and New Chelsea did not have 66 kV bus differential protection"],
+          ["Filed work", "install current differential bus protection at both stations"],
+          ["Combined filed cost", "$196,000"]
+        ]
+      },
+      {
         label: "2017 FILED MODERNIZATION",
         sourceId: "np-2017-salt-pond",
         pages: "physical PDF pp. 228 to 232",
@@ -12805,6 +13045,28 @@ export const stationProfiles = [
           ["Protection and control", "add instrument transformers, digital relays, communications gateway, control building and SCADA monitoring"],
           ["Filed schedule", "construction in 2027; commissioning planned for the fourth quarter of 2027"]
         ]
+      },
+      {
+        label: "2006 FILED GPD-01 RELIABILITY WORK",
+        sourceId: "np-2006-distribution-reliability",
+        pages: "physical PDF pp. 444 to 451",
+        facts: [
+          ["Feeder", "12.5 kV; approximately 233 customers; built in 1980"],
+          ["Construction", "1/0 AASC to the Greenspond causeway, with ACSR on the crossing and through the community"],
+          ["Reliability record", "100 interruption reports and 1,756,284 customer outage minutes in the study period; an April 2004 outage lasted 28 hours and 16 minutes"],
+          ["Filed scope", "replace ACSR conductor, cutouts and clamps; use 14.4 kV construction and 35 kV line-post insulators in the exposed section; filed cost $102,000"],
+          ["Later record", "the 2010 filing says GPD-01 work was completed under the rebuild program in 2005 and reports no reliability issues after that work"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED FEEDER ROUTE",
+    referenceSheets: [
+      {
+        title: "2006 filed GPD-01 reliability route",
+        image: "./reference-maps/gpd-01-2006-route-451.png",
+        alt: "Filed GPD-01 route map showing Greenspond Substation, the causeway crossing, and the heavy-loading study point",
+        sourceId: "np-2006-distribution-reliability",
+        pages: "physical PDF p. 451"
       }
     ]
   },
@@ -13974,6 +14236,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED 66 KV FOUNDATION AND DRAINAGE WORK",
+        sourceId: "np-2006-substation-program",
+        pages: "physical PDF p. 203",
+        facts: [
+          ["Filed work", "replace seven 66 kV structure foundations and improve station drainage"],
+          ["Filed cost", "$112,000"]
+        ]
+      },
+      {
         label: "2018 TO 2019 302L REBUILD",
         sourceId: "np-2018-302l",
         pages: "physical PDF p. 244",
@@ -14068,6 +14339,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2006 FILED INSTRUMENTATION WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [["Filed work", "instrumentation work at Lookout Brook was included in a four-project small hydro rehabilitation program"]]
+      },
       {
         label: "2010 FILED ELECTRICAL REFURBISHMENT SCOPE",
         sourceId: "np-2010-lookout-brook",
@@ -15636,6 +15913,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED SMV-01 RELIABILITY WORK",
+        sourceId: "np-2006-distribution-reliability",
+        pages: "physical PDF pp. 437 to 441",
+        facts: [
+          ["Feeder", "25 kV; approximately 1,016 customers; 98 km total, including 15.6 km three phase, 26.1 km two phase, and 56 km single phase"],
+          ["Reliability record", "226 interruption reports and 2,414,660 customer outage minutes in the study period; 71% attributed to weather"],
+          ["Filed scope", "rebuild 1.3 km and replace 34 poles, rebuild another 3.5 km, relocate 1 km, and replace defective insulators"],
+          ["Filed cost", "$239,000"]
+        ]
+      },
+      {
         label: "2013 COMPLETED 110L SECTION",
         sourceId: "np-2013-q4-report",
         pages: "physical PDF p. 787; attachment p. 76",
@@ -15902,6 +16190,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED 123L REHABILITATION",
+        sourceId: "np-2006-123l",
+        pages: "physical PDF pp. 332 to 338",
+        facts: [
+          ["Line record", "138 kV between Clarenville and Catalina; 94 km; wood H-frame construction; built in 1976"],
+          ["Service", "approximately 5,500 customers on the Bonavista Peninsula; limited contingency supply through 110L"],
+          ["1992 ice damage", "approximately 4.3 km of line collapsed under heavy ice loading"],
+          ["Work before 2006", "hardware had been replaced on approximately 30 km and about 40% of defective insulators had been replaced"],
+          ["2006 filed work", "replace hardware and defective insulators over the remaining 56 km; filed cost $372,000"]
+        ]
+      },
+      {
         label: "2017 FILED MODERNIZATION SCOPE",
         sourceId: "np-2017-catalina",
         pages: "physical PDF pp. 233 to 236",
@@ -16043,6 +16343,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED 123L REHABILITATION",
+        sourceId: "np-2006-123l",
+        pages: "physical PDF pp. 332 to 338",
+        facts: [
+          ["Line record", "138 kV between Clarenville and Catalina; 94 km; wood H-frame construction; built in 1976"],
+          ["Service", "approximately 5,500 customers on the Bonavista Peninsula; limited contingency supply through 110L"],
+          ["1992 ice damage", "approximately 4.3 km of line collapsed under heavy ice loading"],
+          ["Condition program", "the 2006 filing proposed replacing hardware and defective insulators over the remaining 56 km; filed cost $372,000"]
+        ]
+      },
+      {
         label: "2008 FILED STATION WORK",
         sourceId: "np-2008-station-modernization",
         pages: "physical PDF pp. 165 to 166",
@@ -16119,6 +16430,13 @@ export const stationProfiles = [
       }
     ],
     referenceSheets: [
+      {
+        title: "2006 filed 123L rehabilitation route",
+        image: "./reference-maps/123l-2006-route-338.png",
+        alt: "Filed map of 123L between Clarenville, Princeton Pond, and Catalina, with the 110L and 111L contingency route",
+        sourceId: "np-2006-123l",
+        pages: "physical PDF p. 338"
+      },
       {
         title: "2009 filed 110L rebuild section near Clarenville",
         image: "./reference-maps/110l-2009-route.png",
@@ -16350,6 +16668,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED 123L REHABILITATION",
+        sourceId: "np-2006-123l",
+        pages: "physical PDF pp. 332 to 338",
+        facts: [
+          ["Line record", "138 kV between Clarenville and Catalina through Princeton Pond; 94 km; wood H-frame construction; built in 1976"],
+          ["1992 ice damage", "approximately 4.3 km of line collapsed under heavy ice loading"],
+          ["2006 filed work", "replace hardware and defective insulators over the remaining 56 km; filed cost $372,000"]
+        ]
+      },
+      {
         label: "BONAVISTA PENINSULA OPERATING ARRANGEMENT",
         sourceId: "np-2025-ca-np-116",
         pages: "physical PDF pp. 1 to 2",
@@ -16544,6 +16872,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED LEW-02 RELIABILITY WORK",
+        sourceId: "np-2006-distribution-reliability",
+        pages: "physical PDF pp. 405 to 415",
+        facts: [
+          ["Feeder", "25 kV; approximately 1,550 customers; original construction dating from 1964"],
+          ["Reliability record", "185 interruption reports and 3,071,925 customer outage minutes in the study period; 44% attributed to conductor failure and 42% to weather"],
+          ["Filed scope", "replace aged conductor and insulators, relocate exposed sections, address heavy loading, and install a remote recloser"],
+          ["Filed program", "$888,000 over 2006 and 2007; $432,000 filed for 2006 and $456,000 for 2007"],
+          ["Later record", "the 2010 filing states that substantial work was completed in 2006, later stages were deferred, and the remaining 2009 allocation was cancelled after revised reliability analysis"]
+        ]
+      },
+      {
         label: "2008 FILED STATION WORK",
         sourceId: "np-2008-station-modernization",
         pages: "physical PDF pp. 173 to 174",
@@ -16591,7 +16931,7 @@ export const stationProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "2018 SELECTED CONVERSION ONE-LINE",
+    referenceSheetLabel: "FILED SYSTEM DRAWINGS",
     referenceSheets: [
       {
         title: "Lewisporte 138 kV conversion one-line",
@@ -16599,6 +16939,13 @@ export const stationProfiles = [
         alt: "Filed Lewisporte conversion one-line showing two 138 kV line positions, LEW-T1, the 25 kV main and transfer buses, and four feeders",
         sourceId: "np-2019-central-system",
         pages: "physical PDF p. 190"
+      },
+      {
+        title: "2006 filed LEW-02 reliability route",
+        image: "./reference-maps/lew-02-2006-route-415.png",
+        alt: "Filed LEW-02 route map showing the 2006 and 2007 reliability work sections",
+        sourceId: "np-2006-distribution-reliability",
+        pages: "physical PDF p. 415"
       }
     ]
   },
@@ -18015,6 +18362,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 PROPOSED GDL-02 CAPACITY UPGRADE",
+        sourceId: "np-2006-feeder-growth",
+        pages: "physical PDF p. 455",
+        facts: [
+          ["Feeder section", "GDL-02 from Glendale Substation toward the Canadian Tire store on Merchant Drive"],
+          ["Existing conductor", "1/0 aluminium conductor"],
+          ["Filed work", "replace the section with 477 ASC conductor"],
+          ["Purpose", "supply Merchant Drive, South Brook subdivision, and future phases of Southlands subdivision"],
+          ["Filed cost", "$90,000"]
+        ]
+      },
+      {
         label: "2011 FILED 2013 LOAD FORECAST",
         sourceId: "np-2012-south-stjohns-load",
         pages: "physical PDF pp. 363 to 370",
@@ -18699,6 +19058,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED VIR-04 AND VIR-06 BREAKER REPLACEMENTS",
+        sourceId: "np-2006-substation-program",
+        pages: "physical PDF pp. 214 to 219",
+        facts: [
+          ["Existing interrupting rating", "12.5 kA"],
+          ["Calculated fault level in the filing", "18.4 kA"],
+          ["Filed work", "replace the VIR-04 and VIR-06 feeder breakers"]
+        ]
+      },
+      {
         label: "2019-2020 TRANSFORMER LOAD",
         sourceId: "np-2021-north-study",
         pages: "physical PDF p. 9",
@@ -19198,6 +19567,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED FOREBAY EMBANKMENT WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 171",
+        facts: [
+          ["Filed work", "rehabilitate the east and west forebay embankments"],
+          ["Filed cost", "$101,000"]
+        ]
+      },
+      {
         label: "2014 FILED LA MANCHE CANAL CAPACITY INCREASE",
         sourceId: "np-2014-la-manche",
         pages: "physical PDF pp. 24 and 215 to 219",
@@ -19358,6 +19736,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED GENERATOR COOLING WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [["Filed work", "replace deteriorated generator cooling-water coils at Horse Chops as part of a five-plant program; total program cost $50,000"]]
+      },
+      {
         label: "2007 FILED HORSE CHOPS WEST DAM WORK",
         sourceId: "np-2007-capital",
         pages: "physical PDF p. 133",
@@ -19503,6 +19887,12 @@ export const stationProfiles = [
       facts: [["PBK-T1", "generation transformer; 66/6.9 kV; 6.67 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2006 FILED INSTRUMENTATION WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [["Filed work", "instrumentation work at Pierre's Brook was included in a four-project small hydro rehabilitation program"]]
+      },
       {
         label: "1931 PLANT ORIGIN",
         sourceId: "np-2015-pierre-brook",
@@ -19666,6 +20056,12 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2006 FILED GENERATOR COOLING WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [["Filed work", "replace deteriorated generator cooling-water coils at Rocky Pond as part of a five-plant program; total program cost $50,000"]]
+      },
+      {
         label: "2009 FILED PLANT AND STATION REFURBISHMENT",
         sourceId: "np-2009-rocky-pond",
         pages: "physical PDF pp. 161 to 170",
@@ -19765,6 +20161,16 @@ export const stationProfiles = [
       facts: [["MRP-T1", "generation transformer; 66/2.4 kV; 1.50 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2006 FILED CANAL EMBANKMENT WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 171",
+        facts: [
+          ["Condition", "the filing identified leakage through the Morris canal embankment"],
+          ["Filed work", "rehabilitate the canal embankment"],
+          ["Filed cost", "$105,000"]
+        ]
+      },
       {
         label: "2003 FILED TURBINE SEAL WORK",
         sourceId: "np-2004-morris",
@@ -19890,6 +20296,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2006 FILED 66 KV BUS DIFFERENTIAL PROTECTION",
+        sourceId: "np-2006-substation-program",
+        pages: "physical PDF pp. 228 to 231",
+        facts: [
+          ["Existing protection", "the filing states that New Chelsea and Salt Pond did not have 66 kV bus differential protection"],
+          ["Filed work", "install current differential bus protection at both stations"],
+          ["Combined filed cost", "$196,000"]
+        ]
+      },
       {
         label: "2018 FILED FEEDER AUTOMATION",
         sourceId: "np-2018-feeder-automation",
@@ -20042,6 +20458,12 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2006 FILED VIBRATION PROTECTION",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [["Filed work", "install vibration protection at Pitmans Pond as part of a four-project small hydro rehabilitation program"]]
+      },
+      {
         label: "2013 FILED PLANT REFURBISHMENT",
         sourceId: "np-2013-pitmans-pond",
         pages: "physical PDF pp. 28, 231 and 238 to 239",
@@ -20129,6 +20551,15 @@ export const stationProfiles = [
       facts: [["TOP-T1", "generation transformer; 25/2.4 kV; 0.75 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2006 FILED DAM AND GENERATOR COOLING WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [
+          ["Three Arm Pond Dam", "rehabilitation included in the 2006 hydro program"],
+          ["Generator cooling", "replace deteriorated generator cooling-water coils at Topsail as part of a five-plant program; total program cost $50,000"]
+        ]
+      },
       {
         label: "2010 DEVELOPMENT RECORD",
         sourceId: "np-2013-topsail-system",
@@ -20343,6 +20774,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2006 FILED FREEBOARD DYKE WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [["Filed work", "place riprap on the Cape Broyle freeboard dyke as part of a four-project small hydro rehabilitation program"]]
+      },
       {
         label: "Q4 2008 REPORTED PLANT AND STATION COMPLETION",
         sourceId: "np-2008-southern-shore-q4",
@@ -21206,6 +21643,21 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED SEAL COVE POND DAM WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 174",
+        facts: [
+          ["Filed work", "rehabilitate the Seal Cove Pond dam spillway deck and timber crib structure"],
+          ["Filed cost", "$108,000"]
+        ]
+      },
+      {
+        label: "2006 FILED INSTRUMENTATION WORK",
+        sourceId: "np-2006-hydro-rehabilitation",
+        pages: "physical PDF p. 175",
+        facts: [["Filed work", "instrumentation work at Heart's Content was included in a four-project small hydro rehabilitation program"]]
+      },
+      {
         label: "2007 FILED 43L FINAL REBUILD SECTION",
         sourceId: "np-2007-capital",
         pages: "physical PDF pp. 178 and 181",
@@ -21926,6 +22378,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2006 FILED TRANSFORMER BACKUP FUSES",
+        sourceId: "np-2006-substation-program",
+        pages: "physical PDF pp. 228 to 231",
+        facts: [
+          ["Filed transformer record", "Riverhead and Trepassey each had a 5/6.7 MVA transformer without high-side backup fuses"],
+          ["Filed work", "install high-side transformer backup fuses at both stations"],
+          ["Combined filed cost", "$77,000"]
+        ]
+      },
+      {
         label: "1969 TO 1972 STATION HISTORY",
         sourceId: "np-2017-rvh-transformer",
         pages: "physical PDF pp. 11 and 20",
@@ -22049,6 +22511,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2006 FILED TRANSFORMER BACKUP FUSES",
+        sourceId: "np-2006-substation-program",
+        pages: "physical PDF pp. 228 to 231",
+        facts: [
+          ["Filed transformer record", "Trepassey and Riverhead each had a 5/6.7 MVA transformer without high-side backup fuses"],
+          ["Filed work", "install high-side transformer backup fuses at both stations"],
+          ["Combined filed cost", "$77,000"]
+        ]
+      },
       {
         label: "PRE-1972 STATION STRUCTURES",
         sourceId: "np-2010-substation-asset-history",

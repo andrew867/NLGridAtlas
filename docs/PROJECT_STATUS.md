@@ -15,6 +15,12 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 2006 123L construction, 1992 ice-collapse, rehabilitation, and route record across Clarenville, Princeton Pond, and Catalina.
+- Added the LEW-02, GLV-02, BCV-02, SMV-01, and GPD-01 reliability studies with measured interruption totals, filed work, route drawings, and later completion or cancellation evidence where located.
+- Added the 2006 Humber Valley actual and forecast loads, alternatives, and Little Rapids study result without presenting the proposed station as built.
+- Added station-specific 2006 foundation, breaker, potential-transformer, bus-protection, fuse, cooling, and load-transfer records.
+- Added the 2006 dam, canal, cooling, instrumentation, vibration, and civil-work records to the affected hydro plants.
+- Added the December 6, 2004 manual building-load reduction and the separately filed SCADA load-control proposal.
 - Added the completed 2012 21L rebuild between Horse Chops and the 20L tap, including the filed 5.3 km route, 36 structures, inspection deficiencies, conductor replacement, completion report, and route drawing.
 - Added the completed June 2012 White Hills section of 124L near Clarenville, including the 5 km route, 23 structures, cited ice-loading difference, long spans, and route drawing.
 - Added the completed SJM-08 Water Street and Harbour Drive relocation. Added the filed PUL-02 conductor upgrade as proposed because no asset-level completion record was located.

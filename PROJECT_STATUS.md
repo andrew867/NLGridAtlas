@@ -1,6 +1,6 @@
 # NL Grid Atlas project status
 
-Updated: 2026-11-13
+Updated: 2026-11-14
 
 ## Repository and hosting
 
@@ -15,6 +15,8 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added the 2006 123L construction, ice-damage, rehabilitation, and route record.
+- Added five 2006 feeder reliability studies, the Humber Valley load plan, selected substation equipment work, hydro rehabilitation, and the December 6, 2004 manual building-load reduction.
 - Added the 2016 King's Bridge 4.16 kV to 12.5 kV conversion, new KBR-13 and KBR-14 positions, and the filed reconfigured-feeder drawing.
 - Added the 2015 to 2016 30L Ridge Road to King's Bridge rebuild with exact length, structure count, underbuild, schedule, cost, and route drawing.
 - Added the filed St. John's west and Corner Brook fibre routes to the affected stations. The record preserves the $252,000 and $229,000 conflicting actual-expenditure figures and does not assign unreported installed endpoints.

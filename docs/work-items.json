@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "status_values": ["not_started", "in_progress", "blocked", "done", "deferred"],
   "priority_values": ["P0", "P1", "P2", "P3"],
   "phase_values": [0, 1, 2, 3, 4, 5],
@@ -956,6 +956,18 @@
       "completion_evidence": ["research/NP_2007_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/43l-2007-route-181.png", "public/reference-maps/110l-2007-route-182.png", "tests/np-2007-capital.test.js"],
       "blocker": null,
       "notes": "The seven direct strategic-plan station records now use the 2007 application pages. Rattling Brook separates the filed plant scope from the later report that the 66 kV station modernization was completed. The 43L and 110L records preserve staged rebuild lengths and route sheets. Petty Harbour, Horse Chops and Wesleyville retain project-specific generation records."
+    },
+    {
+      "id": "NPREG-022",
+      "title": "Reconcile Newfoundland Power 2006 transmission, feeder, station, hydro, and load-control records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2006 capital application, 123L, five distribution reliability studies, Humber Valley loading, station equipment and protection work, hydro rehabilitation, feeder growth, building load control, route drawings, and later project-state evidence.",
+      "dependencies": ["NPREG-021"],
+      "completion_evidence": ["research/NP_2006_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/123l-2006-route-338.png", "public/reference-maps/lew-02-2006-route-415.png", "public/reference-maps/glv-02-2006-route-427.png", "public/reference-maps/gpd-01-2006-route-451.png", "tests/np-2006-capital.test.js"],
+      "blocker": null,
+      "notes": "The 123L record preserves line construction, the 1992 collapse, staged rehabilitation and the filed route. LEW-02, GLV-02, BCV-02, SMV-01 and GPD-01 retain measured interruption totals and later completion or cancellation evidence where located. Humber Valley alternatives remain separate from later selected work. Station and hydro records remain filed unless a later source states completion."
     },
     {
       "id": "ASSET-001",
