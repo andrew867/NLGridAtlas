@@ -3067,6 +3067,7 @@ test("station reference schematics remain expandable and locally preserved", asy
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
   const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
   assert.deepEqual(stJohnsMain.referenceSheets.map((sheet) => [sheet.title, sheet.pages]), [
+    ["2011 proposed Water Street feeder reconfiguration", "physical PDF p. 429"],
     ["2014 filed 13L rebuild route", "physical PDF p. 317"],
     ["2011 Water Street existing feeder schematic", "physical PDF p. 425"],
     ["2019 filed SJM-06 route", "physical PDF p. 319"]
@@ -3075,7 +3076,7 @@ test("station reference schematics remain expandable and locally preserved", asy
     kingsBridge.referenceSheets.find((sheet) => sheet.image === "./reference-maps/kbr-2019-service-area.png").image,
     "./reference-maps/kbr-2019-service-area.png"
   );
-  assert.equal(pepperell.referenceSheets[0].pages, "physical PDF p. 37");
+  assert.equal(pepperell.referenceSheets.find((sheet) => sheet.image === "./reference-maps/pep-2019-service-area.png").pages, "physical PDF p. 37");
   assert.equal(virginiaWaters.referenceSheets[0].pages, "physical PDF p. 39");
   assert.equal(hardwoods.referenceSheets[0].image, "./reference-maps/hwd-08-2014-reclosers.png");
   assert.deepEqual(kenmount.referenceSheets.map((sheet) => sheet.pages), [
@@ -3088,6 +3089,7 @@ test("station reference schematics remain expandable and locally preserved", asy
     "physical PDF p. 558"
   ]);
   assert.deepEqual(goulds.referenceSheets.map((sheet) => sheet.pages), [
+    "physical PDF p. 382",
     "physical PDF p. 318",
     "physical PDF p. 42",
     "physical PDF p. 43"

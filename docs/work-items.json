@@ -898,6 +898,18 @@
       "notes": "The station records now include the completed 21L and White Hills 124L sections, completed SJM-08 relocation, 2011 South St. John's and Mount Pearl transformer forecasts, Lockston filed scope and expenditure variance, the proposed PUL-02 work, and the Gander area network drawing. The three filed St. John's fibre routes are recorded as suspended after six leased circuits were selected. Filed work without an asset-level completion record remains proposed."
     },
     {
+      "id": "NPREG-017",
+      "title": "Reconcile Newfoundland Power 2011 load, feeder, transmission, and hydro records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2011 capital application, quarterly status report, later completion records, Avalon transformer loads, feeder reconfiguration, transmission rebuilds, reliability work, and hydro civil projects.",
+      "dependencies": ["NPREG-016"],
+      "completion_evidence": ["research/NP_2011_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/16l-2011-route.png", "public/reference-maps/25l-2011-route.png", "public/reference-maps/sjm-2011-reconfigured-feeders.png", "tests/np-2011-capital.test.js"],
+      "blocker": null,
+      "notes": "The station records now include the measured 2009 Avalon transformer peaks, the selected Pulpit Rock expansion, NWB-02 reliability work, the 16L and 25L filed rebuilds and later completion status, the St. John's Main feeder-capacity changes, and the Rattling and Sandy Lake spillway records. Rattling Lake remains reported as substantially complete because no final commissioning statement was located. The Sandy Lake completion is verified by CA-NP-011."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

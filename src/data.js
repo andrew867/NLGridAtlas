@@ -750,6 +750,76 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
   },
   {
+    id: "np-2011-northeast-load",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Northeast St. John's Load Study",
+    topics: ["Broad Cove", "Pulpit Rock", "Hardwoods", "BCV-T1", "PUL-T1", "HWD-T3", "PUL-04", "load growth"],
+    pages: "physical PDF pp. 333 to 342",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2011-transmission-rebuild",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, 16L, 21L and 25L Rebuilds",
+    topics: ["16L", "21L", "25L", "King's Bridge", "Pepperrell", "Horse Chops", "St. John's Main", "Goulds", "transmission line rebuild"],
+    pages: "physical PDF pp. 373 to 382",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2011-nwb02",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, NWB-02 Reliability Work",
+    topics: ["Northwest Brook", "NWB-02", "Hillview", "Hatchet Cove", "St. Jones Within", "distribution reliability"],
+    pages: "physical PDF pp. 396 to 400",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2011-feeder-growth",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Feeder Load-Growth Work",
+    topics: ["PUL-04", "SJM", "VIR-06", "PHR-01", "KEL-01", "distribution feeder", "load growth"],
+    pages: "physical PDF pp. 407 to 410 and 413 to 429",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2011-hydro-work",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Rattling Brook and Sandy Lake Work",
+    topics: ["Rattling Brook", "Rattling Lake", "piano-key spillway", "Sandy Brook", "Sandy Lake", "hydroelectric generation"],
+    pages: "physical PDF pp. 27 to 29 and 202 to 248",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2011-q3-status",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "Q3 2011 Quarterly Regulatory Report, Capital Project Status",
+    topics: ["Pulpit Rock", "Kelligrews", "16L", "25L", "Rattling Brook", "Sandy Lake", "capital project status"],
+    pages: "physical PDF pp. 1120 to 1122",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
+  },
+  {
+    id: "np-2014-sandy-lake-completion",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-011, Sandy Lake Spillway Project History",
+    topics: ["Sandy Brook", "Sandy Lake", "spillway", "project completion"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/rfi/CA-NP-011.pdf"
+  },
+  {
     id: "np-2008-mobile-substation",
     year: 2007,
     organization: "Newfoundland Power",
@@ -3124,7 +3194,7 @@ export const sources = [
     year: 2019,
     organization: "Newfoundland Power",
     title: "PUB-NP-007, Transmission Line Rebuild Strategy Status Update",
-    topics: ["302L", "transmission line rebuild", "completion status"],
+    topics: ["16L", "21L", "25L", "302L", "transmission line rebuild", "completion status"],
     pages: "physical PDF p. 2",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/rfi/PUB-NP-007.PDF"
@@ -5906,6 +5976,33 @@ export const timeline = [
     sourceId: "oxen-2013",
     pages: "PDF p. 37",
     status: "reported"
+  },
+  {
+    date: "2011-Q3",
+    category: "station",
+    title: "Pulpit Rock transformer expansion energized",
+    body: "Newfoundland Power reported the Pulpit Rock transformer project complete and energized.",
+    sourceId: "np-2011-q3-status",
+    pages: "physical PDF p. 1120",
+    status: "reported"
+  },
+  {
+    date: "2011-Q3",
+    category: "generation",
+    title: "Rattling Lake spillway replacement substantially complete",
+    body: "The 105 m stoplog spillway had been replaced by a high-efficiency piano-key spillway.",
+    sourceId: "np-2011-q3-status",
+    pages: "physical PDF p. 1120",
+    status: "reported"
+  },
+  {
+    date: "2011",
+    category: "generation",
+    title: "Sandy Lake spillway raise completed",
+    body: "The project raised the Sandy Lake spillway to increase storage and expected annual production by 0.86 GWh.",
+    sourceId: "np-2014-sandy-lake-completion",
+    pages: "physical PDF p. 1",
+    status: "verified"
   },
   {
     date: "2012",
@@ -10268,6 +10365,16 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2009 MEASURED PEAK / 2011 SELECTED LOAD TRANSFER",
+        sourceId: "np-2011-northeast-load",
+        pages: "physical PDF pp. 333 to 340",
+        facts: [
+          ["BCV-T1", "25.6 MVA measured peak in 2009 against a 25 MVA nameplate rating"],
+          ["Feeder customers", "BCV-01 served 866; BCV-02 served 1,529; BCV-03 served 997; BCV-04 served 1,034"],
+          ["Selected work", "add a second 25 MVA transformer at Pulpit Rock and construct PUL-04 to transfer load from Broad Cove"]
+        ]
+      },
+      {
         label: "2019-2020 TRANSFORMER LOAD",
         sourceId: "np-2021-north-study",
         pages: "physical PDF p. 9",
@@ -10901,6 +11008,16 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2009 MEASURED LOAD",
+        sourceId: "np-2011-cbs-study",
+        pages: "physical PDF pp. 309 to 316",
+        facts: [
+          ["CHA-T1", "19.9 MVA measured peak"],
+          ["CHA-T2", "19.9 MVA measured peak"],
+          ["Feeder customers", "CHA-01 served 2,266; CHA-02 served 1,745; CHA-03 served 2,113"]
+        ]
+      },
       {
         label: "2018 FILED DOWNLINE RECLOSERS",
         sourceId: "np-2018-distribution-feeder-automation",
@@ -14839,6 +14956,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2011 FILED NWB-02 RELIABILITY WORK",
+        sourceId: "np-2011-nwb02",
+        pages: "physical PDF pp. 396 to 400",
+        facts: [
+          ["Hillview to Hatchet Cove Tap", "relocate 7.0 km of the 8.9 km section to the road right-of-way using #2 ACSR"],
+          ["Hatchet Cove Tap to St. Jones Within", "relocate 3.4 km to the road right-of-way using #2 ACSR"],
+          ["2005 to 2009 SAIDI", "4.60, 8.98, 4.82, 9.51 and 0.48 hours"],
+          ["2005 to 2009 SAIFI", "2.63, 5.33, 1.25, 3.10 and 0.26 interruptions"],
+          ["Filed cost", "$521,000"]
+        ]
+      },
+      {
         label: "2025 FILED MODERNIZATION SCOPE",
         sourceId: "np-2025-northwest-brook",
         pages: "physical PDF pp. 403 to 410",
@@ -15942,6 +16071,19 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2011 RATTLING LAKE SPILLWAY REPLACEMENT",
+        sourceId: "np-2011-hydro-work",
+        pages: "physical PDF pp. 204 to 210",
+        facts: [
+          ["Existing structure", "1958 stoplog spillway; removal of stoplogs was required to pass the spillway design flood"],
+          ["Selected design", "gravity overflow labyrinth spillway with no gates, power requirement or operator intervention"],
+          ["Design basis", "416 m3/s inflow design flood, 1 in 10,000 annual exceedance probability and 1.2 m freeboard"],
+          ["Dam work", "raise Rattling Lake Dam, Amy's Lake Dam and the Amy's Lake freeboard dykes by 1.0 m"],
+          ["Filed cost", "$2.600 million, including $1.800 million for the spillway"],
+          ["Q3 status", "105 m stoplog spillway replaced by a high-efficiency piano-key spillway; project substantially complete"]
+        ]
+      },
+      {
         label: "2015 FILED RBK-01 THREE-PHASE CONVERSION",
         sourceId: "np-2015-feeder-growth",
         pages: "physical PDF pp. 648 to 649",
@@ -16125,6 +16267,15 @@ export const stationProfiles = [
       facts: [["HWD-02", "12.5 kV; HWD-T1/T2; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2009 HWD-T3 MEASURED LOAD",
+        sourceId: "np-2011-cbs-study",
+        pages: "physical PDF pp. 309 to 316",
+        facts: [
+          ["HWD-T3", "23.9 MVA measured peak against the 25 MVA rating in the filed study"],
+          ["Feeder customers", "HWD-07 served 2,508; HWD-08 served 1,685"]
+        ]
+      },
       {
         label: "2011 FILED 2013 LOAD FORECAST",
         sourceId: "np-2012-south-stjohns-load",
@@ -16670,6 +16821,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2011 FILED / 2019 REPORTED 25L REBUILD",
+        sourceId: "np-2011-transmission-rebuild",
+        pages: "physical PDF pp. 373 to 376 and 382",
+        facts: [
+          ["Circuit", "25L between Goulds and St. John's Main; 66 kV; 9.25 km"],
+          ["Filed line", "51 wood H-frame structures and two steel towers; 477 ACSR conductor; built in 1954"],
+          ["2010 inspection", "43 insulator, 15 crossarm, 27 crossbrace and 30 pole deficiencies"],
+          ["Filed cost", "$1.443 million"],
+          ["Later status", "listed complete in the 2019 transmission rebuild strategy update"]
+        ]
+      },
+      {
         label: "2011 FILED 2013 LOAD FORECAST",
         sourceId: "np-2012-south-stjohns-load",
         pages: "physical PDF pp. 363 to 370",
@@ -16719,6 +16882,13 @@ export const stationProfiles = [
     ],
     referenceSheetLabel: "FILED TRANSMISSION AND FEEDER ROUTES",
     referenceSheets: [
+      {
+        title: "2011 filed 25L rebuild route",
+        image: "./reference-maps/25l-2011-route.png",
+        alt: "Filed 25L route from Goulds to St. John's Main",
+        sourceId: "np-2011-transmission-rebuild",
+        pages: "physical PDF p. 382"
+      },
       { title: "2014 filed 18L rebuild route", image: "./reference-maps/18l-2014-route.png", alt: "Filed route drawing for the 18L rebuild between Goulds and Glendale", sourceId: "np-2014-transmission-lines", pages: "physical PDF p. 318" },
       { title: "GOU-01 Lannon Street tap recloser", image: "./reference-maps/gou-01.png", alt: "Goulds GOU-01 feeder route and Lannon Street single-phase recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 42" },
       { title: "GOU-03 Doyle's Road tap recloser", image: "./reference-maps/gou-03.png", alt: "Goulds GOU-03 feeder route and Doyle's Road single-phase recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 43" }
@@ -16745,6 +16915,13 @@ export const stationProfiles = [
     ],
     referenceSheetLabel: "FILED TRANSMISSION AND DISTRIBUTION MAPS",
     referenceSheets: [
+      {
+        title: "2011 filed 16L rebuild route",
+        image: "./reference-maps/16l-2011-route.png",
+        alt: "Filed 16L route from King's Bridge to Pepperell",
+        sourceId: "np-2011-transmission-rebuild",
+        pages: "physical PDF p. 380"
+      },
       {
         title: "2014 filed 12L rebuild route",
         image: "./reference-maps/12l-2014-route.png",
@@ -16802,6 +16979,19 @@ export const stationProfiles = [
       facts: [["KBR-T3/T4", "KBR-09, KBR-11, KBR-12 and KBR-13; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2011 FILED / 2019 REPORTED 16L REBUILD",
+        sourceId: "np-2011-transmission-rebuild",
+        pages: "physical PDF pp. 373 to 376 and 380",
+        facts: [
+          ["Circuit", "16L between King's Bridge and Pepperell; 66 kV; 1.98 km"],
+          ["Filed line", "single-pole construction with 1/0 copper conductor; built in 1950"],
+          ["Structures", "50 total; 43 carried distribution underbuild"],
+          ["2010 inspection", "4 insulator, 28 crossarm, 6 grounding, 5 leaning-structure and 21 pole deficiencies"],
+          ["Filed cost", "$730,000"],
+          ["Later status", "listed complete in the 2019 transmission rebuild strategy update"]
+        ]
+      },
       {
         label: "2013 TO 2014 COMPLETED 12L REBUILD",
         sourceId: "np-2016-12l-completion",
@@ -17237,6 +17427,29 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2011 ST. JOHN'S MAIN FEEDER RECONFIGURATION",
+        sourceId: "np-2011-feeder-growth",
+        pages: "physical PDF pp. 413 to 429",
+        facts: [
+          ["Aerial project", "remove five feeders from the Waterford River duct bank and reconfigure them as four aerial feeders"],
+          ["Filed construction", "two manholes, 100 m of duct bank, twelve 100 m single-phase 750 MCM XLPE cables, and 0.5 km of double-circuit line"],
+          ["Feeder changes", "SJM-04 removed; SJM-02, SJM-06, SJM-09 and SJM-13 increased from 5.7 MVA to 10.0 MVA"],
+          ["Other capacities", "SJM-03, SJM-07, SJM-08 and SJM-14 increased from 5.7 MVA to 7.6 MVA"],
+          ["Total feeder capacity", "51.3 MVA before the project and 70.4 MVA after the project"]
+        ]
+      },
+      {
+        label: "2011 FILED / 2019 REPORTED 25L REBUILD",
+        sourceId: "np-2011-transmission-rebuild",
+        pages: "physical PDF pp. 373 to 376 and 382",
+        facts: [
+          ["Circuit", "25L between St. John's Main and Goulds; 66 kV; 9.25 km"],
+          ["Filed line", "51 wood H-frame structures and two steel towers; 477 ACSR conductor; built in 1954"],
+          ["Filed cost", "$1.443 million"],
+          ["Later status", "listed complete in the 2019 transmission rebuild strategy update"]
+        ]
+      },
+      {
         label: "Q3 2012 COMPLETED SJM-08 RELOCATION",
         sourceId: "np-2012-q3-report",
         pages: "physical PDF p. 12",
@@ -17333,6 +17546,13 @@ export const stationProfiles = [
       }
     ],
     referenceSheets: [
+      {
+        title: "2011 proposed Water Street feeder reconfiguration",
+        image: "./reference-maps/sjm-2011-reconfigured-feeders.png",
+        alt: "Filed Water Street reconfigured feeder schematic showing the SJM-03, SJM-07, SJM-08, and SJM-14 routes and staged replacement sections",
+        sourceId: "np-2011-feeder-growth",
+        pages: "physical PDF p. 429"
+      },
       {
         title: "2014 filed 13L rebuild route",
         image: "./reference-maps/13l-2014-route.png",
@@ -17569,6 +17789,13 @@ export const stationProfiles = [
     referenceSheetLabel: "2019 SERVICE AREA MAP",
     referenceSheets: [
       {
+        title: "2011 filed 16L rebuild route",
+        image: "./reference-maps/16l-2011-route.png",
+        alt: "Filed 16L route from Pepperell to King's Bridge",
+        sourceId: "np-2011-transmission-rebuild",
+        pages: "physical PDF p. 380"
+      },
+      {
         title: "Pepperell feeder service area and tie table",
         image: "./reference-maps/pep-2019-service-area.png",
         alt: "Pepperell feeder service area map and customer-count tie table filed in the 2019 Pepperell supplemental application",
@@ -17607,6 +17834,17 @@ export const stationProfiles = [
       facts: [["PEP-05", "12.5 kV; PEP-T1/T2; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2011 FILED / 2019 REPORTED 16L REBUILD",
+        sourceId: "np-2011-transmission-rebuild",
+        pages: "physical PDF pp. 373 to 376 and 380",
+        facts: [
+          ["Circuit", "16L between Pepperell and King's Bridge; 66 kV; 1.98 km"],
+          ["Filed line", "single-pole construction with 1/0 copper conductor; built in 1950"],
+          ["Filed cost", "$730,000"],
+          ["Later status", "listed complete in the 2019 transmission rebuild strategy update"]
+        ]
+      },
       {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
@@ -17816,6 +18054,25 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2010 SELECTED PULPIT ROCK EXPANSION",
+        sourceId: "np-2011-northeast-load",
+        pages: "physical PDF pp. 333 to 340",
+        facts: [
+          ["2009 measured peak", "PUL-T1 carried 22.7 MVA against its 25 MVA nameplate rating"],
+          ["Selected work", "add a 25 MVA, 66/12.5 kV transformer and construct PUL-04"],
+          ["Load transfer", "the selected alternative transferred load from Broad Cove to Pulpit Rock"],
+          ["Filed cost", "$2.705 million for transformer and substation work; $638,000 for PUL-04"]
+        ]
+      },
+      {
+        label: "Q3 2011 PULPIT ROCK EXPANSION STATUS",
+        sourceId: "np-2011-q3-status",
+        pages: "physical PDF p. 1120",
+        facts: [
+          ["Status", "transformer project complete and energized"]
+        ]
+      },
       {
         label: "2011 PUL-T1 REPLACEMENT COMPLETION",
         sourceId: "np-2012-kelligrews-completion",
@@ -19150,6 +19407,17 @@ export const stationProfiles = [
       facts: [["SBK-T1", "generation transformer; 66/6.9 kV; 7.0 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2010 APPROVED / 2011 COMPLETED SANDY LAKE SPILLWAY RAISE",
+        sourceId: "np-2014-sandy-lake-completion",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Filed work", "raise the Sandy Lake spillway by 1.0 m to increase watershed storage"],
+          ["Expected production", "0.86 GWh additional energy per year"],
+          ["2010 filed cost", "$612,000"],
+          ["Project history", "delayed for environmental approvals and completed as part of the 2011 capital program"]
+        ]
+      },
       {
         label: "2013 FILED LINE LOADING",
         sourceId: "np-2013-line-loading",
