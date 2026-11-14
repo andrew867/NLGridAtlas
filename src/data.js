@@ -520,6 +520,126 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1964-sunnyside-gander-corridor",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, Original Sunnyside to Gander Corridor",
+    topics: ["1964", "100L", "121L", "124L", "146L", "Sunnyside", "Gander", "138 kV"],
+    pages: "physical PDF pp. 460 to 461",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
+    id: "np-1964-100l",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, Transmission Line 100L",
+    topics: ["1964", "100L", "Sunnyside", "Clarenville", "138 kV", "H-frame", "397.5 ACSR"],
+    pages: "physical PDF p. 96",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
+    id: "np-1964-124l",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Transmission Line 124L",
+    topics: ["1964", "124L", "Clarenville", "Gambo", "138 kV", "H-frame", "397.5 ACSR"],
+    pages: "physical PDF p. 343",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
+    id: "np-1964-146l",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Transmission Line 146L",
+    topics: ["1964", "146L", "Gambo", "Gander", "138 kV", "H-frame", "244.4 ACSR", "397.5 ACSR"],
+    pages: "physical PDF p. 102",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-1964-let01",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, LET-01 Submarine Cable",
+    topics: ["1964", "LET-01", "Lethbridge", "Charlottetown", "submarine cable", "distribution"],
+    pages: "physical PDF p. 473",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1964-lew02",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Lewisporte-02 Feeder Study",
+    topics: ["1964", "LEW-02", "Lewisporte", "25 kV", "ACSR", "distribution reliability"],
+    pages: "physical PDF pp. 406 to 407",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1964-glv02",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "2006 Capital Budget Application, Glovertown-02 Feeder Study",
+    topics: ["1964", "GLV-02", "Glovertown", "Gambo", "25 kV", "distribution reliability"],
+    pages: "physical PDF p. 418",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1964-seal-cove-runner",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Seal Cove G1 Runner History",
+    topics: ["1964", "Seal Cove", "G1", "turbine runner", "hydroelectric generation"],
+    pages: "physical PDF p. 270",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1964-tors-cove-generator",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Tors Cove Generator History",
+    topics: ["1964", "Tors Cove", "generator", "Westinghouse", "hydroelectric generation"],
+    pages: "physical PDF p. 240",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "nlh-1964-bde-water",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2015 Capital Budget Application, Bay d'Espoir Bear Brook Water System",
+    topics: ["1964", "Bay d'Espoir", "Camp Boggy", "Bear Brook", "pump house", "water system"],
+    pages: "physical PDF pp. 173 and 176",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NLH2015Capital/files/application/NLH-2015-Capital-Budget-Application-Volume-II-2014-08-01.PDF"
+  },
+  {
+    id: "nlh-1964-bde-line-depot",
+    year: 2026,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2027 Capital Budget Application, Bay d'Espoir Line Depot",
+    topics: ["1964", "Bay d'Espoir", "line depot", "transmission operations", "distribution operations"],
+    pages: "physical PDF pp. 805 to 806",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202026-07-14.PDF"
+  },
+  {
+    id: "nlh-1964-wiltondale-transformer",
+    year: 2012,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2013 Capital Budget Application, Wiltondale Power Transformer",
+    topics: ["1964", "Wiltondale", "power transformer", "manufacture year"],
+    pages: "physical PDF p. 770",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013Capital/files/application/NLH2013ApplicationComplete-VolumeII.pdf"
+  },
+  {
     id: "nlh-1965-tl203-register",
     year: 2014,
     organization: "Newfoundland and Labrador Hydro",
@@ -9308,6 +9428,25 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1964-system-record",
+    scope: "1964 transmission construction, distribution feeders, submarine cable, hydroelectric equipment, Bay d'Espoir construction support and transformer manufacture",
+    status: "reported",
+    sources: [
+      { sourceId: "np-1964-sunnyside-gander-corridor", pages: "physical PDF pp. 460 to 461" },
+      { sourceId: "np-1964-100l", pages: "physical PDF p. 96" },
+      { sourceId: "np-1964-124l", pages: "physical PDF p. 343" },
+      { sourceId: "np-1964-146l", pages: "physical PDF p. 102" },
+      { sourceId: "np-1964-let01", pages: "physical PDF p. 473" },
+      { sourceId: "np-1964-lew02", pages: "physical PDF pp. 406 to 407" },
+      { sourceId: "np-1964-glv02", pages: "physical PDF p. 418" },
+      { sourceId: "np-1964-seal-cove-runner", pages: "physical PDF p. 270" },
+      { sourceId: "np-1964-tors-cove-generator", pages: "physical PDF p. 240" },
+      { sourceId: "nlh-1964-bde-water", pages: "physical PDF pp. 173 and 176" },
+      { sourceId: "nlh-1964-bde-line-depot", pages: "physical PDF pp. 805 to 806" },
+      { sourceId: "nlh-1964-wiltondale-transformer", pages: "physical PDF p. 770" }
+    ]
+  },
+  {
     id: "np-1965-system-record",
     scope: "1965 transmission construction, terminal development, station construction, transformer manufacture, hydroelectric construction, penstock work and rural distribution",
     status: "reported",
@@ -9867,6 +10006,60 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1964",
+    category: "network",
+    title: "The Sunnyside to Gander 138 kV corridor was constructed",
+    body: "The original line was later divided into 100L, 124L, 121L and 146L. The filed records identify 100L as 34.13 km with approximately 148 H-frame structures and 397.5 ACSR, 124L as 86.1 km with approximately 79 km of 1964 construction and primarily 397.5 ACSR, and 146L as 40.7 km with approximately 160 H-frame structures and 244.4 or 397.5 ACSR.",
+    sourceId: "np-1964-sunnyside-gander-corridor",
+    pages: "physical PDF pp. 460 to 461; 100L physical PDF p. 96; 124L physical PDF p. 343; 146L physical PDF p. 102",
+    status: "reported"
+  },
+  {
+    date: "1964",
+    category: "network",
+    title: "LET-01 submarine cable entered service",
+    body: "The approximately 3 km two-conductor single-phase cable was laid directly on the sea floor. It served the original ungrounded delta feeder; later conversion of LET-01 to grounded wye required back-to-back transformers near the Charlottetown landing.",
+    sourceId: "np-1964-let01",
+    pages: "physical PDF p. 473",
+    status: "reported"
+  },
+  {
+    date: "1964",
+    category: "network",
+    title: "LEW-02 and the original Gambo to Glovertown feeder were built",
+    body: "LEW-02 was a 25 kV feeder using number 2 and number 4 ACSR. The Glovertown feeder began as a single-phase line from Gambo; two additional phases were added when Glovertown Substation was built in 1976.",
+    sourceId: "np-1964-lew02",
+    pages: "physical PDF pp. 406 to 407; Glovertown physical PDF p. 418",
+    status: "reported"
+  },
+  {
+    date: "1964",
+    category: "generation",
+    title: "Seal Cove and Tors Cove generating equipment was renewed",
+    body: "Seal Cove G1 received a replacement turbine runner. At Tors Cove, one of the English Electric generators commissioned in 1940 was refurbished by Westinghouse.",
+    sourceId: "np-1964-seal-cove-runner",
+    pages: "physical PDF p. 270; Tors Cove physical PDF p. 240",
+    status: "reported"
+  },
+  {
+    date: "1964",
+    category: "generation",
+    title: "Bay d'Espoir construction support systems entered service",
+    body: "The Bear Brook system supplied potable and fire-protection water to Camp Boggy through an intake, pump-house sump, duplex pumps, chlorination, a woodstave reservoir and distribution piping. The line depot supported the generating-station development and later Connaigre Peninsula transmission and distribution work.",
+    sourceId: "nlh-1964-bde-water",
+    pages: "physical PDF pp. 173 and 176; line depot physical PDF pp. 805 to 806",
+    status: "reported"
+  },
+  {
+    date: "1964",
+    category: "equipment",
+    title: "The Wiltondale power transformer was manufactured",
+    body: "A 2013 terminal-station filing dates the transformer manufacture to 1964. It remained in service during the later station rebuild because operating conditions and test results did not justify replacement.",
+    sourceId: "nlh-1964-wiltondale-transformer",
+    pages: "physical PDF p. 770",
+    status: "reported"
+  },
   {
     date: "1965",
     category: "network",
@@ -14374,6 +14567,15 @@ export const islandTerminalRecords = [
     name: "Sunnyside Terminal Station",
     status: "unresolved",
     historyRecords: [{
+      label: "1964 SUNNYSIDE TO GANDER 138 KV CORRIDOR",
+      sourceId: "np-1964-sunnyside-gander-corridor",
+      pages: "physical PDF pp. 460 to 461; 100L detail physical PDF p. 96",
+      facts: [
+        ["Original line", "the Sunnyside to Gander line was constructed in 1964"],
+        ["Later designations", "100L, 124L, 121L and 146L"],
+        ["100L", "138 kV radial line from Sunnyside to Clarenville; 34.13 km; approximately 148 H-frame structures; 397.5 ACSR"]
+      ]
+    }, {
       label: "1965 TO 1967 COMMISSIONING AND RING-BUS RECORD",
       sourceId: "nlh-1967-sunnyside-history-conflict",
       pages: "physical PDF p. 5; compare 2013 Capital physical PDF p. 752",
@@ -14452,6 +14654,16 @@ export const islandTerminalRecords = [
     status: "reported",
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
+      {
+        label: "1964 CONSTRUCTION SUPPORT SYSTEMS",
+        sourceId: "nlh-1964-bde-water",
+        pages: "physical PDF pp. 173 and 176; line depot physical PDF pp. 805 to 806",
+        facts: [
+          ["Bear Brook water system", "raw-water intake, pump-house sump, duplex pumps, single-point chlorination, woodstave elevated reservoir and distribution piping"],
+          ["Service", "potable and fire-protection water for Camp Boggy facilities"],
+          ["Line depot", "built to support generating-station construction; later base for Connaigre Peninsula transmission and distribution operations"]
+        ]
+      },
       {
         label: "SPRING 1965 STAGE 1 CONSTRUCTION START",
         sourceId: "nlh-1965-bay-despoir-construction",
@@ -14790,6 +15002,15 @@ export const islandTerminalRecords = [
       ["Distribution", "T1 steps 66 kV down to 12.5 kV; WDL-L1 supplies Wiltondale"]
     ],
     historyRecords: [
+      {
+        label: "1964 TRANSFORMER MANUFACTURE",
+        sourceId: "nlh-1964-wiltondale-transformer",
+        pages: "physical PDF p. 770",
+        facts: [
+          ["Power transformer", "manufactured in 1964"],
+          ["2013 rebuild decision", "relocated to a new concrete pad; operating conditions and test results did not justify replacement"]
+        ]
+      },
       {
         label: "2008 TO 2009 STATION WORK",
         sourceId: "nlh-1975-wiltondale",
@@ -16051,6 +16272,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1964 ORIGINAL GAMBO TO GLOVERTOWN FEEDER",
+        sourceId: "np-1964-glv02",
+        pages: "physical PDF p. 418",
+        facts: [
+          ["Original construction", "single-phase line from Gambo"],
+          ["1976 change", "two phases added when Glovertown Substation entered service"],
+          ["Later feeder", "GLV-02; 25 kV in the 2006 feeder study"]
+        ]
+      },
       {
         label: "2002 REPORTED EASTPORT PENINSULA DISTRIBUTION UPGRADE",
         sourceId: "np-2002-annual-report",
@@ -17712,6 +17943,15 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1964 G1 RUNNER REPLACEMENT",
+        sourceId: "np-1964-seal-cove-runner",
+        pages: "physical PDF p. 270",
+        facts: [
+          ["Unit", "Seal Cove G1"],
+          ["Completed work", "replaced the original 1924 turbine runner"]
+        ]
+      },
       {
         label: "2008 FILED SOLDIERS POND DAM AND SPILLWAY REPLACEMENT",
         sourceId: "np-2008-hydro-rehabilitation",
@@ -21895,6 +22135,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1964 146L CONSTRUCTION",
+        sourceId: "np-1964-146l",
+        pages: "physical PDF p. 102",
+        facts: [
+          ["Line", "138 kV from Gambo to Gander"],
+          ["Construction", "40.7 km; approximately 160 H-frame structures"],
+          ["Conductor", "combination of 244.4 ACSR and 397.5 ACSR"]
+        ]
+      },
+      {
         label: "1965 108L CONSTRUCTION",
         sourceId: "np-1965-108l",
         pages: "physical PDF pp. 100 and 498",
@@ -23067,6 +23317,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1964 CENTRAL 138 KV CORRIDOR",
+        sourceId: "np-1964-sunnyside-gander-corridor",
+        pages: "physical PDF pp. 460 to 461; 124L detail physical PDF p. 343; 146L detail physical PDF p. 102",
+        facts: [
+          ["Original line", "Sunnyside to Gander 138 kV corridor"],
+          ["Current line sections at Gambo", "121L toward Glovertown and 146L toward Gander"],
+          ["146L", "40.7 km; approximately 160 H-frame structures; 244.4 and 397.5 ACSR"]
+        ]
+      },
+      {
         label: "1974 66 KV STRUCTURE",
         sourceId: "np-2024-gambo",
         pages: "physical PDF p. 353",
@@ -24137,6 +24397,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1964 LET-01 SUBMARINE CABLE",
+        sourceId: "np-1964-let01",
+        pages: "physical PDF p. 473",
+        facts: [
+          ["Cable", "approximately 3 km; two-conductor single-phase; laid directly on the sea floor; ungrounded"],
+          ["Original feeder", "LET-01 was delta connected without a neutral"],
+          ["Later conversion", "back-to-back transformers near Charlottetown retained the ungrounded cable after LET-01 changed to grounded wye"]
+        ]
+      },
+      {
         label: "2013 COMPLETED 110L SECTION",
         sourceId: "np-2013-q4-report",
         pages: "physical PDF p. 787; attachment p. 76",
@@ -24479,6 +24749,15 @@ export const stationProfiles = [
     },
     status: "unresolved",
     historyRecords: [
+      {
+        label: "1964 100L AND 124L CONSTRUCTION",
+        sourceId: "np-1964-100l",
+        pages: "physical PDF p. 96; 124L physical PDF p. 343",
+        facts: [
+          ["100L", "138 kV; Sunnyside to Clarenville; 34.13 km total; approximately 148 H-frame structures; 397.5 ACSR; the 2 km Clarenville connection dates to 1975"],
+          ["124L", "138 kV; Clarenville to Gambo in the filed historical record; 86.1 km total; approximately 79 km built in 1964 and 7.2 km built in 1986; primarily 397.5 ACSR"]
+        ]
+      },
       {
         label: "1966 TO 1967 STATION DATE CONFLICT",
         sourceId: "np-1966-clarenville",
@@ -25070,6 +25349,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1964 LEW-02 CONSTRUCTION",
+        sourceId: "np-1964-lew02",
+        pages: "physical PDF pp. 406 to 407",
+        facts: [
+          ["Feeder", "25 kV; originally number 2 and number 4 ACSR"],
+          ["Original material retained in 2006", "sections at Loon Bay, Baytona and Birchy Bay retained 1964 blackjack creosote poles and original insulators"],
+          ["Later extensions", "additional phases extended beyond Michael's Harbour around 1980"]
+        ]
+      },
       {
         label: "1974 STATION CONSTRUCTION",
         sourceId: "np-2008-station-modernization",
@@ -28154,6 +28443,15 @@ export const stationProfiles = [
       facts: [["TCV-T1", "generation transformer; 66/6.9 kV; 7.50 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1964 GENERATOR REFURBISHMENT",
+        sourceId: "np-1964-tors-cove-generator",
+        pages: "physical PDF p. 240",
+        facts: [
+          ["Generating equipment", "one of the English Electric generators commissioned in 1940"],
+          ["Completed work", "refurbished by Westinghouse in 1964"]
+        ]
+      },
       {
         label: "1985 G3 MAIN INLET VALVE",
         sourceId: "np-1985-tors-cove-valve",

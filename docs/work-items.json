@@ -1462,6 +1462,18 @@
       "notes": "The available historical-demand table begins in 1967, so no 1965 demand value is stated. Later primary records establish TL203, 35L, 108L and 352L; Holyrood Terminal Stage 1; Springdale; NWB-T1 and GPD-T1 manufacture; the start of Bay d'Espoir Stage 1 construction; Bay d'Espoir distribution lines L1 and L2; Pierre's Brook and Heart's Content penstock work; Rigolet, Little Bay, L'Anse Amour and Botwood rural distribution; and Mobile, Mobile Plant and Ridge Road low-voltage structures."
     },
     {
+      "id": "NPREG-064",
+      "title": "Reconcile Newfoundland Power 1964 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1964 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-063"],
+      "completion_evidence": ["research/NP_1964_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1964-system.test.js"],
+      "blocker": null,
+      "notes": "The available historical-demand table begins in 1967, so no 1964 demand value is stated. Later primary records establish the original Sunnyside to Gander 138 kV corridor and its later 100L, 124L, 121L and 146L designations; LET-01; LEW-02; the original Gambo to Glovertown feeder; the Seal Cove G1 runner replacement; a Tors Cove generator refurbishment; Bay d'Espoir construction-support systems; and Wiltondale transformer manufacture."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
