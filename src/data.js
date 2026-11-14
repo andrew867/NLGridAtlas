@@ -380,6 +380,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-1998-annual-report",
+    year: 1998,
+    organization: "Newfoundland Power",
+    title: "1998 Annual Report, Electrical System and Operating Record",
+    topics: ["Telephony Video Data", "SCADA", "power quality", "Rose Blanche", "distribution transformers", "thermoscanning", "system reliability"],
+    pages: "physical PDF pp. 7, 10 to 11, 14, 17, 25 and 29",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213C.pdf"
+  },
+  {
     id: "np-1999-annual-report",
     year: 1999,
     organization: "Newfoundland Power",
@@ -6524,6 +6534,15 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2003-ca-241-load-factor", pages: "physical PDF p. 1" }]
   },
   {
+    id: "np-1998-system-reliability",
+    scope: "1998 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages and reported outage causes",
+    status: "reported",
+    sources: [
+      { sourceId: "np-1998-annual-report", pages: "physical PDF p. 10" },
+      { sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }
+    ]
+  },
+  {
     id: "np-1999-system-reliability",
     scope: "1999 Newfoundland Power service availability and actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
     status: "reported",
@@ -6628,6 +6647,60 @@ export const timeline = [
     body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
     sourceId: "vhf-2004",
     pages: "PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1998",
+    category: "reliability",
+    title: "SAIFI was 3.21 and SAIDI was 4.91 hours",
+    body: "The figures exclude Hydro loss-of-supply outages. The annual report identifies major sleet and lightning storms and interruptions originating with the major electrical supplier among the causes of the year's increase in outages.",
+    sourceId: "np-1998-annual-report",
+    pages: "physical PDF p. 10; CA-446Rev physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1998",
+    category: "telecom",
+    title: "Telephony Video Data entered service",
+    body: "The outage-communications system combined computers, telecommunications and the existing SCADA system and could provide outage information to as many as 2,000 simultaneous callers. Approximately 60 remote power-quality monitors were installed; the replacement SCADA system remained planned for 1999.",
+    sourceId: "np-1998-annual-report",
+    pages: "physical PDF pp. 10 to 11",
+    status: "reported"
+  },
+  {
+    date: "1998",
+    category: "network",
+    title: "Electrical-system capital programs totalled $45 million",
+    body: "The report describes equipment replacement and structural improvements against extreme weather. It also records ongoing vegetation management across 10,000 km of transmission and distribution lines and a four-year, $2.6 million program to replace distribution transformers at risk of spills.",
+    sourceId: "np-1998-annual-report",
+    pages: "physical PDF pp. 7, 10 to 11 and 14",
+    status: "reported"
+  },
+  {
+    date: "1998-12-22",
+    category: "generation",
+    title: "Rose Blanche hydro plant was energized",
+    body: "The 6.1 MW plant was Newfoundland Power's first new generating facility in 14 years. The report attributes much of the increase from $31 million of 1997 capital expenditure to the Rose Blanche construction program.",
+    sourceId: "np-1998-annual-report",
+    pages: "physical PDF p. 17",
+    status: "verified"
+  },
+  {
+    date: "1998",
+    category: "generation",
+    title: "Company generation reached 429 GWh",
+    body: "The ten-year summary reports 429 million kWh generated, 4,259 million kWh purchased and a 957 MW peak one-hour demand in 1998.",
+    sourceId: "np-1998-annual-report",
+    pages: "physical PDF p. 29",
+    status: "reported"
+  },
+  {
+    date: "1998-12-31",
+    category: "financial",
+    title: "Transmission and substations carried $93.996 million net book value",
+    body: "Newfoundland Power reported $167.328 million cost and $73.332 million accumulated depreciation for the asset class.",
+    sourceId: "np-1998-annual-report",
+    pages: "physical PDF p. 25",
     status: "reported"
   },
   {
@@ -10159,6 +10232,16 @@ const filedFeederMapProfiles = [
       facts: [["RBH-T1", "generation transformer; 25/6.9 kV; 9.3 MVA"]]
     },
     historyRecords: [
+      {
+        label: "DECEMBER 22, 1998 ENERGIZATION",
+        sourceId: "np-1998-annual-report",
+        pages: "physical PDF p. 17",
+        facts: [
+          ["Plant rating", "6.1 MW in the annual report"],
+          ["Energization", "December 22, 1998"],
+          ["Development record", "Newfoundland Power's first new generating facility in 14 years"]
+        ]
+      },
       {
         label: "AUGUST 1999 OFFICIAL OPENING",
         sourceId: "np-1999-annual-report",

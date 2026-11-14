@@ -15,6 +15,9 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 1998 Newfoundland Power system record from the annual report and revised General Rate Application responses. The record covers actual system and regional SAIFI and SAIDI, the actual 0.519 system load factor, outage causes, TVD outage communications, the 60-monitor power-quality pilot, and the replacement SCADA system's planned 1999 state.
+- Added Rose Blanche's December 22, 1998 energization separately from its August 1999 official opening. Added the $45 million capital total, four-year distribution-transformer environmental program, 429 GWh company generation, 4,259 GWh purchased energy, 957 MW peak demand, and the 1998 transmission and substation fixed-asset values.
+- Opened NPREG-031 for the surviving Newfoundland Power 1997 system and annual records.
 - Added the 1999 Newfoundland Power system record from the annual report and revised General Rate Application responses. The record covers 99.89 percent service availability, actual system and regional SAIFI and SAIDI, the $2.6 million SCADA installation and Telephony Video Data connection, named poor-performing feeder areas, thermoscanning results, and the actual 0.540 system load factor.
 - Added the Petty Harbour penstock and Mobile and Horse Chops surge-tank replacements, the Rose Blanche official opening, 450 GWh company generation, 4,292 GWh purchased energy, and the 1999 transmission and substation fixed-asset values. The Burnt Islands investment remains a system timeline record because the source does not identify a station or feeder designation represented in the atlas.
 - Opened NPREG-030 for the surviving Newfoundland Power 1998 system and annual records.
