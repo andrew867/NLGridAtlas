@@ -520,6 +520,136 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1967-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1967", "Newfoundland Power peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "nlh-1967-bde-stage1",
+    year: 2008,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2009 Capital Budget Application, Bay d'Espoir Stage I Units 1 to 3",
+    topics: ["1967", "Bay d'Espoir", "Stage I", "Units 1 to 3", "commissioning"],
+    pages: "physical PDF p. 97",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NLH2009Capital/files/application/NLH2009ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1967-transmission-lines",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-316 Attachment 1, Island Transmission-Line Register",
+    topics: ["1967", "TL205", "TL211", "TL222", "TL228", "230 kV", "138 kV"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf"
+  },
+  {
+    id: "nlh-1967-bottom-brook",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-318, Bottom Brook Terminal Station Development History",
+    topics: ["1967", "Bottom Brook", "TL211", "terminal station", "commissioning"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
+  },
+  {
+    id: "nlh-1967-sunnyside-stony-brook",
+    year: 2012,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2013 Capital Budget Application, Sunnyside and Stony Brook Existing Systems",
+    topics: ["1967", "Sunnyside", "Stony Brook", "terminal station", "compressed air"],
+    pages: "physical PDF p. 752",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013Capital/files/application/NLH2013ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1967-sunnyside-history-conflict",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-318, Sunnyside Terminal Station Development History",
+    topics: ["1965", "1966", "1967", "Sunnyside", "138 kV ring bus", "commissioning conflict"],
+    pages: "physical PDF p. 5",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
+  },
+  {
+    id: "nlh-1967-oxen-pond",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2012 Capital Budget Application, Oxen Pond Terminal Station History",
+    topics: ["1967", "Oxen Pond", "T1", "230 kV", "66 kV"],
+    pages: "physical PDF p. 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012Application-VolumeII-Report11.pdf"
+  },
+  {
+    id: "nlh-1967-transformer-register",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-92, Hydro Transformer Register",
+    topics: ["1967", "Bay d'Espoir", "Bottom Brook", "Buchans", "Oxen Pond", "South Brook", "Western Avalon", "transformer"],
+    pages: "physical PDF pp. 1, 4 and 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/rfi/PUB-NLH-92.pdf"
+  },
+  {
+    id: "np-1967-massey-drive",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Massey Drive Substation",
+    topics: ["1967", "Massey Drive", "transmission substation", "66 kV"],
+    pages: "physical PDF p. 238",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1967-blaketown",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Blaketown Substation",
+    topics: ["1967", "Blaketown", "138 kV", "66 kV", "25 kV", "substation"],
+    pages: "physical PDF p. 422",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
+    id: "nlh-1967-burgeo",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Burgeo Substation",
+    topics: ["1967", "Burgeo", "25 kV", "4.16 kV", "distribution substation"],
+    pages: "physical PDF pp. 219 to 221",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1967-burgeo-feeders",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Grandy Brook and Burgeo Distribution Lines",
+    topics: ["1967", "Burgeo", "Grandy Brook", "25 kV", "4.16 kV", "L1", "L2", "L3", "L4"],
+    pages: "physical PDF p. 419",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1967-plc-carrier",
+    year: 2002,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2003 Capital Budget Application, East Coast Powerline-Carrier Inventory",
+    topics: ["1967", "powerline carrier", "telecommunications", "TL202", "TL203", "TL207", "TL218", "TL236"],
+    pages: "physical PDF p. 42",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionH.pdf"
+  },
+  {
     id: "nlh-1968-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8978,6 +9108,28 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1967-system-record",
+    scope: "1967 demand, generation commissioning, transmission construction, terminal and substation development, transformer vintages, hydro plant equipment and telecommunications",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1967-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "nlh-1967-bde-stage1", pages: "physical PDF p. 97" },
+      { sourceId: "nlh-1967-transmission-lines", pages: "physical PDF p. 4" },
+      { sourceId: "nlh-1967-bottom-brook", pages: "physical PDF p. 3" },
+      { sourceId: "nlh-1967-sunnyside-stony-brook", pages: "physical PDF p. 752" },
+      { sourceId: "nlh-1967-sunnyside-history-conflict", pages: "physical PDF p. 5" },
+      { sourceId: "nlh-1967-oxen-pond", pages: "physical PDF p. 9" },
+      { sourceId: "nlh-1967-transformer-register", pages: "physical PDF pp. 1, 4 and 5" },
+      { sourceId: "np-1967-massey-drive", pages: "physical PDF p. 238" },
+      { sourceId: "np-1967-blaketown", pages: "physical PDF p. 422" },
+      { sourceId: "nlh-1967-burgeo", pages: "physical PDF pp. 219 to 221" },
+      { sourceId: "nlh-1967-burgeo-feeders", pages: "physical PDF p. 419" },
+      { sourceId: "np-2010-substation-asset-history", pages: "physical PDF p. 192" },
+      { sourceId: "np-2011-west-brook-main-valve", pages: "physical PDF p. 181" },
+      { sourceId: "nlh-1967-plc-carrier", pages: "physical PDF p. 42" }
+    ]
+  },
+  {
     id: "np-1968-system-record",
     scope: "1968 demand, Bay d'Espoir generation, transmission construction, station construction, dated station structures and transformer service",
     status: "unresolved",
@@ -9475,6 +9627,96 @@ export const timeline = [
     body: "The original terminal station and transformer T1 entered service in 1967.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1967",
+    category: "load",
+    title: "Newfoundland Power peak demand was 156.3 MW",
+    body: "The historical-demand table records 156.3 MW in the Newfoundland Power column.",
+    sourceId: "nlh-1967-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1967",
+    category: "generation",
+    title: "Bay d'Espoir Stage I Units 1 to 3 were commissioned",
+    body: "The three original wound-stator generating units entered service before Unit 4 followed in 1968.",
+    sourceId: "nlh-1967-bde-stage1",
+    pages: "physical PDF p. 97",
+    status: "reported"
+  },
+  {
+    date: "1967",
+    category: "network",
+    title: "TL205, TL211, TL222 and TL228 entered service",
+    body: "The line register dates the Stony Brook to Buchans, Massey Drive to Bottom Brook, Stony Brook to Springdale, and Buchans to Massey Drive circuits to 1967.",
+    sourceId: "nlh-1967-transmission-lines",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1967",
+    category: "station",
+    title: "Bottom Brook Terminal Station was commissioned with TL211",
+    body: "The original terminal had one 230 kV line connection to Massey Drive. TL209, TL233 and the fourth ring-bus breaker were later additions.",
+    sourceId: "nlh-1967-bottom-brook",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1965 to 1967",
+    category: "station",
+    title: "Sunnyside commissioning records conflict",
+    body: "The 2013 capital filing says Sunnyside had been in service since 1967. PUB-NLH-318 says the station was originally commissioned in 1965 to 1966 and dates the 138 kV ring bus to 1967.",
+    sourceId: "nlh-1967-sunnyside-stony-brook",
+    pages: "physical PDF p. 752; compare PUB-NLH-318 physical PDF p. 5",
+    status: "unresolved"
+  },
+  {
+    date: "1966 or 1967",
+    category: "station",
+    title: "Stony Brook in-service records conflict",
+    body: "The terminal record dates the original load-bus commissioning to 1966. The 2013 compressed-air project says Stony Brook had been in service since 1967.",
+    sourceId: "nlh-1967-sunnyside-stony-brook",
+    pages: "physical PDF p. 752; compare terminal-risk report physical PDF p. 34",
+    status: "unresolved"
+  },
+  {
+    date: "1967",
+    category: "station",
+    title: "Oxen Pond, Massey Drive, Blaketown and Burgeo station records date to 1967",
+    body: "Oxen Pond entered service with its first 230/66 kV transformer. Massey Drive was built as a transmission station, Blaketown as a transmission and distribution station, and Burgeo as a 25/4.16 kV distribution station.",
+    sourceId: "nlh-1967-oxen-pond",
+    pages: "physical PDF p. 9; compare Massey Drive p. 238, Blaketown p. 422, Burgeo pp. 219 to 221 and Burgeo system p. 419",
+    status: "reported"
+  },
+  {
+    date: "1967",
+    category: "equipment",
+    title: "Seven Hydro power-transformer records date to 1967",
+    body: "The register lists units at Bay d'Espoir, Bottom Brook, Buchans, Oxen Pond, South Brook and Western Avalon. Bottom Brook has two of the seven units.",
+    sourceId: "nlh-1967-transformer-register",
+    pages: "physical PDF pp. 1, 4 and 5",
+    status: "reported"
+  },
+  {
+    date: "1967",
+    category: "equipment",
+    title: "Molloy's Lane high-voltage structure and West Brook main valve date to 1967",
+    body: "The Molloy's Lane register dates its wood 66 kV structure to 1967. West Brook replaced its original main valve with a 24-inch butterfly valve.",
+    sourceId: "np-2010-substation-asset-history",
+    pages: "physical PDF p. 192; compare West Brook filing physical PDF p. 181",
+    status: "reported"
+  },
+  {
+    date: "1967",
+    category: "telecommunications",
+    title: "East Coast powerline-carrier equipment entered service",
+    body: "The inventory dates carrier equipment on TL202, TL207, TL236 and TL218 to 1967. The TL203 A/B record spans 1967 and 1979.",
+    sourceId: "nlh-1967-plc-carrier",
+    pages: "physical PDF p. 42",
     status: "reported"
   },
   {
@@ -13712,7 +13954,17 @@ export const islandTerminalRecords = [
   {
     code: "SUN",
     name: "Sunnyside Terminal Station",
-    status: "verified",
+    status: "unresolved",
+    historyRecords: [{
+      label: "1965 TO 1967 COMMISSIONING AND RING-BUS RECORD",
+      sourceId: "nlh-1967-sunnyside-history-conflict",
+      pages: "physical PDF p. 5; compare 2013 Capital physical PDF p. 752",
+      facts: [
+        ["Original commissioning", "PUB-NLH-318 reports 1965 to 1966"],
+        ["Later filing", "the 2013 capital filing says the station had been in service since 1967"],
+        ["138 kV ring bus", "asset dates place its establishment in 1967"]
+      ]
+    }],
     facts: [["Transformation", "T1 and T4, 230/138 kV, 125 MVA maximum rating each"], ["2014 T1 replacement", "Former Holyrood T8 moved to the Sunnyside T1 position and entered service by December 2014"], ["230 kV circuits", "TL202 and TL206 to Bay d'Espoir; TL203 to Western Avalon; TL207 to Come By Chance"], ["138 kV circuits", "TL212, TL219, 100L and 109L"], ["2014 breaker work", "Dedicated 230 kV breaker B1T1 added after the January 4 T1 failure"], ["Q4 2024 work", "TL203 protective relays replaced"], ["2024 breaker-failure project", "Work remained incomplete at year end and carried into 2025"], ["2025 completed work", "T4 protective relays replaced; T4 received a protective coating; disconnect B1L03-1 replaced"]],
     diagram: {
       label: "2015 breaker addition arrangement",
@@ -13725,8 +13977,16 @@ export const islandTerminalRecords = [
   {
     code: "STB",
     name: "Stony Brook Terminal Station",
-    status: "verified",
+    status: "unresolved",
     historyRecords: [{
+      label: "1966 TO 1967 IN-SERVICE DATE CONFLICT",
+      sourceId: "nlh-1967-sunnyside-stony-brook",
+      pages: "physical PDF p. 752; compare terminal-risk report physical PDF p. 34",
+      facts: [
+        ["Terminal history", "commissioned in 1966 as a 230 kV load bus"],
+        ["2013 capital filing", "says Stony Brook had been in service since 1967"]
+      ]
+    }, {
       label: "1979 TO 1981 TL232 DATE CONFLICT",
       sourceId: "nlh-1979-tl232-construction",
       pages: "physical PDF p. 64; compare 2008 application physical PDF p. 116",
@@ -13774,6 +14034,15 @@ export const islandTerminalRecords = [
     status: "reported",
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
+      {
+        label: "1967 STAGE I UNITS 1 TO 3",
+        sourceId: "nlh-1967-bde-stage1",
+        pages: "physical PDF p. 97",
+        facts: [
+          ["Commissioning", "Units 1, 2 and 3 installed and commissioned in 1967"],
+          ["Stator winding", "wound-stator construction"]
+        ]
+      },
       {
         label: "1968 STAGE I UNIT 4 AND INTAKE CONTROLS",
         sourceId: "nlh-1968-bde-unit4",
@@ -14270,6 +14539,15 @@ export const islandTerminalRecords = [
     name: "South Brook Terminal Station",
     status: "verified",
     facts: [["Transformation", "138/25 kV"], ["Q1 2024 work", "Online dissolved-gas analyser installed on T1"], ["138 kV circuit", "TL222 between Springdale and Stony Brook"]],
+    historyRecords: [{
+      label: "1967 T1 AND TL222 RECORD",
+      sourceId: "nlh-1967-transformer-register",
+      pages: "physical PDF p. 4; compare line register physical PDF p. 4",
+      facts: [
+        ["T1", "C.G.E. 286450; 138/25 kV; 5/6.6/8.3 MVA; built 1967"],
+        ["TL222", "both Stony Brook to South Brook Tap and South Brook Tap to Springdale sections built in 1967"]
+      ]
+    }],
     diagram: {
       label: "2013 station voltage / 2018 filed route",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "25 kV" }],
@@ -14399,6 +14677,16 @@ export const islandTerminalRecords = [
       ]
     },
     historyRecords: [
+      {
+        label: "1967 TERMINAL STATION 1 AND ORIGINAL TRANSFORMERS",
+        sourceId: "nlh-1967-bottom-brook",
+        pages: "physical PDF p. 3; compare transformer register physical PDF p. 1",
+        facts: [
+          ["Commissioning", "Terminal Station 1 entered service with TL211 to Massey Drive"],
+          ["T1", "C.G.E. 286625; 230/138 kV; 25/33.3/41.7 MVA; built 1967"],
+          ["T2", "Westinghouse 293692; 138/66 kV; 15/20/25 MVA; built 1967"]
+        ]
+      },
       {
         label: "2019 PLANNING DRAWINGS / PROPOSED 230/66 KV T4 ADDITION",
         sourceId: "nlh-bbk-t4-2020",
@@ -16402,6 +16690,14 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1967 MAIN-VALVE REPLACEMENT",
+        sourceId: "np-2011-west-brook-main-valve",
+        pages: "physical PDF p. 181",
+        facts: [
+          ["Installed valve", "24-inch water-actuated butterfly valve replaced the original 1942 valve"]
+        ]
+      },
+      {
         label: "1987 INTAKE REHABILITATION",
         sourceId: "np-1987-west-brook-intake",
         pages: "physical PDF p. 1",
@@ -17338,6 +17634,14 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1967 230/138 KV TRANSFORMER",
+        sourceId: "nlh-1967-transformer-register",
+        pages: "physical PDF p. 5",
+        facts: [
+          ["Transformer", "C.G.E. 286626; 230/138 kV; 25/33.3/41.7 MVA; built 1967"]
+        ]
+      },
       {
         label: "MAY 15, 1978 T3 AND 230 KV BAY",
         sourceId: "nlh-1978-western-avalon-assets",
@@ -18852,6 +19156,7 @@ export const stationProfiles = [
   {
     code: "SUN",
     name: "Sunnyside",
+    status: "unresolved",
     voltage: "230/138/25 kV",
     circuitRegisterLabel: "2015 OPERATING DIAGRAM / 2018 FILED ROUTES",
     circuitSources: [
@@ -18921,6 +19226,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1965 TO 1967 COMMISSIONING AND RING-BUS RECORD",
+        sourceId: "nlh-1967-sunnyside-history-conflict",
+        pages: "physical PDF p. 5; compare 2013 Capital physical PDF p. 752",
+        facts: [
+          ["Original commissioning", "PUB-NLH-318 reports 1965 to 1966"],
+          ["Later filing", "the 2013 capital filing says the station had been in service since 1967"],
+          ["138 kV ring bus", "asset dates place its establishment in 1967"]
+        ]
+      },
       {
         label: "NOVEMBER 1995 POST-STORM SECTIONALIZING",
         sourceId: "np-1994-storm-report",
@@ -19325,6 +19640,14 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1967 ORIGINAL 230/66 KV TRANSFORMER",
+        sourceId: "nlh-1967-transformer-register",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Transformer", "Westinghouse 293315; 230/66 kV; 40/53.3/66.6 MVA; built 1967"]
+        ]
+      },
       {
         label: "1970 MASSEY DRIVE INSTALLATION / 1998 BUCHANS RELOCATION",
         sourceId: "nlh-buchans-2018",

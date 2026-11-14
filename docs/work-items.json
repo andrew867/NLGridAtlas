@@ -1426,6 +1426,18 @@
       "notes": "Historical demand establishes the reported Newfoundland Power peak. Later primary records establish Bay d'Espoir Unit 4 and Stage I intake controls, TL206, TL207, TL214, TL218, TL224 and TL237, a 1968 section of 55L, Glenwood and Harmon substations, Quartz station structures, the transformer later designated Hardwoods T3, and the Bottom Brook Terminal Station 1 control building. Two Newfoundland Power filings conflict on 404L's construction year and length, so that line record remains unresolved."
     },
     {
+      "id": "NPREG-061",
+      "title": "Reconcile Newfoundland Power 1967 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1967 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-060"],
+      "completion_evidence": ["research/NP_1967_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1967-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the reported Newfoundland Power peak. Later primary records establish Bay d'Espoir Stage I Units 1 to 3, TL205, TL211, TL222, TL228, Bottom Brook, Oxen Pond, Massey Drive, Blaketown, Burgeo, seven Hydro transformers, the Molloy's Lane 66 kV structure, the West Brook main valve and East Coast carrier equipment. Sunnyside remains unresolved because one filing dates the station to 1967 while another dates original commissioning to 1965 to 1966 and the ring bus to 1967. Stony Brook remains unresolved because filed records give 1966 and 1967 in-service dates."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
