@@ -1106,12 +1106,24 @@
       "title": "Reconcile Newfoundland Power 1994 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1994 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and storm-response evidence.",
       "dependencies": ["NPREG-033"],
+      "completion_evidence": ["research/NP_1994_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1994-system.test.js"],
+      "blocker": null,
+      "notes": "No standalone 1994 annual return was located. The revised reliability response, 2003 capital variance response, 2002 ten-year summary and embedded December 1994 outage reports establish actual reliability, capital expenditure, energy and customers, the TL201 and TL217 failures, two complete Avalon blackouts, restoration, feeder sectionalizing, Holyrood black-start work and control-centre communications."
+    },
+    {
+      "id": "NPREG-035",
+      "title": "Reconcile Newfoundland Power 1993 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1993 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-034"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the revised 1992 to 2002 reliability table, the 1993 to 2002 capital variance response and the December 1994 storm reports. Keep ordinary system reliability separate from Hydro loss-of-supply and storm restoration records."
+      "notes": "Start with the revised 1992 to 2002 reliability table, the 1993 to 2002 capital variance response, the 2002 ten-year summary and dated asset histories."
     },
     {
       "id": "ASSET-001",

@@ -390,6 +390,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
   },
   {
+    id: "np-1994-capital-variance",
+    year: 1994,
+    organization: "Newfoundland Power",
+    title: "CA-2, 1994 Capital Expenditure Variance Summary",
+    topics: ["capital expenditure", "energy supply", "substations", "transmission", "distribution", "telecommunications", "1994"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
+  },
+  {
+    id: "np-1994-storm-report",
+    year: 1994,
+    organization: "Newfoundland and Labrador Hydro and Newfoundland Power",
+    title: "December 1994 Power System Outage Report and Remedial-Action Update",
+    topics: ["December 1994 storm", "TL201", "TL217", "Western Avalon", "Holyrood", "Hardwoods", "black start", "cold load pickup", "VHF", "sectionalizing"],
+    pages: "physical PDF pp. 22 to 38 and 51 to 63",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHGRASUPP2013/PrudenceReview/files/rfi/PR-PUB-NLH-003.PDF"
+  },
+  {
+    id: "np-1994-outage-operations",
+    year: 2005,
+    organization: "Newfoundland Power",
+    title: "PUB 24.0 NP, Historical 1984 and 1994 Outage Operations",
+    topics: ["December 1994 storm", "Blackout 94", "outage management", "paper records", "Kenmount Road", "Duffy Place", "standby generation"],
+    pages: "physical PDF pp. 31 to 33",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/rfi/RFIpub1-35.pdf"
+  },
+  {
+    id: "np-2002-ten-year-summary",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2002 Annual Report, Ten Year Operating Summary",
+    topics: ["1993 to 2002", "purchased energy", "generation", "sales", "customers", "fixed assets"],
+    pages: "physical PDF p. 51",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213G.pdf"
+  },
+  {
     id: "np-1996-annual-report",
     year: 1996,
     organization: "Newfoundland Power",
@@ -6558,6 +6598,21 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1994-system-reliability",
+    scope: "1994 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
+    status: "reported",
+    sources: [{ sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }]
+  },
+  {
+    id: "avalon-1994-storm",
+    scope: "December 8 to 11, 1994 Avalon storm, transmission damage, blackouts, restoration and resulting corrective work",
+    status: "reported",
+    sources: [
+      { sourceId: "np-1994-storm-report", pages: "physical PDF pp. 22 to 38 and 51 to 63" },
+      { sourceId: "np-1994-outage-operations", pages: "physical PDF pp. 31 to 33" }
+    ]
+  },
+  {
     id: "np-1995-system-reliability",
     scope: "1995 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
     status: "reported",
@@ -6701,6 +6756,60 @@ export const timeline = [
     body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
     sourceId: "vhf-2004",
     pages: "PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1994",
+    category: "reliability",
+    title: "SAIFI was 4.38 and SAIDI was 19.53 hours",
+    body: "The annual customer-interruption indices exclude Hydro loss-of-supply outages.",
+    sourceId: "np-2003-ca-446-rev",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1994",
+    category: "network",
+    title: "Actual capital expenditure was $34.773 million",
+    body: "The filed variance summary records $2.378 million for energy supply, $1.372 million for substations, $1.907 million for transmission, $22.527 million for distribution and $0.792 million for telecommunications.",
+    sourceId: "np-1994-capital-variance",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1994",
+    category: "generation",
+    title: "Company generation was 420 GWh",
+    body: "The ten-year summary records 4,178 GWh purchased, 420 GWh generated, 4,598 GWh total supply and 4,371 GWh in sales. Newfoundland Power served 204,900 customers at year end.",
+    sourceId: "np-2002-ten-year-summary",
+    pages: "physical PDF p. 51",
+    status: "reported"
+  },
+  {
+    date: "1994-12-08 to 1994-12-11",
+    category: "reliability",
+    title: "TL201 and TL217 storm damage isolated and twice blacked out the Avalon Peninsula",
+    body: "Wet snow and freezing rain accumulated on the lines while winds gusted to 126 km/h. TL201 suffered seven failed wooden structures near Western Avalon. A TL217 conductor broke near Western Avalon, and a salt-contaminated Holyrood 230 kV breaker flashed over during an attempted synchronization. The two complete Avalon blackouts occurred on December 10.",
+    sourceId: "np-1994-storm-report",
+    pages: "physical PDF pp. 22 to 38",
+    status: "reported"
+  },
+  {
+    date: "1995-11 to 1995-12",
+    category: "network",
+    title: "Post-storm feeder sectionalizing and roadside access work was completed",
+    body: "Sectionalizing switches were added on long off-road sections of two Northwest Brook feeders and one Sunnyside feeder, and existing switches were moved for access. Seven poles at Salvage were rerouted closer to the road, and the South West Arm crossing in Terra Nova National Park was completed.",
+    sourceId: "np-1994-storm-report",
+    pages: "physical PDF p. 63",
+    status: "reported"
+  },
+  {
+    date: "1996-01",
+    category: "telecom",
+    title: "Four control-centre communication paths followed the 1994 outage review",
+    body: "Ring-down telephone, dial-up telephone and Hydro-owned VHF links were in operation between the utility control centres. The Hydro-owned power-line-carrier telephone path remained in progress.",
+    sourceId: "np-1994-storm-report",
+    pages: "physical PDF p. 53",
     status: "reported"
   },
   {
@@ -13168,6 +13277,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "NOVEMBER 1995 POST-STORM SECTIONALIZING",
+        sourceId: "np-1994-storm-report",
+        pages: "physical PDF p. 63",
+        facts: [
+          ["Feeder work", "a sectionalizing switch was added on one long off-road Sunnyside feeder section"],
+          ["Access", "existing sectionalizing switches were moved to more accessible locations"]
+        ]
+      },
+      {
         label: "2014 T1 REPLACEMENT AND BREAKER WORK",
         sourceId: "nlh-sunnyside-2014",
         pages: "physical PDF pp. 18 to 19 and 29 to 34",
@@ -16971,6 +17089,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "NOVEMBER 1995 POST-STORM SECTIONALIZING",
+        sourceId: "np-1994-storm-report",
+        pages: "physical PDF p. 63",
+        facts: [
+          ["Feeder work", "sectionalizing switches were added on long off-road sections of two Northwest Brook feeders"],
+          ["Access", "existing sectionalizing switches were moved to more accessible locations"]
+        ]
+      },
       {
         label: "2009 FILED NWB-02 RELIABILITY WORK",
         sourceId: "np-2009-nwb02",
