@@ -1546,6 +1546,18 @@
       "notes": "Later primary records establish 102L, 41L, 57L, 68L, 15L, 110L and 403L; Rattling Brook plant and civil works; Lookout Brook G3 equipment; dated station equipment at Mobile and Stamp's Lane; and operations buildings at Grand Falls-Windsor and Stephenville. Primary filings conflict between 1958 and 1959 for 302L construction, and between 1986 and 1988 for Newfoundland Power's purchase of the Stephenville building. The available historical-demand table begins in 1967. No named 1958 telecommunications installation was located."
     },
     {
+      "id": "NPREG-071",
+      "title": "Reconcile Newfoundland Power 1957 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1957 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-070"],
+      "completion_evidence": ["research/NP_1957_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1957-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records establish 101L; the New Chelsea and Pitmans Pond intakes; the Snook's Arm and Venams Bight mine-supply plants; a Topsail Road property-asset vintage; and a Red Indian Falls preliminary estimate. Records conflict on the New Chelsea and Snook's Arm commissioning years and on dated St. George's breaker evidence. The available historical-demand table begins in 1967. No named 1957 telecommunications installation was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

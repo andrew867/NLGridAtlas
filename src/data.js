@@ -530,6 +530,86 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1957-101l-condition",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "2019 Capital Budget Application, 101L Condition Assessment",
+    topics: ["1957", "101L", "Grand Falls", "Rattling Brook", "66 kV", "2/0 ACSR", "transmission line"],
+    pages: "physical PDF p. 252",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
+  },
+  {
+    id: "np-1957-new-chelsea-intakes",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, New Chelsea and Pitmans Pond Intakes",
+    topics: ["1957", "New Chelsea", "Pitmans Pond", "intake", "head gate", "trash rack", "hydroelectric generation"],
+    pages: "physical PDF pp. 210 to 211",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
+    id: "nlh-1957-mini-hydro-plants",
+    year: 2024,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Mini-Hydro Economic and Technical Assessment, Snook's Arm and Venams Bight",
+    topics: ["1956", "1957", "Snook's Arm", "Venams Bight", "Tilt Cove", "Francis turbine", "penstock", "dam"],
+    pages: "physical PDF pp. 20, 23 and 30 to 31",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/indexreports/other/From%20NLH%20-%20Mini-Hydro%20-%20Economic%20and%20Technical%20Assessment%20-%202024-12-20.PDF"
+  },
+  {
+    id: "nlh-1956-mini-hydro-commissioning",
+    year: 2006,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-1, Hydro Plant Commissioning Dates",
+    topics: ["1956", "1957", "Snook's Arm", "Venams Bight", "commissioning date", "date conflict"],
+    pages: "physical PDF p. 1",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/rfi/IC-1.pdf"
+  },
+  {
+    id: "np-1957-st-georges-hearing",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Budget Hearing, St. George's Oil Breaker Testimony",
+    topics: ["1957", "St. George's", "oil circuit breaker", "substation equipment", "date conflict"],
+    pages: "physical PDF pp. 9 to 10",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/trans/nov19.pdf"
+  },
+  {
+    id: "nlh-1957-red-indian-prospect",
+    year: 2022,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-288 Attachment 4, Red Indian Falls Study Register",
+    topics: ["1957", "Red Indian Falls", "20,000 hp", "hydroelectric generation", "preliminary estimate"],
+    pages: "physical PDF p. 101",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-288.PDF"
+  },
+  {
+    id: "np-1957-topsail-road-property",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 General Rate Application, Topsail Road Transformer Shop Property Schedule",
+    topics: ["1957", "Topsail Road", "transformer shop", "transformer storage", "property", "financial record"],
+    pages: "physical PDF pp. 710 to 711",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/applic/Application-VolumeIII.pdf"
+  },
+  {
+    id: "np-1957-topsail-road-property-2016",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016-2017 General Rate Application, Topsail Road Transformer Storage Property Schedule",
+    topics: ["1957", "Topsail Road", "transformer storage", "property", "financial record"],
+    pages: "physical PDF pp. 536 to 537",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/application/NP-2016-2017GeneralRateApplication-Volume3-2015-10-16.pdf"
+  },
+  {
     id: "np-1959-grand-falls",
     year: 2009,
     organization: "Newfoundland Power",
@@ -9758,6 +9838,25 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1957-system-record",
+    scope: "1957 transmission construction, hydroelectric generation and civil works, dated station equipment, an operations property record and a preliminary generation estimate",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2019-central-system", pages: "physical PDF p. 174" },
+      { sourceId: "np-1957-101l-condition", pages: "physical PDF p. 252" },
+      { sourceId: "np-2004-new-chelsea", pages: "physical PDF pp. 285 and 295" },
+      { sourceId: "np-2013-new-chelsea", pages: "physical PDF p. 212" },
+      { sourceId: "np-1957-new-chelsea-intakes", pages: "physical PDF pp. 210 to 211" },
+      { sourceId: "nlh-1957-mini-hydro-plants", pages: "physical PDF pp. 20, 23 and 30 to 31" },
+      { sourceId: "nlh-1956-mini-hydro-commissioning", pages: "physical PDF p. 1" },
+      { sourceId: "np-1957-st-georges-hearing", pages: "physical PDF pp. 9 to 10" },
+      { sourceId: "np-2003-breaker-ages", pages: "physical PDF p. 1" },
+      { sourceId: "nlh-1957-red-indian-prospect", pages: "physical PDF p. 101" },
+      { sourceId: "np-1957-topsail-road-property", pages: "physical PDF pp. 710 to 711" },
+      { sourceId: "np-1957-topsail-road-property-2016", pages: "physical PDF pp. 536 to 537" }
+    ]
+  },
+  {
     id: "np-1958-system-record",
     scope: "1958 transmission construction, hydroelectric generation and civil works, dated station equipment and utility operations buildings",
     status: "unresolved",
@@ -10442,6 +10541,69 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1957",
+    category: "network",
+    title: "101L connected Grand Falls and Rattling Brook",
+    body: "The 32.5 km, 66 kV line followed the Trans-Canada Highway and Route 351. A later condition assessment found 29.5 km of original construction remaining, comprising 236 single-pole structures, five two-pole structures and non-standard 2/0 ACSR conductor.",
+    sourceId: "np-2019-central-system",
+    pages: "physical PDF p. 174; condition assessment physical PDF p. 252",
+    status: "reported"
+  },
+  {
+    date: "1956 or January 1957",
+    category: "generation",
+    title: "New Chelsea entered service",
+    body: "The 2004 filing says the 3.7 MW plant entered service in January 1957 after construction costing just over $2.5 million. The 2013 engineering report says it was placed in service in 1956. The 2004 filing gives 15.4 GWh normal annual production; the 2013 report gives 16.3 GWh.",
+    sourceId: "np-2004-new-chelsea",
+    pages: "physical PDF p. 285; compare 2013 Capital physical PDF p. 212",
+    status: "unresolved"
+  },
+  {
+    date: "1957",
+    category: "civil",
+    title: "New Chelsea and Pitmans Pond intake structures date to 1957",
+    body: "Both records describe a concrete foundation, trash rack, head gate and timber building. The Pitmans Pond intake predates the generating plant's 1959 commissioning.",
+    sourceId: "np-1957-new-chelsea-intakes",
+    pages: "physical PDF pp. 210 to 211",
+    status: "reported"
+  },
+  {
+    date: "1956 or 1957",
+    category: "generation",
+    title: "Snook's Arm and Venams Bight supplied the Tilt Cove mine",
+    body: "The later asset assessment records a 0.56 MW horizontal Francis unit at Snook's Arm and a 0.36 MW horizontal Francis unit at Venams Bight, both constructed in 1956 and commissioned in 1957 for First Maritime Mining. Hydro's 2007 response instead says both entered service in 1956 and explicitly corrects Snook's Arm from 1957 to 1956. The seven Snook's Arm dams are separately dated to original 1957 construction.",
+    sourceId: "nlh-1957-mini-hydro-plants",
+    pages: "physical PDF pp. 20, 23 and 30; compare IC-1 physical PDF p. 1",
+    status: "unresolved"
+  },
+  {
+    date: "1957 or 1960",
+    category: "equipment",
+    title: "St. George's breaker records conflict",
+    body: "Hearing testimony says oil-filled breakers at St. George's were moved from another company site and installed in 1957. The written equipment-age response identifies one St. George's breaker as purchased in 1960. The records do not establish whether they describe the same equipment.",
+    sourceId: "np-1957-st-georges-hearing",
+    pages: "physical PDF pp. 9 to 10; compare CA-22(b) physical PDF p. 1",
+    status: "unresolved"
+  },
+  {
+    date: "1957",
+    category: "operations",
+    title: "The Topsail Road property schedule retains a 1957 vintage",
+    body: "The 2013 financial schedule assigns $28,575 of original cost to the 1957 vintage of the Topsail Road Transformer Shop. The 2016 schedule carries the same amount under the later Transformer Storage label.",
+    sourceId: "np-1957-topsail-road-property",
+    pages: "physical PDF p. 710; compare 2016-2017 GRA physical PDF p. 536",
+    status: "reported"
+  },
+  {
+    date: "October 31, 1957",
+    category: "proposed",
+    title: "Anglo-Newfoundland prepared a Red Indian Falls estimate",
+    body: "The surviving document register lists a two-page preliminary estimate for a proposed 20,000 hp hydroelectric plant at Red Indian Falls. The indexed record does not establish that the proposal was constructed.",
+    sourceId: "nlh-1957-red-indian-prospect",
+    pages: "physical PDF p. 101",
+    status: "proposed"
+  },
   {
     date: "1958",
     category: "network",
@@ -16671,6 +16833,15 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1957 101L CONSTRUCTION",
+        sourceId: "np-1957-101l-condition",
+        pages: "physical PDF p. 252",
+        facts: [
+          ["Circuit", "32.5 km, 66 kV line between Grand Falls and Rattling Brook"],
+          ["Original line remaining", "29.5 km; 236 single-pole and five two-pole structures; non-standard 2/0 ACSR"]
+        ]
+      },
+      {
         label: "1959 ORIGINAL 66/4.16 KV YARD",
         sourceId: "np-1959-grand-falls",
         pages: "physical PDF p. 294",
@@ -21505,6 +21676,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1957 / 1960 BREAKER RECORD CONFLICT",
+        sourceId: "np-1957-st-georges-hearing",
+        pages: "physical PDF pp. 9 to 10; compare CA-22(b) physical PDF p. 1",
+        facts: [
+          ["Hearing testimony", "oil-filled breakers moved from another company site and installed at St. George's in 1957"],
+          ["Written equipment record", "one St. George's breaker purchased in 1960"],
+          ["Identity", "the records do not establish whether they describe the same equipment"]
+        ]
+      },
+      {
         label: "2003 REPORTED 66 KV BREAKER AGE",
         sourceId: "np-2003-breaker-ages",
         pages: "physical PDF p. 1",
@@ -26316,6 +26497,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1957 101L CONSTRUCTION",
+        sourceId: "np-1957-101l-condition",
+        pages: "physical PDF p. 252",
+        facts: [
+          ["Circuit", "32.5 km, 66 kV line between Grand Falls and Rattling Brook"],
+          ["Route", "Trans-Canada Highway and Route 351"],
+          ["Original line remaining", "29.5 km; 236 single-pole and five two-pole structures; non-standard 2/0 ACSR"]
+        ]
+      },
+      {
         label: "1958 / 1959 DEVELOPMENT-DATE CONFLICT",
         sourceId: "np-1959-rattling-brook-plant",
         pages: "physical PDF p. 50; compare CA-NP-088 physical PDF p. 141 and 2005 Capital physical PDF p. 188",
@@ -30150,6 +30341,21 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1956 / JANUARY 1957 SERVICE-DATE RECORDS",
+        sourceId: "np-2004-new-chelsea",
+        pages: "physical PDF p. 285; compare 2013 Capital physical PDF p. 212",
+        facts: [
+          ["2004 filing", "entered service in January 1957; 3.7 MW installed; construction cost just over $2.5 million; 15.4 GWh normal annual production"],
+          ["2013 engineering report", "placed in service in 1956; 3.70 MW; 16.3 GWh normal annual production"]
+        ]
+      },
+      {
+        label: "1957 INTAKE CONSTRUCTION",
+        sourceId: "np-1957-new-chelsea-intakes",
+        pages: "physical PDF p. 210",
+        facts: [["Original intake", "concrete foundation, trash rack, head gate and timber building"]]
+      },
+      {
         label: "1985 WICKET GATES AND LINKAGES",
         sourceId: "np-1985-new-chelsea",
         pages: "physical PDF p. 213",
@@ -30324,6 +30530,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1957 INTAKE CONSTRUCTION",
+        sourceId: "np-1957-new-chelsea-intakes",
+        pages: "physical PDF p. 211",
+        facts: [
+          ["Original intake", "concrete foundation, trash rack, head gate and timber building"],
+          ["Plant sequence", "intake construction predates the plant's 1959 commissioning"]
+        ]
+      },
       {
         label: "1959 PLANT AND CIVIL WORKS",
         sourceId: "np-1959-hydro-civil",
