@@ -1630,6 +1630,18 @@
       "notes": "Later primary records establish the Mobile hydro plant and original equipment, Mobile civil works, MOP-T1, 20L, Tors Cove G3, the Horse Chops transformer manufacturing year, utility land acquisitions and the later utility use of Red Cliff storage sheds. The 2026 filing gives both 1950 and 1951 for MOP Substation; the 2027 filing gives 1951. Records also conflict between 1951 and 1952 for 18L and between 1951 and 1959 for 69L. No named 1951 telecommunications, system-demand, reliability or outage event was located."
     },
     {
+      "id": "NPREG-078",
+      "title": "Reconcile Newfoundland Power 1950 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1950 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-077"],
+      "completion_evidence": ["research/NP_1950_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1950-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records establish 1950 construction for the aerial sections later designated 12L and 14L, 16L construction, TCV-T1 manufacture, and Mobile land acquisitions. Records conflict between 1950 and 1951 for the Mobile powerhouse and MOP Substation, and between 1950 and 1967 for Bay Roberts Substation. Memorial Substation dates to 1966, so the later Memorial endpoints are not assigned to the 1950 line arrangement. No named 1950 telecommunications, system-demand, reliability, storm or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

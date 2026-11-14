@@ -2,11 +2,11 @@
 
 ## Mobile hydro development
 
-Newfoundland Power records the Mobile plant as commissioned in 1951 at 11.0 MVA under approximately 114.6 m net head. The generating unit used a 13,000 hp vertical Francis turbine and Canadian Westinghouse generator MOP-G1. The original powerhouse, crane and Westinghouse switchgear also date to 1951. The switchgear included original potential transformers, current transformers, emergency station-service transformers, protective relays, controls and meters. The generator retained its original stator windings and rotor when assessed in 2022.
+Newfoundland Power's public records disagree on the Mobile powerhouse commissioning year. A 2013 plant history gives 1950. Later capital records date the plant and its original equipment to 1951. The later records describe an 11.0 MVA generating unit under approximately 114.6 m net head, using a 13,000 hp vertical Francis turbine and Canadian Westinghouse generator MOP-G1. The original powerhouse, crane and Westinghouse switchgear are also dated to 1951. The switchgear included original potential transformers, current transformers, emergency station-service transformers, protective relays, controls and meters. The generator retained its original stator windings and rotor when assessed in 2022.
 
 The turbine record distinguishes the original machine from its later water-passage components. Dominion Engineering Works supplied the original 13,000 hp turbine in 1951. Voith Hydro supplied the replacement stainless-steel runner and wicket gates in 1990.
 
-Source: [2023 Capital Budget Application](http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF), physical PDF pp. 480, 483 to 484 and 489 to 490. SHA-256 `be0143cf9814e8573dcb5cdcdfa7fcd213190a5274902d0c5d60becbbf65dd73`.
+Sources: [CA-NP-088](http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf), physical PDF p. 136, SHA-256 `12ea7123d3f8b84f30e0f0cf445f5631fdb412b907e6d33588d2765807280b0d`; [2023 Capital Budget Application](http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF), physical PDF pp. 480, 483 to 484 and 489 to 490, SHA-256 `be0143cf9814e8573dcb5cdcdfa7fcd213190a5274902d0c5d60becbbf65dd73`.
 
 Original civil work included the diversion dam, canals, wood-stave and steel penstocks, surge tank and powerhouse. A later filing records a 1,568 m penstock. Its 454 m steel section remained from the 1951 installation; the 1,114 m wood-stave section was replaced with fibreglass in 1990. The original surge tank was replaced in 1999.
 

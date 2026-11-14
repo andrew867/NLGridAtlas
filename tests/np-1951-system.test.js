@@ -10,8 +10,9 @@ test("Mobile retains its original 1951 plant and civil equipment", () => {
   assert.ok(plant);
   assert.ok(civil);
   assert.equal(plant.status, "unresolved");
-  assert.match(plant.body, /11\.0 MVA.*114\.6 m.*13,000 hp.*Canadian Westinghouse/);
-  assert.match(plant.body, /2026 filing dates MOP Substation to both 1950 and 1951.*2027 filing gives 1951/);
+  assert.match(plant.body, /2013 plant history dates powerhouse commissioning to 1950.*Later capital records date the plant and original 11\.0 MVA equipment to 1951/);
+  assert.match(plant.body, /2026 filing also gives both 1950 and 1951 for MOP Substation.*2027 filing gives 1951/);
+  assert.match(plant.body, /13,000 hp.*Canadian Westinghouse/);
   assert.match(civil.body, /diversion dam.*canals.*wood-stave and steel penstocks.*surge tank.*powerhouse/);
   assert.match(civil.body, /1,568 m.*454 m steel section.*1,114 m.*fibreglass/);
   assert.match(stationText("MOP"), /1951 ORIGINAL PLANT AND ELECTRICAL EQUIPMENT/);
@@ -22,7 +23,8 @@ test("Mobile retains its original 1951 plant and civil equipment", () => {
 test("MOP-T1 retains its station-specific rating and construction-year conflict", () => {
   const text = stationText("MOP");
   assert.match(text, /MOP-T1.*10 MVA.*66\/6\.9 kV/);
-  assert.match(text, /2026 project summary gives 1951.*Appendix E.*gives 1950/);
+  assert.match(text, /2013 plant history gives 1950.*later plant and equipment records give 1951/);
+  assert.match(text, /2026 project summary gives 1951.*Appendix E.*gives 1950.*2027 filing gives 1951/);
   assert.match(text, /Westinghouse.*installed at Mobile Plant in 1951/);
 });
 
@@ -53,7 +55,8 @@ test("1951 system claim retains exact source pages", () => {
   const claim = staticClaims.find((candidate) => candidate.id === "np-1951-system-record");
   assert.ok(claim);
   assert.equal(claim.status, "unresolved");
-  assert.equal(claim.sources.length, 12);
+  assert.equal(claim.sources.length, 13);
+  assert.equal(sources.find((source) => source.id === "np-1950-mobile-commissioning")?.pages, "physical PDF p. 136");
   assert.equal(sources.find((source) => source.id === "np-1951-mobile-generating-plant")?.pages, "physical PDF pp. 480, 483 to 484 and 489 to 490");
   assert.equal(sources.find((source) => source.id === "np-1951-mobile-civil")?.pages, "physical PDF p. 520");
   assert.equal(sources.find((source) => source.id === "np-1951-tors-cove-g3")?.pages, "physical PDF p. 206");

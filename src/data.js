@@ -540,6 +540,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
   },
   {
+    id: "np-1950-mobile-commissioning",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Mobile Hydro Plant Commissioning Record",
+    topics: ["1950", "1951", "Mobile Hydro Plant", "powerhouse", "commissioning year", "date conflict", "Francis turbine", "Westinghouse generator"],
+    pages: "physical PDF p. 136",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
     id: "np-1951-mobile-civil",
     year: 2023,
     organization: "Newfoundland Power",
@@ -634,7 +644,7 @@ export const sources = [
     year: 2003,
     organization: "Newfoundland Power",
     title: "NLH-30 NP, Substation Construction-Year Record",
-    topics: ["1952", "Stamp's Lane", "SLA", "substation", "construction year", "date conflict"],
+    topics: ["1950", "1952", "Bay Roberts", "BRB", "Stamp's Lane", "SLA", "substation", "construction year", "date conflict"],
     pages: "physical PDF p. 1",
     status: "unresolved",
     url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/NLH-30NP.pdf"
@@ -10068,6 +10078,7 @@ export const staticClaims = [
     scope: "1951 hydroelectric generation, transmission construction, dated transformers, utility land and later operations buildings",
     status: "unresolved",
     sources: [
+      { sourceId: "np-1950-mobile-commissioning", pages: "physical PDF p. 136" },
       { sourceId: "np-1951-mobile-generating-plant", pages: "physical PDF pp. 480, 483 to 484 and 489 to 490" },
       { sourceId: "np-1951-mobile-civil", pages: "physical PDF p. 520" },
       { sourceId: "np-2024-pub-np-007", pages: "physical PDF p. 3" },
@@ -10080,6 +10091,24 @@ export const staticClaims = [
       { sourceId: "np-2015-transmission-lines", pages: "physical PDF pp. 552 and 555" },
       { sourceId: "np-1951-property-record", pages: "physical PDF p. 138" },
       { sourceId: "np-1951-red-cliff-sheds", pages: "physical PDF p. 215" }
+    ]
+  },
+  {
+    id: "np-1950-system-record",
+    scope: "1950 transmission construction, transformer manufacture, and conflicting generation and substation dates",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1950-mobile-commissioning", pages: "physical PDF p. 136" },
+      { sourceId: "np-1951-mobile-generating-plant", pages: "physical PDF pp. 480, 483 to 484 and 489 to 490" },
+      { sourceId: "np-2026-mobile-plant", pages: "physical PDF pp. 76 and 441" },
+      { sourceId: "np-1951-mobile-substation-dates", pages: "physical PDF pp. 444 and 446" },
+      { sourceId: "np-2014-transmission-lines", pages: "physical PDF p. 309" },
+      { sourceId: "np-2015-transmission-lines", pages: "physical PDF pp. 552 to 553" },
+      { sourceId: "np-2011-transmission-rebuild", pages: "physical PDF p. 373" },
+      { sourceId: "np-2022-tors-cove", pages: "physical PDF pp. 329 and 339" },
+      { sourceId: "np-2004-sla-construction", pages: "physical PDF p. 1" },
+      { sourceId: "np-2014-bay-roberts", pages: "physical PDF p. 243" },
+      { sourceId: "np-1951-property-record", pages: "physical PDF p. 138" }
     ]
   },
   {
@@ -10833,12 +10862,48 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1950",
+    category: "network",
+    title: "Aerial sections later recorded as 12L and 14L were constructed",
+    body: "Newfoundland Power dates the original aerial sections to 1950. Later filings describe 12L as 2.2 km of aerial line with 59 single-pole structures and 1/0 copper conductor, and 14L as 1.13 km of aerial line. Their later endpoints are King's Bridge to Memorial and Stamp's Lane to Memorial; Memorial Substation was not built until 1966.",
+    sourceId: "np-2014-transmission-lines",
+    pages: "physical PDF p. 309; 2015 filing physical PDF pp. 552 to 553",
+    status: "reported"
+  },
+  {
+    date: "1950",
+    category: "network",
+    title: "16L was constructed in St. John's",
+    body: "The 66 kV line later recorded between King's Bridge and Pepperrell was 1.98 km of single-pole construction with 1/0 copper conductor. The 2011 filing counted 50 structures, including 43 with distribution underbuild.",
+    sourceId: "np-2011-transmission-rebuild",
+    pages: "physical PDF p. 373",
+    status: "reported"
+  },
+  {
+    date: "1950",
+    category: "equipment",
+    title: "Tors Cove transformer TCV-T1 was manufactured",
+    body: "Canadian General Electric built P-298, serial 256858, as a 7.5 MVA generator step-up transformer with a 6.9 kV to 33/66 kV ratio. It remained in service until the replacement project completed in 2022.",
+    sourceId: "np-2022-tors-cove",
+    pages: "physical PDF pp. 329 and 339; 2024 filing physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1950 or 1967",
+    category: "station",
+    title: "Bay Roberts Substation construction year conflicts",
+    body: "A 2004 construction-year table gives 1950 for Bay Roberts. The 2014 station report says it was built as a distribution substation in 1967 and expanded for transmission and distribution in 1978.",
+    sourceId: "np-2004-sla-construction",
+    pages: "physical PDF p. 1; 2014 filing physical PDF p. 243",
+    status: "unresolved"
+  },
+  {
     date: "1950 or 1951",
     category: "generation",
     title: "Mobile hydro plant and generation substation entered service",
-    body: "The Mobile plant was commissioned in 1951 at 11.0 MVA under approximately 114.6 m net head. Original equipment included a 13,000 hp vertical Francis turbine, Canadian Westinghouse generator MOP-G1, Westinghouse switchgear, powerhouse crane and MOP-T1, a 10 MVA 66/6.9 kV Westinghouse transformer. The 2026 filing dates MOP Substation to both 1950 and 1951; the 2027 filing gives 1951.",
-    sourceId: "np-1951-mobile-generating-plant",
-    pages: "physical PDF pp. 480, 483 to 484 and 489 to 490; 2026 filing physical PDF pp. 76 and 441; 2027 filing physical PDF pp. 444 and 446",
+    body: "A 2013 plant history dates powerhouse commissioning to 1950. Later capital records date the plant and original 11.0 MVA equipment to 1951. The 2026 filing also gives both 1950 and 1951 for MOP Substation, while the 2027 filing gives 1951. Original equipment included the 13,000 hp vertical Francis turbine, Canadian Westinghouse generator MOP-G1, Westinghouse switchgear, powerhouse crane and MOP-T1, a 10 MVA 66/6.9 kV Westinghouse transformer.",
+    sourceId: "np-1950-mobile-commissioning",
+    pages: "physical PDF p. 136; 2023 filing physical PDF pp. 480, 483 to 484 and 489 to 490; 2026 filing physical PDF pp. 76 and 441; 2027 filing physical PDF pp. 444 and 446",
     status: "unresolved"
   },
   {
@@ -20586,7 +20651,7 @@ const earlyFeederMapProfiles = [
       sourceId: "np-2014-bay-roberts",
       pages: "physical PDF pp. 243 to 245 and 262 to 263",
       facts: [
-        ["Station history", "built in 1967 as a distribution substation; expanded in 1978 for transmission and distribution"],
+        ["Construction-year conflict", "a 2004 station table gives 1950; the 2014 filing says built in 1967 as a distribution substation and expanded in 1978 for transmission and distribution"],
         ["138 kV circuits", "39L to Springfield and 48L to Blaketown"],
         ["66 kV circuits", "56L to Carbonear and 57L to Upper Island Cove"],
         ["138/66 kV transformation", "BRB-T2 and BRB-T3; approximately 42 MVA each in the 2014 filing"],
@@ -20605,6 +20670,15 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1950 OR 1967 CONSTRUCTION RECORD",
+        sourceId: "np-2004-sla-construction",
+        pages: "physical PDF p. 1; compare 2014 Capital Budget Application physical PDF p. 243",
+        facts: [
+          ["2004 station table", "construction year 1950"],
+          ["2014 station report", "built as a distribution substation in 1967 and expanded for transmission and distribution in 1978"]
+        ]
+      },
       {
         label: "1978 TRANSMISSION EXPANSION",
         sourceId: "np-1978-substation-structures",
@@ -22724,7 +22798,8 @@ export const stationProfiles = [
       sourceId: "np-2026-mobile-plant",
       pages: "physical PDF pp. 76 and 441 to 444",
       facts: [
-        ["Construction record", "the 2026 project summary gives 1951; Appendix E in the same filing gives 1950"],
+        ["Commissioning record", "the 2013 plant history gives 1950; later plant and equipment records give 1951"],
+        ["Substation construction record", "the 2026 project summary gives 1951; Appendix E in the same filing gives 1950; the 2027 filing gives 1951"],
         ["Generator", "11 MVA at 6.9 kV"],
         ["MOP-T1", "66/6.9 kV; 10 MVA; Westinghouse; installed at Mobile Plant in 1951"],
         ["Transmission connection", "66 kV line to Mobile Substation"],
@@ -22741,6 +22816,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1950 OR 1951 POWERHOUSE COMMISSIONING",
+        sourceId: "np-1950-mobile-commissioning",
+        pages: "physical PDF p. 136",
+        facts: [
+          ["2013 plant history", "powerhouse commissioned in 1950"],
+          ["Later capital records", "plant and original generating equipment dated to 1951"],
+          ["2013 equipment description", "one vertical Francis turbine attributed to Voith Hydro and one Westinghouse generator"],
+          ["Later turbine history", "Dominion Engineering Works supplied the original turbine; Voith supplied the replacement runner and wicket gates in 1990"]
+        ]
+      },
       {
         label: "1951 ORIGINAL PLANT AND ELECTRICAL EQUIPMENT",
         sourceId: "np-1951-mobile-generating-plant",
@@ -30258,9 +30344,9 @@ export const stationProfiles = [
       {
         label: "2021 FILED REPLACEMENT SCOPE",
         sourceId: "np-2022-tors-cove",
-        pages: "physical PDF pp. 289 to 292 and 296",
+        pages: "physical PDF pp. 289 to 292, 296, 329 and 339",
         facts: [
-          ["Former transformer", "Canadian General Electric unit built in 1950; 66/33-6.9 kV; 7.5 MVA"],
+          ["Former transformer", "TCV-T1, asset P-298, Canadian General Electric serial 256858; built in 1950; 6.9 kV to 33/66 kV; 7.5 MVA"],
           ["Condition", "severe tank and radiator corrosion; consultant recommended planned removal within one to two years"],
           ["Relocation", "new fenced yard approximately 50 m from the former substation"],
           ["Protection", "three single-phase fused 66 kV disconnects, one 66 kV air-break switch and 6.9 kV switches filed for the replacement"],
