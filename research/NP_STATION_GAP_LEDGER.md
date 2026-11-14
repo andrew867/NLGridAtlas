@@ -184,6 +184,7 @@ The March 2014 inspection-form asset registers are now attached to the HWD, MOL,
 
 ## Gander and Boyd's Cove corridor
 
+- [x] The 2009 filing records GAN-T1 at 20 MVA and 138/12.5 kV, GAN-T2 at 27 MVA and 138/66 kV, and three 66/6.9 kV grounding units at 1.6 MVA each. PUB-NP-005 states that the approved 2008 and 2009 work was delayed, physical PDF pp. 271 to 273; PUB-NP-005 physical PDF p. 3.
 - [x] The 2026 filing records Boyd's Cove as a 66 kV transmission substation on 114L between Gander Bay and Summerford, with Newfoundland and Labrador Hydro TL254 also supplied from the station, physical PDF p. 66.
 - [x] The same filing records Gander's 138 kV supplies as 144L from Cobb's Pond and 146L from Gambo. Its 66 kV outputs are 108L to Gander Bay and 102L to Roycefield, physical PDF p. 66.
 - [x] The 2015 Gander station report identifies GAN-T1 at 138/12.5 kV and 20 MVA, GAN-T2 between the 138 kV and 66 kV buses, and GAN-T3 as three single-phase 69/6.9 kV, 1.667 MVA grounding transformers, physical PDF pp. 429 to 431.
@@ -441,6 +442,7 @@ The March 2014 inspection-form asset registers are now attached to the HWD, MOL,
 
 ## Northwest Brook station record
 
+- [x] The 2009 NWB-02 study records a 25 kV feeder serving approximately 1,050 customers, 190 interruption reports, 2,151,561 customer-minutes, and a $1.463 million three-year program. The filed route map is preserved, physical PDF pp. 343 to 350.
 - [x] The 2025 filing identifies 109L between Sunnyside and Clarenville as the 138 kV supply through Northwest Brook, physical PDF pp. 402 to 403.
 - [x] NWB-T1 is an 11.2 MVA, 138/25 kV Westinghouse transformer manufactured in 1965, physical PDF p. 405.
 - [x] NWB-01 and NWB-02 served approximately 1,790 customers in the Northwest Brook to Ivany's Cove area. Both feeder reclosers were retained, physical PDF pp. 402 and 405.
@@ -499,6 +501,8 @@ The March 2014 inspection-form asset registers are now attached to the HWD, MOL,
 
 ## Clarenville station record
 
+- [x] The 2009 filing records CLV-T1 at 25 MVA and 138/66 kV, CLV-T2 at 20 MVA and 138/12.5 kV, and the proposed arrester, relay, animal-protection, panel, and 110L bypass-switch work. PUB-NP-005 states that the 2008 and 2009 work was delayed, physical PDF pp. 269 to 270; PUB-NP-005 physical PDF p. 3.
+- [x] The 2009 110L record identifies the 4.9 km section near Clarenville, $627,000 filed cost, and conductor derating to approximately one-half of original current-carrying capacity. The Q3 report states that the rebuild was complete, physical PDF pp. 312 and 318; CA-NP-217 physical PDF p. 505.
 - [x] The current line register identifies 109L to Sunnyside, 110L to Lethbridge, 123L to Catalina, and 124L to Glovertown, CA-NP-168 Attachment A, physical PDF p. 4.
 - [x] The 2015 filing records CLV-T1 at 25 MVA and 138/66 kV and CLV-T2 at 20 MVA and 138/12.5 kV. Three 12.5 kV feeders served approximately 2,465 customers, physical PDF pp. 433 and 475.
 - [x] The 2014 arrangement included 100L and 109L to Sunnyside, 123L to Catalina, 124L to Port Blandford, and 110L to Milton. The current line register above is kept as a separate dated record, physical PDF p. 433.
@@ -519,6 +523,7 @@ The March 2014 inspection-form asset registers are now attached to the HWD, MOL,
 ## Port Union generation-station record
 
 - [x] The 2009 capital filing identifies 111L as a 66 kV line between Lockston and Catalina via Port Union. The 31 km line also connected the Port Union hydroelectric and diesel plants to the Island system, physical PDF p. 312.
+- [x] The 2009 project rebuilt the remaining 17.7 km after the 13 km 2008 section, at a filed cost of $2.285 million. The Q3 report states that the rebuild was complete, physical PDF pp. 313 and 319; CA-NP-217 physical PDF p. 505.
 - [x] The 2012 plant record identifies a 1917 hydroelectric development with two horizontal Francis units, 500 kW total recorded capacity, a 137 m woodstave penstock, an approximately 350 m power canal, and 2,400 V generation stepped up to 66 kV, physical PDF pp. 144 to 145.
 - [x] The 2026 response describes the plant as substantially run-of-river, rated at 0.52 MW, with 35 MWh of storage. It records 464,232 kWh of 2025 generation and drought-reduced production, physical PDF pp. 1, 3 and 5.
 - [x] The current fleet table lists PUN-T1-A, PUN-T1-B, and PUN-T1-C as separate 66/2.4 kV, 0.33 MVA generation transformers, physical PDF p. 552.
@@ -562,6 +567,7 @@ The March 2014 inspection-form asset registers are now attached to the HWD, MOL,
 
 ## Broad Cove station record
 
+- [x] The 2009 filing proposed converting a Broad Cove feeder section from 12.5 kV to 25 kV and transferring load to Hardwoods. The filed cost was $244,000. No project-specific completion statement was located, physical PDF pp. 60 to 61.
 - [x] The 2008 filing records a pre-1960 distribution substation with one 25 MVA, 66/12.5 kV transformer, radial 5L supply from Hardwoods, four 12.5 kV feeders and approximately 4,350 customers, physical PDF p. 163.
 - [x] The filed 2008 work replaced a failed metering tank, restored metering and under-frequency load shedding, and tied those functions into SCADA, physical PDF p. 163.
 - [x] The 2021 planning study places the station at Belbin's Road and Pendergast Road and records one 25 MVA, 66/12.5 kV BCV-T1 with four distribution feeders, physical PDF pp. 5 to 6.

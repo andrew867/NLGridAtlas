@@ -231,10 +231,11 @@ Updated: 2026-11-14
 - Added KBR-10 and MOL-09 reliability performance, MOB-01 and RBK-01 load-growth work, and the filed route sheets for KBR-10, MOL-09, and MOB-01.
 - Added the 2015 Tors Cove and Seal Cove generating-station scopes, later reported expenditures, and the filed 1999 SCADA system inventory and replacement scope. Proposed work remains separate from later pooled capital actuals.
 - Added the 2011 Avalon transformer-load records, Pulpit Rock expansion, NWB-02 reliability work, St. John's Main feeder reconfiguration, 16L and 25L rebuild records and route sheets, and the Rattling and Sandy Lake spillway projects. The Rattling Lake record remains substantially complete; CA-NP-011 verifies Sandy Lake completion in the 2011 capital program.
+- Added the 2009 Clarenville, Gander, Grand Falls, King's Bridge, Oxen Pond, Rocky Pond, and Broad Cove project records. Clarenville and Gander retain the later delay evidence; the 110L and 111L rebuilds, King's Bridge modernization, Rose Blanche spillway raise, and Rocky Pond refurbishment retain separate completion reports. Added the filed 110L, 111L, and NWB-02 route maps.
 
 ## Active work
 
-1. Reconcile the Newfoundland Power 2010 capital and system records, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the Newfoundland Power 2008 capital and system records, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

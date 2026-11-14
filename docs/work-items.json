@@ -922,6 +922,18 @@
       "notes": "The station records now include the filed HWD-02, HWD-07, BCV-03, OXP-01, SLA-11, SJM-03, Boyd's Cove, and Springfield work. The Lookout Brook record separates the filed electrical scope from later evidence that the plant-system refurbishment was completed in 2010. Later reporting establishes two fibre replacements, two abandoned leases, and one route-constrained cable that was not built. Portable Substation P3 remains proposed because no completion record was located."
     },
     {
+      "id": "NPREG-019",
+      "title": "Reconcile Newfoundland Power 2009 station, transmission, feeder, and hydro records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2009 capital application, quarterly reports, annual report, station modernization, 110L and 111L rebuilds, NWB-02 reliability work, Rose Blanche spillway, Rocky Pond refurbishment, and Broad Cove load transfer.",
+      "dependencies": ["NPREG-018"],
+      "completion_evidence": ["research/NP_2009_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/110l-2009-route.png", "public/reference-maps/111l-2009-route.png", "public/reference-maps/nwb-02-2009-route.png", "tests/np-2009-capital.test.js"],
+      "blocker": null,
+      "notes": "The station records now include the filed Clarenville, Gander, Grand Falls, King's Bridge, Oxen Pond, and Rocky Pond work. Clarenville and Gander retain the later delay record. The completed 110L and 111L sections, King's Bridge modernization, Rose Blanche spillway raise, and Rocky Pond refurbishment have separate later status evidence. Broad Cove remains proposed because no asset-specific completion statement was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

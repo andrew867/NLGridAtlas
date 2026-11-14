@@ -4420,6 +4420,76 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
   },
   {
+    id: "np-2009-station-modernization",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Substation Refurbishment and Modernization",
+    topics: ["Buchans", "Clarenville", "Doyles", "Gander", "Grand Falls", "King's Bridge", "Kelligrews", "Oxen Pond", "Rocky Pond", "substation modernization"],
+    pages: "physical PDF pp. 265 to 284",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2009-broad-cove-growth",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Broad Cove Load Transfer",
+    topics: ["Broad Cove", "Hardwoods", "distribution feeder", "12.5 kV", "25 kV", "load transfer"],
+    pages: "physical PDF pp. 60 to 61",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2009-transmission-rebuild",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, 110L and 111L Rebuilds",
+    topics: ["110L", "111L", "Clarenville", "Lockston", "Port Union", "Catalina", "66 kV", "transmission line rebuild"],
+    pages: "physical PDF pp. 309 to 325",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2009-nwb02",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, NWB-02 Feeder Study",
+    topics: ["Northwest Brook", "NWB-02", "Southwest Arm", "Hillview", "Hatchet Cove", "St. Jones Within", "25 kV", "distribution reliability"],
+    pages: "physical PDF pp. 341 to 350",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2009-rose-blanche-spillway",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Rose Blanche Spillway Raise",
+    topics: ["Rose Blanche", "hydroelectric generation", "spillway", "ogee concrete extension", "energy production"],
+    pages: "physical PDF pp. 220 to 222",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2009-q3-capital",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "Q3 2009 Quarterly Regulatory Report, Capital Project Status",
+    topics: ["110L", "111L", "Rocky Pond", "Rose Blanche", "King's Bridge", "capital project completion"],
+    pages: "physical PDF p. 505",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
+  },
+  {
+    id: "np-2009-annual-report",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2009 Annual Report, Rose Blanche Spillway and System Investment",
+    topics: ["Rose Blanche", "Rocky Pond", "transmission", "substations", "annual report"],
+    pages: "physical PDF pp. 597, 603 and 611",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
+  },
+  {
     id: "np-2009-q4-horse-chops",
     year: 2010,
     organization: "Newfoundland Power",
@@ -8252,6 +8322,16 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2009 FILED GRAND FALLS 4.16 KV YARD WORK",
+        sourceId: "np-2009-station-modernization",
+        pages: "physical PDF pp. 273 to 275",
+        facts: [
+          ["Station", "66/4.16 kV yard built in 1959; GFS-T5 rated 8.4 MVA in the filing"],
+          ["Distribution", "four 4.16 kV feeders serving approximately 1,400 customers"],
+          ["Filed work", "replace the leaning wood-pole yard with a steel box structure; change the switchgear-building layout; replace relays and add feeder automation"]
+        ]
+      },
+      {
         label: "2009 TO 2010 GRAND FALLS 4.16 KV YARD WORK",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF p. 4",
@@ -9190,6 +9270,17 @@ const filedFeederMapProfiles = [
       facts: [["RBH-T1", "generation transformer; 25/6.9 kV; 9.3 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2009 COMPLETED SPILLWAY RAISE",
+        sourceId: "np-2009-q3-capital",
+        pages: "physical PDF p. 505",
+        facts: [
+          ["Filed design", "1.16 m ogee concrete extension on the existing 40 m spillway"],
+          ["Filed cost", "$464,800"],
+          ["Filed energy increase", "0.9 GWh annually, increasing expected annual output from 20.7 GWh to 21.6 GWh"],
+          ["Completion", "Newfoundland Power reported the spillway raised in the third quarter of 2009"]
+        ]
+      },
       {
         label: "DECEMBER 2016 TURBINE FAILURE",
         sourceId: "np-2017-rose-blanche-supplemental",
@@ -10461,6 +10552,16 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2009 FILED LOAD TRANSFER TO HARDWOODS",
+        sourceId: "np-2009-broad-cove-growth",
+        pages: "physical PDF pp. 60 to 61",
+        facts: [
+          ["Filed work", "convert a section of a Broad Cove feeder from 12.5 kV to 25 kV and transfer load to a Hardwoods feeder"],
+          ["Purpose", "keep BCV-T1 within its loading limits and defer transformer replacement"],
+          ["Filed cost", "$244,000"]
+        ]
+      },
       {
         label: "2009 MEASURED PEAK / 2011 SELECTED LOAD TRANSFER",
         sourceId: "np-2011-northeast-load",
@@ -13451,6 +13552,23 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2009 FILED STATION WORK",
+        sourceId: "np-2009-station-modernization",
+        pages: "physical PDF pp. 271 to 273",
+        facts: [
+          ["Filed station equipment", "GAN-T1 138/12.5 kV, 20 MVA; GAN-T2 138/66 kV, 27 MVA; three 66/6.9 kV GAN-T3 grounding units at 1.6 MVA each"],
+          ["Distribution", "four feeders serving approximately 1,600 customers"],
+          ["Transmission", "144L to Cobb's Pond, 146L to Gambo, 102L to Roycefield, and 108L to Gander Bay"],
+          ["Filed work", "foundation repairs, GAN-T1 tap-controller replacement, GAN-T2 arresters, GAN-T3 replacement, 138 kV bus-tie repairs, relay replacement, and feeder automation"]
+        ]
+      },
+      {
+        label: "2008 TO 2009 WORK DELAYED",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 3",
+        facts: [["Later status", "the approved 2008 and 2009 work was delayed; the comprehensive modernization was completed in 2015"]]
+      },
+      {
         label: "2008 FILED REFURBISHMENT",
         sourceId: "np-2008-gander",
         pages: "physical PDF pp. 167 to 169",
@@ -15105,6 +15223,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2009 FILED NWB-02 RELIABILITY WORK",
+        sourceId: "np-2009-nwb02",
+        pages: "physical PDF pp. 343 to 350",
+        facts: [
+          ["Feeder", "25 kV; approximately 1,050 customers; 28 km south to Southport and 20 km north to St. Jones Within"],
+          ["2002 to 2006 outages", "190 interruption reports and 2,151,561 customer-minutes; conductor, insulator, or fuse events accounted for 57% of outages"],
+          ["2009 work", "roadside relocation and equipment work from the substation toward Long Beach, Hodge's Cove, Ivany's Cove, Hillview, and St. Jones Within"],
+          ["Three-year filed program", "$1.463 million, including $496,000 in 2009, $447,000 in 2010, and $520,000 in 2011"]
+        ]
+      },
+      {
         label: "2011 FILED NWB-02 RELIABILITY WORK",
         sourceId: "np-2011-nwb02",
         pages: "physical PDF pp. 396 to 400",
@@ -15135,6 +15264,16 @@ export const stationProfiles = [
         facts: [
           ["Project status", "Newfoundland Power reported the Northwest Brook refurbishment complete"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED NWB-02 ROUTE MAP",
+    referenceSheets: [
+      {
+        title: "2009 NWB-02 feeder study map",
+        image: "./reference-maps/nwb-02-2009-route.png",
+        alt: "Filed NWB-02 route map around Southwest Arm with project sections identified",
+        sourceId: "np-2009-nwb02",
+        pages: "physical PDF p. 350"
       }
     ]
   },
@@ -15708,6 +15847,39 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2009 FILED STATION WORK",
+        sourceId: "np-2009-station-modernization",
+        pages: "physical PDF pp. 269 to 270",
+        facts: [
+          ["Filed station equipment", "CLV-T1 138/66 kV, 25 MVA; CLV-T2 138/12.5 kV, 20 MVA"],
+          ["Distribution", "three feeders serving approximately 2,000 customers"],
+          ["Filed transmission connections", "100L to Sunnyside, 109L to Northwest Brook, 124L to Port Blandford, 123L to Catalina, and 110L to Milton"],
+          ["Filed work", "replace lightning arresters and line and feeder relays; add animal protection; consolidate the 123L and 124L relay panel; add a 110L breaker bypass switch"]
+        ]
+      },
+      {
+        label: "2008 TO 2009 WORK DELAYED",
+        sourceId: "np-2027-pub-np-005",
+        pages: "physical PDF p. 3",
+        facts: [["Later status", "the approved 2008 and 2009 work was delayed; comprehensive modernization was completed in 2015"]]
+      },
+      {
+        label: "2009 FILED 110L REBUILD SECTION",
+        sourceId: "np-2009-transmission-rebuild",
+        pages: "physical PDF pp. 312 and 318",
+        facts: [
+          ["Line", "66 kV between Clarenville and Lockston; 79 km; single wood-pole construction; built in 1958"],
+          ["Filed condition", "corroded conductor had reduced the line to approximately one-half of its original current-carrying capacity"],
+          ["2009 section", "4.9 km near Clarenville; filed cost $627,000"]
+        ]
+      },
+      {
+        label: "Q3 2009 REPORTED 110L COMPLETION",
+        sourceId: "np-2009-q3-capital",
+        pages: "physical PDF p. 505",
+        facts: [["Completion", "Newfoundland Power reported the 2009 110L rebuild complete"]]
+      },
+      {
         label: "JUNE 2012 COMPLETED WHITE HILLS 124L SECTION",
         sourceId: "np-2012-q2-report",
         pages: "physical PDF p. 625",
@@ -15751,6 +15923,13 @@ export const stationProfiles = [
       }
     ],
     referenceSheets: [
+      {
+        title: "2009 filed 110L rebuild section near Clarenville",
+        image: "./reference-maps/110l-2009-route.png",
+        alt: "Filed 110L topographic map showing the 4.9 km section selected for rebuilding near Clarenville",
+        sourceId: "np-2009-transmission-rebuild",
+        pages: "physical PDF p. 318"
+      },
       {
         title: "2012 filed White Hills 124L rebuild route",
         image: "./reference-maps/124l-2012-route.png",
@@ -16043,6 +16222,22 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2009 FILED FINAL 111L REBUILD",
+        sourceId: "np-2009-transmission-rebuild",
+        pages: "physical PDF pp. 312 to 313 and 319",
+        facts: [
+          ["Line", "66 kV from Lockston to Catalina through Port Union; 31 km; single wood-pole construction; built in 1956"],
+          ["Service", "approximately 1,058 customers and the Port Union hydroelectric and diesel plants"],
+          ["2009 section", "remaining 17.7 km after the 13 km 2008 section; filed cost $2.285 million"]
+        ]
+      },
+      {
+        label: "Q3 2009 REPORTED 111L COMPLETION",
+        sourceId: "np-2009-q3-capital",
+        pages: "physical PDF p. 505",
+        facts: [["Completion", "Newfoundland Power reported the 2009 111L rebuild complete"]]
+      },
+      {
         label: "1917 TO 2012 DEVELOPMENT RECORD",
         sourceId: "np-2013-port-union-hydro",
         pages: "physical PDF pp. 144 to 145",
@@ -16081,6 +16276,16 @@ export const stationProfiles = [
           ["Completed work", "Newfoundland Power reported that it rebuilt the Port Union hydroelectric plant after Hurricane Igor damage"],
           ["Combined expenditure", "approximately $1.7 million for the Lawn dam repair and Port Union plant rebuild"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED 111L ROUTE MAP",
+    referenceSheets: [
+      {
+        title: "2008 and 2009 111L rebuild sections",
+        image: "./reference-maps/111l-2009-route.png",
+        alt: "Filed 111L topographic map showing the 2008 and 2009 rebuild sections between Lockston, Port Union, and Catalina",
+        sourceId: "np-2009-transmission-rebuild",
+        pages: "physical PDF p. 319"
       }
     ]
   },
@@ -16656,6 +16861,16 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2009 FILED OXEN POND STATION WORK",
+        sourceId: "np-2009-station-modernization",
+        pages: "physical PDF pp. 279 to 281",
+        facts: [
+          ["Filed local transformer", "OXP-T1 rated 13.3 MVA at 12.5 kV; one feeder serving approximately 1,150 customers"],
+          ["66 kV lines", "31L and 70L to Stamp's Lane, 32L and 67L to Ridge Road, 34L and 58L to Virginia Waters, and 35L to Kenmount"],
+          ["Filed work", "replace the 34L breaker foundation, 12.5 kV structure foundation, and transformer arresters; automate OXP-01 relaying"]
+        ]
+      },
+      {
         label: "2008 TO 2009 COMPLETED STATION WORK",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF p. 5",
@@ -17189,6 +17404,22 @@ export const stationProfiles = [
       facts: [["KBR-T3/T4", "KBR-09, KBR-11, KBR-12 and KBR-13; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2009 FILED STATION MODERNIZATION",
+        sourceId: "np-2009-station-modernization",
+        pages: "physical PDF pp. 275 to 277",
+        facts: [
+          ["Filed station", "66 kV with 4.16 kV and 12.5 kV distribution; 20 MVA combined 4.16 kV capacity and 25 MVA 12.5 kV capacity"],
+          ["Filed service", "approximately 5,500 customers; eight 4.16 kV feeders and four 12.5 kV feeders"],
+          ["Filed work", "replace the 12.5 kV switchgear building, add a control building, replace feeder protection, automate 12 feeders, repair foundations, and replace 4.16 kV transformer cables"]
+        ]
+      },
+      {
+        label: "Q4 2009 REPORTED STATION COMPLETION",
+        sourceId: "np-2009-q4-horse-chops",
+        pages: "physical PDF p. 553",
+        facts: [["Completion", "Newfoundland Power reported the King's Bridge refurbishment and modernization complete"]]
+      },
       {
         label: "2011 FILED / 2019 REPORTED 16L REBUILD",
         sourceId: "np-2011-transmission-rebuild",
@@ -19117,6 +19348,17 @@ export const stationProfiles = [
           ["Damage", "fire originated in the switchgear and shut the plant down for eight months"],
           ["Replacement work", "switchgear, protection and control panels, battery bank, battery charger, and AC/DC panels and wiring were replaced"],
           ["Not replaced", "generator and governor"]
+        ]
+      },
+      {
+        label: "2009 FILED PLANT AND STATION REFURBISHMENT",
+        sourceId: "np-2009-rocky-pond",
+        pages: "physical PDF pp. 161 to 170",
+        facts: [
+          ["Civil work", "replace the 1942 woodstave penstock, intake gate, and gate guides; construct a penstock access road"],
+          ["Mechanical work", "replace the main inlet and drain valves; add a bypass valve; install a digital governor control head"],
+          ["Electrical work", "rewind the 1941 Westinghouse generator; rebuild the 12.5 kV forebay line and replace its copper communications cable with fibre"],
+          ["Filed cost", "$6.517 million in 2009, plus $75,000 of 2008 engineering work"]
         ]
       },
       {
