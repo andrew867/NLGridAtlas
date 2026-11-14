@@ -38,7 +38,7 @@
 
 ## Date conflict
 
-The Tors Cove penstock year is unresolved. CA-NP-036 says the replacement was constructed in 1986. The 2015 engineering assessment says it was rebuilt in 1985. Both describe the same 591 m by 2,743 mm upstream section and 113 m by 2,438 mm downstream section. [CA-NP-036, physical PDF p. 240](http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf); [2015 Capital Budget Application, physical PDF p. 354](http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf)
+The Tors Cove penstock year is unresolved. Later Newfoundland Power records separately state 1984, 1985, and 1986 for the same 591 m by 2,743 mm upstream section and 113 m by 2,438 mm downstream section. [CA-NP-139, physical PDF p. 1](http://www.pub.nl.ca/applications/2022/NP2022Capital/rfis/CA-NP-139.PDF); [2015 Capital Budget Application, physical PDF p. 354](http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf); [CA-NP-036, physical PDF p. 240](http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf)
 
 ## Archive identity
 
@@ -64,3 +64,4 @@ The Tors Cove penstock year is unresolved. CA-NP-036 says the replacement was co
 | IC-NLH-097 | `0bc2fb7c21c8486638a2e822c71c21313fd6dabd62d8a6e3a9a24006c05b1d5c` |
 | Order P.U. 25(2010) | `b7c679ad7e4b7ada8078bd09ec3f55089c2399851ceb166f29a89f384d72ee65` |
 | NP 2015 Capital Budget Application | `fc573a340c7c2139ea63740568785ed30100b3766e2965a54349b75f517b2908` |
+| CA-NP-139, 2022 Capital Budget Application | `a7f9d7a866d800af024d05f0729f75a17b620d26f8a544e7736eaa4a62f17254` |

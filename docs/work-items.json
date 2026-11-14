@@ -1219,19 +1219,31 @@
       "dependencies": ["NPREG-042"],
       "completion_evidence": ["research/NP_1985_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1985-system.test.js"],
       "blocker": null,
-      "notes": "Historical demand and operating tables establish 825.6 MW Newfoundland Power peak demand, 1,180 MW Island transmission peak, 3,531 GWh supplied, 3,331 GWh sold and 172,119 year-end customers. Later asset histories establish Cat Arm commissioning, Holyrood Unit 3 synchronous-condenser commissioning, Hardwoods T5 and emergency diesel, generation-plant work, DC chargers, Avalon pole inspections, VHF and UHF work, and the Rate Stabilization Plan recommendation. The $32.990 million and $33.117 million capital values remain unresolved, as does the Tors Cove penstock's 1985 or 1986 date. No supported 1985 SAIFI, SAIDI or CAIDI record was located."
+      "notes": "Historical demand and operating tables establish 825.6 MW Newfoundland Power peak demand, 1,180 MW Island transmission peak, 3,531 GWh supplied, 3,331 GWh sold and 172,119 year-end customers. Later asset histories establish Cat Arm commissioning, Holyrood Unit 3 synchronous-condenser commissioning, Hardwoods T5 and emergency diesel, generation-plant work, DC chargers, Avalon pole inspections, VHF and UHF work, and the Rate Stabilization Plan recommendation. The $32.990 million and $33.117 million capital values remain unresolved. Later Newfoundland Power records separately date the Tors Cove penstock to 1984, 1985, and 1986. No supported 1985 SAIFI, SAIDI or CAIDI record was located."
     },
     {
       "id": "NPREG-044",
       "title": "Reconcile Newfoundland Power 1984 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1984 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-043"],
+      "completion_evidence": ["research/NP_1984_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1984-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand, capital and planning tables establish actual and forecast system values. The storm record establishes all five failed Avalon 230 kV routes, 81 failed structures, 27.5 affected conductor miles, restoration durations and manual feeder rotation before SCADA. Later asset histories establish TL203, TL247, Deer Lake, Bay Roberts, Lookout Brook, Petty Harbour, Port Union, Cat Arm, Hardwoods and Greenhill work. Later Newfoundland Power records separately date the Tors Cove penstock to 1984, 1985 and 1986."
+    },
+    {
+      "id": "NPREG-045",
+      "title": "Reconcile Newfoundland Power 1983 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1983 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-044"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with surviving capital, demand, energy, customer and financial tables, then reconcile the Avalon sleet-storm record, line and station histories, generating-plant work, telecommunications records and later asset registers."
+      "notes": "Start with surviving capital, demand, planning and financial tables, then reconcile station, line, generation, protection and telecommunications histories without assigning dates from adjacent-year summaries."
     },
     {
       "id": "ASSET-001",

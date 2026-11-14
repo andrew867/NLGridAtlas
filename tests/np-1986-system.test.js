@@ -79,7 +79,7 @@ test("1986 station and plant histories remain attached to their assets", () => {
   assert.match(recordText("HCT"), /1986 SURGE-PROTECTION INSTALLATION/);
   assert.match(recordText("PBK"), /1986 SURGE-CAPACITOR INSTALLATION/);
   assert.match(recordText("MOP"), /1986 NEGATIVE-SEQUENCE RELAY/);
-  assert.match(recordText("TCV"), /1985 OR 1986 WOODSTAVE PENSTOCK/);
+  assert.match(recordText("TCV"), /UNRESOLVED 1984, 1985, OR 1986 WOODSTAVE PENSTOCK/);
   assert.match(recordText("SBK"), /1986 ISLAND POND DAM REPLACEMENTS/);
 });
 

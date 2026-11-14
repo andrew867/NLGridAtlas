@@ -15,9 +15,13 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1984 system record from historical demand, capital, planning, transmission, storm, station and generation records.
+- Added 833.8 MW Newfoundland Power peak demand, 1,186 MW Island transmission peak, $30.615 million capital expenditure, the 1981 planning case, the five-route Avalon sleet-storm failure and restoration sequence, manual feeder rotation before SCADA, the TL203 ice-loading upgrade, TL247 and the Deer Lake ring bus, the Bay Roberts transformer, and plant work at Lookout Brook, Petty Harbour, Port Union, Cat Arm, Hardwoods and Greenhill.
+- Corrected the unresolved Tors Cove penstock record. Later Newfoundland Power sources separately state 1984, 1985 and 1986 for the same replacement.
+- Completed NPREG-044 and opened NPREG-045 for the surviving 1983 system and annual records.
 - Reconstructed the surviving 1985 system record from historical demand, operating, capital, planning, terminal-station, generation, telecommunications and regulatory records. The comparative reliability series located in the archive begins in 1987, so the atlas does not publish unsupported 1985 SAIFI, SAIDI or CAIDI.
 - Added 825.6 MW Newfoundland Power peak demand, 1,180 MW Island transmission peak, 3,531 GWh supplied, 3,331 GWh sold, 172,119 year-end customers, the 1981 planning case, Cat Arm commissioning, the corrected 1985 Holyrood Unit 3 synchronous-condenser commissioning date, Hardwoods T5 and emergency diesel, Bay d'Espoir Surge Tank 1 work, station DC chargers, Avalon pole inspection, plant work, VHF and UHF records, and the 1985 Rate Stabilization Plan recommendation.
-- Preserved the unresolved 1985 capital and Tors Cove penstock conflicts. CA-NP-146 reports $32.990 million while CA-NP-076 reports $33.117 million. Later Newfoundland Power records separately date the same penstock replacement to 1985 and 1986.
+- Preserved the unresolved 1985 capital and Tors Cove penstock conflicts. CA-NP-146 reports $32.990 million while CA-NP-076 reports $33.117 million. Later Newfoundland Power records separately date the same penstock replacement to 1984, 1985, and 1986.
 - Completed NPREG-043 and opened NPREG-044 for the surviving 1984 system and annual records.
 - Reconstructed the surviving 1986 system record from historical demand, capital, planning, transmission, terminal-station, plant, and protection records. The comparative distribution-reliability table begins in 1987, so the atlas does not publish unsupported 1986 SAIFI, SAIDI, or CAIDI.
 - Added $32.184 million actual capital expenditure, 847.8 MW Newfoundland Power peak, 1,291 MW Island transmission peak, the 1981 planning case, Oxen Pond T2 and the Hardwoods T3 relocation, 124L construction, the TL220 storm failure, and dated plant, control, protection, and civil work at Holyrood, Petty Harbour, New Chelsea, Rattling Brook, Port Union, Cat Arm, Western Avalon, Stephenville, Mobile, Tors Cove, Sandy Brook, Pitmans Pond, Heart's Content, and Pierre's Brook.
@@ -316,7 +320,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1985 system and annual records under `NPREG-043`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1983 system and annual records under `NPREG-045`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

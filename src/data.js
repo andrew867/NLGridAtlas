@@ -520,6 +520,176 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1984-capital",
+    year: 1991,
+    organization: "Newfoundland Power",
+    title: "CA-NP-146 Attachment B, Capital Expenditures Since 1984",
+    topics: ["1984", "capital expenditure"],
+    pages: "physical PDF p. 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf"
+  },
+  {
+    id: "nlh-1984-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1984", "Newfoundland Power peak demand", "Hydro Rural peak demand", "Island peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1984-planning-forecast",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-295, 1981 Island Supply Planning Table",
+    topics: ["1984", "coincident peak demand", "installed capability", "LOLP", "energy balance", "forecast"],
+    pages: "physical PDF p. 8",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf"
+  },
+  {
+    id: "nlh-1984-avalon-storm-restoration",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-299, Historical Transmission Failures and Restoration",
+    topics: ["1984", "sleet storm", "TL201", "TL217", "TL218", "TL236", "TL237", "Avalon Peninsula", "restoration"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-299.pdf"
+  },
+  {
+    id: "np-1984-avalon-storm-operations",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-250, Historical Rotating Feeder Outages",
+    topics: ["1984", "sleet storm", "Avalon Peninsula", "rotating feeder outages", "SCADA", "manual switching"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-250.pdf"
+  },
+  {
+    id: "nlh-1984-avalon-storm-failures",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Muskrat Falls Project Exhibit 85, Avalon Ice-Storm Failure Review",
+    topics: ["1984", "sleet storm", "TL201", "TL217", "TL237", "radial ice", "structure failure", "conductor failure"],
+    pages: "physical PDF p. 56",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit85.pdf"
+  },
+  {
+    id: "np-1984-storm-cost-recovery",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Deferred Cost Recovery Application, 1984 Sleet-Storm Cost Record",
+    topics: ["1984", "sleet storm", "operating costs", "Order P.U. 37 (1984)", "cost recovery"],
+    pages: "physical PDF p. 12",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016DeferredCostRecovery/files/applic/Application-2016-Deferred-Cost-Recovery-2015-04-15.PDF"
+  },
+  {
+    id: "nlh-1984-tl203-upgrade",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2012 Capital Budget Application, TL203 Upgrade History",
+    topics: ["1984", "TL203", "Sunnyside", "Western Avalon", "562.5 kcmil", "conductor", "ice loading"],
+    pages: "physical PDF p. 12",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/reports/NLH2012Application-VolumeII-Report10.pdf"
+  },
+  {
+    id: "nlh-1984-tl247-deer-lake",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-318, Island Transmission-Line History",
+    topics: ["1984", "TL247", "Cat Arm", "Deer Lake", "138 kV", "ring bus"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf"
+  },
+  {
+    id: "np-1984-bay-roberts-transformer",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Bay Roberts Transformer Register",
+    topics: ["1984", "Bay Roberts", "transformer", "20 MVA", "138 kV", "12.47 kV"],
+    pages: "physical PDF p. 194",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-1984-lookout-brook",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Lookout Brook Plant History",
+    topics: ["1984", "Lookout Brook", "G1", "G2", "G4", "turbine", "generator", "governor"],
+    pages: "physical PDF pp. 183 to 184",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1984-petty-harbour-port-union",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Hydroelectric Development Records",
+    topics: ["1984", "Petty Harbour", "Port Union", "turbine", "generator", "woodstave penstock"],
+    pages: "physical PDF pp. 144, 207 and 240",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1984-lookout-brook-spillway",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Lookout Brook Cross Pond Spillway Record",
+    topics: ["1984", "Lookout Brook", "Cross Pond", "spillway", "earthfill", "rockfill", "steel core"],
+    pages: "physical PDF p. 115",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "nlh-1984-cat-arm",
+    year: 2007,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-1, Cat Arm Spherical-Valve Seal History",
+    topics: ["1984", "Cat Arm", "spherical valve", "maintenance seals", "commissioning"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2008Capital/files/rfi/PUB-NLH-1.pdf"
+  },
+  {
+    id: "nlh-1984-hardwoods-gas-turbine",
+    year: 2017,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-NLH-150 Attachment 1, Hardwoods Gas-Turbine History",
+    topics: ["1984", "Hardwoods", "gas turbine", "alternator", "end windings", "exciter"],
+    pages: "physical PDF p. 69",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/rfi/IC-NLH-150.PDF"
+  },
+  {
+    id: "np-1984-greenhill-derating",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Thermal Generation Supplemental Application, Greenhill History",
+    topics: ["1984", "Greenhill", "combustion turbine", "derating", "power turbine casing", "20 MW"],
+    pages: "physical PDF p. 40",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF"
+  },
+  {
+    id: "np-1984-tors-cove-penstock-conflict",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "CA-NP-139, Tors Cove Penstock Construction History",
+    topics: ["1984", "1985", "1986", "Tors Cove", "penstock", "date conflict"],
+    pages: "physical PDF p. 1",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/rfis/CA-NP-139.PDF"
+  },
+  {
     id: "np-1985-capital",
     year: 1991,
     organization: "Newfoundland Power",
@@ -724,7 +894,7 @@ export const sources = [
     year: 2014,
     organization: "Newfoundland Power",
     title: "2015 Capital Budget Application, Tors Cove Penstock History",
-    topics: ["1985", "1986", "Tors Cove", "penstock", "date conflict"],
+    topics: ["1984", "1985", "1986", "Tors Cove", "penstock", "date conflict"],
     pages: "physical PDF p. 354",
     status: "unresolved",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
@@ -7718,6 +7888,19 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1984-system-record",
+    scope: "1984 actual demand and capital records, the 1981 planning case, and the April Avalon sleet-storm failure and restoration record",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-1984-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-1984-capital", pages: "physical PDF p. 9" },
+      { sourceId: "np-1984-planning-forecast", pages: "physical PDF p. 8" },
+      { sourceId: "nlh-1984-avalon-storm-restoration", pages: "physical PDF p. 2" },
+      { sourceId: "np-1984-avalon-storm-operations", pages: "physical PDF p. 1" },
+      { sourceId: "nlh-1984-avalon-storm-failures", pages: "physical PDF p. 56" }
+    ]
+  },
+  {
     id: "np-1985-system-record",
     scope: "1985 actual demand, energy, sales, customer and capital records, plus the 1981 planning case",
     status: "unresolved",
@@ -7922,6 +8105,150 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "load",
+    title: "The Island transmission peak was 1,186 MW",
+    body: "The historical demand table reports Newfoundland Power peak demand of 833.8 MW, Hydro Rural peak demand of 45.6 MW, and Hydro system peak demand of 1,013 MW.",
+    sourceId: "nlh-1984-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "network",
+    title: "Actual capital expenditure was $30.615 million",
+    body: "The historical capital table reports Newfoundland Power's annual expenditure as $30,615,000.",
+    sourceId: "np-1984-capital",
+    pages: "physical PDF p. 9",
+    status: "reported"
+  },
+  {
+    date: "1984 planning case",
+    category: "load",
+    title: "A 1981 planning table projected a 1,423 MW coincident peak",
+    body: "The case used 1,600 MW installed capability, a 0.45 loss-of-load-probability index, 7,391 GWh system energy requirement, 7,490 GWh firm energy capability, and a 99 GWh surplus.",
+    sourceId: "np-1984-planning-forecast",
+    pages: "physical PDF p. 8",
+    status: "proposed"
+  },
+  {
+    date: "April 9 to 14, 1984",
+    category: "network",
+    title: "Sleet damage severed all five 230 kV routes serving the Avalon",
+    body: "TL237 lost seven structures on April 9; TL201 lost 38 on April 13; TL217, TL218, and TL236 each lost 12 on April 14. The failures affected 27.5 conductor miles. Restoration took 35, 29, 14, 9, and 14 days respectively.",
+    sourceId: "nlh-1984-avalon-storm-restoration",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "April 1984",
+    category: "operations",
+    title: "Newfoundland Power rotated Avalon feeders manually for seven days",
+    body: "With transmission supply lost and local generation limited, technicians and engineers rotated feeders from substations. Newfoundland Power had not yet implemented SCADA.",
+    sourceId: "np-1984-avalon-storm-operations",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "April 1984",
+    category: "network",
+    title: "TL218 restored the first Holyrood to St. John's path after nine days",
+    body: "TL236 and TL217 followed at 14 days, restoring the broader connection among hydro generation, Holyrood generation, and the Avalon load. TL201 and TL237 remained out for 29 and 35 days.",
+    sourceId: "nlh-1984-avalon-storm-restoration",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "network",
+    title: "Storm loading moved a TL201 guyed angle structure and collapsed a TL217 angle structure",
+    body: "TL217's self-supported C-type structure collapse caused a severe cascade. TL237 conductor broke in tension at 1.60 inches radial ice, while field observations exceeded 2.0 inches radial ice.",
+    sourceId: "nlh-1984-avalon-storm-failures",
+    pages: "physical PDF p. 56",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "network",
+    title: "Hydro upgraded 22 km of TL203 for severe ice loading",
+    body: "The rebuilt section used high-strength 562.5 kcmil conductor in a two-inch radial-ice design zone.",
+    sourceId: "nlh-1984-tl203-upgrade",
+    pages: "physical PDF p. 12",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "network",
+    title: "TL247 completed the Cat Arm to Deer Lake 138 kV route",
+    body: "Together with TL239 and TL248, the line formed the Deer Lake 138 kV ring-bus arrangement built during 1983 and 1984.",
+    sourceId: "nlh-1984-tl247-deer-lake",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "station",
+    title: "Bay Roberts installed a 20 MVA distribution transformer",
+    body: "The transformer register lists a 138/12.47 kV unit installed in 1984.",
+    sourceId: "np-1984-bay-roberts-transformer",
+    pages: "physical PDF p. 194",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "generation",
+    title: "Lookout Brook replaced G1 and G2 with G4",
+    body: "The later plant history describes the resulting G3 and G4 arrangement and dates the G4 governor to 1984. Another equipment history dates the Barber turbine and Ideal Electric generator to 1983, so the component commissioning year remains unresolved.",
+    sourceId: "np-1984-lookout-brook",
+    pages: "physical PDF pp. 183 to 184; compare CA-NP-036 physical PDF p. 113",
+    status: "unresolved"
+  },
+  {
+    date: "1984",
+    category: "generation",
+    title: "Petty Harbour renewed Units 2 and 3",
+    body: "The plant record dates the Unit 2 turbine and generator replacement and the Unit 3 turbine upgrade to 1984.",
+    sourceId: "np-1984-petty-harbour-port-union",
+    pages: "physical PDF p. 207",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "generation",
+    title: "Port Union installed its woodstave penstock",
+    body: "The development record describes a 1,370 mm diameter, 137 m woodstave penstock.",
+    sourceId: "np-1984-petty-harbour-port-union",
+    pages: "physical PDF p. 144",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "generation",
+    title: "Lookout Brook rebuilt the Cross Pond spillway",
+    body: "The 76 m earthfill and rockfill structure used a galvanized-steel core and replaced the original timber-crib spillway.",
+    sourceId: "np-1984-lookout-brook-spillway",
+    pages: "physical PDF p. 115",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "generation",
+    title: "Hardwoods replaced alternator end windings after an exciter failure",
+    body: "The plant history records both the end-winding replacement and exciter failure in 1984.",
+    sourceId: "nlh-1984-hardwoods-gas-turbine",
+    pages: "physical PDF p. 69",
+    status: "reported"
+  },
+  {
+    date: "1984",
+    category: "generation",
+    title: "Greenhill was derated from 25 MW to 20 MW",
+    body: "The manufacturer recommended the derating after deformation and cracking of the power-turbine casing.",
+    sourceId: "np-1984-greenhill-derating",
+    pages: "physical PDF p. 40",
     status: "reported"
   },
   {
@@ -8249,12 +8576,12 @@ export const timeline = [
     status: "reported"
   },
   {
-    date: "1985 or 1986",
+    date: "1984, 1985, or 1986",
     category: "unresolved",
     title: "Tors Cove replaced its woodstave penstock",
-    body: "The replacement comprised a 591 m section at 2,743 mm diameter and a 113 m section at 2,438 mm diameter. A 2013 development record dates it to 1986; the 2015 engineering assessment dates it to 1985.",
-    sourceId: "np-1985-tors-cove-penstock-conflict",
-    pages: "physical PDF p. 354; compare CA-NP-036 physical PDF p. 240",
+    body: "The replacement comprised a 591 m section at 2,743 mm diameter and a 113 m section at 2,438 mm diameter. Later Newfoundland Power records date the work to 1984, 1985, or 1986.",
+    sourceId: "np-1984-tors-cove-penstock-conflict",
+    pages: "physical PDF p. 1; compare 2015 Capital Budget Application physical PDF p. 354 and CA-NP-036 physical PDF p. 240",
     status: "unresolved"
   },
   {
@@ -10209,8 +10536,8 @@ export const components = {
   "hwd-g1": {
     diagram: "hwd", status: "verified", code: "HWD / G1 AND T5", title: "Hardwoods generator branch",
     summary: "The 2013 alternative one-line connects G1 to the 66 kV bus through T5. The 2026 loop study models HWD-G1 at 25 MW.",
-    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["T5 register date", "1985"], ["1988 turbine work", "Curtiss-Wright power-turbine casings replaced at Hardwoods and Stephenville; approximately $4 million combined"], ["1992 stack work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
-    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1985-hardwoods-t5", "physical PDF p. 70"), sourceRef("nlh-1988-gas-turbine-casings", "physical PDF p. 166"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["1984 plant work", "Alternator end windings replaced after an exciter failure"], ["T5 register date", "1985"], ["1988 turbine work", "Curtiss-Wright power-turbine casings replaced at Hardwoods and Stephenville; approximately $4 million combined"], ["1992 stack work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1984-hardwoods-gas-turbine", "physical PDF p. 69"), sourceRef("nlh-1985-hardwoods-t5", "physical PDF p. 70"), sourceRef("nlh-1988-gas-turbine-casings", "physical PDF p. 166"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
   "hwd-b1b2": {
     diagram: "hwd", status: "verified", code: "HWD / B1B2", title: "Hardwoods 230 kV bus tie",
@@ -12342,6 +12669,15 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1984 DERATING",
+        sourceId: "np-1984-greenhill-derating",
+        pages: "physical PDF p. 40",
+        facts: [
+          ["Rating change", "25 MW to 20 MW"],
+          ["Cause", "manufacturer recommendation after deformation and cracking of the power-turbine casing"]
+        ]
+      },
       {
         label: "1995 GAS-GENERATOR AND POWER-TURBINE WORK",
         sourceId: "np-2027-greenhill-refurbishment",
@@ -14890,6 +15226,12 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1984 DISTRIBUTION TRANSFORMER",
+        sourceId: "np-1984-bay-roberts-transformer",
+        pages: "physical PDF p. 194",
+        facts: [["Installed unit", "20 MVA at 138/12.47 kV"]]
+      },
       {
         label: "2006 FILED 25 KV STRUCTURE FOUNDATION",
         sourceId: "np-2006-substation-program",
@@ -18164,6 +18506,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1984 G4 AND CROSS POND SPILLWAY",
+        sourceId: "np-1984-lookout-brook",
+        pages: "physical PDF pp. 183 to 184; compare CA-NP-036 physical PDF pp. 113 and 115",
+        facts: [
+          ["Generating units", "G1 and G2 replaced by G4; the plant retained G3 and G4"],
+          ["G4 date record", "the plant history dates G4 and its governor to 1984; an equipment history dates the Barber turbine and Ideal Electric generator to 1983"],
+          ["Cross Pond spillway", "76 m earthfill and rockfill structure with galvanized-steel core replaced the timber-crib spillway"]
+        ]
+      },
+      {
         label: "2004 FILED 403L REBUILD",
         sourceId: "np-2004-transmission-rebuild",
         pages: "physical PDF pp. 391 to 392",
@@ -20648,6 +21000,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1984 WOODSTAVE PENSTOCK",
+        sourceId: "np-1984-petty-harbour-port-union",
+        pages: "physical PDF p. 144",
+        facts: [["Penstock", "1,370 mm diameter; 137 m long"]]
+      },
       {
         label: "1985 WATER-CONTROL STRUCTURE WORK",
         sourceId: "np-1985-port-union-civil",
@@ -23820,13 +24178,13 @@ export const stationProfiles = [
         facts: [["Completed work", "replaced the original manual valve with a 42-inch electrically actuated butterfly valve"]]
       },
       {
-        label: "1985 OR 1986 WOODSTAVE PENSTOCK",
-        sourceId: "np-1985-tors-cove-penstock-conflict",
-        pages: "physical PDF p. 354; compare CA-NP-036 physical PDF p. 240",
+        label: "UNRESOLVED 1984, 1985, OR 1986 WOODSTAVE PENSTOCK",
+        sourceId: "np-1984-tors-cove-penstock-conflict",
+        pages: "physical PDF p. 1; compare 2015 Capital Budget Application physical PDF p. 354 and CA-NP-036 physical PDF p. 240",
         facts: [
           ["Upstream section", "591 m long; 2,743 mm diameter"],
           ["Downstream section", "113 m long; 2,438 mm diameter"],
-          ["Date record", "2015 engineering assessment says rebuilt in 1985; 2013 development record says constructed in 1986"]
+          ["Date record", "later Newfoundland Power records separately state 1984, 1985, and 1986"]
         ]
       },
       {

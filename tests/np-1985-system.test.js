@@ -72,11 +72,10 @@ test("1985 Tors Cove penstock year remains unresolved", () => {
   assert.ok(source);
   assert.equal(source.status, "unresolved");
 
-  const entry = timeline.find((candidate) => candidate.date === "1985 or 1986" && /Tors Cove/.test(candidate.title));
+  const entry = timeline.find((candidate) => candidate.date === "1984, 1985, or 1986" && /Tors Cove/.test(candidate.title));
   assert.ok(entry);
   assert.equal(entry.status, "unresolved");
-  assert.match(entry.body, /2013 development record dates it to 1986/);
-  assert.match(entry.body, /2015 engineering assessment dates it to 1985/);
+  assert.match(entry.body, /1984, 1985, or 1986/);
 });
 
 test("1985 telecommunications and regulatory records are source linked", () => {
