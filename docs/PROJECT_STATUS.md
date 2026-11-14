@@ -15,6 +15,9 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 2004 New Chelsea, Topsail and Rattling Brook hydro records, including dated equipment condition, filed scope and primary-source costs.
+- Added the 2004 Chamberlains and Pulpit Rock feeder additions, Walbournes and Bayview transformer project, Port Blandford switches, Stamp's Lane cables, and Pepperell and Summerford breaker records.
+- Added the 2004 3L and 403L rebuild records and the St. John's transmission ampacity study, including its conductor-rating basis, measured 2002 Oxen Pond load, proposed upgrade table and historical network sheet.
 - Added the 2005 Wesleyville inspection and overhaul sequence, with the later completed gas-generator exchange kept separate.
 - Added the 2005 Rattling Brook plant assessment and detailed-design scope, with the later 2007 station completion kept separate.
 - Added the 2005 Humber transformer-radiator, Hardwoods HWD-04 breaker, Rocky Pond breaker, and St. John's Main switchgear records.

@@ -982,6 +982,18 @@
       "notes": "Wesleyville separates the three inspection records, filed overhaul, and later completed exchange. Rattling Brook separates the 2005 design request from the later construction and 2007 station completion. Humber, Hardwoods, Rocky Pond, and St. John's Main retain equipment condition and filed scope. The upright east end source sheet is attached to Broad Cove, Ridge Road, Virginia Waters, and Pulpit Rock with dated transformer, feeder, customer, and planning records."
     },
     {
+      "id": "NPREG-024",
+      "title": "Reconcile Newfoundland Power 2004 hydro, station, feeder, transformer, transmission, and ampacity records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the revised 2004 capital application, hydro rehabilitation, New Chelsea refurbishment, station equipment, feeder additions, Walbournes and Bayview transformer work, transmission rebuilds, and the St. John's ampacity review.",
+      "dependencies": ["NPREG-023"],
+      "completion_evidence": ["research/NP_2004_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/st-johns-2004-ampacity-upgrades-404.png", "public/reference-maps/st-johns-2002-ampacity-network-408.png", "tests/np-2004-capital.test.js"],
+      "blocker": null,
+      "notes": "The 2004 application records remain proposed unless a later source confirms completion. The station profiles now include primary filing records for New Chelsea, Topsail, Rattling Brook, Chamberlains, Pulpit Rock, Walbournes, Bayview, Port Blandford, Stamp's Lane, Pepperell, Summerford, Petty Harbour, and the 403L corridor. The St. John's ampacity review keeps measured 2002 loads separate from forecasts and preserves its dated upgrade table and historical network sheet."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

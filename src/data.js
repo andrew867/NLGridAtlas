@@ -1,5 +1,75 @@
 export const sources = [
   {
+    id: "np-2004-hydro-rehabilitation",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Hydro Plant Facility Rehabilitation",
+    topics: ["Pierre's Brook", "Topsail", "Morris", "Rattling Brook", "Rocky Pond", "Cape Broyle", "Fall Pond", "Pitmans Pond", "Victoria", "hydro rehabilitation"],
+    pages: "physical PDF pp. 263 to 267",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicCompleteRev1.pdf"
+  },
+  {
+    id: "np-2004-new-chelsea",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, New Chelsea Planned Refurbishment",
+    topics: ["New Chelsea", "NCH", "hydro generation", "penstock", "generator rewind", "governor", "station service", "66 kV protection"],
+    pages: "physical PDF pp. 281 to 327; budget table p. 329",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicCompleteRev1.pdf"
+  },
+  {
+    id: "np-2004-rebuild-substations",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Rebuild Substations",
+    topics: ["Grand Bay", "Trepassey", "Indian Cove", "Port Blandford", "Wheelers", "Stamp's Lane", "Bay Roberts", "Laurentian", "substation rebuild"],
+    pages: "physical PDF pp. 334 to 339",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicCompleteRev1.pdf"
+  },
+  {
+    id: "np-2004-substation-equipment",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Replacement and Standby Substation Equipment",
+    topics: ["Pepperell", "Summerford", "Laurentian", "Greenhill", "Milton", "Bonavista", "Glenwood", "Boyd's Cove", "Glovertown", "circuit breakers", "potential transformers"],
+    pages: "physical PDF pp. 340 to 346",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicCompleteRev1.pdf"
+  },
+  {
+    id: "np-2004-feeder-additions",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Feeder Additions",
+    topics: ["Chamberlains", "Kelligrews", "Pulpit Rock", "Torbay", "distribution feeders", "load transfer"],
+    pages: "physical PDF pp. 347 to 348",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicCompleteRev1.pdf"
+  },
+  {
+    id: "np-2004-transmission-rebuild",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, Transmission Line Rebuilds",
+    topics: ["3L", "16L", "38L", "116L", "123L", "124L", "132L", "403L", "transmission rebuild"],
+    pages: "physical PDF pp. 388 to 392",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicCompleteRev1.pdf"
+  },
+  {
+    id: "np-2004-st-johns-ampacity",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2004 Capital Budget Application, St. John's Transmission System Ampacity Review",
+    topics: ["St. John's", "66 kV", "ampacity", "conductor", "station peak", "Oxen Pond", "Hardwoods", "contingency", "load flow"],
+    pages: "physical PDF pp. 393 to 408",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicCompleteRev1.pdf"
+  },
+  {
     id: "np-2004-gdl01",
     year: 2003,
     organization: "Newfoundland Power",
@@ -11569,6 +11639,17 @@ const earlyFeederMapProfiles = [
         ]
       },
       {
+        label: "2004 FILED WAL-T2 MOVE TO BAYVIEW",
+        sourceId: "np-2004-corner-brook-transformers",
+        pages: "physical PDF pp. 349 and 352 to 359",
+        facts: [
+          ["Filed work", "replace the 15 MVA WAL-T2 with a 25 MVA unit and move the 15 MVA transformer to Bayview as BVS-T2"],
+          ["2002 station peaks", "Bayview 19.9 MVA; WAL-T1 19.0 MVA; WAL-T2 16.7 MVA"],
+          ["Bayview capacity", "the proposed second transformer would increase installed capacity from 20 MVA to 35 MVA"],
+          ["Filed cost", "$1.184 million for the combined Walbournes and Bayview work"]
+        ]
+      },
+      {
         label: "2004 BVS-T2 RELOCATION",
         sourceId: "np-2010-ca-np-016",
         pages: "physical PDF p. 1",
@@ -11724,6 +11805,17 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2004 FILED FEEDER ADDITION",
+        sourceId: "np-2004-feeder-additions",
+        pages: "physical PDF p. 347",
+        facts: [
+          ["Route", "from Chamberlains Substation along Fowler's Road and the Conception Bay South bypass, west to Dunn's Hill Road, then approximately 1 km along Dunn's Hill Road"],
+          ["Load transfer", "approximately 4.5 MVA from Kelligrews to Chamberlains"],
+          ["Filed purpose", "prevent the forecast overload of the Kelligrews transformer"],
+          ["Filed cost", "$106,000"]
+        ]
+      },
       {
         label: "2009 MEASURED LOAD",
         sourceId: "np-2011-cbs-study",
@@ -12826,6 +12918,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 FILED 403L REBUILD",
+        sourceId: "np-2004-transmission-rebuild",
+        pages: "physical PDF pp. 391 to 392",
+        facts: [
+          ["Circuit", "403L between St. George's and Lookout Brook, with the Robinsons radial tap"],
+          ["Original line", "built in 1958; 11.6 km had been replaced in 2001"],
+          ["Filed work", "rebuild 5.1 km and complete selective work on a further 4.0 km"],
+          ["Filed cost", "$380,000"]
+        ]
+      },
+      {
         label: "2008 FILED VOLTAGE CONVERSION",
         sourceId: "np-2008-403l-conversion",
         pages: "physical PDF pp. 183 to 185",
@@ -12896,6 +12999,17 @@ export const stationProfiles = [
       facts: [["STG-T1", "66/25 kV; 6.67 MVA; 3.50 MVA 2026 forecast"]]
     },
     historyRecords: [
+      {
+        label: "2004 FILED 403L REBUILD",
+        sourceId: "np-2004-transmission-rebuild",
+        pages: "physical PDF pp. 391 to 392",
+        facts: [
+          ["Circuit", "403L between St. George's and Lookout Brook"],
+          ["Original line", "built in 1958; 11.6 km had been replaced in 2001"],
+          ["Filed work", "rebuild 5.1 km and complete selective work on a further 4.0 km"],
+          ["Filed cost", "$380,000"]
+        ]
+      },
       {
         label: "2008 FILED VOLTAGE CONVERSION",
         sourceId: "np-2008-403l-conversion",
@@ -13528,6 +13642,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2004 FILED BREAKER REPLACEMENT",
+        sourceId: "np-2004-substation-equipment",
+        pages: "physical PDF p. 340",
+        facts: [
+          ["Existing breaker", "approximately 37 years old; control performance was inconsistent"],
+          ["Decision basis", "the repair estimate was close to the cost of a new breaker"],
+          ["Filed program", "replace one 66 kV breaker at Summerford and one at Pepperell for a combined $300,000"]
+        ]
+      },
       {
         label: "2008 TO 2012 FEEDER RELIABILITY REVIEW",
         sourceId: "np-2014-reliability-review",
@@ -14468,6 +14592,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 FILED 403L REBUILD",
+        sourceId: "np-2004-transmission-rebuild",
+        pages: "physical PDF pp. 391 to 392",
+        facts: [
+          ["Circuit", "403L between St. George's and Lookout Brook; radial plant connection and route to the Robinsons tap"],
+          ["Original line", "built in 1958; 11.6 km had been replaced in 2001"],
+          ["Filed work", "rebuild 5.1 km and complete selective work on a further 4.0 km"],
+          ["Filed cost", "$380,000"]
+        ]
+      },
+      {
         label: "2006 FILED INSTRUMENTATION WORK",
         sourceId: "np-2006-hydro-rehabilitation",
         pages: "physical PDF p. 175",
@@ -14870,6 +15005,17 @@ export const stationProfiles = [
         facts: [
           ["Filed topology", "Massey Drive to Maple Valley to Bayview in 2016; Bayview to Humber in 2017; Humber to Walbournes to Massey Drive in 2019"],
           ["Protection", "redundant optical paths planned for the Corner Brook 66 kV transmission relays"]
+        ]
+      },
+      {
+        label: "2004 FILED TRANSFORMER CAPACITY PROJECT",
+        sourceId: "np-2004-corner-brook-transformers",
+        pages: "physical PDF pp. 349 and 352 to 359",
+        facts: [
+          ["Filed work", "replace 15 MVA WAL-T2 with a 25 MVA unit and move the 15 MVA transformer to Bayview"],
+          ["2002 measured peaks", "WAL-T1 19.0 MVA and WAL-T2 16.7 MVA"],
+          ["Filed loadings", "WAL-T1 at 95 percent and WAL-T2 at 111 percent of nameplate"],
+          ["Filed cost", "$1.184 million for the combined Walbournes and Bayview work"]
         ]
       },
       {
@@ -16622,6 +16768,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 FILED 138 KV SWITCH REPLACEMENT",
+        sourceId: "np-2004-rebuild-substations",
+        pages: "physical PDF pp. 336 to 337",
+        facts: [
+          ["Equipment", "PBD-124-A6 and PBD-124L-A7 138 kV switches and supporting structures"],
+          ["Existing arrangement", "underbuilt wood-pole switches installed in 1990 and tagged out of service"],
+          ["Operating limitation", "124L had to be de-energized to operate the affected equipment"],
+          ["Filed cost", "$217,000"]
+        ]
+      },
+      {
         label: "1990 STATION ASSET RECORD",
         sourceId: "np-2010-substation-asset-history",
         pages: "physical PDF p. 197",
@@ -17125,6 +17282,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 FILED G1 STATOR REWIND",
+        sourceId: "np-2004-hydro-rehabilitation",
+        pages: "physical PDF pp. 265 to 266",
+        facts: [
+          ["Condition", "G2 had experienced a winding failure in 2002; G1 had an identical 45-year-old winding"],
+          ["Filed work", "rewind the G1 stator"],
+          ["Filed cost", "$407,000"],
+          ["Plant production", "69.4 GWh normal annual production in the filing"]
+        ]
+      },
+      {
         label: "2005 DETAILED ENGINEERING AND PLANT ASSESSMENT",
         sourceId: "np-2005-rattling-brook",
         pages: "physical PDF pp. 188 to 193 and 283 to 292",
@@ -17355,6 +17523,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 ST. JOHN'S AMPACITY AND CONTINGENCY STUDY",
+        sourceId: "np-2004-st-johns-ampacity",
+        pages: "physical PDF pp. 393 to 408",
+        facts: [
+          ["Study basis", "66 kV conductor ratings used 25 C summer and 0 C winter ambient temperatures, 0.61 m/s wind, and 75 C conductor temperature"],
+          ["38L finding", "the 2004 forecast peak for Duffs, Seal Cove, Kelligrews, Chamberlains and Hardwoods totalled 53.8 MVA against a 40.3 MVA winter rating"],
+          ["Hardwoods transformer contingency", "with one 125 MVA Hardwoods transformer unavailable, the study identified operation of the 50 MW gas turbine as a mitigation"],
+          ["Filed 38L work", "upgrade the Golden Eagle Tap to Seal Cove section from 33.0/40.3 MVA summer/winter to 96.0/116.4 MVA"]
+        ]
+      },
+      {
         label: "2009 HWD-T3 MEASURED LOAD",
         sourceId: "np-2011-cbs-study",
         pages: "physical PDF pp. 309 to 316",
@@ -17483,6 +17662,13 @@ export const stationProfiles = [
     referenceSheetLabel: "FILED FEEDER AND FIBRE ROUTES",
     referenceSheets: [
       {
+        title: "2004 proposed St. John's transmission ampacity upgrades",
+        image: "./reference-maps/st-johns-2004-ampacity-upgrades-404.png",
+        alt: "Filed table of existing and proposed St. John's 66 kV transmission-line ampacities, lengths, project years, and capital estimates",
+        sourceId: "np-2004-st-johns-ampacity",
+        pages: "physical PDF p. 404"
+      },
+      {
         title: "2010 filed HWD-02 voltage conversion and KEN-03 transfer",
         image: "./reference-maps/hwd-02-2010-conversion.png",
         alt: "Filed HWD-02 drawing showing the section selected for conversion from 12.5 kV to 25 kV and transfer to KEN-03",
@@ -17537,6 +17723,17 @@ export const stationProfiles = [
       facts: [["OXP-01", "12.5 kV; OXP-T1; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2004 ST. JOHN'S AMPACITY STUDY",
+        sourceId: "np-2004-st-johns-ampacity",
+        pages: "physical PDF pp. 393 to 408",
+        facts: [
+          ["Study trigger", "review of the 66 kV system after loss of the Oxen Pond Hydro infeed and difficulty switching around line limits"],
+          ["2002 measured OXP-T1 peak", "8.5 MVA on a transformer listed at 13.3 MVA in the study table"],
+          ["2004 OXP-T1 forecast", "9.3 MVA"],
+          ["Study result", "no conductor upgrade was recommended for the HWD, GDL, GOU, SJM, SLA and OXP loop in this review"]
+        ]
+      },
       {
         label: "2010 FILED OXP-01 CONDUCTOR UPGRADE",
         sourceId: "np-2010-feeder-growth",
@@ -17652,6 +17849,13 @@ export const stationProfiles = [
     ],
     referenceSheetLabel: "FILED FEEDER ROUTES",
     referenceSheets: [
+      {
+        title: "2002 St. John's transmission-system study network",
+        image: "./reference-maps/st-johns-2002-ampacity-network-408.png",
+        alt: "Historical Newfoundland Power single-line showing the St. John's 66 kV transmission system studied for conductor ampacity",
+        sourceId: "np-2004-st-johns-ampacity",
+        pages: "physical PDF p. 408"
+      },
       {
         title: "2010 filed OXP-01 Thorburn Road conductor upgrade",
         image: "./reference-maps/oxp-01-2010-upgrade.png",
@@ -18885,6 +19089,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 FILED TRANSFORMER-CABLE REPLACEMENT",
+        sourceId: "np-2004-rebuild-substations",
+        pages: "physical PDF p. 338",
+        facts: [
+          ["Equipment", "oil-insulated cables supplying SLA-T1 and SLA-T2, installed in 1958"],
+          ["Condition", "leaking terminations and cracked bodies; the filing states the cables were too deteriorated for new terminations"],
+          ["Filed cost", "$95,000"]
+        ]
+      },
+      {
         label: "2010 FILED SLA-11 CONDUCTOR UPGRADE",
         sourceId: "np-2010-feeder-growth",
         pages: "physical PDF pp. 380 to 381",
@@ -19125,6 +19339,15 @@ export const stationProfiles = [
       facts: [["PEP-05", "12.5 kV; PEP-T1/T2; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2004 FILED BREAKER REPLACEMENT",
+        sourceId: "np-2004-substation-equipment",
+        pages: "physical PDF p. 340",
+        facts: [
+          ["Existing breaker", "51 years old; operating time did not meet the critical-clearing criterion and replacement parts were unavailable"],
+          ["Filed program", "replace one 66 kV breaker at Pepperell and one at Summerford for a combined $300,000"]
+        ]
+      },
       {
         label: "2011 FILED / 2019 REPORTED 16L REBUILD",
         sourceId: "np-2011-transmission-rebuild",
@@ -19382,6 +19605,17 @@ export const stationProfiles = [
           ["Filed transformer", "one 25 MVA bank on the 12.5 kV distribution bus"],
           ["Filed feeders", "PUL-01 and PUL-02 supplied approximately 3,500 customers; PUL-03 was being added in 2004"],
           ["Planning result", "the selected plan deferred a second Pulpit Rock transformer and PUL-04 to later years"]
+        ]
+      },
+      {
+        label: "2004 FILED TORBAY FEEDER ADDITION",
+        sourceId: "np-2004-feeder-additions",
+        pages: "physical PDF pp. 347 to 348",
+        facts: [
+          ["Route", "from Pulpit Rock Substation along Country Drive and Manning's Hill to Torbay Road"],
+          ["Service area", "Torbay, Flatrock and Pouch Cove"],
+          ["Filed purpose", "serve load growth and improve distribution reliability"],
+          ["Filed cost", "$94,000"]
         ]
       },
       {
@@ -19663,6 +19897,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2004 FILED 3L REBUILD",
+        sourceId: "np-2004-transmission-rebuild",
+        pages: "physical PDF p. 388",
+        facts: [
+          ["Circuit", "3L from Goulds to Petty Harbour; radial supply and the plant's connection to the interconnected system"],
+          ["Original construction", "1930"],
+          ["Filed work", "rebuild 4.7 km"],
+          ["Filed cost", "$364,000"]
+        ]
+      },
       {
         label: "2007 FILED FOREBAY DAM WORK",
         sourceId: "np-2007-capital",
@@ -20532,6 +20777,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2004 FILED MAJOR REFURBISHMENT",
+        sourceId: "np-2004-new-chelsea",
+        pages: "physical PDF pp. 285 to 293; budget table p. 329",
+        facts: [
+          ["Plant record", "entered service in January 1957; 3.7 MW installed; 15.4 GWh normal annual production in the filing"],
+          ["Electrical scope", "generator breaker, digital generator protection, current and potential transformers, unit-control PLC, synchronizer, AVR, metering, station service, and 66 kV bus and transformer protection"],
+          ["Mechanical scope", "replace the governor, 867 m woodstave penstock, 240 m steel pipeline, main inlet valve, cooling and ventilation equipment, and generator windings"],
+          ["Filed cost", "$3.973 million"]
+        ]
+      },
+      {
         label: "2006 FILED 66 KV BUS DIFFERENTIAL PROTECTION",
         sourceId: "np-2006-substation-program",
         pages: "physical PDF pp. 228 to 231",
@@ -20786,6 +21042,17 @@ export const stationProfiles = [
       facts: [["TOP-T1", "generation transformer; 25/2.4 kV; 0.75 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2004 FILED CONTROL AND PROTECTION REPLACEMENT",
+        sourceId: "np-2004-hydro-rehabilitation",
+        pages: "physical PDF pp. 263 to 264",
+        facts: [
+          ["Existing equipment", "governor and control equipment installed in 1983"],
+          ["Five-year outage record", "115 unscheduled plant outages; 42 percent linked to speed-signal and bearing inputs, and 17 percent to pressure-relief-valve control"],
+          ["Filed scope", "PLC-based unit control, generator protection, digital AVR, synchronizer, metering, and standard control panel"],
+          ["Filed cost", "$200,000 in the 2004 program; $430,000 including carried 2003 scope"]
+        ]
+      },
       {
         label: "2006 FILED DAM AND GENERATOR COOLING WORK",
         sourceId: "np-2006-hydro-rehabilitation",
