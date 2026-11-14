@@ -1094,12 +1094,24 @@
       "title": "Reconcile Newfoundland Power 1995 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1995 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-032"],
+      "completion_evidence": ["research/NP_1995_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1995-system.test.js"],
+      "blocker": null,
+      "notes": "CA-213 explicitly requests annual returns beginning in 1996, and no standalone 1995 annual return was located. The revised reliability response, 2003 capital variance response, comparative 1996 regulatory tables and later asset histories establish actual system reliability, capital expenditure, energy and losses, fixed-asset values, Greenhill and Pierre's Brook work, the Stony Brook ring-bus conversion and the Great Northern Peninsula 138 kV expansion."
+    },
+    {
+      "id": "NPREG-034",
+      "title": "Reconcile Newfoundland Power 1994 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1994 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and storm-response evidence.",
+      "dependencies": ["NPREG-033"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Search the archive by document identity and dated content. Do not assume that the CA-213 sequence includes a surviving 1995 annual report."
+      "notes": "Start with the revised 1992 to 2002 reliability table, the 1993 to 2002 capital variance response and the December 1994 storm reports. Keep ordinary system reliability separate from Hydro loss-of-supply and storm restoration records."
     },
     {
       "id": "ASSET-001",

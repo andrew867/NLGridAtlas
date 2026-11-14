@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the 1995 system record from the revised reliability response, the 2003 capital variance response, comparative 1996 regulatory tables and later asset histories. CA-213 explicitly begins with 1996 annual returns, and no standalone 1995 annual return was located.
+- Added actual 1995 SAIFI and SAIDI, $30.782 million capital expenditure, 423.1 GWh company generation, normalized energy losses and separate transmission, substation and telecommunications net book values.
+- Added the 1995 Stony Brook 230 kV ring-bus conversion, Great Northern Peninsula 138 kV expansion, Greenhill gas-generator and power-turbine work, and Pierre's Brook runner and station-service transformer work.
+- Opened NPREG-034 for the surviving 1994 system, annual and December storm records.
 - Added the 1996 Newfoundland Power system record from the annual report, regulatory returns and revised General Rate Application reliability response. The record covers actual SAIFI and SAIDI, the transmission and substation insulator program, the 1996 Rose Blanche development plan, exact capital categories, 423 GWh company generation, 4,236 GWh purchased energy, normalized losses and separate transmission and substation fixed-asset values.
 - Added the early-1997 telecommunications state reported in the 1996 annual report. The work improved radio and substation-control capabilities and supported workflow software. The record also locates the dated company service-area and transmission-lines map. No 1996 service-availability percentage, operating-area reliability table, peak demand or system load factor was located.
 - Opened NPREG-033 for the surviving Newfoundland Power 1995 system and annual records.

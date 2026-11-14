@@ -380,6 +380,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-2003-capital-variance-history",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-2, 1993 to 2002 Capital Expenditure Variance Summaries",
+    topics: ["capital expenditure", "energy supply", "substations", "transmission", "distribution", "telecommunications", "1995"],
+    pages: "physical PDF pp. 1 and 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
+  },
+  {
     id: "np-1996-annual-report",
     year: 1996,
     organization: "Newfoundland Power",
@@ -6548,6 +6558,12 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1995-system-reliability",
+    scope: "1995 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
+    status: "reported",
+    sources: [{ sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }]
+  },
+  {
     id: "np-1996-system-reliability",
     scope: "1996 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages and reported outage causes",
     status: "reported",
@@ -6685,6 +6701,78 @@ export const timeline = [
     body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
     sourceId: "vhf-2004",
     pages: "PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1995",
+    category: "reliability",
+    title: "SAIFI was 3.70 and SAIDI was 5.34 hours",
+    body: "The figures exclude Hydro loss-of-supply outages.",
+    sourceId: "np-2003-ca-446-rev",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1995",
+    category: "network",
+    title: "Actual capital expenditure was $30.782 million",
+    body: "The filed variance summary records $1.321 million for energy supply, $1.278 million for substations, $1.790 million for transmission, $11.840 million for distribution and $0.552 million for telecommunications.",
+    sourceId: "np-2003-capital-variance-history",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1995",
+    category: "generation",
+    title: "Company generation was 423.1 GWh",
+    body: "The normalized return records 423,100 MWh produced and 4,186,353 MWh purchased. Losses were 212,936 MWh, equal to 4.6 percent of purchased and produced energy.",
+    sourceId: "np-1996-annual-report",
+    pages: "physical PDF p. 53",
+    status: "reported"
+  },
+  {
+    date: "1995-12-31",
+    category: "financial",
+    title: "Substations carried $46.310 million and transmission $44.707 million net book value",
+    body: "The comparative fixed-asset table also records $7.693 million net book value for telecommunications.",
+    sourceId: "np-1996-annual-report",
+    pages: "physical PDF p. 21",
+    status: "reported"
+  },
+  {
+    date: "1995",
+    category: "station",
+    title: "Stony Brook was converted to a 230 kV ring bus",
+    body: "The terminal station had entered service in 1966 as a load-bus arrangement. Hydro reports that the station configuration was modified to a 230 kV ring bus in 1995.",
+    sourceId: "nlh-system-design-2015",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1995",
+    category: "network",
+    title: "The Great Northern Peninsula 138 kV corridor was extended",
+    body: "TL241 was extended to Peter's Barren and placed in 138 kV operation, TL244 was upgraded for 138 kV operation, and the new 138 kV TL256 was built from Bear Cove to St. Anthony Airport.",
+    sourceId: "nlh-northern-line-history-2001",
+    pages: "physical PDF p. 35",
+    status: "reported"
+  },
+  {
+    date: "1995",
+    category: "generation",
+    title: "Greenhill received its first major turbine upgrade",
+    body: "The Olympus gas generator was overhauled and a cracked power-turbine casing was replaced with a used casing from a similar unit.",
+    sourceId: "np-2027-greenhill-refurbishment",
+    pages: "physical PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1995",
+    category: "generation",
+    title: "Pierre's Brook runner and station-service transformers were replaced",
+    body: "The later plant record reports that the 1995 runner replacement and 1996 stator-winding replacement increased actual peak output to 4,100 kW from the 3,200 kW nameplate rating.",
+    sourceId: "np-2016-pierre-brook",
+    pages: "physical PDF p. 235",
     status: "reported"
   },
   {
@@ -8407,7 +8495,7 @@ export const islandTerminalRecords = [
     code: "STB",
     name: "Stony Brook Terminal Station",
     status: "verified",
-    facts: [["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report and the 2016 operating diagram"], ["2016 split-bus arrangement", "TL204 enters bus B2 through B2L04; TL232 enters bus B1 through B1L32; normally closed disconnect B1B2 connects the bus sections"], ["2016 ring section", "TL231, TL205 and TL235 connect through ring breakers B1L31, L05L31, L05L35 and B1L35"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2016 transformer protection study", "T1 and T2 had no dedicated 230 kV breaker. The study did not recommend the proposed breaker additions."], ["Q1 2024 work", "TL205 protection upgrade completed"], ["Q3 2024 work", "Disconnect switches replaced"], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"], ["2025 completed work", "Disconnects L05L31-1, L05L31-2 and L05L35-1/L05G replaced; TL232 protective relays replaced"]],
+    facts: [["Station history", "commissioned in 1966 as a load bus and converted to a 230 kV ring bus in 1995"], ["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report and the 2016 operating diagram"], ["2016 split-bus arrangement", "TL204 enters bus B2 through B2L04; TL232 enters bus B1 through B1L32; normally closed disconnect B1B2 connects the bus sections"], ["2016 ring section", "TL231, TL205 and TL235 connect through ring breakers B1L31, L05L31, L05L35 and B1L35"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2016 transformer protection study", "T1 and T2 had no dedicated 230 kV breaker. The study did not recommend the proposed breaker additions."], ["Q1 2024 work", "TL205 protection upgrade completed"], ["Q3 2024 work", "Disconnect switches replaced"], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"], ["2025 completed work", "Disconnects L05L31-1, L05L31-2 and L05L35-1/L05G replaced; TL232 protective relays replaced"]],
     diagram: {
       label: "2016 filed operating arrangement / 2018 138 kV routes",
       buses: [
@@ -9795,6 +9883,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1995 GAS-GENERATOR AND POWER-TURBINE WORK",
+        sourceId: "np-2027-greenhill-refurbishment",
+        pages: "physical PDF p. 92",
+        facts: [
+          ["Gas generator", "Olympus unit overhauled"],
+          ["Power turbine", "cracked casing replaced with a used casing from a similar unit"],
+          ["Plant age", "20 years at the time of the work"]
+        ]
+      },
       {
         label: "2001 REPORTED START-UP AND CONTROL WORK",
         sourceId: "np-2001-annual-report",
@@ -21383,6 +21481,15 @@ export const stationProfiles = [
       facts: [["PBK-T1", "generation transformer; 66/6.9 kV; 6.67 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1995 RUNNER AND STATION-SERVICE TRANSFORMER WORK",
+        sourceId: "np-2016-pierre-brook",
+        pages: "physical PDF p. 235",
+        facts: [
+          ["Completed work", "runner and station-service transformers replaced"],
+          ["Output record", "the filing attributes the later 4,100 kW actual peak output to the 1995 runner and 1996 stator-winding replacements"]
+        ]
+      },
       {
         label: "2006 FILED INSTRUMENTATION WORK",
         sourceId: "np-2006-hydro-rehabilitation",
