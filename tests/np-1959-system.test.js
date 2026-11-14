@@ -32,8 +32,8 @@ test("1959 line and feeder record retains topology and construction detail", () 
   assert.match(event.body, /30L.*2\.9 km/);
   assert.match(event.body, /35L.*3\.39 km.*39 single-pole structures/);
   assert.match(event.body, /301L date to 1959 and 1966/);
-  assert.match(event.body, /302L.*26\.6 km.*315 single-pole structures/);
   assert.match(event.body, /BOT-01.*25 kV/);
+  assert.match(event.body, /302L construction year.*1958 and 1959/);
 });
 
 test("69L construction-year conflict remains unresolved", () => {

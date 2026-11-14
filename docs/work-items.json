@@ -1534,6 +1534,18 @@
       "notes": "Later primary records establish Gander, Grand Falls and Rattling Brook substations; 30L, 35L, portions of 301L, 302L and BOT-01; Pitmans Pond generation and civil works; penstock work at Heart's Content and Victoria; the Gallant Street Building; and the April 1959 start of Hydro's historic dry sequence. Rattling Brook records conflict between 1958 commissioning and 1959 construction and publish different plant capacities. The 69L filing conflicts between 1951 and 1959. No named 1959 telecommunications installation was located."
     },
     {
+      "id": "NPREG-070",
+      "title": "Reconcile Newfoundland Power 1958 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1958 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-069"],
+      "completion_evidence": ["research/NP_1958_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1958-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records establish 102L, 41L, 57L, 68L, 15L, 110L and 403L; Rattling Brook plant and civil works; Lookout Brook G3 equipment; dated station equipment at Mobile and Stamp's Lane; and operations buildings at Grand Falls-Windsor and Stephenville. Primary filings conflict between 1958 and 1959 for 302L construction, and between 1986 and 1988 for Newfoundland Power's purchase of the Stephenville building. The available historical-demand table begins in 1967. No named 1958 telecommunications installation was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

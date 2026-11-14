@@ -46,12 +46,13 @@ Sources:
 
 Sections of 301L were built in 1959 and 1966. The filing does not divide the two construction vintages by route segment. The 2003 rebuild covered approximately 38 km and addressed deteriorated poles and conductor damaged by salt, wind and ice exposure.
 
-302L connected Salt Pond and Laurentian at 66 kV. The original 1959 line included approximately 26.6 km and 315 single-pole structures with 4/0 ACSR. A separate 2.4 km section entering Laurentian was built in 1974.
+302L connected Salt Pond and Laurentian at 66 kV. The 2018 filing says the original line was built in 1959 and included approximately 26.6 km and 315 single-pole structures with 4/0 ACSR. A separate 2.4 km section entering Laurentian was built in 1974. The 2002 Burin Peninsula Engineering Review instead says 302L was originally built in 1958 and partly rebuilt in 1969, so the construction year remains unresolved.
 
 Sources:
 
 - [2003 Capital Budget Application, physical PDF pp. 39 to 40](http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf#page=39), SHA-256 `61cb067fdec6595e527879fd00839a7b0c0a988e6ca8778a374bc143ea9b13b1`.
 - [2018 Capital Budget Application, physical PDF p. 244](http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF#page=244), SHA-256 `d5fe2f1847725348d395edbdd0d34d649d6749c4a00eb4babb15fd1924da59ed`.
+- [PUB 10-2A, physical PDF p. 5](http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf#page=5), SHA-256 `ad75cb82626e9a1f33b48a5d828d9d83d8ef64dc457638b91ff2b092257647ba`.
 
 ### BOT-01
 

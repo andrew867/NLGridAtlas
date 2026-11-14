@@ -28,7 +28,7 @@ The expenditure report closes the named programs financially. It does not identi
 
 ## 302L rebuild
 
-The 2018 filing describes 302L as a 66 kV Salt Pond to Laurentian line. Most of the line was built in 1959. A 2.4 km section entering Laurentian was built in 1974. The original line was approximately 26.6 km, used 315 single-pole structures and carried 4/0 ACSR. The filed rebuild replaced the non-standard conductor with 477 ASC, with 11 km planned in 2018 and the remaining 16 km in 2019. Source: 2018 Capital Budget Application, physical PDF p. 244.
+The 2018 filing describes 302L as a 66 kV Salt Pond to Laurentian line. It says most of the line was built in 1959 and a 2.4 km section entering Laurentian was built in 1974. The original line was approximately 26.6 km, used 315 single-pole structures and carried 4/0 ACSR. The filed rebuild replaced the non-standard conductor with 477 ASC, with 11 km planned in 2018 and the remaining 16 km in 2019. A 2002 engineering review instead dates original construction to 1958 and a partial rebuild to 1969, so the original construction year remains unresolved. Sources: 2018 Capital Budget Application, physical PDF p. 244; PUB 10-2A, physical PDF p. 5.
 
 | Work year | Approved | Actual |
 | --- | ---: | ---: |

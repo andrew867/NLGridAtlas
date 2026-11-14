@@ -110,6 +110,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-1958-burin-review",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "PUB 10-2A, Burin Peninsula Engineering Review",
+    topics: ["302L", "Salt Pond", "Laurentian", "66 kV", "Burin Peninsula", "construction year", "date conflict"],
+    pages: "physical PDF p. 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf"
+  },
+  {
     id: "np-2004-grand-beach-status",
     year: 2003,
     organization: "Newfoundland Power",
@@ -3807,6 +3817,26 @@ export const sources = [
     topics: ["32L", "41L", "57L", "Oxen Pond", "Ridge Road", "Carbonear", "Heart's Content", "Bay Roberts", "Upper Island Cove", "Harbour Grace", "66 kV", "transmission line rebuild"],
     pages: "physical PDF pp. 46 to 47 and 275 to 286",
     status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-1958-property-buildings",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Grand Falls-Windsor and Stephenville Operations Buildings",
+    topics: ["Grand Falls-Windsor", "Stephenville", "operations building", "service building", "1958"],
+    pages: "physical PDF pp. 88 and 116",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-1958-stephenville-building",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Stephenville Office Building",
+    topics: ["Stephenville", "Harmon Air Force Base", "operations building", "purchase year", "date conflict"],
+    pages: "physical PDF p. 381",
+    status: "reported",
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
@@ -9728,6 +9758,27 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1958-system-record",
+    scope: "1958 transmission construction, hydroelectric generation and civil works, dated station equipment and utility operations buildings",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2019-central-system", pages: "physical PDF pp. 174 to 175" },
+      { sourceId: "np-2017-transmission-rebuild", pages: "physical PDF pp. 278 to 279" },
+      { sourceId: "np-2014-transmission-lines", pages: "physical PDF p. 312" },
+      { sourceId: "np-2015-transmission-lines", pages: "physical PDF p. 554" },
+      { sourceId: "np-2007-capital", pages: "physical PDF pp. 331, 349 and 363" },
+      { sourceId: "np-2004-transmission-rebuild", pages: "physical PDF p. 392" },
+      { sourceId: "np-1958-burin-review", pages: "physical PDF p. 5" },
+      { sourceId: "np-2018-302l", pages: "physical PDF p. 244" },
+      { sourceId: "np-1959-rattling-brook-plant", pages: "physical PDF p. 50" },
+      { sourceId: "np-2010-lookout-brook", pages: "physical PDF pp. 184 and 186" },
+      { sourceId: "np-2008-mobile-substation", pages: "physical PDF p. 174" },
+      { sourceId: "np-2004-rebuild-substations", pages: "physical PDF p. 338" },
+      { sourceId: "np-1958-property-buildings", pages: "physical PDF pp. 88 and 116" },
+      { sourceId: "np-1958-stephenville-building", pages: "physical PDF p. 381" }
+    ]
+  },
+  {
     id: "np-1959-system-record",
     scope: "1959 station construction, transmission and distribution lines, hydroelectric plant and civil works, an operations building and the start of Hydro's historic dry sequence",
     status: "unresolved",
@@ -10392,6 +10443,51 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1958",
+    category: "network",
+    title: "New 66 kV corridors extended the central, Avalon and west-coast systems",
+    body: "102L ran approximately 61 km from Rattling Brook through Notre Dame Junction and Roycefield to Gander. Avalon records date 41L, 57L, 68L and 15L to 1958, subject to later route-section rebuilds. The 79 km 110L connected Clarenville and Lockston. The radial 403L corridor served Robinsons and Flat Bay and connected Lookout Brook generation to the main grid.",
+    sourceId: "np-2019-central-system",
+    pages: "physical PDF pp. 174 to 175; 41L and 57L physical PDF pp. 278 to 279; 68L physical PDF p. 312; 15L physical PDF p. 554; 110L physical PDF p. 331; 403L physical PDF p. 392",
+    status: "reported"
+  },
+  {
+    date: "1958 or 1959",
+    category: "network",
+    title: "Newfoundland Power records disagree on the 302L construction year",
+    body: "The 2002 Burin Peninsula Engineering Review says 302L was originally built in 1958 and partly rebuilt in 1969. The 2018 rebuild filing says the original Salt Pond to Laurentian line was built in 1959, apart from 2.4 km entering Laurentian that was built in 1974.",
+    sourceId: "np-1958-burin-review",
+    pages: "physical PDF p. 5; compare 2018 Capital physical PDF p. 244",
+    status: "unresolved"
+  },
+  {
+    date: "1958",
+    category: "generation",
+    title: "Rattling Brook and Lookout Brook generation records date to 1958",
+    body: "Rattling Brook entered service December 16 with two vertical Francis turbine-generators. Amy's canal and control gate were installed in 1958, and the 107.35 m Rattling Lake stoplog spillway was commissioned that year. At Lookout Brook, G3, its governor and its original switchgear date to 1958.",
+    sourceId: "np-1959-rattling-brook-plant",
+    pages: "physical PDF p. 50; Rattling Brook civil works physical PDF pp. 349 and 363; Lookout Brook physical PDF pp. 184 and 186",
+    status: "reported"
+  },
+  {
+    date: "1958",
+    category: "equipment",
+    title: "Mobile and Stamp's Lane retained 1958 station equipment into later rebuild programs",
+    body: "The Mobile station record dates its 66 kV potential transformers to 1958. The oil-insulated cables supplying Stamp's Lane transformers SLA-T1 and SLA-T2 were also installed in 1958; leaking terminations and cracked cable bodies led to their filed replacement in 2004.",
+    sourceId: "np-2008-mobile-substation",
+    pages: "physical PDF p. 174; Stamp's Lane physical PDF p. 338",
+    status: "reported"
+  },
+  {
+    date: "1958",
+    category: "operations",
+    title: "Grand Falls-Windsor and Stephenville operations buildings were constructed",
+    body: "The Grand Falls-Windsor pre-engineered steel service building was constructed in 1958. The masonry and steel Stephenville building was constructed at Harmon Air Force Base in 1958. Later filings disagree on Newfoundland Power's purchase year, giving 1986 and 1988.",
+    sourceId: "np-1958-property-buildings",
+    pages: "physical PDF pp. 88 and 116; compare 2017 Capital physical PDF p. 381",
+    status: "unresolved"
+  },
+  {
     date: "1959",
     category: "station",
     title: "Gander, Grand Falls and Rattling Brook substations were built",
@@ -10413,7 +10509,7 @@ export const timeline = [
     date: "1959",
     category: "network",
     title: "New 66 kV corridors and a long rural feeder entered the system record",
-    body: "30L connected Ridge Road and King's Bridge over 2.9 km. The original 35L section between Oxen Pond and Kenmount included 3.39 km and 39 single-pole structures. Portions of 301L date to 1959 and 1966. The original 302L Salt Pond to Laurentian line included approximately 26.6 km and 315 single-pole structures. BOT-01 began as a 25 kV feeder in the Botwood area.",
+    body: "30L connected Ridge Road and King's Bridge over 2.9 km. The original 35L section between Oxen Pond and Kenmount included 3.39 km and 39 single-pole structures. Portions of 301L date to 1959 and 1966. BOT-01 began as a 25 kV feeder in the Botwood area. The 302L construction year is listed separately because primary records disagree between 1958 and 1959.",
     sourceId: "np-2016-30l",
     pages: "physical PDF p. 316; 35L physical PDF p. 311; 301L physical PDF pp. 39 to 40; 302L physical PDF p. 244; BOT-01 physical PDF p. 393",
     status: "reported"
@@ -21697,12 +21793,21 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "1958 / 1959 302L CONSTRUCTION-YEAR CONFLICT",
+        sourceId: "np-1958-burin-review",
+        pages: "physical PDF p. 5; compare 2018 Capital physical PDF p. 244",
+        facts: [
+          ["2002 engineering review", "302L originally built in 1958 and partly rebuilt in 1969"],
+          ["2018 rebuild filing", "original line built in 1959, with 2.4 km entering Laurentian built in 1974"]
+        ]
+      },
+      {
         label: "2018 TO 2019 302L REBUILD",
         sourceId: "np-2018-302l",
         pages: "physical PDF p. 244",
         facts: [
           ["1974 section", "2.4 km entering Laurentian"],
-          ["Original line", "66 kV; approximately 26.6 km of 1959 construction and 315 single-pole structures remained in the 2017 filing"],
+          ["Original line in 2018 filing", "66 kV; approximately 26.6 km of 1959 construction and 315 single-pole structures remained"],
           ["Filed rebuild", "11 km in 2018 and the remaining 16 km in 2019; replace non-standard 4/0 ACSR with 477 ASC"]
         ]
       },
@@ -23178,12 +23283,21 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "1958 / 1959 302L CONSTRUCTION-YEAR CONFLICT",
+        sourceId: "np-1958-burin-review",
+        pages: "physical PDF p. 5; compare 2018 Capital physical PDF p. 244",
+        facts: [
+          ["2002 engineering review", "302L originally built in 1958 and partly rebuilt in 1969"],
+          ["2018 rebuild filing", "original line built in 1959, with 2.4 km entering Laurentian built in 1974"]
+        ]
+      },
+      {
         label: "2018 TO 2019 302L REBUILD",
         sourceId: "np-2018-302l",
         pages: "physical PDF p. 244",
         facts: [
           ["1974 section", "2.4 km entering Laurentian"],
-          ["Original line", "66 kV; approximately 26.6 km of 1959 construction and 315 single-pole structures remained in the 2017 filing"],
+          ["Original line in 2018 filing", "66 kV; approximately 26.6 km of 1959 construction and 315 single-pole structures remained"],
           ["Filed rebuild", "11 km in 2018 and the remaining 16 km in 2019; replace non-standard 4/0 ACSR with 477 ASC"]
         ]
       },
