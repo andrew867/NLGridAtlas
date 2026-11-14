@@ -520,6 +520,216 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1985-capital",
+    year: 1991,
+    organization: "Newfoundland Power",
+    title: "CA-NP-146 Attachment B, Capital Expenditures Since 1984",
+    topics: ["1985", "capital expenditure"],
+    pages: "physical PDF p. 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf"
+  },
+  {
+    id: "nlh-1985-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1985", "Newfoundland Power peak demand", "Island peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1985-planning-forecast",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-295, 1981 Island Supply Planning Table",
+    topics: ["1985", "coincident peak demand", "installed capability", "LOLP", "energy balance", "forecast"],
+    pages: "physical PDF p. 8",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf"
+  },
+  {
+    id: "np-1985-operating-statistics",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "CA-NP-076, Historical Operating and Financial Statistics",
+    topics: ["1985", "energy purchased", "generation", "sales", "customers", "capital expenditure"],
+    pages: "physical PDF pp. 19 and 24",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022GRA/responses/CA-NP-076.PDF"
+  },
+  {
+    id: "nlh-1985-cat-arm",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2015 Capital Budget Application, Cat Arm Station-Service System",
+    topics: ["1985", "Cat Arm", "commissioning", "Pelton units", "station service"],
+    pages: "physical PDF p. 6",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NLH2015Capital/files/application/NLH-2015-Capital-Budget-Application-Volume-II-2014-08-01.PDF"
+  },
+  {
+    id: "nlh-1985-hardwoods-diesel",
+    year: 1998,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-174, Hardwoods Emergency Diesel History",
+    topics: ["1985", "Hardwoods", "emergency diesel", "station service"],
+    pages: "physical PDF p. 128",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/rfi/PUB-174.pdf"
+  },
+  {
+    id: "nlh-1985-hardwoods-t5",
+    year: 2015,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-161, Island Transformer Register",
+    topics: ["1985", "Hardwoods", "T5", "gas turbine", "75 MVA"],
+    pages: "physical PDF p. 70",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-161.pdf"
+  },
+  {
+    id: "nlh-1985-plant-work",
+    year: 1998,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-174, Holyrood and Stephenville Equipment Histories",
+    topics: ["1985", "Holyrood", "Unit 3", "stator wedges", "Stephenville", "exciter"],
+    pages: "physical PDF pp. 54, 79 and 256",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/rfi/PUB-174.pdf"
+  },
+  {
+    id: "nlh-1985-bay-despoir-surge-tank",
+    year: 2023,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2024 Capital Budget Application, Bay d'Espoir Surge Tank 1 History",
+    topics: ["1985", "Bay d'Espoir", "Surge Tank 1", "coating"],
+    pages: "physical PDF p. 699",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2024/NLH2024Capital/app/From%20NLH%20-%202024%20Capital%20Budget%20Application%20-%202023-07-12.PDF"
+  },
+  {
+    id: "nlh-1985-dc-chargers",
+    year: 2007,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2008 Capital Budget Application, Station Battery-Charger Register",
+    topics: ["1985", "Holyrood", "Massey Drive", "battery charger", "DC control power"],
+    pages: "physical PDF p. 421",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2008Capital/files/application/NLH2008ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1985-vhf",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "PUB-69NP, Mobile Radio and Tower Inventory",
+    topics: ["1985", "VHF", "Motorola MCX-100", "Sandy Brook", "radio tower"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/PUB-69NP.pdf"
+  },
+  {
+    id: "np-1985-uhf-link",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Budget Application, Rattling Brook to Sandy Brook UHF Link",
+    topics: ["1985", "UHF", "Rattling Brook", "Sandy Brook", "voice", "remote control", "monitoring"],
+    pages: "physical PDF p. 74",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
+  },
+  {
+    id: "np-1985-tors-cove-valve",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Tors Cove Main Inlet Valve History",
+    topics: ["1985", "Tors Cove", "G3", "main inlet valve", "butterfly valve"],
+    pages: "physical PDF p. 209",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-1985-new-chelsea",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, New Chelsea Plant History",
+    topics: ["1985", "New Chelsea", "wicket gates", "linkages"],
+    pages: "physical PDF p. 213",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1985-pierres-brook",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Pierre's Brook Ventilation History",
+    topics: ["1985", "Pierre's Brook", "ventilation", "fans", "louvers"],
+    pages: "physical PDF p. 251",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
+    id: "np-1985-port-union-civil",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Port Union Hydroelectric Development Record",
+    topics: ["1985", "Port Union", "Whirl Pond", "Long Pond", "Wells Pond", "dam", "outlet"],
+    pages: "physical PDF p. 145",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1985-glenwood",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Glenwood Substation Structure Register",
+    topics: ["1985", "Glenwood", "138 kV", "25 kV", "wood structures", "bus"],
+    pages: "physical PDF p. 198",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "nlh-1985-avalon-poles",
+    year: 2004,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2005 Capital Budget Application, Avalon Pole Inspection History",
+    topics: ["1985", "TL201", "TL203", "TL218", "TL236", "pole inspection", "decay"],
+    pages: "physical PDF p. 263",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2005cap/files/applic/hydro2005CapBudComplete.pdf"
+  },
+  {
+    id: "nlh-1985-corner-brook-frequency-control",
+    year: 2013,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-NLH-097, Corner Brook Frequency Converter Assigned Assets",
+    topics: ["1985", "Corner Brook", "frequency converter", "control", "metering", "relaying"],
+    pages: "physical PDF p. 19",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/IC-NLH-097.PDF"
+  },
+  {
+    id: "nlh-1985-rsp",
+    year: 2010,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 25(2010), Rate Stabilization Plan History",
+    topics: ["1985", "Rate Stabilization Plan", "Holyrood fuel", "hydraulic production", "load variance"],
+    pages: "physical PDF p. 5",
+    status: "verified",
+    url: "http://www.pub.nl.ca/PU/orders/2010/pu25-2010.pdf"
+  },
+  {
+    id: "np-1985-tors-cove-penstock-conflict",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Tors Cove Penstock History",
+    topics: ["1985", "1986", "Tors Cove", "penstock", "date conflict"],
+    pages: "physical PDF p. 354",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
     id: "np-1986-capital",
     year: 1991,
     organization: "Newfoundland Power",
@@ -7508,6 +7718,17 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1985-system-record",
+    scope: "1985 actual demand, energy, sales, customer and capital records, plus the 1981 planning case",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1985-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-1985-operating-statistics", pages: "physical PDF p. 24" },
+      { sourceId: "np-1985-planning-forecast", pages: "physical PDF p. 8" },
+      { sourceId: "np-1985-capital", pages: "physical PDF p. 9" }
+    ]
+  },
+  {
     id: "np-1986-system-load-capital",
     scope: "1986 actual peak-demand records, 1981 planning forecast and Newfoundland Power capital expenditure",
     status: "unresolved",
@@ -7704,12 +7925,165 @@ export const timeline = [
     status: "reported"
   },
   {
-    date: "1986",
+    date: "1985",
     category: "station",
     title: "Holyrood Unit 3 gained synchronous-condenser capability",
     body: "The retrofit added a pony motor, a synchro-self-shifting clutch, controls, and auxiliaries. The generator rotor is decoupled from the steam turbine before synchronous-condenser operation.",
-    sourceId: "nlh-2020-holyrood-unit3",
-    pages: "physical PDF p. 136; project p. 2",
+    sourceId: "nlh-2011-holyrood-sc-upgrade",
+    pages: "physical PDF p. 814; project p. 7",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "network",
+    title: "Actual capital expenditure was $32.990 million",
+    body: "The historical capital table reports Newfoundland Power's annual expenditure as $32,990,000. A later operating-statistics table reports $33,117,000.",
+    sourceId: "np-1985-capital",
+    pages: "physical PDF p. 9; compare CA-NP-076 physical PDF p. 24",
+    status: "unresolved"
+  },
+  {
+    date: "1985",
+    category: "load",
+    title: "The historical demand table reports a 1,180 MW Island transmission peak",
+    body: "The same table reports Newfoundland Power peak demand of 825.6 MW, Hydro rural peak demand of 48.4 MW, and Hydro system peak demand of 1,009 MW.",
+    sourceId: "nlh-1985-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1985 planning case",
+    category: "load",
+    title: "A 1981 planning table projected a 1,487 MW coincident peak",
+    body: "The table used 1,600 MW installed capability, a 1.37 loss-of-load-probability index, 7,745 GWh system energy requirement, 7,490 GWh firm energy capability, and a 255 GWh deficit for its 1985 case.",
+    sourceId: "np-1985-planning-forecast",
+    pages: "physical PDF p. 8",
+    status: "proposed"
+  },
+  {
+    date: "1985",
+    category: "load",
+    title: "Newfoundland Power supplied 3,531 GWh",
+    body: "The operating table reports 3,204 GWh purchased, 327 GWh generated, 3,331 GWh sold, and 172,119 customers at year end.",
+    sourceId: "np-1985-operating-statistics",
+    pages: "physical PDF p. 24",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "generation",
+    title: "Cat Arm entered service at 127 MW",
+    body: "The plant commissioned two 63.5 MW Pelton turbine-generator units. Its station-service system could be supplied from either unit, the Coney Arm distribution feed, or the standby diesel.",
+    sourceId: "nlh-1985-cat-arm",
+    pages: "physical PDF p. 6",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "station",
+    title: "Hardwoods added T5 and an emergency diesel",
+    body: "The transformer register dates the 75 MVA gas-turbine step-up transformer to 1985. A separate equipment history dates the terminal's emergency diesel to the same year.",
+    sourceId: "nlh-1985-hardwoods-t5",
+    pages: "physical PDF p. 70; compare PUB-174 physical PDF p. 128",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "generation",
+    title: "Holyrood rewedged the Unit 3 stator",
+    body: "The later plant condition assessment records the stator-wedge work in the Unit 3 generator history.",
+    sourceId: "nlh-1985-plant-work",
+    pages: "physical PDF p. 256",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "generation",
+    title: "Bay d'Espoir refurbished the Surge Tank 1 coating",
+    body: "The later civil-asset history records interior coating refurbishment in 1985.",
+    sourceId: "nlh-1985-bay-despoir-surge-tank",
+    pages: "physical PDF p. 699",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "controls",
+    title: "Holyrood and Massey Drive installed DC battery chargers",
+    body: "The register lists one 125 V, 30 A Saft Nife charger at Holyrood and two 125 V, 20 A Cigentic chargers at Massey Drive.",
+    sourceId: "nlh-1985-dc-chargers",
+    pages: "physical PDF p. 421",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "telecommunications",
+    title: "Newfoundland Power expanded its VHF and UHF systems",
+    body: "The company purchased Motorola MCX-100 VHF mobile units, installed the Sandy Brook VHF tower, and placed a UHF voice and remote-control link between Rattling Brook and Sandy Brook.",
+    sourceId: "np-1985-vhf",
+    pages: "physical PDF p. 1; compare 2003 Capital Budget Application physical PDF p. 74",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "generation",
+    title: "Tors Cove replaced the G3 main inlet valve",
+    body: "The project replaced the original manual valve with a 42-inch electrically actuated butterfly valve.",
+    sourceId: "np-1985-tors-cove-valve",
+    pages: "physical PDF p. 209",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "generation",
+    title: "New Chelsea replaced wicket gates and linkages",
+    body: "The later plant history dates the generating-unit wicket-gate and linkage replacement to 1985.",
+    sourceId: "np-1985-new-chelsea",
+    pages: "physical PDF p. 213",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "generation",
+    title: "Pierre's Brook installed powerhouse ventilation equipment",
+    body: "The later plant history dates the intake fans, exhaust fans, and louvers to 1985.",
+    sourceId: "np-1985-pierres-brook",
+    pages: "physical PDF p. 251",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "generation",
+    title: "Port Union rebuilt three water-control structures",
+    body: "Whirl Pond dam and its gate section were rebuilt; Long Pond dam was rebuilt; and the Wells Pond dam and timber gate were repaired.",
+    sourceId: "np-1985-port-union-civil",
+    pages: "physical PDF p. 145",
+    status: "reported"
+  },
+  {
+    date: "1985",
+    category: "station",
+    title: "Glenwood installed new wood bus structures",
+    body: "The asset register dates the existing 138 kV and 25 kV wood structures and buses to 1985. The station itself was built in 1968.",
+    sourceId: "np-1985-glenwood",
+    pages: "physical PDF p. 198",
+    status: "reported"
+  },
+  {
+    date: "summer 1985",
+    category: "network",
+    title: "Hydro inspected the Avalon 230 kV pole lines",
+    body: "The post-storm program covered TL201, TL203, TL218, and TL236. It rejected no poles, but found incipient decay and recommended treatment.",
+    sourceId: "nlh-1985-avalon-poles",
+    pages: "physical PDF p. 263",
+    status: "reported"
+  },
+  {
+    date: "November 8, 1985",
+    category: "regulation",
+    title: "The Board recommended the Rate Stabilization Plan",
+    body: "Government accepted the recommendation. The plan began January 1, 1986 and replaced the Water Equalization and Fuel Adjustment Charge.",
+    sourceId: "nlh-1985-rsp",
+    pages: "physical PDF p. 5",
     status: "verified"
   },
   {
@@ -7875,13 +8249,13 @@ export const timeline = [
     status: "reported"
   },
   {
-    date: "1986",
-    category: "generation",
+    date: "1985 or 1986",
+    category: "unresolved",
     title: "Tors Cove replaced its woodstave penstock",
-    body: "The replacement comprised a 591 m section at 2,743 mm diameter and a 113 m section at 2,438 mm diameter.",
-    sourceId: "np-1986-hydro-civil",
-    pages: "physical PDF p. 240",
-    status: "reported"
+    body: "The replacement comprised a 591 m section at 2,743 mm diameter and a 113 m section at 2,438 mm diameter. A 2013 development record dates it to 1986; the 2015 engineering assessment dates it to 1985.",
+    sourceId: "np-1985-tors-cove-penstock-conflict",
+    pages: "physical PDF p. 354; compare CA-NP-036 physical PDF p. 240",
+    status: "unresolved"
   },
   {
     date: "1986",
@@ -9793,8 +10167,8 @@ export const components = {
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
     summary: "Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A later project history dates the B1B2 addition to the 1992 T4 project. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
-    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["1992 terminal work", "T4 and 230 kV bus-tie breaker added"], ["T5", "45/60/75 MVA, 66/13.8 kV"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["1992 gas-turbine work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 gas-turbine work", "End B engine overhauled; both air-start compressors, air lines, valves and the control panel replaced"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
-    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("nlh-1992-hardwoods-bus-tie", "physical PDF p. 16"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
+    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["1992 terminal work", "T4 and 230 kV bus-tie breaker added"], ["T5", "45/60/75 MVA, 66/13.8 kV; transformer register dates it to 1985"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["1985 station service", "Emergency diesel added"], ["1992 gas-turbine work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 gas-turbine work", "End B engine overhauled; both air-start compressors, air lines, valves and the control panel replaced"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
+    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("nlh-1992-hardwoods-bus-tie", "physical PDF p. 16"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1985-hardwoods-t5", "physical PDF p. 70"), sourceRef("nlh-1985-hardwoods-diesel", "physical PDF p. 128"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -9835,8 +10209,8 @@ export const components = {
   "hwd-g1": {
     diagram: "hwd", status: "verified", code: "HWD / G1 AND T5", title: "Hardwoods generator branch",
     summary: "The 2013 alternative one-line connects G1 to the 66 kV bus through T5. The 2026 loop study models HWD-G1 at 25 MW.",
-    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["1988 turbine work", "Curtiss-Wright power-turbine casings replaced at Hardwoods and Stephenville; approximately $4 million combined"], ["1992 stack work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
-    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1988-gas-turbine-casings", "physical PDF p. 166"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["T5 register date", "1985"], ["1988 turbine work", "Curtiss-Wright power-turbine casings replaced at Hardwoods and Stephenville; approximately $4 million combined"], ["1992 stack work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1985-hardwoods-t5", "physical PDF p. 70"), sourceRef("nlh-1988-gas-turbine-casings", "physical PDF p. 166"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
   "hwd-b1b2": {
     diagram: "hwd", status: "verified", code: "HWD / B1B2", title: "Hardwoods 230 kV bus tie",
@@ -9950,7 +10324,7 @@ export const components = {
   },
   "hrd-g3": {
     diagram: "hrd", status: "verified", code: "HRD / UNIT 3", title: "Holyrood Unit 3 generator",
-    summary: "Unit 3 has had reversible synchronous-condenser capability since 1986. The starter drives the generator through a gearbox and variable-fluid drive; the SSS clutch disconnects the starter after the generator breaker closes at synchronous speed. A new thrust bearing was installed in 2012. Hydro's June and September 2026 filings say the post-steam requirement and Unit 3 role remain under assessment.",
+    summary: "Unit 3 has had reversible synchronous-condenser capability since 1985. The starter drives the generator through a gearbox and variable-fluid drive; the SSS clutch disconnects the starter after the generator breaker closes at synchronous speed. A new thrust bearing was installed in 2012. Hydro's June and September 2026 filings say the post-steam requirement and Unit 3 role remain under assessment.",
     data: [["Generator", "185 MVA, 0.85 power factor"], ["Stator", "16 kV, hydrogen cooled"], ["Rotor", "3,600 rpm"], ["Synchronous condenser", "Approximately 70 MVAR in the 2020 filing"], ["Starting equipment", "Induction pony motor, speed-increasing gearbox, variable-fluid drive, and SSS clutch"], ["Starting sequence", "Pony motor accelerates the generator; DC field is applied; the generator breaker closes at synchronous speed; the SSS clutch disengages the pony motor and gearbox"], ["2012 work", "New thrust bearing installed for synchronous-condenser operation"], ["2012 project closeout", "$925,800 total expenditure; no carryover into 2013"], ["2020 return to generation", "Filed procedure took five to seven days, including H2, CO2, and air purges"], ["Wood proposal", "Retain H2 and recouple in three 10-hour days; presented as a recommendation"], ["2016 work", "Rotor rewind"], ["2021 actual expenditure", "$7.2857 million for the stator-rewind project"], ["April 2022 operation", "373 hours as a synchronous condenser"], ["2024 planning case", "Spring 2030 permanent synchronous-condensing operation"], ["March 2025 capital model", "Assumed synchronous-condenser operation beyond 2035; no general generator condition-monitoring instrumentation was installed"], ["Synchronous-condenser support", "Exciter and transformer, cooling water, H2, generator lube-oil, and seal-oil systems require inspection or refurbishment"], ["July 2026 operation", "0 generating hours; 697 synchronous-condensing hours"], ["June 2026 review", "Hydro was assessing the continued requirement and effectiveness of Unit 3 synchronous-condensing capability"], ["September 2026 position", "Post-steam Unit 3 operation remained a planning assumption; the RRA Study Review was evaluating the required Avalon synchronous-condensing support"], ["Alternatives under review", "Combustion-turbine synchronous operation, stand-alone synchronous condensers, STATCOMs, and grid-forming inverters"]],
     sources: [sourceRef("nlh-2011-holyrood-sc-upgrade", "physical PDF pp. 809, 812 and 820; project pp. 2, 5 and 13"), sourceRef("gra-2013-v2", "physical PDF p. 428"), sourceRef("nlh-2016-holyrood-unit3-history", "physical PDF p. 558; project p. 4"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2020-units12-plan", "physical PDF p. 1"), sourceRef("nlh-2020-holyrood-backup", "physical PDF pp. 3 and 24"), sourceRef("nlh-2021-capex", "physical PDF p. 71"), sourceRef("nlh-2022-april-energy", "physical PDF pp. 7 to 8"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 69 and 648"), sourceRef("nlh-2024-rra", "physical PDF pp. 100 and 182"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 29 and 31"), sourceRef("nlh-2026-holyrood-overview", "physical PDF p. 170"), sourceRef("nlh-2026-reactive-options", "physical PDF p. 1"), sourceRef("nlh-2026-july-energy", "physical PDF p. 10"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 13"), sourceRef("nlh-2027-ca-nlh-058", "physical PDF p. 2")]
   },
@@ -11310,7 +11684,7 @@ export const islandTerminalRecords = [
     code: "MAS",
     name: "Massey Drive Terminal Station",
     status: "verified",
-    facts: [["230 kV arrangement", "T1 is connected to B1; T2 and T3 are connected to B5; normally closed disconnect B1B5 joins the bus sections"], ["230 kV circuits", "TL248 to Deer Lake through B1L48; TL228 to Buchans through B1L28; TL211 to Bottom Brook through B5L11"], ["Customer 66 kV bus B4", "T1 connects through B4T1; L1 runs to Deer Lake Power; L16 and L17 run to the Corner Brook frequency converter"], ["Newfoundland Power 66 kV buses", "B2 carries 352L to Walbournes and 356L to Humber; B3 carries 351L to Walbournes and 357L to Bayview"], ["Bus ties", "B2B3-1 joins the Newfoundland Power sections; B2B4-1 is closed when supplemental capacity assistance is requested"], ["1998 transformer replacement", "One 66.7 MVA, 230/66 kV transformer was replaced by a 125 MVA, 230/66 kV transformer"], ["2025 completed work", "TL211 disconnects B5L11-1 and B5L11-2/L11G were replaced; T1 protective relays were replaced"]],
+    facts: [["230 kV arrangement", "T1 is connected to B1; T2 and T3 are connected to B5; normally closed disconnect B1B5 joins the bus sections"], ["230 kV circuits", "TL248 to Deer Lake through B1L48; TL228 to Buchans through B1L28; TL211 to Bottom Brook through B5L11"], ["Customer 66 kV bus B4", "T1 connects through B4T1; L1 runs to Deer Lake Power; L16 and L17 run to the Corner Brook frequency converter"], ["Newfoundland Power 66 kV buses", "B2 carries 352L to Walbournes and 356L to Humber; B3 carries 351L to Walbournes and 357L to Bayview"], ["Bus ties", "B2B3-1 joins the Newfoundland Power sections; B2B4-1 is closed when supplemental capacity assistance is requested"], ["1985 DC system", "CHG1 and CHG2, 125 V, 20 A Cigentic battery chargers"], ["1998 transformer replacement", "One 66.7 MVA, 230/66 kV transformer was replaced by a 125 MVA, 230/66 kV transformer"], ["2025 completed work", "TL211 disconnects B5L11-1 and B5L11-2/L11G were replaced; T1 protective relays were replaced"]],
     diagram: {
       label: "2013 operating evidence / 2017 disconnect register / 2024 transformer ratings",
       buses: [
@@ -11401,7 +11775,7 @@ export const islandTerminalRecords = [
     code: "CAT",
     name: "Cat Arm Generating Station",
     status: "verified",
-    facts: [["Plant rating", "127 MW"], ["2001 energy capability", "735 GWh"], ["Transmission line", "TL247 to Deer Lake"], ["Q3 2024 work", "Transformer refurbishment and transformer-oil spill containment completed"]],
+    facts: [["Commissioned", "1985; two 63.5 MW Pelton turbine-generator units"], ["Plant rating", "127 MW"], ["2001 energy capability", "735 GWh"], ["Transmission line", "TL247 to Deer Lake"], ["Station service", "Supply available from Unit 1, Unit 2, the Coney Arm distribution feed, or the standby diesel"], ["Q3 2024 work", "Transformer refurbishment and transformer-oil spill containment completed"]],
     diagram: {
       label: "2013 plant rating / filed TL247 connection",
       buses: [{ id: "b1", label: "plant outlet", voltage: "Plant" }],
@@ -11409,7 +11783,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL247", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }],
       generators: [{ label: "Cat Arm", rating: "127 MW", bus: "b1" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 13"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-generation-transmission-2012", "physical PDF p. 1"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35")]
+    sources: [sourceRef("nlh-1985-cat-arm", "physical PDF p. 6"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-2001-generation-exhibit", "physical PDF p. 13"), sourceRef("nlh-system-design-2015", "physical PDF p. 4"), sourceRef("nlh-generation-transmission-2012", "physical PDF p. 1"), sourceRef("nlh-q3-2024-terminal-work", "physical PDF p. 35")]
   },
   {
     code: "HLA",
@@ -14663,6 +15037,12 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1985 DC BATTERY CHARGERS",
+        sourceId: "nlh-1985-dc-chargers",
+        pages: "physical PDF p. 421",
+        facts: [["CHG1 and CHG2", "Cigentic; 125 V; 20 A each; installed in 1985"]]
+      },
+      {
         label: "2016 FILED CORNER BROOK FIBRE RING",
         sourceId: "np-2016-fibre-network",
         pages: "physical PDF pp. 558 to 560",
@@ -17248,6 +17628,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1985 HIGH-VOLTAGE AND LOW-VOLTAGE STRUCTURES",
+        sourceId: "np-1985-glenwood",
+        pages: "physical PDF p. 198",
+        facts: [
+          ["138 kV structure and bus", "Wood construction; installed in 1985"],
+          ["25 kV structure and bus", "Wood construction; installed in 1985"],
+          ["Transformer record", "8.3 MVA, 138/25 kV"]
+        ]
+      },
       {
         label: "2013 FILED REFURBISHMENT AND MODERNIZATION",
         sourceId: "np-2013-glenwood",
@@ -20258,6 +20648,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1985 WATER-CONTROL STRUCTURE WORK",
+        sourceId: "np-1985-port-union-civil",
+        pages: "physical PDF p. 145",
+        facts: [
+          ["Whirl Pond", "Dam and gate section rebuilt"],
+          ["Long Pond", "Dam rebuilt"],
+          ["Wells Pond", "Dam and timber gate repaired"]
+        ]
+      },
       {
         label: "1986 DIESEL ENGINE REFIT",
         sourceId: "np-1986-port-union",
@@ -23414,12 +23814,19 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
-        label: "1986 WOODSTAVE PENSTOCK",
-        sourceId: "np-1986-hydro-civil",
-        pages: "physical PDF p. 240",
+        label: "1985 G3 MAIN INLET VALVE",
+        sourceId: "np-1985-tors-cove-valve",
+        pages: "physical PDF p. 209",
+        facts: [["Completed work", "replaced the original manual valve with a 42-inch electrically actuated butterfly valve"]]
+      },
+      {
+        label: "1985 OR 1986 WOODSTAVE PENSTOCK",
+        sourceId: "np-1985-tors-cove-penstock-conflict",
+        pages: "physical PDF p. 354; compare CA-NP-036 physical PDF p. 240",
         facts: [
           ["Upstream section", "591 m long; 2,743 mm diameter"],
-          ["Downstream section", "113 m long; 2,438 mm diameter"]
+          ["Downstream section", "113 m long; 2,438 mm diameter"],
+          ["Date record", "2015 engineering assessment says rebuilt in 1985; 2013 development record says constructed in 1986"]
         ]
       },
       {
@@ -23771,6 +24178,12 @@ export const stationProfiles = [
       facts: [["PBK-T1", "generation transformer; 66/6.9 kV; 6.67 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1985 POWERHOUSE VENTILATION",
+        sourceId: "np-1985-pierres-brook",
+        pages: "physical PDF p. 251",
+        facts: [["Completed work", "installed intake fans, exhaust fans, and louvers"]]
+      },
       {
         label: "1986 SURGE-CAPACITOR INSTALLATION",
         sourceId: "np-2016-pierre-brook",
@@ -24215,6 +24628,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1985 WICKET GATES AND LINKAGES",
+        sourceId: "np-1985-new-chelsea",
+        pages: "physical PDF p. 213",
+        facts: [["Completed work", "replaced generating-unit wicket gates and linkages"]]
+      },
       {
         label: "1986 REMOTE SCADA CONTROL",
         sourceId: "np-1986-new-chelsea-scada",

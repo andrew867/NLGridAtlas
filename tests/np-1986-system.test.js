@@ -79,14 +79,14 @@ test("1986 station and plant histories remain attached to their assets", () => {
   assert.match(recordText("HCT"), /1986 SURGE-PROTECTION INSTALLATION/);
   assert.match(recordText("PBK"), /1986 SURGE-CAPACITOR INSTALLATION/);
   assert.match(recordText("MOP"), /1986 NEGATIVE-SEQUENCE RELAY/);
-  assert.match(recordText("TCV"), /1986 WOODSTAVE PENSTOCK/);
+  assert.match(recordText("TCV"), /1985 OR 1986 WOODSTAVE PENSTOCK/);
   assert.match(recordText("SBK"), /1986 ISLAND POND DAM REPLACEMENTS/);
 });
 
 test("1986 generation and control timeline covers the verified plant work", () => {
   const titles = timeline.filter((entry) => entry.date === "1986").map((entry) => entry.title).join("\n");
   assert.match(titles, /Holyrood rebuilt the gas-turbine installation/);
-  assert.match(titles, /Holyrood Unit 3 gained synchronous-condenser capability/);
+  assert.doesNotMatch(titles, /Holyrood Unit 3 gained synchronous-condenser capability/);
   assert.match(titles, /Cat Arm installed its station-service PLC/);
   assert.match(titles, /Western Avalon installed a Staticon battery charger/);
   assert.match(titles, /Stephenville installed gas-turbine vibration monitoring/);
