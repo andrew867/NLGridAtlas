@@ -19,11 +19,12 @@ test("Bay d'Espoir Unit 4 and Stage I intake controls retain their 1968 records"
 });
 
 test("1968 Hydro transmission records remain attached", () => {
-  const network = timeline.find((entry) => entry.date === "1968" && /Six 230 kV and 138 kV transmission records/.test(entry.title));
+  const network = timeline.find((entry) => entry.date === "1968" && /Five 230 kV and 138 kV transmission records/.test(entry.title));
   assert.ok(network);
-  for (const circuit of ["TL206", "TL207", "TL214", "TL218", "TL224", "TL237"]) {
+  for (const circuit of ["TL206", "TL207", "TL214", "TL218", "TL237"]) {
     assert.match(network.body, new RegExp(circuit));
   }
+  assert.match(network.body, /TL224 is excluded.*conflict between 1962 and 1968/);
 });
 
 test("55L and 404L records preserve their source distinctions", () => {

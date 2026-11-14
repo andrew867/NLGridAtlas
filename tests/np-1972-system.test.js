@@ -23,7 +23,7 @@ test("1972 station equipment remains attached to the relevant stations", () => {
   assert.match(stationText("BVS"), /built in 1971/);
   assert.match(stationText("BVS"), /1972 STRUCTURE REGISTER/);
   assert.match(stationText("CAT"), /1972 CAT-T1 INSTALLATION/);
-  assert.match(stationText("PUN"), /1972 DIESEL YEAR IN SERVICE/);
+  assert.match(stationText("PUN"), /1962 COMMISSIONING \/ 1972 DEPRECIATION DATE CONFLICT/);
 });
 
 test("Come By Chance keeps all three construction-date records", () => {

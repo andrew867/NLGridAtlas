@@ -46,11 +46,14 @@ IC-NLH-097 Revision 1 gives 1968 as TL214's year built between Doyles and Bottom
 - Physical PDF pages: 7 and 14
 - SHA-256: `7aa32206f8e3b4ebc8cdd9cafce8ddaa6a7cbd1a647950a15b2a57373edc8846`
 
-The 2025 wood-pole inspection plan lists TL224 as a 138 kV line built in 1968.
+The 2025 wood-pole inspection plan lists TL224 as a 138 kV line built in 1968. A 2018 transmission summary and a 2027 inspection table give 1962 instead. A separate replacement table in the same 2027 filing gives 1968. TL224 is therefore not counted as a confirmed 1968 line.
 
 - Source: `http://www.pub.nl.ca/applications/2025/NLH2025Capital/app/From%20NLH%20-%202025%20Capital%20Budget%20Application%20-%202024-08-22%20-%20CORRECTED.PDF`
 - Physical PDF page: 581
 - SHA-256: `9ee071208abb37383c8208b480d58e368ff56f28688cb86a9a40e0b53a38b86c`
+
+- Conflicting 1962 source: `http://www.pub.nl.ca/applications/2018/NLH2018CostofService/rfis/PUB-NLH-008%20-%20Attachment%203.XLSX`, physical PDF p. 16, SHA-256 `0bd1162e5bf97d6767368da48642ee29a300950f7a9e7c1ade1b3bedbc2b6913`.
+- Conflicting 2027 tables: `http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF`, physical PDF pp. 402 and 418, SHA-256 `1ecf95dfb7f0e16a04df8ecc5c8a348b2e8a54b93b10f975e5b0f2915f10a3a9`.
 
 ## Newfoundland Power transmission
 

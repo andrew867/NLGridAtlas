@@ -520,6 +520,76 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1962-transmission-register",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-008 Attachment 3, Transmission-Line Summary",
+    topics: ["1962", "TL224", "TL2303", "Howley", "Indian River", "Churchill Falls", "Wabush", "138 kV", "230 kV", "date conflict"],
+    pages: "physical PDF p. 16",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2018/NLH2018CostofService/rfis/PUB-NLH-008%20-%20Attachment%203.XLSX"
+  },
+  {
+    id: "nlh-1962-tl224-2027-conflict",
+    year: 2026,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2027 Capital Budget Application, TL224 Inspection and Replacement Tables",
+    topics: ["1962", "1968", "TL224", "Howley", "Indian River", "138 kV", "date conflict"],
+    pages: "physical PDF pp. 402 and 418",
+    status: "unresolved",
+    url: "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF"
+  },
+  {
+    id: "np-1962-kings-bridge-structure",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, King's Bridge Station Asset Register",
+    topics: ["1962", "King's Bridge", "66 kV", "steel structure", "bus"],
+    pages: "physical PDF p. 191",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-1962-port-union-diesel",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Port Union Diesel Plant Record",
+    topics: ["1962", "1972", "Port Union", "diesel generation", "Caterpillar", "Canadian General Electric", "date conflict"],
+    pages: "physical PDF pp. 233, 309 and 325",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1962-nwb01",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "CA-37(a), NWB-01 Goobies to North Harbour",
+    topics: ["1962", "NWB-01", "Goobies", "North Harbour", "distribution line", "rebuild"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2037%20(a).pdf"
+  },
+  {
+    id: "nlh-1962-happy-valley-l8",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Happy Valley L8 Upgrade",
+    topics: ["1962", "Happy Valley", "L1", "L8", "25 kV", "distribution line"],
+    pages: "physical PDF p. 317",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1962-ice-storms",
+    year: 2011,
+    organization: "Nalcor Energy",
+    title: "Exhibit 96, Newfoundland and Labrador Weather Chronology",
+    topics: ["1962", "ice storm", "freezing rain", "Avalon", "St. Lawrence", "Gander", "transmission outage", "communications outage"],
+    pages: "physical PDF p. 54",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit96.pdf"
+  },
+  {
     id: "np-1963-32l",
     year: 2016,
     organization: "Newfoundland Power",
@@ -1044,9 +1114,9 @@ export const sources = [
     year: 2024,
     organization: "Newfoundland and Labrador Hydro",
     title: "2025 Capital Budget Application, TL224 Wood-Pole Line Record",
-    topics: ["1968", "TL224", "138 kV", "wood-pole line", "inspection"],
+    topics: ["1962", "1968", "TL224", "138 kV", "wood-pole line", "inspection", "date conflict"],
     pages: "physical PDF p. 581",
-    status: "reported",
+    status: "unresolved",
     url: "http://www.pub.nl.ca/applications/2025/NLH2025Capital/app/From%20NLH%20-%202025%20Capital%20Budget%20Application%20-%202024-08-22%20-%20CORRECTED.PDF"
   },
   {
@@ -1304,9 +1374,9 @@ export const sources = [
     year: 2003,
     organization: "Newfoundland Power",
     title: "2003 General Rate Application, Port Union Diesel Depreciation Record",
-    topics: ["1972", "Port Union", "diesel generation", "year in service", "probable retirement"],
+    topics: ["1962", "1972", "Port Union", "diesel generation", "year in service", "probable retirement", "date conflict"],
     pages: "physical PDF p. 810",
-    status: "reported",
+    status: "unresolved",
     url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/Application/CompleteApplicationRev1.pdf"
   },
   {
@@ -9458,6 +9528,24 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1962-system-record",
+    scope: "1962 transmission and distribution construction, station equipment, hydroelectric generation, diesel generation and ice-storm damage",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2014-transmission-lines", pages: "physical PDF p. 310" },
+      { sourceId: "nlh-1962-transmission-register", pages: "physical PDF p. 16" },
+      { sourceId: "nlh-1962-tl224-2027-conflict", pages: "physical PDF pp. 402 and 418" },
+      { sourceId: "nlh-1968-tl224", pages: "physical PDF p. 581" },
+      { sourceId: "np-1962-kings-bridge-structure", pages: "physical PDF p. 191" },
+      { sourceId: "np-2012-lockston", pages: "physical PDF pp. 278 and 281" },
+      { sourceId: "np-1962-port-union-diesel", pages: "physical PDF pp. 233, 309 and 325" },
+      { sourceId: "np-1972-port-union-diesel", pages: "physical PDF p. 810" },
+      { sourceId: "np-1962-nwb01", pages: "physical PDF p. 1" },
+      { sourceId: "nlh-1962-happy-valley-l8", pages: "physical PDF p. 317" },
+      { sourceId: "nlh-1962-ice-storms", pages: "physical PDF p. 54" }
+    ]
+  },
+  {
     id: "np-1963-system-record",
     scope: "1963 transmission construction, St. John's station construction, Sandy Brook commissioning and original plant electrical equipment",
     status: "reported",
@@ -10051,6 +10139,69 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1962",
+    category: "network",
+    title: "13L and TL2303 date to 1962",
+    body: "The original aerial section of 13L connected St. John's Main and Stamp's Lane at 66 kV. The filed route comprised 0.42 km of underground cable and 2.64 km of aerial line; 1.84 km and 56 original aerial structures remained in 2014. Hydro's line summary dates the 215 km, 230 kV TL2303 between Churchill Falls and Wabush to 1962, with steel structures and Grosbeak conductor.",
+    sourceId: "np-2014-transmission-lines",
+    pages: "physical PDF p. 310; TL2303 physical PDF p. 16",
+    status: "reported"
+  },
+  {
+    date: "1962 or 1968",
+    category: "network",
+    title: "Hydro records conflict on TL224's in-service year",
+    body: "The 2018 transmission summary and a 2027 inspection table date the 57.51 km, 138 kV wood-pole line between Howley and Indian River to 1962. A 2025 inspection plan and a separate table in the same 2027 filing date it to 1968. The 2018 summary identifies Owl conductor.",
+    sourceId: "nlh-1962-transmission-register",
+    pages: "physical PDF p. 16; compare 2027 Capital physical PDF pp. 402 and 418 and 2025 Capital physical PDF p. 581",
+    status: "unresolved"
+  },
+  {
+    date: "1962",
+    category: "station",
+    title: "King's Bridge received a 66 kV steel structure and bus",
+    body: "The station asset register dates one King's Bridge 66 kV high-voltage steel structure and bus to 1962. It does not establish the construction year of the whole station.",
+    sourceId: "np-1962-kings-bridge-structure",
+    pages: "physical PDF p. 191",
+    status: "reported"
+  },
+  {
+    date: "1962",
+    category: "generation",
+    title: "Lockston added its second 1.5 MW unit",
+    body: "The second identical Francis turbine and Canadian General Electric generator, designated G1 in the filing, increased the plant from 1.5 MW to 3.0 MW. Its General Electric exciter and associated original electrical equipment also date to the 1962 installation.",
+    sourceId: "np-2012-lockston",
+    pages: "physical PDF pp. 278 and 281",
+    status: "reported"
+  },
+  {
+    date: "1962 or 1972",
+    category: "generation",
+    title: "Port Union diesel records conflict on its service date",
+    body: "The 2013 plant record says the 500 kW Caterpillar diesel unit was commissioned in 1962 and drove a 625 kVA Canadian General Electric generator. The 2003 depreciation schedule gives 1972 as the facility's year in service. The unit shared substation equipment with the Port Union hydro plant and was no longer operational in the 2010 study.",
+    sourceId: "np-1962-port-union-diesel",
+    pages: "physical PDF pp. 233, 309 and 325; compare 2003 GRA physical PDF p. 810",
+    status: "unresolved"
+  },
+  {
+    date: "1962",
+    category: "distribution",
+    title: "NWB-01 and an older Happy Valley line section date to 1962",
+    body: "NWB-01 was built between Goobies and North Harbour. A later Happy Valley project states that the 25 kV L8 line incorporated part of the older L1 constructed in 1962.",
+    sourceId: "np-1962-nwb01",
+    pages: "physical PDF p. 1; Happy Valley physical PDF p. 317",
+    status: "reported"
+  },
+  {
+    date: "February 7 to 19, 1962",
+    category: "reliability",
+    title: "Two ice storms damaged power and communications systems",
+    body: "The February 7 to 12 storm affected the Avalon Peninsula and St. Lawrence; the chronology reports thousands of power lines down, 500 poles down, a broken transmission line, widespread communications failures and ice up to two inches thick. A February 16 to 19 storm around Gander produced winds above 60 mph, a three-inch glaze, hours-long outages and failure of one mile of transmission line.",
+    sourceId: "nlh-1962-ice-storms",
+    pages: "physical PDF p. 54",
+    status: "reported"
+  },
+  {
     date: "1963",
     category: "network",
     title: "363L, 32L and 105L date to 1963",
@@ -10431,10 +10582,10 @@ export const timeline = [
   {
     date: "1968",
     category: "network",
-    title: "Six 230 kV and 138 kV transmission records date to 1968",
-    body: "Hydro records date TL206, TL207, TL218, TL224 and TL237 to 1968. The assigned-asset register gives 1968 as TL214's year built between Doyles and Bottom Brook.",
+    title: "Five 230 kV and 138 kV transmission records date to 1968",
+    body: "Hydro records date TL206, TL207, TL218 and TL237 to 1968. The assigned-asset register gives 1968 as TL214's year built between Doyles and Bottom Brook. TL224 is excluded from this count because Hydro records conflict between 1962 and 1968.",
     sourceId: "nlh-bde-wav-2012",
-    pages: "physical PDF pp. 11 to 12; compare Exhibit 85 physical PDF pp. 54 to 55, 2025 Capital physical PDF p. 581 and IC-NLH-097 Revision 1 physical PDF pp. 7 and 14",
+    pages: "physical PDF pp. 11 to 12; compare Exhibit 85 physical PDF pp. 54 to 55 and IC-NLH-097 Revision 1 physical PDF pp. 7 and 14",
     status: "reported"
   },
   {
@@ -10696,15 +10847,6 @@ export const timeline = [
     body: "Later registers date Molloy's Lane's 12.47 kV steel structure, Clarkes Pond's 66 kV and 12.47 kV steel structures, Bayview's 66 kV and 12.47 kV steel structures, Islington's 12.47 kV structure, and Catalina transformer CAT-T1 to 1972.",
     sourceId: "np-1978-substation-structures",
     pages: "physical PDF pp. 192, 194 and 200; compare 2017 Capital Budget Application p. 234",
-    status: "reported"
-  },
-  {
-    date: "1972",
-    category: "generation",
-    title: "Port Union diesel year in service",
-    body: "The 2003 depreciation schedule records 1972 as the Port Union diesel facility's year in service and 2005 as its probable retirement year.",
-    sourceId: "np-1972-port-union-diesel",
-    pages: "physical PDF p. 810",
     status: "reported"
   },
   {
@@ -20530,6 +20672,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1962 OR 1968 TL224 IN-SERVICE CONFLICT",
+        sourceId: "nlh-1962-transmission-register",
+        pages: "physical PDF p. 16; compare 2027 Capital physical PDF pp. 402 and 418 and 2025 Capital physical PDF p. 581",
+        facts: [
+          ["Route", "Howley to Indian River; 138 kV; 57.51 km; wood structures; Owl conductor"],
+          ["1962 records", "2018 transmission summary and 2027 inspection table"],
+          ["1968 records", "2025 inspection plan and 2027 replacement table"]
+        ]
+      },
+      {
         label: "1978 TL243 CONNECTION",
         sourceId: "nlh-1978-tl243",
         pages: "physical PDF p. 53",
@@ -24115,6 +24267,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1962 NWB-01 ORIGINAL LINE",
+        sourceId: "np-1962-nwb01",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Route", "Goobies to North Harbour"],
+          ["Original construction", "built in 1962"],
+          ["Later work", "one section rebuilt in 2000; Aliant rebuilt a second section; the 2003 project attached the feeder to the newer section and removed the old duplicate line"]
+        ]
+      },
+      {
         label: "1993 PROTECTION INSTALLATION",
         sourceId: "np-2025-northwest-brook",
         pages: "physical PDF p. 406",
@@ -24237,6 +24399,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1962 G1 ADDITION AND ORIGINAL ELECTRICAL EQUIPMENT",
+        sourceId: "np-2012-lockston",
+        pages: "physical PDF pp. 278 and 281",
+        facts: [
+          ["Generating unit", "second 1.5 MW unit added in 1962, increasing plant capacity from 1.5 MW to 3.0 MW; designated G1 in the filing"],
+          ["Prime mover and generator", "horizontal 2,000 hp Gilkes Francis turbine and Canadian General Electric generator"],
+          ["G1 exciter", "General Electric; original 1962 equipment"],
+          ["Shared original equipment", "Brown Boveri AB2/1 voltage regulators, GE AKF-1 field breakers, generator breakers, station-service breaker, forebay-line breaker and instrument transformers dated to the 1956 and 1962 installations"]
+        ]
+      },
       {
         label: "1973 66 KV STRUCTURE",
         sourceId: "np-2025-lockston",
@@ -25265,10 +25438,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
-        label: "1972 DIESEL YEAR IN SERVICE",
-        sourceId: "np-1972-port-union-diesel",
-        pages: "physical PDF p. 810",
-        facts: [["Depreciation record", "year in service 1972"], ["Probable retirement", "2005"], ["Recorded life span", "33 years"]]
+        label: "1962 COMMISSIONING / 1972 DEPRECIATION DATE CONFLICT",
+        sourceId: "np-1962-port-union-diesel",
+        pages: "physical PDF pp. 233, 309 and 325; compare 2003 GRA physical PDF p. 810",
+        facts: [
+          ["2013 plant record", "commissioned in 1962; 500 kW Caterpillar engine; 625 kVA Canadian General Electric generator; 9,100 litre No. 2 fuel tank"],
+          ["Plant arrangement", "diesel unit located in the hydro powerhouse and sharing common substation equipment with the hydro plant"],
+          ["2010 study condition", "unit no longer operational; retirement planning underway"],
+          ["2003 depreciation record", "year in service 1972; probable retirement 2005; recorded life span 33 years"]
+        ]
       },
       {
         label: "1984 WOODSTAVE PENSTOCK",
@@ -26784,6 +26962,16 @@ export const stationProfiles = [
       facts: [["KBR-T3/T4", "KBR-09, KBR-11, KBR-12 and KBR-13; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "1962 66 KV HIGH-VOLTAGE STRUCTURE",
+        sourceId: "np-1962-kings-bridge-structure",
+        pages: "physical PDF p. 191",
+        facts: [
+          ["Station capacity in the register", "45 MVA"],
+          ["Dated asset", "one 66 kV high-voltage steel structure and bus installed in 1962"],
+          ["Separate later assets", "another 66 kV high-voltage steel structure and the 12.47 kV low-voltage switchgear are dated 1977; 4.16 kV low-voltage switchgear is dated 1959"]
+        ]
+      },
       {
         label: "2008 FILED STATION MODERNIZATION",
         sourceId: "np-2008-station-modernization",
