@@ -1654,6 +1654,18 @@
       "notes": "Primary records establish the October 21 amendment to the 1946 Mobile River watershed lease, six 1949 Mobile property deeds, one Southside Road acquisition with no stated purpose, and establishment of the Board of Commissioners of Public Utilities with general supervisory and rate authority. No named 1949 line, station, transformer, generating unit, telecommunications, demand, reliability, storm or outage record was located."
     },
     {
+      "id": "NPREG-080",
+      "title": "Reconcile 1948 system, property and hydrometric records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1948 station, dam, property, hydrometric, corporate, transmission, generation, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-079"],
+      "completion_evidence": ["research/NP_1948_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1948-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records date King's Bridge Substation construction and the Lawn Forebay Dam downstream concrete refacing to 1948. The utility property schedule records one Topsail Road deed in June 1948. Visual review corrected an OCR error that read the Heart's Content deed as 1948; the page shows 1946. A Muskrat Falls project study dates Upper Muskrat Falls hydrometric observations to 1948 and continuous recording to 1953. A filed Moody's history reports that Newfoundland Light and Power became an electricity-only company in 1948. No named 1948 line, transformer, generating unit, telecommunications, demand, reliability, storm or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

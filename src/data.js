@@ -550,6 +550,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1948-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1948 Topsail Road Property Record",
+    topics: ["1948", "Topsail Road", "United Towns Electric Company", "property", "land acquisition"],
+    pages: "physical PDF p. 152",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
+    id: "np-1948-lawn-dam",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Lawn Forebay Dam History",
+    topics: ["1948", "Lawn", "forebay dam", "concrete", "dam rehabilitation"],
+    pages: "physical PDF p. 185",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "nlh-1948-muskrat-hydrometry",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Muskrat Falls Project Exhibit 50, Lower Churchill Flow Record",
+    topics: ["1948", "Upper Muskrat Falls", "Churchill River", "hydrometric station", "natural flow"],
+    pages: "physical PDF p. 32",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit50.pdf"
+  },
+  {
+    id: "fortis-1948-electricity-company",
+    year: 2019,
+    organization: "Moody's Investors Service",
+    title: "CA-NP-110 Attachment T, Fortis Corporate History",
+    topics: ["1948", "Newfoundland Light and Power", "electric utility", "corporate history"],
+    pages: "physical PDF p. 220",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019GRA/rfi/CA-NP-110.PDF"
+  },
+  {
     id: "np-1949-mobile-water-rights",
     year: 2012,
     organization: "Newfoundland Power",
@@ -10163,6 +10203,19 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1948-system-record",
+    scope: "1948 station construction, dam rehabilitation, utility property, Lower Churchill hydrometry and corporate history",
+    status: "reported",
+    sources: [
+      { sourceId: "np-2016-kbr-system", pages: "physical PDF p. 263" },
+      { sourceId: "np-2026-kings-bridge", pages: "physical PDF p. 427" },
+      { sourceId: "np-1948-lawn-dam", pages: "physical PDF p. 185" },
+      { sourceId: "np-1948-property-record", pages: "physical PDF p. 152" },
+      { sourceId: "nlh-1948-muskrat-hydrometry", pages: "physical PDF p. 32" },
+      { sourceId: "fortis-1948-electricity-company", pages: "physical PDF p. 220" }
+    ]
+  },
+  {
     id: "np-1954-system-record",
     scope: "1954 transmission construction, station development, hydroelectric generation and civil works, and utility governance",
     status: "unresolved",
@@ -10912,6 +10965,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1948",
+    category: "station",
+    title: "King's Bridge entered service as a combined station",
+    body: "Newfoundland Power dates construction of King's Bridge to 1948 and describes it as both a transmission and distribution substation.",
+    sourceId: "np-2016-kbr-system",
+    pages: "physical PDF p. 263; corroborated by 2026 filing physical PDF p. 427",
+    status: "reported"
+  },
+  {
+    date: "1948",
+    category: "civil",
+    title: "Lawn Forebay Dam received a concrete refacing",
+    body: "The downstream surface was refaced with concrete. Earlier 1937 work had added a concrete base and encased the rockfill compartments; mesh-reinforced shotcrete followed in 1983.",
+    sourceId: "np-1948-lawn-dam",
+    pages: "physical PDF p. 185",
+    status: "reported"
+  },
+  {
+    date: "1948",
+    category: "hydrology",
+    title: "Flow observations began at Upper Muskrat Falls",
+    body: "An Environment Canada hydrometric station began operating on the Churchill River at Upper Muskrat Falls. The cited project study says continuous recording began in 1953 and that the station observed natural flow until Churchill Falls regulation.",
+    sourceId: "nlh-1948-muskrat-hydrometry",
+    pages: "physical PDF p. 32",
+    status: "reported"
+  },
+  {
+    date: "1948",
+    category: "organization",
+    title: "Newfoundland Light and Power became an electricity-only company",
+    body: "A Moody's corporate history filed in Newfoundland Power's 2019 rate proceeding reports that NLPC became a pure electricity company in 1948 and listed its shares in 1949.",
+    sourceId: "fortis-1948-electricity-company",
+    pages: "physical PDF p. 220",
+    status: "reported"
+  },
   {
     date: "1949",
     category: "civil",
@@ -18809,6 +18898,16 @@ const filedFeederMapProfiles = [
       facts: [["Plant refurbishment", "deferred from 2027 to 2031 for further engineering assessment and economic analysis"]]
     },
     historyRecords: [
+      {
+        label: "1948 DAM REFACING",
+        sourceId: "np-1948-lawn-dam",
+        pages: "physical PDF p. 185",
+        facts: [
+          ["1937 work", "concrete base and concrete encasement added to the rockfill compartments"],
+          ["1948 work", "downstream surface refaced with concrete"],
+          ["1983 work", "mesh-reinforced shotcrete applied"]
+        ]
+      },
       {
         label: "2001 REPORTED NEW SUBSTATION",
         sourceId: "np-2001-annual-report",
@@ -28552,6 +28651,12 @@ export const stationProfiles = [
       facts: [["KBR-T3/T4", "KBR-09, KBR-11, KBR-12 and KBR-13; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "1948 STATION CONSTRUCTION",
+        sourceId: "np-2016-kbr-system",
+        pages: "physical PDF p. 263",
+        facts: [["Station role", "constructed as both a transmission and distribution substation"]]
+      },
       {
         label: "1962 66 KV HIGH-VOLTAGE STRUCTURE",
         sourceId: "np-1962-kings-bridge-structure",
