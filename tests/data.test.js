@@ -785,7 +785,7 @@ test("Pasadena separates the 2013 expansion plan from the current transformer re
   assert.deepEqual(pasadena.connectedCircuits.map(({ circuit }) => circuit), ["Deer Lake Power L1"]);
   assert.deepEqual(pasadena.feederRegister, ["PAS-01", "PAS-02"]);
   const existingFacts = pasadena.engineeringRecord.facts.flat().join(" ");
-  const proposedFacts = pasadena.historyRecords[0].facts.flat().join(" ");
+  const proposedFacts = pasadena.historyRecords.find(({ label }) => label.includes("2013 FILED HUMBER VALLEY")).facts.flat().join(" ");
   assert.match(existingFacts, /PAS-T1 66\/12\.5 kV; 13\.3 MVA/);
   assert.match(existingFacts, /Deer Lake Power L1 supplies the Pasadena and Marble Mountain station transformers/);
   assert.match(pasadena.planningRecord.facts.flat().join(" "), /PAS-T1 66\/12\.5 kV; 13\.30 MVA; 12\.46 MVA 2026 forecast/);

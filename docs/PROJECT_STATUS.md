@@ -248,10 +248,11 @@ Updated: 2026-11-14
 - Added the 2009 Clarenville, Gander, Grand Falls, King's Bridge, Oxen Pond, Rocky Pond, and Broad Cove project records. Clarenville and Gander retain the later delay evidence; the 110L and 111L rebuilds, King's Bridge modernization, Rose Blanche spillway raise, and Rocky Pond refurbishment retain separate completion reports. Added the filed 110L, 111L, and NWB-02 route maps.
 - Added the direct 2008 station records for Broad Cove, Botwood, Clarenville, Fermeuse, Gander, King's Bridge, Kelligrews, Lewisporte, Mobile, and Oxen Pond. Added the filed 20L and 111L rebuild sections, the 20L route sheet, plant-specific hydro work, and the 32-circuit fibre-network inventory. Later completion and delay records remain separate from the filed scopes.
 - Added the direct 2007 Blaketown, Clarkes Pond, Garnish, Glovertown, Goulds, Ridge Road, and Stamp's Lane records. Added the filed Rattling Brook plant scope, the separately reported completion of its 66 kV station modernization, staged 43L and 110L rebuild records with route sheets, Petty Harbour and Horse Chops dam work, and the completed Wesleyville gas-generator exchange.
+- Added the 2003 Hardwoods T2 cable failure, Rattling Brook and St. George's breaker ages, Pasadena recloser ages, Big Pond oil-filled equipment, Gander grounding-transformer work, and the filed Virginia Waters third-transformer project. Added the approved 2003 VHF radio program, the rejected radial transmission study, and the reported 2002 Rattling Brook and Seal Cove generator failures.
 
 ## Active work
 
-1. Reconcile the Newfoundland Power 2006 capital and system records, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the Newfoundland Power 2002 capital and system records, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

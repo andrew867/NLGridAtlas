@@ -280,6 +280,116 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2020%20(f).pdf"
   },
   {
+    id: "np-2003-capital-substations",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Budget Application, Substation Work",
+    topics: ["Virginia Waters", "Chamberlains", "Greenhill", "Marystown", "Trepassey", "substation rebuild", "transformer capacity"],
+    pages: "physical PDF pp. 25 to 37",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
+  },
+  {
+    id: "np-2003-substation-equipment-inspections",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-22(a), 2003 Substation Equipment Replacement Program",
+    topics: ["Hardwoods", "Fall Pond", "West Brook", "Gander", "battery bank", "transformer condition", "equipment inspection"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2022%20(a).pdf"
+  },
+  {
+    id: "np-2003-breaker-ages",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-22(b), Breaker and Recloser Age Record",
+    topics: ["Rattling Brook", "St. George's", "Pasadena", "66 kV breaker", "recloser", "equipment age"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2022%20(b).pdf"
+  },
+  {
+    id: "np-2003-breaker-costs",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-22(h), Breaker and Recloser Replacement Costs",
+    topics: ["Rattling Brook", "St. George's", "Pasadena", "66 kV breaker", "recloser", "capital cost"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2022%20(h).pdf"
+  },
+  {
+    id: "np-2003-hardwoods-t2-cables",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-22(k), Hardwoods T2 Cable Replacement",
+    topics: ["Hardwoods", "HWD-T2", "transformer cable", "cable failure", "capital cost"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2022%20(k).pdf"
+  },
+  {
+    id: "np-2003-big-pond-oil-equipment",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-22(l), Big Pond Oil-Filled Equipment Replacement",
+    topics: ["Big Pond", "recloser", "station service transformer", "metering tank", "oil-filled equipment"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2022%20(l).pdf"
+  },
+  {
+    id: "np-2003-transmission-rebuild",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Budget Application, Transmission Line Work",
+    topics: ["24L", "17L", "124L", "123L", "301L", "357L", "transmission rebuild", "line clearance"],
+    pages: "physical PDF pp. 39 to 40",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
+  },
+  {
+    id: "np-2003-radial-study",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Budget Application, Radial Transmission Study",
+    topics: ["Old Perlican", "New Chelsea", "Port aux Basques", "Rose Blanche", "radial transmission", "engineering study"],
+    pages: "physical PDF p. 41",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
+  },
+  {
+    id: "np-2003-telecommunications",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Budget Application, Telecommunications Work",
+    topics: ["Rattling Brook", "Sandy Brook", "UHF", "VHF", "radio", "teleline isolation", "remote control"],
+    pages: "physical PDF pp. 74 to 77",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
+  },
+  {
+    id: "np-2003-status-2002",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2003 Capital Budget Application, 2002 Capital Project Status",
+    topics: ["Rattling Brook", "Seal Cove", "Gander", "Grand Bay", "Salt Pond", "Wesleyville", "transmission clearance", "telecommunications"],
+    pages: "physical PDF pp. 112 to 120",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
+  },
+  {
+    id: "pu-36-2003-capital",
+    year: 2002,
+    organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
+    title: "Order P.U. 36 (2002-2003), Newfoundland Power 2003 Capital Budget",
+    topics: ["capital approval", "telecommunications", "VHF", "radial transmission study", "Newfoundland Power"],
+    pages: "physical PDF pp. 21, 26 and 28",
+    status: "verified",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/order/pu36-03.pdf"
+  },
+  {
     id: "np-2007-capital",
     year: 2006,
     organization: "Newfoundland Power",
@@ -4474,7 +4584,7 @@ export const sources = [
     year: 2002,
     organization: "Newfoundland Power",
     title: "CA-22(j), Fall Pond, West Brook and Gander Transformer Replacements",
-    topics: ["West Brook", "WBK", "hydroelectric generation", "step-up transformers", "6.9 kV", "12.5 kV"],
+    topics: ["Fall Pond", "FPD", "West Brook", "WBK", "Gander", "GAN", "hydroelectric generation", "step-up transformers", "grounding transformers", "6.9 kV", "12.5 kV"],
     pages: "physical PDF p. 1",
     status: "proposed",
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2022%20(j).pdf"
@@ -6414,6 +6524,24 @@ export const timeline = [
     sourceId: "vhf-2004",
     pages: "PDF p. 200",
     status: "reported"
+  },
+  {
+    date: "2002",
+    category: "station",
+    title: "Two aging generator windings failed",
+    body: "Rattling Brook G2 received a full rewind after its 45-year-old winding failed. A failure at the 79-year-old Seal Cove generator damaged its bearings and led to a separate refurbishment.",
+    sourceId: "np-2003-status-2002",
+    pages: "physical PDF p. 112",
+    status: "reported"
+  },
+  {
+    date: "2002-12-20",
+    category: "telecom",
+    title: "Board approved the 2003 radio program",
+    body: "Order P.U. 36 approved Newfoundland Power's $383,000 telecommunications category, including 20 mobile and 10 portable VHF radios. The same order rejected the separate $500,000 radial transmission study because its justification was insufficient.",
+    sourceId: "pu-36-2003-capital",
+    pages: "physical PDF pp. 21, 26 and 28",
+    status: "verified"
   },
   {
     date: "2004-09-24",
@@ -10272,6 +10400,24 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2003 REPORTED RECLOSER AGES",
+        sourceId: "np-2003-breaker-ages",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Equipment", "two station reclosers purchased in 1981"],
+          ["Age in filing", "21 years"]
+        ]
+      },
+      {
+        label: "2003 FILED RECLOSER REPLACEMENT",
+        sourceId: "np-2003-breaker-costs",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Equipment", "replace two reclosers"],
+          ["Filed cost", "$11,500 labour and $67,000 non-labour"]
+        ]
+      },
+      {
         label: "2013 FILED HUMBER VALLEY EXPANSION PLAN",
         sourceId: "np-2014-humber-valley",
         pages: "physical PDF pp. 286 to 291",
@@ -11360,6 +11506,15 @@ const earlyFeederMapProfiles = [
       facts: [["BIG-T1", "66/12.5 kV; 11.11 MVA; 8.30 MVA 2026 forecast"]]
     },
     historyRecords: [
+      {
+        label: "2003 FILED OIL-FILLED EQUIPMENT REPLACEMENT",
+        sourceId: "np-2003-big-pond-oil-equipment",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Equipment", "two reclosers, one station-service transformer and one metering tank"],
+          ["Filed cost", "$84,000"]
+        ]
+      },
       {
         label: "2006 PROPOSED TRANSFORMER COOLING ADDITION",
         sourceId: "np-2006-big-pond",
@@ -13000,6 +13155,24 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2003 REPORTED 66 KV BREAKER AGE",
+        sourceId: "np-2003-breaker-ages",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Breaker", "purchased in 1960"],
+          ["Age in filing", "42 years"]
+        ]
+      },
+      {
+        label: "2003 FILED 66 KV BREAKER REPLACEMENT",
+        sourceId: "np-2003-breaker-costs",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Equipment", "replace one 66 kV breaker"],
+          ["Filed cost", "$32,000 labour and $124,600 non-labour"]
+        ]
+      },
+      {
         label: "2004 FILED 403L REBUILD",
         sourceId: "np-2004-transmission-rebuild",
         pages: "physical PDF pp. 391 to 392",
@@ -14218,6 +14391,24 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2002 REPORTED 12.5 KV STRUCTURE AND CABLE WORK",
+        sourceId: "np-2003-status-2002",
+        pages: "physical PDF p. 113",
+        facts: [
+          ["Structure", "relocated the 12.5 kV structure after the original work scope proved insufficient"],
+          ["Cable", "replaced a 30-year-old cable"]
+        ]
+      },
+      {
+        label: "2003 FILED GROUNDING-TRANSFORMER REPLACEMENT",
+        sourceId: "np-2003-west-brook-transformers",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Equipment", "three grounding transformers"],
+          ["Filed cost", "$53,800"]
+        ]
+      },
       {
         label: "2009 FILED STATION WORK",
         sourceId: "np-2009-station-modernization",
@@ -17282,6 +17473,33 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2002 REPORTED G2 WINDING FAILURE",
+        sourceId: "np-2003-status-2002",
+        pages: "physical PDF p. 112",
+        facts: [
+          ["Generator", "the 45-year-old winding failed and the generator was fully rewound"],
+          ["Reported cost", "$266,000"]
+        ]
+      },
+      {
+        label: "2003 REPORTED 66 KV BREAKER AGE",
+        sourceId: "np-2003-breaker-ages",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Breaker", "purchased in 1958"],
+          ["Age in filing", "44 years"]
+        ]
+      },
+      {
+        label: "2003 FILED 66 KV BREAKER REPLACEMENT",
+        sourceId: "np-2003-breaker-costs",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Equipment", "replace one 66 kV breaker"],
+          ["Filed cost", "$22,000 labour and $95,900 non-labour"]
+        ]
+      },
+      {
         label: "2004 FILED G1 STATOR REWIND",
         sourceId: "np-2004-hydro-rehabilitation",
         pages: "physical PDF pp. 265 to 266",
@@ -17522,6 +17740,24 @@ export const stationProfiles = [
       facts: [["HWD-02", "12.5 kV; HWD-T1/T2; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2002 REPORTED HWD-T2 CABLE FAILURE",
+        sourceId: "np-2003-substation-equipment-inspections",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["HWD-T2", "one transformer cable failed in 2002"],
+          ["Cable age", "the filing records approximately 30 years in service"]
+        ]
+      },
+      {
+        label: "2003 FILED HWD-T2 CABLE REPLACEMENT",
+        sourceId: "np-2003-hardwoods-t2-cables",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Work", "replace the HWD-T2 transformer cables"],
+          ["Filed cost", "$15,000 labour and $40,000 non-labour"]
+        ]
+      },
       {
         label: "2004 ST. JOHN'S AMPACITY AND CONTINGENCY STUDY",
         sourceId: "np-2004-st-johns-ampacity",
@@ -19465,6 +19701,17 @@ export const stationProfiles = [
       facts: [["VIR-T1/T2", "VIR-01 and VIR-06; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2003 FILED THIRD TRANSFORMER",
+        sourceId: "np-2003-capital-substations",
+        pages: "physical PDF pp. 34 to 35",
+        facts: [
+          ["Transformer", "third 25 MVA, 66/12.5 kV unit"],
+          ["Planning basis", "the filing forecast one existing transformer above its 25 MVA nameplate during 2003"],
+          ["Filed cost", "$1.15 million"],
+          ["Later record", "the 2005 filing records the third transformer as added in 2003"]
+        ]
+      },
       {
         label: "2004 EAST END PLANNING RECORD / 2005 VIR-08",
         sourceId: "np-2005-east-end-planning",

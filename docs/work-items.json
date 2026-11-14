@@ -994,6 +994,30 @@
       "notes": "The 2004 application records remain proposed unless a later source confirms completion. The station profiles now include primary filing records for New Chelsea, Topsail, Rattling Brook, Chamberlains, Pulpit Rock, Walbournes, Bayview, Port Blandford, Stamp's Lane, Pepperell, Summerford, Petty Harbour, and the 403L corridor. The St. John's ampacity review keeps measured 2002 loads separate from forecasts and preserves its dated upgrade table and historical network sheet."
     },
     {
+      "id": "NPREG-025",
+      "title": "Reconcile Newfoundland Power 2003 station, equipment, transmission, telecommunications, and project-status records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the amended 2003 capital application, Board order, station equipment RFIs, transmission rebuilds, radio and teleline work, and the reported status of 2002 projects.",
+      "dependencies": ["NPREG-024"],
+      "completion_evidence": ["research/NP_2003_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "tests/np-2003-capital.test.js"],
+      "blocker": null,
+      "notes": "The station records add the HWD-T2 cable failure, dated Rattling Brook and St. George's breaker ages, Pasadena reclosers, Big Pond oil-filled equipment, Gander grounding transformers, and the filed Virginia Waters third transformer. The timeline separates the approved telecommunications category from the Board-rejected radial transmission study. The 2002 generator failures and project status remain reported, not inferred completion evidence for later work."
+    },
+    {
+      "id": "NPREG-026",
+      "title": "Reconcile Newfoundland Power 2002 capital and system records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Reconcile the 2002 capital application, Board decision, RFIs, station and line work, telecommunications records, and later evidence that establishes project state.",
+      "dependencies": ["NPREG-025"],
+      "completion_evidence": [],
+      "blocker": null,
+      "notes": "Start after NPREG-025 passes the complete test, source-verification, build, and browser-review gates."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
