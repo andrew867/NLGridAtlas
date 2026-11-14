@@ -3782,3 +3782,34 @@ test("documented circuit links open the available other-end record", async () =>
   assert.match(main, /link\.matches\("\[data-station-record\], \[data-hydro-terminal-record\]"\)/);
 });
 
+test("2020 Newfoundland Power records preserve station closeouts and feeder evidence states", () => {
+  const station = (code) => stationProfiles.find((record) => record.code === code);
+  const history = (code, label) => station(code).historyRecords.find((record) => record.label === label);
+  const route = (code, image) => station(code).referenceSheets.find((record) => record.image === image);
+
+  assert.equal(sources.find((source) => source.id === "np-2020-capex-report").status, "reported");
+  assert.equal(sources.find((source) => source.id === "np-2025-ca-np-113").pages, "physical PDF p. 3");
+  assert.equal(sources.find((source) => source.id === "np-2020-feeder-growth").status, "proposed");
+
+  assert.match(history("BVA", "2020 SUBSTANTIAL COMPLETION").facts.flat().join(" "), /2020.*\$2\.307 million/);
+  assert.match(history("MSY", "2020 SUBSTANTIAL COMPLETION").facts.flat().join(" "), /2020.*\$2\.683 million/);
+  assert.match(history("GBS", "2020 SUBSTANTIAL COMPLETION").facts.flat().join(" "), /2020.*\$4\.820 million/);
+
+  assert.ok(route("BRB", "./reference-maps/brb-05-2020-upgrade.png"));
+  assert.ok(route("OXP", "./reference-maps/oxp-01-2020-upgrade.png"));
+  assert.ok(route("PUL", "./reference-maps/pul-05-2020-upgrade.png"));
+  assert.ok(route("BCV", "./reference-maps/bcv-03-2020-upgrade.png"));
+  assert.ok(route("GDL", "./reference-maps/gdl-09-2020-route.png"));
+
+  assert.match(history("BRB", "2020 PROPOSED BRB-05 UPGRADE").facts.flat().join(" "), /783.*4\/0 AASC/);
+  assert.match(history("OXP", "2020 PROPOSED OXP-01 UPGRADE").facts.flat().join(" "), /Thorburn Road.*2\.5 km/);
+  assert.match(history("PUL", "2020 PROPOSED PUL-05 UPGRADE").facts.flat().join(" "), /Pine Line.*1\.9 km/);
+  assert.match(history("BCV", "2020 PROPOSED BCV-03 UPGRADE").facts.flat().join(" "), /Tolt Road.*1\.5 km/);
+  assert.match(history("GDL", "2020 PROPOSED GDL-09 FEEDER").facts.flat().join(" "), /2\.1 km.*completed in 2021/);
+  assert.match(station("GDL").planningRecord.facts.flat().join(" "), /construction completed in 2021/);
+
+  for (const [code, label] of [["BRB", "2020 PROPOSED BRB-05 UPGRADE"], ["OXP", "2020 PROPOSED OXP-01 UPGRADE"], ["PUL", "2020 PROPOSED PUL-05 UPGRADE"], ["BCV", "2020 PROPOSED BCV-03 UPGRADE"]]) {
+    assert.match(history(code, label).label, /PROPOSED/);
+  }
+});
+

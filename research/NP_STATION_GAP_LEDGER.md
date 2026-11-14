@@ -20,6 +20,13 @@ The island station register now adds sourced records for Sunnyside, Stony Brook,
 
 The Deer Lake distribution record now separates four dated states. The 2010 project replaced the overloaded 16.7 MVA, 66/12.5 kV DLK-T1 with a 25 MVA unit and moved the former unit to Mobile. The Q4 2010 report records both replacements complete. The 2018 transformer listing records DLK-T1 at 66/12.47 kV, while the 2027 register records 66/25 kV. Order P.U. 38 (2025) approved the DLK-03 to Wiltondale load-transfer project; the 2027 application reports engineering in progress and construction planned for early 2027.
 
+## 2020 capital closeout
+
+- [x] CA-NP-113 records 2020 substantial completion and $2.307 million capital spend for Bonavista, $2.683 million for Marystown, and $4.820 million for Grand Bay, physical PDF p. 3.
+- [x] The 2020 filing records the BRB-05 Shearstown Road, OXP-01 Thorburn Road, PUL-05 Pine Line, BCV-03 Tolt Road, and GDL-09 Southlands projects with route drawings, physical PDF pp. 447 to 460.
+- [x] CA-NP-176 records GDL-09 construction completed in 2021, physical PDF pp. 6 to 7.
+- [ ] Asset-level completion records for BRB-05, OXP-01, PUL-05, and BCV-03 remain unresolved. The 2020 expenditure report provides only program-level actual and carryover values, physical PDF p. 10.
+
 ## Springdale station record
 
 - [x] The 2014 filing identifies Springdale as a shared Newfoundland Power and Hydro station built in 1965. Hydro owns and maintains the 138 kV bus and breakers, physical PDF p. 234.

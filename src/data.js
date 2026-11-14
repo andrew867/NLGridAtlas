@@ -2875,7 +2875,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "2020 Capital Budget Application, GDL-09 New Feeder Construction",
     topics: ["Glendale", "GDL-T1", "GDL-T2", "GDL-T3", "GDL-07", "GDL-09", "12.5 kV"],
-    pages: "physical PDF pp. 447 to 453",
+    pages: "physical PDF pp. 447 to 453 and 460",
     status: "verified",
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
   },
@@ -2885,9 +2885,39 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "2020 Capital Budget Application, BRB-05 Feeder Upgrade",
     topics: ["Bay Roberts", "BRB-05", "Shearstown", "Butlerville", "4/0 AASC", "feeder upgrade", "measured load"],
-    pages: "physical PDF pp. 70 and 449 to 450",
+    pages: "physical PDF pp. 70, 449 to 450 and 457",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "np-2020-feeder-growth",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Feeder Additions for Load Growth",
+    topics: ["Bay Roberts", "Oxen Pond", "Pulpit Rock", "Broad Cove", "Glendale", "BRB-05", "OXP-01", "PUL-05", "BCV-03", "GDL-09", "feeder upgrade", "route drawing"],
+    pages: "physical PDF pp. 447 to 460",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "np-2020-capex-report",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Expenditure Report",
+    topics: ["2020 capital", "substation modernization", "substation feeder termination", "transmission rebuild", "feeder additions", "communications", "carryover"],
+    pages: "physical PDF pp. 4, 8 to 10 and 13",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202020%20Capital%20Expenditure%20Report%20-%202021-02-26.PDF"
+  },
+  {
+    id: "np-2025-ca-np-113",
+    year: 2024,
+    organization: "Newfoundland Power",
+    title: "CA-NP-113, Substation Refurbishment and Modernization Spend",
+    topics: ["Bonavista", "Marystown", "Grand Bay", "BVA", "MSY", "GBS", "substantial completion", "capital expenditure"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/CA-NP-113.PDF"
   },
   {
     id: "np-2022-feeder-growth",
@@ -8651,6 +8681,15 @@ const filedFeederMapProfiles = [
           ["138 kV switching", "install breakers and digital protection for 300L, 308L, and MSY-T1; remove the transformer high-speed ground switch"],
           ["Protection and control", "replace the electromechanical transformer relays; add a control building, gateway, and SCADA equipment"]
         ]
+      },
+      {
+        label: "2020 SUBSTANTIAL COMPLETION",
+        sourceId: "np-2025-ca-np-113",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Substantial completion", "2020"],
+          ["Capital spend", "$2.683 million"]
+        ]
       }
     ]
   },
@@ -9488,6 +9527,28 @@ const earlyFeederMapProfiles = [
           ["Customers interrupted", "approximately 17,300 in the Portugal Cove-St. Philip's and Bell Island area"],
           ["Customer outage minutes", "2,285,000"]
         ]
+      },
+      {
+        label: "2020 PROPOSED BCV-03 UPGRADE",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF pp. 451 and 459",
+        facts: [
+          ["Location", "Tolt Road in Portugal Cove-St. Philip's"],
+          ["Existing conductor", "#4 copper"],
+          ["Filed load", "86 A forecast; 95 A measured in early 2019"],
+          ["Filed work", "convert 0.3 km from two phase to three phase and 1.5 km from single phase to three phase"],
+          ["Filed cost", "$450,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED 2020 FEEDER ROUTE",
+    referenceSheets: [
+      {
+        title: "2020 proposed BCV-03 Tolt Road upgrade",
+        image: "./reference-maps/bcv-03-2020-upgrade.png",
+        alt: "Filed BCV-03 route drawing showing the Tolt Road sections proposed for three-phase conversion",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF p. 459"
       }
     ]
   },
@@ -9769,15 +9830,26 @@ const earlyFeederMapProfiles = [
       },
       {
         label: "2020 PROPOSED BRB-05 UPGRADE",
-        sourceId: "np-2020-brb05",
-        pages: "physical PDF pp. 70 and 449 to 450",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF pp. 70, 449 to 450 and 457",
         facts: [
+          ["Customers", "approximately 783"],
           ["Overloaded section", "2.4 km along Shearstown Road from the Veterans Memorial Highway underpass into Butlerville"],
           ["Filed load", "107 A forecast on the single-phase section; 85 A planning maximum"],
           ["Proposed work", "convert 1.3 km from two phase to three phase and 1.1 km from single phase to three phase; reconductor the full section with 4/0 AASC"],
           ["Conductor ratings", "153 A existing conductor; 356 A for the proposed 4/0 AASC"],
           ["Filed cost", "$495,000"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED 2020 FEEDER ROUTE",
+    referenceSheets: [
+      {
+        title: "2020 proposed BRB-05 Shearstown Road upgrade",
+        image: "./reference-maps/brb-05-2020-upgrade.png",
+        alt: "Filed BRB-05 route drawing showing the Shearstown Road sections proposed for three-phase conversion and reconductoring",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF p. 457"
       }
     ]
   },
@@ -11186,6 +11258,15 @@ export const stationProfiles = [
           ["Protection", "install an incoming transformer breaker and replace eleven electromechanical relays with three digital relays"],
           ["Control", "construct a new control building and replace protection, communications, and control equipment"],
           ["Mobile generation", "construct a permanent placement pad with oil containment for the mobile gas turbine"]
+        ]
+      },
+      {
+        label: "2020 SUBSTANTIAL COMPLETION",
+        sourceId: "np-2025-ca-np-113",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Substantial completion", "2020"],
+          ["Capital spend", "$4.820 million"]
         ]
       }
     ]
@@ -14134,6 +14215,15 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2020 SUBSTANTIAL COMPLETION",
+        sourceId: "np-2025-ca-np-113",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Substantial completion", "2020"],
+          ["Capital spend", "$2.307 million"]
+        ]
+      },
+      {
         label: "2027 FAILURE-HISTORY REGISTER",
         sourceId: "np-2027-transformer-failures",
         pages: "physical PDF p. 560",
@@ -14860,6 +14950,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2020 PROPOSED OXP-01 UPGRADE",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF pp. 451 and 458",
+        facts: [
+          ["Location", "Thorburn Road toward Portugal Cove-St. Philip's"],
+          ["Existing conductor", "#4 copper"],
+          ["Filed load", "107 A forecast for 2019; 100 A measured in early 2019"],
+          ["Filed work", "convert 2.5 km from single phase to three phase"],
+          ["Filed cost", "$550,000"]
+        ]
+      },
+      {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
         pages: "physical PDF pp. 351 to 354",
@@ -14915,6 +15017,16 @@ export const stationProfiles = [
           ["66 kV switch replacements", "$316,000 approved; $281,000 actual expenditure; no carryover to 2025"],
           ["OXP-01 refurbishment", "$840,000 approved; $966,000 actual expenditure; no carryover to 2025"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED FEEDER ROUTES",
+    referenceSheets: [
+      {
+        title: "2020 proposed OXP-01 Thorburn Road upgrade",
+        image: "./reference-maps/oxp-01-2020-upgrade.png",
+        alt: "Filed OXP-01 route drawing showing the Thorburn Road single-phase section proposed for three-phase conversion",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF p. 458"
       }
     ]
   },
@@ -15452,6 +15564,27 @@ export const stationProfiles = [
           ["Completed work", "installed one new 25 MVA power transformer at Glendale Substation"],
           ["System area", "increased transformer capacity for Mount Pearl and Southlands"]
         ]
+      },
+      {
+        label: "2020 PROPOSED GDL-09 FEEDER",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF pp. 452 to 453 and 460",
+        facts: [
+          ["Filed route", "approximately 2.1 km from Glendale Substation across Pitts Memorial Drive and Great Southern Drive to GDL-07 at Southlands Boulevard"],
+          ["Hardwoods loading basis", "HWD-T1 and HWD-T2 each forecast at approximately 20.5 MVA, 103% of rating"],
+          ["Filed cost", "$442,000"],
+          ["Completion", "construction completed in 2021"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED 2020 FEEDER ROUTE",
+    referenceSheets: [
+      {
+        title: "2020 proposed GDL-09 route",
+        image: "./reference-maps/gdl-09-2020-route.png",
+        alt: "Filed GDL-09 route drawing from Glendale Substation across Pitts Memorial Drive to the GDL-07 interconnection",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF p. 460"
       }
     ]
   },
@@ -15977,6 +16110,18 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2020 PROPOSED PUL-05 UPGRADE",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF pp. 451 and 458",
+        facts: [
+          ["Location", "Pine Line in Torbay and Logy Bay-Middle Cove-Outer Cove"],
+          ["Existing conductor", "#2 AASC"],
+          ["Filed load", "106 A forecast for 2019; 108 A measured in early 2019"],
+          ["Filed work", "convert 1.9 km from single phase to three phase"],
+          ["Filed cost", "$365,000"]
+        ]
+      },
+      {
         label: "2021 PROPOSED PUL-05 UPGRADE",
         sourceId: "np-2021-feeder-growth",
         pages: "physical PDF pp. 184 to 185 and 193",
@@ -16065,6 +16210,13 @@ export const stationProfiles = [
         alt: "Filed PUL-05 route drawing showing the two kilometre Middle Cove Road single-phase section proposed for three-phase conversion",
         sourceId: "np-2021-feeder-growth",
         pages: "physical PDF p. 193"
+      },
+      {
+        title: "2020 proposed PUL-05 Pine Line upgrade",
+        image: "./reference-maps/pul-05-2020-upgrade.png",
+        alt: "Filed PUL-05 route drawing showing the Pine Line single-phase section proposed for three-phase conversion",
+        sourceId: "np-2020-feeder-growth",
+        pages: "physical PDF p. 458"
       },
       {
         title: "2022 PUL-03 route and completed upgrade section",
