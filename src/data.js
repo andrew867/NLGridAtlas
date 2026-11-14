@@ -380,6 +380,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-2000-annual-report",
+    year: 2000,
+    organization: "Newfoundland Power",
+    title: "2000 Annual Report, Electrical System Work and Operating Systems",
+    topics: ["St. Catherines", "Gander Bay", "Blaketown", "Doyles", "Robinsons", "Tors Cove", "Horse Chops", "distribution feeder rebuild", "SCADA", "remote terminal unit", "hydroelectric production"],
+    pages: "physical PDF pp. 11 to 13, 17 and 32",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213E.pdf"
+  },
+  {
     id: "np-2001-annual-report",
     year: 2001,
     organization: "Newfoundland Power",
@@ -6504,6 +6514,15 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2003-ca-241-load-factor", pages: "physical PDF p. 1" }]
   },
   {
+    id: "np-2000-system-reliability",
+    scope: "2000 Newfoundland Power service availability and actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
+    status: "reported",
+    sources: [
+      { sourceId: "np-2000-annual-report", pages: "physical PDF pp. 11 to 12" },
+      { sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }
+    ]
+  },
+  {
     id: "np-2001-system-reliability",
     scope: "2001 Newfoundland Power service availability and actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
     status: "reported",
@@ -6608,6 +6627,69 @@ export const timeline = [
     body: "Western work in 1999, eastern work in 2001, and the 2003 interconnection supported the move of about ten repeaters from NewTel sites.",
     sourceId: "vhf-2004",
     pages: "PDF p. 200",
+    status: "reported"
+  },
+  {
+    date: "2000",
+    category: "reliability",
+    title: "Service availability reached 99.93 percent",
+    body: "Newfoundland Power reported 4.11 interruptions and 5.33 hours per customer, excluding Hydro loss-of-supply outages.",
+    sourceId: "np-2000-annual-report",
+    pages: "physical PDF pp. 11 to 12; CA-446Rev physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "2000",
+    category: "generation",
+    title: "Hydroelectric output reached 415 GWh",
+    body: "Plant availability was 88 percent. A production study recommended reducing the normal-inflow production estimate from 450 GWh to 423 GWh. Rose Blanche produced 28 GWh and carried isolated Port aux Basques load on several occasions.",
+    sourceId: "np-2000-annual-report",
+    pages: "physical PDF p. 12",
+    status: "reported"
+  },
+  {
+    date: "2000",
+    category: "station",
+    title: "St. Catherines was built and Gander Bay rebuilt",
+    body: "The annual report records a new $0.5 million substation at St. Catherines and an approximately $0.4 million rebuild at Gander Bay.",
+    sourceId: "np-2000-annual-report",
+    pages: "physical PDF p. 12",
+    status: "reported"
+  },
+  {
+    date: "2000",
+    category: "network",
+    title: "Distribution rebuilds targeted weak sections",
+    body: "Newfoundland Power completed 12 km in the Bay de Verde area, built 20 km at Blaketown, upgraded 25 km near Robinsons, and relocated 12 km at Doyles. The feeder-rebuild program installed 1,055 poles and rebuilt approximately 550 structures for $2.7 million.",
+    sourceId: "np-2000-annual-report",
+    pages: "physical PDF pp. 12 to 13",
+    status: "reported"
+  },
+  {
+    date: "2000",
+    category: "telecom",
+    title: "Fifty-six remote terminal units were linked to SCADA",
+    body: "The annual report records 56 of 59 scheduled remote terminal units at substations and hydro plants connected to SCADA. A separate 200-customer automated-meter-reading pilot used radio-frequency collection.",
+    sourceId: "np-2000-annual-report",
+    pages: "physical PDF pp. 11 and 13",
+    status: "reported"
+  },
+  {
+    date: "2000",
+    category: "generation",
+    title: "Tors Cove and Horse Chops waterways were renewed",
+    body: "Newfoundland Power replaced the Tors Cove surge tank and the Horse Chops steel penstock for a combined $3 million.",
+    sourceId: "np-2000-annual-report",
+    pages: "physical PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "2000-12-31",
+    category: "financial",
+    title: "Transmission and substations carried $97.3 million net book value",
+    body: "Newfoundland Power reported $176.144 million cost and $78.844 million accumulated depreciation for the asset class.",
+    sourceId: "np-2000-annual-report",
+    pages: "physical PDF p. 32",
     status: "reported"
   },
   {
@@ -13191,6 +13273,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2000 REPORTED DISTRIBUTION LINE RELOCATION",
+        sourceId: "np-2000-annual-report",
+        pages: "physical PDF p. 12",
+        facts: [["Completed work", "relocated a 12 km section of distribution line at Doyles"]]
+      },
+      {
         label: "2008 TO 2012 FEEDER RELIABILITY REVIEW",
         sourceId: "np-2014-reliability-review",
         pages: "physical PDF pp. 336 and 340",
@@ -13290,6 +13378,12 @@ export const stationProfiles = [
       facts: [["ROB-T1", "66/25 kV; 6.67 MVA; 3.92 MVA 2026 forecast"]]
     },
     historyRecords: [
+      {
+        label: "2000 REPORTED DISTRIBUTION LINE UPGRADE",
+        sourceId: "np-2000-annual-report",
+        pages: "physical PDF p. 12",
+        facts: [["Completed work", "upgraded a 25 km section of distribution line near Robinsons"]]
+      },
       {
         label: "2004 FILED 403L REBUILD",
         sourceId: "np-2004-transmission-rebuild",
@@ -13899,6 +13993,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2000 REPORTED SUBSTATION REBUILD",
+        sourceId: "np-2000-annual-report",
+        pages: "physical PDF p. 12",
+        facts: [["Completed work", "rebuilt the Gander Bay substation for approximately $0.4 million"]]
+      },
       {
         label: "2004 TO 2006 FILED GBY-02 REBUILD",
         sourceId: "np-2005-gby02",
@@ -14825,6 +14925,12 @@ export const stationProfiles = [
           ["Protection and control", "replace electromechanical relays with digital relays; replace the control building and cable trench"],
           ["Filed schedule", "construction and commissioning planned for 2028"]
         ]
+      },
+      {
+        label: "2000 REPORTED DISTRIBUTION LINE CONSTRUCTION",
+        sourceId: "np-2000-annual-report",
+        pages: "physical PDF p. 12",
+        facts: [["Completed work", "constructed a new 20 km distribution line at Blaketown"]]
       },
       {
         label: "2001 REPORTED SUBSTATION REBUILD",
@@ -20559,6 +20665,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2000 REPORTED SURGE TANK REPLACEMENT",
+        sourceId: "np-2000-annual-report",
+        pages: "physical PDF p. 17",
+        facts: [["Completed work", "replaced the Tors Cove surge tank as part of a combined $3 million project with the Horse Chops penstock replacement"]]
+      },
+      {
         label: "2005 FILED 11L REBUILD",
         sourceId: "np-2005-transmission-rebuild",
         pages: "physical PDF p. 319",
@@ -20737,6 +20849,12 @@ export const stationProfiles = [
       facts: [["HCP-T1", "generation transformer; 66/6.9 kV; 12.00 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2000 REPORTED PENSTOCK REPLACEMENT",
+        sourceId: "np-2000-annual-report",
+        pages: "physical PDF p. 17",
+        facts: [["Completed work", "replaced the Horse Chops steel penstock as part of a combined $3 million project with the Tors Cove surge tank replacement"]]
+      },
       {
         label: "2006 FILED GENERATOR COOLING WORK",
         sourceId: "np-2006-hydro-rehabilitation",
@@ -23311,6 +23429,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2000 REPORTED NEW SUBSTATION",
+        sourceId: "np-2000-annual-report",
+        pages: "physical PDF p. 12",
+        facts: [["Completed work", "constructed the new St. Catherines substation for approximately $0.5 million"]]
+      },
       {
         label: "2000 TO 2001 STATION CONSTRUCTION",
         sourceId: "np-2010-substation-asset-history",

@@ -15,6 +15,9 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 2000 Newfoundland Power system record from the annual report and revised General Rate Application responses. The record covers 99.93 percent service availability, actual system and regional SAIFI and SAIDI, 415 GWh hydro production, 88 percent plant availability, St. Catherines construction, Gander Bay reconstruction, four distribution-line projects, feeder rebuilding, SCADA expansion, and the radio-frequency metering pilot.
+- Added the Tors Cove surge-tank and Horse Chops penstock replacements, the 2000 transmission and substation fixed-asset values, and the actual 0.549 system load factor. The Bay de Verde work remains a system timeline record because its source does not identify a station or feeder designation.
+- Opened NPREG-029 for the surviving Newfoundland Power 1999 system and annual records.
 - Added the 2001 Newfoundland Power system record from the annual report and revised General Rate Application responses. The record covers 99.96 percent service availability, actual SAIFI and SAIDI, sections of 20 rebuilt feeders, Laurentian-02 and Salmonier line work, Lawn construction, Blaketown and Lewisporte rebuilds, Cape Broyle, Sandy Brook and Greenhill work, and the SCADA, HMI and outage-communications systems.
 - Added the 2001 joint-use pole acquisition and transmission and substation fixed-asset values. Kept Greenhill's approved relocation separate from completed 2001 work.
 - Opened NPREG-028 for the surviving Newfoundland Power 2000 system and annual records.

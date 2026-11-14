@@ -1034,12 +1034,24 @@
       "title": "Reconcile Newfoundland Power 2000 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 2000 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-027"],
+      "completion_evidence": ["research/NP_2000_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-2000-system.test.js"],
+      "blocker": null,
+      "notes": "No standalone Newfoundland Power 2000 capital-application directory was located. The surviving annual report and revised GRA responses establish completed station, distribution, generation and control-system work, actual system and regional reliability values, hydro production, the RF metering pilot, and transmission and substation fixed-asset values."
+    },
+    {
+      "id": "NPREG-029",
+      "title": "Reconcile Newfoundland Power 1999 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1999 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-028"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Begin with the public mirror and preserve the distinction between contemporaneous completion records and later retrospective equipment histories."
+      "notes": "Begin with the surviving annual report and the 2003 General Rate Application responses, then reconcile dated completion claims against later equipment histories."
     },
     {
       "id": "ASSET-001",
