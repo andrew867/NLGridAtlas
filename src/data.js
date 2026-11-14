@@ -550,6 +550,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1949-mobile-water-rights",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-498, Mobile River Watershed Rights",
+    topics: ["1946", "1949", "Mobile River", "watershed", "hydroelectric generation", "lease", "water rights"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-498.pdf"
+  },
+  {
+    id: "np-1949-mobile-watershed-order",
+    year: 2009,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 43(2009) Reasons, Mobile River Watershed Lease",
+    topics: ["1949", "Mobile River", "watershed", "hydroelectric generation", "lease", "annual energy"],
+    pages: "physical PDF p. 45",
+    status: "reported",
+    url: "http://www.pub.nl.ca/PU/orders/2009/pu43-2009-Reasons.pdf"
+  },
+  {
+    id: "np-1949-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1949 Utility Property Record",
+    topics: ["1949", "Mobile", "Southside Road", "property", "land acquisition"],
+    pages: "physical PDF pp. 137 to 138",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
+    id: "pub-1949-establishment",
+    year: 2003,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 7(2003), Historical Regulatory Context",
+    topics: ["1929", "1949", "Public Utilities Commission", "Public Utilities Board", "utility regulation"],
+    pages: "physical PDF p. 17",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/order/pu7-03.pdf"
+  },
+  {
     id: "np-1951-mobile-civil",
     year: 2023,
     organization: "Newfoundland Power",
@@ -10112,6 +10152,17 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1949-system-record",
+    scope: "1949 Mobile River water rights, utility property acquisition and provincial utility regulation",
+    status: "reported",
+    sources: [
+      { sourceId: "np-1949-mobile-water-rights", pages: "physical PDF p. 1" },
+      { sourceId: "np-1949-mobile-watershed-order", pages: "physical PDF p. 45" },
+      { sourceId: "np-1949-property-record", pages: "physical PDF pp. 137 to 138" },
+      { sourceId: "pub-1949-establishment", pages: "physical PDF p. 17" }
+    ]
+  },
+  {
     id: "np-1954-system-record",
     scope: "1954 transmission construction, station development, hydroelectric generation and civil works, and utility governance",
     status: "unresolved",
@@ -10861,6 +10912,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1949",
+    category: "civil",
+    title: "Mobile River rights and plant land were assembled",
+    body: "Newfoundland Power's 1946 Mobile River watershed lease was amended on October 21, 1949. The property schedule records six Mobile deeds dated September 23, September 28, twice on September 30, and twice on December 13. A later Board order describes the watershed facilities as supplying approximately 49 GWh annually; that value is not a 1949 production record.",
+    sourceId: "np-1949-mobile-water-rights",
+    pages: "physical PDF p. 1; property schedule physical PDF pp. 137 to 138; 2009 order physical PDF p. 45",
+    status: "reported"
+  },
+  {
+    date: "1949",
+    category: "regulation",
+    title: "Province established the Board of Commissioners of Public Utilities",
+    body: "The new Board received general authority to supervise public utilities and approve rates, replacing the narrower referral-based authority of the earlier Public Utilities Commission.",
+    sourceId: "pub-1949-establishment",
+    pages: "physical PDF p. 17",
+    status: "reported"
+  },
   {
     date: "1950",
     category: "network",
@@ -22816,6 +22885,24 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1949 MOBILE RIVER RIGHTS",
+        sourceId: "np-1949-mobile-water-rights",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Original agreement", "watershed rights held under a lease dated November 23, 1946"],
+          ["Amendment", "agreement dated October 21, 1949"],
+          ["Later Board description", "the watershed hydroelectric facilities supplied approximately 49 GWh annually in the 2009 order"]
+        ]
+      },
+      {
+        label: "1949 MOBILE LAND ASSEMBLY",
+        sourceId: "np-1949-property-record",
+        pages: "physical PDF pp. 137 to 138",
+        facts: [
+          ["Deed dates", "September 23, September 28, two parcels on September 30, and two parcels on December 13, 1949"]
+        ]
+      },
       {
         label: "1950 OR 1951 POWERHOUSE COMMISSIONING",
         sourceId: "np-1950-mobile-commissioning",

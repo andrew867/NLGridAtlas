@@ -1642,6 +1642,18 @@
       "notes": "Later primary records establish 1950 construction for the aerial sections later designated 12L and 14L, 16L construction, TCV-T1 manufacture, and Mobile land acquisitions. Records conflict between 1950 and 1951 for the Mobile powerhouse and MOP Substation, and between 1950 and 1967 for Bay Roberts Substation. Memorial Substation dates to 1966, so the later Memorial endpoints are not assigned to the 1950 line arrangement. No named 1950 telecommunications, system-demand, reliability, storm or outage event was located."
     },
     {
+      "id": "NPREG-079",
+      "title": "Reconcile Newfoundland Power 1949 system and regulatory records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1949 utility property, generation-rights, regulatory, transmission, station, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-078"],
+      "completion_evidence": ["research/NP_1949_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1949-system.test.js"],
+      "blocker": null,
+      "notes": "Primary records establish the October 21 amendment to the 1946 Mobile River watershed lease, six 1949 Mobile property deeds, one Southside Road acquisition with no stated purpose, and establishment of the Board of Commissioners of Public Utilities with general supervisory and rate authority. No named 1949 line, station, transformer, generating unit, telecommunications, demand, reliability, storm or outage record was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
