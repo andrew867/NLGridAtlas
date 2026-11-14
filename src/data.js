@@ -390,6 +390,116 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
   },
   {
+    id: "np-1990-reliability-capital",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "CA-NP-004 Attachment A, Reliability and Capital Expenditure 1990 to 2019",
+    topics: ["1990", "SAIDI", "SAIFI", "capital expenditure"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/rfis/CA-NP-004.PDF"
+  },
+  {
+    id: "np-1990-operating-summary",
+    year: 1998,
+    organization: "Newfoundland Power",
+    title: "1998 Annual Report, Ten Year Summary",
+    topics: ["1990", "purchased energy", "generation", "peak demand", "sales", "customers"],
+    pages: "physical PDF p. 29",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213C.pdf"
+  },
+  {
+    id: "nlh-1990-gnp-reconfiguration",
+    year: 2001,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-270, Great Northern Peninsula Transmission History",
+    topics: ["1990", "Peter's Barren", "TL221", "TL262", "Great Northern Peninsula"],
+    pages: "physical PDF pp. 3 to 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/hydresp/Indust/IC%20270.pdf"
+  },
+  {
+    id: "nlh-1990-tl259-tl260",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-316 Attachment 1, Island Transmission-Line Register",
+    topics: ["1990", "TL259", "TL260", "Berry Hill", "Peter's Barren", "Seal Cove", "Bottom Waters"],
+    pages: "physical PDF p. 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf"
+  },
+  {
+    id: "nlh-1990-tl217-storm",
+    year: 2015,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-299, Historic Island Transmission Storm Damage",
+    topics: ["1990", "TL217", "storm", "conductor failure", "Western Avalon", "Holyrood"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-299.pdf"
+  },
+  {
+    id: "nlh-1990-bde-unit7",
+    year: 2025,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-003, Bay d'Espoir Unit 7 Historical Investments",
+    topics: ["1990", "Bay d'Espoir", "Unit 7", "partial discharge monitoring"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2025LifeExtensionUnit7/responses/PUB-NLH-003.PDF"
+  },
+  {
+    id: "nlh-1990-holyrood-unit1",
+    year: 1998,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Holyrood Unit 1 Plant Condition Assessment",
+    topics: ["1990", "Holyrood", "Unit 1", "breeching", "boiler", "175 MW"],
+    pages: "physical PDF p. 222",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/rfi/PUB-174.pdf"
+  },
+  {
+    id: "np-1990-mobile-gas-turbine",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-079 Attachment A, Mobile Gas Turbine Maintenance History",
+    topics: ["1990", "Mobile", "gas turbine", "gas generator", "overhaul", "repair"],
+    pages: "physical PDF p. 37",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022GRA/responses/NLH-NP-079.PDF"
+  },
+  {
+    id: "np-1990-mobile-hydro",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Mobile Hydro Plant Refurbishment",
+    topics: ["1990", "Mobile Hydro Plant", "turbine runner", "generator", "disassembly"],
+    pages: "physical PDF pp. 484, 493 to 494",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-1990-bell-island-cables",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "Bell Island Submarine Cable Options Evaluation",
+    topics: ["1990", "Bell Island", "Broad Cove", "BCV-02", "submarine cable"],
+    pages: "physical PDF p. 80",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/BellIslandSubCable/application/Application-ApprovaltoReplacetheBellIslandSubmarineCable-2013-12-09.PDF"
+  },
+  {
+    id: "nlh-1990-gnp-carrier",
+    year: 2003,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Telecommunication Plan Appendix B, Great Northern Peninsula Powerline Carrier Inventory",
+    topics: ["1990", "TL239", "powerline carrier", "Deer Lake", "Berry Hill"],
+    pages: "physical PDF p. 42",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionH.pdf"
+  },
+  {
     id: "np-1991-reliability-capital",
     year: 2020,
     organization: "Newfoundland Power",
@@ -6868,6 +6978,12 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1990-system-reliability",
+    scope: "1990 Newfoundland Power actual SAIFI, SAIDI and capital expenditure",
+    status: "reported",
+    sources: [{ sourceId: "np-1990-reliability-capital", pages: "physical PDF p. 4" }]
+  },
+  {
     id: "np-1991-system-reliability",
     scope: "1991 Newfoundland Power actual SAIFI, SAIDI and capital expenditure",
     status: "reported",
@@ -7044,6 +7160,114 @@ export const timeline = [
     body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
     sourceId: "vhf-2004",
     pages: "PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "reliability",
+    title: "SAIFI was 2.46 and SAIDI was 4.55 hours",
+    body: "The filed historical table also records five-year rolling averages of 2.47 for SAIFI and 3.78 hours for SAIDI.",
+    sourceId: "np-1990-reliability-capital",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "network",
+    title: "Actual capital expenditure was $67.074 million",
+    body: "The historical reliability and capital table reports the annual expenditure in thousands of dollars.",
+    sourceId: "np-1990-reliability-capital",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "generation",
+    title: "Company generation was 411 GWh and peak demand was 1,074 MW",
+    body: "The ten-year summary records 4,008 GWh purchased, 4,419 GWh total supply, 4,174 GWh in sales and 192,365 customer accounts at year end.",
+    sourceId: "np-1990-operating-summary",
+    pages: "physical PDF p. 29",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "network",
+    title: "Peter's Barren Terminal Station changed the Great Northern Peninsula line arrangement",
+    body: "TL221 was terminated at Peter's Barren. The Daniel's Harbour to Peter's Barren section was renumbered TL262.",
+    sourceId: "nlh-1990-gnp-reconfiguration",
+    pages: "physical PDF pp. 3 to 4",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "network",
+    title: "TL259 and TL260 entered the island transmission register",
+    body: "The register identifies TL259 as an 86.625 km, 138 kV H-frame wood line from Berry Hill to Peter's Barren and TL260 as a 36 km, 138 kV H-frame wood line from Seal Cove to Bottom Waters.",
+    sourceId: "nlh-1990-tl259-tl260",
+    pages: "physical PDF p. 5",
+    status: "reported"
+  },
+  {
+    date: "1990-04-25",
+    category: "event",
+    title: "A TL217 conductor span failed",
+    body: "The storm history identifies the Western Avalon to Holyrood line and reports return to service within 24 hours.",
+    sourceId: "nlh-1990-tl217-storm",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "generation",
+    title: "Bay d'Espoir Unit 7 received partial-discharge monitoring",
+    body: "The 2025 historical-investment response records the installation but states that the pre-2000 cost was not readily available.",
+    sourceId: "nlh-1990-bde-unit7",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "generation",
+    title: "Holyrood Unit 1 breeching was replaced and the boiler was uprated",
+    body: "The plant condition assessment records replacement of the breeching and a boiler modification that increased capability to 175 MW.",
+    sourceId: "nlh-1990-holyrood-unit1",
+    pages: "physical PDF p. 222",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "generation",
+    title: "Mobile gas turbine gas generator was overhauled or repaired",
+    body: "The later maintenance history records the 1990 gas-generator work without a narrower completion description.",
+    sourceId: "np-1990-mobile-gas-turbine",
+    pages: "physical PDF p. 37",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "generation",
+    title: "Mobile hydro turbine runner was replaced",
+    body: "The 2023 filing says the generating unit was disassembled for the turbine replacement and had not been disassembled again by the 2022 filing date.",
+    sourceId: "np-1990-mobile-hydro",
+    pages: "physical PDF pp. 484, 493 to 494",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "network",
+    title: "Two Bell Island submarine cables entered service",
+    body: "The cable assessment reports four operating cables, two installed in 1988 and two in 1990. One 1990 cable replaced a 1988 cable abandoned because of a factory-splice problem. The three-phase cable installed in 1955 was abandoned after a 1990 fault.",
+    sourceId: "np-1990-bell-island-cables",
+    pages: "physical PDF p. 80",
+    status: "reported"
+  },
+  {
+    date: "1990",
+    category: "telecom",
+    title: "TL239 powerline-carrier equipment was purchased",
+    body: "The Great Northern Peninsula inventory lists two Deer Lake to Berry Hill carrier links, TL239A and TL239B, purchased in 1990.",
+    sourceId: "nlh-1990-gnp-carrier",
+    pages: "physical PDF p. 42",
     status: "reported"
   },
   {
@@ -9232,6 +9456,12 @@ export const islandTerminalRecords = [
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
       {
+        label: "1990 UNIT 7 PARTIAL-DISCHARGE MONITORING",
+        sourceId: "nlh-1990-bde-unit7",
+        pages: "physical PDF p. 1",
+        facts: [["Installed equipment", "partial-discharge monitoring"]]
+      },
+      {
         label: "1991 UNIT 3 STATOR WORK",
         sourceId: "nlh-1991-bde-unit3",
         pages: "physical PDF p. 52",
@@ -9392,6 +9622,16 @@ export const islandTerminalRecords = [
     name: "Peter's Barren Terminal Station",
     status: "verified",
     facts: [["Name", "Peter's Barren on the 2013 one-line; Peter's Barron in the 2018 line table"], ["Transformation", "138/66 kV"], ["138 kV circuits", "TL259 to Berry Hill; TL241 to Plum Point"], ["66 kV circuit", "TL262 to Daniel's Harbour"]],
+    historyRecords: [{
+      label: "1990 TERMINAL ADDITION AND LINE RECONFIGURATION",
+      sourceId: "nlh-1990-gnp-reconfiguration",
+      pages: "physical PDF pp. 3 to 4",
+      facts: [
+        ["TL221", "former Daniel's Harbour to Hawke's Bay line terminated at Peter's Barren"],
+        ["TL262", "Daniel's Harbour to Peter's Barren section renumbered TL262"],
+        ["TL259", "86.625 km, 138 kV H-frame wood line from Berry Hill; listed as built in 1990"]
+      ]
+    }],
     diagram: {
       label: "2013 station voltage / 2018 filed routes",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "66 kV" }],
@@ -12693,6 +12933,16 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1990 SUBMARINE-CABLE INSTALLATION",
+        sourceId: "np-1990-bell-island-cables",
+        pages: "physical PDF p. 80",
+        facts: [
+          ["Operating system", "four cables forming the three-phase BCV-02 supply to Bell Island"],
+          ["1990 work", "two cables installed; one replaced a 1988 cable abandoned because of a factory-splice problem"],
+          ["Retired cable", "the three-phase cable installed in 1955 was abandoned after a 1990 fault"]
+        ]
+      },
+      {
         label: "2004 EAST END PLANNING RECORD",
         sourceId: "np-2005-east-end-planning",
         pages: "physical PDF pp. 359 to 365 and 371",
@@ -15043,6 +15293,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1990 TURBINE-RUNNER REPLACEMENT",
+        sourceId: "np-1990-mobile-hydro",
+        pages: "physical PDF pp. 484, 493 to 494",
+        facts: [
+          ["Completed work", "turbine runner replaced"],
+          ["Generating unit", "disassembled for the turbine replacement; no later disassembly was reported in the 2022 filing"]
+        ]
+      },
       {
         label: "1999 REPORTED SURGE-TANK REPLACEMENT",
         sourceId: "np-1999-annual-report",

@@ -1154,12 +1154,24 @@
       "title": "Reconcile Newfoundland Power 1990 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1990 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-037"],
+      "completion_evidence": ["research/NP_1990_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1990-system.test.js"],
+      "blocker": null,
+      "notes": "The historical reliability and capital table, 1998 ten-year operating summary, transmission records and later asset histories establish actual reliability, capital, energy, demand, customers, the Peter's Barren reconfiguration, TL259 and TL260, the TL217 storm failure, Bay d'Espoir and Holyrood work, Mobile generation work, Bell Island submarine cables and TL239 powerline-carrier equipment."
+    },
+    {
+      "id": "NPREG-039",
+      "title": "Reconcile Newfoundland Power 1989 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1989 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-038"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the surviving operating summary, reliability and capital tables, TL221 and TL262 reconfiguration, and dated generation and station histories."
+      "notes": "Start with the surviving annual operating summary, reliability and capital tables, the Great Northern Peninsula interconnection, and the VHF system purchase."
     },
     {
       "id": "ASSET-001",
