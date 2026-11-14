@@ -2951,6 +2951,41 @@ test("2022 PUL-03 and VIR-01 records separate measured project bases from comple
   assert.ok(pulpitRock.referenceSheets.some(({ image }) => image === "./reference-maps/pul-03-2022-upgrade.jpg"));
 });
 
+test("2022 Humber, Springfield, and Broad Cove records retain completion, project, and outage evidence", () => {
+  const humber = stationProfiles.find((station) => station.code === "HUM");
+  const springfield = stationProfiles.find((station) => station.code === "SPF");
+  const broadCove = stationProfiles.find((station) => station.code === "BCV");
+  const filedSource = sources.find((item) => item.id === "np-2022-feeder-growth");
+  const completionSource = sources.find((item) => item.id === "np-2022-q4-report");
+  const expenditureSource = sources.find((item) => item.id === "np-2023-capex-report-2022");
+
+  assert.equal(filedSource.pages, "physical PDF pp. 399 to 409");
+  assert.equal(completionSource.pages, "physical PDF pp. 11 and 13");
+  assert.equal(expenditureSource.pages, "physical PDF pp. 4, 10, 13, 17 to 18 and 21");
+
+  const humCompletion = humber.historyRecords.find((record) => record.label === "Q4 2022 COMPLETION");
+  const humCloseout = humber.historyRecords.find((record) => record.label === "2022 DISTRIBUTION PROJECT CLOSEOUT");
+  assert.match(humCompletion.facts.flat().join(" "), /construction and commissioning reported complete/);
+  assert.match(humCompletion.facts.flat().join(" "), /all three 4\.16 kV Humber feeders converted to 12\.5 kV/);
+  assert.match(humCloseout.facts.flat().join(" "), /\$1\.355 million.*\$910,000.*\$445,000 below budget/);
+
+  const spfWork = springfield.historyRecords.find((record) => record.label === "2022 SPF-01 LOAD GROWTH WORK");
+  const spfCompletion = springfield.historyRecords.find((record) => record.label === "Q4 2022 SPF-01 COMPLETION");
+  assert.match(spfWork.facts.flat().join(" "), /3\.8 km/);
+  assert.match(spfWork.facts.flat().join(" "), /1\.2 km.*2\.6 km.*#6 copper.*4\/0 AASC/);
+  assert.match(spfWork.facts.flat().join(" "), /145 A.*132 A.*85 A.*50 A/);
+  assert.match(spfCompletion.facts.flat().join(" "), /SPF-01 load growth upgrade complete/);
+  assert.equal(springfield.referenceSheets[0].image, "./reference-maps/spf-01-2022-upgrade.jpeg");
+  assert.equal(springfield.referenceSheets[0].pages, "physical PDF p. 402");
+
+  const bcvEvent = broadCove.historyRecords.find((record) => record.label === "NOVEMBER 22, 2022 RADIAL SUPPLY FAULT");
+  assert.match(bcvEvent.facts.flat().join(" "), /approximately 17,300.*2,285,000/);
+  assert.doesNotMatch(bcvEvent.facts.flat().join(" "), /5L/);
+  const timelineEvent = timeline.find((event) => event.title === "Broad Cove radial supply fault caused a station outage");
+  assert.equal(timelineEvent.sourceId, "np-2022-q4-report");
+  assert.equal(timelineEvent.pages, "physical PDF p. 11");
+});
+
 test("station history records retain source and page references", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
   for (const profile of stationProfiles.filter((station) => station.historyRecords)) {

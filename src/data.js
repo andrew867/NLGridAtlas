@@ -2874,7 +2874,7 @@ export const sources = [
     year: 2021,
     organization: "Newfoundland Power",
     title: "2022 Capital Budget Application, Feeder Additions for Load Growth",
-    topics: ["Pulpit Rock", "Virginia Waters", "PUL-03", "VIR-01", "measured current", "conductor rating", "route drawing"],
+    topics: ["Pulpit Rock", "Virginia Waters", "Springfield", "Harmon", "PUL-03", "VIR-01", "SPF-01", "HAR-02", "measured current", "conductor rating", "route drawing"],
     pages: "physical PDF pp. 399 to 409",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
@@ -2884,8 +2884,8 @@ export const sources = [
     year: 2023,
     organization: "Newfoundland Power",
     title: "Quarterly Regulatory Report, Q4 2022",
-    topics: ["Glovertown", "Humber", "Pulpit Rock", "Virginia Waters", "PUL-03", "VIR-01", "completion", "load growth"],
-    pages: "physical PDF p. 13",
+    topics: ["Glovertown", "Humber", "Springfield", "Pulpit Rock", "Virginia Waters", "Broad Cove", "SPF-01", "PUL-03", "VIR-01", "completion", "load growth", "station outage"],
+    pages: "physical PDF pp. 11 and 13",
     status: "verified",
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202022_Redacted.pdf"
   },
@@ -3514,8 +3514,8 @@ export const sources = [
     year: 2023,
     organization: "Newfoundland Power",
     title: "2022 Capital Expenditure Report",
-    topics: ["PBD-01", "feeder additions for load growth", "actual expenditure", "program closeout"],
-    pages: "physical PDF p. 10",
+    topics: ["PBD-01", "Humber", "Glovertown", "Dunville", "St. John's teleprotection", "feeder additions for load growth", "actual expenditure", "program closeout"],
+    pages: "physical PDF pp. 4, 10, 13, 17 to 18 and 21",
     status: "reported",
     url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202022%20Capital%20Expenditure%20Report%20-%202023-03-31.PDF"
   },
@@ -5485,6 +5485,15 @@ export const timeline = [
     sourceId: "nlh-2022-april-energy",
     pages: "physical PDF pp. 7 to 8; report pp. 4 to 5",
     status: "verified"
+  },
+  {
+    date: "2022-11-22",
+    category: "station",
+    title: "Broad Cove radial supply fault caused a station outage",
+    body: "Newfoundland Power reported that a fault on the radial transmission supply to Broad Cove interrupted approximately 17,300 customers in the Portugal Cove-St. Philip's and Bell Island area, totalling 2,285,000 customer outage minutes.",
+    sourceId: "np-2022-q4-report",
+    pages: "physical PDF p. 11",
+    status: "reported"
   },
   {
     date: "2023",
@@ -7937,6 +7946,26 @@ const filedFeederMapProfiles = [
         ]
       },
       {
+        label: "Q4 2022 COMPLETION",
+        sourceId: "np-2022-q4-report",
+        pages: "physical PDF p. 13",
+        facts: [
+          ["Station status", "construction and commissioning reported complete"],
+          ["Distribution conversion", "Newfoundland Power reported all three 4.16 kV Humber feeders converted to 12.5 kV"]
+        ]
+      },
+      {
+        label: "2022 DISTRIBUTION PROJECT CLOSEOUT",
+        sourceId: "np-2023-capex-report-2022",
+        pages: "physical PDF pp. 10 and 21",
+        facts: [
+          ["Approved", "$1.355 million"],
+          ["Actual", "$910,000"],
+          ["Carryover", "$0"],
+          ["Schedule and cost", "completed ahead of schedule and $445,000 below budget"]
+        ]
+      },
+      {
         label: "2025 REPAIR DURATION RECORD",
         sourceId: "np-2026-nlh-np-014",
         pages: "physical PDF p. 1",
@@ -9428,6 +9457,16 @@ const earlyFeederMapProfiles = [
         facts: [
           ["Project", "Broad Cove Substation Refurbishment and Modernization"],
           ["Filed status", "deferred from 2023 for further engineering assessment; planned for 2025 in this filing"]
+        ]
+      },
+      {
+        label: "NOVEMBER 22, 2022 RADIAL SUPPLY FAULT",
+        sourceId: "np-2022-q4-report",
+        pages: "physical PDF p. 11",
+        facts: [
+          ["Event", "a fault on the radial transmission supply caused a Broad Cove station outage"],
+          ["Customers interrupted", "approximately 17,300 in the Portugal Cove-St. Philip's and Bell Island area"],
+          ["Customer outage minutes", "2,285,000"]
         ]
       }
     ]
@@ -17408,6 +17447,37 @@ export const stationProfiles = [
           ["Proposed work", "replace all three hydraulic reclosers with digital reclosers"],
           ["Communications", "establish a new channel and integrate all three reclosers with Newfoundland Power SCADA"]
         ]
+      },
+      {
+        label: "2022 SPF-01 LOAD GROWTH WORK",
+        sourceId: "np-2022-feeder-growth",
+        pages: "physical PDF pp. 402 to 403 and 407",
+        facts: [
+          ["Feeder", "SPF-01; 12.5 kV; approximately 1,200 customers in Clarke's Beach and North River"],
+          ["Affected section", "3.8 km"],
+          ["Filed work", "convert 1.2 km from two phase to three phase and 2.6 km from single phase to three phase; reconductor both sections from #6 copper to 4/0 AASC"],
+          ["Measured current", "approximately 145 A on the single-phase section"],
+          ["Planning values", "132 A winter rating for new #6 copper; 85 A single-phase planning maximum; 50 A neutral current"],
+          ["Approved allocation", "$600,000"]
+        ]
+      },
+      {
+        label: "Q4 2022 SPF-01 COMPLETION",
+        sourceId: "np-2022-q4-report",
+        pages: "physical PDF p. 13",
+        facts: [
+          ["Project status", "Newfoundland Power reported the SPF-01 load growth upgrade complete"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "2022 FILED SPF-01 ROUTE",
+    referenceSheets: [
+      {
+        title: "SPF-01 three-phase conversion and reconductoring",
+        image: "./reference-maps/spf-01-2022-upgrade.jpeg",
+        alt: "Filed SPF-01 map showing the 1.2 kilometre two-phase conversion and 2.6 kilometre single-phase conversion to 4/0 AASC",
+        sourceId: "np-2022-feeder-growth",
+        pages: "physical PDF p. 402"
       }
     ]
   },

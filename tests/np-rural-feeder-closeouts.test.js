@@ -58,7 +58,7 @@ test("source ledger includes reliability and closeout records", () => {
   const expected = new Map([
     ["np-2019-capex-report-2018", "physical PDF p. 8"],
     ["np-2022-ca-np-034", "physical PDF pp. 1 to 3"],
-    ["np-2023-capex-report-2022", "physical PDF p. 10"]
+    ["np-2023-capex-report-2022", "physical PDF pp. 4, 10, 13, 17 to 18 and 21"]
   ]);
   for (const [id, pages] of expected) {
     const source = sources.find((candidate) => candidate.id === id);
