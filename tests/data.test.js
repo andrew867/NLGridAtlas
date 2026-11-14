@@ -484,7 +484,7 @@ test("Deer Lake keeps the dated voltage records and approved DLK-03 work separat
 
 test("island terminal records retain page-level sources", async () => {
   const sourceIds = new Set(sources.map((source) => source.id));
-  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "PRV", "BUC", "DLK", "DLP", "BRH", "PBR", "PLP", "BRC", "SAA", "SAD", "RWC", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "GFC", "STV", "MAS", "CBC", "VBN", "SDP", "USL", "GRC", "CAT", "HLA", "HRDGT2"]);
+  assert.deepEqual(islandTerminalRecords.map((record) => record.code), ["SUN", "STB", "BDE", "PRV", "BUC", "DLK", "DLP", "BRH", "WDL", "PBR", "PLP", "BRC", "SAA", "SAD", "RWC", "HAW", "HOW", "SBR", "DOY", "GRB", "EHW", "BBK", "GFS", "GFC", "STV", "MAS", "CBC", "VBN", "SDP", "USL", "GRC", "CAT", "HLA", "HRDGT2"]);
   for (const record of islandTerminalRecords) {
     assert.ok(allowedStates.has(record.status));
     assert.ok(record.facts.length > 0);

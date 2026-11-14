@@ -33,7 +33,7 @@ test("1977 station structures are attached to their station records", () => {
 });
 
 test("1977 Greenhill conflict, carrier links and Unit 7 exciter are retained", () => {
-  assert.match(recordText("GRH"), /1975 TO 1977 INSTALLATION DATE CONFLICT/);
+  assert.match(recordText("GRH"), /1975 TO 1977 FACILITY DATE CONFLICT/);
   const carrier = timeline.find((entry) => entry.date === "1977" && /carrier links/.test(entry.title));
   assert.match(carrier.body, /TL232/);
   assert.match(carrier.body, /TL205/);

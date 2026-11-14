@@ -520,6 +520,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1975-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1975", "Newfoundland Power peak demand", "Hydro system peak", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "nlh-1975-wiltondale",
+    year: 2012,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2013 Capital Budget Application, Wiltondale Terminal Station",
+    topics: ["1975", "Wiltondale", "WDL", "TL226", "TL229", "66 kV", "12.5 kV"],
+    pages: "physical PDF pp. 766 to 775",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013Capital/files/application/NLH2013ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1975-holyrood-stage2",
+    year: 2016,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2017 Capital Budget Application, Holyrood Terminal Support Structures",
+    topics: ["1975", "Holyrood", "terminal station", "Stage 2", "aluminum structures"],
+    pages: "physical PDF p. 334",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202016-07-28.PDF"
+  },
+  {
+    id: "np-1975-burin-network",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2002 Burin Peninsula Engineering Review, 66 kV Network",
+    topics: ["1975", "305L", "Greenhill", "Webbers Cove", "Laurentian", "66 kV"],
+    pages: "physical PDF p. 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf"
+  },
+  {
+    id: "np-2026-100l",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "2026 Capital Budget Application, Transmission Line 100L Rebuild",
+    topics: ["1975", "100L", "Sunnyside", "Clarenville", "138 kV", "H-frame"],
+    pages: "physical PDF p. 96",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
+  },
+  {
     id: "nlh-1976-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8538,6 +8588,25 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1975-system-record",
+    scope: "1975 demand, terminal and substation construction, generation commissioning and transmission construction",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1975-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "nlh-stv-condition-2026", pages: "physical PDF pp. 5 to 10" },
+      { sourceId: "np-2027-greenhill-refurbishment", pages: "physical PDF pp. 14, 44 to 45" },
+      { sourceId: "np-1977-greenhill-installation", pages: "physical PDF p. 11" },
+      { sourceId: "nlh-1975-holyrood-stage2", pages: "physical PDF p. 334" },
+      { sourceId: "nlh-1975-wiltondale", pages: "physical PDF pp. 766 to 775" },
+      { sourceId: "np-2013-substation-modernization", pages: "physical PDF p. 277" },
+      { sourceId: "np-2017-chamberlains", pages: "physical PDF p. 237" },
+      { sourceId: "np-2027-laurentian", pages: "physical PDF p. 466" },
+      { sourceId: "np-2024-old-perlican", pages: "physical PDF p. 366" },
+      { sourceId: "np-1975-burin-network", pages: "physical PDF p. 5" },
+      { sourceId: "np-2026-100l", pages: "physical PDF p. 96" }
+    ]
+  },
+  {
     id: "np-1976-system-record",
     scope: "1976 demand, transmission construction, station construction and Hardwoods gas-turbine equipment",
     status: "unresolved",
@@ -8892,6 +8961,78 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1975",
+    category: "load",
+    title: "Newfoundland Power peak demand was 488.2 MW",
+    body: "The historical demand table reports Hydro system peak demand of 527 MW. It does not print an Island transmission peak for 1975.",
+    sourceId: "nlh-1975-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1975",
+    category: "generation",
+    title: "Stephenville gas-turbine plant entered service",
+    body: "The plant has two nominal 25 MW Rolls-Royce Olympus C gas generators coupled through clutches to one power turbine and a shared 63.5 MVA generator. It provides standby generation and synchronous-condenser service.",
+    sourceId: "nlh-stv-condition-2026",
+    pages: "physical PDF pp. 5 to 10",
+    status: "reported"
+  },
+  {
+    date: "1975 to 1977",
+    category: "generation",
+    title: "Greenhill facility dates remain unresolved",
+    body: "The 2027 filing says the turbine was commissioned in 1975, while the 2002 engineering review says it was installed in 1977. The 2027 filing also dates Greenhill Substation to 1975 on physical page 14 and 1977 on physical page 45.",
+    sourceId: "np-2027-greenhill-refurbishment",
+    pages: "physical PDF pp. 14 and 44 to 45; compare 2002 review physical PDF p. 11",
+    status: "unresolved"
+  },
+  {
+    date: "1975",
+    category: "station",
+    title: "Holyrood Terminal Stage 2 was completed",
+    body: "The second construction stage used aluminum support structures. The later filing identifies Stage 1 in 1965, Stage 2 in 1975 and Stage 3 in 1982.",
+    sourceId: "nlh-1975-holyrood-stage2",
+    pages: "physical PDF p. 334",
+    status: "reported"
+  },
+  {
+    date: "1975",
+    category: "station",
+    title: "Wiltondale Terminal Station was constructed",
+    body: "The station takes a 2.4 km, 66 kV tap from TL226, supplies TL229 through breaker B1L29, and transforms 66 kV to 12.5 kV for local distribution.",
+    sourceId: "nlh-1975-wiltondale",
+    pages: "physical PDF pp. 767 and 771 to 773",
+    status: "reported"
+  },
+  {
+    date: "1975",
+    category: "station",
+    title: "Four Newfoundland Power substations were built",
+    body: "Later station histories date Kenmount, Chamberlains, Laurentian and Old Perlican to 1975.",
+    sourceId: "np-2013-substation-modernization",
+    pages: "physical PDF p. 277; compare the cited station histories",
+    status: "reported"
+  },
+  {
+    date: "1975",
+    category: "network",
+    title: "305L entered the Burin Peninsula 66 kV loop",
+    body: "The 2002 engineering review identifies 305L as 1975 construction between Greenhill, Webbers Cove and Laurentian. It also records partial storm-damage rebuilds in 1996 and 1998.",
+    sourceId: "np-1975-burin-network",
+    pages: "physical PDF p. 5",
+    status: "reported"
+  },
+  {
+    date: "1975",
+    category: "network",
+    title: "The Clarenville connection on 100L was built",
+    body: "The later asset filing dates the 2 km section connecting 100L to Clarenville Substation to 1975. The remainder of the 34.13 km, 138 kV H-frame line dates to 1964.",
+    sourceId: "np-2026-100l",
+    pages: "physical PDF p. 96",
     status: "reported"
   },
   {
@@ -12045,8 +12186,8 @@ export const components = {
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
     summary: "Revision 19 of drawing A0-1403-500-E-001, dated March 16, 2015, is the latest published whole-plant as-built arrangement located. It links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. Later records establish component replacements and operating changes without publishing a newer complete one-line.",
-    data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["1988 Unit 1 uprate", "150 MW to 175 MW"], ["1988 T4 spare position", "former T2 transformer; 115/152/190 MVA, 230/16 kV"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"], ["2025 terminal work", "T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced"]],
-    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1988-holyrood-unit1", "physical PDF p. 5"), sourceRef("nlh-1988-holyrood-t4", "physical PDF p. 229"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
+    data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["Terminal construction stages", "Stage 1 in 1965; Stage 2 in 1975; Stage 3 in 1982"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["1988 Unit 1 uprate", "150 MW to 175 MW"], ["1988 T4 spare position", "former T2 transformer; 115/152/190 MVA, 230/16 kV"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"], ["2025 terminal work", "T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced"]],
+    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1975-holyrood-stage2", "physical PDF p. 334"), sourceRef("nlh-1988-holyrood-unit1", "physical PDF p. 5"), sourceRef("nlh-1988-holyrood-t4", "physical PDF p. 229"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
   },
   "hrd-breaker-program": {
     diagram: "hrd", status: "reported", code: "HRD / 230 kV BREAKERS", title: "Holyrood 230 kV breaker replacement program",
@@ -12839,7 +12980,7 @@ export const islandTerminalRecords = [
       label: "1983 to 1984 ring bus / 2014 breaker records / 2003 transformer ratings / 2024 routes",
       buses: [{ id: "b1", label: "bus B3", voltage: "230 kV", y: 165 }, { id: "b2", label: "bus B1", voltage: "138 kV", y: 610 }, { id: "b3", label: "bus B2", voltage: "66 kV", y: 860 }],
       transformers: [{ label: "T2", rating: "45/60/75 MVA", from: "b1", to: "b2", toY: 410, x: 560 }, { label: "T1", rating: "25/33.3/41.7 MVA", from: "b2", to: "b3", x: 700 }],
-      circuits: [{ label: "TL247", destination: "Cat Arm", bus: "b1", destinationCode: "CAT", breaker: "B3L47", x: 220 }, { label: "TL248", destination: "Massey Drive", bus: "b1", destinationCode: "MAS", breaker: "B3L48", x: 900 }, { label: "TL226", destination: "Wiltondale", bus: "b3", breaker: "B2L26", x: 220 }, { label: "TL225", destination: "Deer Lake Power", bus: "b3", destinationCode: "DLP", breaker: "B2L25", x: 900 }],
+      circuits: [{ label: "TL247", destination: "Cat Arm", bus: "b1", destinationCode: "CAT", breaker: "B3L47", x: 220 }, { label: "TL248", destination: "Massey Drive", bus: "b1", destinationCode: "MAS", breaker: "B3L48", x: 900 }, { label: "TL226", destination: "Wiltondale", bus: "b3", destinationCode: "WDL", breaker: "B2L26", x: 220 }, { label: "TL225", destination: "Deer Lake Power", bus: "b3", destinationCode: "DLP", breaker: "B2L25", x: 900 }],
       rings: [{
         label: "Deer Lake 138 kV ring bus",
         voltage: "138 kV",
@@ -12908,9 +13049,51 @@ export const islandTerminalRecords = [
       label: "2013 station voltage / 2018 filed routes",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "66 kV" }],
       transformers: [{ label: "Station transformer", rating: "138/66 kV", from: "b1", to: "b2" }],
-      circuits: [{ label: "TL239", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }, { label: "TL259", destination: "Peter's Barron", bus: "b1", destinationCode: "PBR" }, { label: "TL226", destination: "Wiltondale", bus: "b2" }]
+      circuits: [{ label: "TL239", destination: "Deer Lake", bus: "b1", destinationCode: "DLK" }, { label: "TL259", destination: "Peter's Barron", bus: "b1", destinationCode: "PBR" }, { label: "TL226", destination: "Wiltondale", bus: "b2", destinationCode: "WDL" }]
     },
     sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+  },
+  {
+    code: "WDL",
+    name: "Wiltondale Terminal Station",
+    status: "reported",
+    facts: [
+      ["Constructed", "1975"],
+      ["Supply", "2.4 km, 66 kV tap from TL226"],
+      ["Transmission", "TL229 to Glenburnie through breaker B1L29"],
+      ["Distribution", "T1 steps 66 kV down to 12.5 kV; WDL-L1 supplies Wiltondale"]
+    ],
+    historyRecords: [
+      {
+        label: "2008 TO 2009 STATION WORK",
+        sourceId: "nlh-1975-wiltondale",
+        pages: "physical PDF pp. 772 to 773",
+        facts: [
+          ["2008 transformer failure", "T1 was replaced with a used unit purchased from Newfoundland Power"],
+          ["2009 work", "fence replacement and yard extension for mobile-substation connection"]
+        ]
+      },
+      {
+        label: "2007 TO 2011 FORCED-OUTAGE RECORD",
+        sourceId: "nlh-1975-wiltondale",
+        pages: "physical PDF p. 774",
+        facts: [
+          ["Five-year T-SAIFI", "7.80 interruptions per delivery point"],
+          ["Five-year T-SAIDI", "179.80 hours"]
+        ]
+      }
+    ],
+    diagram: {
+      label: "2012 filed existing arrangement",
+      buses: [{ id: "b1", label: "station bus", voltage: "66 kV" }, { id: "b2", label: "distribution bus", voltage: "12.5 kV" }],
+      transformers: [{ label: "T1", rating: "66/12.5 kV", from: "b1", to: "b2" }],
+      circuits: [
+        { label: "TL226 tap", destination: "Deer Lake to Rocky Harbour route", bus: "b1", link: false },
+        { label: "TL229", destination: "Glenburnie", bus: "b1", breaker: "B1L29", link: false },
+        { label: "WDL-L1", destination: "Wiltondale distribution", bus: "b2", link: false }
+      ]
+    },
+    sources: [sourceRef("nlh-1975-wiltondale", "physical PDF pp. 766 to 775")]
   },
   {
     code: "PBR",
@@ -14180,7 +14363,7 @@ const filedFeederMapProfiles = [
       sourceId: "np-2027-greenhill-refurbishment",
       pages: "physical PDF pp. 40 and 43 to 46",
       facts: [
-        ["Station built", "1977; 66 kV, 12.5 kV, and 13.8 kV infrastructure"],
+        ["Station construction date", "the same filing gives 1975 on physical PDF p. 14 and 1977 on physical PDF p. 45"],
         ["Transmission connections", "301L to Salt Pond and 305L to Laurentian, both operating at 66 kV"],
         ["Distribution", "GRH-01, GRH-02, and GRH-03; approximately 2,300 Grand Bank customers"],
         ["Existing turbine", "Curtiss Wright unit commissioned in 1975; originally 25 MW and derated to 20 MW in 1984"],
@@ -14200,13 +14383,14 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
-        label: "1975 TO 1977 INSTALLATION DATE CONFLICT",
+        label: "1975 TO 1977 FACILITY DATE CONFLICT",
         sourceId: "np-1977-greenhill-installation",
-        pages: "physical PDF p. 11; compare 2027 filing physical PDF pp. 40 and 45",
+        pages: "physical PDF p. 11; compare 2027 filing physical PDF pp. 14 and 44 to 45",
         facts: [
           ["2002 engineering review", "25 MW gas turbine installed near Grand Bank in 1977"],
-          ["2027 facility record", "Curtiss Wright unit manufactured in 1975; Greenhill substation constructed in 1977"],
-          ["Record state", "the filings do not reconcile turbine manufacture, installation and commissioning dates"]
+          ["2027 turbine record", "Curtiss Wright unit commissioned in 1975"],
+          ["2027 substation record", "physical page 14 says constructed in 1975; physical page 45 says constructed in 1977"],
+          ["Record state", "the filings do not reconcile turbine installation or substation construction dates"]
         ]
       },
       {

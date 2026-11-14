@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1975 system record from historical demand, terminal-station, generation, substation, transmission and later asset records.
+- Added the 488.2 MW Newfoundland Power peak and 527 MW Hydro system peak, Wiltondale Terminal Station, Holyrood Terminal Stage 2, the Stephenville gas-turbine plant, four Newfoundland Power substations, 305L and the Clarenville connection on 100L.
+- Preserved the Greenhill facility conflicts. The 2027 filing says the turbine was commissioned in 1975 while the 2002 review says it was installed in 1977. The 2027 filing dates Greenhill Substation to 1975 on physical page 14 and 1977 on physical page 45.
+- Completed NPREG-053 and opened NPREG-054 for the surviving 1974 system and annual records.
 - Reconstructed the surviving 1976 system record from historical demand, transmission-line, station and generation records.
 - Added the 585.4 MW Newfoundland Power peak and 681 MW Hydro system peak, TL231 from Bay d'Espoir to Stony Brook, TL229 from Wiltondale to Glenburnie, 123L from Clarenville to Catalina, and the 1976 Marystown, Glovertown, Springfield, Fermeuse and new Grand Falls station records.
 - Preserved the Hardwoods commissioning conflict between the 2014 criticality assessment's 1976 service date and the 2010 Capital Plan table's 1977 date. Added the two Olympus C gas generators, Curtiss-Wright power turbine, 13.8/66 kV transformer and synchronous-condenser role to the interactive Hardwoods record.
@@ -350,7 +354,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1975 system and annual records under `NPREG-053`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1974 system and annual records under `NPREG-054`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

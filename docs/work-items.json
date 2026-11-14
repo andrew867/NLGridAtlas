@@ -1334,9 +1334,21 @@
       "title": "Reconcile Newfoundland Power 1975 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1975 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-052"],
+      "completion_evidence": ["research/NP_1975_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1975-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the reported utility peaks. Later primary records establish Wiltondale Terminal Station, Holyrood Terminal Stage 2, the Stephenville gas-turbine plant, four Newfoundland Power substations, 305L and the Clarenville section of 100L. Greenhill remains unresolved because the 2027 filing conflicts with the 2002 review on turbine dates and contradicts itself on the substation construction year."
+    },
+    {
+      "id": "NPREG-054",
+      "title": "Reconcile Newfoundland Power 1974 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1974 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-053"],
       "completion_evidence": [],
       "blocker": null,
       "notes": "Start with historical demand, transmission-line construction, station assets, generation equipment and dated utility records."
