@@ -520,6 +520,76 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1971-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1971", "Newfoundland Power peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "nlh-1971-holyrood-stage1",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Holyrood Stage I History",
+    topics: ["1971", "Holyrood", "Stage I", "Unit 1", "Unit 2", "150 MW"],
+    pages: "physical PDF p. 910",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1971-tl209",
+    year: 2002,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2003 Capital Budget Application, TL209 Insulator Replacement",
+    topics: ["1971", "TL209", "Stephenville", "Bottom Brook", "230 kV", "wood H-frame"],
+    pages: "physical PDF p. 56",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionAtoGtab1.pdf"
+  },
+  {
+    id: "np-1971-salt-pond-transformer",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "2002 Burin Peninsula Engineering Review, Salt Pond System Transformer",
+    topics: ["1971", "Salt Pond", "system transformer", "138 kV", "66 kV", "41.6 MVA", "date conflict"],
+    pages: "physical PDF pp. 6 and 9",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf"
+  },
+  {
+    id: "nlh-1972-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1972", "Newfoundland Power peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "nlh-1972-cbc-construction",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Review of Industrial Customer Specifically Assigned Assets, Come By Chance",
+    topics: ["1972", "Come By Chance", "terminal station", "TL207", "TL237", "230 kV", "13.8 kV"],
+    pages: "physical PDF p. 8",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017GRA/report/From%20NLH%20-%20Review%20of%20Industrial%20Customer%20Specifically%20Assigned%20Assets%20Report%20-%20Revision%201%20-%202018-03-05.PDF"
+  },
+  {
+    id: "np-1972-port-union-diesel",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2003 General Rate Application, Port Union Diesel Depreciation Record",
+    topics: ["1972", "Port Union", "diesel generation", "year in service", "probable retirement"],
+    pages: "physical PDF p. 810",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/Application/CompleteApplicationRev1.pdf"
+  },
+  {
     id: "nlh-1973-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -6615,7 +6685,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "2025 Capital Budget Application",
     topics: ["Pulpit Rock", "59L", "PUL-T1", "PUL-T2", "transformer replacement"],
-    pages: "PDF pp. 88 to 90, 458, 463 to 470",
+    pages: "physical PDF pp. 88 to 100, 413, 458, 463 to 470 and 492",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF"
   },
@@ -8668,6 +8738,37 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1971-system-record",
+    scope: "1971 demand, Holyrood Stage I, Bayview construction, 55L and TL209 construction, dated transformer equipment and the Stephenville terminal estimate",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1971-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "nlh-1971-holyrood-stage1", pages: "physical PDF p. 910" },
+      { sourceId: "np-2018-bayview", pages: "physical PDF p. 231" },
+      { sourceId: "np-2023-55l", pages: "physical PDF p. 440" },
+      { sourceId: "nlh-1971-tl209", pages: "physical PDF p. 56" },
+      { sourceId: "nlh-system-design-2015", pages: "physical PDF p. 3" },
+      { sourceId: "np-1971-salt-pond-transformer", pages: "physical PDF pp. 6 and 9" },
+      { sourceId: "np-2018-harbour-grace", pages: "physical PDF p. 230" },
+      { sourceId: "nlh-stv-assigned-assets-2014", pages: "physical PDF p. 6" }
+    ]
+  },
+  {
+    id: "np-1972-system-record",
+    scope: "1972 demand, Hardwoods terminal construction, transmission construction, dated substation structures, transformer equipment, diesel generation and the Come By Chance date conflict",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1972-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "oxen-2013", pages: "physical PDF p. 17" },
+      { sourceId: "np-2025-capital", pages: "physical PDF pp. 100 and 492" },
+      { sourceId: "np-1978-substation-structures", pages: "physical PDF pp. 192, 194 and 200" },
+      { sourceId: "np-2017-catalina", pages: "physical PDF p. 234" },
+      { sourceId: "np-1972-port-union-diesel", pages: "physical PDF p. 810" },
+      { sourceId: "nlh-1972-cbc-construction", pages: "physical PDF p. 8" },
+      { sourceId: "nlh-1974-come-by-chance-assets", pages: "physical PDF p. 19" }
+    ]
+  },
+  {
     id: "np-1973-system-record",
     scope: "1973 demand, terminal and substation construction, transmission construction and dated station equipment",
     status: "reported",
@@ -9076,13 +9177,112 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "1971",
+    category: "load",
+    title: "Newfoundland Power peak demand was 267.5 MW",
+    body: "The historical table does not print Hydro or Island transmission peak demand for 1971.",
+    sourceId: "nlh-1971-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1971",
+    category: "generation",
+    title: "Holyrood Stage I entered service",
+    body: "Stage I brought Units 1 and 2 on line at 150 MW each.",
+    sourceId: "nlh-1971-holyrood-stage1",
+    pages: "physical PDF p. 910",
+    status: "reported"
+  },
+  {
+    date: "1971",
+    category: "station",
+    title: "Bayview entered service",
+    body: "Bayview was built as a transmission and distribution substation with three 66 kV lines. A later register dates its present 66 kV and 12.47 kV steel structures to 1972.",
+    sourceId: "np-2018-bayview",
+    pages: "physical PDF p. 231",
+    status: "reported"
+  },
+  {
+    date: "1971",
+    category: "network",
+    title: "55L and TL209 entered service",
+    body: "The 66 kV 55L corridor from Blaketown to Clarkes Pond was built in 1971 except for a 1.0 km section built in 1968. The 21 km, 230 kV TL209 connected Bottom Brook and Stephenville on wood H-frame structures.",
+    sourceId: "np-2023-55l",
+    pages: "physical PDF p. 440; compare 2003 Hydro Capital p. 56",
+    status: "reported"
+  },
+  {
+    date: "1971",
+    category: "equipment",
+    title: "Dated transformer and terminal equipment entered service",
+    body: "Later filings date Harbour Grace transformer HGR-T2 to 1971 and estimate Stephenville Terminal Station in service that year. The Stephenville asset table lists a 69 kV ground-switch cost dated January 1, 1971.",
+    sourceId: "np-2018-harbour-grace",
+    pages: "physical PDF p. 230; compare IC-NLH-097 Revision 1 p. 6",
+    status: "reported"
+  },
+  {
+    date: "1971",
+    category: "equipment",
+    title: "Salt Pond transformer date is unresolved",
+    body: "The 2002 engineering review calls the sole 138/66 kV, 41.6 MVA system transformer a 1971-vintage unit and says it was installed in 1971. The 2017 station filing dates SPO-T4 to 1973.",
+    sourceId: "np-1971-salt-pond-transformer",
+    pages: "physical PDF pp. 6 and 9; compare 2017 Capital Budget Application p. 231",
+    status: "unresolved"
+  },
+  {
+    date: "1972",
+    category: "load",
+    title: "Newfoundland Power peak demand was 316.1 MW",
+    body: "The historical table does not print Hydro or Island transmission peak demand for 1972.",
+    sourceId: "nlh-1972-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
     date: "1972",
     category: "station",
     title: "Hardwoods entered service",
-    body: "The original Hardwoods terminal station was built in 1972.",
+    body: "The original Hardwoods terminal station was built in 1972. Transformer T1 was rated 40/53.3/66.6 MVA at 230/66 kV in the later station history.",
     sourceId: "oxen-2013",
-    pages: "PDF p. 17",
+    pages: "physical PDF p. 17",
     status: "reported"
+  },
+  {
+    date: "1972",
+    category: "network",
+    title: "114L entered service",
+    body: "The 66 kV line ran north from Clarke's Head through Boyd's Cove to Summerford. Its Gander Bay end is normally open in the later operating arrangement.",
+    sourceId: "np-2025-capital",
+    pages: "physical PDF pp. 100 and 492",
+    status: "reported"
+  },
+  {
+    date: "1972",
+    category: "equipment",
+    title: "Dated station structures and transformer equipment entered service",
+    body: "Later registers date Molloy's Lane's 12.47 kV steel structure, Clarkes Pond's 66 kV and 12.47 kV steel structures, Bayview's 66 kV and 12.47 kV steel structures, Islington's 12.47 kV structure, and Catalina transformer CAT-T1 to 1972.",
+    sourceId: "np-1978-substation-structures",
+    pages: "physical PDF pp. 192, 194 and 200; compare 2017 Capital Budget Application p. 234",
+    status: "reported"
+  },
+  {
+    date: "1972",
+    category: "generation",
+    title: "Port Union diesel year in service",
+    body: "The 2003 depreciation schedule records 1972 as the Port Union diesel facility's year in service and 2005 as its probable retirement year.",
+    sourceId: "np-1972-port-union-diesel",
+    pages: "physical PDF p. 810",
+    status: "reported"
+  },
+  {
+    date: "1972",
+    category: "station",
+    title: "Come By Chance construction dates conflict",
+    body: "A 2018 facility review says the terminal was constructed in 1972. The specifically assigned asset register estimates the terminal in service in 1973 and dates the listed transformers and terminal assets to January 1, 1974.",
+    sourceId: "nlh-1972-cbc-construction",
+    pages: "physical PDF p. 8; compare IC-NLH-097 physical PDF p. 19",
+    status: "unresolved"
   },
   {
     date: "1973",
@@ -12316,7 +12516,7 @@ export const components = {
     status: "verified",
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
-    summary: "Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A later project history dates the B1B2 addition to the 1992 T4 project. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
+    summary: "The original terminal station was built in 1972. Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A later project history dates the B1B2 addition to the 1992 T4 project. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
     data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["1981 B7C1", "Westinghouse 690SP2500 SF6 breaker switching a 69 kV capacitor bank"], ["1992 terminal work", "T4 and 230 kV bus-tie breaker added"], ["T5", "45/60/75 MVA, 66/13.8 kV; transformer register dates it to 1985"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["1985 station service", "Emergency diesel added"], ["1992 gas-turbine work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 gas-turbine work", "End B engine overhauled; both air-start compressors, air lines, valves and the control panel replaced"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
     sources: [sourceRef("nlh-1981-hardwoods-b7c1", "physical PDF pp. 72 to 73"), sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("nlh-1992-hardwoods-bus-tie", "physical PDF p. 16"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1985-hardwoods-t5", "physical PDF p. 70"), sourceRef("nlh-1985-hardwoods-diesel", "physical PDF p. 128"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
@@ -12432,7 +12632,7 @@ export const components = {
   },
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
-    summary: "Revision 19 of drawing A0-1403-500-E-001, dated March 16, 2015, is the latest published whole-plant as-built arrangement located. It links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. Later records establish component replacements and operating changes without publishing a newer complete one-line.",
+    summary: "Holyrood Stage I brought Units 1 and 2 on line in 1971 at 150 MW each. Revision 19 of drawing A0-1403-500-E-001, dated March 16, 2015, is the latest published whole-plant as-built arrangement located. It links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. Later records establish component replacements and operating changes without publishing a newer complete one-line.",
     data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["Terminal construction stages", "Stage 1 in 1965; Stage 2 in 1975; Stage 3 in 1982"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["1988 Unit 1 uprate", "150 MW to 175 MW"], ["1988 T4 spare position", "former T2 transformer; 115/152/190 MVA, 230/16 kV"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"], ["2025 terminal work", "T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced"]],
     sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1975-holyrood-stage2", "physical PDF p. 334"), sourceRef("nlh-1988-holyrood-unit1", "physical PDF p. 5"), sourceRef("nlh-1988-holyrood-t4", "physical PDF p. 229"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
   },
@@ -13830,6 +14030,12 @@ export const islandTerminalRecords = [
     },
     historyRecords: [
       {
+        label: "1971 TERMINAL ESTIMATE",
+        sourceId: "nlh-stv-assigned-assets-2014",
+        pages: "physical PDF p. 6",
+        facts: [["Terminal header", "estimated in service in 1971"], ["Dated asset", "additional 69 kV ground-switch cost dated January 1, 1971"], ["Later station boundary", "the Newfoundland Power 66 kV station record dates that station to 1976"]]
+      },
+      {
         label: "1988 POWER-TURBINE CASING REPLACEMENT",
         sourceId: "nlh-1988-gas-turbine-casings",
         pages: "physical PDF p. 166",
@@ -13973,6 +14179,11 @@ export const islandTerminalRecords = [
     status: "verified",
     facts: [["T1 and T2, 2014 facility review", "230/13.8 kV, 30/40/50 MVA each; both manufactured in 1972"], ["230 kV bus, 2014 facility review", "B1 and B2 are joined through two disconnects and one SF6 bus-tie breaker"], ["13.8 kV buses, 2014 filed one-line", "T1 and T2 feed separate sections; breaker 52-3 is normally open between them"], ["Station service, 2014 facility review", "Two 75 kVA, 13,800/230-115 V transformers"], ["Reactive equipment", "Four 38.35 MVAR, 230 kV capacitor banks installed in 2011/2012; Nalcor owned the banks and Hydro operated and maintained them"], ["Cancelled grounding project, 2010", "The customer-funded neutral-grounding-resistor project was cancelled after NARL did not approve cost recovery; reported actual expenditure was $0"], ["Customer assignment", "T1 and T2 serve only the Braya refinery; Braya was responsible for the approved bushing-replacement capital cost"], ["Transformer work, Q4 2024", "Hydro reported transformer bushing replacement completed at Come By Chance"], ["Protection work", "TL237 protection at Come By Chance and Western Avalon was completed in 2025; T1 and T2 relay work was planned for Q4 2026 and awaited Braya schedule confirmation in September 2026"], ["2026 forecast and proposed work", "Control-building fire-protection work remained forecast for 2026; reclosing-controller replacement was proposed for 2027/2028"], ["230 kV circuits", "TL207 to Sunnyside; TL237 to Western Avalon"]],
     historyRecords: [{
+      label: "1972 TO 1974 CONSTRUCTION-DATE RECORD",
+      sourceId: "nlh-1972-cbc-construction",
+      pages: "physical PDF p. 8; compare IC-NLH-097 physical PDF p. 19",
+      facts: [["2018 facility review", "terminal constructed in 1972 to supply the refinery"], ["Terminal header", "estimated in service in 1973"], ["Listed asset date", "January 1, 1974"]]
+    }, {
       label: "1974 SPECIFICALLY ASSIGNED ASSETS",
       sourceId: "nlh-1974-come-by-chance-assets",
       pages: "physical PDF p. 19",
@@ -17465,6 +17676,12 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1972 STRUCTURE REGISTER",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 200",
+        facts: [["66 kV structure", "steel; dated 1972"], ["12.47 kV structure", "steel; dated 1972"], ["Station boundary", "the later station history says Bayview was built in 1971"]]
+      },
+      {
         label: "1982 CONTROL BUILDING AND PROTECTION",
         sourceId: "np-2018-bayview",
         pages: "physical PDF pp. 233 to 234",
@@ -19130,6 +19347,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1971 TO 1973 SYSTEM-TRANSFORMER DATE CONFLICT",
+        sourceId: "np-1971-salt-pond-transformer",
+        pages: "physical PDF pp. 6 and 9; compare 2017 Capital Budget Application p. 231",
+        facts: [["2002 engineering review", "sole 138/66 kV system transformer; 41.6 MVA; installed in 1971"], ["2017 station filing", "SPO-T4 installed in 1973"], ["Boundary", "the filings do not explain whether the dates refer to different equipment states or whether one date is incorrect"]]
+      },
       {
         label: "1973 SPO-T4 INSTALLATION",
         sourceId: "np-2017-salt-pond",
@@ -21041,6 +21264,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1972 STRUCTURE REGISTER",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 194",
+        facts: [["Transformer capacity", "20 MVA"], ["66 kV structure", "steel; dated 1972"], ["12.47 kV structure", "steel; dated 1972"]]
+      },
+      {
         label: "2007 FILED STATION ARRANGEMENT AND WORK",
         sourceId: "np-2007-capital",
         pages: "physical PDF pp. 161 to 162",
@@ -22681,6 +22910,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1972 CAT-T1 INSTALLATION",
+        sourceId: "np-2017-catalina",
+        pages: "physical PDF p. 234",
+        facts: [["CAT-T1", "138/66 kV; 16.6 MVA; installed in 1972"], ["Station boundary", "the same filing says Catalina station was built in 1976"]]
+      },
+      {
         label: "2006 FILED 123L REHABILITATION",
         sourceId: "np-2006-123l",
         pages: "physical PDF pp. 332 to 338",
@@ -23254,6 +23489,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1972 DIESEL YEAR IN SERVICE",
+        sourceId: "np-1972-port-union-diesel",
+        pages: "physical PDF p. 810",
+        facts: [["Depreciation record", "year in service 1972"], ["Probable retirement", "2005"], ["Recorded life span", "33 years"]]
+      },
+      {
         label: "1984 WOODSTAVE PENSTOCK",
         sourceId: "np-1984-petty-harbour-port-union",
         pages: "physical PDF p. 144",
@@ -23759,6 +24000,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1972 LOW-VOLTAGE STRUCTURE",
+        sourceId: "np-1978-substation-structures",
+        pages: "physical PDF p. 192",
+        facts: [["12.47 kV structure", "steel; dated 1972"], ["66 kV structure", "wood; dated 1967"], ["Station boundary", "the later station history says Molloy's Lane was built in 1960"]]
+      },
       {
         label: "2011 FILED FIBRE ROUTES / JUNE 2012 LEASE DECISION",
         sourceId: "np-2012-fibre-decision",

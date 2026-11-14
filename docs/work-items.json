@@ -1370,12 +1370,36 @@
       "title": "Reconcile Newfoundland Power 1972 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1972 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-055"],
+      "completion_evidence": ["research/NP_1972_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1972-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the reported Newfoundland Power peak. Later primary records establish Hardwoods Terminal Station and T1, 114L, dated structures at Molloy's Lane, Clarkes Pond, Bayview and Islington, Catalina T1, and Port Union diesel. Come By Chance remains unresolved because filings state 1972 construction, estimate 1973 in service and date listed assets to 1974."
+    },
+    {
+      "id": "NPREG-057",
+      "title": "Reconcile Newfoundland Power 1971 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1971 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-056"],
+      "completion_evidence": ["research/NP_1971_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1971-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the reported Newfoundland Power peak. Later primary records establish Holyrood Stage I, Bayview Substation, 55L, TL209, Harbour Grace T2 and the Stephenville terminal estimate. Salt Pond remains unresolved because a 2002 engineering review dates the sole 41.6 MVA system transformer to 1971 while the later station filing dates SPO-T4 to 1973."
+    },
+    {
+      "id": "NPREG-058",
+      "title": "Reconcile Newfoundland Power 1970 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1970 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-057"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with historical demand, Hardwoods terminal evidence, station construction, generation equipment, transmission-line construction and dated asset registers."
+      "notes": "Start with historical demand, terminal and transmission construction, transformer installations, generation equipment and dated communications records."
     },
     {
       "id": "ASSET-001",
