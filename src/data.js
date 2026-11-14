@@ -720,6 +720,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
   },
   {
+    id: "np-2016-12l-completion",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, 12L Rebuild Completion Record",
+    topics: ["12L", "King's Bridge", "Memorial", "transmission rebuild", "distribution underbuild", "voltage conversion"],
+    pages: "physical PDF pp. 480 and 485",
+    status: "verified",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
     id: "np-2016-30l",
     year: 2015,
     organization: "Newfoundland Power",
@@ -2348,6 +2358,56 @@ export const sources = [
     pages: "PDF pp. 37, 42, 256 to 257, 309, 348, 351",
     status: "verified",
     url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2014-transmission-lines",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Transmission Line Rebuild",
+    topics: ["12L", "13L", "18L", "35L", "68L", "transmission rebuild", "line route", "conductor", "wood structures"],
+    pages: "physical PDF pp. 307 to 320",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2014-hearts-content",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Heart's Content Hydro Plant Refurbishment",
+    topics: ["Heart's Content", "hydro plant", "generator rewind", "governor", "protection and control", "switchgear", "penstock"],
+    pages: "physical PDF pp. 26 and 170 to 176",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2014-la-manche",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, La Manche Canal Production Increase",
+    topics: ["La Manche Canal", "Rocky Pond", "Tors Cove", "hydro production", "canal capacity", "spill recovery"],
+    pages: "physical PDF pp. 24 and 215 to 219",
+    status: "proposed",
+    url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2014-reliability-review",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Distribution Reliability Initiative Review",
+    topics: ["distribution reliability", "SAIFI", "SAIDI", "feeder performance", "capital screening"],
+    pages: "physical PDF pp. 334 to 342",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2016-2014-actuals",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Expenditure Status Report, 2014 Project Actuals",
+    topics: ["2014 capital actuals", "Heart's Content", "La Manche Canal", "transmission line rebuild", "forecast expenditure"],
+    pages: "physical PDF pp. 189 and 192",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
   },
   {
     id: "np-2014-springdale",
@@ -5729,10 +5789,55 @@ export const timeline = [
     date: "2013 to 2014",
     category: "station",
     title: "12L rebuilt between Memorial and King's Bridge",
-    body: "The project rebuilt the remaining aerial section of 12L, one of two circuits serving Memorial University, Health Sciences Centre, and Janeway. The filing cites load growth and recent infrastructure additions.",
-    sourceId: "np-2014-capital",
-    pages: "PDF p. 309",
+    body: "Newfoundland Power reported that the 66 kV line rebuild was complete. The associated work replaced six bundled three-phase aerial cables with one open-wire feeder and prepared distribution equipment for 12.5 kV conversion.",
+    sourceId: "np-2016-12l-completion",
+    pages: "physical PDF pp. 480 and 485",
     status: "verified"
+  },
+  {
+    date: "2014 proposed",
+    category: "station",
+    title: "Four 66 kV line sections entered the rebuild program",
+    body: "The filing specified 13L between St. John's Main and Stamp's Lane, 18L between Goulds and Glendale, the former 35L section between Kenmount and Oxen Pond, and 68L between Harbour Grace and Carbonear.",
+    sourceId: "np-2014-transmission-lines",
+    pages: "physical PDF pp. 310 to 312",
+    status: "proposed"
+  },
+  {
+    date: "2015 report",
+    category: "station",
+    title: "Pooled 2014 line-rebuild spending reported",
+    body: "The status report lists a $5.099 million approved budget, $4.522 million spent in 2014, $40,000 spent in 2015, and a $4.664 million forecast total.",
+    sourceId: "np-2016-2014-actuals",
+    pages: "physical PDF p. 192",
+    status: "reported"
+  },
+  {
+    date: "2014 proposed",
+    category: "station",
+    title: "Heart's Content plant refurbishment filed",
+    body: "The filing specified generator, governor-control, protection, control, switchgear, battery, charger, cable, and station-service work at the 2.4 MW plant.",
+    sourceId: "np-2014-hearts-content",
+    pages: "physical PDF pp. 26 and 171 to 175",
+    status: "proposed"
+  },
+  {
+    date: "2014 proposed",
+    category: "station",
+    title: "La Manche Canal capacity increase filed",
+    body: "The filing proposed increasing canal capacity from 6 m3/s to 9 m3/s to recover up to 5.54 GWh per year at Rocky Pond and Tors Cove.",
+    sourceId: "np-2014-la-manche",
+    pages: "physical PDF pp. 215 to 219",
+    status: "proposed"
+  },
+  {
+    date: "2008 to 2012 review",
+    category: "load",
+    title: "Feeder review found no 2014 reliability construction",
+    body: "The five-year review ranked RRD-09, KEN-04, DOY-01, DLK-03, and SUM-01 highest by average annual customer-minutes interrupted. The filing proposed no Distribution Reliability Initiative construction for 2014.",
+    sourceId: "np-2014-reliability-review",
+    pages: "physical PDF pp. 334 and 336",
+    status: "reported"
   },
   {
     date: "2014-01-02",
@@ -8227,6 +8332,18 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2014 FILED 68L REBUILD",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 312",
+        facts: [
+          ["Circuit", "68L between Harbour Grace and Carbonear; 66 kV"],
+          ["Original section", "5.15 km and 50 two-pole and three-pole H-frame structures from 1958"],
+          ["Structure detail", "the original H-frames had no crossbraces"],
+          ["Conductor", "non-standard 4/0 ACSR"],
+          ["Filed cost", "$770,000"]
+        ]
+      },
+      {
         label: "2018 FILED MODERNIZATION",
         sourceId: "np-2018-harbour-grace",
         pages: "physical PDF pp. 227 to 231",
@@ -8237,6 +8354,16 @@ const filedFeederMapProfiles = [
           ["Transformers", "refurbish HGR-T1 and HGR-T2, upgrade auxiliary protection and add spill containment"],
           ["Protection and control", "install transformer breakers, digital line and transformer relays, a new control building and new control cables"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED 68L ROUTE",
+    referenceSheets: [
+      {
+        title: "2014 filed 68L rebuild route",
+        image: "./reference-maps/68l-2014-route.png",
+        alt: "Filed route drawing for the 68L rebuild between Harbour Grace and Carbonear",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 320"
       }
     ]
   },
@@ -10733,6 +10860,16 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2008 TO 2012 FEEDER RELIABILITY REVIEW",
+        sourceId: "np-2014-reliability-review",
+        pages: "physical PDF pp. 336 and 340",
+        facts: [
+          ["DLK-03 annual average", "2,711 customer interruptions; 409,774 customer-minutes; SAIFI 2.20; SAIDI 5.54 hours"],
+          ["Recorded causes", "broken conductor in November 2009 and one weather event in 2011"],
+          ["2014 decision", "no Distribution Reliability Initiative work required"]
+        ]
+      },
+      {
         label: "2018 FILED DOWNLINE RECLOSER",
         sourceId: "np-2018-distribution-feeder-automation",
         pages: "physical PDF p. 68",
@@ -11496,6 +11633,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2008 TO 2012 FEEDER RELIABILITY REVIEW",
+        sourceId: "np-2014-reliability-review",
+        pages: "physical PDF pp. 336 and 340",
+        facts: [
+          ["DOY-01 annual average", "4,587 customer interruptions; 413,181 customer-minutes; SAIFI 2.79; SAIDI 4.19 hours"],
+          ["Recorded condition", "feeder unbalance from long single-phase taps, plus one weather event in 2009, 2010, and 2012"],
+          ["Separate work", "the filing assigned the single-phase tap issue to the Feeder Additions for Load Growth project"]
+        ]
+      },
+      {
         label: "2009 FILED FEEDER AUTOMATION",
         sourceId: "np-2009-doyles-modernization",
         pages: "physical PDF p. 271",
@@ -12235,6 +12382,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2008 TO 2012 FEEDER RELIABILITY REVIEW",
+        sourceId: "np-2014-reliability-review",
+        pages: "physical PDF pp. 336 and 342",
+        facts: [
+          ["SUM-01 annual average", "5,355 customer interruptions; 400,223 customer-minutes; SAIFI 2.96; SAIDI 3.69 hours"],
+          ["Recorded causes", "salt spray and broken conductor events in 2012"],
+          ["2014 decision", "events classified as isolated; no Distribution Reliability Initiative work required"]
+        ]
+      },
       {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
@@ -15718,6 +15875,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2014 FILED 35L REBUILD, FORMER OXP-KEN SECTION",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 311",
+        facts: [
+          ["Dated endpoint", "Oxen Pond to Kenmount; 66 kV in the 2014 filing"],
+          ["Original section", "3.39 km and 39 single-pole wood structures from the 1959 construction"],
+          ["2012 damage", "three poles failed during Tropical Storm Leslie"],
+          ["Filed conductor", "715.5 ASC"],
+          ["Filed cost", "$514,000"]
+        ]
+      },
+      {
         label: "2019 36L TERMINATION AND ROUTE WORK",
         sourceId: "np-2019-capex-report",
         pages: "physical PDF pp. 8 to 9 and 21",
@@ -15800,6 +15969,13 @@ export const stationProfiles = [
     referenceSheetLabel: "FILED FEEDER ROUTES",
     referenceSheets: [
       {
+        title: "2014 filed former 35L rebuild route",
+        image: "./reference-maps/35l-2014-route.png",
+        alt: "Filed route drawing for the 2014 35L rebuild between Oxen Pond and Kenmount",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 319"
+      },
+      {
         title: "2020 proposed OXP-01 Thorburn Road upgrade",
         image: "./reference-maps/oxp-01-2020-upgrade.png",
         alt: "Filed OXP-01 route drawing showing the Thorburn Road single-phase section proposed for three-phase conversion",
@@ -15833,6 +16009,28 @@ export const stationProfiles = [
       facts: [["KEN-05", "25 kV; KEN-T1/T2; 25.5 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2008 TO 2012 KEN-04 RELIABILITY REVIEW",
+        sourceId: "np-2014-reliability-review",
+        pages: "physical PDF pp. 336 and 341",
+        facts: [
+          ["Annual average", "7,576 customer interruptions; 449,412 customer-minutes; SAIFI 3.12; SAIDI 3.08 hours"],
+          ["2012 causes", "vehicle impact to a pole and one lightning strike"],
+          ["2014 decision", "events classified as isolated; no Distribution Reliability Initiative work required"]
+        ]
+      },
+      {
+        label: "2014 FILED 35L REBUILD, FORMER KEN-OXP SECTION",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 311",
+        facts: [
+          ["Dated endpoint", "Kenmount to Oxen Pond; 66 kV in the 2014 filing"],
+          ["Original section", "3.39 km and 39 single-pole wood structures from the 1959 construction"],
+          ["2012 damage", "three poles failed during Tropical Storm Leslie"],
+          ["Filed conductor", "715.5 ASC"],
+          ["Filed cost", "$514,000"]
+        ]
+      },
       {
         label: "2016 FILED ST. JOHN'S WEST FIBRE ROUTE",
         sourceId: "np-2016-fibre-network",
@@ -15893,6 +16091,7 @@ export const stationProfiles = [
     ],
     referenceSheetLabel: "FILED FEEDER AND FIBRE ROUTES",
     referenceSheets: [
+      { title: "2014 filed former 35L rebuild route", image: "./reference-maps/35l-2014-route.png", alt: "Filed route drawing for the 2014 35L rebuild between Kenmount and Oxen Pond", sourceId: "np-2014-transmission-lines", pages: "physical PDF p. 319" },
       { title: "KEN-01 route and sectionalizing recloser", image: "./reference-maps/ken-01.png", alt: "Kenmount KEN-01 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 36" },
       { title: "KEN-02 route and sectionalizing recloser", image: "./reference-maps/ken-02.png", alt: "Kenmount KEN-02 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 37" },
       { title: "KEN-03 route and sectionalizing recloser", image: "./reference-maps/ken-03.png", alt: "Kenmount KEN-03 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 38" },
@@ -16070,6 +16269,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2014 FILED 18L REBUILD",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF pp. 310 to 311",
+        facts: [
+          ["Circuit", "18L between Goulds and Glendale; 66 kV"],
+          ["Line", "5.82 km and 84 single-pole structures"],
+          ["Original section", "4.62 km and 64 structures from the 1951 construction remained"],
+          ["Conductor", "replace deteriorated 266.8 ACSR with 715.5 ASC"],
+          ["Filed cost", "$700,000"]
+        ]
+      },
+      {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
         pages: "physical PDF pp. 161 to 165",
@@ -16094,8 +16305,9 @@ export const stationProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "2014 FEEDER ROUTES AND PROPOSED RECLOSERS",
+    referenceSheetLabel: "FILED TRANSMISSION AND FEEDER ROUTES",
     referenceSheets: [
+      { title: "2014 filed 18L rebuild route", image: "./reference-maps/18l-2014-route.png", alt: "Filed route drawing for the 18L rebuild between Goulds and Glendale", sourceId: "np-2014-transmission-lines", pages: "physical PDF p. 318" },
       { title: "GOU-01 Lannon Street tap recloser", image: "./reference-maps/gou-01.png", alt: "Goulds GOU-01 feeder route and Lannon Street single-phase recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 42" },
       { title: "GOU-03 Doyle's Road tap recloser", image: "./reference-maps/gou-03.png", alt: "Goulds GOU-03 feeder route and Doyle's Road single-phase recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 43" }
     ]
@@ -16121,6 +16333,13 @@ export const stationProfiles = [
     ],
     referenceSheetLabel: "FILED TRANSMISSION AND DISTRIBUTION MAPS",
     referenceSheets: [
+      {
+        title: "2014 filed 12L rebuild route",
+        image: "./reference-maps/12l-2014-route.png",
+        alt: "Filed route drawing for the 12L rebuild between King's Bridge and Memorial",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 316"
+      },
       {
         title: "King's Bridge feeder service area and tie table",
         image: "./reference-maps/kbr-2019-service-area.png",
@@ -16171,6 +16390,17 @@ export const stationProfiles = [
       facts: [["KBR-T3/T4", "KBR-09, KBR-11, KBR-12 and KBR-13; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2013 TO 2014 COMPLETED 12L REBUILD",
+        sourceId: "np-2016-12l-completion",
+        pages: "physical PDF pp. 480 and 485",
+        facts: [
+          ["Circuit", "12L between King's Bridge and Memorial; 66 kV"],
+          ["Reported status", "rebuild completed in 2014"],
+          ["Distribution underbuild", "six bundled three-phase aerial cables replaced by one open-wire feeder"],
+          ["Voltage work", "two of three underbuilt 4.16 kV feeders upgraded to 12.5 kV and transferred before reconstruction"]
+        ]
+      },
       {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
@@ -16298,6 +16528,16 @@ export const stationProfiles = [
       facts: [["RRD-T2/T3", "RRD-02, RRD-05 and RRD-08; 12.5 kV"]]
     },
     historyRecords: [
+      {
+        label: "2008 TO 2012 RRD-09 RELIABILITY REVIEW",
+        sourceId: "np-2014-reliability-review",
+        pages: "physical PDF pp. 336 and 342",
+        facts: [
+          ["Annual average", "4,381 customer interruptions; 455,051 customer-minutes; SAIFI 2.89; SAIDI 5.00 hours"],
+          ["Recorded causes", "broken-conductor events in 2008 and 2011"],
+          ["2014 decision", "no Distribution Reliability Initiative work required"]
+        ]
+      },
       {
         label: "2019-2020 TRANSFORMER LOAD",
         sourceId: "np-2021-north-study",
@@ -16466,6 +16706,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2014 FILED 18L REBUILD",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF pp. 310 to 311",
+        facts: [
+          ["Circuit", "18L between Glendale and Goulds; 66 kV"],
+          ["1977 reroute", "1.19 km and 22 structures were built when the line was rerouted from Stamp's Lane to Glendale"],
+          ["Original section", "4.62 km and 64 structures from the 1951 construction remained"],
+          ["Conductor", "715.5 ASC filed for Mount Pearl load growth"],
+          ["Filed cost", "$700,000"]
+        ]
+      },
+      {
         label: "2004 GDL-01 / HWD-04 TIE PROJECT",
         sourceId: "np-2004-gdl01",
         pages: "physical PDF pp. 658 to 659",
@@ -16495,8 +16747,15 @@ export const stationProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "FILED 2020 FEEDER ROUTE",
+    referenceSheetLabel: "FILED TRANSMISSION AND FEEDER ROUTES",
     referenceSheets: [
+      {
+        title: "2014 filed 18L rebuild route",
+        image: "./reference-maps/18l-2014-route.png",
+        alt: "Filed route drawing for the 18L rebuild between Glendale and Goulds",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 318"
+      },
       {
         title: "2020 proposed GDL-09 route",
         image: "./reference-maps/gdl-09-2020-route.png",
@@ -16544,6 +16803,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2014 FILED 13L REBUILD",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 310",
+        facts: [
+          ["Circuit", "13L between St. John's Main and Stamp's Lane; 66 kV"],
+          ["Route", "0.42 km underground and 2.64 km aerial"],
+          ["Original section", "1.84 km and 56 structures from the 1962 construction remained"],
+          ["Filed cost", "$816,000"]
+        ]
+      },
       {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
@@ -16610,6 +16880,13 @@ export const stationProfiles = [
     ],
     referenceSheets: [
       {
+        title: "2014 filed 13L rebuild route",
+        image: "./reference-maps/13l-2014-route.png",
+        alt: "Filed route drawing for the 13L rebuild between St. John's Main and Stamp's Lane",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 317"
+      },
+      {
         title: "2011 Water Street existing feeder schematic",
         image: "./reference-maps/sjm-2011-water-street-existing.png",
         alt: "Existing 2011 Water Street underground distribution schematic showing SJM-03, SJM-07, SJM-08, SJM-14 and KBR-10",
@@ -16661,6 +16938,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2014 FILED 13L REBUILD",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 310",
+        facts: [
+          ["Circuit", "13L between Stamp's Lane and St. John's Main; 66 kV"],
+          ["Aerial section", "2.64 km on 81 single-pole structures; most carried distribution underbuild"],
+          ["Original section", "1.84 km and 56 structures from the 1962 construction remained"],
+          ["Filed cost", "$816,000"]
+        ]
+      },
       {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
@@ -16775,6 +17063,13 @@ export const stationProfiles = [
     ],
     referenceSheetLabel: "FILED TRANSMISSION AND FEEDER ROUTES",
     referenceSheets: [
+      {
+        title: "2014 filed 13L rebuild route",
+        image: "./reference-maps/13l-2014-route.png",
+        alt: "Filed route drawing for the 13L rebuild between Stamp's Lane and St. John's Main",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 317"
+      },
       {
         title: "2015 proposed 14L rebuild",
         image: "./reference-maps/14l-2015-route.png",
@@ -17402,6 +17697,29 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2014 FILED LA MANCHE CANAL CAPACITY INCREASE",
+        sourceId: "np-2014-la-manche",
+        pages: "physical PDF pp. 24 and 215 to 219",
+        facts: [
+          ["Shared water path", "La Manche Canal water passes through Rocky Pond and Tors Cove"],
+          ["Existing canal", "5,600 m long; approximately 10 m wide; 6 m3/s design capacity; seven overflow spillways"],
+          ["Filed work", "raise the canal embankment to increase capacity to 9 m3/s and rehabilitate the seven La Manche spillways and the Cluneys diversion dam and spillway"],
+          ["Filed production", "5.54 GWh additional annual energy; 44.54 GWh expected combined annual output"],
+          ["Filed cost", "$1.665 million"]
+        ]
+      },
+      {
+        label: "2015 REPORTED LA MANCHE PROJECT EXPENDITURE",
+        sourceId: "np-2016-2014-actuals",
+        pages: "physical PDF p. 189",
+        facts: [
+          ["Approved budget", "$1.665 million"],
+          ["Actual expenditure", "$899,000 in 2014 and $19,000 in 2015"],
+          ["Forecast remainder", "$760,000"],
+          ["Forecast total", "$1.678 million; $13,000 above budget"]
+        ]
+      },
+      {
         label: "2022 SUBSTATION WORK COMPLETED",
         sourceId: "np-2024-pub-np-007",
         pages: "physical PDF p. 2",
@@ -17763,6 +18081,29 @@ export const stationProfiles = [
       facts: [["ROP-T1", "generation transformer; 66/6.9 kV; 5.33 MVA"]]
     },
     historyRecords: [
+      {
+        label: "2014 FILED LA MANCHE CANAL CAPACITY INCREASE",
+        sourceId: "np-2014-la-manche",
+        pages: "physical PDF pp. 24 and 215 to 219",
+        facts: [
+          ["Shared water path", "La Manche Canal water passes through Rocky Pond and Tors Cove"],
+          ["Existing canal", "5,600 m long; approximately 10 m wide; 6 m3/s design capacity; seven overflow spillways"],
+          ["Filed work", "raise the canal embankment to increase capacity to 9 m3/s and rehabilitate the seven La Manche spillways and the Cluneys diversion dam and spillway"],
+          ["Filed production", "5.54 GWh additional annual energy; 44.54 GWh expected combined annual output"],
+          ["Filed cost", "$1.665 million"]
+        ]
+      },
+      {
+        label: "2015 REPORTED LA MANCHE PROJECT EXPENDITURE",
+        sourceId: "np-2016-2014-actuals",
+        pages: "physical PDF p. 189",
+        facts: [
+          ["Approved budget", "$1.665 million"],
+          ["Actual expenditure", "$899,000 in 2014 and $19,000 in 2015"],
+          ["Forecast remainder", "$760,000"],
+          ["Forecast total", "$1.678 million; $13,000 above budget"]
+        ]
+      },
       {
         label: "JULY 2005 SWITCHGEAR FIRE",
         sourceId: "np-2009-rocky-pond",
@@ -18903,6 +19244,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2013 TO 2014 COMPLETED 12L REBUILD",
+        sourceId: "np-2016-12l-completion",
+        pages: "physical PDF pp. 480 and 485",
+        facts: [
+          ["Circuit", "12L between Memorial and King's Bridge; 66 kV"],
+          ["Reported status", "rebuild completed in 2014"],
+          ["Distribution underbuild", "Empire Avenue and Rennies Mill Road plant replaced during the 2013 and 2014 trunk-feeder work"],
+          ["Voltage work", "the rebuilt distribution equipment supported the 4.16 kV to 12.5 kV conversion program"]
+        ]
+      },
+      {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
         pages: "physical PDF pp. 296 to 298",
@@ -18934,8 +19286,15 @@ export const stationProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "FILED 14L ROUTE",
+    referenceSheetLabel: "FILED 12L AND 14L ROUTES",
     referenceSheets: [
+      {
+        title: "2014 filed 12L rebuild route",
+        image: "./reference-maps/12l-2014-route.png",
+        alt: "Filed route drawing for the 12L rebuild between Memorial and King's Bridge",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 316"
+      },
       {
         title: "2015 proposed 14L rebuild",
         image: "./reference-maps/14l-2015-route.png",
@@ -19074,6 +19433,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2014 FILED 68L REBUILD",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 312",
+        facts: [
+          ["Circuit", "68L between Carbonear and Harbour Grace; 66 kV"],
+          ["1974 section", "2.01 km entering Carbonear"],
+          ["Original section", "5.15 km and 50 two-pole and three-pole H-frame structures from 1958"],
+          ["Conductor", "non-standard 4/0 ACSR on the original section"],
+          ["Filed cost", "$770,000"]
+        ]
+      },
+      {
         label: "2007 COMPLETED CONTROL WORK",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF p. 3",
@@ -19098,6 +19469,13 @@ export const stationProfiles = [
       }
     ],
     referenceSheets: [
+      {
+        title: "2014 filed 68L rebuild route",
+        image: "./reference-maps/68l-2014-route.png",
+        alt: "Filed route drawing for the 68L rebuild between Carbonear and Harbour Grace",
+        sourceId: "np-2014-transmission-lines",
+        pages: "physical PDF p. 320"
+      },
       {
         title: "41L filed 2017 rebuild section",
         image: "./reference-maps/41l-2017-route.jpg",
@@ -19213,6 +19591,30 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2014 FILED PLANT REFURBISHMENT",
+        sourceId: "np-2014-hearts-content",
+        pages: "physical PDF pp. 26 and 171 to 175",
+        facts: [
+          ["Plant", "one 2.4 MW unit; 46.9 m rated net head; normal annual production 8.3 GWh"],
+          ["Turbine and generator", "3,400 hp vertical Francis turbine; 3,000 kVA generator at 80% power factor"],
+          ["Generator work", "rewind the stator and exciter; re-insulate the rotor; replace generator ancillary equipment and original exciter-to-rotor cables"],
+          ["Controls", "retain the governor mechanical section; install PLC governor and plant controls, a computer operator interface, digital protection, voltage regulation, metering, and forebay fibre"],
+          ["Switchgear", "arc-flash-rated assembly with a vacuum breaker and closed-door racking"],
+          ["Filed cost", "$5.735 million, including $3.495 million for the 579 m penstock"]
+        ]
+      },
+      {
+        label: "2015 REPORTED PLANT REFURBISHMENT EXPENDITURE",
+        sourceId: "np-2016-2014-actuals",
+        pages: "physical PDF p. 189",
+        facts: [
+          ["Approved budget", "$200,000 for 2013 and $5.735 million for 2014; $5.935 million total"],
+          ["Actual expenditure", "$144,000 in 2013, $6.020 million in 2014, and $258,000 in 2015"],
+          ["Forecast remainder", "$7,000"],
+          ["Forecast total", "$6.429 million; $494,000 above budget"]
+        ]
+      },
       {
         label: "2011 TO 2012 COMPLETED MODERNIZATION",
         sourceId: "np-2027-pub-np-005",

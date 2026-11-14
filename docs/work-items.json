@@ -862,6 +862,18 @@
       "notes": "The station records now include the filed 14L, 15L, 30L, 69L, 400L, and 404L work; KBR-10 and MOL-09 reliability data; MOB-01 and RBK-01 growth work; and Tors Cove and Seal Cove plant records. The 1999 SCADA system inventory and proposed replacement are dated. The later expenditure table remains separate from asset commissioning evidence. The primary filing gives both 1951 and 1959 for 69L construction."
     },
     {
+      "id": "NPREG-014",
+      "title": "Reconcile Newfoundland Power 2014 transmission, hydro, reliability, and capital records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2014 capital application, 12L to 68L route sheets, Heart's Content plant work, La Manche Canal production proposal, feeder reliability review, and later reported expenditure.",
+      "dependencies": ["NPREG-013"],
+      "completion_evidence": ["research/NP_2014_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/12l-2014-route.png", "public/reference-maps/13l-2014-route.png", "public/reference-maps/18l-2014-route.png", "public/reference-maps/35l-2014-route.png", "public/reference-maps/68l-2014-route.png", "tests/np-2014-capital.test.js"],
+      "blocker": null,
+      "notes": "The station records now include the filed 13L, 18L, former 35L, and 68L rebuilds plus all five route sheets. The later King's Bridge filing confirms 12L completion in 2014. Heart's Content and La Manche retain proposed technical scope and separate later expenditure records because no asset-level commissioning record was located. The five highest 2008 to 2012 feeder reliability rows and the explicit no-project decision are preserved."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

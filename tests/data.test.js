@@ -242,10 +242,10 @@ test("network links use registered circuit endpoints and page anchors", async ()
 });
 
 test("station additions preserve sourced details", async () => {
-  const healthEvent = timeline.find((event) => event.sourceId === "np-2014-capital");
-  assert.ok(healthEvent);
-  assert.match(healthEvent.body, /Health Sciences Centre/);
-  assert.equal(healthEvent.pages, "PDF p. 309");
+  const lineEvent = timeline.find((event) => event.sourceId === "np-2016-12l-completion");
+  assert.ok(lineEvent);
+  assert.match(lineEvent.body, /66 kV line rebuild was complete/);
+  assert.equal(lineEvent.pages, "physical PDF pp. 480 and 485");
 
   const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
   assert.match(html, />OXP-01</);
@@ -2888,8 +2888,10 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
 
   assert.deepEqual(glendale.feederRegister, ["GDL-01", "GDL-02", "GDL-03", "GDL-04", "GDL-05", "GDL-06", "GDL-07", "GDL-08", "GDL-09"]);
   assert.deepEqual(glendale.mapPages, [["GDL-01", 58], ["GDL-02", 59], ["GDL-03", 60], ["GDL-04", 61], ["GDL-05", 62], ["GDL-06", 63]]);
-  assert.match(glendale.historyRecords[0].facts.flat().join(" "), /normally open switch between GDL-01 and HWD-04/);
-  assert.match(glendale.historyRecords[1].facts.flat().join(" "), /new 25 MVA power transformer/);
+  const glendaleTie = glendale.historyRecords.find((record) => record.sourceId === "np-2004-gdl01");
+  const glendaleTransformer = glendale.historyRecords.find((record) => record.facts.flat().join(" ").includes("new 25 MVA power transformer"));
+  assert.match(glendaleTie.facts.flat().join(" "), /normally open switch between GDL-01 and HWD-04/);
+  assert.match(glendaleTransformer.facts.flat().join(" "), /new 25 MVA power transformer/);
   const hardwoodsGlendaleTie = hardwoods.historyRecords.find((record) => record.sourceId === "np-2004-gdl01");
   assert.match(hardwoodsGlendaleTie.facts.flat().join(" "), /1\/0 AASC with 477 ASC/);
   assert.match(glendaleFacts, /GDL-T3; 25 MVA each; described as 66\/12\.5 kV/);
@@ -2900,8 +2902,9 @@ test("Glendale, St. John's Main, and Stamp's Lane retain their filed station rec
   assert.match(stJohnsMainFacts, /SJM-T1 and SJM-T2, 25 MVA each at 66\/12\.5 kV/);
   assert.match(stJohnsMainFacts, /install 25 MVA SJM-T3/);
   assert.match(stJohnsMain.planningRecord.facts.flat().join(" "), /SJM-03, SJM-07 and SJM-08 interconnected/);
-  assert.equal(stJohnsMain.referenceSheets[0].image, "./reference-maps/sjm-2011-water-street-existing.png");
-  assert.equal(stJohnsMain.referenceSheets[0].pages, "physical PDF p. 425");
+  const waterStreetSheet = stJohnsMain.referenceSheets.find((sheet) => sheet.sourceId === "np-2011-capital-stations");
+  assert.equal(waterStreetSheet.image, "./reference-maps/sjm-2011-water-street-existing.png");
+  assert.equal(waterStreetSheet.pages, "physical PDF p. 425");
 
   assert.deepEqual(stampsLane.mapPages, [["SLA-02", 139], ["SLA-03", 140], ["SLA-05", 141], ["SLA-06", 142], ["SLA-07", 143], ["SLA-08", 144], ["SLA-10", 145], ["SLA-11", 146], ["SLA-12", 147], ["SLA-13", 148]]);
   assert.match(stampsLaneFacts, /50 MVA combined at 12\.5 kV and 21 MVA combined at 4\.16 kV/);
@@ -3064,14 +3067,19 @@ test("station reference schematics remain expandable and locally preserved", asy
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
   const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
   assert.deepEqual(stJohnsMain.referenceSheets.map((sheet) => [sheet.title, sheet.pages]), [
+    ["2014 filed 13L rebuild route", "physical PDF p. 317"],
     ["2011 Water Street existing feeder schematic", "physical PDF p. 425"],
     ["2019 filed SJM-06 route", "physical PDF p. 319"]
   ]);
-  assert.equal(kingsBridge.referenceSheets[0].image, "./reference-maps/kbr-2019-service-area.png");
+  assert.equal(
+    kingsBridge.referenceSheets.find((sheet) => sheet.image === "./reference-maps/kbr-2019-service-area.png").image,
+    "./reference-maps/kbr-2019-service-area.png"
+  );
   assert.equal(pepperell.referenceSheets[0].pages, "physical PDF p. 37");
   assert.equal(virginiaWaters.referenceSheets[0].pages, "physical PDF p. 39");
   assert.equal(hardwoods.referenceSheets[0].image, "./reference-maps/hwd-08-2014-reclosers.png");
   assert.deepEqual(kenmount.referenceSheets.map((sheet) => sheet.pages), [
+    "physical PDF p. 319",
     "physical PDF p. 36",
     "physical PDF p. 37",
     "physical PDF p. 38",
@@ -3079,7 +3087,11 @@ test("station reference schematics remain expandable and locally preserved", asy
     "physical PDF p. 568",
     "physical PDF p. 558"
   ]);
-  assert.deepEqual(goulds.referenceSheets.map((sheet) => sheet.pages), ["physical PDF p. 42", "physical PDF p. 43"]);
+  assert.deepEqual(goulds.referenceSheets.map((sheet) => sheet.pages), [
+    "physical PDF p. 318",
+    "physical PDF p. 42",
+    "physical PDF p. 43"
+  ]);
   assert.equal(virginiaWaters.referenceSheets[1].image, "./reference-maps/vir-06.png");
   const schematic = await readFile(new URL("../public/reference-maps/sjm-2011-water-street-existing.png", import.meta.url));
   const serviceArea = await readFile(new URL("../public/reference-maps/kbr-2019-service-area.png", import.meta.url));
@@ -3663,9 +3675,18 @@ test("Doyles joins the Hydro terminal and Newfoundland Power distribution record
     ["DOY-T2", "6.67 MVA"]
   ]);
   assert.match(doyles.engineeringRecord.facts.flat().join(" "), /approximately 1,700 customers/);
-  assert.match(doyles.historyRecords[1].facts.flat().join(" "), /former Lethbridge 6.7 MVA/);
-  assert.match(doyles.historyRecords[4].facts.flat().join(" "), /bypass disconnect/);
-  assert.match(doyles.historyRecords[5].facts.flat().join(" "), /remote terminal unit replaced/);
+  assert.match(
+    doyles.historyRecords.find((record) => record.facts.flat().join(" ").includes("former Lethbridge 6.7 MVA")).facts.flat().join(" "),
+    /former Lethbridge 6.7 MVA/
+  );
+  assert.match(
+    doyles.historyRecords.find((record) => record.facts.flat().join(" ").includes("bypass disconnect")).facts.flat().join(" "),
+    /bypass disconnect/
+  );
+  assert.match(
+    doyles.historyRecords.find((record) => record.facts.flat().join(" ").includes("remote terminal unit replaced")).facts.flat().join(" "),
+    /remote terminal unit replaced/
+  );
   assert.equal(transformerRegister.transformers.find((record) => record.designation === "DOY-T2").forecast_2026_mva, 5.13);
   assert.equal(grandBay.connectedCircuits[0].from_code, "DOY");
   assert.equal(bottomBrook.additionalDiagrams[0].circuits.find((record) => record.label === "TL214").destinationCode, "DOY");

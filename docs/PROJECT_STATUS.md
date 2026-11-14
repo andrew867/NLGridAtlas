@@ -1,6 +1,6 @@
 # NL Grid Atlas project status
 
-Updated: 2026-11-13
+Updated: 2026-11-14
 
 ## Repository and hosting
 
@@ -15,6 +15,10 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added the 2014 filed 13L, 18L, former 35L, and 68L rebuild records with original route sheets, structure counts, remaining original lengths, conductor details, and filed costs. Added the 12L route sheet and the later explicit record that its rebuild was completed in 2014.
+- Added the filed Heart's Content generator, governor-control, protection, switchgear, cable, battery, and penstock work. Added the later actual and forecast expenditure without treating the financial table as a commissioning record.
+- Added the filed La Manche Canal capacity increase to Rocky Pond and Tors Cove. The record preserves the 6 m3/s and 9 m3/s capacities, 5.54 GWh annual production increase, shared water path, and later expenditure report without claiming completion.
+- Added the 2008 to 2012 reliability records for RRD-09, KEN-04, DOY-01, DLK-03, and SUM-01. The atlas records the explicit 2014 decision that no Distribution Reliability Initiative construction was required and keeps DOY-01's separate load-growth work distinct.
 - Added the 2016 King's Bridge 4.16 kV to 12.5 kV conversion, new KBR-13 and KBR-14 positions, and the filed reconfigured-feeder drawing.
 - Added the 2015 to 2016 30L Ridge Road to King's Bridge rebuild with exact length, structure count, underbuild, schedule, cost, and route drawing.
 - Added the filed St. John's west and Corner Brook fibre routes to the affected stations. The record preserves the $252,000 and $229,000 conflicting actual-expenditure figures and does not assign unreported installed endpoints.
