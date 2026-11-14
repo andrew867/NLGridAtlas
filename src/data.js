@@ -520,6 +520,126 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1981-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1981", "Newfoundland Power peak demand", "Island peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1981-planning-forecast",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-295, 1981 Island Supply Planning Table",
+    topics: ["1981", "coincident peak demand", "installed capability", "LOLP", "energy balance", "forecast"],
+    pages: "physical PDF p. 8",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf"
+  },
+  {
+    id: "nlh-1981-tl232",
+    year: 2007,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2008 Capital Budget Application, TL232 Existing-System Record",
+    topics: ["1981", "TL232", "Stony Brook", "Buchans", "230 kV", "wood poles", "steel towers"],
+    pages: "physical PDF p. 116",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2008Capital/files/application/NLH2008ApplicationComplete.pdf"
+  },
+  {
+    id: "nlh-1981-tl234-tl252",
+    year: 2006,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2007 Capital Budget Application, TL234, TL251 and TL252 Existing-System Record",
+    topics: ["1981", "TL234", "TL251", "TL252", "Upper Salmon", "Bay d'Espoir", "Howley", "Hampden", "Jackson's Arm", "230 kV", "69 kV"],
+    pages: "physical PDF p. 54",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/applic/NLH2007ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1981-147l",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "Transmission Line 147L Relocation Application, Existing-System Record",
+    topics: ["1981", "147L", "Cobb's Pond", "Lewisporte", "138 kV", "central Newfoundland"],
+    pages: "physical PDF p. 11",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Line147LNewFoundGold/app/From%20NP%20-%20Approval%20of%20Capital%20Expenditures%20to%20Relocate%20a%20Portion%20of%20Transmission%20Line%20147L%20and%20a%20CIAC%20from%20New%20Found%20Gold%20-%202026-07-31.PDF"
+  },
+  {
+    id: "np-1981-greenspond-offgrid",
+    year: 2025,
+    organization: "Newfoundland Power",
+    title: "CA-NP-034, Greenspond Pre-Grid Supply Record",
+    topics: ["1981", "Greenspond", "diesel generation", "grid connection", "substation"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/responses/CA-NP-034.PDF"
+  },
+  {
+    id: "np-1981-topsail-penstock",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Topsail Penstock History",
+    topics: ["1981", "Topsail", "woodstave penstock", "date conflict"],
+    pages: "physical PDF p. 29",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "nlh-1981-bde-work",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2015 Capital Budget Application, Bay d'Espoir 1981 Unit Work",
+    topics: ["1981", "Bay d'Espoir", "Unit 2", "Unit 4", "Unit 5", "draft tube", "greasing system"],
+    pages: "physical PDF pp. 319 and 326",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NLH2015Capital/files/application/NLH-2015-Capital-Budget-Application-Volume-I-2014-08-01.PDF"
+  },
+  {
+    id: "nlh-1981-cat-arm",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Muskrat Falls Project Exhibit 29 Revision 1, Cat Arm Development Sequence",
+    topics: ["1981", "Cat Arm", "construction authorization", "access road"],
+    pages: "physical PDF p. 30",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit29-Rev1.pdf"
+  },
+  {
+    id: "nlh-1981-cat-arm-road",
+    year: 1983,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "1983 Electric Power Control Act Report, Cat Arm Access-Road Record",
+    topics: ["1981", "Cat Arm", "access road", "construction tender"],
+    pages: "physical PDF p. 70",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Consents/83PMARCH.pdf"
+  },
+  {
+    id: "nlh-1981-francois-unit",
+    year: 2009,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2010 Capital Budget Application, Francois Diesel Unit 2001 Record",
+    topics: ["1981", "Francois", "diesel generation", "Unit 2001", "136 kW"],
+    pages: "physical PDF pp. 397 to 399",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/NLH2010ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1981-hardwoods-b7c1",
+    year: 2006,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2007 Capital Budget Application, Hardwoods Breaker B7C1 Existing-System Record",
+    topics: ["1981", "Hardwoods", "B7C1", "69 kV", "SF6 breaker", "capacitor bank", "voltage support"],
+    pages: "physical PDF pp. 72 to 73",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/applic/NLH2007ApplicationComplete.pdf"
+  },
+  {
     id: "nlh-1982-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8088,6 +8208,28 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1981-system-record",
+    scope: "1981 actual demand, the contemporary planning case, four Hydro transmission lines, two Newfoundland Power 138 kV lines, station construction, generation work and Cat Arm construction",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1981-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-1981-planning-forecast", pages: "physical PDF p. 8" },
+      { sourceId: "nlh-1981-tl232", pages: "physical PDF p. 116" },
+      { sourceId: "nlh-1981-tl234-tl252", pages: "physical PDF p. 54" },
+      { sourceId: "np-2025-ca-np-121-central", pages: "physical PDF pp. 5 and 7" },
+      { sourceId: "np-1981-147l", pages: "physical PDF p. 11" },
+      { sourceId: "np-2026-greenspond", pages: "physical PDF pp. 340 to 341" },
+      { sourceId: "np-1981-greenspond-offgrid", pages: "physical PDF p. 1" },
+      { sourceId: "np-2023-55l", pages: "physical PDF p. 440" },
+      { sourceId: "np-1981-topsail-penstock", pages: "physical PDF p. 29" },
+      { sourceId: "nlh-1981-bde-work", pages: "physical PDF pp. 319 and 326" },
+      { sourceId: "nlh-1981-cat-arm", pages: "physical PDF p. 30" },
+      { sourceId: "nlh-1981-cat-arm-road", pages: "physical PDF p. 70" },
+      { sourceId: "nlh-1981-francois-unit", pages: "physical PDF pp. 397 to 399" },
+      { sourceId: "nlh-1981-hardwoods-b7c1", pages: "physical PDF pp. 72 to 73" }
+    ]
+  },
+  {
     id: "np-1982-system-record",
     scope: "1982 actual demand, the 1981 planning case, transmission and terminal expansion, the Hinds Lake outage, station protection and DC equipment",
     status: "reported",
@@ -8336,6 +8478,123 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "load",
+    title: "The Island transmission peak was 978 MW",
+    body: "The historical demand table reports Newfoundland Power peak demand of 716.2 MW and Hydro system peak demand of 834 MW. It does not print a separate Hydro Rural peak for 1981.",
+    sourceId: "nlh-1981-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1981 planning case",
+    category: "load",
+    title: "The supply plan used a 1,234 MW coincident peak",
+    body: "The case used 1,510 MW installed capability, a 0.11 loss-of-load-probability index, 6,396 GWh system energy requirement, 6,988 GWh firm energy capability, and a 592 GWh surplus.",
+    sourceId: "np-1981-planning-forecast",
+    pages: "physical PDF p. 8",
+    status: "proposed"
+  },
+  {
+    date: "1981",
+    category: "network",
+    title: "TL232 added a second 230 kV Stony Brook to Buchans path",
+    body: "The 84 km radial line uses H-frame wood structures and two steel towers. The later project record says it was built to provide a parallel link to central Newfoundland.",
+    sourceId: "nlh-1981-tl232",
+    pages: "physical PDF p. 116",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "network",
+    title: "TL234 connected Upper Salmon to Bay d'Espoir",
+    body: "The 51.5 km, 230 kV radial line uses H-frame wood structures and steel towers. It was constructed before Upper Salmon entered service in January 1983.",
+    sourceId: "nlh-1981-tl234-tl252",
+    pages: "physical PDF p. 54",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "network",
+    title: "TL251 and TL252 extended the 69 kV White Bay system",
+    body: "TL251 runs 48 km from Howley to Hampden. TL252 runs 53 km from Hampden to Jackson's Arm. Both are 69 kV, single wood-pole radial lines.",
+    sourceId: "nlh-1981-tl234-tl252",
+    pages: "physical PDF p. 54",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "network",
+    title: "Newfoundland Power built 136L and 147L at 138 kV",
+    body: "The original 136L ran approximately 81 km from Bishop's Falls to Cobb's Pond. The 58 km 147L connected Cobb's Pond and Lewisporte. Later conversion work changed the central-system endpoints.",
+    sourceId: "np-2025-ca-np-121-central",
+    pages: "physical PDF pp. 5 and 7; compare 147L application physical PDF p. 11",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "station",
+    title: "Greenspond joined the Island grid",
+    body: "Newfoundland Power built the 66/12.5 kV distribution substation on a tap from the 115L/116L radial system. Before the connection, the community was isolated from the grid and supplied by a Hydro diesel station.",
+    sourceId: "np-2026-greenspond",
+    pages: "physical PDF pp. 340 to 341; compare CA-NP-034 physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "network",
+    title: "The 55L tap to Quartz was constructed",
+    body: "The tap connected Quartz Substation to the 66 kV Blaketown to Clarkes Pond radial line.",
+    sourceId: "np-2023-55l",
+    pages: "physical PDF p. 440",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "generation",
+    title: "Topsail penstock histories disagree",
+    body: "The 2020 application dates the 1,910 m woodstave penstock replacement to 1981. The separate 2004 plant history dates the extended penstock and intake to the 1983 major refurbishment. The filings do not reconcile the dates.",
+    sourceId: "np-1981-topsail-penstock",
+    pages: "physical PDF p. 29; compare 2004 Capital Budget Application physical PDF p. 270",
+    status: "unresolved"
+  },
+  {
+    date: "1981",
+    category: "generation",
+    title: "Bay d'Espoir units received hydraulic-system repairs",
+    body: "Unit 5 received draft-tube concrete repairs for cavitation. The Unit 2 and Unit 4 greasing systems were modified so wicket-gate and bottom-bushing lubrication operated independently.",
+    sourceId: "nlh-1981-bde-work",
+    pages: "physical PDF pp. 319 and 326",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "generation",
+    title: "Cat Arm construction began",
+    body: "Hydro authorized the project early in 1981. The permanent access-road contract was tendered in May and awarded in June for $11,977,710.",
+    sourceId: "nlh-1981-cat-arm",
+    pages: "physical PDF p. 30; compare 1983 Board report physical PDF p. 70",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "generation",
+    title: "Francois received diesel Unit 2001",
+    body: "The later replacement filing identifies Unit 2001 as a 136 kW Caterpillar D3306 installed in 1981. By 2009 it had accumulated 81,343 operating hours and four overhauls.",
+    sourceId: "nlh-1981-francois-unit",
+    pages: "physical PDF pp. 397 to 399",
+    status: "reported"
+  },
+  {
+    date: "1981",
+    category: "station",
+    title: "Hardwoods capacitor breaker B7C1 entered service",
+    body: "The Westinghouse 690SP2500 SF6 breaker switched a 69 kV capacitor bank used for Eastern Avalon voltage support. A later replacement filing records an average of 250 operations per year since 1981.",
+    sourceId: "nlh-1981-hardwoods-b7c1",
+    pages: "physical PDF pp. 72 to 73",
     status: "reported"
   },
   {
@@ -10932,8 +11191,8 @@ export const components = {
     code: "HWD / TERMINAL STATION",
     title: "Hardwoods Terminal Station",
     summary: "Drawing HWD-1, revision 17, dated July 7, 1991, separates the 230 kV B1 and B2 sections at breaker B1B2 and the 66 kV B7 and B8 sections at breaker B7B8. A later project history dates the B1B2 addition to the 1992 T4 project. A 2019 revision is named in the 2026 condition-study register but is not reproduced in the filing.",
-    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["1992 terminal work", "T4 and 230 kV bus-tie breaker added"], ["T5", "45/60/75 MVA, 66/13.8 kV; transformer register dates it to 1985"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["1985 station service", "Emergency diesel added"], ["1992 gas-turbine work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 gas-turbine work", "End B engine overhauled; both air-start compressors, air lines, valves and the control panel replaced"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
-    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("nlh-1992-hardwoods-bus-tie", "physical PDF p. 16"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1985-hardwoods-t5", "physical PDF p. 70"), sourceRef("nlh-1985-hardwoods-diesel", "physical PDF p. 128"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
+    data: [["Filed arrangement", "HWD-1 revision 17, July 7, 1991"], ["230 kV sections", "B1 and B2; breaker B1B2"], ["66 kV sections", "B7 and B8; breaker B7B8"], ["T1", "125 MVA in 2026 study model"], ["T2", "66.6 MVA in 2026 study model"], ["T3", "66.6 MVA in 2026 study model"], ["T4", "125 MVA in 2026 study model"], ["1981 B7C1", "Westinghouse 690SP2500 SF6 breaker switching a 69 kV capacitor bank"], ["1992 terminal work", "T4 and 230 kV bus-tie breaker added"], ["T5", "45/60/75 MVA, 66/13.8 kV; transformer register dates it to 1985"], ["G1", "63.5 MVA"], ["C1, C2", "26.4 MVAR each"], ["1985 station service", "Emergency diesel added"], ["1992 gas-turbine work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 gas-turbine work", "End B engine overhauled; both air-start compressors, air lines, valves and the control panel replaced"], ["2024 work", "Station lighting replaced"], ["B2L42 current transformers", "Planned for 2024; construction did not proceed in 2024 or 2025"], ["2025 breaker work", "B7T2 refurbished; B1L36 reclosing controller upgraded"], ["Later drawing register", "HWD-1 revision 38, October 11, 2019; drawing not reproduced"]],
+    sources: [sourceRef("nlh-1981-hardwoods-b7c1", "physical PDF pp. 72 to 73"), sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("nlh-1992-hardwoods-bus-tie", "physical PDF p. 16"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("np-2027-loop-study", "PDF p. 188"), sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1985-hardwoods-t5", "physical PDF p. 70"), sourceRef("nlh-1985-hardwoods-diesel", "physical PDF p. 128"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("nlh-stv-condition-2026", "physical PDF p. 168"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("nlh-2024-terminal-program-registers", "physical PDF p. 505"), sourceRef("nlh-2027-capital", "physical PDF p. 342"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "hwd-t1": {
     diagram: "hwd", status: "verified", code: "HWD / T1", title: "Hardwoods transformer T1",
@@ -10962,8 +11221,8 @@ export const components = {
   "hwd-c1": {
     diagram: "hwd", status: "verified", code: "HWD / C1", title: "Hardwoods capacitor bank C1",
     summary: "The 2013 Alternative 4 one-line labels C1 at 26.4 MVAR.",
-    data: [["Bus", "66 kV B7 in the 1991 drawing"], ["Rating", "26.4 MVAR"]],
-    sources: [sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("oxen-2013", "PDF p. 61")]
+    data: [["Bus", "66 kV B7 in the 1991 drawing"], ["Rating", "26.4 MVAR"], ["1981 switching breaker", "B7C1, Westinghouse 690SP2500 SF6, used for Eastern Avalon voltage support"], ["Operating record", "average 250 operations per year from 1981 to the 2007 filing"]],
+    sources: [sourceRef("nlh-1981-hardwoods-b7c1", "physical PDF pp. 72 to 73"), sourceRef("nlh-1991-hardwoods-operating", "physical PDF p. 189"), sourceRef("oxen-2013", "PDF p. 61")]
   },
   "hwd-c2": {
     diagram: "hwd", status: "verified", code: "HWD / C2", title: "Hardwoods capacitor bank C2",
@@ -11633,6 +11892,12 @@ export const islandTerminalRecords = [
     code: "STB",
     name: "Stony Brook Terminal Station",
     status: "verified",
+    historyRecords: [{
+      label: "1981 TL232 CONSTRUCTION",
+      sourceId: "nlh-1981-tl232",
+      pages: "physical PDF p. 116",
+      facts: [["Line", "84 km, 230 kV radial line to Buchans; H-frame wood structures and two steel towers"]]
+    }],
     facts: [["Station history", "commissioned in 1966 as a load bus and converted to a 230 kV ring bus in 1995"], ["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report and the 2016 operating diagram"], ["2016 split-bus arrangement", "TL204 enters bus B2 through B2L04; TL232 enters bus B1 through B1L32; normally closed disconnect B1B2 connects the bus sections"], ["2016 ring section", "TL231, TL205 and TL235 connect through ring breakers B1L31, L05L31, L05L35 and B1L35"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2016 transformer protection study", "T1 and T2 had no dedicated 230 kV breaker. The study did not recommend the proposed breaker additions."], ["Q1 2024 work", "TL205 protection upgrade completed"], ["Q3 2024 work", "Disconnect switches replaced"], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"], ["2025 completed work", "Disconnects L05L31-1, L05L31-2 and L05L35-1/L05G replaced; TL232 protective relays replaced"]],
     diagram: {
       label: "2016 filed operating arrangement / 2018 138 kV routes",
@@ -11675,6 +11940,18 @@ export const islandTerminalRecords = [
     status: "reported",
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
+      {
+        label: "1981 UNIT 5 DRAFT-TUBE REPAIRS",
+        sourceId: "nlh-1981-bde-work",
+        pages: "physical PDF p. 319",
+        facts: [["Completed work", "concrete cavitation repairs to the Unit 5 draft tube"]]
+      },
+      {
+        label: "1981 UNIT 2 AND UNIT 4 GREASING MODIFICATIONS",
+        sourceId: "nlh-1981-bde-work",
+        pages: "physical PDF p. 326",
+        facts: [["Completed work", "made the wicket-gate and bottom-bushing lubrication sections independent to reduce excess grease in the turbine pit"]]
+      },
       {
         label: "1987 GOODYEAR'S DAM EMERGENCY REPAIRS",
         sourceId: "nlh-1987-goodyears-dam",
@@ -11769,6 +12046,12 @@ export const islandTerminalRecords = [
     code: "BUC",
     name: "Buchans Terminal Station",
     status: "verified",
+    historyRecords: [{
+      label: "1981 TL232 CONSTRUCTION",
+      sourceId: "nlh-1981-tl232",
+      pages: "physical PDF p. 116",
+      facts: [["Line", "84 km, 230 kV radial line to Stony Brook; built as a parallel central-system link"]]
+    }],
     facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2019 T1 replacement", "Completed using the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare"], ["230 kV ring bus", "T1 is between B1L05 and B1L28; TL205, TL233, TL232, and TL228 occupy the four line positions around the five-breaker ring"], ["Q1 2024 work", "Fire protection installed; TL205 protection upgrade completed"], ["2025 T1 work", "Tap changer oil replacement, access hatch re-gasketing, and leak repairs completed"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
     diagram: {
       label: "2013 filed ring-bus operation / 2019 completed T1 replacement",
@@ -12522,6 +12805,12 @@ export const islandTerminalRecords = [
     code: "USL",
     name: "Upper Salmon Generating Station",
     status: "verified",
+    historyRecords: [{
+      label: "1981 TL234 CONSTRUCTION",
+      sourceId: "nlh-1981-tl234-tl252",
+      pages: "physical PDF p. 54",
+      facts: [["Line", "51.5 km, 230 kV radial line to Bay d'Espoir; H-frame wood structures and steel towers"]]
+    }],
     facts: [["In service", "January 1983"], ["Contemporary rating", "86 MW in the 1983 Board report"], ["Later plant rating", "84 MW on the 2013 system one-line"], ["2001 energy capability", "552 GWh"], ["230 kV circuits", "TL234 to Bay d'Espoir; TL263 to Granite Canal Tap"], ["Q4 2024 work", "T1 bushings replaced and transformer oil processed"], ["Q2 2025 work", "Circuit breaker L34T1 refurbished"]],
     diagram: {
       label: "2013 plant rating / 2018 filed routes",
@@ -15485,6 +15774,16 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1981 ORIGINAL 136L CONNECTION",
+        sourceId: "np-2025-ca-np-121-central",
+        pages: "physical PDF pp. 5 and 7",
+        facts: [
+          ["Original route", "approximately 81.0 km from Bishop's Falls to Cobb's Pond at 138 kV"],
+          ["Construction", "mostly H-frame structures; followed the Trans-Canada Highway before a cross-country approach to Cobb's Pond"],
+          ["Later configuration", "central-system conversion changed the 136L endpoints to Bishop's Falls and Rattling Brook"]
+        ]
+      },
+      {
         label: "2010 IN-SERVICE REPLACEMENT",
         sourceId: "np-2012-in-service-failures",
         pages: "physical PDF p. 3",
@@ -16204,6 +16503,15 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1981 138 KV TRANSMISSION EXPANSION",
+        sourceId: "np-2025-ca-np-121-central",
+        pages: "physical PDF pp. 5 and 7",
+        facts: [
+          ["136L", "originally approximately 81.0 km from Bishop's Falls to Cobb's Pond; mostly H-frame construction"],
+          ["147L", "58 km from Cobb's Pond to Lewisporte; part of the central Newfoundland 138 kV system"]
+        ]
+      },
       {
         label: "2010 MEASURED PEAK AND 2012 FILED EXPANSION",
         sourceId: "np-2012-cobbs-pond",
@@ -17618,6 +17926,16 @@ export const stationProfiles = [
           ["Retained equipment", "retain GPD-T1 and the three voltage regulators; add spill containment"],
           ["Protection and control", "add instrument transformers, digital relays, communications gateway, control building and SCADA monitoring"],
           ["Filed schedule", "construction in 2027; commissioning planned for the fourth quarter of 2027"]
+        ]
+      },
+      {
+        label: "1981 CONSTRUCTION AND GRID CONNECTION",
+        sourceId: "np-2026-greenspond",
+        pages: "physical PDF pp. 340 to 341",
+        facts: [
+          ["Station", "constructed as a 66/12.5 kV distribution substation on a tap from the 115L/116L radial system"],
+          ["Original structures", "66 kV and 12.5 kV wood-pole bus structures"],
+          ["Previous supply", "Hydro diesel station; Greenspond Island was isolated from the Island grid"]
         ]
       },
       {
@@ -21664,6 +21982,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1981 147L CONSTRUCTION",
+        sourceId: "np-1981-147l",
+        pages: "physical PDF p. 11",
+        facts: [["Line", "138 kV; approximately 58 km from Cobb's Pond to Lewisporte"]]
+      },
       {
         label: "2001 REPORTED SUBSTATION REBUILD",
         sourceId: "np-2001-annual-report",
@@ -25787,6 +26111,16 @@ export const stationProfiles = [
       facts: [["TOP-T1", "generation transformer; 25/2.4 kV; 0.75 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1981 PENSTOCK DATE CONFLICT",
+        sourceId: "np-1981-topsail-penstock",
+        pages: "physical PDF p. 29",
+        facts: [
+          ["2020 application", "dates the 1,910 m woodstave penstock replacement to 1981"],
+          ["2004 plant history", "dates the extended penstock and intake to the 1983 major refurbishment"],
+          ["Record status", "the filings do not reconcile the two dates"]
+        ]
+      },
       {
         label: "1983 MAJOR REFURBISHMENT",
         sourceId: "np-1983-topsail-refurbishment",

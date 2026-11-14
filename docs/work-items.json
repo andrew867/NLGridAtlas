@@ -1262,12 +1262,24 @@
       "title": "Reconcile Newfoundland Power 1981 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1981 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-046"],
+      "completion_evidence": ["research/NP_1981_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1981-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand and planning tables establish the actual and forecast system values. Later primary records establish TL232, TL234, TL251, TL252, 136L, 147L, the Quartz tap, Greenspond grid connection, Hardwoods B7C1, Bay d'Espoir unit work, Cat Arm construction and Francois Unit 2001. The Topsail penstock remains unresolved because separate filings assign the work to 1981 and 1983. No supported 1981 Newfoundland Power capital, reliability, energy-sales or customer-account total was located."
+    },
+    {
+      "id": "NPREG-048",
+      "title": "Reconcile Newfoundland Power 1980 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1980 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-047"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with surviving demand and planning tables, then reconcile TL232, TL234, TL251, Upper Salmon construction, terminal, generation, protection, financial and telecommunications records without assigning an asset-account date to a complete project unless the filing establishes that relationship."
+      "notes": "Start with the surviving demand and planning tables, then reconcile dated transmission, station, generation, protection, telecommunications and construction records. Keep planning forecasts separate from actual demand and do not treat depreciation dates as complete project records without supporting evidence."
     },
     {
       "id": "ASSET-001",

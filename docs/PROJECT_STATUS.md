@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1981 system record from historical demand, planning, transmission, station, generation and construction records.
+- Added 716.2 MW Newfoundland Power peak demand, 978 MW Island transmission peak, the 1981 planning case, TL232, TL234, TL251, TL252, the original 136L and 147L routes, the Quartz tap, the Greenspond grid connection, Hardwoods B7C1, Bay d'Espoir unit work, Cat Arm construction and Francois diesel Unit 2001.
+- Preserved the unresolved Topsail penstock conflict. The 2020 application dates the 1,910 m woodstave penstock to 1981, while the separate 2004 plant history dates the extended penstock and intake to the 1983 refurbishment.
+- Completed NPREG-047 and opened NPREG-048 for the surviving 1980 system and annual records.
 - Reconstructed the surviving 1982 system record from historical demand, planning, transmission, terminal-station, protection, DC-equipment and plant-outage records.
 - Added 731.8 MW Newfoundland Power peak demand, 1,083 MW Island transmission peak, the 1981 planning case, the 27 km Holyrood to Hardwoods 230 kV completion, TL239, TL253, the 300L and 308L rebuilds, the Hinds Lake canal-dyke breach, Holyrood B13B15 equipment, Berry Hill's charger, Bayview's 1982 control building and protection, and Salt Pond transformer protection.
 - Completed NPREG-046 and opened NPREG-047 for the surviving 1981 system and annual records.
