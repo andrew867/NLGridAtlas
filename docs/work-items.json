@@ -1082,12 +1082,24 @@
       "title": "Reconcile Newfoundland Power 1996 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1996 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-031"],
+      "completion_evidence": ["research/NP_1996_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1996-system.test.js"],
+      "blocker": null,
+      "notes": "The surviving annual report, regulatory returns and revised reliability response establish actual system reliability, the multi-year insulator program, the 1996 Rose Blanche development plan, exact capital categories, generation and losses, a dated system map, separate transmission and substation fixed-asset values, and the early-1997 telecommunications state. No 1996 service-availability percentage, operating-area reliability table, peak demand or system load factor was located."
+    },
+    {
+      "id": "NPREG-033",
+      "title": "Reconcile Newfoundland Power 1995 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1995 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-032"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Begin with the surviving annual report and 2003 General Rate Application responses. Preserve actual values separately from later forecasts and do not infer unavailable operating-area data."
+      "notes": "Search the archive by document identity and dated content. Do not assume that the CA-213 sequence includes a surviving 1995 annual report."
     },
     {
       "id": "ASSET-001",

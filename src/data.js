@@ -380,6 +380,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-1996-annual-report",
+    year: 1996,
+    organization: "Newfoundland Power",
+    title: "1996 Annual Report and Regulatory Returns, Electrical System Record",
+    topics: ["insulator replacement", "radio", "substation control", "Rose Blanche", "system map", "capital expenditure", "transmission", "substations", "system reliability"],
+    pages: "physical PDF pp. 8 to 9, 11, 21, 29, 38, 49 and 53",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213A.pdf"
+  },
+  {
     id: "np-1997-annual-report",
     year: 1997,
     organization: "Newfoundland Power",
@@ -6538,6 +6548,15 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1996-system-reliability",
+    scope: "1996 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages and reported outage causes",
+    status: "reported",
+    sources: [
+      { sourceId: "np-1996-annual-report", pages: "physical PDF p. 8" },
+      { sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }
+    ]
+  },
+  {
     id: "np-1997-system-reliability",
     scope: "1997 Newfoundland Power actual SAIFI and SAIDI excluding Hydro loss-of-supply outages and reported outage causes",
     status: "reported",
@@ -6666,6 +6685,69 @@ export const timeline = [
     body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
     sourceId: "vhf-2004",
     pages: "PDF p. 92",
+    status: "reported"
+  },
+  {
+    date: "1996",
+    category: "reliability",
+    title: "SAIFI was 2.66 and SAIDI was 3.87 hours",
+    body: "The figures exclude Hydro loss-of-supply outages. Insulator failures contributed to outages on the Bonavista and Burin peninsulas and parts of the Avalon Peninsula. High winds and salt spray caused additional December outages around Port aux Basques and the Port au Port Peninsula.",
+    sourceId: "np-1996-annual-report",
+    pages: "physical PDF p. 8; CA-446Rev physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1996",
+    category: "network",
+    title: "Transmission and substation insulator replacement continued",
+    body: "The program began in 1989 and was scheduled through 2001. Newfoundland Power reported that it would replace more than 70,000 insulators dating from the 1960s and 1970s at a cost exceeding $10 million.",
+    sourceId: "np-1996-annual-report",
+    pages: "physical PDF p. 8",
+    status: "reported"
+  },
+  {
+    date: "1996",
+    category: "generation",
+    title: "Rose Blanche was filed as a 5.5 MW development",
+    body: "The plan called for construction to begin in 1997 and completion in fall 1998. Filed annual production was 22 GWh, with 36,000 barrels of oil displaced annually and reduced southwest transmission losses.",
+    sourceId: "np-1996-annual-report",
+    pages: "physical PDF p. 9",
+    status: "proposed"
+  },
+  {
+    date: "1996",
+    category: "network",
+    title: "Actual capital expenditure was $28.770 million",
+    body: "The regulatory return records $2.061 million for energy supply, $1.179 million for substations, $1.634 million for transmission, $11.448 million for distribution and $0.930 million for telecommunications.",
+    sourceId: "np-1996-annual-report",
+    pages: "physical PDF p. 38",
+    status: "reported"
+  },
+  {
+    date: "1996",
+    category: "generation",
+    title: "Company generation reached 423 GWh",
+    body: "The ten-year summary reports 423 million kWh generated and 4,236 million kWh purchased. The normalized production and sales return records 220,675 MWh of losses, equal to 4.7 percent of purchased and produced energy.",
+    sourceId: "np-1996-annual-report",
+    pages: "physical PDF pp. 29 and 53",
+    status: "reported"
+  },
+  {
+    date: "1996-12-31",
+    category: "financial",
+    title: "Substations carried $47.189 million and transmission $44.005 million net book value",
+    body: "Substations were reported at $87.130 million cost, $40.010 million accumulated depreciation and $0.069 million construction in progress. Transmission was reported at $70.725 million cost, $27.330 million accumulated depreciation and $0.610 million construction in progress.",
+    sourceId: "np-1996-annual-report",
+    pages: "physical PDF p. 21",
+    status: "reported"
+  },
+  {
+    date: "early 1997",
+    category: "telecom",
+    title: "Improved telecommunications system was substantially completed",
+    body: "The 1996 annual report states that the early-1997 work improved radio and substation-control capabilities and supported the introduction of workflow software.",
+    sourceId: "np-1996-annual-report",
+    pages: "physical PDF p. 9",
     status: "reported"
   },
   {
@@ -10305,6 +10387,18 @@ const filedFeederMapProfiles = [
       facts: [["RBH-T1", "generation transformer; 25/6.9 kV; 9.3 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1996 FILED DEVELOPMENT PLAN",
+        sourceId: "np-1996-annual-report",
+        pages: "physical PDF p. 9",
+        facts: [
+          ["Filed rating", "5.5 MW"],
+          ["Filed annual production", "22 GWh"],
+          ["Filed schedule", "construction beginning in 1997; completion in fall 1998"],
+          ["Filed oil displacement", "36,000 barrels annually"],
+          ["Filed system effects", "reduced southwest transmission losses and improved supply reliability"]
+        ]
+      },
       {
         label: "1997 CONSTRUCTION PROGRAM",
         sourceId: "np-1997-annual-report",
