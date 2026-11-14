@@ -520,6 +520,86 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1979-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1979", "Newfoundland Power peak demand", "Island peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1979-129l",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "2005 Capital Budget Application, Carmanville Substation Alternative",
+    topics: ["1979", "129L", "Gander Bay", "Carmanville", "GBY-03", "transmission line", "distribution feeder"],
+    pages: "physical PDF p. 329",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
+  },
+  {
+    id: "nlh-1979-west-coast-microwave",
+    year: 2002,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Telecommunication Plan, West Coast Microwave Radio System",
+    topics: ["1979", "microwave", "telecommunications", "Hinds Lake", "Upper Salmon", "Bay d'Espoir", "Stony Brook", "Deer Lake"],
+    pages: "physical PDF pp. 10 and 151",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionH.pdf"
+  },
+  {
+    id: "np-1979-greenhill-lv-bus",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Greenhill Substation Structure Register",
+    topics: ["1979", "Greenhill", "12.47 kV", "steel bus", "distribution transformer"],
+    pages: "physical PDF p. 196",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "nlh-1979-barachois-reclosers",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Recloser Control Panel Register",
+    topics: ["1979", "Barachois", "BA1-R1", "BA4-R1", "distribution protection", "recloser"],
+    pages: "physical PDF p. 323",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1979-holyrood-stage2",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Holyrood Unit 3 Relay Panels",
+    topics: ["1978", "1979", "Holyrood", "Unit 3", "Stage 2", "relay panels", "commissioning"],
+    pages: "physical PDF p. 918",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf"
+  },
+  {
+    id: "nlh-1979-holyrood-assets",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Holyrood Condition Assessment and Life Extension Study",
+    topics: ["1979", "Holyrood", "Unit 3", "generator bus duct", "protection", "excitation", "T1", "T3"],
+    pages: "physical PDF pp. 379, 405 to 406 and 547",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/reports/AMEC-Report-Jan28-11.pdf"
+  },
+  {
+    id: "nlh-1979-tl232-construction",
+    year: 1983,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "1983 Board Record, TL232 Construction and Remedial Work",
+    topics: ["1979", "1980", "1981", "TL232", "Stony Brook", "Buchans", "construction date conflict"],
+    pages: "physical PDF p. 64",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Consents/83PMARCH.pdf"
+  },
+  {
     id: "nlh-1980-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8288,9 +8368,26 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1979-system-record",
+    scope: "1979 actual demand, transmission and distribution construction, telecommunications, station equipment and Holyrood Unit 3 electrical work",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1979-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-1979-129l", pages: "physical PDF p. 329" },
+      { sourceId: "nlh-1979-west-coast-microwave", pages: "physical PDF pp. 10 and 151" },
+      { sourceId: "np-1979-greenhill-lv-bus", pages: "physical PDF p. 196" },
+      { sourceId: "nlh-1979-barachois-reclosers", pages: "physical PDF p. 323" },
+      { sourceId: "nlh-1979-holyrood-stage2", pages: "physical PDF p. 918" },
+      { sourceId: "nlh-1979-holyrood-assets", pages: "physical PDF pp. 379, 405 to 406 and 547" },
+      { sourceId: "nlh-1979-tl232-construction", pages: "physical PDF p. 64" },
+      { sourceId: "nlh-1980-holyrood-unit3", pages: "physical PDF p. 14" },
+      { sourceId: "nlh-1981-tl232", pages: "physical PDF p. 116" }
+    ]
+  },
+  {
     id: "np-1980-system-record",
     scope: "1980 actual demand, terminal and distribution-station construction, generation commissioning, rural electrification and the transfer of Power Distribution District assets",
-    status: "reported",
+    status: "unresolved",
     sources: [
       { sourceId: "nlh-1980-historical-demand", pages: "physical PDF p. 2" },
       { sourceId: "nlh-1980-board-record", pages: "physical PDF p. 20" },
@@ -8301,7 +8398,8 @@ export const staticClaims = [
       { sourceId: "nlh-1980-hinds-lake", pages: "physical PDF p. 23" },
       { sourceId: "nlh-1980-holyrood-unit3", pages: "physical PDF p. 14" },
       { sourceId: "nlh-1980-roddickton-assessment", pages: "physical PDF p. 9" },
-      { sourceId: "nlh-1980-paradise-river-diesel", pages: "physical PDF p. 344" }
+      { sourceId: "nlh-1980-paradise-river-diesel", pages: "physical PDF p. 344" },
+      { sourceId: "nlh-1979-holyrood-stage2", pages: "physical PDF p. 918" }
     ]
   },
   {
@@ -8312,6 +8410,7 @@ export const staticClaims = [
       { sourceId: "nlh-1981-historical-demand", pages: "physical PDF p. 2" },
       { sourceId: "np-1981-planning-forecast", pages: "physical PDF p. 8" },
       { sourceId: "nlh-1981-tl232", pages: "physical PDF p. 116" },
+      { sourceId: "nlh-1979-tl232-construction", pages: "physical PDF p. 64" },
       { sourceId: "nlh-1981-tl234-tl252", pages: "physical PDF p. 54" },
       { sourceId: "np-2025-ca-np-121-central", pages: "physical PDF pp. 5 and 7" },
       { sourceId: "np-1981-147l", pages: "physical PDF p. 11" },
@@ -8578,6 +8677,69 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "1979",
+    category: "load",
+    title: "The Island transmission peak was 997 MW",
+    body: "The historical demand table reports Newfoundland Power peak demand of 664.1 MW and Hydro system peak demand of 821 MW. It does not print a separate Hydro Rural peak for 1979.",
+    sourceId: "nlh-1979-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1979",
+    category: "network",
+    title: "129L reached Carmanville",
+    body: "Newfoundland Power built the line from Gander Bay to Carmanville, then operated it as feeder GBY-03 when the expected load growth did not support the planned Carmanville Substation.",
+    sourceId: "np-1979-129l",
+    pages: "physical PDF p. 329",
+    status: "reported"
+  },
+  {
+    date: "1979",
+    category: "telecommunications",
+    title: "Hydro installed the West Coast microwave system",
+    body: "Ten microwave hops carried operational voice and data from the Hinds Lake and Upper Salmon developments to the Provincial Control Centre at Bay d'Espoir. Teleprotection remained on power-line carrier because microwave teleprotection was not then considered proven.",
+    sourceId: "nlh-1979-west-coast-microwave",
+    pages: "physical PDF pp. 10 and 151",
+    status: "reported"
+  },
+  {
+    date: "1979",
+    category: "station",
+    title: "Greenhill received its 12.47 kV steel bus",
+    body: "The later station register reports a 20 MVA distribution transformer, a 66 kV steel high-voltage structure installed in 1975, and a 12.47 kV steel low-voltage structure installed in 1979.",
+    sourceId: "np-1979-greenhill-lv-bus",
+    pages: "physical PDF p. 196",
+    status: "reported"
+  },
+  {
+    date: "1979",
+    category: "protection",
+    title: "Barachois received two pole-mounted feeder reclosers",
+    body: "The asset register dates BA1-R1 and BA4-R1 to 1979. Both control panels were scheduled for replacement in the 2011 capital program because of age, weathering and salt corrosion.",
+    sourceId: "nlh-1979-barachois-reclosers",
+    pages: "physical PDF p. 323",
+    status: "reported"
+  },
+  {
+    date: "1979",
+    category: "generation",
+    title: "Holyrood Unit 3 electrical systems entered service",
+    body: "The Stage 2 relay-panel filing says the panels were commissioned in spring 1979. The condition study dates the isolated-phase generator bus, protection and control equipment, 258 VDC distribution panel, excitation transformer, rectifier transformer and field breaker to 1979. A separate overhaul filing dates turbine-generator commissioning to 1980.",
+    sourceId: "nlh-1979-holyrood-stage2",
+    pages: "physical PDF p. 918; compare condition study physical PDF pp. 379 and 405 to 406; 2013 overhaul filing physical PDF p. 14",
+    status: "unresolved"
+  },
+  {
+    date: "1979 to 1981",
+    category: "network",
+    title: "TL232 construction date remains unresolved",
+    body: "The 1983 Board record says the 230 kV Stony Brook to Buchans line was built during 1979 and 1980. A 2008 Hydro filing says it was constructed in 1981. The filings do not reconcile the dates.",
+    sourceId: "nlh-1979-tl232-construction",
+    pages: "physical PDF p. 64; compare 2008 application physical PDF p. 116",
+    status: "unresolved"
+  },
+  {
     date: "1980",
     category: "load",
     title: "The Island transmission peak was 1,030 MW",
@@ -8643,11 +8805,11 @@ export const timeline = [
   {
     date: "1980",
     category: "generation",
-    title: "Holyrood Unit 3 was commissioned",
-    body: "The 150 MW turbine-generator had been installed in 1979. The later overhaul filing reports 132,356 operating hours through February 2012.",
+    title: "Holyrood Unit 3 commissioning date remains unresolved",
+    body: "One overhaul filing says the 150 MW turbine-generator was installed in 1979 and commissioned in 1980. A separate relay-panel filing says Stage 2 came online in spring 1979. Later Hydro summaries also use 1979 for Unit 3.",
     sourceId: "nlh-1980-holyrood-unit3",
-    pages: "physical PDF p. 14",
-    status: "reported"
+    pages: "physical PDF p. 14; compare 2011 application physical PDF p. 918",
+    status: "unresolved"
   },
   {
     date: "1980-12",
@@ -12080,10 +12242,10 @@ export const islandTerminalRecords = [
     name: "Stony Brook Terminal Station",
     status: "verified",
     historyRecords: [{
-      label: "1981 TL232 CONSTRUCTION",
-      sourceId: "nlh-1981-tl232",
-      pages: "physical PDF p. 116",
-      facts: [["Line", "84 km, 230 kV radial line to Buchans; H-frame wood structures and two steel towers"]]
+      label: "1979 TO 1981 TL232 DATE CONFLICT",
+      sourceId: "nlh-1979-tl232-construction",
+      pages: "physical PDF p. 64; compare 2008 application physical PDF p. 116",
+      facts: [["Contemporary record", "built during 1979 and 1980 at a reported capital cost of $7.0 million"], ["Later record", "84 km, 230 kV radial line to Buchans; H-frame wood structures and two steel towers; construction dated to 1981"]]
     }],
     facts: [["Station history", "commissioned in 1966 as a load bus and converted to a 230 kV ring bus in 1995"], ["Transformation", "T1 and T2, 230/138 kV, 75/100/125 MVA each in the 2003 system report and the 2016 operating diagram"], ["2016 split-bus arrangement", "TL204 enters bus B2 through B2L04; TL232 enters bus B1 through B1L32; normally closed disconnect B1B2 connects the bus sections"], ["2016 ring section", "TL231, TL205 and TL235 connect through ring breakers B1L31, L05L31, L05L35 and B1L35"], ["138 kV circuits", "TL222 to South Brook; TL210 to Cobb's Pond"], ["2016 transformer protection study", "T1 and T2 had no dedicated 230 kV breaker. The study did not recommend the proposed breaker additions."], ["Q1 2024 work", "TL205 protection upgrade completed"], ["Q3 2024 work", "Disconnect switches replaced"], ["2023 work", "230 kV station fire protection and station lighting upgrades completed"], ["2025 completed work", "Disconnects L05L31-1, L05L31-2 and L05L35-1/L05G replaced; TL232 protective relays replaced"]],
     diagram: {
@@ -12234,10 +12396,10 @@ export const islandTerminalRecords = [
     name: "Buchans Terminal Station",
     status: "verified",
     historyRecords: [{
-      label: "1981 TL232 CONSTRUCTION",
-      sourceId: "nlh-1981-tl232",
-      pages: "physical PDF p. 116",
-      facts: [["Line", "84 km, 230 kV radial line to Stony Brook; built as a parallel central-system link"]]
+      label: "1979 TO 1981 TL232 DATE CONFLICT",
+      sourceId: "nlh-1979-tl232-construction",
+      pages: "physical PDF p. 64; compare 2008 application physical PDF p. 116",
+      facts: [["Contemporary record", "built during 1979 and 1980 at a reported capital cost of $7.0 million"], ["Later record", "84 km, 230 kV radial line to Stony Brook; built as a parallel central-system link and dated to 1981"]]
     }],
     facts: [["Former T1 history", "First installed at Massey Drive in 1970 and moved to Buchans in 1998"], ["2019 T1 replacement", "Completed using the 230/66 kV, 40/53.3/66.6 MVA Hardwoods spare"], ["230 kV ring bus", "T1 is between B1L05 and B1L28; TL205, TL233, TL232, and TL228 occupy the four line positions around the five-breaker ring"], ["Q1 2024 work", "Fire protection installed; TL205 protection upgrade completed"], ["2025 T1 work", "Tap changer oil replacement, access hatch re-gasketing, and leak repairs completed"], ["Local transformation", "66/12.5 kV shown on the 2013 system one-line"], ["230 kV circuits", "TL205 and TL232 to Stony Brook; TL228 to Massey Drive; TL233 to Bottom Brook"], ["66 kV circuits", "TL264 to Duck Pond; TL280 to Star Lake"]],
     diagram: {
@@ -13616,6 +13778,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1979 LOW-VOLTAGE BUS",
+        sourceId: "np-1979-greenhill-lv-bus",
+        pages: "physical PDF p. 196",
+        facts: [
+          ["Distribution transformation", "20 MVA"],
+          ["High-voltage structure", "66 kV steel structure installed in 1975"],
+          ["Low-voltage structure", "12.47 kV steel structure installed in 1979"]
+        ]
+      },
       {
         label: "1984 DERATING",
         sourceId: "np-1984-greenhill-derating",
@@ -18369,6 +18541,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1979 129L TO CARMANVILLE",
+        sourceId: "np-1979-129l",
+        pages: "physical PDF p. 329",
+        facts: [
+          ["Route", "Gander Bay to Carmanville"],
+          ["Original purpose", "built in expectation that area load would support a Carmanville substation"],
+          ["Operating use", "used as distribution feeder GBY-03 after the expected load growth did not occur"]
+        ]
+      },
       {
         label: "2000 REPORTED SUBSTATION REBUILD",
         sourceId: "np-2000-annual-report",

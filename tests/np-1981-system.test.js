@@ -52,8 +52,8 @@ test("1981 station and generation work is attached to asset records", () => {
   assert.match(recordText("LEW"), /1981 147L CONSTRUCTION/);
   assert.match(recordText("TOP"), /1981 PENSTOCK DATE CONFLICT/);
   assert.match(recordText("BDE"), /1981 UNIT 5 DRAFT-TUBE REPAIRS/);
-  assert.match(recordText("STB"), /1981 TL232 CONSTRUCTION/);
-  assert.match(recordText("BUC"), /1981 TL232 CONSTRUCTION/);
+  assert.match(recordText("STB"), /1979 TO 1981 TL232 DATE CONFLICT/);
+  assert.match(recordText("BUC"), /1979 TO 1981 TL232 DATE CONFLICT/);
   assert.match(recordText("USL"), /1981 TL234 CONSTRUCTION/);
 });
 
@@ -68,7 +68,7 @@ test("1981 system claim retains page references", () => {
   const claim = staticClaims.find((candidate) => candidate.id === "np-1981-system-record");
   assert.ok(claim);
   assert.equal(claim.status, "unresolved");
-  assert.equal(claim.sources.length, 15);
+  assert.equal(claim.sources.length, 16);
   assert.equal(sources.find((source) => source.id === "nlh-1981-tl232")?.pages, "physical PDF p. 116");
   assert.equal(sources.find((source) => source.id === "nlh-1981-tl234-tl252")?.pages, "physical PDF p. 54");
   assert.equal(sources.find((source) => source.id === "np-1981-147l")?.pages, "physical PDF p. 11");

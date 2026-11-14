@@ -31,8 +31,10 @@ test("1980 generation records retain equipment details", () => {
 
   const holyrood = timeline.find((entry) => entry.date === "1980" && /Holyrood Unit 3/.test(entry.title));
   assert.ok(holyrood);
+  assert.equal(holyrood.status, "unresolved");
   assert.match(holyrood.body, /installed in 1979/);
   assert.match(holyrood.body, /150 MW/);
+  assert.match(holyrood.body, /spring 1979/);
 });
 
 test("1980 ownership record keeps the filed consideration", () => {
@@ -46,8 +48,8 @@ test("1980 ownership record keeps the filed consideration", () => {
 test("1980 system claim retains physical page references", () => {
   const claim = staticClaims.find((candidate) => candidate.id === "np-1980-system-record");
   assert.ok(claim);
-  assert.equal(claim.status, "reported");
-  assert.equal(claim.sources.length, 10);
+  assert.equal(claim.status, "unresolved");
+  assert.equal(claim.sources.length, 11);
   assert.equal(sources.find((source) => source.id === "nlh-1980-board-record")?.pages, "physical PDF p. 20");
   assert.equal(sources.find((source) => source.id === "nlh-1980-deer-lake")?.pages, "physical PDF p. 4");
   assert.equal(sources.find((source) => source.id === "nlh-1980-hinds-lake")?.pages, "physical PDF p. 23");

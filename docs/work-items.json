@@ -1267,7 +1267,7 @@
       "dependencies": ["NPREG-046"],
       "completion_evidence": ["research/NP_1981_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1981-system.test.js"],
       "blocker": null,
-      "notes": "Historical demand and planning tables establish the actual and forecast system values. Later primary records establish TL232, TL234, TL251, TL252, 136L, 147L, the Quartz tap, Greenspond grid connection, Hardwoods B7C1, Bay d'Espoir unit work, Cat Arm construction and Francois Unit 2001. The Topsail penstock remains unresolved because separate filings assign the work to 1981 and 1983. No supported 1981 Newfoundland Power capital, reliability, energy-sales or customer-account total was located."
+      "notes": "Historical demand and planning tables establish the actual and forecast system values. Later primary records establish TL234, TL251, TL252, 136L, 147L, the Quartz tap, Greenspond grid connection, Hardwoods B7C1, Bay d'Espoir unit work, Cat Arm construction and Francois Unit 2001. TL232 remains unresolved because a contemporary record says it was built during 1979 and 1980 while a later filing states 1981. The Topsail penstock remains unresolved because separate filings assign the work to 1981 and 1983. No supported 1981 Newfoundland Power capital, reliability, energy-sales or customer-account total was located."
     },
     {
       "id": "NPREG-048",
@@ -1279,19 +1279,31 @@
       "dependencies": ["NPREG-047"],
       "completion_evidence": ["research/NP_1980_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1980-system.test.js"],
       "blocker": null,
-      "notes": "Historical demand establishes the actual system values. Later primary records establish Deer Lake Terminal, Dunville, the Gambo 138 kV steel structure, GPD-01, Hinds Lake, Holyrood Unit 3, the Roddickton mini-hydro pilot, Paradise River diesel Unit 254 and the transfer of Power Distribution District assets. No supported 1980 Newfoundland Power capital, reliability, energy-sales, customer-account, VHF equipment total or planning-case row was located."
+      "notes": "Historical demand establishes the actual system values. Later primary records establish Deer Lake Terminal, Dunville, the Gambo 138 kV steel structure, GPD-01, Hinds Lake, the Roddickton mini-hydro pilot, Paradise River diesel Unit 254 and the transfer of Power Distribution District assets. Holyrood Unit 3 remains unresolved because one filing dates turbine-generator commissioning to 1980 while another says Stage 2 came online in spring 1979. No supported 1980 Newfoundland Power capital, reliability, energy-sales, customer-account, VHF equipment total or planning-case row was located."
     },
     {
       "id": "NPREG-049",
       "title": "Reconcile Newfoundland Power 1979 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1979 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-048"],
+      "completion_evidence": ["research/NP_1979_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1979-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the actual system values. Later primary records establish 129L from Gander Bay to Carmanville, the ten-hop West Coast microwave system, the Greenhill 12.47 kV steel bus, Barachois reclosers and Holyrood Unit 3 electrical equipment. Holyrood commissioning remains unresolved because one filing places Stage 2 online in spring 1979 while another dates turbine-generator commissioning to 1980. TL232 remains unresolved because a contemporary record says it was built during 1979 and 1980 while a later filing states 1981. No supported 1979 Newfoundland Power capital, reliability, energy-sales or customer-account total was located."
+    },
+    {
+      "id": "NPREG-050",
+      "title": "Reconcile Newfoundland Power 1978 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1978 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-049"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the surviving demand table and contemporary Board records, then reconcile dated station, generation, protection, telecommunications and construction evidence. Keep installation dates separate from commissioning dates."
+      "notes": "Start with the surviving demand table and contemporary Board records, then reconcile dated station, generation, protection, telecommunications and construction evidence."
     },
     {
       "id": "ASSET-001",
