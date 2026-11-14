@@ -1414,6 +1414,18 @@
       "notes": "Historical demand establishes the reported Newfoundland Power peak. Later primary records establish Bay d'Espoir Stage II Units 5 and 6, Summerville Substation, 94L, TL215, Holyrood service transformers and T5, the Holyrood black-start turbine and marine terminal, and the Salt Pond gas turbine. Holyrood Stage I remains unresolved because filed records give conflicting commissioning dates. The assigned-asset register does not establish Riverhead or Trepassey station in-service dates or TL213's construction year."
     },
     {
+      "id": "NPREG-060",
+      "title": "Reconcile Newfoundland Power 1968 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1968 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-059"],
+      "completion_evidence": ["research/NP_1968_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1968-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand establishes the reported Newfoundland Power peak. Later primary records establish Bay d'Espoir Unit 4 and Stage I intake controls, TL206, TL207, TL214, TL218, TL224 and TL237, a 1968 section of 55L, Glenwood and Harmon substations, Quartz station structures, the transformer later designated Hardwoods T3, and the Bottom Brook Terminal Station 1 control building. Two Newfoundland Power filings conflict on 404L's construction year and length, so that line record remains unresolved."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

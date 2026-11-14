@@ -520,6 +520,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1968-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1968", "Newfoundland Power peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "nlh-1968-bde-unit4",
+    year: 2008,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2009 Capital Budget Application, Bay d'Espoir Unit 4",
+    topics: ["1968", "Bay d'Espoir", "Unit 4", "commissioning", "stator winding"],
+    pages: "physical PDF p. 97",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NLH2009Capital/files/application/NLH2009ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1968-bde-stage1",
+    year: 2010,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2011 Capital Budget Application, Bay d'Espoir Stage I Intake Controls",
+    topics: ["1968", "Bay d'Espoir", "Stage I", "Intake 1", "Intake 2", "gate controls"],
+    pages: "physical PDF p. 8",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1968-tl214",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-NLH-097 Revision 1, TL214 Assigned Assets",
+    topics: ["1968", "TL214", "Doyles", "Bottom Brook", "138 kV", "transmission line"],
+    pages: "physical PDF pp. 7 and 14",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA-Amended/files/rfi/IC-NLH-097%20Rev%201.PDF"
+  },
+  {
+    id: "nlh-1968-tl224",
+    year: 2024,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2025 Capital Budget Application, TL224 Wood-Pole Line Record",
+    topics: ["1968", "TL224", "138 kV", "wood-pole line", "inspection"],
+    pages: "physical PDF p. 581",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2025/NLH2025Capital/app/From%20NLH%20-%202025%20Capital%20Budget%20Application%20-%202024-08-22%20-%20CORRECTED.PDF"
+  },
+  {
+    id: "np-1968-404l-revised-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, 400L and 404L Transmission Rebuild",
+    topics: ["1968", "404L", "Wheelers", "401L", "66 kV", "date conflict", "length conflict"],
+    pages: "physical PDF pp. 316 to 317",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
     id: "nlh-1969-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8918,6 +8978,28 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1968-system-record",
+    scope: "1968 demand, Bay d'Espoir generation, transmission construction, station construction, dated station structures and transformer service",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1968-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "nlh-1968-bde-unit4", pages: "physical PDF p. 97" },
+      { sourceId: "nlh-1968-bde-stage1", pages: "physical PDF p. 8" },
+      { sourceId: "nlh-bde-wav-2012", pages: "physical PDF pp. 11 to 12" },
+      { sourceId: "nlh-1996-avalon-line-reliability", pages: "physical PDF pp. 54 to 55" },
+      { sourceId: "nlh-1968-tl214", pages: "physical PDF pp. 7 and 14" },
+      { sourceId: "nlh-1968-tl224", pages: "physical PDF p. 581" },
+      { sourceId: "np-2023-55l", pages: "physical PDF pp. 440 to 441" },
+      { sourceId: "np-2015-400l", pages: "physical PDF p. 556" },
+      { sourceId: "np-1968-404l-revised-record", pages: "physical PDF pp. 316 to 317" },
+      { sourceId: "np-2013-glenwood", pages: "physical PDF p. 272" },
+      { sourceId: "np-2027-harmon", pages: "physical PDF p. 498" },
+      { sourceId: "np-2010-substation-asset-history", pages: "physical PDF p. 194" },
+      { sourceId: "oxen-2013", pages: "physical PDF pp. 15 and 17" },
+      { sourceId: "nlh-bbk-capital-2027", pages: "physical PDF p. 600" }
+    ]
+  },
+  {
     id: "np-1969-system-record",
     scope: "1969 demand, generation commissioning, Holyrood equipment and facilities, transmission construction, station construction and dated assigned assets",
     status: "unresolved",
@@ -9393,6 +9475,87 @@ export const timeline = [
     body: "The original terminal station and transformer T1 entered service in 1967.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1968",
+    category: "load",
+    title: "Newfoundland Power peak demand was 172.9 MW",
+    body: "The historical table does not print Hydro or Island transmission peak demand for 1968.",
+    sourceId: "nlh-1968-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1968",
+    category: "generation",
+    title: "Bay d'Espoir Unit 4 was commissioned",
+    body: "Units 1 through 3 were installed and commissioned in 1967; Unit 4 followed in 1968. The filing describes all four original units as wound-stator machines.",
+    sourceId: "nlh-1968-bde-unit4",
+    pages: "physical PDF p. 97",
+    status: "reported"
+  },
+  {
+    date: "1968",
+    category: "generation",
+    title: "Bay d'Espoir Stage I intake controls entered service",
+    body: "The intake gate controls for Intakes 1 and 2 were installed when Stage I was built and commissioned.",
+    sourceId: "nlh-1968-bde-stage1",
+    pages: "physical PDF p. 8",
+    status: "reported"
+  },
+  {
+    date: "1968",
+    category: "network",
+    title: "Six 230 kV and 138 kV transmission records date to 1968",
+    body: "Hydro records date TL206, TL207, TL218, TL224 and TL237 to 1968. The assigned-asset register gives 1968 as TL214's year built between Doyles and Bottom Brook.",
+    sourceId: "nlh-bde-wav-2012",
+    pages: "physical PDF pp. 11 to 12; compare Exhibit 85 physical PDF pp. 54 to 55, 2025 Capital physical PDF p. 581 and IC-NLH-097 Revision 1 physical PDF pp. 7 and 14",
+    status: "reported"
+  },
+  {
+    date: "1968",
+    category: "network",
+    title: "55L retained a 1.0 km 1968 section",
+    body: "The later 55L record dates the rest of the Blaketown to Clarkes Pond corridor to 1971.",
+    sourceId: "np-2023-55l",
+    pages: "physical PDF pp. 440 to 441",
+    status: "reported"
+  },
+  {
+    date: "1967 or 1968",
+    category: "network",
+    title: "Newfoundland Power filings conflict on 404L construction",
+    body: "The 2015 filing says 404L was built in 1967 and was 1.2 km long. The 2016 filing says it was built in 1968 and was 2.0 km long. Both describe 14 single-pole structures between Wheelers and the 401L tap.",
+    sourceId: "np-2015-400l",
+    pages: "physical PDF p. 556; compare 2016 Capital physical PDF pp. 316 to 317",
+    status: "unresolved"
+  },
+  {
+    date: "1968",
+    category: "station",
+    title: "Glenwood and Harmon substations were constructed",
+    body: "Glenwood entered service as a 138/25 kV transmission and distribution station. Harmon was constructed as a 66/12.5 kV transmission and distribution station; its present transformer followed in 1969.",
+    sourceId: "np-2013-glenwood",
+    pages: "physical PDF p. 272; compare 2027 Capital physical PDF p. 498",
+    status: "reported"
+  },
+  {
+    date: "1968",
+    category: "equipment",
+    title: "Quartz structures and the former Oxen Pond T3 entered service",
+    body: "The station register dates Quartz's wood 66 kV and 4.16 kV structures to 1968. The 40/53.3/66.6 MVA transformer later designated Hardwoods T3 entered service at Oxen Pond in 1968.",
+    sourceId: "np-2010-substation-asset-history",
+    pages: "physical PDF p. 194; compare Oxen Pond filing physical PDF pp. 15 and 17",
+    status: "reported"
+  },
+  {
+    date: "1968",
+    category: "station",
+    title: "Bottom Brook Terminal Station 1 control building was built",
+    body: "The 2027 fire-protection proposal dates the Terminal Station 1 control building to 1968.",
+    sourceId: "nlh-bbk-capital-2027",
+    pages: "physical PDF p. 600",
     status: "reported"
   },
   {
@@ -13611,6 +13774,15 @@ export const islandTerminalRecords = [
     status: "reported",
     facts: [["Station 2 interface, 2013 drawing", "T10 and T12, 230/69 kV, 15/20/25 MVA each"], ["Station 1 unit equipment, 1998 drawing", "T1 to T3, 13.8/230 kV, 64/85 MVA; T4, 13.8/230 kV, 64/88.2 MVA; T5 and T6, 13.8/230 kV, 64/85/88.2 MVA; G1 to G6, 13.8 kV, 85 MVA each"], ["Station 2 unit equipment, 2013 drawing", "T7, 230/13.8 kV, 129/172 MVA; G7, 13.8 kV, 172 MVA"], ["Unit 7 generator, 2023 inspection", "GE, installed 1977; 172 MVA, 13.8 kV, 7,196 A, 60 Hz, 0.9 power factor, 225 rpm rated speed"], ["Unit 7 excitation, 2023 inspection", "ABB static excitation commissioned in 2004; 230 V, 1,457 A. The 1,175 kVA oil-filled excitation transformer is 13.8/7.97 kV to 559 V, 5.64% impedance, and was replaced in 2014"], ["Unit 7 neutral grounding, 2023 inspection", "GE metal-enclosed transformer and resistor cubicle commissioned in 1992; 18 kV rated voltage and 24.94 kV maximum voltage"], ["Unit 7 life extension", "Order P.U. 12(2026) approved up to $66,265,000 on April 21, 2026"], ["Proposed Unit 8 design", "Nominal 150 MW Francis turbine and vertical-shaft synchronous generator with synchronous-condenser capability and static excitation; proposed GSU is oil-filled, three-phase, 129/172 MVA at 13.8/230 kV"], ["Unit 8 early execution approvals", "Orders P.U. 17(2025) and P.U. 21(2026) approved $16,670,000 and $5,630,000 respectively, for a total of $22,300,000"], ["Unit 8 October 2026 status", "Geotechnical field work was complete; the 230 kV breaker package was under review; turbine and generator procurement was paused with no financial commitments; the commercial operation date was unknown"], ["GSU manufacture years", "T1 and T2, 1966; T3, 1967; T4, 1968; T5, 2009; T6, 1969; T7, 2016"], ["T5S and T6S history", "T5 failed in July 2022, was repaired as T5S, and replaced T6 after its July 2023 failure; Unit 6 returned in October 2023. The repaired T6S was reported in January 2025 as the full spare for Bay d'Espoir T1 to T6 and Granite Canal T1, and a reduced-capacity spare for Bay d'Espoir T7 and Upper Salmon T1"], ["New common GSU spare", "Order P.U. 8(2025) approved $12,324,025 on February 4, 2025; completion was scheduled for December 2028"], ["T3 condition, 2023 filing", "Insulation deterioration was reported; replacement in 2028 was identified as a potential action if condition criteria were met"], ["1992 230 kV work", "Bus modifications completed"], ["Unit 4 work in 1992", "Stator wedge inspection and re-wedging; phase A ground fault located at a main lead; bus reinsulated and returned to service"], ["Station 2 local transformation, 2013 drawing", "T11, 69/24 kV, 10/13.3/16.6 MVA; the downstream bus is labelled 25 kV"], ["Station 2 outgoing circuits, 2013 drawing", "TL220 to the Conne River tap, English Harbour West and Barachois; L1 to St. Alban's; L2 to the intake"], ["2013 plant assignment", "592 MW"], ["January 21, 2026 event", "All seven units were removed by 18:00 after frazil ice accumulated on the four penstock intake trash racks; reserve was approximately 250 MW"], ["January 25, 2026 restoration", "Units 1 to 6 were released at full capacity at 15:42; the event log states 6 x 76.5 MW"], ["January 31, 2026 restoration", "Unit 7 was released at 10:33 and available at 154.4 MW"], ["230 kV circuits", "TL202 and TL206 to Sunnyside; TL204 and TL231 to Stony Brook; TL234 to Upper Salmon; TL267 to Western Avalon"]],
     historyRecords: [
+      {
+        label: "1968 STAGE I UNIT 4 AND INTAKE CONTROLS",
+        sourceId: "nlh-1968-bde-unit4",
+        pages: "physical PDF p. 97; compare 2011 Capital physical PDF p. 8",
+        facts: [
+          ["Unit 4", "installed and commissioned in 1968; wound stator construction"],
+          ["Stage I intake controls", "Intakes 1 and 2 installed when Stage I was built and commissioned in 1968"]
+        ]
+      },
       {
         label: "1969 STAGE II UNITS 5 AND 6",
         sourceId: "nlh-1969-bde-stage2",
@@ -19023,6 +19195,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1967 TO 1968 404L DATE AND LENGTH CONFLICT",
+        sourceId: "np-1968-404l-revised-record",
+        pages: "physical PDF pp. 316 to 317",
+        facts: [
+          ["2015 filing", "404L built in 1967; 1.2 km; 14 single-pole structures"],
+          ["2016 filing", "404L built in 1968; 2.0 km; 14 single-pole structures"],
+          ["Endpoints", "Wheelers to the tap on 401L"]
+        ]
+      },
       {
         label: "2004 PROPOSED 404L RETERMINATION AND STATION DECOMMISSIONING",
         sourceId: "np-2004-wheelers",
