@@ -2680,6 +2680,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
   },
   {
+    id: "np-2018-blk02",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, BLK-02 Feeder Upgrade",
+    topics: ["Blaketown", "BLK-02", "Ocean Pond", "Brigus Junction", "Middle Gull Pond", "single-phase", "two-phase", "three-phase", "feeder load growth"],
+    pages: "physical PDF pp. 296 to 298 and 303",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
     id: "np-2019-capex-report-2018",
     year: 2019,
     organization: "Newfoundland Power",
@@ -2714,10 +2724,40 @@ export const sources = [
     year: 2020,
     organization: "Newfoundland Power",
     title: "2019 Capital Expenditure Report",
-    topics: ["Pepperrell", "PEP-T2", "PEP-05", "Stamp's Lane", "SLA-05", "actual expenditure", "duct bank"],
-    pages: "physical PDF pp. 8, 20 and 24",
-    status: "verified",
+    topics: ["Pepperrell", "PEP-T2", "PEP-05", "Stamp's Lane", "SLA-05", "Long Pond", "LPD", "Oxen Pond", "OXP", "36L", "136L", "actual expenditure", "duct bank", "aeronautical marking"],
+    pages: "physical PDF pp. 4, 8 to 10, 20 to 21 and 24",
+    status: "reported",
     url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202019%20Capital%20Expenditure%20Report%20-%202020-02-28.PDF"
+  },
+  {
+    id: "np-2019-dri",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "2019 Capital Budget Application, Distribution Reliability Initiative",
+    topics: ["Dunville", "DUN-01", "Gander Bay", "GBY-03", "St. John's Main", "SJM-06", "distribution reliability", "feeder condition", "route drawings"],
+    pages: "physical PDF pp. 68 to 70, 286 to 292, 300 to 306 and 313 to 319",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
+  },
+  {
+    id: "np-2019-feeder-growth",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "2019 Capital Budget Application, Feeder Additions for Load Growth",
+    topics: ["Blaketown", "BLK-02", "Seal Cove", "SCV-01", "Stamp's Lane", "SLA-05", "SLA-08", "feeder load growth", "voltage conversion", "route drawings"],
+    pages: "physical PDF pp. 66 to 67 and 328 to 339",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
+  },
+  {
+    id: "np-2019-corner-brook-fibre",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "2019 Capital Budget Application, Humber to Bayview Fibre Link",
+    topics: ["Humber", "Bayview", "Corner Brook", "fibre optic cable", "SCADA", "protective relaying", "ICCP"],
+    pages: "physical PDF p. 92",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
   },
   {
     id: "np-2014-pub-np-276",
@@ -7985,6 +8025,15 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2019 FILED HUMBER TO BAYVIEW FIBRE LINK",
+        sourceId: "np-2019-corner-brook-fibre",
+        pages: "physical PDF p. 92",
+        facts: [
+          ["Filed link", "fibre between Humber and Bayview"],
+          ["Filed functions", "SCADA and corporate data; digital protection relay communications for the Corner Brook 66 kV loop"]
+        ]
+      },
+      {
         label: "2022 FILED CONVERSION AND MODERNIZATION",
         sourceId: "np-2022-humber",
         pages: "physical PDF pp. 288 to 289 and 312 to 317",
@@ -8953,6 +9002,28 @@ const filedFeederMapProfiles = [
           ["Lawrence Pond Road", "approximately 2.0 km of single-phase line proposed for conversion to three-phase"],
           ["Filed phase currents", "111 A and 101 A forecast for the two single-phase sections in 2015"]
         ]
+      },
+      {
+        label: "2019 FILED SCV-01 BYPASS-ROAD EXTENSION",
+        sourceId: "np-2019-feeder-growth",
+        pages: "physical PDF pp. 331 to 333 and 338",
+        facts: [
+          ["Existing section", "1.5 km of 4/0 AASC with a 356 A planning rating"],
+          ["Filed 2018 forecast", "374 A after phase balancing"],
+          ["Filed work", "extend 2.5 km of 477 ASC along Peacekeepers Way and connect at Lawrence Pond Road"],
+          ["Filed conductor rating", "590 A per phase"],
+          ["Filed cost", "$650,000"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED 2019 FEEDER EXTENSION",
+    referenceSheets: [
+      {
+        title: "2019 proposed SCV-01 bypass-road extension",
+        image: "./reference-maps/scv-01-2019-upgrade.png",
+        alt: "Filed SCV-01 route drawing showing the Peacekeepers Way extension and Lawrence Pond Road connection",
+        sourceId: "np-2019-feeder-growth",
+        pages: "physical PDF p. 338"
       }
     ]
   },
@@ -9911,6 +9982,15 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2019 FILED HUMBER TO BAYVIEW FIBRE LINK",
+        sourceId: "np-2019-corner-brook-fibre",
+        pages: "physical PDF p. 92",
+        facts: [
+          ["Filed link", "fibre between Humber and Bayview"],
+          ["Filed functions", "SCADA and corporate data; digital protection relay communications for the Corner Brook 66 kV loop"]
+        ]
+      },
       {
         label: "2004 BVS-T2 RELOCATION",
         sourceId: "np-2010-ca-np-016",
@@ -12421,6 +12501,27 @@ export const stationProfiles = [
           ["Work", "the on-load tap changer position was locked and external voltage regulators were installed"],
           ["Disposition", "BLK-T2 was repaired and returned to service"]
         ]
+      },
+      {
+        label: "2018 TO 2019 FILED BLK-02 PHASE EXTENSIONS",
+        sourceId: "np-2018-blk02",
+        pages: "physical PDF pp. 296 to 298 and 303",
+        facts: [
+          ["Feeder", "approximately 150 km serving approximately 1,800 customers in the 2017 filing"],
+          ["2018 section", "convert 2.0 km from single phase to two phase between Brigus Junction and the Middle Gull Pond cabin area"],
+          ["2019 section", "convert 11.5 km from two phase to three phase along the Trans-Canada Highway from Ocean Pond to Brigus Junction"],
+          ["Filed costs", "$319,000 for 2018 and $665,000 for 2019"]
+        ]
+      }
+    ],
+    referenceSheetLabel: "FILED FEEDER PROJECT",
+    referenceSheets: [
+      {
+        title: "BLK-02 phase-extension route",
+        image: "./reference-maps/blk-02-2018-upgrade.png",
+        alt: "Filed BLK-02 route drawing showing the 2018 single-phase to two-phase section and the 2019 two-phase to three-phase section",
+        sourceId: "np-2018-blk02",
+        pages: "physical PDF p. 303"
       }
     ]
   },
@@ -12662,6 +12763,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2019 TO 2021 FILED DUN-01 RELIABILITY WORK",
+        sourceId: "np-2019-dri",
+        pages: "physical PDF pp. 288 to 292",
+        facts: [
+          ["Feeder", "25 kV; approximately 80 km of main three-phase trunk; 1,043 customers in the 2018 study"],
+          ["Condition", "corroded conductor ties, insulator failures, deteriorated crossarms, and remaining 1960s poles"],
+          ["Filed work", "reframe 900 structures, replace original poles and other excessively deteriorated poles, and install two hook-stick disconnect switches"],
+          ["Filed schedule", "three years from 2019 through 2021"],
+          ["Filed cost", "$2.1 million"]
+        ]
+      },
+      {
         label: "2021 FILED CAPACITY AND LINE WORK",
         sourceId: "np-2021-dunville-study",
         pages: "physical PDF pp. 109, 119 to 120 and 124",
@@ -12694,6 +12807,16 @@ export const stationProfiles = [
           ["Repair", "DUN-T1 was out of service for 773 days for a transformer rewind"],
           ["Disposition", "DUN-T1 was repaired and returned to service"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED FEEDER ROUTE",
+    referenceSheets: [
+      {
+        title: "DUN-01 route from Dunville to the Cape Shore",
+        image: "./reference-maps/dun-01-2019-route.png",
+        alt: "Filed DUN-01 route map from Dunville through Point Verde and St. Bride's toward Branch, Point Lance and Cape St. Mary's",
+        sourceId: "np-2019-dri",
+        pages: "physical PDF p. 292"
       }
     ]
   },
@@ -14950,6 +15073,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2019 36L TERMINATION AND ROUTE WORK",
+        sourceId: "np-2019-capex-report",
+        pages: "physical PDF pp. 8 to 9 and 21",
+        facts: [
+          ["Oxen Pond termination", "$400,000 approved; $322,000 actual expenditure"],
+          ["36L construction", "$400,000 approved; $643,000 actual expenditure"],
+          ["Route conditions", "Transport Canada aeronautical requirements added pole paint, marker balls and lighting; Pippy Park constraints also increased construction work"]
+        ]
+      },
+      {
         label: "2020 PROPOSED OXP-01 UPGRADE",
         sourceId: "np-2020-feeder-growth",
         pages: "physical PDF pp. 451 and 458",
@@ -15658,6 +15791,17 @@ export const stationProfiles = [
           ["Transformer breakers", "SJM-T1-B and SJM-T2-B"],
           ["Tie designations", "SJM-TB-1-2, SJM-TB-1-3 and SJM-TIE-1-3-D"]
         ]
+      },
+      {
+        label: "2019 FILED SJM-06 RELIABILITY WORK",
+        sourceId: "np-2019-dri",
+        pages: "physical PDF pp. 315 to 319",
+        facts: [
+          ["Feeder record", "12.5 kV; 1,211 customers; 2.7 km main three-phase trunk"],
+          ["Filed condition", "deteriorated poles, crossarms and insulators, with small 1/0 copper sections and #6 copper taps"],
+          ["Filed work", "replace line hardware and replace the Eric Street, Warbury Street and McKay Street #6 copper taps with 1/0 AASC"],
+          ["Filed cost", "$600,000"]
+        ]
       }
     ],
     referenceSheets: [
@@ -15667,6 +15811,13 @@ export const stationProfiles = [
         alt: "Existing 2011 Water Street underground distribution schematic showing SJM-03, SJM-07, SJM-08, SJM-14 and KBR-10",
         sourceId: "np-2011-capital-stations",
         pages: "physical PDF p. 425"
+      },
+      {
+        title: "2019 filed SJM-06 route",
+        image: "./reference-maps/sjm-06-2019-route.png",
+        alt: "Filed SJM-06 route drawing for the 2019 reliability project in west downtown St. John's",
+        sourceId: "np-2019-dri",
+        pages: "physical PDF p. 319"
       }
     ]
   },
@@ -15748,11 +15899,14 @@ export const stationProfiles = [
       },
       {
         label: "2019 SLA-05 WORK",
-        sourceId: "np-2019-capital-sla05",
-        pages: "physical PDF pp. 332 to 334",
+        sourceId: "np-2019-feeder-growth",
+        pages: "physical PDF pp. 332 to 334 and 339",
         facts: [
-          ["Approved scope", "convert part of SLA-05 and transfer approximately 1.26 MVA to SLA-08"],
-          ["Purpose", "relieve a forecast SLA-05 overload"]
+          ["Existing trunk", "750 MCM PILC in a four-duct bank; 430 A planning rating"],
+          ["Filed 2018 forecast", "438 A after phase balancing"],
+          ["Filed work", "convert the SLA-05 section north of Prince Philip Drive from 4.16 kV to 12.5 kV and transfer approximately 1.26 MVA to SLA-08"],
+          ["Filed post-transfer load", "262.5 A"],
+          ["Filed cost", "$400,000"]
         ]
       },
       {
@@ -15801,6 +15955,16 @@ export const stationProfiles = [
           ["Repair", "SLA-T3 was out of service for 5 days for a de-energized tap changer repair"],
           ["Disposition", "SLA-T3 was repaired and returned to service"]
         ]
+      }
+    ],
+    referenceSheetLabel: "FILED 2019 FEEDER CONVERSION",
+    referenceSheets: [
+      {
+        title: "2019 proposed SLA-05 conversion",
+        image: "./reference-maps/sla-05-2019-conversion.png",
+        alt: "Filed SLA-05 drawing showing the section north of Prince Philip Drive proposed for conversion and transfer to SLA-08",
+        sourceId: "np-2019-feeder-growth",
+        pages: "physical PDF p. 339"
       }
     ]
   },
@@ -18199,6 +18363,16 @@ export const stationProfiles = [
           ["Approved capital expenditure", "$4.6 million"],
           ["Funding", "provincial Department of Transportation and Works reimbursed Newfoundland Power"],
           ["Rate treatment", "MUN special facility, not recovered from other ratepayers"]
+        ]
+      },
+      {
+        label: "2019 CAPITAL EXPENDITURE RECORD",
+        sourceId: "np-2019-capex-report",
+        pages: "physical PDF pp. 8 to 9",
+        facts: [
+          ["Long Pond Substation", "$3.800 million approved; $2.382 million actual expenditure"],
+          ["Oxen Pond 36L termination", "$400,000 approved; $322,000 actual expenditure"],
+          ["36L construction", "$400,000 approved; $643,000 actual expenditure"]
         ]
       }
     ],

@@ -802,6 +802,18 @@
       "notes": "CA-NP-113 ties Bonavista, Marystown, and Grand Bay modernization to 2020 substantial completion and station-level capital spend. The filed BRB-05, OXP-01, PUL-05, BCV-03, and GDL-09 scopes and route drawings are attached to their station records. CA-NP-176 identifies GDL-09 as completed in 2021. The 2020 expenditure report does not allocate the remaining feeder-program spend or carryover by asset, so BRB-05, OXP-01, PUL-05, and BCV-03 remain proposed."
     },
     {
+      "id": "NPREG-009",
+      "title": "Reconcile Newfoundland Power 2019 feeder, transmission, telecommunications, and capital records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2018 and 2019 capital applications, route drawings, the 2019 capital expenditure report, and the Long Pond project records.",
+      "dependencies": ["NPREG-008"],
+      "completion_evidence": ["research/NP_2019_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "The filed BLK-02, DUN-01, SJM-06, SCV-01, and SLA-05 scopes and route drawings are attached to their station records. The expenditure report supplies actual Long Pond, Oxen Pond termination, and 36L spending and the 36L construction explanation. The report's Long Pond p. 20 value conflicts with its own variance and the p. 8 category table; the reconciled $2.382 million value is documented. Asset-level completion remains open for four feeder projects and the filed Humber to Bayview fibre link."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

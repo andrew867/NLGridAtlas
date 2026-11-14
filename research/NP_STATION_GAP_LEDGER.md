@@ -685,6 +685,15 @@ The March 2014 inspection-form asset registers are now attached to the HWD, MOL,
 
 ## Remaining data classes
 
+## 2019 capital-record reconciliation
+
+- [x] BLK-02 has the filed 2018 and 2019 phase-extension scope and route drawing, 2018 Capital Budget Application physical PDF pp. 296 to 298 and 303.
+- [x] DUN-01 has the filed 2019 to 2021 reliability scope and route drawing, 2019 Capital Budget Application physical PDF pp. 288 to 292.
+- [x] SJM-06, SCV-01, and SLA-05 have their filed 2019 conductor, load, scope, cost, and route records, physical PDF pp. 315 to 319 and 331 to 339.
+- [x] Long Pond, the Oxen Pond 36L termination, and 36L have their reported 2019 expenditure values. The Long Pond p. 20 typographical conflict is documented separately in `research/NP_2019_CAPITAL_AND_SYSTEM_WORK.md`.
+- [x] The filed Humber to Bayview fibre link is attached to both station histories, 2019 Capital Budget Application physical PDF p. 92.
+- [ ] Asset-level completion records remain open for BLK-02, DUN-01, SJM-06, SCV-01, and the Humber to Bayview fibre link.
+
 - [x] CA-NP-168 Attachment A provides 109 Newfoundland Power transmission asset descriptions and allocations. Its historical-cost date is December 31, 2022; physical PDF pp. 1 and 3 to 4. The atlas retains the June 2005 map as a separate dated network layer.
 - [x] PUB-NP-081 Attachment B provides 300 unique distribution feeder records with operating voltage, planning and winter capacity, 2024 to 2025 forecast winter peak, and loading against planning capacity; physical PDF pp. 10 to 20. This later planning register is separate from the June 2005 feeder list.
 - [x] All 150 feeder map sheets in CA-NP-020 Attachment B, physical PDF pp. 20 to 169, are extracted and linked to station records. Eight additional route and proposed-recloser drawings are preserved for HWD-08, KEN-01 to KEN-04, VIR-06, GOU-01, and GOU-03. CA-NP-020 has no feeder sheet for HWD-08 or the later additions listed in the feeder-map audit.

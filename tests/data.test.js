@@ -2796,7 +2796,7 @@ test("Memorial and Long Pond records preserve the filed Health Sciences supply p
   assert.match(longPondFacts, /B2 circuits MUN-24 HSC #2, future.*MUN-20 spare/);
   assert.match(components["lpd-b1"].summary, /MUN-28, MUN-27, and MUN-25 are marked future/);
   assert.match(components["lpd-b2"].summary, /MUN-24, MUN-22, and MUN-21 are marked future/);
-  assert.deepEqual(longPond.historyRecords.map((record) => record.sourceId), ["gnl-2018-hsc-award", "np-2019-long-pond", "pu-5-2019-long-pond"]);
+  assert.deepEqual(longPond.historyRecords.map((record) => record.sourceId), ["gnl-2018-hsc-award", "np-2019-long-pond", "pu-5-2019-long-pond", "np-2019-capex-report"]);
   assert.match(longPond.historyRecords[0].facts.flat().join(" "), /JSM Electrical Ltd\./);
   assert.match(longPond.historyRecords[0].facts.flat().join(" "), /\$4,422,267\.50/);
   assert.match(longPond.historyRecords[1].facts.flat().join(" "), /1\.4 km/);
@@ -3064,7 +3064,8 @@ test("station reference schematics remain expandable and locally preserved", asy
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
   const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
   assert.deepEqual(stJohnsMain.referenceSheets.map((sheet) => [sheet.title, sheet.pages]), [
-    ["2011 Water Street existing feeder schematic", "physical PDF p. 425"]
+    ["2011 Water Street existing feeder schematic", "physical PDF p. 425"],
+    ["2019 filed SJM-06 route", "physical PDF p. 319"]
   ]);
   assert.equal(kingsBridge.referenceSheets[0].image, "./reference-maps/kbr-2019-service-area.png");
   assert.equal(pepperell.referenceSheets[0].pages, "physical PDF p. 37");
@@ -3811,5 +3812,33 @@ test("2020 Newfoundland Power records preserve station closeouts and feeder evid
   for (const [code, label] of [["BRB", "2020 PROPOSED BRB-05 UPGRADE"], ["OXP", "2020 PROPOSED OXP-01 UPGRADE"], ["PUL", "2020 PROPOSED PUL-05 UPGRADE"], ["BCV", "2020 PROPOSED BCV-03 UPGRADE"]]) {
     assert.match(history(code, label).label, /PROPOSED/);
   }
+});
+
+test("2019 Newfoundland Power records preserve filed work and reported capital values", () => {
+  const station = (code) => stationProfiles.find((record) => record.code === code);
+  const history = (code, label) => station(code).historyRecords.find((record) => record.label === label);
+  const route = (code, image) => station(code).referenceSheets.find((record) => record.image === image);
+
+  assert.equal(sources.find((source) => source.id === "np-2019-capex-report").status, "reported");
+  assert.equal(sources.find((source) => source.id === "np-2019-dri").status, "proposed");
+  assert.equal(sources.find((source) => source.id === "np-2019-feeder-growth").status, "proposed");
+  assert.equal(sources.find((source) => source.id === "np-2019-corner-brook-fibre").status, "proposed");
+
+  assert.ok(route("BLK", "./reference-maps/blk-02-2018-upgrade.png"));
+  assert.ok(route("DUN", "./reference-maps/dun-01-2019-route.png"));
+  assert.ok(route("SJM", "./reference-maps/sjm-06-2019-route.png"));
+  assert.ok(route("SCV", "./reference-maps/scv-01-2019-upgrade.png"));
+  assert.ok(route("SLA", "./reference-maps/sla-05-2019-conversion.png"));
+
+  assert.match(history("BLK", "2018 TO 2019 FILED BLK-02 PHASE EXTENSIONS").facts.flat().join(" "), /11\.5 km.*\$665,000/);
+  assert.match(history("DUN", "2019 TO 2021 FILED DUN-01 RELIABILITY WORK").facts.flat().join(" "), /900 structures.*\$2\.1 million/);
+  assert.match(history("SJM", "2019 FILED SJM-06 RELIABILITY WORK").facts.flat().join(" "), /1,211 customers.*\$600,000/);
+  assert.match(history("SCV", "2019 FILED SCV-01 BYPASS-ROAD EXTENSION").facts.flat().join(" "), /374 A.*590 A.*\$650,000/);
+  assert.match(history("SLA", "2019 SLA-05 WORK").facts.flat().join(" "), /430 A.*438 A.*1\.26 MVA.*\$400,000/);
+
+  assert.match(history("LPD", "2019 CAPITAL EXPENDITURE RECORD").facts.flat().join(" "), /\$3\.800 million approved; \$2\.382 million actual/);
+  assert.match(history("OXP", "2019 36L TERMINATION AND ROUTE WORK").facts.flat().join(" "), /\$400,000 approved; \$643,000 actual/);
+  assert.match(history("HUM", "2019 FILED HUMBER TO BAYVIEW FIBRE LINK").facts.flat().join(" "), /SCADA.*digital protection relay/);
+  assert.match(history("BVS", "2019 FILED HUMBER TO BAYVIEW FIBRE LINK").facts.flat().join(" "), /SCADA.*digital protection relay/);
 });
 
