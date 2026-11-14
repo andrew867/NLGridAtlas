@@ -530,6 +530,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1956-new-chelsea-penstock",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "PUB-126 NP, New Chelsea Penstock and Service Date",
+    topics: ["1956", "New Chelsea", "steel penstock", "hydroelectric generation", "service date"],
+    pages: "physical PDF p. 1",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/PUB-126NP.pdf"
+  },
+  {
+    id: "nlh-1956-snooks-penstock",
+    year: 2004,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2005 Capital Budget Application, Snook's Arm Penstock",
+    topics: ["1956", "Snook's Arm", "Tilt Cove", "woodstave penstock", "Maritime Mining Corporation"],
+    pages: "physical PDF p. 198",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2005cap/files/applic/hydro2005CapBudComplete.pdf"
+  },
+  {
+    id: "np-1956-thomas-pond-spillway",
+    year: 2018,
+    organization: "Newfoundland Power",
+    title: "2019 Capital Budget Application, Thomas Pond Spillway",
+    topics: ["1956", "Thomas Pond", "Topsail", "spillway", "stoplogs", "hydroelectric generation"],
+    pages: "physical PDF p. 195",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF"
+  },
+  {
     id: "np-1957-101l-condition",
     year: 2018,
     organization: "Newfoundland Power",
@@ -9838,6 +9868,25 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1956-system-record",
+    scope: "1956 transmission construction, generation and station development, original plant electrical equipment, and hydroelectric civil works",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2007-capital", pages: "physical PDF p. 178" },
+      { sourceId: "np-2008-transmission-rebuild", pages: "physical PDF p. 191" },
+      { sourceId: "np-2006-407l", pages: "physical PDF pp. 312 to 313" },
+      { sourceId: "np-2025-lockston", pages: "physical PDF pp. 413 and 415 to 416" },
+      { sourceId: "np-2012-lockston", pages: "physical PDF pp. 278 to 280" },
+      { sourceId: "np-2011-hearts-content", pages: "physical PDF p. 287" },
+      { sourceId: "np-1956-new-chelsea-penstock", pages: "physical PDF p. 1" },
+      { sourceId: "np-2004-new-chelsea", pages: "physical PDF pp. 295 to 297" },
+      { sourceId: "np-1956-thomas-pond-spillway", pages: "physical PDF p. 195" },
+      { sourceId: "nlh-1957-mini-hydro-plants", pages: "physical PDF pp. 20 and 30" },
+      { sourceId: "nlh-1956-mini-hydro-commissioning", pages: "physical PDF p. 1" },
+      { sourceId: "nlh-1956-snooks-penstock", pages: "physical PDF p. 198" }
+    ]
+  },
+  {
     id: "np-1957-system-record",
     scope: "1957 transmission construction, hydroelectric generation and civil works, dated station equipment, an operations property record and a preliminary generation estimate",
     status: "unresolved",
@@ -10541,6 +10590,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1956",
+    category: "network",
+    title: "Three 66 kV corridors entered the surviving construction record",
+    body: "43L ran 25.1 km from Heart's Content to New Chelsea on H-frame wood poles. The 31 km 111L connected Lockston and Catalina through Port Union on single wood poles. The 27.9 km 407L connected Stephenville and St. George's through Stephenville Crossing using H-frame and single wood-pole construction.",
+    sourceId: "np-2007-capital",
+    pages: "physical PDF p. 178; 111L physical PDF p. 191; 407L physical PDF p. 312",
+    status: "reported"
+  },
+  {
+    date: "1956",
+    category: "station",
+    title: "Lockston and Heart's Content station developments were built",
+    body: "Lockston was constructed with the hydroelectric development; its original 46 kV and 6.9 kV wood-pole structures remained documented in the 2024 filing. Heart's Content was built as a generation station and later gained distribution equipment.",
+    sourceId: "np-2025-lockston",
+    pages: "physical PDF pp. 413 and 415 to 416; Heart's Content physical PDF p. 287",
+    status: "reported"
+  },
+  {
+    date: "1956",
+    category: "generation",
+    title: "Lockston entered service with its first generating unit",
+    body: "The original 1.5 MW unit used a horizontal 2,000 hp Gilkes Francis turbine and a Canadian General Electric generator under approximately 80 m net head. It was labelled G2 even though it was installed first; the second unit, installed in 1962, was labelled G1.",
+    sourceId: "np-2012-lockston",
+    pages: "physical PDF pp. 278 and 280",
+    status: "reported"
+  },
+  {
+    date: "1956",
+    category: "civil",
+    title: "New Chelsea and Topsail development works were constructed",
+    body: "New Chelsea's steel penstock was constructed in 1956. The plant's control panels, switchgear, DC panel, protection systems and grounding transformer also dated to the original 1956 installation. The Thomas Pond reservoir system gained a 46 m reinforced-concrete spillway with wooden stoplogs and reinforced-concrete abutments.",
+    sourceId: "np-1956-new-chelsea-penstock",
+    pages: "physical PDF p. 1; New Chelsea equipment physical PDF pp. 295 to 297; Thomas Pond physical PDF p. 195",
+    status: "reported"
+  },
+  {
+    date: "1956 or 1957",
+    category: "generation",
+    title: "Snook's Arm and Venams Bight construction and commissioning records diverge",
+    body: "The 2024 assessment says both mine-supply plants were constructed in 1956 and commissioned in 1957. Hydro's 2007 response lists both in service in 1956 and explicitly corrects Snook's Arm from 1957 to 1956. The original Snook's Arm woodstave penstock was 30 inches in diameter and 3,050 feet long.",
+    sourceId: "nlh-1957-mini-hydro-plants",
+    pages: "physical PDF pp. 20 and 30; IC-1 physical PDF p. 1; penstock physical PDF p. 198",
+    status: "unresolved"
+  },
   {
     date: "1957",
     category: "network",
@@ -25139,6 +25233,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1956 ORIGINAL DEVELOPMENT",
+        sourceId: "np-2012-lockston",
+        pages: "physical PDF pp. 278 and 280; station structure physical PDF pp. 413 and 415 to 416",
+        facts: [
+          ["First unit", "1.5 MW horizontal 2,000 hp Gilkes Francis turbine and Canadian General Electric generator under approximately 80 m net head"],
+          ["Unit designation", "the first unit was labelled G2; the second unit installed in 1962 was labelled G1"],
+          ["Original windings", "G2 stator and rotor windings dated to the 1956 installation in the 2011 assessment"],
+          ["Station structures", "46 kV and 6.9 kV wood-pole structures dated to 1956 in the 2024 filing"]
+        ]
+      },
+      {
         label: "1962 G1 ADDITION AND ORIGINAL ELECTRICAL EQUIPMENT",
         sourceId: "np-2012-lockston",
         pages: "physical PDF pp. 278 and 281",
@@ -30341,6 +30446,17 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1956 PENSTOCK AND ORIGINAL ELECTRICAL SYSTEMS",
+        sourceId: "np-1956-new-chelsea-penstock",
+        pages: "physical PDF p. 1; electrical assessment physical PDF pp. 295 to 297",
+        facts: [
+          ["Steel penstock", "constructed in 1956"],
+          ["Plant electrical systems", "control panels, switchgear and protection systems dated to the original 1956 installation"],
+          ["DC distribution", "panel installed in 1956"],
+          ["Generator grounding", "high-impedance grounding transformer dated to the original 1956 installation"]
+        ]
+      },
+      {
         label: "1956 / JANUARY 1957 SERVICE-DATE RECORDS",
         sourceId: "np-2004-new-chelsea",
         pages: "physical PDF p. 285; compare 2013 Capital physical PDF p. 212",
@@ -30658,6 +30774,15 @@ export const stationProfiles = [
       facts: [["TOP-T1", "generation transformer; 25/2.4 kV; 0.75 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1956 THOMAS POND SPILLWAY",
+        sourceId: "np-1956-thomas-pond-spillway",
+        pages: "physical PDF p. 195",
+        facts: [
+          ["Hydraulic role", "reservoir-system spillway feeding Topsail Plant"],
+          ["Structure", "46 m reinforced-concrete spillway with wooden stoplogs and reinforced-concrete abutments"]
+        ]
+      },
       {
         label: "1981 PENSTOCK DATE CONFLICT",
         sourceId: "np-1981-topsail-penstock",

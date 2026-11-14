@@ -1558,6 +1558,18 @@
       "notes": "Later primary records establish 101L; the New Chelsea and Pitmans Pond intakes; the Snook's Arm and Venams Bight mine-supply plants; a Topsail Road property-asset vintage; and a Red Indian Falls preliminary estimate. Records conflict on the New Chelsea and Snook's Arm commissioning years and on dated St. George's breaker evidence. The available historical-demand table begins in 1967. No named 1957 telecommunications installation was located."
     },
     {
+      "id": "NPREG-072",
+      "title": "Reconcile Newfoundland Power 1956 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1956 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-071"],
+      "completion_evidence": ["research/NP_1956_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1956-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records establish 43L, 111L and 407L; Lockston and Heart's Content station construction; Lockston's first generating unit; New Chelsea's steel penstock and original electrical systems; the Thomas Pond spillway; and construction of the Snook's Arm and Venams Bight mine-supply plants. Records conflict between 1956 and 1957 for the two mine-supply plant commissioning dates and for New Chelsea's service date. The available historical-demand table begins in 1967. No named 1956 telecommunications installation was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
