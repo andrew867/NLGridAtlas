@@ -2740,12 +2740,42 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
   },
   {
+    id: "np-2023-hospital-supply",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Corner Brook Acute Care Hospital Redundant Supply",
+    topics: ["Bayview", "BVS-03", "Walbournes", "WAL-07", "Corner Brook Acute Care Hospital", "redundant supply", "customer-funded facility"],
+    pages: "physical PDF pp. 29 to 31",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-2023-pul-growth",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, PUL-01 and PUL-04 Load Growth Work",
+    topics: ["Pulpit Rock", "PUL-01", "PUL-04", "Marine Drive", "Torquay Place", "Western Island Pond Drive", "Forest River Road", "three-phase conversion", "1/0 AASC"],
+    pages: "physical PDF pp. 41 to 42 and 361 to 370",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-2023-q3-regulatory",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "Q3 2023 Quarterly Regulatory Report",
+    topics: ["PUL-01", "PUL-04", "Corner Brook Acute Care Hospital", "SUM-01", "Molloy's Lane", "Long Pond", "Walbournes", "55L", "94L", "capital project status"],
+    pages: "physical PDF pp. 13 to 14",
+    status: "reported",
+    url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q3%202023_Redacted.pdf"
+  },
+  {
     id: "np-2023-capex-report",
     year: 2024,
     organization: "Newfoundland Power",
     title: "2023 Capital Expenditure Report",
-    topics: ["Stamp's Lane", "SLA-05", "actual expenditure", "carryover expenditure"],
-    pages: "physical PDF p. 10",
+    topics: ["Stamp's Lane", "SLA-05", "Bayview", "BVS-03", "PUL-01", "PUL-04", "Walbournes", "Molloy's Lane", "Long Pond", "55L", "94L", "actual expenditure", "carryover expenditure"],
+    pages: "physical PDF pp. 4, 8, 10, 17, 29 and 34",
     status: "verified",
     url: "http://www.pub.nl.ca/indexreports/expenditure/From%20NP%20-%202023%20Capital%20Expenditure%20Report%20-%202024-03-28.PDF"
   },
@@ -4564,8 +4594,8 @@ export const sources = [
     year: 2024,
     organization: "Newfoundland Power",
     title: "Q4 2023 Quarterly Regulatory Report, First Revision",
-    topics: ["Walbournes", "Molloy's Lane", "Long Pond", "capital completion"],
-    pages: "physical PDF p. 12",
+    topics: ["PUL-01", "PUL-04", "SUM-01", "Walbournes", "Molloy's Lane", "Long Pond", "55L", "94L", "St. John's teleprotection", "capital completion"],
+    pages: "physical PDF pp. 12 to 13",
     status: "verified",
     url: "http://www.pub.nl.ca/indexreports/quarterlyregulatory/NP%20Quarterly%20Regulatory%20Report%20-%20Q4%202023%20(1st%20Revision)_Redacted.pdf"
   },
@@ -5464,6 +5494,15 @@ export const timeline = [
     sourceId: "np-2023-long-pond",
     pages: "PDF pp. 109 to 111",
     status: "proposed"
+  },
+  {
+    date: "2023",
+    category: "telecom",
+    title: "St. John's teleprotection replacement entered service",
+    body: "Newfoundland Power reported the replacement system installed and commissioned. It migrated 24 transmission lines in St. John's and the surrounding area to the new system.",
+    sourceId: "np-2023-q4-regulatory",
+    pages: "physical PDF p. 13",
+    status: "reported"
   },
   {
     date: "2025-02-04",
@@ -9775,6 +9814,36 @@ const earlyFeederMapProfiles = [
         ]
       },
       {
+        label: "2023 FILED HOSPITAL REDUNDANT SUPPLY",
+        sourceId: "np-2023-hospital-supply",
+        pages: "physical PDF pp. 29 to 31",
+        facts: [
+          ["Main supply", "WAL-07 from Walbournes; approved for the hospital service in 2022"],
+          ["Redundant supply", "BVS-03 from Bayview; selected for the requested backup supply"],
+          ["Hospital demand", "7.8 MVA estimated demand in the filing"],
+          ["BVS-03 work", "upgrade 2.5 km from single phase to three phase; relocate 1.2 km; construct 400 m underground; widen 1.0 km of right-of-way; extend 4.0 km along Confederation Drive and Crockers Road"],
+          ["Funding", "special facility fully funded by the customer"]
+        ]
+      },
+      {
+        label: "2023 REPORTED HOSPITAL SUPPLY COMPLETION",
+        sourceId: "np-2023-q3-regulatory",
+        pages: "physical PDF p. 13",
+        facts: [
+          ["Project status", "Newfoundland Power reported the Corner Brook hospital redundant supply complete in the third quarter"]
+        ]
+      },
+      {
+        label: "2023 FINAL HOSPITAL SUPPLY EXPENDITURE",
+        sourceId: "np-2023-capex-report",
+        pages: "physical PDF p. 10",
+        facts: [
+          ["Approved", "$2.690 million"],
+          ["Actual", "$2.467 million"],
+          ["Carryover", "$0"]
+        ]
+      },
+      {
         label: "2024 PROPOSED BVS-04 REFURBISHMENT",
         sourceId: "np-2024-bvs04",
         pages: "physical PDF pp. 310 to 313",
@@ -9795,6 +9864,13 @@ const earlyFeederMapProfiles = [
         alt: "Filed BVS-05 feeder addition and Humber feeder conversion map",
         sourceId: "np-2016-bvs05",
         pages: "physical PDF p. 420"
+      },
+      {
+        title: "BVS-03 redundant supply route to the Corner Brook hospital",
+        image: "./reference-maps/bvs-03-2023-hospital-supply.jpeg",
+        alt: "Filed route drawing from Bayview Substation along Confederation Drive and Crockers Road to the Corner Brook Acute Care Hospital",
+        sourceId: "np-2023-hospital-supply",
+        pages: "physical PDF p. 31"
       },
       {
         title: "BVS-04 route to Gallants",
@@ -15818,6 +15894,43 @@ export const stationProfiles = [
         sourceId: "np-2022-q4-report",
         pages: "physical PDF p. 13",
         facts: [["Status", "load-growth project completed"]]
+      },
+      {
+        label: "2023 FILED PUL-01 AND PUL-04 LOAD GROWTH WORK",
+        sourceId: "np-2023-pul-growth",
+        pages: "physical PDF pp. 41 to 42 and 361 to 370",
+        facts: [
+          ["PUL-01", "upgrade 1.0 km along Marine Drive and Torquay Place from single phase to three-phase 1/0 AASC; approximately 1,300 customers; measured section load approximately 116 A against the 85 A planning criterion"],
+          ["PUL-04", "upgrade 1.2 km along Western Island Pond Drive, Forest River Road, and Captain Matthew Davis Drive from single phase to three-phase 1/0 AASC; approximately 1,300 customers"],
+          ["Approved project", "$670,000 total; $312,000 for PUL-01 and $358,000 for PUL-04"]
+        ]
+      },
+      {
+        label: "Q3 2023 CONSTRUCTION STATUS",
+        sourceId: "np-2023-q3-regulatory",
+        pages: "physical PDF p. 13",
+        facts: [
+          ["PUL-04", "Newfoundland Power reported the work complete in the third quarter"],
+          ["PUL-01", "all poles installed and the upgrade nearing completion"]
+        ]
+      },
+      {
+        label: "Q4 2023 REPORTED COMPLETION",
+        sourceId: "np-2023-q4-regulatory",
+        pages: "physical PDF p. 12",
+        facts: [
+          ["Project status", "Newfoundland Power reported both Torbay load-growth feeder upgrades complete"]
+        ]
+      },
+      {
+        label: "2023 FINAL LOAD GROWTH EXPENDITURE",
+        sourceId: "np-2023-capex-report",
+        pages: "physical PDF p. 10",
+        facts: [
+          ["Approved", "$670,000"],
+          ["Actual", "$732,000"],
+          ["Carryover", "$0"]
+        ]
       }
     ],
     referenceSheets: [
@@ -15841,6 +15954,20 @@ export const stationProfiles = [
         alt: "Filed PUL-03 route drawing showing the 2.5 kilometre Bauline Line section selected for conversion from two phase to three phase",
         sourceId: "np-2022-feeder-growth",
         pages: "physical PDF p. 401"
+      },
+      {
+        title: "2023 PUL-01 Marine Drive and Torquay Place upgrade",
+        image: "./reference-maps/pul-01-2023-upgrade.jpeg",
+        alt: "Filed route drawing of the one kilometre PUL-01 single-phase to three-phase upgrade along Marine Drive and Torquay Place",
+        sourceId: "np-2023-pul-growth",
+        pages: "physical PDF p. 363"
+      },
+      {
+        title: "2023 PUL-04 Western Island Pond Drive and Forest River Road upgrade",
+        image: "./reference-maps/pul-04-2023-upgrade.jpeg",
+        alt: "Filed route drawing of the 1.2 kilometre PUL-04 single-phase to three-phase upgrade along Western Island Pond Drive and Forest River Road",
+        sourceId: "np-2023-pul-growth",
+        pages: "physical PDF p. 368"
       }
     ]
   },

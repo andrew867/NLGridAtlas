@@ -754,6 +754,18 @@
       "notes": "The Q3 report records the Oxen Pond 66 kV bus upgrade and switch replacements complete. The annual capital report records zero carryover for those projects and the OXP-01 refurbishment. Gambo and Old Perlican were commissioned in 2024, while final capital expenditures carried into 2025. The annual financial report was checked and did not add station topology or equipment ratings."
     },
     {
+      "id": "NPREG-005",
+      "title": "Reconcile Newfoundland Power 2023 feeder, station, and telecommunications closeouts",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2023 capital application, quarterly completion reports, capital expenditure report, and annual report for Pulpit Rock feeder work, the Corner Brook hospital supply, station work, transmission rebuilds, and teleprotection commissioning.",
+      "dependencies": ["ARC-001", "SRC-001"],
+      "completion_evidence": ["research/NP_2023_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "The PUL-01 and PUL-04 load-growth projects and the BVS-03 hospital redundant supply are tied to their filed routes, reported completion, and final expenditure. The Q4 report also records 24 St. John's area transmission lines migrated to the commissioned replacement teleprotection system. Later filings remain controlling for the final 55L and 94L corridor scope."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -320,6 +320,10 @@ test("new station and corridor records retain primary source locators", () => {
   assert.match(radioRevision.body, /29 existing sites to 39/);
   assert.match(radioRevision.body, /Burin Peninsula/);
 
+  const teleprotection = timeline.find((event) => event.sourceId === "np-2023-q4-regulatory" && event.category === "telecom");
+  assert.match(teleprotection.body, /installed and commissioned/);
+  assert.match(teleprotection.body, /24 transmission lines/);
+
   const burinStudy = timeline.find((event) => event.sourceId === "np-2021-burin-reactive");
   assert.match(burinStudy.body, /40 MVA/);
   assert.match(burinStudy.body, /28\.418 MW/);
@@ -1169,7 +1173,11 @@ test("Bayview records the two-bank station, fifth feeder, modernization, and rou
   assert.match(modernization.facts.flat().join(" "), /six 66 kV side-break switches.*18 electromechanical relays/s);
   const bvs04 = bayview.historyRecords.find((record) => record.label === "2024 PROPOSED BVS-04 REFURBISHMENT");
   assert.match(bvs04.facts.flat().join(" "), /320 customers in 2008 and 478 in 2022.*125 A.*11\.0 km/s);
-  assert.deepEqual(bayview.referenceSheets.map(({ image }) => image), ["./reference-maps/bvs-05-2016-feeder.jpeg", "./reference-maps/bvs-04-2024-route.jpeg"]);
+  assert.deepEqual(bayview.referenceSheets.map(({ image }) => image), [
+    "./reference-maps/bvs-05-2016-feeder.jpeg",
+    "./reference-maps/bvs-03-2023-hospital-supply.jpeg",
+    "./reference-maps/bvs-04-2024-route.jpeg"
+  ]);
 });
 
 test("Abrahams Cove records both 410L sections and the Lower Cove supply boundary", () => {
@@ -2429,6 +2437,14 @@ test("Pulpit Rock record separates the feeder bus from dual-secondary equipment"
   assert.match(facts, /commissioning record not located/);
   assert.match(history, /installed as SLA-T4 in 2021/);
   assert.match(history, /asset 200331/);
+  assert.match(history, /Marine Drive and Torquay Place.*three-phase 1\/0 AASC/);
+  assert.match(history, /Western Island Pond Drive.*three-phase 1\/0 AASC/);
+  assert.match(history, /both Torbay load-growth feeder upgrades complete/);
+  assert.match(history, /\$732,000/);
+  assert.deepEqual(pulpit.referenceSheets.slice(-2).map(({ image, pages }) => [image, pages]), [
+    ["./reference-maps/pul-01-2023-upgrade.jpeg", "physical PDF p. 363"],
+    ["./reference-maps/pul-04-2023-upgrade.jpeg", "physical PDF p. 368"]
+  ]);
   assert.doesNotMatch(facts, /not found/);
 });
 
@@ -2932,7 +2948,7 @@ test("2022 PUL-03 and VIR-01 records separate measured project bases from comple
   assert.equal(virginiaWaters.referenceSheets.at(-1).image, "./reference-maps/vir-01-2022-upgrade.jpg");
   assert.match(pulBasis.facts.flat().join(" "), /198 A per phase.*168 A/);
   assert.match(pulCompletion.facts.flat().join(" "), /project completed/);
-  assert.equal(pulpitRock.referenceSheets.at(-1).image, "./reference-maps/pul-03-2022-upgrade.jpg");
+  assert.ok(pulpitRock.referenceSheets.some(({ image }) => image === "./reference-maps/pul-03-2022-upgrade.jpg"));
 });
 
 test("station history records retain source and page references", async () => {
@@ -3020,6 +3036,27 @@ test("2014 feeder service records preserve routes, customers, and proposed work"
   const pul2014 = pulpitRock.historyRecords.find((record) => record.label === "2014 PROPOSED PUL-04 CONDUCTOR WORK");
   assert.match(pul2014.facts.flat().join(" "), /reconductor 4\.3 km.*477 ASC/);
   assert.match(pul2014.facts.flat().join(" "), /approximately 4\.5 MVA/);
+});
+
+test("Bayview records the completed BVS-03 hospital redundant supply", async () => {
+  const bayview = stationProfiles.find((station) => station.code === "BVS");
+  const history = bayview.historyRecords.flatMap((record) => record.facts).flat().join(" ");
+  assert.match(history, /Main supply WAL-07 from Walbournes/);
+  assert.match(history, /Redundant supply BVS-03 from Bayview.*backup supply/);
+  assert.match(history, /7\.8 MVA/);
+  assert.match(history, /upgrade 2\.5 km from single phase to three phase/);
+  assert.match(history, /fully funded by the customer/);
+  assert.match(history, /redundant supply complete in the third quarter/);
+  assert.match(history, /\$2\.467 million/);
+  assert.deepEqual(bayview.referenceSheets[1], {
+    title: "BVS-03 redundant supply route to the Corner Brook hospital",
+    image: "./reference-maps/bvs-03-2023-hospital-supply.jpeg",
+    alt: "Filed route drawing from Bayview Substation along Confederation Drive and Crockers Road to the Corner Brook Acute Care Hospital",
+    sourceId: "np-2023-hospital-supply",
+    pages: "physical PDF p. 31"
+  });
+  const map = await readFile(new URL("../public/reference-maps/bvs-03-2023-hospital-supply.jpeg", import.meta.url));
+  assert.ok(map.length > 100_000);
 });
 
 test("2014 rural recloser and Holyrood breaker records remain proposed", () => {
