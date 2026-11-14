@@ -390,6 +390,146 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
   },
   {
+    id: "np-1989-reliability",
+    year: 1991,
+    organization: "Newfoundland Power",
+    title: "Comparative Distribution-System Reliability Record",
+    topics: ["1989", "SAIFI", "SAIDI", "CAIDI", "distribution reliability"],
+    pages: "physical PDF p. 11",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008GRA/files/information/Information-17.pdf"
+  },
+  {
+    id: "np-1989-capital",
+    year: 1991,
+    organization: "Newfoundland Power",
+    title: "CA-NP-146 Attachment B, Capital Expenditures Since 1984",
+    topics: ["1989", "capital expenditure"],
+    pages: "physical PDF p. 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf"
+  },
+  {
+    id: "np-1989-operating-summary",
+    year: 1998,
+    organization: "Newfoundland Power",
+    title: "1998 Annual Report, Ten Year Summary",
+    topics: ["1989", "purchased energy", "generation", "peak demand", "sales", "customers"],
+    pages: "physical PDF p. 29",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213C.pdf"
+  },
+  {
+    id: "nlh-1989-vhf-system",
+    year: 2003,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Communications Plan, Existing VHF System",
+    topics: ["1989", "VHF", "ATI", "150 MHz", "repeaters", "ECC", "Aliant"],
+    pages: "physical PDF p. 17",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2004cap/files/prehearing/CommunicationsPlan.pdf"
+  },
+  {
+    id: "nlh-1989-tl257-tl258",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-316 Attachment 1, Island Transmission-Line Register",
+    topics: ["1989", "TL257", "TL258", "Roddickton", "St. Anthony Airport", "Paradise River", "Monkstown"],
+    pages: "physical PDF p. 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf"
+  },
+  {
+    id: "nlh-1989-tl257-history",
+    year: 2001,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-270, Great Northern Peninsula Transmission History",
+    topics: ["1989", "TL257", "Roddickton Woodchip", "St. Anthony Airport", "69 kV"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/hydresp/Indust/IC%20270.pdf"
+  },
+  {
+    id: "nlh-1989-paradise-river",
+    year: 2014,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2015 Capital Budget Application, Paradise River Spare Transformer",
+    topics: ["1989", "Paradise River", "PRV", "T1", "hydroelectric generation", "transformer"],
+    pages: "physical PDF pp. 222 to 223",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NLH2015Capital/files/application/NLH-2015-Capital-Budget-Application-Volume-II-2014-08-01.PDF"
+  },
+  {
+    id: "nlh-1989-hydraulic-in-service",
+    year: 2019,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2020 Capital Budget Application, Hydraulic Generation Asset Management Overview",
+    topics: ["1989", "Paradise River", "PRV", "in-service date", "8 MW"],
+    pages: "physical PDF p. 76",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NLH2020Capital/applications/From%20NLH%20-%202020%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202019-08-01.PDF"
+  },
+  {
+    id: "nlh-1989-holyrood-unit2",
+    year: 2016,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2017 Capital Budget Application, Holyrood Unit 2 Turbine Valve Overhaul",
+    topics: ["1989", "Holyrood", "Unit 2", "uprate", "175 MW", "turbine generator"],
+    pages: "physical PDF p. 232",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202016-07-28.PDF"
+  },
+  {
+    id: "nlh-1989-holyrood-transformers",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-277 Attachment 1, Holyrood Transformer Inventory",
+    topics: ["1989", "Holyrood", "T2", "T8", "Federal Pioneer", "transformer"],
+    pages: "physical PDF p. 229",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-277.PDF"
+  },
+  {
+    id: "np-1989-insulator-program",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-107(a), Insulator Replacement Program",
+    topics: ["1989", "transmission insulators", "substation insulators", "distribution insulators", "reliability"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20107%20(a).pdf"
+  },
+  {
+    id: "np-1989-new-chelsea",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, New Chelsea Runner Replacement and Rewind",
+    topics: ["1989", "New Chelsea", "power cables", "switchgear", "substation"],
+    pages: "physical PDF p. 212",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1989-hearts-content",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "2014 Capital Budget Application, Heart's Content Hydro Plant Refurbishment",
+    topics: ["1989", "Heart's Content", "main inlet valve", "bypass valve", "controls"],
+    pages: "physical PDF p. 171",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1989-pierres-brook",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Pierre's Brook Hydro Plant Refurbishment",
+    topics: ["1989", "Pierre's Brook", "battery bank"],
+    pages: "physical PDF p. 235",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
     id: "np-1990-reliability-capital",
     year: 2020,
     organization: "Newfoundland Power",
@@ -6978,6 +7118,12 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1989-system-reliability",
+    scope: "1989 Newfoundland Power actual SAIFI, SAIDI and CAIDI",
+    status: "reported",
+    sources: [{ sourceId: "np-1989-reliability", pages: "physical PDF p. 11" }]
+  },
+  {
     id: "np-1990-system-reliability",
     scope: "1990 Newfoundland Power actual SAIFI, SAIDI and capital expenditure",
     status: "reported",
@@ -7155,11 +7301,119 @@ export const timeline = [
   },
   {
     date: "1989",
+    category: "reliability",
+    title: "SAIFI was 3.80 and SAIDI was 5.20 hours",
+    body: "The comparative reliability table reports CAIDI of 1.37 hours per interruption.",
+    sourceId: "np-1989-reliability",
+    pages: "physical PDF p. 11",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "network",
+    title: "Actual capital expenditure was $56.304 million",
+    body: "The historical capital table reports the annual expenditure as $56,304,000.",
+    sourceId: "np-1989-capital",
+    pages: "physical PDF p. 9",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "generation",
+    title: "Company generation was 415 GWh and peak demand was 1,106 MW",
+    body: "The ten-year summary records 3,772 GWh purchased, 4,187 GWh total supply, 3,960 GWh in sales and 188,575 customer accounts at year end.",
+    sourceId: "np-1989-operating-summary",
+    pages: "physical PDF p. 29",
+    status: "reported"
+  },
+  {
+    date: "1989",
     category: "telecom",
-    title: "Hydro purchased the VHF system",
-    body: "The 2004 filing describes the existing VHF system as purchased in 1989.",
-    sourceId: "vhf-2004",
-    pages: "PDF p. 92",
+    title: "Hydro placed the ATI VHF system in service",
+    body: "The single-channel 150 MHz system used one central switch and 29 repeaters, 26 at Aliant sites and three at Hydro sites. It also provided public switched telephone network access and ECC paging.",
+    sourceId: "nlh-1989-vhf-system",
+    pages: "physical PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "network",
+    title: "TL257 connected Roddickton Woodchip and St. Anthony Airport",
+    body: "The 69 kV H-frame wood line is listed at 63.395 km.",
+    sourceId: "nlh-1989-tl257-tl258",
+    pages: "physical PDF p. 5",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "network",
+    title: "TL258 connected Paradise River and Monkstown",
+    body: "The 25 kV single-wood-pole line is listed at 17.2 km.",
+    sourceId: "nlh-1989-tl257-tl258",
+    pages: "physical PDF p. 5",
+    status: "reported"
+  },
+  {
+    date: "1989-02-26",
+    category: "generation",
+    title: "Paradise River entered service",
+    body: "The hydraulic-generation overview lists one 8 MW generating unit and gives the in-service date as February 26, 1989.",
+    sourceId: "nlh-1989-hydraulic-in-service",
+    pages: "physical PDF p. 76",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "generation",
+    title: "Holyrood Unit 2 was uprated from 150 MW to 175 MW",
+    body: "The later equipment record dates the maximum-continuous-rating increase to 1989.",
+    sourceId: "nlh-1989-holyrood-unit2",
+    pages: "physical PDF p. 232",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "station",
+    title: "Holyrood installed transformer T2 and transformer T8",
+    body: "Federal Pioneer T2 was rated 115/152/190 MVA at 230/16 kV. Federal Pioneer T8 was rated 75/100/125 MVA at 230/138 kV.",
+    sourceId: "nlh-1989-holyrood-transformers",
+    pages: "physical PDF p. 229",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "reliability",
+    title: "Newfoundland Power began its concentrated transmission-insulator replacement program",
+    body: "The later program summary reports $6.911 million in formal transmission-insulator work from 1989 through 2000.",
+    sourceId: "np-1989-insulator-program",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "generation",
+    title: "New Chelsea replaced the power cables between its switchgear and substation",
+    body: "The later plant history records the completed cable work.",
+    sourceId: "np-1989-new-chelsea",
+    pages: "physical PDF p. 212",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "generation",
+    title: "Heart's Content upgraded its main-inlet and bypass-valve controls",
+    body: "The later plant history records the completed controls work.",
+    sourceId: "np-1989-hearts-content",
+    pages: "physical PDF p. 171",
+    status: "reported"
+  },
+  {
+    date: "1989",
+    category: "generation",
+    title: "Pierre's Brook received a battery bank",
+    body: "The later plant history lists the battery-bank work among completed upgrades.",
+    sourceId: "np-1989-pierres-brook",
+    pages: "physical PDF p. 235",
     status: "reported"
   },
   {
@@ -8858,8 +9112,8 @@ export const components = {
   "hrd-t2": {
     diagram: "hrd", status: "verified", code: "HRD / T2", title: "Holyrood generator transformer T2",
     summary: "The 1989 Federal Pioneer T2 failed internally in November 2021. Hydro installed its 1970 General Electric spare T4 in the T2 position and returned it to service on January 13, 2022.",
-    data: [["Failed unit", "115/152/190 MVA, 230/16 kV"], ["Installed spare T4", "115/152/170 MVA, 230/16 kV, star-delta"], ["Available cooling", "Four of five cooler motors, approximately 150 MVA"], ["Returned", "January 13, 2022"], ["2025 work", "Transformer refurbished; generator and transformer protective relays replaced"]],
-    sources: [sourceRef("nlh-2022-holyrood-t2", "PDF pp. 5 to 8 and 13"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 36"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
+    data: [["Failed unit", "Federal Pioneer; installed 1989; 115/152/190 MVA, ONAN/ONAF/ONAF"], ["Voltage and vector", "230/16 kV, Yd1"], ["Impedance", "Z1 13.7%, Z0 11.75%"], ["Installed spare T4", "115/152/170 MVA, 230/16 kV, star-delta"], ["Available cooling", "Four of five cooler motors, approximately 150 MVA"], ["Returned", "January 13, 2022"], ["2025 work", "Transformer refurbished; generator and transformer protective relays replaced"]],
+    sources: [sourceRef("nlh-1989-holyrood-transformers", "physical PDF p. 229"), sourceRef("nlh-2022-holyrood-t2", "PDF pp. 5 to 8 and 13"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF p. 36"), sourceRef("nlh-q4-2025-terminal-work", "physical PDF p. 32")]
   },
   "hrd-t3": {
     diagram: "hrd", status: "verified", code: "HRD / T3", title: "Holyrood generator transformer T3",
@@ -8888,8 +9142,8 @@ export const components = {
   "hrd-t8": {
     diagram: "hrd", status: "verified", code: "HRD / T8", title: "Holyrood transformer T8",
     summary: "The former T8 moved to the Sunnyside T1 position in 2014. The replacement 75/100/125 MVA Holyrood T8 appears on the March 2015 as-built drawing.",
-    data: [["2012 T8", "75/100/125 MVA, moved to Sunnyside"], ["Current T8 installation", "2014"], ["Current T8 rating", "75/100/125 MVA"], ["2026 model", "125 MVA maximum"]],
-    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("np-2027-loop-study", "PDF p. 194")]
+    data: [["Former T8", "Federal Pioneer; installed 1989; 75/100/125 MVA, ONAN/ONAF/ONAF; 230/138 kV"], ["2014 relocation", "Former T8 moved to Sunnyside T1"], ["Current T8 installation", "2014"], ["Current T8 rating", "75/100/125 MVA"], ["2026 model", "125 MVA maximum"]],
+    sources: [sourceRef("nlh-1989-holyrood-transformers", "physical PDF p. 229"), sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("liberty-supply-review-2014", "physical PDF pp. 228 to 229"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("np-2027-loop-study", "PDF p. 194")]
   },
   "hrd-t5": {
     diagram: "hrd", status: "verified", code: "HRD / T5", title: "Holyrood transformer T5",
@@ -9512,6 +9766,34 @@ export const islandTerminalRecords = [
     sources: [sourceRef("nlh-bde-one-lines-2016", "physical PDF pp. 248 to 249"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("np-2018-pub-np-084", "physical PDF pp. 24 to 26"), sourceRef("nlh-1992-island-additions", "physical PDF p. 224"), sourceRef("nlh-1992-bde-unit4", "physical PDF p. 52"), sourceRef("nlh-2023-spare-gsu", "physical PDF pp. 11 to 14"), sourceRef("nlh-2025-spare-gsu-update", "physical PDF pp. 5 to 7"), sourceRef("pub-2025-spare-gsu-order", "physical PDF pp. 1 to 3"), sourceRef("nlh-bde-u7-life-extension-2025", "physical PDF pp. 211, 218 to 219, and 221"), sourceRef("pub-2026-bde-u7-order", "physical PDF pp. 1, 3 to 4"), sourceRef("nlh-2025-bde-u8-basis", "physical PDF pp. 5 and 8 to 9"), sourceRef("pub-2025-bde-u8-early-order", "physical PDF pp. 1 and 6"), sourceRef("pub-2026-bde-u8-early-order", "physical PDF pp. 1 and 3 to 7"), sourceRef("nlh-2026-bde-u8-october-update", "physical PDF pp. 3 to 8 and 10"), sourceRef("nlh-bde-frazil-2026", "physical PDF pp. 13 to 15 and 32")]
   },
   {
+    code: "PRV",
+    name: "Paradise River Generating Station",
+    status: "reported",
+    facts: [
+      ["In service", "February 26, 1989"],
+      ["Generation", "one 8 MW unit"],
+      ["Generator step-up transformer", "T1, 6/8/10 MVA, 25/4.16 kV; constructed in 1988 and placed in service in 1989"],
+      ["Annual energy", "35 GWh net in the 2014 filing"],
+      ["Transmission circuit", "TL258 to Monkstown; 25 kV; 17.2 km; single wood pole construction; built in 1989"]
+    ],
+    diagram: {
+      label: "1989 commissioned arrangement / 2014 transformer record",
+      buses: [{ id: "b1", label: "transmission connection", voltage: "25 kV" }, { id: "b2", label: "generator bus", voltage: "4.16 kV" }],
+      transformers: [{ label: "T1", rating: "6/8/10 MVA", from: "b2", to: "b1" }],
+      circuits: [{ label: "TL258", destination: "Monkstown", bus: "b1", link: false }],
+      generators: [{ label: "G1", rating: "8 MW", bus: "b2" }]
+    },
+    historyRecords: [
+      {
+        label: "2011 T1 TAP-CHANGER FAILURE",
+        sourceId: "nlh-1989-paradise-river",
+        pages: "physical PDF p. 223",
+        facts: [["Failure", "Loose off-load tap-changer lead connections caused gassing detected by the transformer gas alarm"]]
+      }
+    ],
+    sources: [sourceRef("nlh-1989-paradise-river", "physical PDF pp. 222 to 223"), sourceRef("nlh-1989-hydraulic-in-service", "physical PDF p. 76"), sourceRef("nlh-1989-tl257-tl258", "physical PDF p. 5")]
+  },
+  {
     code: "BUC",
     name: "Buchans Terminal Station",
     status: "verified",
@@ -9673,6 +9955,12 @@ export const islandTerminalRecords = [
     name: "St. Anthony Airport Terminal Station",
     status: "verified",
     facts: [["Transformation", "138/69 kV"], ["Reactive equipment", "Three 3 MVAR capacitor banks"], ["Q4 2024 work", "Transformer bushings replaced"], ["138 kV circuit", "TL256 to Bear Cove"], ["69 kV circuits", "TL257 to Roddickton Woodchip; TL257B to Main Brook; TL261 to St. Anthony Diesel Plant"]],
+    historyRecords: [{
+      label: "1989 TL257 CONNECTION",
+      sourceId: "nlh-1989-tl257-history",
+      pages: "physical PDF p. 4",
+      facts: [["Completed line", "69 kV TL257 between St. Anthony Airport and Roddickton Woodchip"]]
+    }],
     diagram: {
       label: "2013 station voltage and reactive equipment / 2018 filed routes",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "69 kV" }],
@@ -9680,7 +9968,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL256", destination: "Bear Cove", bus: "b1", destinationCode: "BRC" }, { label: "TL257", destination: "Roddickton Woodchip", bus: "b2", destinationCode: "RWC" }, { label: "TL257B", destination: "Main Brook", bus: "b2" }, { label: "TL261", destination: "St. Anthony Diesel Plant", bus: "b2", destinationCode: "SAD" }],
       shunts: [{ label: "Capacitor banks", rating: "3 x 3 MVAR", bus: "b2" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-transmission-routes-2015", "physical PDF p. 5"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
+    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-1989-tl257-history", "physical PDF p. 4"), sourceRef("nlh-transmission-routes-2015", "physical PDF p. 5"), sourceRef("nlh-q4-2024-terminal-work", "physical PDF p. 30"), sourceRef("np-2018-pub-np-084", "physical PDF p. 25")]
   },
   {
     code: "SAD",
@@ -9701,6 +9989,12 @@ export const islandTerminalRecords = [
     name: "Roddickton Generation Sites, Historic",
     status: "reported",
     facts: [["2001 woodchip capacity", "5,000 kW"], ["Woodchip-site diesel units", "450 kW black-start diesel; one 850 kW mobile diesel"], ["Roddickton Diesel Plant", "2,350 kW installed capacity"], ["Roddickton Mini-hydro Plant", "425 kW"], ["2004 disposition", "The woodchip and diesel plant abandonments were recorded; two 850 kW mobile units were relocated to St. Anthony"], ["69 kV circuit", "TL257 to St. Anthony Airport"]],
+    historyRecords: [{
+      label: "1989 TL257 INTERCONNECTION",
+      sourceId: "nlh-1989-tl257-history",
+      pages: "physical PDF p. 4",
+      facts: [["Completed line", "69 kV TL257 between Roddickton Woodchip and St. Anthony Airport"]]
+    }],
     diagram: {
       label: "2001 pre-interconnection capacity / 1989 TL257 connection",
       buses: [{ id: "b1", label: "St. Anthony / Roddickton system", voltage: "69 kV" }],
@@ -9708,7 +10002,7 @@ export const islandTerminalRecords = [
       circuits: [{ label: "TL257", destination: "St. Anthony Airport", bus: "b1", destinationCode: "SAA" }],
       generators: [{ label: "Woodchip", rating: "5,000 kW", bus: "b1" }, { label: "Diesel plant", rating: "2,350 kW", bus: "b1" }, { label: "Mini-hydro", rating: "425 kW", bus: "b1" }]
     },
-    sources: [sourceRef("nlh-gnp-generation-2001", "physical PDF pp. 3 to 4"), sourceRef("pub-roddickton-generation-2004", "physical PDF pp. 1 and 11")]
+    sources: [sourceRef("nlh-1989-tl257-history", "physical PDF p. 4"), sourceRef("nlh-gnp-generation-2001", "physical PDF pp. 3 to 4"), sourceRef("pub-roddickton-generation-2004", "physical PDF pp. 1 and 11")]
   },
   {
     code: "HAW",

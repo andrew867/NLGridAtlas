@@ -1166,12 +1166,24 @@
       "title": "Reconcile Newfoundland Power 1989 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1989 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-038"],
+      "completion_evidence": ["research/NP_1989_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1989-system.test.js"],
+      "blocker": null,
+      "notes": "The comparative reliability table, capital history, ten-year operating summary, transmission register and later equipment histories establish actual reliability, capital, energy, demand, customers, the ATI VHF system, TL257, TL258, Paradise River commissioning, Holyrood Unit 2 and transformer work, the transmission-insulator program and three hydro-plant upgrades. CA-NP-156 and CA-NP-160 disagree on whether the customer-funded 410L extension dates to 1988 or 1989, so the 1989 timeline does not claim it."
+    },
+    {
+      "id": "NPREG-040",
+      "title": "Reconcile Newfoundland Power 1988 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1988 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-039"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the surviving annual operating summary, reliability and capital tables, the Great Northern Peninsula interconnection, and the VHF system purchase."
+      "notes": "Start with the surviving operating, reliability and capital tables, then reconcile the Bell Island cable work, Holyrood Unit 1 uprate and T4 relocation, Boyd's Cove to Farewell Head TL254, and the conflicting 410L extension dates."
     },
     {
       "id": "ASSET-001",
