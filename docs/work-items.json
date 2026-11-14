@@ -826,6 +826,18 @@
       "notes": "The 302L record now combines the filed Salt Pond to Laurentian rebuild, route sheet, later complete status, and annual actual costs. BCV-03, KEN-03, SUM-02, and TRP-01 retain filed asset details without treating pooled financial closeout as commissioning evidence. The station automation and downline recloser programs remain separate. The filing's nine named downline feeders and eight-recloser program statement are both preserved."
     },
     {
+      "id": "NPREG-011",
+      "title": "Reconcile Newfoundland Power 2017 transmission, feeder, automation, and capital records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2017 capital application, line and feeder route drawings, feeder-automation records, and later reported project expenditures.",
+      "dependencies": ["NPREG-010"],
+      "completion_evidence": ["research/NP_2017_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/32l-2017-route.jpg", "public/reference-maps/41l-2017-route.jpg", "public/reference-maps/57l-2017-route.jpg", "public/reference-maps/rbk-01-2017-upgrade.jpg", "tests/np-2017-capital.test.js"],
+      "blocker": null,
+      "notes": "The station records now include the filed 32L, 41L, 57L, and RBK-01 work, four original route drawings, and the eight named downline recloser locations. St. John's Main retains the filed Waterford River ductbank scope and the separately reported multi-year actual. Pooled program actuals are not used as asset-level commissioning evidence."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

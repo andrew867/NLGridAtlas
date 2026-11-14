@@ -200,6 +200,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-2017-transmission-rebuild",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, 32L, 41L and 57L Transmission Rebuilds",
+    topics: ["32L", "41L", "57L", "Oxen Pond", "Ridge Road", "Carbonear", "Heart's Content", "Bay Roberts", "Upper Island Cove", "Harbour Grace", "66 kV", "transmission line rebuild"],
+    pages: "physical PDF pp. 46 to 47 and 275 to 286",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-2017-rbk01",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, RBK-01 Feeder Upgrade",
+    topics: ["Rattling Brook", "RBK-01", "Norris Arm South", "Central Waste Management Facility", "12.5 kV", "#2 ACSR", "4/0 AASC", "feeder load growth"],
+    pages: "physical PDF pp. 72 and 360 to 366",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-2017-automation",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Feeder Automation Programs",
+    topics: ["substation feeder automation", "distribution feeder automation", "downline reclosers", "SCADA", "RVH-01", "MIL-02", "LEW-02", "LEW-03", "HWD-01", "MOB-01", "VIR-02"],
+    pages: "physical PDF pp. 76 to 77 and 239",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-2017-operational-communications",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Operational Communications Equipment",
+    topics: ["mobile radio", "portable radio", "base station radio", "radio consoles", "SCADA", "land line", "fibre optic", "wireless communications"],
+    pages: "physical PDF pp. 97 to 98",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-2017-sjm-underground",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, St. John's Main Underground Refurbishment",
+    topics: ["St. John's Main", "Waterford River", "ductbank", "underground distribution", "downtown St. John's"],
+    pages: "physical PDF p. 78",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-2021-ca-np-001-capital-actuals",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "CA-NP-001, 2017 Capital Project Budget and Actual Expenditures",
+    topics: ["2017 capital expenditure", "substations", "transmission", "distribution", "telecommunications", "capital actuals"],
+    pages: "physical PDF pp. 9 to 11",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/rfis/CA-NP-001.PDF"
+  },
+  {
     id: "pu-11-2019-trp01",
     year: 2019,
     organization: "Newfoundland and Labrador Board of Commissioners of Public Utilities",
@@ -8177,11 +8237,13 @@ const filedFeederMapProfiles = [
       },
       {
         label: "2016 TO 2017 FILED 57L REBUILD",
-        sourceId: "np-2016-57l",
-        pages: "physical PDF pp. 318 to 320",
+        sourceId: "np-2017-transmission-rebuild",
+        pages: "physical PDF pp. 279 to 280 and 286",
         facts: [
           ["Line history", "57L was built in 1958; the 8 km section into Upper Island Cove was built in 1989"],
-          ["Filed work", "rebuild 17.8 km of the original line in two stages during 2016 and 2017"]
+          ["Filed work", "rebuild 17.8 km of the original line in two stages, 8.5 km in 2016 and 9.3 km in 2017"],
+          ["Structures and conductor", "186 H-frame structures; non-standard 4/0 ACSR"],
+          ["Filed 2017 cost", "$1.717 million"]
         ]
       },
       {
@@ -8194,6 +8256,15 @@ const filedFeederMapProfiles = [
           ["Tie limitation", "the phase imbalance restricted transfers through TD-2018 to Bishop's Cove Road load"],
           ["Filed schedule", "construction planned for 2027 through the third quarter of 2028"]
         ]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "57L filed 2016 and 2017 rebuild sections",
+        image: "./reference-maps/57l-2017-route.jpg",
+        alt: "Filed 57L route between Bay Roberts and Harbour Grace through Upper Island Cove showing the 2016 and 2017 rebuild sections",
+        sourceId: "np-2017-transmission-rebuild",
+        pages: "physical PDF p. 286"
       }
     ]
   },
@@ -8715,6 +8786,15 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2017 FILED DOWNLINE RECLOSER",
+        sourceId: "np-2017-automation",
+        pages: "physical PDF p. 76",
+        facts: [
+          ["Filed feeder", "MOB-01"],
+          ["Equipment", "one downline automated recloser"]
+        ]
+      },
       {
         label: "2008 FILED REFURBISHMENT",
         sourceId: "np-2008-mobile-substation",
@@ -14368,6 +14448,15 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2017 FILED DOWNLINE RECLOSER",
+        sourceId: "np-2017-automation",
+        pages: "physical PDF p. 76",
+        facts: [
+          ["Filed feeder", "MIL-02"],
+          ["Equipment", "one downline automated recloser"]
+        ]
+      },
+      {
         label: "1976 STATION ASSET RECORD",
         sourceId: "np-2010-substation-asset-history",
         pages: "physical PDF pp. 197 and 206",
@@ -15006,6 +15095,15 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2017 FILED DOWNLINE RECLOSERS",
+        sourceId: "np-2017-automation",
+        pages: "physical PDF p. 76",
+        facts: [
+          ["Filed devices", "LEW-02-R2, LEW-02-R3 and LEW-03-R2"],
+          ["Equipment", "replace three existing hydraulic reclosers with remotely monitored and controlled units"]
+        ]
+      },
+      {
         label: "2019 COMPLETED 138 KV CONVERSION",
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF pp. 4 to 5",
@@ -15084,6 +15182,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2017 FILED RBK-01 CONDUCTOR UPGRADE",
+        sourceId: "np-2017-rbk01",
+        pages: "physical PDF pp. 360 to 364 and 366",
+        facts: [
+          ["Feeder", "12.5 kV; approximately 775 customers in Norris Arm South"],
+          ["Filed load", "174 A per phase on a 6.6 km section of #2 ACSR with a 168 A planning rating"],
+          ["Selected work", "replace the section with 4/0 AASC, rated at 356 A for planning"],
+          ["Load driver", "expansion of the Central Waste Management Facility"],
+          ["Filed cost", "$637,000"]
+        ]
+      },
+      {
         label: "2018 SELECTED 138 KV EXPANSION",
         sourceId: "np-2019-central-system",
         pages: "physical PDF pp. 173 to 191",
@@ -15101,6 +15211,13 @@ export const stationProfiles = [
         alt: "Filed Rattling Brook expansion one-line showing the new 138 kV yard, 138/66 kV transformer, existing 66 kV bus, distribution transformer, plant transformer, and two generators",
         sourceId: "np-2019-central-system",
         pages: "physical PDF p. 191"
+      },
+      {
+        title: "RBK-01 filed 2017 conductor-upgrade section",
+        image: "./reference-maps/rbk-01-2017-upgrade.jpg",
+        alt: "Filed RBK-01 route drawing through Norris Arm South showing the 6.6 kilometre conductor-upgrade section",
+        sourceId: "np-2017-rbk01",
+        pages: "physical PDF p. 366"
       }
     ]
   },
@@ -15187,6 +15304,15 @@ export const stationProfiles = [
       facts: [["HWD-02", "12.5 kV; HWD-T1/T2; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2017 FILED DOWNLINE RECLOSER",
+        sourceId: "np-2017-automation",
+        pages: "physical PDF p. 76",
+        facts: [
+          ["Filed feeder", "HWD-01"],
+          ["Equipment", "one downline automated recloser"]
+        ]
+      },
       {
         label: "2018 FILED DOWNLINE RECLOSERS",
         sourceId: "np-2018-distribution-feeder-automation",
@@ -15838,6 +15964,17 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2017 FILED 32L REBUILD",
+        sourceId: "np-2017-transmission-rebuild",
+        pages: "physical PDF pp. 277 to 278 and 284",
+        facts: [
+          ["Line", "66 kV between Oxen Pond and Ridge Road; 3.2 km total"],
+          ["Filed work", "rebuild 1.4 km and 35 single-pole structures through Pippy Park and along Ridge Road"],
+          ["Condition", "deteriorated poles and crossarms; Canadian Ohio Brass insulators with a documented cement-growth failure history"],
+          ["Filed cost", "$384,000"]
+        ]
+      },
+      {
         label: "2021 PROPOSED RRD-10 UPGRADE",
         sourceId: "np-2021-feeder-growth",
         pages: "physical PDF pp. 181 to 182 and 190",
@@ -15864,6 +16001,13 @@ export const stationProfiles = [
         alt: "Filed RRD-10 route drawing showing the 3.8 kilometre Portugal Cove Road section proposed for 4/0 AASC reconductoring",
         sourceId: "np-2021-feeder-growth",
         pages: "physical PDF p. 190"
+      },
+      {
+        title: "32L filed 2017 rebuild section",
+        image: "./reference-maps/32l-2017-route.jpg",
+        alt: "Filed 32L route between Oxen Pond and Ridge Road showing the section selected for rebuild in 2017",
+        sourceId: "np-2017-transmission-rebuild",
+        pages: "physical PDF p. 284"
       }
     ]
   },
@@ -16018,6 +16162,25 @@ export const stationProfiles = [
           ["Feeder breakers", "SJM-02-B, SJM-03-B, SJM-04-B, SJM-06-B to SJM-11-B, and SJM-13-B to SJM-15-B"],
           ["Transformer breakers", "SJM-T1-B and SJM-T2-B"],
           ["Tie designations", "SJM-TB-1-2, SJM-TB-1-3 and SJM-TIE-1-3-D"]
+        ]
+      },
+      {
+        label: "2017 TO 2018 WATERFORD RIVER DUCTBANK WORK",
+        sourceId: "np-2017-sjm-underground",
+        pages: "physical PDF p. 78",
+        facts: [
+          ["Ductbank", "main trunks of nine distribution feeders from St. John's Main toward the downtown core"],
+          ["Filed condition", "approximately 40 years old; deterioration attributed to decay and water"],
+          ["Filed 2017 cost", "$2.440 million"]
+        ]
+      },
+      {
+        label: "2017 PROJECT ACTUAL EXPENDITURE",
+        sourceId: "np-2021-ca-np-001-capital-actuals",
+        pages: "physical PDF p. 10",
+        facts: [
+          ["Reported multi-year actual", "$4.185 million"],
+          ["Carryover", "$1.546 million carried from 2017 into 2018"]
         ]
       },
       {
@@ -16380,6 +16543,15 @@ export const stationProfiles = [
           ["Selected alternative", "add PEP-T2 and PEP-05 in 2019"],
           ["Filed 2029 transfer", "5.75 MVA from VIR-01 and VIR-03, identified with VIR-T1/T2, to PEP-01 and PEP-02"],
           ["Rejected Alternative 1", "would add VIR-T4 in parallel with VIR-T3 and use a normally open tie between the VIR-T1/T2 and VIR-T3/T4 bus sections"]
+        ]
+      },
+      {
+        label: "2017 FILED DOWNLINE RECLOSER",
+        sourceId: "np-2017-automation",
+        pages: "physical PDF p. 76",
+        facts: [
+          ["Filed feeder", "VIR-02"],
+          ["Equipment", "one downline automated recloser"]
         ]
       },
       {
@@ -18425,6 +18597,26 @@ export const stationProfiles = [
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF p. 3",
         facts: [["Completed work", "replaced breakers; improved foundations and drainage; upgraded protection, control, feeder automation, communications, and grounding"]]
+      },
+      {
+        label: "2017 FILED 41L REBUILD",
+        sourceId: "np-2017-transmission-rebuild",
+        pages: "physical PDF pp. 278 to 279 and 285",
+        facts: [
+          ["Line", "66 kV between Carbonear and Heart's Content"],
+          ["Filed work", "rebuild 13.6 km, including 55 H-frame structures and 3 single-pole structures"],
+          ["Conductor", "4/0 ACSR, identified as non-standard in the filing"],
+          ["Filed cost", "$2.510 million"]
+        ]
+      }
+    ],
+    referenceSheets: [
+      {
+        title: "41L filed 2017 rebuild section",
+        image: "./reference-maps/41l-2017-route.jpg",
+        alt: "Filed 41L route between Carbonear and Heart's Content showing the section selected for rebuild in 2017",
+        sourceId: "np-2017-transmission-rebuild",
+        pages: "physical PDF p. 285"
       }
     ]
   },
@@ -18539,6 +18731,16 @@ export const stationProfiles = [
         sourceId: "np-2027-pub-np-005",
         pages: "physical PDF p. 4",
         facts: [["Completed work", "replaced deteriorated foundations, potential transformers, power cables, lightning arresters, protection relays, and fencing; improved drainage"]]
+      },
+      {
+        label: "2017 FILED 41L REBUILD",
+        sourceId: "np-2017-transmission-rebuild",
+        pages: "physical PDF pp. 278 to 279 and 285",
+        facts: [
+          ["Line", "66 kV to Carbonear"],
+          ["Filed section", "13.6 km of 1958-vintage line; 55 H-frame structures and 3 single-pole structures"],
+          ["Earlier work", "2.0 km entering Carbonear was built in 1974; 5.3 km was rebuilt after the March 2010 ice storm"]
+        ]
       }
     ]
   },
@@ -19208,6 +19410,15 @@ export const stationProfiles = [
           ["Route", "from Riverhead through Mall Bay, then 4.8 km cross-country to Admiral's Beach and south to the Marine Centre"],
           ["Conductor", "4/0 AASC main trunk; two three-phase taps and three single-phase taps using #2 ACSR"],
           ["Filed work", "reframe the 4.8 km Mall Bay to Admiral's Beach section, replace anchors and guys, and replace poles as required; 60 structures identified"]
+        ]
+      },
+      {
+        label: "2017 FILED DOWNLINE RECLOSER",
+        sourceId: "np-2017-automation",
+        pages: "physical PDF p. 76",
+        facts: [
+          ["Filed feeder", "RVH-01"],
+          ["Equipment", "one downline automated recloser"]
         ]
       },
       {

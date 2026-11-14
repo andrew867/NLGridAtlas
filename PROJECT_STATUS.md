@@ -15,6 +15,8 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added the filed 2017 32L, 41L, 57L, and RBK-01 work with the four original route drawings. The records preserve the dated construction details, conductor data, structure counts, filed costs, and the conflicting 32L construction years in the source.
+- Added the eight named 2017 downline recloser locations and kept them separate from the 17-feeder station-automation program. Added the St. John's Main Waterford River ductbank scope and its separately reported multi-year actual without treating pooled project spending as asset commissioning evidence.
 - Added the 1975 Memorial University Health Sciences Centre transformer and emergency-generation records.
 - Linked MUN-01 and MUN-08 to the Health Sciences electrical-plant evidence panel.
 - Kept the six MUN archive photographs as external records because the archive reserves reproduction rights.

@@ -15,6 +15,8 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added the filed 2017 32L, 41L, 57L, and RBK-01 work with the four original route drawings. The records preserve the dated construction details, conductor data, structure counts, filed costs, and the conflicting 32L construction years in the source.
+- Added the eight named 2017 downline recloser locations and kept them separate from the 17-feeder station-automation program. Added the St. John's Main Waterford River ductbank scope and its separately reported multi-year actual without treating pooled project spending as asset commissioning evidence.
 - Added the filed 2019 BLK-02, DUN-01, SJM-06, SCV-01, and SLA-05 work with original route drawings. The station records keep BLK-02, DUN-01, SJM-06, and SCV-01 proposed because no asset-level completion record was located.
 - Added the 2019 Long Pond, Oxen Pond 36L termination, and 36L expenditure records. The Long Pond value uses the p. 8 category table and reconciled variance; the conflicting p. 20 value is documented in the research record.
 - Added the filed Humber to Bayview fibre link to both Corner Brook station histories without presenting it as commissioned.
