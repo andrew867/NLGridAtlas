@@ -550,6 +550,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
   },
   {
+    id: "np-2013-generation-unit-data",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-021, Selected Generating Unit Data",
+    topics: ["1952", "Cape Broyle", "Horse Chops", "CAB-G", "HCP-G1", "hydroelectric generation", "installation date", "date conflict"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-021.pdf"
+  },
+  {
+    id: "np-1952-cape-broyle-valve",
+    year: 2004,
+    organization: "Newfoundland Power",
+    title: "2005 Capital Budget Application, Cape Broyle Turbine Inlet Valve",
+    topics: ["1952", "Cape Broyle", "turbine inlet valve", "drain valve", "bypass valve", "hydroelectric generation"],
+    pages: "physical PDF pp. 163 to 164",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf"
+  },
+  {
+    id: "np-2004-sla-construction",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "NLH-30 NP, Substation Construction-Year Record",
+    topics: ["1952", "Stamp's Lane", "SLA", "substation", "construction year", "date conflict"],
+    pages: "physical PDF p. 1",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/NLH-30NP.pdf"
+  },
+  {
+    id: "np-2012-transmission-rebuild",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, 21L Rebuild",
+    topics: ["1952", "21L", "Horse Chops", "20L", "66 kV", "H-frame", "266.8 ACSR", "transmission line rebuild"],
+    pages: "physical PDF pp. 427 to 429",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
+  },
+  {
     id: "np-1954-petty-harbour-penstock",
     year: 2019,
     organization: "Newfoundland Power",
@@ -9950,6 +9990,20 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1952-system-record",
+    scope: "1952 transmission construction, hydroelectric equipment and conflicting generation and station dates",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-2011-transmission-rebuild", pages: "physical PDF p. 374" },
+      { sourceId: "np-2012-transmission-rebuild", pages: "physical PDF p. 428" },
+      { sourceId: "np-2014-transmission-lines", pages: "physical PDF pp. 308 and 310" },
+      { sourceId: "np-2013-generation-unit-data", pages: "physical PDF pp. 1 to 2" },
+      { sourceId: "np-1952-cape-broyle-valve", pages: "physical PDF p. 163" },
+      { sourceId: "np-2004-sla-construction", pages: "physical PDF p. 1" },
+      { sourceId: "np-2011-capital-stations", pages: "physical PDF p. 297" }
+    ]
+  },
+  {
     id: "np-1954-system-record",
     scope: "1954 transmission construction, station development, hydroelectric generation and civil works, and utility governance",
     status: "unresolved",
@@ -10700,6 +10754,42 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1952",
+    category: "network",
+    title: "21L connected Horse Chops to the 20L tap",
+    body: "Newfoundland Power dates the original 66 kV H-frame line to 1952. The line used 36 two-pole and three-pole structures with 266.8 ACSR conductor. The 2011 filing lists 5.73 km; the 2012 filing lists 5.3 km.",
+    sourceId: "np-2011-transmission-rebuild",
+    pages: "physical PDF p. 374; 2012 filing physical PDF p. 428",
+    status: "unresolved"
+  },
+  {
+    date: "1952",
+    category: "generation",
+    title: "Cape Broyle turbine inlet valve was installed",
+    body: "The plant record dates the 78 inch turbine inlet valve and its drain and bypass valves to 1952. By the 2005 filing, erosion prevented positive water shutoff and sometimes allowed the turbine to keep turning during shutdown.",
+    sourceId: "np-1952-cape-broyle-valve",
+    pages: "physical PDF p. 163",
+    status: "reported"
+  },
+  {
+    date: "1951 or 1952",
+    category: "network",
+    title: "18L construction year conflicts",
+    body: "The detailed 2014 engineering report says the original 66 kV line from Goulds to Stamp's Lane was constructed in 1951. Newfoundland Power rebuild-strategy tables list 18L between Goulds and Glendale as 1952. The 1977 Glendale reroute is separate from the original section.",
+    sourceId: "np-2014-transmission-lines",
+    pages: "physical PDF pp. 308 and 310; 2008 filing physical PDF p. 194",
+    status: "unresolved"
+  },
+  {
+    date: "1952 or 1963",
+    category: "station",
+    title: "Stamp's Lane construction year conflicts",
+    body: "A 2004 response lists Stamp's Lane Substation as constructed in 1952. The 2007 and 2011 station reports say the 66 kV switching and 4.16/12.5 kV distribution station was built in 1963.",
+    sourceId: "np-2004-sla-construction",
+    pages: "physical PDF p. 1; 2011 filing physical PDF p. 297",
+    status: "unresolved"
+  },
+  {
     date: "1953",
     category: "generation",
     title: "St. John's Diesel and Steam plants were built",
@@ -10772,12 +10862,12 @@ export const timeline = [
     status: "reported"
   },
   {
-    date: "1953 or 1954",
+    date: "1952, 1953 or 1954",
     category: "generation",
-    title: "Cape Broyle and Horse Chops commissioning dates conflict",
-    body: "The 2013 development record dates both plants and both turbines to 1953. The 2025 capital filing dates both plants to 1954. Both records describe one vertical Francis unit at each plant and place Horse Chops upstream of Cape Broyle.",
-    sourceId: "np-2013-cape-broyle",
-    pages: "physical PDF pp. 258 to 259; 2025 filing physical PDF pp. 544 to 545",
+    title: "Cape Broyle and Horse Chops installation and commissioning dates conflict",
+    body: "A 2013 generating-unit table dates CAB-G and HCP-G1 to 1952. A separate 2013 development record dates both plants and turbines to 1953. The 2025 capital filing dates both plants to 1954. The records agree that Horse Chops is upstream of Cape Broyle, but not on the year.",
+    sourceId: "np-2013-generation-unit-data",
+    pages: "physical PDF p. 2; development record physical PDF pp. 258 to 259; 2025 filing physical PDF pp. 544 to 545",
     status: "unresolved"
   },
   {
@@ -28919,6 +29009,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1952 / 1963 CONSTRUCTION RECORDS",
+        sourceId: "np-2004-sla-construction",
+        pages: "physical PDF p. 1; 2011 filing physical PDF p. 297",
+        facts: [
+          ["2004 response", "Stamp's Lane listed with a 1952 construction year"],
+          ["2007 and 2011 station reports", "66 kV switching and 4.16/12.5 kV distribution station described as built in 1963"]
+        ]
+      },
+      {
         label: "1993 70L COMPLETION",
         sourceId: "np-1993-70l",
         pages: "physical PDF p. 1",
@@ -30109,7 +30208,7 @@ export const stationProfiles = [
       sourceId: "np-2025-cbhc-development",
       pages: "physical PDF pp. 544 to 545",
       facts: [
-        ["Plant", "one vertical generating unit; 9.0 MVA; commissioned in 1953 in the 2013 development record and 1954 in the 2025 filing"],
+        ["Plant", "one vertical generating unit; 9.0 MVA in the 2025 filing; public installation and commissioning records give 1952, 1953 and 1954"],
         ["Turbine", "10,000 hp vertical Francis turbine manufactured by Dominion Engineering"],
         ["Generator", "Canadian General Electric"],
         ["Normal production", "46.70 GWh in the 2024 development record"],
@@ -30133,10 +30232,11 @@ export const stationProfiles = [
         ]
       },
       {
-        label: "1953 / 1954 COMMISSIONING RECORDS",
-        sourceId: "np-2013-cape-broyle",
-        pages: "physical PDF pp. 258 to 259; 2025 filing physical PDF pp. 544 to 545",
+        label: "1952 / 1953 / 1954 DATE RECORDS",
+        sourceId: "np-2013-generation-unit-data",
+        pages: "physical PDF p. 2; development record physical PDF pp. 258 to 259; 2025 filing physical PDF pp. 544 to 545",
         facts: [
+          ["2013 generating-unit table", "HCP-G1 listed at 7.7 MW with a 1952 installation date"],
           ["2013 development record", "Horse Chops development and its 7,650 kW turbine commissioned in 1953"],
           ["2025 capital filing", "Horse Chops plant commissioned in 1954; 9.0 MVA; 85.3 m net head"],
           ["Hydraulic sequence", "Horse Chops is upstream of Cape Broyle"]
@@ -30185,7 +30285,8 @@ export const stationProfiles = [
         sourceId: "np-2012-q3-report",
         pages: "physical PDF p. 12",
         facts: [
-          ["Line", "5.3 km of 66 kV H-frame construction between Horse Chops and the 20L tap; 36 two-pole and three-pole structures; built in 1952"],
+          ["Line", "66 kV H-frame construction between Horse Chops and the 20L tap; 36 two-pole and three-pole structures; built in 1952"],
+          ["Filed length difference", "2011 filing: 5.73 km; 2012 filing: 5.3 km"],
           ["Filed condition", "the 2010 inspection recorded 25 insulator, seven crossarm, 17 crossbrace, and 11 pole deficiencies"],
           ["Filed conductor", "replace 266.8 ACSR with 477 ASC"],
           ["Completion", "reported complete in the third quarter of 2012"]
@@ -31379,7 +31480,7 @@ export const stationProfiles = [
         ["Generation connection", "the 2013 record describes 6.9 kV from the Cape Broyle plant stepped up to 66 kV"],
         ["Local distribution", "the 2013 record describes 66 kV stepped down to 12.5 kV and one local distribution line"],
         ["CAB-01", "sole 12.5 kV feeder; 13.4 km main trunk; 1,247 customers in the 2026 filing"],
-        ["Plant", "one vertical Francis unit; commissioned in 1953 in the 2013 development record and 1954 in the 2025 filing"]
+        ["Plant", "one vertical Francis unit; public installation and commissioning records give 1952, 1953 and 1954"]
       ]
     },
     planningRecord: {
@@ -31394,13 +31495,24 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
-        label: "1953 / 1954 COMMISSIONING RECORDS",
-        sourceId: "np-2013-cape-broyle",
-        pages: "physical PDF p. 258; 2025 filing physical PDF pp. 544 to 545",
+        label: "1952 / 1953 / 1954 DATE RECORDS",
+        sourceId: "np-2013-generation-unit-data",
+        pages: "physical PDF p. 2; development record physical PDF p. 258; 2025 filing physical PDF pp. 544 to 545",
         facts: [
+          ["2013 generating-unit table", "CAB-G listed at 5.6 MW with a 1952 installation date"],
           ["2013 development record", "Cape Broyle development and its 6,000 kW turbine commissioned in 1953"],
           ["2025 capital filing", "Cape Broyle plant commissioned in 1954; 7.0 MVA; 54.8 m net head"],
           ["Hydraulic sequence", "Cape Broyle is downstream of Horse Chops"]
+        ]
+      },
+      {
+        label: "1952 TURBINE INLET VALVE",
+        sourceId: "np-1952-cape-broyle-valve",
+        pages: "physical PDF p. 163",
+        facts: [
+          ["Equipment", "78 inch turbine inlet valve with associated drain and bypass valves"],
+          ["Installation", "1952"],
+          ["Filed 2004 condition", "erosion prevented positive water shutoff and sometimes allowed the turbine to continue turning during shutdown"]
         ]
       },
       {

@@ -1591,7 +1591,7 @@
       "dependencies": ["NPREG-073"],
       "completion_evidence": ["research/NP_1954_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1954-system.test.js"],
       "blocker": null,
-      "notes": "Later primary records establish 25L; the 1954 stage of 24L; construction of Mobile, Goulds and Humber substations; the Petty Harbour upper penstock; the Mount Carmel Pond spillway and outlet gate; and incorporation of the Newfoundland Power Commission. Cape Broyle and Horse Chops records conflict between 1953 and 1954 commissioning dates. The available historical-demand tables begin later. No named 1954 telecommunications installation was located."
+      "notes": "Later primary records establish 25L; the 1954 stage of 24L; construction of Mobile, Goulds and Humber substations; the Petty Harbour upper penstock; the Mount Carmel Pond spillway and outlet gate; and incorporation of the Newfoundland Power Commission. Cape Broyle and Horse Chops records conflict across 1952 installation, 1953 commissioning and 1954 plant dates. The available historical-demand tables begin later. No named 1954 telecommunications installation was located."
     },
     {
       "id": "NPREG-075",
@@ -1603,7 +1603,19 @@
       "dependencies": ["NPREG-074"],
       "completion_evidence": ["research/NP_1953_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1953-system.test.js"],
       "blocker": null,
-      "notes": "Later primary records establish the St. John's Diesel and Steam plants, Blackwoods Pond Reservoir and the Horse Chops spillway. Cape Broyle and Horse Chops records conflict between 1953 and 1954 commissioning dates. No named 1953 transmission, distribution, telecommunications, system-demand or reliability record was located."
+      "notes": "Later primary records establish the St. John's Diesel and Steam plants, Blackwoods Pond Reservoir and the Horse Chops spillway. Cape Broyle and Horse Chops records conflict across 1952 installation, 1953 commissioning and 1954 plant dates. No named 1953 transmission, distribution, telecommunications, system-demand or reliability record was located."
+    },
+    {
+      "id": "NPREG-076",
+      "title": "Reconcile Newfoundland Power 1952 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1952 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-075"],
+      "completion_evidence": ["research/NP_1952_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1952-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records establish 21L and the Cape Broyle turbine inlet-valve installation. The 21L filings differ between 5.73 km and 5.3 km. Records conflict between 1951 and 1952 for 18L, between 1952 and 1963 for Stamp's Lane construction, and across 1952, 1953 and 1954 for Cape Broyle and Horse Chops. No named 1952 telecommunications, system-demand or reliability event was located."
     },
     {
       "id": "ASSET-001",

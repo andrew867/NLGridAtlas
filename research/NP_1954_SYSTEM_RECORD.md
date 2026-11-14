@@ -26,7 +26,7 @@ Source: [2022 Capital Budget Application](http://www.pub.nl.ca/applications/2022
 
 ## Cape Broyle and Horse Chops
 
-The commissioning year is unresolved. The 2013 development record says the Cape Broyle and Horse Chops development was commissioned in 1953. It also dates the 6,000 kW Cape Broyle turbine and 7,650 kW Horse Chops turbine to 1953. The 2025 capital filing dates both plants to 1954, with capacities of 7.0 MVA and 9.0 MVA respectively.
+The installation and commissioning years are unresolved. A 2013 generating-unit table dates CAB-G and HCP-G1 to 1952. The 2013 development record says the Cape Broyle and Horse Chops development was commissioned in 1953 and dates the 6,000 kW Cape Broyle turbine and 7,650 kW Horse Chops turbine to 1953. The 2025 capital filing dates both plants to 1954, with capacities of 7.0 MVA and 9.0 MVA respectively.
 
 Both records describe one vertical Francis unit at each plant. Cape Broyle uses a Canadian Vickers turbine and Westinghouse generator. Horse Chops uses a Dominion Engineering turbine and Canadian General Electric generator. The plants operate in series, with Horse Chops upstream of Cape Broyle.
 

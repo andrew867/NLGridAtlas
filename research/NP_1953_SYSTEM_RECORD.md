@@ -12,7 +12,7 @@ Sources: [CA-NP-035](http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/fi
 
 ## Cape Broyle and Horse Chops
 
-The commissioning year is unresolved. The 2013 development record dates the Cape Broyle and Horse Chops development and both turbines to 1953. The 2025 capital filing dates both plants to 1954. The conflict is documented in the 1954 system record and remains unresolved.
+The installation and commissioning years are unresolved. A 2013 generating-unit table dates CAB-G and HCP-G1 to 1952. The 2013 development record dates the Cape Broyle and Horse Chops development and both turbines to 1953. The 2025 capital filing dates both plants to 1954. The conflict is documented in the 1952 system record.
 
 Source: [CA-NP-036](http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf), physical PDF pp. 258 to 259. SHA-256 `1b27d6b0a58416c06045f8e54618c33b2902f26dda83d53780a4b01b5e14b477`.
 

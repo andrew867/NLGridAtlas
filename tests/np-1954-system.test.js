@@ -35,13 +35,13 @@ test("1954 station records retain their original roles", () => {
   assert.match(stationText("HUM"), /1954 as a transmission and distribution substation/);
 });
 
-test("Cape Broyle and Horse Chops commissioning dates remain unresolved", () => {
-  const event = timeline.find((entry) => entry.date === "1953 or 1954" && /commissioning dates conflict/.test(entry.title));
+test("Cape Broyle and Horse Chops installation and commissioning dates remain unresolved", () => {
+  const event = timeline.find((entry) => entry.date === "1952, 1953 or 1954" && /dates conflict/.test(entry.title));
   assert.ok(event);
   assert.equal(event.status, "unresolved");
-  assert.match(event.body, /2013 development record.*1953.*2025 capital filing.*1954/);
-  assert.match(stationText("CAB"), /1953 \/ 1954 COMMISSIONING RECORDS/);
-  assert.match(stationText("HCP"), /1953 \/ 1954 COMMISSIONING RECORDS/);
+  assert.match(event.body, /generating-unit table.*1952.*development record.*1953.*2025 capital filing.*1954/);
+  assert.match(stationText("CAB"), /1952 \/ 1953 \/ 1954 DATE RECORDS/);
+  assert.match(stationText("HCP"), /1952 \/ 1953 \/ 1954 DATE RECORDS/);
 });
 
 test("1954 civil records retain physical dimensions and operating method", () => {

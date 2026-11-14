@@ -27,7 +27,8 @@ test("2012 sources retain page locators and evidence states", () => {
 });
 
 test("2012 transmission records separate filed scope from reported completion", async () => {
-  assert.match(stationText("HCP"), /5\.3 km of 66 kV H-frame construction/);
+  assert.match(stationText("HCP"), /66 kV H-frame construction between Horse Chops and the 20L tap/);
+  assert.match(stationText("HCP"), /2011 filing: 5\.73 km; 2012 filing: 5\.3 km/);
   assert.match(stationText("HCP"), /reported complete in the third quarter of 2012/);
   assert.match(stationText("CLV"), /5 km of 138 kV H-frame line near Clarenville/);
   assert.match(stationText("CLV"), /reported complete in June 2012/);

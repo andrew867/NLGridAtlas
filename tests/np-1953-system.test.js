@@ -17,11 +17,11 @@ test("St. John's Diesel retains its original duty and electrical connection", ()
   assert.match(stationText("SJD"), /direct distribution-line connection to St\. John's Main/);
 });
 
-test("Cape Broyle and Horse Chops remain an unresolved 1953 or 1954 record", () => {
-  const event = timeline.find((entry) => entry.date === "1953 or 1954" && /commissioning dates conflict/.test(entry.title));
+test("Cape Broyle and Horse Chops retain the unresolved 1952, 1953 and 1954 records", () => {
+  const event = timeline.find((entry) => entry.date === "1952, 1953 or 1954" && /dates conflict/.test(entry.title));
   assert.ok(event);
   assert.equal(event.status, "unresolved");
-  assert.match(event.body, /2013 development record.*1953.*2025 capital filing.*1954/);
+  assert.match(event.body, /generating-unit table.*1952.*development record.*1953.*2025 capital filing.*1954/);
 });
 
 test("Blackwoods Pond and Horse Chops civil works retain their 1953 construction", () => {
