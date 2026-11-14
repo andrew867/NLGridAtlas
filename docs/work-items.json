@@ -1474,6 +1474,18 @@
       "notes": "The available historical-demand table begins in 1967, so no 1964 demand value is stated. Later primary records establish the original Sunnyside to Gander 138 kV corridor and its later 100L, 124L, 121L and 146L designations; LET-01; LEW-02; the original Gambo to Glovertown feeder; the Seal Cove G1 runner replacement; a Tors Cove generator refurbishment; Bay d'Espoir construction-support systems; and Wiltondale transformer manufacture."
     },
     {
+      "id": "NPREG-065",
+      "title": "Reconcile Newfoundland Power 1963 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1963 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-064"],
+      "completion_evidence": ["research/NP_1963_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1963-system.test.js"],
+      "blocker": null,
+      "notes": "The available historical-demand table begins in 1967, so no 1963 demand value is stated. Later primary records establish 363L, 32L and 105L; Ridge Road and Stamp's Lane station construction; Sandy Brook commissioning, plant dimensions and original electrical equipment. A radio-account credit was excluded because it does not identify an installed telecommunications asset."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

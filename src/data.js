@@ -520,6 +520,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1963-32l",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Transmission Line 32L",
+    topics: ["1963", "32L", "Oxen Pond", "Ridge Road", "66 kV", "single-pole", "transmission line rebuild"],
+    pages: "physical PDF p. 278",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-1963-105l",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, Transmission Rebuild Schedule",
+    topics: ["1963", "105L", "Grand Falls", "Sandy Brook", "66 kV", "transmission line rebuild"],
+    pages: "physical PDF p. 247",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
+    id: "np-1963-sandy-brook-electrical",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Sandy Brook Electrical Equipment",
+    topics: ["1963", "Sandy Brook", "SBK", "exciter", "voltage regulator", "generator breaker", "instrument transformers", "station service"],
+    pages: "physical PDF p. 253",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
     id: "np-1964-sunnyside-gander-corridor",
     year: 2025,
     organization: "Newfoundland Power",
@@ -9428,6 +9458,20 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1963-system-record",
+    scope: "1963 transmission construction, St. John's station construction, Sandy Brook commissioning and original plant electrical equipment",
+    status: "reported",
+    sources: [
+      { sourceId: "np-2018-363l", pages: "physical PDF pp. 126 and 242" },
+      { sourceId: "np-1963-32l", pages: "physical PDF p. 278" },
+      { sourceId: "np-1963-105l", pages: "physical PDF p. 247" },
+      { sourceId: "np-2007-capital", pages: "physical PDF pp. 167 to 168" },
+      { sourceId: "np-2023-sandy-brook-generator", pages: "physical PDF p. 143" },
+      { sourceId: "np-2022-sandy-brook-penstock", pages: "physical PDF p. 210" },
+      { sourceId: "np-1963-sandy-brook-electrical", pages: "physical PDF p. 253" }
+    ]
+  },
+  {
     id: "np-1964-system-record",
     scope: "1964 transmission construction, distribution feeders, submarine cable, hydroelectric equipment, Bay d'Espoir construction support and transformer manufacture",
     status: "reported",
@@ -10006,6 +10050,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1963",
+    category: "network",
+    title: "363L, 32L and 105L date to 1963",
+    body: "363L was built as a 138 kV H-frame line between Baie Verte Junction and Seal Cove Road. The filed record describes approximately 62 km, 478 two-pole and three-pole H-frame structures, non-standard 266.8 ACSR conductor, and its role as the peninsula's only supply. The 3.2 km 32L connected Oxen Pond and Ridge Road at 66 kV. A later rebuild schedule dates 105L between Grand Falls and Sandy Brook to 1963.",
+    sourceId: "np-2018-363l",
+    pages: "physical PDF pp. 126 and 242; 32L physical PDF p. 278; 105L physical PDF p. 247",
+    status: "reported"
+  },
+  {
+    date: "1963",
+    category: "station",
+    title: "Ridge Road and Stamp's Lane substations were built",
+    body: "Ridge Road was built for 66 kV switching and 12.5 kV distribution. Stamp's Lane was built for 66 kV switching and 4.16/12.5 kV distribution.",
+    sourceId: "np-2007-capital",
+    pages: "physical PDF pp. 167 to 168",
+    status: "reported"
+  },
+  {
+    date: "1963",
+    category: "generation",
+    title: "Sandy Brook entered service",
+    body: "The plant entered service with one vertical 6.31 MW unit at 33.5 m rated net head. Its 336 m, 2.6 m woodstave penstock, Westinghouse generator and exciter, generator breaker, potential transformers, current transformers and emergency station-service transformer bank date to the original installation.",
+    sourceId: "np-2023-sandy-brook-generator",
+    pages: "physical PDF p. 143; penstock physical PDF p. 210; electrical equipment physical PDF p. 253",
+    status: "reported"
+  },
   {
     date: "1964",
     category: "network",
@@ -15946,6 +16017,12 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1963 105L CONSTRUCTION RECORD",
+        sourceId: "np-1963-105l",
+        pages: "physical PDF p. 247",
+        facts: [["Circuit", "105L between Grand Falls and Sandy Brook; dated 1963 in the transmission rebuild schedule"]]
+      },
       {
         label: "1976 NEW GRAND FALLS STATION",
         sourceId: "np-2012-grand-falls-history",
@@ -26037,6 +26114,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1963 32L CONSTRUCTION",
+        sourceId: "np-1963-32l",
+        pages: "physical PDF p. 278",
+        facts: [
+          ["Circuit", "66 kV single-pole line between Oxen Pond and Ridge Road; 3.2 km"],
+          ["Original construction", "1963; the 2017 filing recorded 1.4 km and 35 original single-pole structures remaining"]
+        ]
+      },
+      {
         label: "1965 35L CONSTRUCTION RECORD",
         sourceId: "np-1965-transmission-lines",
         pages: "physical PDF p. 418",
@@ -26968,6 +27054,7 @@ export const stationProfiles = [
         pages: "physical PDF pp. 277 to 278 and 284",
         facts: [
           ["Line", "66 kV between Oxen Pond and Ridge Road; 3.2 km total"],
+          ["Original construction", "1963; 1.4 km and 35 original single-pole structures remained in the filing"],
           ["Filed work", "rebuild 1.4 km and 35 single-pole structures through Pippy Park and along Ridge Road"],
           ["Condition", "deteriorated poles and crossarms; Canadian Ohio Brass insulators with a documented cement-growth failure history"],
           ["Filed cost", "$384,000"]
@@ -29693,6 +29780,25 @@ export const stationProfiles = [
       facts: [["SBK-T1", "generation transformer; 66/6.9 kV; 7.0 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1963 ORIGINAL PLANT AND 105L",
+        sourceId: "np-2023-sandy-brook-generator",
+        pages: "physical PDF p. 143; 105L physical PDF p. 247",
+        facts: [
+          ["Plant", "placed in service in 1963 with one vertical 6.31 MW unit at 33.5 m rated net head"],
+          ["Circuit", "105L between Sandy Brook and Grand Falls; dated 1963 in the transmission rebuild schedule"]
+        ]
+      },
+      {
+        label: "1963 ORIGINAL ELECTRICAL EQUIPMENT",
+        sourceId: "np-1963-sandy-brook-electrical",
+        pages: "physical PDF p. 253",
+        facts: [
+          ["Excitation", "Westinghouse exciter and Brown Boveri AB2/1 mechanical voltage regulator"],
+          ["Switchgear", "Westinghouse DH generator breaker, potential transformers and current transformers"],
+          ["Station service", "two single-phase 120/240 V transformers connected open delta"]
+        ]
+      },
       {
         label: "1986 ISLAND POND DAM REPLACEMENTS",
         sourceId: "np-1986-hydro-civil",
