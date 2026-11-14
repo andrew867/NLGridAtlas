@@ -1022,12 +1022,24 @@
       "title": "Reconcile Newfoundland Power 2001 General Rate Application and system records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory the surviving 2001 General Rate Application and related annual, financial, station, transmission, distribution, generation, telecommunications, load, and reliability evidence.",
       "dependencies": ["NPREG-026"],
+      "completion_evidence": ["research/NP_2001_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-2001-system.test.js"],
+      "blocker": null,
+      "notes": "No standalone Newfoundland Power 2001 capital-application directory was located. The surviving annual report and revised GRA responses establish completed station, feeder, line, generation, control and communications work, actual reliability values, the joint-use pole acquisition, and transmission and substation fixed-asset values. Greenhill relocation remains approved future work in the 2001 record."
+    },
+    {
+      "id": "NPREG-028",
+      "title": "Reconcile Newfoundland Power 2000 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 2000 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-027"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Use the public mirror to establish the surviving source set before assigning any project state."
+      "notes": "Begin with the public mirror and preserve the distinction between contemporaneous completion records and later retrospective equipment histories."
     },
     {
       "id": "ASSET-001",

@@ -15,6 +15,9 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the 2001 Newfoundland Power system record from the annual report and revised General Rate Application responses. The record covers 99.96 percent service availability, actual SAIFI and SAIDI, sections of 20 rebuilt feeders, Laurentian-02 and Salmonier line work, Lawn construction, Blaketown and Lewisporte rebuilds, Cape Broyle, Sandy Brook and Greenhill work, and the SCADA, HMI and outage-communications systems.
+- Added the 2001 joint-use pole acquisition and transmission and substation fixed-asset values. Kept Greenhill's approved relocation separate from completed 2001 work.
+- Opened NPREG-028 for the surviving Newfoundland Power 2000 system and annual records.
 - Added the 2004 New Chelsea, Topsail and Rattling Brook hydro records, including dated equipment condition, filed scope and primary-source costs.
 - Added the 2004 Chamberlains and Pulpit Rock feeder additions, Walbournes and Bayview transformer project, Port Blandford switches, Stamp's Lane cables, and Pepperell and Summerford breaker records.
 - Added the 2004 3L and 403L rebuild records and the St. John's transmission ampacity study, including its conductor-rating basis, measured 2002 Oxen Pond load, proposed upgrade table and historical network sheet.

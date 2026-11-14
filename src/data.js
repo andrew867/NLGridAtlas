@@ -380,6 +380,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/applic/np2003CapitalBudgetapp.pdf"
   },
   {
+    id: "np-2001-annual-report",
+    year: 2001,
+    organization: "Newfoundland Power",
+    title: "2001 Annual Report, Electrical System Work and Operating Systems",
+    topics: ["Lawn", "Blaketown", "Lewisporte", "Laurentian", "Cape Broyle", "Sandy Brook", "Greenhill", "distribution feeder rebuild", "transmission inspection", "SCADA", "outage communications"],
+    pages: "physical PDF pp. 13 to 16, 18 and 35",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213F.pdf"
+  },
+  {
     id: "np-2002-annual-report",
     year: 2002,
     organization: "Newfoundland Power",
@@ -6494,6 +6504,15 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2003-ca-241-load-factor", pages: "physical PDF p. 1" }]
   },
   {
+    id: "np-2001-system-reliability",
+    scope: "2001 Newfoundland Power service availability and actual SAIFI and SAIDI excluding Hydro loss-of-supply outages",
+    status: "reported",
+    sources: [
+      { sourceId: "np-2001-annual-report", pages: "physical PDF p. 13" },
+      { sourceId: "np-2003-ca-446-rev", pages: "physical PDF p. 1" }
+    ]
+  },
+  {
     id: "np-2002-system-reliability",
     scope: "2002 actual system and operating-area SAIFI and SAIDI, excluding Hydro loss-of-supply outages, plus underfrequency load-shedding events",
     status: "reported",
@@ -6589,6 +6608,69 @@ export const timeline = [
     body: "Western work in 1999, eastern work in 2001, and the 2003 interconnection supported the move of about ten repeaters from NewTel sites.",
     sourceId: "vhf-2004",
     pages: "PDF p. 200",
+    status: "reported"
+  },
+  {
+    date: "2001",
+    category: "reliability",
+    title: "Service availability reached 99.96 percent",
+    body: "Newfoundland Power reported 2.99 interruptions and 3.43 hours per customer, excluding Hydro loss-of-supply outages.",
+    sourceId: "np-2001-annual-report",
+    pages: "physical PDF p. 13; CA-446Rev physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "2001",
+    category: "network",
+    title: "Distribution and transmission work covered the island",
+    body: "Newfoundland Power rebuilt sections of 20 distribution feeders for $5 million, rebuilt 40 km of Laurentian-02 between Lawn and Point May, upgraded 23 km of the Salmonier Line, and replaced transmission poles, crossarms and insulators while correcting conductor sag and clearances.",
+    sourceId: "np-2001-annual-report",
+    pages: "physical PDF pp. 13 to 14",
+    status: "reported"
+  },
+  {
+    date: "2001",
+    category: "station",
+    title: "Lawn was built and two substations were rebuilt",
+    body: "The annual report records a new substation at Lawn and substation rebuilds at Blaketown and Lewisporte as part of the year's system work.",
+    sourceId: "np-2001-annual-report",
+    pages: "physical PDF p. 14",
+    status: "reported"
+  },
+  {
+    date: "2001",
+    category: "generation",
+    title: "Hydro plant and Greenhill work entered service",
+    body: "Cape Broyle received a replacement penstock, Sandy Brook a new runner, and Greenhill updated start-up and control technology. The approved Greenhill relocation remained future work.",
+    sourceId: "np-2001-annual-report",
+    pages: "physical PDF p. 14",
+    status: "reported"
+  },
+  {
+    date: "2001",
+    category: "telecom",
+    title: "Control and outage communications expanded",
+    body: "SCADA and remote-control units expanded remote operation. Urban substations received Human Machine Interface protection technology, and the Telephony Video Data outage system could accept 2,000 simultaneous calls across eight service areas.",
+    sourceId: "np-2001-annual-report",
+    pages: "physical PDF pp. 14 to 16",
+    status: "reported"
+  },
+  {
+    date: "2001-09",
+    category: "network",
+    title: "Newfoundland Power acquired joint-use poles",
+    body: "The company acquired about 70,000 joint-use poles from Aliant for $40 million, with the transfer scheduled over five years.",
+    sourceId: "np-2001-annual-report",
+    pages: "physical PDF p. 18",
+    status: "reported"
+  },
+  {
+    date: "2001-12-31",
+    category: "financial",
+    title: "Transmission and substation plant remained a major asset class",
+    body: "Newfoundland Power reported $181.928 million in transmission and substation cost, $82.892 million accumulated depreciation, and $99.036 million net book value.",
+    sourceId: "np-2001-annual-report",
+    pages: "physical PDF p. 35",
     status: "reported"
   },
   {
@@ -9322,6 +9404,15 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2001 REPORTED START-UP AND CONTROL WORK",
+        sourceId: "np-2001-annual-report",
+        pages: "physical PDF p. 14",
+        facts: [
+          ["Completed work", "updated start-up and control technology at the Greenhill gas turbine"],
+          ["Relocation state", "regulatory approval had been received for a planned 2002 relocation to Bonavista North; the annual report did not record that move as complete"]
+        ]
+      },
+      {
         label: "2006 FILED BREAKER AND POTENTIAL-TRANSFORMER WORK",
         sourceId: "np-2006-substation-program",
         pages: "physical PDF pp. 214 to 219",
@@ -10002,6 +10093,15 @@ const filedFeederMapProfiles = [
       facts: [["Plant refurbishment", "deferred from 2027 to 2031 for further engineering assessment and economic analysis"]]
     },
     historyRecords: [
+      {
+        label: "2001 REPORTED NEW SUBSTATION",
+        sourceId: "np-2001-annual-report",
+        pages: "physical PDF p. 14",
+        facts: [
+          ["Completed work", "new substation constructed at Lawn"],
+          ["Burin program", "the station formed part of approximately $4.5 million in local system upgrades on the Burin Peninsula"]
+        ]
+      },
       {
         label: "2006 FILED GENERATOR COOLING WORK",
         sourceId: "np-2006-hydro-rehabilitation",
@@ -14727,6 +14827,12 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2001 REPORTED SUBSTATION REBUILD",
+        sourceId: "np-2001-annual-report",
+        pages: "physical PDF p. 14",
+        facts: [["Completed work", "Blaketown was one of the communities in which Newfoundland Power reported a rebuilt substation"]]
+      },
+      {
         label: "2007 FILED SUBSTATION WORK",
         sourceId: "np-2007-capital",
         pages: "physical PDF pp. 160 to 161",
@@ -14814,6 +14920,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2001 REPORTED LAU-02 REBUILD",
+        sourceId: "np-2001-annual-report",
+        pages: "physical PDF pp. 13 to 14",
+        facts: [["Completed work", "rebuilt 40 km of Laurentian-02 between Lawn and Point May to higher standards"]]
+      },
       {
         label: "2006 FILED 66 KV FOUNDATION AND DRAINAGE WORK",
         sourceId: "np-2006-substation-program",
@@ -17499,6 +17611,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2001 REPORTED SUBSTATION REBUILD",
+        sourceId: "np-2001-annual-report",
+        pages: "physical PDF p. 14",
+        facts: [["Completed work", "Lewisporte was one of the communities in which Newfoundland Power reported a rebuilt substation"]]
+      },
       {
         label: "2006 FILED LEW-02 RELIABILITY WORK",
         sourceId: "np-2006-distribution-reliability",
@@ -21569,6 +21687,12 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2001 REPORTED RUNNER AND CONTROL WORK",
+        sourceId: "np-2001-annual-report",
+        pages: "physical PDF pp. 13 to 14",
+        facts: [["Completed work", "new runner and updated instrumentation and programmable-logic controls at Sandy Brook"]]
+      },
+      {
         label: "2010 APPROVED / 2011 COMPLETED SANDY LAKE SPILLWAY RAISE",
         sourceId: "np-2014-sandy-lake-completion",
         pages: "physical PDF p. 1",
@@ -21691,6 +21815,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2001 REPORTED PENSTOCK REPLACEMENT",
+        sourceId: "np-2001-annual-report",
+        pages: "physical PDF pp. 13 to 14",
+        facts: [["Completed work", "Cape Broyle hydro plant penstock replaced"]]
+      },
       {
         label: "2006 FILED FREEBOARD DYKE WORK",
         sourceId: "np-2006-hydro-rehabilitation",
