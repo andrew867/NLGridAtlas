@@ -520,6 +520,86 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "nlh-1982-historical-demand",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "MHI-Nalcor-92, Island Interconnected System Historical Demand",
+    topics: ["1982", "Newfoundland Power peak demand", "Island peak demand", "historical load"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf"
+  },
+  {
+    id: "np-1982-planning-forecast",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA-295, 1981 Island Supply Planning Table",
+    topics: ["1982", "coincident peak demand", "installed capability", "LOLP", "energy balance", "forecast"],
+    pages: "physical PDF p. 8",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf"
+  },
+  {
+    id: "nlh-1982-board-system-record",
+    year: 1983,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "1983 Electric Power Control Act Report, 1982 Transmission and Hinds Lake Record",
+    topics: ["1982", "Holyrood", "Hardwoods", "Deer Lake", "Rocky Harbour", "Hinds Lake", "transmission", "terminal plant"],
+    pages: "physical PDF pp. 24 to 25",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Consents/83PMARCH.pdf"
+  },
+  {
+    id: "nlh-1982-tl239",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "TL226 and TL239 Re-Routing Application, Existing-System Record",
+    topics: ["1982", "TL239", "Deer Lake", "Berry Hill", "138 kV", "Gros Morne"],
+    pages: "physical PDF p. 10",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/NLH2018Capital/NLH2018Capital_SUPP_TL226TL239/applications/From%20NLH%20-%20Application%20-%20Approval%20to%20Re-Route%20Transmission%20Lines%20TL%20226%20and%20TL%20239%20-%202018-10-12.PDF"
+  },
+  {
+    id: "nlh-1982-tl253",
+    year: 2007,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2008 Capital Budget Application, TL253 Existing-System Record",
+    topics: ["1982", "TL253", "Jackson's Arm", "Coney Arm", "69 kV", "wood poles"],
+    pages: "physical PDF p. 116",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2008Capital/files/application/NLH2008ApplicationComplete.pdf"
+  },
+  {
+    id: "nlh-1982-holyrood-assets",
+    year: 2013,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-NLH-097, Holyrood Terminal Station Specifically Assigned Assets",
+    topics: ["1982", "Holyrood Terminal Station", "B13B15", "breaker", "buswork", "protection", "current transformer"],
+    pages: "physical PDF pp. 3 to 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/IC-NLH-097.PDF"
+  },
+  {
+    id: "nlh-1982-berry-hill-charger",
+    year: 2011,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2012 Capital Budget Application, Berry Hill Stationary Charger Record",
+    topics: ["1982", "Berry Hill", "48 V", "35 A", "Saft Nife", "battery charger"],
+    pages: "physical PDF p. 725",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "np-1982-burin-lines",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "PUB 10-2A, Burin Peninsula Engineering Review",
+    topics: ["1982", "300L", "308L", "Linton Lake", "Marystown", "Salt Pond", "transmission rebuild"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf"
+  },
+  {
     id: "nlh-1983-historical-demand",
     year: 2011,
     organization: "Newfoundland and Labrador Hydro",
@@ -8008,6 +8088,22 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1982-system-record",
+    scope: "1982 actual demand, the 1981 planning case, transmission and terminal expansion, the Hinds Lake outage, station protection and DC equipment",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-1982-historical-demand", pages: "physical PDF p. 2" },
+      { sourceId: "np-1982-planning-forecast", pages: "physical PDF p. 8" },
+      { sourceId: "nlh-1982-board-system-record", pages: "physical PDF pp. 24 to 25" },
+      { sourceId: "nlh-1982-tl239", pages: "physical PDF p. 10" },
+      { sourceId: "nlh-1982-tl253", pages: "physical PDF p. 116" },
+      { sourceId: "np-1982-burin-lines", pages: "physical PDF p. 4" },
+      { sourceId: "np-2018-bayview", pages: "physical PDF pp. 233 to 234" },
+      { sourceId: "np-2017-salt-pond", pages: "physical PDF pp. 231 to 232" },
+      { sourceId: "nlh-1982-berry-hill-charger", pages: "physical PDF p. 725" }
+    ]
+  },
+  {
     id: "np-1983-system-record",
     scope: "1983 actual demand, the 1981 planning case, northern and western transmission additions, generation work, station assets, flood history and VHF equipment",
     status: "reported",
@@ -8240,6 +8336,96 @@ export const timeline = [
     body: "The original Hardwoods terminal station was built in 1972.",
     sourceId: "oxen-2013",
     pages: "PDF p. 17",
+    status: "reported"
+  },
+  {
+    date: "1982",
+    category: "load",
+    title: "The Island transmission peak was 1,083 MW",
+    body: "The historical demand table reports Newfoundland Power peak demand of 731.8 MW and Hydro system peak demand of 880 MW. The table does not provide a separate Hydro Rural peak for 1982.",
+    sourceId: "nlh-1982-historical-demand",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1982 planning case",
+    category: "load",
+    title: "A 1981 planning table projected a 1,309 MW coincident peak",
+    body: "The case used 1,594 MW installed capability, a 0.06 loss-of-load-probability index, 6,764 GWh system energy requirement, 6,911 GWh firm energy capability, and a 147 GWh surplus.",
+    sourceId: "np-1982-planning-forecast",
+    pages: "physical PDF p. 8",
+    status: "proposed"
+  },
+  {
+    date: "1982",
+    category: "network",
+    title: "The Holyrood to Hardwoods 230 kV route was completed",
+    body: "The contemporary Board report records 27 km of 230 kV line completed for $3.8 million. Later filings identify the Holyrood to Hardwoods circuit as TL242.",
+    sourceId: "nlh-1982-board-system-record",
+    pages: "physical PDF pp. 24 to 25",
+    status: "reported"
+  },
+  {
+    date: "1982",
+    category: "network",
+    title: "TL239 connected Deer Lake and Berry Hill",
+    body: "The 138 kV line has 610 wood-pole structures and shares a right-of-way with TL226 for approximately 71 km through Gros Morne National Park.",
+    sourceId: "nlh-1982-tl239",
+    pages: "physical PDF p. 10",
+    status: "reported"
+  },
+  {
+    date: "1982",
+    category: "network",
+    title: "TL253 extended 69 kV service from Jackson's Arm to Coney Arm",
+    body: "The 12 km radial line was built with wood-pole structures to supply distribution systems in the area.",
+    sourceId: "nlh-1982-tl253",
+    pages: "physical PDF p. 116",
+    status: "reported"
+  },
+  {
+    date: "1982",
+    category: "network",
+    title: "Newfoundland Power rebuilt Burin circuits 300L and 308L",
+    body: "The engineering review identifies 300L as the Linton Lake to Marystown supply and 308L as the Marystown to Salt Pond circuit.",
+    sourceId: "np-1982-burin-lines",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "January 30, 1982",
+    category: "water",
+    title: "A canal-dyke breach shut Hinds Lake for three months",
+    body: "The Board report records $2.0 million in repairs following the power-canal dyke breach.",
+    sourceId: "nlh-1982-board-system-record",
+    pages: "physical PDF p. 25",
+    status: "reported"
+  },
+  {
+    date: "1982",
+    category: "station",
+    title: "Bayview and Salt Pond retained 1982 protection installations",
+    body: "Bayview's later filing dates its transmission, transformer, and bus protection relays to the 1982 control-building construction. Salt Pond's transformer-protection relays were also dated to 1982.",
+    sourceId: "np-2018-bayview",
+    pages: "physical PDF p. 233; compare 2017 Capital Budget Application physical PDF p. 231",
+    status: "reported"
+  },
+  {
+    date: "1982",
+    category: "station",
+    title: "Holyrood terminal received B13B15 bus-section equipment",
+    body: "The asset register dates breaker B13B15, buswork and steel supports, protection and control, current transformers, foundations, grounding, and switchyard lighting to October 19, 1982.",
+    sourceId: "nlh-1982-holyrood-assets",
+    pages: "physical PDF pp. 3 to 5",
+    status: "reported"
+  },
+  {
+    date: "1982",
+    category: "station",
+    title: "Berry Hill received a 48 V station charger",
+    body: "The replacement schedule identifies a 35 A Saft Nife charger installed at Berry Hill in 1982.",
+    sourceId: "nlh-1982-berry-hill-charger",
+    pages: "physical PDF p. 725",
     status: "reported"
   },
   {
@@ -11677,6 +11863,16 @@ export const islandTerminalRecords = [
     name: "Berry Hill Terminal Station",
     status: "verified",
     facts: [["Transformation", "138/66 kV"], ["138 kV circuits", "TL239 to Deer Lake; TL259 to Peter's Barron"], ["66 kV circuit", "TL226 to Wiltondale"]],
+    historyRecords: [{
+      label: "1982 TL239 AND STATION CHARGER",
+      sourceId: "nlh-1982-tl239",
+      pages: "physical PDF p. 10; charger record physical PDF p. 725",
+      facts: [
+        ["TL239", "138 kV line from Deer Lake; 610 wood-pole structures; commissioned in 1982"],
+        ["Shared route", "approximately 71 km with TL226 through Gros Morne National Park"],
+        ["Station charger", "48 V, 35 A Saft Nife unit installed in 1982"]
+      ]
+    }],
     diagram: {
       label: "2013 station voltage / 2018 filed routes",
       buses: [{ id: "b1", label: "station bus", voltage: "138 kV" }, { id: "b2", label: "station bus", voltage: "66 kV" }],
@@ -12369,6 +12565,16 @@ export const islandTerminalRecords = [
     name: "Hinds Lake Generating Station",
     status: "verified",
     facts: [["Plant rating", "75 MW"], ["2001 energy capability", "340 GWh"], ["138 kV circuit", "TL243 to Howley"]],
+    historyRecords: [{
+      label: "JANUARY 1982 CANAL-DYKE BREACH",
+      sourceId: "nlh-1982-board-system-record",
+      pages: "physical PDF p. 25",
+      facts: [
+        ["Breach", "power-canal dyke breached on January 30, 1982"],
+        ["Plant outage", "three months"],
+        ["Repair cost", "$2.0 million"]
+      ]
+    }],
     diagram: {
       label: "2013 plant rating / 2018 filed route",
       buses: [{ id: "b1", label: "plant connection", voltage: "138 kV" }],
@@ -15641,6 +15847,16 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1982 CONTROL BUILDING AND PROTECTION",
+        sourceId: "np-2018-bayview",
+        pages: "physical PDF pp. 233 to 234",
+        facts: [
+          ["Control building", "constructed in 1982"],
+          ["Protection", "18 electromechanical relays on four panels protected BVS-T1, the 66 kV bus, and 357L, 358L, and 359L"],
+          ["2018 filed replacement", "four digital relays and a new control building"]
+        ]
+      },
+      {
         label: "1985 DC BATTERY CHARGERS",
         sourceId: "nlh-1985-dc-chargers",
         pages: "physical PDF p. 421",
@@ -17263,6 +17479,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1982 TRANSFORMER PROTECTION",
+        sourceId: "np-2017-salt-pond",
+        pages: "physical PDF pp. 231 to 232",
+        facts: [
+          ["Protection", "electromechanical transformer-protection relays installed in 1982"],
+          ["2017 filed replacement", "ten bus and transformer electromechanical relays replaced by two digital relays"],
+          ["Control building", "the later filing described the existing building as 34 years old and proposed a replacement"]
+        ]
+      },
       {
         label: "1993 GAS-TURBINE POWERHOUSE REPLACEMENT",
         sourceId: "np-1993-salt-pond-enclosure",

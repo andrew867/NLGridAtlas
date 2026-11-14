@@ -1250,12 +1250,24 @@
       "title": "Reconcile Newfoundland Power 1982 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1982 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-045"],
+      "completion_evidence": ["research/NP_1982_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1982-system.test.js"],
+      "blocker": null,
+      "notes": "Historical demand and planning tables establish the actual and forecast system values. The contemporary Board report establishes the Holyrood to Hardwoods and Deer Lake to Rocky Harbour transmission work, terminal expansion and the Hinds Lake canal-dyke breach. Later primary records establish TL239, TL253, the 300L and 308L rebuilds, Holyrood B13B15 equipment, Berry Hill's charger, Bayview's control building and protection, and Salt Pond transformer protection. No supported 1982 Newfoundland Power capital, reliability, energy-sales, customer-account or VHF equipment total was located."
+    },
+    {
+      "id": "NPREG-047",
+      "title": "Reconcile Newfoundland Power 1981 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1981 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-046"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with surviving demand and planning tables, then reconcile TL239, 300L, 308L, station, generation, protection, flood, financial and telecommunications records without treating asset-account dates as project completion unless the filing establishes the work."
+      "notes": "Start with surviving demand and planning tables, then reconcile TL232, TL234, TL251, Upper Salmon construction, terminal, generation, protection, financial and telecommunications records without assigning an asset-account date to a complete project unless the filing establishes that relationship."
     },
     {
       "id": "ASSET-001",
