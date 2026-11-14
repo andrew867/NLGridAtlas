@@ -1618,6 +1618,18 @@
       "notes": "Later primary records establish 21L and the Cape Broyle turbine inlet-valve installation. The 21L filings differ between 5.73 km and 5.3 km. Records conflict between 1951 and 1952 for 18L, between 1952 and 1963 for Stamp's Lane construction, and across 1952, 1953 and 1954 for Cape Broyle and Horse Chops. No named 1952 telecommunications, system-demand or reliability event was located."
     },
     {
+      "id": "NPREG-077",
+      "title": "Reconcile Newfoundland Power 1951 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1951 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-076"],
+      "completion_evidence": ["research/NP_1951_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1951-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records establish the Mobile hydro plant and original equipment, Mobile civil works, MOP-T1, 20L, Tors Cove G3, the Horse Chops transformer manufacturing year, utility land acquisitions and the later utility use of Red Cliff storage sheds. The 2026 filing gives both 1950 and 1951 for MOP Substation; the 2027 filing gives 1951. Records also conflict between 1951 and 1952 for 18L and between 1951 and 1959 for 69L. No named 1951 telecommunications, system-demand, reliability or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

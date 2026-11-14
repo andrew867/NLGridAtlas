@@ -530,6 +530,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/HolyroodDieselPU33/files/rfi/NP-NLH-022.PDF"
   },
   {
+    id: "np-1951-mobile-generating-plant",
+    year: 2022,
+    organization: "Newfoundland Power",
+    title: "2023 Capital Budget Application, Mobile Hydro Plant Original Equipment",
+    topics: ["1951", "Mobile Hydro Plant", "MOP-G1", "powerhouse", "switchgear", "turbine", "generator", "crane"],
+    pages: "physical PDF pp. 480, 483 to 484 and 489 to 490",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF"
+  },
+  {
+    id: "np-1951-mobile-civil",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Mobile Development Original Civil Works",
+    topics: ["1951", "Mobile Hydro Plant", "diversion dam", "canal", "penstock", "surge tank", "powerhouse"],
+    pages: "physical PDF p. 520",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-1951-mobile-substation-dates",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Mobile Plant Substation Record",
+    topics: ["1951", "Mobile Plant Substation", "MOP-T1", "66 kV", "6.9 kV", "construction year", "date conflict"],
+    pages: "physical PDF pp. 444 and 446",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
+    id: "np-1951-tors-cove-g3",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Tors Cove G3 Record",
+    topics: ["1951", "Tors Cove", "TCV-G3", "English Electric", "Francis turbine", "hydroelectric generation"],
+    pages: "physical PDF p. 206",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-1951-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, Corner Brook and King's Bridge Property Record",
+    topics: ["1951", "Corner Brook", "King's Bridge", "substation land", "property"],
+    pages: "physical PDF p. 138",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
+    id: "np-1951-red-cliff-sheds",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "2021 Capital Budget Application, Red Cliff Storage-Shed History",
+    topics: ["1951", "Red Cliff", "United States Air Force", "United Towns Electric", "Electrical Maintenance Centre", "storage sheds"],
+    pages: "physical PDF p. 215",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf"
+  },
+  {
     id: "np-1953-blackwoods-pond",
     year: 2002,
     organization: "Newfoundland Power",
@@ -8885,7 +8945,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "2026 Capital Budget Application, Mobile Plant Substation Power Transformer Replacement",
     topics: ["Mobile Hydro Plant", "MOP-T1", "Mobile Substation", "66 kV", "6.9 kV", "hydroelectric generation", "transformer replacement"],
-    pages: "physical PDF pp. 441 to 448",
+    pages: "physical PDF pp. 76 to 77 and 441 to 448",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF"
   },
@@ -10004,6 +10064,25 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1951-system-record",
+    scope: "1951 hydroelectric generation, transmission construction, dated transformers, utility land and later operations buildings",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1951-mobile-generating-plant", pages: "physical PDF pp. 480, 483 to 484 and 489 to 490" },
+      { sourceId: "np-1951-mobile-civil", pages: "physical PDF p. 520" },
+      { sourceId: "np-2024-pub-np-007", pages: "physical PDF p. 3" },
+      { sourceId: "np-2026-mobile-plant", pages: "physical PDF pp. 76 and 441" },
+      { sourceId: "np-1951-mobile-substation-dates", pages: "physical PDF pp. 444 and 446" },
+      { sourceId: "np-2007-capital", pages: "physical PDF p. 179" },
+      { sourceId: "np-1951-tors-cove-g3", pages: "physical PDF p. 206" },
+      { sourceId: "np-2009-horse-chops", pages: "physical PDF p. 287" },
+      { sourceId: "np-2014-transmission-lines", pages: "physical PDF pp. 308 and 310" },
+      { sourceId: "np-2015-transmission-lines", pages: "physical PDF pp. 552 and 555" },
+      { sourceId: "np-1951-property-record", pages: "physical PDF p. 138" },
+      { sourceId: "np-1951-red-cliff-sheds", pages: "physical PDF p. 215" }
+    ]
+  },
+  {
     id: "np-1954-system-record",
     scope: "1954 transmission construction, station development, hydroelectric generation and civil works, and utility governance",
     status: "unresolved",
@@ -10753,6 +10832,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1950 or 1951",
+    category: "generation",
+    title: "Mobile hydro plant and generation substation entered service",
+    body: "The Mobile plant was commissioned in 1951 at 11.0 MVA under approximately 114.6 m net head. Original equipment included a 13,000 hp vertical Francis turbine, Canadian Westinghouse generator MOP-G1, Westinghouse switchgear, powerhouse crane and MOP-T1, a 10 MVA 66/6.9 kV Westinghouse transformer. The 2026 filing dates MOP Substation to both 1950 and 1951; the 2027 filing gives 1951.",
+    sourceId: "np-1951-mobile-generating-plant",
+    pages: "physical PDF pp. 480, 483 to 484 and 489 to 490; 2026 filing physical PDF pp. 76 and 441; 2027 filing physical PDF pp. 444 and 446",
+    status: "unresolved"
+  },
+  {
+    date: "1951",
+    category: "civil",
+    title: "Mobile development civil works were constructed",
+    body: "Original work included the diversion dam, canals, wood-stave and steel penstocks, surge tank and powerhouse. Of the 1,568 m penstock recorded in 2023, the 454 m steel section remained from 1951; the 1,114 m wood-stave section had been replaced with fibreglass in 1990.",
+    sourceId: "np-1951-mobile-civil",
+    pages: "physical PDF p. 520; PUB-NP-007 physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1951",
+    category: "network",
+    title: "20L connected Mobile and Cape Broyle",
+    body: "The 66 kV radial line was 20.1 km of H-frame wood-pole construction. It supplied more than 1,700 customers through Cape Broyle and Fermeuse and connected the Morris, Rocky Pond, Horse Chops and Cape Broyle hydro plants to the grid.",
+    sourceId: "np-2007-capital",
+    pages: "physical PDF p. 179",
+    status: "reported"
+  },
+  {
+    date: "1951",
+    category: "generation",
+    title: "Tors Cove added generating unit G3",
+    body: "The third unit paired a 2,780 kVA English Electric generator with a 3,550 hp Francis turbine. The filed rating is 2,500 kW at 90% power factor; the addition brought the three-unit plant nameplate to 6.5 MW.",
+    sourceId: "np-1951-tors-cove-g3",
+    pages: "physical PDF p. 206",
+    status: "reported"
+  },
+  {
+    date: "1951",
+    category: "equipment",
+    title: "Horse Chops step-up transformer was manufactured",
+    body: "Reliance Electric manufactured asset 200165, an 8.0 MVA transformer that stepped the plant output from 6.9 kV to 66 kV. The source establishes the manufacturing year, not the installation date.",
+    sourceId: "np-2009-horse-chops",
+    pages: "physical PDF p. 287",
+    status: "reported"
+  },
   {
     date: "1952",
     category: "network",
@@ -22598,9 +22722,9 @@ export const stationProfiles = [
       date: "2025 EXISTING ARRANGEMENT",
       title: "Mobile hydro generation outlet",
       sourceId: "np-2026-mobile-plant",
-      pages: "physical PDF pp. 441 to 444",
+      pages: "physical PDF pp. 76 and 441 to 444",
       facts: [
-        ["Station built", "1950 as a generation substation for the Mobile Hydro Plant"],
+        ["Construction record", "the 2026 project summary gives 1951; Appendix E in the same filing gives 1950"],
         ["Generator", "11 MVA at 6.9 kV"],
         ["MOP-T1", "66/6.9 kV; 10 MVA; Westinghouse; installed at Mobile Plant in 1951"],
         ["Transmission connection", "66 kV line to Mobile Substation"],
@@ -22617,6 +22741,33 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1951 ORIGINAL PLANT AND ELECTRICAL EQUIPMENT",
+        sourceId: "np-1951-mobile-generating-plant",
+        pages: "physical PDF pp. 480, 483 to 484 and 489 to 490",
+        facts: [
+          ["Generating unit", "11.0 MVA under approximately 114.6 m net head; 13,000 hp vertical Francis turbine and Canadian Westinghouse generator MOP-G1"],
+          ["Original electrical equipment", "Westinghouse switchgear, potential and current transformers, emergency station-service transformers, protective relays, controls and meters"],
+          ["Original equipment still identified in 2022", "powerhouse, crane, MOP-G1 stator and rotor, and parts of the switchgear"]
+        ]
+      },
+      {
+        label: "1951 ORIGINAL CIVIL WORKS",
+        sourceId: "np-1951-mobile-civil",
+        pages: "physical PDF p. 520",
+        facts: [
+          ["Original works", "diversion dam, canals, wood-stave and steel penstocks, surge tank and powerhouse"]
+        ]
+      },
+      {
+        label: "1951 ORIGINAL STEEL PENSTOCK",
+        sourceId: "np-2024-pub-np-007",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Original steel section", "454 m of the 1,568 m penstock"],
+          ["1990 replacement section", "1,114 m of fibreglass pipe replaced the wood-stave portion"]
+        ]
+      },
       {
         label: "1965 6.9 KV STRUCTURE",
         sourceId: "np-2010-substation-asset-history",
@@ -30012,6 +30163,16 @@ export const stationProfiles = [
       facts: [["TCV-T1", "generation transformer; 66/6.9 kV; 7.50 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1951 G3 ADDITION",
+        sourceId: "np-1951-tors-cove-g3",
+        pages: "physical PDF p. 206",
+        facts: [
+          ["Generator", "English Electric; 2,780 kVA; 90% power factor; 2,500 kW filed load rating"],
+          ["Turbine", "3,550 hp Francis unit"],
+          ["Plant capacity after addition", "6.5 MW combined nameplate for G1, G2 and G3"]
+        ]
+      },
       {
         label: "1964 GENERATOR REFURBISHMENT",
         sourceId: "np-1964-tors-cove-generator",
