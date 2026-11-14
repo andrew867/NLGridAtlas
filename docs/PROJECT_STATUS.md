@@ -15,6 +15,10 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Reconstructed the surviving 1988 system record from the comparative reliability table, capital history, transmission register and later asset histories. The accessible ten-year operating summary starts in 1989, so the atlas does not publish unsupported 1988 energy, demand, sales or customer totals.
+- Added actual 1988 SAIFI, SAIDI and CAIDI, $46.598 million capital expenditure, Boyd's Cove and TL254, the Change Islands and Fogo Island submarine system, the Bell Island operating and abandoned cable records, Holyrood Unit 1 and T4 work, the Hardwoods and Stephenville casing replacement, Frozen Ocean Lake dam and the Seal Cove G1 rewind.
+- Preserved the unresolved 410L date conflict. CA-NP-156 states 1988 and CA-NP-160 states 1989 for the customer-funded 8.9 km extension, so the atlas assigns no definitive completion year.
+- Opened NPREG-041 for the surviving 1987 system and annual records.
 - Reconstructed the surviving 1989 system record from the comparative reliability table, capital history, ten-year operating summary, transmission register and later equipment histories.
 - Added actual 1989 SAIFI, SAIDI and CAIDI, $56.304 million capital expenditure, 415 GWh company generation, 3,772 GWh purchased energy, 1,106 MW peak demand, 3,960 GWh sales and 188,575 customer accounts.
 - Added the ATI VHF system configuration, TL257 and TL258, Paradise River's February 26 commissioning record and station diagram, the Holyrood Unit 2 uprate and T2 and T8 equipment records, the transmission-insulator program, and plant work at New Chelsea, Heart's Content and Pierre's Brook.
@@ -300,7 +304,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Reconcile the surviving Newfoundland Power 1988 system and annual records under `NPREG-040`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
+1. Reconcile the surviving Newfoundland Power 1987 system and annual records under `NPREG-041`, then continue source-specific station additions under `ISL-005` when a filing establishes equipment, connections, or a dated project state.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

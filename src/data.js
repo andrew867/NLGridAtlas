@@ -390,6 +390,116 @@ export const sources = [
     url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%20%202.pdf"
   },
   {
+    id: "np-1988-reliability",
+    year: 1991,
+    organization: "Newfoundland Power",
+    title: "Comparative Distribution-System Reliability Record",
+    topics: ["1988", "SAIFI", "SAIDI", "CAIDI", "distribution reliability"],
+    pages: "physical PDF p. 11",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008GRA/files/information/Information-17.pdf"
+  },
+  {
+    id: "np-1988-capital",
+    year: 1991,
+    organization: "Newfoundland Power",
+    title: "CA-NP-146 Attachment B, Capital Expenditures Since 1984",
+    topics: ["1988", "capital expenditure"],
+    pages: "physical PDF p. 9",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf"
+  },
+  {
+    id: "np-1988-boyds-cove",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Boyd's Cove Substation Record",
+    topics: ["1988", "Boyd's Cove", "114L", "TL254", "transmission station"],
+    pages: "physical PDF p. 288",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "nlh-1988-tl254",
+    year: 2013,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-316 Attachment 1, Island Transmission-Line Register",
+    topics: ["1988", "TL254", "Boyd's Cove", "Farewell Head", "66 kV"],
+    pages: "physical PDF p. 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf"
+  },
+  {
+    id: "nlh-1988-change-fogo-cables",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2019 Capital Budget Application, Farewell Head Submarine-Cable System",
+    topics: ["1988", "Farewell Head", "Change Islands", "Fogo Island", "submarine cable", "25 kV"],
+    pages: "physical PDF pp. 311 to 313",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2019/NLH2019Capital/applications/2019%20CBA%20-%20Volume%201.PDF"
+  },
+  {
+    id: "np-1988-bell-island-cables",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "Bell Island Submarine Cable System Replacement, Existing Conditions",
+    topics: ["1988", "Bell Island", "Broad Cove", "BCV-02", "submarine cable", "factory splice"],
+    pages: "physical PDF p. 314",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/BellIslandSubCable/application/Application-ApprovaltoReplacetheBellIslandSubmarineCable-2013-12-09.PDF"
+  },
+  {
+    id: "nlh-1988-holyrood-unit1",
+    year: 2012,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2013 Capital Budget Application, Holyrood Unit 3 Turbine Valves Overhaul",
+    topics: ["1988", "Holyrood", "Unit 1", "uprate", "175 MW"],
+    pages: "physical PDF p. 5",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013Capital/files/application/NLH2013ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "nlh-1988-holyrood-t4",
+    year: 2022,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Holyrood Condition Assessment, Transformer T4 Record",
+    topics: ["1988", "Holyrood", "T4", "spare transformer", "230 kV"],
+    pages: "physical PDF p. 229",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-277.PDF"
+  },
+  {
+    id: "nlh-1988-gas-turbine-casings",
+    year: 2009,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2010 Capital Budget Application, Stephenville Gas Turbine Mechanical History",
+    topics: ["1988", "Stephenville", "Hardwoods", "gas turbine", "power turbine casing"],
+    pages: "physical PDF p. 166",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/NLH2010ApplicationComplete-VolumeII.pdf"
+  },
+  {
+    id: "np-1988-rattling-brook",
+    year: 2006,
+    organization: "Newfoundland Power",
+    title: "2007 Capital Budget Application, Rattling Brook Hydro Plant Refurbishment",
+    topics: ["1988", "Rattling Brook", "Frozen Ocean Lake", "dam rebuild"],
+    pages: "physical PDF p. 269",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1988-seal-cove",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Seal Cove G1 History",
+    topics: ["1988", "Seal Cove", "G1", "generator stator rewind"],
+    pages: "physical PDF p. 30",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
     id: "np-1989-reliability",
     year: 1991,
     organization: "Newfoundland Power",
@@ -7118,6 +7228,12 @@ export const staticClaims = [
     sources: [{ sourceId: "np-2018-tod-study", pages: "response p. 1 and Attachments A to C" }]
   },
   {
+    id: "np-1988-system-reliability",
+    scope: "1988 Newfoundland Power actual SAIFI, SAIDI and CAIDI",
+    status: "reported",
+    sources: [{ sourceId: "np-1988-reliability", pages: "physical PDF p. 11" }]
+  },
+  {
     id: "np-1989-system-reliability",
     scope: "1989 Newfoundland Power actual SAIFI, SAIDI and CAIDI",
     status: "reported",
@@ -7298,6 +7414,105 @@ export const timeline = [
     sourceId: "nlh-2020-holyrood-unit3",
     pages: "physical PDF p. 136; project p. 2",
     status: "verified"
+  },
+  {
+    date: "1988",
+    category: "reliability",
+    title: "SAIFI was 5.78 and SAIDI was 9.59 hours",
+    body: "The comparative reliability table reports CAIDI of 1.66 hours per interruption.",
+    sourceId: "np-1988-reliability",
+    pages: "physical PDF p. 11",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "network",
+    title: "Actual capital expenditure was $46.598 million",
+    body: "The historical capital table reports the annual expenditure as $46,598,000.",
+    sourceId: "np-1988-capital",
+    pages: "physical PDF p. 9",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "station",
+    title: "Boyd's Cove transmission station entered service",
+    body: "The station connected 114L toward Summerford and Gander Bay with TL254 toward Farewell Head. The filing states that the station served no customers directly.",
+    sourceId: "np-1988-boyds-cove",
+    pages: "physical PDF p. 288",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "network",
+    title: "TL254 connected Boyd's Cove and Farewell Head",
+    body: "The register identifies an 18.868 km, 66 kV H-frame wood line.",
+    sourceId: "nlh-1988-tl254",
+    pages: "physical PDF p. 5",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "network",
+    title: "The Change Islands and Fogo Island submarine system entered service",
+    body: "The 25 kV system comprises a 5.1 km Farewell Head to Change Islands segment and a 5.3 km Change Islands to Fogo Island segment, with four single-conductor cables in each segment.",
+    sourceId: "nlh-1988-change-fogo-cables",
+    pages: "physical PDF p. 312",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "network",
+    title: "Two Bell Island operating cables entered service",
+    body: "A third 1988 cable was abandoned without entering service because of a factory-splice problem. The 12.47 kV BCV-02 crossing is approximately 5.2 km.",
+    sourceId: "np-1988-bell-island-cables",
+    pages: "physical PDF p. 314",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "generation",
+    title: "Holyrood Unit 1 was uprated from 150 MW to 175 MW",
+    body: "The later project history dates the Unit 1 uprate to 1988.",
+    sourceId: "nlh-1988-holyrood-unit1",
+    pages: "physical PDF p. 5",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "station",
+    title: "Holyrood moved the former T2 transformer to the T4 spare position",
+    body: "The Canadian General Electric unit is listed at 115/152/190 MVA, 230/16 kV, delta-wye and oil cooled. It had operated at T2 since 1970.",
+    sourceId: "nlh-1988-holyrood-t4",
+    pages: "physical PDF p. 229",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "generation",
+    title: "Hardwoods and Stephenville replaced four power-turbine casings",
+    body: "The later mechanical history attributes the approximately $4 million Fern Engineering modification to casing cracking on the four Curtiss-Wright power turbines.",
+    sourceId: "nlh-1988-gas-turbine-casings",
+    pages: "physical PDF p. 166",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "generation",
+    title: "Frozen Ocean Lake dam was rebuilt",
+    body: "The later Rattling Brook plant history lists the dam rebuild among completed major upgrades.",
+    sourceId: "np-1988-rattling-brook",
+    pages: "physical PDF p. 269",
+    status: "reported"
+  },
+  {
+    date: "1988",
+    category: "generation",
+    title: "Seal Cove generator G1 received a stator rewind",
+    body: "The later plant history identifies the Allis-Chalmers unit and dates its stator rewind to 1988.",
+    sourceId: "np-1988-seal-cove",
+    pages: "physical PDF p. 30",
+    status: "reported"
   },
   {
     date: "1989",
@@ -9008,8 +9223,8 @@ export const components = {
   "hwd-g1": {
     diagram: "hwd", status: "verified", code: "HWD / G1 AND T5", title: "Hardwoods generator branch",
     summary: "The 2013 alternative one-line connects G1 to the 66 kV bus through T5. The 2026 loop study models HWD-G1 at 25 MW.",
-    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["1992 stack work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
-    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
+    data: [["G1", "63.5 MVA"], ["T5", "45/60/75 MVA"], ["T5 voltage", "66/13.8 kV"], ["1988 turbine work", "Curtiss-Wright power-turbine casings replaced at Hardwoods and Stephenville; approximately $4 million combined"], ["1992 stack work", "Exhaust stacks replaced; interior silencer panel reused"], ["1993 engine work", "End B engine 202223 overhauled"], ["1993 air-start work", "both compressors, air lines, valves and control panel replaced"], ["2026 study model", "25 MW"]],
+    sources: [sourceRef("oxen-2013", "PDF p. 61"), sourceRef("nlh-1988-gas-turbine-casings", "physical PDF p. 166"), sourceRef("nlh-1992-hardwoods-stack", "physical PDF p. 33"), sourceRef("nlh-1993-hardwoods-gt", "physical PDF pp. 8 and 33"), sourceRef("nlh-1993-hardwoods-air-start", "physical PDF p. 135"), sourceRef("np-2027-loop-study", "PDF p. 188")]
   },
   "hwd-b1b2": {
     diagram: "hwd", status: "verified", code: "HWD / B1B2", title: "Hardwoods 230 kV bus tie",
@@ -9082,8 +9297,8 @@ export const components = {
   "hrd-summary": {
     diagram: "hrd", status: "verified", code: "HRD / INTERNAL SYSTEM", title: "Holyrood Generating Station",
     summary: "Revision 19 of drawing A0-1403-500-E-001, dated March 16, 2015, is the latest published whole-plant as-built arrangement located. It links generator transformers T1, T2, and T3 to the 230 kV bus; T6, T7, and T8 to the 138 kV bus; and T5 and T10 to the 66 kV bus. Later records establish component replacements and operating changes without publishing a newer complete one-line.",
-    data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"], ["2025 terminal work", "T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced"]],
-    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
+    data: [["As-built drawing", "A0-1403-500-E-001, revision 19, March 16, 2015"], ["GSU", "T1, T2, T3"], ["230/138 kV", "T6, T7, T8"], ["230/66 kV", "T5, T10"], ["1988 Unit 1 uprate", "150 MW to 175 MW"], ["1988 T4 spare position", "former T2 transformer; 115/152/190 MVA, 230/16 kV"], ["Unit service", "UST-1, UST-2 and UST-3; 10 MVA each; 16 kV/4.16-2.4 kV"], ["Station service", "SST-12 and SST-34; 10.5/14 MVA each; 69 kV/4.16-2.4 kV"], ["2014 black start", "Eight 1,825 kW mobile diesel units on the 4.16 kV distribution connection"], ["39L terminal equipment", "B8L39 breaker and both protection relays entered service in August 2018; both adjacent disconnects entered service in September 2019"], ["SST34 feed", "66 kV underground cable replacement completed in 2019"], ["2017 auxiliary substation", "38L supply; 1.5 MVA, 69-2.4/4.16 kV transformer installed in 1996; one 4.16 kV feeder for plant outside services"], ["2019 auxiliary project", "Completed as a lower-cost Newfoundland Power supply connection instead of the proposed new Hydro substation"], ["Gas turbine in 2015 drawing", "15 MW branch through T9 marked no longer in service"], ["Later black-start plant", "Six containerized CAT 3516B generator sets"], ["Unit 3", "Reversible generator and synchronous condenser"], ["March 2025 cost model", "$292.827 million capital plus $330.915 million operating from 2025 to 2035; $623.742 million total"], ["T8 replacement", "2014"], ["Replacement T7 in service", "February 1, 2024"], ["Unit 1 overhaul completed", "February 2025"], ["2025 terminal work", "T16 replaced; T1 and T2 refurbished; B12L68-1 disconnect replaced"]],
+    sources: [sourceRef("nlh-holyrood-as-built-2015", "physical PDF p. 17"), sourceRef("gra-2013-v2", "physical PDF p. 663"), sourceRef("nlh-1988-holyrood-unit1", "physical PDF p. 5"), sourceRef("nlh-1988-holyrood-t4", "physical PDF p. 229"), sourceRef("nlh-holyrood-facility-review-2014", "physical PDF pp. 61 to 66"), sourceRef("nlh-2026-iic-nlh-012", "physical PDF pp. 10 and 13; attachment pp. 3 and 6"), sourceRef("nlh-2017-holyrood-services", "physical PDF pp. 278 to 289 and 310 to 320"), sourceRef("nlh-2019-holyrood-services-completion", "physical PDF pp. 39 to 40"), sourceRef("nlh-2022-holyrood-condition", "physical PDF pp. 77 and 90 to 91"), sourceRef("nlh-gra-2017-v2", "physical PDF p. 14"), sourceRef("nlh-capex-2024", "physical PDF p. 332"), sourceRef("nlh-2020-holyrood-unit3", "physical PDF pp. 135 to 138"), sourceRef("nlh-2025-unit1-overhaul", "archival record, dated March 12, 2025"), sourceRef("nlh-2025-holyrood-refresh", "physical PDF pp. 1 and 35"), sourceRef("nlh-q3-2025-terminal-work", "physical PDF pp. 36 to 37")]
   },
   "hrd-breaker-program": {
     diagram: "hrd", status: "reported", code: "HRD / 230 kV BREAKERS", title: "Holyrood 230 kV breaker replacement program",
@@ -10351,6 +10566,16 @@ export const islandTerminalRecords = [
       ]
     },
     historyRecords: [
+      {
+        label: "1988 POWER-TURBINE CASING REPLACEMENT",
+        sourceId: "nlh-1988-gas-turbine-casings",
+        pages: "physical PDF p. 166",
+        facts: [
+          ["Cause", "cracking in the Curtiss-Wright power-turbine casings at Stephenville and Hardwoods"],
+          ["Completed work", "Fern Engineering primarily replaced the four power-turbine casings and several smaller components"],
+          ["Reported cost", "approximately $4 million for the two stations"]
+        ]
+      },
       {
         label: "2013 COMPLETED NEWFOUNDLAND POWER REFURBISHMENT",
         sourceId: "np-2013-q4-report",
@@ -13227,6 +13452,16 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1988 BELL ISLAND SUBMARINE-CABLE INSTALLATION",
+        sourceId: "np-1988-bell-island-cables",
+        pages: "physical PDF p. 314",
+        facts: [
+          ["Operating cables", "two 12.47 kV BCV-02 cables entered service across the approximately 5.2 km crossing"],
+          ["Abandoned cable", "a third 1988 cable was never used because of a factory-splice problem"],
+          ["Later completion", "two further operating cables entered service in 1990"]
+        ]
+      },
+      {
         label: "1990 SUBMARINE-CABLE INSTALLATION",
         sourceId: "np-1990-bell-island-cables",
         pages: "physical PDF p. 80",
@@ -15686,7 +15921,7 @@ export const stationProfiles = [
         sourceId: "np-2010-station-modernization",
         pages: "physical PDF pp. 288 to 289",
         facts: [
-          ["2009 station record", "built in 1988 as a transmission station with 114L toward Summerford and Gander Bay and TL254 toward Farewell Head"],
+          ["1988 origin", "built as a transmission station with 114L toward Summerford and Gander Bay and TL254 toward Farewell Head"],
           ["Filed work", "install metal-oxide lightning arresters on the station-service transformer and extend the grounding system"],
           ["Filed cost", "$67,000"]
         ]
@@ -19633,6 +19868,14 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1988 FROZEN OCEAN LAKE DAM REBUILD",
+        sourceId: "np-1988-rattling-brook",
+        pages: "physical PDF p. 269",
+        facts: [
+          ["Completed work", "Frozen Ocean Lake dam was rebuilt"]
+        ]
+      },
       {
         label: "2002 REPORTED G2 WINDING FAILURE",
         sourceId: "np-2003-status-2002",

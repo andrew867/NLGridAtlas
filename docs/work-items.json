@@ -1178,12 +1178,24 @@
       "title": "Reconcile Newfoundland Power 1988 system and annual records",
       "phase": 2,
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "scope": "Inventory surviving 1988 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
       "dependencies": ["NPREG-039"],
+      "completion_evidence": ["research/NP_1988_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1988-system.test.js"],
+      "blocker": null,
+      "notes": "The comparative reliability table, capital history, transmission register and later asset histories establish actual reliability, capital, Boyd's Cove and TL254, the Change Islands and Fogo Island submarine system, Bell Island cable work, the Holyrood Unit 1 uprate and T4 relocation, gas-turbine casing work, Frozen Ocean Lake dam and the Seal Cove G1 rewind. The accessible ten-year operating summary starts in 1989. CA-NP-156 and CA-NP-160 disagree on whether the customer-funded 410L extension dates to 1988 or 1989, so the atlas does not assign a definitive completion year."
+    },
+    {
+      "id": "NPREG-041",
+      "title": "Reconcile Newfoundland Power 1987 system and annual records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "in_progress",
+      "scope": "Inventory surviving 1987 annual, financial, station, transmission, distribution, generation, telecommunications, load, reliability and project-state evidence.",
+      "dependencies": ["NPREG-040"],
       "completion_evidence": [],
       "blocker": null,
-      "notes": "Start with the surviving operating, reliability and capital tables, then reconcile the Bell Island cable work, Holyrood Unit 1 uprate and T4 relocation, Boyd's Cove to Farewell Head TL254, and the conflicting 410L extension dates."
+      "notes": "Start with the surviving reliability and capital tables, TL250 between Bottom Brook and Grandy Brook, and dated plant, station, transmission, distribution and telecommunications records."
     },
     {
       "id": "ASSET-001",
