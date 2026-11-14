@@ -350,7 +350,10 @@ test("station profiles separate registers, maps, and recorded event loads", () =
   assert.deepEqual(hardwoods.mapPages.map(([feeder]) => feeder), ["HWD-01", "HWD-02", "HWD-03", "HWD-04", "HWD-06", "HWD-07"]);
   assert.deepEqual(hardwoods.eventLoads, [["HWD-07", "11 MW"], ["HWD-01", "7 MW"], ["HWD-04", "8 MW"]]);
   assert.match(hardwoods.mapNote, /HWD-08 route and recloser drawing/);
-  assert.equal(hardwoods.referenceSheets[0].pages, "physical PDF p. 44");
+  assert.equal(
+    hardwoods.referenceSheets.find((sheet) => sheet.image === "./reference-maps/hwd-08-2014-reclosers.png").pages,
+    "physical PDF p. 44"
+  );
   assert.deepEqual(hardwoods.engineeringRecord.facts, [
     ["HWD-T1", "66/12.5 kV, 20 MVA, 16.62 MVA 2026 forecast"],
     ["HWD-T2", "66/12.5 kV, 20 MVA, 16.52 MVA 2026 forecast"],
@@ -819,7 +822,8 @@ test("Boyd's Cove and Gander retain the present corridor before the proposed 138
   const gander = stationProfiles.find((station) => station.code === "GAN");
   assert.deepEqual(boydsCove.connectedCircuits.map(({ circuit }) => circuit), ["114L", "114L", "TL254"]);
   assert.match(boydsCove.engineeringRecord.facts.flat().join(" "), /114L to Summerford Substation and Newfoundland and Labrador Hydro TL254/);
-  assert.match(boydsCove.historyRecords[0].facts.flat().join(" "), /new 138 kV line from Lewisporte to Boyd's Cove/);
+  const boydsCoveConversion = boydsCove.historyRecords.find((record) => record.label === "2026 TO 2027 PROPOSED 138 KV CONVERSION");
+  assert.match(boydsCoveConversion.facts.flat().join(" "), /new 138 kV line from Lewisporte to Boyd's Cove/);
 
   assert.deepEqual(gander.connectedCircuits.map(({ circuit }) => circuit), ["144L", "146L", "108L", "102L"]);
   assert.deepEqual(gander.feederRegister, ["GAN-01", "GAN-02", "GAN-03", "GAN-04"]);
@@ -3067,6 +3071,8 @@ test("station reference schematics remain expandable and locally preserved", asy
   const pepperell = stationProfiles.find((station) => station.code === "PEP");
   const virginiaWaters = stationProfiles.find((station) => station.code === "VIR");
   assert.deepEqual(stJohnsMain.referenceSheets.map((sheet) => [sheet.title, sheet.pages]), [
+    ["2010 filed SJM-03 route", "physical PDF p. 370"],
+    ["2010 proposed Water Street feeder arrangement", "physical PDF p. 374"],
     ["2011 proposed Water Street feeder reconfiguration", "physical PDF p. 429"],
     ["2014 filed 13L rebuild route", "physical PDF p. 317"],
     ["2011 Water Street existing feeder schematic", "physical PDF p. 425"],
@@ -3078,8 +3084,9 @@ test("station reference schematics remain expandable and locally preserved", asy
   );
   assert.equal(pepperell.referenceSheets.find((sheet) => sheet.image === "./reference-maps/pep-2019-service-area.png").pages, "physical PDF p. 37");
   assert.equal(virginiaWaters.referenceSheets[0].pages, "physical PDF p. 39");
-  assert.equal(hardwoods.referenceSheets[0].image, "./reference-maps/hwd-08-2014-reclosers.png");
+  assert.ok(hardwoods.referenceSheets.some((sheet) => sheet.image === "./reference-maps/hwd-08-2014-reclosers.png"));
   assert.deepEqual(kenmount.referenceSheets.map((sheet) => sheet.pages), [
+    "physical PDF p. 385",
     "physical PDF p. 319",
     "physical PDF p. 36",
     "physical PDF p. 37",

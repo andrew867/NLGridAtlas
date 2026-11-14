@@ -910,6 +910,18 @@
       "notes": "The station records now include the measured 2009 Avalon transformer peaks, the selected Pulpit Rock expansion, NWB-02 reliability work, the 16L and 25L filed rebuilds and later completion status, the St. John's Main feeder-capacity changes, and the Rattling and Sandy Lake spillway records. Rattling Lake remains reported as substantially complete because no final commissioning statement was located. The Sandy Lake completion is verified by CA-NP-011."
     },
     {
+      "id": "NPREG-018",
+      "title": "Reconcile Newfoundland Power 2010 station, feeder, hydro, fibre, and portable-substation records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2010 capital application, later completion evidence, station modernization, Northeast Avalon feeder work, St. John's underground distribution, Lookout Brook electrical work, fibre-circuit outcomes, and the Portable Substation P3 deferral.",
+      "dependencies": ["NPREG-017"],
+      "completion_evidence": ["research/NP_2010_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/sjm-03-2010-route.png", "public/reference-maps/sjm-03-2010-proposed.png", "public/reference-maps/hwd-02-2010-conversion.png", "public/reference-maps/bcv-03-2010-upgrade.png", "public/reference-maps/hwd-07-2010-upgrade.png", "public/reference-maps/oxp-01-2010-upgrade.png", "public/reference-maps/sla-11-2010-upgrade.png", "tests/np-2010-capital.test.js"],
+      "blocker": null,
+      "notes": "The station records now include the filed HWD-02, HWD-07, BCV-03, OXP-01, SLA-11, SJM-03, Boyd's Cove, and Springfield work. The Lookout Brook record separates the filed electrical scope from later evidence that the plant-system refurbishment was completed in 2010. Later reporting establishes two fibre replacements, two abandoned leases, and one route-constrained cable that was not built. Portable Substation P3 remains proposed because no completion record was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -810,6 +810,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012CostOfCapital/files/rfi/CA-NP-217.pdf"
   },
   {
+    id: "np-2011-p3-refurbishment",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Portable Substation P3 Refurbishment",
+    topics: ["Portable Substation P3", "portable transformer", "protection", "metering", "SCADA", "project deferral"],
+    pages: "physical PDF pp. 174, 287 and 291",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
     id: "np-2014-sandy-lake-completion",
     year: 2013,
     organization: "Newfoundland Power",
@@ -2808,6 +2818,66 @@ export const sources = [
     pages: "physical PDF pp. 287 to 288 and 291 to 292",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2010-station-modernization",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Substation Refurbishment and Modernization",
+    topics: ["Boyd's Cove", "Clarkes Pond", "Glovertown", "Grand Falls", "Springfield", "Portable Substation P3", "substation modernization", "SCADA"],
+    pages: "physical PDF pp. 285 to 302",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2010-feeder-growth",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Northeast Avalon Feeder Load-Growth Work",
+    topics: ["Hardwoods", "Kenmount", "Broad Cove", "Oxen Pond", "Stamp's Lane", "HWD-02", "HWD-07", "BCV-03", "OXP-01", "SLA-11"],
+    pages: "physical PDF pp. 376 to 389",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2010-sjm-underground",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, St. John's Underground Distribution",
+    topics: ["St. John's Main", "SJM-03", "SJM-07", "SJM-08", "Water Street", "Harbour Drive", "underground distribution"],
+    pages: "physical PDF pp. 363 to 374",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2010-lookout-brook",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Lookout Brook Hydro Plant Refurbishment",
+    topics: ["Lookout Brook", "LBK-G3", "LBK-G4", "governor", "switchgear", "protection", "plant control", "AC distribution", "DC distribution"],
+    pages: "physical PDF pp. 183 to 193",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2010-fibre-circuits",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Fibre Optic Circuit Replacement",
+    topics: ["fibre optic", "leased circuits", "rented circuits", "telecommunications"],
+    pages: "physical PDF p. 99",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-2012-fibre-reconciliation",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "2012 Capital Budget Application, 2010 Fibre Circuit Reconciliation",
+    topics: ["fibre optic", "leased circuits", "completed work", "abandoned leases", "route constraint"],
+    pages: "physical PDF pp. 93 and 169",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf"
   },
   {
     id: "np-2010-distribution-reliability",
@@ -5115,7 +5185,7 @@ export const sources = [
     organization: "Newfoundland Power",
     title: "2024 Capital Budget Application, Lookout Brook Hydro Plant Refurbishment",
     topics: ["Lookout Brook", "G3", "stator", "rotor", "exciter", "main inlet valve", "powerhouse"],
-    pages: "physical PDF pp. 111 to 112 and 455",
+    pages: "physical PDF pp. 111 to 112, 439 to 451 and 455",
     status: "proposed",
     url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
   },
@@ -5976,6 +6046,33 @@ export const timeline = [
     sourceId: "oxen-2013",
     pages: "PDF p. 37",
     status: "reported"
+  },
+  {
+    date: "2010",
+    category: "telecom",
+    title: "Two leased fibre circuits replaced",
+    body: "Newfoundland Power later reported that two of five selected leased circuits were replaced. Two leases were abandoned without replacement, and one cable was not built because a satisfactory route between substations was not secured.",
+    sourceId: "np-2012-fibre-reconciliation",
+    pages: "physical PDF pp. 93 and 169",
+    status: "reported"
+  },
+  {
+    date: "2010",
+    category: "generation",
+    title: "Lookout Brook plant systems refurbished",
+    body: "The completed work included governor and plant-control upgrades, switchgear replacement, a control-room extension, and AC, DC, and battery-system upgrades.",
+    sourceId: "np-2024-lookout-brook-refurbishment",
+    pages: "physical PDF pp. 439 to 440",
+    status: "verified"
+  },
+  {
+    date: "2010 to 2011",
+    category: "station",
+    title: "Portable substation P3 refurbishment deferred",
+    body: "Engineering continued in 2010, but the unit had to remain available for service. Newfoundland Power moved the refurbishment to the winter of 2010 and 2011 with a filed budget of $440,000.",
+    sourceId: "np-2011-p3-refurbishment",
+    pages: "physical PDF pp. 174, 287 and 291",
+    status: "proposed"
   },
   {
     date: "2011-Q3",
@@ -10423,6 +10520,17 @@ const earlyFeederMapProfiles = [
         ]
       },
       {
+        label: "2010 FILED BCV-03 CONDUCTOR UPGRADE",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF pp. 379 and 381",
+        facts: [
+          ["Location", "1.8 km on Thorburn Road between St. Thomas Line and Dogberry Hill Road"],
+          ["Existing section", "#4 copper rated at 153 A for planning; filed phase peaks of 225 A, 243 A and 83 A"],
+          ["Filed work", "replace the section with 4/0 AASC rated at 356 A for planning"],
+          ["Filed cost", "$70,000"]
+        ]
+      },
+      {
         label: "2018 FILED BCV-03 RECONDUCTORING",
         sourceId: "np-2018-bcv03",
         pages: "physical PDF pp. 295 to 297",
@@ -10449,6 +10557,13 @@ const earlyFeederMapProfiles = [
     ],
     referenceSheetLabel: "FILED FEEDER PROJECTS",
     referenceSheets: [
+      {
+        title: "2010 filed BCV-03 Thorburn Road upgrade",
+        image: "./reference-maps/bcv-03-2010-upgrade.png",
+        alt: "Filed BCV-03 drawing showing the 1.8 kilometre Thorburn Road section selected for 4/0 AASC conductor",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF p. 386"
+      },
       {
         title: "2018 filed BCV-03 reconductoring",
         image: "./reference-maps/bcv-03-2018-upgrade.png",
@@ -12562,6 +12677,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2010 FILED STATION-SERVICE PROTECTION AND GROUNDING",
+        sourceId: "np-2010-station-modernization",
+        pages: "physical PDF pp. 288 to 289",
+        facts: [
+          ["2009 station record", "built in 1988 as a transmission station with 114L toward Summerford and Gander Bay and TL254 toward Farewell Head"],
+          ["Filed work", "install metal-oxide lightning arresters on the station-service transformer and extend the grounding system"],
+          ["Filed cost", "$67,000"]
+        ]
+      },
+      {
         label: "2026 TO 2027 PROPOSED 138 KV CONVERSION",
         sourceId: "np-2026-lewisporte-boyds-cove",
         pages: "physical PDF pp. 65 to 67",
@@ -13661,6 +13786,30 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2010 FILED ELECTRICAL REFURBISHMENT SCOPE",
+        sourceId: "np-2010-lookout-brook",
+        pages: "physical PDF pp. 183 to 193",
+        facts: [
+          ["2009 plant record", "LBK-G3 dated from 1958 and LBK-G4 from 1984; 6.2 MW plant capacity at 154.6 m net head and 30.1 GWh normal annual production"],
+          ["Generator grounding", "replace the solid neutral bonds with high-impedance grounding using neutral-grounding transformers and secondary resistors"],
+          ["Switchgear", "arc-flash-rated replacement with isolation of either generator breaker while the other unit remained online"],
+          ["Protection", "digital generator relays, bus differential protection and arc-flash protection"],
+          ["Plant control", "ControlLogix PLC, remote control and monitoring, gateway data concentrator, digital voltage regulation and water-management control"],
+          ["Station services", "emergency station-service transformer and transfer switch; larger AC and DC distribution; gel-cell battery bank"],
+          ["Transmission connection", "403L and 407L to Stephenville Gas Turbine Substation in the 2009 filing"]
+        ]
+      },
+      {
+        label: "2010 COMPLETED PLANT-SYSTEM REFURBISHMENT",
+        sourceId: "np-2024-lookout-brook-refurbishment",
+        pages: "physical PDF pp. 439 to 440",
+        facts: [
+          ["Completed work", "control-room extension, governor upgrades, plant-control upgrades and switchgear replacement"],
+          ["Auxiliary systems", "AC distribution, DC distribution and battery-bank upgrades"],
+          ["Later description", "the 2023 filing identifies the 2010 work as a completed large-scale refurbishment of the governors, protection, controls, switchgear, AC and DC systems"]
+        ]
+      },
       {
         label: "2024 TO 2025 PLANT REFURBISHMENT",
         sourceId: "np-2024-lookout-brook-refurbishment",
@@ -16277,6 +16426,18 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2010 FILED HWD-02 TRANSFER AND HWD-07 CONDUCTOR WORK",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF pp. 377 to 381",
+        facts: [
+          ["HWD-02", "convert a section carrying 1.8 MVA from 12.5 kV to 25 kV and transfer it to KEN-03"],
+          ["Transformer loading", "the 2008 peak on HWD-T1 and HWD-T2 reached 96% of their combined rating; the filing forecast 102% for 2009"],
+          ["HWD-07 transfer", "planned 4.2 MVA transfer to CHA-02, reducing HWD-07 by approximately 97 A per phase and reducing HWD-T3 load"],
+          ["HWD-07 conductor", "replace 2.0 km of 1/0 and 2/0 aluminum with 477 AASC rated at 590 A for planning"],
+          ["Filed costs", "$115,000 for HWD-02 and $170,000 for HWD-07"]
+        ]
+      },
+      {
         label: "2011 FILED 2013 LOAD FORECAST",
         sourceId: "np-2012-south-stjohns-load",
         pages: "physical PDF pp. 363 to 370",
@@ -16374,6 +16535,20 @@ export const stationProfiles = [
     referenceSheetLabel: "FILED FEEDER AND FIBRE ROUTES",
     referenceSheets: [
       {
+        title: "2010 filed HWD-02 voltage conversion and KEN-03 transfer",
+        image: "./reference-maps/hwd-02-2010-conversion.png",
+        alt: "Filed HWD-02 drawing showing the section selected for conversion from 12.5 kV to 25 kV and transfer to KEN-03",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF p. 385"
+      },
+      {
+        title: "2010 filed HWD-07 conductor upgrade",
+        image: "./reference-maps/hwd-07-2010-upgrade.png",
+        alt: "Filed HWD-07 drawing showing the two kilometre Paradise Road section selected for 477 AASC conductor",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF p. 387"
+      },
+      {
         title: "HWD-08 route and single-phase reclosers",
         image: "./reference-maps/hwd-08-2014-reclosers.png",
         alt: "Hardwoods HWD-08 route drawing showing the feeder from Hardwoods along Karwood Drive and Topsail Road and two single-phase recloser locations",
@@ -16414,6 +16589,17 @@ export const stationProfiles = [
       facts: [["OXP-01", "12.5 kV; OXP-T1; 12.7 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2010 FILED OXP-01 CONDUCTOR UPGRADE",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF pp. 380 to 381",
+        facts: [
+          ["Location", "1.0 km on Thorburn Road between Mount Scio Road and Grovesdale Subdivision"],
+          ["Existing section", "#4 copper rated at 153 A for planning; filed phase peaks of 152 A, 150 A and 159 A"],
+          ["Filed work", "replace the section with 4/0 AASC rated at 356 A for planning"],
+          ["Filed cost", "$50,000"]
+        ]
+      },
       {
         label: "2014 FILED 35L REBUILD, FORMER OXP-KEN SECTION",
         sourceId: "np-2014-transmission-lines",
@@ -16509,6 +16695,13 @@ export const stationProfiles = [
     referenceSheetLabel: "FILED FEEDER ROUTES",
     referenceSheets: [
       {
+        title: "2010 filed OXP-01 Thorburn Road conductor upgrade",
+        image: "./reference-maps/oxp-01-2010-upgrade.png",
+        alt: "Filed OXP-01 drawing showing the one kilometre Thorburn Road section selected for 4/0 AASC conductor",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF p. 388"
+      },
+      {
         title: "2014 filed former 35L rebuild route",
         image: "./reference-maps/35l-2014-route.png",
         alt: "Filed route drawing for the 2014 35L rebuild between Oxen Pond and Kenmount",
@@ -16549,6 +16742,16 @@ export const stationProfiles = [
       facts: [["KEN-05", "25 kV; KEN-T1/T2; 25.5 MVA feeder planning capacity"]]
     },
     historyRecords: [
+      {
+        label: "2010 FILED HWD-02 TRANSFER TO KEN-03",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF pp. 377 to 378 and 381",
+        facts: [
+          ["Transfer", "convert an HWD-02 section carrying 1.8 MVA from 12.5 kV to 25 kV and transfer it to KEN-03"],
+          ["Network effect", "create a 25 kV tie between the Hardwoods and Kenmount distribution systems"],
+          ["Filed cost", "$115,000"]
+        ]
+      },
       {
         label: "2013 PROPOSED ACCESS AND FLOOD MITIGATION",
         sourceId: "np-2013-substation-modernization",
@@ -16643,6 +16846,13 @@ export const stationProfiles = [
     ],
     referenceSheetLabel: "FILED FEEDER AND FIBRE ROUTES",
     referenceSheets: [
+      {
+        title: "2010 filed HWD-02 transfer to KEN-03",
+        image: "./reference-maps/hwd-02-2010-conversion.png",
+        alt: "Filed HWD-02 drawing showing the section selected for conversion to 25 kV and transfer to Kenmount feeder KEN-03",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF p. 385"
+      },
       { title: "2014 filed former 35L rebuild route", image: "./reference-maps/35l-2014-route.png", alt: "Filed route drawing for the 2014 35L rebuild between Kenmount and Oxen Pond", sourceId: "np-2014-transmission-lines", pages: "physical PDF p. 319" },
       { title: "KEN-01 route and sectionalizing recloser", image: "./reference-maps/ken-01.png", alt: "Kenmount KEN-01 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 36" },
       { title: "KEN-02 route and sectionalizing recloser", image: "./reference-maps/ken-02.png", alt: "Kenmount KEN-02 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 37" },
@@ -17427,6 +17637,19 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2010 FILED WATER STREET SJM-03 RELOCATION",
+        sourceId: "np-2010-sjm-underground",
+        pages: "physical PDF pp. 364 to 374",
+        facts: [
+          ["2009 arrangement", "12 distribution feeders left the station by underground cable; nine passed under the Waterford River duct bank"],
+          ["Downtown trunk", "SJM-03, SJM-07 and SJM-08 shared the Water Street underground trunk"],
+          ["N-1 result", "the filing found that loss of SJM-03 or SJM-08 under high load would prevent full service to the downtown core"],
+          ["Filed SJM-03 work", "relocate the Hutchings Street to Beck's Cove section into the south-side Water Street and Harbour Drive duct banks"],
+          ["Filed cable and switch", "three 1,100 m single-phase 500 MCM XLPE cables and one five-compartment 12.5 kV padmount switch linking SJM-03, SJM-07 and SJM-08"],
+          ["Filed cost", "$550,000"]
+        ]
+      },
+      {
         label: "2011 ST. JOHN'S MAIN FEEDER RECONFIGURATION",
         sourceId: "np-2011-feeder-growth",
         pages: "physical PDF pp. 413 to 429",
@@ -17547,6 +17770,20 @@ export const stationProfiles = [
     ],
     referenceSheets: [
       {
+        title: "2010 filed SJM-03 route",
+        image: "./reference-maps/sjm-03-2010-route.png",
+        alt: "Filed geographic route for the proposed SJM-03 relocation from Hutchings Street to Beck's Cove",
+        sourceId: "np-2010-sjm-underground",
+        pages: "physical PDF p. 370"
+      },
+      {
+        title: "2010 proposed Water Street feeder arrangement",
+        image: "./reference-maps/sjm-03-2010-proposed.png",
+        alt: "Filed proposed feeder schematic showing SJM-03 moved to Harbour Drive and linked with SJM-07 and SJM-08",
+        sourceId: "np-2010-sjm-underground",
+        pages: "physical PDF p. 374"
+      },
+      {
         title: "2011 proposed Water Street feeder reconfiguration",
         image: "./reference-maps/sjm-2011-reconfigured-feeders.png",
         alt: "Filed Water Street reconfigured feeder schematic showing the SJM-03, SJM-07, SJM-08, and SJM-14 routes and staged replacement sections",
@@ -17612,6 +17849,18 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2010 FILED SLA-11 CONDUCTOR UPGRADE",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF pp. 380 to 381",
+        facts: [
+          ["Location", "0.75 km on Ropewalk Lane"],
+          ["Existing section", "1/0 copper rated at 283 A for planning; filed phase peaks of 287 A, 321 A and 258 A"],
+          ["MOL-08 tie", "the existing tie provided backup to MOL-08, but the SLA-11 section limited the available transfer"],
+          ["Filed work", "replace the section with 477 AASC rated at 590 A for planning"],
+          ["Filed cost", "$60,000"]
+        ]
+      },
       {
         label: "2014 FILED 13L REBUILD",
         sourceId: "np-2014-transmission-lines",
@@ -17737,6 +17986,13 @@ export const stationProfiles = [
     ],
     referenceSheetLabel: "FILED TRANSMISSION AND FEEDER ROUTES",
     referenceSheets: [
+      {
+        title: "2010 filed SLA-11 Ropewalk Lane upgrade",
+        image: "./reference-maps/sla-11-2010-upgrade.png",
+        alt: "Filed SLA-11 drawing showing the 0.75 kilometre Ropewalk Lane section selected for 477 AASC conductor",
+        sourceId: "np-2010-feeder-growth",
+        pages: "physical PDF p. 389"
+      },
       {
         title: "2014 filed 13L rebuild route",
         image: "./reference-maps/13l-2014-route.png",
@@ -19812,6 +20068,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2010 FILED TRANSFORMER-RADIATOR AND 12 KV CABLE WORK",
+        sourceId: "np-2010-station-modernization",
+        pages: "physical PDF pp. 297 to 298",
+        facts: [
+          ["2009 station record", "one 20 MVA, 138/12 kV transformer; three 12 kV feeders; two 138 kV sections designated 39L toward Colliers and Bay Roberts"],
+          ["Filed transformer work", "replace leaking and deteriorated transformer radiators"],
+          ["Filed distribution work", "replace approximately 35-year-old compound-leaking 12 kV power cables with overhead conductor"],
+          ["Filed cost", "$138,000"]
+        ]
+      },
       {
         label: "2018 FEEDER REGISTER",
         sourceId: "np-2018-pub-np-081",
