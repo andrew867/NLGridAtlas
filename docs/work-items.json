@@ -838,6 +838,18 @@
       "notes": "The station records now include the filed 32L, 41L, 57L, and RBK-01 work, four original route drawings, and the eight named downline recloser locations. St. John's Main retains the filed Waterford River ductbank scope and the separately reported multi-year actual. Pooled program actuals are not used as asset-level commissioning evidence."
     },
     {
+      "id": "NPREG-012",
+      "title": "Reconcile Newfoundland Power 2016 station, line, generation, fibre, and capital records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Reconcile the 2016 capital application, King's Bridge voltage conversion, 30L rebuild, St. John's and Corner Brook fibre networks, Greenhill overhaul, and later reported project expenditures.",
+      "dependencies": ["NPREG-011"],
+      "completion_evidence": ["research/NP_2016_CAPITAL_AND_SYSTEM_WORK.md", "src/data.js", "public/reference-maps/30l-2016-route.png", "public/reference-maps/kbr-2016-reconfigured-feeders.png", "public/reference-maps/st-johns-west-2016-fibre.png", "public/reference-maps/corner-brook-2016-fibre.png", "tests/np-2016-capital.test.js"],
+      "blocker": null,
+      "notes": "King's Bridge now retains the filed 4.16 kV to 12.5 kV conversion, new feeder positions, and 30L reconstruction record. Hardwoods, Kenmount, Humber, Bayview, Massey Drive, and Walbournes include the filed fibre routes. Greenhill keeps the 2014 condition findings separate from reported expenditure. The two later records disagree on the 2016 fibre actual, and neither gives the exact installed St. John's endpoints."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

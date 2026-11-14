@@ -650,6 +650,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
   },
   {
+    id: "np-2016-kbr-system",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, King's Bridge station and distribution conversion",
+    topics: ["King's Bridge", "KBR-T1", "KBR-T2", "KBR-T3", "KBR-01", "KBR-07", "KBR-12", "KBR-13", "KBR-14", "4.16 kV", "12.5 kV", "voltage conversion"],
+    pages: "physical PDF pp. 263 to 264, 480, 485, 487 and 492",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
+    id: "np-2016-30l",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Transmission Line 30L rebuild",
+    topics: ["30L", "Ridge Road", "King's Bridge", "66 kV", "transmission line rebuild", "underbuilt distribution"],
+    pages: "physical PDF pp. 316 and 322",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
+    id: "np-2016-fibre-network",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Fibre Optic Cable Builds",
+    topics: ["Hardwoods", "Kenmount", "Duffy Place", "Massey Drive", "Maple Valley", "Bayview", "Humber", "Walbournes", "fibre optic", "SCADA", "protective relaying", "ICCP"],
+    pages: "physical PDF pp. 96 and 556 to 560",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
+    id: "np-2016-greenhill-overhaul",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "2016 Capital Budget Application, Greenhill Gas Turbine Overhaul",
+    topics: ["Greenhill", "OLYMPUS gas generator", "combustion turbine", "20 MW", "borescope inspection", "corrosion"],
+    pages: "physical PDF p. 32",
+    status: "proposed",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf"
+  },
+  {
+    id: "np-2021-ca-np-001-2016-actuals",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "CA-NP-001 Attachment A, 2016 capital project budget and actual expenditures",
+    topics: ["2016 capital expenditure", "Greenhill", "substations", "transmission", "distribution", "telecommunications", "actual expenditure"],
+    pages: "physical PDF pp. 6 to 8",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2021/NP2021Capital/rfis/CA-NP-001.PDF"
+  },
+  {
+    id: "np-2018-2016-fibre-closeout",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Expenditure Report, 2016 Fibre Optic Network project note",
+    topics: ["St. John's", "fibre optic", "route diversity", "actual expenditure"],
+    pages: "physical PDF p. 167",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
     id: "np-2016-hwd07",
     year: 2015,
     organization: "Newfoundland Power",
@@ -7960,6 +8020,25 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2014 CONDITION ASSESSMENT / 2016 FILED OVERHAUL",
+        sourceId: "np-2016-greenhill-overhaul",
+        pages: "physical PDF p. 32",
+        facts: [
+          ["Gas generator", "Rolls Royce OLYMPUS aero-derivative unit; last overhauled in 1995"],
+          ["Available output", "20 MW; derated from 25 MW because of long-term power-turbine casing cracks"],
+          ["March 2014 borescope", "coating loss and corrosion in the high-pressure compressor and stators; carbon buildup and corrosion in the combustion chambers"],
+          ["2016 filed work", "$1.5 million gas-generator overhaul"]
+        ]
+      },
+      {
+        label: "2016 REPORTED CAPITAL EXPENDITURE",
+        sourceId: "np-2021-ca-np-001-2016-actuals",
+        pages: "physical PDF p. 6",
+        facts: [
+          ["Greenhill gas-turbine overhaul", "$1.500 million budget; $1.091 million actual expenditure"]
+        ]
+      },
+      {
         label: "2006 TO 2025 OPERATING RECORD",
         sourceId: "np-2027-greenhill-refurbishment",
         pages: "physical PDF p. 46",
@@ -8134,6 +8213,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2016 FILED CORNER BROOK FIBRE RING",
+        sourceId: "np-2016-fibre-network",
+        pages: "physical PDF pp. 558 to 560",
+        facts: [
+          ["Filed topology", "Massey Drive to Maple Valley to Bayview in 2016; Bayview to Humber in 2017; Humber to Walbournes to Massey Drive in 2019"],
+          ["Protection", "redundant optical paths planned for the Corner Brook 66 kV transmission relays"],
+          ["Former communications", "analog telephone and leased four-wire SCADA circuits with 1980s modems"]
+        ]
+      },
       {
         label: "2019 FILED HUMBER TO BAYVIEW FIBRE LINK",
         sourceId: "np-2019-corner-brook-fibre",
@@ -10149,6 +10238,16 @@ const earlyFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "2016 FILED CORNER BROOK FIBRE RING",
+        sourceId: "np-2016-fibre-network",
+        pages: "physical PDF pp. 558 to 560",
+        facts: [
+          ["2016 filed link", "Massey Drive to Maple Valley to Bayview"],
+          ["Later planned links", "Bayview to Humber in 2017; Humber to Walbournes to Massey Drive in 2019"],
+          ["Protection", "redundant optical paths planned for the Corner Brook 66 kV transmission relays"]
+        ]
+      },
+      {
         label: "2019 FILED HUMBER TO BAYVIEW FIBRE LINK",
         sourceId: "np-2019-corner-brook-fibre",
         pages: "physical PDF p. 92",
@@ -10849,6 +10948,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2016 FILED CORNER BROOK FIBRE RING",
+        sourceId: "np-2016-fibre-network",
+        pages: "physical PDF pp. 558 to 560",
+        facts: [
+          ["2016 filed link", "Massey Drive to Maple Valley to Bayview"],
+          ["Ring plan", "Bayview to Humber in 2017; Humber to Walbournes to Massey Drive in 2019"],
+          ["Functions", "SCADA and corporate data, plus redundant optical paths for transmission-line protection"]
+        ]
+      },
+      {
         label: "1998 TRANSFORMER REPLACEMENT",
         sourceId: "nlh-system-additions-2001",
         pages: "physical PDF p. 224",
@@ -10914,6 +11023,13 @@ export const stationProfiles = [
         alt: "2005 Massey Drive 66 kV breaker failure protection project filing",
         sourceId: "nlh-massey-breaker-failure-2005",
         pages: "physical PDF p. 57"
+      },
+      {
+        title: "2016 planned Corner Brook fibre ring",
+        image: "./reference-maps/corner-brook-2016-fibre.png",
+        alt: "Filed map showing the staged fibre ring among Massey Drive, Bayview, Humber and Walbournes through the Maple Valley office",
+        sourceId: "np-2016-fibre-network",
+        pages: "physical PDF p. 560"
       }
     ]
   },
@@ -13247,6 +13363,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2016 FILED CORNER BROOK FIBRE RING",
+        sourceId: "np-2016-fibre-network",
+        pages: "physical PDF pp. 558 to 560",
+        facts: [
+          ["Filed topology", "Massey Drive to Maple Valley to Bayview in 2016; Bayview to Humber in 2017; Humber to Walbournes to Massey Drive in 2019"],
+          ["Protection", "redundant optical paths planned for the Corner Brook 66 kV transmission relays"]
+        ]
+      },
+      {
         label: "2023 FILED MODERNIZATION SCOPE",
         sourceId: "np-2023-walbournes",
         pages: "physical PDF pp. 393 to 400",
@@ -15305,6 +15430,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2016 FILED ST. JOHN'S WEST FIBRE ROUTE",
+        sourceId: "np-2016-fibre-network",
+        pages: "physical PDF pp. 96 and 557 to 558",
+        facts: [
+          ["Filed links", "Hardwoods to Kenmount, then Kenmount to the Duffy Place operations centre"],
+          ["Purpose", "add physical route diversity and capacity between the System Control Centre and the corporate network"],
+          ["Network context", "the filing records 15 St. John's substations and four office buildings on logically ringed fibre networks"]
+        ]
+      },
+      {
         label: "2017 FILED DOWNLINE RECLOSER",
         sourceId: "np-2017-automation",
         pages: "physical PDF p. 76",
@@ -15378,7 +15513,7 @@ export const stationProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "FEEDER ROUTE AND RECLOSER MAP",
+    referenceSheetLabel: "FILED FEEDER AND FIBRE ROUTES",
     referenceSheets: [
       {
         title: "HWD-08 route and single-phase reclosers",
@@ -15386,6 +15521,13 @@ export const stationProfiles = [
         alt: "Hardwoods HWD-08 route drawing showing the feeder from Hardwoods along Karwood Drive and Topsail Road and two single-phase recloser locations",
         sourceId: "np-2014-improvements",
         pages: "physical PDF p. 44"
+      },
+      {
+        title: "2016 proposed St. John's west fibre routes",
+        image: "./reference-maps/st-johns-west-2016-fibre.png",
+        alt: "Filed fibre map showing the planned Hardwoods to Kenmount and Kenmount to Duffy Place links and the existing west St. John's fibre network",
+        sourceId: "np-2016-fibre-network",
+        pages: "physical PDF p. 558"
       }
     ]
   },
@@ -15531,6 +15673,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "2016 FILED ST. JOHN'S WEST FIBRE ROUTE",
+        sourceId: "np-2016-fibre-network",
+        pages: "physical PDF pp. 96 and 557 to 558",
+        facts: [
+          ["Filed links", "Hardwoods to Kenmount, then Kenmount to the Duffy Place operations centre"],
+          ["Purpose", "add physical route diversity and capacity between the System Control Centre and the corporate network"],
+          ["Existing constraint", "the filing reports no spare capacity on the Kenmount Road building to System Control Centre cables and shared-pole exposure along Blackmarsh Road"]
+        ]
+      },
+      {
         label: "MARCH 2014 EQUIPMENT REGISTER",
         sourceId: "np-2016-pub-np-064-g",
         pages: "physical PDF pp. 241 to 244",
@@ -15566,12 +15718,13 @@ export const stationProfiles = [
         ]
       }
     ],
-    referenceSheetLabel: "2014 FEEDER ROUTES AND PROPOSED RECLOSERS",
+    referenceSheetLabel: "FILED FEEDER AND FIBRE ROUTES",
     referenceSheets: [
       { title: "KEN-01 route and sectionalizing recloser", image: "./reference-maps/ken-01.png", alt: "Kenmount KEN-01 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 36" },
       { title: "KEN-02 route and sectionalizing recloser", image: "./reference-maps/ken-02.png", alt: "Kenmount KEN-02 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 37" },
       { title: "KEN-03 route and sectionalizing recloser", image: "./reference-maps/ken-03.png", alt: "Kenmount KEN-03 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 38" },
-      { title: "KEN-04 route and sectionalizing recloser", image: "./reference-maps/ken-04.png", alt: "Kenmount KEN-04 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 39" }
+      { title: "KEN-04 route and sectionalizing recloser", image: "./reference-maps/ken-04.png", alt: "Kenmount KEN-04 feeder route and three-phase sectionalizing recloser location", sourceId: "np-2014-improvements", pages: "physical PDF p. 39" },
+      { title: "2016 proposed St. John's west fibre routes", image: "./reference-maps/st-johns-west-2016-fibre.png", alt: "Filed fibre map showing the planned Hardwoods to Kenmount and Kenmount to Duffy Place links and the existing west St. John's fibre network", sourceId: "np-2016-fibre-network", pages: "physical PDF p. 558" }
     ]
   },
   {
@@ -15792,7 +15945,7 @@ export const stationProfiles = [
       { feeder: "KBR-13", customers: 1009, ties: ["KBR-10", "KBR-11", "SLA-09"] },
       { feeder: "KBR-15", customers: 1059, ties: ["KBR-11"] }
     ],
-    referenceSheetLabel: "2019 SERVICE AREA MAP",
+    referenceSheetLabel: "FILED TRANSMISSION AND DISTRIBUTION MAPS",
     referenceSheets: [
       {
         title: "King's Bridge feeder service area and tie table",
@@ -15800,6 +15953,20 @@ export const stationProfiles = [
         alt: "King's Bridge feeder service area map and customer-count tie table filed in the 2019 Pepperell supplemental application",
         sourceId: "np-2019-pepperrell",
         pages: "physical PDF p. 35"
+      },
+      {
+        title: "30L filed 2015 and 2016 rebuild sections",
+        image: "./reference-maps/30l-2016-route.png",
+        alt: "Filed 30L route between Ridge Road and King's Bridge showing the sections selected for rebuild in 2015 and 2016",
+        sourceId: "np-2016-30l",
+        pages: "physical PDF p. 322"
+      },
+      {
+        title: "2016 proposed King's Bridge feeder configuration",
+        image: "./reference-maps/kbr-2016-reconfigured-feeders.png",
+        alt: "Filed reconfigured feeder schematic showing the proposed KBR-09 through KBR-14 service areas and ties to adjacent substations",
+        sourceId: "np-2016-kbr-system",
+        pages: "physical PDF p. 492"
       }
     ],
     engineeringRecord: {
@@ -15861,6 +16028,29 @@ export const stationProfiles = [
         pages: "physical PDF p. 4",
         facts: [
           ["Completed work", "replaced the switchgear building; constructed a control building; replaced cables; upgraded protection; refurbished feeder automation"]
+        ]
+      },
+      {
+        label: "2016 FILED VOLTAGE CONVERSION AND STATION WORK",
+        sourceId: "np-2016-kbr-system",
+        pages: "physical PDF pp. 263 to 264, 480, 485 and 487",
+        facts: [
+          ["Historical arrangement", "KBR-T1 and KBR-T2 each supplied eight 4.16 kV feeders through 10 MVA banks; KBR-T3 supplied four 12.5 kV feeders through a 25 MVA bank"],
+          ["Filed transformer addition", "install a second 25 MVA, 66/12.5 kV bank while completing station switch, protection and automation work"],
+          ["2016 feeder work", "convert KBR-01 to 12.5 kV; eliminate KBR-01 and KBR-07; transfer their load with KBR-12 to a new KBR-12 trunk"],
+          ["New feeder positions", "install KBR-13 for three converted feeders and KBR-14 for the remaining 4.16 kV group"],
+          ["2017 filed follow-on", "convert KBR-03 and KBR-06 to 12.5 kV and eliminate the remaining 4.16 kV system"]
+        ]
+      },
+      {
+        label: "2015 TO 2016 FILED 30L REBUILD",
+        sourceId: "np-2016-30l",
+        pages: "physical PDF p. 316",
+        facts: [
+          ["Line", "2.9 km, 66 kV, 87 single-pole structures between Ridge Road and King's Bridge; built in 1959"],
+          ["Underbuild", "distribution circuitry on every transmission structure"],
+          ["Filed schedule", "1.5 km in 2015 and the remaining 1.4 km in 2016"],
+          ["2016 filed cost", "$507,000"]
         ]
       },
       {
@@ -15975,6 +16165,17 @@ export const stationProfiles = [
         ]
       },
       {
+        label: "2015 TO 2016 FILED 30L REBUILD",
+        sourceId: "np-2016-30l",
+        pages: "physical PDF p. 316",
+        facts: [
+          ["Line", "2.9 km, 66 kV, 87 single-pole structures between Ridge Road and King's Bridge; built in 1959"],
+          ["Underbuild", "distribution circuitry on every transmission structure"],
+          ["Filed schedule", "1.5 km in 2015 and the remaining 1.4 km in 2016"],
+          ["2016 filed cost", "$507,000"]
+        ]
+      },
+      {
         label: "2021 PROPOSED RRD-10 UPGRADE",
         sourceId: "np-2021-feeder-growth",
         pages: "physical PDF pp. 181 to 182 and 190",
@@ -16008,6 +16209,13 @@ export const stationProfiles = [
         alt: "Filed 32L route between Oxen Pond and Ridge Road showing the section selected for rebuild in 2017",
         sourceId: "np-2017-transmission-rebuild",
         pages: "physical PDF p. 284"
+      },
+      {
+        title: "30L filed 2015 and 2016 rebuild sections",
+        image: "./reference-maps/30l-2016-route.png",
+        alt: "Filed 30L route between Ridge Road and King's Bridge showing the sections selected for rebuild in 2015 and 2016",
+        sourceId: "np-2016-30l",
+        pages: "physical PDF p. 322"
       }
     ]
   },

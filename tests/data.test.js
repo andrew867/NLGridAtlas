@@ -2254,7 +2254,7 @@ test("Massey Drive separates the customer bank from the Newfoundland Power 66 kV
   assert.deepEqual(massey.feederRegister, []);
   assert.deepEqual(massey.diagram.buses.map(({ voltage }) => voltage), ["230 kV", "66 kV"]);
   assert.deepEqual(massey.diagram.transformers.map(({ label, rating }) => [label, rating]), [["T1", "75/100/125 MVA"], ["T2", "40/53.3/66.7 MVA"], ["T3", "75/100/125 MVA"]]);
-  assert.deepEqual(massey.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 40", "physical PDF p. 238", "physical PDF p. 57"]);
+  assert.deepEqual(massey.referenceSheets.map(({ pages }) => pages), ["physical PDF p. 40", "physical PDF p. 238", "physical PDF p. 57", "physical PDF p. 560"]);
   const siteFacts = massey.engineeringRecord.facts.flat().join(" ");
   const loadingFacts = massey.planningRecord.facts.flat().join(" ");
   const historyFacts = massey.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
@@ -3075,7 +3075,8 @@ test("station reference schematics remain expandable and locally preserved", asy
     "physical PDF p. 36",
     "physical PDF p. 37",
     "physical PDF p. 38",
-    "physical PDF p. 39"
+    "physical PDF p. 39",
+    "physical PDF p. 558"
   ]);
   assert.deepEqual(goulds.referenceSheets.map((sheet) => sheet.pages), ["physical PDF p. 42", "physical PDF p. 43"]);
   assert.equal(virginiaWaters.referenceSheets[1].image, "./reference-maps/vir-06.png");

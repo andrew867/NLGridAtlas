@@ -15,6 +15,10 @@ Updated: 2026-11-13
 
 ## Verified in the current work session
 
+- Added the 2016 King's Bridge 4.16 kV to 12.5 kV conversion, new KBR-13 and KBR-14 positions, and the filed reconfigured-feeder drawing.
+- Added the 2015 to 2016 30L Ridge Road to King's Bridge rebuild with exact length, structure count, underbuild, schedule, cost, and route drawing.
+- Added the filed St. John's west and Corner Brook fibre routes to the affected stations. The record preserves the $252,000 and $229,000 conflicting actual-expenditure figures and does not assign unreported installed endpoints.
+- Added the Greenhill 2014 borescope findings, 2016 filed overhaul, and later reported expenditure as separate evidence states.
 - Added the filed 2017 32L, 41L, 57L, and RBK-01 work with the four original route drawings. The records preserve the dated construction details, conductor data, structure counts, filed costs, and the conflicting 32L construction years in the source.
 - Added the eight named 2017 downline recloser locations and kept them separate from the 17-feeder station-automation program. Added the St. John's Main Waterford River ductbank scope and its separately reported multi-year actual without treating pooled project spending as asset commissioning evidence.
 - Added the filed 2019 BLK-02, DUN-01, SJM-06, SCV-01, and SLA-05 work with original route drawings. The station records keep BLK-02, DUN-01, SJM-06, and SCV-01 proposed because no asset-level completion record was located.
