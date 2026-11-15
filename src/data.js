@@ -630,6 +630,16 @@ export const sources = [
     url: "https://dai.mun.ca/PDFs/cns_enl/ENLV1E.pdf"
   },
   {
+    id: "mun-nq-1886-street-light-contract",
+    year: 1990,
+    organization: "The Newfoundland Quarterly",
+    title: "St. John's Government Electric Street-Light Contract",
+    topics: ["1886", "St. John's", "St. John's Electric Light Company", "street lighting", "government contract", "gas lighting"],
+    pages: "physical PDF p. 26, printed p. 24",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
+  },
+  {
     id: "mun-1889-evening-mercury-incandescent-plant",
     year: 1889,
     organization: "The Evening Mercury",
@@ -11875,6 +11885,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1886",
+    category: "street lighting",
+    title: "Government contracted for 25 electric street lamps",
+    body: "The St. John's Electric Light Company secured a government contract for 25 electric street lamps at $200 annually for each lamp. The electric lamps replaced 35 gas lamps. The arrangement continued until municipal government began in 1888.",
+    sourceId: "mun-nq-1886-street-light-contract",
+    pages: "physical PDF p. 26, printed p. 24",
+    status: "reported"
+  },
   {
     date: "1888",
     category: "system expansion",

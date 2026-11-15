@@ -2398,6 +2398,18 @@
       "notes": "The official Year Book states that the Newfoundland Graving Dock furnished electric lights for night work at $3 per hour per light. The tariff does not identify equipment, supply or new 1887 work, so no timeline event is created."
     },
     {
+      "id": "NPREG-142",
+      "title": "Add the 1886 St. John's government street-light contract",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1886 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-141"],
+      "completion_evidence": ["research/NP_1886_SYSTEM_RECORD.md", "src/data.js", "tests/np-1886-system.test.js"],
+      "blocker": null,
+      "notes": "A historical study reports a government contract for 25 electric street lamps at $200 per lamp annually, replacing 35 gas lamps. Contemporary October and November reports record planned additional lights and an inspection after poor light over several nights."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
