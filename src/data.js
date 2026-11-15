@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1931-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1931 Pierre's Brook Property Records",
+    topics: ["1931", "Pierre's Brook", "Henry Lash", "Thomas Cotton", "Michael Vickers", "property", "land acquisition"],
+    pages: "physical PDF p. 134",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1941-tors-cove-bridges",
     year: 2017,
     organization: "Newfoundland Power",
@@ -11415,6 +11425,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1931",
+    category: "generation",
+    title: "Pierre's Brook hydro plant entered service",
+    body: "Newfoundland Power places the single-unit plant in service in 1931. Its 2014 application gives a 3.4 MW nameplate rating and identifies the steel penstock as original construction.",
+    sourceId: "np-2015-pierre-brook",
+    pages: "physical PDF pp. 185 to 186",
+    status: "reported"
+  },
   {
     date: "1932",
     category: "generation",
@@ -31763,14 +31782,15 @@ export const stationProfiles = [
       generators: [{ label: "G1", rating: "4.0 MVA / 80% PF", bus: "b2" }]
     },
     engineeringRecord: {
-      date: "2015 PLANT RECORD",
+      date: "2015 ELECTRICAL REPORT",
       title: "Pierre's Brook hydro generation station",
       sourceId: "np-2016-pierre-brook",
-      pages: "physical PDF pp. 235 to 236",
+      pages: "physical PDF p. 235",
       facts: [
-        ["Plant", "commissioned in 1931; one 4,000 kVA generator rated at 80% power factor"],
+        ["Plant", "commissioned in 1931; one General Electric generating unit"],
+        ["Generator rating", "4,000 kVA at 80% power factor; 3,200 kW load rating"],
         ["Turbine", "5,029 hp vertical Francis turbine manufactured by J.M. Voith"],
-        ["Output", "3,200 kW nameplate; the filing reports 4,100 kW actual peak output after the 1995 runner and 1996 stator-winding replacements"],
+        ["Peak output", "4,100 kW actual peak output after the 1995 runner and 1996 stator-winding replacements"],
         ["Normal production", "24.4 GWh"]
       ]
     },
@@ -31838,12 +31858,25 @@ export const stationProfiles = [
         facts: [["Filed work", "instrumentation work at Pierre's Brook was included in a four-project small hydro rehabilitation program"]]
       },
       {
-        label: "1931 PLANT ORIGIN",
+        label: "1931 PLANT AND ORIGINAL CIVIL WORKS",
         sourceId: "np-2015-pierre-brook",
-        pages: "physical PDF p. 185",
+        pages: "physical PDF pp. 185 to 186 and 231 to 232",
         facts: [
-          ["Original service", "constructed to supply the Bell Island iron-ore mines"],
-          ["Rated head", "80 m"]
+          ["Original service", "single-unit plant entered service in 1931 to supply the Bell Island iron-ore mines"],
+          ["Application rating", "3.4 MW nameplate at 80 m rated net head"],
+          ["Embedded inspection report", "describes the development as a 4.3 MW plant operating under about 278 ft head"],
+          ["Original civil works", "63 m riveted-steel penstock; field evidence indicates the steel section, foundations, cradles and anchor block are original 1931 construction"],
+          ["Drawing discrepancy", "1959 drawings show replacement work that the 2014 inspection found was not constructed"]
+        ]
+      },
+      {
+        label: "1931 PROPERTY RECORD",
+        sourceId: "np-1931-property-record",
+        pages: "physical PDF p. 134",
+        facts: [
+          ["August 3 deed", "Pierre's Brook parcel acquired from Henry Lash"],
+          ["August 28 deed", "Pierre's Brook parcel acquired from Thomas Cotton"],
+          ["October 7 deed", "Pierre's Brook parcel acquired from Michael Vickers"]
         ]
       },
       {

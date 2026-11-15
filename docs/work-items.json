@@ -1858,6 +1858,18 @@
       "notes": "Newfoundland Power dates the original Topsail Plant, its 1.2 MW unit and intake works to 1932. The 1983 rebuild replaced the original unit and major plant systems. Later filed records give 2,300 kW at about 111.2 m net head and 2.6 MW at 85.5 m rated net head for the replacement plant; the atlas retains both dated values. Anonymous 1932 depreciation vintages remain unassigned."
     },
     {
+      "id": "NPREG-097",
+      "title": "Add the 1931 Pierre's Brook development record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1931 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-096"],
+      "completion_evidence": ["research/NP_1931_SYSTEM_RECORD.md", "src/data.js", "tests/np-1931-system.test.js"],
+      "blocker": null,
+      "notes": "Newfoundland Power places Pierre's Brook Plant in service in 1931 and identifies the riveted-steel penstock and supporting works as original construction. The atlas retains the 2014 application rating, embedded inspection-report rating, 2015 generator load rating and reported peak output under their filed labels. Three 1931 Pierre's Brook property acquisitions are also recorded. Anonymous depreciation vintages remain unassigned."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
