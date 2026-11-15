@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1910-petty-harbour-valve",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Petty Harbour Unit 1 Main Inlet Valve",
+    topics: ["1910", "Petty Harbour", "PHR-G1", "Unit 1", "Voith", "main inlet valve", "butterfly valve"],
+    pages: "physical PDF p. 208",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
     id: "nlh-1911-goodyears-dam",
     year: 2018,
     organization: "Newfoundland and Labrador Hydro",
@@ -11695,6 +11705,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1910",
+    category: "generation",
+    title: "Petty Harbour Unit 1 records point to 1910",
+    body: "The selected-unit table dates 1.6 MW PHR-G1 to 1910. Separate plant records identify its original governor and Voith inlet valve with 1910 dates. A detailed development record instead lists the plant's three turbine-generator commissioning years as 1900, 1908 and 1926 without mapping them to present unit identifiers.",
+    sourceId: "np-2013-generation-unit-data",
+    pages: "physical PDF p. 2; governor p. 178; valve p. 208; development record p. 208",
+    status: "unresolved"
+  },
   {
     date: "1911",
     category: "generation",
@@ -31741,6 +31760,30 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1910 REPORTED PHR-G1 INSTALLATION",
+        sourceId: "np-2013-generation-unit-data",
+        pages: "physical PDF p. 2",
+        facts: [["Selected-unit table", "PHR-G1; 1.6 MW; installation date 1910"]]
+      },
+      {
+        label: "1910 UNIT 1 GOVERNOR",
+        sourceId: "np-2006-petty-harbour",
+        pages: "physical PDF p. 178",
+        facts: [["Governor", "the 2006 filing says Unit 1 retained its original governor installed in 1910"]]
+      },
+      {
+        label: "1910 UNIT 1 MAIN INLET VALVE",
+        sourceId: "np-1910-petty-harbour-valve",
+        pages: "physical PDF p. 208",
+        facts: [["Valve", "48-inch water-actuated butterfly valve manufactured by Voith in 1910"]]
+      },
+      {
+        label: "PETTY HARBOUR COMMISSIONING-DATE CONFLICT",
+        sourceId: "np-1926-petty-harbour-development",
+        pages: "physical PDF p. 208",
+        facts: [["Detailed plant record", "three turbine-generator sets commissioned in 1900, 1908 and 1926; the record does not map those dates to present unit identifiers"]]
+      },
       {
         label: "1917 COCHRANE POND WATERSHED DIVERSION",
         sourceId: "np-1917-cochrane-diversion",
