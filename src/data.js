@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-express-1870-coastal-fishery-cable-proposal",
+    year: 1870,
+    organization: "The Express",
+    title: "Newfoundland and Labrador Coastal Fishery Cable Proposal",
+    topics: ["1870", "submarine cable", "telegraph", "Newfoundland coast", "Labrador coast", "fishery reporting", "Norway"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/nfldexpress/18700827Express.pdf"
+  },
+  {
     id: "lovell-1871-newfoundland-telegraph-directory",
     year: 1871,
     organization: "Lovell's Province of Newfoundland Directory",
@@ -12185,6 +12195,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1870-08-27",
+    category: "telecommunications proposal",
+    title: "A coastal fishery telegraph cable was proposed",
+    body: "The Express discussed a proposal for a submarine cable along the coasts of Newfoundland and Labrador to report fishery conditions to coastal stations. The article used Norway's fishery cable as the example and suggested that a Labrador trial could lead to service around the Gulf of St. Lawrence. It did not report an approved project or construction.",
+    sourceId: "mun-express-1870-coastal-fishery-cable-proposal",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
   {
     date: "1871",
     category: "telecommunications operations",

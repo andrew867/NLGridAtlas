@@ -2590,6 +2590,18 @@
       "notes": "Lovell's 1871 directory explicitly lists company offices at Black River, Brigus, Carbonear, Chapel Arm, Harbor Grace and St. John's. Heart's Content remains separately described as a company-line and staff centre rather than added to the generic office list."
     },
     {
+      "id": "NPREG-158",
+      "title": "Add the 1870 coastal fishery cable proposal",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1870 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-157"],
+      "completion_evidence": ["research/NP_1870_SYSTEM_RECORD.md", "src/data.js", "tests/np-1870-system.test.js"],
+      "blocker": null,
+      "notes": "The August 27 Express discusses a proposed Newfoundland and Labrador coastal fishery cable, using Norway's system as its example. The source contains advocacy, not approval, route engineering, appropriation, construction or completion evidence."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
