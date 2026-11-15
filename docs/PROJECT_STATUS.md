@@ -358,7 +358,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1885 Flavin Lane generating and first-light record under `NPREG-143`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1884 St. John's private telephone-line record under `NPREG-144`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

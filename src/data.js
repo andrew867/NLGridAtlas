@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-enl-1884-private-telephone",
+    year: 1994,
+    organization: "Encyclopedia of Newfoundland and Labrador",
+    title: "Telegraph and Telephone Companies, 1884 Private Telephone Line",
+    topics: ["1884", "St. John's", "Duckworth Street", "St. John's Lane", "Devon Row", "telephone", "private line"],
+    pages: "physical PDF p. 15, printed p. 349",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_enl/ENLV5T.pdf"
+  },
+  {
+    id: "mun-when-was-that-1884-telephone",
+    year: 1927,
+    organization: "Newfoundland Historical Society",
+    title: "When Was That? 1884 Telephone Installation",
+    topics: ["1884", "St. John's", "Devon Row", "Archibald's Furniture Factory", "T. and M. Winter", "telephone", "private line", "source conflict"],
+    pages: "physical PDF p. 136, printed p. 128",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_tools/WhenWasThat.pdf"
+  },
+  {
     id: "mun-enl-1885-electricity",
     year: 1981,
     organization: "Encyclopedia of Newfoundland and Labrador",
@@ -11915,6 +11935,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1884",
+    category: "telecommunications",
+    title: "A private telephone line connected a St. John's store and residence",
+    body: "A later historical reference records a line between a St. John's store and its manager's Devon Row residence. It was a private point-to-point installation, not a public exchange. Two later references disagree on the store description, so the timeline does not assign a business name.",
+    sourceId: "mun-enl-1884-private-telephone",
+    pages: "physical PDF p. 15, printed p. 349",
+    status: "reported"
+  },
   {
     date: "1885",
     category: "generation",
