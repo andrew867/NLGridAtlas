@@ -620,6 +620,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1926-petty-harbour-development",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Petty Harbour Development Record",
+    topics: ["1926", "Petty Harbour", "hydroelectric generation", "generating unit", "powerhouse"],
+    pages: "physical PDF p. 208",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1926-petty-harbour-building",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA 12, Petty Harbour Building History",
+    topics: ["1926", "Petty Harbour", "powerhouse", "building extension", "hydroelectric generation"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2012.pdf"
+  },
+  {
+    id: "np-1926-seal-cove-g2",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "2009 Capital Budget Application, Seal Cove Unit History",
+    topics: ["1924", "1926", "Seal Cove", "G1", "G2", "turbine", "generator", "date conflict"],
+    pages: "physical PDF p. 157",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1926-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1926 Bay Bulls Big Pond Property Record",
+    topics: ["1926", "Bay Bulls Big Pond", "Mary Frizzelle", "property", "land acquisition"],
+    pages: "physical PDF p. 134",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1929-property-record",
     year: 2015,
     organization: "Newfoundland Power",
@@ -1084,7 +1124,7 @@ export const sources = [
     year: 2012,
     organization: "Newfoundland Power",
     title: "CA-NP-021, Selected Generating Unit Data",
-    topics: ["1952", "Cape Broyle", "Horse Chops", "CAB-G", "HCP-G1", "hydroelectric generation", "installation date", "date conflict"],
+    topics: ["1924", "1926", "1952", "Petty Harbour", "Seal Cove", "Cape Broyle", "Horse Chops", "CAB-G", "HCP-G1", "hydroelectric generation", "installation date", "date conflict"],
     pages: "physical PDF pp. 1 to 2",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-021.pdf"
@@ -11466,6 +11506,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1926",
+    category: "generation",
+    title: "Petty Harbour added a generating unit",
+    body: "Newfoundland Power dates one of the plant's three original turbine-generator sets to 1926. Later unit replacements mean the 1926 machine cannot be assigned to the present unit register without qualification.",
+    sourceId: "np-1926-petty-harbour-development",
+    pages: "physical PDF p. 208",
+    status: "reported"
+  },
+  {
     date: "1929",
     category: "generation",
     title: "Lawn hydro development entered service",
@@ -20637,6 +20686,24 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1926 REPORTED G2 VINTAGE",
+        sourceId: "np-1926-seal-cove-g2",
+        pages: "physical PDF p. 157",
+        facts: [
+          ["2009 capital filing", "G1 listed as 1924 vintage at 1.1 MW and G2 as 1926 vintage at 2.4 MW"],
+          ["Record state", "the 1926 G2 date conflicts with the later generating-unit table"]
+        ]
+      },
+      {
+        label: "2013 CONFLICTING UNIT TABLE",
+        sourceId: "np-2013-generation-unit-data",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Generating-unit table", "SCV-G1 and SCV-G2 both listed with 1924 installation dates"],
+          ["Record state", "the filings do not reconcile the G2 installation year"]
+        ]
+      },
+      {
         label: "1946 FENELONS POND DAM",
         sourceId: "np-1946-fenelons-pond",
         pages: "physical PDF p. 7",
@@ -21700,6 +21767,12 @@ const earlyFeederMapProfiles = [
       facts: [["BIG-T1", "66/12.5 kV; 11.11 MVA; 8.30 MVA 2026 forecast"]]
     },
     historyRecords: [
+      {
+        label: "1926 PROPERTY RECORD",
+        sourceId: "np-1926-property-record",
+        pages: "physical PDF p. 134",
+        facts: [["Deed", "Bay Bulls Big Pond parcel acquired from Mary Frizzelle, administratrix, on November 10, 1926; Volume 97, Folios 555 to 556"]]
+      },
       {
         label: "1929 PROPERTY RECORD",
         sourceId: "np-1929-property-record",
@@ -31338,6 +31411,21 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1926 GENERATING-UNIT ADDITION",
+        sourceId: "np-1926-petty-harbour-development",
+        pages: "physical PDF p. 208",
+        facts: [
+          ["Plant record", "one of the three original horizontal Francis turbine-generator sets was commissioned in 1926"],
+          ["Present-unit boundary", "later replacement records do not support assigning the 1926 machine to a present unit identifier"]
+        ]
+      },
+      {
+        label: "1926 POWERHOUSE EXTENSION",
+        sourceId: "np-1926-petty-harbour-building",
+        pages: "physical PDF p. 1",
+        facts: [["Building work", "the 1900 powerhouse was upgraded and extended in 1926"]]
+      },
       {
         label: "1954 UPPER PENSTOCK SECTION",
         sourceId: "np-1954-petty-harbour-penstock",

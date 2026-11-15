@@ -1918,6 +1918,18 @@
       "notes": "A Statistics Canada table gives Seal Cove unit years as 1922 to 1927, but Newfoundland Power records date the development and both units to 1924. A broad Petty Harbour 1907 to 1927 range is superseded by detailed unit years of 1900, 1908 and 1926. Neither range establishes a 1927 commissioning event, so no public card or timeline event was created."
     },
     {
+      "id": "NPREG-102",
+      "title": "Add the 1926 generation and property records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1926 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-101"],
+      "completion_evidence": ["research/NP_1926_SYSTEM_RECORD.md", "src/data.js", "tests/np-1926-system.test.js"],
+      "blocker": null,
+      "notes": "The 1926 queue adds a Petty Harbour generating-unit and powerhouse-extension record plus a Bay Bulls Big Pond property deed. Seal Cove G2 remains unresolved because a 2009 filing calls it a 1926, 2.4 MW unit while the 2013 generating-unit table lists 1924 and 2.6 MW. The historical Petty Harbour machine is not assigned to a current unit identifier."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
