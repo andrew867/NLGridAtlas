@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "nl-law-reports-1873-telegraph-consolidation",
+    year: 1875,
+    organization: "Supreme Court of Newfoundland",
+    title: "Anglo-American Telegraph Company v. Direct United States Cable Company, 1873 Consolidation Finding",
+    topics: ["1873", "Anglo-American Telegraph Company", "New York, Newfoundland and London Telegraph Company", "French Cable Company", "corporate consolidation", "telegraph monopoly", "exclusive privileges"],
+    pages: "physical PDF pp. 50 to 51, printed pp. 30 to 31",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/cns_tools/NewfoundlandLawReports18741884.pdf"
+  },
+  {
+    id: "mun-courier-1873-cable-inventory",
+    year: 1873,
+    organization: "Anglo-American Telegraph Company",
+    title: "Company Notice, Fourteen Owned Submarine Cables",
+    topics: ["1873", "submarine cable", "Valentia", "Heart's Content", "Falmouth", "Brest", "St. Pierre", "Duxbury", "Placentia", "Sydney", "Port Basque", "Aspoe Bay", "Prince Edward Island", "New Brunswick"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/Courier18730806.pdf"
+  },
+  {
     id: "mun-times-1874-faraday-cable-attempt",
     year: 1874,
     organization: "The Times and General Commercial Gazette",
@@ -12145,6 +12165,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1873-06-26",
+    category: "telecommunications ownership",
+    title: "Anglo-American and Newfoundland telegraph companies consolidated",
+    body: "A later Supreme Court judgment held that the Anglo-American Telegraph Company and the New York, Newfoundland and London Telegraph Company executed their consolidation agreement. The Newfoundland company merged into the consolidated company, which acquired its exclusive privileges.",
+    sourceId: "nl-law-reports-1873-telegraph-consolidation",
+    pages: "physical PDF pp. 50 to 51, printed pp. 30 to 31",
+    status: "verified"
+  },
+  {
+    date: "1873-07-18",
+    category: "telecommunications assets",
+    title: "Anglo-American listed fourteen owned submarine cables",
+    body: "A company notice listed fourteen owned submarine cables: three between Valentia and Heart's Content; one between Falmouth and Brest; one between Brest and St. Pierre; one between St. Pierre and Duxbury; two between Placentia and Sydney; two between Placentia and St. Pierre; two between St. Pierre and Sydney; one between Port Basque and Aspoe Bay; and one between Prince Edward Island and New Brunswick.",
+    sourceId: "mun-courier-1873-cable-inventory",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1874-07-26",
     category: "telecommunications construction",

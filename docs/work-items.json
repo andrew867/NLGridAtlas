@@ -2554,6 +2554,18 @@
       "notes": "The August 29 Times publication records the July 26 Direct Cable attempt in Conception Bay and the Supreme Court's limited injunction against cable landing, land-line construction and telegraph operation within Newfoundland jurisdiction."
     },
     {
+      "id": "NPREG-155",
+      "title": "Add the 1873 telegraph-company consolidation and cable inventory",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1873 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-154"],
+      "completion_evidence": ["research/NP_1873_SYSTEM_RECORD.md", "src/data.js", "tests/np-1873-system.test.js"],
+      "blocker": null,
+      "notes": "The Newfoundland Law Reports establish the June 26 consolidation of the Anglo-American and Newfoundland telegraph companies. A separate company notice dated July 18 lists fourteen owned submarine cables and their routes."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
