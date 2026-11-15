@@ -1702,6 +1702,18 @@
       "notes": "Multiple filed records date Lookout Brook commissioning or initial construction and its 13.1 km Flat Bay Brook access road to 1945, while a newer filing dates G1, G2 and the original powerhouse to 1946. Union Electric installed the original Port Union standby diesel in 1945; later records conflict on the replacement asset's date. The utility property schedule records six 1945 deeds at Rocky Pond, Broad Cove, Topsail Road, Heart's Content and Port aux Basques. No named 1945 transmission line, transformer, telecommunications installation, demand, reliability, storm or outage event was located."
     },
     {
+      "id": "NPREG-084",
+      "title": "Reconcile 1944 hydrometric and property records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1944 hydrometric, property, generation, transmission, station, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-083"],
+      "completion_evidence": ["research/NP_1944_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1944-system.test.js"],
+      "blocker": null,
+      "notes": "Hydrometric station 02ZE001 at Salmon River near Long Pond began recording in 1944. The 2004 Hydro study prints a 1944 to 1964 period and 21 years, while the 2024 refresh table prints 1944 to 1965 and 22 years; both remain visible. The utility property schedule records one West Brook deed and two St. George's deeds in 1944. No named 1944 line, station, transformer, generating unit, telecommunications installation, demand, reliability, storm or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -550,6 +550,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "nlh-1944-salmon-river-record",
+    year: 2004,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "IC-128 Attachment 1, Adjustment of Bay d'Espoir Reference Inflow Sequences",
+    topics: ["1944", "Salmon River", "Long Pond", "02ZE001", "hydrometric record", "Bay d'Espoir", "inflow sequence"],
+    pages: "physical PDF pp. 33 and 43",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/ARCHIVE/hydro2006gra/files/rfi/IC-128.pdf"
+  },
+  {
+    id: "nlh-1944-salmon-river-refresh",
+    year: 2024,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Island Hydroelectric Supply Refresh Study, Hydrometric Station Register",
+    topics: ["1944", "Salmon River", "Long Pond", "02ZE001", "hydrometric record", "record-length conflict"],
+    pages: "physical PDF p. 340",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/study/From%20NLH%20-%20Island%20Hydroelectric%20Supply%20Refresh%20Study%20-%202024-10-01.PDF"
+  },
+  {
+    id: "np-1944-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1944 Property Records",
+    topics: ["1944", "West Brook", "St. George's", "property", "utility land"],
+    pages: "physical PDF pp. 152 and 155",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1945-lookout-brook",
     year: 2012,
     organization: "Newfoundland Power",
@@ -10343,6 +10373,16 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1944-system-record",
+    scope: "1944 Salmon River hydrometric and utility property records",
+    status: "unresolved",
+    sources: [
+      { sourceId: "nlh-1944-salmon-river-record", pages: "physical PDF pp. 33 and 43" },
+      { sourceId: "nlh-1944-salmon-river-refresh", pages: "physical PDF p. 340" },
+      { sourceId: "np-1944-property-record", pages: "physical PDF pp. 152 and 155" }
+    ]
+  },
+  {
     id: "np-1945-system-record",
     scope: "1945 hydro generation, access infrastructure, standby generation and utility property records",
     status: "unresolved",
@@ -11143,6 +11183,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1944",
+    category: "hydrology",
+    title: "Salmon River at Long Pond hydrometric record began",
+    body: "Hydro's 2004 inflow study dates station 02ZE001 to 1944 and uses the pre-project observations in the Bay d'Espoir inflow sequence. It prints 1944 to 1964 and 21 years; the 2024 refresh table prints 1944 to 1965 and 22 years.",
+    sourceId: "nlh-1944-salmon-river-record",
+    pages: "physical PDF pp. 33 and 43; 2024 refresh physical PDF p. 340",
+    status: "unresolved"
+  },
+  {
+    date: "1944",
+    category: "property",
+    title: "Utility property schedule records three 1944 deeds",
+    body: "United Towns Electric acquired West Brook property from Walter E. Seibert in November 1944, Volume 177, Folio 510. West Coast Power records St. George's deeds from Leo Gaultois and Mary O'Reilly dated November 2, 1944; the schedule prints no registration volume or folio for either row.",
+    sourceId: "np-1944-property-record",
+    pages: "physical PDF pp. 152 and 155",
+    status: "reported"
+  },
   {
     date: "1945",
     category: "generation",
@@ -19355,6 +19413,12 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1944 PROPERTY RECORD",
+        sourceId: "np-1944-property-record",
+        pages: "physical PDF p. 152",
+        facts: [["Deed", "West Brook property acquired from Walter E. Seibert in November 1944; Volume 177, Folio 510"]]
+      },
+      {
         label: "1967 MAIN-VALVE REPLACEMENT",
         sourceId: "np-2011-west-brook-main-valve",
         pages: "physical PDF p. 181",
@@ -22814,6 +22878,15 @@ export const stationProfiles = [
       facts: [["STG-T1", "66/25 kV; 6.67 MVA; 3.50 MVA 2026 forecast"]]
     },
     historyRecords: [
+      {
+        label: "1944 PROPERTY RECORDS",
+        sourceId: "np-1944-property-record",
+        pages: "physical PDF p. 155",
+        facts: [
+          ["Leo Gaultois deed", "St. George's property deed dated November 2, 1944"],
+          ["Mary O'Reilly deed", "St. George's property deed dated November 2, 1944"]
+        ]
+      },
       {
         label: "1957 / 1960 BREAKER RECORD CONFLICT",
         sourceId: "np-1957-st-georges-hearing",
