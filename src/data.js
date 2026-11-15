@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1844-highton-telegraph",
+    year: 1844,
+    organization: "Public Ledger",
+    title: "Highton Experimental Telegraph Report",
+    topics: ["1844", "telegraph", "Highton", "Rugby", "London and Birmingham Railway", "wire insulation", "glass insulator", "signal registration", "Liverpool", "London"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18440618.pdf"
+  },
+  {
+    id: "mun-almanac-1844-post-office",
+    year: 1844,
+    organization: "Newfoundland Almanac",
+    title: "Sailing Packet Mail and Proposed Steam Replacement",
+    topics: ["1844", "mail", "sailing packet", "steam packet", "North America", "St. John's", "Halifax", "communications baseline"],
+    pages: "physical PDF p. 47, printed p. 41",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/cns_almanac/Almanac1844.pdf"
+  },
+  {
+    id: "mun-times-1843-liverpool-collegiate",
+    year: 1843,
+    organization: "Times and General Commercial Gazette",
+    title: "Opening of the Liverpool Collegiate Institution",
+    topics: ["1843", "Liverpool", "Collegiate Institution", "Liverpool Chronicle", "reprinted material", "source locality"],
+    pages: "physical PDF pp. 1 and 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18430308.pdf"
+  },
+  {
     id: "mun-morning-post-1845-cooke-wheatstone",
     year: 1845,
     organization: "Morning Post",
@@ -13255,6 +13285,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1844-06-18",
+    category: "telecommunications context",
+    title: "Public Ledger printed a detailed Highton telegraph report",
+    body: "The Public Ledger described Highton's ten-mile experimental wire near Rugby. One third was insulated with glass; the remainder was suspended on poles without varnish or other insulation. The report discussed conductor length, insulation, signal range and automatic registration. The experiment occurred in England and does not establish Newfoundland telegraph infrastructure.",
+    sourceId: "mun-public-ledger-1844-highton-telegraph",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
   {
     date: "1845-02-22",
     category: "telecommunications context",

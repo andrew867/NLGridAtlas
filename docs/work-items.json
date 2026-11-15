@@ -2902,6 +2902,18 @@
       "notes": "A St. John's newspaper described the operating Cooke and Wheatstone telegraph in England. The Newfoundland Almanac documents the steam-packet mail baseline. Neither source identifies Newfoundland telegraph infrastructure."
     },
     {
+      "id": "NPREG-184",
+      "title": "Add the 1844 Highton report and mail-transition record",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1844 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-183"],
+      "completion_evidence": ["research/NP_1844_SYSTEM_RECORD.md", "src/data.js", "tests/np-1844-system.test.js"],
+      "blocker": null,
+      "notes": "The local press printed a detailed report of Highton's experimental British line. The almanac records existing sailing-packet mail and a proposed steam replacement. An imported article's phrase 'in this town' is not assigned to St. John's."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
