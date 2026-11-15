@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-courier-1848-gisborne-saint-john-lecture",
+    year: 1848,
+    organization: "Morning Courier",
+    title: "Gisborne Telegraph Lecture in Saint John, New Brunswick",
+    topics: ["1848", "telegraph", "Frederic Newton Gisborne", "Saint John", "New Brunswick", "earth return", "electromagnet", "paper recorder", "British North American Electric Telegraph Association"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morncourier/MorningCourier18480413.pdf"
+  },
+  {
+    id: "mun-courier-1848-mainland-halifax-route",
+    year: 1848,
+    organization: "Morning Courier",
+    title: "Mainland Telegraph Route Toward Halifax",
+    topics: ["1848", "telegraph", "Bangor", "Calais", "New Brunswick", "Amherst", "Halifax", "Nova Scotia", "financing", "route authorization"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morncourier/MorningCourier18480613.pdf"
+  },
+  {
     id: "mun-public-ledger-1849-humphrey-telegraph",
     year: 1849,
     organization: "Public Ledger",
@@ -13215,6 +13235,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1848-04-13",
+    category: "telecommunications demonstration",
+    title: "Gisborne demonstrated telegraph engineering in Saint John, N.B.",
+    body: "The Morning Courier reprinted a Saint John, New Brunswick report of F. N. Gisborne's Mechanics' Institute lecture. Gisborne, identified as superintendent of the British North American Electric Telegraph Association at Quebec, explained earth return and demonstrated an electromagnetically actuated paper-marking apparatus. The event occurred in New Brunswick and forms part of the mainland background to the later Newfoundland project.",
+    sourceId: "mun-courier-1848-gisborne-saint-john-lecture",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1848-06-13",
+    category: "telecommunications planning",
+    title: "Mainland telegraph promoters worked toward a Halifax connection",
+    body: "The Morning Courier reprinted a New Brunswick report estimating the line through that province at £10,000. Boston promoters had agreed to take two-thirds of the stock; Nova Scotia had authorized a line from Halifax to the provincial boundary near Amherst; and arrangements extended the Portland route toward Calais. The report described New Brunswick as the remaining link, not an operating through route.",
+    sourceId: "mun-courier-1848-mainland-halifax-route",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
   {
     date: "1849-12-18",
     category: "telecommunications demonstration",

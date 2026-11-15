@@ -2854,6 +2854,18 @@
       "notes": "The contemporary record identifies Humphrey's working miniature telegraph, paper recording apparatus and general mainland and Atlantic cable proposals. A separate 1855 retrospective attributes the specific Cape Ray and Cape Breton route to the lecture and Gisborne."
     },
     {
+      "id": "NPREG-180",
+      "title": "Add the 1848 mainland telegraph precursors",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1848 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-179"],
+      "completion_evidence": ["research/NP_1848_SYSTEM_RECORD.md", "src/data.js", "tests/np-1848-system.test.js"],
+      "blocker": null,
+      "notes": "The record identifies Gisborne's Saint John, New Brunswick technical lecture and the proposed mainland route toward Halifax. Both remain external precursors; no 1848 Newfoundland telegraph infrastructure was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
