@@ -684,10 +684,20 @@ export const sources = [
     year: 2012,
     organization: "Newfoundland Power",
     title: "CA-NP-036, Victoria Hydroelectric Development Record",
-    topics: ["1914", "Victoria", "VIC-G", "hydroelectric generation", "Voith", "Westinghouse", "turbine"],
+    topics: ["1904", "1914", "Victoria", "VIC-G", "hydroelectric generation", "Voith", "Westinghouse", "turbine", "penstock", "Blue Hill Pond", "Rocky Pond"],
     pages: "physical PDF p. 180",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-2008-victoria-operations",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "CA-NP-263, Newfoundland Power Description of Operations",
+    topics: ["1904", "Victoria", "hydroelectric generation", "commissioning", "capacity", "average output"],
+    pages: "physical PDF p. 95",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008GRA/files/rfi/CA-NP-263.pdf"
   },
   {
     id: "np-1914-victoria-unit",
@@ -11746,6 +11756,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1904",
+    category: "generation",
+    title: "Victoria hydroelectric development was commissioned",
+    body: "The detailed development record dates Victoria to 1904 and describes one powerhouse, a forebay dam and intake at Blue Hill Pond, Rocky Pond storage, and a 494 m mixed woodstave and steel penstock. It gives 500 kW total capacity, while a 2008 operating summary lists 0.55 MW. The present 450 kW Voith turbine was installed later, in 1914.",
+    sourceId: "np-1914-victoria-turbine",
+    pages: "physical PDF p. 180",
+    status: "reported"
+  },
+  {
     date: "1905",
     category: "generation",
     title: "Exploits plant equipment records date to 1905",
@@ -21464,6 +21483,18 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1904 HYDROELECTRIC DEVELOPMENT",
+        sourceId: "np-1914-victoria-turbine",
+        pages: "physical PDF p. 180",
+        facts: [
+          ["Commissioning", "the Victoria hydroelectric development was commissioned in 1904"],
+          ["Filed capacity", "500 kW in the detailed development record; 0.55 MW in the 2008 description of operations"],
+          ["Water conveyance", "494 m penstock: 238 m of 1097 mm woodstave, 174 m of 1219 mm woodstave, and 82 m of 1067 mm steel"],
+          ["Hydro structures", "Blue Hill Pond forebay dam, spillway, outlet and intake; Rocky Pond storage reservoir"],
+          ["Original equipment", "the powerhouse museum contains the original turbine-generators; the source does not state their ratings"]
+        ]
+      },
       {
         label: "1914 GENERATING UNIT",
         sourceId: "np-1914-victoria-turbine",

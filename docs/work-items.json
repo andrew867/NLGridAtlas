@@ -2182,6 +2182,18 @@
       "notes": "The 2017 Exploits condition assessment dates eight Grand Falls surface forebay gates and Bishop's Falls Units 8 and 9 to 1905. Each Bishop's Falls unit was originally rated 1 MW. The report records their 1983 rehabilitation and their out-of-service state during the 2017 inspection. Aggregate depreciation balances remain unassigned."
     },
     {
+      "id": "NPREG-124",
+      "title": "Add the 1904 Victoria hydroelectric development record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1904 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-123"],
+      "completion_evidence": ["research/NP_1904_SYSTEM_RECORD.md", "src/data.js", "tests/np-1904-system.test.js"],
+      "blocker": null,
+      "notes": "The detailed Victoria record dates commissioning to 1904 and describes the powerhouse, dam, intake, storage and 494 m penstock. It gives 500 kW total capacity but dates the present 450 kW Voith turbine to 1914. A 2008 operating summary lists 0.55 MW, so both dated capacity values are retained."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
