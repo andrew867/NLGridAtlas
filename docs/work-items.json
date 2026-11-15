@@ -1762,6 +1762,18 @@
       "notes": "A later engineering assessment dates the 6,900 kW Tors Cove powerhouse and three English Electric Francis turbines to 1940, while other filings give 1941 and 1942 service or commissioning dates. The generating-unit register dates G1 and G2 to 1940 and G3 to 1951. A 2003 filing calls the G2 and G3 governors original to the 1940 construction, creating a separate G3 equipment-date conflict. The property schedule records fourteen Tors Cove deeds and one Bay Bulls Road Crown grant. Decade-only records were not assigned to 1940."
     },
     {
+      "id": "NPREG-089",
+      "title": "Add the 1939 Fall Pond development record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1939 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-088"],
+      "completion_evidence": ["research/NP_1939_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1939-system.test.js"],
+      "blocker": null,
+      "notes": "The Fall Pond development record dates commissioning and the Voith turbine installation to 1939. It records the 15.2 m head, woodstave penstock, forebay works, 2.4/12.5 kV step-up station and Laurentian feeder connection. Filed capacity values differ: 400 kW for the development, 380 kW for the turbine and 350 kW in later depreciation and generating-unit records. No other named exact-year 1939 transmission, station, transformer, property, telecommunications, load, reliability, storm or outage record was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

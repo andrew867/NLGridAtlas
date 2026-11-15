@@ -550,6 +550,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1939-fall-pond-development",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Fall Pond Hydroelectric Development Record",
+    topics: ["1939", "Fall Pond", "hydro generation", "Francis turbine", "Voith", "Westinghouse", "penstock", "forebay dam", "substation", "Laurentian"],
+    pages: "physical PDF pp. 275 to 276",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
     id: "np-1940-tors-cove-commissioning",
     year: 2012,
     organization: "Newfoundland Power",
@@ -10513,6 +10523,16 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1939-system-record",
+    scope: "1939 Fall Pond generation, hydraulic, station and distribution-connection records",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1939-fall-pond-development", pages: "physical PDF pp. 275 to 276" },
+      { sourceId: "np-2013-fall-pond-plant", pages: "physical PDF p. 140" },
+      { sourceId: "np-2013-generation-unit-data", pages: "physical PDF p. 2" }
+    ]
+  },
+  {
     id: "np-1940-system-record",
     scope: "1940 Tors Cove commissioning, generating-unit, governor and utility property records",
     status: "unresolved",
@@ -11376,6 +11396,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1939",
+    category: "generation",
+    title: "Fall Pond development was commissioned",
+    body: "The development record gives 400 kW under about 15.2 m net head and a 380 kW Voith horizontal Francis turbine installed in 1939 with a Westinghouse generator. The depreciation study and generating-unit register instead give 350 kW.",
+    sourceId: "np-1939-fall-pond-development",
+    pages: "physical PDF p. 275; compare depreciation study physical PDF p. 140 and generating-unit register physical PDF p. 2",
+    status: "unresolved"
+  },
+  {
+    date: "1939",
+    category: "station",
+    title: "Fall Pond generation connected through a local step-up station",
+    body: "The development record describes a 2.4 kV to 12.5 kV transformer station tied to a distribution feeder from Laurentian Substation, with no separate transmission line. It also records a 13 m, 1,219 mm woodstave penstock and the original forebay works.",
+    sourceId: "np-1939-fall-pond-development",
+    pages: "physical PDF pp. 275 to 276",
+    status: "reported"
+  },
   {
     date: "1940",
     category: "generation",
@@ -19661,6 +19699,19 @@ const filedFeederMapProfiles = [
       facts: [["FPD-T1-A/B/C", "three generation transformers; each 12.5/4.2 kV and 0.25 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1939 GENERATION, WATERWORKS AND STATION RECORD",
+        sourceId: "np-1939-fall-pond-development",
+        pages: "physical PDF pp. 275 to 276; depreciation study physical PDF p. 140; generating-unit register physical PDF p. 2",
+        facts: [
+          ["Commissioning", "1939"],
+          ["Capacity record", "400 kW development rating and 380 kW turbine rating; later depreciation and generating-unit records give 350 kW"],
+          ["Generating equipment", "one Voith horizontal Francis turbine installed in 1939 and one Westinghouse generator"],
+          ["Hydraulics", "approximately 15.2 m net head; 13 m long, 1,219 mm diameter woodstave penstock on concrete cradles"],
+          ["Forebay works", "129 m concrete buttress dam, approximately 11 m maximum height, with a 33 m overflow spillway, intake and unwatering conduit"],
+          ["Original station", "step-up from 2.4 kV to 12.5 kV; tied to a Laurentian Substation distribution feeder; no separate transmission line"]
+        ]
+      },
       {
         label: "1942 FOREBAY DAM AND PROPERTY RECORD",
         sourceId: "np-1942-fall-pond-dam",
