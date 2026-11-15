@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1907-petty-harbour-unit-2",
+    year: 2021,
+    organization: "Newfoundland Power",
+    title: "2022 Capital Budget Application, Petty Harbour Unit 2 Turbine Overhaul",
+    topics: ["1907", "Petty Harbour", "PHR-G2", "Unit 2", "turbine", "generator", "wicket gates", "date conflict"],
+    pages: "physical PDF p. 202",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF"
+  },
+  {
     id: "np-1908-petty-harbour-development",
     year: 2009,
     organization: "Newfoundland Power",
@@ -6164,8 +6174,8 @@ export const sources = [
     year: 2019,
     organization: "NL Hydro",
     title: "PUB-NLH-005, Exploits Generation Condition Assessment",
-    topics: ["Grand Falls", "Bishop's Falls", "Exploits generation", "G4", "G9", "T1", "T2", "T3", "T8", "T9", "6.9 kV", "66 kV", "generator step-up transformer", "station bus"],
-    pages: "physical PDF pp. 663 to 667, 693 to 695, and 978",
+    topics: ["1907", "Grand Falls", "Bishop's Falls", "Exploits generation", "main dam", "forebay intake", "G4", "G9", "T1", "T2", "T3", "T8", "T9", "6.9 kV", "66 kV", "generator step-up transformer", "station bus"],
+    pages: "physical PDF pp. 551, 606, 608, 663 to 669, 693 to 695, and 978",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-005.PDF"
   },
@@ -11715,6 +11725,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1907",
+    category: "hydro civil",
+    title: "Grand Falls dam and two Exploits intakes date to 1907",
+    body: "The Exploits condition assessment dates the Grand Falls main dam and original forebay intake to 1907. It separately dates the Bishop's Falls forebay intake to 1907. The Grand Falls table also records major dam and water-conveyance work completed in 1997.",
+    sourceId: "nlh-exploits-condition-2017",
+    pages: "physical PDF pp. 606, 608 and 669",
+    status: "reported"
+  },
+  {
+    date: "1907",
+    category: "generation",
+    title: "Petty Harbour Unit 2 has conflicting installation dates",
+    body: "The 2022 overhaul filing calls Unit 2 a 1907 installation. The detailed development record instead dates the plant's three historical turbine-generator sets to 1900, 1908 and 1926, without mapping those dates to present unit identifiers.",
+    sourceId: "np-1907-petty-harbour-unit-2",
+    pages: "physical PDF p. 202; conflicting development record p. 207",
+    status: "unresolved"
+  },
   {
     date: "1908",
     category: "generation",
@@ -18295,6 +18323,7 @@ export const islandTerminalRecords = [
     name: "Grand Falls and Bishop's Falls generation",
     status: "reported",
     facts: [
+      ["1907 civil works", "Grand Falls main dam and original forebay intake; Bishop's Falls forebay intake"],
       ["2013 system assignment", "Grand Falls G9, 26.9 MW; Grand Falls G4, 25.7 MW; Bishop's Falls, 18.4 MW"],
       ["Original G5 to G8 turbines", "built in 1911 to drive pulp grinders, not electric generators; replaced in 1950 and converted to electric generation in 1976"],
       ["Grand Falls G4 installation year", "unresolved; a filed 1992 judgment says 1938 on physical PDF p. 132 and 1937 on physical PDF p. 135"],
@@ -18314,7 +18343,7 @@ export const islandTerminalRecords = [
       circuits: [],
       generators: [{ label: "Grand Falls G9", rating: "26.9 MW / 33.3 MVA", bus: "b1" }, { label: "Grand Falls G4", rating: "25.7 MW / 27.5 MVA", bus: "b1" }, { label: "Bishop's Falls G1 to G7", rating: "7 x 3 MVA", bus: "b3" }]
     },
-    sources: [sourceRef("nlh-1911-goodyears-dam", "physical PDF pp. 599 to 600"), sourceRef("nlh-1911-grand-falls-turbines", "physical PDF pp. 947 and 983 to 984"), sourceRef("np-1937-grand-falls-g4", "physical PDF pp. 131 to 135"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
+    sources: [sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 606, 608 and 669"), sourceRef("nlh-1911-goodyears-dam", "physical PDF pp. 599 to 600"), sourceRef("nlh-1911-grand-falls-turbines", "physical PDF pp. 947 and 983 to 984"), sourceRef("np-1937-grand-falls-g4", "physical PDF pp. 131 to 135"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
   },
   {
     code: "GFC",
@@ -18828,6 +18857,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1907 GRAND FALLS HYDRO CIVIL WORKS",
+        sourceId: "nlh-exploits-condition-2017",
+        pages: "physical PDF pp. 606 and 608",
+        facts: [
+          ["Main dam", "concrete-gravity dam with wooden flashplanks; 259 m long and 6.1 m maximum height"],
+          ["Original forebay intake", "concrete-gravity structure with 17 permanently open, non-operable gates, each 2.44 m by 3.66 m"],
+          ["Later work", "the condition assessment separately dates the RCC dam, right embankment dam, power canal and replacement intake work to 1997"]
+        ]
+      },
       {
         label: "1930 ADJACENT HYDRO DEVELOPMENT",
         sourceId: "nlh-1930-grand-falls-unit",
@@ -22006,6 +22045,15 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1907 BISHOP'S FALLS FOREBAY INTAKE",
+        sourceId: "nlh-exploits-condition-2017",
+        pages: "physical PDF p. 669",
+        facts: [
+          ["Structure", "concrete-gravity forebay intake completed in 1907"],
+          ["Gates", "13 gates; the condition assessment says gate dimensions and sill elevation were unavailable because no drawings were available"]
+        ]
+      },
       {
         label: "1978 STRUCTURE REGISTER",
         sourceId: "np-1978-substation-structures",
@@ -31779,6 +31827,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1907 REPORTED UNIT 2 INSTALLATION",
+        sourceId: "np-1907-petty-harbour-unit-2",
+        pages: "physical PDF p. 202",
+        facts: [
+          ["Unit record", "the 2022 overhaul filing identifies Unit 2 as installed in 1907"],
+          ["Date conflict", "the detailed plant record instead dates the three historical turbine-generator sets to 1900, 1908 and 1926 without mapping them to present unit identifiers"]
+        ]
+      },
       {
         label: "1908 GENERATING-UNIT ADDITION",
         sourceId: "np-1908-petty-harbour-development",

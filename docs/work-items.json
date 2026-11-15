@@ -2146,6 +2146,18 @@
       "notes": "The detailed Petty Harbour plant record dates one of its three horizontal Francis turbine-generator sets to 1908 and gives 5,300 kW aggregate plant capacity under 57.9 m net head. The source does not map the historical machine to a present unit identifier. No 1908 depreciation placement was located."
     },
     {
+      "id": "NPREG-121",
+      "title": "Add the 1907 Exploits civil works and Petty Harbour conflict",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1907 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-120"],
+      "completion_evidence": ["research/NP_1907_SYSTEM_RECORD.md", "src/data.js", "tests/np-1907-system.test.js"],
+      "blocker": null,
+      "notes": "The Exploits condition assessment dates the Grand Falls main dam and original forebay intake, plus the Bishop's Falls forebay intake, to 1907. A 2022 filing calls Petty Harbour Unit 2 a 1907 installation, conflicting with the detailed plant record's 1908 historical-unit date. The account 325 placement remains unassigned."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
