@@ -3010,6 +3010,18 @@
       "notes": "Chapter 12 authorized another £1,000 for Harbour Grace Island lighthouse after the first £1,000 proved insufficient, subject to approval of the work, machinery and cost estimate. Cape Spear records separate an August completion tender from the announced September 1 revolving-light service. A separate newspaper item described the Liverpool to Holyhead station telegraph."
     },
     {
+      "id": "NPREG-193",
+      "title": "Add the 1835 Cape Spear and Harbour Grace lighthouse records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1835 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-192"],
+      "completion_evidence": ["research/NP_1835_SYSTEM_RECORD.md", "src/data.js", "tests/np-1835-system.test.js"],
+      "blocker": null,
+      "notes": "Chapter 6 added £500 for Cape Spear lighthouse completion and lighting apparatus after the first £1,000 proved insufficient. Chapter 7 established the Harbour Grace Island lighthouse project, financing, approval controls and light-duty mechanism. A July tender identifies the planned Harbour Grace structure as wood."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

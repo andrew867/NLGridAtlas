@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-statutes-1835-cape-spear-further-loan-act",
+    year: 1835,
+    organization: "Newfoundland Legislature",
+    title: "Cape Spear Lighthouse Further Loan Act",
+    topics: ["1835", "Cape Spear", "lighthouse", "£500 loan", "lighting apparatus", "interest", "repayment"],
+    pages: "physical PDF pp. 16 to 17, printed pp. 25 to 26",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1835.pdf"
+  },
+  {
+    id: "mun-statutes-1835-harbour-grace-lighthouse-establishment-act",
+    year: 1835,
+    organization: "Newfoundland Legislature",
+    title: "Harbour Grace Island Lighthouse Establishment Act",
+    topics: ["1835", "Harbour Grace Island", "Conception Bay", "lighthouse", "five commissioners", "£1,000 loan", "plans and estimates", "light duty"],
+    pages: "physical PDF pp. 18 to 20, printed pp. 29 to 31",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1835.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1835-harbour-grace-wood-lighthouse-tender",
+    year: 1835,
+    organization: "Royal Gazette",
+    title: "Harbour Grace Island Wooden Lighthouse Tender",
+    topics: ["1835", "Harbour Grace Island", "lighthouse", "wood construction", "plans", "specifications", "tender", "William J. Henderson"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18350721.pdf"
+  },
+  {
     id: "mun-statutes-1836-harbour-grace-lighthouse-loan-act",
     year: 1836,
     organization: "Newfoundland Legislature",
@@ -13605,6 +13635,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1835-05-08",
+    category: "navigation infrastructure",
+    title: "Legislature added £500 for Cape Spear lighthouse completion",
+    body: "Chapter 6 states that the first £1,000 was insufficient to erect and complete the Cape Spear lighthouse and buy its lighting apparatus. It authorized a further loan of up to £500 at no more than six percent interest, with annual principal instalments capped at £100 and repayment starting after two years.",
+    sourceId: "mun-statutes-1835-cape-spear-further-loan-act",
+    pages: "physical PDF pp. 16 to 17, printed pp. 25 to 26",
+    status: "verified"
+  },
+  {
+    date: "1835-05-08",
+    category: "navigation infrastructure",
+    title: "Legislature established the Harbour Grace Island lighthouse project",
+    body: "Chapter 7 created a five-commissioner lighthouse project for Harbour Grace Island and authorized a loan of up to £1,000. Plans, estimates, material and workmanship requirements, and contracts required approval by the Governor in Council. The act also established funding for lighting and maintenance and a completion-triggered light duty.",
+    sourceId: "mun-statutes-1835-harbour-grace-lighthouse-establishment-act",
+    pages: "physical PDF pp. 18 to 20, printed pp. 29 to 31",
+    status: "verified"
+  },
+  {
+    date: "1835-07-16",
+    category: "navigation infrastructure",
+    title: "Harbour Grace commissioners requested tenders for a wooden lighthouse",
+    body: "The commissioners requested specifications and tenders for a wooden lighthouse on Harbour Grace Island. The notice said that plans and further particulars were available from secretary William J. Henderson.",
+    sourceId: "mun-royal-gazette-1835-harbour-grace-wood-lighthouse-tender",
+    pages: "physical PDF p. 3",
+    status: "verified"
+  },
   {
     date: "1836-05-06",
     category: "navigation infrastructure",
