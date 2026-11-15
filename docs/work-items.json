@@ -2206,6 +2206,18 @@
       "notes": "The Newfoundland Quarterly dates the Black River pulp mill shutdown to 1903 and describes water turbines intended to provide 12,000 hp for mill machinery. A 1966 federal survey independently records the shutdown and a 30 foot dam. Neither source identifies electric generation or a grid connection."
     },
     {
+      "id": "NPREG-126",
+      "title": "Add the 1902 United Towns company record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1902 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-125"],
+      "completion_evidence": ["research/NP_1902_SYSTEM_RECORD.md", "src/data.js", "tests/np-1902-system.test.js"],
+      "blocker": null,
+      "notes": "Newfoundland Power dates United Towns Electrical Company to 1902. The Canadian Register of Historic Places separately dates Victoria construction and first generation to 1904, so the 1902 record is limited to company formation."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

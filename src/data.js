@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "mun-1937-united-towns-history",
+    year: 1937,
+    organization: "Newfoundland Who's Who",
+    title: "Who's Who in and from Newfoundland 1937, United Towns Electric Company, Ltd.",
+    topics: ["1902", "1904", "United Towns Electric Company", "Victoria", "incorporation", "operations", "hydroelectric generation"],
+    pages: "physical PDF p. 304, printed p. 296",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_tools/WhosWho1937.pdf"
+  },
+  {
     id: "mun-1998-black-river-pulp-mill",
     year: 1998,
     organization: "Newfoundland Quarterly",
@@ -11776,6 +11786,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1902",
+    category: "utility formation",
+    title: "United Towns Electrical Company was established",
+    body: "A 1937 company history says United Towns Electric Company was incorporated in 1902 and began operations in 1904. It identifies Victoria as the company's first hydroelectric plant, so the 1902 record does not represent plant commissioning.",
+    sourceId: "mun-1937-united-towns-history",
+    pages: "physical PDF p. 304, printed p. 296",
+    status: "reported"
+  },
+  {
     date: "1903",
     category: "industrial water power",
     title: "Black River pulp mill ceased production",
@@ -21512,6 +21531,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1902 UNITED TOWNS ELECTRICAL COMPANY",
+        sourceId: "mun-1937-united-towns-history",
+        pages: "physical PDF p. 304, printed p. 296",
+        facts: [
+          ["Company", "United Towns Electrical Company was incorporated in 1902"],
+          ["Station sequence", "the company history says operations began in 1904 at Victoria"],
+          ["Original service", "Harbour Grace, Carbonear and Heart's Content"]
+        ]
+      },
       {
         label: "1904 HYDROELECTRIC DEVELOPMENT",
         sourceId: "np-1914-victoria-turbine",
