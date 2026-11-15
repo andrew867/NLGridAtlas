@@ -2446,6 +2446,18 @@
       "notes": "The House received Bell's petition for Newfoundland telephone powers on March 6 and appointed a select committee on March 7. June notices announced proposed patent applications for electric telephony and speaking telephones."
     },
     {
+      "id": "NPREG-146",
+      "title": "Add the 1882 telegraph construction and extension records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1882 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-145"],
+      "completion_evidence": ["research/NP_1882_SYSTEM_RECORD.md", "src/data.js", "tests/np-1882-system.test.js"],
+      "blocker": null,
+      "notes": "An 1885 review reports the completed Coon River to Harbor Breton branch. A July 1882 Twillingate Sun editorial separately demanded service for Twillingate, Fogo and nearby settlements; it is retained as a proposal."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

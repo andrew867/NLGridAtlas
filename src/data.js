@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-twillingate-sun-1882-telegraph-extension",
+    year: 1882,
+    organization: "The Twillingate Sun",
+    title: "Telegraphy, Twillingate and Fogo Extension Demand",
+    topics: ["1882", "Twillingate", "Fogo", "Notre Dame Bay", "telegraph", "line extension", "communications planning"],
+    pages: "physical PDF p. 54",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/mha_twill/1882.pdf"
+  },
+  {
+    id: "mun-evening-mercury-1885-telegraph-history",
+    year: 1885,
+    organization: "The Evening Mercury",
+    title: "Telegraph Expansion Review, 1876 to 1885",
+    topics: ["1882", "Coon River", "Cape Ray", "Harbor Breton", "telegraph", "branch line", "completed works"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/eveherald/EveningMercury18850924.pdf"
+  },
+  {
     id: "nl-assembly-1883-bell-telephone-petition",
     year: 1883,
     organization: "Newfoundland House of Assembly",
@@ -11955,6 +11975,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1882",
+    category: "telecommunications",
+    title: "A telegraph branch connected Coon River and Harbor Breton",
+    body: "An 1885 review reports that a branch was built from Coon River on the Cape Ray line to Harbor Breton in 1882. The report gives no route length, conductor, pole construction, office equipment or opening date.",
+    sourceId: "mun-evening-mercury-1885-telegraph-history",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1882-07-14",
+    category: "telecommunications proposal",
+    title: "Twillingate pressed for a telegraph extension",
+    body: "The Twillingate Sun called for a line to Twillingate, Fogo and nearby settlements. It linked the missing connection to commercial disadvantage, reported losses and delayed communication with law-enforcement authorities. The editorial records a demand, not an authorized or completed line.",
+    sourceId: "mun-twillingate-sun-1882-telegraph-extension",
+    pages: "physical PDF p. 54",
+    status: "proposed"
+  },
   {
     date: "1883-03-06",
     category: "telecommunications proposal",
