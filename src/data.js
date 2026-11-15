@@ -620,6 +620,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1924-seal-cove-development",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Seal Cove Hydroelectric Development",
+    topics: ["1924", "Seal Cove", "hydroelectric generation", "powerhouse", "penstock", "intake", "storage reservoirs"],
+    pages: "physical PDF p. 187",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1924-seal-cove-g1",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Seal Cove G1 Rotor",
+    topics: ["1924", "Seal Cove", "G1", "Allis Chalmers", "generator", "rotor"],
+    pages: "physical PDF pp. 30 and 337",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-1924-petty-harbour-water-rights",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Petty Harbour Water Rights",
+    topics: ["1924", "Petty Harbour", "water rights", "deed", "Reid Newfoundland Company"],
+    pages: "physical PDF p. 224",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
     id: "nlh-1925-corner-brook-mill",
     year: 2016,
     organization: "Newfoundland and Labrador Hydro",
@@ -11526,6 +11556,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1924",
+    category: "generation",
+    title: "Seal Cove hydroelectric development entered service",
+    body: "Newfoundland Power dates the two-unit Seal Cove development to 1924. The filed development record describes a concrete powerhouse, wood-stave penstock, concrete intake and storage at White Hill, Fenelons and Soldiers ponds.",
+    sourceId: "np-1924-seal-cove-development",
+    pages: "physical PDF p. 187",
+    status: "reported"
+  },
+  {
     date: "1925",
     category: "generation",
     title: "Deer Lake Power commissioning began",
@@ -20732,6 +20771,23 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1924 DEVELOPMENT COMMISSIONING",
+        sourceId: "np-1924-seal-cove-development",
+        pages: "physical PDF p. 187",
+        facts: [
+          ["Generating development", "two units commissioned in 1924 in a concrete powerhouse"],
+          ["Waterway", "1,220 m by 2,134 mm above-ground treated wood-stave penstock on timber cradles; concrete intake"],
+          ["Storage", "White Hill Pond forebay, Fenelons Pond and Soldiers Pond"],
+          ["Published 2012 capacity", "3,400 kW combined output"]
+        ]
+      },
+      {
+        label: "1924 G1 GENERATOR",
+        sourceId: "np-1924-seal-cove-g1",
+        pages: "physical PDF pp. 30 and 337",
+        facts: [["Generator", "G1 manufactured by Allis Chalmers in 1924; stator rewound in 1988; original rotor windings remained before the filed 2015 rewind"]]
+      },
       {
         label: "1926 REPORTED G2 VINTAGE",
         sourceId: "np-1926-seal-cove-g2",
@@ -31458,6 +31514,21 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1924 WATER-RIGHTS DEED",
+        sourceId: "np-1924-petty-harbour-water-rights",
+        pages: "physical PDF p. 224",
+        facts: [["Water rights", "February 18, 1924 deed from Reid Newfoundland Company Limited and others granted the rights perpetually"]]
+      },
+      {
+        label: "1924 REPORTED PHR-G3 INSTALLATION",
+        sourceId: "np-2013-generation-unit-data",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Present-unit table", "PHR-G3 listed at 1.8 MW with a 1924 installation date"],
+          ["Historical-record boundary", "the table does not identify PHR-G3 as the separate historical machine commissioned in 1926"]
+        ]
+      },
       {
         label: "1926 GENERATING-UNIT ADDITION",
         sourceId: "np-1926-petty-harbour-development",

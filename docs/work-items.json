@@ -1942,6 +1942,18 @@
       "notes": "A Statistics Canada station table lists nine Deer Lake Power units with commissioning years from 1925 to 1929 and 127,084 kW total capacity, but does not identify individual unit years. Hydro dates the Corner Brook mill and its predominantly 50 Hz electrical system to 1925. The mill date is not assigned to the later frequency converter."
     },
     {
+      "id": "NPREG-104",
+      "title": "Add the 1924 Seal Cove and Petty Harbour records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1924 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-103"],
+      "completion_evidence": ["research/NP_1924_SYSTEM_RECORD.md", "src/data.js", "tests/np-1924-system.test.js"],
+      "blocker": null,
+      "notes": "Seal Cove is consistently reported as a two-unit development commissioned in 1924, but later filings publish different plant capacities. The queue also adds the February 18, 1924 Petty Harbour water-rights deed and the separate current-unit-table record for PHR-G3."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
