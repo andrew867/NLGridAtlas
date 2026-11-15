@@ -683,9 +683,9 @@ export const sources = [
     id: "mun-courier-1866-gulf-cable",
     year: 1866,
     organization: "The Courier",
-    title: "New Gulf Cable Laying Operation",
-    topics: ["1866", "Gulf cable", "HMS Terrible", "HMS Lily", "Medway", "Heart's Content", "St. John's"],
-    pages: "physical PDF p. 3",
+    title: "Recovered 1865 Cable Landing and New Gulf Cable Operation",
+    topics: ["1866", "1865 Atlantic cable", "Great Eastern", "Heart's Content", "Gulf cable", "HMS Terrible", "HMS Lily", "Medway", "Cyrus Field", "St. John's"],
+    pages: "physical PDF pp. 2 to 3",
     status: "reported",
     url: "https://dai.mun.ca/PDFs/morncourier/Courier18660912.pdf"
   },
@@ -12332,12 +12332,21 @@ export const timeline = [
     status: "reported"
   },
   {
+    date: "1866-09-08",
+    category: "telecommunications commissioning",
+    title: "The recovered 1865 Atlantic cable was landed at Heart's Content",
+    body: "The September 12 Courier reported that the Great Eastern arrived at Heart's Content on Saturday morning with the recovered 1865 cable. It gives the arrival as about 11:30 a.m. and states that the shore end was landed from the Medway, then fitted and fixed in place by 4:30 p.m.",
+    sourceId: "mun-courier-1866-gulf-cable",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
     date: "1866-09-12",
     category: "telecommunications construction",
     title: "Three ships departed for a new Gulf cable operation",
-    body: "The Courier reported that HMS Terrible and the Medway had returned to St. John's from Heart's Content and were leaving with HMS Lily to lay a new Gulf cable. The report did not identify the Gulf cable endpoints or report completion.",
+    body: "The Courier reported that Cyrus Field, Temple and Mackay were leaving in the Medway to lay a new line across the Gulf. A separate notice states that HMS Terrible and the Medway had returned to St. John's from Heart's Content and were leaving with HMS Lily for the new Gulf cable operation. The issue did not identify the Gulf cable endpoints or report completion.",
     sourceId: "mun-courier-1866-gulf-cable",
-    pages: "physical PDF p. 3",
+    pages: "physical PDF pp. 2 to 3",
     status: "reported"
   },
   {

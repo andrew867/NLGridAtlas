@@ -2647,7 +2647,7 @@
       "dependencies": ["NPREG-161"],
       "completion_evidence": ["research/NP_1866_SYSTEM_RECORD.md", "src/data.js", "tests/np-1866-system.test.js"],
       "blocker": null,
-      "notes": "The contemporary newspaper record separates the successful 1866 Atlantic cable, the broken Cape Ray to Cape North regional cable, recovery and operation of the 1865 Atlantic cable, and the reported new Gulf cable-laying operation. Programme cable quantities remain planning values rather than surveyed as-laid lengths."
+      "notes": "The contemporary newspaper record separates the successful 1866 Atlantic cable, the broken Cape Ray to Cape North regional cable, recovery, message traffic and Heart's Content landing of the 1865 Atlantic cable, and the reported new Gulf cable-laying operation. Programme cable quantities remain planning values rather than surveyed as-laid lengths."
     },
     {
       "id": "ASSET-001",

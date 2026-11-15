@@ -33,6 +33,15 @@ test("1865 Atlantic cable recovery and traffic use separate sources", () => {
   assert.match(traffic.body, /Willoughby Smith certified/);
 });
 
+test("1865 Atlantic cable landing retains the reported shore-end times", () => {
+  const event = timeline.find((entry) => entry.date === "1866-09-08");
+  assert.ok(event);
+  assert.equal(event.status, "reported");
+  assert.match(event.body, /about 11:30 a\.m\./);
+  assert.match(event.body, /landed from the Medway/);
+  assert.match(event.body, /fixed in place by 4:30 p\.m\./);
+});
+
 test("1866 Gulf cable report does not invent endpoints or completion", () => {
   const event = timeline.find((entry) => entry.date === "1866-09-12");
   assert.ok(event);
@@ -52,7 +61,7 @@ test("1866 source locators preserve physical pages and states", () => {
   assert.equal(fault?.pages, "physical PDF p. 4");
   assert.equal(recovery?.pages, "physical PDF p. 3");
   assert.equal(traffic?.pages, "physical PDF p. 4");
-  assert.equal(gulf?.pages, "physical PDF p. 3");
+  assert.equal(gulf?.pages, "physical PDF pp. 2 to 3");
   assert.equal(programme?.status, "reported");
   assert.equal(gulf?.status, "reported");
 });
