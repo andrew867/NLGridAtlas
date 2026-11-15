@@ -1906,6 +1906,18 @@
       "notes": "Hydro's NP-308 response says the Exploits River gauging record used in later inflow studies starts in 1928. This is a hydrologic data-series date, not an asset commissioning date. Other exact-year results were anonymous accounting rows, out-of-province plant records, modern numeric matches and references to CGVD28. No 1928 public card or timeline event was created."
     },
     {
+      "id": "NPREG-101",
+      "title": "Close the 1927 system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1927 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-100"],
+      "completion_evidence": ["research/NP_1927_SYSTEM_RECORD.md", "tests/np-1927-system.test.js"],
+      "blocker": null,
+      "notes": "A Statistics Canada table gives Seal Cove unit years as 1922 to 1927, but Newfoundland Power records date the development and both units to 1924. A broad Petty Harbour 1907 to 1927 range is superseded by detailed unit years of 1900, 1908 and 1926. Neither range establishes a 1927 commissioning event, so no public card or timeline event was created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
