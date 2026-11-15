@@ -1798,6 +1798,18 @@
       "notes": "Newfoundland Power dates the concrete base and concrete encasement of the Lawn Forebay Dam rockfill compartments to 1937. A filed 1992 court judgment identifies Grand Falls G4 as a 50 Hz unit but conflicts on its installation year, giving 1938 on physical PDF p. 132 and 1937 on physical PDF p. 135. The post-1986 rewind record gives 27,000 kW and 29,700 kVA, while cited evidence gives 27.6 MW. No other named exact-year 1937 transmission, station, transformer, property, telecommunications, load, reliability, storm or outage record was located."
     },
     {
+      "id": "NPREG-092",
+      "title": "Close the 1936 exact-year system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Search for named 1936 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-091"],
+      "completion_evidence": ["research/NP_1936_SYSTEM_RECORD.md", "tests/np-1936-system.test.js"],
+      "blocker": null,
+      "notes": "The equipment ledger lists circuit breaker 210043, serial LSORT24, purchased in 1936, 33,000 V, Reyrolle, but provides no station or circuit assignment. Searches for both identifiers return only that row, so the equipment is retained in research and not placed on the public atlas. Other results were aggregate accounting rows, market series, legal citations, external utility records and numeric false matches. No 1936 public card or timeline event was created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
