@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "mun-1965-st-johns-electrical-tramway-notice",
+    year: 1965,
+    organization: "Newfoundland Quarterly",
+    title: "Historical Account, 1895 Reid Electrical Tramway Notice",
+    topics: ["1895", "St. John's", "Reid Newfoundland Company", "electrical tramway", "street railway", "public notice"],
+    pages: "physical PDF p. 6, printed p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/quarterly/NQ_Volume64_Number1.pdf"
+  },
+  {
     id: "mun-1896-evening-herald-street-railway-notice",
     year: 1896,
     organization: "The Evening Herald",
@@ -11825,6 +11835,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1895",
+    category: "system proposal",
+    title: "Reid announced an electrical tramway proposal",
+    body: "A historical account says the Reid Newfoundland Company published a notice daily for a month beginning in September. The notice sought permission to construct a St. John's railway operated by electricity or another authorized motive power. It did not establish construction or operation.",
+    sourceId: "mun-1965-st-johns-electrical-tramway-notice",
+    pages: "physical PDF p. 6, printed p. 4",
+    status: "reported"
+  },
   {
     date: "1896",
     category: "system authorization",

@@ -2290,6 +2290,18 @@
       "notes": "The charter notice proposed a St. John's street railway operated by electricity or another authorized power. The legislature passed the incorporation bill, but the Governor withheld assent pending Her Majesty's pleasure. No 1896 company incorporation, construction or operation is claimed."
     },
     {
+      "id": "NPREG-133",
+      "title": "Add the 1895 Reid electrical tramway notice",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1895 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-132"],
+      "completion_evidence": ["research/NP_1895_SYSTEM_RECORD.md", "src/data.js", "tests/np-1895-system.test.js"],
+      "blocker": null,
+      "notes": "The historical account reports a month-long September 1895 notice from the Reid Newfoundland Company seeking permission for a St. John's railway operated by electricity or another authorized motive power. No construction or operating state is assigned."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
