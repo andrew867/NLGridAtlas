@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1849-humphrey-telegraph",
+    year: 1849,
+    organization: "Public Ledger",
+    title: "Humphrey Electric Telegraph Demonstration and Cable Proposal",
+    topics: ["1849", "telegraph", "St. John's", "Mr. Humphrey", "electricity", "galvanism", "working model", "perforated paper", "submarine cable"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18491218.pdf"
+  },
+  {
+    id: "mun-express-1855-gisborne-1849-origin-claim",
+    year: 1855,
+    organization: "Newfoundland Express",
+    title: "Retrospective Claim for Gisborne's 1849 Telegraph Route Proposal",
+    topics: ["1849", "telegraph", "Frederic Newton Gisborne", "Mr. Humphrey", "St. John's", "Cape Ray", "Cape Breton", "Nova Scotia", "Ireland", "origin claim"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/nfldexpress/18551117NewfoundlandExpress.pdf"
+  },
+  {
     id: "mun-courier-1850-halifax-ireland-cable",
     year: 1850,
     organization: "Morning Courier",
@@ -13195,6 +13215,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1849-12-18",
+    category: "telecommunications demonstration",
+    title: "Working electric telegraph model was shown in St. John's",
+    body: "The Public Ledger described Mr. Humphrey's working miniature electric telegraph. A perforated paper strip ran along a table between apparatus and a model station; when the operator applied power, characters were dotted onto paper. The article proposed a submarine wire from Newfoundland to British North America and discussed a direct Atlantic line from southwestern Ireland. It reported a public apparatus demonstration and proposals, not an island operating network.",
+    sourceId: "mun-public-ledger-1849-humphrey-telegraph",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1849-12",
+    category: "telecommunications planning",
+    title: "Later account attributed the Cape Ray route proposal to Humphrey's lecture",
+    body: "A 1855 Newfoundland Express account stated that Humphrey had discussed the project with F. N. Gisborne in Halifax and had presented a St. John's to Cape Ray line, a submarine cable to Cape Breton and a St. John's to southwestern Ireland cable at a December 1849 lecture in the Factory. The 1849 Public Ledger notice confirms the lecture and general cable proposals, but it does not print those route names or the Gisborne attribution.",
+    sourceId: "mun-express-1855-gisborne-1849-origin-claim",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1850-03-27",
     category: "telecommunications planning",

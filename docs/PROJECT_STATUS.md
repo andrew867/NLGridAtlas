@@ -387,10 +387,11 @@ Updated: 2026-11-15
 - Added the 1852 telegraph record. The company report dates the first messages from St. John's to Brigus and Harbor Grace and records repeated line damage. The statutes identify the authorized routes, capital, telegraph-road dimensions and protected physical plant. Contemporary reports separate the proposed Cape Ray schedule, regional cable contracts, the failed November 12 departure and the November 22 cable-laying operation. The completion report's printed return date conflicts with its completion date and remains unresolved.
 - Added the 1851 telegraph record. Chapter 7 identifies the authorized routes, capital, public support, land grant, traffic priority, damage penalties and later government-acquisition terms. Contemporary reports and Gisborne's field journal separate the Cape Ray route survey, field cost estimates, Conception Bay pole and wire work, post damage and the disputed December completion claim. Public operation is not assigned to 1851.
 - Added the 1850 telegraph proposal record. Contemporary reports separate the Halifax to Ireland cable proposal along the Newfoundland Banks, the St. John's station editorial and J.T.M.'s proposed St. John's to Cape Ray, St. Paul's Island and Cape North route. No 1850 Newfoundland company, survey, construction or operating circuit was found.
+- Added the 1849 electric telegraph record. The contemporary Public Ledger describes Humphrey's working miniature telegraph, perforated-paper recorder and proposals for mainland and Atlantic submarine links. A separate 1855 retrospective attributes the specific St. John's, Cape Ray and Cape Breton route to the lecture and Gisborne; the contemporary notice does not.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1850 record under `NPREG-178`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1849 record under `NPREG-179`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

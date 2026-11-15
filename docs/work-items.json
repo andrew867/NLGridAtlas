@@ -2842,6 +2842,18 @@
       "notes": "The record separates the Congressional-scale Halifax to Ireland cable proposal, the St. John's station editorial and J.T.M.'s route proposal. No 1850 Newfoundland company, survey, construction or operating circuit was found."
     },
     {
+      "id": "NPREG-179",
+      "title": "Add the 1849 electric telegraph demonstration and cable proposals",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1849 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-178"],
+      "completion_evidence": ["research/NP_1849_SYSTEM_RECORD.md", "src/data.js", "tests/np-1849-system.test.js"],
+      "blocker": null,
+      "notes": "The contemporary record identifies Humphrey's working miniature telegraph, paper recording apparatus and general mainland and Atlantic cable proposals. A separate 1855 retrospective attributes the specific Cape Ray and Cape Breton route to the lecture and Gisborne."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
