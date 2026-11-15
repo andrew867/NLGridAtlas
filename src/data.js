@@ -620,6 +620,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1930-lawn-structures",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-001, Lawn Forebay Dam and Intake History",
+    topics: ["1930", "Lawn", "forebay dam", "intake", "timber crib", "hydro civil"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/rfi/PUB-NP-001.pdf"
+  },
+  {
+    id: "nlh-1930-grand-falls-unit",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-005 Attachment 8, Grand Falls Development History",
+    topics: ["1930", "Grand Falls", "hydroelectric generation", "generating unit", "Exploits River"],
+    pages: "physical PDF pp. 606 and 610",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-005.PDF"
+  },
+  {
+    id: "np-1930-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1930 Pierre's Brook and Broad Cove Property Records",
+    topics: ["1930", "Pierre's Brook", "Broad Cove", "property", "land acquisition"],
+    pages: "physical PDF p. 134",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1931-property-record",
     year: 2015,
     organization: "Newfoundland Power",
@@ -11426,6 +11456,33 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1930",
+    category: "transmission",
+    title: "Transmission line 3L entered service",
+    body: "Newfoundland Power dates 3L between Goulds and Petty Harbour to 1930. The radial line supplies Petty Harbour and connects the hydro plant to the interconnected system.",
+    sourceId: "np-2004-transmission-rebuild",
+    pages: "physical PDF p. 388",
+    status: "reported"
+  },
+  {
+    date: "1930",
+    category: "civil",
+    title: "Lawn Forebay Dam and intake were built",
+    body: "Newfoundland Power dates the original forebay dam and timber-crib intake to 1930. The intake was rebuilt in concrete in the 1950s.",
+    sourceId: "np-1930-lawn-structures",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1930",
+    category: "generation",
+    title: "Grand Falls added a generating unit",
+    body: "A 2017 engineering report says the Grand Falls hydro development added a generating unit in 1930. The report does not identify its unit number, and it says original Units 1 to 3 were removed in 2002.",
+    sourceId: "nlh-1930-grand-falls-unit",
+    pages: "physical PDF pp. 606 and 610",
+    status: "reported"
+  },
+  {
     date: "1931",
     category: "generation",
     title: "Pierre's Brook hydro plant entered service",
@@ -18385,6 +18442,16 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1930 ADJACENT HYDRO DEVELOPMENT",
+        sourceId: "nlh-1930-grand-falls-unit",
+        pages: "physical PDF pp. 606 and 610",
+        facts: [
+          ["Generating history", "the Grand Falls hydro development added a generating unit in 1930; the report does not identify the unit number"],
+          ["Later plant change", "original Units 1 to 3 were removed in 2002; the Beeton Unit entered service in 2003"],
+          ["Station boundary", "this is the adjacent generating development, not a construction date for the Newfoundland Power terminal station"]
+        ]
+      },
+      {
         label: "1957 101L CONSTRUCTION",
         sourceId: "np-1957-101l-condition",
         pages: "physical PDF p. 252",
@@ -19666,6 +19733,16 @@ const filedFeederMapProfiles = [
       facts: [["Plant refurbishment", "deferred from 2027 to 2031 for further engineering assessment and economic analysis"]]
     },
     historyRecords: [
+      {
+        label: "1930 FOREBAY DAM AND INTAKE",
+        sourceId: "np-1930-lawn-structures",
+        pages: "physical PDF p. 2",
+        facts: [
+          ["Forebay dam", "originally built in 1930; concrete repaired in 1983; spillway widened and downstream rockfill added in 1995"],
+          ["Intake", "original timber-crib structure built in 1930; completely rebuilt in concrete in the 1950s"],
+          ["Intake rehabilitation", "gate and concrete support structure repaired in 1995"]
+        ]
+      },
       {
         label: "1937 TO 1983 DAM WORK",
         sourceId: "np-1948-lawn-dam",
@@ -21225,6 +21302,12 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1930 PROPERTY RECORD",
+        sourceId: "np-1930-property-record",
+        pages: "physical PDF p. 134",
+        facts: [["Deed", "Broad Cove Substation parcel acquired from Samuel Tucker on October 14, 1930; Volume 120, Folios 565 to 566"]]
+      },
       {
         label: "1945 PROPERTY RECORD",
         sourceId: "np-1945-property-record",
@@ -31238,6 +31321,8 @@ export const stationProfiles = [
         facts: [
           ["Circuit", "3L from Goulds to Petty Harbour; radial supply and the plant's connection to the interconnected system"],
           ["Original construction", "1930"],
+          ["Customers in the filing", "400 in the Petty Harbour area"],
+          ["Condition record", "several unplanned outages during the previous four or five years from deteriorated line components"],
           ["Filed work", "rebuild 4.7 km"],
           ["Filed cost", "$364,000"]
         ]
@@ -31856,6 +31941,24 @@ export const stationProfiles = [
         sourceId: "np-2006-hydro-rehabilitation",
         pages: "physical PDF p. 175",
         facts: [["Filed work", "instrumentation work at Pierre's Brook was included in a four-project small hydro rehabilitation program"]]
+      },
+      {
+        label: "1930 GENERATOR EXCITER",
+        sourceId: "np-2016-pierre-brook",
+        pages: "physical PDF p. 246",
+        facts: [
+          ["Original equipment", "exciter supplied with the General Electric generator in 1930"],
+          ["Later condition", "refurbished in 1994; brushgear replaced in 2004; reported in good condition in the 2015 electrical assessment"]
+        ]
+      },
+      {
+        label: "1930 PROPERTY RECORD",
+        sourceId: "np-1930-property-record",
+        pages: "physical PDF p. 134",
+        facts: [
+          ["July 15 deed", "Pierre's Brook parcel acquired from J. William Morris"],
+          ["August deed", "Pierre's Brook parcel acquired from Thomas Cotton"]
+        ]
       },
       {
         label: "1931 PLANT AND ORIGINAL CIVIL WORKS",
