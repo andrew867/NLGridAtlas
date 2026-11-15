@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "mun-1892-flavin-lane-rebuild",
+    year: 1892,
+    organization: "The Evening Herald",
+    title: "Electric Light in Full Swing, Flavin Lane Replacement Station",
+    topics: ["1892", "St. John's", "Flavin Lane", "St. John's Electric Light Company", "Great Fire", "steam generation", "dynamo", "arc lighting", "incandescent lighting", "transformer"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/eveherald/18920928vol03no178EveningHerald.pdf"
+  },
+  {
     id: "gsc-1896-low-grand-falls-survey",
     year: 1896,
     organization: "Geological Survey of Canada",
@@ -11845,6 +11855,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1892",
+    category: "generation reconstruction",
+    title: "Flavin Lane resumed arc-light service after the Great Fire",
+    body: "The July 8 fire destroyed the old station. Replacement construction began July 15. By September 28, the arc-light plant was operating with two 50-light dynamos, two 100 hp compound engines and two 70 hp boilers. A 1,200-light AC dynamo and 1,000/52 V pole transformers were being prepared for incandescent service.",
+    sourceId: "mun-1892-flavin-lane-rebuild",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
   {
     date: "1894",
     category: "hydro resource survey",

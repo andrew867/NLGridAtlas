@@ -2326,6 +2326,18 @@
       "notes": "The official yearbook lists the Electric Light Company as an incorporated body and a June newspaper offered shares for sale. Neither source identifies an electrical-system change, so no timeline event is created."
     },
     {
+      "id": "NPREG-136",
+      "title": "Add the 1892 Flavin Lane replacement-station record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1892 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-135"],
+      "completion_evidence": ["research/NP_1892_SYSTEM_RECORD.md", "src/data.js", "tests/np-1892-system.test.js"],
+      "blocker": null,
+      "notes": "The Great Fire destroyed the old Flavin Lane station. The September replacement record identifies the restored arc-light plant, pending incandescent plant, engines, boilers, dynamos, switchgear and 1,000/52 V pole transformers."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
