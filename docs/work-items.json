@@ -1966,6 +1966,18 @@
       "notes": "A 2008 description-of-operations table lists Seal Cove as 1923, but repeated detailed Newfoundland Power development records state 1924. The 1923 value is retained as a source conflict and is not promoted to a timeline event."
     },
     {
+      "id": "NPREG-106",
+      "title": "Close the 1922 system search and retain the Seal Cove range conflict",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1922 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-105"],
+      "completion_evidence": ["research/NP_1922_SYSTEM_RECORD.md", "tests/np-1922-system.test.js"],
+      "blocker": null,
+      "notes": "A Statistics Canada table gives Seal Cove a two-unit 1922 to 1927 range, but does not assign a year to either unit. Detailed Newfoundland Power records date the development and both units to 1924. No separate 1922 timeline event was created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
