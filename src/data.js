@@ -640,6 +640,66 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-statutes-1854-telegraph-reorganization",
+    year: 1854,
+    organization: "Newfoundland Legislature",
+    title: "Telegraph Acts Repeal and New York Company Incorporation",
+    topics: ["1854", "telegraph", "New York Newfoundland and London Telegraph Company", "Cape Ray", "Trepassey", "St. John's", "Carbonear", "company incorporation", "bond guarantee"],
+    pages: "physical PDF pp. 3 to 4 and 7 to 15",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1854.pdf"
+  },
+  {
+    id: "mun-times-1854-first-labour",
+    year: 1854,
+    organization: "Times and General Commercial Gazette",
+    title: "Victoria First Telegraph Labour Deployment",
+    topics: ["1854", "telegraph", "Victoria", "labour", "inland line", "construction"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18540603.pdf"
+  },
+  {
+    id: "mun-times-1854-long-harbour-road",
+    year: 1854,
+    organization: "Times and General Commercial Gazette",
+    title: "Long Harbour Telegraph Road Construction Report",
+    topics: ["1854", "telegraph", "Long Harbour", "Peak", "bridle road", "construction"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18540819.pdf"
+  },
+  {
+    id: "mun-courier-1854-construction-proposals",
+    year: 1854,
+    organization: "Courier",
+    title: "Cape Ray and Trepassey Telegraph Construction Proposals",
+    topics: ["1854", "telegraph", "Cape Ray", "St. John's", "Renews", "Trepassey", "bridle road", "poles", "braces", "Chandler White"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/Courier18541011.pdf"
+  },
+  {
+    id: "mun-times-1854-mainland-route-report",
+    year: 1854,
+    organization: "Times and General Commercial Gazette",
+    title: "Reported Mainland Cable Route Change",
+    topics: ["1854", "telegraph", "submarine cable", "Prince Edward Island", "Nova Scotia", "Cape North", "Cape Race", "route conflict"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18541101.pdf"
+  },
+  {
+    id: "mun-courier-1854-carbonear-line",
+    year: 1854,
+    organization: "Courier",
+    title: "St. John's and Carbonear Line Inspection",
+    topics: ["1854", "telegraph", "St. John's", "Carbonear", "Hartley J. Gisborne", "wire cutting", "line condition"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/Courier18541220.pdf"
+  },
+  {
     id: "mun-courier-1855-bay-despair-work",
     year: 1855,
     organization: "Courier",
@@ -12825,6 +12885,60 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1854-04-15",
+    category: "telecommunications regulation",
+    title: "Legislature replaced the original telegraph company",
+    body: "Chapter 1 accepted the Newfoundland Electric Telegraph Company's surrendered charter and repealed its incorporating acts. Chapter 2 incorporated the New York, Newfoundland and London Telegraph Company with £312,500, or $1.5 million, in capital. The act required trunk lines from St. John's toward Cape Ray and Trepassey, preserved the St. John's and Carbonear line, granted a conditional fifty-year exclusive right, guaranteed twenty years of interest on fifty £1,000 bonds, and transferred the earlier company's telegraph property to the new company.",
+    sourceId: "mun-statutes-1854-telegraph-reorganization",
+    pages: "physical PDF pp. 3 to 4 and 7 to 15",
+    status: "verified"
+  },
+  {
+    date: "1854-06-03",
+    category: "telecommunications construction",
+    title: "The Victoria carried the first reported labour party to the line",
+    body: "The newspaper reports that the telegraph steamer Victoria departed with its first load of workers to begin work on the inland line. The report expected the vessel to return for another group.",
+    sourceId: "mun-times-1854-first-labour",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1854-08-19",
+    category: "telecommunications construction",
+    title: "Long Harbour bridle road lacked five or six miles",
+    body: "A correspondent reported that the Telegraph Company had completed the road as far as the Peak. The remainder had been opened, with some sections cleared and drained, and five or six miles still required drainage and gravel before the road reached Long Harbour.",
+    sourceId: "mun-times-1854-long-harbour-road",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1854-10-07",
+    category: "telecommunications planning",
+    title: "Company sought contractors for unfinished Cape Ray and Trepassey sections",
+    body: "Chandler White requested proposals for unfinished bridle roads and bridges between Cape Ray and St. John's, roads and bridges from Renews to Trepassey, and the poles and braces required for both lines.",
+    sourceId: "mun-courier-1854-construction-proposals",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1854-11-01",
+    category: "telecommunications planning",
+    title: "Report abandoned the Prince Edward Island cable option",
+    body: "A reprinted report states that the proposed submarine connection between Newfoundland and Prince Edward Island had been abandoned. It prints the replacement route as Cape Race to Nova Scotia at or near Cape North. The April statute and later construction records use Cape Ray, so this report's Cape Race endpoint remains a source conflict.",
+    sourceId: "mun-times-1854-mainland-route-report",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1854-12-20",
+    category: "telecommunications reliability",
+    title: "St. John's to Carbonear line was reported in very bad condition",
+    body: "The St. John's and Carbonear Electric Telegraph Company appointed Hartley J. Gisborne as superintendent. After inspecting the line, he reported it in very bad condition and found that the wire had been deliberately cut in some places.",
+    sourceId: "mun-courier-1854-carbonear-line",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1855-06-13",
     category: "telecommunications construction",

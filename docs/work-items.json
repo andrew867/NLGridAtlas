@@ -2782,6 +2782,18 @@
       "notes": "The record separates Bay Despair inland construction, the cable expedition's arrival, the Cape Ray landing, the failed Cape North crossing, the Cape North survey, Gisborne's route inspection and the November inland-work notice. The work notice remains proposed rather than completed evidence."
     },
     {
+      "id": "NPREG-174",
+      "title": "Add the 1854 telegraph reorganization and construction records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1854 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-173"],
+      "completion_evidence": ["research/NP_1854_SYSTEM_RECORD.md", "src/data.js", "tests/np-1854-system.test.js"],
+      "blocker": null,
+      "notes": "The record separates the enacted company reorganization, first reported inland labour deployment, the Long Harbour road status, the October construction notice, the reported mainland-cable route change and the damaged St. John's to Carbonear line. The October notice remains proposed. The November report's Cape Race endpoint conflicts with the statute and later Cape Ray records."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
