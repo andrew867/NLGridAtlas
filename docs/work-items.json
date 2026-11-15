@@ -2986,6 +2986,18 @@
       "notes": "A September letter proposed St. John's calls by Liverpool and New York steamers. Chapter 10 authorized £500 annually for three years under specified vessel and trip conditions. The Royal Gazette later printed both an editorial interpretation and the official public notice. The 1839 act records that the appropriation remained unused."
     },
     {
+      "id": "NPREG-191",
+      "title": "Add the 1837 Harbour Grace lighthouse and electrical-context records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1837 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-190"],
+      "completion_evidence": ["research/NP_1837_SYSTEM_RECORD.md", "src/data.js", "tests/np-1837-system.test.js"],
+      "blocker": null,
+      "notes": "Chapter 8 authorized completion financing and operating controls for the Harbour Grace Island lighthouse. A November 21 notice recorded completion and the start of nightly fixed-light service. A separate newspaper item described Steinheil's proposed electrical-correspondence experiment outside Newfoundland."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

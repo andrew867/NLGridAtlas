@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-times-1837-steinheil-electric-telegraph",
+    year: 1837,
+    organization: "Times and General Commercial Gazette",
+    title: "Steinheil Electric-Correspondence Experiment Report",
+    topics: ["1837", "Munich", "electric telegraph", "Steinheil", "Gauss", "iron rods", "electrical correspondence"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/timesgeneral/TimesAndGeneralCommercialGazette18371108.pdf"
+  },
+  {
+    id: "mun-statutes-1837-harbour-grace-lighthouse-completion-act",
+    year: 1837,
+    organization: "Newfoundland Legislature",
+    title: "Harbour Grace Island Lighthouse Completion Act",
+    topics: ["1837", "Harbour Grace Island", "lighthouse", "£500 loan", "keeper", "public tender", "fixed light"],
+    pages: "physical PDF pp. 45 to 46, printed pp. 41 to 42",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1837.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1837-harbour-grace-fixed-light",
+    year: 1837,
+    organization: "Royal Gazette",
+    title: "Harbour Grace Island Fixed-Light Notice",
+    topics: ["1837", "Harbour Grace Island", "Conception Bay", "lighthouse", "fixed light", "notice to mariners", "commissioners"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18371121.pdf"
+  },
+  {
     id: "mun-public-ledger-1838-transatlantic-steamer-call-proposal",
     year: 1838,
     organization: "Public Ledger",
@@ -13535,6 +13565,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1837-11-08",
+    category: "telecommunications context",
+    title: "St. John's newspaper described Steinheil's proposed electric correspondence experiment",
+    body: "The Times printed a Munich report that Professor Steinheil intended to test Gauss's plan for electrical correspondence. Workers were said to be placing iron rods between elevated points for the experiment. The article described a proposed foreign experiment, not a Newfoundland electric circuit.",
+    sourceId: "mun-times-1837-steinheil-electric-telegraph",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1837-11-18",
+    category: "navigation infrastructure",
+    title: "Legislature authorized completion financing for Harbour Grace Island lighthouse",
+    body: "Chapter 8 authorized a further loan of up to £500 at no more than six percent interest to complete the Harbour Grace Island lighthouse. It placed keeper appointment with the Governor, required public tenders for purchases and required detailed receipts and costs to be reported to the legislature.",
+    sourceId: "mun-statutes-1837-harbour-grace-lighthouse-completion-act",
+    pages: "physical PDF pp. 45 to 46, printed pp. 41 to 42",
+    status: "verified"
+  },
+  {
+    date: "1837-11-21",
+    category: "navigation infrastructure",
+    title: "Harbour Grace Island fixed light entered nightly service",
+    body: "A notice to mariners said that the Harbour Grace Island lighthouse was complete and that a powerful fixed light would be shown from sunset to sunrise beginning on November 21. The notice described the light's seaward compass direction from north to southwest.",
+    sourceId: "mun-royal-gazette-1837-harbour-grace-fixed-light",
+    pages: "physical PDF p. 3",
+    status: "verified"
+  },
   {
     date: "1838-09-25",
     category: "steam communications",

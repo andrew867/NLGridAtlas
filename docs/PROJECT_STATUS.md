@@ -399,10 +399,11 @@ Updated: 2026-11-15
 - Added the 1840 steam-mail and galvanic-demolition records. The legislature authorized conditional support for St. John's to Halifax steam communication. The first regular Cunard-connected mail retained a sailing Halifax leg; the proposed fall steam vessel was deferred before Admiralty sailing packets were advertised. A separate foreign operation used a voltaic battery and connecting wires to fire an underwater charge.
 - Added the 1839 Cape Spear optical-telegraph, steam-law and galvanic-telegraph records. A May proposal connected vessel signals at Cape Spear with repetition at Signal Hill. An October notice reported the flagstaff arrangements complete and operation imminent without proving a completed transmission. Chapter 7 set conditional vessel, power, bond and schedule terms for a St. John's to Nova Scotia steam service. A separate local newspaper article described the British Great Western Railway galvanic telegraph.
 - Added the 1838 transatlantic steam-service record. A September letter proposed St. John's calls by Liverpool and New York steamers. Chapter 10 authorized £500 annually for three years under a *Sirius* power-or-burden condition and a four-round-trip annual minimum. The *Royal Gazette* then printed a broader editorial interpretation and the Secretary's Office public notice. The 1839 act confirms that the appropriation remained unused.
+- Added the 1837 Harbour Grace Island lighthouse and electrical-context records. Chapter 8 authorized a further £500 loan and specified keeper, tender and accounting controls. A November 21 notice recorded completion and the start of nightly fixed-light service. A separate local newspaper article described Steinheil's proposed electric-correspondence experiment outside Newfoundland.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1837 after the 1838 record under `NPREG-190`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1836 after the 1837 record under `NPREG-191`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
