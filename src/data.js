@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1908-petty-harbour-development",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Petty Harbour Development Record",
+    topics: ["1900", "1908", "1926", "Petty Harbour", "horizontal Francis turbine", "generator", "hydroelectric generation", "net head"],
+    pages: "physical PDF p. 207",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
     id: "np-1910-petty-harbour-valve",
     year: 2009,
     organization: "Newfoundland Power",
@@ -11705,6 +11715,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1908",
+    category: "generation",
+    title: "Petty Harbour added a turbine-generator",
+    body: "The plant record says one of Petty Harbour's three horizontal Francis turbine-generator sets was commissioned in 1908. The three sets had about 5,300 kW aggregate capacity under 57.9 m net head. The source does not map the 1908 machine to a present unit identifier.",
+    sourceId: "np-1908-petty-harbour-development",
+    pages: "physical PDF p. 207",
+    status: "reported"
+  },
   {
     date: "1910",
     category: "generation",
@@ -31760,6 +31779,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1908 GENERATING-UNIT ADDITION",
+        sourceId: "np-1908-petty-harbour-development",
+        pages: "physical PDF p. 207",
+        facts: [
+          ["Historical unit", "one of three horizontal Francis turbine-generator sets commissioned in 1908"],
+          ["Plant rating", "about 5,300 kW aggregate capacity under 57.9 m net head"],
+          ["Unit identity", "the plant record does not map the 1908 machine to a present unit identifier"]
+        ]
+      },
       {
         label: "1910 REPORTED PHR-G1 INSTALLATION",
         sourceId: "np-2013-generation-unit-data",

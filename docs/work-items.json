@@ -2134,6 +2134,18 @@
       "notes": "No named 1909 Newfoundland system event or depreciation placement was located. Exact-year generating-station matches were out-of-province records, including Ontario plants in IC-1."
     },
     {
+      "id": "NPREG-120",
+      "title": "Record the 1908 Petty Harbour generating-unit addition",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1908 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-119"],
+      "completion_evidence": ["research/NP_1908_SYSTEM_RECORD.md", "src/data.js", "tests/np-1908-system.test.js"],
+      "blocker": null,
+      "notes": "The detailed Petty Harbour plant record dates one of its three horizontal Francis turbine-generator sets to 1908 and gives 5,300 kW aggregate plant capacity under 57.9 m net head. The source does not map the historical machine to a present unit identifier. No 1908 depreciation placement was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
