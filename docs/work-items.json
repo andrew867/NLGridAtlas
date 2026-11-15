@@ -1930,6 +1930,18 @@
       "notes": "The 1926 queue adds a Petty Harbour generating-unit and powerhouse-extension record plus a Bay Bulls Big Pond property deed. Seal Cove G2 remains unresolved because a 2009 filing calls it a 1926, 2.4 MW unit while the 2013 generating-unit table lists 1924 and 2.6 MW. The historical Petty Harbour machine is not assigned to a current unit identifier."
     },
     {
+      "id": "NPREG-103",
+      "title": "Add the 1925 Deer Lake and Corner Brook records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1925 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-102"],
+      "completion_evidence": ["research/NP_1925_SYSTEM_RECORD.md", "src/data.js", "tests/np-1925-system.test.js"],
+      "blocker": null,
+      "notes": "A Statistics Canada station table lists nine Deer Lake Power units with commissioning years from 1925 to 1929 and 127,084 kW total capacity, but does not identify individual unit years. Hydro dates the Corner Brook mill and its predominantly 50 Hz electrical system to 1925. The mill date is not assigned to the later frequency converter."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

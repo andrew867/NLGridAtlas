@@ -620,6 +620,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "nlh-1925-corner-brook-mill",
+    year: 2016,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "2017 Capital Budget Application, Corner Brook Mill Electrical History",
+    topics: ["1925", "Corner Brook", "pulp and paper mill", "50 Hz", "electrical system"],
+    pages: "physical PDF p. 592",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%202016-07-28.PDF"
+  },
+  {
+    id: "nlh-1925-deer-lake-generation",
+    year: 2006,
+    organization: "Statistics Canada / Newfoundland and Labrador Hydro",
+    title: "IC-1, Electric Power Generating Stations 2004, Deer Lake Power",
+    topics: ["1925", "1929", "Deer Lake Power", "Grand Lake", "hydroelectric generation", "generating units"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/rfi/IC-1.pdf"
+  },
+  {
     id: "np-1926-petty-harbour-development",
     year: 2012,
     organization: "Newfoundland Power",
@@ -11506,6 +11526,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1925",
+    category: "generation",
+    title: "Deer Lake Power commissioning began",
+    body: "A Statistics Canada generating-station table lists nine Deer Lake units with commissioning years spanning 1925 to 1929 and a combined plant capacity of 127.084 MW. The table does not assign a year to each unit.",
+    sourceId: "nlh-1925-deer-lake-generation",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
     date: "1926",
     category: "generation",
     title: "Petty Harbour added a generating unit",
@@ -17520,6 +17549,24 @@ export const islandTerminalRecords = [
       ["Massey Drive interface", "L1, L16, and L17 connect to 66 kV bus B4"],
       ["Newfoundland Power supply", "Hydro wheels power on L1 to Marble Mountain and Pasadena"],
       ["Frequency converter", "Listed separately from the 81.1 MW 60 Hz generation at 18.0 MW in the 2017 generation supply table"]
+    ],
+    historyRecords: [
+      {
+        label: "1925 TO 1929 GENERATING FLEET",
+        sourceId: "nlh-1925-deer-lake-generation",
+        pages: "physical PDF p. 3",
+        facts: [
+          ["Generating station", "nine units at Grand Lake with commissioning years spanning 1925 to 1929"],
+          ["Published plant capacity", "127,084 kW"],
+          ["Unit-date boundary", "the table does not assign individual commissioning years to unit identifiers"]
+        ]
+      },
+      {
+        label: "1925 CORNER BROOK MILL",
+        sourceId: "nlh-1925-corner-brook-mill",
+        pages: "physical PDF p. 592",
+        facts: [["Electrical system", "the mill was originally constructed in 1925 with predominantly 50 Hz power and electrical equipment"]]
+      }
     ],
     diagram: {
       label: "2017 generation record / 2018 filed connections",
