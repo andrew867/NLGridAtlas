@@ -6184,10 +6184,20 @@ export const sources = [
     year: 2019,
     organization: "NL Hydro",
     title: "PUB-NLH-005, Exploits Generation Condition Assessment",
-    topics: ["1907", "Grand Falls", "Bishop's Falls", "Exploits generation", "main dam", "forebay intake", "G4", "G9", "T1", "T2", "T3", "T8", "T9", "6.9 kV", "66 kV", "generator step-up transformer", "station bus"],
-    pages: "physical PDF pp. 551, 606, 608, 663 to 669, 693 to 695, and 978",
+    topics: ["1905", "1907", "Grand Falls", "Bishop's Falls", "Exploits generation", "main dam", "forebay gates", "forebay intake", "Units 8 and 9", "G4", "G9", "T1", "T2", "T3", "T8", "T9", "6.9 kV", "66 kV", "generator step-up transformer", "station bus"],
+    pages: "physical PDF pp. 551, 606, 608, 651, 663 to 671, 690, 693 to 695, and 978",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-005.PDF"
+  },
+  {
+    id: "nlh-2018-exploits-long-term-plan",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Reliability and Resource Adequacy Study, Volume III, Long-Term Resource Plan",
+    topics: ["1905", "Exploits watershed", "Grand Falls", "Bishop's Falls", "run-of-river generation"],
+    pages: "physical PDF pp. 22 to 23, report pp. 17 to 18",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/2018ratemitigation/responses/PUB-Nalcor-122.PDF"
   },
   {
     id: "nlh-gfc-decommissioning-2014",
@@ -11735,6 +11745,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1905",
+    category: "generation",
+    title: "Exploits plant equipment records date to 1905",
+    body: "The 2017 condition assessment dates eight surface forebay gates at the Grand Falls power canal entrance to 1905. It also identifies Bishop's Falls Units 8 and 9 as original 1905 S. Morgan Smith horizontal pit turbines rated 1 MW each. The report records a 1983 rehabilitation and says both units were out of service during the 2017 inspection.",
+    sourceId: "nlh-exploits-condition-2017",
+    pages: "physical PDF pp. 651, 671 and 690",
+    status: "reported"
+  },
   {
     date: "1906",
     category: "generation",
@@ -18342,6 +18361,7 @@ export const islandTerminalRecords = [
     name: "Grand Falls and Bishop's Falls generation",
     status: "reported",
     facts: [
+      ["1905 Exploits equipment", "eight Grand Falls surface forebay gates; Bishop's Falls Units 8 and 9, each originally rated 1 MW"],
       ["1906 development", "the provincial environmental filing says the Anglo Newfoundland Development Company first harnessed Grand Falls hydroelectric potential in 1906"],
       ["1907 civil works", "Grand Falls main dam and original forebay intake; Bishop's Falls forebay intake"],
       ["2013 system assignment", "Grand Falls G9, 26.9 MW; Grand Falls G4, 25.7 MW; Bishop's Falls, 18.4 MW"],
@@ -18352,7 +18372,7 @@ export const islandTerminalRecords = [
       ["Grand Falls G4", "27.5 MVA generator; converted from 50 Hz to 60 Hz and connected at 6.9 kV"],
       ["Grand Falls G5 to G8", "5 MVA, 6 MVA, 5 MVA, and 6 MVA respectively in the 2017 condition assessment"],
       ["Bishop's Falls Units 1 to 7", "3 MVA each on a common 6.9 kV bus in the 2017 condition assessment"],
-      ["Bishop's Falls Units 8 and 9", "1.6 MVA and 1.9 MVA at 600 V; both were out of service in the 2017 condition assessment"],
+      ["Bishop's Falls Units 8 and 9", "S. Morgan Smith horizontal pit turbines installed in 1905, each originally rated 1 MW; the 2017 assessment lists 1.6 MVA and 1.9 MVA generators at 600 V and says both units were out of service during the inspection"],
       ["Bishop's Falls export", "T8, built in 2002, steps generation up to the 66 kV link to Grand Falls; a complementary transformer steps it down at Grand Falls"],
       ["Bishop's Falls second transformer", "T9 was built in 1983; the 2017 assessment described the spare transformers as 46 kV units with less capacity than the plant output"]
     ],
@@ -18363,7 +18383,7 @@ export const islandTerminalRecords = [
       circuits: [],
       generators: [{ label: "Grand Falls G9", rating: "26.9 MW / 33.3 MVA", bus: "b1" }, { label: "Grand Falls G4", rating: "25.7 MW / 27.5 MVA", bus: "b1" }, { label: "Bishop's Falls G1 to G7", rating: "7 x 3 MVA", bus: "b3" }]
     },
-    sources: [sourceRef("gnl-1906-grand-falls-first-harnessed", "physical PDF p. 18, printed p. 17"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 606, 608 and 669"), sourceRef("nlh-1911-goodyears-dam", "physical PDF pp. 599 to 600"), sourceRef("nlh-1911-grand-falls-turbines", "physical PDF pp. 947 and 983 to 984"), sourceRef("np-1937-grand-falls-g4", "physical PDF pp. 131 to 135"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
+    sources: [sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 651, 671 and 690"), sourceRef("nlh-2018-exploits-long-term-plan", "physical PDF pp. 22 to 23, report pp. 17 to 18"), sourceRef("gnl-1906-grand-falls-first-harnessed", "physical PDF p. 18, printed p. 17"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 606, 608 and 669"), sourceRef("nlh-1911-goodyears-dam", "physical PDF pp. 599 to 600"), sourceRef("nlh-1911-grand-falls-turbines", "physical PDF pp. 947 and 983 to 984"), sourceRef("np-1937-grand-falls-g4", "physical PDF pp. 131 to 135"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
   },
   {
     code: "GFC",

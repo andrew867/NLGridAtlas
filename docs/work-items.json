@@ -2170,6 +2170,18 @@
       "notes": "A 2026 provincial environmental filing says the Anglo Newfoundland Development Company first harnessed Grand Falls hydroelectric potential in 1906. The later condition assessment dates the named main dam and original intake to 1907. No 1906 depreciation placement was located."
     },
     {
+      "id": "NPREG-123",
+      "title": "Add the 1905 Exploits generation equipment record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1905 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-122"],
+      "completion_evidence": ["research/NP_1905_SYSTEM_RECORD.md", "src/data.js", "tests/np-1905-system.test.js"],
+      "blocker": null,
+      "notes": "The 2017 Exploits condition assessment dates eight Grand Falls surface forebay gates and Bishop's Falls Units 8 and 9 to 1905. Each Bishop's Falls unit was originally rated 1 MW. The report records their 1983 rehabilitation and their out-of-service state during the 2017 inspection. Aggregate depreciation balances remain unassigned."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
