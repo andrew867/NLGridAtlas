@@ -1882,6 +1882,18 @@
       "notes": "The 1930 queue adds 3L between Goulds and Petty Harbour, the original Lawn Forebay Dam and intake, the Pierre's Brook exciter and property acquisitions, the Broad Cove Substation property record, and the reported Grand Falls generating-unit addition. The Grand Falls source does not identify the unit number, and the scanned Pierre's Brook property schedule does not resolve the day of the August deed."
     },
     {
+      "id": "NPREG-099",
+      "title": "Add the 1929 generation and regulatory records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1929 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load, reliability and regulatory evidence.",
+      "dependencies": ["NPREG-098"],
+      "completion_evidence": ["research/NP_1929_SYSTEM_RECORD.md", "src/data.js", "tests/np-1929-system.test.js"],
+      "blocker": null,
+      "notes": "Newfoundland Power places the original Lawn development and woodstave penstock in 1929. The provincial government also created the first Public Utilities Commission that year, but its authority was limited to government-referred investigations. The Bay Bulls Big Pond property schedule records a September 25, 1929 acquisition."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

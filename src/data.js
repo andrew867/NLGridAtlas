@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1929-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1929 Bay Bulls Big Pond Property Record",
+    topics: ["1929", "Bay Bulls Big Pond", "William Frizzelle", "property", "land acquisition"],
+    pages: "physical PDF p. 134",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1930-lawn-structures",
     year: 2009,
     organization: "Newfoundland Power",
@@ -1304,7 +1314,7 @@ export const sources = [
     year: 2019,
     organization: "Newfoundland Power",
     title: "NLH-NP-017, Woodstave Penstock Register",
-    topics: ["1959", "Pitmans Pond", "Victoria", "woodstave penstock", "hydroelectric generation"],
+    topics: ["1929", "1959", "Lawn", "Petty Harbour", "Pitmans Pond", "Port Union", "Sandy Brook", "Topsail", "Victoria", "woodstave penstock", "hydroelectric generation"],
     pages: "physical PDF p. 1",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/rfi/NLH-NP-017.PDF"
@@ -11456,6 +11466,24 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1929",
+    category: "generation",
+    title: "Lawn hydro development entered service",
+    body: "Newfoundland Power dates the original Lawn development to 1929. The two original Voith turbines were replaced during the 1983 refurbishment.",
+    sourceId: "np-2013-lawn-plant",
+    pages: "physical PDF p. 140",
+    status: "reported"
+  },
+  {
+    date: "1929",
+    category: "regulation",
+    title: "Government created a Public Utilities Commission",
+    body: "The commission was intended to improve consistency in electrical rates and services. It could investigate matters referred by government, but it did not yet have general authority to set rates or direct service.",
+    sourceId: "pub-1949-establishment",
+    pages: "physical PDF p. 17",
+    status: "reported"
+  },
+  {
     date: "1930",
     category: "transmission",
     title: "Transmission line 3L entered service",
@@ -19734,6 +19762,21 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1929 ORIGINAL DEVELOPMENT",
+        sourceId: "np-2013-lawn-plant",
+        pages: "physical PDF p. 140",
+        facts: [
+          ["Original plant", "commissioned in 1929 with two Voith turbines"],
+          ["1983 refurbishment", "one 600 kW Barber turbine and Ideal Electric generator replaced the original generating units"]
+        ]
+      },
+      {
+        label: "1929 WOODSTAVE PENSTOCK",
+        sourceId: "np-1959-woodstave-penstocks",
+        pages: "physical PDF p. 1",
+        facts: [["Penstock", "original woodstave construction dated to 1929; replaced in 1981; 286 m woodstave length"]]
+      },
+      {
         label: "1930 FOREBAY DAM AND INTAKE",
         sourceId: "np-1930-lawn-structures",
         pages: "physical PDF p. 2",
@@ -21657,6 +21700,12 @@ const earlyFeederMapProfiles = [
       facts: [["BIG-T1", "66/12.5 kV; 11.11 MVA; 8.30 MVA 2026 forecast"]]
     },
     historyRecords: [
+      {
+        label: "1929 PROPERTY RECORD",
+        sourceId: "np-1929-property-record",
+        pages: "physical PDF p. 134",
+        facts: [["Deed", "Bay Bulls Big Pond parcel acquired from William Frizzelle on September 25, 1929; Volume 108, Folio 492"]]
+      },
       {
         label: "1977 STATION STRUCTURES",
         sourceId: "np-2010-substation-asset-history",
