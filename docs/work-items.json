@@ -2086,6 +2086,18 @@
       "notes": "The depreciation ledger records unidentified 1913 placements of $37,500 in account 323 and $39,000 in account 325. The 2010 survivor table retains $33,500 and $25,518 respectively. No filing identifies the plant or location."
     },
     {
+      "id": "NPREG-116",
+      "title": "Close the 1912 system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1912 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-115"],
+      "completion_evidence": ["research/NP_1912_SYSTEM_RECORD.md", "tests/np-1912-system.test.js"],
+      "blocker": null,
+      "notes": "No named 1912 Newfoundland system event or depreciation placement was located. Exact-year results were unrelated records and numeric artifacts, including a consultant address at 1912 West Anderson Lane."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
