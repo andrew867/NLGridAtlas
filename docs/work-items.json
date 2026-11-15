@@ -2506,6 +2506,18 @@
       "notes": "A later encyclopedia account reports the first private telephone line on March 20, 1878. The Supply Act separately records interest on a Newfoundland Savings' Bank advance for Northern Telegraph construction."
     },
     {
+      "id": "NPREG-151",
+      "title": "Add the 1877 telegraph completion and property-protection records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1877 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-150"],
+      "completion_evidence": ["research/NP_1877_SYSTEM_RECORD.md", "src/data.js", "tests/np-1877-system.test.js"],
+      "blocker": null,
+      "notes": "An 1885 review reports two telegraph line groups completed in 1877. The 1877 statute separately identifies batteries, machinery, wire-cable and posts as protected telegraph property."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "nl-statutes-1877-telegraph-protection",
+    year: 1877,
+    organization: "Newfoundland Legislature",
+    title: "Protection of Electric and Magnetic Telegraph Property",
+    topics: ["1877", "telegraph", "battery", "machinery", "wire-cable", "posts", "communications obstruction", "criminal law"],
+    pages: "physical PDF pp. 391 to 393, printed pp. 56 to 58",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland18751878.pdf"
+  },
+  {
     id: "mun-enl-1878-first-telephone",
     year: 1981,
     organization: "Encyclopedia of Newfoundland and Labrador",
@@ -704,7 +714,7 @@ export const sources = [
     year: 1885,
     organization: "The Evening Mercury",
     title: "Telegraph Expansion Review, 1876 to 1885",
-    topics: ["1882", "Coon River", "Cape Ray", "Harbor Breton", "telegraph", "branch line", "completed works"],
+    topics: ["1876", "1877", "1882", "Trinity", "Catalina", "Bonavista", "King's Cove", "St. George's Bay", "Bay of Islands", "Bonne Bay", "Batt's Cove", "Tilt Cove", "Little Bay", "Coon River", "Cape Ray", "Harbor Breton", "telegraph", "branch line", "completed works"],
     pages: "physical PDF p. 2",
     status: "reported",
     url: "https://dai.mun.ca/pdfs/eveherald/EveningMercury18850924.pdf"
@@ -12025,6 +12035,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1877-04-26",
+    category: "telecommunications regulation",
+    title: "Telegraph batteries, machinery, wire-cable and posts received statutory protection",
+    body: "The act covered malicious damage to batteries, machinery, wire-cable and posts used in an electric or magnetic telegraph. It also covered obstruction of telegraph communications.",
+    sourceId: "nl-statutes-1877-telegraph-protection",
+    pages: "physical PDF pp. 391 to 393, printed pp. 56 to 58",
+    status: "verified"
+  },
+  {
+    date: "1877",
+    category: "telecommunications",
+    title: "Two telegraph line groups were reported complete",
+    body: "An 1885 review reports completion of lines to Trinity, Catalina, Bonavista and King's Cove, and to St. George's Bay, Bay of Islands, Bonne Bay, Batt's Cove, Tilt Cove and Little Bay. It reports that construction began in 1876.",
+    sourceId: "mun-evening-mercury-1885-telegraph-history",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1878-03-20",
     category: "telecommunications",
