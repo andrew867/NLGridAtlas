@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-morning-chronicle-1872-western-telegraph-offices",
+    year: 1872,
+    organization: "The Morning Chronicle",
+    title: "Western Telegraph Offices, Rose Blanche and Bay Roberts",
+    topics: ["1872", "telegraph", "Rose Blanche", "Bay Roberts", "Placentia", "western Newfoundland", "station operations"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/mchronicle/MorningChronicle18721113.pdf"
+  },
+  {
     id: "nl-law-reports-1873-telegraph-consolidation",
     year: 1875,
     organization: "Supreme Court of Newfoundland",
@@ -12165,6 +12175,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1872-11-13",
+    category: "telecommunications operations",
+    title: "General abandonment of western telegraph offices was denied",
+    body: "The Morning Chronicle reported that inquiries did not support the alleged abandonment of telegraph stations west of Placentia. It identified Rose Blanche as an operating office and said the expected closure there was not part of a general plan to close other western offices.",
+    sourceId: "mun-morning-chronicle-1872-western-telegraph-offices",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1872-11-13",
+    category: "telecommunications proposal",
+    title: "Rose Blanche closure and Bay Roberts office were intended",
+    body: "The newspaper said the Rose Blanche office was expected to close in spring after the firm it served ceased business and receipts became too small to support the station. It also reported an intention to open a new telegraph office at Bay Roberts in Conception Bay.",
+    sourceId: "mun-morning-chronicle-1872-western-telegraph-offices",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
   {
     date: "1873-06-26",
     category: "telecommunications ownership",

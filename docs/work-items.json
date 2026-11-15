@@ -2566,6 +2566,18 @@
       "notes": "The Newfoundland Law Reports establish the June 26 consolidation of the Anglo-American and Newfoundland telegraph companies. A separate company notice dated July 18 lists fourteen owned submarine cables and their routes."
     },
     {
+      "id": "NPREG-156",
+      "title": "Add the 1872 western telegraph-office record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1872 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-155"],
+      "completion_evidence": ["research/NP_1872_SYSTEM_RECORD.md", "src/data.js", "tests/np-1872-system.test.js"],
+      "blocker": null,
+      "notes": "The November 13 Morning Chronicle identifies Rose Blanche as an operating telegraph office, rejects a general western-office abandonment, and separately reports the intended Rose Blanche closure and Bay Roberts opening. The intended changes remain proposed."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
