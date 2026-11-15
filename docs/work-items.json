@@ -2266,6 +2266,18 @@
       "notes": "The 1965 historical account dates site selection, the Water Street survey and the start of Petty Harbour dam work to May 1898. Newfoundland Power separately dates the start of hydroelectric plant construction to 1899, so both records remain visible."
     },
     {
+      "id": "NPREG-131",
+      "title": "Add the 1897 Black River industrial water-power record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1897 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-130"],
+      "completion_evidence": ["research/NP_1897_SYSTEM_RECORD.md", "src/data.js", "tests/np-1897-system.test.js"],
+      "blocker": null,
+      "notes": "The Black River pulp mill was built between May and November 1897 with dams, an artificial falls and water turbines stated to provide 12,000 hp for mill machinery. Neither source identifies electric generation or a grid connection."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

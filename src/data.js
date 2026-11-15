@@ -11806,6 +11806,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1897",
+    category: "industrial water power",
+    title: "Black River pulp mill began operation",
+    body: "Construction began in May and was completed in November. The works included dams and an artificial falls that supplied water turbines stated to provide 12,000 hp for mill machinery. The source does not identify electric generation or a grid connection.",
+    sourceId: "mun-1998-black-river-pulp-mill",
+    pages: "physical PDF p. 16, printed p. 14",
+    status: "reported"
+  },
+  {
     date: "1898",
     category: "generation construction",
     title: "Petty Harbour dam site was selected and work began",
