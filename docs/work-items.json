@@ -2278,6 +2278,18 @@
       "notes": "The Black River pulp mill was built between May and November 1897 with dams, an artificial falls and water turbines stated to provide 12,000 hp for mill machinery. Neither source identifies electric generation or a grid connection."
     },
     {
+      "id": "NPREG-132",
+      "title": "Add the 1896 electric street-railway petition and assent record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1896 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-131"],
+      "completion_evidence": ["research/NP_1896_SYSTEM_RECORD.md", "src/data.js", "tests/np-1896-system.test.js"],
+      "blocker": null,
+      "notes": "The charter notice proposed a St. John's street railway operated by electricity or another authorized power. The legislature passed the incorporation bill, but the Governor withheld assent pending Her Majesty's pleasure. No 1896 company incorporation, construction or operation is claimed."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

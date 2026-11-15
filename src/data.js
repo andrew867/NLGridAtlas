@@ -620,6 +620,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "mun-1896-evening-herald-street-railway-notice",
+    year: 1896,
+    organization: "The Evening Herald",
+    title: "Public Notice, Saint John's Street Railway Company Charter Petition",
+    topics: ["1896", "St. John's", "street railway", "electric traction", "charter petition", "Robert Gillespie Reid"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/eveherald/18960414vol07no87EveningHerald.pdf"
+  },
+  {
+    id: "mun-1896-daily-news-street-railway-bill",
+    year: 1896,
+    organization: "The Daily News",
+    title: "The Street Railway Bill",
+    topics: ["1896", "St. John's", "street railway", "incorporation bill", "royal assent"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/dailynews/DailyNews18960807.pdf"
+  },
+  {
     id: "mun-1965-st-johns-street-railway",
     year: 1965,
     organization: "Newfoundland Quarterly",
@@ -11805,6 +11825,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1896",
+    category: "system authorization",
+    title: "St. John's street railway bill awaited royal assent",
+    body: "The legislature passed the bill to incorporate the St. John's Street Railway Company. The Governor declined assent and reserved the bill pending Her Majesty's pleasure. The record does not establish company incorporation, construction or operation in 1896.",
+    sourceId: "mun-1896-daily-news-street-railway-bill",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
   {
     date: "1897",
     category: "industrial water power",
