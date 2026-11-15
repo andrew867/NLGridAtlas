@@ -2914,6 +2914,18 @@
       "notes": "The local press printed a detailed report of Highton's experimental British line. The almanac records existing sailing-packet mail and a proposed steam replacement. An imported article's phrase 'in this town' is not assigned to St. John's."
     },
     {
+      "id": "NPREG-185",
+      "title": "Add the 1843 St. John's electrical-experiment record",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1843 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-184"],
+      "completion_evidence": ["research/NP_1843_SYSTEM_RECORD.md", "src/data.js", "tests/np-1843-system.test.js"],
+      "blocker": null,
+      "notes": "A St. John's society with about forty members owned an electrical machine and used it for experiments. The contemporary letter does not name the society or describe an electric telegraph. A separate British telegraph report describes optical semaphore infrastructure."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

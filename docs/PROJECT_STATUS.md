@@ -393,10 +393,11 @@ Updated: 2026-11-15
 - Closed the 1846 system search without adding a timeline event. A St. John's newspaper described the Portsmouth Harbour submarine-telegraph test, including the submerged cable and receiving index. The test occurred in England and did not identify Newfoundland infrastructure.
 - Added the 1845 telegraph-publication and mail baseline records. The *Morning Post* described the operating Cooke and Wheatstone apparatus on the Great Western Railway. The *Newfoundland Almanac* records the Halifax steam-packet connection and the longer England-to-colony postal cycle. Neither source identifies a Newfoundland telegraph installation.
 - Added the 1844 Highton telegraph report and mail-transition record. The *Public Ledger* described conductor length, glass insulation and signal registration on an English experimental line. The almanac records existing sailing-packet mail and a proposed steam replacement. An unattributed article's phrase "in this town" is not assigned to St. John's because its copied source locality is unresolved.
+- Added the 1843 St. John's electrical-experiment record. A contemporary letter identifies the society's officers, scientific books and electrical machine, and says that members used the machine for experiments. The letter does not name the society or describe an electric telegraph. A separate article's telegraph systems were optical semaphore networks outside Newfoundland.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1844 record under `NPREG-184`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1842 after the 1843 record under `NPREG-185`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

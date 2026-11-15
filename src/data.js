@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1843-st-johns-electrical-machine",
+    year: 1843,
+    organization: "Public Ledger",
+    title: "St. John's Society Electrical Machine and Experiments",
+    topics: ["1843", "St. John's", "electrical machine", "electrical experiments", "scientific education", "Patrick Kough", "John Withers", "philosophical apparatus"],
+    pages: "physical PDF pp. 2 to 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18431208.pdf"
+  },
+  {
+    id: "mun-public-ledger-1843-optical-telegraph",
+    year: 1843,
+    organization: "Public Ledger",
+    title: "British Admiralty Optical-Telegraph Report",
+    topics: ["1843", "optical telegraph", "semaphore", "Admiralty", "Land's End", "Portsmouth", "telegraph terminology"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18430127.pdf"
+  },
+  {
     id: "mun-public-ledger-1844-highton-telegraph",
     year: 1844,
     organization: "Public Ledger",
@@ -13285,6 +13305,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1843-12-08",
+    category: "electrical education",
+    title: "A St. John's society used an electrical machine for experiments",
+    body: "A Public Ledger letter described a St. John's society with about forty members, scientific books and an electrical machine. Members used the machine for experiments during their meetings. The letter named Patrick Kough as president and John Withers as vice-president, but did not print the society's name. It did not describe an electric telegraph.",
+    sourceId: "mun-public-ledger-1843-st-johns-electrical-machine",
+    pages: "physical PDF pp. 2 to 3",
+    status: "reported"
+  },
   {
     date: "1844-06-18",
     category: "telecommunications context",
