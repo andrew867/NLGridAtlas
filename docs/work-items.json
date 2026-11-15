@@ -2350,6 +2350,18 @@
       "notes": "The St. John's Municipal Council by-laws imposed a $200 annual licence fee on electric light companies from July 1, 1891. The source establishes municipal regulation, not an electrical-system change, so no timeline event is created."
     },
     {
+      "id": "NPREG-138",
+      "title": "Close the 1890 system-record search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1890 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-137"],
+      "completion_evidence": ["research/NP_1890_SYSTEM_RECORD.md", "tests/np-1890-system.test.js"],
+      "blocker": null,
+      "notes": "The 1890 directory identifies the St. John's Electric Light Company, its officers and its Prescott Street at Flavin's Lane address. The yearbook lists the existing telegraph network and earlier expenditure. Neither source identifies a 1890 system change, so no timeline event is created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
