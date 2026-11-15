@@ -2494,6 +2494,18 @@
       "notes": "The Supply Act appropriated $7,000 for interest and maintenance of new telegraph lines. It does not split the amount between purposes or identify a route or construction project."
     },
     {
+      "id": "NPREG-150",
+      "title": "Add the 1878 first telephone and Northern Telegraph records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1878 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-149"],
+      "completion_evidence": ["research/NP_1878_SYSTEM_RECORD.md", "src/data.js", "tests/np-1878-system.test.js"],
+      "blocker": null,
+      "notes": "A later encyclopedia account reports the first private telephone line on March 20, 1878. The Supply Act separately records interest on a Newfoundland Savings' Bank advance for Northern Telegraph construction."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

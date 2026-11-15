@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-enl-1878-first-telephone",
+    year: 1981,
+    organization: "Encyclopedia of Newfoundland and Labrador",
+    title: "First Recorded Telephone Line in Newfoundland",
+    topics: ["1878", "St. John's", "telephone", "John Delaney", "John Higgins", "point-to-point line", "Scientific American"],
+    pages: "physical PDF p. 178, printed p. 838",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_enl/ENLV1E.pdf"
+  },
+  {
+    id: "nl-statutes-1878-northern-telegraph",
+    year: 1878,
+    organization: "Newfoundland Legislature",
+    title: "Northern Telegraph Construction Financing",
+    topics: ["1878", "Northern Telegraph", "Newfoundland Savings' Bank", "construction advance", "interest", "Supply Act"],
+    pages: "physical PDF p. 595, printed p. 102",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland18751878.pdf"
+  },
+  {
     id: "nl-statutes-1879-telegraph-appropriation",
     year: 1879,
     organization: "Newfoundland Legislature",
@@ -12005,6 +12025,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1878-03-20",
+    category: "telecommunications",
+    title: "A private telephone line connected two St. John's homes",
+    body: "The first recorded telephones in Newfoundland connected the homes of John Delaney and John Higgins by a private point-to-point line. Delaney built the instruments from Scientific American instructions. The event is reported in a later encyclopedia account that cites the Royal Gazette.",
+    sourceId: "mun-enl-1878-first-telephone",
+    pages: "physical PDF p. 178, printed p. 838",
+    status: "reported"
+  },
+  {
+    date: "1878",
+    category: "telecommunications authorization",
+    title: "Northern Telegraph construction advance carried an interest appropriation",
+    body: "The Supply Act appropriated $765 to pay interest on $17,000 advanced by the Newfoundland Savings' Bank for construction of the Northern Telegraph. The act does not identify the route or completed work.",
+    sourceId: "nl-statutes-1878-northern-telegraph",
+    pages: "physical PDF p. 595, printed p. 102",
+    status: "verified"
+  },
   {
     date: "1879",
     category: "telecommunications authorization",
