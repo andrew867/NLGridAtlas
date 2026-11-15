@@ -2542,6 +2542,18 @@
       "notes": "The House journal records the withdrawn £30,000 Direct Cable proposal, the Faraday cable-laying failure and an unresolved motion on telegraph purchase rights. The North Star separately publishes the Anglo-American operating station list and transatlantic tariff reduction."
     },
     {
+      "id": "NPREG-154",
+      "title": "Add the 1874 Faraday cable attempt and limited injunction",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1874 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-153"],
+      "completion_evidence": ["research/NP_1874_SYSTEM_RECORD.md", "src/data.js", "tests/np-1874-system.test.js"],
+      "blocker": null,
+      "notes": "The August 29 Times publication records the July 26 Direct Cable attempt in Conception Bay and the Supreme Court's limited injunction against cable landing, land-line construction and telegraph operation within Newfoundland jurisdiction."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

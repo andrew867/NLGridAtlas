@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-times-1874-faraday-cable-attempt",
+    year: 1874,
+    organization: "The Times and General Commercial Gazette",
+    title: "Direct Cable Attempt in Conception Bay",
+    topics: ["1874", "Direct United States Cable Company", "Faraday", "Conception Bay", "Harbor Grace", "submarine cable", "telegraph"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18740829.pdf"
+  },
+  {
+    id: "mun-times-1874-cable-injunction",
+    year: 1874,
+    organization: "The Times and General Commercial Gazette",
+    title: "Supreme Court Judgment on the Direct Cable Attempt",
+    topics: ["1874", "Anglo American Telegraph Company", "Direct United States Cable Company", "submarine cable", "land line", "telegraph", "injunction"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18740829.pdf"
+  },
+  {
     id: "nl-assembly-1875-direct-cable-offer",
     year: 1875,
     organization: "Newfoundland House of Assembly",
@@ -12125,6 +12145,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1874-07-26",
+    category: "telecommunications construction",
+    title: "Direct Cable Company attempted a Conception Bay cable landing",
+    body: "A published Supreme Court judgment records that the Direct United States Cable Company brought a telegraphic cable from Torbay, Nova Scotia, into Conception Bay and laid it for several miles within the bay's headlands. The planned system would have connected the United States and the United Kingdom through Newfoundland.",
+    sourceId: "mun-times-1874-faraday-cable-attempt",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1874-08-29",
+    category: "telecommunications regulation",
+    title: "Published judgment limited the Direct Cable work in Newfoundland",
+    body: "The published judgment restrained the defendants from bringing a submarine cable to shore or landing one, constructing land lines, and operating a telegraph line on the island. Judge Robinson concurred in the limited order.",
+    sourceId: "mun-times-1874-cable-injunction",
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported"
+  },
   {
     date: "1875-02-16",
     category: "telecommunications proposal",

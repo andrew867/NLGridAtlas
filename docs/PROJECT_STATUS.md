@@ -362,10 +362,11 @@ Updated: 2026-11-15
 - Corrected the 1877 telegraph record. The February 1878 Governor's speech reports that Trinity, Catalina and Bonavista had been connected since October 1877. Contemporary 1878 reports conflict with the later review that assigned the western group and King's Cove to 1877. The enacted statute identifies batteries, machinery, wire-cable and posts as protected telegraph property.
 - Added the 1876 northern communications and telegraph proposals. The House journal records the operating communications gap, the Cape St. John company petition, proposed guarantee terms and the legislative request for northern connections. It does not establish construction in 1876.
 - Added the 1875 cable and telegraph record. The House journal records a withdrawn £30,000 Direct Cable proposal, the Faraday cable-laying failure and an unresolved motion on telegraph purchase rights. The North Star separately lists the operating Anglo-American stations and reports the transatlantic tariff reduction from 75 cents to 50 cents per word.
+- Added the 1874 Direct Cable record. The published Supreme Court judgment records the July 26 Faraday cable attempt in Conception Bay and the limited injunction against cable landing, land-line construction and telegraph operation within Newfoundland jurisdiction.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1875 cable and tariff records under `NPREG-153`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1874 Direct Cable record under `NPREG-154`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
