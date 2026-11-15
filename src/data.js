@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-almanac-1869-telegraph-companies",
+    year: 1869,
+    organization: "The Newfoundland Almanac",
+    title: "Atlantic and Newfoundland Telegraph Company Record, 1869",
+    topics: ["1869", "telegraph", "Atlantic Telegraph Company", "Anglo-American Telegraph Company", "New York, Newfoundland and London Telegraph Company", "St. John's", "through messages", "revenue sharing"],
+    pages: "physical PDF pp. 1 and 107, printed p. 73",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_almanac/Almanac1869.pdf"
+  },
+  {
+    id: "mun-morning-chronicle-1869-telegraph-reports",
+    year: 1869,
+    organization: "The Morning Chronicle",
+    title: "Telegraph Company Reports Presented to the House",
+    topics: ["1869", "telegraph", "New York, Newfoundland and London Telegraph Company", "House of Assembly", "company reports", "1867", "1868"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/mchronicle/MorningChronicle18690424.pdf"
+  },
+  {
     id: "mun-express-1870-coastal-fishery-cable-proposal",
     year: 1870,
     organization: "The Express",
@@ -12195,6 +12215,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1869",
+    category: "telecommunications operations",
+    title: "The almanac recorded St. John's telegraph management and through-message revenue terms",
+    body: "The 1869 almanac listed the Atlantic, Anglo-American and New York, Newfoundland and London telegraph companies. It identified Brooking & Co. as the Anglo-American agent in St. John's and Alexander M. McKay as general superintendent and local manager of the Newfoundland company. The almanac described annual Anglo-American entitlements of £125,000 from Atlantic Telegraph Company line earnings and £25,000 from the Newfoundland company for through messages.",
+    sourceId: "mun-almanac-1869-telegraph-companies",
+    pages: "physical PDF p. 107, printed p. 73",
+    status: "reported"
+  },
   {
     date: "1870-08-27",
     category: "telecommunications proposal",

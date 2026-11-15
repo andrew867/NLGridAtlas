@@ -2602,6 +2602,18 @@
       "notes": "The August 27 Express discusses a proposed Newfoundland and Labrador coastal fishery cable, using Norway's system as its example. The source contains advocacy, not approval, route engineering, appropriation, construction or completion evidence."
     },
     {
+      "id": "NPREG-159",
+      "title": "Add the 1869 telegraph company record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1869 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-158"],
+      "completion_evidence": ["research/NP_1869_SYSTEM_RECORD.md", "src/data.js", "tests/np-1869-system.test.js"],
+      "blocker": null,
+      "notes": "The 1869 almanac names the three linked telegraph companies, their St. John's representation and the Anglo-American through-message revenue terms. The April 24 Morning Chronicle separately confirms presentation of the Newfoundland company's 1867 and 1868 reports to the House, but does not print their contents."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

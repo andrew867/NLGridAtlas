@@ -367,10 +367,11 @@ Updated: 2026-11-15
 - Added the 1872 western telegraph-office record. The November 13 report identifies Rose Blanche as an operating office and rejects a general closure of stations west of Placentia. The intended Rose Blanche closure and Bay Roberts opening remain proposed.
 - Added the 1871 telegraph directory. It explicitly lists company offices at Black River, Brigus, Carbonear, Chapel Arm, Harbor Grace and St. John's. Heart's Content is separately recorded from its company-line description and telegraph staff roster.
 - Added the 1870 coastal fishery cable proposal. The August 27 article proposed a submarine telegraph cable along the Newfoundland and Labrador coasts, using Norway's fishery-reporting system as its example. No approval, route, appropriation, construction or completion is assigned.
+- Added the 1869 telegraph company record. The almanac identifies the Atlantic, Anglo-American and New York, Newfoundland and London companies, their St. John's representation and the reported through-message revenue terms. The April 24 newspaper confirms presentation of the Newfoundland company's 1867 and 1868 reports to the House, but does not provide their contents.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1870 coastal cable proposal under `NPREG-158`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1869 telegraph company record under `NPREG-159`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
