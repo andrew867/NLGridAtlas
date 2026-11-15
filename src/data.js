@@ -620,6 +620,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1917-port-union-development",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Port Union Hydroelectric Development Record",
+    topics: ["1917", "Port Union", "hydroelectric generation", "Francis turbine", "Pelton Waterwheel", "General Electric", "commissioning"],
+    pages: "physical PDF pp. 144 to 145",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1917-port-union-units",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-021, Selected Generating Unit Data",
+    topics: ["1917", "Port Union", "PUN-G1", "PUN-G2", "hydroelectric generation", "unit rating"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-021.pdf"
+  },
+  {
+    id: "np-1917-port-union-governors",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-175 Attachment I, Port Union Original Governors",
+    topics: ["1917", "Port Union", "governor", "Pelton Water Wheel", "Hurricane Igor", "flood damage"],
+    pages: "physical PDF p. 172",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf"
+  },
+  {
+    id: "np-1917-cochrane-diversion",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-003, Cochrane Pond Watershed Diversion Record",
+    topics: ["1917", "Cochrane Pond", "Manuels River", "Petty Harbour", "Topsail", "watershed diversion", "hydroelectric generation"],
+    pages: "physical PDF p. 280",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/rfi/CA-NP-003.pdf"
+  },
+  {
+    id: "np-1917-bay-bulls-big-pond-property",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, Bay Bulls Big Pond Property Record",
+    topics: ["1917", "Bay Bulls Big Pond", "Goose Pond", "property", "William Frizzelle", "hydroelectric storage"],
+    pages: "physical PDF p. 133",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1918-hearts-content-development",
     year: 2012,
     organization: "Newfoundland Power",
@@ -11605,6 +11655,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1917",
+    category: "generation",
+    title: "Port Union hydroelectric development entered service",
+    body: "Newfoundland Power dates Port Union and both generating units to 1917. The detailed record identifies two Pelton horizontal Francis turbines with General Electric generators under 21.3 m net head.",
+    sourceId: "np-1917-port-union-development",
+    pages: "physical PDF p. 144",
+    status: "reported"
+  },
+  {
+    date: "1917",
+    category: "generation",
+    title: "Cochrane Pond was diverted into the Petty Harbour system",
+    body: "The project diverted the Cochrane Pond watershed from Manuels River as part of the Petty Harbour hydroelectric development. A later study says the diversion preceded construction of the Topsail development.",
+    sourceId: "np-1917-cochrane-diversion",
+    pages: "physical PDF p. 280",
+    status: "reported"
+  },
   {
     date: "1918",
     category: "generation",
@@ -28355,6 +28423,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1917 DEVELOPMENT COMMISSIONING",
+        sourceId: "np-1917-port-union-development",
+        pages: "physical PDF pp. 144 to 145; unit table physical PDF p. 2; governor record physical PDF p. 172",
+        facts: [
+          ["Development", "commissioned in 1917 with two generating units under 21.3 m net head"],
+          ["Turbines", "two horizontal Francis turbines manufactured by the Pelton Waterwheel Company"],
+          ["Generators", "General Electric; the selected-unit table lists PUN-G1 and PUN-G2 at 0.3 MW each with 1917 installation dates"],
+          ["Published capacity", "500 kW in the detailed development record; 511 kW in CA-NP-088"],
+          ["Governors", "the 2011 flood-rehabilitation report identifies both Pelton governors as original to the 1917 construction"]
+        ]
+      },
+      {
         label: "1918 ORIGINAL WOODSTAVE PENSTOCK",
         sourceId: "np-1918-port-union-penstock",
         pages: "physical PDF p. 1; compare CA-NP-036 physical PDF p. 144",
@@ -31592,6 +31672,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1917 COCHRANE POND WATERSHED DIVERSION",
+        sourceId: "np-1917-cochrane-diversion",
+        pages: "physical PDF p. 280",
+        facts: [
+          ["Diversion", "Cochrane Pond watershed diverted from Manuels River as part of the Petty Harbour hydroelectric development"],
+          ["Later system relationship", "the Topsail hydroelectric development was constructed after the diversion"]
+        ]
+      },
       {
         label: "1924 WATER-RIGHTS DEED",
         sourceId: "np-1924-petty-harbour-water-rights",

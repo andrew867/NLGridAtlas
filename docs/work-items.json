@@ -2026,6 +2026,18 @@
       "notes": "Later primary records date the original Heart's Content development and a Southern Cove pipe or flume corridor deed to 1918. A separate register dates Port Union's original penstock to 1918 while the detailed plant record dates commissioning and both turbines to 1917. Unidentified account 326 and 327 entries remain unassigned."
     },
     {
+      "id": "NPREG-111",
+      "title": "Add the 1917 Port Union and Cochrane Pond records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1917 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-110"],
+      "completion_evidence": ["research/NP_1917_SYSTEM_RECORD.md", "src/data.js", "tests/np-1917-system.test.js"],
+      "blocker": null,
+      "notes": "Multiple filings date Port Union and both generating units to 1917. A later rehabilitation report identifies its Pelton governors as original. The Cochrane Pond watershed was diverted from Manuels River into the Petty Harbour development, and the utility acquired Bay Bulls Big Pond property. Later Port Union capacity, powerhouse and penstock descriptions remain source specific."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
