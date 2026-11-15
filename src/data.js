@@ -640,6 +640,76 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-times-1858-company-office",
+    year: 1858,
+    organization: "Times and General Commercial Gazette",
+    title: "New York, Newfoundland and London Telegraph Company Office Notice",
+    topics: ["1858", "telegraph", "St. John's", "New York Newfoundland and London Telegraph Company", "A. Shea", "local manager"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18580424.pdf"
+  },
+  {
+    id: "mun-telegraph-1858-cape-race-service",
+    year: 1858,
+    organization: "Telegraph",
+    title: "Cape Race News Interception Service",
+    topics: ["1858", "telegraph", "Cape Race", "mail steamers", "interception vessel", "New York", "news service"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/telegraph/Telegraph18580324.pdf"
+  },
+  {
+    id: "mun-public-ledger-1858-atlantic-cable-landing",
+    year: 1858,
+    organization: "Public Ledger",
+    title: "Atlantic Cable Landing at Trinity Bay",
+    topics: ["1858", "telegraph", "Atlantic cable", "Trinity Bay", "Niagara", "Telegraph House", "cable landing"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18580810.pdf"
+  },
+  {
+    id: "mun-telegraph-1858-cable-tests",
+    year: 1858,
+    organization: "Telegraph",
+    title: "August Atlantic Cable Message Tests",
+    topics: ["1858", "telegraph", "Atlantic cable", "Valentia", "Newfoundland", "message test", "100 words per hour"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/telegraph/Telegraph18580901.pdf"
+  },
+  {
+    id: "mun-times-1858-cable-diagnostic",
+    year: 1858,
+    organization: "Times and General Commercial Gazette",
+    title: "Trinity Bay Atlantic Cable Diagnostic Work",
+    topics: ["1858", "telegraph", "Atlantic cable", "Trinity Bay", "Valentia", "Lundy", "signal tests"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18581013.pdf"
+  },
+  {
+    id: "mun-public-ledger-1858-cable-fault",
+    year: 1858,
+    organization: "Public Ledger",
+    title: "Atlantic Cable Fault Status",
+    topics: ["1858", "telegraph", "Atlantic cable", "fault", "Valentia", "Henley", "Varley"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18581105.pdf"
+  },
+  {
+    id: "mun-public-ledger-1858-valentia-equipment",
+    year: 1858,
+    organization: "Public Ledger",
+    title: "Valentia Atlantic Cable Test Equipment",
+    topics: ["1858", "telegraph", "Atlantic cable", "Valentia", "Henley magneto-electric machine", "induction coil", "galvanometer"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18581207.pdf"
+  },
+  {
     id: "mun-morning-post-1859-cape-race-agency",
     year: 1859,
     organization: "Morning Post",
@@ -12575,6 +12645,69 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1858-03-24",
+    category: "telecommunications operations",
+    title: "Cape Race vessel supplied news to the Newfoundland telegraph",
+    body: "A vessel watched for mail steamers off Cape Race. News obtained from the steamers was sent over the electric telegraph from Newfoundland to New York. The article proposed a new floating message container but does not establish that it entered service.",
+    sourceId: "mun-telegraph-1858-cape-race-service",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1858-04-19",
+    category: "telecommunications operations",
+    title: "Company notice identified its St. John's office and local manager",
+    body: "A notice from the St. John's office of the New York, Newfoundland and London Telegraph Company called a May 3 general meeting in New York. The notice identifies A. Shea as local manager.",
+    sourceId: "mun-times-1858-company-office",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1858-08-05",
+    category: "telecommunications infrastructure",
+    title: "Atlantic cable was landed at Trinity Bay",
+    body: "Cyrus W. Field's journal records that the Niagara anchored at 1:45 a.m. A shore party informed the people at the Telegraph House that the fleet was ready to land the cable. The cable was landed at 5:15 a.m., and the shore end was carried into the Telegraph House at 6:00 a.m. The journal reports a strong electric current through the cable from the other side of the Atlantic.",
+    sourceId: "mun-public-ledger-1858-atlantic-cable-landing",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1858-08-16",
+    category: "telecommunications operations",
+    title: "Atlantic cable repeated a directors' message through Newfoundland",
+    body: "A message from Valentia reports that a directors' message was transmitted to Newfoundland and repeated back without error or omission. A separate August 18 message states that Valentia was receiving accurately from Newfoundland at 100 words per hour.",
+    sourceId: "mun-telegraph-1858-cable-tests",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1858-10-13",
+    category: "telecommunications maintenance",
+    title: "Coordinated tests were arranged for the faulty Atlantic cable",
+    body: "The report states that the cable difficulty had not been removed. Mr. Lundy, an assistant at Valentia, came to Newfoundland to examine the wire at Trinity Bay and arrange coordinated signal tests from both ends. The report does not state that service was restored.",
+    sourceId: "mun-times-1858-cable-diagnostic",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1858-11-05",
+    category: "telecommunications reliability",
+    title: "Atlantic cable remained practically useless",
+    body: "The report says no fault had been found. Henley and Varley estimated that the fault was nearly 300 miles from Valentia. The estimate is not a confirmed fault location.",
+    sourceId: "mun-public-ledger-1858-cable-fault",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1858-12-07",
+    category: "telecommunications equipment",
+    title: "Valentia test equipment was described",
+    body: "Henley's magneto-electric apparatus used two permanent magnets, each assembled from 30 horseshoe steel magnets. Each induction coil contained about six miles of wire. A smaller receiving instrument and a galvanometer were also described. Tests received a response through the faulty cable but did not identify the fault location.",
+    sourceId: "mun-public-ledger-1858-valentia-equipment",
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported"
+  },
   {
     date: "1859-01-04",
     category: "telecommunications operations",

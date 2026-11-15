@@ -2734,6 +2734,18 @@
       "notes": "The record identifies the St. John's to New York news service, the Cape Race interception vessel, a June 2 ship intercept, an auction of Atlantic Telegraph Company property and a St. John's Electric Telegraph Company office. The auction notice does not state why the property was sold."
     },
     {
+      "id": "NPREG-170",
+      "title": "Add the 1858 Atlantic cable landing, service and fault records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1858 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-169"],
+      "completion_evidence": ["research/NP_1858_SYSTEM_RECORD.md", "src/data.js", "tests/np-1858-system.test.js"],
+      "blocker": null,
+      "notes": "The record identifies the St. John's company office, Cape Race news service, August 5 cable landing, August message tests, unresolved October and November fault work, and the Valentia test apparatus. Proposed message-container work and estimated fault distance remain separate from operating and confirmed evidence."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
