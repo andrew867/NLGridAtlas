@@ -640,6 +640,96 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1853-first-cable-message",
+    year: 1853,
+    organization: "Public Ledger",
+    title: "Charlottetown to Cape Tormentine Submarine-Cable Message",
+    topics: ["1853", "telegraph", "submarine cable", "Charlottetown", "Cape Tormentine", "F. N. Gisborne", "Prince Edward Island", "New Brunswick"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18530125.pdf"
+  },
+  {
+    id: "mun-courier-1853-regional-cable",
+    year: 1853,
+    organization: "Courier",
+    title: "Cape Tormentine to Carlton Head Submarine Cable",
+    topics: ["1853", "telegraph", "submarine cable", "Cape Tormentine", "Carlton Head", "F. N. Gisborne", "Captain Kennedy", "Sackville", "Charlottetown"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/MorningCourier18530129.pdf"
+  },
+  {
+    id: "mun-public-ledger-1853-route-design",
+    year: 1853,
+    organization: "Public Ledger",
+    title: "Reported Newfoundland Telegraph Route Design",
+    topics: ["1853", "telegraph", "St. John's", "Brigus", "Cape Ray", "subterranean wire", "submarine cable", "route planning"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18530211.pdf"
+  },
+  {
+    id: "mun-courier-1853-line-materials",
+    year: 1853,
+    organization: "Courier",
+    title: "Newfoundland Telegraph Line Materials Report",
+    topics: ["1853", "telegraph", "overland wire", "subterranean wire", "carriages", "mules", "construction materials"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/MorningCourier18530326.pdf"
+  },
+  {
+    id: "mun-statutes-1853-telegraph-capital",
+    year: 1853,
+    organization: "Newfoundland Legislature",
+    title: "Newfoundland Electric Telegraph Company Capital Amendment",
+    topics: ["1853", "telegraph", "Newfoundland Electric Telegraph Company", "authorized capital", "shares", "legislation"],
+    pages: "physical PDF p. 70, Chapter 11",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1853.pdf"
+  },
+  {
+    id: "mun-statutes-1853-wire-damage-compensation",
+    year: 1853,
+    organization: "Newfoundland Legislature",
+    title: "St. John's and Carbonear Telegraph Wire-Damage Compensation",
+    topics: ["1853", "telegraph", "St. John's", "Carbonear", "wire damage", "compensation", "appropriation"],
+    pages: "physical PDF pp. 86 and 91, Chapter 16",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1853.pdf"
+  },
+  {
+    id: "mun-morning-post-1853-ship-harbour-road",
+    year: 1853,
+    organization: "Morning Post",
+    title: "Ship Harbour Telegraph Road and Underground-Wire Trenches",
+    topics: ["1853", "telegraph", "Ship Harbour Road", "Long Harbour", "Cape Ray Telegraph Company", "subterranean wire", "trench", "road construction"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morningpost/MorningPost18530920.pdf"
+  },
+  {
+    id: "mun-courier-1853-unpaid-labour",
+    year: 1853,
+    organization: "Courier",
+    title: "Newfoundland Telegraph Labour and Work-Suspension Correspondence",
+    topics: ["1853", "telegraph", "Newfoundland Electric Telegraph Company", "labour", "unpaid wages", "work suspension", "P. F. Little", "Charles T. B. Keep"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/MorningCourier18531105.pdf"
+  },
+  {
+    id: "mun-courier-1853-financing-claim",
+    year: 1853,
+    organization: "Courier",
+    title: "Gisborne Telegraph Financing Claim",
+    topics: ["1853", "telegraph", "F. N. Gisborne", "financing", "company charter", "company works", "New York"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/MorningCourier18531203.pdf"
+  },
+  {
     id: "mun-statutes-1854-telegraph-reorganization",
     year: 1854,
     organization: "Newfoundland Legislature",
@@ -12885,6 +12975,87 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1853-01-24",
+    category: "telecommunications operations",
+    title: "Submarine-cable message passed from Charlottetown to Cape Tormentine",
+    body: "The Public Ledger reprinted a New Brunswicker report that the first telegraphic message from Charlottetown to Cape Tormentine by submarine cable had passed on the previous day. The report states that Gisborne forwarded the message from Cape Tormentine. It does not identify the receiving city in its own text.",
+    sourceId: "mun-public-ledger-1853-first-cable-message",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1853-01-29",
+    category: "telecommunications infrastructure",
+    title: "Cape Tormentine to Carlton Head submarine cable was reported complete",
+    body: "The Courier reported that Captain Kennedy and F. N. Gisborne had laid the cable between Cape Tormentine, New Brunswick, and Carlton Head, Prince Edward Island. Shallow water kept the steamer one mile from the New Brunswick shore. The crew brought that mile ashore with a kedge anchor, four horses and oxen. The operation occupied eleven hours, and the completed regional line connected Sackville and Charlottetown.",
+    sourceId: "mun-courier-1853-regional-cable",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1853-02-11",
+    category: "telecommunications planning",
+    title: "Reported design placed the Newfoundland line underground west of Brigus",
+    body: "A New York Journal of Commerce article reprinted in the Public Ledger described a proposed land line from St. John's to Cape Ray. It stated that the route west of Brigus had been selected for underground construction. The same article described a 139-mile submarine crossing from Cape Ray, but did not establish installation or completion.",
+    sourceId: "mun-public-ledger-1853-route-design",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1853-03-26",
+    category: "telecommunications construction",
+    title: "Overland wire had arrived for the Newfoundland line",
+    body: "The Courier reported that overland wire had arrived. Subterranean wire, carriages and mules for laying the wire were expected in six weeks, and the company expected to hire most or all labour locally. The expected shipment and hiring remain plans, not completion evidence.",
+    sourceId: "mun-courier-1853-line-materials",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1853-06-15",
+    category: "telecommunications regulation",
+    title: "Legislature authorized a threefold increase in telegraph-company capital",
+    body: "Chapter 11 authorized the Newfoundland Electric Telegraph Company to increase its capital from £100,000 to £300,000. The act increased the authorized share count from 1,000 to 3,000 shares at £100 each.",
+    sourceId: "mun-statutes-1853-telegraph-capital",
+    pages: "physical PDF p. 70, Chapter 11",
+    status: "verified"
+  },
+  {
+    date: "1853-06-15",
+    category: "telecommunications reliability",
+    title: "Legislature compensated the Carbonear company for wire damage",
+    body: "Chapter 16 granted £86 13s 4d to the St. John's and Carbonear Electric Telegraph Company for damage to the line's wires and other losses. It also directed that the previous session's line-protection grant not be spent.",
+    sourceId: "mun-statutes-1853-wire-damage-compensation",
+    pages: "physical PDF pp. 86 and 91, Chapter 16",
+    status: "verified"
+  },
+  {
+    date: "1853-09-20",
+    category: "telecommunications construction",
+    title: "Underground-wire trenches followed the Ship Harbour Road",
+    body: "The published road-commission report states that the Cape Ray Telegraph Company used the Ship Harbour Road and had dug trenches for subterranean electric wires beside it. The road had been surveyed, opened, cleared and bridged for 28 miles to Long Harbour. Fourteen miles had been drained and gravelled, and the road was about seven feet wide.",
+    sourceId: "mun-morning-post-1853-ship-harbour-road",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1853-09-21",
+    category: "telecommunications construction",
+    title: "Telegraph labourers sought unpaid wages after work stopped",
+    body: "P. F. Little wrote that labourers employed on the Newfoundland line had applied to recover their wages and had been deprived of work during the season. He asked whether the company would pay them, continue the line or abandon completed work. The company's October 25 reply said validated claims would be paid and work would proceed as early as practicable, without giving a restart date.",
+    sourceId: "mun-courier-1853-unpaid-labour",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1853-11-08",
+    category: "telecommunications finance",
+    title: "Gisborne reported an £11,000 offer against the charter and works",
+    body: "In a letter from Prince Edward Island, F. N. Gisborne stated that English supporters had offered £11,000 against the company's charter and works. He said the offer had revived the New York backers. The letter is Gisborne's claim and does not record a completed financing transaction.",
+    sourceId: "mun-courier-1853-financing-claim",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1854-04-15",
     category: "telecommunications regulation",

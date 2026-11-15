@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "status_values": ["not_started", "in_progress", "blocked", "done", "deferred"],
   "priority_values": ["P0", "P1", "P2", "P3"],
   "phase_values": [0, 1, 2, 3, 4, 5],
@@ -2792,6 +2792,18 @@
       "completion_evidence": ["research/NP_1854_SYSTEM_RECORD.md", "src/data.js", "tests/np-1854-system.test.js"],
       "blocker": null,
       "notes": "The record separates the enacted company reorganization, first reported inland labour deployment, the Long Harbour road status, the October construction notice, the reported mainland-cable route change and the damaged St. John's to Carbonear line. The October notice remains proposed. The November report's Cape Race endpoint conflicts with the statute and later Cape Ray records."
+    },
+    {
+      "id": "NPREG-175",
+      "title": "Add the 1853 telegraph capital, construction and work-suspension records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1853 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-174"],
+      "completion_evidence": ["research/NP_1853_SYSTEM_RECORD.md", "src/data.js", "tests/np-1853-system.test.js"],
+      "blocker": null,
+      "notes": "The record separates the regional submarine-cable link, proposed Newfoundland route design, arrived and expected construction materials, enacted capital increase, wire-damage compensation, measured Ship Harbour Road work, unpaid labour correspondence and Gisborne's unconfirmed financing claim. The April company report's 1852 operating dates are assigned to the 1852 queue."
     },
     {
       "id": "ASSET-001",
