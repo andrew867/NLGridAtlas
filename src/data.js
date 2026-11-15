@@ -640,6 +640,46 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-statutes-1834-st-johns-cape-spear-lighthouse-act",
+    year: 1834,
+    organization: "Newfoundland Legislature",
+    title: "St. John's and Cape Spear Lighthouse Act",
+    topics: ["1834", "Fort Amherst", "Cape Spear", "lighthouse", "light duties", "£1,000 loan", "plans and estimates", "St. John's harbour buoys"],
+    pages: "physical PDF pp. 14 to 16, printed pp. 17 to 19",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1834.pdf"
+  },
+  {
+    id: "mun-public-ledger-1834-fort-amherst-light-notice",
+    year: 1834,
+    organization: "Public Ledger",
+    title: "Fort Amherst Nightly-Light Notice",
+    topics: ["1834", "Fort Amherst", "St. John's harbour", "lighthouse", "sunset to sunrise", "notice to mariners"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18340822.pdf"
+  },
+  {
+    id: "mun-public-ledger-1834-cape-spear-construction-tender",
+    year: 1834,
+    organization: "Public Ledger",
+    title: "Cape Spear Lighthouse Construction Tender",
+    topics: ["1834", "Cape Spear", "lighthouse", "construction tender", "plan", "specification", "John Shea"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18340729.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1834-fort-amherst-oil-wick-tender",
+    year: 1834,
+    organization: "Royal Gazette",
+    title: "Fort Amherst Seal-Oil and Lamp-Wick Tender",
+    topics: ["1834", "Fort Amherst", "lighthouse", "pale seal oil", "lamp wick", "annual supply", "John Shea"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18341007.pdf"
+  },
+  {
     id: "mun-statutes-1835-cape-spear-further-loan-act",
     year: 1835,
     organization: "Newfoundland Legislature",
@@ -13635,6 +13675,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1834-06-12",
+    category: "navigation infrastructure",
+    title: "Legislature organized the Fort Amherst and Cape Spear lighthouse system",
+    body: "Chapter 4 placed Fort Amherst and Cape Spear under five commissioners. Fort Amherst already had a lighthouse building and lighting apparatus but lacked operating funds. The act established vessel duties, authorized a Cape Spear loan of up to £1,000, required approved plans, estimates and contracts, and placed St. John's harbour buoys, chains and moorings under the commissioners.",
+    sourceId: "mun-statutes-1834-st-johns-cape-spear-lighthouse-act",
+    pages: "physical PDF pp. 14 to 16, printed pp. 17 to 19",
+    status: "verified"
+  },
+  {
+    date: "1834-07-07",
+    category: "navigation infrastructure",
+    title: "Commissioners announced nightly light at Fort Amherst",
+    body: "A commissioners' notice dated July 7 stated that a light would be exhibited from sunset to sunrise at Fort Amherst on the south head of the entrance to St. John's harbour. The notice announces the service from its date; it is not a later operating log.",
+    sourceId: "mun-public-ledger-1834-fort-amherst-light-notice",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1834-07-23",
+    category: "navigation infrastructure",
+    title: "Cape Spear lighthouse construction was offered for tender",
+    body: "The lighthouse commissioners requested tenders from persons willing to erect a lighthouse at Cape Spear. The notice stated that the plan and specification were available from secretary John Shea and set August 2 for receipt of tenders.",
+    sourceId: "mun-public-ledger-1834-cape-spear-construction-tender",
+    pages: "physical PDF p. 3",
+    status: "verified"
+  },
+  {
+    date: "1834-10-06",
+    category: "navigation infrastructure",
+    title: "Fort Amherst sought a year of seal oil and lamp wick",
+    body: "The lighthouse commissioners requested tenders for pale seal oil and lamp wick for Fort Amherst during the following 12 months. Supplies were to be delivered in the quantities required, documenting the lamp's fuel and consumable supply arrangement.",
+    sourceId: "mun-royal-gazette-1834-fort-amherst-oil-wick-tender",
+    pages: "physical PDF p. 3",
+    status: "verified"
+  },
   {
     date: "1835-05-08",
     category: "navigation infrastructure",
