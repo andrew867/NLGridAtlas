@@ -2158,6 +2158,18 @@
       "notes": "The Exploits condition assessment dates the Grand Falls main dam and original forebay intake, plus the Bishop's Falls forebay intake, to 1907. A 2022 filing calls Petty Harbour Unit 2 a 1907 installation, conflicting with the detailed plant record's 1908 historical-unit date. The account 325 placement remains unassigned."
     },
     {
+      "id": "NPREG-122",
+      "title": "Add the 1906 Grand Falls development record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1906 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-121"],
+      "completion_evidence": ["research/NP_1906_SYSTEM_RECORD.md", "src/data.js", "tests/np-1906-system.test.js"],
+      "blocker": null,
+      "notes": "A 2026 provincial environmental filing says the Anglo Newfoundland Development Company first harnessed Grand Falls hydroelectric potential in 1906. The later condition assessment dates the named main dam and original intake to 1907. No 1906 depreciation placement was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

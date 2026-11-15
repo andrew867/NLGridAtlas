@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "gnl-1906-grand-falls-first-harnessed",
+    year: 2026,
+    organization: "Government of Newfoundland and Labrador",
+    title: "Exploits Generation: Proposed Goodyear's Dam Life Extension Project",
+    topics: ["1906", "Grand Falls", "Exploits River", "Anglo Newfoundland Development Company", "hydroelectric generation", "first harnessed"],
+    pages: "physical PDF p. 18, printed p. 17",
+    status: "reported",
+    url: "https://www.gov.nl.ca/eccc/files/env_assessment_y2026_2398_registration_document.pdf"
+  },
+  {
     id: "np-1907-petty-harbour-unit-2",
     year: 2021,
     organization: "Newfoundland Power",
@@ -11726,6 +11736,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1906",
+    category: "generation",
+    title: "Grand Falls hydroelectric development began harnessing the Exploits",
+    body: "A 2026 provincial environmental filing says the Anglo Newfoundland Development Company first harnessed the hydroelectric potential at Grand Falls in 1906. Later asset records date the main dam and original forebay intake to 1907.",
+    sourceId: "gnl-1906-grand-falls-first-harnessed",
+    pages: "physical PDF p. 18, printed p. 17",
+    status: "reported"
+  },
+  {
     date: "1907",
     category: "hydro civil",
     title: "Grand Falls dam and two Exploits intakes date to 1907",
@@ -18323,6 +18342,7 @@ export const islandTerminalRecords = [
     name: "Grand Falls and Bishop's Falls generation",
     status: "reported",
     facts: [
+      ["1906 development", "the provincial environmental filing says the Anglo Newfoundland Development Company first harnessed Grand Falls hydroelectric potential in 1906"],
       ["1907 civil works", "Grand Falls main dam and original forebay intake; Bishop's Falls forebay intake"],
       ["2013 system assignment", "Grand Falls G9, 26.9 MW; Grand Falls G4, 25.7 MW; Bishop's Falls, 18.4 MW"],
       ["Original G5 to G8 turbines", "built in 1911 to drive pulp grinders, not electric generators; replaced in 1950 and converted to electric generation in 1976"],
@@ -18343,7 +18363,7 @@ export const islandTerminalRecords = [
       circuits: [],
       generators: [{ label: "Grand Falls G9", rating: "26.9 MW / 33.3 MVA", bus: "b1" }, { label: "Grand Falls G4", rating: "25.7 MW / 27.5 MVA", bus: "b1" }, { label: "Bishop's Falls G1 to G7", rating: "7 x 3 MVA", bus: "b3" }]
     },
-    sources: [sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 606, 608 and 669"), sourceRef("nlh-1911-goodyears-dam", "physical PDF pp. 599 to 600"), sourceRef("nlh-1911-grand-falls-turbines", "physical PDF pp. 947 and 983 to 984"), sourceRef("np-1937-grand-falls-g4", "physical PDF pp. 131 to 135"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
+    sources: [sourceRef("gnl-1906-grand-falls-first-harnessed", "physical PDF p. 18, printed p. 17"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 606, 608 and 669"), sourceRef("nlh-1911-goodyears-dam", "physical PDF pp. 599 to 600"), sourceRef("nlh-1911-grand-falls-turbines", "physical PDF pp. 947 and 983 to 984"), sourceRef("np-1937-grand-falls-g4", "physical PDF pp. 131 to 135"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
   },
   {
     code: "GFC",
@@ -18857,6 +18877,15 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1906 FIRST HYDROELECTRIC DEVELOPMENT",
+        sourceId: "gnl-1906-grand-falls-first-harnessed",
+        pages: "physical PDF p. 18, printed p. 17",
+        facts: [
+          ["Development", "the Anglo Newfoundland Development Company first harnessed the hydroelectric potential at Grand Falls in 1906"],
+          ["Civil sequence", "the later condition assessment dates the main dam and original forebay intake to 1907"]
+        ]
+      },
       {
         label: "1907 GRAND FALLS HYDRO CIVIL WORKS",
         sourceId: "nlh-exploits-condition-2017",
