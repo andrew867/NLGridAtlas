@@ -1822,6 +1822,18 @@
       "notes": "Newfoundland Power's depreciation records retain $2,300 of original cost from 1935 in account 321.00, Roads, Trails, and Bridges. The filings do not identify a plant, road, trail or bridge, so the vintage remains in research and is not placed on the public atlas. Other results were depreciation references, external legislation, aggregate accounting tables, hydrology series, modern operating times and numeric false matches. No 1935 public card or timeline event was created."
     },
     {
+      "id": "NPREG-094",
+      "title": "Close the 1934 exact-year system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Search for named 1934 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-093"],
+      "completion_evidence": ["research/NP_1934_SYSTEM_RECORD.md", "tests/np-1934-system.test.js"],
+      "blocker": null,
+      "notes": "Newfoundland Power records contain $13,454 of 1934 original cost in account 323.00, Canals, Penstocks, Surge Tanks, and Tailraces, plus a $10,168 addition to the combined wire, duplex and services account. The filings identify no plant, structure, circuit, community or work order, so both vintages remain in research. No 1934 public card or timeline event was created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
