@@ -640,6 +640,46 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1842-galvanic-blasting",
+    year: 1842,
+    organization: "Public Ledger",
+    title: "Galvanic Rock-Blasting Procedure",
+    topics: ["1842", "galvanism", "battery", "connecting wires", "rock blasting", "Wester Craigs Quarry", "electrical initiation"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18420614.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1842-st-johns-steamships",
+    year: 1842,
+    organization: "Royal Gazette",
+    title: "John M'Adam and St. George at St. John's",
+    topics: ["1842", "St. John's", "John M'Adam", "St. George", "steamship", "mail", "Halifax", "Cork", "Charlottetown", "Conception Bay", "Trinity Bay"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18420809.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1842-steam-mail-proposal",
+    year: 1842,
+    organization: "Royal Gazette",
+    title: "St. John's to Halifax Steam-Mail Proposal",
+    topics: ["1842", "St. John's", "Halifax", "steam mail", "sailing mail", "subsidy", "Newfoundland", "Nova Scotia", "communications baseline"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18420809.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1842-acoustic-submarine-telegraph",
+    year: 1842,
+    organization: "Royal Gazette",
+    title: "Acoustic Submarine-Telegraph Experiment",
+    topics: ["1842", "submarine telegraph", "acoustic signalling", "underwater bell", "Lake Geneva", "Colladon", "telegraph terminology"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18420426.pdf"
+  },
+  {
     id: "mun-public-ledger-1843-st-johns-electrical-machine",
     year: 1843,
     organization: "Public Ledger",
@@ -13305,6 +13345,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1842-06-14",
+    category: "electrical engineering context",
+    title: "Public Ledger described battery-fired rock blasting",
+    body: "The Public Ledger described galvanic blasting at Wester Craigs Quarry. A battery and connecting wires fired charges prepared with wires and connected to a main coil. The report said the charges fired simultaneously. The work occurred outside Newfoundland and records technical information published for local readers, not a Newfoundland installation.",
+    sourceId: "mun-public-ledger-1842-galvanic-blasting",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1842-08-09",
+    category: "steam communications",
+    title: "Royal Gazette recorded two steamships at St. John's",
+    body: "The Royal Gazette reported the arrival of John M'Adam from Liverpool by way of Cork and Halifax, and the arrival of St. George from Cork in fourteen days. John M'Adam was rated at 120 horsepower and 220 tons. St. George was bound for Charlottetown to carry mails between Prince Edward Island, Miramichi and Pictou. A proposed John M'Adam excursion named Brigus, Harbor Grace, Carbonear and Trinity as calls.",
+    sourceId: "mun-royal-gazette-1842-st-johns-steamships",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1843-12-08",
     category: "electrical education",

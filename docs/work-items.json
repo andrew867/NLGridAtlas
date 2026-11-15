@@ -2926,6 +2926,18 @@
       "notes": "A St. John's society with about forty members owned an electrical machine and used it for experiments. The contemporary letter does not name the society or describe an electric telegraph. A separate British telegraph report describes optical semaphore infrastructure."
     },
     {
+      "id": "NPREG-186",
+      "title": "Add the 1842 galvanic-blasting and steam-communication records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1842 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-185"],
+      "completion_evidence": ["research/NP_1842_SYSTEM_RECORD.md", "src/data.js", "tests/np-1842-system.test.js"],
+      "blocker": null,
+      "notes": "The local press printed a detailed foreign galvanic-blasting procedure and reported two steamships at St. John's. A proposed monthly Halifax route remains proposed. The article titled 'Submarine Telegraph' describes acoustic bell signalling, not an electric cable."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
