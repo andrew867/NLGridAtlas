@@ -550,6 +550,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1940-tors-cove-commissioning",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Tors Cove Development Record",
+    topics: ["1940", "Tors Cove", "hydro generation", "Francis turbine", "English Electric", "commissioning date conflict"],
+    pages: "physical PDF p. 240",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1940-tors-cove-governors",
+    year: 2002,
+    organization: "Newfoundland Power",
+    title: "CA 12A, Tors Cove Governor Replacement",
+    topics: ["1940", "1951", "Tors Cove", "G2", "G3", "governor", "English Electric", "equipment date conflict"],
+    pages: "physical PDF p. 2",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2012A.pdf"
+  },
+  {
+    id: "np-1940-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1940 Tors Cove and Bay Bulls Road Property Records",
+    topics: ["1940", "Tors Cove", "Bay Bulls Road", "property", "Crown grant", "utility land"],
+    pages: "physical PDF pp. 135 to 136",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1941-tors-cove-equipment",
     year: 2014,
     organization: "Newfoundland Power",
@@ -10483,6 +10513,19 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1940-system-record",
+    scope: "1940 Tors Cove commissioning, generating-unit, governor and utility property records",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1940-tors-cove-commissioning", pages: "physical PDF p. 240" },
+      { sourceId: "np-2013-generation-unit-data", pages: "physical PDF p. 2" },
+      { sourceId: "np-1940-tors-cove-governors", pages: "physical PDF p. 2" },
+      { sourceId: "np-1940-property-record", pages: "physical PDF pp. 135 to 136" },
+      { sourceId: "np-2022-tors-cove", pages: "physical PDF pp. 289 and 329" },
+      { sourceId: "np-1942-hydro-record", pages: "physical PDF p. 137" }
+    ]
+  },
+  {
     id: "np-1941-system-record",
     scope: "1941 Tors Cove generation, civil infrastructure and property records, and Rocky Pond generator manufacture",
     status: "unresolved",
@@ -11333,6 +11376,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1940",
+    category: "generation",
+    title: "Tors Cove entered the 1940 development record",
+    body: "A later engineering assessment dates the 6,900 kW powerhouse and three English Electric horizontal Francis turbines to 1940, under 52.7 m net head. Other filings date plant service or commissioning to 1941 and 1942.",
+    sourceId: "np-1940-tors-cove-commissioning",
+    pages: "physical PDF p. 240; compare 2022 project report physical PDF pp. 289 and 329 and development record physical PDF p. 137",
+    status: "unresolved"
+  },
+  {
+    date: "1940",
+    category: "generation",
+    title: "G1 and G2 installation is dated to 1940",
+    body: "The generating-unit register lists TCV-G1 and TCV-G2 at 2.0 MW each with 1940 installation dates; it separately dates 2.3 MW TCV-G3 to 1951.",
+    sourceId: "np-2013-generation-unit-data",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1940",
+    category: "property",
+    title: "Utility property schedule records Tors Cove development parcels",
+    body: "The schedule records fourteen Tors Cove deeds dated from May through December and a Bay Bulls Road Crown grant dated September 3.",
+    sourceId: "np-1940-property-record",
+    pages: "physical PDF pp. 135 to 136",
+    status: "reported"
+  },
   {
     date: "1941",
     category: "generation",
@@ -31173,6 +31243,18 @@ export const stationProfiles = [
       facts: [["TCV-T1", "generation transformer; 66/6.9 kV; 7.50 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1940 COMMISSIONING, UNITS, GOVERNORS AND PROPERTY",
+        sourceId: "np-1940-tors-cove-commissioning",
+        pages: "physical PDF p. 240; unit register physical PDF p. 2; governor record physical PDF p. 2; property schedule physical PDF pp. 135 to 136",
+        facts: [
+          ["Development record", "6,900 kW under 52.7 m net head; three English Electric horizontal Francis turbines commissioned in 1940; other records give 1941 and 1942"],
+          ["G1 and G2", "2.0 MW each; generating-unit register installation date 1940"],
+          ["G3 conflict", "generating-unit register dates the 2.3 MW unit to 1951; a 2003 filing calls the G2 and G3 governors original to the 1940 construction"],
+          ["Tors Cove property", "fourteen deeds dated from May through December 1940; Registry volumes 153 to 155"],
+          ["Bay Bulls Road property", "Crown grant dated September 3, 1940; Crown Lands Registry Volume 109, Folio 4"]
+        ]
+      },
       {
         label: "1941 SERVICE, EQUIPMENT, CIVIL AND PROPERTY RECORD",
         sourceId: "np-1941-tors-cove-equipment",

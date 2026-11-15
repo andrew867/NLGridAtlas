@@ -1750,6 +1750,18 @@
       "notes": "Several filings date Tors Cove plant service and substation construction to 1941, while other records give 1940 and 1942. The original equipment record covers G1, G2, the penstock trestle, bridge abutments and crane. The later G3 record separates its 1951 unit addition from 1941 equipment dates. Rocky Pond's Westinghouse generator was manufactured in 1941. The property schedule records three Tors Cove deeds. No named 1941 transmission-line construction, telecommunications installation, system-demand value, reliability value, storm or outage event was located."
     },
     {
+      "id": "NPREG-088",
+      "title": "Reconcile 1940 Tors Cove development records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1940 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-087"],
+      "completion_evidence": ["research/NP_1940_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1940-system.test.js"],
+      "blocker": null,
+      "notes": "A later engineering assessment dates the 6,900 kW Tors Cove powerhouse and three English Electric Francis turbines to 1940, while other filings give 1941 and 1942 service or commissioning dates. The generating-unit register dates G1 and G2 to 1940 and G3 to 1951. A 2003 filing calls the G2 and G3 governors original to the 1940 construction, creating a separate G3 equipment-date conflict. The property schedule records fourteen Tors Cove deeds and one Bay Bulls Road Crown grant. Decade-only records were not assigned to 1940."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
