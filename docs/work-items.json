@@ -2410,6 +2410,18 @@
       "notes": "A historical study reports a government contract for 25 electric street lamps at $200 per lamp annually, replacing 35 gas lamps. Contemporary October and November reports record planned additional lights and an inspection after poor light over several nights."
     },
     {
+      "id": "NPREG-143",
+      "title": "Add the 1885 Flavin Lane generating and first-light record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1885 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-142"],
+      "completion_evidence": ["research/NP_1885_SYSTEM_RECORD.md", "src/data.js", "tests/np-1885-system.test.js"],
+      "blocker": null,
+      "notes": "The Flavin Lane steam plant supplied 3,700 V direct current for arc lighting. Contemporary October reports record the first station test, planned city lighting and the failed first city attempt when electric conductors contacted telegraph and telephone wires."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

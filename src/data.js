@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-enl-1885-electricity",
+    year: 1981,
+    organization: "Encyclopedia of Newfoundland and Labrador",
+    title: "St. John's Electric Light Company and Flavin Lane Station",
+    topics: ["1885", "St. John's", "Flavin Lane", "St. John's Electric Light Company", "steam generation", "direct current", "arc lighting"],
+    pages: "physical PDF p. 92, printed p. 752",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_enl/ENLV1E.pdf"
+  },
+  {
+    id: "mun-1885-evening-mercury-first-test",
+    year: 1885,
+    organization: "The Evening Mercury",
+    title: "Electric Light Company Headquarters Test and Planned City Lighting",
+    topics: ["1885", "St. John's", "St. John's Electric Light Company", "first lighting", "shops", "private houses"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/eveherald/EveningMercury18851017.pdf"
+  },
+  {
+    id: "mun-1885-evening-mercury-wire-contact",
+    year: 1885,
+    organization: "The Evening Mercury",
+    title: "Electric Light Conductors Contacted Telegraph and Telephone Wires",
+    topics: ["1885", "St. John's", "Holyrood", "electric lighting", "telegraph", "telephone", "wire contact", "switchboard", "operator injury"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/eveherald/EveningMercury18851019.pdf"
+  },
+  {
     id: "mun-1889-evening-mercury-incandescent-plant",
     year: 1889,
     organization: "The Evening Mercury",
@@ -11885,6 +11915,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1885",
+    category: "generation",
+    title: "St. John's Electric Light Company built the Flavin Lane steam plant",
+    body: "A steam-driven generator at the Terra Nova Bakery warehouse on Flavin Lane produced 3,700 V direct current. A later reference reports 200 candlepower arc lamps supplying eleven Water Street merchant display windows.",
+    sourceId: "mun-enl-1885-electricity",
+    pages: "physical PDF p. 92, printed p. 752",
+    status: "reported"
+  },
+  {
+    date: "1885-10-17",
+    category: "commissioning",
+    title: "Electric Light Company prepared the first city lighting",
+    body: "The Evening Mercury reported that the headquarters lamps had been lit for the first time the previous evening. General lighting throughout the city was scheduled for that night. Several city shops had lamps and the company expected to supply private houses.",
+    sourceId: "mun-1885-evening-mercury-first-test",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1885-10-19",
+    category: "electrical incident",
+    title: "Electric conductors energized communications wires",
+    body: "The new conductors contacted telegraph and telephone wires during the Saturday-night lighting attempt. Operators were shocked, instruments were damaged and the effect was reported as far as Holyrood. At the Central Telephone Office, Tom Mallowney suffered burned fingers and was thrown about two yards from the switchboard. The report states that 50 drops opened and sparks came from the batteries. The wires were repaired on October 19.",
+    sourceId: "mun-1885-evening-mercury-wire-contact",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1886",
     category: "street lighting",
