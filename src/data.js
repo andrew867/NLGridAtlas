@@ -620,6 +620,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1918-hearts-content-development",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Heart's Content Hydroelectric Development Record",
+    topics: ["1918", "Heart's Content", "hydroelectric generation", "commissioning", "original development"],
+    pages: "physical PDF p. 160",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1918-hearts-content-service",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, Heart's Content Plant Record",
+    topics: ["1918", "Heart's Content", "hydroelectric generation", "rated head", "normal production"],
+    pages: "physical PDF pp. 30 and 180",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1918-hearts-content-property",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, Heart's Content Pipe or Flume Corridor Deed",
+    topics: ["1918", "Heart's Content", "Southern Cove", "property", "penstock", "flume", "deed"],
+    pages: "physical PDF p. 157",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
+    id: "np-1918-port-union-penstock",
+    year: 2020,
+    organization: "Newfoundland Power",
+    title: "NLH-NP-017, Woodstave Penstock Register",
+    topics: ["1918", "Port Union", "woodstave penstock", "1984 replacement", "hydroelectric generation"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/rfi/NLH-NP-017.PDF"
+  },
+  {
     id: "np-1923-seal-cove-conflict",
     year: 2008,
     organization: "Newfoundland Power",
@@ -11565,6 +11605,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1918",
+    category: "generation",
+    title: "Heart's Content hydroelectric development entered service",
+    body: "Newfoundland Power dates the original Heart's Content development to 1918. The original plant was later replaced, so the current machine ratings are not assigned to the 1918 equipment.",
+    sourceId: "np-1918-hearts-content-development",
+    pages: "physical PDF p. 160",
+    status: "reported"
+  },
   {
     date: "1924",
     category: "generation",
@@ -28306,6 +28355,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1918 ORIGINAL WOODSTAVE PENSTOCK",
+        sourceId: "np-1918-port-union-penstock",
+        pages: "physical PDF p. 1; compare CA-NP-036 physical PDF p. 144",
+        facts: [
+          ["Original penstock", "woodstave construction dated to 1918"],
+          ["Replacement", "replaced in 1984; the replacement woodstave section is 137 m long"],
+          ["Plant date", "the detailed development record dates plant commissioning and both original turbines to 1917"]
+        ]
+      },
+      {
         label: "1945 ORIGINAL STANDBY DIESEL",
         sourceId: "np-1945-port-union-diesel",
         pages: "physical PDF pp. 162 and 176",
@@ -34291,6 +34350,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1918 ORIGINAL DEVELOPMENT AND CORRIDOR DEED",
+        sourceId: "np-1918-hearts-content-development",
+        pages: "physical PDF p. 160; 2013 Capital Budget Application physical PDF pp. 30 and 180; property schedule physical PDF p. 157",
+        facts: [
+          ["Development", "original Heart's Content hydroelectric development built and placed in service in 1918"],
+          ["Later site record", "2.7 MW nameplate capacity; 46.9 m rated net head; approximately 8.3 GWh normal annual production"],
+          ["Equipment boundary", "the 1960 plant replaced the original plant; later machine ratings are not assigned to the 1918 equipment"],
+          ["Property", "June 14, 1918 deed from Theodore George, administrator of the Estate of Philip George, for a 14 ft wide pipe or flume corridor at Southern Cove"]
+        ]
+      },
       {
         label: "1945 PROPERTY RECORD",
         sourceId: "np-1945-property-record",

@@ -2014,6 +2014,18 @@
       "notes": "The depreciation transaction ledger records 1919 placements in canals and penstocks, dams and reservoirs, and switching, metering and control equipment. It does not identify any plant, dam, station or location, so no named event was created."
     },
     {
+      "id": "NPREG-110",
+      "title": "Add the 1918 Heart's Content and Port Union records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1918 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-109"],
+      "completion_evidence": ["research/NP_1918_SYSTEM_RECORD.md", "src/data.js", "tests/np-1918-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records date the original Heart's Content development and a Southern Cove pipe or flume corridor deed to 1918. A separate register dates Port Union's original penstock to 1918 while the detailed plant record dates commissioning and both turbines to 1917. Unidentified account 326 and 327 entries remain unassigned."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
