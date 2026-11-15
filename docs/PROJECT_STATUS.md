@@ -358,12 +358,13 @@ Updated: 2026-11-15
 - Added the enacted 1881 railway communications record. Section 18 admitted wire, instruments, fixtures and supplies for telegraph and telephone lines, plus dynamo machines and fixtures for electric lights, free of duty. The atlas records the legal and procurement scope without treating it as construction or commissioning evidence.
 - Added the 1880 telegraph appropriations. The Supply Act records separate interest and line-extension and maintenance votes. The Indemnity Act records past telegraph interest and maintenance expenditure. The statutes give no route or completed-work detail.
 - Added the 1879 telegraph appropriation. The Supply Act records a single $7,000 vote for interest and maintenance of new telegraph lines. It gives no route or construction detail.
-- Added the 1878 first-telephone and Northern Telegraph records. The private St. John's telephone line remains reported from the later encyclopedia account. The Northern Telegraph financing is verified from the Supply Act, which records $765 interest on a $17,000 construction advance.
-- Added the 1877 telegraph line completion and property-protection records. The later review names ten served places and reports 1877 completion. The enacted statute identifies batteries, machinery, wire-cable and posts as protected telegraph property.
+- Expanded the 1878 record with contemporary western-line reports. The first bush of the Bay of Islands telegraph track was cut on February 18, the line was reported almost complete to Bay of Islands on July 25, and King's Cove remained a future extension on November 26. The private St. John's telephone line remains reported from the later encyclopedia account. The Northern Telegraph financing is verified from the Supply Act, which records $765 interest on a $17,000 construction advance.
+- Corrected the 1877 telegraph record. The February 1878 Governor's speech reports that Trinity, Catalina and Bonavista had been connected since October 1877. Contemporary 1878 reports conflict with the later review that assigned the western group and King's Cove to 1877. The enacted statute identifies batteries, machinery, wire-cable and posts as protected telegraph property.
+- Added the 1876 northern communications and telegraph proposals. The House journal records the operating communications gap, the Cape St. John company petition, proposed guarantee terms and the legislative request for northern connections. It does not establish construction in 1876.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1877 telegraph records under `NPREG-151`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1876 telegraph proposals under `NPREG-152`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

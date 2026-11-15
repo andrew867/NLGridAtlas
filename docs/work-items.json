@@ -2507,7 +2507,7 @@
     },
     {
       "id": "NPREG-151",
-      "title": "Add the 1877 telegraph completion and property-protection records",
+      "title": "Add the 1877 eastern telegraph and property-protection records",
       "phase": 2,
       "priority": "P1",
       "status": "done",
@@ -2515,7 +2515,19 @@
       "dependencies": ["NPREG-150"],
       "completion_evidence": ["research/NP_1877_SYSTEM_RECORD.md", "src/data.js", "tests/np-1877-system.test.js"],
       "blocker": null,
-      "notes": "An 1885 review reports two telegraph line groups completed in 1877. The 1877 statute separately identifies batteries, machinery, wire-cable and posts as protected telegraph property."
+      "notes": "The February 1878 Governor's speech reports Trinity, Catalina and Bonavista connected since October 1877. Contemporary 1878 construction and office reports conflict with the 1885 review that assigned western lines and King's Cove to 1877. The statute separately identifies batteries, machinery, wire-cable and posts as protected telegraph property."
+    },
+    {
+      "id": "NPREG-152",
+      "title": "Add the 1876 telegraph proposals and reconcile the 1877 to 1878 record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1876 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence, then reconcile the dated 1877 and 1878 telegraph sequence.",
+      "dependencies": ["NPREG-151"],
+      "completion_evidence": ["research/NP_1876_SYSTEM_RECORD.md", "src/data.js", "tests/np-1876-system.test.js"],
+      "blocker": null,
+      "notes": "The 1876 House journal records the northern communications gap, Cape St. John company petition, committee terms and legislative request for northern connections. Contemporary 1878 newspapers correct the later 1885 summary: Trinity, Catalina and Bonavista were connected in October 1877, western construction began in 1878, and King's Cove remained pending in November 1878."
     },
     {
       "id": "ASSET-001",

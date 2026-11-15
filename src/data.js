@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "nl-assembly-1876-communications-gap",
+    year: 1876,
+    organization: "Newfoundland House of Assembly",
+    title: "Postmaster General's Report, Northern Communications Gap",
+    topics: ["1875", "1876", "Trinity Bay", "Bonavista Bay", "Twillingate", "Fogo", "telegraph", "mail service", "communications gap"],
+    pages: "physical PDF pp. 627 and 633",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/h_assembly/JournaloftheHouseofAssemblyofNewfoundland1876.pdf"
+  },
+  {
+    id: "nl-assembly-1876-telegraph-proposals",
+    year: 1876,
+    organization: "Newfoundland House of Assembly",
+    title: "Cape St. John and Northern Telegraph Proposals",
+    topics: ["1876", "Cape St. John Telegraph Company", "Conn River", "Hall's Bay", "Cape St. John", "Twillingate", "Fogo", "Bonavista Bay", "Trinity Bay", "telegraph", "charter", "interest guarantee"],
+    pages: "physical PDF pp. 42 to 43, 176 to 178, 181 and 192",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/h_assembly/JournaloftheHouseofAssemblyofNewfoundland1876.pdf"
+  },
+  {
     id: "nl-statutes-1877-telegraph-protection",
     year: 1877,
     organization: "Newfoundland Legislature",
@@ -648,6 +668,46 @@ export const sources = [
     pages: "physical PDF pp. 391 to 393, printed pp. 56 to 58",
     status: "verified",
     url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland18751878.pdf"
+  },
+  {
+    id: "mun-north-star-1878-telegraph-status",
+    year: 1878,
+    organization: "The North Star",
+    title: "Governor's Speech, 1877 Telegraph Connections and 1878 Western Plan",
+    topics: ["1877", "1878", "Trinity", "Catalina", "Bonavista", "Garia", "St. George's Bay", "Bay of Islands", "Betts Cove", "Tilt Cove", "telegraph", "construction status"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/northstar/NorthStarandStJohnsNewfoundlandNews18780209.pdf"
+  },
+  {
+    id: "mun-morning-chronicle-1878-western-start",
+    year: 1878,
+    organization: "The Morning Chronicle",
+    title: "First Bush of the Western Telegraph Track at Bay of Islands",
+    topics: ["1878", "Bay of Islands", "western telegraph", "telegraph track", "construction start"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/mchronicle/MorningChronicle18780323.pdf"
+  },
+  {
+    id: "mun-morning-chronicle-1878-western-progress",
+    year: 1878,
+    organization: "The Morning Chronicle",
+    title: "Western Telegraph Line Progress to Bay of Islands",
+    topics: ["1878", "Bay of Islands", "western telegraph", "construction progress"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/mchronicle/MorningChronicle18780725.pdf"
+  },
+  {
+    id: "mun-morning-chronicle-1878-kings-cove",
+    year: 1878,
+    organization: "The Morning Chronicle",
+    title: "Bonavista and Catalina Offices, King's Cove Extension",
+    topics: ["1878", "Bonavista", "Catalina", "King's Cove", "telegraph office", "line extension"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/mchronicle/MorningChronicle18781126.pdf"
   },
   {
     id: "mun-enl-1878-first-telephone",
@@ -12036,6 +12096,24 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1876-02-21",
+    category: "communications operations",
+    title: "Postmaster General reported a northern communications gap",
+    body: "The annual report said the absence of telegraph communication constrained northern service. It proposed more frequent mail between Trinity Bay and Bonavista Bay and a steamship mail connection for Twillingate and Fogo.",
+    sourceId: "nl-assembly-1876-communications-gap",
+    pages: "physical PDF pp. 627 and 633",
+    status: "reported"
+  },
+  {
+    date: "1876-04-25",
+    category: "telecommunications proposal",
+    title: "Legislature advanced northern telegraph proposals",
+    body: "A petition proposed a line from the Anglo-American station at Conn River through Hall's Bay to Cape St. John. A joint committee recommended a charter and a £500 annual interest guarantee while the line operated. The House also asked the Governor to pursue connections for Twillingate, Fogo, Bonavista Bay and Trinity Bay within the colony's means.",
+    sourceId: "nl-assembly-1876-telegraph-proposals",
+    pages: "physical PDF pp. 42 to 43, 176 to 178, 181 and 192",
+    status: "proposed"
+  },
+  {
     date: "1877-04-26",
     category: "telecommunications regulation",
     title: "Telegraph batteries, machinery, wire-cable and posts received statutory protection",
@@ -12045,11 +12123,20 @@ export const timeline = [
     status: "verified"
   },
   {
-    date: "1877",
+    date: "1877-10",
     category: "telecommunications",
-    title: "Two telegraph line groups were reported complete",
-    body: "An 1885 review reports completion of lines to Trinity, Catalina, Bonavista and King's Cove, and to St. George's Bay, Bay of Islands, Bonne Bay, Batt's Cove, Tilt Cove and Little Bay. It reports that construction began in 1876.",
-    sourceId: "mun-evening-mercury-1885-telegraph-history",
+    title: "Trinity, Catalina and Bonavista connected with St. John's",
+    body: "The Governor's February 1878 speech reported that Trinity, Catalina and Bonavista had been connected with the capital since October 1877. The same speech described the western line as an arrangement for future construction. An 1885 review later assigned both eastern and western groups to 1877, which conflicts with the contemporary sequence.",
+    sourceId: "mun-north-star-1878-telegraph-status",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1878-02-18",
+    category: "telecommunications construction",
+    title: "Western telegraph track formally started at Bay of Islands",
+    body: "The Morning Chronicle published an address delivered at Bay of Islands upon cutting the first bush of the telegraph track. The account establishes a reported construction start, not a completed line.",
+    sourceId: "mun-morning-chronicle-1878-western-start",
     pages: "physical PDF p. 2",
     status: "reported"
   },
@@ -12061,6 +12148,24 @@ export const timeline = [
     sourceId: "mun-enl-1878-first-telephone",
     pages: "physical PDF p. 178, printed p. 838",
     status: "reported"
+  },
+  {
+    date: "1878-07-25",
+    category: "telecommunications construction",
+    title: "Western telegraph line was reported near Bay of Islands",
+    body: "The Morning Chronicle reported that the western line, begun during the previous winter, was almost complete to Bay of Islands. Telegraphic communication was expected within a month, so the report is construction progress rather than commissioning evidence.",
+    sourceId: "mun-morning-chronicle-1878-western-progress",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1878-11-26",
+    category: "telecommunications proposal",
+    title: "King's Cove extension remained pending",
+    body: "The Morning Chronicle described the Bonavista telegraph office and reported a Catalina operator. It said the line from Trinity was intended to extend to King's Cove soon. This contemporary report conflicts with the 1885 review that assigned King's Cove completion to 1877.",
+    sourceId: "mun-morning-chronicle-1878-kings-cove",
+    pages: "physical PDF p. 2",
+    status: "proposed"
   },
   {
     date: "1878",
