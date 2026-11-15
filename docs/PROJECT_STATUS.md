@@ -380,10 +380,11 @@ Updated: 2026-11-15
 - Added the 1859 telegraph record. A news-agency advertisement describes the St. John's to New York message service and its Cape Race interception vessel. A June report records the *City of Washington* intercept. November notices identify Atlantic Telegraph Company property offered at auction and a St. John's Electric Telegraph Company office. The auction purpose and office address are not stated.
 - Added the 1858 telegraph record. Contemporary sources identify the St. John's company office and local manager, the Cape Race news service, the August 5 Trinity Bay cable landing, two August message tests, unresolved October and November fault work, and the Valentia test apparatus. The proposed message container and estimated fault distance remain separate from operating and confirmed evidence.
 - Added the 1857 telegraph record. The enacted amendment authorized a joint Atlantic cable station, company consolidation and penalties for damage to telegraph infrastructure. Contemporary reports identify the New York company secretary, a silver-thaw interruption, the August 11 cable parting after 335 nautical miles had been paid out, a Cape Race news report and a December gale outage. The silver-thaw cause remains the Legislative Council president's stated supposition.
+- Added the 1856 regional telegraph record. Contemporary reports separate inland construction, St. John's to Bay Despair messages, the completed Cape Breton submarine cable, the first reported Baddeck business exchange, an interruption between Bay Despair and Port aux Basques, and the November 14 public opening. A September report prints only `Pond` for one construction endpoint, so the atlas does not map it.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1857 record under `NPREG-171`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1856 record under `NPREG-172`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

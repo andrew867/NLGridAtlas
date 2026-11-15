@@ -2758,6 +2758,18 @@
       "notes": "The record identifies the company secretary in New York, the enacted Atlantic cable amendment, a reported silver-thaw interruption, the August 11 cable parting, a Cape Race news report and a December gale outage. The silver-thaw cause remains the Legislative Council president's stated supposition."
     },
     {
+      "id": "NPREG-172",
+      "title": "Add the 1856 regional telegraph construction and opening records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1856 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-171"],
+      "completion_evidence": ["research/NP_1856_SYSTEM_RECORD.md", "src/data.js", "tests/np-1856-system.test.js"],
+      "blocker": null,
+      "notes": "The record separates inland construction, St. John's to Bay Despair messages, the Cape Breton submarine cable, the Baddeck business exchange, the Bay Despair to Port aux Basques interruption and the November 14 public opening. The defective September place name printed only as Pond is not mapped."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

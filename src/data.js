@@ -640,6 +640,66 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1856-inland-line",
+    year: 1856,
+    organization: "Public Ledger",
+    title: "Newfoundland Telegraph Line Construction Status",
+    topics: ["1856", "telegraph", "Long Harbour", "Bay Despair", "Conn River", "inland line", "Victoria", "F. N. Gisborne"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18560819.pdf"
+  },
+  {
+    id: "mun-morning-post-1856-bay-despair-messages",
+    year: 1856,
+    organization: "Morning Post",
+    title: "St. John's to Bay Despair Telegraph Messages",
+    topics: ["1856", "telegraph", "St. John's", "Bay Despair", "Port Hood", "Victoria", "telegraph operations"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morningpost/MorningPost18560923.pdf"
+  },
+  {
+    id: "mun-telegraph-1856-regional-cables",
+    year: 1856,
+    organization: "Telegraph",
+    title: "Cape Breton to Newfoundland Submarine Cable",
+    topics: ["1856", "telegraph", "submarine cable", "Cape Breton", "Newfoundland", "Propontis", "New Brunswick", "Prince Edward Island"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/telegraph/Telegraph18560924.pdf"
+  },
+  {
+    id: "mun-morning-post-1856-baddeck-message",
+    year: 1856,
+    organization: "Morning Post",
+    title: "Baddeck to St. John's Business Message",
+    topics: ["1856", "telegraph", "Baddeck", "Cape Breton", "St. John's", "William Pitts", "business message"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morningpost/MorningPost18561009.pdf"
+  },
+  {
+    id: "mun-morning-post-1856-bay-despair-outage",
+    year: 1856,
+    organization: "Morning Post",
+    title: "Bay Despair to Port aux Basques Telegraph Interruption",
+    topics: ["1856", "telegraph", "Bay Despair", "Port aux Basques", "line interruption", "St. John's"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morningpost/MorningPost18561030.pdf"
+  },
+  {
+    id: "mun-times-1856-public-opening",
+    year: 1856,
+    organization: "Times and General Commercial Gazette",
+    title: "Newfoundland to Cape Breton Telegraph Public Opening",
+    topics: ["1856", "telegraph", "Newfoundland", "Cape Breton", "public opening", "United States", "British North America", "A. Shea"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18561115.pdf"
+  },
+  {
     id: "mun-telegraph-1857-archibald",
     year: 1857,
     organization: "Telegraph",
@@ -12705,6 +12765,60 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1856-08-19",
+    category: "telecommunications construction",
+    title: "Inland telegraph line had reached Bay Despair with a six-mile gap",
+    body: "The report states that the wires were complete to Long Harbour in Fortune Bay and lacked about six miles of being complete to Bay Despair. It places the gap midway between Long Harbour and Conn River. The Victoria had returned after visiting the line.",
+    sourceId: "mun-public-ledger-1856-inland-line",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1856-09-23",
+    category: "telecommunications operations",
+    title: "Messages passed between St. John's and Bay Despair",
+    body: "The report states that messages passed between St. John's and Bay Despair. Telegraph Company superintendent Mr. Simpson sent a message from Bay Despair reporting the Victoria's arrival and intended departure for White Bear Bay. The same report described completion to Port Hood as probable, not completed.",
+    sourceId: "mun-morning-post-1856-bay-despair-messages",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1856-09-24",
+    category: "telecommunications infrastructure",
+    title: "Submarine cable linked Cape Breton and Newfoundland",
+    body: "The report states that the Propontis returned from Newfoundland after successfully laying submarine cables between Cape Breton and Newfoundland and between New Brunswick and Prince Edward Island. It does not state the cable-laying dates or landing points.",
+    sourceId: "mun-telegraph-1856-regional-cables",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1856-10-09",
+    category: "telecommunications operations",
+    title: "Business message crossed from Baddeck to St. John's and received a reply",
+    body: "A business message from Baddeck, Cape Breton, reached William Pitts in St. John's, and an answer was promptly sent back over the wires. The newspaper calls it the first intimation that the telegraph in Newfoundland had been completed. The event predates the company's formal public-opening notice.",
+    sourceId: "mun-morning-post-1856-baddeck-message",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1856-10-30",
+    category: "telecommunications reliability",
+    title: "Bay Despair to Port aux Basques interruption blocked through messages",
+    body: "The report states that an interruption between Bay Despair and Port aux Basques had prevented messages between Port aux Basques and St. John's since the preceding Saturday morning. It does not identify the fault, exact incident date or repair time.",
+    sourceId: "mun-morning-post-1856-bay-despair-outage",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1856-11-14",
+    category: "telecommunications commissioning",
+    title: "Newfoundland to Cape Breton telegraph opened to the public",
+    body: "The company notice states that the telegraph line connecting Newfoundland with Cape Breton was complete and open to the public. It offered message transmission between the colony and the United States and British North America. The St. John's office listed three daily service periods and identified A. Shea as local manager.",
+    sourceId: "mun-times-1856-public-opening",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1857-01-21",
     category: "telecommunications administration",
