@@ -395,10 +395,11 @@ Updated: 2026-11-15
 - Added the 1844 Highton telegraph report and mail-transition record. The *Public Ledger* described conductor length, glass insulation and signal registration on an English experimental line. The almanac records existing sailing-packet mail and a proposed steam replacement. An unattributed article's phrase "in this town" is not assigned to St. John's because its copied source locality is unresolved.
 - Added the 1843 St. John's electrical-experiment record. A contemporary letter identifies the society's officers, scientific books and electrical machine, and says that members used the machine for experiments. The letter does not name the society or describe an electric telegraph. A separate article's telegraph systems were optical semaphore networks outside Newfoundland.
 - Added the 1842 galvanic-blasting and steam-communication records. The *Public Ledger* described battery-fired rock blasting outside Newfoundland. The *Royal Gazette* documented two steamships at St. John's, a proposed local excursion and a proposed Halifax mail route. Its article titled "The Submarine Telegraph" describes underwater acoustic signalling, not an electrical cable.
+- Added the 1841 mail, electrical-context and gas-light proposal records. An Admiralty notice named two St. John's to Halifax mail packets and their operating rule. Local newspapers described Bain electromagnetic sounding and printing-telegraph apparatus outside Newfoundland. A reported St. John's gas-light company proposal remained at the estimate stage.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1841 after the 1842 record under `NPREG-186`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1840 after the 1841 record under `NPREG-187`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

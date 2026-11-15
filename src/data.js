@@ -640,6 +640,46 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-newfoundlander-1841-admiralty-mail-packets",
+    year: 1841,
+    organization: "Newfoundlander",
+    title: "Admiralty St. John's to Halifax Mail-Packet Notice",
+    topics: ["1841", "St. John's", "Halifax", "Admiralty", "mail packet", "Sandwich", "Charles Buchan", "communications baseline"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/newfoundland/Newfoundlander18410121.pdf"
+  },
+  {
+    id: "mun-newfoundlander-1841-electromagnetic-soundings",
+    year: 1841,
+    organization: "Newfoundlander",
+    title: "Bain Electromagnetic Sounding Apparatus",
+    topics: ["1841", "electromagnetism", "galvanic battery", "insulated wire", "bell", "sea sounding", "Bain"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/newfoundland/Newfoundlander18410610.pdf"
+  },
+  {
+    id: "mun-times-1841-magnetic-printing-telegraph",
+    year: 1841,
+    organization: "Times and General Commercial Gazette",
+    title: "Bain Magnetic Printing Telegraph Report",
+    topics: ["1841", "magnetic printing telegraph", "Bain", "Polytechnic Institution", "Great Western Railway", "automatic printing", "telegraph terminology"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/timesgeneral/TimesAndGeneralCommercialGazette18411020.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1841-st-johns-gas-company",
+    year: 1841,
+    organization: "Royal Gazette",
+    title: "Proposed St. John's Gas Light Company",
+    topics: ["1841", "St. John's", "gas light", "gas company", "street lighting", "engineering estimates", "infrastructure proposal"],
+    pages: "physical PDF p. 2",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18411109.pdf"
+  },
+  {
     id: "mun-public-ledger-1842-galvanic-blasting",
     year: 1842,
     organization: "Public Ledger",
@@ -13345,6 +13385,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1841-01-21",
+    category: "mail communications",
+    title: "Admiralty mail notice named two St. John's to Halifax packets",
+    body: "An Admiralty contract notice named the fast-sailing British-built vessels Sandwich and Charles Buchan for future mail carriage between St. John's and Halifax. Departures from Halifax were to follow the arrival of mail steamers from England, and the vessels were not to remain at St. John's for more than forty-eight hours.",
+    sourceId: "mun-newfoundlander-1841-admiralty-mail-packets",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1841-10-20",
+    category: "telecommunications context",
+    title: "Times printed Bain's magnetic printing telegraph report",
+    body: "The Times and General Commercial Gazette described Bain's magnetic printing telegraph at the Polytechnic Institution. The report compared it with older signalling systems and the magnetic telegraph on the Great Western Railway, and said that Bain's apparatus printed messages rapidly. The apparatus was outside Newfoundland and does not establish a local telegraph circuit.",
+    sourceId: "mun-times-1841-magnetic-printing-telegraph",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1841-11-09",
+    category: "lighting infrastructure",
+    title: "A St. John's gas-light company remained at the estimate stage",
+    body: "A Royal Gazette letter reported that a meeting held eight or nine months earlier had resolved to obtain English estimates and technical information for a gas-light company in St. John's. Reports from scientific persons had arrived, but the writer said no further step had been taken and asked the committee to test whether subscribers would proceed.",
+    sourceId: "mun-royal-gazette-1841-st-johns-gas-company",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
   {
     date: "1842-06-14",
     category: "electrical engineering context",

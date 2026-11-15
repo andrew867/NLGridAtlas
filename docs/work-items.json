@@ -2938,6 +2938,18 @@
       "notes": "The local press printed a detailed foreign galvanic-blasting procedure and reported two steamships at St. John's. A proposed monthly Halifax route remains proposed. The article titled 'Submarine Telegraph' describes acoustic bell signalling, not an electric cable."
     },
     {
+      "id": "NPREG-187",
+      "title": "Add the 1841 mail, electrical-context and gas-light proposal records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1841 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-186"],
+      "completion_evidence": ["research/NP_1841_SYSTEM_RECORD.md", "src/data.js", "tests/np-1841-system.test.js"],
+      "blocker": null,
+      "notes": "An Admiralty notice named two St. John's to Halifax mail packets. Local papers described Bain electromagnetic sounding and printing-telegraph apparatus outside Newfoundland. A reported St. John's gas-light company proposal remained at the estimate stage."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
