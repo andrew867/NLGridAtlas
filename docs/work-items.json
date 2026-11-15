@@ -2482,6 +2482,18 @@
       "notes": "The Supply Act appropriated telegraph interest and line-extension and maintenance funding. The Indemnity Act separately recorded past telegraph interest and maintenance expenditure. Neither statute identifies the route or completed work."
     },
     {
+      "id": "NPREG-149",
+      "title": "Add the 1879 telegraph appropriation",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1879 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-148"],
+      "completion_evidence": ["research/NP_1879_SYSTEM_RECORD.md", "src/data.js", "tests/np-1879-system.test.js"],
+      "blocker": null,
+      "notes": "The Supply Act appropriated $7,000 for interest and maintenance of new telegraph lines. It does not split the amount between purposes or identify a route or construction project."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

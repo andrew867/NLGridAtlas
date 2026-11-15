@@ -357,10 +357,11 @@ Updated: 2026-11-15
 - Reconciled the surviving 2002 system record in the 2003 General Rate Application and attached annual report. The atlas now separates completed 2002 station and line work, Salt Pond transformer failures, the August lightning event, actual year-end reliability, regional SAIFI and SAIDI, and forecast load-factor data. No standalone 2002 capital-application directory was located in the public mirror.
 - Added the enacted 1881 railway communications record. Section 18 admitted wire, instruments, fixtures and supplies for telegraph and telephone lines, plus dynamo machines and fixtures for electric lights, free of duty. The atlas records the legal and procurement scope without treating it as construction or commissioning evidence.
 - Added the 1880 telegraph appropriations. The Supply Act records separate interest and line-extension and maintenance votes. The Indemnity Act records past telegraph interest and maintenance expenditure. The statutes give no route or completed-work detail.
+- Added the 1879 telegraph appropriation. The Supply Act records a single $7,000 vote for interest and maintenance of new telegraph lines. It gives no route or construction detail.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1880 telegraph appropriations under `NPREG-148`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1879 telegraph appropriation under `NPREG-149`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

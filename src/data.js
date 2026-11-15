@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "nl-statutes-1879-telegraph-appropriation",
+    year: 1879,
+    organization: "Newfoundland Legislature",
+    title: "New Telegraph Lines Interest and Maintenance Appropriation",
+    topics: ["1879", "telegraph", "Supply Act", "interest", "maintenance", "system authorization"],
+    pages: "physical PDF p. 125, printed p. 125",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1879.pdf"
+  },
+  {
     id: "nl-statutes-1880-telegraph-appropriations",
     year: 1880,
     organization: "Newfoundland Legislature",
@@ -11995,6 +12005,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1879",
+    category: "telecommunications authorization",
+    title: "Legislature funded telegraph interest and maintenance",
+    body: "The Supply Act appropriated $7,000 to pay interest and aid maintenance of new telegraph lines. The act does not name a route or construction project.",
+    sourceId: "nl-statutes-1879-telegraph-appropriation",
+    pages: "physical PDF p. 125, printed p. 125",
+    status: "verified"
+  },
   {
     date: "1880",
     category: "telecommunications authorization",
