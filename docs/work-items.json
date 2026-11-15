@@ -2770,6 +2770,18 @@
       "notes": "The record separates inland construction, St. John's to Bay Despair messages, the Cape Breton submarine cable, the Baddeck business exchange, the Bay Despair to Port aux Basques interruption and the November 14 public opening. The defective September place name printed only as Pond is not mapped."
     },
     {
+      "id": "NPREG-173",
+      "title": "Add the 1855 inland-line and Gulf cable attempt records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1855 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-172"],
+      "completion_evidence": ["research/NP_1855_SYSTEM_RECORD.md", "src/data.js", "tests/np-1855-system.test.js"],
+      "blocker": null,
+      "notes": "The record separates Bay Despair inland construction, the cable expedition's arrival, the Cape Ray landing, the failed Cape North crossing, the Cape North survey, Gisborne's route inspection and the November inland-work notice. The work notice remains proposed rather than completed evidence."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

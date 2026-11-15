@@ -640,6 +640,66 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-courier-1855-bay-despair-work",
+    year: 1855,
+    organization: "Courier",
+    title: "Bay Despair Telegraph Construction Workforce",
+    topics: ["1855", "telegraph", "Bay Despair", "Victoria", "inland line", "labour", "construction"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/Courier18550613.pdf"
+  },
+  {
+    id: "mun-times-1855-cable-arrival",
+    year: 1855,
+    organization: "Times and General Commercial Gazette",
+    title: "Cape Ray Cable Expedition Arrival",
+    topics: ["1855", "telegraph", "submarine cable", "James Adger", "Sarah L. Bryant", "Port aux Basques", "St. John's"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18550815.pdf"
+  },
+  {
+    id: "mun-times-1855-cable-failure",
+    year: 1855,
+    organization: "Times and General Commercial Gazette",
+    title: "Cape Ray to Cape North Submarine Cable Attempt",
+    topics: ["1855", "telegraph", "submarine cable", "Cape Ray Cove", "Cape North", "James Adger", "Sarah L. Bryant", "cable failure"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18550926.pdf"
+  },
+  {
+    id: "mun-morning-post-1855-cape-north-survey",
+    year: 1855,
+    organization: "Morning Post",
+    title: "Cape North Cable Landing Survey",
+    topics: ["1855", "telegraph", "Cape North", "Victoria", "submarine cable", "survey", "workforce"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morningpost/MorningPost18550913.pdf"
+  },
+  {
+    id: "mun-public-ledger-1855-route-inspection",
+    year: 1855,
+    organization: "Public Ledger",
+    title: "Gisborne Inland Telegraph Route Inspection",
+    topics: ["1855", "telegraph", "F. N. Gisborne", "J. T. Neville", "Piper's Hole", "Cape Ray", "route inspection"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18550921.pdf"
+  },
+  {
+    id: "mun-courier-1855-line-contracts",
+    year: 1855,
+    organization: "Courier",
+    title: "Piper's Hole to Cape Ray and St. John's to Trepassey Work Notice",
+    topics: ["1855", "telegraph", "Piper's Hole", "Cape Ray", "St. John's", "Trepassey", "bridle road", "poles", "wire", "Charles B. Ellis"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/Courier18551124.pdf"
+  },
+  {
     id: "mun-public-ledger-1856-inland-line",
     year: 1856,
     organization: "Public Ledger",
@@ -12765,6 +12825,69 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1855-06-13",
+    category: "telecommunications construction",
+    title: "Two hundred men were working on the Bay Despair inland line",
+    body: "The Victoria returned after carrying labourers and supplies to Bay Despair and other points on the line. The report states that about two hundred men were employed and that more would be hired after the vessel received minor repairs.",
+    sourceId: "mun-courier-1855-bay-despair-work",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1855-08-14",
+    category: "telecommunications construction",
+    title: "The cable expedition reached St. John's without the cable ship",
+    body: "The James Adger arrived at St. John's after calling at Port aux Basques. The Sarah L. Bryant, chartered at Liverpool to carry the Cape Ray to Cape North cable, had not reached Port aux Basques when the James Adger called there.",
+    sourceId: "mun-times-1855-cable-arrival",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1855-08-23",
+    category: "telecommunications infrastructure",
+    title: "The first Cape Ray cable end was landed",
+    body: "The expedition changed its Newfoundland landing point from Port aux Basques to Cape Ray Cove. A cable house was erected, and the shore end was brought ashore on the evening of August 23.",
+    sourceId: "mun-times-1855-cable-failure",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1855-08-29",
+    category: "telecommunications construction",
+    title: "The Cape Ray to Cape North cable attempt failed",
+    body: "A second paying-out attempt began on August 29. A kink broke the cable after roughly twenty miles and caused an eight-hour delay. Paying out resumed, but a southeast gale endangered the cable vessel. The crew cut the cable after forty miles had been paid out. Thirty-four miles remained aboard, and the vessel was about thirty miles from Cape North.",
+    sourceId: "mun-times-1855-cable-failure",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1855-09-13",
+    category: "telecommunications planning",
+    title: "Cape North was surveyed for a later cable landing",
+    body: "The Victoria visited Cape North, where company officers surveyed the site and made arrangements for a later cable-laying attempt. The vessel then called at points on the inland line and returned about 120 workers.",
+    sourceId: "mun-morning-post-1855-cape-north-survey",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1855-09-21",
+    category: "telecommunications survey",
+    title: "Gisborne left to inspect the inland route to Cape Ray",
+    body: "The report states that F. N. Gisborne left St. John's with J. T. Neville to inspect work on the route to Cape Ray. It identifies this as Gisborne's second journey over the route and refers to his 1851 survey through Piper's Hole and Cape Ray.",
+    sourceId: "mun-public-ledger-1855-route-inspection",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1855-11-17",
+    category: "telecommunications planning",
+    title: "Company sought contractors for two inland telegraph sections",
+    body: "Chief engineer Charles B. Ellis sought contracts for bridle roads, bridges, poles, braces and wire from Piper's Hole to Cape Ray and from St. John's to Trepassey. The notice proposed January 1, 1856 for the roads and bridges and March 10 for cut and stripped poles and braces. It advertised six weeks of work for four hundred men.",
+    sourceId: "mun-courier-1855-line-contracts",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
   {
     date: "1856-08-19",
     category: "telecommunications construction",
