@@ -11416,6 +11416,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1932",
+    category: "generation",
+    title: "Topsail hydro plant entered service",
+    body: "Newfoundland Power dates the original plant, one 1.2 MW turbine-generator, and the intake foundation and gate conduit to 1932. The original inlet valve, turbine-generator, switchgear and controls were replaced in 1983.",
+    sourceId: "np-2021-topsail-refurbishment",
+    pages: "physical PDF p. 92",
+    status: "reported"
+  },
+  {
     date: "1937",
     category: "civil",
     title: "Lawn Forebay Dam received concrete protection",
@@ -32610,6 +32619,17 @@ export const stationProfiles = [
       facts: [["TOP-T1", "generation transformer; 25/2.4 kV; 0.75 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1932 ORIGINAL DEVELOPMENT AND DATED RATINGS",
+        sourceId: "np-2013-topsail-system",
+        pages: "physical PDF pp. 198 and 200; compare 2021 Capital Budget Application physical PDF p. 92",
+        facts: [
+          ["Original plant", "placed in service in 1932 with one 1.2 MW turbine-generator; original intake foundation, gate conduit, steel head gate, and wooden gatehouse"],
+          ["2010 development record", "2,300 kW under about 111.2 m net head"],
+          ["2020 engineering report", "2.6 MW at 85.5 m rated net head; approximately 13.3 GWh normal annual production"],
+          ["Record status", "the filings do not reconcile the two capacity and net-head records"]
+        ]
+      },
       {
         label: "1956 THOMAS POND SPILLWAY",
         sourceId: "np-1956-thomas-pond-spillway",
