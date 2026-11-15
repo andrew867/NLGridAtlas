@@ -2074,6 +2074,18 @@
       "notes": "The detailed Victoria development record identifies a 450 kW Voith turbine installed in 1914 and a Westinghouse generator. A selected-unit table lists VIC-G at 0.4 MW with a 1914 installation date. The development commissioning date remains 1904."
     },
     {
+      "id": "NPREG-115",
+      "title": "Record the unidentified 1913 utility-plant placements",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1913 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-114"],
+      "completion_evidence": ["research/NP_1913_SYSTEM_RECORD.md", "tests/np-1913-system.test.js"],
+      "blocker": null,
+      "notes": "The depreciation ledger records unidentified 1913 placements of $37,500 in account 323 and $39,000 in account 325. The 2010 survivor table retains $33,500 and $25,518 respectively. No filing identifies the plant or location."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
