@@ -3034,6 +3034,18 @@
       "notes": "Chapter 4 organized the Fort Amherst and Cape Spear lighthouse system, established vessel duties, authorized Cape Spear financing and placed St. John's harbour buoys under the commissioners. Newspaper notices record the Fort Amherst nightly-light announcement, Cape Spear construction tender and Fort Amherst seal-oil and lamp-wick supply tender."
     },
     {
+      "id": "NPREG-195",
+      "title": "Add the 1833 Fort Amherst, Cape Spear and Narrows precursor records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1833 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-194"],
+      "completion_evidence": ["research/NP_1833_SYSTEM_RECORD.md", "src/data.js", "tests/np-1833-system.test.js"],
+      "blocker": null,
+      "notes": "The Governor described the existing Fort Amherst fog-warning gun and proposed an ordinary light and heavy gun at Cape Spear. The Chamber of Commerce reported a coastal lighthouse-site review and mooring-buoy work in the Narrows. The evidence remains separate from the 1834 statutory system."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

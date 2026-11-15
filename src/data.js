@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1833-fort-amherst-cape-spear-governor-message",
+    year: 1833,
+    organization: "Public Ledger",
+    title: "Governor's Fort Amherst and Cape Spear Navigation-Aid Message",
+    topics: ["1833", "Fort Amherst", "Cape Spear", "fog warning", "gun signal", "ordinary light", "heavy gun", "proposed navigation aid"],
+    pages: "physical PDF pp. 1 and 4",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18330122.pdf"
+  },
+  {
+    id: "mun-times-1833-chamber-lighthouse-sites-mooring-buoys",
+    year: 1833,
+    organization: "Times and General Commercial Gazette",
+    title: "Chamber of Commerce Lighthouse-Site and Narrows Mooring-Buoy Report",
+    topics: ["1833", "Chamber of Commerce", "lighthouse stations", "site committee", "Narrows", "mooring buoys", "mooring lighter", "Captain Bonifant"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/timesgeneral/TimesAndGeneralCommercialGazette18330828.pdf"
+  },
+  {
     id: "mun-statutes-1834-st-johns-cape-spear-lighthouse-act",
     year: 1834,
     organization: "Newfoundland Legislature",
@@ -13675,6 +13695,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1833-01-10",
+    category: "navigation infrastructure",
+    title: "Governor described the Fort Amherst fog-warning gun",
+    body: "The Governor's message stated that a gun was fired occasionally from Fort Amherst when fog lay on the coast, to warn vessels approaching St. John's harbour. It also explained that the fort lay too far inside the harbour for the sound to carry far when onshore wind accompanied fog.",
+    sourceId: "mun-public-ledger-1833-fort-amherst-cape-spear-governor-message",
+    pages: "physical PDF pp. 1 and 4",
+    status: "reported"
+  },
+  {
+    date: "1833-01-10",
+    category: "navigation infrastructure",
+    title: "Governor proposed an ordinary light and heavy gun at Cape Spear",
+    body: "The same message said that Cape Spear became a hazard to approaching vessels when the breeze was strong. It proposed an ordinary light and a heavy gun there as navigation aids that could be established and maintained at moderate expense.",
+    sourceId: "mun-public-ledger-1833-fort-amherst-cape-spear-governor-message",
+    pages: "physical PDF pp. 1 and 4",
+    status: "proposed"
+  },
+  {
+    date: "1833-08-07",
+    category: "navigation infrastructure",
+    title: "Chamber reported a coastal lighthouse-site review",
+    body: "The St. John's Chamber of Commerce reported that the Governor had directed its attention to coastal lighthouse construction near the end of the previous year. A committee identified what it considered the best stations and submitted them to the Governor. The report does not name the sites.",
+    sourceId: "mun-times-1833-chamber-lighthouse-sites-mooring-buoys",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1833-08-07",
+    category: "navigation infrastructure",
+    title: "Chamber reported mooring buoys installed in the Narrows",
+    body: "The Chamber reported that most of its available funds had been spent laying mooring buoys in the Narrows. A November gale had damaged the mooring lighter and increased the cost. The report credited Captain Bonifant, Royal Navy, with assistance.",
+    sourceId: "mun-times-1833-chamber-lighthouse-sites-mooring-buoys",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
   {
     date: "1834-06-12",
     category: "navigation infrastructure",
