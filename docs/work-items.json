@@ -2194,6 +2194,18 @@
       "notes": "The detailed Victoria record dates commissioning to 1904 and describes the powerhouse, dam, intake, storage and 494 m penstock. It gives 500 kW total capacity but dates the present 450 kW Voith turbine to 1914. A 2008 operating summary lists 0.55 MW, so both dated capacity values are retained."
     },
     {
+      "id": "NPREG-125",
+      "title": "Add the 1903 Black River industrial water-power record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1903 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-124"],
+      "completion_evidence": ["research/NP_1903_SYSTEM_RECORD.md", "src/data.js", "tests/np-1903-system.test.js"],
+      "blocker": null,
+      "notes": "The Newfoundland Quarterly dates the Black River pulp mill shutdown to 1903 and describes water turbines intended to provide 12,000 hp for mill machinery. A 1966 federal survey independently records the shutdown and a 30 foot dam. Neither source identifies electric generation or a grid connection."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

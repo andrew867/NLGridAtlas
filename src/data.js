@@ -620,6 +620,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "mun-1998-black-river-pulp-mill",
+    year: 1998,
+    organization: "Newfoundland Quarterly",
+    title: "Black River Pulp Mill",
+    topics: ["1897", "1903", "Black River", "pulp mill", "dam", "artificial falls", "water turbines", "mechanical water power"],
+    pages: "physical PDF p. 16, printed p. 14",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume92no1Summer1998.pdf"
+  },
+  {
+    id: "dfo-1966-black-river-survey",
+    year: 1966,
+    organization: "Department of Fisheries of Canada",
+    title: "A Stream Survey Report of Black and North Harbour Rivers",
+    topics: ["1897", "1903", "1946", "Black River", "pulp mill", "dam", "mill operations"],
+    pages: "physical PDF p. 12, report p. 7",
+    status: "reported",
+    url: "https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/10260.pdf"
+  },
+  {
     id: "gnl-1906-grand-falls-first-harnessed",
     year: 2026,
     organization: "Government of Newfoundland and Labrador",
@@ -11755,6 +11775,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1903",
+    category: "industrial water power",
+    title: "Black River pulp mill ceased production",
+    body: "The historical record says the mill closed in 1903 because of high operating costs and insufficient water power. Its artificial falls supplied water turbines stated to provide 12,000 hp for mill machinery. The source does not identify electric generation or a grid connection.",
+    sourceId: "mun-1998-black-river-pulp-mill",
+    pages: "physical PDF p. 16, printed p. 14",
+    status: "reported"
+  },
   {
     date: "1904",
     category: "generation",
