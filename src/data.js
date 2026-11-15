@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "nl-statutes-1880-telegraph-appropriations",
+    year: 1880,
+    organization: "Newfoundland Legislature",
+    title: "Telegraph Interest, Extension and Maintenance Appropriations",
+    topics: ["1880", "telegraph", "Supply Act", "Indemnity Act", "interest", "line extension", "maintenance"],
+    pages: "physical PDF pp. 126 and 143, printed pp. 126 and 143",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1880.pdf"
+  },
+  {
     id: "nl-statutes-1881-railway-communications",
     year: 1881,
     organization: "Newfoundland Legislature",
@@ -11985,6 +11995,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1880",
+    category: "telecommunications authorization",
+    title: "Legislature funded telegraph interest, extension and maintenance",
+    body: "The Supply Act appropriated $4,603 for interest on telegraph lines from the Fishery Award and $7,000 for extension and maintenance of a new telegraph line. The Indemnity Act separately covered $1,945.83 for telegraph interest and maintenance. The statutes do not identify the line route or completed work.",
+    sourceId: "nl-statutes-1880-telegraph-appropriations",
+    pages: "physical PDF pp. 126 and 143, printed pp. 126 and 143",
+    status: "verified"
+  },
   {
     date: "1881-05-09",
     category: "system authorization",

@@ -2470,6 +2470,18 @@
       "notes": "The Railway Act passed on May 9, 1881 and admitted telegraph, telephone and electric-light equipment for the railway project free of duty. The record is authorization and procurement scope, not installation or commissioning evidence."
     },
     {
+      "id": "NPREG-148",
+      "title": "Add the 1880 telegraph appropriations",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1880 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-147"],
+      "completion_evidence": ["research/NP_1880_SYSTEM_RECORD.md", "src/data.js", "tests/np-1880-system.test.js"],
+      "blocker": null,
+      "notes": "The Supply Act appropriated telegraph interest and line-extension and maintenance funding. The Indemnity Act separately recorded past telegraph interest and maintenance expenditure. Neither statute identifies the route or completed work."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
