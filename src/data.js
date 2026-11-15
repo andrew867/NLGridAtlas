@@ -640,6 +640,66 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-telegraph-1857-archibald",
+    year: 1857,
+    organization: "Telegraph",
+    title: "New York Telegraph Company Secretary Appointment",
+    topics: ["1857", "telegraph", "New York Newfoundland and London Telegraph Company", "E. M. Archibald", "company management"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/telegraph/Telegraph18570121.pdf"
+  },
+  {
+    id: "mun-statutes-1857-telegraph-amendment",
+    year: 1857,
+    organization: "Newfoundland Legislature",
+    title: "Telegraph Company Amendment Act",
+    topics: ["1857", "telegraph", "Atlantic Telegraph Company", "New York Newfoundland and London Telegraph Company", "joint station", "company consolidation", "infrastructure protection"],
+    pages: "physical PDF pp. 1 to 3",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1857.pdf"
+  },
+  {
+    id: "mun-telegraph-1857-silver-thaw",
+    year: 1857,
+    organization: "Telegraph",
+    title: "Conception Bay Telegraph Interruption During Silver Thaw",
+    topics: ["1857", "telegraph", "Conception Bay", "silver thaw", "line interruption"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/telegraph/Telegraph18570318.pdf"
+  },
+  {
+    id: "mun-times-1857-cable-parting",
+    year: 1857,
+    organization: "Times and General Commercial Gazette",
+    title: "1857 Atlantic Cable Expedition Failure",
+    topics: ["1857", "telegraph", "Atlantic cable", "Niagara", "cable parting", "cable pay-out"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18570829.pdf"
+  },
+  {
+    id: "mun-telegraph-1857-havre-steamer",
+    year: 1857,
+    organization: "Telegraph",
+    title: "Cape Race Havre Steamer News Report",
+    topics: ["1857", "telegraph", "Cape Race", "Havre steamer", "Morning Post Office", "news service"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/telegraph/Telegraph18571118.pdf"
+  },
+  {
+    id: "mun-telegraph-1857-gale-wire",
+    year: 1857,
+    organization: "Telegraph",
+    title: "Telegraph Wire Down After Gale",
+    topics: ["1857", "telegraph", "gale", "wire damage", "news service interruption"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/telegraph/Telegraph18571216.pdf"
+  },
+  {
     id: "mun-times-1858-company-office",
     year: 1858,
     organization: "Times and General Commercial Gazette",
@@ -12645,6 +12705,60 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1857-01-21",
+    category: "telecommunications administration",
+    title: "E. M. Archibald was appointed company secretary in New York",
+    body: "The report identifies former Newfoundland Attorney General E. M. Archibald as secretary in New York to the New York, Newfoundland and London Electric Telegraph Company. It reports a salary of $2,400, or £600 in Newfoundland currency.",
+    sourceId: "mun-telegraph-1857-archibald",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1857-03-03",
+    category: "telecommunications regulation",
+    title: "Telegraph amendment authorized a joint Atlantic cable station",
+    body: "The enacted amendment authorized the Newfoundland company to consent to the Atlantic Telegraph Company extending its submarine cable to the island and bringing it into a joint station. It also authorized consolidation of the companies and protected telegraph infrastructure against wilful and malicious damage or obstruction. A summary conviction could result in a fine not exceeding £5 or imprisonment not exceeding one calendar month.",
+    sourceId: "mun-statutes-1857-telegraph-amendment",
+    pages: "physical PDF pp. 1 to 3",
+    status: "verified"
+  },
+  {
+    date: "1857-03-03",
+    category: "telecommunications reliability",
+    title: "Silver thaw was reported to have interrupted Conception Bay replies",
+    body: "The Legislative Council president said he had telegraphed absent Conception Bay members but had received no answer. He supposed that silver thaw on the wires caused the interruption. The report does not confirm the fault location or repair time.",
+    sourceId: "mun-telegraph-1857-silver-thaw",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1857-08-11",
+    category: "telecommunications construction",
+    title: "The first 1857 Atlantic cable attempt ended when the cable parted",
+    body: "The report states that 335 nautical miles of cable had been paid out. Water was more than two miles deep for much of the run. The cable was running at somewhat over five knots while the Niagara was making four knots. The engineer directed that the brakes be applied more firmly, and the cable parted some distance from the stern.",
+    sourceId: "mun-times-1857-cable-parting",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1857-11-18",
+    category: "telecommunications operations",
+    title: "Cape Race report carried November 4 English news",
+    body: "The newspaper reports that the Morning Post Office issued news obtained from a Havre steamer off Cape Race. The dispatch carried English dates to November 4. The publication does not state the calendar date of the ship contact.",
+    sourceId: "mun-telegraph-1857-havre-steamer",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1857-12-16",
+    category: "telecommunications reliability",
+    title: "A gale brought down the telegraph wire",
+    body: "The newspaper states that the telegraph wire had been blown down during the previous week's gale, preventing receipt of later foreign intelligence. It does not identify the damaged section or the repair date.",
+    sourceId: "mun-telegraph-1857-gale-wire",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1858-03-24",
     category: "telecommunications operations",

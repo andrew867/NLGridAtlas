@@ -2746,6 +2746,18 @@
       "notes": "The record identifies the St. John's company office, Cape Race news service, August 5 cable landing, August message tests, unresolved October and November fault work, and the Valentia test apparatus. Proposed message-container work and estimated fault distance remain separate from operating and confirmed evidence."
     },
     {
+      "id": "NPREG-171",
+      "title": "Add the 1857 telegraph law, cable attempt and operating records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1857 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-170"],
+      "completion_evidence": ["research/NP_1857_SYSTEM_RECORD.md", "src/data.js", "tests/np-1857-system.test.js"],
+      "blocker": null,
+      "notes": "The record identifies the company secretary in New York, the enacted Atlantic cable amendment, a reported silver-thaw interruption, the August 11 cable parting, a Cape Race news report and a December gale outage. The silver-thaw cause remains the Legislative Council president's stated supposition."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
