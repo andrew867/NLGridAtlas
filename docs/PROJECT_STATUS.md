@@ -389,10 +389,11 @@ Updated: 2026-11-15
 - Added the 1850 telegraph proposal record. Contemporary reports separate the Halifax to Ireland cable proposal along the Newfoundland Banks, the St. John's station editorial and J.T.M.'s proposed St. John's to Cape Ray, St. Paul's Island and Cape North route. No 1850 Newfoundland company, survey, construction or operating circuit was found.
 - Added the 1849 electric telegraph record. The contemporary Public Ledger describes Humphrey's working miniature telegraph, perforated-paper recorder and proposals for mainland and Atlantic submarine links. A separate 1855 retrospective attributes the specific St. John's, Cape Ray and Cape Breton route to the lecture and Gisborne; the contemporary notice does not.
 - Added the 1848 mainland telegraph precursors. A Saint John, New Brunswick report identifies Gisborne's earth-return explanation and working paper-marking apparatus. A second report records the proposed Bangor, Calais, New Brunswick, Amherst and Halifax chain. Neither report establishes Newfoundland construction or operation in 1848.
+- Closed the 1847 system search without adding a timeline event. A St. John's editorial proposed weekly steam communication with Boston and compared the plan with the developing mainland electric-telegraph network. It did not identify a Newfoundland telegraph line, company, station, instrument, construction project or operating circuit.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1848 record under `NPREG-180`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1847 record under `NPREG-181`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

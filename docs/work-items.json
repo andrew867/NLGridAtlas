@@ -2866,6 +2866,18 @@
       "notes": "The record identifies Gisborne's Saint John, New Brunswick technical lecture and the proposed mainland route toward Halifax. Both remain external precursors; no 1848 Newfoundland telegraph infrastructure was located."
     },
     {
+      "id": "NPREG-181",
+      "title": "Close the 1847 Newfoundland system search",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1847 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-180"],
+      "completion_evidence": ["research/NP_1847_SYSTEM_RECORD.md", "tests/np-1847-system.test.js"],
+      "blocker": null,
+      "notes": "The St. John's editorial proposed weekly steam communication with Boston and compared it with the developing mainland telegraph network. It did not propose or identify Newfoundland telegraph infrastructure, so no timeline event was added."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
