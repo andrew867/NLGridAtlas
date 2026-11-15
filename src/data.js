@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "lovell-1871-newfoundland-telegraph-directory",
+    year: 1871,
+    organization: "Lovell's Province of Newfoundland Directory",
+    title: "Newfoundland Telegraph Offices and Staff, 1871",
+    topics: ["1871", "telegraph", "New York, Newfoundland and London Telegraph Company", "Anglo-American Telegraph Company", "Atlantic Telegraph Company", "Black River", "Brigus", "Carbonear", "Chapel Arm", "Harbor Grace", "Heart's Content", "St. John's"],
+    pages: "physical PDF pp. 3, 10, 13, 19 to 20, 23, 40, 42, 44 to 45, 78, 99, 105 and 108",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_tools/LovellsNewfoundlandDirectory1871_2.pdf"
+  },
+  {
     id: "mun-morning-chronicle-1872-western-telegraph-offices",
     year: 1872,
     organization: "The Morning Chronicle",
@@ -12175,6 +12185,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1871",
+    category: "telecommunications operations",
+    title: "Lovell's directory listed six company offices and the Heart's Content cable staff",
+    body: "The 1871 directory explicitly listed New York, Newfoundland and London Telegraph Company offices at Black River, Brigus, Carbonear, Chapel Arm, Harbor Grace and St. John's. Black River was described as a telegraph station. The Heart's Content entry described the company's line and listed telegraph operators and an Atlantic Telegraph Company manager.",
+    sourceId: "lovell-1871-newfoundland-telegraph-directory",
+    pages: "physical PDF pp. 10, 13, 19 to 20, 23, 40, 42, 44 to 45, 78, 99, 105 and 108",
+    status: "reported"
+  },
   {
     date: "1872-11-13",
     category: "telecommunications operations",

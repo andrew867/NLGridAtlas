@@ -2578,6 +2578,18 @@
       "notes": "The November 13 Morning Chronicle identifies Rose Blanche as an operating telegraph office, rejects a general western-office abandonment, and separately reports the intended Rose Blanche closure and Bay Roberts opening. The intended changes remain proposed."
     },
     {
+      "id": "NPREG-157",
+      "title": "Add the 1871 Newfoundland telegraph directory",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1871 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-156"],
+      "completion_evidence": ["research/NP_1871_SYSTEM_RECORD.md", "src/data.js", "tests/np-1871-system.test.js"],
+      "blocker": null,
+      "notes": "Lovell's 1871 directory explicitly lists company offices at Black River, Brigus, Carbonear, Chapel Arm, Harbor Grace and St. John's. Heart's Content remains separately described as a company-line and staff centre rather than added to the generic office list."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

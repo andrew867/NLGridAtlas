@@ -365,10 +365,11 @@ Updated: 2026-11-15
 - Added the 1874 Direct Cable record. The published Supreme Court judgment records the July 26 Faraday cable attempt in Conception Bay and the limited injunction against cable landing, land-line construction and telegraph operation within Newfoundland jurisdiction.
 - Added the 1873 telegraph-company record. The Newfoundland Law Reports establish the June 26 consolidation of the Anglo-American and Newfoundland companies. A company notice dated July 18 lists fourteen owned submarine cables and their routes.
 - Added the 1872 western telegraph-office record. The November 13 report identifies Rose Blanche as an operating office and rejects a general closure of stations west of Placentia. The intended Rose Blanche closure and Bay Roberts opening remain proposed.
+- Added the 1871 telegraph directory. It explicitly lists company offices at Black River, Brigus, Carbonear, Chapel Arm, Harbor Grace and St. John's. Heart's Content is separately recorded from its company-line description and telegraph staff roster.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1872 western telegraph-office record under `NPREG-156`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1871 telegraph directory under `NPREG-157`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
