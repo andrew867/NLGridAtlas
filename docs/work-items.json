@@ -1894,6 +1894,18 @@
       "notes": "Newfoundland Power places the original Lawn development and woodstave penstock in 1929. The provincial government also created the first Public Utilities Commission that year, but its authority was limited to government-referred investigations. The Bay Bulls Big Pond property schedule records a September 25, 1929 acquisition."
     },
     {
+      "id": "NPREG-100",
+      "title": "Close the 1928 system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1928 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-099"],
+      "completion_evidence": ["research/NP_1928_SYSTEM_RECORD.md", "tests/np-1928-system.test.js"],
+      "blocker": null,
+      "notes": "Hydro's NP-308 response says the Exploits River gauging record used in later inflow studies starts in 1928. This is a hydrologic data-series date, not an asset commissioning date. Other exact-year results were anonymous accounting rows, out-of-province plant records, modern numeric matches and references to CGVD28. No 1928 public card or timeline event was created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
