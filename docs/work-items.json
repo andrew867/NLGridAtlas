@@ -2530,6 +2530,18 @@
       "notes": "The 1876 House journal records the northern communications gap, Cape St. John company petition, committee terms and legislative request for northern connections. Contemporary 1878 newspapers correct the later 1885 summary: Trinity, Catalina and Bonavista were connected in October 1877, western construction began in 1878, and King's Cove remained pending in November 1878."
     },
     {
+      "id": "NPREG-153",
+      "title": "Add the 1875 cable proposal, monopoly motion and tariff record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1875 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-152"],
+      "completion_evidence": ["research/NP_1875_SYSTEM_RECORD.md", "src/data.js", "tests/np-1875-system.test.js"],
+      "blocker": null,
+      "notes": "The House journal records the withdrawn £30,000 Direct Cable proposal, the Faraday cable-laying failure and an unresolved motion on telegraph purchase rights. The North Star separately publishes the Anglo-American operating station list and transatlantic tariff reduction."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "nl-assembly-1875-direct-cable-offer",
+    year: 1875,
+    organization: "Newfoundland House of Assembly",
+    title: "Direct Cable Offer and Faraday Cable Failure",
+    topics: ["1875", "Direct United States Cable Company", "Faraday", "Anglo-American Telegraph Company", "submarine cable", "pre-emption", "telegraph monopoly"],
+    pages: "physical PDF pp. 1368 to 1369, printed pp. 1145 to 1146",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/h_assembly/JournaloftheHouseofAssemblyofNewfoundland1875.pdf"
+  },
+  {
+    id: "nl-assembly-1875-telegraph-motion",
+    year: 1875,
+    organization: "Newfoundland House of Assembly",
+    title: "House Motion on Telegraph Purchase Rights and Monopoly",
+    topics: ["1875", "New York, Newfoundland and London Telegraph Company", "telegraph monopoly", "purchase rights", "House of Assembly", "prorogation"],
+    pages: "physical PDF p. 213, printed p. 205",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/h_assembly/JournaloftheHouseofAssemblyofNewfoundland1875.pdf"
+  },
+  {
+    id: "mun-north-star-1875-telegraph-tariff",
+    year: 1875,
+    organization: "The North Star",
+    title: "Anglo-American Telegraph Company Tariff Reduction",
+    topics: ["1875", "Anglo-American Telegraph Company", "St. John's", "Holyrood", "Salmonier", "Placentia", "Brigus", "Bay Roberts", "Harbor Grace", "Carbonear", "Heart's Content", "telegraph tariff", "cable tariff"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/northstar/NorthStarandStJohnsNewfoundlandNews18751106.pdf"
+  },
+  {
     id: "nl-assembly-1876-communications-gap",
     year: 1876,
     organization: "Newfoundland House of Assembly",
@@ -12095,6 +12125,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1875-02-16",
+    category: "telecommunications proposal",
+    title: "Direct Cable offer was withdrawn after the Faraday failure",
+    body: "Council minutes record a Direct United States Cable Company proposal to pay the Newfoundland Government £30,000 if it gave notice to exercise pre-emption against the Anglo-American Telegraph Company. Laurence Oliphant withdrew the offer after the Faraday failed to lay the cable.",
+    sourceId: "nl-assembly-1875-direct-cable-offer",
+    pages: "physical PDF pp. 1368 to 1369, printed pp. 1145 to 1146",
+    status: "reported"
+  },
+  {
+    date: "1875-04-17",
+    category: "telecommunications proposal",
+    title: "House debated immediate action against the telegraph monopoly",
+    body: "A House motion proposed protecting the colony's purchase rights under the 1854 charter and taking immediate action to abolish the telegraph monopoly. Debate began, but the Governor summoned the House and prorogued the session before the journal recorded a vote.",
+    sourceId: "nl-assembly-1875-telegraph-motion",
+    pages: "physical PDF p. 213, printed p. 205",
+    status: "proposed"
+  },
+  {
+    date: "1875-11-06",
+    category: "telecommunications operations",
+    title: "Anglo-American advertised a lower transatlantic tariff",
+    body: "The North Star published an Anglo-American Telegraph Company notice listing St. John's, Holyrood, Salmonier, Placentia, Brigus, Bay Roberts, Harbor Grace, Carbonear and Heart's Content. The newspaper described the cable tariff to Great Britain and France as reduced from 75 cents to 50 cents per word.",
+    sourceId: "mun-north-star-1875-telegraph-tariff",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1876-02-21",
     category: "communications operations",

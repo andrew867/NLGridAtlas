@@ -361,10 +361,11 @@ Updated: 2026-11-15
 - Expanded the 1878 record with contemporary western-line reports. The first bush of the Bay of Islands telegraph track was cut on February 18, the line was reported almost complete to Bay of Islands on July 25, and King's Cove remained a future extension on November 26. The private St. John's telephone line remains reported from the later encyclopedia account. The Northern Telegraph financing is verified from the Supply Act, which records $765 interest on a $17,000 construction advance.
 - Corrected the 1877 telegraph record. The February 1878 Governor's speech reports that Trinity, Catalina and Bonavista had been connected since October 1877. Contemporary 1878 reports conflict with the later review that assigned the western group and King's Cove to 1877. The enacted statute identifies batteries, machinery, wire-cable and posts as protected telegraph property.
 - Added the 1876 northern communications and telegraph proposals. The House journal records the operating communications gap, the Cape St. John company petition, proposed guarantee terms and the legislative request for northern connections. It does not establish construction in 1876.
+- Added the 1875 cable and telegraph record. The House journal records a withdrawn £30,000 Direct Cable proposal, the Faraday cable-laying failure and an unresolved motion on telegraph purchase rights. The North Star separately lists the operating Anglo-American stations and reports the transatlantic tariff reduction from 75 cents to 50 cents per word.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1876 telegraph proposals under `NPREG-152`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1875 cable and tariff records under `NPREG-153`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

@@ -69,6 +69,7 @@ Objective: replace the source-image-only overview with a navigable, dated island
 
 Work items:
 
+- NPREG-153
 - NPREG-152
 - NPREG-151
 - NPREG-150
