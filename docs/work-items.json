@@ -2662,6 +2662,18 @@
       "notes": "The record separates Heart's Content landing preparations, the August 2 loss of signals, a retrospective cable-parting value and the August 15 local report that the ship had ended its recovery attempt. Contemporary tank and weather explanations remain unresolved commentary rather than engineering findings."
     },
     {
+      "id": "NPREG-164",
+      "title": "Add the 1864 operating telegraph network and damage records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1864 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-163"],
+      "completion_evidence": ["research/NP_1864_SYSTEM_RECORD.md", "src/data.js", "tests/np-1864-system.test.js"],
+      "blocker": null,
+      "notes": "The 1864-65 directory lists 15 Newfoundland and four Cape Breton telegraph stations, tariffs and St. John's staff. Contemporary reports identify recent wire damage near Holyrood and a pole cut down and removed on the Caplin Bay road. The Holyrood event date and the second wire-cutting incident are not identified."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

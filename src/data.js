@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "hutchinson-1864-telegraph-directory",
+    year: 1864,
+    organization: "Hutchinson's Newfoundland Directory",
+    title: "New York, Newfoundland, and London Telegraph Company Stations and Tariffs",
+    topics: ["1864", "telegraph", "New York Newfoundland and London Telegraph Company", "stations", "tariffs", "Market House", "Alexander M. Mackay"],
+    pages: "physical PDF pp. 329 to 330, printed pp. 341 to 342",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_tools/HutchinsonsNewfoundlandDirectory1864-65.pdf"
+  },
+  {
+    id: "mun-daybook-1864-holyrood-wire-damage",
+    year: 1864,
+    organization: "The Day-Book",
+    title: "Recent Telegraph-Wire Damage near Holyrood",
+    topics: ["1864", "telegraph", "Holyrood", "wire damage", "network fault"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/mchronicle/DayBook18641112.pdf"
+  },
+  {
+    id: "mun-daybook-1864-caplin-bay-pole",
+    year: 1864,
+    organization: "The Day-Book",
+    title: "Caplin Bay Road Telegraph-Pole Removal",
+    topics: ["1864", "telegraph", "Caplin Bay", "Ferryland", "pole", "wire cutting", "network fault"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/mchronicle/DayBook18641123.pdf"
+  },
+  {
     id: "mun-chronicle-1865-heart-content-preparations",
     year: 1865,
     organization: "The Morning Chronicle",
@@ -12345,6 +12375,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1864",
+    category: "telecommunications operations",
+    title: "The telegraph company directory listed 19 operating stations",
+    body: "The 1864-65 directory lists 15 Newfoundland stations and four Cape Breton stations. The St. Johns to Port au Basque tariff was $2 for the first ten words. The Port Hood to Newfoundland tariff was $3 for the first ten words. The company head office was in the Market House Building, St. Johns.",
+    sourceId: "hutchinson-1864-telegraph-directory",
+    pages: "physical PDF pp. 329 to 330, printed pp. 341 to 342",
+    status: "reported"
+  },
+  {
+    date: "1864-11-12",
+    category: "telecommunications fault",
+    title: "The Day-Book reported recent telegraph-wire damage near Holyrood",
+    body: "The issue reprinted an editorial concerning the recent destruction of telegraph wires near Holyrood. It does not give the event date, damaged length, restoration date or responsible party.",
+    sourceId: "mun-daybook-1864-holyrood-wire-damage",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1864-11-21",
+    category: "telecommunications fault",
+    title: "A telegraph pole was cut down on the Caplin Bay road",
+    body: "A Ferryland report dated November 21 states that one telegraph pole on the Caplin Bay road was cut down with an axe and carried away. The same issue records a judicial reference to two recent wire-cutting cases, but does not identify the second incident or give a restoration date.",
+    sourceId: "mun-daybook-1864-caplin-bay-pole",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1865-07-14",
     category: "telecommunications construction",
