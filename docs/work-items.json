@@ -2122,6 +2122,18 @@
       "notes": "The selected unit table dates PHR-G1 to 1910, and capital records date its original governor and Voith inlet valve to 1910. The detailed plant record instead lists turbine-generator commissioning in 1900, 1908 and 1926 without present unit identifiers, so the conflict is retained."
     },
     {
+      "id": "NPREG-119",
+      "title": "Close the 1909 system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1909 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-118"],
+      "completion_evidence": ["research/NP_1909_SYSTEM_RECORD.md", "tests/np-1909-system.test.js"],
+      "blocker": null,
+      "notes": "No named 1909 Newfoundland system event or depreciation placement was located. Exact-year generating-station matches were out-of-province records, including Ontario plants in IC-1."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
