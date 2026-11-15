@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "parks-canada-1975-cape-spear-chronology",
+    year: 1975,
+    organization: "Parks Canada",
+    title: "Cape Spear Lighthouse Historical Chronology",
+    topics: ["1832", "1833", "1834", "representative government", "Cape Spear", "Fort Amherst", "lighthouse", "evidence chronology"],
+    pages: "physical PDF pp. 43 to 44, report pp. 2 to 3",
+    status: "reported",
+    url: "https://parkscanadahistory.com/series/mrs/386.pdf"
+  },
+  {
     id: "mun-public-ledger-1833-fort-amherst-cape-spear-governor-message",
     year: 1833,
     organization: "Public Ledger",

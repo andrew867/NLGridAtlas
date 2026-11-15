@@ -3046,6 +3046,18 @@
       "notes": "The Governor described the existing Fort Amherst fog-warning gun and proposed an ordinary light and heavy gun at Cape Spear. The Chamber of Commerce reported a coastal lighthouse-site review and mooring-buoy work in the Narrows. The evidence remains separate from the 1834 statutory system."
     },
     {
+      "id": "NPREG-196",
+      "title": "Close the 1832 lighthouse chronology boundary",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Test the published 1832 lighthouse-authorization claim against dated technical and legislative evidence, and inventory surviving 1832 electrical and telecommunications evidence.",
+      "dependencies": ["NPREG-195"],
+      "completion_evidence": ["research/NP_1832_SYSTEM_RECORD.md", "src/data.js", "tests/np-1832-system.test.js"],
+      "blocker": null,
+      "notes": "The dated record supports representative government in 1832, a governor's technical case in January 1833, and lighthouse enabling legislation in June 1834. No 1832 technical event was added to the timeline."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
