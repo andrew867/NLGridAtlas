@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-almanac-1862-telegraph-company",
+    year: 1862,
+    organization: "Newfoundland Almanac",
+    title: "New York, Newfoundland, and London Telegraph Company Management",
+    topics: ["1862", "telegraph", "New York Newfoundland and London Telegraph Company", "St. John's", "Alexander M. Mackey", "company management"],
+    pages: "physical PDF p. 53, printed p. 53",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/cns_almanac/Almanac1862.pdf"
+  },
+  {
+    id: "mun-daybook-1862-aquaforte-telegraph",
+    year: 1862,
+    organization: "The Day-Book",
+    title: "Telegraph Service, Aquaforte Fault, and Spaniard's Bay Wire Case",
+    topics: ["1862", "telegraph", "Aquaforte", "Ferryland", "Cape Race", "Spaniard's Bay", "Phelan", "wire theft", "tariffs", "repair"],
+    pages: "physical PDF pp. 2 to 4",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/mchronicle/DayBook18620510.pdf"
+  },
+  {
+    id: "mun-daybook-1862-south-shore-wire-cutting",
+    year: 1862,
+    organization: "The Day-Book",
+    title: "Renews, Aquaforte, and Cape Broyle Wire Cutting",
+    topics: ["1862", "telegraph", "Renews", "Aquaforte", "Cape Broyle", "wire theft", "network fault"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/mchronicle/DayBook18620524.pdf"
+  },
+  {
     id: "mun-almanac-1863-telegraph-company",
     year: 1863,
     organization: "Newfoundland Almanac",
@@ -12405,6 +12435,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1862-02-19",
+    category: "telecommunications operations",
+    title: "Company notice listed its offices, routes and tariffs",
+    body: "The notice listed offices at the Market House Buildings in St. John's and the Temperance Hall Building in Harbor Grace. A ten-word message from St. John's to Brigus, Bay Roberts, Harbor Grace, Carbonear or Ferryland cost 25 cents. A ship report from Cape Race to St. John's or Harbor Grace cost $1.50.",
+    sourceId: "mun-daybook-1862-aquaforte-telegraph",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1862-05-05",
+    category: "telecommunications regulation",
+    title: "Grand jury returned a true bill for telegraph-wire damage near Spaniard's Bay",
+    body: "The Northern Circuit Court report states that the grand jury returned a true bill against Phelan for breaking down telegraph wires near Spaniard's Bay. The report records an indictment, not a conviction.",
+    sourceId: "mun-daybook-1862-aquaforte-telegraph",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1862-05-10",
+    category: "telecommunications fault",
+    title: "The Day-Book reported an Aquaforte wire cut and Cape Race outage",
+    body: "The line near Aquaforte, between Ferryland and Cape Race, had been cut on the Tuesday night before publication and a large portion of wire carried away. A conveyance left St. John's with replacement wire. The report states that communication with Cape Race and Europe was unavailable for a time, but gives no damaged length or return-to-service time.",
+    sourceId: "mun-daybook-1862-aquaforte-telegraph",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1862-05-24",
+    category: "telecommunications fault",
+    title: "The Day-Book reported three South Shore wire cuttings",
+    body: "About 30 yards of wire had been cut away at Renews on the Sunday night before publication. The article also records cuts at Aquaforte and Cape Broyle. It places all three within two weeks and states that the Aquaforte and Cape Broyle cuts occurred on the same evening within four hours of each other. It gives no exact incident dates or repair status.",
+    sourceId: "mun-daybook-1862-south-shore-wire-cutting",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
   {
     date: "1863",
     category: "telecommunications operations",

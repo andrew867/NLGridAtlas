@@ -2686,6 +2686,18 @@
       "notes": "The almanac identifies the Newfoundland telegraph company's officers and St. John's management. The April 27 Cape Race messages establish actual line use during the Anglo-Saxon wreck response. The August 5 Atlantic cable tenders remained under committee review, with no contract award established."
     },
     {
+      "id": "NPREG-166",
+      "title": "Add the 1862 operating service, wire-damage and repair records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1862 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-165"],
+      "completion_evidence": ["research/NP_1862_SYSTEM_RECORD.md", "src/data.js", "tests/np-1862-system.test.js"],
+      "blocker": null,
+      "notes": "The company notice identifies operating offices and tariffs. Contemporary reports record an Aquaforte outage, a repair-wire dispatch, a grand-jury true bill for damage near Spaniard's Bay, and wire cutting at Renews, Aquaforte and Cape Broyle. Publication dates are used where incident dates are not stated."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
