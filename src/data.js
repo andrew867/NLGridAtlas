@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "gsc-1896-low-grand-falls-survey",
+    year: 1896,
+    organization: "Geological Survey of Canada",
+    title: "Report on Explorations in the Labrador Peninsula, Grand Falls Survey",
+    topics: ["1894", "Grand Falls", "Hamilton River", "Churchill River", "A. P. Low", "hydro resource", "survey", "discharge", "fall"],
+    pages: "physical PDF pp. 6 and 140 to 142, printed pp. 6L and 140L to 142L",
+    status: "reported",
+    url: "https://www.electriccanadian.com/history/newfoundland/Report_on_Explorations_in_the_Labrador.pdf"
+  },
+  {
     id: "mun-1965-st-johns-electrical-tramway-notice",
     year: 1965,
     organization: "Newfoundland Quarterly",
@@ -11835,6 +11845,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1894",
+    category: "hydro resource survey",
+    title: "Low surveyed Grand Falls on the Hamilton River",
+    body: "The 1893 to 1894 Geological Survey expedition reached Grand Falls. Low recorded a 760 ft river descent in 12 mi, including a 302 ft main fall, and estimated discharge at about 50,000 ft3/s.",
+    sourceId: "gsc-1896-low-grand-falls-survey",
+    pages: "physical PDF pp. 6 and 140 to 142, printed pp. 6L and 140L to 142L",
+    status: "reported"
+  },
   {
     date: "1895",
     category: "system proposal",

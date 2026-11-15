@@ -2302,6 +2302,18 @@
       "notes": "The historical account reports a month-long September 1895 notice from the Reid Newfoundland Company seeking permission for a St. John's railway operated by electricity or another authorized motive power. No construction or operating state is assigned."
     },
     {
+      "id": "NPREG-134",
+      "title": "Add the 1894 Grand Falls survey record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1894 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-133"],
+      "completion_evidence": ["research/NP_1894_SYSTEM_RECORD.md", "src/data.js", "tests/np-1894-system.test.js"],
+      "blocker": null,
+      "notes": "Low's Geological Survey report records a 760 ft river descent in 12 mi at Grand Falls, including a 302 ft main fall, and estimates discharge at about 50,000 ft3/s. No electrical output or generating plant is assigned."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
