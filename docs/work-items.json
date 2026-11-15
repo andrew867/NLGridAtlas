@@ -2242,6 +2242,18 @@
       "notes": "The detailed Petty Harbour record dates the original development and first horizontal Francis turbine-generator set to 1900. The 5,300 kW and 15.87 GWh values are retained as 2010 three-unit plant figures, not assigned to the original machine."
     },
     {
+      "id": "NPREG-129",
+      "title": "Add the 1899 Petty Harbour construction record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1899 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-128"],
+      "completion_evidence": ["research/NP_1899_SYSTEM_RECORD.md", "src/data.js", "tests/np-1899-system.test.js"],
+      "blocker": null,
+      "notes": "Newfoundland Power's 1999 annual report dates the start of Petty Harbour hydroelectric construction to 1899. The detailed plant record dates the original development and first generating-set commissioning to 1900, so the events remain separate."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

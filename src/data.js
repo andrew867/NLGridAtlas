@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1999-annual-petty-harbour-construction",
+    year: 1999,
+    organization: "Newfoundland Power",
+    title: "CA-213 Attachment D, 1999 Newfoundland Power Inc. Annual Report",
+    topics: ["1899", "1999", "Petty Harbour", "Rose Blanche", "hydroelectric generation", "construction", "century"],
+    pages: "physical PDF p. 17, report p. 14",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213D.pdf"
+  },
+  {
     id: "mun-1937-united-towns-history",
     year: 1937,
     organization: "Newfoundland Who's Who",
@@ -11785,6 +11795,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1899",
+    category: "generation construction",
+    title: "Petty Harbour hydroelectric construction began",
+    body: "Newfoundland Power's 1999 annual report says hydroelectric plant construction at Petty Harbour began in 1899. The detailed plant record dates construction of the original development and commissioning of its first generating set to 1900.",
+    sourceId: "np-1999-annual-petty-harbour-construction",
+    pages: "physical PDF p. 17, report p. 14",
+    status: "reported"
+  },
   {
     date: "1900",
     category: "generation",
@@ -31974,6 +31993,15 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1899 CONSTRUCTION START",
+        sourceId: "np-1999-annual-petty-harbour-construction",
+        pages: "physical PDF p. 17, report p. 14",
+        facts: [
+          ["Construction", "Newfoundland Power's 1999 annual report dates the start of hydroelectric plant construction at Petty Harbour to 1899"],
+          ["Commissioning boundary", "the detailed plant record dates the original development and first generating set to 1900"]
+        ]
+      },
       {
         label: "1900 ORIGINAL DEVELOPMENT",
         sourceId: "np-1908-petty-harbour-development",
