@@ -640,6 +640,56 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-chronicle-1865-heart-content-preparations",
+    year: 1865,
+    organization: "The Morning Chronicle",
+    title: "Heart's Content Cable Landing Preparations",
+    topics: ["1865", "Atlantic cable", "Heart's Content", "telegraph house", "Fritter's Cove", "Trinity Bay", "Alexander McKay"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/mchronicle/MorningChronicle18650902.pdf"
+  },
+  {
+    id: "mun-daily-news-1865-cable-rumour",
+    year: 1865,
+    organization: "St. John's Daily News",
+    title: "Local Uncertainty Concerning the 1865 Atlantic Cable",
+    topics: ["1865", "Atlantic cable", "Great Eastern", "St. John's", "cable fault"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/sjdailynews/TheStJohnsDailyNews18650808.pdf"
+  },
+  {
+    id: "mun-daily-news-1865-signals-ceased",
+    year: 1865,
+    organization: "St. John's Daily News",
+    title: "Atlantic Cable Signals and Unresolved Failure Cause",
+    topics: ["1865", "Atlantic cable", "Great Eastern", "St. John's", "telegraph signals", "North American", "Persia"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/sjdailynews/TheStJohnsDailyNews18650821.pdf"
+  },
+  {
+    id: "mun-chronicle-1865-cable-failure",
+    year: 1865,
+    organization: "The Morning Chronicle",
+    title: "Heart's Content Report of the 1865 Cable Failure",
+    topics: ["1865", "Atlantic cable", "Heart's Content", "Great Eastern", "cable recovery", "telegraph house"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/mchronicle/MorningChronicle18650911.pdf"
+  },
+  {
+    id: "mun-times-1866-1865-cable-retrospective",
+    year: 1866,
+    organization: "The Times and General Commercial Gazette",
+    title: "Retrospective 1865 Cable Parting Record",
+    topics: ["1865", "Atlantic cable", "Great Eastern", "cable parting", "cable length", "1866 expedition diary"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18660804.pdf"
+  },
+  {
     id: "mun-express-1866-atlantic-cable",
     year: 1866,
     organization: "The Newfoundland Express",
@@ -12295,6 +12345,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1865-07-14",
+    category: "telecommunications construction",
+    title: "Heart's Content prepared its telegraph house for the Atlantic cable",
+    body: "A Heart's Content correspondent reported that the telegraph house was almost finished. The carpenter's work was complete, the walls were papered and the carpets were down. The same report described a harbour entrance more than 100 feet deep close to shore and identified Fritter's Cove near Perlican as another site promoted to the surveyors.",
+    sourceId: "mun-chronicle-1865-heart-content-preparations",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1865-08-02",
+    category: "telecommunications fault",
+    title: "Signals from the 1865 Atlantic cable ceased",
+    body: "The August 21 Daily News reported that signals from the Atlantic cable ceased on August 2. It compared moderate-weather entries from the North American and Persia and stated that the cause remained a mystery. The cable-tank explanation was printed as an impression, not a finding.",
+    sourceId: "mun-daily-news-1865-signals-ceased",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1865-08-02",
+    category: "telecommunications fault",
+    title: "The 1865 Atlantic cable parted after 1,213 miles had been paid out",
+    body: "The 1866 expedition diary identified the position where the cable had parted on August 2, 1865. It states that 1,213 miles had then been paid out. This is a retrospective account printed during the 1866 expedition.",
+    sourceId: "mun-times-1866-1865-cable-retrospective",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1865-08-15",
+    category: "telecommunications recovery",
+    title: "Heart's Content received definite news that the 1865 cable had been severed",
+    body: "A Heart's Content correspondent reported that the telegraph house received news that the cable had been severed and that the Great Eastern, after repeated recovery attempts, had put back to England.",
+    sourceId: "mun-chronicle-1865-cable-failure",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
   {
     date: "1866-07-27",
     category: "telecommunications commissioning",

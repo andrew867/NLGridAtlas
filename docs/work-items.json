@@ -2650,6 +2650,18 @@
       "notes": "The contemporary newspaper record separates the successful 1866 Atlantic cable, the broken Cape Ray to Cape North regional cable, recovery, message traffic and Heart's Content landing of the 1865 Atlantic cable, and the reported new Gulf cable-laying operation. Programme cable quantities remain planning values rather than surveyed as-laid lengths."
     },
     {
+      "id": "NPREG-163",
+      "title": "Add the 1865 Heart's Content preparations and cable-failure record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1865 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-162"],
+      "completion_evidence": ["research/NP_1865_SYSTEM_RECORD.md", "src/data.js", "tests/np-1865-system.test.js"],
+      "blocker": null,
+      "notes": "The record separates Heart's Content landing preparations, the August 2 loss of signals, a retrospective cable-parting value and the August 15 local report that the ship had ended its recovery attempt. Contemporary tank and weather explanations remain unresolved commentary rather than engineering findings."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

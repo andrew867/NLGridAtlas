@@ -371,10 +371,11 @@ Updated: 2026-11-15
 - Closed the 1868 system search without adding a timeline event. The House journal records $126.45 for telegraph messages, not a named system change. Its infrastructure-specific pole-placement record is dated December 31, 1867 and remains assigned to the 1867 queue.
 - Added the 1867 telegraph record. The House journal separates a proposed St. John's to Port Hood duplicate line, Placentia cable and Heart's Content connection from the committee's report that the St. John's to Trepassey line had been taken down. Chapter 17 raised authorized capital from $3 million to $6 million without establishing construction. The December 31 road report records poles as close as five feet from the road centre between Half-way House and Salmonier Bridge.
 - Added the 1866 cable record. Contemporary reports now separate the completed 1866 Atlantic cable, the broken Cape Ray to Cape North regional cable, recovery, message traffic and Heart's Content shore connection of the 1865 Atlantic cable, and the new Gulf cable-laying operation. The expedition programme's route and cable quantities remain planning values rather than surveyed as-laid lengths.
+- Added the 1865 cable record. Heart's Content correspondence records the telegraph-house and landing-site preparations. Contemporary reports separate the August 2 loss of signals from the later news that the cable was severed and the ship had ended its recovery attempt. The retrospective expedition diary records 1,213 miles paid out at the parting point. Early tank and weather theories remain unresolved.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1866 record under `NPREG-162`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1865 record under `NPREG-163`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
