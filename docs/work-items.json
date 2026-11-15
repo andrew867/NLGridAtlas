@@ -2950,6 +2950,18 @@
       "notes": "An Admiralty notice named two St. John's to Halifax mail packets. Local papers described Bain electromagnetic sounding and printing-telegraph apparatus outside Newfoundland. A reported St. John's gas-light company proposal remained at the estimate stage."
     },
     {
+      "id": "NPREG-188",
+      "title": "Add the 1840 steam-mail and galvanic-demolition records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1840 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-187"],
+      "completion_evidence": ["research/NP_1840_SYSTEM_RECORD.md", "src/data.js", "tests/np-1840-system.test.js"],
+      "blocker": null,
+      "notes": "The legislature authorized conditional support for a St. John's to Halifax steam route. The first regular Cunard-connected mail still used a sailing packet on the Halifax leg; the planned fall steam vessel was deferred before Admiralty sailing packets were advertised. A foreign underwater demolition used a voltaic battery and connecting wires."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

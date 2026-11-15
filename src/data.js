@@ -640,6 +640,66 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1840-scientific-institution",
+    year: 1840,
+    organization: "Public Ledger",
+    title: "Proposed Newfoundland Literary and Scientific Institution",
+    topics: ["1840", "St. John's", "Newfoundland Literary and Scientific Institution", "scientific education", "general meeting"],
+    pages: "physical PDF p. 2",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18400414.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1840-steam-communication-act",
+    year: 1840,
+    organization: "Royal Gazette",
+    title: "St. John's to Halifax Steam Communication Act",
+    topics: ["1840", "St. John's", "Halifax", "steam communication", "legislation", "£3,000", "£1,000 annual instalment"],
+    pages: "physical PDF p. 1",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18400512.pdf"
+  },
+  {
+    id: "mun-public-ledger-1840-roseway-mail",
+    year: 1840,
+    organization: "Public Ledger",
+    title: "Roseway and the Cunard Mail Connection",
+    topics: ["1840", "Roseway", "Britannia", "Cunard", "St. John's", "Halifax", "Great Britain", "mail packet", "steam communication"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18400728.pdf"
+  },
+  {
+    id: "mun-public-ledger-1840-halifax-steam-deferral",
+    year: 1840,
+    organization: "Public Ledger",
+    title: "St. John's to Halifax Steam-Vessel Deferral",
+    topics: ["1840", "St. John's", "Halifax", "Steam Navigation Company", "City of Glasgow", "£7,000", "deferred service"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18400922.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1840-royal-george-galvanic-demolition",
+    year: 1840,
+    organization: "Royal Gazette",
+    title: "Royal George Underwater Galvanic Demolition",
+    topics: ["1840", "Royal George", "Spithead", "voltaic battery", "connecting wires", "underwater demolition", "gunpowder", "Charles Pasley"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18400922.pdf"
+  },
+  {
+    id: "mun-public-ledger-1840-admiralty-mail-packets",
+    year: 1840,
+    organization: "Public Ledger",
+    title: "Admiralty St. John's to Halifax Mail-Packet Contract Notice",
+    topics: ["1840", "St. John's", "Halifax", "Admiralty", "mail packet", "Sandwich", "Charles Buchan", "communications baseline"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18401006.pdf"
+  },
+  {
     id: "mun-newfoundlander-1841-admiralty-mail-packets",
     year: 1841,
     organization: "Newfoundlander",
@@ -13385,6 +13445,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1840-04-29",
+    category: "steam communications",
+    title: "Legislature authorized £3,000 for a St. John's to Halifax steam service",
+    body: "An act passed on April 29 placed £3,000 at the Governor's disposal to establish steam communication between St. John's and Halifax. The money was to be drawn from the Treasury in three annual instalments of £1,000 and paid after the communication was established.",
+    sourceId: "mun-royal-gazette-1840-steam-communication-act",
+    pages: "physical PDF p. 1",
+    status: "verified"
+  },
+  {
+    date: "1840-07-28",
+    category: "mail communications",
+    title: "Roseway brought the first regular Cunard-connected mail",
+    body: "The packet brigantine Roseway arrived from Halifax with English mail delivered there by the steamship Britannia. The Public Ledger called this the first regularly established mail conveyance from Great Britain to Newfoundland under Cunard supervision. It also stated that the Halifax to St. John's leg still needed a steam vessel.",
+    sourceId: "mun-public-ledger-1840-roseway-mail",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1840-09-22",
+    category: "steam communications",
+    title: "Halifax steam-vessel start was deferred after local remittance",
+    body: "The Public Ledger reported that the Steam Navigation Company abandoned its plan to place a steam vessel between St. John's and Halifax during the fall. It said that £7,000 had been remitted from St. John's and that City of Glasgow, or a similar vessel, was expected the following spring.",
+    sourceId: "mun-public-ledger-1840-halifax-steam-deferral",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1840-09-22",
+    category: "electrical engineering context",
+    title: "Royal Gazette described underwater firing by voltaic battery",
+    body: "The Royal Gazette described an underwater charge of 2,250 pounds of gunpowder at the Royal George wreck. Lieutenant Symonds held the connecting wires from a voltaic battery. The charge was about 70 feet below the surface. The operation occurred at Spithead, not in Newfoundland.",
+    sourceId: "mun-royal-gazette-1840-royal-george-galvanic-demolition",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1840-10-06",
+    category: "mail communications",
+    title: "Admiralty notice named the St. John's to Halifax packets",
+    body: "An Admiralty contract notice named Sandwich and Charles Buchan for future mail carriage between St. John's and Halifax. Their Halifax departures were tied to the arrival of mail steamers from England, and their St. John's delay was limited to forty-eight hours.",
+    sourceId: "mun-public-ledger-1840-admiralty-mail-packets",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1841-01-21",
     category: "mail communications",
