@@ -2038,6 +2038,18 @@
       "notes": "Multiple filings date Port Union and both generating units to 1917. A later rehabilitation report identifies its Pelton governors as original. The Cochrane Pond watershed was diverted from Manuels River into the Petty Harbour development, and the utility acquired Bay Bulls Big Pond property. Later Port Union capacity, powerhouse and penstock descriptions remain source specific."
     },
     {
+      "id": "NPREG-112",
+      "title": "Close the 1916 system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1916 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-111"],
+      "completion_evidence": ["research/NP_1916_SYSTEM_RECORD.md", "tests/np-1916-system.test.js"],
+      "blocker": null,
+      "notes": "No named 1916 Newfoundland system event or depreciation placement was located. Exact-year results were unrelated records and numeric artifacts. A 2003 rate-impact table uses 1916 as a customer number, not a year."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
