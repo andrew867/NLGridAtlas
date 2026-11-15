@@ -640,6 +640,46 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-morning-post-1859-cape-race-agency",
+    year: 1859,
+    organization: "Morning Post",
+    title: "Telegraphic News Agency and Cape Race Interception Service",
+    topics: ["1859", "telegraph", "Cape Race", "St. John's", "New York", "Associated Press", "interception vessel"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morningpost/MorningPost18590104.pdf"
+  },
+  {
+    id: "mun-public-ledger-1859-city-of-washington",
+    year: 1859,
+    organization: "Public Ledger",
+    title: "City of Washington Interception at Cape Race",
+    topics: ["1859", "telegraph", "Cape Race", "City of Washington", "steamship interception", "news dispatch"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18590607.pdf"
+  },
+  {
+    id: "mun-telegraph-1859-atlantic-company-auction",
+    year: 1859,
+    organization: "Telegraph",
+    title: "Atlantic Telegraph Company Property Auction",
+    topics: ["1859", "telegraph", "Atlantic Telegraph Company", "auction", "anchors", "grapnels", "tools"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/telegraph/Telegraph18591109.pdf"
+  },
+  {
+    id: "mun-telegraph-1859-electric-office",
+    year: 1859,
+    organization: "Telegraph",
+    title: "Electric Telegraph Company Office Notice",
+    topics: ["1859", "telegraph", "St. John's", "Electric Telegraph Company", "office"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/telegraph/Telegraph18591130.pdf"
+  },
+  {
     id: "mun-almanac-1860-telegraph-company",
     year: 1860,
     organization: "Newfoundland Almanack",
@@ -12535,6 +12575,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1859-01-04",
+    category: "telecommunications operations",
+    title: "News agency advertised the St. John's and Cape Race message service",
+    body: "The agency reported transmitting messages between Europe and America over the line between St. John's and New York. Messages carried by European steamers touching at St. John's were forwarded by telegraph. A vessel was stationed off Cape Race to intercept steamers, with intercepted messages telegraphed from Newfoundland.",
+    sourceId: "mun-morning-post-1859-cape-race-agency",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1859-06-02",
+    category: "telecommunications operations",
+    title: "City of Washington dispatch was intercepted off Cape Race",
+    body: "The agency boat intercepted a dispatch from the City of Washington off Cape Race on the night of June 2. The ship had Liverpool news dated May 25 and Cork news dated May 26. The article states that the dispatch was published in New York on the following day.",
+    sourceId: "mun-public-ledger-1859-city-of-washington",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1859-11-09",
+    category: "telecommunications assets",
+    title: "Atlantic Telegraph Company property was offered at auction",
+    body: "The listed property included sashes and frames, nails, cross-cut saws, spunyarn, cordage, a warp, iron bedsteads, mushroom anchors, grapnels, bar steel, carpenters' tools, iron fittings and bolts. The notice does not state why the property was sold.",
+    sourceId: "mun-telegraph-1859-atlantic-company-auction",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1859-11-30",
+    category: "telecommunications operations",
+    title: "Newspaper notice distinguished the company telegraph office",
+    body: "The notice says submissions addressed only to the Telegraph Office had gone to the Electric Telegraph Company's office. It confirms a company office in St. John's but does not print its address.",
+    sourceId: "mun-telegraph-1859-electric-office",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1860",
     category: "telecommunications operations",

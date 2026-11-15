@@ -2722,6 +2722,18 @@
       "notes": "The record identifies the Cape Race interception vessel and an August 23 ship report. Contemporary reports record the Harbor Grace line torn down, the Carbonear telegraph office destroyed by fire and repeated line cutting near Wycocomagh. Unstated incident dates, damaged lengths and repair times remain unresolved."
     },
     {
+      "id": "NPREG-169",
+      "title": "Add the 1859 Cape Race service and telegraph property records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1859 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-168"],
+      "completion_evidence": ["research/NP_1859_SYSTEM_RECORD.md", "src/data.js", "tests/np-1859-system.test.js"],
+      "blocker": null,
+      "notes": "The record identifies the St. John's to New York news service, the Cape Race interception vessel, a June 2 ship intercept, an auction of Atlantic Telegraph Company property and a St. John's Electric Telegraph Company office. The auction notice does not state why the property was sold."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
