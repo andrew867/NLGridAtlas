@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-morning-post-1845-cooke-wheatstone",
+    year: 1845,
+    organization: "Morning Post",
+    title: "Cooke and Wheatstone Telegraph Operations Described in St. John's",
+    topics: ["1845", "telegraph", "St. John's", "Cooke", "Wheatstone", "Paddington", "Slough", "Great Western Railway", "one-pair wire", "railway traffic"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morningpost/MorningPost18450222.pdf"
+  },
+  {
+    id: "mun-almanac-1845-post-office",
+    year: 1845,
+    organization: "Newfoundland Almanac",
+    title: "Newfoundland Mail and Steam Packet Schedule",
+    topics: ["1845", "mail", "steam packet", "St. John's", "Halifax", "Arichat", "Liverpool", "Boston", "communications baseline"],
+    pages: "physical PDF pp. 29 to 30",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/cns_almanac/Almanac1845.pdf"
+  },
+  {
     id: "mun-courier-1848-gisborne-saint-john-lecture",
     year: 1848,
     organization: "Morning Courier",
@@ -13235,6 +13255,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1845-02-22",
+    category: "telecommunications context",
+    title: "St. John's readers received an operating-telegraph description",
+    body: "The Morning Post described the revised Cooke and Wheatstone apparatus as portable and using one pair of wires. It reported that the Great Western Railway's Paddington to Slough telegraph carried more than one hundred messages on some days, chiefly for railway traffic. The system was in England; the item records technical information published in St. John's, not a Newfoundland line.",
+    sourceId: "mun-morning-post-1845-cooke-wheatstone",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
   {
     date: "1848-04-13",
     category: "telecommunications demonstration",

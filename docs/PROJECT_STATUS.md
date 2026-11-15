@@ -391,10 +391,11 @@ Updated: 2026-11-15
 - Added the 1848 mainland telegraph precursors. A Saint John, New Brunswick report identifies Gisborne's earth-return explanation and working paper-marking apparatus. A second report records the proposed Bangor, Calais, New Brunswick, Amherst and Halifax chain. Neither report establishes Newfoundland construction or operation in 1848.
 - Closed the 1847 system search without adding a timeline event. A St. John's editorial proposed weekly steam communication with Boston and compared the plan with the developing mainland electric-telegraph network. It did not identify a Newfoundland telegraph line, company, station, instrument, construction project or operating circuit.
 - Closed the 1846 system search without adding a timeline event. A St. John's newspaper described the Portsmouth Harbour submarine-telegraph test, including the submerged cable and receiving index. The test occurred in England and did not identify Newfoundland infrastructure.
+- Added the 1845 telegraph-publication and mail baseline records. The *Morning Post* described the operating Cooke and Wheatstone apparatus on the Great Western Railway. The *Newfoundland Almanac* records the Halifax steam-packet connection and the longer England-to-colony postal cycle. Neither source identifies a Newfoundland telegraph installation.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1846 record under `NPREG-182`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1845 record under `NPREG-183`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

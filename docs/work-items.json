@@ -2890,6 +2890,18 @@
       "notes": "The surviving local press described an Admiralty submarine-telegraph test in Portsmouth Harbour. It did not identify Newfoundland telegraph infrastructure, so no timeline event was added."
     },
     {
+      "id": "NPREG-183",
+      "title": "Add the 1845 telegraph-publication and mail baseline records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1845 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-182"],
+      "completion_evidence": ["research/NP_1845_SYSTEM_RECORD.md", "src/data.js", "tests/np-1845-system.test.js"],
+      "blocker": null,
+      "notes": "A St. John's newspaper described the operating Cooke and Wheatstone telegraph in England. The Newfoundland Almanac documents the steam-packet mail baseline. Neither source identifies Newfoundland telegraph infrastructure."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
