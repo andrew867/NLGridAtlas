@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "mun-enl-1888-electricity",
+    year: 1981,
+    organization: "Encyclopedia of Newfoundland and Labrador",
+    title: "Electricity, 1888 St. John's System Expansion",
+    topics: ["1888", "St. John's", "St. John's Electric Light Company", "street lighting", "incandescent lighting", "Edison Swan", "Government House", "Colonial Building", "residential service"],
+    pages: "physical PDF p. 92, printed p. 752",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_enl/ENLV1E.pdf"
+  },
+  {
     id: "mun-1889-evening-mercury-incandescent-plant",
     year: 1889,
     organization: "The Evening Mercury",
@@ -11865,6 +11875,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1888",
+    category: "system expansion",
+    title: "St. John's contracted for street lighting and ordered incandescent equipment",
+    body: "The Encyclopedia of Newfoundland and Labrador reports that City Council awarded the St. John's Electric Light Company a street-lighting contract. The company purchased Edison Swan equipment for smaller 16 candlepower incandescent lamps. The government requested electric lighting for Government House and the Colonial Building, and the company began private-home installations.",
+    sourceId: "mun-enl-1888-electricity",
+    pages: "physical PDF p. 92, printed p. 752",
+    status: "reported"
+  },
   {
     date: "1889-04-27",
     category: "generation expansion",

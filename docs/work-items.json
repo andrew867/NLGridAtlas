@@ -2374,6 +2374,18 @@
       "notes": "The April 27 contemporary report records the completed Flavin Lane incandescent system, two steam engines, two dynamos, Government House accumulators, about 2,800 yd of overhead copper cable and the principal lighting loads."
     },
     {
+      "id": "NPREG-140",
+      "title": "Add the 1888 St. John's lighting-expansion record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1888 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-139"],
+      "completion_evidence": ["research/NP_1888_SYSTEM_RECORD.md", "src/data.js", "tests/np-1888-system.test.js"],
+      "blocker": null,
+      "notes": "The reported 1888 expansion includes the city street-lighting contract, Edison Swan equipment for 16 candlepower incandescent lamps, government building requests and the start of private-home installations. A nine-lamp council recommendation and proposed capital increase remain qualified because the located records do not prove installation or approval."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
