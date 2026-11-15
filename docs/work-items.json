@@ -2050,6 +2050,18 @@
       "notes": "No named 1916 Newfoundland system event or depreciation placement was located. Exact-year results were unrelated records and numeric artifacts. A 2003 rate-impact table uses 1916 as a customer number, not a year."
     },
     {
+      "id": "NPREG-113",
+      "title": "Close the 1915 system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1915 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-112"],
+      "completion_evidence": ["research/NP_1915_SYSTEM_RECORD.md", "tests/np-1915-system.test.js"],
+      "blocker": null,
+      "notes": "No named 1915 Newfoundland system event or depreciation placement was located. Exact-year results were unrelated records and numeric artifacts. One prominent result is a 1,915 m penstock length for equipment installed in 1983."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
