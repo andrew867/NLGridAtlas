@@ -550,6 +550,66 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1946-lookout-brook",
+    year: 2023,
+    organization: "Newfoundland Power",
+    title: "2024 Capital Budget Application, Lookout Brook Original Plant",
+    topics: ["1946", "Lookout Brook", "hydro generation", "G1", "G2", "powerhouse"],
+    pages: "physical PDF pp. 112, 438 and 440",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF"
+  },
+  {
+    id: "np-1946-port-aux-basques-station",
+    year: 2010,
+    organization: "Newfoundland Power",
+    title: "2011 Capital Budget Application, Port aux Basques Station History",
+    topics: ["1946", "Port aux Basques", "substation", "distribution", "diesel generation"],
+    pages: "physical PDF p. 292",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1946-hearts-content-rebuild",
+    year: 2013,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Heart's Content 1946 Development Record",
+    topics: ["1946", "Heart's Content", "hydro generation", "renovation", "woodstave penstock", "intake"],
+    pages: "physical PDF p. 160",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1946-hearts-content-civil",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "2013 Capital Budget Application, Heart's Content Penstock and Intake History",
+    topics: ["1946", "Heart's Content", "woodstave penstock", "intake", "hydro civil works"],
+    pages: "physical PDF pp. 180 to 181",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1946-fenelons-pond",
+    year: 2004,
+    organization: "Board of Commissioners of Public Utilities",
+    title: "Order P.U. 43(2004), Fenelons Pond Dam History",
+    topics: ["1946", "Seal Cove", "Fenelons Pond", "dam", "spillway", "flow control"],
+    pages: "physical PDF p. 7",
+    status: "reported",
+    url: "http://www.pub.nl.ca/PU/orders/2004/pu43-2004.pdf"
+  },
+  {
+    id: "np-1946-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1946 Heart's Content Property Record",
+    topics: ["1946", "Heart's Content", "Ernest George", "property", "land acquisition"],
+    pages: "physical PDF p. 153",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "nlh-1947-muskrat-survey",
     year: 1999,
     organization: "Newfoundland and Labrador Hydro",
@@ -10233,6 +10293,21 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1946-system-record",
+    scope: "1946 hydro generation, station construction, hydro civil works, water rights, property and plant accounting",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1946-lookout-brook", pages: "physical PDF pp. 112, 438 and 440" },
+      { sourceId: "np-1946-port-aux-basques-station", pages: "physical PDF p. 292" },
+      { sourceId: "np-1947-port-aux-basques-electrical-plant", pages: "physical PDF p. 1049" },
+      { sourceId: "np-1946-hearts-content-rebuild", pages: "physical PDF p. 160" },
+      { sourceId: "np-1946-hearts-content-civil", pages: "physical PDF pp. 180 to 181" },
+      { sourceId: "np-1946-fenelons-pond", pages: "physical PDF p. 7" },
+      { sourceId: "np-1949-mobile-water-rights", pages: "physical PDF p. 1" },
+      { sourceId: "np-1946-property-record", pages: "physical PDF p. 153" }
+    ]
+  },
+  {
     id: "np-1947-system-record",
     scope: "1947 Muskrat Falls and Hamilton Falls survey control and Port aux Basques diesel electrical-plant accounting",
     status: "reported",
@@ -11005,6 +11080,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1946",
+    category: "generation",
+    title: "Lookout Brook entered service with G1 and G2",
+    body: "Newfoundland Power dates the original Lookout Brook plant, its first two generating units and the original powerhouse building to 1946. G3 followed in 1958; G1 and G2 were replaced by G4 in 1984.",
+    sourceId: "np-1946-lookout-brook",
+    pages: "physical PDF pp. 112, 438 and 440",
+    status: "reported"
+  },
+  {
+    date: "1946",
+    category: "station",
+    title: "Port aux Basques Substation was built",
+    body: "The station history dates Port aux Basques Substation to 1946. A later electrical-plant depreciation schedule assigns $9,670 of Port aux Basques Diesel original cost to the same year.",
+    sourceId: "np-1946-port-aux-basques-station",
+    pages: "physical PDF p. 292; electrical-plant schedule physical PDF p. 1049",
+    status: "reported"
+  },
+  {
+    date: "1946",
+    category: "generation",
+    title: "Heart's Content development received a major rebuild",
+    body: "The development record says the 1918 Heart's Content hydroelectric development was extensively renovated in 1946. It dates the 558 m woodstave penstock section and reinforced-concrete intake to 1946. A separate asset-ledger record dates the existing penstock to 1965, so the penstock date remains unresolved.",
+    sourceId: "np-1946-hearts-content-rebuild",
+    pages: "physical PDF p. 160; 2013 Capital Budget Application physical PDF pp. 180 to 181",
+    status: "unresolved"
+  },
+  {
+    date: "1946",
+    category: "civil",
+    title: "Fenelons Pond Dam was built for the Seal Cove system",
+    body: "The Board's 2004 order dates the Fenelons Pond earthfill dam, spillway and flow-control structure to 1946.",
+    sourceId: "np-1946-fenelons-pond",
+    pages: "physical PDF p. 7",
+    status: "reported"
+  },
+  {
+    date: "1946",
+    category: "property",
+    title: "Mobile water rights and Heart's Content land were recorded",
+    body: "Newfoundland Power held Mobile River watershed rights under a lease dated November 23, 1946. Its property schedule records a Heart's Content deed from Ernest George dated October 12, 1946.",
+    sourceId: "np-1949-mobile-water-rights",
+    pages: "physical PDF p. 1; property schedule physical PDF p. 153",
+    status: "reported"
+  },
   {
     date: "1947",
     category: "survey",
@@ -19481,6 +19601,15 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1946 STATION AND DIESEL-PLANT RECORD",
+        sourceId: "np-1946-port-aux-basques-station",
+        pages: "physical PDF p. 292; electrical-plant schedule physical PDF p. 1049",
+        facts: [
+          ["Station construction", "Port aux Basques Substation built in 1946"],
+          ["Electrical-plant original cost", "$9,670 assigned to 1946 in Account 332"]
+        ]
+      },
+      {
         label: "1947 ELECTRICAL-PLANT LEDGER",
         sourceId: "np-1947-port-aux-basques-electrical-plant",
         pages: "physical PDF p. 1049",
@@ -19733,6 +19862,15 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1946 FENELONS POND DAM",
+        sourceId: "np-1946-fenelons-pond",
+        pages: "physical PDF p. 7",
+        facts: [
+          ["System", "Seal Cove hydroelectric system"],
+          ["Structure", "earthfill embankment, spillway and flow-control structures built in 1946"]
+        ]
+      },
       {
         label: "1961 38L TRANSMISSION LINE",
         sourceId: "np-1961-38l",
@@ -23051,11 +23189,18 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1946 MOBILE RIVER WATERSHED LEASE",
+        sourceId: "np-1949-mobile-water-rights",
+        pages: "physical PDF p. 1",
+        facts: [
+          ["Agreement", "watershed rights held under a lease dated November 23, 1946"]
+        ]
+      },
+      {
         label: "1949 MOBILE RIVER RIGHTS",
         sourceId: "np-1949-mobile-water-rights",
         pages: "physical PDF p. 1",
         facts: [
-          ["Original agreement", "watershed rights held under a lease dated November 23, 1946"],
           ["Amendment", "agreement dated October 21, 1949"],
           ["Later Board description", "the watershed hydroelectric facilities supplied approximately 49 GWh annually in the 2009 order"]
         ]
@@ -24524,6 +24669,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1946 ORIGINAL HYDRO PLANT",
+        sourceId: "np-1946-lookout-brook",
+        pages: "physical PDF pp. 112, 438 and 440",
+        facts: [
+          ["Commissioning", "G1 and G2 entered service in 1946"],
+          ["Powerhouse", "original building constructed in 1946"],
+          ["Later unit sequence", "G3 added in 1958; G1 and G2 replaced by G4 in 1984"]
+        ]
+      },
       {
         label: "1984 G4 AND CROSS POND SPILLWAY",
         sourceId: "np-1984-lookout-brook",
@@ -32952,6 +33107,18 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1946 DEVELOPMENT REBUILD AND LAND RECORD",
+        sourceId: "np-1946-hearts-content-rebuild",
+        pages: "physical PDF p. 160; 2013 Capital Budget Application physical PDF pp. 180 to 181; property schedule physical PDF p. 153",
+        facts: [
+          ["Development", "the 1918 hydroelectric development was extensively renovated in 1946"],
+          ["Woodstave penstock", "558 m long and 1,829 mm diameter; the development report dates this section to 1946"],
+          ["Intake", "reinforced-concrete structure with wingwalls, timber gates, stop logs, trashracks, controls and gatehouse, dated to 1946"],
+          ["Property", "deed from Ernest George dated October 12, 1946"],
+          ["Date conflict", "a separate asset-ledger record dates the existing penstock to 1965"]
+        ]
+      },
       {
         label: "1959 STEEL PENSTOCK SECTION",
         sourceId: "np-1959-hydro-civil",

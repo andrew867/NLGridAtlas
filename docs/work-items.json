@@ -1678,6 +1678,18 @@
       "notes": "Filed project records establish 1947 survey control above Muskrat Falls and at Hamilton Falls. A Newfoundland Power depreciation schedule assigns $1,700 of Port aux Basques Diesel electrical-plant original cost to 1947 without identifying the equipment. Aggregate 1947 transmission, distribution and radio-account rows were excluded because they do not identify assets. No named 1947 line, substation, transformer, generating unit, telecommunications installation, demand, reliability, storm or outage event was located."
     },
     {
+      "id": "NPREG-082",
+      "title": "Reconcile 1946 generation, station, civil and property records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1946 generation, station, hydro-civil, property, water-rights, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-081"],
+      "completion_evidence": ["research/NP_1946_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1946-system.test.js"],
+      "blocker": null,
+      "notes": "Later primary records date Lookout Brook G1 and G2 and its original powerhouse, the Port aux Basques station, the Heart's Content development rebuild, Fenelons Pond Dam, the Mobile River watershed lease, and one Heart's Content deed to 1946. The physical Heart's Content records date the 558 m woodstave penstock to 1946, while a separate asset-ledger record dates the existing penstock to 1965; the conflict remains unresolved. No named 1946 line, transformer, telecommunications installation, demand, reliability, storm or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
