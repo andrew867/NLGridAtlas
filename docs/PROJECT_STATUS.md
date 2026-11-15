@@ -405,10 +405,11 @@ Updated: 2026-11-15
 - Added the 1834 Fort Amherst and Cape Spear lighthouse system records. Chapter 4 records the existing Fort Amherst lighthouse building and apparatus, establishes vessel-duty funding, authorizes Cape Spear financing and plans, and assigns St. John's harbour buoys to the lighthouse commissioners. Newspaper notices record the Fort Amherst service announcement, Cape Spear construction tender and the Fort Amherst seal-oil and lamp-wick supply arrangement.
 - Added the 1833 Fort Amherst, Cape Spear and Narrows precursor records. The Governor described the existing Fort Amherst fog-warning gun and proposed an ordinary light and heavy gun at Cape Spear. The Chamber of Commerce reported a coastal lighthouse-site review and mooring-buoy work in the Narrows. These records remain separate from the 1834 statutory system.
 - Closed the 1832 chronology review without adding a technical timeline event. Parks Canada's historical report dates representative government to 1832, the Governor's technical case to January 1833, and the enabling act to June 1834. The review does not support an 1832 lighthouse authorization.
+- Added the 1831 Harbour Grace packet communication record. The *Express* notice gives a three-departure weekly timetable between Harbour Grace and Portugal Cove, letter and parcel carriage, and the named agents Henry Winton and Robert Oke. Its reference to usual trips is retained as a resumed service, not a first-operation date.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1831 after the 1832 evidence boundary under `NPREG-196`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1830 after the 1831 packet record under `NPREG-197`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

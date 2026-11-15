@@ -3058,6 +3058,18 @@
       "notes": "The dated record supports representative government in 1832, a governor's technical case in January 1833, and lighthouse enabling legislation in June 1834. No 1832 technical event was added to the timeline."
     },
     {
+      "id": "NPREG-197",
+      "title": "Add the 1831 Harbour Grace packet communication record",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1831 electrical, telecommunications, navigation-aid and scheduled communication evidence.",
+      "dependencies": ["NPREG-196"],
+      "completion_evidence": ["research/NP_1831_SYSTEM_RECORD.md", "research/derived/np-1831-newfoundlander-issue-manifest.json", "src/data.js", "tests/np-1831-system.test.js"],
+      "blocker": null,
+      "notes": "An April 15 notice records the Express packet timetable, letter carriage and named agents between Harbour Grace and Portugal Cove. The wording describes resumed usual trips, not first operation. No supported 1831 lighthouse, telegraph or electrical event was found."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

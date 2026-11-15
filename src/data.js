@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1831-harbour-grace-packet",
+    year: 1831,
+    organization: "Public Ledger",
+    title: "Harbour Grace and Portugal Cove Packet Notice",
+    topics: ["1831", "Express", "packet boat", "Harbour Grace", "Portugal Cove", "passengers", "parcels", "letters", "Henry Winton", "Robert Oke"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18310506.pdf"
+  },
+  {
     id: "parks-canada-1975-cape-spear-chronology",
     year: 1975,
     organization: "Parks Canada",
@@ -13705,6 +13715,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1831-04-15",
+    category: "communications",
+    title: "Express packet advertised regular Harbour Grace letter service",
+    body: "A notice said the packet boat Express had resumed its usual trips between Harbour Grace and Portugal Cove. It scheduled departures from Harbour Grace on Monday, Wednesday and Friday at 09:00, with returns from Portugal Cove at noon on the next day, weather permitting. The service accepted passengers, parcels and letters. Henry Winton and Robert Oke were the agents.",
+    sourceId: "mun-public-ledger-1831-harbour-grace-packet",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
   {
     date: "1833-01-10",
     category: "navigation infrastructure",
