@@ -2614,6 +2614,18 @@
       "notes": "The 1869 almanac names the three linked telegraph companies, their St. John's representation and the Anglo-American through-message revenue terms. The April 24 Morning Chronicle separately confirms presentation of the Newfoundland company's 1867 and 1868 reports to the House, but does not print their contents."
     },
     {
+      "id": "NPREG-160",
+      "title": "Close the 1868 historical system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1868 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-159"],
+      "completion_evidence": ["research/NP_1868_SYSTEM_RECORD.md", "tests/np-1868-system.test.js"],
+      "blocker": null,
+      "notes": "The 1868 House journal records routine telegraph-message expenditure, not a named system change. Its infrastructure-specific pole-placement passage is in a Board of Works report dated December 31, 1867 and is assigned to the 1867 queue."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
