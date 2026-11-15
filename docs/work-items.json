@@ -2830,6 +2830,18 @@
       "notes": "The record separates the enacted company framework, appointed commissioners, Cape Ray route survey, field estimates, Conception Bay pole and wire construction, post damage, a disputed December completion claim and a later nearly-complete report. No 1851 public-opening date is assigned."
     },
     {
+      "id": "NPREG-178",
+      "title": "Add the 1850 transatlantic telegraph proposals",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1850 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-177"],
+      "completion_evidence": ["research/NP_1850_SYSTEM_RECORD.md", "src/data.js", "tests/np-1850-system.test.js"],
+      "blocker": null,
+      "notes": "The record separates the Congressional-scale Halifax to Ireland cable proposal, the St. John's station editorial and J.T.M.'s route proposal. No 1850 Newfoundland company, survey, construction or operating circuit was found."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

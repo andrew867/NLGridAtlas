@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-courier-1850-halifax-ireland-cable",
+    year: 1850,
+    organization: "Morning Courier",
+    title: "Halifax to Ireland Cable Proposal Along the Newfoundland Banks",
+    topics: ["1850", "telegraph", "submarine cable", "Halifax", "Ireland", "Newfoundland Banks", "United States Congress", "cost estimate"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morncourier/MorningCourier18500327.pdf"
+  },
+  {
+    id: "mun-courier-1850-st-johns-station-editorial",
+    year: 1850,
+    organization: "Morning Courier",
+    title: "St. John's Transatlantic Telegraph Station Proposal",
+    topics: ["1850", "telegraph", "St. John's", "Halifax", "Ireland", "packet station", "transatlantic communications"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morncourier/MorningCourier18501120.pdf"
+  },
+  {
+    id: "mun-courier-1854-jtm-1850-route-reprint",
+    year: 1854,
+    organization: "Courier",
+    title: "Reprint of J.T.M.'s 1850 St. John's to Cape Ray Route Proposal",
+    topics: ["1850", "telegraph", "J.T.M.", "St. John's", "Holyrood", "Cape Ray", "St. Paul's Island", "Cape North", "route proposal"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/MorningCourier18540401.pdf"
+  },
+  {
     id: "mun-morning-post-1851-carbonear-plan",
     year: 1851,
     organization: "Morning Post",
@@ -13165,6 +13195,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1850-03-27",
+    category: "telecommunications planning",
+    title: "Halifax to Ireland cable proposal followed the Newfoundland Banks",
+    body: "The Morning Courier reported that the United States Congress was considering a Halifax to western Ireland electric-telegraph cable along the Newfoundland Banks. The printed estimate was three to four million. The report described a proposal, not an approved or built Newfoundland network.",
+    sourceId: "mun-courier-1850-halifax-ireland-cable",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1850-11-08",
+    category: "telecommunications planning",
+    title: "J.T.M. proposed a St. John's to Cape Ray telegraph route",
+    body: "A letter signed J.T.M. proposed an overland line from St. John's to Cape Ray, passing near Holyrood and along the neck between Trinity and Placentia Bays. It proposed a 41 to 45 mile submarine section to St. Paul's Island and a little more than 12 miles from the island to Cape North. The route, distances and claimed 48-hour time saving were proposals, not survey results.",
+    sourceId: "mun-courier-1854-jtm-1850-route-reprint",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1850-11-20",
+    category: "telecommunications planning",
+    title: "St. John's was promoted as an American telegraph station",
+    body: "The Morning Courier argued that St. John's should be presented as the nearest American telegraph station to western Ireland. It printed Halifax at 2,155 miles and St. John's at a little more than 1,600 miles from western Ireland. The article called for evidence and representation, not construction.",
+    sourceId: "mun-courier-1850-st-johns-station-editorial",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
   {
     date: "1851-05-06",
     category: "telecommunications planning",
