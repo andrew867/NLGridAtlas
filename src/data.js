@@ -640,6 +640,56 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-express-1866-atlantic-cable",
+    year: 1866,
+    organization: "The Newfoundland Express",
+    title: "1866 Atlantic Cable Programme and Heart's Content Landing Report",
+    topics: ["1866", "Atlantic cable", "Heart's Content", "Great Eastern", "St. John's", "telegraph", "cable machinery", "cable length"],
+    pages: "physical PDF pp. 1 and 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/nfldexpress/18660731NewfoundlandExpress.pdf"
+  },
+  {
+    id: "mun-times-1866-cape-ray-cable-fault",
+    year: 1866,
+    organization: "The Times and General Commercial Gazette",
+    title: "Cape Ray to Cape North Cable Fault Report",
+    topics: ["1866", "submarine cable", "Cape Ray", "Cape North", "Cape Breton Island", "St. John's", "repair"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18660804.pdf"
+  },
+  {
+    id: "mun-express-1866-cable-recovery",
+    year: 1866,
+    organization: "The Newfoundland Express",
+    title: "Recovery of the 1865 Atlantic Cable",
+    topics: ["1866", "1865 Atlantic cable", "Heart's Content", "Great Eastern", "cable recovery"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nfldexpress/18660904NewfoundlandExpress.pdf"
+  },
+  {
+    id: "mun-express-1866-recovered-cable-traffic",
+    year: 1866,
+    organization: "The Newfoundland Express",
+    title: "Message Traffic on the Recovered 1865 Atlantic Cable",
+    topics: ["1866", "1865 Atlantic cable", "telegraph messages", "Willoughby Smith", "cable operations"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nfldexpress/18660915NewfoundlandExpress.pdf"
+  },
+  {
+    id: "mun-courier-1866-gulf-cable",
+    year: 1866,
+    organization: "The Courier",
+    title: "New Gulf Cable Laying Operation",
+    topics: ["1866", "Gulf cable", "HMS Terrible", "HMS Lily", "Medway", "Heart's Content", "St. John's"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/Courier18660912.pdf"
+  },
+  {
     id: "mun-house-journal-1867-telegraph",
     year: 1867,
     organization: "House of Assembly of Newfoundland",
@@ -12245,6 +12295,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1866-07-27",
+    category: "telecommunications commissioning",
+    title: "St. John's received telegraphic notice that the 1866 Atlantic cable had been laid",
+    body: "The Newfoundland Express reported that St. John's received telegraphic notice on Friday morning of the Great Eastern at Heart's Content and the successful laying of the Atlantic cable. The report establishes the local notice and reported completion, not an independently surveyed as-laid cable length.",
+    sourceId: "mun-express-1866-atlantic-cable",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1866-07-27",
+    category: "telecommunications fault",
+    title: "The Cape Ray to Cape North cable was reported broken",
+    body: "A Heart's Content report states that Cyrus Field intended to telegraph St. John's to hire a vessel to repair the cable reported broken between Cape Ray, Newfoundland, and Cape North, Cape Breton Island. The report does not give the failure date or the return-to-service date.",
+    sourceId: "mun-times-1866-cape-ray-cable-fault",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1866-09-02",
+    category: "telecommunications recovery",
+    title: "The Great Eastern recovered the 1865 Atlantic cable",
+    body: "A Heart's Content telegram dated September 2 reports that the Great Eastern hooked the 1865 cable at 8 o'clock that morning and was steaming to Heart's Content. It reported an expected arrival, not a completed shore-end landing.",
+    sourceId: "mun-express-1866-cable-recovery",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1866-09-02",
+    category: "telecommunications operations",
+    title: "The recovered 1865 Atlantic cable carried telegrams",
+    body: "The September 15 Express printed news received through the 1865 Atlantic cable after its recovery. Its September 2 dispatch states that the cable was working and 17 messages had been received during the hour. Chief Electrician Willoughby Smith certified that the telegrams were sent through the cable after recovery.",
+    sourceId: "mun-express-1866-recovered-cable-traffic",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1866-09-12",
+    category: "telecommunications construction",
+    title: "Three ships departed for a new Gulf cable operation",
+    body: "The Courier reported that HMS Terrible and the Medway had returned to St. John's from Heart's Content and were leaving with HMS Lily to lay a new Gulf cable. The report did not identify the Gulf cable endpoints or report completion.",
+    sourceId: "mun-courier-1866-gulf-cable",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1867-02-26",
     category: "telecommunications proposal",

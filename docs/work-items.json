@@ -2638,6 +2638,18 @@
       "notes": "The House journal separates the proposed St. John's to Port Hood, Placentia cable and Heart's Content connection from its report that the St. John's to Trepassey line had been taken down. Chapter 17 raised authorized capital to $6 million but does not prove construction. The December 31 road report records pole positions near Salmonier."
     },
     {
+      "id": "NPREG-162",
+      "title": "Add the 1866 Atlantic, regional and Gulf cable records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1866 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-161"],
+      "completion_evidence": ["research/NP_1866_SYSTEM_RECORD.md", "src/data.js", "tests/np-1866-system.test.js"],
+      "blocker": null,
+      "notes": "The contemporary newspaper record separates the successful 1866 Atlantic cable, the broken Cape Ray to Cape North regional cable, recovery and operation of the 1865 Atlantic cable, and the reported new Gulf cable-laying operation. Programme cable quantities remain planning values rather than surveyed as-laid lengths."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
