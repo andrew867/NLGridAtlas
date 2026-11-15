@@ -1978,6 +1978,18 @@
       "notes": "A Statistics Canada table gives Seal Cove a two-unit 1922 to 1927 range, but does not assign a year to either unit. Detailed Newfoundland Power records date the development and both units to 1924. No separate 1922 timeline event was created."
     },
     {
+      "id": "NPREG-107",
+      "title": "Close the 1921 system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1921 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-106"],
+      "completion_evidence": ["research/NP_1921_SYSTEM_RECORD.md", "tests/np-1921-system.test.js"],
+      "blocker": null,
+      "notes": "The depreciation transaction ledger records a $15,300 placement in account 371.10 and its 1978 retirement, but does not identify the asset or site. No named 1921 engineering event was created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
