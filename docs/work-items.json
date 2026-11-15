@@ -2878,6 +2878,18 @@
       "notes": "The St. John's editorial proposed weekly steam communication with Boston and compared it with the developing mainland telegraph network. It did not propose or identify Newfoundland telegraph infrastructure, so no timeline event was added."
     },
     {
+      "id": "NPREG-182",
+      "title": "Close the 1846 Newfoundland system search",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1846 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-181"],
+      "completion_evidence": ["research/NP_1846_SYSTEM_RECORD.md", "tests/np-1846-system.test.js"],
+      "blocker": null,
+      "notes": "The surviving local press described an Admiralty submarine-telegraph test in Portsmouth Harbour. It did not identify Newfoundland telegraph infrastructure, so no timeline event was added."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
