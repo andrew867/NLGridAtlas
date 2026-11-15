@@ -550,6 +550,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1941-tors-cove-equipment",
+    year: 2014,
+    organization: "Newfoundland Power",
+    title: "2015 Capital Budget Application, Tors Cove Original Equipment and Civil Works",
+    topics: ["1941", "Tors Cove", "G1", "G2", "Francis turbine", "generator", "overhead crane", "penstock trestle"],
+    pages: "physical PDF pp. 353 to 354, 356 and 359",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf"
+  },
+  {
+    id: "np-1941-tors-cove-g3-equipment",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Tors Cove G3 Equipment History",
+    topics: ["1941", "1951", "Tors Cove", "G3", "Francis turbine", "generator", "power cables", "equipment date"],
+    pages: "physical PDF pp. 206 to 207 and 210",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-1941-tors-cove-bridges",
+    year: 2017,
+    organization: "Newfoundland Power",
+    title: "2018 Capital Budget Application, Tors Cove Bridge Abutments",
+    topics: ["1941", "Tors Cove", "bridge", "concrete abutment", "hydro civil"],
+    pages: "physical PDF p. 175",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF"
+  },
+  {
+    id: "np-1941-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1941 Tors Cove Property Records",
+    topics: ["1941", "Tors Cove", "property", "utility land"],
+    pages: "physical PDF p. 136",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1942-hydro-record",
     year: 2012,
     organization: "Newfoundland Power",
@@ -10443,6 +10483,19 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1941-system-record",
+    scope: "1941 Tors Cove generation, civil infrastructure and property records, and Rocky Pond generator manufacture",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1941-tors-cove-equipment", pages: "physical PDF pp. 353 to 354, 356 and 359" },
+      { sourceId: "np-1941-tors-cove-g3-equipment", pages: "physical PDF pp. 206 to 207 and 210" },
+      { sourceId: "np-1941-tors-cove-bridges", pages: "physical PDF p. 175" },
+      { sourceId: "np-2022-tors-cove", pages: "physical PDF pp. 289 and 329" },
+      { sourceId: "np-2009-rocky-pond", pages: "physical PDF p. 167" },
+      { sourceId: "np-1941-property-record", pages: "physical PDF p. 136" }
+    ]
+  },
+  {
     id: "np-1942-system-record",
     scope: "1942 hydro generation, transmission, station, control-line, dam and utility property records",
     status: "unresolved",
@@ -11280,6 +11333,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1941",
+    category: "generation",
+    title: "Tors Cove plant and substation entered the 1941 record",
+    body: "Several capital filings date plant service and substation construction to 1941. The original plant record lists two 2,350 kVA English Electric generators and two 2,850 hp Francis turbines under 52.7 m rated net head; other filings give 1940 and 1942 dates.",
+    sourceId: "np-1941-tors-cove-equipment",
+    pages: "physical PDF p. 353; substation record physical PDF pp. 289 and 329",
+    status: "unresolved"
+  },
+  {
+    date: "1941",
+    category: "waterworks",
+    title: "Tors Cove civil infrastructure and original equipment were built",
+    body: "The filed record dates the G2 runner and generator, 15-ton overhead crane, penstock trestle and bridge abutments to 1941. A later filing says G3 was added in 1951 but dates its runner installation, generator manufacture and original power cables to 1941.",
+    sourceId: "np-1941-tors-cove-equipment",
+    pages: "physical PDF pp. 354, 356 and 359; G3 record physical PDF pp. 206 to 207 and 210; bridge record physical PDF p. 175",
+    status: "reported"
+  },
+  {
+    date: "1941",
+    category: "generation",
+    title: "Rocky Pond generator was manufactured",
+    body: "The 2009 filing identifies the Rocky Pond generator as a 6.9 kV Westinghouse unit manufactured in 1941. The plant service date remains disputed between 1942 and 1943.",
+    sourceId: "np-2009-rocky-pond",
+    pages: "physical PDF p. 167",
+    status: "unresolved"
+  },
+  {
+    date: "1941",
+    category: "property",
+    title: "Utility property schedule records three Tors Cove deeds",
+    body: "The schedule records deeds from John Ronayne on January 9, Avalon and William P. Goodridge on March 13, and Charles Power on April 15.",
+    sourceId: "np-1941-property-record",
+    pages: "physical PDF p. 136",
+    status: "reported"
+  },
   {
     date: "1942",
     category: "generation",
@@ -31085,6 +31174,19 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1941 SERVICE, EQUIPMENT, CIVIL AND PROPERTY RECORD",
+        sourceId: "np-1941-tors-cove-equipment",
+        pages: "physical PDF pp. 353 to 354, 356 and 359; G3 record physical PDF pp. 206 to 207 and 210; bridge record physical PDF p. 175; property schedule physical PDF p. 136",
+        facts: [
+          ["Service-date record", "several filings date plant service and substation construction to 1941; other records give 1940 and 1942"],
+          ["Original G1 and G2", "two 2,350 kVA English Electric generators at 85 percent power factor and two 2,850 hp Francis turbines under 52.7 m rated net head"],
+          ["G2 equipment", "runner installed and generator manufactured in 1941; original rotor windings remained in the 2014 filing"],
+          ["G3 equipment date", "unit added in 1951; the 2017 filing dates its runner installation, generator manufacture and original power cables to 1941"],
+          ["Civil and lifting equipment", "17 m penstock trestle supporting 2,438 mm woodstave pipe, two bridge concrete abutments and a 15-ton Vaughan double-girder crane"],
+          ["Property deeds", "John Ronayne, January 9, Volume 155, Folios 371 to 372; Avalon and William P. Goodridge, March 13, Volume 155, Folios 518 to 519; Charles Power, April 15, Volume 156, Folio 342"]
+        ]
+      },
+      {
         label: "1942 PROPERTY AND 11L RECORD",
         sourceId: "np-1942-property-record",
         pages: "physical PDF p. 137; 11L record physical PDF p. 319",
@@ -31684,6 +31786,15 @@ export const stationProfiles = [
       facts: [["ROP-T1", "generation transformer; 66/6.9 kV; 5.33 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1941 GENERATOR MANUFACTURE",
+        sourceId: "np-2009-rocky-pond",
+        pages: "physical PDF p. 167",
+        facts: [
+          ["Generator", "Westinghouse; manufactured in 1941; 6.9 kV"],
+          ["2008 condition", "stator windings described as extremely brittle; rotor and stator were the oldest windings then in service in a Newfoundland Power generating plant"]
+        ]
+      },
       {
         label: "1942 STATION, FOREBAY LINE AND PROPERTY RECORD",
         sourceId: "np-2009-rocky-pond",

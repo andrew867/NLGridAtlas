@@ -1738,6 +1738,18 @@
       "notes": "Tors Cove records separately give 1940, 1941 and 1942 dates; Rocky Pond records give 1942 and 1943. The year includes the Rocky Pond generation substation and forebay power and control line, 11L, 23L, West Brook commissioning, the Fall Pond forebay dam, and eight property deeds or grants. No named 1942 system-demand value, reliability value, storm or outage event was located."
     },
     {
+      "id": "NPREG-087",
+      "title": "Reconcile 1941 Tors Cove and Rocky Pond records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1941 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-086"],
+      "completion_evidence": ["research/NP_1941_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1941-system.test.js"],
+      "blocker": null,
+      "notes": "Several filings date Tors Cove plant service and substation construction to 1941, while other records give 1940 and 1942. The original equipment record covers G1, G2, the penstock trestle, bridge abutments and crane. The later G3 record separates its 1951 unit addition from 1941 equipment dates. Rocky Pond's Westinghouse generator was manufactured in 1941. The property schedule records three Tors Cove deeds. No named 1941 transmission-line construction, telecommunications installation, system-demand value, reliability value, storm or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
