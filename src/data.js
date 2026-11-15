@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "nl-assembly-1883-bell-telephone-petition",
+    year: 1883,
+    organization: "Newfoundland House of Assembly",
+    title: "Bell Telephone Company Charter Petition and Select Committee",
+    topics: ["1883", "Bell Telephone Company", "Lewis Brown McFarlane", "telephone", "charter", "House of Assembly", "select committee"],
+    pages: "physical PDF pp. 88 to 89 and 93, printed pp. 55 to 56 and 60",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/h_assembly/JournaloftheHouseofAssemblyofNewfoundland1883.pdf"
+  },
+  {
+    id: "mun-times-1883-bell-telephone-patents",
+    year: 1883,
+    organization: "The Times and General Commercial Gazette",
+    title: "Bell Telephone Company Patent Application Notices",
+    topics: ["1883", "Bell Telephone Company", "electric telephony", "speaking telephones", "letters patent", "Whiteway and Johnson"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/timesgeneral/TimesAndGeneralCommercialGazette18830627.pdf"
+  },
+  {
     id: "mun-enl-1884-private-telephone",
     year: 1994,
     organization: "Encyclopedia of Newfoundland and Labrador",
@@ -11935,6 +11955,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1883-03-06",
+    category: "telecommunications proposal",
+    title: "Bell petitioned for a Newfoundland telephone charter",
+    body: "Bell asked the House of Assembly for powers to manufacture, sell or lease telephones and to construct and operate telephone lines in Newfoundland. On March 7, the House appointed a select committee to consider the petition. Bell's solicitors later published June 18 notices for patent applications covering electric telephony and speaking telephones.",
+    sourceId: "nl-assembly-1883-bell-telephone-petition",
+    pages: "physical PDF pp. 88 to 89 and 93, printed pp. 55 to 56 and 60",
+    status: "proposed"
+  },
   {
     date: "1884",
     category: "telecommunications",

@@ -2434,6 +2434,18 @@
       "notes": "Two later historical references record a private telephone line between a St. John's store and its manager's Devon Row residence. The research record preserves their conflicting store descriptions and does not treat the line as the 1885 public exchange."
     },
     {
+      "id": "NPREG-145",
+      "title": "Add the 1883 Bell Telephone charter proposal",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1883 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-144"],
+      "completion_evidence": ["research/NP_1883_SYSTEM_RECORD.md", "src/data.js", "tests/np-1883-system.test.js"],
+      "blocker": null,
+      "notes": "The House received Bell's petition for Newfoundland telephone powers on March 6 and appointed a select committee on March 7. June notices announced proposed patent applications for electric telephony and speaking telephones."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
