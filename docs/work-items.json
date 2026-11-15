@@ -2674,6 +2674,18 @@
       "notes": "The 1864-65 directory lists 15 Newfoundland and four Cape Breton telegraph stations, tariffs and St. John's staff. Contemporary reports identify recent wire damage near Holyrood and a pole cut down and removed on the Caplin Bay road. The Holyrood event date and the second wire-cutting incident are not identified."
     },
     {
+      "id": "NPREG-165",
+      "title": "Add the 1863 telegraph operations and Atlantic cable tender records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1863 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-164"],
+      "completion_evidence": ["research/NP_1863_SYSTEM_RECORD.md", "src/data.js", "tests/np-1863-system.test.js"],
+      "blocker": null,
+      "notes": "The almanac identifies the Newfoundland telegraph company's officers and St. John's management. The April 27 Cape Race messages establish actual line use during the Anglo-Saxon wreck response. The August 5 Atlantic cable tenders remained under committee review, with no contract award established."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

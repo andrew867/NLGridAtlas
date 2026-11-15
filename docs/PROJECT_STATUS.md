@@ -373,10 +373,11 @@ Updated: 2026-11-15
 - Added the 1866 cable record. Contemporary reports now separate the completed 1866 Atlantic cable, the broken Cape Ray to Cape North regional cable, recovery, message traffic and Heart's Content shore connection of the 1865 Atlantic cable, and the new Gulf cable-laying operation. The expedition programme's route and cable quantities remain planning values rather than surveyed as-laid lengths.
 - Added the 1865 cable record. Heart's Content correspondence records the telegraph-house and landing-site preparations. Contemporary reports separate the August 2 loss of signals from the later news that the cable was severed and the ship had ended its recovery attempt. The retrospective expedition diary records 1,213 miles paid out at the parting point. Early tank and weather theories remain unresolved.
 - Added the 1864 telegraph record. The 1864-65 directory lists 15 Newfoundland and four Cape Breton operating stations, tariffs and the St. John's head-office staff. Contemporary reports identify recent wire damage near Holyrood and a pole cut down and removed on the Caplin Bay road. The Holyrood event date and the second wire-cutting incident remain unidentified.
+- Added the 1863 telegraph record. The almanac identifies the Newfoundland company's officers and St. John's management. The April 27 Cape Race messages establish actual network use during the Anglo-Saxon wreck response. The August 5 Atlantic cable tenders remained under committee review, with no contract award established.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1864 record under `NPREG-164`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1863 record under `NPREG-165`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

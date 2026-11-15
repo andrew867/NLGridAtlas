@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-almanac-1863-telegraph-company",
+    year: 1863,
+    organization: "Newfoundland Almanac",
+    title: "New York, Newfoundland, and London Telegraph Company Management",
+    topics: ["1863", "telegraph", "New York Newfoundland and London Telegraph Company", "St. John's", "Alexander M. McKay", "company management"],
+    pages: "physical PDF p. 56, printed p. 54",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/cns_almanac/Almanac1863.pdf"
+  },
+  {
+    id: "mun-daybook-1863-anglo-saxon-telegraph",
+    year: 1863,
+    organization: "The Day-Book",
+    title: "Cape Race Telegraph Reports of the Anglo-Saxon Wreck",
+    topics: ["1863", "telegraph", "Cape Race", "Clam Cove", "Anglo-Saxon", "wreck report", "network operations"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/mchronicle/DayBook18630428.pdf"
+  },
+  {
+    id: "mun-public-ledger-1863-atlantic-cable-tenders",
+    year: 1863,
+    organization: "The Public Ledger",
+    title: "Atlantic Telegraph Company Cable Tenders",
+    topics: ["1863", "Atlantic Telegraph Company", "Atlantic cable", "tender", "William Fairbairn", "Joseph Whitworth", "Charles Wheatstone", "William Thomson"],
+    pages: "physical PDF p. 2",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18630821.pdf"
+  },
+  {
     id: "hutchinson-1864-telegraph-directory",
     year: 1864,
     organization: "Hutchinson's Newfoundland Directory",
@@ -12375,6 +12405,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1863",
+    category: "telecommunications operations",
+    title: "The almanac listed the Newfoundland telegraph company's management",
+    body: "The 1863 almanac identified Peter Cooper as president and Cyrus W. Field as vice-president of the New York, Newfoundland, and London Telegraph Company. Alexander M. McKay was local manager at St. John's and superintendent.",
+    sourceId: "mun-almanac-1863-telegraph-company",
+    pages: "physical PDF p. 56, printed p. 54",
+    status: "reported"
+  },
+  {
+    date: "1863-04-27",
+    category: "telecommunications operations",
+    title: "Cape Race telegraph station relayed reports of the Anglo-Saxon wreck",
+    body: "St. John's received telegraphic intelligence from Cape Race at 4:30 p.m. that the Anglo-Saxon had wrecked at Clam Cove, about four miles east of the station. The same issue prints a later Cape Race message dated 9 p.m. The article does not identify the transmission route or equipment.",
+    sourceId: "mun-daybook-1863-anglo-saxon-telegraph",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1863-08-05",
+    category: "telecommunications proposal",
+    title: "Atlantic Telegraph Company received cable manufacture and laying tenders",
+    body: "The company directors received several tenders for manufacturing and laying an Atlantic cable. They referred the tenders to a committee that included William Fairbairn, Joseph Whitworth and Professors Wheatstone and Thomson. The report records tender review, not a contract award.",
+    sourceId: "mun-public-ledger-1863-atlantic-cable-tenders",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
   {
     date: "1864",
     category: "telecommunications operations",
