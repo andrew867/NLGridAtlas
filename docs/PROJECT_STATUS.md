@@ -358,7 +358,7 @@ Updated: 2026-11-14
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1888 St. John's street-lighting and incandescent-expansion record under `NPREG-140`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1887 graving-dock tariff closeout under `NPREG-141`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

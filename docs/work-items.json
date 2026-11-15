@@ -2386,6 +2386,18 @@
       "notes": "The reported 1888 expansion includes the city street-lighting contract, Edison Swan equipment for 16 candlepower incandescent lamps, government building requests and the start of private-home installations. A nine-lamp council recommendation and proposed capital increase remain qualified because the located records do not prove installation or approval."
     },
     {
+      "id": "NPREG-141",
+      "title": "Close the 1887 system-record search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1887 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-140"],
+      "completion_evidence": ["research/NP_1887_SYSTEM_RECORD.md", "tests/np-1887-system.test.js"],
+      "blocker": null,
+      "notes": "The official Year Book states that the Newfoundland Graving Dock furnished electric lights for night work at $3 per hour per light. The tariff does not identify equipment, supply or new 1887 work, so no timeline event is created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
