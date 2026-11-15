@@ -1774,6 +1774,18 @@
       "notes": "The Fall Pond development record dates commissioning and the Voith turbine installation to 1939. It records the 15.2 m head, woodstave penstock, forebay works, 2.4/12.5 kV step-up station and Laurentian feeder connection. Filed capacity values differ: 400 kW for the development, 380 kW for the turbine and 350 kW in later depreciation and generating-unit records. No other named exact-year 1939 transmission, station, transformer, property, telecommunications, load, reliability, storm or outage record was located."
     },
     {
+      "id": "NPREG-090",
+      "title": "Close the 1938 exact-year system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Search for named 1938 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-089"],
+      "completion_evidence": ["research/NP_1938_SYSTEM_RECORD.md", "tests/np-1938-system.test.js"],
+      "blocker": null,
+      "notes": "No named exact-year 1938 grid asset or event was located. Results were aggregate accounting placements, depreciation study bands, unrelated legal or market material, external utility records and numeric false matches. No empty public card or timeline event was created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
