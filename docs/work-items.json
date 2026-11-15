@@ -2806,6 +2806,18 @@
       "notes": "The record separates the regional submarine-cable link, proposed Newfoundland route design, arrived and expected construction materials, enacted capital increase, wire-damage compensation, measured Ship Harbour Road work, unpaid labour correspondence and Gisborne's unconfirmed financing claim. The April company report's 1852 operating dates are assigned to the 1852 queue."
     },
     {
+      "id": "NPREG-176",
+      "title": "Add the 1852 telegraph operating, statutory and regional cable records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1852 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-175"],
+      "completion_evidence": ["research/NP_1852_SYSTEM_RECORD.md", "src/data.js", "tests/np-1852-system.test.js"],
+      "blocker": null,
+      "notes": "The record separates the first reported Brigus and Harbor Grace messages, repeated line damage, enacted company and protection statutes, proposed Cape Ray schedule, reported regional cable contracts, the November 12 failed departure and the November 22 cable-laying report. The December report's printed return date conflicts with its completion date and remains unresolved."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

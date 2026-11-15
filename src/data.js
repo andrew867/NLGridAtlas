@@ -640,6 +640,86 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-courier-1853-1852-telegraph-report",
+    year: 1853,
+    organization: "Courier",
+    title: "St. John's and Carbonear Telegraph Company 1852 Report",
+    topics: ["1852", "telegraph", "St. John's", "Brigus", "Harbor Grace", "Conception Bay", "line damage", "repair cost"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/MorningCourier18530427.pdf"
+  },
+  {
+    id: "mun-times-1852-telegraph-plan",
+    year: 1852,
+    organization: "Times and General Commercial Gazette",
+    title: "Cape Ray Telegraph Schedule and Labour Proposal",
+    topics: ["1852", "telegraph", "St. John's", "Cape Ray", "overland line", "construction schedule", "labour proposal"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/timesgeneral/TimesAndGeneralCommercialGazette18520320.pdf"
+  },
+  {
+    id: "mun-statutes-1852-telegraph-company",
+    year: 1852,
+    organization: "Newfoundland Legislature",
+    title: "Newfoundland Electric Telegraph Company Incorporation",
+    topics: ["1852", "telegraph", "Newfoundland Electric Telegraph Company", "St. John's", "Cape Ray", "Trepassey", "capital", "telegraph road"],
+    pages: "physical PDF pp. 37 to 42, Chapter 6",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1852.pdf"
+  },
+  {
+    id: "mun-statutes-1852-telegraph-protection",
+    year: 1852,
+    organization: "Newfoundland Legislature",
+    title: "Electric Telegraph Protection Act",
+    topics: ["1852", "telegraph", "station house", "watch house", "post", "wire", "machinery", "infrastructure protection"],
+    pages: "physical PDF p. 46, Chapter 7",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1852.pdf"
+  },
+  {
+    id: "mun-public-ledger-1852-submarine-contract",
+    year: 1852,
+    organization: "Public Ledger",
+    title: "Northumberland Strait Submarine-Cable Contract Report",
+    topics: ["1852", "telegraph", "submarine cable", "Cape Tormentine", "East Point", "R. S. Newall", "F. N. Gisborne", "contract"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18520716.pdf"
+  },
+  {
+    id: "mun-courier-1852-telegraph-damage-reward",
+    year: 1852,
+    organization: "Courier",
+    title: "Telegraph Damage Reward Notice",
+    topics: ["1852", "telegraph", "wire", "post", "insulator", "damage", "reward", "John S. Gisborne"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/MorningCourier18521020.pdf"
+  },
+  {
+    id: "mun-times-1852-cable-attempt",
+    year: 1852,
+    organization: "Times and General Commercial Gazette",
+    title: "Cape Tormentine Cable-Laying Attempt",
+    topics: ["1852", "telegraph", "submarine cable", "Ellen Gisborne", "Eliza", "Cape Tormentine", "Carlton Head", "screw propeller"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/timesgeneral/TimesAndGeneralCommercialGazette18521201.pdf"
+  },
+  {
+    id: "mun-times-1852-cable-completion",
+    year: 1852,
+    organization: "Times and General Commercial Gazette",
+    title: "Cape Tormentine to Carlton Head Cable Completion",
+    topics: ["1852", "telegraph", "submarine cable", "Cape Tormentine", "Carlton Head", "F. N. Gisborne", "cable test", "date conflict"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/timesgeneral/TimesAndGeneralCommercialGazette18521208.pdf"
+  },
+  {
     id: "mun-public-ledger-1853-first-cable-message",
     year: 1853,
     organization: "Public Ledger",
@@ -12975,6 +13055,78 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1852-03-08",
+    category: "telecommunications operations",
+    title: "Telegraph messages reached Brigus and Harbor Grace",
+    body: "The St. John's and Carbonear Telegraph Company's first annual report states that the first message from its St. John's office reached Brigus on March 8 and Harbor Grace on March 10. It reports that damage to wires, posts and insulators recurred during the year and that repairs cost £53 10s 4d, excluding travel.",
+    sourceId: "mun-courier-1853-1852-telegraph-report",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1852-03-20",
+    category: "telecommunications planning",
+    title: "Gisborne proposed a fifteen-month Cape Ray schedule",
+    body: "A Times report of the Direct Steam Communication Committee meeting states that F. N. Gisborne expected the line to Cape Ray and onward to mainland North America could be completed in about fifteen months. The report discusses a possible labour force of 1,000 men for the overland work. These were schedule and labour proposals, not completed work.",
+    sourceId: "mun-times-1852-telegraph-plan",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1852-06-14",
+    category: "telecommunications regulation",
+    title: "Legislature incorporated the Newfoundland Electric Telegraph Company",
+    body: "Chapter 6 incorporated the Newfoundland Electric Telegraph Company with £100,000 in 1,000 shares of £100. It authorized trunk lines from St. John's toward Cape Ray and Trepassey, plus branch lines. A completed public bridle road from Ship Harbour Road to Cape Ray or Port aux Basques had to be at least four feet wide, with bridges at least eight feet wide and marsh drainage at least twelve feet wide. The act set compensation at £1,500 for each 100 miles after government inspection.",
+    sourceId: "mun-statutes-1852-telegraph-company",
+    pages: "physical PDF pp. 37 to 42, Chapter 6",
+    status: "verified"
+  },
+  {
+    date: "1852-06-14",
+    category: "telecommunications regulation",
+    title: "Telegraph protection law named the physical plant",
+    body: "Chapter 7 protected station houses, watch houses, posts, rails, wire, machines, machinery, apparatus and connected works. Wilful and malicious damage or interruption was a felony punishable by imprisonment for no more than one year with hard labour.",
+    sourceId: "mun-statutes-1852-telegraph-protection",
+    pages: "physical PDF p. 46, Chapter 7",
+    status: "verified"
+  },
+  {
+    date: "1852-07-16",
+    category: "telecommunications planning",
+    title: "Cable contracts were reported for two regional crossings",
+    body: "The Public Ledger reprinted a report that F. N. Gisborne had contracted with R. S. Newall for the Cape Tormentine cable. It also reported a contract to connect Cape Ray and East Point the following spring. The article records reported contracts and expected work, not cable installation.",
+    sourceId: "mun-public-ledger-1852-submarine-contract",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1852-10-16",
+    category: "telecommunications reliability",
+    title: "Company offered £20 for information about line damage",
+    body: "A company notice dated October 16 offered £20 for information leading to the apprehension of anyone who had injured telegraph wires, posts or insulators. John S. Gisborne signed the notice as superintendent. It does not identify the damage location or incident date.",
+    sourceId: "mun-courier-1852-telegraph-damage-reward",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1852-11-12",
+    category: "telecommunications construction",
+    title: "First reported cable-laying departure ended with propeller damage",
+    body: "The steamer Ellen Gisborne departed Charlottetown towing the brigantine Eliza, which carried the Cape Tormentine to Carlton Head cable. The steamer's screw propeller contacted the cable vessel's chain. The steamer continued under sail, and the cable vessel returned to Charlottetown.",
+    sourceId: "mun-times-1852-cable-attempt",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1852-11-22",
+    category: "telecommunications infrastructure",
+    title: "Cape Tormentine to Carlton Head submarine cable was reported laid",
+    body: "The Times reprinted a Prince Edward Island report that the cable was laid after eleven hours of work in rough and heavy weather on the night of Monday, November 22. A battery left at the far end allowed an immediate test, and the report states that the cable worked. The same paragraph prints a November 4 return to Charlottetown, which precedes the stated completion date, so the return date remains unresolved.",
+    sourceId: "mun-times-1852-cable-completion",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1853-01-24",
     category: "telecommunications operations",
