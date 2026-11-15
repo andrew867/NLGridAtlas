@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "mun-1965-st-johns-street-railway",
+    year: 1965,
+    organization: "Newfoundland Quarterly",
+    title: "Historical Account, The St. John's Street Railway Co.",
+    topics: ["1898", "Petty Harbour", "St. John's", "street railway", "dam", "survey", "hydroelectric development"],
+    pages: "physical PDF p. 7, printed p. 5",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/quarterly/NQ_Volume64_Number1.pdf"
+  },
+  {
     id: "np-1999-annual-petty-harbour-construction",
     year: 1999,
     organization: "Newfoundland Power",
@@ -11795,6 +11805,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1898",
+    category: "generation construction",
+    title: "Petty Harbour dam site was selected and work began",
+    body: "A 1965 historical account reports that consulting engineer G. H. Massey arrived on May 7, selected the Petty Harbour dam site, and had twelve men begin dam construction that month. Newfoundland Power separately dates the start of hydroelectric plant construction to 1899.",
+    sourceId: "mun-1965-st-johns-street-railway",
+    pages: "physical PDF p. 7, printed p. 5",
+    status: "reported"
+  },
   {
     date: "1899",
     category: "generation construction",
@@ -31993,6 +32012,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1898 SITE AND DAM WORK",
+        sourceId: "mun-1965-st-johns-street-railway",
+        pages: "physical PDF p. 7, printed p. 5",
+        facts: [
+          ["May 7", "consulting engineer G. H. Massey arrived in St. John's"],
+          ["Petty Harbour", "Massey selected a dam site to supply water for the generators"],
+          ["Dam work", "the historical account says twelve men began construction that month"],
+          ["Date boundary", "Newfoundland Power separately dates the start of hydroelectric plant construction to 1899"]
+        ]
+      },
       {
         label: "1899 CONSTRUCTION START",
         sourceId: "np-1999-annual-petty-harbour-construction",

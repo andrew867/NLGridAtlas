@@ -2254,6 +2254,18 @@
       "notes": "Newfoundland Power's 1999 annual report dates the start of Petty Harbour hydroelectric construction to 1899. The detailed plant record dates the original development and first generating-set commissioning to 1900, so the events remain separate."
     },
     {
+      "id": "NPREG-130",
+      "title": "Add the 1898 Petty Harbour site and dam-work record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1898 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-129"],
+      "completion_evidence": ["research/NP_1898_SYSTEM_RECORD.md", "src/data.js", "tests/np-1898-system.test.js"],
+      "blocker": null,
+      "notes": "The 1965 historical account dates site selection, the Water Street survey and the start of Petty Harbour dam work to May 1898. Newfoundland Power separately dates the start of hydroelectric plant construction to 1899, so both records remain visible."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
