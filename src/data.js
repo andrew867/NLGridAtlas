@@ -550,6 +550,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "nlh-1947-muskrat-survey",
+    year: 1999,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Muskrat Falls Final Feasibility Study, 1947 Survey Control",
+    topics: ["1947", "Muskrat Falls", "Commander Desbarats", "survey", "benchmark", "mapping"],
+    pages: "physical PDF p. 69",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit19-MuskratFallsFeasibilityStudy1999.pdf"
+  },
+  {
+    id: "nlh-1947-hamilton-falls-benchmark",
+    year: 2009,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "Churchill Falls Water Rights Application, Twin Falls Development Area Description",
+    topics: ["1947", "Hamilton Falls", "Twin Falls", "G. H. Desbarats", "benchmark", "survey control"],
+    pages: "physical PDF p. 135",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2009/Nalcor2009Water/files/applic/Application-VolumeII-Revised.pdf"
+  },
+  {
+    id: "np-1947-port-aux-basques-electrical-plant",
+    year: 2003,
+    organization: "Newfoundland Power",
+    title: "2003 General Rate Application, Port aux Basques Diesel Electrical Plant Schedule",
+    topics: ["1947", "Port aux Basques", "diesel generation", "electrical plant", "original cost", "depreciation"],
+    pages: "physical PDF p. 1049",
+    status: "reported",
+    url: "http://www.pub.nl.ca/ARCHIVE/nfpower03/Application/CompleteApplicationRev1.pdf"
+  },
+  {
     id: "np-1948-property-record",
     year: 2015,
     organization: "Newfoundland Power",
@@ -10203,6 +10233,16 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1947-system-record",
+    scope: "1947 Muskrat Falls and Hamilton Falls survey control and Port aux Basques diesel electrical-plant accounting",
+    status: "reported",
+    sources: [
+      { sourceId: "nlh-1947-muskrat-survey", pages: "physical PDF p. 69" },
+      { sourceId: "nlh-1947-hamilton-falls-benchmark", pages: "physical PDF p. 135" },
+      { sourceId: "np-1947-port-aux-basques-electrical-plant", pages: "physical PDF p. 1049" }
+    ]
+  },
+  {
     id: "np-1948-system-record",
     scope: "1948 station construction, dam rehabilitation, utility property, Lower Churchill hydrometry and corporate history",
     status: "reported",
@@ -10965,6 +11005,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1947",
+    category: "survey",
+    title: "Desbarats established Lower Churchill survey control",
+    body: "The Muskrat Falls feasibility study records a first-level traverse by Commander Desbarats and a 72.04-foot benchmark above Muskrat Falls. That benchmark became the reference for 1965 site mapping. A separate filed development-area description identifies a 1947 G. H. Desbarats benchmark at Hamilton Falls as the elevation reference for Area 1 of the Twin Falls development area.",
+    sourceId: "nlh-1947-muskrat-survey",
+    pages: "physical PDF p. 69; Hamilton Falls record physical PDF p. 135",
+    status: "reported"
+  },
+  {
+    date: "1947",
+    category: "generation",
+    title: "Port aux Basques diesel electrical-plant ledger records a 1947 addition",
+    body: "Newfoundland Power's depreciation schedule assigns $1,700 of Port aux Basques Diesel electrical-plant original cost to 1947.",
+    sourceId: "np-1947-port-aux-basques-electrical-plant",
+    pages: "physical PDF p. 1049",
+    status: "reported"
+  },
   {
     date: "1948",
     category: "station",
@@ -19422,6 +19480,14 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1947 ELECTRICAL-PLANT LEDGER",
+        sourceId: "np-1947-port-aux-basques-electrical-plant",
+        pages: "physical PDF p. 1049",
+        facts: [
+          ["Original cost", "$1,700 assigned to 1947 in Account 332, Electrical Plant"]
+        ]
+      },
       {
         label: "2010 FILED STATION ARRANGEMENT",
         sourceId: "np-2011-port-aux-basques",

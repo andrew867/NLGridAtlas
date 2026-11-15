@@ -1666,6 +1666,18 @@
       "notes": "Later primary records date King's Bridge Substation construction and the Lawn Forebay Dam downstream concrete refacing to 1948. The utility property schedule records one Topsail Road deed in June 1948. Visual review corrected an OCR error that read the Heart's Content deed as 1948; the page shows 1946. A Muskrat Falls project study dates Upper Muskrat Falls hydrometric observations to 1948 and continuous recording to 1953. A filed Moody's history reports that Newfoundland Light and Power became an electricity-only company in 1948. No named 1948 line, transformer, generating unit, telecommunications, demand, reliability, storm or outage event was located."
     },
     {
+      "id": "NPREG-081",
+      "title": "Reconcile 1947 survey and electrical-plant records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1947 survey-control, generation, transmission, station, distribution, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-080"],
+      "completion_evidence": ["research/NP_1947_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1947-system.test.js"],
+      "blocker": null,
+      "notes": "Filed project records establish 1947 survey control above Muskrat Falls and at Hamilton Falls. A Newfoundland Power depreciation schedule assigns $1,700 of Port aux Basques Diesel electrical-plant original cost to 1947 without identifying the equipment. Aggregate 1947 transmission, distribution and radio-account rows were excluded because they do not identify assets. No named 1947 line, substation, transformer, generating unit, telecommunications installation, demand, reliability, storm or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
