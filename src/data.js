@@ -640,6 +640,46 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-daily-news-1861-cape-race-watch",
+    year: 1861,
+    organization: "The St. John's Daily News",
+    title: "Cape Race Watch and Vessel-Reporting Notice",
+    topics: ["1861", "telegraph", "Cape Race", "vessel reporting", "A. M. Mackay", "Liverpool", "tariff"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/sjdailynews/TheStJohnsDailyNews18610409vol02no33.pdf"
+  },
+  {
+    id: "mun-daily-news-1861-chapel-arm-outage",
+    year: 1861,
+    organization: "The St. John's Daily News",
+    title: "Chapel Arm and Harbor Main Telegraph Damage",
+    topics: ["1861", "telegraph", "Chapel Arm", "Harbor Main", "wire loss", "pole loss", "manual relay", "outage"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/sjdailynews/TheStJohnsDailyNews18610607vol02no77.pdf"
+  },
+  {
+    id: "mun-daily-news-1861-chapel-arm-repair",
+    year: 1861,
+    organization: "The St. John's Daily News",
+    title: "Chapel Arm Incident and Repair Logistics",
+    topics: ["1861", "telegraph", "Chapel Arm", "Bay de Verde", "Blue Jacket", "wire", "insulators", "repair"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/sjdailynews/TheStJohnsDailyNews18610621vol02no88.pdf"
+  },
+  {
+    id: "mun-daily-news-1862-diplomatic-delay",
+    year: 1862,
+    organization: "The St. John's Daily News",
+    title: "Official Message on the 1861 Telegraph-Wire Cutting",
+    topics: ["1861", "telegraph", "wire cutting", "British Minister at Washington", "diplomatic communications", "service delay"],
+    pages: "physical PDF pp. 2 to 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/sjdailynews/TheStJohnsDailyNews18620304vol04no05.pdf"
+  },
+  {
     id: "mun-almanac-1862-telegraph-company",
     year: 1862,
     organization: "Newfoundland Almanac",
@@ -12435,6 +12475,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1861-04-15",
+    category: "telecommunications proposal",
+    title: "Cape Race vessel-reporting watch was scheduled to begin",
+    body: "A company notice scheduled a vigilant watch at Cape Race from April 15. Vessels seeking a telegraph report to their owners were to show their flag and number. The listed charge was $1.50 for a Newfoundland vessel. The notice does not confirm that the watch began on that date.",
+    sourceId: "mun-daily-news-1861-cape-race-watch",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1861-06-03",
+    category: "telecommunications fault",
+    title: "More than half a mile of telegraph wire was removed at Chapel Arm",
+    body: "Two boat crews landed near Chapel Arm and removed more than half a mile of wire. The company did not have enough replacement wire. An operator carried business between the two ends of the break, and A. M. Mackay told the New York agency to stop sending European business.",
+    sourceId: "mun-daily-news-1861-chapel-arm-outage",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1861-06-07",
+    category: "telecommunications fault",
+    title: "Harbor Main poles were reported removed",
+    body: "Poles at Harbor Main were reported cut down and carried off for nearly half a mile on the evening before publication. The publication date is used because the report does not print a calendar date for the incident.",
+    sourceId: "mun-daily-news-1861-chapel-arm-outage",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1861-06-21",
+    category: "telecommunications repair",
+    title: "Later report described the Chapel Arm repair logistics",
+    body: "The line remained disconnected until the following Friday. The Blue Jacket was sent from St. John's with wire and insulators. The article does not print the reconnection date.",
+    sourceId: "mun-daily-news-1861-chapel-arm-repair",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1861-11",
+    category: "telecommunications fault",
+    title: "Wire cutting delayed British diplomatic communications",
+    body: "An official message printed in March 1862 states that wire cutting delayed communications from the British Minister at Washington to a Secretary of State in the latter part of November 1861. The exact cutting location and date are not stated.",
+    sourceId: "mun-daily-news-1862-diplomatic-delay",
+    pages: "physical PDF pp. 2 to 3",
+    status: "reported"
+  },
   {
     date: "1862-02-19",
     category: "telecommunications operations",

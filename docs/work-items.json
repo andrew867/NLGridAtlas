@@ -2698,6 +2698,18 @@
       "notes": "The company notice identifies operating offices and tariffs. Contemporary reports record an Aquaforte outage, a repair-wire dispatch, a grand-jury true bill for damage near Spaniard's Bay, and wire cutting at Renews, Aquaforte and Cape Broyle. Publication dates are used where incident dates are not stated."
     },
     {
+      "id": "NPREG-167",
+      "title": "Add the 1861 Cape Race service, line-damage and repair records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1861 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-166"],
+      "completion_evidence": ["research/NP_1861_SYSTEM_RECORD.md", "src/data.js", "tests/np-1861-system.test.js"],
+      "blocker": null,
+      "notes": "The April notice schedules Cape Race vessel reporting without proving commissioning. June reports identify more than half a mile of wire removed at Chapel Arm, nearly half a mile of poles removed at Harbor Main, manual message relay and a repair dispatch carrying wire and insulators. An official message records delayed British diplomatic traffic in late November without identifying the cut location or exact date."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
