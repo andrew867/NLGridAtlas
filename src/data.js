@@ -640,6 +640,46 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-statutes-1836-harbour-grace-lighthouse-loan-act",
+    year: 1836,
+    organization: "Newfoundland Legislature",
+    title: "Harbour Grace Island Lighthouse Further Loan Act",
+    topics: ["1836", "Harbour Grace Island", "lighthouse", "£1,000 loan", "machinery specification", "cost estimate", "Governor and Council"],
+    pages: "physical PDF p. 55, printed p. 51",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1836.pdf"
+  },
+  {
+    id: "mun-public-ledger-1836-cape-spear-completion-tender",
+    year: 1836,
+    organization: "Public Ledger",
+    title: "Cape Spear Lighthouse Completion Tender",
+    topics: ["1836", "Cape Spear", "lighthouse", "carpenter work", "materials", "completion tender", "John Shea"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18360805.pdf"
+  },
+  {
+    id: "mun-public-ledger-1836-cape-spear-light-notice",
+    year: 1836,
+    organization: "Public Ledger",
+    title: "Cape Spear Revolving-Light Notice",
+    topics: ["1836", "Cape Spear", "lighthouse", "revolving light", "one-minute flash", "275 feet", "notice to mariners"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18360906.pdf"
+  },
+  {
+    id: "mun-times-1836-liverpool-holyhead-telegraph-report",
+    year: 1836,
+    organization: "Times and General Commercial Gazette",
+    title: "Liverpool to Holyhead Telegraph-Office Report",
+    topics: ["1836", "Liverpool", "Holyhead", "telegraph", "signal stations", "time signal", "foreign context"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/timesgeneral/TimesAndGeneralCommercialGazette18361130.pdf"
+  },
+  {
     id: "mun-times-1837-steinheil-electric-telegraph",
     year: 1837,
     organization: "Times and General Commercial Gazette",
@@ -13565,6 +13605,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1836-05-06",
+    category: "navigation infrastructure",
+    title: "Legislature authorized another Harbour Grace lighthouse loan",
+    body: "Chapter 12 authorized a further loan of up to £1,000 at no more than six percent interest after the first £1,000 proved insufficient. No money could be raised or spent until the Governor and Council approved the work and machinery specification and the cost estimate.",
+    sourceId: "mun-statutes-1836-harbour-grace-lighthouse-loan-act",
+    pages: "physical PDF p. 55, printed p. 51",
+    status: "verified"
+  },
+  {
+    date: "1836-08-05",
+    category: "navigation infrastructure",
+    title: "Cape Spear completion work was offered for tender",
+    body: "The lighthouse commissioners requested tenders for carpenter work and materials required to complete the Cape Spear lighthouse. The notice said that the workmanship and material specification was available from secretary John Shea.",
+    sourceId: "mun-public-ledger-1836-cape-spear-completion-tender",
+    pages: "physical PDF p. 3",
+    status: "verified"
+  },
+  {
+    date: "1836-09-01",
+    category: "navigation infrastructure",
+    title: "Cape Spear revolving light was announced for September 1",
+    body: "A commissioners' notice dated August 25 announced a light from sunset to sunrise beginning September 1. It specified a 275-foot elevation above sea level, a powerful revolving light and a brilliant flash at one-minute intervals. The notice announced operation; it is not a post-start operating log.",
+    sourceId: "mun-public-ledger-1836-cape-spear-light-notice",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1836-11-30",
+    category: "telecommunications context",
+    title: "St. John's newspaper described the Liverpool to Holyhead telegraph",
+    body: "The Times reprinted an account based on the Liverpool Telegraph-office logbook. It described signals relayed station to station between Liverpool and Holyhead, including a daily one o'clock time signal. The report did not describe an electrical circuit or a Newfoundland installation.",
+    sourceId: "mun-times-1836-liverpool-holyhead-telegraph-report",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1837-11-08",
     category: "telecommunications context",

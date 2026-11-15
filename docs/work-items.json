@@ -2998,6 +2998,18 @@
       "notes": "Chapter 8 authorized completion financing and operating controls for the Harbour Grace Island lighthouse. A November 21 notice recorded completion and the start of nightly fixed-light service. A separate newspaper item described Steinheil's proposed electrical-correspondence experiment outside Newfoundland."
     },
     {
+      "id": "NPREG-192",
+      "title": "Add the 1836 Harbour Grace and Cape Spear lighthouse records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1836 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-191"],
+      "completion_evidence": ["research/NP_1836_SYSTEM_RECORD.md", "src/data.js", "tests/np-1836-system.test.js"],
+      "blocker": null,
+      "notes": "Chapter 12 authorized another £1,000 for Harbour Grace Island lighthouse after the first £1,000 proved insufficient, subject to approval of the work, machinery and cost estimate. Cape Spear records separate an August completion tender from the announced September 1 revolving-light service. A separate newspaper item described the Liverpool to Holyhead station telegraph."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
