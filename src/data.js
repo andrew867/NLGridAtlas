@@ -620,6 +620,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1914-victoria-turbine",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Victoria Hydroelectric Development Record",
+    topics: ["1914", "Victoria", "VIC-G", "hydroelectric generation", "Voith", "Westinghouse", "turbine"],
+    pages: "physical PDF p. 180",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1914-victoria-unit",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-021, Selected Generating Unit Data",
+    topics: ["1914", "Victoria", "VIC-G", "hydroelectric generation", "unit rating", "installation date"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-021.pdf"
+  },
+  {
     id: "np-1917-port-union-development",
     year: 2012,
     organization: "Newfoundland Power",
@@ -11656,6 +11676,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1914",
+    category: "generation",
+    title: "Victoria hydro turbine was installed",
+    body: "The development record identifies a 450 kW Voith turbine installed in 1914 and a Westinghouse generator. It separately dates commissioning of the Victoria development to 1904.",
+    sourceId: "np-1914-victoria-turbine",
+    pages: "physical PDF p. 180",
+    status: "reported"
+  },
+  {
     date: "1917",
     category: "generation",
     title: "Port Union hydroelectric development entered service",
@@ -21279,6 +21308,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1914 GENERATING UNIT",
+        sourceId: "np-1914-victoria-turbine",
+        pages: "physical PDF p. 180",
+        facts: [
+          ["Turbine", "450 kW Voith turbine installed in 1914"],
+          ["Generator", "Westinghouse"],
+          ["Development date", "the Victoria development record separately dates commissioning to 1904"]
+        ]
+      },
       {
         label: "1959 AND 1963 PENSTOCK REPLACEMENT",
         sourceId: "np-1959-woodstave-penstocks",

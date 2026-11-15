@@ -2062,6 +2062,18 @@
       "notes": "No named 1915 Newfoundland system event or depreciation placement was located. Exact-year results were unrelated records and numeric artifacts. One prominent result is a 1,915 m penstock length for equipment installed in 1983."
     },
     {
+      "id": "NPREG-114",
+      "title": "Add the 1914 Victoria generating-unit record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1914 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-113"],
+      "completion_evidence": ["research/NP_1914_SYSTEM_RECORD.md", "src/data.js", "tests/np-1914-system.test.js"],
+      "blocker": null,
+      "notes": "The detailed Victoria development record identifies a 450 kW Voith turbine installed in 1914 and a Westinghouse generator. A selected-unit table lists VIC-G at 0.4 MW with a 1914 installation date. The development commissioning date remains 1904."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
