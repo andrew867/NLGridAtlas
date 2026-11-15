@@ -1834,6 +1834,18 @@
       "notes": "Newfoundland Power records contain $13,454 of 1934 original cost in account 323.00, Canals, Penstocks, Surge Tanks, and Tailraces, plus a $10,168 addition to the combined wire, duplex and services account. The filings identify no plant, structure, circuit, community or work order, so both vintages remain in research. No 1934 public card or timeline event was created."
     },
     {
+      "id": "NPREG-095",
+      "title": "Close the 1933 exact-year system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Search for named 1933 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-094"],
+      "completion_evidence": ["research/NP_1933_SYSTEM_RECORD.md", "tests/np-1933-system.test.js"],
+      "blocker": null,
+      "notes": "Newfoundland Power records contain $1,270 of 1933 original cost in account 323.00, Canals, Penstocks, Surge Tanks, and Tailraces, plus the $6,049 first balance in the combined wire, duplex and services account. The filings identify no plant, structure, circuit, community or work order. Later testimony confirms that early placement bands include plant additions that no longer existed by the study date. No 1933 public card or timeline event was created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
