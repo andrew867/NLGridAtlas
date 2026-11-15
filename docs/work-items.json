@@ -1954,6 +1954,18 @@
       "notes": "Seal Cove is consistently reported as a two-unit development commissioned in 1924, but later filings publish different plant capacities. The queue also adds the February 18, 1924 Petty Harbour water-rights deed and the separate current-unit-table record for PHR-G3."
     },
     {
+      "id": "NPREG-105",
+      "title": "Close the 1923 system search and retain the Seal Cove conflict",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1923 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-104"],
+      "completion_evidence": ["research/NP_1923_SYSTEM_RECORD.md", "src/data.js", "tests/np-1923-system.test.js"],
+      "blocker": null,
+      "notes": "A 2008 description-of-operations table lists Seal Cove as 1923, but repeated detailed Newfoundland Power development records state 1924. The 1923 value is retained as a source conflict and is not promoted to a timeline event."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

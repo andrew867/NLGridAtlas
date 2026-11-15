@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "np-1923-seal-cove-conflict",
+    year: 2008,
+    organization: "Newfoundland Power",
+    title: "CA-NP-263, Newfoundland Power Description of Operations",
+    topics: ["1923", "Seal Cove", "hydroelectric generation", "commissioning date", "date conflict"],
+    pages: "physical PDF p. 95",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NP2008GRA/files/rfi/CA-NP-263.pdf"
+  },
+  {
     id: "np-1924-seal-cove-development",
     year: 2012,
     organization: "Newfoundland Power",
@@ -20771,6 +20781,15 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "2008 CONFLICTING 1923 TABLE",
+        sourceId: "np-1923-seal-cove-conflict",
+        pages: "physical PDF p. 95",
+        facts: [
+          ["Description-of-operations table", "Seal Cove listed with year commissioned 1923, 3.18 MW and two units"],
+          ["Record state", "the date conflicts with the detailed development records that consistently state 1924"]
+        ]
+      },
       {
         label: "1924 DEVELOPMENT COMMISSIONING",
         sourceId: "np-1924-seal-cove-development",
