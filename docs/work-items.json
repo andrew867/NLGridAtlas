@@ -2098,6 +2098,18 @@
       "notes": "No named 1912 Newfoundland system event or depreciation placement was located. Exact-year results were unrelated records and numeric artifacts, including a consultant address at 1912 West Anderson Lane."
     },
     {
+      "id": "NPREG-117",
+      "title": "Record the 1911 Exploits hydro infrastructure",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1911 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-116"],
+      "completion_evidence": ["research/NP_1911_SYSTEM_RECORD.md", "src/data.js", "tests/np-1911-system.test.js"],
+      "blocker": null,
+      "notes": "The Exploits condition assessment dates Goodyear's Dam and the original Grand Falls G5 to G8 pulp-grinder turbines to 1911. It distinguishes those hydraulic machines from their 1950 replacements and the 1976 conversion to electric generation."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -620,6 +620,26 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "nlh-1911-goodyears-dam",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-005 Attachment 8, Goodyear's Dam History",
+    topics: ["1911", "Goodyear's Dam", "Grand Falls", "Exploits River", "hydro civil", "ice control"],
+    pages: "physical PDF pp. 599 to 600",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-005.PDF"
+  },
+  {
+    id: "nlh-1911-grand-falls-turbines",
+    year: 2018,
+    organization: "Newfoundland and Labrador Hydro",
+    title: "PUB-NLH-005 Attachment 10, Grand Falls G5 to G8 Turbine Assessment",
+    topics: ["1911", "Grand Falls", "G5", "G6", "G7", "G8", "pulp grinders", "hydraulic turbines", "electric generation conversion"],
+    pages: "physical PDF pp. 947 and 983 to 984",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-005.PDF"
+  },
+  {
     id: "np-1914-victoria-turbine",
     year: 2012,
     organization: "Newfoundland Power",
@@ -11676,6 +11696,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1911",
+    category: "generation",
+    title: "Goodyear's Dam and Grand Falls hydraulic equipment date to 1911",
+    body: "Goodyear's Dam was built approximately 4 km upstream of the Grand Falls Generating Station to regulate upstream water levels and support winter ice control. Original turbines for units G5 to G8 were built in 1911 to drive pulp grinders; replacement turbines arrived in 1950 and the units were converted to electric generation in 1976.",
+    sourceId: "nlh-1911-goodyears-dam",
+    pages: "physical PDF pp. 599 to 600; turbine history pp. 947 and 983 to 984",
+    status: "reported"
+  },
+  {
     date: "1914",
     category: "generation",
     title: "Victoria hydro turbine was installed",
@@ -18229,6 +18258,7 @@ export const islandTerminalRecords = [
     status: "reported",
     facts: [
       ["2013 system assignment", "Grand Falls G9, 26.9 MW; Grand Falls G4, 25.7 MW; Bishop's Falls, 18.4 MW"],
+      ["Original G5 to G8 turbines", "built in 1911 to drive pulp grinders, not electric generators; replaced in 1950 and converted to electric generation in 1976"],
       ["Grand Falls G4 installation year", "unresolved; a filed 1992 judgment says 1938 on physical PDF p. 132 and 1937 on physical PDF p. 135"],
       ["Grand Falls G4 post-1986 rewind", "the judgment records 27,000 kW and 29,700 kVA, with cited evidence giving 27.6 MW; it identifies G4 as a 50 Hz unit"],
       ["Grand Falls G9", "33.3 MVA generator in the 2017 condition assessment"],
@@ -18246,7 +18276,7 @@ export const islandTerminalRecords = [
       circuits: [],
       generators: [{ label: "Grand Falls G9", rating: "26.9 MW / 33.3 MVA", bus: "b1" }, { label: "Grand Falls G4", rating: "25.7 MW / 27.5 MVA", bus: "b1" }, { label: "Bishop's Falls G1 to G7", rating: "7 x 3 MVA", bus: "b3" }]
     },
-    sources: [sourceRef("np-1937-grand-falls-g4", "physical PDF pp. 131 to 135"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
+    sources: [sourceRef("nlh-1911-goodyears-dam", "physical PDF pp. 599 to 600"), sourceRef("nlh-1911-grand-falls-turbines", "physical PDF pp. 947 and 983 to 984"), sourceRef("np-1937-grand-falls-g4", "physical PDF pp. 131 to 135"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
   },
   {
     code: "GFC",
