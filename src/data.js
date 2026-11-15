@@ -11786,6 +11786,15 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1900",
+    category: "generation",
+    title: "Petty Harbour hydroelectric development entered service",
+    body: "Newfoundland Power's detailed plant record says the original development was constructed in 1900 and its first horizontal Francis turbine-generator set was commissioned that year. The other historical sets followed in 1908 and 1926.",
+    sourceId: "np-1908-petty-harbour-development",
+    pages: "physical PDF p. 207",
+    status: "reported"
+  },
+  {
     date: "1902",
     category: "utility formation",
     title: "United Towns Electrical Company was established",
@@ -31965,6 +31974,17 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1900 ORIGINAL DEVELOPMENT",
+        sourceId: "np-1908-petty-harbour-development",
+        pages: "physical PDF p. 207",
+        facts: [
+          ["Original development", "constructed in 1900"],
+          ["First generating set", "horizontal Francis turbine and generator commissioned in 1900"],
+          ["Later historical sets", "commissioned in 1908 and 1926"],
+          ["2010 three-unit plant", "about 5,300 kW total installed capacity under 57.9 m net head; approximately 15.87 GWh normal annual production"]
+        ]
+      },
       {
         label: "1907 REPORTED UNIT 2 INSTALLATION",
         sourceId: "np-1907-petty-harbour-unit-2",

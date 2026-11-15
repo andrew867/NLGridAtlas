@@ -2230,6 +2230,18 @@
       "notes": "No named 1901 Newfoundland electric asset or operating event was located. Exact-year hits were numerical artifacts, out-of-province records and unrelated citations, so no timeline event was created."
     },
     {
+      "id": "NPREG-128",
+      "title": "Add the 1900 Petty Harbour development record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1900 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-127"],
+      "completion_evidence": ["research/NP_1900_SYSTEM_RECORD.md", "src/data.js", "tests/np-1900-system.test.js"],
+      "blocker": null,
+      "notes": "The detailed Petty Harbour record dates the original development and first horizontal Francis turbine-generator set to 1900. The 5,300 kW and 15.87 GWh values are retained as 2010 three-unit plant figures, not assigned to the original machine."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
