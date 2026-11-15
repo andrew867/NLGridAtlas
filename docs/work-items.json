@@ -2002,6 +2002,18 @@
       "notes": "Depreciation schedules retain 1920 placements in canals and penstocks, dams and reservoirs, and substation buildings. The schedules do not identify any plant, dam, station or location, so no named event was created."
     },
     {
+      "id": "NPREG-109",
+      "title": "Close the 1919 system search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1919 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-108"],
+      "completion_evidence": ["research/NP_1919_SYSTEM_RECORD.md", "tests/np-1919-system.test.js"],
+      "blocker": null,
+      "notes": "The depreciation transaction ledger records 1919 placements in canals and penstocks, dams and reservoirs, and switching, metering and control equipment. It does not identify any plant, dam, station or location, so no named event was created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
