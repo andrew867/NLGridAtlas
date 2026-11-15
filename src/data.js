@@ -640,6 +640,46 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1838-transatlantic-steamer-call-proposal",
+    year: 1838,
+    organization: "Public Ledger",
+    title: "St. John's Call for Liverpool and New York Steamers",
+    topics: ["1838", "St. John's", "Liverpool", "New York", "steamships", "coal", "passengers", "freight", "port call"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18380925.pdf"
+  },
+  {
+    id: "mun-statutes-1838-transatlantic-steam-service-act",
+    year: 1838,
+    organization: "Newfoundland Legislature",
+    title: "St. John's Transatlantic Steam-Service Appropriation",
+    topics: ["1838", "St. John's", "Great Britain", "Ireland", "steam vessel", "Sirius", "£500 annual payment", "four round trips"],
+    pages: "physical PDF pp. 69 and 75, printed pp. 65 and 71",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1838.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1838-steam-navigation-editorial",
+    year: 1838,
+    organization: "Royal Gazette",
+    title: "Steam Navigation to Newfoundland Editorial",
+    topics: ["1838", "St. John's", "Great Britain", "steam navigation", "Sirius", "£500 annual payment", "editorial interpretation"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18381030.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1838-steam-service-public-notice",
+    year: 1838,
+    organization: "Royal Gazette",
+    title: "Government Notice of Transatlantic Steam-Service Terms",
+    topics: ["1838", "St. John's", "Great Britain", "Ireland", "steam vessel", "Sirius", "public notice", "Secretary's Office"],
+    pages: "physical PDF p. 3",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/royalgazette/TheRoyalGazette18381106.pdf"
+  },
+  {
     id: "mun-public-ledger-1839-halifax-steam-circular",
     year: 1839,
     organization: "Public Ledger",
@@ -13495,6 +13535,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1838-09-25",
+    category: "steam communications",
+    title: "St. John's letter proposed calls by transatlantic steamers",
+    body: "A Public Ledger letter argued that Liverpool and New York steamers should call at St. John's to take on coal, passengers and freight. It was a published proposal, not an operating schedule or government commitment.",
+    sourceId: "mun-public-ledger-1838-transatlantic-steamer-call-proposal",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1838-10-25",
+    category: "steam communications",
+    title: "Legislature funded a conditional St. John's transatlantic steam service",
+    body: "Chapter 10 authorized £500 per year for three years for a suitable steamer between St. John's and a port in Great Britain and Ireland. The vessel had to be at least equal to the Sirius in steam power or burden and make at least four outward and four homeward trips each year. The appropriation set service conditions; it does not prove that a vessel entered service.",
+    sourceId: "mun-statutes-1838-transatlantic-steam-service-act",
+    pages: "physical PDF pp. 69 and 75, printed pp. 65 and 71",
+    status: "verified"
+  },
+  {
+    date: "1838-10-30",
+    category: "steam communications",
+    title: "Royal Gazette publicized the steam bonus and disputed its size limit",
+    body: "The Royal Gazette publicized the £500 annual bonus and four round trips. It restated the statutory Sirius comparison as a size requirement, then expressed confidence that a suitable smaller vessel would receive the premium. That was the newspaper's interpretation; the act specified steam power or burden.",
+    sourceId: "mun-royal-gazette-1838-steam-navigation-editorial",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1838-11-05",
+    category: "steam communications",
+    title: "Secretary's Office published the transatlantic steam-service terms",
+    body: "A Secretary's Office notice made the steam-vessel appropriation public for interested companies and individuals. It repeated the £500 annual payment, three-year term, Sirius power-or-burden comparison, St. John's route and four outward and four homeward trips. The notice solicited an operator; it did not identify one.",
+    sourceId: "mun-royal-gazette-1838-steam-service-public-notice",
+    pages: "physical PDF p. 3",
+    status: "verified"
+  },
   {
     date: "1839-02-08",
     category: "mail communications",
