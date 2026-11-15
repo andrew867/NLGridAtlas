@@ -2314,6 +2314,18 @@
       "notes": "Low's Geological Survey report records a 760 ft river descent in 12 mi at Grand Falls, including a 302 ft main fall, and estimates discharge at about 50,000 ft3/s. No electrical output or generating plant is assigned."
     },
     {
+      "id": "NPREG-135",
+      "title": "Close the 1893 system-record search",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1893 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-134"],
+      "completion_evidence": ["research/NP_1893_SYSTEM_RECORD.md", "tests/np-1893-system.test.js"],
+      "blocker": null,
+      "notes": "The official yearbook lists the Electric Light Company as an incorporated body and a June newspaper offered shares for sale. Neither source identifies an electrical-system change, so no timeline event is created."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
