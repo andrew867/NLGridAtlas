@@ -18,7 +18,7 @@ test("Lawn retains the 1948 dam refacing sequence", () => {
   const event = timeline.find((entry) => entry.date === "1948" && /Lawn Forebay Dam/.test(entry.title));
   assert.ok(event);
   assert.match(event.body, /downstream surface was refaced with concrete/);
-  assert.match(stationText("LWN"), /1948 DAM REFACING/);
+  assert.match(stationText("LWN"), /1937 TO 1983 DAM WORK/);
   assert.match(stationText("LWN"), /1937 work.*1948 work.*1983 work/);
 });
 

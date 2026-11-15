@@ -550,6 +550,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1937-grand-falls-g4",
+    year: 1992,
+    organization: "Newfoundland Supreme Court, Trial Division",
+    title: "Abitibi-Price Inc. v. Voith Hydro Inc., Grand Falls Generator No. 4 Record",
+    topics: ["1937", "1938", "Grand Falls", "G4", "hydro generation", "50 Hz", "generator rewind", "installation date conflict"],
+    pages: "physical PDF pp. 131 to 135",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/NLH2013NARL/files/corresp/WrittenSubmissionsofNorthAtlantic.PDF"
+  },
+  {
     id: "np-1939-fall-pond-development",
     year: 2012,
     organization: "Newfoundland Power",
@@ -884,7 +894,7 @@ export const sources = [
     year: 2016,
     organization: "Newfoundland Power",
     title: "2017 Capital Budget Application, Lawn Forebay Dam History",
-    topics: ["1948", "Lawn", "forebay dam", "concrete", "dam rehabilitation"],
+    topics: ["1937", "1948", "Lawn", "forebay dam", "concrete", "dam rehabilitation"],
     pages: "physical PDF p. 185",
     status: "reported",
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
@@ -10523,6 +10533,15 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1937-system-record",
+    scope: "1937 Lawn forebay-dam concrete work and the unresolved Grand Falls G4 installation year",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1948-lawn-dam", pages: "physical PDF p. 185" },
+      { sourceId: "np-1937-grand-falls-g4", pages: "physical PDF pp. 131 to 135" }
+    ]
+  },
+  {
     id: "np-1939-system-record",
     scope: "1939 Fall Pond generation, hydraulic, station and distribution-connection records",
     status: "unresolved",
@@ -11396,6 +11415,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1937",
+    category: "civil",
+    title: "Lawn Forebay Dam received concrete protection",
+    body: "Newfoundland Power says the original rockfill dam received a concrete base and concrete along its upstream and downstream sides, which encased the rockfill compartments.",
+    sourceId: "np-1948-lawn-dam",
+    pages: "physical PDF p. 185",
+    status: "reported"
+  },
+  {
+    date: "1937",
+    category: "generation",
+    title: "Grand Falls G4 installation year conflicts",
+    body: "The filed 1992 court judgment gives two installation years for Generator No. 4. Physical PDF page 132 says 1938, while physical PDF page 135 says 1937. It describes G4 as the mill's largest generator and records it as a 50 Hz unit. After a 1986 rewind, the judgment gives 27,000 kW and 29,700 kVA, while cited evidence on the same page gives 27.6 MW.",
+    sourceId: "np-1937-grand-falls-g4",
+    pages: "physical PDF pp. 131 to 135",
+    status: "unresolved"
+  },
   {
     date: "1939",
     category: "generation",
@@ -17788,6 +17825,8 @@ export const islandTerminalRecords = [
     status: "reported",
     facts: [
       ["2013 system assignment", "Grand Falls G9, 26.9 MW; Grand Falls G4, 25.7 MW; Bishop's Falls, 18.4 MW"],
+      ["Grand Falls G4 installation year", "unresolved; a filed 1992 judgment says 1938 on physical PDF p. 132 and 1937 on physical PDF p. 135"],
+      ["Grand Falls G4 post-1986 rewind", "the judgment records 27,000 kW and 29,700 kVA, with cited evidence giving 27.6 MW; it identifies G4 as a 50 Hz unit"],
       ["Grand Falls G9", "33.3 MVA generator in the 2017 condition assessment"],
       ["Grand Falls G4", "27.5 MVA generator; converted from 50 Hz to 60 Hz and connected at 6.9 kV"],
       ["Grand Falls G5 to G8", "5 MVA, 6 MVA, 5 MVA, and 6 MVA respectively in the 2017 condition assessment"],
@@ -17803,7 +17842,7 @@ export const islandTerminalRecords = [
       circuits: [],
       generators: [{ label: "Grand Falls G9", rating: "26.9 MW / 33.3 MVA", bus: "b1" }, { label: "Grand Falls G4", rating: "25.7 MW / 27.5 MVA", bus: "b1" }, { label: "Bishop's Falls G1 to G7", rating: "7 x 3 MVA", bus: "b3" }]
     },
-    sources: [sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
+    sources: [sourceRef("np-1937-grand-falls-g4", "physical PDF pp. 131 to 135"), sourceRef("gra-2013-v2", "physical PDF p. 80"), sourceRef("nlh-exploits-condition-2017", "physical PDF pp. 663 to 667 and 693 to 695")]
   },
   {
     code: "GFC",
@@ -19600,7 +19639,7 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
-        label: "1948 DAM REFACING",
+        label: "1937 TO 1983 DAM WORK",
         sourceId: "np-1948-lawn-dam",
         pages: "physical PDF p. 185",
         facts: [

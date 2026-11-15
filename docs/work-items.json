@@ -1783,7 +1783,19 @@
       "dependencies": ["NPREG-089"],
       "completion_evidence": ["research/NP_1938_SYSTEM_RECORD.md", "tests/np-1938-system.test.js"],
       "blocker": null,
-      "notes": "No named exact-year 1938 grid asset or event was located. Results were aggregate accounting placements, depreciation study bands, unrelated legal or market material, external utility records and numeric false matches. No empty public card or timeline event was created."
+      "notes": "A later search found a filed 1992 court judgment that conflicts with itself on the Grand Falls G4 installation year, giving 1938 on physical PDF p. 132 and 1937 on physical PDF p. 135. The installation year is unresolved and is presented with the 1937 system record. No separate 1938 public card or timeline event was created. Other results were aggregate accounting placements, depreciation study bands, unrelated legal or market material, external utility records and numeric false matches."
+    },
+    {
+      "id": "NPREG-091",
+      "title": "Add the 1937 Lawn and Grand Falls records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1937 generation, station, transformer, hydro-civil, property, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-090"],
+      "completion_evidence": ["research/NP_1937_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1937-system.test.js"],
+      "blocker": null,
+      "notes": "Newfoundland Power dates the concrete base and concrete encasement of the Lawn Forebay Dam rockfill compartments to 1937. A filed 1992 court judgment identifies Grand Falls G4 as a 50 Hz unit but conflicts on its installation year, giving 1938 on physical PDF p. 132 and 1937 on physical PDF p. 135. The post-1986 rewind record gives 27,000 kW and 29,700 kVA, while cited evidence gives 27.6 MW. No other named exact-year 1937 transmission, station, transformer, property, telecommunications, load, reliability, storm or outage record was located."
     },
     {
       "id": "ASSET-001",
