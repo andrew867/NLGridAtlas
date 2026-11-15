@@ -620,6 +620,16 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
   },
   {
+    id: "mun-1889-evening-mercury-incandescent-plant",
+    year: 1889,
+    organization: "The Evening Mercury",
+    title: "St. John's Electric Light Company Incandescent Plant",
+    topics: ["1889", "St. John's", "Flavin Lane", "St. John's Electric Light Company", "steam generation", "dynamo", "incandescent lighting", "accumulator", "overhead copper cable"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/eveherald/EveningMercury18890427.pdf"
+  },
+  {
     id: "mun-1892-flavin-lane-rebuild",
     year: 1892,
     organization: "The Evening Herald",
@@ -11855,6 +11865,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1889-04-27",
+    category: "generation expansion",
+    title: "Flavin Lane incandescent plant entered service",
+    body: "The completed incandescent system supplied Government House, the Council Chamber, the House of Assembly, the Army and Navy depot, and the Bavarian Beer depot. Two horizontal steam engines drove two dynamos. The larger dynamo was stated at 300 A and 125 V at 650 r/min. The smaller was stated at 30 A and 158 V at 1,050 r/min and charged accumulators at Government House. About 2,800 yd of overhead copper cable connected the station and buildings.",
+    sourceId: "mun-1889-evening-mercury-incandescent-plant",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
   {
     date: "1892",
     category: "generation reconstruction",

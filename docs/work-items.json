@@ -2362,6 +2362,18 @@
       "notes": "The 1890 directory identifies the St. John's Electric Light Company, its officers and its Prescott Street at Flavin's Lane address. The yearbook lists the existing telegraph network and earlier expenditure. Neither source identifies a 1890 system change, so no timeline event is created."
     },
     {
+      "id": "NPREG-139",
+      "title": "Add the 1889 Flavin Lane incandescent-plant record",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1889 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-138"],
+      "completion_evidence": ["research/NP_1889_SYSTEM_RECORD.md", "src/data.js", "tests/np-1889-system.test.js"],
+      "blocker": null,
+      "notes": "The April 27 contemporary report records the completed Flavin Lane incandescent system, two steam engines, two dynamos, Government House accumulators, about 2,800 yd of overhead copper cable and the principal lighting loads."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
