@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "nl-statutes-1881-railway-communications",
+    year: 1881,
+    organization: "Newfoundland Legislature",
+    title: "Newfoundland Railway Act, Communications and Electric-Light Equipment",
+    topics: ["1881", "Newfoundland Railway", "telegraph", "telephone", "dynamo", "electric lights", "duty exemption", "system authorization"],
+    pages: "physical PDF pp. 21 and 32 to 33, printed pp. 20 and 31 to 32",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1881.pdf"
+  },
+  {
     id: "mun-twillingate-sun-1882-telegraph-extension",
     year: 1882,
     organization: "The Twillingate Sun",
@@ -11975,6 +11985,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1881-05-09",
+    category: "system authorization",
+    title: "Railway Act covered communications and electric-light equipment",
+    body: "The enacted railway contract admitted materials for telegraph and telephone lines free of duty. The equipment list included wire, instruments, fixtures, supplies, dynamo machines and electric-light fixtures. The act does not establish that any of this equipment was installed or commissioned in 1881.",
+    sourceId: "nl-statutes-1881-railway-communications",
+    pages: "physical PDF pp. 21 and 32 to 33, printed pp. 20 and 31 to 32",
+    status: "verified"
+  },
   {
     date: "1882",
     category: "telecommunications",

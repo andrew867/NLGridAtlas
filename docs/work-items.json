@@ -2458,6 +2458,18 @@
       "notes": "An 1885 review reports the completed Coon River to Harbor Breton branch. A July 1882 Twillingate Sun editorial separately demanded service for Twillingate, Fogo and nearby settlements; it is retained as a proposal."
     },
     {
+      "id": "NPREG-147",
+      "title": "Add the 1881 railway communications authorization",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1881 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-146"],
+      "completion_evidence": ["research/NP_1881_SYSTEM_RECORD.md", "src/data.js", "tests/np-1881-system.test.js"],
+      "blocker": null,
+      "notes": "The Railway Act passed on May 9, 1881 and admitted telegraph, telephone and electric-light equipment for the railway project free of duty. The record is authorization and procurement scope, not installation or commissioning evidence."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

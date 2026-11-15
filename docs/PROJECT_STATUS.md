@@ -1,6 +1,6 @@
 # NL Grid Atlas project status
 
-Updated: 2026-11-14
+Updated: 2026-11-15
 
 ## Repository and hosting
 
@@ -355,10 +355,11 @@ Updated: 2026-11-14
 - Added the direct 2007 Blaketown, Clarkes Pond, Garnish, Glovertown, Goulds, Ridge Road, and Stamp's Lane records. Added the filed Rattling Brook plant scope, the separately reported completion of its 66 kV station modernization, staged 43L and 110L rebuild records with route sheets, Petty Harbour and Horse Chops dam work, and the completed Wesleyville gas-generator exchange.
 - Added the 2003 Hardwoods T2 cable failure, Rattling Brook and St. George's breaker ages, Pasadena recloser ages, Big Pond oil-filled equipment, Gander grounding-transformer work, and the filed Virginia Waters third-transformer project. Added the approved 2003 VHF radio program, the rejected radial transmission study, and the reported 2002 Rattling Brook and Seal Cove generator failures.
 - Reconciled the surviving 2002 system record in the 2003 General Rate Application and attached annual report. The atlas now separates completed 2002 station and line work, Salt Pond transformer failures, the August lightning event, actual year-end reliability, regional SAIFI and SAIDI, and forecast load-factor data. No standalone 2002 capital-application directory was located in the public mirror.
+- Added the enacted 1881 railway communications record. Section 18 admitted wire, instruments, fixtures and supplies for telegraph and telephone lines, plus dynamo machines and fixtures for electric lights, free of duty. The atlas records the legal and procurement scope without treating it as construction or commissioning evidence.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1882 telegraph construction and extension records under `NPREG-146`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1881 railway communications authorization under `NPREG-147`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
