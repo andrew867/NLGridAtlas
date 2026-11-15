@@ -550,6 +550,56 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1945-lookout-brook",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Lookout Brook Commissioning Record",
+    topics: ["1945", "1946", "Lookout Brook", "hydro generation", "commissioning year", "date conflict"],
+    pages: "physical PDF p. 142",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-1945-lookout-brook-development",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Lookout Brook Development",
+    topics: ["1945", "Lookout Brook", "hydro generation", "powerhouse", "penstock", "reservoirs"],
+    pages: "physical PDF p. 198",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-1945-lookout-brook-road",
+    year: 2026,
+    organization: "Newfoundland Power",
+    title: "2027 Capital Budget Application, Flat Bay Brook Road History",
+    topics: ["1945", "Lookout Brook", "Flat Bay Brook Road", "access road", "bridge", "initial construction"],
+    pages: "physical PDF p. 138",
+    status: "reported",
+    url: "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF"
+  },
+  {
+    id: "np-1945-port-union-diesel",
+    year: 2011,
+    organization: "Newfoundland Power",
+    title: "PUB-NP-175 Attachment I, Port Union Original Standby Diesel",
+    topics: ["1945", "Port Union", "diesel generation", "Union Electric", "standby generator", "replacement"],
+    pages: "physical PDF pp. 162 and 176",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf"
+  },
+  {
+    id: "np-1945-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1945 Property Records",
+    topics: ["1945", "Rocky Pond", "Broad Cove", "Topsail Road", "Heart's Content", "Port aux Basques", "property"],
+    pages: "physical PDF pp. 137, 152, 153 and 155",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1946-lookout-brook",
     year: 2023,
     organization: "Newfoundland Power",
@@ -10293,6 +10343,19 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1945-system-record",
+    scope: "1945 hydro generation, access infrastructure, standby generation and utility property records",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1945-lookout-brook", pages: "physical PDF p. 142" },
+      { sourceId: "np-1945-lookout-brook-development", pages: "physical PDF p. 198" },
+      { sourceId: "np-1945-lookout-brook-road", pages: "physical PDF p. 138" },
+      { sourceId: "np-1946-lookout-brook", pages: "physical PDF pp. 112, 438 and 440" },
+      { sourceId: "np-1945-port-union-diesel", pages: "physical PDF pp. 162 and 176" },
+      { sourceId: "np-1945-property-record", pages: "physical PDF pp. 137, 152, 153 and 155" }
+    ]
+  },
+  {
     id: "np-1946-system-record",
     scope: "1946 hydro generation, station construction, hydro civil works, water rights, property and plant accounting",
     status: "unresolved",
@@ -11081,13 +11144,40 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1945",
+    category: "generation",
+    title: "Lookout Brook commissioning year remains disputed",
+    body: "Newfoundland Power records filed from 2008 to 2017 date the plant to 1945. The 2027 capital filing also dates the 13.1 km Flat Bay Brook access road to the plant's initial 1945 construction. A newer 2024 capital filing dates the original plant, G1, G2 and powerhouse to 1946.",
+    sourceId: "np-1945-lookout-brook",
+    pages: "physical PDF p. 142; development record physical PDF p. 198; road record physical PDF p. 138; 2024 capital filing physical PDF pp. 112, 438 and 440",
+    status: "unresolved"
+  },
+  {
+    date: "1945",
+    category: "generation",
+    title: "Union Electric installed the Port Union standby diesel",
+    body: "Union Electric installed the original diesel generator as backup for the Port Union hydro units during low reservoir levels. The record says a Caterpillar D398A engine and General Electric 675 kVA generator replaced it in 1965; later plant records print different dates for the replacement asset.",
+    sourceId: "np-1945-port-union-diesel",
+    pages: "physical PDF pp. 162 and 176",
+    status: "unresolved"
+  },
+  {
+    date: "1945",
+    category: "property",
+    title: "Utility property schedule records six 1945 deeds",
+    body: "The schedule records two Rocky Pond deeds dated February 1945, a Broad Cove deed dated November 14, a Topsail Road deed dated June 7, a Heart's Content deed dated July 4, and a Port aux Basques deed dated April 19.",
+    sourceId: "np-1945-property-record",
+    pages: "physical PDF pp. 137, 152, 153 and 155",
+    status: "reported"
+  },
+  {
     date: "1946",
     category: "generation",
-    title: "Lookout Brook entered service with G1 and G2",
-    body: "Newfoundland Power dates the original Lookout Brook plant, its first two generating units and the original powerhouse building to 1946. G3 followed in 1958; G1 and G2 were replaced by G4 in 1984.",
+    title: "Newer filing dates the original Lookout Brook plant to 1946",
+    body: "The 2024 capital filing dates the original plant, G1, G2 and powerhouse to 1946. Several older engineering and capital records date commissioning and initial construction to 1945. G3 followed in 1958; G1 and G2 were replaced by G4 in 1984.",
     sourceId: "np-1946-lookout-brook",
     pages: "physical PDF pp. 112, 438 and 440",
-    status: "reported"
+    status: "unresolved"
   },
   {
     date: "1946",
@@ -19601,6 +19691,12 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1945 PROPERTY RECORD",
+        sourceId: "np-1945-property-record",
+        pages: "physical PDF p. 155",
+        facts: [["Deed", "Port aux Basques property acquired from Gladys Hann on April 19, 1945; Volume 185, Folio 168"]]
+      },
+      {
         label: "1946 STATION AND DIESEL-PLANT RECORD",
         sourceId: "np-1946-port-aux-basques-station",
         pages: "physical PDF p. 292; electrical-plant schedule physical PDF p. 1049",
@@ -20571,6 +20667,12 @@ const earlyFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1945 PROPERTY RECORD",
+        sourceId: "np-1945-property-record",
+        pages: "physical PDF p. 137",
+        facts: [["Deed", "Broad Cove property acquired from Robert and Hubert Tucker on November 14, 1945; Volume 184, Folios 109 to 110"]]
+      },
       {
         label: "1955 BELL ISLAND SUBMARINE CABLE 28L",
         sourceId: "np-1955-bell-island-28l",
@@ -24670,12 +24772,13 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
-        label: "1946 ORIGINAL HYDRO PLANT",
-        sourceId: "np-1946-lookout-brook",
-        pages: "physical PDF pp. 112, 438 and 440",
+        label: "1945 / 1946 COMMISSIONING DATE CONFLICT",
+        sourceId: "np-1945-lookout-brook",
+        pages: "physical PDF p. 142; development record physical PDF p. 198; road record physical PDF p. 138; 2024 capital filing physical PDF pp. 112, 438 and 440",
         facts: [
-          ["Commissioning", "G1 and G2 entered service in 1946"],
-          ["Powerhouse", "original building constructed in 1946"],
+          ["1945 records", "multiple engineering and capital records date plant commissioning or initial construction to 1945"],
+          ["Access road", "13.1 km Flat Bay Brook Road constructed during the plant's initial 1945 construction"],
+          ["1946 record", "the 2024 capital filing dates G1, G2 and the original powerhouse to 1946"],
           ["Later unit sequence", "G3 added in 1958; G1 and G2 replaced by G4 in 1984"]
         ]
       },
@@ -27308,6 +27411,16 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1945 ORIGINAL STANDBY DIESEL",
+        sourceId: "np-1945-port-union-diesel",
+        pages: "physical PDF pp. 162 and 176",
+        facts: [
+          ["Original unit", "installed by Union Electric as backup for the hydro generators during low reservoir levels"],
+          ["1965 replacement record", "Caterpillar D398A engine and General Electric 675 kVA generator"],
+          ["Later date conflict", "other plant records print 1962 and 1972 dates for the later diesel asset"]
+        ]
+      },
       {
         label: "1962 COMMISSIONING / 1972 DEPRECIATION DATE CONFLICT",
         sourceId: "np-1962-port-union-diesel",
@@ -31243,6 +31356,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1945 PROPERTY RECORD",
+        sourceId: "np-1945-property-record",
+        pages: "physical PDF p. 137",
+        facts: [
+          ["William J. Long deed", "Rocky Pond property dated February 1945; Volume 179, Folio 190"],
+          ["William P. Taylor deed", "Rocky Pond property dated February 1945; Volume 179, Folios 190 to 191"]
+        ]
+      },
+      {
         label: "2005 FILED 6.9 KV BREAKER REPLACEMENT",
         sourceId: "np-2005-substation-program",
         pages: "physical PDF p. 315",
@@ -33107,6 +33229,12 @@ export const stationProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1945 PROPERTY RECORD",
+        sourceId: "np-1945-property-record",
+        pages: "physical PDF p. 153",
+        facts: [["Deed", "Heart's Content property acquired from Reuben George on July 4, 1945; Volume 181, Folio 324"]]
+      },
       {
         label: "1946 DEVELOPMENT REBUILD AND LAND RECORD",
         sourceId: "np-1946-hearts-content-rebuild",

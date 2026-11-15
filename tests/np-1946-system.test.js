@@ -14,7 +14,8 @@ test("1946 generation and station records retain their equipment sequence", () =
   const portAuxBasques = timeline.find((entry) => entry.date === "1946" && /Port aux Basques/.test(entry.title));
   assert.ok(portAuxBasques);
   assert.match(portAuxBasques.body, /\$9,670/);
-  assert.match(stationText("LBK"), /1946 ORIGINAL HYDRO PLANT/);
+  assert.match(stationText("LBK"), /1945 \/ 1946 COMMISSIONING DATE CONFLICT/);
+  assert.equal(lookout.status, "unresolved");
   assert.match(stationText("PAB"), /1946 STATION AND DIESEL-PLANT RECORD/);
 });
 

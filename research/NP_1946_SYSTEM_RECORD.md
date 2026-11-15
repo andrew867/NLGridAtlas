@@ -2,9 +2,11 @@
 
 ## Lookout Brook Hydro Plant
 
-Newfoundland Power dates the original Lookout Brook plant, generating units G1 and G2, and the original powerhouse building to 1946. G3 was added in 1958. G1 and G2 were replaced by G4 in 1984.
+The 2024 capital filing dates the original Lookout Brook plant, generating units G1 and G2, and the original powerhouse building to 1946. G3 was added in 1958. G1 and G2 were replaced by G4 in 1984.
 
-Source: [2024 Capital Budget Application](http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF), physical PDF pp. 112, 438 and 440. SHA-256 `9eb1f103128578345b75b1cc058149494a73b37310d8a03838ddba53ed9a8056`.
+Several older engineering and capital records date commissioning and initial construction to 1945. The atlas retains both years as an unresolved source conflict.
+
+Sources: [2024 Capital Budget Application](http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF), physical PDF pp. 112, 438 and 440, SHA-256 `9eb1f103128578345b75b1cc058149494a73b37310d8a03838ddba53ed9a8056`; [CA-NP-088](http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf), physical PDF p. 142, SHA-256 `12ea7123d3f8b84f30e0f0cf445f5631fdb412b907e6d33588d2765807280b0d`; [2017 Capital Budget Application](http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf), physical PDF p. 198, SHA-256 `80f3ff5963cb77172f9b48c3a9ea97255c554c3291c0eb35d823652dbbb3190c`.
 
 ## Port aux Basques
 

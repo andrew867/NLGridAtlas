@@ -1690,6 +1690,18 @@
       "notes": "Later primary records date Lookout Brook G1 and G2 and its original powerhouse, the Port aux Basques station, the Heart's Content development rebuild, Fenelons Pond Dam, the Mobile River watershed lease, and one Heart's Content deed to 1946. The physical Heart's Content records date the 558 m woodstave penstock to 1946, while a separate asset-ledger record dates the existing penstock to 1965; the conflict remains unresolved. No named 1946 line, transformer, telecommunications installation, demand, reliability, storm or outage event was located."
     },
     {
+      "id": "NPREG-083",
+      "title": "Reconcile 1945 generation, access and property records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1945 generation, access-infrastructure, property, transmission, station, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-082"],
+      "completion_evidence": ["research/NP_1945_SYSTEM_RECORD.md", "research/NP_1946_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1945-system.test.js", "tests/np-1946-system.test.js"],
+      "blocker": null,
+      "notes": "Multiple filed records date Lookout Brook commissioning or initial construction and its 13.1 km Flat Bay Brook access road to 1945, while a newer filing dates G1, G2 and the original powerhouse to 1946. Union Electric installed the original Port Union standby diesel in 1945; later records conflict on the replacement asset's date. The utility property schedule records six 1945 deeds at Rocky Pond, Broad Cove, Topsail Road, Heart's Content and Port aux Basques. No named 1945 transmission line, transformer, telecommunications installation, demand, reliability, storm or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
