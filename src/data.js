@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-house-journal-1867-telegraph",
+    year: 1867,
+    organization: "House of Assembly of Newfoundland",
+    title: "Telegraph Company Petition and Committee Report, 1867",
+    topics: ["1867", "telegraph", "New York, Newfoundland and London Telegraph Company", "St. John's", "Trepassey", "Port Hood", "Placentia", "Heart's Content", "capital"],
+    pages: "archival record, physical compound-object images 62 and 99 to 100, printed pp. 56 and 93 to 94",
+    status: "reported",
+    url: "https://collections.mun.ca/digital/collection/h_assembly/id/88777"
+  },
+  {
+    id: "nl-statutes-1867-telegraph-capital",
+    year: 1867,
+    organization: "Legislature of Newfoundland",
+    title: "30 Victoria, Chapter 17, Telegraph Company Capital Authorization",
+    topics: ["1867", "telegraph", "New York, Newfoundland and London Telegraph Company", "capital stock", "land lines", "submarine cable", "Placentia"],
+    pages: "physical PDF pp. 107 to 108, chapter pp. 1 to 2",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1867.pdf"
+  },
+  {
+    id: "mun-house-journal-1868-road-report-1867",
+    year: 1868,
+    organization: "Board of Works",
+    title: "1867 Road Service Report, Telegraph Pole Position near Salmonier",
+    topics: ["1867", "telegraph", "poles", "Half-way House", "Salmonier Bridge", "road", "Board of Works"],
+    pages: "physical PDF p. 655, printed p. 578",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/h_assembly/JournaloftheHouseofAssemblyofNewfoundland1868.pdf"
+  },
+  {
     id: "mun-almanac-1869-telegraph-companies",
     year: 1869,
     organization: "The Newfoundland Almanac",
@@ -12215,6 +12245,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1867-02-26",
+    category: "telecommunications proposal",
+    title: "The telegraph company proposed a duplicate overland route and another continental cable",
+    body: "The company petition proposed a second overland telegraph line from St. John's to Port Hood, a submarine cable from Placentia to the continent of America, and an overland connection from Heart's Content to Placentia. The petition sought additional capital and does not establish construction or completion.",
+    sourceId: "mun-house-journal-1867-telegraph",
+    pages: "physical PDF p. 62, printed p. 56",
+    status: "proposed"
+  },
+  {
+    date: "1867-03-15",
+    category: "telecommunications operations",
+    title: "A House committee reported that the St. John's to Trepassey line had been removed",
+    body: "The committee recorded Alexander M. McKay's evidence that the telegraph line between St. John's and Trepassey had been taken down at the company's instance. It stated that the charter required the line to be maintained and worked, and that the removal violated that condition without warrant. The report does not give the removal date.",
+    sourceId: "mun-house-journal-1867-telegraph",
+    pages: "physical PDF pp. 99 to 100, printed pp. 93 to 94",
+    status: "reported"
+  },
+  {
+    date: "1867-04-26",
+    category: "telecommunications authorization",
+    title: "The Legislature doubled the telegraph company's authorized capital",
+    body: "Chapter 17 increased the New York, Newfoundland and London Telegraph Company's authorized capital from $3 million to $6 million. Its preamble named new land lines and a cable from Placentia, or another part of Newfoundland, to the continent of America. The operative section changed the authorized capital; it did not establish that either work was built.",
+    sourceId: "nl-statutes-1867-telegraph-capital",
+    pages: "physical PDF pp. 107 to 108, chapter pp. 1 to 2",
+    status: "verified"
+  },
+  {
+    date: "1867-12-31",
+    category: "telecommunications condition",
+    title: "The road inspector recorded telegraph poles close to the road centre near Salmonier",
+    body: "The Board of Works report located the condition between Half-way House and Salmonier Bridge. It stated that some telegraph poles were no more than five feet from the centre of the road. The report records the 1867 field condition, not the pole-installation date.",
+    sourceId: "mun-house-journal-1868-road-report-1867",
+    pages: "physical PDF p. 655, printed p. 578",
+    status: "reported"
+  },
   {
     date: "1869",
     category: "telecommunications operations",

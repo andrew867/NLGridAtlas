@@ -369,10 +369,11 @@ Updated: 2026-11-15
 - Added the 1870 coastal fishery cable proposal. The August 27 article proposed a submarine telegraph cable along the Newfoundland and Labrador coasts, using Norway's fishery-reporting system as its example. No approval, route, appropriation, construction or completion is assigned.
 - Added the 1869 telegraph company record. The almanac identifies the Atlantic, Anglo-American and New York, Newfoundland and London companies, their St. John's representation and the reported through-message revenue terms. The April 24 newspaper confirms presentation of the Newfoundland company's 1867 and 1868 reports to the House, but does not provide their contents.
 - Closed the 1868 system search without adding a timeline event. The House journal records $126.45 for telegraph messages, not a named system change. Its infrastructure-specific pole-placement record is dated December 31, 1867 and remains assigned to the 1867 queue.
+- Added the 1867 telegraph record. The House journal separates a proposed St. John's to Port Hood duplicate line, Placentia cable and Heart's Content connection from the committee's report that the St. John's to Trepassey line had been taken down. Chapter 17 raised authorized capital from $3 million to $6 million without establishing construction. The December 31 road report records poles as close as five feet from the road centre between Half-way House and Salmonier Bridge.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1868 closeout under `NPREG-160`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1867 record under `NPREG-161`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
