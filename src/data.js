@@ -640,6 +640,116 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-morning-post-1851-carbonear-plan",
+    year: 1851,
+    organization: "Morning Post",
+    title: "St. John's to Carbonear Telegraph Construction Forecast",
+    topics: ["1851", "telegraph", "St. John's", "Carbonear", "Conception Bay", "stock", "pickets", "construction forecast"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morningpost/MorningPost18510506.pdf"
+  },
+  {
+    id: "mun-statutes-1851-telegraph-act",
+    year: 1851,
+    organization: "Newfoundland Legislature",
+    title: "Newfoundland Electric Telegraph Company Act",
+    topics: ["1851", "telegraph", "Newfoundland Electric Telegraph Company", "St. John's", "Cape Ray", "Cape North", "Trepassey", "capital", "land grant", "interest subsidy", "government acquisition"],
+    pages: "physical PDF pp. 36 to 40, Chapter 7",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1851.pdf"
+  },
+  {
+    id: "mun-morning-post-1851-commissioners",
+    year: 1851,
+    organization: "Morning Post",
+    title: "Telegraph Commissioner Appointments",
+    topics: ["1851", "telegraph", "commissioners", "Joseph Noad", "Charles F. Bennett", "Hugh W. Hoyles", "Ambrose Shea"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morningpost/MorningPost18510626.pdf"
+  },
+  {
+    id: "mun-courier-1851-cape-ray-survey",
+    year: 1851,
+    organization: "Morning Courier",
+    title: "Cape Ray Telegraph Survey Departure",
+    topics: ["1851", "telegraph", "survey", "F. N. Gisborne", "St. John's", "Harbor Grace", "Cape Ray", "field party"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morncourier/MorningCourier18510903.pdf"
+  },
+  {
+    id: "mun-morning-post-1851-brigus-poles",
+    year: 1851,
+    organization: "Morning Post",
+    title: "Conception Bay Telegraph Pole Construction",
+    topics: ["1851", "telegraph", "Conception Bay", "Brigus", "poles", "wire", "construction"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morningpost/MorningPost18510916.pdf"
+  },
+  {
+    id: "mun-morning-post-1851-harbor-grace-wire",
+    year: 1851,
+    organization: "Morning Post",
+    title: "Harbor Grace Telegraph Wire Arrival",
+    topics: ["1851", "telegraph", "Harbor Grace", "wire", "Victoria", "Ridley and Sons", "poles", "construction"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/morningpost/MorningPost18511002.pdf"
+  },
+  {
+    id: "mun-gisborne-1851-survey-costs",
+    year: 1851,
+    organization: "F. N. Gisborne",
+    title: "Cape Ray Telegraph Route Survey Cost Journal",
+    topics: ["1851", "telegraph", "survey", "F. N. Gisborne", "Cape Ray", "road", "bridge", "route estimate"],
+    pages: "physical PDF pp. 9, 10, 15, 16, 18, 23, 25 and 27",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/cns/FF_1013_G57.pdf"
+  },
+  {
+    id: "mun-public-ledger-1851-post-damage",
+    year: 1851,
+    organization: "Public Ledger",
+    title: "Telegraph Posts Cut Near Conception Bay",
+    topics: ["1851", "telegraph", "St. John's and Carbonear Telegraph Company", "Conception Bay", "posts", "damage", "court"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18511121.pdf"
+  },
+  {
+    id: "mun-public-ledger-1851-completion-conflict",
+    year: 1851,
+    organization: "Public Ledger",
+    title: "St. John's to Carbonear Completion Claim and Correction",
+    topics: ["1851", "telegraph", "St. John's", "Carbonear", "Topsail", "completion claim", "correction"],
+    pages: "physical PDF p. 2",
+    status: "unresolved",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18511202.pdf"
+  },
+  {
+    id: "mun-gisborne-1851-survey-return",
+    year: 1851,
+    organization: "F. N. Gisborne",
+    title: "Cape Ray Telegraph Route Survey Return Journal",
+    topics: ["1851", "telegraph", "survey", "F. N. Gisborne", "Cape Ray", "Burnt Island Brook", "Salmonier", "Holyrood", "St. John's"],
+    pages: "physical PDF pp. 31 and 36",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/cns/FF_1013_G57.pdf"
+  },
+  {
+    id: "mun-public-ledger-1851-line-status",
+    year: 1851,
+    organization: "Public Ledger",
+    title: "Cape Ray Survey and St. John's to Carbonear Line Status",
+    topics: ["1851", "telegraph", "F. N. Gisborne", "Cape Ray", "St. John's", "Carbonear", "construction status", "cost estimate"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18511209.pdf"
+  },
+  {
     id: "mun-courier-1853-1852-telegraph-report",
     year: 1853,
     organization: "Courier",
@@ -13055,6 +13165,105 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1851-05-06",
+    category: "telecommunications planning",
+    title: "Carbonear company reported stock and pickets ready",
+    body: "F. N. Gisborne reported that the St. John's and Carbonear Telegraph Company stock had been taken up and that construction pickets had been purchased. He predicted operation within four months. The report establishes a construction forecast, not operating service.",
+    sourceId: "mun-morning-post-1851-carbonear-plan",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1851-05-31",
+    category: "telecommunications regulation",
+    title: "Telegraph act established the Cape Ray trunk framework",
+    body: "Chapter 7 incorporated the Newfoundland Electric Telegraph Company with £20,000 in 1,000 shares of £20 and authority to add no more than £10,000. It authorized a trunk from St. John's toward Cape Ray, a branch toward Trepassey or another southwestern coast point, and town and village branches. The act also authorized a survey and a submarine extension from Cape Ray to Cape North, Cape Breton.",
+    sourceId: "mun-statutes-1851-telegraph-act",
+    pages: "physical PDF pp. 36 to 40, Chapter 7",
+    status: "verified"
+  },
+  {
+    date: "1851-06-23",
+    category: "telecommunications regulation",
+    title: "Government appointed six telegraph commissioners",
+    body: "A Secretary's Office notice appointed the Attorney General, Joseph Noad, Charles F. Bennett, the Speaker of the House of Assembly, Hugh W. Hoyles and Ambrose Shea as commissioners under Chapter 7. The notice does not record a construction decision.",
+    sourceId: "mun-morning-post-1851-commissioners",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1851-09-03",
+    category: "telecommunications planning",
+    title: "Cape Ray route survey party departed St. John's",
+    body: "The Morning Courier reported that F. N. Gisborne and a party of six left St. John's at 6 a.m. Each carried a 70 lb knapsack with three weeks of provisions. The article records the start of a route survey, not line construction.",
+    sourceId: "mun-courier-1851-cape-ray-survey",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1851-09-16",
+    category: "telecommunications construction",
+    title: "Conception Bay telegraph poles had reached Brigus",
+    body: "The Morning Post reported that poles had been planted as far as Brigus. The wire was still expected to arrive, so the report does not establish an operating circuit.",
+    sourceId: "mun-morning-post-1851-brigus-poles",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1851-10-02",
+    category: "telecommunications construction",
+    title: "Telegraph wire reached Harbor Grace",
+    body: "The Morning Post reprinted a Harbor Grace report that wire had arrived on the Victoria for Ridley and Sons. It described the wire as about one-eighth inch thick and stated that almost all poles had been erected. The report does not establish public service.",
+    sourceId: "mun-morning-post-1851-harbor-grace-wire",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1851-10-15",
+    category: "telecommunications planning",
+    title: "Survey journal recorded route and bridge estimates",
+    body: "Gisborne's field journal assigned road estimates commonly between £25 and £30 per mile to surveyed sections. It separately recorded bridge or stream-crossing estimates from £10 to £80. These are field estimates for named route sections, not final construction costs.",
+    sourceId: "mun-gisborne-1851-survey-costs",
+    pages: "physical PDF pp. 9, 10, 15, 16, 18, 23, 25 and 27",
+    status: "verified"
+  },
+  {
+    date: "1851-11-21",
+    category: "telecommunications reliability",
+    title: "Telegraph posts were cut near Conception Bay",
+    body: "The Public Ledger reported that some St. John's and Carbonear Telegraph Company posts had been cut down near the head of Conception Bay. The Chief Justice described the removal of telegraph posts as a grave offence. The report gives no incident date, damaged-post count or repair date.",
+    sourceId: "mun-public-ledger-1851-post-damage",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1851-12-02",
+    category: "telecommunications construction",
+    title: "Newspaper disputed a completed Carbonear line claim",
+    body: "A Harbor Grace report said the St. John's to Carbonear line was complete. The Public Ledger immediately disputed that claim and stated that the wires in that district extended no farther toward St. John's than Topsail. The completion status remained unresolved on this date.",
+    sourceId: "mun-public-ledger-1851-completion-conflict",
+    pages: "physical PDF p. 2",
+    status: "unresolved"
+  },
+  {
+    date: "1851-12-04",
+    category: "telecommunications planning",
+    title: "Cape Ray route survey returned without reaching the cape",
+    body: "Gisborne's journal records Cape Ray about 13 or 14 miles away on November 14, when snow prevented the party from proceeding. The return journey reached Salmonier on December 2, Holyrood on December 3 and St. John's on December 4. The journal supports a route survey, not a completed line to Cape Ray.",
+    sourceId: "mun-gisborne-1851-survey-return",
+    pages: "physical PDF pp. 31 and 36",
+    status: "verified"
+  },
+  {
+    date: "1851-12-09",
+    category: "telecommunications construction",
+    title: "Carbonear line remained nearly complete",
+    body: "The Public Ledger reported that the St. John's to Carbonear line was very nearly complete and that wire had reached the western edge of St. John's. The same issue reported Gisborne's survey return, a route judged practicable and an estimated cost of about £40,000. It does not establish public operation.",
+    sourceId: "mun-public-ledger-1851-line-status",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1852-03-08",
     category: "telecommunications operations",

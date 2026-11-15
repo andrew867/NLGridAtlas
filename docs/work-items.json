@@ -2818,6 +2818,18 @@
       "notes": "The record separates the first reported Brigus and Harbor Grace messages, repeated line damage, enacted company and protection statutes, proposed Cape Ray schedule, reported regional cable contracts, the November 12 failed departure and the November 22 cable-laying report. The December report's printed return date conflicts with its completion date and remains unresolved."
     },
     {
+      "id": "NPREG-177",
+      "title": "Add the 1851 telegraph statute, survey and construction records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1851 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-176"],
+      "completion_evidence": ["research/NP_1851_SYSTEM_RECORD.md", "src/data.js", "tests/np-1851-system.test.js"],
+      "blocker": null,
+      "notes": "The record separates the enacted company framework, appointed commissioners, Cape Ray route survey, field estimates, Conception Bay pole and wire construction, post damage, a disputed December completion claim and a later nearly-complete report. No 1851 public-opening date is assigned."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
