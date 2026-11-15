@@ -2962,6 +2962,18 @@
       "notes": "The legislature authorized conditional support for a St. John's to Halifax steam route. The first regular Cunard-connected mail still used a sailing packet on the Halifax leg; the planned fall steam vessel was deferred before Admiralty sailing packets were advertised. A foreign underwater demolition used a voltaic battery and connecting wires."
     },
     {
+      "id": "NPREG-189",
+      "title": "Add the 1839 Cape Spear and galvanic-telegraph records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1839 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-188"],
+      "completion_evidence": ["research/NP_1839_SYSTEM_RECORD.md", "src/data.js", "tests/np-1839-system.test.js"],
+      "blocker": null,
+      "notes": "A proposed Cape Spear optical flag telegraph would repeat vessel-identification signals at Signal Hill. An October notice reported the flagstaff arrangements complete and operation imminent, but no completed transmission was located. Chapter 7 set conditional terms for an 80 horsepower St. John's to Nova Scotia steam service. A separate article described the British Great Western Railway galvanic telegraph."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -640,6 +640,56 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-public-ledger-1839-halifax-steam-circular",
+    year: 1839,
+    organization: "Public Ledger",
+    title: "British Halifax Steam-Mail Circular Published in St. John's",
+    topics: ["1839", "St. John's", "Halifax", "Great Britain", "steam packets", "mail", "Admiralty", "colonial cooperation"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18390208.pdf"
+  },
+  {
+    id: "mun-newfoundlander-1839-cape-spear-telegraph-proposal",
+    year: 1839,
+    organization: "Newfoundlander",
+    title: "Cape Spear Flag-Telegraph Proposal",
+    topics: ["1839", "Cape Spear", "Signal Hill", "St. John's", "optical telegraph", "flag signal", "ship identification", "Templeman"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/newfoundland/Newfoundlander18390509.pdf"
+  },
+  {
+    id: "mun-public-ledger-1839-cape-spear-telegraph-readiness",
+    year: 1839,
+    organization: "Public Ledger",
+    title: "Cape Spear Flag-Telegraph Readiness Notice",
+    topics: ["1839", "Cape Spear", "St. John's", "optical telegraph", "flagstaff", "private signals", "ship identification", "Commercial Society"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/publicledger/PublicLedger18391015.pdf"
+  },
+  {
+    id: "mun-statutes-1839-steam-communication-act",
+    year: 1839,
+    organization: "Newfoundland Legislature",
+    title: "St. John's to Nova Scotia Steam Communication Act",
+    topics: ["1839", "St. John's", "Halifax", "Nova Scotia", "steam vessel", "80 horsepower", "£1,500", "£500 annual payment", "two trips per month"],
+    pages: "physical PDF pp. 33 to 34, printed pp. 29 to 30",
+    status: "verified",
+    url: "https://dai.mun.ca/PDFs/statutesnl/StatutesofNewfoundland1839.pdf"
+  },
+  {
+    id: "mun-newfoundlander-1839-great-western-galvanic-telegraph",
+    year: 1839,
+    organization: "Newfoundlander",
+    title: "Great Western Railway Galvanic Telegraph Report",
+    topics: ["1839", "Great Western Railway", "galvanic telegraph", "Drayton", "Paddington", "dial", "keys", "wires", "iron tube"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/newfoundland/Newfoundlander18391219.pdf"
+  },
+  {
     id: "mun-public-ledger-1840-scientific-institution",
     year: 1840,
     organization: "Public Ledger",
@@ -13445,6 +13495,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1839-02-08",
+    category: "mail communications",
+    title: "St. John's press printed the proposed Halifax steam-mail arrangement",
+    body: "The Public Ledger printed an October 24, 1838 Downing Street circular proposing steam packets in place of sailing mail vessels between Great Britain and Halifax. The circular asked colonial legislatures to cooperate in improving onward communication. It did not report an operating Newfoundland steam route.",
+    sourceId: "mun-public-ledger-1839-halifax-steam-circular",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1839-05-09",
+    category: "optical telecommunications",
+    title: "Cape Spear flag telegraph was proposed",
+    body: "A proposal from Mr. Templeman of the Secretary's Office would identify approaching vessels by a distinguishing signal and house flag at Cape Spear, then repeat the signal at Signal Hill. The report said the arrangement remained proposed.",
+    sourceId: "mun-newfoundlander-1839-cape-spear-telegraph-proposal",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1839-10-11",
+    category: "optical telecommunications",
+    title: "Committee reported the Cape Spear telegraph ready for operation",
+    body: "A committee notice dated October 11 said the Cape Spear flagstaff arrangements were complete and that the telegraph would be put in operation forthwith. Owners could leave private signals with the lighthouse secretary, and masters were to hoist their distinguishing flags when in sight. The notice reports readiness and imminent operation, not a completed signal exchange.",
+    sourceId: "mun-public-ledger-1839-cape-spear-telegraph-readiness",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1839-10-12",
+    category: "steam communications",
+    title: "Steam act set conditional terms for a St. John's to Nova Scotia service",
+    body: "Chapter 7 revested an unused £1,500 appropriation in the Treasury, then authorized £500 annually for three years for a steam vessel of at least 80 horsepower between St. John's and Halifax, or another convenient Nova Scotia port. Payment required a £3,000 bond, two trips per month and continued service for three years. The act does not prove that a vessel entered service.",
+    sourceId: "mun-statutes-1839-steam-communication-act",
+    pages: "physical PDF pp. 33 to 34, printed pp. 29 to 30",
+    status: "verified"
+  },
+  {
+    date: "1839-12-19",
+    category: "telecommunications context",
+    title: "Newfoundlander printed a technical account of a galvanic telegraph",
+    body: "The report described the Great Western Railway telegraph between Paddington and Drayton in Britain. Brass keys used galvanic power to move dial indications for letters, numbers and punctuation. Two wires ran through a hollow iron tube beside the railway. This was foreign technical context, not a Newfoundland electric circuit.",
+    sourceId: "mun-newfoundlander-1839-great-western-galvanic-telegraph",
+    pages: "physical PDF pp. 1 to 2",
+    status: "reported"
+  },
   {
     date: "1840-04-29",
     category: "steam communications",

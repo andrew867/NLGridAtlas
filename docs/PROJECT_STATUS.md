@@ -397,10 +397,11 @@ Updated: 2026-11-15
 - Added the 1842 galvanic-blasting and steam-communication records. The *Public Ledger* described battery-fired rock blasting outside Newfoundland. The *Royal Gazette* documented two steamships at St. John's, a proposed local excursion and a proposed Halifax mail route. Its article titled "The Submarine Telegraph" describes underwater acoustic signalling, not an electrical cable.
 - Added the 1841 mail, electrical-context and gas-light proposal records. An Admiralty notice named two St. John's to Halifax mail packets and their operating rule. Local newspapers described Bain electromagnetic sounding and printing-telegraph apparatus outside Newfoundland. A reported St. John's gas-light company proposal remained at the estimate stage.
 - Added the 1840 steam-mail and galvanic-demolition records. The legislature authorized conditional support for St. John's to Halifax steam communication. The first regular Cunard-connected mail retained a sailing Halifax leg; the proposed fall steam vessel was deferred before Admiralty sailing packets were advertised. A separate foreign operation used a voltaic battery and connecting wires to fire an underwater charge.
+- Added the 1839 Cape Spear optical-telegraph, steam-law and galvanic-telegraph records. A May proposal connected vessel signals at Cape Spear with repetition at Signal Hill. An October notice reported the flagstaff arrangements complete and operation imminent without proving a completed transmission. Chapter 7 set conditional vessel, power, bond and schedule terms for a St. John's to Nova Scotia steam service. A separate local newspaper article described the British Great Western Railway galvanic telegraph.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1839 after the 1840 record under `NPREG-188`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1838 after the 1839 record under `NPREG-189`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
