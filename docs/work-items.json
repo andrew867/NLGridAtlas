@@ -1726,6 +1726,18 @@
       "notes": "Several development records date Rocky Pond commissioning to 1943, while the 2009 capital filing says 1942; the conflict remains visible. Filed records date the La Manche Canal and 12.6 km Cape Pond Road to 1943. The utility property schedule records two King's Bridge and three Fall Pond deeds in 1943. No named 1943 transmission line, station, transformer, telecommunications installation, demand, reliability, storm or outage event was located."
     },
     {
+      "id": "NPREG-086",
+      "title": "Reconcile 1942 generation, transmission, station, waterworks and property records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1942 generation, transmission, station, transformer, telecommunications, hydro-civil, property, load and reliability evidence.",
+      "dependencies": ["NPREG-085"],
+      "completion_evidence": ["research/NP_1942_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1942-system.test.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "Tors Cove records separately give 1940, 1941 and 1942 dates; Rocky Pond records give 1942 and 1943. The year includes the Rocky Pond generation substation and forebay power and control line, 11L, 23L, West Brook commissioning, the Fall Pond forebay dam, and eight property deeds or grants. No named 1942 system-demand value, reliability value, storm or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -550,6 +550,46 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1942-hydro-record",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-088, Tors Cove and West Brook Development Records",
+    topics: ["1942", "Tors Cove", "West Brook", "hydro generation", "Francis turbine", "Westinghouse", "commissioning date conflict"],
+    pages: "physical PDF pp. 137 and 140",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
+  },
+  {
+    id: "np-1942-23l",
+    year: 2009,
+    organization: "Newfoundland Power",
+    title: "2010 Capital Budget Application, Transmission Line 23L History",
+    topics: ["1942", "23L", "Pierre's Brook", "Mobile", "33 kV", "transmission line", "3/0 copper"],
+    pages: "physical PDF p. 330",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf"
+  },
+  {
+    id: "np-1942-fall-pond-dam",
+    year: 2016,
+    organization: "Newfoundland Power",
+    title: "2017 Capital Budget Application, Fall Pond Forebay Dam Record",
+    topics: ["1942", "Fall Pond", "forebay dam", "spillway", "Ambersen dam", "hydro civil"],
+    pages: "physical PDF p. 188",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf"
+  },
+  {
+    id: "np-1942-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1942 Property Records",
+    topics: ["1942", "Bay Bulls Road", "Mobile", "Rocky Pond", "Tors Cove", "Goulds", "Fall Pond", "property", "utility land"],
+    pages: "physical PDF pp. 136 to 137 and 152",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "np-1943-rocky-pond",
     year: 2012,
     organization: "Newfoundland Power",
@@ -10403,6 +10443,21 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1942-system-record",
+    scope: "1942 hydro generation, transmission, station, control-line, dam and utility property records",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1942-hydro-record", pages: "physical PDF pp. 137 and 140" },
+      { sourceId: "np-2013-generation-unit-data", pages: "physical PDF p. 2" },
+      { sourceId: "np-2022-tors-cove", pages: "physical PDF pp. 289 and 329" },
+      { sourceId: "np-2009-rocky-pond", pages: "physical PDF pp. 167 and 281" },
+      { sourceId: "np-2005-transmission-rebuild", pages: "physical PDF p. 319" },
+      { sourceId: "np-1942-23l", pages: "physical PDF p. 330" },
+      { sourceId: "np-1942-fall-pond-dam", pages: "physical PDF p. 188" },
+      { sourceId: "np-1942-property-record", pages: "physical PDF pp. 136 to 137 and 152" }
+    ]
+  },
+  {
     id: "np-1943-system-record",
     scope: "1943 Rocky Pond generation, hydraulic and access infrastructure, and utility property records",
     status: "unresolved",
@@ -11225,6 +11280,60 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1942",
+    category: "generation",
+    title: "Tors Cove construction dates remain inconsistent",
+    body: "The generating-unit table dates G1 and G2 to 1940, the 2022 project report dates plant service and substation construction to 1941, and the 2010 depreciation study dates plant commissioning to 1942. G3 is separately dated to 1951.",
+    sourceId: "np-1942-hydro-record",
+    pages: "physical PDF p. 137; generating-unit table physical PDF p. 2; 2022 project report physical PDF pp. 289 and 329",
+    status: "unresolved"
+  },
+  {
+    date: "1942",
+    category: "station",
+    title: "Rocky Pond station and forebay line entered the record",
+    body: "The 2009 filing dates Rocky Pond Substation and its 12.5 kV forebay distribution line to 1942. The line carried power to the forebay and copper communications for water-level indication, gate control and gate position.",
+    sourceId: "np-2009-rocky-pond",
+    pages: "physical PDF pp. 167 and 281",
+    status: "reported"
+  },
+  {
+    date: "1942",
+    category: "transmission",
+    title: "11L and 23L entered service",
+    body: "The 2005 filing dates 5.0 km, 66 kV line 11L between Tors Cove and Mobile to 1942. The 2010 filing dates 5.5 km, 33 kV line 23L between Pierre's Brook and Mobile to the same year.",
+    sourceId: "np-1942-23l",
+    pages: "physical PDF p. 330; 11L record physical PDF p. 319",
+    status: "reported"
+  },
+  {
+    date: "1942",
+    category: "generation",
+    title: "West Brook hydro development was commissioned",
+    body: "The development record gives one Leffel horizontal Francis turbine and one Westinghouse generator, 680 kW capacity and approximately 47.0 m net head.",
+    sourceId: "np-1942-hydro-record",
+    pages: "physical PDF p. 140",
+    status: "reported"
+  },
+  {
+    date: "1942",
+    category: "waterworks",
+    title: "Fall Pond forebay dam was built",
+    body: "The reinforced-concrete buttress Ambersen dam has a 54.7 m crest and a maximum height of 10.8 m. Its spillway crest is 32.6 m long and the maximum height at the left abutment is 9.0 m.",
+    sourceId: "np-1942-fall-pond-dam",
+    pages: "physical PDF p. 188",
+    status: "reported"
+  },
+  {
+    date: "1942",
+    category: "property",
+    title: "Utility property schedule records eight 1942 deeds or grants",
+    body: "The schedule records property at Bay Bulls Road, Mobile, Rocky Pond, Tors Cove, Goulds and Fall Pond. Rocky Pond accounts for three July 31 deeds.",
+    sourceId: "np-1942-property-record",
+    pages: "physical PDF pp. 136 to 137 and 152",
+    status: "reported"
+  },
   {
     date: "1943",
     category: "generation",
@@ -19394,6 +19503,16 @@ const filedFeederMapProfiles = [
     },
     historyRecords: [
       {
+        label: "1942 FOREBAY DAM AND PROPERTY RECORD",
+        sourceId: "np-1942-fall-pond-dam",
+        pages: "physical PDF p. 188; property schedule physical PDF p. 152",
+        facts: [
+          ["Forebay structure", "reinforced-concrete buttress Ambersen dam built in 1942; 54.7 m crest; 10.8 m maximum height"],
+          ["Spillway", "32.6 m crest; 9.0 m maximum height at the left abutment; sluice gate at the left abutment"],
+          ["Property", "deed from Edward Turpin dated May 20, 1942; Volume 162, Folio 535"]
+        ]
+      },
+      {
         label: "1943 PROPERTY RECORDS",
         sourceId: "np-1943-property-record",
         pages: "physical PDF p. 152",
@@ -19491,6 +19610,15 @@ const filedFeederMapProfiles = [
       facts: [["WBK-T1", "three generation-transformer entries; each 12.5/4.2 kV and 0.33 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1942 DEVELOPMENT RECORD",
+        sourceId: "np-1942-hydro-record",
+        pages: "physical PDF p. 140",
+        facts: [
+          ["Commissioning", "one Leffel horizontal Francis turbine and one Westinghouse generator commissioned in 1942"],
+          ["Filed output", "680 kW under approximately 47.0 m net head"]
+        ]
+      },
       {
         label: "1944 PROPERTY RECORD",
         sourceId: "np-1944-property-record",
@@ -19619,6 +19747,16 @@ const filedFeederMapProfiles = [
       ]
     },
     historyRecords: [
+      {
+        label: "1942 TRANSMISSION AND PROPERTY RECORD",
+        sourceId: "np-1942-23l",
+        pages: "physical PDF p. 330; 11L record physical PDF p. 319; property schedule physical PDF p. 136",
+        facts: [
+          ["11L", "66 kV between Tors Cove and Mobile; 5.0 km; built in 1942"],
+          ["23L", "33 kV between Pierre's Brook and Mobile; 5.5 km; built in 1942; no directly served customers in the 2010 filing"],
+          ["Mobile property", "deed from the Roman Catholic Episcopal Corporation dated May 16, 1942; Volume 162, Folios 410 to 411"]
+        ]
+      },
       {
         label: "1954 / 1964 24L CONSTRUCTION",
         sourceId: "np-2010-24l",
@@ -28961,6 +29099,14 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1942 PROPERTY RECORD",
+        sourceId: "np-1942-property-record",
+        pages: "physical PDF pp. 136 to 137",
+        facts: [
+          ["Goulds", "deed from Edward Chafe dated July 1942; Volume 163, Folio 413"]
+        ]
+      },
+      {
         label: "2002 REPORTED GOULDS TO MOBILE LINE WORK",
         sourceId: "np-2002-annual-report",
         pages: "physical PDF p. 18",
@@ -30919,12 +31065,14 @@ export const stationProfiles = [
       ]
     },
     engineeringRecord: {
-      date: "2022 STATION RECORD",
+      date: "1940 / 1941 / 1942 DATE CONFLICT",
       title: "Tors Cove hydro generation station",
       sourceId: "np-2022-tors-cove",
-      pages: "physical PDF pp. 289 and 329",
+      pages: "physical PDF pp. 289 and 329; generating-unit table physical PDF p. 2; development record physical PDF p. 137",
       facts: [
-        ["Plant", "commissioned in 1941; 6.5 MW in the 2022 project report"],
+        ["Generating-unit table", "G1 and G2 installed in 1940; G3 installed in 1951"],
+        ["2022 project report", "plant placed in service and substation built in 1941; 6.5 MW"],
+        ["2010 depreciation study", "plant commissioned in 1942"],
         ["Grid connection", "11L runs approximately 5 km to Mobile Substation"],
         ["Transformer", "TCV-T1; 66/6.9 kV; 7.5 MVA"]
       ]
@@ -30936,6 +31084,15 @@ export const stationProfiles = [
       facts: [["TCV-T1", "generation transformer; 66/6.9 kV; 7.50 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1942 PROPERTY AND 11L RECORD",
+        sourceId: "np-1942-property-record",
+        pages: "physical PDF p. 137; 11L record physical PDF p. 319",
+        facts: [
+          ["Property", "Crown Grant dated July 24, 1942; Volume 109, Folio 75, Crown Lands Registry"],
+          ["11L", "66 kV connection to Mobile; 5.0 km; built in 1942"]
+        ]
+      },
       {
         label: "1951 G3 ADDITION",
         sourceId: "np-1951-tors-cove-g3",
@@ -31342,6 +31499,16 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1942 23L CONSTRUCTION",
+        sourceId: "np-1942-23l",
+        pages: "physical PDF p. 330",
+        facts: [
+          ["Original line", "33 kV radial connection to Mobile; 5.5 km; built in 1942"],
+          ["Original conductor", "non-standard 3/0 copper in the 2010 filing"],
+          ["Service", "connected the Pierre's Brook plant to the Island system; no customers directly served"]
+        ]
+      },
+      {
         label: "1965 PENSTOCK RECONSTRUCTION",
         sourceId: "np-2015-pierre-brook",
         pages: "physical PDF p. 186",
@@ -31517,6 +31684,16 @@ export const stationProfiles = [
       facts: [["ROP-T1", "generation transformer; 66/6.9 kV; 5.33 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1942 STATION, FOREBAY LINE AND PROPERTY RECORD",
+        sourceId: "np-2009-rocky-pond",
+        pages: "physical PDF pp. 167 and 281; property schedule physical PDF pp. 136 to 137",
+        facts: [
+          ["Substation", "built in 1942 as a generation substation; the 2009 filing lists one 4 MVA transformer at 6.9 kV"],
+          ["Forebay line", "12.5 kV line built in 1942 for forebay power and copper communications carrying water-level indication, gate control and gate position"],
+          ["Property deeds", "W. J. Long, W. J. Morris and George H. Parsons deeds dated July 31, 1942; Volume 163, Folios 385 to 389"]
+        ]
+      },
       {
         label: "1943 LA MANCHE CANAL AND CAPE POND ROAD",
         sourceId: "np-2014-la-manche",
