@@ -1714,6 +1714,18 @@
       "notes": "Hydrometric station 02ZE001 at Salmon River near Long Pond began recording in 1944. The 2004 Hydro study prints a 1944 to 1964 period and 21 years, while the 2024 refresh table prints 1944 to 1965 and 22 years; both remain visible. The utility property schedule records one West Brook deed and two St. George's deeds in 1944. No named 1944 line, station, transformer, generating unit, telecommunications installation, demand, reliability, storm or outage event was located."
     },
     {
+      "id": "NPREG-085",
+      "title": "Reconcile 1943 generation, waterworks, access and property records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1943 generation, hydro-civil, access, property, transmission, station, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-084"],
+      "completion_evidence": ["research/NP_1943_SYSTEM_RECORD.md", "src/data.js", "index.html", "tests/np-1943-system.test.js", "tests/data.test.js"],
+      "blocker": null,
+      "notes": "Several development records date Rocky Pond commissioning to 1943, while the 2009 capital filing says 1942; the conflict remains visible. Filed records date the La Manche Canal and 12.6 km Cape Pond Road to 1943. The utility property schedule records two King's Bridge and three Fall Pond deeds in 1943. No named 1943 transmission line, station, transformer, telecommunications installation, demand, reliability, storm or outage event was located."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

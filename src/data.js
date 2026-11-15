@@ -550,6 +550,36 @@ export const sources = [
     url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf"
   },
   {
+    id: "np-1943-rocky-pond",
+    year: 2012,
+    organization: "Newfoundland Power",
+    title: "CA-NP-036, Rocky Pond Development Record",
+    topics: ["1943", "Rocky Pond", "hydro generation", "Dominion Turbine", "Westinghouse", "powerhouse", "penstock"],
+    pages: "physical PDF pp. 240 to 241",
+    status: "unresolved",
+    url: "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf"
+  },
+  {
+    id: "np-1943-cape-pond-road",
+    year: 2019,
+    organization: "Newfoundland Power",
+    title: "2020 Capital Budget Application, Cape Pond Road History",
+    topics: ["1943", "Cape Pond Road", "Rocky Pond", "Tors Cove", "La Manche Canal", "access road", "hydro infrastructure"],
+    pages: "physical PDF p. 169",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF"
+  },
+  {
+    id: "np-1943-property-record",
+    year: 2015,
+    organization: "Newfoundland Power",
+    title: "CA-NP-016 Attachment A, 1943 Property Records",
+    topics: ["1943", "King's Bridge", "Fall Pond", "property", "utility land"],
+    pages: "physical PDF pp. 137 and 152",
+    status: "reported",
+    url: "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf"
+  },
+  {
     id: "nlh-1944-salmon-river-record",
     year: 2004,
     organization: "Newfoundland and Labrador Hydro",
@@ -10373,6 +10403,18 @@ export const staticClaims = [
     ]
   },
   {
+    id: "np-1943-system-record",
+    scope: "1943 Rocky Pond generation, hydraulic and access infrastructure, and utility property records",
+    status: "unresolved",
+    sources: [
+      { sourceId: "np-1943-rocky-pond", pages: "physical PDF pp. 240 to 241" },
+      { sourceId: "np-2009-rocky-pond", pages: "physical PDF pp. 161 and 167" },
+      { sourceId: "np-2014-la-manche", pages: "physical PDF p. 215" },
+      { sourceId: "np-1943-cape-pond-road", pages: "physical PDF p. 169" },
+      { sourceId: "np-1943-property-record", pages: "physical PDF pp. 137 and 152" }
+    ]
+  },
+  {
     id: "np-1944-system-record",
     scope: "1944 Salmon River hydrometric and utility property records",
     status: "unresolved",
@@ -11183,6 +11225,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1943",
+    category: "generation",
+    title: "Rocky Pond commissioning year remains disputed",
+    body: "The 2013 development record dates the powerhouse and Dominion vertical Francis turbine to 1943 and identifies the Westinghouse generator, 3.2 MW installed capacity and 32.6 m net head. A 2009 capital filing dates plant service to 1942.",
+    sourceId: "np-1943-rocky-pond",
+    pages: "physical PDF pp. 240 to 241; 2009 capital filing physical PDF p. 161",
+    status: "unresolved"
+  },
+  {
+    date: "1943",
+    category: "waterworks",
+    title: "La Manche Canal and Cape Pond Road entered the Rocky Pond development record",
+    body: "The 2014 filing dates the La Manche Canal and Rocky Pond Plant to 1943. The 2020 filing dates the 12.6 km Cape Pond Road to 1943 and records its access to Cape Pond, Cluney's, and La Manche Canal infrastructure.",
+    sourceId: "np-2014-la-manche",
+    pages: "physical PDF p. 215; road record physical PDF p. 169",
+    status: "reported"
+  },
+  {
+    date: "1943",
+    category: "property",
+    title: "Utility property schedule records five 1943 deeds",
+    body: "The schedule records two King's Bridge deeds dated January 11 and May 29, and three Fall Pond deeds from Walter E. Seibert dated May 18.",
+    sourceId: "np-1943-property-record",
+    pages: "physical PDF pp. 137 and 152",
+    status: "reported"
+  },
   {
     date: "1944",
     category: "hydrology",
@@ -19324,6 +19393,16 @@ const filedFeederMapProfiles = [
       facts: [["FPD-T1-A/B/C", "three generation transformers; each 12.5/4.2 kV and 0.25 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1943 PROPERTY RECORDS",
+        sourceId: "np-1943-property-record",
+        pages: "physical PDF p. 152",
+        facts: [
+          ["Fall Pond deed 1", "property acquired from Walter E. Seibert on May 18, 1943; Volume 167, Folio 800"],
+          ["Fall Pond deed 2", "property acquired from Walter E. Seibert on May 18, 1943; Volume 167, Folio 801"],
+          ["Fall Pond deed 3", "property acquired from Walter E. Seibert on May 18, 1943; Volume 167, Folio 598"]
+        ]
+      },
       {
         label: "2002 TO 2003 REHABILITATION RECORDS",
         sourceId: "np-2003-fall-pond-rehabilitation",
@@ -29059,6 +29138,15 @@ export const stationProfiles = [
     },
     historyRecords: [
       {
+        label: "1943 PROPERTY RECORDS",
+        sourceId: "np-1943-property-record",
+        pages: "physical PDF p. 137",
+        facts: [
+          ["Elizabeth M. Stead deed", "King's Bridge Substation property dated January 11, 1943; Volume 165, Folios 494 to 495"],
+          ["Second King's Bridge deed", "property dated May 29, 1943; Volume 169, Folios 76 to 78"]
+        ]
+      },
+      {
         label: "1948 STATION CONSTRUCTION",
         sourceId: "np-2016-kbr-system",
         pages: "physical PDF p. 263",
@@ -31410,13 +31498,14 @@ export const stationProfiles = [
       generators: [{ label: "G1", rating: "3.25 MW plant capacity", bus: "b2" }]
     },
     engineeringRecord: {
-      date: "2008 PLANT RECORD",
+      date: "1942 / 1943 COMMISSIONING DATE CONFLICT",
       title: "Rocky Pond hydro generation station",
-      sourceId: "np-2009-rocky-pond",
-      pages: "physical PDF pp. 161 and 167",
+      sourceId: "np-1943-rocky-pond",
+      pages: "physical PDF pp. 240 to 241; compare 2009 capital filing physical PDF pp. 161 and 167",
       facts: [
-        ["Plant", "commissioned in 1942; 3.25 MW under 32.6 m net head"],
-        ["Normal production", "14.1 GWh in the 2008 project report"],
+        ["Commissioning date conflict", "the 2009 capital filing says the plant entered service in 1942; multiple later development records say 1943"],
+        ["1943 development record", "one vertical Francis turbine manufactured by Dominion Turbine and one Westinghouse generator; 3.2 MW under 32.6 m net head"],
+        ["2009 plant record", "3.25 MW under 32.6 m net head; 14.1 GWh normal annual production"],
         ["Generator", "Westinghouse unit manufactured in 1941; 6.9 kV"],
         ["Hydraulic sequence", "Rocky Pond is upstream of the Tors Cove development"]
       ]
@@ -31428,6 +31517,16 @@ export const stationProfiles = [
       facts: [["ROP-T1", "generation transformer; 66/6.9 kV; 5.33 MVA"]]
     },
     historyRecords: [
+      {
+        label: "1943 LA MANCHE CANAL AND CAPE POND ROAD",
+        sourceId: "np-2014-la-manche",
+        pages: "physical PDF p. 215; road record physical PDF p. 169",
+        facts: [
+          ["La Manche Canal", "the filed development history dates the canal and Rocky Pond Plant to 1943"],
+          ["Cape Pond Road", "12.6 km gravel road constructed in 1943 from Route 10 to Cape Pond"],
+          ["Infrastructure access", "Cape Pond dam, spillway, outlet and high-speed canal; Cluney's dam, spillway and control structure; La Manche Canal embankment and six spillways"]
+        ]
+      },
       {
         label: "1945 PROPERTY RECORD",
         sourceId: "np-1945-property-record",

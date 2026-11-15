@@ -2564,6 +2564,8 @@ test("Rocky Pond joins the segmented 66 kV corridor to the rebuilt hydro plant",
   assert.deepEqual(rockyPond.diagram.generators.map(({ label, rating }) => [label, rating]), [["G1", "3.25 MW plant capacity"]]);
   const plantFacts = rockyPond.engineeringRecord.facts.flat().join(" ");
   const historyFacts = rockyPond.historyRecords.flatMap(({ facts }) => facts).flat().join(" ");
+  assert.match(rockyPond.engineeringRecord.date, /1942 \/ 1943 COMMISSIONING DATE CONFLICT/);
+  assert.match(plantFacts, /3\.2 MW under 32\.6 m net head/);
   assert.match(plantFacts, /3\.25 MW under 32\.6 m net head/);
   assert.match(historyFacts, /shut the plant down for eight months/);
   assert.match(historyFacts, /governor, generator, penstock and substation refurbishment completed/);
