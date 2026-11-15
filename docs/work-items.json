@@ -2710,6 +2710,18 @@
       "notes": "The April notice schedules Cape Race vessel reporting without proving commissioning. June reports identify more than half a mile of wire removed at Chapel Arm, nearly half a mile of poles removed at Harbor Main, manual message relay and a repair dispatch carrying wire and insulators. An official message records delayed British diplomatic traffic in late November without identifying the cut location or exact date."
     },
     {
+      "id": "NPREG-168",
+      "title": "Add the 1860 Cape Race service and regional fault records",
+      "phase": 2,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Inventory surviving 1860 generation, station, transformer, hydro-civil, transmission, telecommunications, load and reliability evidence.",
+      "dependencies": ["NPREG-167"],
+      "completion_evidence": ["research/NP_1860_SYSTEM_RECORD.md", "src/data.js", "tests/np-1860-system.test.js"],
+      "blocker": null,
+      "notes": "The record identifies the Cape Race interception vessel and an August 23 ship report. Contemporary reports record the Harbor Grace line torn down, the Carbonear telegraph office destroyed by fire and repeated line cutting near Wycocomagh. Unstated incident dates, damaged lengths and repair times remain unresolved."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

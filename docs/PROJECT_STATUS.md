@@ -376,10 +376,11 @@ Updated: 2026-11-15
 - Added the 1863 telegraph record. The almanac identifies the Newfoundland company's officers and St. John's management. The April 27 Cape Race messages establish actual network use during the Anglo-Saxon wreck response. The August 5 Atlantic cable tenders remained under committee review, with no contract award established.
 - Added the 1862 telegraph record. The company notice identifies operating offices and tariffs. Contemporary reports record an Aquaforte outage, a repair-wire dispatch, a grand-jury true bill for damage near Spaniard's Bay, and wire cutting at Renews, Aquaforte and Cape Broyle. Publication dates are used where incident dates are not stated.
 - Added the 1861 telegraph record. The April notice scheduled a Cape Race vessel-reporting watch without confirming that it began. June reports identify more than half a mile of wire removed at Chapel Arm, nearly half a mile of poles removed at Harbor Main, manual message relay and the *Blue Jacket* repair dispatch. An official message records delayed British diplomatic traffic in late November without identifying the cut location or exact date.
+- Added the 1860 telegraph record. The news agency describes its Cape Race interception vessel, and an August dispatch records the interception of the *City of Baltimore*. Contemporary reports identify the Harbor Grace line torn down, the Carbonear telegraph office destroyed by fire and repeated line cutting near Wycocomagh. Unstated incident dates, damaged lengths and repair times remain unresolved.
 
 ## Active work
 
-1. Continue the year-specific historical queue after the 1861 record under `NPREG-167`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue after the 1860 record under `NPREG-168`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

@@ -640,6 +640,66 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-almanac-1860-telegraph-company",
+    year: 1860,
+    organization: "Newfoundland Almanack",
+    title: "New York, Newfoundland, and London Telegraph Company Management",
+    topics: ["1860", "telegraph", "New York Newfoundland and London Telegraph Company", "Nicholas Stabb", "company management"],
+    pages: "physical PDF p. 52, printed p. 47",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/cns_almanac/Almanac1860.pdf"
+  },
+  {
+    id: "mun-morning-post-1860-cape-race-agency",
+    year: 1860,
+    organization: "Morning Post",
+    title: "Telegraphic News Agency and Cape Race Interception Service",
+    topics: ["1860", "telegraph", "Cape Race", "St. John's", "New York", "Associated Press", "interception vessel"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morningpost/MorningPost18600106.pdf"
+  },
+  {
+    id: "mun-morning-post-1860-city-of-baltimore",
+    year: 1860,
+    organization: "Morning Post",
+    title: "City of Baltimore Interception at Cape Race",
+    topics: ["1860", "telegraph", "Cape Race", "City of Baltimore", "steamship interception", "news dispatch"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morningpost/MorningPost18600825.pdf"
+  },
+  {
+    id: "mun-daily-news-1860-harbor-grace-line",
+    year: 1860,
+    organization: "The St. John's Daily News",
+    title: "Harbor Grace Telegraph-Line Damage",
+    topics: ["1860", "telegraph", "Harbor Grace", "line damage", "riot", "network fault"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/sjdailynews/TheStJohnsDailyNews18601102vol01no58.pdf"
+  },
+  {
+    id: "mun-daily-news-1860-carbonear-office",
+    year: 1860,
+    organization: "The St. John's Daily News",
+    title: "Carbonear Fire and Telegraph-Office Loss",
+    topics: ["1860", "telegraph", "Carbonear", "telegraph office", "fire", "site loss"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/sjdailynews/TheStJohnsDailyNews18601108vol01no63.pdf"
+  },
+  {
+    id: "mun-morning-post-1860-wycocomagh-cuts",
+    year: 1860,
+    organization: "Morning Post",
+    title: "Wycocomagh Telegraph-Line Cutting and Convictions",
+    topics: ["1860", "telegraph", "Wycocomagh", "Cape Breton", "line cutting", "conviction", "network fault"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/morningpost/MorningPost18601212.pdf"
+  },
+  {
     id: "mun-daily-news-1861-cape-race-watch",
     year: 1861,
     organization: "The St. John's Daily News",
@@ -12475,6 +12535,60 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1860",
+    category: "telecommunications operations",
+    title: "The almanac listed the Newfoundland telegraph company's management",
+    body: "The 1860 almanac identified Peter Cooper as president and Cyrus W. Field as vice-president of the New York, Newfoundland, and London Telegraph Company. Nicholas Stabb was the general agent for Newfoundland.",
+    sourceId: "mun-almanac-1860-telegraph-company",
+    pages: "physical PDF p. 52, printed p. 47",
+    status: "reported"
+  },
+  {
+    date: "1860-01-06",
+    category: "telecommunications operations",
+    title: "News agency described its Cape Race interception service",
+    body: "The agency reported sending messages between Europe and America over the line between St. John's and New York. It had a vessel stationed off Cape Race to intercept European steamers. Messages obtained from the vessels were telegraphed from Newfoundland.",
+    sourceId: "mun-morning-post-1860-cape-race-agency",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1860-08-23",
+    category: "telecommunications operations",
+    title: "City of Baltimore was intercepted off Cape Race",
+    body: "A company dispatch states that the City of Baltimore was intercepted off Cape Race at 7 p.m. The transmitted news included Liverpool and Queenstown dates.",
+    sourceId: "mun-morning-post-1860-city-of-baltimore",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1860-11-02",
+    category: "telecommunications fault",
+    title: "Dispatch reported the Harbor Grace telegraph line torn down",
+    body: "A dispatch dated November 1 states that a mob began tearing down the Harbor Grace telegraph line at about 7:30 p.m. on the previous evening. The report gives no damaged length or return-to-service time.",
+    sourceId: "mun-daily-news-1860-harbor-grace-line",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1860-11-08",
+    category: "telecommunications fault",
+    title: "Carbonear fire report listed the telegraph office as destroyed",
+    body: "A report dated November 7 lists the telegraph office among the destroyed premises. It gives no equipment or replacement arrangement.",
+    sourceId: "mun-daily-news-1860-carbonear-office",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1860-12-12",
+    category: "telecommunications fault",
+    title: "Report described repeated line cutting near Wycocomagh",
+    body: "Two men had been convicted in Cape Breton for cutting the Newfoundland company's lines. Each received a fine of two shillings sterling or 48 hours' imprisonment. The report states that lines near Wycocomagh were being cut repeatedly, but does not identify incident dates, damaged lengths or repair times.",
+    sourceId: "mun-morning-post-1860-wycocomagh-cuts",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1861-04-15",
     category: "telecommunications proposal",
