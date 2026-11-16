@@ -3190,6 +3190,18 @@
       "notes": "The November 29 Lively notice records a new six-oar Portugal Cove and Harbour Grace packet, its passenger fares, boat hire, letter charge and collection points. The same issue prints a report of shocks and muscle contraction from a live electric eel, explicitly as non-Newfoundland electrical context. Foreign fire, lighthouse and lightning reports remain outside the Newfoundland chronology."
     },
     {
+      "id": "NPREG-208",
+      "title": "Add the 1820 pilot-boat, overland-letter, fort-fuel and fire records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1820 electrical, telecommunications, navigation-aid, emergency-signalling and scheduled communication evidence.",
+      "dependencies": ["NPREG-207"],
+      "completion_evidence": ["research/NP_1820_SYSTEM_RECORD.md", "research/derived/np-1820-newspaper-issue-manifest.json", "src/data.js", "tests/np-1820-system.test.js"],
+      "blocker": null,
+      "notes": "The January 20 issue reports a pilot boat sent from St. John's to the disabled Active at Bay Bulls and the vessel's Halifax letters brought overland. A Commissariat tender allocates 400 cords of firewood among Fort William, Fort Townshend and Signal Hill. The February 24 issue separates a house fire behind Fort William from the later Methodist Chapel fire and its immediate alarm and neighbour response."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

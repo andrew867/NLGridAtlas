@@ -416,10 +416,11 @@ Updated: 2026-11-16
 - Added the 1823 *Hibernia* packet record. James Dooley's notice identifies the Portugal Cove and Harbour Grace route, on-demand passenger and package traffic, and two St. John's collection points for Harbour Grace letters and packages. The source was printed in January 1824 but carries a September 18, 1823 notice date.
 - Added the 1822 *Speedwell* and *Lively* packet records, an editorial on the condition of fire-engine and lighthouse institutions, a merchants' private pilotage certificate and surety rule, and a report of a harbour signal being hauled down after a brig passed northward.
 - Added the 1821 *Lively* packet and electric-eel records. The packet notice preserves the six-oar service, fares, letter charge and collection points. The electric-eel article is retained as locally printed electrical context, not as a Newfoundland electrical installation.
+- Added the 1820 *Active* pilot-boat and overland-letter record, the 400-cord firewood tender for Fort William, Fort Townshend and Signal Hill, and the Fort William and Methodist Chapel fire report.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1820 after the 1821 *Lively* packet and electric-eel records under `NPREG-207`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1819 after the 1820 pilot-boat, overland-letter, fuel-logistics and fire-response records under `NPREG-208`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

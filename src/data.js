@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1820-active-letters",
+    year: 1820,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Active Pilot-Boat and Overland-Letter Report",
+    topics: ["1820", "Active", "pilot boat", "Bay Bulls", "St. John's", "Halifax", "letters", "overland route", "rudder"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18200120no301.pdf"
+  },
+  {
+    id: "mun-mercantile-1820-fort-firewood",
+    year: 1820,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Fort and Signal Hill Firewood Tender",
+    topics: ["1820", "firewood", "Fort William", "Fort Townshend", "Signal Hill", "Commissariat", "fuel yard", "tender"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18200120no301.pdf"
+  },
+  {
+    id: "mun-mercantile-1820-fires",
+    year: 1820,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Fort William and Methodist Chapel Fire Report",
+    topics: ["1820", "fire", "Fort William", "Methodist Chapel", "alarm", "stove", "Richard Perchard"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18200224no306.pdf"
+  },
+  {
     id: "mun-mercantile-1821-lively-packet",
     year: 1821,
     organization: "Newfoundland Mercantile Journal",
@@ -14075,6 +14105,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1820-01-17",
+    category: "operations",
+    title: "Commissariat sought 400 cords of fort firewood",
+    body: "A tender requested 400 cords of fir firewood for delivery between May 1 and June 24. The allocation was Fort William, 150 cords; Fort Townshend, 200 cords; and Signal Hill, 50 cords. Tenders were due January 25. Each contractor needed two sureties and a bond of 100 pounds for every 50 cords.",
+    sourceId: "mun-mercantile-1820-fort-firewood",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1820-01-20",
+    category: "communications",
+    title: "Active received pilot-boat assistance and its letters moved overland",
+    body: "The schooner Active, Captain Jeffreys, put into Bay Bulls after she split her sails in a gale. She went ashore and lost her rudder. A pilot boat went from St. John's to assist her. The Halifax letters carried by Active were brought overland on the following Sunday.",
+    sourceId: "mun-mercantile-1820-active-letters",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1820-02-24",
+    category: "fire response",
+    title: "Newspaper reported Fort William and Methodist Chapel fires",
+    body: "A house behind Fort William burned to the ground after prompt assistance could not stop the fire. The report attributes the probable cause to a chimney spark in hay stored in the loft. Later the same night, Richard Perchard and his family helped save the Methodist Chapel. Cinders from its stove had ignited the floor. The alarm was given immediately, and the floor and beams had burned over an area about five feet square.",
+    sourceId: "mun-mercantile-1820-fires",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1821-11-29",
     category: "communications",
