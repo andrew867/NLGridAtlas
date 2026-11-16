@@ -640,6 +640,56 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1822-speedwell-packet",
+    year: 1822,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Speedwell Packet and Letter Notice",
+    topics: ["1822", "Speedwell", "packet boat", "Portugal Cove", "Harbour Grace", "St. John's", "letters", "packages", "six oars", "Michael Dooley"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18221010no442.pdf"
+  },
+  {
+    id: "mun-mercantile-1822-public-institutions",
+    year: 1822,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Fire-Engine, Lighthouse and Pilotage Governance Editorial",
+    topics: ["1822", "fire engine", "lighthouse", "pilots", "pilotage", "public institutions", "local authority", "St. John's"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18221024no444.pdf"
+  },
+  {
+    id: "mun-mercantile-1822-private-pilotage",
+    year: 1822,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Merchants' Pilotage Committee Notice",
+    topics: ["1822", "pilots", "pilotage", "merchant committee", "certificate", "sureties", "vessels"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18221107no446.pdf"
+  },
+  {
+    id: "mun-mercantile-1822-lively-packet",
+    year: 1822,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Lively Packet Fares and Letter Notice",
+    topics: ["1822", "Lively", "packet boat", "Portugal Cove", "Harbour Grace", "St. John's", "letters", "packages", "fares", "James Neary"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18221114no447.pdf"
+  },
+  {
+    id: "mun-mercantile-1822-harbour-signal",
+    year: 1822,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Brig and Harbour Signal Report",
+    topics: ["1822", "St. John's", "harbour", "signal", "brig", "Conception Bay", "navigation"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18221219no452.pdf"
+  },
+  {
     id: "mun-mercantile-1823-hibernia-packet",
     year: 1823,
     organization: "Newfoundland Mercantile Journal",
@@ -14005,6 +14055,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1822-10-10",
+    category: "communications",
+    title: "Speedwell packet accepted letters and packages",
+    body: "The new packet boat Speedwell ran between Portugal Cove and Harbour Grace twice a week or whenever required. It was arranged for six oars, with six men available when required. Patrick Kough in St. John's and proprietor Michael Dooley at Portugal Cove accepted letters and packages for carriage and delivery.",
+    sourceId: "mun-mercantile-1822-speedwell-packet",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1822-10-24",
+    category: "governance",
+    title: "Editorial described fire-engine and lighthouse institutions as dwindling",
+    body: "An editorial identified the colony's fire-engine and lighthouse institutions among public institutions that had dwindled or were dwindling for want of local authority to make laws and enforce penalties. It also said the colony lacked a lawful means to appoint qualified pilots. The article did not name the lighthouse or locate the fire engine.",
+    sourceId: "mun-mercantile-1822-public-institutions",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1822-10-31",
+    category: "navigation infrastructure",
+    title: "Merchants imposed a private pilotage certificate rule",
+    body: "A group of merchants said they would not pay pilotage for their vessels unless the pilot held a certificate from their appointed committee. A pilot also had to provide two respectable sureties for good behaviour, separate from proof of qualification.",
+    sourceId: "mun-mercantile-1822-private-pilotage",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1822-11-13",
+    category: "communications",
+    title: "Lively packet published fares and letter handling",
+    body: "The new packet boat Lively ran twice a week between Portugal Cove and Harbour Grace. Fares were five shillings for ladies and gentlemen and four shillings for tradesmen and labourers. Boat hire cost 30 shillings, and letters cost nine pence each. Mr. Lee's printing office in St. John's and proprietor James Neary at Portugal Cove accepted letters and packages.",
+    sourceId: "mun-mercantile-1822-lively-packet",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1822-12-16",
+    category: "navigation",
+    title: "Signal was hauled down after a brig passed northward",
+    body: "A brig appeared south of St. John's harbour during a hard, squally north-west wind. About two hours later, the signal was hauled down after the brig passed northward. The report supposed that the vessel was bound for Conception Bay, but it did not identify the signal's mechanism, operator or location.",
+    sourceId: "mun-mercantile-1822-harbour-signal",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1823-09-18",
     category: "communications",

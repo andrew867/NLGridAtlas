@@ -3166,6 +3166,18 @@
       "notes": "A notice dated September 18 records James Dooley's Hibernia packet between Portugal Cove and Harbour Grace, including passenger, package and St. John's letter collection arrangements. The repeated Lively notice is dated November 1822. A separate 1823 report about the St. John's ordnance-yard fire describes an 1819 event and remains with that year."
     },
     {
+      "id": "NPREG-206",
+      "title": "Add the 1822 packet, pilotage, lighthouse, fire-engine and harbour-signal records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1822 electrical, telecommunications, navigation-aid, emergency-signalling and scheduled communication evidence.",
+      "dependencies": ["NPREG-205"],
+      "completion_evidence": ["research/NP_1822_SYSTEM_RECORD.md", "research/derived/np-1822-newspaper-issue-manifest.json", "src/data.js", "tests/np-1822-system.test.js"],
+      "blocker": null,
+      "notes": "The Speedwell and Lively notices record separate Portugal Cove and Harbour Grace packet services, including capacity, schedules, fares and letter handling. An October editorial identifies fire-engine and lighthouse institutions as dwindling for want of local authority, then a merchants' notice establishes a private pilotage certificate and surety rule. A December report records a harbour signal being hauled down after a brig passed northward, without identifying the signal mechanism."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
