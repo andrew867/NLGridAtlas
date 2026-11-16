@@ -3274,6 +3274,18 @@
       "notes": "The year records the Post Office collection change and Halifax packet-mail failure, Ordnance Wharf rules and material tenders, two garrison fuel tenders, defined truckage routes, two fire reports, a proposed Record Office and survey, Signal Hill defence materials, the Volunteer Rangers stores return, and the proposed market. Tenders and contemplated works remain proposed; reported operations and events remain reported."
     },
     {
+      "id": "NPREG-215",
+      "title": "Add the 1813 hospital, road, fuel, truckage and defence-works records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1813 emergency-response, defence-infrastructure, transport, surveying and public-works evidence.",
+      "dependencies": ["NPREG-214"],
+      "completion_evidence": ["research/NP_1813_SYSTEM_RECORD.md", "research/derived/np-1813-newspaper-issue-manifest.json", "src/data.js", "tests/np-1813-system.test.js"],
+      "blocker": null,
+      "notes": "The year records the Newfoundland Hospital foundation and construction progress, Fire Engine No. 1 accounts, the Bay Bulls road weather shelter, Ordnance and garrison fuel tenders, defined truckage routes, land-return boundaries, Government House repair scope, a proposed fire-resistant Record Office, regional public works, and the annual fortification report. Tenders and the Record Office remain proposed; reported work and operating records remain reported."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

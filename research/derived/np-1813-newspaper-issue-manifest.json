@@ -1,0 +1,361 @@
+{
+  "year": 1813,
+  "retrieved": "2026-11-16",
+  "issue_count": 43,
+  "physical_page_count": 185,
+  "collections": [
+    {
+      "name": "The Royal Gazette",
+      "slug": "royalgazette",
+      "collection_url": "https://dai.mun.ca/digital/royalgazette",
+      "issue_count": 43,
+      "physical_page_count": 185,
+      "items": [
+        {
+          "date": "18130204",
+          "filename": "TheRoyalGazette18130204.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130204.pdf",
+          "bytes": 28097685,
+          "physical_page_count": 4,
+          "sha256": "a44f579e35399ad68d1612e2faff8a7ebe6d0e4e0ac9e0999aaf5e7dfd3fae1b"
+        },
+        {
+          "date": "18130211",
+          "filename": "TheRoyalGazette18130211.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130211.pdf",
+          "bytes": 24152281,
+          "physical_page_count": 4,
+          "sha256": "dc0327fc7e7c7d4f3ff2d582980507f449bf28f5169a82e24698189425bec687"
+        },
+        {
+          "date": "18130218",
+          "filename": "TheRoyalGazette18130218.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130218.pdf",
+          "bytes": 24282071,
+          "physical_page_count": 4,
+          "sha256": "3286ddd7fec0818bc4fd282e417ab7bc4254bec92e6525d091b550d7247fa933"
+        },
+        {
+          "date": "18130225",
+          "filename": "TheRoyalGazette18130225.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130225.pdf",
+          "bytes": 23501931,
+          "physical_page_count": 4,
+          "sha256": "afa58b67e1dd96cc65ebe46d16211927f169a2db9beccb15084854fb4f1fc43d"
+        },
+        {
+          "date": "18130304",
+          "filename": "TheRoyalGazette18130304.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130304.pdf",
+          "bytes": 25187138,
+          "physical_page_count": 4,
+          "sha256": "9217708edff100fa39a50978de174d7f237b2e222c9f647b6e3c710ac7ac1282"
+        },
+        {
+          "date": "18130311",
+          "filename": "TheRoyalGazette18130311.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130311.pdf",
+          "bytes": 26444281,
+          "physical_page_count": 4,
+          "sha256": "bc69efaef9f9ac6b14ea88c8a0870562b5c3f04987ebe7f0e12706c29dd2cf7e"
+        },
+        {
+          "date": "18130318",
+          "filename": "TheRoyalGazette18130318.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130318.pdf",
+          "bytes": 22553449,
+          "physical_page_count": 4,
+          "sha256": "a1675cee04da79c5d0f350c4b6bc609c9b114435457503d94ec0a3285efde2ac"
+        },
+        {
+          "date": "18130325",
+          "filename": "TheRoyalGazette18130325.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130325.pdf",
+          "bytes": 24777514,
+          "physical_page_count": 4,
+          "sha256": "65ae431c14f819b5d7c37b5c523fb2dd0fbc35c1aeaac45c39ac586577323db9"
+        },
+        {
+          "date": "18130401",
+          "filename": "TheRoyalGazette18130401.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130401.pdf",
+          "bytes": 24549095,
+          "physical_page_count": 4,
+          "sha256": "815e0055293447423e030107470a5b5090f20f01ac34dd66b0e9c14d6327abc0"
+        },
+        {
+          "date": "18130408",
+          "filename": "TheRoyalGazette18130408.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130408.pdf",
+          "bytes": 23268339,
+          "physical_page_count": 4,
+          "sha256": "13ae744f02b217fbe2142e0e7b8f7f53b46a867c2c1865a07e281b694173723c"
+        },
+        {
+          "date": "18130415",
+          "filename": "TheRoyalGazette18130415.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130415.pdf",
+          "bytes": 24841175,
+          "physical_page_count": 4,
+          "sha256": "6698446c1d09e259b55fdcd87fb415b3a89a9e34530e30297866954facf46c02"
+        },
+        {
+          "date": "18130422",
+          "filename": "TheRoyalGazette18130422.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130422.pdf",
+          "bytes": 22814387,
+          "physical_page_count": 4,
+          "sha256": "bac43ed04de973b2e45fa6eb22c5d73f9caecec3466614fb86eec7560de55a41"
+        },
+        {
+          "date": "18130520",
+          "filename": "TheRoyalGazette18130520.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130520.pdf",
+          "bytes": 24633529,
+          "physical_page_count": 4,
+          "sha256": "d134e8dfc700c451c9ce172ca916e5f94db802caf03e0252726482337873db03"
+        },
+        {
+          "date": "18130527",
+          "filename": "TheRoyalGazette18130527.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130527.pdf",
+          "bytes": 23050834,
+          "physical_page_count": 4,
+          "sha256": "71259c5888b5ad6ff55c041f092add9b6eba1ad1783666d89482bd7a9caed64d"
+        },
+        {
+          "date": "18130603",
+          "filename": "TheRoyalGazette18130603.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130603.pdf",
+          "bytes": 24259307,
+          "physical_page_count": 4,
+          "sha256": "7b8e4a6fb69e2d91bcc9f62efd2938ef17deff89e8df1634f4ab35c9cd64e590"
+        },
+        {
+          "date": "18130610",
+          "filename": "TheRoyalGazette18130610.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130610.pdf",
+          "bytes": 23876777,
+          "physical_page_count": 4,
+          "sha256": "6eca926100923ad2e47fafd4359aaaef45e0edd83c250a544339f3f36e4633a7"
+        },
+        {
+          "date": "18130617",
+          "filename": "TheRoyalGazette18130617.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130617.pdf",
+          "bytes": 22934158,
+          "physical_page_count": 4,
+          "sha256": "709e471b6bc9d2717201fadeb9292965c99359aee428d449afecd4218618794e"
+        },
+        {
+          "date": "18130624",
+          "filename": "TheRoyalGazette18130624.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130624.pdf",
+          "bytes": 35101588,
+          "physical_page_count": 6,
+          "sha256": "b1c0e37a01888a548da085ae95c374c80d083b2edc3c65b1bfdc5b87fc5e9d49"
+        },
+        {
+          "date": "18130701",
+          "filename": "TheRoyalGazette18130701.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130701.pdf",
+          "bytes": 35424734,
+          "physical_page_count": 6,
+          "sha256": "0f5a04081a3b095511d995df2e1af5d8dede6867c3c1d5db46a75d38646344b5"
+        },
+        {
+          "date": "18130708",
+          "filename": "TheRoyalGazette18130708.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130708.pdf",
+          "bytes": 22757227,
+          "physical_page_count": 4,
+          "sha256": "17445afe05938775915c91919cf11c65a1c82aad1644a67c13f6d8e1a503f90e"
+        },
+        {
+          "date": "18130715",
+          "filename": "TheRoyalGazette18130715.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130715.pdf",
+          "bytes": 21393035,
+          "physical_page_count": 4,
+          "sha256": "6004eb4b1259064aaf411369f332ee6258176f021649769dad20bdc6bfb04826"
+        },
+        {
+          "date": "18130722",
+          "filename": "TheRoyalGazette18130722.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130722.pdf",
+          "bytes": 22981915,
+          "physical_page_count": 4,
+          "sha256": "f977716d88afc1bd26c6a58e99b3c8d323b1682ee84db5dab82e112d343a8d71"
+        },
+        {
+          "date": "18130729",
+          "filename": "TheRoyalGazette18130729.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130729.pdf",
+          "bytes": 23874375,
+          "physical_page_count": 4,
+          "sha256": "8bc19354859bb1d456fc2e023198d0c9855d57c0f81dec3568a2109ebbe38d3f"
+        },
+        {
+          "date": "18130805",
+          "filename": "TheRoyalGazette18130805.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130805.pdf",
+          "bytes": 22245178,
+          "physical_page_count": 4,
+          "sha256": "a3f7ff076d318b9ee7bdb5c4fc4237dbafb5793b80221cff3d76a8d2718f8f61"
+        },
+        {
+          "date": "18130812",
+          "filename": "TheRoyalGazette18130812.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130812.pdf",
+          "bytes": 20717845,
+          "physical_page_count": 4,
+          "sha256": "6cb97d92100e0cb8151b983a41f1d27fc8175fded0ce7c01db268fd1a75b69ae"
+        },
+        {
+          "date": "18130819",
+          "filename": "TheRoyalGazette18130819.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130819.pdf",
+          "bytes": 25502453,
+          "physical_page_count": 4,
+          "sha256": "0bb4c8adaddfabe1649466f22b10ed142b74407161eb25f8dd36fca00e093942"
+        },
+        {
+          "date": "18130826",
+          "filename": "TheRoyalGazette18130826.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130826.pdf",
+          "bytes": 25068906,
+          "physical_page_count": 4,
+          "sha256": "ac8d2bef5d8a03239c78c3ee1bb9ba79a3f8135d76e4e0a413dd88c17d8e1ba2"
+        },
+        {
+          "date": "18130902",
+          "filename": "TheRoyalGazette18130902.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130902.pdf",
+          "bytes": 38806405,
+          "physical_page_count": 6,
+          "sha256": "f74f7f0b2d21f80e1447b9c62677192a0e95930fc5e6f9670dd01d1ef242d735"
+        },
+        {
+          "date": "18130909",
+          "filename": "TheRoyalGazette18130909.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130909.pdf",
+          "bytes": 24264393,
+          "physical_page_count": 4,
+          "sha256": "1975b1e0d878f201dfd2e9f1a1798ab8d18c5a389d10d3cf180338e2258ff942"
+        },
+        {
+          "date": "18130916",
+          "filename": "TheRoyalGazette18130916.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130916.pdf",
+          "bytes": 38897694,
+          "physical_page_count": 6,
+          "sha256": "25cc247ba6c497cc751700d03c8eaf25c81f885e8aa5d489b42150091aa81ce9"
+        },
+        {
+          "date": "18130923",
+          "filename": "TheRoyalGazette18130923.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130923.pdf",
+          "bytes": 24672945,
+          "physical_page_count": 4,
+          "sha256": "cb82bda148e15f62fa77b0598b1ccc4c5c514cf2a8ca08976e6b621785983a20"
+        },
+        {
+          "date": "18130930",
+          "filename": "TheRoyalGazette18130930.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130930.pdf",
+          "bytes": 11412119,
+          "physical_page_count": 2,
+          "sha256": "1c4855ca58338db56fc7faf590c96f439046827e780bc8690afb250f1b230d51"
+        },
+        {
+          "date": "18131021",
+          "filename": "TheRoyalGazette18131021.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131021.pdf",
+          "bytes": 22665923,
+          "physical_page_count": 4,
+          "sha256": "07c2a29743ba0a809376fa490ac86d182a0dd8260689908dcbd71dd31d0d4e23"
+        },
+        {
+          "date": "18131028",
+          "filename": "TheRoyalGazette18131028.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131028.pdf",
+          "bytes": 23851281,
+          "physical_page_count": 4,
+          "sha256": "1cc680291462ec908c6b20d5e2321fcf22456c6019561f7aa45a07aa9cf5e2d2"
+        },
+        {
+          "date": "18131104",
+          "filename": "TheRoyalGazette18131104.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131104.pdf",
+          "bytes": 36978565,
+          "physical_page_count": 6,
+          "sha256": "ab76622453b7151bca8b9d27cd2fc1fc794282ac89daa72a4db65a81b082c331"
+        },
+        {
+          "date": "18131111",
+          "filename": "TheRoyalGazette18131111.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131111.pdf",
+          "bytes": 42205447,
+          "physical_page_count": 7,
+          "sha256": "0e39edaa8ec37b54df23507157b5256803bc99e8f03b7e570429e63146cb8781"
+        },
+        {
+          "date": "18131118",
+          "filename": "TheRoyalGazette18131118.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131118.pdf",
+          "bytes": 35228729,
+          "physical_page_count": 6,
+          "sha256": "b087da89952caadb14a3f1b9c074695321139cffe5d758d63331e134f416e21a"
+        },
+        {
+          "date": "18131125",
+          "filename": "TheRoyalGazette18131125.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131125.pdf",
+          "bytes": 23765600,
+          "physical_page_count": 4,
+          "sha256": "59d052c7c86d17c8c4975e1858e36374da3db1656c3ef3857b64cdedca9c617f"
+        },
+        {
+          "date": "18131202",
+          "filename": "TheRoyalGazette18131202.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131202.pdf",
+          "bytes": 22700007,
+          "physical_page_count": 4,
+          "sha256": "447aeffc8cf72398049a9529f002959cc49d196dc458226f6f5bde512cd6e6e4"
+        },
+        {
+          "date": "18131209",
+          "filename": "TheRoyalGazette18131209.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131209.pdf",
+          "bytes": 22471747,
+          "physical_page_count": 4,
+          "sha256": "48ec9c633a89239b602a8fdcf7bda92e3febdee5ed7cb01be17394fd9b10ab03"
+        },
+        {
+          "date": "18131216",
+          "filename": "TheRoyalGazette18131216.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131216.pdf",
+          "bytes": 25925770,
+          "physical_page_count": 4,
+          "sha256": "6bd14663e75e46f577c7cf11818db118406215901292fe9622ee9d94c95f2f3a"
+        },
+        {
+          "date": "18131223",
+          "filename": "TheRoyalGazette18131223.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131223.pdf",
+          "bytes": 22784937,
+          "physical_page_count": 4,
+          "sha256": "942f2bcbf130ea2ab531a8174c1f5ebac0db7734a4e2b783e1bf0460516cbebf"
+        },
+        {
+          "date": "18131230",
+          "filename": "TheRoyalGazette18131230.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18131230.pdf",
+          "bytes": 21673946,
+          "physical_page_count": 4,
+          "sha256": "266ef5104c57b8a2dc98826875ae19de81e61ab28d3683266580145be82618d0"
+        }
+      ]
+    }
+  ]
+}

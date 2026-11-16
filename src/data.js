@@ -640,6 +640,126 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-royal-gazette-1813-ordnance-barrack",
+    year: 1813,
+    organization: "Ordnance Barrack Office",
+    title: "Ordnance Barrack Fuel and Oil Tender",
+    topics: ["1813", "St. John's", "coal", "firewood", "cod-fish oil", "seal oil", "Ordnance Barrack Office"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130311.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1813-bay-bulls-road",
+    year: 1813,
+    organization: "St. John's General Quarter Sessions",
+    title: "Bay Bulls Road Weather-Shelter Order",
+    topics: ["1813", "St. John's", "Bay Bulls", "road", "weather shelter", "trees"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130311.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1813-hospital-foundation",
+    year: 1813,
+    organization: "The Royal Gazette",
+    title: "Newfoundland Hospital Foundation Report",
+    topics: ["1813", "St. John's", "Newfoundland Hospital", "foundation stone", "Court House"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130610.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1813-garrison-fuel",
+    year: 1813,
+    organization: "Commissariat Office",
+    title: "King's Wharf and Fort Fuel Tender",
+    topics: ["1813", "St. John's", "King's Wharf", "Signal Hill", "Fort Townshend", "Fort William", "coal", "firewood"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130610.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1813-land-returns",
+    year: 1813,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Land-Return Boundaries",
+    topics: ["1813", "St. John's", "Quidi Vidi", "Fort Townshend", "King's Bridge", "Best's Farm", "Monday's Pond", "Riverhead", "survey"],
+    pages: "physical PDF p. 6",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130701.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1813-truckage",
+    year: 1813,
+    organization: "Commissariat Office",
+    title: "King's Wharf and Fort Truckage Tender",
+    topics: ["1813", "St. John's", "King's Wharf", "Signal Hill", "Fort Townshend", "Fort William", "truckage", "coal", "firewood", "provisions"],
+    pages: "physical PDF p. 6",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130701.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1813-fire-engine-one",
+    year: 1813,
+    organization: "Fire Engine No. 1",
+    title: "Fire Engine No. 1 Accounts Notice",
+    topics: ["1813", "St. John's", "Fire Engine No. 1", "Richard Langley", "fire response"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130805.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1813-hospital-progress",
+    year: 1813,
+    organization: "Governor of Newfoundland",
+    title: "Newfoundland Hospital Construction Progress",
+    topics: ["1813", "St. John's", "Newfoundland Hospital", "construction", "assessment", "subscriptions"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18130805.pdf"
+  },
+  {
+    id: "mun-colonial-1813-government-house",
+    year: 1813,
+    organization: "Governor of Newfoundland",
+    title: "Government House Repair Order",
+    topics: ["1813", "St. John's", "Government House", "fences", "outbuildings", "repair"],
+    pages: "physical PDF pp. 477 to 478",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1813-record-office",
+    year: 1813,
+    organization: "Governor of Newfoundland",
+    title: "Fire-Secure Record Office Proposal",
+    topics: ["1813", "St. John's", "Record Office", "Government House", "Court House", "fire protection"],
+    pages: "physical PDF p. 482",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1813-public-works",
+    year: 1813,
+    organization: "Governor of Newfoundland",
+    title: "Public Accounts, Surveys and Local Works",
+    topics: ["1813", "Morton's Harbour", "Trinity", "Fortune Bay", "St. John's", "church", "Court House", "jail", "ship rooms", "survey"],
+    pages: "physical PDF pp. 485 to 486",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1813-fortifications",
+    year: 1813,
+    organization: "Governor of Newfoundland",
+    title: "Fortification and Regional Defence Report",
+    topics: ["1813", "St. John's", "Petty Harbour", "Signal Hill", "Fort Townshend", "Bay Bulls", "Fermeuse", "Trepassey", "Placentia", "artillery", "ammunition"],
+    pages: "physical PDF pp. 501 to 503",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
     id: "mun-royal-gazette-1814-post-office",
     year: 1814,
     organization: "St. John's Post Office",
@@ -14655,6 +14775,114 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1813-01-28",
+    category: "defence infrastructure",
+    title: "Ordnance Barrack Office sought fuel and lamp oil",
+    body: "The notice sought 3,000 hogsheads of English or Sydney coal, 200 cords of firewood, 150 gallons of cod-fish oil and 100 gallons of seal oil. It invited proposals for supply.",
+    sourceId: "mun-royal-gazette-1813-ordnance-barrack",
+    pages: "physical PDF p. 1",
+    status: "proposed"
+  },
+  {
+    date: "1813-01-29",
+    category: "transport",
+    title: "Bay Bulls road retained a 40-yard tree shelter",
+    body: "The General Quarter Sessions required trees within 40 yards of each side of the new road from St. John's to Bay Bulls to remain as a screen from the weather. It prohibited cutting or destroying trees inside that distance. The notice was printed on March 11.",
+    sourceId: "mun-royal-gazette-1813-bay-bulls-road",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1813-06-04",
+    category: "public works",
+    title: "Newfoundland Hospital foundation stone was laid",
+    body: "Governor Richard Goodwin Keats laid the foundation stone. The report gives the procession from the Court House to the hospital ground and the inscription placed with the stone.",
+    sourceId: "mun-royal-gazette-1813-hospital-foundation",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1813-06-10",
+    category: "defence infrastructure",
+    title: "Commissariat sought fuel for three forts",
+    body: "The tender sought 3,000 hogsheads of coal at King's Wharf by September 15 and 300 cords of firewood divided equally among Signal Hill, Fort Townshend and Fort William by October 15.",
+    sourceId: "mun-royal-gazette-1813-garrison-fuel",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1813-06-17",
+    category: "surveying",
+    title: "Land-return proclamation defined roads and boundaries",
+    body: "The return area used the Quidi Vidi to Fort Townshend road over King's Bridge, the road from Fort Townshend to Monday's Pond by Best's Farm, land within four miles of Riverhead, and south-side land more than 200 yards from the water. The proclamation requested a plan or sketch where practical.",
+    sourceId: "mun-royal-gazette-1813-land-returns",
+    pages: "physical PDF p. 6",
+    status: "reported"
+  },
+  {
+    date: "1813-06-24",
+    category: "transport",
+    title: "Truckage tender defined the King's Wharf and fort routes",
+    body: "The notice requested separate rates for coal, firewood and provisions between King's Wharf, Signal Hill, Fort William and Fort Townshend, including firewood and provisions between Fort William and Signal Hill. The proposed contract ran for 12 months.",
+    sourceId: "mun-royal-gazette-1813-truckage",
+    pages: "physical PDF p. 6",
+    status: "proposed"
+  },
+  {
+    date: "1813-07-13",
+    category: "public works",
+    title: "Hospital building had made considerable progress",
+    body: "The proclamation reports considerable progress on the Newfoundland Hospital and confirms the assessment used with voluntary subscriptions to fund the institution.",
+    sourceId: "mun-royal-gazette-1813-hospital-progress",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1813-07-29",
+    category: "public works",
+    title: "Government House repair order omitted fences and outbuildings",
+    body: "Keats reported that materials had been ordered and the Assistant Commissary General had instructions to complete Government House. The order did not cover the fences or outbuildings, so Keats requested authority to complete them as well.",
+    sourceId: "mun-colonial-1813-government-house",
+    pages: "physical PDF pp. 477 to 478",
+    status: "reported"
+  },
+  {
+    date: "1813-08-05",
+    category: "fire response",
+    title: "Fire Engine No. 1 had a named captain and accounts",
+    body: "A notice asked anyone with demands against Fire Engine No. 1 to send them immediately to Captain Richard Langley.",
+    sourceId: "mun-royal-gazette-1813-fire-engine-one",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1813-09-25",
+    category: "public works",
+    title: "Fire-resistant Record Office was proposed",
+    body: "Keats reported that government papers were kept loosely in the Secretary's Office or Court House and that records before 1748 had been destroyed by fire. He proposed a small Record Office at Government House made secure from fire and sent an expense estimate.",
+    sourceId: "mun-colonial-1813-record-office",
+    pages: "physical PDF p. 482",
+    status: "proposed"
+  },
+  {
+    date: "1813-11-10",
+    category: "public works",
+    title: "Public accounts recorded surveys, repairs and incomplete Trinity works",
+    body: "Keats recorded a Trinity ship-room survey, repairs and painting at the St. John's Court House, and a completed payment toward a Morton's Harbour church subscription. He said the Trinity jail and Court House were in a forward state and requested 300 pounds to complete them and begin church repairs.",
+    sourceId: "mun-colonial-1813-public-works",
+    pages: "physical PDF pp. 485 to 486",
+    status: "reported"
+  },
+  {
+    date: "1813-12-16",
+    category: "defence infrastructure",
+    title: "Annual report separated completed, unfinished and proposed defences",
+    body: "Keats reported a field work on the Petty Harbour road and completed batteries on the south side of St. John's harbour entrance. Signal Hill remained unfinished and the Fort Townshend sea-face platform was crumbling. He also reported artillery and ammunition sent to Bay Bulls, Fermeuse, Trepassey and Placentia. The larger Signal Hill plan remained proposed and under cost review.",
+    sourceId: "mun-colonial-1813-fortifications",
+    pages: "physical PDF pp. 501 to 503",
+    status: "reported"
+  },
   {
     date: "1814-01-13",
     category: "public works",
