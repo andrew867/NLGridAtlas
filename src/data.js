@@ -640,6 +640,86 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1819-fort-firewood",
+    year: 1819,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Fort and Signal Hill Hardwood Tender",
+    topics: ["1819", "hardwood", "Fort William", "Fort Townshend", "Signal Hill", "Commissariat", "fuel yard", "tender"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18190107no247.pdf"
+  },
+  {
+    id: "mun-mercantile-1819-pilot-regulation",
+    year: 1819,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Hoyles Pilot-Regulation and Narrows-Safety Letter",
+    topics: ["1819", "Newman W. Hoyles", "pilot regulation", "Narrows", "Helen", "Fort Amherst", "merchant committee"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18190114no248.pdf"
+  },
+  {
+    id: "mun-mercantile-1819-electric-matter",
+    year: 1819,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Electric-Matter Explanation of Thunder and Lightning",
+    topics: ["1819", "electric matter", "clouds", "thunder", "lightning", "electrical context"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18190121no249.pdf"
+  },
+  {
+    id: "mun-mercantile-1819-fort-amherst-signal",
+    year: 1819,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Fort Amherst Distress-Signal Rule and Helen Account",
+    topics: ["1819", "Fort Amherst", "distress signal", "red pendant", "yellow pendant", "gun", "Helen", "pilot boat", "Philip Herring"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18190128no250.pdf"
+  },
+  {
+    id: "mun-mercantile-1819-carnation-distress",
+    year: 1819,
+    organization: "Newfoundland Mercantile Journal",
+    title: "HMS Carnation Distress-Signal Report",
+    topics: ["1819", "HMS Carnation", "St. John's", "distress signal", "gun", "gale", "wharves"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18190304no255.pdf"
+  },
+  {
+    id: "mun-mercantile-1819-freshwater-rescue",
+    year: 1819,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Fort Amherst Signal and Freshwater Bay Boat Rescue",
+    topics: ["1819", "Fort Amherst", "Freshwater Bay", "Narrows", "signal", "rescue", "Joseph Gribble"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18190408no260.pdf"
+  },
+  {
+    id: "mun-mercantile-1819-fire-engine",
+    year: 1819,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Custom-House Entry for One Fire Engine",
+    topics: ["1819", "fire engine", "Custom-House", "Collins", "Liverpool", "St. John's"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18190527no267.pdf"
+  },
+  {
+    id: "mun-mercantile-1819-water-street-fire",
+    year: 1819,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Water Street Fire and Fire-Engine Response",
+    topics: ["1819", "Water Street", "fire", "fire engine", "Mr. Bennett", "Colonel Manners", "Ordnance Department", "Mr. Job", "patent engine"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18190729no276.pdf"
+  },
+  {
     id: "mun-mercantile-1820-active-letters",
     year: 1820,
     organization: "Newfoundland Mercantile Journal",
@@ -14105,6 +14185,78 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1819-01-07",
+    category: "operations",
+    title: "Commissariat sought 400 cords of hardwood",
+    body: "A tender requested 400 cords of black, yellow or white birch for the fort fuel yards. The allocation was Fort William, 150 cords; Fort Townshend, 200 cords; and Signal Hill, 50 cords. Delivery was required between May 1 and June 24. Tenders could cover all or part of the work, with a minimum of 20 cords, and had to name two sureties.",
+    sourceId: "mun-mercantile-1819-fort-firewood",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1819-01-11",
+    category: "navigation",
+    title: "Hoyles described private pilot-regulation rules",
+    body: "Newman W. Hoyles described a merchant arrangement that required pilots to provide security for good conduct and pass an examination before competent persons. Some masters declined to use the pilots because the rules were not legally enforceable. Hoyles also argued that 100 pounds spent in the Narrows ten years earlier could have protected lives and property. That amount was his opinion, not a documented expenditure or completed work.",
+    sourceId: "mun-mercantile-1819-pilot-regulation",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1819-01-12",
+    category: "signals",
+    title: "Fort Amherst orders defined a vessel-distress signal",
+    body: "Sergeant Philip Herring stated that his standing orders required a red pendant over a yellow pendant with a gun when a vessel was in danger, with repeated guns for great danger. His account also records a pilot boat assisting the schooner Helen with a warp toward South Head. He did not make the distress signal because he thought the schooner had hauled away from danger.",
+    sourceId: "mun-mercantile-1819-fort-amherst-signal",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1819-01-21",
+    category: "electrical context",
+    title: "Newspaper explained thunder through electric matter",
+    body: "A general scientific article stated that clouds charged with electric matter could unite and produce an explosion called thunder and lightning. The article documents electrical terminology printed for Newfoundland readers, not a Newfoundland electrical installation or local measurement.",
+    sourceId: "mun-mercantile-1819-electric-matter",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1819-03-04",
+    category: "signals",
+    title: "HMS Carnation fired a gun and made distress signals",
+    body: "The newspaper reported that HMS Carnation drifted close to the St. John's wharves during a heavy southeast gale. The ship fired a gun and made distress signals, then was secured through what the report called great exertions. The report does not identify the responders or the securing method.",
+    sourceId: "mun-mercantile-1819-carnation-distress",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1819-04-08",
+    category: "signals",
+    title: "Fort Amherst signal prompted a boat rescue",
+    body: "A boat from Freshwater Bay upset while entering the Narrows in a strong south wind. A signal was made at Fort Amherst. Joseph Gribble immediately sent a boat, which saved the two men clinging to the overturned boat and towed their boat into safety.",
+    sourceId: "mun-mercantile-1819-freshwater-rescue",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1819-05-25",
+    category: "fire response",
+    title: "Custom-House entry listed one arriving fire engine",
+    body: "The Custom-House entry for the brig Collins from Liverpool listed one fire engine among its cargo. The entry does not name the purchaser, owner, operator or installation site, and does not connect the engine to the engines documented during the July fire.",
+    sourceId: "mun-mercantile-1819-fire-engine",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1819-07-19",
+    category: "fire response",
+    title: "Three firefighting arrangements responded to the Water Street fire",
+    body: "The fire destroyed buildings, wharves and stores from Codner and Treacy's premises to Mrs. Elliott's in about two and a half hours. Mr. Bennett's engine protected the west end. Colonel Manners and the troops operated the Ordnance Department engine at the east end. Mr. Job used a small patent engine belonging to his house to wet roofs on the north side. A 60-foot open space left after the November 1817 fire helped stop the eastern spread. The report states that more than 1,100 people were driven from their homes.",
+    sourceId: "mun-mercantile-1819-water-street-fire",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
   {
     date: "1820-01-17",
     category: "operations",

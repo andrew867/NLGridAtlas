@@ -3202,6 +3202,18 @@
       "notes": "The January 20 issue reports a pilot boat sent from St. John's to the disabled Active at Bay Bulls and the vessel's Halifax letters brought overland. A Commissariat tender allocates 400 cords of firewood among Fort William, Fort Townshend and Signal Hill. The February 24 issue separates a house fire behind Fort William from the later Methodist Chapel fire and its immediate alarm and neighbour response."
     },
     {
+      "id": "NPREG-209",
+      "title": "Add the 1819 fort-signal, pilotage, fire-engine and Water Street fire records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1819 electrical, telecommunications, navigation-aid, emergency-signalling and scheduled communication evidence.",
+      "dependencies": ["NPREG-208"],
+      "completion_evidence": ["research/NP_1819_SYSTEM_RECORD.md", "research/derived/np-1819-newspaper-issue-manifest.json", "src/data.js", "tests/np-1819-system.test.js"],
+      "blocker": null,
+      "notes": "The year records Fort Amherst's red-over-yellow pendant and gun distress rule, a separate rescue signal, HMS Carnation distress signals, a merchant pilot-regulation proposal, one unassigned fire-engine import, and three documented firefighting arrangements at the July Water Street fire. The sources do not connect the imported engine to any July engine."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
