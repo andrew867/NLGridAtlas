@@ -3286,6 +3286,18 @@
       "notes": "The year records the Newfoundland Hospital foundation and construction progress, Fire Engine No. 1 accounts, the Bay Bulls road weather shelter, Ordnance and garrison fuel tenders, defined truckage routes, land-return boundaries, Government House repair scope, a proposed fire-resistant Record Office, regional public works, and the annual fortification report. Tenders and the Record Office remain proposed; reported work and operating records remain reported."
     },
     {
+      "id": "NPREG-216",
+      "title": "Add the 1812 fort, wharf, road, fire-response and public-works records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1812 emergency-response, defence-infrastructure, transport, surveying and public-works evidence.",
+      "dependencies": ["NPREG-215"],
+      "completion_evidence": ["research/NP_1812_SYSTEM_RECORD.md", "research/derived/np-1812-newspaper-issue-manifest.json", "src/data.js", "tests/np-1812-system.test.js"],
+      "blocker": null,
+      "notes": "The year records the Government House fire, fort fuel and material tenders, the King's Wharf truckage network, the Windsor Road lottery and tree shelter, two public wharves, land controls, fire-engine accounts, new church pews, out-harbour fortification, Fort William and Fort Townshend repairs, incomplete church works and a proposed debtors' gaol. Tenders, the pew auction and the gaol remain proposed; reported operation and completed works remain reported."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

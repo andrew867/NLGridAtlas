@@ -640,6 +640,176 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-royal-gazette-1812-fort-firewood",
+    year: 1812,
+    organization: "Commissariat Office",
+    title: "Three-Fort Firewood Tender",
+    topics: ["1812", "St. John's", "Signal Hill", "Fort Townshend", "Fort William", "firewood", "fuel yards"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120116.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-ordnance-fencing",
+    year: 1812,
+    organization: "Office of Ordnance",
+    title: "Ordnance Fencing-Material Tender",
+    topics: ["1812", "St. John's", "Ordnance", "spruce posts", "spruce rails", "pickets", "firewood"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120130.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-government-house-fire",
+    year: 1812,
+    organization: "The Royal Gazette",
+    title: "Fort Townshend Government House Fire Report",
+    topics: ["1812", "St. John's", "Fort Townshend", "Government House", "Barracks", "fire companies", "fire response"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120205.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-windsor-road",
+    year: 1812,
+    organization: "St. John's General Quarter Sessions",
+    title: "Windsor Road Lottery and Weather-Shelter Order",
+    topics: ["1812", "St. John's", "Portugal Cove", "Windsor Road", "Twigg's Mill Pond", "lottery", "weather shelter", "trees"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120205.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-garrison-supply",
+    year: 1812,
+    organization: "Commissariat Office",
+    title: "Garrison Coal, Candle and Firewood Tender",
+    topics: ["1812", "St. John's", "King's Wharf", "Signal Hill", "Fort Townshend", "Fort William", "coal", "candles", "firewood"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120416.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-truckage",
+    year: 1812,
+    organization: "Commissariat Office",
+    title: "King's Wharf and Fort Truckage Tender",
+    topics: ["1812", "St. John's", "King's Wharf", "Signal Hill", "Fort Townshend", "Fort William", "truckage", "coal", "firewood", "provisions"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120604.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-ordnance-materials",
+    year: 1812,
+    organization: "Office of Ordnance",
+    title: "Ordnance Coal, Firewood, Spar and Sand Tender",
+    topics: ["1812", "St. John's", "Ordnance", "coal", "firewood", "spars", "sand", "Gumheads"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120604.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-governors-wharf",
+    year: 1812,
+    organization: "Governor of Newfoundland",
+    title: "Governor's Wharf Operating Rules",
+    topics: ["1812", "St. John's", "Governor's Wharf", "wharfinger", "harbour", "public wharf"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120730.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-church-pews",
+    year: 1812,
+    organization: "St. John's church wardens",
+    title: "New Church Pews Auction Notice",
+    topics: ["1812", "St. John's", "church", "pews", "Court House", "auction"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120820.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-late-ordnance",
+    year: 1812,
+    organization: "Commissariat Office and Office of Ordnance",
+    title: "Garrison Candle and Ordnance-Material Tenders",
+    topics: ["1812", "St. John's", "garrison", "candles", "ton timber", "firewood", "seal oil", "rinds"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120827.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-land-fire-engines",
+    year: 1812,
+    organization: "Governor of Newfoundland and St. John's Fire Companies",
+    title: "Land-Enclosure Proclamation and Fire-Engine Accounts",
+    topics: ["1812", "St. John's", "land enclosure", "building", "fire engines", "fire companies"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18121015.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-fishing-wharf",
+    year: 1812,
+    organization: "Governor of Newfoundland",
+    title: "Western Harbour Fishing Wharf",
+    topics: ["1812", "St. John's", "western harbour", "survey", "fishing ships", "public wharf"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18121022.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1812-public-works-materials",
+    year: 1812,
+    organization: "Commissariat Office",
+    title: "Public-Works Material Tender",
+    topics: ["1812", "St. John's", "public works", "boards", "bricks", "clapboards", "laths", "Roche lime", "plank", "building stone", "timber", "tar"],
+    pages: "physical PDF p. 2",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18121022.pdf"
+  },
+  {
+    id: "mun-colonial-1812-out-harbour-defence",
+    year: 1812,
+    organization: "Governor of Newfoundland",
+    title: "Out-Harbour Defence Programme",
+    topics: ["1812", "Newfoundland", "out harbours", "gun platforms", "breastworks", "ordnance", "ammunition", "small arms"],
+    pages: "physical PDF pp. 353 to 355",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1812-fort-repairs",
+    year: 1812,
+    organization: "Governor of Newfoundland",
+    title: "Fort William and Fort Townshend Repairs",
+    topics: ["1812", "St. John's", "Fort William", "Fort Townshend", "platforms", "harbour entrance", "repairs"],
+    pages: "physical PDF pp. 356 to 358",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1812-public-works",
+    year: 1812,
+    organization: "Governor of Newfoundland",
+    title: "Church, Public-Wharf and Ship-Room Accounts",
+    topics: ["1812", "Fortune Bay", "Morton's Harbour", "Trinity", "St. John's", "church", "public wharves", "ship rooms", "survey"],
+    pages: "physical PDF pp. 369 to 373",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1812-debtors-gaol",
+    year: 1812,
+    organization: "Governor of Newfoundland",
+    title: "Debtors' Gaol and Sheriff's House Proposal",
+    topics: ["1812", "St. John's", "debtors' gaol", "High Sheriff", "dwelling", "plan", "estimate"],
+    pages: "physical PDF pp. 375 to 376",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
     id: "mun-royal-gazette-1813-ordnance-barrack",
     year: 1813,
     organization: "Ordnance Barrack Office",
@@ -14775,6 +14945,168 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1812-01-16",
+    category: "defence infrastructure",
+    title: "Commissariat sought firewood for three forts",
+    body: "The tender sought 300 cords of firewood in equal proportions for the fuel yards at Signal Hill, Fort Townshend and Fort William. It listed deliveries on February 20, April 20, June 20 and August 20.",
+    sourceId: "mun-royal-gazette-1812-fort-firewood",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1812-01-23",
+    category: "defence infrastructure",
+    title: "Ordnance sought posts, rails and pickets",
+    body: "The notice sought 54 spruce posts, 60 spruce rails, 34 pieces of large spruce firewood and 1,500 spruce pickets. The Office of Ordnance invited proposals for delivery at the Ordnance Lime Kiln on the Barrens.",
+    sourceId: "mun-royal-gazette-1812-ordnance-fencing",
+    pages: "physical PDF p. 1",
+    status: "proposed"
+  },
+  {
+    date: "1812-01-31",
+    category: "transport",
+    title: "Portugal Cove road retained a 40-yard tree shelter",
+    body: "The General Quarter Sessions required trees within 40 yards of each side of the road from Twigg's Mill Pond to Portugal Cove to remain as a screen from the weather. The same issue advertised a 600-ticket lottery for improving the road from St. John's to Portugal Cove.",
+    sourceId: "mun-royal-gazette-1812-windsor-road",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1812-02-06",
+    category: "fire response",
+    title: "Fire companies helped contain the Government House fire",
+    body: "The Gazette reported a fire on Monday evening last in a servant's apartment at Government House, Fort Townshend. Troops, inhabitants and the fire companies helped preserve the roof of Government House and the Barracks and prevented the fire from spreading. The report called the damage inconsiderable.",
+    sourceId: "mun-royal-gazette-1812-government-house-fire",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1812-04-16",
+    category: "defence infrastructure",
+    title: "Garrison tender combined coal, candles and firewood",
+    body: "The tender sought 3,000 hogsheads of coal for King's Wharf, 5,400 pounds of mould and dipped candles for Fort William, and 550 cords of firewood distributed among Signal Hill, Fort Townshend and Fort William.",
+    sourceId: "mun-royal-gazette-1812-garrison-supply",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1812-05-14",
+    category: "defence infrastructure",
+    title: "Ordnance sought coal, firewood, spars and sand",
+    body: "The notice sought 2,000 hogsheads of coal, 120 cords of firewood, two 40-foot spars, 100 tons of sand and 100 items printed as Gumheads.",
+    sourceId: "mun-royal-gazette-1812-ordnance-materials",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1812-06-04",
+    category: "transport",
+    title: "Truckage tender defined the King's Wharf and fort routes",
+    body: "The notice requested separate prices for coal, firewood and provisions between King's Wharf, Signal Hill, Fort William and Fort Townshend. It also listed movements between Fort William and Signal Hill. The proposed contract ran for 12 months from July 1.",
+    sourceId: "mun-royal-gazette-1812-truckage",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1812-07-30",
+    category: "harbour infrastructure",
+    title: "Governor's Wharf opened under public operating rules",
+    body: "The recently built wharf was available for general town use. The rules established application order, a wharfinger, removal of goods and a daily boat charge. They prohibited wheeled carriages and heavy materials on the wooden part, vessels lying alongside, unattended boats and exclusive use beyond two successive days.",
+    sourceId: "mun-royal-gazette-1812-governors-wharf",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1812-08-12",
+    category: "public works",
+    title: "Church wardens announced the sale of new pews",
+    body: "The notice announced that new pews in the Church would be sold by auction at the Court House on August 26.",
+    sourceId: "mun-royal-gazette-1812-church-pews",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1812-08-27",
+    category: "defence infrastructure",
+    title: "Late-season tenders sought candles, timber, fuel and oil",
+    body: "The Commissariat sought 2,600 pounds of mould candles for the garrison. Ordnance sought 1,000 cubic feet of ton timber, 50 cords of straight firewood with spruce preferred, 30 gallons of seal oil and 1,000 rinds.",
+    sourceId: "mun-royal-gazette-1812-late-ordnance",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1812-09-24",
+    category: "fire response",
+    title: "Fire companies called in engine accounts",
+    body: "The notice asked persons with claims against the fire engines to submit their accounts to the captains of the Fire Companies.",
+    sourceId: "mun-royal-gazette-1812-land-fire-engines",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1812-10-02",
+    category: "surveying",
+    title: "Proclamation prohibited unauthorized enclosure and building",
+    body: "The proclamation states that land had repeatedly been enclosed without grant or other legal authority. It issued strict orders against enclosing land or erecting buildings without legal authorization.",
+    sourceId: "mun-royal-gazette-1812-land-fire-engines",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1812-10-12",
+    category: "harbour infrastructure",
+    title: "Western harbour wharf was assigned to fishing ships",
+    body: "A survey identified land at the western extremity of St. John's harbour for drying, curing and husbanding fish. A government-built wharf there was assigned to fishing ships fitted from Great Britain. Until those ships returned, the wharf remained free for general use under the government-wharf rules.",
+    sourceId: "mun-royal-gazette-1812-fishing-wharf",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1812-10-15",
+    category: "public works",
+    title: "Commissariat sought a large public-works material list",
+    body: "The tender included 55,000 feet of boards, 22,000 bricks, 8,200 feet of clapboards, 240 bundles of laths, 800 bushels of Roche lime, 8,500 feet of plank, 96 tons of building stone, 2,820 cubic feet of timber and four barrels of tar.",
+    sourceId: "mun-royal-gazette-1812-public-works-materials",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1812-11-01",
+    category: "defence infrastructure",
+    title: "Principal out harbours received temporary defences",
+    body: "The annual report states that principal out harbours were fortified after war with the United States began. Ordnance, ammunition and small arms went from St. John's. Inhabitants laid gun platforms and raised breastworks at their own labour and expense.",
+    sourceId: "mun-colonial-1812-out-harbour-defence",
+    pages: "physical PDF pp. 353 to 355",
+    status: "reported"
+  },
+  {
+    date: "1812-11-01",
+    category: "defence infrastructure",
+    title: "Fort William and Fort Townshend platforms were renewed",
+    body: "The report states that the two forts had recently undergone repairs. Their sea faces commanded the harbour entrance, their platforms were renewed and stored guns could be mounted. The approved estimate was 360 pounds, 3 shillings and 7 pence.",
+    sourceId: "mun-colonial-1812-fort-repairs",
+    pages: "physical PDF pp. 356 to 358",
+    status: "reported"
+  },
+  {
+    date: "1812-11-01",
+    category: "public works",
+    title: "Annual accounts recorded two public wharves and incomplete churches",
+    body: "The report records two large public wharves built for general accommodation. It records earlier ship-room plans and states that churches at Fortune Bay and Morton's Harbour and repairs at Trinity were not complete. Only two-thirds of the wharf-building expense had been paid.",
+    sourceId: "mun-colonial-1812-public-works",
+    pages: "physical PDF pp. 369 to 373",
+    status: "reported"
+  },
+  {
+    date: "1812-11-01",
+    category: "public works",
+    title: "Debtors' gaol and Sheriff's house were estimated at 1,500 pounds",
+    body: "A plan and estimate had been made for a St. John's debtors' gaol and High Sheriff's dwelling. The report attributed the 1,500-pound estimate to the high price of lumber and described the existing gaol as unable to provide a proper place for more than one or two military prisoners.",
+    sourceId: "mun-colonial-1812-debtors-gaol",
+    pages: "physical PDF pp. 375 to 376",
+    status: "proposed"
+  },
   {
     date: "1813-01-28",
     category: "defence infrastructure",
