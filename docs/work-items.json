@@ -3322,6 +3322,18 @@
       "notes": "The year records road and bridge repairs, the chapel enlargement, proposed Powder Magazine rebuild, Cape Breton freestone, the Narrows signal rule, structured property returns, fort and fuel-yard firewood, proposed Ordnance Wharf work, the incomplete land survey and ship-room boundary perambulations, hospital, church and gaol proposals, the operating Fire Society, and Government House and Ships' Rooms plans. The Gazette manifest preserves the collection's explicit June missing-page filename and the shorter October and December files."
     },
     {
+      "id": "NPREG-219",
+      "title": "Add the 1809 harbour, communications, Ordnance and public-works records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1809 communications, navigation, defence-infrastructure, surveying, public-finance and public-works evidence.",
+      "dependencies": ["NPREG-218"],
+      "completion_evidence": ["research/NP_1809_SYSTEM_RECORD.md", "research/derived/np-1809-newspaper-issue-manifest.json", "src/data.js", "tests/np-1809-system.test.js"],
+      "blocker": null,
+      "notes": "The year records the operating King's Wharf fish market, Ordnance board, plank, shingle and freestone tenders, the proposed Crow's Nest Powder Magazine, Fort William pass and night-signal rules, vessel-letter payments and delivery charges, the public-purpose lottery scheme, completed Harbour Grace Court House, Bay Bulls jail purchase, Ships' Rooms register and boundary perambulation, the proposed King's Surveyor salary, limited Signal Hill progress and ruinous Placentia fort."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

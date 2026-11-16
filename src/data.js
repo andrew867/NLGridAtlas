@@ -640,6 +640,106 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-royal-gazette-1809-fish-market",
+    year: 1809,
+    organization: "Robert Brine Sr. and Robert Parsons & Co.",
+    title: "King's Wharf Fresh-Fish Market",
+    topics: ["1809", "St. John's", "King's Wharf", "fish market", "boats", "food supply"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18090601.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1809-ordnance-materials",
+    year: 1809,
+    organization: "Office of Ordnance",
+    title: "Ordnance Board, Plank and Shingle Tender",
+    topics: ["1809", "St. John's", "Ordnance Wharf", "boards", "plank", "shingles", "tender"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18090720.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1809-powder-magazine",
+    year: 1809,
+    organization: "Powder Magazine proprietors",
+    title: "Crow's Nest Powder Magazine Tender",
+    topics: ["1809", "St. John's", "Crow's Nest", "Powder Magazine", "plan", "tender"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18090720.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1809-freestone",
+    year: 1809,
+    organization: "Office of Ordnance",
+    title: "Three-Thousand-Ton Freestone Tender",
+    topics: ["1809", "St. John's", "Ordnance Wharf", "freestone", "Portland Island stone", "tender"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18090928.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1809-harbour-signals",
+    year: 1809,
+    organization: "St. John's garrison",
+    title: "Fort William Pass and Night-Signal Order",
+    topics: ["1809", "St. John's", "Fort William", "Amherst Tower", "harbour", "night signal", "pass"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18090928.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1809-lottery",
+    year: 1809,
+    organization: "St. John's Grand Jury lottery managers",
+    title: "Public-Purpose Lottery Scheme and Drawing Notice",
+    topics: ["1809", "St. John's", "public lottery", "public purposes", "Merchants' Hall", "funding"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18091130.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1809-post-office",
+    year: 1809,
+    organization: "St. John's Post Office",
+    title: "Vessel Letter Payment and Delivery Charges",
+    topics: ["1809", "St. John's", "Post Office", "vessel mail", "letter delivery", "Mr. Solomon"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18091214.pdf"
+  },
+  {
+    id: "mun-colonial-1809-public-works",
+    year: 1809,
+    organization: "Governor of Newfoundland",
+    title: "Harbour Grace Court House, Bay Bulls Jail and Ships' Rooms Register",
+    topics: ["1809", "Harbour Grace", "Bay Bulls", "Court House", "jail", "Fishing Ships' Rooms", "register"],
+    pages: "physical PDF p. 286",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1809-ships-rooms-survey",
+    year: 1809,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Ships' Rooms Perambulation and Survey Proposal",
+    topics: ["1809", "St. John's", "Fishing Ships' Rooms", "perambulation", "encroachment", "Lionel Chancey", "King's Surveyor"],
+    pages: "physical PDF pp. 288 to 290",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1809-fortifications",
+    year: 1809,
+    organization: "Governor of Newfoundland",
+    title: "Signal Hill Work and Placentia Fort Condition",
+    topics: ["1809", "Signal Hill", "Placentia", "fortification", "Captain Durnford", "Ordnance"],
+    pages: "physical PDF pp. 290 and 297",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
     id: "mun-royal-gazette-1810-roads-bridges",
     year: 1810,
     organization: "St. John's roads and bridges committee",
@@ -15205,6 +15305,114 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1809-05-18",
+    category: "navigation",
+    title: "Fort William enforced harbour passes and night signals",
+    body: "A General Order required merchant vessels to obtain their passes from the Collector of Customs and add a night signal to the existing day signals. Guards at Fort William and Amherst Tower were ordered to prevent contrary departures.",
+    sourceId: "mun-royal-gazette-1809-harbour-signals",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1809-06-01",
+    category: "food infrastructure",
+    title: "King's Wharf fish market supplied fresh fish daily",
+    body: "Robert Brine Sr. and Robert Parsons & Co. reported an operating market near the King's Wharf. The company had obtained a room and fitted out three boats to supply fresh fish daily during the season.",
+    sourceId: "mun-royal-gazette-1809-fish-market",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1809-06-29",
+    category: "defence infrastructure",
+    title: "Ordnance sought boards, plank and 100,000 shingles",
+    body: "The tender sought 15,000 feet of pine boards with some plank, 12,000 feet of two-inch spruce plank, 4,000 feet of one-and-one-half-inch spruce plank, 60,000 feet of spruce boards and 100,000 prime shingles for delivery on the Ordnance Wharf.",
+    sourceId: "mun-royal-gazette-1809-ordnance-materials",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1809-07-13",
+    category: "safety infrastructure",
+    title: "Crow's Nest Powder Magazine tender used a prepared plan",
+    body: "Proposals were invited to build a Powder Magazine at Crow's Nest. A plan and description were available at N. W. Hoyles's, but the notice does not establish an award or completed building.",
+    sourceId: "mun-royal-gazette-1809-powder-magazine",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1809-08-17",
+    category: "defence infrastructure",
+    title: "Ordnance sought 3,000 tons of freestone",
+    body: "The tender specified 3,000 tons of sound freestone for His Majesty's works, with preferred block dimensions and Portland Island stone as the quality comparison. Delivery could be quoted at the Ordnance Wharf or aboard vessels at the quarry.",
+    sourceId: "mun-royal-gazette-1809-freestone",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1809-10-04",
+    category: "surveying",
+    title: "Officials perambulated the St. John's Ships' Rooms",
+    body: "The governor reported walking the town with judicial and local officers to preserve the remembered boundaries of the Ancient Fishing Ships' Rooms shown on the town plan. He found many encroachments but did not consider himself authorized to remove apparently sanctioned buildings.",
+    sourceId: "mun-colonial-1809-ships-rooms-survey",
+    pages: "physical PDF pp. 288 to 289",
+    status: "reported"
+  },
+  {
+    date: "1809-10-24",
+    category: "communications",
+    title: "Post Office paid vessel carriers and charged for delivery",
+    body: "Mr. Solomon could pay one penny per letter to a vessel master or other person who brought letters to Newfoundland and delivered them to the St. John's Post Office, then charge two pence for each letter delivered from the office.",
+    sourceId: "mun-royal-gazette-1809-post-office",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1809-11-02",
+    category: "public finance",
+    title: "Public-purpose lottery scheduled its drawing",
+    body: "The Grand Jury lottery scheme printed 600 five-dollar tickets, 59 prizes totalling 1,800 dollars and 541 blanks. A notice scheduled the drawing to begin at Merchants' Hall on December 1; it does not state the amount ultimately raised or funded work.",
+    sourceId: "mun-royal-gazette-1809-lottery",
+    pages: "physical PDF p. 1",
+    status: "proposed"
+  },
+  {
+    date: "1809-11-25",
+    category: "public works",
+    title: "Harbour Grace Court House was reported complete",
+    body: "Governor Holloway reported the Harbour Grace Court House quite completed and £500 drawn for it. He also recorded £100 for William Carter's Ancient Fishing Ships' Rooms register and £80 toward a house adapted as a Bay Bulls jail.",
+    sourceId: "mun-colonial-1809-public-works",
+    pages: "physical PDF p. 286",
+    status: "reported"
+  },
+  {
+    date: "1809-11-25",
+    category: "surveying",
+    title: "Governor proposed a salaried King's Surveyor",
+    body: "The governor proposed an annual £50 salary for Lionel Chancey as King's Surveyor to establish the acreage of enlarged enclosures. The report does not establish that the appointment or survey was completed.",
+    sourceId: "mun-colonial-1809-ships-rooms-survey",
+    pages: "physical PDF p. 290",
+    status: "proposed"
+  },
+  {
+    date: "1809-11-25",
+    category: "defence infrastructure",
+    title: "Signal Hill works had made little progress",
+    body: "Captain Durnford prepared a return of the St. John's fortifications. The governor reported little progress at Signal Hill because the regiment could not supply enough labour to assist the artificers, while Placentia fort remained unchanged without dismantling instructions.",
+    sourceId: "mun-colonial-1809-fortifications",
+    pages: "physical PDF p. 290",
+    status: "reported"
+  },
+  {
+    date: "1809-11-26",
+    category: "defence infrastructure",
+    title: "Placentia fortification remained ruinous",
+    body: "The governor transmitted a return of brass and iron ordnance mounted at the forts in St. John's and Placentia, and stated that the Placentia fortification remained ruinous while awaiting dismantling orders.",
+    sourceId: "mun-colonial-1809-fortifications",
+    pages: "physical PDF p. 297",
+    status: "reported"
+  },
   {
     date: "1810-05-03",
     category: "transport",
