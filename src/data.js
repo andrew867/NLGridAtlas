@@ -640,6 +640,106 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-colonial-1816-st-johns-fire",
+    year: 1816,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Fire and Relief Reports",
+    topics: ["1816", "St. John's", "fire", "Water Street", "Duckworth Street", "Customs House", "relief", "migration"],
+    pages: "physical PDF pp. 11 to 15 and 37 to 39",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V03.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1816-harbour-grace-fire",
+    year: 1816,
+    organization: "The Royal Gazette",
+    title: "Harbour Grace Church Fire and Reward",
+    topics: ["1816", "Harbour Grace", "church", "fire", "reward", "cause"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160903.pdf"
+  },
+  {
+    id: "mun-colonial-1816-harbour-grace-fire",
+    year: 1816,
+    organization: "Governor of Newfoundland",
+    title: "Harbour Grace Church Fire and Rebuilding Report",
+    topics: ["1816", "Harbour Grace", "church", "fire", "cause", "rebuilding", "subscription"],
+    pages: "physical PDF pp. 41 to 42",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V03.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1816-pickmore-arrival",
+    year: 1816,
+    organization: "The Royal Gazette",
+    title: "Pickmore Arrival, Ship Salute and Fort Townshend Reply",
+    topics: ["1816", "St. John's", "HMS Hydra", "Government Wharf", "Fort Townshend", "salute", "Francis Pickmore"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160910.pdf"
+  },
+  {
+    id: "mun-mercantile-1816-accession-salutes",
+    year: 1816,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Fort Townshend and Warship Accession Salutes",
+    topics: ["1816", "St. John's", "Fort Townshend", "ships of war", "salute", "accession"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18160925no112.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1816-outer-buoy",
+    year: 1816,
+    organization: "The Royal Gazette",
+    title: "Outer Buoy and Success Harbour Casualty Report",
+    topics: ["1816", "St. John's", "outer buoy", "harbour", "schooner Success", "navigation aid"],
+    pages: "physical PDF p. 3, page printed October 8, 1816",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161015.pdf"
+  },
+  {
+    id: "mun-mercantile-1816-coronation-salutes",
+    year: 1816,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Fort Townshend and Warship Coronation Salutes",
+    topics: ["1816", "St. John's", "Fort Townshend", "ships of war", "salute", "coronation"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161026no121.pdf"
+  },
+  {
+    id: "mun-mercantile-1816-fort-fuel",
+    year: 1816,
+    organization: "Assistant Commissary General's Office",
+    title: "Fort and Signal Hill Firewood Tender",
+    topics: ["1816", "1817", "Fort Townshend", "Fort William", "Signal Hill", "firewood", "Commissariat"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161109no125.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1816-pickmore-departure",
+    year: 1816,
+    organization: "The Royal Gazette",
+    title: "Pickmore Departure Signal and HMS Tiber Reply",
+    topics: ["1816", "St. John's", "Fort Townshend", "HMS Tiber", "signal", "salute", "Francis Pickmore"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161203.pdf"
+  },
+  {
+    id: "mun-mercantile-1816-fire-alarms",
+    year: 1816,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Carson and Bayly-Area Fire Alarms",
+    topics: ["1816", "St. John's", "Doctor Carson", "Bayly's Auction Mart", "fire", "alarm", "neighbours"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161211no134.pdf"
+  },
+  {
     id: "mun-mercantile-1817-brig-signal",
     year: 1817,
     organization: "Newfoundland Mercantile Journal",
@@ -14355,6 +14455,105 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1816-02-12",
+    category: "fire response",
+    title: "Fire destroyed about 130 St. John's houses",
+    body: "Thomas Coote reported that a fire began at about 8:00 p.m. in the upper part of Walsh's house near King's Beach. It spread through Gamber Street, Holloway Street, much of Duckworth Street and the north side of Water Street. He reported about 130 houses destroyed, about 120 families displaced and roughly 1,000 people dependent on relief. He estimated the loss at more than 100,000 pounds. The Customs House caught fire but was preserved.",
+    sourceId: "mun-colonial-1816-st-johns-fire",
+    pages: "physical PDF pp. 11 to 15",
+    status: "reported"
+  },
+  {
+    date: "1816-08-28",
+    category: "fire response",
+    title: "Harbour Grace church burned",
+    body: "The Royal Gazette reported that the Harbour Grace church burned at about midnight. It recorded strong suspicions of deliberate ignition and a 100-guinea magistrates' reward. Governor Francis Pickmore later stated that there was every reason to believe the fire was accidental. The two cause statements remain separate and attributed to their issuers.",
+    sourceId: "mun-royal-gazette-1816-harbour-grace-fire",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1816-09-10",
+    category: "signals",
+    title: "Ship and fort salutes marked Pickmore's arrival",
+    body: "The Royal Gazette reports that HMS Hydra arrived with Governor Francis Pickmore's flag and fired a 17-gun salute. Pickmore landed at Government Wharf, where Fort Townshend fired a salute. The road from the wharf to the fort was lined with military personnel.",
+    sourceId: "mun-royal-gazette-1816-pickmore-arrival",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1816-09-25",
+    category: "signals",
+    title: "Fort Townshend and warships fired accession salutes",
+    body: "The September 25 Mercantile Journal reports that Fort Townshend and the ships of war in port fired salutes for the anniversary of the sovereign's accession.",
+    sourceId: "mun-mercantile-1816-accession-salutes",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1816-10-08",
+    category: "navigation aid",
+    title: "Outer buoy appeared in a St. John's harbour casualty report",
+    body: "A Royal Gazette page printed October 8 reports that the schooner Success passed the outer buoy before a wind shift drove it onto the south point of the harbour after its anchor failed to hold. The MUN archive filename is dated October 15. The printed-page date and archive filename are retained separately.",
+    sourceId: "mun-royal-gazette-1816-outer-buoy",
+    pages: "physical PDF p. 3, page printed October 8, 1816",
+    status: "reported"
+  },
+  {
+    date: "1816-10-26",
+    category: "signals",
+    title: "Fort Townshend and warships fired coronation salutes",
+    body: "The October 26 Mercantile Journal reports that Fort Townshend and the ships of war in port fired salutes for the anniversary of the sovereign's coronation.",
+    sourceId: "mun-mercantile-1816-coronation-salutes",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1816-11-02",
+    category: "defence infrastructure",
+    title: "Commissariat allocated 250 cords of firewood",
+    body: "The tender allocated 100 cords to Fort Townshend, 100 cords to Fort William and 50 cords to Signal Hill. Delivery to the Commissariat fuel yards was required between June 1 and July 15, 1817. Offers could cover all or part of the supply, but not less than 50 cords.",
+    sourceId: "mun-mercantile-1816-fort-fuel",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1816-12-03",
+    category: "signals",
+    title: "Fort and ship salutes marked Pickmore's departure",
+    body: "The Royal Gazette reports that a salute from Fort Townshend announced Governor Francis Pickmore's departure from the wharf. HMS Tiber returned the salute when he reached the vessel.",
+    sourceId: "mun-royal-gazette-1816-pickmore-departure",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1816-12-11",
+    category: "fire response",
+    title: "Family and street alarms stopped two house fires",
+    body: "The Mercantile Journal reports that Doctor Carson's family discovered a house fire at about 5:00 a.m., gave the alarm and obtained prompt assistance before material damage occurred. It also reports that neighbours saw a separate fire near Bayly's Auction Mart, entered the building, extinguished burning shavings and rescued two sleeping men.",
+    sourceId: "mun-mercantile-1816-fire-alarms",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1816-12-11",
+    category: "public works",
+    title: "Governor reported St. John's fire relief and migration",
+    body: "Governor Francis Pickmore reported that part of a 10,000-pound St. John's fire-relief grant had been distributed after individual claims were examined. He gave 300 pounds to the Society for the Poor and hired two vessels to carry about 400 people to Ireland.",
+    sourceId: "mun-colonial-1816-st-johns-fire",
+    pages: "physical PDF pp. 37 to 39",
+    status: "reported"
+  },
+  {
+    date: "1816-12-11",
+    category: "public works",
+    title: "Governor reported Harbour Grace church rebuilding",
+    body: "Governor Francis Pickmore reported that Harbour Grace inhabitants had begun another church and subscribed 1,200 pounds after the August fire. He stated that repairs to the destroyed church had just been completed at an expense of 1,500 pounds and that there was every reason to believe the fire was accidental.",
+    sourceId: "mun-colonial-1816-harbour-grace-fire",
+    pages: "physical PDF pp. 41 to 42",
+    status: "reported"
+  },
   {
     date: "1817-01-03",
     category: "signals",

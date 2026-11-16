@@ -3238,6 +3238,18 @@
       "notes": "The year records a vessel signal during an ice event, the Light Establishment operating account, coordinated fort and ship salutes, the April fatal fire and alarm failure, two November fires, the Post Office relocation, a fortification condition report and proposed rebuilding work. The official and newspaper fire counts remain separate."
     },
     {
+      "id": "NPREG-212",
+      "title": "Add the 1816 fire, buoy, fort-salute and fuel records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1816 telecommunications, navigation-aid, emergency-signalling, defence-infrastructure and public-works evidence.",
+      "dependencies": ["NPREG-211"],
+      "completion_evidence": ["research/NP_1816_SYSTEM_RECORD.md", "research/derived/np-1816-newspaper-issue-manifest.json", "src/data.js", "tests/np-1816-system.test.js"],
+      "blocker": null,
+      "notes": "The year records the February St. John's fire and relief, the Harbour Grace church-fire cause conflict, Pickmore's arrival and departure salutes, accession and coronation salutes, the outer buoy, the 250-cord fort-fuel tender and two local fire alarms. The reproduced dispatch volume contains only a forwarding letter for the 1816 Commanding Engineer report, so no fort-condition detail is assigned to that missing attachment."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

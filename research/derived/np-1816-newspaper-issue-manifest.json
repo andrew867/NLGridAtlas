@@ -1,0 +1,474 @@
+{
+  "year": 1816,
+  "retrieved": "2026-11-16",
+  "issue_count": 56,
+  "physical_page_count": 222,
+  "collections": [
+    {
+      "name": "Newfoundland Mercantile Journal",
+      "slug": "nl_mercantile",
+      "collection_url": "https://dai.mun.ca/digital/nl_mercantile",
+      "issue_count": 31,
+      "physical_page_count": 124,
+      "items": [
+        {
+          "date": "18160911",
+          "filename": "NewfoundlandMercantileJournal18160911no108.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18160911no108.pdf",
+          "bytes": 8177005,
+          "physical_page_count": 4,
+          "sha256": "db613f274ea77516927e732ced098eae9e171a62858118a247d371012fbde13d"
+        },
+        {
+          "date": "18160914",
+          "filename": "NewfoundlandMercantileJournal18160914no109.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18160914no109.pdf",
+          "bytes": 8898246,
+          "physical_page_count": 4,
+          "sha256": "f0bb6786001c99ad484572944baf0a403114c124ad3561dcafc2314938b6e7c5"
+        },
+        {
+          "date": "18160918",
+          "filename": "NewfoundlandMercantileJournal18160918no110.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18160918no110.pdf",
+          "bytes": 8076004,
+          "physical_page_count": 4,
+          "sha256": "689f78199502c0c800995d456971db478a0b78a7e58ce0ca2cb9b5ca33807719"
+        },
+        {
+          "date": "18160921",
+          "filename": "NewfoundlandMercantileJournal18160921no111.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18160921no111.pdf",
+          "bytes": 8432456,
+          "physical_page_count": 4,
+          "sha256": "2a63b0dca315a0ba6c1b66c9e6d7f67e6d56df9956b26f909da601dc457f8e65"
+        },
+        {
+          "date": "18160925",
+          "filename": "NewfoundlandMercantileJournal18160925no112.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18160925no112.pdf",
+          "bytes": 7915233,
+          "physical_page_count": 4,
+          "sha256": "d859277b3143bcabda8606d169c2ded77899afadf5a387e6060fca96448d33ec"
+        },
+        {
+          "date": "18160928",
+          "filename": "NewfoundlandMercantileJournal18160928no113.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18160928no113.pdf",
+          "bytes": 8375787,
+          "physical_page_count": 4,
+          "sha256": "d75593b2981b9cfcf3944bdebb27a81181634c9b32900c202c7ea4c1527fccc6"
+        },
+        {
+          "date": "18161002",
+          "filename": "NewfoundlandMercantileJournal18161002no114.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161002no114.pdf",
+          "bytes": 8173064,
+          "physical_page_count": 4,
+          "sha256": "42032f62c60666946a59c98d3a7a2fa15d7781c20255d2238070c768000fa033"
+        },
+        {
+          "date": "18161005",
+          "filename": "NewfoundlandMercantileJournal18161005no115.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161005no115.pdf",
+          "bytes": 8545363,
+          "physical_page_count": 4,
+          "sha256": "94d7487363c4c918354a36fd60ba54f92fee2607be5e77fc33bb704aeccafa6f"
+        },
+        {
+          "date": "18161012",
+          "filename": "NewfoundlandMercantileJournal18161012no117.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161012no117.pdf",
+          "bytes": 8584965,
+          "physical_page_count": 4,
+          "sha256": "2bbe18cb39215e0191a78fd2602a150f4f544b60c3f3c68e4345f31d55b2622c"
+        },
+        {
+          "date": "18161016",
+          "filename": "NewfoundlandMercantileJournal18161016no118.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161016no118.pdf",
+          "bytes": 8237254,
+          "physical_page_count": 4,
+          "sha256": "e16d4d0e2320eb6382fff88c798ae72e503e4b41338fb82075f2582a97fd60ab"
+        },
+        {
+          "date": "18161019",
+          "filename": "NewfoundlandMercantileJournal18161019no119.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161019no119.pdf",
+          "bytes": 8813096,
+          "physical_page_count": 4,
+          "sha256": "64b9e950e35b7e3fb5f56265251fd6e32a28188fbcbdf78d4e14bf85bf106ea4"
+        },
+        {
+          "date": "18161023",
+          "filename": "NewfoundlandMercantileJournal18161023no120.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161023no120.pdf",
+          "bytes": 8830185,
+          "physical_page_count": 4,
+          "sha256": "fca794995dfa2d8b9a932f8227d1dbc679dcd799e42df69cd64f9d8b4f069bb9"
+        },
+        {
+          "date": "18161026",
+          "filename": "NewfoundlandMercantileJournal18161026no121.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161026no121.pdf",
+          "bytes": 8270267,
+          "physical_page_count": 4,
+          "sha256": "e660460e61d7db3c6656d9437b4585cde1ecce0fb6b6306c80dd49a222809ebd"
+        },
+        {
+          "date": "18161030",
+          "filename": "NewfoundlandMercantileJournal18161030no122.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161030no122.pdf",
+          "bytes": 8438184,
+          "physical_page_count": 4,
+          "sha256": "628d95529b21bbc6a7983cf66f48ebdd5e012e18efdf8d0cda481754ded589ef"
+        },
+        {
+          "date": "18161102",
+          "filename": "NewfoundlandMercantileJournal18161102no123.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161102no123.pdf",
+          "bytes": 9243929,
+          "physical_page_count": 4,
+          "sha256": "4c51d341e67c4ea05ca26e9f55df5a202991b026fcefacc7fdd3f02d485bfada"
+        },
+        {
+          "date": "18161106",
+          "filename": "NewfoundlandMercantileJournal18161106no124.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161106no124.pdf",
+          "bytes": 8675031,
+          "physical_page_count": 4,
+          "sha256": "41234c8d8cbad564e317b6b1d3dae88b9f1f6de3ca50f6bd561251eaa22b6673"
+        },
+        {
+          "date": "18161109",
+          "filename": "NewfoundlandMercantileJournal18161109no125.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161109no125.pdf",
+          "bytes": 8556397,
+          "physical_page_count": 4,
+          "sha256": "44f009b48ef22c3cdce22f6d44fdc3f089fca4801ad72cc9732c8c04ee868b3d"
+        },
+        {
+          "date": "18161113",
+          "filename": "NewfoundlandMercantileJournal18161113no126.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161113no126.pdf",
+          "bytes": 8559923,
+          "physical_page_count": 4,
+          "sha256": "5bc59811a2dff4e12343098f0f0703a3fe42056ffcf1a41aa4cd637009f15a1a"
+        },
+        {
+          "date": "18161116",
+          "filename": "NewfoundlandMercantileJournal18161116no127.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161116no127.pdf",
+          "bytes": 8181044,
+          "physical_page_count": 4,
+          "sha256": "4c86ff3ecb565a7bee7c21c4f6a4ba3d529d0f9febfb679e1571adad53c77ca6"
+        },
+        {
+          "date": "18161120",
+          "filename": "NewfoundlandMercantileJournal18161120no128.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161120no128.pdf",
+          "bytes": 8545390,
+          "physical_page_count": 4,
+          "sha256": "0cef3d3977975e16815ced5eff5bc701749b17e6373cc72bc7f63549ad446b66"
+        },
+        {
+          "date": "18161123",
+          "filename": "NewfoundlandMercantileJournal18161123no129.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161123no129.pdf",
+          "bytes": 8225000,
+          "physical_page_count": 4,
+          "sha256": "115d5f9d3806c166a25b1899cb4efcdbd9890e6bd0a2f717cc92a31c75b24e75"
+        },
+        {
+          "date": "18161127",
+          "filename": "NewfoundlandMercantileJournal18161127no130.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161127no130.pdf",
+          "bytes": 8082310,
+          "physical_page_count": 4,
+          "sha256": "27166ce0a2b6a21785873cf8ee5e8764c0d416af51f9582e074b46ce177243ef"
+        },
+        {
+          "date": "18161130",
+          "filename": "NewfoundlandMercantileJournal18161130no131.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161130no131.pdf",
+          "bytes": 7870071,
+          "physical_page_count": 4,
+          "sha256": "43597c05e96aab6fe84864d0b389d602df3d7ca1a1c34844531db7261d343a29"
+        },
+        {
+          "date": "18161204",
+          "filename": "NewfoundlandMercantileJournal18161204no132.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161204no132.pdf",
+          "bytes": 7995080,
+          "physical_page_count": 4,
+          "sha256": "0d02b535e3ee177f86d9af43fa0607a75d522e07fde9af4b23b11da533447def"
+        },
+        {
+          "date": "18161207",
+          "filename": "NewfoundlandMercantileJournal18161207no133.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161207no133.pdf",
+          "bytes": 8195828,
+          "physical_page_count": 4,
+          "sha256": "0229d0ef021db03fb995db760bb7734dd2e334bc83e6ea12510ff49c64a8432c"
+        },
+        {
+          "date": "18161211",
+          "filename": "NewfoundlandMercantileJournal18161211no134.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161211no134.pdf",
+          "bytes": 7844489,
+          "physical_page_count": 4,
+          "sha256": "2347d98600db90ec8e6f8ade3fa974f764de79f172dababec91e80d6838e617e"
+        },
+        {
+          "date": "18161214",
+          "filename": "NewfoundlandMercantileJournal18161214no135.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161214no135.pdf",
+          "bytes": 7309887,
+          "physical_page_count": 4,
+          "sha256": "93568dfea6ec075e85c929ac29c84c87bf58ef4f3b2ba007eb9cfa12fc2a7baa"
+        },
+        {
+          "date": "18161218",
+          "filename": "NewfoundlandMercantileJournal18161218no136.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161218no136.pdf",
+          "bytes": 7809642,
+          "physical_page_count": 4,
+          "sha256": "f95afe6c55981593375148e889ed9c77fbb0b7338cbba17f7dbc2b470bfe1365"
+        },
+        {
+          "date": "18161221",
+          "filename": "NewfoundlandMercantileJournal18161221no137.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161221no137.pdf",
+          "bytes": 7907948,
+          "physical_page_count": 4,
+          "sha256": "b8cd3199ae6d7b42dc13f365f86dd36a7e7b09e330d0256b2bc555fb677eef3d"
+        },
+        {
+          "date": "18161225",
+          "filename": "NewfoundlandMercantileJournal18161225no138.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161225no138.pdf",
+          "bytes": 8388855,
+          "physical_page_count": 4,
+          "sha256": "caddffb2b27c484f7542ee58cad8323daef30aec3975cb5ef53961ae40dbfd2c"
+        },
+        {
+          "date": "18161228",
+          "filename": "NewfoundlandMercantileJournal18161228no139.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18161228no139.pdf",
+          "bytes": 8276171,
+          "physical_page_count": 4,
+          "sha256": "052fc007024c7dd76f815c86ce1b6218cfba3395f90ffe6278ec4e9670b8c208"
+        }
+      ]
+    },
+    {
+      "name": "The Royal Gazette",
+      "slug": "royalgazette",
+      "collection_url": "https://dai.mun.ca/digital/royalgazette",
+      "issue_count": 25,
+      "physical_page_count": 98,
+      "items": [
+        {
+          "date": "18160104",
+          "filename": "TheRoyalGazette18160104.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160104.pdf",
+          "bytes": 25611249,
+          "physical_page_count": 4,
+          "sha256": "577378359e35c1cbfeee9b073ef6f89cf1f63de3c5e17a572858b621fe03d9c9"
+        },
+        {
+          "date": "18160111",
+          "filename": "TheRoyalGazette18160111.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160111.pdf",
+          "bytes": 21587131,
+          "physical_page_count": 4,
+          "sha256": "eb475e686a2714a9c9635abda0a1ce02754aa55f51d9c533f4257938b1a64c31"
+        },
+        {
+          "date": "18160716",
+          "filename": "TheRoyalGazette18160716.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160716.pdf",
+          "bytes": 2433107,
+          "physical_page_count": 2,
+          "sha256": "ab62ebcd487ac9fcb40adad1031d542f369bcc6983f506717109cb54131fd3bc"
+        },
+        {
+          "date": "18160723",
+          "filename": "TheRoyalGazette18160723.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160723.pdf",
+          "bytes": 4440182,
+          "physical_page_count": 4,
+          "sha256": "e06081ae92d368217936e79ffa939345ffdf2eb4d06c02c4f653deaa1f9402b9"
+        },
+        {
+          "date": "18160730",
+          "filename": "TheRoyalGazette18160730.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160730.pdf",
+          "bytes": 5091693,
+          "physical_page_count": 4,
+          "sha256": "dd0eb66a1a4ff153bb89b7115f9dbc2681f3a4b1d100135a6ab3fe175cf1a967"
+        },
+        {
+          "date": "18160806",
+          "filename": "TheRoyalGazette18160806.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160806.pdf",
+          "bytes": 4984369,
+          "physical_page_count": 4,
+          "sha256": "4b0841f9ea469a3c52c71c838e37f2b99c136913c652043fcaf16022dab0de31"
+        },
+        {
+          "date": "18160813",
+          "filename": "TheRoyalGazette18160813.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160813.pdf",
+          "bytes": 4959485,
+          "physical_page_count": 4,
+          "sha256": "ebabcd0e20c95f633bf39957cdb460a5d21a642d67e18079fc0042b9f85ecafd"
+        },
+        {
+          "date": "18160820",
+          "filename": "TheRoyalGazette18160820.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160820.pdf",
+          "bytes": 5323650,
+          "physical_page_count": 4,
+          "sha256": "fe9ab1fa4944a78add1cac63a2dc5ef3966ec1c879c2c122b191a6b3e8933157"
+        },
+        {
+          "date": "18160827",
+          "filename": "TheRoyalGazette18160827.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160827.pdf",
+          "bytes": 4796845,
+          "physical_page_count": 4,
+          "sha256": "b3cdc4723d6395c874bcf6af98eb74e883a7e5bac2c25baeb71ab971e82a9c30"
+        },
+        {
+          "date": "18160903",
+          "filename": "TheRoyalGazette18160903.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160903.pdf",
+          "bytes": 4441143,
+          "physical_page_count": 4,
+          "sha256": "051c7703888bc518f93eee0a09d442286faf21799f3e1b8d24774d98baad800c"
+        },
+        {
+          "date": "18160910",
+          "filename": "TheRoyalGazette18160910.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160910.pdf",
+          "bytes": 4945682,
+          "physical_page_count": 4,
+          "sha256": "b7cbd3e948bedfefe4f0c143d20d58b05f542af19dfe7d5826344a9acdf4eeda"
+        },
+        {
+          "date": "18160917",
+          "filename": "TheRoyalGazette18160917.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160917.pdf",
+          "bytes": 4209152,
+          "physical_page_count": 4,
+          "sha256": "978339c7e4e153ebc07f6096ce220c315f844287f7ef7c6482f192149e5b5608"
+        },
+        {
+          "date": "18160924",
+          "filename": "TheRoyalGazette18160924.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18160924.pdf",
+          "bytes": 4722353,
+          "physical_page_count": 4,
+          "sha256": "e6cc6d18d8c60dc112563a6776c70b08eabbb1204a51ff43775097ea2dc87bd9"
+        },
+        {
+          "date": "18161001",
+          "filename": "TheRoyalGazette18161001.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161001.pdf",
+          "bytes": 4869872,
+          "physical_page_count": 4,
+          "sha256": "384fd1f8c8c044350ed205509772a0fd099d667dd833a9b8d3d1af3bdf9a02f4"
+        },
+        {
+          "date": "18161015",
+          "filename": "TheRoyalGazette18161015.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161015.pdf",
+          "bytes": 4530872,
+          "physical_page_count": 4,
+          "sha256": "61c90c601f8a0eae0b82fd86f49dc2b7d8aeb698c2f67edce3968e45f5419aba"
+        },
+        {
+          "date": "18161022",
+          "filename": "TheRoyalGazette18161022.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161022.pdf",
+          "bytes": 14778304,
+          "physical_page_count": 4,
+          "sha256": "c8cc006971b229ab2eb476f2cf41daf395dd88c4177f8b554e657b615914a6c4"
+        },
+        {
+          "date": "18161029",
+          "filename": "TheRoyalGazette18161029.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161029.pdf",
+          "bytes": 4567817,
+          "physical_page_count": 4,
+          "sha256": "4de22c715425d696f22be72711174f26aa852c7b4847db321b913fbb01c29ef8"
+        },
+        {
+          "date": "18161105",
+          "filename": "TheRoyalGazette18161105.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161105.pdf",
+          "bytes": 4529448,
+          "physical_page_count": 4,
+          "sha256": "385052b251f50498aebdce7885e6a0c4d47a09432ac8b5ef690e79db547aa6ea"
+        },
+        {
+          "date": "18161112",
+          "filename": "TheRoyalGazette18161112.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161112.pdf",
+          "bytes": 4410699,
+          "physical_page_count": 4,
+          "sha256": "4ec9dcf3f24948b70f8a0ecb1a390e94286c06a5b17f15ac8444d6acc387e545"
+        },
+        {
+          "date": "18161126",
+          "filename": "TheRoyalGazette18161126.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161126.pdf",
+          "bytes": 4489759,
+          "physical_page_count": 4,
+          "sha256": "bc46f6bc4a29d45c48b0f89b171eb96c4943ccce617ad2382f71f0921fddc1ae"
+        },
+        {
+          "date": "18161203",
+          "filename": "TheRoyalGazette18161203.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161203.pdf",
+          "bytes": 4528937,
+          "physical_page_count": 4,
+          "sha256": "befef6bf081e9b5a0b98006c3d0bcfc80e852c5bbe59af71128a60b37da1fa98"
+        },
+        {
+          "date": "18161210",
+          "filename": "TheRoyalGazette18161210.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161210.pdf",
+          "bytes": 4438470,
+          "physical_page_count": 4,
+          "sha256": "54c67a1731b80a94834494d6bcc8cd12152c727ccc0f54a72b865781e6ee3b43"
+        },
+        {
+          "date": "18161217",
+          "filename": "TheRoyalGazette18161217.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161217.pdf",
+          "bytes": 3862272,
+          "physical_page_count": 4,
+          "sha256": "206b7cd5fa7b17e93fce203c030ed8a9c69b80b22b60c9fe472643d868dbdcbb"
+        },
+        {
+          "date": "18161224",
+          "filename": "TheRoyalGazette18161224.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161224.pdf",
+          "bytes": 4796473,
+          "physical_page_count": 4,
+          "sha256": "15bb46ec4cbc8c8e871323e286acaef768f864ae510e989ccdf2282e0b87b5ca"
+        },
+        {
+          "date": "18161231",
+          "filename": "TheRoyalGazette18161231.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18161231.pdf",
+          "bytes": 4777109,
+          "physical_page_count": 4,
+          "sha256": "950f8bfa09142bf2bf630e1f8103fc63981017b96994b80da05b1cbb7810158c"
+        }
+      ]
+    }
+  ]
+}
