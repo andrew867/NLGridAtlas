@@ -3082,6 +3082,18 @@
       "notes": "January notices document the Express, Matthew Guswell's newly launched weekly packet and James Doyle's Dart. Later notices document the repaired Express and the Arrow. The routes carried passengers, letters and parcels across Conception Bay and through Portugal Cove to St. John's. No supported 1830 lighthouse, telegraph or electrical event was found."
     },
     {
+      "id": "NPREG-199",
+      "title": "Add the 1829 packet continuity and lightning records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1829 electrical, telecommunications, navigation-aid and scheduled communication evidence.",
+      "dependencies": ["NPREG-198"],
+      "completion_evidence": ["research/NP_1829_SYSTEM_RECORD.md", "research/derived/np-1829-newspaper-issue-manifest.json", "src/data.js", "tests/np-1829-system.test.js"],
+      "blocker": null,
+      "notes": "The Express notice records repair and regular operation. A winter notice records substitute water service and a weekly land-carrier fallback. Matthew Guswell's purpose-built packet added three scheduled letter routes. The Royal Gazette separately reported lightning damage at St. John's and Carbonear. No supported 1829 lighthouse, electrical telegraph or installed electrical apparatus was found."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

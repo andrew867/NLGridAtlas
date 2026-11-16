@@ -640,6 +640,46 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-newfoundlander-1829-packet-repair",
+    year: 1829,
+    organization: "The Newfoundlander",
+    title: "Express and Dart Packet Notices",
+    topics: ["1829", "Express", "Dart", "packet boat", "Harbour Grace", "Portugal Cove", "Carbonear", "St. John's", "repair", "passengers", "parcels", "letters"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18290101.pdf"
+  },
+  {
+    id: "mun-newfoundlander-1829-winter-packet",
+    year: 1829,
+    organization: "The Newfoundlander",
+    title: "Winter Packet and Land Carrier Notice",
+    topics: ["1829", "Express", "packet boat", "land carrier", "Harbour Grace", "Portugal Cove", "St. John's", "winter", "service continuity", "letters"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18290326.pdf"
+  },
+  {
+    id: "mun-newfoundlander-1829-conception-bay-packets",
+    year: 1829,
+    organization: "The Newfoundlander",
+    title: "Conception Bay Packet Boat Notices",
+    topics: ["1829", "Express", "Dart", "Matthew Guswell", "packet boat", "Harbour Grace", "Portugal Cove", "Carbonear", "Cubits", "St. John's", "passengers", "parcels", "letters"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18290618.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1829-lightning-damage",
+    year: 1829,
+    organization: "The Royal Gazette",
+    title: "St. John's and Carbonear Lightning Damage Report",
+    topics: ["1829", "St. John's", "Carbonear", "lightning", "electric fluid", "John Currie", "Gosse Pack and Fryer", "iron plate", "building damage"],
+    pages: "physical PDF pp. 2 to 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18290825.pdf"
+  },
+  {
     id: "mun-newfoundlander-1830-packet-notices",
     year: 1830,
     organization: "The Newfoundlander",
@@ -13735,6 +13775,42 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1829-01-01",
+    category: "communications",
+    title: "Express returned after repair and Dart continued service",
+    body: "The Express notice stated that the packet boat had undergone a thorough repair and continued between Harbour Grace and Portugal Cove. It scheduled three weekly departures and carried passengers, parcels and letters through a St. John's land connection. James Doyle's Dart continued between Carbonear and Portugal Cove and also carried letters and parcels.",
+    sourceId: "mun-newfoundlander-1829-packet-repair",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1829-03-26",
+    category: "communications",
+    title: "Winter notice combined packet and land communication",
+    body: "The Express was laid up for winter. Its notice said that a suitable boat with an experienced crew would run between Harbour Grace and Portugal Cove when conditions allowed. If water communication stopped, a land letter carrier would leave Harbour Grace weekly, weather permitting.",
+    sourceId: "mun-newfoundlander-1829-winter-packet",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1829-06-18",
+    category: "communications",
+    title: "Purpose-built packet added three Conception Bay routes",
+    body: "Matthew Guswell stated that he had launched a packet boat built to carry letters and passengers. It left Portugal Cove for Carbonear on Monday, Cubits on Wednesday and Harbour Grace on Friday, then returned on the next day. The Express and Dart notices on the same page document the other operating packet routes.",
+    sourceId: "mun-newfoundlander-1829-conception-bay-packets",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1829-08-25",
+    category: "electrical context",
+    title: "Newspaper reported lightning damage at St. John's and Carbonear",
+    body: "The Royal Gazette reported that lightning damaged John Currie's newly roofed house north of St. John's during a storm on the previous Friday. It also reported that lightning entered a Carbonear store chimney near an iron plate, broke brickwork and damaged beams and clapboard. The article used the period term electric fluid.",
+    sourceId: "mun-royal-gazette-1829-lightning-damage",
+    pages: "physical PDF pp. 2 to 3",
+    status: "reported"
+  },
   {
     date: "1830-01-07",
     category: "communications",
