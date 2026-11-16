@@ -1,0 +1,679 @@
+{
+  "year": 1817,
+  "retrieved": "2026-11-16",
+  "issue_count": 93,
+  "physical_page_count": 356,
+  "collections": [
+    {
+      "name": "Newfoundland Mercantile Journal",
+      "slug": "nl_mercantile",
+      "collection_url": "https://dai.mun.ca/digital/nl_mercantile",
+      "issue_count": 25,
+      "physical_page_count": 100,
+      "items": [
+        {
+          "date": "18170101",
+          "filename": "NewfoundlandMercantileJournal18170101no140.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170101no140.pdf",
+          "bytes": 8160101,
+          "sha256": "f9cd4d4a282b0d1b21326ff8025196b94f99a055820f628dffb774c5242543de"
+        },
+        {
+          "date": "18170104",
+          "filename": "NewfoundlandMercantileJournal18170104no141.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170104no141.pdf",
+          "bytes": 8203115,
+          "sha256": "ae511b25cd3866a93dee7f0f4c996faabd0e6a9a658dbe4abd053bd166e91454"
+        },
+        {
+          "date": "18170108",
+          "filename": "NewfoundlandMercantileJournal18170108no142.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170108no142.pdf",
+          "bytes": 8594435,
+          "sha256": "743ab38daec170a11676dd06fb13e5eb0ce960820eebff5c9bcfe5e2fcbf486b"
+        },
+        {
+          "date": "18170111",
+          "filename": "NewfoundlandMercantileJournal18170111no143.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170111no143.pdf",
+          "bytes": 8150417,
+          "sha256": "255c91c39d2a963f8e78d07b5c4d5cda77978b6f75ef68c5c031767927d52a0d"
+        },
+        {
+          "date": "18170117",
+          "filename": "NewfoundlandMercantileJournal18170117no144.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170117no144.pdf",
+          "bytes": 8347307,
+          "sha256": "0ee28ebbf6136cdcc0ab98e3be680ee974baf1297608d84bd18f8aafd2acb0d4"
+        },
+        {
+          "date": "18170124",
+          "filename": "NewfoundlandMercantileJournal18170124no145.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170124no145.pdf",
+          "bytes": 8498674,
+          "sha256": "60c46b3d10e5fc45b47622e4ecee4fd154fea1ad8b366b731f4dd5b8ce06a100"
+        },
+        {
+          "date": "18170131",
+          "filename": "NewfoundlandMercantileJournal18170131no146.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170131no146.pdf",
+          "bytes": 8958085,
+          "sha256": "e48dbf0b0550ec812903ad6f55b44aa60cd50509e17cb594ecf008e7bcae4b9a"
+        },
+        {
+          "date": "18170207",
+          "filename": "NewfoundlandMercantileJournal18170207no147.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170207no147.pdf",
+          "bytes": 8263876,
+          "sha256": "94583404acb9d30fd8b556df0633afbe015c47db398076f252b8285d9078bd22"
+        },
+        {
+          "date": "18170214",
+          "filename": "NewfoundlandMercantileJournal18170214no148.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170214no148.pdf",
+          "bytes": 8330590,
+          "sha256": "a320711f4ccdf91bd6f1ec81a3c3496a54719bad9602d4238af6bd3415668d11"
+        },
+        {
+          "date": "18170221",
+          "filename": "NewfoundlandMercantileJournal18170221no149.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170221no149.pdf",
+          "bytes": 8583409,
+          "sha256": "990d1374e7589fb3b350c206f53e8cd7801bdc1f88efa0fd0901e63f691cf12b"
+        },
+        {
+          "date": "18170228",
+          "filename": "NewfoundlandMercantileJournal18170228no150.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170228no150.pdf",
+          "bytes": 8592586,
+          "sha256": "f1641ada6ed86e96ca249aa4304608c0c837c6fd6d3a830d0d1f262b8b8af199"
+        },
+        {
+          "date": "18170314",
+          "filename": "NewfoundlandMercantileJournal18170314no152.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170314no152.pdf",
+          "bytes": 8567879,
+          "sha256": "495278f9509cd8ce8e7c48d5dc61fa7b4c847f3c1d496c367c36362480ae105c"
+        },
+        {
+          "date": "18170321",
+          "filename": "NewfoundlandMercantileJournal18170321no153.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170321no153.pdf",
+          "bytes": 8704338,
+          "sha256": "1869dad43b7fc3d637ed1b025a9453d6519a8d7612dc3075653797aabcd6bad3"
+        },
+        {
+          "date": "18170328",
+          "filename": "NewfoundlandMercantileJournal18170328no154.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170328no154.pdf",
+          "bytes": 8244635,
+          "sha256": "b162f4c8e5a28c3078bb61394b4d3276b9290fa286e59360bbcc5bcd9ebc3c4c"
+        },
+        {
+          "date": "18170404",
+          "filename": "NewfoundlandMercantileJournal18170404no155.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170404no155.pdf",
+          "bytes": 8731894,
+          "sha256": "7b1925ad04df8ccbfb6a498aa818c332e6830832262e588b0c9669a31f3e7be1"
+        },
+        {
+          "date": "18170411",
+          "filename": "NewfoundlandMercantileJournal18170411no156.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170411no156.pdf",
+          "bytes": 7910366,
+          "sha256": "9534cbb73e59b1b9c427379eaef0b730e1352fb8ef239f402b525ee48d36536d"
+        },
+        {
+          "date": "18170418",
+          "filename": "NewfoundlandMercantileJournal18170418no157.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170418no157.pdf",
+          "bytes": 7493429,
+          "sha256": "d536dec0b8941c5b79d94bf4e8de2b545b3447e280dccea0f20dfe08b65c33a5"
+        },
+        {
+          "date": "18170425",
+          "filename": "NewfoundlandMercantileJournal18170425no158.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170425no158.pdf",
+          "bytes": 7879831,
+          "sha256": "915ff4aea8ede27c698f8734fae3a90e7c22dda658623673e8ff001da800756b"
+        },
+        {
+          "date": "18170502",
+          "filename": "NewfoundlandMercantileJournal18170502no159.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170502no159.pdf",
+          "bytes": 8291934,
+          "sha256": "8934704fd063f443c141911816cb48db8dd262838b63729a79430b497cf9486b"
+        },
+        {
+          "date": "18170509",
+          "filename": "NewfoundlandMercantileJournal18170509no160.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170509no160.pdf",
+          "bytes": 8370191,
+          "sha256": "357345e55bb34ed1c92bf2457d6a005cc0af749432ebe3689da230a444de5c5b"
+        },
+        {
+          "date": "18170516",
+          "filename": "NewfoundlandMercantileJournal18170516no161.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170516no161.pdf",
+          "bytes": 8394894,
+          "sha256": "d6e218a14ea46078550588ab86bd540de78758c41788213e4c0b9988b3a53515"
+        },
+        {
+          "date": "18170523",
+          "filename": "NewfoundlandMercantileJournal18170523no162.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170523no162.pdf",
+          "bytes": 7808482,
+          "sha256": "cb7e9e3b050dc7f9e37b05647226f780a3f01c8739c82cc1e2e17c2ea44739a8"
+        },
+        {
+          "date": "18170530",
+          "filename": "NewfoundlandMercantileJournal18170530no163.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170530no163.pdf",
+          "bytes": 8344923,
+          "sha256": "164a8d3bd75e1a0731ede7f62c5ac63e05c512470c19139e5fc521ecde676e9c"
+        },
+        {
+          "date": "18170606",
+          "filename": "NewfoundlandMercantileJournal18170606no164.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170606no164.pdf",
+          "bytes": 8098937,
+          "sha256": "b970689d0c8f43daa6cde77460a00f1ed9f330d39b15f43522f604ad63313534"
+        },
+        {
+          "date": "18170613",
+          "filename": "NewfoundlandMercantileJournal18170613no165.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170613no165.pdf",
+          "bytes": 8191618,
+          "sha256": "c02409a672e22cf8e32f96c88171edb6224840ea01bc3e1ac5daf78cfae92981"
+        }
+      ]
+    },
+    {
+      "name": "The Royal Gazette",
+      "slug": "royalgazette",
+      "collection_url": "https://dai.mun.ca/digital/royalgazette",
+      "issue_count": 68,
+      "physical_page_count": 256,
+      "items": [
+        {
+          "date": "18170114",
+          "filename": "TheRoyalGazette18170114.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170114.pdf",
+          "bytes": 4642828,
+          "sha256": "ea87487abf597a2580d8fc3371df98042b9559b67880a30839f4d33e536c850a"
+        },
+        {
+          "date": "18170121",
+          "filename": "TheRoyalGazette18170121.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170121.pdf",
+          "bytes": 12719025,
+          "sha256": "cd6a04a3326ec2a516a6e748ff5a63c8a918142fa9ac6b512430908d1fdbf7ea"
+        },
+        {
+          "date": "18170128",
+          "filename": "TheRoyalGazette18170128.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170128.pdf",
+          "bytes": 4756257,
+          "sha256": "25f069e3c759b65e45574984a12f08ced237902fb7ad210bb988a3b26ef0f0c0"
+        },
+        {
+          "date": "18170204",
+          "filename": "TheRoyalGazette18170204.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170204.pdf",
+          "bytes": 4677961,
+          "sha256": "70ccf4c38e167c5ea18007258ccefbd9cfbe34072407f5d2ac45a3320ecb5c13"
+        },
+        {
+          "date": "18170211",
+          "filename": "TheRoyalGazette18170211.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170211.pdf",
+          "bytes": 5012264,
+          "sha256": "937c3271c21347a82e8f659c58670ebe2ee235ed5c7180da0c0258e5676f18c7"
+        },
+        {
+          "date": "18170218",
+          "filename": "TheRoyalGazette18170218.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170218.pdf",
+          "bytes": 4635092,
+          "sha256": "f9b974c1d9df42096f459171a9260d62cafc1e46949c7ce3461b71a52c758e1b"
+        },
+        {
+          "date": "18170225",
+          "filename": "TheRoyalGazette18170225.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170225.pdf",
+          "bytes": 4637895,
+          "sha256": "90854b8d49c588ca160b4b20dd586a5430ad5a2b93b0a80d1e6e1ee120716c5a"
+        },
+        {
+          "date": "18170304",
+          "filename": "TheRoyalGazette18170304.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170304.pdf",
+          "bytes": 4454209,
+          "sha256": "41c72834d127383b8619c8c219d2991c6fec3dd893222e01fbd3f2930331aeb2"
+        },
+        {
+          "date": "18170311",
+          "filename": "TheRoyalGazette18170311.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170311.pdf",
+          "bytes": 4712965,
+          "sha256": "0a6f5f83bed7562d89b4dbe1ae864cb6ea7c44d4b8e22c5d0dbbbc71aa239675"
+        },
+        {
+          "date": "18170318",
+          "filename": "TheRoyalGazette18170318.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170318.pdf",
+          "bytes": 4323735,
+          "sha256": "ec69b7754232acb495e4e575183a5a907716160841ca61a8aeae1d6a460d8f21"
+        },
+        {
+          "date": "18170325",
+          "filename": "TheRoyalGazette18170325.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170325.pdf",
+          "bytes": 5510244,
+          "sha256": "9ce783bd359d9146d7a5c0a26408e2ac307b03f344ca720c16b1349d25c0749b"
+        },
+        {
+          "date": "18170401",
+          "filename": "TheRoyalGazette18170401.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170401.pdf",
+          "bytes": 4586741,
+          "sha256": "d325a5e2fae6e60864b1f47ebf41cf486db22ab7e9d40e3369cb8f75c918b9d1"
+        },
+        {
+          "date": "18170408",
+          "filename": "TheRoyalGazette18170408.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170408.pdf",
+          "bytes": 4695953,
+          "sha256": "33a8c3c688430528d1bae22417b0d5abd4a3bc5c076459f0329f03f9f1a7f0cf"
+        },
+        {
+          "date": "18170415",
+          "filename": "TheRoyalGazette18170415.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170415.pdf",
+          "bytes": 4753292,
+          "sha256": "9b2b89445afbbdd2b29cdcca6a91854c76920f8fc3b731e9727d25c205fe0fe0"
+        },
+        {
+          "date": "18170422",
+          "filename": "TheRoyalGazette18170422.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170422.pdf",
+          "bytes": 4693748,
+          "sha256": "d818cafecc957b4e1b38231fde0fb91d34962025ce69bf3074a70be8bab35c1c"
+        },
+        {
+          "date": "18170429",
+          "filename": "TheRoyalGazette18170429.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170429.pdf",
+          "bytes": 4658081,
+          "sha256": "0461760ba68ab679b3adab5be6bc4655fd74f49708f7d31b4f357db8d1ae27be"
+        },
+        {
+          "date": "18170506",
+          "filename": "TheRoyalGazette18170506.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170506.pdf",
+          "bytes": 4612651,
+          "sha256": "126ec86a8d71931ed2c4a0fcb92a18bb4c0cb294e8dfdad1838bd34581ddca94"
+        },
+        {
+          "date": "18170513",
+          "filename": "TheRoyalGazette18170513.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170513.pdf",
+          "bytes": 4704199,
+          "sha256": "6ae5477225d958eb1bdec67e7730248a9d35ab8f88d5a1c2631e9fd6aee91658"
+        },
+        {
+          "date": "18170520",
+          "filename": "TheRoyalGazette18170520.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170520.pdf",
+          "bytes": 4561678,
+          "sha256": "5f208a82a9ddd61ae946af1ddedd3bf9fd7b11daf941622ab64e927448a0035e"
+        },
+        {
+          "date": "18170527",
+          "filename": "TheRoyalGazette18170527.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170527.pdf",
+          "bytes": 4629962,
+          "sha256": "6939f70c5bd2240cfe437defaea12b185b8931659fd7efdfd659583e098e403b"
+        },
+        {
+          "date": "18170527",
+          "filename": "TheRoyalGazette18170527Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170527Supplement.pdf",
+          "bytes": 3400347,
+          "sha256": "c2e990ef6d54615cf7d42c887d0402d951895b1fd653df554c87bfa3ec1fd496"
+        },
+        {
+          "date": "18170528",
+          "filename": "TheRoyalGazette18170528Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170528Supplement.pdf",
+          "bytes": 1837601,
+          "sha256": "199820b34e24456a8b621e1b43441efbe0665a8ede678796a14e0471edf91b0b"
+        },
+        {
+          "date": "18170603",
+          "filename": "TheRoyalGazette18170603.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170603.pdf",
+          "bytes": 4642947,
+          "sha256": "c81ab516c912806dd8119bfe9f518c00f77b941fbf897f11bc1426396db7c7ce"
+        },
+        {
+          "date": "18170603",
+          "filename": "TheRoyalGazette18170603Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170603Supplement.pdf",
+          "bytes": 3352528,
+          "sha256": "3ca91f55339783f517e53e0e837058efef276048f450b59949efe964921da919"
+        },
+        {
+          "date": "18170610",
+          "filename": "TheRoyalGazette18170610.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170610.pdf",
+          "bytes": 4488245,
+          "sha256": "c5496eabe2ec7ee9ae1e093b99ce27d59af2b676c5c1cac36ce2af8587f9418d"
+        },
+        {
+          "date": "18170610",
+          "filename": "TheRoyalGazette18170610Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170610Supplement.pdf",
+          "bytes": 3354763,
+          "sha256": "107665900fd5369dc88ca1c76982f2af9d1a3034d8d486a014cf6298ae4279e6"
+        },
+        {
+          "date": "18170617",
+          "filename": "TheRoyalGazette18170617.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170617.pdf",
+          "bytes": 4846675,
+          "sha256": "18168f3fdf3dd1c1c79d48f122e25848308d5bd32402f127da3ab12b3d158b9b"
+        },
+        {
+          "date": "18170624",
+          "filename": "TheRoyalGazette18170624.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170624.pdf",
+          "bytes": 4628578,
+          "sha256": "e48267ce7ece1e4ed8f0bc54ed9f20df4ebcb1a63c7f0cd992e914c255e7dc61"
+        },
+        {
+          "date": "18170701",
+          "filename": "TheRoyalGazette18170701.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170701.pdf",
+          "bytes": 4809524,
+          "sha256": "945b86f3d9ffd14b219f22f1904434b2941491cd8579205fedb6f9c6414ecd9d"
+        },
+        {
+          "date": "18170701",
+          "filename": "TheRoyalGazette18170701Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170701Supplement.pdf",
+          "bytes": 3346598,
+          "sha256": "d726f54a7bfbfe25a0ecb5191e5c5fd3d5560709e3482f1517f5ab592bb4580e"
+        },
+        {
+          "date": "18170708",
+          "filename": "TheRoyalGazette18170708.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170708.pdf",
+          "bytes": 4688749,
+          "sha256": "b5edc9d4b51867d23c1105d61bc50b7012b8e8f3d4d2e2fca985809185fb2dd0"
+        },
+        {
+          "date": "18170715",
+          "filename": "TheRoyalGazette18170715.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170715.pdf",
+          "bytes": 4766080,
+          "sha256": "83da8f84f06684f85190df36016f103d0de416c449c0475ba8108d873b68ace5"
+        },
+        {
+          "date": "18170722",
+          "filename": "TheRoyalGazette18170722.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170722.pdf",
+          "bytes": 4611078,
+          "sha256": "d37d78d102f2cae92af6fe096d357004661c5e12e654bbc39e2354d90ae6a647"
+        },
+        {
+          "date": "18170729",
+          "filename": "TheRoyalGazette18170729.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170729.pdf",
+          "bytes": 5088655,
+          "sha256": "6c45a99d7d77f51ef3b573a5c8d2f098d00c373400c3ef2875a15a1859e3f507"
+        },
+        {
+          "date": "18170805",
+          "filename": "TheRoyalGazette18170805.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170805.pdf",
+          "bytes": 4532431,
+          "sha256": "56b3da52d7554055683b93a20c21af7170f02a5068219e88945176808293d765"
+        },
+        {
+          "date": "18170805",
+          "filename": "TheRoyalGazette18170805Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170805Supplement.pdf",
+          "bytes": 3521624,
+          "sha256": "c6073acb122b770038c0f677c1ce95674bf049dd8c72cb82511f4239eee23109"
+        },
+        {
+          "date": "18170812",
+          "filename": "TheRoyalGazette18170812.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170812.pdf",
+          "bytes": 4653013,
+          "sha256": "2f8508b66a497fbb8ceedcc94a8d0cea9d5a1e658321eb81c4571fb4bba56a34"
+        },
+        {
+          "date": "18170819",
+          "filename": "TheRoyalGazette18170819.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170819.pdf",
+          "bytes": 4601595,
+          "sha256": "71fd1b72b583b4ed803bf3b0b8d3768743b2a1597339d34998ce7a769916de8a"
+        },
+        {
+          "date": "18170819",
+          "filename": "TheRoyalGazette18170819Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170819Supplement.pdf",
+          "bytes": 1604977,
+          "sha256": "b00395d7a50f6ee75ec668c707a1fe03de8e313e8b3088acf76a3e8396226930"
+        },
+        {
+          "date": "18170826",
+          "filename": "TheRoyalGazette18170826.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170826.pdf",
+          "bytes": 4650414,
+          "sha256": "c3b8476f63072c39fd1d58d952eb068b206601bafd50b5995bcce35cadb78a54"
+        },
+        {
+          "date": "18170826",
+          "filename": "TheRoyalGazette18170826Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170826Supplement.pdf",
+          "bytes": 4009437,
+          "sha256": "bab73ab50bdb998a80d590490554df2359650a35f805ab1b42e98fbd54f7c4ee"
+        },
+        {
+          "date": "18170902",
+          "filename": "TheRoyalGazette18170902.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170902.pdf",
+          "bytes": 4756272,
+          "sha256": "0c5c35b376eb8243c6b6bc42de2d66698aca943ab284aa4e68d754464cf422a1"
+        },
+        {
+          "date": "18170902",
+          "filename": "TheRoyalGazette18170902Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170902Supplement.pdf",
+          "bytes": 1613105,
+          "sha256": "5fe747278bdc4b31017affbe06964b12a46c36d7af51f64d076f658daea71903"
+        },
+        {
+          "date": "18170909",
+          "filename": "TheRoyalGazette18170909.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170909.pdf",
+          "bytes": 4177078,
+          "sha256": "16305d6c965147daa5937083bbc02b6f083a3d85daaa4284fdbc7ea77765feb6"
+        },
+        {
+          "date": "18170916",
+          "filename": "TheRoyalGazette18170916.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170916.pdf",
+          "bytes": 4806361,
+          "sha256": "bd3e1dc996148012a2a8c5b315f248e1472afd3b3352938a87106b8ba7a577c2"
+        },
+        {
+          "date": "18170916",
+          "filename": "TheRoyalGazette18170916Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170916Supplement.pdf",
+          "bytes": 1697420,
+          "sha256": "c920e377037defa6a2219c9ef3855c3ac77b8a0752aab6acbe980928d0602252"
+        },
+        {
+          "date": "18170923",
+          "filename": "TheRoyalGazette18170923.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170923.pdf",
+          "bytes": 3919513,
+          "sha256": "85181b55604cb79a783b5835ae2b6cb3b5b32e11ef86cb22a69b99a86161fcf1"
+        },
+        {
+          "date": "18170930",
+          "filename": "TheRoyalGazette18170930.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170930.pdf",
+          "bytes": 6747338,
+          "sha256": "d748016e3573abd8319a0ebbaf6e1cd5ec32ee94fa0e8430fcf445f020e3f0cd"
+        },
+        {
+          "date": "18170930",
+          "filename": "TheRoyalGazette18170930Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170930Supplement.pdf",
+          "bytes": 795749,
+          "sha256": "0472f7e551a5c41077890aa6e54d5235a29aa1c41d4037f53dbe9b85ff498b77"
+        },
+        {
+          "date": "18171007",
+          "filename": "TheRoyalGazette18171007.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171007.pdf",
+          "bytes": 4774102,
+          "sha256": "c392783e0e6c85ed2676f289f52fe3eb84a6dbc6faabf1ae913b3491cd1f30f2"
+        },
+        {
+          "date": "18171007",
+          "filename": "TheRoyalGazette18171007Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171007Supplement.pdf",
+          "bytes": 2224924,
+          "sha256": "d5d955918263e15245cb1cc64d4cee782c0ec147f530580edd276383533d0542"
+        },
+        {
+          "date": "18171014",
+          "filename": "TheRoyalGazette18171014.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171014.pdf",
+          "bytes": 4606358,
+          "sha256": "d904d784c6126580a9c3c246233bf057e20058713f462a8c6d956fbca1a763db"
+        },
+        {
+          "date": "18171014",
+          "filename": "TheRoyalGazette18171014SupplementMissingPage.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171014SupplementMissingPage.pdf",
+          "bytes": 2516071,
+          "sha256": "97833e8df3fb1d8bd2a8d707e6263a2a7509f3e60fd8d09791dc0e1eab00b332",
+          "archive_note": "MUN filename marks a missing page"
+        },
+        {
+          "date": "18171021",
+          "filename": "TheRoyalGazette18171021.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171021.pdf",
+          "bytes": 5128955,
+          "sha256": "c53ba70db79765dfbf1986a7b151d9ac11fab766cca09ccece4a0e932d2e7baf"
+        },
+        {
+          "date": "18171021",
+          "filename": "TheRoyalGazette18171021Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171021Supplement.pdf",
+          "bytes": 2430221,
+          "sha256": "316937df902bab31999dc3d5d40e4143334ff6b8ac45efc74af3055efa823bc6"
+        },
+        {
+          "date": "18171028",
+          "filename": "TheRoyalGazette18171028.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171028.pdf",
+          "bytes": 5145922,
+          "sha256": "cde421b843bf07c8a678ab48ad909d2a68e1f5cdf64081447cf8e2162d32cc6a"
+        },
+        {
+          "date": "18171028",
+          "filename": "TheRoyalGazette18171028Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171028Supplement.pdf",
+          "bytes": 2455590,
+          "sha256": "a6ec06131e506e5b90d437080647cdf9f777bd13e1496dbe12ce6213dfabac2e"
+        },
+        {
+          "date": "18171104",
+          "filename": "TheRoyalGazette18171104.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171104.pdf",
+          "bytes": 5016782,
+          "sha256": "42b220546913e88b18fb3866f8b6eef6567506da538bcfed277195b5df81338e"
+        },
+        {
+          "date": "18171104",
+          "filename": "TheRoyalGazette18171104Supplement.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171104Supplement.pdf",
+          "bytes": 2407087,
+          "sha256": "05bb1b73df7af42ac01a7d35f77926300d2dd2f9488733f1ad0a1d1d39043abc"
+        },
+        {
+          "date": "18171111",
+          "filename": "TheRoyalGazette18171111.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171111.pdf",
+          "bytes": 5069384,
+          "sha256": "1412e72fe4774591f7158a1f6b6931455ac57c3f96bdc263808975a268617ab6"
+        },
+        {
+          "date": "18171118",
+          "filename": "TheRoyalGazette18171118.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171118.pdf",
+          "bytes": 4615620,
+          "sha256": "ab7eaa9848463015652d857df176226e829bb3d276ab8fdadb6ab1386fb52731"
+        },
+        {
+          "date": "18171125",
+          "filename": "TheRoyalGazette18171125.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171125.pdf",
+          "bytes": 4617154,
+          "sha256": "5525953f11b1f4924c51b39e2d54994e270ef6b7433513d6bc7c7ae3b9b46066"
+        },
+        {
+          "date": "18171202",
+          "filename": "TheRoyalGazette18171202.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171202.pdf",
+          "bytes": 4750236,
+          "sha256": "2d12d44f8584bf22110d3b4c08850c543cf25fe9d462b1c2bf5a892f356e979c"
+        },
+        {
+          "date": "18171209",
+          "filename": "TheRoyalGazette18171209.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171209.pdf",
+          "bytes": 4629192,
+          "sha256": "72279408fbeb1ef23701356eaff489d3b2d5d9c163ab6771c0f134a2494d4740"
+        },
+        {
+          "date": "18171216",
+          "filename": "TheRoyalGazette18171216.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171216.pdf",
+          "bytes": 4688715,
+          "sha256": "667169d74f3b39142bc3aa6ebcfe9e76fcff1c22d1326cf331e695bb45dd2519"
+        },
+        {
+          "date": "18171223",
+          "filename": "TheRoyalGazette18171223.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171223.pdf",
+          "bytes": 4679434,
+          "sha256": "9167ad5c2ee2bfc45ab5994555265b7b2e89692842ce77240c5d879b1acd3f20"
+        },
+        {
+          "date": "18171230",
+          "filename": "TheRoyalGazette18171230.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171230.pdf",
+          "bytes": 5140573,
+          "sha256": "bae0b1ea6c5b789b1154b0af062edfd2a59547c3f43beb31cc49757acc55c149"
+        },
+        {
+          "date": "18171230",
+          "filename": "TheRoyalGazette18171230SupplementMaybeMissingPage.pdf",
+          "url": "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171230SupplementMaybeMissingPage.pdf",
+          "bytes": 3538730,
+          "sha256": "3e38ba5eba04b3b041f1820e75710bd2dd0aa4789c6782c38f21a27a084b6b9d",
+          "archive_note": "MUN filename marks a possible missing page"
+        }
+      ]
+    }
+  ]
+}

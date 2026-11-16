@@ -3226,6 +3226,18 @@
       "notes": "The year records the post-fire arson rewards, a printed electrifying-machine recommendation, a Portugal Cove firebreak, harbour salutes and flag transfer, a Light-House Establishment notice, the December fort-fuel tender and the first detailed report of the Helen wreck. The January Post Office notice carries a December 1817 date and remains assigned to the 1817 queue."
     },
     {
+      "id": "NPREG-211",
+      "title": "Add the 1817 signal, light, fire, fortification and rebuilding records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1817 electrical, telecommunications, navigation-aid, emergency-signalling, defence-infrastructure and public-works evidence.",
+      "dependencies": ["NPREG-210"],
+      "completion_evidence": ["research/NP_1817_SYSTEM_RECORD.md", "research/derived/np-1817-newspaper-issue-manifest.json", "src/data.js", "tests/np-1817-system.test.js"],
+      "blocker": null,
+      "notes": "The year records a vessel signal during an ice event, the Light Establishment operating account, coordinated fort and ship salutes, the April fatal fire and alarm failure, two November fires, the Post Office relocation, a fortification condition report and proposed rebuilding work. The official and newspaper fire counts remain separate."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

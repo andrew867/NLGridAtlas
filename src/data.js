@@ -640,6 +640,106 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1817-brig-signal",
+    year: 1817,
+    organization: "Newfoundland Mercantile Journal",
+    title: "St. John's Brig Signal and Ice Report",
+    topics: ["1817", "St. John's", "signal", "brig", "ice", "harbour", "shore boats"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170104no141.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1817-april-fire",
+    year: 1817,
+    organization: "The Royal Gazette",
+    title: "Best's Farm Road Fire, Court House Alarm and Signal Visibility",
+    topics: ["1817", "St. John's", "Best's farm", "fire", "Court House", "Armed Association", "signal", "garrison"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18170408.pdf"
+  },
+  {
+    id: "mun-mercantile-1817-light-establishment",
+    year: 1817,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Light Establishment Operating Account",
+    topics: ["1812", "1813", "1814", "1815", "1816", "1817", "Light Establishment", "oil", "wick", "lamp", "buoy", "attendance"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170418no157.pdf"
+  },
+  {
+    id: "mun-mercantile-1817-fort-salutes",
+    year: 1817,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Garrison, Fort and HMS Pike Salutes",
+    topics: ["1817", "St. John's", "garrison", "forts", "HMS Pike", "salute", "colours", "feu de joie"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18170606no164.pdf"
+  },
+  {
+    id: "mun-colonial-1817-fire-dispatches",
+    year: 1817,
+    organization: "Governor of Newfoundland",
+    title: "November 1817 St. John's Fire Dispatches",
+    topics: ["1817", "St. John's", "fire", "Water Street", "Court House", "Governor's Wharf", "Ordnance Wharf", "provisions"],
+    pages: "physical PDF pp. 93 to 99",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V03.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1817-nov7-fire",
+    year: 1817,
+    organization: "The Royal Gazette",
+    title: "November 7 Fire, Provision Embargo and Newspaper Continuity",
+    topics: ["1817", "St. John's", "fire", "Water Street", "King's Wharf", "provisions", "embargo", "newspaper office"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171111.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1817-november-fires",
+    year: 1817,
+    organization: "The Royal Gazette",
+    title: "November 21 Fire, Grand Jury Finding and November 25 Ignition Attempt",
+    topics: ["1817", "St. John's", "Huie Reid and Company", "fire", "Grand Jury", "Duckworth Street", "Water Street", "ignition attempt"],
+    pages: "physical PDF pp. 2 to 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171125.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1817-post-office",
+    year: 1817,
+    organization: "The Royal Gazette",
+    title: "Post Office Temporary Relocation",
+    topics: ["1817", "St. John's", "Post Office", "Simon Solomon", "Thomas Phippard", "watchmaker", "November 7 fire"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18171230.pdf"
+  },
+  {
+    id: "mun-colonial-1817-fortifications",
+    year: 1817,
+    organization: "Commanding Royal Engineer",
+    title: "St. John's Fortification Condition Report",
+    topics: ["1817", "Fort Townshend", "Fort William", "Ordnance Yard", "King's Wharf", "Signal Hill", "Fort Amherst", "Frederick's Battery"],
+    pages: "physical PDF pp. 100 to 104",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V03.pdf"
+  },
+  {
+    id: "mun-colonial-1817-rebuilding-proposals",
+    year: 1817,
+    organization: "Governor of Newfoundland",
+    title: "Court House, Government House and Rebuilding Proposals",
+    topics: ["1817", "St. John's", "Court House", "jail", "Government House", "Signal Hill", "Martello tower", "rebuilding"],
+    pages: "physical PDF pp. 111 to 114",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V03.pdf"
+  },
+  {
     id: "mun-royal-gazette-1818-arson-rewards",
     year: 1818,
     organization: "The Royal Gazette",
@@ -14255,6 +14355,96 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1817-01-03",
+    category: "signals",
+    title: "Shore signal marked a brig trapped in ice",
+    body: "A signal was made for a brig north of St. John's. The vessel drifted south past the harbour in a field of ice with its sails handed. Boats from shore could not reach it. The report does not identify the signal apparatus or the vessel.",
+    sourceId: "mun-mercantile-1817-brig-signal",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1817-04-06",
+    category: "fire response",
+    title: "Court House guard raised an alarm that the garrison could not see",
+    body: "A fire near the road to Best's farm destroyed three buildings. The report states that fourteen people died across the Cressy and Johnson households. The Armed Association guard at the Court House gave the first general alarm, but heavy drifting snow prevented the garrison from seeing their signals. The report says no cause could be assigned.",
+    sourceId: "mun-royal-gazette-1817-april-fire",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1817-04-18",
+    category: "navigation aid",
+    title: "Light Establishment published its operating account",
+    body: "The account kept by treasurer N. Gill covers 1812 through March 1817. It records payments for oil, wick, a lamp, carpenter work, a buoy, printing, carriage and attendant service. The 1817 entries include Charles Grant's attendance and oil carriage, and Mary Hume's wick.",
+    sourceId: "mun-mercantile-1817-light-establishment",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1817-06-04",
+    category: "signals",
+    title: "Garrison, forts and HMS Pike fired coordinated salutes",
+    body: "For the sovereign's birthday, ships in port displayed colours. The garrison paraded at noon. Artillery fired a royal salute using the guns at the different forts and closed with a feu de joie. HMS Pike separately fired a royal salute and displayed colours.",
+    sourceId: "mun-mercantile-1817-fort-salutes",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1817-11-07",
+    category: "fire response",
+    title: "Fire destroyed the Court House and the Water Street store district",
+    body: "Governor Francis Pickmore reported that the fire spread from a small house beside Water Street to provision stores, the Court House, Holloway Street, Gamber Street, much of Duckworth Street and both sides of Water Street. The Navy and Army stopped the western spread after buildings were taken down. Other storehouses were demolished beside the Ordnance and Commissariat departments. Pickmore counted upwards of 130 dwellings, exclusive of wharves and stores, and estimated property losses at 400,000 to 500,000 pounds.",
+    sourceId: "mun-colonial-1817-fire-dispatches",
+    pages: "physical PDF pp. 93 to 95",
+    status: "reported"
+  },
+  {
+    date: "1817-11-21",
+    category: "fire response",
+    title: "A second fire destroyed 55 dwellings",
+    body: "The Royal Gazette reports that the fire began shortly after 3:00 a.m. at Huie, Reid and Company. It states that 55 dwellings were destroyed, more than 500 people required shelter and property losses were at least 150,000 pounds.",
+    sourceId: "mun-royal-gazette-1817-november-fires",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1817-11-25",
+    category: "fire response",
+    title: "Grand Jury opinion and a separate ignition attempt remained distinct",
+    body: "The Grand Jury attributed the November 21 fire solely to accident. The same page reports a separate fire that day in a room between Duckworth and Water streets, where burning brands were found among shavings. Two people were in custody, but the report states that the investigation was continuing. Governor Pickmore later described the November 7 and 21 fires as unexplained. These statements are retained with their dates and issuers.",
+    sourceId: "mun-royal-gazette-1817-november-fires",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1817-12-13",
+    category: "defence infrastructure",
+    title: "Commanding Engineer reported the condition of St. John's fortifications",
+    body: "The report describes Fort Townshend as dilapidated, with its harbour-facing sea battery in repair. Fort William's Gate Battery was in repair, but some ordnance had been removed. Signal Hill was limited to necessary repairs and had an incomplete 60-yard stockade on the cliff. Fort Amherst was in good repair, but its magazine remained damp after internal timber work. Frederick's Battery was serviceable but damp. The report also records the Ordnance Yard and the dismantled wharfinger's house at King's Wharf.",
+    sourceId: "mun-colonial-1817-fortifications",
+    pages: "physical PDF pp. 101 to 104",
+    status: "reported"
+  },
+  {
+    date: "1817-12-22",
+    category: "public works",
+    title: "Governor proposed a new Court House, jail and rebuilding controls",
+    body: "Pickmore proposed a remote site for a new Court House, jail and offices, a framed building from Nova Scotia or Prince Edward Island, and a stone lower storey. He proposed using stone and limestone collected at Signal Hill for a stopped Martello tower project. He also described work to make Government House habitable and proposed rebuilding regulation after the fires. The dispatch does not record completed buildings or enacted regulations.",
+    sourceId: "mun-colonial-1817-rebuilding-proposals",
+    pages: "physical PDF pp. 111 to 114",
+    status: "proposed"
+  },
+  {
+    date: "1817-12-26",
+    category: "communications",
+    title: "Post Office moved after the November fire",
+    body: "Simon Solomon announced that the Post Office had moved temporarily to the shop lately occupied by Thomas Phippard, watchmaker. Solomon states that he was burnt out on November 7. He also continued clock and watch work at the temporary shop.",
+    sourceId: "mun-royal-gazette-1817-post-office",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1818-01-01",
     category: "fire response",

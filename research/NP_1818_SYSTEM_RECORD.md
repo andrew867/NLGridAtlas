@@ -34,7 +34,7 @@ The article describes the incident as occurring on the preceding Saturday evenin
 
 The review covered all 47 surviving 1818 files listed in the MUN DAI *Newfoundland Mercantile Journal* collection and all 13 surviving 1818 files in the *Royal Gazette* collection. Together they comprise 234 physical PDF pages. The *Mercantile Journal* files run from January 9 to December 31. The online collection has no issue dated March 20, March 27, June 12, September 3 or September 17. The *Royal Gazette* files run weekly from January 13 through April 7. Its online run then resumes in January 1828.
 
-The January 9 *Mercantile Journal* prints Simon Solomon's Post Office notice dated December 26, 1817. It belongs to the 1817 record. A December 24 copied report mentions a telegraphic dispatch from Paris, but gives no Newfoundland telegraph company, apparatus, route, station or operation.
+The December 30, 1817 *Royal Gazette* first prints Simon Solomon's Post Office notice dated December 26. The January 9, 1818 *Mercantile Journal* reprints it. It belongs to the 1817 record. A December 24 copied report mentions a telegraphic dispatch from Paris, but gives no Newfoundland telegraph company, apparatus, route, station or operation.
 
 ## Sources
 

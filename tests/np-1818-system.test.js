@@ -118,7 +118,7 @@ test("1818 Helen report keeps publication date and pilot-boat actions explicit",
 test("1818 research retains archive limits, deferrals and source hashes", () => {
   const record = fs.readFileSync(path.join(root, "research", "NP_1818_SYSTEM_RECORD.md"), "utf8");
   assert.match(record, /comprise 234 physical PDF pages/);
-  assert.match(record, /Post Office notice dated December 26, 1817/);
+  assert.match(record, /Post Office notice dated December 26/);
   assert.match(record, /4e8c43a17775a56fa92df0b71b60377842145a7ae992a4b13bf5e81173a78a02/);
   assert.match(record, /does not identify a lighthouse, site, light, keeper, governing body or construction project/);
 });
