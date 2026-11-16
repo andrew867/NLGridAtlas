@@ -3178,6 +3178,18 @@
       "notes": "The Speedwell and Lively notices record separate Portugal Cove and Harbour Grace packet services, including capacity, schedules, fares and letter handling. An October editorial identifies fire-engine and lighthouse institutions as dwindling for want of local authority, then a merchants' notice establishes a private pilotage certificate and surety rule. A December report records a harbour signal being hauled down after a brig passed northward, without identifying the signal mechanism."
     },
     {
+      "id": "NPREG-207",
+      "title": "Add the 1821 Lively packet and electric-eel records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1821 electrical, telecommunications, navigation-aid, emergency-signalling and scheduled communication evidence.",
+      "dependencies": ["NPREG-206"],
+      "completion_evidence": ["research/NP_1821_SYSTEM_RECORD.md", "research/derived/np-1821-newspaper-issue-manifest.json", "src/data.js", "tests/np-1821-system.test.js"],
+      "blocker": null,
+      "notes": "The November 29 Lively notice records a new six-oar Portugal Cove and Harbour Grace packet, its passenger fares, boat hire, letter charge and collection points. The same issue prints a report of shocks and muscle contraction from a live electric eel, explicitly as non-Newfoundland electrical context. Foreign fire, lighthouse and lightning reports remain outside the Newfoundland chronology."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

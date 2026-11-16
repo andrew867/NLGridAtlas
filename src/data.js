@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1821-lively-packet",
+    year: 1821,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Lively Packet Fare and Letter Notice",
+    topics: ["1821", "Lively", "packet boat", "Portugal Cove", "Harbour Grace", "St. John's", "letters", "packages", "fares", "Francis Neary"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18211129no397.pdf"
+  },
+  {
+    id: "mun-mercantile-1821-electric-eel",
+    year: 1821,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Electric-Eel Shock Report",
+    topics: ["1821", "electric eel", "gymnotus electricus", "electrical machine", "shock", "muscle contraction", "electrical context"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18211129no397.pdf"
+  },
+  {
     id: "mun-mercantile-1822-speedwell-packet",
     year: 1822,
     organization: "Newfoundland Mercantile Journal",
@@ -14055,6 +14075,24 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1821-11-29",
+    category: "communications",
+    title: "Lively packet published fares and letter handling",
+    body: "The new packet boat Lively ran twice a week between Portugal Cove and Harbour Grace. Fares were eight shillings for ladies and gentlemen, five shillings for tradesmen and four shillings for labourers. Boat hire cost 30 shillings, and letters cost nine pence each. Mr. Lee's printing office in St. John's and proprietor Francis Neary at Portugal Cove accepted letters and packages.",
+    sourceId: "mun-mercantile-1821-lively-packet",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1821-11-29",
+    category: "electrical context",
+    title: "Newspaper described shocks from an electric eel",
+    body: "An article described a live electric eel from Surinam as a living electrical machine. It reported a shock from touch, hand and arm contraction during repeated shocks, loss of the effect when the animal was exhausted, and return of the shocks after rest. The reported observation did not occur in Newfoundland.",
+    sourceId: "mun-mercantile-1821-electric-eel",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
   {
     date: "1822-10-10",
     category: "communications",
