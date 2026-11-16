@@ -3118,6 +3118,18 @@
       "notes": "The January winter notice records substitute water service and a weekly land letter carrier. A spring notice records the altered Express packet timetable, passenger classes, letter rate and agents. A July report records lightning damage to a Carbonear business house. The conflicting April 16 and April 17 dates printed on otherwise matching packet notices remain unresolved."
     },
     {
+      "id": "NPREG-202",
+      "title": "Add the 1826 packet and Western Ward fire-watch records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1826 electrical, telecommunications, navigation-aid, emergency-signalling and scheduled communication evidence.",
+      "dependencies": ["NPREG-201"],
+      "completion_evidence": ["research/NP_1826_SYSTEM_RECORD.md", "research/derived/np-1826-newspaper-issue-manifest.json", "src/data.js", "tests/np-1826-system.test.js"],
+      "blocker": null,
+      "notes": "Express notices record winter water-and-land alternatives, a three-departure packet schedule, a reduced letter rate and an earlier daylight schedule. Published Western Fire and Safety Company rules assign personnel, fire-response equipment, alarm instruments and seasonal watch hours. No supported 1826 Newfoundland lighthouse project, electric telegraph, installed electrical circuit or operating electrical apparatus was found in the reviewed issue set."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

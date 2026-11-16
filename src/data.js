@@ -640,6 +640,56 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1826-winter-packet",
+    year: 1826,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Express Winter Boat and Land Carrier Notice",
+    topics: ["1826", "Express", "packet boat", "land carrier", "Harbour Grace", "Portugal Cove", "St. John's", "winter", "letters"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18260202no615.pdf"
+  },
+  {
+    id: "mun-mercantile-1826-express-service",
+    year: 1826,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Express Packet Timetable and Rates",
+    topics: ["1826", "Express", "packet boat", "Harbour Grace", "Portugal Cove", "passengers", "parcels", "letters"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18260511no629.pdf"
+  },
+  {
+    id: "mun-mercantile-1826-postage",
+    year: 1826,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Express Packet Postage Reduction",
+    topics: ["1826", "Express", "packet boat", "Harbour Grace", "Portugal Cove", "letters", "postage"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18260907no646.pdf"
+  },
+  {
+    id: "mun-mercantile-1826-western-fire-watch",
+    year: 1826,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Western Fire and Safety Company Rules",
+    topics: ["1826", "St. John's", "Western Ward", "fire engine", "night watch", "alarm", "lanterns", "speaking trumpets", "ladders", "rattles"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18261109no655.pdf"
+  },
+  {
+    id: "mun-mercantile-1826-winter-carrier",
+    year: 1826,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Express Packet Daylight Schedule Notice",
+    topics: ["1826", "Express", "packet boat", "letter carrier", "Harbour Grace", "St. John's", "winter", "daylight"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18261214no660.pdf"
+  },
+  {
     id: "mun-mercantile-1827-winter-packet",
     year: 1827,
     organization: "Newfoundland Mercantile Journal",
@@ -13865,6 +13915,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1826-01-26",
+    category: "communications",
+    title: "Winter packet notice defined water and land alternatives",
+    body: "The Express was laid up until spring. Its owners purchased a more suitable boat for winter crossings between Harbour Grace and Portugal Cove. If navigation closed, a letter carrier was to travel around Conception Bay. James Clift at St. John's and William Innott at Harbour Grace were the agents.",
+    sourceId: "mun-mercantile-1826-winter-packet",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1826-04-04",
+    category: "communications",
+    title: "Express packet published a three-departure timetable",
+    body: "The fitted Express packet was advertised between Harbour Grace and Portugal Cove under an experienced master. It left Harbour Grace at 09:00 on Monday, Wednesday and Saturday, then returned from Portugal Cove at 10:00 the next morning except Sunday and during bad weather. The notice set passenger, letter and parcel charges and named James Clift and William Innott as agents.",
+    sourceId: "mun-mercantile-1826-express-service",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1826-09-07",
+    category: "communications",
+    title: "Express packet reduced its single-letter charge",
+    body: "The Express packet reduced the charge for a single letter from one shilling to six pence for the rest of the season. Double letters were charged in proportion. James Clift and William Innott remained the named agents.",
+    sourceId: "mun-mercantile-1826-postage",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1826-10-12",
+    category: "communications",
+    title: "Packet schedule moved earlier for daylight passage",
+    body: "For the rest of the season, the Express letter carrier was to leave St. John's at 07:00 every Tuesday, Thursday and Saturday. The boat was to leave Harbour Grace one hour earlier on the previous morning. The stated purpose was to complete the passage by daylight.",
+    sourceId: "mun-mercantile-1826-winter-carrier",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1826-11-09",
+    category: "communications",
+    title: "Western Ward published fire-alarm and night-watch rules",
+    body: "Published Western Fire and Safety Company rules organized 100 members under wardens, captains and engineers. The fire-response inventory included an engine, lanterns, speaking trumpets, ladders, buckets, saws, hatchets and a hook ladder. Night watchmen carried a lantern and rattle, with the rattle reserved for fire or robbery alarms. The rules printed separate winter and summer watch hours.",
+    sourceId: "mun-mercantile-1826-western-fire-watch",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1827-01-13",
     category: "communications",
