@@ -3310,6 +3310,18 @@
       "notes": "The year records the Fort Amherst light-house operating season, the western-harbour Fishing Ships' Room, Ship's Coves fire access, harbour-buoy charges, hospital proposals, Ordnance fuel and Powder House repair, the proposed Portugal Cove road, regional church and gaol works, Fire Society and fishery-return payments, town and harbour improvement proposals, a public currency proposal and Government House work. The twenty downloaded Gazette files contain mixed physical pages and are recorded as dated archive files rather than clean complete issues."
     },
     {
+      "id": "NPREG-218",
+      "title": "Add the 1810 survey, navigation, defence and public-works records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1810 surveying, navigation, defence-infrastructure, transport, emergency-response, public-health and public-works evidence.",
+      "dependencies": ["NPREG-217"],
+      "completion_evidence": ["research/NP_1810_SYSTEM_RECORD.md", "research/derived/np-1810-newspaper-issue-manifest.json", "src/data.js", "tests/np-1810-system.test.js"],
+      "blocker": null,
+      "notes": "The year records road and bridge repairs, the chapel enlargement, proposed Powder Magazine rebuild, Cape Breton freestone, the Narrows signal rule, structured property returns, fort and fuel-yard firewood, proposed Ordnance Wharf work, the incomplete land survey and ship-room boundary perambulations, hospital, church and gaol proposals, the operating Fire Society, and Government House and Ships' Rooms plans. The Gazette manifest preserves the collection's explicit June missing-page filename and the shorter October and December files."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

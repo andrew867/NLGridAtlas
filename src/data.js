@@ -640,6 +640,156 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-royal-gazette-1810-roads-bridges",
+    year: 1810,
+    organization: "St. John's roads and bridges committee",
+    title: "St. John's Roads and Bridges Repair Tender",
+    topics: ["1810", "St. John's", "roads", "bridges", "repairs", "tender"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18100517.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1810-chapel-enlargement",
+    year: 1810,
+    organization: "Roman Catholic Chapel",
+    title: "St. John's Roman Catholic Chapel Enlargement Accounts",
+    topics: ["1810", "St. John's", "Roman Catholic Chapel", "enlargement", "accounts"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18100614.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1810-powder-magazine",
+    year: 1810,
+    organization: "Powder Magazine committee",
+    title: "Powder Magazine Rebuild Tender",
+    topics: ["1810", "St. John's", "Powder Magazine", "rebuild", "tender"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18100614.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1810-freestone",
+    year: 1810,
+    organization: "Office of Ordnance",
+    title: "Cape Breton Freestone Transport Tender",
+    topics: ["1810", "St. John's", "Cape Breton", "freestone", "King's works", "Ordnance"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18100823.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1810-narrows-signal",
+    year: 1810,
+    organization: "Governor of Newfoundland",
+    title: "Narrows Distinguishing-Signal Enforcement",
+    topics: ["1810", "St. John's", "Narrows", "fort", "distinguishing signal", "navigation"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18100913.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1810-property-register",
+    year: 1810,
+    organization: "Governor of Newfoundland",
+    title: "Island Property-Return Proclamation",
+    topics: ["1810", "Newfoundland", "property register", "boundaries", "rooms", "erections", "survey"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18100927.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1810-ordnance-firewood",
+    year: 1810,
+    organization: "Ordnance Barrack Office",
+    title: "Fort and Fuel-Yard Firewood Tender",
+    topics: ["1810", "St. John's", "Fort Townshend", "Signal Hill", "Ordnance Fuel Yard", "firewood"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18101122.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1810-ordnance-wharf",
+    year: 1810,
+    organization: "Office of Ordnance",
+    title: "Ordnance Wharf Extension and Repair Tender",
+    topics: ["1810", "St. John's", "Ordnance Wharf", "Royal Engineer", "plan", "extension", "repairs"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18101122.pdf"
+  },
+  {
+    id: "mun-colonial-1810-land-survey",
+    year: 1810,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Land-Survey Completion Proposal",
+    topics: ["1810", "St. John's", "Lionel Chancey", "land survey", "boundaries", "surveyor"],
+    pages: "physical PDF pp. 310 to 311",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1810-fishing-rooms",
+    year: 1810,
+    organization: "Governor of Newfoundland",
+    title: "Fishing Ships' Rooms Boundary Perambulations",
+    topics: ["1810", "St. John's", "Fishing Ships' Rooms", "perambulation", "encroachment", "boundaries"],
+    pages: "physical PDF p. 313",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1810-hospital",
+    year: 1810,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Public Hospital Proposal",
+    topics: ["1810", "St. John's", "public hospital", "land", "subscription"],
+    pages: "physical PDF pp. 312 to 313",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1810-regional-public-works",
+    year: 1810,
+    organization: "Governor of Newfoundland",
+    title: "Church and Gaol Works and Proposals",
+    topics: ["1810", "Trinity", "Greenspond", "Burin", "Fortune Bay", "church", "gaol", "public works"],
+    pages: "physical PDF pp. 313 to 316",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1810-fire-society",
+    year: 1810,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Fire Society Organization and Funding Request",
+    topics: ["1810", "St. John's", "Fire Society", "Court of Sessions", "fire fines"],
+    pages: "physical PDF pp. 317 to 318",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1810-government-house",
+    year: 1810,
+    organization: "Governor of Newfoundland",
+    title: "Government House Repair Plans and Estimate",
+    topics: ["1810", "St. John's", "Government House", "Chief Engineer", "plan", "section", "elevation", "repairs"],
+    pages: "physical PDF pp. 328 to 329",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1810-ships-rooms-plans",
+    year: 1810,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Ships' Rooms Plans and Regulation Proposal",
+    topics: ["1810", "St. John's", "Ships' Rooms", "plans", "property regulation"],
+    pages: "physical PDF p. 330",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
     id: "mun-royal-gazette-1811-fort-amherst-light",
     year: 1811,
     organization: "Fort Amherst Light-House Committee",
@@ -15055,6 +15205,141 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1810-05-03",
+    category: "transport",
+    title: "St. John's invited road and bridge repair tenders",
+    body: "The committee invited proposals to repair roads and bridges in St. John's. Contractors were to obtain the work particulars from the committee; the notice does not establish completion.",
+    sourceId: "mun-royal-gazette-1810-roads-bridges",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1810-05-31",
+    category: "public works",
+    title: "Chapel enlargement accounts were called in",
+    body: "A notice requested accounts arising from the late enlargement of the Roman Catholic Chapel in St. John's. It establishes that an enlargement had occurred but gives no dimensions or completion date.",
+    sourceId: "mun-royal-gazette-1810-chapel-enlargement",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1810-06-07",
+    category: "defence infrastructure",
+    title: "Committee sought a Powder Magazine rebuild",
+    body: "The notice invited proposals to rebuild the Powder Magazine. It names the five committee members receiving proposals but does not establish an award or completed work.",
+    sourceId: "mun-royal-gazette-1810-powder-magazine",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1810-08-21",
+    category: "public administration",
+    title: "Property returns required exact boundaries",
+    body: "The proclamation required returns for rooms and other erections, including exact boundaries, location, claimant, claim, occupier, construction or transfer history, consideration, rent and lease term.",
+    sourceId: "mun-royal-gazette-1810-property-register",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1810-08-23",
+    category: "defence infrastructure",
+    title: "Ordnance sought 1,000 tons of Cape Breton freestone",
+    body: "The Office of Ordnance invited a transport rate per ton for landing 1,000 tons of freestone from Cape Breton for His Majesty's works at St. John's.",
+    sourceId: "mun-royal-gazette-1810-freestone",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1810-09-13",
+    category: "navigation",
+    title: "Fort enforced the Narrows distinguishing signal",
+    body: "Vessels were warned not to pass the Narrows without their distinguishing signal. The fort officer was to fire at a vessel attempting passage, charge for the shots and stop the vessel until payment.",
+    sourceId: "mun-royal-gazette-1810-narrows-signal",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1810-11-08",
+    category: "defence infrastructure",
+    title: "Three posts required 150 cords of firewood",
+    body: "The tender sought 150 cords of spruce or birch firewood for Fort Townshend, Signal Hill and the Ordnance Fuel Yard. Deliveries were divided among March 1, April 1 and May 1, with cartage included in each post's rate.",
+    sourceId: "mun-royal-gazette-1810-ordnance-firewood",
+    pages: "physical PDF p. 1",
+    status: "proposed"
+  },
+  {
+    date: "1810-11-15",
+    category: "harbour infrastructure",
+    title: "Ordnance issued a wharf extension and repair tender",
+    body: "The Ordnance Wharf contract was supported by a plan and description at the Commanding Royal Engineer's office in the Ordnance Yard. Security and substantial, workmanlike performance were required.",
+    sourceId: "mun-royal-gazette-1810-ordnance-wharf",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1810-11-25",
+    category: "surveying",
+    title: "Governor proposed completing the St. John's land survey",
+    body: "Lionel Chancey had worked on the land survey for a year before stopping without remuneration. The governor proposed a completion reward and a permanent surveyor allowance of 25 pounds per year.",
+    sourceId: "mun-colonial-1810-land-survey",
+    pages: "physical PDF pp. 310 to 311",
+    status: "proposed"
+  },
+  {
+    date: "1810-11-25",
+    category: "surveying",
+    title: "Three perambulations failed to recover ship-room boundaries",
+    body: "The governor reported three 1810 perambulations of the Fishing Ships' Rooms with judicial officers, magistrates and older inhabitants. Accumulated encroachments made the real boundaries nearly impossible to establish.",
+    sourceId: "mun-colonial-1810-fishing-rooms",
+    pages: "physical PDF p. 313",
+    status: "reported"
+  },
+  {
+    date: "1810-11-25",
+    category: "public health",
+    title: "Committee proposed a public hospital",
+    body: "A St. John's committee had agreed to advance 700 pounds toward a public hospital and requested land for the building. The report does not establish construction in 1810.",
+    sourceId: "mun-colonial-1810-hospital",
+    pages: "physical PDF pp. 312 to 313",
+    status: "proposed"
+  },
+  {
+    date: "1810-11-25",
+    category: "public works",
+    title: "Governor reported regional church and gaol needs",
+    body: "The report described Trinity church as ruined and proposed 80 pounds in aid; Greenspond had subscribed 200 pounds toward a 300-pound place of worship; Burin gaol was expected the following year; Fortune Bay sought matching aid for a church and gaol.",
+    sourceId: "mun-colonial-1810-regional-public-works",
+    pages: "physical PDF pp. 313 to 316",
+    status: "proposed"
+  },
+  {
+    date: "1810-11-25",
+    category: "fire response",
+    title: "St. John's Fire Society rules were in force",
+    body: "The governor reported that principal inhabitants had formed the Fire Society, the Grand Jury approved its rules, magistrates sanctioned them and the rules were entered in Court of Sessions records. The Society requested fire fines estimated at about 20 pounds.",
+    sourceId: "mun-colonial-1810-fire-society",
+    pages: "physical PDF pp. 317 to 318",
+    status: "reported"
+  },
+  {
+    date: "1810-11-25",
+    category: "public works",
+    title: "Chief Engineer prepared Government House repair plans",
+    body: "Government House was described as nearly uninhabitable. The Chief Engineer prepared an estimate, plan, section and elevation; the governor requested unavailable materials so work could begin in spring.",
+    sourceId: "mun-colonial-1810-government-house",
+    pages: "physical PDF pp. 328 to 329",
+    status: "proposed"
+  },
+  {
+    date: "1810-11-25",
+    category: "public administration",
+    title: "Ships' Rooms plans were taken to London",
+    body: "The governor reported bringing plans of the St. John's Ships' Rooms to London and urged final regulation. The record establishes the plans, not a completed cadastral settlement.",
+    sourceId: "mun-colonial-1810-ships-rooms-plans",
+    pages: "physical PDF p. 330",
+    status: "proposed"
+  },
   {
     date: "1811-04-04",
     category: "navigation",
