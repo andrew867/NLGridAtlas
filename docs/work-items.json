@@ -3094,6 +3094,18 @@
       "notes": "The Express notice records repair and regular operation. A winter notice records substitute water service and a weekly land-carrier fallback. Matthew Guswell's purpose-built packet added three scheduled letter routes. The Royal Gazette separately reported lightning damage at St. John's and Carbonear. No supported 1829 lighthouse, electrical telegraph or installed electrical apparatus was found."
     },
     {
+      "id": "NPREG-200",
+      "title": "Add the 1828 packet and emergency communication records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1828 electrical, telecommunications, navigation-aid and scheduled communication evidence.",
+      "dependencies": ["NPREG-199"],
+      "completion_evidence": ["research/NP_1828_SYSTEM_RECORD.md", "research/derived/np-1828-newspaper-issue-manifest.json", "src/data.js", "tests/np-1828-system.test.js"],
+      "blocker": null,
+      "notes": "Packet notices document Express alterations, a winter water-and-land fallback, the launched Union packet, a repaired Express and James Doyle's Dart. Western Ward rules assign lanterns, speaking trumpets and engine-house command duties for a fire alarm. No supported 1828 lighthouse, electrical telegraph or installed electrical apparatus was found."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

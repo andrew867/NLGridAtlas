@@ -408,10 +408,11 @@ Updated: 2026-11-15
 - Added the 1831 Harbour Grace packet communication record. The *Express* notice gives a three-departure weekly timetable between Harbour Grace and Portugal Cove, letter and parcel carriage, and the named agents Henry Winton and Robert Oke. Its reference to usual trips is retained as a resumed service, not a first-operation date.
 - Added the 1830 Conception Bay packet communication record. January notices document three routes operated by the *Express*, Matthew Guswell and James Doyle's *Dart*. Later notices record the repaired *Express* and the *Arrow*. Together they identify Carbonear, Cubits, Harbour Grace, Brigus, Port de Grave, Bay Roberts, Portugal Cove and the St. John's messenger connection.
 - Added the 1829 packet continuity and lightning records. The *Express* notice records a thorough repair and its regular timetable. The winter notice separates substitute boat operation from a weekly land-carrier fallback. Matthew Guswell then advertised a purpose-built packet on three Conception Bay routes. A separate *Royal Gazette* report records lightning damage at St. John's and Carbonear.
+- Added the 1828 packet and emergency-communication records. The *Express* notices separate passenger alterations, a winter substitute boat, a weekly land-carrier fallback and a later thorough repair. Matthew Guswell's Union packet adds scheduled Carbonear, Brigus and Port de Grave, and Harbour Grace routes. James Doyle's *Dart* documents the Carbonear route. Western Ward rules assign engine-house keys, lanterns, speaking trumpets and fire-alarm command duties.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1828 after the 1829 packet and lightning records under `NPREG-199`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1827 after the 1828 packet and emergency-communication records under `NPREG-200`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

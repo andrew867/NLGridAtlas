@@ -640,6 +640,66 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-newfoundlander-1828-packet-alterations",
+    year: 1828,
+    organization: "The Newfoundlander",
+    title: "Express Packet Alterations and Timetable",
+    topics: ["1828", "Express", "packet boat", "Harbour Grace", "Portugal Cove", "St. John's", "alterations", "passengers", "parcels", "letters"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18280109.pdf"
+  },
+  {
+    id: "mun-newfoundlander-1828-winter-packet",
+    year: 1828,
+    organization: "The Newfoundlander",
+    title: "Winter Packet and Land Carrier Notice",
+    topics: ["1828", "Express", "packet boat", "land carrier", "Harbour Grace", "Portugal Cove", "St. John's", "winter", "service continuity", "letters"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18280305.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1828-western-watch-fire",
+    year: 1828,
+    organization: "The Royal Gazette",
+    title: "Western Ward Watch and Fire Company Rules",
+    topics: ["1828", "St. John's", "Western Ward", "night watch", "fire company", "engine house", "lantern", "speaking trumpet", "alarm", "emergency communications"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18280422.pdf"
+  },
+  {
+    id: "mun-public-ledger-1828-union-packet",
+    year: 1828,
+    organization: "Public Ledger",
+    title: "Union Packet Boat Operating Notice",
+    topics: ["1828", "Union", "Matthew Guswell", "packet boat", "Portugal Cove", "Carbonear", "Brigus", "Port de Grave", "Harbour Grace", "St. John's", "passengers", "parcels", "letters"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18281219.pdf"
+  },
+  {
+    id: "mun-newfoundlander-1828-packet-repair",
+    year: 1828,
+    organization: "The Newfoundlander",
+    title: "Express Packet Repair and Continued Service",
+    topics: ["1828", "Express", "packet boat", "Harbour Grace", "Portugal Cove", "St. John's", "repair", "passengers", "parcels", "letters"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18280619.pdf"
+  },
+  {
+    id: "mun-newfoundlander-1828-dart-packet",
+    year: 1828,
+    organization: "The Newfoundlander",
+    title: "Dart Packet Operating Notice",
+    topics: ["1828", "Dart", "James Doyle", "packet boat", "Carbonear", "Portugal Cove", "letters", "parcels"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18281225.pdf"
+  },
+  {
     id: "mun-newfoundlander-1829-packet-repair",
     year: 1829,
     organization: "The Newfoundlander",
@@ -13775,6 +13835,60 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1828-01-09",
+    category: "communications",
+    title: "Express packet advertised passenger alterations",
+    body: "The Express packet notice stated that the boat had undergone alterations for passenger comfort and continued between Harbour Grace and Portugal Cove. It scheduled three weekly departures, next-day returns and a St. John's carrier connection. The service carried passengers, parcels and letters.",
+    sourceId: "mun-newfoundlander-1828-packet-alterations",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1828-03-05",
+    category: "communications",
+    title: "Winter notice combined packet and land communication",
+    body: "The Express was laid up for winter. Its notice said that a suitable boat with an experienced crew would run between Harbour Grace and Portugal Cove when conditions allowed. If water communication stopped, a land letter carrier would travel weekly from Harbour Grace to St. John's, weather permitting.",
+    sourceId: "mun-newfoundlander-1828-winter-packet",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1828-04-08",
+    category: "communications",
+    title: "Western Ward assigned fire-alarm command equipment",
+    body: "The Western Association rules established a night watch and fire company. Wardens and the captain held engine-house keys and were assigned lanterns and speaking trumpets for an alarm. Lieutenants and members were to report to the engine house and assist with the engine under the wardens' direction.",
+    sourceId: "mun-royal-gazette-1828-western-watch-fire",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1828-05-02",
+    category: "communications",
+    title: "Union packet served three Conception Bay routes",
+    body: "Matthew Guswell stated that he had launched the Union packet and was operating between Portugal Cove and Carbonear, Brigus and Port de Grave, and Harbour Grace. Henry Winton's St. John's shop received letters and parcels, closed the mails and dispatched the connecting messenger at 08:00.",
+    sourceId: "mun-public-ledger-1828-union-packet",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1828-05-07",
+    category: "communications",
+    title: "Express packet returned after thorough repair",
+    body: "The Express notice stated that the boat had undergone a thorough repair and continued between Harbour Grace and Portugal Cove. It retained three weekly departures, next-day returns and the St. John's carrier connection for passengers, parcels and letters.",
+    sourceId: "mun-newfoundlander-1828-packet-repair",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1828-12-25",
+    category: "communications",
+    title: "Dart notice recorded Carbonear packet service",
+    body: "James Doyle's Dart notice recorded continued operation between Carbonear and Portugal Cove during the remainder of the season. Doyle stated that he would receive and deliver letters and parcels personally. The notice does not identify the route's first service date.",
+    sourceId: "mun-newfoundlander-1828-dart-packet",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
   {
     date: "1829-01-01",
     category: "communications",
