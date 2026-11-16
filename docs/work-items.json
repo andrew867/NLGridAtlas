@@ -3262,6 +3262,18 @@
       "notes": "The year records the 150-cord fort-fuel allocation, a Grand Jury fire-readiness standard, a three-fort gun-signal sequence, a signal-based fort and civil patrol plan, the proposed King's Beach common sewer, and the completed land survey and Record Office. The reproduced dispatch volume omits the attached 1815 Engineer Department fortification report, so no condition claim is assigned to it."
     },
     {
+      "id": "NPREG-214",
+      "title": "Add the 1814 postal, wharf, fuel, fire-response and public-works records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1814 telecommunications, emergency-response, defence-infrastructure, transport, surveying and public-works evidence.",
+      "dependencies": ["NPREG-213"],
+      "completion_evidence": ["research/NP_1814_SYSTEM_RECORD.md", "research/derived/np-1814-newspaper-issue-manifest.json", "src/data.js", "tests/np-1814-system.test.js"],
+      "blocker": null,
+      "notes": "The year records the Post Office collection change and Halifax packet-mail failure, Ordnance Wharf rules and material tenders, two garrison fuel tenders, defined truckage routes, two fire reports, a proposed Record Office and survey, Signal Hill defence materials, the Volunteer Rangers stores return, and the proposed market. Tenders and contemplated works remain proposed; reported operations and events remain reported."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

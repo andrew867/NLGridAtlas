@@ -422,10 +422,11 @@ Updated: 2026-11-16
 - Added the 1817 signal, light, fire, fortification and rebuilding records. The record preserves the newspaper and official November 7 fire counts as separate dated reports, separates the November 21 Grand Jury opinion from a later ignition attempt, records the Post Office relocation and keeps the December rebuilding program at proposal status.
 - Added the 1816 fire, buoy, fort-salute and fuel records. Thomas Coote's St. John's fire estimates remain reported figures. The Harbour Grace newspaper suspicion and Pickmore's later accidental-cause statement remain separate. The archive filename and printed date for the outer-buoy report are both retained.
 - Added the 1815 fort-fuel, fire-readiness, signal, patrol, sewer and Record Office records. The March event retains the dated report and its relative event wording. The King's Beach sewer remains proposed, while the land survey and Record Office remain reported completed work. The missing Engineer Department attachment is not used for a fort-condition claim.
+- Added the 1814 postal, wharf, fuel, fire-response and public-works records. The sources distinguish operating rules and reported events from tenders, contemplated defences and proposed buildings. The December 1 Meeting House report retains its relative event wording, while the market and letter-carrier notices keep their 1814 notice dates and January 1815 publication date.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1814 after the 1815 newspaper and colonial records under `NPREG-213`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1813 after the 1814 newspaper and colonial records under `NPREG-214`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

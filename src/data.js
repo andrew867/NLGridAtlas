@@ -640,6 +640,156 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-royal-gazette-1814-post-office",
+    year: 1814,
+    organization: "St. John's Post Office",
+    title: "St. John's Post Office Collection Notice",
+    topics: ["1814", "St. John's", "Post Office", "letters", "collection", "delivery"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18140210.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-public-repair-fund",
+    year: 1814,
+    organization: "St. John's public-works subscribers",
+    title: "Road, Bridge and Fire-Engine Repair Lottery",
+    topics: ["1814", "St. John's", "road", "bridge", "fire engine", "lottery", "public works"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18140217.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-ordnance-materials",
+    year: 1814,
+    organization: "Ordnance Department",
+    title: "Ordnance Yard, King's Wharf and Barrack Material Tenders",
+    topics: ["1814", "St. John's", "Ordnance Yard", "King's Wharf", "coal", "firewood", "rails", "pickets", "plank", "flagstaff"],
+    pages: "physical PDF p. 2",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18140331.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-ordnance-wharf",
+    year: 1814,
+    organization: "Ordnance Department",
+    title: "Ordnance Wharf Operating Rules",
+    topics: ["1814", "St. John's", "Ordnance wharf", "loading", "gate", "boats", "ice", "harbour depth"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18140407.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-garrison-fuel-may",
+    year: 1814,
+    organization: "Commissariat Office",
+    title: "St. John's Garrison Coal and Firewood Tender",
+    topics: ["1814", "St. John's", "Signal Hill", "Fort Townshend", "Fort William", "Commissariat Wharf", "coal", "firewood"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18140519.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-chapel-fire",
+    year: 1814,
+    organization: "The Royal Gazette",
+    title: "Chapel-Area Fire and Engine Response",
+    topics: ["1814", "St. John's", "fire", "chapel", "firemen", "fire engine"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18140616.pdf"
+  },
+  {
+    id: "mun-colonial-1814-chapel-sites",
+    year: 1814,
+    organization: "Governor of Newfoundland",
+    title: "Methodist Chapel Site Review",
+    topics: ["1814", "St. John's", "Methodist chapel", "Gallows Hill Ship Room", "Fort Townshend", "Ordnance wharf", "public market"],
+    pages: "physical PDF pp. 14 to 15",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V02.pdf"
+  },
+  {
+    id: "mun-colonial-1814-record-office",
+    year: 1814,
+    organization: "Governor of Newfoundland",
+    title: "Record Office, Survey and Defence Works Reports",
+    topics: ["1814", "St. John's", "Record Office", "cast-iron doors", "Signal Hill", "survey", "Ferryland", "defence works"],
+    pages: "physical PDF pp. 17, 66 and 68 to 70",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V02.pdf"
+  },
+  {
+    id: "mun-colonial-1814-rangers",
+    year: 1814,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Volunteer Rangers Report",
+    topics: ["1814", "St. John's", "Volunteer Rangers", "King's Stores", "arms", "military stores"],
+    pages: "physical PDF pp. 19 to 20",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V02.pdf"
+  },
+  {
+    id: "mun-colonial-1814-mail",
+    year: 1814,
+    organization: "Governor of Newfoundland",
+    title: "Halifax Packet-Mail Failure Report",
+    topics: ["1814", "Newfoundland", "Halifax", "packet mail", "King's ship", "sealed mail bag"],
+    pages: "physical PDF p. 117",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V02.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-garrison-fuel-september",
+    year: 1814,
+    organization: "Commissariat Office",
+    title: "Revised St. John's Garrison Fuel Tender",
+    topics: ["1814", "St. John's", "Signal Hill", "Fort Townshend", "Fort William", "Commissariat Wharf", "coal", "firewood"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18140929.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-truckage",
+    year: 1814,
+    organization: "Commissariat Office",
+    title: "King's Wharf and Fort Truckage Tender",
+    topics: ["1814", "St. John's", "King's Wharf", "Signal Hill", "Fort Townshend", "Fort William", "truckage", "coal", "firewood", "provisions"],
+    pages: "physical PDF p. 2",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18141103.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-meeting-house-fire",
+    year: 1814,
+    organization: "The Royal Gazette",
+    title: "Meeting House Fire Report",
+    topics: ["1814", "St. John's", "Meeting House", "fire", "tenements"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18141201.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-market",
+    year: 1814,
+    organization: "St. John's market subscribers",
+    title: "St. John's Market Building Proposal",
+    topics: ["1814", "St. John's", "market", "pump", "stall", "public works"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18150105.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1814-letter-carrier",
+    year: 1814,
+    organization: "St. John's Post Office",
+    title: "St. John's Letter-Carrier Notice",
+    topics: ["1814", "St. John's", "Post Office", "letter carrier", "local delivery"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18150105.pdf"
+  },
+  {
     id: "mun-royal-gazette-1815-fort-fuel",
     year: 1815,
     organization: "Commissariat Office",
@@ -14505,6 +14655,159 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1814-01-13",
+    category: "public works",
+    title: "Lottery proposed repairs to roads, bridges and fire engines",
+    body: "The notice offered 1,000 tickets at 20 shillings each. Its printed schedule allocated 600 pounds to prizes and left 400 pounds for repairs to the town's roads, bridges and fire engines.",
+    sourceId: "mun-royal-gazette-1814-public-repair-fund",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1814-02-10",
+    category: "communications",
+    title: "Post Office changed local letter collection",
+    body: "The notice states that few letters were brought to the office compared with the number received at the port. It ended delivery to individual addresses, directed staff to post a list outside the office and required recipients to collect their letters and pay on delivery.",
+    sourceId: "mun-royal-gazette-1814-post-office",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1814-03-10",
+    category: "defence infrastructure",
+    title: "Ordnance departments sought fuel, timber and a flagstaff spar",
+    body: "The Ordnance notice sought 400 hogsheads of coal, 300 rails, 3,000 pickets, 100 cords of firewood, 4,000 superficial feet of 3-inch plank and one 50-foot flagstaff spar. A separate barrack notice on the same page sought 3,000 hogsheads of coal and 200 cords of firewood. These were solicitations, not completed deliveries.",
+    sourceId: "mun-royal-gazette-1814-ordnance-materials",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1814-03-19",
+    category: "harbour infrastructure",
+    title: "Ordnance Wharf rules protected access and harbour depth",
+    body: "The rules kept the wharf and platform clear for landing, limited department vessels to loading and discharging, required the department's boats to be moored before dark and directed the wharf keeper to prevent ice damage. They also prohibited coal, sand and stone from falling into the water because the deposits reduced harbour depth.",
+    sourceId: "mun-royal-gazette-1814-ordnance-wharf",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1814-03-19",
+    category: "public works",
+    title: "Governor rejected three proposed Methodist chapel sites",
+    body: "Keats reported that one site occupied the principal part of Gallows Hill Ship Room reserved for a proposed public market, another lay inside the building-control line around Fort Townshend and beside the garrison church route, and the third was beside the water and a costly Ordnance and Commissariat wharf then being built.",
+    sourceId: "mun-colonial-1814-chapel-sites",
+    pages: "physical PDF pp. 14 to 15",
+    status: "reported"
+  },
+  {
+    date: "1814-04-01",
+    category: "public works",
+    title: "Record Office required two cast-iron doors",
+    body: "Keats reported Treasury authority for a Record Office at St. John's and requested two complete cast-iron doors, each 6 feet high and 2 feet 9 inches wide. His annual report later states that construction was deferred because the doors did not arrive before frost.",
+    sourceId: "mun-colonial-1814-record-office",
+    pages: "physical PDF pp. 17 and 68 to 70",
+    status: "proposed"
+  },
+  {
+    date: "1814-05-11",
+    category: "defence infrastructure",
+    title: "Commissariat sought fuel for three forts",
+    body: "The tender sought 2,000 hogsheads of coal at the Commissariat Wharf and 200 cords of firewood divided equally among Signal Hill, Fort Townshend and Fort William.",
+    sourceId: "mun-royal-gazette-1814-garrison-fuel-may",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1814-06-16",
+    category: "fire response",
+    title: "Firemen and engines contained a chapel-area fire",
+    body: "The Royal Gazette reports that fire began at about 8:00 a.m. in Doctor Donogan's rooms near the chapel. The building and its contents were destroyed, but firemen and engines prevented the fire from spreading farther.",
+    sourceId: "mun-royal-gazette-1814-chapel-fire",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1814-07-08",
+    category: "defence infrastructure",
+    title: "Volunteer Rangers returned arms and stores",
+    body: "Keats reported that the corps had held no drills, parades or field day during his absence, more than two-thirds had left St. John's and its officers could not assemble one company for the sovereign's birthday. He ordered the arms and military stores returned to King's Stores and suspended payments, while expressly making no accusation of disloyalty.",
+    sourceId: "mun-colonial-1814-rangers",
+    pages: "physical PDF pp. 19 to 20",
+    status: "reported"
+  },
+  {
+    date: "1814-09-15",
+    category: "defence infrastructure",
+    title: "Commissariat revised the garrison fuel tender",
+    body: "The later tender sought 1,000 to 1,500 hogsheads of coal and 200 cords of firewood. It allowed firewood delivery to Signal Hill, Fort Townshend, Fort William or the Commissariat Wharf by February 10, 1815.",
+    sourceId: "mun-royal-gazette-1814-garrison-fuel-september",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1814-09-30",
+    category: "communications",
+    title: "Governor reported a Halifax packet-mail failure",
+    body: "Keats reported that many Newfoundland letters from England remained at Halifax despite a King's ship sent expressly for the mail. He proposed that London make up a separate sealed Newfoundland bag so the letters would not require sorting at Halifax.",
+    sourceId: "mun-colonial-1814-mail",
+    pages: "physical PDF p. 117",
+    status: "reported"
+  },
+  {
+    date: "1814-10-27",
+    category: "transport",
+    title: "Truckage tender defined the King's Wharf and fort routes",
+    body: "The tender requested separate rates for coal, firewood and provisions between King's Wharf, Signal Hill, Fort William and Fort Townshend, including firewood and provisions between Fort William and Signal Hill. The proposed contract ran for 12 months from November 15.",
+    sourceId: "mun-royal-gazette-1814-truckage",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1814-12-01",
+    category: "fire response",
+    title: "Fire reached the west end of the Meeting House",
+    body: "The issue reports a fire on what it calls Monday morning last in James Duggan's house in front of the Meeting House. Duggan's house and two adjoining tenements burned. The Meeting House caught fire at its west end, but the report states that exertion and nearly calm weather prevented material damage to it and neighbouring buildings.",
+    sourceId: "mun-royal-gazette-1814-meeting-house-fire",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1814-12-01",
+    category: "communications",
+    title: "Post Office sought a local letter carrier",
+    body: "The notice sought a steady, sober man with a letter-carrier to deliver letters to local recipients. It carries a December 1, 1814 date and was printed on January 5, 1815.",
+    sourceId: "mun-royal-gazette-1814-letter-carrier",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1814-12-29",
+    category: "defence infrastructure",
+    title: "Annual report recorded Signal Hill materials and regional gun placements",
+    body: "Keats reported that the Engineer Department was collecting and forming materials for contemplated Signal Hill defences. He also reported two 18-pounder guns sent to Ferryland and small Newfoundland Regiment detachments assigned to Ferryland, Burin and St. Lawrence. The Signal Hill work remained contemplated.",
+    sourceId: "mun-colonial-1814-record-office",
+    pages: "physical PDF p. 66",
+    status: "reported"
+  },
+  {
+    date: "1814-12-29",
+    category: "surveying",
+    title: "General survey near St. John's was commissioned",
+    body: "Thomas George William Hasstaff was engaged for 100 pounds to prepare a general survey and plan of Crown grants near St. John's, with two artillery assistants at 1 shilling per day each. The survey was not reported complete until 1815.",
+    sourceId: "mun-colonial-1814-record-office",
+    pages: "physical PDF pp. 68 to 70",
+    status: "proposed"
+  },
+  {
+    date: "1814-12-29",
+    category: "public works",
+    title: "Market building was proposed for the late-fire site",
+    body: "The notice proposed an oblong building with a central pump, equal stalls with lofts and covered frontage, and space for fresh meat, poultry, vegetables and fish. Construction depended on enough stalls being engaged. The notice was printed on January 5, 1815.",
+    sourceId: "mun-royal-gazette-1814-market",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
   {
     date: "1815-01-05",
     category: "defence infrastructure",
