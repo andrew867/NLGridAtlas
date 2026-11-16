@@ -1,0 +1,393 @@
+{
+  "collection": "The Newfoundlander",
+  "year": 1830,
+  "retrieved": "2026-11-15",
+  "issue_count": 55,
+  "items": [
+    {
+      "date": "18300107",
+      "filename": "Newfoundlander18300107.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300107.pdf",
+      "bytes": 3662657,
+      "sha256": "52ba949d77366c55ff24e00df1e36fc5431133959e41496c3eadbd2a1aada727"
+    },
+    {
+      "date": "18300114",
+      "filename": "Newfoundlander18300114.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300114.pdf",
+      "bytes": 3640577,
+      "sha256": "712d7a32c3e9484c29775f806ff2ad2d138da8045974b8294b89be85be1f2ca0"
+    },
+    {
+      "date": "18300121",
+      "filename": "Newfoundlander18300121.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300121.pdf",
+      "bytes": 3504361,
+      "sha256": "bfe885fef6ec75a93637fdb1dd07307db2beacac037e0b3becfb670370f9e81a"
+    },
+    {
+      "date": "18300128",
+      "filename": "Newfoundlander18300128.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300128.pdf",
+      "bytes": 3546383,
+      "sha256": "85bc64a535ca0381fd77d0f23a4b0d42c03eedd088c97da73a449ca7b378b98f"
+    },
+    {
+      "date": "18300204",
+      "filename": "Newfoundlander18300204.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300204.pdf",
+      "bytes": 3483673,
+      "sha256": "85b3a29ea5aa42035e8907b826a625998cea644da0f52c8a2f576a65be88b0c5"
+    },
+    {
+      "date": "18300211",
+      "filename": "Newfoundlander18300211.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300211.pdf",
+      "bytes": 3589760,
+      "sha256": "e4beb2f3da556d80446f6a41fc7c005d1c0386e8a1d90feda6e37a5cd2824054"
+    },
+    {
+      "date": "18300218",
+      "filename": "Newfoundlander18300218.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300218.pdf",
+      "bytes": 3536957,
+      "sha256": "8462d42791f858ef8f594389fad9e497d7725da9aeaba80c914fe034de9d0d13"
+    },
+    {
+      "date": "18300225",
+      "filename": "Newfoundlander18300225.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300225.pdf",
+      "bytes": 3578227,
+      "sha256": "73b5434d79ac22b58ede2bcf706b7648b2b80f59655aef4cba32307d8c9de41e"
+    },
+    {
+      "date": "18300304",
+      "filename": "Newfoundlander18300304.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300304.pdf",
+      "bytes": 3528471,
+      "sha256": "4748ac35127edb855957ed25822893da835d96e0186920b0f4dae3471e0004f6"
+    },
+    {
+      "date": "18300311",
+      "filename": "Newfoundlander18300311.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300311.pdf",
+      "bytes": 3363190,
+      "sha256": "64fc9a192c76b4aa7b2bf84ef9306c8f970e8d11e011cf72de539c3e9c579528"
+    },
+    {
+      "date": "18300318",
+      "filename": "Newfoundlander18300318.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300318.pdf",
+      "bytes": 3442222,
+      "sha256": "92e31c13c27fdf9eb0a3385de948bdee6f109f9be28f61963ebf29bf8b2aa80b"
+    },
+    {
+      "date": "18300325",
+      "filename": "Newfoundlander18300325.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300325.pdf",
+      "bytes": 3529104,
+      "sha256": "72e8e2225cea98a5c8c04dd9043013e895252cbdcf193e7c1532db486fee482e"
+    },
+    {
+      "date": "18300401",
+      "filename": "Newfoundlander18300401.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300401.pdf",
+      "bytes": 3573066,
+      "sha256": "692523234d8c39b18b985e806f19fa70a6c1ba0ba72cc1ab703f9ecdaaefac0e"
+    },
+    {
+      "date": "18300408",
+      "filename": "Newfoundlander18300408.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300408.pdf",
+      "bytes": 3548689,
+      "sha256": "a864e4ba23bb964ed0742bdfa57380179ce3d132f76d45a4eb74bc47d7a0481e"
+    },
+    {
+      "date": "18300415",
+      "filename": "Newfoundlander18300415.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300415.pdf",
+      "bytes": 3363533,
+      "sha256": "f4ca5f88ba4fe3a4ab8ac04d642d7c63dba74019f18ea229e035bdb24084412d"
+    },
+    {
+      "date": "18300422",
+      "filename": "Newfoundlander18300422.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300422.pdf",
+      "bytes": 3216118,
+      "sha256": "fd2a1b1f00de4f0ad6de9e85a5cf25c80a78b9af468240381a9eb0ed9510bd0f"
+    },
+    {
+      "date": "18300429",
+      "filename": "Newfoundlander18300429.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300429.pdf",
+      "bytes": 3289034,
+      "sha256": "161a184eea4885f9a0bd9f43ef461dad628e3af0019c0decaeb8ed4e312c6463"
+    },
+    {
+      "date": "18300506",
+      "filename": "Newfoundlander18300506.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300506.pdf",
+      "bytes": 3341714,
+      "sha256": "88937cad9d256dfde0be4e1b2253cd1c3cd4bb100d3bc9092519181d18f2d2eb"
+    },
+    {
+      "date": "18300513",
+      "filename": "Newfoundlander18300513.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300513.pdf",
+      "bytes": 3321299,
+      "sha256": "0d11a793bee44184fb095c9871248409965e9fe07758e18e979807ac619f1e8e"
+    },
+    {
+      "date": "18300520",
+      "filename": "Newfoundlander18300520.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300520.pdf",
+      "bytes": 3501813,
+      "sha256": "fb963de7383ff12680117754ab77207cc2d79ada1c33767c3a5e806c0ec193eb"
+    },
+    {
+      "date": "18300527",
+      "filename": "Newfoundlander18300527.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300527.pdf",
+      "bytes": 3292873,
+      "sha256": "cc9f3554d27690ff3211f8c7bfac98f98b630ff859849caed293aec8aa52c8cf"
+    },
+    {
+      "date": "18300603",
+      "filename": "Newfoundlander18300603.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300603.pdf",
+      "bytes": 3373470,
+      "sha256": "c0d28d78c5a4e9262f3fa05cd1ba32d2ea643791d373300c92cb938684f8e650"
+    },
+    {
+      "date": "18300610",
+      "filename": "Newfoundlander18300610.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300610.pdf",
+      "bytes": 3251130,
+      "sha256": "6c0e581c5df9424182e7065b33a0ea4e6eac8afcb24497e46b084d57fa8fdc37"
+    },
+    {
+      "date": "18300610",
+      "filename": "Newfoundlander18300610Supplement.pdf",
+      "url": "https://dai.mun.ca/PDFs/newfoundland/Newfoundlander18300610Supplement.pdf",
+      "bytes": 824335,
+      "sha256": "8b76beb1207e475408cbeb22bae0f9808bcc8beb56379424abbf5ff4a60be431"
+    },
+    {
+      "date": "18300617",
+      "filename": "Newfoundlander18300617.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300617.pdf",
+      "bytes": 3308506,
+      "sha256": "46c2e86748cc9a23b2fb6c9164582bb83c9b6525e77400295106be142ecf78cc"
+    },
+    {
+      "date": "18300624",
+      "filename": "Newfoundlander18300624.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300624.pdf",
+      "bytes": 3352937,
+      "sha256": "e442771bda9db04cfbfe8976128c2c5db64f55735d803cc59cf849e1ba6ea809"
+    },
+    {
+      "date": "18300701",
+      "filename": "Newfoundlander18300701.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300701.pdf",
+      "bytes": 3400452,
+      "sha256": "f801cf0915c2c3d67dd848ccf23aecb4582237b4942db7b712dba8169dcdf5e7"
+    },
+    {
+      "date": "18300708",
+      "filename": "Newfoundlander18300708.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300708.pdf",
+      "bytes": 3307280,
+      "sha256": "04a70d3823b05498a10aa1b2fcafb96e30d5a4fde2be031f39330ce1bf4b02fe"
+    },
+    {
+      "date": "18300722",
+      "filename": "Newfoundlander18300722.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300722.pdf",
+      "bytes": 3538435,
+      "sha256": "c258a40e41297ca2a5b2ae3e1efb057b217500921d328ec5a6053684315657ec"
+    },
+    {
+      "date": "18300729",
+      "filename": "Newfoundlander18300729.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300729.pdf",
+      "bytes": 3363125,
+      "sha256": "f51813bdd04cbdb951edc5ac888be6ec1e2f01df7990001c4d5caa1ec1040e7d"
+    },
+    {
+      "date": "18300805",
+      "filename": "Newfoundlander18300805.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300805.pdf",
+      "bytes": 3508944,
+      "sha256": "1f4fb8673ccac2e4abebe2f633eb602a63f868f9cdbd32069a12cec4ef1f0bbd"
+    },
+    {
+      "date": "18300812",
+      "filename": "Newfoundlander18300812.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300812.pdf",
+      "bytes": 3644938,
+      "sha256": "747a4a3f348b339baf03a9f4e26fdb55614745d77f495a53e1a74634af63e82e"
+    },
+    {
+      "date": "18300812",
+      "filename": "Newfoundlander18300812Supplement.pdf",
+      "url": "https://dai.mun.ca/PDFs/newfoundland/Newfoundlander18300812Supplement.pdf",
+      "bytes": 656616,
+      "sha256": "b97d985f08f8682b9af57a0f69b5235b6cee56b55b2dea52d5965351aa51b31a"
+    },
+    {
+      "date": "18300819",
+      "filename": "Newfoundlander18300819.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300819.pdf",
+      "bytes": 3377431,
+      "sha256": "f0906cf99189da98ec1a97e91fd23813b0d744c022c232de4e8924842d9acc42"
+    },
+    {
+      "date": "18300819",
+      "filename": "Newfoundlander18300819Supplement.pdf",
+      "url": "https://dai.mun.ca/PDFs/newfoundland/Newfoundlander18300819Supplement.pdf",
+      "bytes": 992083,
+      "sha256": "d5ecfc8e4e7291081e9bec50c32d270732e7d0c0de4bb79fb88bafd0beb8689c"
+    },
+    {
+      "date": "18300826",
+      "filename": "Newfoundlander18300826.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300826.pdf",
+      "bytes": 3437768,
+      "sha256": "f5f16a4b3b09cff1806a879849802bdca60670aaf935579a2e28971f8c2de229"
+    },
+    {
+      "date": "18300902",
+      "filename": "Newfoundlander18300902.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300902.pdf",
+      "bytes": 3426679,
+      "sha256": "2f6a464bfbfe940e805f29175ebd751f4641b6597ebf23219c34f8ab78a20bfd"
+    },
+    {
+      "date": "18300902",
+      "filename": "Newfoundlander18300902Supplement.pdf",
+      "url": "https://dai.mun.ca/PDFs/newfoundland/Newfoundlander18300902Supplement.pdf",
+      "bytes": 949096,
+      "sha256": "2c620a18b8d87669af15a842737edfc8eda65b5fe7d3989c5340bd6c48bb0457"
+    },
+    {
+      "date": "18300909",
+      "filename": "Newfoundlander18300909.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300909.pdf",
+      "bytes": 3470485,
+      "sha256": "102c64a9468b3ad07ab2554b490a2eb31f9189015f04638a22e389e06a333d03"
+    },
+    {
+      "date": "18300916",
+      "filename": "Newfoundlander18300916.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300916.pdf",
+      "bytes": 3282780,
+      "sha256": "d3c20fbdceb018af4dc3e85f09001324ca81da253f0c2bd3184fca8209564884"
+    },
+    {
+      "date": "18300923",
+      "filename": "Newfoundlander18300923.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300923.pdf",
+      "bytes": 3123917,
+      "sha256": "c9a8d6db845375843d741f5ab03e29d1ed4068ddb5d79ad2ef8920a24e476ea5"
+    },
+    {
+      "date": "18300930",
+      "filename": "Newfoundlander18300930.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300930.pdf",
+      "bytes": 2499682,
+      "sha256": "a2b6550863a4976d26962e6602139eb450a4b214bb6c1c42741fe4912c9dc9d5"
+    },
+    {
+      "date": "18301007",
+      "filename": "Newfoundlander18301007.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301007.pdf",
+      "bytes": 2768966,
+      "sha256": "6a659f89cfcdc5c3ea06f54b72368a9be99ee06db86a6b10dd0851fc0e39ef50"
+    },
+    {
+      "date": "18301014",
+      "filename": "Newfoundlander18301014.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301014.pdf",
+      "bytes": 3291723,
+      "sha256": "3570671a3d229f0c9314b681b9aebd6c384bcf7b9da2d9441bcdb928e0ec12d0"
+    },
+    {
+      "date": "18301021",
+      "filename": "Newfoundlander18301021.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301021.pdf",
+      "bytes": 3231805,
+      "sha256": "344969ca68f2300026b4c165547204970bf4d498f891d0fdb24971a29436896e"
+    },
+    {
+      "date": "18301028",
+      "filename": "Newfoundlander18301028.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301028.pdf",
+      "bytes": 3180094,
+      "sha256": "e9da9d1ae1bf69a6cecd21b2d19bb4817728c754b8e13bee4b170113cf343f3e"
+    },
+    {
+      "date": "18301104",
+      "filename": "Newfoundlander18301104.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301104.pdf",
+      "bytes": 2734889,
+      "sha256": "4a9bb79f0b25b3698c9aa82507d41f6ea4fde0c34848e38f65b1723badab3ede"
+    },
+    {
+      "date": "18301111",
+      "filename": "Newfoundlander18301111.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301111.pdf",
+      "bytes": 2371348,
+      "sha256": "332d00ed7d652d1475d938b536d9a67e114f51009f0613a9699b1c7bc20b747d"
+    },
+    {
+      "date": "18301118",
+      "filename": "Newfoundlander18301118.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301118.pdf",
+      "bytes": 2709862,
+      "sha256": "864d3391be8c7d8bfc2670155c7e13eb9371a54df41c7e0701389a2954b01dfa"
+    },
+    {
+      "date": "18301125",
+      "filename": "Newfoundlander18301125.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301125.pdf",
+      "bytes": 2842486,
+      "sha256": "01eb3ad9c87a377ddc24de4c2cfd0f06eca667d5aa971cd5f765c11bb9892056"
+    },
+    {
+      "date": "18301202",
+      "filename": "Newfoundlander18301202.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301202.pdf",
+      "bytes": 3201047,
+      "sha256": "a307de0a0da36a986a595852f7975584361e9d207db1157c5348b791166bf505"
+    },
+    {
+      "date": "18301209",
+      "filename": "Newfoundlander18301209.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301209.pdf",
+      "bytes": 3365402,
+      "sha256": "950ee298f9ef744ea46cee8516a7b41bcbb14b7110d61c7b9272320f62aa3756"
+    },
+    {
+      "date": "18301216",
+      "filename": "Newfoundlander18301216.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301216.pdf",
+      "bytes": 3232069,
+      "sha256": "e0d96836928940866accac081a248dcf7d9db20fbdbc7092534537fc64d99376"
+    },
+    {
+      "date": "18301223",
+      "filename": "Newfoundlander18301223.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301223.pdf",
+      "bytes": 3427046,
+      "sha256": "1c83d58c305bea684426315938109716a5a9868997b8587a199f2d1d5ddf2e43"
+    },
+    {
+      "date": "18301230",
+      "filename": "Newfoundlander18301230.pdf",
+      "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18301230.pdf",
+      "bytes": 2856258,
+      "sha256": "a3fbeb90261847956ec5165d81a7536158778895ba705e70712019eebfd3a5a3"
+    }
+  ]
+}

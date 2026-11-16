@@ -3070,6 +3070,18 @@
       "notes": "An April 15 notice records the Express packet timetable, letter carriage and named agents between Harbour Grace and Portugal Cove. The wording describes resumed usual trips, not first operation. No supported 1831 lighthouse, telegraph or electrical event was found."
     },
     {
+      "id": "NPREG-198",
+      "title": "Add the 1830 Conception Bay packet communication record",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1830 electrical, telecommunications, navigation-aid and scheduled communication evidence.",
+      "dependencies": ["NPREG-197"],
+      "completion_evidence": ["research/NP_1830_SYSTEM_RECORD.md", "research/derived/np-1830-newfoundlander-issue-manifest.json", "src/data.js", "tests/np-1830-system.test.js"],
+      "blocker": null,
+      "notes": "January notices document the Express, Matthew Guswell's newly launched weekly packet and James Doyle's Dart. Later notices document the repaired Express and the Arrow. The routes carried passengers, letters and parcels across Conception Bay and through Portugal Cove to St. John's. No supported 1830 lighthouse, telegraph or electrical event was found."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

@@ -640,6 +640,26 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-newfoundlander-1830-packet-notices",
+    year: 1830,
+    organization: "The Newfoundlander",
+    title: "Conception Bay Packet Boat Notices",
+    topics: ["1830", "Express", "Dart", "packet boat", "Matthew Guswell", "James Doyle", "Harbour Grace", "Portugal Cove", "Carbonear", "Cubits", "passengers", "parcels", "letters"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18300107.pdf"
+  },
+  {
+    id: "mun-public-ledger-1830-conception-bay-packets",
+    year: 1830,
+    organization: "Public Ledger",
+    title: "Conception Bay Packet Notices",
+    topics: ["1830", "Express", "Arrow", "packet boat", "Harbour Grace", "Portugal Cove", "Port de Grave", "Brigus", "Bay Roberts", "passengers", "parcels", "letters", "Henry Winton", "Robert Oke", "Thomas Butler"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18300921.pdf"
+  },
+  {
     id: "mun-public-ledger-1831-harbour-grace-packet",
     year: 1831,
     organization: "Public Ledger",
@@ -13715,6 +13735,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1830-01-07",
+    category: "communications",
+    title: "Three packet notices documented Conception Bay letter routes",
+    body: "The Express ran between Harbour Grace and Portugal Cove. Matthew Guswell's newly launched packet boat left Portugal Cove at 11:00 for Carbonear on Monday, Cubits on Wednesday and Harbour Grace on Friday, with 09:00 returns on the next day. James Doyle's Dart connected Carbonear and Portugal Cove, with a St. John's messenger connection. All three notices included letter carriage.",
+    sourceId: "mun-newfoundlander-1830-packet-notices",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1830-04-17",
+    category: "communications",
+    title: "Express resumed Harbour Grace packet communication",
+    body: "A notice stated that the Express had undergone a thorough repair and resumed its usual trips between Harbour Grace and Portugal Cove. It scheduled departures from Harbour Grace on Monday, Wednesday and Friday at 09:00, with returns from Portugal Cove at noon on the next day, except Sunday and weather permitting. The service carried passengers, parcels and letters. Henry Winton and Robert Oke were the agents.",
+    sourceId: "mun-public-ledger-1830-conception-bay-packets",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1830-05-01",
+    category: "communications",
+    title: "Arrow linked Conception Bay settlements with St. John's",
+    body: "A notice stated that Thomas Butler operated the Arrow weekly between Port de Grave and Portugal Cove. It collected passengers, letters and parcels for Brigus, Port de Grave and Bay Roberts at Cubits at 08:00 on Wednesday and at Port de Grave. A letter carrier delivered the traffic in St. John's and accepted return traffic at the Public Ledger office. The Arrow left Portugal Cove at 11:00 on Thursday, weather permitting.",
+    sourceId: "mun-public-ledger-1830-conception-bay-packets",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
   {
     date: "1831-04-15",
     category: "communications",
