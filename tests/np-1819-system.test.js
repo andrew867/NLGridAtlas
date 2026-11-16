@@ -50,16 +50,11 @@ test("1819 manifest preserves the 46 surviving MUN DAI issues", () => {
   }
 });
 
-test("1819 fort fuel record preserves quantities, sites and tender controls", () => {
-  const event = timeline.find((entry) => entry.sourceId === "mun-mercantile-1819-fort-firewood");
-  assert.ok(event);
-  assert.equal(event.date, "1819-01-07");
-  assert.match(event.body, /400 cords of black, yellow or white birch/);
-  assert.match(event.body, /Fort William, 150 cords/);
-  assert.match(event.body, /Fort Townshend, 200 cords/);
-  assert.match(event.body, /Signal Hill, 50 cords/);
-  assert.match(event.body, /minimum of 20 cords/);
-  assert.match(event.body, /two sureties/);
+test("1819 issue preserves the repeated fort fuel notice without a duplicate event", () => {
+  const source = sources.find((entry) => entry.id === "mun-mercantile-1819-fort-firewood");
+  assert.ok(source);
+  assert.equal(source.pages, "physical PDF p. 3");
+  assert.equal(timeline.some((entry) => entry.sourceId === source.id), false);
 });
 
 test("1819 pilot record keeps private rules and Hoyles opinion distinct from completed work", () => {

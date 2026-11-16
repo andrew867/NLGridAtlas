@@ -3214,6 +3214,18 @@
       "notes": "The year records Fort Amherst's red-over-yellow pendant and gun distress rule, a separate rescue signal, HMS Carnation distress signals, a merchant pilot-regulation proposal, one unassigned fire-engine import, and three documented firefighting arrangements at the July Water Street fire. The sources do not connect the imported engine to any July engine."
     },
     {
+      "id": "NPREG-210",
+      "title": "Add the 1818 arson, electrical, firebreak, harbour-signal, lighthouse and Helen records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1818 electrical, telecommunications, navigation-aid, emergency-signalling and scheduled communication evidence.",
+      "dependencies": ["NPREG-209"],
+      "completion_evidence": ["research/NP_1818_SYSTEM_RECORD.md", "research/derived/np-1818-newspaper-issue-manifest.json", "src/data.js", "tests/np-1818-system.test.js"],
+      "blocker": null,
+      "notes": "The year records the post-fire arson rewards, a printed electrifying-machine recommendation, a Portugal Cove firebreak, harbour salutes and flag transfer, a Light-House Establishment notice, the December fort-fuel tender and the first detailed report of the Helen wreck. The January Post Office notice carries a December 1817 date and remains assigned to the 1817 queue."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

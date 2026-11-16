@@ -640,6 +640,76 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-royal-gazette-1818-arson-rewards",
+    year: 1818,
+    organization: "The Royal Gazette",
+    title: "St. John's Arson Proclamation and Rewards",
+    topics: ["1818", "St. John's", "Maggotty Cove", "William Hogan", "fire", "arson", "reward", "Francis Pickmore"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18180113.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1818-electrifying-machine",
+    year: 1818,
+    organization: "The Royal Gazette",
+    title: "Electrifying-Machine Resuscitation Guidance",
+    topics: ["1818", "electricity", "electrifying machine", "lightning", "resuscitation", "electrical context"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18180310.pdf"
+  },
+  {
+    id: "mun-mercantile-1818-portugal-cove-fire",
+    year: 1818,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Portugal Cove Fire and Firebreak Response",
+    topics: ["1818", "Portugal Cove", "Michael Handlan", "fire", "firebreak", "store", "hot ashes"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18180403no207.pdf"
+  },
+  {
+    id: "mun-mercantile-1818-hamilton-arrival",
+    year: 1818,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Governor Hamilton Arrival, Salutes and Flag Transfer",
+    topics: ["1818", "Charles Hamilton", "HMS Ister", "HMS Sir Francis Drake", "Narrows", "salute", "flag", "garrison"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18180724no223.pdf"
+  },
+  {
+    id: "mun-mercantile-1818-lighthouse-establishment",
+    year: 1818,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Light-House Establishment Anniversary Notice",
+    topics: ["1818", "Light-House Establishment", "Crown and Anchor Tavern", "lighthouse", "anniversary dinner"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18180807no225.pdf"
+  },
+  {
+    id: "mun-mercantile-1818-fort-firewood",
+    year: 1818,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Fort and Signal Hill Hardwood Tender",
+    topics: ["1818", "hardwood", "Fort William", "Fort Townshend", "Signal Hill", "Commissariat", "fuel yard", "tender"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18181224no245.pdf"
+  },
+  {
+    id: "mun-mercantile-1818-helen-wreck",
+    year: 1818,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Schooner Helen Wreck and Pilot-Boat Assistance",
+    topics: ["1818", "Helen", "Narrows", "North Head", "Wash-ball Rocks", "pilot boat", "anchors", "wreck"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18181231no246.pdf"
+  },
+  {
     id: "mun-mercantile-1819-fort-firewood",
     year: 1819,
     organization: "Newfoundland Mercantile Journal",
@@ -14186,11 +14256,65 @@ export const staticClaims = [
 
 export const timeline = [
   {
-    date: "1819-01-07",
+    date: "1818-01-01",
+    category: "fire response",
+    title: "Governor and residents offered arson rewards",
+    body: "Governor Francis Pickmore linked an attempt to set fire to William Hogan's house in Maggotty Cove with the unexplained St. John's fires of November 7 and 21, 1817. He offered 300 pounds for discovery and conviction of the offenders. Merchants and principal inhabitants offered a further 1,000 pounds. A separate 100-pound reward covered discovery and conviction of an unlawful association or conspiracy to burn the town or part of it.",
+    sourceId: "mun-royal-gazette-1818-arson-rewards",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1818-03-10",
+    category: "electrical context",
+    title: "Newspaper recommended an electrifying machine for lightning casualties",
+    body: "A resuscitation article described electricity as the most effectual remedy for restoring brain activity after apparent death from lightning and advised obtaining an electrifying machine quickly. The article is general medical guidance. It does not identify a machine, purchase or treatment in Newfoundland.",
+    sourceId: "mun-royal-gazette-1818-electrifying-machine",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1818-04-03",
+    category: "fire response",
+    title: "Neighbours made a firebreak at Portugal Cove",
+    body: "A fire destroyed Michael Handlan's house, household property, fishing materials and store at Western Point, Portugal Cove. An adjoining store was pulled down to stop the fire from reaching nearby buildings. The report attributes the fire to hot ashes left in a tub in the porch.",
+    sourceId: "mun-mercantile-1818-portugal-cove-fire",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1818-07-24",
+    category: "signals",
+    title: "Ships and the garrison used salutes and flags during a governor's arrival",
+    body: "The report states that the commodore's pendant was struck aboard HMS Sir Francis Drake when HMS Ister anchored in the Narrows with Governor Charles Hamilton. Ships in port and the garrison fired salutes, and Ister returned them after passing the Narrows. After Hamilton landed at Government Wharf, the flagship and garrison fired the usual salutes. His flag transferred from Ister to Sir Francis Drake at sunset.",
+    sourceId: "mun-mercantile-1818-hamilton-arrival",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1818-08-07",
+    category: "navigation",
+    title: "Notice named a Light-House Establishment",
+    body: "A notice advertised an August 12 anniversary dinner for the Friends and Supporters of the Light-House Establishment at the Crown and Anchor Tavern. It does not identify a lighthouse, site, light, keeper, governing body or construction project.",
+    sourceId: "mun-mercantile-1818-lighthouse-establishment",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1818-12-09",
     category: "operations",
-    title: "Commissariat sought 400 cords of hardwood",
-    body: "A tender requested 400 cords of black, yellow or white birch for the fort fuel yards. The allocation was Fort William, 150 cords; Fort Townshend, 200 cords; and Signal Hill, 50 cords. Delivery was required between May 1 and June 24. Tenders could cover all or part of the work, with a minimum of 20 cords, and had to name two sureties.",
-    sourceId: "mun-mercantile-1819-fort-firewood",
+    title: "Commissariat sought 400 cords of hardwood for 1819",
+    body: "A tender requested 400 cords of black, yellow or white birch for the fort fuel yards. The allocation was Fort William, 150 cords; Fort Townshend, 200 cords; and Signal Hill, 50 cords. Delivery was required between May 1 and June 24, 1819. Tenders could cover all or part of the work, with a minimum of 20 cords, and had to name two sureties.",
+    sourceId: "mun-mercantile-1818-fort-firewood",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1818-12-31",
+    category: "navigation",
+    title: "Newspaper reported pilot-boat assistance before the Helen wreck",
+    body: "The schooner Helen missed stays just inside North Head while entering the Narrows. A pilot boat helped put out two additional anchors. The agent sent a second boat and six men with a warp and kedge anchor, but the wind prevented their use. After the stream hawser and two anchor cables parted, Helen struck between the north point and Wash-ball Rocks and sank. The report states that six people died.",
+    sourceId: "mun-mercantile-1818-helen-wreck",
     pages: "physical PDF p. 3",
     status: "reported"
   },

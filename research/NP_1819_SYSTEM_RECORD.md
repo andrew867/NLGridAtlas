@@ -2,7 +2,7 @@
 
 ## Fort and Signal Hill fuel logistics
 
-The January 7, 1819 *Newfoundland Mercantile Journal* prints a Commissariat tender for 400 cords of hardwood for the fuel yards at Fort William, Fort Townshend and Signal Hill. The allocation was 150 cords to Fort William, 200 cords to Fort Townshend and 50 cords to Signal Hill. Delivery was required between May 1 and June 24, 1819. Bids could cover all or part of the work, but no bid could be for less than 20 cords. Tenders were due at noon on January 11 and had to name two sureties.
+The January 7, 1819 *Newfoundland Mercantile Journal* repeats a Commissariat tender dated December 9, 1818 for 400 cords of hardwood for the fuel yards at Fort William, Fort Townshend and Signal Hill. The allocation was 150 cords to Fort William, 200 cords to Fort Townshend and 50 cords to Signal Hill. Delivery was required between May 1 and June 24, 1819. Bids could cover all or part of the work, but no bid could be for less than 20 cords. Tenders were due at noon on January 11 and had to name two sureties. The timeline assigns the tender to its December 1818 notice date.
 
 ## Pilot regulation and Narrows safety
 
