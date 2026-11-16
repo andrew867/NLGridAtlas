@@ -3295,7 +3295,19 @@
       "dependencies": ["NPREG-215"],
       "completion_evidence": ["research/NP_1812_SYSTEM_RECORD.md", "research/derived/np-1812-newspaper-issue-manifest.json", "src/data.js", "tests/np-1812-system.test.js"],
       "blocker": null,
-      "notes": "The year records the Government House fire, fort fuel and material tenders, the King's Wharf truckage network, the Windsor Road lottery and tree shelter, two public wharves, land controls, fire-engine accounts, new church pews, out-harbour fortification, Fort William and Fort Townshend repairs, incomplete church works and a proposed debtors' gaol. Tenders, the pew auction and the gaol remain proposed; reported operation and completed works remain reported."
+      "notes": "The year records the Government House fire, fort fuel and material tenders, the King's Wharf truckage network, the Windsor Road lottery and tree shelter, Governor's Wharf and two public wharves in the annual account, land controls, fire-engine accounts, new church pews, out-harbour fortification, Fort William and Fort Townshend repairs, incomplete church works and a proposed debtors' gaol. Tenders, the pew auction and the gaol remain proposed; reported operation and completed works remain reported."
+    },
+    {
+      "id": "NPREG-217",
+      "title": "Add the 1811 light-house, harbour, hospital, road and public-works records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1811 navigation, emergency-response, defence-infrastructure, transport, surveying, public-health and public-works evidence.",
+      "dependencies": ["NPREG-216"],
+      "completion_evidence": ["research/NP_1811_SYSTEM_RECORD.md", "research/derived/np-1811-newspaper-issue-manifest.json", "src/data.js", "tests/np-1811-system.test.js"],
+      "blocker": null,
+      "notes": "The year records the Fort Amherst light-house operating season, the western-harbour Fishing Ships' Room, Ship's Coves fire access, harbour-buoy charges, hospital proposals, Ordnance fuel and Powder House repair, the proposed Portugal Cove road, regional church and gaol works, Fire Society and fishery-return payments, town and harbour improvement proposals, a public currency proposal and Government House work. The twenty downloaded Gazette files contain mixed physical pages and are recorded as dated archive files rather than clean complete issues."
     },
     {
       "id": "ASSET-001",

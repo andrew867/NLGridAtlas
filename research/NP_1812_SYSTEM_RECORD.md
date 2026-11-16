@@ -38,11 +38,9 @@ An August 27 Commissariat notice sought mould candles for the garrison. An Ordna
 
 A Fire Companies notice dated September 24 asked persons with claims against the fire engines to submit their accounts to the company captains.
 
-## Land and public wharves
+## Land and public works
 
 An October 2 proclamation prohibited unauthorized land enclosure and building construction. It states that land had repeatedly been enclosed without grant or other legal authority.
-
-An October 12 proclamation records a survey of land at the western extremity of St. John's harbour. It says a wharf had been built there at government expense for fishing ships fitted from Great Britain under the statute of the 51st year of the reign. Until those ships returned, the wharf was free for general use under the other government-wharf rules.
 
 A Commissariat notice dated October 15 sought boards, bricks, clapboards, laths, Roche lime, plank, building stone, timber and tar for public works. The quantities included 55,000 feet of boards, 22,000 bricks, 8,200 feet of clapboards, 800 bushels of Roche lime, 96 tons of building stone and 2,820 cubic feet of timber.
 
@@ -81,6 +79,6 @@ The official manuscript review used *Despatches from the Governor of Newfoundlan
 - [Royal Gazette, August 20, 1812](https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120820.pdf), new-pew auction notice on physical PDF p. 3. Retrieved 2026-11-16. Local filename `TheRoyalGazette18120820.pdf`. SHA-256 `dcf2935a078fd31a568139fe0c9ebde85c7a19b050cb7f51d65fc716985f6df6`.
 - [Royal Gazette, August 27, 1812](https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18120827.pdf), garrison candles and Ordnance materials on physical PDF p. 3. Retrieved 2026-11-16. Local filename `TheRoyalGazette18120827.pdf`. SHA-256 `10dfa56a5a96c4021d4d620dcc5d4091188b1a0c0174b2a775565dbfc3eee740`.
 - [Royal Gazette, October 15, 1812](https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18121015.pdf), October 2 land proclamation and September 24 fire-engine accounts notice on physical PDF p. 1. Retrieved 2026-11-16. Local filename `TheRoyalGazette18121015.pdf`. SHA-256 `f2c582dd81afec851d358a66ce4126794b73a413ceb571bac321802fe9054c3c`.
-- [Royal Gazette, October 22, 1812](https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18121022.pdf), October 12 fishing-wharf proclamation and October 15 public-works material tender on physical PDF p. 2. Retrieved 2026-11-16. Local filename `TheRoyalGazette18121022.pdf`. SHA-256 `2e429ca1eefecc316b1038dea2169dfec76ef8740de1776085def7c38bb58645`.
+- [Royal Gazette, October 22, 1812](https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18121022.pdf), October 15 public-works material tender on physical PDF p. 2. Retrieved 2026-11-16. Local filename `TheRoyalGazette18121022.pdf`. SHA-256 `2e429ca1eefecc316b1038dea2169dfec76ef8740de1776085def7c38bb58645`.
 - [Despatches from the Governor of Newfoundland, vol. 1, 1800-1813](https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf), annual report date on physical PDF p. 352; out-harbour defence on physical PDF pp. 353 to 355; fort repairs on physical PDF pp. 356 to 358; churches, wharves and ship-room plans on physical PDF pp. 369 to 373; debtors' gaol proposal on physical PDF pp. 375 to 376. Retrieved 2026-11-16. Local filename `A52_V01.pdf`. SHA-256 `4cb294934e31a1adcb547a40a8dcf6ce6211c2e9db6536e9d7663fbc9e005e2b`.
 - [1812 newspaper issue manifest](derived/np-1812-newspaper-issue-manifest.json), 40 files and 162 physical pages. SHA-256 `fcbeed1b3684e33f9734ee05c7b229ce91b6349efd8e194fb89b2b2c75847740`.

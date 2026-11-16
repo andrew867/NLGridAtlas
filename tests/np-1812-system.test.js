@@ -69,16 +69,14 @@ test("1812 Government House fire keeps the relative event date", () => {
 
 test("1812 wharf records keep operating and construction evidence distinct", () => {
   const governorWharf = timeline.find((entry) => entry.sourceId === "mun-royal-gazette-1812-governors-wharf");
-  const fishingWharf = timeline.find((entry) => entry.sourceId === "mun-royal-gazette-1812-fishing-wharf");
   const annual = timeline.find((entry) => entry.sourceId === "mun-colonial-1812-public-works");
   assert.ok(governorWharf);
-  assert.ok(fishingWharf);
   assert.ok(annual);
   assert.equal(governorWharf.status, "reported");
   assert.match(governorWharf.body, /recently built wharf/);
-  assert.match(fishingWharf.body, /government-built wharf/);
   assert.match(annual.body, /two large public wharves built/);
   assert.match(annual.body, /two-thirds of the wharf-building expense had been paid/);
+  assert.equal(sources.some((entry) => entry.id === "mun-royal-gazette-1812-fishing-wharf"), false);
 });
 
 test("1812 defence report retains completed work and exact repair estimate", () => {

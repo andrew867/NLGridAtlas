@@ -640,6 +640,126 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-royal-gazette-1811-fort-amherst-light",
+    year: 1811,
+    organization: "Fort Amherst Light-House Committee",
+    title: "Fort Amherst Light-House Operating Notice",
+    topics: ["1811", "St. John's", "Fort Amherst", "light-house", "harbour entrance", "navigation"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18111024.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1811-hospital",
+    year: 1811,
+    organization: "St. John's Grand Jury Hospital Committee",
+    title: "Proposed Hospital Wage Subscription",
+    topics: ["1811", "St. John's", "hospital", "Grand Jury", "wage subscription", "public health"],
+    pages: "physical PDF p. 2",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18111031.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1811-ordnance",
+    year: 1811,
+    organization: "Office of Ordnance",
+    title: "Barrack Fuel Tender and Powder-House Damage Notice",
+    topics: ["1811", "St. John's", "Fort Townshend", "Ordnance Fuel Yard", "candles", "firewood", "Powder House"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18111031.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1811-portugal-cove-road",
+    year: 1811,
+    organization: "Portugal Cove Road subscribers",
+    title: "St. John's to Portugal Cove Road Subscription and Tender",
+    topics: ["1811", "St. John's", "Portugal Cove", "road", "subscription", "tender"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18111031.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1811-fishing-room",
+    year: 1811,
+    organization: "Governor of Newfoundland",
+    title: "Western Harbour Fishing Ships' Room Proclamation",
+    topics: ["1811", "St. John's", "western harbour", "Fishing Ships' Room", "survey", "fishery"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18111031.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1811-fire-access-buoys",
+    year: 1811,
+    organization: "Governor of Newfoundland",
+    title: "Ship's Coves Fire Access and Harbour-Buoy Charges",
+    topics: ["1811", "St. John's", "Ship's Coves", "fire access", "harbour buoys", "warping", "charitable fund"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18111031.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1811-town-improvement",
+    year: 1811,
+    organization: "St. John's inhabitants and merchants",
+    title: "Town and Harbour Improvement Petition",
+    topics: ["1811", "St. John's", "streets", "street lighting", "market", "harbour", "police board", "ship-room rents"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18111128.pdf"
+  },
+  {
+    id: "mun-colonial-1811-public-works",
+    year: 1811,
+    organization: "Governor of Newfoundland",
+    title: "Church, Gaol, Fire-Society and Hospital Works",
+    topics: ["1811", "St. John's", "Trinity", "Greenspond", "Burin", "Fortune Bay", "Brigus", "Morton's Harbour", "church", "gaol", "Fire Society", "hospital"],
+    pages: "physical PDF pp. 404 to 407",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1811-burial-ground",
+    year: 1811,
+    organization: "Governor of Newfoundland",
+    title: "Roman Catholic Burial-Ground Grant",
+    topics: ["1811", "St. John's", "Roman Catholic Church", "burial ground", "land grant"],
+    pages: "physical PDF p. 402",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1811-debtors-gaol",
+    year: 1811,
+    organization: "Governor of Newfoundland",
+    title: "Proposed Debtors' Gaol",
+    topics: ["1811", "St. John's", "debtors' gaol", "common gaol"],
+    pages: "physical PDF p. 410",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1811-currency",
+    year: 1811,
+    organization: "Governor of Newfoundland",
+    title: "Proposed Public-Department Currency Supply",
+    topics: ["1811", "Newfoundland", "public departments", "cash shortage", "notes", "tokens", "coins"],
+    pages: "physical PDF p. 411",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1811-government-house",
+    year: 1811,
+    organization: "Governor of Newfoundland",
+    title: "Government House Repairs and Furniture Request",
+    topics: ["1811", "St. John's", "Government House", "repairs", "alterations", "furniture"],
+    pages: "physical PDF p. 412",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
     id: "mun-royal-gazette-1812-fort-firewood",
     year: 1812,
     organization: "Commissariat Office",
@@ -748,16 +868,6 @@ export const sources = [
     pages: "physical PDF p. 1",
     status: "reported",
     url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18121015.pdf"
-  },
-  {
-    id: "mun-royal-gazette-1812-fishing-wharf",
-    year: 1812,
-    organization: "Governor of Newfoundland",
-    title: "Western Harbour Fishing Wharf",
-    topics: ["1812", "St. John's", "western harbour", "survey", "fishing ships", "public wharf"],
-    pages: "physical PDF p. 2",
-    status: "reported",
-    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18121022.pdf"
   },
   {
     id: "mun-royal-gazette-1812-public-works-materials",
@@ -14946,6 +15056,141 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1811-04-04",
+    category: "navigation",
+    title: "Fort Amherst light-house published its operating season",
+    body: "The committee stated that a light-house had been established at Fort Amherst on the south side of the harbour entrance. It was to be lighted from March 15 through December 31 inclusive.",
+    sourceId: "mun-royal-gazette-1811-fort-amherst-light",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1811-09-26",
+    category: "harbour infrastructure",
+    title: "Western harbour land was declared a Fishing Ships' Room",
+    body: "The proclamation states that the 1811 Act ended public use of the Admirals Room or King's Beach and rooms westward. Surveyed land at the western extremity of the harbour was judged better for drying, curing and husbanding fish, marked at its east and west limits and declared a Fishing Ships' Room for the current fishing season.",
+    sourceId: "mun-royal-gazette-1811-fishing-room",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1811-10-12",
+    category: "fire response",
+    title: "Ship's Coves access was protected for fire response",
+    body: "The proclamation required access to Ship's Coves to remain open as a fire precaution. Existing obstructions were to be removed immediately; later spars or other materials could be seized and auctioned, with proceeds credited to the ward in the Fire Society.",
+    sourceId: "mun-royal-gazette-1811-fire-access-buoys",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1811-10-12",
+    category: "navigation",
+    title: "Harbour buoy charges funded charity",
+    body: "The proclamation allowed merchant vessels to use buoys laid down for His Majesty's ships. Vessels under 100 tons paid half a crown for warping and five shillings for riding; larger vessels paid five and ten shillings respectively. The receipts went to a charitable fund.",
+    sourceId: "mun-royal-gazette-1811-fire-access-buoys",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1811-10-14",
+    category: "public health",
+    title: "Hospital committee sought wage subscriptions",
+    body: "The Grand Jury committee asked merchants and masters or suppliers of servants to stop one penny in the pound from each man's wages for a hospital intended for sick persons. The money was to be paid to the committee treasurer.",
+    sourceId: "mun-royal-gazette-1811-hospital",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1811-10-24",
+    category: "defence infrastructure",
+    title: "Ordnance sought barrack candles and firewood",
+    body: "The tender sought 300 pounds of dipped English candles and 100 cords of best firewood. Deliveries were specified for Fort Townshend or the Ordnance Fuel Yard.",
+    sourceId: "mun-royal-gazette-1811-ordnance",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1811-10-31",
+    category: "defence infrastructure",
+    title: "Ordnance repaired damage at the Powder House",
+    body: "The Office of Ordnance reported that people had fixed marks to the Powder House on the Barrens and damaged it by firing at them. The damage had been repaired and the notice warned that later offenders would be prosecuted.",
+    sourceId: "mun-royal-gazette-1811-ordnance",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1811-10-31",
+    category: "transport",
+    title: "Subscribers sought a road to Portugal Cove",
+    body: "The notices opened subscriptions for a good road from St. John's to Portugal Cove and invited tenders for a road no less than 14 feet wide. Stephen Knight and John Dunscomb received subscriptions; proposals were due by November 20.",
+    sourceId: "mun-royal-gazette-1811-portugal-cove-road",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1811-11-02",
+    category: "public works",
+    title: "Roman Catholic burial ground was granted",
+    body: "The governor reported granting the Roman Catholic Church the right to bury its own dead and ground for its exclusive burial place.",
+    sourceId: "mun-colonial-1811-burial-ground",
+    pages: "physical PDF p. 402",
+    status: "reported"
+  },
+  {
+    date: "1811-11-04",
+    category: "public works",
+    title: "Annual report recorded church, gaol and fire-society work",
+    body: "The report records church work at St. John's, Trinity, Greenspond, Fortune Bay, Brigus and Morton's Harbour; it also states that Burin gaol was nearly complete. It records 60 pounds paid to the Fire Society and 20 pounds for accurate fishery returns.",
+    sourceId: "mun-colonial-1811-public-works",
+    pages: "physical PDF pp. 404 to 407",
+    status: "reported"
+  },
+  {
+    date: "1811-11-04",
+    category: "public health",
+    title: "Public hospital was expected to begin immediately",
+    body: "The governor reported subscriptions, a small district assessment and land set apart for a public hospital. The letter states that construction was to begin immediately; it does not establish completion.",
+    sourceId: "mun-colonial-1811-public-works",
+    pages: "physical PDF pp. 404 to 407",
+    status: "proposed"
+  },
+  {
+    date: "1811-11-06",
+    category: "public works",
+    title: "Governor proposed a separate debtors' gaol",
+    body: "The governor proposed a small gaol for debtors because the common gaol was the only secure place and was reported unfit for that use.",
+    sourceId: "mun-colonial-1811-debtors-gaol",
+    pages: "physical PDF p. 410",
+    status: "proposed"
+  },
+  {
+    date: "1811-11-07",
+    category: "public works",
+    title: "Petition sought town and harbour improvements",
+    body: "A meeting at Merchants' Hall petitioned to use ship-room lease revenue for paving, lighting and widening streets, a market place, a seminary, poor relief and a police board. The petition reported 10,000 inhabitants, more than 500 sail entering that season and nearly 2,000 pounds of annual rent income.",
+    sourceId: "mun-royal-gazette-1811-town-improvement",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1811-11-08",
+    category: "public administration",
+    title: "Governor proposed a public-department currency supply",
+    body: "The governor described a cash shortage in public departments and proposed an annual 10,000-pound supply in small notes, tokens or coins.",
+    sourceId: "mun-colonial-1811-currency",
+    pages: "physical PDF p. 411",
+    status: "proposed"
+  },
+  {
+    date: "1811-11-09",
+    category: "public works",
+    title: "Government House repairs and alterations were reported",
+    body: "The governor requested additional furniture for Government House and stated that repairs and alterations had been underway during the year.",
+    sourceId: "mun-colonial-1811-government-house",
+    pages: "physical PDF p. 412",
+    status: "reported"
+  },
+  {
     date: "1812-01-16",
     category: "defence infrastructure",
     title: "Commissariat sought firewood for three forts",
@@ -15051,15 +15296,6 @@ export const timeline = [
     body: "The proclamation states that land had repeatedly been enclosed without grant or other legal authority. It issued strict orders against enclosing land or erecting buildings without legal authorization.",
     sourceId: "mun-royal-gazette-1812-land-fire-engines",
     pages: "physical PDF p. 1",
-    status: "reported"
-  },
-  {
-    date: "1812-10-12",
-    category: "harbour infrastructure",
-    title: "Western harbour wharf was assigned to fishing ships",
-    body: "A survey identified land at the western extremity of St. John's harbour for drying, curing and husbanding fish. A government-built wharf there was assigned to fishing ships fitted from Great Britain. Until those ships returned, the wharf remained free for general use under the government-wharf rules.",
-    sourceId: "mun-royal-gazette-1812-fishing-wharf",
-    pages: "physical PDF p. 2",
     status: "reported"
   },
   {
