@@ -1,0 +1,50 @@
+{
+  "year": 1825,
+  "retrieved": "2026-11-16",
+  "issue_count": 5,
+  "collections": [
+    {
+      "name": "Newfoundland Mercantile Journal",
+      "slug": "nl_mercantile",
+      "collection_url": "https://dai.mun.ca/digital/nl_mercantile",
+      "issue_count": 5,
+      "items": [
+        {
+          "date": "18251103",
+          "filename": "NewfoundlandMercantileJournal18251103no602.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18251103no602.pdf",
+          "bytes": 7535868,
+          "sha256": "e169d2deb1bbb50f0195d5bf84508a43bf5d49f210bcca1593e3e13b75f02b59"
+        },
+        {
+          "date": "18251110",
+          "filename": "NewfoundlandMercantileJournal18251110no603.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18251110no603.pdf",
+          "bytes": 7945121,
+          "sha256": "3fe417af9c9b8084b3e90b981944e622b7ccdf1592746f07afc113bcf891898f"
+        },
+        {
+          "date": "18251117",
+          "filename": "NewfoundlandMercantileJournal18251117no604.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18251117no604.pdf",
+          "bytes": 7353886,
+          "sha256": "bd6bcae3080639db0d9d184997bfa135593c1186bc642a2cc981dba7fd7c173b"
+        },
+        {
+          "date": "18251124",
+          "filename": "NewfoundlandMercantileJournal18251124no605.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18251124no605.pdf",
+          "bytes": 7793865,
+          "sha256": "abb42a1961d0339b801a5a8e8ed0448c9d744235d3f23d4d32f78bfa12d6c59e"
+        },
+        {
+          "date": "18251201",
+          "filename": "NewfoundlandMercantileJournal18251201no606.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18251201no606.pdf",
+          "bytes": 7834776,
+          "sha256": "da4613ef46ea620c5a26ec197b9b7da23d6fb0e863030f371829eeb21ba97e17"
+        }
+      ]
+    }
+  ]
+}

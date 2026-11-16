@@ -3130,6 +3130,18 @@
       "notes": "Express notices record winter water-and-land alternatives, a three-departure packet schedule, a reduced letter rate and an earlier daylight schedule. Published Western Fire and Safety Company rules assign personnel, fire-response equipment, alarm instruments and seasonal watch hours. No supported 1826 Newfoundland lighthouse project, electric telegraph, installed electrical circuit or operating electrical apparatus was found in the reviewed issue set."
     },
     {
+      "id": "NPREG-203",
+      "title": "Add the 1825 Express and proposed Fanny communication records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1825 electrical, telecommunications, navigation-aid, emergency-signalling and scheduled communication evidence.",
+      "dependencies": ["NPREG-202"],
+      "completion_evidence": ["research/NP_1825_SYSTEM_RECORD.md", "research/derived/np-1825-newspaper-issue-manifest.json", "src/data.js", "tests/np-1825-system.test.js"],
+      "blocker": null,
+      "notes": "Express notices record an operating Harbour Grace and Portugal Cove packet timetable and an earlier St. John's letter connection intended to complete the crossing by daylight. Michael Hayes proposed a Conception Bay coasting service using the schooner Fanny, but the reviewed issue set does not establish that the proposed service began. No supported 1825 Newfoundland lighthouse project, electric telegraph, installed electrical circuit, operating electrical apparatus or local lightning-damage event was found."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

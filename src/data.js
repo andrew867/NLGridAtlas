@@ -640,6 +640,36 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1825-express-packet",
+    year: 1825,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Express Packet Operating Notice",
+    topics: ["1825", "Express", "packet boat", "Harbour Grace", "Portugal Cove", "passengers", "letters", "parcels"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18251103no602.pdf"
+  },
+  {
+    id: "mun-mercantile-1825-express-daylight",
+    year: 1825,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Express Daylight Letter Connection Notice",
+    topics: ["1825", "Express", "packet boat", "packet man", "Harbour Grace", "Portugal Cove", "St. John's", "letters", "parcels", "daylight"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18251103no602.pdf"
+  },
+  {
+    id: "mun-mercantile-1825-fanny-service",
+    year: 1825,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Proposed Fanny Conception Bay Coasting Service",
+    topics: ["1825", "Fanny", "schooner", "St. John's", "Harbour Grace", "Carbonear", "Brigus", "Conception Bay", "passengers", "letters", "parcels"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18251103no602.pdf"
+  },
+  {
     id: "mun-mercantile-1826-winter-packet",
     year: 1826,
     organization: "Newfoundland Mercantile Journal",
@@ -13915,6 +13945,33 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1825-08-25",
+    category: "communications",
+    title: "Express packet advertised its operating timetable",
+    body: "The cutter Express had commenced packet service between Harbour Grace and Portugal Cove. It left Harbour Grace at 08:00 on Monday, Wednesday and Friday, then returned from Portugal Cove at 10:00 the next morning. The notice set cabin and steerage fares, a one-shilling letter charge and proportional parcel charges. James Clift and William Innott were the agents.",
+    sourceId: "mun-mercantile-1825-express-packet",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1825-10-06",
+    category: "communications",
+    title: "Express connection moved earlier for daylight arrival",
+    body: "The Express proprietors changed the connecting schedule so the packet could leave Portugal Cove early enough to reach Harbour Grace before night. The packet man was to leave James Clift's St. John's office at 07:45 on Tuesday, Thursday and Saturday. Letters and parcels were received there and regularly forwarded.",
+    sourceId: "mun-mercantile-1825-express-daylight",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1825-11-03",
+    category: "communications",
+    title: "Fanny coasting service was proposed for the ensuing season",
+    body: "Michael Hayes proposed to employ the 51-ton schooner Fanny in the ensuing season between St. John's, Harbour Grace, Carbonear, Brigus and other Conception Bay ports when freight offered. The notice invited freight and passage applications and allowed parcels and letters to be left at James Clift's wharf.",
+    sourceId: "mun-mercantile-1825-fanny-service",
+    pages: "physical PDF p. 1",
+    status: "proposed"
+  },
   {
     date: "1826-01-26",
     category: "communications",

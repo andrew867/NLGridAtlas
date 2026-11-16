@@ -411,10 +411,11 @@ Updated: 2026-11-15
 - Added the 1828 packet and emergency-communication records. The January issue reprints a July 25, 1827 *Express* alterations notice. Later records separate a winter substitute boat, a weekly land-carrier fallback and a thorough repair. Matthew Guswell's Union packet adds scheduled Carbonear, Brigus and Port de Grave, and Harbour Grace routes. James Doyle's *Dart* documents the Carbonear route. Western Ward rules assign engine-house keys, lanterns, speaking trumpets and fire-alarm command duties.
 - Added the 1827 packet continuity and lightning records. The winter notice identifies substitute water service and a weekly land letter carrier. The altered *Express* notice gives the three-departure timetable, fares, letter rate and agents. Matching copies print conflicting April 16 and April 17 dates, so the timeline uses the May 4 publication date. A separate report records lightning damage to a Carbonear business house.
 - Added the 1826 packet and Western Ward fire-watch records. *Express* notices identify winter water-and-land alternatives, a three-departure timetable, passenger and letter charges, a seasonal postage reduction and an earlier daylight schedule. Published Western Fire and Safety Company rules assign personnel, fire-response equipment, alarm instruments and seasonal night-watch hours.
+- Added the 1825 Express and proposed Fanny communication records. The *Express* notice documents an operating Harbour Grace and Portugal Cove timetable, passenger and letter charges, and an earlier St. John's connection intended to complete the crossing by daylight. Michael Hayes proposed a separate Conception Bay coasting service with the schooner *Fanny*; the surviving issue does not establish that it began.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1825 after the 1826 packet and Western Ward fire-watch records under `NPREG-202`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1824 after the 1825 Express and proposed Fanny communication records under `NPREG-203`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
