@@ -3154,6 +3154,18 @@
       "notes": "The May records document Davy's wire-connected copper-protection principle, a St. John's gun-and-bell fire alarm, the Fort Townshend engine response, the intended warping use of the King's buoys, and the Phoenix Fire Company's drill, engine-house and bucket rules. James Doyle's July notice records the Dart packet timetable and letter collection points. The repeated Hibernia notice is dated 1823 and remains in that year's queue."
     },
     {
+      "id": "NPREG-205",
+      "title": "Add the 1823 Hibernia packet communication record",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1823 electrical, telecommunications, navigation-aid, emergency-signalling and scheduled communication evidence.",
+      "dependencies": ["NPREG-204"],
+      "completion_evidence": ["research/NP_1823_SYSTEM_RECORD.md", "research/derived/np-1823-newspaper-issue-manifest.json", "src/data.js", "tests/np-1823-system.test.js"],
+      "blocker": null,
+      "notes": "A notice dated September 18 records James Dooley's Hibernia packet between Portugal Cove and Harbour Grace, including passenger, package and St. John's letter collection arrangements. The repeated Lively notice is dated November 1822. A separate 1823 report about the St. John's ordnance-yard fire describes an 1819 event and remains with that year."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

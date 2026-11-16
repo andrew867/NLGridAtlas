@@ -413,10 +413,11 @@ Updated: 2026-11-16
 - Added the 1826 packet and Western Ward fire-watch records. *Express* notices identify winter water-and-land alternatives, a three-departure timetable, passenger and letter charges, a seasonal postage reduction and an earlier daylight schedule. Published Western Fire and Safety Company rules assign personnel, fire-response equipment, alarm instruments and seasonal night-watch hours.
 - Added the 1825 Express and proposed Fanny communication records. The *Express* notice documents an operating Harbour Grace and Portugal Cove timetable, passenger and letter charges, and an earlier St. John's connection intended to complete the crossing by daylight. Michael Hayes proposed a separate Conception Bay coasting service with the schooner *Fanny*; the surviving issue does not establish that it began.
 - Added the 1824 electrical, fire-response, buoy and packet records. A locally printed report describes Davy's wire-connected copper-protection principle. Separate notices document a gun-and-bell fire alarm, the Fort Townshend engine response, the Phoenix Fire Company's drill and equipment rules, the King's buoys' warping function, and James Doyle's scheduled *Dart* packet and letter collection points.
+- Added the 1823 *Hibernia* packet record. James Dooley's notice identifies the Portugal Cove and Harbour Grace route, on-demand passenger and package traffic, and two St. John's collection points for Harbour Grace letters and packages. The source was printed in January 1824 but carries a September 18, 1823 notice date.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1823 after the 1824 electrical, fire-response, buoy and packet records under `NPREG-204`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1822 after the 1823 *Hibernia* packet record under `NPREG-205`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

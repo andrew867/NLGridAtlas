@@ -640,6 +640,16 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1823-hibernia-packet",
+    year: 1823,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Hibernia Packet and Letter Notice",
+    topics: ["1823", "Hibernia", "packet boat", "Portugal Cove", "Harbour Grace", "St. John's", "letters", "packages", "passengers", "James Dooley"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240129no510.pdf"
+  },
+  {
     id: "mun-mercantile-1824-davy-copper",
     year: 1824,
     organization: "Newfoundland Mercantile Journal",
@@ -13995,6 +14005,15 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1823-09-18",
+    category: "communications",
+    title: "Hibernia packet accepted letters for Harbour Grace",
+    body: "James Dooley advertised Hibernia plying between Portugal Cove and Harbour Grace. The boat was ready when required to carry packages or passengers to Harbour Grace. Letters and packages left at the Mercantile Journal office or James Holly's Sign of the Keg in St. John's were called for and delivered.",
+    sourceId: "mun-mercantile-1823-hibernia-packet",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1824-05-08",
     category: "emergency",

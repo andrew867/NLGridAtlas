@@ -1,6 +1,6 @@
 # NL Grid Atlas phased development plan
 
-Updated: 2026-11-15
+Updated: 2026-11-16
 
 `docs/work-items.json` is the authoritative status register. This plan defines execution order and phase exit gates.
 
@@ -69,6 +69,7 @@ Objective: replace the source-image-only overview with a navigable, dated island
 
 Work items:
 
+- NPREG-205
 - NPREG-204
 - NPREG-203
 - NPREG-202
