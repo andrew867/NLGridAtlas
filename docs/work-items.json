@@ -3250,6 +3250,18 @@
       "notes": "The year records the February St. John's fire and relief, the Harbour Grace church-fire cause conflict, Pickmore's arrival and departure salutes, accession and coronation salutes, the outer buoy, the 250-cord fort-fuel tender and two local fire alarms. The reproduced dispatch volume contains only a forwarding letter for the 1816 Commanding Engineer report, so no fort-condition detail is assigned to that missing attachment."
     },
     {
+      "id": "NPREG-213",
+      "title": "Add the 1815 fort-signal, fire-readiness, patrol, sewer and Record Office records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1815 telecommunications, emergency-signalling, defence-infrastructure and public-works evidence.",
+      "dependencies": ["NPREG-212"],
+      "completion_evidence": ["research/NP_1815_SYSTEM_RECORD.md", "research/derived/np-1815-newspaper-issue-manifest.json", "src/data.js", "tests/np-1815-system.test.js"],
+      "blocker": null,
+      "notes": "The year records the 150-cord fort-fuel allocation, a Grand Jury fire-readiness standard, a three-fort gun-signal sequence, a signal-based fort and civil patrol plan, the proposed King's Beach common sewer, and the completed land survey and Record Office. The reproduced dispatch volume omits the attached 1815 Engineer Department fortification report, so no condition claim is assigned to it."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

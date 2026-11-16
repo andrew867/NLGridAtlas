@@ -421,10 +421,11 @@ Updated: 2026-11-16
 - Added the 1818 arson-response, electrical-context, firebreak, harbour-signal, Light-House Establishment, fort-fuel and *Helen* records. The source set separates an electrifying-machine recommendation from local apparatus, assigns the fort-fuel tender to its December 1818 notice date and preserves December 31 as the publication date of the first *Helen* report.
 - Added the 1817 signal, light, fire, fortification and rebuilding records. The record preserves the newspaper and official November 7 fire counts as separate dated reports, separates the November 21 Grand Jury opinion from a later ignition attempt, records the Post Office relocation and keeps the December rebuilding program at proposal status.
 - Added the 1816 fire, buoy, fort-salute and fuel records. Thomas Coote's St. John's fire estimates remain reported figures. The Harbour Grace newspaper suspicion and Pickmore's later accidental-cause statement remain separate. The archive filename and printed date for the outer-buoy report are both retained.
+- Added the 1815 fort-fuel, fire-readiness, signal, patrol, sewer and Record Office records. The March event retains the dated report and its relative event wording. The King's Beach sewer remains proposed, while the land survey and Record Office remain reported completed work. The missing Engineer Department attachment is not used for a fort-condition claim.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1815 after the 1816 newspaper and colonial records under `NPREG-212`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1814 after the 1815 newspaper and colonial records under `NPREG-213`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

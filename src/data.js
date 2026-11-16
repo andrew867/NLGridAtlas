@@ -640,6 +640,56 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-royal-gazette-1815-fort-fuel",
+    year: 1815,
+    organization: "Commissariat Office",
+    title: "St. John's Garrison Firewood Allocation",
+    topics: ["1815", "St. John's", "Fort Townshend", "Fort William", "Signal Hill", "firewood", "Commissariat"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18150105.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1815-fire-readiness",
+    year: 1815,
+    organization: "St. John's Grand Jury",
+    title: "St. John's Fire-Readiness Presentment",
+    topics: ["1815", "St. John's", "fire", "ladder", "fire bucket", "stove", "gunpowder", "magazine"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18150202.pdf"
+  },
+  {
+    id: "mun-colonial-1815-fort-signals",
+    year: 1815,
+    organization: "Chief Justice of Newfoundland",
+    title: "St. John's Fort-Gun Signals and Security Patrols",
+    topics: ["1815", "St. John's", "Fort William", "Fort Townshend", "Signal Hill", "signal", "patrol", "Court House"],
+    pages: "physical PDF pp. 88 to 95 and 105 to 108",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V02.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1815-kings-beach-sewer",
+    year: 1815,
+    organization: "High Sheriff of Newfoundland",
+    title: "King's Beach Common-Sewer Tender",
+    topics: ["1815", "St. John's", "King's Beach", "common sewer", "public works", "contract"],
+    pages: "physical PDF p. 2",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18150831.pdf"
+  },
+  {
+    id: "mun-colonial-1815-survey-record-office",
+    year: 1815,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Land Survey and Record Office Report",
+    topics: ["1815", "St. John's", "survey", "Record Office", "Government House", "public records", "land grants"],
+    pages: "physical PDF pp. 127, 129 and 133",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V02.pdf"
+  },
+  {
     id: "mun-colonial-1816-st-johns-fire",
     year: 1816,
     organization: "Governor of Newfoundland",
@@ -14455,6 +14505,60 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1815-01-05",
+    category: "defence infrastructure",
+    title: "Commissariat allocated 150 cords of fort firewood",
+    body: "The tender allocated 80 cords to Fort Townshend, 40 cords to Fort William and 30 cords to Signal Hill. It required sound wood delivered to the respective fuel yards by February 18.",
+    sourceId: "mun-royal-gazette-1815-fort-fuel",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1815-02-02",
+    category: "fire response",
+    title: "Grand Jury specified a household fire-readiness standard",
+    body: "The St. John's Grand Jury called for every house to have one ladder from ground to eaves, a second ladder fixed to the roof and leading to the chimney, and at least two marked leather fire buckets. It also called for protected stove funnels, insulated stove floors and merchant gunpowder to be stored in the magazine.",
+    sourceId: "mun-royal-gazette-1815-fire-readiness",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1815-03-21",
+    category: "signals",
+    title: "Fort-gun sequence put St. John's troops on readiness",
+    body: "Chief Justice Caesar Colclough reported that, during an alarming riot on what he called the night following the 16th, guns fired from Fort William and were answered from Fort Townshend and Signal Hill. He described them as General Campbell's signals to have the troops ready if required. The letter says the crowd dispersed because it believed the army was approaching.",
+    sourceId: "mun-colonial-1815-fort-signals",
+    pages: "physical PDF pp. 88 to 95",
+    status: "reported"
+  },
+  {
+    date: "1815-05-06",
+    category: "signals",
+    title: "Fort signal and nightly patrol plan linked military and civil response",
+    body: "Colclough reported doubled guards, hourly patrols around the Barrens until daylight and Macbraire ready at Fort Townshend to act with the soldiers. He told Sawyer's Corner crowds that, on a signal, a company from each fort would come to town. A postscript reports about 90 special constables and a nightly 24-person patrol in two divisions.",
+    sourceId: "mun-colonial-1815-fort-signals",
+    pages: "physical PDF pp. 105 to 108",
+    status: "reported"
+  },
+  {
+    date: "1815-08-29",
+    category: "public works",
+    title: "Contractor sought for the King's Beach common sewer",
+    body: "A public-works notice sought proposals to construct and complete the common sewer required by the leases for the King's Beach ground. The notice says the sewer was intended to carry waste from buildings on the leased ground. It does not report that construction was completed.",
+    sourceId: "mun-royal-gazette-1815-kings-beach-sewer",
+    pages: "physical PDF p. 2",
+    status: "proposed"
+  },
+  {
+    date: "1815-11-10",
+    category: "public works",
+    title: "Land survey was lodged in the new Record Office",
+    body: "Governor Richard Goodwin Keats reported that a survey of lands near St. John's had been completed and lodged in the Record Office. He used it to identify encroachments and reported grants covering 843 acres. He also reported that a new Record Office had been erected beside Government House and would receive the public records when sufficiently dry.",
+    sourceId: "mun-colonial-1815-survey-record-office",
+    pages: "physical PDF pp. 129 and 133",
+    status: "reported"
+  },
   {
     date: "1816-02-12",
     category: "fire response",
