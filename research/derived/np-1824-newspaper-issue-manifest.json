@@ -1,0 +1,190 @@
+{
+  "year": 1824,
+  "retrieved": "2026-11-16",
+  "issue_count": 25,
+  "collections": [
+    {
+      "name": "Newfoundland Mercantile Journal",
+      "slug": "nl_mercantile",
+      "collection_url": "https://dai.mun.ca/digital/nl_mercantile",
+      "issue_count": 25,
+      "items": [
+        {
+          "date": "18240115",
+          "filename": "NewfoundlandMercantileJournal18240115no508.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240115no508.pdf",
+          "bytes": 8233090,
+          "sha256": "d3ddbae06fc311e785d1a36f230f8489d24bdc6220c6010ec328c7919ef52d6f"
+        },
+        {
+          "date": "18240129",
+          "filename": "NewfoundlandMercantileJournal18240129no510.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240129no510.pdf",
+          "bytes": 7596300,
+          "sha256": "86ad01778176a95e23abcaf10bd0c76aae3cd6178ff6a3954aa9512fd054bfc0"
+        },
+        {
+          "date": "18240205",
+          "filename": "NewfoundlandMercantileJournal18240205no511.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240205no511.pdf",
+          "bytes": 7438468,
+          "sha256": "a367147696554bbc2caa6d30bbdbc1a7020d447d8f480c14a2ccbf2d5c04aa1a"
+        },
+        {
+          "date": "18240219",
+          "filename": "NewfoundlandMercantileJournal18240219no513.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240219no513.pdf",
+          "bytes": 7559025,
+          "sha256": "45ef29ad20e80626ef23a161bea656adcf98ef04732861231f500f2c85848371"
+        },
+        {
+          "date": "18240304",
+          "filename": "NewfoundlandMercantileJournal18240304no515.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240304no515.pdf",
+          "bytes": 7486422,
+          "sha256": "290ac4a47e2bdeaf902170a9c6c9468e2dfbe52c09026de3afd3d34437049edf"
+        },
+        {
+          "date": "18240318",
+          "filename": "NewfoundlandMercantileJournal18240318no517.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240318no517.pdf",
+          "bytes": 7433854,
+          "sha256": "71e97fc413cc99d0e00b1fed1812a939f199589ed93d7c3f07ba253d96109179"
+        },
+        {
+          "date": "18240513",
+          "filename": "NewfoundlandMercantileJournal18240513no525.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240513no525.pdf",
+          "bytes": 7297540,
+          "sha256": "0ff92af5f2dd3478e59e3a508dd4896820d83007cd6a70b69e4271f49e7ceb86"
+        },
+        {
+          "date": "18240520",
+          "filename": "NewfoundlandMercantileJournal18240520no526.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240520no526.pdf",
+          "bytes": 7355030,
+          "sha256": "3e7b6695e6d5461a365dc5bb8b0bf527416d3ecb952a4b1690a01afa1fcd227a"
+        },
+        {
+          "date": "18240527",
+          "filename": "NewfoundlandMercantileJournal18240527no527.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240527no527.pdf",
+          "bytes": 7640999,
+          "sha256": "516829258c4f090ecb1136fe26e5c481d7c3add5a902093bd70227f5454a0662"
+        },
+        {
+          "date": "18240603",
+          "filename": "NewfoundlandMercantileJournal18240603no528.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240603no528.pdf",
+          "bytes": 7433707,
+          "sha256": "2be4978730ef5ec2cb06db0242ed2a4dd7745699b2900256aa7e7a4fa6a39c0c"
+        },
+        {
+          "date": "18240610",
+          "filename": "NewfoundlandMercantileJournal18240610no529.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240610no529.pdf",
+          "bytes": 7610333,
+          "sha256": "6eb7236681e7b829d0a2cbe7137d9013fbbc270d05f7604a13486c7bbf0d0af5"
+        },
+        {
+          "date": "18240617",
+          "filename": "NewfoundlandMercantileJournal18240617no530.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240617no530.pdf",
+          "bytes": 7518983,
+          "sha256": "e60cb020ae2c9835ba067cfc1bb37953a699aa64dbe98bba5b7350b9edb1d9eb"
+        },
+        {
+          "date": "18240624",
+          "filename": "NewfoundlandMercantileJournal18240624no531.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240624no531.pdf",
+          "bytes": 7298042,
+          "sha256": "2bc71d4c0cc470994fa9fa840440e822d6fa507f40babfb68203ab52f2d8254d"
+        },
+        {
+          "date": "18240708",
+          "filename": "NewfoundlandMercantileJournal18240708no533.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240708no533.pdf",
+          "bytes": 7460168,
+          "sha256": "1e0a64611f0ba466f0f0f64e14e0f068c4b4838de02e13dee20def10ac623595"
+        },
+        {
+          "date": "18240715",
+          "filename": "NewfoundlandMercantileJournal18240715no534.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240715no534.pdf",
+          "bytes": 7991337,
+          "sha256": "66b41f64fcdb783c7d48f6e54eea87a38fc6422f93c6586f699adb8111d8eee7"
+        },
+        {
+          "date": "18240805",
+          "filename": "NewfoundlandMercantileJournal18240805no537.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240805no537.pdf",
+          "bytes": 8280136,
+          "sha256": "ca4593935b1555fc862138eab8ab36215e1f40b990e63c8009a7f2be4ab0f0f3"
+        },
+        {
+          "date": "18240812",
+          "filename": "NewfoundlandMercantileJournal18240812no538.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240812no538.pdf",
+          "bytes": 7804523,
+          "sha256": "06da5541f48184d058a6bb7a2db4a6eeaf2f8761dc6b091dd29af4bb72c80307"
+        },
+        {
+          "date": "18240819",
+          "filename": "NewfoundlandMercantileJournal18240819no539.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240819no539.pdf",
+          "bytes": 7896585,
+          "sha256": "854d73befbb1e5b144306d751da9d07e5320f3fbdd9f31b8a04416676d9a4ef9"
+        },
+        {
+          "date": "18240826",
+          "filename": "NewfoundlandMercantileJournal18240826no540.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240826no540.pdf",
+          "bytes": 7616161,
+          "sha256": "d5ffc24b71afa604d535bfe0cb6dbf39ca7d9fc022aabe7f2f3a8e75a96737c6"
+        },
+        {
+          "date": "18240902",
+          "filename": "NewfoundlandMercantileJournal18240902no541.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240902no541.pdf",
+          "bytes": 7779056,
+          "sha256": "0e57f4428ccda9ce8c9f615d788bf1c4a2ec6098498869eb03005e7faf622990"
+        },
+        {
+          "date": "18240909",
+          "filename": "NewfoundlandMercantileJournal18240909no542.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240909no542.pdf",
+          "bytes": 7855416,
+          "sha256": "334381980e2b18e718a66c4fb23f0f7de5e8e48fcc8dc0cefe02e749fe93778a"
+        },
+        {
+          "date": "18240916",
+          "filename": "NewfoundlandMercantileJournal18240916no543.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240916no543.pdf",
+          "bytes": 8132244,
+          "sha256": "970e4a60b950386e714c55ba0a49d993ed5e8dac79d40344978272c392e16398"
+        },
+        {
+          "date": "18240930",
+          "filename": "NewfoundlandMercantileJournal18240930no545.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240930no545.pdf",
+          "bytes": 7721609,
+          "sha256": "2f139784c36cbc67071fc0a0fbeb8070108b6680a3dd149f26be477775facaf0"
+        },
+        {
+          "date": "18241007",
+          "filename": "NewfoundlandMercantileJournal18241007no546.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18241007no546.pdf",
+          "bytes": 7965721,
+          "sha256": "972d93cb0f9afe10c41d068960edcd75306b297dc76efe763c9828c464fb1278"
+        },
+        {
+          "date": "18241021",
+          "filename": "NewfoundlandMercantileJournal18241021no547.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18241021no547.pdf",
+          "bytes": 7993535,
+          "sha256": "f49d950d42c7a246342ea958ccc1f87439771cc4e8d6bac2cb774dce301b21cc"
+        }
+      ]
+    }
+  ]
+}

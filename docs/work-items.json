@@ -3142,6 +3142,18 @@
       "notes": "Express notices record an operating Harbour Grace and Portugal Cove packet timetable and an earlier St. John's letter connection intended to complete the crossing by daylight. Michael Hayes proposed a Conception Bay coasting service using the schooner Fanny, but the reviewed issue set does not establish that the proposed service began. No supported 1825 Newfoundland lighthouse project, electric telegraph, installed electrical circuit, operating electrical apparatus or local lightning-damage event was found."
     },
     {
+      "id": "NPREG-204",
+      "title": "Add the 1824 electrical, fire-response, buoy and packet records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1824 electrical, telecommunications, navigation-aid, emergency-signalling and scheduled communication evidence.",
+      "dependencies": ["NPREG-203"],
+      "completion_evidence": ["research/NP_1824_SYSTEM_RECORD.md", "research/derived/np-1824-newspaper-issue-manifest.json", "src/data.js", "tests/np-1824-system.test.js"],
+      "blocker": null,
+      "notes": "The May records document Davy's wire-connected copper-protection principle, a St. John's gun-and-bell fire alarm, the Fort Townshend engine response, the intended warping use of the King's buoys, and the Phoenix Fire Company's drill, engine-house and bucket rules. James Doyle's July notice records the Dart packet timetable and letter collection points. The repeated Hibernia notice is dated 1823 and remains in that year's queue."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

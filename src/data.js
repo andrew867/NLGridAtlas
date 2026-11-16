@@ -640,6 +640,56 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1824-davy-copper",
+    year: 1824,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Sir Humphry Davy Copper-Sheathing Protection Report",
+    topics: ["1824", "Sir Humphry Davy", "copper sheathing", "tin", "wire", "electrical corrosion protection", "ships"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240513no525.pdf"
+  },
+  {
+    id: "mun-mercantile-1824-fire-response",
+    year: 1824,
+    organization: "Newfoundland Mercantile Journal",
+    title: "St. John's Fire Alarm and Fort Townshend Engine Response",
+    topics: ["1824", "St. John's", "fire alarm", "alarm guns", "bells", "Fort Townshend", "fire engine", "Royal Artillery"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240513no525.pdf"
+  },
+  {
+    id: "mun-mercantile-1824-kings-buoys",
+    year: 1824,
+    organization: "Newfoundland Mercantile Journal",
+    title: "King's Buoys Operating Notice",
+    topics: ["1824", "St. John's", "Narrows", "King's Buoys", "warping", "pilots", "navigation"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240513no525.pdf"
+  },
+  {
+    id: "mun-mercantile-1824-phoenix-fire-company",
+    year: 1824,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Phoenix Fire Company Rules and Equipment",
+    topics: ["1824", "St. John's", "Phoenix Fire Company", "fire engine", "engine house", "fire buckets", "alarm guns", "fire wardens"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240520no526.pdf"
+  },
+  {
+    id: "mun-mercantile-1824-dart-packet",
+    year: 1824,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Dart Packet Operating and Letter Notice",
+    topics: ["1824", "Dart", "packet boat", "Portugal Cove", "Conception Bay", "St. John's", "letters", "James Doyle"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18240715no534.pdf"
+  },
+  {
     id: "mun-mercantile-1825-express-packet",
     year: 1825,
     organization: "Newfoundland Mercantile Journal",
@@ -13945,6 +13995,51 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1824-05-08",
+    category: "emergency",
+    title: "Alarm guns and bells summoned the Fort Townshend engine",
+    body: "A St. John's fire alarm used guns and bells. Snow initially concealed the fire's location. The Fort Townshend engine arrived first, and Royal Artillery personnel checked the spread. Sergeant Major Gilmore's right hand was severely scorched. Wetting the adjoining stone house prevented its roof from catching fire.",
+    sourceId: "mun-mercantile-1824-fire-response",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1824-05-10",
+    category: "navigation",
+    title: "King's buoys were reserved for warping",
+    body: "The Naval Yard notice identified King's buoys in the Narrows and St. John's harbour. Vessels could use them only for warping past, not for mooring. Vessels tied to them could be cast off, and responsible pilots could be barred from future King's service.",
+    sourceId: "mun-mercantile-1824-kings-buoys",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
+    date: "1824-05-13",
+    category: "electrical",
+    title: "Newspaper described wire-connected copper protection",
+    body: "A report of Sir Humphry Davy's work described copper made negatively electrical against seawater corrosion. It said a small mass of tin connected by wire to a large copper plate preserved the copper. The report identified the Admiralty's move toward trials on warships.",
+    sourceId: "mun-mercantile-1824-davy-copper",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1824-05-19",
+    category: "emergency",
+    title: "Phoenix Fire Company adopted an engine-response system",
+    body: "Lower-district householders formed the Phoenix Fire Company. Members drilled with the engine from 18:00 to 19:00 every second Saturday. An alarm sent them to the engine house at Brown, Hoyles and Morris's wharf. Each householder member had to keep six light, inverted-cone buckets ready for engine use.",
+    sourceId: "mun-mercantile-1824-phoenix-fire-company",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1824-07-13",
+    category: "communications",
+    title: "Dart packet carried scheduled Conception Bay letters",
+    body: "James Doyle's Dart packet was fitted for service between Portugal Cove and other Conception Bay ports. It left Portugal Cove at 08:00 each Saturday when weather permitted. St. John's and Portugal Cove collection points accepted named firms' letters and other letters for dispatch.",
+    sourceId: "mun-mercantile-1824-dart-packet",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
   {
     date: "1825-08-25",
     category: "communications",

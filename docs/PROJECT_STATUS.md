@@ -1,6 +1,6 @@
 # NL Grid Atlas project status
 
-Updated: 2026-11-15
+Updated: 2026-11-16
 
 ## Repository and hosting
 
@@ -412,10 +412,11 @@ Updated: 2026-11-15
 - Added the 1827 packet continuity and lightning records. The winter notice identifies substitute water service and a weekly land letter carrier. The altered *Express* notice gives the three-departure timetable, fares, letter rate and agents. Matching copies print conflicting April 16 and April 17 dates, so the timeline uses the May 4 publication date. A separate report records lightning damage to a Carbonear business house.
 - Added the 1826 packet and Western Ward fire-watch records. *Express* notices identify winter water-and-land alternatives, a three-departure timetable, passenger and letter charges, a seasonal postage reduction and an earlier daylight schedule. Published Western Fire and Safety Company rules assign personnel, fire-response equipment, alarm instruments and seasonal night-watch hours.
 - Added the 1825 Express and proposed Fanny communication records. The *Express* notice documents an operating Harbour Grace and Portugal Cove timetable, passenger and letter charges, and an earlier St. John's connection intended to complete the crossing by daylight. Michael Hayes proposed a separate Conception Bay coasting service with the schooner *Fanny*; the surviving issue does not establish that it began.
+- Added the 1824 electrical, fire-response, buoy and packet records. A locally printed report describes Davy's wire-connected copper-protection principle. Separate notices document a gun-and-bell fire alarm, the Fort Townshend engine response, the Phoenix Fire Company's drill and equipment rules, the King's buoys' warping function, and James Doyle's scheduled *Dart* packet and letter collection points.
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1824 after the 1825 Express and proposed Fanny communication records under `NPREG-203`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1823 after the 1824 electrical, fire-response, buoy and packet records under `NPREG-204`. Add only named equipment, works, companies or operating events supported by a page-level source.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 
