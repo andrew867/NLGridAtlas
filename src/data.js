@@ -640,11 +640,41 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-mercantile-1827-winter-packet",
+    year: 1827,
+    organization: "Newfoundland Mercantile Journal",
+    title: "Express Winter Packet and Land Carrier Notice",
+    topics: ["1827", "Express", "packet boat", "land carrier", "Harbour Grace", "Portugal Cove", "St. John's", "winter", "service continuity", "letters"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270208no668.pdf"
+  },
+  {
+    id: "mun-public-ledger-1827-express-alteration",
+    year: 1827,
+    organization: "Public Ledger",
+    title: "Altered Express Packet Timetable",
+    topics: ["1827", "Express", "packet boat", "Harbour Grace", "Portugal Cove", "St. John's", "alteration", "passengers", "parcels", "letters"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270504.pdf"
+  },
+  {
+    id: "mun-public-ledger-1827-carbonear-lightning",
+    year: 1827,
+    organization: "Public Ledger",
+    title: "Carbonear Business House Lightning Strike",
+    topics: ["1827", "Carbonear", "lightning", "Slade, Elson & Co.", "chimney", "grate", "door", "building damage"],
+    pages: "physical PDF p. 2",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270727.pdf"
+  },
+  {
     id: "mun-newfoundlander-1828-packet-alterations",
     year: 1828,
     organization: "The Newfoundlander",
-    title: "Express Packet Alterations and Timetable",
-    topics: ["1828", "Express", "packet boat", "Harbour Grace", "Portugal Cove", "St. John's", "alterations", "passengers", "parcels", "letters"],
+    title: "Express Packet Alterations Notice Reprint",
+    topics: ["1828", "Express", "packet boat", "Harbour Grace", "Portugal Cove", "St. John's", "alterations", "reprint", "passengers", "parcels", "letters"],
     pages: "physical PDF p. 1",
     status: "reported",
     url: "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18280109.pdf"
@@ -13836,10 +13866,37 @@ export const staticClaims = [
 
 export const timeline = [
   {
+    date: "1827-01-13",
+    category: "communications",
+    title: "Winter packet notice defined a land fallback",
+    body: "The Express was laid up for the winter. A suitable boat with an experienced crew was to run between Harbour Grace and Portugal Cove when conditions allowed. If water communication stopped, a letter carrier was to travel weekly from Harbour Grace to St. John's by land, weather permitting.",
+    sourceId: "mun-mercantile-1827-winter-packet",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1827-05-04",
+    category: "communications",
+    title: "Altered Express packet timetable was published",
+    body: "The Express packet notice reported alterations for passenger comfort. It scheduled Harbour Grace departures on Monday, Wednesday and Friday at 09:00, with Portugal Cove departures at noon on the next day. It listed cabin and steerage fares, a six-pence single-letter rate and parcel carriage. James Clift and P. Rogerson were the agents.",
+    sourceId: "mun-public-ledger-1827-express-alteration",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1827-07-16",
+    category: "electrical",
+    title: "Lightning damaged a Carbonear business house",
+    body: "Lightning struck the business house of Slade, Elson & Co. at Carbonear. It entered through the chimney, damaged the grate and forced a door off its hinges. T. Newell and Dr. Donnegan were briefly rendered speechless and recovered without reported injury.",
+    sourceId: "mun-public-ledger-1827-carbonear-lightning",
+    pages: "physical PDF p. 2",
+    status: "reported"
+  },
+  {
     date: "1828-01-09",
     category: "communications",
-    title: "Express packet advertised passenger alterations",
-    body: "The Express packet notice stated that the boat had undergone alterations for passenger comfort and continued between Harbour Grace and Portugal Cove. It scheduled three weekly departures, next-day returns and a St. John's carrier connection. The service carried passengers, parcels and letters.",
+    title: "Express packet alterations notice was reprinted",
+    body: "The issue reprinted an Express packet notice dated July 25, 1827. The notice stated that the boat had undergone alterations for passenger comfort and continued between Harbour Grace and Portugal Cove. It scheduled three weekly departures, next-day returns and a St. John's carrier connection for passengers, parcels and letters.",
     sourceId: "mun-newfoundlander-1828-packet-alterations",
     pages: "physical PDF p. 1",
     status: "reported"

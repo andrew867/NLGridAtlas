@@ -1,0 +1,927 @@
+{
+  "year": 1827,
+  "retrieved": "2026-11-15",
+  "issue_count": 128,
+  "collections": [
+    {
+      "name": "The Newfoundlander",
+      "slug": "newfoundland",
+      "collection_url": "https://dai.mun.ca/digital/newfoundland",
+      "issue_count": 15,
+      "items": [
+        {
+          "date": "18270808",
+          "filename": "Newfoundlander18270808.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18270808.pdf",
+          "bytes": 3598803,
+          "sha256": "a24b6d9685a836ede7f7ea67323e64b9ab9f8bd41910be0d92a8925f3116511a"
+        },
+        {
+          "date": "18270815",
+          "filename": "Newfoundlander18270815.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18270815.pdf",
+          "bytes": 3518028,
+          "sha256": "f7e35c0a054c023e0ae5a6f7173d20c9bf0a95500377fae48bf16263811049d2"
+        },
+        {
+          "date": "18270822",
+          "filename": "Newfoundlander18270822.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18270822.pdf",
+          "bytes": 3453155,
+          "sha256": "14a94550b2d783d6c0b4c24a067deabea85823091bfa98dea54ef6ae4ead5678"
+        },
+        {
+          "date": "18270905",
+          "filename": "Newfoundlander18270905.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18270905.pdf",
+          "bytes": 3262907,
+          "sha256": "ea83348bcc90148f39d59407ef4d6b90ebed24b60eb6713d797969a2f231bbec"
+        },
+        {
+          "date": "18270919",
+          "filename": "Newfoundlander18270919.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18270919.pdf",
+          "bytes": 3304600,
+          "sha256": "f267b264fd3a2fb0a99d379efec8a82c906f71c860b47554c6577358ace5b046"
+        },
+        {
+          "date": "18270926",
+          "filename": "Newfoundlander18270926.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18270926.pdf",
+          "bytes": 3191693,
+          "sha256": "521e4d34b530abdc032be69f4ba0ac8809372eba5cabed835a11fa7f1a98c3c9"
+        },
+        {
+          "date": "18271003",
+          "filename": "Newfoundlander18271003.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18271003.pdf",
+          "bytes": 3120117,
+          "sha256": "8053fad2077397df49c2946625355ebffb74af8dfae1df06bc9f045516647ff0"
+        },
+        {
+          "date": "18271017",
+          "filename": "Newfoundlander18271017.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18271017.pdf",
+          "bytes": 3095861,
+          "sha256": "d5aaafa5716767077c46da38ee06abf93dab68db3ecb3344c4744646f8eef826"
+        },
+        {
+          "date": "18271024",
+          "filename": "Newfoundlander18271024.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18271024.pdf",
+          "bytes": 3093791,
+          "sha256": "612ef819b451b49bf205c4d8f8571cbe2b46faa0eac2d66050eec650e6a79eb1"
+        },
+        {
+          "date": "18271107",
+          "filename": "Newfoundlander18271107.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18271107.pdf",
+          "bytes": 3391077,
+          "sha256": "92d90c171198ad74be245b03842b3c1e4b346084319f12fd7fe6547ae4c6d282"
+        },
+        {
+          "date": "18271114",
+          "filename": "Newfoundlander18271114.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18271114.pdf",
+          "bytes": 3411743,
+          "sha256": "fcd248e28eb47d7a52421e690ef82e712005bac0bfe881867482c4bde9e19372"
+        },
+        {
+          "date": "18271121",
+          "filename": "Newfoundlander18271121.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18271121.pdf",
+          "bytes": 3362656,
+          "sha256": "f0f01d608ea42c8d7c11be0e5dd417c3b36614b37977fa2a15a02c0d7ab544e5"
+        },
+        {
+          "date": "18271205",
+          "filename": "Newfoundlander18271205.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18271205.pdf",
+          "bytes": 3392714,
+          "sha256": "36a4bc168d42f88bc6e0e88a9e07d9e6665be49648af2778e1fb07038dbf6898"
+        },
+        {
+          "date": "18271219",
+          "filename": "Newfoundlander18271219.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18271219.pdf",
+          "bytes": 3503802,
+          "sha256": "2edc1f091fddb042d510d32d86eaec9ef9279ec4037754ab3e445ea6966a81be"
+        },
+        {
+          "date": "18271226",
+          "filename": "Newfoundlander18271226.pdf",
+          "url": "https://dai.mun.ca/pdfs/newfoundland/Newfoundlander18271226.pdf",
+          "bytes": 3492551,
+          "sha256": "f6f1169ace970385a02134bd17ac6cc6f5aab2752090c3c7206795417d21c3a4"
+        }
+      ]
+    },
+    {
+      "name": "Public Ledger",
+      "slug": "publicledger",
+      "collection_url": "https://dai.mun.ca/digital/publicledger",
+      "issue_count": 99,
+      "items": [
+        {
+          "date": "18270102",
+          "filename": "PublicLedger18270102.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270102.pdf",
+          "bytes": 16537702,
+          "sha256": "c307d89e6dd20d0ddc8aed6943be4690885f8e3d21425695d94d2b60ca340484"
+        },
+        {
+          "date": "18270105",
+          "filename": "PublicLedger18270105.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270105.pdf",
+          "bytes": 15384531,
+          "sha256": "63e5d773c120c93a2958b632a5a9146c868a156487fa14a8d39a40b5294a6db8"
+        },
+        {
+          "date": "18270109",
+          "filename": "PublicLedger18270109.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270109.pdf",
+          "bytes": 15938696,
+          "sha256": "a609f293c97a279844f5026f4a03d011809f5a6219b0c72761987d9b950f6d63"
+        },
+        {
+          "date": "18270112",
+          "filename": "PublicLedger18270112.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270112.pdf",
+          "bytes": 15288869,
+          "sha256": "b536e45c9b1946bc00ec156a256ade7633e29aa73f3522385b2fe7f2f521f431"
+        },
+        {
+          "date": "18270116",
+          "filename": "PublicLedger18270116.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270116.pdf",
+          "bytes": 17166456,
+          "sha256": "a069933d356d7b6d52d201624259eff11e2bce77665fee9749cb3a267854d9c7"
+        },
+        {
+          "date": "18270119",
+          "filename": "PublicLedger18270119.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270119.pdf",
+          "bytes": 16079677,
+          "sha256": "c2829e12bde84519e9d47d2d15960e44078407cb9b4c82f819f9d9f8f435f886"
+        },
+        {
+          "date": "18270123",
+          "filename": "PublicLedger18270123.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270123.pdf",
+          "bytes": 14920871,
+          "sha256": "e12c5832ca6936ef7bedb49ea417904a230feb399bce8d744b39ce02bd01c67a"
+        },
+        {
+          "date": "18270126",
+          "filename": "PublicLedger18270126.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270126.pdf",
+          "bytes": 14773407,
+          "sha256": "8375096b72e3279a26bdf70150e7f72fa8a24e67baa18fc7fd362918ef9561a3"
+        },
+        {
+          "date": "18270130",
+          "filename": "PublicLedger18270130.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270130.pdf",
+          "bytes": 10787786,
+          "sha256": "ace2e55c943a68ee7b274980fd259f06ea09d6460f682ce8c2e297b82a2c195d"
+        },
+        {
+          "date": "18270202",
+          "filename": "PublicLedger18270202.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270202.pdf",
+          "bytes": 14607600,
+          "sha256": "dff134ed0148f25b2c6b0508b06373f3933f9283e5c45f5e310fd6d348d0e75b"
+        },
+        {
+          "date": "18270206",
+          "filename": "PublicLedger18270206.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270206.pdf",
+          "bytes": 15318849,
+          "sha256": "9aa5e93af05186448c2ec6d61759d7ee4cbcba7beae9bbb47480facfdc9c2fa3"
+        },
+        {
+          "date": "18270209",
+          "filename": "PublicLedger18270209.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270209.pdf",
+          "bytes": 16050412,
+          "sha256": "45679445ba865593eba83bdf17fe735347683155087439e4156e2f3309c859cc"
+        },
+        {
+          "date": "18270213",
+          "filename": "PublicLedger18270213.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270213.pdf",
+          "bytes": 16610046,
+          "sha256": "a3569c1beaac7d7f80286ceddb3ef6f8fd74db6255b2b96ca0fcdbbfacaa8719"
+        },
+        {
+          "date": "18270216",
+          "filename": "PublicLedger18270216.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270216.pdf",
+          "bytes": 15573859,
+          "sha256": "9346329845a42cc04cf443664852d793b6a9eaf7c95d248435af958dcb1a0729"
+        },
+        {
+          "date": "18270220",
+          "filename": "PublicLedger18270220.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270220.pdf",
+          "bytes": 16345878,
+          "sha256": "11117961d9d61149ab66b010220eada7f8892dbf3c8fe3f6d98a3d030c9338f9"
+        },
+        {
+          "date": "18270223",
+          "filename": "PublicLedger18270223.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270223.pdf",
+          "bytes": 16067784,
+          "sha256": "c3dde73be3cc40e7eb1da8d3037a3788d189279a81c6c87517bce8df9175727e"
+        },
+        {
+          "date": "18270227",
+          "filename": "PublicLedger18270227.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270227.pdf",
+          "bytes": 23845505,
+          "sha256": "4bfa7bdbeef045a2f3d9ffd880057ca15665538d1080311fadfae1e233eba5f5"
+        },
+        {
+          "date": "18270302",
+          "filename": "PublicLedger18270302.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270302.pdf",
+          "bytes": 15830219,
+          "sha256": "81600e505b8f8be930d86bae5d3e199be8db7d17e58a32d7983a8951804805af"
+        },
+        {
+          "date": "18270306",
+          "filename": "PublicLedger18270306.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270306.pdf",
+          "bytes": 16602547,
+          "sha256": "803cb3c85d3809999ed5d8c11d2158ec181ee38ce5b630b71cde4197234c7840"
+        },
+        {
+          "date": "18270309",
+          "filename": "PublicLedger18270309.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270309.pdf",
+          "bytes": 16397107,
+          "sha256": "23cee335fb9f847029bb1b6d5d26321bc845c3aa425e2a2233224547f91cedb5"
+        },
+        {
+          "date": "18270313",
+          "filename": "PublicLedger18270313.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270313.pdf",
+          "bytes": 16043993,
+          "sha256": "a5216ab63ef01233cff3d30d796ed05d673d1f72ed9d78a7a1b8b74250802a4b"
+        },
+        {
+          "date": "18270316",
+          "filename": "PublicLedger18270316.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270316.pdf",
+          "bytes": 15141144,
+          "sha256": "1bd458247dbaa04371fe1282ebc0f23e15cea7aa95989080bda03e427356a991"
+        },
+        {
+          "date": "18270320",
+          "filename": "PublicLedger18270320.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270320.pdf",
+          "bytes": 15451688,
+          "sha256": "63bf45985c4a818b00071b6ce5dd85a2b7d65d9853898fc46b9234e06d34c23f"
+        },
+        {
+          "date": "18270323",
+          "filename": "PublicLedger18270323.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270323.pdf",
+          "bytes": 15891114,
+          "sha256": "f684246db5f3e560a97cc7ef3eef49f33319e9d60fb0fae7ee0dc924e2879938"
+        },
+        {
+          "date": "18270327",
+          "filename": "PublicLedger18270327.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270327.pdf",
+          "bytes": 16501764,
+          "sha256": "f9a53a6c5e05875560f889300201286cea8bf5d011443810735812c074d61cfe"
+        },
+        {
+          "date": "18270403",
+          "filename": "PublicLedger18270403.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270403.pdf",
+          "bytes": 16099173,
+          "sha256": "7500947e6c4233b61ea75a2ac0ae2edcb0d8c5279f7cc667d6be4e841cd7a281"
+        },
+        {
+          "date": "18270406",
+          "filename": "PublicLedger18270406.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270406.pdf",
+          "bytes": 16323491,
+          "sha256": "26d8b578faca87e398242898e36b8ac63613df6e55e767fd2fbb219ca894de8b"
+        },
+        {
+          "date": "18270410",
+          "filename": "PublicLedger18270410.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270410.pdf",
+          "bytes": 16380757,
+          "sha256": "e1140a01fdea40b7e146bd927e2dd8fde0ba021d9e330b350a86b092ad67ef1a"
+        },
+        {
+          "date": "18270413",
+          "filename": "PublicLedger18270413.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270413.pdf",
+          "bytes": 17189570,
+          "sha256": "bbc29b2a8d198f7eebd222e5025a6b56f89594bf078e3f55b0b37ea1b6a1fec6"
+        },
+        {
+          "date": "18270414",
+          "filename": "PublicLedger18270414.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270414.pdf",
+          "bytes": 8096774,
+          "sha256": "15c9e7a05879974635d605ef7ed14d62ea098b635eb5449a5c23b29470fa6901"
+        },
+        {
+          "date": "18270420",
+          "filename": "PublicLedger18270420.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270420.pdf",
+          "bytes": 7446497,
+          "sha256": "5b665dc1a10684084597f457ce1359a1b1d6c51426cdfacb0f6570adcb973853"
+        },
+        {
+          "date": "18270424",
+          "filename": "PublicLedger18270424.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270424.pdf",
+          "bytes": 8035538,
+          "sha256": "09b52ab5849e5a71f938cbdf0c34e97ec94704a9abf4802e8b574762893c47d1"
+        },
+        {
+          "date": "18270427",
+          "filename": "PublicLedger18270427.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270427.pdf",
+          "bytes": 11950697,
+          "sha256": "49c23de137d2166ded6810c02eca880b8f14283eb1df8bb14ef36df9152214a9"
+        },
+        {
+          "date": "18270501",
+          "filename": "PublicLedger18270501.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270501.pdf",
+          "bytes": 10996249,
+          "sha256": "ee17a1ce81029bc510a34ccdb76ac51f601a2b3d6779a07c48d6b34b7f7a0ece"
+        },
+        {
+          "date": "18270504",
+          "filename": "PublicLedger18270504.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270504.pdf",
+          "bytes": 16277262,
+          "sha256": "61a811c7059a0778e5171e6ec42568ba4ae0c37db32e2b38eb9718f2bdda2bb0"
+        },
+        {
+          "date": "18270508",
+          "filename": "PublicLedger18270508.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270508.pdf",
+          "bytes": 17257700,
+          "sha256": "ed9a95494e119483828f355ef1071bd5f44e2c9b95089a78fba4d4aca4ab20ea"
+        },
+        {
+          "date": "18270511",
+          "filename": "PublicLedger18270511.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270511.pdf",
+          "bytes": 15943053,
+          "sha256": "0131df36b31dc27d26e6a6f59bcf49ca8d2c272d873531c341147a0da857e2d9"
+        },
+        {
+          "date": "18270515",
+          "filename": "PublicLedger18270515.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270515.pdf",
+          "bytes": 16218193,
+          "sha256": "09b86022bab3ca8e858520f3b60825fa450afc8184ec21e91e40c1c088ec5045"
+        },
+        {
+          "date": "18270518",
+          "filename": "PublicLedger18270518.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270518.pdf",
+          "bytes": 15732361,
+          "sha256": "5e52460fde7cd401d0eaf5d858d94f9f1493956a239dff321316a7b423fa2115"
+        },
+        {
+          "date": "18270522",
+          "filename": "PublicLedger18270522.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270522.pdf",
+          "bytes": 15537080,
+          "sha256": "9f4249f55c8d33c557ffb8d6262a1b00029928948a23ccd17be0c2ed9f9a3c7d"
+        },
+        {
+          "date": "18270525",
+          "filename": "PublicLedger18270525.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270525.pdf",
+          "bytes": 16086031,
+          "sha256": "748e4b6997840cea86baa58efd8e91cc34b586f94d30f0f8286144e24b85836b"
+        },
+        {
+          "date": "18270529",
+          "filename": "PublicLedger18270529.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270529.pdf",
+          "bytes": 15437236,
+          "sha256": "d2d79497b8f6e6a557ff9b92f3da96dc726ecd1e3b2b7f383203da563f41a5f4"
+        },
+        {
+          "date": "18270601",
+          "filename": "PublicLedger18270601.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270601.pdf",
+          "bytes": 16344066,
+          "sha256": "baafc6d7e2b2504dd4527af2847e8fee56fce1b2d5203cf38b0c0e1bd6ed4b66"
+        },
+        {
+          "date": "18270605",
+          "filename": "PublicLedger18270605.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270605.pdf",
+          "bytes": 15388533,
+          "sha256": "afcdc6c6a5da3e2a2d518e00e53c1922c10cd2565b13833957cc7c995be32e8e"
+        },
+        {
+          "date": "18270608",
+          "filename": "PublicLedger18270608.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270608.pdf",
+          "bytes": 15155667,
+          "sha256": "a70681fbfffc413fba6832dcadd99acca0931dbe8021d8a6ed1e7fb1935ee5f5"
+        },
+        {
+          "date": "18270612",
+          "filename": "PublicLedger18270612.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270612.pdf",
+          "bytes": 16089482,
+          "sha256": "5bc470b0bda1c6807ce1dcc4a3fad388765f68634949a9eb504a369c2553ab2a"
+        },
+        {
+          "date": "18270615",
+          "filename": "PublicLedger18270615.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270615.pdf",
+          "bytes": 14690048,
+          "sha256": "dc79ed581b7e8d7160d74641af94b57b785507885c26e8867d23049d33a2d538"
+        },
+        {
+          "date": "18270619",
+          "filename": "PublicLedger18270619.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270619.pdf",
+          "bytes": 14188386,
+          "sha256": "6dd8fa90f20828c1ca8d98c11b24349c591ef9b3decfca0e1583c0906420117f"
+        },
+        {
+          "date": "18270622",
+          "filename": "PublicLedger18270622.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270622.pdf",
+          "bytes": 14982621,
+          "sha256": "60e1d5761a4c0ad61c51492901b33fb0b223dc261acd2f69b62bf8fb1e2e9163"
+        },
+        {
+          "date": "18270626",
+          "filename": "PublicLedger18270626.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270626.pdf",
+          "bytes": 13894864,
+          "sha256": "e4d10f8e63fb9a02d98136215765ec9b5623cef22e541e53a55b41eeb94c1220"
+        },
+        {
+          "date": "18270629",
+          "filename": "PublicLedger18270629.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270629.pdf",
+          "bytes": 14241836,
+          "sha256": "d5deda7ed337e776db07b0c7872b5ae5cd791f666babb3c860810731cd450812"
+        },
+        {
+          "date": "18270703",
+          "filename": "PublicLedger18270703.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270703.pdf",
+          "bytes": 13437827,
+          "sha256": "3035ed5f7c2c37a492ef33b35d31c2e5867d35d9683b953c07616ee3ba374362"
+        },
+        {
+          "date": "18270706",
+          "filename": "PublicLedger18270706.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270706.pdf",
+          "bytes": 13536655,
+          "sha256": "cdc167c4aa9777e58900dd77d4cc159a60649c375e6d35e874884595eb9a8a8b"
+        },
+        {
+          "date": "18270710",
+          "filename": "PublicLedger18270710.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270710.pdf",
+          "bytes": 13052268,
+          "sha256": "1d3100b2d32a03c1f3a3ed96d9adf5cb2307881bdd8cde3c96e84435377fdcf6"
+        },
+        {
+          "date": "18270713",
+          "filename": "PublicLedger18270713.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270713.pdf",
+          "bytes": 13522707,
+          "sha256": "205f35ec0dfba39710320599d3e41133c2c6c7c0588e218663b853cadfc54ce0"
+        },
+        {
+          "date": "18270717",
+          "filename": "PublicLedger18270717.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270717.pdf",
+          "bytes": 13613273,
+          "sha256": "da5703efd8dcf56c06018211ed2f6712674a50badf3d3782e5a243454327e675"
+        },
+        {
+          "date": "18270720",
+          "filename": "PublicLedger18270720.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270720.pdf",
+          "bytes": 14320073,
+          "sha256": "e09c2146dfd5ce8723344869f90c40a80f7f7a0d95432b096e8d263d1aea7b9e"
+        },
+        {
+          "date": "18270724",
+          "filename": "PublicLedger18270724.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270724.pdf",
+          "bytes": 14524538,
+          "sha256": "110a3a4e06a11be858532d5ce1851c67481f39839b20e994d1135716f59c7d1a"
+        },
+        {
+          "date": "18270727",
+          "filename": "PublicLedger18270727.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270727.pdf",
+          "bytes": 7260280,
+          "sha256": "6d9a872eacf76438d2ab47e96f0dfeb6ef4fe34b6951588a75e2386b16b16315"
+        },
+        {
+          "date": "18270731",
+          "filename": "PublicLedger18270731.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270731.pdf",
+          "bytes": 14414422,
+          "sha256": "a42b2c4f7acfdf1ef298c1d647963b4e76eab55f0d788ec6f17774925c8c0d41"
+        },
+        {
+          "date": "18270803",
+          "filename": "PublicLedger18270803.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270803.pdf",
+          "bytes": 14432295,
+          "sha256": "59444fef737ef693073c5a10b41262d8903249cd61c51a9e003ed09f5d07646a"
+        },
+        {
+          "date": "18270807",
+          "filename": "PublicLedger18270807.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270807.pdf",
+          "bytes": 14837490,
+          "sha256": "3d709a89d409d3a7f2684ce3c6d2350436fc376cf03d938f9d8534155d06452b"
+        },
+        {
+          "date": "18270810",
+          "filename": "PublicLedger18270810.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270810.pdf",
+          "bytes": 14245298,
+          "sha256": "3adc15eca8292d4afabcd6456f3bc2d1d9f9d1513e6abc41aba4b2cd46d0773b"
+        },
+        {
+          "date": "18270817",
+          "filename": "PublicLedger18270817.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270817.pdf",
+          "bytes": 14441915,
+          "sha256": "c1965934b262a3f7257e53bd7788fa849b3f87232f7551e981fc7daea14872e7"
+        },
+        {
+          "date": "18270821",
+          "filename": "PublicLedger18270821.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270821.pdf",
+          "bytes": 14036153,
+          "sha256": "af9a52a2647071ae76ab52bc0c2a5cb824086bd6190933d82b7b339484f4cfed"
+        },
+        {
+          "date": "18270824",
+          "filename": "PublicLedger18270824.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270824.pdf",
+          "bytes": 13896698,
+          "sha256": "83592f6f2362d7c7b7f38dc7e28e9e306af24ddd2f5713cb8b8fccc148a482ff"
+        },
+        {
+          "date": "18270828",
+          "filename": "PublicLedger18270828.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270828.pdf",
+          "bytes": 13996528,
+          "sha256": "7d376380c79907fa995c9520cb82d4c6c45622b9c75c7eb17bfbdcccbc984cc3"
+        },
+        {
+          "date": "18270831",
+          "filename": "PublicLedger18270831.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270831.pdf",
+          "bytes": 14725067,
+          "sha256": "c76194ca50bafe3bfd485b69d68d4085b564b993a7603b7de8839d290a527edb"
+        },
+        {
+          "date": "18270904",
+          "filename": "PublicLedger18270904.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270904.pdf",
+          "bytes": 14021250,
+          "sha256": "6289ea9295543266933c9518133e751f1eba2a58f35ca31da86a555624358fe3"
+        },
+        {
+          "date": "18270907",
+          "filename": "PublicLedger18270907.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270907.pdf",
+          "bytes": 14593961,
+          "sha256": "7e447999242c7025538fcf38131414e071626905f2f2058362a211dc8716ed0b"
+        },
+        {
+          "date": "18270911",
+          "filename": "PublicLedger18270911.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270911.pdf",
+          "bytes": 14958735,
+          "sha256": "82d3f5bb47816d18068dac33d6539fec97efd046a27393e9815348bbba2f92fe"
+        },
+        {
+          "date": "18270914",
+          "filename": "PublicLedger18270914.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270914.pdf",
+          "bytes": 14704811,
+          "sha256": "122abb3b08ee3eff7498af8d8bd7a66f588ac3f9db1cdc452449b3ff03b96c78"
+        },
+        {
+          "date": "18270918",
+          "filename": "PublicLedger18270918.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270918.pdf",
+          "bytes": 15472281,
+          "sha256": "1aad6e277117948d81852edec9af73ba0884bfee1d41f4a739e081864e14ab26"
+        },
+        {
+          "date": "18270921",
+          "filename": "PublicLedger18270921.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270921.pdf",
+          "bytes": 14574283,
+          "sha256": "920acda8b40f746e6b25460bb821d7a6637f156409cf478833963ab4b03a1599"
+        },
+        {
+          "date": "18270928",
+          "filename": "PublicLedger18270928.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18270928.pdf",
+          "bytes": 15559281,
+          "sha256": "6cde957c31f5af869e2781b99e9ef061eac7a158b60ce646f3f44281cffe53d1"
+        },
+        {
+          "date": "18271002",
+          "filename": "PublicLedger18271002.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271002.pdf",
+          "bytes": 14216153,
+          "sha256": "0a38300cb2cf48303a5a49ec9c6329ae08039288632c4dbc521b9f719c0fcba5"
+        },
+        {
+          "date": "18271005",
+          "filename": "PublicLedger18271005.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271005.pdf",
+          "bytes": 14464314,
+          "sha256": "15dd151edf0da3a3afc0f19256d9d1a07b9119ae632ce23fb95d692772655a37"
+        },
+        {
+          "date": "18271009",
+          "filename": "PublicLedger18271009.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271009.pdf",
+          "bytes": 15456999,
+          "sha256": "bddff0e732f0fd0baf9420c508eefe74a58bac1bf166dddf15ab9a935ca11f42"
+        },
+        {
+          "date": "18271019",
+          "filename": "PublicLedger18271019.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271019.pdf",
+          "bytes": 14767246,
+          "sha256": "1c60bf595dc314bb22bc8f814967cd665b58467a7c597acc359e52e015ce5358"
+        },
+        {
+          "date": "18271023",
+          "filename": "PublicLedger18271023.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271023.pdf",
+          "bytes": 13465566,
+          "sha256": "41e5477142beb9e3ad51adb5a66eb59c475c8988490aa34713384085ae7a2ec4"
+        },
+        {
+          "date": "18271026",
+          "filename": "PublicLedger18271026.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271026.pdf",
+          "bytes": 14820790,
+          "sha256": "96e38a4f72695dbe9c18abdd6834655765696f94e674cae620a2ee89cbb52761"
+        },
+        {
+          "date": "18271030",
+          "filename": "PublicLedger18271030.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271030.pdf",
+          "bytes": 15909081,
+          "sha256": "dc3e8767aa44ec82ee2f614d5b52245757df89b497a85a045d0a8fe91016ce05"
+        },
+        {
+          "date": "18271102",
+          "filename": "PublicLedger18271102.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271102.pdf",
+          "bytes": 15054169,
+          "sha256": "beda87e4fc6ad81579f8b7badc1efa0562c0644fe0988c53b047442b83684792"
+        },
+        {
+          "date": "18271106",
+          "filename": "PublicLedger18271106.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271106.pdf",
+          "bytes": 14484714,
+          "sha256": "7d3cef0ad14be6e145895224d6fb15afa510c476194ae579b0ed23e4d23c6da2"
+        },
+        {
+          "date": "18271109",
+          "filename": "PublicLedger18271109.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271109.pdf",
+          "bytes": 12171166,
+          "sha256": "219d2137456c249bad49406c8a9996903aa05aa170889d9019b1b12d16e01d85"
+        },
+        {
+          "date": "18271113",
+          "filename": "PublicLedger18271113.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271113.pdf",
+          "bytes": 14406764,
+          "sha256": "b8735799796dcd848ce5e8ecc51ad917b12afcd099bf780402fad52f996f2425"
+        },
+        {
+          "date": "18271116",
+          "filename": "PublicLedger18271116.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271116.pdf",
+          "bytes": 13844707,
+          "sha256": "f33ab2eda99b3d0f5981bdf2f3df617ae4ac02943518388aad0925e2618696df"
+        },
+        {
+          "date": "18271120",
+          "filename": "PublicLedger18271120.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271120.pdf",
+          "bytes": 14720643,
+          "sha256": "525ed9a1bb6aa4db8d2687fc02a818db0101610710c2cfd12ae62228eedbce62"
+        },
+        {
+          "date": "18271123",
+          "filename": "PublicLedger18271123.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271123.pdf",
+          "bytes": 14840032,
+          "sha256": "49bd4d1af0fe8fed2e9f54084e051e32e8202e00ddf887bd4be062610ae4771d"
+        },
+        {
+          "date": "18271127",
+          "filename": "PublicLedger18271127.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271127.pdf",
+          "bytes": 14187082,
+          "sha256": "fdc7ee1a286d8bba2bad5622532ae24261cd72e8457b185d4022749530e39301"
+        },
+        {
+          "date": "18271130",
+          "filename": "PublicLedger18271130.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271130.pdf",
+          "bytes": 15503938,
+          "sha256": "a9191c056c4152b0da025cfe0d0ed03fa14e3b406c400235d6257bb0d5896e90"
+        },
+        {
+          "date": "18271204",
+          "filename": "PublicLedger18271204.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271204.pdf",
+          "bytes": 15532319,
+          "sha256": "7c75a26ccb622998ee3ae1389323de8d43d855d3d382cb4c7919e839cb9fcd67"
+        },
+        {
+          "date": "18271207",
+          "filename": "PublicLedger18271207.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271207.pdf",
+          "bytes": 16574230,
+          "sha256": "6ac67a11feff80176b3b768d45764f8f02f152778cb67a0bc0c50a692a9a45c5"
+        },
+        {
+          "date": "18271211",
+          "filename": "PublicLedger18271211.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271211.pdf",
+          "bytes": 14918276,
+          "sha256": "ba733b9bce6c7f36dc852913a4ab03e2fe27724a78ba00b71d6b1a5bf6519bd4"
+        },
+        {
+          "date": "18271214",
+          "filename": "PublicLedger18271214.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271214.pdf",
+          "bytes": 15798871,
+          "sha256": "e848bbdb40363ff4d4c85776221412dee32f3f0d0d9d5a027d661d142e9391ce"
+        },
+        {
+          "date": "18271218",
+          "filename": "PublicLedger18271218.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271218.pdf",
+          "bytes": 15890609,
+          "sha256": "21df447497c2d48a88e60444b699a7b2f3479fe69224466fe2a23c5acdb4f5d6"
+        },
+        {
+          "date": "18271221",
+          "filename": "PublicLedger18271221.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271221.pdf",
+          "bytes": 25278288,
+          "sha256": "fba8527818694acd3acbd5f5ba2be442a8030cba6e7e1ae0ed0bda6e659c653e"
+        },
+        {
+          "date": "18271225",
+          "filename": "PublicLedger18271225.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271225.pdf",
+          "bytes": 15642466,
+          "sha256": "a7cd1563448a766173cc38f5b858c18d77a67fa5c2d5efc7d481a22049e41aa6"
+        },
+        {
+          "date": "18271228",
+          "filename": "PublicLedger18271228.pdf",
+          "url": "https://dai.mun.ca/pdfs/publicledger/PublicLedger18271228.pdf",
+          "bytes": 15552406,
+          "sha256": "bef40edc77a60b09221c780ad1e9e117bc5b2eb040129eeafe28d8c48112a3d8"
+        }
+      ]
+    },
+    {
+      "name": "Newfoundland Mercantile Journal",
+      "slug": "nl_mercantile",
+      "collection_url": "https://dai.mun.ca/digital/nl_mercantile",
+      "issue_count": 14,
+      "items": [
+        {
+          "date": "18270111",
+          "filename": "NewfoundlandMercantileJournal18270111no664.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270111no664.pdf",
+          "bytes": 7624847,
+          "sha256": "9957146cc6d8db1e41250b86bac0cbf1e75d29a9dfc4660fb6cfbc6170f19081"
+        },
+        {
+          "date": "18270118",
+          "filename": "NewfoundlandMercantileJournal18270118no665.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270118no665.pdf",
+          "bytes": 7605849,
+          "sha256": "a59c7eaa1997a82fc8691f22256fb28985ff8288d4452fd876e938827faec581"
+        },
+        {
+          "date": "18270208",
+          "filename": "NewfoundlandMercantileJournal18270208no668.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270208no668.pdf",
+          "bytes": 7430975,
+          "sha256": "49bb79f48014439ad639537de9fde81c2dfb0e91fa807212433a18ae0dc39e20"
+        },
+        {
+          "date": "18270215",
+          "filename": "NewfoundlandMercantileJournal18270215no669.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270215no669.pdf",
+          "bytes": 7299963,
+          "sha256": "60aef08a274c065cceab01ec1919b626f17057c77d81ac5ee91174ab89d45c67"
+        },
+        {
+          "date": "18270222",
+          "filename": "NewfoundlandMercantileJournal18270222no670.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270222no670.pdf",
+          "bytes": 7647384,
+          "sha256": "6233717039eee0a023e5fa186a329a30bdbff9dba882862a9de96385a4401495"
+        },
+        {
+          "date": "18270301",
+          "filename": "NewfoundlandMercantileJournal18270301no671.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270301no671.pdf",
+          "bytes": 7655384,
+          "sha256": "733daf2aea70d595f3a703544b5f71962f5d0ba77a7f3c7971ad5cc81581c596"
+        },
+        {
+          "date": "18270308",
+          "filename": "NewfoundlandMercantileJournal18270308no672.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270308no672.pdf",
+          "bytes": 6815929,
+          "sha256": "fd171c1f61b35ea943a90b734d84ef91e204f43d5114df3b1361c5b8584c57d2"
+        },
+        {
+          "date": "18270315",
+          "filename": "NewfoundlandMercantileJournal18270315no673.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270315no673.pdf",
+          "bytes": 7302153,
+          "sha256": "76b3f5e7129b07f9b7a29fb6976129e6262fd348072c5eae12f56fd4c5eb5316"
+        },
+        {
+          "date": "18270322",
+          "filename": "NewfoundlandMercantileJournal18270322no674.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270322no674.pdf",
+          "bytes": 7277282,
+          "sha256": "457f11081a83d989a619f8d2f706e051af64c468affb8944bd6e1ee628d2eb37"
+        },
+        {
+          "date": "18270329",
+          "filename": "NewfoundlandMercantileJournal18270329no675.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270329no675.pdf",
+          "bytes": 7039655,
+          "sha256": "e1fae8682ce06a407e09b2be9749001ae12878d901c4c8237ae374e977a7acd5"
+        },
+        {
+          "date": "18270405",
+          "filename": "NewfoundlandMercantileJournal18270405no676.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270405no676.pdf",
+          "bytes": 8030626,
+          "sha256": "4feba904db09796b6dee47c13ca3667c27ec73665a5807af13b997d310db4986"
+        },
+        {
+          "date": "18270517",
+          "filename": "NewfoundlandMercantileJournal18270517no682.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270517no682.pdf",
+          "bytes": 7726867,
+          "sha256": "0f33dbd02d82263355ffedaf0164186f19746e8f0afdd3a3685f7bfa7559c5b1"
+        },
+        {
+          "date": "18270531",
+          "filename": "NewfoundlandMercantileJournal18270531no684.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270531no684.pdf",
+          "bytes": 7672054,
+          "sha256": "81b1e8afd6185d94686c1bdf378bcc49a21048d0ef2f1e6be9acf9324cb5613f"
+        },
+        {
+          "date": "18270607",
+          "filename": "NewfoundlandMercantileJournal18270607no685.pdf",
+          "url": "https://dai.mun.ca/pdfs/nl_mercantile/NewfoundlandMercantileJournal18270607no685.pdf",
+          "bytes": 7469234,
+          "sha256": "d1d9244a743d1c05337c4742bc4c825d60381840b0b7de5ddef6ce1c3588270b"
+        }
+      ]
+    }
+  ]
+}

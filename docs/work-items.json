@@ -3103,7 +3103,19 @@
       "dependencies": ["NPREG-199"],
       "completion_evidence": ["research/NP_1828_SYSTEM_RECORD.md", "research/derived/np-1828-newspaper-issue-manifest.json", "src/data.js", "tests/np-1828-system.test.js"],
       "blocker": null,
-      "notes": "Packet notices document Express alterations, a winter water-and-land fallback, the launched Union packet, a repaired Express and James Doyle's Dart. Western Ward rules assign lanterns, speaking trumpets and engine-house command duties for a fire alarm. No supported 1828 lighthouse, electrical telegraph or installed electrical apparatus was found."
+      "notes": "A January publication reprints the July 25, 1827 Express alterations notice. Other notices document a winter water-and-land fallback, the launched Union packet, a repaired Express and James Doyle's Dart. Western Ward rules assign lanterns, speaking trumpets and engine-house command duties for a fire alarm. No supported 1828 lighthouse, electrical telegraph or installed electrical apparatus was found."
+    },
+    {
+      "id": "NPREG-201",
+      "title": "Add the 1827 packet continuity and lightning records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1827 electrical, telecommunications, navigation-aid and scheduled communication evidence.",
+      "dependencies": ["NPREG-200"],
+      "completion_evidence": ["research/NP_1827_SYSTEM_RECORD.md", "research/derived/np-1827-newspaper-issue-manifest.json", "src/data.js", "tests/np-1827-system.test.js"],
+      "blocker": null,
+      "notes": "The January winter notice records substitute water service and a weekly land letter carrier. A spring notice records the altered Express packet timetable, passenger classes, letter rate and agents. A July report records lightning damage to a Carbonear business house. The conflicting April 16 and April 17 dates printed on otherwise matching packet notices remain unresolved."
     },
     {
       "id": "ASSET-001",

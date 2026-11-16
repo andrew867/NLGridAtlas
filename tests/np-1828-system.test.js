@@ -5,11 +5,12 @@ import { sources, timeline } from "../src/data.js";
 import workItems from "../docs/work-items.json" with { type: "json" };
 import manifest from "../research/derived/np-1828-newspaper-issue-manifest.json" with { type: "json" };
 
-test("1828 Express alteration record retains route and communication function", () => {
+test("1828 Express reprint retains route, notice date and communication function", () => {
   const event = timeline.find((entry) => entry.sourceId === "mun-newfoundlander-1828-packet-alterations");
   assert.ok(event);
   assert.equal(event.date, "1828-01-09");
   assert.equal(event.status, "reported");
+  assert.match(event.body, /reprinted an Express packet notice dated July 25, 1827/);
   assert.match(event.body, /alterations for passenger comfort/);
   assert.match(event.body, /Harbour Grace and Portugal Cove/);
   assert.match(event.body, /three weekly departures/);

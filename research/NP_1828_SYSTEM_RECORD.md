@@ -2,7 +2,7 @@
 
 ## Conception Bay packet communication
 
-The January 9 *Newfoundlander* prints an *Express* packet notice on physical PDF p. 1. The notice states that the boat had undergone alterations for passenger comfort and continued between Harbour Grace and Portugal Cove. It left Harbour Grace at 09:00 on Monday, Wednesday and Friday, and left Portugal Cove at noon on the next day. A carrier left St. John's at 08:00, except on Sundays and in bad weather. The service carried passengers, parcels and letters. James Clift at St. John's and P. Rogerson at Harbour Grace were the agents.
+The January 9 *Newfoundlander* reprints an *Express* packet notice dated July 25, 1827, on physical PDF p. 1. The notice states that the boat had undergone alterations for passenger comfort and continued between Harbour Grace and Portugal Cove. It left Harbour Grace at 09:00 on Monday, Wednesday and Friday, and left Portugal Cove at noon on the next day. A carrier left St. John's at 08:00, except on Sundays and in bad weather. The service carried passengers, parcels and letters. James Clift at St. John's and P. Rogerson at Harbour Grace were the agents. The publication confirms continuity but does not establish a new 1828 alteration.
 
 The March 5 *Newfoundlander* prints the winter arrangement on physical PDF p. 1. The *Express* was laid up for the winter. A suitable boat with an experienced crew would run between Harbour Grace and Portugal Cove when favourable opportunities occurred. If water communication stopped, a land letter carrier would travel weekly from Harbour Grace to St. John's, weather permitting. T. Ridley at Harbour Grace and James Clift at St. John's were the agents.
 
@@ -22,7 +22,7 @@ This is a documented local alarm-response and command arrangement. The source do
 
 ## Newspaper search
 
-The review covered 188 surviving 1828 newspaper files: 47 issues of *The Newfoundlander*, 48 issues of *The Royal Gazette* and 93 issues of the *Public Ledger*. Repeated packet advertisements were not counted as separate operating events.
+The review covered 188 surviving 1828 newspaper files: 47 issues of *The Newfoundlander*, 48 issues of *The Royal Gazette* and 93 issues of the *Public Ledger*. The January 9 reprint remains a continuity record. Other repeated packet advertisements were not counted as separate operating events.
 
 No named 1828 Newfoundland lighthouse project, electrical telegraph, installed electrical apparatus or operating electrical circuit was located in the surviving files. Foreign scientific reports, foreign navigation reports and sale advertisements were not treated as Newfoundland equipment records.
 
