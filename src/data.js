@@ -640,6 +640,126 @@ export const sources = [
     url: "https://dai.mun.ca/pdfs/quarterly/TheNewfoundlandQuarterlyvolume86no2Winter1990.pdf"
   },
   {
+    id: "mun-royal-gazette-1808-garrison-fuel-june",
+    year: 1808,
+    organization: "Commissary's Office, St. John's",
+    title: "King's Wharf Coal and Fort William Candle Tender",
+    topics: ["1808", "St. John's", "King's Wharf", "Fort William", "coal", "candles", "garrison", "tender"],
+    pages: "physical PDF p. 1",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18080616.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1808-garrison-fuel-september",
+    year: 1808,
+    organization: "Commissary's Office, St. John's",
+    title: "Second King's Wharf Coal and Candle Tender",
+    topics: ["1808", "St. John's", "King's Wharf", "coal", "candles", "garrison", "tender"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18080908.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1808-civic-presentment",
+    year: 1808,
+    organization: "St. John's Grand Jury",
+    title: "Public Hospital and Civic Works Presentment",
+    topics: ["1808", "St. John's", "Public Hospital", "chimneys", "public roads", "streets", "burial ground"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18080728.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1808-ships-rooms-register",
+    year: 1808,
+    organization: "Governor of Newfoundland",
+    title: "Fishing Ships' Rooms Survey Register Proclamation",
+    topics: ["1808", "Newfoundland", "Fishing Ships' Rooms", "survey", "register", "Court House", "land use"],
+    pages: "physical PDF p. 4",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18081013.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1808-fire-safety",
+    year: 1808,
+    organization: "St. John's Grand Jury",
+    title: "Town Fire-Safety and Chain Rock Powder Magazine Presentment",
+    topics: ["1808", "St. John's", "fire safety", "Chain Rock", "Powder Magazine", "chimneys", "fire buckets"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18081103.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1808-ordnance-fuel",
+    year: 1808,
+    organization: "Ordnance Barrack Office",
+    title: "Fort Townshend, Signal Hill and Ordnance Yard Fuel Tender",
+    topics: ["1808", "St. John's", "Fort Townshend", "Signal Hill", "Ordnance Yard", "Ordnance Wharf", "firewood", "coal", "tender"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18081208.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1808-powder-magazine-finance",
+    year: 1808,
+    organization: "Powder Magazine subscribers",
+    title: "St. John's Powder Magazine Share Proposal",
+    topics: ["1808", "St. John's", "Powder Magazine", "shares", "Merchants' Hall", "funding"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18081208.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1808-coastal-building-rule",
+    year: 1809,
+    organization: "Governor of Newfoundland",
+    title: "September 1808 Coastal Building and Land Proclamation",
+    topics: ["1808", "Newfoundland", "high-water mark", "200 yards", "buildings", "Fishing Ships' Rooms", "land use"],
+    pages: "physical PDF p. 1",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18090420.pdf"
+  },
+  {
+    id: "mun-colonial-1808-public-works",
+    year: 1808,
+    organization: "Governor of Newfoundland",
+    title: "Harbour Grace Court House and Bay Bulls Jail Report",
+    topics: ["1808", "Harbour Grace", "Bay Bulls", "Court House", "jail", "public works"],
+    pages: "physical PDF pp. 268 to 269",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1808-ships-rooms",
+    year: 1808,
+    organization: "Governor of Newfoundland",
+    title: "Ancient Fishing Ships' Rooms Survey and Register",
+    topics: ["1808", "Newfoundland", "Ferryland", "Fishing Ships' Rooms", "survey", "register", "William Carter"],
+    pages: "physical PDF p. 268",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1808-fortifications",
+    year: 1808,
+    organization: "Governor of Newfoundland",
+    title: "St. John's and Placentia Fortification Condition",
+    topics: ["1808", "St. John's", "Placentia", "fortification", "Royal Artificers", "winter quarters"],
+    pages: "physical PDF p. 268",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1808-st-georges-coal",
+    year: 1808,
+    organization: "Governor of Newfoundland",
+    title: "St. George's Bay Inland Coal Report",
+    topics: ["1808", "St. George's Bay", "coal", "HMS Avenger", "Captain White", "mineral report"],
+    pages: "physical PDF p. 269",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
     id: "mun-royal-gazette-1809-fish-market",
     year: 1809,
     organization: "Robert Brine Sr. and Robert Parsons & Co.",
@@ -15305,6 +15425,123 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1808-06-01",
+    category: "energy supply",
+    title: "Garrison sought coal for King's Wharf and candles for Fort William",
+    body: "The tender sought 2,500 hogsheads of Sydney or English coal for the King's Wharf and 3,200 pounds of English-made mould candles for Fort William. Delivery was due by September 20; the notice does not establish that the supply was delivered.",
+    sourceId: "mun-royal-gazette-1808-garrison-fuel-june",
+    pages: "physical PDF p. 1",
+    status: "proposed"
+  },
+  {
+    date: "1808-07-12",
+    category: "public works",
+    title: "Grand jury sought a Public Hospital and civic repairs",
+    body: "The St. John's grand jury described a Public Hospital for sick and hurt fishermen, seamen and others as extremely desirable. It also called for chimney inspection, clear streets and paths, repair of a dangerous cut in a public road, and additional burial ground; these were identified needs, not completed works.",
+    sourceId: "mun-royal-gazette-1808-civic-presentment",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1808-09-01",
+    category: "energy supply",
+    title: "Second tender sought 1,000 hogsheads of coal",
+    body: "The Commissary's Office sought another 1,000 hogsheads of English or Spanish River coal for the King's Wharf and 2,000 pounds of English-made mould candles. Proposals were due September 15; the notice does not establish delivery.",
+    sourceId: "mun-royal-gazette-1808-garrison-fuel-september",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1808-09-20",
+    category: "land use",
+    title: "Coastal building rule reserved the first 200 yards",
+    body: "Governor Gambier prohibited buildings within 200 yards of high-water mark except fishery structures, and prohibited taking land as private property without permission. Sheriffs were directed to remove unauthorized works and sell enough material to pay the removal cost.",
+    sourceId: "mun-royal-gazette-1808-coastal-building-rule",
+    pages: "physical PDF p. 1",
+    status: "reported"
+  },
+  {
+    date: "1808-09-22",
+    category: "surveying",
+    title: "Ships' Rooms survey registers opened for inspection",
+    body: "Claimants could inspect each district's Register of Surveys of Rooms at its Court House until September 29, 1809. After that date, an uncontested registered survey would be treated as the true survey and no other admitted.",
+    sourceId: "mun-royal-gazette-1808-ships-rooms-register",
+    pages: "physical PDF p. 4",
+    status: "reported"
+  },
+  {
+    date: "1808-09-29",
+    category: "public works",
+    title: "Harbour Grace Court House was reported complete",
+    body: "Governor Holloway reported the Harbour Grace Court House complete, but deferred its authorized £200 payment until the district justices supplied proper certificates.",
+    sourceId: "mun-colonial-1808-public-works",
+    pages: "physical PDF p. 268",
+    status: "reported"
+  },
+  {
+    date: "1808-09-29",
+    category: "public works",
+    title: "Bay Bulls residents sought a £200 jail",
+    body: "Residents reported that a jail was needed because deserters resorted to Bay Bulls. Holloway proposed £200 to purchase and complete a house adapted for the purpose; the report does not establish approval or completion.",
+    sourceId: "mun-colonial-1808-public-works",
+    pages: "physical PDF pp. 268 to 269",
+    status: "proposed"
+  },
+  {
+    date: "1808-09-29",
+    category: "surveying",
+    title: "Ships' Rooms survey and register was active in the districts",
+    body: "Holloway reported an active survey and register of Ancient Fishing Ships' Rooms, particularly William Carter's work in Ferryland. He recommended at least £100 remuneration, but did not state that every district was complete.",
+    sourceId: "mun-colonial-1808-ships-rooms",
+    pages: "physical PDF p. 268",
+    status: "reported"
+  },
+  {
+    date: "1808-09-29",
+    category: "defence infrastructure",
+    title: "St. John's fortification work advanced little",
+    body: "The governor reported little progress because the regiment could not provide enough labour. Royal Artificers had mainly prepared winter huts, while Placentia fort remained as in 1807 because no dismantling instructions had arrived.",
+    sourceId: "mun-colonial-1808-fortifications",
+    pages: "physical PDF p. 268",
+    status: "reported"
+  },
+  {
+    date: "1808-09-29",
+    category: "energy resources",
+    title: "Coal sample came from inland St. George's Bay",
+    body: "Holloway reported coal about twelve miles inland from the beach at St. George's Bay. Captain White of HMS Avenger brought a sample that Holloway considered tolerably good; the report does not establish a surveyed deposit or mine.",
+    sourceId: "mun-colonial-1808-st-georges-coal",
+    pages: "physical PDF p. 269",
+    status: "reported"
+  },
+  {
+    date: "1808-10-17",
+    category: "safety infrastructure",
+    title: "Grand jury proposed a Powder Magazine at Chain Rock",
+    body: "The grand jury recommended immediate subscription for a Powder Magazine at Chain Rock, followed by a 50-pound limit on powder kept in any town house or store. It also proposed controls on hay, straw, shop flames, night work, chimneys and exposed fire carried between buildings.",
+    sourceId: "mun-royal-gazette-1808-fire-safety",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1808-11-15",
+    category: "energy supply",
+    title: "Ordnance sought firewood for three posts and coal for its wharf",
+    body: "The tender sought 150 cords of spruce or birch firewood for Fort Townshend, Signal Hill and the Ordnance Yard, with staged delivery by May 15, 1809. It also sought 1,200 hogsheads of Sydney or English coal for the Ordnance Wharf by August 1, 1809.",
+    sourceId: "mun-royal-gazette-1808-ordnance-fuel",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1808-12-08",
+    category: "safety infrastructure",
+    title: "Powder Magazine proposal divided the property into 50 shares",
+    body: "The proposal divided the Powder Magazine property into 50 shares of £10, a total face value of £500. A proprietor-appointed committee would direct the building, and users would pay an agreed charge for each package of powder deposited.",
+    sourceId: "mun-royal-gazette-1808-powder-magazine-finance",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
   {
     date: "1809-05-18",
     category: "navigation",

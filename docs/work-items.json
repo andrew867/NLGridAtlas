@@ -3334,6 +3334,18 @@
       "notes": "The year records the operating King's Wharf fish market, Ordnance board, plank, shingle and freestone tenders, the proposed Crow's Nest Powder Magazine, Fort William pass and night-signal rules, vessel-letter payments and delivery charges, the public-purpose lottery scheme, completed Harbour Grace Court House, Bay Bulls jail purchase, Ships' Rooms register and boundary perambulation, the proposed King's Surveyor salary, limited Signal Hill progress and ruinous Placentia fort."
     },
     {
+      "id": "NPREG-220",
+      "title": "Add the 1808 fuel, surveying, fire-safety and public-works records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1808 energy-supply, surveying, land-use, defence-infrastructure, public-health, fire-safety and public-works evidence.",
+      "dependencies": ["NPREG-219"],
+      "completion_evidence": ["research/NP_1808_SYSTEM_RECORD.md", "research/derived/np-1808-newspaper-issue-manifest.json", "src/data.js", "tests/np-1808-system.test.js"],
+      "blocker": null,
+      "notes": "The year records garrison and Ordnance fuel tenders, the proposed Public Hospital and civic repairs, the Fishing Ships' Rooms register, coastal building controls, limited fortification work, completed Harbour Grace Court House, proposed Bay Bulls jail, the St. George's Bay coal sample, fire-safety rules, the Chain Rock Powder Magazine proposal and its later share-financing scheme. The 52 dated Gazette files contain 210 physical PDF pages."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
