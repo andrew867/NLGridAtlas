@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -54,7 +55,7 @@ test("1950 system claim and public card retain exact source locators", () => {
   assert.equal(sources.find((source) => source.id === "np-2014-transmission-lines")?.pages, "physical PDF pp. 307 to 320");
   assert.equal(sources.find((source) => source.id === "np-2015-transmission-lines")?.pages, "physical PDF pp. 552 to 569");
   assert.equal(sources.find((source) => source.id === "np-2022-tors-cove")?.pages, "physical PDF pp. 289 to 292, 296 and 329 to 339");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1950-system-record"/);
   assert.match(html, /Mobile powerhouse.*2013 plant history gives 1950.*later plant and original-equipment records give 1951/s);
 });

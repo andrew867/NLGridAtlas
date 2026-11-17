@@ -8,17 +8,21 @@
     "build": "vite build",
     "build:evidence-manifest": "node scripts/build-evidence-manifest.mjs",
     "build:geodata": "node scripts/build-geographic-data.mjs",
+    "build:sources": "node scripts/build-source-catalogue.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test",
+    "test:ui": "npm run build && playwright test",
+    "verify:links": "node scripts/check-internal-links.mjs",
+    "verify:retention": "node scripts/build-content-retention-manifest.mjs",
     "verify:sources": "node scripts/verify-sources.mjs"
   },
   "dependencies": {
     "@fontsource/barlow-condensed": "^5.2.8",
-    "@fontsource/source-serif-4": "^5.2.8",
-    "@fontsource/ibm-plex-mono": "^5.2.6"
+    "@fontsource/ibm-plex-mono": "^5.2.6",
+    "@fontsource/source-serif-4": "^5.2.8"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.1",
     "vite": "^7.1.12"
   }
 }
-

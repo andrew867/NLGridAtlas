@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -49,7 +50,7 @@ test("1945 claim and public card retain exact source pages", () => {
   assert.equal(sources.find((source) => source.id === "np-1945-lookout-brook-road")?.pages, "physical PDF p. 138");
   assert.equal(sources.find((source) => source.id === "np-1945-port-union-diesel")?.pages, "physical PDF pp. 162 and 176");
   assert.equal(sources.find((source) => source.id === "np-1945-property-record")?.pages, "physical PDF pp. 137, 152, 153 and 155");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1945-system-record"/);
   assert.match(html, /13\.1 km Flat Bay Brook access road/);
   assert.match(html, /property deed dated November 14, 1945/);

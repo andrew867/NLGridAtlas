@@ -165,6 +165,11 @@ function stationDetail(station) {
     : target.hydroCode
       ? ` data-hydro-terminal-record="${escapeHtml(target.hydroCode)}"`
       : "";
+  const href = target.stationCode
+    ? `./stations.html?collection=np&station=${encodeURIComponent(target.stationCode)}#station-record`
+    : target.hydroCode
+      ? `./stations.html?collection=hydro&station=${encodeURIComponent(target.hydroCode)}#station-record`
+      : `./stations.html${target.href}`;
   return `
     <span class="profile-label">CHECKED STATION BOUNDARY</span>
     <h4>${escapeHtml(station.atlasName)}</h4>
@@ -174,7 +179,7 @@ function stationDetail(station) {
       <div><dt>Method</dt><dd>OSM boundary centroid</dd></div>
       <div><dt>Object</dt><dd>${escapeHtml(station.source.object)}</dd></div>
     </dl>
-    <a class="island-detail-action" href="${target.href}"${dataAttribute}>${escapeHtml(target.label)}</a>
+    <a class="island-detail-action" href="${href}"${dataAttribute}>${escapeHtml(target.label)}</a>
     <a class="evidence-link" href="${escapeHtml(station.source.url)}" target="_blank" rel="noreferrer">OpenStreetMap object / version ${station.source.objectVersion}</a>`;
 }
 
@@ -193,7 +198,7 @@ function initialDetail() {
     <a class="evidence-link" href="${escapeHtml(l3501Routes.source.url)}" target="_blank" rel="noreferrer">Government of Newfoundland and Labrador GeoAtlas / L3501 layer 15</a>`;
 }
 
-export async function initGeographicMap() {
+export async function initGeographicMap({ onStateChange = null } = {}) {
   const island = document.querySelector("#geographic-island-map");
   const avalon = document.querySelector("#geographic-avalon-map");
   const detail = document.querySelector("#geographic-map-detail");
@@ -219,13 +224,14 @@ export async function initGeographicMap() {
   detail.innerHTML = initialDetail();
 
   const maps = [island, avalon];
-  function selectStation(id) {
+  function selectStation(id, notify = true) {
     const station = stationRegister.stations.find((item) => item.id === id);
     if (!station) return;
     maps.forEach((map) => map.querySelectorAll("[data-geographic-station]").forEach((item) => {
       item.classList.toggle("selected", item.dataset.geographicStation === id);
     }));
     detail.innerHTML = stationDetail(station);
+    if (notify) onStateChange?.({ mapStation: id });
   }
 
   function activate(event) {
@@ -243,6 +249,7 @@ export async function initGeographicMap() {
       selectStation(item.dataset.geographicStation);
     });
   });
+  return { selectStation: (id) => selectStation(id, false) };
 }
 
 export { avalonBounds, islandBounds, stationRegister as geographicStations };

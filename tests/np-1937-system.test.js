@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -33,7 +34,7 @@ test("1937 claim and public card retain exact source pages", () => {
   assert.equal(claim.status, "unresolved");
   assert.equal(claim.sources.length, 2);
   assert.equal(sources.find((source) => source.id === "np-1937-grand-falls-g4")?.pages, "physical PDF pp. 131 to 135");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1937-system-record"/);
   assert.match(html, /same court judgment gives 1938 on physical PDF p\. 132 and 1937 on physical PDF p\. 135/);
 });

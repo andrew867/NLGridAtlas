@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -35,7 +36,7 @@ test("1939 claim and public card retain exact source pages", () => {
   assert.equal(claim.status, "unresolved");
   assert.equal(claim.sources.length, 3);
   assert.equal(sources.find((source) => source.id === "np-1939-fall-pond-development")?.pages, "physical PDF pp. 275 to 276");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1939-system-record"/);
   assert.match(html, /400 kW development rating; 380 kW turbine; later records give 350 kW/);
   assert.match(html, /2\.4 kV to 12\.5 kV; tied to a Laurentian distribution feeder; no separate transmission line/);

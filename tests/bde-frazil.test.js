@@ -1,3 +1,4 @@
+import { readAtlasHtml } from "./page-fixture.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -38,7 +39,7 @@ test("frazil event is connected to the source ledger, timeline and Bay d'Espoir 
   assert.match(station.facts.flat().join(" "), /154\.4 MW/);
   assert.ok(station.sources.some(({ sourceId: id }) => id === "nlh-bde-frazil-2026"));
 
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, /id="bde-frazil-2026"/);
   assert.match(html, /January 21, 18:00<\/dt><dd>All seven units out; about 250 MW reserve/);
   assert.match(html, /January 25, 15:42<\/dt><dd>Units 1 to 6 released at full capacity; 6 x 76\.5 MW/);

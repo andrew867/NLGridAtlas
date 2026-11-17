@@ -1,3 +1,4 @@
+import { readAtlasHtml } from "./page-fixture.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
@@ -26,7 +27,7 @@ test("source records have stable identifiers and primary locators", () => {
 });
 
 test("HVDC link system records retain the filed ratings and source pages", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const sourceById = new Map(sources.map((source) => [source.id, source]));
 
   assert.equal(sourceById.get("nlh-gra-2017-v2").pages, "physical PDF pp. 14 to 17");
@@ -51,7 +52,7 @@ test("HVDC link system records retain the filed ratings and source pages", async
 });
 
 test("Corner Brook frequency converter record retains the dated operating arrangement", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const sourceById = new Map(sources.map((source) => [source.id, source]));
 
   assert.equal(sourceById.get("nlh-cbk-assessment-2005").pages, "physical PDF pp. 4 to 6, 9, 22 to 24, and 34");
@@ -74,7 +75,7 @@ test("Corner Brook frequency converter record retains the dated operating arrang
 });
 
 test("telecommunications record keeps historical, proposed and reported systems separate", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const sourceById = new Map(sources.map((source) => [source.id, source]));
 
   assert.equal(sourceById.get("vhf-2004").pages, "physical PDF pp. 193 to 203, 251, 258, and 265 to 266");
@@ -97,7 +98,7 @@ test("telecommunications record keeps historical, proposed and reported systems 
 });
 
 test("load records separate actual peaks, forecasts and planning ratios", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const sourceById = new Map(sources.map((source) => [source.id, source]));
 
   assert.equal(sourceById.get("forecast-2020").pages, "physical PDF pp. 13 to 14; report pp. 7 to 8");
@@ -151,7 +152,7 @@ test("diagram components resolve to a diagram and primary sources", () => {
 });
 
 test("every clickable diagram item has an evidence record", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const expected = [
     "opd-t1", "opd-t2", "opd-t3",
     "hwd-t1", "hwd-t2", "hwd-t3", "hwd-t4",
@@ -209,7 +210,7 @@ test("Avalon station placement follows the geographic source maps", () => {
 });
 
 test("network links use registered circuit endpoints and page anchors", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const connectedCircuits = (code) => handbook.transmission_lines
     .filter((line) => line.from_code === code || line.to_code === code)
     .map((line) => line.circuit);
@@ -247,7 +248,7 @@ test("station additions preserve sourced details", async () => {
   assert.match(lineEvent.body, /66 kV line rebuild was complete/);
   assert.equal(lineEvent.pages, "physical PDF pp. 480 and 485");
 
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, />OXP-01</);
   assert.match(html, /March 2015 revision 19 as-built drawing/i);
   assert.match(html, /T2 \/ 115\/152\/190 MVA/);
@@ -493,7 +494,7 @@ test("island terminal records retain page-level sources", async () => {
       assert.match(reference.pages, /PDF p/);
     }
   }
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, /id="hydro-terminal-browser"/);
   assert.match(html, /data-hydro-terminal-record="BDE"/);
 });
@@ -559,7 +560,7 @@ test("island transformer evidence keeps dated ratings and replacements", () => {
 });
 
 test("2027 transformer register updates Avalon station records", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.deepEqual(components["oxp-np-transformer"].data, [
     ["Operating voltage", "66/12.5 kV"],
     ["Rating", "13.33 MVA"],
@@ -580,7 +581,7 @@ test("2027 transformer register updates Avalon station records", async () => {
 
 test("station browser covers the handbook and merges the 2027 transformer register", async () => {
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.equal(transformerRegister.transformers.length, 187);
   assert.equal(new Set(transformerRegister.transformers.map((row) => row.designation)).size, 187);
   assert.equal(new Set(transformerRegister.transformers.map((row) => row.station_code)).size, 123);
@@ -2786,7 +2787,7 @@ test("Lawn separates its external connection, Igor repairs, and current outage",
 });
 
 test("Memorial and Long Pond records preserve the filed Health Sciences supply paths", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const memorial = stationProfiles.find((station) => station.code === "MUN");
   const longPond = stationProfiles.find((station) => station.code === "LPD");
   const memorialFacts = memorial.engineeringRecord.facts.flat().join(" ");
@@ -2819,7 +2820,7 @@ test("Memorial and Long Pond records preserve the filed Health Sciences supply p
 });
 
 test("MUN archive records retain the 1975 HSC equipment captions", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const note = await readFile(new URL("../research/MUN_HSC_ARCHIVAL_PHOTOGRAPHS.md", import.meta.url), "utf8");
   const archiveIds = ["mun-hsc-1975-substation-3", "mun-hsc-1975-deutz-diesels", "mun-hsc-1975-auxiliary-diesel"];
   for (const id of archiveIds) {
@@ -3043,7 +3044,7 @@ test("station history records retain source and page references", async () => {
   }
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(main, /historyRecords\.map/);
-  assert.match(main, /historySource\.url/);
+  assert.match(main, /citationMarkup\(historySource/);
 });
 
 test("every station record resolves to a source", () => {
@@ -3264,12 +3265,12 @@ test("documented feeder assignments and bus breakers retain their filed scope", 
   assert.match(assignments.SLA, /SLA-T4 SLA-11/);
   assert.match(assignments.VIR, /VIR-T1\/T2 VIR-01 and VIR-06/);
   assert.match(main, /assignmentRecord\.facts/);
-  assert.match(main, /assignmentSource\.url/);
+  assert.match(main, /citationMarkup\(assignmentSource/);
 });
 
 test("map selection stays in place and feeder maps are expandable", async () => {
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(main, /event\.preventDefault\(\);[\s\S]*event\.stopImmediatePropagation\(\);[\s\S]*showHandbookStation/);
   assert.match(main, /handbook-detail-station-link/);
   assert.match(main, /stationLink\.setAttribute\("aria-label", `Open \$\{station\.name\} station record`\)/);
@@ -3284,8 +3285,8 @@ test("dynamic one-line diagrams open centred on narrow screens", async () => {
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(main, /function centerDynamicDiagram\(container\)/);
   assert.match(main, /diagramScroll\.scrollLeft = Math\.max\(0, \(diagramScroll\.scrollWidth - diagramScroll\.clientWidth\) \/ 2\)/);
-  assert.match(main, /centerDynamicDiagram\(document\.querySelector\("#station-profile"\)\)/);
-  assert.match(main, /centerDynamicDiagram\(document\.querySelector\("#hydro-terminal-record"\)\)/);
+  assert.match(main, /centerDynamicDiagram\(profileContainer\)/);
+  assert.match(main, /centerDynamicDiagram\(recordContainer\)/);
 });
 
 test("two-transformer one-lines keep both banks inside the centred mobile view", async () => {
@@ -3294,7 +3295,7 @@ test("two-transformer one-lines keep both banks inside the centred mobile view",
 });
 
 test("geographic reference maps retain their source pages", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, /reference-maps\/oxen-2013-st-johns-system\.jpg/);
   assert.match(html, /Oxen Pond transformer application \/ physical PDF p\. 15/);
   assert.match(html, /reference-maps\/np-2026-iis-study-area\.png/);
@@ -3304,7 +3305,7 @@ test("geographic reference maps retain their source pages", async () => {
 });
 
 test("island overview and Avalon map use cited geographic references", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, /ISLAND OVERVIEW \/ NOVEMBER 2012/);
   assert.match(html, /href="#terminal-wav"[\s\S]*href="#terminal-hrd"[\s\S]*href="#terminal-hwd"[\s\S]*href="#terminal-opd"/);
   assert.match(html, /SEMI-GEOGRAPHIC \/ STATION ORDER FROM 2012 AND 2013 MAPS/);
@@ -3314,7 +3315,7 @@ test("island overview and Avalon map use cited geographic references", async () 
 });
 
 test("Hydro upload findings distinguish installed and proposed work", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const sourceIds = new Set(sources.map((source) => source.id));
   assert.ok(sourceIds.has("nlh-2024-rra"));
   assert.ok(sourceIds.has("nlh-2025-capital"));
@@ -3404,7 +3405,7 @@ test("Hydro upload findings distinguish installed and proposed work", async () =
 });
 
 test("Oxen Pond and Hardwoods capacitor banks are clickable and sourced", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   for (const id of ["opd-c1", "opd-c2", "hwd-c1", "hwd-c2"]) {
     assert.match(html, new RegExp(`data-component="${id}"`));
     assert.ok(components[id]);
@@ -3414,7 +3415,7 @@ test("Oxen Pond and Hardwoods capacitor banks are clickable and sourced", async 
 });
 
 test("Oxen Pond retains the dated 66 kV bus and circuit assignments", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, /data-component="opd-bus-tie"/);
   assert.match(html, /B3 \/ NEWFOUNDLAND POWER/);
   assert.match(html, /B4 \/ NEWFOUNDLAND POWER/);
@@ -3427,7 +3428,7 @@ test("Oxen Pond retains the dated 66 kV bus and circuit assignments", async () =
 });
 
 test("Virginia Waters retains the documented 2016 logical arrangement", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const source = sources.find((item) => item.id === "np-2016-vir-modernization");
   assert.equal(source.pages, "physical PDF pp. 261 to 263");
   assert.match(html, /id="substation-vir"/);
@@ -3451,7 +3452,7 @@ test("Virginia Waters retains the documented 2016 logical arrangement", async ()
 });
 
 test("Ridge Road retains the split 12.5 kV bus and completed tie", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const source = sources.find((item) => item.id === "np-2015-rrd-modernization");
   assert.equal(source.pages, "physical PDF p. 427");
   assert.match(html, /data-claim-id="ridge-road-substation-one-line"/);
@@ -3466,7 +3467,7 @@ test("Ridge Road retains the split 12.5 kV bus and completed tie", async () => {
 });
 
 test("King's Bridge retains the current six-feeder station record", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, /data-claim-id="kings-bridge-substation-one-line"/);
   assert.match(html, /12L to Memorial Substation/);
   assert.match(html, /16L to Pepperrell Substation/);
@@ -3481,7 +3482,7 @@ test("King's Bridge retains the current six-feeder station record", async () => 
 });
 
 test("Pepperrell retains the completed two-transformer and five-feeder arrangement", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(html, /data-claim-id="pepperrell-substation-one-line"/);
   assert.match(html, /16L to King's Bridge Substation/);
@@ -3498,7 +3499,7 @@ test("Pepperrell retains the completed two-transformer and five-feeder arrangeme
 });
 
 test("Glendale retains its circuits, three transformers and nine feeder records", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(html, /data-claim-id="glendale-substation-one-line"/);
   assert.match(html, /18L to Goulds Substation/);
@@ -3516,7 +3517,7 @@ test("Glendale retains its circuits, three transformers and nine feeder records"
 });
 
 test("St. John's Main retains the dated 2015 parallel-bank arrangement", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(html, /data-claim-id="st-johns-main-2015-one-line"/);
   assert.match(html, /4L to Goulds Substation/);
@@ -3539,7 +3540,7 @@ test("St. John's Main retains the dated 2015 parallel-bank arrangement", async (
 });
 
 test("Stamp's Lane separates the documented 4.16 and 12.5 kV banks", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(html, /data-claim-id="stamps-lane-substation-one-line"/);
   assert.match(main, /SLA: "#substation-sla"/);
@@ -3560,7 +3561,7 @@ test("Stamp's Lane separates the documented 4.16 and 12.5 kV banks", async () =>
 });
 
 test("Hardwoods distribution feeders remain on their documented voltage buses", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /12.5 kV feeders HWD-01, 02, 03, 04, 06/);
   assert.match(components["hwd-np-summary"].data.flat().join(" "), /25 kV feeders HWD-07, 08, 09/);
   assert.match(components["hwd-np-hwd07"].data.flat().join(" "), /Voltage 25 kV/);
@@ -3733,7 +3734,7 @@ test("the 403L records preserve the main line and Robinsons radial tap", () => {
 });
 
 test("Greenhill code conflict is contextual and the latest code is preferred", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(html, /id="source-conflict" role="note" hidden/);
   assert.match(html, /<strong>GRH<\/strong> is used in the 2027 Greenhill filing/);
@@ -3808,7 +3809,7 @@ test("March 2014 Avalon equipment registers preserve dated asset identities", ()
 });
 
 test("documented circuit links open the available other-end record", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   const main = await readFile(new URL("../src/main.js", import.meta.url), "utf8");
   assert.match(html, /data-hydro-terminal-record="CBC" aria-label="TL237 to Come By Chance"/);
   assert.match(html, /data-hydro-terminal-record="SUN" aria-label="TL203 to Sunnyside"/);

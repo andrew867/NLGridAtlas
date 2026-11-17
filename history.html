@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An unofficial, source-cited engineering atlas of Newfoundland and Labrador electrical and communications infrastructure." />
+    <meta name="theme-color" content="#eee8dc" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>System history | NL Grid Atlas</title>
+  </head>
+  <body data-page="history">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header" data-site-header>
+      <a class="wordmark" href="./index.html" aria-label="NL Grid Atlas home">
+        <span class="wordmark-mark" aria-hidden="true">NL</span>
+        <span>GRID ATLAS</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+      <nav id="site-navigation" class="site-navigation" aria-label="Main navigation">
+          <a href="./index.html">Home</a>
+          <a href="./network.html">Networks</a>
+          <a href="./stations.html">Stations</a>
+          <a href="./transmission.html">Transmission</a>
+          <a href="./loads.html">Loads</a>
+          <a href="./history.html" aria-current="page">History</a>
+          <details class="communications-menu">
+            <summary>Communications</summary>
+            <div>
+              <a href="./telephone.html">Telephone</a>
+              <a href="./telecom.html">Utility radio</a>
+            </div>
+          </details>
+          <a href="./sources.html">Sources</a>
+      </nav>
+      <span class="edition">FIELD EDITION 0.1</span>
+    </header>
+
+    <main id="main">
+      <header class="page-masthead">
+        <p class="eyebrow">NL Grid Atlas</p>
+        <h1>System history</h1>
+        <p>Dated changes in generation, transmission, communications and public infrastructure.</p>
+      </header>
+<section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">05 / CHANGE RECORD</span>
+            <h2 id="timeline-title">System changes and events</h2>
+          </div>
+          <div class="filter-set" role="group" aria-label="Filter timeline">
+            <button class="filter active" data-filter="all" type="button">All</button>
+            <button class="filter" data-filter="station" type="button">Stations</button>
+            <button class="filter" data-filter="load" type="button">Loads</button>
+            <button class="filter" data-filter="telecom" type="button">Telecom</button>
+          </div>
+        </header>
+        <div id="timeline-list" class="timeline" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>NL GRID ATLAS</strong><p>Unofficial engineering reference based on public records.</p></div>
+      <p>Not affiliated with the PUB, Newfoundland and Labrador Hydro, or Newfoundland Power.</p>
+      <a href="https://github.com/andrew867/NLGridAtlas">GitHub repository</a>
+    </footer>
+    <script type="module" src="/src/pages/history.js"></script>
+  </body>
+</html>

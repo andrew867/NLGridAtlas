@@ -1,6 +1,6 @@
 # NL Grid Atlas verification plan
 
-Updated: 2026-11-10
+Updated: 2026-11-17
 
 ## 1. Required gates
 
@@ -63,7 +63,7 @@ Selecting an explicit station link, transmission line, or circuit shall open the
 
 ### TEST-UI-003, component evidence
 
-Selecting a transformer, capacitor bank, generator, feeder, bus, or recorded event shall update only the related evidence panel. The default summary shall return when the selection is cleared or the page is reloaded.
+Selecting a transformer, capacitor bank, generator, feeder, bus, or recorded event shall update only the related evidence panel. A URL that names a component shall restore that component after reload. A bare URL shall show the default summary.
 
 ### TEST-UI-004, feeder maps
 
@@ -72,6 +72,22 @@ Each available feeder map shall expand below its feeder record and open the full
 ### TEST-UI-005, keyboard operation
 
 Every interactive diagram component, station tab, map point, disclosure control, and source link shall be reachable and usable with a keyboard. Focus shall remain visible.
+
+### TEST-UI-006, static page entries
+
+All nine HTML entries shall load directly beneath `/NLGridAtlas/` without a server rewrite or single-page fallback.
+
+### TEST-UI-007, route and history restoration
+
+Station collection, station, record view, register, committed search, source filters, source record, map selection, circuit, voltage selection and grouped component state shall survive copied URLs, reload, Back and Forward.
+
+### TEST-UI-008, citation previews
+
+An ordinary citation activation shall open the recorded occurrence locator without changing the page URL. Escape and Close shall restore focus. Modified clicks shall retain the real source-record destination.
+
+### TEST-UI-009, source catalogue
+
+Search and structured filters shall apply before pagination. A direct source route shall reveal the requested static record even when it falls outside the default page. The no-JavaScript fragment shall reach the same record.
 
 ## 4. Visual matrix
 
@@ -114,7 +130,10 @@ Run:
 ```powershell
 npm test
 npm run verify:sources
+npm run verify:retention
+npm run verify:links
 npm run build
+npx playwright test tests/browser/atlas.spec.js
 git diff --check
 git status --short
 ```

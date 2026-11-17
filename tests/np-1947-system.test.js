@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -32,7 +33,7 @@ test("1947 claim and public card retain exact source pages", () => {
   assert.equal(sources.find((source) => source.id === "nlh-1947-muskrat-survey")?.pages, "physical PDF p. 69");
   assert.equal(sources.find((source) => source.id === "nlh-1947-hamilton-falls-benchmark")?.pages, "physical PDF p. 135");
   assert.equal(sources.find((source) => source.id === "np-1947-port-aux-basques-electrical-plant")?.pages, "physical PDF p. 1049");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1947-system-record"/);
   assert.match(html, /72\.04-foot benchmark/);
   assert.match(html, /\$1,700 original cost/);

@@ -1,0 +1,2153 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-17",
+  "baselineIdCount": 267,
+  "retainedIdCount": 267,
+  "missingIdCount": 0,
+  "records": [
+    {
+      "id": "avalon-1994-storm",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-230-semi-geographic",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-66-semi-geographic",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-combustion-turbine-connection",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-ct-svg-desc",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-ct-svg-title",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-ct-title",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-desc",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-network",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-option-four",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "avalon-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "bde-2026-frazil-event",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "bde-east-west-peak-loads",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "bde-frazil-2026",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "broad-cove-2014-peak",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "corner-brook-converter-diagram-desc",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "corner-brook-converter-diagram-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "corner-brook-converter-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "corner-brook-frequency-converter",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "corner-brook-frequency-converter-record",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "corridor-svg-desc",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "corridor-svg-title",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "corridor-title",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "cover-title",
+      "destinations": [
+        "index.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "evidence",
+      "destinations": [
+        "sources.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "evidence-title",
+      "destinations": [
+        "sources.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "gdl-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "gdl-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-avalon-desc",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-avalon-map",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-avalon-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-island-desc",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-island-map",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-island-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-map-detail",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-network",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-network-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "geographic-references-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "glendale-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "gnp-2001-forecast-comparison",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "gnp-2021-2025-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "gnp-load-forecast",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "gnp-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "gou-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "gou-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "goulds-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "handbook",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "handbook-detail-code",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "handbook-detail-data",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "handbook-detail-source",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "handbook-detail-station-link",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "handbook-detail-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "handbook-register",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "handbook-search",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "handbook-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hardwoods-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "hardwoods-terminal-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "historical-vhf-system",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "holyrood-historical-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "holyrood-unit3-reversible-sc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hrd-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hrd-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hurricane-leslie-energy-totals",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hvdc-links",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hvdc-links-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hwd-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hwd-np-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hwd-np-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hwd-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hydro-terminal-browser",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hydro-terminal-browser-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hydro-terminal-record",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "hydro-terminal-tabs",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "island-2024-forecast-accuracy",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "island-ac-backbone-2018",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "island-backbone",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "island-backbone-detail",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "island-backbone-map",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "island-backbone-map-desc",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "island-backbone-map-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "island-backbone-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "island-generation-transmission-overview",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "island-system-lengths",
+      "destinations": [
+        "index.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "kbr-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "kbr-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "ken-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "ken-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "kenmount-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "kings-bridge-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "labrador-island-link-system-record",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "lil-system-desc",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "lil-system-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "loads",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "loads-title",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "long-pond-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "lpd-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "lpd-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "main",
+      "destinations": [
+        "index.html",
+        "network.html",
+        "stations.html",
+        "transmission.html",
+        "loads.html",
+        "history.html",
+        "telephone.html",
+        "telecom.html",
+        "sources.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "maritime-link-system-record",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "memorial-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "ml-system-desc",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "ml-system-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "mun-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "mun-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "network",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "network-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "nostradamus-2020-import-failure",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1937-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1939-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1940-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1941-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1942-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1943-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1944-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1945-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1946-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1947-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1948-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1949-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1950-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1951-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1952-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1953-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1954-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1955-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1956-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1957-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1958-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1959-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1960-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1961-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1962-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1963-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1964-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1965-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1966-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1967-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1968-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1969-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1970-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1971-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1972-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1973-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1974-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1975-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1976-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1977-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1978-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1979-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1980-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1981-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1982-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1983-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1984-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1985-system-record",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1986-system-load-capital",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1987-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1988-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1989-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1990-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1991-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1992-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1993-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1994-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1995-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1996-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1997-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1998-2005-system-load-factors",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1998-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-1999-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-2000-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-2001-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-2002-system-reliability",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-2008-fibre-network",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-2014-mobile-radio",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "np-2014-winter-actual-peaks",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-2026-transformer-forecast-ratios",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-radio-desc",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "np-radio-title",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "one-line-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "one-line-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "oxen-pond-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "oxen-pond-terminal-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "oxp-np-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "oxp-np-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "p25-radio-desc",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "p25-radio-title",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "pep-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "pep-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "pepperrell-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "pul-np-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "pul-np-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "pulpit-rock-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "radio-desc",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "radio-title",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "register-count",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "ridge-road-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "rrd-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "rrd-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "sjm-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "sjm-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "sla-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "sla-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "source-conflict",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "source-list",
+      "destinations": [
+        "sources.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "source-search",
+      "destinations": [
+        "sources.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "st-johns-main-2015-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "stamps-lane-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "station-browser",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "station-browser-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "station-profile",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "station-record-count",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "station-search",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "station-tabs",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-gdl",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-gou",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-hwd",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-kbr",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-ken",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-lpd",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-mun",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-oxp",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-pep",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-pul",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-rrd",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-sjm",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-sla",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substation-vir",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substations",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "substations-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "telecom",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "telecom-2004",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "telecom-2026",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "telecom-np-2014",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "telecom-site-registers",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "telecom-title",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "telephone",
+      "destinations": [
+        "telephone.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "telephone-dms-title",
+      "destinations": [
+        "telephone.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "telephone-title",
+      "destinations": [
+        "telephone.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "terminal-hrd",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "terminal-hwd",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "terminal-network-desc",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "terminal-network-title",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "terminal-opd",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "terminal-overview-cbc",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "terminal-overview-sun",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "terminal-overview-vbn",
+      "destinations": [
+        "network.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "terminal-wav",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "timeline",
+      "destinations": [
+        "history.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "timeline-list",
+      "destinations": [
+        "history.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "timeline-title",
+      "destinations": [
+        "history.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "tl201-dynamic-line-rating",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "tod-rate-study-load-data",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "top",
+      "destinations": [
+        "index.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "transformer-load-title",
+      "destinations": [
+        "loads.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "transmission",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "transmission-title",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "trunked-radio-desc",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "trunked-radio-title",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "vhf-replacement-record",
+      "destinations": [
+        "telecom.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "vir-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "vir-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "virginia-waters-substation-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    },
+    {
+      "id": "wav-desc",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "wav-title",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "western-avalon-soldiers-pond-design",
+      "destinations": [
+        "transmission.html"
+      ],
+      "retained": true,
+      "basis": "static HTML"
+    },
+    {
+      "id": "western-avalon-terminal-one-line",
+      "destinations": [
+        "stations.html"
+      ],
+      "retained": true,
+      "basis": "generated from src/data.js"
+    }
+  ]
+}

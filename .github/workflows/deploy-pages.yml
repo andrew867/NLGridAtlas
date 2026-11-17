@@ -34,8 +34,19 @@ jobs:
       - name: Run data and topology tests
         run: npm test
 
+      - name: Verify source digests and retained content
+        run: |
+          npm run verify:sources
+          npm run verify:retention
+
+      - name: Verify internal links
+        run: npm run verify:links
+
       - name: Build static site
         run: npm run build
+
+      - name: Run built-output browser tests
+        run: npm run test:ui
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

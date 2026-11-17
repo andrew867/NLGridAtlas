@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An unofficial, source-cited engineering atlas of Newfoundland and Labrador electrical and communications infrastructure." />
+    <meta name="theme-color" content="#eee8dc" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>Utility radio | NL Grid Atlas</title>
+  </head>
+  <body data-page="telecom">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header" data-site-header>
+      <a class="wordmark" href="./index.html" aria-label="NL Grid Atlas home">
+        <span class="wordmark-mark" aria-hidden="true">NL</span>
+        <span>GRID ATLAS</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+      <nav id="site-navigation" class="site-navigation" aria-label="Main navigation">
+          <a href="./index.html">Home</a>
+          <a href="./network.html">Networks</a>
+          <a href="./stations.html">Stations</a>
+          <a href="./transmission.html">Transmission</a>
+          <a href="./loads.html">Loads</a>
+          <a href="./history.html">History</a>
+          <details class="communications-menu" data-current="true">
+            <summary>Communications</summary>
+            <div>
+              <a href="./telephone.html">Telephone</a>
+              <a href="./telecom.html" aria-current="page">Utility radio</a>
+            </div>
+          </details>
+          <a href="./sources.html">Sources</a>
+      </nav>
+      <span class="edition">FIELD EDITION 0.1</span>
+    </header>
+
+    <main id="main">
+      <header class="page-masthead">
+        <p class="eyebrow">NL Grid Atlas</p>
+        <h1>Utility radio</h1>
+        <p>Dated VHF, microwave, P25, satellite and vehicle communications records.</p>
+      </header>
+<section class="section telecom-section" id="telecom" aria-labelledby="telecom-title" data-claim-id="historical-vhf-system">
+        <header class="section-heading">
+          <div>
+            <span class="section-number">08 / OPERATIONS RADIO</span>
+            <h2 id="telecom-title">Two utility radio networks</h2>
+          </div>
+          <p>Hydro and Newfoundland Power operated separate VHF systems. Their filings record different sites, switching arrangements, and replacement paths.</p>
+        </header>
+
+        <div class="telecom-layout">
+          <article class="phase-frame telecom-schematic">
+            <div class="telecom-sheet-heading">
+              <div><span>HISTORICAL / 2001 STUDY</span><h3>ATI mobile network</h3></div>
+              <strong>VHF / CONVENTIONAL</strong>
+            </div>
+            <svg class="radio-line" viewBox="0 0 1000 540" role="img" aria-labelledby="radio-title radio-desc">
+              <title id="radio-title">Simplified historical Hydro VHF radio network</title>
+              <desc id="radio-desc">St. John's Dispatch connects to a single ATI switch at Gander. Telephone interconnects and four-wire site links connect the switch and repeater controllers. The system had 29 repeater sites.</desc>
+              <g class="radio-dispatch">
+                <rect x="45" y="218" width="185" height="104" />
+                <path d="M82 218 V184 H193 V218" />
+                <text x="137" y="263">ST. JOHN'S</text><text x="137" y="291">DISPATCH</text>
+              </g>
+              <path class="radio-link" d="M230 270 H355" />
+              <text class="radio-link-label" x="290" y="255">DISPATCH LINK</text>
+              <g class="radio-switch">
+                <rect x="355" y="184" width="240" height="174" />
+                <text x="475" y="252">ATI SWITCH</text><text class="radio-place" x="475" y="286">GANDER</text>
+                <text class="radio-small" x="475" y="325">NON-REDUNDANT</text>
+              </g>
+              <path class="radio-link" d="M595 224 H682 V135 H760 M595 270 H760 M595 316 H682 V405 H760" />
+              <text class="radio-link-label" x="646" y="207">TEL INTERCONNECT</text>
+              <text class="radio-link-label" x="650" y="391">TEL INTERCONNECT</text>
+              <g class="radio-repeaters">
+                <g transform="translate(760 84)">
+                  <rect width="180" height="100" /><path d="M90 0 V-16 M75 -16 H105 M80 -28 L90 -16 L100 -28" />
+                  <text x="90" y="45">REPEATER</text><text class="radio-small" x="90" y="72">CONTROLLER</text>
+                </g>
+                <g transform="translate(760 220)">
+                  <rect width="180" height="100" /><path d="M90 0 V-16 M75 -16 H105 M80 -28 L90 -16 L100 -28" />
+                  <text x="90" y="45">REPEATER</text><text class="radio-small" x="90" y="72">CONTROLLER</text>
+                </g>
+                <g transform="translate(760 356)">
+                  <rect width="180" height="100" /><path d="M90 0 V-16 M75 -16 H105 M80 -28 L90 -16 L100 -28" />
+                  <text x="90" y="45">REPEATER</text><text class="radio-small" x="90" y="72">CONTROLLER</text>
+                </g>
+              </g>
+              <path class="site-link" d="M940 168 H968 V236 H940 M940 304 H968 V372 H940" />
+              <text class="radio-link-label" x="908" y="205">4W SITE LINK</text>
+              <text class="radio-link-label" x="908" y="341">4W SITE LINK</text>
+              <g class="radio-count">
+                <text x="355" y="455">29</text><text class="radio-small" x="430" y="440">REPEATER SITES</text>
+                <text class="radio-small" x="430" y="462">CENTRAL SWITCH AT GANDER</text>
+                <text class="radio-small" x="430" y="484">DISPATCH AT ST. JOHN'S</text>
+              </g>
+            </svg>
+            <p class="diagram-note">SCHEMATIC / NOT GEOGRAPHIC / EXISTING NETWORK IN 2001 STUDY</p>
+            <a class="evidence-link" href="./sources.html?source=nlh-1973-tl233&amp;ref=citation-73ee726190de#source-nlh-1973-tl233" data-document-url="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" data-source-id="nlh-1973-tl233" data-citation-id="citation-73ee726190de" data-locator="2004 Capital Budget / physical PDF pp. 194 and 258">2004 Capital Budget / physical PDF pp. 194 and 258</a>
+          </article>
+
+          <div class="telecom-ledger">
+            <article>
+              <span class="case-date">1989 SYSTEM</span>
+              <strong>29</strong>
+              <h3>Repeater sites</h3>
+              <p>Each site had one controller, one mobile transceiver, and one paging transmitter. The central Gander switch had no redundancy.</p>
+              <a class="evidence-link" href="./sources.html?source=nlh-1973-tl233&amp;ref=citation-14ef8fef3656#source-nlh-1973-tl233" data-document-url="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" data-source-id="nlh-1973-tl233" data-citation-id="citation-14ef8fef3656" data-locator="Physical PDF p. 194">Physical PDF p. 194</a>
+            </article>
+            <article>
+              <span class="case-date">2001 RADIO DISTRIBUTION LIST</span>
+              <dl class="radio-inventory">
+                <div><dt>Pagers</dt><dd>47</dd></div>
+                <div><dt>Mobiles</dt><dd>249</dd></div>
+                <div><dt>Portables</dt><dd>85</dd></div>
+                <div><dt>Base stations</dt><dd>33</dd></div>
+              </dl>
+              <a class="evidence-link" href="./sources.html?source=nlh-1973-tl233&amp;ref=citation-d6aa52e6c6c6#source-nlh-1973-tl233" data-document-url="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" data-source-id="nlh-1973-tl233" data-citation-id="citation-d6aa52e6c6c6" data-locator="Physical PDF p. 251">Physical PDF p. 251</a>
+            </article>
+            <article data-claim-id="np-2008-fibre-network" id="np-2008-fibre-network">
+              <span class="case-date">NEWFOUNDLAND POWER / 1990 TO 2008</span>
+              <strong>32</strong>
+              <h3>Fibre circuits</h3>
+              <p>Sixteen circuits were built, fifteen were leased, and one was rented. The network carried corporate and substation data, voice, SCADA, protective relaying, and control-centre traffic.</p>
+              <a class="evidence-link" href="./sources.html?source=np-2008-broad-cove&amp;ref=citation-58b3e3ea8505#source-np-2008-broad-cove" data-document-url="http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf#page=228" data-source-id="np-2008-broad-cove" data-citation-id="citation-58b3e3ea8505" data-locator="2008 Capital Budget Application / physical PDF pp. 228 to 234">2008 Capital Budget Application / physical PDF pp. 228 to 234</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="telecom-network-records" aria-label="Dated telecommunications network diagrams" data-claim-id="vhf-replacement-record" id="vhf-replacement-record">
+          <article class="phase-frame telecom-network-record np-mobile-radio" id="telecom-np-2014" data-claim-id="np-2014-mobile-radio">
+            <div class="telecom-sheet-heading">
+              <div><span>NEWFOUNDLAND POWER / FILED 2012 / REPLACED 2014</span><h3>Mobile radio system</h3></div>
+              <strong>VHF / 24 SITES / PASS PORT</strong>
+            </div>
+            <div class="telecom-record-body">
+              <svg class="radio-line radio-evolution-line" viewBox="0 0 960 430" role="img" aria-labelledby="np-radio-title np-radio-desc">
+                <title id="np-radio-title">Newfoundland Power mobile radio system and selected replacement</title>
+                <desc id="np-radio-desc">Newfoundland Power's early 1980s system connected field radios through 24 VHF repeater sites and nine operating areas to a central switch integrated with System Control. The selected replacement used Bell's shared PassPort system.</desc>
+                <rect x="35" y="128" width="210" height="174" />
+                <text x="140" y="178">FIELD RADIOS</text>
+                <text class="radio-small" x="140" y="212">207 MOBILE</text>
+                <text class="radio-small" x="140" y="238">85 PORTABLE</text>
+                <text class="radio-small" x="140" y="264">23 BASE</text>
+                <path class="radio-link" d="M245 215 H330" />
+                <rect x="330" y="128" width="210" height="174" />
+                <text x="435" y="178">24 REPEATERS</text>
+                <text class="radio-small" x="435" y="214">9 OPERATING AREAS</text>
+                <text class="radio-small" x="435" y="240">3 SIMPLEX CHANNELS</text>
+                <path d="M435 128 V98 M413 98 H457 M420 76 L435 98 L450 76" />
+                <path class="radio-link" d="M540 215 H625" />
+                <text class="radio-link-label" x="582" y="196">WAN / VoIP</text>
+                <rect x="625" y="68" width="300" height="136" />
+                <text x="775" y="116">CENTRAL SWITCH</text>
+                <text class="radio-small" x="775" y="149">SYSTEM CONTROL</text>
+                <text class="radio-small" x="775" y="175">TELEPHONE INTERCONNECT</text>
+                <path class="site-link" d="M775 204 V252" />
+                <rect x="625" y="252" width="300" height="118" />
+                <text x="775" y="300">BELL PASS PORT</text>
+                <text class="radio-small" x="775" y="334">SHARED REPLACEMENT SYSTEM</text>
+                <text class="register-caption" x="480" y="408">FILED EXISTING SYSTEM AND SELECTED REPLACEMENT / NOT A ROUTE DIAGRAM</text>
+              </svg>
+              <dl class="telecom-cost-register">
+                <div><dt>Filed 2013 capital</dt><dd>$750,000</dd></div>
+                <div><dt>Reported replacement</dt><dd>2014</dd></div>
+                <div><dt>Reported cost</dt><dd>Approximately $838,000</dd></div>
+                <div><dt>25-year PassPort NPV</dt><dd>$4.560 million</dd></div>
+                <div><dt>25-year own-and-maintain NPV</dt><dd>$6.457 million</dd></div>
+                <div><dt>25-year own, Bell maintains NPV</dt><dd>$7.611 million</dd></div>
+              </dl>
+            </div>
+            <a class="evidence-link" href="./sources.html?source=np-1918-hearts-content-service&amp;ref=citation-9c09ee37e89d#source-np-1918-hearts-content-service" data-document-url="http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf#page=394" data-source-id="np-1918-hearts-content-service" data-citation-id="citation-9c09ee37e89d" data-locator="2013 Capital Budget Application / physical PDF pp. 394 to 402">2013 Capital Budget Application / physical PDF pp. 394 to 402</a>
+            <a class="evidence-link stacked-link" href="./sources.html?source=np-1941-tors-cove-g3-equipment&amp;ref=citation-ea682df1936d#source-np-1941-tors-cove-g3-equipment" data-document-url="http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=141" data-source-id="np-1941-tors-cove-g3-equipment" data-citation-id="citation-ea682df1936d" data-locator="2017 Capital Budget Application / physical PDF p. 141">2017 Capital Budget Application / physical PDF p. 141</a>
+            <div class="source-sheet-disclosures">
+              <details>
+                <summary>Open the filed operating-area and radio-count sheet</summary>
+                <a href="./reference-maps/np-vhf-2012-sites.png" target="_blank" rel="noreferrer"><img src="./reference-maps/np-vhf-2012-sites.png" alt="Newfoundland Power operating-area map and radio inventory from the 2013 Capital Budget Application" loading="lazy" /></a>
+              </details>
+            </div>
+          </article>
+
+          <article class="phase-frame telecom-network-record" id="telecom-2004">
+            <div class="telecom-sheet-heading">
+              <div><span>PROPOSED / 2004 REVISION</span><h3>Trunked VHF replacement</h3></div>
+              <strong>170 MHz / 39 SITES</strong>
+            </div>
+            <div class="telecom-record-body">
+              <svg class="radio-line radio-evolution-line" viewBox="0 0 960 430" role="img" aria-labelledby="trunked-radio-title trunked-radio-desc">
+                <title id="trunked-radio-title">Proposed 2004 trunked VHF replacement</title>
+                <desc id="trunked-radio-desc">Hydro proposed a standards-based trunked VHF system in the 170 megahertz band. Hydro microwave facilities provided the interconnection layer. The September 2004 revision specified 39 repeater sites.</desc>
+                <rect x="65" y="145" width="220" height="138" />
+                <text x="175" y="196">FIELD RADIOS</text>
+                <text class="radio-small" x="175" y="226">MOBILE / PORTABLE</text>
+                <text class="radio-small" x="175" y="251">BASE STATIONS</text>
+                <path class="radio-link" d="M285 214 H385" />
+                <text class="radio-link-label" x="335" y="195">SHARED CHANNELS</text>
+                <rect x="385" y="126" width="260" height="176" />
+                <text x="515" y="185">TRUNKED VHF</text>
+                <text class="radio-small" x="515" y="218">STANDARDS-BASED</text>
+                <text class="radio-small" x="515" y="245">170 MHz BAND</text>
+                <path class="site-link" d="M645 214 H735" />
+                <text class="radio-link-label" x="690" y="195">BACKHAUL</text>
+                <rect x="735" y="102" width="170" height="224" />
+                <text x="820" y="158">39 SITES</text>
+                <text class="radio-small" x="820" y="194">2004 REVISION</text>
+                <path d="M820 102 V73 M798 73 H842 M805 51 L820 73 L835 51" />
+                <text class="radio-small" x="820" y="270">HYDRO MICROWAVE</text>
+                <text class="radio-small" x="820" y="296">AND SITE LINKS</text>
+                <text class="register-caption" x="480" y="385">PROPOSED SYSTEM LAYERS / NOT AN AS-BUILT ROUTE DIAGRAM</text>
+              </svg>
+              <dl class="telecom-cost-register">
+                <div><dt>Trunked capital</dt><dd>$5,700,000</dd></div>
+                <div><dt>Trunked operating NPV</dt><dd>$5,127,896</dd></div>
+                <div><dt>Trunked total</dt><dd>$10,827,896</dd></div>
+                <div><dt>Conventional total</dt><dd>$10,597,828</dd></div>
+                <div><dt>Difference</dt><dd>$230,068</dd></div>
+              </dl>
+            </div>
+            <a class="evidence-link" href="./sources.html?source=nlh-1973-tl233&amp;ref=citation-a9f32c391926#source-nlh-1973-tl233" data-document-url="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" data-source-id="nlh-1973-tl233" data-citation-id="citation-a9f32c391926" data-locator="2004 Capital Budget / physical PDF pp. 200 to 203">2004 Capital Budget / physical PDF pp. 200 to 203</a>
+            <a class="evidence-link stacked-link" href="./sources.html?source=vhf-2004-revision&amp;ref=citation-dd19f3ec9502#source-vhf-2004-revision" data-document-url="http://www.pub.nf.ca/ARCHIVE/hydro2005cap/files/applic/SecGTab4VHFsummaryReportPage11-Rev1.pdf" data-source-id="vhf-2004-revision" data-citation-id="citation-dd19f3ec9502" data-locator="Revised site count / PDF p. 1, report p. 11">Revised site count / PDF p. 1, report p. 11</a>
+          </article>
+
+          <article class="phase-frame telecom-network-record" id="telecom-2026">
+            <div class="telecom-sheet-heading">
+              <div><span>REPORTED / 2026 FILING</span><h3>P25 and vehicle data</h3></div>
+              <strong>RADIO / SATELLITE DATA</strong>
+            </div>
+            <div class="telecom-record-body">
+              <svg class="radio-line radio-evolution-line" viewBox="0 0 960 430" role="img" aria-labelledby="p25-radio-title p25-radio-desc">
+                <title id="p25-radio-title">P25 radio and selected fleet vehicle data equipment reported in 2026</title>
+                <desc id="p25-radio-desc">Hydro selected radios on the provincial P25 system. Selected fleet vehicles receive Starlink terminals and Cradlepoint routers. The source does not provide the internal P25 network topology.</desc>
+                <rect x="65" y="72" width="225" height="122" />
+                <text x="177" y="119">HYDRO RADIOS</text>
+                <text class="radio-small" x="177" y="151">OPERATIONS VOICE</text>
+                <path class="radio-link" d="M290 133 H405" />
+                <rect x="405" y="72" width="300" height="122" />
+                <text x="555" y="119">PROVINCIAL P25</text>
+                <text class="radio-small" x="555" y="151">NETWORK TOPOLOGY NOT FILED</text>
+                <rect x="65" y="252" width="225" height="122" />
+                <text x="177" y="299">SELECTED VEHICLES</text>
+                <text class="radio-small" x="177" y="331">FLEET DATA</text>
+                <path class="site-link" d="M290 313 H405" />
+                <rect x="405" y="252" width="160" height="122" />
+                <text x="485" y="299">STARLINK</text>
+                <text class="radio-small" x="485" y="331">TERMINAL</text>
+                <path class="site-link" d="M565 313 H635" />
+                <rect x="635" y="252" width="235" height="122" />
+                <text x="752" y="299">CRADLEPOINT</text>
+                <text class="radio-small" x="752" y="331">ROUTER</text>
+                <text class="register-caption" x="555" y="221">SEPARATE VOICE AND VEHICLE-DATA EQUIPMENT</text>
+              </svg>
+              <dl class="telecom-cost-register">
+                <div><dt>Radio system</dt><dd>Provincial P25</dd></div>
+                <div><dt>Selected fleet data</dt><dd>Starlink</dd></div>
+                <div><dt>Vehicle router</dt><dd>Cradlepoint</dd></div>
+                <div><dt>2025 reported installation</dt><dd>Approximately half</dd></div>
+                <div><dt>Remaining work</dt><dd>Carried into 2026</dd></div>
+              </dl>
+            </div>
+            <a class="evidence-link" href="./sources.html?source=nlh-1962-tl224-2027-conflict&amp;ref=citation-f77b11aa5d0a#source-nlh-1962-tl224-2027-conflict" data-document-url="http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF" data-source-id="nlh-1962-tl224-2027-conflict" data-citation-id="citation-f77b11aa5d0a" data-locator="2027 Capital Budget Volume I / physical PDF p. 248">2027 Capital Budget Volume I / physical PDF p. 248</a>
+          </article>
+        </div>
+
+        <div class="telecom-history" aria-label="VHF system replacement record">
+          <article>
+            <span class="case-date">FILED IN 2004</span>
+            <h3>Keep the 170 MHz band</h3>
+            <p>Hydro proposed a standards-based trunked VHF system. The budget included six additional repeaters. The filing said 170 MHz gave the required coverage with the fewest sites.</p>
+            <a class="evidence-link" href="./sources.html?source=nlh-1973-tl233&amp;ref=citation-9fb15a91ed55#source-nlh-1973-tl233" data-document-url="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" data-source-id="nlh-1973-tl233" data-citation-id="citation-9fb15a91ed55" data-locator="Physical PDF pp. 200 to 203">Physical PDF pp. 200 to 203</a>
+          </article>
+          <article>
+            <span class="case-date">REVISION / SEPTEMBER 24, 2004</span>
+            <h3>Ten additional sites</h3>
+            <p>The revised summary specified 39 repeater sites, ten more than the existing 29. The added coverage included Granite Canal, the Bay d'Espoir Highway, southern Labrador, Happy Valley-Goose Bay, and the Burin Peninsula.</p>
+            <a class="evidence-link" href="./sources.html?source=vhf-2004-revision&amp;ref=citation-999a07d4a9a5#source-vhf-2004-revision" data-document-url="http://www.pub.nf.ca/ARCHIVE/hydro2005cap/files/applic/SecGTab4VHFsummaryReportPage11-Rev1.pdf" data-source-id="vhf-2004-revision" data-citation-id="citation-999a07d4a9a5" data-locator="Revised summary / PDF p. 1, report p. 11">Revised summary / PDF p. 1, report p. 11</a>
+          </article>
+          <article>
+            <span class="case-date">2024 TO 2026 PROJECT</span>
+            <h3>The replacement plan changed</h3>
+            <p>Hydro cancelled the proposed satellite-phone and cellular scope. It selected radios on the provincial P25 system and Starlink with Cradlepoint routers for selected fleet vehicles.</p>
+            <a class="evidence-link" href="./sources.html?source=nlh-1962-tl224-2027-conflict&amp;ref=citation-3f2a1cc7ef22#source-nlh-1962-tl224-2027-conflict" data-document-url="http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF" data-source-id="nlh-1962-tl224-2027-conflict" data-citation-id="citation-3f2a1cc7ef22" data-locator="2027 Capital Budget Volume I / physical PDF p. 248">2027 Capital Budget Volume I / physical PDF p. 248</a>
+          </article>
+          <article>
+            <span class="case-date">STATUS REPORTED IN 2026</span>
+            <h3>Half installed in 2025</h3>
+            <p>The filing reports that approximately half of the communications equipment was installed in 2025. It carries the remaining work into 2026.</p>
+            <a class="evidence-link" href="./sources.html?source=nlh-1962-tl224-2027-conflict&amp;ref=citation-902393896b47#source-nlh-1962-tl224-2027-conflict" data-document-url="http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF" data-source-id="nlh-1962-tl224-2027-conflict" data-citation-id="citation-902393896b47" data-locator="Physical PDF p. 248">Physical PDF p. 248</a>
+          </article>
+        </div>
+
+        <article class="microwave-record">
+          <header><span class="case-date">MICROWAVE INTERCONNECTION / 1999 TO 2003</span><h3>About ten repeaters moved to Hydro sites</h3></header>
+          <ol>
+            <li><strong>1999</strong><span>West-coast microwave upgrade</span></li>
+            <li><strong>2001</strong><span>East-coast microwave upgrade</span></li>
+            <li><strong>2003</strong><span>East-west interconnection scheduled for completion</span></li>
+          </ol>
+          <p>The filing states that the microwave work allowed approximately ten repeaters to move from NewTel sites to Hydro sites.</p>
+          <a class="evidence-link" href="./sources.html?source=nlh-1973-tl233&amp;ref=citation-a898ff1078a6#source-nlh-1973-tl233" data-document-url="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" data-source-id="nlh-1973-tl233" data-citation-id="citation-a898ff1078a6" data-locator="2004 Capital Budget / physical PDF p. 200">2004 Capital Budget / physical PDF p. 200</a>
+        </article>
+
+        <article class="repeater-register" id="telecom-site-registers">
+          <header>
+            <div><span class="case-date">EXISTING REPEATER REGISTER / 2001 STUDY</span><h3>Rows marked as Hydro-owned</h3></div>
+            <p>The source lists 29 existing sites. Four rows identify NLH as owner.</p>
+          </header>
+          <div class="repeater-table-wrap">
+            <table>
+              <thead><tr><th>Site</th><th>Elevation</th><th>Tower</th><th>ERP</th><th>TX</th><th>RX</th></tr></thead>
+              <tbody>
+                <tr><td>Bay d'Espoir Hill</td><td>262 m AMSL</td><td>54 m</td><td>77.6 W</td><td>164.22 MHz</td><td>170.28 MHz</td></tr>
+                <tr><td>Blue Grass Hill</td><td>434 m AMSL</td><td>48 m</td><td>95.5 W</td><td>163.08 MHz</td><td>172.29 MHz</td></tr>
+                <tr><td>Blue Mountain</td><td>Not stated</td><td>15 m</td><td>126 W</td><td>164.79 MHz</td><td>170.52 MHz</td></tr>
+                <tr><td>Godaleich Hill</td><td>350 m AMSL</td><td>48 m</td><td>15 W</td><td>163.23 MHz</td><td>170.49 MHz</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <a class="evidence-link" href="./sources.html?source=nlh-1973-tl233&amp;ref=citation-4bf2ae0f4a76#source-nlh-1973-tl233" data-document-url="http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf" data-source-id="nlh-1973-tl233" data-citation-id="citation-4bf2ae0f4a76" data-locator="Existing repeater-site register / physical PDF p. 265">Existing repeater-site register / physical PDF p. 265</a>
+          <div class="source-sheet-disclosures">
+            <details>
+              <summary>Open the 29-site source sheet</summary>
+              <a href="./reference-maps/vhf-2001-existing-sites-265.png" target="_blank" rel="noreferrer"><img src="./reference-maps/vhf-2001-existing-sites-265.png" alt="Existing repeater-site register from physical PDF page 265" loading="lazy" /></a>
+            </details>
+            <details>
+              <summary>Open the 15 potential-site source sheet</summary>
+              <a href="./reference-maps/vhf-2001-potential-sites-266.png" target="_blank" rel="noreferrer"><img src="./reference-maps/vhf-2001-potential-sites-266.png" alt="Potential Hydro-owned repeater-site register from physical PDF page 266" loading="lazy" /></a>
+            </details>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>NL GRID ATLAS</strong><p>Unofficial engineering reference based on public records.</p></div>
+      <p>Not affiliated with the PUB, Newfoundland and Labrador Hydro, or Newfoundland Power.</p>
+      <a href="https://github.com/andrew867/NLGridAtlas">GitHub repository</a>
+    </footer>
+    <script type="module" src="/src/pages/telecom.js"></script>
+  </body>
+</html>

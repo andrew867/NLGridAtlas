@@ -1,3 +1,4 @@
+import { readAtlasHtml } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
@@ -28,7 +29,7 @@ test("exceptional tap and allocation records are retained", () => {
 
 test("interface keeps 2022 and 2005 line registers separate", async () => {
   const [html, main] = await Promise.all([
-    readFile(new URL("../index.html", import.meta.url), "utf8"),
+    readAtlasHtml(),
     readFile(new URL("../src/main.js", import.meta.url), "utf8")
   ]);
   assert.match(html, /data-register="lines-2022"[^>]*>2022 lines</);

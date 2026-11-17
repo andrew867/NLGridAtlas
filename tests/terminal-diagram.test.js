@@ -1,3 +1,4 @@
+import { readAtlasHtml } from "./page-fixture.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -28,7 +29,7 @@ test("every major island record has a sourced connection diagram", () => {
 });
 
 test("Holyrood one-line exposes the breaker program and 2015 as-built drawing date", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, /data-component="hrd-breaker-program"/);
   assert.match(html, /MARCH 2015 REVISION 19 AS-BUILT DRAWING/);
   assert.match(html, /data-component="hrd-black-start-2014"/);

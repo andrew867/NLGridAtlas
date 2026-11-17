@@ -254,7 +254,10 @@ function stationLink(name) {
   const target = stationTargets[name];
   if (!target) return "";
   const data = target.code ? ` data-hydro-terminal-record="${target.code}"` : "";
-  return `<a class="island-detail-action" href="${target.href}"${data}>Open station record</a>`;
+  const href = target.code
+    ? `./stations.html?collection=hydro&station=${encodeURIComponent(target.code)}#station-record`
+    : `./stations.html${target.href}`;
+  return `<a class="island-detail-action" href="${href}"${data}>Open station record</a>`;
 }
 
 function circuitDetail(line) {
@@ -334,7 +337,7 @@ function renderMap(svg) {
     <g class="island-nodes">${nodeMarkup}</g>`);
 }
 
-export function initIslandBackbone() {
+export function initIslandBackbone({ onStateChange = null } = {}) {
   const svg = document.querySelector("#island-backbone-map");
   const controls = document.querySelector(".island-voltage-controls");
   const shell = document.querySelector(".island-backbone-layout");
@@ -348,12 +351,13 @@ export function initIslandBackbone() {
   const counts = Object.fromEntries([66, 69, 138, 230].map((voltage) => [voltage, renderedLines.filter((line) => line.voltage_kv === voltage).length]));
   controls.innerHTML = [230, 138, 69, 66].map((voltage) => `<button type="button" aria-pressed="true" data-island-voltage="${voltage}"><strong>${voltage} kV</strong><span>${counts[voltage]} circuits</span></button>`).join("");
 
-  function selectCircuit(circuit) {
+  function selectCircuit(circuit, notify = true) {
     const line = renderedLines.find((item) => item.circuit === circuit);
     if (!line) return;
     svg.querySelectorAll(".island-circuit").forEach((item) => item.classList.toggle("selected", item.dataset.islandCircuit === circuit));
     svg.querySelectorAll(".island-node").forEach((item) => item.classList.remove("selected"));
     detail.innerHTML = circuitDetail(line);
+    if (notify) onStateChange?.({ circuit });
   }
 
   function selectStation(name) {
@@ -384,6 +388,8 @@ export function initIslandBackbone() {
     const pressed = button.getAttribute("aria-pressed") !== "true";
     button.setAttribute("aria-pressed", String(pressed));
     svg.querySelectorAll(`.island-circuit[data-voltage="${button.dataset.islandVoltage}"]`).forEach((item) => item.classList.toggle("filtered-out", !pressed));
+    const voltages = [...controls.querySelectorAll("[data-island-voltage][aria-pressed='true']")].map((item) => item.dataset.islandVoltage);
+    onStateChange?.({ voltages });
   });
   detail.addEventListener("click", (event) => {
     const button = event.target.closest("[data-island-circuit-select]");
@@ -394,6 +400,19 @@ export function initIslandBackbone() {
     if (!link || svg.contains(link)) return;
     selectCircuit(link.dataset.islandCircuit);
   });
+
+  return {
+    applyState({ circuit = null, voltages = null } = {}) {
+      if (Array.isArray(voltages)) {
+        controls.querySelectorAll("[data-island-voltage]").forEach((button) => {
+          const pressed = voltages.includes(button.dataset.islandVoltage);
+          button.setAttribute("aria-pressed", String(pressed));
+          svg.querySelectorAll(`.island-circuit[data-voltage="${button.dataset.islandVoltage}"]`).forEach((item) => item.classList.toggle("filtered-out", !pressed));
+        });
+      }
+      if (circuit) selectCircuit(circuit, false);
+    }
+  };
 }
 
 export { generationCollection, islandTopology, northernLineHistory2001, planningLoads2015, supplementalAcLines, renderedLines as islandRenderedLines, nodeLayout as islandNodeLayout, stationTargets as islandStationTargets };

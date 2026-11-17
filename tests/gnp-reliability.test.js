@@ -1,3 +1,4 @@
+import { readAtlasHtml } from "./page-fixture.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -32,7 +33,7 @@ test("five-year reliability and outage-cause values reconcile", () => {
 });
 
 test("reliability card and source ledger use the filed values", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, /id="gnp-reliability"/);
   assert.match(html, /15\.67 hours per customer per year/);
   assert.match(html, /5\.99 interruptions per customer per year/);

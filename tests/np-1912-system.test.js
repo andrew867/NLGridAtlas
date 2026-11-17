@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -6,7 +7,7 @@ import { staticClaims, timeline } from "../src/data.js";
 test("the 1912 archive search does not turn numeric matches into system events", () => {
   assert.equal(timeline.some((entry) => entry.date === "1912"), false);
   assert.equal(staticClaims.some((claim) => claim.id === "np-1912-system-record"), false);
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.doesNotMatch(html, /data-claim-id="np-1912-system-record"/);
 });
 

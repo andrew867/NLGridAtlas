@@ -1,0 +1,2256 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-11-17",
+  "source": {
+    "path": "index.html",
+    "bytes": 346219,
+    "sha256": "ce484def1dfc58b16a8cdd76a267ae8e820bbd01baa409dd1fca9c41cd20f9c4"
+  },
+  "counts": {
+    "ids": 267,
+    "localFragmentLinks": 120,
+    "sourceCitationLinks": 347,
+    "diagrams": 18,
+    "components": 141,
+    "terminalSelectors": 13,
+    "stationSelectors": 0,
+    "disclosures": 6,
+    "images": 6
+  },
+  "ids": [
+    "avalon-1994-storm",
+    "avalon-230-semi-geographic",
+    "avalon-66-semi-geographic",
+    "avalon-combustion-turbine-connection",
+    "avalon-ct-svg-desc",
+    "avalon-ct-svg-title",
+    "avalon-ct-title",
+    "avalon-desc",
+    "avalon-network",
+    "avalon-option-four",
+    "avalon-title",
+    "bde-2026-frazil-event",
+    "bde-east-west-peak-loads",
+    "bde-frazil-2026",
+    "broad-cove-2014-peak",
+    "corner-brook-converter-diagram-desc",
+    "corner-brook-converter-diagram-title",
+    "corner-brook-converter-title",
+    "corner-brook-frequency-converter",
+    "corner-brook-frequency-converter-record",
+    "corridor-svg-desc",
+    "corridor-svg-title",
+    "corridor-title",
+    "cover-title",
+    "evidence",
+    "evidence-title",
+    "gdl-desc",
+    "gdl-title",
+    "geographic-avalon-desc",
+    "geographic-avalon-map",
+    "geographic-avalon-title",
+    "geographic-island-desc",
+    "geographic-island-map",
+    "geographic-island-title",
+    "geographic-map-detail",
+    "geographic-network",
+    "geographic-network-title",
+    "geographic-references-title",
+    "glendale-substation-one-line",
+    "gnp-2001-forecast-comparison",
+    "gnp-2021-2025-reliability",
+    "gnp-load-forecast",
+    "gnp-reliability",
+    "gou-desc",
+    "gou-title",
+    "goulds-substation-one-line",
+    "handbook",
+    "handbook-detail-code",
+    "handbook-detail-data",
+    "handbook-detail-source",
+    "handbook-detail-station-link",
+    "handbook-detail-title",
+    "handbook-register",
+    "handbook-search",
+    "handbook-title",
+    "hardwoods-substation-one-line",
+    "hardwoods-terminal-one-line",
+    "historical-vhf-system",
+    "holyrood-historical-one-line",
+    "holyrood-unit3-reversible-sc",
+    "hrd-desc",
+    "hrd-title",
+    "hurricane-leslie-energy-totals",
+    "hvdc-links",
+    "hvdc-links-title",
+    "hwd-desc",
+    "hwd-np-desc",
+    "hwd-np-title",
+    "hwd-title",
+    "hydro-terminal-browser",
+    "hydro-terminal-browser-title",
+    "hydro-terminal-record",
+    "hydro-terminal-tabs",
+    "island-2024-forecast-accuracy",
+    "island-ac-backbone-2018",
+    "island-backbone",
+    "island-backbone-detail",
+    "island-backbone-map",
+    "island-backbone-map-desc",
+    "island-backbone-map-title",
+    "island-backbone-title",
+    "island-generation-transmission-overview",
+    "island-system-lengths",
+    "kbr-desc",
+    "kbr-title",
+    "ken-desc",
+    "ken-title",
+    "kenmount-substation-one-line",
+    "kings-bridge-substation-one-line",
+    "labrador-island-link-system-record",
+    "lil-system-desc",
+    "lil-system-title",
+    "loads",
+    "loads-title",
+    "long-pond-substation-one-line",
+    "lpd-desc",
+    "lpd-title",
+    "main",
+    "maritime-link-system-record",
+    "memorial-substation-one-line",
+    "ml-system-desc",
+    "ml-system-title",
+    "mun-desc",
+    "mun-title",
+    "network",
+    "network-title",
+    "nostradamus-2020-import-failure",
+    "np-1937-system-record",
+    "np-1939-system-record",
+    "np-1940-system-record",
+    "np-1941-system-record",
+    "np-1942-system-record",
+    "np-1943-system-record",
+    "np-1944-system-record",
+    "np-1945-system-record",
+    "np-1946-system-record",
+    "np-1947-system-record",
+    "np-1948-system-record",
+    "np-1949-system-record",
+    "np-1950-system-record",
+    "np-1951-system-record",
+    "np-1952-system-record",
+    "np-1953-system-record",
+    "np-1954-system-record",
+    "np-1955-system-record",
+    "np-1956-system-record",
+    "np-1957-system-record",
+    "np-1958-system-record",
+    "np-1959-system-record",
+    "np-1960-system-record",
+    "np-1961-system-record",
+    "np-1962-system-record",
+    "np-1963-system-record",
+    "np-1964-system-record",
+    "np-1965-system-record",
+    "np-1966-system-record",
+    "np-1967-system-record",
+    "np-1968-system-record",
+    "np-1969-system-record",
+    "np-1970-system-record",
+    "np-1971-system-record",
+    "np-1972-system-record",
+    "np-1973-system-record",
+    "np-1974-system-record",
+    "np-1975-system-record",
+    "np-1976-system-record",
+    "np-1977-system-record",
+    "np-1978-system-record",
+    "np-1979-system-record",
+    "np-1980-system-record",
+    "np-1981-system-record",
+    "np-1982-system-record",
+    "np-1983-system-record",
+    "np-1984-system-record",
+    "np-1985-system-record",
+    "np-1986-system-load-capital",
+    "np-1987-system-reliability",
+    "np-1988-system-reliability",
+    "np-1989-system-reliability",
+    "np-1990-system-reliability",
+    "np-1991-system-reliability",
+    "np-1992-system-reliability",
+    "np-1993-system-reliability",
+    "np-1994-system-reliability",
+    "np-1995-system-reliability",
+    "np-1996-system-reliability",
+    "np-1997-system-reliability",
+    "np-1998-2005-system-load-factors",
+    "np-1998-system-reliability",
+    "np-1999-system-reliability",
+    "np-2000-system-reliability",
+    "np-2001-system-reliability",
+    "np-2002-system-reliability",
+    "np-2008-fibre-network",
+    "np-2014-mobile-radio",
+    "np-2014-winter-actual-peaks",
+    "np-2026-transformer-forecast-ratios",
+    "np-radio-desc",
+    "np-radio-title",
+    "one-line-desc",
+    "one-line-title",
+    "oxen-pond-substation-one-line",
+    "oxen-pond-terminal-one-line",
+    "oxp-np-desc",
+    "oxp-np-title",
+    "p25-radio-desc",
+    "p25-radio-title",
+    "pep-desc",
+    "pep-title",
+    "pepperrell-substation-one-line",
+    "pul-np-desc",
+    "pul-np-title",
+    "pulpit-rock-substation-one-line",
+    "radio-desc",
+    "radio-title",
+    "register-count",
+    "ridge-road-substation-one-line",
+    "rrd-desc",
+    "rrd-title",
+    "sjm-desc",
+    "sjm-title",
+    "sla-desc",
+    "sla-title",
+    "source-conflict",
+    "source-list",
+    "source-search",
+    "st-johns-main-2015-one-line",
+    "stamps-lane-substation-one-line",
+    "station-browser",
+    "station-browser-title",
+    "station-profile",
+    "station-record-count",
+    "station-search",
+    "station-tabs",
+    "substation-gdl",
+    "substation-gou",
+    "substation-hwd",
+    "substation-kbr",
+    "substation-ken",
+    "substation-lpd",
+    "substation-mun",
+    "substation-oxp",
+    "substation-pep",
+    "substation-pul",
+    "substation-rrd",
+    "substation-sjm",
+    "substation-sla",
+    "substation-vir",
+    "substations",
+    "substations-title",
+    "telecom",
+    "telecom-2004",
+    "telecom-2026",
+    "telecom-np-2014",
+    "telecom-site-registers",
+    "telecom-title",
+    "telephone",
+    "telephone-dms-title",
+    "telephone-title",
+    "terminal-hrd",
+    "terminal-hwd",
+    "terminal-network-desc",
+    "terminal-network-title",
+    "terminal-opd",
+    "terminal-overview-cbc",
+    "terminal-overview-sun",
+    "terminal-overview-vbn",
+    "terminal-wav",
+    "timeline",
+    "timeline-list",
+    "timeline-title",
+    "tl201-dynamic-line-rating",
+    "tod-rate-study-load-data",
+    "top",
+    "transformer-load-title",
+    "transmission",
+    "transmission-title",
+    "trunked-radio-desc",
+    "trunked-radio-title",
+    "vhf-replacement-record",
+    "vir-desc",
+    "vir-title",
+    "virginia-waters-substation-one-line",
+    "wav-desc",
+    "wav-title",
+    "western-avalon-soldiers-pond-design",
+    "western-avalon-terminal-one-line"
+  ],
+  "localFragmentTargets": [
+    "evidence",
+    "handbook",
+    "hydro-terminal-browser",
+    "loads",
+    "main",
+    "network",
+    "station-browser",
+    "substation-gdl",
+    "substation-gou",
+    "substation-hwd",
+    "substation-kbr",
+    "substation-ken",
+    "substation-mun",
+    "substation-oxp",
+    "substation-pep",
+    "substation-pul",
+    "substation-rrd",
+    "substation-sjm",
+    "substation-sla",
+    "substation-vir",
+    "substations",
+    "telecom",
+    "telephone",
+    "terminal-hrd",
+    "terminal-hwd",
+    "terminal-opd",
+    "terminal-wav",
+    "timeline",
+    "top"
+  ],
+  "diagrams": [
+    "gdl",
+    "gou",
+    "hrd",
+    "hwd",
+    "hwd-np",
+    "kbr",
+    "ken",
+    "lpd",
+    "mun",
+    "opd",
+    "oxp-np",
+    "pep",
+    "pul-np",
+    "rrd",
+    "sjm",
+    "sla",
+    "vir",
+    "wav"
+  ],
+  "components": [
+    "gdl-01",
+    "gdl-02",
+    "gdl-03",
+    "gdl-04",
+    "gdl-05",
+    "gdl-06",
+    "gdl-07",
+    "gdl-08",
+    "gdl-09",
+    "gdl-t1",
+    "gdl-t2",
+    "gdl-t3",
+    "gou-01",
+    "gou-02",
+    "gou-03",
+    "gou-summary",
+    "gou-t1",
+    "gou-t2",
+    "gou-t3",
+    "hrd-b8l39",
+    "hrd-black-start-2014",
+    "hrd-breaker-program",
+    "hrd-g3",
+    "hrd-gt",
+    "hrd-t1",
+    "hrd-t10",
+    "hrd-t2",
+    "hrd-t3",
+    "hrd-t5",
+    "hrd-t6",
+    "hrd-t7",
+    "hrd-t8",
+    "hwd-b1b2",
+    "hwd-b7b8",
+    "hwd-c1",
+    "hwd-c2",
+    "hwd-g1",
+    "hwd-np-hwd07",
+    "hwd-np-hwd08",
+    "hwd-np-hwd09",
+    "hwd-np-t1",
+    "hwd-np-t2",
+    "hwd-np-t3",
+    "hwd-t1",
+    "hwd-t2",
+    "hwd-t3",
+    "hwd-t4",
+    "kbr-09",
+    "kbr-10",
+    "kbr-11",
+    "kbr-12",
+    "kbr-13",
+    "kbr-15",
+    "kbr-t3",
+    "kbr-t4",
+    "ken-01",
+    "ken-02",
+    "ken-03",
+    "ken-04",
+    "ken-05",
+    "ken-summary",
+    "ken-t1",
+    "ken-t2",
+    "lpd-b1",
+    "lpd-b2",
+    "lpd-t1",
+    "lpd-t2",
+    "mun-bus",
+    "mun-hsc-history",
+    "mun-t1",
+    "mun-t1-section",
+    "mun-t2",
+    "mun-t2-section",
+    "opd-bus-tie",
+    "opd-c1",
+    "opd-c2",
+    "opd-t1",
+    "opd-t2",
+    "opd-t3",
+    "oxp-np-feeder",
+    "oxp-np-transformer",
+    "pep-01",
+    "pep-02",
+    "pep-03",
+    "pep-04",
+    "pep-05",
+    "pep-t1",
+    "pep-t2",
+    "pul-np-t1",
+    "pul-np-t2",
+    "rrd-bus-tie",
+    "rrd-t2",
+    "rrd-t2-feeders",
+    "rrd-t3",
+    "rrd-t3-feeders",
+    "sjm-03",
+    "sjm-06",
+    "sjm-09",
+    "sjm-10",
+    "sjm-12",
+    "sjm-14",
+    "sjm-summary",
+    "sjm-t1",
+    "sjm-t2",
+    "sjm-t3",
+    "sjm-t4",
+    "sla-02",
+    "sla-03",
+    "sla-05",
+    "sla-06",
+    "sla-07",
+    "sla-08",
+    "sla-09",
+    "sla-10",
+    "sla-11",
+    "sla-summary",
+    "sla-t1",
+    "sla-t2",
+    "sla-t3",
+    "sla-t4",
+    "vir-01",
+    "vir-02",
+    "vir-03",
+    "vir-04",
+    "vir-05",
+    "vir-06",
+    "vir-07",
+    "vir-08",
+    "vir-summary",
+    "vir-t1",
+    "vir-t2",
+    "vir-t3",
+    "wav-64l",
+    "wav-86l",
+    "wav-b1b3",
+    "wav-t1",
+    "wav-t2",
+    "wav-t3",
+    "wav-t4",
+    "wav-t5",
+    "wav-t6"
+  ],
+  "terminalSelectors": [
+    "BBK",
+    "BDE",
+    "BUC",
+    "CBC",
+    "DLK",
+    "GFS",
+    "GRC",
+    "MAS",
+    "MDR",
+    "STB",
+    "STV",
+    "SUN",
+    "VBN"
+  ],
+  "stationSelectors": [],
+  "imageReferences": [
+    "./reference-maps/nlh-2012-provincial-grid.svg",
+    "./reference-maps/np-2026-iis-study-area.png",
+    "./reference-maps/np-vhf-2012-sites.png",
+    "./reference-maps/oxen-2013-st-johns-system.jpg",
+    "./reference-maps/vhf-2001-existing-sites-265.png",
+    "./reference-maps/vhf-2001-potential-sites-266.png"
+  ],
+  "citations": [
+    {
+      "id": "legacy-static-citation-0001",
+      "href": "http://www.pub.nf.ca/indexreports/transmission/From%20NLH%20-%20Transmission%20System%20and%20Terminal%20Station%20Asset%20Management%20Execution%20Report%20-%202023-04-25.PDF",
+      "label": "2023 report / PDF pp. 5, 7"
+    },
+    {
+      "id": "legacy-static-citation-0002",
+      "href": "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf#page=79",
+      "label": "2013 General Rate Application, Volume II / physical PDF p. 79"
+    },
+    {
+      "id": "legacy-static-citation-0003",
+      "href": "http://www.pub.nf.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationHandbook.pdf",
+      "label": "Electrical System Handbook / PDF pp. 6 to 16"
+    },
+    {
+      "id": "legacy-static-citation-0004",
+      "href": "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF#page=188",
+      "label": "66 kV loop / physical PDF p. 188"
+    },
+    {
+      "id": "legacy-static-citation-0005",
+      "href": "http://www.pub.nf.ca/applications/NLH2018ReliabilityAdequacy/reports/From%20NLH%20-%20Transmission%20Feasibility%20Study%20-%202026-04-17.PDF",
+      "label": "Transmission Feasibility Study / PDF pp. 9, 30 to 33, 41, 57, 60, 62, 145 to 146"
+    },
+    {
+      "id": "legacy-static-citation-0006",
+      "href": "https://nlhydro.com/wp-content/uploads/2024/08/2024-08-26_NLH_RRA-Study_2024-RAP_Rev-2.pdf#page=339",
+      "label": "2024 Reliability and Resource Adequacy Study / physical PDF p. 339"
+    },
+    {
+      "id": "legacy-static-citation-0007",
+      "href": "https://nlhydro.com/wp-content/uploads/2024/08/2024-08-26_NLH_RRA-Study_2024-RAP_Rev-2.pdf#page=305",
+      "label": "2024 Reliability and Resource Adequacy Study / physical PDF pp. 305 and 309"
+    },
+    {
+      "id": "legacy-static-citation-0008",
+      "href": "https://nlhydro.com/wp-content/uploads/2025/09/From-NLH-Application-for-Capital-Expenditures-for-the-Purchase-and-Installation-of-Bay-dEspoir-Unit-8-and-Avalon-Combustion-Turbine-Redacted-2025-03-21-UPDATED-2025-05-09-compressed.pdf#page=65",
+      "label": "Application / physical PDF pp. 41, 65 and 573"
+    },
+    {
+      "id": "legacy-static-citation-0009",
+      "href": "http://www.pub.nf.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/ElecSysImprovements/application/Application.pdf",
+      "label": "Electrical System Improvements / PDF p. 14"
+    },
+    {
+      "id": "legacy-static-citation-0010",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012Application-VolumeII-Report10.pdf#page=4",
+      "label": "2012 corridor application / physical PDF p. 4"
+    },
+    {
+      "id": "legacy-static-citation-0011",
+      "href": "http://www.pub.nl.ca/applications/2026/NLH2026SystemReliabilityFrazilIce/From%20NLH%20-%20Frazil%20Ice%20Report%20for%20BDE%20-%202026-04-30.PDF#page=13",
+      "label": "2026 frazil-ice report / physical PDF pp. 13 to 15 and 32"
+    },
+    {
+      "id": "legacy-static-citation-0012",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/hydresp/Indust/IC%20270.pdf#page=7",
+      "label": "IC-270 / physical PDF p. 7"
+    },
+    {
+      "id": "legacy-static-citation-0013",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-241.pdf",
+      "label": "CA-241 / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0014",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=185",
+      "label": "Lawn Forebay Dam / physical PDF p. 185"
+    },
+    {
+      "id": "legacy-static-citation-0015",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2013NARL/files/corresp/WrittenSubmissionsofNorthAtlantic.PDF#page=131",
+      "label": "Grand Falls G4 / physical PDF pp. 131 to 135"
+    },
+    {
+      "id": "legacy-static-citation-0016",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf#page=275",
+      "label": "Fall Pond development / physical PDF pp. 275 to 276"
+    },
+    {
+      "id": "legacy-static-citation-0017",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=140",
+      "label": "Fall Pond depreciation record / physical PDF p. 140"
+    },
+    {
+      "id": "legacy-static-citation-0018",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-021.pdf#page=2",
+      "label": "Generating-unit register / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0019",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf#page=240",
+      "label": "Tors Cove development / physical PDF p. 240"
+    },
+    {
+      "id": "legacy-static-citation-0020",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-021.pdf#page=2",
+      "label": "Generating-unit register / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0021",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/CA%20%2012A.pdf#page=2",
+      "label": "Tors Cove governors / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0022",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf#page=135",
+      "label": "1940 property records / physical PDF pp. 135 to 136"
+    },
+    {
+      "id": "legacy-static-citation-0023",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf#page=353",
+      "label": "Tors Cove original equipment / physical PDF pp. 353 to 354, 356 and 359"
+    },
+    {
+      "id": "legacy-static-citation-0024",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=206",
+      "label": "Tors Cove G3 / physical PDF pp. 206 to 207 and 210"
+    },
+    {
+      "id": "legacy-static-citation-0025",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf#page=167",
+      "label": "Rocky Pond generator / physical PDF p. 167"
+    },
+    {
+      "id": "legacy-static-citation-0026",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf#page=136",
+      "label": "1941 property records / physical PDF p. 136"
+    },
+    {
+      "id": "legacy-static-citation-0027",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=137",
+      "label": "Tors Cove and West Brook / physical PDF pp. 137 and 140"
+    },
+    {
+      "id": "legacy-static-citation-0028",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf#page=330",
+      "label": "23L history / physical PDF p. 330"
+    },
+    {
+      "id": "legacy-static-citation-0029",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=188",
+      "label": "Fall Pond dam / physical PDF p. 188"
+    },
+    {
+      "id": "legacy-static-citation-0030",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf#page=136",
+      "label": "1942 property records / physical PDF pp. 136 to 137 and 152"
+    },
+    {
+      "id": "legacy-static-citation-0031",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf#page=240",
+      "label": "Rocky Pond development / physical PDF pp. 240 to 241"
+    },
+    {
+      "id": "legacy-static-citation-0032",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf#page=161",
+      "label": "Rocky Pond 1942 record / physical PDF pp. 161 and 167"
+    },
+    {
+      "id": "legacy-static-citation-0033",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf#page=215",
+      "label": "La Manche Canal / physical PDF p. 215"
+    },
+    {
+      "id": "legacy-static-citation-0034",
+      "href": "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF#page=169",
+      "label": "Cape Pond Road / physical PDF p. 169"
+    },
+    {
+      "id": "legacy-static-citation-0035",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf#page=137",
+      "label": "1943 property records / physical PDF pp. 137 and 152"
+    },
+    {
+      "id": "legacy-static-citation-0036",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hydro2006gra/files/rfi/IC-128.pdf#page=33",
+      "label": "Salmon River inflow record / physical PDF pp. 33 and 43"
+    },
+    {
+      "id": "legacy-static-citation-0037",
+      "href": "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/study/From%20NLH%20-%20Island%20Hydroelectric%20Supply%20Refresh%20Study%20-%202024-10-01.PDF#page=340",
+      "label": "Hydrometric station register / physical PDF p. 340"
+    },
+    {
+      "id": "legacy-static-citation-0038",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf#page=152",
+      "label": "1944 property records / physical PDF pp. 152 and 155"
+    },
+    {
+      "id": "legacy-static-citation-0039",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=142",
+      "label": "Lookout Brook commissioning / physical PDF p. 142"
+    },
+    {
+      "id": "legacy-static-citation-0040",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=198",
+      "label": "Lookout Brook development / physical PDF p. 198"
+    },
+    {
+      "id": "legacy-static-citation-0041",
+      "href": "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF#page=138",
+      "label": "Flat Bay Brook Road / physical PDF p. 138"
+    },
+    {
+      "id": "legacy-static-citation-0042",
+      "href": "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF#page=112",
+      "label": "Lookout Brook 1946 record / physical PDF pp. 112, 438 and 440"
+    },
+    {
+      "id": "legacy-static-citation-0043",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf#page=162",
+      "label": "Port Union diesel / physical PDF pp. 162 and 176"
+    },
+    {
+      "id": "legacy-static-citation-0044",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf#page=137",
+      "label": "1945 property records / physical PDF pp. 137, 152, 153 and 155"
+    },
+    {
+      "id": "legacy-static-citation-0045",
+      "href": "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF#page=112",
+      "label": "Lookout Brook / physical PDF pp. 112, 438 and 440"
+    },
+    {
+      "id": "legacy-static-citation-0046",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf#page=292",
+      "label": "Port aux Basques / physical PDF p. 292"
+    },
+    {
+      "id": "legacy-static-citation-0047",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf#page=160",
+      "label": "Heart's Content development / physical PDF p. 160"
+    },
+    {
+      "id": "legacy-static-citation-0048",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf#page=180",
+      "label": "Heart's Content civil works / physical PDF pp. 180 to 181"
+    },
+    {
+      "id": "legacy-static-citation-0049",
+      "href": "http://www.pub.nl.ca/PU/orders/2004/pu43-2004.pdf#page=7",
+      "label": "Fenelons Pond / physical PDF p. 7"
+    },
+    {
+      "id": "legacy-static-citation-0050",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-498.pdf#page=1",
+      "label": "Mobile River lease / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0051",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf#page=153",
+      "label": "Heart's Content property / physical PDF p. 153"
+    },
+    {
+      "id": "legacy-static-citation-0052",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit19-MuskratFallsFeasibilityStudy1999.pdf#page=69",
+      "label": "Muskrat Falls survey / physical PDF p. 69"
+    },
+    {
+      "id": "legacy-static-citation-0053",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2009/Nalcor2009Water/files/applic/Application-VolumeII-Revised.pdf#page=135",
+      "label": "Hamilton Falls benchmark / physical PDF p. 135"
+    },
+    {
+      "id": "legacy-static-citation-0054",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/Application/CompleteApplicationRev1.pdf#page=1049",
+      "label": "Port aux Basques Diesel / physical PDF p. 1049"
+    },
+    {
+      "id": "legacy-static-citation-0055",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf#page=263",
+      "label": "King's Bridge / physical PDF p. 263"
+    },
+    {
+      "id": "legacy-static-citation-0056",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=185",
+      "label": "Lawn Forebay Dam / physical PDF p. 185"
+    },
+    {
+      "id": "legacy-static-citation-0057",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf#page=152",
+      "label": "Topsail Road property / physical PDF p. 152"
+    },
+    {
+      "id": "legacy-static-citation-0058",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit50.pdf#page=32",
+      "label": "Upper Muskrat Falls hydrometry / physical PDF p. 32"
+    },
+    {
+      "id": "legacy-static-citation-0059",
+      "href": "http://www.pub.nl.ca/applications/2019/NP2019GRA/rfi/CA-NP-110.PDF#page=220",
+      "label": "Corporate history / physical PDF p. 220"
+    },
+    {
+      "id": "legacy-static-citation-0060",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-498.pdf#page=1",
+      "label": "Mobile River rights / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0061",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-016,%20Attachment%20A.pdf#page=137",
+      "label": "Mobile land / physical PDF pp. 137 to 138"
+    },
+    {
+      "id": "legacy-static-citation-0062",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/order/pu7-03.pdf#page=17",
+      "label": "Board history / physical PDF p. 17"
+    },
+    {
+      "id": "legacy-static-citation-0063",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=136",
+      "label": "Mobile / physical PDF p. 136"
+    },
+    {
+      "id": "legacy-static-citation-0064",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf#page=309",
+      "label": "12L / physical PDF p. 309"
+    },
+    {
+      "id": "legacy-static-citation-0065",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf#page=553",
+      "label": "14L / physical PDF pp. 552 to 553"
+    },
+    {
+      "id": "legacy-static-citation-0066",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf#page=373",
+      "label": "16L / physical PDF p. 373"
+    },
+    {
+      "id": "legacy-static-citation-0067",
+      "href": "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF#page=329",
+      "label": "Tors Cove TCV-T1 / physical PDF pp. 329 and 339"
+    },
+    {
+      "id": "legacy-static-citation-0068",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/NLH-30NP.pdf#page=1",
+      "label": "Bay Roberts / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0069",
+      "href": "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF#page=480",
+      "label": "Mobile plant / physical PDF pp. 480, 483 to 484 and 489 to 490"
+    },
+    {
+      "id": "legacy-static-citation-0070",
+      "href": "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF#page=520",
+      "label": "Mobile civil works / physical PDF p. 520"
+    },
+    {
+      "id": "legacy-static-citation-0071",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf#page=179",
+      "label": "20L / physical PDF p. 179"
+    },
+    {
+      "id": "legacy-static-citation-0072",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=206",
+      "label": "Tors Cove G3 / physical PDF p. 206"
+    },
+    {
+      "id": "legacy-static-citation-0073",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf#page=374",
+      "label": "21L / physical PDF p. 374"
+    },
+    {
+      "id": "legacy-static-citation-0074",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf#page=308",
+      "label": "18L / physical PDF pp. 308 and 310"
+    },
+    {
+      "id": "legacy-static-citation-0075",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-021.pdf#page=2",
+      "label": "Generating-unit dates / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0076",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf#page=163",
+      "label": "Cape Broyle valve / physical PDF p. 163"
+    },
+    {
+      "id": "legacy-static-citation-0077",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/NLH-30NP.pdf#page=1",
+      "label": "Stamp's Lane / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0078",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-035.pdf#page=178",
+      "label": "St. John's Diesel and Steam / physical PDF pp. 178 and 180 to 181"
+    },
+    {
+      "id": "legacy-static-citation-0079",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf#page=258",
+      "label": "Cape Broyle and Horse Chops / physical PDF pp. 258 to 259"
+    },
+    {
+      "id": "legacy-static-citation-0080",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np03cap/files/undertaking/U-2.pdf#page=1",
+      "label": "Blackwoods Pond / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0081",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf#page=176",
+      "label": "Horse Chops spillway / physical PDF pp. 176 to 177"
+    },
+    {
+      "id": "legacy-static-citation-0082",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf#page=375",
+      "label": "25L / physical PDF p. 375"
+    },
+    {
+      "id": "legacy-static-citation-0083",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf#page=331",
+      "label": "24L / physical PDF p. 331"
+    },
+    {
+      "id": "legacy-static-citation-0084",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf#page=174",
+      "label": "Mobile / physical PDF p. 174"
+    },
+    {
+      "id": "legacy-static-citation-0085",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf#page=166",
+      "label": "Goulds / physical PDF p. 166"
+    },
+    {
+      "id": "legacy-static-citation-0086",
+      "href": "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF#page=304",
+      "label": "Humber / physical PDF pp. 304 and 309"
+    },
+    {
+      "id": "legacy-static-citation-0087",
+      "href": "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF#page=207",
+      "label": "Petty Harbour penstock / physical PDF pp. 207 to 208"
+    },
+    {
+      "id": "legacy-static-citation-0088",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf#page=258",
+      "label": "1953 plant record / physical PDF pp. 258 to 259"
+    },
+    {
+      "id": "legacy-static-citation-0089",
+      "href": "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF#page=544",
+      "label": "1954 plant and Mount Carmel record / physical PDF pp. 544 to 545"
+    },
+    {
+      "id": "legacy-static-citation-0090",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/applic/NLH2007ApplicationComplete.pdf#page=12",
+      "label": "Power Commission / physical PDF p. 12"
+    },
+    {
+      "id": "legacy-static-citation-0091",
+      "href": "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF#page=413",
+      "label": "Lockston to Port Union / physical PDF p. 413"
+    },
+    {
+      "id": "legacy-static-citation-0092",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/NPCBSUPP2014/BellIslandSubCable/application/Application-ApprovaltoReplacetheBellIslandSubmarineCable-2013-12-09.PDF#page=15",
+      "label": "Bell Island 28L / physical PDF pp. 15, 79 to 80 and 314"
+    },
+    {
+      "id": "legacy-static-citation-0093",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2009/NLH2009Capital/files/application/NLH2009ApplicationComplete-VolumeI.pdf#page=34",
+      "label": "Venam's Bight penstock / physical PDF p. 34"
+    },
+    {
+      "id": "legacy-static-citation-0094",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit96.pdf#page=54",
+      "label": "March ice event / physical PDF p. 54"
+    },
+    {
+      "id": "legacy-static-citation-0095",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf#page=178",
+      "label": "43L / physical PDF p. 178"
+    },
+    {
+      "id": "legacy-static-citation-0096",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf#page=191",
+      "label": "111L / physical PDF p. 191"
+    },
+    {
+      "id": "legacy-static-citation-0097",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf#page=312",
+      "label": "407L / physical PDF pp. 312 to 313"
+    },
+    {
+      "id": "legacy-static-citation-0098",
+      "href": "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF#page=413",
+      "label": "Lockston station / physical PDF pp. 413 and 415 to 416"
+    },
+    {
+      "id": "legacy-static-citation-0099",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf#page=278",
+      "label": "Lockston plant / physical PDF pp. 278 to 280"
+    },
+    {
+      "id": "legacy-static-citation-0100",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf#page=287",
+      "label": "Heart's Content / physical PDF p. 287"
+    },
+    {
+      "id": "legacy-static-citation-0101",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/PUB-126NP.pdf#page=1",
+      "label": "New Chelsea penstock / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0102",
+      "href": "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF#page=195",
+      "label": "Thomas Pond / physical PDF p. 195"
+    },
+    {
+      "id": "legacy-static-citation-0103",
+      "href": "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF#page=174",
+      "label": "101L / physical PDF pp. 174 and 252"
+    },
+    {
+      "id": "legacy-static-citation-0104",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf#page=285",
+      "label": "New Chelsea / physical PDF pp. 285 and 295"
+    },
+    {
+      "id": "legacy-static-citation-0105",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf#page=210",
+      "label": "Intakes / physical PDF pp. 210 to 211"
+    },
+    {
+      "id": "legacy-static-citation-0106",
+      "href": "http://www.pub.nl.ca/indexreports/other/From%20NLH%20-%20Mini-Hydro%20-%20Economic%20and%20Technical%20Assessment%20-%202024-12-20.PDF#page=20",
+      "label": "Snook's Arm and Venams Bight / physical PDF pp. 20, 23 and 30"
+    },
+    {
+      "id": "legacy-static-citation-0107",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/rfi/IC-1.pdf#page=1",
+      "label": "Commissioning-date conflict / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0108",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np03cap/files/trans/nov19.pdf#page=9",
+      "label": "St. George's breakers / physical PDF pp. 9 to 10"
+    },
+    {
+      "id": "legacy-static-citation-0109",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/applic/Application-VolumeIII.pdf#page=710",
+      "label": "Topsail Road property / physical PDF pp. 710 to 711"
+    },
+    {
+      "id": "legacy-static-citation-0110",
+      "href": "http://www.pub.nl.ca/applications/NLH2018ReliabilityAdequacy/rfis/PUB-NLH-288.PDF#page=101",
+      "label": "Red Indian Falls study register / physical PDF p. 101"
+    },
+    {
+      "id": "legacy-static-citation-0111",
+      "href": "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF#page=174",
+      "label": "102L / physical PDF pp. 174 to 175"
+    },
+    {
+      "id": "legacy-static-citation-0112",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=278",
+      "label": "41L and 57L / physical PDF pp. 278 to 279"
+    },
+    {
+      "id": "legacy-static-citation-0113",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf#page=312",
+      "label": "68L / physical PDF p. 312"
+    },
+    {
+      "id": "legacy-static-citation-0114",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf#page=554",
+      "label": "15L / physical PDF p. 554"
+    },
+    {
+      "id": "legacy-static-citation-0115",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf#page=331",
+      "label": "110L / physical PDF p. 331"
+    },
+    {
+      "id": "legacy-static-citation-0116",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf#page=392",
+      "label": "403L / physical PDF p. 392"
+    },
+    {
+      "id": "legacy-static-citation-0117",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf#page=5",
+      "label": "302L conflict / physical PDF p. 5"
+    },
+    {
+      "id": "legacy-static-citation-0118",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf#page=349",
+      "label": "Rattling Brook civil works / physical PDF pp. 349 and 363"
+    },
+    {
+      "id": "legacy-static-citation-0119",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf#page=184",
+      "label": "Lookout Brook / physical PDF pp. 184 and 186"
+    },
+    {
+      "id": "legacy-static-citation-0120",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=88",
+      "label": "Operations buildings / physical PDF pp. 88 and 116"
+    },
+    {
+      "id": "legacy-static-citation-0121",
+      "href": "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF#page=477",
+      "label": "Gander / physical PDF pp. 477 to 480"
+    },
+    {
+      "id": "legacy-static-citation-0122",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf#page=294",
+      "label": "Grand Falls / physical PDF p. 294"
+    },
+    {
+      "id": "legacy-static-citation-0123",
+      "href": "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF#page=435",
+      "label": "Rattling Brook station / physical PDF pp. 435 to 440"
+    },
+    {
+      "id": "legacy-static-citation-0124",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=141",
+      "label": "Rattling Brook plant / physical PDF p. 141"
+    },
+    {
+      "id": "legacy-static-citation-0125",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf#page=316",
+      "label": "30L / physical PDF p. 316"
+    },
+    {
+      "id": "legacy-static-citation-0126",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf#page=311",
+      "label": "35L / physical PDF p. 311"
+    },
+    {
+      "id": "legacy-static-citation-0127",
+      "href": "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF#page=244",
+      "label": "302L / physical PDF p. 244"
+    },
+    {
+      "id": "legacy-static-citation-0128",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf#page=393",
+      "label": "BOT-01 / physical PDF p. 393"
+    },
+    {
+      "id": "legacy-static-citation-0129",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf#page=230",
+      "label": "Pitmans Pond / physical PDF pp. 28 and 230"
+    },
+    {
+      "id": "legacy-static-citation-0130",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf#page=160",
+      "label": "Hydro civil works / physical PDF pp. 160 and 171"
+    },
+    {
+      "id": "legacy-static-citation-0131",
+      "href": "http://www.pub.nl.ca/applications/2020/NP2020Capital/rfi/NLH-NP-017.PDF#page=1",
+      "label": "Woodstave penstocks / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0132",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/IC-NLH-039.pdf#page=1",
+      "label": "Historic dry sequence / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0133",
+      "href": "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF#page=403",
+      "label": "Molloy's Lane / physical PDF pp. 403 and 408"
+    },
+    {
+      "id": "legacy-static-citation-0134",
+      "href": "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF#page=511",
+      "label": "Ridge Road / physical PDF pp. 105 and 511"
+    },
+    {
+      "id": "legacy-static-citation-0135",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf#page=167",
+      "label": "Ridge Road comparison / physical PDF p. 167"
+    },
+    {
+      "id": "legacy-static-citation-0136",
+      "href": "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF#page=394",
+      "label": "403L Robinsons tap / physical PDF p. 394"
+    },
+    {
+      "id": "legacy-static-citation-0137",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/NLH2010ApplicationComplete-VolumeII.pdf#page=232",
+      "label": "Makkovik L1 / physical PDF p. 232"
+    },
+    {
+      "id": "legacy-static-citation-0138",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf#page=26",
+      "label": "Heart's Content / physical PDF p. 26"
+    },
+    {
+      "id": "legacy-static-citation-0139",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf#page=699",
+      "label": "Holyrood T6 / physical PDF pp. 699 to 700"
+    },
+    {
+      "id": "legacy-static-citation-0140",
+      "href": "http://www.pub.nl.ca/applications/2023/NLH2023Capital/apps/From%20NLH%20-%202023%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202022-07-13.PDF#page=640",
+      "label": "Bishop's Falls diesel shop / physical PDF pp. 640 to 641"
+    },
+    {
+      "id": "legacy-static-citation-0141",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/applic/ApplicComplete.pdf#page=389",
+      "label": "38L / physical PDF p. 389"
+    },
+    {
+      "id": "legacy-static-citation-0142",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=277",
+      "label": "53L / physical PDF p. 277"
+    },
+    {
+      "id": "legacy-static-citation-0143",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=141",
+      "label": "Rattling Brook / physical PDF p. 141"
+    },
+    {
+      "id": "legacy-static-citation-0144",
+      "href": "http://www.pub.nl.ca/indexreports/other/From%20NLH%20-%20Mini-Hydro%20-%20Economic%20and%20Technical%20Assessment%20-%202024-12-20.PDF#page=30",
+      "label": "Venams Bight / physical PDF pp. 30 to 35"
+    },
+    {
+      "id": "legacy-static-citation-0145",
+      "href": "http://www.pub.nl.ca/applications/2017/NLH2017Capital/NLH2017Capital_SUPP_VariousWabush/applications/From%20NLH%20-%20Application%20-%20Various%20Replacements%20at%20the%20Wabush%20Terminal%20Station%20-%20Revision%20-%202017-04-10.PDF#page=10",
+      "label": "Wabush / physical PDF pp. 10 to 11"
+    },
+    {
+      "id": "legacy-static-citation-0146",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2008Capital/files/application/NLH2008ApplicationComplete.pdf#page=462",
+      "label": "Happy Valley / physical PDF pp. 462 to 463"
+    },
+    {
+      "id": "legacy-static-citation-0147",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf#page=310",
+      "label": "13L / physical PDF p. 310"
+    },
+    {
+      "id": "legacy-static-citation-0148",
+      "href": "http://www.pub.nl.ca/applications/2018/NLH2018CostofService/rfis/PUB-NLH-008%20-%20Attachment%203.XLSX",
+      "label": "TL224 and TL2303 / physical PDF p. 16"
+    },
+    {
+      "id": "legacy-static-citation-0149",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf#page=278",
+      "label": "Lockston G1 / physical PDF pp. 278 and 281"
+    },
+    {
+      "id": "legacy-static-citation-0150",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-036.pdf#page=233",
+      "label": "Port Union diesel / physical PDF pp. 233, 309 and 325"
+    },
+    {
+      "id": "legacy-static-citation-0151",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit96.pdf#page=54",
+      "label": "February ice storms / physical PDF p. 54"
+    },
+    {
+      "id": "legacy-static-citation-0152",
+      "href": "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF#page=242",
+      "label": "363L / physical PDF pp. 126 and 242"
+    },
+    {
+      "id": "legacy-static-citation-0153",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=278",
+      "label": "32L / physical PDF p. 278"
+    },
+    {
+      "id": "legacy-static-citation-0154",
+      "href": "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF#page=247",
+      "label": "105L / physical PDF p. 247"
+    },
+    {
+      "id": "legacy-static-citation-0155",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2007cap/files/applic/NP2007ApplicationComplete.pdf#page=168",
+      "label": "Stamp's Lane / physical PDF p. 168"
+    },
+    {
+      "id": "legacy-static-citation-0156",
+      "href": "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF#page=143",
+      "label": "Sandy Brook plant / physical PDF p. 143"
+    },
+    {
+      "id": "legacy-static-citation-0157",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2011/NP2011Capital/files/applic/NP2011ApplicationComplete.pdf#page=253",
+      "label": "Sandy Brook electrical equipment / physical PDF p. 253"
+    },
+    {
+      "id": "legacy-static-citation-0158",
+      "href": "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF#page=460",
+      "label": "Sunnyside to Gander corridor / physical PDF pp. 460 to 461"
+    },
+    {
+      "id": "legacy-static-citation-0159",
+      "href": "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF#page=96",
+      "label": "100L / physical PDF p. 96"
+    },
+    {
+      "id": "legacy-static-citation-0160",
+      "href": "http://www.pub.nl.ca/applications/2022/NP2022Capital/applications/From%20NP%20-%202022%20Capital%20Budget%20Application%20-%202021-05-18.PDF#page=343",
+      "label": "124L / physical PDF p. 343"
+    },
+    {
+      "id": "legacy-static-citation-0161",
+      "href": "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF#page=102",
+      "label": "146L / physical PDF p. 102"
+    },
+    {
+      "id": "legacy-static-citation-0162",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf#page=473",
+      "label": "LET-01 submarine cable / physical PDF p. 473"
+    },
+    {
+      "id": "legacy-static-citation-0163",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/applic/NP2006ApplicationComplete.pdf#page=406",
+      "label": "LEW-02 and GLV-02 / physical PDF pp. 406 to 407 and 418"
+    },
+    {
+      "id": "legacy-static-citation-0164",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2015/NLH2015Capital/files/application/NLH-2015-Capital-Budget-Application-Volume-II-2014-08-01.PDF#page=173",
+      "label": "Bay d'Espoir construction support / physical PDF pp. 173 and 176"
+    },
+    {
+      "id": "legacy-static-citation-0165",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013Capital/files/application/NLH2013ApplicationComplete-VolumeII.pdf#page=770",
+      "label": "Wiltondale transformer / physical PDF p. 770"
+    },
+    {
+      "id": "legacy-static-citation-0166",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf#page=4",
+      "label": "TL203 register / physical PDF p. 4"
+    },
+    {
+      "id": "legacy-static-citation-0167",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/files/application/NLH-2016-Capital-Budget-Application-Volume-III-2015-07-31.pdf#page=196",
+      "label": "TL203 structures / physical PDF p. 196"
+    },
+    {
+      "id": "legacy-static-citation-0168",
+      "href": "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF#page=100",
+      "label": "108L / physical PDF pp. 100 and 498"
+    },
+    {
+      "id": "legacy-static-citation-0169",
+      "href": "http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202016-07-28.PDF#page=334",
+      "label": "Holyrood terminal / physical PDF p. 334"
+    },
+    {
+      "id": "legacy-static-citation-0170",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2014/NP2014Capital/files/applic/NP2014ApplicationComplete.pdf#page=234",
+      "label": "Springdale / physical PDF p. 234"
+    },
+    {
+      "id": "legacy-static-citation-0171",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2010/NLH2010Capital/files/application/Application-VolumeII-Tab5.pdf#page=3",
+      "label": "Bay d'Espoir construction / physical PDF p. 3"
+    },
+    {
+      "id": "legacy-static-citation-0172",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2012/NLH2012Capital/files/application/NLH2012ApplicationComplete-VolumeII.pdf#page=290",
+      "label": "Bay d'Espoir distribution / physical PDF pp. 290 and 341"
+    },
+    {
+      "id": "legacy-static-citation-0173",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2015/NP2015Capital/files/applic/2015CapitalBudgetApplication-2014-06-26.pdf#page=186",
+      "label": "Pierre's Brook penstock / physical PDF p. 186"
+    },
+    {
+      "id": "legacy-static-citation-0174",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf#page=4",
+      "label": "Transmission-line register / physical PDF p. 4"
+    },
+    {
+      "id": "legacy-static-citation-0175",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf#page=4",
+      "label": "Terminal histories / physical PDF pp. 4 to 5"
+    },
+    {
+      "id": "legacy-static-citation-0176",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2009/NP2009Capital/files/applic/NP2009ApplicationComplete.pdf#page=269",
+      "label": "Clarenville / physical PDF p. 269"
+    },
+    {
+      "id": "legacy-static-citation-0177",
+      "href": "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF#page=349",
+      "label": "Gambo and Memorial / physical PDF pp. 349, 378 to 379"
+    },
+    {
+      "id": "legacy-static-citation-0178",
+      "href": "http://www.pub.nl.ca/applications/2024/NLH2024Capital/app/From%20NLH%20-%202024%20Capital%20Budget%20Application%20-%202023-07-12.PDF#page=543",
+      "label": "Bay d'Espoir T1 and T2 / physical PDF p. 543"
+    },
+    {
+      "id": "legacy-static-citation-0179",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf#page=766",
+      "label": "Holyrood gas-turbine history / physical PDF p. 766"
+    },
+    {
+      "id": "legacy-static-citation-0180",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeII.pdf#page=419",
+      "label": "Farewell Head lines / physical PDF p. 419"
+    },
+    {
+      "id": "legacy-static-citation-0181",
+      "href": "http://www.pub.nl.ca/applications/2020/NP2020Capital/applications/NP%20-%202020%20Capital%20Budget%20Application%20-%202019-07-05.PDF#page=393",
+      "label": "49L / physical PDF p. 393"
+    },
+    {
+      "id": "legacy-static-citation-0182",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0183",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2009/NLH2009Capital/files/application/NLH2009ApplicationComplete-VolumeII.pdf#page=97",
+      "label": "Bay d'Espoir Stage I / physical PDF p. 97"
+    },
+    {
+      "id": "legacy-static-citation-0184",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-316.pdf#page=4",
+      "label": "Transmission-line register / physical PDF p. 4"
+    },
+    {
+      "id": "legacy-static-citation-0185",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf#page=3",
+      "label": "Bottom Brook history / physical PDF p. 3"
+    },
+    {
+      "id": "legacy-static-citation-0186",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012Application-VolumeII-Report11.pdf#page=9",
+      "label": "Oxen Pond history / physical PDF p. 9"
+    },
+    {
+      "id": "legacy-static-citation-0187",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/rfi/PUB-NLH-92.pdf#page=1",
+      "label": "Transformer register / physical PDF pp. 1, 4 and 5"
+    },
+    {
+      "id": "legacy-static-citation-0188",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeII.pdf#page=419",
+      "label": "Burgeo distribution system / physical PDF p. 419"
+    },
+    {
+      "id": "legacy-static-citation-0189",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionH.pdf#page=42",
+      "label": "Powerline-carrier inventory / physical PDF p. 42"
+    },
+    {
+      "id": "legacy-static-citation-0190",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0191",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2009/NLH2009Capital/files/application/NLH2009ApplicationComplete-VolumeII.pdf#page=97",
+      "label": "Bay d'Espoir Unit 4 / physical PDF p. 97"
+    },
+    {
+      "id": "legacy-static-citation-0192",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/application/NLH2012Application-VolumeII-Report10.pdf#page=11",
+      "label": "Bay d'Espoir to Western Avalon lines / physical PDF pp. 11 to 12"
+    },
+    {
+      "id": "legacy-static-citation-0193",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA-Amended/files/rfi/IC-NLH-097%20Rev%201.PDF#page=14",
+      "label": "TL214 / physical PDF pp. 7 and 14"
+    },
+    {
+      "id": "legacy-static-citation-0194",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016Capital/files/applic/NP-2016-Capital-Budget-Application-2015-06-23.pdf#page=316",
+      "label": "404L revised record / physical PDF pp. 316 to 317"
+    },
+    {
+      "id": "legacy-static-citation-0195",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf#page=272",
+      "label": "Glenwood / physical PDF p. 272"
+    },
+    {
+      "id": "legacy-static-citation-0196",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0197",
+      "href": "http://www.pub.nl.ca/indexreports/other/From%20NLH%20-%20Holyrood%20Thermal%20Generating%20Station%20Unit%201%20-%20Root%20Cause%20Investigation%20Report%20-%202022-03-04.PDF#page=8",
+      "label": "Holyrood Unit 1 / physical PDF p. 8"
+    },
+    {
+      "id": "legacy-static-citation-0198",
+      "href": "http://www.pub.nl.ca/applications/2017/NLH2017GRA/rfi/IC-NLH-150.PDF#page=66",
+      "label": "Holyrood commissioning conflict / physical PDF p. 66"
+    },
+    {
+      "id": "legacy-static-citation-0199",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2009/NLH2009Capital/files/application/NLH2009ApplicationComplete-VolumeII.pdf#page=97",
+      "label": "Bay d'Espoir Stage II / physical PDF p. 97"
+    },
+    {
+      "id": "legacy-static-citation-0200",
+      "href": "http://www.pub.nl.ca/applications/2025/NLH2025Capital/app/From%20NLH%20-%202025%20Capital%20Budget%20Application%20-%202024-08-22%20-%20CORRECTED.PDF#page=1104",
+      "label": "Holyrood marine terminal / physical PDF p. 1104"
+    },
+    {
+      "id": "legacy-static-citation-0201",
+      "href": "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF#page=390",
+      "label": "Summerville / physical PDF p. 390"
+    },
+    {
+      "id": "legacy-static-citation-0202",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0203",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2014Capital/files/application/NLH2014ApplicationComplete-VolumeI.pdf#page=69",
+      "label": "Holyrood Unit 1 / physical PDF p. 69"
+    },
+    {
+      "id": "legacy-static-citation-0204",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeII.pdf#page=570",
+      "label": "Hawke's Bay / physical PDF pp. 570 to 571"
+    },
+    {
+      "id": "legacy-static-citation-0205",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/exhibits/Exhibit85.pdf#page=55",
+      "label": "TL220 / physical PDF p. 55"
+    },
+    {
+      "id": "legacy-static-citation-0206",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2016/NLH2016Capital/files/application/NLH-2016-Capital-Budget-Application-Volume-III-2015-07-31.pdf#page=139",
+      "label": "1970 line inventory / physical PDF p. 139"
+    },
+    {
+      "id": "legacy-static-citation-0207",
+      "href": "http://www.pub.nl.ca/PU/orders/2005/pu31-2005.pdf#page=13",
+      "label": "Holyrood paging / physical PDF pp. 13 to 14"
+    },
+    {
+      "id": "legacy-static-citation-0208",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0209",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2011Capital/files/application/NLH2011ApplicationComplete-VolumeI.pdf#page=910",
+      "label": "Holyrood Stage I / physical PDF p. 910"
+    },
+    {
+      "id": "legacy-static-citation-0210",
+      "href": "http://www.pub.nl.ca/applications/2023/NP2023Capital/app/From%20NP%20-%202023%20Capital%20Budget%20Application%20-%202022-06-29.PDF#page=440",
+      "label": "55L / physical PDF p. 440"
+    },
+    {
+      "id": "legacy-static-citation-0211",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionAtoGtab1.pdf#page=56",
+      "label": "TL209 / physical PDF p. 56"
+    },
+    {
+      "id": "legacy-static-citation-0212",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf#page=6",
+      "label": "Salt Pond / physical PDF pp. 6 and 9"
+    },
+    {
+      "id": "legacy-static-citation-0213",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0214",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHCBSUPP2013/oxenpond/application/2013-03-20AppOxenPond.PDF#page=17",
+      "label": "Hardwoods history / physical PDF p. 17"
+    },
+    {
+      "id": "legacy-static-citation-0215",
+      "href": "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF#page=100",
+      "label": "114L / physical PDF pp. 100 and 492"
+    },
+    {
+      "id": "legacy-static-citation-0216",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=192",
+      "label": "Station structures / physical PDF pp. 192, 194 and 200"
+    },
+    {
+      "id": "legacy-static-citation-0217",
+      "href": "http://www.pub.nl.ca/applications/2017/NLH2017GRA/report/From%20NLH%20-%20Review%20of%20Industrial%20Customer%20Specifically%20Assigned%20Assets%20Report%20-%20Revision%201%20-%202018-03-05.PDF#page=8",
+      "label": "Come By Chance / physical PDF p. 8"
+    },
+    {
+      "id": "legacy-static-citation-0218",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0219",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2010/NP2010Capital/files/applic/NP2010ApplicationComplete.pdf#page=291",
+      "label": "Gallant Street / physical PDF p. 291"
+    },
+    {
+      "id": "legacy-static-citation-0220",
+      "href": "http://www.pub.nl.ca/applications/2019/NP2019Capital/applications/NP%20-%202019%20Capital%20Budget%20Application%20-%202018-07-13.PDF#page=174",
+      "label": "103L / physical PDF p. 174"
+    },
+    {
+      "id": "legacy-static-citation-0221",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf#page=4",
+      "label": "Buchans history / physical PDF pp. 3 to 4"
+    },
+    {
+      "id": "legacy-static-citation-0222",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf#page=48",
+      "label": "TL233 / physical PDF p. 48"
+    },
+    {
+      "id": "legacy-static-citation-0223",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=192",
+      "label": "Station structures / physical PDF pp. 192 and 194"
+    },
+    {
+      "id": "legacy-static-citation-0224",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0225",
+      "href": "http://www.pub.nl.ca/applications/2022/NP2022GRA/responses/NLH-NP-079.PDF#page=13",
+      "label": "Mobile gas turbine / physical PDF pp. 1 and 13"
+    },
+    {
+      "id": "legacy-static-citation-0226",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/IC-NLH-097.PDF#page=19",
+      "label": "Come By Chance assets / physical PDF p. 19"
+    },
+    {
+      "id": "legacy-static-citation-0227",
+      "href": "http://www.pub.nl.ca/applications/2024/NP2024Capital/app/From%20NP%20-%202024%20Capital%20Budget%20Application%20-%202023-06-22.PDF#page=382",
+      "label": "Memorial protection / physical PDF p. 382"
+    },
+    {
+      "id": "legacy-static-citation-0228",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=278",
+      "label": "41L / physical PDF p. 278"
+    },
+    {
+      "id": "legacy-static-citation-0229",
+      "href": "http://www.pub.nl.ca/applications/2018/NP2018Capital/applications/From%20NP%20-%202018%20Capital%20Budget%20Application%20-%202017-07-07.PDF#page=244",
+      "label": "302L / physical PDF p. 244"
+    },
+    {
+      "id": "legacy-static-citation-0230",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0231",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013Capital/files/application/NLH2013ApplicationComplete-VolumeII.pdf#page=767",
+      "label": "Wiltondale / physical PDF pp. 766 to 775"
+    },
+    {
+      "id": "legacy-static-citation-0232",
+      "href": "http://www.pub.nl.ca/applications/2017/NLH2017Capital/files/applications/From%20NLH%20-%202017%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202016-07-28.PDF#page=334",
+      "label": "Holyrood Stage 2 / physical PDF p. 334"
+    },
+    {
+      "id": "legacy-static-citation-0233",
+      "href": "http://www.pub.nf.ca/applications/NP2027ThermalGeneration/app/From%20NP%20-%202027%20Wesleyville%20and%20Greenhill%20Thermal%20Generation%20Supplemental%20Application.PDF#page=44",
+      "label": "Greenhill / physical PDF pp. 14 and 44 to 45"
+    },
+    {
+      "id": "legacy-static-citation-0234",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf#page=5",
+      "label": "305L / physical PDF p. 5"
+    },
+    {
+      "id": "legacy-static-citation-0235",
+      "href": "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF#page=96",
+      "label": "100L / physical PDF p. 96"
+    },
+    {
+      "id": "legacy-static-citation-0236",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0237",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-450.pdf#page=63",
+      "label": "Hardwoods / physical PDF p. 63"
+    },
+    {
+      "id": "legacy-static-citation-0238",
+      "href": "http://www.pub.nl.ca/PU/orders/2005/pu31-2005.pdf#page=16",
+      "label": "TL231 / physical PDF p. 16"
+    },
+    {
+      "id": "legacy-static-citation-0239",
+      "href": "http://www.pub.nl.ca/applications/2025/NLH2026Capital/app/From%20NLH%20-%202026%20Capital%20Budget%20Application%20-%20Volume%20II%20-%20Redacted%20-%202025-07-15.PDF#page=331",
+      "label": "TL229 / physical PDF p. 331"
+    },
+    {
+      "id": "legacy-static-citation-0240",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2012/NP2012Capital/files/applic/NP2012ApplicationComplete.pdf#page=327",
+      "label": "Grand Falls / physical PDF p. 327"
+    },
+    {
+      "id": "legacy-static-citation-0241",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0242",
+      "href": "http://www.pub.nf.ca/applications/NP2027Capital/app/From%20NP%20-%202027%20Capital%20Budget%20Application%20-%202026-05-29.PDF#page=423",
+      "label": "Blaketown / physical PDF pp. 423 to 424"
+    },
+    {
+      "id": "legacy-static-citation-0243",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf#page=11",
+      "label": "Greenhill / physical PDF p. 11"
+    },
+    {
+      "id": "legacy-static-citation-0244",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionH.pdf#page=41",
+      "label": "Carrier inventory / physical PDF p. 41"
+    },
+    {
+      "id": "legacy-static-citation-0245",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionAtoGtab1.pdf#page=36",
+      "label": "Bay d'Espoir Unit 7 / physical PDF pp. 36 to 37"
+    },
+    {
+      "id": "legacy-static-citation-0246",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0247",
+      "href": "http://www.pub.nl.ca/applications/2025/NP2025Capital/app/From%20NP%20-%202025%20Capital%20Budget%20Application%20-%202024-06-28.PDF#page=100",
+      "label": "142L / physical PDF p. 100"
+    },
+    {
+      "id": "legacy-static-citation-0248",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hydro2005cap/files/applic/hydro2005CapBudComplete.pdf#page=53",
+      "label": "TL243 / physical PDF p. 53"
+    },
+    {
+      "id": "legacy-static-citation-0249",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLH2013GRA/files/rfi/IC-NLH-097.PDF#page=7",
+      "label": "Western Avalon / physical PDF pp. 7 to 8"
+    },
+    {
+      "id": "legacy-static-citation-0250",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013GRA/files/rfi/CA-NP-088.pdf#page=194",
+      "label": "Station structures / physical PDF pp. 194, 198 to 199"
+    },
+    {
+      "id": "legacy-static-citation-0251",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0252",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2005cap/files/applic/np2005capApplicComplete.pdf#page=329",
+      "label": "129L / physical PDF p. 329"
+    },
+    {
+      "id": "legacy-static-citation-0253",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd2003B/files/applic/AppSectionH.pdf#page=10",
+      "label": "West Coast microwave / physical PDF pp. 10 and 151"
+    },
+    {
+      "id": "legacy-static-citation-0254",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Capital/files/reports/AMEC-Report-Jan28-11.pdf#page=405",
+      "label": "Holyrood Unit 3 electrical systems / physical PDF pp. 379 and 405 to 406"
+    },
+    {
+      "id": "legacy-static-citation-0255",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Consents/83PMARCH.pdf#page=64",
+      "label": "TL232 construction record / physical PDF p. 64"
+    },
+    {
+      "id": "legacy-static-citation-0256",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0257",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Consents/81PAPRIL.pdf#page=20",
+      "label": "Board system record / physical PDF p. 20"
+    },
+    {
+      "id": "legacy-static-citation-0258",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-318.pdf#page=4",
+      "label": "Deer Lake / physical PDF p. 4"
+    },
+    {
+      "id": "legacy-static-citation-0259",
+      "href": "http://www.pub.nl.ca/applications/2021/NP2021Capital/applications/From%20NP%20-%202021%20Capital%20Budget%20Application%20-%20Volume%20II%20-%202020-07-09.pdf#page=108",
+      "label": "Dunville / physical PDF p. 108"
+    },
+    {
+      "id": "legacy-static-citation-0260",
+      "href": "http://www.pub.nl.ca/applications/2019/NLH2019Capital/NLH2019Capital_SUPP_HindsLake/applications/From%20NLH%20-%20Approval%20of%20Hinds%20Lake%20Unit%20Major%20Overhaul%20and%20Assessments%20of%20Bay%20d%20Espoir%20Penstock%204,%20Granite%20Canal%20Penstock%20and%20Hinds%20Lake%20Penstock%20-%202019-05-22.PDF#page=23",
+      "label": "Hinds Lake / physical PDF p. 23"
+    },
+    {
+      "id": "legacy-static-citation-0261",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0262",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf#page=8",
+      "label": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "legacy-static-citation-0263",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/hydro2007cap/files/applic/NLH2007ApplicationComplete.pdf#page=54",
+      "label": "TL234, TL251 and TL252 / physical PDF p. 54"
+    },
+    {
+      "id": "legacy-static-citation-0264",
+      "href": "http://www.pub.nl.ca/applications/2025/NP2025Capital/responses/CA-NP-121.PDF#page=7",
+      "label": "136L / physical PDF pp. 5 and 7"
+    },
+    {
+      "id": "legacy-static-citation-0265",
+      "href": "http://www.pub.nl.ca/applications/2026/NP2026Capital/app/From%20NP%20-%202026%20Capital%20Budget%20Application%20-%202025-06-27.PDF#page=340",
+      "label": "Greenspond / physical PDF pp. 340 to 341"
+    },
+    {
+      "id": "legacy-static-citation-0266",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0267",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf#page=8",
+      "label": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "legacy-static-citation-0268",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Consents/83PMARCH.pdf#page=24",
+      "label": "1982 Board record / physical PDF pp. 24 to 25"
+    },
+    {
+      "id": "legacy-static-citation-0269",
+      "href": "http://www.pub.nl.ca/applications/2018/NLH2018Capital/NLH2018Capital_SUPP_TL226TL239/applications/From%20NLH%20-%20Application%20-%20Approval%20to%20Re-Route%20Transmission%20Lines%20TL%20226%20and%20TL%20239%20-%202018-10-12.PDF#page=10",
+      "label": "TL239 / physical PDF p. 10"
+    },
+    {
+      "id": "legacy-static-citation-0270",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np03cap/files/rfi/PUB%20%2010-2A.pdf#page=4",
+      "label": "Burin rebuilds / physical PDF p. 4"
+    },
+    {
+      "id": "legacy-static-citation-0271",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0272",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf#page=8",
+      "label": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "legacy-static-citation-0273",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/Consents/83PMARCH.pdf#page=24",
+      "label": "Upper Salmon commissioning / physical PDF p. 24"
+    },
+    {
+      "id": "legacy-static-citation-0274",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hyd01gra/filings/Sept10/Hydro/pkg19.pdf#page=35",
+      "label": "Northern line history / physical PDF p. 35"
+    },
+    {
+      "id": "legacy-static-citation-0275",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2004cap/files/rfi/PUB-69NP.pdf#page=1",
+      "label": "VHF inventory / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0276",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0277",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf#page=9",
+      "label": "Capital record / physical PDF p. 9"
+    },
+    {
+      "id": "legacy-static-citation-0278",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NLH-299.pdf#page=2",
+      "label": "Transmission restoration / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0279",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-250.pdf#page=1",
+      "label": "Feeder rotation / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0280",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "MHI-Nalcor-92 / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0281",
+      "href": "http://www.pub.nl.ca/applications/2022/NP2022GRA/responses/CA-NP-076.PDF#page=24",
+      "label": "Operating statistics / physical PDF p. 24"
+    },
+    {
+      "id": "legacy-static-citation-0282",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf#page=8",
+      "label": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "legacy-static-citation-0283",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf#page=9",
+      "label": "Capital record / physical PDF p. 9"
+    },
+    {
+      "id": "legacy-static-citation-0284",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/MuskratFalls2011/files/rfi/MHI-Nalcor-92.pdf#page=2",
+      "label": "MHI-Nalcor-92 / physical PDF p. 2"
+    },
+    {
+      "id": "legacy-static-citation-0285",
+      "href": "http://www.pub.nl.ca/ARCHIVE/hydro2006gra/files/rfi/IC-59.pdf#page=336",
+      "label": "1997 Marginal Cost Study / physical PDF pp. 336 and 338"
+    },
+    {
+      "id": "legacy-static-citation-0286",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-295.pdf#page=8",
+      "label": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "legacy-static-citation-0287",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf#page=9",
+      "label": "Capital record / physical PDF p. 9"
+    },
+    {
+      "id": "legacy-static-citation-0288",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NP2008GRA/files/information/Information-17.pdf#page=11",
+      "label": "Comparative reliability record / physical PDF p. 11"
+    },
+    {
+      "id": "legacy-static-citation-0289",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf#page=9",
+      "label": "CA-NP-146 Attachment B / physical PDF p. 9"
+    },
+    {
+      "id": "legacy-static-citation-0290",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NP2008GRA/files/information/Information-17.pdf#page=11",
+      "label": "Comparative reliability record / physical PDF p. 11"
+    },
+    {
+      "id": "legacy-static-citation-0291",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf#page=9",
+      "label": "CA-NP-146 Attachment B / physical PDF p. 9"
+    },
+    {
+      "id": "legacy-static-citation-0292",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NP2008GRA/files/information/Information-17.pdf#page=11",
+      "label": "Comparative reliability record / physical PDF p. 11"
+    },
+    {
+      "id": "legacy-static-citation-0293",
+      "href": "http://www.pub.nl.ca/applications/2016/NP2016GRA/files/rfi/CA-NP-146,%20Attachment%20B.pdf#page=9",
+      "label": "CA-NP-146 Attachment B / physical PDF p. 9"
+    },
+    {
+      "id": "legacy-static-citation-0294",
+      "href": "http://www.pub.nl.ca/applications/2021/NP2021Capital/rfis/CA-NP-004.PDF#page=4",
+      "label": "CA-NP-004 Attachment A / physical PDF p. 4"
+    },
+    {
+      "id": "legacy-static-citation-0295",
+      "href": "http://www.pub.nl.ca/applications/2021/NP2021Capital/rfis/CA-NP-004.PDF#page=4",
+      "label": "CA-NP-004 Attachment A / physical PDF p. 4"
+    },
+    {
+      "id": "legacy-static-citation-0296",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0297",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0298",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0299",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NLHGRASUPP2013/PrudenceReview/files/rfi/PR-PUB-NLH-003.PDF#page=22",
+      "label": "Power System Outage Report / physical PDF pp. 22 to 38"
+    },
+    {
+      "id": "legacy-static-citation-0300",
+      "href": "http://www.pub.nl.ca/ARCHIVE/np2006cap/files/rfi/RFIpub1-35.pdf#page=31",
+      "label": "PUB 24.0 NP / physical PDF pp. 31 to 33"
+    },
+    {
+      "id": "legacy-static-citation-0301",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0302",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213A.pdf#page=8",
+      "label": "1996 Annual Report / physical PDF p. 8"
+    },
+    {
+      "id": "legacy-static-citation-0303",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0304",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213B.pdf#page=10",
+      "label": "1997 Annual Report / physical PDF p. 10"
+    },
+    {
+      "id": "legacy-static-citation-0305",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0306",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213C.pdf#page=10",
+      "label": "1998 Annual Report / physical PDF p. 10"
+    },
+    {
+      "id": "legacy-static-citation-0307",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0308",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213D.pdf#page=10",
+      "label": "1999 Annual Report / physical PDF p. 10"
+    },
+    {
+      "id": "legacy-static-citation-0309",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0310",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213E.pdf#page=11",
+      "label": "2000 Annual Report / physical PDF pp. 11 to 12"
+    },
+    {
+      "id": "legacy-static-citation-0311",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0312",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-213F.pdf#page=13",
+      "label": "2001 Annual Report / physical PDF p. 13"
+    },
+    {
+      "id": "legacy-static-citation-0313",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/rfi/CA-446Rev.pdf",
+      "label": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0314",
+      "href": "http://www.pub.nl.ca/ARCHIVE/nfpower03/Application/CompleteApplicationRev1.pdf#page=83",
+      "label": "2003 GRA, first revision / physical PDF pp. 83 to 86"
+    },
+    {
+      "id": "legacy-static-citation-0315",
+      "href": "http://www.pub.nl.ca/applications/NLH2026GRA/information/Information%20Item%204.PDF#page=8",
+      "label": "2026 Great Northern Peninsula reply / physical PDF pp. 8 to 9"
+    },
+    {
+      "id": "legacy-static-citation-0316",
+      "href": "http://www.pub.nf.ca/indexreports/nostradamus/From%20NLH%20-%20Short-Term%20Load%20Forecasting%20Accuracy%20-%202024%20Annual%20Report%20-%202025-01-31.PDF",
+      "label": "2024 accuracy report / PDF p. 119"
+    },
+    {
+      "id": "legacy-static-citation-0317",
+      "href": "http://www.pub.nl.ca/indexreports/From%20NLH%20-%20Accuracy%20of%20Nostradamus%20Load%20Forecasting%20-%202020%20Annual%20Report%20-%202021-02-01.PDF",
+      "label": "2020 accuracy report / physical PDF pp. 13 to 14"
+    },
+    {
+      "id": "legacy-static-citation-0318",
+      "href": "http://www.pub.nl.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-239.pdf",
+      "label": "PUB-NP-239 / physical PDF p. 1"
+    },
+    {
+      "id": "legacy-static-citation-0319",
+      "href": "http://www.pub.nf.ca/applications/ARCHIVE/2013/NLH2013GRA/files/application/Application-VolumeII.pdf",
+      "label": "2013 GRA Volume II / PDF p. 68"
+    },
+    {
+      "id": "legacy-static-citation-0320",
+      "href": "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078.PDF",
+      "label": "PUB-NP-078 / response p. 1 and Attachment C"
+    },
+    {
+      "id": "legacy-static-citation-0321",
+      "href": "http://www.pub.nf.ca/applications/2018/2018ratemitigation/responses/PUB-NP-078,%20Attachment%20B.XLSX",
+      "label": "PUB-NP-078 / Attachment B"
+    },
+    {
+      "id": "legacy-static-citation-0322",
+      "href": "https://www.newfoundlandpower.com/-/media/PDFs/About-Us/Regulatory-Matters/NP-2027-Capital-Budget-Application.pdf#page=547",
+      "label": "2027 Capital Budget Application / physical PDF pp. 547 to 551"
+    },
+    {
+      "id": "legacy-static-citation-0323",
+      "href": "https://publications.gc.ca/collections/collection_2024/isde-ised/co22/Co22-742-1977-eng.pdf#page=8",
+      "label": "1977 joint study / physical PDF pp. 8 to 9"
+    },
+    {
+      "id": "legacy-static-citation-0324",
+      "href": "https://digital.library.mcgill.ca/images/hrcorpreports/pdfs/6/639155.pdf#page=9",
+      "label": "Newfoundland Telephone 1982 / physical PDF p. 9"
+    },
+    {
+      "id": "legacy-static-citation-0325",
+      "href": "https://dai.mun.ca/pdfs/ganderbeacon/GanderBeacon19861001.pdf#page=3",
+      "label": "Gander Beacon / October 1, 1986 / physical PDF pp. 3 and 8"
+    },
+    {
+      "id": "legacy-static-citation-0326",
+      "href": "https://vtda.org/docs/telephony/NorthernTelecom/16007-01_DMS-100FamilyRLMDatasheet_Feb79.pdf",
+      "label": "Northern Telecom RLM technical facts / February 1979"
+    },
+    {
+      "id": "legacy-static-citation-0327",
+      "href": "http://www.dms-100.net/files/telephony/nortel/DMS10/docs/generic-602.20-docs/Generic-602.20.zip",
+      "label": "Nortel DMS-10 Generic 602.20 / system description pp. 2-41, 2-49, 2-60, 2-82 and 2-97"
+    },
+    {
+      "id": "legacy-static-citation-0328",
+      "href": "https://publications.gc.ca/collections/collection_2024/isde-ised/co22/Co22-742-1977-eng.pdf",
+      "label": "1977 federal-provincial study / physical PDF pp. 8 to 10, 20 to 28, 109, 116 to 121"
+    },
+    {
+      "id": "legacy-static-citation-0329",
+      "href": "https://dai.mun.ca/PDFs/cns_enl/ENLV5T.pdf#page=15",
+      "label": "Encyclopedia history / physical PDF pp. 15 to 18"
+    },
+    {
+      "id": "legacy-static-citation-0330",
+      "href": "https://digital.library.mcgill.ca/images/hrcorpreports/pdfs/6/639154.pdf#page=7",
+      "label": "NewTel 1986 / digital microwave and remote switching"
+    },
+    {
+      "id": "legacy-static-citation-0331",
+      "href": "https://crtc.gc.ca/eng/archive/1990/dt90-14.htm",
+      "label": "CRTC 90-14 / Terra Nova acquisition"
+    },
+    {
+      "id": "legacy-static-citation-0332",
+      "href": "https://github.com/andrew867/NLGridAtlas/blob/main/research/TELEPHONE_SYSTEM_HISTORY.md",
+      "label": "Research record / chronology and source hashes"
+    },
+    {
+      "id": "legacy-static-citation-0333",
+      "href": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf",
+      "label": "2004 Capital Budget / physical PDF pp. 194 and 258"
+    },
+    {
+      "id": "legacy-static-citation-0334",
+      "href": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf",
+      "label": "Physical PDF p. 194"
+    },
+    {
+      "id": "legacy-static-citation-0335",
+      "href": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf",
+      "label": "Physical PDF p. 251"
+    },
+    {
+      "id": "legacy-static-citation-0336",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/NP2008Capital/files/applic/NP2008ApplicationComplete.pdf#page=228",
+      "label": "2008 Capital Budget Application / physical PDF pp. 228 to 234"
+    },
+    {
+      "id": "legacy-static-citation-0337",
+      "href": "http://www.pub.nl.ca/applications/ARCHIVE/2013/NP2013Capital/files/applic/NP2013ApplicationComplete.pdf#page=394",
+      "label": "2013 Capital Budget Application / physical PDF pp. 394 to 402"
+    },
+    {
+      "id": "legacy-static-citation-0338",
+      "href": "http://www.pub.nl.ca/applications/2017/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf#page=141",
+      "label": "2017 Capital Budget Application / physical PDF p. 141"
+    },
+    {
+      "id": "legacy-static-citation-0339",
+      "href": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf",
+      "label": "2004 Capital Budget / physical PDF pp. 200 to 203"
+    },
+    {
+      "id": "legacy-static-citation-0340",
+      "href": "http://www.pub.nf.ca/ARCHIVE/hydro2005cap/files/applic/SecGTab4VHFsummaryReportPage11-Rev1.pdf",
+      "label": "Revised site count / PDF p. 1, report p. 11"
+    },
+    {
+      "id": "legacy-static-citation-0341",
+      "href": "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF",
+      "label": "2027 Capital Budget Volume I / physical PDF p. 248"
+    },
+    {
+      "id": "legacy-static-citation-0342",
+      "href": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf",
+      "label": "Physical PDF pp. 200 to 203"
+    },
+    {
+      "id": "legacy-static-citation-0343",
+      "href": "http://www.pub.nf.ca/ARCHIVE/hydro2005cap/files/applic/SecGTab4VHFsummaryReportPage11-Rev1.pdf",
+      "label": "Revised summary / PDF p. 1, report p. 11"
+    },
+    {
+      "id": "legacy-static-citation-0344",
+      "href": "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF",
+      "label": "2027 Capital Budget Volume I / physical PDF p. 248"
+    },
+    {
+      "id": "legacy-static-citation-0345",
+      "href": "http://www.pub.nf.ca/applications/NLH2027Capital/apps/From%20NLH%20-%202027%20Capital%20Budget%20Application%20-%20Volume%20I%20-%202026-07-14.PDF",
+      "label": "Physical PDF p. 248"
+    },
+    {
+      "id": "legacy-static-citation-0346",
+      "href": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf",
+      "label": "2004 Capital Budget / physical PDF p. 200"
+    },
+    {
+      "id": "legacy-static-citation-0347",
+      "href": "http://www.pub.nf.ca/ARCHIVE/hydro2004cap/files/applic/hydro2004CapBudComplete.pdf",
+      "label": "Existing repeater-site register / physical PDF p. 265"
+    }
+  ],
+  "destinationPages": {
+    "top": "index.html",
+    "handbook": "network.html",
+    "network": "stations.html",
+    "substations": "stations.html",
+    "transmission": "transmission.html",
+    "loads": "loads.html",
+    "timeline": "history.html",
+    "telephone": "telephone.html",
+    "telecom": "telecom.html",
+    "evidence": "sources.html"
+  }
+}

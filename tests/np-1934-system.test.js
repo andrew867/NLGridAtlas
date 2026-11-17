@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -6,7 +7,7 @@ import { staticClaims, timeline } from "../src/data.js";
 test("1934 search does not invent a public system event", () => {
   assert.equal(timeline.some((entry) => entry.date === "1934"), false);
   assert.equal(staticClaims.some((claim) => claim.id === "np-1934-system-record"), false);
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.doesNotMatch(html, /data-claim-id="np-1934-system-record"/);
 });
 

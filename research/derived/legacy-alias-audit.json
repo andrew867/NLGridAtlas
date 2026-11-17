@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-17",
+  "baselineTargetCount": 29,
+  "mappedIdCount": 28,
+  "runtimeResolvedCount": 1,
+  "runtimeResolved": [
+    "main"
+  ],
+  "unresolvedIdCount": 0,
+  "unresolved": [],
+  "ambiguousIdCount": 0,
+  "ambiguous": []
+}

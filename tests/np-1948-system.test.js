@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -40,7 +41,7 @@ test("1948 system claim and public card retain exact sources", () => {
   assert.equal(sources.find((source) => source.id === "np-1948-property-record")?.pages, "physical PDF p. 152");
   assert.equal(sources.find((source) => source.id === "nlh-1948-muskrat-hydrometry")?.pages, "physical PDF p. 32");
   assert.equal(sources.find((source) => source.id === "fortis-1948-electricity-company")?.pages, "physical PDF p. 220");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1948-system-record"/);
   assert.match(html, /Topsail Road.*Gabriel Whiffen.*June 1948/s);
   assert.doesNotMatch(html, /Heart's Content.*1948/);

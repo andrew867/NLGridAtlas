@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -38,7 +39,7 @@ test("1949 system claim and public card retain exact sources", () => {
   assert.equal(sources.find((source) => source.id === "np-1949-mobile-watershed-order")?.pages, "physical PDF p. 45");
   assert.equal(sources.find((source) => source.id === "np-1949-property-record")?.pages, "physical PDF pp. 137 to 138");
   assert.equal(sources.find((source) => source.id === "pub-1949-establishment")?.pages, "physical PDF p. 17");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1949-system-record"/);
   assert.match(html, /Mobile land.*six deeds dated September 23, September 28, twice on September 30, and twice on December 13/s);
 });

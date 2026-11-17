@@ -15,6 +15,13 @@ Updated: 2026-11-17
 
 ## Verified in the current work session
 
+- Completed the nine-page usability refactor locally. Home, Networks, Stations, Transmission, Loads, History, Telephone, Utility radio and Sources now build as independent static entries under `/NLGridAtlas/`.
+- Added addressable station views, source filters, register searches, map selections and grouped diagram components. Copied URLs and browser Back and Forward restore the selected state.
+- Moved the complete source ledger to Sources. The generated ledger contains 1,450 source records and 347 occurrence-specific citation links. Reading pages use anchored desktop previews and managed narrow-screen dialogs.
+- Replaced the station button wall with ordinary collection-qualified links and readable names. Hydro terminal records and Newfoundland Power records remain separate.
+- Retained all 267 baseline content targets. The legacy audit resolves all 29 baseline fragment targets with no unresolved or ambiguous entries.
+- Verified 1,396 unit and factual tests, 66 pinned PDF digests, 933 internal links, a nine-entry production build and 53 browser cases. Detailed results are in `docs/USABILITY_REFACTOR_VERIFICATION_2026-11-17.md`.
+
 - Replaced the initial project README with a current engineering summary, removed acquisition instructions from the public project overview, and added a rights and source-attribution notice covering the principal public, archival, geographic and technical-document collections.
 - Reconstructed the public-network digital conversion from 1979 through the 1992 modernization program. The atlas now separates DMS-10, DMS-100, DMS-200, LCM, RLM, RLCM, RSC and DMS-1U roles, and links the Gander and St. John's host-and-remote examples to page-level sources. The DMS-10 Generic 602.20 manual supplies the LCM drawer and line-card hierarchy, RLCM host-interface arrangement, RSC-S trunking and the exact distinction between local-only RLCM emergency service and RSC-S trunk service.
 - Added the June 1986 670 km cross-island digital route, its 15 south-coast microwave sites and its St. John's and Corner Brook fibre terminal links.

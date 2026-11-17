@@ -1,9 +1,10 @@
+import { readAtlasHtml } from "./page-fixture.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { sources, staticClaims } from "../src/data.js";
 
-const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+const html = await readAtlasHtml();
 const sourceIds = new Set(sources.map((source) => source.id));
 const states = new Set(["verified", "reported", "proposed", "inferred", "unresolved"]);
 

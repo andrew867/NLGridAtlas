@@ -1,3 +1,4 @@
+import { readAtlasHtml } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
@@ -66,7 +67,7 @@ test("2013 feeder projects retain filed scope without invented completion", () =
 });
 
 test("Newfoundland Power radio record retains the separate network and 2014 replacement", async () => {
-  const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+  const html = await readAtlasHtml();
   assert.match(html, /207 MOBILE/);
   assert.match(html, /85 PORTABLE/);
   assert.match(html, /23 BASE/);

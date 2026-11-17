@@ -1,0 +1,2439 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-17",
+  "sourceCount": 1450,
+  "registeredSourceCount": 1447,
+  "staticReferenceSourceCount": 3,
+  "occurrenceCount": 347,
+  "occurrences": [
+    {
+      "id": "citation-a09079ec2a7b",
+      "sourceId": "asset-2023",
+      "page": "index.html",
+      "contextId": "island-system-lengths",
+      "locator": "2023 report / PDF pp. 5, 7"
+    },
+    {
+      "id": "citation-a31f2105f30f",
+      "sourceId": "nlh-cbc-ngr-cancel-2010",
+      "page": "network.html",
+      "contextId": "island-generation-transmission-overview",
+      "locator": "2013 General Rate Application, Volume II / physical PDF p. 79"
+    },
+    {
+      "id": "citation-8d8d82e4295c",
+      "sourceId": "np-2006-handbook",
+      "page": "network.html",
+      "contextId": "handbook-detail-data",
+      "locator": "Electrical System Handbook / PDF pp. 6 to 16"
+    },
+    {
+      "id": "citation-1d29e2c68a02",
+      "sourceId": "np-1984-greenhill-derating",
+      "page": "stations.html",
+      "contextId": "station-profile",
+      "locator": "66 kV loop / physical PDF p. 188"
+    },
+    {
+      "id": "citation-df0e0d63fb77",
+      "sourceId": "nlh-2026-wav-sop",
+      "page": "transmission.html",
+      "contextId": "corridor-svg-desc",
+      "locator": "Transmission Feasibility Study / PDF pp. 9, 30 to 33, 41, 57, 60, 62, 145 to 146"
+    },
+    {
+      "id": "citation-0a019f52e7bf",
+      "sourceId": "nlh-2024-rra",
+      "page": "transmission.html",
+      "contextId": "tl201-dynamic-line-rating",
+      "locator": "2024 Reliability and Resource Adequacy Study / physical PDF p. 339"
+    },
+    {
+      "id": "citation-f6703d7dcdfb",
+      "sourceId": "nlh-2024-rra",
+      "page": "transmission.html",
+      "contextId": "avalon-option-four",
+      "locator": "2024 Reliability and Resource Adequacy Study / physical PDF pp. 305 and 309"
+    },
+    {
+      "id": "citation-d09a0bb08edf",
+      "sourceId": "nlh-2025-avalon-ct",
+      "page": "transmission.html",
+      "contextId": "avalon-ct-svg-desc",
+      "locator": "Application / physical PDF pp. 41, 65 and 573"
+    },
+    {
+      "id": "citation-cfb84135eee2",
+      "sourceId": "np-2014-improvements",
+      "page": "loads.html",
+      "contextId": "broad-cove-2014-peak",
+      "locator": "Electrical System Improvements / PDF p. 14"
+    },
+    {
+      "id": "citation-3fd0a6d84b2c",
+      "sourceId": "nlh-bde-wav-2012",
+      "page": "loads.html",
+      "contextId": "bde-east-west-peak-loads",
+      "locator": "2012 corridor application / physical PDF p. 4"
+    },
+    {
+      "id": "citation-8ffffae23486",
+      "sourceId": "nlh-bde-frazil-2026",
+      "page": "loads.html",
+      "contextId": "bde-frazil-2026",
+      "locator": "2026 frazil-ice report / physical PDF pp. 13 to 15 and 32"
+    },
+    {
+      "id": "citation-a493f48e20bc",
+      "sourceId": "nlh-1989-tl257-history",
+      "page": "loads.html",
+      "contextId": "gnp-load-forecast",
+      "locator": "IC-270 / physical PDF p. 7"
+    },
+    {
+      "id": "citation-74d99ab9dca2",
+      "sourceId": "np-2003-ca-241-load-factor",
+      "page": "loads.html",
+      "contextId": "np-1998-2005-system-load-factors",
+      "locator": "CA-241 / physical PDF p. 1"
+    },
+    {
+      "id": "citation-3bd5ed999e6a",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "loads.html",
+      "contextId": "np-1937-system-record",
+      "locator": "Lawn Forebay Dam / physical PDF p. 185"
+    },
+    {
+      "id": "citation-227b8ab0bdc8",
+      "sourceId": "np-1937-grand-falls-g4",
+      "page": "loads.html",
+      "contextId": "np-1937-system-record",
+      "locator": "Grand Falls G4 / physical PDF pp. 131 to 135"
+    },
+    {
+      "id": "citation-52bf8caa4627",
+      "sourceId": "np-1987-west-brook-penstock",
+      "page": "loads.html",
+      "contextId": "np-1939-system-record",
+      "locator": "Fall Pond development / physical PDF pp. 275 to 276"
+    },
+    {
+      "id": "citation-23d493c1a9bd",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1939-system-record",
+      "locator": "Fall Pond depreciation record / physical PDF p. 140"
+    },
+    {
+      "id": "citation-3194a0eb59a6",
+      "sourceId": "np-1914-victoria-unit",
+      "page": "loads.html",
+      "contextId": "np-1939-system-record",
+      "locator": "Generating-unit register / physical PDF p. 2"
+    },
+    {
+      "id": "citation-83c3afc8f10c",
+      "sourceId": "np-1987-west-brook-penstock",
+      "page": "loads.html",
+      "contextId": "np-1940-system-record",
+      "locator": "Tors Cove development / physical PDF p. 240"
+    },
+    {
+      "id": "citation-014141a6cfaf",
+      "sourceId": "np-1914-victoria-unit",
+      "page": "loads.html",
+      "contextId": "np-1940-system-record",
+      "locator": "Generating-unit register / physical PDF p. 2"
+    },
+    {
+      "id": "citation-45b0497527a2",
+      "sourceId": "np-1940-tors-cove-governors",
+      "page": "loads.html",
+      "contextId": "np-1940-system-record",
+      "locator": "Tors Cove governors / physical PDF p. 2"
+    },
+    {
+      "id": "citation-29d9166f4330",
+      "sourceId": "np-1940-property-record",
+      "page": "loads.html",
+      "contextId": "np-1940-system-record",
+      "locator": "1940 property records / physical PDF pp. 135 to 136"
+    },
+    {
+      "id": "citation-17e73042ba12",
+      "sourceId": "np-2015-400l",
+      "page": "loads.html",
+      "contextId": "np-1941-system-record",
+      "locator": "Tors Cove original equipment / physical PDF pp. 353 to 354, 356 and 359"
+    },
+    {
+      "id": "citation-d963b54b98ad",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "loads.html",
+      "contextId": "np-1941-system-record",
+      "locator": "Tors Cove G3 / physical PDF pp. 206 to 207 and 210"
+    },
+    {
+      "id": "citation-c742645afd87",
+      "sourceId": "np-1926-seal-cove-g2",
+      "page": "loads.html",
+      "contextId": "np-1941-system-record",
+      "locator": "Rocky Pond generator / physical PDF p. 167"
+    },
+    {
+      "id": "citation-c4d13683e067",
+      "sourceId": "np-1940-property-record",
+      "page": "loads.html",
+      "contextId": "np-1941-system-record",
+      "locator": "1941 property records / physical PDF p. 136"
+    },
+    {
+      "id": "citation-4c32c75f85ab",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1942-system-record",
+      "locator": "Tors Cove and West Brook / physical PDF pp. 137 and 140"
+    },
+    {
+      "id": "citation-5be0139c9e37",
+      "sourceId": "np-1908-petty-harbour-development",
+      "page": "loads.html",
+      "contextId": "np-1942-system-record",
+      "locator": "23L history / physical PDF p. 330"
+    },
+    {
+      "id": "citation-2729cac8f2b8",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "loads.html",
+      "contextId": "np-1942-system-record",
+      "locator": "Fall Pond dam / physical PDF p. 188"
+    },
+    {
+      "id": "citation-531003a97a0d",
+      "sourceId": "np-1940-property-record",
+      "page": "loads.html",
+      "contextId": "np-1942-system-record",
+      "locator": "1942 property records / physical PDF pp. 136 to 137 and 152"
+    },
+    {
+      "id": "citation-f178d1828e47",
+      "sourceId": "np-1987-west-brook-penstock",
+      "page": "loads.html",
+      "contextId": "np-1943-system-record",
+      "locator": "Rocky Pond development / physical PDF pp. 240 to 241"
+    },
+    {
+      "id": "citation-247923964dc1",
+      "sourceId": "np-1926-seal-cove-g2",
+      "page": "loads.html",
+      "contextId": "np-1943-system-record",
+      "locator": "Rocky Pond 1942 record / physical PDF pp. 161 and 167"
+    },
+    {
+      "id": "citation-1b52050411bb",
+      "sourceId": "np-1960-hearts-content",
+      "page": "loads.html",
+      "contextId": "np-1943-system-record",
+      "locator": "La Manche Canal / physical PDF p. 215"
+    },
+    {
+      "id": "citation-3bd15c10c2bf",
+      "sourceId": "np-1924-petty-harbour-water-rights",
+      "page": "loads.html",
+      "contextId": "np-1943-system-record",
+      "locator": "Cape Pond Road / physical PDF p. 169"
+    },
+    {
+      "id": "citation-e2670d5a07b5",
+      "sourceId": "np-1940-property-record",
+      "page": "loads.html",
+      "contextId": "np-1943-system-record",
+      "locator": "1943 property records / physical PDF pp. 137 and 152"
+    },
+    {
+      "id": "citation-210d9d2a185b",
+      "sourceId": "nlh-1944-salmon-river-record",
+      "page": "loads.html",
+      "contextId": "np-1944-system-record",
+      "locator": "Salmon River inflow record / physical PDF pp. 33 and 43"
+    },
+    {
+      "id": "citation-399027045cda",
+      "sourceId": "nlh-1944-salmon-river-refresh",
+      "page": "loads.html",
+      "contextId": "np-1944-system-record",
+      "locator": "Hydrometric station register / physical PDF p. 340"
+    },
+    {
+      "id": "citation-7733fb64bcea",
+      "sourceId": "np-1940-property-record",
+      "page": "loads.html",
+      "contextId": "np-1944-system-record",
+      "locator": "1944 property records / physical PDF pp. 152 and 155"
+    },
+    {
+      "id": "citation-b03ed214a73d",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1945-system-record",
+      "locator": "Lookout Brook commissioning / physical PDF p. 142"
+    },
+    {
+      "id": "citation-38e625d2f3c7",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "loads.html",
+      "contextId": "np-1945-system-record",
+      "locator": "Lookout Brook development / physical PDF p. 198"
+    },
+    {
+      "id": "citation-789becac2065",
+      "sourceId": "np-1945-lookout-brook-road",
+      "page": "loads.html",
+      "contextId": "np-1945-system-record",
+      "locator": "Flat Bay Brook Road / physical PDF p. 138"
+    },
+    {
+      "id": "citation-6d8ce1d30061",
+      "sourceId": "np-1946-lookout-brook",
+      "page": "loads.html",
+      "contextId": "np-1945-system-record",
+      "locator": "Lookout Brook 1946 record / physical PDF pp. 112, 438 and 440"
+    },
+    {
+      "id": "citation-9498fa612b14",
+      "sourceId": "np-1987-port-union",
+      "page": "loads.html",
+      "contextId": "np-1945-system-record",
+      "locator": "Port Union diesel / physical PDF pp. 162 and 176"
+    },
+    {
+      "id": "citation-896587d08de5",
+      "sourceId": "np-1940-property-record",
+      "page": "loads.html",
+      "contextId": "np-1945-system-record",
+      "locator": "1945 property records / physical PDF pp. 137, 152, 153 and 155"
+    },
+    {
+      "id": "citation-963a4635e1af",
+      "sourceId": "np-1946-lookout-brook",
+      "page": "loads.html",
+      "contextId": "np-1946-system-record",
+      "locator": "Lookout Brook / physical PDF pp. 112, 438 and 440"
+    },
+    {
+      "id": "citation-2a4b1f1b7b05",
+      "sourceId": "np-1946-port-aux-basques-station",
+      "page": "loads.html",
+      "contextId": "np-1946-system-record",
+      "locator": "Port aux Basques / physical PDF p. 292"
+    },
+    {
+      "id": "citation-9d2f53dcf3b9",
+      "sourceId": "np-1987-west-brook-penstock",
+      "page": "loads.html",
+      "contextId": "np-1946-system-record",
+      "locator": "Heart's Content development / physical PDF p. 160"
+    },
+    {
+      "id": "citation-a4ba2dfb7cfc",
+      "sourceId": "np-1918-hearts-content-service",
+      "page": "loads.html",
+      "contextId": "np-1946-system-record",
+      "locator": "Heart's Content civil works / physical PDF pp. 180 to 181"
+    },
+    {
+      "id": "citation-c439425f495c",
+      "sourceId": "np-1946-fenelons-pond",
+      "page": "loads.html",
+      "contextId": "np-1946-system-record",
+      "locator": "Fenelons Pond / physical PDF p. 7"
+    },
+    {
+      "id": "citation-1947b4528ff2",
+      "sourceId": "np-1949-mobile-water-rights",
+      "page": "loads.html",
+      "contextId": "np-1946-system-record",
+      "locator": "Mobile River lease / physical PDF p. 1"
+    },
+    {
+      "id": "citation-1c836d2514a7",
+      "sourceId": "np-1940-property-record",
+      "page": "loads.html",
+      "contextId": "np-1946-system-record",
+      "locator": "Heart's Content property / physical PDF p. 153"
+    },
+    {
+      "id": "citation-0797507eba28",
+      "sourceId": "nlh-1947-muskrat-survey",
+      "page": "loads.html",
+      "contextId": "np-1947-system-record",
+      "locator": "Muskrat Falls survey / physical PDF p. 69"
+    },
+    {
+      "id": "citation-a23b890c5baf",
+      "sourceId": "nlh-1947-hamilton-falls-benchmark",
+      "page": "loads.html",
+      "contextId": "np-1947-system-record",
+      "locator": "Hamilton Falls benchmark / physical PDF p. 135"
+    },
+    {
+      "id": "citation-276fb23c56a9",
+      "sourceId": "np-1947-port-aux-basques-electrical-plant",
+      "page": "loads.html",
+      "contextId": "np-1947-system-record",
+      "locator": "Port aux Basques Diesel / physical PDF p. 1049"
+    },
+    {
+      "id": "citation-3658fc8f096d",
+      "sourceId": "np-1957-new-chelsea-intakes",
+      "page": "loads.html",
+      "contextId": "np-1948-system-record",
+      "locator": "King's Bridge / physical PDF p. 263"
+    },
+    {
+      "id": "citation-abf48f97e8d3",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "loads.html",
+      "contextId": "np-1948-system-record",
+      "locator": "Lawn Forebay Dam / physical PDF p. 185"
+    },
+    {
+      "id": "citation-bd30c6b71b1d",
+      "sourceId": "np-1940-property-record",
+      "page": "loads.html",
+      "contextId": "np-1948-system-record",
+      "locator": "Topsail Road property / physical PDF p. 152"
+    },
+    {
+      "id": "citation-6a4f2b5f319a",
+      "sourceId": "nlh-1948-muskrat-hydrometry",
+      "page": "loads.html",
+      "contextId": "np-1948-system-record",
+      "locator": "Upper Muskrat Falls hydrometry / physical PDF p. 32"
+    },
+    {
+      "id": "citation-912db1dae915",
+      "sourceId": "fortis-1948-electricity-company",
+      "page": "loads.html",
+      "contextId": "np-1948-system-record",
+      "locator": "Corporate history / physical PDF p. 220"
+    },
+    {
+      "id": "citation-56c1f785752e",
+      "sourceId": "np-1949-mobile-water-rights",
+      "page": "loads.html",
+      "contextId": "np-1949-system-record",
+      "locator": "Mobile River rights / physical PDF p. 1"
+    },
+    {
+      "id": "citation-ebe829401817",
+      "sourceId": "np-1940-property-record",
+      "page": "loads.html",
+      "contextId": "np-1949-system-record",
+      "locator": "Mobile land / physical PDF pp. 137 to 138"
+    },
+    {
+      "id": "citation-05cb68000c23",
+      "sourceId": "pub-1949-establishment",
+      "page": "loads.html",
+      "contextId": "np-1949-system-record",
+      "locator": "Board history / physical PDF p. 17"
+    },
+    {
+      "id": "citation-389a617e2ddc",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1950-system-record",
+      "locator": "Mobile / physical PDF p. 136"
+    },
+    {
+      "id": "citation-553ead1dc932",
+      "sourceId": "np-1960-hearts-content",
+      "page": "loads.html",
+      "contextId": "np-1950-system-record",
+      "locator": "12L / physical PDF p. 309"
+    },
+    {
+      "id": "citation-8f7918ebb1ce",
+      "sourceId": "np-2015-400l",
+      "page": "loads.html",
+      "contextId": "np-1950-system-record",
+      "locator": "14L / physical PDF pp. 552 to 553"
+    },
+    {
+      "id": "citation-a6b393594ccf",
+      "sourceId": "np-1946-port-aux-basques-station",
+      "page": "loads.html",
+      "contextId": "np-1950-system-record",
+      "locator": "16L / physical PDF p. 373"
+    },
+    {
+      "id": "citation-1675e504b043",
+      "sourceId": "np-1907-petty-harbour-unit-2",
+      "page": "loads.html",
+      "contextId": "np-1950-system-record",
+      "locator": "Tors Cove TCV-T1 / physical PDF pp. 329 and 339"
+    },
+    {
+      "id": "citation-03a774f45590",
+      "sourceId": "np-2004-sla-construction",
+      "page": "loads.html",
+      "contextId": "np-1950-system-record",
+      "locator": "Bay Roberts / physical PDF p. 1"
+    },
+    {
+      "id": "citation-2e74098bdd78",
+      "sourceId": "np-1951-mobile-generating-plant",
+      "page": "loads.html",
+      "contextId": "np-1951-system-record",
+      "locator": "Mobile plant / physical PDF pp. 480, 483 to 484 and 489 to 490"
+    },
+    {
+      "id": "citation-8dd75e94d47e",
+      "sourceId": "np-1946-lookout-brook",
+      "page": "loads.html",
+      "contextId": "np-1951-system-record",
+      "locator": "Mobile civil works / physical PDF p. 520"
+    },
+    {
+      "id": "citation-0d075aa1400d",
+      "sourceId": "np-1987-rattling-brook",
+      "page": "loads.html",
+      "contextId": "np-1951-system-record",
+      "locator": "20L / physical PDF p. 179"
+    },
+    {
+      "id": "citation-949b658bfbe6",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "loads.html",
+      "contextId": "np-1951-system-record",
+      "locator": "Tors Cove G3 / physical PDF p. 206"
+    },
+    {
+      "id": "citation-7ad2cb4819a1",
+      "sourceId": "np-1946-port-aux-basques-station",
+      "page": "loads.html",
+      "contextId": "np-1952-system-record",
+      "locator": "21L / physical PDF p. 374"
+    },
+    {
+      "id": "citation-e83d6e72304c",
+      "sourceId": "np-1960-hearts-content",
+      "page": "loads.html",
+      "contextId": "np-1952-system-record",
+      "locator": "18L / physical PDF pp. 308 and 310"
+    },
+    {
+      "id": "citation-cc6bd0509dfe",
+      "sourceId": "np-1914-victoria-unit",
+      "page": "loads.html",
+      "contextId": "np-1952-system-record",
+      "locator": "Generating-unit dates / physical PDF p. 2"
+    },
+    {
+      "id": "citation-fce445fccfc0",
+      "sourceId": "np-1952-cape-broyle-valve",
+      "page": "loads.html",
+      "contextId": "np-1952-system-record",
+      "locator": "Cape Broyle valve / physical PDF p. 163"
+    },
+    {
+      "id": "citation-0e53f1a574d8",
+      "sourceId": "np-2004-sla-construction",
+      "page": "loads.html",
+      "contextId": "np-1952-system-record",
+      "locator": "Stamp's Lane / physical PDF p. 1"
+    },
+    {
+      "id": "citation-114c799f9d27",
+      "sourceId": "np-2013-ca-np-035-sjd",
+      "page": "loads.html",
+      "contextId": "np-1953-system-record",
+      "locator": "St. John's Diesel and Steam / physical PDF pp. 178 and 180 to 181"
+    },
+    {
+      "id": "citation-9825bb008593",
+      "sourceId": "np-1987-west-brook-penstock",
+      "page": "loads.html",
+      "contextId": "np-1953-system-record",
+      "locator": "Cape Broyle and Horse Chops / physical PDF pp. 258 to 259"
+    },
+    {
+      "id": "citation-6fe1a3c41f01",
+      "sourceId": "np-1953-blackwoods-pond",
+      "page": "loads.html",
+      "contextId": "np-1953-system-record",
+      "locator": "Blackwoods Pond / physical PDF p. 1"
+    },
+    {
+      "id": "citation-956eec6d7fc3",
+      "sourceId": "np-2015-400l",
+      "page": "loads.html",
+      "contextId": "np-1953-system-record",
+      "locator": "Horse Chops spillway / physical PDF pp. 176 to 177"
+    },
+    {
+      "id": "citation-a77e24db4ab6",
+      "sourceId": "np-1946-port-aux-basques-station",
+      "page": "loads.html",
+      "contextId": "np-1954-system-record",
+      "locator": "25L / physical PDF p. 375"
+    },
+    {
+      "id": "citation-0cc7b6e10ef7",
+      "sourceId": "np-1908-petty-harbour-development",
+      "page": "loads.html",
+      "contextId": "np-1954-system-record",
+      "locator": "24L / physical PDF p. 331"
+    },
+    {
+      "id": "citation-6941dc099311",
+      "sourceId": "np-2008-broad-cove",
+      "page": "loads.html",
+      "contextId": "np-1954-system-record",
+      "locator": "Mobile / physical PDF p. 174"
+    },
+    {
+      "id": "citation-5d70679e6a1e",
+      "sourceId": "np-1987-rattling-brook",
+      "page": "loads.html",
+      "contextId": "np-1954-system-record",
+      "locator": "Goulds / physical PDF p. 166"
+    },
+    {
+      "id": "citation-257bea19ac80",
+      "sourceId": "np-1907-petty-harbour-unit-2",
+      "page": "loads.html",
+      "contextId": "np-1954-system-record",
+      "locator": "Humber / physical PDF pp. 304 and 309"
+    },
+    {
+      "id": "citation-b3e420605d5e",
+      "sourceId": "np-1924-petty-harbour-water-rights",
+      "page": "loads.html",
+      "contextId": "np-1954-system-record",
+      "locator": "Petty Harbour penstock / physical PDF pp. 207 to 208"
+    },
+    {
+      "id": "citation-214baa4e27e2",
+      "sourceId": "np-1987-west-brook-penstock",
+      "page": "loads.html",
+      "contextId": "np-1954-system-record",
+      "locator": "1953 plant record / physical PDF pp. 258 to 259"
+    },
+    {
+      "id": "citation-2b91239b25e5",
+      "sourceId": "np-1965-108l",
+      "page": "loads.html",
+      "contextId": "np-1954-system-record",
+      "locator": "1954 plant and Mount Carmel record / physical PDF pp. 544 to 545"
+    },
+    {
+      "id": "citation-57a519fc66c2",
+      "sourceId": "nlh-1954-power-commission",
+      "page": "loads.html",
+      "contextId": "np-1954-system-record",
+      "locator": "Power Commission / physical PDF p. 12"
+    },
+    {
+      "id": "citation-9716f9886e12",
+      "sourceId": "np-1965-108l",
+      "page": "loads.html",
+      "contextId": "np-1955-system-record",
+      "locator": "Lockston to Port Union / physical PDF p. 413"
+    },
+    {
+      "id": "citation-3ef56f41cd28",
+      "sourceId": "np-1955-bell-island-28l",
+      "page": "loads.html",
+      "contextId": "np-1955-system-record",
+      "locator": "Bell Island 28L / physical PDF pp. 15, 79 to 80 and 314"
+    },
+    {
+      "id": "citation-4cdef5fad13b",
+      "sourceId": "nlh-1955-venams-bight-penstock",
+      "page": "loads.html",
+      "contextId": "np-1955-system-record",
+      "locator": "Venam's Bight penstock / physical PDF p. 34"
+    },
+    {
+      "id": "citation-f842e844e54a",
+      "sourceId": "nlh-1955-ice-storm",
+      "page": "loads.html",
+      "contextId": "np-1955-system-record",
+      "locator": "March ice event / physical PDF p. 54"
+    },
+    {
+      "id": "citation-08421f81b001",
+      "sourceId": "np-1987-rattling-brook",
+      "page": "loads.html",
+      "contextId": "np-1956-system-record",
+      "locator": "43L / physical PDF p. 178"
+    },
+    {
+      "id": "citation-9b99806b958b",
+      "sourceId": "np-2008-broad-cove",
+      "page": "loads.html",
+      "contextId": "np-1956-system-record",
+      "locator": "111L / physical PDF p. 191"
+    },
+    {
+      "id": "citation-b415cb31d4c9",
+      "sourceId": "np-1964-lew02",
+      "page": "loads.html",
+      "contextId": "np-1956-system-record",
+      "locator": "407L / physical PDF pp. 312 to 313"
+    },
+    {
+      "id": "citation-7190026d8ab4",
+      "sourceId": "np-1965-108l",
+      "page": "loads.html",
+      "contextId": "np-1956-system-record",
+      "locator": "Lockston station / physical PDF pp. 413 and 415 to 416"
+    },
+    {
+      "id": "citation-a0b43336cf97",
+      "sourceId": "np-2012-transmission-rebuild",
+      "page": "loads.html",
+      "contextId": "np-1956-system-record",
+      "locator": "Lockston plant / physical PDF pp. 278 to 280"
+    },
+    {
+      "id": "citation-7ccc1594832c",
+      "sourceId": "np-1946-port-aux-basques-station",
+      "page": "loads.html",
+      "contextId": "np-1956-system-record",
+      "locator": "Heart's Content / physical PDF p. 287"
+    },
+    {
+      "id": "citation-36cbb3dd3d75",
+      "sourceId": "np-1956-new-chelsea-penstock",
+      "page": "loads.html",
+      "contextId": "np-1956-system-record",
+      "locator": "New Chelsea penstock / physical PDF p. 1"
+    },
+    {
+      "id": "citation-f89bffadcb9a",
+      "sourceId": "np-1956-thomas-pond-spillway",
+      "page": "loads.html",
+      "contextId": "np-1956-system-record",
+      "locator": "Thomas Pond / physical PDF p. 195"
+    },
+    {
+      "id": "citation-347109429645",
+      "sourceId": "np-1956-thomas-pond-spillway",
+      "page": "loads.html",
+      "contextId": "np-1957-system-record",
+      "locator": "101L / physical PDF pp. 174 and 252"
+    },
+    {
+      "id": "citation-f57ae5b15523",
+      "sourceId": "np-2004-gdl01",
+      "page": "loads.html",
+      "contextId": "np-1957-system-record",
+      "locator": "New Chelsea / physical PDF pp. 285 and 295"
+    },
+    {
+      "id": "citation-eca25b7f6423",
+      "sourceId": "np-1957-new-chelsea-intakes",
+      "page": "loads.html",
+      "contextId": "np-1957-system-record",
+      "locator": "Intakes / physical PDF pp. 210 to 211"
+    },
+    {
+      "id": "citation-71c129e39ba9",
+      "sourceId": "nlh-1957-mini-hydro-plants",
+      "page": "loads.html",
+      "contextId": "np-1957-system-record",
+      "locator": "Snook's Arm and Venams Bight / physical PDF pp. 20, 23 and 30"
+    },
+    {
+      "id": "citation-4cdaeaec6c45",
+      "sourceId": "nlh-1925-deer-lake-generation",
+      "page": "loads.html",
+      "contextId": "np-1957-system-record",
+      "locator": "Commissioning-date conflict / physical PDF p. 1"
+    },
+    {
+      "id": "citation-cbeb10af8c63",
+      "sourceId": "np-1957-st-georges-hearing",
+      "page": "loads.html",
+      "contextId": "np-1957-system-record",
+      "locator": "St. George's breakers / physical PDF pp. 9 to 10"
+    },
+    {
+      "id": "citation-106469a45f57",
+      "sourceId": "np-1957-topsail-road-property",
+      "page": "loads.html",
+      "contextId": "np-1957-system-record",
+      "locator": "Topsail Road property / physical PDF pp. 710 to 711"
+    },
+    {
+      "id": "citation-89c5ebcecc55",
+      "sourceId": "nlh-1957-red-indian-prospect",
+      "page": "loads.html",
+      "contextId": "np-1957-system-record",
+      "locator": "Red Indian Falls study register / physical PDF p. 101"
+    },
+    {
+      "id": "citation-e9b749961df0",
+      "sourceId": "np-1956-thomas-pond-spillway",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "102L / physical PDF pp. 174 to 175"
+    },
+    {
+      "id": "citation-24de1fc2ee51",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "41L and 57L / physical PDF pp. 278 to 279"
+    },
+    {
+      "id": "citation-df9cfd76f7dd",
+      "sourceId": "np-1960-hearts-content",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "68L / physical PDF p. 312"
+    },
+    {
+      "id": "citation-03431b5ab787",
+      "sourceId": "np-2015-400l",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "15L / physical PDF p. 554"
+    },
+    {
+      "id": "citation-5622d9438c18",
+      "sourceId": "np-1908-petty-harbour-development",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "110L / physical PDF p. 331"
+    },
+    {
+      "id": "citation-9fcf42eb9d02",
+      "sourceId": "np-2004-gdl01",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "403L / physical PDF p. 392"
+    },
+    {
+      "id": "citation-262932bfb7de",
+      "sourceId": "np-1958-burin-review",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "302L conflict / physical PDF p. 5"
+    },
+    {
+      "id": "citation-49d1ef75dbc3",
+      "sourceId": "np-1987-rattling-brook",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "Rattling Brook civil works / physical PDF pp. 349 and 363"
+    },
+    {
+      "id": "citation-9f27cb7c2f53",
+      "sourceId": "np-1908-petty-harbour-development",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "Lookout Brook / physical PDF pp. 184 and 186"
+    },
+    {
+      "id": "citation-e44069c556f1",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1958-system-record",
+      "locator": "Operations buildings / physical PDF pp. 88 and 116"
+    },
+    {
+      "id": "citation-db2ba3c3afc5",
+      "sourceId": "np-1965-108l",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "Gander / physical PDF pp. 477 to 480"
+    },
+    {
+      "id": "citation-1306b15b231b",
+      "sourceId": "np-1908-petty-harbour-development",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "Grand Falls / physical PDF p. 294"
+    },
+    {
+      "id": "citation-be1d89cb6b65",
+      "sourceId": "np-1945-lookout-brook-road",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "Rattling Brook station / physical PDF pp. 435 to 440"
+    },
+    {
+      "id": "citation-dbe921f6fd8a",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "Rattling Brook plant / physical PDF p. 141"
+    },
+    {
+      "id": "citation-8d929f51a56c",
+      "sourceId": "np-1957-new-chelsea-intakes",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "30L / physical PDF p. 316"
+    },
+    {
+      "id": "citation-55ec8897af44",
+      "sourceId": "np-1960-hearts-content",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "35L / physical PDF p. 311"
+    },
+    {
+      "id": "citation-80ea85fdf2c2",
+      "sourceId": "np-1941-tors-cove-bridges",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "302L / physical PDF p. 244"
+    },
+    {
+      "id": "citation-e4d318253680",
+      "sourceId": "np-1964-lew02",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "BOT-01 / physical PDF p. 393"
+    },
+    {
+      "id": "citation-521c082b6b04",
+      "sourceId": "np-1918-hearts-content-service",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "Pitmans Pond / physical PDF pp. 28 and 230"
+    },
+    {
+      "id": "citation-423728a0bacc",
+      "sourceId": "np-1987-west-brook-penstock",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "Hydro civil works / physical PDF pp. 160 and 171"
+    },
+    {
+      "id": "citation-2f93276bc66f",
+      "sourceId": "np-1918-port-union-penstock",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "Woodstave penstocks / physical PDF p. 1"
+    },
+    {
+      "id": "citation-c9cf10231b0d",
+      "sourceId": "nlh-1959-dry-sequence",
+      "page": "loads.html",
+      "contextId": "np-1959-system-record",
+      "locator": "Historic dry sequence / physical PDF p. 1"
+    },
+    {
+      "id": "citation-3b2c19efdee8",
+      "sourceId": "np-1951-mobile-generating-plant",
+      "page": "loads.html",
+      "contextId": "np-1960-system-record",
+      "locator": "Molloy's Lane / physical PDF pp. 403 and 408"
+    },
+    {
+      "id": "citation-fbd3d70f01fa",
+      "sourceId": "np-1945-lookout-brook-road",
+      "page": "loads.html",
+      "contextId": "np-1960-system-record",
+      "locator": "Ridge Road / physical PDF pp. 105 and 511"
+    },
+    {
+      "id": "citation-436feb7bd314",
+      "sourceId": "np-1987-rattling-brook",
+      "page": "loads.html",
+      "contextId": "np-1960-system-record",
+      "locator": "Ridge Road comparison / physical PDF p. 167"
+    },
+    {
+      "id": "citation-393e08e6b495",
+      "sourceId": "np-1924-petty-harbour-water-rights",
+      "page": "loads.html",
+      "contextId": "np-1960-system-record",
+      "locator": "403L Robinsons tap / physical PDF p. 394"
+    },
+    {
+      "id": "citation-a0624ac42254",
+      "sourceId": "nlh-1960-makkovik-l1",
+      "page": "loads.html",
+      "contextId": "np-1960-system-record",
+      "locator": "Makkovik L1 / physical PDF p. 232"
+    },
+    {
+      "id": "citation-3ae6b973e744",
+      "sourceId": "np-1960-hearts-content",
+      "page": "loads.html",
+      "contextId": "np-1960-system-record",
+      "locator": "Heart's Content / physical PDF p. 26"
+    },
+    {
+      "id": "citation-e9af72386c51",
+      "sourceId": "nlh-1960-holyrood-t6",
+      "page": "loads.html",
+      "contextId": "np-1960-system-record",
+      "locator": "Holyrood T6 / physical PDF pp. 699 to 700"
+    },
+    {
+      "id": "citation-73af010d3425",
+      "sourceId": "nlh-1960-bishops-falls-shop",
+      "page": "loads.html",
+      "contextId": "np-1960-system-record",
+      "locator": "Bishop's Falls diesel shop / physical PDF pp. 640 to 641"
+    },
+    {
+      "id": "citation-eb03fe8ca1f4",
+      "sourceId": "np-2004-gdl01",
+      "page": "loads.html",
+      "contextId": "np-1961-system-record",
+      "locator": "38L / physical PDF p. 389"
+    },
+    {
+      "id": "citation-67be09770902",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1961-system-record",
+      "locator": "53L / physical PDF p. 277"
+    },
+    {
+      "id": "citation-a3063b81ee90",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1961-system-record",
+      "locator": "Rattling Brook / physical PDF p. 141"
+    },
+    {
+      "id": "citation-1203e742eb42",
+      "sourceId": "nlh-1957-mini-hydro-plants",
+      "page": "loads.html",
+      "contextId": "np-1961-system-record",
+      "locator": "Venams Bight / physical PDF pp. 30 to 35"
+    },
+    {
+      "id": "citation-f346c739eb2e",
+      "sourceId": "nlh-1961-wabush-breaker",
+      "page": "loads.html",
+      "contextId": "np-1961-system-record",
+      "locator": "Wabush / physical PDF pp. 10 to 11"
+    },
+    {
+      "id": "citation-4a890c7c3fa0",
+      "sourceId": "nlh-1961-happy-valley-diesel-building",
+      "page": "loads.html",
+      "contextId": "np-1961-system-record",
+      "locator": "Happy Valley / physical PDF pp. 462 to 463"
+    },
+    {
+      "id": "citation-a2b9d5123b2e",
+      "sourceId": "np-1960-hearts-content",
+      "page": "loads.html",
+      "contextId": "np-1962-system-record",
+      "locator": "13L / physical PDF p. 310"
+    },
+    {
+      "id": "citation-44275d2e4fee",
+      "sourceId": "nlh-1962-transmission-register",
+      "page": "loads.html",
+      "contextId": "np-1962-system-record",
+      "locator": "TL224 and TL2303 / physical PDF p. 16"
+    },
+    {
+      "id": "citation-047203956a57",
+      "sourceId": "np-2012-transmission-rebuild",
+      "page": "loads.html",
+      "contextId": "np-1962-system-record",
+      "locator": "Lockston G1 / physical PDF pp. 278 and 281"
+    },
+    {
+      "id": "citation-5ffa5b771d80",
+      "sourceId": "np-1987-west-brook-penstock",
+      "page": "loads.html",
+      "contextId": "np-1962-system-record",
+      "locator": "Port Union diesel / physical PDF pp. 233, 309 and 325"
+    },
+    {
+      "id": "citation-474739bab50e",
+      "sourceId": "nlh-1955-ice-storm",
+      "page": "loads.html",
+      "contextId": "np-1962-system-record",
+      "locator": "February ice storms / physical PDF p. 54"
+    },
+    {
+      "id": "citation-b3889b5aeca2",
+      "sourceId": "np-1941-tors-cove-bridges",
+      "page": "loads.html",
+      "contextId": "np-1963-system-record",
+      "locator": "363L / physical PDF pp. 126 and 242"
+    },
+    {
+      "id": "citation-ed77e5c670a1",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "loads.html",
+      "contextId": "np-1963-system-record",
+      "locator": "32L / physical PDF p. 278"
+    },
+    {
+      "id": "citation-796edee550a5",
+      "sourceId": "np-1941-tors-cove-bridges",
+      "page": "loads.html",
+      "contextId": "np-1963-system-record",
+      "locator": "105L / physical PDF p. 247"
+    },
+    {
+      "id": "citation-fbc79620dd5e",
+      "sourceId": "np-1987-rattling-brook",
+      "page": "loads.html",
+      "contextId": "np-1963-system-record",
+      "locator": "Stamp's Lane / physical PDF p. 168"
+    },
+    {
+      "id": "citation-251680496e63",
+      "sourceId": "np-1951-mobile-generating-plant",
+      "page": "loads.html",
+      "contextId": "np-1963-system-record",
+      "locator": "Sandy Brook plant / physical PDF p. 143"
+    },
+    {
+      "id": "citation-a28d37bbc00d",
+      "sourceId": "np-1946-port-aux-basques-station",
+      "page": "loads.html",
+      "contextId": "np-1963-system-record",
+      "locator": "Sandy Brook electrical equipment / physical PDF p. 253"
+    },
+    {
+      "id": "citation-f909283b8c29",
+      "sourceId": "np-1964-sunnyside-gander-corridor",
+      "page": "loads.html",
+      "contextId": "np-1964-system-record",
+      "locator": "Sunnyside to Gander corridor / physical PDF pp. 460 to 461"
+    },
+    {
+      "id": "citation-5ee81208192a",
+      "sourceId": "np-1964-sunnyside-gander-corridor",
+      "page": "loads.html",
+      "contextId": "np-1964-system-record",
+      "locator": "100L / physical PDF p. 96"
+    },
+    {
+      "id": "citation-9b2144b75111",
+      "sourceId": "np-1907-petty-harbour-unit-2",
+      "page": "loads.html",
+      "contextId": "np-1964-system-record",
+      "locator": "124L / physical PDF p. 343"
+    },
+    {
+      "id": "citation-a204f9109a02",
+      "sourceId": "np-1946-lookout-brook",
+      "page": "loads.html",
+      "contextId": "np-1964-system-record",
+      "locator": "146L / physical PDF p. 102"
+    },
+    {
+      "id": "citation-c058ccb8765c",
+      "sourceId": "np-2012-transmission-rebuild",
+      "page": "loads.html",
+      "contextId": "np-1964-system-record",
+      "locator": "LET-01 submarine cable / physical PDF p. 473"
+    },
+    {
+      "id": "citation-6e47dce13eaf",
+      "sourceId": "np-1964-lew02",
+      "page": "loads.html",
+      "contextId": "np-1964-system-record",
+      "locator": "LEW-02 and GLV-02 / physical PDF pp. 406 to 407 and 418"
+    },
+    {
+      "id": "citation-86a179daca5d",
+      "sourceId": "nlh-1964-bde-water",
+      "page": "loads.html",
+      "contextId": "np-1964-system-record",
+      "locator": "Bay d'Espoir construction support / physical PDF pp. 173 and 176"
+    },
+    {
+      "id": "citation-9e61727dabad",
+      "sourceId": "nlh-1964-wiltondale-transformer",
+      "page": "loads.html",
+      "contextId": "np-1964-system-record",
+      "locator": "Wiltondale transformer / physical PDF p. 770"
+    },
+    {
+      "id": "citation-e1ab0fa94e4e",
+      "sourceId": "nlh-1987-tl250-tl255",
+      "page": "loads.html",
+      "contextId": "np-1965-system-record",
+      "locator": "TL203 register / physical PDF p. 4"
+    },
+    {
+      "id": "citation-da8c4dc21833",
+      "sourceId": "nlh-1965-tl203-structures",
+      "page": "loads.html",
+      "contextId": "np-1965-system-record",
+      "locator": "TL203 structures / physical PDF p. 196"
+    },
+    {
+      "id": "citation-6b988aa5f84f",
+      "sourceId": "np-1965-108l",
+      "page": "loads.html",
+      "contextId": "np-1965-system-record",
+      "locator": "108L / physical PDF pp. 100 and 498"
+    },
+    {
+      "id": "citation-302f293b98b8",
+      "sourceId": "nlh-1965-holyrood-stage1",
+      "page": "loads.html",
+      "contextId": "np-1965-system-record",
+      "locator": "Holyrood terminal / physical PDF p. 334"
+    },
+    {
+      "id": "citation-f0f8df11f936",
+      "sourceId": "np-1960-hearts-content",
+      "page": "loads.html",
+      "contextId": "np-1965-system-record",
+      "locator": "Springdale / physical PDF p. 234"
+    },
+    {
+      "id": "citation-edece6778b0d",
+      "sourceId": "nlh-1965-bay-despoir-construction",
+      "page": "loads.html",
+      "contextId": "np-1965-system-record",
+      "locator": "Bay d'Espoir construction / physical PDF p. 3"
+    },
+    {
+      "id": "citation-73bbf63115ae",
+      "sourceId": "static-cc41abe3aef4",
+      "page": "loads.html",
+      "contextId": "np-1965-system-record",
+      "locator": "Bay d'Espoir distribution / physical PDF pp. 290 and 341"
+    },
+    {
+      "id": "citation-747f51699cef",
+      "sourceId": "np-2015-400l",
+      "page": "loads.html",
+      "contextId": "np-1965-system-record",
+      "locator": "Pierre's Brook penstock / physical PDF p. 186"
+    },
+    {
+      "id": "citation-ef511c4a032f",
+      "sourceId": "nlh-1987-tl250-tl255",
+      "page": "loads.html",
+      "contextId": "np-1966-system-record",
+      "locator": "Transmission-line register / physical PDF p. 4"
+    },
+    {
+      "id": "citation-38d1b0b2d065",
+      "sourceId": "nlh-1966-terminal-history",
+      "page": "loads.html",
+      "contextId": "np-1966-system-record",
+      "locator": "Terminal histories / physical PDF pp. 4 to 5"
+    },
+    {
+      "id": "citation-88468f3942e6",
+      "sourceId": "np-1926-seal-cove-g2",
+      "page": "loads.html",
+      "contextId": "np-1966-system-record",
+      "locator": "Clarenville / physical PDF p. 269"
+    },
+    {
+      "id": "citation-d29a6dfdad9f",
+      "sourceId": "np-1946-lookout-brook",
+      "page": "loads.html",
+      "contextId": "np-1966-system-record",
+      "locator": "Gambo and Memorial / physical PDF pp. 349, 378 to 379"
+    },
+    {
+      "id": "citation-66238ea3ef70",
+      "sourceId": "nlh-1966-bde-transformers",
+      "page": "loads.html",
+      "contextId": "np-1966-system-record",
+      "locator": "Bay d'Espoir T1 and T2 / physical PDF p. 543"
+    },
+    {
+      "id": "citation-86277cde5fcb",
+      "sourceId": "nlh-1960-holyrood-t6",
+      "page": "loads.html",
+      "contextId": "np-1966-system-record",
+      "locator": "Holyrood gas-turbine history / physical PDF p. 766"
+    },
+    {
+      "id": "citation-ffdb385f8953",
+      "sourceId": "nlh-1962-happy-valley-l8",
+      "page": "loads.html",
+      "contextId": "np-1966-system-record",
+      "locator": "Farewell Head lines / physical PDF p. 419"
+    },
+    {
+      "id": "citation-f6d3be1c41c9",
+      "sourceId": "np-1924-petty-harbour-water-rights",
+      "page": "loads.html",
+      "contextId": "np-1966-system-record",
+      "locator": "49L / physical PDF p. 393"
+    },
+    {
+      "id": "citation-159f23b75eee",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1967-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-d2380f5145f2",
+      "sourceId": "nlh-1967-bde-stage1",
+      "page": "loads.html",
+      "contextId": "np-1967-system-record",
+      "locator": "Bay d'Espoir Stage I / physical PDF p. 97"
+    },
+    {
+      "id": "citation-d11f405c71d0",
+      "sourceId": "nlh-1987-tl250-tl255",
+      "page": "loads.html",
+      "contextId": "np-1967-system-record",
+      "locator": "Transmission-line register / physical PDF p. 4"
+    },
+    {
+      "id": "citation-4b3be477980f",
+      "sourceId": "nlh-1966-terminal-history",
+      "page": "loads.html",
+      "contextId": "np-1967-system-record",
+      "locator": "Bottom Brook history / physical PDF p. 3"
+    },
+    {
+      "id": "citation-dec8f02ba889",
+      "sourceId": "nlh-1967-oxen-pond",
+      "page": "loads.html",
+      "contextId": "np-1967-system-record",
+      "locator": "Oxen Pond history / physical PDF p. 9"
+    },
+    {
+      "id": "citation-28dae7422008",
+      "sourceId": "nlh-1967-transformer-register",
+      "page": "loads.html",
+      "contextId": "np-1967-system-record",
+      "locator": "Transformer register / physical PDF pp. 1, 4 and 5"
+    },
+    {
+      "id": "citation-9464f2b7dcdc",
+      "sourceId": "nlh-1962-happy-valley-l8",
+      "page": "loads.html",
+      "contextId": "np-1967-system-record",
+      "locator": "Burgeo distribution system / physical PDF p. 419"
+    },
+    {
+      "id": "citation-cd3a83624126",
+      "sourceId": "nlh-1987-plc-carrier",
+      "page": "loads.html",
+      "contextId": "np-1967-system-record",
+      "locator": "Powerline-carrier inventory / physical PDF p. 42"
+    },
+    {
+      "id": "citation-91ccbe11ab8a",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1968-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-6c40e284d117",
+      "sourceId": "nlh-1967-bde-stage1",
+      "page": "loads.html",
+      "contextId": "np-1968-system-record",
+      "locator": "Bay d'Espoir Unit 4 / physical PDF p. 97"
+    },
+    {
+      "id": "citation-d1756e42f90f",
+      "sourceId": "nlh-bde-wav-2012",
+      "page": "loads.html",
+      "contextId": "np-1968-system-record",
+      "locator": "Bay d'Espoir to Western Avalon lines / physical PDF pp. 11 to 12"
+    },
+    {
+      "id": "citation-9657d3fecda9",
+      "sourceId": "nlh-1968-tl214",
+      "page": "loads.html",
+      "contextId": "np-1968-system-record",
+      "locator": "TL214 / physical PDF pp. 7 and 14"
+    },
+    {
+      "id": "citation-376a7935f7c3",
+      "sourceId": "np-1957-new-chelsea-intakes",
+      "page": "loads.html",
+      "contextId": "np-1968-system-record",
+      "locator": "404L revised record / physical PDF pp. 316 to 317"
+    },
+    {
+      "id": "citation-2d84549cddb9",
+      "sourceId": "np-1918-hearts-content-service",
+      "page": "loads.html",
+      "contextId": "np-1968-system-record",
+      "locator": "Glenwood / physical PDF p. 272"
+    },
+    {
+      "id": "citation-91a6ed1147b8",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1969-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-2a3ce8d40be7",
+      "sourceId": "nlh-1969-holyrood-unit1",
+      "page": "loads.html",
+      "contextId": "np-1969-system-record",
+      "locator": "Holyrood Unit 1 / physical PDF p. 8"
+    },
+    {
+      "id": "citation-e022c889ee73",
+      "sourceId": "nlh-1969-holyrood-commissioning-conflict",
+      "page": "loads.html",
+      "contextId": "np-1969-system-record",
+      "locator": "Holyrood commissioning conflict / physical PDF p. 66"
+    },
+    {
+      "id": "citation-b138c8061d73",
+      "sourceId": "nlh-1967-bde-stage1",
+      "page": "loads.html",
+      "contextId": "np-1969-system-record",
+      "locator": "Bay d'Espoir Stage II / physical PDF p. 97"
+    },
+    {
+      "id": "citation-677cc3ddbfac",
+      "sourceId": "nlh-1968-tl224",
+      "page": "loads.html",
+      "contextId": "np-1969-system-record",
+      "locator": "Holyrood marine terminal / physical PDF p. 1104"
+    },
+    {
+      "id": "citation-485048ac6d4d",
+      "sourceId": "np-1965-108l",
+      "page": "loads.html",
+      "contextId": "np-1969-system-record",
+      "locator": "Summerville / physical PDF p. 390"
+    },
+    {
+      "id": "citation-ec0102ae9527",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1970-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-dc3c4c87fa14",
+      "sourceId": "nlh-1970-holyrood-units",
+      "page": "loads.html",
+      "contextId": "np-1970-system-record",
+      "locator": "Holyrood Unit 1 / physical PDF p. 69"
+    },
+    {
+      "id": "citation-939cf604dd17",
+      "sourceId": "nlh-1962-happy-valley-l8",
+      "page": "loads.html",
+      "contextId": "np-1970-system-record",
+      "locator": "Hawke's Bay / physical PDF pp. 570 to 571"
+    },
+    {
+      "id": "citation-8e6eccbfa246",
+      "sourceId": "nlh-1970-tl220",
+      "page": "loads.html",
+      "contextId": "np-1970-system-record",
+      "locator": "TL220 / physical PDF p. 55"
+    },
+    {
+      "id": "citation-f9fb06ebcd20",
+      "sourceId": "nlh-1965-tl203-structures",
+      "page": "loads.html",
+      "contextId": "np-1970-system-record",
+      "locator": "1970 line inventory / physical PDF p. 139"
+    },
+    {
+      "id": "citation-22962acf53f6",
+      "sourceId": "nlh-1970-holyrood-paging",
+      "page": "loads.html",
+      "contextId": "np-1970-system-record",
+      "locator": "Holyrood paging / physical PDF pp. 13 to 14"
+    },
+    {
+      "id": "citation-22141c1f99b0",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1971-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-67ae106bc2b4",
+      "sourceId": "nlh-1960-holyrood-t6",
+      "page": "loads.html",
+      "contextId": "np-1971-system-record",
+      "locator": "Holyrood Stage I / physical PDF p. 910"
+    },
+    {
+      "id": "citation-94e888016c12",
+      "sourceId": "np-1951-mobile-generating-plant",
+      "page": "loads.html",
+      "contextId": "np-1971-system-record",
+      "locator": "55L / physical PDF p. 440"
+    },
+    {
+      "id": "citation-2acfef873d17",
+      "sourceId": "nlh-1971-tl209",
+      "page": "loads.html",
+      "contextId": "np-1971-system-record",
+      "locator": "TL209 / physical PDF p. 56"
+    },
+    {
+      "id": "citation-16b92feff7e3",
+      "sourceId": "np-1958-burin-review",
+      "page": "loads.html",
+      "contextId": "np-1971-system-record",
+      "locator": "Salt Pond / physical PDF pp. 6 and 9"
+    },
+    {
+      "id": "citation-cd5b031fd91a",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1972-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-c01ad397af19",
+      "sourceId": "oxen-2013",
+      "page": "loads.html",
+      "contextId": "np-1972-system-record",
+      "locator": "Hardwoods history / physical PDF p. 17"
+    },
+    {
+      "id": "citation-ce01b4baecc8",
+      "sourceId": "np-1965-108l",
+      "page": "loads.html",
+      "contextId": "np-1972-system-record",
+      "locator": "114L / physical PDF pp. 100 and 492"
+    },
+    {
+      "id": "citation-190486615190",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1972-system-record",
+      "locator": "Station structures / physical PDF pp. 192, 194 and 200"
+    },
+    {
+      "id": "citation-dbcb4b2fda27",
+      "sourceId": "nlh-1972-cbc-construction",
+      "page": "loads.html",
+      "contextId": "np-1972-system-record",
+      "locator": "Come By Chance / physical PDF p. 8"
+    },
+    {
+      "id": "citation-f8aa21cf24a1",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1973-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-345c0ef7e987",
+      "sourceId": "np-1908-petty-harbour-development",
+      "page": "loads.html",
+      "contextId": "np-1973-system-record",
+      "locator": "Gallant Street / physical PDF p. 291"
+    },
+    {
+      "id": "citation-f28f66f51a44",
+      "sourceId": "np-1956-thomas-pond-spillway",
+      "page": "loads.html",
+      "contextId": "np-1973-system-record",
+      "locator": "103L / physical PDF p. 174"
+    },
+    {
+      "id": "citation-e482f121e393",
+      "sourceId": "nlh-1966-terminal-history",
+      "page": "loads.html",
+      "contextId": "np-1973-system-record",
+      "locator": "Buchans history / physical PDF pp. 3 to 4"
+    },
+    {
+      "id": "citation-eeea0af03208",
+      "sourceId": "nlh-1973-tl233",
+      "page": "loads.html",
+      "contextId": "np-1973-system-record",
+      "locator": "TL233 / physical PDF p. 48"
+    },
+    {
+      "id": "citation-4cac71a1b71c",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1973-system-record",
+      "locator": "Station structures / physical PDF pp. 192 and 194"
+    },
+    {
+      "id": "citation-f5e7c0a81492",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1974-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-38286c890c01",
+      "sourceId": "np-1974-mobile-gas-turbine",
+      "page": "loads.html",
+      "contextId": "np-1974-system-record",
+      "locator": "Mobile gas turbine / physical PDF pp. 1 and 13"
+    },
+    {
+      "id": "citation-513f3987c58c",
+      "sourceId": "nlh-1974-come-by-chance-assets",
+      "page": "loads.html",
+      "contextId": "np-1974-system-record",
+      "locator": "Come By Chance assets / physical PDF p. 19"
+    },
+    {
+      "id": "citation-4e9da8bd17c1",
+      "sourceId": "np-1946-lookout-brook",
+      "page": "loads.html",
+      "contextId": "np-1974-system-record",
+      "locator": "Memorial protection / physical PDF p. 382"
+    },
+    {
+      "id": "citation-7be02aa3fa78",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "loads.html",
+      "contextId": "np-1974-system-record",
+      "locator": "41L / physical PDF p. 278"
+    },
+    {
+      "id": "citation-0e28715a3b24",
+      "sourceId": "np-1941-tors-cove-bridges",
+      "page": "loads.html",
+      "contextId": "np-1974-system-record",
+      "locator": "302L / physical PDF p. 244"
+    },
+    {
+      "id": "citation-8aa83418f99d",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1975-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-00f9606a7861",
+      "sourceId": "nlh-1964-wiltondale-transformer",
+      "page": "loads.html",
+      "contextId": "np-1975-system-record",
+      "locator": "Wiltondale / physical PDF pp. 766 to 775"
+    },
+    {
+      "id": "citation-6cd4f7d292b1",
+      "sourceId": "nlh-1965-holyrood-stage1",
+      "page": "loads.html",
+      "contextId": "np-1975-system-record",
+      "locator": "Holyrood Stage 2 / physical PDF p. 334"
+    },
+    {
+      "id": "citation-237ceb44e305",
+      "sourceId": "np-1984-greenhill-derating",
+      "page": "loads.html",
+      "contextId": "np-1975-system-record",
+      "locator": "Greenhill / physical PDF pp. 14 and 44 to 45"
+    },
+    {
+      "id": "citation-8e402608f528",
+      "sourceId": "np-1958-burin-review",
+      "page": "loads.html",
+      "contextId": "np-1975-system-record",
+      "locator": "305L / physical PDF p. 5"
+    },
+    {
+      "id": "citation-b246337b37d9",
+      "sourceId": "np-1964-sunnyside-gander-corridor",
+      "page": "loads.html",
+      "contextId": "np-1975-system-record",
+      "locator": "100L / physical PDF p. 96"
+    },
+    {
+      "id": "citation-a9fe07af430a",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1976-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-6bef64334d0d",
+      "sourceId": "nlh-1976-hardwoods-gt",
+      "page": "loads.html",
+      "contextId": "np-1976-system-record",
+      "locator": "Hardwoods / physical PDF p. 63"
+    },
+    {
+      "id": "citation-668e2ba38b31",
+      "sourceId": "nlh-1970-holyrood-paging",
+      "page": "loads.html",
+      "contextId": "np-1976-system-record",
+      "locator": "TL231 / physical PDF p. 16"
+    },
+    {
+      "id": "citation-61ab5c422f8c",
+      "sourceId": "nlh-1976-tl229",
+      "page": "loads.html",
+      "contextId": "np-1976-system-record",
+      "locator": "TL229 / physical PDF p. 331"
+    },
+    {
+      "id": "citation-e1f0739f57d2",
+      "sourceId": "np-2012-transmission-rebuild",
+      "page": "loads.html",
+      "contextId": "np-1976-system-record",
+      "locator": "Grand Falls / physical PDF p. 327"
+    },
+    {
+      "id": "citation-d89a01141bd9",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1977-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-abff7875e115",
+      "sourceId": "np-1945-lookout-brook-road",
+      "page": "loads.html",
+      "contextId": "np-1977-system-record",
+      "locator": "Blaketown / physical PDF pp. 423 to 424"
+    },
+    {
+      "id": "citation-c6de1ba7105d",
+      "sourceId": "np-1958-burin-review",
+      "page": "loads.html",
+      "contextId": "np-1977-system-record",
+      "locator": "Greenhill / physical PDF p. 11"
+    },
+    {
+      "id": "citation-a01f77a2a6d8",
+      "sourceId": "nlh-1987-plc-carrier",
+      "page": "loads.html",
+      "contextId": "np-1977-system-record",
+      "locator": "Carrier inventory / physical PDF p. 41"
+    },
+    {
+      "id": "citation-08c43f0d1c77",
+      "sourceId": "nlh-1971-tl209",
+      "page": "loads.html",
+      "contextId": "np-1977-system-record",
+      "locator": "Bay d'Espoir Unit 7 / physical PDF pp. 36 to 37"
+    },
+    {
+      "id": "citation-46224288d6cd",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1978-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-d3fc780116ee",
+      "sourceId": "np-1965-108l",
+      "page": "loads.html",
+      "contextId": "np-1978-system-record",
+      "locator": "142L / physical PDF p. 100"
+    },
+    {
+      "id": "citation-8e92c6259973",
+      "sourceId": "nlh-1956-snooks-penstock",
+      "page": "loads.html",
+      "contextId": "np-1978-system-record",
+      "locator": "TL243 / physical PDF p. 53"
+    },
+    {
+      "id": "citation-e6c42f755a00",
+      "sourceId": "nlh-1974-come-by-chance-assets",
+      "page": "loads.html",
+      "contextId": "np-1978-system-record",
+      "locator": "Western Avalon / physical PDF pp. 7 to 8"
+    },
+    {
+      "id": "citation-1b09ae2a130a",
+      "sourceId": "np-1987-glendale",
+      "page": "loads.html",
+      "contextId": "np-1978-system-record",
+      "locator": "Station structures / physical PDF pp. 194, 198 to 199"
+    },
+    {
+      "id": "citation-d51eef50aff6",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1979-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-0e07c55de41a",
+      "sourceId": "np-1952-cape-broyle-valve",
+      "page": "loads.html",
+      "contextId": "np-1979-system-record",
+      "locator": "129L / physical PDF p. 329"
+    },
+    {
+      "id": "citation-dd03f90505d9",
+      "sourceId": "nlh-1987-plc-carrier",
+      "page": "loads.html",
+      "contextId": "np-1979-system-record",
+      "locator": "West Coast microwave / physical PDF pp. 10 and 151"
+    },
+    {
+      "id": "citation-9c53f7d6f085",
+      "sourceId": "nlh-1987-holyrood-uprate-conflict",
+      "page": "loads.html",
+      "contextId": "np-1979-system-record",
+      "locator": "Holyrood Unit 3 electrical systems / physical PDF pp. 379 and 405 to 406"
+    },
+    {
+      "id": "citation-165e10433b51",
+      "sourceId": "nlh-1979-tl232-construction",
+      "page": "loads.html",
+      "contextId": "np-1979-system-record",
+      "locator": "TL232 construction record / physical PDF p. 64"
+    },
+    {
+      "id": "citation-7208f9d9c27d",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1980-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-0d0f6481c9fb",
+      "sourceId": "nlh-1980-board-record",
+      "page": "loads.html",
+      "contextId": "np-1980-system-record",
+      "locator": "Board system record / physical PDF p. 20"
+    },
+    {
+      "id": "citation-03138bd8415c",
+      "sourceId": "nlh-1966-terminal-history",
+      "page": "loads.html",
+      "contextId": "np-1980-system-record",
+      "locator": "Deer Lake / physical PDF p. 4"
+    },
+    {
+      "id": "citation-14b6da13e017",
+      "sourceId": "np-1951-red-cliff-sheds",
+      "page": "loads.html",
+      "contextId": "np-1980-system-record",
+      "locator": "Dunville / physical PDF p. 108"
+    },
+    {
+      "id": "citation-26ff6a5d058c",
+      "sourceId": "nlh-1980-hinds-lake",
+      "page": "loads.html",
+      "contextId": "np-1980-system-record",
+      "locator": "Hinds Lake / physical PDF p. 23"
+    },
+    {
+      "id": "citation-993bfa6f612b",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1981-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-e34f89e99af0",
+      "sourceId": "np-1981-planning-forecast",
+      "page": "loads.html",
+      "contextId": "np-1981-system-record",
+      "locator": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "citation-05380f84e902",
+      "sourceId": "nlh-1954-power-commission",
+      "page": "loads.html",
+      "contextId": "np-1981-system-record",
+      "locator": "TL234, TL251 and TL252 / physical PDF p. 54"
+    },
+    {
+      "id": "citation-7d4c372fecda",
+      "sourceId": "np-2025-ca-np-121-central",
+      "page": "loads.html",
+      "contextId": "np-1981-system-record",
+      "locator": "136L / physical PDF pp. 5 and 7"
+    },
+    {
+      "id": "citation-7e597717ddce",
+      "sourceId": "np-1964-sunnyside-gander-corridor",
+      "page": "loads.html",
+      "contextId": "np-1981-system-record",
+      "locator": "Greenspond / physical PDF pp. 340 to 341"
+    },
+    {
+      "id": "citation-72d928d6be42",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1982-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-9c94de2cd46b",
+      "sourceId": "np-1981-planning-forecast",
+      "page": "loads.html",
+      "contextId": "np-1982-system-record",
+      "locator": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "citation-3a4c757a4d56",
+      "sourceId": "nlh-1979-tl232-construction",
+      "page": "loads.html",
+      "contextId": "np-1982-system-record",
+      "locator": "1982 Board record / physical PDF pp. 24 to 25"
+    },
+    {
+      "id": "citation-a52b2d1e653b",
+      "sourceId": "nlh-1982-tl239",
+      "page": "loads.html",
+      "contextId": "np-1982-system-record",
+      "locator": "TL239 / physical PDF p. 10"
+    },
+    {
+      "id": "citation-5b00d04d867e",
+      "sourceId": "np-1958-burin-review",
+      "page": "loads.html",
+      "contextId": "np-1982-system-record",
+      "locator": "Burin rebuilds / physical PDF p. 4"
+    },
+    {
+      "id": "citation-34d51dc5e0e6",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1983-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-4262f14480a8",
+      "sourceId": "np-1981-planning-forecast",
+      "page": "loads.html",
+      "contextId": "np-1983-system-record",
+      "locator": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "citation-0581ba7c2acc",
+      "sourceId": "nlh-1979-tl232-construction",
+      "page": "loads.html",
+      "contextId": "np-1983-system-record",
+      "locator": "Upper Salmon commissioning / physical PDF p. 24"
+    },
+    {
+      "id": "citation-22497daea7a3",
+      "sourceId": "nlh-northern-line-history-2001",
+      "page": "loads.html",
+      "contextId": "np-1983-system-record",
+      "locator": "Northern line history / physical PDF p. 35"
+    },
+    {
+      "id": "citation-838b5a3a88d9",
+      "sourceId": "np-1983-vhf",
+      "page": "loads.html",
+      "contextId": "np-1983-system-record",
+      "locator": "VHF inventory / physical PDF p. 1"
+    },
+    {
+      "id": "citation-c0d38086b42f",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1984-system-record",
+      "locator": "Historical demand / physical PDF p. 2"
+    },
+    {
+      "id": "citation-67223e0a004c",
+      "sourceId": "np-1987-capital",
+      "page": "loads.html",
+      "contextId": "np-1984-system-record",
+      "locator": "Capital record / physical PDF p. 9"
+    },
+    {
+      "id": "citation-d2e0b1188d80",
+      "sourceId": "nlh-1984-avalon-storm-restoration",
+      "page": "loads.html",
+      "contextId": "np-1984-system-record",
+      "locator": "Transmission restoration / physical PDF p. 2"
+    },
+    {
+      "id": "citation-f7c3434639d0",
+      "sourceId": "np-1984-avalon-storm-operations",
+      "page": "loads.html",
+      "contextId": "np-1984-system-record",
+      "locator": "Feeder rotation / physical PDF p. 1"
+    },
+    {
+      "id": "citation-58d8c0574ea6",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1985-system-record",
+      "locator": "MHI-Nalcor-92 / physical PDF p. 2"
+    },
+    {
+      "id": "citation-61a3fcae0852",
+      "sourceId": "np-1985-operating-statistics",
+      "page": "loads.html",
+      "contextId": "np-1985-system-record",
+      "locator": "Operating statistics / physical PDF p. 24"
+    },
+    {
+      "id": "citation-61619e959260",
+      "sourceId": "np-1981-planning-forecast",
+      "page": "loads.html",
+      "contextId": "np-1985-system-record",
+      "locator": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "citation-97d7518a383f",
+      "sourceId": "np-1987-capital",
+      "page": "loads.html",
+      "contextId": "np-1985-system-record",
+      "locator": "Capital record / physical PDF p. 9"
+    },
+    {
+      "id": "citation-f750973e2f32",
+      "sourceId": "nlh-1967-historical-demand",
+      "page": "loads.html",
+      "contextId": "np-1986-system-load-capital",
+      "locator": "MHI-Nalcor-92 / physical PDF p. 2"
+    },
+    {
+      "id": "citation-f667c333b20f",
+      "sourceId": "np-1986-peak-demand-conflict",
+      "page": "loads.html",
+      "contextId": "np-1986-system-load-capital",
+      "locator": "1997 Marginal Cost Study / physical PDF pp. 336 and 338"
+    },
+    {
+      "id": "citation-d78b1f3fc6e9",
+      "sourceId": "np-1981-planning-forecast",
+      "page": "loads.html",
+      "contextId": "np-1986-system-load-capital",
+      "locator": "1981 planning table / physical PDF p. 8"
+    },
+    {
+      "id": "citation-ca40a2fb1e24",
+      "sourceId": "np-1987-capital",
+      "page": "loads.html",
+      "contextId": "np-1986-system-load-capital",
+      "locator": "Capital record / physical PDF p. 9"
+    },
+    {
+      "id": "citation-8b686498e9b6",
+      "sourceId": "np-1987-reliability",
+      "page": "loads.html",
+      "contextId": "np-1987-system-reliability",
+      "locator": "Comparative reliability record / physical PDF p. 11"
+    },
+    {
+      "id": "citation-b21b208eb0d2",
+      "sourceId": "np-1987-capital",
+      "page": "loads.html",
+      "contextId": "np-1987-system-reliability",
+      "locator": "CA-NP-146 Attachment B / physical PDF p. 9"
+    },
+    {
+      "id": "citation-49f9f26375cf",
+      "sourceId": "np-1987-reliability",
+      "page": "loads.html",
+      "contextId": "np-1988-system-reliability",
+      "locator": "Comparative reliability record / physical PDF p. 11"
+    },
+    {
+      "id": "citation-0b338651ba85",
+      "sourceId": "np-1987-capital",
+      "page": "loads.html",
+      "contextId": "np-1988-system-reliability",
+      "locator": "CA-NP-146 Attachment B / physical PDF p. 9"
+    },
+    {
+      "id": "citation-b1b0cc536cc8",
+      "sourceId": "np-1987-reliability",
+      "page": "loads.html",
+      "contextId": "np-1989-system-reliability",
+      "locator": "Comparative reliability record / physical PDF p. 11"
+    },
+    {
+      "id": "citation-4b8ed0ddd066",
+      "sourceId": "np-1987-capital",
+      "page": "loads.html",
+      "contextId": "np-1989-system-reliability",
+      "locator": "CA-NP-146 Attachment B / physical PDF p. 9"
+    },
+    {
+      "id": "citation-21d7ae10231f",
+      "sourceId": "np-1990-reliability-capital",
+      "page": "loads.html",
+      "contextId": "np-1990-system-reliability",
+      "locator": "CA-NP-004 Attachment A / physical PDF p. 4"
+    },
+    {
+      "id": "citation-2d97bbaf313d",
+      "sourceId": "np-1990-reliability-capital",
+      "page": "loads.html",
+      "contextId": "np-1991-system-reliability",
+      "locator": "CA-NP-004 Attachment A / physical PDF p. 4"
+    },
+    {
+      "id": "citation-1fb4c4e3c7c9",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-1992-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-40fd924ae9f9",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-1993-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-5da7e4a2d4cd",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-1994-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-e49d3aa28cdb",
+      "sourceId": "np-1994-storm-report",
+      "page": "loads.html",
+      "contextId": "avalon-1994-storm",
+      "locator": "Power System Outage Report / physical PDF pp. 22 to 38"
+    },
+    {
+      "id": "citation-412a4ce942c0",
+      "sourceId": "np-1994-outage-operations",
+      "page": "loads.html",
+      "contextId": "avalon-1994-storm",
+      "locator": "PUB 24.0 NP / physical PDF pp. 31 to 33"
+    },
+    {
+      "id": "citation-303c57ffde50",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-1995-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-d858720bc640",
+      "sourceId": "np-1996-annual-report",
+      "page": "loads.html",
+      "contextId": "np-1996-system-reliability",
+      "locator": "1996 Annual Report / physical PDF p. 8"
+    },
+    {
+      "id": "citation-c30c510abf5d",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-1996-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-e65180bac67a",
+      "sourceId": "np-1997-annual-report",
+      "page": "loads.html",
+      "contextId": "np-1997-system-reliability",
+      "locator": "1997 Annual Report / physical PDF p. 10"
+    },
+    {
+      "id": "citation-7a23d88f66b3",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-1997-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-e049c7b03627",
+      "sourceId": "np-1989-operating-summary",
+      "page": "loads.html",
+      "contextId": "np-1998-system-reliability",
+      "locator": "1998 Annual Report / physical PDF p. 10"
+    },
+    {
+      "id": "citation-2809d9e927a8",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-1998-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-5f393237b3aa",
+      "sourceId": "np-1999-annual-petty-harbour-construction",
+      "page": "loads.html",
+      "contextId": "np-1999-system-reliability",
+      "locator": "1999 Annual Report / physical PDF p. 10"
+    },
+    {
+      "id": "citation-d64933b0487b",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-1999-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-0814bfa78635",
+      "sourceId": "np-2000-annual-report",
+      "page": "loads.html",
+      "contextId": "np-2000-system-reliability",
+      "locator": "2000 Annual Report / physical PDF pp. 11 to 12"
+    },
+    {
+      "id": "citation-6f8512302dd8",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-2000-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-6ac9545dc0d6",
+      "sourceId": "np-1992-ten-year-summary",
+      "page": "loads.html",
+      "contextId": "np-2001-system-reliability",
+      "locator": "2001 Annual Report / physical PDF p. 13"
+    },
+    {
+      "id": "citation-2df909021e60",
+      "sourceId": "np-2003-ca-446-rev",
+      "page": "loads.html",
+      "contextId": "np-2001-system-reliability",
+      "locator": "CA-446, first revision / physical PDF p. 1"
+    },
+    {
+      "id": "citation-af6d6b1e3d58",
+      "sourceId": "np-1947-port-aux-basques-electrical-plant",
+      "page": "loads.html",
+      "contextId": "np-2002-system-reliability",
+      "locator": "2003 GRA, first revision / physical PDF pp. 83 to 86"
+    },
+    {
+      "id": "citation-53c27c9deb16",
+      "sourceId": "nlh-gnp-reliability-2026",
+      "page": "loads.html",
+      "contextId": "gnp-reliability",
+      "locator": "2026 Great Northern Peninsula reply / physical PDF pp. 8 to 9"
+    },
+    {
+      "id": "citation-9ec31d1a9cec",
+      "sourceId": "forecast-2024",
+      "page": "loads.html",
+      "contextId": "island-2024-forecast-accuracy",
+      "locator": "2024 accuracy report / PDF p. 119"
+    },
+    {
+      "id": "citation-759f3b72dd98",
+      "sourceId": "forecast-2020",
+      "page": "loads.html",
+      "contextId": "nostradamus-2020-import-failure",
+      "locator": "2020 accuracy report / physical PDF pp. 13 to 14"
+    },
+    {
+      "id": "citation-7794cfd73057",
+      "sourceId": "np-2014-winter-peak",
+      "page": "loads.html",
+      "contextId": "np-2014-winter-actual-peaks",
+      "locator": "PUB-NP-239 / physical PDF p. 1"
+    },
+    {
+      "id": "citation-12af3b9d95c5",
+      "sourceId": "nlh-cbc-ngr-cancel-2010",
+      "page": "loads.html",
+      "contextId": "hurricane-leslie-energy-totals",
+      "locator": "2013 GRA Volume II / PDF p. 68"
+    },
+    {
+      "id": "citation-08a6af136fe9",
+      "sourceId": "np-2018-tod-study",
+      "page": "loads.html",
+      "contextId": "tod-rate-study-load-data",
+      "locator": "PUB-NP-078 / response p. 1 and Attachment C"
+    },
+    {
+      "id": "citation-a8a5aab7e6b6",
+      "sourceId": "static-dd8a7f9be7d3",
+      "page": "loads.html",
+      "contextId": "tod-rate-study-load-data",
+      "locator": "PUB-NP-078 / Attachment B"
+    },
+    {
+      "id": "citation-d1f9e09f2db1",
+      "sourceId": "np-2027-transformers",
+      "page": "loads.html",
+      "contextId": "transformer-load-title",
+      "locator": "2027 Capital Budget Application / physical PDF pp. 547 to 551"
+    },
+    {
+      "id": "citation-4a3f3811a520",
+      "sourceId": "canada-nl-1977-telephone-study",
+      "page": "telephone.html",
+      "contextId": "telephone-title",
+      "locator": "1977 joint study / physical PDF pp. 8 to 9"
+    },
+    {
+      "id": "citation-ba46e79a1013",
+      "sourceId": "newfoundland-telephone-1982-annual",
+      "page": "telephone.html",
+      "contextId": "telephone-dms-title",
+      "locator": "Newfoundland Telephone 1982 / physical PDF p. 9"
+    },
+    {
+      "id": "citation-1e969c8bd7b1",
+      "sourceId": "gander-beacon-1986-glovertown-rsc",
+      "page": "telephone.html",
+      "contextId": "telephone-dms-title",
+      "locator": "Gander Beacon / October 1, 1986 / physical PDF pp. 3 and 8"
+    },
+    {
+      "id": "citation-ff99558dc730",
+      "sourceId": "nortel-1979-rlm-datasheet",
+      "page": "telephone.html",
+      "contextId": "telephone-dms-title",
+      "locator": "Northern Telecom RLM technical facts / February 1979"
+    },
+    {
+      "id": "citation-e9b7f7801f5a",
+      "sourceId": "nortel-dms10-60220-system-description",
+      "page": "telephone.html",
+      "contextId": "telephone-dms-title",
+      "locator": "Nortel DMS-10 Generic 602.20 / system description pp. 2-41, 2-49, 2-60, 2-82 and 2-97"
+    },
+    {
+      "id": "citation-f107b263b039",
+      "sourceId": "canada-nl-1977-telephone-study",
+      "page": "telephone.html",
+      "contextId": "telephone-dms-title",
+      "locator": "1977 federal-provincial study / physical PDF pp. 8 to 10, 20 to 28, 109, 116 to 121"
+    },
+    {
+      "id": "citation-16e86c076297",
+      "sourceId": "mun-enl-1884-private-telephone",
+      "page": "telephone.html",
+      "contextId": "telephone-dms-title",
+      "locator": "Encyclopedia history / physical PDF pp. 15 to 18"
+    },
+    {
+      "id": "citation-e40e569d6f73",
+      "sourceId": "newtel-1986-annual",
+      "page": "telephone.html",
+      "contextId": "telephone-dms-title",
+      "locator": "NewTel 1986 / digital microwave and remote switching"
+    },
+    {
+      "id": "citation-67497a0eb178",
+      "sourceId": "crtc-90-14-terra-nova",
+      "page": "telephone.html",
+      "contextId": "telephone-dms-title",
+      "locator": "CRTC 90-14 / Terra Nova acquisition"
+    },
+    {
+      "id": "citation-89aa0b824318",
+      "sourceId": "static-76d9c3b1c4cc",
+      "page": "telephone.html",
+      "contextId": "telephone-dms-title",
+      "locator": "Research record / chronology and source hashes"
+    },
+    {
+      "id": "citation-73ee726190de",
+      "sourceId": "nlh-1973-tl233",
+      "page": "telecom.html",
+      "contextId": "radio-desc",
+      "locator": "2004 Capital Budget / physical PDF pp. 194 and 258"
+    },
+    {
+      "id": "citation-14ef8fef3656",
+      "sourceId": "nlh-1973-tl233",
+      "page": "telecom.html",
+      "contextId": "radio-desc",
+      "locator": "Physical PDF p. 194"
+    },
+    {
+      "id": "citation-d6aa52e6c6c6",
+      "sourceId": "nlh-1973-tl233",
+      "page": "telecom.html",
+      "contextId": "radio-desc",
+      "locator": "Physical PDF p. 251"
+    },
+    {
+      "id": "citation-58b3e3ea8505",
+      "sourceId": "np-2008-broad-cove",
+      "page": "telecom.html",
+      "contextId": "np-2008-fibre-network",
+      "locator": "2008 Capital Budget Application / physical PDF pp. 228 to 234"
+    },
+    {
+      "id": "citation-9c09ee37e89d",
+      "sourceId": "np-1918-hearts-content-service",
+      "page": "telecom.html",
+      "contextId": "np-radio-desc",
+      "locator": "2013 Capital Budget Application / physical PDF pp. 394 to 402"
+    },
+    {
+      "id": "citation-ea682df1936d",
+      "sourceId": "np-1941-tors-cove-g3-equipment",
+      "page": "telecom.html",
+      "contextId": "np-radio-desc",
+      "locator": "2017 Capital Budget Application / physical PDF p. 141"
+    },
+    {
+      "id": "citation-a9f32c391926",
+      "sourceId": "nlh-1973-tl233",
+      "page": "telecom.html",
+      "contextId": "trunked-radio-desc",
+      "locator": "2004 Capital Budget / physical PDF pp. 200 to 203"
+    },
+    {
+      "id": "citation-dd19f3ec9502",
+      "sourceId": "vhf-2004-revision",
+      "page": "telecom.html",
+      "contextId": "trunked-radio-desc",
+      "locator": "Revised site count / PDF p. 1, report p. 11"
+    },
+    {
+      "id": "citation-f77b11aa5d0a",
+      "sourceId": "nlh-1962-tl224-2027-conflict",
+      "page": "telecom.html",
+      "contextId": "p25-radio-desc",
+      "locator": "2027 Capital Budget Volume I / physical PDF p. 248"
+    },
+    {
+      "id": "citation-9fb15a91ed55",
+      "sourceId": "nlh-1973-tl233",
+      "page": "telecom.html",
+      "contextId": "p25-radio-desc",
+      "locator": "Physical PDF pp. 200 to 203"
+    },
+    {
+      "id": "citation-999a07d4a9a5",
+      "sourceId": "vhf-2004-revision",
+      "page": "telecom.html",
+      "contextId": "p25-radio-desc",
+      "locator": "Revised summary / PDF p. 1, report p. 11"
+    },
+    {
+      "id": "citation-3f2a1cc7ef22",
+      "sourceId": "nlh-1962-tl224-2027-conflict",
+      "page": "telecom.html",
+      "contextId": "p25-radio-desc",
+      "locator": "2027 Capital Budget Volume I / physical PDF p. 248"
+    },
+    {
+      "id": "citation-902393896b47",
+      "sourceId": "nlh-1962-tl224-2027-conflict",
+      "page": "telecom.html",
+      "contextId": "p25-radio-desc",
+      "locator": "Physical PDF p. 248"
+    },
+    {
+      "id": "citation-a898ff1078a6",
+      "sourceId": "nlh-1973-tl233",
+      "page": "telecom.html",
+      "contextId": "p25-radio-desc",
+      "locator": "2004 Capital Budget / physical PDF p. 200"
+    },
+    {
+      "id": "citation-4bf2ae0f4a76",
+      "sourceId": "nlh-1973-tl233",
+      "page": "telecom.html",
+      "contextId": "telecom-site-registers",
+      "locator": "Existing repeater-site register / physical PDF p. 265"
+    }
+  ]
+}

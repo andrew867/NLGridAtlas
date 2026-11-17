@@ -1,3 +1,4 @@
+import { readAtlasHtml } from "./page-fixture.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -11,7 +12,7 @@ import {
   supplementalAcLines
 } from "../src/island-backbone.js";
 
-const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
+const html = await readAtlasHtml();
 const css = await readFile(new URL("../src/styles.css", import.meta.url), "utf8");
 const workItems = JSON.parse(await readFile(new URL("../docs/work-items.json", import.meta.url), "utf8"));
 

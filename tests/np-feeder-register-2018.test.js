@@ -1,3 +1,4 @@
+import { readAtlasHtml } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
@@ -25,7 +26,7 @@ test("published feeder loading percentages reconcile", () => {
 
 test("interface exposes the dated feeder register", async () => {
   const [html, main] = await Promise.all([
-    readFile(new URL("../index.html", import.meta.url), "utf8"),
+    readAtlasHtml(),
     readFile(new URL("../src/main.js", import.meta.url), "utf8")
   ]);
   assert.match(html, /data-register="feeders-2018"[^>]*>2018 feeders</);

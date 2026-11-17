@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -45,7 +46,7 @@ test("1943 claim and public card retain exact source pages", () => {
   assert.equal(sources.find((source) => source.id === "np-1943-rocky-pond")?.pages, "physical PDF pp. 240 to 241");
   assert.equal(sources.find((source) => source.id === "np-1943-cape-pond-road")?.pages, "physical PDF p. 169");
   assert.equal(sources.find((source) => source.id === "np-1943-property-record")?.pages, "physical PDF pp. 137 and 152");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1943-system-record"/);
   assert.match(html, /12\.6 km gravel access road/);
   assert.match(html, /three property deeds dated May 18, 1943/);

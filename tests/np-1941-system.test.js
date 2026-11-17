@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -43,7 +44,7 @@ test("1941 claim and public card retain exact source pages", () => {
   assert.equal(sources.find((source) => source.id === "np-1941-tors-cove-g3-equipment")?.pages, "physical PDF pp. 206 to 207 and 210");
   assert.equal(sources.find((source) => source.id === "np-1941-tors-cove-bridges")?.pages, "physical PDF p. 175");
   assert.equal(sources.find((source) => source.id === "np-1941-property-record")?.pages, "physical PDF p. 136");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1941-system-record"/);
   assert.match(html, /unit added in 1951; runner, generator and original power cables separately dated to 1941/);
   assert.match(html, /three deeds dated January 9, March 13 and April 15, 1941/);

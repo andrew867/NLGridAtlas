@@ -1,3 +1,4 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
@@ -46,7 +47,7 @@ test("1942 claim and public card retain exact source pages", () => {
   assert.equal(sources.find((source) => source.id === "np-1942-23l")?.pages, "physical PDF p. 330");
   assert.equal(sources.find((source) => source.id === "np-1942-fall-pond-dam")?.pages, "physical PDF p. 188");
   assert.equal(sources.find((source) => source.id === "np-1942-property-record")?.pages, "physical PDF pp. 136 to 137 and 152");
-  const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+  const html = readAtlasHtmlSync();
   assert.match(html, /data-claim-id="np-1942-system-record"/);
   assert.match(html, /original 33 kV, 5\.5 km radial line/);
   assert.match(html, /eight recorded utility property transactions/);

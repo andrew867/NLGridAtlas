@@ -1,9 +1,10 @@
+import { readAtlasHtmlSync } from "./page-fixture.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { telephoneSources, telephoneTimeline } from "../src/telephone-data.js";
 
-const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+const html = readAtlasHtmlSync();
 const research = fs.readFileSync(new URL("../research/TELEPHONE_SYSTEM_HISTORY.md", import.meta.url), "utf8");
 
 test("telephone chronology references registered sources", () => {

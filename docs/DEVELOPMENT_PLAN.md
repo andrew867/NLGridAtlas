@@ -402,12 +402,38 @@ Work items:
 - REL-004
 - REL-005
 
+Usability refactor work items:
+
+- UX-001
+- UX-002
+- UX-003
+- UX-004
+- UX-005
+- UX-006
+- UX-007
+- UX-008
+- UX-009
+- UX-010
+- UX-011
+- UX-012
+- UX-013
+- UX-014
+- UX-015
+- UX-016
+- UX-017
+- UX-018
+- UX-019
+- UX-020
+- UX-021
+- UX-022
+
 Current deployment state:
 
 - `REL-001` is complete. The public `andrew867/NLGridAtlas` repository is connected and `main` is synchronized.
 - `REL-003` is complete. GitHub Pages is live at `https://andrew867.github.io/NLGridAtlas/`; the workflow passed and the published build passed browser and phone-width checks.
 - `REL-002` is complete. The repository evidence manifest and external archive snapshot format are defined.
 - `REL-005` was deferred by the user on 2026-11-12. When publication resumes, it remains incomplete until a public object-store destination is selected and a clean restore passes without contacting the source sites.
+- `UX-001` through `UX-022` are implemented locally. Verification evidence is recorded in `docs/USABILITY_REFACTOR_VERIFICATION_2026-11-17.md`. This task does not publish or push the change.
 
 Exit gate:
 
