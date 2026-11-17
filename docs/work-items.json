@@ -3346,6 +3346,18 @@
       "notes": "The year records garrison and Ordnance fuel tenders, the proposed Public Hospital and civic repairs, the Fishing Ships' Rooms register, coastal building controls, limited fortification work, completed Harbour Grace Court House, proposed Bay Bulls jail, the St. George's Bay coal sample, fire-safety rules, the Chain Rock Powder Magazine proposal and its later share-financing scheme. The 52 dated Gazette files contain 210 physical PDF pages."
     },
     {
+      "id": "NPREG-221",
+      "title": "Add the 1807 signal, garrison and public-building records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1807 communications, navigation, defence-infrastructure and public-building evidence.",
+      "dependencies": ["NPREG-220"],
+      "completion_evidence": ["research/NP_1807_SYSTEM_RECORD.md", "research/derived/np-1807-newspaper-issue-manifest.json", "src/data.js", "tests/np-1807-system.test.js"],
+      "blocker": null,
+      "notes": "The year records a measured garrison timber tender, barrack-form furniture, Signal Hill and Fort Amherst convoy flags, a 31-sail convoy, proposed Harbour Grace and Fortune Bay court buildings, Harbour Grace church and parsonage repairs, the indebted St. John's school house and the completed Fogo worship house. The 17 Gazette archive files contain 66 surviving physical PDF pages, with the September 10 filename explicitly recording two missing pages."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,

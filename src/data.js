@@ -760,6 +760,56 @@ export const sources = [
     url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
   },
   {
+    id: "mun-royal-gazette-1807-garrison-timber",
+    year: 1807,
+    organization: "Commissary and Storekeeper's Office, St. John's",
+    title: "St. John's Garrison Public-Works Timber Tender",
+    topics: ["1807", "St. John's", "King's Wharf", "garrison", "public works", "timber", "scantling", "tender"],
+    pages: "physical PDF p. 4",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18071001.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1807-barrack-furniture",
+    year: 1807,
+    organization: "Merchants' Hall",
+    title: "Barrack-Form Table and Stool Tender",
+    topics: ["1807", "St. John's", "Merchants' Hall", "barrack furniture", "deal tables", "stools", "tender"],
+    pages: "physical PDF p. 3",
+    status: "proposed",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18071105.pdf"
+  },
+  {
+    id: "mun-royal-gazette-1807-convoy-signals",
+    year: 1807,
+    organization: "St. John's garrison",
+    title: "Signal Hill and Fort Amherst Convoy Flag Signals",
+    topics: ["1807", "St. John's", "Signal Hill", "Fort Amherst", "convoy", "flag signal", "England", "Portugal"],
+    pages: "physical PDF p. 3",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/royalgazette/TheRoyalGazette18071105.pdf"
+  },
+  {
+    id: "mun-colonial-1807-convoy",
+    year: 1807,
+    organization: "Governor of Newfoundland",
+    title: "St. John's to Spithead Convoy Report",
+    topics: ["1807", "St. John's", "Spithead", "HMS Isis", "convoy", "navigation"],
+    pages: "physical PDF p. 237",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1807-public-buildings",
+    year: 1807,
+    organization: "Governor of Newfoundland",
+    title: "Court, Church, School and Fogo Building Report",
+    topics: ["1807", "Harbour Grace", "Fortune Bay", "St. John's", "Fogo", "Court House", "Gaol", "church", "parsonage", "school house", "public works"],
+    pages: "physical PDF pp. 238 to 240",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
     id: "mun-royal-gazette-1809-fish-market",
     year: 1809,
     organization: "Robert Brine Sr. and Robert Parsons & Co.",
@@ -15425,6 +15475,78 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1807-09-16",
+    category: "public works",
+    title: "Garrison sought measured timber for public works",
+    body: "The Commissary and Storekeeper's Office sought pine or spruce scantling in a specified length and cross-section schedule for public works in the St. John's garrison. Delivery was required at the King's Wharf by May 20, 1808; the tender does not establish delivery or completed work.",
+    sourceId: "mun-royal-gazette-1807-garrison-timber",
+    pages: "physical PDF p. 4",
+    status: "proposed"
+  },
+  {
+    date: "1807-10-27",
+    category: "communications",
+    title: "Two flag signals reported convoy departures",
+    body: "At Signal Hill or Fort Amherst, a red flag with a blue pendant below meant the England convoy had sailed. A red flag with a blue pendant above meant the Portugal convoy had sailed.",
+    sourceId: "mun-royal-gazette-1807-convoy-signals",
+    pages: "physical PDF p. 3",
+    status: "reported"
+  },
+  {
+    date: "1807-10-30",
+    category: "navigation",
+    title: "Thirty-one sail left St. John's in convoy",
+    body: "Governor Holloway reported that HMS Isis reached Spithead on November 25 with a convoy of 31 sail that had departed St. John's on October 30.",
+    sourceId: "mun-colonial-1807-convoy",
+    pages: "physical PDF p. 237",
+    status: "reported"
+  },
+  {
+    date: "1807-11-05",
+    category: "defence infrastructure",
+    title: "Merchants' Hall sought tables and barrack-form stools",
+    body: "The notice sought eight deal tables, each 4.5 feet long and 3 feet wide with a glued top and four braced legs, plus 16 stools made in the manner of barrack forms. Proposals were due November 9; the notice does not establish completion.",
+    sourceId: "mun-royal-gazette-1807-barrack-furniture",
+    pages: "physical PDF p. 3",
+    status: "proposed"
+  },
+  {
+    date: "1807-11-25",
+    category: "public works",
+    title: "Harbour Grace sought government aid for court buildings",
+    body: "The Harbour Grace magistrates estimated a Court House and Gaol at £789 and reported that no more than £400 could be collected locally. Holloway recommended government assistance and said a comparable building was also necessary in Fortune Bay.",
+    sourceId: "mun-colonial-1807-public-buildings",
+    pages: "physical PDF pp. 238 to 239",
+    status: "proposed"
+  },
+  {
+    date: "1807-11-25",
+    category: "public works",
+    title: "Harbour Grace church and parsonage were under repair",
+    body: "Holloway reported active repairs to the Harbour Grace church and parsonage house and payment of the authorized £50 from lease money. The report does not give the total project cost or completion date.",
+    sourceId: "mun-colonial-1807-public-buildings",
+    pages: "physical PDF p. 239",
+    status: "reported"
+  },
+  {
+    date: "1807-11-25",
+    category: "public buildings",
+    title: "St. John's school house carried debt of £300 and upwards",
+    body: "The school house for poor children had been started on what Holloway considered too large a scale. Donations would not clear its debt of £300 and upwards; he also proposed a £20 annual salary for a female assistant.",
+    sourceId: "mun-colonial-1807-public-buildings",
+    pages: "physical PDF p. 239",
+    status: "reported"
+  },
+  {
+    date: "1807-11-25",
+    category: "public buildings",
+    title: "Fogo inhabitants had built a worship house",
+    body: "Holloway reported that about 400 Protestant inhabitants at Fogo had built a house for divine worship. They requested £50 to discharge its debt, while an unnamed older man spent his £15 annual allowance on books for the community.",
+    sourceId: "mun-colonial-1807-public-buildings",
+    pages: "physical PDF pp. 239 to 240",
+    status: "reported"
+  },
   {
     date: "1808-06-01",
     category: "energy supply",
