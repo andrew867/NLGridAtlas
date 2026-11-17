@@ -61,7 +61,7 @@ export async function buildPinnedEvidenceManifest() {
     }
     const file = files.find((item) => item.local_path === document.local_path);
     if (file.sha256 !== document.sha256) {
-      throw new Error(`Catalog digest mismatch for ${document.id}.`);
+      throw new Error(`Catalog digest mismatch for ${document.id}. Expected ${document.sha256}, received ${file.sha256} from ${file.bytes} bytes.`);
     }
   }
 
