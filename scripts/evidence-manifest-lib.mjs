@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { readFile, readdir, stat } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -20,6 +20,22 @@ async function walkPdfs(directory) {
 
 function slash(path) {
   return path.replaceAll("\\", "/");
+}
+
+export function evidenceIdentity(content) {
+  if (content.length <= 512) {
+    const pointer = content.toString("utf8").match(/^version https:\/\/git-lfs\.github\.com\/spec\/v1\r?\noid sha256:([0-9a-f]{64})\r?\nsize ([0-9]+)\r?\n?$/);
+    if (pointer) {
+      return {
+        bytes: Number(pointer[2]),
+        sha256: pointer[1]
+      };
+    }
+  }
+  return {
+    bytes: content.length,
+    sha256: createHash("sha256").update(content).digest("hex")
+  };
 }
 
 export async function readCatalog() {
@@ -43,10 +59,11 @@ export async function buildPinnedEvidenceManifest() {
   for (const path of (await walkPdfs(sourcesRoot)).sort()) {
     const content = await readFile(path);
     const localPath = `sources/${slash(relative(sourcesRoot, path))}`;
+    const identity = evidenceIdentity(content);
     files.push({
       local_path: localPath,
-      bytes: (await stat(path)).size,
-      sha256: createHash("sha256").update(content).digest("hex"),
+      bytes: identity.bytes,
+      sha256: identity.sha256,
       catalog_ids: catalogByPath.get(localPath) || []
     });
   }

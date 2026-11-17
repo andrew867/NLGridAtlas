@@ -1,8 +1,18 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import { evidenceIdentity } from "../scripts/evidence-manifest-lib.mjs";
 
 const pinned = JSON.parse(await readFile(new URL("../research/pinned-evidence-manifest.json", import.meta.url), "utf8"));
+
+test("canonical Git LFS pointers preserve the pinned object identity", () => {
+  const pointer = Buffer.from("version https://git-lfs.github.com/spec/v1\noid sha256:d1dec55ac47d4af754d9d7d01579504933cd77e7db8da4c5e289f3a3e8587116\nsize 76353353\n");
+  assert.deepEqual(evidenceIdentity(pointer), {
+    bytes: 76353353,
+    sha256: "d1dec55ac47d4af754d9d7d01579504933cd77e7db8da4c5e289f3a3e8587116"
+  });
+});
+
 const external = JSON.parse(await readFile(new URL("../research/external-archive-manifest.json", import.meta.url), "utf8"));
 const catalog = JSON.parse(await readFile(new URL("../research/catalog.json", import.meta.url), "utf8"));
 

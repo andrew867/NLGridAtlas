@@ -2,7 +2,7 @@
 
 This directory contains unmodified copies of public regulatory filings used by NL Grid Atlas. The copies preserve filings when source URLs fail.
 
-Run `npm run verify:sources` to check every PDF against `pinned-evidence-manifest.json` and the digests in `catalog.json`.
+Run `npm run verify:sources` to check every PDF against `pinned-evidence-manifest.json` and the digests in `catalog.json`. The verifier hashes materialized PDF content. If a checkout retains a canonical Git LFS pointer, it validates the pointer's SHA-256 object ID and declared byte count against the same records.
 
 Run `npm run build:evidence-manifest` after deliberately adding or replacing a source PDF, then review the manifest diff before committing it.
 

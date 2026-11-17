@@ -22,9 +22,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Materialize LFS evidence files
-        run: git lfs pull origin main
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
