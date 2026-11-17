@@ -28,6 +28,8 @@ Checked: 2026-11-17
 
 The browser suite used installed Chrome through Playwright at desktop and Pixel 5 viewports. It covered direct static requests, copied station and source routes, Back and Forward restoration, diagram component restoration, source filters, citation dialog behavior, named navigation and dialog roles, reduced-motion rendering, legacy fragments, small-screen navigation, map selection without page movement and page-wide overflow.
 
+The locked install, factual tests, source and retention checks, internal-link audit, production build and browser suite were also run from a separate clean checkout. The clean checkout reproduced the results above.
+
 ## Visual review
 
 Temporary captures are stored in `output/ux-refactor/after/` and are not release assets. The matrix covers 390, 768, 1,440 and 1,920 CSS pixel widths for Home, Networks, Newfoundland Power and Hydro station records, Loads, Telephone, Utility radio and Sources.
