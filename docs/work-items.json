@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-15",
+  "updated": "2026-11-17",
   "status_values": ["not_started", "in_progress", "blocked", "done", "deferred"],
   "priority_values": ["P0", "P1", "P2", "P3"],
   "phase_values": [0, 1, 2, 3, 4, 5],
@@ -3380,6 +3380,18 @@
       "completion_evidence": ["research/NP_1805_SYSTEM_RECORD.md", "src/data.js", "tests/np-1805-system.test.js"],
       "blocker": null,
       "notes": "The year records the St. John's defence relationship between Signal Hill, Fort Townshend and Fort William, five volunteer companies totalling 250 men, the unresolved Signal Hill works authority, Placentia and Bonavista jail payments, two October convoys totalling 69 sail, the Placentia fortification survey and the proposed combined jail, court and worship building at Burin. No 1805 Royal Gazette run exists in the collection, so this tranche uses the Colonial Office despatch volume."
+    },
+    {
+      "id": "NPREG-224",
+      "title": "Add the 1804 transport, communications and public-works records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "not_started",
+      "scope": "Inventory surviving 1804 transport, communications, defence-infrastructure and public-works evidence.",
+      "dependencies": ["NPREG-223"],
+      "completion_evidence": ["research/NP_1804_SYSTEM_RECORD.md", "src/data.js", "tests/np-1804-system.test.js"],
+      "blocker": null,
+      "notes": "Created to reconcile the active-work note with the authoritative register. Add only named equipment, works, companies or operating events supported by a page-level source."
     },
     {
       "id": "ASSET-001",

@@ -439,7 +439,8 @@ Updated: 2026-11-17
 
 ## Active work
 
-1. Continue the year-specific historical queue with 1804 after the 1805 colonial records under `NPREG-223`. Add only named equipment, works, companies or operating events supported by a page-level source.
+1. Continue the year-specific historical queue with 1804 under `NPREG-224`. Add only named equipment, works, companies or operating events supported by a page-level source.
+2. Use `docs/FUTURE_WORK.md` for the preserved evidence gaps and proposed research expansions. Promote an item into `docs/work-items.json` before implementation begins.
 
 The current Holyrood one-line search is deferred. The archive pass identified internal drawing numbers `1403-500-E001` and `1403-500-E004`, but no public filing reproduces either drawing. The atlas retains the dated December 2012 diagram and later equipment records without inventing the missing breaker arrangement.
 

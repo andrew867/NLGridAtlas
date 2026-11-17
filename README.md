@@ -39,6 +39,7 @@ The site includes automated checks for source references, topology, component in
 - [Research method](docs/RESEARCH_METHOD.md)
 - [Editorial style](docs/EDITORIAL_STYLE.md)
 - [Phased development plan](docs/DEVELOPMENT_PLAN.md)
+- [Future work and research queue](docs/FUTURE_WORK.md)
 - [Verification plan](docs/VERIFICATION_PLAN.md)
 - [Public evidence package](docs/PUBLIC_EVIDENCE_PACKAGE.md)
 - [Authoritative work-item register](docs/work-items.json)

@@ -1,8 +1,10 @@
 # NL Grid Atlas phased development plan
 
-Updated: 2026-11-16
+Updated: 2026-11-17
 
 `docs/work-items.json` is the authoritative status register. This plan defines execution order and phase exit gates.
+
+`docs/FUTURE_WORK.md` preserves unresolved evidence targets and proposed expansions that are not all active work items.
 
 ## Priority order
 
@@ -70,6 +72,7 @@ Objective: replace the source-image-only overview with a navigable, dated island
 Work items:
 
 - NPREG-223
+- NPREG-224
 - NPREG-222
 - NPREG-221
 - NPREG-220
@@ -330,7 +333,7 @@ Work items:
 
 Current state:
 
-- The year-by-year Newfoundland Power register is complete from 1952 through 2024. All listed `NPREG` and `ISL` work items are complete; the remaining evidence gaps retain their deferred or blocked status in `docs/work-items.json`.
+- The year-by-year Newfoundland Power register is complete from 1805 through 2024. `NPREG-224` continues the historical queue with 1804. The remaining evidence gaps retain their deferred or blocked status in `docs/work-items.json`.
 
 Exit gate:
 
