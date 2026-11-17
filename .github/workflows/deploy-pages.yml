@@ -24,6 +24,9 @@ jobs:
         with:
           lfs: true
 
+      - name: Materialize LFS evidence files
+        run: git lfs checkout
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
