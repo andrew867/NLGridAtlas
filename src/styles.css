@@ -313,7 +313,15 @@ button, input { font: inherit; }
 .hvdc-facts div { display: grid; grid-template-columns: minmax(130px, .42fr) minmax(0, 1fr); gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--rule); }
 .hvdc-facts dt, .hvdc-facts dd { margin: 0; font: 400 .68rem/1.45 "IBM Plex Mono", monospace; }
 .hvdc-facts dt { color: var(--muted); text-transform: uppercase; }
-.hvdc-source-links { display: flex; flex-direction: column; gap: .55rem; margin-top: 1rem; }
+.source-disclosure { margin-top: 1.25rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.source-disclosure > summary { display: grid; grid-template-columns: auto 1fr auto; gap: .7rem; align-items: center; padding: .8rem 0; cursor: pointer; list-style: none; font: 500 .7rem/1.25 "IBM Plex Mono", monospace; text-transform: uppercase; }
+.source-disclosure > summary::-webkit-details-marker { display: none; }
+.source-disclosure > summary::before { content: "+"; display: grid; width: 1.2rem; height: 1.2rem; place-items: center; border: 1px solid currentColor; transition: transform 140ms ease; }
+.source-disclosure[open] > summary::before { transform: rotate(45deg); }
+.source-disclosure > summary small { color: var(--muted); font: inherit; text-transform: none; }
+.source-disclosure-list { display: grid; gap: .55rem; padding: .15rem 0 1rem 1.9rem; }
+.source-disclosure-list a { min-width: 0; overflow-wrap: anywhere; }
+.hvdc-source-links { display: flex; flex-direction: column; gap: .55rem; margin-top: 0; }
 .hvdc-source-links a { font: 400 .66rem/1.45 "IBM Plex Mono", monospace; text-underline-offset: .2rem; }
 .converter-records { margin-top: 4rem; }
 .converter-record { padding: clamp(1rem, 2vw, 1.5rem); background: rgba(248, 244, 235, .58); }
@@ -344,7 +352,7 @@ button, input { font: inherit; }
 .converter-record-data dl div { padding: .7rem 0; border-bottom: 1px solid var(--rule); }
 .converter-record-data dt, .converter-record-data dd { margin: 0; font: 400 .68rem/1.45 "IBM Plex Mono", monospace; }
 .converter-record-data dt { margin-bottom: .25rem; color: var(--muted); text-transform: uppercase; }
-.converter-source-links { display: flex; flex-direction: column; gap: .55rem; margin-top: 1rem; }
+.converter-source-links { display: flex; flex-direction: column; gap: .55rem; margin-top: 0; }
 .converter-source-links a { font: 400 .66rem/1.45 "IBM Plex Mono", monospace; text-underline-offset: .2rem; }
 .terminal-network-panel { margin-top: 1rem; padding: 1.5rem; }
 .terminal-network { display: block; width: 100%; height: auto; }
@@ -358,7 +366,8 @@ button, input { font: inherit; }
 .network-node text { fill: var(--ink); font: 600 var(--diagram-component-size) "Barlow Condensed", sans-serif; text-anchor: middle; letter-spacing: .04em; }
 .network-node:hover circle, .network-node:focus-visible circle { fill: var(--phase-c); stroke-width: 7; }
 .auxiliary-node circle { fill: var(--paper-bright); }
-.network-source-links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; padding: .8rem 0 1.5rem; }
+.network-source-disclosure { margin-bottom: 1.5rem; }
+.network-source-links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; padding: .15rem 0 0; }
 .network-source-links a { font: 400 .72rem/1.45 "IBM Plex Mono", monospace; text-underline-offset: .2rem; }
 .geographic-references { margin: 1.5rem 0 3rem; border-top: 1px solid var(--ink); }
 .geographic-references > header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; align-items: baseline; padding: 1rem 0; }
@@ -499,7 +508,8 @@ button, input { font: inherit; }
 .component-data div { display: grid; grid-template-columns: 1fr 1.4fr; padding: .65rem 0; border-bottom: 1px solid var(--rule); }
 .component-data dt, .component-data dd { min-width: 0; margin: 0; overflow-wrap: anywhere; font: 400 .76rem/1.4 "IBM Plex Mono", monospace; }
 .component-data dt { font-weight: 600; }
-.component-evidence [data-field="sources"] { display: grid; gap: .35rem; }
+.component-evidence [data-field="sources"] { display: block; }
+.component-evidence .source-disclosure { margin-top: 1.5rem; }
 .evidence-link { font: 400 .76rem/1.45 "IBM Plex Mono", monospace; text-underline-offset: .2rem; }
 .source-note { margin-top: 1.25rem; color: var(--muted); font: 400 .72rem/1.5 "IBM Plex Mono", monospace; }
 
@@ -578,7 +588,8 @@ button, input { font: inherit; }
 .hydro-terminal-record-grid dl div { display: grid; grid-template-columns: minmax(130px, .55fr) 1.45fr; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid var(--rule); }
 .hydro-terminal-record-grid dt, .hydro-terminal-record-grid dd { min-width: 0; margin: 0; overflow-wrap: anywhere; font: 400 .76rem/1.45 "IBM Plex Mono", monospace; }
 .hydro-terminal-record-grid dt { font-weight: 600; }
-.hydro-terminal-sources { display: flex; flex-direction: column; gap: .6rem; padding-top: .25rem; }
+.hydro-terminal-sources { padding-top: .25rem; }
+.hydro-terminal-sources .source-disclosure { margin-top: 0; }
 .terminal-diagram-block { margin-top: 1.25rem; border: 1px solid var(--rule); background: color-mix(in srgb, var(--paper) 93%, white); }
 .terminal-diagram-scroll { overflow-x: auto; overscroll-behavior-inline: contain; }
 .terminal-diagram { display: block; width: 100%; min-width: 760px; height: auto; }
@@ -776,12 +787,13 @@ button, input { font: inherit; }
 .telephone-dms-classes b, .telephone-dms-classes span { display: block; }
 .telephone-dms-classes b { color: var(--phase-a); font: 600 1.5rem/1 "Barlow Condensed", sans-serif; }
 .telephone-dms-classes span { margin-top: .6rem; font-size: .8rem; line-height: 1.4; }
-.telephone-dms-evidence { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; margin-top: 1.5rem; }
+.telephone-dms-evidence { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; margin-top: 0; }
 .telephone-conflicts { margin-top: 2rem; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
 .telephone-conflicts summary { cursor: pointer; padding: 1rem 0; font: 500 .72rem/1.35 "IBM Plex Mono", monospace; text-transform: uppercase; }
 .telephone-conflicts ul { max-width: 960px; margin: 0 0 1.25rem; padding-left: 1.25rem; }
 .telephone-conflicts li { margin: .65rem 0; line-height: 1.5; }
-.telephone-source-strip { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-top: 2rem; }
+.telephone-source-disclosure { margin-top: 2rem; }
+.telephone-source-strip { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-top: 0; }
 .telecom-section { background: #d6d9d1; }
 .telecom-layout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: stretch; }
 .telecom-schematic { padding: 1rem; overflow: hidden; }

@@ -303,9 +303,14 @@ function initialDetail() {
       <div><dt>66 kV</dt><dd>17 circuits</dd></div>
     </dl>
     <p>The schematic combines 58 circuits from the 2018 transmission assessment asset list with six circuits established in separate Hydro records.</p>
-    <a class="evidence-link" href="${escapeHtml(islandTopology.source.url)}#page=24" target="_blank" rel="noreferrer">PUB-NP-084 Attachment A / physical PDF pp. 24 to 26</a>
-    <a class="evidence-link" href="${escapeHtml(generationCollection.lines[0].source.url)}#page=60" target="_blank" rel="noreferrer">Generation collection routes / physical PDF pp. 60 to 61</a>
-    <a class="evidence-link" href="${escapeHtml(supplementalAcLines.lines[0].source.url)}#page=4" target="_blank" rel="noreferrer">Supplemental AC circuits / physical PDF p. 4</a>`;
+    <details class="source-disclosure">
+      <summary><span>Sources</span><small>3 references</small></summary>
+      <div class="source-disclosure-list">
+        <a class="evidence-link" href="${escapeHtml(islandTopology.source.url)}#page=24" target="_blank" rel="noreferrer">PUB-NP-084 Attachment A / physical PDF pp. 24 to 26</a>
+        <a class="evidence-link" href="${escapeHtml(generationCollection.lines[0].source.url)}#page=60" target="_blank" rel="noreferrer">Generation collection routes / physical PDF pp. 60 to 61</a>
+        <a class="evidence-link" href="${escapeHtml(supplementalAcLines.lines[0].source.url)}#page=4" target="_blank" rel="noreferrer">Supplemental AC circuits / physical PDF p. 4</a>
+      </div>
+    </details>`;
 }
 
 function renderMap(svg) {

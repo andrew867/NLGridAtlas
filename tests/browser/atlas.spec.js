@@ -117,6 +117,26 @@ test("network selections preserve the reading position", async ({ page }) => {
   await expect(page.locator("#geographic-map-detail")).not.toBeEmpty();
 });
 
+test("source lists stay compact until requested", async ({ page }) => {
+  await page.goto("network.html");
+  const networkSources = page.locator("#labrador-island-link-system-record .source-disclosure");
+  await expect(networkSources).not.toHaveAttribute("open", "");
+  await expect(networkSources.locator("summary")).toContainText("3 references");
+  await expect(networkSources.locator("a").first()).toBeHidden();
+  await networkSources.locator("summary").click();
+  await expect(networkSources.locator("a").first()).toBeVisible();
+
+  await page.goto("stations.html?collection=hydro&station=SUN&view=equipment#station-record");
+  const terminalSources = page.locator("#hydro-terminal-record .source-disclosure");
+  await expect(terminalSources).not.toHaveAttribute("open", "");
+  await expect(terminalSources.locator("summary small")).toContainText(/references?/);
+
+  await page.goto("loads.html#np-1937-system-record");
+  const loadSources = page.locator("#np-1937-system-record .source-disclosure");
+  await expect(loadSources).not.toHaveAttribute("open", "");
+  await expect(loadSources.locator("summary")).toContainText("2 references");
+});
+
 test("legacy index fragments redirect to their owned page", async ({ page }) => {
   await page.goto("index.html#substations");
   await expect(page).toHaveURL(/stations\.html\?collection=np/);

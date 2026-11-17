@@ -127,6 +127,14 @@ function citationMarkup(sourceOrUrl, label, className = "evidence-link") {
   return `<a class="${escapeHtml(className)}" href="${escapeHtml(url.href)}" data-source-id="${escapeHtml(source.id)}" data-document-url="${escapeHtml(documentUrl)}" data-locator="${escapeHtml(label)}">${escapeHtml(label)}</a>`;
 }
 
+function sourceDisclosureMarkup(links, count, label = "Sources") {
+  const noun = count === 1 ? "reference" : "references";
+  return `<details class="source-disclosure">
+    <summary><span>${escapeHtml(label)}</span><small>${count.toLocaleString()} ${noun}</small></summary>
+    <div class="source-disclosure-list">${links}</div>
+  </details>`;
+}
+
 function showComponent(requestedId, allowReset = true) {
   const requested = components[requestedId];
   if (!requested) return null;
@@ -146,11 +154,12 @@ function showComponent(requestedId, allowReset = true) {
   panel.querySelector('[data-field="data"]').innerHTML = component.data
     .map(([term, value]) => `<div><dt>${escapeHtml(term)}</dt><dd>${escapeHtml(value)}</dd></div>`)
     .join("");
-  panel.querySelector('[data-field="sources"]').innerHTML = component.sources.map((reference) => {
+  const componentSourceLinks = component.sources.map((reference) => {
     const source = sourceById.get(reference.sourceId);
     const label = reference.label || source.title;
     return citationMarkup(source, `${label} / ${reference.pages}`, "evidence-link stacked-link");
   }).join("");
+  panel.querySelector('[data-field="sources"]').innerHTML = sourceDisclosureMarkup(componentSourceLinks, component.sources.length);
   panel.dataset.selectedComponent = componentId === defaultId ? "" : componentId;
   document.querySelectorAll(`.component[data-diagram="${requested.diagram}"]`).forEach((element) => {
     const selected = element.dataset.component === componentId && componentId !== defaultId;
@@ -403,7 +412,7 @@ function renderHydroTerminalRecord(code, requestedView = "overview") {
     <section class="record-view" data-record-view="one-line"${hiddenUnless("one-line")}>${diagrams.map((diagram) => renderTerminalDiagram(diagram, escapeHtml)).join("")}</section>
     <div class="hydro-terminal-record-grid record-view" data-record-view="equipment"${hiddenUnless("equipment")}>
       <dl>${factRows}</dl>
-      <div class="hydro-terminal-sources"><span class="profile-label">SOURCE RECORDS</span>${sourceLinks}</div>
+      <div class="hydro-terminal-sources">${sourceDisclosureMarkup(sourceLinks, record.sources.length, "Source records")}</div>
     </div>`;
   document.title = `${record.name}, ${view === "one-line" ? "One-line" : view === "equipment" ? "Equipment" : "Overview"} | NL Grid Atlas`;
   centerDynamicDiagram(recordContainer);
