@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-12",
+  "updated": "2026-11-16",
   "status_values": ["not_started", "in_progress", "blocked", "done", "deferred"],
   "priority_values": ["P0", "P1", "P2", "P3"],
   "phase_values": [0, 1, 2, 3, 4, 5],
@@ -590,6 +590,23 @@
       "completion_evidence": [],
       "blocker": null,
       "notes": "Deferred by the user on 2026-11-12. Do not put the raw mirrors in the Git repository. When publication resumes, a restore passes only when all objects verify and the restored audit counts match research/external-archive-manifest.json."
+    },
+    {
+      "id": "TEL-001",
+      "title": "Build the Newfoundland and Labrador public telephone chronology",
+      "phase": 3,
+      "priority": "P1",
+      "status": "done",
+      "scope": "Separate the main carrier systems, document switching and transport changes, preserve conflicting dates, and publish the verified chronology.",
+      "dependencies": ["SRC-001"],
+      "completion_evidence": [
+        "research/TELEPHONE_SYSTEM_HISTORY.md",
+        "src/telephone-data.js",
+        "index.html",
+        "tests/telephone-history.test.js"
+      ],
+      "blocker": null,
+      "notes": "The record covers private lines, the first reported public exchange, Avalon reconstruction, dial conversion, the CNT rural system, DDD, microwave, SP-1 and DMS switching, the 1988 acquisition, cellular, fibre, and the 2001 network enhancement. Seven unresolved date or capacity questions remain explicit in the research record."
     }
   ]
 }

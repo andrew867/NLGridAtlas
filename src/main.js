@@ -6,7 +6,14 @@ import "@fontsource/source-serif-4/400.css";
 import "@fontsource/source-serif-4/600.css";
 import "@fontsource/ibm-plex-mono/400.css";
 import "./styles.css";
-import { components, islandTerminalRecords, sources, stationProfiles, timeline } from "./data.js";
+import {
+  components,
+  islandTerminalRecords,
+  sources as gridSources,
+  stationProfiles,
+  timeline as gridTimeline
+} from "./data.js";
+import { telephoneSources, telephoneTimeline } from "./telephone-data.js";
 import handbook from "../research/derived/np-2006-handbook.json";
 import feederRegister2018 from "../research/derived/np-2018-feeder-register.json";
 import transmissionRegister2022 from "../research/derived/np-2022-transmission-register.json";
@@ -16,6 +23,12 @@ import { initGeographicMap } from "./geographic-map.js";
 import { initIslandBackbone } from "./island-backbone.js";
 import { renderTerminalDiagram } from "./terminal-diagram.js";
 
+const sources = [...gridSources, ...telephoneSources];
+const timeline = [...gridTimeline, ...telephoneTimeline].sort((a, b) => {
+  const yearA = Number.parseInt(String(a.date).match(/\d{4}/)?.[0] || "9999", 10);
+  const yearB = Number.parseInt(String(b.date).match(/\d{4}/)?.[0] || "9999", 10);
+  return yearA - yearB;
+});
 const sourceById = new Map(sources.map((source) => [source.id, source]));
 const handbookStations = new Map(handbook.substations.map((station) => [station.code, station]));
 const detailedStationProfiles = new Map(stationProfiles.map((station) => [station.code, station]));

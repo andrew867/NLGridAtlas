@@ -1,6 +1,6 @@
 # NL Grid Atlas project status
 
-Updated: 2026-11-14
+Updated: 2026-11-16
 
 ## Repository and hosting
 
@@ -15,6 +15,9 @@ Updated: 2026-11-14
 
 ## Verified in the current work session
 
+- Added the public telephone carrier chronology from the 1878 private line through the 2001 Newfoundland Network Enhancement Plan. The record separates Avalon and Newfoundland Telephone from the Posts and Telegraphs, CNT, and Terra Nova system until their 1989 amalgamation.
+- Added the 1977 carrier comparison, exchange territories, switching evolution, microwave and fibre transitions, and explicit conflicts for the Corner Brook takeover, initial DDD count, first digital exchanges, and early mainland radio capacity.
+- Added a dedicated responsive telephone section, searchable source records, and 15 dated public-network events to the atlas timeline.
 - Added the 2005 Wesleyville inspection and overhaul sequence, with the later completed gas-generator exchange kept separate.
 - Added the 2005 Rattling Brook plant assessment and detailed-design scope, with the later 2007 station completion kept separate.
 - Added the 2005 Humber transformer-radiator, Hardwoods HWD-04 breaker, Rocky Pond breaker, and St. John's Main switchgear records.
