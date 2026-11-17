@@ -1,6 +1,6 @@
 # NL Grid Atlas project status
 
-Updated: 2026-11-16
+Updated: 2026-11-17
 
 ## Repository and hosting
 
@@ -16,8 +16,10 @@ Updated: 2026-11-16
 ## Verified in the current work session
 
 - Added the public telephone carrier chronology from the 1878 private line through the 2001 Newfoundland Network Enhancement Plan. The record separates Avalon and Newfoundland Telephone from the Posts and Telegraphs, CNT, and Terra Nova system until their 1989 amalgamation.
-- Added the 1977 carrier comparison, exchange territories, switching evolution, microwave and fibre transitions, and explicit conflicts for the Corner Brook takeover, initial DDD count, first digital exchanges, and early mainland radio capacity.
-- Added a dedicated responsive telephone section, searchable source records, and 15 dated public-network events to the atlas timeline.
+- Added the 1977 carrier comparison, exchange territories, switching evolution, microwave and fibre transitions, and explicit conflicts for the Corner Brook takeover, initial DDD count and early mainland radio capacity.
+- Added a dedicated responsive telephone section, 21 searchable source records, and 19 dated public-network events to the atlas timeline.
+- Reconstructed the 1979 to 1992 digital conversion from carrier reports, newspaper records, CRTC decisions and Nortel manuals. The record separates DMS-10 community exchanges, DMS-100 hosts, RLM, RLCM and RSC equipment, DMS-1U integration, DMS-200 toll switching, emergency stand-alone operation, the 1986 cross-island digital route and the later SP-1 retirement program. The DMS-10 Generic 602.20 manual now supplies the LCM drawer and line-card hierarchy, RLCM host-interface arrangement, RSC-S trunking and the exact distinction between local-only RLCM emergency service and RSC-S trunk service.
+- Added a responsive host-and-remote schematic for the Torbay to St. John's and Glovertown to Gander arrangements. The final step-by-step or crossbar cutover remains an open evidence target.
 - Added the 2005 Wesleyville inspection and overhaul sequence, with the later completed gas-generator exchange kept separate.
 - Added the 2005 Rattling Brook plant assessment and detailed-design scope, with the later 2007 station completion kept separate.
 - Added the 2005 Humber transformer-radiator, Hardwoods HWD-04 breaker, Rocky Pond breaker, and St. John's Main switchgear records.

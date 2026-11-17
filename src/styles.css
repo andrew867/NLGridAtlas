@@ -747,6 +747,27 @@ button, input { font: inherit; }
 .telephone-technology-record time { color: var(--phase-a); font: 500 .72rem/1.3 "IBM Plex Mono", monospace; }
 .telephone-technology-record strong { margin: .55rem 0; font: 600 1.5rem/1 "Barlow Condensed", sans-serif; text-transform: uppercase; }
 .telephone-technology-record li span { font-size: .9rem; line-height: 1.45; }
+.telephone-dms-record { margin-top: 4rem; padding: clamp(1.2rem, 3vw, 2.5rem); border: 1px solid var(--ink); background: var(--paper); }
+.telephone-dms-record > header { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(280px, 1.2fr); gap: .5rem 2rem; align-items: end; margin-bottom: 2rem; }
+.telephone-dms-record > header .profile-label { grid-column: 1 / -1; }
+.telephone-dms-record > header h3 { margin: 0; font: 600 clamp(2.3rem, 4vw, 4rem)/.9 "Barlow Condensed", sans-serif; text-transform: uppercase; }
+.telephone-dms-record > header p { max-width: 680px; margin: 0; font-size: 1rem; line-height: 1.5; }
+.telephone-dms-paths { display: grid; gap: 1rem; }
+.telephone-dms-path { display: grid; grid-template-columns: minmax(200px, 1fr) minmax(130px, .55fr) minmax(240px, 1fr); align-items: stretch; }
+.telephone-dms-node { display: grid; align-content: center; min-height: 145px; padding: 1.25rem; border: 2px solid var(--ink); }
+.telephone-dms-node.remote { border-color: var(--water); }
+.telephone-dms-node.host { border-color: var(--phase-a); }
+.telephone-dms-node small, .telephone-dms-node span, .telephone-dms-link span { font: 500 .67rem/1.35 "IBM Plex Mono", monospace; }
+.telephone-dms-node strong { margin: .45rem 0; font: 600 1.6rem/1 "Barlow Condensed", sans-serif; text-transform: uppercase; }
+.telephone-dms-link { display: grid; grid-template-rows: 1fr auto 1fr; align-items: center; text-align: center; }
+.telephone-dms-link span { grid-row: 2; padding: .35rem .6rem; background: var(--paper); z-index: 1; }
+.telephone-dms-link i { grid-row: 2; grid-column: 1; height: 3px; background: var(--ink); }
+.telephone-dms-classes { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 2rem; border-top: 1px solid var(--ink); border-left: 1px solid var(--ink); }
+.telephone-dms-classes article { min-height: 115px; padding: 1rem; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.telephone-dms-classes b, .telephone-dms-classes span { display: block; }
+.telephone-dms-classes b { color: var(--phase-a); font: 600 1.5rem/1 "Barlow Condensed", sans-serif; }
+.telephone-dms-classes span { margin-top: .6rem; font-size: .8rem; line-height: 1.4; }
+.telephone-dms-evidence { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; margin-top: 1.5rem; }
 .telephone-conflicts { margin-top: 2rem; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
 .telephone-conflicts summary { cursor: pointer; padding: 1rem 0; font: 500 .72rem/1.35 "IBM Plex Mono", monospace; text-transform: uppercase; }
 .telephone-conflicts ul { max-width: 960px; margin: 0 0 1.25rem; padding-left: 1.25rem; }
@@ -856,6 +877,9 @@ button, input { font: inherit; }
   .telephone-1977-record { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .telephone-1977-record > aside { grid-column: 1 / -1; }
   .telephone-technology-record { grid-template-columns: 1fr; }
+  .telephone-dms-record > header { grid-template-columns: 1fr; }
+  .telephone-dms-record > header .profile-label { grid-column: auto; }
+  .telephone-dms-classes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .section-heading { grid-template-columns: 1fr; align-items: start; }
   .filter-set { justify-content: flex-start; }
   .source-record { grid-template-columns: 110px 1fr; }
@@ -911,6 +935,10 @@ button, input { font: inherit; }
   .telephone-carrier-paths, .telephone-1977-record { grid-template-columns: 1fr; }
   .telephone-1977-record > aside { grid-column: auto; }
   .telephone-technology-record ol { grid-template-columns: 1fr; }
+  .telephone-dms-path { grid-template-columns: 1fr; }
+  .telephone-dms-link { grid-template-rows: 34px; min-height: 34px; }
+  .telephone-dms-link i { width: 3px; height: 34px; justify-self: center; }
+  .telephone-dms-classes { grid-template-columns: 1fr; }
   .telephone-carrier-path li { grid-template-columns: 72px minmax(0, 1fr); }
   .telecom-network-record { padding: .75rem; }
   .telecom-sheet-heading { display: block; padding-right: 2.75rem; }

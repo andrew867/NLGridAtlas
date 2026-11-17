@@ -1,6 +1,6 @@
 # NL Grid Atlas project status
 
-Updated: 2026-11-16
+Updated: 2026-11-17
 
 ## Repository and hosting
 
@@ -15,6 +15,9 @@ Updated: 2026-11-16
 
 ## Verified in the current work session
 
+- Reconstructed the public-network digital conversion from 1979 through the 1992 modernization program. The atlas now separates DMS-10, DMS-100, DMS-200, LCM, RLM, RLCM, RSC and DMS-1U roles, and links the Gander and St. John's host-and-remote examples to page-level sources. The DMS-10 Generic 602.20 manual supplies the LCM drawer and line-card hierarchy, RLCM host-interface arrangement, RSC-S trunking and the exact distinction between local-only RLCM emergency service and RSC-S trunk service.
+- Added the June 1986 670 km cross-island digital route, its 15 south-coast microwave sites and its St. John's and Corner Brook fibre terminal links.
+- Kept the final step-by-step or crossbar retirement date open because the located records name individual replacements but not the last provincial electromechanical cutover.
 - Reconstructed the surviving 1974 system record from historical demand, station, generation, transformer, protection, transmission-line and terminal-asset records.
 - Added the 408.4 MW Newfoundland Power peak and 538 MW Hydro system peak, six Newfoundland Power station dates, the 6,750 kW two-trailer Mobile gas turbine, Victoria T1, MOB-T2, the Gambo 66 kV structure, Memorial relays, Come By Chance individual asset dates and four dated line sections.
 - Kept the Come By Chance terminal's estimated 1973 in-service date separate from its January 1, 1974 individual asset rows. Excluded L'Anse au Loup from the Island record and did not convert a Humber transformer manufacture date into an installation date.

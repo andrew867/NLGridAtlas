@@ -100,6 +100,86 @@ export const telephoneSources = [
     url: "https://dai.mun.ca/pdfs/ganderbeacon/GanderBeacon19790815.pdf"
   },
   {
+    id: "newfoundland-telephone-1981-annual",
+    year: 1981,
+    organization: "Newfoundland Telephone Company Limited",
+    title: "Annual Report, 1981",
+    topics: ["Nain", "DMS-10", "Corner Brook", "DMS-100", "St. John's", "fibre optic", "digital conversion"],
+    pages: "physical PDF p. 10, printed p. 8",
+    status: "verified",
+    url: "https://digital.library.mcgill.ca/images/hrcorpreports/pdfs/6/639156.pdf"
+  },
+  {
+    id: "newfoundland-telephone-1982-annual",
+    year: 1982,
+    organization: "Newfoundland Telephone Company Limited",
+    title: "Annual Report, 1982",
+    topics: ["St. John's", "DMS-100", "Torbay", "remote line module", "Octagon Pond", "digital conversion"],
+    pages: "physical PDF pp. 4, 9 to 10, printed pp. 2, 7 to 8",
+    status: "verified",
+    url: "https://digital.library.mcgill.ca/images/hrcorpreports/pdfs/6/639155.pdf"
+  },
+  {
+    id: "newtel-1986-annual",
+    year: 1986,
+    organization: "NewTel Enterprises Limited",
+    title: "Annual Report, 1986",
+    topics: ["cross-island digital microwave", "fibre optic", "remote switching centre", "Mount Pearl", "DMS", "digital conversion"],
+    pages: "physical PDF pp. 7 to 8, printed pp. 5 to 6",
+    status: "verified",
+    url: "https://digital.library.mcgill.ca/images/hrcorpreports/pdfs/6/639154.pdf"
+  },
+  {
+    id: "gander-beacon-1986-glovertown-rsc",
+    year: 1986,
+    organization: "Gander Beacon",
+    title: "Glovertown Remote Switching Centre",
+    topics: ["Gander", "Glovertown", "DMS-100", "DMS-200", "remote switching centre", "digital radio", "crossbar"],
+    pages: "physical PDF pp. 3 and 8",
+    status: "reported",
+    url: "https://dai.mun.ca/pdfs/ganderbeacon/GanderBeacon19861001.pdf"
+  },
+  {
+    id: "nortel-1979-rlm-datasheet",
+    year: 1979,
+    organization: "Northern Telecom",
+    title: "DMS-100 Family Remote Line Modules",
+    topics: ["DMS-100", "remote line module", "DS-1", "traffic concentration", "emergency stand-alone", "intra-remote switching"],
+    pages: "physical PDF pp. 1 to 2",
+    status: "verified",
+    url: "https://vtda.org/docs/telephony/NorthernTelecom/16007-01_DMS-100FamilyRLMDatasheet_Feb79.pdf"
+  },
+  {
+    id: "nortel-2000-dms-ringing",
+    year: 2000,
+    organization: "Nortel Networks",
+    title: "DMS-100 Ringing System, General Description",
+    topics: ["LCM", "RLCM", "RSC", "remote cluster controller", "line drawers", "DMS-1U"],
+    pages: "printed pp. 3-1 and 3-47",
+    status: "verified",
+    url: "https://www.tempestns.com/wp-content/uploads/2024/07/NORTEL-NT6X60AA-DMS-100-LCM-RLCM-RINGING-GENERATOR-CP-DATASHEET.pdf"
+  },
+  {
+    id: "nortel-dms10-60220-system-description",
+    year: 2006,
+    organization: "Nortel Networks",
+    title: "DMS-10 System Description, Generic 602.20",
+    topics: ["DMS-10", "LCM", "RLCM", "RSC-S", "line cards", "emergency stand-alone", "DMS-1U", "RCU"],
+    pages: "internal PDF 297-3601-100.07.01, physical PDF pp. 49, 57, 60 to 61, 68 to 69, 90 and 105 to 108",
+    status: "verified",
+    url: "http://www.dms-100.net/files/telephony/nortel/DMS10/docs/generic-602.20-docs/Generic-602.20.zip"
+  },
+  {
+    id: "crtc-92-15-network-modernization",
+    year: 1992,
+    organization: "CRTC",
+    title: "Telecom Decision CRTC 92-15",
+    topics: ["network modernization", "SP-1", "DMS-100", "DMS-200", "TOPS", "Mount Pearl", "Corner Brook", "Allandale"],
+    pages: "HTML decision, network modernization program",
+    status: "verified",
+    url: "https://crtc.gc.ca/eng/archive/1992/dt92-15.htm"
+  },
+  {
     id: "crtc-90-14-terra-nova",
     year: 1990,
     organization: "CRTC",
@@ -237,9 +317,36 @@ export const telephoneTimeline = [
     category: "telecom",
     status: "reported",
     title: "Springdale opened a DMS-10 digital exchange",
-    body: "A contemporary Terra Nova Telecommunications account calls the Springdale DMS-10 Newfoundland's first digital exchange and only the second DMS-10 in Canada. A later encyclopedia separately records a Newfoundland Telephone digital switch at Nain in 1979. The exact commissioning order is not established.",
+    body: "Terra Nova opened the Springdale DMS-10 on April 25. Its 1984 company history called the installation Newfoundland's first digital exchange and the second DMS-10 in Canada. Newfoundland Telephone separately reported that its first DMS-10 was installed at Nain in 1979.",
     sourceId: "gander-beacon-1979-springdale-digital",
     pages: "physical PDF p. 59"
+  },
+  {
+    date: "1980 TO 1982",
+    category: "telecom",
+    status: "verified",
+    title: "DMS-100 hosts brought remote digital switching to larger centres",
+    body: "Newfoundland Telephone installed a DMS-100 at Corner Brook in 1980 and placed its St. John's DMS-100 in service on February 27, 1982. The St. John's host included a remote line module at Torbay, while a second remote line module at Octagon Pond entered construction in 1982.",
+    sourceId: "newfoundland-telephone-1982-annual",
+    pages: "physical PDF p. 9, printed p. 7"
+  },
+  {
+    date: "1985 TO 1986",
+    category: "telecom",
+    status: "reported",
+    title: "Gander became a digital host for rural remote switches",
+    body: "Terra Nova placed a DMS-100 at Gander in November 1985. Glovertown's 1,000-line remote switching centre replaced its 1978 SA-1 crossbar in October 1986 and connected to the Gander host by digital radio. The program also included a DMS-200 toll switch at Gander.",
+    sourceId: "gander-beacon-1986-glovertown-rsc",
+    pages: "physical PDF pp. 3 and 8"
+  },
+  {
+    date: "1986",
+    category: "telecom",
+    status: "verified",
+    title: "The cross-island digital route entered service",
+    body: "The Corner Brook to St. John's section of Newfoundland Telephone's cross-island digital microwave network opened in June. The 670 km route used 15 south-coast radio sites and fibre optic links at St. John's and Corner Brook.",
+    sourceId: "newtel-1986-annual",
+    pages: "physical PDF p. 7, printed p. 5"
   },
   {
     date: "1988 TO 1989",
@@ -258,6 +365,15 @@ export const telephoneTimeline = [
     body: "Newfoundland Telephone and Rogers Cantel launched cellular networks in the St. John's area in July 1990. Both later extended coverage along the Trans-Canada Highway, while Newfoundland Telephone also expanded to Gander and Corner Brook.",
     sourceId: "mun-enl-telephone-history",
     pages: "physical PDF p. 17, printed p. 351"
+  },
+  {
+    date: "1992",
+    category: "telecom",
+    status: "verified",
+    title: "Network modernization retired the remaining SP-1 toll layer",
+    body: "Newfoundland Telephone's modernization program retired three SP-1 toll switches and moved their traffic to existing DMS-100 and DMS-200 equipment. Mount Pearl became the province-wide TOPS location, with remote TOPS positions at Corner Brook and Allandale.",
+    sourceId: "crtc-92-15-network-modernization",
+    pages: "HTML decision, network modernization program"
   },
   {
     date: "1999",

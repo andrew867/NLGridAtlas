@@ -94,11 +94,21 @@ CNT served 127 exchanges by March 31, 1977. Newfoundland Telephone served the de
 
 ### 1979 to 2001, digital switching, consolidation, fibre and congestion
 
-Terra Nova Telecommunications replaced CNT's Newfoundland operation in 1979. A contemporary Terra Nova account records a DMS-10 digital exchange at Springdale, opened on April 25, 1979, as Newfoundland's first digital exchange and only the second DMS-10 in Canada.
+Terra Nova Telecommunications replaced CNT's Newfoundland operation in 1979. It opened a DMS-10 digital exchange at Springdale on April 25, 1979. Terra Nova's 1984 company history called it Newfoundland's first digital exchange and the second DMS-10 in Canada. Newfoundland Telephone's 1981 annual report separately states that the company's first DMS-10 was installed at Nain in 1979. These are carrier-specific firsts, not competing accounts of one installation.
 
-The later encyclopedia account says Newfoundland Telephone installed a digital switch at Nain in 1979 and another at Corner Brook in 1980. These statements can both be true if Springdale was the first provincial installation and Nain was Newfoundland Telephone's first digital installation. The exact commissioning dates are not sufficient to establish the order between Springdale and Nain, so the atlas does not claim one beyond the contemporary Springdale account.
+Newfoundland Telephone installed a high-capacity DMS-100 local switch at Corner Brook in 1980. It placed a second DMS-100 in service at St. John's on February 27, 1982. The St. John's switch included a remote line module at Torbay. Construction of another remote line module at Octagon Pond began in 1982. At year-end, 7.2% of subscriber lines were served by digital systems. The company expected the figure to reach 13% by the end of 1983.
 
-Newfoundland Telephone completed a $23 million digital microwave system between St. John's and Port aux Basques in 1986. Terra Nova completed a five-year improvement program in 1987 and reported 100% DDD availability and 99% single-party service for more than 50,000 subscribers in over 400 communities.
+Terra Nova used the same host-and-remote principle in central Newfoundland. Its Gander DMS-100 entered service in November 1985. The Glovertown remote switching centre was scheduled to cut over on October 15, 1986. It replaced an SA-1 crossbar installed in 1978, provided 1,000 lines with provision for 1,280, and connected to Gander by digital radio. The Gander program also included a DMS-200 toll switch. Eastport, Lewisporte and Gambo were identified as further Gander remotes, while Clarenville was planned as another DMS-100 host.
+
+Newfoundland Telephone inaugurated the Corner Brook to St. John's section of its cross-island digital microwave network in June 1986. The 670 km route used 15 south-coast radio sites and fibre optic links at St. John's and Corner Brook. Construction had begun in July 1984. The company planned a final digital link to Sydney in 1987. This route was the digital transport layer that allowed host switches and remote equipment to exchange concentrated traffic without reproducing a full local switch at every exchange.
+
+Newfoundland Telephone's records use two different remote equipment terms. The 1982 record calls Torbay an RLM, or remote line module. The 1986 record calls Glovertown an RSC, or remote switching centre. Nortel documentation shows why the names matter. The LCM is the subscriber-line concentration equipment. In the DMS-10 Generic 602.20 design, each LCM contains two line concentrating array shelves. Each shelf can hold five line drawers, and each drawer can hold 64 subscriber line cards. A 1979 DMS-100 RLM was functionally equivalent to a host line module, connected to the host over two to five DS-1 facilities, and offered optional intra-remote switching and emergency stand-alone operation. The later DMS-10 RLCM combined one LCM with host-interface, supervision and remote-maintenance equipment. The RSC-S added a remote cluster controller, local LCM capacity and optional digital trunk termination.
+
+DMS-1U equipment followed another path into the same host. Nortel used a subscriber carrier module to integrate a DMS-1U remote terminal with a DMS host. In the DMS-10 Generic 602.20 design, the SCM-10U replaced the control terminal and the integrated remote terminal was called an RCU. The located Newfoundland carrier records do not yet assign a DMS-1U or RCU to a named exchange.
+
+The conversion did not finish in 1986. NewTel's 1986 report said modernization would continue into the mid-1990s. CRTC Decision 92-15 records a later network modernization program that retired three SP-1 toll switches, transferred their traffic to existing DMS-100 and DMS-200 equipment, and made Mount Pearl the province-wide TOPS location. The located records show rapid replacement of named step-by-step and crossbar offices, but they do not yet identify the final Newfoundland electromechanical exchange or its cutover date.
+
+Terra Nova completed a five-year improvement program in 1987 and reported 100% DDD availability and 99% single-party service for more than 50,000 subscribers in over 400 communities.
 
 Newfoundland Telephone acquired Terra Nova on December 1, 1988. The companies amalgamated on January 1, 1989. Cellular service began in the St. John's area in 1990 after CRTC interconnection and tariff decisions.
 
@@ -117,19 +127,37 @@ The network was not simply a smooth march toward better technology. The CRTC rec
 | 1974 to 1988 | SP-1 stored-program electronic switching, TOPS, DMS-10 digital switching | Newfoundland Telephone trans-island and Labrador microwave, digital microwave after 1986 |
 | 1989 to 2001 | Consolidated provincial network, digital exchanges, cellular and competitive long distance | Cabot Strait submarine fibre, island fibre, remaining microwave and remote radio routes |
 
+## DMS host and remote architecture
+
+| Equipment class | Function in the located Newfoundland record | Dated installation |
+| --- | --- | --- |
+| DMS-10 | Self-contained digital community exchange | Springdale, April 25, 1979; Nain, 1979 |
+| DMS-100 | High-capacity local host switch | Corner Brook, 1980; St. John's, February 27, 1982; Gander, November 1985 |
+| LCM | Subscriber-line concentration, two line concentrating array shelves, up to ten line drawers and up to 640 line cards in the Generic 602.20 design | Used in host and remote configurations; no named Newfoundland site assignment located |
+| RLM | Earlier remote line module attached to a DMS host by DS-1 facilities | Torbay, in service by 1982; Octagon Pond, construction started in 1982 |
+| RLCM | One LCM with host-interface, supervision and remote-maintenance equipment | No named Newfoundland site assignment located |
+| RSC | Remote controller, LCM capacity and optional local trunk termination, connected to a host by digital transport | Glovertown, October 1986; Eastport followed in 1987 |
+| DMS-1U / RCU | Pair-gain remote terminal integrated through a host subscriber carrier module | No named Newfoundland site assignment located |
+| DMS-200 | Digital toll switch | Gander program, 1986 |
+| DMS-100/200 | Combined local and toll switching platform | Mount Pearl, recorded in the 1992 modernization program |
+
+The remote arrangement reduced the amount of subscriber traffic that had to be carried as individual analog circuits. Subscriber loops terminated on line cards at the local remote equipment. The remote concentrated the traffic onto digital facilities to a host DMS, where shared control, routing and service logic were available. The Glovertown record identifies digital radio as the host link. The cross-island network used microwave for the long route and short fibre links at its St. John's and Corner Brook terminals.
+
+The Generic 602.20 manual distinguishes RLCM emergency operation from RSC-S emergency operation. An RLCM, RSLM or RSLE in emergency stand-alone mode can complete POTS calls only between subscribers on the same remote. Calls to the operator or outside the remote receive reorder tone, and the mode provides neither subscriber features nor recorded announcements. The RSC-S can terminate digital trunks and switch local RSC-S lines to those trunks, including during emergency stand-alone operation. No located record identifies the circuit-card complement or software release installed at Glovertown in 1986, so the later generic capabilities cannot be assigned to that site without further evidence.
+
 ## Source conflicts and open questions
 
 1. The first public exchange is consistently reported as 1885 in later histories, but a contemporary opening notice has not been located.
 2. The exact 1899 transfer instrument from Anglo-American or Western Union has not been located.
 3. The 1977 government study dates the Corner Brook takeover and dial exchange to 1947. The later encyclopedia gives 1948. The atlas retains the 1947 date from the closer official study.
 4. The first DDD group is nine east-coast communities in the 1977 study and eight exchanges in a 1971 newspaper report.
-5. A 1979 contemporary account calls Springdale the first Newfoundland digital exchange. The later encyclopedia records a Newfoundland Telephone digital switch at Nain in 1979. Exact commissioning dates are still needed.
-6. The CNT mainland radio route is described as a 12-channel system installed in 1950 in the encyclopedia and as a six-voice-channel system established by 1952 in later Terra Nova accounts. These may describe different equipment stages. The record does not yet prove the sequence.
+5. The CNT mainland radio route is described as a 12-channel system installed in 1950 in the encyclopedia and as a six-voice-channel system established by 1952 in later Terra Nova accounts. These may describe different equipment stages. The record does not yet prove the sequence.
+6. The final step-by-step or crossbar exchange and its cutover date have not been located.
 7. Complete exchange-equipment registers, route drawings and microwave hop sheets remain missing for several periods.
 
 ## Source register
 
-All files were retrieved on 2026-11-16.
+Hashed files were retrieved on 2026-11-16 and 2026-11-17. The two web-only Nortel manuals were checked on 2026-11-17.
 
 | Source | Pages used | Local filename | SHA-256 |
 | --- | --- | --- | --- |
@@ -144,6 +172,15 @@ All files were retrieved on 2026-11-16.
 | [Suburban Mirror, November 30, 1977](https://dai.mun.ca/PDFs/cns_news/SuburbanMirror19771130.pdf) | physical PDF p. 12 | `suburban-mirror-1977-11-30.pdf` | `f0baced6dc5d6f420f25eb644928c89f99f97df3d33c356fe299bf9779978bd7` |
 | [Gander Beacon, August 15, 1979](https://dai.mun.ca/pdfs/ganderbeacon/GanderBeacon19790815.pdf) | physical PDF p. 59 | `gander-beacon-1979-08-15.pdf` | `23a58e59320bcdc3e28bebf98ae5ca8e65ab7f9300615ee87c56313ddd282fbf` |
 | [Gander Beacon, October 10, 1984](https://dai.mun.ca/pdfs/ganderbeacon/GanderBeacon19841010.pdf) | physical PDF p. 18 | `gander-beacon-1984-10-10.pdf` | `b8bb42716740b8f923d2e8099f8dc433683107c989b0e9dba98a9fe5546f05d1` |
+| [Newfoundland Telephone Annual Report, 1981](https://digital.library.mcgill.ca/images/hrcorpreports/pdfs/6/639156.pdf) | physical PDF p. 10, printed p. 8 | `newfoundland-telephone-1981.pdf` | `2528e46f74d53fa479fad9819e2b4b0bc2ed42ddd58db84607df84773a54649c` |
+| [Newfoundland Telephone Annual Report, 1982](https://digital.library.mcgill.ca/images/hrcorpreports/pdfs/6/639155.pdf) | physical PDF pp. 4, 9 to 10, printed pp. 2, 7 to 8 | `newfoundland-telephone-1982.pdf` | `618d4e446ac2198f6bb3fb8621fe111e5e59c7e414e62d4945257f2e13c0feb6` |
+| [NewTel Enterprises Annual Report, 1986](https://digital.library.mcgill.ca/images/hrcorpreports/pdfs/6/639154.pdf) | physical PDF pp. 7 to 8, printed pp. 5 to 6 | `newtel-1986.pdf` | `d3026ab5cfe303a02feba4677107e28f0285f2f0354b698569ff1f113e4242d2` |
+| [Gander Beacon, October 1, 1986](https://dai.mun.ca/pdfs/ganderbeacon/GanderBeacon19861001.pdf) | physical PDF pp. 3 and 8 | `gander-beacon-1986-10-01.pdf` | `c1ca0bccd4aad1323b8b18120eb34790e7cd25ed60b4e49b1615a00516559a7b` |
+| [Northern Telecom, DMS-100 Family Remote Line Modules](https://vtda.org/docs/telephony/NorthernTelecom/16007-01_DMS-100FamilyRLMDatasheet_Feb79.pdf) | physical PDF pp. 1 to 2 | web-only source | not applicable |
+| [Nortel Networks, DMS-100 Ringing System](https://www.tempestns.com/wp-content/uploads/2024/07/NORTEL-NT6X60AA-DMS-100-LCM-RLCM-RINGING-GENERATOR-CP-DATASHEET.pdf) | printed pp. 3-1 and 3-47 | web-only source | not applicable |
+| [DMS-100.net Nortel documentation archive](http://www.dms-100.net/files/telephony/nortel/DMS100/) | directory index and original manual sets | web-only source | not applicable |
+| [Nortel DMS-10 Generic 602.20 documentation set](http://www.dms-100.net/files/telephony/nortel/DMS10/docs/generic-602.20-docs/Generic-602.20.zip) | internal `297-3601-100.07.01.pdf`, physical PDF pp. 49, 57, 60 to 61, 68 to 69, 90 and 105 to 108 | `Generic-602.20.zip` | `d2a0a2a39743966d6f8ce6a4f13a02cf9dce5f5d1ba8b7044c4d96f30786bbbf` |
+| [CRTC Telecom Decision 92-15](https://crtc.gc.ca/eng/archive/1992/dt92-15.htm) | HTML decision, network modernization program | not applicable | not applicable |
 | [CRTC Telecom Decision 90-14](https://crtc.gc.ca/eng/archive/1990/dt90-14.htm) | HTML decision | not applicable | not applicable |
 | [CRTC Telecom Decision 90-15](https://crtc.gc.ca/eng/archive/1990/dt90-15.htm) | HTML decision | not applicable | not applicable |
 | [CRTC high-cost serving areas transcript, January 25, 1999](https://crtc.gc.ca/eng/transcripts/1999/tt0125.htm) | paragraphs 547 to 555 | not applicable | not applicable |
