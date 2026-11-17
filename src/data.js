@@ -760,6 +760,66 @@ export const sources = [
     url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
   },
   {
+    id: "mun-colonial-1806-road-rights",
+    year: 1806,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Road Rights and Obstruction Report",
+    topics: ["1806", "1804", "St. John's", "road", "high-water mark", "land rights", "surveying"],
+    pages: "physical PDF pp. 222 to 224",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1806-fire-access",
+    year: 1806,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Main-Street Fire-Engine Access Proposal",
+    topics: ["1806", "St. John's", "main street", "fire engine", "fire access", "retail shop"],
+    pages: "physical PDF pp. 224 to 225",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1806-currency",
+    year: 1806,
+    organization: "Governor of Newfoundland",
+    title: "Garrison-Payment Currency Recommendation",
+    topics: ["1806", "St. John's", "garrison", "currency", "Spanish dollars", "copper coins"],
+    pages: "physical PDF p. 226",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1806-ordnance-wharf",
+    year: 1806,
+    organization: "Governor of Newfoundland",
+    title: "Ordnance Wharf and Barrens Land-Control Report",
+    topics: ["1806", "St. John's", "Ordnance Wharf", "Barrens", "limekiln", "Signal Hill", "Powder Shed", "fire safety"],
+    pages: "physical PDF pp. 229 to 231",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1806-powder-house-clearances",
+    year: 1806,
+    organization: "Governor of Newfoundland",
+    title: "Powder House Building-Clearance Measurements",
+    topics: ["1806", "St. John's", "Powder House", "Chief Justice", "Customs Surveyor", "clearance", "fire safety"],
+    pages: "physical PDF p. 231",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1806-government-house",
+    year: 1806,
+    organization: "Governor of Newfoundland",
+    title: "Government House Outbuildings and Fort Townshend Garden",
+    topics: ["1806", "St. John's", "Government House", "Fort Townshend", "outbuildings", "garden", "road", "public works"],
+    pages: "physical PDF pp. 233 to 234",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
     id: "mun-royal-gazette-1807-garrison-timber",
     year: 1807,
     organization: "Commissary and Storekeeper's Office, St. John's",
@@ -15475,6 +15535,78 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1806-04-19",
+    category: "transport",
+    title: "Gower sought a legal path to clear the 1804 road",
+    body: "A road opened behind the St. John's fishery in 1804 ran 200 yards from high-water mark. Gower reported that several occupiers still interrupted its passage and deferred dispossession while seeking a legal opinion on long-held or previously granted land.",
+    sourceId: "mun-colonial-1806-road-rights",
+    pages: "physical PDF pp. 222 to 224",
+    status: "reported"
+  },
+  {
+    date: "1806-04-19",
+    category: "fire response",
+    title: "Six-to-seven-foot street pinch point blocked fire engines",
+    body: "A former fishery cook room converted to a retail shop projected into the lower or main street. Gower reported a crooked passage only six or seven feet wide that obstructed carts and prevented fire engines from passing between parts of town. He proposed partial removal subject to legal advice.",
+    sourceId: "mun-colonial-1806-fire-access",
+    pages: "physical PDF pp. 224 to 225",
+    status: "proposed"
+  },
+  {
+    date: "1806-04-19",
+    category: "public finance",
+    title: "Gower requested £7,500 in specie for garrison payments",
+    body: "Gower recommended £7,000 in Spanish dollars and £500 in copper two-penny and penny coins after reporting that the previous year's shipment had benefited the public service. The despatch does not confirm shipment.",
+    sourceId: "mun-colonial-1806-currency",
+    pages: "physical PDF p. 226",
+    status: "proposed"
+  },
+  {
+    date: "1806-06-18",
+    category: "defence infrastructure",
+    title: "Gower proposed shared Ordnance Wharf repair costs",
+    body: "Gower proposed dividing future Ordnance Wharf repairs equally between the Ordnance and contingent departments. He reported that losing use of the wharf would require private wharf hire at considerable expense for landing garrison supplies.",
+    sourceId: "mun-colonial-1806-ordnance-wharf",
+    pages: "physical PDF pp. 229 to 230",
+    status: "proposed"
+  },
+  {
+    date: "1806-06-18",
+    category: "defence infrastructure",
+    title: "Gower intended to recover Ordnance land and the Powder Shed",
+    body: "Gower intended to remove a fence around the Ordnance limekiln and a wharf extension over ground adjoining the Ordnance Wharf. He also intended to recover the Signal Hill Powder Shed for the Ordnance Department and prevent fires on the Barrens that could endanger it.",
+    sourceId: "mun-colonial-1806-ordnance-wharf",
+    pages: "physical PDF pp. 230 to 231",
+    status: "proposed"
+  },
+  {
+    date: "1806-06-18",
+    category: "fire safety",
+    title: "Powder House clearances were reported at 240 and 365 yards",
+    body: "The Chief Justice's double house was measured at about 240 yards from the Powder House. The Customs Surveyor's dwelling was 365 yards away and had been reported safe by the Ordnance Storekeeper.",
+    sourceId: "mun-colonial-1806-powder-house-clearances",
+    pages: "physical PDF p. 231",
+    status: "reported"
+  },
+  {
+    date: "1806-08-18",
+    category: "public works",
+    title: "Government House outbuildings were ordered into execution",
+    body: "Gower reported that the outbuildings had decayed and that a replacement plan was estimated at £100. He directed the work into execution, but the vouchers lacked formal accounting authority and he requested authorization.",
+    sourceId: "mun-colonial-1806-government-house",
+    pages: "physical PDF p. 233",
+    status: "reported"
+  },
+  {
+    date: "1806-08-18",
+    category: "public works",
+    title: "A replacement Fort Townshend garden required £41 17s in labour",
+    body: "The 1804 road had taken a considerable part of the Governor's Garden. Gower authorized £41 17s for clearing and fencing a replacement garden near Fort Townshend and requested approval of the expenditure.",
+    sourceId: "mun-colonial-1806-government-house",
+    pages: "physical PDF pp. 233 to 234",
+    status: "reported"
+  },
   {
     date: "1807-09-16",
     category: "public works",

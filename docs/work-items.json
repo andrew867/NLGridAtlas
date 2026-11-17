@@ -3358,6 +3358,18 @@
       "notes": "The year records a measured garrison timber tender, barrack-form furniture, Signal Hill and Fort Amherst convoy flags, a 31-sail convoy, proposed Harbour Grace and Fortune Bay court buildings, Harbour Grace church and parsonage repairs, the indebted St. John's school house and the completed Fogo worship house. The 17 Gazette archive files contain 66 surviving physical PDF pages, with the September 10 filename explicitly recording two missing pages."
     },
     {
+      "id": "NPREG-222",
+      "title": "Add the 1806 road, Ordnance and public-works records",
+      "phase": 2,
+      "priority": "P2",
+      "status": "done",
+      "scope": "Inventory surviving 1806 transport, fire-access, currency, defence-infrastructure and public-works evidence.",
+      "dependencies": ["NPREG-221"],
+      "completion_evidence": ["research/NP_1806_SYSTEM_RECORD.md", "src/data.js", "tests/np-1806-system.test.js"],
+      "blocker": null,
+      "notes": "The year records the legal follow-up to the road opened in 1804, a six-to-seven-foot street obstruction that blocked fire engines, the proposed £7,500 garrison currency shipment, Ordnance Wharf repair financing, intended recovery of Ordnance land and the Signal Hill Powder Shed, Powder House clearance measurements, Government House outbuildings and the replacement Fort Townshend garden. No 1806 Royal Gazette run exists in the collection, so this tranche uses the Colonial Office despatch volume."
+    },
+    {
       "id": "ASSET-001",
       "title": "Add Newfoundland Power transformer repair durations",
       "phase": 2,
