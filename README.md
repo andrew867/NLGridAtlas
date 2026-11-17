@@ -1,24 +1,47 @@
 # NL Grid Atlas
 
-NL Grid Atlas is an unofficial, source-cited engineering atlas of Newfoundland and Labrador electrical infrastructure. It converts public regulatory filings into diagrams, timelines, station records, and load comparisons that retain exact evidence links.
+NL Grid Atlas is a source-cited engineering history of Newfoundland and Labrador's electrical and communications infrastructure. It reconstructs network topology, station equipment and system change from regulatory filings, utility drawings, government records, technical manuals, annual reports and archival collections.
 
 [Open the published atlas](https://andrew867.github.io/NLGridAtlas/)
 
-The first release focuses on the Island Interconnected System, a June 2005 Newfoundland Power network register, the Northeast Avalon delivery network, major transmission and terminal-station work, and Hydro's historical VHF system.
+## What the atlas contains
 
-## Project status
+### Electrical system
 
-This repository is at the first working-site stage. The initial evidence set is real, but it is not a complete network model. Each page identifies omissions and unresolved facts.
+- An island transmission overview covering the documented 230 kV, 138 kV, 69 kV and 66 kV systems.
+- Semi-geographic route maps tied to published geographic records.
+- Interactive one-line diagrams for terminal stations, generating stations, converter stations and Newfoundland Power substations.
+- Transformer, switchgear, capacitor-bank, transmission-line and feeder records with dated ratings and equipment states.
+- Newfoundland Power feeder maps and circuit registers, including urban and rural stations.
+- Labrador-Island Link, Maritime Link, Soldiers Pond and Corner Brook frequency-conversion records.
+- Measured loads, forecasts, interruptions, reliability events, capital work and equipment failures kept as separate evidence classes.
 
-Project control:
+### Communications and system history
+
+- Newfoundland and Labrador Hydro and Newfoundland Power telecommunications records, including VHF, microwave, fibre, satellite and later radio systems.
+- The public telephone network from the first reported private line through manual exchanges, dial conversion, microwave, digital switching and fibre transport.
+- DMS-10 and DMS-100 host and remote architecture, including RLM, RLCM, RSC, DMS-1U and emergency stand-alone operation.
+- Telegraph, cable and early electrical-communications records connected to the later utility history.
+- A dated chronology assembled from public records rather than a retrospective summary alone.
+
+## Engineering method
+
+Every published technical record retains its original URL and a physical PDF page or named document section. Locally preserved evidence files also retain SHA-256 digests. Drawings and tables are visually checked when text extraction cannot establish layout or connectivity.
+
+The diagrams are new engineering schematics based on cited records. A proposed installation is not shown as completed, a forecast is not reported as a measured load, and a missing circuit is not completed by guesswork. Conflicting records remain dated and visible.
+
+The site includes automated checks for source references, topology, component interactions, calculations, responsive layout data and evidence-state consistency. It builds without requiring the source websites at runtime.
+
+## Project records
 
 - [Current project status](docs/PROJECT_STATUS.md)
 - [Atlas specification](docs/ATLAS_SPECIFICATION.md)
+- [Research method](docs/RESEARCH_METHOD.md)
+- [Editorial style](docs/EDITORIAL_STYLE.md)
 - [Phased development plan](docs/DEVELOPMENT_PLAN.md)
 - [Verification plan](docs/VERIFICATION_PLAN.md)
 - [Public evidence package](docs/PUBLIC_EVIDENCE_PACKAGE.md)
 - [Authoritative work-item register](docs/work-items.json)
-- [Newfoundland Power direct regulatory mirror](research/NEWFOUNDLAND_POWER_DIRECT_MIRROR.md)
 
 ## Run locally
 
@@ -27,92 +50,46 @@ npm install
 npm run dev
 ```
 
-Build and test:
+Run the complete test suite and production build:
 
 ```powershell
 npm test
 npm run build
 ```
 
-Verify or rebuild the pinned PDF manifest:
+Verify the pinned evidence files:
 
 ```powershell
 npm run verify:sources
-npm run build:evidence-manifest
 ```
 
-## GitHub Pages
+## Publication
 
-Pushes to `main` run the Pages workflow. The workflow installs the locked dependencies, runs the automated tests, builds the static site, and deploys the `dist` artifact.
-
-## Hydro upload mirror
-
-Inventory without downloading:
-
-```powershell
-python scripts\sync_nlhydro_uploads.py inventory --out C:\src\misc\NLHydroUploads
-```
-
-Download or resume the document mirror:
-
-```powershell
-python scripts\sync_nlhydro_uploads.py mirror --out C:\src\misc\NLHydroUploads
-```
-
-The output directory contains `inventory.json`, `downloads.jsonl`, and the mirrored files. Keep the mirror outside this repository.
-
-## Newfoundland Power regulatory mirror
-
-Inventory or resume the PDFs linked from Newfoundland Power's Regulation page:
-
-```powershell
-python scripts\sync_newfoundland_power_regulatory.py mirror --out C:\src\misc\NewfoundlandPowerRegulatory
-```
-
-The output directory contains `inventory.json`, `downloads.jsonl`, and the verified PDF files. Keep the mirror outside this repository.
-
-Search one or more PDF trees and retain physical page references:
-
-```powershell
-python scripts\search_pdf_pages.py C:\src\misc\PUB\mirror\applications\NP2027Capital --term "Pulpit Rock" --term "PUL-T2"
-```
-
-Search the PUB full-text index without changing the archive:
-
-```powershell
-python scripts\search_pub_index.py C:\src\misc\PUB\metadata\pub.sqlite '"Transmission Line Listing"' --limit 20
-```
-
-The register-successor search and its exact page references are recorded in
-[research/NP_REGISTER_SUCCESSORS.md](research/NP_REGISTER_SUCCESSORS.md).
-
-Regenerate the text-native feeder and transmission-loading layers:
-
-```powershell
-python scripts\extract_np_register_layers.py --feeder-pdf C:\path\to\PUB-NP-5.pdf --loading-pdf C:\path\to\PUB-NP-275.pdf --out research\derived\np-register-layers-2008-2013.json
-```
+Pushes to `main` run the GitHub Pages workflow. The workflow installs the locked dependencies, runs the test suite, builds the static site and deploys the `dist` artifact.
 
 ## Repository layout
 
-- `src/`: site code and curated evidence data
-- `docs/`: design, writing, and research rules
-- `research/sources/`: unmodified copies of public filings
-- `research/derived/`: structured records extracted from cited source pages
-- `research/catalog.json`: source URLs, local paths, and page-level notes
-- `scripts/`: research integrity tools
-- `tests/`: data and citation validation
+- `src/`: site code, diagrams and curated evidence data
+- `docs/`: specification, research, editorial and verification records
+- `research/sources/`: pinned copies of cited public records
+- `research/derived/`: structured records extracted from cited pages
+- `research/catalog.json`: source URLs, local paths and page-level notes
+- `scripts/`: extraction and evidence-integrity tools
+- `tests/`: source, data, calculation, topology and interface validation
 
-## Evidence status
+## Evidence states
 
 - `verified`: checked against the cited page, including visual inspection where layout matters
-- `reported`: stated by a primary source but not independently verified
-- `proposed`: requested or planned work, not proof of completion
-- `inferred`: a stated interpretation based on multiple sources
+- `reported`: stated by a source but not independently established
+- `proposed`: requested or planned work, not evidence of completion
+- `inferred`: an identified interpretation based on cited records
 - `unresolved`: conflicting or incomplete evidence
 
 ## Rights and attribution
 
-Code and original site content are licensed under the MIT License. Source PDFs retain the rights and terms of their publishers and authors. They are stored as research evidence with their original URLs and are not relicensed by this repository.
+Repository code and original atlas material are provided under the [MIT License](LICENSE). Public filings, archival images, maps, technical manuals, trademarks and other third-party material retain their original rights and terms. See [Rights and source attribution](NOTICE.md) for the source collections and acknowledgements.
 
-This project is not affiliated with the Board of Commissioners of Public Utilities, Newfoundland and Labrador Hydro, Newfoundland Power, or the Government of Newfoundland and Labrador.
+Major research collections include the PUB filing archive, utility records, Memorial University Libraries' Digital Archives Initiative and Collections catalogue, McGill University Library's Canadian corporate reports, government publications and technical-document archives. Joe Z, owner and maintainer of [DMS-100.net](http://www.dms-100.net/), is credited for preserving the Nortel manual sets used in the telephone-system research.
+
+NL Grid Atlas is independent research. It is not affiliated with the Board of Commissioners of Public Utilities, Newfoundland and Labrador Hydro, Newfoundland Power, Memorial University, the Government of Newfoundland and Labrador or the other organizations cited by the project.
 

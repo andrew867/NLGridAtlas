@@ -10,11 +10,12 @@ Updated: 2026-11-17
 - The local `main` branch tracks `origin/main`.
 - A GitHub Pages workflow builds with Node.js 20, runs the complete test suite, builds the Vite site, and deploys the `dist` artifact.
 - GitHub Pages is live at `https://andrew867.github.io/NLGridAtlas/`.
-- GitHub Actions run `43049501960` passed the complete test, build, and deployment workflow for commit `e2194ac`.
-- The published build passed desktop and 390 by 844 px browser checks. Its assets loaded under `/NLGridAtlas/`, the MUN-08 detail interaction worked, and the browser reported no warnings or errors.
+- The current publication workflow runs the complete test suite and production build before deployment.
+- The published build has passed desktop and 390 by 844 px browser checks, including the telephone host-and-remote section with no horizontal overflow.
 
 ## Verified in the current work session
 
+- Replaced the initial project README with a current engineering summary, removed acquisition instructions from the public project overview, and added a rights and source-attribution notice covering the principal public, archival, geographic and technical-document collections.
 - Reconstructed the public-network digital conversion from 1979 through the 1992 modernization program. The atlas now separates DMS-10, DMS-100, DMS-200, LCM, RLM, RLCM, RSC and DMS-1U roles, and links the Gander and St. John's host-and-remote examples to page-level sources. The DMS-10 Generic 602.20 manual supplies the LCM drawer and line-card hierarchy, RLCM host-interface arrangement, RSC-S trunking and the exact distinction between local-only RLCM emergency service and RSC-S trunk service.
 - Added the June 1986 670 km cross-island digital route, its 15 south-coast microwave sites and its St. John's and Corner Brook fibre terminal links.
 - Kept the final step-by-step or crossbar retirement date open because the located records name individual replacements but not the last provincial electromechanical cutover.

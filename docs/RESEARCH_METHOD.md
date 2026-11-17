@@ -6,6 +6,8 @@ Collect from the PUB proceeding archive, compliance-report indexes, Newfoundland
 
 The PUB site uses both `pub.nf.ca` and `pub.nl.ca`. Treat these domains as source aliases, but preserve the URL that returned each file.
 
+Record both the creator or publisher of an item and the institution that provides access to it. Do not replace a newspaper, utility or government author with the name of the library that holds the scan.
+
 ## Archive handling
 
 1. Save the original file without modification.
@@ -15,6 +17,7 @@ The PUB site uses both `pub.nf.ca` and `pub.nl.ca`. Treat these domains as sourc
 5. Render drawing and table pages for visual inspection.
 6. Create structured evidence records separately.
 7. Keep an unresolved record when the source conflicts with itself.
+8. Check the holding institution's reproduction terms before publishing an archival image.
 
 ## Page references
 
@@ -37,6 +40,12 @@ Each diagram must state:
 - source pages
 
 Do not connect two stations because they appear close on a map. Require a circuit record, one-line drawing, route drawing, or explicit text.
+
+## Rights and attribution
+
+Source access does not transfer publication rights. Cite the item creator, document title, holding collection, original URL and exact page. Link to an archival image when its catalogue reserves reproduction rights.
+
+Keep third-party source material outside the scope of the repository's MIT licence. Preserve applicable data attribution, including OpenStreetMap's ODbL credit. The public acknowledgement and licence boundary are recorded in [`NOTICE.md`](../NOTICE.md).
 
 ## Quality gates
 

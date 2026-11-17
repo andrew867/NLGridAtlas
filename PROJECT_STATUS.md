@@ -10,14 +10,15 @@ Updated: 2026-11-17
 - The local `main` branch tracks `origin/main`.
 - A GitHub Pages workflow builds with Node.js 20, runs the complete test suite, builds the Vite site, and deploys the `dist` artifact.
 - GitHub Pages is live at `https://andrew867.github.io/NLGridAtlas/`.
-- GitHub Actions run `43049501960` passed the complete test, build, and deployment workflow for commit `e2194ac`.
-- The published build passed desktop and 390 by 844 px browser checks. Its assets loaded under `/NLGridAtlas/`, the MUN-08 detail interaction worked, and the browser reported no warnings or errors.
+- The current publication workflow runs the complete test suite and production build before deployment.
+- The published build has passed desktop and 390 by 844 px browser checks, including the telephone host-and-remote section with no horizontal overflow.
 
 ## Verified in the current work session
 
 - Added the public telephone carrier chronology from the 1878 private line through the 2001 Newfoundland Network Enhancement Plan. The record separates Avalon and Newfoundland Telephone from the Posts and Telegraphs, CNT, and Terra Nova system until their 1989 amalgamation.
 - Added the 1977 carrier comparison, exchange territories, switching evolution, microwave and fibre transitions, and explicit conflicts for the Corner Brook takeover, initial DDD count and early mainland radio capacity.
-- Added a dedicated responsive telephone section, 21 searchable source records, and 19 dated public-network events to the atlas timeline.
+- Added a dedicated responsive telephone section, 22 searchable source records, and 19 dated public-network events to the atlas timeline.
+- Replaced the initial project README with a current engineering summary, removed acquisition instructions from the public project overview, and added a rights and source-attribution notice covering the principal public, archival, geographic and technical-document collections.
 - Reconstructed the 1979 to 1992 digital conversion from carrier reports, newspaper records, CRTC decisions and Nortel manuals. The record separates DMS-10 community exchanges, DMS-100 hosts, RLM, RLCM and RSC equipment, DMS-1U integration, DMS-200 toll switching, emergency stand-alone operation, the 1986 cross-island digital route and the later SP-1 retirement program. The DMS-10 Generic 602.20 manual now supplies the LCM drawer and line-card hierarchy, RLCM host-interface arrangement, RSC-S trunking and the exact distinction between local-only RLCM emergency service and RSC-S trunk service.
 - Added a responsive host-and-remote schematic for the Torbay to St. John's and Glovertown to Gander arrangements. The final step-by-step or crossbar cutover remains an open evidence target.
 - Added the 2005 Wesleyville inspection and overhaul sequence, with the later completed gas-generator exchange kept separate.
