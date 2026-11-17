@@ -760,6 +760,66 @@ export const sources = [
     url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
   },
   {
+    id: "mun-colonial-1805-st-johns-defence",
+    year: 1805,
+    organization: "Governor of Newfoundland",
+    title: "St. John's Defence and Volunteer Association Report",
+    topics: ["1805", "St. John's", "Signal Hill", "Fort Townshend", "Fort William", "Bay Bulls", "Torbay", "volunteers", "defence"],
+    pages: "physical PDF pp. 172 to 177",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1805-signal-hill-works",
+    year: 1805,
+    organization: "Governor of Newfoundland",
+    title: "Signal Hill Works Instruction Request",
+    topics: ["1805", "St. John's", "Signal Hill", "Royal Engineer", "fortification", "public works"],
+    pages: "physical PDF p. 190",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1805-jail-payments",
+    year: 1805,
+    organization: "Governor of Newfoundland",
+    title: "Placentia and Bonavista Jail Payments",
+    topics: ["1805", "Placentia", "Bonavista", "jail", "Treasury", "public works"],
+    pages: "physical PDF p. 197",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1805-convoys",
+    year: 1805,
+    organization: "Governor of Newfoundland",
+    title: "St. John's England and Portugal Convoy Report",
+    topics: ["1805", "St. John's", "HMS Isis", "HMS Jamaica", "convoy", "England", "Portugal", "navigation"],
+    pages: "physical PDF pp. 201 to 202",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1805-placentia-fort",
+    year: 1805,
+    organization: "Governor of Newfoundland",
+    title: "Placentia Fortification Survey Report",
+    topics: ["1805", "Placentia", "Captain Ross", "Royal Engineer", "battery", "parapet", "Ordnance", "fortification"],
+    pages: "physical PDF pp. 206 to 207",
+    status: "reported",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
+    id: "mun-colonial-1805-burin-building",
+    year: 1805,
+    organization: "Governor of Newfoundland",
+    title: "Burin Jail, Court and Worship Building Proposal",
+    topics: ["1805", "Burin", "Placentia Bay", "jail", "court house", "place of worship", "assessment", "public works"],
+    pages: "physical PDF pp. 209 to 210",
+    status: "proposed",
+    url: "https://dai.mun.ca/PDFs/cns_colonia/A52_V01.pdf"
+  },
+  {
     id: "mun-colonial-1806-road-rights",
     year: 1806,
     organization: "Governor of Newfoundland",
@@ -15535,6 +15595,69 @@ export const staticClaims = [
 ];
 
 export const timeline = [
+  {
+    date: "1805-07-18",
+    category: "defence infrastructure",
+    title: "St. John's defence centred on Signal Hill while the town forts decayed",
+    body: "Gower described Signal Hill as the strong harbour-defence post, but reported that the town was too distant to benefit directly. Fort Townshend and Fort William were nearly decayed and not tenable; a landing at Bay Bulls or Torbay could force the garrison to Signal Hill and expose the town.",
+    sourceId: "mun-colonial-1805-st-johns-defence",
+    pages: "physical PDF pp. 173 to 174",
+    status: "reported"
+  },
+  {
+    date: "1805-07-18",
+    category: "defence operations",
+    title: "Five volunteer companies fielded 250 armed men",
+    body: "An association formed for defence of St. John's consisted of five companies and 250 men. Major General Skerrett had furnished arms and the men were learning the exercise. Gower recommended rations during drill and assistance with uniform clothing, but did not yet count them as an effective force.",
+    sourceId: "mun-colonial-1805-st-johns-defence",
+    pages: "physical PDF pp. 175 to 177",
+    status: "reported"
+  },
+  {
+    date: "1805-07-20",
+    category: "defence infrastructure",
+    title: "Royal Engineer sought authority for proposed Signal Hill works",
+    body: "Gower forwarded the Royal Engineer's St. John's defence report and requested full instructions on authority to complete proposed Signal Hill works. The surviving volume does not reproduce the report, so it does not support reconstruction of the work scope.",
+    sourceId: "mun-colonial-1805-signal-hill-works",
+    pages: "physical PDF p. 190",
+    status: "proposed"
+  },
+  {
+    date: "1805-10-20",
+    category: "public works",
+    title: "Treasury funds supported Placentia and Bonavista jails",
+    body: "Gower reported drawing £125 toward building the Placentia jail and £150 for the same service at Bonavista. The despatch records payments toward construction, not building completion.",
+    sourceId: "mun-colonial-1805-jail-payments",
+    pages: "physical PDF p. 197",
+    status: "reported"
+  },
+  {
+    date: "1805-10-26",
+    category: "navigation",
+    title: "Sixty-nine sail left St. John's in two convoys",
+    body: "Gower reported leaving St. John's with 33 sail bound for England while HMS Jamaica left the same day with 36 sail for Portugal. Further convoys for both destinations were appointed for November 20 and December 20.",
+    sourceId: "mun-colonial-1805-convoys",
+    pages: "physical PDF p. 201",
+    status: "reported"
+  },
+  {
+    date: "1805-11-28",
+    category: "defence infrastructure",
+    title: "Placentia fort was reported ineffective and exposed",
+    body: "Captain Ross surveyed the works. Gower reported that the battery had no parapet, could be cleared by one round of grape shot from the sea and was commanded by heights ashore. The annual Ordnance establishment was at least £500, excluding more than £1,000 in stores computed for the year.",
+    sourceId: "mun-colonial-1805-placentia-fort",
+    pages: "physical PDF pp. 206 to 207",
+    status: "reported"
+  },
+  {
+    date: "1805-11-28",
+    category: "public works",
+    title: "Burin proposed a combined jail, court and worship building",
+    body: "Local contributions, a small fishery assessment and court fines were assigned toward the building. Its upper floor was to serve as a place of worship and occasionally as a court house. Gower estimated £700 or £800 and requested authority to draw £125 after completion.",
+    sourceId: "mun-colonial-1805-burin-building",
+    pages: "physical PDF pp. 209 to 210",
+    status: "proposed"
+  },
   {
     date: "1806-04-19",
     category: "transport",
