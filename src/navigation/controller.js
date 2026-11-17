@@ -16,7 +16,13 @@ export function createNavigationController({ page, render, afterRender = null })
     await render(nextParsed);
     if (id !== transitionId) return;
     if (afterRender) await afterRender(nextParsed);
-    if (scroll) window.scrollTo(scroll.x, scroll.y);
+    if (scroll) {
+      const root = document.documentElement;
+      const scrollBehavior = root.style.scrollBehavior;
+      root.style.scrollBehavior = "auto";
+      window.scrollTo(scroll.x, scroll.y);
+      root.style.scrollBehavior = scrollBehavior;
+    }
     else if (nextParsed.state.fragment) {
       document.getElementById(nextParsed.state.fragment)?.scrollIntoView({ block: "start" });
     }

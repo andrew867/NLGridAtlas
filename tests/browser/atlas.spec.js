@@ -103,10 +103,13 @@ test("reduced-motion preference retains readable page layout", async ({ page }) 
 });
 
 test("network selections preserve the reading position", async ({ page }) => {
-  await page.goto("network.html#geographic-network");
+  await page.goto("network.html");
   const node = page.locator("#geographic-network [data-geographic-station]").last();
   await expect(node).toBeVisible();
-  await node.focus();
+  await node.evaluate((element) => {
+    element.scrollIntoView({ behavior: "instant", block: "center" });
+    element.focus({ preventScroll: true });
+  });
   const before = await page.evaluate(() => window.scrollY);
   await page.keyboard.press("Enter");
   const after = await page.evaluate(() => window.scrollY);
